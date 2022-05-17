@@ -1,58 +1,336 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>index.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/index.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/index.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/index.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/ActionClass.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/ActionClass.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/ActionClass.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/ActionClass.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/BuildAndRun.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/BuildAndRun.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/BuildAndRun.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/BuildAndRun.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/BuildError.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/BuildError.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/BuildError.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/BuildError.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/HEOActionTrigger.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOActionTrigger.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOActionTrigger.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOActionTrigger.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/HEOAreacollider.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOAreacollider.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOAreacollider.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOAreacollider.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/HEOAudio.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOAudio.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOAudio.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOAudio.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/HEOField.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOField.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOField.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOField.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/HEOObject.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOObject.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOObject.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOObject.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/HEOParticle.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOParticle.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOParticle.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOParticle.html"/>
+         
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-03-19</lastmod>
+         <loc>Unity/HEOPlane.html</loc>
+         <lastmod>2022-05-17</lastmod>
          <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOPlane.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOPlane.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOPlane.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/HEOPlayer.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOPlayer.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOPlayer.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOPlayer.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/HEOScript.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOScript.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOScript.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOScript.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/HEOTextPlane.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOTextPlane.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOTextPlane.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOTextPlane.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/HEOVideoTrigger.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOVideoTrigger.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOVideoTrigger.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOVideoTrigger.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/HEOWorldSetting.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/HEOWorldSetting.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/HEOWorldSetting.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/HEOWorldSetting.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/OperatingEnvironment.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/OperatingEnvironment.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/OperatingEnvironment.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/OperatingEnvironment.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/SetupSDK.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/SetupSDK.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/SetupSDK.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/SetupSDK.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/WorldUpload.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/WorldUpload.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/WorldUpload.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/WorldUpload.html"/>
+         
+    </url>
+    <url>
+         <loc>Unity/heoFileExport.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/Unity/heoFileExport.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/Unity/heoFileExport.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/Unity/heoFileExport.html"/>
+         
+    </url>
+    <url>
+         <loc>common/License.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/common/License.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/common/License.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/common/License.html"/>
+         
+    </url>
+    <url>
+         <loc>heoexporter/he_ReflectionProbe.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/heoexporter/he_ReflectionProbe.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/heoexporter/he_ReflectionProbe.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/heoexporter/he_ReflectionProbe.html"/>
+         
+    </url>
+    <url>
+         <loc>heoexporter/he_TextureCompression.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/heoexporter/he_TextureCompression.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/heoexporter/he_TextureCompression.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/heoexporter/he_TextureCompression.html"/>
+         
+    </url>
+    <url>
+         <loc>heoexporter/he_UnityGuidelines.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/heoexporter/he_UnityGuidelines.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/heoexporter/he_UnityGuidelines.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/heoexporter/he_UnityGuidelines.html"/>
+         
+    </url>
+    <url>
+         <loc>heoexporter/he_about_heoexporter.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/heoexporter/he_about_heoexporter.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/heoexporter/he_about_heoexporter.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/heoexporter/he_about_heoexporter.html"/>
+         
+    </url>
+    <url>
+         <loc>heoexporter/he_align_unity_to_vketcloud.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/heoexporter/he_align_unity_to_vketcloud.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/heoexporter/he_align_unity_to_vketcloud.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/heoexporter/he_align_unity_to_vketcloud.html"/>
+         
+    </url>
+    <url>
+         <loc>heoexporter/he_heoexporter_tutrial.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/heoexporter/he_heoexporter_tutrial.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/heoexporter/he_heoexporter_tutrial.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/heoexporter/he_heoexporter_tutrial.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_class.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_class.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_class.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_class.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_class_item.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_class_item.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_class_item.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_class_item.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_class_player.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_class_player.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_class_player.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_class_player.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_component.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_component.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_component.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_component.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_operator.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_operator.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_operator.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_operator.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_struct_matrix.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_struct_matrix.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_struct_matrix.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_struct_matrix.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_struct_quaternion.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_struct_quaternion.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_struct_quaternion.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_struct_quaternion.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_struct_vector3.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_struct_vector3.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_struct_vector3.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_struct_vector3.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_system_function.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_system_function.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_system_function.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_system_function.html"/>
+         
+    </url>
+    <url>
+         <loc>hs/hs_var.html</loc>
+         <lastmod>2022-05-17</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="en/hs/hs_var.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="ja/hs/hs_var.html"/>
+         <xhtml:link rel="alternate" hreflang="ch" href="ch/hs/hs_var.html"/>
+         
     </url>
 </urlset>
