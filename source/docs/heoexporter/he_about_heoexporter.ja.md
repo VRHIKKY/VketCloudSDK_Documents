@@ -1,0 +1,1 @@
+HEOExporterとはVketCloudSDKに含まれているツールの一つでVketCloud専用の3Dオブジェクトファイルフォーマットである『HEO』を出力するために使用します。主にワールドモデルをHEOとして書き出します。

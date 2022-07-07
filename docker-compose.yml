@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  mkdocs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    command:
+      - "mkdocs"
+      - "serve"
+      - "--dev-addr=0.0.0.0:8000"

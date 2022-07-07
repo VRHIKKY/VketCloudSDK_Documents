@@ -1,0 +1,2 @@
+ParticleEditorはVketCloud専用のパーティクルファイルフォーマットである『HEP』を作成する為のツールです。  
+VketCloudと同一エンジンを用いて描画しているのでエディター上の見た目そのままでVketCloudで再生することができます。
