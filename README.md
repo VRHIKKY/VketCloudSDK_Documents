@@ -20,9 +20,9 @@
 
 - git
 - mkdocs
+- mkdocs-material
+- mkdocs-static-i18n
 - mike
-- i18l
-- mkdocs material
 
 ## ②dockerを使う
 dockerによる環境構築も可能です。
