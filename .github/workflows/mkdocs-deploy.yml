@@ -8,10 +8,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Build the Docker image 
       - uses: actions/checkout@v2
-      - run: docker build . -t mkdocs-image -f Dockerfile
-      - run: docker container run -it mkdocs-image
+      
+      - name: Build the Docker image 
+        run: |
+          docker build . -t mkdocs-image -f Dockerfile
+          docker container run -it mkdocs-image
         
       - name: do deploy comand on mike
         run: mike deploy $(mike list)[0]
