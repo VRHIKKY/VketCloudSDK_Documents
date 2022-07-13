@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Build the Docker image 
         run: |
           docker build . -t mkdocs-image -f Dockerfile
-          docker container run -it mkdocs-image
+          docker container run --name mkdocs-deploy-container -it mkdocs-image
         
       - name: do deploy comand on mike
         run: mike deploy $(mike list)[0]
