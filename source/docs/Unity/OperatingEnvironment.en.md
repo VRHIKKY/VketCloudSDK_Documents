@@ -1,11 +1,11 @@
 
-# Operating Environment
-VketCloudSDK requires the below operating environment.
+# System Requirements
+VketCloudSDK requires the following.
 
 - **Unity 2019.4.31f1**
 
-If you do not have this version of Unity, download from Unity official ([website](https://unity.com/ja)).
+If you have not installed the above version, please visit the official Unity page [here](https://unity.com/ja) to download it. 
 
-Also, please make sure to install the **Android Build Support module** when installing the Unity.
+You will also need to install Unity's **Android Build Support Module**.
 ![AddModules](img/AddModules.jpg)
 ![AndroidSupportInstall](img/AndroidSupportInstall.jpg)

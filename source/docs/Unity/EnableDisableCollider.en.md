@@ -2,7 +2,6 @@
 # Enable/DisableCollider
 ![EnableDisableCollider](img/EnableDisableCollider.jpg)
 
-Enable/DisableColldier can let you choose to enable or disable the collider contained in HEOField or HEOObject.
+Enable/DisableColldier lets you toggle a collider inside an HEOField or an HEOObject.
 
-For Target, specify either HEOField or HEOObject.
-As for Collider In Target, specify the collider name of the Object specified for Target.
+For Target, specify either HEOField or HEOObject. As for Collider In Target, specify the collider inside the chosen HEOField/HEOObject.

@@ -2,9 +2,10 @@
 # MoveTo
 ![MoveTo](img/MoveTo.jpg)
 
-MoveTo lets you move HEOObject linearly to an Object.
+MoveTo lets you move an HEOObject linearly to a specified Object.
 
-For target, specify the HEOObject you want to move.
-For both destination and Object In Destination, specify the HEOField and the related Object name.
+For target, set the HEOObject you wish to move.
+For destination, set the HEOField GameObject that contains the goal GameObject.
+For Object In Destination, set the GameObject the "target" is going to move towards.
 
-For time, set the amount of seconds necessary to move.
+For time, set the amount of seconds it takes to reach the destination.

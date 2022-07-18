@@ -2,9 +2,9 @@
 ![AddVar](img/AddVar.jpg)
 
 AddVar saves ..sal.doasijdoiawd
-AddVarは、SetVarで保存した変数に、指定した数値分、加算します。
+AddVar adds specified value to the variable saved with SetVar.
 
 |  Label |  function  |
 | ----   | ---- |
-| name | 加算対象とする変数名を指定してください。 |
-| nvalue | 加算する整数値を設定してください。 |
+| name | Specify the name of the variable to increase the value. |
+| nvalue | Specify the integer value to be added. |

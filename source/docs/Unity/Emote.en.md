@@ -2,6 +2,6 @@
 # Emote
 ![Emote](img/Emote.jpg)
 
-Play the player emote set in the avatar section under HEOWorldSetting. Designate which emote will be played in the index.
+Plays a "player emote" specified under the Avatar section in HEOWorldSetting. Set which emote No. to play in the index.
 
 ![EmoteListInAvatar](img/EmoteListInAvatar.jpg)

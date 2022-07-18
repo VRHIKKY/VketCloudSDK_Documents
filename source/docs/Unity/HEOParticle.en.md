@@ -5,5 +5,5 @@
 |  Label |  function  |
 | ----   | ---- |
 | .hep | Specify hep file. |
-| autoplay | Autoplay the particle. |
-| loop | Loop the particle. |
+| autoplay | Autoplays the particle. |
+| loop | Loops the particle. |
