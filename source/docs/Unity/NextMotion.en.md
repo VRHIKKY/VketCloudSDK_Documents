@@ -2,14 +2,10 @@
 # NextMotion
 ![NextMotion](img/NextMotion.jpg)
 
-NextMotion lets you set a motion that plays after another motion as Motion Action. You may not set multiple motions in one Action list.
-
-For Motion Name, specify the name of the motion.
+NextMotion lets you set a motion to play after the previous Motion Action is completed. You may not set multiple of these in one Action list.
 
 |  Label |  function  |
 | ----   | ---- |
-| name | Set the variable name as you like. |
-| nvalue | Assign integer value. |
-
+| Motion Name | Set the motion's name. |
 
 ![MotionNameInAvatar](img/MotionNameInAvatar.jpg)

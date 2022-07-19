@@ -2,12 +2,10 @@
 # Motion
 ![Motion](img/Motion.jpg)
 
-Motion lets you play the motion set for the your avatar in HEOWorldSetting. Specify the name in the Motion Name.
+Motion lets you play the motion set for the your avatar inside HEOWorldSetting. Specify the motion's name in the Motion Name.
 
 |  Label |  function  |
 | ----   | ---- |
-| name | Set the variable name as you like. |
-| nvalue | Assign integer value. |
-
+| Motion Name | Set the motion's name you wish to play. |
 
 ![MotionNameInAvatar](img/MotionNameInAvatar.jpg)

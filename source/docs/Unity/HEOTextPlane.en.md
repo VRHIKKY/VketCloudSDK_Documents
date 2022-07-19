@@ -5,10 +5,10 @@
 |  Label |  function  |
 | ----   | ---- |
 | Text | Input the text. |
-| Font Size | Specify the font size. |
-| color | Specify the font color. |
-| Texture Size | Specify the texture size for the text. **The value needs to be a power of two!** |
-| alphablending | Use translucence and cutout shader. |
-| billboard | Let the text face towards the camera at all times. |
-| show | Enable if you need the text to appear from the beginning. |
-| zbias | High z value text will let it come in front of other Objects. |
+| Font Size | Specify the text size. |
+| color | Specify the text color. |
+| Texture Size | Specify the base resolution for the displayed text texture. **Value needs to be a power of two!** |
+| alphablending | Lets you use cutout/transparency. |
+| billboard | Make the text face towards the camera at all times. |
+| show | Enable if you want the text to appear from the beginning. |
+| zbias | Higher z value will make the text come in front of other objects. |

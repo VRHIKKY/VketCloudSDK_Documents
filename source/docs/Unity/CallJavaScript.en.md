@@ -2,11 +2,11 @@
 # CallJavaScript
 ![CallJavaScript](img/CallJavaScript.jpg)
 
-Use when you want to process JavaScript from actions.
+Used for executing JavaScript functions from Actions.
 
-If the function "hel_action_bridge(name, text) is not defined within JavaScript, then the name and text parameters will work as they are specified. If the function is not specified, nothing will happen.
+If the function "hel_action_bridge(name, text) is defined within JavaScript, then the "name" and "text" parameters are set and called. If the function doesn't exist, nothing is executed.
 
-Please set the process with the name.
+Please call your function from the name parameter.
 
 |  Label |  function  |
 | ----   | ---- |
