@@ -12,7 +12,7 @@ jobs:
 
       - name: Build the Docker image 
         run: |
-          docker build . -t mkdocs-image -f Dockerfile
+          docker build . mkdocs-image -f Dockerfile
           docker container run --name mkdocs-deploy-container -it mkdocs-image
         
       - name: do deploy comand on mike
