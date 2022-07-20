@@ -12,7 +12,7 @@ jobs:
 
       - name: Build the Docker image 
         run: |
-          docker build -t mkdocs-image
+          docker build . -t mkdocs-image
           docker run --name mkdocs-container -it mkdocs-image /bin/bash
           docker-compose ps -a
           docker container exec -it mkdocs-container bash
