@@ -2,10 +2,10 @@
 # If A <= B
 ![IfLessThanOrEqual](img/IfLessThanOrEqual.jpg)
 
-If A <= B, A (variable) is smaller or equal to B (integer), hense the proceeding actions cannot be completed.
+If A(variable) is less than or equal to B(int), the Actions that follow will be discarded.
 
 
 |  Label |  function  |
 | ----   | ---- |
 | name | Specify the variable name being compared. |
-| nvalue | Set the integer value with which you wish to compare. |
+| nvalue | Set the comparing integer value. |

@@ -145,7 +145,7 @@ nav:
         - FadeOut/In: Unity/FadeOutIn.md
 - HEOExporter :
     - HEOExporter Overview : heoexporter/he_about_heoexporter.md
-    - HEOExporter Tutorial : heoexporter/he_heoexporter_tutrial.md
+    - HEOExporter Tutorial : heoexporter/he_heoexporter_tutorial.md
     - Unity Guidelines : heoexporter/he_UnityGuidelines.md
     - ReflectionProbe : heoexporter/he_ReflectionProbe.md
     - Texture Compression : heoexporter/he_TextureCompression.md

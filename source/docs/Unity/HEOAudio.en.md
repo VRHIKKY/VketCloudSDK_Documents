@@ -8,9 +8,9 @@
 | Audio Type | Choose from BGM, SE, or SystemSE |
 | Audio Clip | Specify the audio file. |
 | loop | Set if you want it to loop. |
-| autoplay | Set it if you want the audio to play automatically when entering just like world BGM. |
+| autoplay | If you want the audio to play automatically after joining. e.g. world BGM. |
 
 Note:
 
-- When playing a video file, the priority goes to the sound in the video.
-- Does not support distance attenuation.
+- When a video file is playing, the priority goes to the video sound.
+- Does not support distance falloff.

@@ -1,16 +1,15 @@
-# Build
-How to build a Scene
+# Building the Scene
 
-In order to start Vket Cloud, you will need Objects with the following components in the Scene.
+To launch VketCloud, your scene must contain GameObjects with the following Components.
 
 - HEOWorldSetting
 - HEOField
 - HEOPlayer
 
-To add these, simply right click in the Hierarchy and choose "Add essential Objects..."
+You can automatically add these by right clicking in the Hierarchy and choosing "Add essential Objects..."
 
 ![AddEssentialObjects](img/AddEssentialObjects.jpg)
 
-Once these Objects are placed, choose "Build And Run" under VketCloudSDK
+Once these Objects are placed, choose "Build And Run" under VketCloudSDK in the top menu.
 
 ![BuildAndRun](img/BuildAndRun.jpg)

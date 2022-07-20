@@ -1,1 +1,1 @@
-HEOExporter is one of the tools included in VketCloudSDK. The tool is used to export "HEO" file, the 3D object file format specially designed for Vket Cloud. The world model will be exported as HEO in practice.
+HEOExporter is one of the included tools in VketCloudSDK. The tool is used to export "HEO" file, the 3D object file format specially designed for VketCloud. Will most commonly be used to export World models as .heo files.
