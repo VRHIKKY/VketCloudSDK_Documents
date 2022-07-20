@@ -14,5 +14,5 @@ jobs:
         run: |
           docker-compose build
           docker-compose exec -T
-          mkdocs serve
+          docker-compose ps -a
           mike deploy $(mike list)[0]
