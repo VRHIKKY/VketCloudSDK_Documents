@@ -12,8 +12,8 @@ jobs:
 
       - name: Build the Docker image 
         run: |
-          docker build . -t mkdocs-image -f Dockerfile
-          docker container run -it --name mkdocs-deploy-container -it mkdocs-image
+          docker-compose build
+          docker-compose exec -T
         
       - name: do deploy comand on mike
         run: mike deploy $(mike list)[0]
