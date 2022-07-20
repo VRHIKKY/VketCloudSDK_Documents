@@ -13,4 +13,5 @@ jobs:
       - name: Build the Docker image 
         run: |
           docker-compose build
+          docker-compose start
           docker-compose exec -T mike deploy $(mike list)[0]
