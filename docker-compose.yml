@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: mkdocs-container
     tty: true
     stdin_open: true
     ports:

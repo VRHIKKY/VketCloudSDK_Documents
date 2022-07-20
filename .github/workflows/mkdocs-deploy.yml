@@ -12,8 +12,8 @@ jobs:
 
       - name: Build the Docker image 
         run: |
-          docker-compose build -t mkdocs-image
-          dokcer run --name mkdocs-container -it mkdocs-image /bin/bash
+          docker build -t mkdocs-image
+          docker run --name mkdocs-container -it mkdocs-image /bin/bash
           docker-compose ps -a
           docker container exec -it mkdocs-container bash
           mike deploy $(mike list)[0]
