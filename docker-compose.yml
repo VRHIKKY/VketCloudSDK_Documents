@@ -11,6 +11,7 @@ services:
       - "8000:8000"
     volumes:
       - .:/code
+    working_dir: /code/source
     command:
       - "mkdocs"
       - "serve"
