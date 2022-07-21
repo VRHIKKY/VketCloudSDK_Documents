@@ -8,7 +8,7 @@ WORKDIR /code
 Run python3 -m venv .venv
 Run . .venv/bin/activate
 COPY requirements.txt /code/
-#Run apt-get update && apt-get install -y git
+Run apt-get update && apt-get install -y git
 RUN pip install -r requirements.txt
 #RUN pip install mkdocs mkdocs-material pygments plantuml_markdown mkdocs-static-i18n
 COPY . /code/

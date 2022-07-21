@@ -13,4 +13,8 @@ jobs:
       - name: Build the Docker image 
         run: |
           docker-compose build
-          docker-compose run --rm mkdocs mike deploy '$(mike list)[0]'
+          docker-compose run --rm mkdocs 
+          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          mike deploy '$(mike list)[0]'

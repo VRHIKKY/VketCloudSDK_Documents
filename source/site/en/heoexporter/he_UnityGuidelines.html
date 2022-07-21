@@ -9,11 +9,12 @@
         <meta name="description" content="VketCloudSDKのマニュアルです">
       
       
+      
         <meta name="author" content="HIKKY">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-7.3.0">
     
     
       
@@ -21,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -36,16 +37,16 @@
     
       
         
-        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
     
       
+
 
     
     
@@ -60,6 +61,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="green">
   
     
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -67,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -76,12 +78,11 @@
       
     </div>
     
-    
       
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="VketCloudSDK Manual" class="md-header__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
+    <a href="../index.html" title="VketCloudSDK Manual" class="md-header__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -138,7 +139,8 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+<div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -193,7 +195,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="VketCloudSDK Manual" class="md-nav__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
+    <a href="../index.html" title="VketCloudSDK Manual" class="md-nav__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -1162,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="he_heoexporter_tutrial.html" class="md-nav__link">
+      <a href="he_heoexporter_tutorial.html" class="md-nav__link">
         HEOExporter Tutorial
       </a>
     </li>
@@ -1193,7 +1195,6 @@
       </a>
       
         
-
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1206,78 +1207,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    まえおき
+  <a href="#introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    ポリゴン
+  <a href="#polygon" class="md-nav__link">
+    Polygon
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    テクスチャ
+  <a href="#texture" class="md-nav__link">
+    Texture
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    テクスチャ圧縮
+  <a href="#texture-compression" class="md-nav__link">
+    Texture Compression
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    リフレクションプローブ
+  <a href="#reflection-probes" class="md-nav__link">
+    Reflection Probes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    ライトマップ
+  <a href="#lightmap" class="md-nav__link">
+    Lightmap
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    シェーダー
+  <a href="#shaders" class="md-nav__link">
+    Shaders
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    コライダー
+  <a href="#collider" class="md-nav__link">
+    Collider
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    スカイボックス
+  <a href="#skybox" class="md-nav__link">
+    Skybox
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    スケール
+  <a href="#scale" class="md-nav__link">
+    Scale
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    オブジェクト
+  <a href="#object" class="md-nav__link">
+    Object
   </a>
   
 </li>
@@ -1633,7 +1634,6 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1646,78 +1646,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    まえおき
+  <a href="#introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    ポリゴン
+  <a href="#polygon" class="md-nav__link">
+    Polygon
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    テクスチャ
+  <a href="#texture" class="md-nav__link">
+    Texture
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    テクスチャ圧縮
+  <a href="#texture-compression" class="md-nav__link">
+    Texture Compression
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    リフレクションプローブ
+  <a href="#reflection-probes" class="md-nav__link">
+    Reflection Probes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    ライトマップ
+  <a href="#lightmap" class="md-nav__link">
+    Lightmap
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    シェーダー
+  <a href="#shaders" class="md-nav__link">
+    Shaders
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    コライダー
+  <a href="#collider" class="md-nav__link">
+    Collider
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    スカイボックス
+  <a href="#skybox" class="md-nav__link">
+    Skybox
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    スケール
+  <a href="#scale" class="md-nav__link">
+    Scale
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    オブジェクト
+  <a href="#object" class="md-nav__link">
+    Object
   </a>
   
 </li>
@@ -1734,69 +1734,77 @@
             <article class="md-content__inner md-typeset">
               
                 
-
-
-  <h1>Unity Guidelines</h1>
-
-<h2 id="_1">まえおき</h2>
-<p>VketCloudで使用するワールドモデル等はUnityでセットアップをおこない、専用エクスポータ（HEOExporter）で出力をおこないます。ただし、Unityの機能がすべて使用できるわけではないため、後述する仕様に合わせて調整をおこなう必要があります</p>
-<h2 id="_2">ポリゴン</h2>
-<p>ワールドモデルは８０万トライアングル以下</p>
-<h2 id="_3">テクスチャ</h2>
+                
+                  <h1>Unity Guidelines</h1>
+                
+                <h2 id="introduction">Introduction</h2>
+<p>The World data used in VketCloud can be set up inside Unity to be exported by HEOExporter.
+However, not all functions of Unity can be used, hense needing some adjustments.</p>
+<h2 id="polygon">Polygon</h2>
+<p>The World model needs to be under 800,000 triangles.</p>
+<h2 id="texture">Texture</h2>
 <ul>
-<li>大きさが2048x2048以下のPNG</li>
-<li>２の累乗サイズの正方形（2048x2048,1024x1024,512x512等）または2の累乗サイズの長方形</li>
-<li>ビット深度は24bitまたは32bit</li>
-<li>png換算で80MB以下</li>
-<li>拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップでエラーが出ます</li>
+<li>PNG images, equal to or less than 2048x2048 in resolution.</li>
+<li>A square/rectangle of which the resolution is a number to the power of two.
+e.g. 2048x2048, 1024x1024, or 512x512</li>
+<li>bit depth must be either 24 bits or 32 bits.</li>
+<li>File size must be less than 80MB.</li>
+<li>The extention must be .png in lowercase. An error will occur if capitalized.</li>
 </ul>
-<h2 id="_4">テクスチャ圧縮</h2>
-<p>VketCloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは <a href="he_TextureCompression.html">こちら</a>をご覧ください。</p>
-<h2 id="_5">リフレクションプローブ</h2>
-<p>VketCloudではUnityのリフレクションプローブを使用することができます。詳しくは<a href="he_ReflectionProbe.html">こちら</a>をご覧ください。</p>
-<h2 id="_6">ライトマップ</h2>
+<h2 id="texture-compression">Texture Compression</h2>
+<p>Texture compression is one method Vket Cloud requires to peform smoothly. Check <a href="he_TextureCompression.html">here</a> for more details.</p>
+<h2 id="reflection-probes">Reflection Probes</h2>
+<p>You may use Unity's Reflection Probes in Vket Cloud. Check <a href="he_ReflectionProbe.html">here</a> for more details.</p>
+<h2 id="lightmap">Lightmap</h2>
 <ul>
-<li>Androidプラットフォームに切り替える（dLDRフォーマットにするため）</li>
-<li>Max Lightmap Sizeは2048以下にする</li>
-<li>ライトマップの圧縮は無効にする</li>
-<li>Format: RGB24またはRGBA32、Compressed: Noneになっているか確認する</li>
+<li>Set to Android platform. (For dLDR encoding)</li>
+<li>Max Lightmap Size needs to be equal to or less than 2048.</li>
+<li>Disable lightmap compression.</li>
+<li>Format: RGB24 or RGBA32 Compressed: None</li>
 </ul>
 <p><img src="he_image/スクリーンショット 2021-06-16 105720.png"></p>
-<h2 id="_7">シェーダー</h2>
+<h2 id="shaders">Shaders</h2>
 <ul>
 <li>Standard </li>
 <li>Autodesk Interactive　</li>
 <li>Unlit</li>
-<li>UnlitWF（両面表示等のみ対応）</li>
+<li>UnlitWF（Only available for double-sided purposes）</li>
 </ul>
-<h2 id="_8">コライダー</h2>
+<h2 id="collider">Collider</h2>
 <ul>
-<li>衝突判定用はBoxColliderとMeshColliderのみ対応。MeshColliderは処理に非常に負荷がかかるため使用は必要最低限にしてください。BoxColliderはTPSモード時にプレイヤーアバターとカメラの間に位置するオブジェクトによって遮断されるのを防ぐためにも利用しているため、天井など移動出来ない場所でも設定して下さい。MeshColliderの書き出し方法については<a href="he_MeshCollider.html">こちら</a>をご覧ください。</li>
-<li>SphereColliderはクリック（タップ）判定用にのみ使用しています。（ポスターなど）</li>
-<li>ヒエラルキーのネストが深いとコライダーが出力されない場合があります。</li>
-<li>膝下ぐらいのコライダーは登れてしまいます。かといって大きすぎるコライダーはカメラの妨げになるので、気を付けてください。</li>
-<li>必ずMeshRendererを非表示にしてください。Materialsのsizeを０にして非表示にすると、出力エラーとなります。</li>
+<li>Supports only BoxColliders and MeshColliders. MeshColliders are expensive to compute, so only use when really necessary.
+BoxColliders should be set on ceilings and other other unreachable surfaces too. This prevents Objects from getting in between your avatar and the camera when in TPS mode. 
+Check <a href="he_MeshCollider.html">here</a> for details on how to export your custom MeshCollider.</li>
+<li>SphereCollider is used only to detect clicks/taps. (For posters, etc.)</li>
+<li>If the colliders are nested too deep inside the Hierarchy, they might not properly export.</li>
+<li>Make sure to set the height of colliders well. Avatars will step up a collider if it's too low, and a tall one will block your camera.</li>
+<li>Always disable MeshRenderers on your colliders. If a disabled MeshRenderer contains 0 Materials, there will be an export error.</li>
 </ul>
-<h2 id="_9">スカイボックス</h2>
+<h2 id="skybox">Skybox</h2>
 <ul>
-<li>スカイボックスは非対応です。使わないもしくは天球などでごまかす必要があります。</li>
+<li>Skybox is not supported. Use an inverted dome instead.</li>
 </ul>
-<h2 id="_10">スケール</h2>
+<h2 id="scale">Scale</h2>
 <ul>
-<li>マイナススケールは無視されます。裏返しにする場合は、180度回転させてください。</li>
+<li>Negative scales are ignored.</li>
 </ul>
-<h2 id="_11">オブジェクト</h2>
-<p>HEOExportを行う時に１つのオブジェクトを選択してExportを行う為、全てのオブジェクトがまとまった親オブジェクトを必ず作るようにしてください。</p>
+<h2 id="object">Object</h2>
+<p>When exporting through HEOExport using object selection, make sure to create one parent Object that contains all other Objects.</p>
 <div> 
     <div>
         <img src="he_image/image-20211220-133702.png">
-        <p>上記のように一つにまとまっていればOK</p>
+        <p>Should be put together as the above.</p>
     </div>
     <div>
         <img src="he_image/image-20211220-133737.png">
-        <p>親オブジェクトが２つ以上ある場合は、まとめる必要がある。</p>
+        <p>If there are more than two parent Objects, they need to be put together as one.</p>
     </div>
 </div>
+                
+              
+              
+                
+
 
               
             </article>
@@ -1805,12 +1813,13 @@
         
       </main>
       
-        <footer class="md-footer">
+        
+<footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="he_heoexporter_tutrial.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: HEOExporter Tutorial" rel="prev">
+        <a href="he_heoexporter_tutorial.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: HEOExporter Tutorial" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1844,15 +1853,16 @@
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
       
     </div>
   </div>
@@ -1862,10 +1872,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
       
     
   </body>
