@@ -15,7 +15,7 @@
 執筆環境の導入は、以下の二通りが可能です。
 
 ## ①pipを使う
-もっともシンプルな環境構築になります。コマンドから執筆に必要な環境を導入していきます。
+もっともシンプルな環境構築になります。コマンドから執筆に必要な環境を導入します。<br>
 使用するフレームワークおよびプラグインは、以下の通りです。
 
 - git
@@ -24,7 +24,18 @@
 - mkdocs-static-i18n
 - mike
 
-## ②dockerを使う
+## ②venvを使う
+venvを用いて仮想環境を構築で執筆が可能です。<br>
+vketclouddocsというフォルダーがディレクトリに移動し、以下のコマンドを実行してください。
+
+- Windows<br>`vketclouddocs\Scripts\activate`
+- Mac & Linux<br>
+`source vketclouddocs/bin/activate`
+
+仮想環境を終了する場合は`deactivate`を実行してください。
+
+
+## ③dockerを使う
 dockerによる環境構築も可能です。
 dockerを使用する場合は、あらかじめdockerとdocker-composeがインストールされている必要があります。
 dockerの詳しい使い方は省略しますが、docker-compose.ymlがあるディレクトリに移動し、docker-compose upでコンテナを起動します。
