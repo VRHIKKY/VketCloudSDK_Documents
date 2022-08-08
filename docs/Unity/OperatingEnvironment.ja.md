@@ -11,7 +11,7 @@ VketCloudSDKは、以下の環境が必要です。
 1. Unityの**Android Build Supportモジュール**をインストールする必要があります。
     ![AddModules](img/AddModules.jpg)
     ![AndroidSupportInstall](img/AndroidSupportInstall.jpg)
-2. Build SettingsからPlatfromをAndroidに変更してください<br>
+2. インストール後、自身が作業するプロジェクトを開き、Build SettingsからPlatfromをAndroidに変更してください<br>
 UnityのメニューバーのFileからBuild Settingsを選択し、Andoroidをクリックしてください
     ![PlatformSetting](img/PlatformSettings.png)
 3. Androidの項目にUnityのマークが表示されていれば設定されていれば本手順は完了です
