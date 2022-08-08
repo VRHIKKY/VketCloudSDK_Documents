@@ -25,3 +25,7 @@ BuildAndRunでブラウザが立ち上がりますが、まれにエラーによ
 
 ![DeveloperToolConsole](img/DeveloperToolConsole.jpg)
 
+## インポートしたライブラリを確認する
+Package Managerなどからインストールしたライブラリまたはスクリプトによってエラーの原因になっている可能性があります。
+
+このケースでは後から追加した対象のライブラリをインポートし直すことで解消される場合があります。
