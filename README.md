@@ -25,14 +25,14 @@
 - mike
 
 ## ②venvを使う
-venvを用いて仮想環境を構築で執筆が可能です。<br>
-vketclouddocsというフォルダーがディレクトリに移動し、以下のコマンドを実行してください。
+venvを用いて仮想環境で執筆が可能です。<br>
+vketclouddocsというフォルダーがあるディレクトリに移動し、以下のコマンドを実行してください。
 
 - Windows<br>`vketclouddocs\Scripts\activate`
 - Mac & Linux<br>
 `source vketclouddocs/bin/activate`
 
-仮想環境を終了する場合は`deactivate`を実行してください。
+仮想環境を終了させる場合は`deactivate`を実行してください。
 
 
 ## ③dockerを使う
