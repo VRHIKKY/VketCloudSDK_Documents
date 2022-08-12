@@ -1,5 +1,7 @@
 # HEOCollider
-HEOColiderとは設定したBox Coliderに対してどのような挙動をもたせるか設定できるコンポーネントです。
+![HEOCollider](img/HEOCollider.jpg)
+
+HEOColiderとは、設定したBox Coliderに対してどのような挙動をもたせるか設定できるコンポーネントです。
 
 | Label | function |
 | ---- | ---- |
