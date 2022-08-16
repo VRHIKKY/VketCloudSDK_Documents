@@ -3,7 +3,7 @@
 
 | Label | function |
 | ---- | ---- |
-| Object Type | <span style="color: red; ">執筆中</span> |
+| Object Type | |
 
 ## Object Typeについて
 - Static
