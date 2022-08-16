@@ -107,6 +107,7 @@ nav:
     - HEOParticle: Unity/HEOParticle.md
     - HEOScript: Unity/HEOScript.md
     - HEOAreacollider: Unity/HEOAreacollider.md
+    - HEOCatalogTrigger : Unity/HEOCatalogTrigger.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
     - HEOActionTrigger: Unity/HEOActionTrigger.md
     - Actions: 
