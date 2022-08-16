@@ -3,7 +3,7 @@
 
 ![HEOVideoTrigger](img/HEOVideoTrigger.png)
 
-HEOVideoTriggerは動画を再生するために使用します。
+HEOVideoTriggerは動画を再生するために使用します。<br>
 本コンポーネントだけでは動画ファイルを.heoにパッキングすることができないため、HEOFieldを必ず追加してください。
 
 | Label | function |
