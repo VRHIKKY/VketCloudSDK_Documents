@@ -105,6 +105,7 @@ nav:
     - HEOPlane: Unity/HEOPlane.md
     - HEOTextPlane: Unity/HEOTextPlane.md
     - HEOParticle: Unity/HEOParticle.md
+    - HEOReflectionProbe : Unity/HEOReflectionProbe.md
     - HEOScript: Unity/HEOScript.md
     - HEOAreacollider: Unity/HEOAreacollider.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
