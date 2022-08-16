@@ -12,14 +12,14 @@ HEOColiderとは、設定したBox Coliderに対してどのような挙動を�
 | Type | function |
 | ---- | ---- |
 | Collider | コライダーの役割を果たします。 | 
-| Clickable | <span style="color: red;">執筆中</span> |
+| Clickable | |
 | Area | 通過することのできるコライダーです。HEOAreaColliderと組み合わせることで、範囲内に入った任意のアクションを設定できます。 | 
-| Occulusion | <span style="color: red;">執筆中</span> |
-| Reflection Probe | <span style="color: red;">執筆中</span> |
+| Occulusion |  |
+| Reflection Probe |  |
 
 ## Collider Target
 | Target | function |
 | ---- | ---- | 
-| None |  <span style="color: red;">執筆中</span> |
-| Avatar | <span style="color: red;">執筆中</span> |
-| Camera | <span style="color: red;">執筆中</span> | 
+| None |   |
+| Avatar |  |
+| Camera |  | 
