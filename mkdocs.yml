@@ -101,6 +101,7 @@ nav:
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
     - HEOObject: Unity/HEOObject.md
+    - HEOLODLevel: Unity/HEOLODLevel.md
     - HEOAudio: Unity/HEOAudio.md
     - HEOPlane: Unity/HEOPlane.md
     - HEOUVScroller: Unity/HEOUVScroller.md
