@@ -100,9 +100,12 @@ nav:
     - HEOWorldSetting: Unity/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
+    - HEOSpawn: Unity/HEOSpawn.md
     - HEOObject: Unity/HEOObject.md
+    - HEOLODLevel: Unity/HEOLODLevel.md
     - HEOAudio: Unity/HEOAudio.md
     - HEOPlane: Unity/HEOPlane.md
+    - HEOUVScroller: Unity/HEOUVScroller.md
     - HEOTextPlane: Unity/HEOTextPlane.md
     - HEOParticle: Unity/HEOParticle.md
     - HEOScript: Unity/HEOScript.md
