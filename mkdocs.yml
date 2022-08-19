@@ -109,7 +109,7 @@ nav:
     - HEOTextPlane: Unity/HEOTextPlane.md
     - HEOParticle: Unity/HEOParticle.md
     - HEOScript: Unity/HEOScript.md
-    - HEOTweetTrigger: Unity/HEOTweetTrigger.md
+    - HEOShowFlag : Unity/HEOShowFlag.md
     - HEOAreacollider: Unity/HEOAreacollider.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
     - HEOActionTrigger: Unity/HEOActionTrigger.md
