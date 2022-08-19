@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mkdocs_static_i18n/__init__.py
+mkdocs_static_i18n/folder_structure.py
+mkdocs_static_i18n/plugin.py
+mkdocs_static_i18n/structure.py
+mkdocs_static_i18n/suffix_structure.py
+mkdocs_static_i18n.egg-info/PKG-INFO
+mkdocs_static_i18n.egg-info/SOURCES.txt
+mkdocs_static_i18n.egg-info/dependency_links.txt
+mkdocs_static_i18n.egg-info/entry_points.txt
+mkdocs_static_i18n.egg-info/requires.txt
+mkdocs_static_i18n.egg-info/top_level.txt
+mkdocs_static_i18n/custom_i18n_sitemap/sitemap.xml

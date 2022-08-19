@@ -39,7 +39,8 @@ plugins:
         ja:
           Introduction: はじめに
           About VketCloudSDK: VketCloudSDKについて
-          Operating Environment: 動作環境
+          Setup Account: アカウント準備
+          Operating Environment: Unity事前設定
           Build And Run: ビルド方法
           World Upload: ワールドアップロード
           Setup SDK(external): SDKの導入方法
@@ -91,6 +92,7 @@ markdown_extensions:
 nav:
 - Introduction: index.md
 - About VketCloudSDK :
+    - Setup Account: Unity/SetupAccount.md
     - Operating Environment : Unity/OperatingEnvironment.md
     #- Setup SDK(internal) : Unity/SetupSDK_internal.md
     - Setup SDK(external) : Unity/SetupSDK_external.md
@@ -162,5 +164,7 @@ nav:
     - Build Error: troubleshooting/BuildError.md
     - Browser is not open: troubleshooting/BrowserNotOpen.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
+- Change Log:
+    - v3.2: changelog/changelog-3.2.md
 - License: common/License.md
 
