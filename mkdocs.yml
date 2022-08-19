@@ -100,14 +100,22 @@ nav:
     - HEOWorldSetting: Unity/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
+    - HEOSpawn: Unity/HEOSpawn.md
     - HEOObject: Unity/HEOObject.md
+    - HEOLODLevel: Unity/HEOLODLevel.md
     - HEOAudio: Unity/HEOAudio.md
     - HEOPlane: Unity/HEOPlane.md
+    - HEOUVScroller: Unity/HEOUVScroller.md
     - HEOTextPlane: Unity/HEOTextPlane.md
     - HEOParticle: Unity/HEOParticle.md
+    - HEOReflectionProbe : Unity/HEOReflectionProbe.md
     - HEOScript: Unity/HEOScript.md
     - HEODespawnHeight: Unity/HEODespawnHeight.md
+    - HEOCollider: Unity/HEOCollider.md
+    - HEOAnimation: Unity/HEOAnimation.md
+    - HEOShowFlag : Unity/HEOShowFlag.md
     - HEOAreacollider: Unity/HEOAreacollider.md
+    - HEOCatalogTrigger : Unity/HEOCatalogTrigger.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
     - HEOActionTrigger: Unity/HEOActionTrigger.md
     - Actions: 
