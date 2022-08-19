@@ -103,6 +103,7 @@ nav:
     - HEOObject: Unity/HEOObject.md
     - HEOAudio: Unity/HEOAudio.md
     - HEOPlane: Unity/HEOPlane.md
+    - HEOUVScroller: Unity/HEOUVScroller.md
     - HEOTextPlane: Unity/HEOTextPlane.md
     - HEOParticle: Unity/HEOParticle.md
     - HEOScript: Unity/HEOScript.md
