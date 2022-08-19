@@ -110,6 +110,7 @@ nav:
     - HEOParticle: Unity/HEOParticle.md
     - HEOReflectionProbe : Unity/HEOReflectionProbe.md
     - HEOScript: Unity/HEOScript.md
+    - HEOAnimation: Unity/HEOAnimation.md
     - HEOShowFlag : Unity/HEOShowFlag.md
     - HEOAreacollider: Unity/HEOAreacollider.md
     - HEOCatalogTrigger : Unity/HEOCatalogTrigger.md
