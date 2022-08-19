@@ -3,12 +3,8 @@
 Vket Cloud公式のサーバーをお使いの場合は、SDKの機能を使ってUnityから直接アップロードができます。  
 Build and Runの実行によって生成された「Release」フォルダー内のワールドがクローズドなリモートサーバーにアップロードされます。
 
-## VketAccountの準備
-ご利用にあたっては、まず[VketAccount](https://account.vket.com/?locale=ja)への登録を行ってください。
-
-## コンテンツのアップロード
-VketAccountの作成が完了し、数日が経過すると以下の手順でアップロードが可能になります。
-
+## コンテンツのアップロード  
+  
 1. メニューバーの「VketCloudSDK」から「Upload to Remote Server」をクリックしてください
 2. ブラウザ上でページが開き、VketAccountの認証コードが表示されます
 3. 認証コードをコピーして、Unity側で表示された「VketCloudSDK」ウィンドウに入力し、「Submit」をクリックします  
