@@ -110,6 +110,7 @@ nav:
     - HEOParticle: Unity/HEOParticle.md
     - HEOReflectionProbe : Unity/HEOReflectionProbe.md
     - HEOScript: Unity/HEOScript.md
+    - HEOMeshCollider: Unity/HEOMeshCollider.md
     - HEODespawnHeight: Unity/HEODespawnHeight.md
     - HEOCollider: Unity/HEOCollider.md
     - HEOAnimation: Unity/HEOAnimation.md
