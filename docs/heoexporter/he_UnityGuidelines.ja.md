@@ -18,16 +18,21 @@ VketCloudでは軽量化の方法の一つとしてテクスチャを圧縮す�
 VketCloudではUnityのリフレクションプローブを使用することができます。詳しくは[こちら](he_ReflectionProbe.md)をご覧ください。
 
 ## ライトマップ
-* Androidプラットフォームに切り替える（dLDRフォーマットにするため）
+* Android(dLDRフォーマット) または PC(RGBMフォーマット)  プラットフォームに切り替える
+* Other SettingsのLightMap EncodingがAndroidプラットフォームの場合『Low Quality』、PCプラットフォームの場合『Normal Quality』になっているか確認する
+    * LightMap  Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください
+    * リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
+* Other Settings の Color Spaceが『Linear』になっているか確認する
+<img src="he_image/スクリーンショット 2022-05-27 193242.png">
 * Max Lightmap Sizeは2048以下にする
 * ライトマップの圧縮は無効にする
 * Format: RGB24またはRGBA32、Compressed: Noneになっているか確認する
-
 <img src="he_image/スクリーンショット 2021-06-16 105720.png">
 
 ## シェーダー
 * Standard 
 * Autodesk Interactive　
+    * Autodesk Interactiveのメタリックテクスチャはテクスチャスロット数の都合上、書き出していないので、メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。
 * Unlit
 * UnlitWF（両面表示等のみ対応）
 
