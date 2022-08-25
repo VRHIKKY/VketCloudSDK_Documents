@@ -5,10 +5,10 @@ UnityのPackage Managerを使用してインストールします。
   
 ### Step 1. Unityでプロジェクトを開く  
 ---
-対応しているバージョン（[Unity事前設定]()）のプロジェクトを開く、またはプロジェクトを新規作成します。  
+対応しているバージョン（[Unity事前設定](https://vrhikky.github.io/VketCloudSDK_Documents/3.3/ja/Unity/OperatingEnvironment.html)）のプロジェクトを開く、またはプロジェクトを新規作成します。  
 テンプレートは「3D」を選択してください。      
   
-※[Unity事前設定]()ページで事前設定を完了させてください。
+※[Unity事前設定](https://vrhikky.github.io/VketCloudSDK_Documents/3.3/ja/Unity/OperatingEnvironment.html)ページで事前設定を完了させてください。
 
 ※プロジェクト名にスペースを入れるとビルドに失敗する場合があります。  
 OK例) MyProject　　NG例) My Project  
@@ -57,7 +57,7 @@ Unityのメニューに「VketCloudSDK」の項目が追加されていれば導
 Unityのメニュー VketCloudSDK＞Preferences
 
 「buildpassword」欄にパスワードを入力  
-※パスワードは[マイページ](https://labtest.vketcloud.com/mypage/sdk/)の「ビルドロックパスワード」に記載されています。
+※パスワードは[マイページ](https://lab.vketcloud.com/mypage/sdk/)の「ビルドロックパスワード」に記載されています。
 
    ![buildpassword](img/buildpassword.png)
 

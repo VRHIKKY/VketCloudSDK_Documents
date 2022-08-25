@@ -29,4 +29,4 @@ VketCloudを起動するには、以下のコンポーネントを含むオブ�
 ・ブラウザのキャッシュクリア  
 を試してみてください。
 
-それでも解決しない場合、[ビルドエラー](http://127.0.0.1:8000/ja/troubleshooting/BuildError.html)を参照してください。
+それでも解決しない場合、[ビルドエラー](https://vrhikky.github.io/VketCloudSDK_Documents/3.3/ja/troubleshooting/BuildError.html)を参照してください。

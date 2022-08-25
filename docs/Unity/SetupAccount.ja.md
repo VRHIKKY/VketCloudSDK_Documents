@@ -5,7 +5,7 @@
 ご利用にあたっては、まず[VketAccount](https://account.vket.com/?locale=ja)への登録を行ってください。
   
 ## SDK利用登録    
-①[VketLABO](https://labtest.vketcloud.com/mypage/)( https://labtest.vketcloud.com/mypage/ )にログイン
+①[VketLABO](https://lab.vketcloud.com/)( https://lab.vketcloud.com/ )にログイン
 ![registerVket](img/registerVket.png)
   
 
