@@ -175,6 +175,7 @@ nav:
     - Browser is not open: troubleshooting/BrowserNotOpen.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
 - Change Log:
+    - v3.3: changelog/changelog-3.3.md
     - v3.2: changelog/changelog-3.2.md
 - License: common/License.md
 
