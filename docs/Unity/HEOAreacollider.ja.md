@@ -1,9 +1,8 @@
 # HEOAreacollider
+![HEOAreacollider](img/HEOAreaCollider.jpg)
 
 HEOAreaColliderは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
 コライダーにプレイヤーが進入した際にアクションを実行します。
-
-![HEOAreacollider](img/HEOAreaCollider.jpg)
 
 HEOAreaColliderをアタッチするオブジェクトにはHEOCollider,Colliderがアタッチされている必要があります。
 HEOColliderのtypeはAreaに設定されている必要があります。

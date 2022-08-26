@@ -1,9 +1,8 @@
 # HEOActionTrigger
+![HEOActionTrigger](img/HEOActionTrigger.jpg)
 
 HEOActionTriggerは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
 コライダーをクリックした際にアクションを実行します。
-
-![HEOActionTrigger](img/HEOActionTrigger.jpg)
 
 HEOActionTriggerをアタッチするオブジェクトにはColliderがアタッチされている必要があります。
 
