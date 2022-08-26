@@ -6,6 +6,9 @@ Your mouse is used to navigate the 3D camera.
 ### Camera Rotation
 Right click and drag
 ### Pan
-Click on the scroll wheel and drag, or Ctrl+Alt+left click and drag
+Click on the scroll wheel and drag, or Ctrl+Shift+left click and drag
 ### Rotate around Pivot
-Alt+left click and drag
+Shift+left click and drag
+
+### Move forward and 
+Scroll wheel

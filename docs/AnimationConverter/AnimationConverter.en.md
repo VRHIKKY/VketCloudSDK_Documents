@@ -10,7 +10,7 @@ Select "Animation Converter" from the "VketCloud SDK" tab on the Window toolbar.
 Variables must be set before animation conversion. The meaning of each variable is as follows:
 ・Conversion model... The character model that will be used for the legacy animation. At this point, it must be a Humanoid animation. After conversion, convert it to a legacy type Rig in Unity and check the converted animation.
 ・Animation to be converted...Humanoid animation to be converted to legacy animation
-・Root...Root bone of the character model. For example, in Unity-chan, there is "Character1_Reference" directly under the character object, which is the root bone. This child is followed by "Hip," "Spine," etc. If there is a parent bone of the "Hip" bone directly under the character model, it must be set as the root.
+・Root...Root bone of the character model. For example, in Vket-chan2, there is "Reference" directly under the character object, which is the root bone. This child is followed by "Hip," "Spine," etc. If there is a parent bone of the "Hip" bone directly under the character model, it must be set as the root.
 ・Save Folder...This is the folder where the converted animation will be saved. Click the "Select Save Folder" button to specify the destination folder.
 
 ※Currently, the OptionalBone "UpperChest" must be set in the Rig of the conversion model.
@@ -25,7 +25,7 @@ The conversion process will take place for a few seconds, and when finished, the
 
 ### 4. 確認テスト
 Let's play back the converted animation as a test. First, convert the character model you just used for the converted model to a legacy Rig and assign the converted legacy animation.
-The following image shows the Humanoid animation of Vket-chan on the left, re-converted for legacy animation that Unity-chan can use, played back. If the conversion was done well, the same poses should play!
+The following image shows the Humanoid animation of Vket-chan on the left, re-converted for legacy animation that Vket-chan2 can use, played back. If the conversion was done well, the same poses should play!
 
 ![alt動作確認](images/4.png)
 
