@@ -1,11 +1,14 @@
 # HEOActionTrigger
+
+HEOActionTriggerは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
+コライダーをクリックした際にアクションを実行します。
+
 ![HEOActionTrigger](img/HEOActionTrigger.jpg)
 
+HEOActionTriggerをアタッチするオブジェクトにはColliderがアタッチされている必要があります。
 
-HEOActionTriggerは、オブジェクトに対してアクションを導入することができるコンポーネントです。
-
-コライダーをアタッチしたオブジェクトをクリックした際にアクションを実行します。<br>
-Addをクリックすることで任意のアクションを設定できます。
+Addをクリックすることで任意のアクションを設定できます。<br/>
+Deleteをクリックすることで最後尾のアクションを削除できます。
 
 アクションについては[アクションの概要](ActionsOverview.md)を参照してください。<br>
 コライダーについては[Unity制作ガイドライン - コライダー](../heoexporter/he_UnityGuidelines.md)を参照してください。
