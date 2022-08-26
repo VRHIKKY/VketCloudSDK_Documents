@@ -44,6 +44,7 @@ plugins:
           Build And Run: ビルド方法
           World Upload: ワールドアップロード
           Setup SDK(external): SDKの導入方法
+          Setup Avatar: アバター使用方法
           Var: 変数・値
           Operator: 演算子
           Class: クラス・構造体
@@ -72,6 +73,7 @@ plugins:
           Loading stops: ブラウザの読み込みが止まる
           Actions: Actionクラス
           Actions Overview: アクションの概要
+          ActionNodeGraph: ActionNodeGraph 説明書
           Particle Editor : パーティクルエディター
           ParticleEditor Overview: パーティクルエディター概要 
           About Screen: 操作画面について
@@ -79,6 +81,7 @@ plugins:
           Window Info: ウィンドウ解説
           Toolbar: ツールバー
           Property: プロパティウィンドウ
+          Animation Converter : Animation Converter 説明書
           Trouble shooting: トラブルシューティング
           Build Error: ビルドエラー
           Browser is not open: ブラウザが立ち上がらない
@@ -98,6 +101,7 @@ nav:
     - Setup SDK(external) : Unity/SetupSDK_external.md
     - Build And Run : Unity/BuildAndRun.md
     - World Upload : Unity/WorldUpload.md
+    - Setup Avatar : Unity/SetupAvatar.md
 - HEOComponent:
     - HEOWorldSetting: Unity/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
@@ -121,6 +125,7 @@ nav:
     - HEOCatalogTrigger : Unity/HEOCatalogTrigger.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
     - HEOActionTrigger: Unity/HEOActionTrigger.md
+    - ActionNodeGraph: Unity/ActionNodeGraph.md
     - Actions: 
         - Actions Overview: Unity/ActionsOverview.md
         - Openweb: Unity/Openweb.md
@@ -170,6 +175,8 @@ nav:
       - Toolbar : particleeditor/pe_toolbar.md
       - Property : particleeditor/pe_propertywindow.md
       - Particle List : particleeditor/pe_particlelistwindow.md
+- Animation Converter :
+    - Animation Converter : AnimationConverter/AnimationConverter.md
 - Trouble shooting:
     - Build Error: troubleshooting/BuildError.md
     - Browser is not open: troubleshooting/BrowserNotOpen.md
