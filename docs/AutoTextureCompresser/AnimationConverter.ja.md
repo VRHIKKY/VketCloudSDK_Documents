@@ -8,10 +8,8 @@
 ### 2. テクスチャ変換
 ツールバー上の「VketCloudSDK」から、AutoTextureCompresserを選択してください。
 下図のようなウィンドウが出てくるので、適切なフォルダパスを入力します。SelectFolderボタンによって各パスを直接指定することができます。指定後、TextureCompressというボタンを押してください。
-	TexConv…TexConv.exeが配置されているフォルダを指定します。デフォルトでは「C://TexConv」を指定しています。
-	PVRTexTool…PVRTexToolCLI.exeが配置されているフォルダを指定します。デフォルトでは「C:/ImaginationTechnologies/PowerVR_Graphics/PowerVR_Tools/
-PVRTexTool/CLI/Windows_x86_64」を指定しています。
-	HEOファイルのパス...作成したHEOファイルを指定します。※HEOファイルがあるディレクトリ内に「.astc」「.etc2」「.dxt」とついたバッチファイルが同梱されている必要があります。
+	TexConv…TexConv.exeが配置されているフォルダを指定します。
+	PVRTexTool…PVRTexToolCLI.exeが配置されているフォルダを指定します。
 ![altツールバー説明](images/1.png)
 ![altウィンドウ](images/2.png)
 
