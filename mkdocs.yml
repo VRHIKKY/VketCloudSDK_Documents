@@ -13,6 +13,8 @@ theme:
     - navigation.indexes
     #- navigation.expand
 
+google_analytics_4: G-05NPW204YY
+
 extra:
   version:
     provider: mike
@@ -45,6 +47,8 @@ plugins:
           World Upload: ワールドアップロード
           Setup SDK(external): SDKの導入方法
           Setup Avatar: アバター使用方法
+          worldbasic: ワールドの基本要素
+          Skybox: スカイボックス（空）設定
           Var: 変数・値
           Operator: 演算子
           Class: クラス・構造体
@@ -102,6 +106,9 @@ nav:
     - Build And Run : Unity/BuildAndRun.md
     - World Upload : Unity/WorldUpload.md
     - Setup Avatar : Unity/SetupAvatar.md
+- worldbasic :
+    - worldbasic : Unity/worldbasic.md
+    - Skybox : Unity/Skybox.md      
 - HEOComponent:
     - HEOWorldSetting: Unity/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
