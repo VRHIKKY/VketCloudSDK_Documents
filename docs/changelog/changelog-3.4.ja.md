@@ -1,4 +1,9 @@
 # 3.4.1
+##heliodor
+- JavaScriptからLayerのShow状態を取得できるようにしました
+- JavaScriptからワールド内サウンドアイテムの指定先ファイル名を変更できるようにしました
+
+##SDK
 - AutoTextureCompresser追加
 
 # 3.3.5
