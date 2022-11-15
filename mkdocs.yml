@@ -65,6 +65,7 @@ plugins:
           Unity Guidelines : Unity制作ガイドライン
           ReflectionProbe: リフレクションプローブ
           Texture Compression: テクスチャ圧縮
+          Auto Texture Compression: 自動テクスチャ圧縮
           Get closer to the look of VketCloud to Unity: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponent: HEOコンポーネントの使い方
@@ -172,6 +173,7 @@ nav:
     - Unity Guidelines : heoexporter/he_UnityGuidelines.md
     - ReflectionProbe : heoexporter/he_ReflectionProbe.md
     - Texture Compression : heoexporter/he_TextureCompression.md
+    - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
     - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
     - Mesh Collider : heoexporter/he_MeshCollider.md
 - Particle Editor :
