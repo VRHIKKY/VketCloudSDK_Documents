@@ -1,0 +1,2715 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="VketCloudSDKのマニュアルです">
+      
+      
+      
+        <meta name="author" content="HIKKY">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-7.3.0">
+    
+    
+      
+        <title>利用規約 - VketCloudSDK Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="green">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vketcloud" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../index.html" title="VketCloudSDK Manual" class="md-header__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VketCloudSDK Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              利用規約
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../common/License.html" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="License.html" hreflang="ja" class="md-select__link">
+                    日本語
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="クリア" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="VketCloudSDK Manual" class="md-nav__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    VketCloudSDK Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        はじめに
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          VketCloudSDKについて
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="VketCloudSDKについて" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          VketCloudSDKについて
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/SetupAccount.html" class="md-nav__link">
+        アカウント準備
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/OperatingEnvironment.html" class="md-nav__link">
+        動作環境
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/SetupSDK_external.html" class="md-nav__link">
+        SDKの導入方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/BuildAndRun.html" class="md-nav__link">
+        ビルド方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/WorldUpload.html" class="md-nav__link">
+        ワールドアップロード
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/SetupAvatar.html" class="md-nav__link">
+        アバター使用方法
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          ワールドの基本要素
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ワールドの基本要素" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          ワールドの基本要素
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/worldbasic.html" class="md-nav__link">
+        ワールドの基本要素
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/Skybox.html" class="md-nav__link">
+        スカイボックス（空）設定
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          HEOコンポーネントの使い方
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HEOコンポーネントの使い方" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          HEOコンポーネントの使い方
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOWorldSetting.html" class="md-nav__link">
+        HEOWorldSetting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOField.html" class="md-nav__link">
+        HEOField
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOPlayer.html" class="md-nav__link">
+        HEOPlayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOObject.html" class="md-nav__link">
+        HEOObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOLODLevel.html" class="md-nav__link">
+        HEOLODLevel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOAudio.html" class="md-nav__link">
+        HEOAudio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOPlane.html" class="md-nav__link">
+        HEOPlane
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOUVScroller.html" class="md-nav__link">
+        HEOUVScroller
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOTextPlane.html" class="md-nav__link">
+        HEOTextPlane
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOParticle.html" class="md-nav__link">
+        HEOParticle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOReflectionProbe.html" class="md-nav__link">
+        HEOReflectionProbe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOScript.html" class="md-nav__link">
+        HEOScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOMeshCollider.html" class="md-nav__link">
+        HEOMeshCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEODespawnHeight.html" class="md-nav__link">
+        HEODespawnHeight
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOCollider.html" class="md-nav__link">
+        HEOCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOAnimation.html" class="md-nav__link">
+        HEOAnimation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOShowFlag.html" class="md-nav__link">
+        HEOShowFlag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOAreacollider.html" class="md-nav__link">
+        HEOAreacollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOCatalogTrigger.html" class="md-nav__link">
+        HEOCatalogTrigger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOVideoTrigger.html" class="md-nav__link">
+        HEOVideoTrigger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/HEOActionTrigger.html" class="md-nav__link">
+        HEOActionTrigger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/ActionNodeGraph.html" class="md-nav__link">
+        ActionNodeGraph 説明書
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_23" type="checkbox" id="__nav_4_23" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_23">
+          Actionクラス
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Actionクラス" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_23">
+          <span class="md-nav__icon md-icon"></span>
+          Actionクラス
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/ActionsOverview.html" class="md-nav__link">
+        アクションの概要
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/Openweb.html" class="md-nav__link">
+        Openweb
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/PlayStopItem.html" class="md-nav__link">
+        Play/StopItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/ShowHideItem.html" class="md-nav__link">
+        Show/HideItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/PlayStopObject.html" class="md-nav__link">
+        Play/StopObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/ShowHideObject.html" class="md-nav__link">
+        Show/HideObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/ShowHideNode.html" class="md-nav__link">
+        Show/HideNode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/EnableDisableClickableNode.html" class="md-nav__link">
+        Enable/DisableClickableNode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/EnableDisableCollider.html" class="md-nav__link">
+        Enable/DisableCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/Wait.html" class="md-nav__link">
+        Wait
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/SetPosRelativePlayer.html" class="md-nav__link">
+        SetPosRelativePlayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/MoveTo.html" class="md-nav__link">
+        MoveTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/Random.html" class="md-nav__link">
+        Random
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/Warp.html" class="md-nav__link">
+        Warp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/JumpWorld.html" class="md-nav__link">
+        JumpWorld
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/Emote.html" class="md-nav__link">
+        Emote
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/Motion.html" class="md-nav__link">
+        Motion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/NextMotion.html" class="md-nav__link">
+        NextMotion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/AddVar.html" class="md-nav__link">
+        AddVar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/SetVar.html" class="md-nav__link">
+        SetVar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/IfEqual.html" class="md-nav__link">
+        If A == B
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/IfNotEqual.html" class="md-nav__link">
+        If A != B
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/IfGreaterThanOrEqual.html" class="md-nav__link">
+        If A >= B
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/IfLessThanOrEqual.html" class="md-nav__link">
+        If A <= B
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/StopVideo.html" class="md-nav__link">
+        StopVideo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/SetCookieText.html" class="md-nav__link">
+        SetCookieText
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/OpenComicViewer.html" class="md-nav__link">
+        OpenComicViewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/ShowLayer.html" class="md-nav__link">
+        ShowLayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/CallJavaScript.html" class="md-nav__link">
+        CallJavaScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/EnterLeaveVoiceGroup.html" class="md-nav__link">
+        Enter/LeaveVoiceGroup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/WhiteOutIn.html" class="md-nav__link">
+        WhiteOut/In
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unity/FadeOutIn.html" class="md-nav__link">
+        FadeOut/In
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          HEOExporter
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HEOExporter" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          HEOExporter
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_about_heoexporter.html" class="md-nav__link">
+        HEOExporter概要
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_heoexporter_tutorial.html" class="md-nav__link">
+        HEOExporterチュートリアル
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_UnityGuidelines.html" class="md-nav__link">
+        Unity制作ガイドライン
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_ReflectionProbe.html" class="md-nav__link">
+        リフレクションプローブ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_TextureCompression.html" class="md-nav__link">
+        テクスチャ圧縮
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutoTextureCompresser/AutoTextureCompresser.html" class="md-nav__link">
+        自動テクスチャ圧縮
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_align_unity_to_vketcloud.html" class="md-nav__link">
+        UnityとVketCloudの見た目を揃える
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_MeshCollider.html" class="md-nav__link">
+        メッシュコライダーについて
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          パーティクルエディター
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="パーティクルエディター" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          パーティクルエディター
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_about_particleeditor.html" class="md-nav__link">
+        パーティクルエディター概要
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_about_screen.html" class="md-nav__link">
+        操作画面について
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_control.html" class="md-nav__link">
+        操作説明
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          ウィンドウ解説
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ウィンドウ解説" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          ウィンドウ解説
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_toolbar.html" class="md-nav__link">
+        ツールバー
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_propertywindow.html" class="md-nav__link">
+        プロパティウィンドウ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_particlelistwindow.html" class="md-nav__link">
+        Particle List
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Animation Converter 説明書
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Animation Converter 説明書" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Animation Converter 説明書
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnimationConverter/AnimationConverter.html" class="md-nav__link">
+        Animation Converter 説明書
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          トラブルシューティング
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="トラブルシューティング" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          トラブルシューティング
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/BuildError.html" class="md-nav__link">
+        ビルドエラー
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/BrowserNotOpen.html" class="md-nav__link">
+        ブラウザが立ち上がらない
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/ChangesAreNotApplied.html" class="md-nav__link">
+        変更が更新されない
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Change Log
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Change Log" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Change Log
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.3.html" class="md-nav__link">
+        v3.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.2.html" class="md-nav__link">
+        v3.2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          利用規約
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="License.html" class="md-nav__link md-nav__link--active">
+        利用規約
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    第1条 適用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    第2条 定義
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    第3条 本サービスの利用登録
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    第4条 アカウント情報の管理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    第5条 本サービスの利用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    第6条 チャット機能
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    第7条 禁止行為
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    第8条 本サービスの停止・中断等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    第9条 利用環境等に関する注意事項
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    第10条 知的財産権等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    第11条 本サービスの利用停止、登録取消等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    第12条 保証の否認、免責
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    第13条 利用者の賠償責任等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    第14条 反社会的勢力等の排除
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    第15条 有効期間
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    第16条 本規約等の変更
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    第17条 連絡/通知
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    第18条 譲渡等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19" class="md-nav__link">
+    第19条 完全合意
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20" class="md-nav__link">
+    第20条 分離可能性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    第21条 準拠法、管轄裁判所
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    第22条 協議解決
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    第1条 適用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    第2条 定義
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    第3条 本サービスの利用登録
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    第4条 アカウント情報の管理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    第5条 本サービスの利用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    第6条 チャット機能
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    第7条 禁止行為
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    第8条 本サービスの停止・中断等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    第9条 利用環境等に関する注意事項
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    第10条 知的財産権等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    第11条 本サービスの利用停止、登録取消等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    第12条 保証の否認、免責
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    第13条 利用者の賠償責任等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    第14条 反社会的勢力等の排除
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    第15条 有効期間
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    第16条 本規約等の変更
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    第17条 連絡/通知
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    第18条 譲渡等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19" class="md-nav__link">
+    第19条 完全合意
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20" class="md-nav__link">
+    第20条 分離可能性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    第21条 準拠法、管轄裁判所
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    第22条 協議解決
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="vketcloud">VketCloudコミュニケーションサービス利用規約</h1>
+<p>利用者は、本規約に同意する前に、必ず慎重に全文お読み下さいますようお願い致します。</p>
+<p>利用者は、本サービス（以下に定義）の利用にあたり、本規約及び当社が定める諸規定を遵守しなくてはなりません。本規約又は当社が定める規定に違反した又は違反する可能性があると当社が判断した場合、当社は利用申込の拒否や利用の取消を直ちに行うことができます。また、当社は、それによって生じ得る利用者及びその関係者の損害について、補償する義務を一切負いません。</p>
+<p>本規約に同意しない場合、本サービスをご利用いただけません。利用申込を行い、サービスの利用を開始することにより、利用者が本規約の全ての項目を理解し、その内容に同意したものとみなします。</p>
+<h2 id="1">第1条 適用</h2>
+<ul>
+<li>
+<p>本規約は、株式会社HIKKY（以下「当社」といいます）のVketCloudコミュニケーションサービス（HIKKYが提供するWebブラウザ上のVRコンテンツにおいて利用される通信機能の総称。理由の如何を問わず名称又は内容が変更された場合は、当該変更後のサービス含みます）、及び関連して提供されるプログラム、ソフトウェア等の利用、並びに本規約の適用の下でアプリを使用してアップロード、ダウンロード、又は視聴される全てのCG、グラフィック、音楽、テキスト、その他の情報(別途本規約中に定めが無い限り、当社が提供するもの又は出展者が出展するものを問いません。以下「コンテンツ」といいます)へのアクセス、視聴、体験及び利用(以下「本サービス」といいます)に関する事項を規定します。本規約は、本サービスに関する当社と利用者の間の契約内容を構成します。</p>
+</li>
+<li>
+<p>当社が当社ウェブサイト（第2条に定義）上で随時掲載する本サービスに関する諸規定は、本規約の一部を構成するものとします。</p>
+</li>
+</ul>
+<h2 id="2">第2条 定義</h2>
+<ul>
+<li>
+<p>「外部サービス」とは、他の事業者（Google、Apple、Microsoft、VRChat、YouTubeを含みますが、これらに限りません）が提供している当社所定の本サービスの実施に利用されるサービス又はプラットフォームを意味します。</p>
+</li>
+<li>
+<p>「外部事業者」とは、外部サービスのサービス提供者を意味します。</p>
+</li>
+<li>
+<p>「外部利用規約」とは、利用者と外部事業者との権利関係を定める規約を意味します。</p>
+</li>
+<li>
+<p>「出展者」とは、本サービスに出展申込を行い、当社の承諾のもと、本サービスへのデータ入稿を行う者を意味します。</p>
+</li>
+<li>
+<p>「知的財産権」とは、著作権、特許権、実用新案権、商標権、意匠権その他の知的財産権（それらの権利を取得し、又はそれらの権利につき登録等を出願する権利も含みます）を意味します。</p>
+</li>
+<li>
+<p>「当社ウェブサイト」とは、当社が運営するウェブサイト（理由の如何を問わず当社のウェブサイトのドメイン又は内容が変更された場合は、当該変更後のウェブサイトを含みます。）を意味します。</p>
+</li>
+</ul>
+<h2 id="3">第3条 本サービスの利用登録</h2>
+<ul>
+<li>
+<p>本サービスの利用を希望する者（以下「登録希望者」といいます）は、本規約及び当社が定める諸規定の遵守に同意することを条件に、当社に対して、本サービスの利用の登録を申し込むことができます。</p>
+</li>
+<li>
+<p>前項の定めにかかわらず、登録希望者が、以下の各号のいずれかの事由に該当する場合は、本サービスの利用の登録を申し込むことが禁止されます。</p>
+<ul>
+<li>
+<p>未成年者、成年被後見人、被保佐人又は被補助人のいずれかであり、法定代理人、後見人､保佐人又は補助人の同意等を得ていない場合</p>
+</li>
+<li>
+<p>反社会的勢力等（暴力団、暴力団員、暴力団員でなくなった時から５年を経過しない者、暴力団準構成員、暴力団関係企業、総会屋等、社会運動等標ぼうゴロ又は特殊知能暴力集団、その他これらに準ずる者をいいます。以下同じ）である、又は資金提供その他を通じて反社会的勢力等の維持、運営若しくは経営に協力若しくは関与する等反社会的勢力等との何らかの交流若しくは関与を行っていると当社が判断した場合</p>
+</li>
+<li>
+<p>過去に本サービス又は当社が提供する他のサービスの利用の登録を拒否又は取り消されたことがある場合、その他、当社が登録を適当でないと判断する場合</p>
+</li>
+</ul>
+</li>
+<li>
+<p>登録希望者が本サービスの利用が可能な状態となった場合には、これをもって登録希望者の利用者登録は完了し、本規約に従った本サービスの利用にかかる契約（以下「利用契約」といいます）が利用者と当社の間に成立します。</p>
+</li>
+</ul>
+<h2 id="4">第4条 アカウント情報の管理</h2>
+<ul>
+<li>
+<p>利用者は、自己の責任において、本サービスにかかるID（以下「アカウント情報」といいます）を管理するものとし、これを第三者に利用させたり、貸与、譲渡、名義変更、売買等をしてはなりません。</p>
+</li>
+<li>
+<p>アカウント情報の不適切な管理、使用上の過誤、第三者の使用等による損害の責任は、利用者が負うものとし、当社は一切の責任を負いません。</p>
+</li>
+<li>
+<p>利用者は、自らのアカウント情報に関して、窃取又は第三者による使用等を認識した場合、直ちにその旨を当社に通知し、当社からの指示に従うものとします。</p>
+</li>
+</ul>
+<h2 id="5">第5条 本サービスの利用</h2>
+<ul>
+<li>
+<p>利用者は、利用契約の有効期間中、当社が提供するコンテンツ及び出展者が出展するコンテンツを、本規約に従い、当社の定める方法により、利用することができます。</p>
+</li>
+<li>
+<p>当社は、本サービスの運営者として、出展者に対して、入稿データの設置、展示を行う場としてスペースを提供するものであり、当該データの内容に関与するものでありません。利用者は、自らの責任で本サービス及び出展者の入稿データを利用並びに利用者間でのコミュニケーションを行うものとします。利用者が、何らかの方法で出展者その他の者からコンテンツの購入又は取得を行うことがあっても、当社は、利用者及び出展者その他の者との間の契約、購入又は取得されたコンテンツの瑕疵、またそれらに伴って発生するトラブル、損害等について、一切関与せず、また責任を負わないものとします。</p>
+</li>
+</ul>
+<h2 id="6">第6条 チャット機能</h2>
+<ul>
+<li>
+<p>利用者は、利用契約の有効期間中、本規約に従い、当社の定める方法により、本サービス上において音声又はテキストによるチャット機能（以下「本チャット機能」といいます）を使用することができます。</p>
+</li>
+<li>
+<p>本チャット機能は、利用者間のクローズドな通信を行うものではなく、利用者がメッセージを他の利用者及び当社に発信するオープンな通信を行うものです。本チャット機能を使用する利用者は、発信するメッセージが他の利用者及び当社によって視聴又は閲覧されることについて、本項により予め異議なく承諾するものとします。</p>
+</li>
+<li>
+<p>当社は、法令による場合、又は司法・行政機関その他公的機関による命令、要求若しくは要請がある場合は、これに従うために本チャット機能により発信された利用者のメッセージを開示することができるものとします。本チャット機能を使用する利用者は、これについて本項により予め異議なく承諾するものとします。</p>
+</li>
+<li>
+<p>当社は、本条に基づき当社が行った措置により、万が一利用者に何らかの損害が生じることがあっても、一切の責任を負いません。</p>
+</li>
+</ul>
+<h2 id="7">第7条 禁止行為</h2>
+<ul>
+<li>
+<p>利用者は、本サービスの利用にあたり、以下の各号のいずれかに該当する行為をしてはなりません。</p>
+<ul>
+<li>
+<p>当社、又は他の利用者、外部事業者その他の第三者の知的財産権、肖像権、プライバシーの権利、名誉、その他の権利又は利益を侵害する、又は侵害するおそれのある行為</p>
+</li>
+<li>
+<p>犯罪行為に関連する行為又は公序良俗に反する行為</p>
+</li>
+<li>
+<p>猥褻な情報又は青少年に有害な情報を送信する行為</p>
+</li>
+<li>
+<p>性行為、異性交際、出会い等に関する情報を送信する行為</p>
+</li>
+<li>
+<p>特定の個人やグループに対して著しく攻撃的な又は著しい嫌悪感を抱かせる行為（例：人種・民族差別、宗教紛争等）</p>
+</li>
+<li>
+<p>特定の宗教の勧誘、宣伝行為その他宗教的な利用行為</p>
+</li>
+<li>
+<p>本規約、法令（公職選挙法その他も含みます）又は当社若しくは利用者が所属する業界団体の内部規則に違反する行為</p>
+</li>
+<li>
+<p>コンピューター・ウィルスその他の有害なコンピューター・プログラムを含む情報を送信する行為</p>
+</li>
+<li>
+<p>本サービスに関して利用し得る情報を改ざんする行為</p>
+</li>
+<li>
+<p>他の利用者その他の第三者になりすまして行う行為</p>
+</li>
+<li>
+<p>当社が定める一定のデータ容量以上のデータを本サービスを通じて送信する行為</p>
+</li>
+<li>
+<p>当社の許諾を得ていない、本サービスを用いた営利活動</p>
+</li>
+<li>
+<p>本サービスの運営を妨げる又は当社の信用を毀損するおそれのある行為</p>
+</li>
+<li>
+<p>その他、当社が不適切と判断する行為</p>
+</li>
+</ul>
+</li>
+<li>
+<p>当社は、本サービスにおける利用者による行為が前項各号のいずれかに該当し、又は該当するおそれがあると当社が判断した場合には、利用者に事前に通知することなく、当該情報の全部又は一部を削除その他の必要な措置を講ずることができるものとします。</p>
+</li>
+<li>
+<p>当社は、本条に基づき当社が行った措置に基づき利用者に生じた損害について、一切の責任を負いません。</p>
+</li>
+</ul>
+<h2 id="8">第8条 本サービスの停止・中断等</h2>
+<ul>
+<li>
+<p>当社は、以下のいずれかに該当する場合には、利用者に事前に通知することなく、本サービスの利用の全部又は一部を停止又は中断することができるものとします。</p>
+<ul>
+<li>
+<p>本サービスに係るコンピューター・システムの点検又は保守作業を定期的又は緊急に行う場合</p>
+</li>
+<li>
+<p>コンピューター、通信回線等が事故により停止した場合</p>
+</li>
+<li>
+<p>不可抗力（第三者の責に帰すべき事由、外部サービスの中断及び停止等、天災、停電、天災地変、その他当社の合理的な支配の及ばないあらゆる状況を意味します。以下同じ）により本サービスの提供ができない場合</p>
+</li>
+<li>
+<p>外部サービスにトラブル、サービス提供の中断又は停止、本サービスとの連携の停止、仕様変更等が生じた場合</p>
+</li>
+<li>
+<p>その他、当社が停止又は中断を必要と判断した場合</p>
+</li>
+</ul>
+</li>
+<li>
+<p>当社は、当社の都合により、本サービスの提供を直ちに終了することができます。この場合、当社は事前に利用者に通知するよう努めますが、合理的な理由に基づき事後通知となることがあります。</p>
+</li>
+<li>
+<p>当社は、本条に基づき当社が行った措置に基づき生じた損害について一切の責任を負いません。</p>
+</li>
+</ul>
+<h2 id="9">第9条 利用環境等に関する注意事項</h2>
+<ul>
+<li>
+<p>本サービスの提供を受けるために必要な、コンピューター、ソフトウェアその他の機器、通信回線その他の通信環境等の準備及び維持は、利用者の費用と責任において行うものとします。</p>
+</li>
+<li>
+<p>利用者は自己の本サービスの利用環境に応じて、コンピューター・ウィルスの感染の防止、不正アクセス及び情報漏洩の防止等のセキュリティ対策を自らの費用と責任において講じるものとします。</p>
+</li>
+<li>
+<p>当社は、利用者が送受信したメッセージその他の情報を運営上一定期間保存していた場合であっても、かかる情報を保存する義務を負うものではなく、当社はいつでもこれらの情報を削除できるものとします。なお、当社はかかる情報の削除に基づき利用者に生じた損害について一切の責任を負いません。</p>
+</li>
+<li>
+<p>利用者は、本サービスの利用開始に際し又は本サービスの利用中に、利用者が保有する情報の消滅若しくは改変又は機器の故障、損傷等が生じないよう十分な注意を払うものとし、当社は利用者に発生したかかる損害について一切責任を負わないものとします。</p>
+</li>
+</ul>
+<h2 id="10">第10条 知的財産権等</h2>
+<ul>
+<li>
+<p>当社ウェブサイト若しくは仮想空間に存在する一切のコンテンツ、本サービスに関する所有権及び知的財産権は、出展者の出展するコンテンツを除き、全て当社又は当社にライセンスを許諾している者に帰属します。本規約に定める登録に基づく本サービスの利用許諾は、本規約において明示されているものを除き、当社ウェブサイト又は本サービスに関して当社又は当社にライセンスを許諾している者の知的財産権の譲渡又は使用許諾を意味するものではありません。利用者は、いかなる理由によっても当社又は当社にライセンスを許諾している者の知的財産権を侵害するおそれのある行為を行ってはなりません。</p>
+</li>
+<li>
+<p>利用者は、本サービスにおける利用者の活動（利用者のアバターの外見等及び利用者のコメントを含みますが、これらに限りません）が、本サービス、その他インターネットを通じて他の利用者その他の第三者から視聴可能な状態となることにつき予め同意し、これについて何らの異議を唱えないものとします。</p>
+</li>
+<li>
+<p>当社は、本サービス内の画像、写真、映像、楽曲、音声等について、当社の広報又はサービスの宣伝の目的で放送・出版・インターネット等の各種媒体を用いて使用し、又は、各種メディアや個人に対して配信その他の使用を許諾する場合があります。また、当社は、参加者による本サービス内でのスクリーンショット等の撮影、SNS・ブログ・YouTube等への投稿、及び配信その他の利用について、当社が拒否する場合を除き、原則として許可します。従って、利用者のアバターや利用者の活動が、それらに映り込んだり、紹介される場合があり、利用者及び出展者は、これに対して、一切の異議を唱えることができないものとし、また他の利用者及び当社に対して著作者人格権を行使しないものとします。予めご了承ください。</p>
+</li>
+<li>
+<p>当社は、本条により万が一利用者に損害が生じることがあっても、一切の責任を負わないものとします。</p>
+</li>
+</ul>
+<h2 id="11">第11条 本サービスの利用停止、登録取消等</h2>
+<ul>
+<li>
+<p>当社は、利用者が、以下の各号のいずれかの事由に該当する場合は、事前に通知又は催告することなく、当該利用者について本サービスの利用を一時的に停止し、又は利用者としての登録を取り消すことができます。</p>
+<ul>
+<li>
+<p>本規約のいずれかの条項に違反した場合</p>
+</li>
+<li>
+<p>当社、他の利用者、外部事業者その他の第三者に損害を生じさせるおそれのある目的又は方法で本サービスを利用した、又は利用しようとした場合</p>
+</li>
+<li>
+<p>外部利用規約に違反したことその他の理由によって、利用者が外部事業者から、そのサービスの提供や連携を受けられなくなった場合</p>
+</li>
+<li>
+<p>手段又は事由の如何を問わず、本サービスの運営を妨害した場合</p>
+</li>
+<li>
+<p>支払停止若しくは支払不能となり、又は破産手続開始、民事再生手続開始、会社更生手続開始、特別清算開始若しくはこれらに類する手続の開始の申立てがあった場合</p>
+</li>
+<li>
+<p>自ら振出し、若しくは引受けた手形若しくは小切手につき、不渡りの処分を受けた場合、又は手形交換所の取引停止処分その他これに類する措置を受けたとき</p>
+</li>
+<li>
+<p>差押、仮差押、仮処分、強制執行又は競売の申立てがあった場合</p>
+</li>
+<li>
+<p>租税公課の滞納処分を受けた場合</p>
+</li>
+<li>
+<p>死亡した場合又は後見開始、保佐開始若しくは補助開始の審判を受けた場合</p>
+</li>
+<li>
+<p>6か月以上本サービスの利用がなく、当社からの連絡に対して応答がない場合</p>
+</li>
+<li>
+<p>本規約が定める登録拒否の事由に該当する場合</p>
+</li>
+<li>
+<p>その他、当社が利用者としての登録の継続を適当でないと判断した場合</p>
+</li>
+</ul>
+</li>
+<li>
+<p>前項各号のいずれかの事由に該当した場合、利用者は、当社に対して負っている債務の一切について当然に期限の利益を失い、直ちに当社に対して全ての債務の支払を行わなければなりません。</p>
+</li>
+<li>
+<p>利用者は、当社所定の方法で通知することにより、利用者の登録を取り消すことができます。</p>
+</li>
+<li>
+<p>当社は、本条に基づき当社が行った行為により利用者に生じた損害について一切の責任を負いません。</p>
+</li>
+</ul>
+<h2 id="12">第12条 保証の否認、免責</h2>
+<ul>
+<li>
+<p>当社は、いかなる意味においても、本サービスの内容・適法性、当社が提供するコンテンツの内容・適法性・完全性、出展者が出展するコンテンツの内容・適法性、その他本サービス又はコンテンツに関する一切の事項につき如何なる保証も行うものではなく、またこれらの事項について確認又は判断する義務を負いません。</p>
+</li>
+<li>
+<p>本サービスは現状有姿で提供されるものであり、当社は本サービスについて、特定の目的への適合性、商業的有用性、完全性、継続性等を含め、一切保証しません。</p>
+</li>
+<li>
+<p>利用者が当社又は当社関係者から、本サービス、当社ウェブサイトその他の事項に関する何らかの情報を取得した場合であっても、当社は、利用者に対して、本規約の規定内容を超えて如何なる保証も行うものではありません。</p>
+</li>
+<li>
+<p>当社は、本サービスを外部サービスと連携させることがありますが、当社は、当該連携の実施又は継続を保証するものではなく、本サービスにおいて外部サービスと連携ができなかった場合でも、当社は一切の責任を負いません。</p>
+</li>
+<li>
+<p>本サービスが外部サービスと連携している場合において、利用者は外部利用規約を自己の費用と責任で遵守するものとし、利用者と当該外部サービスを運営する外部事業者との間で紛争等が生じた場合でも、当社は当該紛争等について一切の責任を負いません。</p>
+</li>
+<li>
+<p>利用者は、本サービスを利用することが、利用者に適用のある法令、業界団体の内部規則等に違反するか否かを自己の責任と費用に基づいて予め調査するものとし、当社は、利用者による本サービスの利用が、利用者に適用のある法令、業界団体の内部規則等に適合することを何ら保証するものではありません。</p>
+</li>
+<li>
+<p>本サービス又は当社ウェブサイトに関連して利用者と他の利用者、外部事業者その他の第三者との間において生じた取引、連絡、紛争等については、利用者の責任において処理及び解決するものとし、当社はこれらの事項について一切責任を負いません。</p>
+</li>
+<li>
+<p>当社は、本サービス又は当社の提供するコンテンツ若しくは出展者の出展するコンテンツの提供の中断、停止、終了、利用不能又は変更、利用者のメッセージ又は情報の削除又は消失､利用者の登録の取消、本サービスの利用によるデータの消失又は機器の故障若しくは損傷、その他本サービスやコンテンツに関連して利用者が被った損害につき、賠償する責任を一切負いません。</p>
+</li>
+<li>
+<p>当社ウェブサイトから他のウェブサイトへのリンク又は他のウェブサイトから当社ウェブサイトへのリンクが提供されている場合でも、当社は、当社ウェブサイト以外のウェブサイト及びそこから得られる情報に関して如何なる理由に基づいても一切の責任を負いません。</p>
+</li>
+<li>
+<p>当社は、本サービス、当社の提供するコンテンツ、出展者の出展するコンテンツ等、又は他の利用者の行為等に関連して利用者が被った損害について、一切賠償の責任を負いません。消費者契約法の適用その他の法令に基づき当社が利用者に対して損害賠償責任を負う場合であっても、当社の損賠賠償責任の範囲は、債務不履行責任、不法行為責任、その他法律上の請求原因の如何及び事由の如何を問わず、当社の責に帰すべき事由が直接の原因で出展者に現実に発生した通常の損害に限定され、かつ、損害の事由が生じた時点から遡り過去6か月間に当該利用者から現実に得た金銭的利益の総額を超えないものとします。</p>
+</li>
+</ul>
+<h2 id="13">第13条 利用者の賠償責任等</h2>
+<ul>
+<li>
+<p>利用者は、本規約に違反することにより、又は自己の責に帰すべき事由により、当社又は当社関係者に損害を与えた場合、当社又は当社関係者に対しその損害を賠償しなければなりません。</p>
+</li>
+<li>
+<p>利用者が、本サービスに関連して他の利用者、外部事業者その他の第三者からクレームを受け又はそれらの者との間で紛争を生じた場合には、直ちにその内容を当社に通知するとともに、利用者の費用と責任において当該クレーム又は紛争を処理し、その経過及び結果を当社に報告するものとします。</p>
+</li>
+<li>
+<p>利用者による本サービスの利用に関連して、当社が、他の利用者、外部事業者その他の第三者から権利侵害その他の理由により何らかの請求を受けた場合は、利用者は、当該請求に基づき当社が当該第三者に支払いを行った金額を直ちに当社に賠償しなければなりません。</p>
+</li>
+</ul>
+<h2 id="14">第14条 反社会的勢力等の排除</h2>
+<ul>
+<li>
+<p>利用者は、自らが反社会的勢力等に該当しないこと、及び、反社会的勢力等に対して資金等を提供し、又は便宜を供与するなどの関与をしていないことを誓約するものとします。</p>
+</li>
+<li>
+<p>利用者は、自己又は第三者を利用して、①暴力的な要求行為、②法的な責任を超えた不当な要求行為、③取引に関して、脅迫的な言動をし、又は暴力を用いる行為、④風説を流布し、偽計又は威力を用いて相手方の信用を棄損し、又は相手方の業務を妨害する行為、⑤その他これらに準ずる行為を行ってはならないものとします。</p>
+</li>
+<li>
+<p>当社は、利用者が前各項の規定に違反した場合、何ら催告等の手続を要せず、利用者との間にて締結された全ての契約関係を解除することができるものとします。この場合、当社は、利用者に損害が生じても何らこれを賠償ないし補償することを要しないものとします。また、当社に損害が生じたときは、利用者はその損害を賠償するものとします。</p>
+</li>
+</ul>
+<h2 id="15">第15条 有効期間</h2>
+<ul>
+<li>
+<p>利用契約は、利用者について第3条に基づく登録が完了した日に効力を生じ、当該利用者の登録が取り消された日又は本サービスの提供が終了した日のいずれか早い日まで、当社と利用者との間で有効に存続するものとします。</p>
+</li>
+<li>
+<p>第4条第2項、第5条第2項、第6条第3項・第4項、第7条第3項、第8条第3項、第9条第3項・第4項、第10条、第11条第2項・第4項、第12条、第13条、第14条第3項、本項、第16条から第22条までの規定は、利用契約の終了後も有効に存続するものとします。</p>
+</li>
+</ul>
+<h2 id="16">第16条 本規約等の変更</h2>
+<ul>
+<li>
+<p>当社は、本サービスの内容を当社の判断に基づき自由に変更できるものとします。</p>
+</li>
+<li>
+<p>当社は、当社の判断に基づき、本規約（当社ウェブサイトに掲載する諸規定を含みます。以下本条において同じ）の変更又は修正を行うことができ、また本規約に記載がない事項について新たに取り決めることができるものとします。</p>
+</li>
+<li>
+<p>当社が本規約の変更をする場合、当社ウェブサイトにて内容、効力発生日を示して当該変更を掲載、又は、電子メールで利用者に通知、その他当社が適当と判断する方法により周知するものとします。本規約の変更の周知後、3日以内に当社への文書（電子メールも可）による不同意の意思表示の到達がない場合、又は、当該変更の周知後に利用者が本サービスを利用した場合、変更後の規約に同意したものとみなします。当社は、上記の文書による不同意の意思表示を受領した場合、当該受領日以降、当社が指定する日をもって、その任意の裁量による判断に基づき、当該意思表示者に関する本サービスの中止・終了その他当社が適当と認める対応を行うことができるものとします。</p>
+</li>
+</ul>
+<h2 id="17">第17条 連絡/通知</h2>
+<p>本サービスに関する問い合わせその他利用者から当社に対する連絡又は通知、及び、本規約の変更に関する通知その他当社から利用者に対する連絡又は通知は、当社の定める方法で行うものとします。</p>
+<h2 id="18">第18条 譲渡等</h2>
+<ul>
+<li>
+<p>利用者は、当社の書面による事前の承諾なく、利用契約上の地位又は本規約に基づく権利若しくは義務につき、第三者に対し、譲渡、移転、担保設定、その他の処分をすることはできません。</p>
+</li>
+<li>
+<p>当社は、本サービスに関する事業を第三者に譲渡（事業譲渡、会社分割、合併その他態様の如何を問いません）した場合には、当該譲渡に伴い利用契約上の地位、本規約に基づく権利及び義務並びに利用者の登録情報その他の情報を当該譲渡の相手方に譲り渡すことができるものとし、利用者は、かかる譲渡につき本項において予め異議なく同意したものとします。</p>
+</li>
+</ul>
+<h2 id="19">第19条 完全合意</h2>
+<p>本規約は、本規約に含まれる事項に関する当社と利用者との完全な合意を構成し、口頭又は書面を問わず、本規約に含まれる事項に関する当社と利用者との事前の合意、表明及び了解に優先します。</p>
+<h2 id="20">第20条 分離可能性</h2>
+<p>本規約のいずれかの条項又はその一部が、消費者契約法その他の法令等により無効又は執行不能と判断された場合であっても、本規約の残りの規定及び一部が無効又は執行不能と判断された規定の残りの部分は、継続して完全に効力を有し、また、かかる場合には、当該無効若しくは執行不能の条項又は部分は、これを有効かつ執行可能とするために必要な限度において限定的に解釈されるものとします。</p>
+<h2 id="21">第21条 準拠法、管轄裁判所</h2>
+<p>本規約及び当社が定める諸規定の準拠法は日本法とし、日本法以外を準拠法とする抵触法ルールの適用はいずれも排除されます。本規約及び当社が定める諸規定に起因し又は関連する一切の紛争については、東京地方裁判所又は東京簡易裁判所を第一審の専属的合意管轄裁判所とします。</p>
+<h2 id="22">第22条 協議解決</h2>
+<p>当社及び利用者は、本規約の解釈に疑義が生じた場合には、互いに誠実に協議して解決に努めるものとします。
+以上</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="フッター">
+      
+        
+        <a href="../changelog/changelog-3.2.html" class="md-footer__link md-footer__link--prev" aria-label="前: v3.2" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                前
+              </span>
+              v3.2
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
+      
+    
+  </body>
+</html>
