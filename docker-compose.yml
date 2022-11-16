@@ -12,8 +12,8 @@ services:
       - "8000:8000"
     volumes:
       - .:/code
-    working_dir: /code/source
+    working_dir: /code
     command:
-      - "mkdocs"
+      - "mike"
       - "serve"
       - "--dev-addr=0.0.0.0:8000"
