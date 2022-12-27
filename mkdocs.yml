@@ -49,17 +49,30 @@ plugins:
           Setup Avatar: アバター使用方法
           worldbasic: ワールドの基本要素
           Skybox: スカイボックス（空）設定
-          Var: 変数・値
+          Statements And Flow Control: 文法・制御構文
+          Declarations and definitions: 定義・宣言
+          Control Statement: 制御構文
+          Reference (ref): 参照 (ref)
+          Constant Variable (const): 定数 (const)
+          Built-in Types: 組み込み型
+          Basic Types: 基本型
+          String: 文字列(String)
+          List: 配列(List)
           Operator: 演算子
-          Class: クラス・構造体
+          Class: クラス
           Component: コンポーネント
-          Built-in Class: 組み込みクラス
-          Vector3: Vector3構造体
-          Quaternion: Quaternion構造体
-          Matrix: Matrix構造体
+          Built-in Classes And Functions: 組み込みクラス・関数
+          Vector3: Vectorクラス
+          Quaternion: Quaternionクラス
+          Matrix: Matrixクラス
           Item: Itemクラス
           Player: Playerクラス
-          System Function: 組み込み・システム関数
+          Built-in Functions: 組み込み関数
+          System: システム
+          Math: 数学
+          Network: ネットワーク
+          NamePlate: ネームプレート
+          GUI: GUI
           HEOExporter Overview: HEOExporter概要
           HEOExporter Tutorial: HEOExporterチュートリアル
           Unity Guidelines : Unity制作ガイドライン
@@ -186,6 +199,30 @@ nav:
       - Particle List : particleeditor/pe_particlelistwindow.md
 - Animation Converter :
     - Animation Converter : AnimationConverter/AnimationConverter.md
+- HeliScript:
+    - Built-in Types:
+        - Basic Types: hs/hs_var.md
+        - String: hs/hs_string.md
+        - List: hs/hs_list.md
+    - Class: hs/hs_class.md
+    - Component: hs/hs_component.md
+    - Built-in Classes And Functions:
+        - Vector3: hs/hs_struct_vector3.md
+        - Quaternion: hs/hs_struct_quaternion.md
+        - Matrix: hs/hs_struct_matrix.md
+        - Item: hs/hs_class_item.md
+        - Player: hs/hs_class_player.md
+    - Built-in Functions:
+        - System: hs/hs_system_function.md
+        - Math: hs/hs_system_function_math.md
+        - Network: hs/hs_system_function_net.md
+        - NamePlate: hs/hs_system_function_nameplate.md
+        - JavaScript: hs/hs_system_function_js.md
+        - GUI: hs/hs_system_function_gui.md
+    - Statements and flow control:
+        - Declarations and definitions: hs/hs_statement_def.md
+        - Control Statement: hs/hs_statement_constrol.md
+        - Operator: hs/hs_operator.md
 - Trouble shooting:
     - Build Error: troubleshooting/BuildError.md
     - Browser is not open: troubleshooting/BrowserNotOpen.md
