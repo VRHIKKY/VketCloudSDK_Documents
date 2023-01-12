@@ -75,12 +75,12 @@ list の現在の長さを返します。
 list の最後の要素を削除します。
 
 ### RemoveAt(int)
-`void Append(int index)`
+`void RemoveAt(int index)`
 
 引数で指定した位置の要素を削除します。
 
 ### Insert(int, T)
-`void Append(int index, T value)`
+`void Insert(int index, T value)`
 
 ### CopyFrom(int, list<T\>, int, int)
 `void CopyFrom(int index, list<T> sourceList, int start, int lnegth)`
