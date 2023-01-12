@@ -55,7 +55,7 @@ class Player {
 
 プレイヤーの向きを取得する。
 
-### GetRotate()
+### GetName()
 `public string GetName()`
 
 プレイヤーの名前を取得する。
