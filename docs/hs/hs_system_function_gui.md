@@ -17,7 +17,7 @@ GUI要素を操作するユーティリティー関数。
 
 名前で指定したCanvasを、true で表示、false で非表示にする。
 
-### hsCanvasSetGUIShow(string, string, string)
+### hsCanvasSetGUIText(string, string, string)
 `bool hsCanvasSetGUIText(string layerName, string guiName, string text)`
 
 名前で指定したCanvasに文字列を設定する。

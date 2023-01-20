@@ -59,7 +59,7 @@ list を縮小した場合、それまで存在していた領域の要素は削
 
 list を拡張した場合、新しい領域は[型の初期値](hs_var.md)で初期化されます。
 
-### Cloar()
+### Clear()
 `void Clear()`
 
 list の全要素を解放し、list の長さを0に設定します。
@@ -75,12 +75,12 @@ list の現在の長さを返します。
 list の最後の要素を削除します。
 
 ### RemoveAt(int)
-`void Append(int index)`
+`void RemoveAt(int index)`
 
 引数で指定した位置の要素を削除します。
 
 ### Insert(int, T)
-`void Append(int index, T value)`
+`void Insert(int index, T value)`
 
 ### CopyFrom(int, list<T\>, int, int)
 `void CopyFrom(int index, list<T> sourceList, int start, int lnegth)`
