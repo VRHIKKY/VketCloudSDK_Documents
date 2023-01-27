@@ -42,7 +42,11 @@ plugins:
           Introduction: はじめに
           About VketCloudSDK: VketCloudSDKについて
           Setup Account: アカウント準備
+<<<<<<< HEAD
           Operating Environment: 動作環境
+=======
+          Operating Environment: Unity事前設定
+>>>>>>> gh-pages
           Build And Run: ビルド方法
           World Upload: ワールドアップロード
           Setup SDK(external): SDKの導入方法
@@ -113,7 +117,11 @@ markdown_extensions:
 nav:
 - Introduction: index.md
 - About VketCloudSDK :
+<<<<<<< HEAD
     - Setup Account : Unity/SetupAccount.md
+=======
+    - Setup Account: Unity/SetupAccount.md
+>>>>>>> gh-pages
     - Operating Environment : Unity/OperatingEnvironment.md
     #- Setup SDK(internal) : Unity/SetupSDK_internal.md
     - Setup SDK(external) : Unity/SetupSDK_external.md
