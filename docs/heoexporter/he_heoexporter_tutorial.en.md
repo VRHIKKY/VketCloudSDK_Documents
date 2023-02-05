@@ -1,5 +1,5 @@
 ## Overview
-This is the overview tutorial for HEOExporter. The explanations here are the bare minimum, so check the other pages for a more detailed explanation.
+HEOExporter is one of the included tools in VketCloudSDK. The tool is used to export "HEO" file, the 3D object file format specially designed for VketCloud. Will most commonly be used to export World models as .heo files.
 
 ## Prepare a Scene
 Use Unity version 2019.4.31f1.<p>
