@@ -14,10 +14,10 @@ VketCloudを起動するには、以下のコンポーネントを含むオブ�
 ![AddEssentialObjects](img/AddEssentialObjects.jpg)   
   
   
-・ビルドしてもアバターが現れない、cubeから落下する
-・ジャンプしたら着地時に初期のスポーンポイントに戻される　　
+- ビルドしてもアバターが現れない、cubeから落下する
+- ジャンプしたら着地時に初期のスポーンポイントに戻される　　
 
-以上の場合は「DespawnHeight」が高い場合があります。　　
+以上の場合は、「DespawnHeight」が高い可能性があります。　　
 DespawnHeightの高さ（y軸）を低くしてみてください。  
   
 

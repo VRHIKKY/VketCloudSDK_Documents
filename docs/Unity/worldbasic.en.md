@@ -14,8 +14,8 @@ You can automatically add these by right clicking in the Hierarchy and choosing 
 
 ![AddEssentialObjects](img/AddEssentialObjects.jpg)  
   
-・An avatar does not appear after building, you falls from the cube.
-・If you jump, you will be returned to the initial spawn point when you land.
+- An avatar does not appear after building, you falls from the cube.
+- If you jump, you will be returned to the initial spawn point when you land.
 
 In the above cases, "DespawnHeight" may be high.　　
 Try lowering DespawnHeight height (y-axis).

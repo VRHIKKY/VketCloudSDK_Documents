@@ -4,23 +4,12 @@
 ## VketAccount登録
 ご利用にあたっては、まず[VketAccount](https://account.vket.com/?locale=ja)への登録を行ってください。
   
-<<<<<<< HEAD
 ## SDK利用登録    
-①[VketLABO](https://lab.vketcloud.com/)( https://lab.vketcloud.com/ )にログイン
+1. [VketLABO](https://lab.vketcloud.com/){target=_blank}にログインします。
 ![registerVket](img/registerVket.png)
-  
 
-➁「マイページ」から「VketCloudSDKベータテスト」の利用規約にチェック  
+2. 「マイページ」から「VketCloudSDKベータテスト」を有効化します。
 ![registerBETA](img/registerBETA.png)　
-  
 
-③登録完了画面後、ビルドロックのパスワードが表示されます。  
-こちらUnityの画面に入力する必要があるものになります！
-  
+3. 登録完了後、ビルドロックのパスワードが表示されます。こちらのパスはSDKのビルドに必要になるので、注意してください。
 ![buildlockpassword](img/buildlockpassword.png)
-=======
-## 管理画面からVketIDを登録    
-・VketIDを登録  
-・利用規約チェック  
-・登録完了画面でビルドロックのパスワードが表示される
->>>>>>> gh-pages

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # Preparing your Account
 
@@ -19,8 +18,3 @@ This will be used inside Unity later.
   
 ![buildlockpassword](img/buildlockpassword_en.png)
 ``` 
-=======
-# Set up VketAccount
-
-## Register VketAccount
->>>>>>> gh-pages

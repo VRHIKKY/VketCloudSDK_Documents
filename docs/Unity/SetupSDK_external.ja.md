@@ -1,40 +1,21 @@
 
-# **VketCloudSDKの導入方法**
+# VketCloudSDKの導入方法
 
-UnityのPackage Managerを使用してインストールします。  
+UnityのPackage Managerを使用してSDKをインストールします。  
   
-### Step 1. Unityでプロジェクトを開く  
----
-<<<<<<< HEAD
-対応しているバージョン（[Unity事前設定](https://vrhikky.github.io/VketCloudSDK_Documents/3.3/ja/Unity/OperatingEnvironment.html)）のプロジェクトを開く、またはプロジェクトを新規作成します。  
-テンプレートは「3D」を選択してください。      
-  
-※[Unity事前設定](https://vrhikky.github.io/VketCloudSDK_Documents/3.3/ja/Unity/OperatingEnvironment.html)ページで事前設定を完了させてください。
+## Step 1. Unityでプロジェクトを開く  
+対応しているバージョン（[Unity事前設定](https://vrhikky.github.io/VketCloudSDK_Documents/3.3/ja/Unity/OperatingEnvironment.html)）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。      
 
-※プロジェクト名にスペースを入れるとビルドに失敗する場合があります。  
-OK例) MyProject　　NG例) My Project  
-   ![Title](img/title.png)  
-=======
-対応しているバージョン（[Unity事前設定]()）のプロジェクトを開く、またはプロジェクトを新規作成します。  
-テンプレートは「3D」を選択してください。      
-  
-※[Unity事前設定]()ページで事前設定を完了させてください。
+!!! note
+    プロジェクト名にスペースを入れるとビルドに失敗する場合があります。
 
-※プロジェクト名にスペースを入れるとビルドに失敗する場合があります。  
-OK例) MyProject　　NG例) My Project  
-  
->>>>>>> gh-pages
+    OK例) MyProject　　NG例) My Project  
 
-
-### Step 2. パッケージマネージャーの設定  
----
-Unityのメニュー Edit > Project Settings から「Project Settings」ウィンドウを開きます。  
-  
-ウィンドウ内左のタブから「Package Manager」を選択し、以下のように記載します。  
+## Step 2. レジストリを登録する  
+Unityのメニュー Edit > Project Settings から「Project Settings」ウィンドウを開きます。 ウィンドウ左側のタブから「Package Manager」を選択し、以下のように記載します。  
   
 |  項目  |  値  |
 | ---- | ---- |
-<<<<<<< HEAD
 |  Name  |  VketCloudSDK  |
 |  URL  |  https://registry.npmjs.com  |
 |  Scope(s)  |  com.hikky.vketcloudsdk  |  
@@ -44,13 +25,8 @@ Unityのメニュー Edit > Project Settings から「Project Settings」ウィ�
     
   
   
-### Step 3. Package ManagerからVketCloudSDKパッケージをインストール
----
-
-  
-Unityのメニュー Window > Package Manager から「Packages」ウィンドウを開きます。
-
-ウィンドウ上部のドロップダウンより「My Registries」を選択します。
+## Step 3. Package ManagerからVketCloudSDKパッケージをインストール
+Unityのメニュー Window > Package Manager から「Packages」ウィンドウを開きます。ウィンドウ上部のドロップダウンより「My Registries」を選択します。
 
    ![registry](img/registry.png)
 
@@ -63,43 +39,13 @@ Unityのメニューに「VketCloudSDK」の項目が追加されていれば導
 
 
 
-### Step 4. パスを登録
----
+## Step 4. パスワードを登録
+Unityのメニュー VketCloudSDK＞Preferences から「buildpassword」欄にパスワードを入力 します。
 
-Unityのメニュー VketCloudSDK＞Preferences
-
-「buildpassword」欄にパスワードを入力  
-※パスワードは[マイページ](https://lab.vketcloud.com/mypage/sdk/)の「ビルドロックパスワード」に記載されています。
+!!! info
+    パスワードは[マイページ](https://lab.vketcloud.com/mypage/sdk/)の「ビルドロックパスワード」に記載されています。
 
    ![buildpassword](img/buildpassword.png)
 
-以上で導入は完了です。おつかれさまでした！  
+以上で導入は完了です。
 
-=======
-|  Name  |  VketCloud  |
-|  URL  |  https://registry.npmjs.com  |
-|  Scope(s)  |  mu.vketcloud  |  
-  
-最後に「Save」ボタンを押して設定内容を保存します。
-  
-ここに画像を置く
-  
-
-  
-### Step 3. Package ManagerからVketCloudSDKパッケージをインストール
----
-
-
-この辺に色々画像置く  
-  
-Unityのメニュー Window > Package Manager から「Packages」ウィンドウを開きます。
-
-ウィンドウ上部のドロップダウンより「In Project」を選択します。
-
-表示されたリスト内から VketCloudSDK を選択し、「Install」ボタンを押してインストールを開始します。
-
-Unityのメニューに「VketCloudSDK」の項目が追加されていれば導入は完了です。  
-おつかれさまでした！  
-  
-  
->>>>>>> gh-pages
