@@ -1,7 +1,7 @@
 
 # アップロード方法
-Vket Cloud公式のサーバーをお使いの場合は、SDKの機能を使ってUnityから直接アップロードができます。  
-Build and Runの実行によって生成された「Release」フォルダー内のワールドがクローズドなリモートサーバーにアップロードされます。
+Vket Cloud公式のサーバーをお使いの場合は、SDKの機能を使ってUnityから直接アップロードすることができます。  
+Build and Runの実行によって生成された「Release」フォルダー内のワールドが、クローズドなリモートサーバーにアップロードされます。
 
 ## コンテンツのアップロード  
   
@@ -13,7 +13,7 @@ Build and Runの実行によって生成された「Release」フォルダー内
 5. アップロードが完了して数分待つと、以下のURLからワールドへ入れるようになります<br>
 https://lab.vketcloud.com/make-test/worlds/<span style="color: red;">[VketID]</span>/index.html 
 
-※IDとパスワードは別途連絡が行っているはずですので必ずご確認ください。  
+※IDとパスワードは、ベータユーザー登録の際に別途ご連絡をお届けしています。そちらをご確認ください。  
 ※事前に登録したVketAccount以外でログインしている場合はエラーとなります。
 
 ![WorldUpload](img/WorldUpload.jpg)

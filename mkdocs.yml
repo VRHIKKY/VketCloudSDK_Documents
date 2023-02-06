@@ -3,17 +3,34 @@ site_description: 'VketCloudSDKのマニュアルです'
 site_author: 'HIKKY'
 
 theme:
-  feature:
-    tabs: true
+  favicon: images/VketCloudIcon.png
+  logo: images/VketCloudIcon.png
   name: material
   palette:
-    accent: Green
-    primary: Green
+  - scheme: default
+    primary: blue
+    accent: blue
+    toggle:
+        icon: material/toggle-switch-off-outline
+        name: ダークモードに切り替えます。
+  - scheme: slate
+    primary: blue
+    accent: blue
+    toggle:
+        icon: material/toggle-switch
+        name: ライトモードに切り替えます。
   features:
     - navigation.indexes
-    #- navigation.expand
+    - header.autohide
 
-google_analytics_4: G-05NPW204YY
+  analytics:
+    gtag: G-05NPW204YY
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  nav_style: dark
 
 extra:
   version:
@@ -22,6 +39,7 @@ extra:
   search:
     language: 'en'
     language: 'ja'
+  homepage: https://www.hikky.co.jp/vketcloud
 
 use_directory_urls: false
 
@@ -42,22 +60,18 @@ plugins:
           Introduction: はじめに
           About VketCloudSDK: VketCloudSDKについて
           Setup Account: アカウント準備
-<<<<<<< HEAD
           Operating Environment: 動作環境
-=======
-          Operating Environment: Unity事前設定
->>>>>>> gh-pages
           Build And Run: ビルド方法
           World Upload: ワールドアップロード
-          Setup SDK(external): SDKの導入方法
+          Setup SDK: SDKの導入方法
           Setup Avatar: アバター使用方法
-          worldbasic: ワールドの基本要素
-          Skybox: スカイボックス（空）設定
+          Essential Objects: 必須コンポーネント
+          Skybox: スカイボックス設定
           Statements And Flow Control: 文法・制御構文
           Declarations and definitions: 定義・宣言
           Control Statement: 制御構文
-          Reference (ref): 参照 (ref)
-          Constant Variable (const): 定数 (const)
+          Reference (ref): 参照(ref)
+          Constant Variable (const): 定数(const)
           Built-in Types: 組み込み型
           Basic Types: 基本型
           String: 文字列(String)
@@ -77,8 +91,8 @@ plugins:
           Network: ネットワーク
           NamePlate: ネームプレート
           GUI: GUI
-          HEOExporter Overview: HEOExporter概要
-          HEOExporter Tutorial: HEOExporterチュートリアル
+          HEOExporter: .heoファイルについて
+          HEOExporter Tutorial: .heoファイルを出力する
           Unity Guidelines : Unity制作ガイドライン
           ReflectionProbe: リフレクションプローブ
           Texture Compression: テクスチャ圧縮
@@ -93,9 +107,9 @@ plugins:
           WorldUpload: アップロード
           License: 利用規約
           Loading stops: ブラウザの読み込みが止まる
-          Actions: Actionクラス
+          Actions: アクションについて
           Actions Overview: アクションの概要
-          ActionNodeGraph: ActionNodeGraph 説明書
+          ActionNodeGraph: アクションノードグラフ
           Particle Editor : パーティクルエディター
           ParticleEditor Overview: パーティクルエディター概要 
           About Screen: 操作画面について
@@ -103,39 +117,38 @@ plugins:
           Window Info: ウィンドウ解説
           Toolbar: ツールバー
           Property: プロパティウィンドウ
-          Animation Converter : Animation Converter 説明書
+          Animation Converter : アニメーションコンバーター
           Trouble shooting: トラブルシューティング
           Build Error: ビルドエラー
           Browser is not open: ブラウザが立ち上がらない
           Changes are not applied: 変更が更新されない
-
+          First Step: ワールド制作の基本
+          Change Log: チェンジログ
+          HeliScript: ヘリスクリプト
+          Statements and flow control: 宣言と制御
+          Check Tool: チェックツール
 
 markdown_extensions:
     - admonition
     - codehilite
+    - attr_list
 
 nav:
 - Introduction: index.md
-- About VketCloudSDK :
-<<<<<<< HEAD
-    - Setup Account : Unity/SetupAccount.md
-=======
+- About VketCloudSDK:
     - Setup Account: Unity/SetupAccount.md
->>>>>>> gh-pages
     - Operating Environment : Unity/OperatingEnvironment.md
-    #- Setup SDK(internal) : Unity/SetupSDK_internal.md
-    - Setup SDK(external) : Unity/SetupSDK_external.md
+    - Setup SDK : Unity/SetupSDK_external.md
+- First Step:
+    - Essential Objects : Unity/worldbasic.md
     - Build And Run : Unity/BuildAndRun.md
     - World Upload : Unity/WorldUpload.md
     - Setup Avatar : Unity/SetupAvatar.md
-- worldbasic :
-    - worldbasic : Unity/worldbasic.md
-    - Skybox : Unity/Skybox.md      
+    - Skybox : Unity/Skybox.md  
 - HEOComponent:
     - HEOWorldSetting: Unity/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
-    #- HEOSpawn: Unity/HEOSpawn.md
     - HEOObject: Unity/HEOObject.md
     - HEOLODLevel: Unity/HEOLODLevel.md
     - HEOAudio: Unity/HEOAudio.md
@@ -154,48 +167,47 @@ nav:
     - HEOCatalogTrigger : Unity/HEOCatalogTrigger.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
     - HEOActionTrigger: Unity/HEOActionTrigger.md
-    - ActionNodeGraph: Unity/ActionNodeGraph.md
-    - Actions: 
-        - Actions Overview: Unity/ActionsOverview.md
-        - Openweb: Unity/Openweb.md
-        - Play/StopItem: Unity/PlayStopItem.md
-        - Show/HideItem: Unity/ShowHideItem.md
-        - Play/StopObject: Unity/PlayStopObject.md
-        - Show/HideObject: Unity/ShowHideObject.md
-        - Show/HideNode: Unity/ShowHideNode.md
-        - Enable/DisableClickableNode: Unity/EnableDisableClickableNode.md
-        - Enable/DisableCollider: Unity/EnableDisableCollider.md
-        - Wait: Unity/Wait.md
-        - SetPosRelativePlayer: Unity/SetPosRelativePlayer.md
-        - MoveTo: Unity/MoveTo.md
-        - Random: Unity/Random.md
-        - Warp: Unity/Warp.md
-        - JumpWorld: Unity/JumpWorld.md
-        - Emote: Unity/Emote.md
-        - Motion: Unity/Motion.md
-        - NextMotion: Unity/NextMotion.md
-        - AddVar: Unity/AddVar.md
-        - SetVar: Unity/SetVar.md
-        - If A == B: Unity/IfEqual.md
-        - If A != B: Unity/IfNotEqual.md
-        - If A >= B: Unity/IfGreaterThanOrEqual.md
-        - If A <= B: Unity/IfLessThanOrEqual.md
-        - StopVideo: Unity/StopVideo.md
-        - SetCookieText: Unity/SetCookieText.md
-        - OpenComicViewer: Unity/OpenComicViewer.md
-        - ShowLayer: Unity/ShowLayer.md
-        - CallJavaScript: Unity/CallJavaScript.md
-        - Enter/LeaveVoiceGroup: Unity/EnterLeaveVoiceGroup.md
-        - WhiteOut/In: Unity/WhiteOutIn.md
-        - FadeOut/In: Unity/FadeOutIn.md
+- Actions: 
+    #- ActionNodeGraph: Unity/ActionNodeGraph.md #整備のために一旦取り下げ
+    - Actions Overview: Unity/ActionsOverview.md
+    - Openweb: Unity/Openweb.md
+    - Play/StopItem: Unity/PlayStopItem.md
+    - Show/HideItem: Unity/ShowHideItem.md
+    - Play/StopObject: Unity/PlayStopObject.md
+    - Show/HideObject: Unity/ShowHideObject.md
+    - Show/HideNode: Unity/ShowHideNode.md
+    - Enable/DisableClickableNode: Unity/EnableDisableClickableNode.md
+    - Enable/DisableCollider: Unity/EnableDisableCollider.md
+    - Wait: Unity/Wait.md
+    - SetPosRelativePlayer: Unity/SetPosRelativePlayer.md
+    - MoveTo: Unity/MoveTo.md
+    - Random: Unity/Random.md
+    - Warp: Unity/Warp.md
+    - JumpWorld: Unity/JumpWorld.md
+    - Emote: Unity/Emote.md
+    - Motion: Unity/Motion.md
+    - NextMotion: Unity/NextMotion.md
+    - AddVar: Unity/AddVar.md
+    - SetVar: Unity/SetVar.md
+    - If A == B: Unity/IfEqual.md
+    - If A != B: Unity/IfNotEqual.md
+    - If A >= B: Unity/IfGreaterThanOrEqual.md
+    - If A <= B: Unity/IfLessThanOrEqual.md
+    - StopVideo: Unity/StopVideo.md
+    - SetCookieText: Unity/SetCookieText.md
+    - OpenComicViewer: Unity/OpenComicViewer.md
+    - ShowLayer: Unity/ShowLayer.md
+    - CallJavaScript: Unity/CallJavaScript.md
+    - Enter/LeaveVoiceGroup: Unity/EnterLeaveVoiceGroup.md
+    - WhiteOut/In: Unity/WhiteOutIn.md
+    - FadeOut/In: Unity/FadeOutIn.md
+- Unity Guidelines : heoexporter/he_UnityGuidelines.md
+- Check Tool: checktool/checktool.md
 - HEOExporter :
-    - HEOExporter Overview : heoexporter/he_about_heoexporter.md
     - HEOExporter Tutorial : heoexporter/he_heoexporter_tutorial.md
-    - Unity Guidelines : heoexporter/he_UnityGuidelines.md
     - ReflectionProbe : heoexporter/he_ReflectionProbe.md
     - Texture Compression : heoexporter/he_TextureCompression.md
     - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
-    - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
     - Mesh Collider : heoexporter/he_MeshCollider.md
 - Particle Editor :
     - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
@@ -205,8 +217,7 @@ nav:
       - Toolbar : particleeditor/pe_toolbar.md
       - Property : particleeditor/pe_propertywindow.md
       - Particle List : particleeditor/pe_particlelistwindow.md
-- Animation Converter :
-    - Animation Converter : AnimationConverter/AnimationConverter.md
+- Animation Converter : HEMAnimationConverter/AnimationConverter.md
 - HeliScript:
     - Built-in Types:
         - Basic Types: hs/hs_var.md
@@ -235,9 +246,12 @@ nav:
     - Build Error: troubleshooting/BuildError.md
     - Browser is not open: troubleshooting/BrowserNotOpen.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
+    - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
 - Change Log:
+    - v3.7: changelog/changelog-3.7.md
+    - v3.6: changelog/changelog-3.6.md
+    - v3.5: changelog/changelog-3.5.md
     - v3.4: changelog/changelog-3.4.md
     - v3.3: changelog/changelog-3.3.md
     - v3.2: changelog/changelog-3.2.md
 - License: common/License.md
-
