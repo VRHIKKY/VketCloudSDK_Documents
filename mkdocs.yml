@@ -126,6 +126,7 @@ plugins:
           Change Log: チェンジログ
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
+          Check Tool: チェックツール
 
 markdown_extensions:
     - admonition
@@ -148,7 +149,6 @@ nav:
     - HEOWorldSetting: Unity/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
-    #- HEOSpawn: Unity/HEOSpawn.md 
     - HEOObject: Unity/HEOObject.md
     - HEOLODLevel: Unity/HEOLODLevel.md
     - HEOAudio: Unity/HEOAudio.md
@@ -202,6 +202,7 @@ nav:
     - WhiteOut/In: Unity/WhiteOutIn.md
     - FadeOut/In: Unity/FadeOutIn.md
 - Unity Guidelines : heoexporter/he_UnityGuidelines.md
+- Check Tool: checktool/checktool.md
 - HEOExporter :
     - HEOExporter Tutorial : heoexporter/he_heoexporter_tutorial.md
     - ReflectionProbe : heoexporter/he_ReflectionProbe.md
