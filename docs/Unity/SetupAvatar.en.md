@@ -1,26 +1,24 @@
 
-#　How to use your avatar
+# How to use avatar
 
 
-まず、UnityのツールバーよりPackageManagerを開きます。
-
-① Login [VketLABO](https://labtest.vketcloud.com/mypage/)( https://labtest.vketcloud.com/mypage/ )
-![registerVket](img/registerVket.png)  
+① Log in to [MyVket](https://vket.com/)( https://vket.com/ )
+![registerVket](img/MyVketLogin_en.jpg) 
   
-➁ Click Avatar Uploader from My Page  
-![avatarupload](img/Avatarupload.png) 
+➁ Select My Avatars from My Page
+![avatarupload](img/MyVketAvatar_en.jpg) 
 
-③ Upload your avatar (VRM file) from "Register" button
-![avatarupload2](img/Avatarupload2.png)  
+③ Click Create new avatar to launch Avatar Maker to create one, or click Upload Avatar to upload your VRM file.  
+![avatarupload2](img/MyVketMyAvatars_en.jpg)  
 
-④ Enter a user world from [SDK site](https://lab.vketcloud.com/make/)  
-　Select your avater from setting window
-![avatarupload3](img/avatarupload3.png)  
+④ Enter any world from [SDK portal site](https://lab.vketcloud.com/make/)
+After entering the room, the avatar you just uploaded will be displayed in the avatar change options.
+![avatarupload3](img/MyVketWorldUI_en.jpg)  
   
-  *You can use your avater in worlds that have been updated (VketCloud SDK 3.3 or later).
+*Avatar changes are attainable only in worlds created with VketCloud SDK 3.3 or later.
+  
+⑤ Your avatar will show up in the world!
+![avatarupload4](img/MyVketWorld.jpg)
 
-⑤ Your avatar is displayed!
-![avatarupload4](img/avatarupload4.png)
 
-
-``` 
+```

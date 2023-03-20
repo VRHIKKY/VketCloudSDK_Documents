@@ -82,10 +82,12 @@ list の最後の要素を削除します。
 ### Insert(int, T)
 `void Insert(int index, T value)`
 
+引数で指定した位置に指定した値を挿入します。
+
 ### CopyFrom(int, list<T\>, int, int)
 `void CopyFrom(int index, list<T> sourceList, int start, int lnegth)`
 
-index で指定した位置へ、srouceListの内容を、start から length サイズ分コピーします。
+index で指定した位置へ、sourceListの内容を、start から length サイズ分コピーします。
 
 引数で指定する list の型は、このメソッドの呼び出し元 list の型と一致している必要があります。
 

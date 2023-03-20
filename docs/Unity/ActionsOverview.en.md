@@ -2,14 +2,14 @@
 # About Actions
 ![ActionsListSample](img/ActionsListSample.jpg)
 
-Actions are a part of what constructs your gimmick.
-By using Actions you can:
+Actions are a part of your gimmick.
+By using Actions, you can implement basic gimmicks like:
 
 - Open browser pages
 - Toggle On/Off objects and colliders
 - Play animations and audios ...etc.
 
-# Cautions
+# Note
 Keep in mind these points when setting up your Actions:
 
 - Actions are executed in order from the top
