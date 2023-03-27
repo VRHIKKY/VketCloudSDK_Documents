@@ -2,23 +2,23 @@
 # アバターの使用方法
 
 
-①[VketLABO](https://labtest.vketcloud.com/mypage/)( https://labtest.vketcloud.com/mypage/ )にログイン
-![registerVket](img/registerVket.png)  
+①[MyVket](https://vket.com/)( https://vket.com/ )にログイン
+![registerVket](img/MyVketLogin_ja.jpg)  
   
-➁マイページからアバターアップローダーを選択  
-![avatarupload](img/Avatarupload.png) 
+➁右上の「マイページ」からマイアバターを選択  
+![avatarupload](img/MyVketAvatar_ja.jpg) 
 
-③「新規登録」からアバター（VRMファイル）をアップロード   
-![avatarupload2](img/Avatarupload2.png)  
+③「アバター作成」からAvatar Makerでアバターを作るか、「アバターのアップロード」からVRMファイルをアップロード   
+![avatarupload2](img/MyVketMyAvatars_ja.jpg)  
 
-④[SDKポータルサイト](https://lab.vketcloud.com/make/)から任意のユーザーワールドに入室  
+④[SDKポータルサイト](https://lab.vketcloud.com/make/)から好きなワールドに入室  
 　入室後、アバター変更の選択肢に先ほどアップロードしたアバターが表示される
-![avatarupload3](img/avatarupload3.png)  
+![avatarupload3](img/MyVketWorldUI_ja.jpg)  
   
-※アバター変更はアップデート済み（VketCloudSDK3.3以降～）のワールドでのみ行うことが出来ます。  
+※アバター変更はVketCloudSDK3.3以降のワールドでのみ行うことが出来ます。  
   
 ⑤ワールドにアバターが反映されます！
-![avatarupload4](img/avatarupload4.png)
+![avatarupload4](img/MyVketWorld.jpg)
 
 
 ``` 

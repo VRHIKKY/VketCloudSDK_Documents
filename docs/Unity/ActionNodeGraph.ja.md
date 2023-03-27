@@ -18,7 +18,7 @@ HEOActionTriggerと比べ、
 
 ## 使用方法
 
-①ActionNodeCompilerをクリック時にアクションを実行したいオブジェクトにアタッチします。<br>
+①クリック時にアクションを実行したいオブジェクトにActionNodeCompilerをアタッチします。<br>
 ![ActionNodeGraph3](img/ActionNodeCompiler3.png)<br>
 <br>
 ②"Create New Action Graph"を選択し、ActionNodeGraphを作成します。<br>
@@ -53,9 +53,9 @@ Start NodeからResultまでの間にあるノードが実際に発生するア�
 ノードを削除する際は、<br>
 削除したいノードを選び、Deleteを選択します。<br>
 <br>
-⑥左上Parametersタブで定数を作成することができます。<br>
+⑥左上Parametersタブで変数を作成することができます。<br>
 ![ActionNodeGraph9](img/ActionNodeCompiler9.png)<br>
-「+」ボタンをクリックすることで、作成する定数の種類を選択できます。<br>
+「+」ボタンをクリックすることで、作成する変数の種類を選択できます。<br>
 <br>
 ![ActionNodeGraph10](img/ActionNodeCompiler10.png)<br>
 作成すると上記のようなノードが生成されます。<br>
@@ -63,15 +63,15 @@ Start NodeからResultまでの間にあるノードが実際に発生するア�
 "Hide in Inspector"にチェックを入れるとInspector上で非表示となります。<br>
 <br>
 ![ActionNodeGraph11](img/ActionNodeCompiler11.png)<br>
-右クリックで定数の改名、削除ができます。<br>
+右クリックで変数の改名、削除ができます。<br>
 <br>
-定数はノード空間にドラッグ&ドロップし、対応する○に繋げることで使用可能です。<br>
+変数はノード空間にドラッグ&ドロップし、対応する○に繋げることで使用可能です。<br>
 <br>
 <br>
 ■例：HEO Object名"music"の1番目のアニメーションを再生する(再生は1度きり)　を作る場合■<br>
 ![ActionNodeGraph12](img/ActionNodeCompiler12.png)<br>
 <br>
-"music"をString型の定数で、"1"をint型の定数で作ります。<br>
+"music"をString型の変数で、"1"をint型の変数で作ります。<br>
 <br>
 IfequalのNameに"music"、NValueに"1"を接続します。<br>
 これで、「musicの中身が1の場合、先の処理を発生させない」処理が完成します。<br>
@@ -85,9 +85,9 @@ SetVarのNameに"music"、Indexに"1"を接続します。<br>
 初回はPlayItem以降の処理が発生しますが、2回目以降はSetVarにより変数musicの中身が1となっているため、<br>
 IfEqual以降の処理が発生しません。<br>
 <br>
-定数ノードは複数のノードにつなぐことが可能なので、同じ数にしたい箇所に接続することで管理が容易になります。<br>
+変数ノードは複数のノードにつなぐことが可能なので、同じ数にしたい箇所に接続することで管理が容易になります。<br>
 <br>
-Primitivesタブ内には、ノード空間上で編集できる定数を作成することができます。<br>
+Primitivesタブ内には、ノード空間上で編集できる変数を作成することができます。<br>
 ![ActionNodeGraph13](img/ActionNodeCompiler13.png)<br>
 <br>
 Parameter上で作成する変数と同様の使い方をすることができます。<br>

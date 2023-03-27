@@ -64,7 +64,7 @@ plugins:
           Build And Run: ビルド方法
           World Upload: ワールドアップロード
           Setup SDK: SDKの導入方法
-          Setup Avatar: アバター使用方法
+          How to use avatar: アバターの使用方法
           Essential Objects: 必須コンポーネント
           Skybox: スカイボックス設定
           Statements And Flow Control: 文法・制御構文
@@ -80,7 +80,7 @@ plugins:
           Class: クラス
           Component: コンポーネント
           Built-in Classes And Functions: 組み込みクラス・関数
-          Vector3: Vectorクラス
+          Vector3: Vector3クラス
           Quaternion: Quaternionクラス
           Matrix: Matrixクラス
           Item: Itemクラス
@@ -143,7 +143,7 @@ nav:
     - Essential Objects : Unity/worldbasic.md
     - Build And Run : Unity/BuildAndRun.md
     - World Upload : Unity/WorldUpload.md
-    - Setup Avatar : Unity/SetupAvatar.md
+    - How to use avatar : Unity/SetupAvatar.md
     - Skybox : Unity/Skybox.md  
 - HEOComponent:
     - HEOWorldSetting: Unity/HEOWorldSetting.md

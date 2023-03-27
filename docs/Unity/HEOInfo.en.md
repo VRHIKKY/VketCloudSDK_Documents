@@ -1,2 +1,5 @@
 # HEOInfo
-English
+## Blend Shape Trans Name Name Table
+| Label | function |
+| ---- | ---- | 
+| Size | |

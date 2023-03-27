@@ -1,14 +1,21 @@
-
 # HEOAreacollider
 ![HEOAreacollider](img/HEOAreaCollider.jpg)
 
-|  Label |  function  |
-| ----   | ---- |
-| Actions | Set the Action to trigger when you enter this Area. |
-| LeaveActions | Set the Action to trigger when you leave this Area. |
+HEOAreaCollider is a component for introducing actions to objects. <br/>
+It executes the specified actions when a player enters the collider.
 
-A more detailed explanation for Action Class can be found here.
-
-For HEOAreacollider to work, you'll also need an HEOCollider and a collider component. In addition, the type of HEOCollider needs to be set to Area.
+To attach HEOAreaCollider, HEOCollider and Collider must be attached to the object.
+The HEOCollider type must be set to Area.
 
 ![HEOCollider](img/HEOCollider.jpg)
+
+In each of Actions and LeaveActions, you can set any action by clicking Add. <br/>
+You can remove the last action by clicking Delete.
+
+| Label | Function |
+| ---- | ---- |
+| Actions | Set the action when entering the area. |
+| LeaveActions | Sets the action when leaving the area. |
+
+For actions, see [Actions Overview](ActionsOverview.md). <br>
+For colliders, see [Unity Production Guidelines - Colliders](../heoexporter/he_UnityGuidelines.md).
