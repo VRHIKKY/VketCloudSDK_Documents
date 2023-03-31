@@ -248,6 +248,8 @@ nav:
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
     - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
 - Change Log:
+    - v3.9: changelog/changelog-3.9.md  
+    - v3.8: changelog/changelog-3.8.md
     - v3.7: changelog/changelog-3.7.md
     - v3.6: changelog/changelog-3.6.md
     - v3.5: changelog/changelog-3.5.md
