@@ -1,7 +1,6 @@
 
 # How to use avatar
 
-
 ① Log in to [MyVket](https://vket.com/)( https://vket.com/ )
 ![registerVket](img/MyVketLogin_en.jpg) 
   
@@ -20,5 +19,3 @@ After entering the room, the avatar you just uploaded will be displayed in the a
 ⑤ Your avatar will show up in the world!
 ![avatarupload4](img/MyVketWorld.jpg)
 
-
-```
