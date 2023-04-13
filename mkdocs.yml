@@ -136,9 +136,9 @@ markdown_extensions:
 nav:
 - Introduction: index.md
 - About VketCloudSDK:
-    - Setup Account: Unity/SetupAccount.md
-    - Operating Environment : Unity/OperatingEnvironment.md
-    - Setup SDK : Unity/SetupSDK_external.md
+    - Setup Account : AboutVketCloudSDK/SetupAccount.md
+    - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
+    - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
 - First Step:
     - Essential Objects : Unity/worldbasic.md
     - Build And Run : Unity/BuildAndRun.md
