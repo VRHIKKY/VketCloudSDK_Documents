@@ -93,13 +93,13 @@ plugins:
           GUI: GUI
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
-          Unity Guidelines : Unity制作ガイドライン
+          Unity Guidelines : VketCloudの仕様制限
           ReflectionProbe: リフレクションプローブ
           Texture Compression: テクスチャ圧縮
           Auto Texture Compression: 自動テクスチャ圧縮
           Get closer to the look of VketCloud to Unity: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
-          HEOComponent: HEOコンポーネントの使い方
+          HEOComponents: HEOコンポーネント
           About VketCloudSDK: VketCloudSDKについて
           OperatingEnvironment: 動作環境
           SetupSDK: 導入方法
@@ -127,6 +127,7 @@ plugins:
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
           Check Tool: チェックツール
+          World Making Guide: ワールド制作ガイド
 
 markdown_extensions:
     - admonition
@@ -139,13 +140,18 @@ nav:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
+    - How to use avatar : Unity/SetupAvatar.md
 - First Step:
     - Essential Objects : Unity/worldbasic.md
     - Build And Run : Unity/BuildAndRun.md
     - World Upload : Unity/WorldUpload.md
-    - How to use avatar : Unity/SetupAvatar.md
-    - Skybox : Unity/Skybox.md  
-- HEOComponent:
+- World Making Guide:
+    - Unity Guidelines : heoexporter/he_UnityGuidelines.md
+    - Skybox : Unity/Skybox.md 
+    - Mesh Collider : heoexporter/he_MeshCollider.md 
+    - ReflectionProbe : heoexporter/he_ReflectionProbe.md
+    - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
+- HEOComponents:
     - HEOWorldSetting: Unity/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
@@ -201,23 +207,20 @@ nav:
     - Enter/LeaveVoiceGroup: Unity/EnterLeaveVoiceGroup.md
     - WhiteOut/In: Unity/WhiteOutIn.md
     - FadeOut/In: Unity/FadeOutIn.md
-- Unity Guidelines : heoexporter/he_UnityGuidelines.md
-- Check Tool: checktool/checktool.md
-- HEOExporter :
+- Utility Tools:
     - HEOExporter Tutorial : heoexporter/he_heoexporter_tutorial.md
-    - ReflectionProbe : heoexporter/he_ReflectionProbe.md
-    - Texture Compression : heoexporter/he_TextureCompression.md
+    - Check Tool: checktool/checktool.md
     - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
-    - Mesh Collider : heoexporter/he_MeshCollider.md
-- Particle Editor :
-    - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
-    - About Screen : particleeditor/pe_about_screen.md
-    - Operation: particleeditor/pe_control.md
-    - Window Info:
-      - Toolbar : particleeditor/pe_toolbar.md
-      - Property : particleeditor/pe_propertywindow.md
-      - Particle List : particleeditor/pe_particlelistwindow.md
-- Animation Converter : HEMAnimationConverter/AnimationConverter.md
+    - Texture Compression : heoexporter/he_TextureCompression.md
+    - Particle Editor :
+      - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
+      - About Screen : particleeditor/pe_about_screen.md
+      - Operation: particleeditor/pe_control.md
+      - Window Info:
+        - Toolbar : particleeditor/pe_toolbar.md
+        - Property : particleeditor/pe_propertywindow.md
+        - Particle List : particleeditor/pe_particlelistwindow.md
+    - Animation Converter : HEMAnimationConverter/AnimationConverter.md
 - HeliScript:
     - Built-in Types:
         - Basic Types: hs/hs_var.md
@@ -246,7 +249,6 @@ nav:
     - Build Error: troubleshooting/BuildError.md
     - Browser is not open: troubleshooting/BrowserNotOpen.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
 - Change Log:
     - v4.1: changelog/changelog-4.1.md
     - v4.0: changelog/changelog-4.0.md
