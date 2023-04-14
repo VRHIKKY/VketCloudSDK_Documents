@@ -142,9 +142,9 @@ nav:
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
     - How to use avatar : AboutVketCloudSDK/SetupAvatar.md
 - First Step:
-    - Essential Objects : Unity/worldbasic.md
-    - Build And Run : Unity/BuildAndRun.md
-    - World Upload : Unity/WorldUpload.md
+    - Essential Objects : FirstStep/WorldBasicComponents.md
+    - Build And Run : FirstStep/BuildAndRun.md
+    - World Upload : FirstStep/WorldUpload.md
 - World Making Guide:
     - Unity Guidelines : heoexporter/he_UnityGuidelines.md
     - Skybox : Unity/Skybox.md 
