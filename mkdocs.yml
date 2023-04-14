@@ -140,7 +140,7 @@ nav:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
-    - How to use avatar : Unity/SetupAvatar.md
+    - How to use avatar : AboutVketCloudSDK/SetupAvatar.md
 - First Step:
     - Essential Objects : Unity/worldbasic.md
     - Build And Run : Unity/BuildAndRun.md
