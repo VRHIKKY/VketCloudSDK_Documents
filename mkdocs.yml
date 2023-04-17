@@ -128,6 +128,7 @@ plugins:
           Statements and flow control: 宣言と制御
           Check Tool: チェックツール
           World Making Guide: ワールド制作ガイド
+          Avatar File: アバターファイル
 
 markdown_extensions:
     - admonition
@@ -151,8 +152,9 @@ nav:
     - Mesh Collider : heoexporter/he_MeshCollider.md 
     - ReflectionProbe : heoexporter/he_ReflectionProbe.md
     - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
+    - Avatar File: WorldMakingGuide/AvatarFile.md
 - HEOComponents:
-    - HEOWorldSetting: Unity/HEOWorldSetting.md
+    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
     - HEOObject: Unity/HEOObject.md
