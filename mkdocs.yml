@@ -147,7 +147,7 @@ nav:
     - World Upload : FirstStep/WorldUpload.md
 - World Making Guide:
     - Unity Guidelines : WorldMakingGuide/he_UnityGuidelines.md
-    - Skybox : Unity/Skybox.md 
+    - Skybox : WorldMakingGuide/Skybox.md 
     - Mesh Collider : heoexporter/he_MeshCollider.md 
     - ReflectionProbe : heoexporter/he_ReflectionProbe.md
     - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
