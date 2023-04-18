@@ -1,14 +1,23 @@
 
 # HEOAudio
-![HEOAudio](img/HEOAudio.jpg)
-
+![HEOAudio](img/HEOAudioJP.png)
 
 |  Label |  function  |
 | ----   | ---- |
-| Audio Type | BGM、SE、SystemSEから選択できます。 |
-| Audio Clip | オーディオファイルを指定します。 |
-| loop | 繰り返し再生するかどうか設定します。 |
-| autoplay | ワールドBGMのように、入室後から自動で再生する場合に使用します。 |
+| オーディオタイプ | BGM、効果音、システム効果音から選択できます。 |
+| オーディオクリップ | オーディオファイルを指定します。 |
+| ループ | 繰り返し再生するかどうか設定します。 |
+| 自動再生 | ワールドBGMのように、入室後から自動で再生する場合に使用します。 
+
+それぞれのオーディオタイプは、インゲームコンフィグのラベルに対応しています。
+
+|  Audio Type |  In-game config label  |
+| ----   | ---- |
+| BGM | BGM |
+| 効果音 | 効果音 |
+| システム効果音 | システム音 |
+
+![HEOAudio](img/HEOAudioConfigJP.png)
 
 なお、BGMは以下の点に注意が必要です。
 

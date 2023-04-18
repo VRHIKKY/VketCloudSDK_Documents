@@ -1,7 +1,6 @@
 
 # HEOAudio
-![HEOAudio](img/HEOAudio.jpg)
-
+![HEOAudio](img/HEOAudio.pngs)
 
 |  Label |  function  |
 | ----   | ---- |
@@ -9,6 +8,16 @@
 | Audio Clip | Specify the audio file. |
 | loop | Set if you want it to loop. |
 | autoplay | If you want the audio to play automatically after joining. e.g. world BGM. |
+
+Each audio type corresponds to a label in the in-game config.
+
+|  Audio Type |  In-game config label  |
+| ----   | ---- |
+| BGM | Music volume |
+| SE | Effects volume |
+| SystemSE | Interface volume |
+
+![HEOAudio](img/HEOAudioConfig.png)
 
 Note:
 
