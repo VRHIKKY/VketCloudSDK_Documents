@@ -1,13 +1,11 @@
 # HEODespawnHeight
-HEODespawnHeight is a component that respawns the player to [HEOPlayer] (HEOPlayer.md) when the player reaches the specified threshold. <br>
-This helps prevent a permanent falling state if the player falls out of the world.
 
 ![HEODespawnHeight](img/HEODespawnHeight.png)
 
-|  Label  |  Function  |
-| ----   | ---- |
-| Area Size | Adjust the respawn area |
-
-When you add a component, a red plane appears in the Unity scene. You can adjust the size of the plane as desired by manipulating the X and Y fields.
+HEODespawnHeight is a component that respawns the player to [HEOPlayer] (HEOPlayer.md) when the player reaches the specified threshold. <br>
+This helps prevent a permanent falling state if the player falls out of the world.
 
 ![Setting](img/HEODespawnHeightSetting.png)
+
+When you add this component, a red Plane appears on the Unity scene. <br>
+You can specify the respawn threshold anywhere by manipulating the Y axis.

@@ -1,12 +1,12 @@
+
+!!! note info 
+    preview機能です。まだ使わないでください。
+
 # HEOScript
-![HEOScript](img/HEOScriptJP.png)
+![HEOScript](img/HEOScript.jpg)
 
-| ラベル |  機能  |
+|  Label |  function  |
 | ----   | ---- |
-| ヘリスクリプト | .hsファイルを指定します。 |
+| HeliScript | .hsファイルを指定します。 |
 
-##　注意点
-- HEOScriptは、スクリプトの対象となるHEOField以下に配置する必要があります。
-- 詳しいHeliScriptの書き方は以下をご覧ください。
-- [クラス](../hs/hs_class.ja.md)
-- [コンポーネント](../hs/hs_component.ja.md)
+HEOScriptは、スクリプトの対象となるHEOField以下に配置する必要があります。詳しいHeliScriptの書き方は[こちら](HEOScript.md)をご覧ください。
