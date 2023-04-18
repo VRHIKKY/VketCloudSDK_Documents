@@ -1,5 +1,5 @@
 
-# components
+# Components
 
 ## Defining components
 
