@@ -130,6 +130,7 @@ plugins:
           World Making Guide: ワールド制作ガイド
           Avatar File: アバターファイル
           Utility Tools: 補助ツールの使い方
+          Login SDK: SDKにログインする
 
 markdown_extensions:
     - admonition
@@ -142,6 +143,7 @@ nav:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
+    - Login SDK: AboutVketCloudSDK/LoginSDK.md
     - How to use avatar : AboutVketCloudSDK/SetupAvatar.md
 - First Step:
     - Essential Objects : FirstStep/WorldBasicComponents.md
