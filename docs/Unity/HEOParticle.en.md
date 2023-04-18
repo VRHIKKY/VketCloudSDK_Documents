@@ -9,4 +9,5 @@ HEOParticle is a component that expands particles based on .hep format files. <b
 | autoplay | Automatically play particles. |
 | loop | Loops particle playback. |
 
-Please use [Particle Editor](../particleeditor/pe_about_particleeditor.md) to create .hep files.
+You can output a .hep file with UnityEditor menu > VketCloudSDK > ExportParticle, but it is currently deprecated. <br/>
+Please use [Particle Editor](../particleeditor/pe_about_particleeditor.md) to create .hep files instead.
