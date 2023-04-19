@@ -187,7 +187,6 @@ nav:
     - HEOAnimation: Unity/HEOAnimation.md
     - HEOShowFlag : Unity/HEOShowFlag.md
     - HEOAreacollider: Unity/HEOAreacollider.md
-    - HEOCatalogTrigger : Unity/HEOCatalogTrigger.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
     - HEOActionTrigger: Unity/HEOActionTrigger.md
 - Actions: 

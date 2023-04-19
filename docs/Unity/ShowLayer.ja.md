@@ -1,6 +1,8 @@
 
 # ShowLayer
-![ShowLayer](img/ShowLayer.jpg)
+![ShowLayer](img/ActionShowLayerJP.png)
 
-!!! note info 
-    Preview機能です。使わないでください。
+| ラベル |  機能  |
+| ----   | ---- |
+| 名前 | レイヤーの名前 |
+| 排他モード | レイヤーを排除する |
