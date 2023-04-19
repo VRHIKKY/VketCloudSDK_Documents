@@ -569,6 +569,14 @@
          
     </url>
     <url>
+         <loc>NoneWorldMakingGuide/ChatGPT.html</loc>
+         <lastmod>2023-04-19</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/ChatGPT.html"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/WorldMakingGuide/ChatGPT.html"/>
+         
+    </url>
+    <url>
          <loc>NoneWorldMakingGuide/Collider.html</loc>
          <lastmod>2023-04-19</lastmod>
          <changefreq>daily</changefreq>
