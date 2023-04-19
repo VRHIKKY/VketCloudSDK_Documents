@@ -1,18 +1,18 @@
 
 # はじめに
   
-Vket Cloud SDKは、Vket Cloudエンジンを使用したコンテンツ制作のための開発キットです。  
+VketCloudSDKは、VketCloudエンジンを使用したコンテンツ制作のための開発キットです。  
   
-コンテンツ制作には「VketAccount」への登録と「Unity」が必要です。  
+SDKの利用には、`各種アカウントへの登録`と`指定バージョンのUnity`が必要です。  
   
-初めての方は  
+初めての方は以下のステップを順番に進めてください。
 
-1. **[VketAccountの準備](Unity/SetupAccount.html)**
+1. **[アカウントの準備](AboutVketCloudSDK/SetupAccount.md)**
 
-2. **[Unity事前設定](Unity/OperatingEnvironment.html)**
+2. **[Unityのインストール](AboutVketCloudSDK/OperatingEnvironment.md)**
 
-3. **[VketCloudSDKの導入](Unity/SetupSDK_external.html)**
+3. **[VketCloudSDKの導入](AboutVketCloudSDK/SetupSDK_external.md)**
 
-4. **[ビルド](Unity/BuildAndRun.html)**
+4. **[SDKログイン](AboutVketCloudSDK/LoginSDK.md)**
 
 を順番に実行してください。

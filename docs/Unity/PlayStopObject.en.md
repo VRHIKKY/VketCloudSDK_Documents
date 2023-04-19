@@ -2,6 +2,6 @@
 # Play/StopObject
 ![PlayStopObject](img/PlayStopObject.jpg)
 
-Lets you Play/Stop the particle/audio of your custom object inside HEOWorldSetting's "Object on Avatar" section.
+Play/StopObject enables you to control the play and stop actions of the Object on Avatar, set in each avatar block under HEOWorldSetting > Avatars.
 
-Only effective on particles or audio files.
+In order to control playback and stopping, the effective Object on Avatar is limited to particles or audio. In English:

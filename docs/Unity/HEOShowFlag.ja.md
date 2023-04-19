@@ -1,21 +1,18 @@
 # HEOShowFlag
 
-HEOフィールド上には残しておきたいけど、
+HEOフィールド上のオブジェクトを表示/非表示にする場合に利用します。
 
-非表示にしておきたい場合に利用します。
+![HEOShowFlag](img/HEOShowFlagJP.png)
 
-![HEOShowFlag](img/HEOShowFlag.png)
-
-| Label | function |
+| ラベル | 機能 |
 | ---- | ---- |
-| show |Falseにすると非表示になります | 
-
-ActionTriggerの[Show/HideNode](../Unity/ShowHideNode.ja.md)などで
-
-表示することができます。
-
-非表示にするのは見た目のみで、コライダーなどの判定は機能します。
+| `表示` | チェックを外すことで非表示にできます。| 
 
 ![HEOShowFlag_HideField](img/HEOShowFlag_HideField.png)
 
 ![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.png)
+
+!!! note info
+    - ActionTriggerの[Show/HideNode](../Unity/ShowHideNode.ja.md)でも、動的に表示/非表示にすることができます。
+    - 非表示にするのは見た目のみで、コライダーなどの判定は機能します。
+

@@ -1,6 +1,8 @@
 
 # ShowLayer
-![ShowLayer](img/ShowLayer.jpg)
+![ShowLayer](img/ActionShowLayer.png)
 
-!!! Caution !!! 
-   This function is for future use. Please do not use it.
+|  Label |  Function  |
+| ----   | ---- |
+| Name | Name of the layer |
+| Input Exclusive | Exclude and hide the layer |

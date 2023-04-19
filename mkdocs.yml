@@ -65,7 +65,7 @@ plugins:
           World Upload: ワールドアップロード
           Setup SDK: SDKの導入方法
           How to use avatar: アバターの使用方法
-          Essential Objects: 必須コンポーネント
+          Essential Objects: ワールドの基本要素
           Skybox: スカイボックス設定
           Statements And Flow Control: 文法・制御構文
           Declarations and definitions: 定義・宣言
@@ -93,13 +93,13 @@ plugins:
           GUI: GUI
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
-          Unity Guidelines : Unity制作ガイドライン
-          ReflectionProbe: リフレクションプローブ
+          Unity Guidelines : VketCloudの仕様制限
+          ReflectionProbe: 反射を写り込ませるには
           Texture Compression: テクスチャ圧縮
           Auto Texture Compression: 自動テクスチャ圧縮
           Get closer to the look of VketCloud to Unity: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
-          HEOComponent: HEOコンポーネントの使い方
+          HEOComponents: HEOコンポーネント
           About VketCloudSDK: VketCloudSDKについて
           OperatingEnvironment: 動作環境
           SetupSDK: 導入方法
@@ -127,6 +127,10 @@ plugins:
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
           Check Tool: チェックツール
+          World Making Guide: ワールド制作ガイド
+          Avatar File: アバターファイル
+          Utility Tools: 補助ツールの使い方
+          Login SDK: SDKにログインする
 
 markdown_extensions:
     - admonition
@@ -136,17 +140,36 @@ markdown_extensions:
 nav:
 - Introduction: index.md
 - About VketCloudSDK:
-    - Setup Account: Unity/SetupAccount.md
-    - Operating Environment : Unity/OperatingEnvironment.md
-    - Setup SDK : Unity/SetupSDK_external.md
+    - Setup Account : AboutVketCloudSDK/SetupAccount.md
+    - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
+    - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
+    - Login SDK: AboutVketCloudSDK/LoginSDK.md
+    - How to use avatar : AboutVketCloudSDK/SetupAvatar.md
 - First Step:
-    - Essential Objects : Unity/worldbasic.md
-    - Build And Run : Unity/BuildAndRun.md
-    - World Upload : Unity/WorldUpload.md
-    - How to use avatar : Unity/SetupAvatar.md
-    - Skybox : Unity/Skybox.md  
-- HEOComponent:
-    - HEOWorldSetting: Unity/HEOWorldSetting.md
+    - Essential Objects : FirstStep/WorldBasicComponents.md
+    - Build And Run : FirstStep/BuildAndRun.md
+    - World Upload : FirstStep/WorldUpload.md
+- World Making Guide:
+    - Unity Guidelines : WorldMakingGuide/he_UnityGuidelines.md
+    - Skybox : WorldMakingGuide/Skybox.md 
+    - How to Set Collider : WorldMakingGuide/Collider.md 
+    - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
+    - Avatar File: WorldMakingGuide/AvatarFile.md
+    - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
+    - Check Tool: checktool/checktool.md
+    - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
+    - Texture Compression : heoexporter/he_TextureCompression.md
+    - Particle Editor :
+      - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
+      - About Screen : particleeditor/pe_about_screen.md
+      - Operation: particleeditor/pe_control.md
+      - Window Info:
+        - Toolbar : particleeditor/pe_toolbar.md
+        - Property : particleeditor/pe_propertywindow.md
+        - Particle List : particleeditor/pe_particlelistwindow.md
+    - Animation Converter : HEMAnimationConverter/AnimationConverter.md
+- HEOComponents:
+    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
     - HEOObject: Unity/HEOObject.md
@@ -158,13 +181,12 @@ nav:
     - HEOParticle: Unity/HEOParticle.md
     - HEOReflectionProbe : Unity/HEOReflectionProbe.md
     - HEOScript: Unity/HEOScript.md
-    - HEOMeshCollider: Unity/HEOMeshCollider.md
+    - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
     - HEODespawnHeight: Unity/HEODespawnHeight.md
     - HEOCollider: Unity/HEOCollider.md
     - HEOAnimation: Unity/HEOAnimation.md
     - HEOShowFlag : Unity/HEOShowFlag.md
     - HEOAreacollider: Unity/HEOAreacollider.md
-    - HEOCatalogTrigger : Unity/HEOCatalogTrigger.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
     - HEOActionTrigger: Unity/HEOActionTrigger.md
 - Actions: 
@@ -201,23 +223,6 @@ nav:
     - Enter/LeaveVoiceGroup: Unity/EnterLeaveVoiceGroup.md
     - WhiteOut/In: Unity/WhiteOutIn.md
     - FadeOut/In: Unity/FadeOutIn.md
-- Unity Guidelines : heoexporter/he_UnityGuidelines.md
-- Check Tool: checktool/checktool.md
-- HEOExporter :
-    - HEOExporter Tutorial : heoexporter/he_heoexporter_tutorial.md
-    - ReflectionProbe : heoexporter/he_ReflectionProbe.md
-    - Texture Compression : heoexporter/he_TextureCompression.md
-    - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
-    - Mesh Collider : heoexporter/he_MeshCollider.md
-- Particle Editor :
-    - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
-    - About Screen : particleeditor/pe_about_screen.md
-    - Operation: particleeditor/pe_control.md
-    - Window Info:
-      - Toolbar : particleeditor/pe_toolbar.md
-      - Property : particleeditor/pe_propertywindow.md
-      - Particle List : particleeditor/pe_particlelistwindow.md
-- Animation Converter : HEMAnimationConverter/AnimationConverter.md
 - HeliScript:
     - Built-in Types:
         - Basic Types: hs/hs_var.md

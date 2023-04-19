@@ -7,7 +7,6 @@
 - HEOActionTrigger
 - HEOVideoTrigger
 - HEOTweetTrigger
-- HEOCatalogTrigger
 - HEOCliclakable (obsolete)
 
 これらのコンポーネントはclickableという種類に属し、ブラウザ上でのマウスクリックを検知します。
