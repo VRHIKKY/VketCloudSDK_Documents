@@ -4,9 +4,9 @@
 VketCloudSDKをインストールするには、UnityのPackage Managerを使用します。  
 
 ## Step 1. Unityでプロジェクトを開く  
-対応しているバージョン（[Unity事前設定](https://vrhikky.github.io/VketCloudSDK_Documents/3.3/ja/Unity/OperatingEnvironment.html){target=_blank}）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。      
+対応しているバージョン（[動作環境](OperatingEnvironment.md){target=_blank}）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。      
 
-!!! note
+!!! note caution
     プロジェクト名にスペースを入れるとビルドに失敗する場合があります。
 
     OK例) MyProject　　NG例) My Project  
