@@ -1,9 +1,14 @@
-
 # Warp
+
+The action "Warp" allows an avatar to teleport to the user-defined coordinates.
+
 ![Warp](img/Warp.jpg)
 
-Warp teleports a player to a specific point in the World.
+|  Label |  Function  |
+| ----   | ---- |
+| Destination | Specifies the world coordinates of the destination. |
+| Rotation | Specifies the rotation after warping |
 
-destination specifies the World coordinates of the destination.
-
-rotation specifies the direction your player face after the Warp.
+!!! Note Info
+    - Note that rotation only applies to the Y-axis.
+    - The avatar may fall due to gravity after moving.
