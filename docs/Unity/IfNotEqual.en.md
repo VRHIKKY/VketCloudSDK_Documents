@@ -6,5 +6,5 @@ If A(variable) is not equal to B(int), the Actions that follow will be discarded
 
 |  Label |  function  |
 | ----   | ---- |
-| name | Specify the variable name being compared. |
-| nvalue | Set the comparing integer value. |
+| Name (A) | Specify the variable name being compared. |
+| Value (B) | Set the comparing integer value. |
