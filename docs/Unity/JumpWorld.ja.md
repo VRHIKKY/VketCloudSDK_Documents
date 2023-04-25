@@ -1,6 +1,10 @@
 
-# JumpWorld
-![JumpWorld](img/JumpWorld.jpg)
+# ジャンプワールド
+![JumpWorld](img/JumpWorldJP.jpg)
 
-!!! note info 
-    Preview機能です。使わないでください。
+ジャンプワールドはWorldIDを指定することで、ワープ先を別ワールドにすることが可能です。
+例えば、コライダーと使用すると、指定のコライダーに入ると、別ワールドにワープすることができます。
+
+|  ラベル |  機能  |
+| ----   | ---- |
+| 名前 | WorldIDを指定する |
