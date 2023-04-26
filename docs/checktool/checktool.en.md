@@ -1,7 +1,7 @@
 # Check Tool
 From VketCloudSDK in the menu bar, click the Check Tool button to display the Check Tool window.
 
-![image](images/menu.jpg)
+![image](images/Menu.jpg)
 
 ## How to read the screen
 ![image](images/Window.jpg)

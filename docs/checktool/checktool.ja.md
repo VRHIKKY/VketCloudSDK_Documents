@@ -1,7 +1,7 @@
 # チェックツール
 メニューバーにあるVketCloudSDKから、Check Toolボタンをクリックするとチェックツールウィンドウを表示します。
 
-![image](images/menu.jpg)
+![image](images/MenuJP.jpg)
 
 ## 画面の見かた
 ![image](images/Window.jpg)
