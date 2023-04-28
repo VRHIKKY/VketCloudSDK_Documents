@@ -231,6 +231,10 @@ nav:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
         - List: hs/hs_list.md
+    - Statements and flow control:
+        - Declarations and definitions: hs/hs_statement_def.md
+        - Control Statement: hs/hs_statement_constrol.md
+        - Operator: hs/hs_operator.md
     - Class: hs/hs_class.md
     - Component: hs/hs_component.md
     - Built-in Classes And Functions:
@@ -246,10 +250,7 @@ nav:
         - NamePlate: hs/hs_system_function_nameplate.md
         - JavaScript: hs/hs_system_function_js.md
         - GUI: hs/hs_system_function_gui.md
-    - Statements and flow control:
-        - Declarations and definitions: hs/hs_statement_def.md
-        - Control Statement: hs/hs_statement_constrol.md
-        - Operator: hs/hs_operator.md
+    
 - Trouble shooting:
     - Build Error: troubleshooting/BuildError.md
     - Browser is not open: troubleshooting/BrowserNotOpen.md
