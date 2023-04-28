@@ -7,4 +7,4 @@ VketCloudSDKでは、UnityのSkyBoxを出力することは出来ません。そ
 !!! note tip
     コントロールパネル（VketCloudSDKメニュー > Control Panel）からチュートリアルシーン（Basic）をインストールすると、Skyboxのサンプルを使用できます。
 
-![Skybox](img/Skybox.png)  
+![Skybox](img/Skybox.jpg)  

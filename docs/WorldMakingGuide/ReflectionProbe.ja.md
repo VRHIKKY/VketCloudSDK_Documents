@@ -7,7 +7,7 @@ VketCloudで使用されるリフレクションプローブは、プリミテ�
 
 このWeight値は、リフレクションプローブとオブジェクトの距離を基準に計算されます。またVketCloudではリフレクションプローブのブレンドはサポートしていません。
 
-<img src="img/スクリーンショット 2022-05-13 123111.png">
+<img src="img/スクリーンショット 2022-05-13 123111.jpg">
 
 ---
 
@@ -18,36 +18,36 @@ VketCloudで使用されるリフレクションプローブは、プリミテ�
     - HDR: *チェック無し* 
     - Resolusion:  任意 (負荷と反射させる面の大きさを考慮して指定してください) 
 
-    <img src="img/スクリーンショット 2022-05-13 124848.png">
+    <img src="img/スクリーンショット 2022-05-13 124848.jpg">
 
 2. Bakeを押した後に「リフレクションプローブ用」のキューブマップが作成されますのでそちらの設定項目にある「Advanced→Read/Write Enabled」にチェックを入れて『Apply』を押します。
 
-    <img src="img/スクリーンショット 2022-05-13 125158.png">
+    <img src="img/スクリーンショット 2022-05-13 125158.jpg">
 
 3. エクスポートしたいオブジェクトの一番親の階層のオブジェクト(VketCloudSample)に「HEOReflectionProbe.cs」をアタッチします。その後インスペクターから「HEOReflectionProbe/ReflectionProbes」にエクスポートしたいリフレクションプローブを任意の数アタッチします。
 
-    <img src="img/スクリーンショット 2022-05-13 125438.png">
+    <img src="img/スクリーンショット 2022-05-13 125438.jpg">
 
 4. リフレクションプローブ自体をこれからエクスポートするオブジェクトの子要素にします。(リフレクションプローブではTransformを使用することがあるため一緒にエクスポートする必要があります)
 
-    <img src="img/スクリーンショット 2022-05-13 125825.png">
+    <img src="img/スクリーンショット 2022-05-13 125825.jpg">
 
 5. BuildAndRunを実行します。
 
-    <img src="img/スクリーンショット 2022-05-13 125948.png">
+    <img src="img/スクリーンショット 2022-05-13 125948.jpg">
 
 このHEOファイルをVketCloudで読み込んで表示したサンプルは以下のものになります。
-    <img src="img/ReflectionProbe_Sample.png">
+    <img src="img/ReflectionProbe_Sample.jpg">
 
 
 ## Box Projection(カメラ位置により移動する反射)について
 VketCloudでは、UnityのリフレクションプローブのBox Projectionを任意で使用することができます。
 
 1. Unity上でリフレクションプローブの『Box Projection』にチェックを入れます。(LightMapを使用している場合、押せないことがあります)
-<img src="img/スクリーンショット (661).png">
+<img src="img/スクリーンショット (661).jpg">
 
 2. リフレクションプローブのオブジェクトを必ずこれからエクスポートするオブジェクトの子要素にします。(Box ProjectionはTransformを使用するため)
-<img src="img/スクリーンショット 2022-05-13 125825.png">
+<img src="img/スクリーンショット 2022-05-13 125825.jpg">
 
 3. 上記の『リフレクションプローブの書き出し方法』に従い、BuildAndRunを実行します。
 

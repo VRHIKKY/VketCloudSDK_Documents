@@ -1,6 +1,6 @@
 
 # ShowLayer
-![ShowLayer](img/ActionShowLayer.png)
+![ShowLayer](img/ActionShowLayer.jpg)
 
 |  Label |  Function  |
 | ----   | ---- |

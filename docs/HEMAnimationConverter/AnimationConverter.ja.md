@@ -4,7 +4,7 @@ VketCloudで取り扱うアニメーションファイルの形式は、Unityで
 ## 使用方法
 ### 1. Animation Converterの選択
 Windowツールバーの「VketCloud SDK」タブから、「HEM Animation Converter」を選択する。
-![altツールバー説明](images/1.png)
+![altツールバー説明](images/1.jpg)
 
 ### 2. 変数の設定
 アニメーション変換前に変数を設定する必要があります。それぞれの変数の意味は下記のとおりです。
@@ -16,9 +16,9 @@ Windowツールバーの「VketCloud SDK」タブから、「HEM Animation Conve
 ・Apply SubBone Animation…変換元のアニメーションのサブボーンを変換対象のモデル用に変換します。ただし、モデルAとモデルBはボーン構造が異なるので、通常はそのまま使用することはできません。使用する場合、同じ親子関係、ボーンの名前にする必要があります。
 ・Export HEM File…変換したLegacyアニメーションをHEM形式に変換します
 下記図は、元々Vket2号ちゃん向けに制作されたHumanoidアニメーション(Target)です。そのままLegacy RigタイプのVketちゃん1号(Target Model)に割り当てることはできません。適切なパラメータを設定すると下記図のようになります
-![alt変数設定](images/2.png)
-![altRootボーン](images/3.png)
-![alt設定済み変数](images/4.png)
+![alt変数設定](images/2.jpg)
+![altRootボーン](images/3.jpg)
+![alt設定済み変数](images/4.jpg)
 
 ### 3. アニメーションの変換
 全ての変数を設定し終わった後、Convert Animationボタンを押してください。
@@ -28,7 +28,7 @@ Windowツールバーの「VketCloud SDK」タブから、「HEM Animation Conve
 試しに変換したアニメーションを再生してみましょう。まず、先ほど変換モデルに使用したHumanoid RigタイプのキャラクターモデルのRigタイプをLegacyに変換し、変換したLegacyアニメーションを割り当ててください。
 元々は左のVketちゃん2号用のHumanoidアニメーションでしたが、変換後はVketちゃん1号が使えるLegacyアニメーション向けに再変換しました。うまく変換が行われていると、図のように同じポーズが再生されるはずです
 
-![alt動作確認](images/5.png)
+![alt動作確認](images/5.jpg)
 
 ### 5. 制約
 現在、Animation Converterはβ版です。下記の問題が確認されており、順次解決していく予定です。

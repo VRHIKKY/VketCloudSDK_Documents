@@ -1,6 +1,6 @@
 # HEOTweetTrigger
 
-![HEOTweetTrigger](img/HEOTweetTrigger.png)
+![HEOTweetTrigger](img/HEOTweetTrigger.jpg)
 
 HEOTweetTriggerはツイートアクションを指定することができるコンポーネントです。
 ColliderがアタッチされたオブジェクトにHEOTweetTriggerをアタッチして使用します。

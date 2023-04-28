@@ -1,5 +1,5 @@
 #HEOObjectType
-![HEOObjectType](img/HEOObjectType.png)
+![HEOObjectType](img/HEOObjectType.jpg)
 
 | Label | function |
 | ---- | ---- |

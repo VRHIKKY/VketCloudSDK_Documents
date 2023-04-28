@@ -1,3 +1,3 @@
 # HEOSpot
 
-![HEOSpot](img/HEOSpot.png)
+![HEOSpot](img/HEOSpot.jpg)

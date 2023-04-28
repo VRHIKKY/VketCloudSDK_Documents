@@ -1,6 +1,6 @@
 # HEOField
 
-![HEOField](img/HEOFieldJP.png)
+![HEOField](img/HEOFieldJP.jpg)
 
 HEOFieldがアタッチされたオブジェクトは、BuildAndRun時に.heoとしてパックされます。.heoファイルに含めたいオブジェクトは、必ずHEOField以下に配置してください。
 
@@ -17,7 +17,7 @@ VketCloudでは、ワールドに入った後に特定のエリアへ侵入し�
 2. ロードコライダーの項目を開き、「ロードコライダー生成」を押してロードに使うエリアコライダーを生成する。
 3. 生成されたロード用のコライダーを最初から読み込まれるHEOFieldの子オブジェクトにし、位置や範囲を調整する。
 
-![HEOField](img/HEOFieldAutoLoadingJP.png)
+![HEOField](img/HEOFieldAutoLoadingJP.jpg)
 
 ### アンロード発火側
 1. アンロードコライダーの項目を開き、「アンロードコライダー生成」を押してロードに使うエリアコライダーを生成する。

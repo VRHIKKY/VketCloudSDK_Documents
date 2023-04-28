@@ -22,11 +22,11 @@ VketCloudではUnityのリフレクションプローブを使用することが
     * LightMap  Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください
     * リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
 * Other Settings の Color Spaceが『Linear』になっているか確認する
-<img src="img/スクリーンショット 2022-05-27 193242.png">
+<img src="img/スクリーンショット 2022-05-27 193242.jpg">
 * Max Lightmap Sizeは2048以下にする
 * ライトマップの圧縮は無効にする
 * Format: RGB24またはRGBA32、Compressed: Noneになっているか確認する
-<img src="img/スクリーンショット 2021-06-16 105720.png">
+<img src="img/スクリーンショット 2021-06-16 105720.jpg">
 
 ## シェーダー
 - Standard 

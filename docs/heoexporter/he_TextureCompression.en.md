@@ -28,7 +28,7 @@ PVRTexToolCLI.exe -i tex_sample\007_tweet_button_color.png -o tex_pvrtc\007.pvr 
 pause
 ```
 If you see any lines that start with "echo skip," it means that the texture failed to compress. To fix this, open the tex_sample folder and check your image data.
-<img src="he_image/スクリーンショット 2021-08-10 142727.png">
+<img src="he_image/スクリーンショット 2021-08-10 142727.jpg>
 
 Right click around on your file explorer to add the "resolution" and "bit depth" categories. Then make sure that the resolution is at the power of two and not too big (Like 4k), and the bit depth is 24 or 32.
 Try exporting again if you've been able to fix them, and check for echo skips.

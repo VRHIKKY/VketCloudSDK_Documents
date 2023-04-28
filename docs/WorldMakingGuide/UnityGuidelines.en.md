@@ -25,7 +25,7 @@ You may use Unity's Reflection Probes in Vket Cloud. Check [here](he_ReflectionP
 * Disable lightmap compression.
 * Format: RGB24 or RGBA32 Compressed: None
 
-<img src="he_image/スクリーンショット 2021-06-16 105720.png">
+<img src="he_image/スクリーンショット 2021-06-16 105720.jpg">
 
 ## Shaders
 * Standard 
@@ -54,11 +54,11 @@ When exporting through HEOExport using object selection, make sure to create one
 
 <div> 
     <div>
-        <img src="he_image/image-20211220-133702.png">
+        <img src="he_image/image-20211220-133702.jpg">
         <p>Should be put together as the above.</p>
     </div>
     <div>
-        <img src="he_image/image-20211220-133737.png">
+        <img src="he_image/image-20211220-133737.jpg">
         <p>If there are more than two parent Objects, they need to be put together as one.</p>
     </div>
 </div>

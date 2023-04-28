@@ -1,7 +1,7 @@
 
 # Random
 
-![RandomNode](img/ActionRandomJP.png)
+![RandomNode](img/ActionRandomJP.jpg)
 
 このノード以下に続くアクションを指定範囲の中からランダムに実行します。
 `範囲`には、Randomノードからいくつ先までを抽選するかを指定します。

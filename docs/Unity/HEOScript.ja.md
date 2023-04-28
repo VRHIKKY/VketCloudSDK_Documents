@@ -1,5 +1,5 @@
 # HEOScript
-![HEOScript](img/HEOScriptJP.png)
+![HEOScript](img/HEOScriptJP.jpg)
 
 | ラベル |  機能  |
 | ----   | ---- |

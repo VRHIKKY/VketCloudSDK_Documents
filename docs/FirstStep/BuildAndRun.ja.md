@@ -16,7 +16,7 @@ VketCloudSDKでシーンをビルドするには、必要コンポーネント�
 
 ビルドが成功したら、自動的にブラウザに遷移します。シーンの内容が反映されているかテストしてください。
 
-![BuildAndRun](img/buildsuccess.png)  
+![BuildAndRun](img/buildsuccess.jpg)  
 
 
 !!! note tip "「ビルドと実行」で起きること"

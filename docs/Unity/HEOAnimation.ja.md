@@ -3,7 +3,7 @@
 
 アニメーションはループで再生されます
 
-![HEOAnimation](img/HEOAnimation.png)
+![HEOAnimation](img/HEOAnimation.jpg)
 
 | Label | function |
 | ---- | ---- | 
