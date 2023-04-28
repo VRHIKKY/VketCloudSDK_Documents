@@ -1,11 +1,12 @@
 
 # Built-in functions - nameplate
 
-Functions for dynamically customizing the nameplate displayed above the player avatar's head.
+!!! Note Info
+    Functions for dynamically customizing the nameplate displayed above the player avatar's head.
 
-To uniquely identify each player, it uses the ID for receiving custom state/custom data in (network function) [hs_system_function_net.md].
+    To uniquely identify each player, it uses the ID for receiving custom state/custom data in (network function) [hs_system_function_net.md].
 
-If you specify an empty string for the ID, it will perform the operation on your own nameplate. Also, the argument name means the "name" element of the nameplate itself, not the player's name.
+    If you specify an empty string for the ID, it will perform the operation on your own nameplate. Also, the argument name means the "name" element of the nameplate itself, not the player's name.
 
 
 ***
