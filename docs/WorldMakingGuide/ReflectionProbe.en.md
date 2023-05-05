@@ -1,64 +1,60 @@
-## Overview of the Reflection Probe
-- Please check the official Unity document for the main rundown on Reflection Probes.[Reflection Probe - Unity Manual](https://docs.unity3d.com/ja/2018.4/Manual/class-ReflectionProbe.html)
-There are no limits to the number of Reflection Probes in your World, but every Probe uses six textures. The more Probes you have, the more unperformant the World becomes, so try to adjust to have a good balance. The probes are expected to be used for Unity Standard Shader's reflections.
+!!! note Info
+     For basic functions of reflection probes, please see Unity's official documentation ([here](https://docs.unity3d.com/en/2018.4/Manual/class-ReflectionProbe.html){target=blank})
 
-<img src="he_image/スクリーンショット 2022-05-13 122859.png">
+In Vket Cloud, reflection probes are determined per object in the hierarchy, not per primitive.
 
-- The Reflection Probe will calculate on a per-Hierarchy Object basis and not per-mesh. Out of the Reflection Probes listed in the MeshRenderer/Probes, the one with the highest Weight will be the one used. These values are calculated based on the distance bewteen the Probe and the Object. Also be noted that Probe blending is not supported.
+**Please note that, among the reflection probes listed in the object's MeshRenderer/Probes items, the one with the largest Weight number will be exported as the index of the reflection probe used by that object**.
 
-<img src="he_image/スクリーンショット 2022-05-13 123111.png">
+This weight value is calculated based on the distance between the reflection probe and the object. Vket Cloud does not support reflection probe blending.
 
-## How to Export Reflection Probes
-1. Once the Reflection Probe is set as below, click "Bake."
+<img src="img/スクリーンショット 2022-05-13 123111.png">
 
- Type: Baked <p>
- HDR: *Unchecked* <p>
- Resolusion: Case by case (Specify the value based on the World's current performance and the surface area it reflects on) <p>
+---
 
-<img src="he_image/スクリーンショット 2022-05-13 124848.png">
+## How to export reflection probes
+1. Set the reflection probe as follows and press "Bake".
 
-2. After clicking "Bake," a Cubemap will be generated. Enable "Read/Write" in its advanced setting. (This is necessary to export the Cubemap)
+     - Type: Baked
+     - HDR: *not checked*
+     - Resolution: Any value (Take into account the load and the size of the reflecting surface)
 
-<img src="he_image/スクリーンショット 2022-05-13 125158.png">
+     <img src="img/スクリーンショット 2022-05-13 124848.png">
 
-3. Attach "HEOReflectionProbe.cs" on the root object you wish to export via HEOExporter (In this case VketCloudSample).
-On the HEOReflectionProbe component, slot in the Reflection Probes you'll be using.
-<img src="he_image/スクリーンショット 2022-05-13 125438.png">
+2. After pressing Bake, a cube map for "Reflection Probe" will be created. In the inspector, check the checkbox of "Advanced → Read/Write Enabled" and press "Apply".
 
-4. Be sure to child the Reflection Probe to the GameObject you export. (This is because Refection Probes sometimes require Transforms, thus needing the export)
+     <img src="img/スクリーンショット 2022-05-13 125158.png">
 
-<img src="he_image/スクリーンショット 2022-05-13 125825.png">
+3. Attach "HEOReflectionProbe.cs" to the parent object (VketCloudSample) in hierarchy, which should contain all objects you want to export. Then set any number of reflection probes you want to export to "HEOReflectionProbe/ReflectionProbes" on inspector.
 
-5. Export through the HEOExporter.
+     <img src="img/スクリーンショット 2022-05-13 125438.png">
 
-<img src="he_image/スクリーンショット 2022-05-13 125948.png">
+4. The Reflection Probes need to be children of the object to be exported. (They must be exported together, for Reflection Probes may use Transforms.)
 
-6. Along with the exported .heo file, check whether the Cubemap is exported into "tex_reflection_cube/".
+     <img src="img/スクリーンショット 2022-05-13 125825.png">
 
-<img src="he_image/スクリーンショット 2022-05-13 130114.png">
+5. Run BuildAndRun.
 
-<img src="he_image/スクリーンショット 2022-05-13 130144.png">
+     <img src="img/スクリーンショット 2022-05-13 125948.png">
 
-Below is an example image of this .heo file loaded into Vket Cloud.
+A sample of this HEO file read and displayed by VketCloud is as follows.
+     <img src="img/ReflectionProbe_Sample.png">
 
-<img src="he_image/ReflectionProbe_Sample.png">
 
-## About Box Projection (reflection that changes depending on the camera position)
-- Overview
-You may use Unity's Box Projection for Reflection Probes. Check Unity's official document for the explanations on Box Projection. [Reflection Probe - Unity Manual](https://docs.unity3d.com/ja/2019.4/Manual/class-ReflectionProbe.html)
+## About Box Projection (reflection that moves with camera position)
+In VketCloud, you can optionally use Box Projection of Unity's reflection probe.
 
-<<How to Export>>
+1. Check "Box Projection" in Reflection Probe on Unity. (If you are using LightMap, you may not be able to enable it)
+<img src="img/スクリーンショット (661).png">
 
-1. Check the Reflection Probe's "Box Projection" box. You may not be able to check it if you are using LightMaps.
-<img src="he_image/スクリーンショット (661).png">
+2. Make sure that the Reflection Probe object is a child of the object you are about to export. (Because Box Projection uses Transform)
+<img src="img/スクリーンショット 2022-05-13 125825.png">
 
-2. Child the Reflection Probe to the GameObject you export. (Box Projection uses Transforms, thus requiring the export)
-<img src="he_image/スクリーンショット 2022-05-13 125825.png">
+3. Execute BuildAndRun according to "How to export reflection probes" above.
 
-3. Follow the previously explained steps to export.
+!!! caution "Important points of exporting reflection probes"
 
-## Notes on Exporting the Reflection Probe
-- If you wish to reflect onto large Objects, such as large floors, walls, or other surfaces, you may need to raise the cubemap's Resolution when you Bake. (There's a big drop in resolution when reflecting onto a large Object)
+     - When using Reflection Probe on larger objects (floors, walls, objects with huge faces), set the baking cubemap to a higher resolution (e.g. 2048). This is because the image quality drops significantly when reflecting on a large object.
 
-- If the reflection is working fine in Unity but pitch black on VketCloud, check whether the Reflection Probe is registered in "HEOReflectionProbe" and the Probe isn't disabled/hidden inside Unity.
+     - If there is an object that has reflection on Unity but turns black on VketCloud, please check if the reflection probe is registered in ReflectionProbes of "HEOReflectionProbe" and the reflection probe is not disabled on Unity.
 
+     - There is no particular limit on the number of reflection probes, but 6 textures are used for each reflection probe, assuming that Unity's Standard Shader is used. **As the number of textures increase, the drawing load will also increase. Consider the balance between load and drawing**.

@@ -1,16 +1,26 @@
+# World upload
+You can upload directly from Unity to HIKKY's official world portal server using the SDK.
 
-# World Upload
-If you are using Vket Cloud official server, you can use the SDK to directly upload from Unity.  
-The world data in "Release" folder, built after "Build and Run", will be uploaded into the closed remote server.
+## How to upload
+  
+1. Click "VketCloudSDK" and choose "Upload to Remote Server" in the top menu.
 
-## Contents upload
+     ![UploadToRemoteServer](img/UploadToRemoteServer.jpg)
 
-①From VketCloudSDK on the top menu, click "Upload to Remote Server"  
-②On your browser, a webpage will open up with an authorization code of your VketAccount.  
-③Copy the code and paste into "VketCloudSDK" window in the Unity. Press Submit.  
-④Once the upload is complete, wait for a few minutes and you can access your world from the below URL.  
-https://make-test.vketcloud.com/worlds/[VketID]/index.html  
-\* The ID and the pass should be communicated separately.  
-\* If you are logging into VketAccount other than the one you've registered, you'll encounter an error.
+2. A pop-up will open on Unity. Select the world name to upload.
 
-![WorldUpload](img/WorldUpload.jpg)
+     ![WorldListForUpload](img/WorldListForUpload.jpg)
+
+3. A dialog will appear when the upload is complete.
+
+     ![UploadSuccess](img/UploadSuccess.jpg)
+
+4. To enter the uploaded world, click `check the world` from the World ID management screen.
+
+     ![CheckTheWorld](img/CheckTheWorld.jpg)
+
+
+!!! note caution
+     To upload the world data, the world ID must be created in advance on the account management screen. If you don't see your world name in the list, please create a world ID from [here](https://cloud.vket.com/account/world){target=blank}.
+
+     ![CreateWorldID](img/CreateWorldID.jpg)

@@ -2,7 +2,7 @@
 
 HEOフィールド上のオブジェクトを表示/非表示にする場合に利用します。
 
-![HEOShowFlag](img/HEOShowFlagJP.png)
+![HEOShowFlag](img/HEOShowFlag.png)
 
 | ラベル | 機能 |
 | ---- | ---- |

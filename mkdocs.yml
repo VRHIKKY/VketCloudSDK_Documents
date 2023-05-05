@@ -93,11 +93,11 @@ plugins:
           GUI: GUI
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
-          Unity Guidelines : VketCloudの仕様制限
+          Specifications Limits : VketCloudの仕様制限
           ReflectionProbe: 反射を写り込ませるには
           Texture Compression: テクスチャ圧縮
           Auto Texture Compression: 自動テクスチャ圧縮
-          Get closer to the look of VketCloud to Unity: UnityとVketCloudの見た目を揃える
+          Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponents: HEOコンポーネント
           About VketCloudSDK: VketCloudSDKについて
@@ -120,7 +120,7 @@ plugins:
           Animation Converter : アニメーションコンバーター
           Trouble shooting: トラブルシューティング
           Build Error: ビルドエラー
-          Browser is not open: ブラウザが立ち上がらない
+          Browser does not open: ブラウザが立ち上がらない
           Changes are not applied: 変更が更新されない
           First Step: ワールド制作の基本
           Change Log: チェンジログ
@@ -130,7 +130,7 @@ plugins:
           World Making Guide: ワールド制作ガイド
           Avatar File: アバターファイル
           Utility Tools: 補助ツールの使い方
-          Login SDK: SDKにログインする
+          Login to SDK: SDKにログインする
 
 markdown_extensions:
     - admonition
@@ -143,16 +143,16 @@ nav:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
-    - Login SDK: AboutVketCloudSDK/LoginSDK.md
+    - Login to SDK: AboutVketCloudSDK/LoginSDK.md
     - How to use avatar : AboutVketCloudSDK/SetupAvatar.md
 - First Step:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
     - World Upload : FirstStep/WorldUpload.md
 - World Making Guide:
-    - Unity Guidelines : WorldMakingGuide/he_UnityGuidelines.md
+    - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
-    - How to Set Collider : WorldMakingGuide/Collider.md 
+    #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
@@ -249,9 +249,9 @@ nav:
         - Operator: hs/hs_operator.md
 - Trouble shooting:
     - Build Error: troubleshooting/BuildError.md
-    - Browser is not open: troubleshooting/BrowserNotOpen.md
+    - Browser does not open: troubleshooting/BrowserNotOpen.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
+    - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Change Log:
     - v4.1: changelog/changelog-4.1.md
     - v4.0: changelog/changelog-4.0.md

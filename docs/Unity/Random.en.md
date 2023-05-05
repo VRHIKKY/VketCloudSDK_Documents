@@ -3,6 +3,10 @@
 
 ![Random](img/ActionRandom.png)
 
-This feature enables execution of a random action.
+When this node is executed, an action from the subsequent actions in the specified range will be randomly chosen and executed.
+For `Range`, specify how many actions after the Random node should be included in the random lottery.
+For example, if the `Range` is set to 3 and the subsequent nodes are as follows,
 
-This is a process that extracts and executes one Action from the list of Actions between the next Action and the randomly inputted number, without executing the other Actions. By using this, you can execute one random action from multiple actions when clicked.
+![RandomSample](img/RandomSample.jpg)
+
+The Random node may only execute one of the three nodes: `OpenWeb`, `Warp`, and `JumpWorld`. The fourth node, `ShowNode`, is excluded from the lottery. That is, `ShowNode` will be always executed after executing one of the three preceding nodes.

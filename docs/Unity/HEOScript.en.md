@@ -1,5 +1,5 @@
 
-!!! Caution !!!
+!!! note info 
     This function is for future use. Please do not use it yet.
 
 # HEOScript

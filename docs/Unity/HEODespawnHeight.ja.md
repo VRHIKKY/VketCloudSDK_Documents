@@ -1,8 +1,8 @@
 # HEODespawnHeight
-HEODespawnHeight使用することにより、プレイヤーが指定した位置に到達した際に[HEOPlayer](HEOPlayer.md)へのリスポーンします。
+HEODespawnHeightを使用することにより、プレイヤーが指定した位置に到達した際に[HEOPlayer](HEOPlayer.md)へリスポーンするようになります。
 また、プレイヤーが落下してしまった場合、永続的に落下し続ける状態になってしまうのを防ぐことができます。
 
-![HEODespawnHeight](img/HEODespawnHeightJP.png)
+![HEODespawnHeight](img/HEODespawnHeight.png)
 
 |  ラベル  |  機能  |
 | ----   | ---- |
