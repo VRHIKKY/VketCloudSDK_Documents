@@ -1,7 +1,10 @@
 
 # Matrix クラス
 
-4x4の行列を表現するクラス。
+!!! Note Info
+    4x4の行列を表現するクラス。
+
+***
 
 ## クラス定義
 
@@ -13,11 +16,11 @@ class Matrix {
 }
 ```
 
+
 ## 利用方法
 
 Quaternion の GetMatrix() メソッドで Matrix を作成し、Vector3 の RotateMatrix() メソッドの引数に渡して、回転後の Vector3 を作成する際などに利用します。
 
-***
 
 
 ## コンストラクタ
@@ -26,8 +29,6 @@ Quaternion の GetMatrix() メソッドで Matrix を作成し、Vector3 の Rot
 
 4x4 の恒等行列を生成します。
 
-
-***
 
 
 ## メンバ変数

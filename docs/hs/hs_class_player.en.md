@@ -1,7 +1,8 @@
 
 # Player class
 
-The Player class represents your own player (avatar).
+!!! Note Info
+     The Player class represents your own player (avatar).
 
 
 ## class definition
@@ -21,7 +22,6 @@ public int GetPhysicsID()
 ```
 
 
-***
 
 
 ## Player utility functions
@@ -31,7 +31,6 @@ public int GetPhysicsID()
 Get a Player instance of yourself.
 
 
-***
 
 
 ## methods

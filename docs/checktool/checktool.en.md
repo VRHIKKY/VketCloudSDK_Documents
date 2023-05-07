@@ -53,7 +53,7 @@ Multiple panels can be selected simultaneously by clicking while holding down th
 | Video thumbnail image check | For video thumbnail images, you may set textures of size 1920x1080. During the texture size check, this particular size is exempted and does not yield error. |
 | Skybox check | VKetCloudSDK does not support Unity standard Skybox. An error will be displayed if the material is set to **Lighting/SkyboxMaterial**. |
 | Video check | Checks whether the format is MP4, and whether the video capacity and video time are below the set upper limit. |
-| Shader Check | Checks the materials if the assigned shader can be used with VKetCloudSDK. See [Unity Guidelines](../heoexporter/he_UnityGuidelines.md) for the list of available shaders. |
+| Shader Check | Checks the materials if the assigned shader can be used with VKetCloudSDK. See [Unity Guidelines](../WorldMakingGuide/UnityGuidelines.en.md) for the list of available shaders. |
 | Scale check | Checks whether the scale is negative. |
 | Mesh collider check | Check if the mesh collider is set according to the manual. |
 | Separation of reflection probes | Blending of reflection probes is not supported in VketCloudSDK. It checks if the reflection probe areas overlap. |
