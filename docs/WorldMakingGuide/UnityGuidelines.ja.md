@@ -22,11 +22,11 @@ VketCloudではUnityのリフレクションプローブを使用することが
     * LightMap  Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください
     * リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
 * Other Settings の Color Spaceが『Linear』になっているか確認する
-<img src="img/スクリーンショット 2022-05-27 193242.jpg">
+<img src="img/LightMapLinearColorSpace.jpg">
 * Max Lightmap Sizeは2048以下にする
 * ライトマップの圧縮は無効にする
 * Format: RGB24またはRGBA32、Compressed: Noneになっているか確認する
-<img src="img/スクリーンショット 2021-06-16 105720.jpg">
+<img src="img/LightMapFormat.jpg">
 
 ## シェーダー
 - Standard 
@@ -52,3 +52,14 @@ VketCloudではUnityのリフレクションプローブを使用することが
 
 ## オブジェクト
 HEOExportは複数選択に対応していません。１つのオブジェクトとしてエクスポートするには、親オブジェクトを作成しその中に対象のオブジェクトを格納して、親オブジェクトをエクスポートしてください。
+
+<div> 
+    <div>
+        <img src="img/ObjectPutTogether.jpg">
+        <p>同じ親オブジェクトに格納してください。</p>
+    </div>
+    <div>
+        <img src="img/ObjectTwoParentObject.jpg">
+        <p>もし2つ以上の親オブジェクトがある場合は、それらを1つにまとめる必要があります。</p>
+    </div>
+</div>

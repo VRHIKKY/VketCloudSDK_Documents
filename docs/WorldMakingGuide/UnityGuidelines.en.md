@@ -20,12 +20,15 @@ Texture compression is one method Vket Cloud requires to peform smoothly. Check 
 You may use Unity's Reflection Probes in Vket Cloud. Check [here](he_ReflectionProbe.md) for more details.
 
 ## Lightmap
+
+<img src="img/LightMapLinearColorSpace.jpg">
+
 * Set to Android platform. (For dLDR encoding)
 * Max Lightmap Size needs to be equal to or less than 2048.
 * Disable lightmap compression.
 * Format: RGB24 or RGBA32 Compressed: None
 
-<img src="he_image/スクリーンショット 2021-06-16 105720.jpg">
+<img src="img/LightMapFormat.jpg">
 
 ## Shaders
 * Standard 
@@ -51,14 +54,13 @@ Check [here](he_MeshCollider.md) for details on how to export your custom MeshCo
 ## Object
 When exporting through HEOExport using object selection, make sure to create one parent Object that contains all other Objects.
 
-
 <div> 
     <div>
-        <img src="he_image/image-20211220-133702.jpg">
+        <img src="img/ObjectPutTogether.jpg">
         <p>Should be put together as the above.</p>
     </div>
     <div>
-        <img src="he_image/image-20211220-133737.jpg">
+        <img src="img/ObjectTwoParentObject.jpg">
         <p>If there are more than two parent Objects, they need to be put together as one.</p>
     </div>
 </div>
