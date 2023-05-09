@@ -1,21 +1,20 @@
 # Essential objects
 
-To launch VketCloud, your scene must contain GameObjects with the following Components.  
-
-|  item  |  value  |
+To build with VketCloudSDK, objects containing the following components must be placed in the scene.
+  
+| Component Name | Overview |
 | ---- | ---- |
-|  HEOWorldSetting  |  An object that sets the world name, avatar, etc. in VketCloud.  |
-|  HEOField  |  An object called Field to store the model of the world.  |
-|  HEOPlayer  |  Spawn Location  |
-|  DespawnHeight  |  　A component that determines the height at which players and items are respawned.  |
-  
-  
-You can automatically add these by right clicking in the Hierarchy and choosing "Add essential Objects for VketCloud"
+| HEOWorldSetting | Component for setting world name, avatar, etc. |
+| HEOField | Component for 3D model |
+| HEOPlayer | A component that specifies the initial spawn position of the player |
+| DespawnHeight | A component that specifies the height to respawn the player |
 
-![AddEssentialObjects](img/AddEssentialObjects.jpg)  
-  
-- An avatar does not appear after building, you falls from the cube.
-- If you jump, you will be returned to the initial spawn point when you land.
+!!!note tip
+     Preset objects equipped with these components can be called by right clicking in the hierarchy and clicking Add essential Objects for VketCloud.
 
-In the above cases, "DespawnHeight" may be high.　　
-Try lowering DespawnHeight height (y-axis).
+     ![AddEssentialObjects](img/AddEssentialObjects.jpg)
+  
+!!! note question
+     - If you are continuously returning to the initial spawn point,
+
+     the issue may be caused by unintentional respawns. Try adjusting the height (y-axis) of DespawnHeight and the position of HEOPlayer.

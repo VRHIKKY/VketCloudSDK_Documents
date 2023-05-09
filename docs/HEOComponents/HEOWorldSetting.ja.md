@@ -15,7 +15,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | ----   | ---- |
 |  `World Name` |  ワールド名を設定する項目です。URLなどに反映されます。|
 |  `Debug Mode` |  デバッグモードを切り替えることができます。オンにするとブラウザ上で`F1`または`F2`からデバッグ機能を使用することが可能になります。|
-| `VRM Drop` |  ブラウザ上へのVRMドロップによる着替えを許可します。 |
+| `VRM Drop` |  ブラウザ上へのVRMドロップによるローカルの(他プレイヤーから見えない)アバター変更を許可します。 |
 | `Occulusion Culling` | オクルージョンカリングをオンにします。　|
 | `World Name Directory` | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。(ex. data/field/`ワールド名`/world.heo)|
 | `Multi Play Mode In Local Build` | ローカルビルド時にマルチプレイモードで入室します。 |
@@ -48,7 +48,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `Bloom Threshold` | ブルームの閾値を設定します。 |
 | `Light Scattering` | ライトスキャッタリングのオンオフを切り替えます。 |
 | `Scattering Intensity` | 空気散乱強度を設定します。 |
-| `Scattering Threshold` | 拡散指向性を調整します。 |
+| `Scattering Directivity` | 拡散指向性を調整します。 |
 | `G` | IBLの強さを調整するパラメータを設定します。 |
 | `Distance` | 効果開始距離を設定します。 |
 | `LightColor` | ライトカラーを指定します。 |

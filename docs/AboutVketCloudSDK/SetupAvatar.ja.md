@@ -11,7 +11,7 @@ VketCloudでは、**①MyAvatarを使用する方法**と**②ワールド内で
 3. 「アバターのアップロード」からVRMファイルをアップロードします。
 ![avatarupload2](img/MyVketMyAvatars_ja.jpg)  
 
-4. ワールドポータル（[こちら](https://lab.vketcloud.com/make/){target=blank}）やSDKを使ったローカルビルドなどでワールドに入室します。
+4. ワールドポータル（[こちら](https://vket.com/world){target=blank}）やSDKを使ったローカルビルドなどでワールドに入室します。
 
 5. 入室後、アバター変更の選択肢に先ほどアップロードしたアバターが表示されます。
 ![avatarupload3](img/MyVketWorldUI_ja.jpg)  

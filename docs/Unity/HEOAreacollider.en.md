@@ -18,4 +18,4 @@ You can remove the last action by clicking Delete.
 | LeaveActions | Sets the action when leaving the area. |
 
 For actions, see [Actions Overview](ActionsOverview.md). <br>
-For colliders, see [Unity Production Guidelines - Colliders](../heoexporter/he_UnityGuidelines.md).
+For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide/UnityGuidelines.md).

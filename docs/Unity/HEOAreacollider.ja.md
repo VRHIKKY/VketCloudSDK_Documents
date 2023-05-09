@@ -19,6 +19,6 @@ Deleteをクリックすることで最後尾のアクションを削除でき�
 | LeaveActions | エリア退出時のアクションを設定します。 |
 
 アクションについては[アクションの概要](ActionsOverview.md)を参照してください。<br>
-コライダーについては[Unity制作ガイドライン - コライダー](../heoexporter/he_UnityGuidelines.md)を参照してください。
+コライダーについては[Unity制作ガイドライン - コライダー](../WorldMakingGuide/UnityGuidelines.md)を参照してください。
 
 

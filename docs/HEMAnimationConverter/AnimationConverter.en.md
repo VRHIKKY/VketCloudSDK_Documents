@@ -1,4 +1,4 @@
-# Usage of HEM Animation Converter
+# How to Use HEM Animation Converter
 In VketCloud, the type of animation must be Legacy in Unity. Normally, the conversion from Humanoid to Legacy animation in Unity can only be done on the same character model due to differences in bone names and the structure. HEM Animation Converter can convert the Humanoid animation of character "modelA" to a Legacy animation of character "modelB".
 
 ## How to use
@@ -28,7 +28,7 @@ The conversion process will take place for a few seconds. After the conversion p
 Let's play back the converted animation as a test. First, convert the Rig type of the Humanoid Rig type character model used for the conversion model to Legacy, and assign the converted Legacy animation.
 Originally, the Humanoid animation was for Vket-chan No. 2 on the left, but after conversion, it was re-converted for the Legacy animation that Vket-chan No. 1 can use. If the conversion was successful, the same pose should play as shown in the figure.
 
-![altConfirm Converted Animation](images/4.png)
+![altConfirm Converted Animation](images/5.png)
 
 ### 5. Limitation
 5. Other component animations (e.g., object OnOff) cannot be converted

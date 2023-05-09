@@ -1,7 +1,7 @@
-# HEOCollider
-![HEOCollider](img/HEOColliderJP.png)
+# HEO Collider
+![HEOCollider](img/HEOCollider.jpg)
 
-HEOColliderとは、VketCloud上でコライダーがどのような衝突判定を持つかを設定できるコンポーネントです。
+HEO Colliderとは、VketCloud上でコライダーがどのような衝突判定を持つかを設定できるコンポーネントです。
 
 | ラベル | 機能 |
 | ---- | ---- |
