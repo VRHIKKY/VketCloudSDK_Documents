@@ -1,6 +1,6 @@
 
 # ShowLayer
-![ShowLayer](img/ActionShowLayerJP.png)
+![ShowLayer](img/ActionShowLayerJP.jpg)
 
 | ラベル |  機能  |
 | ----   | ---- |

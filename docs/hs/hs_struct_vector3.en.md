@@ -1,7 +1,10 @@
 
 # Vector3 class
 
-A class that represents a 3D vector.
+!!! Note Info
+     A class that represents a 3D vector.
+
+***
 
 ## class definition
 
@@ -27,7 +30,6 @@ vec.z = 2.0f;
 Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 ```
 
-***
 
 ## Vector3 utility functions
 ### makeVector3(float, float, float)
@@ -35,7 +37,6 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 
 global function. Returns a Vector3 initialized with the specified x, y, z components.
 
-***
 
 ## Constructor
 
@@ -44,8 +45,6 @@ global function. Returns a Vector3 initialized with the specified x, y, z compon
 
 Creates an instance of Vector3 with x, y, z elements set to 0.
 
-
-***
 
 
 ## member variables
@@ -64,8 +63,6 @@ The y component of the vector.
 
 The z-component of the vector.
 
-
-***
 
 
 ## methods

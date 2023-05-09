@@ -12,7 +12,7 @@ Select "3D" as the template.
 
 * If you put a space in the project name, the build may fail.
 OK) My Project NG) My Project
-![Title](img/title.png)  
+![Title](img/title.jpg)  
   
 ### Step 2. Configure Package Manager
 ---
@@ -26,7 +26,7 @@ Select "Package Manager" from the left tab in the window and describe as follows
 | URL | https://registry.npmjs.com |
 | Scope(s) | com.hikky.vketcloudsdk |
 
-   ![Package](img/package.png)
+   ![Package](img/package.jpg)
   Finally, press the "Save" button to save the settings.
     
   
@@ -39,14 +39,14 @@ Open the "Packages" window from Unity's menu Window > Package Manager.
 
 Select "My Registries" from the dropdown at the top of the window.
 
-   ![registry](img/registry.png)
+   ![registry](img/registry.jpg)
 
 Select VketCloudSDK from the displayed list and press the “Install” button to start the installation.
   
 
 Installation is complete if the item "VketCloudSDK" is added to the Unity menu.
 
-   ![header](img/header.png)
+   ![header](img/header.jpg)
 
 
 
@@ -57,6 +57,6 @@ Unity menu VketCloudSDK>Preferences
 
 Enter the password in the "buildpassword" field
 *The password is described in "Build Lock Password" on [My Page](https://lab.vketcloud.com/en/mypage/sdk/).
-   ![buildpassword](img/buildpassword.png)　　
+   ![buildpassword](img/buildpassword.jpg)　　
 
 Installation is now complete. Conglatulations!

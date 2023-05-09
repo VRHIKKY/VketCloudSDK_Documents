@@ -1,3 +1,3 @@
 # HEOSpawn
 
-![HEOSpawn](img/HEOSpawn.png)
+![HEOSpawn](img/HEOSpawn.jpg)

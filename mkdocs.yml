@@ -22,7 +22,9 @@ theme:
   features:
     - navigation.indexes
     - header.autohide
-
+  footer:
+    logo: images/HikkyLogo.png
+    copyright: ©HIKKY Co.,Ltd. All rights reserved.
   analytics:
     gtag: G-05NPW204YY
   shortcuts:
@@ -31,6 +33,7 @@ theme:
     previous: 80 # p
     search: 83   # s
   nav_style: dark
+  custom_dir: custom_theme
 
 extra:
   version:
@@ -109,6 +112,43 @@ plugins:
           Loading stops: ブラウザの読み込みが止まる
           Actions: アクションについて
           Actions Overview: アクションの概要
+          OpenWeb: Webを開く
+          Play/StopItem: アイテム再生/停止
+          Show/HideItem: アイテム表示/非表示
+          Play/StopObject: オブジェクト再生/停止
+          Show/HideObject: オブジェクト表示/非表示
+          Show/HideNode: ノード表示/非表示
+          Enable/DisableClickableNode: クリック可能ノード有効/無効化
+          Enable/DisableCollider: コライダー有効/無効化
+          Wait: 待機
+          SetPosRelativePlayer: プレイヤー相対位置にセット
+          MoveTo: 移動
+          Warp: ワープ
+          JumpWorld: ジャンプワールド
+          Emote: エモート
+          Motion: モーション
+          NextMotion: 次のモーション
+          AddVar: 値の追加
+          SetVar: 値の設定
+          If A == B: 等しい場合
+          If A != B: 等しくない場合
+          If A >= B: 小さい場合
+          If A <= B: 大きい場合
+          Random: ランダム
+          StopVideo: ビデオ停止
+          SetCookieText: クッキーテキストの設定
+          OpenComicViewer: コミックビューワーを表示
+          ShowLayer: レイヤーを表示
+          CallJavaScript: JavaScriptを呼び出す
+          CallScript: HeliScriptを呼び出す
+          Enter/LeaveVoiceGroup: 音声グループに追加/から退出
+          FadeOut/In: フェードアウト/イン
+          WhiteOut/In: ホワイトアウト/イン
+          GTag: GTag
+          PhysicsSetPos/Rot: 位置/回転をセット
+          PhysicsSetEnable: 物理有効化
+          PhysicsClear/AddForce: 力を削除/追加
+          PhysicsAddVelocity: 速度を追加
           ActionNodeGraph: アクションノードグラフ
           Particle Editor : パーティクルエディター
           ParticleEditor Overview: パーティクルエディター概要 
@@ -150,7 +190,7 @@ nav:
     - Build And Run : FirstStep/BuildAndRun.md
     - World Upload : FirstStep/WorldUpload.md
 - World Making Guide:
-    - Unity Guidelines : WorldMakingGuide/he_UnityGuidelines.md
+    - Unity Guidelines : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
     - How to Set Collider : WorldMakingGuide/Collider.md 
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
@@ -192,7 +232,7 @@ nav:
 - Actions: 
     #- ActionNodeGraph: Unity/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Unity/ActionsOverview.md
-    - Openweb: Unity/Openweb.md
+    - OpenWeb: Unity/Openweb.md
     - Play/StopItem: Unity/PlayStopItem.md
     - Show/HideItem: Unity/ShowHideItem.md
     - Play/StopObject: Unity/PlayStopObject.md
@@ -203,7 +243,6 @@ nav:
     - Wait: Unity/Wait.md
     - SetPosRelativePlayer: Unity/SetPosRelativePlayer.md
     - MoveTo: Unity/MoveTo.md
-    - Random: Unity/Random.md
     - Warp: Unity/Warp.md
     - JumpWorld: Unity/JumpWorld.md
     - Emote: Unity/Emote.md
@@ -215,19 +254,30 @@ nav:
     - If A != B: Unity/IfNotEqual.md
     - If A >= B: Unity/IfGreaterThanOrEqual.md
     - If A <= B: Unity/IfLessThanOrEqual.md
+    - Random: Unity/Random.md
     - StopVideo: Unity/StopVideo.md
     - SetCookieText: Unity/SetCookieText.md
     - OpenComicViewer: Unity/OpenComicViewer.md
     - ShowLayer: Unity/ShowLayer.md
     - CallJavaScript: Unity/CallJavaScript.md
+    - CallScript: Unity/CallScript.md
     - Enter/LeaveVoiceGroup: Unity/EnterLeaveVoiceGroup.md
-    - WhiteOut/In: Unity/WhiteOutIn.md
     - FadeOut/In: Unity/FadeOutIn.md
+    - WhiteOut/In: Unity/WhiteOutIn.md
+    - GTag: Unity/GTag.md
+    - PhysicsSetPos/Rot: Unity/PhysicsSetPosRot.md
+    - PhysicsSetEnable: Unity/PhysicsSetEnable.md
+    - PhysicsClear/AddForce: Unity/PhysicsClearAddForce.md
+    - PhysicsAddVelocity: Unity/PhysicsAddVelocity.md
 - HeliScript:
     - Built-in Types:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
         - List: hs/hs_list.md
+    - Statements and flow control:
+        - Declarations and definitions: hs/hs_statement_def.md
+        - Control Statement: hs/hs_statement_constrol.md
+        - Operator: hs/hs_operator.md
     - Class: hs/hs_class.md
     - Component: hs/hs_component.md
     - Built-in Classes And Functions:
@@ -243,10 +293,7 @@ nav:
         - NamePlate: hs/hs_system_function_nameplate.md
         - JavaScript: hs/hs_system_function_js.md
         - GUI: hs/hs_system_function_gui.md
-    - Statements and flow control:
-        - Declarations and definitions: hs/hs_statement_def.md
-        - Control Statement: hs/hs_statement_constrol.md
-        - Operator: hs/hs_operator.md
+    
 - Trouble shooting:
     - Build Error: troubleshooting/BuildError.md
     - Browser is not open: troubleshooting/BrowserNotOpen.md

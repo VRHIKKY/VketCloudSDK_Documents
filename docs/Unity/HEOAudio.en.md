@@ -1,6 +1,6 @@
 
 # HEOAudio
-![HEOAudio](img/HEOAudio.pngs)
+![HEOAudio](img/HEOAudio.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
@@ -17,7 +17,7 @@ Each audio type corresponds to a label in the in-game config.
 | SE | Effects volume |
 | SystemSE | Interface volume |
 
-![HEOAudio](img/HEOAudioConfig.png)
+![HEOAudio](img/HEOAudioConfig.jpg)
 
 Note:
 

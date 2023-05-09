@@ -1,7 +1,7 @@
 
 # HEOVideoTrigger
 
-![HEOVideoTrigger](img/HEOVideoTrigger.png)
+![HEOVideoTrigger](img/HEOVideoTrigger.jpg)
 
 HEOVideoTriggerは動画を再生するために使用します。
 
@@ -17,7 +17,7 @@ HEOVideoTriggerは動画を再生するために使用します。
 autoplayを設定しない場合にはアクション等いずれかの手段で再生開始をコントロールする必要があります。</br>
 画像ではHEOActionTriggerを使用してクリックによる動画再生を実装しています。
 
-![HEOVideoTrigger](img/HEOVideoTriggerAdd.png)
+![HEOVideoTrigger](img/HEOVideoTriggerAdd.jpg)
 
 
 ##VideoMaterialについて

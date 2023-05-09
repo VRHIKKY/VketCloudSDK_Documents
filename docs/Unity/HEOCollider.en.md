@@ -1,5 +1,5 @@
 #HEO Collider
-![HEOCollider](img/HEOCollider.png)
+![HEOCollider](img/HEOCollider.jpg)
 
 HEOColider is a component that allows you to set how the Box Collider behaves.
 

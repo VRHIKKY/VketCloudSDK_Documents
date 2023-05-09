@@ -1,9 +1,11 @@
 # Item class
 
-The Item class is for working with individual items defined in the Scene file's "items".
+!!! Note Info
+    The Item class is for working with individual items defined in the Scene file's "items".
 
-You can get the Item class object by specifying the item name with hsItemGet().
+    You can get the Item class object by specifying the item name with hsItemGet().
 
+***
 
 ## class definition
 
@@ -77,7 +79,6 @@ Item myItem = hsItemGet("Item name");
 ```
 
 
-***
 
 
 ## Item utility functions
@@ -87,10 +88,9 @@ Item myItem = hsItemGet("Item name");
 global function. Gets the "items" of the component with the specified name and returns them as an instance of the Item class.
 
 
-***
 
 
-## methods
+## Methods
 
 ### GetName()
 `public string GetName()`

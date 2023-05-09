@@ -12,7 +12,6 @@ string internally stores string data as UTF-8 bytes. Use the Length() method to 
 HeliScript strings are mutable. You can rewrite the contents of the string by specifying the index with "[]" or by methods such as Append().
 
 
-***
 
 
 ## string methods
@@ -63,7 +62,6 @@ Removes the last character of a string.
 Deletes one character from the position specified by the argument.
 
 
-***
 
 
 ## special operators

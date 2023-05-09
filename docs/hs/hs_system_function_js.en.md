@@ -1,7 +1,8 @@
 
 # Built-in functions - JavaScript
 
-A function that realizes coordination between HeliScript and JavaScript.
+!!! Note Info
+    A function that realizes coordination between HeliScript and JavaScript.
 
 
 ***
@@ -36,9 +37,6 @@ function hel_action_bridge(name, text)
      }
 }
 ```
-
-***
-
 
 ## Call a component method from JavaScript
 

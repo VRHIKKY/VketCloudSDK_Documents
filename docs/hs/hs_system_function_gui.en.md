@@ -1,7 +1,8 @@
 
 # built-in functions - GUI
 
-Utility functions that manipulate GUI elements.
+!!! Note Info
+    Utility functions that manipulate GUI elements.
 
 
 ***
@@ -36,6 +37,3 @@ Resets the GUI element specified by name to its default state.
 `bool hsCanvasToggleChange(string name)`
 
 Toggles the state of a GUI element specified by name.
-
-
-***

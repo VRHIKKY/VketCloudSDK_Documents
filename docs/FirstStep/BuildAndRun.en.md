@@ -20,7 +20,7 @@ The exported data can be found in [project]\release\data folder, which should co
 
 Once successfully built, the SDK will automatically launch a local server and browser to test the result.
 
-![BuildAndRun](img/buildsuccess.png)
+![BuildAndRun](img/buildsuccess.jpg)
 
 #### Outline of important files in data folder
 |  Location  |  File  |  Description  |

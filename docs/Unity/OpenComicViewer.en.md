@@ -30,7 +30,7 @@ If you wish to change the Tweet button or the Close button, edit the Canvas file
 
 Your image needs to fit a square, with the resolution being a power of two. 
 
-<img src="img/ComicViewerSample.png" width="50%">
+<img src="img/ComicViewerSample.jpg" width="50%">
 
 If a 1024px file is set, the horizontal pixel will only show up to the 724px mark.
 It's recommended to fill the blank space on the right with an elongated pixel to avoid image artifacts caused by bilinear interpolations/mipmaps.

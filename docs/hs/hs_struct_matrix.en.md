@@ -1,6 +1,9 @@
 # Matrix class
 
-A class that represents a 4x4 matrix.
+!!! Note Info
+     A class that represents a 4x4 matrix.
+
+***
 
 ## class definition
 
@@ -12,11 +15,11 @@ class Matrix {
 }
 ```
 
+
 ## How to Use
 
 One of its usages is to create a Matrix with Quaternion's GetMatrix() method, pass it to the argument of Vector3's RotateMatrix() method, and use it to create a rotated Vector3.
 
-***
 
 
 ## Constructor
@@ -25,8 +28,6 @@ One of its usages is to create a Matrix with Quaternion's GetMatrix() method, pa
 
 Generate a 4x4 identity matrix.
 
-
-***
 
 
 ## member variables

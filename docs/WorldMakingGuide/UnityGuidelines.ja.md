@@ -11,10 +11,10 @@ VketCloudで使用するワールドモデル等はUnityでセットアップし
 * 拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップロードでエラーが出ることがあります。
 
 ## テクスチャ圧縮
-VketCloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは [こちら](he_TextureCompression.md)をご覧ください。
+VketCloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは [こちら](../heoexporter/he_TextureCompression.md)をご覧ください。
 
 ## リフレクションプローブ
-VketCloudではUnityのリフレクションプローブを使用することができます。詳しくは[こちら](he_ReflectionProbe.md)をご覧ください。
+VketCloudではUnityのリフレクションプローブを使用することができます。詳しくは[こちら](ReflectionProbe.md)をご覧ください。
 
 ## ライトマップ
 * Android(dLDRフォーマット) または PC(RGBMフォーマット)  プラットフォームに切り替える
@@ -22,11 +22,11 @@ VketCloudではUnityのリフレクションプローブを使用することが
     * LightMap  Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください
     * リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
 * Other Settings の Color Spaceが『Linear』になっているか確認する
-<img src="img/スクリーンショット 2022-05-27 193242.png">
+<img src="img/LightMapLinearColorSpace.jpg">
 * Max Lightmap Sizeは2048以下にする
 * ライトマップの圧縮は無効にする
 * Format: RGB24またはRGBA32、Compressed: Noneになっているか確認する
-<img src="img/スクリーンショット 2021-06-16 105720.png">
+<img src="img/LightMapFormat.jpg">
 
 ## シェーダー
 - Standard 
@@ -38,7 +38,7 @@ VketCloudではUnityのリフレクションプローブを使用することが
     Autodesk Interactiveのメタリックテクスチャは、テクスチャスロット数の都合上、使用できません。メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。
 
 ## コライダー
-* 衝突判定用はBoxColliderとMeshColliderのみ対応。MeshColliderは処理に非常に負荷がかかるため使用は必要最低限にしてください。BoxColliderはTPSモード時にプレイヤーアバターとカメラの間に位置するオブジェクトによって遮断されるのを防ぐためにも利用しているため、天井など移動出来ない場所でも設定して下さい。MeshColliderの書き出し方法については[こちら](he_MeshCollider.md)をご覧ください。
+* 衝突判定用はBoxColliderとMeshColliderのみ対応。MeshColliderは処理に非常に負荷がかかるため使用は必要最低限にしてください。BoxColliderはTPSモード時にプレイヤーアバターとカメラの間に位置するオブジェクトによって遮断されるのを防ぐためにも利用しているため、天井など移動出来ない場所でも設定して下さい。MeshColliderの書き出し方法については[こちら](Collider.md)をご覧ください。
 * SphereColliderはクリック（タップ）判定用にのみ使用しています。（ポスターなど）
 * ヒエラルキーのネストが深いとコライダーが出力されない場合があります。
 * 膝下ぐらいのコライダーは登れてしまいます。しかし、大きすぎるコライダーはカメラの妨げになるので、気を付けてください。
@@ -52,3 +52,14 @@ VketCloudではUnityのリフレクションプローブを使用することが
 
 ## オブジェクト
 HEOExportは複数選択に対応していません。１つのオブジェクトとしてエクスポートするには、親オブジェクトを作成しその中に対象のオブジェクトを格納して、親オブジェクトをエクスポートしてください。
+
+<div> 
+    <div>
+        <img src="img/ObjectPutTogether.jpg">
+        <p>同じ親オブジェクトに格納してください。</p>
+    </div>
+    <div>
+        <img src="img/ObjectTwoParentObject.jpg">
+        <p>もし2つ以上の親オブジェクトがある場合は、それらを1つにまとめる必要があります。</p>
+    </div>
+</div>

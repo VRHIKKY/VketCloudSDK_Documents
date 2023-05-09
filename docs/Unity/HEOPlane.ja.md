@@ -3,8 +3,8 @@
 ![HEOPlane](img/HEOPlane.jpg)
 
 HEOPlaneは、画像ファイルをインスタンス生成する機能です。<br>
-ファイル形式は必ずpng形式である必要があります。<br>
-詳しくは[Unity制作ガイドライン](../heoexporter/he_UnityGuidelines.ja.md)をご覧ください。
+ファイル形式は必ずjpg形式である必要があります。<br>
+詳しくは[Unity制作ガイドライン](../WorldMakingGuide/UnityGuidelines.md)をご覧ください。
 
 |  Label |  function  |
 | ----   | ---- |

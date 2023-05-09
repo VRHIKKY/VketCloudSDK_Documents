@@ -10,4 +10,4 @@ Addをクリックすることで任意のアクションを設定できます�
 Deleteをクリックすることで最後尾のアクションを削除できます。
 
 アクションについては[アクションの概要](ActionsOverview.md)を参照してください。<br>
-コライダーについては[Unity制作ガイドライン - コライダー](../heoexporter/he_UnityGuidelines.md)を参照してください。
+コライダーについては[Unity制作ガイドライン - コライダー](../WorldMakingGuide/UnityGuidelines.md)を参照してください。

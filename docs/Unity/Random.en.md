@@ -1,7 +1,7 @@
 
 # Random
 
-![Random](img/ActionRandom.png)
+![Random](img/ActionRandom.jpg)
 
 This feature enables execution of a random action.
 

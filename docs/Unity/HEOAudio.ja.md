@@ -1,5 +1,5 @@
 # HEOAudio
-![HEOAudio](img/HEOAudioJP.png)
+![HEOAudio](img/HEOAudioJP.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
@@ -16,7 +16,7 @@
 | `効果音` | 効果音 |
 | `システム効果音` | システム音 |
 
-![HEOAudio](img/HEOAudioConfigJP.png)
+![HEOAudio](img/HEOAudioConfigJP.jpg)
 
 !!! note caution
     BGMは以下の点に注意が必要です。

@@ -1,6 +1,6 @@
 #HEOVideoTrigger
 
-![HEOVideoTrigger](img/HEOVideoTrigger.png)
+![HEOVideoTrigger](img/HEOVideoTrigger.jpg)
 
 HEOVideoTrigger is used to play the video.
 
@@ -16,7 +16,7 @@ Make sure to add a HEOField, for this component alone cannot pack video files in
 If you don't set autoplay, you need to control the start of playback by some means, such as an action. </br>
 The below image uses HEOActionTrigger to implement video playback on click.
 
-![HEOVideoTrigger](img/HEOVideoTriggerAdd.png)
+![HEOVideoTrigger](img/HEOVideoTriggerAdd.jpg)
 
 
 ## About Video Materials

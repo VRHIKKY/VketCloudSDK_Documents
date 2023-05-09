@@ -24,6 +24,12 @@
 - mkdocs-static-i18n
 - mike
 
+requirements.txtで一括でインストールすることができます。
+```
+cd 〇〇〇/VketCloudSDK_Documents
+pip install -r requirements.txt
+```
+
 ## ②venvを使う
 venvを用いて仮想環境で執筆が可能です。<br>
 vketclouddocsというフォルダーがあるディレクトリに移動し、以下のコマンドを実行してください。

@@ -1,6 +1,6 @@
 # HEOField
 
-![HEOField](img/HEOField.png)
+![HEOField](img/HEOField.jpg)
 
 An Object attached with an HEOField will be packed into an .heo file when you BuildAndRun. If you want your Objects to show up in the build, make sure to child them under HEOField.
 
@@ -14,7 +14,7 @@ In VketCloud, it is possible to implement objects that load when you enter a spe
 2. Open the Load Collider section and click "Generate Load Collider" to generate an area collider for loading.
 3. Make the generated load collider a child object of the HEOField that is loaded from the beginning, and adjust the position and range.
 
-![HEOField](img/HEOFieldAutoLoading.png)
+![HEOField](img/HEOFieldAutoLoading.jpg)
 
 ## Setting up Unloading
 1. Open the UnLoad Collider section and click "Generate UnLoad Collider" to generate an area collider for unloading.

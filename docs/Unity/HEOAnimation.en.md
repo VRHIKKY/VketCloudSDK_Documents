@@ -3,7 +3,7 @@ Play a rotation animation on the attached object
 
 Animation is played in a loop
 
-![HEOAnimation](img/HEOAnimation.png)
+![HEOAnimation](img/HEOAnimation.jpg)
 
 | Label | function |
 | ---- | ---- |

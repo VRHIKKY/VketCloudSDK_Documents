@@ -1,10 +1,10 @@
-# If A != B
-![IfNotEqual](img/IfNotEqual.jpg)
+# 等しくない場合
+![IfNotEqual](img/IfNotEqualJP.jpg)
 
-If A != B, A (variable) and B (integer) are not equal, hense the proceeding actions cannot be completed.
+指定する変数が数値と等しくない場合、以降のアクションを実行せずに終了します。
 
 
-|  Label |  function  |
+|  ラベル |  機能  |
 | ----   | ---- |
-| name | Specify the variable name being compared. |
-| nvalue | Set the integer value with which you wish to compare. |
+| 名前 | 指定する変数名 |
+| 数値 | 比較する整数値を設定してください。 |
