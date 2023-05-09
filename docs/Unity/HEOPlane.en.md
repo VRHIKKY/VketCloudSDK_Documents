@@ -3,6 +3,8 @@
 ![HEOPlane](img/HEOPlane.jpg)
 
 HEOPlane lets you instantiate image files.
+The file format must always be in jpg format.
+For more details, please refer to the [Unity Guidelines](../WorldMakingGuide/UnityGuidelines.md).
 
 |  Label |  function  |
 | ----   | ---- |

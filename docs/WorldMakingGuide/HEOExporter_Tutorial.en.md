@@ -27,6 +27,9 @@ If you wish to export again, manually delete the tex and tex_sample folders firs
 
 If there are no problems with the texture file, the export process is done. If you want VketCloud to load these files, copy the exported files and folders.
 
+!!! Note tip
+    Objects exported as .heo can be included in the BuildAndRun output by setting them from HEOObject. For how to use HEOObject, please see [here](../Unity/HEOObject.md).
+    
 Below is an example HEO file loaded in VketCloud.
 
 <img src="img/SampleHEO.jpg">

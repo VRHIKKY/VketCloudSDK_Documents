@@ -3,7 +3,7 @@
 シーンのビルド方法について解説します。
 
 ## ビルドと実行
-VketCloudSDKでシーンをビルドするには、必要コンポーネント（[こちら](Unity/OperatingEnvironment.html)）を配置したことを確認し、VketCloudSDK > Build And Run からビルドを実行してください。  
+VketCloudSDKでシーンをビルドするには、必要コンポーネント（[こちら](WorldBasicComponents.md)）を配置したことを確認し、VketCloudSDK > Build And Run からビルドを実行してください。  
   
 ![BuildAndRun](img/BuildAndRun.jpg)  
 

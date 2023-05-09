@@ -1,9 +1,12 @@
 There are still some functions that are not available in Vket Cloud, such as global illumination.
 Apply the below settings to make your Unity Scene look closer to the final Vket Cloud output.
 
+## About Global Illumination
+VketCloud does not support real-time global illumination, so please express it with lightmaps. See [Unity Guidelines/Lightmaps](../WorldMakingGuide/UnityGuidelines.md#_6) (If the appearance differs between Unity and VketCloud, it's mostly likely due to issues around GI).
+
 ## Set Skybox to None
 Unity's Skybox setting under the Light Setting applies global illumination to the Scene and alters its look. Set this to None.
-It's still fine to set a Skybox when capturing your reflection probes. ([Create Reflection Probe](./he_ReflectionProbe.md))
+It's still fine to set a Skybox when capturing your reflection probes. ([Create Reflection Probe](../WorldMakingGuide/ReflectionProbe.md))
 
 <img src="he_image/SetSkyboxToNone.jpg">
 

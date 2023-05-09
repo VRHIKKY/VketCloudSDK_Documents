@@ -8,5 +8,4 @@
     ![meshcollider_separate](img/meshcollider_separate.jpg)
    
 2. 書き出したいメッシュコライダーがアタッチされたオブジェクトにHEOMeshColliderをアタッチします。
-
     ![attach_heomeshcollider](img/attach_heomeshcollider.jpg)

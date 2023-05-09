@@ -1,11 +1,13 @@
 
 # HEOWorldSetting
-![HEOWorldSetting](img/HEOWorldSetting.jpg)
+
 
 HEOWorldSetting manages your World's basic info.
 It lets you set basic, redering, and avatar settings.
 
 # Basic Info
+![BasicInfo](img/HEOWorldSetting_BasicInfo.jpg)
+
 |  Label |  function  |
 | ----   | ---- |
 |  World Name |  Set the name of the World. It will mainly be used for the URL. |

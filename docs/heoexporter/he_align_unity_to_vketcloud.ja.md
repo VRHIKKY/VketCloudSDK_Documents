@@ -1,11 +1,11 @@
 VketCloudではglobal illuminationなどまだ一部対応できていない機能があります。下記の設定をすることでUnity側とVketCloud側の見た目を揃えることができます。
 
 ## グローバルイルミネーションについて
-VketCloudではリアルタイムのグローバルイルミネーションをサポートしていないので、そちらはライトマップで表現してください。[Unity制作ガイドライン/ライトマップ](./he_UnityGuidelines.ja.md#_6) (UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
+VketCloudではリアルタイムのグローバルイルミネーションをサポートしていないので、そちらはライトマップで表現してください。[Unity制作ガイドライン/ライトマップ](../WorldMakingGuide/UnityGuidelines.md#_6) (UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
 
 ## SkyboxをNoneにする
 Skyboxを使用していないのであればUnityではLight SettingsのSkyboxの色味がglobal illuminationで乗ってしまうのでNoneにしてください  
-※リフレクションプローブの撮影でSkyboxを使用する時はオンにしていただいて大丈夫です([リフレクションプローブの作成](./he_ReflectionProbe.md))
+※リフレクションプローブの撮影でSkyboxを使用する時はオンにしていただいて大丈夫です([リフレクションプローブの作成](../WorldMakingGuide/ReflectionProbe.md))
 
 <img src="he_image/SetSkyboxToNone.jpg">
 

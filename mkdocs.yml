@@ -190,7 +190,7 @@ nav:
     - Build And Run : FirstStep/BuildAndRun.md
     - World Upload : FirstStep/WorldUpload.md
 - World Making Guide:
-    - Unity Guidelines : WorldMakingGuide/he_UnityGuidelines.md
+    - Unity Guidelines : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
     - How to Set Collider : WorldMakingGuide/Collider.md 
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
