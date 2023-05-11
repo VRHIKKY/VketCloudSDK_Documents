@@ -101,6 +101,7 @@ plugins:
           Unity Guidelines : VketCloudの仕様制限
           ReflectionProbe: 反射を写り込ませるには
           Texture Compression: テクスチャ圧縮
+          Physics Engine: 物理エンジン
           Auto Texture Compression: 自動テクスチャ圧縮
           Get closer to the look of VketCloud to Unity: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
@@ -195,6 +196,7 @@ nav:
     - Unity Guidelines : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
     - How to Set Collider : WorldMakingGuide/Collider.md 
+    - Physics Engine : WorldMakingGuide/PhysicsEngine.md
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
