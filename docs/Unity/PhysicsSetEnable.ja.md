@@ -10,6 +10,5 @@
 | フラグ | 有効・無効化の判定　|
 
 !!! Note Info
-    This is only effective for objects where the physics engine is enabled.
-    For how to use the physics engine, please refer to the following:
-    - [PhysicsEngine](../WorldMakingGuide/PhysicsEngine.md)
+    物理エンジンが有効なオブジェクトに対してのみ有効です。
+    物理エンジンの使い方については[PhysicsEngine](../WorldMakingGuide/PhysicsEngine.md)を参照ください。
