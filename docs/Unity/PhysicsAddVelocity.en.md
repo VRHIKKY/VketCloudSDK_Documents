@@ -2,7 +2,7 @@
 
 The function adds velocity to an object.
 
-[PhysicsAddVelocity](img/PhysicsAddVelocity.en.jpg)
+![PhysicsAddVelocity](img/PhysicsAddVelocity.en.jpg)
 
 |  Label |  Function  |
 | ----   | ---- |

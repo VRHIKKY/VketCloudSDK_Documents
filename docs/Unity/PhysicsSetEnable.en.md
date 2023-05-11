@@ -2,7 +2,7 @@
 
 This is a function to enable or disable physics calculations.
 
-[PhysicsAddVelocity](img/SetEnable.en.jpg)
+![PhysicsAddVelocity](img/SetEnable.en.jpg)
 
 | Label |  Function  |
 | ----   | ---- |

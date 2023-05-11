@@ -2,7 +2,7 @@
 
 速度を加えます。
 
-[PhysicsAddVelocity](img/PhysicsAddVelocity.ja.jpg)
+![PhysicsAddVelocity](img/PhysicsAddVelocity.ja.jpg)
 
 |  ラベル |  機能  |
 | ----   | ---- |

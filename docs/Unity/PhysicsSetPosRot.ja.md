@@ -3,7 +3,8 @@
 ##　位置をセット
 物理演算上の位置を変更します。
 
-[SetPosition](img/SetPosition.ja.jpg)
+![SetPosition](img/SetPosition.ja.jpg)
+
 |  ラベル |  機能  |
 | ----   | ---- |
 | 名前 | アクションを適応する物理オブジェクトの名前を指定してください。 |
@@ -11,7 +12,8 @@
 
 ## 回転をセット
 物理演算上の回転を変更します。
-[SetRotation](img/SetRotation.ja.jpg)
+
+![SetRotation](img/SetRotation.ja.jpg)
 
 |  ラベル |  機能  |
 | ----   | ---- |

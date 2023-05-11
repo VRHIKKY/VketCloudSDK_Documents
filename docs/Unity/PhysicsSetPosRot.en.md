@@ -3,7 +3,8 @@
 ## Set Position
 Changes the position in the physics calculation.
 
-[SetPosition](img/SetPosition.en.jpg)
+![SetPosition](img/SetPosition.en.jpg)
+
 |  Label |  Function  |
 | ----   | ---- |
 | Name | Please specify the name of the physics object to which the action applies. |
@@ -11,7 +12,8 @@ Changes the position in the physics calculation.
 
 ## Set Rotation
 Changes the rotation in the physics calculation.
-[SetRotation](img/SetRotation.en.jpg)
+
+![SetRotation](img/SetRotation.en.jpg)
 
 |  Label |  Function  |
 | ----   | ---- |
