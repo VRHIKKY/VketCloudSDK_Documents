@@ -22,7 +22,9 @@ theme:
   features:
     - navigation.indexes
     - header.autohide
-
+  footer:
+    logo: images/HikkyLogo.png
+    copyright: ©HIKKY Co.,Ltd. All rights reserved.
   analytics:
     gtag: G-05NPW204YY
   shortcuts:
@@ -31,8 +33,10 @@ theme:
     previous: 80 # p
     search: 83   # s
   nav_style: dark
+  custom_dir: custom_theme
 
 extra:
+  generator: false
   version:
     provider: mike
     default: latest
