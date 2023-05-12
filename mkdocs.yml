@@ -44,6 +44,10 @@ extra:
     language: 'ja'
   homepage: https://www.hikky.co.jp/vketcloud
 
+extra_files:
+  - docs/extra/googlef608c5a0f667bcda.html
+  - docs/extra/latest.html
+
 use_directory_urls: false
 
 plugins:
