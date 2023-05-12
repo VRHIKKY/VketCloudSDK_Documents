@@ -1,15 +1,9 @@
-# Setting Skybox
-  
-Unity's SkyBox settings cannot be directly exported with HEOExporter.
-  
-Instead, you may place and output a huge object (about 300m) in which the face of Box or Sphere is reversed.
+VketCloudSDK cannot output Unity SkyBox. Therefore, instead, we need to place a Box or Sphere object whose face is reversed and output it as a pseudo skybox.
+!!! note
+     If you select "Unlit/Texture" for the material shader, the object will be displayed as is, without shadows.
 
-!!! note info
-    For this object, please select "Unlit/Texture" for the material.  
-    
-    ![Skybox](img/Skybox.jpg)  
 
-    If you download the tutorial scene (Basic) from the control panel (VketCloudSDK menu > Controll Panel) , a skybox sample object will be downloaded as well.  
-    Copy and use it in your own projects!
+!!!note tip
+     You can obtain and use the Skybox sample by installing the tutorial scene (Basic) from the control panel (VketCloudSDK menu > Control Panel).
 
-    ![ControllPanel](img/ControlPanel.jpg)
+![Skybox](img/Skybox.png)

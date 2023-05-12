@@ -1,66 +1,56 @@
-## Introduction
-The World data used in VketCloud can be set up inside Unity to be exported by HEOExporter.
-However, not all functions of Unity can be used, hense needing some adjustments.
+# Specification Limit of Vket Cloud
+
+All world models and assets used in Vket Cloud are set up in Unity. Since not all Unity functions can be used in Vket Cloud, however, adjustments must be made according to the specification limits as below.
 
 ## Polygon
-The World model needs to be under 800,000 triangles.
+Please keep the total number of models in the world to 800,000 triangles or less.
 
 ## Texture
-* PNG images, equal to or less than 2048x2048 in resolution.
-* A square/rectangle of which the resolution is a number to the power of two.
-e.g. 2048x2048, 1024x1024, or 512x512
-* bit depth must be either 24 bits or 32 bits.
-* File size must be less than 80MB.
-* The extention must be .png in lowercase. An error will occur if capitalized.
+* PNG with size less than 2048x2048
+* Power-of-two sized squares (2048x2048, 1024x1024, 512x512, etc.) or power-of-two sized rectangles
+* Bit depth is 24bit or 32bit
+* 80MB or less in png
+* Make the extension lowercase (.png). If it is ".PNG", an error may occur when uploading to the server.
 
 ## Texture Compression
-Texture compression is one method Vket Cloud requires to peform smoothly. Check [here](../heoexporter/he_TextureCompression.md) for more details.
+VketCloud compresses textures as one of the ways to reduce weight. See [here](../heoexporter/he_TextureCompression.md) for more information.
 
-## Reflection Probes
-You may use Unity's Reflection Probes in Vket Cloud. Check [here](ReflectionProbe.md) for more details.
+## Reflection probes
+Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionProbe.md) for more information.
 
 ## Lightmap
-
-<img src="img/LightMapLinearColorSpace.jpg">
-
-* Set to Android platform. (For dLDR encoding)
-* Max Lightmap Size needs to be equal to or less than 2048.
-* Disable lightmap compression.
-* Format: RGB24 or RGBA32 Compressed: None
-
-<img src="img/LightMapFormat.jpg">
+* Switch to Android (dLDR format) or PC (RGBM format) platform
+* Make sure LightMap Encoding in Other Settings is set to "Low Quality" for Android platform and "Normal Quality" for PC platform.
+     * Note that if the LightMap Encoding is wrong, the lightmap may be overexposed.
+     * Real-time global illumination is not supported, so please use lightmaps. Most discrepancies between what looks in Unity window and Vket Cloud are caused by Global Illumination settings.
+* Check if Color Space in Other Settings is set to "Linear"
+<img src="img/スクリーンショット 2022-05-27 193242.png">
+* Max Lightmap Size should be 2048 or less
+* Disable lightmap compression
+* Make sure that Format is set to RGB24 or RGBA32 and Compressed: None
+<img src="img/スクリーンショット 2021-06-16 105720.png">
 
 ## Shaders
-* Standard 
-* Autodesk Interactive　
-* Unlit
-* UnlitWF（Only available for double-sided purposes）
+-Standard
+-Autodesk Interactive　
+-Unlit
+- UnlitWF (supports double-sided display only)
+
+!!! note
+     Metallic textures from Autodesk Interactive cannot be used due to the number of texture slots. Use the Standard Shader when using a combination of metallic and roughness textures.
 
 ## Collider
-* Supports only BoxColliders and MeshColliders. MeshColliders are expensive to compute, so only use when really necessary.
-BoxColliders should be set on ceilings and other other unreachable surfaces too. This prevents Objects from getting in between your avatar and the camera when in TPS mode. 
-Check [here](Collider.md) for details on how to export your custom MeshCollider.
-* SphereCollider is used only to detect clicks/taps. (For posters, etc.)
-* If the colliders are nested too deep inside the Hierarchy, they might not properly export.
-* Make sure to set the height of colliders well. Avatars will step up a collider if it's too low, and a tall one will block your camera.
-* Always disable MeshRenderers on your colliders. If a disabled MeshRenderer contains 0 Materials, there will be an export error.
+* Only BoxCollider and MeshCollider are supported for collision detection. Note that MeshCollider takes very heavy load on processing. Avoid MeshCollider if possible. BoxCollider is also used to prevent objects getting in the way between the player avatar and the camera in TPS mode. As such, set BoxColliders on unreachable objects like the ceiling. See [here](../HEOComponents/HEOMeshCollider.md) for how to export a MeshCollider.
+* SphereCollider is used only for click (tap) judgment. (Poster, etc.)
+* If the hierarchy is nested deeply, colliders may not be exported upon BuildandRun.
+* Colliders lower than the knee can be climbed. But be careful, too large colliders may hamper the movement of the camera.
+* Make sure to disable the MeshRenderer. If you set the size of Materials to 0 and hide it, an output error will occur.
 
 ## Skybox
-* Skybox is not supported. Use an inverted dome instead.
+* Skybox is not supported. Please avoid the sky or use celestial sphere object instead.
 
 ## Scale
-* Negative scales are ignored.
+* Negative scale is ignored. If you want to turn objects inside out, please rotate it 180 degrees.
 
 ## Object
-When exporting through HEOExport using object selection, make sure to create one parent Object that contains all other Objects.
-
-<div> 
-    <div>
-        <img src="img/ObjectPutTogether.jpg">
-        <p>Should be put together as the above.</p>
-    </div>
-    <div>
-        <img src="img/ObjectTwoParentObject.jpg">
-        <p>If there are more than two parent Objects, they need to be put together as one.</p>
-    </div>
-</div>
+HEOExport does not support multiple selection. To export as a single object, create a parent object, store the target object inside it, and export the parent object.

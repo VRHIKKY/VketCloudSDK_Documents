@@ -1,20 +1,7 @@
-
 # Set up your Account
 
 ## Register the VketAccount
-To use Vket Cloud SDK, you will first need to register your account at [VketAccount](https://account.vket.com/?locale=en){target=_blank}.
-  
-## Getting your SDK pass    
-1. Login to [Vket Cloud Lab](https://lab.vketcloud.com/en/){target=_blank}
-![registerVket](img/registerVket_en.jpg)
-  
+To use Vket Cloud SDK, you will first need to register your account. If you don't have an Vket Account, please register one at [VketAccount](https://account.vket.com/?locale=en){target=_blank}.
 
-2. From MyPage, read through and check the VketCloud SDK Beta test Terms of Service. Press Vket Cloud SDK Betatest to register.   
-![registerBETA](img/registerBETA_en.jpg)　
-  
-
-3. Once you are registered, your build password will be shown.  
-This will be used inside Unity later.
-  
-![buildlockpassword](img/buildlockpassword_en.jpg)
-``` 
+## Register license ID
+There are multiple plans for using the SDK. Please register a new license at [here](https://cloud.vket.com/#howto){target=blank}.

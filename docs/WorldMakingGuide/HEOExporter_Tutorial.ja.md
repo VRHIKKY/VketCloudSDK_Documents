@@ -13,7 +13,7 @@ HierarchyでVketCloudSampleオブジェクトを選択した状態で、ウィ�
 
 <img src="img/SelectSample.jpg">
 
-成功すると、Consoleに上記のように「Exported」とポリゴン数が出力されます。
+成功すると、Consoleに以下のように「Exported」とポリゴン数が出力されます。
 
 <img src="img/NumberOfPolygons.jpg">
 

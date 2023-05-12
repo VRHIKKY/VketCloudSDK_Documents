@@ -1,31 +1,32 @@
-#HEO Collider
+# HEO Collider
 ![HEOCollider](img/HEOCollider.jpg)
 
-HEOColider is a component that allows you to set how the Box Collider behaves.
+HEO Collider is a component to set what kind of collision detection a collider has on Vket Cloud.
 
 | Label | Function |
 | ---- | ---- |
-| Collider Type | Specifies the type of collider. |
-| Collider Target | Specifies the target. |
-| Use Physics | Enables physics engine for the Box Collider. |
-| Fixed | Allows you to fix the position of the Box Collider. |
-| Enable Body | Allows you to choose whether to enable physics calculations when the object is loaded. |
-| Mass | Adjusts the mass parameter. |
-| Restitution | Adjusts the restitution parameter. |
+| `Collider type` | Specifies the type of collider. |
+| `Collider target` | Specifies the target. |
+| `physics` | Enables physics engine for the Box Collider. |
+| `Fixed` | Fix the position of the Box Collider. |
+| `Enable body` | You can choose whether to enable physics when the object is loaded. |
+| `Mass` | Adjust the weight parameter. |
+| `Restitution` | Adjust the coefficient of restitution. |
 
-## Collider Type
+## Collider type
 | Type | Function |
 | ---- | ---- |
-| Collider | Serves the role of a collider. |
-| Clickable | Allows the player to click on it. |
-| Area | A collider that can be passed through. By combining with HEOAreaCollider, you can set any action when entering the range. |
-| Occlusion | Enables occlusion when touched. |
-| Reflection Probe | Enables reflection probe when touched. |
-| In View | Handles the judgement of whether it is in the field of view or not. |
+| `Collider` | Plays the role of a collider. |
+| `Clickable` | Allows players to click. |
+| `Area` | A collider that can be passed through. By combining with HEOAreaCollider, you can set any action when the player get inside the area. |
+| `Occlusion` | Enable occlusion on contact. |
+| `Reflection Probe` | Enable reflection probes on touch. |
+| `in View` | Handled when you want to judge whether or not the object entered the field of view |
 
-## Collider Target
-| Target |
-| ---- |
-| None |
-| Avatar |
-| Camera |
+
+## Collider target
+| Target | Function |
+| ---- | ---- |
+| `None` | Does not restrict the collision detection. |
+| `Avatar` | Collision detection is enabled only for avatars. |
+| `Camera` | Collision detection is enabled only for the camera. It is used to prevent the camera from digging into the wall. |

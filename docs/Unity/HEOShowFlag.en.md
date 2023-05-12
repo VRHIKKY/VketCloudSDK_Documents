@@ -1,18 +1,19 @@
-# HEOShowFlag
+#HEOShowFlag
 
-You can use HEOShowFlag when you want to show/hide objects on the HEO Field.
+The component can be used to display or hide an object on HEO Field.
 
 ![HEOShowFlag](img/HEOShowFlag.jpg)
 
-| Label | Function |
+| Label | function |
 | ---- | ---- |
-| Show | Set false to hide |
+| show | False to hide |
+
 
 ![HEOShowFlag_HideField](img/HEOShowFlag_HideField.jpg)
 
 ![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.jpg)
 
-## Note
-- The object can be dynamically shown or hidden by using ActionTrigger's [Show/HideNode](../Unity/ShowHideNode.en.md) or other methods.
-- The component only hides its appearance. Collider and other functions remain effective.
 
+!!! note info
+    - The object can be shown by using ActionTrigger's [Show/HideNode](../Unity/ShowHideNode.en.md) or other methods.
+    - The component only hides its appearance. Colliders and other functions remain effective.

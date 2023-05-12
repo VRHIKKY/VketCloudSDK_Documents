@@ -1,10 +1,10 @@
-# Usage of HEM Animation Converter
+# How to Use HEM Animation Converter
 In VketCloud, the type of animation must be Legacy in Unity. Normally, the conversion from Humanoid to Legacy animation in Unity can only be done on the same character model due to differences in bone names and the structure. HEM Animation Converter can convert the Humanoid animation of character "modelA" to a Legacy animation of character "modelB".
 
 ## How to use
 ### 1. Select HEM Animation Converter
 Select "HEM Animation Converter" from the "VketCloud SDK" tab on the Window toolbar.
-![altdiscription for toolbar](images/1.jpg)
+![altdiscription for toolbar](images/1.png)
 
 ### 2. Set variables
 Variables must be set before animation conversion. The meaning of each variable is as follows:
@@ -16,9 +16,9 @@ Animation Name...Name of the converted animation file.
 Apply SubBone Animation...Converts the subbones of the source animation to the target model. However, since Model A and Model B have different bone structures, they usually cannot be used as they are. If used, they must have the same parent-child relationship and bone names.
 Export HEM File...Converts the converted Legacy animation to HEM format.
 The following figure shows a Humanoid animation (Target) originally created for Vket2. It cannot be assigned to the Legacy Rig type Vket-Chan No. 1 (Target Model) as it is. If the appropriate parameters are set, it will look like the figure below.
-![altSettingVariables](images/2.jpg)
-![altRootBone](images/3.jpg)
-![altParameters](images/4.jpg)
+![altSettingVariables](images/2.png)
+![altRootBone](images/3.png)
+![altParameters](images/4.png)
 
 ### 3. Conversion Animation
 After all variables have been set, press the Convert Animation button.
@@ -28,7 +28,7 @@ The conversion process will take place for a few seconds. After the conversion p
 Let's play back the converted animation as a test. First, convert the Rig type of the Humanoid Rig type character model used for the conversion model to Legacy, and assign the converted Legacy animation.
 Originally, the Humanoid animation was for Vket-chan No. 2 on the left, but after conversion, it was re-converted for the Legacy animation that Vket-chan No. 1 can use. If the conversion was successful, the same pose should play as shown in the figure.
 
-![altConfirm Converted Animation](images/4.jpg)
+![altConfirm Converted Animation](images/5.png)
 
 ### 5. Limitation
 5. Other component animations (e.g., object OnOff) cannot be converted

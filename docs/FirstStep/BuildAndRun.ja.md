@@ -3,7 +3,7 @@
 シーンのビルド方法について解説します。
 
 ## ビルドと実行
-VketCloudSDKでシーンをビルドするには、必要コンポーネント（[こちら](WorldBasicComponents.md)）を配置したことを確認し、VketCloudSDK > Build And Run からビルドを実行してください。  
+VketCloudSDKでシーンをビルドするには、[必要コンポーネント](WorldBasicComponents.html)を配置したことを確認し、VketCloudSDK > Build And Run からビルドを実行してください。  
   
 ![BuildAndRun](img/BuildAndRun.jpg)  
 
@@ -12,11 +12,11 @@ VketCloudSDKでシーンをビルドするには、必要コンポーネント�
 
     - VketCloudSDK > キャッシュクリア
 
-    このほかにもさまざまな要因でビルドに失敗している可能性があります。ビルドエラーが解消しない場合は、エラー事例をまとめたトラブルシュート（[こちら](../troubleshooting/BuildError.md)）をご覧ください。
+    このほかにもさまざまな要因でビルドに失敗している可能性があります。ビルドエラーが解消しない場合は、エラー事例をまとめた[トラブルシュート](../troubleshooting/BuildError.md)をご覧ください。
 
 ビルドが成功したら、自動的にブラウザに遷移します。シーンの内容が反映されているかテストしてください。
 
-![BuildAndRun](img/buildsuccess.jpg)  
+![BuildAndRun](img/buildsuccess.png)  
 
 
 !!! note tip "「ビルドと実行」で起きること"
@@ -30,4 +30,4 @@ VketCloudSDKでシーンをビルドするには、必要コンポーネント�
     |  \release\data\Field\[ワールド名]\ [オブジェクト名]  |  [オブジェクト名].heo  |  ワールドの3Dオブジェクト  |
     |  \release\data\Scene  |  [ワールド名].json  |  ワールド構成を記述したシーンデータ  |
 
-    なお、**releaseフォルダの中身を直接書き換えたものをアップロードする行為はライセンスで固くお断りしています**。あくまで、デバッグ手段の一つとしてご利用ください。
+    なお、**releaseフォルダの中身を直接書き換えたものをアップロードする行為はライセンス規約で固くお断りしています**。あくまで、デバッグ手段の一つとしてご利用ください。

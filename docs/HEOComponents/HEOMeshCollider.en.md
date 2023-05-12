@@ -1,11 +1,12 @@
 # HEOMeshCollider
-![MeshCollider](img/HEOMeshCollider.jpg)
+![](img/HEOMeshCollider.png)
 
-HEOMeshCollider generates a collider based on a mesh from a mesh asset.
+Generates a collider based on a mesh from a mesh asset.  
 
-## Export Procedure
-1. Separate the mesh and the mesh collider.
-    ![meshcollider_separate](img/meshcollider_separate.jpg)
+## How to export with Mesh Collider
+1. Split the mesh and mesh collider
+    ![meshcollider_separate](img/meshcollider_separate.png)
+   
+2. Attach HEOMeshCollider to the object attached with the target Mesh Collider.
 
-2. Attach the HEOMeshCollider to the object with the mesh collider you want to export.
-    ![attach_heomeshcollider](img/attach_heomeshcollider.jpg)
+    ![attach_heomeshcollider](img/attach_heomeshcollider.png)

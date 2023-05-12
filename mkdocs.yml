@@ -22,9 +22,7 @@ theme:
   features:
     - navigation.indexes
     - header.autohide
-  footer:
-    logo: images/HikkyLogo.png
-    copyright: ©HIKKY Co.,Ltd. All rights reserved.
+
   analytics:
     gtag: G-05NPW204YY
   shortcuts:
@@ -33,7 +31,6 @@ theme:
     previous: 80 # p
     search: 83   # s
   nav_style: dark
-  custom_dir: custom_theme
 
 extra:
   version:
@@ -43,10 +40,6 @@ extra:
     language: 'en'
     language: 'ja'
   homepage: https://www.hikky.co.jp/vketcloud
-
-extra_files:
-  - docs/extra/googlef608c5a0f667bcda.html
-  - docs/extra/latest.html
 
 use_directory_urls: false
 
@@ -100,11 +93,11 @@ plugins:
           GUI: GUI
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
-          Unity Guidelines : VketCloudの仕様制限
+          Specifications Limits : VketCloudの仕様制限
           ReflectionProbe: 反射を写り込ませるには
           Texture Compression: テクスチャ圧縮
           Auto Texture Compression: 自動テクスチャ圧縮
-          Get closer to the look of VketCloud to Unity: UnityとVketCloudの見た目を揃える
+          Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponents: HEOコンポーネント
           About VketCloudSDK: VketCloudSDKについて
@@ -116,43 +109,6 @@ plugins:
           Loading stops: ブラウザの読み込みが止まる
           Actions: アクションについて
           Actions Overview: アクションの概要
-          OpenWeb: Webを開く
-          Play/StopItem: アイテム再生/停止
-          Show/HideItem: アイテム表示/非表示
-          Play/StopObject: オブジェクト再生/停止
-          Show/HideObject: オブジェクト表示/非表示
-          Show/HideNode: ノード表示/非表示
-          Enable/DisableClickableNode: クリック可能ノード有効/無効化
-          Enable/DisableCollider: コライダー有効/無効化
-          Wait: 待機
-          SetPosRelativePlayer: プレイヤー相対位置にセット
-          MoveTo: 移動
-          Warp: ワープ
-          JumpWorld: ジャンプワールド
-          Emote: エモート
-          Motion: モーション
-          NextMotion: 次のモーション
-          AddVar: 値の追加
-          SetVar: 値の設定
-          If A == B: 等しい場合
-          If A != B: 等しくない場合
-          If A >= B: 小さい場合
-          If A <= B: 大きい場合
-          Random: ランダム
-          StopVideo: ビデオ停止
-          SetCookieText: クッキーテキストの設定
-          OpenComicViewer: コミックビューワーを表示
-          ShowLayer: レイヤーを表示
-          CallJavaScript: JavaScriptを呼び出す
-          CallScript: HeliScriptを呼び出す
-          Enter/LeaveVoiceGroup: 音声グループに追加/から退出
-          FadeOut/In: フェードアウト/イン
-          WhiteOut/In: ホワイトアウト/イン
-          GTag: GTag
-          PhysicsSetPos/Rot: 位置/回転をセット
-          PhysicsSetEnable: 物理有効化
-          PhysicsClear/AddForce: 力を削除/追加
-          PhysicsAddVelocity: 速度を追加
           ActionNodeGraph: アクションノードグラフ
           Particle Editor : パーティクルエディター
           ParticleEditor Overview: パーティクルエディター概要 
@@ -164,7 +120,7 @@ plugins:
           Animation Converter : アニメーションコンバーター
           Trouble shooting: トラブルシューティング
           Build Error: ビルドエラー
-          Browser is not open: ブラウザが立ち上がらない
+          Browser does not open: ブラウザが立ち上がらない
           Changes are not applied: 変更が更新されない
           First Step: ワールド制作の基本
           Change Log: チェンジログ
@@ -174,7 +130,7 @@ plugins:
           World Making Guide: ワールド制作ガイド
           Avatar File: アバターファイル
           Utility Tools: 補助ツールの使い方
-          Login SDK: SDKにログインする
+          Login to SDK: SDKにログインする
 
 markdown_extensions:
     - admonition
@@ -187,16 +143,16 @@ nav:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
-    - Login SDK: AboutVketCloudSDK/LoginSDK.md
+    - Login to SDK: AboutVketCloudSDK/LoginSDK.md
     - How to use avatar : AboutVketCloudSDK/SetupAvatar.md
 - First Step:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
     - World Upload : FirstStep/WorldUpload.md
 - World Making Guide:
-    - Unity Guidelines : WorldMakingGuide/UnityGuidelines.md
+    - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
-    - How to Set Collider : WorldMakingGuide/Collider.md 
+    #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
@@ -236,7 +192,7 @@ nav:
 - Actions: 
     #- ActionNodeGraph: Unity/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Unity/ActionsOverview.md
-    - OpenWeb: Unity/Openweb.md
+    - Openweb: Unity/Openweb.md
     - Play/StopItem: Unity/PlayStopItem.md
     - Show/HideItem: Unity/ShowHideItem.md
     - Play/StopObject: Unity/PlayStopObject.md
@@ -247,6 +203,7 @@ nav:
     - Wait: Unity/Wait.md
     - SetPosRelativePlayer: Unity/SetPosRelativePlayer.md
     - MoveTo: Unity/MoveTo.md
+    - Random: Unity/Random.md
     - Warp: Unity/Warp.md
     - JumpWorld: Unity/JumpWorld.md
     - Emote: Unity/Emote.md
@@ -258,30 +215,19 @@ nav:
     - If A != B: Unity/IfNotEqual.md
     - If A >= B: Unity/IfGreaterThanOrEqual.md
     - If A <= B: Unity/IfLessThanOrEqual.md
-    - Random: Unity/Random.md
     - StopVideo: Unity/StopVideo.md
     - SetCookieText: Unity/SetCookieText.md
     - OpenComicViewer: Unity/OpenComicViewer.md
     - ShowLayer: Unity/ShowLayer.md
     - CallJavaScript: Unity/CallJavaScript.md
-    - CallScript: Unity/CallScript.md
     - Enter/LeaveVoiceGroup: Unity/EnterLeaveVoiceGroup.md
-    - FadeOut/In: Unity/FadeOutIn.md
     - WhiteOut/In: Unity/WhiteOutIn.md
-    - GTag: Unity/GTag.md
-    - PhysicsSetPos/Rot: Unity/PhysicsSetPosRot.md
-    - PhysicsSetEnable: Unity/PhysicsSetEnable.md
-    - PhysicsClear/AddForce: Unity/PhysicsClearAddForce.md
-    - PhysicsAddVelocity: Unity/PhysicsAddVelocity.md
+    - FadeOut/In: Unity/FadeOutIn.md
 - HeliScript:
     - Built-in Types:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
         - List: hs/hs_list.md
-    - Statements and flow control:
-        - Declarations and definitions: hs/hs_statement_def.md
-        - Control Statement: hs/hs_statement_constrol.md
-        - Operator: hs/hs_operator.md
     - Class: hs/hs_class.md
     - Component: hs/hs_component.md
     - Built-in Classes And Functions:
@@ -297,12 +243,15 @@ nav:
         - NamePlate: hs/hs_system_function_nameplate.md
         - JavaScript: hs/hs_system_function_js.md
         - GUI: hs/hs_system_function_gui.md
-    
+    - Statements and flow control:
+        - Declarations and definitions: hs/hs_statement_def.md
+        - Control Statement: hs/hs_statement_constrol.md
+        - Operator: hs/hs_operator.md
 - Trouble shooting:
     - Build Error: troubleshooting/BuildError.md
-    - Browser is not open: troubleshooting/BrowserNotOpen.md
+    - Browser does not open: troubleshooting/BrowserNotOpen.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Get closer to the look of VketCloud to Unity : heoexporter/he_align_unity_to_vketcloud.md
+    - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Change Log:
     - v4.1: changelog/changelog-4.1.md
     - v4.0: changelog/changelog-4.0.md

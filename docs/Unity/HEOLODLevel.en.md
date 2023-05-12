@@ -1,10 +1,10 @@
 # HEOLODLevel
-HEOLODLevel is a function that allows you to switch meshes to be exported as heo without disassembling assets with LOD Groups set.
-If LOD0 is set, only objects set to LOD 0 in the LOD Group will be output.
+HEOLODLevel is a function that to switch meshes to be exported as heo without disassembling assets with LOD Groups set.
+For example, if LOD0 is set, only objects set to LOD 0 in the LOD Group will be exported.
 
 ![HEOLODLevel](img/HEOLODLevel.jpg)
 
-Options for Export LOD Level
+Options for LOD levels to export
 
 | Options |
 | ---- |
@@ -19,6 +19,6 @@ Options for Export LOD Level
 | ALL |
 | NONE |
 
-## Note
-- The default setting is set to "ALL"
-- LOD switching is not possible on VketCloud.
+!!! note caution
+     - By default it is set to "ALL".
+     - LOD switching is not attainable on Vket Cloud.
