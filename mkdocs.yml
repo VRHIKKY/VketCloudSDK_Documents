@@ -91,6 +91,7 @@ plugins:
           Network: ネットワーク
           NamePlate: ネームプレート
           GUI: GUI
+          TextChat: テキストチャット
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
           Specifications Limits : VketCloudの仕様制限
@@ -111,7 +112,7 @@ plugins:
           Actions Overview: アクションの概要
           ActionNodeGraph: アクションノードグラフ
           Particle Editor : パーティクルエディター
-          ParticleEditor Overview: パーティクルエディター概要 
+          ParticleEditor Overview: パーティクルエディター概要
           About Screen: 操作画面について
           Operation: 操作説明
           Window Info: ウィンドウ解説
@@ -151,7 +152,7 @@ nav:
     - World Upload : FirstStep/WorldUpload.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
-    - Skybox : WorldMakingGuide/Skybox.md 
+    - Skybox : WorldMakingGuide/Skybox.md
     #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
@@ -189,7 +190,7 @@ nav:
     - HEOAreacollider: Unity/HEOAreacollider.md
     - HEOVideoTrigger: Unity/HEOVideoTrigger.md
     - HEOActionTrigger: Unity/HEOActionTrigger.md
-- Actions: 
+- Actions:
     #- ActionNodeGraph: Unity/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Unity/ActionsOverview.md
     - Openweb: Unity/Openweb.md
@@ -243,6 +244,7 @@ nav:
         - NamePlate: hs/hs_system_function_nameplate.md
         - JavaScript: hs/hs_system_function_js.md
         - GUI: hs/hs_system_function_gui.md
+        - TextChat: hs/hs_system_function_textchat.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_constrol.md
@@ -255,7 +257,7 @@ nav:
 - Change Log:
     - v4.1: changelog/changelog-4.1.md
     - v4.0: changelog/changelog-4.0.md
-    - v3.9: changelog/changelog-3.9.md  
+    - v3.9: changelog/changelog-3.9.md
     - v3.8: changelog/changelog-3.8.md
     - v3.7: changelog/changelog-3.7.md
     - v3.6: changelog/changelog-3.6.md

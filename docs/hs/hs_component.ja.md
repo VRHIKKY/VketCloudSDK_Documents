@@ -156,3 +156,10 @@ HEOColliderで「InView」を指定したコライダーが視野内に入った
 
 コンポーネントは同一のアイテムに設定する必要があります。
 
+## コールバック - テキストチャット
+
+```
+public void OnReceiveTextChat(string ID, string PlayerName, string Text)
+```
+
+ユーザーがテキストチャットを送信した場合に呼び出されます。
