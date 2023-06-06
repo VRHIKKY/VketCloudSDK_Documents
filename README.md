@@ -32,6 +32,7 @@
 ![image](https://github.com/VRHIKKY/VketCloudSDK_Documents/assets/50200315/20443dc7-0f59-4603-a441-94e9c4118e5d)
 
 次に、テキストフィールド下方にある`Start Process`をクリックします。
+
 ![image](https://github.com/VRHIKKY/VketCloudSDK_Documents/assets/50200315/30a26ddd-8fc0-41cd-b586-aa43c52c0e53)
 
 クリック後、ブラウザが立ち上がります。ページ更新までに少しラグがあるので、しばしお待ちください。
