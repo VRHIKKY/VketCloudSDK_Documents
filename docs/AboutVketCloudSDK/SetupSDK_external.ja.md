@@ -22,7 +22,7 @@ Unityのメニュー Edit > Project Settings から「Project Settings」ウィ�
 |  URL  |  https://registry.npmjs.com  |
 |  Scope(s)  |  com.hikky.vketcloudsdk  |  
 
-   ![Package](img/package.png)
+   ![Package](img/package.jpg)
   最後に「Save」ボタンを押して設定内容を保存します。
 
 ---
@@ -30,11 +30,11 @@ Unityのメニュー Edit > Project Settings から「Project Settings」ウィ�
 ## Step 3. UPMよりSDKパッケージをインストール
 Unityのメニュー Window > Package Manager から「Packages」ウィンドウを開きます。ウィンドウ上部のドロップダウンより「My Registries」を選択します。
 
-   ![registry](img/registry.png)
+   ![registry](img/registry.jpg)
 
 表示されたリスト内から VketCloudSDK を選択し、「Install」ボタンを押してインストールを開始します。  
   
 
 Unityのメニューに「VketCloudSDK」の項目が追加されていれば導入は完了です。  
 
-   ![header](img/header.png)
+   ![header](img/header.jpg)

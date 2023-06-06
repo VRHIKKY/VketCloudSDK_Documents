@@ -17,7 +17,7 @@ VketCloud allows objects to be loaded when entering a specific area after enteri
 2. Open the load collider item and press "Generate load collider" to generate an area collider to be used for loading.
 3. Set the generated collider for loading as a child object of HEOField that is loaded from the beginning, and adjust the position and range.
 
-![HEOField](img/HEOFieldAutoLoading.png)
+![HEOField](img/HEOFieldAutoLoading.jpg)
 
 ### Unload initiator
 1. Open the Unload Collider item and press "Generate Unload Collider" to generate an area collider to be used for loading.

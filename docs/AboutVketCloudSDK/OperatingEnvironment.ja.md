@@ -30,10 +30,10 @@ VketCloudSDKは、以下のUnity環境が必要です。
 
     3. PCの設定中にあるConfigurationを確認し、API Compatibility Levelの項目をプルダウンメニューから「.NET 4.x」に変更してください。
 
-    ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.png)
+    ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
 
 
     **Color Spaceの変更**
     
     Edit > Project SettingsよりColor SpaceをLinearに変更します。
-    ![liner](img/liner.png)
+    ![liner](img/liner.jpg)

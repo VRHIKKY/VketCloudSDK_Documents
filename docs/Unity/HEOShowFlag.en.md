@@ -2,16 +2,16 @@
 
 The component can be used to display or hide an object on HEO Field.
 
-![HEOShowFlag](img/HEOShowFlag.png)
+![HEOShowFlag](img/HEOShowFlag.jpg)
 
 | Label | function |
 | ---- | ---- |
 | show | False to hide |
 
 
-![HEOShowFlag_HideField](img/HEOShowFlag_HideField.png)
+![HEOShowFlag_HideField](img/HEOShowFlag_HideField.jpg)
 
-![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.png)
+![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.jpg)
 
 
 !!! note info

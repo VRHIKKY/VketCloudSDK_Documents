@@ -15,7 +15,7 @@ To build a scene with VketCloudSDK, make sure you have placed the [required comp
 
 If the build succeeds, the browser will automatically open. Please check if the contents of the scene are properly reflected.
 
-![BuildAndRun](img/buildsuccess.png)
+![BuildAndRun](img/buildsuccess.jpg)
 
 
 !!! note tip "What happens in "Build and Run""

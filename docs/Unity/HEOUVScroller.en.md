@@ -2,7 +2,7 @@
 
 Sets scroll animation on the UV of the object's material.
 
-![HEOUVScroller](img/HEOUVScroller.png)
+![HEOUVScroller](img/HEOUVScroller.jpg)
 
 | Label | function |
 | ---- | ---- |
@@ -16,7 +16,7 @@ Sets scroll animation on the UV of the object's material.
 |X/Y|X (horizontal) direction/Y (vertical) direction scroll amount|
 
 For example, if you set the following
-![HEOUVScrollerSample](img/HEOUVScrollerSample.png)
+![HEOUVScrollerSample](img/HEOUVScrollerSample.jpg)
 ![HEOUVScrollerSampleAnimation](img/UVScrollerSampleAnimation.gif)
 
 2 seconds: 0.5 to the left

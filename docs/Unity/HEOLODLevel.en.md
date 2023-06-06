@@ -2,7 +2,7 @@
 HEOLODLevel is a function that to switch meshes to be exported as heo without disassembling assets with LOD Groups set.
 For example, if LOD0 is set, only objects set to LOD 0 in the LOD Group will be exported.
 
-![HEOLODLevel](img/HEOLODLevel.png)
+![HEOLODLevel](img/HEOLODLevel.jpg)
 
 Options for LOD levels to export
 

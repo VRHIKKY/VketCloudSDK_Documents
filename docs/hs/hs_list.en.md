@@ -23,7 +23,6 @@ It is possible to dynamically change only the size of the list without specifyin
 When the size is expanded, the [initial value] (hs_var.md) of that type is set in areas that have not been set yet.
 
 
-***
 
 
 ## methods

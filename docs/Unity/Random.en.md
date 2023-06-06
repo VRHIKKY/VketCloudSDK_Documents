@@ -1,7 +1,7 @@
 
 # Random
 
-![Random](img/ActionRandom.png)
+![Random](img/ActionRandom.jpg)
 
 When this node is executed, an action from the subsequent actions in the specified range will be randomly chosen and executed.
 For `Range`, specify how many actions after the Random node should be included in the random lottery.

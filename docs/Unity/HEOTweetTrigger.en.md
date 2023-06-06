@@ -1,6 +1,6 @@
 # HEOTweetTrigger
 
-![HEOTweetTrigger](img/HEOTweetTrigger.png)
+![HEOTweetTrigger](img/HEOTweetTrigger.jpg)
 
 HEOTweetTrigger is a component that can specify a tweet action.
 Attach a HEOTweetTrigger to an object that has a Collider attached and use it.

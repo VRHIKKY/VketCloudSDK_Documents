@@ -1,7 +1,8 @@
 
 # 組み込み関数 - JavaScript
 
-HeliScript と JavaScript の連携を実現する関数。
+!!! 情報 Info
+    HeliScript と JavaScript の連携を実現する関数。
 
 
 ***
@@ -36,8 +37,6 @@ function hel_action_bridge(name, text)
     }
 }
 ```
-
-***
 
 
 ## JavaScriptからコンポーネントメソッドを呼び出す

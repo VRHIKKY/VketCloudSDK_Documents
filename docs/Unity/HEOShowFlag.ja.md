@@ -2,15 +2,15 @@
 
 HEOフィールド上のオブジェクトを表示/非表示にする場合に利用します。
 
-![HEOShowFlag](img/HEOShowFlag.png)
+![HEOShowFlag](img/HEOShowFlagJP.jpg)
 
 | ラベル | 機能 |
 | ---- | ---- |
 | `表示` | チェックを外すことで非表示にできます。| 
 
-![HEOShowFlag_HideField](img/HEOShowFlag_HideField.png)
+![HEOShowFlag_HideField](img/HEOShowFlag_HideField.jpg)
 
-![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.png)
+![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.jpg)
 
 !!! note info
     - ActionTriggerの[Show/HideNode](../Unity/ShowHideNode.ja.md)でも、動的に表示/非表示にすることができます。

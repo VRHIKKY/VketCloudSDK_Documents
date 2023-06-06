@@ -1,7 +1,10 @@
 
 # Quaternion class
 
-A class that represents the four elements x, y, z, and w of a quaternion.
+!!! Note Info
+     A class that represents the four elements x, y, z, and w of a quaternion.
+
+***
 
 ## class definition
 
@@ -15,7 +18,6 @@ class Quaternion
 }
 ```
 
-***
 
 ## Quaternion utility functions
 
@@ -50,18 +52,12 @@ global function. Returns the quaternion rotated by rotateRadian around the z-axi
 global function. Generates a quaternion from the triplet of Euler angles x, y, z.
 
 
-***
-
-
-
 ## Constructor
 ### Quaternion()
 `public Quaternion()`
 
 Creates a Quaternion instance with x, y, z elements set to 0 and w element set to 1.
 
-
-***
 
 ## member variables
 
@@ -85,7 +81,6 @@ The z component of the quaternion.
 
 The w component of the quaternion.
 
-***
 
 ## methods
 

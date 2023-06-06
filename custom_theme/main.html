@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'css/styles.css'|url }}">
+{% endblock %}
+
+{% block footer %}
+  <footer class="md-footer">
+    <div class="md-footer__inner md-grid">
+      <div class="md-footer-nav md-grid md-grid--no-gutter">
+        <div class="md-footer-nav__section">
+          {% if config.theme.footer.logo %}
+            <img class="md-footer-logo" src="{{ config.theme.footer.logo | url }}" alt="{{ config.site_name }}" />
+          {% endif %}
+          <div class="md-footer-copyright">
+            {{ config.theme.footer.copyright }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

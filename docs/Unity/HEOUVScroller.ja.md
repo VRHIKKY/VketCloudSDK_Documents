@@ -2,7 +2,7 @@
 
 オブジェクトのマテリアルに設定してあるUVのスクロールアニメーションを設定します
 
-![HEOUVScroller](img/HEOUVScroller.png)
+![HEOUVScroller](img/HEOUVScroller.jpg)
 
 | Label | function |
 | ---- | ---- |
@@ -16,7 +16,7 @@
 | X/Y |X(横)方向/Y(縦)方向のスクロール量 | 
 
 例として下記のような設定にした場合
-![HEOUVScrollerSample](img/HEOUVScrollerSample.png)
+![HEOUVScrollerSample](img/HEOUVScrollerSample.jpg)
 ![HEOUVScrollerSampleAnimation](img/UVScrollerSampleAnimation.gif)
 
 2秒間：左方向に0.5
