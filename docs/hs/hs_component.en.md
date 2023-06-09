@@ -161,3 +161,11 @@ public void OnLeaveViewCollider(string NodeName)
 Called when the collider with HEOCollider specified "InView" enters the field of view or goes out of the field of view.
 
 Components must be set to the same item.
+
+## Callback - Text chat
+
+```
+public void OnReceiveTextChat(string ID, string PlayerName, string Text)
+```
+
+Called when user sent message to the text chat.
