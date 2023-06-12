@@ -26,6 +26,11 @@ The Shader of the material needs to be Unlit/Texture.
 ClipMode refers to data inside the project. </br>
 StringMode refers to the specified URL. It can be used for video streaming, etc.
 
+!!! note caution
+    StringMode is currently able only for internal developers. 
+
+    For playing videos, please use the ClipMode.
+
 ## About video files to use
 Please follow the format below.
 
