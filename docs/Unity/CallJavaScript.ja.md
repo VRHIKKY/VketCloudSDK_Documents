@@ -2,7 +2,7 @@
 # CallJavaScript
 ![CallJavaScript](img/CallJavaScript.jpg)
 
-actionsからJavaScriptの処理をおこないたい時に使用します。
+actionsからJavaScriptの処理を呼び出したい際に使用します。
 
 JavaScript側にfunction hel_action_bridge(name, text)の関数が定義されていればname,textパラメータが指定され呼び出されます。関数定義されていなければ何もおこなわれません。
 
