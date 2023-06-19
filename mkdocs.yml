@@ -95,6 +95,7 @@ plugins:
           Network: ネットワーク
           NamePlate: ネームプレート
           GUI: GUI
+          TextChat: テキストチャット
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
           Specifications Limits : VketCloudの仕様制限
@@ -247,6 +248,7 @@ nav:
         - NamePlate: hs/hs_system_function_nameplate.md
         - JavaScript: hs/hs_system_function_js.md
         - GUI: hs/hs_system_function_gui.md
+        - TextChat: hs/hs_system_function_textchat.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_constrol.md
