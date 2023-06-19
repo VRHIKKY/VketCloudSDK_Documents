@@ -22,6 +22,8 @@ theme:
   features:
     - navigation.indexes
     - header.autohide
+    - search.suggest
+    - search.highlight
   footer:
     logo: images/HikkyLogo.png
     copyright: ©HIKKY Co.,Ltd. All rights reserved.
@@ -40,15 +42,15 @@ extra:
   version:
     provider: mike
     default: latest
-  search:
-    language: 'en'
-    language: 'ja'
   homepage: https://www.hikky.co.jp/vketcloud
   
 use_directory_urls: false
 
 plugins:
   - search:
+      lang: 
+        - en
+        - ja
   - mike:
       version_selector: true
       css_dir: css
@@ -101,6 +103,7 @@ plugins:
           Specifications Limits : VketCloudの仕様制限
           ReflectionProbe: 反射を写り込ませるには
           Texture Compression: テクスチャ圧縮
+          Physics Engine: 物理エンジン
           Auto Texture Compression: 自動テクスチャ圧縮
           Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
@@ -158,6 +161,7 @@ nav:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
     #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
+    - Physics Engine : WorldMakingGuide/PhysicsEngine.md
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
