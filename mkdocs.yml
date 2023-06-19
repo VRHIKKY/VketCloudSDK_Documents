@@ -259,14 +259,16 @@ nav:
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Change Log:
-    - v4.1: changelog/changelog-4.1.md
-    - v4.0: changelog/changelog-4.0.md
-    - v3.9: changelog/changelog-3.9.md  
-    - v3.8: changelog/changelog-3.8.md
-    - v3.7: changelog/changelog-3.7.md
-    - v3.6: changelog/changelog-3.6.md
-    - v3.5: changelog/changelog-3.5.md
-    - v3.4: changelog/changelog-3.4.md
-    - v3.3: changelog/changelog-3.3.md
-    - v3.2: changelog/changelog-3.2.md
+    - v4.x:
+        - v4.1: changelog/changelog-4.1.md
+        - v4.0: changelog/changelog-4.0.md
+    - v3.x:
+        - v3.9: changelog/changelog-3.9.md  
+        - v3.8: changelog/changelog-3.8.md
+        - v3.7: changelog/changelog-3.7.md
+        - v3.6: changelog/changelog-3.6.md
+        - v3.5: changelog/changelog-3.5.md
+        - v3.4: changelog/changelog-3.4.md
+        - v3.3: changelog/changelog-3.3.md
+        - v3.2: changelog/changelog-3.2.md
 - License: common/License.md
