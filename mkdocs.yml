@@ -264,6 +264,7 @@ nav:
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Change Log:
     - v4.x:
+        - v4.6: changelog/changelog-4.6.md
         - v4.5: changelog/changelog-4.5.md
         - v4.4: changelog/changelog-4.4.md
         - v4.3: changelog/changelog-4.3.md
