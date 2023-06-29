@@ -24,10 +24,11 @@ const chatWithChatGptCharacterInRoom = async (
 ```
 
 処理に成功した場合は文字列化されたJsonオブジェクトが、失敗した場合はnullが返されます。
+
 ```typescript
 // 成功した場合の返答(文字列化する前のJsonオブジェクト)
 type ChatWithChatGptCharacterInTheRoomResponse = {
-  characterRoom: { // ChatGPTのキャラクターが存在するルーム情報
+  characterRoom: { // AIモデルのキャラクターが存在するルーム情報
     id: number, // ルームID
     total_tokens: number, // 合計トークン利用量
     character: { // AIモデルのキャラクターの情報
