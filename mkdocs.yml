@@ -251,6 +251,9 @@ nav:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_constrol.md
         - Operator: hs/hs_operator.md
+- Heliport.js:
+    - OverView: heliport/heliport_overview.md
+    - ChatGPT / useChatGpt: heliport/heliport_useChatGpt.md
 - Trouble shooting:
     - Build Error: troubleshooting/BuildError.md
     - Browser does not open: troubleshooting/BrowserNotOpen.md
