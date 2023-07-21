@@ -265,6 +265,7 @@ nav:
 - Change Log:
     - v5.x:
         - v5.0: changelog/changelog-5.0.md
+        - v5.1: changelog/changelog-5.1.md
     - v4.x:
         - v4.6: changelog/changelog-4.6.md
         - v4.5: changelog/changelog-4.5.md
