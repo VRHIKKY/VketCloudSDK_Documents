@@ -1,6 +1,6 @@
 
 # If A >= B
-![IfLessThanOrEqual](img/IfLessThanOrEqual.jpg)
+![IfLessThanOrEqual](img/IfGreaterThanOrEqual.jpg)
 
 If A(variable) is larger than or equal to B(int), the Actions that follow will be discarded.
 

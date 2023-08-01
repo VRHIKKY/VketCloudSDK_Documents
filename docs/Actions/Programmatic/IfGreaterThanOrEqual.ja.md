@@ -1,6 +1,6 @@
 
 # If A >= B
-![IfLessThanOrEqual](img/IfLessThanOrEqual.jpg)
+![IfLessThanOrEqual](img/IfGreaterThanOrEqual.jpg)
 
 If A >= Bでは、比較対象とする変数（A）が整数（B）より大きい、もしくは等しい場合、以降のアクションを実行せずに終了します。
 
