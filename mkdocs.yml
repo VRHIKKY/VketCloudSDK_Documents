@@ -181,6 +181,7 @@ nav:
     - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
     - HEOField: Unity/HEOField.md
     - HEOPlayer: Unity/HEOPlayer.md
+    - HEOSpot: Unity/HEOSpot.md
     - HEOObject: Unity/HEOObject.md
     - HEOLODLevel: Unity/HEOLODLevel.md
     - HEOAudio: Unity/HEOAudio.md
