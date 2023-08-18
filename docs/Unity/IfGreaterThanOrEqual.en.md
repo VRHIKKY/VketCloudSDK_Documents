@@ -4,6 +4,7 @@
 
 If A(variable) is larger than or equal to B(int), the Actions that follow will be discarded.
 
+The variable defined at [SetVar](SetVar.en.md) is applicable.
 
 |  Label |  function  |
 | ----   | ---- |
