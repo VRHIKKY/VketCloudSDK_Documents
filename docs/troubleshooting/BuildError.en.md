@@ -9,6 +9,7 @@ This can be caused by several reasons, but the common issues are the following:
 |  Cause |  How to Fix  |
 | ----   | ---- |
 | The avatar list is empty. | Register at least one avatar. |
+| Element in `HEOWorldSettings/BasicInfo/HeliScript` is empty. | Delete the element that is being [`None` or `Missing`](../HEOComponents/HEOWorldSetting.md). |
 | The .heo export is failing. | Please check the Unity Console for red errors. |
 | Error in the Unity cache. | Clear your cache from Preferences |
 | Error in the browser cache. | Clear your cache of your browser |
