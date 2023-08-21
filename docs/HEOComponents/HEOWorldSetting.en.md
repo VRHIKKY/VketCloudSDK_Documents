@@ -26,7 +26,7 @@ This component lets you configurate the following settings:
 | `HeliScript` | Set the HeliScript to run on entering the world. |
 
 !!! note
-    Should the HeliScript elements contains a `None` or `Missing` entry, this may be a cause of a build error.
+    Note that if the HeliScript elements contains a `None` or `Missing` entry, this may become a cause of a build error.
 
 ![HeliScriptMistake](img/HEOWorldSetting_BasicInfo_HeliscriptMistake.jpg)
 
@@ -42,7 +42,7 @@ This component lets you configurate the following settings:
 |  `near Offset` | Shift the focus point of TPS camera up and down. |
 | `Photo Radius` | Set the radius of movable range for the photo mode camera. |
 | `Raycast Max Distance` | Set the maximum raycast distance from the click detection camera in meter. |
-| `Default TPS Camera` | Set the offset for the TPS camera. `center`: right behind (default) `right`: Over the right shoulder（Typical TPS Camera-style）`left`: Over the left shoulder|
+| `Default TPS Camera` | Set the offset for the TPS camera. `center`: right behind (default) `right`: Over the right shoulder（Typical TPS Camera-style）`left`: Over the left shoulder |
 
 ---
 
@@ -97,7 +97,7 @@ This component lets you configurate the following settings:
 ---
 
 ## MyAvatar
-![MyAvatar](img/HEOWorldSetting_MyAvatar.jpg)
+![MyAvatar](img/HEOWorldSetting_MyAvatar_1.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
