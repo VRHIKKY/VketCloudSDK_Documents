@@ -1,13 +1,13 @@
-
-!!! note info 
-    This function is for future use. Please do not use it yet.
-
 # HEOScript
 ![HEOScript](img/HEOScript_en.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
-| HeliScript | Specify hs files. |
+| HeliScript | Specify hs files to run. |
 
-You need to child this HEOScript to the HEOField the script targets.
-More details on how to write HeliScript are [here](HEOScript.md).
+##　Precautions
+- HEOScript components must be attached to child objects under the object with the HEOField component.
+- For details on writing HeliScript, refer to the pages below:
+- [Class](../hs/hs_class.md)
+- [Component](../hs/hs_component.md)
+
