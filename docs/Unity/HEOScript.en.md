@@ -11,3 +11,6 @@
 - [Class](../hs/hs_class.md)
 - [Component](../hs/hs_component.md)
 
+!!! note
+    When creating a new .hs file, the file may not appear on the HeliScript list in HEOScript, due to partial file name duplications, etc.
+    The issue can be solved by deleting the HEOScript component and re-attaching it to the gameobject.
