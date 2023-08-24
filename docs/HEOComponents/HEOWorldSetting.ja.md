@@ -15,18 +15,19 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 |  Label |  function  |
 | ----   | ---- |
-|  `World Name` |  ワールド名を設定する項目です。URLなどに反映されます。 (例： [VketID_of_Creator].cloud.vket.com/worlds/[World_Name])|
+|  `World Name` |  ワールド名を設定する項目です。基本的にはワールド作成時に自動生成されたIDがアップロード時に自動入力され、URLなどに反映されます。<br> (例：[VketID_of_Creator].cloud.vket.com/worlds/[World_Name])|
 |  `Debug Mode` |  デバッグモードを切り替えることができます。オンにするとブラウザ上で`F1`または`F2`からデバッグ機能を使用することが可能になります。|
 | `VRM Drop` |  ブラウザ上へのVRMドロップによるローカルの(他プレイヤーから見えない)アバター変更を許可します。 |
 | `Occulusion Culling` | オクルージョンカリングをオンにします。　|
-| `World Name Directory` | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。(例： data/field/`ワールド名`/world.heo)|
+| `World Name Directory` | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。<br>(例： data/field/`ワールド名`/world.heo)|
 | `Multi Play Mode In Local Build` | ローカルビルド時にマルチプレイモードで入室します。 |
 | `Use GamePad` | ゲームパッドを使用するかどうかの設定です。 |
 | `Use Physics Engine` | 物理エンジンを使用するかどうかの設定です。 |
 | `Favicon` | Faviconを設定する項目です。 |
-| `HeliScript` | ワールド起動時に起動させたいHeliScriptを指定します。 |
+| `HeliScript` | ワールド内で使用されるHeliScriptが一覧表示されます。[HEOScript](../Unity/HEOScript.md)などで指定したHeliScriptは本項目にリストアップされます。|
 
 !!! note
+    `HeliScript`は基本的には自動で項目が追加されますが、ファイルの削除などによって項目に`None`(未指定)または`Missing`が発生する場合があります。
     HeliScriptの項目内が`None`(未指定)または`Missing`の状態はビルドエラーの原因になるため、ご注意ください。
 
 ![HeliScriptMistake](img/HEOWorldSetting_BasicInfo_HeliscriptMistake.jpg)
