@@ -3,7 +3,7 @@
     This function is for future use. Please do not use it yet.
 
 # HEOScript
-![HEOScript](img/HEOScript.jpg)
+![HEOScript](img/HEOScript_en.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
