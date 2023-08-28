@@ -17,5 +17,5 @@ You can remove the last action by clicking Delete.
 | Actions | Set the action when entering the area. |
 | LeaveActions | Sets the action when leaving the area. |
 
-For actions, see [Actions Overview](ActionsOverview.md). <br>
+For actions, see [Actions Overview](../Actions/ActionsOverview.md). <br>
 For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide/UnityGuidelines.md).

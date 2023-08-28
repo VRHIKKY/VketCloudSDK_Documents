@@ -22,4 +22,4 @@
 
 !!! Note Info
     物理エンジンが有効なオブジェクトに対してのみ有効です。
-    物理エンジンの使い方については[PhysicsEngine](../WorldMakingGuide/PhysicsEngine.md)を参照ください。
+    物理エンジンの使い方については[PhysicsEngine](../../WorldMakingGuide/PhysicsEngine.md)を参照ください。

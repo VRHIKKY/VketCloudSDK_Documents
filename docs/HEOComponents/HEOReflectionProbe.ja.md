@@ -1,5 +1,5 @@
 # HEOReflectionProbe
-![HEOReflectionProbe](img/HEOReflectionProbe.png)
+![HEOReflectionProbe](img/HEOReflectionProbe.jpg)
 ## Reflection Probes
 | Label | function |
 | ---- | ---- | 

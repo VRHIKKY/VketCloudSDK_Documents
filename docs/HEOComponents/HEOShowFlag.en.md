@@ -15,5 +15,5 @@ The component can be used to display or hide an object on HEO Field.
 
 
 !!! note info
-    - The object can be shown by using ActionTrigger's [Show/HideNode](../Unity/ShowHideNode.en.md) or other methods.
+    - The object can be shown by using ActionTrigger's [Show/HideNode](../Actions/Node/ShowHideNode.md) or other methods.
     - The component only hides its appearance. Colliders and other functions remain effective.

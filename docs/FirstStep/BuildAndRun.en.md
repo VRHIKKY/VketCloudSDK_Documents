@@ -2,7 +2,7 @@
 We will explain how to build a scene.
 
 ## Build and Run
-To build a scene with VketCloudSDK, make sure you have placed the [required components](WorldBasicComponents.html) and initiate the build from VketCloudSDK > Build And Run.
+To build a scene with VketCloudSDK, make sure you have placed the [required components](WorldBasicComponents.md) and initiate the build from VketCloudSDK > Build And Run.
   
 ![BuildAndRun](img/BuildAndRun.jpg)
 

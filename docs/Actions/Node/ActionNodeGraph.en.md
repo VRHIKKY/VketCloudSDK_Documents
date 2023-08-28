@@ -7,7 +7,7 @@ This article will explain how to use ActionNodeGraph. <br>
 
 ## Overview
 
-This component can be used as an alternative to [HEOActionTrigger](HEOActionTrigger.md). <br>
+This component can be used as an alternative to [HEOActionTrigger](../../HEOComponents/HEOActionTrigger.md). <br>
 It has the following advantages compared to HEOActionTrigger.  
 
 - Actions can be managed visually with nodes

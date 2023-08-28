@@ -13,6 +13,6 @@ HEOフィールド上のオブジェクトを表示/非表示にする場合に�
 ![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.jpg)
 
 !!! note info
-    - ActionTriggerの[Show/HideNode](../Unity/ShowHideNode.ja.md)でも、動的に表示/非表示にすることができます。
+    - ActionTriggerの[Show/HideNode](../Actions/Node/ShowHideNode.md)でも、動的に表示/非表示にすることができます。
     - 非表示にするのは見た目のみで、コライダーなどの判定は機能します。
 

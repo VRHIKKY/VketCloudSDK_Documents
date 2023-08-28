@@ -7,7 +7,7 @@ ActionNodeGraphの使用方法について、解説します。<br>
 
 ## 概要
 
-本コンポーネントは[HEOActionTrigger](HEOActionTrigger.md)の代替として使用できるコンポーネントです。<br>
+本コンポーネントは[HEOActionTrigger](../../HEOComponents/HEOActionTrigger.md)の代替として使用できるコンポーネントです。<br>
 HEOActionTriggerと比べ、
 
 - アクションをノードで視覚的に管理することが可能

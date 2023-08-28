@@ -21,4 +21,4 @@ Sets all applied forces and velocities to zero.
 
 !!! Note Info
     This is only effective for objects where the physics engine is enabled.
-    For how to use the physics engine, please refer to [PhysicsEngine](../WorldMakingGuide/PhysicsEngine.md)
+    For how to use the physics engine, please refer to [PhysicsEngine](../../WorldMakingGuide/PhysicsEngine.md)

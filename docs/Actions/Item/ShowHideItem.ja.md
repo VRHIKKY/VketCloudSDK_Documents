@@ -10,4 +10,4 @@ ShowItemは、Itemとして管理されているオブジェクトを表示し�
 - HEOTextplane
 - HEOParticle
 
-heoファイルに含まれるオブジェクトの表示・非表示は[Show/HideNode](ShowHideNode.md)をご覧ください。
+heoファイルに含まれるオブジェクトの表示・非表示は[Show/HideNode](../Node/ShowHideNode.md)をご覧ください。
