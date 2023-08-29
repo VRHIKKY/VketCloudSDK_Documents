@@ -27,7 +27,7 @@ This component lets you configurate the following settings:
 
 !!! note
     While `HeliScript` elements will be added automatically, it may become a `None` or `Missing` entry due to deleting files, etc.
-    Note that if the `HeliScript` elements contains a `None` or `Missing` entry, it may become a cause of a build error.
+    Note that if the `HeliScript` elements contain a `None` or `Missing` entry, they may become a cause of a build error.
 
 ![HeliScriptMistake](img/HEOWorldSetting_BasicInfo_HeliscriptMistake.jpg)
 
@@ -39,8 +39,8 @@ This component lets you configurate the following settings:
 |  Label |  function  |
 | ----   | ---- |
 |  `Smoothing` | Set whether or not the smoothing is applied to the camera movement. |
-|  `far Offset` | Shift the focus point of TPS camera up and down. |
-|  `near Offset` | Shift the focus point of TPS camera up and down. |
+|  `Far Offset` | Shift the focus point of TPS camera up and down. |
+|  `Near Offset` | Shift the focus point of TPS camera up and down. |
 | `Photo Radius` | Set the radius of movable range for the photo mode camera. |
 | `Raycast Max Distance` | Set the maximum raycast distance from the click detection camera in meter. |
 | `Default TPS Camera` | Set the offset for the TPS camera. `center`: right behind (default) `right`: Over the right shoulder（Typical TPS Camera-style）`left`: Over the left shoulder |
