@@ -31,7 +31,7 @@ HierarchyでVketCloudSampleオブジェクトを選択した状態で、ウィ�
 テクスチャファイルに問題なければエクスポートはひとまず成功です。この後、VketCloudで読み込ませる場合は、出力されたファイル・フォルダを一式コピーします。
 
 !!! note tip
-    .heoとして吐き出したオブジェクトは、HEOObjectからセットすることでBuildAndRunの出力に含めることができます。HEOObjectの使い方は[こちら](../Unity/HEOObject.md)をご覧ください。
+    .heoとして吐き出したオブジェクトは、HEOObjectからセットすることでBuildAndRunの出力に含めることができます。HEOObjectの使い方は[こちら](../HEOComponents/HEOObject.md)をご覧ください。
 
 このHEOファイルをVketCloudで読み込んで表示したサンプルは以下のものになります。
 
