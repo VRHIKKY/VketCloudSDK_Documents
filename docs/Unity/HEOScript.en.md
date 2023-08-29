@@ -7,10 +7,12 @@
 | Component | Designate the component to be used from the specified `HeliScript` file. |
 
 ## Cautions:
-- HEOScript components must be attached to child objects under the object with the HEOField component.
+- HEOScript components are attachable to the GameObject with the [HEOField](./HEOField.md) component, or its child objects (See image below for reference)
 - For details on writing HeliScript, refer to the pages below:
 - [Class](../hs/hs_class.md)
 - [Component](../hs/hs_component.md)
+
+![HEOScript_attachable](./img/HEOScript_attachable.jpg)
 
 !!! note
     When creating a new `HeliScript` file, the file may not appear on the `HeliScript` list in `HEOScript`, due to partial file name duplications, etc.
