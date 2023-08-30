@@ -4,6 +4,9 @@
 
 If A(variable) is less than or equal to B(int), the Actions that follow will be discarded.
 
+The variable defined at [SetVar](SetVar.md) is applicable.
+
+Addition to the variable can be done by using [AddVar](AddVar.md).
 
 |  Label |  function  |
 | ----   | ---- |

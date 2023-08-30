@@ -1,7 +1,6 @@
 # AddVar
 ![AddVar](img/AddVar.jpg)
 
-AddVar saves ..sal.doasijdoiawd
 AddVar adds specified value to the variable saved with SetVar.
 
 |  Label |  function  |
