@@ -16,10 +16,10 @@ The GameObject Position will be the initial player position when the URL paramet
 
 When accessing the world with the `spaceindex={x}` parameter added in the URL (e.g. `&spaceindex=1`), the player will spawn on the HEOSpot position.
 
-Initial position when no URL parameters set:
+Initial spawn position when the spaceindex parameter is not set:
 
 ![HEOSpot](img/HEOSpot_3.jpg)
 
-Initial position with URL parameters set:
+Initial spawn position when the spaceindex parameter is set:
 
 ![HEOSpot](img/HEOSpot_4.jpg)
