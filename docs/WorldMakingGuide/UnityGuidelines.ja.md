@@ -38,7 +38,7 @@ VketCloudではUnityのリフレクションプローブを使用することが
     Autodesk Interactiveのメタリックテクスチャは、テクスチャスロット数の都合上、使用できません。メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。
 
 ## コライダー
-* 衝突判定用はBoxColliderとMeshColliderのみ対応。MeshColliderは処理に非常に負荷がかかるため使用は必要最低限にしてください。BoxColliderはTPSモード時にプレイヤーアバターとカメラの間に位置するオブジェクトによって遮断されるのを防ぐためにも利用しているため、天井など移動出来ない場所でも設定して下さい。MeshColliderの書き出し方法については[こちら](../HEOComponents/HEOMeshCollider.html)をご覧ください。
+* 衝突判定用はBoxColliderとMeshColliderのみ対応。MeshColliderは処理に非常に負荷がかかるため使用は必要最低限にしてください。BoxColliderはTPSモード時にプレイヤーアバターとカメラの間に位置するオブジェクトによって遮断されるのを防ぐためにも利用しているため、天井など移動出来ない場所でも設定して下さい。MeshColliderの書き出し方法については[こちら](../HEOComponents/HEOMeshCollider.md)をご覧ください。
 * SphereColliderはクリック（タップ）判定用にのみ使用しています。（ポスターなど）
 * ヒエラルキーのネストが深いとコライダーが出力されない場合があります。
 * 膝下ぐらいのコライダーは登れてしまいます。しかし、大きすぎるコライダーはカメラの妨げになるので、気を付けてください。
