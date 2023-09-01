@@ -11,11 +11,12 @@
 
 ![HEOClickGuide_2](./img/HEOClickGuide_2.jpg)
 
-`clickArea`では`clickGuide`の表示/非表示を[HEOAreaCollider](./HEOAreacollider.md)を使用して切りかえています。
+`clickArea`では`clickGuide`の表示/非表示を[HEOAreaCollider](./HEOAreacollider.md)及び[Show/HideItem](../Actions/Item/ShowHideItem.md)を使用して切りかえています。<br>
 
 ![HEOClickGuide_3](./img/HEOClickGuide_3.jpg)
 
-生成時の初期状態では生成元オブジェクトと同一のサイズのため、下記画像のようにガイドを表示させたい範囲に応じてコライダーのサイズ調整を行うことをおすすめします。
+生成時の初期状態では`clickArea`はデフォルトのキューブと同一のサイズです。<br>
+下記画像のように、ガイドを表示させたい範囲に応じて`clickArea`のサイズ調整を行うことをおすすめします。
 
 ![HEOClickGuide_4](./img/HEOClickGuide_4.jpg)
 
