@@ -24,17 +24,22 @@ Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionPro
      * Note that if the LightMap Encoding is wrong, the lightmap may be overexposed.
      * Real-time global illumination is not supported, so please use lightmaps. Most discrepancies between what looks in Unity window and Vket Cloud are caused by Global Illumination settings.
 * Check if Color Space in Other Settings is set to "Linear"
-<img src="img/スクリーンショット 2022-05-27 193242.png">
+
+![UnityGuidelines_1](./img/UnityGuidelines_1.jpg)
+
 * Max Lightmap Size should be 2048 or less
 * Disable lightmap compression
 * Make sure that Format is set to RGB24 or RGBA32 and Compressed: None
-<img src="img/スクリーンショット 2021-06-16 105720.png">
+
+![UnityGuidelines_2](./img/UnityGuidelines_2.jpg)
 
 ## Shaders
--Standard
--Autodesk Interactive　
--Unlit
+- Standard 
+- Autodesk Interactive
+- MToon　
+- Unlit
 - UnlitWF (supports double-sided display only)
+- VketChanDoubleSided Shaders contained in VketTools
 
 !!! note
      Metallic textures from Autodesk Interactive cannot be used due to the number of texture slots. Use the Standard Shader when using a combination of metallic and roughness textures.
@@ -42,15 +47,12 @@ Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionPro
 ## Collider
 * Only BoxCollider and MeshCollider are supported for collision detection. Note that MeshCollider takes very heavy load on processing. Avoid MeshCollider if possible. BoxCollider is also used to prevent objects getting in the way between the player avatar and the camera in TPS mode. As such, set BoxColliders on unreachable objects like the ceiling. See [here](../HEOComponents/HEOMeshCollider.md) for how to export a MeshCollider.
 * SphereCollider is used only for click (tap) judgment. (Poster, etc.)
-* If the hierarchy is nested deeply, colliders may not be exported upon BuildandRun.
+* If the hierarchy is nested deeply, colliders may not be exported upon Build and Run.
 * Colliders lower than the knee can be climbed. But be careful, too large colliders may hamper the movement of the camera.
 * Make sure to disable the MeshRenderer. If you set the size of Materials to 0 and hide it, an output error will occur.
 
 ## Skybox
 * Skybox is not supported. Please avoid the sky or use celestial sphere object instead.
-
-## Scale
-* Negative scale is ignored. If you want to turn objects inside out, please rotate it 180 degrees.
 
 ## Object
 HEOExport does not support multiple selection. To export as a single object, create a parent object, store the target object inside it, and export the parent object.
