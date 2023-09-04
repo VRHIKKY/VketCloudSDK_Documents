@@ -23,7 +23,7 @@ This component lets you configurate the following settings:
 | `Use GamePad` | Activate usage of GamePads.  |
 | `Use Physics Engine` | Activate usage of the Physics Engine. |
 | `Favicon` | Set the Favicon of the World. |
-| `HeliScript` | The HeliScripts used in this world will be listed here. HeliScripts designated in components such as [HEOScript](../Unity/HEOScript.md) will be listed automatically. |
+| `HeliScript` | The HeliScripts used in this world will be listed here. HeliScripts designated in components such as [HEOScript](./HEOScript.md) will be listed automatically. |
 
 !!! note
     While `HeliScript` elements will be added automatically, it may become a `None` or `Missing` entry due to deleting files, etc.
