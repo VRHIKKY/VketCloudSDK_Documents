@@ -41,3 +41,8 @@ StringModeはURLを指定して参照します。動画ストリーミング等�
 | AAC | 44.1kHz |
 | フレームレート | 29.97 or 30 |
 | プロファイルレベル | 4.1, AAC 44.1kHz, yuv420 |
+
+!!! note caution
+    動画音声は距離減衰に対応していません。
+
+    代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は[HEOAreaCollider](../HEOComponents/HEOAreacollider.md)を使用してください。

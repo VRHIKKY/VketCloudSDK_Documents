@@ -40,3 +40,8 @@ Please follow the format below.
 | AAC | 44.1 kHz |
 | Frame rate | 29.97 or 30 |
 | Profile level | 4.1, AAC 44.1kHz, yuv420 |
+
+!!! note caution
+    The SDK does not support distance falloff for video audio.
+    
+    As an alternative implementation, the [HEOAreaCollider](../HEOComponents/HEOAreacollider.md) can be used to stop the video when the player goes out from a certain range.
