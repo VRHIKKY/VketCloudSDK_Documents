@@ -37,7 +37,7 @@ VketCloudではUnityのリフレクションプローブを使用することが
 - MToon　
 - Unlit
 - UnlitWF（両面表示等のみ対応）
-- UnityToolsに含まれるVketChanDoubleSided系のシェーダー
+- VketCloudSDKに含まれるVketChanDoubleSided系のシェーダー
 
 !!! note
     Autodesk Interactiveのメタリックテクスチャは、テクスチャスロット数の都合上、使用できません。メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。

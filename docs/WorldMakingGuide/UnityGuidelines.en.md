@@ -39,7 +39,7 @@ Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionPro
 - MToon　
 - Unlit
 - UnlitWF (supports double-sided display only)
-- VketChanDoubleSided Shaders contained in VketTools
+- VketChanDoubleSided Shaders contained in the VketCloudSDK
 
 !!! note
      Metallic textures from Autodesk Interactive cannot be used due to the number of texture slots. Use the Standard Shader when using a combination of metallic and roughness textures.
