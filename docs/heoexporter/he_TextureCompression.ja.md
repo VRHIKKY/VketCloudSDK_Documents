@@ -6,6 +6,10 @@ HEOExporterで出力後にテクスチャ圧縮の作業をおこなう必要が
 
 次に [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv)をインストールします。ページを開いてすぐ上の方にある「DOWNLOADS@LATEST」でファイルをインストールことができます。インストールしたtexconv.exeを任意の場所に置き、上記のPVRTexToolと同様にPATHを通してください。
 
+また、HEOファイルに圧縮されたテクスチャの上書きを実行するために、[python](https://www.python.org/downloads/)を導入します。
+バージョンは3.11を推奨しますが、それ以外でも動作する想定です。
+ただし、python2は動作保証ができないため、その場合は最新のpythonを導入します。
+
 ## 圧縮テクスチャファイル作成
 HEOExporterでHEOファイルを出力すると、同フォルダに「HEOファイル名_pvrtc.bat」「HEOファイル名_etc2.bat」「HEOファイル名_astc.bat」「HEOファイル名_dxt.bat」というバッチファイルが出力されます。中身を見ると、
 ```
@@ -22,7 +26,8 @@ PVRTexToolCLI.exe -i tex_sample\007_tweet_button_color.png -o tex_pvrtc\007.pvr 
 pause
 ```
 このような内容になっていますが、「echo skip」で始まる行がある場合はそのテクスチャが圧縮対象から外れていることになりますので、念のため内容を確認します。tex_sampleフォルダに画像が入っているので、エクスプローラの詳細で一覧表示します。
-<img src="he_image/TexSampleFolder.jpg">
+
+![TexSampleFolder](he_image/TexSampleFolder.jpg)
 
 「大きさ」と「ビットの深さ」を表示に追加し、大きさが2の累乗でない場合は2の累乗に出来るか確認してみて下さい。ビットの深さも24または32以外の場合は変換出来るか確認してみて下さい。また、4096x4096などの大きなサイズのものが残っていないかどうかも確認して下さい。
 
@@ -33,10 +38,15 @@ pause
 ※リフレクションプローブを使用する場合、追加で「tex_reflection_cube_pvrtc」「tex_reflection_cube_etc」「tex_reflection_cube_astc」「tex_reflection_cube_dxt」というフォルダが作成されます。
 
 ## HEOファイル上書き
-次に 『SDK/Tools/HEOTexComp/』 にあるHEOTexComp.exeのパスを通して、コマンドプロンプトにて
-```
-HEOTexComp.exe (HEOファイルのあるフォルダパス)\HEOファイル名.heo
-```
+
+VketCloudSDKに含まれる
+`Packages/com.hikky.vketcloudsdk/PackageResources/tools/HEOTexComp_Python/HEOTexComp.py`を使用します。
+
+コマンドプロンプトにて、圧縮したいテクスチャを持つHEOと同じディレクトリにHEOTexComp.pyをコピーするか、HEOTexComp.pyが入っているディレクトリに直接入って
+
+``````
+python HEOTexComp.py (HEOファイルのあるフォルダパス)\test.heo
+``````
 と、実行すると、
 
 ExistCubemapTextureCompression 10 10 10 10
@@ -47,3 +57,11 @@ Succeeded
 などと表示されます。「Succeeded」と最後に表示されていれば成功です。その直前の数字はPVRTC/ETC/ASTC/DXTのファイル数です。
 
 これによりHEOファイル内に圧縮テクスチャが存在するかどうかのフラグが書き込まれます。
+
+!!! note
+    バージョンアップによってpvrtc変換が廃止されたため、以下のようにHEOTexCompの結果で先頭が０になりますが、こちらは正常です。
+
+    ExistTextureCompression 0 5 5 5
+
+!!! note
+    ごくたまにWindows向けのDXT圧縮で見た目の色合いが変になる場合があるようで、その場合はDXT圧縮はおこなわなくても構わないです。
