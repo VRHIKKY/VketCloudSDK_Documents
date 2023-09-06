@@ -22,17 +22,22 @@ VketCloudではUnityのリフレクションプローブを使用することが
     * LightMap  Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください
     * リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
 * Other Settings の Color Spaceが『Linear』になっているか確認する
-<img src="img/スクリーンショット 2022-05-27 193242.png">
+
+![UnityGuidelines_1](./img/UnityGuidelines_1.jpg)
+
 * Max Lightmap Sizeは2048以下にする
 * ライトマップの圧縮は無効にする
 * Format: RGB24またはRGBA32、Compressed: Noneになっているか確認する
-<img src="img/スクリーンショット 2021-06-16 105720.png">
+
+![UnityGuidelines_2](./img/UnityGuidelines_2.jpg)
 
 ## シェーダー
 - Standard 
-- Autodesk Interactive　
+- Autodesk Interactive
+- MToon　
 - Unlit
 - UnlitWF（両面表示等のみ対応）
+- VketCloudSDKに含まれるVketChanDoubleSided系のシェーダー
 
 !!! note
     Autodesk Interactiveのメタリックテクスチャは、テクスチャスロット数の都合上、使用できません。メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。
@@ -45,10 +50,7 @@ VketCloudではUnityのリフレクションプローブを使用することが
 * 必ずMeshRendererを非表示にしてください。Materialsのsizeを０にして非表示にすると、出力エラーとなります。
 
 ## スカイボックス
-* スカイボックスは非対応です。使わないもしくは天球などでごまかす必要があります。
-
-## スケール
-* マイナススケールは無視されます。裏返しにする場合は、180度回転させてください。
+* スカイボックスは非対応です。使わない、もしくは天球などでごまかす必要があります。
 
 ## オブジェクト
 HEOExportは複数選択に対応していません。１つのオブジェクトとしてエクスポートするには、親オブジェクトを作成しその中に対象のオブジェクトを格納して、親オブジェクトをエクスポートしてください。
