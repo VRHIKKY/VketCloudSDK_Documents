@@ -1,5 +1,7 @@
 # デバッグコンソールとは
 
+![debugconsole_1](./img/debugconsole_1_ja.jpg)
+
 デバッグコンソールは、VketCloudSDKのワールド実装する際のデバッグや問題のトラブルシューティングを補助するためのツールです。主な目的は、実行中のプログラムの状態や挙動に関する情報をリアルタイムに把握することです。
 
 デバッグコンソールの主な機能には以下があります：
@@ -11,11 +13,12 @@
 
 デバッグコンソールは、開発者がアプリケーションの実行中に発生するログ情報を監視し、問題の特定やバグの修正に役立ちます。特に複雑なシステムや大規模なプロジェクトの開発においては、デバッグコンソールは非常に重要なツールとなります。
 
-![debugconsole_1](./img/debugconsole_1_ja.png)
+## デバッグコンソールの開き方
+VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`を押下してデバッグコンソールウィンドウを開きます。
 
-![debugconsole_2](./img/debugconsole_2_ja.png)
+![debugconsole_2](./img/debugconsole_2_ja.jpg)
 
-# UnityのConsoleとの違いとは
+## UnityのConsoleとの違いとは
 1. VketCloudSDKに特化した表示とフィルタリング、独自エラータイプを実装し、VketCloudSDKでワールド実装する際のデバッグをサポートします。
 2. 検索機能の強化: デバッグコンソールでは、ログメッセージの検索機能を提供しています。開発者は特定のキーワードやフレーズを含むログを素早く検索し、関連する情報にアクセスできます。この機能により、大量のログデータの中から必要な情報を見つけやすくなります。
 3. ログのコピー機能: デバッグコンソールでは、ログメッセージやスタックトレースを簡単にコピーできます。開発者は必要な情報をクリップボードにコピーして共有したり、他のツールに貼り付けて分析したりすることができます。
@@ -23,33 +26,52 @@
 
 デバッグコンソールは、Unityのデフォルトのコンソールでは提供されていないカスタマイズ性や高度な機能を備えています。これにより、開発者はより効果的なデバッグと問題解決を行うことができます。
 
-# UIの説明
-![debugconsole_3](./img/debugconsole_3_ja.png)
+## UI説明
+### ツールバーの機能説明
 
-## ツールバー
-- Build And Run: ビルドと実行の処理をWindowから行えるようにする
-- Port: 実行時のポート番号を入力する
-- Clear: ログをすべてクリアする。解決していない問題は残す
-- Clear on Build: 毎回Build And Runした際に、ログを自動的に消すか消さないかの設定ボタン
-- Log: Logのみフィルターする機能＋Logの数を表示する
-- Warning: Warningのみフィルターする機能＋Logの数を表示する
-- Error: Errorのみフィルターする機能＋Errorの数を表示する
-- Search Box: 検索ボックス
-- Setting: Settingsのウィンドウを開くボタン
-- Export:ログをエクスポートする機能
+![debugconsole_3](./img/debugconsole_3_ja.jpg)
 
-## ログタイプパネル　（左側にあるパネル）
+| ラベル | 機能 |
+|----|----|
+| Build And Run |ワールドのビルドを行い、ローカルでワールドを起動します|
+| Port | ワールド起動時のポート番号を入力できます (初期状態では8000番) |
+| Clear | ログをすべてクリアします。<br> なお、解決していない問題は残されます|
+| Clear on Build | 毎回Build And Runした際に、ログを自動的に消すか消さないかの設定ボタンです |
+| Log | Logを表示するフィルターのオンオフ及びLogの数を表示します |
+| Warning | Logを表示するフィルターのオンオフ及びLogの数を表示します |
+| Error | Logを表示するフィルターのオンオフ及びLogの数を表示します |
+| Search Box | 検索ボックスです |
+| Settings | Settingsのウィンドウを開くボタン |
+| Export | ログをjsonファイルでエクスポートする機能 |
+
+### デバッグコンソール設定
+
+![debugconsole_4](./img/debugconsole_4_ja.jpg)
+
+| ラベル | 機能 |
+|----|----|
+
+### ログタイプパネル　（左側にあるパネル）
+
+![debugconsole_5](./img/debugconsole_5_ja.jpg)
+
 - 独自ログタイプごとにフィルタする機能
 - 未知エラー（Compile Error, Runtime Error)はUnknownに格納
 
-## ログエントリーリスト（右側にあるパネル）
+### ログエントリーリスト（右側にあるパネル）
+
+![debugconsole_6](./img/debugconsole_6_ja.jpg)
+
 - エラーをリスト表示
 - リストをクリックして、ログの詳細を下のパネルに表示する
 - Copyボタンでログ内容をコピーする
 - Jumpボタンで、該当のスクリプトやGameObjectがあればそれを開く
 
-## ログ詳細情報（下のパネル）
-以下内容が含まれます。(ログによって、ErrorObject、Hyperlink、RelatedLogがない場合もあります。
+### ログ詳細情報（下のパネル）
+
+![debugconsole_7](./img/debugconsole_7_ja.jpg)
+
+以下内容が含まれます。(ログによって、ErrorObject、Hyperlink、RelatedLogがない場合もあります。)
 
 -  `Message`: 選択されたログのメッセージを表示します。
 -  `StackTrace`: 選択されたログのスタックトレースを表示します。
@@ -58,8 +80,10 @@
 -  `関連リンク`: 関連するリンクを表示し、クリックすると指定されたURLが開かれます。
 -  `関連ログ`: 関連するログの詳細情報を表示します。ログのグループ、ログのタイプ、メッセージ、スタックトレースなどが表示されます。
 
-![debugconsole_4](./img/debugconsole_4_ja.png)
+### 詳細パネルの例：
 
-![debugconsole_5](./img/debugconsole_5_ja.png)
+![debugconsole_8](./img/debugconsole_8_ja.jpg)
 
-![debugconsole_6](./img/debugconsole_6_ja.png)
+![debugconsole_9](./img/debugconsole_9_ja.jpg)
+
+![debugconsole_10](./img/debugconsole_10_ja.jpg)
