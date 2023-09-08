@@ -38,3 +38,7 @@ Unityのメニュー Window > Package Manager から「Packages」ウィンド�
 Unityのメニューに「VketCloudSDK」の項目が追加されていれば導入は完了です。  
 
    ![header](img/header.jpg)
+
+!!! note
+      UnityのメニューにVketCloudSDKが表示されない場合は、再起動すると表示される場合があります。<br>
+      上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
