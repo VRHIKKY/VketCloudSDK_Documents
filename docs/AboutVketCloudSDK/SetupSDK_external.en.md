@@ -45,4 +45,12 @@ Installation is complete if the item "VketCloudSDK" is added to the Unity menu.
 !!! note 
       If VketCloudSDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
       One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
-      If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).
+      If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
+      
+      As the EditorTutorialSystem may also rarely fail to be imported automatically, add the package below following the instructions on Step 2. on such occurence.
+
+|  item  |  value  |
+| ---- | ---- |
+|  Name  |  EditorTutorialSystem  |
+|  URL  |  https://registry.npmjs.org  |
+|  Scope(s)  |  com.hikky.editortutorialsystem  |

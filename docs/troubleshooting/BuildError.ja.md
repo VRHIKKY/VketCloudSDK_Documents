@@ -31,3 +31,6 @@ Build And Runでブラウザが起動しますが、稀にエラーによって�
 Package Managerなどからインポートしたライブラリまたはスクリプトによってエラーの原因になっている可能性があります。
 
 このケースでは後から追加した対象のライブラリをインポートし直すことで解消される場合があります。
+
+!!! note caution
+        稀に必須パッケージであるEditorTutorialSystemが自動インポートされず、ビルドエラーの原因となる場合があるため、その際は[Package Manager](../AboutVketCloudSDK/SetupSDK_external.md)を通じて該当のパッケージを導入してください。
