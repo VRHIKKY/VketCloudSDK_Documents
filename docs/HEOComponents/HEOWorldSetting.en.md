@@ -80,6 +80,7 @@ This component lets you configurate the following settings:
 | `IBL` | Enable/disable IBL, or Image-Based Lighting. |
 | `DiffuseSize` | Set the size of the diffuse map texture. |
 | `SpecularSize` | Set the size of the specular map texture. |
+| `Specular Mip Map Count` | Set the amount of mip maps used for the specular cube map. |
 
 ---
 

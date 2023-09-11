@@ -81,6 +81,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `IBL` | IBL（Image-Based Lighting）のオンオフを切り替えます。 |
 | `DiffuseSize` | ディフューズマップのサイズを指定します。 |
 | `SpecularSize` | スペキュラマップのサイズを指定します。 |
+| `Specular Mip Map Count` | スペキュラ用キューブマップのミップマップの数を指定します。 |
 
 ---
 
