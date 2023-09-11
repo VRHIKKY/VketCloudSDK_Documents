@@ -24,6 +24,9 @@ This component lets you configurate the following settings:
 | `Use Physics Engine` | Activate usage of the Physics Engine. |
 | `Favicon` | Set the Favicon of the World. |
 
+!!! note caution
+        In this SDK version, gamepads are unable to be used regardless of `Use GamePad` settings.<br>
+        For using gamepads, please consider using other SDK versions.
 
 ---
 

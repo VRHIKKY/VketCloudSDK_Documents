@@ -25,6 +25,10 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `Use Physics Engine` | 物理エンジンを使用するかどうかの設定です。 |
 | `Favicon` | Faviconを設定する項目です。 |
 
+!!! note caution
+        本SDKバージョンではゲームパッドは`Use GamePad`の設定の如何に関わらず使用することができません。<br>
+        ゲームパッドを使用したい場合は他のSDKバージョンの使用をご検討ください。
+
 ---
 
 ## カメラ設定
