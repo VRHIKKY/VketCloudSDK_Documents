@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../images/VketCloudIcon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-7.3.0">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-7.3.0">
     
     
       
@@ -484,6 +484,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -588,6 +592,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../debugconsole/debugconsole.html" class="md-nav__link">
+        Debug Console
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debugconsole/debugmessage.html" class="md-nav__link">
+        Debug Messages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../checktool/checktool.html" class="md-nav__link">
         Check Tool
       </a>
@@ -633,7 +665,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
       
       
       
@@ -648,13 +680,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_10">
+        <label class="md-nav__link" for="__nav_4_12">
           Particle Editor
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Particle Editor" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_10">
+        <label class="md-nav__title" for="__nav_4_12">
           <span class="md-nav__icon md-icon"></span>
           Particle Editor
         </label>
@@ -711,7 +743,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10_4" type="checkbox" id="__nav_4_10_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12_4" type="checkbox" id="__nav_4_12_4" >
       
       
       
@@ -724,13 +756,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_10_4">
+        <label class="md-nav__link" for="__nav_4_12_4">
           Window Info
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Window Info" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_10_4">
+        <label class="md-nav__title" for="__nav_4_12_4">
           <span class="md-nav__icon md-icon"></span>
           Window Info
         </label>
@@ -829,6 +861,8 @@
       
       
       
+        
+          
         
           
         
@@ -1002,6 +1036,20 @@
     <li class="md-nav__item">
       <a href="HEOPlane.html" class="md-nav__link">
         HEOPlane
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="HEOClickGuide.html" class="md-nav__link">
+        HEOClickGuide
       </a>
     </li>
   
@@ -2272,6 +2320,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8">
@@ -2285,6 +2337,20 @@
           Trouble shooting
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/InstallingDeeplink.html" class="md-nav__link">
+        SDK does not appear after install
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -2308,6 +2374,20 @@
     <li class="md-nav__item">
       <a href="../troubleshooting/BrowserNotOpen.html" class="md-nav__link">
         Browser does not open
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/BrowserBlackWindow.html" class="md-nav__link">
+        Browser window blackouts
       </a>
     </li>
   
@@ -2861,7 +2941,7 @@
                 
                 
                 <h1 id="heoaudio">HEOAudio</h1>
-<p><img alt="HEOAudio" src="img/HEOAudio.jpg" /></p>
+<p><img alt="HEOAudio_1" src="img/HEOAudio_1_en.jpg" /></p>
 <table>
 <thead>
 <tr>
@@ -2871,28 +2951,56 @@
 </thead>
 <tbody>
 <tr>
-<td>Audio Type</td>
+<td><code>Audio Type</code></td>
 <td>Choose from BGM, SE, or SystemSE</td>
 </tr>
 <tr>
-<td>Audio Clip</td>
-<td>Specify the audio file.</td>
+<td><code>Audio Clip</code></td>
+<td>Specify the audio file. <br> Currently, only mp3 files are supported.</td>
 </tr>
 <tr>
-<td>loop</td>
+<td><code>loop</code></td>
 <td>Set if you want it to loop.</td>
 </tr>
 <tr>
-<td>autoplay</td>
+<td><code>autoplay</code></td>
 <td>If you want the audio to play automatically after joining. e.g. world BGM.</td>
 </tr>
 </tbody>
 </table>
-<p>Note:</p>
+<p>Each <code>Audio Type</code> matches the In-game config label.</p>
+<table>
+<thead>
+<tr>
+<th>Audio Type</th>
+<th>In-game config label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BGM</code></td>
+<td>Music</td>
+</tr>
+<tr>
+<td><code>SE</code></td>
+<td>Effects</td>
+</tr>
+<tr>
+<td><code>System SE</code></td>
+<td>Interface</td>
+</tr>
+</tbody>
+</table>
+<p>By accessing the in-game config, the player may set the volume of each audio type.</p>
+<p><img alt="HEOAudio_2" src="img/HEOAudio_2_en.jpg" /></p>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>Upon using HEOAudio for playing BGM, consider the following:</p>
 <ul>
-<li>When a video file is playing, the priority goes to the video sound.</li>
-<li>Does not support distance falloff.</li>
+<li>When a video file is playing, the video audio will be prioritized.</li>
+<li>SDK does not support distance falloff.</li>
 </ul>
+</div>
                 
               
               
