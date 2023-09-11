@@ -135,6 +135,7 @@ plugins:
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
           Debug Console: デバッグコンソール
+          Debug Messages: デバッグメッセージ一覧
           Check Tool: チェックツール
           World Making Guide: ワールド制作ガイド
           Avatar File: アバターファイル
@@ -167,6 +168,7 @@ nav:
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
     - Debug Console: debugconsole/debugconsole.md
+    - Debug Messages: debugconsole/debugmessage.md
     - Check Tool: checktool/checktool.md
     - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
     - Texture Compression : heoexporter/he_TextureCompression.md
