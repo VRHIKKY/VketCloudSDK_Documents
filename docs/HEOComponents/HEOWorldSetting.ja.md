@@ -24,13 +24,6 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `Use GamePad` | ゲームパッドを使用するかどうかの設定です。 |
 | `Use Physics Engine` | 物理エンジンを使用するかどうかの設定です。 |
 | `Favicon` | Faviconを設定する項目です。 |
-| `HeliScript` | ワールド内で使用されるHeliScriptが一覧表示されます。[HEOScript](../Unity/HEOScript.md)などで指定したHeliScriptは本項目にリストアップされます。|
-
-!!! note
-    `HeliScript`は基本的には自動で項目が追加されますが、ファイルの削除などによって項目に`None`(未指定)または`Missing`が発生する場合があります。
-    HeliScriptの項目内が`None`(未指定)または`Missing`の状態はビルドエラーの原因になるため、ご注意ください。
-
-![HeliScriptMistake](img/HEOWorldSetting_BasicInfo_HeliscriptMistake.jpg)
 
 ---
 
