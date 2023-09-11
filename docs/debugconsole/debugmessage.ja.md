@@ -1,9 +1,9 @@
 # デバッグメッセージ一覧
 
-ここでは[デバッグコンソール](debugconsole.md)にて表示されるエラーの一覧を示します。
-なお、Unityの挙動に起因するビルドエラーなど、本一覧にないエラーはコンソール内の「未知」カテゴリーに分類・表示されます。
+ここでは[デバッグコンソール](debugconsole.md)にて表示されるエラー・アラートの一覧を示します。
+なお、Unityの挙動に起因するビルドエラーなど、本一覧にないエラー・アラートはコンソール内の「未知」カテゴリーに分類・表示されます。
 
-|ビルドエラー (⛔) / アラート (⚠)|エラーカテゴリー|エラー内容|エラー修正の提案文|参照リンク|
+|ビルドエラー (⛔) / アラート (⚠)|メッセージカテゴリー|メッセージ内容|メッセージ修正の提案文|参照リンク|
 |-----|-----|-----|-----|-----|
 |Error|Unity Option Alert|お使いのUnityバージョンは、VketCloudSDKのサポート対象外です。|2019.4.31f1にバージョンを変更してください。|[Download Archive](https://unity.com/ja/releases/editor/archive#download-archive-2019) |
 |Alert|Unity Option Alert|Color SpaceがLinearに設定されていません。ビルド後の見た目が大きく異なる可能性があります。|Color SpaceをLinearに設定してください。| [VketCloudSDKの動作環境](../AboutVketCloudSDK/OperatingEnvironment.md) |
