@@ -14,7 +14,6 @@
 |Error|Essential Objects Error|[HEODespawnHeight](../HEOComponents/HEODespawnHeight.md)を持つオブジェクトがシーンに存在しません。|[HEODespawnHeight](../HEOComponents/HEODespawnHeight.md)を持つオブジェクトを作成してください。|[ワールドの基本要素](../FirstStep/WorldBasicComponents.md) |
 |Alert|Video Alert|サポートされていない形式の動画ファイルが使用されています。|動画はVketCloudがサポートする動画形式に変換してください。||
 |Alert|Video Alert|動画サイズが、Debug Log Console設定の最大動画サイズよりも大きくなっています。|動画を圧縮してください。もしくは[チェックツール設定](debugconsole.md)から、最大動画サイズを再設定してください。||
-|Alert|Video Alert|サポートされていない形式の動画ファイルが使用されています。|動画はVketCloudがサポートする動画形式に変換してください。||
 |Alert|Video Alert|動画尺が、Debug Log Console設定の最大動画尺よりも大きくなっています。|動画をクロップしてください。もしくは[チェックツール設定](debugconsole.md)から、最大動画尺を再設定してください。||
 |Alert|UI Rendering Error|Sprite Rendererはサポートされていません。|Quadにテクスチャを貼り付けるか、[HEOPlane](../HEOComponents/HEOPlane.md)を使用してください。|
 |Alert|UI Rendering Error|Canvas Rendererはサポートされていません。|Quadにテクスチャを貼り付けるか、[HEOPlane](../HEOComponents/HEOPlane.md)を使用してください。|
@@ -24,7 +23,7 @@
 |Alert|Mesh Renderer Alert|マテリアルが設定されていないオブジェクトが存在します。|対象のオブジェクトのMeshRendererよりマテリアルをアタッチしてください。||
 |Alert|Mesh Renderer Alert|サポートされていないシェーダーが使用されています。|VketCloudでサポートされているシェーダーを割り当ててください。||
 |Alert|Mesh Collider Alert|メッシュコライダーとメッシュレンダラーを同時に持つオブジェクトが存在します。|それぞれのコンポーネントを別々のオブジェクトに分離してください。||
-|Alert|Mesh Collider Alert|HEOMeshColliderを持たないメッシュコライダーが存在します。|VketCloud上でメッシュコライダーを有効にするには、対象のオブジェクトに[HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)を追加してください。||
+|Alert|Mesh Collider Alert|[HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)を持たないメッシュコライダーが存在します。|VketCloud上でメッシュコライダーを有効にするには、対象のオブジェクトに[HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)を追加してください。||
 |Error|Light Map Error|ライトマップサイズが2048を超過しています。|ライトマップサイズを2048以下に設定してください。||
 |Error|Light Map Error|ライトマップの圧縮がオンになっています。|ライトマップの圧縮設定をオフにしてください。||
 |Error|Light Map Error|サポートされていないライトマップ形式が選択されています。|ライトマップ形式はRGB24/RGBA32に設定してください。||
