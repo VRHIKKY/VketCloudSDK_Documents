@@ -23,11 +23,11 @@
 ## About Action Trigger
 For how to use the ActionTrigger, it is described on the following pages.
 
-- [ActionsOverview](../Unity/ActionsOverview.md)
-  - [PhysicsAddVelocity](../Unity/PhysicsAddVelocity.md)
-  - [PhysicsClearAddForce](../Unity/PhysicsClearAddForce.md)
-  - [PhysicsSetEnable](../Unity/PhysicsSetEnable.md)
-  - [PhyscsSetPosRot](../Unity/PhysicsSetPosRot.md)
+- [ActionsOverview](../Actions/ActionsOverview.md)
+  - [PhysicsAddVelocity](../Actions/Physics/PhysicsAddVelocity.md)
+  - [PhysicsClearAddForce](../Actions/Physics/PhysicsClearAddForce.md)
+  - [PhysicsSetEnable](../Actions/Physics/PhysicsSetEnable.md)
+  - [PhyscsSetPosRot](../Actions/Physics/PhysicsSetPosRot.md)
 
 ## About Cylinder Collider
 Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "HEOCylinderCollider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.

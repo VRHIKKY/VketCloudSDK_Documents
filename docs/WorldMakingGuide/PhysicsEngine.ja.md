@@ -24,11 +24,11 @@
 ## Action Triggerについて
 ActionTriggerの使い方に関しては、以下ページに記述しております。
   
-- [ActionsOverview](../Unity/ActionsOverview.md)
-  - [PhysicsAddVelocity](../Unity/PhysicsAddVelocity.md)
-  - [PhysicsClearAddForce](../Unity/PhysicsClearAddForce.md)
-  - [PhysicsSetEnable](../Unity/PhysicsSetEnable.md)
-  - [PhyscsSetPosRot](../Unity/PhysicsSetPosRot.md)
+- [ActionsOverview](../Actions/ActionsOverview.md)
+  - [PhysicsAddVelocity](../Actions/Physics/PhysicsAddVelocity.md)
+  - [PhysicsClearAddForce](../Actions/Physics/PhysicsClearAddForce.md)
+  - [PhysicsSetEnable](../Actions/Physics/PhysicsSetEnable.md)
+  - [PhyscsSetPosRot](../Actions/Physics/PhysicsSetPosRot.md)
 
 ## シリンダーコライダーについて
 通常Unityではシリンダーコライダーは無く、それはカプセルコライダーで代用されますが、VketCloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で『HEOCylinderCollider』をアタッチすることで、VketCloudの物理エンジン限定でシリンダーコライダーとして使用することができます。
