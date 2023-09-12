@@ -181,6 +181,7 @@ nav:
     - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
     - HEOField: HEOComponents/HEOField.md
     - HEOPlayer: HEOComponents/HEOPlayer.md
+    - HEOSpawn: HEOComponents/HEOSpawn.md
     - HEOObject: HEOComponents/HEOObject.md
     - HEOLODLevel: HEOComponents/HEOLODLevel.md
     - HEOAudio: HEOComponents/HEOAudio.md
