@@ -23,6 +23,9 @@ HEO Collider is a component to set what kind of collision detection a collider h
 | `Reflection Probe` | Enable reflection probes on touch. |
 | `in View` | Handled when you want to judge whether or not the object entered the field of view |
 
+!!! note caution
+        In the SDK version 4.8, an defect enabling a `clickable` object to be clickable over another collider is recognized.<br>
+        Avoid this defect by disabling the player to click from an unexpected position by world design, or implement a gimmick to limit the clickable range using the [HEOClickGuide](HEOClickGuide.md).
 
 ## Collider target
 | Target | Function |
