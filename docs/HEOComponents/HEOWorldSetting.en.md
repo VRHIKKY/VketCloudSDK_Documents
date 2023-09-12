@@ -35,6 +35,10 @@ This component lets you configurate the following settings:
         In this SDK version, gamepads are unable to be used regardless of `Use GamePad` settings.<br>
         For using gamepads, please consider using other SDK versions.
 
+!!! note caution
+        In SDK version 5.4, playing emotes in local build is disabled while disabling the `Multi Play Mode In Local Build` (i.e. entering in single play mode) due to defect.<br>
+        On testing emotes in local build, please enable the `Multi Play Mode In Local Build`.
+
 ---
 
 ## Camera
