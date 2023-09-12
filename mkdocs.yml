@@ -265,6 +265,32 @@ nav:
     - Browser does not open: troubleshooting/BrowserNotOpen.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
+- Release Note:
+    - v5.x:
+        - v5.4: releasenote/releasenote-5.4.md
+        - v5.3: releasenote/releasenote-5.3.md
+        - v5.2: releasenote/releasenote-5.2.md
+        - v5.1: releasenote/releasenote-5.1.md
+        - v5.0: releasenote/releasenote-5.0.md
+    - v4.x:
+        - v4.8: releasenote/releasenote-4.8.md
+        - v4.7: releasenote/releasenote-4.7.md
+        - v4.6: releasenote/releasenote-4.6.md
+        - v4.5: releasenote/releasenote-4.5.md
+        - v4.4: releasenote/releasenote-4.4.md
+        - v4.3: releasenote/releasenote-4.3.md
+        - v4.2: releasenote/releasenote-4.2.md
+        - v4.1: releasenote/releasenote-4.1.md
+        - v4.0: releasenote/releasenote-4.0.md
+    - v3.x:
+        - v3.9: releasenote/releasenote-3.9.md  
+        - v3.8: releasenote/releasenote-3.8.md
+        - v3.7: releasenote/releasenote-3.7.md
+        - v3.6: releasenote/releasenote-3.6.md
+        - v3.5: releasenote/releasenote-3.5.md
+        - v3.4: releasenote/releasenote-3.4.md
+        - v3.3: releasenote/releasenote-3.3.md
+        - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - v5.x:
         - v5.4: changelog/changelog-5.4.md

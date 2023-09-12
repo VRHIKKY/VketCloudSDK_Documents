@@ -1,12 +1,5 @@
-# 5.1.0
-- The new UI2023 has been implemented.
-- A fixed problem that contains unnecessary domain names in Roomid in the room URL.
-- The default dummy avatar has been changed.
-- A fixed problem that the dummy avatar cannot be deleted from the list.
-- The starting port of the particle editor has been fixed.
-- The problem that HEO components can be attached when logging out has been fixed.
-- The translation mistake of Heocollider has been modified.
-- A fixed GTAG UI in HeoActionTrigger.
-- Heoobject show field has been turned on by default.
-- A added myavatar to HeOWORLDSETTING.
-- Avified the problem that the Height of Avatarfile is not written in the scene file.
+# 追加されたページ
+
+# 変更されたページ
+
+# 削除されたページ
