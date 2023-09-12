@@ -31,6 +31,10 @@ This component lets you configurate the following settings:
 
 ![HeliScriptMistake](img/HEOWorldSetting_BasicInfo_HeliscriptMistake.jpg)
 
+!!! note caution
+        In this SDK version, gamepads are unable to be used regardless of `Use GamePad` settings.<br>
+        For using gamepads, please consider using other SDK versions.
+
 ---
 
 ## Camera
