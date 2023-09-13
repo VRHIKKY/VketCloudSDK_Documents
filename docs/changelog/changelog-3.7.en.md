@@ -1,5 +1,5 @@
-# 追加されたページ
+# Added Pages
 
-# 変更されたページ
+# Edited Pages
 
-# 削除されたページ
+# Deleted Pages

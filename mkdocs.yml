@@ -131,6 +131,7 @@ plugins:
           Browser does not open: ブラウザが立ち上がらない
           Changes are not applied: 変更が更新されない
           First Step: ワールド制作の基本
+          Release Note: リリースノート
           Change Log: チェンジログ
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
