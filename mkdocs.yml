@@ -171,7 +171,7 @@ nav:
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
-    - Check Tool: checktool/checktool.md
+    #- Check Tool: checktool/checktool.md #デバッグコンソール新設に伴い廃止。アーカイブのためファイルは残す
     - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
     - Texture Compression : heoexporter/he_TextureCompression.md
     - Particle Editor :
