@@ -1,3 +1,5 @@
+# HEOWorldSetting
+
 HEOWorldSettingはワールドの基本設定を取りまとめるコンポーネントで、以下の設定を管理しています。
 
 - 基本情報
@@ -13,12 +15,19 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 |  Label |  function  |
 | ----   | ---- |
-|  `World Name` |  ワールド名を設定する項目です。URLなどに反映されます。|
+|  `World Name` |  ワールド名を設定する項目です。基本的にはワールド作成時に自動生成されたIDがアップロード時に自動入力され、URLなどに反映されます。<br> (例：[VketID_of_Creator].cloud.vket.com/worlds/[World_Name])|
 |  `Debug Mode` |  デバッグモードを切り替えることができます。オンにするとブラウザ上で`F1`または`F2`からデバッグ機能を使用することが可能になります。|
 | `VRM Drop` |  ブラウザ上へのVRMドロップによるローカルの(他プレイヤーから見えない)アバター変更を許可します。 |
 | `Occulusion Culling` | オクルージョンカリングをオンにします。　|
-| `World Name Directory` | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。(ex. data/field/`ワールド名`/world.heo)|
+| `World Name Directory` | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。<br>(例： data/field/`ワールド名`/world.heo)|
 | `Multi Play Mode In Local Build` | ローカルビルド時にマルチプレイモードで入室します。 |
+| `Use GamePad` | ゲームパッドを使用するかどうかの設定です。 |
+| `Use Physics Engine` | 物理エンジンを使用するかどうかの設定です。 |
+| `Favicon` | Faviconを設定する項目です。 |
+
+!!! note caution
+        本SDKバージョンではゲームパッドは`Use GamePad`の設定の如何に関わらず使用することができません。<br>
+        ゲームパッドを使用したい場合は他のSDKバージョンの使用をご検討ください。
 
 ---
 
@@ -30,19 +39,35 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 |  `Smoothing` | カメラの上下の動きにスムージングをかけるかどうかを指定します。 |
 |  `far Offset` | TPSカメラの注視点を上下に調整できます。 |
 |  `near Offset` | TPSカメラの注視点を上下に調整できます。 |
+| `Photo Radius` | 撮影モードカメラの移動可能半径を指定します。|
+| `Raycast Max Distance` | クリック判定をおこなうカメラからの最大距離をメートル単位で指定します。 |
+| `Default TPS Camera` | TPSカメラのオフセットを指定できます。`center`：真後ろ（デフォルト）`right`：右肩越し（一般的なTPSカメラ）`left`：左肩越し |
 
 ---
 
 ## 描画設定
-![Rendering](img/HEOWorldSetting_Rendering.jpg)
+![Rendering_1](img/HEOWorldSetting_Rendering_1.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
 | `PBR` |  PBRライティングをオンにします。|
 | `Directional Light` | シーンに設置されたディレクショナルライトをワールドライトとして指定します。 |
+| `Fade In Time` |　ワールド入場時のホワイトフェードインの時間を秒単位で指定します。|
+| `Shadow Type`|　影の描画方法を指定します。`round`は 丸影、`normalshadowmap`は通常のシャドウマップです。|
+| `Shadow Bias` |　影描画のバイアス値を設定します。|
+| `Shadow Area Size` |　シャドウを描画する距離をメートル単位で指定します。|
+| `Shadow Fade Size` |　シャドウ外周に向かってフェードアウトする距離をメートル単位で指定します。　|
 | `Projection Near` |  近傍のクリッピング距離を指定します。 |
 | `Projection Far` | 遠方のクリッピング距離を指定します。  |
 | `Projection Degree` | 画角を指定します。（デフォルト値推奨） |
+| `Bloom` | ブルームのオンオフを切り替えます。 |
+| `Light Scattering` | ライトスキャッタリングのオンオフを切り替えます。 |
+| `IBL` | IBL（Image-Based Lighting）のオンオフを切り替えます。 |
+
+![Rendering_2](img/HEOWorldSetting_Rendering_2.jpg)
+
+|  Label |  function  |
+| ----   | ---- |
 | `Bloom` | ブルームのオンオフを切り替えます。 |
 | `Bloom Intensity` | ブルームの強さを設定します。|
 | `Bloom Threshold` | ブルームの閾値を設定します。 |
@@ -56,6 +81,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `IBL` | IBL（Image-Based Lighting）のオンオフを切り替えます。 |
 | `DiffuseSize` | ディフューズマップのサイズを指定します。 |
 | `SpecularSize` | スペキュラマップのサイズを指定します。 |
+| `Specular Mip Map Count` | スペキュラ用キューブマップのミップマップの数を指定します。 |
 
 ---
 
@@ -66,13 +92,22 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | ----   | ---- |
 | `Dummy Avatar` | 遠方や描画制限がかかった場合に描画するダミーアバターを指定します。 |
 | `Avatar Files` | アバター情報をまとめたアバターファイルを指定します。アバターファイルについては、[こちら](../WorldMakingGuide/AvatarFile.md)をご覧ください。 |
+| `CreateAvatarFile` | 新規のアバターファイルを生成します。 |
 
 ---
 
 ## マイアバター設定
-![MyAvatar](img/HEOWorldSetting_MyAvatar.jpg)
+![MyAvatar_1](img/HEOWorldSetting_MyAvatar_1.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
 | `NSFW` |  NSFW（Not Safe For Work: 閲覧注意）なアバターの表示を制限します。|
 | `Polygon` | そのワールド内で使用できるマイアバターのポリゴン上限を指定します。 |
+| `Motion` | マイアバターが使用するモーションを指定します。|
+
+![MyAvatar_2](img/HEOWorldSetting_MyAvatar_2.jpg)
+
+|  Label |  function  |
+| ----   | ---- |
+| `Emotion` | マイアバターが使用するエモートを指定します。|
+| `Objects` | マイアバターに物を持たせたい場合に、モデルを指定します。|
