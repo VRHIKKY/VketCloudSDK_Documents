@@ -186,6 +186,7 @@ nav:
     - HEOLODLevel: HEOComponents/HEOLODLevel.md
     - HEOAudio: HEOComponents/HEOAudio.md
     - HEOPlane: HEOComponents/HEOPlane.md
+    - HEOClickGuide: HEOComponents/HEOClickGuide.md
     - HEOUVScroller: HEOComponents/HEOUVScroller.md
     - HEOTextPlane: HEOComponents/HEOTextPlane.md
     - HEOParticle: HEOComponents/HEOParticle.md

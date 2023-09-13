@@ -11,3 +11,7 @@ You can remove the last action by clicking Delete.
 
 For actions, see [Actions Overview](../Actions/ActionsOverview.md). <br>
 For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide/UnityGuidelines.md).
+
+!!! note caution
+        In the SDK version 4.8, an defect enabling a `clickable` object to be clickable over another collider is recognized.<br>
+        Avoid this defect by disabling the player to click from an unexpected position by world design, or implement a gimmick to limit the clickable range using the [HEOClickGuide](HEOClickGuide.md).
