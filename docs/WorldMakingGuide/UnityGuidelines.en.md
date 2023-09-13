@@ -46,6 +46,10 @@ Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionPro
 * Colliders lower than the knee can be climbed. But be careful, too large colliders may hamper the movement of the camera.
 * Make sure to disable the MeshRenderer. If you set the size of Materials to 0 and hide it, an output error will occur.
 
+!!! note caution
+        In the SDK version 4.8, an defect enabling a `clickable` object to be clickable over another collider is recognized.<br>
+        Avoid this defect by disabling the player to click from an unexpected position by world design, or implement a gimmick to limit the clickable range using the [HEOClickGuide](../HEOComponents/HEOClickGuide.md).
+
 ## Skybox
 * Skybox is not supported. Please avoid the sky or use celestial sphere object instead.
 
