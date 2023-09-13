@@ -31,6 +31,14 @@ This component lets you configurate the following settings:
 
 ![HeliScriptMistake](img/HEOWorldSetting_BasicInfo_HeliscriptMistake.jpg)
 
+!!! note caution
+        In all SDK versions currently released including version 5.4, gamepads are unable to be used regardless of `Use GamePad` settings.<br>
+        This issue is scheduled to be fixed at the next release version.
+
+!!! note caution
+        In SDK version 5.4, playing emotes in local build is disabled while disabling the `Multi Play Mode In Local Build` (i.e. entering in single play mode) due to defect.<br>
+        On testing emotes in local build, please enable the `Multi Play Mode In Local Build`.
+
 ---
 
 ## Camera
