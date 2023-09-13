@@ -1,7 +1,7 @@
 
 # はじめに
   
-VketCloudSDKは、VketCloudエンジンを使用したコンテンツ制作のための開発キットです。  
+VketCloudSDKは、Vket Cloudエンジンを使用したコンテンツ制作のための開発キットです。  
   
 SDKの利用には、`各種アカウントへの登録`と`指定バージョンのUnity`が必要です。  
   

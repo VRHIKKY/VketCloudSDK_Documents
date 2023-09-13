@@ -1,9 +1,9 @@
 
 # Overview
 
-Vket Cloud SDK is the developer kit for creating a virtual worlds with Vket Cloud Engine.  
+VketCloudSDK is the developer kit for creating virtual worlds using the Vket Cloud Engine.  
 
-To create contents, you need to register VketAccount and install Unity.  
+To use the SDK, you need to  `Setup the required accounts` and `install the supported Unity version`.  
 
 If you are new to Vket Cloud, please try the following.  
 
@@ -11,6 +11,6 @@ If you are new to Vket Cloud, please try the following.
 
 2. **[Set up Unity](AboutVketCloudSDK/OperatingEnvironment.md)**
 
-3. **[Set up SDK_external](AboutVketCloudSDK/SetupSDK_external.md)**
+3. **[Set up the VketCloudSDK](AboutVketCloudSDK/SetupSDK_external.md)**
 
-4. **[Login SDK](AboutVketCloudSDK/LoginSDK.md)**
+4. **[Login to the SDK](AboutVketCloudSDK/LoginSDK.md)**
