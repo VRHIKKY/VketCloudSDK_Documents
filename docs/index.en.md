@@ -14,3 +14,7 @@ If you are new to Vket Cloud, please try the following.
 3. **[Set up the VketCloudSDK](AboutVketCloudSDK/SetupSDK_external.md)**
 
 4. **[Login to the SDK](AboutVketCloudSDK/LoginSDK.md)**
+
+!!! note
+    The updates on each VketCloudSDK version can be checked in the [Release Note](releasenote/releasenote-5.4.md).<br>
+    For checking the version updates of this manual, refer to the [Change Log](changelog/changelog-5.4.md).
