@@ -32,6 +32,14 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ![HeliScriptMistake](img/HEOWorldSetting_BasicInfo_HeliscriptMistake.jpg)
 
+!!! note caution
+        現在、SDKバージョン5.4を含む全てのリリースバージョンにてゲームパッドは`Use GamePad`の設定の如何に関わらず使用することができません。<br>
+        本不具合は次期リリースバージョンにて修正される予定です。
+
+!!! note caution
+        SDKバージョン5.4にて`Multi Play Mode In Local Build`が無効の状態（シングルプレイモード）で入室すると、ローカルビルドを行った際にエモートが再生できなくなる現象が確認されております。<br>
+        ローカルビルドでエモートの挙動を確認したい際は、`Multi Play Mode In Local Build`を有効にしてください。
+
 ---
 
 ## カメラ設定
