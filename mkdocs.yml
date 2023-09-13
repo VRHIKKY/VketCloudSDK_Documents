@@ -134,6 +134,7 @@ plugins:
           Changes are not applied: 変更が更新されない
           First Step: ワールド制作の基本
           Change Log: チェンジログ
+          Release Note: リリースノート
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
           Debug Console: デバッグコンソール
