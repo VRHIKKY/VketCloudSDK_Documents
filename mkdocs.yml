@@ -127,6 +127,7 @@ plugins:
           Property: プロパティウィンドウ
           Animation Converter : アニメーションコンバーター
           Trouble shooting: トラブルシューティング
+          SDK does not appear after install: SDKがインストール後に立ち上がらない
           Build Error: ビルドエラー
           Browser does not open: ブラウザが立ち上がらない
           Changes are not applied: 変更が更新されない
@@ -261,6 +262,7 @@ nav:
         - Control Statement: hs/hs_statement_constrol.md
         - Operator: hs/hs_operator.md
 - Trouble shooting:
+    - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Build Error: troubleshooting/BuildError.md
     - Browser does not open: troubleshooting/BrowserNotOpen.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md

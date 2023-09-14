@@ -41,3 +41,8 @@ Select VketCloudSDK from the displayed list and press the “Install” button t
 Installation is complete if the item "VketCloudSDK" is added to the Unity menu.
 
    ![header](img/header.png)
+
+!!! note 
+      If VketCloudSDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
+      One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
+      If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
