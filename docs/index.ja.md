@@ -1,7 +1,7 @@
 
 # はじめに
   
-VketCloudSDKは、VketCloudエンジンを使用したコンテンツ制作のための開発キットです。  
+VketCloudSDKは、Vket Cloudエンジンを使用したコンテンツ制作のための開発キットです。  
   
 SDKの利用には、`各種アカウントへの登録`と`指定バージョンのUnity`が必要です。  
   
@@ -16,3 +16,7 @@ SDKの利用には、`各種アカウントへの登録`と`指定バージョ�
 4. **[SDKログイン](AboutVketCloudSDK/LoginSDK.md)**
 
 を順番に実行してください。
+
+!!! note
+    VketCloudSDKのバージョンごとの更新情報は[リリースノート](releasenote/releasenote-5.4.md)から確認できます。<br>
+    また、[チェンジログ](changelog/changelog-5.4.md)では本マニュアルの更新情報が確認できます。
