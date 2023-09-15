@@ -1,5 +1,7 @@
 # オブジェクトをアニメーションさせる
 
+![]()
+
 VketCloudSDKでは、[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
 動くオブジェクトがワールド上に設置されることで、見栄えが大きく向上します。
 
@@ -16,34 +18,61 @@ VketCloudSDKでは、[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポ�
 
 ### .hemファイル(Heliodor Export Motionファイル)を書き出す
 
-1\. 動かすためのCubeオブジェクト（下記スクリーンショットではCube(5)に該当）を新規に作成し、Position(0,0,0)地点に設置します。<br>
-    その後、空のオブジェクトも追加で作成し、Cubeオブジェクトをその下に入れます。
+1\. アニメーション作成用に空の親オブジェクト(下記画像におけるAnimationBase)と動かすためのCubeオブジェクト（下記画像におけるCubeRotation）を新規作成し、親子関係をヒエラルキーにて構成した上でともにPosition(0,0,0)地点に設置します。<br>
+    
+![PropAnimation_1](./img/PropAnimation_1.jpg)
 
 2\. 空オブジェクトを選択し、InspectorビューのAdd ComponentからAnimationを追加します。<br>
     誤ってCubeオブジェクトに対してAnimationを追記しないよう注意してください。
+
+![PropAnimation_2](./img/PropAnimation_2.jpg)
 
 !!! note
         類似コンポーネントにAnimatorがありますが、こちらは使用しないので注意してください。
 
 3\. Window > Animation > AnimationまたはCtrl+6でアニメーションタブを出します。
 
-4\. **空オブジェクト**を選択している状態でAnimationタブを表示し、画像の表示のCreateをクリックし、.anim形式のファイルを作成します。
+![PropAnimation_3](./img/PropAnimation_3.jpg)
 
-空オブジェクトのInspectorのAnimationsのプロパティに作成したアニメーションが設定されていることを確認します。
+4\. Animation Clipを作ります。<br> **空の親オブジェクト**を選択している状態でAnimationタブを表示し、画像の表示のCreateをクリックし、.anim形式のファイルを作成します。
+
+![PropAnimation_4](./img/PropAnimation_4.jpg)
+
+空の親オブジェクトのInspectorのAnimationsのプロパティに作成したアニメーションが設定されていることを確認します。
+
+![PropAnimation_5](./img/PropAnimation_5.jpg)
 
 5\. Projectビューで作成したアニメーションファイルを確認します。<br>
 Inspectorビューが下記画像のようになっていたらOKです。
 
+![PropAnimation_6](./img/PropAnimation_6.jpg)
+
 もし、下記画像のように上記とInspectorビューの中身が異なる場合、追加作業が必要です。
+
+![PropAnimation_7](./img/PropAnimation_7.jpg)
+
+右上の縦に並んだ「…」を選択し、Debugを選択します。
+
+![PropAnimation_8](./img/PropAnimation_8.jpg)
+
+Legacyにチェックを入れます。
+
+![PropAnimation_9](./img/PropAnimation_9.jpg)
+
+再度「…」を選び、Normalを選択して作業完了です。
+
+![PropAnimation_10](./img/PropAnimation_10.jpg)
 
 6\. AnimationウィンドウにてAdd Propertyで動かしたい項目を選びます。<br>
 空オブジェクトを選択していることを確認し、Animationウインドウを開きます。Add Propertyを選択すると、子オブジェクトであるCubeオブジェクトが確認できます。<br>
 
-ここでは、Cube(5) - Transformから、PositionとRotationを選択します。＋ボタンを押すことで、項目を追加することができます。それぞれ追加してください。
+ここでは、CubeRotation - Transformから、RotationとScaleを選択します。＋ボタンを押すことで、項目を追加することができます。それぞれ追加してください。
+
+![PropAnimation_11](./img/PropAnimation_11.jpg)
 
 !!! note
         手順②でAdd ComponentでAnimationを追加する際、誤って子オブジェクトのCubeオブジェクトに対してAnimationを追加してしまっていないか確認してください。<br>
-        そのまま作業を進めてしまうとKeyNotFoundException: The given key was not present in the dictionary.が発生する原因となります。
+        そのまま作業を進めてしまうと`KeyNotFoundException: The given key was not present in the dictionary.`が発生する原因となります。
 
 詳しいアニメーションの作り方はここでは説明しませんが、
 - 始点と終点はすべての項目でキーフレームが入力されている必要がある
@@ -52,11 +81,19 @@ Inspectorビューが下記画像のようになっていたらOKです。
 
 キーフレームをいくつか追加し、任意のアニメーションを作成してください。
 
+![PropAnimation_12](./img/PropAnimation_12.jpg)
+
 入力が完了したら、Inspectorビュー上でAnimationを持つオブジェクト（空オブジェクト）を選んだ状態で、画面上部VketCloudSDKタブの「Export Motion」を選択してください。<br>
 選択後、.hemの保存場所選択ウィンドウが起動するので、任意の場所に任意の名前で保存してください。
 
+![PropAnimation_13](./img/PropAnimation_13.jpg)
+
 保存後、Unityのコンソール(標準だと左下)に「Exported」が出たら書き出し完了です。
-エラーが出てしまった場合は [オブジェクトを動かす - できないときは]()  を参照するようにしてください。
+
+![PropAnimation_14](./img/PropAnimation_14.jpg)
+
+!!! note
+        エラーが出てしまった場合は [オブジェクトを動かす - できないときは]() を参照するようにしてください。
 
 ### .heoファイル(Heliodor Export Objectファイル)を書き出す
 
