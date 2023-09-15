@@ -1,6 +1,6 @@
 # オブジェクトをアニメーションさせる
 
-![]()
+![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
 VketCloudSDKでは、[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
 動くオブジェクトがワールド上に設置されることで、見栄えが大きく向上します。
@@ -97,32 +97,51 @@ Legacyにチェックを入れます。
 
 ### .heoファイル(Heliodor Export Objectファイル)を書き出す
 
-上記でAnimationコンポーネントを入れたオブジェクト（空オブジェクト）を選択した状態でVketCloudSDKの「Export Field」を選択してください。
+![PropAnimation_15](./img/PropAnimation_15.jpg)
+
+上記でAnimationコンポーネントを入れたオブジェクト（空オブジェクト）を選択した状態でVketCloudSDKの`「Export Field」`を選択してください。
+
+![PropAnimation_16](./img/PropAnimation_16.jpg)
 
 .hemと同じく保存画面が出ますが、.heoの保存の際は複数オブジェクトが作成されるため、**新しいフォルダを作り、その中に保存すること**を推奨します。<br>
-（上記画像ではAssetsフォルダ内に新規のtestobjectフォルダを作成しています）<br>
+（上記画像ではAssetsフォルダ内に新規のCubeRotationフォルダを作成しています）<br>
 保存が成功すると、以下のポップアップウインドウが表示されます。
+
+![PropAnimation_17](./img/PropAnimation_17.jpg)
 
 正しく保存されたことを確認するため、コンソールタブを開き、下記のような画面が出たら保存完了です。<br>
 
+![PropAnimation_18](./img/PropAnimation_18.jpg)
+
 新しく空のオブジェクトを作成してInspectorタブを選択し、Add Componentを押下し、HEOObjectを追加します。
 
-(この際、Transformはお好きな位置に動かして構いません。)
+![PropAnimation_19](./img/PropAnimation_19.jpg)
 
 .heo or .vrmの”select”の左にある丸ボタンを押下し、先程作成した.heoファイルを選択します。
 
+![PropAnimation_20](./img/PropAnimation_20.jpg)
+
+.heoファイルを入れ、"Show Preview"を選択すると空オブジェクトの位置に選択したheoファイルのプレビューが出現します。<br>
+空オブジェクトのTransformはオブジェクトを生成したい位置に設定します。
+
+![PropAnimation_21](./img/PropAnimation_21.jpg)
+
 Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示された欄の.hemに作成した.hemファイルを入れます。
+
+![PropAnimation_22](./img/PropAnimation_22.jpg)
 
 ループアニメーションの場合は、loopにチェックを入れます。<br>
 この状態でビルドすることで、アニメーション付きのオブジェクトをシーン上に出すことができます。
 
+![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
+
 !!! note caution
-        .heo書き出しの注意点<br>
-        元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、HEOObjectにてシーン上に配置した際に、HEOObjectのPosition + 書き出し時のPositionになります。<br>
-        元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
-        .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
-        Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
-        自動再生したくない場合は、Motionは空欄にしてください<br>
+        .heo書き出しの注意点：<br>
+        - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、HEOObjectにてシーン上に配置した際に、HEOObjectのPosition + 書き出し時のPositionになります。<br>
+        - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
+        - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
+        - Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
+          自動再生したくない場合は、Motionは空欄にしてください<br>
 
 ## HEOObjectに付与したアニメーションの制御
 
