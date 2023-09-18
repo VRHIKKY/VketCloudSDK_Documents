@@ -54,5 +54,10 @@ Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionPro
 ## Skybox
 * Skybox is not supported. Please avoid the sky or use celestial sphere object instead.
 
+## Scale
+* If an object is set to a negative scale, its mesh's normal will turn to the inside. Unlike Unity's scene view, the mesh will be drawed inside the object in the world.<br>
+* If a negative scaled object exists in the scene, the [Debug Console](../debugconsole/debugconsole.md) will generate a warning.<br>
+* We recommend to fix negative scales if it's not set intentionally.
+
 ## Object
 HEOExport does not support multiple selection. To export as a single object, create a parent object, store the target object inside it, and export the parent object.
