@@ -113,7 +113,7 @@ Legacyにチェックを入れます。
 
 ![PropAnimation_18](./img/PropAnimation_18.jpg)
 
-新しく空のオブジェクトを作成してInspectorタブを選択し、Add Componentを押下し、HEOObjectを追加します。
+新しく空のオブジェクトを作成してInspectorタブを選択し、Add Componentを押下し、[HEOObject](../HEOComponents/HEOObject.md)を追加します。
 
 ![PropAnimation_19](./img/PropAnimation_19.jpg)
 
@@ -137,7 +137,7 @@ Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示され�
 
 !!! note caution
         .heo書き出しの注意点：<br>
-        - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、HEOObjectにてシーン上に配置した際に、HEOObjectのPosition + 書き出し時のPositionになります。<br>
+        - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、[HEOObject](../HEOComponents/HEOObject.md)にてシーン上に配置した際に、[HEOObject](../HEOComponents/HEOObject.md)のPosition + 書き出し時のPositionになります。<br>
         - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
         - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
         - Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
@@ -147,30 +147,89 @@ Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示され�
 
 ### Actionを使用した制御
 
-PlayItemでHEOObjectに付与したアニメーションの再生が可能です。<br>
-IndexはPlayItemにObject TypeがMotionのオブジェクトを入れた際に出現します。
+[PlayItem](../Actions/Item/PlayStopItem.md)で[HEOObject](../HEOComponents/HEOObject.md)に付与したアニメーションの再生が可能です。<br>
+Indexは[PlayItem](../Actions/Item/PlayStopItem.md)にObject TypeがMotionのオブジェクトを入れた際に出現します。
 
 !!! note 
-        PlayItem：再生する。Indexは再生対象となるMotion番号<br>
+        [PlayItem](../Actions/Item/PlayStopItem.md)：アイテムを再生する。Indexは再生対象となるMotion番号です。<br>
         PlayItemはMotionの入ったHEOオブジェクトのほか、AudioやParticleに対しても有効です。
 
 アニメーションするCubeのアニメーションを2番目に設定し、Loopしないようにし、BeginActions上部の”Add”をクリックしてMotion欄を追加します。<br>
 1つ目のMotionでは.hemに指定されているモーションを削除し、2つ目のMotionに.hemファイルを指定します。
 
+![PropAnimation_23](./img/PropAnimation_23.jpg)
+
 Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてHEO Action Triggerを追加します。<br>
 
-Actionsの下のList is Emptyと書かれている右下の＋ボタンを押下し、PlayItemを選択します。<br>
+![PropAnimation_24](./img/PropAnimation_24.jpg)
+
+Actionsの下のList is Emptyと書かれている右下の＋ボタンを押下し、[PlayItem](../Actions/Item/PlayStopItem.md)を選択します。<br>
+
+![PropAnimation_25](./img/PropAnimation_25.jpg)
+
 
 Targetの欄で.heoと.hemを追加したオブジェクトを選択したし、対象となるMotionのIndex番号を入力します。<br>
 先程1つ目のMotionは空にし（Index 0）、2つ目のMotion（Index 1）に作動させたいMotionを設定したため、Indexは1と入力します。
 
+![PropAnimation_26](./img/PropAnimation_26.jpg)
+
 ビルドすると、クリックした時のみCubeが回転（Motionが再生）するようになります。
 
+![PropAnimation_Result_2](./img/PropAnimation_Result_2.gif)
+
 !!! note
-        StopItemについて<br>
-        PlayItemの対になるアクションにStopItemがあります<br>。
-        一見、再生中のアニメーションを停止しそうなアクションですが、<br>
-        StopItemの効果はbeginactionの停止であり、再生中のアニメーションはBeginActionsに該当しないので止まりません。<br>
+        [StopItem](../Actions/Item/PlayStopItem.md)について：<br>
+        [PlayItem](../Actions/Item/PlayStopItem.md)の対になるアクションに[StopItem](../Actions/Item/PlayStopItem.md)があります。<br>
+        一見、再生中のアニメーションを停止しそうなアクションですが、StopItemの効果はbeginactionの停止であり、再生中のアニメーションはBeginActionsに該当しないので止まりません。<br>
         StopItemはパーティクルやサウンドを止めるのに使うことができます。
 
 ### HeliScriptを使用した制御
+
+HeliScriptを使用して、アニメーションの制御を行うことができます。<br>
+例として、以下のように3秒ごとにアニメーションの再生を繰り返すHeliScriptが作成できます。<br>
+
+ここでは[Itemクラス](../hs/hs_class_item.md)のChangeMotion()を使用して[HEOObject](../HEOComponents/HEOObject.md)内のモーションを制御しています。<br>
+
+``````
+component SwitchAnimation
+{
+    // 回転キューブ
+    Item m_RotationCube;
+    float m_ParseTime;
+
+    bool isMotionChangeTriggered;
+
+    public SwitchAnimation() //コンストラクタ
+    {
+        m_RotationCube = hsItemGet("CubeRotation_HEO"); //HEOObjectをアタッチしているオブジェクト名を入れる
+    }
+
+    public void Update()
+    {
+        m_ParseTime += system.GetDeltaTime();
+
+        if (m_ParseTime >= 3.0f)
+        {
+            if (isMotionChangeTriggered)
+            {
+                m_RotationCube.ChangeMotion("0");
+                isMotionChangeTriggered = false;
+            }
+            else
+            {
+                m_RotationCube.ChangeMotion("1");
+                isMotionChangeTriggered = true;
+            }
+            m_ParseTime = 0.0f;
+        }
+    }
+}
+``````
+
+作成したHeliScriptは、HEOScriptを使用してワールド内に配置します。
+
+![PropAnimation_27](./img/propanimation_27.jpg)
+
+ワールドをビルドすると、該当のHeliScriptが動作してアニメーションを制御します。
+
+![PropAnimation_Result_3](./img/PropAnimation_Result_3.gif)
