@@ -1,5 +1,7 @@
 # 追加されたページ
 - [HEOSpot](../HEOComponents/HEOSpot.md)
+- [HEOSpawn](../HEOComponents/HEOSpawn.md)
+- [HEOClickGuide](../HEOComponents/HEOClickGuide.md)
 - [SDKがインストール後に立ち上がらない](../troubleshooting/InstallingDeeplink.md)
 - [デバッグコンソール](../debugconsole/debugconsole.md)
 - [デバッグメッセージ](../debugconsole/debugmessage.md)
