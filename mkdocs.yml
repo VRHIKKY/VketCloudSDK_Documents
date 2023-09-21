@@ -133,6 +133,7 @@ plugins:
           Changes are not applied: 変更が更新されない
           World URL does not open the world: ワールドURLを使用してワールドが開けない
           Missing Components After Version Update: バージョンアップ後にComponentがMissingとして表示される
+          Private room indication disappears on reloading the world check page: アップロードしたワールドの確認時にリロードするとPrivateの表記が消える
           First Step: ワールド制作の基本
           Release Note: リリースノート
           Change Log: チェンジログ
@@ -271,6 +272,7 @@ nav:
     - Missing Components After Version Update: troubleshooting/MissingComponents.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
     - World URL does not open the world: troubleshooting/URLError.md
+    - Private room indication disappears on reloading the world check page: troubleshooting/PrivateDisappear.md
 - Release Note:
     - v5.x:
         - v5.4: releasenote/releasenote-5.4.md
