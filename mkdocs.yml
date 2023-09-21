@@ -130,6 +130,7 @@ plugins:
           SDK does not appear after install: SDKがインストール後に立ち上がらない
           Build Error: ビルドエラー
           Browser does not open: ブラウザが立ち上がらない
+          Browser window blackouts: ブラウザウィンドウが暗転したまま動かない
           Changes are not applied: 変更が更新されない
           World URL does not open the world: ワールドURLを使用してワールドが開けない
           Missing Components After Version Update: バージョンアップ後にComponentがMissingとして表示される
@@ -269,6 +270,7 @@ nav:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Build Error: troubleshooting/BuildError.md
     - Browser does not open: troubleshooting/BrowserNotOpen.md
+    - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
     - Missing Components After Version Update: troubleshooting/MissingComponents.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
