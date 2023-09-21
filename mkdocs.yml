@@ -142,6 +142,8 @@ plugins:
           Check Tool: チェックツール
           World Making Guide: ワールド制作ガイド
           Avatar File: アバターファイル
+          How to Animate Objects: オブジェクトをアニメーションさせる
+          How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
           Utility Tools: 補助ツールの使い方
           Login to SDK: SDKにログインする
 
@@ -170,6 +172,8 @@ nav:
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
+    - How to Animate Objects: WorldMakingGuide/PropAnimation.md
+    - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
     #- Check Tool: checktool/checktool.md #デバッグコンソール新設に伴い廃止。アーカイブのためファイルは残す
