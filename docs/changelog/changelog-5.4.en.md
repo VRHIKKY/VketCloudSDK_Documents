@@ -19,6 +19,7 @@
 - [HEOAnimation](../HEOComponents/HEOAnimation.md): Added how to use for HEOAnimation
 - [HEOAudio](../HEOComponents/HEOAudio.md): Added discription according to Ver5.4
 - [Specification Limit of Vket Cloud](../WorldMakingGuide/UnityGuidelines.md): Edited content according to Ver5.4
+- [HEMAnimationConverter](../HEMAnimationConverter/AnimationConverter.md): Revised content according to Ver5.4 *English Version WIP
 
 # Deleted Pages
 - Deleted check tool on Debug Console implementation
