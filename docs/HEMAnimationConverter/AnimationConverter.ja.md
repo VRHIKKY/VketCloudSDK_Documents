@@ -2,7 +2,7 @@
 
 VketCloudで取り扱うアニメーションファイルの形式は、UnityでいうLegacyタイプ(直接ボーンを指定する形式)を使用する必要があります。<br>
 通常、Unity上でのHumanoidアニメーションからLegacyアニメーションへの変換は、ボーンの名前や構造の違いから、同一のキャラクターモデルでしか行うことはできません。<br>
-HEM Animation ConverterはキャラクターモデルAのHumanoidアニメーションをキャラクターモデルBのLegacyアニメーションに変換することができます。
+HEM Animation ConverterはあるキャラクターモデルのHumanoidアニメーションを対象としたキャラクターモデルのLegacyアニメーションに変換することができます。
 
 ## HEM Animation Converterの起動方法
 
@@ -16,7 +16,13 @@ HEM Animation ConverterはキャラクターモデルAのHumanoidアニメーシ
 
 オブジェクトタブでは、変換対象のアニメーションと変換先のモデルを指定します。
 
-![AnimationConverter_2](AnimationConverter_2.jpg)
+初期状態のUI：
+
+![AnimationConverter_2](img/AnimationConverter_2.jpg)
+
+オブジェクトをドラッグ＆ドロップした後のUI：
+
+![AnimationConverter_3](img/AnimationConverter_3.jpg)
 
 | 番号 | 名称 | 機能 |
 |-----|-----|-----|
@@ -36,7 +42,7 @@ HEM Animation ConverterはキャラクターモデルAのHumanoidアニメーシ
 
 ###　設定タブ
 
-![AnimationConverter_3](AnimationConverter_3.jpg)
+![AnimationConverter_4](img/AnimationConverter_4.jpg)
 
 | 番号 | 名称 | 機能 |
 |----|-----|-----|
@@ -75,35 +81,38 @@ HEM Animation ConverterはキャラクターモデルAのHumanoidアニメーシ
 
 ## 使い方
 
-### 1. Animation Converterの選択
-Windowツールバーの「VketCloud SDK」タブから、「HEM Animation Converter」を選択する。
-![altツールバー説明](images/1.jpg)
+### 1. コンバートしたいアニメーションクリップをドラッグ＆ドロップする
 
-### 2. 変数の設定
-アニメーション変換前に変数を設定する必要があります。それぞれの変数の意味は下記のとおりです。
-・Target Model…VKetCloudでアニメーションを再生するキャラモデルです。このモデルはRigタイプがHumanoidである必要があります。アニメーションを変換したのちに、Unity上で該当モデルのRigタイプをLegacyに変換して、アニメーションが変換されるか確認してください。
-・Target Animation…Legacyアニメーションに変換する対象のHumanoidアニメーション
-・Root Bone…キャラクターモデルのルートボーン。例えば、Vketちゃん2号の場合、キャラクターオブジェクトの直下には「Reference」があり、これがルートボーンになります。この子に「Hip」「Spine」などが続きます。このように、もしキャラクターモデルの直下に「Hip」ボーンの親となるボーンがある場合、ルートとして設定する必要があります。
-・Save Folder…変換したアニメーションを保存するフォルダになります。「Select Save Folder」ボタンを押すと、保存先フォルダを直接指定することができます
-・Animation Name…変換後のアニメーションファイルの名前
-・Apply SubBone Animation…変換元のアニメーションのサブボーンを変換対象のモデル用に変換します。ただし、モデルAとモデルBはボーン構造が異なるので、通常はそのまま使用することはできません。使用する場合、同じ親子関係、ボーンの名前にする必要があります。
-・Export HEM File…変換したLegacyアニメーションをHEM形式に変換します
-下記図は、元々Vket2号ちゃん向けに制作されたHumanoidアニメーション(Target)です。そのままLegacy RigタイプのVketちゃん1号(Target Model)に割り当てることはできません。適切なパラメータを設定すると下記図のようになります
-![alt変数設定](images/2.jpg)
-![altRootボーン](images/3.jpg)
-![alt設定済み変数](images/4.jpg)
+![AnimationConverter_5](img/AnimationConverter_5.jpg)
 
-### 3. アニメーションの変換
-全ての変数を設定し終わった後、Convert Animationボタンを押してください。
-変換処理が数秒間行われます。変換処理の終了後、指定のフォルダに変換されたアニメーションが入っています。
+### 2. アニメーションさせたいキャラクタをドラッグ＆ドロップする
 
-### 4. 確認テスト
-試しに変換したアニメーションを再生してみましょう。まず、先ほど変換モデルに使用したHumanoid RigタイプのキャラクターモデルのRigタイプをLegacyに変換し、変換したLegacyアニメーションを割り当ててください。
-元々は左のVketちゃん2号用のHumanoidアニメーションでしたが、変換後はVketちゃん1号が使えるLegacyアニメーション向けに再変換しました。うまく変換が行われていると、図のように同じポーズが再生されるはずです
+![AnimationConverter_6](img/AnimationConverter_6.jpg)
 
-![alt動作確認](images/5.jpg)
+### 3. 細かい設定を変更する場合は設定タブを開いて変更する
 
-### 5. 制約
-現在、Animation Converterはβ版です。下記の問題が確認されており、順次解決していく予定です。
-その他のコンポーネントのアニメーション（オブジェクトのOnOffなど）を変換できない
-変換処理における効率的なイテレーションによる変換速度の高速化
+### 4. 変換ボタンを押す
+
+![AnimationConverter_7](img/AnimationConverter_7.jpg)
+
+### 5. HEMの保存ダイアログが表示されるので任意の名前を指定後、保存ボタンを押す
+
+![AnimationConverter_8](img/AnimationConverter_8.jpg)
+
+### 6. 変換が成功したダイアログが出てくるのでOKを押す
+
+![AnimationConverter_9](img/AnimationConverter_9.jpg)
+
+## FAQ
+
+- Q1. アニメーションをコンバートしたら腕が曲がりました。バグですか？
+
+- A. 安心してください。バグではありません。<br>HandIKのチェックを外してコンバートすれば治ります。
+
+![AnimationConverter_10](img/AnimationConverter_10.jpg)
+
+![AnimationConverter_11](img/AnimationConverter_11.jpg)
+
+!!! note
+        IKの性質上、相対的に腕の長さが短いキャラのモーションを腕の長いキャラに移植する時、<br>
+        HandIKを適用すると今回のような症状が発生します。
