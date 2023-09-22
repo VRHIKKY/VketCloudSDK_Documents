@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../images/VketCloudIcon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-7.3.0">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.3.0">
     
     
       
@@ -486,6 +486,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -590,6 +594,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../WorldMakingGuide/PropAnimation.html" class="md-nav__link">
+        オブジェクトをアニメーションさせる
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/PropAnimation_TroubleShooting.html" class="md-nav__link">
+        オブジェクトをアニメーションさせる - 動かないときは
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../debugconsole/debugconsole.html" class="md-nav__link">
         デバッグコンソール
       </a>
@@ -649,7 +681,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
       
       
       
@@ -664,13 +696,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        <label class="md-nav__link" for="__nav_4_13">
           パーティクルエディター
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="パーティクルエディター" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+        <label class="md-nav__title" for="__nav_4_13">
           <span class="md-nav__icon md-icon"></span>
           パーティクルエディター
         </label>
@@ -727,7 +759,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11_4" type="checkbox" id="__nav_4_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13_4" type="checkbox" id="__nav_4_13_4" >
       
       
       
@@ -740,13 +772,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_11_4">
+        <label class="md-nav__link" for="__nav_4_13_4">
           ウィンドウ解説
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="ウィンドウ解説" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_11_4">
+        <label class="md-nav__title" for="__nav_4_13_4">
           <span class="md-nav__icon md-icon"></span>
           ウィンドウ解説
         </label>
@@ -888,6 +920,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5">
@@ -952,6 +986,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOSpot.html" class="md-nav__link">
         HEOSpot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOSpawn.html" class="md-nav__link">
+        HEOSpawn
       </a>
     </li>
   
@@ -2387,6 +2435,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8">
@@ -2465,6 +2515,20 @@
     <li class="md-nav__item">
       <a href="../troubleshooting/ChangesAreNotApplied.html" class="md-nav__link">
         変更が更新されない
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/MissingComponents.html" class="md-nav__link">
+        バージョンアップ後にComponentがMissingとして表示される
       </a>
     </li>
   
@@ -3689,29 +3753,29 @@
 <p>IDはPhysicsIDと呼ばれるもので、ItemクラスのGetPhysicsIDByNodeNameや、PlayerクラスのGetPhysicsIDから取得できます。</p>
 <p>コンストラクタ等で前もってPhysicsIDを取得してメンバ変数に保存しておき、コールバック関数で比較して衝突したかどうかを判定します。</p>
 <p>なお、衝突した直後に何度も同じIDの組み合わせでコールバック関数が呼び出される場合があるので、衝突によってパーティクル再生などをおこなう場合は、何度も再生しないように処理する必要があります。</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">component</span><span class="w"> </span><span class="nv">Test</span><span class="w"> </span>{
-<span class="w">    </span><span class="nv">Item</span><span class="w">    </span><span class="nv">m_Field</span><span class="c1">;</span>
+<div class="codehilite"><pre><span></span><code>component Test {
+    Item    m_Field;
 
-<span class="w">    </span><span class="nv">int</span><span class="w">     </span><span class="nv">m_PhysicsIDFloor</span>,
-<span class="w">            </span><span class="nv">m_PhysicsIDCube</span><span class="c1">;</span>
+    int     m_PhysicsIDFloor,
+            m_PhysicsIDCube;
 
-<span class="w">    </span><span class="nv">public</span><span class="w"> </span><span class="nv">Test</span><span class="ss">()</span>
-<span class="w">    </span>{
-<span class="w">        </span><span class="nv">m_Field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">new</span><span class="w"> </span><span class="nv">Item</span><span class="ss">()</span><span class="c1">;</span>
-<span class="w">        </span><span class="nv">m_Field</span>.<span class="nv">_SetItemFromStructPageNumber</span><span class="ss">(</span><span class="nv">system</span>.<span class="nv">GetStructPageNumber</span><span class="ss">())</span><span class="c1">;</span>
+    public Test()
+    {
+        m_Field = new Item();
+        m_Field._SetItemFromStructPageNumber(system.GetStructPageNumber());
 
-<span class="w">        </span><span class="nv">m_PhysicsIDFloor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">m_Field</span>.<span class="nv">GetPhysicsIDByNodeName</span><span class="ss">(</span><span class="s2">&quot;Floor&quot;</span><span class="ss">)</span><span class="c1">;</span>
-<span class="w">        </span><span class="nv">m_PhysicsIDCube</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">m_Field</span>.<span class="nv">GetPhysicsIDByNodeName</span><span class="ss">(</span><span class="s2">&quot;Cube&quot;</span><span class="ss">)</span><span class="c1">;</span>
-<span class="w">    </span>}
+        m_PhysicsIDFloor = m_Field.GetPhysicsIDByNodeName(&quot;Floor&quot;);
+        m_PhysicsIDCube = m_Field.GetPhysicsIDByNodeName(&quot;Cube&quot;);
+    }
 
-<span class="w">    </span><span class="nv">public</span><span class="w"> </span><span class="nv">void</span><span class="w"> </span><span class="nv">OnPhysicsCollision</span><span class="ss">(</span><span class="nv">int</span><span class="w"> </span><span class="nv">ID0</span>,<span class="w"> </span><span class="nv">int</span><span class="w"> </span><span class="nv">ID1</span><span class="ss">)</span>
-<span class="w">    </span>{
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="ss">((</span><span class="nv">ID0</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">m_PhysicsIDFloor</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nv">ID1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">m_PhysicsIDCube</span><span class="ss">)</span><span class="w"> </span><span class="o">||</span>
-<span class="w">            </span><span class="ss">(</span><span class="nv">ID1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">m_PhysicsIDFloor</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nv">ID0</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">m_PhysicsIDCube</span><span class="ss">))</span>
-<span class="w">        </span>{
-<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="nv">Floor</span>と<span class="nv">Cube</span>が衝突した
-<span class="w">        </span>}
-<span class="w">    </span>}
+    public void OnPhysicsCollision(int ID0, int ID1)
+    {
+        if ((ID0 == m_PhysicsIDFloor &amp;&amp; ID1 == m_PhysicsIDCube) ||
+            (ID1 == m_PhysicsIDFloor &amp;&amp; ID0 == m_PhysicsIDCube))
+        {
+            // FloorとCubeが衝突した
+        }
+    }
 }
 </code></pre></div>
 

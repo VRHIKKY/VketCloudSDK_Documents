@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../images/VketCloudIcon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-7.3.0">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.3.0">
     
     
       
@@ -488,6 +488,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -642,6 +646,34 @@
   
   
     <li class="md-nav__item">
+      <a href="PropAnimation.html" class="md-nav__link">
+        オブジェクトをアニメーションさせる
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PropAnimation_TroubleShooting.html" class="md-nav__link">
+        オブジェクトをアニメーションさせる - 動かないときは
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../debugconsole/debugconsole.html" class="md-nav__link">
         デバッグコンソール
       </a>
@@ -701,7 +733,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
       
       
       
@@ -716,13 +748,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        <label class="md-nav__link" for="__nav_4_13">
           パーティクルエディター
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="パーティクルエディター" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+        <label class="md-nav__title" for="__nav_4_13">
           <span class="md-nav__icon md-icon"></span>
           パーティクルエディター
         </label>
@@ -779,7 +811,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11_4" type="checkbox" id="__nav_4_11_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13_4" type="checkbox" id="__nav_4_13_4" >
       
       
       
@@ -792,13 +824,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_11_4">
+        <label class="md-nav__link" for="__nav_4_13_4">
           ウィンドウ解説
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="ウィンドウ解説" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_11_4">
+        <label class="md-nav__title" for="__nav_4_13_4">
           <span class="md-nav__icon md-icon"></span>
           ウィンドウ解説
         </label>
@@ -940,6 +972,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5">
@@ -1004,6 +1038,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOSpot.html" class="md-nav__link">
         HEOSpot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOSpawn.html" class="md-nav__link">
+        HEOSpawn
       </a>
     </li>
   
@@ -2348,6 +2396,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8">
@@ -2426,6 +2476,20 @@
     <li class="md-nav__item">
       <a href="../troubleshooting/ChangesAreNotApplied.html" class="md-nav__link">
         変更が更新されない
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/MissingComponents.html" class="md-nav__link">
+        バージョンアップ後にComponentがMissingとして表示される
       </a>
     </li>
   
@@ -3529,17 +3593,17 @@
 <h2 id="_1">シーンの準備</h2>
 <p>空のオブジェクトを配置して任意の名前を付けてください。ここでは『VketCloudSample』とします。このオブジェクト名は、出力時の.heoファイル名となります。</p>
 <p>そしてVketCloudSampleの子にエクスポートしたいワールドモデルなどを配置してください。HEOExporterでは一番親の要素(ここではVketCloudSample)を基準にエクスポートを行います。</p>
-<p><img src="img/PrepareScene.jpg"></p>
+<p><img alt="PrepareScene" src="img/PrepareScene.jpg" /></p>
 <h2 id="heo">.heoとしてエクスポートする</h2>
 <p>HierarchyでVketCloudSampleオブジェクトを選択した状態で、ウィンドウメニューのVketCloudSDK &gt; Export Fieldをクリックします。保存ダイアログが表示されますので、適当な場所にフォルダを作成して保存します。</p>
-<p><img src="img/SelectSample.jpg"></p>
+<p><img alt="SelectSample" src="img/SelectSample.jpg" /></p>
 <p>成功すると、Consoleに以下のように「Exported」とポリゴン数が出力されます。</p>
-<p><img src="img/NumberOfPolygons.jpg"></p>
+<p><img alt="NumberOfPolygons" src="img/NumberOfPolygons.jpg" /></p>
 <p>出力したフォルダにある「tex_sample」フォルダを開いてみます。</p>
 <p>ここには確認用のテクスチャファイルが出力されます。もしこの中にjpgファイル以外（JPEGやTGAなど）が含まれているとVketCloudでは読み込めませんので、テクスチャを差し替えてマテリアルを修正し再度エクスポートします。</p>
 <p>上記の例では「009_VketCloudComu.jpg」がそれに該当します。なお、「000_」など先頭に追加されている数字はエクスポート時に付けられたもので、元のファイル名は「VketCloudComu.jpg」になります。</p>
-<p><img src="img/OpenTexSample.jpg">
-<img src="img/OpenVketCloudComu.jpg"></p>
+<p><img alt="OpenTexSample" src="img/OpenTexSample.jpg" />
+<img alt="OpenVketCloudComu" src="img/OpenVketCloudComu.jpg" /></p>
 <p>なお、<strong>再エクスポートする際は「tex」「tex_sample」フォルダは手動で削除してからおこなって下さい</strong>。テクスチャファイルの先頭に番号が自動で付与されるため、前回と状況が異なると同番号で古いファイルが残ったままになります。</p>
 <p>テクスチャファイルに問題なければエクスポートはひとまず成功です。この後、VketCloudで読み込ませる場合は、出力されたファイル・フォルダを一式コピーします。</p>
 <div class="admonition note tip">
@@ -3547,7 +3611,7 @@
 <p>.heoとして吐き出したオブジェクトは、HEOObjectからセットすることでBuildAndRunの出力に含めることができます。HEOObjectの使い方は<a href="../HEOComponents/HEOObject.html">こちら</a>をご覧ください。</p>
 </div>
 <p>このHEOファイルをVketCloudで読み込んで表示したサンプルは以下のものになります。</p>
-<p><img src="img/SampleHEO.jpg"></p>
+<p><img alt="SampleHEO" src="img/SampleHEO.jpg" /></p>
                 
               
               

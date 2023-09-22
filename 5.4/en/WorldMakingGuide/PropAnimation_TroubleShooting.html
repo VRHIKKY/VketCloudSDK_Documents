@@ -1,0 +1,4032 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="VketCloudSDKのマニュアルです">
+      
+      
+      
+        <meta name="author" content="HIKKY">
+      
+      
+      <link rel="icon" href="../../images/VketCloudIcon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.3.0">
+    
+    
+      
+        <title>How to Animate Objects - Troubleshooting - VketCloudSDK Manual</title>
+      
+    
+    
+  
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+  <link rel="stylesheet" href="../../css/styles.css">
+
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.hikky.co.jp/vketcloud" title="VketCloudSDK Manual" class="md-header__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
+      
+  <img src="../../images/VketCloudIcon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VketCloudSDK Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How to Animate Objects - Troubleshooting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../WorldMakingGuide/PropAnimation_TroubleShooting.html" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../../ja/WorldMakingGuide/PropAnimation_TroubleShooting.html" hreflang="ja" class="md-select__link">
+                    日本語
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.hikky.co.jp/vketcloud" title="VketCloudSDK Manual" class="md-nav__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
+      
+  <img src="../../images/VketCloudIcon.png" alt="logo">
+
+    </a>
+    VketCloudSDK Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          About VketCloudSDK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About VketCloudSDK" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          About VketCloudSDK
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AboutVketCloudSDK/SetupAccount.html" class="md-nav__link">
+        Setup Account
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AboutVketCloudSDK/OperatingEnvironment.html" class="md-nav__link">
+        Operating Environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AboutVketCloudSDK/SetupSDK_external.html" class="md-nav__link">
+        Setup SDK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AboutVketCloudSDK/LoginSDK.html" class="md-nav__link">
+        Login to SDK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AboutVketCloudSDK/SetupAvatar.html" class="md-nav__link">
+        How to use avatar
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          First Step
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="First Step" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          First Step
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FirstStep/WorldBasicComponents.html" class="md-nav__link">
+        Essential Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FirstStep/BuildAndRun.html" class="md-nav__link">
+        Build And Run
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FirstStep/WorldUpload.html" class="md-nav__link">
+        World Upload
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          World Making Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="World Making Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          World Making Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UnityGuidelines.html" class="md-nav__link">
+        Specifications Limits
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Skybox.html" class="md-nav__link">
+        Skybox
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PhysicsEngine.html" class="md-nav__link">
+        Physics Engine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ReflectionProbe.html" class="md-nav__link">
+        ReflectionProbe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AvatarFile.html" class="md-nav__link">
+        Avatar File
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="HEOExporter_Tutorial.html" class="md-nav__link">
+        HEOExporter Tutorial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PropAnimation.html" class="md-nav__link">
+        How to Animate Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to Animate Objects - Troubleshooting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="PropAnimation_TroubleShooting.html" class="md-nav__link md-nav__link--active">
+        How to Animate Objects - Troubleshooting
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#heoanimation" class="md-nav__link">
+    HEOAnimationのアタッチについて
+  </a>
+  
+    <nav class="md-nav" aria-label="HEOAnimationのアタッチについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    思っていた挙動と異なる
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hem" class="md-nav__link">
+    .hemファイル書き出しについて
+  </a>
+  
+    <nav class="md-nav" aria-label=".hemファイル書き出しについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    書き出し時にエラーが出る
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    ①書き出し元となるオブジェクトを動かすアニメーションがある
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    ②連続で色々なアニメーションを書き出しすぎている
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ローディング画面でエラーが出る
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legacy" class="md-nav__link">
+    Legacyアニメーションにしていない
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heo" class="md-nav__link">
+    .heoファイル書き出しについて
+  </a>
+  
+    <nav class="md-nav" aria-label=".heoファイル書き出しについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    書き出しに失敗する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1vketcloud" class="md-nav__link">
+    ①VketCloudで使用できないシェーダーを使っている
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    ②コンポーネント設定に不備がある
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    ③連続で色々なオブジェクトを書き出しすぎている
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    書き出しは成功するが、シーン上に表示されない
+  </a>
+  
+    <nav class="md-nav" aria-label="書き出しは成功するが、シーン上に表示されない">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    ①書き出し座標がおかしい
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2vketcloud" class="md-nav__link">
+    ②書き出し元オブジェクトのシェーダーがVketCloudに対応していない
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unity" class="md-nav__link">
+    書き出し後Unityを再起動したら、プロジェクトが立ち上がらなくなった
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heoobject" class="md-nav__link">
+    HEOObjectのアニメーションについて
+  </a>
+  
+    <nav class="md-nav" aria-label="HEOObjectのアニメーションについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    アニメーションが再生されない
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    ①アニメーションとオブジェクト階層・名称が一致していない
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    ②アニメーションが適用されていない
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debugconsole/debugconsole.html" class="md-nav__link">
+        Debug Console
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debugconsole/debugmessage.html" class="md-nav__link">
+        Debug Messages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutoTextureCompresser/AutoTextureCompresser.html" class="md-nav__link">
+        Auto Texture Compression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_TextureCompression.html" class="md-nav__link">
+        Texture Compression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_13">
+          Particle Editor
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Particle Editor" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_13">
+          <span class="md-nav__icon md-icon"></span>
+          Particle Editor
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_about_particleeditor.html" class="md-nav__link">
+        ParticleEditor Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_about_screen.html" class="md-nav__link">
+        About Screen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_control.html" class="md-nav__link">
+        Operation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13_4" type="checkbox" id="__nav_4_13_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_13_4">
+          Window Info
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Window Info" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_13_4">
+          <span class="md-nav__icon md-icon"></span>
+          Window Info
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_toolbar.html" class="md-nav__link">
+        Toolbar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_propertywindow.html" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_particlelistwindow.html" class="md-nav__link">
+        Particle List
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEMAnimationConverter/AnimationConverter.html" class="md-nav__link">
+        Animation Converter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          HEOComponents
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HEOComponents" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          HEOComponents
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOWorldSetting.html" class="md-nav__link">
+        HEOWorldSetting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOField.html" class="md-nav__link">
+        HEOField
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOPlayer.html" class="md-nav__link">
+        HEOPlayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOSpot.html" class="md-nav__link">
+        HEOSpot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOSpawn.html" class="md-nav__link">
+        HEOSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOObject.html" class="md-nav__link">
+        HEOObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOLODLevel.html" class="md-nav__link">
+        HEOLODLevel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOAudio.html" class="md-nav__link">
+        HEOAudio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOPlane.html" class="md-nav__link">
+        HEOPlane
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOClickGuide.html" class="md-nav__link">
+        HEOClickGuide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOUVScroller.html" class="md-nav__link">
+        HEOUVScroller
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOTextPlane.html" class="md-nav__link">
+        HEOTextPlane
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOParticle.html" class="md-nav__link">
+        HEOParticle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOReflectionProbe.html" class="md-nav__link">
+        HEOReflectionProbe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOScript.html" class="md-nav__link">
+        HEOScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOMeshCollider.html" class="md-nav__link">
+        HEOMeshCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEODespawnHeight.html" class="md-nav__link">
+        HEODespawnHeight
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOCollider.html" class="md-nav__link">
+        HEOCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOAnimation.html" class="md-nav__link">
+        HEOAnimation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOShowFlag.html" class="md-nav__link">
+        HEOShowFlag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOAreacollider.html" class="md-nav__link">
+        HEOAreacollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOVideoTrigger.html" class="md-nav__link">
+        HEOVideoTrigger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOActionTrigger.html" class="md-nav__link">
+        HEOActionTrigger
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Actions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Actions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Actions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/ActionsOverview.html" class="md-nav__link">
+        Actions Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/Openweb.html" class="md-nav__link">
+        Openweb
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Item/PlayStopItem.html" class="md-nav__link">
+        Play/StopItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Item/ShowHideItem.html" class="md-nav__link">
+        Show/HideItem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Avatar/PlayStopObject.html" class="md-nav__link">
+        Play/StopObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Avatar/ShowHideObject.html" class="md-nav__link">
+        Show/HideObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Node/ShowHideNode.html" class="md-nav__link">
+        Show/HideNode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Node/EnableDisableClickableNode.html" class="md-nav__link">
+        Enable/DisableClickableNode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Node/EnableDisableCollider.html" class="md-nav__link">
+        Enable/DisableCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/Wait.html" class="md-nav__link">
+        Wait
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Item/SetPosRelativePlayer.html" class="md-nav__link">
+        SetPosRelativePlayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Item/MoveTo.html" class="md-nav__link">
+        MoveTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/Random.html" class="md-nav__link">
+        Random
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/Warp.html" class="md-nav__link">
+        Warp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/JumpWorld.html" class="md-nav__link">
+        JumpWorld
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Avatar/Emote.html" class="md-nav__link">
+        Emote
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Avatar/Motion.html" class="md-nav__link">
+        Motion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Avatar/NextMotion.html" class="md-nav__link">
+        NextMotion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/AddVar.html" class="md-nav__link">
+        AddVar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/SetVar.html" class="md-nav__link">
+        SetVar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/IfEqual.html" class="md-nav__link">
+        If A == B
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/IfNotEqual.html" class="md-nav__link">
+        If A != B
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/IfGreaterThanOrEqual.html" class="md-nav__link">
+        If A >= B
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/IfLessThanOrEqual.html" class="md-nav__link">
+        If A <= B
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/StopVideo.html" class="md-nav__link">
+        StopVideo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/SetCookieText.html" class="md-nav__link">
+        SetCookieText
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/OpenComicViewer.html" class="md-nav__link">
+        OpenComicViewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/ShowLayer.html" class="md-nav__link">
+        ShowLayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Programmatic/CallJavaScript.html" class="md-nav__link">
+        CallJavaScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/EnterLeaveVoiceGroup.html" class="md-nav__link">
+        Enter/LeaveVoiceGroup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/WhiteOutIn.html" class="md-nav__link">
+        WhiteOut/In
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/System/FadeOutIn.html" class="md-nav__link">
+        FadeOut/In
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          HeliScript
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HeliScript" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          HeliScript
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_1">
+          Built-in Types
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Built-in Types" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Built-in Types
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_var.html" class="md-nav__link">
+        Basic Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_string.html" class="md-nav__link">
+        String
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_list.html" class="md-nav__link">
+        List
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_class.html" class="md-nav__link">
+        Class
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_component.html" class="md-nav__link">
+        Component
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" type="checkbox" id="__nav_7_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_4">
+          Built-in Classes And Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Built-in Classes And Functions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          Built-in Classes And Functions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_struct_vector3.html" class="md-nav__link">
+        Vector3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_struct_quaternion.html" class="md-nav__link">
+        Quaternion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_struct_matrix.html" class="md-nav__link">
+        Matrix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_class_item.html" class="md-nav__link">
+        Item
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_class_player.html" class="md-nav__link">
+        Player
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_5" type="checkbox" id="__nav_7_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_5">
+          Built-in Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Built-in Functions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_5">
+          <span class="md-nav__icon md-icon"></span>
+          Built-in Functions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function.html" class="md-nav__link">
+        System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_math.html" class="md-nav__link">
+        Math
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_net.html" class="md-nav__link">
+        Network
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_nameplate.html" class="md-nav__link">
+        NamePlate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_js.html" class="md-nav__link">
+        JavaScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_gui.html" class="md-nav__link">
+        GUI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_textchat.html" class="md-nav__link">
+        TextChat
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" type="checkbox" id="__nav_7_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_6">
+          Statements and flow control
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Statements and flow control" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_6">
+          <span class="md-nav__icon md-icon"></span>
+          Statements and flow control
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_statement_def.html" class="md-nav__link">
+        Declarations and definitions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_statement_constrol.html" class="md-nav__link">
+        Control Statement
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_operator.html" class="md-nav__link">
+        Operator
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Trouble shooting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Trouble shooting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Trouble shooting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/InstallingDeeplink.html" class="md-nav__link">
+        SDK does not appear after install
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/BuildError.html" class="md-nav__link">
+        Build Error
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/BrowserNotOpen.html" class="md-nav__link">
+        Browser does not open
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/BrowserBlackWindow.html" class="md-nav__link">
+        Browser window blackouts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/ChangesAreNotApplied.html" class="md-nav__link">
+        Changes are not applied
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/MissingComponents.html" class="md-nav__link">
+        Missing Components After Version Update
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_align_unity_to_vketcloud.html" class="md-nav__link">
+        Unity settings for replicating actual look in Vket Cloud
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Release Note
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Release Note" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Release Note
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_1" type="checkbox" id="__nav_9_1" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_1">
+          v5.x
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="v5.x" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_1">
+          <span class="md-nav__icon md-icon"></span>
+          v5.x
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-5.4.html" class="md-nav__link">
+        v5.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-5.3.html" class="md-nav__link">
+        v5.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-5.2.html" class="md-nav__link">
+        v5.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-5.1.html" class="md-nav__link">
+        v5.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-5.0.html" class="md-nav__link">
+        v5.0
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_2">
+          v4.x
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="v4.x" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          v4.x
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.8.html" class="md-nav__link">
+        v4.8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.7.html" class="md-nav__link">
+        v4.7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.6.html" class="md-nav__link">
+        v4.6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.5.html" class="md-nav__link">
+        v4.5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.4.html" class="md-nav__link">
+        v4.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.3.html" class="md-nav__link">
+        v4.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.2.html" class="md-nav__link">
+        v4.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.1.html" class="md-nav__link">
+        v4.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-4.0.html" class="md-nav__link">
+        v4.0
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3" type="checkbox" id="__nav_9_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_3">
+          v3.x
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="v3.x" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_3">
+          <span class="md-nav__icon md-icon"></span>
+          v3.x
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-3.9.html" class="md-nav__link">
+        v3.9
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-3.8.html" class="md-nav__link">
+        v3.8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-3.7.html" class="md-nav__link">
+        v3.7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-3.6.html" class="md-nav__link">
+        v3.6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-3.5.html" class="md-nav__link">
+        v3.5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-3.4.html" class="md-nav__link">
+        v3.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-3.3.html" class="md-nav__link">
+        v3.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-3.2.html" class="md-nav__link">
+        v3.2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Change Log
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Change Log" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Change Log
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_1">
+          v5.x
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="v5.x" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_1">
+          <span class="md-nav__icon md-icon"></span>
+          v5.x
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-5.4.html" class="md-nav__link">
+        v5.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-5.3.html" class="md-nav__link">
+        v5.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-5.2.html" class="md-nav__link">
+        v5.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-5.1.html" class="md-nav__link">
+        v5.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-5.0.html" class="md-nav__link">
+        v5.0
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          v4.x
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="v4.x" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          v4.x
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.8.html" class="md-nav__link">
+        v4.8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.7.html" class="md-nav__link">
+        v4.7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.6.html" class="md-nav__link">
+        v4.6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.5.html" class="md-nav__link">
+        v4.5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.4.html" class="md-nav__link">
+        v4.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.3.html" class="md-nav__link">
+        v4.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.2.html" class="md-nav__link">
+        v4.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.1.html" class="md-nav__link">
+        v4.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-4.0.html" class="md-nav__link">
+        v4.0
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3" type="checkbox" id="__nav_10_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3">
+          v3.x
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="v3.x" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_3">
+          <span class="md-nav__icon md-icon"></span>
+          v3.x
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.9.html" class="md-nav__link">
+        v3.9
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.8.html" class="md-nav__link">
+        v3.8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.7.html" class="md-nav__link">
+        v3.7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.6.html" class="md-nav__link">
+        v3.6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.5.html" class="md-nav__link">
+        v3.5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.4.html" class="md-nav__link">
+        v3.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.3.html" class="md-nav__link">
+        v3.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/changelog-3.2.html" class="md-nav__link">
+        v3.2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common/License.html" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#heoanimation" class="md-nav__link">
+    HEOAnimationのアタッチについて
+  </a>
+  
+    <nav class="md-nav" aria-label="HEOAnimationのアタッチについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    思っていた挙動と異なる
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hem" class="md-nav__link">
+    .hemファイル書き出しについて
+  </a>
+  
+    <nav class="md-nav" aria-label=".hemファイル書き出しについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    書き出し時にエラーが出る
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    ①書き出し元となるオブジェクトを動かすアニメーションがある
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    ②連続で色々なアニメーションを書き出しすぎている
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ローディング画面でエラーが出る
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legacy" class="md-nav__link">
+    Legacyアニメーションにしていない
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heo" class="md-nav__link">
+    .heoファイル書き出しについて
+  </a>
+  
+    <nav class="md-nav" aria-label=".heoファイル書き出しについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    書き出しに失敗する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1vketcloud" class="md-nav__link">
+    ①VketCloudで使用できないシェーダーを使っている
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    ②コンポーネント設定に不備がある
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    ③連続で色々なオブジェクトを書き出しすぎている
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    書き出しは成功するが、シーン上に表示されない
+  </a>
+  
+    <nav class="md-nav" aria-label="書き出しは成功するが、シーン上に表示されない">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    ①書き出し座標がおかしい
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2vketcloud" class="md-nav__link">
+    ②書き出し元オブジェクトのシェーダーがVketCloudに対応していない
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unity" class="md-nav__link">
+    書き出し後Unityを再起動したら、プロジェクトが立ち上がらなくなった
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heoobject" class="md-nav__link">
+    HEOObjectのアニメーションについて
+  </a>
+  
+    <nav class="md-nav" aria-label="HEOObjectのアニメーションについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    アニメーションが再生されない
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    ①アニメーションとオブジェクト階層・名称が一致していない
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    ②アニメーションが適用されていない
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="-">オブジェクトをアニメーションさせる - できないときは</h1>
+<p><a href="PropAnimation.html">オブジェクトをアニメーションさせる</a> にて、各手順が出来ないときに見るページです。</p>
+<h2 id="heoanimation">HEOAnimationのアタッチについて</h2>
+<h3 id="_1">思っていた挙動と異なる</h3>
+<p><img alt="PropAnimation_TroubleShooting_1" src="img/PropAnimation_TroubleShooting_1.jpg" /></p>
+<p>Scaleを変更したオブジェクトの子オブジェクトのRotationを変更すると変形が発生する<br>
+横方向に回転させたかっただけなのになぜか物体が伸びてしまうといった現象は、回転させたいオブジェクトがRotationが(0,0,0)ではない、または、Scaleが(1,1,1)ではないオブジェクトの子オブジェクトだからであることが考えられます。</p>
+<p><img alt="PropAnimation_TroubleShooting_2" src="img/PropAnimation_TroubleShooting_2.jpg" /></p>
+<p><img alt="PropAnimation_TroubleShooting_3" src="img/PropAnimation_TroubleShooting_3.jpg" /></p>
+<p>動作が変な場合、HEOAnimationを入れるオブジェクトは、Position(0,0,0)、Rotation(0,0,0)、Scale(1,1,1)の子オブジェクトにした方が良いでしょう。</p>
+<p>また、HEOAnimationを入れた動作結果は、Unity上で該当オブジェクトのRotationを変更したものと同じになります。<br>
+予めUnity上でどのように動作するか確認してから値を入力すると良いでしょう。</p>
+<hr />
+<h2 id="hem">.hemファイル書き出しについて</h2>
+<h3 id="_2">書き出し時にエラーが出る</h3>
+<p>.hemファイルの書き出しでエラーが出る要因はいくつか考えられます。</p>
+<div class="codehilite"><pre><span></span><code><span class="n">KeyNotFoundException</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">present</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">dictionary</span><span class="o">.</span>
+</code></pre></div>
+
+<p><img alt="PropAnimation_TroubleShooting_4" src="img/PropAnimation_TroubleShooting_4.jpg" /></p>
+<h3 id="1">①書き出し元となるオブジェクトを動かすアニメーションがある</h3>
+<p><img alt="PropAnimation_TroubleShooting_5" src="img/PropAnimation_TroubleShooting_5.jpg" /></p>
+<p>Animationコンポーネントを持つオブジェクトを選択した状態でExport Motionを選択することでそのオブジェクトのアニメーションが書き出されますが、書き出し元となるオブジェクト自体に対するアニメーションが入っていたらエラーとなります。</p>
+<p><img alt="PropAnimation_TroubleShooting_6" src="img/PropAnimation_TroubleShooting_6.jpg" /></p>
+<p>上記画像の場合、Animationコンポーネントを持つオブジェクト「Root」を直接アニメーションで動かそうとしているため、エラーとなります。</p>
+<p><img alt="PropAnimation_TroubleShooting_7" src="img/PropAnimation_TroubleShooting_7.jpg" /></p>
+<p>× : アニメーションを付けられない、○ : 付けられる<br>
+子オブジェクトを対象としたアニメーションにする必要があります。</p>
+<h3 id="2">②連続で色々なアニメーションを書き出しすぎている</h3>
+<p>アニメーションの書き出しを連続で行うと、キャッシュが溜まっているのか、エラーとなる要素が無くてもエラーになる場合があります。</p>
+<p>現状のアニメーション編集シーンを一度保存し、再度開きなおすことでエラーが解消されます。</p>
+<h3 id="_3">ローディング画面でエラーが出る</h3>
+<p>hemの書き出しに成功しても、アニメーションを実装した後ローディング画面でエラーとなる場合もあります。</p>
+<p><img alt="PropAnimation_TroubleShooting_8" src="img/PropAnimation_TroubleShooting_8.jpg" /></p>
+<p>だいたい41%か42％あたりでこれが出る</p>
+<h3 id="legacy">Legacyアニメーションにしていない</h3>
+<p>Animatorコンポーネントを入れることで作成できるAnimationではLegacy設定がされていません。<br>
+<a href="PropAnimation.html">オブジェクトをアニメーションさせる - .hemファイル書き出し</a>の④に記載があるので、参考にしてみてください。</p>
+<hr />
+<h2 id="heo">.heoファイル書き出しについて</h2>
+<h3 id="_4">書き出しに失敗する</h3>
+<p>Export Fieldでのオブジェクト書き出しが失敗することがあります。</p>
+<h3 id="1vketcloud">①VketCloudで使用できないシェーダーを使っている</h3>
+<p>VketCloudが対応しているシェーダーは限られています。
+使用できないシェーダーの場合、下記画像のように「UnknownShader」として表示されます。</p>
+<p><img alt="PropAnimation_TroubleShooting_9" src="img/PropAnimation_TroubleShooting_9.jpg" /></p>
+<h3 id="2_1">②コンポーネント設定に不備がある</h3>
+<p>上記画像では、Index was out of range.のエラーが表示されています。<br>
+こちらのエラーはuv2のないメッシュをMeshRendererで扱おうとすると発生するため、uv2の作成またはSkinnedMeshRendererの使用によって回避できます。</p>
+<p>このように、コンポーネント設定に不備がある場合、書き出しが失敗する可能性があります。</p>
+<h3 id="3">③連続で色々なオブジェクトを書き出しすぎている</h3>
+<p>アニメーション同様、連続で色々なオブジェクトを書き出しているとエラーとなる場合があります。<br>
+一度Unityシーンを再起動してから書き出しを行ってみましょう。</p>
+<h2 id="_5">書き出しは成功するが、シーン上に表示されない</h2>
+<h3 id="1_1">①書き出し座標がおかしい</h3>
+<p>特例が無い限り、書き出し元オブジェクトの座標は(0,0,0)にしておきましょう。<br>
+HEOObjectとしてシーンに配置した際の座標は、HEOObjectがアタッチされたオブジェクトの座標 + 書き出し元オブジェクトの座標となります。</p>
+<p>例：書き出し元オブジェクトの座標 = (5, 2, 10) 、HEOObjectアタッチオブジェクトの座標 = (-3, 2, -6)の場合、シーン表示位置 = (2 , 4 , 4)となる</p>
+<h3 id="2vketcloud">②書き出し元オブジェクトのシェーダーがVketCloudに対応していない</h3>
+<p>シェーダーが対応していないため表示されていない可能性があります。<br>
+Standardなどに変更してみて表示されるかどうかお試しください。</p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>ビルド後にVketCloudSDK &gt; Tools &gt; Open Release Folderを選択し、data &gt; Sceneと遷移舌先で確認できるjsonファイル(シーンjson)にて、書き出したオブジェクト名を検索することで、シーン上での書き出しオブジェクト情報を確認することができます。<br>
+検索してもヒットしない場合は、シーン上に反映されていません。</p>
+</p>
+</div>
+<h2 id="unity">書き出し後Unityを再起動したら、プロジェクトが立ち上がらなくなった</h2>
+<p>稀にあります。
+原因は、テクスチャ圧縮用のbatの誤検知です。</p>
+<p><img alt="PropAnimation_TroubleShooting_10" src="img/PropAnimation_TroubleShooting_10.jpg" /></p>
+<p>解決するためには、batを削除する必要があります。<br>
+テクスチャ圧縮を行った後、batは不要となるため、予めテクスチャ圧縮を行ってから削除すると良いでしょう。</p>
+<hr />
+<h2 id="heoobject">HEOObjectのアニメーションについて</h2>
+<h3 id="_6">アニメーションが再生されない</h3>
+<h3 id="1_2">①アニメーションとオブジェクト階層・名称が一致していない</h3>
+<p>VketCloudのアニメーションは、階層と名称に対して実行します。<br>
+例えば、子オブジェクト「Object_1」のPositionを変更するアニメーションを作成した場合、HEOObjectとして書き出しを行ったオブジェクト階層を原点として、子オブジェクトとなる「Object_1」という名称のオブジェクトを動かす、ということになります。</p>
+<p>この時、Object_1のオブジェクトの種類はアニメーション書き出し時とオブジェクト実装時で異なっていても構いません。</p>
+<p>また、原点となる親オブジェクトの名称は異なっていても構いません。</p>
+<h3 id="2_2">②アニメーションが適用されていない</h3>
+<p>HEOObjectのObject TypeをMotionに切り替えてアニメーションを入れるのを忘れた、PlayItemでアニメーションを再生するようにはしたが再生トリガーが実行できていない、など、アニメーションを適用しても何らかの理由で再生されないことがあります。</p>
+<p>こういった場合、「loopにチェックマークを入れ、Index 0に持ってきて動いているかどうかを調査する」のが一番手っ取り早いです。</p>
+<p><img alt="PropAnimation_TroubleShooting_11" src="img/PropAnimation_TroubleShooting_11.jpg" /></p>
+<p>動く場合、アニメーション再生トリガーに問題があります。</p>
+<p>それでも動かない場合、アニメーションの作りに問題があるので、HEM作成までの過程を見直してみると良いでしょう。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+  <footer class="md-footer">
+    <div class="md-footer__inner md-grid">
+      <div class="md-footer-nav md-grid md-grid--no-gutter">
+        <div class="md-footer-nav__section">
+          
+            <img class="md-footer-logo" src="../../images/HikkyLogo.png" alt="VketCloudSDK Manual" />
+          
+          <div class="md-footer-copyright">
+            ©HIKKY Co.,Ltd. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
+      
+    
+  </body>
+</html>
