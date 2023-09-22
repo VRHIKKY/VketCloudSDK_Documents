@@ -3562,17 +3562,17 @@
 <h2 id="preparing-the-scene">Preparing the scene</h2>
 <p>Place an empty object and give it any name. Let's call it "VketCloudSample" here. This name will be used for the .heo file name when exported.</p>
 <p>And place the world model etc. that you want to export as the child of VketCloudSample. HEOExporter exports all objects under the parent element (VketCloudSample in this case).</p>
-<p><img src="img/スクリーンショット 2022-05-13 115248.png"></p>
+<p><img alt="PrepareScene" src="img/PrepareScene.jpg" /></p>
 <h2 id="export-as-heo">Export as .heo</h2>
 <p>With the VketCloudSample object selected in the Hierarchy, click VketCloudSDK &gt; Export Field in the topmenu. A save dialog will show up. Create a folder in an appropriate location and save the file.</p>
-<p><img src="img/スクリーンショット 2022-05-13 115324.png"></p>
+<p><img alt="SelectSample" src="img/SelectSample.jpg" /></p>
 <p>If successful, the console will output "Exported" and the number of polygons as shown below.</p>
-<p><img src="img/スクリーンショット 2022-05-13 115417.png"></p>
+<p><img alt="NumberOfPolygons" src="img/NumberOfPolygons.jpg" /></p>
 <p>Open the "tex_sample" folder in the output folder.</p>
 <p>Here you will find the original texture files for confirmation purpose. If it contains files other than PNG files (JPEG, TGA, etc.), VketCloud won't be able to read them. Replace the textures, modify the materials, and export again.</p>
 <p>In the above example, "009_VketCloudComu.jpg" is the problematic one. The numbers added to the beginning such as "000_" were added at the time of export, and the original file name was "VketCloudComu.jpg".</p>
-<p><img src="img/スクリーンショット 2022-05-13 151156.png">
-<img src="img/スクリーンショット 2022-05-13 151129.png"></p>
+<p><img alt="OpenTexSample" src="img/OpenTexSample.jpg" />
+<img alt="OpenVketCloudComu" src="img/OpenVketCloudComu.jpg" /></p>
 <p><strong>Please delete the "tex" and "tex_sample" folders manually before re-exporting</strong>. Since numbers are automatically added to the top of the texture file name, if the situation is different from the previous time, the old file with the same number may remain.</p>
 <p>If there is no problem with the texture file, the export is successful for the time being. Copy the exported file / folder to load it in Vket Cloud.</p>
 <div class="admonition note tip">
@@ -3580,7 +3580,7 @@
 <p>Objects exported as .heo can be included in the BuildAndRun output by setting it in HEOObject. See <a href="../HEOComponents/HEOObject.html">here</a> for how to use HEOObject.</p>
 </div>
 <p>A sample of this HEO file read and displayed by VketCloud is as follows.</p>
-<p><img src="img/スクリーンショット 2022-05-13 114449.png"></p>
+<p><img alt="SampleHEO" src="img/SampleHEO.jpg" /></p>
                 
               
               
