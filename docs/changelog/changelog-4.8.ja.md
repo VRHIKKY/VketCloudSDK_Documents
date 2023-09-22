@@ -1,17 +1,17 @@
 # 追加されたページ
-- [HEOSpot](../HEOComponents/HEOSpot.md)
-- [HEOSpawn](../HEOComponents/HEOSpawn.md)
-- [HEOClickGuide](../HEOComponents/HEOClickGuide.md)
-- [SDKがインストール後に立ち上がらない](../troubleshooting/InstallingDeeplink.md)
-- [ブラウザウィンドウが暗転したまま動かない](../troubleshooting/BrowserBlackWindow.md)
-- [バージョンアップ後にComponentがMissingとして表示される](../troubleshooting/MissingComponents.md)
+- [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOSpot.html)
+- [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOSpawn.html)
+- [HEOClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOClickGuide.html)
+- [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/InstallingDeeplink.html)
+- [ブラウザウィンドウが暗転したまま動かない](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/BrowserBlackWindow.html)
+- [バージョンアップ後にComponentがMissingとして表示される](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/MissingComponents.html)
 
 # 変更されたページ
-- [はじめに](../index.md): [リリースノート](../releasenote/releasenote-4.8.md)と[チェンジログ](../changelog/changelog-4.8.md)についての案内を追加
-- [VketCloudSDKの導入方法](../AboutVketCloudSDK/SetupSDK_external.md): 必須パッケージが自動で入らない場合の案内、バージョン切り替えの方法を追記
-- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md): 使用の説明をVer4.8基準に更新、動画音声が距離減衰に対応していない旨の追記
-- [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md): 各設定項目をVer4.8基準に更新、ゲームパッド / エモート関連の不具合の追記
-- [HEOActionTrigger](../HEOComponents/HEOActionTrigger.md): Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
-- [HEOCollider](../HEOComponents/HEOCollider.md): Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
+- [はじめに](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/index.html): [リリースノート](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/releasenote/releasenote-4.8.html)と[チェンジログ](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/changelog/changelog-4.8.html)についての案内を追加
+- [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/AboutVketCloudSDK/SetupSDK_external.html): 必須パッケージが自動で入らない場合の案内、バージョン切り替えの方法を追記
+- [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOVideoTrigger.html): 使用の説明をVer4.8基準に更新、動画音声が距離減衰に対応していない旨の追記
+- [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOWorldSetting.html): 各設定項目をVer4.8基準に更新、ゲームパッド / エモート関連の不具合の追記
+- [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOActionTrigger.html): Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
+- [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOCollider.html): Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
 
 # 削除されたページ
