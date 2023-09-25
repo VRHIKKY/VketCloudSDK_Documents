@@ -6,16 +6,16 @@ HEOExporterとは、VketCloudSDKに含まれているツールの一つで、Vke
 
 そしてVketCloudSampleの子にエクスポートしたいワールドモデルなどを配置してください。HEOExporterでは一番親の要素(ここではVketCloudSample)を基準にエクスポートを行います。
 
-<img src="img/PrepareScene.jpg">
+![PrepareScene](img/PrepareScene.jpg)
 
 ## .heoとしてエクスポートする
 HierarchyでVketCloudSampleオブジェクトを選択した状態で、ウィンドウメニューのVketCloudSDK > Export Fieldをクリックします。保存ダイアログが表示されますので、適当な場所にフォルダを作成して保存します。
 
-<img src="img/SelectSample.jpg">
+![SelectSample](img/SelectSample.jpg)
 
 成功すると、Consoleに以下のように「Exported」とポリゴン数が出力されます。
 
-<img src="img/NumberOfPolygons.jpg">
+![NumberOfPolygons](img/NumberOfPolygons.jpg)
 
 出力したフォルダにある「tex_sample」フォルダを開いてみます。
 
@@ -23,8 +23,8 @@ HierarchyでVketCloudSampleオブジェクトを選択した状態で、ウィ�
 
 上記の例では「009_VketCloudComu.jpg」がそれに該当します。なお、「000_」など先頭に追加されている数字はエクスポート時に付けられたもので、元のファイル名は「VketCloudComu.jpg」になります。
 
-<img src="img/OpenTexSample.jpg">
-<img src="img/OpenVketCloudComu.jpg">
+![OpenTexSample](img/OpenTexSample.jpg)
+![OpenVketCloudComu](img/OpenVketCloudComu.jpg)
 
 なお、**再エクスポートする際は「tex」「tex_sample」フォルダは手動で削除してからおこなって下さい**。テクスチャファイルの先頭に番号が自動で付与されるため、前回と状況が異なると同番号で古いファイルが残ったままになります。
 
@@ -35,5 +35,4 @@ HierarchyでVketCloudSampleオブジェクトを選択した状態で、ウィ�
 
 このHEOファイルをVketCloudで読み込んで表示したサンプルは以下のものになります。
 
-<img src="img/SampleHEO.jpg">
-
+![SampleHEO](img/SampleHEO.jpg)
