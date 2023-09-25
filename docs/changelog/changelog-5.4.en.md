@@ -18,7 +18,7 @@
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOWorldSetting.html): Updated discription according to Ver5.4, added explanation of gamepad / emote related issues, added restriction on using lights
 - [HEOAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOAnimation.html): Added how to use for HEOAnimation
 - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOAudio.html): Added discription according to Ver5.4
-- [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/UnityGuidelines.html): Edited content according to Ver5.4
+- [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/UnityGuidelines.html): Edited content according to Ver5.4, added restriction on using lights
 
 # Deleted Pages
 - Deleted check tool on Debug Console implementation

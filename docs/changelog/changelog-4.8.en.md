@@ -13,5 +13,6 @@
 - [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md): Updated description according to Ver4.8, added explanation of gamepad / emote related issues, added restriction on using lights
 - [HEOActionTrigger](../HEOComponents/HEOActionTrigger.md): Added description of issue about clickable objects being clickable through colliders
 - [HEOCollider](../HEOComponents/HEOCollider.md): Added description of issue about clickable objects being clickable through colliders
+- [Specification Limit of Vket Cloud](../WorldMakingGuide/UnityGuidelines.md): added restriction on using lights
 
 # Deleted Pages

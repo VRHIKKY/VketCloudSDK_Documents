@@ -18,7 +18,7 @@
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOWorldSetting.html): 各設定項目をVer5.4基準に更新、ゲームパッド / エモート関連の不具合の追記、ライトの仕様の追記
 - [HEOAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOAnimation.html): HEOAnimationの使い方を追記
 - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOAudio.html): 仕様の説明をVer5.4基準に更新
-- [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/UnityGuidelines.html): 仕様制限ページの内容をVer5.4基準に更新
+- [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/UnityGuidelines.html): 仕様制限ページの内容をVer5.4基準に更新、ライトの仕様の追記
 
 # 削除されたページ
 - デバッグコンソールの実装に伴ってチェックツールを削除
