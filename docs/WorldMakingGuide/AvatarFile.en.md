@@ -1,4 +1,4 @@
-## Avatar File
+# AvatarFile
 
 The AvatarFile is used in the VketCloudSDK for such as [Adding Preset Avatars](PresetAvatar.md).<br>
 This file stores information to initiate avatars on Vket Cloud.
@@ -43,7 +43,7 @@ Vket Cloud allows you to add any Emotion and uses a unique file format called `.
 | loop | Play the motion in a loop. Turn it on for walking and standby motions. |
 | useAction | Sets the action to call when the motion starts playing. |
 
-### Objects
+## Objects
 Avatars can have assets attached by designating as an object.
 The object may be set in three formats: Heo, Hep, or Audio.
 
