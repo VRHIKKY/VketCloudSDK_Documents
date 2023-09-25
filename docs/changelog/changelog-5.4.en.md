@@ -18,7 +18,7 @@
 - [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md): Updated discription according to Ver5.4, added explanation of gamepad / emote related issues, added restriction on using lights
 - [HEOAnimation](../HEOComponents/HEOAnimation.md): Added how to use for HEOAnimation
 - [HEOAudio](../HEOComponents/HEOAudio.md): Added discription according to Ver5.4
-- [Specification Limit of Vket Cloud](../WorldMakingGuide/UnityGuidelines.md): Edited content according to Ver5.4
+- [Specification Limit of Vket Cloud](../WorldMakingGuide/UnityGuidelines.md): Edited content according to Ver5.4, added restriction on using lights
 - [HEMAnimationConverter](../HEMAnimationConverter/AnimationConverter.md): Revised content according to Ver5.4 *English Version WIP
 
 # Deleted Pages

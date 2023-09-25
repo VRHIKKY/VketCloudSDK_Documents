@@ -18,7 +18,7 @@
 - [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md): 各設定項目をVer5.4基準に更新、ゲームパッド / エモート関連の不具合の追記、ライトの仕様の追記
 - [HEOAnimation](../HEOComponents/HEOAnimation.md): HEOAnimationの使い方を追記
 - [HEOAudio](../HEOComponents/HEOAudio.md): 仕様の説明をVer5.4基準に更新
-- [Vket Cloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md): 仕様制限ページの内容をVer5.4基準に更新
+- [Vket Cloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md): 仕様制限ページの内容をVer5.4基準に更新、ライトの仕様の追記
 - [HEMAnimationConverter](../HEMAnimationConverter/AnimationConverter.md): 解説・操作方法をVer5.4基準に更新
 
 # 削除されたページ

@@ -13,5 +13,6 @@
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOWorldSetting.html): Updated description according to Ver4.8, added explanation of gamepad / emote related issues, added restriction on using lights
 - [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOActionTrigger.html): Added description of issue about clickable objects being clickable through colliders
 - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOCollider.html): Added description of issue about clickable objects being clickable through colliders
+- [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/UnityGuidelines.html): added restriction on using lights
 
 # Deleted Pages

@@ -13,5 +13,6 @@
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOWorldSetting.html): 各設定項目をVer4.8基準に更新、ゲームパッド / エモート関連の不具合の追記、ライトの仕様の追記
 - [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOActionTrigger.html): Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
 - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOCollider.html): Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
+- [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/WorldMakingGuide/UnityGuidelines.html): ライトの仕様の追記
 
 # 削除されたページ
