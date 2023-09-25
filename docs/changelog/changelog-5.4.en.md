@@ -9,6 +9,7 @@
 - [How to Animate an Object](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/PropAnimation.html) *English Version WIP
 - [How to Animate an Object - TroubleShooting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/PropAnimation_TroubleShooting.html) *English Version WIP
 - [Missing Components After Version Update](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/troubleshooting/MissingComponents.html)
+- [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/PresetAvatar.md)
 
 # Edited Pages
 - [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/index.html): Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/releasenote/releasenote-5.4.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/changelog/changelog-5.4.html)
@@ -19,6 +20,7 @@
 - [HEOAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOAnimation.html): Added how to use for HEOAnimation
 - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOAudio.html): Added discription according to Ver5.4
 - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/UnityGuidelines.html): Edited content according to Ver5.4
+- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/AvatarFile.md): Added specifications of AvatarFile
 
 # Deleted Pages
 - Deleted check tool on Debug Console implementation
