@@ -64,7 +64,15 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `Light Scattering` | ライトスキャッタリングのオンオフを切り替えます。 |
 | `IBL` | IBL（Image-Based Lighting）のオンオフを切り替えます。 |
 
+!!! note caution
+        `Directional Light`に設定されているIntensityの値（下記画像参照）はワールドに反映されないためご注意ください。<br>
+        ライトの強弱は`LightColor`の色を`Directional Light`側の色と重ね合わせることで表現が可能です。
+
 ![Rendering_2](img/HEOWorldSetting_Rendering_2.jpg)
+
+---
+
+![Rendering_3](img/HEOWorldSetting_Rendering_3.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
@@ -104,6 +112,8 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `NSFW` |  NSFW（Not Safe For Work: 閲覧注意）なアバターの表示を制限します。|
 | `Polygon` | そのワールド内で使用できるマイアバターのポリゴン上限を指定します。 |
 | `Motion` | マイアバターが使用するモーションを指定します。|
+
+---
 
 ![MyAvatar_2](img/HEOWorldSetting_MyAvatar_2.jpg)
 
