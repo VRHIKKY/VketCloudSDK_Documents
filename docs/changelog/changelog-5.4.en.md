@@ -9,6 +9,7 @@
 - [How to Animate an Object](../WorldMakingGuide/PropAnimation.md) *English Version WIP
 - [How to Animate an Object - TroubleShooting](../WorldMakingGuide/PropAnimation_TroubleShooting.md) *English Version WIP
 - [Missing Components After Version Update](../troubleshooting/MissingComponents.md)
+- [Adding Preset Avatars](../WorldMakingGuide/PresetAvatar.md)
 
 # Edited Pages
 - [Overview](../index.md): Added information about [Release Note](../releasenote/releasenote-5.4.md) and [Change Log](../changelog/changelog-5.4.md)
@@ -19,6 +20,7 @@
 - [HEOAnimation](../HEOComponents/HEOAnimation.md): Added how to use for HEOAnimation
 - [HEOAudio](../HEOComponents/HEOAudio.md): Added discription according to Ver5.4
 - [Specification Limit of Vket Cloud](../WorldMakingGuide/UnityGuidelines.md): Edited content according to Ver5.4
+- [AvatarFile](../WorldMakingGuide/AvatarFile.md): Added specifications of AvatarFile
 
 # Deleted Pages
 - Deleted check tool on Debug Console implementation

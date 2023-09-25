@@ -9,6 +9,7 @@
 - [オブジェクトをアニメーションさせる](../WorldMakingGuide/PropAnimation.md)
 - [オブジェクトをアニメーションさせる - できない時は](../WorldMakingGuide/PropAnimation_TroubleShooting.md)
 - [バージョンアップ後にComponentがMissingとして表示される](../troubleshooting/MissingComponents.md)
+- [プリセットアバターを追加する](../WorldMakingGuide/PresetAvatar.md)
 
 # 変更されたページ
 - [はじめに](../index.md): [リリースノート](../releasenote/releasenote-5.4.md)と[チェンジログ](../changelog/changelog-5.4.md)についての案内を追加
@@ -19,6 +20,7 @@
 - [HEOAnimation](../HEOComponents/HEOAnimation.md): HEOAnimationの使い方を追記
 - [HEOAudio](../HEOComponents/HEOAudio.md): 仕様の説明をVer5.4基準に更新
 - [Vket Cloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md): 仕様制限ページの内容をVer5.4基準に更新
+- [AvatarFile](../WorldMakingGuide/AvatarFile.md): AvatarFile仕様を追記
 
 # 削除されたページ
 - デバッグコンソールの実装に伴ってチェックツールを削除
