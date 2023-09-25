@@ -15,7 +15,7 @@
 - [VketCloudSDKの導入方法](../AboutVketCloudSDK/SetupSDK_external.md): 必須パッケージが自動で入らない場合の案内、バージョン切り替えの方法を追記
 - [テクスチャ圧縮](../heoexporter/he_TextureCompression.md)の手順をVer5.4基準に更新
 - [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md): 仕様の説明をVer5.4基準に更新、動画音声が距離減衰に対応していない旨の追記
-- [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md): 各設定項目をVer5.4基準に更新、ゲームパッド / エモート関連の不具合の追記
+- [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md): 各設定項目をVer5.4基準に更新、ゲームパッド / エモート関連の不具合の追記、ライトの仕様の追記
 - [HEOAnimation](../HEOComponents/HEOAnimation.md): HEOAnimationの使い方を追記
 - [HEOAudio](../HEOComponents/HEOAudio.md): 仕様の説明をVer5.4基準に更新
 - [Vket Cloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md): 仕様制限ページの内容をVer5.4基準に更新
