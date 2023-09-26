@@ -9,6 +9,7 @@
 - [オブジェクトをアニメーションさせる](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/PropAnimation.html)
 - [オブジェクトをアニメーションさせる - できない時は](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/PropAnimation_TroubleShooting.html)
 - [バージョンアップ後にComponentがMissingとして表示される](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/troubleshooting/MissingComponents.html)
+- [プリセットアバターを追加する](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/PresetAvatar.md)
 
 # 変更されたページ
 - [はじめに](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/index.html): [リリースノート](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/releasenote/releasenote-5.4.html)と[チェンジログ](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/changelog/changelog-5.4.html)についての案内を追加
@@ -19,6 +20,7 @@
 - [HEOAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOAnimation.html): HEOAnimationの使い方を追記
 - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOAudio.html): 仕様の説明をVer5.4基準に更新
 - [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/UnityGuidelines.html): 仕様制限ページの内容をVer5.4基準に更新、ライトの仕様の追記
+- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/AvatarFile.md): AvatarFile仕様を追記
 
 # 削除されたページ
 - デバッグコンソールの実装に伴ってチェックツールを削除
