@@ -5,6 +5,7 @@
 - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/InstallingDeeplink.html)
 - [ブラウザウィンドウが暗転したまま動かない](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/BrowserBlackWindow.html)
 - [バージョンアップ後にComponentがMissingとして表示される](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/MissingComponents.html)
+- [プリセットアバターを追加する](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/WorldMakingGuide/PresetAvatar.md)
 
 # 変更されたページ
 - [はじめに](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/index.html): [リリースノート](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/releasenote/releasenote-4.8.html)と[チェンジログ](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/changelog/changelog-4.8.html)についての案内を追加
@@ -13,6 +14,7 @@
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOWorldSetting.html): 各設定項目をVer4.8基準に更新、ゲームパッド / エモート関連の不具合の追記、ライトの仕様の追記
 - [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOActionTrigger.html): Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
 - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOCollider.html): Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
+- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/WorldMakingGuide/AvatarFile.md): AvatarFile仕様を追記
 - [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/WorldMakingGuide/UnityGuidelines.html): ライトの仕様の追記
 
 # 削除されたページ
