@@ -18,6 +18,12 @@ VketCloud compresses textures as one of the ways to reduce weight. See [here](..
 ## Reflection probes
 Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionProbe.md) for more information.
 
+## Directional Light
+Note that the Intensity value set on the `Directional Light`(as image below) will not be used within the world.<br>
+To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md). 
+
+![Rendering_2](../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg)
+
 ## Lightmap
 * Switch to Android (dLDR format) or PC (RGBM format) platform
 * Make sure LightMap Encoding in Other Settings is set to "Low Quality" for Android platform and "Normal Quality" for PC platform.
