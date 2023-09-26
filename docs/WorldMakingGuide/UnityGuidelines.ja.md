@@ -16,6 +16,12 @@ VketCloudでは軽量化の方法の一つとしてテクスチャを圧縮す�
 ## リフレクションプローブ
 VketCloudではUnityのリフレクションプローブを使用することができます。詳しくは[こちら](ReflectionProbe.md)をご覧ください。
 
+## Directional Light
+`Directional Light`に設定されているIntensityの値（下記画像参照）はワールドに反映されないためご注意ください。<br>
+ライトの強弱は[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)内の`LightColor`の色を`Directional Light`側の色と重ね合わせることで表現が可能です。
+
+![Rendering_2](../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg)
+
 ## ライトマップ
 * Android(dLDRフォーマット) または PC(RGBMフォーマット)  プラットフォームに切り替える
 * Other SettingsのLightMap EncodingがAndroidプラットフォームの場合『Low Quality』、PCプラットフォームの場合『Normal Quality』になっているか確認する

@@ -63,7 +63,15 @@ This component lets you configurate the following settings:
 | `Light Scattering` | Enable/disable light scattering. |
 | `IBL` | Enable/disable IBL, or Image-Based Lighting. |
 
+!!! note caution
+        Note that the Intensity value set on the `Directional Light`(as image below) will not be used within the world.<br>
+        To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value. 
+
 ![Rendering_2](img/HEOWorldSetting_Rendering_2.jpg)
+
+---
+
+![Rendering_3](img/HEOWorldSetting_Rendering_3.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
@@ -103,6 +111,8 @@ This component lets you configurate the following settings:
 | `NSFW` |  Restrict the use of NSFW (Not Safe For Work) avatars.|
 | `Polygon` | Set the upper limit of polygon count for the MyAvatars in this world. |
 | `Motion` | Set the motion to be used by the MyAvatars.|
+
+---
 
 ![MyAvatar_2](img/HEOWorldSetting_MyAvatar_2.jpg)
 
