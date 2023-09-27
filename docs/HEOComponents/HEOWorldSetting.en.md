@@ -35,9 +35,17 @@ This component lets you configurate the following settings:
         In all SDK versions currently released including version 5.4, gamepads are unable to be used regardless of `Use GamePad` settings.<br>
         This issue is scheduled to be fixed at the next release version.
 
-!!! note caution
-        In SDK version 5.4, playing emotes in local build is disabled while disabling the `Multi Play Mode In Local Build` (i.e. entering in single play mode) due to defect.<br>
-        On testing emotes in local build, please enable the `Multi Play Mode In Local Build`.
+!!! note
+        If a gamepad is connected when entering a world with `Use GamePad` enabled, the player may use their gamepad to control.<br>
+        Although control may vary among gamepads, the function shown below are available.<br>
+        Note that changing/adding controls or inverting camera controls for gamepad are unavailable at the current version.
+
+| Label | Function |
+|----|----|
+| Left stick | Move avatar |
+| Right stick | Move camera |
+| □ / X / Y　| Jump |
+| R3（Pressing down on the right stick）| Reset camera（Reset to initial direction）|
 
 ---
 
