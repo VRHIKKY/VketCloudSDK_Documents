@@ -285,6 +285,7 @@ nav:
 - Release Note:
     - v6.x:
         - v6.0: releasenote/releasenote-6.0.md
+        - v6.1: releasenote/releasenote-6.1.md
     - v5.x:
         - v5.5: releasenote/releasenote-5.5.md
         - v5.4: releasenote/releasenote-5.4.md
