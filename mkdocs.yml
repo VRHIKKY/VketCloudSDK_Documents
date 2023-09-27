@@ -283,6 +283,8 @@ nav:
     - Missing Components After Version Update: troubleshooting/MissingComponents.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Release Note:
+    - v8.x:
+        - v8.0: releasenote/releasenote-8.0.md
     - v7.x:
         - v7.3: releasenote/releasenote-7.3.md
         - v7.2: releasenote/releasenote-7.2.md
