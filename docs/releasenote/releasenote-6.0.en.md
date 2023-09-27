@@ -1,0 +1,12 @@
+# 6.0.0
+-The status/log is now hidden by default and will be displayed after the Scene file is loaded if debugmode is true.
+- You can now toggle the display of status/log with the F8 key.
+- Added a collisiondetection flag to avatars/emotions in the Scene file to determine whether to perform collision detection.
+- Delayed the loading of motions other than Idle.
+- Improved initial loading processing.
+- (Particle Editor) Added Random Two Constants to RotationOverLifetime.
+- (Particle Editor) Added Easing to RotationOverLifetime.
+- (Particle Editor) Added Easing to SizeOverLifetime.
+- Fixed an issue where both vertical and horizontal UI could be displayed at the same time.
+- Fixed an issue where, when playing one's own emotion with Player.Emotion, other players were not notified.
+- Fixed an issue where OnEnterAreaCollider was called multiple times when entering an area collider.
