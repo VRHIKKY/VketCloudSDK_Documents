@@ -1,4 +1,4 @@
-# 5.4.0
+# 5.5.0
 - Improve inspector view of HEO Object
 - Add HEOCamera
 - Add function to exclude GameObjects with EditorOnly from .heo pack

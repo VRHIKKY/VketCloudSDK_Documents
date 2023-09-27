@@ -1,4 +1,4 @@
-# 5.4.0
+# 5.5.0
 - HEO Objectのインスペクタ表示を改善
 - HEOCamera追加
 - EditorOnlyがついているGameobjectを.heoパックから除外する機能追加
