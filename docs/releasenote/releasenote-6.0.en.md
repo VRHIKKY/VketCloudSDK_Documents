@@ -1,5 +1,5 @@
 # 6.0.0
--The status/log is now hidden by default and will be displayed after the Scene file is loaded if debugmode is true.
+- The status/log is now hidden by default and will be displayed after the Scene file is loaded if debugmode is true.
 - You can now toggle the display of status/log with the F8 key.
 - Added a collisiondetection flag to avatars/emotions in the Scene file to determine whether to perform collision detection.
 - Delayed the loading of motions other than Idle.
