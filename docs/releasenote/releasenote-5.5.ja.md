@@ -1,0 +1,24 @@
+# 5.4.0
+- HEO Objectのインスペクタ表示を改善
+- HEOCamera追加
+- EditorOnlyがついているGameobjectを.heoパックから除外する機能追加
+- HEOAudioのフィールドの大文字小文字修正
+- HEOPlayerにTPSRotateを追加
+- HEOObjectにCircle-shadowを追加
+- HEOSpotインスペクタ表示改善
+- HEOShowFlagに新設定項目追加
+- TextPlaneに新設定項目追加
+- HEO系のコンポーネントがhieraruchy上で一括で変更できるようにする
+- HEOBackgroundTexture追加
+- Texture Complex CompressorのUI改善とMac対応
+- HEOUVScrollerのインスペクタ表示を改善
+- AvatarFileのEmotion項目のEmotion name項目を削除する
+- IBL Cube MapのMip Map Count項目を追加
+- HEOColliderのColliderTargetが翻訳されていない問題を修正
+- HEOInfoのBlend Shape Trans Name Tableが表示されない問題を修正
+- IBLのシーンファイル書き込み不具合を修正する
+- HEOShadowの英語と日本語の両方の翻訳文章がなくなった件を修正
+- 自動的に.gitignoreに.mp4が追加されてしまう問題を修正
+- AvatarFileのObject項目にFile Selectボタンを作成
+- VideoTriggerをつけたオブジェクトに専用のマテリアルをセットアップする機能
+- ActionType CallScriptのフィールド項目を改修
