@@ -284,6 +284,7 @@ nav:
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Release Note:
     - v7.x:
+        - v7.1: releasenote/releasenote-7.1.md
         - v7.0: releasenote/releasenote-7.0.md
     - v6.x:
         - v6.4: releasenote/releasenote-6.4.md
