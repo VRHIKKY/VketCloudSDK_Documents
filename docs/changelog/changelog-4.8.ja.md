@@ -15,7 +15,9 @@
 - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOVideoTrigger.html)
     - 使用の説明をVer4.8基準に更新、動画音声が距離減衰に対応していない旨の追記
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOWorldSetting.html)
-    - 各設定項目をVer4.8基準に更新、ゲームパッド / エモート関連の不具合の追記
+    - 各設定項目をVer4.8基準に更新
+    - ゲームパッドの設定・操作方法を追加
+    - エモート関連の不具合の追記
     - ライトの仕様の追記
 - [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOActionTrigger.html)
     - Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載

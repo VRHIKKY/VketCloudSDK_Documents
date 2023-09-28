@@ -18,7 +18,8 @@
     - Added explanation of audio distance falloff unsupported
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOWorldSetting.html)
     - Updated description according to Ver4.8
-    - Added explanation of gamepad / emote related issues
+    - Added specification/details on using gamepad
+    - Added explanation on emote related issues
     - Added restriction on using lights
 - [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOActionTrigger.html)
     - Added description of issue about clickable objects being clickable through colliders
