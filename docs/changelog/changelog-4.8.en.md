@@ -1,6 +1,7 @@
 # Added Pages
 - [HEOSpot](../HEOComponents/HEOSpot.md)
 - [HEOSpawn](../HEOComponents/HEOSpawn.md)
+- [HEOShadow](../HEOComponents/HEOShadow.md)
 - [HEOClickGuide](../HEOComponents/HEOClickGuide.md)
 - [SDK does not appear after install](../troubleshooting/InstallingDeeplink.md)
 - [Browser window blackouts](../troubleshooting/BrowserBlackWindow.md)
@@ -18,8 +19,10 @@
     - Added explanation of audio distance falloff unsupported
 - [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)
     - Updated description according to Ver4.8
-    - Added explanation of gamepad / emote related issues
+    - Added specification on using gamepad
+    - Added explanation of emote related issues
     - Added restriction on using lights
+    - Added how to create dynamic shadows using [HEOShadow](../HEOComponents/HEOShadow.md)
 - [HEOActionTrigger](../HEOComponents/HEOActionTrigger.md)
     - Added description of issue about clickable objects being clickable through colliders
 - [HEOCollider](../HEOComponents/HEOCollider.md)
