@@ -24,9 +24,17 @@ This component lets you configurate the following settings:
 | `Use Physics Engine` | Activate usage of the Physics Engine. |
 | `Favicon` | Set the Favicon of the World. |
 
-!!! note caution
-        In this SDK version, gamepads are unable to be used regardless of `Use GamePad` settings.<br>
-        For using gamepads, please consider using other SDK versions.
+!!! note
+        If a gamepad is connected when entering a world with `Use GamePad` enabled, the player may use their gamepad to control.<br>
+        Although control may vary among gamepads, the function shown below are available.<br>
+        Note that changing/adding controls or inverting camera controls for gamepad are unavailable at the current version.
+
+| Label | Function |
+|----|----|
+| Left stick | Move avatar |
+| Right stick | Move camera |
+| □ / X / Y　| Jump |
+| R3（Pressing down on the right stick）| Reset camera（Reset to initial direction）|
 
 ---
 
