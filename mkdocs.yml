@@ -327,7 +327,25 @@ nav:
         - v3.3: releasenote/releasenote-3.3.md
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
+    - v9.x:
+        - v9.0: changelog/changelog-9.0.md
+    - v8.x:
+        - v8.2: changelog/changelog-8.2.md
+        - v8.1: changelog/changelog-8.1.md
+        - v8.0: changelog/changelog-8.0.md
+    - v7.x:
+        - v7.3: changelog/changelog-7.3.md
+        - v7.2: changelog/changelog-7.2.md
+        - v7.1: changelog/changelog-7.1.md
+        - v7.0: changelog/changelog-7.0.md
+    - v6.x:
+        - v6.4: changelog/changelog-6.4.md
+        - v6.3: changelog/changelog-6.3.md
+        - v6.2: changelog/changelog-6.2.md
+        - v6.1: changelog/changelog-6.1.md
+        - v6.0: changelog/changelog-6.0.md
     - v5.x:
+        - v5.5: changelog/changelog-5.5.md
         - v5.4: changelog/changelog-5.4.md
         - v5.3: changelog/changelog-5.3.md
         - v5.2: changelog/changelog-5.2.md
