@@ -3,7 +3,7 @@
 ![HEOShadow_1](./img/HEOShadow_1.jpg)
 
 HEOShadow is used to display dynamic shadows(shadow maps).<br>
-Using this component, shadows syncronizing to avatar and object movement can be displayed.
+Using this component, shadows synchronizing to avatar and object movement can be displayed.
 
 | Label | Function |
 |----|----|
