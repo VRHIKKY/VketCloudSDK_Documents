@@ -211,6 +211,7 @@ nav:
     - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
     - HEOCollider: HEOComponents/HEOCollider.md
     - HEOAnimation: HEOComponents/HEOAnimation.md
+    - HEOShadow: HEOComponents/HEOShadow.md
     - HEOShowFlag : HEOComponents/HEOShowFlag.md
     - HEOAreacollider: HEOComponents/HEOAreacollider.md
     - HEOVideoTrigger: HEOComponents/HEOVideoTrigger.md

@@ -71,7 +71,7 @@ This component lets you configurate the following settings:
 |  `PBR` |  Enables PBR lighting. |
 | `Directional Light` | Set a Directional Light placed in the scene as the directional light for this world. |
 | `Fade In Time` | Set the white fade-in length on world enter in seconds.|
-| `Shadow Type`| Set the Shadow Type. `round` is a round shadow, and `normalshadowmap` is a normal shadow map. |
+| `Shadow Type`| Set the Shadow Type. `round` is a round shadow, and `normalshadowmap` is a normal shadow map. <br>`normalshadowmap` is used with [HEOShadow](HEOShadow.md).|
 | `Shadow Bias` | Set the bias value on drawing shadows.|
 | `Shadow Area Size` | Set the distance for drawing shadow in meter.|
 | `Shadow Fade Size` | Set the fadeout size growing from the shadow's periphery in meter. |
