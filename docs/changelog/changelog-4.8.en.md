@@ -8,13 +8,26 @@
 - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/PresetAvatar.md)
 
 # Edited Pages
-- [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/index.html): Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/releasenote/releasenote-4.8.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/changelog/changelog-4.8.html)
-- [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupSDK_external.html): Added solution when required packages does not become installed automatically, instructions on how to switch SDK versions
-- [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOVideoTrigger.html): Updated description according to Ver4.8, added explanation of audio distance falloff unsupported
-- [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOWorldSetting.html): Updated description according to Ver4.8, added explanation of gamepad / emote related issues, added restriction on using lights
-- [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOActionTrigger.html): Added description of issue about clickable objects being clickable through colliders
-- [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOCollider.html): Added description of issue about clickable objects being clickable through colliders
-- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/AvatarFile.md): Added specifications of AvatarFile
-- [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/UnityGuidelines.html): added restriction on using lights
+- [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/index.html)
+    - Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/releasenote/releasenote-4.8.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/changelog/changelog-4.8.html)
+- [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupSDK_external.html)
+    - Added solution when required packages does not become installed automatically
+    - Instructions on how to switch SDK versions
+- [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOVideoTrigger.html)
+    - Updated description according to Ver4.8
+    - Added explanation of audio distance falloff unsupported
+- [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOWorldSetting.html)
+    - Updated description according to Ver4.8
+    - Added specification/details on using gamepad
+    - Added explanation on emote related issues
+    - Added restriction on using lights
+- [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOActionTrigger.html)
+    - Added description of issue about clickable objects being clickable through colliders
+- [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOCollider.html)
+    - Added description of issue about clickable objects being clickable through colliders
+- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/AvatarFile.md)
+    - Added specifications of AvatarFile
+- [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/UnityGuidelines.html)
+    - Added restriction on using lights
 
 # Deleted Pages
