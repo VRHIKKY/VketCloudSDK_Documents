@@ -1,6 +1,7 @@
 # Added Pages
 - [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOSpot.html)
 - [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOSpawn.html)
+- [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/4.8//HEOComponents/HEOShadow.html)
 - [HEOClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOClickGuide.html)
 - [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/troubleshooting/InstallingDeeplink.html)
 - [Browser window blackouts](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/troubleshooting/BrowserBlackWindow.html)
@@ -18,8 +19,10 @@
     - Added explanation of audio distance falloff unsupported
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOWorldSetting.html)
     - Updated description according to Ver4.8
-    - Added explanation of gamepad / emote related issues
+    - Added specification on using gamepad
+    - Added explanation of emote related issues
     - Added restriction on using lights
+    - Added how to create dynamic shadows using [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOShadow.html)
 - [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOActionTrigger.html)
     - Added description of issue about clickable objects being clickable through colliders
 - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOCollider.html)

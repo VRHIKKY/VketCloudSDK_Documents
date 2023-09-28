@@ -1,6 +1,7 @@
 # Added Pages
 - [HEOSpot](../HEOComponents/HEOSpot.md)
 - [HEOSpawn](../HEOComponents/HEOSpawn.md)
+- [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOShadow.html)
 - [HEOClickGuide](../HEOComponents/HEOClickGuide.md)
 - [SDK does not appear after install](../troubleshooting/InstallingDeeplink.md)
 - [Debug Console](../debugconsole/debugconsole.md)
@@ -26,6 +27,7 @@
     - Updated discription according to Ver5.4 
     - Added explanation of gamepad / emote related issues 
     - Added restriction on using lights
+    - Added how to create dynamic shadows using [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOShadow.html)
 - [HEOAnimation](../HEOComponents/HEOAnimation.md)
     - Added how to use for HEOAnimation
 - [HEOAudio](../HEOComponents/HEOAudio.md)
