@@ -61,7 +61,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `PBR` |  PBRライティングをオンにします。|
 | `Directional Light` | シーンに設置されたディレクショナルライトをワールドライトとして指定します。 |
 | `Fade In Time` |　ワールド入場時のホワイトフェードインの時間を秒単位で指定します。|
-| `Shadow Type`|　影の描画方法を指定します。`round`は 丸影、`normalshadowmap`は通常のシャドウマップです。|
+| `Shadow Type`|　影の描画方法を指定します。`round`は 丸影、`normalshadowmap`は通常のシャドウマップです。<br>`normalshadowmap`は[HEOShadow](HEOShadow.md)と組み合わせて使用します。|
 | `Shadow Bias` |　影描画のバイアス値を設定します。|
 | `Shadow Area Size` |　シャドウを描画する距離をメートル単位で指定します。|
 | `Shadow Fade Size` |　シャドウ外周に向かってフェードアウトする距離をメートル単位で指定します。　|
