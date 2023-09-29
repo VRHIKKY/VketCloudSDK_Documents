@@ -490,6 +490,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -854,6 +856,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/PresetAvatar.html" class="md-nav__link">
+        プリセットアバターを追加する
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -877,6 +893,8 @@
       
       
       
+        
+          
         
           
         
@@ -1266,6 +1284,20 @@
     <li class="md-nav__item">
       <a href="HEOAnimation.html" class="md-nav__link">
         HEOAnimation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="HEOShadow.html" class="md-nav__link">
+        HEOShadow
       </a>
     </li>
   
@@ -3760,7 +3792,7 @@ HeliScriptの項目内が<code>None</code>(未指定)または<code>Missing</cod
 </tr>
 <tr>
 <td><code>Shadow Type</code></td>
-<td>　影の描画方法を指定します。<code>round</code>は 丸影、<code>normalshadowmap</code>は通常のシャドウマップです。</td>
+<td>　影の描画方法を指定します。<code>round</code>は 丸影、<code>normalshadowmap</code>は通常のシャドウマップです。<br><code>normalshadowmap</code>は<a href="HEOShadow.html">HEOShadow</a>と組み合わせて使用します。</td>
 </tr>
 <tr>
 <td><code>Shadow Bias</code></td>
@@ -3800,7 +3832,14 @@ HeliScriptの項目内が<code>None</code>(未指定)または<code>Missing</cod
 </tr>
 </tbody>
 </table>
+<div class="admonition note caution">
+<p class="admonition-title">Note<p><code>Directional Light</code>に設定されているIntensityの値（下記画像参照）はワールドに反映されないためご注意ください。<br>
+ライトの強弱は<code>LightColor</code>の色を<code>Directional Light</code>側の色と重ね合わせることで表現が可能です。</p>
+</p>
+</div>
 <p><img alt="Rendering_2" src="img/HEOWorldSetting_Rendering_2.jpg" /></p>
+<hr />
+<p><img alt="Rendering_3" src="img/HEOWorldSetting_Rendering_3.jpg" /></p>
 <table>
 <thead>
 <tr>
@@ -3913,6 +3952,7 @@ HeliScriptの項目内が<code>None</code>(未指定)または<code>Missing</cod
 </tr>
 </tbody>
 </table>
+<hr />
 <p><img alt="MyAvatar_2" src="img/HEOWorldSetting_MyAvatar_2.jpg" /></p>
 <table>
 <thead>

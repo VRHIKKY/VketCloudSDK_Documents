@@ -490,6 +490,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -854,6 +856,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/PresetAvatar.html" class="md-nav__link">
+        Adding Preset Avatars
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -877,6 +893,8 @@
       
       
       
+        
+          
         
           
         
@@ -1208,6 +1226,20 @@
     <li class="md-nav__item">
       <a href="HEOAnimation.html" class="md-nav__link">
         HEOAnimation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="HEOShadow.html" class="md-nav__link">
+        HEOShadow
       </a>
     </li>
   
@@ -3659,7 +3691,7 @@ On testing emotes in local build, please enable the <code>Multi Play Mode In Loc
 </tr>
 <tr>
 <td><code>Shadow Type</code></td>
-<td>Set the Shadow Type. <code>round</code> is a round shadow, and <code>normalshadowmap</code> is a normal shadow map.</td>
+<td>Set the Shadow Type. <code>round</code> is a round shadow, and <code>normalshadowmap</code> is a normal shadow map. <br><code>normalshadowmap</code> is used with <a href="HEOShadow.html">HEOShadow</a>.</td>
 </tr>
 <tr>
 <td><code>Shadow Bias</code></td>
@@ -3699,7 +3731,14 @@ On testing emotes in local build, please enable the <code>Multi Play Mode In Loc
 </tr>
 </tbody>
 </table>
+<div class="admonition note caution">
+<p class="admonition-title">Note<p>Note that the Intensity value set on the <code>Directional Light</code>(as image below) will not be used within the world.<br>
+To express light intensity, multiply the <code>Directional Light</code>'s color by using the worldsetting's <code>LightColor</code> value. </p>
+</p>
+</div>
 <p><img alt="Rendering_2" src="img/HEOWorldSetting_Rendering_2.jpg" /></p>
+<hr />
+<p><img alt="Rendering_3" src="img/HEOWorldSetting_Rendering_3.jpg" /></p>
 <table>
 <thead>
 <tr>
@@ -3812,6 +3851,7 @@ On testing emotes in local build, please enable the <code>Multi Play Mode In Loc
 </tr>
 </tbody>
 </table>
+<hr />
 <p><img alt="MyAvatar_2" src="img/HEOWorldSetting_MyAvatar_2.jpg" /></p>
 <table>
 <thead>
