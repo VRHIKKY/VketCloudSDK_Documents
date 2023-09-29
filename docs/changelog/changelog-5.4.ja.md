@@ -17,6 +17,8 @@
 - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/AboutVketCloudSDK/SetupSDK_external.html)
     - 必須パッケージが自動で入らない場合の案内
     - バージョン切り替えの方法を追記
+- [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupAvatar.html)
+    - アバターの使用方法を現行版に更新
 - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/heoexporter/he_TextureCompression.html)
     - 手順をVer5.4基準に更新
 - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOVideoTrigger.html)

@@ -17,6 +17,8 @@
 - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupSDK_external.html)
     - Added solution when required packages does not become installed automatically
     - Instructions on how to switch SDK versions
+- [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupAvatar.html)
+    - Updated instructions on adding avatars
 - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/heoexporter/he_TextureCompression.html)
     - Updated instructions according to Ver5.4
 - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOVideoTrigger.html)
