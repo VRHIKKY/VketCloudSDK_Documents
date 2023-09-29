@@ -1,6 +1,7 @@
 # 追加されたページ
 - [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOSpot.html)
 - [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOSpawn.html)
+- [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOShadow.html)
 - [HEOClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOClickGuide.html)
 - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/InstallingDeeplink.html)
 - [ブラウザウィンドウが暗転したまま動かない](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/BrowserBlackWindow.html)
@@ -21,6 +22,7 @@
     - ゲームパッドの設定・操作方法を追加
     - エモート関連の不具合の追記
     - ライトの仕様の追記
+    - 動的影の作り方について[HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOShadow.html)への誘導を追加
 - [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOActionTrigger.html)
     - Clickableなオブジェクトの判定がコライダーを貫通する不具合を記載
 - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOCollider.html)

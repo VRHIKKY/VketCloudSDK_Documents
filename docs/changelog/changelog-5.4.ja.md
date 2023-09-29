@@ -1,6 +1,7 @@
 # 追加されたページ
 - [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOSpot.html)
 - [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOSpawn.html)
+- [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOShadow.html)
 - [HEOClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOClickGuide.html)
 - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/troubleshooting/InstallingDeeplink.html)
 - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/debugconsole/debugconsole.html)
@@ -28,6 +29,7 @@
     - 各設定項目をVer5.4基準に更新
     - ゲームパッド / エモート関連の不具合の追記
     - ライトの仕様の追記
+    - 動的影の作り方について[HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOShadow.html)への誘導を追加
 - [HEOAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOAnimation.html)
     - HEOAnimationの使い方を追記
 - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOAudio.html)
