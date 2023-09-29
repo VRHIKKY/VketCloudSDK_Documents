@@ -17,6 +17,8 @@
 - [How to install VketCloud SDK](../AboutVketCloudSDK/SetupSDK_external.md)
     - Added solution when required packages does not become installed automatically
     - Instructions on how to switch SDK versions
+- [How to use avatars](../AboutVketCloudSDK/SetupAvatar.md)
+    - Updated instructions on adding avatars
 - [Texture Compression](../heoexporter/he_TextureCompression.md)
     - Updated instructions according to Ver5.4
 - [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md)

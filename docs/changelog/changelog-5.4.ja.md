@@ -17,6 +17,8 @@
 - [VketCloudSDKの導入方法](../AboutVketCloudSDK/SetupSDK_external.md)
     - 必須パッケージが自動で入らない場合の案内
     - バージョン切り替えの方法を追記
+- [アバターの使用方法](../AboutVketCloudSDK/SetupAvatar.md)
+    - アバターの使用方法を現行版に更新
 - [テクスチャ圧縮](../heoexporter/he_TextureCompression.md)
     - 手順をVer5.4基準に更新
 - [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md)

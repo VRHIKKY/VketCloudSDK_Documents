@@ -12,6 +12,8 @@
     - [リリースノート](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/releasenote/releasenote-4.8.html)と[チェンジログ](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/changelog/changelog-4.8.html)についての案内を追加
 - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/AboutVketCloudSDK/SetupSDK_external.html)
     - 必須パッケージが自動で入らない場合の案内、バージョン切り替えの方法を追記
+- [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/AboutVketCloudSDK/SetupAvatar.html)
+    - アバターの使用方法を現行版に更新
 - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOVideoTrigger.html)
     - 使用の説明をVer4.8基準に更新、動画音声が距離減衰に対応していない旨の追記
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOWorldSetting.html)
