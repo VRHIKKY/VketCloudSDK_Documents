@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#avatar" class="md-skip">
+        <a href="#avatarfile" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -486,6 +486,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -568,6 +570,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           アバターファイル
@@ -583,6 +587,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -591,22 +597,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#avatar" class="md-nav__link">
-    Avatarブロック
+  <a href="#vrm" class="md-nav__link">
+    .vrm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motion" class="md-nav__link">
+    Motion
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#emotion" class="md-nav__link">
-    Emotionブロック
+    Emotion
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#objects" class="md-nav__link">
-    Objectsブロック
+    Objects
   </a>
   
 </li>
@@ -858,6 +871,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PresetAvatar.html" class="md-nav__link">
+        プリセットアバターを追加する
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -879,6 +906,8 @@
       
       
       
+        
+          
         
           
         
@@ -1200,6 +1229,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOAnimation.html" class="md-nav__link">
         HEOAnimation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOShadow.html" class="md-nav__link">
+        HEOShadow
       </a>
     </li>
   
@@ -3529,6 +3572,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3537,22 +3582,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#avatar" class="md-nav__link">
-    Avatarブロック
+  <a href="#vrm" class="md-nav__link">
+    .vrm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motion" class="md-nav__link">
+    Motion
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#emotion" class="md-nav__link">
-    Emotionブロック
+    Emotion
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#objects" class="md-nav__link">
-    Objectsブロック
+    Objects
   </a>
   
 </li>
@@ -3570,15 +3622,17 @@
               
                 
                 
-                  <h1>アバターファイル</h1>
-                
-                <h3 id="avatar">Avatarブロック</h3>
+                <h1 id="avatarfile">AvatarFile</h1>
+<p>AvatarFileはVketCloudSDKにて<a href="PresetAvatar.html">プリセットアバターの追加</a>などのために使用するファイルです。<br>
+本ファイルにはVket Cloud上でアバターを動作させるための情報を設定します。</p>
+<h2 id="vrm">.vrm</h2>
 <p>初期設定で表示するVRM形式のアバターを指定する項目です。</p>
+<p><img alt="AvatarFile_1" src="img/AvatarFile_1.jpg" /></p>
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>function</th>
+<th>ラベル</th>
+<th>機能</th>
 </tr>
 </thead>
 <tbody>
@@ -3587,21 +3641,42 @@
 <td>アバターに使用するモデルを設定します。</td>
 </tr>
 <tr>
-<td>height</td>
+<td>Height</td>
 <td>アバターのカメラ基準位置を設定します。0にすると、足元を中心にカメラが追従します。</td>
+</tr>
+<tr>
+<td>Hrm Png</td>
+<td><a href="../heoexporter/he_TextureCompression.html">テクスチャ圧縮</a>の結果生成された[モデル名]_png.hrmファイルを指定します。</td>
+</tr>
+<tr>
+<td>Hrm Astc</td>
+<td><a href="../heoexporter/he_TextureCompression.html">テクスチャ圧縮</a>の結果生成された[モデル名]_astc.hrmファイルを指定します。</td>
+</tr>
+<tr>
+<td>Hrm Etc 2</td>
+<td><a href="../heoexporter/he_TextureCompression.html">テクスチャ圧縮</a>の結果生成された[モデル名]_etc.hrmファイルを指定します。</td>
+</tr>
+<tr>
+<td>Hrm Dxt</td>
+<td><a href="../heoexporter/he_TextureCompression.html">テクスチャ圧縮</a>の結果生成された[モデル名]_dxt.hrmファイルを指定します。</td>
 </tr>
 </tbody>
 </table>
-<h3 id="emotion">Emotionブロック</h3>
-<p>各ユーザーが使用できるエモーションを設定する項目です。Vket Cloudでは任意のエモーションを追加することができ、<code>.hem</code>という独自のファイル形式を採用しています。</p>
+<h2 id="motion">Motion</h2>
+<p>各ユーザーが使用できるモーションを設定する項目です。Vket Cloudでは任意のモーションを追加することができ、<code>.hem</code>という独自のファイル形式を採用しています。</p>
+<p><img alt="AvatarFile_2" src="img/AvatarFile_2.jpg" /></p>
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>function</th>
+<th>ラベル</th>
+<th>機能</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Motion Name</td>
+<td>モーション名を設定します。</td>
+</tr>
 <tr>
 <td>.hem</td>
 <td>モーションファイルを設定します。</td>
@@ -3616,39 +3691,69 @@
 </tr>
 </tbody>
 </table>
-<h3 id="objects">Objectsブロック</h3>
-<p>アバターに対して任意のアセットを持たせるための項目です。<br />
-Heo・Hep・Audioの3つの形式に対応しています。</p>
+<h2 id="emotion">Emotion</h2>
+<p>各ユーザーが使用できるエモートを設定する項目です。Vket Cloudでは任意のエモートを追加することができ、<code>.hem</code>という独自のファイル形式を採用しています。</p>
+<p><img alt="AvatarFile_3" src="img/AvatarFile_3.jpg" /></p>
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>function</th>
+<th>ラベル</th>
+<th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>name</td>
+<td>Emotion Name</td>
+<td>エモート名を設定します。</td>
+</tr>
+<tr>
+<td>.hem</td>
+<td>エモートファイルを設定します。</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>エモートをループ再生します。</td>
+</tr>
+<tr>
+<td>useAction</td>
+<td>エモート再生開始時に呼び出すアクションを設定します。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="objects">Objects</h2>
+<p>アバターに対して任意のアセットを持たせるための項目です。<br />
+Heo・Hep・Audioの3つの形式に対応しています。</p>
+<p><img alt="AvatarFile_4" src="img/AvatarFile_4.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>ラベル</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
 <td>固有の名前を設定します。</td>
 </tr>
 <tr>
-<td>objecttype</td>
+<td>Objecttype</td>
 <td>持たせるオブジェクトのタイプを指定します。.heo、.hep、audioが使用できます。</td>
 </tr>
 <tr>
-<td>file</td>
+<td>File</td>
 <td>アセットを指定します。</td>
 </tr>
 <tr>
-<td>pos</td>
+<td>Position</td>
 <td><code>target</code>からのオフセットを設定できます。</td>
 </tr>
 <tr>
-<td>rotate</td>
+<td>Rotation</td>
 <td>回転角度を設定できます。</td>
 </tr>
 <tr>
-<td>target</td>
+<td>Target</td>
 <td>座標基準となるボーンを指定します。ex. right, left, ...</td>
 </tr>
 </tbody>

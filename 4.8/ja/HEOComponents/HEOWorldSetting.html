@@ -484,6 +484,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -806,6 +808,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/PresetAvatar.html" class="md-nav__link">
+        プリセットアバターを追加する
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -829,6 +845,8 @@
       
       
       
+        
+          
         
           
         
@@ -1218,6 +1236,20 @@
     <li class="md-nav__item">
       <a href="HEOAnimation.html" class="md-nav__link">
         HEOAnimation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="HEOShadow.html" class="md-nav__link">
+        HEOShadow
       </a>
     </li>
   
@@ -3662,11 +3694,38 @@
 </tr>
 </tbody>
 </table>
-<div class="admonition note caution">
-<p class="admonition-title">Note<p>本SDKバージョンではゲームパッドは<code>Use GamePad</code>の設定の如何に関わらず使用することができません。<br>
-ゲームパッドを使用したい場合は他のSDKバージョンの使用をご検討ください。</p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>環境にゲームパッドが接続されている状態で<code>Use GamePad</code>が有効になっているワールドに入場すると、ゲームパッドによる操作が可能となります。<br>
+使用するゲームパッドによって操作方法が異なる場合がありますが、基本的には以下の操作が可能です。<br>
+なお、キー割り当ての変更/追加、ゲームパッドによるカメラ操作の反転については現バージョンでは非対応です。</p>
 </p>
 </div>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左スティック</td>
+<td>アバター移動</td>
+</tr>
+<tr>
+<td>右スティック</td>
+<td>カメラ操作</td>
+</tr>
+<tr>
+<td>□ / X / Y　</td>
+<td>ジャンプ</td>
+</tr>
+<tr>
+<td>R3（右スティック押し込み）</td>
+<td>カメラリセット（初期方向に戻る）</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="_2">カメラ設定</h2>
 <p><img alt="Camera" src="img/HEOWorldSetting_Camera.jpg" /></p>
@@ -3729,7 +3788,7 @@
 </tr>
 <tr>
 <td><code>Shadow Type</code></td>
-<td>　影の描画方法を指定します。<code>round</code>は 丸影、<code>normalshadowmap</code>は通常のシャドウマップです。</td>
+<td>　影の描画方法を指定します。<code>round</code>は 丸影、<code>normalshadowmap</code>は通常のシャドウマップです。<br><code>normalshadowmap</code>は<a href="HEOShadow.html">HEOShadow</a>と組み合わせて使用します。</td>
 </tr>
 <tr>
 <td><code>Shadow Bias</code></td>
@@ -3769,7 +3828,14 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition note caution">
+<p class="admonition-title">Note<p><code>Directional Light</code>に設定されているIntensityの値（下記画像参照）はワールドに反映されないためご注意ください。<br>
+ライトの強弱は<code>LightColor</code>の色を<code>Directional Light</code>側の色と重ね合わせることで表現が可能です。</p>
+</p>
+</div>
 <p><img alt="Rendering_2" src="img/HEOWorldSetting_Rendering_2.jpg" /></p>
+<hr />
+<p><img alt="Rendering_3" src="img/HEOWorldSetting_Rendering_3.jpg" /></p>
 <table>
 <thead>
 <tr>
@@ -3886,6 +3952,7 @@
 </tr>
 </tbody>
 </table>
+<hr />
 <p><img alt="MyAvatar_2" src="img/HEOWorldSetting_MyAvatar_2.jpg" /></p>
 <table>
 <thead>
