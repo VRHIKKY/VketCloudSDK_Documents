@@ -1,23 +1,27 @@
-# How to use avatar
-VketCloud provides two methods of using an avatar:**①Use MyAvatar** and **②Embed the avatar data into the world.** Here we'll explain how to use MyAvatar.
+# How to use avatars
+VketCloud provides two methods of using an avatar:**Using MyAvatars** and **[Adding preset avatars to the world](../WorldMakingGuide/PresetAvatar.md)**. Here, we'll explain how to use the former.
 
-① Log in to [MyVket](https://vket.com/){target=blank}( https://vket.com/ )
-![registerVket](img/MyVketLogin_en.jpg) 
+1. Login to your account by accessing to [MyVket](https://vket.com/).
+![SetupAvatar_1](./img/SetupAvatar_1_en.jpg)
   
-➁ Select My Avatars from My Page
-![avatarupload](img/MyVketAvatar_en.jpg) 
+2. Open the menu on the top right, and select "Avatar/Item Management".
+![SetupAvatar_2](./img/SetupAvatar_2_en.jpg)
 
-③ Click Upload Avatar to upload your VRM file.  
-![avatarupload2](img/MyVketMyAvatars_en.jpg)  
+3. Click "Upload" to upload your VRM file.  
+![SetupAvatar_3](./img/SetupAvatar_3_en.jpg)
 
-④ Enter any world from [SDK portal site](https://vket.com/world){target=blank} or the local build using your SDK
+4. At the upload page, designate an item name (avatar name), category, thumbnail, etc.
+![SetupAvatar_4](./img/SetupAvatar_4_en.jpg)
 
-⑤After entering the room, the avatar you just uploaded will be displayed in the avatar change options.
-![avatarupload3](img/MyVketWorldUI_en.jpg)  
+5. Enter any world from [World list](https://vket.com/world) or the local build using your SDK.
 
-⑥ Click the avatar icon. Your avatar will show up in the world!
-![avatarupload4](img/MyVketWorld.jpg)
+6. After entering the room, the uploaded avatar will be displayed in the avatar menu accessed in "Settings"-->"MyPage"-->"Avatar".
+![SetupAvatar_5](./img/SetupAvatar_5_en.jpg)
+
+7.  Click the avatar icon, and your avatar will be changed!
+![SetupAvatar_6](./img/SetupAvatar_6.jpg)
 
 !!! note tip
-    You can also use Avatar Maker（[from here](https://avatarmaker.vket.com/edit/){target=blank}） to create your VRM easily. If you find it difficult to create your avatar using modeling softwares or other tools, please consider using this service.
-
+    You can also use the [Avatar Maker](https://avatarmaker.vket.com/edit/) to create your own avatar VRM.<br> 
+    If you find it difficult to create your avatar using modeling softwares or other tools, please consider using this service.<br>
+    For details on adding preset avatars, refer to the [Adding Preset Avatars](../WorldMakingGuide/PresetAvatar.md) page.

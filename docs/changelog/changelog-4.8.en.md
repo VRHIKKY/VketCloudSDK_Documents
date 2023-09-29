@@ -13,6 +13,8 @@
 - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupSDK_external.html)
     - Added solution when required packages does not become installed automatically
     - Instructions on how to switch SDK versions
+- [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupAvatar.html)
+    - Updated instructions on adding avatars
 - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOVideoTrigger.html)
     - Updated description according to Ver4.8
     - Added explanation of audio distance falloff unsupported
