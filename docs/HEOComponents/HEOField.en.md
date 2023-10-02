@@ -10,6 +10,10 @@ Objects with HEOField attached will be packed into .heo during BuildAndRun. Make
 ---
 
 ## Configure dynamic loading
+!!! note caution
+    In this SDK version, build errors when uploading worlds with dynamic loading implemented are being recognised. 
+    Consider using the stable SDK version for using dynamic loading, or use other optimization methods such as [Texture Compression](../heoexporter/he_TextureCompression.md).
+
 VketCloud allows objects to be loaded when entering a specific area after entering the world. This is called "dynamic loading". You may set the dynamic loading by following the below steps.
 
 ### Load initiator
