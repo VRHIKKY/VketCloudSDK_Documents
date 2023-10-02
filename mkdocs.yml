@@ -186,30 +186,33 @@ nav:
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
 - HEOComponents:
-    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
-    - HEOField: HEOComponents/HEOField.md
-    - HEOPlayer: HEOComponents/HEOPlayer.md
-    - HEOSpawn: HEOComponents/HEOSpawn.md
-    - HEOSpot: HEOComponents/HEOSpot.md
-    - HEOObject: HEOComponents/HEOObject.md
-    - HEOLODLevel: HEOComponents/HEOLODLevel.md
+    - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
+    - HEOAnimation: HEOComponents/HEOAnimation.md
+    - HEOAreacollider: HEOComponents/HEOAreacollider.md
     - HEOAudio: HEOComponents/HEOAudio.md
-    - HEOPlane: HEOComponents/HEOPlane.md
+    - HEOCollider: HEOComponents/HEOCollider.md
     - HEOClickGuide: HEOComponents/HEOClickGuide.md
-    - HEOUVScroller: HEOComponents/HEOUVScroller.md
-    - HEOTextPlane: HEOComponents/HEOTextPlane.md
+    - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
+    - HEOField: HEOComponents/HEOField.md
+    #- HEOInfo: HEOComponents/HEOInfo.md #整備中
+    - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
+    - HEOLODLevel: HEOComponents/HEOLODLevel.md
+    - HEOObject: HEOComponents/HEOObject.md
+    #- HEOObjectType: HEOComponents/HEOObjectType.md #整備中
     - HEOParticle: HEOComponents/HEOParticle.md
+    - HEOPlane: HEOComponents/HEOPlane.md
+    - HEOPlayer: HEOComponents/HEOPlayer.md
     - HEOReflectionProbe : HEOComponents/HEOReflectionProbe.md
     - HEOScript: HEOComponents/HEOScript.md
-    - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
-    - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
-    - HEOCollider: HEOComponents/HEOCollider.md
-    - HEOAnimation: HEOComponents/HEOAnimation.md
     - HEOShadow: HEOComponents/HEOShadow.md
     - HEOShowFlag : HEOComponents/HEOShowFlag.md
-    - HEOAreacollider: HEOComponents/HEOAreacollider.md
+    - HEOSpawn: HEOComponents/HEOSpawn.md
+    - HEOSpot: HEOComponents/HEOSpot.md
+    - HEOTextPlane: HEOComponents/HEOTextPlane.md
+    #- HEOTweetTrigger: HEOComponents/HEOTweetTrigger.md #Deprecated
+    - HEOUVScroller: HEOComponents/HEOUVScroller.md
     - HEOVideoTrigger: HEOComponents/HEOVideoTrigger.md
-    - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
+    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
 - Actions: 
     #- ActionNodeGraph: Actions/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Actions/ActionsOverview.md
