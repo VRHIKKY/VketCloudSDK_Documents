@@ -22,6 +22,8 @@
     - Updated instructions on adding avatars
 - [Texture Compression](../heoexporter/he_TextureCompression.md)
     - Updated instructions according to Ver5.4
+- [HEOInfo](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOInfo.html)
+    - Added caution for feature being unavailable at Ver.5.4
 - [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md)
     - Updated discription according to Ver5.4
     - Added explanation of audio distance falloff unsupported
