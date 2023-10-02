@@ -172,6 +172,7 @@ nav:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
     #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
+    #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - Physics Engine : WorldMakingGuide/PhysicsEngine.md
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
