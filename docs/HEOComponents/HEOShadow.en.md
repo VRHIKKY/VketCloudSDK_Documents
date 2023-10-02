@@ -12,7 +12,7 @@ Using this component, shadows syncronizing to avatar and object movement can be 
 
 ## How to Use
 
-1\. Change the Rendering setting in [HEOWorldSetting](HEOWorldSetting) from `Round`(round shadow) to `Normal Shadow Map`.
+1\. Change the Rendering setting in [HEOWorldSetting](HEOWorldSetting.md) from `Round`(round shadow) to `Normal Shadow Map`.
 
 ![HEOShadow_2](./img/HEOShadow_2.jpg)
 
@@ -34,7 +34,7 @@ Shadows have a designated display distance, which fade outs / disappears when be
 
 !!! note caution
         Only the objects with HEOShadow attached will have their dynamic shadows drawn.<br>
-        If `Normal Shadow Map` in [HEOWorldSetting](HEOWorldSetting) is enabled, objects without HEOShadow will not have their shadow casted/ recieve other shadows.
+        If `Normal Shadow Map` in [HEOWorldSetting](HEOWorldSetting.md) is enabled, objects without HEOShadow will not have their shadow casted/ recieve other shadows.
 
 Also, objects without `Shadow Reciever` selected will not have their shadow casted.
 
