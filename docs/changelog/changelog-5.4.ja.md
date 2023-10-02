@@ -34,6 +34,8 @@
     - HEOAnimationの使い方を追記
 - [HEOAudio](../HEOComponents/HEOAudio.md)
     - 仕様の説明をVer5.4基準に更新
+- [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOField.html)
+    - 動的ローディング使用時のビルドエラーについて記載
 - [Vket Cloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md)
     - 仕様制限ページの内容をVer5.4基準に更新
     - ライトの仕様の追記
