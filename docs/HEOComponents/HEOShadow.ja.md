@@ -12,7 +12,7 @@ HEOShadowは、動的影(シャドウマップ)を設定するために使いま
 
 ## 使い方
 
-1\. [HEOWorldSetting](HEOWorldSetting)のRenderingタブにて影を`Round`(丸影)から`Normal Shadow Map`(シャドーマップ)に変更します。
+1\. [HEOWorldSetting](HEOWorldSetting.md)のRenderingタブにて影を`Round`(丸影)から`Normal Shadow Map`(シャドーマップ)に変更します。
 
 ![HEOShadow_2](./img/HEOShadow_2.jpg)
 
@@ -34,7 +34,7 @@ HEOShadowは、動的影(シャドウマップ)を設定するために使いま
 
 !!! note caution
         HEOShadowで動的影が出力されるのは、HEOShadowをアタッチしたオブジェクトのみになります。<br>
-        [HEOWorldSetting](HEOWorldSetting)にて`Normal Shadow Map`が有効になっている場合、HEOShadowがアタッチされていないオブジェクトは影を表示しない + 影が投影されない状態となります。
+        [HEOWorldSetting](HEOWorldSetting.md)にて`Normal Shadow Map`が有効になっている場合、HEOShadowがアタッチされていないオブジェクトは影を表示しない + 影が投影されない状態となります。
 
 また、`Shadow Reciever`にチェックが入っていないオブジェクトの場合は影が投影されなくなるためご注意ください。
 
