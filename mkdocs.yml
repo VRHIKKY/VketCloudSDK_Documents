@@ -136,7 +136,9 @@ plugins:
           Missing Components After Version Update: バージョンアップ後にComponentがMissingとして表示される
           First Step: ワールド制作の基本
           Change Log: チェンジログ
+          About Changelog: チェンジログについて
           Release Note: リリースノート
+          About Release Note: リリースノートについて
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
           Debug Console: デバッグコンソール
@@ -287,6 +289,7 @@ nav:
     - Missing Components After Version Update: troubleshooting/MissingComponents.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Release Note:
+    - About Release Note: releasenote/AboutReleasenote.md
     - v5.x:
         - v5.4: releasenote/releasenote-5.4.md
         - v5.3: releasenote/releasenote-5.3.md
@@ -313,6 +316,7 @@ nav:
         - v3.3: releasenote/releasenote-3.3.md
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
+    - About Changelog: changelog/AboutChangelog.md
     - v5.x:
         - v5.4: changelog/changelog-5.4.md
         - v5.3: changelog/changelog-5.3.md
