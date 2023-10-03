@@ -36,6 +36,8 @@
     - Added how to use for HEOAnimation
 - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOAudio.html)
     - Added discription according to Ver5.4
+- [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOField.html)
+    - Added info on build error issue when uploading world with dynamic loading implemented
 - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/UnityGuidelines.html)
     - Edited content according to Ver5.4 
     - Added restriction on using lights
