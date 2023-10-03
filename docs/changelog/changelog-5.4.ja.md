@@ -22,6 +22,8 @@
     - アバターの使用方法を現行版に更新
 - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/heoexporter/he_TextureCompression.md)
     - 手順をVer5.4基準に更新
+- [HEOInfo](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOInfo.html)
+    - 本バージョンでは使用できない旨を記載
 - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/HEOComponents/HEOVideoTrigger.md)
     - 仕様の説明をVer5.4基準に更新
     - 動画音声が距離減衰に対応していない旨の追記
