@@ -1,47 +1,47 @@
 # Added Pages
-- [HEOSpot](../HEOComponents/HEOSpot.md)
-- [HEOSpawn](../HEOComponents/HEOSpawn.md)
+- [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOSpot.html)
+- [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOSpawn.html)
 - [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOShadow.html)
-- [HEOClickGuide](../HEOComponents/HEOClickGuide.md)
-- [SDK does not appear after install](../troubleshooting/InstallingDeeplink.md)
-- [Debug Console](../debugconsole/debugconsole.md)
-- [Debug Message](../debugconsole/debugmessage.md)
-- [Browser window blackouts](../troubleshooting/BrowserBlackWindow.md)
-- [How to Animate an Object](../WorldMakingGuide/PropAnimation.md) *English Version WIP
-- [How to Animate an Object - TroubleShooting](../WorldMakingGuide/PropAnimation_TroubleShooting.md) *English Version WIP
-- [Missing Components After Version Update](../troubleshooting/MissingComponents.md)
-- [Adding Preset Avatars](../WorldMakingGuide/PresetAvatar.md)
+- [HEOClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOClickGuide.html)
+- [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/InstallingDeeplink.html)
+- [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/debugconsole/debugconsole.html)
+- [Debug Message](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/debugconsole/debugmessage.html)
+- [Browser window blackouts](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/BrowserBlackWindow.html)
+- [How to Animate an Object](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation.html) *English Version WIP
+- [How to Animate an Object - TroubleShooting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation_TroubleShooting.html) *English Version WIP
+- [Missing Components After Version Update](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/MissingComponents.html)
+- [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PresetAvatar.html)
 
 # Edited Pages
-- [Overview](../index.md)
-    - Added information about [Release Note](../releasenote/releasenote-5.4.md) and [Change Log](../changelog/changelog-5.4.md)
-- [How to install VketCloud SDK](../AboutVketCloudSDK/SetupSDK_external.md)
+- [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/index.html)
+    - Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/releasenote/releasenote-5.4.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/changelog/changelog-5.4.html)
+- [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupSDK_external.html)
     - Added solution when required packages does not become installed automatically
     - Instructions on how to switch SDK versions
-- [How to use avatars](../AboutVketCloudSDK/SetupAvatar.md)
+- [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupAvatar.html)
     - Updated instructions on adding avatars
-- [Texture Compression](../heoexporter/he_TextureCompression.md)
+- [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/heoexporter/he_TextureCompression.html)
     - Updated instructions according to Ver5.4
 - [HEOInfo](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOInfo.html)
     - Added caution for feature being unavailable at Ver.5.4
-- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md)
+- [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOVideoTrigger.html)
     - Updated discription according to Ver5.4
     - Added explanation of audio distance falloff unsupported
-- [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)
+- [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOWorldSetting.html)
     - Updated discription according to Ver5.4 
     - Added explanation of gamepad / emote related issues 
     - Added restriction on using lights
     - Added how to create dynamic shadows using [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOShadow.html)
-- [HEOAnimation](../HEOComponents/HEOAnimation.md)
+- [HEOAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOAnimation.html)
     - Added how to use for HEOAnimation
-- [HEOAudio](../HEOComponents/HEOAudio.md)
+- [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOAudio.html)
     - Added discription according to Ver5.4
-- [Specification Limit of Vket Cloud](../WorldMakingGuide/UnityGuidelines.md)
+- [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/UnityGuidelines.html)
     - Edited content according to Ver5.4 
     - Added restriction on using lights
-- [HEMAnimationConverter](../HEMAnimationConverter/AnimationConverter.md)
+- [HEMAnimationConverter](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEMAnimationConverter/AnimationConverter.html)
     - Revised content according to Ver5.4 *English Version WIP
-- [AvatarFile](../WorldMakingGuide/AvatarFile.md)
+- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/AvatarFile.html)
     - Added specifications of AvatarFile
 
 # Deleted Pages
