@@ -1,17 +1,17 @@
 # Added Pages
-- [HEOSpot](../HEOComponents/HEOSpot.md)
-- [HEOSpawn](../HEOComponents/HEOSpawn.md)
-- [HEOShadow](../HEOComponents/HEOShadow.md)
-- [HEOClickGuide](../HEOComponents/HEOClickGuide.md)
-- [SDK does not appear after install](../troubleshooting/InstallingDeeplink.md)
-- [Browser window blackouts](../troubleshooting/BrowserBlackWindow.md)
-- [Missing Components After Version Update](../troubleshooting/MissingComponents.md)
-- [Adding Preset Avatars](../WorldMakingGuide/PresetAvatar.md)
+- [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOSpot.html)
+- [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOSpawn.html)
+- [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOShadow.html)
+- [HEOClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOClickGuide.html)
+- [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/troubleshooting/InstallingDeeplink.html)
+- [Browser window blackouts](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/troubleshooting/BrowserBlackWindow.html)
+- [Missing Components After Version Update](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/troubleshooting/MissingComponents.html)
+- [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/PresetAvatar.html)
 
 # Edited Pages
-- [Overview](../index.md)
-    - Added information about [Release Note](../releasenote/releasenote-4.8.md) and [Change Log](../changelog/changelog-4.8.md)
-- [How to install VketCloud SDK](../AboutVketCloudSDK/SetupSDK_external.md)
+- [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/index.html)
+    - Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/releasenote/releasenote-4.8.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/changelog/changelog-4.8.html)
+- [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupSDK_external.html)
     - Added solution when required packages does not become installed automatically
     - Instructions on how to switch SDK versions
 - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupAvatar.html)
@@ -19,19 +19,19 @@
 - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOVideoTrigger.html)
     - Updated description according to Ver4.8
     - Added explanation of audio distance falloff unsupported
-- [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)
+- [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOWorldSetting.html)
     - Updated description according to Ver4.8
     - Added specification on using gamepad
     - Added explanation of emote related issues
     - Added restriction on using lights
-    - Added how to create dynamic shadows using [HEOShadow](../HEOComponents/HEOShadow.md)
-- [HEOActionTrigger](../HEOComponents/HEOActionTrigger.md)
+    - Added how to create dynamic shadows using [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOShadow.html)
+- [HEOActionTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOActionTrigger.html)
     - Added description of issue about clickable objects being clickable through colliders
-- [HEOCollider](../HEOComponents/HEOCollider.md)
+- [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/HEOComponents/HEOCollider.html)
     - Added description of issue about clickable objects being clickable through colliders
-- [AvatarFile](../WorldMakingGuide/AvatarFile.md)
+- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/AvatarFile.html)
     - Added specifications of AvatarFile
-- [Specification Limit of Vket Cloud](../WorldMakingGuide/UnityGuidelines.md)
+- [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/WorldMakingGuide/UnityGuidelines.html)
     - Added restriction on using lights
 
 # Deleted Pages
