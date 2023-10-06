@@ -1,6 +1,5 @@
 # AutoTextureCompresserの使い方
-VketCloudで使用するテクスチャの圧縮には、サードパーティ製の圧縮ツールを使用しています。<br>
-圧縮の手順としては「_astc」「_dxt」「_etc」の識別名がついた[バッチファイルの実行](../heoexporter/he_TextureCompression.md)ですが、馴れていないユーザにとっては手順が煩雑になりやすい問題があります。<br>
+VketCloudで使用するテクスチャの圧縮には、サードパーティ製の圧縮ツールを使用しています。圧縮の手順としては「_astc」「_dxt」「_etc」の識別名がついた[バッチファイルの実行](../heoexporter/he_TextureCompression.md)ですが、馴れていないユーザにとっては手順が煩雑になりやすい問題があります。<br>
 Auto Texture Compresserは、この一連の手続きを自動化するツールです。
 
 ## 使用方法
@@ -42,11 +41,16 @@ TexConvはページを開いてすぐ上の方にある「DOWNLOADS@LATEST」で
 
     ![AutoTextureCompresser_6](img/AutoTextureCompresser_6.jpg)
 
-6. IList内に**Path0**にField毎の**BuildPath以下の相対パス**を指定します。<br>具体的にはプロジェクトをエキスプローラにて開き、upload/data/Field下にある[HEOField](../HEOComponents/HEOField.md)がアタッチされたオブジェクトと同名のパスを指定します。<br>複数指定する必要がある場合は改行します。
-例)
-　data\Field\World
-　data\Field\PartyRoom
-　data\Field\*
+!!! note caution
+        Ver4.8 / Ver5.4では初期値にJRWorldという文字列が混じっているため、該当の文字列を削除した上でのツールの使用をお願いいたします。
+        本不具合は次回のアップデートで修正される予定です。
+    ![AutoTextureCompresser_Issue](img/AutoTextureCompresser_Issue.jpg)
+
+6. IList内に**Path0**にField毎の**BuildPath以下の相対パス**を指定します。<br>具体的にはプロジェクトをエキスプローラにて開き、upload/data/Field下にある[HEOField](../HEOComponents/HEOField.md)がアタッチされたオブジェクトと同名のパスを指定します。<br>複数指定する必要がある場合は改行します。<br>
+例)<br>
+　data\Field\World<br>
+　data\Field\PartyRoom<br>
+　data\Field\*<br>
     ![AutoTextureCompresser_7](img/AutoTextureCompresser_7.jpg)
 
 7. **Optimize Files**ボタンをクリック
@@ -91,4 +95,4 @@ TexConvはページを開いてすぐ上の方にある「DOWNLOADS@LATEST」で
 
 | 変数 | 初期値 | 機能 |
 | ---- | ---- | ---- |
-|IList |　なし | 変換するHEOが含まれるフォルダーパスを列挙したtxtファイル |
+|IList |　なし | 変換するHEOFieldが含まれるフォルダーパスの列挙 |

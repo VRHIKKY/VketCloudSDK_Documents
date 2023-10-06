@@ -38,6 +38,11 @@ At First, please install [PVRTexTool](https://developer.imaginationtech.com/pvrt
 
     ![AutoTextureCompresser_6](img/AutoTextureCompresser_6.jpg)
 
+!!! note caution
+        Ver4.8 / Ver5.4では初期値にJRWorldという文字列が混じっているため、該当の文字列を削除した上でのツールの使用をお願いいたします。
+        本不具合は次回のアップデートで修正される予定です。
+    ![AutoTextureCompresser_Issue](img/AutoTextureCompresser_Issue.jpg)
+
 6. IList内に**Path0**にField毎の**BuildPath以下の相対パス**を指定します。<br>具体的にはプロジェクトをエキスプローラにて開き、upload/data/Field下にある[HEOField](../HEOComponents/HEOField.md)がアタッチされたオブジェクトと同名のパスを指定します。<br>複数指定する必要がある場合は改行します。
 例)
 　data\Field\World
