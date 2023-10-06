@@ -127,6 +127,7 @@ plugins:
           Property: プロパティウィンドウ
           Animation Converter : アニメーションコンバーター
           Adding Preset Avatars : プリセットアバターを追加する
+          Occlusion Culling: オクルージョンカリング
           Trouble shooting: トラブルシューティング
           SDK does not appear after install: SDKがインストール後に立ち上がらない
           Build Error: ビルドエラー
@@ -188,6 +189,7 @@ nav:
         - Particle List : particleeditor/pe_particlelistwindow.md
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+    - Occlusion Culling: WorldMakingGuide/OcclusionCulling.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
     - HEOAnimation: HEOComponents/HEOAnimation.md
