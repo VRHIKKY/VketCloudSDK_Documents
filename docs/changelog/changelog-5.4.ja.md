@@ -41,7 +41,7 @@
     - 解説・操作方法をVer5.4基準に更新
 - [AvatarFile](../WorldMakingGuide/AvatarFile.md)
     - AvatarFile仕様を追記
-- [AutoTextureCompresser](../AutoTextureCompresser/AutoTextureCompresser.md)
+- [AutoTextureCompresser](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/AutoTextureCompresser/AutoTextureCompresser.html)
     - 解説・使い方をVer5.4基準に更新
     
 # 削除されたページ
