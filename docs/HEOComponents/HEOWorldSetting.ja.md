@@ -18,7 +18,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 |  `World Name` |  ワールド名を設定する項目です。基本的にはワールド作成時に自動生成されたIDがアップロード時に自動入力され、URLなどに反映されます。<br> (例：[VketID_of_Creator].cloud.vket.com/worlds/[World_Name])|
 |  `Debug Mode` |  デバッグモードを切り替えることができます。オンにするとブラウザ上で`F1`または`F2`からデバッグ機能を使用することが可能になります。|
 | `VRM Drop` |  ブラウザ上へのVRMドロップによるローカルの(他プレイヤーから見えない)アバター変更を許可します。 |
-| `Occulusion Culling` | オクルージョンカリングをオンにします。　|
+| `Occulusion Culling` | オクルージョンカリングをオンにします。<br>詳しい使い方は[オクルージョンカリング](../WorldMakingGuide/OcclusionCulling.md)をご確認ください。　|
 | `World Name Directory` | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。<br>(例： data/field/`ワールド名`/world.heo)|
 | `Multi Play Mode In Local Build` | ローカルビルド時にマルチプレイモードで入室します。 |
 | `Use GamePad` | ゲームパッドを使用するかどうかの設定です。 |

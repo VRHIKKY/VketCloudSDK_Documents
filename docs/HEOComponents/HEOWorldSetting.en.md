@@ -17,7 +17,7 @@ This component lets you configurate the following settings:
 |  `World Name` |  Set the name of the World. This value will be autofilled by the generated world ID on upload, which will mainly be used for the world URL.<br> (e.g. [VketID_of_Creator].cloud.vket.com/worlds/[World_Name]) |
 |  `Debug Mode`  |  Switch to debug mode. When switched on, players can use the F1/F2 key to access the debug menu on browser.|
 |  `VRM Drop`  |  Allows users to locally change their avatar by drag-and-dropping their own .vrm avatars to the browser screen.  |
-|  `Occulusion Culling`  | Activate the Occulusion Culling.  |
+|  `Occulusion Culling`  | Activate the Occulusion Culling.<br>For instructions, please refer to [Occlusion Culling](../WorldMakingGuide/OcclusionCulling.md).  |
 |  `World Name Directory`  |  When exporting to .heo and other files, the files will be packed into a folder with the same name as the `World Name`. <br>(e.g. data/field/`World Name`/world.heo) |
 | `Multi Play Mode In Local Build` | Activate multiplayer functions even during the local build. |
 | `Use GamePad` | Activate usage of GamePads.  |

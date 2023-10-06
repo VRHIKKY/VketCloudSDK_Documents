@@ -14,10 +14,10 @@
 次に、Cubeの向こう側に遮蔽される対象としてSphereを設置します。
 ![OcclusionCulling_3](img/OcclusionCulling_3.jpg)
 
-Cubeには[HEOCollider](../HEOComponents/HEOCollider.md)を入れ、ColliderTypeをOcclusionに設定します。
+Cubeには[HEOCollider](../HEOComponents/HEOCollider.md)を入れ、ColliderTypeを`Occlusion`に設定します。
 ![OcclusionCulling_4](img/OcclusionCulling_4.jpg)
 
-また、[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)のOcclusion Cullingにチェックを入れ、ビルドします。
+また、[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)の`Occlusion Culling`にチェックを入れ、ビルドします。
 ![OcclusionCulling_5](img/OcclusionCulling_5.jpg)
 
 カメラとSphereの間にOcclusion設定を行ったCubeが入ることで、Sphereが非表示になります。
