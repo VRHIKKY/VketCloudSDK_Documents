@@ -41,6 +41,8 @@
     - Revised content according to Ver5.4 *English Version WIP
 - [AvatarFile](../WorldMakingGuide/AvatarFile.md)
     - Added specifications of AvatarFile
+- [AutoTextureCompresser](../AutoTextureCompresser/AutoTextureCompresser.md)
+    - Edited content according to Ver5.4 *English Version WIP
 
 # Deleted Pages
 - Deleted check tool on Debug Console implementation
