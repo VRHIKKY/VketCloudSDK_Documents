@@ -40,6 +40,8 @@
     - Revised content according to Ver5.4 *English Version WIP
 - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/AvatarFile.html)
     - Added specifications of AvatarFile
+- [AutoTextureCompresser](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AutoTextureCompresser/AutoTextureCompresser.html)
+    - Edited content according to Ver5.4 *English Version WIP
 
 # Deleted Pages
 - Deleted check tool on Debug Console implementation
