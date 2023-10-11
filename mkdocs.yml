@@ -127,6 +127,8 @@ plugins:
           Property: プロパティウィンドウ
           Animation Converter : アニメーションコンバーター
           Adding Preset Avatars : プリセットアバターを追加する
+          World Optimization: ワールドの軽量化方法
+          World Optimization - Overview: ワールドの軽量化方法：概要
           Occlusion Culling: オクルージョンカリング
           Trouble shooting: トラブルシューティング
           SDK does not appear after install: SDKがインストール後に立ち上がらない
@@ -183,8 +185,6 @@ nav:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
     #- Check Tool: checktool/checktool.md #デバッグコンソール新設に伴い廃止。アーカイブのためファイルは残す
-    - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
-    - Texture Compression : heoexporter/he_TextureCompression.md
     - Particle Editor :
       - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
       - About Screen : particleeditor/pe_about_screen.md
@@ -195,7 +195,11 @@ nav:
         - Particle List : particleeditor/pe_particlelistwindow.md
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
-    - Occlusion Culling: WorldMakingGuide/OcclusionCulling.md
+- World Optimization: 
+  - World Optimization - Overview : WorldMakingGuide/WorldOptimization.md
+  - Occlusion Culling : WorldMakingGuide/OcclusionCulling.md
+  - Auto Texture Compression : AutoTextureCompresser/AutoTextureCompresser.md
+  - Texture Compression : heoexporter/he_TextureCompression.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
     - HEOAnimation: HEOComponents/HEOAnimation.md
