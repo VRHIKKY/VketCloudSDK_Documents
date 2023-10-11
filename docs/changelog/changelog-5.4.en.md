@@ -15,6 +15,8 @@
 # Edited Pages
 - [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/index.html)
     - Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/releasenote/releasenote-5.4.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/changelog/changelog-5.4.html)
+- [How to Build](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/FirstStep/BuildAndRun.html) 
+    - Changed description of clear cache
 - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupSDK_external.html)
     - Added solution when required packages does not become installed automatically
     - Instructions on how to switch SDK versions
