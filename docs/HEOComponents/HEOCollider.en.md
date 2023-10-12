@@ -19,7 +19,7 @@ HEO Collider is a component to set what kind of collision detection a collider h
 | `Collider` | Plays the role of a collider. |
 | `Clickable` | Allows players to click. |
 | `Area` | A collider that can be passed through. By combining with HEOAreaCollider, you can set any action when the player get inside the area. |
-| `Occlusion` | Enable occlusion on contact. |
+| `Occlusion` | Enable occlusion on contact. <br> For instructions, please refer to [Occlusion Culling](../WorldMakingGuide/OcclusionCulling.md).  |
 | `Reflection Probe` | Enable reflection probes on touch. |
 | `in View` | Handled when you want to judge whether or not the object entered the field of view |
 
