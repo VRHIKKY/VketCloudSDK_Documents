@@ -44,6 +44,10 @@
     - 解説・操作方法をVer5.4基準に更新
 - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/AvatarFile.html)
     - AvatarFile仕様を追記
-
+- [AutoTextureCompresser](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/AutoTextureCompresser/AutoTextureCompresser.html)
+    - 解説・使い方をVer5.4基準に更新
+- [HeliScript - 文字列(String)](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/hs/hs_string.html)
+    - %演算子に関するサンプルコードを更新
+    
 # 削除されたページ
 - デバッグコンソールの実装に伴ってチェックツールを削除
