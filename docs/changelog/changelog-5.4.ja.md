@@ -11,6 +11,7 @@
 - [オブジェクトをアニメーションさせる - できない時は](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/PropAnimation_TroubleShooting.html)
 - [バージョンアップ後にComponentがMissingとして表示される](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/troubleshooting/MissingComponents.html)
 - [プリセットアバターを追加する](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/PresetAvatar.html)
+- [オクルージョンカリング](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/WorldMakingGuide/OcclusionCulling.html)
 
 # 変更されたページ
 - [はじめに](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/ja/index.html) 
