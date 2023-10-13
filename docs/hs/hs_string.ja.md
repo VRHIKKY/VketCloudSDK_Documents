@@ -113,6 +113,14 @@ s = "%d" % n;
     * 文字列を表現する書式指定子です。
 
 ```
+// 1 + 1 = 2
+int answer = 2;
+hsSystemOutput("1 + 1 = %d\n" % answer);
+
+// VketCloud hello world!
+string hello  = "hello world!";
+hsSystemOutput("VketCloud %s\n" % hello);
+
 // "int value = myArray[99];"
 hsSystemOutput("int %s = %s[%d];\n" % "value" % "myArray" % 99);
 ```
