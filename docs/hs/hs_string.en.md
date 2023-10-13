@@ -113,6 +113,14 @@ Place format specifier character starting from "%" inside the string to apply th
      * is a format specifier that represents a string.
 
 ```
+// 1 + 1 = 2
+int answer = 2;
+hsSystemOutput("1 + 1 = %d\n" % answer);
+
+// VketCloud hello world!
+string hello  = "hello world!";
+hsSystemOutput("VketCloud %s\n" % hello);
+
 // "int value = myArray[99];"
 hsSystemOutput("int %s = %s[%d];\n" % "value" % "myArray" % 99);
 ```
