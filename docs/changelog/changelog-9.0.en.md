@@ -13,3 +13,4 @@
     - CallJavascript
     - Jumpworld
     - Showlayer
+- HEOTweetTrigger

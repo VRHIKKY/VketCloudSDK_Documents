@@ -222,7 +222,6 @@ nav:
     - HEOSpawn: HEOComponents/HEOSpawn.md
     - HEOSpot: HEOComponents/HEOSpot.md
     - HEOTextPlane: HEOComponents/HEOTextPlane.md
-    #- HEOTweetTrigger: HEOComponents/HEOTweetTrigger.md #Deprecated
     - HEOUVScroller: HEOComponents/HEOUVScroller.md
     - HEOVideoTrigger: HEOComponents/HEOVideoTrigger.md
     - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
