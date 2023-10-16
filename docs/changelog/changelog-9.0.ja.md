@@ -8,3 +8,8 @@
 
 # 削除されたページ
 - 自動テクスチャ圧縮
+- アクション
+    - GTag
+    - CallJavascript
+    - Jumpworld
+    - Showlayer

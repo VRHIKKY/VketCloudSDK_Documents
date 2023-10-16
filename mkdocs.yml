@@ -234,11 +234,9 @@ nav:
       - StopVideo: Actions/System/StopVideo.md
       - Wait: Actions/System/Wait.md
       - Warp: Actions/System/Warp.md
-      - ShowLayer: Actions/System/ShowLayer.md
       - Enter/LeaveVoiceGroup: Actions/System/EnterLeaveVoiceGroup.md
       - WhiteOut/In: Actions/System/WhiteOutIn.md
       - FadeOut/In: Actions/System/FadeOutIn.md
-      #- JumpWorld: Actions/System/JumpWorld.md #現バージョンでは使用できないため除外
       #- OpenComicViewer: Actions/System/OpenComicViewer.md #現バージョンでは使用できないため除外
     - Node:
       - Show/HideNode: Actions/Node/ShowHideNode.md
@@ -270,8 +268,6 @@ nav:
       - Random: Actions/Programmatic/Random.md
       - SetCookieText: Actions/Programmatic/SetCookieText.md
       - CallScript: Actions/Programmatic/CallScript.md
-      - CallJavaScript: Actions/Programmatic/CallJavaScript.md
-      #- GTag: Actions/Programmatic/GTag.md #整備中
 - HeliScript:
     - Built-in Types:
         - Basic Types: hs/hs_var.md

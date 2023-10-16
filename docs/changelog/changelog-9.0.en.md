@@ -8,3 +8,8 @@
     
 # Deleted Pages
 - Auto Texture Compression
+- Actions
+    - GTag
+    - CallJavascript
+    - Jumpworld
+    - Showlayer
