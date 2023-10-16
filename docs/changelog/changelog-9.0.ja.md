@@ -14,3 +14,4 @@
     - Jumpworld
     - Showlayer
 - HEOTweetTrigger
+- チェックツール (本バージョンでは[デバッグコンソール](../debugconsole/debugconsole.md)をご使用ください)

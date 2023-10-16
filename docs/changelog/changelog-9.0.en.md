@@ -14,3 +14,4 @@
     - Jumpworld
     - Showlayer
 - HEOTweetTrigger
+- Check Tool (Please use [debug console](../debugconsole/debugconsole.md) for this version)

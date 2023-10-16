@@ -145,7 +145,6 @@ plugins:
           Statements and flow control: 宣言と制御
           Debug Console: デバッグコンソール
           Debug Messages: デバッグメッセージ一覧
-          Check Tool: チェックツール
           World Making Guide: ワールド制作ガイド
           Avatar File: アバターファイル
           How to Animate Objects: オブジェクトをアニメーションさせる
@@ -183,7 +182,6 @@ nav:
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
-    #- Check Tool: checktool/checktool.md #デバッグコンソール新設に伴い廃止。アーカイブのためファイルは残す
     - Particle Editor :
       - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
       - About Screen : particleeditor/pe_about_screen.md
