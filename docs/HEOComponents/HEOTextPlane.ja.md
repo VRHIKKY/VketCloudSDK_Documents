@@ -13,7 +13,7 @@ HEOTextPlaneは、ワールドのビルド時に本コンポーネントがア�
 | ----   | ---- | ---- |
 | World Position | TransformのPosition値と同一 | テキストを表示する位置を指定します |
 | World Rotation | TransformのRotation値と同一 | テキストを表示する角度を指定します |
-| World Scale |  | TransformのScale値と同一 | テキストを表示する大きさを指定します |
+| World Scale | TransformのScale値と同一 | テキストを表示する大きさを指定します |
 | Text | 空欄 | 表示するテキストを入力します |
 | Font Size | 128 | 文字の大きさを指定します |
 | Text Alignment | Left Top | センタリング等、テキストのアライメント(整列)を指定します。<br>初期状態では左上に整列されます |

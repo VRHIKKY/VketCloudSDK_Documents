@@ -33,5 +33,5 @@ By enabling preview, the designated text will be shown in the Scene view as belo
 ![HEOTextPlane_2](img/HEOTextPlane_2.jpg)
 
 !!! note
-    The `Billboard` setting in pre-Ver9.0 components has been renamed to `Look at Camera`<br>
+    The `Billboard` setting in pre-Ver9.0 components has been renamed to `Look at Camera`.<br>
     If the scene data is migrated from past SDK versions, the `Billboard` setting value will be reflected to `Look at Camera`.
