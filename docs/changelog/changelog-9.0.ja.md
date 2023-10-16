@@ -5,5 +5,6 @@
     - アバターの使用方法を現行版に更新
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOWorldSetting.html)
     - ゲームパッドの設定・操作方法を追加
-
+- [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOTextPlane.html)
+    - 新規の設定項目を追加し、関連の解説を追加 (textalignment, charaspace, linespace, overflowwrap, lookatcamera) 
 # 削除されたページ
