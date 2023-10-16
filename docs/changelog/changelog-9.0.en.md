@@ -7,3 +7,4 @@
     - Added specification/details on using gamepad
     
 # Deleted Pages
+- Auto Texture Compression

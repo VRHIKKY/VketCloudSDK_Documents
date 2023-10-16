@@ -104,7 +104,6 @@ plugins:
           ReflectionProbe: 反射を写り込ませるには
           Texture Compression: テクスチャ圧縮
           Physics Engine: 物理エンジン
-          Auto Texture Compression: 自動テクスチャ圧縮
           Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponents: HEOコンポーネント
@@ -198,7 +197,6 @@ nav:
 - World Optimization: 
   - World Optimization - Overview : WorldMakingGuide/WorldOptimization.md
   - Occlusion Culling : WorldMakingGuide/OcclusionCulling.md
-  - Auto Texture Compression : AutoTextureCompresser/AutoTextureCompresser.md
   - Texture Compression : heoexporter/he_TextureCompression.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
