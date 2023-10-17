@@ -178,4 +178,4 @@ To use 3D models as an object, the file must be [converted to .heo file](../Worl
 | `File` | blank | Set the file to be used as an object. |
 | `Position`| 0,0,0 | Set the relative position from the Target. |
 | `Rotation` | 0,0,0 | Set the relative rotation from the Target. | 
-| `Target` | blank | Set the bone to be the origin of Position and Rotation. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview), name in snakeCase (e.g. head, leftLowerLeg, leftThumbProximal...)|
+| `Target` | blank | Specifies the bone that serves as the coordinate origin. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview), name in snakeCase (e.g. head, leftLowerLeg, leftThumbProximal...)|
