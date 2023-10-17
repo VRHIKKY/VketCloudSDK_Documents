@@ -99,7 +99,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | ----   | ---- | ---- |
 | `Bloom` | false | ブルームのオンオフを切り替えます。 |
 | `Bloom Intensity` | 0.2 | ブルームの強さを設定します。|
-| `Bloom Threshold` | 0.8| ブルームの閾値を設定します。 |
+| `Bloom Threshold` | 0.8 | ブルームの閾値を設定します。 |
 | `Light Scattering` | false | ライトスキャッタリングのオンオフを切り替えます。 |
 | `Scattering Intensity` | 0.8 | 空気散乱強度を設定します。 |
 | `Scattering Directivity` | 0.68 | 拡散指向性を調整します。 |
@@ -130,7 +130,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 | 名称 | 初期値 | 機能 |
 | ----   | ---- | ---- |
-| `Use MyAvatar` | true | |
+| `Use MyAvatar` | true | プレイヤーがマイアバターを使用できるか否か設定します。 |
 | `NSFW` | false | NSFW（Not Safe For Work: 閲覧注意）なアバターの表示を制限します。|
 | `Polygon` | 50000 | そのワールド内で使用できるマイアバターのポリゴン上限を指定します。 |
 | `Motion` | | マイアバターが使用するモーションを指定します。|
@@ -141,7 +141,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 | 名称 | 初期値 | 機能 |
 | ----   | ---- | ---- |
-| `Motion Name` | | モーション名を設定します。<br> |
+| `Motion Name` | | モーション名を設定します。 |
 | `.hem` | | モーション再生時に使用するアニメーションファイル(.hem)を指定します。 |
 | `loop` | true | アニメーションをループ再生するか設定します。 |
 | `Use Action` | false | モーション再生時に実行するアクションを設定します。<br> 具体的には、本項目を有効にした上で`Setting`から実行するアクションを設定します。<br>`.hem`が空欄のモーションを追加することで、モーション再生時にパーティクルだけ再生する、といった用途等に利用できます。 |
@@ -162,7 +162,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | ----   | ---- | ---- |
 | `Emotion` || マイアバターが使用するエモートを指定します。|
 | `loop` | true | アニメーションをループ再生するか設定します。 |
-| `Use Action` | false | エモーション再生時に実行するアクションを設定します。<br> 具体的には、本項目を有効にした上で`Setting`から実行するアクションを設定します。<br> |
+| `Use Action` | false | エモーション再生時に実行するアクションを設定します。<br> 具体的には、本項目を有効にした上で`Setting`から実行するアクションを設定します。|
 
 ---
 
@@ -175,8 +175,8 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | 名称 | 初期値 | 機能 |
 | ----   | ---- | ---- |
 | `Name` | 空欄 | オブジェクトの名前を設定します。 |
-| `Object Type` | Heo | ファイルの種類を設定します。<br>`Heo`: [.heoファイル](../WorldMakingGuide/HEOExporter_Tutorial.md), `Hep`: パーティクル、`Audio`: 音声 |
+| `Object Type` | Heo | オブジェクトの種類を設定します。<br>`Heo`: [.heoファイル](../WorldMakingGuide/HEOExporter_Tutorial.md), `Hep`: パーティクル,`Audio`: 音声 |
 | `File` | 空欄 | 使用するファイルを指定します。 |
 | `Position`| 0,0,0 | Targetからの相対座標を指定します。 |
 | `Rotation` | 0,0,0 | Targetからの相対角度を指定します。 | 
-| `Target` | 空欄 | Position及びRotationの基準となるボーン名を指定します。 |
+| `Target` | 空欄 | Position及びRotationの基準となるボーン名を指定します。<br>ボーン名は[VRMヒューマノイド](https://vrm.dev/univrm/humanoid/humanoid_overview)のフォーマットに由来しており、記載する際はスネークケースにします(例： head, leftLowerLeg, leftThumbProximal...) |
