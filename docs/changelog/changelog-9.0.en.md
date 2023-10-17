@@ -13,5 +13,7 @@
     - CallJavascript
     - Jumpworld
     - Showlayer
+- HeliScript
+    - Built-in Functions - JavaScript
 - HEOTweetTrigger
 - Check Tool (Please use [debug console](../debugconsole/debugconsole.md) for this version)

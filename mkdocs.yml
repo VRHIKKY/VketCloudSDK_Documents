@@ -283,7 +283,6 @@ nav:
         - Math: hs/hs_system_function_math.md
         - Network: hs/hs_system_function_net.md
         - NamePlate: hs/hs_system_function_nameplate.md
-        - JavaScript: hs/hs_system_function_js.md
         - GUI: hs/hs_system_function_gui.md
         - TextChat: hs/hs_system_function_textchat.md
     - Statements and flow control:
