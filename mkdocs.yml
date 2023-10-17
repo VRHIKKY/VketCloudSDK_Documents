@@ -104,7 +104,6 @@ plugins:
           ReflectionProbe: 反射を写り込ませるには
           Texture Compression: テクスチャ圧縮
           Physics Engine: 物理エンジン
-          Auto Texture Compression: 自動テクスチャ圧縮
           Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponents: HEOコンポーネント
@@ -146,7 +145,6 @@ plugins:
           Statements and flow control: 宣言と制御
           Debug Console: デバッグコンソール
           Debug Messages: デバッグメッセージ一覧
-          Check Tool: チェックツール
           World Making Guide: ワールド制作ガイド
           Avatar File: アバターファイル
           How to Animate Objects: オブジェクトをアニメーションさせる
@@ -184,7 +182,6 @@ nav:
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
-    #- Check Tool: checktool/checktool.md #デバッグコンソール新設に伴い廃止。アーカイブのためファイルは残す
     - Particle Editor :
       - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
       - About Screen : particleeditor/pe_about_screen.md
@@ -198,7 +195,6 @@ nav:
 - World Optimization: 
   - World Optimization - Overview : WorldMakingGuide/WorldOptimization.md
   - Occlusion Culling : WorldMakingGuide/OcclusionCulling.md
-  - Auto Texture Compression : AutoTextureCompresser/AutoTextureCompresser.md
   - Texture Compression : heoexporter/he_TextureCompression.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
@@ -224,7 +220,6 @@ nav:
     - HEOSpawn: HEOComponents/HEOSpawn.md
     - HEOSpot: HEOComponents/HEOSpot.md
     - HEOTextPlane: HEOComponents/HEOTextPlane.md
-    #- HEOTweetTrigger: HEOComponents/HEOTweetTrigger.md #Deprecated
     - HEOUVScroller: HEOComponents/HEOUVScroller.md
     - HEOVideoTrigger: HEOComponents/HEOVideoTrigger.md
     - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
@@ -236,11 +231,9 @@ nav:
       - StopVideo: Actions/System/StopVideo.md
       - Wait: Actions/System/Wait.md
       - Warp: Actions/System/Warp.md
-      - ShowLayer: Actions/System/ShowLayer.md
       - Enter/LeaveVoiceGroup: Actions/System/EnterLeaveVoiceGroup.md
       - WhiteOut/In: Actions/System/WhiteOutIn.md
       - FadeOut/In: Actions/System/FadeOutIn.md
-      #- JumpWorld: Actions/System/JumpWorld.md #現バージョンでは使用できないため除外
       #- OpenComicViewer: Actions/System/OpenComicViewer.md #現バージョンでは使用できないため除外
     - Node:
       - Show/HideNode: Actions/Node/ShowHideNode.md
@@ -272,8 +265,6 @@ nav:
       - Random: Actions/Programmatic/Random.md
       - SetCookieText: Actions/Programmatic/SetCookieText.md
       - CallScript: Actions/Programmatic/CallScript.md
-      - CallJavaScript: Actions/Programmatic/CallJavaScript.md
-      #- GTag: Actions/Programmatic/GTag.md #整備中
 - HeliScript:
     - Built-in Types:
         - Basic Types: hs/hs_var.md

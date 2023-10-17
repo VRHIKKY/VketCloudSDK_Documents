@@ -7,3 +7,11 @@
     - Added specification/details on using gamepad
     
 # Deleted Pages
+- Auto Texture Compression
+- Actions
+    - GTag
+    - CallJavascript
+    - Jumpworld
+    - Showlayer
+- HEOTweetTrigger
+- Check Tool (Please use [debug console](../debugconsole/debugconsole.md) for this version)

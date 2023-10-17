@@ -7,3 +7,11 @@
     - ゲームパッドの設定・操作方法を追加
 
 # 削除されたページ
+- 自動テクスチャ圧縮
+- アクション
+    - GTag
+    - CallJavascript
+    - Jumpworld
+    - Showlayer
+- HEOTweetTrigger
+- チェックツール (本バージョンでは[デバッグコンソール](../debugconsole/debugconsole.md)をご使用ください)
