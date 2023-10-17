@@ -5,5 +5,6 @@
     - Updated instructions on adding avatars
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOWorldSetting.html)
     - Added specification/details on using gamepad
-    
+- [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOField.html)
+    - Added Settings including description for Look at Camera
 # Deleted Pages
