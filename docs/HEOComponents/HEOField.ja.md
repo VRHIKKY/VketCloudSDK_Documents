@@ -4,8 +4,19 @@
 
 HEOFieldがアタッチされたオブジェクトは、BuildAndRun時に.heoとしてパックされます。.heoファイルに含めたいオブジェクトは、必ずHEOField以下に配置してください。
 
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| Auto Loading | false | 動的ローディングの有効/無効を切り替えます |
+| Look at Camera | false | カメラ方向に対して常に正面を向くようになります |
+| Load Collider |  | 範囲に入った際に特定のオブジェクトをロードするコライダーを生成します |
+| UnLoad Collider |  | 範囲に入った際に特定のオブジェクトをアンロードするコライダーを生成します |
+
 !!! note info
     HEOFieldはシーンに複数配置することができます。
+
+!!! note info 
+    Ver9.0以前の`Billboard`設定は`Look at Camera`に名称が変更されました。<br>
+    以前のSDKバージョンからシーンデータを移植した場合、`Billboard`の設定は`Look at Camera`に引き継がれます。
 
 ---
 

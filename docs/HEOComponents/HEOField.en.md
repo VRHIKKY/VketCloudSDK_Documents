@@ -4,8 +4,19 @@
 
 Objects with HEOField attached will be packed into .heo during BuildAndRun. Make sure to set objects you want to include in the .heo file as children of the object with HEOField.
 
+| Label | Initial Value | Function |
+| ---- | ---- | ---- |
+| Auto Loading | false | Activates Dynamic Loading |
+| Look at Camera | false | Make the image face towards the camera at all times. |
+| Load Collider |  | Generates a collider that will load a designated object on enter |
+| UnLoad Collider |  | Generates a collider that will unload a designated object on enter |
+
 !!! note info
      Multiple HEOFields can be placed in the scene.
+
+!!! note
+    The `Billboard` setting in pre-Ver9.0 components has been renamed to `Look at Camera`.<br>
+    If the scene data is migrated from past SDK versions, the `Billboard` setting value will be reflected to `Look at Camera`.
 
 ---
 
