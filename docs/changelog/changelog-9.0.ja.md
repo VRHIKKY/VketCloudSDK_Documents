@@ -5,6 +5,8 @@
     - アバターの使用方法を現行版に更新
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOWorldSetting.html)
     - ゲームパッドの設定・操作方法を追加
+- [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/Actions/Programmatic/CallScript.html)
+    - 画像をVer9.0仕様に差し替え
 
 # 削除されたページ
 - 自動テクスチャ圧縮

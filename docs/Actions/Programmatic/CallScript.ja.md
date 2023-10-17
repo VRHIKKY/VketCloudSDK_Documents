@@ -1,5 +1,5 @@
-# HeliScriptを呼び出す
-![CallScript](img/CallScript.ja.jpg)
+# CallScript
+![CallScript](img/CallScript.jpg)
 
 ActionsからHeliScriptやScriptのメソッドを呼び出す際に使用します。
 
