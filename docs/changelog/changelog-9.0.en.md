@@ -5,5 +5,7 @@
     - Updated instructions on adding avatars
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOWorldSetting.html)
     - Added specification/details on using gamepad
+    - Added explanation for setting up avatars
+    - Added Voice Attenuation, TPS Pitch Max Distance, and SpecularMipMapCount
     
 # Deleted Pages

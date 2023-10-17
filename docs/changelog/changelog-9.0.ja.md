@@ -5,5 +5,6 @@
     - アバターの使用方法を現行版に更新
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOWorldSetting.html)
     - ゲームパッドの設定・操作方法を追加
-
+    - アバターの設定についての解説を追記
+    - 音声減衰、TPSカメラの最大ピッチ角度、スペキュラーのミップマップカウントを記載
 # 削除されたページ
