@@ -13,5 +13,7 @@
     - CallJavascript
     - Jumpworld
     - Showlayer
+- HeliScript
+    - 組み込み関数 - JavaScript
 - HEOTweetTrigger
 - チェックツール (本バージョンでは[デバッグコンソール](../debugconsole/debugconsole.md)をご使用ください)
