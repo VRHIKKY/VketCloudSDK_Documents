@@ -17,4 +17,4 @@
 - HeliScript
     - Built-in Functions - JavaScript
 - HEOTweetTrigger
-- Check Tool (Please use [debug console](../debugconsole/debugconsole.md) for this version)
+- Check Tool (Please use [debug console](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/debugconsole/debugconsole.html) for this version)
