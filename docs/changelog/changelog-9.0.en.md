@@ -8,3 +8,13 @@
 - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOTextPlane.html)
     - Added settings (textalignment, charaspace, linespace, overflowwrap, lookatcamera) and related descriptions
 # Deleted Pages
+- Auto Texture Compression
+- Actions
+    - GTag
+    - CallJavascript
+    - Jumpworld
+    - Showlayer
+- HeliScript
+    - Built-in Functions - JavaScript
+- HEOTweetTrigger
+- Check Tool (Please use [debug console](../debugconsole/debugconsole.md) for this version)

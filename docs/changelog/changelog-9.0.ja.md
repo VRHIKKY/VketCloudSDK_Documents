@@ -8,3 +8,13 @@
 - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOTextPlane.html)
     - 新規の設定項目を追加し、関連の解説を追加 (textalignment, charaspace, linespace, overflowwrap, lookatcamera) 
 # 削除されたページ
+- 自動テクスチャ圧縮
+- アクション
+    - GTag
+    - CallJavascript
+    - Jumpworld
+    - Showlayer
+- HeliScript
+    - 組み込み関数 - JavaScript
+- HEOTweetTrigger
+- チェックツール (本バージョンでは[デバッグコンソール](../debugconsole/debugconsole.md)をご使用ください)
