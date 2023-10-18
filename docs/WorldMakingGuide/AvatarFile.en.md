@@ -3,6 +3,17 @@
 The AvatarFile is used in the VketCloudSDK for such as [Adding Preset Avatars](PresetAvatar.md).<br>
 This file stores information to initiate avatars on Vket Cloud.
 
+## General Information
+
+| Label | Function |
+| ---- | ---- |
+| Id | Sets the Avatar ID.<br> The ID will be the order for the preset avatar list located in the in-world settings. |
+| Thumbnail | Sets the thumbnail image for the avatar. <br> The thumbnail will be used in the preset avatar list. |
+
+The ID and Thumbnail Image will be applied to the preset avatar list located in the in-world settings as below:
+
+![AvatarFile_Result](img/AvatarFile_Result.jpg)
+
 ## .vrm
 This tab designates the VRM file / essential information of the avatar.
 
@@ -23,12 +34,14 @@ Vket Cloud allows you to add any motion and uses a unique file format called `.h
 
 ![AvatarFile_2](img/AvatarFile_2.jpg)
 
-| Label | function |
-| ---- | ---- |
+| Label | Initial Value | function |
+| ---- | ---- | ---- |
 | Motion Name | Sets the motion name. |
 | .hem | Sets the motion file. |
-| loop | Play the motion in a loop. Turn it on for walking and standby motions. |
-| useAction | Sets the action to call when the motion starts playing. |
+| Loop | true | Play the motion in a loop. Turn it on for walking and standby motions. |
+| Use Action | false | Sets the action to call when the motion starts playing.<br>  In particular, enable this setting and designate the action to be fired via `Setting`. |
+| Draw Circle Shadow | true | Sets to draw a circle shadow on playing motion. |
+| Collision Detection | true | Sets collision detection on playing motion. |
 
 ## Emotion 
 This tab designates the emote animations used in the avatar.<br> 
@@ -36,12 +49,11 @@ Vket Cloud allows you to add any Emotion and uses a unique file format called `.
 
 ![AvatarFile_3](img/AvatarFile_3.jpg)
 
-| Label | function |
-| ---- | ---- |
-| Motion Name | Sets the motion name. |
-| .hem | Sets the motion file. |
-| loop | Play the motion in a loop. Turn it on for walking and standby motions. |
-| useAction | Sets the action to call when the motion starts playing. |
+|  Label | Initial Value | function |
+| ----   | ---- | ---- |
+| .hem | | Sets the motion file for emote. |
+| Loop | true | Play the motion in a loop. Turn it on for walking and standby motions. |
+| Use Action | false | Sets the action to call when the motion starts playing.<br>  In particular, enable this setting and designate the action to be fired via `Setting`. |
 
 ## Objects
 Avatars can have assets attached by designating as an object.
@@ -49,11 +61,11 @@ The object may be set in three formats: Heo, Hep, or Audio.
 
 ![AvatarFile_4](img/AvatarFile_4.jpg)
 
-| Label | function |
-| ---- | ---- |
-| Name | Set a unique name. |
-| Objecttype | Specifies the type of object to have. Choose from .heo, .hep, or audio. |
-| File | Specifies an asset. |
-| Position | Set the offset from `target`. |
-| Rotation | Set the rotation angle. |
-| Target | Specifies the bone that serves as the coordinate origin. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview), name in snakeCase (e.g. head, leftLowerLeg, leftThumbProximal...)|
+|  Label | Initial Value | function |
+| ----   | ---- | ---- |
+| Name | blank | Set the name of the object. |
+| Object Type | Heo | Set the type of object. <br>`Heo`: [.heo file](../WorldMakingGuide/HEOExporter_Tutorial.md), `Hep`: particles, `Audio`: audio |
+| File | blank | Set the file to be used as an object. |
+| Position | 0,0,0 | Set the relative position from the Target. |
+| Rotation | 0,0,0 | Set the relative rotation from the Target. | 
+| Target | blank | Specifies the bone that serves as the coordinate origin. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview), name in snakeCase (e.g. head, leftLowerLeg, leftThumbProximal...)|
