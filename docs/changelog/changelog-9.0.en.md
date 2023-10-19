@@ -5,6 +5,8 @@
     - Updated instructions on adding avatars
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOWorldSetting.html)
     - Added specification/details on using gamepad
+    - Added explanation for setting up avatars
+    - Added Voice Attenuation, TPS Pitch Max Distance, and SpecularMipMapCount
 - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOTextPlane.html)
     - Added settings (textalignment, charaspace, linespace, overflowwrap, lookatcamera) and related descriptions
 - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.0//HEOComponents/HEOPlayer.html)
