@@ -56,4 +56,4 @@ The object may be set in three formats: Heo, Hep, or Audio.
 | File | Specifies an asset. |
 | Position | Set the offset from `target`. |
 | Rotation | Set the rotation angle. |
-| Target | Specifies the bone that serves as the coordinate origin. e.g. right, left, ... |
+| Target | Specifies the bone that serves as the coordinate origin. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview), name in snakeCase (e.g. head, leftLowerLeg, leftThumbProximal...)|
