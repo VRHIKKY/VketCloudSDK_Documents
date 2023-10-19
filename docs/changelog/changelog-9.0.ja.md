@@ -5,6 +5,8 @@
     - アバターの使用方法を現行版に更新
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOWorldSetting.html)
     - ゲームパッドの設定・操作方法を追加
+- [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOPlayer.html)
+    - TPS Rotation, Jump Velocity, Move Speedなどの設定項目を追加
 - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/Actions/Programmatic/CallScript.html)
     - 画像をVer9.0仕様に差し替え
 
@@ -18,4 +20,4 @@
 - HeliScript
     - 組み込み関数 - JavaScript
 - HEOTweetTrigger
-- チェックツール (本バージョンでは[デバッグコンソール](../debugconsole/debugconsole.md)をご使用ください)
+- チェックツール (本バージョンでは[デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/debugconsole/debugconsole.html)をご使用ください)
