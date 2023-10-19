@@ -6,10 +6,15 @@ HEOFieldがアタッチされたオブジェクトは、BuildAndRun時に.heoと
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
-| Auto Loading | false | 動的ローディングの有効/無効を切り替えます |
+| Auto Loading | true | 動的ローディングの有効/無効を切り替えます |
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります |
 | Load Collider |  | 範囲に入った際に特定のオブジェクトをロードするコライダーを生成します |
 | UnLoad Collider |  | 範囲に入った際に特定のオブジェクトをアンロードするコライダーを生成します |
+| Overrides | | ワールド入場時に`Overrides`にて設定された`Node Name`に指定したオブジェクトにアタッチしている[HEOVideoTrigger](HEOVideoTrigger.md)に紐づいた動画を、`Video Clip`に指定した動画で上書きします。 |
+
+!!! note caution
+    Overrides項目は現在実装中の機能です。<br>
+    本機能については今後のアップデートで使い方が更新される予定です。
 
 !!! note info
     HEOFieldはシーンに複数配置することができます。

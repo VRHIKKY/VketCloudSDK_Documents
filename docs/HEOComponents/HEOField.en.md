@@ -6,10 +6,15 @@ Objects with HEOField attached will be packed into .heo during BuildAndRun. Make
 
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Auto Loading | false | Activates Dynamic Loading |
+| Auto Loading | true | Activates Dynamic Loading |
 | Look at Camera | false | Make the image face towards the camera at all times. |
 | Load Collider |  | Generates a collider that will load a designated object on enter |
 | UnLoad Collider |  | Generates a collider that will unload a designated object on enter |
+| Overrides | | On Entering the world, the videoclip in the [HEOVideoTrigger](HEOVideoTrigger.md) attached to the object designated by `Node Name` will be overwrited, using the `Video Clip` set in `Overrides` property. |
+
+!!! note caution
+    The Overrides property is currently under progress.<br>
+    Further usage are to be added by future updates.
 
 !!! note info
      Multiple HEOFields can be placed in the scene.
