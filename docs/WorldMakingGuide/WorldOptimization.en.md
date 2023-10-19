@@ -10,7 +10,3 @@ In [Occlusion Culling](./OcclusionCulling.md), the objects beyond a certain occl
 ## Texture Compression
 
 In [Texture Compression](../heoexporter/he_TextureCompression.md), the textures used in the world may be compressed using external tools.
-
-Also, the [Auto Texture Compresser](../AutoTextureCompresser/AutoTextureCompresser.md) is included in the SDK as a tool to automate the compression. 
-
-![AutoTextureCompresser_1](../AutoTextureCompresser/img/AutoTextureCompresser_1.jpg)
