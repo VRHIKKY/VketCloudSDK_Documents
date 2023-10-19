@@ -9,6 +9,8 @@
     - 音声減衰、TPSカメラの最大ピッチ角度、スペキュラーのミップマップカウントを記載
 - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOField.html)
     - 各設定項目及びLook at Cameraの説明を追加
+- [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOPlane.html)
+    - 新規の設定項目を追加し、関連の解説を追加 (lookatcamera) 
 - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOTextPlane.html)
     - 新規の設定項目を追加し、関連の解説を追加 (textalignment, charaspace, linespace, overflowwrap, lookatcamera) 
 - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOPlayer.html)
