@@ -10,7 +10,3 @@ VketCloudSDKでは、PCブラウザ・スマートフォンにて快適にワー
 ## テクスチャ圧縮
 
 [テクスチャ圧縮](../heoexporter/he_TextureCompression.md)ではワールド内で使用されているテクスチャに外部ツールを用いた圧縮を行う方法を案内しています。
-
-また、手順を自動化させたSDKのツールとして[自動テクスチャ圧縮](../AutoTextureCompresser/AutoTextureCompresser.md)があります。
-
-![AutoTextureCompresser_1](../AutoTextureCompresser/img/AutoTextureCompresser_1.jpg)
