@@ -5,6 +5,8 @@
     - Updated instructions on adding avatars
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOWorldSetting.html)
     - Added specification/details on using gamepad
+- [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOTextPlane.html)
+    - Added settings (textalignment, charaspace, linespace, overflowwrap, lookatcamera) and related descriptions
 - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.0//HEOComponents/HEOPlayer.html)
     - Added settings such as TPS Rotation, Jump Velocity, Move Speed, etc.
 - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/Actions/Programmatic/CallScript.html)
