@@ -18,6 +18,11 @@ For details, please refer to the [specification limit](../WorldMakingGuide/Unity
 | Z-bias | 0 | Higher z value will make the image show in front of other objects. |
 | Look at Camera | false | Make the image face towards the camera at all times. |
 | Double Side | false | Enable/Disable display on double sides |
+| Overrides | | On Entering the world, the `Material` and `Texture` set in the Overrides will be used instead of textures set in HEOPlane. |
+
+!!! note caution
+    The Overrides property is currently under progress.<br>
+    Further usage are to be added by future updates.
 
 !!! note
     The `Billboard` setting in pre-Ver9.0 components has been renamed to `Look at Camera`.<br>

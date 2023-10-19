@@ -18,6 +18,11 @@ HEOPlaneは、画像ファイルをインスタンス生成する機能です。
 | Z-Bias | 0 | z値が高いと、ほかのオブジェクトよりも手前に表示されます |
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります |
 | Double Side | false | 両面表示するか否かを切り替えます |
+| Overrides | | ワールド入場時に`Overrides`にて設定された`Material`及び`Texture`がHEOPlaneにて設定したTextureに代わって使用されます |
+
+!!! note caution
+    Overrides項目は現在実装中の機能です。<br>
+    本機能については今後のアップデートで使い方が更新される予定です。
 
 !!! note
     Ver9.0以前の`Billboard`設定は`Look at Camera`に名称が変更されました。<br>
