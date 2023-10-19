@@ -7,6 +7,9 @@
     - Added specification/details on using gamepad
 - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOTextPlane.html)
     - Added settings (textalignment, charaspace, linespace, overflowwrap, lookatcamera) and related descriptions
+- [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/Actions/Programmatic/CallScript.html)
+    - Replaced image to match Ver9.0
+
 # Deleted Pages
 - Auto Texture Compression
 - Actions
