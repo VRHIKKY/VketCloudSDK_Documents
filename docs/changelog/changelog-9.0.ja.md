@@ -7,5 +7,17 @@
     - ゲームパッドの設定・操作方法を追加
 - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOPlayer.html)
     - TPS Rotation, Jump Velocity, Move Speedなどの設定項目を追加
+- [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/Actions/Programmatic/CallScript.html)
+    - 画像をVer9.0仕様に差し替え
 
 # 削除されたページ
+- 自動テクスチャ圧縮
+- アクション
+    - GTag
+    - CallJavascript
+    - Jumpworld
+    - Showlayer
+- HeliScript
+    - 組み込み関数 - JavaScript
+- HEOTweetTrigger
+- チェックツール (本バージョンでは[デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/debugconsole/debugconsole.html)をご使用ください)

@@ -1,5 +1,5 @@
 # CallScript
-![CallScript](img/CallScript.en.jpg)
+![CallScript](img/CallScript.jpg)
 
 You can use "CallScript" to call methods from HeliScript or Script. When specifying arguments, you should separate the component name, method name, and arguments with commas.
 
