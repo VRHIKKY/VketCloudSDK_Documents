@@ -53,4 +53,4 @@ Heo・Hep・Audioの3つの形式に対応しています。
 | File | アセットを指定します。 |
 | Position | `target`からのオフセットを設定できます。 |
 | Rotation | 回転角度を設定できます。 |
-| Target | 座標基準となるボーンを指定します。ex. right, left, ... |
+| Target | 座標基準となるボーンを指定します。<br> ボーン名は[VRMヒューマノイド](https://vrm.dev/univrm/humanoid/humanoid_overview)のフォーマットに由来しており、記載する際はスネークケースにします(例： head, leftLowerLeg, leftThumbProximal...)|
