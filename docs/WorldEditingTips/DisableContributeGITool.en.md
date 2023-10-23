@@ -1,6 +1,6 @@
 #  Disable Contribute GI of Unlit Materials
 
-In Vket Cloud, the object using Unlit shaders cannot be a subject for light baking.<br>
+In Vket Cloud, the object using Unlit shaders cannot be light baked and will result in a darker appearance.<br>
 Therefore, the VketCloudSDK provides a utility tool to disable Contribute GI (object setting for lightmap contribution) which applied to all objects having Unlit shaders.
 
 ## How to Use

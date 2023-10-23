@@ -37,6 +37,9 @@ VketCloudではUnityのリフレクションプローブを使用することが
 
 ![UnityGuidelines_2](./img/UnityGuidelines_2.jpg)
 
+* Unlit系のシェーダーが適用されているオブジェクトはライトベイクに対応していません。<br>
+  SDKではUnlit系シェーダーを使用しているオブジェクトを[ライトベイクの対象から外すツール](../WorldEditingTips/DisableContributeGITool.md)を用意しています。
+
 ## シェーダー
 - Standard 
 - Autodesk Interactive

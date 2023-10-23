@@ -39,6 +39,9 @@ To express light intensity, multiply the `Directional Light`'s color by using th
 
 ![UnityGuidelines_2](./img/UnityGuidelines_2.jpg)
 
+* Objects having Unlit shaders are not suited for light baking.<br>
+  The SDK provides a [Utility Tool](../WorldEditingTips/DisableContributeGITool.md) to disable such objects from lightbaking.
+
 ## Shaders
 - Standard 
 - Autodesk Interactive
