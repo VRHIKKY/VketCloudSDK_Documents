@@ -126,6 +126,10 @@ plugins:
           Property: プロパティウィンドウ
           Animation Converter : アニメーションコンバーター
           Adding Preset Avatars : プリセットアバターを追加する
+          World Editing Tips: 編集のためのTips
+          Using EditorOnly Tags: EditorOnlyタグの使用方法
+          Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
+          Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
           World Optimization: ワールドの軽量化方法
           World Optimization - Overview: ワールドの軽量化方法：概要
           Occlusion Culling: オクルージョンカリング
@@ -149,7 +153,7 @@ plugins:
           Avatar File: アバターファイル
           How to Animate Objects: オブジェクトをアニメーションさせる
           How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
-          Utility Tools: 補助ツールの使い方
+          Utility Tools: 補助ツールの使い方 #元ページ不明タグ
           Login to SDK: SDKにログインする
 
 markdown_extensions:
@@ -172,16 +176,19 @@ nav:
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
-    #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
-    #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - Physics Engine : WorldMakingGuide/PhysicsEngine.md
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
-    - Avatar File: WorldMakingGuide/AvatarFile.md
-    - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
+    #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
+    #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
+    - Avatar File: WorldMakingGuide/AvatarFile.md
+    - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+- SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
+    - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
+    - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :
       - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
       - About Screen : particleeditor/pe_about_screen.md
@@ -190,8 +197,10 @@ nav:
         - Toolbar : particleeditor/pe_toolbar.md
         - Property : particleeditor/pe_propertywindow.md
         - Particle List : particleeditor/pe_particlelistwindow.md
-    - Animation Converter : HEMAnimationConverter/AnimationConverter.md
-    - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+- World Editing Tips:
+  - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
+  - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
+  - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
 - World Optimization: 
   - World Optimization - Overview : WorldMakingGuide/WorldOptimization.md
   - Occlusion Culling : WorldMakingGuide/OcclusionCulling.md
