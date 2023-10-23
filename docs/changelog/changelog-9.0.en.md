@@ -1,4 +1,6 @@
 # Added Pages
+-  World Editing Tips
+    - [Editing Multiple HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldEditingTips/MultiSelect_HEOComponents.html)
 
 # Edited Pages
 - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/AboutVketCloudSDK/SetupAvatar.html)
