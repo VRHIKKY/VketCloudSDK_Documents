@@ -1,7 +1,8 @@
 # 追加されたページ
 - 編集のためのTips
     - [複数のHEOコンポーネントの一括編集](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldEditingTips/MultiSelect_HEOComponents.html)
-
+    - [UnlitマテリアルのContributeGI設定を外す](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldEditingTips/DisableContributeGITool.html)
+    
 # 変更されたページ
 - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/AboutVketCloudSDK/SetupAvatar.html)
     - アバターの使用方法を現行版に更新
