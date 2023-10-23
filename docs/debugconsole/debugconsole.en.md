@@ -1,6 +1,6 @@
 # Debug Console
 
-![debugconsole_1](./img/debugconsole_1_en.jpg)
+![debugconsole_1](./img/debugconsole_1.jpg)
 
 The debug console is the tool for troubleshooting issues and debugging when developing worlds on VketCloudSDK.<br> 
 Main purpose of the console is to provide realtime information about function behaviour and status of running programs.
@@ -32,7 +32,7 @@ This provides the developer an environment for effective debugging and problem s
 ## UI Details
 ### Toolbar Details
 
-![debugconsole_3](./img/debugconsole_3_en.jpg)
+![debugconsole_3](./img/debugconsole_3.jpg)
 
 | Label | Function |
 |----|----|
@@ -40,6 +40,8 @@ This provides the developer an environment for effective debugging and problem s
 | Port | Enter the port number for running the world locally. (Initially set to 8000) |
 | Clear | Clears all log entries.<br> Unsolved issues will re-appear if unsolved. |
 | Clear on Build | Toggle setting for automatic log cleanup on build. |
+| World Size | Displays the total size of world on build. |
+| Texture Size | Displays the total size of textures included in the world. |
 | Log | Toggle filter for log display, also showing the total of logs. | 
 | Warning | Toggle filter for Warning display, also showing the total of Warnings. | 
 | Error | Toggle filter for Error display, also showing the total of Errors. | 
