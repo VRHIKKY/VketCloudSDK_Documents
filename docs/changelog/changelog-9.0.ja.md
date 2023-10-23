@@ -15,6 +15,9 @@
     - 新規の設定項目を追加し、関連の解説を追加 (textalignment, charaspace, linespace, overflowwrap, lookatcamera) 
 - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOPlayer.html)
     - TPS Rotation, Jump Velocity, Move Speedなどの設定項目を追加
+- [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOObject.html)
+    - 新規の設定項目を追加し、関連の解説を追加 (shadow caster / receiver, foreground rendering, circle shadow, lookatcamera, etc.) 
+    - heoファイル及びモーションのプレビュー機能解説を追加
 - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/Actions/Programmatic/CallScript.html)
     - 画像をVer9.0仕様に差し替え
 
