@@ -2,6 +2,8 @@
 
 By selecting objects having the same HEOComponents in the Hierarchy, the component settings can be applied in a single edit.
 
+## How to Use
+
 For example, two objects having the [HEOShadow](../HEOComponents/HEOShadow.md) is in the Hierarchy as below.
 
 ![MultiSelect_1](img/MultiSelect_1.jpg)
@@ -15,6 +17,8 @@ After editing on multiple objects, the set value will be applied on each objects
 ![MultiSelect_3](img/MultiSelect_3.jpg)
 
 ![MultiSelect_4](img/MultiSelect_4.jpg)
+
+## Cautions
 
 If one of the objects does not have the HEOComponent in common, or no HEOComponent is in common, the notification below will be displayed.<br>
 If the notification appears, re-select objects or add the HEOComponent to be edited to the object missing it via "Add Component".
