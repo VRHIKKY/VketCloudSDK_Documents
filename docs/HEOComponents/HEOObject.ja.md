@@ -17,7 +17,7 @@ HEOObjectは、オブジェクトをあらかじめheoファイルとして出�
 | Shadow Caster | false | [シャドウマッピング](HEOWorldSetting.md)が有効になっている際に、本オブジェクトの影を他のオブジェクトに投影するか設定します。 |
 | Shadow Receiver | false | [シャドウマッピング](HEOWorldSetting.md)が有効になっている際に、他オブジェクトの影を本オブジェクトへと投影するか設定します。 |
 | Circle Shadow | false | オブジェクトの足元に丸影を投影するか切り替えます。 |
-| Foreground Rendering | false |最前面描画をおこなうか設定します。 |
+| Foreground Rendering | false |最前面描画(深度値を考慮せずに一番手前に描画)を行うか設定します。 |
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります。 |
 | Object Mode | None | None、Pose、Motionから任意に選択します。PoseもしくはMotionを選択した場合、追加でhemファイルを指定する必要があります。 |
 | Begin Actions | | モーション再生時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
