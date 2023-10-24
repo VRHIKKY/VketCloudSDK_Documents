@@ -2,6 +2,7 @@
 -  World Editing Tips
     - [Editing Multiple HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldEditingTips/MultiSelect_HEOComponents.html)
     - [Disable Contribute GI of Unlit Materials](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldEditingTips/DisableContributeGITool.html)
+    - [Using EditorOnly Tags](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldEditingTips/EditorOnlyTag.html)
 
 # Edited Pages
 - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/AboutVketCloudSDK/SetupAvatar.html)
