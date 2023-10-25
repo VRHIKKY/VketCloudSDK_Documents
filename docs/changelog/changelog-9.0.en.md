@@ -7,6 +7,7 @@
     - Added specification/details on using gamepad
     - Added explanation for setting up avatars
     - Added Voice Attenuation, TPS Pitch Max Distance, and SpecularMipMapCount
+    - Deleted Multi Play Mode In Local Build Setting (In the current version, the world is multi play mode by default!)
 - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOField.html)
     - Added Settings including description for Look at Camera
 - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOPlane.html)
