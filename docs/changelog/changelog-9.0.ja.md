@@ -19,6 +19,8 @@
     - TPS Rotation, Jump Velocity, Move Speedなどの設定項目を追加
 - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/Actions/Programmatic/CallScript.html)
     - 画像をVer9.0仕様に差し替え
+- [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldMakingGuide/UnityGuidelines.html)
+    - 同名のオブジェクトの複数配置非推奨を明記
 
 # 削除されたページ
 - 自動テクスチャ圧縮

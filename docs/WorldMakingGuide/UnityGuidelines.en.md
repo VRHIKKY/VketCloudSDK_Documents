@@ -66,4 +66,5 @@ To express light intensity, multiply the `Directional Light`'s color by using th
 * We recommend to fix negative scales if it's not set intentionally.
 
 ## Object
-HEOExport does not support multiple selection. To export as a single object, create a parent object, store the target object inside it, and export the parent object.
+* Placing objects with the same names is not recommended. In an occasion that makes name conflicts, adding suffix numbers as Object_1, Object_2, etc. is recommended.
+* HEOExport does not support multiple selection.<br> To export as a single object, create a parent object, store the target object inside it, and export the parent object.
