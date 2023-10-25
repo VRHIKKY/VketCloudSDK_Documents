@@ -20,7 +20,6 @@ This component lets you configurate the following settings:
 |  `VRM Drop`  | false | Allows users to locally change their avatar by drag-and-dropping their own .vrm avatars to the browser screen.  |
 |  `Occulusion Culling`  | false | Activate the Occulusion Culling.<br>For instructions, please refer to [Occlusion Culling](../WorldMakingGuide/OcclusionCulling.md).  |
 |  `World Name Directory`  | false | When exporting to .heo and other files, the files will be packed into a folder with the same name as the `World Name`. <br>(e.g. data/field/`World Name`/world.heo) |
-| `Multi Play Mode In Local Build` | false | Activate multiplayer functions even during the local build. |
 | `Use GamePad` | false | Activate usage of GamePads.  |
 | `Use Physics Engine` | false | Activate usage of the Physics Engine. |
 | `Voice Attenuation` | true | Activate player voice attenuation. |

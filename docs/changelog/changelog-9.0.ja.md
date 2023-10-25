@@ -1,4 +1,5 @@
 # 追加されたページ
+- [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOBackgroundTexture.html)
 
 # 変更されたページ
 - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/AboutVketCloudSDK/SetupAvatar.html)
@@ -7,6 +8,7 @@
     - ゲームパッドの設定・操作方法を追加
     - アバターの設定についての解説を追記
     - 音声減衰、TPSカメラの最大ピッチ角度、スペキュラーのミップマップカウントを記載
+    - Multi Play Mode In Local Build廃止に伴い項目を削除(現バージョンにおいてはデフォルトでマルチプレイモードです)
 - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOField.html)
     - 各設定項目及びLook at Cameraの説明を追加
 - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOPlane.html)
