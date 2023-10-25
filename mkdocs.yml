@@ -201,6 +201,7 @@ nav:
     - HEOAnimation: HEOComponents/HEOAnimation.md
     - HEOAreacollider: HEOComponents/HEOAreacollider.md
     - HEOAudio: HEOComponents/HEOAudio.md
+    - HEOBackgroundTexture: HEOComponents/HEOBackgroundTexture.md
     - HEOCollider: HEOComponents/HEOCollider.md
     - HEOClickGuide: HEOComponents/HEOClickGuide.md
     - HEODespawnHeight: HEOComponents/HEODespawnHeight.md

@@ -1,4 +1,5 @@
-追加されたページ
+# 追加されたページ
+- [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOBackgroundTexture.html)
 
 # 変更されたページ
 - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/AboutVketCloudSDK/SetupAvatar.html)

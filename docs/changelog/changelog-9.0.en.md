@@ -1,4 +1,5 @@
 # Added Pages
+- [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOBackgroundTexture.html)
 
 # Edited Pages
 - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/AboutVketCloudSDK/SetupAvatar.html)
