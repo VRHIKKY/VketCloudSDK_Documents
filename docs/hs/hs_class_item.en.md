@@ -33,11 +33,6 @@ Item myItem = hsItemGet("Item name");
 Global function. 
 Gets the "items" of the component with the specified name and returns them as an instance of the Item class.
 
-### hsItemGetSelf
-`Item hsItemGetSelf()`
-
-Gets the Item object of where this component itself is attached, by calling this function in the component's constructor, or methods such as Update, OnClickNode, etc.
-
 ***
 
 

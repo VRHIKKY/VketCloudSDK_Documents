@@ -33,12 +33,6 @@ Item myItem = hsItemGet("アイテム名");
 
 グローバル関数。指定した名前でコンポーネントの "items" を取得し、Itemクラスのインスタンスとして返す。
 
-### hsItemGetSelf
-`Item hsItemGetSelf()`
-
-コンポーネントのコンストラクタやUpdate,OnClickNode等のメソッド内から呼び出すことで、コンポーネントが設定されている自分自身のItemオブジェクトを取得します。
-
-
 ***
 
 
