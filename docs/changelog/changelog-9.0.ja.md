@@ -21,6 +21,8 @@
     - 画像をVer9.0仕様に差し替え
 - [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldMakingGuide/UnityGuidelines.html)
     - 同名のオブジェクトの複数配置非推奨を明記
+- [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/hs/hs_class_item.html)
+    - 現バージョンにて使用できる関数を反映
 
 # 削除されたページ
 - 自動テクスチャ圧縮

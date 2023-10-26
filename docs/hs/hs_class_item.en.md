@@ -1,238 +1,308 @@
+
 # Item class
 
-!!! Note Info
-    The Item class is for working with individual items defined in the Scene file's "items".
+The Item class is for working with individual items defined in the Scene file's "items".
 
-    You can get the Item class object by specifying the item name with hsItemGet().
-
-***
+Item class object is obtainable by specifying the item name with hsItemGet().
 
 ## class definition
 
 ```
 class Item {
-     public string GetName()
-
-     public void SetPos(Vector3Pos)
-     public Vector3 GetPos()
-
-     public void MovePos(Vector3 pos, float time)
-     public bool IsMoving()
-
-     public bool Play()
-     public void Stop()
-     public bool IsPlay()
-    
-     public void SetShow(bool Flag)
-     public bool IsShow()
-    
-     // loading
-     public bool Load()
-     public bool Unload()
-     public bool IsLoading()
-     public bool IsLoaded()
-
-     // node
-     public int GetNodeIndexByName(string nodeName)
-     public string GetNodeNameByIndex(int nodeIndex)
-     public Vector3 GetNodePosByIndex(int nodeIndex)
-    
-     // node display
-     public bool SetShowNode(string nodeName, bool flag)
-     public bool IsShowNode(string nodeName)
-    
-     // node/posture
-     public bool SetRotateNode(string nodeName, Vector3 rotate)
-    
-     // node collider
-     public bool SetEnableCollider(string nodeName, bool flag)
-     public bool IsEnableCollider(string nodeName)
-
-     // node clickable
-     public bool SetClickableNode(string nodeName, bool flag)
-     public bool IsClickableNode(string nodeName)
-
-         // node/physics
-         public int GetPhysicsIDByNodeName(string NodeName)
-
-     // material
-     public bool SetUVOffset(string materialName, float u, float v)
-    
-     // Video
-     public void PlayVideo(string materialName, string url, bool loop)
-     public void StopVideo()
-
-     // text
-     public void ClearTextPlane()
-     public void WriteTextPlane(string text)
-    
 }
 ```
 
 
 ## How to get Item class object from component
 
-You can get the Item class object that the component has by making the following call from the method in the component.
+The Item class object held by the component is obtainable by making the following call from the method in the component.
 
 ```
 Item myItem = hsItemGet("Item name");
 ```
 
 
+***
 
 
 ## Item utility functions
-### hsItemGet(string itemName)
+
+### hsItemGet
 `Item hsItemGet(string itemName)`
 
-global function. Gets the "items" of the component with the specified name and returns them as an instance of the Item class.
+Global function. 
+Gets the "items" of the component with the specified name and returns them as an instance of the Item class.
 
+### hsItemGetSelf
+`Item hsItemGetSelf()`
 
+Gets the Item object of where this component itself is attached, by calling this function in the component's constructor, or methods such as Update, OnClickNode, etc.
+
+***
 
 
 ## Methods
 
-### GetName()
+### Equals
+`public bool Equals(Item obj)`
+
+Judges whether this class is identical to the argument obj.
+
+When obtaining Item objects using hsItemGet(), etc., a different instance may be obtained despite being the same Item. For checking identity, use Equals() instead of "===" operator.
+
+### GetName
 `public string GetName()`
 
 Get the name of the Item.
 
-### SetPos(Vector3)
+### SetPos
 `public void SetPos(Vector3 pos)`
 
-Move Item to specified coordinates.
+Move Item to the designated position.
 
-### GetPos()
+### GetPos
 `public Vector3 GetPos()`
 
-Get the coordinates of Item.
+Get the local position of Item.
 
-### MovePos(Vector3, float)
-`public void MovePos(Vector3 pos, float time)`
+### GetWorldPos
+`public Vector3 GetWorldPos()`
+
+Get the world position of Item.
+
+### SetQuaternion
+`public bool SetQuaternion(Quaternion Rotate)`
+
+Set the quaternion rotation of Item.
+
+### GetQuaternion
+`public Quaternion GetQuaternion()`
+
+Get the local rotation of Item by quaternion.
+
+### GetWorldQuaternion
+`public Quaternion GetWorldQuaternion()`
+
+Get the world rotation of Item by quaternion.
+
+### GetWorldRotate
+`public Vector3 GetWorldRotate()`
+
+Get the world rotation of Item by Vector3.
+
+### GetScale
+`public Vector3 GetScale()`
+
+Get the scale of Item by Vector3.
+
+### SetScale
+`public void SetScale(Vector3 Scale)`
+
+Set the scale of Item by Vector3.
+
+### MovePos
+`public void MovePos(Vector3 pos, float time, bool CollisionDetection = false)`
 
 Moves the Item over [time] seconds to the coordinates specified by pos.
 
-### IsMoving()
+If CollisionDetection is set to true, collision detection will be enabled as like the player avatar.
+
+### IsMoving
 `public bool IsMoving()`
 
 Returns true if the Item is moving.
 
-### Play()
+### Play
 `public bool Play()`
 
 Start playing a sound or particle. Returns true if the playback process has started successfully. Returns false on failure.
 
-### Stop()
+### Stop
 `public void Stop()`
 
-Stop a video that is playing.
+Stop the sound or particle that is playing.
 
-### IsPlay()
+### IsPlay
 `public bool IsPlay()`
 
-Returns true if the video is playing.
+Returns true if the sound or particle is playing.
 
-### SetShow(bool)
+### SetShow
 `public void SetShow(bool flag)`
 
 Display Item with true. Hide the Item with false.
 
-### IsShow()
+### IsShow
 `public bool IsShow()`
 
 Returns true if the Item is visible, false otherwise.
 
-### Load()
+### ChangeMotion
+`public bool ChangeMotion(string MotionName)`
+
+Change the motion according to the designated MotionName.
+
+### Load
 `public bool Load()`
 
 Start loading the Item. Returns false if the loading process fails to start.
 
-### Unload()
+### Unload
 `public bool Unload()`
 
 Unload the Item. Returns false if the unloading process fails.
 
-### IsLoading()
+### IsLoading
 `public bool IsLoading()`
 
 Returns true if the Item is loading, false otherwise.
 
-### IsLoaded()
+### IsLoaded
 `public bool IsLoaded()`
 
 Returns true if the Item has finished loading, false otherwise.
 
-### GetNodeIndexByName(string)
+### GetNodeIndexByName
 `public int GetNodeIndexByName(string nodeName)`
 
 Finds a node by name and returns an index identifying that node.
 
-### GetNodeNameByIndex(int)
+### GetNodeNameByIndex
 `public string GetNodeNameByIndex(int nodeIndex)`
 
 Given a node by index, return the name of that node.
 
-### GetNodePosByIndex(int)
+### GetNodePosByIndex
 `public Vector3 GetNodePosByIndex(int nodeIndex)`
 
 Specify a node by index and return the coordinates of that node.
 
-### SetShowNode(string, bool)
+### SetShowNode
 `public bool SetShowNode(string nodeName, bool flag)`
 
 Specify a node by name, show it if flag is true and hide it if flag is false.
 
-### IsShowNode(string)
+### IsShowNode
 `public bool IsShowNode(string nodeName)`
 
 Specify a node by name, returns true if the node is visible and false if it is hidden.
 
-### SetRotateNode(string, Vector3)
+### SetRotateNode
 `public bool SetRotateNode(string nodeName, Vector3 rotate)`
 
 Specify a node by name and rotate that node.
 
-### SetEnableCollider(string, bool)
+### SetEnableCollider
 `public bool SetEnableCollider(string nodeName, bool flag)`
 
 Specify a collider by name, true to enable it, false to disable it.
 
-### IsEnableCollider(string)
+### IsEnableCollider
 `public bool IsEnableCollider(string nodeName)`
 
 Specify a collider by name, returns true if the collider is enabled, false otherwise.
 
-### SetClickableNode(string, bool)
+### SetClickableNode
 `public bool SetClickableNode(string nodeName, bool flag)`
 
 Specify a clickable node by name, enable clicks if flag is set to true and disable clicks if flag is set to false.
 
-### IsClickableNode(string)
+### IsClickableNode
 `public bool IsClickableNode(string nodeName)`
 
 Specify a node by name and returns true if the node is clickable, false otherwise.
 
-### SetUVOffset(string, float, float)
-`public bool SetUVOffset(string naturalName, float u, float v)`
+### SetUVOffset
+`public bool SetUVOffset(string naterialName, float u, float v)`
 
 Specify a material by name and change the uv coordinates of that material. Returns false if the change fails.
 
-### PlayVideo(string, string, bool)
+### PlayVideo
 `public void PlayVideo(string materialName, string url, bool loop)`
 
 Specifies the material to play and starts playing the video. Loop playback is performed if loop is set to true.
 
-### StopVideo()
+### StopVideo
 `public void StopVideo()`
 
 Stop the video that is playing.
 
-### ClearTextPlane()
+### IsPlayVideo
+`public bool IsPlayVideo()`
+
+Returns true if a video is playing.
+
+### ClearTextPlane
 `public void ClearTextPlane()`
 
 Delete the text.
 
-### WriteTextPlane(string)
+### WriteTextPlane
 `public void WriteTextPlane(string text)`
 
 Set the text.
+
+### SetCamera
+`public bool SetCamera()`
+
+Set the camera type Item as a camera.
+
+### ResetCamera
+`public void ResetCamera()`
+
+Detach camera set by SetCamera.
+
+### ReplaceItem
+`public bool ReplaceItem(string URL)`
+
+Replace the Item by the designated model data.
+
+### ReplaceTexture
+`public bool ReplaceTexture(string MaterialName, string URL)`
+
+Replace the texture attached to the MaterialName's material by the designated URL content.
+
+### SetPhysicsEnable
+`public bool SetPhysicsEnable(string NodeName, bool Flag)`
+
+Enable physics for Node designated by NodeName if Flag is true, disable if Flag is false. 
+
+### IsPhysicsFixed
+`public bool IsPhysicsFixed(string NodeName)`
+
+When physics is enabled, returns true if this Item is fixed.
+
+### SetProperty
+`public bool SetProperty(string Key, string Value)`
+
+Set property by Key and Value.
+
+### GetProperty
+`public string GetProperty(string Key)`
+
+Get property by Key. If the Key does not exist, an empty string will return.
+
+### CallComponentMethod
+`public void CallComponentMethod(string ComponentName, string MethodName, string Params)`
+
+Calls the component method set to the item.<br>
+The method can be called by designating the Componentname and MethodName. the Params will be used as arguments.
+
+The callable methods must follow the limits below:
+
+* Has one and only String type as an argument 
+* Return value is void
+
+!!! note caution
+    The Overrides property is currently under development.<br>
+    Further usage are to be added by future updates.
+
+### SetOverridesProperty
+`public bool SetOverridesProperty(string Key, string Value, string ItemName)`
+
+Sets overrides property. If the same Key exists, its value will be overwritten, otherwise the Key and Value will be appended. If Key does not use "itemname", enter an empty string as an argument.
+
+### GetOverridesProperty
+`public bool GetOverridesProperty(string Key, ref string Value, ref string ItemName)`
+
+Get the overrides property.
