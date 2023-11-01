@@ -6,8 +6,7 @@ This file stores information to initiate avatars on Vket Cloud.
 ## General Information
 
 | Label | Function |
-| ---- | ---- |
-| Id | Sets the Avatar ID.<br> The ID will be the order for the preset avatar list located in the in-world settings. |
+| ---- | ---- | 
 | Thumbnail(Japanese) | Sets the thumbnail image for the avatar when language is Japanese. <br> The thumbnail will be used in the preset avatar list. |
 | Thumbnail(English) | Sets the thumbnail image for the avatar when language is English. <br> The thumbnail will be used in the preset avatar list. |
 
