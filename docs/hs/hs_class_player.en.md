@@ -9,57 +9,115 @@
 
 ```
 class Player {
-     public void SetPos(Vector3 pos)
-     public Vector3 GetPos()
- 
-     public void SetRotate(float angle)
-     public float GetRotate()
 
-     public string GetName()
-
-public int GetPhysicsID()
 }
 ```
 
-
-
+***
 
 ## Player utility functions
-### hsPlayerGet()
+### hsPlayerGet
 `Player hsPlayerGet()`
 
 Get a Player instance of yourself.
 
+### hsPlayerGetByID
+`Player hsPlayerGetByID(string PlayerID)`
 
+Get a Player instance according to the PlayerID.
 
+***
 
 ## methods
-### SetPos(Vector3)
+### GetID
+`string GetID()`
+
+Get the ID identifying the player.
+
+### GetHeadHeight()
+`public float GetHeadHeight()`
+
+Get the avatar height.
+
+### GetCustomState()
+`public string GetCustomState(string CustomStateName)`
+
+Get the custom state at a designated timing.
+
+### SetPos
 `public void SetPos(Vector3 pos)`
 
 Set coordinates.
 
-### GetPos()
+### GetPos
 `public Vector3 GetPos()`
 
 Get coordinates.
 
-### SetRotate(float)
+### SetRotate
 `public void SetRotate(float angle)`
 
 Sets the orientation of the player.
 
-### GetRotate()
+### GetRotate
 `public float GetRotate()`
 
 Get the orientation of the player.
 
-### GetName()
+### GetName
 `public string GetName()`
 
 Get the player's name.
 
-### GetPhysicsID()
+### GetPhysicsID
 `int GetPhysicsID()`
 
 Get the PhysicsID.
+
+### Emote
+`bool Emote(int EmoteIndex)`
+
+Play the Emote set on the EmoteIndex.
+
+### SetEmotion
+`bool SetEmotion(int Index, string FileName, bool Loop, string ActionList)`
+
+Load the designated Emotion.
+
+For the ActionList string, write the "actions":{} string in the Scene file.
+
+### ChangeMotion
+`bool ChangeMotion(string MotionName)`
+
+Play the motion.
+
+### SetNextMotion
+`bool SetNextMotion(string MotionName)`
+
+Set the next motion to be played.
+
+### ShowChatBalloon
+`bool ShowChatBalloon(string Text)`
+
+Show the designated text in the chat balloon.
+
+### SetMoveSpeed
+`bool SetMoveSpeed(float MoveSpeed)`
+
+Set the player's move speed by meter per second.
+
+### GetMoveSpeed
+`float GetMoveSpeed()`
+
+Get the player's move speed by meter per second.
+
+### SetMoveSpeedupRatio
+`bool SetMoveSpeedupRatio(float MoveSpeedupRatio)`
+
+Set the player's move speed up ratio when running.
+
+
+### GetMoveSpeedupRatio
+`float GetMoveSpeedupRatio()`
+
+Get the player's move speed up ratio when running.
