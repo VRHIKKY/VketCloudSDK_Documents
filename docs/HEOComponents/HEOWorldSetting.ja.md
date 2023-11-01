@@ -21,7 +21,6 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `VRM Drop` | false | ブラウザ上へのVRMドロップによるローカルの(他プレイヤーから見えない)アバター変更を許可します。 |
 | `Occulusion Culling` | false | オクルージョンカリングをオンにします。<br>詳しい使い方は[オクルージョンカリング](../WorldMakingGuide/OcclusionCulling.md)をご確認ください。　|
 | `World Name Directory` | false | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。<br>(例： data/field/`ワールド名`/world.heo)|
-| `Multi Play Mode In Local Build` | false | ローカルビルド時にマルチプレイモードで入室します。 |
 | `Use GamePad` | false | ゲームパッドを使用するかどうかの設定です。 |
 | `Use Physics Engine` | false | 物理エンジンを使用するかどうかの設定です。|
 | `Voice Attenuation` | true | プレイヤー音声の距離減衰の有効/無効を切り替えます。 |
