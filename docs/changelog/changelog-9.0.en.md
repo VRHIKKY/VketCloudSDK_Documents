@@ -21,7 +21,9 @@
     - Replaced image to match Ver9.0
 - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldMakingGuide/UnityGuidelines.html)
     - Added note on placing objects with same names, which are not recommended
-
+- [HeliScript/Item](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/hs/hs_class_item.html)
+    - Updated methods useable on current version
+    
 # Deleted Pages
 - Auto Texture Compression
 - Actions
