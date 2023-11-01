@@ -1,0 +1,17 @@
+# 9.0.0
+- AvatarFileの編集機能が拡張され、プロジェクトWindowで複数のファイルを同時に編集できるようになりました。
+- HEOTextPlaneのテキストプレビュー機能のバグが修正されました。
+- EOVideoTriggerのビデオプレビューボタンのバグが修正されました。
+- Project Windowの「Export Compressed Texture」で、右クリックで圧縮する際のノーマルマップ画像の挙動の不具合が修正されました。
+- HEOScriptのコンポーネント名が正しく保存されない問題が修正されました。
+- HEOPlayerのTPS Rotateのセーブ機能が追加されました。
+- CircleShadowのスケール保存機能が修正されました。
+- HEOWorldSettingの基本情報からMultiplay Modeが削除され、JSONの更新が可能な値が追加されました。
+- Vket ChanのサムネイルURLが更新されました。
+- HEO Video Triggerのビルド時のエラーが修正されました。
+- Clickguideの編集機能が拡張され、複数のガイドを同時に編集できるようになりました。
+- HEOActionTriggerのSelectボタンが表示されない問題が修正されました。
+- HEOPlaneの可視化機能が追加されました。
+- HEOVideoTriggerでビデオを再生する際のオーディオエラーが修正されました。
+- HEOActionTriggerで特定のアクションがない場合の警告表示機能が追加されました。
+- Warpの指定方法が座標からオブジェクト指定に変更されました。
