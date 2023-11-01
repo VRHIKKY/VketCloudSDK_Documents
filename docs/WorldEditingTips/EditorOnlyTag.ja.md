@@ -2,6 +2,10 @@
 
 UnityのEditorOnlyタグが付加されたオブジェクトは、VketCloudSDKでのビルド時にビルドの対象から外れます。
 
+!!! note caution
+    現バージョンではNode系オブジェクト(Cube, Sphereなど)の除外に対応しております。<br>
+    [HEOObject](../HEOComponents/HEOObject.md), [HEOActivity](../HEOComponents/HEOActivity.md)などHEOコンポーネント系のオブジェクトは除外に対応していないためご注意ください。
+
 ## 使い方
 
 ビルドの対象から外したいオブジェクトを選択し、Inspector > TagのプルダウンメニューからEditorOnlyタグを選択します。

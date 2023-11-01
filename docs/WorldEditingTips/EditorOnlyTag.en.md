@@ -2,6 +2,10 @@
 
 The object with Unity's EditorOnly tag attached will be ignored on the VketCloudSDK build.
 
+!!! note caution
+    In the current version, the Node objects (e.g. Cube, Sphere, etc.) are available to be ignored.<br>
+    Note that HEOComponent objects such as [HEOObject](../HEOComponents/HEOObject.md) and [HEOActivity](../HEOComponents/HEOActivity.md) are unavailable to be ignored.
+
 ## How to Use
 
 Select the object to be ignored on build, and attach the EditorOnly tag via Inspector > Tag pulldown menu.
