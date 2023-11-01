@@ -1,4 +1,4 @@
-# 9.0.0
+# 9.1.0
 - The editing functionality for AvatarFile has been enhanced, allowing for simultaneous editing of multiple files in the Project Window.
 - A bug in the text preview feature of HEOTextPlane has been fixed.
 - A bug with the video preview button in EOVideoTrigger has been resolved.
