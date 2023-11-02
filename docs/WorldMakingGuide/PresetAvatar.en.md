@@ -39,9 +39,6 @@ The AvatarFile will not be deleted even if the list article is deleted.
 By selecting an AvatarFile in the project, the content will be displayed on the Inspector View.<br>
 The settings are divided by category tabs.
 
-The Id shown on the upper side of the tab will be the avatar ID. <br>
-Designate a number for sorting the avatar on the preset avatar list.
-
 Each category details are on the [AvatarFile](AvatarFile.md) page.
 
 #### 2.2.1 .vrm
