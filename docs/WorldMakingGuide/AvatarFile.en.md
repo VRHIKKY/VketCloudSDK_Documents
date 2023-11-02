@@ -10,7 +10,8 @@ This file stores information to initiate avatars on Vket Cloud.
 | Thumbnail(Japanese) | Sets the thumbnail image for the avatar when language is Japanese. <br> The thumbnail will be used in the preset avatar list. |
 | Thumbnail(English) | Sets the thumbnail image for the avatar when language is English. <br> The thumbnail will be used in the preset avatar list. |
 
-The ID and thumbnail image will be applied to the preset avatar list located in the in-world settings as below.<br>
+The thumbnail image will be applied to the preset avatar list located in the in-world settings as below.<br>
+The avatar display order will be set according to the setting in [HEOWorldSetting > Avatar > Avatar File](../HEOComponents/HEOWorldSetting.md).<br>
 Note that thumbnail image must be in png format and 1:1 square ratio.
 
 ![AvatarFile_Result](img/AvatarFile_Result.jpg)

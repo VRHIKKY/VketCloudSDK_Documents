@@ -9,12 +9,13 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 | Thumbnail(Japanese) | 言語設定が日本語の際のアバターのサムネイルを設定します。<br> 設定されたサムネイルはワールド内設定画面にて使用されます。|
 | Thumbnail(English) | 言語設定が英語の際のアバターのサムネイルを設定します。<br> 設定されたサムネイルはワールド内設定画面にて使用されます。|
 
-ID及びサムネイルは、ワールド内設定画面のプリセットアバターのリストの順番とサムネイルとして以下のように使用されます。<br>
+サムネイルは、ワールド内設定画面のプリセットアバターのサムネイルとして以下のように使用されます。<br>
+また、設定画面でのアバターの表示の順番は[HEOWorldSetting > Avatar > Avatar File](../HEOComponents/HEOWorldSetting.md)にて設定された順番で表示されます。<br>
 なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。
 
 ![AvatarFile_Result](img/AvatarFile_Result.jpg)
 
-## A.vrm
+## .vrm
 初期設定で表示するVRM形式のアバターを指定する項目です。
 
 ![AvatarFile_1](img/AvatarFile_1.jpg)
