@@ -1,4 +1,8 @@
 # 追加されたページ
+- 編集のためのTips
+    - [複数のHEOコンポーネントの一括編集](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldEditingTips/MultiSelect_HEOComponents.html)
+    - [UnlitマテリアルのContributeGI設定を外す](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldEditingTips/DisableContributeGITool.html)
+    - [EditorOnlyタグの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldEditingTips/EditorOnlyTag.html)
 - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOBackgroundTexture.html)
 
 # 変更されたページ
@@ -24,6 +28,8 @@
     - 画像をVer9.0仕様に差し替え
 - [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldMakingGuide/UnityGuidelines.html)
     - 同名のオブジェクトの複数配置非推奨を明記
+- [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/hs/hs_class_item.html)
+    - 現バージョンにて使用できる関数を反映
 
 # 削除されたページ
 - 自動テクスチャ圧縮
