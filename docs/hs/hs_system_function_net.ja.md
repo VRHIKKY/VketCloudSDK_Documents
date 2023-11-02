@@ -31,7 +31,7 @@
 送信されたデータは、コンポーネントに定義された `OnReceiveCustomState()` と `OnReceiveCustomData()` メソッドで取得できます。引数 id は送信したプレイヤーの識別子です。
 
 ```
-component CustumDataReceivere
+component CustomDataReceiver
 {
     public void OnReceiveCustomState(string id, string type, string data)
     {
@@ -43,4 +43,51 @@ component CustumDataReceivere
 }
 ```
 
+## 音声チャンネル入退出コールバックメソッド
 
+他のユーザーの音声チャンネルへの入退出は`OnVCPlayerJoin()`と`OnVCPlayerLeave()`メソッドで取得できます。引数 ID は送信したプレイヤーの識別子です。
+```
+component JoinLeaveSample
+{
+    public void OnVCPlayerJoin(string ID, string Data)
+    {
+    }
+
+    public void OnVCPlayerLeave(string ID, string Data)
+    {
+    }
+}
+```
+
+
+## マイク許可状態
+
+### hsNetGetMicPermissionState
+`int hsNetGetMicPermissionState()`
+
+マイク許可状態を取得します。以下の定数値が返ります。
+
+```
+const int HSMicPermissionState_Prompt = 0;		// 確認が必要
+const int HSMicPermissionState_Granted = 1;		// 許可
+const int HSMicPermissionState_Denied = 2;		// 不許可
+```
+
+
+### コールバックメソッド
+
+以下のメソッドを定義しておくと、マイク状態が変更されたときに呼び出されます。
+
+```
+public void OnChangedMicPermissionState(int MicPermissionState)
+{
+}
+```
+
+
+## SpatiumCode
+
+### hsNetGetSpatiumCode
+`string hsNetGetSpatiumCode()`
+
+Sceneファイルに定義されたSpatiumCodeを取得します。

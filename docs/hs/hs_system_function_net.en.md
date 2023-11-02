@@ -25,7 +25,7 @@ By setting type and data in advance, (type, data) is automatically notified to u
 
 Notify (type, data) to users in the room.
 
-### Data reception callback method
+### Data Reception Callback Method
 
 The sent data can be retrieved in the `OnReceiveCustomState()` and `OnReceiveCustomData()` methods defined in the component. Argument id is the identifier of the sending player.
 
@@ -41,3 +41,52 @@ component CustomDataReceiver
      }
 }
 ```
+## Voice Channel Join/Leave Callback Method
+
+The join/leave event of other users in the voice channel can be retrieved by `OnVCPlayerJoin()` and `OnVCPlayerLeave()` method. Argument id is the identifier of the sending player.
+
+```
+component JoinLeaveSample
+{
+    public void OnVCPlayerJoin(string ID, string Data)
+    {
+    }
+
+    public void OnVCPlayerLeave(string ID, string Data)
+    {
+    }
+}
+```
+
+
+## Mike Permission State
+
+### hsNetGetMicPermissionState
+`int hsNetGetMicPermissionState()`
+
+Get the Mike Permission State. The constants below will be returned.
+
+```
+const int HSMicPermissionState_Prompt = 0;		// Permission in queue
+const int HSMicPermissionState_Granted = 1;		// Permission Granted
+const int HSMicPermissionState_Denied = 2;		// Permission Denied
+```
+
+
+### Callback Method
+
+By defining the method below, the method will be called when mike permission status has changed.
+
+```
+public void OnChangedMicPermissionState(int MicPermissionState)
+{
+}
+```
+
+
+## SpatiumCode
+
+### hsNetGetSpatiumCode
+`string hsNetGetSpatiumCode()`
+
+Get the SpatiumCode defined in the Scene file.
