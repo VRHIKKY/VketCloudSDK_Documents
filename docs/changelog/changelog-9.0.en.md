@@ -17,6 +17,9 @@
     - Added settings (textalignment, charaspace, linespace, overflowwrap, lookatcamera) and related descriptions
 - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.0//HEOComponents/HEOPlayer.html)
     - Added settings such as TPS Rotation, Jump Velocity, Move Speed, etc.
+- [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOObject.html)
+    - Added settings such as shadow caster / receiver, foreground rendering, circle shadow, lookatcamera, etc.
+    - Added explanation on how to use object/motion preview
 - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/Actions/Programmatic/CallScript.html)
     - Replaced image to match Ver9.0
 - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldMakingGuide/UnityGuidelines.html)
