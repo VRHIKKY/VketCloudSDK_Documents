@@ -40,7 +40,7 @@ global function. Returns a Vector3 initialized with the specified x, y, z compon
 ### lerpVector3(Vector3 from, Vector3 to, float t)
 `Vector3 lerpVector3(Vector3 from, Vector3 to, float t)`
 
-global function. Returns a linear interpolated Vector3 result between `from` and `to` by time t.
+A global function. Returns a linear interpolated Vector3 result between `from` and `to` by time t.
 
 ## Constructor
 
@@ -67,7 +67,7 @@ The y component of the vector.
 
 The z-component of the vector.
 
-## methods
+## Methods
 ### Add(Vector3)
 `public void Add(Vector3 v)`
 
