@@ -1,9 +1,15 @@
 # Added Pages
+-  World Editing Tips
+    - [Editing Multiple HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldEditingTips/MultiSelect_HEOComponents.html)
+    - [Disable Contribute GI of Unlit Materials](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldEditingTips/DisableContributeGITool.html)
+    - [Using EditorOnly Tags](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldEditingTips/EditorOnlyTag.html)
 - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOBackgroundTexture.html)
 
 # Edited Pages
 - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/AboutVketCloudSDK/SetupAvatar.html)
     - Updated instructions on adding avatars
+- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldMakingGuide/AvatarFile.html)
+    - Updated settings and images
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOWorldSetting.html)
     - Added specification/details on using gamepad
     - Added explanation for setting up avatars
@@ -17,11 +23,15 @@
     - Added settings (textalignment, charaspace, linespace, overflowwrap, lookatcamera) and related descriptions
 - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.0//HEOComponents/HEOPlayer.html)
     - Added settings such as TPS Rotation, Jump Velocity, Move Speed, etc.
+- [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/HEOComponents/HEOObject.html)
+    - Added settings such as shadow caster / receiver, foreground rendering, circle shadow, lookatcamera, etc.
+    - Added explanation on how to use object/motion preview
 - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/Actions/Programmatic/CallScript.html)
     - Replaced image to match Ver9.0
 - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/WorldMakingGuide/UnityGuidelines.html)
     - Added note on placing objects with same names, which are not recommended
 - [HeliScript/Player](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_class_player.html)
+- [HeliScript/Item](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_class_item.html)
     - Updated methods useable on current version
     
 # Deleted Pages

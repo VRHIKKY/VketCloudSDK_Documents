@@ -1,0 +1,17 @@
+# 9.1.0
+- The editing functionality for AvatarFile has been enhanced, allowing for simultaneous editing of multiple files in the Project Window.
+- A bug in the text preview feature of HEOTextPlane has been fixed.
+- A bug with the video preview button in EOVideoTrigger has been resolved.
+- In the Project Window's "Export Compressed Texture", a behavior issue occurring when compressing normal map images via right-click has been corrected.
+- An issue where the component name in HEOScript was not saved correctly has been resolved.
+- A save feature for TPS Rotate in HEOPlayer has been added.
+- The scale-saving functionality of CircleShadow has been fixed.
+- The Multiplay Mode has been removed from the basic information in HEOWorldSetting, and values that can be updated in JSON have been added.
+- The thumbnail URL for Vket Chan has been updated.
+- An error that occurred during building in HEO Video Trigger has been fixed.
+- The editing functionality of Clickguide has been expanded, allowing for the simultaneous editing of multiple guides.
+- An issue where the Select button in HEOActionTrigger was not displayed has been fixed.
+- A visualization feature for HEOPlane has been introduced.
+- An audio error that occurred when playing videos in HEOVideoTrigger has been fixed.
+- A warning feature has been added to HEOActionTrigger for when specific actions are missing.
+- The method to specify Warp has been changed from coordinates to object selection.
