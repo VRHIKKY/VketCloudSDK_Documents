@@ -3,5 +3,7 @@
 # 変更されたページ
 - [HeliScript/組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function_gui.html)
     - 現バージョンにて使用できる関数を反映
+- [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/heoexporter/he_TextureCompression.html)
+    - pvrtcに加えてdxt変換が廃止になったため記述から削除
 
 # 削除されたページ
