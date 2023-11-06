@@ -21,13 +21,13 @@ Shows the Canvas specified by name with true and hides it with false.
 ### hsCanvasSetGUIPos
 `bool hsCanvasSetGUIPos(string LayerName, string GUIName, float X, float Y)`
 
-Set the GUI element's position as the designated value.
+Sets the GUI element's position as the designated value.
 
 
 ### hsCanvasGetGUIPos
 `bool hsCanvasSetGUIPos(string LayerName, string GUIName, ref float X, ref float Y)`
 
-Get the GUI element's position value.
+Gets the GUI element's position value.
 
 
 ### hsCanvasSetGUIText
@@ -39,21 +39,21 @@ Sets a string to the Canvas specified by name.
 ### hsCanvasSetGUITextAlignment
 `bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)`
 
-Set the text element's alignment.
+Sets the text element's alignment.
 
 
 
 ### hsCanvasSetGUITextOverflowWrap
 `bool hsCanvasSetGUITextOverflowWrap(string LayerName, string GUIName, bool OverflowWrap)`
 
-Set the text element's auto overflow wrap setting.
+Sets the text element's auto overflow wrap setting.
 
 
 
 ### hsCanvasSetGUITextURLClickable
 `bool hsCanvasSetGUITextURLClickable(string LayerName, string GUIName, bool URLClickable)`
 
-Get the URL clickable state of the text element.
+Gets the URL clickable state of the text element.
 
 ### hsCanvasSetGUIImage
 `bool hsCanvasSetGUIImage(string layerName, string guiName, string path)`
@@ -75,7 +75,7 @@ Toggles the state of a GUI element specified by name.
 ### hsCanvasWorldToScreenPos
 `bool hsCanvasWorldToScreenPos(Vector3 WorldPos, ref float ScreenX, ref float ScreenY)`
 
-Convert the world position to screen position. If the position is out of range, `false` will be returned.
+Converts the world position to screen position. If the position is out of range, `false` will be returned.
 
 
 ***
