@@ -64,7 +64,7 @@ component JoinLeaveSample
 ### hsNetGetMicPermissionState
 `int hsNetGetMicPermissionState()`
 
-Get the Mike Permission State. The constants below will be returned.
+Gets the Mike Permission State. The constants below will be returned.
 
 ```
 const int HSMicPermissionState_Prompt = 0;		// Permission in queue
@@ -89,4 +89,4 @@ public void OnChangedMicPermissionState(int MicPermissionState)
 ### hsNetGetSpatiumCode
 `string hsNetGetSpatiumCode()`
 
-Get the SpatiumCode defined in the Scene file.
+Gets the SpatiumCode defined in the Scene file.
