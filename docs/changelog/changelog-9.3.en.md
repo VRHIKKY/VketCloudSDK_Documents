@@ -4,6 +4,8 @@
 - [HeliScript/Built-in functions - Physics](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_physics.html)
 
 # Edited Pages
+- [HeliScript/Built-in functions - network](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_net.html)
+    - Updated methods useable on current version
 - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function.html)
     - Updated methods useable on current version
 - [HeliScript/Built-in functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_gui.html)
