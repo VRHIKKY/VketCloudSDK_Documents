@@ -20,7 +20,7 @@ Objects with HEOField attached will be packed into .heo during BuildAndRun. Make
      Multiple HEOFields can be placed in the scene.
 
 !!! note
-    The `Billboard` setting in pre-Ver9.0 components has been renamed to `Look at Camera`.<br>
+    The `Billboard` setting in pre-Ver9.3 components has been renamed to `Look at Camera`.<br>
     If the scene data is migrated from past SDK versions, the `Billboard` setting value will be reflected to `Look at Camera`.
 
 ---
