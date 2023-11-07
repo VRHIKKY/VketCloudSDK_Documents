@@ -6,6 +6,8 @@
 # 変更されたページ
 - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
     - インストールウィザード及びVersion Managerの使用方法を追加
+- [HeliScript/組み込み関数 - ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function_net.html)
+    - 現バージョンにて使用できる関数を反映
 - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function.html)
     - 現バージョンにて使用できる関数を反映
 - [HeliScript/組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function_gui.html)
