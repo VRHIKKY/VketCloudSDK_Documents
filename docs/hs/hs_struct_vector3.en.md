@@ -37,6 +37,10 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 
 global function. Returns a Vector3 initialized with the specified x, y, z components.
 
+### lerpVector3(Vector3 from, Vector3 to, float t)
+`Vector3 lerpVector3(Vector3 from, Vector3 to, float t)`
+
+A global function. Returns a linear interpolated Vector3 result between `from` and `to` by time t.
 
 ## Constructor
 
@@ -63,20 +67,33 @@ The y component of the vector.
 
 The z-component of the vector.
 
-
-
-## methods
+## Methods
 ### Add(Vector3)
-`public void Add(Vector3v)`
+`public void Add(Vector3 v)`
 
 Adds the vector specified by the argument to the calling vector.
 
-### Rotate (Quaternion)
+### Sub(Vector3 v)
+`public void Sub(Vector3 v)`
+
+Subtracts the vector specified by the argument to the calling vector.
+
+### Rotate(Quaternion)
 `public Vector3 Rotate(Quaternion q)`
 
 Rotates the calling vector and returns the result as a new Vector3.
 
-### Rotate Matrix(Matrix)
+### RotateMatrix(Matrix)
 `public Vector3 RotateMatrix(Matrix mat)`
 
 Rotates the calling vector and returns the result as a new Vector3.
+
+### Distance(Vector3 v)
+`public float Distance(Vector3 v)`
+
+Returns the distance from vector `v`.
+
+### GetNormalize()
+`public Vector3 GetNormalize()`
+
+Returns a new Vector3 value by normalizing the vector.
