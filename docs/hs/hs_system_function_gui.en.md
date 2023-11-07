@@ -6,34 +6,76 @@
 
 
 ***
-
-
-### hsCanvasSetLayerShow(string, bool)
+### hsCanvasSetLayerShow
 `bool hsCanvasSetLayerShow(string layerName, bool show)`
 
 Shows the layer specified by name with true and hides it with false.
 
-### hsCanvasSetGUIShow(string, string, bool)
+
+### hsCanvasSetGUIShow
 `bool hsCanvasSetGUIShow(string layerName, string guiName, bool show)`
 
 Shows the Canvas specified by name with true and hides it with false.
 
-### hsCanvasSetGUIText(string, string, string)
-`bool hsCanvasSetGUIText(string layerName, string guiName, string text)`
+
+### hsCanvasSetGUIPos
+`bool hsCanvasSetGUIPos(string LayerName, string GUIName, float X, float Y)`
+
+Sets the GUI element's position as the designated value.
+
+
+### hsCanvasGetGUIPos
+`bool hsCanvasSetGUIPos(string LayerName, string GUIName, ref float X, ref float Y)`
+
+Gets the GUI element's position value.
+
+
+### hsCanvasSetGUIText
+`bool hsCanvasSetGUIText(string LayerName, string GUIName, string Text)`
 
 Sets a string to the Canvas specified by name.
 
-### hsCanvasSetGUIImage(string, string, string)
+
+### hsCanvasSetGUITextAlignment
+`bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)`
+
+Sets the text element's alignment.
+
+
+
+### hsCanvasSetGUITextOverflowWrap
+`bool hsCanvasSetGUITextOverflowWrap(string LayerName, string GUIName, bool OverflowWrap)`
+
+Sets the text element's auto overflow wrap setting.
+
+
+
+### hsCanvasSetGUITextURLClickable
+`bool hsCanvasSetGUITextURLClickable(string LayerName, string GUIName, bool URLClickable)`
+
+Gets the URL clickable state of the text element.
+
+### hsCanvasSetGUIImage
 `bool hsCanvasSetGUIImage(string layerName, string guiName, string path)`
 
 Sets an image on the Canvas specified by name.
 
-### hsCanvasResetToggleDefault(string)
+
+### hsCanvasResetToggleDefault
 `bool hsCanvasResetToggleDefault(string name)`
 
 Resets the GUI element specified by name to its default state.
 
-### hsCanvasToggleChange(string)
+
+### hsCanvasToggleChange
 `bool hsCanvasToggleChange(string name)`
 
 Toggles the state of a GUI element specified by name.
+
+### hsCanvasWorldToScreenPos
+`bool hsCanvasWorldToScreenPos(Vector3 WorldPos, ref float ScreenX, ref float ScreenY)`
+
+Converts the world position to screen position. If the position is out of range, `false` will be returned.
+
+
+***
