@@ -1,4 +1,5 @@
 # Added Pages
+- [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/HEOComponents/HEOActivity.html)
 
 # Edited Pages
 - [HeliScript/Vector3](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/hs/hs_struct_vector3.html)
