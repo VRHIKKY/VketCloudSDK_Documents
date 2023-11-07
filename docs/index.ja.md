@@ -18,5 +18,5 @@ SDKの利用には、`各種アカウントへの登録`と`指定バージョ�
 を順番に実行してください。
 
 !!! note
-    VketCloudSDKのバージョンごとの更新情報は[リリースノート](releasenote/releasenote-5.4.md)から確認できます。<br>
-    また、[チェンジログ](changelog/changelog-5.4.md)では本マニュアルの更新情報が確認できます。
+    VketCloudSDKのバージョンごとの更新情報は[リリースノート](releasenote/releasenote-9.3.md)から確認できます。<br>
+    また、[チェンジログ](changelog/changelog-9.3.md)では本マニュアルの更新情報が確認できます。
