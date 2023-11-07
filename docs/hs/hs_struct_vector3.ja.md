@@ -37,6 +37,10 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 
 グローバル関数。指定した x, y, z 成分で初期化されたVector3を返す。
 
+### lerpVector3(Vector3 from, Vector3 to, float t)
+`Vector3 lerpVector3(Vector3 from, Vector3 to, float t)`
+
+グローバル関数。from と to の間を時間 t で線形補間し、結果を Vector3 として返す。
 
 ## コンストラクタ
 
@@ -44,7 +48,6 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 `public Vector3()`
 
 x, y, z 要素を0に設定して Vector3 のインスタンスを生成する。
-
 
 
 ## メンバ変数
@@ -64,20 +67,37 @@ x, y, z 要素を0に設定して Vector3 のインスタンスを生成する�
 ベクトルのz成分。
 
 
+***
+
 
 ## メソッド
 ### Add(Vector3)
 `public void Add(Vector3 v)`
 
-呼び出し元のベクトルに、引数で指定されたベクトルを加算する。
+引数で指定したベクトル v を加算する。
+
+### Sub(Vector3 v)
+`public void Sub(Vector3 v)`
+
+引数で指定したベクトル v を減算する。
 
 ### Rotate(Quaternion)
 `public Vector3 Rotate(Quaternion q)`
 
-呼び出し元のベクトルを回転させて、結果を新しい Vector3 として返す。
+ベクトルを回転させて、結果を新しい Vector3 として返す。
 
 ### RotateMatrix(Matrix)
 `public Vector3 RotateMatrix(Matrix mat)`
 
-呼び出し元のベクトルを回転させて、結果を新しい Vector3 として返す。
+ベクトルを回転させて、結果を新しい Vector3 として返す。
+
+### Distance(Vector3 v)
+`public float Distance(Vector3 v)`
+
+引数で指定したベクトル v との距離を返す。
+
+### GetNormalize()
+`public Vector3 GetNormalize()`
+
+ベクトルを正規化し、結果を新しい Vector3 として返す。
 

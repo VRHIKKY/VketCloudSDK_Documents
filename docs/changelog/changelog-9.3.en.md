@@ -1,6 +1,8 @@
 # Added Pages
 
 # Edited Pages
+- [HeliScript/Vector3](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/hs/hs_struct_vector3.html)
+    - Updated methods useable on current version
 - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/heoexporter/he_TextureCompression.html)
     - Deleted info of deprecated dxt conversion likewise former pvrtc conversion
     
