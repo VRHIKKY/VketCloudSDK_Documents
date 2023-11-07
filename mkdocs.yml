@@ -207,6 +207,7 @@ nav:
   - Texture Compression : heoexporter/he_TextureCompression.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
+    - HEOActivity: HEOComponents/HEOActivity.md
     - HEOAnimation: HEOComponents/HEOAnimation.md
     - HEOAreacollider: HEOComponents/HEOAreacollider.md
     - HEOAudio: HEOComponents/HEOAudio.md
