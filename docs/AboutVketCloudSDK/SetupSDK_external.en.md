@@ -1,6 +1,6 @@
-# How to install VketCloud SDK
+# How to install VketCloudSDK
 
-To install VketCloud SDK, you need to use the Package Manager of Unity.
+To install the VketCloudSDK, the Unity Package Manager and the VketCloudSDK install wizard is required.
   
 ---
 ### Step 1. Open a project in Unity
@@ -8,8 +8,10 @@ Open a project of a supported version ([Unity Pre-prep](OperatingEnvironment.md)
 Select "3D" as the template, if you need one.
 
 !!! note caution
-If you put a space in the project name, the build may fail.
-OK) MyProject NG) My Project
+If you put a space in the project name, it may cause build failures and other issues. <br>
+We advise to avoid using full-width characters such as CJK characters.
+
+OK) MyProject NG) My Project , マイ　プロジェクト
 
 ---
 ### Step 2. Register Registry information
@@ -27,7 +29,7 @@ Select "Package Manager" from the left tab in the window and describe as follows
   Finally, press the "Save" button to save the settings.
   
 ---
-### Step 3. Install VketCloudSDK package from Package Manager
+### Step 3. Install the VketCloudSDK Install Wizard via Package Manager
   
 Open the "Packages" window from Unity's menu Window > Package Manager.
 
@@ -35,85 +37,87 @@ Select "My Registries" from the dropdown at the top of the window.
 
    ![registry](img/registry.jpg)
 
-Select VketCloudSDK from the displayed list and press the “Install” button to start the installation.<br>
-As on default the latest SDK version will be installed, follow the instructions below if you want to [install a specified version](#installing-a-specified-version--updating-an-existing-sdk).
+Select the VketCloudSDK Install Wizard from the displayed list and press the “Install” button to start the installation.<br>
 
-Installation is complete if the item "VketCloudSDK" is added to the Unity menu.
+Installation is complete if the window and Unity menu is displayed as below:
 
 ![InstallationWizard_Window](img/InstallationWizard_Window.jpg)
 
 ![InstallationWizard_Menu](img/InstallationWizard_Menu.jpg)
 
-## Step 4. インストールウィザードを使用してSDKをインストールする
+## Step 4. Install the SDK using the Install wizard
 
-新規にSDKをインストールする際はSDKインストールウィザードを使用します。
+To install the SDK on a new project, use the SDK Install Wizard.
 
-1\. Unityのメニューから SDK Installation Wizardを選択します。
+1\. Select the SDK Installation Wizard on the Unity menu.
 
 ![InstallationWizard_Menu](img/InstallationWizard_Menu.jpg)
 
-    インストールウィザードを開くと、以下の画面が起動します。
+    By opening the Install Wizard, the window will appear as below.
 
 ![InstallationWizard_Window](img/InstallationWizard_Window.jpg)
 
-2\. 「次へ」ボタンを押して、言語設定画面に移動します。言語設定画面でWizard内で使用する言語を設定できます。
+2\. Select the "Next" button to select the preferred language. This language will be used throughout the Installation Wizard.
 
 ![InstallationWizard_2_en](img/InstallationWizard_2_en.jpg)
 
-3\. VketCloud SDKの初期設定をガイドする画面です。主に三つの設定を完了させてください。<br>初期設定しないことも可能ですが、その場合、SDKの動作保証はできません。
+3\. The window for setting the recommended initial settings will appear. Complete all three settings to proceed.<br>  Although the recommended settings may be ignored, SDK functionality cannot be guaranteed in such case.
 
 ![InstallationWizard_3_en](img/InstallationWizard_3_en.jpg)
 
-4\. 設定が完了されるとそれぞれの設定項目の左にチェックマークが表示されます。<br>設定されない状態で「次へ」ボタンを押すと以下警告画面が表示されます。
+4\.  By finishing each setting, a check mark will appear on each article. <br>  By ignoring the settings and selecting the "Next" button, a window of warning will appear.
 
 ![InstallationWizard_4_en](img/InstallationWizard_4_en.jpg)
 
-5\.「次へ」ボタンを押すと、バージョン選択画面が表示されます。<br>安定版、最新版、バージョンアーカイブからバージョンを選択できます。
+5\. By selecting "Next", the version selection window will appear.<br> The SDK version can be chosen from stable, latest, archive versions.
 
 !!! note caution
-    バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
+    The archive versions are deprecated and planned to be unaccessible in the near future.<br>
+    Do not use these versions for setting up new world projects.
 
 ![InstallationWizard_5_en](img/InstallationWizard_5_en.jpg)
 
-6\. バージョンを選択し、インストールボタンを押すとパッケージのインポートが開始します。
+6\. After selecting version and proceeding by selecting the "install" button, the package import will begin.
 
 ![InstallationWizard_6_en](img/InstallationWizard_6_en.jpg)
 
-7\.　およそ２～５分待つと、インストールが完了して以下の画面が表示されます。この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。
+7\.　After waiting approx. 2~5 minutes, the installation will be completed with the window below.<br>
+The SDK manual and community discord server can be accessed from this window.
 
 ![InstallationWizard_7_en](img/InstallationWizard_7_en.jpg)
 
-# 任意のバージョンの導入・既存バージョンSDKのアップデート
+# Installing a specified version / Updating an existing SDK
 
-既にSDKを導入しているプロジェクトについては、SDK Version Managerを使用してバージョンの切り替え・アップデートが可能です。<br>
-また、以前のSDKバージョンのようにPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えも引き続き利用可能です。
+For a project with an existing SDK, the SDK Version Manager can be used for switching and updating SDK versions.<br>
+The Package Manager and manifest.json editing is also available as well.
 
-## SDK Version Managerによるバージョン切り替え
+## Version switch via SDK Version Manager
 
-1\. VketCloudSDK_Wizard > SDK Version Managerを押して、バージョン選択画面が表示されます。
+1\. By selecting VketCloudSDK_Wizard > SDK Version Manager, the version selection window will appear.
 
 ![SDKVersionManager_1](img/SDKVersionManager_1.jpg)
 
-2\. バージョン選択画面でバージョンを選択し、インストールボタンを押してください。
+2\. Select the new version to be installed, and press the "Install" button.
 
 !!! note caution
-    バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
+    The archive versions are deprecated and planned to be unaccessible in the near future.<br>
+    Do not use these versions for setting up new world projects.
 
 ![InstallationWizard_5_en](img/InstallationWizard_5_en.jpg)
 
-3\. インストールボタンを押すと、インポート画面に移動します。
+3\. By selecting the install button, the import window will appear as below.
 
 ![SDKVersionManager_3_en](img/SDKVersionManager_3_en.jpg)
 
-4\. インストールが完了すると、バージョン選択完了画面が表示されます。
+4\. As the installation is completed, the version completion window will appear as below.
 
 ![SDKVersionManager_4_en](img/SDKVersionManager_4_en.jpg)
 
-この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。
+The SDK manual and community discord server can be accessed from this window.
 
 !!! note caution
-      既存のSDKのバージョンアップを行う際、アップデート後にComponentが欠落する現象が確認されています。<br>
-      バージョンアップを行う際はプロジェクトの複製などによってバージョンアップ前の状態のバックアップを取ることを強くおすすめします。
+      On updating an existing SDK, Components may be gone missing after the update.<br>
+      We strongly recommend to take a backup of the pre-update project by duplicating files.
 
 ### Version switching via Package Manager
 
