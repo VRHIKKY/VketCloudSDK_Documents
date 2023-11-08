@@ -6,4 +6,4 @@ VketCloudSDK cannot output Unity SkyBox. Therefore, instead, we need to place a 
 !!!note tip
      You can obtain and use the Skybox sample by installing the tutorial scene (Basic) from the control panel (VketCloudSDK menu > Control Panel).
 
-![Skybox](img/Skybox.png)
+![Skybox](img/Skybox.jpg)

@@ -1,0 +1,22 @@
+# 8.0.0
+- Fixed an issue where buttons couldn't be pressed on the right edge of the vertical screen MyAvatar.
+- Fixed an issue where screenshots in photography mode turned out completely black.
+- Fixed an issue where buttons couldn't be pressed when they became invisible while being pressed.
+- Adjusted the display position of the Avatar target.
+- Improved the display of glTF models with vertices exceeding 65,536.
+- Fixed occasional snagging issues during collision detection with the ground.
+- Added pitch angle setting function for TPS camera (added "tpspitchmaxangle" to the "camera" in the Scene file).
+- Accelerated by adjusting the number of file loading processes on PCs only.
+- Supported foreground rendering for Textplane type.
+- Supported foreground rendering for Plane type.
+- Supported in-view colliders for object type.
+- Supported debug display for AreaCollider.
+- Set the camera rotation speed in FPS mode to the same value as in TPS mode.
+- After the first loading is complete, a "OnLoaded" gtag is sent.
+- Made it possible to toggle display with the F9 key even in photography mode.
+- Made the initial loading screen display faster.
+- Reduced loading times by reusing data scheduled for release when sorting avatar distances.
+- Adjusted collision detection between the camera and collider in FPS mode.
+- When replacing a texture, the Clamp setting of the original texture is now inherited.
+- It is now possible to specify the URL of the thumbnail image of the avatar to be displayed in the Canvas preset avatar list (added "thumbnail_url" to "avatars" in the Scene file).
+- Added movieviewer_fullscreen_on, movieviewer_fullscreen_off, movieviewer_fullscreen_to, and SetGenericWindowState to Action.

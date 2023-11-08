@@ -3,21 +3,22 @@
 シーンのビルド方法について解説します。
 
 ## ビルドと実行
-VketCloudSDKでシーンをビルドするには、[必要コンポーネント](WorldBasicComponents.html)を配置したことを確認し、VketCloudSDK > Build And Run からビルドを実行してください。  
+VketCloudSDKでシーンをビルドするには、[必要コンポーネント](WorldBasicComponents.md)を配置したことを確認し、VketCloudSDK > Build And Run からビルドを実行してください。  
   
 ![BuildAndRun](img/BuildAndRun.jpg)  
 
 !!! note question "ビルドが出来ない場合" 
-    以下をお試しください。
-
-    - VketCloudSDK > キャッシュクリア
-
-    このほかにもさまざまな要因でビルドに失敗している可能性があります。ビルドエラーが解消しない場合は、エラー事例をまとめた[トラブルシューティング](../troubleshooting/BuildError.md)をご覧ください。
+    さまざまな要因でビルドに失敗している可能性があります。エラー事例をまとめた[トラブルシューティング](../troubleshooting/BuildError.md)をご覧ください。
 
 ビルドが成功したら、自動的にブラウザに遷移します。シーンの内容が反映されているかテストしてください。
 
-![BuildAndRun](img/buildsuccess.png)  
+![BuildAndRun](img/buildsuccess.jpg)  
 
+!!! note tip "キャッシュクリアについて"
+    VketCloudSDKのビルド時に発生するキャッシュは、基本的にはビルド毎に上書きされるため消去は不要です。<br>
+    SDKのバージョンアップ直後などにおいて稀にキャッシュが原因のビルドエラーが発生するため、その際は以下より手動でのキャッシュクリアをお試しください。<br>
+    - VketCloudSDK > キャッシュクリア<br>
+    また、 - VketCloudSDK > Build Option > Auto Clear Cache にチェックを入れることでビルド毎にキャッシュクリアするように設定出来ますが、通常のビルド時には有効にしなくても問題ございません。
 
 !!! note tip "「ビルドと実行」で起きること"
     Build and Runを押すと、HEOFieldコンポーネントが付いたオブジェクトとそのすべての子オブジェクトが.heoファイルに変換されます。「.heo」はVketCloudの描画エンジンで使われている専用の3Dフォーマットです。  

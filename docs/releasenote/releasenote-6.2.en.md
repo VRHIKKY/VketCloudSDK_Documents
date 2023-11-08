@@ -1,0 +1,14 @@
+# 6.2.0
+- Fixed an issue where the icon display is reversed when re-entering in FPS mode.
+- Added a process to display a message dialogue when login fails.
+- Implementation of Vket cloudsdk version update manager.
+- Implementation of HSManager and improvement of GUI for HEOWorldSetting.
+- Add tutorial sample scenes related to Visual.
+- Corrected the spelling of Usegamepad in WorldSetting.
+- Changed the link of VketMagazine from home to the world production classroom.
+- Added functionality to remove Contribute GI from Unlit materials.
+- Improved the inspector display for Action OpenComicViewer.
+- Display the debug console when logging in. Once closed, the debug console will not be displayed again even if the Editor is reopened.
+- Ensure the settings window and debug console window are displayed properly during Light mode.
+- Added a feature to constantly display world capacity and texture size.
+- Lower the Y of DespawnHeight added by Add essential objects for VketCloud than that of Player.

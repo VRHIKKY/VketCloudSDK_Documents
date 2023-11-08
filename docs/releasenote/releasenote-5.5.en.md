@@ -1,0 +1,24 @@
+# 5.5.0
+- Improve inspector view of HEO Object
+- Add HEOCamera
+- Add function to exclude GameObjects with EditorOnly from .heo pack
+- Correct case for HEOAudio fields
+- Add TPSRotate to HEOPlayer
+- Add Circle-shadow to HEOObject
+- Improve inspector view of HEOSpot
+- Add new settings to HEOShowFlag
+- Add new settings to TextPlane
+- Allow bulk changes of HEO-related components in hierarchy
+- Add HEOBackgroundTexture
+- Improve UI of Texture Complex Compressor and make it Mac-compatible
+- Improve inspector view of HEOUVScroller
+- Remove Emotion name item from Emotion category in AvatarFile
+- Add Mip Map Count item to IBL Cube Map
+- Fix untranslated issue of ColliderTarget in HEOCollider
+- Fix display issue of Blend Shape Trans Name Table in HEOInfo
+- Fix the scene file writing issue in IBL
+- Correct the missing English and Japanese translations for HEOShadow
+- Fix the issue of automatically adding .mp4 to .gitignore
+- Create File Select button for Object category in AvatarFile
+- Add function to set up a dedicated material for objects with VideoTrigger
+- Improve the field item of ActionType CallScript

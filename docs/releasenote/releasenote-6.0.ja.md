@@ -1,0 +1,12 @@
+# 6.0.0
+- status/logをデフォルト非表示にし、Sceneファイル読み込み完了後にdebugmodeがtrueなら表示するようにしました
+- F8キーでstatus/logの表示を切り替えられるようにしました
+- Sceneファイルのavatars/emotionsに衝突判定をおこなうかどうかのcollisiondetectionフラグを追加しました
+- Idle以外のモーション読み込みを遅延させるようにしました
+- 初回ローディング処理の改善
+- (パーティクルエディタ)RotationOverLifetimeにRandom Two Constantsを追加
+- (パーティクルエディタ)RotationOverLifetimeにEasingを追加
+- (パーティクルエディタ)SizeOverLifetimeにEasingを追加
+- 縦横のUIが同時に表示される場合がある問題を修正
+- Player.Emotionで自分自身のエモーションを再生したとき、他のプレイヤーに通知されない問題を修正
+- エリアコライダーに入ったときにOnEnterAreaColliderが何度も呼ばれてしまう問題を修正

@@ -1,5 +1,52 @@
-# 5.4.0
-- Fixed a bug related to the new UI2023.
-- It has improved the problem that the operation becomes heavier after iOS 16.4 or later.
-- The default value of the viewing angle has been changed to 70.
-- The default value of the USEAVATARCLICK has been changed to TRUE.
+# Added Pages
+- [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOSpot.html)
+- [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOSpawn.html)
+- [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOShadow.html)
+- [HEOClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOClickGuide.html)
+- [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/InstallingDeeplink.html)
+- [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/debugconsole/debugconsole.html)
+- [Debug Message](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/debugconsole/debugmessage.html)
+- [Browser window blackouts](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/BrowserBlackWindow.html)
+- [How to Animate an Object](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation.html) *English Version WIP
+- [How to Animate an Object - TroubleShooting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation_TroubleShooting.html) *English Version WIP
+- [Missing Components After Version Update](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/MissingComponents.html)
+- [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PresetAvatar.html)
+- [Occlusion Culling](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/OcclusionCulling.html) *English Version WIP
+
+# Edited Pages
+- [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/index.html)
+    - Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/releasenote/releasenote-5.4.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/changelog/changelog-5.4.html)
+- [How to Build](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/FirstStep/BuildAndRun.html) 
+    - Changed description of clear cache
+- [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupSDK_external.html)
+    - Added solution when required packages does not become installed automatically
+    - Instructions on how to switch SDK versions
+- [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupAvatar.html)
+    - Updated instructions on adding avatars
+- [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/heoexporter/he_TextureCompression.html)
+    - Updated instructions according to Ver5.4
+- [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOVideoTrigger.html)
+    - Updated discription according to Ver5.4
+    - Added explanation of audio distance falloff unsupported
+- [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOWorldSetting.html)
+    - Updated discription according to Ver5.4 
+    - Added explanation of gamepad / emote related issues 
+    - Added restriction on using lights
+    - Added how to create dynamic shadows using [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOShadow.html)1
+- [HEOAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOAnimation.html)
+    - Added how to use for HEOAnimation
+- [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEOComponents/HEOAudio.html)
+    - Added discription according to Ver5.4
+- [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/UnityGuidelines.html)
+    - Edited content according to Ver5.4 
+    - Added restriction on using lights
+- [HEMAnimationConverter](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEMAnimationConverter/AnimationConverter.html)
+    - Revised content according to Ver5.4 *English Version WIP
+- [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/AvatarFile.html)
+    - Added specifications of AvatarFile
+- [AutoTextureCompresser](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AutoTextureCompresser/AutoTextureCompresser.html)
+    - Edited content according to Ver5.4 *English Version WIP
+- [HeliScript - String](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/hs/hs_string.html)
+    - Updated samplecode for % operator
+# Deleted Pages
+- Deleted check tool on Debug Console implementation

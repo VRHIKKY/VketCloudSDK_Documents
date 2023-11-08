@@ -9,6 +9,7 @@ This can be caused by several reasons, but the common issues are the following:
 |  Cause |  How to Fix  |
 | ----   | ---- |
 | The avatar list is empty. | Register at least one avatar. |
+| Element in `HEOWorldSettings/BasicInfo/HeliScript` is empty. | Delete the element that is being [`None` or `Missing`](../HEOComponents/HEOWorldSetting.md). |
 | The .heo export is failing. | Please check the Unity Console for red errors. |
 | Error in the Unity cache. | Clear your cache from Preferences |
 | Error in the browser cache. | Clear your cache of your browser |
@@ -32,3 +33,5 @@ Sometimes the build error may be caused by library or script imported from Packa
 
 In such cases, the error can be fixed by reimporting the newly imported library that is likely to be the cause.
 
+!!! note caution
+        As the EditorTutorialSystem package may rarely fail to be imported automatically, causing build errors, add the package below using the [Package Manager](../AboutVketCloudSDK/SetupSDK_external.md) on such occurence.

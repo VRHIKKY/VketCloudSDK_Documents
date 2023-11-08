@@ -1,0 +1,9 @@
+# 7.0.0
+- itemが常にカメラ方向を向くlookatcamera設定を追加
+- テキストチャットウィンドウ等でマイスホイール回転によるスクロール対応
+- デフォルトプレイヤー名をMeからGuestに変更
+- Sceneファイルに音声距離減衰を設定するvoiceattenuationを追加
+- Sceneファイルにproperties,overridesを追加
+- テキストスプライトを指定範囲でクリッピング
+- VRM1.0対応
+- Clickableの手前にColliderがある場合に遮断されなくなっていた問題を修正

@@ -2,21 +2,22 @@
 We will explain how to build a scene.
 
 ## Build and Run
-To build a scene with VketCloudSDK, make sure you have placed the [required components](WorldBasicComponents.html) and initiate the build from VketCloudSDK > Build And Run.
+To build a scene with VketCloudSDK, make sure you have placed the [required components](WorldBasicComponents.md) and initiate the build from VketCloudSDK > Build And Run.
   
 ![BuildAndRun](img/BuildAndRun.jpg)
 
 !!! note question "If you can't build"
-     Please try the following.
-
-     - VketCloudSDK > Clear Cache
-
-     There may be various other reasons for build failures. If the error persists, please refer to [Troubleshooting](../troubleshooting/BuildError.md) that summarizes error cases.
+     There may be various reasons causing the build error. Please refer to [Troubleshooting](../troubleshooting/BuildError.md).
 
 If the build succeeds, the browser will automatically open. Please check if the contents of the scene are properly reflected.
 
 ![BuildAndRun](img/buildsuccess.jpg)
 
+!!! note tip "Clear Cache"
+    The build cache stored in the VketCloudSDK will be overwrited every build, therefore clearing cache is unrequired.<br>
+    However, some build errors may be related to the cache in rare cases such as after upgrading the SDK, so consider clearing cache in such situation.<br>
+    - VketCloudSDK > Clear Cache<br>
+    Also, by selecting - VketCloudSDK > Build Option > Auto Clear Cache, the clear cache may be enabled before every build. This setting is not required on usual builds.
 
 !!! note tip "What happens in "Build and Run""
      Hitting Build and Run will convert the object with the HEOField component and all its child objects into a .heo file. ".heo" is a dedicated 3D format used by VketCloud's drawing engine.

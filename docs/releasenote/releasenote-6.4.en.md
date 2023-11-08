@@ -1,0 +1,11 @@
+# 6.4.0
+- Reduced text texture memory usage.
+- When entering with a specified RoomID, move to FreeChat if the room is full.
+- Added a GUI to notify when MyAvatar cannot be used.
+- Fixed an issue where the "creation date" in the world details was not displayed.
+- Fixed an issue where if a button becomes hidden while being pressed, it becomes inoperable.
+- Fixed an issue where some achievements were not functioning.
+- Fixed a build error issue where if the token expires during a reload with distance cut, the MyAvatar file cannot be retrieved.
+- Fixed an issue where the Good button is not visible in portrait mode.
+- Fixed an issue in portrait mode where the button on the far right of MyAvatar couldn't be pressed.
+- Fixed issues related to RenderTarget.

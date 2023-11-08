@@ -104,7 +104,6 @@ plugins:
           ReflectionProbe: 反射を写り込ませるには
           Texture Compression: テクスチャ圧縮
           Physics Engine: 物理エンジン
-          Auto Texture Compression: 自動テクスチャ圧縮
           Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponents: HEOコンポーネント
@@ -126,18 +125,35 @@ plugins:
           Toolbar: ツールバー
           Property: プロパティウィンドウ
           Animation Converter : アニメーションコンバーター
+          Adding Preset Avatars : プリセットアバターを追加する
+          World Editing Tips: 編集のためのTips
+          Using EditorOnly Tags: EditorOnlyタグの使用方法
+          Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
+          Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
+          World Optimization: ワールドの軽量化方法
+          World Optimization - Overview: ワールドの軽量化方法：概要
+          Occlusion Culling: オクルージョンカリング
           Trouble shooting: トラブルシューティング
+          SDK does not appear after install: SDKがインストール後に立ち上がらない
           Build Error: ビルドエラー
           Browser does not open: ブラウザが立ち上がらない
+          Browser window blackouts: ブラウザウィンドウが暗転したまま動かない
           Changes are not applied: 変更が更新されない
+          Missing Components After Version Update: バージョンアップ後にComponentがMissingとして表示される
           First Step: ワールド制作の基本
           Change Log: チェンジログ
+          About Changelog: チェンジログについて
+          Release Note: リリースノート
+          About Release Note: リリースノートについて
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
-          Check Tool: チェックツール
+          Debug Console: デバッグコンソール
+          Debug Messages: デバッグメッセージ一覧
           World Making Guide: ワールド制作ガイド
           Avatar File: アバターファイル
-          Utility Tools: 補助ツールの使い方
+          How to Animate Objects: オブジェクトをアニメーションさせる
+          How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
+          Utility Tools: 補助ツールの使い方 #元ページ不明タグ
           Login to SDK: SDKにログインする
 
 markdown_extensions:
@@ -160,14 +176,19 @@ nav:
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
-    #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
     - Physics Engine : WorldMakingGuide/PhysicsEngine.md
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
+    #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
+    #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
+    - How to Animate Objects: WorldMakingGuide/PropAnimation.md
+    - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
+    - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+- SDK Tools:
+    - Debug Console: debugconsole/debugconsole.md
+    - Debug Messages: debugconsole/debugmessage.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
-    - Check Tool: checktool/checktool.md
-    - Auto Texture Compression: AutoTextureCompresser/AutoTextureCompresser.md
-    - Texture Compression : heoexporter/he_TextureCompression.md
+    - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :
       - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
       - About Screen : particleeditor/pe_about_screen.md
@@ -176,62 +197,84 @@ nav:
         - Toolbar : particleeditor/pe_toolbar.md
         - Property : particleeditor/pe_propertywindow.md
         - Particle List : particleeditor/pe_particlelistwindow.md
-    - Animation Converter : HEMAnimationConverter/AnimationConverter.md
+- World Editing Tips:
+  - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
+  - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
+  - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
+- World Optimization: 
+  - World Optimization - Overview : WorldMakingGuide/WorldOptimization.md
+  - Occlusion Culling : WorldMakingGuide/OcclusionCulling.md
+  - Texture Compression : heoexporter/he_TextureCompression.md
 - HEOComponents:
-    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
-    - HEOField: Unity/HEOField.md
-    - HEOPlayer: Unity/HEOPlayer.md
-    - HEOObject: Unity/HEOObject.md
-    - HEOLODLevel: Unity/HEOLODLevel.md
-    - HEOAudio: Unity/HEOAudio.md
-    - HEOPlane: Unity/HEOPlane.md
-    - HEOUVScroller: Unity/HEOUVScroller.md
-    - HEOTextPlane: Unity/HEOTextPlane.md
-    - HEOParticle: Unity/HEOParticle.md
-    - HEOReflectionProbe : Unity/HEOReflectionProbe.md
-    - HEOScript: Unity/HEOScript.md
+    - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
+    - HEOAnimation: HEOComponents/HEOAnimation.md
+    - HEOAreacollider: HEOComponents/HEOAreacollider.md
+    - HEOAudio: HEOComponents/HEOAudio.md
+    - HEOBackgroundTexture: HEOComponents/HEOBackgroundTexture.md
+    - HEOCollider: HEOComponents/HEOCollider.md
+    - HEOClickGuide: HEOComponents/HEOClickGuide.md
+    - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
+    - HEOField: HEOComponents/HEOField.md
+    #- HEOInfo: HEOComponents/HEOInfo.md #整備中
     - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
-    - HEODespawnHeight: Unity/HEODespawnHeight.md
-    - HEOCollider: Unity/HEOCollider.md
-    - HEOAnimation: Unity/HEOAnimation.md
-    - HEOShowFlag : Unity/HEOShowFlag.md
-    - HEOAreacollider: Unity/HEOAreacollider.md
-    - HEOVideoTrigger: Unity/HEOVideoTrigger.md
-    - HEOActionTrigger: Unity/HEOActionTrigger.md
+    - HEOLODLevel: HEOComponents/HEOLODLevel.md
+    - HEOObject: HEOComponents/HEOObject.md
+    #- HEOObjectType: HEOComponents/HEOObjectType.md #整備中
+    - HEOParticle: HEOComponents/HEOParticle.md
+    - HEOPlane: HEOComponents/HEOPlane.md
+    - HEOPlayer: HEOComponents/HEOPlayer.md
+    - HEOReflectionProbe : HEOComponents/HEOReflectionProbe.md
+    - HEOScript: HEOComponents/HEOScript.md
+    - HEOShadow: HEOComponents/HEOShadow.md
+    - HEOShowFlag : HEOComponents/HEOShowFlag.md
+    - HEOSpawn: HEOComponents/HEOSpawn.md
+    - HEOSpot: HEOComponents/HEOSpot.md
+    - HEOTextPlane: HEOComponents/HEOTextPlane.md
+    - HEOUVScroller: HEOComponents/HEOUVScroller.md
+    - HEOVideoTrigger: HEOComponents/HEOVideoTrigger.md
+    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
 - Actions: 
-    #- ActionNodeGraph: Unity/ActionNodeGraph.md #整備のために一旦取り下げ
-    - Actions Overview: Unity/ActionsOverview.md
-    - Openweb: Unity/Openweb.md
-    - Play/StopItem: Unity/PlayStopItem.md
-    - Show/HideItem: Unity/ShowHideItem.md
-    - Play/StopObject: Unity/PlayStopObject.md
-    - Show/HideObject: Unity/ShowHideObject.md
-    - Show/HideNode: Unity/ShowHideNode.md
-    - Enable/DisableClickableNode: Unity/EnableDisableClickableNode.md
-    - Enable/DisableCollider: Unity/EnableDisableCollider.md
-    - Wait: Unity/Wait.md
-    - SetPosRelativePlayer: Unity/SetPosRelativePlayer.md
-    - MoveTo: Unity/MoveTo.md
-    - Random: Unity/Random.md
-    - Warp: Unity/Warp.md
-    - JumpWorld: Unity/JumpWorld.md
-    - Emote: Unity/Emote.md
-    - Motion: Unity/Motion.md
-    - NextMotion: Unity/NextMotion.md
-    - AddVar: Unity/AddVar.md
-    - SetVar: Unity/SetVar.md
-    - If A == B: Unity/IfEqual.md
-    - If A != B: Unity/IfNotEqual.md
-    - If A >= B: Unity/IfGreaterThanOrEqual.md
-    - If A <= B: Unity/IfLessThanOrEqual.md
-    - StopVideo: Unity/StopVideo.md
-    - SetCookieText: Unity/SetCookieText.md
-    - OpenComicViewer: Unity/OpenComicViewer.md
-    - ShowLayer: Unity/ShowLayer.md
-    - CallJavaScript: Unity/CallJavaScript.md
-    - Enter/LeaveVoiceGroup: Unity/EnterLeaveVoiceGroup.md
-    - WhiteOut/In: Unity/WhiteOutIn.md
-    - FadeOut/In: Unity/FadeOutIn.md
+    #- ActionNodeGraph: Actions/ActionNodeGraph.md #整備のために一旦取り下げ
+    - Actions Overview: Actions/ActionsOverview.md
+    - System:
+      - Openweb: Actions/System/Openweb.md
+      - StopVideo: Actions/System/StopVideo.md
+      - Wait: Actions/System/Wait.md
+      - Warp: Actions/System/Warp.md
+      - Enter/LeaveVoiceGroup: Actions/System/EnterLeaveVoiceGroup.md
+      - WhiteOut/In: Actions/System/WhiteOutIn.md
+      - FadeOut/In: Actions/System/FadeOutIn.md
+      #- OpenComicViewer: Actions/System/OpenComicViewer.md #現バージョンでは使用できないため除外
+    - Node:
+      - Show/HideNode: Actions/Node/ShowHideNode.md
+      - Enable/DisableClickableNode: Actions/Node/EnableDisableClickableNode.md
+      - Enable/DisableCollider: Actions/Node/EnableDisableCollider.md
+    - Item:
+      - Play/StopItem: Actions/Item/PlayStopItem.md
+      - Show/HideItem: Actions/Item/ShowHideItem.md
+      - SetPosRelativePlayer: Actions/Item/SetPosRelativePlayer.md
+      - MoveTo: Actions/Item/MoveTo.md
+    - Avatar:
+      - Play/StopObject: Actions/Avatar/PlayStopObject.md
+      - Show/HideObject: Actions/Avatar/ShowHideObject.md
+      - Emote: Actions/Avatar/Emote.md
+      - Motion: Actions/Avatar/Motion.md
+      - NextMotion: Actions/Avatar//NextMotion.md
+    - Physics:
+      - AddVelocity: Actions/Physics/PhysicsAddVelocity.md
+      - Add / ClearForce: Actions/Physics/PhysicsClearAddForce.md
+      - SetPhysicsEnable: Actions/Physics/PhysicsSetEnable.md
+      - SetPosition / Rotation: Actions/Physics/PhysicsSetPosRot.md
+    - Programmatic:
+      - AddVar: Actions/Programmatic/AddVar.md
+      - SetVar: Actions/Programmatic/SetVar.md
+      - If A == B: Actions/Programmatic/IfEqual.md
+      - If A != B: Actions/Programmatic/IfNotEqual.md
+      - If A >= B: Actions/Programmatic/IfGreaterThanOrEqual.md
+      - If A <= B: Actions/Programmatic/IfLessThanOrEqual.md
+      - Random: Actions/Programmatic/Random.md
+      - SetCookieText: Actions/Programmatic/SetCookieText.md
+      - CallScript: Actions/Programmatic/CallScript.md
 - HeliScript:
     - Built-in Types:
         - Basic Types: hs/hs_var.md
@@ -250,7 +293,6 @@ nav:
         - Math: hs/hs_system_function_math.md
         - Network: hs/hs_system_function_net.md
         - NamePlate: hs/hs_system_function_nameplate.md
-        - JavaScript: hs/hs_system_function_js.md
         - GUI: hs/hs_system_function_gui.md
         - TextChat: hs/hs_system_function_textchat.md
     - Statements and flow control:
@@ -261,12 +303,85 @@ nav:
     - OverView: heliport/heliport_overview.md
     - ChatGPT / useChatGpt: heliport/heliport_useChatGpt.md
 - Trouble shooting:
+    - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Build Error: troubleshooting/BuildError.md
     - Browser does not open: troubleshooting/BrowserNotOpen.md
+    - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
+    - Missing Components After Version Update: troubleshooting/MissingComponents.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
-- Change Log:
+- Release Note:
+    - About Release Note: releasenote/AboutReleasenote.md
+    - v9.x:
+        - v9.3: releasenote/releasenote-9.3.md
+        - v9.2: releasenote/releasenote-9.2.md
+        - v9.1: releasenote/releasenote-9.1.md
+        - v9.0: releasenote/releasenote-9.0.md
+    - v8.x:
+        - v8.2: releasenote/releasenote-8.2.md
+        - v8.1: releasenote/releasenote-8.1.md
+        - v8.0: releasenote/releasenote-8.0.md
+    - v7.x:
+        - v7.3: releasenote/releasenote-7.3.md
+        - v7.2: releasenote/releasenote-7.2.md
+        - v7.1: releasenote/releasenote-7.1.md
+        - v7.0: releasenote/releasenote-7.0.md
+    - v6.x:
+        - v6.4: releasenote/releasenote-6.4.md
+        - v6.3: releasenote/releasenote-6.3.md
+        - v6.2: releasenote/releasenote-6.2.md
+        - v6.1: releasenote/releasenote-6.1.md
+        - v6.0: releasenote/releasenote-6.0.md
     - v5.x:
+        - v5.5: releasenote/releasenote-5.5.md
+        - v5.4: releasenote/releasenote-5.4.md
+        - v5.3: releasenote/releasenote-5.3.md
+        - v5.2: releasenote/releasenote-5.2.md
+        - v5.1: releasenote/releasenote-5.1.md
+        - v5.0: releasenote/releasenote-5.0.md
+    - v4.x:
+        - v4.8: releasenote/releasenote-4.8.md
+        - v4.7: releasenote/releasenote-4.7.md
+        - v4.6: releasenote/releasenote-4.6.md
+        - v4.5: releasenote/releasenote-4.5.md
+        - v4.4: releasenote/releasenote-4.4.md
+        - v4.3: releasenote/releasenote-4.3.md
+        - v4.2: releasenote/releasenote-4.2.md
+        - v4.1: releasenote/releasenote-4.1.md
+        - v4.0: releasenote/releasenote-4.0.md
+    - v3.x:
+        - v3.9: releasenote/releasenote-3.9.md  
+        - v3.8: releasenote/releasenote-3.8.md
+        - v3.7: releasenote/releasenote-3.7.md
+        - v3.6: releasenote/releasenote-3.6.md
+        - v3.5: releasenote/releasenote-3.5.md
+        - v3.4: releasenote/releasenote-3.4.md
+        - v3.3: releasenote/releasenote-3.3.md
+        - v3.2: releasenote/releasenote-3.2.md
+- Change Log:
+    - About Changelog: changelog/AboutChangelog.md
+    - v9.x:
+        - v9.3: changelog/changelog-9.3.md
+        - v9.2: changelog/changelog-9.2.md
+        - v9.1: changelog/changelog-9.1.md
+        - v9.0: changelog/changelog-9.0.md
+    - v8.x:
+        - v8.2: changelog/changelog-8.2.md
+        - v8.1: changelog/changelog-8.1.md
+        - v8.0: changelog/changelog-8.0.md
+    - v7.x:
+        - v7.3: changelog/changelog-7.3.md
+        - v7.2: changelog/changelog-7.2.md
+        - v7.1: changelog/changelog-7.1.md
+        - v7.0: changelog/changelog-7.0.md
+    - v6.x:
+        - v6.4: changelog/changelog-6.4.md
+        - v6.3: changelog/changelog-6.3.md
+        - v6.2: changelog/changelog-6.2.md
+        - v6.1: changelog/changelog-6.1.md
+        - v6.0: changelog/changelog-6.0.md
+    - v5.x:
+        - v5.5: changelog/changelog-5.5.md
         - v5.4: changelog/changelog-5.4.md
         - v5.3: changelog/changelog-5.3.md
         - v5.2: changelog/changelog-5.2.md
