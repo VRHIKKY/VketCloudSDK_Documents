@@ -12,6 +12,8 @@
 
 # 変更されたページ
 - VketCloudSDKについて
+    - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
+        - インストールウィザード及びVersion Managerの使用方法を追加
     - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/AboutVketCloudSDK/SetupAvatar.html)
         - アバターの使用方法を現行版に更新
 - ワールド制作ガイド
@@ -53,7 +55,7 @@
     - [HeliScript/組み込み関数 - ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function_net.html)
     - [HeliScript/組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function_gui.html)
         - 現バージョンにて使用できる関数を反映
-   
+
 # 削除されたページ
 - 自動テクスチャ圧縮
 - アクション
