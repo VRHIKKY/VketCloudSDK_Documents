@@ -4,6 +4,8 @@
 - [HeliScript/Built-in functions - Physics](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_physics.html)
 
 # Edited Pages
+- [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupSDK_external.html)
+    - Added instructions on how to use the install wizard / version manager
 - [HeliScript/Built-in functions - network](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_net.html)
     - Updated methods useable on current version
 - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function.html)
