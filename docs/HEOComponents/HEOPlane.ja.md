@@ -25,5 +25,5 @@ HEOPlaneは、画像ファイルをインスタンス生成する機能です。
     本機能については今後のアップデートで使い方が更新される予定です。
 
 !!! note
-    Ver9.0以前の`Billboard`設定は`Look at Camera`に名称が変更されました。<br>
+    Ver9.3以前の`Billboard`設定は`Look at Camera`に名称が変更されました。<br>
     以前のSDKバージョンからシーンデータを移植した場合、`Billboard`の設定は`Look at Camera`に引き継がれます。

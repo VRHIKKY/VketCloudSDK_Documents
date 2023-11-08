@@ -16,5 +16,5 @@ If you are new to Vket Cloud, please try the following.
 4. **[Login to the SDK](AboutVketCloudSDK/LoginSDK.md)**
 
 !!! note
-    The updates on each VketCloudSDK version can be checked in the [Release Note](releasenote/releasenote-5.4.md).<br>
-    For checking the version updates of this manual, refer to the [Change Log](changelog/changelog-5.4.md).
+    The updates on each VketCloudSDK version can be checked in the [Release Note](releasenote/releasenote-9.3.md).<br>
+    For checking the version updates of this manual, refer to the [Change Log](changelog/changelog-9.3.md).
