@@ -17,6 +17,10 @@
 `void hsSystemWriteLine(string text)`
 引数で指定した文字列をコンソールに出力し、最後に改行を出力する。
 
+!!! note caution
+    現バージョンにおいて、文字列にアポストロフィ / シングルクォート( ' ' , U+0027)を含めると動作が停止するエラーが確認されております。<br>
+    恐れ入りますが、文字列では同記号の使用を避けるようお願い致します。
+
 ### hsSystemIsDebugMode
 `bool hsSystemIsDebugMode()`
 

@@ -11,7 +11,9 @@ string internally stores string data as UTF-8 bytes. Use the Length() method to 
 ## Mutable strings
 HeliScript strings are mutable. You can rewrite the contents of the string by specifying the index with "[]" or by methods such as Append().
 
-
+!!! note caution
+    In the current version, if a string includes an apostrophe / single quote (' ' , U+0027), the process will stop due to error.<br>
+    Therefore, please avoid using the quotation within strings.
 
 
 ## string methods

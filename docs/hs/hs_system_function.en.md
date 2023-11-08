@@ -16,6 +16,9 @@ Outputs the string specified by the argument to the console.
 
 Outputs the string specified by the argument to the console, added with a return.
 
+!!! note caution
+    In the current version, if a string includes an apostrophe / single quote (' ' , U+0027), the process will stop due to error.<br>
+    Therefore, please avoid using the quotation within strings.
 
 ### hsSystemIsDebugMode
 `bool hsSystemIsDebugMode()`
