@@ -12,6 +12,8 @@
 
 # Edited Pages
 - About VketCloudSDK
+    - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupSDK_external.html)
+        - Added instructions on how to use the install wizard / version manager
     - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupAvatar.html)
         - Updated instructions on adding avatars
 - World Making Guide
@@ -50,7 +52,7 @@
     - [HeliScript/Built-in functions - network](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_net.html)
     - [HeliScript/Built-in functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_gui.html)
         - Updated methods useable on current version
-   
+
 # Deleted Pages
 - Auto Texture Compression
 - Actions
