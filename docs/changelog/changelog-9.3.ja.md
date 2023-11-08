@@ -43,6 +43,9 @@
     - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/Actions/Programmatic/CallScript.html)
         - 画像をVer9.3仕様に差し替え
 - HeliScript
+    - [HeliScript/文字列(String)](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_string.html)
+    - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function.html)
+        - 文字列におけるアポストロフィ / シングルクォートの使用について不具合を記載
     - [HeliScript/Vector3クラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_struct_vector3.html)
     - [HeliScript/Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_class_player.html)
     - [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_class_item.html)

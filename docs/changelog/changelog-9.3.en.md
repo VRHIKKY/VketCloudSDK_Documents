@@ -43,6 +43,9 @@
     - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/Actions/Programmatic/CallScript.html)
         - Replaced image to match Ver9.3
 - HeliScript
+    - [HeliScript/String](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_string.html)
+    - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function.html)
+        - Added caution on using apostrophe / single quotations in strings
     - [HeliScript/Vector3](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_struct_vector3.html)
     - [HeliScript/Player](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_class_player.html)
     - [HeliScript/Item](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_class_item.html)
