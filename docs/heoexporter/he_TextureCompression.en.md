@@ -23,20 +23,20 @@ However, python2 is not guaranteed to run, therefore installing a newer version 
 
 ## Creating Compressed Texture Files
 
-When you export an .heo file through the HEOExporter, you'll see .bat files named "yourHEOfilename_pvrtc.bat", "yourHEOfilename_etc2.bat", "yourHEOfilename_astc.bat", and "yourHEOfilename_dxt.bat".<br>
+When you export an .heo file through the HEOExporter, you'll see .bat files named "yourHEOfilename_etc2.bat" and "yourHEOfilename_astc.bat".<br>
 Inside the files, you might see something like the following.
 
 ```
-md tex_pvrtc
-del tex_pvrtc\*.pvr
-PVRTexToolCLI.exe -i tex_sample\000__Junkinbox_BaseColor.png -o tex_pvrtc\000.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\001__Junkinbox_Normal.png -o tex_pvrtc\001.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\002_junkinbox_Glass_BaseColor.png -o tex_pvrtc\002.pvr -m 16 -f PVRTC1_4,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\003_junkinbox_Glass_Emissive.png -o tex_pvrtc\003.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
+md tex_astc
+del tex_astc\*.pvr
+PVRTexToolCLI.exe -i tex_sample\000__Junkinbox_BaseColor.png -o tex_astc\000.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\001__Junkinbox_Normal.png -o tex_astc\001.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\002_junkinbox_Glass_BaseColor.png -o tex_astc\002.pvr -m 16 -f ASTC1_4,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\003_junkinbox_Glass_Emissive.png -o tex_astc\003.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
 echo skip tex_sample\004_junkinbox_Glass_Roughness.png
-PVRTexToolCLI.exe -i tex_sample\005_Cutout_BaseColor.png -o tex_pvrtc\005.pvr -m 16 -f PVRTC1_4,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\006_buy_button_color.png -o tex_pvrtc\006.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\007_tweet_button_color.png -o tex_pvrtc\007.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\005_Cutout_BaseColor.png -o tex_astc\005.pvr -m 16 -f ASTC1_4,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\006_buy_button_color.png -o tex_astc\006.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\007_tweet_button_color.png -o tex_astc\007.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
 pause
 ```
 If you see any lines that start with "echo skip," it means that the texture failed to compress. To fix this, open the tex_sample folder and check your image data.
@@ -46,10 +46,10 @@ If you see any lines that start with "echo skip," it means that the texture fail
 Right click around on your file explorer to add the "resolution" and "bit depth" categories. <br> Then, make sure that the resolution is at the power of two and not too big (Like 4k), and the bit depth is 24 or 32.
 Try exporting again if you've been able to fix them, and check for echo skips.
 
-Once you're satisfied, double click the .bat files to execute it. Folders named tex_pvrtc, tex_etc, tex_astc, and tex_dxt will be created, and the compressed files will be in them.
+Once you're satisfied, double click the .bat files to execute it. Folders named tex_etc and tex_astc will be created, and the compressed files will be in them.
 
 Note:
-If you're using Reflection Probes, additional folders named "tex_reflection_cube_pvrtc", "tex_reflection_cube_etc", "tex_reflection_cube_astc", and "tex_reflection_cube_dxt" will be created.
+If you're using Reflection Probes, additional folders named "tex_reflection_cube_etc" and "tex_reflection_cube_astc" will be created.
 
 !!! note caution
     If the Windows user names contains a 2-byte character (e.g. Japanese characters),   
@@ -81,9 +81,10 @@ The numbers before it would be the number of files in PVRTC/ETC/ASTC/DXT.
 This updates the HEO file to contain references to the compressed textures.
 
 !!! note
-    As PVRTC conversion has been terminated by version updates, the HEOTexComp result may have a 0 on the top, which is not an error.
+    As PVRTC and DXT conversion has been deprecated by version updates, the HEOTexComp result may have a 0 on the top and end, which is not an error.
+    Although files from older SDK projects may contain the batch files for the deprecated conversions, it is safe to delete them and proceed with the texture compression.
 
-    ExistTextureCompression 0 5 5 5
+    ExistTextureCompression 0 5 5 0
 
 !!! note
-    As DXT compression may cause the color appearance to look odd in Windows, if that case happens please avoid using DXT compression.
+    As DXT conversion may cause the color appearance to look odd in Windows, if that case happens please avoid using DXT conversion.

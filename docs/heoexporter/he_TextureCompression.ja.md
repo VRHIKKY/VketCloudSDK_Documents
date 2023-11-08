@@ -19,18 +19,18 @@ HEOExporterで出力後にテクスチャ圧縮の作業をおこなう必要が
 ただし、python2は動作保証ができないため、その場合は最新のpythonを導入します。
 
 ## 圧縮テクスチャファイル作成
-HEOExporterでHEOファイルを出力すると、同フォルダに「HEOファイル名_pvrtc.bat」「HEOファイル名_etc2.bat」「HEOファイル名_astc.bat」「HEOファイル名_dxt.bat」というバッチファイルが出力されます。中身を見ると、
+HEOExporterでHEOファイルを出力すると、同フォルダに「HEOファイル名_etc2.bat」「HEOファイル名_astc.bat」というバッチファイルが出力されます。中身を見ると、
 ```
-md tex_pvrtc
-del tex_pvrtc\*.pvr
-PVRTexToolCLI.exe -i tex_sample\000__Junkinbox_BaseColor.png -o tex_pvrtc\000.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\001__Junkinbox_Normal.png -o tex_pvrtc\001.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\002_junkinbox_Glass_BaseColor.png -o tex_pvrtc\002.pvr -m 16 -f PVRTC1_4,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\003_junkinbox_Glass_Emissive.png -o tex_pvrtc\003.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
+md tex_astc
+del tex_astc\*.pvr
+PVRTexToolCLI.exe -i tex_sample\000__Junkinbox_BaseColor.png -o tex_astc\000.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\001__Junkinbox_Normal.png -o tex_astc\001.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\002_junkinbox_Glass_BaseColor.png -o tex_astc\002.pvr -m 16 -f ASTC1_4,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\003_junkinbox_Glass_Emissive.png -o tex_astc\003.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
 echo skip tex_sample\004_junkinbox_Glass_Roughness.png
-PVRTexToolCLI.exe -i tex_sample\005_Cutout_BaseColor.png -o tex_pvrtc\005.pvr -m 16 -f PVRTC1_4,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\006_buy_button_color.png -o tex_pvrtc\006.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\007_tweet_button_color.png -o tex_pvrtc\007.pvr -m 16 -f PVRTC1_4_RGB,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\005_Cutout_BaseColor.png -o tex_astc\005.pvr -m 16 -f ASTC1_4,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\006_buy_button_color.png -o tex_astc\006.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
+PVRTexToolCLI.exe -i tex_sample\007_tweet_button_color.png -o tex_astc\007.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
 pause
 ```
 このような内容になっていますが、「echo skip」で始まる行がある場合はそのテクスチャが圧縮対象から外れていることになりますので、念のため内容を確認します。tex_sampleフォルダに画像が入っているので、エクスプローラの詳細で一覧表示します。
@@ -41,9 +41,9 @@ pause
 
 修正ができそうな場合はUnityにてテクスチャを修正したものを再度エクスポートしてください。
 
-もう一度バッチファイルの中身を確認し、問題なければこのバッチファイルをダブルクリックして実行します。すると「tex_pvrtc」「tex_etc」「tex_astc」「tex_dxt」というフォルダが作成され、「tex_sample」フォルダ内にあるテクスチャを読み込んで圧縮変換されたファイルがその中に作成されます。
+もう一度バッチファイルの中身を確認し、問題なければこのバッチファイルをダブルクリックして実行します。すると「tex_etc」「tex_astc」というフォルダが作成され、「tex_sample」フォルダ内にあるテクスチャを読み込んで圧縮変換されたファイルがその中に作成されます。
 
-※リフレクションプローブを使用する場合、追加で「tex_reflection_cube_pvrtc」「tex_reflection_cube_etc」「tex_reflection_cube_astc」「tex_reflection_cube_dxt」というフォルダが作成されます。
+※リフレクションプローブを使用する場合、追加で「tex_reflection_cube_etc」「tex_reflection_cube_astc」というフォルダが作成されます。
 
 !!! note caution
     Windowsのユーザ名に2バイト文字（日本語など）が含まれている場合かつ、
@@ -75,10 +75,11 @@ Succeeded
 これによりHEOファイル内に圧縮テクスチャが存在するかどうかのフラグが書き込まれます。
 
 !!! note
-    バージョンアップによってpvrtc変換が廃止されたため、以下のようにHEOTexCompの結果で先頭が０になりますが、こちらは正常な挙動です。
+    バージョンアップによってpvrtc変換及びdxt変換が廃止されたため、以下のようにHEOTexCompの結果で先頭及び末尾が０になりますが、こちらは正常な挙動です。<br>
+    旧SDKバージョンのプロジェクトからファイルを移植した際に同変換のバッチファイルが混ざる場合がありますが、削除した上でテクスチャ圧縮を行っても問題ございません。
 
-    ExistTextureCompression 0 5 5 5
+    ExistTextureCompression 0 5 5 0
 
 !!! note
-    ごく稀にWindows向けのDXT圧縮で見た目の色合いが変になる場合があります。<br>
-    該当の現象が発生する場合はDXT圧縮を使用しなくても問題ございません。
+    ごく稀にWindows向けのDXT変換で見た目の色合いが変になる場合があります。<br>
+    該当の現象が発生する場合はDXT変換を使用しなくても問題ございません。

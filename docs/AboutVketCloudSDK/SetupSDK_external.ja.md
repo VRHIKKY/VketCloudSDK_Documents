@@ -1,15 +1,16 @@
 
 # VketCloudSDKの導入方法
 
-VketCloudSDKをインストールするには、UnityのPackage Managerを使用します。  
+VketCloudSDKをインストールするには、はじめにUnityのPackage Managerを使用し、SDKインストールウィザードを導入します。  
 
 ## Step 1. Unityでプロジェクトを開く  
 対応しているバージョン（[動作環境](OperatingEnvironment.md){target=_blank}）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。      
 
 !!! note caution
-    プロジェクト名にスペースを入れるとビルドに失敗する場合があります。
+    プロジェクト名にスペースを入れるとビルドに失敗する場合があります。<br>
+    また、日本語など2バイト文字の使用も避けることをおすすめします。
 
-    OK例) MyProject　　NG例) My Project  
+    OK例) MyProject　　NG例) My Project , マイ　プロジェクト
 
 ---
 
@@ -18,29 +19,95 @@ Unityのメニュー Edit > Project Settings から「Project Settings」ウィ�
   
 |  項目  |  値  |
 | ---- | ---- |
-|  Name  |  VketCloudSDK  |
-|  URL  |  https://registry.npmjs.com  |
-|  Scope(s)  |  com.hikky.vketcloudsdk  |  
+| Name | VketCloudSDK Install Wizard |
+| URL | https://registry.npmjs.com |
+| Scope(s) | com.hikky.vketcloudsdk-install-wizard |  
 
    ![Package](img/package.jpg)
+
   最後に「Save」ボタンを押して設定内容を保存します。
 
 ---
 
-## Step 3. UPMよりSDKパッケージをインストール
+## Step 3. Unity Package ManagerよりSDKインストールウィザードをインストール
 Unityのメニュー Window > Package Manager から「Packages」ウィンドウを開きます。ウィンドウ上部のドロップダウンより「My Registries」を選択します。
 
    ![registry](img/registry.jpg)
 
-表示されたリスト内から VketCloudSDK を選択し、「Install」ボタンを押してインストールを開始します。<br>
-デフォルトでは最新のSDKバージョンがインストールされますが、特定のバージョンを導入したい場合は以下の手順に従ってバージョンを選択してください。  
+表示されたリスト内から VketCloudSDK Install Wizard を選択し、「Install」ボタンを押してインストールを開始します。<br>
 
-Unityのメニューに「VketCloudSDK」の項目が追加されていれば導入は完了です。  
+Unityに以下のインストールウィザード画面とメニュー表示がされれば導入は完了です。
 
-   ![header](img/header.jpg)
+![InstallationWizard_Window](img/InstallationWizard_Window.jpg)
 
-## 任意のバージョンの導入・既存バージョンSDKのアップデート
-特定のバージョンを導入したい、あるいは既存のSDKをアップデートしたい際はPackage Managerから選択するか、manifest.jsonの編集によってバージョンが切り替えできます。
+![InstallationWizard_Menu](img/InstallationWizard_Menu.jpg)
+
+## Step 4. インストールウィザードを使用してSDKをインストールする
+
+新規にSDKをインストールする際はSDKインストールウィザードを使用します。
+
+1\. Unityのメニューから SDK Installation Wizardを選択します。
+
+![InstallationWizard_Menu](img/InstallationWizard_Menu.jpg)
+
+    インストールウィザードを開くと、以下の画面が起動します。
+
+![InstallationWizard_Window](img/InstallationWizard_Window.jpg)
+
+2\. 「次へ」ボタンを押して、言語設定画面に移動します。言語設定画面でWizard内で使用する言語を設定できます。
+
+![InstallationWizard_2_jp](img/InstallationWizard_2_jp.jpg)
+
+3\. VketCloud SDKの初期設定をガイドする画面です。主に三つの設定を完了させてください。<br>初期設定しないことも可能ですが、その場合、SDKの動作保証はできません。
+
+![InstallationWizard_3_jp](img/InstallationWizard_3_jp.jpg)
+
+4\. 設定が完了されるとそれぞれの設定項目の左にチェックマークが表示されます。<br>設定されない状態で「次へ」ボタンを押すと以下警告画面が表示されます。
+
+![InstallationWizard_4_jp](img/InstallationWizard_4_jp.jpg)
+
+5\.「次へ」ボタンを押すと、バージョン選択画面が表示されます。<br>安定版、最新版、バージョンアーカイブからバージョンを選択できます。
+
+!!! note caution
+    バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
+
+![InstallationWizard_5_jp](img/InstallationWizard_5_jp.jpg)
+
+6\. バージョンを選択し、インストールボタンを押すとパッケージのインポートが開始します。
+
+![InstallationWizard_6_jp](img/InstallationWizard_6_jp.jpg)
+
+7\.　およそ２～５分待つと、インストールが完了して以下の画面が表示されます。この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。
+
+![InstallationWizard_7_jp](img/InstallationWizard_7_jp.jpg)
+
+# 任意のバージョンの導入・既存バージョンSDKのアップデート
+
+既にSDKを導入しているプロジェクトについては、SDK Version Managerを使用してバージョンの切り替え・アップデートが可能です。<br>
+また、以前のSDKバージョンのようにPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えも引き続き利用可能です。
+
+## SDK Version Managerによるバージョン切り替え
+
+1\. VketCloudSDK_Wizard > SDK Version Managerを押して、バージョン選択画面が表示されます。
+
+![SDKVersionManager_1](img/SDKVersionManager_1.jpg)
+
+2\. バージョン選択画面でバージョンを選択し、インストールボタンを押してください。
+
+!!! note caution
+    バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
+
+![InstallationWizard_5_jp](img/InstallationWizard_5_jp.jpg)
+
+3\. インストールボタンを押すと、インポート画面に移動します。
+
+![SDKVersionManager_3_jp](img/SDKVersionManager_3_jp.jpg)
+
+4\. インストールが完了すると、バージョン選択完了画面が表示されます。
+
+![SDKVersionManager_4_jp](img/SDKVersionManager_4_jp.jpg)
+
+この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。
 
 !!! note caution
       既存のSDKのバージョンアップを行う際、アップデート後にComponentが欠落する現象が確認されています。<br>
@@ -67,11 +134,12 @@ Package Managerではレジストリ表示を"My Registries"に切り替え、Vk
 
 ![SetupSDK_ManifestJson_2](./img/SetupSDK_ManifestJson_2.jpg)
 
-,anifest.json内の`"com.hikky.vketcloudsdk"`の右側を使用したいバージョンに書き換えると、インストール時(インストール済みの場合は読み込み時)のバージョンが切り替わります。
+manifest.json内の`"com.hikky.vketcloudsdk"`の右側を使用したいバージョンに書き換えると、インストール時(インストール済みの場合は読み込み時)のバージョンが切り替わります。
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! note
+
+!!! note caution
       UnityのメニューにVketCloudSDKが表示されない場合は、再起動すると表示される場合があります。<br>
       上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
       
