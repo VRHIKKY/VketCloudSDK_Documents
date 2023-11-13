@@ -122,6 +122,15 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `Avatar Files` | Vketchan_v1.6_Mtoon_blendshape | アバター情報をまとめたアバターファイルを指定します。アバターファイルについては、[こちら](../WorldMakingGuide/AvatarFile.md)をご覧ください。 |
 | `CreateAvatarFile` | | 新規のアバターファイルを生成します。 |
 
+!!! note caution
+    HEOWorldSetting > Avatars > Avatar Fileにて空欄がある、Avatar Fileが1つも設定されていない場合はビルドエラーが発生したり初期状態のアバターが表示されない状態となります。
+
+![HEOWorldSetting_AvatarFileError_1](../troubleshooting/img/HEOWorldSetting_AvatarFileError_1.jpg)
+
+SDKでは初期状態のアバターとして用意しているAvatarFileがあるため、バージョンアップ後に空欄が発生している際はこちらをご利用ください。
+
+![HEOWorldSetting_AvatarFileError_2](../troubleshooting/img/HEOWorldSetting_AvatarFileError_2.jpg)
+
 ---
 
 ## マイアバター設定
