@@ -25,9 +25,17 @@ The components listed below may potentially be shown as missing:
 - HEO UV Scroller
 
 !!! note caution
-    When updating from Ver5.4 to Ver9.3, there is a risk that the HEOWorldSetting > Avatars > Avatar File settings may be missing, so please make a backup before doing this as well.
+    When updating from Ver5.4 to Ver9.3, the HEOWorldSetting > Avatars > Avatar File settings may be missing, set the file by the procedure below on such occasion.
 
-## Version Information Not Updated on Settings Window
+If the HEOWorldSetting > Avatars > Avatar File settings is empty, or has no contents, it may lead to build errors or no avatars displayed on default.<br>
+
+![HEOWorldSetting_AvatarFileError_1](img/HEOWorldSetting_AvatarFileError_1.jpg)
+
+As the SDK has a default avatarfile, select this file if there is an empty entry in the list after switching the version.
+
+![HEOWorldSetting_AvatarFileError_2](img/HEOWorldSetting_AvatarFileError_2.jpg)
+
+## Version Information Not Updated on Settings Window / HeliScript and Gimmick not working
 
 After updating an existing project to Ver9.3, the version information on the bottom right of the settings window may remain to be the older version after build.
 
@@ -36,3 +44,7 @@ After updating an existing project to Ver9.3, the version information on the bot
 This can be solved by clearing the cache by VketCloudSDK > Clear Cache.
 
 ![VersionUpdateTroubleshooting_3](./img/VersionUpdateTroubleshooting_3.jpg)
+
+!!! note caution
+    HeliScript/gimmicks may not work due to browser cache after version switching.<br>
+    If such issue happens, try clearing the browser cache.
