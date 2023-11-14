@@ -137,7 +137,7 @@ plugins:
           Browser window blackouts: ブラウザウィンドウが暗転したまま動かない
           Changes are not applied: 変更が更新されない
           World URL does not open the world: ワールドURLを使用してワールドが開けない
-          Missing Components After Version Update: バージョンアップ後にComponentがMissingとして表示される
+          Version Update Troubleshooting: バージョンアップ後によくあるトラブル
           Private room indication disappears on reloading the world check page: アップロードしたワールドの確認時にリロードするとPrivateの表記が消える
           First Step: ワールド制作の基本
           Change Log: チェンジログ
@@ -300,7 +300,7 @@ nav:
     - Browser does not open: troubleshooting/BrowserNotOpen.md
     - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Missing Components After Version Update: troubleshooting/MissingComponents.md
+    - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
     - World URL does not open the world: troubleshooting/URLError.md
     - Private room indication disappears on reloading the world check page: troubleshooting/PrivateDisappear.md

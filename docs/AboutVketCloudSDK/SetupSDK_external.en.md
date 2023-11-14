@@ -1,6 +1,6 @@
-# How to install VketCloud SDK
+# How to install VketCloudSDK
 
-To install VketCloud SDK, you need to use the Package Manager of Unity.
+To install the VketCloudSDK, the Unity Package Manager and the VketCloudSDK install wizard is required.
   
 ---
 ### Step 1. Open a project in Unity
@@ -8,46 +8,136 @@ Open a project of a supported version ([Unity Pre-prep](OperatingEnvironment.md)
 Select "3D" as the template, if you need one.
 
 !!! note caution
-If you put a space in the project name, the build may fail.
-OK) MyProject NG) My Project
+    If you put a space in the project name, it may cause build failures and other issues. <br>
+    We advise to avoid using full-width characters such as CJK characters.
+
+    OK) MyProject NG) My Project , マイ　プロジェクト
 
 ---
 ### Step 2. Register Registry information
+
+!!! note caution
+    On the release of Version 9.3, the SDK installation registry has been changed to the install wizard.<br>
+    If you want to install the install wizard on an existing project, you **must** create a new registry by selecting "+", and **do not overwrite** the existing SDK registry.<br>
+    After installing the install wizard, proceed to [Installing a specified version / Updating an existing SDK](#installing-a-specified-version-updating-an-existing-sdk).
+
+![SetupSDK_NewRegistry](img/SetupSDK_NewRegistry.jpg)
+
 Open the "Project Settings" window from the Unity menu Edit > Project Settings.
   
 Select "Package Manager" from the left tab in the window and describe as follows.
   
 | item | value |
 | ---- | ---- |
-| Name | VketCloud SDK |
-| URL | https://registry.npmjs.com |
-| Scope(s) | com.hikky.vketcloudsdk |
+| Name |VketCloudSDK Install Wizard|
+| URL |https://registry.npmjs.com|
+| Scope(s) |com.hikky.vketcloudsdk-install-wizard|  
 
-   ![Package](img/package.png)
+   ![Package](img/package.jpg)
   Finally, press the "Save" button to save the settings.
   
+!!! note
+    If the registry contains a space or any unneeded characters, the error below may appear.<br>
+    If the error appears, please check if a space is contained by mistake.
+
+![SetupSDK_RegistrySpaceError](img/SetupSDK_RegistrySpaceError.jpg)
+
 ---
-### Step 3. Install VketCloudSDK package from Package Manager
+### Step 3. Install the VketCloudSDK Install Wizard via Package Manager
   
 Open the "Packages" window from Unity's menu Window > Package Manager.
 
 Select "My Registries" from the dropdown at the top of the window.
 
-   ![registry](img/registry.png)
+   ![registry](img/registry.jpg)
 
-Select VketCloudSDK from the displayed list and press the “Install” button to start the installation.<br>
-As on default the latest SDK version will be installed, follow the instructions below if you want to [install a specified version](#installing-a-specified-version--updating-an-existing-sdk).
+Select the VketCloudSDK Install Wizard from the displayed list and press the “Install” button to start the installation.<br>
 
-Installation is complete if the item "VketCloudSDK" is added to the Unity menu.
+Installation is complete if the window and Unity menu is displayed as below:
 
-   ![header](img/header.png)
+![InstallationWizard_Window](img/InstallationWizard_Window.jpg)
+
+![InstallationWizard_Menu](img/InstallationWizard_Menu.jpg)
+
+## Step 4. Install the SDK using the Install wizard
+
+To install the SDK on a new project, use the SDK Install Wizard.
+
+1\. Select the SDK Installation Wizard on the Unity menu.
+
+![InstallationWizard_Menu](img/InstallationWizard_Menu.jpg)
+
+    By opening the Install Wizard, the window will appear as below.
+
+![InstallationWizard_Window](img/InstallationWizard_Window.jpg)
+
+2\. Select the "Next" button to select the preferred language. This language will be used throughout the Installation Wizard.
+
+![InstallationWizard_2_en](img/InstallationWizard_2_en.jpg)
+
+3\. The window for setting the recommended initial settings will appear. Complete all three settings to proceed.<br>  Although the recommended settings may be ignored, SDK functionality cannot be guaranteed in such case.
+
+![InstallationWizard_3_en](img/InstallationWizard_3_en.jpg)
+
+4\.  By finishing each setting, a check mark will appear on each article. <br>  By ignoring the settings and selecting the "Next" button, a window of warning will appear.
+
+![InstallationWizard_4_en](img/InstallationWizard_4_en.jpg)
+
+5\. By selecting "Next", the version selection window will appear.<br> The SDK version can be chosen from stable, latest, archive versions.
+
+!!! note caution
+    The archive versions are deprecated and planned to be unaccessible in the near future.<br>
+    Do not use these versions for setting up new world projects.
+
+![InstallationWizard_5_en](img/InstallationWizard_5_en.jpg)
+
+6\. After selecting version and proceeding by selecting the "install" button, the package import will begin.
+
+![InstallationWizard_6_en](img/InstallationWizard_6_en.jpg)
+
+7\.　After waiting approx. 2~5 minutes, the installation will be completed with the window below.<br>
+The SDK manual and community discord server can be accessed from this window.
+
+![InstallationWizard_7_en](img/InstallationWizard_7_en.jpg)
 
 ## Installing a specified version / Updating an existing SDK
-For installing a specified SDK version, or updating an existing SDK on project, switch the SDK version via the Package Manager or by editing manifest.json.
+
+For a project with an existing SDK, the SDK Version Manager can be used for switching and updating SDK versions.<br>
+
+### Version switch via SDK Version Manager
+
+1\. By selecting VketCloudSDK_Wizard > SDK Version Manager, the version selection window will appear.
+
+![SDKVersionManager_1](img/SDKVersionManager_1.jpg)
+
+2\. Select the new version to be installed, and press the "Install" button.
+
+!!! note caution
+    The archive versions are deprecated and planned to be unaccessible in the near future.<br>
+    Do not use these versions for setting up new world projects.
+
+![InstallationWizard_5_en](img/InstallationWizard_5_en.jpg)
+
+3\. By selecting the install button, the import window will appear as below.
+
+![SDKVersionManager_3_en](img/SDKVersionManager_3_en.jpg)
+
+4\. As the installation is completed, the version completion window will appear as below.
+
+![SDKVersionManager_4_en](img/SDKVersionManager_4_en.jpg)
+
+The SDK manual and community discord server can be accessed from this window.
 
 !!! note caution
       On updating an existing SDK, Components may be gone missing after the update.<br>
       We strongly recommend to take a backup of the pre-update project by duplicating files.
+
+!!! note caution
+    If issues such as build errors appear on updating the SDK, please refer to the page below:<br>
+    [Version Update Troubleshooting](../troubleshooting/VersionUpdateTroubleshooting.md)
+
+!!! note caution
+    The version switching methods below remains to be usable, using the version manager is recommended.
 
 ### Version switching via Package Manager
 
@@ -78,3 +168,11 @@ By editing the version number on the right side of `"com.hikky.vketcloudsdk"`, t
       If VketCloudSDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
       One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
       If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
+      
+      As the EditorTutorialSystem may also rarely fail to be imported automatically, add the package below following the instructions on [Step 2.](#step-2-register-registry-information) on such occurence.
+
+|  item  |  value  |
+| ---- | ---- |
+|  Name  |  EditorTutorialSystem  |
+|  URL  |  https://registry.npmjs.org  |
+|  Scope(s)  |  com.hikky.editortutorialsystem  |
