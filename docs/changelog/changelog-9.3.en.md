@@ -1,0 +1,54 @@
+# Added Pages
+
+# Edited Pages
+- About VketCloudSDK
+    - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupSDK_external.html)
+        - Added instructions on how to use the install wizard / version manager
+    - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupAvatar.html)
+        - Updated instructions on adding avatars
+- World Making Guide
+    - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/WorldMakingGuide/UnityGuidelines.html)
+        - Added note on placing objects with same names, which are not recommended
+    - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/WorldMakingGuide/AvatarFile.html)
+        - Updated settings and images
+- World Optimization
+    - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/heoexporter/he_TextureCompression.html)
+        - Deleted info of deprecated dxt conversion likewise former pvrtc conversion
+- HEO Components
+    - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/HEOComponents/HEOField.html)
+        - Added Settings including description for Look at Camera
+    - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/HEOComponents/HEOObject.html)
+        - Added settings such as shadow caster / receiver, foreground rendering, circle shadow, lookatcamera, etc.
+        - Added explanation on how to use object/motion preview
+    - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/HEOComponents/HEOPlane.html)
+        - Added settings (lookatcamera) and related descriptions
+    - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.3//HEOComponents/HEOPlayer.html)
+        - Added settings such as TPS Rotation, Jump Velocity, Move Speed, etc.
+    - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/HEOComponents/HEOTextPlane.html)
+        - Added settings (textalignment, charaspace, linespace, overflowwrap, lookatcamera) and related descriptions
+    - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/HEOComponents/HEOWorldSetting.html)
+        - Added specification/details on using gamepad
+        - Added explanation for setting up avatars
+        - Added Voice Attenuation, TPS Pitch Max Distance, and SpecularMipMapCount
+        - Deleted Multi Play Mode In Local Build Setting (In the current version, the world is multi play mode by default!)
+- Actions
+    - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/Actions/Programmatic/CallScript.html)
+        - Replaced image to match Ver9.3
+- HeliScript
+    - [HeliScript/String](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_string.html)
+    - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function.html)
+        - Added caution on using apostrophe / single quotations in strings
+    - [HeliScript/Vector3](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_struct_vector3.html)
+    - [HeliScript/Player](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_class_player.html)
+    - [HeliScript/Item](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_class_item.html)
+    - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function.html)
+    - [HeliScript/Built-in functions - network](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_net.html)
+    - [HeliScript/Built-in functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_gui.html)
+        - Updated methods useable on current version
+- Trouble shooting
+    - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/troubleshooting/VersionUpdateTroubleshooting.html)
+        - Changed page title
+        - Added information on settings that may reset on updating to Ver9.3
+        - Added solution for version information not updated on settings window
+
+# Deleted Pages
