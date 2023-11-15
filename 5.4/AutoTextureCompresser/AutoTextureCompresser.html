@@ -966,15 +966,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    2. 必要テクスチャの書き出し
+  <a href="#2-export-the-required-textures" class="md-nav__link">
+    2. Export the required textures
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    3. テクスチャ変換
+  <a href="#3-texture-conversion" class="md-nav__link">
+    3. Texture conversion
   </a>
   
 </li>
@@ -985,11 +985,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ui" class="md-nav__link">
-    UIのパラメータ説明
+  <a href="#ui-parameter-description" class="md-nav__link">
+    UI parameter description
   </a>
   
-    <nav class="md-nav" aria-label="UIのパラメータ説明">
+    <nav class="md-nav" aria-label="UI parameter description">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2925,8 +2925,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/MissingComponents.html" class="md-nav__link">
-        Missing Components After Version Update
+      <a href="../troubleshooting/VersionUpdateTroubleshooting.html" class="md-nav__link">
+        Version Update Troubleshooting
       </a>
     </li>
   
@@ -4039,15 +4039,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    2. 必要テクスチャの書き出し
+  <a href="#2-export-the-required-textures" class="md-nav__link">
+    2. Export the required textures
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    3. テクスチャ変換
+  <a href="#3-texture-conversion" class="md-nav__link">
+    3. Texture conversion
   </a>
   
 </li>
@@ -4058,11 +4058,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ui" class="md-nav__link">
-    UIのパラメータ説明
+  <a href="#ui-parameter-description" class="md-nav__link">
+    UI parameter description
   </a>
   
-    <nav class="md-nav" aria-label="UIのパラメータ説明">
+    <nav class="md-nav" aria-label="UI parameter description">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4105,85 +4105,87 @@
                 
                 
                 <h1 id="how-to-use-the-autotexturecompresser">How to Use the AutoTextureCompresser</h1>
+<p>Texture compression in VketCloud is done by using a 3rd party compression tool. Although the compression is processed by <a href="../heoexporter/he_TextureCompression.html">running batch files</a> with the "_astc", "_dxt" and "_etc" suffixes, this may be confusing for users unfamiliar with the process.<br>
+The Auto Texture Compresser is a tool aimed to automate the compression process.</p>
 <h2 id="how-to-use">How to Use</h2>
 <h3 id="1-install-tools">1. Install Tools</h3>
-<p>At First, please install <a href="https://developer.imaginationtech.com/pvrtextool/">PVRTexTool</a> and <a href="https://github.com/Microsoft/DirectXTex/wiki/ Texconv">TexConv</a>. TexConv can be found at the top of the page under "DOWNLOADS@LATEST" to install the files.</p>
-<p>また、ツールを実行するためには最新(Ver. 3.11以降)の<a href="https://www.python.org/downloads/">Pythonのインストール</a>が必要です。</p>
-<h3 id="2">2. 必要テクスチャの書き出し</h3>
-<p>テクスチャを圧縮するにあたって、メニューバーより<code>VketCloudSDK-&gt;BuildAndRun</code>を選択してreleaseフォルダ下に必要なテクスチャを書き出す必要があります。</p>
-<h3 id="3">3. テクスチャ変換</h3>
-<p>ツールバー上の「VketCloudSDK」から、AutoTextureCompresserを選択してください。<br></p>
+<p>First, please install <a href="https://developer.imaginationtech.com/pvrtextool/">PVRTexTool</a> and <a href="https://github.com/Microsoft/DirectXTex/wiki/Texconv">TexConv</a>. TexConv can be found at the top of the page under "DOWNLOADS@LATEST" to install the files.</p>
+<p>Also, in order to run the tool, the latest (Ver. 3.11 or later) <a href="https://www.python.org/downloads/">Python installation</a> is required.</p>
+<h3 id="2-export-the-required-textures">2. Export the required textures</h3>
+<p>To compress textures,  select <code>VketCloudSDK-&gt;BuildAndRun</code> from the menu bar and export the necessary textures under the release folder.</p>
+<h3 id="3-texture-conversion">3. Texture conversion</h3>
+<p>Select AutoTextureCompresser from "VketCloudSDK" on the toolbar. <br></p>
 <p><img alt="AutoTextureCompresser_1" src="img/AutoTextureCompresser_1.jpg" /></p>
-<p>下図のようなウィンドウが出てくるので、UIのパラメータに必要な項目を設定します。</p>
-<p>圧縮を行うために必要な手順は以下の通りです。</p>
+<p>A window like the one shown below will appear, so set the necessary items for the UI parameters.</p>
+<p>The steps required to perform compression are as follows:</p>
 <ol>
 <li>
-<p><strong>Python Alias for shell</strong> にpythonのエイリアス名を設定します。
-    エイリアスが設定されていない場合、Python Path(python.exeが置かれているファイル位置)の設定が必要です。</p>
+<p>Set the python alias name in <strong>Python Alias for shell</strong>.
+     If an alias is not set, you need to set the Python Path (file location where python.exe is located).</p>
 <p><img alt="AutoTextureCompresser_2" src="img/AutoTextureCompresser_2.jpg" /></p>
 </li>
 <li>
-<p><strong>PythonKeyword</strong>にpythonのバージョンを指定します。</p>
+<p>Specify the python version in <strong>PythonKeyword</strong>.</p>
 <p><img alt="AutoTextureCompresser_3" src="img/AutoTextureCompresser_3.jpg" /></p>
 </li>
 <li>
-<p><strong>CompressorLocation</strong>にHEOTexComp.pyのフォルダまでのフルパスを指定します。<br>見つからない場合はAssetsにて"HEOTexComp"と検索をかけ、出現したフォルダをエキスプローラから開いてパスを取得します。
-    <img alt="AutoTextureCompresser_4" src="img/AutoTextureCompresser_4.jpg" /></p>
+<p>Specify the full path to the HEOTexComp.py folder in <strong>CompressorLocation</strong>. <br>If you cannot find it, search for "HEOTexComp" in Assets and open the folder that appears from Explorer to get the path.
+     <img alt="AutoTextureCompresser_4" src="img/AutoTextureCompresser_4.jpg" /></p>
 </li>
 <li>
-<p><strong>OptimizerLocation</strong>にHEOSameTexOptimizer.pyのフォルダまでのフルパスを指定します。</p>
+<p>Specify the full path to the HEOSameTexOptimizer.py folder in <strong>OptimizerLocation</strong>.</p>
 <p><img alt="AutoTextureCompresser_5" src="img/AutoTextureCompresser_5.jpg" /></p>
 </li>
 <li>
-<p><strong>BuildPath</strong>にVketCloudSDKでビルドしたreleaseフォルダまでのパスを指定します。</p>
+<p>Specify the path to the release folder built with VketCloudSDK in <strong>BuildPath</strong>.</p>
 <p><img alt="AutoTextureCompresser_6" src="img/AutoTextureCompresser_6.jpg" /></p>
 </li>
 </ol>
 <div class="admonition note caution">
-<p class="admonition-title">Note<p>Ver4.8 / Ver5.4では初期値にJRWorldという文字列が混じっているため、該当の文字列を削除した上でのツールの使用をお願いいたします。
-本不具合は次回のアップデートで修正される予定です。</p>
+<p class="admonition-title">Note<p>In Ver4.8 / Ver5.4, the string JRWorld is included in the initial value, so please delete that string before using the tool.
+ This issue will be fixed in the next update.</p>
 </p>
 <p><img alt="AutoTextureCompresser_Issue" src="img/AutoTextureCompresser_Issue.jpg" /></p>
 </div>
 <ol>
 <li>
-<p>IList内に<strong>Path0</strong>にField毎の<strong>BuildPath以下の相対パス</strong>を指定します。<br>具体的にはプロジェクトをエキスプローラにて開き、upload/data/Field下にある<a href="../HEOComponents/HEOField.html">HEOField</a>がアタッチされたオブジェクトと同名のパスを指定します。<br>複数指定する必要がある場合は改行します。
-例)
+<p>Specify the <strong>relative path below BuildPath</strong> for each field in <strong>Path0</strong> in IList. <br>Specifically, open the project in Explorer and specify the path with the same name as the object to which <a href="../HEOComponents/HEOField.html">HEOField</a> is attached under upload/data/Field. <br>If you need to specify more than one, use a new line.
+example)
 　data\Field\World
 　data\Field\PartyRoom
 　data\Field*
     <img alt="AutoTextureCompresser_7" src="img/AutoTextureCompresser_7.jpg" /></p>
 </li>
 <li>
-<p><strong>Optimize Files</strong>ボタンをクリック</p>
+<p>Click on the <strong>Optimize Files</strong> button</p>
 </li>
 </ol>
-<p>圧縮中は下記画像が出て待機状態になります。<br>
-現状のツールでは、外部ツール実行時のハンギング状態を解除されないので、フリーズしたような挙動を取りますが5分程度お待ちください。
+<p>During compression, the image below will appear and the computer will be in standby mode. <br>
+The current tool does not release the hanging state when running an external tool, so it will behave as if it is frozen, but please wait for about 5 minutes.
 <img alt="AutoTextureCompresser_8" src="img/AutoTextureCompresser_8.jpg" /></p>
-<p>すべての圧縮が完了すると「プロジェクト名/release/data/field」以下にあるHEOファイルに「texastc」「texdtx」「texetc2」というフォルダができ、HEOファイルも最新のものに上書きされた状態となります。</p>
-<h2 id="ui">UIのパラメータ説明</h2>
-<p>以下の各パラメータに対して設定を行います。</p>
+<p>When all compression is completed, folders named "texastc", "texdtx", and "texetc2" will be created in the HEO file under "project name/release/data/field", and the HEO file will be overwritten with the latest version.</p>
+<h2 id="ui-parameter-description">UI parameter description</h2>
+<p>Configure settings for each parameter below.</p>
 <h4 id="python-path-config">Python Path Config</h4>
 <p><img alt="AutoTextureCompresser_2" src="img/AutoTextureCompresser_2.jpg" /></p>
 <table>
 <thead>
 <tr>
-<th>変数</th>
-<th>初期値</th>
-<th>機能</th>
+<th>Variable</th>
+<th>Initial value</th>
+<th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Python Alias for Shell</td>
-<td>なし</td>
-<td>cmdにて使用されるpythonのエイリアス名です。<br>Pythonに対してエイリアスを設定していない場合は<code>Python Path</code>を必ず設定します。</td>
+<td>None</td>
+<td>Python alias name used in cmd. <br>If you have not set an alias for Python, be sure to set <code>Python Path</code>.</td>
 </tr>
 <tr>
 <td>Python Path</td>
-<td>なし</td>
-<td>python.exeのディレクトリパスを設定します。</td>
+<td>None</td>
+<td>Set the directory path for python.exe.</td>
 </tr>
 </tbody>
 </table>
@@ -4192,56 +4194,56 @@
 <table>
 <thead>
 <tr>
-<th>変数</th>
-<th>初期値</th>
-<th>機能</th>
+<th>Variable</th>
+<th>Initial value</th>
+<th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Python Keyword</td>
 <td>python3.11</td>
-<td>実行するpython.exeの名前。Python Aliasと一致する</td>
+<td>Name of python.exe to run. Match Python Alias</td>
 </tr>
 <tr>
 <td>Compressor Filename</td>
 <td>HEOTexComp.py</td>
-<td>HEOTexCompスクリプトのファイル名</td>
+<td>HEOTexComp script file name</td>
 </tr>
 <tr>
 <td>Compressor Location</td>
 <td>C:\Project\</td>
-<td>HEOTexComp.pyのフォルダパスを指定します。<br> {PROJECT_PATH}\Packages\VketCloudSDK\PackageResources\tools\HEOTexComp</td>
+<td>Specify the folder path for HEOTexComp.py. <br> {PROJECT_PATH}\Packages\VketCloudSDK\PackageResources\tools\HEOTexComp</td>
 </tr>
 <tr>
 <td>Optimizer Filename</td>
 <td>HEOSameTexOptimizer.py</td>
-<td>HEOSameTexOptimizerスクリプトのファイル名</td>
+<td>HEOSameTexOptimizer script filename</td>
 </tr>
 <tr>
 <td>Optimizer Location</td>
 <td>C:\Project\</td>
-<td>HEOSameTexOptimizer.pyのフォルダパスを指定します。<br> {PROJECT_PATH}\Packages\VketCloudSDK\PackageResources\tools\HEOSameTexOptimizer</td>
+<td>Specify the folder path of HEOSameTexOptimizer.py. <br> {PROJECT_PATH}\Packages\VketCloudSDK\PackageResources\tools\HEOSameTexOptimizer</td>
 </tr>
 <tr>
 <td>BuildPath</td>
 <td>C:\Project\release</td>
-<td>VketCloudSDKでビルドしたreleaseフォルダまでのパス</td>
+<td>Path to the release folder built with VketCloudSDK</td>
 </tr>
 <tr>
 <td>Batch Type</td>
 <td>astc dxt etc2 pvrtc</td>
-<td>PVRTextToolやTexconvを使うバッチファイル名のリストです。</td>
+<td>List of batch file names that use PVRTextTool and Texconv.</td>
 </tr>
 <tr>
 <td>OptimizerSrcFolderName</td>
 <td>Src</td>
-<td>HEOSameTexOptimizerが求めるSourceフォルダの名前</td>
+<td>Name of the Source folder required by HEOSameTexOptimizer</td>
 </tr>
 <tr>
 <td>OptimizerDestFolderName</td>
 <td>Dest</td>
-<td>HEOSameTexOptimizerが出力用に使うフォルダ名</td>
+<td>Folder name used by HEOSameTexOptimizer for output</td>
 </tr>
 </tbody>
 </table>
@@ -4250,16 +4252,16 @@
 <table>
 <thead>
 <tr>
-<th>変数</th>
-<th>初期値</th>
-<th>機能</th>
+<th>Variable</th>
+<th>Initial value</th>
+<th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>IList</td>
-<td>　なし</td>
-<td>変換するHEOが含まれるフォルダーパスを列挙したtxtファイル</td>
+<td>None</td>
+<td>txt file listing folder paths containing HEOs to be converted</td>
 </tr>
 </tbody>
 </table>
