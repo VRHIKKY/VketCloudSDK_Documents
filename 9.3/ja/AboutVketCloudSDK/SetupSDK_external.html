@@ -382,6 +382,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sdk" class="md-nav__link">
+    任意のバージョンの導入・既存バージョンSDKのアップデート
+  </a>
+  
+    <nav class="md-nav" aria-label="任意のバージョンの導入・既存バージョンSDKのアップデート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sdk-version-manager" class="md-nav__link">
+    SDK Version Managerによるバージョン切り替え
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-manager" class="md-nav__link">
+    Package Managerによるバージョン切り替え
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manifestjson" class="md-nav__link">
+    manifest.jsonによるバージョン切り替え
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2989,8 +3023,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/MissingComponents.html" class="md-nav__link">
-        バージョンアップ後にComponentがMissingとして表示される
+      <a href="../troubleshooting/VersionUpdateTroubleshooting.html" class="md-nav__link">
+        バージョンアップ後によくあるトラブル
       </a>
     </li>
   
@@ -4955,6 +4989,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sdk" class="md-nav__link">
+    任意のバージョンの導入・既存バージョンSDKのアップデート
+  </a>
+  
+    <nav class="md-nav" aria-label="任意のバージョンの導入・既存バージョンSDKのアップデート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sdk-version-manager" class="md-nav__link">
+    SDK Version Managerによるバージョン切り替え
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-manager" class="md-nav__link">
+    Package Managerによるバージョン切り替え
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manifestjson" class="md-nav__link">
+    manifest.jsonによるバージョン切り替え
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4980,6 +5048,13 @@
 </div>
 <hr />
 <h2 id="step-2">Step 2. レジストリ情報を登録する</h2>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>Version 9.3リリース以降、VketCloudSDK導入時に入力するレジストリがインストールウィザードのものに変更となりました。<br>
+既存のプロジェクトにインストールウィザードを導入する際は<strong>必ず</strong>「+」ボタンを選択して新規のレジストリを追加し、SDKのレジストリを上書きしないようご注意ください。<br>
+インストールウィザードをインストールした後、<a href="#sdk">任意のバージョンの導入・既存バージョンSDKのアップデート</a>に移行してください。</p>
+</div>
+<p><img alt="SetupSDK_NewRegistry" src="img/SetupSDK_NewRegistry.jpg" /></p>
 <p>Unityのメニュー Edit &gt; Project Settings から「Project Settings」ウィンドウを開きます。ウィンドウ左側のタブから「Package Manager」を選択し、以下のように記載します。  </p>
 <table>
 <thead>
@@ -5005,6 +5080,12 @@
 </table>
 <p><img alt="Package" src="img/package.jpg" /></p>
 <p>最後に「Save」ボタンを押して設定内容を保存します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>上記レジストリをコピー&amp;ペーストした際にスペース等不要な文字が含まれている場合、以下のようなエラーが出る場合があります。<br>
+以下のエラーが出現した際はスペースが含まれていないかご確認ください。</p>
+</div>
+<p><img alt="SetupSDK_RegistrySpaceError" src="img/SetupSDK_RegistrySpaceError.jpg" /></p>
 <hr />
 <h2 id="step-3-unity-package-managersdk">Step 3. Unity Package ManagerよりSDKインストールウィザードをインストール</h2>
 <p>Unityのメニュー Window &gt; Package Manager から「Packages」ウィンドウを開きます。ウィンドウ上部のドロップダウンより「My Registries」を選択します。</p>
@@ -5037,10 +5118,9 @@
 <p><img alt="InstallationWizard_6_jp" src="img/InstallationWizard_6_jp.jpg" /></p>
 <p>7.　およそ２～５分待つと、インストールが完了して以下の画面が表示されます。この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。</p>
 <p><img alt="InstallationWizard_7_jp" src="img/InstallationWizard_7_jp.jpg" /></p>
-<h1 id="sdk">任意のバージョンの導入・既存バージョンSDKのアップデート</h1>
-<p>既にSDKを導入しているプロジェクトについては、SDK Version Managerを使用してバージョンの切り替え・アップデートが可能です。<br>
-また、以前のSDKバージョンのようにPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えも引き続き利用可能です。</p>
-<h2 id="sdk-version-manager">SDK Version Managerによるバージョン切り替え</h2>
+<h2 id="sdk">任意のバージョンの導入・既存バージョンSDKのアップデート</h2>
+<p>既にSDKを導入しているプロジェクトについては、SDKバージョンマネージャーを使用してバージョンの切り替え・アップデートが可能です。<br></p>
+<h3 id="sdk-version-manager">SDK Version Managerによるバージョン切り替え</h3>
 <p>1. VketCloudSDK_Wizard &gt; SDK Version Managerを押して、バージョン選択画面が表示されます。</p>
 <p><img alt="SDKVersionManager_1" src="img/SDKVersionManager_1.jpg" /></p>
 <p>2. バージョン選択画面でバージョンを選択し、インストールボタンを押してください。</p>
@@ -5058,6 +5138,15 @@
 <p class="admonition-title">Note</p>
 <p>既存のSDKのバージョンアップを行う際、アップデート後にComponentが欠落する現象が確認されています。<br>
   バージョンアップを行う際はプロジェクトの複製などによってバージョンアップ前の状態のバックアップを取ることを強くおすすめします。</p>
+</div>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>SDKアップデート後にビルドエラー等の不具合が発生する場合は以下のページをご確認ください。
+<a href="../troubleshooting/VersionUpdateTroubleshooting.html">バージョンアップ後によくあるトラブル</a></p>
+</div>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>以下にて解説しているPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えは引き続き利用可能ですが、基本的にはSDKバージョンマネージャーの利用を推奨します。<br></p>
 </div>
 <h3 id="package-manager">Package Managerによるバージョン切り替え</h3>
 <p>Step 2.にてレジストリ情報を登録した後、「Window」--&gt;「Package Manager」からPackage Managerを開きます。<br>

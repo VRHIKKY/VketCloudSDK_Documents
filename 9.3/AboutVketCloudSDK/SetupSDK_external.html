@@ -382,6 +382,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#installing-a-specified-version-updating-an-existing-sdk" class="md-nav__link">
+    Installing a specified version / Updating an existing SDK
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing a specified version / Updating an existing SDK">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-switch-via-sdk-version-manager" class="md-nav__link">
+    Version switch via SDK Version Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-switching-via-package-manager" class="md-nav__link">
+    Version switching via Package Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-switching-via-manifestjson" class="md-nav__link">
+    Version switching via manifest.json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2989,8 +3023,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/MissingComponents.html" class="md-nav__link">
-        Missing Components After Version Update
+      <a href="../troubleshooting/VersionUpdateTroubleshooting.html" class="md-nav__link">
+        Version Update Troubleshooting
       </a>
     </li>
   
@@ -4955,6 +4989,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#installing-a-specified-version-updating-an-existing-sdk" class="md-nav__link">
+    Installing a specified version / Updating an existing SDK
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing a specified version / Updating an existing SDK">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-switch-via-sdk-version-manager" class="md-nav__link">
+    Version switch via SDK Version Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-switching-via-package-manager" class="md-nav__link">
+    Version switching via Package Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-switching-via-manifestjson" class="md-nav__link">
+    Version switching via manifest.json
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4976,12 +5044,19 @@
 Select "3D" as the template, if you need one.</p>
 <div class="admonition note caution">
 <p class="admonition-title">Note</p>
-</div>
 <p>If you put a space in the project name, it may cause build failures and other issues. <br>
 We advise to avoid using full-width characters such as CJK characters.</p>
 <p>OK) MyProject NG) My Project , マイ　プロジェクト</p>
+</div>
 <hr />
 <h3 id="step-2-register-registry-information">Step 2. Register Registry information</h3>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>On the release of Version 9.3, the SDK installation registry has been changed to the install wizard.<br>
+If you want to install the install wizard on an existing project, you <strong>must</strong> create a new registry by selecting "+", and <strong>do not overwrite</strong> the existing SDK registry.<br>
+After installing the install wizard, proceed to <a href="#installing-a-specified-version-updating-an-existing-sdk">Installing a specified version / Updating an existing SDK</a>.</p>
+</div>
+<p><img alt="SetupSDK_NewRegistry" src="img/SetupSDK_NewRegistry.jpg" /></p>
 <p>Open the "Project Settings" window from the Unity menu Edit &gt; Project Settings.</p>
 <p>Select "Package Manager" from the left tab in the window and describe as follows.</p>
 <table>
@@ -5008,6 +5083,12 @@ We advise to avoid using full-width characters such as CJK characters.</p>
 </table>
 <p><img alt="Package" src="img/package.jpg" />
   Finally, press the "Save" button to save the settings.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the registry contains a space or any unneeded characters, the error below may appear.<br>
+If the error appears, please check if a space is contained by mistake.</p>
+</div>
+<p><img alt="SetupSDK_RegistrySpaceError" src="img/SetupSDK_RegistrySpaceError.jpg" /></p>
 <hr />
 <h3 id="step-3-install-the-vketcloudsdk-install-wizard-via-package-manager">Step 3. Install the VketCloudSDK Install Wizard via Package Manager</h3>
 <p>Open the "Packages" window from Unity's menu Window &gt; Package Manager.</p>
@@ -5043,10 +5124,9 @@ Do not use these versions for setting up new world projects.</p>
 <p>7.　After waiting approx. 2~5 minutes, the installation will be completed with the window below.<br>
 The SDK manual and community discord server can be accessed from this window.</p>
 <p><img alt="InstallationWizard_7_en" src="img/InstallationWizard_7_en.jpg" /></p>
-<h1 id="installing-a-specified-version-updating-an-existing-sdk">Installing a specified version / Updating an existing SDK</h1>
-<p>For a project with an existing SDK, the SDK Version Manager can be used for switching and updating SDK versions.<br>
-The Package Manager and manifest.json editing is also available as well.</p>
-<h2 id="version-switch-via-sdk-version-manager">Version switch via SDK Version Manager</h2>
+<h2 id="installing-a-specified-version-updating-an-existing-sdk">Installing a specified version / Updating an existing SDK</h2>
+<p>For a project with an existing SDK, the SDK Version Manager can be used for switching and updating SDK versions.<br></p>
+<h3 id="version-switch-via-sdk-version-manager">Version switch via SDK Version Manager</h3>
 <p>1. By selecting VketCloudSDK_Wizard &gt; SDK Version Manager, the version selection window will appear.</p>
 <p><img alt="SDKVersionManager_1" src="img/SDKVersionManager_1.jpg" /></p>
 <p>2. Select the new version to be installed, and press the "Install" button.</p>
@@ -5065,6 +5145,15 @@ Do not use these versions for setting up new world projects.</p>
 <p class="admonition-title">Note</p>
 <p>On updating an existing SDK, Components may be gone missing after the update.<br>
   We strongly recommend to take a backup of the pre-update project by duplicating files.</p>
+</div>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>If issues such as build errors appear on updating the SDK, please refer to the page below:<br>
+<a href="../troubleshooting/VersionUpdateTroubleshooting.html">Version Update Troubleshooting</a></p>
+</div>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>The version switching methods below remains to be usable, using the version manager is recommended.</p>
 </div>
 <h3 id="version-switching-via-package-manager">Version switching via Package Manager</h3>
 <p>After registering the registry information on <a href="#step-2-register-registry-information">Step 2.</a>, open the Package Manager via "Window" --&gt; "Package Manager".<br>
