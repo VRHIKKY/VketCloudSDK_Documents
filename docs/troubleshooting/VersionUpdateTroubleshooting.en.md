@@ -4,7 +4,7 @@
 
 After committing a [SDK version upgrade](../AboutVketCloudSDK/SetupSDK_external.md), the components created in the previous version may be shown as Missing.
 
-![MissingComponents_1](./img/MissingComponent_1.jpg)
+![VersionUpdateTroubleshooting_1](img/VersionUpdateTroubleshooting_1.jpg)
 
 The missing components will be usable by reattaching/fixing the values on the components.<br>
 Taking a backup of the pre-updated world is **strongly** recommended for reattaching the components.
@@ -48,3 +48,27 @@ This can be solved by clearing the cache by VketCloudSDK > Clear Cache.
 !!! note caution
     HeliScript/gimmicks may not work due to browser cache after version switching.<br>
     If such issue happens, try clearing the browser cache.
+
+![VersionUpdateTroubleshooting_4_en](img/VersionUpdateTroubleshooting_4_en.jpg)
+
+## File corruption error appears after updating SDK version
+
+If an updated / non-existing script is attached on a project with an updated SDK, the message below may show up on opening the scene: 
+
+![VersionUpdateTroubleshooting_5](img/VersionUpdateTroubleshooting_5.jpg)
+
+If this issue appears, fix it by deleting the Library and Temp folder in the project folder and reboot the project. 
+
+### How to Fix
+
+1\. Close the Unity project if open.
+
+2\. Open the Unity project with SDK on the explorer.<br>*This can be done by right-clicking the project on Unity Hub, and select "Show in Explorer"
+
+![VersionUpdateTroubleshooting_6_en](img/VersionUpdateTroubleshooting_6_en.jpg)
+
+3\. Delete the Library and Temp folder:
+
+![VersionUpdateTroubleshooting_7](img/VersionUpdateTroubleshooting_7.jpg)
+
+4\. Reopen the Unity project, and check if the error has been solved!

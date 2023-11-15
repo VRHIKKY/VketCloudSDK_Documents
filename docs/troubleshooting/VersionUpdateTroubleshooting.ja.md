@@ -4,7 +4,7 @@
 
 [SDKのバージョンアップ](../AboutVketCloudSDK/SetupSDK_external.md)を行った際に、バージョンアップ前のコンポーネントがMissingとして表示される場合があります。
 
-![VersionUpdateTroubleshooting_1](./img/VersionUpdateTroubleshooting_1.jpg)
+![VersionUpdateTroubleshooting_1](img/VersionUpdateTroubleshooting_1.jpg)
 
 Missingになったコンポーネントについては該当のコンポーネントを再度アタッチ・設定し直すことで正常に動きます。<br>
 バージョンアップの際はバージョンアップ前の状態を確認できるようにバックアップを行うことを**強く**おすすめします。
@@ -39,12 +39,36 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 
 既存のプロジェクトからバージョンを9.3へアップデートした後、ビルドを行ったワールドにて設定画面の右下に表示されているバージョン表記が旧バージョンのままになっている場合があります。<br>
 
-![VersionUpdateTroubleshooting_2](./img/VersionUpdateTroubleshooting_2.jpg)
+![VersionUpdateTroubleshooting_2](img/VersionUpdateTroubleshooting_2.jpg)
 
 その際はSDKツールバーのVketCloudSDK > Clear Cacheを実行すると解消されます。
 
-![VersionUpdateTroubleshooting_3](./img/VersionUpdateTroubleshooting_3.jpg)
+![VersionUpdateTroubleshooting_3](img/VersionUpdateTroubleshooting_3.jpg)
 
 !!! note caution
     バージョンアップ後にブラウザ側のキャッシュが原因でHeliScript・ギミックが動かない場合があります。<br>
     該当の現象が発生した際はブラウザのキャッシュクリアをお試しください。
+
+![VersionUpdateTroubleshooting_4_jp](img/VersionUpdateTroubleshooting_4_jp.jpg)
+
+## ファイルの破損エラーが表示される
+
+新しいバージョンのプロジェクトにて存在しない、もしくは更新されているスクリプトがアタッチされている場合、シーンを開いた際に以下のメッセージが表示される場合があります。
+
+![VersionUpdateTroubleshooting_5](img/VersionUpdateTroubleshooting_5.jpg)
+
+本不具合が発生した際は、プロジェクトフォルダのLibraryフォルダ及びTempフォルダを消去した上でプロジェクトを再起動させると解消します。
+
+### 操作手順
+
+1\. Unityプロジェクトを開いている場合は一度閉じる
+
+2\. エクスプローラにてSDKが含まれているUnityプロジェクトを開く<br>※Unity Hubにて該当のプロジェクトを右クリックし、「エクスプローラーで表示」を選択すると表示されます
+
+![VersionUpdateTroubleshooting_6_jp](img/VersionUpdateTroubleshooting_6_jp.jpg)
+
+3\. Library及びTempフォルダを消去する
+
+![VersionUpdateTroubleshooting_7](img/VersionUpdateTroubleshooting_7.jpg)
+
+4\. Unityプロジェクトを再度開き、エラーの解消を確認する
