@@ -49,6 +49,7 @@
     - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/troubleshooting/VersionUpdateTroubleshooting.html)
         - Changed page title
         - Added information on settings that may reset on updating to Ver9.3
-        - Added solution for version information not updated on settings window
+        - Added solution for version information not updated on settings window / HeliScript and gimmicks not working after update
+        - Added solution for file shown as corrupt after update
 
 # Deleted Pages

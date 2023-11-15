@@ -49,6 +49,7 @@
     - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/troubleshooting/VersionUpdateTroubleshooting.html)
         - 旧タイトルを改題
         - Ver9.3へのアップデート時に欠落する恐れのある設定について追記
-        - 設定画面でのバージョン表記が旧バージョンのままになっている際の対処を追記
+        - 設定画面でのバージョン表記が旧バージョンのままになっている / HeliScript・ギミックがバージョンアップ後に動かない際の対処を追記
+        - ファイルの破損エラーが表示される際の対処を追記
 
 # 削除されたページ
