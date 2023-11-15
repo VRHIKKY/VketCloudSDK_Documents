@@ -1,95 +1,98 @@
 # How to Use the AutoTextureCompresser
+Texture compression in VketCloud is done by using a 3rd party compression tool. Although the compression is processed by [running batch files](../heoexporter/he_TextureCompression.md) with the "_astc", "_dxt" and "_etc" suffixes, this may be confusing for users unfamiliar with the process.<br>
+The Auto Texture Compresser is a tool aimed to automate the compression process.
+
 
 ## How to Use
 ### 1. Install Tools
-At First, please install [PVRTexTool](https://developer.imaginationtech.com/pvrtextool/) and [TexConv](https://github.com/Microsoft/DirectXTex/wiki/ Texconv). TexConv can be found at the top of the page under "DOWNLOADS@LATEST" to install the files.
+First, please install [PVRTexTool](https://developer.imaginationtech.com/pvrtextool/) and [TexConv](https://github.com/Microsoft/DirectXTex/wiki/Texconv). TexConv can be found at the top of the page under "DOWNLOADS@LATEST" to install the files.
 
-また、ツールを実行するためには最新(Ver. 3.11以降)の[Pythonのインストール](https://www.python.org/downloads/)が必要です。
+Also, in order to run the tool, the latest (Ver. 3.11 or later) [Python installation](https://www.python.org/downloads/) is required.
 
-### 2. 必要テクスチャの書き出し
-テクスチャを圧縮するにあたって、メニューバーより`VketCloudSDK->BuildAndRun`を選択してreleaseフォルダ下に必要なテクスチャを書き出す必要があります。
+### 2. Export the required textures
+To compress textures,  select `VketCloudSDK->BuildAndRun` from the menu bar and export the necessary textures under the release folder.
 
-### 3. テクスチャ変換
-ツールバー上の「VketCloudSDK」から、AutoTextureCompresserを選択してください。<br>
+### 3. Texture conversion
+Select AutoTextureCompresser from "VketCloudSDK" on the toolbar. <br>
 
 ![AutoTextureCompresser_1](img/AutoTextureCompresser_1.jpg)
 
-下図のようなウィンドウが出てくるので、UIのパラメータに必要な項目を設定します。
+A window like the one shown below will appear, so set the necessary items for the UI parameters.
 
-圧縮を行うために必要な手順は以下の通りです。
+The steps required to perform compression are as follows:
 
-1. **Python Alias for shell** にpythonのエイリアス名を設定します。
-    エイリアスが設定されていない場合、Python Path(python.exeが置かれているファイル位置)の設定が必要です。
+1. Set the python alias name in **Python Alias for shell**.
+     If an alias is not set, you need to set the Python Path (file location where python.exe is located).
 
     ![AutoTextureCompresser_2](img/AutoTextureCompresser_2.jpg)
 
-2. **PythonKeyword**にpythonのバージョンを指定します。
+2. Specify the python version in **PythonKeyword**.
 
-    ![AutoTextureCompresser_3](img/AutoTextureCompresser_3.jpg)
+     ![AutoTextureCompresser_3](img/AutoTextureCompresser_3.jpg)
 
-3. **CompressorLocation**にHEOTexComp.pyのフォルダまでのフルパスを指定します。<br>見つからない場合はAssetsにて"HEOTexComp"と検索をかけ、出現したフォルダをエキスプローラから開いてパスを取得します。
-    ![AutoTextureCompresser_4](img/AutoTextureCompresser_4.jpg)
+3. Specify the full path to the HEOTexComp.py folder in **CompressorLocation**. <br>If you cannot find it, search for "HEOTexComp" in Assets and open the folder that appears from Explorer to get the path.
+     ![AutoTextureCompresser_4](img/AutoTextureCompresser_4.jpg)
 
-4. **OptimizerLocation**にHEOSameTexOptimizer.pyのフォルダまでのフルパスを指定します。
+4. Specify the full path to the HEOSameTexOptimizer.py folder in **OptimizerLocation**.
 
-    ![AutoTextureCompresser_5](img/AutoTextureCompresser_5.jpg)
+     ![AutoTextureCompresser_5](img/AutoTextureCompresser_5.jpg)
 
-5. **BuildPath**にVketCloudSDKでビルドしたreleaseフォルダまでのパスを指定します。
+5. Specify the path to the release folder built with VketCloudSDK in **BuildPath**.
 
-    ![AutoTextureCompresser_6](img/AutoTextureCompresser_6.jpg)
+     ![AutoTextureCompresser_6](img/AutoTextureCompresser_6.jpg)
 
 !!! note caution
-        Ver4.8 / Ver5.4では初期値にJRWorldという文字列が混じっているため、該当の文字列を削除した上でのツールの使用をお願いいたします。
-        本不具合は次回のアップデートで修正される予定です。
-    ![AutoTextureCompresser_Issue](img/AutoTextureCompresser_Issue.jpg)
+         In Ver4.8 / Ver5.4, the string JRWorld is included in the initial value, so please delete that string before using the tool.
+         This issue will be fixed in the next update.
+     ![AutoTextureCompresser_Issue](img/AutoTextureCompresser_Issue.jpg)
 
-6. IList内に**Path0**にField毎の**BuildPath以下の相対パス**を指定します。<br>具体的にはプロジェクトをエキスプローラにて開き、upload/data/Field下にある[HEOField](../HEOComponents/HEOField.md)がアタッチされたオブジェクトと同名のパスを指定します。<br>複数指定する必要がある場合は改行します。
-例)
+6. Specify the **relative path below BuildPath** for each field in **Path0** in IList. <br>Specifically, open the project in Explorer and specify the path with the same name as the object to which [HEOField](../HEOComponents/HEOField.md) is attached under upload/data/Field. <br>If you need to specify more than one, use a new line.
+example)
 　data\Field\World
 　data\Field\PartyRoom
 　data\Field\*
     ![AutoTextureCompresser_7](img/AutoTextureCompresser_7.jpg)
 
-7. **Optimize Files**ボタンをクリック
+7. Click on the **Optimize Files** button
 
-圧縮中は下記画像が出て待機状態になります。<br>
-現状のツールでは、外部ツール実行時のハンギング状態を解除されないので、フリーズしたような挙動を取りますが5分程度お待ちください。
+During compression, the image below will appear and the computer will be in standby mode. <br>
+The current tool does not release the hanging state when running an external tool, so it will behave as if it is frozen, but please wait for about 5 minutes.
 ![AutoTextureCompresser_8](img/AutoTextureCompresser_8.jpg)
 
-すべての圧縮が完了すると「プロジェクト名/release/data/field」以下にあるHEOファイルに「texastc」「texdtx」「texetc2」というフォルダができ、HEOファイルも最新のものに上書きされた状態となります。
+When all compression is completed, folders named "texastc", "texdtx", and "texetc2" will be created in the HEO file under "project name/release/data/field", and the HEO file will be overwritten with the latest version.
 
-## UIのパラメータ説明
-以下の各パラメータに対して設定を行います。
+## UI parameter description
+Configure settings for each parameter below.
 
 #### Python Path Config
 
 ![AutoTextureCompresser_2](img/AutoTextureCompresser_2.jpg)
 
-| 変数 | 初期値 | 機能 |
+| Variable | Initial value | Function |
 | ---- | ---- | ---- |
-| Python Alias for Shell | なし | cmdにて使用されるpythonのエイリアス名です。<br>Pythonに対してエイリアスを設定していない場合は`Python Path`を必ず設定します。 |
-| Python Path | なし |python.exeのディレクトリパスを設定します。 |
+| Python Alias for Shell | None | Python alias name used in cmd. <br>If you have not set an alias for Python, be sure to set `Python Path`. |
+| Python Path | None | Set the directory path for python.exe. |
 
 #### Python Data Config
 
 ![AutoTextureCompresser_9](img/AutoTextureCompresser_9.jpg)
 
-| 変数 | 初期値 | 機能 |
+| Variable | Initial value | Function |
 | ---- | ---- | ---- |
-| Python Keyword | python3.11 | 実行するpython.exeの名前。Python Aliasと一致する |
-| Compressor Filename | HEOTexComp.py | HEOTexCompスクリプトのファイル名 |
-| Compressor Location | C:\Project\ |HEOTexComp.pyのフォルダパスを指定します。<br> {PROJECT_PATH}\Packages\VketCloudSDK\PackageResources\tools\HEOTexComp |
-| Optimizer Filename |HEOSameTexOptimizer.py |HEOSameTexOptimizerスクリプトのファイル名 |
-| Optimizer Location |C:\Project\ | HEOSameTexOptimizer.pyのフォルダパスを指定します。<br> {PROJECT_PATH}\Packages\VketCloudSDK\PackageResources\tools\HEOSameTexOptimizer |
-| BuildPath | C:\Project\release |VketCloudSDKでビルドしたreleaseフォルダまでのパス |
-| Batch Type |astc dxt etc2 pvrtc | PVRTextToolやTexconvを使うバッチファイル名のリストです。|
-| OptimizerSrcFolderName | Src |HEOSameTexOptimizerが求めるSourceフォルダの名前 |
-| OptimizerDestFolderName |Dest |HEOSameTexOptimizerが出力用に使うフォルダ名 |
+| Python Keyword | python3.11 | Name of python.exe to run. Match Python Alias |
+| Compressor Filename | HEOTexComp.py | HEOTexComp script file name |
+| Compressor Location | C:\Project\ | Specify the folder path for HEOTexComp.py. <br> {PROJECT_PATH}\Packages\VketCloudSDK\PackageResources\tools\HEOTexComp |
+| Optimizer Filename | HEOSameTexOptimizer.py | HEOSameTexOptimizer script filename |
+| Optimizer Location | C:\Project\ | Specify the folder path of HEOSameTexOptimizer.py. <br> {PROJECT_PATH}\Packages\VketCloudSDK\PackageResources\tools\HEOSameTexOptimizer |
+| BuildPath | C:\Project\release | Path to the release folder built with VketCloudSDK |
+| Batch Type | astc dxt etc2 pvrtc | List of batch file names that use PVRTextTool and Texconv. |
+| OptimizerSrcFolderName | Src | Name of the Source folder required by HEOSameTexOptimizer |
+| OptimizerDestFolderName | Dest | Folder name used by HEOSameTexOptimizer for output |
 
 #### Compress File
 
 ![AutoTextureCompresser_2](img/AutoTextureCompresser_2.jpg)
 
-| 変数 | 初期値 | 機能 |
+| Variable | Initial value | Function |
 | ---- | ---- | ---- |
-|IList |　なし | 変換するHEOが含まれるフォルダーパスを列挙したtxtファイル |
+| IList | None | txt file listing folder paths containing HEOs to be converted |
