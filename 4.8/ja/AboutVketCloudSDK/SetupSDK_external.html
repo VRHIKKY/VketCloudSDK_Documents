@@ -369,8 +369,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-upmsdk" class="md-nav__link">
-    Step 3. UPMよりSDKパッケージをインストール
+  <a href="#step-3-unity-package-managersdk" class="md-nav__link">
+    Step 3. Unity Package ManagerよりSDKインストールウィザードをインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-sdk" class="md-nav__link">
+    Step 4. インストールウィザードを使用してSDKをインストールする
   </a>
   
 </li>
@@ -382,6 +389,13 @@
   
     <nav class="md-nav" aria-label="任意のバージョンの導入・既存バージョンSDKのアップデート">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sdk-version-manager" class="md-nav__link">
+    SDK Version Managerによるバージョン切り替え
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#package-manager" class="md-nav__link">
@@ -2861,8 +2875,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/MissingComponents.html" class="md-nav__link">
-        バージョンアップ後にComponentがMissingとして表示される
+      <a href="../troubleshooting/VersionUpdateTroubleshooting.html" class="md-nav__link">
+        バージョンアップ後によくあるトラブル
       </a>
     </li>
   
@@ -4002,8 +4016,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-upmsdk" class="md-nav__link">
-    Step 3. UPMよりSDKパッケージをインストール
+  <a href="#step-3-unity-package-managersdk" class="md-nav__link">
+    Step 3. Unity Package ManagerよりSDKインストールウィザードをインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-sdk" class="md-nav__link">
+    Step 4. インストールウィザードを使用してSDKをインストールする
   </a>
   
 </li>
@@ -4015,6 +4036,13 @@
   
     <nav class="md-nav" aria-label="任意のバージョンの導入・既存バージョンSDKのアップデート">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sdk-version-manager" class="md-nav__link">
+    SDK Version Managerによるバージョン切り替え
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#package-manager" class="md-nav__link">
@@ -4049,16 +4077,24 @@
                 
                 
                 <h1 id="vketcloudsdk">VketCloudSDKの導入方法</h1>
-<p>VketCloudSDKをインストールするには、UnityのPackage Managerを使用します。  </p>
+<p>VketCloudSDKをインストールするには、はじめにUnityのPackage Managerを使用し、SDKインストールウィザードを導入します。  </p>
 <h2 id="step-1-unity">Step 1. Unityでプロジェクトを開く</h2>
 <p>対応しているバージョン（<a href="OperatingEnvironment.html" target="_blank">動作環境</a>）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。      </p>
 <div class="admonition note caution">
 <p class="admonition-title">Note</p>
-<p>プロジェクト名にスペースを入れるとビルドに失敗する場合があります。</p>
-<p>OK例) MyProject　　NG例) My Project  </p>
+<p>プロジェクト名にスペースを入れるとビルドに失敗する場合があります。<br>
+また、日本語など2バイト文字の使用も避けることをおすすめします。</p>
+<p>OK例) MyProject　　NG例) My Project , マイ　プロジェクト</p>
 </div>
 <hr />
 <h2 id="step-2">Step 2. レジストリ情報を登録する</h2>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>Version 9.3リリース以降、VketCloudSDK導入時に入力するレジストリがインストールウィザードのものに変更となりました。<br>
+既存のプロジェクトにインストールウィザードを導入する際は<strong>必ず</strong>「+」ボタンを選択して新規のレジストリを追加し、SDKのレジストリを上書きしないようご注意ください。<br>
+インストールウィザードをインストールした後、<a href="#sdk">任意のバージョンの導入・既存バージョンSDKのアップデート</a>に移行してください。</p>
+</div>
+<p><img alt="SetupSDK_NewRegistry" src="img/SetupSDK_NewRegistry.jpg" /></p>
 <p>Unityのメニュー Edit &gt; Project Settings から「Project Settings」ウィンドウを開きます。ウィンドウ左側のタブから「Package Manager」を選択し、以下のように記載します。  </p>
 <table>
 <thead>
@@ -4070,7 +4106,7 @@
 <tbody>
 <tr>
 <td>Name</td>
-<td>VketCloudSDK</td>
+<td>VketCloudSDK Install Wizard</td>
 </tr>
 <tr>
 <td>URL</td>
@@ -4078,26 +4114,79 @@
 </tr>
 <tr>
 <td>Scope(s)</td>
-<td>com.hikky.vketcloudsdk</td>
+<td>com.hikky.vketcloudsdk-install-wizard</td>
 </tr>
 </tbody>
 </table>
-<p><img alt="Package" src="img/package.jpg" />
-  最後に「Save」ボタンを押して設定内容を保存します。</p>
+<p><img alt="Package" src="img/package.jpg" /></p>
+<p>最後に「Save」ボタンを押して設定内容を保存します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>上記レジストリをコピー&amp;ペーストした際にスペース等不要な文字が含まれている場合、以下のようなエラーが出る場合があります。<br>
+以下のエラーが出現した際はスペースが含まれていないかご確認ください。</p>
+</div>
+<p><img alt="SetupSDK_RegistrySpaceError" src="img/SetupSDK_RegistrySpaceError.jpg" /></p>
 <hr />
-<h2 id="step-3-upmsdk">Step 3. UPMよりSDKパッケージをインストール</h2>
+<h2 id="step-3-unity-package-managersdk">Step 3. Unity Package ManagerよりSDKインストールウィザードをインストール</h2>
 <p>Unityのメニュー Window &gt; Package Manager から「Packages」ウィンドウを開きます。ウィンドウ上部のドロップダウンより「My Registries」を選択します。</p>
 <p><img alt="registry" src="img/registry.jpg" /></p>
-<p>表示されたリスト内から VketCloudSDK を選択し、「Install」ボタンを押してインストールを開始します。<br>
-デフォルトでは最新のSDKバージョンがインストールされますが、特定のバージョンを導入したい場合は以下の手順に従ってバージョンを選択してください。  </p>
-<p>Unityのメニューに「VketCloudSDK」の項目が追加されていれば導入は完了です。  </p>
-<p><img alt="header" src="img/header.jpg" /></p>
+<p>表示されたリスト内から VketCloudSDK Install Wizard を選択し、「Install」ボタンを押してインストールを開始します。<br></p>
+<p>Unityに以下のインストールウィザード画面とメニュー表示がされれば導入は完了です。</p>
+<p><img alt="InstallationWizard_Window" src="img/InstallationWizard_Window.jpg" /></p>
+<p><img alt="InstallationWizard_Menu" src="img/InstallationWizard_Menu.jpg" /></p>
+<h2 id="step-4-sdk">Step 4. インストールウィザードを使用してSDKをインストールする</h2>
+<p>新規にSDKをインストールする際はSDKインストールウィザードを使用します。</p>
+<p>1. Unityのメニューから SDK Installation Wizardを選択します。</p>
+<p><img alt="InstallationWizard_Menu" src="img/InstallationWizard_Menu.jpg" /></p>
+<div class="codehilite"><pre><span></span><code>インストールウィザードを開くと、以下の画面が起動します。
+</code></pre></div>
+
+<p><img alt="InstallationWizard_Window" src="img/InstallationWizard_Window.jpg" /></p>
+<p>2. 「次へ」ボタンを押して、言語設定画面に移動します。言語設定画面でWizard内で使用する言語を設定できます。</p>
+<p><img alt="InstallationWizard_2_jp" src="img/InstallationWizard_2_jp.jpg" /></p>
+<p>3. VketCloud SDKの初期設定をガイドする画面です。主に三つの設定を完了させてください。<br>初期設定しないことも可能ですが、その場合、SDKの動作保証はできません。</p>
+<p><img alt="InstallationWizard_3_jp" src="img/InstallationWizard_3_jp.jpg" /></p>
+<p>4. 設定が完了されるとそれぞれの設定項目の左にチェックマークが表示されます。<br>設定されない状態で「次へ」ボタンを押すと以下警告画面が表示されます。</p>
+<p><img alt="InstallationWizard_4_jp" src="img/InstallationWizard_4_jp.jpg" /></p>
+<p>5.「次へ」ボタンを押すと、バージョン選択画面が表示されます。<br>安定版、最新版、バージョンアーカイブからバージョンを選択できます。</p>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。</p>
+</div>
+<p><img alt="InstallationWizard_5_jp" src="img/InstallationWizard_5_jp.jpg" /></p>
+<p>6. バージョンを選択し、インストールボタンを押すとパッケージのインポートが開始します。</p>
+<p><img alt="InstallationWizard_6_jp" src="img/InstallationWizard_6_jp.jpg" /></p>
+<p>7.　およそ２～５分待つと、インストールが完了して以下の画面が表示されます。この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。</p>
+<p><img alt="InstallationWizard_7_jp" src="img/InstallationWizard_7_jp.jpg" /></p>
 <h2 id="sdk">任意のバージョンの導入・既存バージョンSDKのアップデート</h2>
-<p>特定のバージョンを導入したい、あるいは既存のSDKをアップデートしたい際はPackage Managerから選択するか、manifest.jsonの編集によってバージョンが切り替えできます。</p>
+<p>既にSDKを導入しているプロジェクトについては、SDKバージョンマネージャーを使用してバージョンの切り替え・アップデートが可能です。<br></p>
+<h3 id="sdk-version-manager">SDK Version Managerによるバージョン切り替え</h3>
+<p>1. VketCloudSDK_Wizard &gt; SDK Version Managerを押して、バージョン選択画面が表示されます。</p>
+<p><img alt="SDKVersionManager_1" src="img/SDKVersionManager_1.jpg" /></p>
+<p>2. バージョン選択画面でバージョンを選択し、インストールボタンを押してください。</p>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。</p>
+</div>
+<p><img alt="InstallationWizard_5_jp" src="img/InstallationWizard_5_jp.jpg" /></p>
+<p>3. インストールボタンを押すと、インポート画面に移動します。</p>
+<p><img alt="SDKVersionManager_3_jp" src="img/SDKVersionManager_3_jp.jpg" /></p>
+<p>4. インストールが完了すると、バージョン選択完了画面が表示されます。</p>
+<p><img alt="SDKVersionManager_4_jp" src="img/SDKVersionManager_4_jp.jpg" /></p>
+<p>この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。</p>
 <div class="admonition note caution">
 <p class="admonition-title">Note</p>
 <p>既存のSDKのバージョンアップを行う際、アップデート後にComponentが欠落する現象が確認されています。<br>
   バージョンアップを行う際はプロジェクトの複製などによってバージョンアップ前の状態のバックアップを取ることを強くおすすめします。</p>
+</div>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>SDKアップデート後にビルドエラー等の不具合が発生する場合は以下のページをご確認ください。
+<a href="../troubleshooting/VersionUpdateTroubleshooting.html">バージョンアップ後によくあるトラブル</a></p>
+</div>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>以下にて解説しているPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えは引き続き利用可能ですが、基本的にはSDKバージョンマネージャーの利用を推奨します。<br></p>
 </div>
 <h3 id="package-manager">Package Managerによるバージョン切り替え</h3>
 <p>Step 2.にてレジストリ情報を登録した後、「Window」--&gt;「Package Manager」からPackage Managerを開きます。<br>
@@ -4111,9 +4200,9 @@ Package Managerではレジストリ表示を"My Registries"に切り替え、Vk
 プロジェクトのmanifest.jsonを開くには、Projectウィンドウにて右クリックした上で"Show in Explorer"を選択し、「Projects」--&gt;[任意のプロジェクト]--&gt;「Packages」から開きます。</p>
 <p><img alt="SetupSDK_ManifestJson_1" src="img/SetupSDK_ManifestJson_1.jpg" /></p>
 <p><img alt="SetupSDK_ManifestJson_2" src="img/SetupSDK_ManifestJson_2.jpg" /></p>
-<p>,anifest.json内の<code>"com.hikky.vketcloudsdk"</code>の右側を使用したいバージョンに書き換えると、インストール時(インストール済みの場合は読み込み時)のバージョンが切り替わります。</p>
+<p>manifest.json内の<code>"com.hikky.vketcloudsdk"</code>の右側を使用したいバージョンに書き換えると、インストール時(インストール済みの場合は読み込み時)のバージョンが切り替わります。</p>
 <p><img alt="SetupSDK_ManifestJson_3" src="img/SetupSDK_ManifestJson_3.jpg" /></p>
-<div class="admonition note">
+<div class="admonition note caution">
 <p class="admonition-title">Note</p>
 <p>UnityのメニューにVketCloudSDKが表示されない場合は、再起動すると表示される場合があります。<br>
   上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は<a href="../troubleshooting/InstallingDeeplink.html">手動での導入</a>をお試しください。</p>
