@@ -314,6 +314,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v9.x:
+        - v9.5: releasenote/releasenote-9.5.md
         - v9.4: releasenote/releasenote-9.4.md
         - v9.3: releasenote/releasenote-9.3.md
         - v9.2: releasenote/releasenote-9.2.md
@@ -363,6 +364,7 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v9.x:
+        - v9.5: changelog/changelog-9.5.md
         - v9.4: changelog/changelog-9.4.md
         - v9.3: changelog/changelog-9.3.md
         - v9.2: changelog/changelog-9.2.md
