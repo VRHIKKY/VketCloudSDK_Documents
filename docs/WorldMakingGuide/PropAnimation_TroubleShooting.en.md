@@ -1,30 +1,29 @@
-# オブジェクトをアニメーションさせる - できないときは
+# How to Animate Objects - Troubleshooting
 
-[オブジェクトをアニメーションさせる](PropAnimation.md) にて、各手順が出来ないときに見るページです。
+This is the page to see when you cannot perform each step in [How to Animate Objects](PropAnimation.md).
 
-
-## HEOAnimationのアタッチについて
-### 思っていた挙動と異なる
+## About attaching HEOAnimation
+### Behavior is different from what I expected
 
 ![PropAnimation_TroubleShooting_1](./img/PropAnimation_TroubleShooting_1.jpg)
 
-Scaleを変更したオブジェクトの子オブジェクトのRotationを変更すると変形が発生する<br>
-横方向に回転させたかっただけなのになぜか物体が伸びてしまうといった現象は、回転させたいオブジェクトがRotationが(0,0,0)ではない、または、Scaleが(1,1,1)ではないオブジェクトの子オブジェクトだからであることが考えられます。
+Deformation occurs when changing the Rotation of a child object of an object whose Scale has been changed.<br>
+If you just want to rotate horizontally, but the object somehow stretches, the object you want to rotate may not have a Rotation of (0,0,0), or is a child object of which the parent object does not have the  Scale fixed to (1,1,1).
 
 ![PropAnimation_TroubleShooting_2](./img/PropAnimation_TroubleShooting_2.jpg)
 
 ![PropAnimation_TroubleShooting_3](./img/PropAnimation_TroubleShooting_3.jpg)
 
-動作が変な場合、HEOAnimationを入れるオブジェクトは、Position(0,0,0)、Rotation(0,0,0)、Scale(1,1,1)の子オブジェクトにした方が良いでしょう。
+If behavior is strange, it is better to make the object containing HEOAnimation a child object of Position(0,0,0), Rotation(0,0,0), and Scale(1,1,1).
 
-また、HEOAnimationを入れた動作結果は、Unity上で該当オブジェクトのRotationを変更したものと同じになります。<br>
-予めUnity上でどのように動作するか確認してから値を入力すると良いでしょう。
+Also, the result of adding HEOAnimation is the same as changing the Rotation of the object in Unity. <br>
+It is a good idea to check how it works on Unity before entering the values.
 
 ---
 
-## .hemファイル書き出しについて
-### 書き出し時にエラーが出る
-.hemファイルの書き出しでエラーが出る要因はいくつか考えられます。
+## About .hem file export
+### Error occurs when exporting
+There are several possible reasons why an error may occur when exporting a .hem file.
 
 ``````
 KeyNotFoundException: The given key was not present in the dictionary.
@@ -33,105 +32,105 @@ KeyNotFoundException: The given key was not present in the dictionary.
 ![PropAnimation_TroubleShooting_4](./img/PropAnimation_TroubleShooting_4.jpg)
 
 
-### ①書き出し元となるオブジェクトを動かすアニメーションがある
+### 1. There is an animation that moves the object that is the export source
 
 ![PropAnimation_TroubleShooting_5](./img/PropAnimation_TroubleShooting_5.jpg)
 
-Animationコンポーネントを持つオブジェクトを選択した状態でExport Motionを選択することでそのオブジェクトのアニメーションが書き出されますが、書き出し元となるオブジェクト自体に対するアニメーションが入っていたらエラーとなります。
+By selecting `Export Motion` targeting an object having an Animation component, the animation of said object will be exported.<br>
+However, an error may occur if the animation is targeting the object itself is included.
 
 ![PropAnimation_TroubleShooting_6](./img/PropAnimation_TroubleShooting_6.jpg)
 
-
-上記画像の場合、Animationコンポーネントを持つオブジェクト「Root」を直接アニメーションで動かそうとしているため、エラーとなります。
+In the case of the above image, an error is occurring because the `"Root"` object is trying to be animated.
 
 ![PropAnimation_TroubleShooting_7](./img/PropAnimation_TroubleShooting_7.jpg)
 
-× : アニメーションを付けられない、○ : 付けられる<br>
-子オブジェクトを対象としたアニメーションにする必要があります。
+×: Animation cannot be added, ○: Animation can be added<br>
+The animation must only be targeting child objects.
 
-### ②連続で色々なアニメーションを書き出しすぎている
+### 2. Exporting too many different animations in a row
 
-アニメーションの書き出しを連続で行うと、キャッシュが溜まっているのか、エラーとなる要素が無くてもエラーになる場合があります。
+If you export animation continuously, an error may occur due to full cache or other unexpected reasons.
 
-現状のアニメーション編集シーンを一度保存し、再度開きなおすことでエラーが解消されます。
+The error can be resolved by saving the current animation and reopening the edit window.
 
-### ローディング画面でエラーが出る
-hemの書き出しに成功しても、アニメーションを実装した後ローディング画面でエラーとなる場合もあります。
+### Error occurs on loading screen
+Even if the hem is successfully exported, an error may occur on the world loading screen after implementing the animation.
 
 ![PropAnimation_TroubleShooting_8](./img/PropAnimation_TroubleShooting_8.jpg)
 
-だいたい41%か42％あたりでこれが出る
+This may occur around 41% or 42%.
 
-### Legacyアニメーションにしていない
-Animatorコンポーネントを入れることで作成できるAnimationではLegacy設定がされていません。<br>
-[オブジェクトをアニメーションさせる - .hemファイル書き出し](PropAnimation.md)の④に記載があるので、参考にしてみてください。
+### Not set to Legacy animation
+Animation that can be created by inserting the Animator component does not have Legacy settings. <br>
+Please refer to step 4 of [How to Animate objects - Export .hem file (Heliodor Export Motion file)](PropAnimation.md#export-hem-file-heliodor-export-motion-file).
 
 ---
 
-## .heoファイル書き出しについて
-### 書き出しに失敗する
-Export Fieldでのオブジェクト書き出しが失敗することがあります。
+## About .heo file export
+### Export fails
+Exporting objects using Export Field may fail due to the following reasons:
 
-### ①VketCloudで使用できないシェーダーを使っている
-VketCloudが対応しているシェーダーは限られています。
-使用できないシェーダーの場合、下記画像のように「UnknownShader」として表示されます。
+### 1. You are using a shader that cannot be used with Vket Cloud
+The shaders that Vket Cloud supports are limited.
+If the shader cannot be used, it will be displayed as "UnknownShader" as shown in the image below.
 
 ![PropAnimation_TroubleShooting_9](./img/PropAnimation_TroubleShooting_9.jpg)
 
-### ②コンポーネント設定に不備がある
-上記画像では、Index was out of range.のエラーが表示されています。<br>
-こちらのエラーはuv2のないメッシュをMeshRendererで扱おうとすると発生するため、uv2の作成またはSkinnedMeshRendererの使用によって回避できます。
+### 2. There is a problem with the component settings
+In the image above, the error `Index was out of range`` is displayed. <br>
+This error occurs when you try to handle a mesh without uv2 with MeshRenderer, so you can avoid it by creating uv2 or using SkinnedMeshRenderer.
 
-このように、コンポーネント設定に不備がある場合、書き出しが失敗する可能性があります。
+Like this example, if the component settings are incorrect, the export may fail.
 
-### ③連続で色々なオブジェクトを書き出しすぎている
-アニメーション同様、連続で色々なオブジェクトを書き出しているとエラーとなる場合があります。<br>
-一度Unityシーンを再起動してから書き出しを行ってみましょう。
+### 3. Exporting too many different objects in succession
+As like animation in Vket Cloud, if you export various objects continuously, an error may occur. <br>
+Restart the Unity Editor and then try exporting if such error happens.
 
-## 書き出しは成功するが、シーン上に表示されない
-### ①書き出し座標がおかしい
-特例が無い限り、書き出し元オブジェクトの座標は(0,0,0)にしておきましょう。<br>
-HEOObjectとしてシーンに配置した際の座標は、HEOObjectがアタッチされたオブジェクトの座標 + 書き出し元オブジェクトの座標となります。
+## The export is successful, but it is not displayed on the scene
+### 4. The object position is incorrect
+Unless there is a special reason, set the position of the export source object to (0,0,0). <br>
+When placed in the scene as a HEOObject, the position will be where the object position of HEOObject, added with the position of the export source object.
 
-例：書き出し元オブジェクトの座標 = (5, 2, 10) 、HEOObjectアタッチオブジェクトの座標 = (-3, 2, -6)の場合、シーン表示位置 = (2 , 4 , 4)となる
+Example: If the position of the export source object is (5, 2, 10) and the position of the HEOObject attached object is (-3, 2, -6), the displaying position will be (2, 4, 4)
 
-### ②書き出し元オブジェクトのシェーダーがVketCloudに対応していない
-シェーダーが対応していないため表示されていない可能性があります。<br>
-Standardなどに変更してみて表示されるかどうかお試しください。
+### 5. The shader of the export source object is not compatible with Vket Cloud
+Objects may not be displayed because the shader is unsupported. <br>
+Please try changing it to something like Standard and see if it appears.
 
-!!! note 
-        ビルド後にVketCloudSDK > Tools > Open Release Folderを選択し、data > Sceneと遷移舌先で確認できるjsonファイル(シーンjson)にて、書き出したオブジェクト名を検索することで、シーン上での書き出しオブジェクト情報を確認することができます。<br>
-        検索してもヒットしない場合は、シーン上に反映されていません。
+!!! note
+        After build, select VketCloudSDK > Tools > Open Release Folder, go to data > Scene, and search for the exported object name in the json file (scene json) to check the exported object information on the scene. <br>
+        If there are no hits after searching, it is not displayed on the scene.
 
-## 書き出し後Unityを再起動したら、プロジェクトが立ち上がらなくなった
-稀にあります。
-原因は、テクスチャ圧縮用のbatの誤検知です。
+## After restarting Unity after exporting, the project no longer starts
+Rare error to happen.
+The cause is a false positive by the batch file used for texture compression.
 
 ![PropAnimation_TroubleShooting_10](./img/PropAnimation_TroubleShooting_10.jpg)
 
-解決するためには、batを削除する必要があります。<br>
-テクスチャ圧縮を行った後、batは不要となるため、予めテクスチャ圧縮を行ってから削除すると良いでしょう。
+To solve it you need to remove the batch file causing the error. <br>
+After compressing the texture, the batch file is no longer needed, so it is a good idea to compress the texture beforehand and then delete it.
 
 ---
 
-## HEOObjectのアニメーションについて
-### アニメーションが再生されない
+## About HEOObject animation
+### Animation not playing
 
-### ①アニメーションとオブジェクト階層・名称が一致していない
-VketCloudのアニメーションは、階層と名称に対して実行します。<br>
-例えば、子オブジェクト「Object_1」のPositionを変更するアニメーションを作成した場合、HEOObjectとして書き出しを行ったオブジェクト階層を原点として、子オブジェクトとなる「Object_1」という名称のオブジェクトを動かす、ということになります。
+### 1. Animation and object hierarchy/name do not match
+VketCloud animations are performed on hierarchies and names. <br>
+For example, if you create an animation that changes the position of the child object "Object_1", the child object named "Object_1" will be moved using the object hierarchy exported as HEOObject as the origin.
 
-この時、Object_1のオブジェクトの種類はアニメーション書き出し時とオブジェクト実装時で異なっていても構いません。
+At this case, the object type of Object_1 is allowed to be set different when exporting the animation and when implementing the object.
 
-また、原点となる親オブジェクトの名称は異なっていても構いません。
+Also, the name of the parent object that serves as the origin is allowed to be set different.
 
-### ②アニメーションが適用されていない
-HEOObjectのObject TypeをMotionに切り替えてアニメーションを入れるのを忘れた、PlayItemでアニメーションを再生するようにはしたが再生トリガーが実行できていない、など、アニメーションを適用しても何らかの理由で再生されないことがあります。
+### 2. Animation is not applied
+Even if the animation is applied, it does not play for some reason, such as switching the HEOObject's Object Type to Motion and forgetting to insert the animation, or trying to play the animation with a PlayItem but not being able to execute the playback trigger.
 
-こういった場合、「loopにチェックマークを入れ、Index 0に持ってきて動いているかどうかを調査する」のが一番手っ取り早いです。
+In this case, the quickest way is to "check the loop, bring it to Index 0, and check whether it is working."
 
 ![PropAnimation_TroubleShooting_11](./img/PropAnimation_TroubleShooting_11.jpg)
 
-動く場合、アニメーション再生トリガーに問題があります。
+If it moves, there is a problem with the animation playback trigger.
 
-それでも動かない場合、アニメーションの作りに問題があるので、HEM作成までの過程を見直してみると良いでしょう。
+If it still doesn't work, there is a problem with creating the animation, so you may want to review the process of creating the HEM.

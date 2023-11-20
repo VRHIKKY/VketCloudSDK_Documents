@@ -64,7 +64,7 @@ hemの書き出しに成功しても、アニメーションを実装した後�
 
 ### Legacyアニメーションにしていない
 Animatorコンポーネントを入れることで作成できるAnimationではLegacy設定がされていません。<br>
-[オブジェクトをアニメーションさせる - .hemファイル書き出し](PropAnimation.md#hemheliodor-export-motion)の④に記載があるので、参考にしてみてください。
+[オブジェクトをアニメーションさせる - .hemファイル書き出し](PropAnimation.md#hemheliodor-export-motion#hemheliodor-export-motion)の④に記載があるので、参考にしてみてください。
 
 ---
 
@@ -72,14 +72,14 @@ Animatorコンポーネントを入れることで作成できるAnimationでは
 ### 書き出しに失敗する
 Export Fieldでのオブジェクト書き出しが失敗することがあります。
 
-### ①VketCloudで使用できないシェーダーを使っている
-VketCloudが対応しているシェーダーは限られています。
+### ①Vket Cloudで使用できないシェーダーを使っている
+Vket Cloudが対応しているシェーダーは限られています。
 使用できないシェーダーの場合、下記画像のように「UnknownShader」として表示されます。
 
 ![PropAnimation_TroubleShooting_9](./img/PropAnimation_TroubleShooting_9.jpg)
 
 ### ②コンポーネント設定に不備がある
-上記画像では、Index was out of range.のエラーが表示されています。<br>
+上記画像では、`Index was out of range`のエラーが表示されています。<br>
 こちらのエラーはuv2のないメッシュをMeshRendererで扱おうとすると発生するため、uv2の作成またはSkinnedMeshRendererの使用によって回避できます。
 
 このように、コンポーネント設定に不備がある場合、書き出しが失敗する可能性があります。
