@@ -7,8 +7,8 @@
 - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/debugconsole/debugconsole.html)
 - [Debug Message](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/debugconsole/debugmessage.html)
 - [Browser window blackouts](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/BrowserBlackWindow.html)
-- [How to Animate an Object](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation.html) *English Version WIP
-- [How to Animate an Object - TroubleShooting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation_TroubleShooting.html) *English Version WIP
+- [How to Animate an Object](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation.html)
+- [How to Animate an Object - TroubleShooting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation_TroubleShooting.html)
 - [Missing Components After Version Update](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/MissingComponents.html)
 - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PresetAvatar.html)
 - [Occlusion Culling](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/OcclusionCulling.html) *English Version WIP
