@@ -130,7 +130,7 @@ Change the Object Mode to Motion, select Add (circle button), and enter the crea
 ![PropAnimation_22](./img/PropAnimation_22.jpg)
 
 For enabling loop animation, check loop. <br>
-By commiting build at this point, you can display animated objects on the scene.
+By committing build at this point, you can display animated objects on the scene.
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
@@ -140,7 +140,7 @@ By commiting build at this point, you can display animated objects on the scene.
         - If the original object has collision detection enabled, the exported object will also have collision detection. <br>
         - Even if you move an object in .hem, the collision detection information of the object will not be moved. <br>
         - The first animation in the Motion column will be automatically played when the world starts. <br>
-        If you do not want animations played on world start, please leave the first Motion article blank. <br>
+        If you do not want animations played on world start, please leave the first Motion entry blank. <br>
 
 ## Controlling animation set to HEOObject
 
