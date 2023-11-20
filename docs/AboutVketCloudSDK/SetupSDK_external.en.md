@@ -8,26 +8,40 @@ Open a project of a supported version ([Unity Pre-prep](OperatingEnvironment.md)
 Select "3D" as the template, if you need one.
 
 !!! note caution
-If you put a space in the project name, it may cause build failures and other issues. <br>
-We advise to avoid using full-width characters such as CJK characters.
+    If you put a space in the project name, it may cause build failures and other issues. <br>
+    We advise to avoid using full-width characters such as CJK characters.
 
-OK) MyProject NG) My Project , マイ　プロジェクト
+    OK) MyProject NG) My Project , マイ　プロジェクト
 
 ---
 ### Step 2. Register Registry information
+
+!!! note caution
+    On the release of Version 9.3, the SDK installation registry has been changed to the install wizard.<br>
+    If you want to install the install wizard on an existing project, you **must** create a new registry by selecting "+", and **do not overwrite** the existing SDK registry.<br>
+    After installing the install wizard, proceed to [Installing a specified version / Updating an existing SDK](#installing-a-specified-version-updating-an-existing-sdk).
+
+![SetupSDK_NewRegistry](img/SetupSDK_NewRegistry.jpg)
+
 Open the "Project Settings" window from the Unity menu Edit > Project Settings.
   
 Select "Package Manager" from the left tab in the window and describe as follows.
   
 | item | value |
 | ---- | ---- |
-| Name | VketCloudSDK Install Wizard |
-| URL | https://registry.npmjs.com |
-| Scope(s) | com.hikky.vketcloudsdk-install-wizard |  
+| Name |VketCloudSDK Install Wizard|
+| URL |https://registry.npmjs.com|
+| Scope(s) |com.hikky.vketcloudsdk-install-wizard|  
 
    ![Package](img/package.jpg)
   Finally, press the "Save" button to save the settings.
   
+!!! note
+    If the registry contains a space or any unneeded characters, the error below may appear.<br>
+    If the error appears, please check if a space is contained by mistake.
+
+![SetupSDK_RegistrySpaceError](img/SetupSDK_RegistrySpaceError.jpg)
+
 ---
 ### Step 3. Install the VketCloudSDK Install Wizard via Package Manager
   
@@ -86,12 +100,11 @@ The SDK manual and community discord server can be accessed from this window.
 
 ![InstallationWizard_7_en](img/InstallationWizard_7_en.jpg)
 
-# Installing a specified version / Updating an existing SDK
+## Installing a specified version / Updating an existing SDK
 
 For a project with an existing SDK, the SDK Version Manager can be used for switching and updating SDK versions.<br>
-The Package Manager and manifest.json editing is also available as well.
 
-## Version switch via SDK Version Manager
+### Version switch via SDK Version Manager
 
 1\. By selecting VketCloudSDK_Wizard > SDK Version Manager, the version selection window will appear.
 
@@ -118,6 +131,13 @@ The SDK manual and community discord server can be accessed from this window.
 !!! note caution
       On updating an existing SDK, Components may be gone missing after the update.<br>
       We strongly recommend to take a backup of the pre-update project by duplicating files.
+
+!!! note caution
+    If issues such as build errors appear on updating the SDK, please refer to the page below:<br>
+    [Version Update Troubleshooting](../troubleshooting/VersionUpdateTroubleshooting.md)
+
+!!! note caution
+    The version switching methods below remains to be usable, using the version manager is recommended.
 
 ### Version switching via Package Manager
 

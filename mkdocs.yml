@@ -140,7 +140,7 @@ plugins:
           Browser does not open: ブラウザが立ち上がらない
           Browser window blackouts: ブラウザウィンドウが暗転したまま動かない
           Changes are not applied: 変更が更新されない
-          Missing Components After Version Update: バージョンアップ後にComponentがMissingとして表示される
+          Version Update Troubleshooting: バージョンアップ後によくあるトラブル
           First Step: ワールド制作の基本
           Change Log: チェンジログ
           About Changelog: チェンジログについて
@@ -312,11 +312,13 @@ nav:
     - Browser does not open: troubleshooting/BrowserNotOpen.md
     - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Missing Components After Version Update: troubleshooting/MissingComponents.md
+    - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v9.x:
+        - v9.5: releasenote/releasenote-9.5.md
+        - v9.4: releasenote/releasenote-9.4.md
         - v9.3: releasenote/releasenote-9.3.md
         - v9.2: releasenote/releasenote-9.2.md
         - v9.1: releasenote/releasenote-9.1.md
@@ -365,6 +367,8 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v9.x:
+        - v9.5: changelog/changelog-9.5.md
+        - v9.4: changelog/changelog-9.4.md
         - v9.3: changelog/changelog-9.3.md
         - v9.2: changelog/changelog-9.2.md
         - v9.1: changelog/changelog-9.1.md

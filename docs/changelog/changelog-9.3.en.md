@@ -55,6 +55,12 @@
     - [HeliScript/Built-in functions - network](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_net.html)
     - [HeliScript/Built-in functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/hs/hs_system_function_gui.html)
         - Updated methods useable on current version
+- Trouble shooting
+    - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/troubleshooting/VersionUpdateTroubleshooting.html)
+        - Changed page title
+        - Added information on settings that may reset on updating to Ver9.3
+        - Added solution for version information not updated on settings window / HeliScript and gimmicks not working after update
+        - Added solution for file shown as corrupt after update
 
 # Deleted Pages
 - Auto Texture Compression

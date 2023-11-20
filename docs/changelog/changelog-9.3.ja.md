@@ -55,6 +55,12 @@
     - [HeliScript/組み込み関数 - ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function_net.html)
     - [HeliScript/組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function_gui.html)
         - 現バージョンにて使用できる関数を反映
+- トラブルシューティング
+    - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/troubleshooting/VersionUpdateTroubleshooting.html)
+        - 旧タイトルを改題
+        - Ver9.3へのアップデート時に欠落する恐れのある設定について追記
+        - 設定画面でのバージョン表記が旧バージョンのままになっている / HeliScript・ギミックがバージョンアップ後に動かない際の対処を追記
+        - ファイルの破損エラーが表示される際の対処を追記
 
 # 削除されたページ
 - 自動テクスチャ圧縮

@@ -15,17 +15,31 @@ VketCloudSDKをインストールするには、はじめにUnityのPackage Mana
 ---
 
 ## Step 2. レジストリ情報を登録する  
+
+!!! note caution
+    Version 9.3リリース以降、VketCloudSDK導入時に入力するレジストリがインストールウィザードのものに変更となりました。<br>
+    既存のプロジェクトにインストールウィザードを導入する際は**必ず**「+」ボタンを選択して新規のレジストリを追加し、SDKのレジストリを上書きしないようご注意ください。<br>
+    インストールウィザードをインストールした後、[任意のバージョンの導入・既存バージョンSDKのアップデート](#sdk)に移行してください。
+
+![SetupSDK_NewRegistry](img/SetupSDK_NewRegistry.jpg)
+
 Unityのメニュー Edit > Project Settings から「Project Settings」ウィンドウを開きます。ウィンドウ左側のタブから「Package Manager」を選択し、以下のように記載します。  
   
 |  項目  |  値  |
 | ---- | ---- |
-| Name | VketCloudSDK Install Wizard |
-| URL | https://registry.npmjs.com |
-| Scope(s) | com.hikky.vketcloudsdk-install-wizard |  
+| Name |VketCloudSDK Install Wizard|
+| URL |https://registry.npmjs.com|
+| Scope(s) |com.hikky.vketcloudsdk-install-wizard|  
 
    ![Package](img/package.jpg)
 
   最後に「Save」ボタンを押して設定内容を保存します。
+
+!!! note
+    上記レジストリをコピー&ペーストした際にスペース等不要な文字が含まれている場合、以下のようなエラーが出る場合があります。<br>
+    以下のエラーが出現した際はスペースが含まれていないかご確認ください。
+
+![SetupSDK_RegistrySpaceError](img/SetupSDK_RegistrySpaceError.jpg)
 
 ---
 
@@ -81,12 +95,11 @@ Unityに以下のインストールウィザード画面とメニュー表示が
 
 ![InstallationWizard_7_jp](img/InstallationWizard_7_jp.jpg)
 
-# 任意のバージョンの導入・既存バージョンSDKのアップデート
+## 任意のバージョンの導入・既存バージョンSDKのアップデート
 
-既にSDKを導入しているプロジェクトについては、SDK Version Managerを使用してバージョンの切り替え・アップデートが可能です。<br>
-また、以前のSDKバージョンのようにPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えも引き続き利用可能です。
+既にSDKを導入しているプロジェクトについては、SDKバージョンマネージャーを使用してバージョンの切り替え・アップデートが可能です。<br>
 
-## SDK Version Managerによるバージョン切り替え
+### SDK Version Managerによるバージョン切り替え
 
 1\. VketCloudSDK_Wizard > SDK Version Managerを押して、バージョン選択画面が表示されます。
 
@@ -112,6 +125,13 @@ Unityに以下のインストールウィザード画面とメニュー表示が
 !!! note caution
       既存のSDKのバージョンアップを行う際、アップデート後にComponentが欠落する現象が確認されています。<br>
       バージョンアップを行う際はプロジェクトの複製などによってバージョンアップ前の状態のバックアップを取ることを強くおすすめします。
+
+!!! note caution
+    SDKアップデート後にビルドエラー等の不具合が発生する場合は以下のページをご確認ください。
+    [バージョンアップ後によくあるトラブル](../troubleshooting/VersionUpdateTroubleshooting.md)
+
+!!! note caution
+    以下にて解説しているPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えは引き続き利用可能ですが、基本的にはSDKバージョンマネージャーの利用を推奨します。<br>
 
 ### Package Managerによるバージョン切り替え
 
