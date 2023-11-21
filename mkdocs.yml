@@ -98,6 +98,7 @@ plugins:
           NamePlate: ネームプレート
           GUI: GUI
           TextChat: テキストチャット
+          Physics: 物理演算
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
           Specifications Limits : VketCloudの仕様制限
@@ -139,7 +140,7 @@ plugins:
           Browser does not open: ブラウザが立ち上がらない
           Browser window blackouts: ブラウザウィンドウが暗転したまま動かない
           Changes are not applied: 変更が更新されない
-          Missing Components After Version Update: バージョンアップ後にComponentがMissingとして表示される
+          Version Update Troubleshooting: バージョンアップ後によくあるトラブル
           First Step: ワールド制作の基本
           Change Log: チェンジログ
           About Changelog: チェンジログについて
@@ -209,6 +210,7 @@ nav:
   - Texture Compression : heoexporter/he_TextureCompression.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
+    - HEOActivity: HEOComponents/HEOActivity.md
     - HEOAnimation: HEOComponents/HEOAnimation.md
     - HEOAreacollider: HEOComponents/HEOAreacollider.md
     - HEOAudio: HEOComponents/HEOAudio.md
@@ -297,6 +299,8 @@ nav:
         - NamePlate: hs/hs_system_function_nameplate.md
         - GUI: hs/hs_system_function_gui.md
         - TextChat: hs/hs_system_function_textchat.md
+        - ChatGPT: hs/hs_system_function_chatgpt.md
+        - Physics: hs/hs_system_function_physics.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_constrol.md
@@ -307,11 +311,14 @@ nav:
     - Browser does not open: troubleshooting/BrowserNotOpen.md
     - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Missing Components After Version Update: troubleshooting/MissingComponents.md
+    - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v9.x:
+        - v9.3: releasenote/releasenote-9.3.md
+        - v9.2: releasenote/releasenote-9.2.md
+        - v9.1: releasenote/releasenote-9.1.md
         - v9.0: releasenote/releasenote-9.0.md
     - v8.x:
         - v8.2: releasenote/releasenote-8.2.md
@@ -357,6 +364,9 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v9.x:
+        - v9.3: changelog/changelog-9.3.md
+        - v9.2: changelog/changelog-9.2.md
+        - v9.1: changelog/changelog-9.1.md
         - v9.0: changelog/changelog-9.0.md
     - v8.x:
         - v8.2: changelog/changelog-8.2.md

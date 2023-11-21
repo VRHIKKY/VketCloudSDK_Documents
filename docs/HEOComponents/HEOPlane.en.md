@@ -25,5 +25,5 @@ For details, please refer to the [specification limit](../WorldMakingGuide/Unity
     Further usage are to be added by future updates.
 
 !!! note
-    The `Billboard` setting in pre-Ver9.0 components has been renamed to `Look at Camera`.<br>
+    The `Billboard` setting in pre-Ver9.3 components has been renamed to `Look at Camera`.<br>
     If the scene data is migrated from past SDK versions, the `Billboard` setting value will be reflected to `Look at Camera`.

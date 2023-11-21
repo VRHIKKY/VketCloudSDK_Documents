@@ -120,6 +120,17 @@ This component lets you configurate the following settings:
 | `Avatar Files` | Vketchan_v1.6_Mtoon_blendshape | Set the avatar file that handles all the information for avatars. Refer to [this guide](../WorldMakingGuide/AvatarFile.md) for the details about Avatar Files. |
 | `CreateAvatarFile` | | Generate a new avatar file. |
 
+!!! note caution
+    When updating from Ver5.4 to Ver9.3, the HEOWorldSetting > Avatars > Avatar File settings may be missing, set the file by the procedure below on such occasion.
+
+If the HEOWorldSetting > Avatars > Avatar File settings is empty, or has no contents, it may lead to build errors or no avatars displayed on default.<br>
+
+![HEOWorldSetting_AvatarFileError_1](../troubleshooting/img/HEOWorldSetting_AvatarFileError_1.jpg)
+
+As the SDK has a default avatarfile, select this file if there is an empty entry in the list after switching the version.
+
+![HEOWorldSetting_AvatarFileError_2](../troubleshooting/img/HEOWorldSetting_AvatarFileError_2.jpg)
+
 ---
 
 ## MyAvatar
