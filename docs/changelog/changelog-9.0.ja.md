@@ -3,7 +3,9 @@
     - [複数のHEOコンポーネントの一括編集](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldEditingTips/MultiSelect_HEOComponents.html)
     - [UnlitマテリアルのContributeGI設定を外す](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldEditingTips/DisableContributeGITool.html)
     - [EditorOnlyタグの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/WorldEditingTips/EditorOnlyTag.html)
-- [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOBackgroundTexture.html)
+    - [デバッグモード](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldEditingTips/DebugMode.html)
+- HEOコンポーネント
+    - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/HEOComponents/HEOBackgroundTexture.html)
 
 # 変更されたページ
 - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.0/ja/AboutVketCloudSDK/SetupAvatar.html)
