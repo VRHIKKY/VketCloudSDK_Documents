@@ -5,7 +5,7 @@
 VketCloudSDKでは、[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
 動くオブジェクトがワールド上に設置されることで、見栄えが大きく向上します。
 
-各ステップで躓いた際はオブジェクトをアニメーションさせる[オブジェクトをアニメーションさせる - できないときは]()を参照してください。
+各ステップで躓いた際は[オブジェクトをアニメーションさせる - できないときは](PropAnimation_TroubleShooting.md)を参照してください。
 
 ## HEOAnimationのアタッチ
 
@@ -141,7 +141,7 @@ Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示され�
         - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
         - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
         - Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
-          自動再生したくない場合は、Motionは空欄にしてください<br>
+          自動再生したくない場合は、Motion欄の1番目は空欄にしてください。<br>
 
 ## HEOObjectに付与したアニメーションの制御
 
@@ -159,7 +159,7 @@ Indexは[PlayItem](../Actions/Item/PlayStopItem.md)にObject TypeがMotionのオ
 
 ![PropAnimation_23](./img/PropAnimation_23.jpg)
 
-Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてHEO Action Triggerを追加します。<br>
+Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてHEOActionTriggerを追加します。<br>
 
 ![PropAnimation_24](./img/PropAnimation_24.jpg)
 

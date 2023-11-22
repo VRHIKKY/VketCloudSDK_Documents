@@ -1,208 +1,204 @@
-# How to Animate an Object
+# How to Animate Objects
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-In VketCloudSDK, 
-VketCloudSDKでは、[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
-動くオブジェクトがワールド上に設置されることで、見栄えが大きく向上します。
+VketCloudSDK allows you to place animated objects in world using the [HEOAnimation](../HEOComponents/HEOAnimation.md) component or .heo files and .hem.
+Placing moving objects on the world will greatly improve the appearance.
 
-各ステップで躓いた際はオブジェクトをアニメーションさせる[オブジェクトをアニメーションさせる - できないときは](PropAnimation_TroubleShooting.md)を参照してください。
+If you stumble on each step, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
 
-## HEOAnimationのアタッチ
+## Animation by attaching HEOAnimation
 
-[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポーネントの`使い方`項目をご参照ください。
+Please refer to [HEOAnimation](../HEOComponents/HEOAnimation.md) for usage instructions.
 
-## HEOObjectにアニメーションを付与する方法
-オブジェクトを.heoに書き出し、アニメーションを.hemに書き出し、シーン上に配置することで、[HEOAnimation](../HEOComponents/HEOAnimation.md)より自由に動くオブジェクトを作成することができます。
+## How to add animation to HEOObject
+By exporting the object to .heo, exporting the animation to .hem, and placing it on the scene, you can create objects that move freely from [HEOAnimation](../HEOComponents/HEOAnimation.md).
 
-なお、ここで使用できるアニメーションのパラメータは**Transformの値変更のみ**です。
+Note that the only animation parameter that can be used here is **Transform value change**.
 
-### .hemファイル(Heliodor Export Motionファイル)を書き出す
+### Export .hem file (Heliodor Export Motion file)
 
-1\. アニメーション作成用に空の親オブジェクト(下記画像におけるAnimationBase)と動かすためのCubeオブジェクト（下記画像におけるCubeRotation）を新規作成し、親子関係をヒエラルキーにて構成した上でともにPosition(0,0,0)地点に設置します。<br>
+1\. Create a new empty parent object (Named as AnimationBase in the image below) for setting animation, and a new Cube object (CubeRotation in the image below) subject of animation, configure the parent-child relationship in a hierarchy, and then set them both to Position(0,0,0). <br>
     
 ![PropAnimation_1](./img/PropAnimation_1.jpg)
 
-2\. 空オブジェクトを選択し、InspectorビューのAdd ComponentからAnimationを追加します。<br>
-    誤ってCubeオブジェクトに対してAnimationを追記しないよう注意してください。
+2\. Select the empty object and add Animation by `Add Component` in the Inspector view. <br>
+     Be careful not to accidentally add animation to the Cube object.
 
 ![PropAnimation_2](./img/PropAnimation_2.jpg)
 
 !!! note
-        類似コンポーネントにAnimatorがありますが、こちらは使用しないので注意してください。
+         There is a similar component called Animator, but please note that this is not used.
 
-3\. Window > Animation > AnimationまたはCtrl+6でアニメーションタブを出します。
+3\. Open the animation tab by selecting `Window > Animation > Animation` or Ctrl+6.
 
 ![PropAnimation_3](./img/PropAnimation_3.jpg)
 
-4\. Animation Clipを作ります。<br> **空の親オブジェクト**を選択している状態でAnimationタブを表示し、画像の表示のCreateをクリックし、.anim形式のファイルを作成します。
+4\. Create an Animation Clip. <br> Display the Animation tab with the **Empty Parent Object** selected and click `Create` as shown on the image to create a .anim file.
 
 ![PropAnimation_4](./img/PropAnimation_4.jpg)
 
-空の親オブジェクトのInspectorのAnimationsのプロパティに作成したアニメーションが設定されていることを確認します。
+Make sure that the animation you created is set in the Animations property of the Inspector of the empty parent object.
 
 ![PropAnimation_5](./img/PropAnimation_5.jpg)
 
-5\. Projectビューで作成したアニメーションファイルを確認します。<br>
-Inspectorビューが下記画像のようになっていたらOKです。
+5\. Check the created animation file in the Project view. <br>
+If the Inspector view looks like the image below, the setting is going OK!
 
 ![PropAnimation_6](./img/PropAnimation_6.jpg)
 
-もし、下記画像のように上記とInspectorビューの中身が異なる場合、追加作業が必要です。
+If contents of the Inspector view differs from the above image and is shown like below, additional work is required.
 
 ![PropAnimation_7](./img/PropAnimation_7.jpg)
 
-右上の縦に並んだ「…」を選択し、Debugを選択します。
+Select the vertical “…” in the upper right corner and select `Debug`.
 
 ![PropAnimation_8](./img/PropAnimation_8.jpg)
 
-Legacyにチェックを入れます。
+Check Legacy.
 
 ![PropAnimation_9](./img/PropAnimation_9.jpg)
 
-再度「…」を選び、Normalを選択して作業完了です。
+Select "..." again and select Normal to complete the task.
 
 ![PropAnimation_10](./img/PropAnimation_10.jpg)
 
-6\. AnimationウィンドウにてAdd Propertyで動かしたい項目を選びます。<br>
-空オブジェクトを選択していることを確認し、Animationウインドウを開きます。Add Propertyを選択すると、子オブジェクトであるCubeオブジェクトが確認できます。<br>
+6\. Select the item you want to move using `Add Property` in the Animation window. <br>
+When opening the Animation window, please make sure the empty object is selected. When you select `Add Property`, you can check the Cube object. <br>
 
-ここでは、CubeRotation - Transformから、RotationとScaleを選択します。＋ボタンを押すことで、項目を追加することができます。それぞれ追加してください。
+Here, select Rotation and Scale from `CubeRotation - Transform`. You can add items by pressing the + button, so please add each.
 
 ![PropAnimation_11](./img/PropAnimation_11.jpg)
 
 !!! note
-        手順②でAdd ComponentでAnimationを追加する際、誤って子オブジェクトのCubeオブジェクトに対してAnimationを追加してしまっていないか確認してください。<br>
-        そのまま作業を進めてしまうと`KeyNotFoundException: The given key was not present in the dictionary.`が発生する原因となります。
+    When adding Animation using `Add Component` in step 2, make sure that you have not accidentally added Animation to the Cube object. <br>
+    Proceeding as is will cause `KeyNotFoundException: The given key was not present in the dictionary.` to occur.
 
-詳しいアニメーションの作り方はここでは説明しませんが、
-- 始点と終点はすべての項目でキーフレームが入力されている必要がある
-- Animationコンポーネントをアタッチしたオブジェクト（空オブジェクト）を動かしていない
-の2点は守ってください。
+We will not explain in detail how to create an animation here, but follow the points below:
+- Keyframes must be entered for all items for the start and end points.
+- The object to which the Animation component is attached (empty object) is not moving
 
-キーフレームをいくつか追加し、任意のアニメーションを作成してください。
+Add some keyframes and create an animation at your choice!
 
 ![PropAnimation_12](./img/PropAnimation_12.jpg)
 
-入力が完了したら、Inspectorビュー上でAnimationを持つオブジェクト（空オブジェクト）を選んだ状態で、画面上部VketCloudSDKタブの「Export Motion」を選択してください。<br>
-選択後、.hemの保存場所選択ウィンドウが起動するので、任意の場所に任意の名前で保存してください。
+Once setting animation is complete, select the object with Animation (empty object) on the Inspector view and select `"Export Motion"` on the VketCloudSDK tab at the top of the screen. <br>
+After selecting, the explorer will appear to designate a .hem save location, so save it in any location with a name at your choice.
 
 ![PropAnimation_13](./img/PropAnimation_13.jpg)
 
-保存後、Unityのコンソール(標準だと左下)に「Exported」が出たら書き出し完了です。
+After saving, the export is complete when `"Exported"` appears on the Unity console (console is located on bottom left by default).
 
 ![PropAnimation_14](./img/PropAnimation_14.jpg)
 
 !!! note
-        エラーが出てしまった場合は [オブジェクトをアニメーションさせる - できないときは](PropAnimation_TroubleShooting.md) を参照するようにしてください。
+        If an error occurs, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
 
-### .heoファイル(Heliodor Export Objectファイル)を書き出す
+### Export .heo file (Heliodor Export Object file)
 
 ![PropAnimation_15](./img/PropAnimation_15.jpg)
 
-上記でAnimationコンポーネントを入れたオブジェクト（空オブジェクト）を選択した状態でVketCloudSDKの`「Export Field」`を選択してください。
+Select the object containing the Animation component (empty object) above and select `Export Field` on the VketCloudSDK menu.
 
 ![PropAnimation_16](./img/PropAnimation_16.jpg)
 
-.hemと同じく保存画面が出ますが、.heoの保存の際は複数オブジェクトが作成されるため、**新しいフォルダを作り、その中に保存すること**を推奨します。<br>
-（上記画像ではAssetsフォルダ内に新規のCubeRotationフォルダを作成しています）<br>
-保存が成功すると、以下のポップアップウインドウが表示されます。
+The same save screen as .hem will appear, but multiple objects will be created when saving .heo, so we recommend creating a new folder and saving it there. <br>
+(In the image above, a new CubeRotation folder is created in the Assets folder)<br>
+If the save is successful, the following pop-up window will appear.
 
 ![PropAnimation_17](./img/PropAnimation_17.jpg)
 
-正しく保存されたことを確認するため、コンソールタブを開き、下記のような画面が出たら保存完了です。<br>
+To confirm that the file was saved correctly, open the console tab to see if the  when message below appears. <br>
 
 ![PropAnimation_18](./img/PropAnimation_18.jpg)
 
-新しく空のオブジェクトを作成してInspectorタブを選択し、Add Componentを押下し、[HEOObject](../HEOComponents/HEOObject.md)を追加します。
+Create a new empty object, select the Inspector tab, press Add Component, and add [HEOObject](../HEOComponents/HEOObject.md).
 
 ![PropAnimation_19](./img/PropAnimation_19.jpg)
 
-.heo or .vrmの”select”の左にある丸ボタンを押下し、先程作成した.heoファイルを選択します。
+Click the circle button to the left of “select” for .heo or .vrm and select the .heo file created previously.
 
 ![PropAnimation_20](./img/PropAnimation_20.jpg)
 
-.heoファイルを入れ、"Show Preview"を選択すると空オブジェクトの位置に選択したheoファイルのプレビューが出現します。<br>
-空オブジェクトのTransformはオブジェクトを生成したい位置に設定します。
+Insert a .heo file and select `"Show Preview"`, the preview of the selected heo file will appear at the empty object position. <br>
+Set the empty object's Transform to the position where you want the object to be generated.
 
 ![PropAnimation_21](./img/PropAnimation_21.jpg)
 
-Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示された欄の.hemに作成した.hemファイルを入れます。
+Change the Object Mode to Motion, select Add (circle button), and enter the created .hem file in .hem in the displayed field.
 
 ![PropAnimation_22](./img/PropAnimation_22.jpg)
 
-ループアニメーションの場合は、loopにチェックを入れます。<br>
-この状態でビルドすることで、アニメーション付きのオブジェクトをシーン上に出すことができます。
+For enabling loop animation, check loop. <br>
+By committing build at this point, you can display animated objects on the scene.
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
 !!! note caution
-        .heo書き出しの注意点：<br>
-        - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、[HEOObject](../HEOComponents/HEOObject.md)にてシーン上に配置した際に、[HEOObject](../HEOComponents/HEOObject.md)のPosition + 書き出し時のPositionになります。<br>
-        - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
-        - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
-        - Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
-          自動再生したくない場合は、Motionは空欄にしてください<br>
+        Notes when exporting .heo: <br>
+        - If you export the original object without setting its Position to (0,0,0), the placement position will be the [HEOObject](../ HEOComponents/HEOObject.md) Position added with the Position value at the time of export. <br>
+        - If the original object has collision detection enabled, the exported object will also have collision detection. <br>
+        - Even if you move an object in .hem, the collision detection information of the object will not be moved. <br>
+        - The first animation in the Motion column will be automatically played when the world starts. <br>
+        If you do not want animations played on world start, please leave the first Motion entry blank. <br>
 
-## HEOObjectに付与したアニメーションの制御
+## Controlling animation set to HEOObject
 
-### Actionを使用した制御
+### Control using Actions
 
-[PlayItem](../Actions/Item/PlayStopItem.md)で[HEOObject](../HEOComponents/HEOObject.md)に付与したアニメーションの再生が可能です。<br>
-Indexは[PlayItem](../Actions/Item/PlayStopItem.md)にObject TypeがMotionのオブジェクトを入れた際に出現します。
+You can play the animation added to [HEOObject](../HEOComponents/HEOObject.md) by using the  [PlayItem](../Actions/Item/PlayStopItem.md) action. <br>
 
-!!! note 
-        [PlayItem](../Actions/Item/PlayStopItem.md)：アイテムを再生する。Indexは再生対象となるMotion番号です。<br>
-        PlayItemはMotionの入ったHEOオブジェクトのほか、AudioやParticleに対しても有効です。
+!!! note
+        [PlayItem](../Actions/Item/PlayStopItem.md): Plays the designated item. The Index setting is the Motion number to be played. <br>
+        PlayItem is valid for HEO objects containing Motion, as well as Audio and Particles.
 
-アニメーションするCubeのアニメーションを2番目に設定し、Loopしないようにし、BeginActions上部の”Add”をクリックしてMotion欄を追加します。<br>
-1つ目のMotionでは.hemに指定されているモーションを削除し、2つ目のMotionに.hemファイルを指定します。
+Set the animation of the animated Cube to be the second one with loop disa, and click “Add” at the top of BeginActions to add the Motion field. <br>
+Delete the motion specified in .hem in the first Motion, and specify the .hem file in the second Motion.
 
 ![PropAnimation_23](./img/PropAnimation_23.jpg)
 
-Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてHEO Action Triggerを追加します。<br>
+Create a new Sphere object, place it to the right, select Add Component from the Inspector tab, and add a HEOActionTrigger. <br>
 
 ![PropAnimation_24](./img/PropAnimation_24.jpg)
 
-Actionsの下のList is Emptyと書かれている右下の＋ボタンを押下し、[PlayItem](../Actions/Item/PlayStopItem.md)を選択します。<br>
+Under Actions, press the + button at the bottom right where it says List is Empty and select [PlayItem](../Actions/Item/PlayStopItem.md). <br>
 
 ![PropAnimation_25](./img/PropAnimation_25.jpg)
 
-
-Targetの欄で.heoと.hemを追加したオブジェクトを選択したし、対象となるMotionのIndex番号を入力します。<br>
-先程1つ目のMotionは空にし（Index 0）、2つ目のMotion（Index 1）に作動させたいMotionを設定したため、Indexは1と入力します。
+Select the object to which .heo and .hem have been added in the Target field, and enter the index number of the target Motion. <br>
+Earlier, the first Motion (Index 0) has been left empty, while the Motion we want to activate is in the second Motion (Index 1), so enter 1 for Index.
 
 ![PropAnimation_26](./img/PropAnimation_26.jpg)
 
-ビルドすると、クリックした時のみCubeが回転（Motionが再生）するようになります。
+On world build, the Cube will rotate (play Motion) when clicked.
 
 ![PropAnimation_Result_2](./img/PropAnimation_Result_2.gif)
 
 !!! note
-        [StopItem](../Actions/Item/PlayStopItem.md)について：<br>
-        [PlayItem](../Actions/Item/PlayStopItem.md)の対になるアクションに[StopItem](../Actions/Item/PlayStopItem.md)があります。<br>
-        一見、再生中のアニメーションを停止しそうなアクションですが、StopItemの効果はbeginactionの停止であり、再生中のアニメーションはBeginActionsに該当しないので止まりません。<br>
-        StopItemはパーティクルやサウンドを止めるのに使うことができます。
+        About [StopItem](../Actions/Item/PlayStopItem.md):<br>
+        [StopItem](../Actions/Item/PlayStopItem.md) is a companion action to [PlayItem](../Actions/Item/PlayStopItem.md). <br>
+        Although this action might seem to stop the playing animation, but the effect of StopItem is to stop beginaction, which the playing animation does not fall under BeginActions and will not stop. <br>
+        StopItem can be used to stop particles or sounds.
 
-### HeliScriptを使用した制御
+### Control using HeliScript
 
-HeliScriptを使用して、アニメーションの制御を行うことができます。<br>
-例として、以下のように3秒ごとにアニメーションの再生を繰り返すHeliScriptが作成できます。<br>
+Animation can be controlled using HeliScript. <br>
+As an example, you can create a HeliScript that repeats animation playback every 3 seconds as shown below. <br>
 
-ここでは[Itemクラス](../hs/hs_class_item.md)のChangeMotion()を使用して[HEOObject](../HEOComponents/HEOObject.md)内のモーションを制御しています。<br>
+Here, ChangeMotion() of [Item class](../hs/hs_class_item.md) is used to control the motion in [HEOObject](../HEOComponents/HEOObject.md). <br>
 
 ``````
 component SwitchAnimation
 {
-    // 回転キューブ
+    // rotating cube
     Item m_RotationCube;
     float m_ParseTime;
 
     bool isMotionChangeTriggered;
 
-    public SwitchAnimation() //コンストラクタ
+    public SwitchAnimation() //constructor
     {
-        m_RotationCube = hsItemGet("CubeRotation_HEO"); //HEOObjectをアタッチしているオブジェクト名を入れる
+        m_RotationCube = hsItemGet("CubeRotation_HEO"); //Enter the object name to which HEOObject is attached
     }
 
     public void Update()
@@ -227,10 +223,10 @@ component SwitchAnimation
 }
 ``````
 
-作成したHeliScriptは、HEOScriptを使用してワールド内に配置します。
+Place the created HeliScript in the world using HEOScript.
 
 ![PropAnimation_27](./img/propanimation_27.jpg)
 
-ワールドをビルドすると、該当のHeliScriptが動作してアニメーションを制御します。
+On world build, the corresponding HeliScript will run and control the animation.
 
 ![PropAnimation_Result_3](./img/PropAnimation_Result_3.gif)
