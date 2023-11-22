@@ -1,42 +1,42 @@
 # Occlusion Culling
 
-プレイヤーの視界内に遮蔽物（例：巨大なビル、壁、etc...)などがある場合、その遮蔽物の向こう側は実際には表示されないため、描画する必要がありません。<br>
-該当する部分にオクルージョンカリングを設定することで見えない部分の描画を切り、最適化と軽量化を行うことができます。
+If there is an obstruction (e.g. a huge building, wall, etc.) within the player's field of vision, there is no need to draw it because the other side of the obstruction is not actually visible. <br>
+By setting occlusion culling to the relevant parts, you can cut off the drawing of invisible parts and optimize and reduce the weight.
 
-## 設定手順
+## Setup steps
 
-例として、ここでは遮蔽物としてCubeを用意します。
+As an example, here we will prepare a Cube as a shield.
 ![OcclusionCulling_1](img/OcclusionCulling_1.jpg)
 
-このとき、Cube自体をプレイヤーに見せる必要がない場合はMeshRendererのチェックマークを外して透明にしてもかまいません。<br>
+At this time, if you do not need to show the Cube itself to the player, you can uncheck MeshRenderer and make it transparent. <br>
 ![OcclusionCulling_2](img/OcclusionCulling_2.jpg)
 
-次に、Cubeの向こう側に遮蔽される対象としてSphereを設置します。
+Next, set up a Sphere as a shielded target on the other side of the Cube.
 ![OcclusionCulling_3](img/OcclusionCulling_3.jpg)
 
-Cubeには[HEOCollider](../HEOComponents/HEOCollider.md)を入れ、ColliderTypeをOcclusionに設定します。
+Insert [HEOCollider](../HEOComponents/HEOCollider.md) into the Cube and set ColliderType to Occlusion.
 ![OcclusionCulling_4](img/OcclusionCulling_4.jpg)
 
-また、[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)のOcclusion Cullingにチェックを入れ、ビルドします。
+Also, check Occlusion Culling in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md) and build.
 ![OcclusionCulling_5](img/OcclusionCulling_5.jpg)
 
-カメラとSphereの間にOcclusion設定を行ったCubeが入ることで、Sphereが非表示になります。
-この時、Cubeには当たり判定もカメラ非貫通判定もありません。
+The Sphere will be hidden by placing a Cube with Occlusion settings between the camera and the Sphere.
+At this time, the Cube has neither hit detection nor camera non-penetration detection.
 
 ![OcclusionCulling_Result](img/OcclusionCulling_Result.gif)
 
-## オクルージョンカリングのデバッグ方法
+## How to debug occlusion culling
 
-[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)でDebugModeをオンにしている場合、F1キーを2回押すことで画面上部に情報表示することができます。
+If DebugMode is turned on in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), information can be displayed at the top of the screen by pressing the F1 key twice.
 
-表示された情報の1番上の行の「DrawCall(Field)」の隣の数字が現在表示されているオブジェクトのドローコール数で、OCがオクルージョンカリング設定がONになっている表示です。<br>
-この状態でオクルージョンカリングによるオブジェクトの表示/非表示をカメラ移動等で行うことで、ドローコール数の増減が確認できると思います。<br>
-ドローコール数に増減がある場合、オクルージョンカリングが正常に動作していることを表します。<br>
+The number next to "DrawCall(Field)" on the top line of the displayed information is the number of draw calls for the currently displayed object, and the OC indicates that the occlusion culling setting is ON. <br>
+In this state, you can check the increase or decrease in the number of draw calls by showing/hiding objects using occlusion culling by moving the camera, etc. <br>
+An increase or decrease in the number of draw calls indicates that occlusion culling is working properly. <br>
 ![OcclusionCulling_6](img/OcclusionCulling_6.jpg)
 
-また、DebugModeをオンにしている場合、F4キーでオクルージョンカリングそのものの機能オンオフを切り替えることができます。
+Also, if DebugMode is on, you can toggle occlusion culling itself on and off with the F4 key.
 
 ## Tips
 
-カメラ機能で視点を動かした場合でも、オクルージョンカリングの表示非表示が発生します。<br>
-カメラ位置によってオクルージョンカリングが動作せず、ドローコール数が増え重たくなってしまうといったことも起こりえるので、ドローコール数調整はオクルージョンカリングに頼りきらないようにしましょう。
+Even if you move the viewpoint using the camera function, occlusion culling will be displayed or hidden. <br>
+Depending on the camera position, occlusion culling may not work and the number of draw calls may increase and become heavy, so avoid relying entirely on occlusion culling to adjust the number of draw calls.
