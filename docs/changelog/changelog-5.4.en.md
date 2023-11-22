@@ -45,7 +45,7 @@
     - Edited content according to Ver5.4 
     - Added restriction on using lights
 - [HEMAnimationConverter](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEMAnimationConverter/AnimationConverter.html)
-    - Revised content according to Ver5.4 *English Version WIP
+    - Revised content according to Ver5.4
 - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/AvatarFile.html)
     - Added specifications of AvatarFile
 - [AutoTextureCompresser](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AutoTextureCompresser/AutoTextureCompresser.html)
