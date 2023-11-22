@@ -1,31 +1,31 @@
-# デバッグモード
+# Debug Mode
 
-[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)にてデバッグモードを有効にすると、ワールドをビルドした際に様々な検証用機能が使えるようになります。<br>
-デバッグモードが有効なとき、F1～F7キーでデバッグ機能を使うことが出来るようになります。
+By enabling the debug mode on [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), various debug features will be available for use on world build. <br>
+When debug mode is enabled, each feature can be toggled using F2~F9 keys.
 
-## F9：UI非表示
+## F9: Toggle UI Display
 
 ![DebugMode_1](./img/DebugMode_1.jpg)
 
-画面上に表示されるUIをすべて非表示にすることができます。再度F9を押すことでUIを表示します。<br>
-ワールド内のイメージのスクリーンショットを撮影する際に便利です。
+Toggle display of all UI objects on window. By reentering F9, the UI will be displayed.<br>
+This can be used for taking in-world screenshots.
 
-なお、本機能はデバッグモードを作動していない状態でも機能するようになっております。<br>
-ただし、カメラUIを消すことはできません。
+This feature can be used when debug mode is not enabled.<br>
+Note that camera UI cannot be disappeared.
 
-Ver9.0以前のSDKでは**F1**キーが割り当てられていましたが、現バージョンではF9で使用できます。
+In previous SDK versions than Ver9.0, the **F1** key was allocated for this feature. Current versions use the **F9** key.
 
-## F2：ライトスキャタリング設定
+## F2: Light Scattering Settings
 
 ![DebugMode_2](./img/DebugMode_2.jpg)
 
-ライトスキャタリング設定を調整するUIを表示します。
-LSタブのUseをクリックし、各パラメータゲージを操作することで色合いを変更することができます。
-再度Useをクリックするとライトスキャタリング設定未適用状態に戻ります。
+Display the UI for adjusting light scattering settings.<br>
+After clicking the "Use" button on the LS tab, each settings will be applied by twitching the parameter bar.<br>
+By clicking "Use" again, the light scattering settings will be unapplied.
 
-ライトスキャタリング設定については[こちら](../HEOComponents/HEOWorldSetting.md)をご確認ください。
+For each settings details of light scattering, please refer to the [settings page](../HEOComponents/HEOWorldSetting.md).
 
-SDK9.0では「Lens」という項目が追加され、カメラフィルターが使えるようになっています。
+On SDK9.0, the "Lens" settings has been added with the camera filters below:
 
 ![DebugMode_Camera_1](./img/DebugMode_Camera_1.jpg)
 
@@ -33,80 +33,79 @@ SDK9.0では「Lens」という項目が追加され、カメラフィルター�
 
 ![DebugMode_Camera_3](./img/DebugMode_Camera_3.jpg)
 
-## F3：当たり判定表示
+## F3: Display Collision
 
 ![DebugMode_3](./img/DebugMode_3.jpg)
 
-ワールド内の当たり判定を表示します。
-クリック判定は赤色、(0,0,0)地点は紫色、BoxColliderは枠線表示になります。
+Displays colliders placed in world.<br>
+The clickable colliders will be displayed in red, origin(0,0,0) in purple, and BoxCollider by frames.
 
-※Mesh Rendererを無効にした状態でHEOObjectに書き出したクリック判定は表示されません。
+*If Mesh Renderer is disabled, clickable colliders in HEOObjects will not be shown.
 
 ![DebugMode_3_Append](./img/DebugMode_3_Append.jpg)
 
-また、SDK9.0では以下の3種類が追加されました。具体的には：
+In addition, the displays below have been added on SDK9.0 as below:
 
-・橙　：　プレイヤーのクリック判定です。
-・黄　：　エリアコライダーです。
-・緑　：　ReflectionProbeの範囲です。
+- Orange: Player Click Collision
+- Yellow: Area Collider
+- Green: Range of ReflectionProbe
 
-以上の3種類です。
-
-## F4：オクルージョンカリング
+## F4: Occlusion Culling
 
 ![DebugMode_4](./img/DebugMode_4.jpg)
 
-ドローコール情報の隣に「OC」の表記が出ます。
-再度F4を押すと消えます。
-「OC」表示がされている間のみ、オクルージョンカリング機能が有効になります。
+The "OC" indicator will appear on side of draw call information.<br>
+The indicator will disappear when entering F4 again.<br>
 
-オクルージョンカリング機能を使うためには別途準備が必要です。
-詳しくは[こちら](../WorldMakingGuide/OcclusionCulling.md)をご確認ください。
+When "OC" is indicated, the occlusion culling will be enabled.
 
-## F5：Script情報表示
+To implement occlusion culling, preparation is needed.<br>
+For details, please refer to the [Occlusion Culling](../WorldMakingGuide/OcclusionCulling.md) page.
+
+## F5: Display Script Information
 
 ![DebugMode_5](./img/DebugMode_5.jpg)
 
-Script情報を表示します。
-ページカウント、ローカルフレームカウント、オペランドスタックカウントの3種類を表示します。
+Displays Script information.<br>
+This feature displays page count, local frame count, and operand stack count.
 
-F2で表示されるウィンドウのScriptタブと同様です。
+Content is same as the Script tab in the debug window which toggled by entering F2.
 
-!!! 表示情報について
-    - ページカウント： いま生きているオブジェクトの数 (0以上の値になっているはず)
-    - ローカルフレームカウント： 関数フレームのスタック状態 (0であるはず。そうでなければ異常)
-    - オペランドスタックカウント： 演算用スタックに積まれている要素数 (0であるはず。そうでなければ異常) 
+!!! Details of Script Information
+    - Page Count: Count of currently active objects (Should be more than 0)
+    - Local Frame Count: Stack count of function frames (Should be 0. If it's not, there's a bug somewhere!)
+    - Operand Stack Count: Count of stacks in operand stack (Should be 0. If it's not, there's a bug somewhere!)
 
-## F6：当たり判定無視
+## F6: Ignore Collision
 
 ![DebugMode_6](./img/DebugMode_6.jpg)
 
-当たり判定を無視して移動できるようになります。
-ジャンプ機能が使えなくなるかわりに、Rキーで上方に、Fキーで下方に動くことができます。
+Enables moving space by ignoring collision.<br>
+Jumping will be disabled, and instead the player can move upwards by R key and downwards by F key.
 
-しかし、エリアコライダーの侵入退出は発生します。
+Please note that area collider events will fire even when collision is ignored.
 
-直前の上下移動の加速度を記憶しており、ジャンプした瞬間にF6を押した場合、
-解除時にジャンプが実行されます。
+The upward/downward velocity before enabling this will be saved.<br>
+If the player was jumping before pressing F6, the jump will resume when feature is disabled.
 
-## F7：GUI情報表示
+## F7: Toggle GUI Information Display
 
 ![DebugMode_7](./img/DebugMode_7.jpg)
 
-Image、Text、Buttonについて表示状況や座標等の情報を確認することができます。
+Displays status / information such as positions of GUI elements like Image, Text, and Button.
 
-| 名称 | 内容 |
+| Label | Content |
 | ---- | ---- |
-| Name | GUIの名称です。|
-| Show | 表示状態をShow/hideで示します。 |
-| Pos | 座標です。 |
-| Z | 表示優先度です。 |
-| Size | 大きさです。 |
-| Pivot | 中心点です。 |
-| Anchor | アンカーの情報です。 |
+| Name | The name of GUI element. |
+| Show | Shows display status as Show/hide. |
+| Pos | Position of element. |
+| Z | Depth order. |
+| Size | Element size. |
+| Pivot | Pivot position of element. |
+| Anchor | Information of element anchor.|
 
-## F8【SDK9.0】ステータス非表示
+## F8: Toggle Status Display
 
 ![DebugMode_8](./img/DebugMode_8.jpg)
 
-画面上部のステータスを非表示にします。
+Toggles the status display on top of the window.
