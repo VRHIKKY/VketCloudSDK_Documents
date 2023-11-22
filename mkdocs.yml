@@ -148,6 +148,7 @@ plugins:
           About Release Note: リリースノートについて
           HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
+          Debug Mode: デバッグモード
           Debug Console: デバッグコンソール
           Debug Messages: デバッグメッセージ一覧
           World Making Guide: ワールド制作ガイド
@@ -188,6 +189,7 @@ nav:
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
+    - Debug Mode: WorldEditingTips/DebugMode.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :

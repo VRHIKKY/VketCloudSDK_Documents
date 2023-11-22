@@ -15,7 +15,7 @@ This component lets you configurate the following settings:
 |  Label | Initial Value | function |
 | ----   | ---- | ---- |
 |  `World Name` | "world" | Set the name of the World. This value will be autofilled by the generated world ID on upload, which will mainly be used for the world URL.<br> (e.g. [VketID_of_Creator].cloud.vket.com/worlds/[World_Name]) |
-|  `Debug Mode`  | false |  Switch to debug mode. When switched on, players can use the F1/F2 key to access the debug menu on browser.|
+|  `Debug Mode`  | false |  Switch to debug mode. When switched on, players can use the F1/F2 key to access the debug menu on browser.<br>For details, refer to the [debug mode]((../WorldEditingTips/DebugMode.md)) page.|
 | `Use Avatar Click`| true | Activate functions running when clicking other players. |
 |  `VRM Drop`  | false | Allows users to locally change their avatar by drag-and-dropping their own .vrm avatars to the browser screen.  |
 |  `Occulusion Culling`  | false | Activate the Occulusion Culling.<br>For instructions, please refer to [Occlusion Culling](../WorldMakingGuide/OcclusionCulling.md).  |
