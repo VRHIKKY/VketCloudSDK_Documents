@@ -4094,7 +4094,7 @@
 <p><img alt="PropAnimation_Result_1" src="img/PropAnimation_Result_1.gif" /></p>
 <p>VketCloudSDKでは、<a href="../HEOComponents/HEOAnimation.html">HEOAnimation</a>コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
 動くオブジェクトがワールド上に設置されることで、見栄えが大きく向上します。</p>
-<p>各ステップで躓いた際はオブジェクトをアニメーションさせる<a href="">オブジェクトをアニメーションさせる - できないときは</a>を参照してください。</p>
+<p>各ステップで躓いた際は<a href="PropAnimation_TroubleShooting.html">オブジェクトをアニメーションさせる - できないときは</a>を参照してください。</p>
 <h2 id="heoanimation">HEOAnimationのアタッチ</h2>
 <p><a href="../HEOComponents/HEOAnimation.html">HEOAnimation</a>コンポーネントの<code>使い方</code>項目をご参照ください。</p>
 <h2 id="heoobject">HEOObjectにアニメーションを付与する方法</h2>
@@ -4179,7 +4179,7 @@ Inspectorビューが下記画像のようになっていたらOKです。</p>
 - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
 - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
 - Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
-  自動再生したくない場合は、Motionは空欄にしてください<br></p>
+  自動再生したくない場合は、Motion欄の1番目は空欄にしてください。<br></p>
 </p>
 </div>
 <h2 id="heoobject_1">HEOObjectに付与したアニメーションの制御</h2>
@@ -4194,7 +4194,7 @@ PlayItemはMotionの入ったHEOオブジェクトのほか、AudioやParticle�
 <p>アニメーションするCubeのアニメーションを2番目に設定し、Loopしないようにし、BeginActions上部の”Add”をクリックしてMotion欄を追加します。<br>
 1つ目のMotionでは.hemに指定されているモーションを削除し、2つ目のMotionに.hemファイルを指定します。</p>
 <p><img alt="PropAnimation_23" src="img/PropAnimation_23.jpg" /></p>
-<p>Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてHEO Action Triggerを追加します。<br></p>
+<p>Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてHEOActionTriggerを追加します。<br></p>
 <p><img alt="PropAnimation_24" src="img/PropAnimation_24.jpg" /></p>
 <p>Actionsの下のList is Emptyと書かれている右下の＋ボタンを押下し、<a href="../Actions/Item/PlayStopItem.html">PlayItem</a>を選択します。<br></p>
 <p><img alt="PropAnimation_25" src="img/PropAnimation_25.jpg" /></p>
