@@ -102,7 +102,7 @@ plugins:
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
           Specifications Limits : VketCloudの仕様制限
-          ReflectionProbe: 反射を写り込ませるには
+          ReflectionProbe: リフレクションプローブ
           Texture Compression: テクスチャ圧縮
           Physics Engine: 物理エンジン
           Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
