@@ -40,7 +40,7 @@ class Quaternion
 ### makeQuaternionYRotation(float)
 `Quaternion makeQuaternionYRotation(float rotateRadian)`
 
-グローバル関数。y軸から rotateRadian だけ回転したククォータニオンを返す。
+グローバル関数。y軸から rotateRadian だけ回転したクォータニオンを返す。
 
 ### makeQuaternionZRotation(float)
 `Quaternion makeQuaternionZRotation(float rotateRadian)`
