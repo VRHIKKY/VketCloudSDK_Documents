@@ -1,20 +1,42 @@
-ParticleEditorはVketCloud専用のパーティクルファイルフォーマットである『HEP』を作成する為のツールです。  
-VketCloudと同一エンジンを用いて描画しているのでエディター上の見た目そのままでVketCloudで再生することができます。
+# パーティクルエディター概要
 
-### 起動条件
-- Chorome(Safari・Firefox非対応)  
+![pe_particleeditor_overview](pe_image/pe_particleeditor_overview.gif)
+
+ParticleEditorはVket Cloud専用のパーティクルファイルフォーマットである『HEP』を作成する為のツールです。  
+Vket Cloudと同一エンジンを用いて描画しているので、エディター上の見た目そのままでVket Cloudで再生することができます。
+
+## 起動条件
+- Chrome(Safari・Firefox非対応)  
 - Python3.10以降
 
-### 起動方法
+## 起動方法
+
+パーティクルエディターを開くには、VketCloudSDK > Tools > ParticleEditorを選択します。
+
+![pe_about_particleeditor_1](pe_image/pe_about_particleeditor_1.jpg)
+
+選択すると、ブラウザ上にてパーティクルエディターが起動します。
+
+![pe_about_particleeditor_2](pe_image/pe_about_particleeditor_2.jpg)
+
+## 起動方法（旧バージョン）
+
+!!! note
+    Ver5.4以前のパーティクルエディタは以下の方法で起動します。
+
 ParticleEditorはWebアプリとして配布されているのでローカルで実行するためにはWebサーバを起動する必要があります。  
 ここではpythonを使用する方法を解説します。  
+
 1. ターミナルソフトで`Tools\ParticleEditor`に移動する  
 2. `python -m http.server`と入力しWebサーバーを起動する  
-3. ブラウザで`http://localhost:8000/`を開く  
+3. ブラウザで`http://localhost:65535/`を開く  
 
-### HEPファイルの保存・読み込みについて
+## HEPファイルの保存・読み込みについて
 保存・読み込みはファイル単位ではなくフォルダ単位で行います。  
 その為以下の条件があります。
+
 - HEPのファイル名はフォルダ名と同一でなければならない  
 - 保存時はあらかじめ保存先のフォルダを作成しなければならない  
 - 一つのフォルダに複数のHEPファイルを置いてはならない
+
+パーティクルエディタにてパーティクルを作る際は、作りたいパーティクルの名前のフォルダをあらかじめ用意します。

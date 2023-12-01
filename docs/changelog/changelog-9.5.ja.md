@@ -26,6 +26,11 @@
         - 題名を変更　（旧題：反射を写り込ませるには）
         - 未使用画像を削除し、リンクを修正
         - 一部文言を変更
+- SDK Tools
+    - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_particleeditor.html)
+        - 起動方法を更新
+    - [ウィンドウ解説・操作方法について](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_screen.html)
+        - ウィンドウ解説・操作方法ページを統合
 - ワールドの軽量化方法
     - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/heoexporter/he_TextureCompression.html)
         - pvrtcに加えてdxt変換が廃止になったため記述から削除

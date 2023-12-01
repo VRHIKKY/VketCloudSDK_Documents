@@ -120,11 +120,7 @@ plugins:
           ActionNodeGraph: アクションノードグラフ
           Particle Editor : パーティクルエディター
           ParticleEditor Overview: パーティクルエディター概要 
-          About Screen: 操作画面について
-          Operation: 操作説明
-          Window Info: ウィンドウ解説
-          Toolbar: ツールバー
-          Property: プロパティウィンドウ
+          About Screen / How to Operate: ウィンドウ解説・操作方法について
           Animation Converter : アニメーションコンバーター
           Adding Preset Avatars : プリセットアバターを追加する
           World Editing Tips: 編集のためのTips
@@ -194,12 +190,7 @@ nav:
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :
       - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
-      - About Screen : particleeditor/pe_about_screen.md
-      - Operation: particleeditor/pe_control.md
-      - Window Info:
-        - Toolbar : particleeditor/pe_toolbar.md
-        - Property : particleeditor/pe_propertywindow.md
-        - Particle List : particleeditor/pe_particlelistwindow.md
+      - About Screen / How to Operate : particleeditor/pe_about_screen.md
 - World Editing Tips:
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
