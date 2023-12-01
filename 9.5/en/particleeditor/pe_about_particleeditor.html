@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requirements" class="md-skip">
+        <a href="#particle-editor-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -744,10 +744,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_5_6">
@@ -774,6 +770,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           ParticleEditor Overview
@@ -788,6 +786,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -806,6 +806,13 @@
         <li class="md-nav__item">
   <a href="#how-to-launch" class="md-nav__link">
     How to launch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-launch-outdated" class="md-nav__link">
+    How to launch (Outdated)
   </a>
   
 </li>
@@ -833,105 +840,8 @@
   
     <li class="md-nav__item">
       <a href="pe_about_screen.html" class="md-nav__link">
-        About Screen
+        About Screen / How to Operate
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pe_control.html" class="md-nav__link">
-        Operation
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6_4" type="checkbox" id="__nav_5_6_4" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_6_4">
-          Window Info
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Window Info" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_6_4">
-          <span class="md-nav__icon md-icon"></span>
-          Window Info
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pe_toolbar.html" class="md-nav__link">
-        Toolbar
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pe_propertywindow.html" class="md-nav__link">
-        Property
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pe_particlelistwindow.html" class="md-nav__link">
-        Particle List
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -4989,6 +4899,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5006,6 +4918,13 @@
         <li class="md-nav__item">
   <a href="#how-to-launch" class="md-nav__link">
     How to launch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-launch-outdated" class="md-nav__link">
+    How to launch (Outdated)
   </a>
   
 </li>
@@ -5030,27 +4949,39 @@
               
                 
                 
-                  <h1>ParticleEditor Overview</h1>
-                
-                <p>ParticleEditor is a particle creation tool that generates HEP files, which is specifically made for Vket Cloud.
-The tool offers exactly the same look as in actual Vket Cloud worlds, for the tool uses the the same rendering engine.</p>
-<h3 id="requirements">Requirements</h3>
+                <h1 id="particle-editor-overview">Particle Editor Overview</h1>
+<p><img alt="pe_particleeditor_overview" src="pe_image/pe_particleeditor_overview.gif" /></p>
+<p>The Particle Editor is a particle creation tool that generates HEP files, which is specifically made for Vket Cloud.
+This tool offers exactly the same look as in actual Vket Cloud worlds, for the tool uses the the same rendering engine.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li>Chorome(Safari and Firefox are not supported)  </li>
+<li>Chrome (Safari and Firefox unsupported)  </li>
 <li>Python later than 3.10</li>
 </ul>
-<h3 id="how-to-launch">How to launch</h3>
-<p>ParticleEditor is provided as Web application. To run the editor on your local PC, you need to launch a Web server.<br />
+<h2 id="how-to-launch">How to launch</h2>
+<p>To open the editor, select VketCloudSDK &gt; Tools &gt; ParticleEditor.</p>
+<p><img alt="pe_about_particleeditor_1" src="pe_image/pe_about_particleeditor_1.jpg" /></p>
+<p>The particle editor will open on the web browser.</p>
+<p><img alt="pe_about_particleeditor_2" src="pe_image/pe_about_particleeditor_2.jpg" /></p>
+<h2 id="how-to-launch-outdated">How to launch (Outdated)</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The instructions below are used to open the particle editor on previous SDK versions older than Ver5.4.</p>
+</div>
+<p>The Particle Editor is provided as a Web application. To run the editor on your local PC, you need to launch a Web server.<br />
 Here we'll use python.<br />
 1. Use terminal softwares such as Command Prompt and set the directory to <code>Tools\ParticleEditor</code>.<br />
 2. input <code>python -m http.server</code> in your console to launch the Web server.<br />
-3. Open <code>http://localhost:8000/</code> in your browser.  </p>
-<h3 id="save-and-load-hep-file">Save and load HEP file</h3>
+3. Open <code>http://localhost:65535/</code> in your browser.  </p>
+<h2 id="save-and-load-hep-file">Save and load HEP file</h2>
 <p>HEO file is saved and loaded as a folder in its entirety, rather than a single file.<br />
-As such, the following conditions must be met.
-- The file name of the HEP must be the same as the folder name.<br />
-- You need to create a separate folder for saving.<br />
-- Only a single HEP file can be placed inside a folder: a single folder cannot contain multiple HEP files.</p>
+As such, the following conditions must be met.</p>
+<ul>
+<li>The file name of the HEP must be the same as the folder name.  </li>
+<li>You need to create a separate folder for saving.  </li>
+<li>Only a single HEP file can be placed inside a folder: a single folder cannot contain multiple HEP files.</li>
+</ul>
+<p>Before creating a particle, please create a new folder with the particle name to contain the particle.</p>
                 
               
               

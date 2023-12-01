@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-export-reflection-probes" class="md-skip">
+        <a href="#reflection-probe" class="md-skip">
           Skip to content
         </a>
       
@@ -548,6 +548,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           ReflectionProbe
@@ -562,6 +564,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -785,10 +789,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_5_6">
@@ -824,105 +824,8 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_screen.html" class="md-nav__link">
-        About Screen
+        About Screen / How to Operate
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_control.html" class="md-nav__link">
-        Operation
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6_4" type="checkbox" id="__nav_5_6_4" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_6_4">
-          Window Info
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Window Info" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_6_4">
-          <span class="md-nav__icon md-icon"></span>
-          Window Info
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_toolbar.html" class="md-nav__link">
-        Toolbar
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_propertywindow.html" class="md-nav__link">
-        Property
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_particlelistwindow.html" class="md-nav__link">
-        Particle List
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -4980,6 +4883,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5014,62 +4919,41 @@
               
                 
                 
-                  <h1>ReflectionProbe</h1>
-                
-                <div class="admonition note info">
+                <h1 id="reflection-probe">Reflection Probe</h1>
+<div class="admonition note info">
 <p class="admonition-title">Note</p>
 <p>For basic functions of reflection probes, please see Unity's official documentation (<a href="https://docs.unity3d.com/en/2018.4/Manual/class-ReflectionProbe.html" target="blank">here</a>)</p>
 </div>
 <p>In Vket Cloud, reflection probes are determined per object in the hierarchy, not per primitive.</p>
 <p><strong>Please note that, among the reflection probes listed in the object's MeshRenderer/Probes items, the one with the largest Weight number will be exported as the index of the reflection probe used by that object</strong>.</p>
 <p>This weight value is calculated based on the distance between the reflection probe and the object. Vket Cloud does not support reflection probe blending.</p>
-<p><img src="img/スクリーンショット 2022-05-13 123111.png"></p>
+<p><img alt="ReflectionProbeWeight" src="img/ReflectionProbeWeight.jpg" /></p>
 <hr />
 <h2 id="how-to-export-reflection-probes">How to export reflection probes</h2>
-<ol>
-<li>
-<p>Set the reflection probe as follows and press "Bake".</p>
-<ul>
-<li>Type: Baked</li>
-<li>HDR: <em>not checked</em></li>
-<li>Resolution: Any value (Take into account the load and the size of the reflecting surface)</li>
-</ul>
-<p><img src="img/スクリーンショット 2022-05-13 124848.png"></p>
-</li>
-<li>
-<p>After pressing Bake, a cube map for "Reflection Probe" will be created. In the inspector, check the checkbox of "Advanced → Read/Write Enabled" and press "Apply".</p>
-<p><img src="img/スクリーンショット 2022-05-13 125158.png"></p>
-</li>
-<li>
-<p>Attach "HEOReflectionProbe.cs" to the parent object (VketCloudSample) in hierarchy, which should contain all objects you want to export. Then set any number of reflection probes you want to export to "HEOReflectionProbe/ReflectionProbes" on inspector.</p>
-<p><img src="img/スクリーンショット 2022-05-13 125438.png"></p>
-</li>
-<li>
-<p>The Reflection Probes need to be children of the object to be exported. (They must be exported together, for Reflection Probes may use Transforms.)</p>
-<p><img src="img/スクリーンショット 2022-05-13 125825.png"></p>
-</li>
-<li>
-<p>Run BuildAndRun.</p>
-<p><img src="img/スクリーンショット 2022-05-13 125948.png"></p>
-</li>
-</ol>
-<p>A sample of this HEO file read and displayed by VketCloud is as follows.
-     <img src="img/ReflectionProbe_Sample.png"></p>
+<p>1. Set the reflection probe as follows and press "Bake".</p>
+<div class="codehilite"><pre><span></span><code><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Type</span><span class="p">:</span><span class="w"> </span><span class="n">Baked</span>
+<span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">HDR</span><span class="p">:</span><span class="w"> </span><span class="o">*</span><span class="ow">not</span><span class="w"> </span><span class="n">checked</span><span class="o">*</span>
+<span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Resolution</span><span class="p">:</span><span class="w"> </span><span class="n">Any</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">(</span><span class="n">Take</span><span class="w"> </span><span class="n">into</span><span class="w"> </span><span class="n">account</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="nb">load</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">reflecting</span><span class="w"> </span><span class="n">surface</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="ReflectionProbeSetting" src="img/ReflectionProbeSetting.jpg" /></p>
+<p>2. After pressing Bake, a cube map for "Reflection Probe" will be created. In the inspector, check the checkbox of "Advanced → Read/Write Enabled" and press "Apply".</p>
+<p><img alt="ReflectionProbeSettingReadWriteEnabled" src="img/ReflectionProbeReadWriteEnabled.jpg" /></p>
+<p>3. Attach "HEOReflectionProbe.cs" to the parent object (VketCloudSample) in hierarchy, which should contain all objects you want to export. Then set any number of reflection probes you want to export to "HEOReflectionProbe/ReflectionProbes" on inspector.</p>
+<p><img alt="ReflectionProbeAttachHEO" src="img/ReflectionProbeAttachHEO.jpg" /></p>
+<p>4. The Reflection Probes need to be children of the object to be exported. (They must be exported together, for Reflection Probes may use Transforms.)</p>
+<p><img alt="ReflectionProbeAttachAsChild" src="img/ReflectionProbeAttachAsChild.jpg" /></p>
+<p>5. Run BuildAndRun.</p>
+<p><img alt="ReflectionProbeExportField" src="img/ReflectionProbeExportField.jpg" /></p>
+<p>A sample of this HEO file read and displayed by Vket Cloud is as follows.</p>
+<p><img alt="ReflectionProbeSample" src="img/ReflectionProbeSample.jpg" /></p>
 <h2 id="about-box-projection-reflection-that-moves-with-camera-position">About Box Projection (reflection that moves with camera position)</h2>
 <p>In VketCloud, you can optionally use Box Projection of Unity's reflection probe.</p>
-<ol>
-<li>
-<p>Check "Box Projection" in Reflection Probe on Unity. (If you are using LightMap, you may not be able to enable it)
-<img src="img/スクリーンショット (661).png"></p>
-</li>
-<li>
-<p>Make sure that the Reflection Probe object is a child of the object you are about to export. (Because Box Projection uses Transform)
-<img src="img/スクリーンショット 2022-05-13 125825.png"></p>
-</li>
-<li>
-<p>Execute BuildAndRun according to "How to export reflection probes" above.</p>
-</li>
-</ol>
+<p>1. Check "Box Projection" in Reflection Probe on Unity. (If you are using LightMap, you may not be able to enable it)</p>
+<p><img alt="ReflectionProbeBoxProjection" src="img/ReflectionProbeBoxProjection.jpg" /></p>
+<p>2. Make sure that the Reflection Probe object is a child of the object you are about to export. (Because Box Projection uses Transform)</p>
+<p><img alt="ReflectionProbeAttachAsChild" src="img/ReflectionProbeAttachAsChild.jpg" /></p>
+<p>3. Execute BuildAndRun according to "How to export reflection probes" above.</p>
 <div class="admonition caution">
 <p class="admonition-title">Important points of exporting reflection probes</p>
 <ul>

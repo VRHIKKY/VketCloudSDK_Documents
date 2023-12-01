@@ -541,7 +541,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/ReflectionProbe.html" class="md-nav__link">
-        反射を写り込ませるには
+        リフレクションプローブ
       </a>
     </li>
   
@@ -744,10 +744,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_5_6">
@@ -774,6 +770,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           パーティクルエディター概要
@@ -789,6 +787,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -797,15 +797,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     起動条件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     起動方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    起動方法（旧バージョン）
   </a>
   
 </li>
@@ -833,105 +840,8 @@
   
     <li class="md-nav__item">
       <a href="pe_about_screen.html" class="md-nav__link">
-        操作画面について
+        ウィンドウ解説・操作方法について
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pe_control.html" class="md-nav__link">
-        操作説明
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6_4" type="checkbox" id="__nav_5_6_4" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_6_4">
-          ウィンドウ解説
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="ウィンドウ解説" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_6_4">
-          <span class="md-nav__icon md-icon"></span>
-          ウィンドウ解説
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pe_toolbar.html" class="md-nav__link">
-        ツールバー
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pe_propertywindow.html" class="md-nav__link">
-        プロパティウィンドウ
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="pe_particlelistwindow.html" class="md-nav__link">
-        Particle List
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -4989,6 +4899,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4997,15 +4909,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     起動条件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     起動方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    起動方法（旧バージョン）
   </a>
   
 </li>
@@ -5030,27 +4949,41 @@
               
                 
                 
-                  <h1>パーティクルエディター概要</h1>
-                
-                <p>ParticleEditorはVketCloud専用のパーティクルファイルフォーマットである『HEP』を作成する為のツールです。<br />
-VketCloudと同一エンジンを用いて描画しているのでエディター上の見た目そのままでVketCloudで再生することができます。</p>
-<h3 id="_1">起動条件</h3>
+                <h1 id="_1">パーティクルエディター概要</h1>
+<p><img alt="pe_particleeditor_overview" src="pe_image/pe_particleeditor_overview.gif" /></p>
+<p>ParticleEditorはVket Cloud専用のパーティクルファイルフォーマットである『HEP』を作成する為のツールです。<br />
+Vket Cloudと同一エンジンを用いて描画しているので、エディター上の見た目そのままでVket Cloudで再生することができます。</p>
+<h2 id="_2">起動条件</h2>
 <ul>
-<li>Chorome(Safari・Firefox非対応)  </li>
+<li>Chrome(Safari・Firefox非対応)  </li>
 <li>Python3.10以降</li>
 </ul>
-<h3 id="_2">起動方法</h3>
+<h2 id="_3">起動方法</h2>
+<p>パーティクルエディターを開くには、VketCloudSDK &gt; Tools &gt; ParticleEditorを選択します。</p>
+<p><img alt="pe_about_particleeditor_1" src="pe_image/pe_about_particleeditor_1.jpg" /></p>
+<p>選択すると、ブラウザ上にてパーティクルエディターが起動します。</p>
+<p><img alt="pe_about_particleeditor_2" src="pe_image/pe_about_particleeditor_2.jpg" /></p>
+<h2 id="_4">起動方法（旧バージョン）</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ver5.4以前のパーティクルエディタは以下の方法で起動します。</p>
+</div>
 <p>ParticleEditorはWebアプリとして配布されているのでローカルで実行するためにはWebサーバを起動する必要があります。<br />
-ここではpythonを使用する方法を解説します。<br />
-1. ターミナルソフトで<code>Tools\ParticleEditor</code>に移動する<br />
-2. <code>python -m http.server</code>と入力しWebサーバーを起動する<br />
-3. ブラウザで<code>http://localhost:8000/</code>を開く  </p>
-<h3 id="hep">HEPファイルの保存・読み込みについて</h3>
+ここではpythonを使用する方法を解説します。  </p>
+<ol>
+<li>ターミナルソフトで<code>Tools\ParticleEditor</code>に移動する  </li>
+<li><code>python -m http.server</code>と入力しWebサーバーを起動する  </li>
+<li>ブラウザで<code>http://localhost:65535/</code>を開く  </li>
+</ol>
+<h2 id="hep">HEPファイルの保存・読み込みについて</h2>
 <p>保存・読み込みはファイル単位ではなくフォルダ単位で行います。<br />
-その為以下の条件があります。
-- HEPのファイル名はフォルダ名と同一でなければならない<br />
-- 保存時はあらかじめ保存先のフォルダを作成しなければならない<br />
-- 一つのフォルダに複数のHEPファイルを置いてはならない</p>
+その為以下の条件があります。</p>
+<ul>
+<li>HEPのファイル名はフォルダ名と同一でなければならない  </li>
+<li>保存時はあらかじめ保存先のフォルダを作成しなければならない  </li>
+<li>一つのフォルダに複数のHEPファイルを置いてはならない</li>
+</ul>
+<p>パーティクルエディタにてパーティクルを作る際は、作りたいパーティクルの名前のフォルダをあらかじめ用意します。</p>
                 
               
               

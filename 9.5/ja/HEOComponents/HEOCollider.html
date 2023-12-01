@@ -541,7 +541,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/ReflectionProbe.html" class="md-nav__link">
-        反射を写り込ませるには
+        リフレクションプローブ
       </a>
     </li>
   
@@ -740,10 +740,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_5_6">
@@ -779,105 +775,8 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_screen.html" class="md-nav__link">
-        操作画面について
+        ウィンドウ解説・操作方法について
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_control.html" class="md-nav__link">
-        操作説明
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6_4" type="checkbox" id="__nav_5_6_4" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_6_4">
-          ウィンドウ解説
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="ウィンドウ解説" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_6_4">
-          <span class="md-nav__icon md-icon"></span>
-          ウィンドウ解説
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_toolbar.html" class="md-nav__link">
-        ツールバー
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_propertywindow.html" class="md-nav__link">
-        プロパティウィンドウ
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_particlelistwindow.html" class="md-nav__link">
-        Particle List
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1280,6 +1179,13 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     コライダーターゲット
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    コライダーの衝突 / エリア範囲判定について
   </a>
   
 </li>
@@ -5007,6 +4913,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    コライダーの衝突 / エリア範囲判定について
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5021,8 +4934,8 @@
                 
                 
                 <h1 id="heocollider">HEOCollider</h1>
-<p><img alt="HEOCollider" src="img/HEOColliderJP.jpg" /></p>
-<p>HEOColliderとは、VketCloud上でコライダーがどのような衝突判定を持つかを設定できるコンポーネントです。</p>
+<p><img alt="HEOCollider_1" src="img/HEOCollider_1.jpg" /></p>
+<p>HEOColliderとは、Vket Cloud上でコライダーがどのような衝突判定を持つかを設定できるコンポーネントです。</p>
 <table>
 <thead>
 <tr>
@@ -5096,6 +5009,10 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>コライダータイプが<code>コライダー</code>でないコライダー(クリック対象、エリア、オクルージョン、リフレクションプローブ、描画判定)はプレイヤーが触れても衝突しません。</p>
+</div>
 <h2 id="_2">コライダーターゲット</h2>
 <table>
 <thead>
@@ -5119,6 +5036,10 @@
 </tr>
 </tbody>
 </table>
+<h2 id="_3">コライダーの衝突 / エリア範囲判定について</h2>
+<p>ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>
+また、以下のようなコリジョンの可視化はHEOWorldSettingから<a href="../WorldEditingTips/DebugMode.html">デバッグモード</a>を有効にした上でF4キーを押すと切り替えできます。</p>
+<p><img alt="HEOCollider_2" src="img/HEOCollider_2.jpg" /></p>
                 
               
               

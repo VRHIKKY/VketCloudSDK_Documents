@@ -541,7 +541,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/ReflectionProbe.html" class="md-nav__link">
-        反射を写り込ませるには
+        リフレクションプローブ
       </a>
     </li>
   
@@ -740,10 +740,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_5_6">
@@ -779,105 +775,8 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_screen.html" class="md-nav__link">
-        操作画面について
+        ウィンドウ解説・操作方法について
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_control.html" class="md-nav__link">
-        操作説明
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6_4" type="checkbox" id="__nav_5_6_4" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_6_4">
-          ウィンドウ解説
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="ウィンドウ解説" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_6_4">
-          <span class="md-nav__icon md-icon"></span>
-          ウィンドウ解説
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_toolbar.html" class="md-nav__link">
-        ツールバー
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_propertywindow.html" class="md-nav__link">
-        プロパティウィンドウ
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_particlelistwindow.html" class="md-nav__link">
-        Particle List
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -5299,7 +5198,7 @@
 <h2 id="quaternion_1">Quaternionのユーティリティー関数</h2>
 <h3 id="makequaternionfloat-float-float-float">makeQuaternion(float, float, float, float)</h3>
 <p><code>Quaternion makeQuaternion(float x, float y, float z, float w)</code></p>
-<p>グローバル関数。x, y, z, w の4要素を指定して Quaternion を生成する。</p>
+<p>グローバル関数。x, y, z, w の4要素を指定してクォータニオンを生成する。</p>
 <h3 id="makequaternionmulquaternion-quaternion">makeQuaternionMul(Quaternion, Quaternion)</h3>
 <p><code>Quaternion makeQuaternionMul(Quaternion a, Quaternion b)</code></p>
 <p>グローバル関数。2つのクォータニオンを乗算して、結果を新しいクォータニオンとして返す。</p>
@@ -5308,7 +5207,7 @@
 <p>グローバル関数。x軸から rotateRadian だけ回転したクォータニオンを返す。</p>
 <h3 id="makequaternionyrotationfloat">makeQuaternionYRotation(float)</h3>
 <p><code>Quaternion makeQuaternionYRotation(float rotateRadian)</code></p>
-<p>グローバル関数。y軸から rotateRadian だけ回転したククォータニオンを返す。</p>
+<p>グローバル関数。y軸から rotateRadian だけ回転したクォータニオンを返す。</p>
 <h3 id="makequaternionzrotationfloat">makeQuaternionZRotation(float)</h3>
 <p><code>Quaternion makeQuaternionZRotation(float rotateRadian)</code></p>
 <p>グローバル関数。z軸から rotateRadian だけ回転したクォータニオンを返す。</p>
@@ -5318,20 +5217,20 @@
 <h2 id="_2">コンストラクタ</h2>
 <h3 id="quaternion_2">Quaternion()</h3>
 <p><code>public Quaternion()</code></p>
-<p>x, y, z 要素を0, w要素を1に設定して Quaternion のインスタンスを生成する。</p>
+<p>x, y, z 要素を0, w要素を1に設定してクォータニオンのインスタンスを生成する。</p>
 <h2 id="_3">メンバ変数</h2>
 <h3 id="float-x">float x</h3>
 <p><code>public float x</code></p>
-<p>クォータタニオンのx成分。</p>
+<p>クォータニオンのx成分。</p>
 <h3 id="float-y">float y</h3>
 <p><code>public float y</code></p>
-<p>クォータタニオンのy成分。</p>
+<p>クォータニオンのy成分。</p>
 <h3 id="float-z">float z</h3>
 <p><code>public float z</code></p>
-<p>クォータタニオンのz成分。</p>
+<p>クォータニオンのz成分。</p>
 <h3 id="float-w">float w</h3>
 <p><code>public float w</code></p>
-<p>クォータタニオンのw成分。</p>
+<p>クォータニオンのw成分。</p>
 <h2 id="_4">メソッド</h2>
 <h3 id="getmatrix">GetMatrix()</h3>
 <p><code>public Matrix    GetMatrix()</code></p>

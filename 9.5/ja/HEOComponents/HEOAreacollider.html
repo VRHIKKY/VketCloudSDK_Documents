@@ -541,7 +541,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/ReflectionProbe.html" class="md-nav__link">
-        反射を写り込ませるには
+        リフレクションプローブ
       </a>
     </li>
   
@@ -740,10 +740,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_5_6">
@@ -779,105 +775,8 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_screen.html" class="md-nav__link">
-        操作画面について
+        ウィンドウ解説・操作方法について
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_control.html" class="md-nav__link">
-        操作説明
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6_4" type="checkbox" id="__nav_5_6_4" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_6_4">
-          ウィンドウ解説
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="ウィンドウ解説" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_6_4">
-          <span class="md-nav__icon md-icon"></span>
-          ウィンドウ解説
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_toolbar.html" class="md-nav__link">
-        ツールバー
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_propertywindow.html" class="md-nav__link">
-        プロパティウィンドウ
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_particlelistwindow.html" class="md-nav__link">
-        Particle List
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1205,9 +1104,39 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          HEOAreacollider
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="HEOAreacollider.html" class="md-nav__link md-nav__link--active">
         HEOAreacollider
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    コライダーの衝突 / エリア範囲判定について
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4950,6 +4879,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    コライダーの衝突 / エリア範囲判定について
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4961,16 +4905,16 @@
               
                 
                 
-                <h1 id="heoareacollider">HEOAreacollider</h1>
-<p><img alt="HEOAreacollider" src="img/HEOAreaCollider.jpg" /></p>
+                <h1 id="heoareacollider">HEOAreaCollider</h1>
+<p><img alt="HEOAreaCollider" src="img/HEOAreaCollider.jpg" /></p>
 <p>HEOAreaColliderは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
 コライダーにプレイヤーが進入した際にアクションを実行します。</p>
-<p>HEOAreaColliderをアタッチするオブジェクトにはHEOCollider,Colliderがアタッチされている必要があります。
-HEOColliderのtypeはAreaに設定されている必要があります。</p>
-<p><img alt="HEOCollider" src="img/HEOCollider.jpg" /></p>
-<p>Actions,LeaveActionsそれぞれにおいて<br/>
-Addをクリックすることで任意のアクションを設定できます。<br/>
-Deleteをクリックすることで最後尾のアクションを削除できます。</p>
+<p>HEOAreaColliderをアタッチするオブジェクトには<a href="HEOCollider.html">HEOCollider</a>とColliderがアタッチされている必要があります。<br>
+なお、HEOAreaColliderをオブジェクトにアタッチすると<a href="HEOCollider.html">HEOCollider</a>とBox Colliderが自動で追加されます。<br>
+<a href="HEOCollider.html">HEOCollider</a>のtypeはAreaに設定されている必要があります。</p>
+<p><img alt="HEOCollider" src="img/HEOCollider_1.jpg" /></p>
+<p>Actions,LeaveActionsそれぞれにおいてAddをクリックすることで任意のアクションを設定できます。<br>
+反対に、Deleteをクリックすることで最後尾のアクションを削除できます。</p>
 <table>
 <thead>
 <tr>
@@ -4991,6 +4935,10 @@ Deleteをクリックすることで最後尾のアクションを削除でき�
 </table>
 <p>アクションについては<a href="../Actions/ActionsOverview.html">アクションの概要</a>を参照してください。<br>
 コライダーについては<a href="../WorldMakingGuide/UnityGuidelines.html">Unity制作ガイドライン - コライダー</a>を参照してください。</p>
+<h2 id="_1">コライダーの衝突 / エリア範囲判定について</h2>
+<p>ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>
+また、以下のようなコリジョンの可視化はHEOWorldSettingから<a href="../WorldEditingTips/DebugMode.html">デバッグモード</a>を有効にした上でF4キーを押すと切り替えできます。</p>
+<p><img alt="HEOCollider_2" src="img/HEOCollider_2.jpg" /></p>
                 
               
               

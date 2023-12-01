@@ -18,7 +18,7 @@
     
     
       
-        <title>反射を写り込ませるには - VketCloudSDK Manual</title>
+        <title>リフレクションプローブ - VketCloudSDK Manual</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              反射を写り込ませるには
+              リフレクションプローブ
             
           </span>
         </div>
@@ -548,20 +548,24 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          反射を写り込ませるには
+          リフレクションプローブ
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="ReflectionProbe.html" class="md-nav__link md-nav__link--active">
-        反射を写り込ませるには
+        リフレクションプローブ
       </a>
       
         
 <nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -571,7 +575,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     リフレクションプローブの書き出し方法
   </a>
   
@@ -785,10 +789,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_5_6">
@@ -824,105 +824,8 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_screen.html" class="md-nav__link">
-        操作画面について
+        ウィンドウ解説・操作方法について
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_control.html" class="md-nav__link">
-        操作説明
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6_4" type="checkbox" id="__nav_5_6_4" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_6_4">
-          ウィンドウ解説
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="ウィンドウ解説" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_6_4">
-          <span class="md-nav__icon md-icon"></span>
-          ウィンドウ解説
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_toolbar.html" class="md-nav__link">
-        ツールバー
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_propertywindow.html" class="md-nav__link">
-        プロパティウィンドウ
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../particleeditor/pe_particlelistwindow.html" class="md-nav__link">
-        Particle List
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -4980,6 +4883,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4988,7 +4893,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     リフレクションプローブの書き出し方法
   </a>
   
@@ -5014,63 +4919,43 @@
               
                 
                 
-                  <h1>反射を写り込ませるには</h1>
-                
-                <div class="admonition note info">
+                <h1 id="_1">リフレクションプローブ</h1>
+<p>(旧題：反射を映り込ませるには)</p>
+<div class="admonition note info">
 <p class="admonition-title">Note</p>
 <p>リフレクションプローブの基本的な使い方については、Unityの公式ドキュメント等(<a href="https://docs.unity3d.com/ja/2018.4/Manual/class-ReflectionProbe.html" target="blank">こちら</a>)をご覧ください。</p>
 </div>
-<p>VketCloudで使用されるリフレクションプローブは、プリミティブ単位ではなくヒエラルキー上のオブジェクト単位で決定されます。</p>
-<p><img src="img/ReflectionProbeUnityEditor.jpg"></p>
+<p>Vket Cloudで使用されるリフレクションプローブは、プリミティブ単位ではなくヒエラルキー上のオブジェクト単位で決定されます。</p>
+<p><img alt="ReflectionProbeUnityEditor" src="img/ReflectionProbeUnityEditor.jpg" /></p>
 <p><strong>オブジェクトのMeshRenderer/Probesの項目に羅列されているリフレクションプローブの中で「一番Weightの数値が大きいもの」が、そのオブジェクトが使用するリフレクションプローブのインデックスとして書き出される</strong>のでご注意ください。</p>
-<p>このWeight値は、リフレクションプローブとオブジェクトの距離を基準に計算されます。またVketCloudではリフレクションプローブのブレンドはサポートしていません。</p>
-<p><img src="img/ReflectionProbeWeight.jpg"></p>
+<p>このWeight値は、リフレクションプローブとオブジェクトの距離を基準に計算されます。またVket Cloudではリフレクションプローブのブレンドはサポートしていません。</p>
+<p><img alt="ReflectionProbeWeight" src="img/ReflectionProbeWeight.jpg" /></p>
 <hr />
-<h2 id="_1">リフレクションプローブの書き出し方法</h2>
-<ol>
-<li>
-<p>リフレクションプローブを以下のように設定し「Bake」を押します。</p>
-<ul>
-<li>Type: Baked </li>
-<li>HDR: <em>チェック無し</em> </li>
-<li>Resolusion:  任意 (負荷と反射させる面の大きさを考慮して指定してください) </li>
-</ul>
-<p><img src="img/ReflectionProbeSetting.jpg"></p>
-</li>
-<li>
-<p>Bakeを押した後に「リフレクションプローブ用」のキューブマップが作成されますのでそちらの設定項目にある「Advanced→Read/Write Enabled」にチェックを入れて『Apply』を押します。</p>
-<p><img src="img/ReflectionProbeReadWriteEnabled.jpg"></p>
-</li>
-<li>
-<p>エクスポートしたいオブジェクトの一番親の階層のオブジェクト(VketCloudSample)に「HEOReflectionProbe.cs」をアタッチします。その後インスペクターから「HEOReflectionProbe/ReflectionProbes」にエクスポートしたいリフレクションプローブを任意の数アタッチします。</p>
-<p><img src="img/ReflectionProbeAttachHEO.jpg"></p>
-</li>
-<li>
-<p>リフレクションプローブ自体をこれからエクスポートするオブジェクトの子要素にします。(リフレクションプローブではTransformを使用することがあるため一緒にエクスポートする必要があります)</p>
-<p><img src="img/ReflectionProbeAttachAsChild.jpg"></p>
-</li>
-<li>
-<p>BuildAndRunを実行します。</p>
-<p><img src="img/ReflectionProbeExportField.jpg"></p>
-</li>
-</ol>
-<p>このHEOファイルをVketCloudで読み込んで表示したサンプルは以下のものになります。
-    <img src="img/ReflectionProbeSample.jpg"></p>
+<h2 id="_2">リフレクションプローブの書き出し方法</h2>
+<p>1. リフレクションプローブを以下のように設定し「Bake」を押します。</p>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> Type: Baked 
+<span class="k">-</span> HDR: <span class="gs">*チェック無し*</span> 
+<span class="k">-</span> Resolution:  任意 (負荷と反射させる面の大きさを考慮して指定してください)
+</code></pre></div>
+
+<p><img alt="ReflectionProbeSetting" src="img/ReflectionProbeSetting.jpg" /></p>
+<p>2. Bakeを押した後に「リフレクションプローブ用」のキューブマップが作成されますのでそちらの設定項目にある「Advanced→Read/Write Enabled」にチェックを入れて『Apply』を押します。</p>
+<p><img alt="ReflectionProbeSettingReadWriteEnabled" src="img/ReflectionProbeReadWriteEnabled.jpg" /></p>
+<p>3. エクスポートしたいオブジェクトの一番親の階層のオブジェクト(VketCloudSample)に「HEOReflectionProbe.cs」をアタッチします。その後インスペクターから「HEOReflectionProbe/ReflectionProbes」にエクスポートしたいリフレクションプローブを任意の数アタッチします。</p>
+<p><img alt="ReflectionProbeAttachHEO" src="img/ReflectionProbeAttachHEO.jpg" /></p>
+<p>4. リフレクションプローブ自体をこれからエクスポートするオブジェクトの子要素にします。(リフレクションプローブではTransformを使用することがあるため一緒にエクスポートする必要があります)</p>
+<p><img alt="ReflectionProbeAttachAsChild" src="img/ReflectionProbeAttachAsChild.jpg" /></p>
+<p>5. BuildAndRunを実行します。</p>
+<p><img alt="ReflectionProbeExportField" src="img/ReflectionProbeExportField.jpg" /></p>
+<p>このHEOファイルをVket Cloudで読み込んで表示したサンプルは以下のものになります。</p>
+<p><img alt="ReflectionProbeSample" src="img/ReflectionProbeSample.jpg" /></p>
 <h2 id="box-projection">Box Projection(カメラ位置により移動する反射)について</h2>
-<p>VketCloudでは、UnityのリフレクションプローブのBox Projectionを任意で使用することができます。</p>
-<ol>
-<li>
-<p>Unity上でリフレクションプローブの『Box Projection』にチェックを入れます。(LightMapを使用している場合、押せないことがあります)
-<img src="img/ReflectionProbeBoxProjection.jpg"></p>
-</li>
-<li>
-<p>リフレクションプローブのオブジェクトを必ずこれからエクスポートするオブジェクトの子要素にします。(Box ProjectionはTransformを使用するため)
-<img src="img/ReflectionProbeAttachAsChild.jpg"></p>
-</li>
-<li>
-<p>上記の『リフレクションプローブの書き出し方法』に従い、BuildAndRunを実行します。</p>
-</li>
-</ol>
+<p>Vket Cloudでは、UnityのリフレクションプローブのBox Projectionを任意で使用することができます。</p>
+<p>1. Unity上でリフレクションプローブの『Box Projection』にチェックを入れます。(LightMapを使用している場合、押せないことがあります)</p>
+<p><img alt="ReflectionProbeBoxProjection" src="img/ReflectionProbeBoxProjection.jpg" /></p>
+<p>2. リフレクションプローブのオブジェクトを必ずこれからエクスポートするオブジェクトの子要素にします。(Box ProjectionはTransformを使用するため)</p>
+<p><img alt="ReflectionProbeAttachAsChild" src="img/ReflectionProbeAttachAsChild.jpg" /></p>
+<p>3. 上記の『リフレクションプローブの書き出し方法』に従い、BuildAndRunを実行します。</p>
 <div class="admonition caution">
 <p class="admonition-title">リフレクションプローブを書き出す際の注意点</p>
 <ul>
