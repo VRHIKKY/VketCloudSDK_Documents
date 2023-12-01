@@ -35,6 +35,12 @@
     - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/heoexporter/he_TextureCompression.html)
         - Deleted info of deprecated dxt conversion likewise former pvrtc conversion
 - HEO Components
+    - [HEOAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOAreacollider.html)
+        - Added info on collision / area range detection by collider
+        - Added info on HEOComponent and Box Collider automatically added when attaching HEOAreaCollider
+    - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOCollider.html)
+        - Added info on collision / area range detection by collider
+        - Added caution on player not colliding when collider type is not set to `Collider`
     - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOField.html)
         - Added Settings including description for Look at Camera
     - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOObject.html)
