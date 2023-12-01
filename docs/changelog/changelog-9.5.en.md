@@ -25,6 +25,8 @@
 - SDK Tools
     - [Particle Editor Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_particleeditor.html)
         - Updated Launch Instructions
+    - [About Screen / How to Operate](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_screen.html)
+        - Merged screen information and instructions of operation to one page 
 - World Optimization
     - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/heoexporter/he_TextureCompression.html)
         - Deleted info of deprecated dxt conversion likewise former pvrtc conversion
