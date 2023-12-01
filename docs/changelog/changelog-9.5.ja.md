@@ -30,6 +30,12 @@
     - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/heoexporter/he_TextureCompression.html)
         - pvrtcに加えてdxt変換が廃止になったため記述から削除
 - HEOコンポーネント
+    - [HEOAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOAreacollider.html)
+        - コライダーの衝突 / エリア範囲判定について追記
+        - HEOAreaCollider追加時に自動でHEOColliderとBox Colliderが追加される旨を追記
+    - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOCollider.html)
+        - コライダーの衝突 / エリア範囲判定について追記
+        - コライダータイプがコライダー以外の場合に衝突しない旨を追記
     - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOField.html)
         - 各設定項目及びLook at Cameraの説明を追加
     - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOObject.html)
