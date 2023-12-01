@@ -25,7 +25,7 @@ class Quaternion
 ### makeQuaternion(float, float, float, float)
 `Quaternion makeQuaternion(float x, float y, float z, float w)`
 
-グローバル関数。x, y, z, w の4要素を指定して Quaternion を生成する。
+グローバル関数。x, y, z, w の4要素を指定してクォータニオンを生成する。
 
 ### makeQuaternionMul(Quaternion, Quaternion)
 `Quaternion makeQuaternionMul(Quaternion a, Quaternion b)`
@@ -57,7 +57,7 @@ class Quaternion
 ### Quaternion()
 `public Quaternion()`
 
-x, y, z 要素を0, w要素を1に設定して Quaternion のインスタンスを生成する。
+x, y, z 要素を0, w要素を1に設定してクォータニオンのインスタンスを生成する。
 
 
 ## メンバ変数
@@ -65,22 +65,22 @@ x, y, z 要素を0, w要素を1に設定して Quaternion のインスタンス�
 ### float x
 `public float x`
 
-クォータタニオンのx成分。
+クォータニオンのx成分。
 
 ### float y
 `public float y`
 
-クォータタニオンのy成分。
+クォータニオンのy成分。
 
 ### float z
 `public float z`
 
-クォータタニオンのz成分。
+クォータニオンのz成分。
 
 ### float w
 `public float w`
 
-クォータタニオンのw成分。
+クォータニオンのw成分。
 
 
 ## メソッド
