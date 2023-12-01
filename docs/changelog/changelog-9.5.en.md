@@ -22,6 +22,10 @@
         - Added note on placing objects with same names, which are not recommended
     - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/AvatarFile.html)
         - Updated settings and images
+    - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/ReflectionProbe.html)
+        - Changed title (in Japanese manual)
+        - Deleted unused images and fixed links
+        - Fixed few formats and typos
 - World Optimization
     - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/heoexporter/he_TextureCompression.html)
         - Deleted info of deprecated dxt conversion likewise former pvrtc conversion
