@@ -136,7 +136,7 @@ By committing build at this point, you can display animated objects on the scene
 
 !!! note caution
         Notes when exporting .heo: <br>
-        - If you export the original object without setting its Position to (0,0,0), the placement position will be the [HEOObject](../ HEOComponents/HEOObject.md) Position added with the Position value at the time of export. <br>
+        - If you export the original object without setting its Position to (0,0,0), the placement position will be the [HEOObject](../HEOComponents/HEOObject.md) Position added with the Position value at the time of export. <br>
         - If the original object has collision detection enabled, the exported object will also have collision detection. <br>
         - Even if you move an object in .hem, the collision detection information of the object will not be moved. <br>
         - The first animation in the Motion column will be automatically played when the world starts. <br>

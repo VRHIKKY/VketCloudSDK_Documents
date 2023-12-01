@@ -38,4 +38,4 @@ HEOCollider is a component to set what kind of collision detection a collider ha
 The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
 Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md) on HEOWorldSettings and pressing F4.
 
-![HEOCollider_2](..img/HEOCollider_2.jpg)
+![HEOCollider_2](img/HEOCollider_2.jpg)

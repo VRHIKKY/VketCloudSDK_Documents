@@ -38,4 +38,4 @@ HEOColliderとは、Vket Cloud上でコライダーがどのような衝突判�
 ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>
 また、以下のようなコリジョンの可視化はHEOWorldSettingから[デバッグモード](../WorldEditingTips/DebugMode.md)を有効にした上でF4キーを押すと切り替えできます。
 
-![HEOCollider_2](..img/HEOCollider_2.jpg)
+![HEOCollider_2](img/HEOCollider_2.jpg)

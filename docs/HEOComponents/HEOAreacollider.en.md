@@ -8,7 +8,7 @@ To attach HEOAreaCollider, [HEOCollider](./HEOCollider.md) and Collider must be 
 On attaching a HEOAreaCollider component to an object, the [HEOCollider](./HEOCollider.md) and Box Collider will be added.<br>
 The [HEOCollider](./HEOCollider.md) type must be set to Area.
 
-![HEOCollider](img/HEOCollider.jpg)
+![HEOCollider](img/HEOCollider_1.jpg)
 
 In each of Actions and LeaveActions, you can set any action by clicking Add. <br>
 You can remove the last action by clicking Delete.
@@ -26,4 +26,4 @@ For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide
 The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
 Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md) on HEOWorldSettings and pressing F4.
 
-![HEOCollider_2](..img/HEOCollider_2.jpg)
+![HEOCollider_2](img/HEOCollider_2.jpg)
