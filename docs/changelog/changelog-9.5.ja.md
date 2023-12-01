@@ -22,6 +22,10 @@
         - 同名のオブジェクトの複数配置非推奨を明記
     - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldMakingGuide/AvatarFile.html)
         - 設定方法及び解説画像を更新
+    - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldMakingGuide/ReflectionProbe.html)
+        - 題名を変更　（旧題：反射を写り込ませるには）
+        - 未使用画像を削除し、リンクを修正
+        - 一部文言を変更
 - SDK Tools
     - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_particleeditor.html)
         - 起動方法を更新

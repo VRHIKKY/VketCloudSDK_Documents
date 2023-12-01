@@ -1,57 +1,64 @@
+# リフレクションプローブ
+
+(旧題：反射を映り込ませるには)
+
 !!! note Info
     リフレクションプローブの基本的な使い方については、Unityの公式ドキュメント等([こちら](https://docs.unity3d.com/ja/2018.4/Manual/class-ReflectionProbe.html){target=blank})をご覧ください。
 
-VketCloudで使用されるリフレクションプローブは、プリミティブ単位ではなくヒエラルキー上のオブジェクト単位で決定されます。
+Vket Cloudで使用されるリフレクションプローブは、プリミティブ単位ではなくヒエラルキー上のオブジェクト単位で決定されます。
 
-<img src="img/ReflectionProbeUnityEditor.jpg">
+![ReflectionProbeUnityEditor](img/ReflectionProbeUnityEditor.jpg)
 
 **オブジェクトのMeshRenderer/Probesの項目に羅列されているリフレクションプローブの中で「一番Weightの数値が大きいもの」が、そのオブジェクトが使用するリフレクションプローブのインデックスとして書き出される**のでご注意ください。
 
-このWeight値は、リフレクションプローブとオブジェクトの距離を基準に計算されます。またVketCloudではリフレクションプローブのブレンドはサポートしていません。
+このWeight値は、リフレクションプローブとオブジェクトの距離を基準に計算されます。またVket Cloudではリフレクションプローブのブレンドはサポートしていません。
 
-<img src="img/ReflectionProbeWeight.jpg">
+![ReflectionProbeWeight](img/ReflectionProbeWeight.jpg)
 
 ---
 
 ## リフレクションプローブの書き出し方法
-1. リフレクションプローブを以下のように設定し「Bake」を押します。
+1\. リフレクションプローブを以下のように設定し「Bake」を押します。
 
     - Type: Baked 
     - HDR: *チェック無し* 
-    - Resolusion:  任意 (負荷と反射させる面の大きさを考慮して指定してください) 
+    - Resolution:  任意 (負荷と反射させる面の大きさを考慮して指定してください) 
 
-    <img src="img/ReflectionProbeSetting.jpg">
+![ReflectionProbeSetting](img/ReflectionProbeSetting.jpg)
 
-2. Bakeを押した後に「リフレクションプローブ用」のキューブマップが作成されますのでそちらの設定項目にある「Advanced→Read/Write Enabled」にチェックを入れて『Apply』を押します。
+2\. Bakeを押した後に「リフレクションプローブ用」のキューブマップが作成されますのでそちらの設定項目にある「Advanced→Read/Write Enabled」にチェックを入れて『Apply』を押します。
 
-    <img src="img/ReflectionProbeReadWriteEnabled.jpg">
+![ReflectionProbeSettingReadWriteEnabled](img/ReflectionProbeReadWriteEnabled.jpg)
 
-3. エクスポートしたいオブジェクトの一番親の階層のオブジェクト(VketCloudSample)に「HEOReflectionProbe.cs」をアタッチします。その後インスペクターから「HEOReflectionProbe/ReflectionProbes」にエクスポートしたいリフレクションプローブを任意の数アタッチします。
+3\. エクスポートしたいオブジェクトの一番親の階層のオブジェクト(VketCloudSample)に「HEOReflectionProbe.cs」をアタッチします。その後インスペクターから「HEOReflectionProbe/ReflectionProbes」にエクスポートしたいリフレクションプローブを任意の数アタッチします。
 
-    <img src="img/ReflectionProbeAttachHEO.jpg">
+![ReflectionProbeAttachHEO](img/ReflectionProbeAttachHEO.jpg)
 
-4. リフレクションプローブ自体をこれからエクスポートするオブジェクトの子要素にします。(リフレクションプローブではTransformを使用することがあるため一緒にエクスポートする必要があります)
+4\. リフレクションプローブ自体をこれからエクスポートするオブジェクトの子要素にします。(リフレクションプローブではTransformを使用することがあるため一緒にエクスポートする必要があります)
 
-    <img src="img/ReflectionProbeAttachAsChild.jpg">
+![ReflectionProbeAttachAsChild](img/ReflectionProbeAttachAsChild.jpg)
 
-5. BuildAndRunを実行します。
+5\. BuildAndRunを実行します。
 
-    <img src="img/ReflectionProbeExportField.jpg">
+![ReflectionProbeExportField](img/ReflectionProbeExportField.jpg)
 
-このHEOファイルをVketCloudで読み込んで表示したサンプルは以下のものになります。
-    <img src="img/ReflectionProbeSample.jpg">
+このHEOファイルをVket Cloudで読み込んで表示したサンプルは以下のものになります。
+
+![ReflectionProbeSample](img/ReflectionProbeSample.jpg)
 
 
 ## Box Projection(カメラ位置により移動する反射)について
-VketCloudでは、UnityのリフレクションプローブのBox Projectionを任意で使用することができます。
+Vket Cloudでは、UnityのリフレクションプローブのBox Projectionを任意で使用することができます。
 
-1. Unity上でリフレクションプローブの『Box Projection』にチェックを入れます。(LightMapを使用している場合、押せないことがあります)
-<img src="img/ReflectionProbeBoxProjection.jpg">
+1\. Unity上でリフレクションプローブの『Box Projection』にチェックを入れます。(LightMapを使用している場合、押せないことがあります)
 
-2. リフレクションプローブのオブジェクトを必ずこれからエクスポートするオブジェクトの子要素にします。(Box ProjectionはTransformを使用するため)
-<img src="img/ReflectionProbeAttachAsChild.jpg">
+![ReflectionProbeBoxProjection](img/ReflectionProbeBoxProjection.jpg)
 
-3. 上記の『リフレクションプローブの書き出し方法』に従い、BuildAndRunを実行します。
+2\. リフレクションプローブのオブジェクトを必ずこれからエクスポートするオブジェクトの子要素にします。(Box ProjectionはTransformを使用するため)
+
+![ReflectionProbeAttachAsChild](img/ReflectionProbeAttachAsChild.jpg)
+
+3\. 上記の『リフレクションプローブの書き出し方法』に従い、BuildAndRunを実行します。
 
 !!! caution "リフレクションプローブを書き出す際の注意点"
 
