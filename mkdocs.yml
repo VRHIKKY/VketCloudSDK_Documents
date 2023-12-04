@@ -142,7 +142,6 @@ plugins:
           About Changelog: チェンジログについて
           Release Note: リリースノート
           About Release Note: リリースノートについて
-          HeliScript: ヘリスクリプト
           Statements and flow control: 宣言と制御
           Debug Mode: デバッグモード
           Debug Console: デバッグコンソール
