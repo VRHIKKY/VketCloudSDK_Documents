@@ -1,5 +1,5 @@
 # HEOScript
-![HEOScript](img/HEOScript_en.jpg)
+![HEOScript](img/HEOScript.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
