@@ -67,10 +67,12 @@
         - 文字列におけるアポストロフィ / シングルクォートの使用について不具合を記載
     - [HeliScript/Vector3クラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_struct_vector3.html)
     - [HeliScript/Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_class_player.html)
-    - [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_class_item.html)
     - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function.html)
     - [HeliScript/組み込み関数 - ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function_net.html)
     - [HeliScript/組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function_gui.html)
+        - 現バージョンにて使用できる関数を反映
+    - [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_class_item.html)
+        - 概要を追記
         - 現バージョンにて使用できる関数を反映
 - トラブルシューティング
     - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/VersionUpdateTroubleshooting.html)
