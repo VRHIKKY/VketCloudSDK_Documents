@@ -76,6 +76,28 @@ Unityに以下のインストールウィザード画面とメニュー表示が
 
 ![InstallationWizard_3_jp](img/InstallationWizard_3_jp.jpg)
 
+### API Compatibility Level (API互換性レベル)の変更
+
+1. UnityのメニューバーのEditからProject Settings...をクリックしてください。  
+
+2. Project Settingsウインドウが表示されたら、一覧からPlayerをクリックしてください。
+
+3. PCの設定中にあるConfigurationを確認し、API Compatibility Levelの項目をプルダウンメニューから「.NET 4.x」に変更してください。
+
+![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
+
+### LightMapEncodingの変更
+
+上記と同じくPC設定内のOther Settingsにある、Lightmap Encodingの項目をプルダウンメニューからNormal Qualityに変更してください。
+
+![LightMapEncoding](img/LightMapEncoding.jpg)
+
+### Color Spaceの変更
+
+Edit > Project SettingsよりColor SpaceをLinearに変更します。
+
+![linear](img/linear.jpg)
+
 4\. 設定が完了されるとそれぞれの設定項目の左にチェックマークが表示されます。<br>設定されない状態で「次へ」ボタンを押すと以下警告画面が表示されます。
 
 ![InstallationWizard_4_jp](img/InstallationWizard_4_jp.jpg)

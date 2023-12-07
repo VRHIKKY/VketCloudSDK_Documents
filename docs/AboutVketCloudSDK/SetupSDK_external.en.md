@@ -79,6 +79,28 @@ To install the SDK on a new project, use the SDK Install Wizard.
 
 ![InstallationWizard_3_en](img/InstallationWizard_3_en.jpg)
 
+### Setting API compatibility level**
+
+1. Click Project Settings... from Edit in the Unity menu bar  
+
+2. When the Project Settings window appears, click Player from the list.  
+
+3. Check the Configuration in the Project Settings and change the Api Compatibility Level to ".NET 4.x" from the pull-down menu.
+
+![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
+
+### Setting LightMap Encoding**
+
+Likewise above, check the Configuration in the Project Settings and change the Lightmap Encoding to "Normal Quality" from the pull-down menu.
+
+![LightMapEncoding](img/LightMapEncoding.jpg)
+
+### Setting Color Space
+
+From Edit >Project Settings, set the  Color Space as Linear.
+
+![linear](img/linear.jpg)
+
 4\.  By finishing each setting, a check mark will appear on each article. <br>  By ignoring the settings and selecting the "Next" button, a window of warning will appear.
 
 ![InstallationWizard_4_en](img/InstallationWizard_4_en.jpg)

@@ -13,8 +13,11 @@
 
 # Edited Pages
 - About VketCloudSDK
+    - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/AboutVketCloudSDK/OperatingEnvironment.html)
+        - Added instructions on setting recommended Settings
     - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupSDK_external.html)
         - Added instructions on how to use the install wizard / version manager
+        - Added instructions on setting recommended Settings
     - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupAvatar.html)
         - Updated instructions on adding avatars
 - World Making Guide

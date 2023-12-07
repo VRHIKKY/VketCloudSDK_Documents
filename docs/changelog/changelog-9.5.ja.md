@@ -13,8 +13,11 @@
 
 # 変更されたページ
 - VketCloudSDKについて
+    - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/AboutVketCloudSDK/OperatingEnvironment.html)
+        - 推奨設定の設定方法を追記
     - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/AboutVketCloudSDK/SetupSDK_external.html)
         - インストールウィザード及びVersion Managerの使用方法を追加
+        - 推奨設定の設定方法を追記
     - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/AboutVketCloudSDK/SetupAvatar.html)
         - アバターの使用方法を現行版に更新
 - ワールド制作ガイド
