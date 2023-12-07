@@ -8,6 +8,7 @@
     - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOActivity.html)
     - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOBackgroundTexture.html)
 - HeliScript
+    - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_overview.html)
     - [HeliScript/Built-in functions - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_chatgpt.html)
     - [HeliScript/Built-in functions - Physics](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_physics.html)
 

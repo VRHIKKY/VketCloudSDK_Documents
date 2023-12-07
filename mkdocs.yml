@@ -143,6 +143,7 @@ plugins:
           Release Note: リリースノート
           About Release Note: リリースノートについて
           HeliScript: ヘリスクリプト
+          HeliScript - Overview: HeliScript概要
           Statements and flow control: 宣言と制御
           Debug Mode: デバッグモード
           Debug Console: デバッグコンソール
@@ -271,6 +272,7 @@ nav:
       - SetCookieText: Actions/Programmatic/SetCookieText.md
       - CallScript: Actions/Programmatic/CallScript.md
 - HeliScript:
+    - HeliScript - Overview: hs/hs_overview.md
     - Built-in Types:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
