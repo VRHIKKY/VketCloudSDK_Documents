@@ -181,6 +181,14 @@ nav:
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+- Trouble shooting:
+    - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
+    - Build Error: troubleshooting/BuildError.md
+    - Browser does not open: troubleshooting/BrowserNotOpen.md
+    - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
+    - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
+    - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
+    - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
@@ -295,14 +303,6 @@ nav:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_constrol.md
         - Operator: hs/hs_operator.md
-- Trouble shooting:
-    - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
-    - Build Error: troubleshooting/BuildError.md
-    - Browser does not open: troubleshooting/BrowserNotOpen.md
-    - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
-    - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
-    - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v9.x:
