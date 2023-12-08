@@ -80,6 +80,9 @@
         - 概要を追記
         - 現バージョンにて使用できる関数を反映
 - トラブルシューティング
+    - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/BuildError.html)に統合
+        - 旧タイトルを改題 (旧：ビルドエラー)
+        - 似た内容のページを統合
     - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/VersionUpdateTroubleshooting.html)
         - 旧タイトルを改題
         - Ver9.5へのアップデート時に欠落する恐れのある設定について追記
@@ -98,3 +101,8 @@
         - JavaScript
 - HEOTweetTrigger
 - チェックツール (本バージョンでは[デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/debugconsole/debugconsole.html)をご使用ください)
+- トラブルシューティング
+    - ブラウザが立ち上がらない
+    - ブラウザウィンドウが暗転したまま動かない
+    - 変更が更新されない
+        - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/BuildError.html)に統合
