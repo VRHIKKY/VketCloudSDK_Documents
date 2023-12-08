@@ -62,6 +62,8 @@
     - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/Actions/Programmatic/CallScript.html)
         - 画像をVer9.5仕様に差し替え
 - HeliScript
+    - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_component.html)
+        - 題名を変更(旧題：コンポーネント)
     - [HeliScript/文字列(String)](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_string.html)
     - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function.html)
         - 文字列におけるアポストロフィ / シングルクォートの使用について不具合を記載

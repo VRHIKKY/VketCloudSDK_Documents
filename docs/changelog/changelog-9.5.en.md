@@ -62,6 +62,8 @@
     - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/Actions/Programmatic/CallScript.html)
         - Replaced image to match Ver9.5
 - HeliScript
+    - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_component.html)
+        - Changed title (old: components)
     - [HeliScript/String](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_string.html)
     - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function.html)
         - Added caution on using apostrophe / single quotations in strings

@@ -10,7 +10,7 @@
 - HEOScriptをアタッチ可能なGameObjectは、スクリプトの対象となる[HEOField](./HEOField.md)がアタッチされているオブジェクト及びその子オブジェクトです (下記画像を参照)
 - 詳しいHeliScriptの書き方は以下をご覧ください。
 - [クラス](../hs/hs_class.md)
-- [コンポーネント](../hs/hs_component.md)
+- [コンポーネント / コールバック関数](../hs/hs_component.md)
 
 ![HEOScript_attachable](./img/HEOScript_attachable.jpg)
 

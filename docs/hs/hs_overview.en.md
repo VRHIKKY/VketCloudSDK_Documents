@@ -112,7 +112,7 @@ By attaching script to [HEOScript](../HEOComponents/HEOScript.md) and building t
 
 ![hs_overview_6](img/hs_overview_6.jpg)
 
-For callback functions provided in the SDK such as OnClickNode, please refer to [Component/Callback functions](./hs_component.md).
+For callback functions provided in the SDK such as OnClickNode, please refer to [Components / Callback functions](./hs_component.md).
 
 ## About Player / Item / Node
 
