@@ -72,6 +72,9 @@
     - [HeliScript/Built-in functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function_gui.html)
         - Updated methods useable on current version
 - Trouble shooting
+    - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/BuildError.html)
+        - Changed page title (old: Build Error)
+        - Integrated related pages
     - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/VersionUpdateTroubleshooting.html)
         - Changed page title
         - Added information on settings that may reset on updating to Ver9.5
@@ -89,3 +92,10 @@
     - Built-in Functions - JavaScript
 - HEOTweetTrigger
 - Check Tool (Please use [debug console](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/debugconsole/debugconsole.html) for this version)
+- Trouble shooting
+    - Browser does not open: troubleshooting/BrowserNotOpen.md
+    - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
+    - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
+        - Integrated to [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/BuildError.html)
+    - SDK does not appear after install
+        - Integrated to [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/VersionUpdateTroubleshooting.html)

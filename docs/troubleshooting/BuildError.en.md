@@ -1,21 +1,41 @@
+# Build Error / How to troubleshoot issues
 
-# Build Error
 ![BuildError](img/BuildError.jpg)
 
 Build And Run launches your web browser, but the contents may not be displayed properly.
 
 This can be caused by several reasons, but the common issues are the following:
 
-|  Cause |  How to Fix  |
+|  Cause |  Solution  |
 | ----   | ---- |
-| The avatar list is empty. | Register at least one avatar. |
+| The avatar list is empty | Register at least one avatar |
 | Element in `HEOWorldSettings/BasicInfo/HeliScript` is empty. | Delete the element that is being [`None` or `Missing`](../HEOComponents/HEOWorldSetting.md). |
-| The .heo export is failing. | Please check the Unity Console for red errors. |
+| The .heo export is failing. | Please check the Unity Console or [Debug Console](../debugconsole/debugconsole.md) for red errors. |
 | Error in the Unity cache. | Clear your cache from Preferences |
 | Error in the browser cache. | Clear your cache of your browser |
 | Cannot find the necessary file (404) | From the error log explained below, find the 404-ing file and change it to a different file format that Vket Cloud supports. |
+| The directory path / file name in your Unity Project contains spaces or full-width characters | Delete any spaces or double-byte characters. |
 
-## Checking the Error Log
+### If changes you made are not showing up 
+
+There are cases where the changes you made in Unity does not apply in the web browser.
+
+In most cases, this is caused by **the cache keeping old information**.
+
+|  Cause |  How to Fix  |
+| ----   | ---- |
+| Your web browser still has the cache of old information. | Hard reload the web page using Ctrl+Shift+R. |
+
+Cache in Unity can be cleared by clearing the cache by VketCloudSDK > Clear Cache.
+
+![VersionUpdateTroubleshooting_3](./img/VersionUpdateTroubleshooting_3.jpg)
+
+HeliScript/gimmicks may not work due to browser cache after version switching.<br>
+If such issue happens, try clearing the browser cache.
+
+![VersionUpdateTroubleshooting_4_en](img/VersionUpdateTroubleshooting_4_en.jpg)
+
+### Checking the Error Log
 
 To find the cause of build errors, check your web browser's console.
 
@@ -27,11 +47,34 @@ The info on the console is not always linked with Vket Cloud's build error, but 
 
 ![DeveloperToolConsole](img/DeveloperToolConsole.jpg)
 
-## Checking the imported library
+### Checking the imported library
 
 Sometimes the build error may be caused by library or script imported from Package Manager or others.
 
 In such cases, the error can be fixed by reimporting the newly imported library that is likely to be the cause.
 
 !!! note caution
-        As the EditorTutorialSystem package may rarely fail to be imported automatically, causing build errors, add the package below using the [Package Manager](../AboutVketCloudSDK/SetupSDK_external.md) on such occurence.
+        As the EditorTutorialSystem package may rarely fail to be imported automatically, causing build errors, add the package below using the [Package Manager](../AboutVketCloudSDK/SetupSDK_external.md) on such occurrence.
+
+### Using the Debug Console / DebugMode
+
+The SDK provides tools for debugging, which on the Unity editor the debug console can be used, while on the browser the debug mode can be enabled to solve issues.
+Refer to the pages below for instructions.
+
+[Debug Console](../debugconsole/debugconsole.md)
+
+[Debug Mode](../WorldEditingTips/DebugMode.md)
+
+## Browser window blackouts
+
+If the browser window remains to blackout on entering the world, check the following:
+
+|  Cause |  How to Fix |
+| ----   | ---- |
+| Hardware Acceleration on the browser is disabled | Enable hardware acceleration via the browser settings | 
+| A gamepad is connected on the PC | Disconnect the gamepad connected to the PC |
+| Build Error is unsolved | See [Build Error](./BuildError.md) for instructions |
+
+For example, if the browser is Chrome, enabling "Use hardware acceleration when available" via the "System" section on settings may fix the blackout.
+
+![BrowserBlackWindow](./img/BrowserBlackWindow_en.jpg)
