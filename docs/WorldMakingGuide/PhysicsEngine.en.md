@@ -1,4 +1,4 @@
-# Physics Engine
+# Physics Engine / How to Use Colliders
 
 ## How to Use the Physics Engine
 1. To apply physics calculations to game objects, attach "Unity Collider" and "HEOCollider" to the game object. Unity colliders that can be used for physics calculations are "Box Collider", "Sphere Collider", "Capsule Collider". Furthermore, by attaching an additional "HEOCylinderCollider" to a game object with a "Capsule Collider" as mentioned later, it can be used as a cylinder collider exclusively in the VketCloud physics engine.

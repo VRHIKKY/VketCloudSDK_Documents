@@ -28,6 +28,7 @@
         - 一部文言を変更
     - [物理エンジン / コライダーの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldMakingGuide/PhysicsEngine.html)
         - 題名を変更 (旧題：物理エンジン)
+        - コライダーの付け方、HeliScriptでの物理演算の扱い方を追記
         - 文書について細かな整形
 - SDK Tools
     - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_particleeditor.html)

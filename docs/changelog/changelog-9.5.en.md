@@ -26,6 +26,10 @@
         - Changed title (in Japanese manual)
         - Deleted unused images and fixed links
         - Fixed few formats and typos
+    - [Physics Engine / How to Use Colliders](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/PhysicsEngine.html)
+        - Changed title (old: Physics Engine)
+        - Added info on how to use colliders, how to use physics in HeliScript *English translation WIP
+        - Reformatted text
 - SDK Tools
     - [Particle Editor Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_particleeditor.html)
         - Updated Launch Instructions
