@@ -1,143 +1,145 @@
-# HeliScript概要
+# HeliScript - Overview
 
-Vket Cloudでは、HeliScriptというエンジン独自のスクリプトを使用してプログラミングを行うことができます。<br>
-HeliScriptを使用すると、[アクション](../Actions/ActionsOverview.md)と比べてより複雑なギミック・挙動を実装できます。
+Vket Cloud allows programming using the engine's own script called HeliScript. <br>
+Using HeliScript, you can implement more complex gimmicks and behaviors compared to using [Actions](../Actions/ActionsOverview.md).
 
-HeliScriptの文法については[基本系](./hs_var.md)から順番に読むことで習得できます。<br>
-また、ここでは以下にてHello Worldを出力する方法を通じて、基本的な実装の例を示します。
+You can learn about the syntax of HeliScript by reading it in order starting from [Built-in types](./hs_var.md). <br>
+As an example, we will show a basic implementation of displaying "Hello World" on the console.
 
-## HeliScriptの使い方の例 (Hello Worldをコンソールに出力する)
+## Example of how to use HeliScript (displaying Hello World on the console)
 
-### 1. AssetsにHeliScriptファイルを追加する
+### 1. Add a HeliScript file to Assets Folder
 
 ![hs_overview_1](img/hs_overview_1.jpg)
 
-初めに、HeliScriptを書き込むファイルを作ります。<br>
-Projectウィンドウ(Assetsなどがあるところ)で右クリックして、**「HS script」**を選択し、任意のフォルダに‘HeliScriptファイルを追加します。
+First, create a file to write HeliScript. <br>
+Right-click in the Project window (where folder such as Assets are located), select **"HS script"**, and add the HeliScript file to any folder.
 
-例として、ここではAssetsフォルダにScriptsフォルダを追加し、HelloWorld.hsという名前でHeliScriptファイルを新規生成しています。
+As an example, a Scripts folder is newly added to the Assets folder, followed by creating a new HeliScript file with the name `HelloWorld.hs`.
 
 ![hs_overview_2](img/hs_overview_2.jpg)
 
-### 2. HEOScriptをシーンに追加する
+### 2. Add HEOScript to the scene
 
 ![hs_overview_3](img/hs_overview_3.jpg)
 
-HeliScriptファイルを追加したら、次はシーンにHeliScriptの設定を行います。<pr>
-HeliScriptは[HEOScript](../HEOComponents/HEOScript.md)コンポーネントを使用してシーン内に登場させます。
-インスペクター画面にてAdd Component > HEOScriptと選択してコンポーネントのアタッチを行います。
+After adding the HeliScript file, the next step is to configure HeliScript in the scene. <pr>
+HeliScript appears in the scene using the [HEOScript](../HEOComponents/HEOScript.md) component.
+Select "Add Component" > "HEOScript" on the Inspector screen to attach the component.
 
-[HEOScript](../HEOComponents/HEOScript.md)コンポーネントでは実行したいHeliScriptファイルを選びます。<br>
-メニュー右の「Select」を選択するとHeliScriptの一覧が出現するため、使いたいHeliScriptを選択します。
+In the [HEOScript](../HEOComponents/HEOScript.md) component, select the HeliScript file you want to run. <br>
+By selecting "Select" on the right side of the menu, a list of HeliScripts will appear, so select the HeliScript to be used.
 
-### 3. HEOWorldSettingにてデバッグモードを有効にする
+### 3. Enable debug mode in HEOWorldSetting
 
 ![hs_overview_4](img/hs_overview_4.jpg)
 
-今回実装するHelloWorldでは、デバッグログにて文字を出力するためにワールドのビルドをデバッグモードに設定する必要があります。<br>
-デバッグモードを使うために[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)の[Debug Mode](../WorldEditingTips/DebugMode.md)を有効にします。
+In the HelloWorld script for this example, it is necessary to enable debug mode in order to display the result on the debug log. <br>
+To use debug mode, enable [Debug Mode](../WorldEditingTips/DebugMode.md) in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md).
 
-### 4. HeliScriptを書く
+### 4. Write HeliScript
 
-いよいよHeliScript本体を書いていきます。<br>
-HelloWorld.hsの実装として以下に例を示します。
+Now it's time to write the HeliScript itself. <br>
+A code example is shown below as an implementation of HelloWorld.hs.
 
 ```
-//コンポーネント：
+//component
 component HelloWorld
-{   
+{
 
-    //コンストラクタ関数：ワールド入場時に一度だけ実行されます
-    public HelloWorld()
-    {
-    //デバッグログに出力
-    hsSystemOutput("Hello, World!\n");
-    }
+     //Constructor: executed only once on player entry
+     public HelloWorld()
+     {
+     //Output to debug log
+     hsSystemOutput("Hello, World!\n");
+     }
 
-    //アップデート関数：毎フレーム実行されます
-    public void Update()
-    {
+     //Update function: executed every frame
+     public void Update()
+     {
 
-    }
+     }
 }
 ```
-### 5. Build And Runでテストする
-コードの実装を完了した上で、Build And Runを実行すると画面上のデバッグログに"Hello, World!"が出力されます。
+### 5. Test with Build And Run
+After completing the code implementation and executing Build And Run, "Hello, World!" will be displayed to the debug log on the screen.
 
 ![hs_overview_5](img/hs_overview_5.jpg)
 
-## HEOScriptの配置・オブジェクトの参照について
+## Placing HEOScript and referencing objects
 
-HEOScriptをアタッチ可能なGameObjectは、スクリプトの対象となる[HEOField](./HEOField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
-詳しいHeliScriptの配置方法は[HEOScript](../HEOComponents/HEOScript.md)をご確認ください。
+[HEOScript](../HEOComponents/HEOScript.md) components can be attached to gameobjects with [HEOField](./HEOField.md) and its child gameobjects.
+For details on how to place HeliScript, please check [HEOScript](../HEOComponents/HEOScript.md).
 
 ![HEOScript_attachable](../HEOComponents/img/HEOScript_attachable.jpg)
 
-HeliScript内で各オブジェクトを参照する際は、後述するItem及びNodeによって取り扱います。<br>
-例として、以下のように[HEOField](../HEOComponents/HEOField.md)下のexampleObjectがクリックされた際にメッセージを出力するスクリプトが書けます。
+In HeliScript, each objects are referenced by using Item and Node classes mentioned later. <br>
+For example, a script that outputs a message when the exampleObject under [HEOField](../HEOComponents/HEOField.md) is clicked can be written as follows.
 
 ```
 component example
 {
-    //アイテム・プレイヤーを定義
-    //ここではhsItemGetなどの取得関数を含め、オブジェクトの初期化はできないためにご注意ください
-	Item	ex_Item;
-	Player	ex_player;
+     //Define item/player class
+     //Note that objects cannot be initialized here, including using functions such as hsItemGet
+    Item ex_Item;
+    Player ex_player;
 
-	int		ex_ItemNodeIndex;
+    int ex_ItemNodeIndex;
 
-    public example()
-    {
-        //アイテムを認識　アイテム名は.heoになっている物を指定する　今回はHEO Field指定
-        ex_Item = hsItemGet("World");
-        //プレイヤーを認識
-        ex_player = hsPlayerGet();
+     public example()
+     {
+         //Refer to Items: Specify items whose name ends by .heo. This instance, enter the object having HEOField
+         ex_Item = hsItemGet("World");
+         //Refer to Player
+         ex_player = hsPlayerGet();
         
-        //ItemがHEO Fieldなので、その傘下にあるオブジェクトのノードを取得可能
-        ex_ItemNodeIndex = ex_Item.GetNodeIndexByName("exampleObject");
-    }
+         //Since Item type is HEOfield, the nodes of the objects under can be obtained
+         ex_ItemNodeIndex = ex_Item.GetNodeIndexByName("exampleObject");
+     }
 
-    //クリックしたとき、対象のノードを取得する。OnClickNodeの使い方はコールバック関数のページをご参照ください
-    public void OnClickNode(int NodeIndex)
-    {
-        //クリック対象と上で取得したノードが一致したとき
-    	if(NodeIndex == ex_ItemNodeIndex){
-    	    //メッセージを表示
-        	hsSystemOutput("exObj Clicked.\n");
-        }
-    }
+     //Callback triggered when the target node is clicked. Please refer to the callback function page for how to use OnClickNode.
+     public void OnClickNode(int NodeIndex)
+     {
+         //When the click target matches the node obtained previously:
+        if(NodeIndex == ex_ItemNodeIndex){
+        //Display message on debug console
+         hsSystemOutput("exObj Clicked.\n");
+         }
+     }
 }
 ```
-スクリプトを[HEOScript](../HEOComponents/HEOScript.md)に設定し、ワールドをビルドすると以下のようにオブジェクトをクリックした際にメッセージが出力されます。
+By attaching script to [HEOScript](../HEOComponents/HEOScript.md) and building the world, a message will be output when you click on the exampleObject as shown below.
 
 ![hs_overview_6](img/hs_overview_6.jpg)
 
-OnClickNodeなど、SDKに用意されているコールバック関数は[コンポーネント / コールバック関数](./hs_component.md)をご参照ください。
+For callback functions provided in the SDK such as OnClickNode, please refer to [Component/Callback functions](./hs_component.md).
 
-## Player / Item / Nodeについて
+## About Player / Item / Node
 
-Vket Cloud独自の概念として、Player, Item, そしてNodeがあります。<br>
-以下にて各概念の概要を解説します。
+Player, Item, and Node are concepts unique to Vket Cloud. <br>
+An brief explanation of each concept is as follows.
 
 ## Player
 
-Vket Cloudにおいて、Playerはワールド内の操作主体である自身を指します。<br>
-Playerの振る舞い方は[HEOPlayer](../HEOComponents/HEOPlayer.md)で定義されます。
+In Vket Cloud, Player refers to the avatar who operates in the world. <br>
+How the Player behaves is defined in [HEOPlayer](../HEOComponents/HEOPlayer.md).
 
-PlayerのHeliScriptでの取り扱いは[Playerクラス](./hs_class_player.md)をご参照ください。
+For handling Player by HeliScript, please refer to [Player class](./hs_class_player.md).
 
 ## Item
 
-Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
-[HEOField](../HEOComponents/HEOField.md), [HEOObject](../HEOComponents/HEOObject.md), [HEOPlane](../HEOComponents/HEOPlane.md), [HEOActivity](../HEOComponents/HEOActivity.md)などがこれにあたります。
+When creating a world on Vket Cloud, each element other than Player is expressed as an Item. <br>
+Items include objects with [HEOField](../HEOComponents/HEOField.md), [HEOObject](../HEOComponents/HEOObject.md), [HEOPlane](../HEOComponents/HEOPlane.md), and [HEOActivity](../HEOComponents/HEOActivity.md).
 
-ItemのHeliScriptでの取り扱いは[Itemクラス](./hs_class_item.md)をご参照ください。
+For handling Item by HeliScript, please refer to [Item class](./hs_class_item.md).
 
 ## Node
-前述のItemのうち、[HEOField](../HEOComponents/HEOField.md)で定義されたItemに子オブジェクトがある場合、その子オブジェクトはItemのNodeとして扱われます。<br>
-例として、以下の[HEOField](../HEOComponents/HEOField.md)に取り付けられたObjectA, ObjectB, ObjectC, ObjectC2, ObjectC3はNodeとなり、[Show/HideNode](../Actions/Node/ShowHideNode.md), [Enable/DisableCollider](../Actions/Node/EnableDisableCollider.md)などのアクションの対象となります。<br>
-なお、[HEOField](../HEOComponents/HEOField.md)の子オブジェクトになっていない`ObjectD`はNodeではなく、かつItemでもない場合はビルド時にワールドに含まれないことに注意してください。
+
+If an Item defined by [HEOField](../HEOComponents/HEOField.md) has a child object, that child object will be treated as the Item's Node. <br>
+As an example, ObjectA, ObjectB, ObjectC, ObjectC2, and ObjectC3 attached to [HEOField](../HEOComponents/HEOField.md) on the image below become Nodes, which can be handled by actions such as [Show/HideNode](../Actions/Node/ShowHideNode.md), [Enable/DisableCollider](../Actions/Node/EnableDisableCollider.md). <br>
+
+Please note that `ObjectD` below is not a child object of [HEOField](../HEOComponents/HEOField.md) (i.e. not a Node)nor an Item, it will not be included in the world on build.
 
 ![hs_overview_7](img/hs_overview_7.jpg)
 
-NodeのHeliScriptでの取り扱いは[Itemクラス](./hs_class_item.md)をご参照ください。
+For handling Node by HeliScript, please refer to [Item class](./hs_class_item.md).

@@ -13,7 +13,7 @@ HeliScriptの文法については[基本系](./hs_var.md)から順番に読む�
 ![hs_overview_1](img/hs_overview_1.jpg)
 
 初めに、HeliScriptを書き込むファイルを作ります。<br>
-Projectウィンドウ(Assetsなどがあるところ)で右クリックして、**「HS script」**を選択し、任意のフォルダに‘HeliScriptファイルを追加します。
+Projectウィンドウ(Assetsなどがあるところ)で右クリックして、**「HS script」**を選択し、任意のフォルダにHeliScriptファイルを追加します。
 
 例として、ここではAssetsフォルダにScriptsフォルダを追加し、HelloWorld.hsという名前でHeliScriptファイルを新規生成しています。
 
@@ -25,7 +25,7 @@ Projectウィンドウ(Assetsなどがあるところ)で右クリックして�
 
 HeliScriptファイルを追加したら、次はシーンにHeliScriptの設定を行います。<pr>
 HeliScriptは[HEOScript](../HEOComponents/HEOScript.md)コンポーネントを使用してシーン内に登場させます。
-インスペクター画面にてAdd Component > HEOScriptと選択してコンポーネントのアタッチを行います。
+Inspector画面にてAdd Component > HEOScriptと選択してコンポーネントのアタッチを行います。
 
 [HEOScript](../HEOComponents/HEOScript.md)コンポーネントでは実行したいHeliScriptファイルを選びます。<br>
 メニュー右の「Select」を選択するとHeliScriptの一覧が出現するため、使いたいHeliScriptを選択します。
@@ -43,7 +43,7 @@ HeliScriptは[HEOScript](../HEOComponents/HEOScript.md)コンポーネントを�
 HelloWorld.hsの実装として以下に例を示します。
 
 ```
-//コンポーネント：
+//コンポーネント
 component HelloWorld
 {   
 
@@ -68,7 +68,7 @@ component HelloWorld
 
 ## HEOScriptの配置・オブジェクトの参照について
 
-HEOScriptをアタッチ可能なGameObjectは、スクリプトの対象となる[HEOField](./HEOField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
+[HEOScript](../HEOComponents/HEOScript.md)をアタッチ可能なGameObjectは、スクリプトの対象となる[HEOField](./HEOField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
 詳しいHeliScriptの配置方法は[HEOScript](../HEOComponents/HEOScript.md)をご確認ください。
 
 ![HEOScript_attachable](../HEOComponents/img/HEOScript_attachable.jpg)
@@ -88,7 +88,7 @@ component example
 
     public example()
     {
-        //アイテムを認識　アイテム名は.heoになっている物を指定する　今回はHEO Field指定
+        //アイテムを認識　アイテム名は.heoになっている物を指定する　今回はHEOField指定
         ex_Item = hsItemGet("World");
         //プレイヤーを認識
         ex_player = hsPlayerGet();
@@ -134,8 +134,10 @@ Vket Cloud上でワールドを構成する際、Player以外の各要素はItem
 ItemのHeliScriptでの取り扱いは[Itemクラス](./hs_class_item.md)をご参照ください。
 
 ## Node
+
 前述のItemのうち、[HEOField](../HEOComponents/HEOField.md)で定義されたItemに子オブジェクトがある場合、その子オブジェクトはItemのNodeとして扱われます。<br>
 例として、以下の[HEOField](../HEOComponents/HEOField.md)に取り付けられたObjectA, ObjectB, ObjectC, ObjectC2, ObjectC3はNodeとなり、[Show/HideNode](../Actions/Node/ShowHideNode.md), [Enable/DisableCollider](../Actions/Node/EnableDisableCollider.md)などのアクションの対象となります。<br>
+
 なお、[HEOField](../HEOComponents/HEOField.md)の子オブジェクトになっていない`ObjectD`はNodeではなく、かつItemでもない場合はビルド時にワールドに含まれないことに注意してください。
 
 ![hs_overview_7](img/hs_overview_7.jpg)
