@@ -18,7 +18,7 @@
     
     
       
-        <title>物理エンジン - VketCloudSDK Manual</title>
+        <title>物理エンジン / コライダーの使い方 - VketCloudSDK Manual</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              物理エンジン
+              物理エンジン / コライダーの使い方
             
           </span>
         </div>
@@ -538,12 +538,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          物理エンジン
+          物理エンジン / コライダーの使い方
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="PhysicsEngine.html" class="md-nav__link md-nav__link--active">
-        物理エンジン
+        物理エンジン / コライダーの使い方
       </a>
       
         
@@ -562,20 +562,40 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    物理エンジンの使用方法
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#action-trigger" class="md-nav__link">
-    Action Triggerについて
+    コライダーの付け方
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    物理エンジンの使用方法
+  </a>
+  
+    <nav class="md-nav" aria-label="物理エンジンの使用方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heocolliderphysics" class="md-nav__link">
+    HEOCollider/Physicsのプロパティについて
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-trigger-heliscript" class="md-nav__link">
+    Action Trigger / HeliScriptでの物理演算・コライダーについて
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     シリンダーコライダーについて
   </a>
   
@@ -690,19 +710,119 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_5">
+          トラブルシューティング
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="トラブルシューティング" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          トラブルシューティング
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/InstallingDeeplink.html" class="md-nav__link">
+        SDKがインストール後に立ち上がらない
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/BuildError.html" class="md-nav__link">
+        ビルドエラー / ワールドが動かないときは
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/VersionUpdateTroubleshooting.html" class="md-nav__link">
+        バージョンアップ後によくあるトラブル
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heoexporter/he_align_unity_to_vketcloud.html" class="md-nav__link">
+        UnityとVketCloudの見た目を揃える
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
           SDK Tools
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="SDK Tools" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           SDK Tools
         </label>
@@ -787,7 +907,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
       
       
       
@@ -798,13 +918,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_5_6">
+        <label class="md-nav__link" for="__nav_6_6">
           パーティクルエディター
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="パーティクルエディター" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_6">
+        <label class="md-nav__title" for="__nav_6_6">
           <span class="md-nav__icon md-icon"></span>
           パーティクルエディター
         </label>
@@ -862,7 +982,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
@@ -875,13 +995,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_7">
           編集のためのTips
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="編集のためのTips" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           編集のためのTips
         </label>
@@ -946,7 +1066,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
@@ -959,13 +1079,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7">
+        <label class="md-nav__link" for="__nav_8">
           ワールドの軽量化方法
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="ワールドの軽量化方法" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           ワールドの軽量化方法
         </label>
@@ -1030,7 +1150,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
       
       
@@ -1089,13 +1209,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_8">
+        <label class="md-nav__link" for="__nav_9">
           HEOコンポーネント
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="HEOコンポーネント" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
+        <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           HEOコンポーネント
         </label>
@@ -1482,7 +1602,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
       
       
@@ -1503,13 +1623,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_9">
+        <label class="md-nav__link" for="__nav_10">
           アクションについて
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="アクションについて" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
+        <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           アクションについて
         </label>
@@ -1538,7 +1658,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
       
       
@@ -1559,13 +1679,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_9_2">
+        <label class="md-nav__link" for="__nav_10_2">
           システム
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="システム" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_2">
+        <label class="md-nav__title" for="__nav_10_2">
           <span class="md-nav__icon md-icon"></span>
           システム
         </label>
@@ -1685,7 +1805,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3" type="checkbox" id="__nav_9_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3" type="checkbox" id="__nav_10_3" >
       
       
       
@@ -1698,13 +1818,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_9_3">
+        <label class="md-nav__link" for="__nav_10_3">
           Node
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Node" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_3">
+        <label class="md-nav__title" for="__nav_10_3">
           <span class="md-nav__icon md-icon"></span>
           Node
         </label>
@@ -1768,7 +1888,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4" type="checkbox" id="__nav_10_4" >
       
       
       
@@ -1783,13 +1903,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_9_4">
+        <label class="md-nav__link" for="__nav_10_4">
           Itemクラス
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Itemクラス" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_4">
+        <label class="md-nav__title" for="__nav_10_4">
           <span class="md-nav__icon md-icon"></span>
           Itemクラス
         </label>
@@ -1867,7 +1987,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5" type="checkbox" id="__nav_9_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_5" type="checkbox" id="__nav_10_5" >
       
       
       
@@ -1884,13 +2004,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_9_5">
+        <label class="md-nav__link" for="__nav_10_5">
           Avatar
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Avatar" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_5">
+        <label class="md-nav__title" for="__nav_10_5">
           <span class="md-nav__icon md-icon"></span>
           Avatar
         </label>
@@ -1982,7 +2102,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_6" type="checkbox" id="__nav_9_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_6" type="checkbox" id="__nav_10_6" >
       
       
       
@@ -1997,13 +2117,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_9_6">
+        <label class="md-nav__link" for="__nav_10_6">
           物理演算
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="物理演算" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_6">
+        <label class="md-nav__title" for="__nav_10_6">
           <span class="md-nav__icon md-icon"></span>
           物理演算
         </label>
@@ -2081,7 +2201,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_7" type="checkbox" id="__nav_9_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_7" type="checkbox" id="__nav_10_7" >
       
       
       
@@ -2106,13 +2226,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_9_7">
+        <label class="md-nav__link" for="__nav_10_7">
           Programmatic
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Programmatic" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_7">
+        <label class="md-nav__title" for="__nav_10_7">
           <span class="md-nav__icon md-icon"></span>
           Programmatic
         </label>
@@ -2268,7 +2388,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
       
       
@@ -2285,19 +2405,35 @@
         
           
         
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_10">
-          ヘリスクリプト
+        <label class="md-nav__link" for="__nav_11">
+          HeliScript
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="ヘリスクリプト" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
+      <nav class="md-nav" aria-label="HeliScript" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
-          ヘリスクリプト
+          HeliScript
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_overview.html" class="md-nav__link">
+        HeliScript概要
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -2308,7 +2444,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_2" type="checkbox" id="__nav_11_2" >
       
       
       
@@ -2321,13 +2457,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_10_1">
+        <label class="md-nav__link" for="__nav_11_2">
           組み込み型
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="組み込み型" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_1">
+        <label class="md-nav__title" for="__nav_11_2">
           <span class="md-nav__icon md-icon"></span>
           組み込み型
         </label>
@@ -2403,7 +2539,7 @@
   
     <li class="md-nav__item">
       <a href="../hs/hs_component.html" class="md-nav__link">
-        コンポーネント
+        コンポーネント / コールバック関数
       </a>
     </li>
   
@@ -2419,7 +2555,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4" type="checkbox" id="__nav_10_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_5" type="checkbox" id="__nav_11_5" >
       
       
       
@@ -2436,13 +2572,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_10_4">
+        <label class="md-nav__link" for="__nav_11_5">
           組み込みクラス・関数
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="組み込みクラス・関数" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_4">
+        <label class="md-nav__title" for="__nav_11_5">
           <span class="md-nav__icon md-icon"></span>
           組み込みクラス・関数
         </label>
@@ -2534,7 +2670,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_5" type="checkbox" id="__nav_10_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_6" type="checkbox" id="__nav_11_6" >
       
       
       
@@ -2557,13 +2693,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_10_5">
+        <label class="md-nav__link" for="__nav_11_6">
           組み込み関数
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="組み込み関数" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_5">
+        <label class="md-nav__title" for="__nav_11_6">
           <span class="md-nav__icon md-icon"></span>
           組み込み関数
         </label>
@@ -2697,7 +2833,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_6" type="checkbox" id="__nav_10_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_7" type="checkbox" id="__nav_11_7" >
       
       
       
@@ -2710,13 +2846,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_10_6">
+        <label class="md-nav__link" for="__nav_11_7">
           宣言と制御
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="宣言と制御" data-md-level="2">
-        <label class="md-nav__title" for="__nav_10_6">
+        <label class="md-nav__title" for="__nav_11_7">
           <span class="md-nav__icon md-icon"></span>
           宣言と制御
         </label>
@@ -2766,154 +2902,6 @@
           
         </ul>
       </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_11">
-          トラブルシューティング
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="トラブルシューティング" data-md-level="1">
-        <label class="md-nav__title" for="__nav_11">
-          <span class="md-nav__icon md-icon"></span>
-          トラブルシューティング
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/InstallingDeeplink.html" class="md-nav__link">
-        SDKがインストール後に立ち上がらない
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/BuildError.html" class="md-nav__link">
-        ビルドエラー
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/BrowserNotOpen.html" class="md-nav__link">
-        ブラウザが立ち上がらない
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/BrowserBlackWindow.html" class="md-nav__link">
-        ブラウザウィンドウが暗転したまま動かない
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/ChangesAreNotApplied.html" class="md-nav__link">
-        変更が更新されない
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/VersionUpdateTroubleshooting.html" class="md-nav__link">
-        バージョンアップ後によくあるトラブル
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../heoexporter/he_align_unity_to_vketcloud.html" class="md-nav__link">
-        UnityとVketCloudの見た目を揃える
-      </a>
     </li>
   
 
@@ -4901,20 +4889,40 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    物理エンジンの使用方法
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#action-trigger" class="md-nav__link">
-    Action Triggerについて
+    コライダーの付け方
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    物理エンジンの使用方法
+  </a>
+  
+    <nav class="md-nav" aria-label="物理エンジンの使用方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heocolliderphysics" class="md-nav__link">
+    HEOCollider/Physicsのプロパティについて
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-trigger-heliscript" class="md-nav__link">
+    Action Trigger / HeliScriptでの物理演算・コライダーについて
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     シリンダーコライダーについて
   </a>
   
@@ -4933,48 +4941,85 @@
               
                 
                 
-                <h1 id="_1">物理エンジン</h1>
-<h2 id="_2">物理エンジンの使用方法</h2>
+                <h1 id="_1">物理エンジン / コライダーの使い方</h1>
+<p>Vket Cloudでは、UnityのコライダーとSDKを使用して衝突判定や物理演算をワールド上で行うことができます。<br>
+以下に物理演算の使用方法を解説します。</p>
+<h2 id="_2">コライダーの付け方</h2>
+<p><img alt="HEOCollider_1" src="../HEOComponents/img/HEOCollider_1.jpg" /></p>
+<p>VketCloudSDKでは、Unityコライダーに対応するHEOComponentをそれぞれアタッチすることでワールド上で扱えるようになります。<br>
+コライダーの設定方法・各設定項目の詳細は各ページをご確認ください。</p>
+<p><a href="../HEOComponents/HEOCollider.html">HEOCollider</a></p>
+<p><a href="../HEOComponents/HEOAreacollider.html">HEOAreaCollider</a></p>
+<p><a href="../HEOComponents/HEOMeshCollider.html">HEOMeshCollider</a></p>
+<h2 id="_3">物理エンジンの使用方法</h2>
 <ol>
-<li>物理演算を適応したいゲームオブジェクトに『Unityコライダー』と『HEOCollider』をアタッチしてください。物理演算に使用できるUnityコライダーは『Box Collider』『Sphere Collider』『Capsule Collider』です。また後述されているように『Capsule Collider』がアタッチされているゲームオブジェクトに追加で『HEOCylinderCollider』をアタッチすることでVketCloudの物理エンジン限定でシリンダーコライダーとして使用することができます。</li>
+<li>物理演算を適応したいゲームオブジェクトに『Unityコライダー』と<a href="../HEOComponents/HEOCollider.html">HEOCollider</a>をアタッチしてください。<br>物理演算に使用できるUnityコライダーは『Box Collider』『Sphere Collider』『Capsule Collider』です。<br>また、後述されているように『Capsule Collider』がアタッチされているゲームオブジェクトに追加で<code>HEOCylinderCollider</code>をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。</li>
 </ol>
 <p><img alt="PhysicsEngine" src="img/PhysicsEngine.jpg" /></p>
 <ol>
-<li>HEOCollider/Physicsの項目のプロパティを設定します。各項目は下記で説明いたしますが、『UsePhysics』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。</li>
-<li>HEOCollider/Physicsのプロパティについて
-  <img alt="PhysicsEngine" src="img/PhysicsEngineCollider.jpg" /><ul>
-<li>UsePhysics : チェックを入れると物理演算が適応されます</li>
-<li>Fixed : 物理演算においてこのゲームオブジェクトを固定するかどうか。</li>
-<li>例.<ul>
-<li>床や壁などの動かないもの → Fixedオン</li>
-<li>ボールなどの動くもの  → Fixedオフ</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>EnableBody : 物理演算の有無の初期値<ul>
-<li>後述しますが、Action Triggerで物理演算を有無を切り替えることができます。EnableBody はその初期値です。例えば自動販売機の中にジュースの缶を物理演算を無効にして仕込んでおいて、自動販売機の購入ボタンを押したときに缶の物理演算を有効にして自動販売機の中から缶を転がすといったギミックを作成することができます。</li>
-</ul>
-</li>
-<li>Mass : 重さ</li>
-<li>
-<p>Restitution : 反発係数</p>
-</li>
-<li>
-<p>後は通常通りエクスポートすれば物理演算を使用することができます。</p>
-</li>
+<li>HEOCollider/Physicsの項目のプロパティを設定します。<br>各項目は下記で説明いたしますが、<a href="../HEOComponents/HEOWorldSetting.html#_1">HEOWorldSettings</a>にて<code>Use Physics Engine</code>を有効にし、各コライダーコンポーネントに『<code>UsePhysics</code>』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。</li>
 </ol>
-<h2 id="action-trigger">Action Triggerについて</h2>
-<p>ActionTriggerの使い方に関しては、以下ページに記述しております。</p>
+<h3 id="heocolliderphysics">HEOCollider/Physicsのプロパティについて</h3>
+<p><img alt="PhysicsEngine" src="img/PhysicsEngineCollider.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Collider Type</code></td>
+<td>コライダーのタイプを指定します。</td>
+</tr>
+<tr>
+<td><code>Collider Target</code></td>
+<td>ターゲットを指定します。</td>
+</tr>
+<tr>
+<td><code>UsePhysics</code></td>
+<td>Colliderに対して物理演算を可能にします。</td>
+</tr>
+<tr>
+<td><code>Fixed</code></td>
+<td>物理演算においてこのゲームオブジェクトを固定するか設定できます。<br> 例: 床や壁などの動かないもの → Fixedオン <br> ボールなどの動くもの  → Fixedオフ</td>
+</tr>
+<tr>
+<td><code>EnableBody</code></td>
+<td>物理演算の有無の初期値。<br>後述しますが、Action Triggerで物理演算を有無を切り替えることができます。EnableBody はその初期値です。<br>例えば、自動販売機の中にジュースの缶を物理演算を無効にして仕込んでおいて、自動販売機の購入ボタンを押したときに缶の物理演算を有効にして自動販売機の中から缶を転がすといったギミックを作成することができます。</td>
+</tr>
+<tr>
+<td><code>Mass</code></td>
+<td>重さパラメータを調整します。</td>
+</tr>
+<tr>
+<td><code>Restitution</code></td>
+<td>反発係数のパラメータを調整します。</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>設定後に通常通りBuild and Runを実行すると物理演算を使用することができます。</li>
+</ol>
+<h2 id="action-trigger-heliscript">Action Trigger / HeliScriptでの物理演算・コライダーについて</h2>
+<p>物理演算に関するActionTriggerの使い方に関しては、以下ページにて記述しております。</p>
 <ul>
 <li><a href="../Actions/ActionsOverview.html">ActionsOverview</a></li>
 <li><a href="../Actions/Physics/PhysicsAddVelocity.html">PhysicsAddVelocity</a></li>
 <li><a href="../Actions/Physics/PhysicsClearAddForce.html">PhysicsClearAddForce</a></li>
 <li><a href="../Actions/Physics/PhysicsSetEnable.html">PhysicsSetEnable</a></li>
-<li><a href="../Actions/Physics/PhysicsSetPosRot.html">PhyscsSetPosRot</a></li>
+<li><a href="../Actions/Physics/PhysicsSetPosRot.html">PhysicsSetPosRot</a></li>
 </ul>
-<h2 id="_3">シリンダーコライダーについて</h2>
-<p>通常Unityではシリンダーコライダーは無く、それはカプセルコライダーで代用されますが、VketCloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で『HEOCylinderCollider』をアタッチすることで、VketCloudの物理エンジン限定でシリンダーコライダーとして使用することができます。
+<p>また、HeliScriptにおける物理演算・コライダーの扱い方は以下のページにて記述しております。</p>
+<ul>
+<li><a href="../hs/hs_component.html#-areacollider">コールバック - AreaCollider</a></li>
+<li><a href="../hs/hs_component.html#-_2">コールバック - 物理衝突判定</a></li>
+<li><a href="../hs/hs_component.html#-_3">コールバック - 視野内コライダー</a></li>
+<li><a href="../hs/hs_system_function_physics.html">組み込み関数 - 物理演算</a></li>
+</ul>
+<h2 id="_4">シリンダーコライダーについて</h2>
+<p>通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で<code>HEOCylinderCollider</code>をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
 <img alt="PhysicsEngine" src="img/PhysicsEngineCylinderCollider.jpg" /></p>
 <div class="admonition 注意点 info">
 <p class="admonition-title">注意点</p>
