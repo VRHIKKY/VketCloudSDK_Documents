@@ -1,9 +1,12 @@
 
 # Item クラス
 
-Itemクラスは、Sceneファイルの"items"で定義された個々のアイテムを操作するためのものです。
+Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
+[HEOField](../HEOComponents/HEOField.md), [HEOObject](../HEOComponents/HEOObject.md), [HEOPlane](../HEOComponents/HEOPlane.md), [HEOActivity](../HEOComponents/HEOActivity.md)などがこれにあたります。
 
-hsItemGet() でアイテム名を指定して、Itemクラスオブジェクトを取得することが出来ます。
+Itemクラスは、ワールド内に配置された[HEOField](../HEOComponents/HEOField.md)及びその子オブジェクトであるNodeなど、個々のアイテムをHeliScriptにて操作するためのものです。
+
+hsItemGet()でアイテム名を指定、あるいはhsItemGetSelf()を実行してItemクラスオブジェクトを取得することが出来ます。
 
 
 ## クラス定義

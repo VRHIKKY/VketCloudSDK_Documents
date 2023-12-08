@@ -1,9 +1,13 @@
 
 # Item class
 
-The Item class is for working with individual items defined in the Scene file's "items".
+On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
+For example, objects defined as items are [HEOField](../HEOComponents/HEOField.md), [HEOObject](../HEOComponents/HEOObject.md), [HEOPlane](../HEOComponents/HEOPlane.md), [HEOActivity](../HEOComponents/HEOActivity.md), and other objects.
 
-Item class object is obtainable by specifying the item name with hsItemGet().
+The Item class is for handling such Items, and "Nodes" which are child objects of [HEOField](../HEOComponents/HEOField.md) on HeliScript.
+
+Item class object is obtainable by specifying the item name with hsItemGet() or running hsItemGetSelf().
+
 
 ## class definition
 

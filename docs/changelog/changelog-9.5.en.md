@@ -8,6 +8,7 @@
     - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOActivity.html)
     - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOBackgroundTexture.html)
 - HeliScript
+    - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_overview.html)
     - [HeliScript/Built-in functions - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_chatgpt.html)
     - [HeliScript/Built-in functions - Physics](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_physics.html)
 
@@ -61,15 +62,19 @@
     - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/Actions/Programmatic/CallScript.html)
         - Replaced image to match Ver9.5
 - HeliScript
+    - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_component.html)
+        - Changed title (old: components)
     - [HeliScript/String](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_string.html)
     - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function.html)
         - Added caution on using apostrophe / single quotations in strings
     - [HeliScript/Vector3](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_struct_vector3.html)
     - [HeliScript/Player](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_class_player.html)
-    - [HeliScript/Item](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_class_item.html)
     - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function.html)
     - [HeliScript/Built-in functions - network](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function_net.html)
     - [HeliScript/Built-in functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function_gui.html)
+        - Updated methods useable on current version
+    - [HeliScript/Item](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_class_item.html)
+        - Added Overview
         - Updated methods useable on current version
 - Trouble shooting
     - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/VersionUpdateTroubleshooting.html)

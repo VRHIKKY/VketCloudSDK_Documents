@@ -8,6 +8,7 @@
     - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOActivity.html)
     - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOBackgroundTexture.html)
 - HeliScript
+    - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_overview.html)
     - [HeliScript/組み込み関数 - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_chatgpt.html)
     - [HeliScript/組み込み関数 - 物理演算](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_physics.html)
 
@@ -61,15 +62,19 @@
     - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/Actions/Programmatic/CallScript.html)
         - 画像をVer9.5仕様に差し替え
 - HeliScript
+    - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_component.html)
+        - 題名を変更(旧題：コンポーネント)
     - [HeliScript/文字列(String)](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_string.html)
     - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function.html)
         - 文字列におけるアポストロフィ / シングルクォートの使用について不具合を記載
     - [HeliScript/Vector3クラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_struct_vector3.html)
     - [HeliScript/Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_class_player.html)
-    - [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_class_item.html)
     - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function.html)
     - [HeliScript/組み込み関数 - ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function_net.html)
     - [HeliScript/組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function_gui.html)
+        - 現バージョンにて使用できる関数を反映
+    - [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_class_item.html)
+        - 概要を追記
         - 現バージョンにて使用できる関数を反映
 - トラブルシューティング
     - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/VersionUpdateTroubleshooting.html)
