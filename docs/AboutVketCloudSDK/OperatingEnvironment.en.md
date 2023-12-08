@@ -22,20 +22,28 @@ Also, we recommend the below systems when entering your world built with VketClo
 - Android: Android 11 or later / RAM: 8GB or more / For Google Pixel series, Pixel 5 or later
 
 ---
-!!! warning API compatibility level
 
-The below items will be automatically changed by the SDK, but sometimes the settings may be nullified.
-In that case, please follow the below steps to manually change the settings,
+!!! note warning
+    The below items will be automatically changed by the SDK, but sometimes the settings may be nullified.<br>
+    In that case, please follow the below steps to manually change the settings,
 
-1. Click Project Settings... from Edit in the Unity menu bar  
+    **Setting API compatibility level**
 
-2. When the Project Settings window appears, click Player from the list.  
+    1. Click Project Settings... from Edit in the Unity menu bar  
 
-3. Check the Configuration in the PC settings and change the Api Compatibility Level to ".NET 4.x" from the pull-down menu.
+    2. When the Project Settings window appears, click Player from the list.  
+
+    3. Check the Configuration in the Project Settings and change the Api Compatibility Level to ".NET 4.x" from the pull-down menu.
+
     ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
 
+    **Setting LightMap Encoding**
 
-**Setting Color Space**
-From Edit >Project Settings, set the  Color Space as Linear.
+    Likewise above, check the Configuration in the Project Settings and change the Lightmap Encoding to "Normal Quality" from the pull-down menu.
 
-   ![liner](img/liner.jpg)
+    ![LightMapEncoding](img/LightMapEncoding.jpg)
+
+    **Setting Color Space**
+    From Edit >Project Settings, set the  Color Space as Linear.
+
+    ![linear](img/linear.jpg)
