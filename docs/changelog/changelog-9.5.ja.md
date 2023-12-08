@@ -98,5 +98,3 @@
     - ブラウザウィンドウが暗転したまま動かない
     - 変更が更新されない
         - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/BuildError.html)に統合
-    - SDKがインストール後に立ち上がらない
-        - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/VersionUpdateTroubleshooting.html)に統合

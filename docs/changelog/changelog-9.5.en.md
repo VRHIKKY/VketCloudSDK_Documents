@@ -97,5 +97,3 @@
     - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
     - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
         - Integrated to [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/BuildError.html)
-    - SDK does not appear after install
-        - Integrated to [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/VersionUpdateTroubleshooting.html)
