@@ -30,6 +30,10 @@
         - 題名を変更　（旧題：反射を写り込ませるには）
         - 未使用画像を削除し、リンクを修正
         - 一部文言を変更
+    - [物理エンジン / コライダーの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldMakingGuide/PhysicsEngine.html)
+        - 題名を変更 (旧題：物理エンジン)
+        - コライダーの付け方、HeliScriptでの物理演算の扱い方を追記
+        - 文書について細かな整形
 - SDK Tools
     - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_particleeditor.html)
         - 起動方法を更新
@@ -47,6 +51,8 @@
         - コライダータイプがコライダー以外の場合に衝突しない旨を追記
     - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOField.html)
         - 各設定項目及びLook at Cameraの説明を追加
+    - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOMeshCollider.html)
+        - 設定手順を整理
     - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOObject.html)
         - 新規の設定項目を追加し、関連の解説を追加 (shadow caster / receiver, foreground rendering, circle shadow, lookatcamera, etc.) 
         - heoファイル及びモーションのプレビュー機能解説を追加

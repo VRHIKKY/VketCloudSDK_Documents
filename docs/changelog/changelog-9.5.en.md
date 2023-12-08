@@ -30,6 +30,10 @@
         - Changed title (in Japanese manual)
         - Deleted unused images and fixed links
         - Fixed few formats and typos
+    - [Physics Engine / How to Use Colliders](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/PhysicsEngine.html)
+        - Changed title (old: Physics Engine)
+        - Added info on how to use colliders, how to use physics in HeliScript *English translation WIP
+        - Reformatted text
 - SDK Tools
     - [Particle Editor Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_particleeditor.html)
         - Updated Launch Instructions
@@ -47,6 +51,8 @@
         - Added caution on player not colliding when collider type is not set to `Collider`
     - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOField.html)
         - Added Settings including description for Look at Camera
+    - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOMeshCollider.html)
+        - Edited setup instructions
     - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOObject.html)
         - Added settings such as shadow caster / receiver, foreground rendering, circle shadow, lookatcamera, etc.
         - Added explanation on how to use object/motion preview
