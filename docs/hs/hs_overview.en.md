@@ -68,7 +68,7 @@ After completing the code implementation and executing Build And Run, "Hello, Wo
 
 ## Placing HEOScript and referencing objects
 
-[HEOScript](../HEOComponents/HEOScript.md) components can be attached to gameobjects with [HEOField](./HEOField.md) and its child gameobjects.
+[HEOScript](../HEOComponents/HEOScript.md) components can be attached to gameobjects with [HEOField](../HEOComponents/HEOField.md) and its child gameobjects.
 For details on how to place HeliScript, please check [HEOScript](../HEOComponents/HEOScript.md).
 
 ![HEOScript_attachable](../HEOComponents/img/HEOScript_attachable.jpg)
