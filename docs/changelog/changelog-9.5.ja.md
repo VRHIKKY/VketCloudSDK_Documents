@@ -37,6 +37,7 @@
 - SDK Tools
     - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_particleeditor.html)
         - 起動方法を更新
+        - MacOSにおける動作不具合について追記
     - [ウィンドウ解説・操作方法について](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_screen.html)
         - ウィンドウ解説・操作方法ページを統合
 - ワールドの軽量化方法
