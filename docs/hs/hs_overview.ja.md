@@ -68,7 +68,7 @@ component HelloWorld
 
 ## HEOScriptの配置・オブジェクトの参照について
 
-[HEOScript](../HEOComponents/HEOScript.md)をアタッチ可能なGameObjectは、スクリプトの対象となる[HEOField](./HEOField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
+[HEOScript](../HEOComponents/HEOScript.md)をアタッチ可能なGameObjectは、スクリプトの対象となる[HEOField](../HEOComponents/HEOField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
 詳しいHeliScriptの配置方法は[HEOScript](../HEOComponents/HEOScript.md)をご確認ください。
 
 ![HEOScript_attachable](../HEOComponents/img/HEOScript_attachable.jpg)
