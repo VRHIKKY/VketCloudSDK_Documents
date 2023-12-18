@@ -74,7 +74,7 @@ Unityに以下のインストールウィザード画面とメニュー表示が
 
 3\. VketCloud SDKの初期設定をガイドする画面です。主に三つの設定を完了させてください。<br>初期設定しないことも可能ですが、その場合、SDKの動作保証はできません。
 
-![InstallationWizard_3_jp](img/InstallationWizard_3_jp.jpg)
+![InstallationWizard_3_jp](img/InstallationWizard_3.jpg)
 
 ### API Compatibility Level (API互換性レベル)の変更
 
@@ -107,7 +107,7 @@ Edit > Project SettingsよりColor SpaceをLinearに変更します。
 !!! note caution
     バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
 
-![InstallationWizard_5_jp](img/InstallationWizard_5_jp.jpg)
+![InstallationWizard_5_jp](img/InstallationWizard_5.jpg)
 
 6\. バージョンを選択し、インストールボタンを押すとパッケージのインポートが開始します。
 
@@ -132,7 +132,7 @@ Edit > Project SettingsよりColor SpaceをLinearに変更します。
 !!! note caution
     バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
 
-![InstallationWizard_5_jp](img/InstallationWizard_5_jp.jpg)
+![InstallationWizard_5_jp](img/InstallationWizard_5.jpg)
 
 3\. インストールボタンを押すと、インポート画面に移動します。
 
