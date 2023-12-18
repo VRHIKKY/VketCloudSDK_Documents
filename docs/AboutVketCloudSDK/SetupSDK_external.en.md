@@ -77,7 +77,7 @@ To install the SDK on a new project, use the SDK Install Wizard.
 
 3\. The window for setting the recommended initial settings will appear. Complete all three settings to proceed.<br>  Although the recommended settings may be ignored, SDK functionality cannot be guaranteed in such case.
 
-![InstallationWizard_3_en](img/InstallationWizard_3_en.jpg)
+![InstallationWizard_3_en](img/InstallationWizard_3.jpg)
 
 ### Setting API compatibility level**
 
@@ -111,7 +111,7 @@ From Edit >Project Settings, set the  Color Space as Linear.
     The archive versions are deprecated and planned to be unaccessible in the near future.<br>
     Do not use these versions for setting up new world projects.
 
-![InstallationWizard_5_en](img/InstallationWizard_5_en.jpg)
+![InstallationWizard_5_en](img/InstallationWizard_5.jpg)
 
 6\. After selecting version and proceeding by selecting the "install" button, the package import will begin.
 
@@ -138,7 +138,7 @@ For a project with an existing SDK, the SDK Version Manager can be used for swit
     The archive versions are deprecated and planned to be unaccessible in the near future.<br>
     Do not use these versions for setting up new world projects.
 
-![InstallationWizard_5_en](img/InstallationWizard_5_en.jpg)
+![InstallationWizard_5_en](img/InstallationWizard_5.jpg)
 
 3\. By selecting the install button, the import window will appear as below.
 
