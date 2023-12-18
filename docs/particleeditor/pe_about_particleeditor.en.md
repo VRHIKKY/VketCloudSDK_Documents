@@ -9,6 +9,11 @@ This tool offers exactly the same look as in actual Vket Cloud worlds, for the t
 - Chrome (Safari and Firefox unsupported)  
 - Python later than 3.10
 
+!!! bug "Editor Malfunction on MacOS"
+    Currently, we are recognizing an issue causing images being unchangeable when editing particles on the Particle Editor. <br>
+    While the dev team has investigated the cause and solution, solving this issue requires to change the fundamental implementation of the editor. Therefore, this issue is planned to be solved on a longer timeline.<br>
+    We are sorry for the inconveniences caused by this issue, and would like to ask for your patience.
+
 ## How to launch
 
 To open the editor, select VketCloudSDK > Tools > ParticleEditor.
