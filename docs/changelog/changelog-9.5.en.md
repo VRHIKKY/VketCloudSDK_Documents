@@ -37,6 +37,7 @@
 - SDK Tools
     - [Particle Editor Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_particleeditor.html)
         - Updated Launch Instructions
+        - Added malfunction issues on MacOS
     - [About Screen / How to Operate](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_screen.html)
         - Merged screen information and instructions of operation to one page 
 - World Optimization
