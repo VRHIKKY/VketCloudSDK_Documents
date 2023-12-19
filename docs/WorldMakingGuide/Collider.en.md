@@ -9,11 +9,16 @@ Vket Cloudでは、UnityのコライダーにHEOComponentを付与すること�
 VketCloudSDKでは、Unityコライダーに対応するHEOComponentをそれぞれアタッチすることでワールド上で扱えるようになります。<br>
 コライダーの設定方法・各設定項目の詳細は各ページをご確認ください。
 
-[HEOCollider](../HEOComponents/HEOCollider.md)
+[HEOCollider](../HEOComponents/HEOCollider.md) : コライダーにおける基本的なコンポーネントです。
 
-[HEOAreaCollider](../HEOComponents/HEOAreacollider.md)
+以下のコンポーネントは単体では使用せず、[HEOCollider](../HEOComponents/HEOCollider.md)と組み合わせて使用します。
 
-[HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)
+[HEOAreaCollider](../HEOComponents/HEOAreacollider.md) : プレイヤーの入退場など、特定の範囲の内外でアクションを起こしたい場合に使用します。
+
+[HEOMeshCollider](../HEOComponents/HEOMeshCollider.md) : UnityのMesh ColliderをVket Cloudにて使用したい場合に付与します。
+
+HEOCylinderCollider : [物理演算](./PhysicsEngine.md)にてUnityのCylinder Colliderを物理演算させたい場合に使用します。<br>
+なお、Cylinderは物理演算以外には使えないためご注意ください。
 
 ## Action Trigger / HeliScriptでの物理演算・コライダーについて
 
@@ -28,3 +33,15 @@ VketCloudSDKにおいて、コライダーはクリックや[HEOAreaCollider](..
 - [コールバック - 視野内コライダー](../hs/hs_component.md#-_3)
 
 ## Tips: 階段にコライダーを設置する際の注意点
+
+ワールドに階段を設定する際、[Mesh Collider](../HEOComponents/HEOMeshCollider.md)あるいはBox Colliderを使用してコライダーを設定すると移動時にガタつきやすく、一段一段の高さによってはジャンプを要するため、プレイヤーにとってストレスとなりうる可能性があります。
+
+![ColliderTips_Stair_1](./img/ColliderTips_Stair_1.jpg)
+
+![ColliderTips_Stair_1_Result](./img/ColliderTips_Stair_1_Result.gif)
+
+そこで、Box Colliderを斜めに設置して坂状にすることで、滑らかにのぼりやすい階段が設置できます。
+
+![ColliderTips_Stair_2](./img/ColliderTips_Stair_2.jpg)
+
+![ColliderTips_Stair_2_Result](./img/ColliderTips_Stair_2_Result.gif)

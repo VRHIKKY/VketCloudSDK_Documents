@@ -32,3 +32,16 @@ VketCloudSDKにおいて、コライダーはクリックや[HEOAreaCollider](..
 - [コールバック - 物理衝突判定](../hs/hs_component.md#-_2)
 - [コールバック - 視野内コライダー](../hs/hs_component.md#-_3)
 
+## Tips: 階段にコライダーを設置する際の注意点
+
+ワールドに階段を設定する際、[Mesh Collider](../HEOComponents/HEOMeshCollider.md)あるいはBox Colliderを使用してコライダーを設定すると移動時にガタつきやすく、一段一段の高さによってはジャンプを要するため、プレイヤーにとってストレスとなりうる可能性があります。
+
+![ColliderTips_Stair_1](./img/ColliderTips_Stair_1.jpg)
+
+![ColliderTips_Stair_1_Result](./img/ColliderTips_Stair_1_Result.gif)
+
+そこで、Box Colliderを斜めに設置して坂状にすることで、滑らかにのぼりやすい階段が設置できます。
+
+![ColliderTips_Stair_2](./img/ColliderTips_Stair_2.jpg)
+
+![ColliderTips_Stair_2_Result](./img/ColliderTips_Stair_2_Result.gif)
