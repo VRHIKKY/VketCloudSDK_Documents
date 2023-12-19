@@ -17,7 +17,8 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 
 ![PhysicsEngine](img/PhysicsEngine.jpg)
 
-2\. HEOCollider/Physicsの項目のプロパティを設定します。<br>各項目は下記で説明いたしますが、[HEOWorldSettings](../HEOComponents/HEOWorldSetting.md#_1)にて`Use Physics Engine`を有効にし、各コライダーコンポーネントに『`UsePhysics`』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。
+2\. HEOCollider/Physicsの項目のプロパティを設定します。<br>
+各項目は下記で説明いたしますが、[HEOWorldSettings](../HEOComponents/HEOWorldSetting.md#_1)にて`Use Physics Engine`を有効にし、各コライダーコンポーネントに『`UsePhysics`』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。
 
 ### HEOCollider/Physicsのプロパティについて
 
