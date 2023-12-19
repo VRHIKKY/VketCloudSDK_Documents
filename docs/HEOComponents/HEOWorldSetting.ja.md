@@ -187,4 +187,4 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 | `File` | 空欄 | 使用するファイルを指定します。 |
 | `Position`| 0,0,0 | Targetからの相対座標を指定します。 |
 | `Rotation` | 0,0,0 | Targetからの相対角度を指定します。 | 
-| `Target` | 空欄 | Position及びRotationの基準となるボーン名を指定します。<br>ボーン名は[VRMヒューマノイド](https://vrm.dev/univrm/humanoid/humanoid_overview)のフォーマットに由来しており、記載する際はスネークケースにします(例： head, leftLowerLeg, leftThumbProximal...) |
+| `Target` | 空欄 | Position及びRotationの基準となるボーン名を指定します。<br>ボーン名は[VRMヒューマノイド](https://vrm.dev/univrm/humanoid/humanoid_overview){target=_blank}のフォーマットに由来しており、記載する際はスネークケースにします(例： head, leftLowerLeg, leftThumbProximal...) |

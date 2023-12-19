@@ -55,7 +55,7 @@ HEM Animation ConverterはあるキャラクターモデルのHumanoidアニメ�
 |7| Animation Clip | チェックを入れるとLegacyタイプのアニメーションクリップを出力します<br>出力先は保存先フォルダ/AnimationClipです |
 |8| モーションのRootノード | Humanoid AnimationClipに紐づけられたRootT,RootQを適用するノード<br> Noneの時、Hipsを選択します |
 |9| 階層 | Humanoid AnimationClipに紐づけられたRootT,RootQを適用するノード<br> Noneの時、Hipsを選択します |
-|10| アニメーション | 各アニメーションクリップの[InspectorView](https://docs.unity3d.com/ja/2019.4/Manual/class-AnimationClip.html)を表示します。|
+|10| アニメーション | 各アニメーションクリップの[InspectorView](https://docs.unity3d.com/ja/2019.4/Manual/class-AnimationClip.html){target=_blank}を表示します。|
 
 | 番号 | 名称 | 機能 |
 |----|-----|-----|
@@ -77,7 +77,7 @@ HEM Animation ConverterはあるキャラクターモデルのHumanoidアニメ�
 
 !!! note
         **10.アニメーション**の各項目の詳細は公式に記載されたエリアCの項目を参照してください。<br>
-        [Animationタブ - Unity マニュアル](https://docs.unity3d.com/ja/2019.4/Manual/class-AnimationClip.html)
+        [Animationタブ - Unity マニュアル](https://docs.unity3d.com/ja/2019.4/Manual/class-AnimationClip.html){target=_blank}
 
 ## 使い方
 

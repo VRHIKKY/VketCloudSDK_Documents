@@ -55,7 +55,7 @@ UI after dragging and dropping objects:
 |7| Animation Clip | If checked, a Legacy type animation clip will be output.<br>The output destination is the save folder/AnimationClip |
 |8| Motion Root node | Node that applies RootT and RootQ linked to Humanoid AnimationClip<br> When None, select Hips |
 |9| Hierarchy | Node that applies RootT and RootQ linked to Humanoid AnimationClip<br> When None, select Hips |
-|10| Animation | Displays [InspectorView](https://docs.unity3d.com/ja/2019.4/Manual/class-AnimationClip.html) for each animation clip. |
+|10| Animation | Displays [InspectorView](https://docs.unity3d.com/ja/2019.4/Manual/class-AnimationClip.html){target=_blank} for each animation clip. |
 
 | Number | Name | Function |
 |----|----|----|
@@ -77,7 +77,7 @@ UI after dragging and dropping objects:
 
 !!! note
          For details on each item in **10. Animation**, please refer to the officially listed Area C items. <br>
-         [Animation Tab - Unity Manual](https://docs.unity3d.com/ja/2019.4/Manual/class-AnimationClip.html)
+         [Animation Tab - Unity Manual](https://docs.unity3d.com/ja/2019.4/Manual/class-AnimationClip.html){target=_blank}
 
 ## How to use
 

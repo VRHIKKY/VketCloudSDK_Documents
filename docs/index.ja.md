@@ -15,7 +15,7 @@ SDKを利用するには、`各種アカウントへの登録`と`指定バー�
 
 4. **[SDKログイン](AboutVketCloudSDK/LoginSDK.md)**
 
-とりあえずワールドに入ってみたい・どんなものが作れるか知りたい方は[My Vket](https://vket.com/)をチェックしましょう！
+とりあえずワールドに入ってみたい・どんなものが作れるか知りたい方は[My Vket](https://vket.com/){target=_blank}をチェックしましょう！
 
 !!! info "SDKバージョンについて"
     現在のVketCloudSDKの最新版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ja/index.html)ご参照ください。<br>
@@ -27,5 +27,5 @@ SDKを利用するには、`各種アカウントへの登録`と`指定バー�
     もし参照したいバージョンのリリースノートがない際はページトップよりバージョンの切り替えをお試しください。
 
 !!! info "本マニュアルへのコントリビューション"
-    VketCloudSDK公式マニュアルは[Github](https://github.com/VRHIKKY/VketCloudSDK_Documents)にて更新管理を行っています。<br>
+    VketCloudSDK公式マニュアルは[Github](https://github.com/VRHIKKY/VketCloudSDK_Documents){target=_blank}にて更新管理を行っています。<br>
     誤字の修正・情報の追加など、コントリビューションはぜひお気軽にどうぞ！

@@ -5,7 +5,7 @@
 In VketCloudSDK, the world may provide a variety of preset avatars in addition to the users' own avatars.<br>
 The preset avatar list can be accessed via "Setting"-->"Mypage"-->"Avatar"-->"Preset Avatar".
 
-Before setting a preset avatar, the character model must be converted to the [VRM format](https://vrm.dev/en/vrm/how_to_make_vrm/index).<br>
+Before setting a preset avatar, the character model must be converted to the [VRM format](https://vrm.dev/en/vrm/how_to_make_vrm/index){target=_blank}.<br>
 
 ## 1. Create an avatar with its texture compressed
 
