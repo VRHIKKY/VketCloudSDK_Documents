@@ -104,7 +104,8 @@ plugins:
           Specifications Limits : VketCloudの仕様制限
           ReflectionProbe: リフレクションプローブ
           Texture Compression: テクスチャ圧縮
-          Physics Engine / How to Use Colliders: 物理エンジン / コライダーの使い方
+          How to use Colliders / Tips: コライダーの使い方 / Tips
+          Physics Engine: 物理エンジンの使い方
           Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponents: HEOコンポーネント
@@ -171,9 +172,9 @@ nav:
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
-    - Physics Engine / How to Use Colliders : WorldMakingGuide/PhysicsEngine.md
+    - How to use Colliders / Tips : WorldMakingGuide/Collider.md
+    - Physics Engine: WorldMakingGuide/PhysicsEngine.md
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
-    #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md

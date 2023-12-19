@@ -1,11 +1,14 @@
-# Physics Engine / How to Use Colliders
+# Physics Engine
 
 ## How to Use the Physics Engine
-1. To apply physics calculations to game objects, attach "Unity Collider" and "HEOCollider" to the game object. Unity colliders that can be used for physics calculations are "Box Collider", "Sphere Collider", "Capsule Collider". Furthermore, by attaching an additional "HEOCylinderCollider" to a game object with a "Capsule Collider" as mentioned later, it can be used as a cylinder collider exclusively in the VketCloud physics engine.
+
+1\. To apply physics calculations to game objects, attach "Unity Collider" and "HEOCollider" to the game object. Unity colliders that can be used for physics calculations are "Box Collider", "Sphere Collider", "Capsule Collider".
+
+Furthermore, by attaching an additional "HEOCylinderCollider" to a game object with a "Capsule Collider" as mentioned later, it can be used as a cylinder collider exclusively in the VketCloud physics engine.
 
 ![PhysicsEngine](img/PhysicsEngine.jpg)
 
-2. Set the properties of the HEOCollider/Physics item. Each item is explained below, but by checking "UsePhysics", physics calculations will be applied to that game object.
+2\. Set the properties of the HEOCollider/Physics item. Each item is explained below, but by checking "UsePhysics", physics calculations will be applied to that game object.
     - About HEOCollider/Physics properties
     ![PhysicsEngine](img/PhysicsEngineCollider.jpg)
       - UsePhysics: When checked, physics calculations are applied
@@ -18,9 +21,10 @@
     - Mass: Weight
     - Restitution: Coefficient of restitution
 
-3. After that, you can use physics calculations by exporting as usual.
+3\. After that, you can use physics calculations by exporting as usual.
 
 ## About Action Trigger
+
 For how to use the ActionTrigger, it is described on the following pages.
 
 - [ActionsOverview](../Actions/ActionsOverview.md)
@@ -30,6 +34,7 @@ For how to use the ActionTrigger, it is described on the following pages.
   - [PhyscsSetPosRot](../Actions/Physics/PhysicsSetPosRot.md)
 
 ## About Cylinder Collider
+
 Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "HEOCylinderCollider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
 ![PhysicsEngine](img/PhysicsEngineCylinderCollider.jpg)
 
