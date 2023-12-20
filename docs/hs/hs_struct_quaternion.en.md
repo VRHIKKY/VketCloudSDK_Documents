@@ -24,7 +24,7 @@ class Quaternion
 ### makeQuaternion(float, float, float, float)
 `Quaternion makeQuaternion(float x, float y, float z, float w)`
 
-global function. Generate Quaternion by specifying 4 elements x, y, z, w.
+global function. Generate a quaternion by specifying 4 elements x, y, z, w.
 
 ### makeQuaternionMul(Quaternion, Quaternion)
 `Quaternion makeQuaternionMul(Quaternion a, Quaternion b)`
@@ -56,7 +56,7 @@ global function. Generates a quaternion from the triplet of Euler angles x, y, z
 ### Quaternion()
 `public Quaternion()`
 
-Creates a Quaternion instance with x, y, z elements set to 0 and w element set to 1.
+Creates a quaternion instance with x, y, z elements set to 0 and w element set to 1.
 
 
 ## member variables

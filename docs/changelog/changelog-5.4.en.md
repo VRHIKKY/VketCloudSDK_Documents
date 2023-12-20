@@ -7,11 +7,11 @@
 - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/debugconsole/debugconsole.html)
 - [Debug Message](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/debugconsole/debugmessage.html)
 - [Browser window blackouts](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/BrowserBlackWindow.html)
-- [How to Animate an Object](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation.html) *English Version WIP
-- [How to Animate an Object - TroubleShooting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation_TroubleShooting.html) *English Version WIP
+- [How to Animate an Object](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation.html)
+- [How to Animate an Object - TroubleShooting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PropAnimation_TroubleShooting.html)
 - [Missing Components After Version Update](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/troubleshooting/MissingComponents.html)
 - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/PresetAvatar.html)
-- [Occlusion Culling](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/OcclusionCulling.html) *English Version WIP
+- [Occlusion Culling](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/OcclusionCulling.html)
 
 # Edited Pages
 - [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/index.html)
@@ -41,11 +41,11 @@
     - Edited content according to Ver5.4 
     - Added restriction on using lights
 - [HEMAnimationConverter](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/HEMAnimationConverter/AnimationConverter.html)
-    - Revised content according to Ver5.4 *English Version WIP
+    - Revised content according to Ver5.4
 - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/WorldMakingGuide/AvatarFile.html)
     - Added specifications of AvatarFile
 - [AutoTextureCompresser](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AutoTextureCompresser/AutoTextureCompresser.html)
-    - Edited content according to Ver5.4 *English Version WIP
+    - Edited content according to Ver5.4
 - [HeliScript - String](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/hs/hs_string.html)
     - Updated samplecode for % operator
 # Deleted Pages

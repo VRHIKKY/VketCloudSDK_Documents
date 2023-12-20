@@ -84,7 +84,7 @@ plugins:
           List: 配列(List)
           Operator: 演算子
           Class: クラス
-          Component: コンポーネント
+          Components / Callback functions: コンポーネント / コールバック関数
           Built-in Classes And Functions: 組み込みクラス・関数
           Vector3: Vector3クラス
           Quaternion: Quaternionクラス
@@ -102,9 +102,10 @@ plugins:
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
           Specifications Limits : VketCloudの仕様制限
-          ReflectionProbe: 反射を写り込ませるには
+          ReflectionProbe: リフレクションプローブ
           Texture Compression: テクスチャ圧縮
-          Physics Engine: 物理エンジン
+          How to use Colliders / Tips: コライダーの使い方 / Tips
+          Physics Engine: 物理エンジンの使い方
           Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponents: HEOコンポーネント
@@ -120,11 +121,7 @@ plugins:
           ActionNodeGraph: アクションノードグラフ
           Particle Editor : パーティクルエディター
           ParticleEditor Overview: パーティクルエディター概要 
-          About Screen: 操作画面について
-          Operation: 操作説明
-          Window Info: ウィンドウ解説
-          Toolbar: ツールバー
-          Property: プロパティウィンドウ
+          About Screen / How to Operate: ウィンドウ解説・操作方法について
           Animation Converter : アニメーションコンバーター
           Adding Preset Avatars : プリセットアバターを追加する
           World Editing Tips: 編集のためのTips
@@ -136,18 +133,16 @@ plugins:
           Occlusion Culling: オクルージョンカリング
           Trouble shooting: トラブルシューティング
           SDK does not appear after install: SDKがインストール後に立ち上がらない
-          Build Error: ビルドエラー
-          Browser does not open: ブラウザが立ち上がらない
-          Browser window blackouts: ブラウザウィンドウが暗転したまま動かない
-          Changes are not applied: 変更が更新されない
+          Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
           Version Update Troubleshooting: バージョンアップ後によくあるトラブル
           First Step: ワールド制作の基本
           Change Log: チェンジログ
           About Changelog: チェンジログについて
           Release Note: リリースノート
           About Release Note: リリースノートについて
-          HeliScript: ヘリスクリプト
+          HeliScript - Overview: HeliScript概要
           Statements and flow control: 宣言と制御
+          Debug Mode: デバッグモード
           Debug Console: デバッグコンソール
           Debug Messages: デバッグメッセージ一覧
           World Making Guide: ワールド制作ガイド
@@ -177,27 +172,28 @@ nav:
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
-    - Physics Engine : WorldMakingGuide/PhysicsEngine.md
+    - How to use Colliders / Tips : WorldMakingGuide/Collider.md
+    - Physics Engine: WorldMakingGuide/PhysicsEngine.md
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
-    #- How to Set Collider : WorldMakingGuide/Collider.md #未記載
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+- Trouble shooting:
+    - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
+    - Build Error / How to troubleshoot issues: troubleshooting/BuildError.md
+    - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
+    - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
+    - Debug Mode: WorldEditingTips/DebugMode.md
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :
       - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
-      - About Screen : particleeditor/pe_about_screen.md
-      - Operation: particleeditor/pe_control.md
-      - Window Info:
-        - Toolbar : particleeditor/pe_toolbar.md
-        - Property : particleeditor/pe_propertywindow.md
-        - Particle List : particleeditor/pe_particlelistwindow.md
+      - About Screen / How to Operate : particleeditor/pe_about_screen.md
 - World Editing Tips:
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
@@ -278,12 +274,13 @@ nav:
       - SetCookieText: Actions/Programmatic/SetCookieText.md
       - CallScript: Actions/Programmatic/CallScript.md
 - HeliScript:
+    - HeliScript - Overview: hs/hs_overview.md
     - Built-in Types:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
         - List: hs/hs_list.md
     - Class: hs/hs_class.md
-    - Component: hs/hs_component.md
+    - Components / Callback functions: hs/hs_component.md
     - Built-in Classes And Functions:
         - Vector3: hs/hs_struct_vector3.md
         - Quaternion: hs/hs_struct_quaternion.md
@@ -303,20 +300,15 @@ nav:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_constrol.md
         - Operator: hs/hs_operator.md
-- Heliport.js:
-    - OverView: heliport/heliport_overview.md
-    - ChatGPT / useChatGpt: heliport/heliport_useChatGpt.md
-- Trouble shooting:
-    - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
-    - Build Error: troubleshooting/BuildError.md
-    - Browser does not open: troubleshooting/BrowserNotOpen.md
-    - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
-    - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
-    - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v9.x:
+        - v9.11: releasenote/releasenote-9.11.md
+        - v9.10: releasenote/releasenote-9.10.md
+        - v9.9: releasenote/releasenote-9.9.md
+        - v9.8: releasenote/releasenote-9.8.md
+        - v9.7: releasenote/releasenote-9.7.md
+        - v9.6: releasenote/releasenote-9.6.md
         - v9.5: releasenote/releasenote-9.5.md
         - v9.4: releasenote/releasenote-9.4.md
         - v9.3: releasenote/releasenote-9.3.md
@@ -367,6 +359,7 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v9.x:
+        - v9.8: changelog/changelog-9.11.md
         - v9.5: changelog/changelog-9.5.md
         - v9.4: changelog/changelog-9.4.md
         - v9.3: changelog/changelog-9.3.md

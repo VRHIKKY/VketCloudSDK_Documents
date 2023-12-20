@@ -18,22 +18,27 @@ VketCloudSDKは、以下のUnity環境が必要です。
 - Android: Android 11.0以降、RAM 8GB以上（Google Pixelなら Pixel 5以降）
 
 ---
-!!! warning API互換レベル 
+!!! note warning
     以下の項目は、SDKが自動で設定しますが、稀に設定が無効化されてしまう場合があります。
     その場合、手動で設定しなおしてください。
 
-    **API互換性レベルの変更**
+    **API Compatibility Level (API互換性レベル)の変更**
 
     1. UnityのメニューバーのEditからProject Settings...をクリックしてください。  
 
     2. Project Settingsウインドウが表示されたら、一覧からPlayerをクリックしてください。
 
-    3. PCの設定中にあるConfigurationを確認し、API Compatibility Levelの項目をプルダウンメニューから「.NET 4.x」に変更してください。
+    3. Project設定中にあるConfigurationを確認し、API Compatibility Levelの項目をプルダウンメニューから「.NET 4.x」に変更してください。
 
     ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
 
+    **LightMapEncodingの変更**
+
+    上記と同じくPC設定内のOther Settingsにある、Lightmap Encodingの項目をプルダウンメニューからNormal Qualityに変更してください。
+
+    ![LightMapEncoding](img/LightMapEncoding.jpg)
 
     **Color Spaceの変更**
     
     Edit > Project SettingsよりColor SpaceをLinearに変更します。
-    ![liner](img/liner.jpg)
+    ![linear](img/linear.jpg)

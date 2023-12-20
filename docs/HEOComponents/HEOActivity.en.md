@@ -65,9 +65,9 @@ For details on how to get the activity data, refer to the manual which is referr
 
 The Vket Cloud Activity can be downloaded from the asset store.<br>
 
-The asset store can be accessed by selecting "Asset Store" in the [Vket Cloud MyPage](https://cloud.vket.com/) after login.
+The asset store can be accessed by selecting "Asset Store" in the [Vket Cloud MyPage](https://cloud.vket.com/){target=_blank} after login.
 
 ![HEOActivity_13](img/HEOActivity_13.jpg)
 
 For details on how to use the asset store, refer to the manual page below. (English Version WIP)
-[Gimmicks and Features ready to use! How to use the Vket Cloud Asset Store and Activities](https://magazine.vket.com/n/n7d554dbeb552)
+[Gimmicks and Features ready to use! How to use the Vket Cloud Asset Store and Activities](https://magazine.vket.com/n/n7d554dbeb552){target=_blank}

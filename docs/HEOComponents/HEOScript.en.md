@@ -1,5 +1,5 @@
 # HEOScript
-![HEOScript](img/HEOScript_en.jpg)
+![HEOScript](img/HEOScript.jpg)
 
 |  Label |  function  |
 | ----   | ---- |
@@ -10,7 +10,7 @@
 - HEOScript components are attachable to the GameObject with the [HEOField](./HEOField.md) component, or its child objects (See image below for reference)
 - For details on writing HeliScript, refer to the pages below:
 - [Class](../hs/hs_class.md)
-- [Component](../hs/hs_component.md)
+- [Components / Callback functions](../hs/hs_component.md)
 
 ![HEOScript_attachable](./img/HEOScript_attachable.jpg)
 

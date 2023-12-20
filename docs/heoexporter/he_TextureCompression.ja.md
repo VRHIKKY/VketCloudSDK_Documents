@@ -9,12 +9,12 @@ HEOExporterで出力後にテクスチャ圧縮の作業をおこなう必要が
 - ReflectionProbe
 
 ## 使用ツールのインストール
-まず最初に、[PVRTexTool](https://developer.imaginationtech.com/pvrtextool/)をインストールします。
+まず最初に、[PVRTexTool](https://developer.imaginationtech.com/pvrtextool/){target=_blank}をインストールします。
 インストールされた PVRTexTool\CLI\Windows_x86_64\PVRTexToolCLI.exe を使用しますので、このフォルダのPATHを通します。（コマンドプロンプトの使い方やPATHの通し方は省略します）
 
-次に [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv)をインストールします。ページを開いてすぐ上の方にある「DOWNLOADS@LATEST」でファイルをインストールことができます。インストールしたtexconv.exeを任意の場所に置き、上記のPVRTexToolと同様にPATHを通してください。
+次に [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv){target=_blank}をインストールします。ページを開いてすぐ上の方にある「DOWNLOADS@LATEST」でファイルをインストールことができます。インストールしたtexconv.exeを任意の場所に置き、上記のPVRTexToolと同様にPATHを通してください。
 
-また、HEOファイルに圧縮されたテクスチャの上書きを実行するために、[python](https://www.python.org/downloads/)を導入します。
+また、HEOファイルに圧縮されたテクスチャの上書きを実行するために、[python](https://www.python.org/downloads/){target=_blank}を導入します。
 バージョンは3.11を推奨しますが、それ以外でも動作する想定です。
 ただし、python2は動作保証ができないため、その場合は最新のpythonを導入します。
 

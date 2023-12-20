@@ -9,15 +9,15 @@ Although textures are planned to become compressible on the server side in the f
 - ReflectionProbe
 
 ## Tools to Install
-First, install [PVRTexTool](https://developer.imaginationtech.com/pvrtextool/).
+First, install [PVRTexTool](https://developer.imaginationtech.com/pvrtextool/){target=_blank}.
 We'll be using the installed `PVRTexTool\CLI\Windows_x86_64\PVRTexToolCLI.exe`, and you'll need to set its PATH system variable.<br>
 (We won't be going into the details on how to use command prompts or how to set PATHs)
 
-Next, install [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv).
+Next, install [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv){target=_blank}.
 You should be able to download from `"DOWNLOADS@LATEST"` immediately once you've opened the link.<br>
 Place the installed texconv.exe file in a place you like, and set its PATH like with PVRTexTool.
 
-Also, installing [python](https://www.python.org/) is required as well, in order to run the script for update textures in HEO files by the compressed files.<br>
+Also, installing [python](https://www.python.org/){target=_blank} is required as well, in order to run the script for update textures in HEO files by the compressed files.<br>
 Although version `3.11` is recommended, the script is expected to run in other versions.
 However, python2 is not guaranteed to run, therefore installing a newer version is required in that case.
 

@@ -1,5 +1,5 @@
 
-# components
+# Components / Callback functions
 
 ## Defining components
 

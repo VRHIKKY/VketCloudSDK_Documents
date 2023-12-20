@@ -1,11 +1,11 @@
 
-# はじめに
+# VketCloudSDK 公式マニュアルへようこそ！
+
+VketCloudSDKは、Vket Cloudエンジンを使用したコンテンツ・ワールド制作のための開発キットです。  
   
-VketCloudSDKは、Vket Cloudエンジンを使用したコンテンツ制作のための開発キットです。  
+SDKを利用するには、`各種アカウントへの登録`と`指定バージョンのUnityの導入`が必要です。  
   
-SDKの利用には、`各種アカウントへの登録`と`指定バージョンのUnity`が必要です。  
-  
-初めての方は以下のステップを順番に進めてください。
+初めての方は`VketCloudSDKについて`の以下のステップを順番に進めてください。
 
 1. **[アカウントの準備](AboutVketCloudSDK/SetupAccount.md)**
 
@@ -15,8 +15,17 @@ SDKの利用には、`各種アカウントへの登録`と`指定バージョ�
 
 4. **[SDKログイン](AboutVketCloudSDK/LoginSDK.md)**
 
-を順番に実行してください。
+とりあえずワールドに入ってみたい・どんなものが作れるか知りたい方は[My Vket](https://vket.com/){target=_blank}をチェックしましょう！
 
-!!! note
-    VketCloudSDKのバージョンごとの更新情報は[リリースノート](releasenote/releasenote-9.3.md)から確認できます。<br>
-    また、[チェンジログ](changelog/changelog-9.3.md)では本マニュアルの更新情報が確認できます。
+!!! info "SDKバージョンについて"
+    現在のVketCloudSDKの最新版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ja/index.html)ご参照ください。<br>
+    また、一定期間のサポートが盛り込まれた安定版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/stable/ja/index.html)ご参照ください。
+
+!!! info "更新履歴について"
+    本バージョンのVketCloudSDKの更新情報は[リリースノート](releasenote/releasenote-9.5.md)から確認できます。<br>
+    また、[チェンジログ](changelog/changelog-9.5.md)では本マニュアルにおける更新情報が確認できます。<br>
+    もし参照したいバージョンのリリースノートがない際はページトップよりバージョンの切り替えをお試しください。
+
+!!! info "本マニュアルへのコントリビューション"
+    VketCloudSDK公式マニュアルは[Github](https://github.com/VRHIKKY/VketCloudSDK_Documents){target=_blank}にて更新管理を行っています。<br>
+    誤字の修正・情報の追加など、コントリビューションはぜひお気軽にどうぞ！
