@@ -13,5 +13,8 @@
     - Added tip on creating collision for stairs
   - [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/PhysicsEngine.html)
     - Added Translation
+- Troubleshooting
+  - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/troubleshooting/BuildError.html)
+    - Added build error issue on first Build and Run on certain Mac environments
 
 ## Deleted Pages

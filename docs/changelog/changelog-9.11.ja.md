@@ -11,5 +11,8 @@
   - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/Collider.html)
     - コライダーの使い方を追加 ([物理エンジン](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/PhysicsEngine.html)ページから分離)
     - 階段にコライダーを設定する際のTipsを追加
+- トラブルシューティング
+  - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/troubleshooting/BuildError.html)
+    - 一部のMac環境にて発生する可能性のあるビルドエラーについて記載
 
 ## 削除されたページ
