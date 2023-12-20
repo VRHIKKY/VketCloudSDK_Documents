@@ -2,41 +2,40 @@
 
 ![HEOCamera_1](img/HEOCamera_1.jpg)
 
-HEOCameraコンポーネントは演出目的等で通常のカメラから別のカメラ制御に切り替えるための指標として使用します。<br>
-この機能を使うことにより、イベントシーンなどでのカメラの切り替えや特殊カメラワークを作ることができます。<br>
-カメラの切り替えは後述するようにHeliScriptからおこないます。
+HEOCamera is used to switch camera controls for visual purposes.<br>
+Using this component, camera can be switched in occasions such as event cut scenes, special camera works, and more purposes.<br>
+Switching camera will be done by HeliScript as explained later.
 
 | Label | Default | Function |
 | ---- | ---- | ----|
-| Position | 0,0,0 | カメラのGlobal座標を保管します |
-| Rotation | 0,0,0 | カメラのGlobal回転値を保管します |
+| Position | 0,0,0 | Stores the camera's global position |
+| Rotation | 0,0,0 | Stores the camera's global rotation |
 
 ## Usage
 
-1\. 空のGameObjectを作成し、HEOCameraコンポーネントをシーン上に配置します。
+1\. Create an empty GameObject and attach the HEOCamera component to place in scene.
 
 ![HEOCamera_2](img/HEOCamera_2.jpg)
 
-HEOCameraをアタッチした空のオブジェクトをシーン上に配置します。
+As this object will be treated as a different [Item](../hs/hs_class_item.md) than HEOField, this can be placed outside the World object.
 
 ![HEOCamera_3](img/HEOCamera_3.jpg)
 
-なお、本オブジェクトはHEOFieldとは別個の[アイテム](../hs/hs_class_item.md)として扱われるため、Worldオブジェクトの外に置かれても問題ございません。
+2\. Implement the HeliScript for controlling camera
 
-2\. HeliScriptを書く
+The object with HEOCamera attached will be output as an Item.<br>
+Therefore, Item class functions such as [SetPos](../hs/hs_class_item.md#setpos) and [SetQuaternion](../hs/hs_class_item.md#setquaternion) can be applied, added to [Camera Functions](../hs/hs_class_item.md#setcamera).
 
-HEOCameraをアタッチしたカメラオブジェクトはアイテムとして出力されます。
-そのため、[SetPos](../hs/hs_class_item.md#setpos)や[SetQuaternion](../hs/hs_class_item.md#setquaternion)といったアイテムクラス用の関数を使用することができるほか、[Camera専用の関数](../hs/hs_class_item.md#setcamera)も使用することが可能です。
 
-!!! note "Camera専用の関数"
+!!! note "Camera Functions"
     1. bool SetCamera()<br>
-    現在の映像を映すカメラを該当のカメラアイテムにします。<br>
-    成功したらtrue、失敗したらfalseが返ってきます。
+    Sets camera to the designated camera item.<br>
+    Return value is true if switching has succeeded, false if failed.
 
     2. void ResetCamera()<br>
-    現在の映像を映すカメラをデフォルトのプレイヤー追従のものに戻します。
+    Resets camera to the default camera following the player.
 
-上記の関数を利用したHeliScriptの例が下記になります。
+For example, the HeliScript using functions above is written as follows:
 
 ```cs
 component EventCameraTest
@@ -69,9 +68,9 @@ component EventCameraTest
 }
 ```
 
-これを実装したシーンが下記のようになります。<br>
-イベントカメラが有効となっている時、ワールドの中心を軸として回転するカメラワークとなります。<br>
-以下の画像ではSphereに[CallScript](../Actions/Programmatic/CallScript.md)を入れており、クリックするたびカメラが切り替わるように実装されています。
+The scene implementing this script is as the image below.<br>
+When the defined event camera is enabled, camera will pivot around the world center.<br>
+On the image below, the Sphere object has a [CallScript](../Actions/Programmatic/CallScript.md) attached to switch camera when clicked.
 
 ![HEOCamera_4](img/HEOCamera_4.jpg)
 
@@ -79,9 +78,9 @@ component EventCameraTest
 
 ## Other Tips
 
-イベントカメラには下記の特徴があります。
+The event camera has characteristics as following:
 
-- プレイヤーの操作はカメラの影響を受ける
-- 一人称視点にするとプレイヤーはカメラの位置にワープする
+- Player control will be affected by camera
+- When POV is switched to 1st person view, player will warp to the camera position
 
-したがって、イベントカメラを使用する場合は、UIの操作を制限するか、プレイヤーの動きを制限しておかないと、予期せぬ動作の元となってしまいます。
+Therefore, it is advised to constraint UI / player controls while event camera is enabled to prevent unexpected movements.

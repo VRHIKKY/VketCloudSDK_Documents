@@ -2,7 +2,7 @@
 
 ![HEOCamera_1](img/HEOCamera_1.jpg)
 
-HEOCameraコンポーネントは演出目的等で通常のカメラから別のカメラ制御に切り替えるための指標として使用します。<br>
+HEOCameraコンポーネントは演出目的等で通常のカメラから別のカメラ制御に切り替えるために使用します。<br>
 この機能を使うことにより、イベントシーンなどでのカメラの切り替えや特殊カメラワークを作ることができます。<br>
 カメラの切り替えは後述するようにHeliScriptからおこないます。
 
@@ -13,19 +13,18 @@ HEOCameraコンポーネントは演出目的等で通常のカメラから別�
 
 ## 使い方
 
-1\. 空のGameObjectを作成し、HEOCameraコンポーネントをシーン上に配置します。
+1\. 空のGameObjectを作成し、HEOCameraコンポーネントをアタッチしてシーン上に配置します。
 
 ![HEOCamera_2](img/HEOCamera_2.jpg)
 
-HEOCameraをアタッチした空のオブジェクトをシーン上に配置します。
+なお、本オブジェクトはHEOFieldとは別個の[アイテム](../hs/hs_class_item.md)として扱われるため、Worldオブジェクトの外に置かれても問題ございません。
 
 ![HEOCamera_3](img/HEOCamera_3.jpg)
 
-なお、本オブジェクトはHEOFieldとは別個の[アイテム](../hs/hs_class_item.md)として扱われるため、Worldオブジェクトの外に置かれても問題ございません。
 
 2\. HeliScriptを書く
 
-HEOCameraをアタッチしたカメラオブジェクトはアイテムとして出力されます。
+HEOCameraをアタッチした空オブジェクトはアイテムとして出力されます。
 そのため、[SetPos](../hs/hs_class_item.md#setpos)や[SetQuaternion](../hs/hs_class_item.md#setquaternion)といったアイテムクラス用の関数を使用することができるほか、[Camera専用の関数](../hs/hs_class_item.md#setcamera)も使用することが可能です。
 
 !!! note "Camera専用の関数"
