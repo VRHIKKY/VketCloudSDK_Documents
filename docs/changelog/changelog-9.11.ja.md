@@ -2,6 +2,9 @@
 
 ## 追加されたページ
 
+- HEOコンポーネント
+  - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOCamera.html)
+
 ## 変更されたページ
 
 - VketCloudSDKについて
