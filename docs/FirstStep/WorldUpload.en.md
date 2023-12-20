@@ -1,5 +1,6 @@
 # World upload
-You can upload directly from Unity to HIKKY's official world portal server using the SDK.
+
+Using the SDK, the world can be uploaded to the Vket Cloud / My Vket server for publishing.
 
 ## How to upload
   
@@ -19,8 +20,12 @@ You can upload directly from Unity to HIKKY's official world portal server using
 
      ![CheckTheWorld](img/CheckTheWorld.jpg)
 
-
 !!! note caution
      To upload the world data, the world ID must be created in advance on the account management screen. If you don't see your world name in the list, please create a world ID from [here](https://cloud.vket.com/account/world){target=blank}.
 
      ![CreateWorldID](img/CreateWorldID.jpg)
+
+!!! caution "Issues when uploading multiple scenes"
+    If a single Unity project contains more than two scenes, which may be uploaded to different worlds, the first uploaded world may be duplicated, or cause 404 / build errors when entering.<br>
+    To prevent this, consider containing only one scene/world per project.<br>
+    Also, if this issue happened, it can be fixed by closing the project and deleting the `upload` folder located in the project files, and reboot/reupload the world.

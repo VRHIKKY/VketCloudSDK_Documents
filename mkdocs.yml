@@ -135,7 +135,7 @@ plugins:
           SDK does not appear after install: SDKがインストール後に立ち上がらない
           Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
           Version Update Troubleshooting: バージョンアップ後によくあるトラブル
-          First Step: ワールド制作の基本
+          First Steps: ワールド制作の基本
           Change Log: チェンジログ
           About Changelog: チェンジログについて
           Release Note: リリースノート
@@ -165,7 +165,7 @@ nav:
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
     - Login to SDK: AboutVketCloudSDK/LoginSDK.md
     - How to use avatar : AboutVketCloudSDK/SetupAvatar.md
-- First Step:
+- First Steps:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
     - World Upload : FirstStep/WorldUpload.md
