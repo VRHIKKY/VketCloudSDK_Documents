@@ -2,6 +2,9 @@
 
 ## 追加されたページ
 
+- ワールド制作ガイド
+  - [HEOFieldの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/HEOFieldTips.html)
+
 ## 変更されたページ
 
 - VketCloudSDKについて
@@ -17,5 +20,8 @@
 - トラブルシューティング
   - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/troubleshooting/BuildError.html)
     - 一部のMac環境にて発生する可能性のあるビルドエラーについて記載
+- HEOコンポーネント
+  - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOField.html)
+    - HEOFieldの使い方への誘導を追加
 
 ## 削除されたページ
