@@ -1,27 +1,43 @@
-# Physics Engine / How to Use Colliders
+# Physics Engine
+
+In Vket Cloud, collision and physics can be simulated by using Unity colliders and various SDK features.
+
+## How to Use Colliders
+
+!!! note info
+    This article has moved to [How to Use Colliders / tips](./Collider.md).
 
 ## How to Use the Physics Engine
-1. To apply physics calculations to game objects, attach "Unity Collider" and "HEOCollider" to the game object. Unity colliders that can be used for physics calculations are "Box Collider", "Sphere Collider", "Capsule Collider". Furthermore, by attaching an additional "HEOCylinderCollider" to a game object with a "Capsule Collider" as mentioned later, it can be used as a cylinder collider exclusively in the VketCloud physics engine.
+
+1\. To apply physics simulation to game objects, attach "Unity Collider" and [HEOCollider](../HEOComponents/HEOCollider.md)to the game object.<br>
+Unity colliders that can be used for physics simulation are "Box Collider", "Sphere Collider", and "Capsule Collider".
+
+Furthermore, by attaching an additional "HEOCylinderCollider" to a game object with a "Capsule Collider" as mentioned later, it can be used as a cylinder collider exclusively in the Vket Cloud physics engine.
 
 ![PhysicsEngine](img/PhysicsEngine.jpg)
 
-2. Set the properties of the HEOCollider/Physics item. Each item is explained below, but by checking "UsePhysics", physics calculations will be applied to that game object.
-    - About HEOCollider/Physics properties
-    ![PhysicsEngine](img/PhysicsEngineCollider.jpg)
-      - UsePhysics: When checked, physics calculations are applied
-      - Fixed: Whether to fix this game object in physics calculations.
-        - Example:
-          - Non-moving objects such as floors and walls → Fixed on
-          - Moving objects such as balls → Fixed off
-    - EnableBody: Initial value of whether or not to use physics calculations
-        - As mentioned later, you can toggle the use of physics calculations with Action Trigger. EnableBody is the initial value. For example, you can create a gimmick where you put cans of juice in a vending machine with physics disabled, and when you press the purchase button of the vending machine, enable the physics of the can and roll it out from the vending machine.
-    - Mass: Weight
-    - Restitution: Coefficient of restitution
+2\. Set the properties of the HEOCollider/Physics item.<br>
+While each property is explained below, basically enabling  `Use Physics Engine` on [HEOWorldSettings](../HEOComponents/HEOWorldSetting.md#_1) and enabling `UsePhysics` on each collider component will enable the gameobject to simulate their physics.
 
-3. After that, you can use physics calculations by exporting as usual.
+### Brief Overview of HEOCollider/Physics properties
+
+![PhysicsEngine](img/PhysicsEngineCollider.jpg)
+
+| Label | Function |
+| ---- | ---- |
+| `Collider type` | Specifies the type of collider. |
+| `Collider target` | Specifies the target. |
+| `UsePhysics` | When checked, physics simulation will be enabled. |
+| `Fixed` | Toggles whether to fix this game object's position in physics calculation.<br> Example:Non-moving objects such as floors and walls → Enable `Fixed` <br> Moving objects such as balls → Disable `Fixed` |
+| `EnableBody` | Initial value of whether or not to use physics calculations. <br>As mentioned later, you can toggle the use of physics calculations with Action Trigger. EnableBody is the initial value.<br> For example, you can create a gimmick where you put cans of juice in a vending machine with physics disabled, and when you press the purchase button of the vending machine, enable the physics of the can and roll it out from the vending machine. |
+| `Mass` | Mass Parameter |
+| `Restitution` | Restitution Parameter |
+
+3\. As all parameters have been adjusted, physics simulation will start by Build & Run.
 
 ## About Action Trigger
-For how to use the ActionTrigger, it is described on the following pages.
+
+For how to use the ActionTrigger, refer to the following pages:
 
 - [ActionsOverview](../Actions/ActionsOverview.md)
   - [PhysicsAddVelocity](../Actions/Physics/PhysicsAddVelocity.md)
@@ -29,8 +45,17 @@ For how to use the ActionTrigger, it is described on the following pages.
   - [PhysicsSetEnable](../Actions/Physics/PhysicsSetEnable.md)
   - [PhyscsSetPosRot](../Actions/Physics/PhysicsSetPosRot.md)
 
+Also, for usage of physics and colliders on HeliScript, refer to the following pages:
+
+- [Callback - AreaCollider](../hs/hs_component.md#callback-areacollider)
+- [Callback - physics collision detection](../hs/hs_component.md#callback-physics-collision-detection)
+- [Callback - In-field collider detection](../hs/hs_component.md#callback-in-field-collider-detection)
+- [Built-in functions - Physics](../hs/hs_system_function_physics.md)
+
 ## About Cylinder Collider
+
 Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "HEOCylinderCollider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
+
 ![PhysicsEngine](img/PhysicsEngineCylinderCollider.jpg)
 
 !!! Notes Info
