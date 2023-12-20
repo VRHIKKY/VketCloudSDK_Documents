@@ -131,6 +131,7 @@ plugins:
           World Optimization - Overview: ワールドの軽量化方法：概要
           Occlusion Culling: オクルージョンカリング
           Trouble shooting: トラブルシューティング
+          Trouble shooting - General Checklist: SDK初学者:何か起きたときにとりあえず見るべきリスト
           SDK does not appear after install: SDKがインストール後に立ち上がらない
           Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
           Version Update Troubleshooting: バージョンアップ後によくあるトラブル
@@ -181,6 +182,7 @@ nav:
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
+    - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
     - Build Error / How to troubleshoot issues: troubleshooting/BuildError.md
     - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
