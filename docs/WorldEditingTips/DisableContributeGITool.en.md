@@ -14,6 +14,6 @@ Open the VketCloudSDK tab, and select the utility tool via Tools > Utility > Dis
 ![DisableContributeGITool_2](img/DisableContributeGITool_2.jpg)
 
 The tool will run on select, and all ContributeGI on Unlit objects will be disabled.
-This will optimize the scene data for [Light Map](https://docs.unity3d.com/2019.4/Manual/Lightmapping.html) baking.
+This will optimize the scene data for [Light Map](https://docs.unity3d.com/2019.4/Manual/Lightmapping.html){target=_blank} baking.
 
 ![DisableContributeGITool_3](img/DisableContributeGITool_3.jpg)

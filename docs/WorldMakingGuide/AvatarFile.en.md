@@ -70,4 +70,4 @@ The object may be set in three formats: Heo, Hep, or Audio.
 | File | blank | Set the file to be used as an object. |
 | Position | 0,0,0 | Set the relative position from the Target. |
 | Rotation | 0,0,0 | Set the relative rotation from the Target. | 
-| Target | blank | Specifies the bone that serves as the coordinate origin. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview), name in snakeCase (e.g. head, leftLowerLeg, leftThumbProximal...)|
+| Target | blank | Specifies the bone that serves as the coordinate origin. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview){target=_blank}, name in snakeCase (e.g. head, leftLowerLeg, leftThumbProximal...)|

@@ -14,6 +14,6 @@ VketCloudSDKタブを開き、Tools > Utility > Disable Contribute GI of Unlit M
 ![DisableContributeGITool_2](img/DisableContributeGITool_2.jpg)
 
 選択するとツールが走り、ContributeGIが無効になります。
-この状態で[ライトマップ](https://docs.unity3d.com/ja/2019.4/Manual/Lightmapping.html)をベイクします。
+この状態で[ライトマップ](https://docs.unity3d.com/ja/2019.4/Manual/Lightmapping.html){target=_blank}をベイクします。
 
 ![DisableContributeGITool_3](img/DisableContributeGITool_3.jpg)

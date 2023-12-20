@@ -65,9 +65,9 @@ HEOActivityはアクティビティを使用する際に設定するコンポー
 
 Vket Cloudのアクティビティはアセットストアにて入手が可能です。<br>
 
-アセットストアは[Vket Cloudマイページ](https://cloud.vket.com/)にログイン後、画面上部のタブにおける「アセットストア」からアクセスが可能です。
+アセットストアは[Vket Cloudマイページ](https://cloud.vket.com/){target=_blank}にログイン後、画面上部のタブにおける「アセットストア」からアクセスが可能です。
 
 ![HEOActivity_13](img/HEOActivity_13.jpg)
 
 アセットストアのアクセス方法、使い方の詳細は以下のマニュアルページをご確認ください。
-[便利機能をお手軽にインストール！Vket Cloudアセットストア・アクティビティの使い方](https://magazine.vket.com/n/n7d554dbeb552)
+[便利機能をお手軽にインストール！Vket Cloudアセットストア・アクティビティの使い方](https://magazine.vket.com/n/n7d554dbeb552){target=_blank}
