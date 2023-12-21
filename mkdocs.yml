@@ -106,6 +106,7 @@ plugins:
           Texture Compression: テクスチャ圧縮
           How to use Colliders / Tips: コライダーの使い方 / Tips
           Physics Engine: 物理エンジンの使い方
+          Tips on using HEOField: HEOFieldの使い方
           Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
           Mesh Collider: メッシュコライダーについて
           HEOComponents: HEOコンポーネント
@@ -174,6 +175,7 @@ nav:
     - Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
+    - Tips on using HEOField: WorldMakingGuide/HEOFieldTips.md
     - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
