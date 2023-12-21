@@ -250,11 +250,13 @@ Set the text.
 `public bool SetCamera()`
 
 Set the camera type Item as a camera.
+Refer to [HEOCamera](../HEOComponents/HEOCamera.md) for usage.
 
 ### ResetCamera
 `public void ResetCamera()`
 
 Detach camera set by SetCamera.
+Refer to [HEOCamera](../HEOComponents/HEOCamera.md) for usage.
 
 ### ReplaceItem
 `public bool ReplaceItem(string URL)`

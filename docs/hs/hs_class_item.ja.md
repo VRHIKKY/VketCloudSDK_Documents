@@ -250,11 +250,13 @@ Item のロードが完了していた場合は true を、そうでない場合
 `public bool SetCamera()`
 
 カメラタイプのアイテムをカメラとして設定する。
+使い方については[HEOCamera](../HEOComponents/HEOCamera.md)を参照してください。
 
 ### ResetCamera
 `public void ResetCamera()`
 
 SetCameraで設定したものを解除する。
+使い方については[HEOCamera](../HEOComponents/HEOCamera.md)を参照してください。
 
 ### ReplaceItem
 `public bool ReplaceItem(string URL)`

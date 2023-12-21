@@ -4,6 +4,8 @@
 
 - ワールド制作ガイド
   - [HEOFieldの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/HEOFieldTips.html)
+- HEOコンポーネント
+  - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOCamera.html)
 
 ## 変更されたページ
 
