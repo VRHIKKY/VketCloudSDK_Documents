@@ -4,6 +4,8 @@
 
 - World Making Guide
   - [Tips on using HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/HEOFieldTips.html)
+- SDK Tools
+  - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/particleeditor/pe_about_properties.html) *English Version WIP
 - HEO Components
   - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOCamera.html)
 

@@ -121,8 +121,9 @@ plugins:
           Actions Overview: アクションの概要
           ActionNodeGraph: アクションノードグラフ
           Particle Editor : パーティクルエディター
-          ParticleEditor Overview: パーティクルエディター概要 
+          Particle Editor - Overview: パーティクルエディター：概要 
           About Screen / How to Operate: ウィンドウ解説・操作方法について
+          Particle Editor - Properties: パーティクルエディター：プロパティ一覧
           Animation Converter : アニメーションコンバーター
           Adding Preset Avatars : プリセットアバターを追加する
           World Editing Tips: 編集のためのTips
@@ -196,8 +197,9 @@ nav:
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :
-      - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
+      - Particle Editor - Overview : particleeditor/pe_about_particleeditor.md
       - About Screen / How to Operate : particleeditor/pe_about_screen.md
+      - Particle Editor - Properties : particleeditor/pe_about_properties.md
 - World Editing Tips:
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
