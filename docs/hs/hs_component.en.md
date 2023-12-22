@@ -32,7 +32,6 @@ component test
 }
 ```
 
-
 ## callback - click node
 
 If you define the OnClickNode method as follows, it will be called when the item's node is clicked.
@@ -45,7 +44,6 @@ component Test
      }
 }
 ```
-
 
 ## Callback - AreaCollider
 
@@ -91,6 +89,7 @@ component CustomDataReceiver
 ```
 
 ## Callback - GUI button
+
   `public void OnClickedButton(string layerName, string buttonName)`
 
 If you define the OnClickedButton() method as below, it will be called when the GUI button is tapped.
@@ -100,7 +99,7 @@ component ButtonClickable
 {
      public void OnClickedButton(string layerName, string buttonname)
      {
-         if (layerName == "MenuUI") {}
+         if (layerName == "MenuUI") {
              hsSystemOutput("Button Clicked! :" + buttonname + "\n");
          }
      }
@@ -108,6 +107,7 @@ component ButtonClickable
 ```
 
 ## Callback - physics collision detection
+
   `public void OnPhysicsCollision(int ID0, int ID1)`
 
 Called when objects with physics set collide with each other.
@@ -124,12 +124,6 @@ Item m_Field;
 
 int m_PhysicsIDFloor,
 m_PhysicsIDCube;
-
-component Test {
-	Item	m_Field;
-	
-	int		m_PhysicsIDFloor,
-			m_PhysicsIDCube;
 
 	public Test()
 	{

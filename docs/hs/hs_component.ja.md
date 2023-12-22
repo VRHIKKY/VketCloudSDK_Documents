@@ -32,7 +32,6 @@ component Test
 }
 ```
 
-
 ## コールバック - クリックノード
 
 以下のようにOnClickNodeメソッドを定義しておくと、そのアイテムのノードがクリックされた時に呼び出されます。
@@ -45,7 +44,6 @@ component Test
     }
 }
 ```
-
 
 ## コールバック - AreaCollider
 
@@ -78,7 +76,7 @@ component AreaCollider
 ルームの管理者から送信された任意のデータを受信するコールバックメソッドです。
 
 ```
-component CustumDataReceivere
+component CustomDataReceiver
 {
     public void OnReceiveCustomState(string id, string type, string data)
     {
@@ -91,6 +89,7 @@ component CustumDataReceivere
 ```
 
 ## コールバック - GUIボタン
+
  `public void OnClickedButton(string layerName, string buttonName)`
 
 以下のようにOnClickedButton()メソッドを定義しておくと、GUIのボタンがタップされたときに呼び出されます。
@@ -100,7 +99,7 @@ component ButtonClickable
 {
     public void OnClickedButton(string layerName, string buttonname)
     {
-        if (layerName == "MenuUI") {}
+        if (layerName == "MenuUI") {
             hsSystemOutput("Button Clicked! :" + buttonname + "\n");
         }
     }
@@ -108,6 +107,7 @@ component ButtonClickable
 ```
 
 ## コールバック - 物理衝突判定
+
  `public void OnPhysicsCollision(int ID0, int ID1)`
 
 物理処理を設定しているオブジェクト同士が衝突したときに呼び出されます。
