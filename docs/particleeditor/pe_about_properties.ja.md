@@ -191,31 +191,7 @@
 | Length Scale | 0.00 | 大きさを横向きに変更します |
 | Render Alignment | View | パーティクルの整列方法を設定します。<br> View: カメラの平面に対して整列 Local: ゲームオブジェクトのTransformコンポーネントに対して整列 Velocity: パーティクルの進行方向に対して整列 |
 
-### Easing Typeについて
+## Easing Typeについて
 
-| 名称 | 機能 |
-| ---- | ---- |
-| Linear | 線形 |
-| EaseInSine | |
-| EaseInSine | |
-| EaseInOutCubic | |
-| EaseInQuart | |
-| EaseOutQuart | |
-| EaseInOutQuart | |
-| EaseInQuint | |
-| EaseOutQuint | |
-| EaseInOutQuint | |
-| EaseInExpo | |
-| EaseOutExpo | |
-| EaseInOutExpo | |
-| EaseInCirc | |
-| EaseOutCirc | |
-| EaseInOutCirc | |
-| EaseInBack | |
-| EaseOutBack | |
-| EaseInOutBack | |
-| EaseInElastic | |
-| EaseOutElastic | |
-| EaseInOutElastic | |
-| EaseInBounce | |
-| EaseOutBounce | |
+パーティクルエディタでは各設定の`Easing Type`にてイージング関数を設定することができます。<br>
+それぞれの関数の概説については一つの参考として[イージング関数チートシート](https://easings.net/ja){target=_blank}を参照してください。
