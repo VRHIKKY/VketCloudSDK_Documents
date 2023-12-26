@@ -43,6 +43,7 @@ git clone https://github.com/VRHIKKY/VketCloudSDK_Documents.git
 リポジトリとpythonの準備が完了したら、`VketCloudSDK_Documents > windows_mkdocs.bat`をExplorerで開き、ダブルクリックで実行します。
 
 ※ダブルクリック後、ブラウザが立ち上がります。ページ更新までに少しラグがあるので、しばしお待ちください。
+
 ※ダブルクリック後、実行権限を要求される場合は、管理者として実行してください、
 
 ※もしブラウザ遷移しない場合は、 http://127.0.0.1:8000/ を手動で開いてください。
