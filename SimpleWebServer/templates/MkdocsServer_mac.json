@@ -1,0 +1,4 @@
+{
+    "label": "mkdocs(mac)",
+    "contents": "python -m venv .venv;\nsource .venv/bin/activate;\npip install -r requirements.txt;\nopen http://127.0.0.1:8000/;\nmkdocs serve;"
+}
