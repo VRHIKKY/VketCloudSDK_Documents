@@ -1,4 +1,0 @@
-{
-    "label": "mkdocs(win)",
-    "contents": "python -m venv .venv &&\n.\\.venv\\Scripts\\activate &&\npip install -r requirements.txt &&\nstart http://127.0.0.1:8000/ &&\nmkdocs serve"
-}
