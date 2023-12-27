@@ -8,6 +8,7 @@
   - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/particleeditor/pe_about_properties.html)
 - HEOコンポーネント
   - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOCamera.html)
+  - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOMirror.html)
 
 ## 変更されたページ
 
