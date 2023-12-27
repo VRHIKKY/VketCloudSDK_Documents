@@ -8,7 +8,7 @@
   - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/particleeditor/pe_about_properties.html) *English Version WIP
 - HEO Components
   - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOCamera.html)
-  - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOMirror.html) *English Version WIP
+  - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOMirror.html)
 
 ## Edited Pages
 

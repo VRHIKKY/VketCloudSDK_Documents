@@ -2,60 +2,60 @@
 
 ![HEOMirror_1](img/HEOMirror_1.jpg)
 
-HEOMirrorはQuadを使用して鏡のような挙動を再現するために設置します。
+HEOMirror is placed with a Quad to implement a pseudo-mirror.
 
 ![HEOMirror_2](img/HEOMirror_2.jpg)
 
-## 使い方
+## How to Use
 
-### 手順
+### TLDR
 
-1.鏡にしたいQuadを用意する
+1.Prepare a Quad to be used as a mirror
 
-2.Textureを用意し、マテリアルの作成
+2.Create Texture and Material
 
-3.鏡にしたいQuadにHEOMirrorをアタッチ
+3.Attach HEOMirror to the Quad
 
-### 実装方法
+### Implementation
 
-1\. 鏡にしたいQuadを用意する
+1\. Prepare a Quad to be used as a mirror
 
 ![HEOMirror_3](img/HEOMirror_3.jpg)
 
-Create > 3D ObjectからQuadを作成します。<br>
-HEOMirrorはノードに分類されるので、Quadは[HEOField](HEOField.md)がアタッチされたオブジェクトの子オブジェクトである必要があります。
+Create a Quad by selecting Create > 3D Object.<br>
+As HEOMirror is categorized as a Node, the Quad must be a child object of the object with [HEOField](HEOField.md) attached.
 
-2\. Textureを用意し、マテリアルの作成
+2\. Create Texture and Material
 
-縦横サイズが2のべき乗のTextureを用意します。<br>
-今回は、1024×1024の画像を使用しています。正方形である必要はありません。
+Create a Texture which width/height is formatted as the power of 2.<br>
+For example, a square 1024*1024 texture is used here. Note that the texture does not have to be a square.
 
-Textureを用意したら、新しいマテリアルを作ります。
+As the Texture is created, prepare a material as below:
 
 ![HEOMirror_5](img/HEOMirror_5.jpg)
 
-Shaderは画像を入れることが出来たらUnlit/Textureでなくても動作します。
+If the intended Shader accepts textures, the material's shader does not have to be Unlit/Texture.
 
-3\. 鏡にしたいQuadにHEOMirrorをアタッチ
+3\. Attach HEOMirror to the Quad
 
 ![HEOMirror_6](img/HEOMirror_6.jpg)
 
-QuadにHEOMirrorをアタッチします。Enable Mirrorはチェックを入れたままにします。
+Attach HEOMirror to the Quad. Make sure to select the `Enable Mirror`.
 
-この状態でビルドすることで、該当のオブジェクトがMirrorになります。
+By building world at this moment, the object will be a Mirror.
 
-## その他Tips
+## Tips
 
-### エリア内にプレイヤーがいるときだけ鏡を有効にする
+### Enabling Mirror while the player is in the designated area
 
-Box Colliderと[HEOCollider](HEOCollider.md)をアタッチすることで、プレイヤーがコライダー内にいるときだけ鏡描画処理を行うように制御できます。このとき、HEO ColliderのCollider TypeをAreaに、Collider TargetをNoneに設定してください。<br>
-Box Colliderをアタッチしない場合、鏡描画処理はプレイヤーの位置に依らず常に行われます。
+By attaching a Box Collider and [HEOCollider](HEOCollider.md), the mirror will be enabled only when the player is in the designated area. Set the [HEOCollider](HEOCollider.md)'s collider type to Area, and Collider Target to None.<br>
+If the Box Collider is not attached the mirror will be enabled regardless of player position.
 
 ![HEOMirror_7](img/HEOMirror_7.jpg)
 
-### マテリアルの色変更について
+### Changing Material Colors
 
-Standardシェーダーなど、色を付けることができるシェーダーを使うことで、鏡像の色合いを変更することができます。
+By using color changeable shaders such as standard, the color tone on the mirror's image will change.
 
 ![HEOMirror_8](img/HEOMirror_8.jpg)
 
@@ -63,26 +63,24 @@ Standardシェーダーなど、色を付けることができるシェーダー
 
 ![HEOMirror_10](img/HEOMirror_10.jpg)
 
-### HEOMirrorをアタッチしたオブジェクトと同じマテリアルを別オブジェクトに用いた場合
+### Using the same material of HEOMirror's object on other objects
 
-ビデオ再生と異なり、マテリアルに鏡像を映すのではなく、HEOMirrorがアタッチされたもののみが鏡になります。
-
-したがって、同じマテリアルを入れたからといって別オブジェクトで鏡像を確認できるといったことはありません。
+Unlike video players, the same material on a different object will not display the mirror image, as only the object with HEOMirror will be a mirror.
 
 ![HEOMirror_11](img/HEOMirror_11.jpg)
 
-### 合わせ鏡について
+### Placing Multiple Mirrors
 
-HEOMirrorをアタッチしたオブジェクトはHEOMirrorに映りこまない特徴があります。
+The object with HEOMirror attached will not be displayed in another HEOMirror.?
 
-したがって、合わせ鏡をした場合、それぞれの鏡像は鏡に映りこまず、鏡の奥にある景色が映りこみます。
+Therefore, if two or more mirrors are faced, each image will not be displayed on the other, and will show the scenery behind the mirror.
 
-例：45°ずつ回転させ8枚のHEOMirrorをアタッチしたQuadを作成した場合
+Example: Placing 8 Quads with HEOMirror, each rotated 45°
 
 ![HEOMirror_12](img/HEOMirror_12.jpg)
 
 ![HEOMirror_13](img/HEOMirror_13.jpg)
 
-!!! caution "Mirrorを設置した際の負荷について"
-    スマートフォンにて鏡を多重に設置する・鏡の視界内で動画の再生を始めるなどを行うと、動作が不安定になる可能性があります。
-    鏡の設置の際は負荷についてご留意ください。
+!!! caution "Performance when placing Mirrors"
+    If multiple mirrors are placed with video playing in the mirror's vicinity, it may result to poorer performance on smartphones.
+    Please consider the positions when placing mirrors.
