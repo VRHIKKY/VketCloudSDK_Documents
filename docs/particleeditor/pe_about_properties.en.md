@@ -35,7 +35,8 @@
 !!! note "パーティクルの色について"
     パーティクルの色は以下のように決定されます：<br>
     Color + Emission Color (加算) * Start Color (乗算)<br>
-    なお、[Color over Lifetime](#color-over-lifetime)が有効の際は本設定に従わないためご注意ください。
+    なお、[Color over Lifetime](#color-over-lifetime)が有効の際は本設定に従わないためご注意ください。<br>
+    また、Start Colorについては次回SDKアップデートにて廃止される予定です。
 
 !!! note "Constant / Rand Twoについて"
     数値設定におけるConstant / Rand Twoは以下のように定義されます。<br>
@@ -67,6 +68,10 @@
 | Arc | 360.00 | 放出の円弧の角度を設定します |
 | Arc Mode | Random | 円弧の周りでのパーティクルの生成方法を設定します。<br> Random:円弧の周囲にランダム生成 Loop:円弧の周囲にて順番に生成 |
 | Arc Speed | 1.00 | 放出位置が円弧の周囲を移動する速度を設定します |
+
+!!! note "Shapeの設定項目について"
+    Ver9.11バージョンのエディターではCone以外のShapeにした際に一部の設定が切り替わらない現象が確認されています。
+    恐れ入りますが、修正までお待ちいただければと思います。
 
 ## Velocity over Lifetime
 
@@ -108,7 +113,7 @@
 | Enable | false | 本機能のオンオフ |
 | Separate Axis | false | 設定をする際に軸をX,Y,Zに分けます |
 | Size | 0.00 | 時間経過による大きさの変化値を設定します |
-| Curve Mode | Constant | 大きさの変化の仕方を設定します。<br> Constant: 固定値分サイズが変化 Two Constants: 最小値-->最大値までイージングに沿って変化 |
+| Curve Mode | Constant | 大きさの変化の仕方を設定します。<br> Constant: 設定した値の分だけサイズが変化 Two Constants:  Min値 (パーティクル出現時) --> Max値 (パーティクル消失時)までイージングに沿って変化 |
 | Easing Type | Linear | イージングの種類を設定します。|
 
 ## Color over Lifetime
@@ -120,8 +125,11 @@
 | Enable | false | 本機能のオンオフ |
 | Gradient | Blend | 時間経過によって設定した色に混ざるかに否かを設定します。 <br> Blend: Color0,1が混ざったあとColor1に変化する<br> Fixed:Color0,1が混ざらずにColor1に変化する |
 | Num Colors | 2 | 経過する色の数を設定します |
-| Color0 | 0.00 , RGBA(255,255,255,255) | パーティクル生成後に何秒に色が変化するか設定します |
+| Color0 | 0.00 , RGBA(255,255,255,255) | パーティクル生成後に何秒目に指定の色に変化するか設定します |
 | Color1 | 1.00 , RGBA(255,255,255,255) | 同上 |
+| Num Alpha | 2 |  経過するα値の数を設定します |
+| Alpha0 | 0.00 , 0.00 | パーティクル生成後に何秒目に指定の割合のアルファに変化するか設定します |
+| Alpha1 | 1.00 , 1.00 | 同上 |
 
 ## Rotation over Lifetime
 
@@ -130,7 +138,7 @@
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Enable | false | 本機能のオンオフ |
-| Curve Mode | Constant | 回転値の変化の仕方を設定します。<br> Constant: 固定値分サイズが変化 Two Constants: 最小値-->最大値までイージングに沿って変化 |
+| Curve Mode | Constant | 回転値の変化の仕方を設定します。<br> Constant: 設定した値の分だけ回転値が変化 Two Constants:  Min値 (パーティクル出現時) --> Max値 (パーティクル消失時)までイージングに沿って変化 |
 | Velocity | 0,0,0 | 時間経過による回転値の変化を設定します。 |
 | Easing Type | Linear | イージングの種類を設定します。|
 
@@ -161,6 +169,14 @@
 | Type | Birth | サブパーティクル生成の判定を主パーティクルのBirth(生成時)またはDeath(消滅時)に設定します |
 | Probability | 0.00 | サブパーティクル生成の判定の発生割合を設定します |
 
+!!! note "Probabilityが1以上設定できてしまう不具合"
+    現バージョンのエディターではProbability値が1.00以上に設定できる不具合が確認されています。<br>
+    次回最新版にて修正される予定です。
+
+!!! caution "動作安定性について"
+    本機能は現バージョンのエディターでは動作が不安定なものとなっております。<br>
+    複数パーティクルを使用したい場合は別途作成することをおすすめいたします。
+
 ## Texture Sheet Animation
 
 ![pe_property_12](pe_image/pe_property_12.jpg)
@@ -178,7 +194,8 @@
 | Enable | false | トレイル機能(トレイルエフェクト)のオンオフを設定します |
 
 !!! bug "本機能について"
-    本機能はVer9.11現在設定できない状態が確認されております。
+    本機能はVer9.11現在設定できない状態が確認されております。<br>
+    代替として、Render Setting / Render ModeをStretchedに切り替えると疑似的な実装が可能です。
 
 ## Render Setting
 
