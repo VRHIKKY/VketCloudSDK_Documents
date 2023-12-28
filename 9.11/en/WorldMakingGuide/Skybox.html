@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#skybox" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -522,6 +527,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="Skybox.html" class="md-nav__link md-nav__link--active">
         Skybox
@@ -794,6 +801,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -896,6 +905,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6_6">
@@ -917,7 +928,7 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_particleeditor.html" class="md-nav__link">
-        ParticleEditor Overview
+        Particle Editor - Overview
       </a>
     </li>
   
@@ -938,8 +949,36 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_about_properties.html" class="md-nav__link">
+        Particle Editor - Properties
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
+        Export Compressed Texture
+      </a>
     </li>
   
 
@@ -1189,6 +1228,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1365,6 +1406,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOMeshCollider.html" class="md-nav__link">
         HEOMeshCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOMirror.html" class="md-nav__link">
+        HEOMirror
       </a>
     </li>
   
@@ -4977,24 +5032,42 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Skybox</h1>
-                
-                <p>VketCloudSDK cannot output Unity SkyBox. Therefore, instead, we need to place a Box or Sphere object whose face is reversed and output it as a pseudo skybox.</p>
+                <h1 id="skybox">Skybox</h1>
+<div class="admonition note">
+<p class="admonition-title">about HEOBackgroundTexture</p>
+<p>As an alternative method to setup background, the <a href="../HEOComponents/HEOBackgroundTexture.html">HEOBackgroundTexture</a> component can be used to designate background textures.</p>
+</div>
+<p>VketCloudSDK cannot output Unity SkyBox. Therefore, instead, we need to place a Box or Sphere object whose face is reversed and output it as a pseudo skybox.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you select "Unlit/Texture" for the material shader, the object will be displayed as is, without shadows.</p>
-</div>
-<div class="admonition note tip">
-<p class="admonition-title">Note</p>
-<p>You can obtain and use the Skybox sample by installing the tutorial scene (Basic) from the control panel (VketCloudSDK menu &gt; Control Panel).</p>
-</div>
 <p><img alt="Skybox" src="img/Skybox.jpg" /></p>
+<p>You can obtain and use the Skybox sample by installing the tutorial scene (Basic) from the control panel (VketCloudSDK menu &gt; Control Panel).</p>
+<p><img alt="ControlPanel" src="img/ControlPanel.jpg" /></p>
+</div>
                 
               
               

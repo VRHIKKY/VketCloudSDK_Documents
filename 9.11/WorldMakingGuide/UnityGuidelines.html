@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#specification-limit-of-vket-cloud" class="md-skip">
+        <a href="#specification-limits-of-vket-cloud" class="md-skip">
           Skip to content
         </a>
       
@@ -901,6 +901,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -1003,6 +1005,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6_6">
@@ -1024,7 +1028,7 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_particleeditor.html" class="md-nav__link">
-        ParticleEditor Overview
+        Particle Editor - Overview
       </a>
     </li>
   
@@ -1045,8 +1049,36 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_about_properties.html" class="md-nav__link">
+        Particle Editor - Properties
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
+        Export Compressed Texture
+      </a>
     </li>
   
 
@@ -1296,6 +1328,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1472,6 +1506,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOMeshCollider.html" class="md-nav__link">
         HEOMeshCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOMirror.html" class="md-nav__link">
+        HEOMirror
       </a>
     </li>
   
@@ -5192,18 +5240,24 @@
               
                 
                 
-                <h1 id="specification-limit-of-vket-cloud">Specification Limit of Vket Cloud</h1>
+                <h1 id="specification-limits-of-vket-cloud">Specification Limits of Vket Cloud</h1>
 <p>All world models and assets used in Vket Cloud are set up in Unity. Since not all Unity functions can be used in Vket Cloud, however, adjustments must be made according to the specification limits as below.</p>
 <h2 id="polygon">Polygon</h2>
 <p>Please keep the total number of models in the world to 800,000 triangles or less.</p>
 <h2 id="texture">Texture</h2>
+<p>On Vket Cloud, textures fitting the format below can be used:</p>
 <ul>
-<li>PNG with size less than 2048x2048</li>
+<li>png format with size less than 2048x2048 *jpg, psd cannot be used</li>
 <li>Power-of-two sized squares (2048x2048, 1024x1024, 512x512, etc.) or power-of-two sized rectangles</li>
 <li>Bit depth is 24bit or 32bit</li>
 <li>80MB or less in png</li>
 <li>Make the extension lowercase (.png). If it is ".PNG", an error may occur when uploading to the server.</li>
 </ul>
+<p>As a conversion tool, the SDK has <a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a> for use.</p>
+<div class="admonition caution">
+<p class="admonition-title">Using Sprite Renderer</p>
+<p>On Vket Cloud, the Unity <a href="https://docs.unity3d.com/2019.4/Manual/class-SpriteRenderer.html" target="_blank">Sprite Renderer</a> cannot be used.</p>
+</div>
 <h2 id="texture-compression">Texture Compression</h2>
 <p>VketCloud compresses textures as one of the ways to reduce weight. See <a href="../heoexporter/he_TextureCompression.html">here</a> for more information.</p>
 <h2 id="reflection-probes">Reflection probes</h2>
@@ -5212,16 +5266,19 @@
 <p>Note that the Intensity value set on the <code>Directional Light</code>(as image below) will not be used within the world.<br>
 To express light intensity, multiply the <code>Directional Light</code>'s color by using the worldsetting's <code>LightColor</code> value in <a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>. </p>
 <p><img alt="Rendering_2" src="../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg" /></p>
+<div class="admonition caution">
+<p class="admonition-title">Using Realtime Lights</p>
+<p>Vket Cloud disallows use of Realtime Mode lights. Please switch to Mixed or Baked.</p>
+</div>
 <h2 id="lightmap">Lightmap</h2>
 <ul>
-<li>Switch to Android (dLDR format) or PC (RGBM format) platform</li>
-<li>Make sure LightMap Encoding in Other Settings is set to "Low Quality" for Android platform and "Normal Quality" for PC platform.<ul>
-<li>Note that if the LightMap Encoding is wrong, the lightmap may be overexposed.</li>
+<li>Make sure LightMap Encoding in Other Settings is set to "Normal Quality" for PC platform.
+ *If the LightMap Encoding is wrong, the lightmap may be overexposed.</li>
 <li>Real-time global illumination is not supported, so please use lightmaps. Most discrepancies between what looks in Unity window and Vket Cloud are caused by Global Illumination settings.</li>
-</ul>
-</li>
 <li>Check if Color Space in Other Settings is set to "Linear"</li>
 </ul>
+<p>The VketCloudSDK recommends to set the environment settings as above.<br>
+For details, refer to <a href="../AboutVketCloudSDK/OperatingEnvironment.html">Operating Environment</a>.</p>
 <p><img alt="UnityGuidelines_1" src="img/UnityGuidelines_1.jpg" /></p>
 <ul>
 <li>Max Lightmap Size should be 2048 or less</li>
@@ -5235,9 +5292,9 @@ To express light intensity, multiply the <code>Directional Light</code>'s color 
 </ul>
 <h2 id="shaders">Shaders</h2>
 <ul>
-<li>Standard </li>
+<li>Standard</li>
 <li>Autodesk Interactive</li>
-<li>MToon　</li>
+<li>MToon</li>
 <li>Unlit</li>
 <li>UnlitWF (supports double-sided display only)</li>
 <li>VketChanDoubleSided Shaders contained in the VketCloudSDK</li>
@@ -5256,8 +5313,9 @@ To express light intensity, multiply the <code>Directional Light</code>'s color 
 </ul>
 <h2 id="skybox">Skybox</h2>
 <ul>
-<li>Skybox is not supported. Please avoid the sky or use celestial sphere object instead.</li>
+<li>Skybox is not supported. Please avoid using skyboxes, or setup a sphere object instead.</li>
 </ul>
+<p>In order to create the background, the SDK recommends creating a <a href="Skybox.html">Sphere object</a>, or using the <a href="../HEOComponents/HEOBackgroundTexture.html">HEOBackgroundTexture</a> component.</p>
 <h2 id="scale">Scale</h2>
 <ul>
 <li>If an object is set to a negative scale, its mesh's normal will turn to the inside. Unlike Unity's scene view, the mesh will be drawed inside the object in the world.<br></li>

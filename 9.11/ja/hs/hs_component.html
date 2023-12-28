@@ -789,6 +789,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -891,6 +893,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6_6">
@@ -912,7 +916,7 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_particleeditor.html" class="md-nav__link">
-        パーティクルエディター概要
+        パーティクルエディター：概要
       </a>
     </li>
   
@@ -933,8 +937,36 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_about_properties.html" class="md-nav__link">
+        パーティクルエディター：プロパティ一覧
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
+        Export Compressed Texture
+      </a>
     </li>
   
 
@@ -1184,6 +1216,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1360,6 +1394,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOMeshCollider.html" class="md-nav__link">
         HEOMeshCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOMirror.html" class="md-nav__link">
+        HEOMirror
       </a>
     </li>
   
@@ -5209,7 +5257,7 @@
 
 <h2 id="-_1">コールバック - カスタムステート/カスタムデータ</h2>
 <p>ルームの管理者から送信された任意のデータを受信するコールバックメソッドです。</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">component</span><span class="w"> </span><span class="nx">CustumDataReceivere</span>
+<div class="codehilite"><pre><span></span><code><span class="nx">component</span><span class="w"> </span><span class="nx">CustomDataReceiver</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">public</span><span class="w"> </span><span class="nx">void</span><span class="w"> </span><span class="nx">OnReceiveCustomState</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
 <span class="w">    </span><span class="p">{</span>
@@ -5228,7 +5276,7 @@
 {
 <span class="w">    </span><span class="nv">public</span><span class="w"> </span><span class="nv">void</span><span class="w"> </span><span class="nv">OnClickedButton</span><span class="ss">(</span><span class="nv">string</span><span class="w"> </span><span class="nv">layerName</span>,<span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="nv">buttonname</span><span class="ss">)</span>
 <span class="w">    </span>{
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">layerName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;MenuUI&quot;</span><span class="ss">)</span><span class="w"> </span>{}
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">layerName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;MenuUI&quot;</span><span class="ss">)</span><span class="w"> </span>{
 <span class="w">            </span><span class="nv">hsSystemOutput</span><span class="ss">(</span><span class="s2">&quot;Button Clicked! :&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">buttonname</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;\n&quot;</span><span class="ss">)</span><span class="c1">;</span>
 <span class="w">        </span>}
 <span class="w">    </span>}

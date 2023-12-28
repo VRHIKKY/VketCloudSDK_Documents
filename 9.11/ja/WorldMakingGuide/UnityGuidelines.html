@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#vketcloud" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -513,6 +513,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           VketCloudの仕様制限
@@ -527,6 +529,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -897,6 +901,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -999,6 +1005,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6_6">
@@ -1020,7 +1028,7 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_particleeditor.html" class="md-nav__link">
-        パーティクルエディター概要
+        パーティクルエディター：概要
       </a>
     </li>
   
@@ -1041,8 +1049,36 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particleeditor/pe_about_properties.html" class="md-nav__link">
+        パーティクルエディター：プロパティ一覧
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
+        Export Compressed Texture
+      </a>
     </li>
   
 
@@ -1292,6 +1328,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1468,6 +1506,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOMeshCollider.html" class="md-nav__link">
         HEOMeshCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOMirror.html" class="md-nav__link">
+        HEOMirror
       </a>
     </li>
   
@@ -5089,6 +5141,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5186,37 +5240,46 @@
               
                 
                 
-                  <h1>VketCloudの仕様制限</h1>
-                
-                <p>VketCloudで使用するワールドモデル等はUnityでセットアップします。ただし、Unityの機能がすべて使用できるわけではないため、後述する仕様に合わせて調整をおこなう必要があります。</p>
+                <h1 id="vketcloud">VketCloudの仕様制限</h1>
+<p>VketCloudで使用するワールドモデル等はUnityでセットアップします。ただし、Unityの機能がすべて使用できるわけではないため、後述する仕様に合わせて調整をおこなう必要があります。</p>
 <h2 id="_1">ポリゴン</h2>
 <p>ワールドに配置するモデルは、合計８０万トライアングル以下にしてください。</p>
 <h2 id="_2">テクスチャ</h2>
+<p>Vket Cloudでは以下のフォーマットのテクスチャ画像が使用できます。</p>
 <ul>
-<li>大きさが2048x2048以下のPNG</li>
+<li>大きさが2048x2048以下のpng　*jpg, psdなどは使えません</li>
 <li>２の累乗サイズの正方形（2048x2048,1024x1024,512x512等）または2の累乗サイズの長方形</li>
 <li>ビット深度は24bitまたは32bit</li>
 <li>png換算で80MB以下</li>
 <li>拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップロードでエラーが出ることがあります。</li>
 </ul>
+<p>また、SDKでは画像の変換ツールとして<a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>を用意しています。</p>
+<div class="admonition caution">
+<p class="admonition-title">Sprite Rendererについて</p>
+<p>Vket CloudではUnityの<a href="https://docs.unity3d.com/ja/2019.4/Manual/class-SpriteRenderer.html" target="_blank">Sprite Renderer</a>に対応しておりません。</p>
+</div>
 <h2 id="_3">テクスチャ圧縮</h2>
-<p>VketCloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは <a href="../heoexporter/he_TextureCompression.html">こちら</a>をご覧ください。</p>
+<p>Vket Cloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは <a href="../heoexporter/he_TextureCompression.html">こちら</a>をご覧ください。</p>
 <h2 id="_4">リフレクションプローブ</h2>
-<p>VketCloudではUnityのリフレクションプローブを使用することができます。詳しくは<a href="ReflectionProbe.html">こちら</a>をご覧ください。</p>
+<p>Vket CloudではUnityのリフレクションプローブを使用することができます。詳しくは<a href="ReflectionProbe.html">こちら</a>をご覧ください。</p>
 <h2 id="directional-light">Directional Light</h2>
 <p><code>Directional Light</code>に設定されているIntensityの値（下記画像参照）はワールドに反映されないためご注意ください。<br>
 ライトの強弱は<a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>内の<code>LightColor</code>の色を<code>Directional Light</code>側の色と重ね合わせることで表現が可能です。</p>
 <p><img alt="Rendering_2" src="../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg" /></p>
+<div class="admonition caution">
+<p class="admonition-title">Realtime Lightについて</p>
+<p>Vket CloudではRealtime Modeのライトに対応しておりません。必ずMixedまたはBakedに変更してご使用ください。</p>
+</div>
 <h2 id="_5">ライトマップ</h2>
+<p>Vket Cloudではライトマップを使用する際は以下のフォーマットに従う必要があります。</p>
 <ul>
-<li>Android(dLDRフォーマット) または PC(RGBMフォーマット)  プラットフォームに切り替える</li>
-<li>Other SettingsのLightMap EncodingがAndroidプラットフォームの場合『Low Quality』、PCプラットフォームの場合『Normal Quality』になっているか確認する<ul>
-<li>LightMap  Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください</li>
-<li>リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)</li>
-</ul>
-</li>
+<li>Other SettingsのLightMap Encodingが『Normal Quality』になっているか確認する
+ *LightMap Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください</li>
+<li>リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVket Cloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)</li>
 <li>Other Settings の Color Spaceが『Linear』になっているか確認する</li>
 </ul>
+<p>VketCloudSDKでは、上記の環境設定を推奨設定としております。<br>
+詳しい設定方法は<a href="../AboutVketCloudSDK/OperatingEnvironment.html">VketCloudSDKの動作環境</a>を参照してください。</p>
 <p><img alt="UnityGuidelines_1" src="img/UnityGuidelines_1.jpg" /></p>
 <ul>
 <li>Max Lightmap Sizeは2048以下にする</li>
@@ -5230,9 +5293,9 @@
 </ul>
 <h2 id="_6">シェーダー</h2>
 <ul>
-<li>Standard </li>
+<li>Standard</li>
 <li>Autodesk Interactive</li>
-<li>MToon　</li>
+<li>MToon</li>
 <li>Unlit</li>
 <li>UnlitWF（両面表示等のみ対応）</li>
 <li>VketCloudSDKに含まれるVketChanDoubleSided系のシェーダー</li>
@@ -5253,11 +5316,12 @@
 <ul>
 <li>スカイボックスは非対応です。使わない、もしくは天球などでごまかす必要があります。</li>
 </ul>
+<p>背景の実装方法としては<a href="Skybox.html">天球オブジェクト</a>を用意する方法と、<a href="../HEOComponents/HEOBackgroundTexture.html">HEOBackgroundTexture</a>コンポーネントを使用する方法があります。</p>
 <h2 id="_9">スケール</h2>
 <ul>
 <li>マイナススケールにすると、メッシュが裏返しになり法線が反転します。Unity上との見た目と異なり、ワールドでは内側にメッシュが描画されるためご注意ください。<br></li>
 <li>なお、マイナススケールのオブジェクトがある場合は<a href="../debugconsole/debugconsole.html">デバッグコンソール</a>にて警告が生成されます。<br></li>
-<li>意図的でないマイナススケールのオブジェクトについては設定の修正をおすすめします。</li>
+<li>意図的でないマイナススケールのオブジェクトについては設定の修正をおすすめします。-</li>
 </ul>
 <h2 id="_10">オブジェクト</h2>
 <ul>
