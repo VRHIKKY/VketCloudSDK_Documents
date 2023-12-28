@@ -243,7 +243,6 @@ nav:
       - Enter/LeaveVoiceGroup: Actions/System/EnterLeaveVoiceGroup.md
       - WhiteOut/In: Actions/System/WhiteOutIn.md
       - FadeOut/In: Actions/System/FadeOutIn.md
-      #- OpenComicViewer: Actions/System/OpenComicViewer.md #現バージョンでは使用できないため除外
     - Node:
       - Show/HideNode: Actions/Node/ShowHideNode.md
       - Enable/DisableClickableNode: Actions/Node/EnableDisableClickableNode.md
