@@ -5051,8 +5051,10 @@
     誤ってCubeオブジェクトに対してAnimationを追記しないよう注意してください。</p>
 <p><img alt="PropAnimation_2" src="img/PropAnimation_2.jpg" /></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>類似コンポーネントにAnimatorがありますが、こちらは使用しないので注意してください。</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code>類似コンポーネントにAnimatorがありますが、こちらは使用しないので注意してください。
+</code></pre></div>
+
 </div>
 <p>3. Window &gt; Animation &gt; AnimationまたはCtrl+6でアニメーションタブを出します。</p>
 <p><img alt="PropAnimation_3" src="img/PropAnimation_3.jpg" /></p>
@@ -5076,9 +5078,11 @@ Inspectorビューが下記画像のようになっていたらOKです。</p>
 <p>ここでは、CubeRotation - Transformから、RotationとScaleを選択します。＋ボタンを押すことで、項目を追加することができます。それぞれ追加してください。</p>
 <p><img alt="PropAnimation_11" src="img/PropAnimation_11.jpg" /></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>手順②でAdd ComponentでAnimationを追加する際、誤って子オブジェクトのCubeオブジェクトに対してAnimationを追加してしまっていないか確認してください。<br>
-そのまま作業を進めてしまうと<code>KeyNotFoundException: The given key was not present in the dictionary.</code>が発生する原因となります。</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code>手順②でAdd ComponentでAnimationを追加する際、誤って子オブジェクトのCubeオブジェクトに対してAnimationを追加してしまっていないか確認してください。&lt;br&gt;
+そのまま作業を進めてしまうと`KeyNotFoundException: The given key was not present in the dictionary.`が発生する原因となります。
+</code></pre></div>
+
 </div>
 <p>詳しいアニメーションの作り方はここでは説明しませんが、
 - 始点と終点はすべての項目でキーフレームが入力されている必要がある
@@ -5092,8 +5096,10 @@ Inspectorビューが下記画像のようになっていたらOKです。</p>
 <p>保存後、Unityのコンソール(標準だと左下)に「Exported」が出たら書き出し完了です。</p>
 <p><img alt="PropAnimation_14" src="img/PropAnimation_14.jpg" /></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>エラーが出てしまった場合は <a href="">オブジェクトを動かす - できないときは</a> を参照するようにしてください。</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code>エラーが出てしまった場合は [オブジェクトを動かす - できないときは]() を参照するようにしてください。
+</code></pre></div>
+
 </div>
 <h3 id="heoheliodor-export-object">.heoファイル(Heliodor Export Objectファイル)を書き出す</h3>
 <p><img alt="PropAnimation_15" src="img/PropAnimation_15.jpg" /></p>
@@ -5118,22 +5124,26 @@ Inspectorビューが下記画像のようになっていたらOKです。</p>
 この状態でビルドすることで、アニメーション付きのオブジェクトをシーン上に出すことができます。</p>
 <p><img alt="PropAnimation_Result_1" src="img/PropAnimation_Result_1.gif" /></p>
 <div class="admonition note caution">
-<p class="admonition-title">Note<p>.heo書き出しの注意点：<br>
-- 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、<a href="../HEOComponents/HEOObject.html">HEOObject</a>にてシーン上に配置した際に、<a href="../HEOComponents/HEOObject.html">HEOObject</a>のPosition + 書き出し時のPositionになります。<br>
-- 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
-- .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
-- Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
-  自動再生したくない場合は、Motionは空欄にしてください<br></p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code><span class="p">.</span><span class="n">heo書き出しの注意点</span><span class="err">：</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">-</span><span class="w"> </span><span class="n">元オブジェクトのPositionを</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="n">にせずに書き出しした場合</span><span class="err">、</span><span class="o">[</span><span class="n">HEOObject</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">HEOComponents</span><span class="o">/</span><span class="n">HEOObject</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="n">にてシーン上に配置した際に</span><span class="err">、</span><span class="o">[</span><span class="n">HEOObject</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">HEOComponents</span><span class="o">/</span><span class="n">HEOObject</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="n">のPosition</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">書き出し時のPositionになります</span><span class="err">。</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">-</span><span class="w"> </span><span class="n">元のオブジェクトが当たり判定を持っていた場合</span><span class="err">、</span><span class="n">書き出し後のオブジェクトも当たり判定を持ちます</span><span class="err">。</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">-</span><span class="w"> </span><span class="p">.</span><span class="n">hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません</span><span class="err">。</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">-</span><span class="w"> </span><span class="n">Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます</span><span class="err">。</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="w">  </span><span class="n">自動再生したくない場合は</span><span class="err">、</span><span class="n">Motionは空欄にしてください</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+</code></pre></div>
+
 </div>
 <h2 id="heoobject_1">HEOObjectに付与したアニメーションの制御</h2>
 <h3 id="action">Actionを使用した制御</h3>
 <p><a href="../Actions/Item/PlayStopItem.html">PlayItem</a>で<a href="../HEOComponents/HEOObject.html">HEOObject</a>に付与したアニメーションの再生が可能です。<br>
 Indexは<a href="../Actions/Item/PlayStopItem.html">PlayItem</a>にObject TypeがMotionのオブジェクトを入れた際に出現します。</p>
 <div class="admonition note">
-<p class="admonition-title">Note<p><a href="../Actions/Item/PlayStopItem.html">PlayItem</a>：アイテムを再生する。Indexは再生対象となるMotion番号です。<br>
-PlayItemはMotionの入ったHEOオブジェクトのほか、AudioやParticleに対しても有効です。</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code><span class="o">[</span><span class="n">PlayItem</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">Actions</span><span class="o">/</span><span class="n">Item</span><span class="o">/</span><span class="n">PlayStopItem</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="err">：</span><span class="n">アイテムを再生する</span><span class="err">。</span><span class="n">Indexは再生対象となるMotion番号です</span><span class="err">。</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="n">PlayItemはMotionの入ったHEOオブジェクトのほか</span><span class="err">、</span><span class="n">AudioやParticleに対しても有効です</span><span class="err">。</span>
+</code></pre></div>
+
 </div>
 <p>アニメーションするCubeのアニメーションを2番目に設定し、Loopしないようにし、BeginActions上部の”Add”をクリックしてMotion欄を追加します。<br>
 1つ目のMotionでは.hemに指定されているモーションを削除し、2つ目のMotionに.hemファイルを指定します。</p>
@@ -5148,11 +5158,13 @@ PlayItemはMotionの入ったHEOオブジェクトのほか、AudioやParticle�
 <p>ビルドすると、クリックした時のみCubeが回転（Motionが再生）するようになります。</p>
 <p><img alt="PropAnimation_Result_2" src="img/PropAnimation_Result_2.gif" /></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p><a href="../Actions/Item/PlayStopItem.html">StopItem</a>について：<br>
-<a href="../Actions/Item/PlayStopItem.html">PlayItem</a>の対になるアクションに<a href="../Actions/Item/PlayStopItem.html">StopItem</a>があります。<br>
-一見、再生中のアニメーションを停止しそうなアクションですが、StopItemの効果はbeginactionの停止であり、再生中のアニメーションはBeginActionsに該当しないので止まりません。<br>
-StopItemはパーティクルやサウンドを止めるのに使うことができます。</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code><span class="o">[</span><span class="n">StopItem</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">Actions</span><span class="o">/</span><span class="n">Item</span><span class="o">/</span><span class="n">PlayStopItem</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="n">について</span><span class="err">：</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">[</span><span class="n">PlayItem</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">Actions</span><span class="o">/</span><span class="n">Item</span><span class="o">/</span><span class="n">PlayStopItem</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="n">の対になるアクションに</span><span class="o">[</span><span class="n">StopItem</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">Actions</span><span class="o">/</span><span class="n">Item</span><span class="o">/</span><span class="n">PlayStopItem</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="n">があります</span><span class="err">。</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="n">一見</span><span class="err">、</span><span class="n">再生中のアニメーションを停止しそうなアクションですが</span><span class="err">、</span><span class="n">StopItemの効果はbeginactionの停止であり</span><span class="err">、</span><span class="n">再生中のアニメーションはBeginActionsに該当しないので止まりません</span><span class="err">。</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="n">StopItemはパーティクルやサウンドを止めるのに使うことができます</span><span class="err">。</span>
+</code></pre></div>
+
 </div>
 <h3 id="heliscript">HeliScriptを使用した制御</h3>
 <p>HeliScriptを使用して、アニメーションの制御を行うことができます。<br>
