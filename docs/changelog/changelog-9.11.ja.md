@@ -34,6 +34,9 @@
 - トラブルシューティング
   - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/troubleshooting/BuildError.html)
     - 一部のMac環境にて発生する可能性のあるビルドエラーについて記載
+- ワールドの軽量化方法
+  - [ワールドの軽量化方法：概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/WorldOptimization.html)
+    - 動的ローディングについての概要を追加
 - HEOコンポーネント
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOField.html)
     - HEOFieldの使い方への誘導を追加

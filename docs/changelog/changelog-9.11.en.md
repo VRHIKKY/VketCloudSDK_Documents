@@ -36,7 +36,10 @@
 - Troubleshooting
   - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/troubleshooting/BuildError.html)
     - Added build error issue on first Build and Run on certain Mac environments
-- HEOコンポーネント
+- World Optimization
+  - [World Optimization - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/WorldOptimization.html)
+    - Added description for dynamic loading
+- HEOComponents
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOField.html)
     - Added information of Tips on using HEOField page
 
