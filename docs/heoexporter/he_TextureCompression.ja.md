@@ -52,8 +52,8 @@ pause
 
 ## HEOファイル上書き
 
-VketCloudSDKに含まれる
-`Packages/com.hikky.vketcloudsdk/PackageResources/tools/HEOTexComp_Python/HEOTexComp.py`を使用します。
+VketCloudSDKがインストールされているプロジェクトフォルダにある、
+`\[プロジェクトフォルダ]\Library\PackageCache\com.hikky.vketcloudsdk@[任意のSDKVersion]\PackageResources\tools\HEOTexComp`を使用します。
 
 圧縮したいテクスチャを持つHEOと同じディレクトリに`HEOTexComp.py`をコピーするか、`HEOTexComp.py`が入っているディレクトリに直接入った上でコマンドプロンプトを開き、
 

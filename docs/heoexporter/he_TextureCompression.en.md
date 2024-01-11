@@ -58,7 +58,7 @@ If you're using Reflection Probes, additional folders named "tex_reflection_cube
 
 ## Overwriting the HEO File
 
-To overwrite the HEO file by the compressed texture, use the `Packages/com.hikky.vketcloudsdk/PackageResources/tools/HEOTexComp_Python/HEOTexComp.py` contained in the VketCloudSDK.
+To overwrite the HEO file by the compressed texture, use the `\[Project Folder]\Library\PackageCache\com.hikky.vketcloudsdk@[version_of_sdk]\PackageResources\tools\HEOTexComp` contained in the VketCloudSDK's project.
 
 After copying the `HEOTextComp.py` file to the same directory of the HEO file, or jumping to the directory having the original `HEOTexComp.py`, open the command prompt to execute the following:
 
