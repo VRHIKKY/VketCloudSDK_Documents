@@ -208,7 +208,7 @@ nav:
 - World Optimization: 
   - World Optimization - Overview : WorldMakingGuide/WorldOptimization.md
   - Occlusion Culling : WorldMakingGuide/OcclusionCulling.md
-  - Texture Compression : heoexporter/he_TextureCompression.md
+  - Texture Compression : WorldOptimization/TextureCompression.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
     - HEOActivity: HEOComponents/HEOActivity.md

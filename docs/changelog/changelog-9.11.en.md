@@ -41,3 +41,6 @@
     - Added information of Tips on using HEOField page
 
 ## Deleted Pages
+
+- World Optimization
+  - Texture Compression (Texture Converter)
