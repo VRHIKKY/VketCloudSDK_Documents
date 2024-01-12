@@ -32,7 +32,45 @@ component test
 }
 ```
 
-## callback - click node
+As the Update() method shown above, if the method having a preset name and arguments is defined within component, it will act as a callback when certain events are triggered.
+
+## Callback - Load complete
+
+After the Vket Cloud engine is booted, and completed resource loading and  initialization, OnLoaded() will be called just once.
+
+```
+public void OnLoaded()
+```
+
+## Callback - Activation / Deactivation of browser tab
+
+This callback can be triggered on the Activation / Deactivation of browser tab.
+
+If the tab becomes active, the IsActivate will be true, while on deactivation IsActivate will be false.
+
+```
+public void OnWindowActivate(bool IsActivate)
+```
+
+## Callback - Beginning of page unload
+
+This callback can be triggered on closing the browser tab, or jumping to another URL which actions will cause the current page to unload.
+
+At the moment of this event to trigger, the page resources will still be kept.
+
+```
+public void OnBeforeUnload()
+```
+
+## Callback - Page unload
+
+This callback will be triggered before complete unload of the current page.
+
+```
+public void OnUnload()
+```
+
+## Callback - Click node
 
 If you define the OnClickNode method as follows, it will be called when the item's node is clicked.
 
@@ -43,6 +81,14 @@ component Test
      {
      }
 }
+```
+
+## Callback - Click empty space
+
+This callback will be triggered on clicking an empty space.
+
+```
+public void OnClickEmpty()
 ```
 
 ## Callback - AreaCollider
@@ -71,7 +117,17 @@ component AreaCollider
 }
 ```
 
-## Callbacks - Custom State/Custom Data
+## Callback - Screen  Size Change
+
+This callback will be triggered when the screen size is changed.
+
+The width and height arguments contains the screen's width and height after resize.
+
+```
+public void OnResize(int width, int height)
+```
+
+## Callback - Custom State/Custom Data
 
 A callback method that receives any data sent by the room's manager.
 
@@ -147,19 +203,61 @@ m_PhysicsIDCube;
 
 ## Callback - In-field collider detection
 
+Called when the collider with HEOCollider specified "InView" enters the field of view or goes out of the field of view.
+
+Components must be set to the same item.
+
 ```
 public void OnEnterViewCollider(string NodeName)
 public void OnLeaveViewCollider(string NodeName)
 ```
 
-Called when the collider with HEOCollider specified "InView" enters the field of view or goes out of the field of view.
-
-Components must be set to the same item.
-
 ## Callback - Text chat
+
+Called when user sent message to the text chat.
 
 ```
 public void OnReceiveTextChat(string ID, string PlayerName, string Text)
 ```
 
-Called when user sent message to the text chat.
+## Callback - Player Avatar Click
+
+This callback is triggered when other player's avatars are clicked.
+
+```
+public void OnClickedAvatar(string PlayerID)
+```
+
+## Callback - Video
+
+This callback is triggered on the beginning of playing a video.
+
+```
+public void OnPlayVideo()
+```
+
+This callback is triggered on pausing a video.
+
+```
+public void OnPauseVideo()
+```
+
+This callback is triggered on resuming a paused video.
+
+```
+public void OnResumeVideo()
+```
+
+This callback is triggered on stopping a video.
+
+```
+public void OnStopVideo()
+```
+
+## Callback - Property Change
+
+This callback is triggered when the item's property has been changed. if the Value is same as before, this will not be triggered.
+
+```
+public void OnChangedProperty(string Key, string Value)
+```

@@ -39,5 +39,8 @@
 - HEOコンポーネント
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOField.html)
     - Added information of Tips on using HEOField page
+- HeliScript
+  - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/hs/hs_component.html)
+    - Added Callback functions that can be used on SDK Ver 9.11
 
 ## Deleted Pages

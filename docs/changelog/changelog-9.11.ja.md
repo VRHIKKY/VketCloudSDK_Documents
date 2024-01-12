@@ -37,5 +37,8 @@
 - HEOコンポーネント
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOField.html)
     - HEOFieldの使い方への誘導を追加
+- HeliScript
+  - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/hs/hs_component.html)
+    - Ver9.11にて使用できるコールバック関数を追記
 
 ## 削除されたページ
