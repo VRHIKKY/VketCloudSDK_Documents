@@ -98,3 +98,18 @@ VketCloudSDKでは、上記の環境設定を推奨設定としております�
 
 - シーン内に同名のオブジェクトの配置は基本的に非推奨です。名前が被るような場面の際はObject_1, Object_2...のように通し番号をふることをおすすめします。
 - HEOExportは複数選択に対応していません。<br>１つのオブジェクトとしてエクスポートするには、親オブジェクトを作成しその中に対象のオブジェクトを格納して、親オブジェクトをエクスポートしてください。
+
+## アバター
+
+Vket Cloudにてアバターを使用するには、1. [My Vketにてマイアバターを設定](../AboutVketCloudSDK/SetupAvatar.md)するか、2. ワールドの[プリセットアバター](../WorldMakingGuide/PresetAvatar.md)を利用する方法があります。
+
+それぞれの設定・利用方法は以下のページをご確認ください。
+
+1. [アバターの使用方法](../AboutVketCloudSDK/SetupAvatar.md)
+
+2. [プリセットアバターを追加する](../WorldMakingGuide/PresetAvatar.md)
+
+!!! caution "DefaultのAvatarFileが編集できる現象について"
+    特定の手順によって、デフォルトで設定されているAvatarFile(`Vketchan_v1.6_Mtoon_blendshape`)の設定が編集できる現象が確認されています。<br>
+    デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
+    この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。

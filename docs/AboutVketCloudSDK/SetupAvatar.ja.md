@@ -1,6 +1,6 @@
-
 # アバターの使用方法
-Vket Cloudでは、**①MyAvatarを使用する方法**と**②[ワールド内にプリセットアバターを追加する方法](../WorldMakingGuide/PresetAvatar.md)**の二つを提供しています。ここでは、MyAvatarを使用する方法について説明します。　
+
+Vket Cloudでは、**①MyAvatarを使用する方法**と**②[ワールド内にプリセットアバターを追加する方法](../WorldMakingGuide/PresetAvatar.md)**の二つを提供しています。ここでは、MyAvatarを使用する方法について説明します。
 
 1. My Vketのトップページ（[こちら](https://vket.com/){target=_blank}）よりログインします。
 ![SetupAvatar_1](./img/SetupAvatar_1_ja.jpg)
@@ -17,7 +17,7 @@ Vket Cloudでは、**①MyAvatarを使用する方法**と**②[ワールド内�
 
 6. 入室後、設定メニューから「マイページ」を開き、「アバター」のメニューに先ほどアップロードしたアバターが表示されます。
 ![SetupAvatar_5](./img/SetupAvatar_5_ja.jpg)
-    
+
 7. アバターを選択すると、ワールドにアバターが反映されます。
 ![SetupAvatar_6](./img/SetupAvatar_6.jpg)
 
