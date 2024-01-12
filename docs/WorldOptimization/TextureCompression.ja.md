@@ -1,0 +1,23 @@
+# テクスチャ圧縮
+
+Vket Cloudでは、ワールド内のオブジェクトやアバターに使用されているテクスチャの容量を削減することで、ワールド読み込み時にかかる処理時間を大きく改善させることができます。
+
+将来のアップデートによってサーバー側で画像の自動圧縮・フォーマットが行われる予定ですが、ワールドの実装者が画像の最適化を行うことで、より多様なPC・スマートフォンのスペック環境にて快適な動作を実現できます。
+
+## テクスチャ圧縮を行う方法
+
+![ExportCompressedTexture_1](../SDKTools/img/ExportCompressedTexture_1.jpg)
+
+VketCloudSDKでは、テクスチャ圧縮・フォーマットツールとして[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)が用意されています。
+
+本ツールはテクスチャ画像に設定されている[MaxSize](https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html){target=_blank}を基に圧縮された画像を生成するものです。
+
+このとき、png以外 / 縦横サイズが2の累乗でないテクスチャ画像はフォーマットが自動で変更され、変換前の画像がマテリアルに参照されている場合はツールを通じて新たに生成された画像と差し替えを行うこともできます。
+
+![ExportCompressedTexture_2](../SDKTools/img/ExportCompressedTexture_2.jpg)
+
+詳細な操作方法については[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)をご参照ください。
+
+また、別の方法としてはpng画像圧縮用フリーソフト(例：[PNGGauntlet](https://pnggauntlet.com/){target=_blank})を利用するか、お手元のphotoshopなど編集ソフトで解像度下げを行う方法が考えられます。
+
+お手元の環境や慣れている方法に応じて圧縮を行ってみてください。

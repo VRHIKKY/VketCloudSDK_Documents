@@ -7,6 +7,8 @@
 - SDK Tools
   - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/particleeditor/pe_about_properties.html)
   - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/SDKTools/ExportCompressedTexture.html)
+- ワールドの軽量化方法
+  - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldOptimization/TextureCompression.html)
 - HEOコンポーネント
   - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOCamera.html)
   - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOMirror.html)

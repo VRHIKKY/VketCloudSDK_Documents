@@ -7,6 +7,8 @@
 - SDK Tools
   - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/particleeditor/pe_about_properties.html) *English Version WIP
   - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/SDKTools/ExportCompressedTexture.html)
+- World Optimization
+  - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldOptimization/TextureCompression.html)
 - HEO Components
   - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOCamera.html)
   - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOMirror.html)
