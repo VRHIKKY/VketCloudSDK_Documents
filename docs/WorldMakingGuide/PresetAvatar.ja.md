@@ -11,9 +11,10 @@ VketCloudSDKでは、ワールドに入ったユーザーが手持ちのアバ�
 
 スマートフォン上でもアバターが表示できるようにテクスチャの圧縮を行います。<br>
 
-テクスチャの圧縮方法は[ワールドテクスチャの圧縮](../heoexporter/he_TextureCompression.md)と同じツールを使用して行えます。
+テクスチャの圧縮方法は[ワールドテクスチャの圧縮](../WorldOptimization/TextureCompression.md)と同じツールを使用して行えます。
 
 ## 2. AvatarFileを作成する
+
 ### 2.1 HEOWorldSettingからAvatarFileを新規作成する
 
 VketCloudSDKではAvatarFileというファイルにアバター情報を設定し、ワールドのビルド時にプリセットアバターとして反映します。
@@ -26,7 +27,7 @@ AvatarFileリスト右下の +/- を押すことで、プリセットアバタ�
 リストから削除した場合でも、元のAvatarFileのデータが残ります。
 
 !!! note
-        以下の画像のようにAvatarFileリストが表示されず、「CreatAvatarFileForOldData」ボタンが表示されている場合があります。<br>
+        以下の画像のようにAvatarFileリストが表示されず、「CreateAvatarFileForOldData」ボタンが表示されている場合があります。<br>
         これは、古いSDKのアバターデータ情報が残っている時に見られます。<br>
         ボタンを押すことで、元々あったアバター情報がAvatarFileリスト形式に書き出されます。
 

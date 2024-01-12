@@ -61,7 +61,7 @@ SDK9.0では「Lens」という項目が追加され、カメラフィルター�
 「OC」表示がされている間のみ、オクルージョンカリング機能が有効になります。
 
 オクルージョンカリング機能を使うためには別途準備が必要です。<br>
-詳しくは[こちら](../WorldMakingGuide/OcclusionCulling.md)をご確認ください。
+詳しくは[こちら](../WorldOptimization/OcclusionCulling.md)をご確認ください。
 
 ## F5：Script情報表示
 

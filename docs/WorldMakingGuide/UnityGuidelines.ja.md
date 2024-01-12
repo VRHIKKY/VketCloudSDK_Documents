@@ -23,7 +23,7 @@ Vket Cloudでは以下のフォーマットのテクスチャ画像が使用で�
 
 ## テクスチャ圧縮
 
-Vket Cloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは [こちら](../heoexporter/he_TextureCompression.md)をご覧ください。
+Vket Cloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは [こちら](../WorldOptimization/TextureCompression.md)をご覧ください。
 
 ## リフレクションプローブ
 

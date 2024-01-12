@@ -1,6 +1,6 @@
 # How to use Colliders / Tips
 
-Vket Cloudでは、UnityのコライダーにHEOComponentを付与することで壁や床などの役割だけではなく、[オクルージョン](./OcclusionCulling.md)、[動的ローディング](../HEOComponents/HEOField.md)、[クリック / 入退場 / 視野判定](../HEOComponents/HEOCollider.md#_1)、[物理演算](./PhysicsEngine.md)など様々な振る舞いをワールド上で行うことができます。<br>
+Vket Cloudでは、UnityのコライダーにHEOComponentを付与することで壁や床などの役割だけではなく、[オクルージョン](../WorldOptimization/OcclusionCulling.md)、[動的ローディング](../HEOComponents/HEOField.md)、[クリック / 入退場 / 視野判定](../HEOComponents/HEOCollider.md#_1)、[物理演算](./PhysicsEngine.md)など様々な振る舞いをワールド上で行うことができます。<br>
 
 ## コライダーの付け方
 

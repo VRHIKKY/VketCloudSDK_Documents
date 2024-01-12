@@ -1,4 +1,5 @@
 # HEOCollider
+
 ![HEOCollider_1](img/HEOCollider_1.jpg)
 
 HEOCollider is a component to set what kind of collision detection a collider has on Vket Cloud.
@@ -14,12 +15,13 @@ HEOCollider is a component to set what kind of collision detection a collider ha
 | `Restitution` | Adjust the coefficient of restitution. |
 
 ## Collider type
+
 | Type | Function |
 | ---- | ---- |
 | `Collider` | Plays the role of a collider. |
 | `Clickable` | Allows players to click. |
 | `Area` | A collider that can be passed through. By combining with [HEOAreaCollider](./HEOAreacollider.md), you can set any action when the player get inside the area. |
-| `Occlusion` | Enable occlusion on contact. <br> For instructions, please refer to [Occlusion Culling](../WorldMakingGuide/OcclusionCulling.md).  |
+| `Occlusion` | Enable occlusion on contact. <br> For instructions, please refer to [Occlusion Culling](../WorldOptimization/OcclusionCulling.md).  |
 | `Reflection Probe` | Enable reflection probes on touch. |
 | `in View` | Handled when you want to judge whether or not the object entered the field of view |
 
@@ -27,6 +29,7 @@ HEOCollider is a component to set what kind of collision detection a collider ha
     If collider type is set to other than `Collider` (i.e. Clickable, Area, Occlusion, Reflection Probe, inView), the player will not collide with the collider.
 
 ## Collider target
+
 | Target | Function |
 | ---- | ---- |
 | `None` | Does not restrict the collision detection. |

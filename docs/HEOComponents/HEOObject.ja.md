@@ -10,7 +10,7 @@ HEOObjectは、オブジェクトをあらかじめheoファイルとして出�
 | ---- | ---- | ---- |
 | Show | true | オブジェクトの表示 / 非表示を切り替えます。 |
 | Clickable | false | オブジェクトがクリックされた際の判定を発生させるか否かを設定します。 |
-| .heo or .vrm | | heoファイルもしくはvrmファイルを指定します。<br>vrmファイルをしている状態で、モデルの[テクスチャ圧縮](../heoexporter/he_TextureCompression.md)を行っている場合はここで指定します。 |
+| .heo or .vrm | | heoファイルもしくはvrmファイルを指定します。<br>vrmファイルをしている状態で、モデルの[テクスチャ圧縮](../WorldOptimization/TextureCompression.ja.md)を行っている場合はここで指定します。 |
 | Scene Preview | false | オブジェクトの生成された状態をUnityシーン上でプレビューします。<br>詳細は下記「プレビュー機能」にて解説します。 | 
 | Enable Bone | false | アーマチュアによるアニメーションを再生する場合はオンにします。（vrmのみ） |
 | Auto Loading | true | [動的ローディング](HEOField.md)にて使用します。<br> デフォルトはtrueで初回ローディング時に読み込まれます。 |
