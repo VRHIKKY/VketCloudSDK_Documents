@@ -146,13 +146,13 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../heoexporter/he_TextureCompression.html" hreflang="en" class="md-select__link">
+                  <a href="../../WorldOptimization/TextureCompression.html" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="he_TextureCompression.html" hreflang="ja" class="md-select__link">
+                  <a href="TextureCompression.html" hreflang="ja" class="md-select__link">
                     日本語
                   </a>
                 </li>
@@ -747,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="he_align_unity_to_vketcloud.html" class="md-nav__link">
+      <a href="../heoexporter/he_align_unity_to_vketcloud.html" class="md-nav__link">
         UnityとVketCloudの見た目を揃える
       </a>
     </li>
@@ -1106,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/WorldOptimization.html" class="md-nav__link">
+      <a href="WorldOptimization.html" class="md-nav__link">
         ワールドの軽量化方法：概要
       </a>
     </li>
@@ -1120,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/OcclusionCulling.html" class="md-nav__link">
+      <a href="OcclusionCulling.html" class="md-nav__link">
         オクルージョンカリング
       </a>
     </li>
@@ -1140,13 +1140,15 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           テクスチャ圧縮
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="he_TextureCompression.html" class="md-nav__link md-nav__link--active">
+      <a href="TextureCompression.html" class="md-nav__link md-nav__link--active">
         テクスチャ圧縮
       </a>
       
@@ -1154,6 +1156,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1163,29 +1167,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    テクスチャ圧縮の対象
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    使用ツールのインストール
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    圧縮テクスチャファイル作成
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#heo" class="md-nav__link">
-    HEOファイル上書き
+    テクスチャ圧縮を行う方法
   </a>
   
 </li>
@@ -4183,7 +4166,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/changelog-9.11.html" class="md-nav__link">
-        v9.8
+        v9.11
       </a>
     </li>
   
@@ -5088,6 +5071,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5096,29 +5081,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    テクスチャ圧縮の対象
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    使用ツールのインストール
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    圧縮テクスチャファイル作成
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#heo" class="md-nav__link">
-    HEOファイル上書き
+    テクスチャ圧縮を行う方法
   </a>
   
 </li>
@@ -5136,78 +5100,18 @@
               
                 
                 
-                  <h1>テクスチャ圧縮</h1>
-                
-                <p>HEOExporterで出力後にテクスチャ圧縮の作業をおこなう必要があります。将来的にはサーバー側で圧縮を行うことができるようにする予定ですが、現在はまだローカルのPC側で圧縮を行う必要があります。テクスチャ圧縮は軽量化にかなり効果があるので必ず実施するようにしてください。</p>
-<h2 id="_1">テクスチャ圧縮の対象</h2>
-<ul>
-<li>2の累乗サイズ（両辺とも、長方形でも可）</li>
-<li>24bitまたは32bitカラー</li>
-<li>アルベド、ノーマル、エミッション等</li>
-<li>ライトマップ（RGBM/ETC2のみ、ASTCは非対象）</li>
-<li>ReflectionProbe</li>
-</ul>
-<h2 id="_2">使用ツールのインストール</h2>
-<p>まず最初に、<a href="https://developer.imaginationtech.com/pvrtextool/" target="_blank">PVRTexTool</a>をインストールします。
-インストールされた PVRTexTool\CLI\Windows_x86_64\PVRTexToolCLI.exe を使用しますので、このフォルダのPATHを通します。（コマンドプロンプトの使い方やPATHの通し方は省略します）</p>
-<p>次に <a href="https://github.com/Microsoft/DirectXTex/wiki/Texconv" target="_blank">Texconv</a>をインストールします。ページを開いてすぐ上の方にある「DOWNLOADS@LATEST」でファイルをインストールことができます。インストールしたtexconv.exeを任意の場所に置き、上記のPVRTexToolと同様にPATHを通してください。</p>
-<p>また、HEOファイルに圧縮されたテクスチャの上書きを実行するために、<a href="https://www.python.org/downloads/" target="_blank">python</a>を導入します。
-バージョンは3.11を推奨しますが、それ以外でも動作する想定です。
-ただし、python2は動作保証ができないため、その場合は最新のpythonを導入します。</p>
-<h2 id="_3">圧縮テクスチャファイル作成</h2>
-<p>HEOExporterでHEOファイルを出力すると、同フォルダに「HEOファイル名_etc2.bat」「HEOファイル名_astc.bat」というバッチファイルが出力されます。中身を見ると、</p>
-<div class="codehilite"><pre><span></span><code>md tex_astc
-del tex_astc\*.pvr
-PVRTexToolCLI.exe -i tex_sample\000__Junkinbox_BaseColor.png -o tex_astc\000.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\001__Junkinbox_Normal.png -o tex_astc\001.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\002_junkinbox_Glass_BaseColor.png -o tex_astc\002.pvr -m 16 -f ASTC1_4,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\003_junkinbox_Glass_Emissive.png -o tex_astc\003.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
-echo skip tex_sample\004_junkinbox_Glass_Roughness.png
-PVRTexToolCLI.exe -i tex_sample\005_Cutout_BaseColor.png -o tex_astc\005.pvr -m 16 -f ASTC1_4,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\006_buy_button_color.png -o tex_astc\006.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
-PVRTexToolCLI.exe -i tex_sample\007_tweet_button_color.png -o tex_astc\007.pvr -m 16 -f ASTC1_4_RGB,UBN,sRGB
-pause
-</code></pre></div>
-
-<p>このような内容になっていますが、「echo skip」で始まる行がある場合はそのテクスチャが圧縮対象から外れていることになりますので、念のため内容を確認します。tex_sampleフォルダに画像が入っているので、エクスプローラの詳細で一覧表示します。</p>
-<p><img alt="TexSampleFolder" src="he_image/TexSampleFolder.jpg" /></p>
-<p>「大きさ」と「ビットの深さ」を表示に追加し、大きさが2の累乗でない場合は2の累乗に出来るか確認してみて下さい。ビットの深さも24または32以外の場合は変換出来るか確認してみて下さい。また、4096x4096などの大きなサイズのものが残っていないかどうかも確認して下さい。</p>
-<p>修正ができそうな場合はUnityにてテクスチャを修正したものを再度エクスポートしてください。</p>
-<p>もう一度バッチファイルの中身を確認し、問題なければこのバッチファイルをダブルクリックして実行します。すると「tex_etc」「tex_astc」というフォルダが作成され、「tex_sample」フォルダ内にあるテクスチャを読み込んで圧縮変換されたファイルがその中に作成されます。</p>
-<p>※リフレクションプローブを使用する場合、追加で「tex_reflection_cube_etc」「tex_reflection_cube_astc」というフォルダが作成されます。</p>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>Windowsのユーザ名に2バイト文字（日本語など）が含まれている場合かつ、
-echo skipで始まる行がある場合正しくバッチ処理が行われない可能性があります。
-画像ファイルを上記に従い修正するか、バッチファイルをメモ帳などで編集し該当の行を削除してください。</p>
-</div>
-<h2 id="heo">HEOファイル上書き</h2>
-<p>VketCloudSDKに含まれる
-<code>Packages/com.hikky.vketcloudsdk/PackageResources/tools/HEOTexComp_Python/HEOTexComp.py</code>を使用します。</p>
-<p>圧縮したいテクスチャを持つHEOと同じディレクトリに<code>HEOTexComp.py</code>をコピーするか、<code>HEOTexComp.py</code>が入っているディレクトリに直接入った上でコマンドプロンプトを開き、</p>
-<div class="codehilite"><pre><span></span><code><span class="n">python</span><span class="w"> </span><span class="n">HEOTexComp</span><span class="p">.</span><span class="n">py</span><span class="w"> </span><span class="o">[</span><span class="n">HEOファイルのあるフォルダパス</span><span class="o">]</span><span class="err">\</span><span class="o">[</span><span class="n">HEOファイル名</span><span class="o">]</span><span class="p">.</span><span class="n">heo</span>
-</code></pre></div>
-
-<p>と実行すると、</p>
-<div class="codehilite"><pre><span></span><code>ExistCubemapTextureCompression 10 10 10 10
-
-ExistTextureCompression 5 5 5 5
-Succeeded
-</code></pre></div>
-
-<p>などと表示されます。「Succeeded」と最後に表示されていれば成功です。その直前の数字はPVRTC/ETC/ASTC/DXTのファイル数です。</p>
-<p>これによりHEOファイル内に圧縮テクスチャが存在するかどうかのフラグが書き込まれます。</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>バージョンアップによってpvrtc変換及びdxt変換が廃止されたため、以下のようにHEOTexCompの結果で先頭及び末尾が０になりますが、こちらは正常な挙動です。<br>
-旧SDKバージョンのプロジェクトからファイルを移植した際に同変換のバッチファイルが混ざる場合がありますが、削除した上でテクスチャ圧縮を行っても問題ございません。</p>
-<p>ExistTextureCompression 0 5 5 0</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>ごく稀にWindows向けのDXT変換で見た目の色合いが変になる場合があります。<br>
-該当の現象が発生する場合はDXT変換を使用しなくても問題ございません。</p>
-</div>
+                <h1 id="_1">テクスチャ圧縮</h1>
+<p>Vket Cloudでは、ワールド内のオブジェクトやアバターに使用されているテクスチャの容量を削減することで、ワールド読み込み時にかかる処理時間を大きく改善させることができます。</p>
+<p>将来のアップデートによってサーバー側で画像の自動圧縮・フォーマットが行われる予定ですが、ワールドの実装者が画像の最適化を行うことで、より多様なPC・スマートフォンのスペック環境にて快適な動作を実現できます。</p>
+<h2 id="_2">テクスチャ圧縮を行う方法</h2>
+<p><img alt="ExportCompressedTexture_1" src="../SDKTools/img/ExportCompressedTexture_1.jpg" /></p>
+<p>VketCloudSDKでは、テクスチャ圧縮・フォーマットツールとして<a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>が用意されています。</p>
+<p>本ツールはテクスチャ画像に設定されている<a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a>を基に圧縮された画像を生成するものです。</p>
+<p>このとき、png以外 / 縦横サイズが2の累乗でないテクスチャ画像はフォーマットが自動で変更され、変換前の画像がマテリアルに参照されている場合はツールを通じて新たに生成された画像と差し替えを行うこともできます。</p>
+<p><img alt="ExportCompressedTexture_2" src="../SDKTools/img/ExportCompressedTexture_2.jpg" /></p>
+<p>詳細な操作方法については<a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>をご参照ください。</p>
+<p>また、別の方法としてはpng画像圧縮用フリーソフト(例：<a href="https://pnggauntlet.com/" target="_blank">PNGGauntlet</a>)を利用するか、お手元のphotoshopなど編集ソフトで解像度下げを行う方法が考えられます。</p>
+<p>お手元の環境や慣れている方法に応じて圧縮を行ってみてください。</p>
                 
               
               

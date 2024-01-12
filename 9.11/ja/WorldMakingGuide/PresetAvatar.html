@@ -1214,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="WorldOptimization.html" class="md-nav__link">
+      <a href="../WorldOptimization/WorldOptimization.html" class="md-nav__link">
         ワールドの軽量化方法：概要
       </a>
     </li>
@@ -1228,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="OcclusionCulling.html" class="md-nav__link">
+      <a href="../WorldOptimization/OcclusionCulling.html" class="md-nav__link">
         オクルージョンカリング
       </a>
     </li>
@@ -1242,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heoexporter/he_TextureCompression.html" class="md-nav__link">
+      <a href="../WorldOptimization/TextureCompression.html" class="md-nav__link">
         テクスチャ圧縮
       </a>
     </li>
@@ -4234,7 +4234,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/changelog-9.11.html" class="md-nav__link">
-        v9.8
+        v9.11
       </a>
     </li>
   
@@ -5243,7 +5243,7 @@
 <p>なお、プリセットアバターを追加するにあたって、追加したいアバターをあらかじめ<a href="https://vrm.dev/vrm/how_to_make_vrm/index.html" target="_blank">vrm形式に変換</a>する必要があります。<br></p>
 <h2 id="1">1. テクスチャが圧縮されたアバターを作成する</h2>
 <p>スマートフォン上でもアバターが表示できるようにテクスチャの圧縮を行います。<br></p>
-<p>テクスチャの圧縮方法は<a href="../heoexporter/he_TextureCompression.html">ワールドテクスチャの圧縮</a>と同じツールを使用して行えます。</p>
+<p>テクスチャの圧縮方法は<a href="../WorldOptimization/TextureCompression.html">ワールドテクスチャの圧縮</a>と同じツールを使用して行えます。</p>
 <h2 id="2-avatarfile">2. AvatarFileを作成する</h2>
 <h3 id="21-heoworldsettingavatarfile">2.1 HEOWorldSettingからAvatarFileを新規作成する</h3>
 <p>VketCloudSDKではAvatarFileというファイルにアバター情報を設定し、ワールドのビルド時にプリセットアバターとして反映します。</p>
@@ -5251,9 +5251,15 @@
 <p><a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>内のAvatarsタブ下の<code>CreateAvatarFile</code>を押すことで、新しいAvatarFileを作成します。</p>
 <p>AvatarFileリスト右下の +/- を押すことで、プリセットアバターのリストに項目を追加/削除することができます。<br>
 リストから削除した場合でも、元のAvatarFileのデータが残ります。</p>
+<div class="admonition caution">
+<p class="admonition-title">DefaultのAvatarFileが編集できる現象について</p>
+<p>特定の手順によって、デフォルトで設定されているAvatarFile(<code>Vketchan_v1.6_Mtoon_blendshape</code>)の設定が編集できる現象が確認されています。<br>
+デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
+この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<div class="codehilite"><pre><span></span><code>以下の画像のようにAvatarFileリストが表示されず、「CreatAvatarFileForOldData」ボタンが表示されている場合があります。&lt;br&gt;
+<div class="codehilite"><pre><span></span><code>以下の画像のようにAvatarFileリストが表示されず、「CreateAvatarFileForOldData」ボタンが表示されている場合があります。&lt;br&gt;
 これは、古いSDKのアバターデータ情報が残っている時に見られます。&lt;br&gt;
 ボタンを押すことで、元々あったアバター情報がAvatarFileリスト形式に書き出されます。
 </code></pre></div>

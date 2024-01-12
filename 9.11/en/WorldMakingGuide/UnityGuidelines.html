@@ -616,6 +616,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#avatars" class="md-nav__link">
+    Avatars
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1216,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="WorldOptimization.html" class="md-nav__link">
+      <a href="../WorldOptimization/WorldOptimization.html" class="md-nav__link">
         World Optimization - Overview
       </a>
     </li>
@@ -1230,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="OcclusionCulling.html" class="md-nav__link">
+      <a href="../WorldOptimization/OcclusionCulling.html" class="md-nav__link">
         Occlusion Culling
       </a>
     </li>
@@ -1244,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heoexporter/he_TextureCompression.html" class="md-nav__link">
+      <a href="../WorldOptimization/TextureCompression.html" class="md-nav__link">
         Texture Compression
       </a>
     </li>
@@ -4236,7 +4243,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/changelog-9.11.html" class="md-nav__link">
-        v9.8
+        v9.11
       </a>
     </li>
   
@@ -5227,6 +5234,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#avatars" class="md-nav__link">
+    Avatars
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5259,12 +5273,12 @@
 <p>On Vket Cloud, the Unity <a href="https://docs.unity3d.com/2019.4/Manual/class-SpriteRenderer.html" target="_blank">Sprite Renderer</a> cannot be used.</p>
 </div>
 <h2 id="texture-compression">Texture Compression</h2>
-<p>VketCloud compresses textures as one of the ways to reduce weight. See <a href="../heoexporter/he_TextureCompression.html">here</a> for more information.</p>
+<p>VketCloud compresses textures as one of the ways to reduce weight. See <a href="../WorldOptimization/TextureCompression.html">here</a> for more information.</p>
 <h2 id="reflection-probes">Reflection probes</h2>
 <p>Vket Cloud allows the use of Unity's reflection probes. See <a href="ReflectionProbe.html">here</a> for more information.</p>
 <h2 id="directional-light">Directional Light</h2>
 <p>Note that the Intensity value set on the <code>Directional Light</code>(as image below) will not be used within the world.<br>
-To express light intensity, multiply the <code>Directional Light</code>'s color by using the worldsetting's <code>LightColor</code> value in <a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>. </p>
+To express light intensity, multiply the <code>Directional Light</code>'s color by using the worldsetting's <code>LightColor</code> value in <a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>.</p>
 <p><img alt="Rendering_2" src="../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg" /></p>
 <div class="admonition caution">
 <p class="admonition-title">Using Realtime Lights</p>
@@ -5327,6 +5341,23 @@ For details, refer to <a href="../AboutVketCloudSDK/OperatingEnvironment.html">O
 <li>Placing objects with the same names is not recommended. In an occasion that makes name conflicts, adding suffix numbers as Object_1, Object_2, etc. is recommended.</li>
 <li>HEOExport does not support multiple selection.<br> To export as a single object, create a parent object, store the target object inside it, and export the parent object.</li>
 </ul>
+<h2 id="avatars">Avatars</h2>
+<p>To use avatars in Vket Cloud, the user may 1. <a href="../AboutVketCloudSDK/SetupAvatar.html">Setup a MyAvatar on My Vket</a> or 2. use the world's <a href="PresetAvatar.html">Preset Avatars</a>.</p>
+<p>For instructions on each setup and usage, refer to the pages below.</p>
+<ol>
+<li>
+<p><a href="../AboutVketCloudSDK/SetupAvatar.html">How to use avatars</a></p>
+</li>
+<li>
+<p><a href="PresetAvatar.html">Adding Preset Avatars</a></p>
+</li>
+</ol>
+<div class="admonition caution">
+<p class="admonition-title">Issue enabling edit on Default AvatarFile</p>
+<p>Following a certain procedure, the issue causing the default AvatarFile(<code>Vketchan_v1.6_Mtoon_blendshape</code>) to be editable may be triggered.<br>
+As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
+As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.</p>
+</div>
                 
               
               

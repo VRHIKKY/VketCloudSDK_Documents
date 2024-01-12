@@ -999,8 +999,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    使用方法
+  <a href="#how-to-use" class="md-nav__link">
+    How to Use
   </a>
   
 </li>
@@ -1146,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/WorldOptimization.html" class="md-nav__link">
+      <a href="../WorldOptimization/WorldOptimization.html" class="md-nav__link">
         World Optimization - Overview
       </a>
     </li>
@@ -1160,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/OcclusionCulling.html" class="md-nav__link">
+      <a href="../WorldOptimization/OcclusionCulling.html" class="md-nav__link">
         Occlusion Culling
       </a>
     </li>
@@ -1174,7 +1174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heoexporter/he_TextureCompression.html" class="md-nav__link">
+      <a href="../WorldOptimization/TextureCompression.html" class="md-nav__link">
         Texture Compression
       </a>
     </li>
@@ -4166,7 +4166,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/changelog-9.11.html" class="md-nav__link">
-        v9.8
+        v9.11
       </a>
     </li>
   
@@ -5081,8 +5081,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    使用方法
+  <a href="#how-to-use" class="md-nav__link">
+    How to Use
   </a>
   
 </li>
@@ -5102,21 +5102,22 @@
                 
                 <h1 id="export-compressed-texture">Export Compressed Texture</h1>
 <p><img alt="ExportCompressedTexture_1" src="img/ExportCompressedTexture_1.jpg" /></p>
-<p>Export Compressed Textureはpng以外 / 縦横サイズが2の累乗でないテクスチャ画像をVket Cloudの仕様の下で動作させるために圧縮させるツールです。<br>
-Vket Cloudで使える画像の仕様については<a href="../WorldMakingGuide/UnityGuidelines.html">VketCloudの仕様制限</a>をご参照ください。</p>
-<p>ツールを起動すると画像をpngに変換するほか、変換前の画像のプロパティにて<a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">Non-PowerOf2</a>をnone以外に自動で設定します。また、<a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a>を2048以下に設定することで自動で画像サイズを変更します。</p>
-<p>変換された画像は元画像と同じディレクトリに”&lt;元テクスチャ名&gt;_comp.png”という名前で出力されます。
-また、後述の変換後に出現するウィンドウにて"Yes"を選択すると、Scene内のマテリアルにて変換前の画像が参照されている場合は全て変換後の画像に自動で差し替えます。</p>
-<h2 id="_1">使用方法</h2>
-<p>下準備として、変換後の画像サイズをさらに圧縮したい場合は予め元画像の<a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a>を2048以下に設定しておきます。<br>
-例として、MaxSizeを2048以下（例えば128等）に設定した場合、最大サイズが128で書き出されます。</p>
+<p>Export Compressed Texture is an image formatting tool intended to reformat images which are non-png format/ width-height size not set to power of 2, to be usable under Vket Cloud environment.</p>
+<p>For details of texture specifications, refer to <a href="../WorldMakingGuide/UnityGuidelines.html">Specification Limits of Vket Cloud</a>.</p>
+<p>By running this tool, the image will be reformatted to png format, and the image's <a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">Non-PowerOf2</a>  property will be automatically set to other than none.</p>
+<p>If the <a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a> is set under 2048, the image size will be reformatted as well. This can be used for <a href="../WorldOptimization/TextureCompression.html">Texture Compression</a> and shortening load time.</p>
+<p>The generated image will be output to the original image's directory as ”<Original Texture's Name>_comp.png”.
+Also, if the later mentioned option is enabled, the original image referenced in Scene materials can be replaced to the generated image.</p>
+<h2 id="how-to-use">How to Use</h2>
+<p>As preparation, if the generated image should be compressed, set the original image's <a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a> under 2048.</p>
+<p>For example, if the MaxSize is set to 128, the new image will be generated as MaxSize value being 128.</p>
 <p><img alt="ExportCompressedTexture_2" src="img/ExportCompressedTexture_2.jpg" /></p>
-<p>Project上でテクスチャを選択した状態で、右クリックメニューの”ExportCompressedTexture”から実行できます。このとき、複数選択してまとめて圧縮することもできます。</p>
+<p>To use the tool, select the texture on Project, and select ”ExportCompressedTexture” on the right-click menu. Note that multiple images can be selected for compression.</p>
 <p><img alt="ExportCompressedTexture_1" src="img/ExportCompressedTexture_1.jpg" /></p>
 <p><img alt="ExportCompressedTexture_3" src="img/ExportCompressedTexture_3.jpg" /></p>
-<p>テクスチャ出力後に上記のダイアログが出るのでYesを選択すると、Project内の全てのマテリアルを検索して元テクスチャの参照を圧縮後テクスチャと差し替えできます。</p>
+<p>As the dialog above will show on generating the texture, selecting "Yes" will search all materials referencing the original material, and replace it to the generated texture.</p>
 <p><img alt="ExportCompressedTexture_4" src="img/ExportCompressedTexture_4.jpg" /></p>
-<p>圧縮後のテクスチャは元テクスチャと同じディレクトリに”&lt;元テクスチャ名&gt;_comp.png”という名前で出力されます。</p>
+<p>The generated image will be output to the original image's directory as ”<Original Texture's Name>_comp.png”.</p>
 <p><img alt="ExportCompressedTexture_5" src="img/ExportCompressedTexture_5.jpg" /></p>
                 
               

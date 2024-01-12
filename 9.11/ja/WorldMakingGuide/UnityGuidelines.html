@@ -616,6 +616,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    アバター
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1216,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="WorldOptimization.html" class="md-nav__link">
+      <a href="../WorldOptimization/WorldOptimization.html" class="md-nav__link">
         ワールドの軽量化方法：概要
       </a>
     </li>
@@ -1230,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="OcclusionCulling.html" class="md-nav__link">
+      <a href="../WorldOptimization/OcclusionCulling.html" class="md-nav__link">
         オクルージョンカリング
       </a>
     </li>
@@ -1244,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heoexporter/he_TextureCompression.html" class="md-nav__link">
+      <a href="../WorldOptimization/TextureCompression.html" class="md-nav__link">
         テクスチャ圧縮
       </a>
     </li>
@@ -4236,7 +4243,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/changelog-9.11.html" class="md-nav__link">
-        v9.8
+        v9.11
       </a>
     </li>
   
@@ -5227,6 +5234,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    アバター
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5259,7 +5273,7 @@
 <p>Vket CloudではUnityの<a href="https://docs.unity3d.com/ja/2019.4/Manual/class-SpriteRenderer.html" target="_blank">Sprite Renderer</a>に対応しておりません。</p>
 </div>
 <h2 id="_3">テクスチャ圧縮</h2>
-<p>Vket Cloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは <a href="../heoexporter/he_TextureCompression.html">こちら</a>をご覧ください。</p>
+<p>Vket Cloudでは軽量化の方法の一つとしてテクスチャを圧縮するようにしています。詳しくは <a href="../WorldOptimization/TextureCompression.html">こちら</a>をご覧ください。</p>
 <h2 id="_4">リフレクションプローブ</h2>
 <p>Vket CloudではUnityのリフレクションプローブを使用することができます。詳しくは<a href="ReflectionProbe.html">こちら</a>をご覧ください。</p>
 <h2 id="directional-light">Directional Light</h2>
@@ -5328,6 +5342,23 @@
 <li>シーン内に同名のオブジェクトの配置は基本的に非推奨です。名前が被るような場面の際はObject_1, Object_2...のように通し番号をふることをおすすめします。</li>
 <li>HEOExportは複数選択に対応していません。<br>１つのオブジェクトとしてエクスポートするには、親オブジェクトを作成しその中に対象のオブジェクトを格納して、親オブジェクトをエクスポートしてください。</li>
 </ul>
+<h2 id="_11">アバター</h2>
+<p>Vket Cloudにてアバターを使用するには、1. <a href="../AboutVketCloudSDK/SetupAvatar.html">My Vketにてマイアバターを設定</a>するか、2. ワールドの<a href="PresetAvatar.html">プリセットアバター</a>を利用する方法があります。</p>
+<p>それぞれの設定・利用方法は以下のページをご確認ください。</p>
+<ol>
+<li>
+<p><a href="../AboutVketCloudSDK/SetupAvatar.html">アバターの使用方法</a></p>
+</li>
+<li>
+<p><a href="PresetAvatar.html">プリセットアバターを追加する</a></p>
+</li>
+</ol>
+<div class="admonition caution">
+<p class="admonition-title">DefaultのAvatarFileが編集できる現象について</p>
+<p>特定の手順によって、デフォルトで設定されているAvatarFile(<code>Vketchan_v1.6_Mtoon_blendshape</code>)の設定が編集できる現象が確認されています。<br>
+デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
+この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。</p>
+</div>
                 
               
               

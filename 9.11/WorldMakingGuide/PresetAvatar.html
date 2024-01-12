@@ -1214,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="WorldOptimization.html" class="md-nav__link">
+      <a href="../WorldOptimization/WorldOptimization.html" class="md-nav__link">
         World Optimization - Overview
       </a>
     </li>
@@ -1228,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="OcclusionCulling.html" class="md-nav__link">
+      <a href="../WorldOptimization/OcclusionCulling.html" class="md-nav__link">
         Occlusion Culling
       </a>
     </li>
@@ -1242,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heoexporter/he_TextureCompression.html" class="md-nav__link">
+      <a href="../WorldOptimization/TextureCompression.html" class="md-nav__link">
         Texture Compression
       </a>
     </li>
@@ -4234,7 +4234,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/changelog-9.11.html" class="md-nav__link">
-        v9.8
+        v9.11
       </a>
     </li>
   
@@ -5243,7 +5243,7 @@ The preset avatar list can be accessed via "Setting"--&gt;"Mypage"--&gt;"Avatar"
 <p>Before setting a preset avatar, the character model must be converted to the <a href="https://vrm.dev/en/vrm/how_to_make_vrm/index" target="_blank">VRM format</a>.<br></p>
 <h2 id="1-create-an-avatar-with-its-texture-compressed">1. Create an avatar with its texture compressed</h2>
 <p>For optimising avatars to appear on smartphones, texture compression is essential.&lt;br</p>
-<p>Texture compression method is same as the <a href="../heoexporter/he_TextureCompression.html">Texture Compression</a>.</p>
+<p>Texture compression method is same as the <a href="../WorldOptimization/TextureCompression.html">Texture Compression</a>.</p>
 <h2 id="2-creating-an-avatarfile">2. Creating an AvatarFile</h2>
 <h3 id="21-create-an-avatarfile-via-heoworldsetting">2.1 Create an AvatarFile via HEOWorldSetting</h3>
 <p>VketCloudSDK stores avatar infomation in an AvatarFile format, using the file to list preset avatars on world build.</p>
@@ -5251,6 +5251,12 @@ The preset avatar list can be accessed via "Setting"--&gt;"Mypage"--&gt;"Avatar"
 <p>By pressing <code>CreateAvatarFile</code> in the Avatars tab of <a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>, a new AvatarFile is created.</p>
 <p>By pressing the +/- on the bottom right of the AvatarFile list, a new article on the preset avatar list will be added/deleted.<br>
 The AvatarFile will not be deleted even if the list article is deleted.</p>
+<div class="admonition caution">
+<p class="admonition-title">Issue enabling edit on Default AvatarFile</p>
+<p>Following a certain procedure, the issue causing the default AvatarFile(<code>Vketchan_v1.6_Mtoon_blendshape</code>) to be editable may be triggered.<br>
+As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
+As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <div class="codehilite"><pre><span></span><code>There may be edge cases where the AvatarFile list won&#39;t appear and the &quot;CreateAvatarFileForOldData&quot; will appear.&lt;br&gt;
