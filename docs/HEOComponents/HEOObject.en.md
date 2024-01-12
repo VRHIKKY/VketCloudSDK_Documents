@@ -1,5 +1,6 @@
 
 # HEOObject
+
 ![HEOObject](img/HEOObject.jpg)
 
 HEOObject is used to instantiate a pre-exported .heo file, or an vrm model.
@@ -10,12 +11,12 @@ HEOObject is used to instantiate a pre-exported .heo file, or an vrm model.
 | ---- | ---- | ---- |
 | Show | true | Toggle object visibility. |
 | Clickable | false | Toggle mouse interaction on object. |
-| .heo or .vrm | | Specify heo or vrm files. <br>If a chosen vrm file has a [Compressed Texture](../heoexporter/he_TextureCompression.md), specify the texture file here. |
+| .heo or .vrm | | Specify heo or vrm files. <br>If a chosen vrm file has a [Compressed Texture](../WorldOptimization/TextureCompression.en.md), specify the texture file here. |
 | Scene Preview | false | Preview the object instantiation on the Unity Scene.<br>Further details are on "Previewing Objects" article. |
 | Enable Bone | false | (only for vrm) Enable if you want to play armature animation. |
 | Auto Loading | true | Used for setting up [Dynamic Loading](HEOField.md). <br> The object will be loaded on the first load by default.  |
-| Shadow Caster | false | If [Shadow Mapping](HEOWorldSetting.md) is enabled, this sets the object's shadow to be casted on other shadow recievers. |
-| Shadow Receiver | false | If [Shadow Mapping](HEOWorldSetting.md) is enabled, this sets the object to recieve shadows from other objects. |
+| Shadow Caster | false | If [Shadow Mapping](HEOWorldSetting.md) is enabled, this sets the object's shadow to be casted on other shadow receivers. |
+| Shadow Receiver | false | If [Shadow Mapping](HEOWorldSetting.md) is enabled, this sets the object to receive shadows from other objects. |
 | Circle Shadow | false |  Sets to draw a circle shadow.  |
 | Foreground Rendering | false | Sets Foreground Rendering (render without applying depth value). |
 | Look at Camera | false |  Make the object face towards the camera at all times. |

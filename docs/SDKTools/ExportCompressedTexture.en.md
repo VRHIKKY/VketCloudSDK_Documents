@@ -2,31 +2,35 @@
 
 ![ExportCompressedTexture_1](img/ExportCompressedTexture_1.jpg)
 
-Export Compressed Textureはpng以外 / 縦横サイズが2の累乗でないテクスチャ画像をVket Cloudの仕様の下で動作させるために圧縮させるツールです。<br>
-Vket Cloudで使える画像の仕様については[VketCloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md)をご参照ください。
+Export Compressed Texture is an image formatting tool intended to reformat images which are non-png format/ width-height size not set to power of 2, to be usable under Vket Cloud environment.
 
-ツールを起動すると画像をpngに変換するほか、変換前の画像のプロパティにて[Non-PowerOf2](https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html){target=_blank}をnone以外に自動で設定します。また、[MaxSize](https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html){target=_blank}を2048以下に設定することで自動で画像サイズを変更します。
+For details of texture specifications, refer to [Specification Limits of Vket Cloud](../WorldMakingGuide/UnityGuidelines.md).
 
-変換された画像は元画像と同じディレクトリに”<元テクスチャ名>_comp.png”という名前で出力されます。
-また、後述の変換後に出現するウィンドウにて"Yes"を選択すると、Scene内のマテリアルにて変換前の画像が参照されている場合は全て変換後の画像に自動で差し替えます。
+By running this tool, the image will be reformatted to png format, and the image's [Non-PowerOf2](https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html){target=_blank}  property will be automatically set to other than none.
 
-## 使用方法
+If the [MaxSize](https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html){target=_blank} is set under 2048, the image size will be reformatted as well. This can be used for [Texture Compression](../WorldOptimization/TextureCompression.md) and shortening load time.
 
-下準備として、変換後の画像サイズをさらに圧縮したい場合は予め元画像の[MaxSize](https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html){target=_blank}を2048以下に設定しておきます。<br>
-例として、MaxSizeを2048以下（例えば128等）に設定した場合、最大サイズが128で書き出されます。
+The generated image will be output to the original image's directory as ”<Original Texture's Name>_comp.png”.
+Also, if the later mentioned option is enabled, the original image referenced in Scene materials can be replaced to the generated image.
+
+## How to Use
+
+As preparation, if the generated image should be compressed, set the original image's [MaxSize](https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html){target=_blank} under 2048.
+
+For example, if the MaxSize is set to 128, the new image will be generated as MaxSize value being 128.
 
 ![ExportCompressedTexture_2](img/ExportCompressedTexture_2.jpg)
 
-Project上でテクスチャを選択した状態で、右クリックメニューの”ExportCompressedTexture”から実行できます。このとき、複数選択してまとめて圧縮することもできます。
+To use the tool, select the texture on Project, and select ”ExportCompressedTexture” on the right-click menu. Note that multiple images can be selected for compression.
 
 ![ExportCompressedTexture_1](img/ExportCompressedTexture_1.jpg)
 
 ![ExportCompressedTexture_3](img/ExportCompressedTexture_3.jpg)
 
-テクスチャ出力後に上記のダイアログが出るのでYesを選択すると、Project内の全てのマテリアルを検索して元テクスチャの参照を圧縮後テクスチャと差し替えできます。
+As the dialog above will show on generating the texture, selecting "Yes" will search all materials referencing the original material, and replace it to the generated texture.
 
 ![ExportCompressedTexture_4](img/ExportCompressedTexture_4.jpg)
 
-圧縮後のテクスチャは元テクスチャと同じディレクトリに”<元テクスチャ名>_comp.png”という名前で出力されます。
+The generated image will be output to the original image's directory as ”<Original Texture's Name>_comp.png”.
 
 ![ExportCompressedTexture_5](img/ExportCompressedTexture_5.jpg)

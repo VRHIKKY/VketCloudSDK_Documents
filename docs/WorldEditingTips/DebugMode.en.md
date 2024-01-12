@@ -60,7 +60,7 @@ The indicator will disappear when entering F4 again.<br>
 When "OC" is indicated, the occlusion culling will be enabled.
 
 To implement occlusion culling, preparation is needed.<br>
-For details, please refer to the [Occlusion Culling](../WorldMakingGuide/OcclusionCulling.md) page.
+For details, please refer to the [Occlusion Culling](../WorldOptimization/OcclusionCulling.md) page.
 
 ## F5: Display Script Information
 

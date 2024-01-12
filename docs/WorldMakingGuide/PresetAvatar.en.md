@@ -11,9 +11,10 @@ Before setting a preset avatar, the character model must be converted to the [VR
 
 For optimising avatars to appear on smartphones, texture compression is essential.<br
 
-Texture compression method is same as the [Texture Compression](../heoexporter/he_TextureCompression.md).
+Texture compression method is same as the [Texture Compression](../WorldOptimization/TextureCompression.md).
 
 ## 2. Creating an AvatarFile
+
 ### 2.1 Create an AvatarFile via HEOWorldSetting
 
 VketCloudSDK stores avatar infomation in an AvatarFile format, using the file to list preset avatars on world build.

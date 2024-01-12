@@ -23,7 +23,7 @@ As a conversion tool, the SDK has [Export Compressed Texture](../SDKTools/Export
 
 ## Texture Compression
 
-VketCloud compresses textures as one of the ways to reduce weight. See [here](../heoexporter/he_TextureCompression.md) for more information.
+VketCloud compresses textures as one of the ways to reduce weight. See [here](../WorldOptimization/TextureCompression.md) for more information.
 
 ## Reflection probes
 

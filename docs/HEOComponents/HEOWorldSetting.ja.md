@@ -11,6 +11,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 ---
 
 ## 基本設定
+
 ![BasicInfo](img/HEOWorldSetting_BasicInfo.jpg)
 
 | 名称 | 初期値 | 機能 |
@@ -19,7 +20,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 |  `Debug Mode` | false |  デバッグモードを切り替えることができます。オンにするとブラウザ上で`F1`または`F2`からデバッグ機能を使用することが可能になります。<br>詳しくはデバッグモードの[解説ページ](../WorldEditingTips/DebugMode.md)をご確認ください。|
 | `Use Avatar Click`| true | 他のプレイヤーをクリックした時に処理を利用するかどうかの設定です。 |
 | `VRM Drop` | false | ブラウザ上へのVRMドロップによるローカルの(他プレイヤーから見えない)アバター変更を許可します。 |
-| `Occulusion Culling` | false | オクルージョンカリングをオンにします。<br>詳しい使い方は[オクルージョンカリング](../WorldMakingGuide/OcclusionCulling.md)をご確認ください。　|
+| `Occlusion Culling` | false | オクルージョンカリングをオンにします。<br>詳しい使い方は[オクルージョンカリング](../WorldOptimization/OcclusionCulling.md)をご確認ください。　|
 | `World Name Directory` | false | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。<br>(例： data/field/`ワールド名`/world.heo)|
 | `Use GamePad` | false | ゲームパッドを使用するかどうかの設定です。 |
 | `Use Physics Engine` | false | 物理エンジンを使用するかどうかの設定です。|
@@ -50,6 +51,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 ---
 
 ## カメラ設定
+
 ![Camera](img/HEOWorldSetting_Camera.jpg)
 
 | 名称 | 初期値 | 機能 |
@@ -65,6 +67,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 ---
 
 ## 描画設定
+
 ![Rendering_1](img/HEOWorldSetting_Rendering_1.jpg)
 
 | 名称 | 初期値 | 機能 |
@@ -92,6 +95,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 ---
 
 ## Bloom / Light Scattering / IBL設定
+
 ![Rendering_3](img/HEOWorldSetting_Rendering_3.jpg)
 
 |  名称 | 初期値 | 機能 |
@@ -114,6 +118,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 ---
 
 ## アバター設定
+
 ![Avatars](img/HEOWorldSetting_Avatars.jpg)
 
 | 名称 | 初期値 | 機能 |
@@ -134,6 +139,7 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 ---
 
 ## マイアバター設定
+
 ![MyAvatar_1](img/HEOWorldSetting_MyAvatar_1.jpg)
 
 | 名称 | 初期値 | 機能 |
@@ -164,6 +170,7 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 
 ---
 ### Emotion設定
+
 ![MyAvatar_2](img/HEOWorldSetting_MyAvatar_2.jpg)
 
 | 名称 | 初期値 | 機能 |
@@ -175,6 +182,7 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 ---
 
 ### Objects設定
+
 ![HEOWorldSetting_Objects](img/HEOWorldSetting_Objects.jpg)
 
 マイアバターにオブジェクト（.heoファイル、パーティクル、音声）を指定します。<br>
