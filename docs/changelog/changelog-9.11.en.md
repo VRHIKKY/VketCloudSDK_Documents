@@ -28,6 +28,7 @@
     - Added guide to HEOBackgroundTexture as an alternative implementation
     - Added incompatibility of jpg / psd, and guide to Export Compressed Texture
     - Miscellaneous edits and reformats
+    - Added how to use Avatars and caution on editing preset avatar files
   - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/Collider.html)
     - Added how to use colliders (Separated from [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/PhysicsEngine.html))*English Version WIP
     - Added tip on creating collision for stairs
@@ -35,6 +36,8 @@
     - Added Translation
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/Skybox.html)
     - Added guide to HEOBackgroundTexture as an alternative implementation
+  - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/PresetAvatar.html)
+    - Added caution on editing preset avatar files
 - Troubleshooting
   - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/troubleshooting/BuildError.html)
     - Added build error issue on first Build and Run on certain Mac environments

@@ -32,7 +32,7 @@ Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionPro
 ## Directional Light
 
 Note that the Intensity value set on the `Directional Light`(as image below) will not be used within the world.<br>
-To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md). 
+To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md).
 
 ![Rendering_2](../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg)
 
@@ -96,3 +96,18 @@ In order to create the background, the SDK recommends creating a [Sphere object]
 
 - Placing objects with the same names is not recommended. In an occasion that makes name conflicts, adding suffix numbers as Object_1, Object_2, etc. is recommended.
 - HEOExport does not support multiple selection.<br> To export as a single object, create a parent object, store the target object inside it, and export the parent object.
+
+## Avatars
+
+To use avatars in Vket Cloud, the user may 1. [Setup a MyAvatar on My Vket](../AboutVketCloudSDK/SetupAvatar.md) or 2. use the world's [Preset Avatars](../WorldMakingGuide/PresetAvatar.md).
+
+For instructions on each setup and usage, refer to the pages below.
+
+1. [How to use avatars](../AboutVketCloudSDK/SetupAvatar.md)
+
+2. [Adding Preset Avatars](../WorldMakingGuide/PresetAvatar.md)
+
+!!! caution "Issue enabling edit on Default AvatarFile"
+    Following a certain procedure, the issue causing the default AvatarFile(`Vketchan_v1.6_Mtoon_blendshape`) to be editable may be triggered.<br>
+    As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
+    As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.
