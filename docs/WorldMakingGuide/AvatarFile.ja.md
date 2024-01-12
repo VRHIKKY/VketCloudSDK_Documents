@@ -33,7 +33,7 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 
 !!! note "テクスチャ圧縮について"
     テクスチャ圧縮ツールについては、サーバー側で自動圧縮を行うために将来のバージョンでの廃止が予定されております。<br>
-    代替の圧縮方法として、元のテクスチャサイズを変更する方法がSDKToolとして用意されています。<br>
+    代替の軽量化手段として、元のテクスチャサイズを変更する方法がSDKToolとして用意されています。<br>
     詳しくは[テクスチャ圧縮](../WorldOptimization/TextureCompression.md)をご確認ください。
 
 ## Motion
