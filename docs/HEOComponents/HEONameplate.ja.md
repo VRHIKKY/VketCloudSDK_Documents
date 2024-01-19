@@ -4,8 +4,6 @@
 
 HEONameplateは、プレイヤーアバターの頭の上に表示されるネームプレートをカスタマイズしたい場合に設定するコンポーネントです。
 
-![HEONameplate_1](img/HEONameplate_1.jpg)
-
 Listに各設定要素を追加することで、ビルド後に表示されるプレイヤーのネームプレートをカスタマイズすることができます。
 
 ![HEONameplate_2](img/HEONameplate_2.jpg)

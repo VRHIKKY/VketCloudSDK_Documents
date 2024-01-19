@@ -2,11 +2,9 @@
 
 ![HEONameplate_1](img/HEONameplate_1.jpg)
 
-HEONameplateは、プレイヤーアバターの頭の上に表示されるネームプレートをカスタマイズしたい場合に設定するコンポーネントです。
+HEONameplate is the component used for customizing the nameplate shown above the player avatar.
 
-![HEONameplate_1](img/HEONameplate_1.jpg)
-
-Listに各設定要素を追加することで、ビルド後に表示されるプレイヤーのネームプレートをカスタマイズすることができます。
+By adding each elements in the List, the player nameplate will be customized after build according to the settings.
 
 ![HEONameplate_2](img/HEONameplate_2.jpg)
 
@@ -16,77 +14,81 @@ Listに各設定要素を追加することで、ビルド後に表示される�
 
 ![HEONameplate_3](img/HEONameplate_3.jpg)
 
-ネームプレート左のアバターアイコンの表示を設定します。
+This customizes the avatar icon on the left of the nameplate.
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Show | false | 表示切替え |
-| Adjust Position | false | Positionの変更を有効とするか設定します |
-| Position | 0,0,0 | 初期位置を原点として、XY方向それぞれ-1.0～1.0の幅2.0mの間で位置を調整できます |
-| Scale | 0,0,0 | アイコンの大きさを調整します |
-| Z | 0 | 描画順を設定します。値が小さい順に描画されます |
+| Show | false | Toggles Show/Hide of the avatar icon. |
+| Adjust Position | false | Adjust the relative position of the avatar icon. `adjustoffsetN` is offset from the avatar icon's baseTextures 0,1, and 2. The initial value is a sample, and Adjust Position must be true to enable adjustment. |
+| Position | 0,0,0 | The billboard polygon has a 2.0 width between -0.1~0.1 on each XY axis, which can be adjusted to move the avatar icon's position. |
+| Scale | 0,0,0 | Adjust the scale of the avatar icon. |
+| Z | 0 | Adjust the draw order of the avatar icon. smaller valued elements will be drawn first. |
 
 ## Base
 
 ![HEONameplate_4](img/HEONameplate_4.jpg)
 
-ネームプレートの土台部分の表示を設定します。
+This customizes the base element of the nameplate.
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Show | false | 表示切替え |
+| Show | false | Toggles Show/Hide of the nameplate base. |
 
 ## Image
 
 ![HEONameplate_5](img/HEONameplate_5.jpg)
 
-ネームプレート以外に画像を追加したい場合に設定します。
+This adds an image to be displayed other than the nameplate.
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Name |  |  |
-| Image(.png) | none | 表示したい画像(png)を設定します |
-| Position | 0,0,0 |初期位置を原点として、XY方向それぞれ-1.0～1.0の幅2.0mの間で位置を調整できます |
-| Scale | 0,0,0 | 画像の大きさを調整します |
-| Z | 0 | 描画順を設定します。値が小さい順に描画されます |
+| Name |  | Designates a name for the image (which will not affect in-world display). This can be used as a label for the image for convenience. (e.g. Base White). |
+| Image(.png) | none | Designates an image (such as icons) to be displayed on the nameplate other than the avatar icon.
+| Position | 0,0,0 | The billboard polygon has a 2.0 width between -0.1~0.1 on each XY axis, which can be adjusted to move the image's position. |
+| Scale | 0,0,0 | Adjust the scale of the image. |
+| Z | 0 | Adjust the draw order of the image. smaller valued elements will be drawn first. |
+
+As an example, by using this setting a white image can be displayed as below:
+
+![HEONameplate_9](img/HEONameplate_9.jpg)
 
 ## Mic Icon
 
 ![HEONameplate_6](img/HEONameplate_6.jpg)
 
-マイクのアイコンの表示を設定します。
+This customizes the Mic Icon element of the nameplate.
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Show | false | 表示切替え |
-| Adjust Position | false |
-| Position | 0,0,0 | 初期位置を原点として、XY方向それぞれ-1.0～1.0の幅2.0mの間で位置を調整できます |
-| Scale | 0,0,0 | アイコンの大きさを調整します |
-| Z | 0 | 描画順を設定します。値が小さい順に描画されます |
+| Show | false | Toggles Show/Hide of the mic icon. |
+| Adjust Position | false | Adjust the relative position of the mic icon. `adjustoffsetN` is offset from the mic icon's baseTextures 0,1, and 2. The initial value is a sample, and Adjust Position must be true to enable adjustment. |
+| Position | 0,0,0 | The billboard polygon has a 2.0 width between -0.1~0.1 on each XY axis, which can be adjusted to move the mic icon's position. |
+| Scale | 0,0,0 | Adjust the scale of the mic icon. |
+| Z | 0 | Adjust the draw order of the mic icon. smaller valued elements will be drawn first. |
 
 ## Name
 
 ![HEONameplate_7](img/HEONameplate_7.jpg)
 
-プレイヤーの名前の表示を設定します。
+This customizes the name element of the nameplate.
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Show | false | 表示切替え |
+| Show | false | Toggles Show/Hide of the name. |
 
 ## Text
 
 ![HEONameplate_8](img/HEONameplate_8.jpg)
 
-プレイヤー名以外にテキストを表示したい場合に設定します。
+This adds a text element to display other than the player's name.
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Name | | |
-| Font Size | 0 |　|
-| Texture Size | 0,0 |  |
-| Color |　black | テキストの色を設定します |
-| Text | | 表示するテキストを設定します |
-| Position | 0,0,0 |初期位置を原点として、XY方向それぞれ-1.0～1.0の幅2.0mの間で位置を調整できます |
-| Scale | 0,0,0 | テキストの大きさを調整します |
-| Z | 0 | 描画順を設定します。値が小さい順に描画されます |
+| Name |  | Designates a name for the text (which will not affect in-world display). This can be used as a label for the text for convenience. |
+| Font Size | 0 | Designates the font size.  |
+| Texture Size | 0,0 | Designates the texture size of the text's background. **Caution: This value must be a power of 2!** |
+| Color |　black | Designates the text color. |
+| Text | | Designates the text to be displayed. |
+| Position | 0,0,0 | The billboard polygon has a 2.0 width between -0.1~0.1 on each XY axis, which can be adjusted to move the text's position. |
+| Scale | 0,0,0 | Adjust the scale of the text. |
+| Z | 0 | Adjust the draw order of the text. smaller valued elements will be drawn first. |
