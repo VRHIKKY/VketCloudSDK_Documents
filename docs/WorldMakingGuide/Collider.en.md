@@ -34,7 +34,7 @@ Each Callback function is described on the following pages:
 
 ## Tips: Implementing staircase colliders
 
-When creating stairs in a world, [Mesh Colliders](../HEOComponents/HEOMeshCollider.md) or Box Colliders tend to cause camera shakes on stepping on, and requiring the player to jump when step height is too high. This may cause unintended stress when walking around!
+When creating stairs in a world, [Mesh Colliders](../HEOComponents/HEOMeshCollider.md) or Box Colliders tend to cause camera shakes on stepping on, and requiring the player to jump when step height is too high. This may cause unintentional stress when walking around!
 
 ![ColliderTips_Stair_1](./img/ColliderTips_Stair_1.jpg)
 
