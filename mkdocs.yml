@@ -222,9 +222,10 @@ nav:
     - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
     - HEOField: HEOComponents/HEOField.md
     #- HEOInfo: HEOComponents/HEOInfo.md #整備中
+    - HEOLODLevel: HEOComponents/HEOLODLevel.md
     - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
     - HEOMirror: HEOComponents/HEOMirror.md
-    - HEOLODLevel: HEOComponents/HEOLODLevel.md
+    - HEONameplate: HEOComponents/HEONameplate.md
     - HEOObject: HEOComponents/HEOObject.md
     #- HEOObjectType: HEOComponents/HEOObjectType.md #整備中
     - HEOParticle: HEOComponents/HEOParticle.md
