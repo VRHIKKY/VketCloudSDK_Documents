@@ -568,22 +568,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    コライダーの付け方
+  <a href="#how-to-setup-colliders" class="md-nav__link">
+    How to setup Colliders
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#action-trigger-heliscript" class="md-nav__link">
-    Action Trigger / HeliScriptでの物理演算・コライダーについて
+  <a href="#using-colliders-and-physics-in-action-trigger-heliscript" class="md-nav__link">
+    Using Colliders and Physics in Action Trigger / HeliScript
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tips" class="md-nav__link">
-    Tips: 階段にコライダーを設置する際の注意点
+  <a href="#tips-implementing-staircase-colliders" class="md-nav__link">
+    Tips: Implementing staircase colliders
   </a>
   
 </li>
@@ -1274,6 +1274,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1448,6 +1450,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../HEOComponents/HEOLODLevel.html" class="md-nav__link">
+        HEOLODLevel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../HEOComponents/HEOMeshCollider.html" class="md-nav__link">
         HEOMeshCollider
       </a>
@@ -1476,8 +1492,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../HEOComponents/HEOLODLevel.html" class="md-nav__link">
-        HEOLODLevel
+      <a href="../HEOComponents/HEONameplate.html" class="md-nav__link">
+        HEONameplate
       </a>
     </li>
   
@@ -5095,22 +5111,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    コライダーの付け方
+  <a href="#how-to-setup-colliders" class="md-nav__link">
+    How to setup Colliders
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#action-trigger-heliscript" class="md-nav__link">
-    Action Trigger / HeliScriptでの物理演算・コライダーについて
+  <a href="#using-colliders-and-physics-in-action-trigger-heliscript" class="md-nav__link">
+    Using Colliders and Physics in Action Trigger / HeliScript
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tips" class="md-nav__link">
-    Tips: 階段にコライダーを設置する際の注意点
+  <a href="#tips-implementing-staircase-colliders" class="md-nav__link">
+    Tips: Implementing staircase colliders
   </a>
   
 </li>
@@ -5129,32 +5145,32 @@
                 
                 
                 <h1 id="how-to-use-colliders-tips">How to use Colliders / Tips</h1>
-<p>Vket Cloudでは、UnityのコライダーにHEOComponentを付与することで壁や床などの役割だけではなく、<a href="../WorldOptimization/OcclusionCulling.html">オクルージョン</a>、<a href="../HEOComponents/HEOField.html">動的ローディング</a>、<a href="../HEOComponents/HEOCollider.html#_1">クリック / 入退場 / 視野判定</a>、<a href="PhysicsEngine.html">物理演算</a>など様々な振る舞いをワールド上で行うことができます。<br></p>
-<h2 id="_1">コライダーの付け方</h2>
+<p>On Vket Cloud, the Unity Collider can be modified by attaching HEOComponents, which can be used for various functions not only regular wall and floor collisions. Features involving colliders include <a href="../WorldOptimization/OcclusionCulling.html">Occlusion Culling</a>, <a href="../HEOComponents/HEOField.html">Dynamic Loading</a>, <a href="../HEOComponents/HEOCollider.html#_1">Click / In-Out / In-View Detection</a>, and <a href="PhysicsEngine.html">Physics</a>.</p>
+<h2 id="how-to-setup-colliders">How to setup Colliders</h2>
 <p><img alt="HEOCollider_1" src="../HEOComponents/img/HEOCollider_1.jpg" /></p>
-<p>VketCloudSDKでは、Unityコライダーに対応するHEOComponentをそれぞれアタッチすることでワールド上で扱えるようになります。<br>
-コライダーの設定方法・各設定項目の詳細は各ページをご確認ください。</p>
-<p><a href="../HEOComponents/HEOCollider.html">HEOCollider</a> : コライダーにおける基本的なコンポーネントです。</p>
-<p>以下のコンポーネントは単体では使用せず、<a href="../HEOComponents/HEOCollider.html">HEOCollider</a>と組み合わせて使用します。</p>
-<p><a href="../HEOComponents/HEOAreacollider.html">HEOAreaCollider</a> : プレイヤーの入退場など、特定の範囲の内外でアクションを起こしたい場合に使用します。</p>
-<p><a href="../HEOComponents/HEOMeshCollider.html">HEOMeshCollider</a> : UnityのMesh ColliderをVket Cloudにて使用したい場合に付与します。</p>
-<p>HEOCylinderCollider : <a href="PhysicsEngine.html">物理演算</a>にてUnityのCylinder Colliderを物理演算させたい場合に使用します。<br>
-なお、Cylinderは物理演算以外には使えないためご注意ください。</p>
-<h2 id="action-trigger-heliscript">Action Trigger / HeliScriptでの物理演算・コライダーについて</h2>
-<p>VketCloudSDKにおいて、コライダーはクリックや<a href="../HEOComponents/HEOAreacollider.html">HEOAreaCollider</a>を使用した入退場判定によってアクションを起こすことができます。
-詳しくは<a href="../Actions/ActionsOverview.html">Actionについて</a>をご確認ください。</p>
-<p>また、コライダーはその範囲内外にてHeliScriptのコールバック関数を呼び、様々なギミックの作成に役立てられます。<br>
-各関数の挙動は以下のページにて記述しております。</p>
+<p>On VketCloudSDK, setting a corresponding HEOComponent to each Unity Colliders will enable it to be used in world.<br>
+See the following pages for each collider setup and details.</p>
+<p><a href="../HEOComponents/HEOCollider.html">HEOCollider</a> : The standard component for handling colliders.</p>
+<p>The components below are meant to be combined with <a href="../HEOComponents/HEOCollider.html">HEOCollider</a> on use.</p>
+<p><a href="../HEOComponents/HEOAreacollider.html">HEOAreaCollider</a> : Used for triggering actions when player is in/out of the area.</p>
+<p><a href="../HEOComponents/HEOMeshCollider.html">HEOMeshCollider</a> : This component is attached when using the Unity Mesh Collider on Vket Cloud.</p>
+<p>HEOCylinderCollider : Used for enabling <a href="PhysicsEngine.html">Physics</a> for the Unity Cylinder Collider.<br>
+Note that Cylinders cannot be used other than simulating physics.</p>
+<h2 id="using-colliders-and-physics-in-action-trigger-heliscript">Using Colliders and Physics in Action Trigger / HeliScript</h2>
+<p>On the VketCloudSDK, Colliders can be used to detect user clicks and player going in/out areas by <a href="../HEOComponents/HEOAreacollider.html">HEOAreaCollider</a> to trigger actions.<br>
+For details, see <a href="../Actions/ActionsOverview.html">Actions Overview</a>.</p>
+<p>Also, Colliders can be used for calling Callback functions on HeliScript, which can be applied for creating various gimmicks.<br>
+Each Callback function is described on the following pages:</p>
 <ul>
-<li><a href="../hs/hs_component.html#-areacollider">コールバック - AreaCollider</a></li>
-<li><a href="../hs/hs_component.html#-_2">コールバック - 物理衝突判定</a></li>
-<li><a href="../hs/hs_component.html#-_3">コールバック - 視野内コライダー</a></li>
+<li><a href="../hs/hs_component.mdl#callback-areacollider">Callback - AreaCollider</a></li>
+<li><a href="../hs/hs_component.html#callback-physics-collision-detection">Callback - physics collision detection</a></li>
+<li><a href="../hs/hs_component.html#callback-in-field-collider-detection">Callback - In-field collider detection</a></li>
 </ul>
-<h2 id="tips">Tips: 階段にコライダーを設置する際の注意点</h2>
-<p>ワールドに階段を設定する際、<a href="../HEOComponents/HEOMeshCollider.html">Mesh Collider</a>あるいはBox Colliderを使用してコライダーを設定すると移動時にガタつきやすく、一段一段の高さによってはジャンプを要するため、プレイヤーにとってストレスとなりうる可能性があります。</p>
+<h2 id="tips-implementing-staircase-colliders">Tips: Implementing staircase colliders</h2>
+<p>When creating stairs in a world, <a href="../HEOComponents/HEOMeshCollider.html">Mesh Colliders</a> or Box Colliders tend to cause camera shakes on stepping on, and requiring the player to jump when step height is too high. This may cause unintentional stress when walking around!</p>
 <p><img alt="ColliderTips_Stair_1" src="img/ColliderTips_Stair_1.jpg" /></p>
 <p><img alt="ColliderTips_Stair_1_Result" src="img/ColliderTips_Stair_1_Result.gif" /></p>
-<p>そこで、Box Colliderを斜めに設置して坂状にすることで、滑らかにのぼりやすい階段が設置できます。</p>
+<p>Therefore, smoother stairs can be implemented by placing a diagonal Box Collider in a slope-like manner.</p>
 <p><img alt="ColliderTips_Stair_2" src="img/ColliderTips_Stair_2.jpg" /></p>
 <p><img alt="ColliderTips_Stair_2_Result" src="img/ColliderTips_Stair_2_Result.gif" /></p>
                 
