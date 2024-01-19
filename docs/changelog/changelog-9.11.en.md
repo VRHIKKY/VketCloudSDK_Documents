@@ -19,7 +19,7 @@
   - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/AboutVketCloudSDK/SetupSDK_external.html)
     - Updated few images of Install Wizard
 - First Steps
-  - [World Upload](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/FirstStep/WorldUpload.html)
+  - [World Upload](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/Fir    stStep/WorldUpload.html)
     - Added troubleshooting when handling multiple scenes in a single project
 - World Making Guide
   - [Specification Limits](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/UnityGuidelines.html)
