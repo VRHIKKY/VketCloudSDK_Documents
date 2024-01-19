@@ -1,214 +1,214 @@
 # Particle Editor - Properties
 
-パーティクルエディターでは、以下の設定の編集によって様々なパーティクル表現を作ることができます。
+Using the particle editor, diverse particle effects can be created by editing the following settings.
 
 ## Transform
 
 ![pe_property_1](pe_image/pe_property_1.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Position | 0,0,0 | パーティクルの生成位置 |
-| Rotation | -90,0,0 | パーティクルの生成角度 |
-| Scale | 1,1,1 | パーティクルの大きさ |
+| Position | 0,0,0 | Emitting position of particles |
+| Rotation | -90,0,0 | Emitting rotation of particles  |
+| Scale | 1,1,1 | Scale of each particle |
 
 ## Main
 
 ![pe_property_2](pe_image/pe_property_2.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Name | Particle00 | パーティクル名 |
-| Texture |  | パーティクルのベースとなる画像 |
-| Color | RGBA(255,255,255,255) | パーティクルのベース色 |
-| Emission Color | RGBA(0,0,0,0) | パーティクルの発光色 |
-| Duration | 5.00 | パーティクルの寿命（秒単位） |
-| Loop | True | パーティクルの寿命が過ぎた後に再生成（ループ）するか設定します |
-| Start Delay | 0.00 | パーティクルの生成開始までの待ち時間（秒単位） |
-| Start Lifetime | 5.00 | パーティクル生成時の寿命（秒単位） |
-| Start Speed | 5.00 | パーティクル生成時の速度(m/s単位) |
-| Start Size | 1.00 | パーティクル生成時の大きさ |
-| Start Color | RGBA(255,255,255,255) | パーティクルの生成時の色 |
-| Gravity Modifier | 0.00 | パーティクルにかかる重力の値 |
-| Max Particles | 1000 | パーティクルが放出される最大の数 |
+| Name | Particle00 | Name of particle |
+| Texture |  | Base texture of particle |
+| Color | RGBA(255,255,255,255) | Base color of particle |
+| Emission Color | RGBA(0,0,0,0) | Emission color of particle |
+| Duration | 5.00 | Particle duration (seconds) |
+| Loop | True | Toggles loop emission of particles after its duration is over |
+| Start Delay | 0.00 | Delay time for particle emission  (seconds) |
+| Start Lifetime | 5.00 | Initial Lifetime of particle on emission (seconds) |
+| Start Speed | 5.00 | Initial speed of particle on emission (m/s) |
+| Start Size | 1.00 | Initial size of particle on emission |
+| Start Color | RGBA(255,255,255,255) | Initial color of particle on emission |
+| Gravity Modifier | 0.00 | Gravity bias on particles |
+| Max Particles | 1000 | Maximum particle count allowed to be emitted |
 
-!!! note "パーティクルの色について"
-    パーティクルの色は以下のように決定されます：<br>
-    Color + Emission Color (加算) * Start Color (乗算)<br>
-    なお、[Color over Lifetime](#color-over-lifetime)が有効の際は本設定に従わないためご注意ください。<br>
-    また、Start Colorについては次回SDKアップデートにて廃止される予定です。
+!!! note "Designating particle colors"
+    The particle colors are decided as below:<br>
+    Color + Emission Color (Addition) * Start Color (multiplication)<br>
+    Please note that the color decided will not be used when [Color over Lifetime](#color-over-lifetime) is enabled.<br>
+    Also, Start Color is planned to be deprecated on the next SDK update.
 
-!!! note "Constant / Rand Twoについて"
-    数値設定におけるConstant / Rand Twoは以下のように定義されます。<br>
-    Constant:　固定値  Rand Two: 設定した二つの値の間をランダムに移行する
+!!! note "About Constant / Rand Two"
+    The Constant / Rand Two options on designating values is defined as follows:<br>
+    Constant: Constant value  Rand Two: Value moves randomly between the designated two values
 
 ## Emission
 
 ![pe_property_3](pe_image/pe_property_3.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Rate Over Time | 10.00 | 1秒あたりのパーティクル生成数 |
-| Rate Over Distance | 0.00 | パーティクル座標の移動率に応じて生成されるパーティクル数の変化値 |
+| Rate Over Time | 10.00 | Particle emission rate per second |
+| Rate Over Distance | 0.00 | Particle Emission rate change per emitting position change from its original position |
 
 !!! bug "Rate Over Distance"
-    Rate Over DistanceについてはVer9.11現在設定が反映されない状態を確認しております。<br>
-    恐れ入りますが、修正までお待ちいただければと思います。
+    Rate Over Distance is confirmed to be malfunctioning on Ver9.11.<br>
+    We ask you for your patience as fix is underway.
 
 ## Shape
 
 ![pe_property_4](pe_image/pe_property_4.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Shape | Cone | パーティクルが放出される軌道<br>Sphere: 球形 Cone: 円錐形 Circle: 円形 Hemisphere: 半球形 |
-| Angle | 25.00 | パーティクルの放出軌道の角度 |
-| Radius | 1.00 | パーティクルの放出軌道の半径 |
-| Radius Thickness | 1.00 | パーティクルの放出体積の比率。<br> 0.00: 軌道の外面からの放出 1.00: 軌道全体から放出 |
-| Arc | 360.00 | 放出の円弧の角度を設定します |
-| Arc Mode | Random | 円弧の周りでのパーティクルの生成方法を設定します。<br> Random:円弧の周囲にランダム生成 Loop:円弧の周囲にて順番に生成 |
-| Arc Speed | 1.00 | 放出位置が円弧の周囲を移動する速度を設定します |
+| Shape | Cone | Shape of particle's trajectory. Options are as follows: <br>Sphere, Cone, Circle, Hemisphere |
+| Angle | 25.00 | Angle of particle emission shape |
+| Radius | 1.00 | Radius of particle emission shape |
+| Radius Thickness | 1.00 | Thickness rate for particle emission.<br> 0.00: Emission from the rim of the trajectory 1.00: Emission from the entire shape of the trajectory |
+| Arc | 360.00 | Angle of the emission arc |
+| Arc Mode | Random | Emission mode of how to emit particles on the arc.<br> Random: Random emission around the arc Loop: Ordered emission around the arc |
+| Arc Speed | 1.00 | Designates speed of changing emission positions |
 
-!!! note "Shapeの設定項目について"
-    Ver9.11バージョンのエディターではCone以外のShapeにした際に一部の設定が切り替わらない現象が確認されています。
-    恐れ入りますが、修正までお待ちいただければと思います。
+!!! bug "About Shape settings"
+    On the Ver9.11 editor, some settings may not change as intended when changing Shape to other shapes than Cone.
+    We ask you for your patience as fix is underway.
 
 ## Velocity over Lifetime
 
 ![pe_property_5](pe_image/pe_property_5.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Enable | false | 本機能のオンオフ |
-| Linear | 0,0,0 | パーティクル放出中の速度が値に沿って変化します |
-| Orbital | 0,0,0 | パーティクル放出中の環状の加速度が値に沿って変化します |
-| Offset | 0,0,0 | 環状パーティクルの中心位置が変化します |
+| Enable | false | Enable/Disable this feature |
+| Linear | 0,0,0 | Velocity change during particle emission on each axis |
+| Orbital | 0,0,0 | Orbital velocity change during particle emission on each axis |
+| Offset | 0,0,0 | Offset for orbital particles' center position |
 
-!!! bug "Orbital, Offsetについて"
-    本値は現在未使用のパラメーターです。
+!!! bug "About Orbital and Offset"
+    These values are currently unused.
 
 ## Limit Velocity over Lifetime
 
 ![pe_property_6](pe_image/pe_property_6.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Enable | false | 本機能のオンオフ |
-| Separate Axis | false | 設定をする際に軸をX,Y,Zに分けます |
-| Speed | 0,0,0 | パーティクルが設定値以上の速度にならないように設定できます |
-| Damp | 0.00 | パーティクルの速度が上限速度を超えた際の減衰量を設定します |
-| Drag | 0.00 | パーティクルの速度の減衰を設定します |
-| Multiply by Size | false | パーティクルの大きさが大きいほど、減衰が大きくなるように設定します |
-| Multiply by Velocity | false | パーティクルの速度が早いほど、より減衰の影響が大きくなるように設定します |
+| Enable | false | Enable/Disable this feature |
+| Separate Axis | false | Separates axis to X, Y, and Z for each value settings |
+| Speed | 0,0,0 | Designates the speed limit of the particle |
+| Damp | 0.00 | Designates the damp rate when particle velocity is over the speed limit |
+| Drag | 0.00 | Sets the drag rate of particle velocity |
+| Multiply by Size | false | When enabled, drag effect will be bigger when particle size is bigger |
+| Multiply by Velocity | false |  When enabled, drag effect will be bigger when particle velocity is bigger |
 
 !!! bug "Drag"
-    本値は現在未使用のパラメーターです。
+    This value is currently unused.
 
 ## Size over Lifetime
 
 ![pe_property_7](pe_image/pe_property_7.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Enable | false | 本機能のオンオフ |
-| Separate Axis | false | 設定をする際に軸をX,Y,Zに分けます |
-| Size | 0.00 | 時間経過による大きさの変化値を設定します |
-| Curve Mode | Constant | 大きさの変化の仕方を設定します。<br> Constant: 設定した値の分だけサイズが変化 Two Constants:  Min値 (パーティクル出現時) --> Max値 (パーティクル消失時)までイージングに沿って変化 |
-| Easing Type | Linear | イージングの種類を設定します。|
+| Enable | false | Enable/Disable this feature |
+| Separate Axis | false | Separates axis to X, Y, and Z for each value settings |
+| Size | 0.00 | Set the size value change over lifetime |
+| Curve Mode | Constant | Designates the method of size change. <br> Constant: Changes value on a constant value Two Constants: Changes value from Min (Particle spawn) --> Max(Particle despawn) according to easing curve |
+| Easing Type | Linear | Designates the easing curve |
 
 ## Color over Lifetime
 
 ![pe_property_8](pe_image/pe_property_8.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Enable | false | 本機能のオンオフ |
-| Gradient | Blend | 時間経過によって設定した色に混ざるかに否かを設定します。 <br> Blend: Color0,1が混ざったあとColor1に変化する<br> Fixed:Color0,1が混ざらずにColor1に変化する |
-| Num Colors | 2 | 経過する色の数を設定します |
-| Color0 | 0.00 , RGBA(255,255,255,255) | パーティクル生成後に何秒目に指定の色に変化するか設定します |
-| Color1 | 1.00 , RGBA(255,255,255,255) | 同上 |
-| Num Alpha | 2 |  経過するα値の数を設定します |
-| Alpha0 | 0.00 , 0.00 | パーティクル生成後に何秒目に指定の割合のアルファに変化するか設定します |
-| Alpha1 | 1.00 , 1.00 | 同上 |
+| Enable | false | Enable/Disable this feature |
+| Gradient | Blend | Designates whether to blend to designated color over lifetime. <br> Blend: Particle color will change to Color1, after blending Color0 and Color1 <br> Fixed: Particle color will change to Color1 without blending  |
+| Num Colors | 2 | Designates the number of passing colors |
+| Color0 | 0.00 , RGBA(255,255,255,255) | Designates the particle's color on the specified time (second) after emission |
+| Color1 | 1.00 , RGBA(255,255,255,255) | Same as above |
+| Num Alpha | 2 |  Designates the number of passing alpha values |
+| Alpha0 | 0.00 , 0.00 | Designates the particle's alpha value on the specified time (second) after emission |
+| Alpha1 | 1.00 , 1.00 | Same as above |
 
 ## Rotation over Lifetime
 
 ![pe_property_9](pe_image/pe_property_9.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Enable | false | 本機能のオンオフ |
-| Curve Mode | Constant | 回転値の変化の仕方を設定します。<br> Constant: 設定した値の分だけ回転値が変化 Two Constants:  Min値 (パーティクル出現時) --> Max値 (パーティクル消失時)までイージングに沿って変化 |
-| Velocity | 0,0,0 | 時間経過による回転値の変化を設定します。 |
-| Easing Type | Linear | イージングの種類を設定します。|
+| Enable | false | Enable/Disable this feature |
+| Curve Mode | Constant | Designates the method of rotation change. <br> Constant: Changes value on a constant value Two Constants: Changes value from Min (Particle spawn) --> Max(Particle despawn) according to easing curve |
+| Velocity | 0,0,0 | Designates the rotation change over lifetime |
+| Easing Type | Linear | Designates the easing curve |
 
 ## Noise
 
 ![pe_property_10](pe_image/pe_property_10.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Enable | false | 本機能のオンオフ |
-| Strength | 0.00 | ノイズ強度（ノイズ影響時の速度の変化値）を設定します |
-| Frequency | 0.50 | パーティクル放出時の方向と素早さが変化する頻度を設定します |
-| Scroll Speed | 0.00 | ノイズ発生時の不規則さを設定します |
-| Damping | false | StrengthがFrequencyに比例するように設定します |
-| Octave Count | 1.00 | ノイズのレイヤー数を設定します |
-| Octave Multiplier | 0.50 | ノイズのレイヤー数に応じた強度減少量を設定します |
-| Octave Scale | 2.00 | ノイズのレイヤー数に応じた周波数減少量を設定します |
-| Quality | High(3D) | ノイズの品質をLow(1D),Medium(2D),High(3D)から設定します |
+| Enable | false | Enable/Disable this feature |
+| Strength | 0.00 | Designates the noise strength (velocity bias strength when noise is on) |
+| Frequency | 0.50 | Designates the frequency of noise, which affects the particle direction and speed |
+| Scroll Speed | 0.00 | Designates the irregularity of noise being on |
+| Damping | false | Enable/Disable the Strength value damping according to Frequency |
+| Octave Count | 1.00 | Designates layers(octaves) for noise |
+| Octave Multiplier | 0.50 | Designates the Strength decrease rate according to octave count |
+| Octave Scale | 2.00 |  Designates the Frequency decrease rate according to octave count |
+| Quality | High(3D) | Designates noise quality from Low(1D), Medium(2D), and High(3D) |
 
 ## Sub Emitters
 
 ![pe_property_11](pe_image/pe_property_11.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Enable | false | 本機能のオンオフ |
-| Particle Index | 0 | 指定した番号のパーティクルを生成します |
-| Type | Birth | サブパーティクル生成の判定を主パーティクルのBirth(生成時)またはDeath(消滅時)に設定します |
-| Probability | 0.00 | サブパーティクル生成の判定の発生割合を設定します |
+| Enable | false | Enable/Disable this feature |
+| Particle Index | 0 | Emits the designated particle by particle no. |
+| Type | Birth | Emits the sub particle on the main particle's Birth or Death |
+| Probability | 0.00 | Designates the probability of sub particle emitting |
 
-!!! note "Probabilityが1以上設定できてしまう不具合"
-    現バージョンのエディターではProbability値が1.00以上に設定できる不具合が確認されています。<br>
-    次回最新版にて修正される予定です。
+!!! bug "Probability being able to set over 1"
+    On the current SDK version's editor, an issue is recognized which the Probability value can be set over than 1.00.<br>
+    This issue is planned to be fixed on the next version.
 
-!!! caution "動作安定性について"
-    本機能は現バージョンのエディターでは動作が不安定なものとなっております。<br>
-    複数パーティクルを使用したい場合は別途作成することをおすすめいたします。
+!!! caution "Performance Instability"
+    This feature is unstable on the current version's particle editor.<br>
+    Creating another particle is recommended for using multiple particles.
 
 ## Texture Sheet Animation
 
 ![pe_property_12](pe_image/pe_property_12.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Tiles | 0,0 | テクスチャを分割して作るタイル数を変更します |
+| Tiles | 0,0 | Designates the number of tiles created by splitting the texture |
 
 ## Trail
 
 ![pe_property_13](pe_image/pe_property_13.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Enable | false | トレイル機能(トレイルエフェクト)のオンオフを設定します |
+| Enable | false | Enable/Disable Trail Effects |
 
-!!! bug "本機能について"
-    本機能はVer9.11現在設定できない状態が確認されております。<br>
-    代替として、Render Setting / Render ModeをStretchedに切り替えると疑似的な実装が可能です。
+!!! bug "Feature unusable"
+    On the current SDK version's editor, this feature is unusable due to technical issues.<br>
+    As a substitute, setting "Render Setting / Render Mode" to Streched will create a pseudo-trail effect.
 
 ## Render Setting
 
 ![pe_property_14](pe_image/pe_property_14.jpg)
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Render Mode | Billboard | パーティクルの表示方向を設定します<br> Billboard: 常にカメラ方向を向きます Stretched: カメラの方向を向き、大きさの変更が適用されます |
-| Speed Scale | 0.00 | 速度に比例して大きさを変更します |
-| Length Scale | 0.00 | 大きさを横向きに変更します |
-| Render Alignment | View | パーティクルの整列方法を設定します。<br> View: カメラの平面に対して整列 Local: ゲームオブジェクトのTransformコンポーネントに対して整列 Velocity: パーティクルの進行方向に対して整列 |
+| Render Mode | Billboard | Designates the particle render mode<br> Billboard: Always face the camera Stretched: Faces the camera, and allows scale change |
+| Speed Scale | 0.00 | Designates the scale change according to particle speed |
+| Length Scale | 0.00 | Changes the particle scale horizontally |
+| Render Alignment | View | Designates the particle alignment. <br> View: align according to camera Local: align according to gameobject's Transform component Velocity: align according to particle direction |
 
-## Easing Typeについて
+## About Easing Type
 
-パーティクルエディタでは各設定の`Easing Type`にてイージング関数を設定することができます。<br>
-それぞれの関数の概説については一つの参考として[イージング関数チートシート](https://easings.net/ja){target=_blank}を参照してください。
+On each features which includes `Easing Type`, an easing curve can be designated to determine its behavior.<br>
+As a reference, see [Easing Functions Cheat Sheet](https://easings.net){target=_blank} for easing curve definition and examples.
