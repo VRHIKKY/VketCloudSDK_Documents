@@ -30,7 +30,7 @@
     - Miscellaneous edits and reformats
     - Added how to use Avatars and caution on editing preset avatar files
   - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/Collider.html)
-    - Added how to use colliders (Separated from [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/PhysicsEngine.html))*English Version WIP
+    - Added how to use colliders (Separated from [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/PhysicsEngine.html))
     - Added tip on creating collision for stairs
   - [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/PhysicsEngine.html)
     - Added Translation
