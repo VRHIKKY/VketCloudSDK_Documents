@@ -22,7 +22,7 @@ Vket Cloudにて、プレイヤーは自分の[マイアバター](../AboutVketC
 
 SDKデフォルトのダミーアバター：
 
-![SmartphoneOptimization_1](img/SmartphoneOptimization_1.png)
+![SmartphoneOptimization_1](img/SmartphoneOptimization_1.jpg)
 
 また、マイアバターを持っていない/利用が制限されている、あるいは未ログインのユーザーはワールド入場時に自動的に[プリセットアバター](../WorldMakingGuide/PresetAvatar.md)の1番目のアバターが割り当てられます。<br>
 
@@ -34,6 +34,41 @@ SDKデフォルトのダミーアバター：
 
 ## ロード時間の短縮のために
 
-## テクスチャのフォーマッティング
+プレイヤーにとって、ワールド入場時のロード時間はなるべく短い方が体験時のストレスが少ない傾向にあります。<br>
+SDKでは、入場前のロード時間を短縮するためにワールドのリソースを分割する[動的ローディング](../HEOComponents/HEOField.md)が使用できます。
+
+特にスマートフォンなどPCに比べて処理に制約があるデバイスにおいては、例として入口 / 廊下 / メインの部屋...と細かくワールド内を分けることで一度に読み込まれるリソース量を分割すると負荷軽減の面において効果的です。<br>
+また、ブラウザの開発コンソールにおいてワールド入場時の読み込まれるリソースを分析することで、読み込み時間の負荷の原因となっているリソースを探し出すのも有効です。
+
+詳細な実装方法は[動的ローディング](../HEOComponents/HEOField.md)をご参照ください。
+
+## テクスチャの再フォーマットと負荷軽減
+
+Vket Cloudにおいてスマートフォンにおける快適な動作を実現するためには、ロード時間と描画のボトルネックとなるテクスチャの削減と圧縮は非常に効果的といえます。
+
+SDKではフォーマットツールとして[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)が用意されています。<br>
+これを使用すると、png以外 / 縦横サイズが2の累乗でないテクスチャ画像を[Vket Cloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md#_2)に合わせてフォーマットするため、なるべく多くのテクスチャを変換することをお勧めします。<br>
+このとき、テクスチャの解像度を下げる設定もツール内で併せて行うと、リソース読み込み時の負荷軽減につながります。
+
+![ExportCompressedTexture_1](../SDKTools/img/ExportCompressedTexture_1.jpg)
+
+テクスチャの圧縮方法については[テクスチャ圧縮](./TextureCompression.md)及び[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)をご参照ください。
 
 ## ワールド内動作の改善とワールドの導線設計
+
+ワールド内では[デバッグモード](../WorldEditingTips/DebugMode.md)を有効にするとFPS、ドローコールなどの情報が見られます。
+
+![DebugMode_4](../WorldEditingTips/img/DebugMode_4.jpg)
+
+なお、Static BatchingなどといったUnity側の軽減機能はVket Cloudにないため、同メッシュ同マテリアルのオブジェクトだとしても、置いた分だけドローコールが増えます。
+
+そのため、ワールド制作者は明示的な容量削減を行う必要があります。具体的には、以下のような作業が有効です：
+
+- 行ける範囲外のオブジェクトは削除
+- モデリングツールもしくはMeshBakerなどを使用してメッシュとテクスチャを統合
+- モデリングツール上でポリゴン数を削減、マテリアルを統合
+- 遠景のビルボード（画像）化
+
+また、一度に読み込まれるリソースを削減するために、[動的ローディング](../HEOComponents/HEOField.md)及び[オクルージョンカリング](./OcclusionCulling.md)が有効です。
+
+![OcclusionCulling_Result](img/OcclusionCulling_Result.gif)

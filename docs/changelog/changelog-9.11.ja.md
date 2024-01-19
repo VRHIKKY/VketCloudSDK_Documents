@@ -9,6 +9,8 @@
   - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/SDKTools/ExportCompressedTexture.html)
 - ワールドの軽量化方法
   - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldOptimization/TextureCompression.html)
+  - [スマートフォンのためのワールド軽量化](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldOptimization/SmartphoneOptimization.html)
+
 - HEOコンポーネント
   - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOCamera.html)
   - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOMirror.html)
