@@ -31,13 +31,13 @@ As the features below causes heavier processing load, performance testing is rec
 On Vket Cloud, the player can choose their avatar from their [My Avatar](../AboutVketCloudSDK/SetupAvatar.md) or the world's [Preset Avatar](../WorldMakingGuide/PresetAvatar.md).<br>
 While this makes diversity in avatar selection, drawing avatars may cost heavier processing on worlds with many players gathering.
 
-As a solution for avatar drawing, the world can set a max polygon limit or disable My Avatars via [HEOWorldSetting / MyAvatar](../HEOComponents/HEOWorldSetting.md#_5). <br>
+As a solution for avatar drawing, the world can set a max polygon limit or disable My Avatars via [HEOWorldSetting / MyAvatar](../HEOComponents/HEOWorldSetting.md#myavatar). <br>
 For instance, on default the max polygon limit is set to 50,000, this can be revised to 20,000 on larger worlds with many players intended to gather.
 
 ![HEOWorldSetting_MyAvatar_1](../HEOComponents/img/HEOWorldSetting_MyAvatar_1.jpg)
 
-The avatars exceeding the polygon limit will be replaced automatically to the world's [Dummy Avatar](../HEOComponents/HEOWorldSetting.md#_4)<br>
-The dummy avatar can be set by exporting an [heo file](../WorldMakingGuide/HEOExporter_Tutorial.md) and allocating it on [Avatar Settings](../HEOComponents/HEOWorldSetting.md#_4).
+The avatars exceeding the polygon limit will be replaced automatically to the world's [Dummy Avatar](../HEOComponents/HEOWorldSetting.md#avatars).<br>
+The dummy avatar can be set by exporting an [heo file](../WorldMakingGuide/HEOExporter_Tutorial.md) and allocating it on [Avatar Settings](../HEOComponents/HEOWorldSetting.md#avatars).
 
 Default dummy avatar on the SDK:
 
@@ -62,7 +62,7 @@ For implementation details, see [Dynamic Loading](../HEOComponents/HEOField.md).
 For better Vket Cloud world performance on smartphones, reducing / compressing textures are vital to solve load time and drawing bottlenecks.
 
 On the SDK, [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md) is provided as a formatting tool. <br>
-By using this tool, the non-png / height or width not being a power of 2 texture images will be reformatted according to [Vket Cloud Specifications](../WorldMakingGuide/UnityGuidelines.md#_2), compressing as much textures as possible is recommended.<br>
+By using this tool, the non-png / height or width not being a power of 2 texture images will be reformatted according to [Vket Cloud Specifications](../WorldMakingGuide/UnityGuidelines.md#texture), compressing as much textures as possible is recommended.<br>
 During the reformat, the texture resolution can be reduced as well, which reduces load when loading the resources.
 
 ![ExportCompressedTexture_1](../SDKTools/img/ExportCompressedTexture_1.jpg)
