@@ -1,74 +1,89 @@
 # Optimization for Smartphones
 
-Vket Cloudは究極にはウェブブラウザが開けて、[端末スペック](../AboutVketCloudSDK/OperatingEnvironment.md)を満たすデバイスであればPC / スマートフォン / タブレット等端末の大小を問わずにアクセスできるメタバースを構築することができます。
+Ultimately, Vket Cloud can build a metaverse accessible for any device (PC, smartphone, tablets, etc.) as long as it meets the [Operating Environment](../AboutVketCloudSDK/OperatingEnvironment.md) requirements.
 
-しかし一方で、各ワールドにおける動作の快適さやストレスの少なさを実現するためにワールドの軽量化は必須であり、ワールド制作者は可能な限り動作の快適性に気を配る必要があります。<br>
-特に、スマートフォンなどPCと比べてスペックが弱めの端末にて遜色のない動作体験を作るには、PC以上に軽量化を意識した制作が重要といえます。
+However, to reduce stress during playing and increase the overall performance, the creator must make effort for optimization as much as possible.<br>
+For devices with weaker machine power (e.g. smartphones), optimization is vital to realize the same play experience as PC.
 
-以下にスマートフォン向けの対応を考える際にワールドとして気を付けるべきポイントを述べます。
+Few points on world optimization for smartphones will be discussed below.
 
-## アバターの制限について
+## Criteria for Optimization
 
-Vket Cloudにて、プレイヤーは自分の[マイアバター](../AboutVketCloudSDK/SetupAvatar.md)もしくはワールド付属の[プリセットアバター](../WorldMakingGuide/PresetAvatar.md)の二択から自身のアバターを選択できます。<br>
-これによって幅広いアバターの選択肢が生まれる一方で、大人数が集まるようなワールドではアバターの描画がデバイスにとって負荷となる場合があります。
+As an example for a criteria of smartphone optimization, world resources should be fulfilling the specs below on an average.
 
-アバターによる描画負荷の対策として、ワールド側の対策として[HEOWorldSetting / MyAvatar](../HEOComponents/HEOWorldSetting.md#_5)においてワールド内で使用できるアバターの最大ポリゴン数、あるいはマイアバターの使用に制限を設けることができます。<br>
-デフォルトでは50,000ポリゴンを上限としていますが、例として大人数が集まる場合は20,000ポリゴンまで下げる、といった設定が考えられます。
+- Total Polygon Count: Below 600k triangles
+- Texture capacity: Below 60MB
+- Average draw call: Below 300
+- Maximum draw call: Below 600
+
+The total polygon count will be displayed on build at the Console as `NumofPolygon`. *If heo files are loaded using [HEOObject](../HEOComponents/HEOObject.md), the total number will be displayed on field export.
+
+Texture capacity will can be counted by seeing the tex folder's size located under data/Field of the release folder.
+
+As the features below causes heavier processing load, performance testing is recommended on using.
+
+- Bloom effects
+- Placing multiple particles
+- Wide-range mesh colliders
+
+## Specifications on Avatars
+
+On Vket Cloud, the player can choose their avatar from their [My Avatar](../AboutVketCloudSDK/SetupAvatar.md) or the world's [Preset Avatar](../WorldMakingGuide/PresetAvatar.md).<br>
+While this makes diversity in avatar selection, drawing avatars may cost heavier processing on worlds with many players gathering.
+
+As a solution for avatar drawing, the world can set a max polygon limit or disable My Avatars via [HEOWorldSetting / MyAvatar](../HEOComponents/HEOWorldSetting.md#_5). <br>
+For instance, on default the max polygon limit is set to 50,000, this can be revised to 20,000 on larger worlds with many players intended to gather.
 
 ![HEOWorldSetting_MyAvatar_1](../HEOComponents/img/HEOWorldSetting_MyAvatar_1.jpg)
 
-この時、ポリゴン上限を超えたポリゴン数のアバターは、ワールドにて設定された[ダミーアバター](../HEOComponents/HEOWorldSetting.md#_4)に変更されます。<br>
-ダミーアバターの見た目は[heoファイル](../WorldMakingGuide/HEOExporter_Tutorial.md)の出力と[アバター設定](../HEOComponents/HEOWorldSetting.md#_4)での差し替えによって変えることができます。
+The avatars exceeding the polygon limit will be replaced automatically to the world's [Dummy Avatar](../HEOComponents/HEOWorldSetting.md#_4)<br>
+The dummy avatar can be set by exporting an [heo file](../WorldMakingGuide/HEOExporter_Tutorial.md) and allocating it on [Avatar Settings](../HEOComponents/HEOWorldSetting.md#_4).
 
-SDKデフォルトのダミーアバター：
+Default dummy avatar on the SDK:
 
 ![SmartphoneOptimization_1](img/SmartphoneOptimization_1.jpg)
 
-また、マイアバターを持っていない/利用が制限されている、あるいは未ログインのユーザーはワールド入場時に自動的に[プリセットアバター](../WorldMakingGuide/PresetAvatar.md)の1番目のアバターが割り当てられます。<br>
+Also, users without an My Avatar / not logged in, or on My Avatar disabled worlds, the 1st avatar on the [Preset Avatar](../WorldMakingGuide/PresetAvatar.md) list will be allocated automatically on world enter.<br>
 
 ![SmartphoneOptimization_2](img/SmartphoneOptimization_2.jpg)
 
-アバター自体の軽量化の方法としては、外部モデリングツールによるポリゴン数の削減と、テクスチャ容量の圧縮が考えられます。<br>
+## Reducing load time
 
-テクスチャの圧縮方法については[テクスチャ圧縮](./TextureCompression.md)をご参照ください。
+Generally, the player likes shorter load time, which contributes to waiting shorter on entering the world.<br>
+On the SDK, [Dynamic Loading](../HEOComponents/HEOField.md) is available to split world resources and reducing load time before entrance.
 
-## ロード時間の短縮のために
+For weaker devices such as smartphones, the world could be split for optimization by Lobby / Hallway / Main Room / etc. to organize the total resources loaded at once.<br>
+On browser consoles, the creator can inspect resources loaded during entrance to find out which resource is causing longer load time.
 
-プレイヤーにとって、ワールド入場時のロード時間はなるべく短い方が体験時のストレスが少ない傾向にあります。<br>
-SDKでは、入場前のロード時間を短縮するためにワールドのリソースを分割する[動的ローディング](../HEOComponents/HEOField.md)が使用できます。
+For implementation details, see [Dynamic Loading](../HEOComponents/HEOField.md).
 
-特にスマートフォンなどPCに比べて処理に制約があるデバイスにおいては、例として入口 / 廊下 / メインの部屋...と細かくワールド内を分けることで一度に読み込まれるリソース量を分割すると負荷軽減の面において効果的です。<br>
-また、ブラウザの開発コンソールにおいてワールド入場時の読み込まれるリソースを分析することで、読み込み時間の負荷の原因となっているリソースを探し出すのも有効です。
+## Reformatting / Optimizing Textures
 
-詳細な実装方法は[動的ローディング](../HEOComponents/HEOField.md)をご参照ください。
+For better Vket Cloud world performance on smartphones, reducing / compressing textures are vital to solve load time and drawing bottlenecks.
 
-## テクスチャの再フォーマットと負荷軽減
-
-Vket Cloudにおいてスマートフォンにおける快適な動作を実現するためには、ロード時間と描画のボトルネックとなるテクスチャの削減と圧縮は非常に効果的といえます。
-
-SDKではフォーマットツールとして[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)が用意されています。<br>
-これを使用すると、png以外 / 縦横サイズが2の累乗でないテクスチャ画像を[Vket Cloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md#_2)に合わせてフォーマットするため、なるべく多くのテクスチャを変換することをお勧めします。<br>
-このとき、テクスチャの解像度を下げる設定もツール内で併せて行うと、リソース読み込み時の負荷軽減につながります。
+On the SDK, [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md) is provided as a formatting tool. <br>
+By using this tool, the non-png / height or width not being a power of 2 texture images will be reformatted according to [Vket Cloud Specifications](../WorldMakingGuide/UnityGuidelines.md#_2), compressing as much textures as possible is recommended.<br>
+During the reformat, the texture resolution can be reduced as well, which reduces load when loading the resources.
 
 ![ExportCompressedTexture_1](../SDKTools/img/ExportCompressedTexture_1.jpg)
 
-テクスチャの圧縮方法については[テクスチャ圧縮](./TextureCompression.md)及び[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)をご参照ください。
+For instructions on texture compression, see [Texture Compression](./TextureCompression.md) or [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md).
 
-## ワールド内動作の改善とワールドの導線設計
+## Optimizing in-world performance and world flow
 
-ワールド内では[デバッグモード](../WorldEditingTips/DebugMode.md)を有効にするとFPS、ドローコールなどの情報が見られます。
+By enabling the [Debug Mode](../WorldEditingTips/DebugMode.md), the creator can view information such as FPS, draw call, etc.
 
 ![DebugMode_4](../WorldEditingTips/img/DebugMode_4.jpg)
 
-なお、Static BatchingなどといったUnity側の軽減機能はVket Cloudにないため、同メッシュ同マテリアルのオブジェクトだとしても、置いた分だけドローコールが増えます。
+As optimization features in Unity such as Static Baching is not supported on Vket Cloud, draw call will increase when the same mesh / same material object is duplicated.
 
-そのため、ワールド制作者は明示的な容量削減を行う必要があります。具体的には、以下のような作業が有効です：
+Therefore, the world creator must explicitly implement optimizations. The process below are considered effective:
 
-- 行ける範囲外のオブジェクトは削除
-- モデリングツールもしくはMeshBakerなどを使用してメッシュとテクスチャを統合
-- モデリングツール上でポリゴン数を削減、マテリアルを統合
-- 遠景のビルボード（画像）化
+- Deleting objects outside the accessible range
+- Merge mesh and texture using modeling tools or MeshBaker
+- Reduce polygons and merging materials on modeling tools
+- Use billboards for backgrounds
 
-また、一度に読み込まれるリソースを削減するために、[動的ローディング](../HEOComponents/HEOField.md)及び[オクルージョンカリング](./OcclusionCulling.md)が有効です。
+ALso, [Dynamic Loading](../HEOComponents/HEOField.md) and [Occlusion Culling](./OcclusionCulling.md) are also effective to reduce loads.
 
 ![OcclusionCulling_Result](img/OcclusionCulling_Result.gif)
