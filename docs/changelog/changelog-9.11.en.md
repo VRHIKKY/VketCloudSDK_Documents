@@ -3,53 +3,53 @@
 ## Added Pages
 
 - World Making Guide
-  - [Tips on using HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/HEOFieldTips.html)
+  - [Tips on using HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/HEOFieldTips.html)
 - SDK Tools
-  - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/particleeditor/pe_about_properties.html) *English Version WIP
-  - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/SDKTools/ExportCompressedTexture.html)
+  - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/particleeditor/pe_about_properties.html)
+  - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/SDKTools/ExportCompressedTexture.html)
 - World Optimization
-  - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldOptimization/TextureCompression.html)
-  - [Optimization for Smartphones](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldOptimization/SmartphoneOptimization.html)
+  - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldOptimization/TextureCompression.html)
+  - [Optimization for Smartphones](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldOptimization/SmartphoneOptimization.html)
 - HEO Components
-  - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOCamera.html)
-  - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOMirror.html)
+  - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOCamera.html)
+  - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOMirror.html)
 
 ## Edited Pages
 
 - About VketCloudSDK
-  - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/AboutVketCloudSDK/SetupSDK_external.html)
+  - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/AboutVketCloudSDK/SetupSDK_external.html)
     - Updated few images of Install Wizard
 - First Steps
-  - [World Upload](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/Fir    stStep/WorldUpload.html)
+  - [World Upload](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/FirstStep/WorldUpload.html)
     - Added troubleshooting when handling multiple scenes in a single project
 - World Making Guide
-  - [Specification Limits](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/UnityGuidelines.html)
+  - [Specification Limits](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/UnityGuidelines.html)
     - Added incompatibility of Sprite Renderer and Realtime Light
     - Deleted obsolete information on Android build
     - Added guide to HEOBackgroundTexture as an alternative implementation
     - Added incompatibility of jpg / psd, and guide to Export Compressed Texture
     - Miscellaneous edits and reformats
     - Added how to use Avatars and caution on editing preset avatar files
-  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/Collider.html)
-    - Added how to use colliders (Separated from [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/PhysicsEngine.html))*English Version WIP
+  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/Collider.html)
+    - Added how to use colliders (Separated from [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/PhysicsEngine.html))
     - Added tip on creating collision for stairs
-  - [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/PhysicsEngine.html)
+  - [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/PhysicsEngine.html)
     - Added Translation
-  - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/Skybox.html)
+  - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/Skybox.html)
     - Added guide to HEOBackgroundTexture as an alternative implementation
-  - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/PresetAvatar.html)
+  - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/PresetAvatar.html)
     - Added caution on editing preset avatar files
 - Troubleshooting
-  - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/troubleshooting/BuildError.html)
+  - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/troubleshooting/BuildError.html)
     - Added build error issue on first Build and Run on certain Mac environments
 - World Optimization
-  - [World Optimization - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/WorldMakingGuide/WorldOptimization.html)
+  - [World Optimization - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/WorldOptimization.html)
     - Added description for dynamic loading
 - HEOComponents
-  - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/HEOComponents/HEOField.html)
+  - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOField.html)
     - Added information of Tips on using HEOField page
 - HeliScript
-  - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/hs/hs_component.html)
+  - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/hs/hs_component.html)
     - Added Callback functions that can be used on SDK Ver 9.11
 
 ## Deleted Pages
