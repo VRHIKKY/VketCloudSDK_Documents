@@ -1,4 +1,7 @@
-# Added Pages
+# SDK Manual Change Log - Ver 5.4
+
+## Added Pages
+
 - [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOSpot.html)
 - [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOSpawn.html)
 - [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOShadow.html)
@@ -13,7 +16,8 @@
 - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/PresetAvatar.html)
 - [Occlusion Culling](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/OcclusionCulling.html)
 
-# Edited Pages
+## Edited Pages
+
 - [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/index.html)
     - Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/releasenote/releasenote-5.4.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/changelog/changelog-5.4.html)
 - [How to Build](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/FirstStep/BuildAndRun.html) 
@@ -31,8 +35,8 @@
     - Updated discription according to Ver5.4
     - Added explanation of audio distance falloff unsupported
 - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOWorldSetting.html)
-    - Updated discription according to Ver5.4 
-    - Added explanation of gamepad / emote related issues 
+    - Updated discription according to Ver5.4
+    - Added explanation of gamepad / emote related issues
     - Added restriction on using lights
     - Added how to create dynamic shadows using [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOShadow.html)
 - [HEOAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOAnimation.html)
@@ -42,7 +46,7 @@
 - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEOComponents/HEOField.html)
     - Added info on build error issue when uploading world with dynamic loading implemented
 - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/WorldMakingGuide/UnityGuidelines.html)
-    - Edited content according to Ver5.4 
+    - Edited content according to Ver5.4
     - Added restriction on using lights
 - [HEMAnimationConverter](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/HEMAnimationConverter/AnimationConverter.html)
     - Revised content according to Ver5.4
@@ -52,5 +56,7 @@
     - Edited content according to Ver5.4 
 - [HeliScript - String](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/en/hs/hs_string.html)
     - Updated samplecode for % operator
-# Deleted Pages
+
+## Deleted Pages
+
 - Deleted check tool on Debug Console implementation
