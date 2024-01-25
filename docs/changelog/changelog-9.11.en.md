@@ -6,7 +6,7 @@
   - [Tips on using HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/HEOFieldTips.html)
 - SDK Tools
   - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/particleeditor/pe_about_properties.html)
-  - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/ja/SDKTools/ExportCompressedTexture.html)
+  - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/SDKTools/ExportCompressedTexture.html)
 - World Optimization
   - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldOptimization/TextureCompression.html)
 - HEO Components
@@ -37,7 +37,7 @@
     - Added Translation
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/Skybox.html)
     - Added guide to HEOBackgroundTexture as an alternative implementation
-  - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/ja/WorldMakingGuide/PresetAvatar.html)
+  - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/PresetAvatar.html)
     - Added caution on editing preset avatar files
 - Troubleshooting
   - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/troubleshooting/BuildError.html)
