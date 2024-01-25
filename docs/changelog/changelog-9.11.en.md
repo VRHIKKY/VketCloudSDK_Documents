@@ -13,6 +13,7 @@
 - HEO Components
   - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOCamera.html)
   - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOMirror.html)
+  - [HEONameplate](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEONameplate.html)
 
 ## Edited Pages
 

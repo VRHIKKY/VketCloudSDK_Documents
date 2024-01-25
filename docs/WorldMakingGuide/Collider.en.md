@@ -1,46 +1,46 @@
 # How to use Colliders / Tips
 
-Vket Cloudでは、UnityのコライダーにHEOComponentを付与することで壁や床などの役割だけではなく、[オクルージョン](../WorldOptimization/OcclusionCulling.md)、[動的ローディング](../HEOComponents/HEOField.md)、[クリック / 入退場 / 視野判定](../HEOComponents/HEOCollider.md#_1)、[物理演算](./PhysicsEngine.md)など様々な振る舞いをワールド上で行うことができます。<br>
+On Vket Cloud, the Unity Collider can be modified by attaching HEOComponents, which can be used for various functions not only regular wall and floor collisions. Features involving colliders include [Occlusion Culling](../WorldOptimization/OcclusionCulling.md), [Dynamic Loading](../HEOComponents/HEOField.md), [Click / In-Out / In-View Detection](../HEOComponents/HEOCollider.md#_1), and [Physics](./PhysicsEngine.md).
 
-## コライダーの付け方
+## How to setup Colliders
 
 ![HEOCollider_1](../HEOComponents/img/HEOCollider_1.jpg)
 
-VketCloudSDKでは、Unityコライダーに対応するHEOComponentをそれぞれアタッチすることでワールド上で扱えるようになります。<br>
-コライダーの設定方法・各設定項目の詳細は各ページをご確認ください。
+On VketCloudSDK, setting a corresponding HEOComponent to each Unity Colliders will enable it to be used in world.<br>
+See the following pages for each collider setup and details.
 
-[HEOCollider](../HEOComponents/HEOCollider.md) : コライダーにおける基本的なコンポーネントです。
+[HEOCollider](../HEOComponents/HEOCollider.md) : The standard component for handling colliders.
 
-以下のコンポーネントは単体では使用せず、[HEOCollider](../HEOComponents/HEOCollider.md)と組み合わせて使用します。
+The components below are meant to be combined with [HEOCollider](../HEOComponents/HEOCollider.md) on use.
 
-[HEOAreaCollider](../HEOComponents/HEOAreacollider.md) : プレイヤーの入退場など、特定の範囲の内外でアクションを起こしたい場合に使用します。
+[HEOAreaCollider](../HEOComponents/HEOAreacollider.md) : Used for triggering actions when player is in/out of the area.
 
-[HEOMeshCollider](../HEOComponents/HEOMeshCollider.md) : UnityのMesh ColliderをVket Cloudにて使用したい場合に付与します。
+[HEOMeshCollider](../HEOComponents/HEOMeshCollider.md) : This component is attached when using the Unity Mesh Collider on Vket Cloud.
 
-HEOCylinderCollider : [物理演算](./PhysicsEngine.md)にてUnityのCylinder Colliderを物理演算させたい場合に使用します。<br>
-なお、Cylinderは物理演算以外には使えないためご注意ください。
+HEOCylinderCollider : Used for enabling [Physics](./PhysicsEngine.md) for the Unity Cylinder Collider.<br>
+Note that Cylinders cannot be used other than simulating physics.
 
-## Action Trigger / HeliScriptでの物理演算・コライダーについて
+## Using Colliders and Physics in Action Trigger / HeliScript
 
-VketCloudSDKにおいて、コライダーはクリックや[HEOAreaCollider](../HEOComponents/HEOAreacollider.md)を使用した入退場判定によってアクションを起こすことができます。
-詳しくは[Actionについて](../Actions/ActionsOverview.md)をご確認ください。
+On the VketCloudSDK, Colliders can be used to detect user clicks and player going in/out areas by [HEOAreaCollider](../HEOComponents/HEOAreacollider.md) to trigger actions.<br>
+For details, see [Actions Overview](../Actions/ActionsOverview.md).
 
-また、コライダーはその範囲内外にてHeliScriptのコールバック関数を呼び、様々なギミックの作成に役立てられます。<br>
-各関数の挙動は以下のページにて記述しております。
+Also, Colliders can be used for calling Callback functions on HeliScript, which can be applied for creating various gimmicks.<br>
+Each Callback function is described on the following pages:
 
-- [コールバック - AreaCollider](../hs/hs_component.md#-areacollider)
-- [コールバック - 物理衝突判定](../hs/hs_component.md#-_2)
-- [コールバック - 視野内コライダー](../hs/hs_component.md#-_3)
+- [Callback - AreaCollider](../hs/hs_component.mdl#callback-areacollider)
+- [Callback - physics collision detection](../hs/hs_component.md#callback-physics-collision-detection)
+- [Callback - In-field collider detection](../hs/hs_component.md#callback-in-field-collider-detection)
 
-## Tips: 階段にコライダーを設置する際の注意点
+## Tips: Implementing staircase colliders
 
-ワールドに階段を設定する際、[Mesh Collider](../HEOComponents/HEOMeshCollider.md)あるいはBox Colliderを使用してコライダーを設定すると移動時にガタつきやすく、一段一段の高さによってはジャンプを要するため、プレイヤーにとってストレスとなりうる可能性があります。
+When creating stairs in a world, [Mesh Colliders](../HEOComponents/HEOMeshCollider.md) or Box Colliders tend to cause camera shakes on stepping on, and requiring the player to jump when step height is too high. This may cause unintentional stress when walking around!
 
 ![ColliderTips_Stair_1](./img/ColliderTips_Stair_1.jpg)
 
 ![ColliderTips_Stair_1_Result](./img/ColliderTips_Stair_1_Result.gif)
 
-そこで、Box Colliderを斜めに設置して坂状にすることで、滑らかにのぼりやすい階段が設置できます。
+Therefore, smoother stairs can be implemented by placing a diagonal Box Collider in a slope-like manner.
 
 ![ColliderTips_Stair_2](./img/ColliderTips_Stair_2.jpg)
 
