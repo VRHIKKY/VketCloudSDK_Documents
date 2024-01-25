@@ -3,100 +3,100 @@
 ## Added Pages
 
 - Troubleshooting
-  - [Trouble shooting - General Checklist](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/GeneralChecklist.html) *English Translation WIP
+  - [Trouble shooting - General Checklist](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/troubleshooting/GeneralChecklist.html) *English Translation WIP
 - World Editing Tips
-  - [Editing Multiple HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldEditingTips/MultiSelect_HEOComponents.html)
-  - [Disable Contribute GI of Unlit Materials](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldEditingTips/DisableContributeGITool.html)
-  - [Using EditorOnly Tags](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldEditingTips/EditorOnlyTag.html)
-  - [Debug Mode](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldEditingTips/DebugMode.html)
+  - [Editing Multiple HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldEditingTips/MultiSelect_HEOComponents.html)
+  - [Disable Contribute GI of Unlit Materials](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldEditingTips/DisableContributeGITool.html)
+  - [Using EditorOnly Tags](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldEditingTips/EditorOnlyTag.html)
+  - [Debug Mode](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldEditingTips/DebugMode.html)
 - HEO Components
-  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOActivity.html)
-  - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOBackgroundTexture.html)
+  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/ja/HEOComponents/HEOActivity.html)
+  - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOBackgroundTexture.html)
 - HeliScript
-  - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_overview.html)
-  - [HeliScript/Built-in functions - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_chatgpt.html)
-  - [HeliScript/Built-in functions - Physics](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_physics.html)
+  - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_overview.html)
+  - [HeliScript/Built-in functions - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_system_chatgpt.html)
+  - [HeliScript/Built-in functions - Physics](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_system_physics.html)
 
 ## Edited Pages
 
 - About VketCloudSDK
-  - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/AboutVketCloudSDK/OperatingEnvironment.html)
+  - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/ja/AboutVketCloudSDK/OperatingEnvironment.html)
     - Added instructions on setting recommended Settings
-  - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupSDK_external.html)
+  - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/AboutVketCloudSDK/SetupSDK_external.html)
     - Added instructions on how to use the install wizard / version manager
     - Added instructions on setting recommended Settings
-  - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupAvatar.html)
+  - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/AboutVketCloudSDK/SetupAvatar.html)
     - Updated instructions on adding avatars
 - World Making Guide
-  - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/UnityGuidelines.html)
+  - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldMakingGuide/UnityGuidelines.html)
     - Added note on placing objects with same names, which are not recommended
-  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/AvatarFile.html)
+  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldMakingGuide/AvatarFile.html)
     - Updated settings and imag
-  - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/ReflectionProbe.html)
+  - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldMakingGuide/ReflectionProbe.html)
     - Changed title (in Japanese manual)
     - Deleted unused images and fixed links
     - Fixed few formats and typos
-  - [Physics Engine / How to Use Colliders](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/PhysicsEngine.html)
+  - [Physics Engine / How to Use Colliders](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldMakingGuide/PhysicsEngine.html)
     - Changed title (old: Physics Engine)
     - Added info on how to use colliders, how to use physics in HeliScript *English translation WIP
     - Reformatted text
 - SDK Tools
-  - [Particle Editor Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_particleeditor.html)
+  - [Particle Editor Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/particleeditor/pe_about_particleeditor.html)
     - Updated Launch Instructions
     - Added malfunction issues on MacOS
-  - [About Screen / How to Operate](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_screen.html)
+  - [About Screen / How to Operate](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/particleeditor/pe_about_screen.html)
     - Merged screen information and instructions of operation to one page
 - World Optimization
-  - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/heoexporter/he_TextureCompression.html)
+  - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/heoexporter/he_TextureCompression.html)
     - Deleted info of deprecated dxt conversion likewise former pvrtc conversion
 - HEO Components
-  - [HEOAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOAreacollider.html)
+  - [HEOAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOAreacollider.html)
     - Added info on collision / area range detection by collider
     - Added info on HEOComponent and Box Collider automatically added when attaching HEOAreaCollider
-  - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOCollider.html)
+  - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOCollider.html)
     - Added info on collision / area range detection by collider
     - Added caution on player not colliding when collider type is not set to `Collider`
-  - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOField.html)
+  - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOField.html)
     - Added Settings including description for Look at Camera
-  - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOMeshCollider.html)
+  - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOMeshCollider.html)
     - Edited setup instructions
-  - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOObject.html)
+  - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOObject.html)
     - Added settings such as shadow caster / receiver, foreground rendering, circle shadow, lookatcamera, etc.
     - Added explanation on how to use object/motion preview
-  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOPlane.html)
+  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOPlane.html)
     - Added settings (lookatcamera) and related descriptions
-  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.5//HEOComponents/HEOPlayer.html)
+  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en//HEOComponents/HEOPlayer.html)
     - Added settings such as TPS Rotation, Jump Velocity, Move Speed, etc.
-  - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOTextPlane.html)
+  - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOTextPlane.html)
     - Added settings (textalignment, charaspace, linespace, overflowwrap, lookatcamera) and related descriptions
-  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOWorldSetting.html)
+  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOWorldSetting.html)
     - Added specification/details on using gamepad
     - Added explanation for setting up avatars
     - Added Voice Attenuation, TPS Pitch Max Distance, and SpecularMipMapCount
     - Deleted Multi Play Mode In Local Build Setting (In the current version, the world is multi play mode by default!)
 - Actions
-  - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/Actions/Programmatic/CallScript.html)
+  - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/Actions/Programmatic/CallScript.html)
     - Replaced image to match Ver9.5
 - HeliScript
-  - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_component.html)
+  - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_component.html)
     - Changed title (old: components)
-  - [HeliScript/String](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_string.html)
-  - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function.html)
+  - [HeliScript/String](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_string.html)
+  - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_system_function.html)
     - Added caution on using apostrophe / single quotations in strings
-  - [HeliScript/Vector3](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_struct_vector3.html)
-  - [HeliScript/Player](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_class_player.html)
-  - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function.html)
-  - [HeliScript/Built-in functions - network](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function_net.html)
-  - [HeliScript/Built-in functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function_gui.html)
+  - [HeliScript/Vector3](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_struct_vector3.html)
+  - [HeliScript/Player](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_class_player.html)
+  - [HeliScript/Built-in functions - system](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_system_function.html)
+  - [HeliScript/Built-in functions - network](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_system_function_net.html)
+  - [HeliScript/Built-in functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_system_function_gui.html)
     - Updated methods useable on current version
-  - [HeliScript/Item](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_class_item.html)
+  - [HeliScript/Item](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_class_item.html)
     - Added Overview
     - Updated methods useable on current version
 - Trouble shooting
-  - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/BuildError.html)
+  - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/troubleshooting/BuildError.html)
     - Changed page title (old: Build Error)
     - Integrated related pages
-  - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/VersionUpdateTroubleshooting.html)
+  - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/ja/troubleshooting/VersionUpdateTroubleshooting.html)
     - Changed page title
     - Added information on settings that may reset on updating to Ver9.5
     - Added solution for version information not updated on settings window / HeliScript and gimmicks not working after update
@@ -113,9 +113,9 @@
 - HeliScript
   - Built-in Functions - JavaScript
 - HEOTweetTrigger
-- Check Tool (Please use [debug console](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/debugconsole/debugconsole.html) for this version)
+- Check Tool (Please use [debug console](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/debugconsole/debugconsole.html) for this version)
 - Trouble shooting
   - Browser does not open: troubleshooting/BrowserNotOpen.md
   - Browser window blackouts: troubleshooting/BrowserBlackWindow.md
   - Changes are not applied: troubleshooting/ChangesAreNotApplied.md
-    - Integrated to [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/BuildError.html)
+    - Integrated to [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/troubleshooting/BuildError.html)
