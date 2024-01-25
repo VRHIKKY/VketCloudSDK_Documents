@@ -155,6 +155,7 @@ plugins:
           How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
           Utility Tools: 補助ツールの使い方 #元ページ不明タグ
           Login to SDK: SDKにログインする
+          Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
 
 markdown_extensions:
     - admonition
@@ -173,6 +174,17 @@ nav:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
     - World Upload : FirstStep/WorldUpload.md
+- Vket Cloud Settings:
+    - Vket Cloud Settings - Overview: VketCloudSettings/Overview.md
+    # Basic
+    - Basic Settings: VketCloudSettings/BasicSettings.md
+    - Player Settings: VketCloudSettings/PlayerSettings.md
+    - Despawn Height Settings: VketCloudSettings/DespawnHeightSettings.md
+    # Advanced
+    - Camera Settings: VketCloudSettings/CameraSettings.md
+    - Rendering Settings: VketCloudSettings/RenderingSettings.md
+    - Avatar Settings: VketCloudSettings/AvatarSettings.md
+    - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
@@ -309,10 +321,13 @@ nav:
         - Physics: hs/hs_system_function_physics.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
-        - Control Statement: hs/hs_statement_constrol.md
+        - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v12.x:
+        - v12.1: releasenote/releasenote-12.1.md
+        - v12.0: releasenote/releasenote-12.0.md
     - v9.x:
         - v9.11: releasenote/releasenote-9.11.md
         - v9.10: releasenote/releasenote-9.10.md
@@ -369,6 +384,9 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v12.x:
+        - v12.1: changelog/changelog-12.1.md
+        - v12.0: changelog/changelog-12.0.md
     - v9.x:
         - v9.11: changelog/changelog-9.11.md
         - v9.5: changelog/changelog-9.5.md
