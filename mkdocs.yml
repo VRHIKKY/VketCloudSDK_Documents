@@ -300,7 +300,7 @@ nav:
         - Physics: hs/hs_system_function_physics.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
-        - Control Statement: hs/hs_statement_constrol.md
+        - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
