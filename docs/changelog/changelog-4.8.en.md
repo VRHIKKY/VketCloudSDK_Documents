@@ -1,4 +1,7 @@
-# Added Pages
+# SDK Manual Change Log - Ver 4.8
+
+## Added Pages
+
 - [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/HEOComponents/HEOSpot.html)
 - [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/HEOComponents/HEOSpawn.html)
 - [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/HEOComponents/HEOShadow.html)
@@ -8,7 +11,8 @@
 - [Missing Components After Version Update](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/troubleshooting/MissingComponents.html)
 - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/WorldMakingGuide/PresetAvatar.html)
 
-# Edited Pages
+## Edited Pages
+
 - [Overview](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/index.html)
     - Added information about [Release Note](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/releasenote/releasenote-4.8.html) and [Change Log](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/changelog/changelog-4.8.html)
 - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/AboutVketCloudSDK/SetupSDK_external.html)
@@ -34,4 +38,4 @@
 - [Specification Limit of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/en/WorldMakingGuide/UnityGuidelines.html)
     - Added restriction on using lights
 
-# Deleted Pages
+## Deleted Pages

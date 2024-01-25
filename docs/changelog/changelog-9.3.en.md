@@ -1,4 +1,7 @@
-# Added Pages
+# SDK Manual Change Log - Ver 9.3
+
+## Added Pages
+
 -  World Editing Tips
     - [Editing Multiple HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/en/WorldEditingTips/MultiSelect_HEOComponents.html)
     - [Disable Contribute GI of Unlit Materials](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/en/WorldEditingTips/DisableContributeGITool.html)
@@ -10,7 +13,8 @@
     - [HeliScript/Built-in functions - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/en/hs/hs_system_chatgpt.html)
     - [HeliScript/Built-in functions - Physics](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/en/hs/hs_system_physics.html)
 
-# Edited Pages
+## Edited Pages
+
 - About VketCloudSDK
     - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/en/AboutVketCloudSDK/SetupSDK_external.html)
         - Added instructions on how to use the install wizard / version manager
@@ -62,7 +66,8 @@
         - Added solution for version information not updated on settings window / HeliScript and gimmicks not working after update
         - Added solution for file shown as corrupt after update
 
-# Deleted Pages
+## Deleted Pages
+
 - Auto Texture Compression
 - Actions
     - GTag
