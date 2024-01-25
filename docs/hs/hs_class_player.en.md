@@ -96,6 +96,9 @@ Play the motion.
 
 Set the next motion to be played.
 
+!!! caution "Using SetNextMotion"
+    SetNextMotion cannot be called multiple times.
+
 ### ShowChatBalloon
 `bool ShowChatBalloon(string Text)`
 
