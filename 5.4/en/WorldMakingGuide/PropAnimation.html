@@ -143,14 +143,14 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../WorldMakingGuide/PropAnimation.html" hreflang="en" class="md-select__link">
-                    English
+                  <a href="../../WorldMakingGuide/PropAnimation.html" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../ja/WorldMakingGuide/PropAnimation.html" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="PropAnimation.html" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
                 
@@ -2763,7 +2763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_statement_constrol.html" class="md-nav__link">
+      <a href="../hs/hs_statement_control.html" class="md-nav__link">
         Control Statement
       </a>
     </li>
@@ -4107,8 +4107,10 @@ Placing moving objects on the world will greatly improve the appearance.</p>
      Be careful not to accidentally add animation to the Cube object.</p>
 <p><img alt="PropAnimation_2" src="img/PropAnimation_2.jpg" /></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>There is a similar component called Animator, but please note that this is not used.</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code> There is a similar component called Animator, but please note that this is not used.
+</code></pre></div>
+
 </div>
 <p>3. Open the animation tab by selecting <code>Window &gt; Animation &gt; Animation</code> or Ctrl+6.</p>
 <p><img alt="PropAnimation_3" src="img/PropAnimation_3.jpg" /></p>
@@ -4147,8 +4149,10 @@ After selecting, the explorer will appear to designate a .hem save location, so 
 <p>After saving, the export is complete when <code>"Exported"</code> appears on the Unity console (console is located on bottom left by default).</p>
 <p><img alt="PropAnimation_14" src="img/PropAnimation_14.jpg" /></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>If an error occurs, please refer to <a href="PropAnimation_TroubleShooting.html">How to Animate Objects - Troubleshooting</a>.</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code>If an error occurs, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
+</code></pre></div>
+
 </div>
 <h3 id="export-heo-file-heliodor-export-object-file">Export .heo file (Heliodor Export Object file)</h3>
 <p><img alt="PropAnimation_15" src="img/PropAnimation_15.jpg" /></p>
@@ -4173,21 +4177,25 @@ Set the empty object's Transform to the position where you want the object to be
 By committing build at this point, you can display animated objects on the scene.</p>
 <p><img alt="PropAnimation_Result_1" src="img/PropAnimation_Result_1.gif" /></p>
 <div class="admonition note caution">
-<p class="admonition-title">Note<p>Notes when exporting .heo: <br>
-- If you export the original object without setting its Position to (0,0,0), the placement position will be the <a href="../ HEOComponents/HEOObject.md">HEOObject</a> Position added with the Position value at the time of export. <br>
-- If the original object has collision detection enabled, the exported object will also have collision detection. <br>
-- Even if you move an object in .hem, the collision detection information of the object will not be moved. <br>
-- The first animation in the Motion column will be automatically played when the world starts. <br>
-If you do not want animations played on world start, please leave the first Motion entry blank. <br></p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Notes</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="n">exporting</span><span class="w"> </span><span class="p">.</span><span class="nl">heo</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">-</span><span class="w"> </span><span class="k">If</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">export</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">original</span><span class="w"> </span><span class="k">object</span><span class="w"> </span><span class="k">without</span><span class="w"> </span><span class="n">setting</span><span class="w"> </span><span class="n">its</span><span class="w"> </span><span class="k">Position</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">placement</span><span class="w"> </span><span class="k">position</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="o">[</span><span class="n">HEOObject</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="w"> </span><span class="n">HEOComponents</span><span class="o">/</span><span class="n">HEOObject</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="w"> </span><span class="k">Position</span><span class="w"> </span><span class="n">added</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">Position</span><span class="w"> </span><span class="k">value</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="nc">time</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">export</span><span class="p">.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">-</span><span class="w"> </span><span class="k">If</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">original</span><span class="w"> </span><span class="k">object</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">collision</span><span class="w"> </span><span class="n">detection</span><span class="w"> </span><span class="n">enabled</span><span class="p">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">exported</span><span class="w"> </span><span class="k">object</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">also</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">collision</span><span class="w"> </span><span class="n">detection</span><span class="p">.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">-</span><span class="w"> </span><span class="n">Even</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">move</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="k">object</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="p">.</span><span class="n">hem</span><span class="p">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">collision</span><span class="w"> </span><span class="n">detection</span><span class="w"> </span><span class="n">information</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">object</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">moved</span><span class="p">.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">-</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="k">first</span><span class="w"> </span><span class="n">animation</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Motion</span><span class="w"> </span><span class="k">column</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">automatically</span><span class="w"> </span><span class="n">played</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="n">starts</span><span class="p">.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="k">If</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="n">animations</span><span class="w"> </span><span class="n">played</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">world</span><span class="w"> </span><span class="k">start</span><span class="p">,</span><span class="w"> </span><span class="n">please</span><span class="w"> </span><span class="n">leave</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">first</span><span class="w"> </span><span class="n">Motion</span><span class="w"> </span><span class="n">entry</span><span class="w"> </span><span class="n">blank</span><span class="p">.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+</code></pre></div>
+
 </div>
 <h2 id="controlling-animation-set-to-heoobject">Controlling animation set to HEOObject</h2>
 <h3 id="control-using-actions">Control using Actions</h3>
 <p>You can play the animation added to <a href="../HEOComponents/HEOObject.html">HEOObject</a> by using the  <a href="../Actions/Item/PlayStopItem.html">PlayItem</a> action. <br></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p><a href="../Actions/Item/PlayStopItem.html">PlayItem</a>: Plays the designated item. The Index setting is the Motion number to be played. <br>
-PlayItem is valid for HEO objects containing Motion, as well as Audio and Particles.</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code><span class="o">[</span><span class="n">PlayItem</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">Actions</span><span class="o">/</span><span class="n">Item</span><span class="o">/</span><span class="n">PlayStopItem</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="err">:</span><span class="w"> </span><span class="n">Plays</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">designated</span><span class="w"> </span><span class="n">item</span><span class="p">.</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="k">Index</span><span class="w"> </span><span class="n">setting</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Motion</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">played</span><span class="p">.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="n">PlayItem</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">valid</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">HEO</span><span class="w"> </span><span class="n">objects</span><span class="w"> </span><span class="n">containing</span><span class="w"> </span><span class="n">Motion</span><span class="p">,</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">well</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">Audio</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Particles</span><span class="p">.</span>
+</code></pre></div>
+
 </div>
 <p>Set the animation of the animated Cube to be the second one with loop disa, and click “Add” at the top of BeginActions to add the Motion field. <br>
 Delete the motion specified in .hem in the first Motion, and specify the .hem file in the second Motion.</p>
@@ -4202,11 +4210,13 @@ Earlier, the first Motion (Index 0) has been left empty, while the Motion we wan
 <p>On world build, the Cube will rotate (play Motion) when clicked.</p>
 <p><img alt="PropAnimation_Result_2" src="img/PropAnimation_Result_2.gif" /></p>
 <div class="admonition note">
-<p class="admonition-title">Note<p>About <a href="../Actions/Item/PlayStopItem.html">StopItem</a>:<br>
-<a href="../Actions/Item/PlayStopItem.html">StopItem</a> is a companion action to <a href="../Actions/Item/PlayStopItem.html">PlayItem</a>. <br>
-Although this action might seem to stop the playing animation, but the effect of StopItem is to stop beginaction, which the playing animation does not fall under BeginActions and will not stop. <br>
-StopItem can be used to stop particles or sounds.</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code><span class="n">About</span><span class="w"> </span><span class="o">[</span><span class="n">StopItem</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">Actions</span><span class="o">/</span><span class="n">Item</span><span class="o">/</span><span class="n">PlayStopItem</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="err">:</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">[</span><span class="n">StopItem</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">Actions</span><span class="o">/</span><span class="n">Item</span><span class="o">/</span><span class="n">PlayStopItem</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">companion</span><span class="w"> </span><span class="k">action</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="o">[</span><span class="n">PlayItem</span><span class="o">]</span><span class="p">(..</span><span class="o">/</span><span class="n">Actions</span><span class="o">/</span><span class="n">Item</span><span class="o">/</span><span class="n">PlayStopItem</span><span class="p">.</span><span class="n">md</span><span class="p">).</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="n">Although</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="k">action</span><span class="w"> </span><span class="n">might</span><span class="w"> </span><span class="n">seem</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">stop</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">playing</span><span class="w"> </span><span class="n">animation</span><span class="p">,</span><span class="w"> </span><span class="n">but</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">effect</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">StopItem</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">stop</span><span class="w"> </span><span class="n">beginaction</span><span class="p">,</span><span class="w"> </span><span class="n">which</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">playing</span><span class="w"> </span><span class="n">animation</span><span class="w"> </span><span class="n">does</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">fall</span><span class="w"> </span><span class="k">under</span><span class="w"> </span><span class="n">BeginActions</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">stop</span><span class="p">.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="n">StopItem</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">stop</span><span class="w"> </span><span class="n">particles</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">sounds</span><span class="p">.</span>
+</code></pre></div>
+
 </div>
 <h3 id="control-using-heliscript">Control using HeliScript</h3>
 <p>Animation can be controlled using HeliScript. <br>
