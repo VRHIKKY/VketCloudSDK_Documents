@@ -65,7 +65,7 @@ This component lets you configure the following settings:
 
 ---
 
-# Rendering
+## Rendering
 
 ![Rendering_1](img/HEOWorldSetting_Rendering_1.jpg)
 
@@ -87,7 +87,7 @@ This component lets you configure the following settings:
 
 !!! note caution
         Note that the Intensity value set on the `Directional Light`(as image below) will not be used within the world.<br>
-        To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value. 
+        To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value.
 
 ![Rendering_2](img/HEOWorldSetting_Rendering_2.jpg)
 
@@ -114,7 +114,7 @@ This component lets you configure the following settings:
 
 ---
 
-# Avatars
+## Avatars
 
 ![Avatars](img/HEOWorldSetting_Avatars.jpg)
 

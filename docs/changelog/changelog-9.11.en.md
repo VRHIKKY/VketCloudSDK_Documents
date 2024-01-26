@@ -9,6 +9,7 @@
   - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/SDKTools/ExportCompressedTexture.html)
 - World Optimization
   - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldOptimization/TextureCompression.html)
+  - [Optimization for Smartphones](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldOptimization/SmartphoneOptimization.html)
 - HEO Components
   - [HEOCamera](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOCamera.html)
   - [HEOMirror](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOMirror.html)
@@ -48,9 +49,16 @@
 - HEOComponents
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOField.html)
     - Added information of Tips on using HEOField page
+- Actions
+  - [Motion](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/Actions/Avatar/Motion.html)
+    - Edited details on how to implement action
+  - [NextMotion](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/Actions/Avatar/NextMotion.html)
+    - Edited details on how to implement action
 - HeliScript
   - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/hs/hs_component.html)
     - Added Callback functions that can be used on SDK Ver 9.11
+  - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/hs/hs_class_player.html#setnextmotion)
+    - Added specification which disallows calling SetNextMotion multiple times
 
 ## Deleted Pages
 

@@ -99,8 +99,7 @@ plugins:
           GUI: GUI
           TextChat: テキストチャット
           Physics: 物理演算
-          HEOExporter: .heoファイルについて
-          HEOExporter Tutorial: .heoファイルを出力する
+          HEOExporter Tutorial: HEOExporterの使い方
           Specifications Limits : VketCloudの仕様制限
           ReflectionProbe: リフレクションプローブ
           Texture Compression: テクスチャ圧縮
@@ -133,6 +132,7 @@ plugins:
           World Optimization: ワールドの軽量化方法
           World Optimization - Overview: ワールドの軽量化方法：概要
           Occlusion Culling: オクルージョンカリング
+          Optimization for Smartphones: スマートフォンのためのワールド軽量化
           Trouble shooting: トラブルシューティング
           Trouble shooting - General Checklist: SDK初学者:何か起きたときにとりあえず見るべきリスト
           SDK does not appear after install: SDKがインストール後に立ち上がらない
@@ -209,6 +209,7 @@ nav:
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
   - Texture Compression : WorldOptimization/TextureCompression.md
+  - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
     - HEOActivity: HEOComponents/HEOActivity.md

@@ -99,6 +99,8 @@ ActionListの文字列はSceneファイルに記述する"actions":{}の文字�
 
 次に再生するモーションを設定する。
 
+!!! caution "SetNextMotion使用の際の注意"
+    SetNextMotionは連続で設定することはできません。
 
 ### ShowChatBalloon
 `bool ShowChatBalloon(string Text)`
