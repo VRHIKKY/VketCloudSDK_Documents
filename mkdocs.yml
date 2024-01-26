@@ -57,7 +57,7 @@ plugins:
       javascript_dir: js
       canonical_version: null
   - i18n:
-      default_language: en
+      default_language: ja
       languages:
         en: English
         ja: 日本語
@@ -298,7 +298,7 @@ nav:
         - Physics: hs/hs_system_function_physics.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
-        - Control Statement: hs/hs_statement_constrol.md
+        - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
