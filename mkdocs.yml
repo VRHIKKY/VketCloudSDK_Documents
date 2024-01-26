@@ -99,8 +99,7 @@ plugins:
           GUI: GUI
           TextChat: テキストチャット
           Physics: 物理演算
-          HEOExporter: .heoファイルについて
-          HEOExporter Tutorial: .heoファイルを出力する
+          HEOExporter Tutorial: HEOExporterの使い方
           Specifications Limits : VketCloudの仕様制限
           ReflectionProbe: リフレクションプローブ
           Texture Compression: テクスチャ圧縮
