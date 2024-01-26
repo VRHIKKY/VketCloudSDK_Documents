@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -18,7 +18,7 @@
     
     
       
-        <title>SDK初学者：何か起きたときにとりあえず見るべきリスト - VketCloudSDK Manual</title>
+        <title>制御構文 - VketCloudSDK Manual</title>
       
     
     
@@ -72,8 +72,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#sdk" class="md-skip">
-          Skip to content
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
         </a>
       
     </div>
@@ -84,7 +84,7 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href="https://www.hikky.co.jp/vketcloud" title="VketCloudSDK Manual" class="md-header__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
       
   <img src="../../images/VketCloudIcon.png" alt="logo">
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SDK初学者：何か起きたときにとりあえず見るべきリスト
+              制御構文
             
           </span>
         </div>
@@ -143,14 +143,14 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../troubleshooting/GeneralCheckilst.ja.html" hreflang="en" class="md-select__link">
-                    English
+                  <a href="../../hs/hs_statement_control.html" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../ja/troubleshooting/GeneralCheckilst.ja.html" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="../../en/hs/hs_statement_control.html" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
                 
@@ -168,14 +168,14 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" aria-label="クリア" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
         </button>
       </nav>
@@ -187,7 +187,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            検索を初期化
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -219,7 +219,7 @@
                     
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://www.hikky.co.jp/vketcloud" title="VketCloudSDK Manual" class="md-nav__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
       
@@ -240,7 +240,7 @@
   
     <li class="md-nav__item">
       <a href="../index.html" class="md-nav__link">
-        Introduction
+        はじめに
       </a>
     </li>
   
@@ -275,14 +275,14 @@
       
       
         <label class="md-nav__link" for="__nav_2">
-          About VketCloudSDK
+          VketCloudSDKについて
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="About VketCloudSDK" data-md-level="1">
+      <nav class="md-nav" aria-label="VketCloudSDKについて" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          About VketCloudSDK
+          VketCloudSDKについて
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -293,7 +293,7 @@
   
     <li class="md-nav__item">
       <a href="../AboutVketCloudSDK/SetupAccount.html" class="md-nav__link">
-        Setup Account
+        アカウント準備
       </a>
     </li>
   
@@ -307,7 +307,7 @@
   
     <li class="md-nav__item">
       <a href="../AboutVketCloudSDK/OperatingEnvironment.html" class="md-nav__link">
-        Operating Environment
+        動作環境
       </a>
     </li>
   
@@ -321,7 +321,7 @@
   
     <li class="md-nav__item">
       <a href="../AboutVketCloudSDK/SetupSDK_external.html" class="md-nav__link">
-        Setup SDK
+        SDKの導入方法
       </a>
     </li>
   
@@ -335,7 +335,7 @@
   
     <li class="md-nav__item">
       <a href="../AboutVketCloudSDK/LoginSDK.html" class="md-nav__link">
-        Login to SDK
+        SDKにログインする
       </a>
     </li>
   
@@ -349,7 +349,7 @@
   
     <li class="md-nav__item">
       <a href="../AboutVketCloudSDK/SetupAvatar.html" class="md-nav__link">
-        How to use avatar
+        アバターの使用方法
       </a>
     </li>
   
@@ -387,14 +387,14 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          First Step
+          ワールド制作の基本
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="First Step" data-md-level="1">
+      <nav class="md-nav" aria-label="ワールド制作の基本" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          First Step
+          ワールド制作の基本
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -405,7 +405,7 @@
   
     <li class="md-nav__item">
       <a href="../FirstStep/WorldBasicComponents.html" class="md-nav__link">
-        Essential Objects
+        ワールドの基本要素
       </a>
     </li>
   
@@ -419,7 +419,7 @@
   
     <li class="md-nav__item">
       <a href="../FirstStep/BuildAndRun.html" class="md-nav__link">
-        Build And Run
+        ビルド方法
       </a>
     </li>
   
@@ -433,7 +433,7 @@
   
     <li class="md-nav__item">
       <a href="../FirstStep/WorldUpload.html" class="md-nav__link">
-        World Upload
+        ワールドアップロード
       </a>
     </li>
   
@@ -481,14 +481,14 @@
       
       
         <label class="md-nav__link" for="__nav_4">
-          World Making Guide
+          ワールド制作ガイド
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="World Making Guide" data-md-level="1">
+      <nav class="md-nav" aria-label="ワールド制作ガイド" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          World Making Guide
+          ワールド制作ガイド
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -499,7 +499,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/UnityGuidelines.html" class="md-nav__link">
-        Specifications Limits
+        VketCloudの仕様制限
       </a>
     </li>
   
@@ -513,7 +513,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/Skybox.html" class="md-nav__link">
-        Skybox
+        スカイボックス設定
       </a>
     </li>
   
@@ -527,7 +527,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/PhysicsEngine.html" class="md-nav__link">
-        Physics Engine / How to Use Colliders
+        物理エンジン / コライダーの使い方
       </a>
     </li>
   
@@ -541,7 +541,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/ReflectionProbe.html" class="md-nav__link">
-        ReflectionProbe
+        リフレクションプローブ
       </a>
     </li>
   
@@ -555,7 +555,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/PropAnimation.html" class="md-nav__link">
-        How to Animate Objects
+        オブジェクトをアニメーションさせる
       </a>
     </li>
   
@@ -569,7 +569,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/PropAnimation_TroubleShooting.html" class="md-nav__link">
-        How to Animate Objects - Troubleshooting
+        オブジェクトをアニメーションさせる - 動かないときは
       </a>
     </li>
   
@@ -583,7 +583,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/AvatarFile.html" class="md-nav__link">
-        Avatar File
+        アバターファイル
       </a>
     </li>
   
@@ -597,7 +597,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/PresetAvatar.html" class="md-nav__link">
-        Adding Preset Avatars
+        プリセットアバターを追加する
       </a>
     </li>
   
@@ -639,14 +639,14 @@
       
       
         <label class="md-nav__link" for="__nav_5">
-          Trouble shooting
+          トラブルシューティング
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Trouble shooting" data-md-level="1">
+      <nav class="md-nav" aria-label="トラブルシューティング" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          Trouble shooting
+          トラブルシューティング
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -656,8 +656,8 @@
   
   
     <li class="md-nav__item">
-      <a href="InstallingDeeplink.html" class="md-nav__link">
-        SDK does not appear after install
+      <a href="../troubleshooting/InstallingDeeplink.html" class="md-nav__link">
+        SDKがインストール後に立ち上がらない
       </a>
     </li>
   
@@ -670,8 +670,8 @@
   
   
     <li class="md-nav__item">
-      <a href="GeneralChecklist.html" class="md-nav__link">
-        Trouble shooting - General Checklist
+      <a href="../../troubleshooting/GeneralChecklist.md" class="md-nav__link">
+        SDK初学者:何か起きたときにとりあえず見るべきリスト
       </a>
     </li>
   
@@ -684,8 +684,8 @@
   
   
     <li class="md-nav__item">
-      <a href="BuildError.html" class="md-nav__link">
-        Build Error / How to troubleshoot issues
+      <a href="../troubleshooting/BuildError.html" class="md-nav__link">
+        ビルドエラー / ワールドが動かないときは
       </a>
     </li>
   
@@ -698,8 +698,8 @@
   
   
     <li class="md-nav__item">
-      <a href="VersionUpdateTroubleshooting.html" class="md-nav__link">
-        Version Update Troubleshooting
+      <a href="../troubleshooting/VersionUpdateTroubleshooting.html" class="md-nav__link">
+        バージョンアップ後によくあるトラブル
       </a>
     </li>
   
@@ -713,7 +713,7 @@
   
     <li class="md-nav__item">
       <a href="../heoexporter/he_align_unity_to_vketcloud.html" class="md-nav__link">
-        Unity settings for replicating actual look in Vket Cloud
+        UnityとVketCloudの見た目を揃える
       </a>
     </li>
   
@@ -775,7 +775,7 @@
   
     <li class="md-nav__item">
       <a href="../debugconsole/debugconsole.html" class="md-nav__link">
-        Debug Console
+        デバッグコンソール
       </a>
     </li>
   
@@ -789,7 +789,7 @@
   
     <li class="md-nav__item">
       <a href="../debugconsole/debugmessage.html" class="md-nav__link">
-        Debug Messages
+        デバッグメッセージ一覧
       </a>
     </li>
   
@@ -803,7 +803,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldEditingTips/DebugMode.html" class="md-nav__link">
-        Debug Mode
+        デバッグモード
       </a>
     </li>
   
@@ -817,7 +817,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/HEOExporter_Tutorial.html" class="md-nav__link">
-        HEOExporter Tutorial
+        .heoファイルを出力する
       </a>
     </li>
   
@@ -831,7 +831,7 @@
   
     <li class="md-nav__item">
       <a href="../HEMAnimationConverter/AnimationConverter.html" class="md-nav__link">
-        Animation Converter
+        アニメーションコンバーター
       </a>
     </li>
   
@@ -859,14 +859,14 @@
       
       
         <label class="md-nav__link" for="__nav_6_6">
-          Particle Editor
+          パーティクルエディター
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Particle Editor" data-md-level="2">
+      <nav class="md-nav" aria-label="パーティクルエディター" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_6">
           <span class="md-nav__icon md-icon"></span>
-          Particle Editor
+          パーティクルエディター
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -877,7 +877,7 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_particleeditor.html" class="md-nav__link">
-        ParticleEditor Overview
+        パーティクルエディター概要
       </a>
     </li>
   
@@ -891,7 +891,7 @@
   
     <li class="md-nav__item">
       <a href="../particleeditor/pe_about_screen.html" class="md-nav__link">
-        About Screen / How to Operate
+        ウィンドウ解説・操作方法について
       </a>
     </li>
   
@@ -936,14 +936,14 @@
       
       
         <label class="md-nav__link" for="__nav_7">
-          World Editing Tips
+          編集のためのTips
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="World Editing Tips" data-md-level="1">
+      <nav class="md-nav" aria-label="編集のためのTips" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
-          World Editing Tips
+          編集のためのTips
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -954,7 +954,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldEditingTips/EditorOnlyTag.html" class="md-nav__link">
-        Using EditorOnly Tags
+        EditorOnlyタグの使用方法
       </a>
     </li>
   
@@ -968,7 +968,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldEditingTips/MultiSelect_HEOComponents.html" class="md-nav__link">
-        Editing Multiple HEOComponents
+        複数のHEOコンポーネントの一括編集
       </a>
     </li>
   
@@ -982,7 +982,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldEditingTips/DisableContributeGITool.html" class="md-nav__link">
-        Disable Contribute GI of Unlit Materials
+        UnlitマテリアルのContributeGI設定を外す
       </a>
     </li>
   
@@ -1020,14 +1020,14 @@
       
       
         <label class="md-nav__link" for="__nav_8">
-          World Optimization
+          ワールドの軽量化方法
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="World Optimization" data-md-level="1">
+      <nav class="md-nav" aria-label="ワールドの軽量化方法" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
-          World Optimization
+          ワールドの軽量化方法
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1038,7 +1038,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/WorldOptimization.html" class="md-nav__link">
-        World Optimization - Overview
+        ワールドの軽量化方法：概要
       </a>
     </li>
   
@@ -1052,7 +1052,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/OcclusionCulling.html" class="md-nav__link">
-        Occlusion Culling
+        オクルージョンカリング
       </a>
     </li>
   
@@ -1066,7 +1066,7 @@
   
     <li class="md-nav__item">
       <a href="../heoexporter/he_TextureCompression.html" class="md-nav__link">
-        Texture Compression
+        テクスチャ圧縮
       </a>
     </li>
   
@@ -1150,14 +1150,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          HEOComponents
+          HEOコンポーネント
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="HEOComponents" data-md-level="1">
+      <nav class="md-nav" aria-label="HEOコンポーネント" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          HEOComponents
+          HEOコンポーネント
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1564,14 +1564,14 @@
       
       
         <label class="md-nav__link" for="__nav_10">
-          Actions
+          アクションについて
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Actions" data-md-level="1">
+      <nav class="md-nav" aria-label="アクションについて" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
-          Actions
+          アクションについて
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1582,7 +1582,7 @@
   
     <li class="md-nav__item">
       <a href="../Actions/ActionsOverview.html" class="md-nav__link">
-        Actions Overview
+        アクションの概要
       </a>
     </li>
   
@@ -1620,14 +1620,14 @@
       
       
         <label class="md-nav__link" for="__nav_10_2">
-          System
+          システム
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="System" data-md-level="2">
+      <nav class="md-nav" aria-label="システム" data-md-level="2">
         <label class="md-nav__title" for="__nav_10_2">
           <span class="md-nav__icon md-icon"></span>
-          System
+          システム
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1844,14 +1844,14 @@
       
       
         <label class="md-nav__link" for="__nav_10_4">
-          Item
+          Itemクラス
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Item" data-md-level="2">
+      <nav class="md-nav" aria-label="Itemクラス" data-md-level="2">
         <label class="md-nav__title" for="__nav_10_4">
           <span class="md-nav__icon md-icon"></span>
-          Item
+          Itemクラス
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2058,14 +2058,14 @@
       
       
         <label class="md-nav__link" for="__nav_10_6">
-          Physics
+          物理演算
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Physics" data-md-level="2">
+      <nav class="md-nav" aria-label="物理演算" data-md-level="2">
         <label class="md-nav__title" for="__nav_10_6">
           <span class="md-nav__icon md-icon"></span>
-          Physics
+          物理演算
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2323,12 +2323,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" checked>
       
       
       
@@ -2367,8 +2369,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_overview.html" class="md-nav__link">
-        HeliScript - Overview
+      <a href="hs_overview.html" class="md-nav__link">
+        HeliScript概要
       </a>
     </li>
   
@@ -2398,14 +2400,14 @@
       
       
         <label class="md-nav__link" for="__nav_11_2">
-          Built-in Types
+          組み込み型
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Built-in Types" data-md-level="2">
+      <nav class="md-nav" aria-label="組み込み型" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_2">
           <span class="md-nav__icon md-icon"></span>
-          Built-in Types
+          組み込み型
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2415,8 +2417,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_var.html" class="md-nav__link">
-        Basic Types
+      <a href="hs_var.html" class="md-nav__link">
+        基本型
       </a>
     </li>
   
@@ -2429,8 +2431,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_string.html" class="md-nav__link">
-        String
+      <a href="hs_string.html" class="md-nav__link">
+        文字列(String)
       </a>
     </li>
   
@@ -2443,8 +2445,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_list.html" class="md-nav__link">
-        List
+      <a href="hs_list.html" class="md-nav__link">
+        配列(List)
       </a>
     </li>
   
@@ -2464,8 +2466,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_class.html" class="md-nav__link">
-        Class
+      <a href="hs_class.html" class="md-nav__link">
+        クラス
       </a>
     </li>
   
@@ -2478,8 +2480,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_component.html" class="md-nav__link">
-        Components / Callback functions
+      <a href="hs_component.html" class="md-nav__link">
+        コンポーネント / コールバック関数
       </a>
     </li>
   
@@ -2513,14 +2515,14 @@
       
       
         <label class="md-nav__link" for="__nav_11_5">
-          Built-in Classes And Functions
+          組み込みクラス・関数
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Built-in Classes And Functions" data-md-level="2">
+      <nav class="md-nav" aria-label="組み込みクラス・関数" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_5">
           <span class="md-nav__icon md-icon"></span>
-          Built-in Classes And Functions
+          組み込みクラス・関数
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2530,8 +2532,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_struct_vector3.html" class="md-nav__link">
-        Vector3
+      <a href="hs_struct_vector3.html" class="md-nav__link">
+        Vector3クラス
       </a>
     </li>
   
@@ -2544,8 +2546,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_struct_quaternion.html" class="md-nav__link">
-        Quaternion
+      <a href="hs_struct_quaternion.html" class="md-nav__link">
+        Quaternionクラス
       </a>
     </li>
   
@@ -2558,8 +2560,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_struct_matrix.html" class="md-nav__link">
-        Matrix
+      <a href="hs_struct_matrix.html" class="md-nav__link">
+        Matrixクラス
       </a>
     </li>
   
@@ -2572,8 +2574,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_class_item.html" class="md-nav__link">
-        Item
+      <a href="hs_class_item.html" class="md-nav__link">
+        Itemクラス
       </a>
     </li>
   
@@ -2586,8 +2588,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_class_player.html" class="md-nav__link">
-        Player
+      <a href="hs_class_player.html" class="md-nav__link">
+        Playerクラス
       </a>
     </li>
   
@@ -2634,14 +2636,14 @@
       
       
         <label class="md-nav__link" for="__nav_11_6">
-          Built-in Functions
+          組み込み関数
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Built-in Functions" data-md-level="2">
+      <nav class="md-nav" aria-label="組み込み関数" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_6">
           <span class="md-nav__icon md-icon"></span>
-          Built-in Functions
+          組み込み関数
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2651,8 +2653,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_system_function.html" class="md-nav__link">
-        System
+      <a href="hs_system_function.html" class="md-nav__link">
+        システム
       </a>
     </li>
   
@@ -2665,8 +2667,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_system_function_math.html" class="md-nav__link">
-        Math
+      <a href="hs_system_function_math.html" class="md-nav__link">
+        数学
       </a>
     </li>
   
@@ -2679,8 +2681,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_system_function_net.html" class="md-nav__link">
-        Network
+      <a href="hs_system_function_net.html" class="md-nav__link">
+        ネットワーク
       </a>
     </li>
   
@@ -2693,8 +2695,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_system_function_nameplate.html" class="md-nav__link">
-        NamePlate
+      <a href="hs_system_function_nameplate.html" class="md-nav__link">
+        ネームプレート
       </a>
     </li>
   
@@ -2707,7 +2709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_system_function_gui.html" class="md-nav__link">
+      <a href="hs_system_function_gui.html" class="md-nav__link">
         GUI
       </a>
     </li>
@@ -2721,8 +2723,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_system_function_textchat.html" class="md-nav__link">
-        TextChat
+      <a href="hs_system_function_textchat.html" class="md-nav__link">
+        テキストチャット
       </a>
     </li>
   
@@ -2735,7 +2737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_system_function_chatgpt.html" class="md-nav__link">
+      <a href="hs_system_function_chatgpt.html" class="md-nav__link">
         ChatGPT
       </a>
     </li>
@@ -2749,8 +2751,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_system_function_physics.html" class="md-nav__link">
-        Physics
+      <a href="hs_system_function_physics.html" class="md-nav__link">
+        物理演算
       </a>
     </li>
   
@@ -2768,12 +2770,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_7" type="checkbox" id="__nav_11_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_7" type="checkbox" id="__nav_11_7" checked>
       
       
       
@@ -2787,14 +2791,14 @@
       
       
         <label class="md-nav__link" for="__nav_11_7">
-          Statements and flow control
+          宣言と制御
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Statements and flow control" data-md-level="2">
+      <nav class="md-nav" aria-label="宣言と制御" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_7">
           <span class="md-nav__icon md-icon"></span>
-          Statements and flow control
+          宣言と制御
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2804,9 +2808,84 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_statement_def.html" class="md-nav__link">
-        Declarations and definitions
+      <a href="hs_statement_def.html" class="md-nav__link">
+        定義・宣言
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          制御構文
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="hs_statement_control.html" class="md-nav__link md-nav__link--active">
+        制御構文
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#if-" class="md-nav__link">
+    if - 条件分岐
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#while-" class="md-nav__link">
+    while - 繰り返し
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-" class="md-nav__link">
+    for - 初期化と反復子込みの繰り返し
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-" class="md-nav__link">
+    switch - 多数の分岐条件を簡潔に記述
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2818,22 +2897,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_statement_constrol.html" class="md-nav__link">
-        Control Statement
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_operator.html" class="md-nav__link">
-        Operator
+      <a href="hs_operator.html" class="md-nav__link">
+        演算子
       </a>
     </li>
   
@@ -2888,14 +2953,14 @@
       
       
         <label class="md-nav__link" for="__nav_12">
-          Release Note
+          リリースノート
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Release Note" data-md-level="1">
+      <nav class="md-nav" aria-label="リリースノート" data-md-level="1">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
-          Release Note
+          リリースノート
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2906,7 +2971,7 @@
   
     <li class="md-nav__item">
       <a href="../releasenote/AboutReleasenote.html" class="md-nav__link">
-        About Release Note
+        リリースノートについて
       </a>
     </li>
   
@@ -3855,14 +3920,14 @@
       
       
         <label class="md-nav__link" for="__nav_13">
-          Change Log
+          チェンジログ
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Change Log" data-md-level="1">
+      <nav class="md-nav" aria-label="チェンジログ" data-md-level="1">
         <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
-          Change Log
+          チェンジログ
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -3873,7 +3938,7 @@
   
     <li class="md-nav__item">
       <a href="../changelog/AboutChangelog.html" class="md-nav__link">
-        About Changelog
+        チェンジログについて
       </a>
     </li>
   
@@ -4796,7 +4861,7 @@
   
     <li class="md-nav__item">
       <a href="../common/License.html" class="md-nav__link">
-        License
+        利用規約
       </a>
     </li>
   
@@ -4814,7 +4879,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -4823,216 +4888,34 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    環境構築・動作に関するトラブルシューティング
-  </a>
-  
-    <nav class="md-nav" aria-label="環境構築・動作に関するトラブルシューティング">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#unity" class="md-nav__link">
-    Unityのバージョンを確認する
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unity_1" class="md-nav__link">
-    Unityプロジェクトとブラウザのキャッシュクリアを行う
-  </a>
-  
-    <nav class="md-nav" aria-label="Unityプロジェクトとブラウザのキャッシュクリアを行う">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#unity_2" class="md-nav__link">
-    Unity側でのキャッシュクリア方法
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#chrome" class="md-nav__link">
-    ブラウザのキャッシュクリア方法（Chrome）
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unity_3" class="md-nav__link">
-    Unity側とブラウザ側でログインができているかを確認する
+  <a href="#if-" class="md-nav__link">
+    if - 条件分岐
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#unity_4" class="md-nav__link">
-    Unityとパソコンの再起動を試す
+  <a href="#while-" class="md-nav__link">
+    while - 繰り返し
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    パスとファイル名に空白や日本語などの2バイト文字が含まれていないか確認する
+  <a href="#for-" class="md-nav__link">
+    for - 初期化と反復子込みの繰り返し
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inspector" class="md-nav__link">
-    スクリプトや一部のオブジェクトをInspectorから非アクティブにしてビルド確認をする
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    プロジェクトの再作成と移植を行う
-  </a>
-  
-    <nav class="md-nav" aria-label="プロジェクトの再作成と移植を行う">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    問題が発生したプロジェクトの一部を移植する
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unity_5" class="md-nav__link">
-    Unityエディターの再インストールを行う
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    ワールド制作時のトラブル
-  </a>
-  
-    <nav class="md-nav" aria-label="ワールド制作時のトラブル">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#q-unityvketcloudvketcloudsdk" class="md-nav__link">
-    Q. UnityにVketCloud導入後にVketCloudSDKからログインしようとすると白い画面が出てログインができない
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#q" class="md-nav__link">
-    Q. 「ビルドと実行」をしてもワールド読み込みが進まない
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#q-unity" class="md-nav__link">
-    Q. Unity側とワールド側でのライティングの見え方が異なる
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    ワールドプレイ中のトラブル
-  </a>
-  
-    <nav class="md-nav" aria-label="ワールドプレイ中のトラブル">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#q_1" class="md-nav__link">
-    Q. 対応端末について
-  </a>
-  
-    <nav class="md-nav" aria-label="Q. 対応端末について">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#apple-iphone" class="md-nav__link">
-    Apple iPhoneシリーズ
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#android" class="md-nav__link">
-    Android
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#q_2" class="md-nav__link">
-    Q. ワールドに入ったがマルチルームにならない
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#q-myvketvketcloudsdk" class="md-nav__link">
-    Q. MyVketでアバターアップロードをしたがVketCloudSDKで簡易アバターになってしまう
-  </a>
-  
-    <nav class="md-nav" aria-label="Q. MyVketでアバターアップロードをしたがVketCloudSDKで簡易アバターになってしまう">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#vketcloudsdk" class="md-nav__link">
-    VketCloudSDKのポリゴン数設定方法
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    それでも解決できない場合
+  <a href="#switch-" class="md-nav__link">
+    switch - 多数の分岐条件を簡潔に記述
   </a>
   
 </li>
@@ -5050,220 +4933,86 @@
               
                 
                 
-                <h1 id="sdk">SDK初学者：何か起きたときにとりあえず見るべきリスト</h1>
-<p>ワールド制作中に何かしらのトラブルが発生した際、問題の切り分けのために以下のチェックリストを確認すると早期の解決につながります。</p>
-<h2 id="_1">環境構築・動作に関するトラブルシューティング</h2>
-<h3 id="unity">Unityのバージョンを確認する</h3>
-<p>VketCloudSDKでのUnityの推奨バージョンは<code>Unity 2019.4.31f1</code>です。
-バージョンが間違っている場合は動作が保証されないため、推奨バージョンでのプロジェクトの再作成が必要です。</p>
-<p><img alt="GeneralChecklist_1" src="img/GeneralChecklist_1.jpg" /></p>
-<p>Unityエディタの上部にバージョン記載があります。</p>
-<h3 id="unity_1">Unityプロジェクトとブラウザのキャッシュクリアを行う</h3>
-<p>ビルドの際にエラーが発生したり、ビルド後にワールドにて機能が動かない際は、Unityのキャッシュクリアやブラウザのキャッシュクリアを行うと改善される場合があります。</p>
-<h4 id="unity_2">Unity側でのキャッシュクリア方法</h4>
-<p>SDKでは、ビルドしたワールドのデータをReleaseフォルダに格納しています。<br>
-フォルダの中身は以下から確認できます。</p>
-<p>Tools-&gt;Open Release Folderを選択</p>
-<p><img alt="GeneralChecklist_2" src="img/GeneralChecklist_2.jpg" /></p>
-<p>以下のようにReleaseフォルダがエクスプローラーにて開かれます。</p>
-<p><img alt="GeneralChecklist_3" src="img/GeneralChecklist_3.jpg" /></p>
-<p>このフォルダーに古いビルドデータが残っている際に、ワールドの誤動作の原因になる場合があります。<br>
-VketCloudSDK --&gt; Clear Cache を選択し、Releaseフォルダーの中身をリセットすると解消されます。</p>
-<p><img alt="GeneralChecklist_4" src="img/GeneralChecklist_4.jpg" /></p>
-<p><img alt="GeneralChecklist_5" src="img/GeneralChecklist_5.jpg" /></p>
-<p>「リリースフォルダの中身を消しても大丈夫ですか？」という旨のウィンドウが出るため、問題がなければ「Accept」をクリックを押す。
-これでキャッシュクリアは完了です。</p>
-<h4 id="chrome">ブラウザのキャッシュクリア方法（Chrome）</h4>
+                <h1 id="_1">制御構文</h1>
+<p>条件分岐や繰り返しなどの、制御構文について説明します。</p>
+<h2 id="if-">if - 条件分岐</h2>
+<p><code>if (条件式)</code> の後に <em>{}</em> で処理を書き分けることで、条件分岐を実現できます。</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="c1">;</span>
+<span class="nv">int</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="c1">;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="ss">)</span><span class="w"> </span>{
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span>の評価結果が<span class="w"> </span><span class="nv">true</span><span class="w"> </span>だった場合の処理
+}<span class="w"> </span><span class="k">else</span><span class="w"> </span>{
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span>の評価結果が<span class="w"> </span><span class="nv">false</span><span class="w"> </span>だった場合の処理
+}
+</code></pre></div>
+
+<h2 id="while-">while - 繰り返し</h2>
+<p><code>while (条件式) { }</code> と書くことで、条件式が <em>false</em> になるまで、<em>{}</em> の中を繰り返し実行する処理が書けます。</p>
+<p>ループを強制的に抜けるには <em>break</em> を利用します。</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">;</span>
+<span class="k">while</span><span class="w"> </span><span class="ss">(</span><span class="nv">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="ss">)</span><span class="w"> </span>{
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span>が<span class="w"> </span><span class="mi">100</span>より小さい間は、この処理を繰り返し実行する
+<span class="w">    </span><span class="o">++</span><span class="nv">x</span><span class="c1">;</span>
+}
+
+<span class="nv">int</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">;</span>
+<span class="o">//</span><span class="w"> </span>条件式が常に<span class="nv">true</span>なので、<span class="nv">break</span>で明示的に抜けるまで中の処理を繰り返す
+<span class="k">while</span><span class="w"> </span><span class="ss">(</span><span class="nv">true</span><span class="ss">)</span><span class="w"> </span>{
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">y</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">100</span><span class="ss">)</span><span class="w"> </span>{
+<span class="w">        </span><span class="o">//</span><span class="w"> </span>強制的にループを抜ける
+<span class="w">        </span><span class="k">break</span><span class="c1">;</span>
+<span class="w">    </span>}
+<span class="w">    </span><span class="o">++</span><span class="nv">y</span><span class="c1">;</span>
+}
+</code></pre></div>
+
+<h2 id="for-">for - 初期化と反復子込みの繰り返し</h2>
+<p><code>for (初期化処理; 条件式; 反復子) { }</code> と書くことで、</p>
 <ol>
-<li>
-<p>Google Chromeの画面右上の[︙]を押す。</p>
-</li>
-<li>
-<p>[その他のツール]を選択後、[閲覧履歴を消去]をクリックする。</p>
-</li>
-<li>
-<p>「閲覧履歴データの削除」の[詳細設定]タブで「期間」リストの削除期間を選択する。</p>
-</li>
-<li>
-<p>「キャッシュされた画像とファイル」にチェックし、[データを削除]をクリックする。</p>
-</li>
+<li>初期化処理を行い、</li>
+<li>条件式を評価した結果が <em>true</em> の場合は <em>{}</em> 内の処理を実行し、</li>
+<li>反復子を処理したあと、</li>
+<li>再度条件式を確認し、<em>true</em> であれば 2. に戻り処理を繰り返す </li>
 </ol>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>※削除対象の期間を全期間にすると確実に全てのキャッシュが削除されますが、VketCloudSDK以外のウェブサイトのキャッシュも削除されるためご注意ください。<br>
-※お使いのブラウザによってキャッシュクリアの手順が異なるため、適宜ブラウザ側のヘルプをご参照ください。</p>
-</div>
-<h2 id="unity_3">Unity側とブラウザ側でログインができているかを確認する</h2>
-<p>ワールドアップロードの際、ブラウザからVket Cloudのアカウントにログインしていない場合に不具合が発生する場合があります。<br>
-Vket Cloud公式サイトにてマイページにログインし、Unityから再度アップロードを行うと症状が解決する場合があります。</p>
-<p>VketCloudSDKでログインを行うには、VketIDの登録とは別としてVket Cloudでライセンスの新規登録を行う必要があります。<br>
-下記のサイトでログインを行い、ライセンスの取得をお試しください。
-<a href="https://cloud.vket.com/">https://cloud.vket.com/</a></p>
-<p>ログイン済みの場合、VketCloudSDK --&gt; Accountを選択するとログインしているユーザーとライセンスが表示されます。</p>
-<p><img alt="GeneralChecklist_5" src="img/GeneralChecklist_5.jpg" /></p>
-<p>もしログインしていない場合は、Unityプロジェクトを再起動した上で、ログインを行ってください。<br>
-Unity起動時に以下のウィンドウが出現している場合は、ログインに成功しております。</p>
-<p><img alt="GeneralChecklist_6" src="img/GeneralChecklist_6.jpg" /></p>
-<p>環境によってはポップアップが正常に出現しなかったり、Firewallやセキュリティソフトの設定によって動作しない場合もあるため、その際はPCのセキュリティ設定をご確認ください。</p>
-<h2 id="unity_4">Unityとパソコンの再起動を試す</h2>
-<p>Unityやパソコンを再起動することで、改善されることがあります。<br>
-特にSDKのバージョンアップ後や導入後に、再起動しないとスクリプトが起きなかったり、SDKのControl Panelが起動しない場合があります。</p>
-<p><img alt="GeneralChecklist_7" src="img/GeneralChecklist_7.jpg" /></p>
-<p>上記画像のような状況が発生した際はシーンを保存いただいた上で、Unityプロジェクトを再起動すると改善する場合があります。</p>
-<h2 id="2">パスとファイル名に空白や日本語などの2バイト文字が含まれていないか確認する</h2>
-<p>VketCloudSDKでは、Unityの読み込み参照先のファイルやフォルダに日本語などの全角の2バイト文字が含まれている場合にエラーが発生します。<br>
-必ず読み込み先のファイルやフォルダは半角英数字で作成してください。</p>
-<p><img alt="GeneralChecklist_8" src="img/GeneralChecklist_8.jpg" /></p>
-<p>Unityプロジェクト名とUnityプロジェクトが含まれているパス名も2バイト文字が入っているとエラーの原因になります。<br>
-名前への2バイト文字の使用は基本的に非推奨となっております。<br>
-※ Unityの初回設定時、VketcloudSDKへログインができない問題で２バイト文字が含まれている場合エラーになります。</p>
-<p><img alt="GeneralChecklist_9" src="img/GeneralChecklist_9.jpg" /></p>
-<h2 id="inspector">スクリプトや一部のオブジェクトをInspectorから非アクティブにしてビルド確認をする</h2>
-<p>Hierarchyにある、問題があると思われるオブジェクトやスクリプトを非アクティブにしてビルドを繰り返す事によって、問題箇所を特定することができます。</p>
-<p><img alt="GeneralChecklist_10" src="img/GeneralChecklist_10.jpg" /></p>
-<h2 id="_2">プロジェクトの再作成と移植を行う</h2>
-<p>導入に何らかのミスや不具合が発生している可能性もあるため、１から導入し直すことで改善できることがあります。
-１から導入し直す場合は、下記のリンクのアカウントの準備から順番に進めてください。</p>
-<ol>
-<li>
-<p><a href="../AboutVketCloudSDK/SetupAccount.html">アカウント準備</a></p>
-</li>
-<li>
-<p><a href="../AboutVketCloudSDK/OperatingEnvironment.html">動作環境</a></p>
-</li>
-<li>
-<p><a href="../AboutVketCloudSDK/SetupSDK_external.html">SDKの導入方法</a></p>
-</li>
-<li>
-<p><a href="../AboutVketCloudSDK/LoginSDK.html">SDKにログインする</a></p>
-</li>
-<li>
-<p>プロジェクト再作成後、HierarchyにVketCloud一式を追加を行い、床を設置して最小構成でビルドを行いテストする。</p>
-</li>
-</ol>
-<h3 id="_3">問題が発生したプロジェクトの一部を移植する</h3>
-<p>最小構成で動作を確認した後、問題のあったプロジェクトから一部のobjectを複製して移植することで、改善される場合があります。</p>
-<p>【移植方法】</p>
-<ol>
-<li>
-<p>Unity下部のProjectのAssetなどで空いてるスペースで、<code>Show in Explorer</code>を押す</p>
-</li>
-<li>
-<p>移植に必要なファイルを探し出す</p>
-</li>
-<li>
-<p>新しいプロジェクトにコピーする</p>
-</li>
-</ol>
-<p><img alt="GeneralChecklist_11" src="img/GeneralChecklist_11.jpg" /></p>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>SDKの中身を移動させる際は、念のためにバックアップを取ることを<strong>強く</strong>おすすめいたします。</p>
-</div>
-<h2 id="unity_5">Unityエディターの再インストールを行う</h2>
-<p>Unity Hubをご使用の場合、インストールタブを開き、該当のエディターバージョンの歯車アイコンを選択するとアンインストールが可能です。
-Unityエディターを入れ直すことで、改善が見られる場合があります。</p>
-<p><img alt="GeneralChecklist_11" src="img/GeneralChecklist_11.jpg" /></p>
-<hr />
-<h2 id="_4">ワールド制作時のトラブル</h2>
-<h3 id="q-unityvketcloudvketcloudsdk">Q. UnityにVketCloud導入後にVketCloudSDKからログインしようとすると白い画面が出てログインができない</h3>
-<ul>
-<li>A. VketCloudのサイトで新規登録を行う</li>
-</ul>
-<p>VketCloudSDKでログインを行うには、VketIDの登録とは別としてVket Cloudでライセンスの新規登録を行う必要があります。<br>
-下記のサイトでログインを行い、ライセンスの取得をお試しください。
-<a href="https://cloud.vket.com/">https://cloud.vket.com/</a></p>
-<ul>
-<li>A. <a href="#2">パスとファイル名に空白や日本語などの2バイト文字が含まれていないか確認する</a></li>
-</ul>
-<p>VketCloudSDKでは、Unityの読み込み参照先のファイルやフォルダに日本語などの全角の2バイト文字が含まれている場合にエラーが発生します。<br>
-必ず読み込み先のファイルやフォルダは半角英数字で作成してください。</p>
-<h3 id="q">Q. 「ビルドと実行」をしてもワールド読み込みが進まない</h3>
-<ul>
-<li>
-<p>A. <a href="#unity_1">Unityプロジェクトとブラウザのキャッシュクリアを行う</a></p>
-</li>
-<li>
-<p>A. テクスチャがSDK仕様のフォーマットに収まっているかを確認する</p>
-</li>
-</ul>
-<p>テクスチャの制限でビルドエラーになることが多いため、必ず仕様をご確認ください。</p>
-<ul>
-<li>
-<p>大きさが2048x2048以下のPNG</p>
-</li>
-<li>
-<p>２の累乗サイズの正方形（2048x2048,1024x1024,512x512等）または2の累乗サイズの長方形</p>
-</li>
-<li>
-<p>ビット深度は24bitまたは32bit</p>
-</li>
-<li>
-<p>png換算で80MB以下</p>
-</li>
-<li>
-<p>拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップロードでエラーが出ることがあります。</p>
-</li>
-</ul>
-<p><a href="../WorldMakingGuide/UnityGuidelines.html">VketCloudの仕様制限</a></p>
-<h3 id="q-unity">Q. Unity側とワールド側でのライティングの見え方が異なる</h3>
-<ul>
-<li>A. Unity導入時の動作環境のマニュアルに設定記載がございます。
-Unity側とワールド側での見え方がデフォルトでは異なるため、Unity側で設定を行う必要があります。
-詳細内容は下記のリンクをご確認ください。</li>
-</ul>
-<p><a href="../AboutVketCloudSDK/OperatingEnvironment.html">動作環境</a></p>
-<hr />
-<h2 id="_5">ワールドプレイ中のトラブル</h2>
-<h3 id="q_1">Q. 対応端末について</h3>
-<p>パソコン:</p>
-<p>Chrome / Firefox / Safari / Edge等のWebブラウザが使用できるもの。</p>
-<p>スマートフォン:</p>
-<h4 id="apple-iphone">Apple iPhoneシリーズ</h4>
-<p>iPhone X以降</p>
-<p>iPhone SE（第2世代）以降</p>
-<h4 id="android">Android</h4>
-<p>Android 11.0以降</p>
-<p>RAM 8GB以上</p>
-<p>Google Pixelなら Pixel 5以降</p>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>※上記のスペックを満たす全ての機種の動作を保証するものではありません。<br>
-※お使いの端末の使用状況や通信環境などによって正しく挙動しない場合がございますので予めご了承ください。</p>
-</div>
-<h3 id="q_2">Q. ワールドに入ったがマルチルームにならない</h3>
-<p>パソコンにマイクが内蔵されているか、マイクを接続する必要があります。<br>
-Vket Cloudでマルチプレイを行う場合、ワールド入場時にブラウザにて「マイクを許可」を必ず有効にしてください。<br>
-※マイク許可がされていない場合、VketCloudの仕様上マルチプレイはできません</p>
-<h3 id="q-myvketvketcloudsdk">Q. MyVketでアバターアップロードをしたがVketCloudSDKで簡易アバターになってしまう</h3>
-<p>VketCloudSDKは、簡易アバターの設定が通常のワールド設定では5万ポリゴンに設定されております。<br>
-簡易アバター設定を行う場合はワールド側で設定を行うか、もしくは自分のアバターのポリゴン数を下げる必要があります。<br>
-※ アバター自体のポリゴン数を下げるにはBlender等の外部ツールで行う必要があります。</p>
-<h4 id="vketcloudsdk">VketCloudSDKのポリゴン数設定方法</h4>
-<ol>
-<li>
-<p>Hierarchyから<a href="../HEOComponents/HEOWorldSetting.html">WorldSetting</a>オブジェクトを選択する</p>
-</li>
-<li>
-<p>MyAvatarタブを選択する</p>
-</li>
-<li>
-<p>Polygonで数字を調整する</p>
-</li>
-</ol>
-<p><img alt="GeneralChecklist_12" src="img/GeneralChecklist_12.jpg" /></p>
-<h2 id="_6">それでも解決できない場合</h2>
-<ul>
-<li>Discordでサポートを受ける</li>
-</ul>
-<p>VketCloud/MyVketコミュニティDiscordに参加し、問題を「#質問・要望・不具合報告」フォーラムに投稿するか、あるいは「📨｜inquiry-ticket」にてプライベートチャンネルを作成します。</p>
-<p><a href="https://discord.com/invite/vsFDNTKdNZ">VketCloud/MyVketコミュニティDiscord</a></p>
-<ul>
-<li>メールで問い合わせる</li>
-</ul>
-<p>メールでのお問い合わせも受け付けております。
-カテゴリ・内容・画像をなるべく詳細に記載するとより早期の解決につながります。</p>
-<p><a href="https://www.hikky.co.jp/contact">問い合わせフォーム</a></p>
+<p>という処理を実現できます。</p>
+<p>()の後に <em>{}</em> で処理を書き分けることで、条件分岐を実現できます。</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">i</span><span class="c1">;</span>
+<span class="k">for</span><span class="w"> </span><span class="ss">(</span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">; i &lt; 100; ++i) {</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="mi">100</span>回この処理を繰り返す
+<span class="w">    </span><span class="nv">hsSystemOutput</span><span class="ss">(</span><span class="s2">&quot;%d\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">i</span><span class="ss">)</span><span class="c1">;</span>
+}
+</code></pre></div>
+
+<h2 id="switch-">switch - 多数の分岐条件を簡潔に記述</h2>
+<div class="codehilite"><pre><span></span><code><span class="nt">switch</span><span class="w"> </span><span class="o">(</span><span class="nt">条件判定に利用する値</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="err">case</span><span class="w"> </span><span class="err">判定に利用する値:</span>
+<span class="w">        </span><span class="err">//</span><span class="w"> </span><span class="err">処理A</span>
+<span class="w">        </span><span class="err">break</span><span class="p">;</span>
+<span class="w">    </span><span class="err">case</span><span class="w"> </span><span class="err">判定に利用する値:</span>
+<span class="w">        </span><span class="err">//</span><span class="w"> </span><span class="err">処理B</span>
+<span class="w">        </span><span class="err">break</span><span class="p">;</span>
+<span class="w">    </span><span class="err">//</span><span class="w"> </span><span class="err">...</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>と書くことで、1つの値に対して、複数の条件判定式と、それが真である場合に実行する処理を簡潔に書くことができます。</p>
+<p><em>case</em> の末尾に <em>default</em> 節を置くことで、それより上にある全ての <em>case</em> に一致しない場合の処理を書くことができます。</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">int</span><span class="w"> </span><span class="nt">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">100</span><span class="o">;</span>
+<span class="nt">string</span><span class="w"> </span><span class="nt">message</span><span class="o">;</span>
+
+<span class="nt">switch</span><span class="w"> </span><span class="o">(</span><span class="nt">id</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="err">case</span><span class="w"> </span><span class="err">-1:</span>
+<span class="w">        </span><span class="err">message</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;dummy</span><span class="w"> </span><span class="err">account&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="err">break</span><span class="p">;</span>
+<span class="w">    </span><span class="err">case</span><span class="w"> </span><span class="err">0:</span>
+<span class="w">        </span><span class="err">message</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;root</span><span class="w"> </span><span class="err">user&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="err">break</span><span class="p">;</span>
+<span class="w">    </span><span class="n">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;restricted user&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="err">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
                 
               
               
@@ -5296,7 +5045,7 @@ Vket Cloudでマルチプレイを行う場合、ワールド入場時にブラ�
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
