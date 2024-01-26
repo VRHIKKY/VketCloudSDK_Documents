@@ -1,4 +1,7 @@
-# 追加されたページ
+# SDK Manual Change Log - Ver 4.8
+
+## 追加されたページ
+
 - [HEOSpot](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOSpot.html)
 - [HEOSpawn](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOSpawn.html)
 - [HEOShadow](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/HEOComponents/HEOShadow.html)
@@ -8,7 +11,8 @@
 - [バージョンアップ後にComponentがMissingとして表示される](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/troubleshooting/MissingComponents.html)
 - [プリセットアバターを追加する](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/WorldMakingGuide/PresetAvatar.md)
 
-# 変更されたページ
+## 変更されたページ
+
 - [はじめに](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/index.html)
     - [リリースノート](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/releasenote/releasenote-4.8.html)と[チェンジログ](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/changelog/changelog-4.8.html)についての案内を追加
 - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/AboutVketCloudSDK/SetupSDK_external.html)
@@ -32,4 +36,4 @@
 - [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/ja/WorldMakingGuide/UnityGuidelines.html)
     - ライトの仕様の追記
 
-# 削除されたページ
+## 削除されたページ
