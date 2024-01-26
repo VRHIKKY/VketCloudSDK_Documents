@@ -1,6 +1,20 @@
-# 追加されたページ
+# SDK Manual Change Log - Ver 9.3
 
-# 変更されたページ
+## 追加されたページ
+
+- 編集のためのTips
+    - [複数のHEOコンポーネントの一括編集](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/WorldEditingTips/MultiSelect_HEOComponents.html)
+    - [UnlitマテリアルのContributeGI設定を外す](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/WorldEditingTips/DisableContributeGITool.html)
+    - [EditorOnlyタグの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/WorldEditingTips/EditorOnlyTag.html)
+- HEOコンポーネント
+    - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/HEOComponents/HEOActivity.html)
+    - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/HEOComponents/HEOBackgroundTexture.html)
+- HeliScript
+    - [HeliScript/組み込み関数 - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_chatgpt.html)
+    - [HeliScript/組み込み関数 - 物理演算](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_physics.html)
+
+## 変更されたページ
+
 - VketCloudSDKについて
     - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
         - インストールウィザード及びVersion Managerの使用方法を追加
@@ -52,4 +66,16 @@
         - 設定画面でのバージョン表記が旧バージョンのままになっている / HeliScript・ギミックがバージョンアップ後に動かない際の対処を追記
         - ファイルの破損エラーが表示される際の対処を追記
 
-# 削除されたページ
+## 削除されたページ
+
+- 自動テクスチャ圧縮
+- アクション
+    - GTag
+    - CallJavascript
+    - Jumpworld
+    - Showlayer
+- HeliScript
+    - 組み込み関数 
+        - JavaScript
+- HEOTweetTrigger
+- チェックツール (本バージョンでは[デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/debugconsole/debugconsole.html)をご使用ください)
