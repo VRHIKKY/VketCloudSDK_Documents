@@ -18,7 +18,7 @@
     
     
       
-        <title>.heoファイルを出力する - VketCloudSDK Manual</title>
+        <title>HEOExporterの使い方 - VketCloudSDK Manual</title>
       
     
     
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              .heoファイルを出力する
+              HEOExporterの使い方
             
           </span>
         </div>
@@ -146,14 +146,14 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../WorldMakingGuide/HEOExporter_Tutorial.html" hreflang="en" class="md-select__link">
-                    English
+                  <a href="../../WorldMakingGuide/HEOExporter_Tutorial.html" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="HEOExporter_Tutorial.html" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="../../en/WorldMakingGuide/HEOExporter_Tutorial.html" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
                 
@@ -861,14 +861,16 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          .heoファイルを出力する
+          HEOExporterの使い方
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="HEOExporter_Tutorial.html" class="md-nav__link md-nav__link--active">
-        .heoファイルを出力する
+        HEOExporterの使い方
       </a>
       
         
@@ -876,19 +878,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#heoexporter" class="md-nav__link">
-    HEOExporterの使い方
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -1136,6 +1133,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8">
@@ -1186,6 +1185,20 @@
     <li class="md-nav__item">
       <a href="../WorldOptimization/TextureCompression.html" class="md-nav__link">
         テクスチャ圧縮
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldOptimization/SmartphoneOptimization.html" class="md-nav__link">
+        スマートフォンのためのワールド軽量化
       </a>
     </li>
   
@@ -2985,7 +2998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_statement_constrol.html" class="md-nav__link">
+      <a href="../hs/hs_statement_control.html" class="md-nav__link">
         制御構文
       </a>
     </li>
@@ -5097,19 +5110,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#heoexporter" class="md-nav__link">
-    HEOExporterの使い方
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -5138,9 +5146,7 @@
               
                 
                 
-                  <h1>.heoファイルを出力する</h1>
-                
-                <h2 id="heoexporter">HEOExporterの使い方</h2>
+                <h1 id="heoexporter">HEOExporterの使い方</h1>
 <p>HEOExporterとは、VketCloudSDKに含まれているツールの一つで、VketCloud専用の3Dオブジェクトファイルフォーマットである『.heo』を出力することができます。主にモデルデータを.heoとして書き出します。</p>
 <h2 id="_1">シーンの準備</h2>
 <p>空のオブジェクトを配置して任意の名前を付けてください。ここでは『VketCloudSample』とします。このオブジェクト名は、出力時の.heoファイル名となります。</p>
@@ -5152,8 +5158,8 @@
 <p>成功すると、Consoleに以下のように「Exported」とポリゴン数が出力されます。</p>
 <p><img alt="NumberOfPolygons" src="img/NumberOfPolygons.jpg" /></p>
 <p>出力したフォルダにある「tex_sample」フォルダを開いてみます。</p>
-<p>ここには確認用のテクスチャファイルが出力されます。もしこの中にjpgファイル以外（JPEGやTGAなど）が含まれているとVketCloudでは読み込めませんので、テクスチャを差し替えてマテリアルを修正し再度エクスポートします。</p>
-<p>上記の例では「009_VketCloudComu.jpg」がそれに該当します。なお、「000_」など先頭に追加されている数字はエクスポート時に付けられたもので、元のファイル名は「VketCloudComu.jpg」になります。</p>
+<p>ここには確認用のテクスチャファイルが出力されます。もしこの中にpngファイル以外（JPEGやTGAなど）が含まれているとVketCloudでは読み込めませんので、テクスチャを差し替えてマテリアルを修正し再度エクスポートします。</p>
+<p>下記の例では「009_VketCloudComu.jpg」がそれに該当します。なお、「000_」など先頭に追加されている数字はエクスポート時に付けられたもので、元のファイル名は「VketCloudComu.jpg」になります。</p>
 <p><img alt="OpenTexSample" src="img/OpenTexSample.jpg" />
 <img alt="OpenVketCloudComu" src="img/OpenVketCloudComu.jpg" /></p>
 <p>なお、<strong>再エクスポートする際は「tex」「tex_sample」フォルダは手動で削除してからおこなって下さい</strong>。テクスチャファイルの先頭に番号が自動で付与されるため、前回と状況が異なると同番号で古いファイルが残ったままになります。</p>

@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#preparing-the-scene" class="md-skip">
+        <a href="#heoexporter-tutorial" class="md-skip">
           Skip to content
         </a>
       
@@ -146,14 +146,14 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../WorldMakingGuide/HEOExporter_Tutorial.html" hreflang="en" class="md-select__link">
-                    English
+                  <a href="../../WorldMakingGuide/HEOExporter_Tutorial.html" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="../../ja/WorldMakingGuide/HEOExporter_Tutorial.html" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="HEOExporter_Tutorial.html" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
                 
@@ -861,6 +861,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           HEOExporter Tutorial
@@ -875,6 +877,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1129,6 +1133,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8">
@@ -1179,6 +1185,20 @@
     <li class="md-nav__item">
       <a href="../WorldOptimization/TextureCompression.html" class="md-nav__link">
         Texture Compression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldOptimization/SmartphoneOptimization.html" class="md-nav__link">
+        Optimization for Smartphones
       </a>
     </li>
   
@@ -2978,7 +2998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_statement_constrol.html" class="md-nav__link">
+      <a href="../hs/hs_statement_control.html" class="md-nav__link">
         Control Statement
       </a>
     </li>
@@ -5090,6 +5110,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5124,9 +5146,8 @@
               
                 
                 
-                  <h1>HEOExporter Tutorial</h1>
-                
-                <p>HEOExporter is one of the tools included in VketCloudSDK, and can export ".heo", a 3D object file format dedicated to VketCloud. It is mainly used to export model data as .heo.</p>
+                <h1 id="heoexporter-tutorial">HEOExporter Tutorial</h1>
+<p>HEOExporter is one of the tools included in VketCloudSDK, and can export ".heo", a 3D object file format dedicated to VketCloud. It is mainly used to export model data as .heo.</p>
 <h2 id="preparing-the-scene">Preparing the scene</h2>
 <p>Place an empty object and give it any name. Let's call it "VketCloudSample" here. This name will be used for the .heo file name when exported.</p>
 <p>And place the world model etc. that you want to export as the child of VketCloudSample. HEOExporter exports all objects under the parent element (VketCloudSample in this case).</p>
@@ -5138,7 +5159,7 @@
 <p><img alt="NumberOfPolygons" src="img/NumberOfPolygons.jpg" /></p>
 <p>Open the "tex_sample" folder in the output folder.</p>
 <p>Here you will find the original texture files for confirmation purpose. If it contains files other than png files (JPEG, TGA, etc.), VketCloud won't be able to read them. Replace the textures, modify the materials, and export again.</p>
-<p>In the above example, "009_VketCloudComu.jpg" is the problematic one. The numbers added to the beginning such as "000_" were added at the time of export, and the original file name was "VketCloudComu.jpg".</p>
+<p>In the example below, "009_VketCloudComu.jpg" is the problematic one. The numbers added to the beginning such as "000_" were added at the time of export, and the original file name was "VketCloudComu.jpg".</p>
 <p><img alt="OpenTexSample" src="img/OpenTexSample.jpg" />
 <img alt="OpenVketCloudComu" src="img/OpenVketCloudComu.jpg" /></p>
 <p><strong>Please delete the "tex" and "tex_sample" folders manually before re-exporting</strong>. Since numbers are automatically added to the top of the texture file name, if the situation is different from the previous time, the old file with the same number may remain.</p>

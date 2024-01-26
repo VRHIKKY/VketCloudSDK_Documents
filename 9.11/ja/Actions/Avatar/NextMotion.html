@@ -146,14 +146,14 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../../Actions/Avatar/NextMotion.html" hreflang="en" class="md-select__link">
-                    English
+                  <a href="../../../Actions/Avatar/NextMotion.html" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="NextMotion.html" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="../../../en/Actions/Avatar/NextMotion.html" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
                 
@@ -854,7 +854,7 @@
   
     <li class="md-nav__item">
       <a href="../../WorldMakingGuide/HEOExporter_Tutorial.html" class="md-nav__link">
-        .heoファイルを出力する
+        HEOExporterの使い方
       </a>
     </li>
   
@@ -1084,6 +1084,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8">
@@ -1134,6 +1136,20 @@
     <li class="md-nav__item">
       <a href="../../WorldOptimization/TextureCompression.html" class="md-nav__link">
         テクスチャ圧縮
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WorldOptimization/SmartphoneOptimization.html" class="md-nav__link">
+        スマートフォンのためのワールド軽量化
       </a>
     </li>
   
@@ -2947,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hs/hs_statement_constrol.html" class="md-nav__link">
+      <a href="../../hs/hs_statement_control.html" class="md-nav__link">
         制御構文
       </a>
     </li>
@@ -5074,28 +5090,29 @@
                 
                 
                 <h1 id="nextmotion">NextMotion</h1>
-<p><img alt="NextMotion" src="img/NextMotionJP.jpg" /></p>
-<p>NextMotionは、Motionアクションで再生されたモーションの再生完了後に再生するモーションを設定できます。なお、この設定は一つのアクションリストで、複数指定することは出来ません。</p>
+<p><img alt="NextMotion" src="img/NextMotion.jpg" /></p>
+<p>NextMotionは、<a href="Motion.html">Motion</a>アクションで再生されたモーションの再生完了後に再生するモーションを設定できます。</p>
 <p>Motion Nameには、モーション名を指定します。</p>
 <table>
 <thead>
 <tr>
-<th>ラベル</th>
+<th>名称</th>
 <th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>name</td>
-<td>変数名を自由に設定してください。</td>
-</tr>
-<tr>
-<td>nvalue</td>
-<td>代入する整数値を設定してください。</td>
+<td>Motion Name</td>
+<td>アバターファイルに設定されたモーション名を設定してください</td>
 </tr>
 </tbody>
 </table>
-<p><img alt="MotionNameInAvatar" src="img/MotionNameInAvatarJP.jpg" /></p>
+<p>なお、この設定は一つのアクションリストで一回のみ使用することができ、複数指定することは出来ません。</p>
+<p>具体的には、以下のように連続でNextMotionを置くことはできません。この仕様はHeliScriptにおける<a href="../../hs/hs_class_player.html#setnextmotion">SetNextMotion()</a>も同様です。</p>
+<p><img alt="NextMotionNG" src="img/NextMotionNG.jpg" /></p>
+<p>NextMotionアクション発動時、プレイヤーが使用しているアバターに<code>Motion Name</code>で指定されたモーションがない場合、モーションは再生されません。</p>
+<p>各アバターのモーション名とアニメーションはプリセットアバターの<a href="../../WorldMakingGuide/AvatarFile.html#motion">Avatar File / Motion</a>もしくは<a href="../../HEOComponents/HEOWorldSetting.html#motion">HEOWorldSetting / MyAvatar</a>から確認・変更できます。</p>
+<p><img alt="MyAvatar_1" src="../../HEOComponents/img/HEOWorldSetting_MyAvatar_1.jpg" /></p>
                 
               
               
