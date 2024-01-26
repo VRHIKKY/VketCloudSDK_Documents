@@ -143,14 +143,14 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../HEOComponents/HEOShadow.html" hreflang="en" class="md-select__link">
-                    English
+                  <a href="../../HEOComponents/HEOShadow.html" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="HEOShadow.html" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="../../en/HEOComponents/HEOShadow.html" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
                 
@@ -2661,7 +2661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hs/hs_statement_constrol.html" class="md-nav__link">
+      <a href="../hs/hs_statement_control.html" class="md-nav__link">
         制御構文
       </a>
     </li>
@@ -4001,9 +4001,11 @@
 <p>影には表示距離があり、一定距離離れたオブジェクトは影が徐々に薄くなり、離れると表示されなくなります。</p>
 <p><img alt="HEOShadow_Result_1" src="img/HEOShadow_Result_1.gif" /></p>
 <div class="admonition note caution">
-<p class="admonition-title">Note<p>HEOShadowで動的影が出力されるのは、HEOShadowをアタッチしたオブジェクトのみになります。<br>
-<a href="HEOWorldSetting.html">HEOWorldSetting</a>にて<code>Normal Shadow Map</code>が有効になっている場合、HEOShadowがアタッチされていないオブジェクトは影を表示しない + 影が投影されない状態となります。</p>
-</p>
+<p class="admonition-title">Note</p>
+<div class="codehilite"><pre><span></span><code><span class="n">HEOShadowで動的影が出力されるのは</span><span class="err">、</span><span class="n">HEOShadowをアタッチしたオブジェクトのみになります</span><span class="err">。</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="o">[</span><span class="n">HEOWorldSetting</span><span class="o">]</span><span class="p">(</span><span class="n">HEOWorldSetting</span><span class="p">.</span><span class="n">md</span><span class="p">)</span><span class="n">にて</span><span class="err">`</span><span class="n">Normal</span><span class="w"> </span><span class="n">Shadow</span><span class="w"> </span><span class="k">Map</span><span class="err">`</span><span class="n">が有効になっている場合</span><span class="err">、</span><span class="n">HEOShadowがアタッチされていないオブジェクトは影を表示しない</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">影が投影されない状態となります</span><span class="err">。</span>
+</code></pre></div>
+
 </div>
 <p>また、<code>Shadow Reciever</code>にチェックが入っていないオブジェクトの場合は影が投影されなくなるためご注意ください。</p>
 <p><img alt="HEOShadow_Result_2" src="img/HEOShadow_Result_2.gif" /></p>
