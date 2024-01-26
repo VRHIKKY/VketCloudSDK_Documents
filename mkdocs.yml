@@ -57,7 +57,7 @@ plugins:
       javascript_dir: js
       canonical_version: null
   - i18n:
-      default_language: en
+      default_language: ja
       languages:
         en: English
         ja: 日本語
@@ -292,7 +292,7 @@ nav:
         - TextChat: hs/hs_system_function_textchat.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
-        - Control Statement: hs/hs_statement_constrol.md
+        - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
