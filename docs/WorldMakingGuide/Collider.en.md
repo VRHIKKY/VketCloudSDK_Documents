@@ -28,7 +28,7 @@ For details, see [Actions Overview](../Actions/ActionsOverview.md).
 Also, Colliders can be used for calling Callback functions on HeliScript, which can be applied for creating various gimmicks.<br>
 Each Callback function is described on the following pages:
 
-- [Callback - AreaCollider](../hs/hs_component.mdl#callback-areacollider)
+- [Callback - AreaCollider](../hs/hs_component.md#callback-areacollider)
 - [Callback - physics collision detection](../hs/hs_component.md#callback-physics-collision-detection)
 - [Callback - In-field collider detection](../hs/hs_component.md#callback-in-field-collider-detection)
 
