@@ -14,4 +14,9 @@
 
 ## 変更されたページ
 
+- 機能廃止に伴い、以下のページにて新機能への誘導を追加
+  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/HEOComponents/HEOWorldSetting.html)  
+  - [HEODespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/HEOComponents/HEODespawnHeight.html)  
+  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/HEOComponents/HEOPlayer.html)  
+
 ## 削除されたページ

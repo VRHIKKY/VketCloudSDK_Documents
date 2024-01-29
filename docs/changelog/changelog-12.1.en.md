@@ -14,4 +14,9 @@
 
 ## Edited Pages
 
+- According to deprecation, added notation to new features on pages below:
+  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/HEOComponents/HEOWorldSetting.html)  
+  - [HEODespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/HEOComponents/HEODespawnHeight.html)  
+  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/HEOComponents/HEOPlayer.html)  
+
 ## Deleted Pages

@@ -1,5 +1,9 @@
 # HEOPlayer
 
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 ![HEOPlayer](img/HEOPlayer.jpg)
 
 HEOPlayer specifies the spawn point, jump velocity, movespeed, etc. of the player.<br>
