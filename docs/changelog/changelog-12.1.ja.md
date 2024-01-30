@@ -4,4 +4,7 @@
 
 ## 変更されたページ
 
+- 編集のためのTips
+  - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldEditingTips/BuildOptions.html)
+
 ## 削除されたページ
