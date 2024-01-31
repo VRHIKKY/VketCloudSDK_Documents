@@ -43,12 +43,33 @@ This provides the developer an environment for effective debugging and problem s
 | Port | Enter the port number for running the world locally. (Initially set to 8000) |
 | Clear | Clears all log entries.<br> Unsolved issues will re-appear if unsolved. |
 | Clear on Build | Toggle setting for automatic log cleanup on build. |
-| Log | Toggle filter for log display, also showing the total of logs. | 
-| Warning | Toggle filter for Warning display, also showing the total of Warnings. | 
-| Error | Toggle filter for Error display, also showing the total of Errors. | 
+| Texture Size (Memory) | Displays the current texture memory size within the scene. <br> This can be used to analyze  unexpected memory cost. |
+| Mesh Polygon Count | Displays the current active mesh polygon count within the scene, which is a vital factor for optimization. <br> This can be useful for optimizing complex scenes. |
+| Log | Toggle filter for log display, also showing the total of logs. |
+| Warning | Toggle filter for Warning display, also showing the total of Warnings. |
+| Error | Toggle filter for Error display, also showing the total of Errors. |
 | Search Box | Search box for searching log entries by keyword/phrases.  |
 | Settings | Button for opening the Settings.<br> Settings details are on the following passage. |
 | Export | Exports the console log on a json file. |
+
+The Texture Size (Memory) will display the total texture size of the components below:
+
+!!! note "Textures counted on Texture Size Indicator"
+    -  `Renderer`
+    -  `MeshRenderer`
+    -  `SkinnedMeshRenderer`
+    -  `HEOPlane`
+    -  `HEOBackgroundTexture`
+    -  `HEONameplate`: Nameplate / Image type object
+    -  `AvatarSetting`: Avatar File components
+      -  Thumbnail(Japanese)
+      -  Thumbnail(English)
+
+Also, the Mesh Polygon Count will display the polygon total of the components below:
+
+!!! note "Meshes counted on Mesh Polygon Count"
+    - `MeshRenderer`
+    - `SkinnedMeshRenderer`
 
 ### Debug Console Settings
 
