@@ -1,6 +1,6 @@
 # デバッグコンソールとは
 
-![debugconsole_1](./img/debugconsole_1_ja.jpg)
+![debugconsole_1](./img/debugconsole_1.jpg)
 
 デバッグコンソールは、VketCloudSDKのワールド実装する際のデバッグや問題のトラブルシューティングを補助するためのツールです。主な目的は、実行中のプログラムの状態や挙動に関する情報をリアルタイムに把握することです。
 
@@ -14,11 +14,13 @@
 デバッグコンソールは、開発者がアプリケーションの実行中に発生するログ情報を監視し、問題の特定やバグの修正に役立ちます。特に複雑なシステムや大規模なプロジェクトの開発においては、デバッグコンソールは非常に重要なツールとなります。
 
 ## デバッグコンソールの開き方
+
 VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`を押下してデバッグコンソールウィンドウを開きます。
 
-![debugconsole_2](./img/debugconsole_2_ja.jpg)
+![debugconsole_2](./img/debugconsole_2.jpg)
 
 ## UnityのConsoleとの違いとは
+
 1. VketCloudSDKに特化した表示とフィルタリング、独自エラータイプを実装し、VketCloudSDKでワールド実装する際のデバッグをサポートします。
 2. 検索機能の強化: デバッグコンソールでは、ログメッセージの検索機能を提供しています。開発者は特定のキーワードやフレーズを含むログを素早く検索し、関連する情報にアクセスできます。この機能により、大量のログデータの中から必要な情報を見つけやすくなります。
 3. ログのコピー機能: デバッグコンソールでは、ログメッセージやスタックトレースを簡単にコピーできます。開発者は必要な情報をクリップボードにコピーして共有したり、他のツールに貼り付けて分析したりすることができます。
@@ -27,9 +29,10 @@ VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`�
 デバッグコンソールは、Unityのデフォルトのコンソールでは提供されていないカスタマイズ性や高度な機能を備えています。これにより、開発者はより効果的なデバッグと問題解決を行うことができます。
 
 ## UI説明
+
 ### ツールバーの機能説明
 
-![debugconsole_3](./img/debugconsole_3_ja.jpg)
+![debugconsole_3](./img/debugconsole_3.jpg)
 
 | ラベル | 機能 |
 |----|----|
@@ -46,7 +49,7 @@ VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`�
 
 ### デバッグコンソールの設定
 
-![debugconsole_4](./img/debugconsole_4_ja.jpg)
+![debugconsole_4](./img/debugconsole_4.jpg)
 
 デバッグコンソールのツールバーから「設定」を選択し、設定画面のウィンドウを開きます。
 本設定ではリソースへの制限値を設定し、各制限値を超えた際にデバッグコンソールにてWarningを生成させられます。
@@ -60,7 +63,7 @@ VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`�
 
 ### ログタイプパネル　（左側にあるパネル）
 
-![debugconsole_5](./img/debugconsole_5_ja.jpg)
+![debugconsole_5](./img/debugconsole_5.jpg)
 
 ログタイプパネルは独自のログタイプごとにログをフィルタする機能です。<br>
 各ラジオボタンを押すことでフィルタの切り替えを行います。<br>
@@ -68,7 +71,7 @@ VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`�
 
 ### ログエントリーリスト（右側にあるパネル）
 
-![debugconsole_6](./img/debugconsole_6_ja.jpg)
+![debugconsole_6](./img/debugconsole_6.jpg)
 
 ログエントリーリストでは、エラーをリスト表示します。<br>
 リストの各項目をクリックすると、ログの詳細を下のパネルに表示します。<br>
@@ -78,7 +81,7 @@ VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`�
 
 ### ログ詳細情報（下のパネル）
 
-![debugconsole_7](./img/debugconsole_7_ja.jpg)
+![debugconsole_7](./img/debugconsole_7.jpg)
 
 以下内容が含まれます。<br>
 (ログによって、関連オブジェクト、関連リンク、関連ログがない場合もあります。)
@@ -92,10 +95,10 @@ VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`�
 | `関連リンク` | 関連するリンクを表示し、クリックすると指定されたURLが開かれます |
 | `関連ログ` | 関連するログの詳細情報を表示します。<br> ログのグループ、ログのタイプ、メッセージ、スタックトレースなどが表示されます |
 
-### ログ詳細情報の例：
+### ログ詳細情報の例
 
-![debugconsole_8](./img/debugconsole_8_ja.jpg)
+![debugconsole_8](./img/debugconsole_8.jpg)
 
-![debugconsole_9](./img/debugconsole_9_ja.jpg)
+![debugconsole_9](./img/debugconsole_9.jpg)
 
-![debugconsole_10](./img/debugconsole_10_ja.jpg)
+![debugconsole_10](./img/debugconsole_10.jpg)
