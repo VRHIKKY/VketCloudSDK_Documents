@@ -1,39 +1,41 @@
 # Build Options
 
-ビルド設定において、制作者はビルド時にワールドを構成するファイルに対して様々な操作を行うことができます。
+On build options, the creator can set various settings for world assets on build.
 
-ビルド設定を編集するには、VketCloudSDK > Settingsより設定ウィンドウを開き、「Build」タブを選択します。
-
-なお、ワールドのアップロード時には`Use override settings for image conversion`を除いた全ての設定項目が`true`に上書きされた状態でアップロードされます。
+To edit build options, Open VketCloudSDK > Settings, and select the "Build" tab.
 
 ![BuildOptions_1](img/BuildOptions_1.jpg)
 
-## テクスチャオーバーライド設定
+## Texture Override Settings
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Use override settings for image conversion | true | trueのとき、テクスチャのオーバーライド設定を使用します。 |
-| Set the texture size to a power of 2 during build | true | テクスチャのInspectorで指定したMaxSizeを基にファイルを変換します。 |
+| Set the texture size to a power of 2 during build | true | Convert texture size depending on the Maxsize designated on the texture's Inspector. |
 
-テクスチャのMaxSize(ビルド時に変換されるサイズ)はInspectorから指定が可能です。<br>
-これによって、どの程度圧縮がかけられるか設定が可能です。
+The texture's MaxSize(convert size on build) can be designated in the Inspector.<br>
+This designates how much the texture will be compressed.
 
 ![BuildOptions_2](img/BuildOptions_2.jpg)
 
-## モデル書き出し設定
+## Model Export Settings
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Convert the model's texture for smartphone use | false | heoファイルのテクスチャを圧縮し、スマートフォン用に軽量化します。 |
+| Convert the model's texture for smartphone use | false | Optimizes heo file textures for smartphone use by compressing file textures. |
 
-## アバター書き出し設定
+## Avatar Export Settings
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Convert the avatar's VRM for smartphone use | false | vrmファイルをhrmファイルへと変換し、軽量化を行った上でvrmをリソースに置かないように設定します。 |
+| Convert the avatar's VRM for smartphone use | false | Toggles conversion of vrm files to hrm files, optimizing size and preventing vrm files to be uploaded as resource. |
 
-## パーティクル書き出し設定
+## Particle Export Settings
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Convert the particle's texture for smartphone use | false | パーティクルファイルを圧縮し、スマートフォン用に軽量化します。 |
+| Convert the particle's texture for smartphone use | false | Optimizes particles for smartphone use by compressing files. |
+
+## Custom Path for Build
+
+!!! note caution
+    These settings are planned to be deleted on future updates. Please do not edit.

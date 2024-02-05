@@ -4,15 +4,12 @@
 
 ビルド設定を編集するには、VketCloudSDK > Settingsより設定ウィンドウを開き、「Build」タブを選択します。
 
-なお、ワールドのアップロード時には`Use override settings for image conversion`を除いた全ての設定項目が`true`に上書きされた状態でアップロードされます。
-
 ![BuildOptions_1](img/BuildOptions_1.jpg)
 
 ## テクスチャオーバーライド設定
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
-| Use override settings for image conversion | true | trueのとき、テクスチャのオーバーライド設定を使用します。 |
 | Set the texture size to a power of 2 during build | true | テクスチャのInspectorで指定したMaxSizeを基にファイルを変換します。 |
 
 テクスチャのMaxSize(ビルド時に変換されるサイズ)はInspectorから指定が可能です。<br>
@@ -37,3 +34,8 @@
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Convert the particle's texture for smartphone use | false | パーティクルファイルを圧縮し、スマートフォン用に軽量化します。 |
+
+## Custom Path for Field
+
+!!! note caution
+    本機能は将来のアップデートにて廃止されます。原則として使用しないようお願い致します。
