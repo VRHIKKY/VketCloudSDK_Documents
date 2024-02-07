@@ -1,6 +1,6 @@
 # Debug Console
 
-![debugconsole_1](./img/debugconsole_1_en.jpg)
+![debugconsole_1](./img/debugconsole_1.jpg)
 
 The debug console is the tool for troubleshooting issues and debugging when developing worlds on VketCloudSDK.<br> 
 Main purpose of the console is to provide realtime information about function behaviour and status of running programs.
@@ -16,11 +16,13 @@ The debug console is useful for the developers' need to watch log information ge
 This tool is vital especially for developing complex systems and large-scale projects.
 
 ## How to open the Debug Console
+
 Select the `Tools` on the VketCloudSDK tab, and open the debug console window by selecting `Debug Console`.
 
-![debugconsole_2](./img/debugconsole_2_en.jpg)
+![debugconsole_2](./img/debugconsole_2.jpg)
 
 ## Differences between the Unity Console
+
 1. **Built-in support** especially for world developing on VketCloudSDK, including specialized display, filtering, originally implemented error types
 2. **Reinforced search feature**: The debug console provides searching for log messages. <br> The developer may access the related information by swift searching the log containing a certain keyword/phrase. <br>This feature allows easier finding of information from massive log data.
 3. **Log copying**: The debug console allows easy copy of log messages and stack traces.<br> The developer may share the information via copying on the clipboard, or analyzing it by pasting it on other tools.
@@ -30,9 +32,10 @@ The debug console contains flexible customization and advanced features which ar
 This provides the developer an environment for effective debugging and problem solving.
 
 ## UI Details
+
 ### Toolbar Details
 
-![debugconsole_3](./img/debugconsole_3_en.jpg)
+![debugconsole_3](./img/debugconsole_3.jpg)
 
 | Label | Function |
 |----|----|
@@ -40,16 +43,37 @@ This provides the developer an environment for effective debugging and problem s
 | Port | Enter the port number for running the world locally. (Initially set to 8000) |
 | Clear | Clears all log entries.<br> Unsolved issues will re-appear if unsolved. |
 | Clear on Build | Toggle setting for automatic log cleanup on build. |
-| Log | Toggle filter for log display, also showing the total of logs. | 
-| Warning | Toggle filter for Warning display, also showing the total of Warnings. | 
-| Error | Toggle filter for Error display, also showing the total of Errors. | 
+| Texture Size (Memory) | Displays the current texture memory size within the scene. <br> This can be used to analyze  unexpected memory cost. |
+| Mesh Polygon Count | Displays the current active mesh polygon count within the scene, which is a vital factor for optimization. <br> This can be useful for optimizing complex scenes. |
+| Log | Toggle filter for log display, also showing the total of logs. |
+| Warning | Toggle filter for Warning display, also showing the total of Warnings. |
+| Error | Toggle filter for Error display, also showing the total of Errors. |
 | Search Box | Search box for searching log entries by keyword/phrases.  |
 | Settings | Button for opening the Settings.<br> Settings details are on the following passage. |
 | Export | Exports the console log on a json file. |
 
+The Texture Size (Memory) will display the total texture size of the components below:
+
+!!! note "Textures counted on Texture Size Indicator"
+    -  `Renderer`
+    -  `MeshRenderer`
+    -  `SkinnedMeshRenderer`
+    -  `HEOPlane`
+    -  `HEOBackgroundTexture`
+    -  `HEONameplate`: Nameplate / Image type object
+    -  `AvatarSetting`: Avatar File components
+      -  Thumbnail(Japanese)
+      -  Thumbnail(English)
+
+Also, the Mesh Polygon Count will display the polygon total of the components below:
+
+!!! note "Meshes counted on Mesh Polygon Count"
+    - `MeshRenderer`
+    - `SkinnedMeshRenderer`
+
 ### Debug Console Settings
 
-![debugconsole_4](./img/debugconsole_4_en.jpg)
+![debugconsole_4](./img/debugconsole_4.jpg)
 
 The debug console settings may be accessed via the `Settings` button on the console toolbar.
 The developer may designate a limit value on world resources, to generate a warning entry on the debug console when a resource overwhelms a limit value.
@@ -63,7 +87,7 @@ The developer may designate a limit value on world resources, to generate a warn
 
 ### Log-type Panel (Panel on left-side)
 
-![debugconsole_5](./img/debugconsole_5_en.jpg)
+![debugconsole_5](./img/debugconsole_5.jpg)
 
 The log-type panel filters log entries by originally defined log types. <br>
 Each radio button toggles the filters.<br>
@@ -71,7 +95,7 @@ Errors unknown by the SDK (Compile Error, Runtime Error, etc. ) will be filtered
 
 ### Log Entry List (Panel on right-side)
 
-![debugconsole_6](./img/debugconsole_6_en.jpg)
+![debugconsole_6](./img/debugconsole_6.jpg)
 
 The log entry list displays the errors and log entries.<br>
 Clicking each entry will show the details on the bottom panel.<br>
@@ -81,7 +105,7 @@ Also, the related link will open on the browser if set.
 
 ### Log Details (Panel on bottom)
 
-![debugconsole_7](./img/debugconsole_7_en.jpg)
+![debugconsole_7](./img/debugconsole_7.jpg)
 
 The log details contains the following information:<br>
 (Log may not contain Related Object, Related Link, and Related Log if there is nothing set.)
@@ -95,10 +119,10 @@ The log details contains the following information:<br>
 | `Related Link` | Shows the related link, opening the link when clicked. |
 | `Related Log` | Shows the details of the related log. <br> The log group, type, message, stack trace, etc. will be shown. |
 
-### Examples of Log Details:
+### Examples of Log Details
 
-![debugconsole_8](./img/debugconsole_8_en.jpg)
+![debugconsole_8](./img/debugconsole_8.jpg)
 
-![debugconsole_9](./img/debugconsole_9_en.jpg)
+![debugconsole_9](./img/debugconsole_9.jpg)
 
-![debugconsole_10](./img/debugconsole_10_en.jpg)
+![debugconsole_10](./img/debugconsole_10.jpg)
