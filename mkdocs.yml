@@ -43,7 +43,23 @@ extra:
     provider: mike
     default: latest
   homepage: https://www.hikky.co.jp/vketcloud
-  
+  analytics: 
+    feedback:
+      provider: google
+      property: G-R753QL60GW
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
 use_directory_urls: false
 
 plugins:
@@ -131,6 +147,7 @@ plugins:
           Using EditorOnly Tags: EditorOnlyタグの使用方法
           Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
           Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
+          Build Options: ビルド時のオプション
           World Optimization: ワールドの軽量化方法
           World Optimization - Overview: ワールドの軽量化方法：概要
           Occlusion Culling: オクルージョンカリング
@@ -207,6 +224,7 @@ nav:
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
+  - Build Options: WorldEditingTips/BuildOptions.md
 - World Optimization: 
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
