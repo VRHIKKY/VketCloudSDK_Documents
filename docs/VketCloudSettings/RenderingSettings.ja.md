@@ -66,7 +66,7 @@ RenderingSettingsでは、ワールドにおける描画設定を編集します
 | `SpecularSize` | 512 | スペキュラマップのサイズを指定します。 |
 | `SpecularMipMapCount` | 6.0 | スペキュラ用キューブマップのミップマップの数を指定します。|
 | `Diffuse Map` | | ディフューズマップの画像ファイルを指定します。 |
-| `Specular Map` | | スペキュラマップの画像ファイルを指定します。 |
+| `Specular Map` | | スペキュラマップの画像ファイルを指定します。<br> 設定出来る面数は`SpecularMipMapCount`に応じて増減します。 |
 
 ---
 

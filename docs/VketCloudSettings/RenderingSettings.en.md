@@ -66,7 +66,7 @@ RenderingSettings handles the rendering settings of the world.
 | `SpecularSize` | 512 | Set the size of the specular map texture. |
 | `SpecularMipMapCount` | 6.0 | Set the amount of mip maps used for the specular cube map. |
 | `Diffuse Map` | | Designate the image files for the Diffuse Map. |
-| `Specular Map` | | Designate the image files for the Specular Map. |
+| `Specular Map` | | Designate the image files for the Specular Map. <br> The amount of mip maps to set is designated according to `SpecularMipMapCount`. |
 
 ---
 
