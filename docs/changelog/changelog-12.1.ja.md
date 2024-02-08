@@ -10,6 +10,7 @@
   - [CameraSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/CameraSettings.html)
   - [RenderingSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/RenderingSettings.html)
   - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/AvatarSettings.html)
+    - デフォルトアバターを4種類に拡大した旨を追記
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/MyAvatarSettings.html)
 - 編集のためのTips
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldEditingTips/BuildOptions.html)

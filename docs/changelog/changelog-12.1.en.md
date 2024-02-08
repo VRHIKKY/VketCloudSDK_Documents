@@ -10,6 +10,7 @@
   - [CameraSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/VketCloudSettings/CameraSettings.html)
   - [RenderingSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/VketCloudSettings/RenderingSettings.html)
   - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/VketCloudSettings/AvatarSettings.html)
+    - Added mention on preset avatars: 4 types now available!
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/VketCloudSettings/MyAvatarSettings.html)
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldEditingTips/BuildOptions.html)
