@@ -1,5 +1,9 @@
 # HEOWorldSetting
 
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 HEOWorldSetting manages your World's basic info.
 This component lets you configure the following settings:
 
@@ -10,6 +14,10 @@ This component lets you configure the following settings:
 - MyAvatar
 
 ## Basic Info
+
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
 ![BasicInfo](img/HEOWorldSetting_BasicInfo.jpg)
 
@@ -51,6 +59,10 @@ This component lets you configure the following settings:
 
 ## Camera
 
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 ![Camera](img/HEOWorldSetting_Camera.jpg)
 
 |  Label | Initial Value | function |
@@ -66,6 +78,10 @@ This component lets you configure the following settings:
 ---
 
 ## Rendering
+
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
 ![Rendering_1](img/HEOWorldSetting_Rendering_1.jpg)
 
@@ -116,6 +132,10 @@ This component lets you configure the following settings:
 
 ## Avatars
 
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 ![Avatars](img/HEOWorldSetting_Avatars.jpg)
 
 |  Label | Initial Value | function |
@@ -138,6 +158,10 @@ As the SDK has a default avatarfile, select this file if there is an empty entry
 ---
 
 ## MyAvatar
+
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
 ![MyAvatar](img/HEOWorldSetting_MyAvatar_1.jpg)
 

@@ -172,6 +172,7 @@ plugins:
           How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
           Utility Tools: 補助ツールの使い方 #元ページ不明タグ
           Login to SDK: SDKにログインする
+          Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
 
 markdown_extensions:
     - admonition
@@ -190,6 +191,17 @@ nav:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
     - World Upload : FirstStep/WorldUpload.md
+- Vket Cloud Settings:
+    - Vket Cloud Settings - Overview: VketCloudSettings/Overview.md
+    # Basic
+    - Basic Settings: VketCloudSettings/BasicSettings.md
+    - Player Settings: VketCloudSettings/PlayerSettings.md
+    - Despawn Height Settings: VketCloudSettings/DespawnHeightSettings.md
+    # Advanced
+    - Camera Settings: VketCloudSettings/CameraSettings.md
+    - Rendering Settings: VketCloudSettings/RenderingSettings.md
+    - Avatar Settings: VketCloudSettings/AvatarSettings.md
+    - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 

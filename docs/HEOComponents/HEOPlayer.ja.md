@@ -1,5 +1,9 @@
 # HEOPlayer
 
+!!! note warning
+    本コンポーネントはSDK Ver12.0にて廃止されました。<br>
+    新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
+
 ![HEOPlayer](img/HEOPlayer.jpg)
 
 HEOPlayerは、プレイヤーのスポーン地点、ジャンプ加速度、移動速度などを指定します。<br>

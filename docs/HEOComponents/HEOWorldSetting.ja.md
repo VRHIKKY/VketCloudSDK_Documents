@@ -1,5 +1,9 @@
 # HEOWorldSetting
 
+!!! note warning
+    本コンポーネントはSDK Ver12.0にて廃止されました。<br>
+    新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
+
 HEOWorldSettingはワールドの基本設定を取りまとめるコンポーネントで、以下の設定を管理しています。
 
 - 基本情報
@@ -11,6 +15,10 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 ---
 
 ## 基本設定
+
+!!! note warning
+    本コンポーネントはSDK Ver12.0にて廃止されました。<br>
+    新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
 ![BasicInfo](img/HEOWorldSetting_BasicInfo.jpg)
 
@@ -52,6 +60,10 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ## カメラ設定
 
+!!! note warning
+    本コンポーネントはSDK Ver12.0にて廃止されました。<br>
+    新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
+
 ![Camera](img/HEOWorldSetting_Camera.jpg)
 
 | 名称 | 初期値 | 機能 |
@@ -67,6 +79,10 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 ---
 
 ## 描画設定
+
+!!! note warning
+    本コンポーネントはSDK Ver12.0にて廃止されました。<br>
+    新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
 ![Rendering_1](img/HEOWorldSetting_Rendering_1.jpg)
 
@@ -96,6 +112,10 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ## Bloom / Light Scattering / IBL設定
 
+!!! note warning
+    本コンポーネントはSDK Ver12.0にて廃止されました。<br>
+    新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
+
 ![Rendering_3](img/HEOWorldSetting_Rendering_3.jpg)
 
 |  名称 | 初期値 | 機能 |
@@ -119,6 +139,10 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ## アバター設定
 
+!!! note warning
+    本コンポーネントはSDK Ver12.0にて廃止されました。<br>
+    新機能として[Vket Cloud Setting](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
+
 ![Avatars](img/HEOWorldSetting_Avatars.jpg)
 
 | 名称 | 初期値 | 機能 |
@@ -139,6 +163,10 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 ---
 
 ## マイアバター設定
+
+!!! note warning
+    本コンポーネントはSDK Ver12.0にて廃止されました。<br>
+    新機能として[Vket Cloud Setting](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
 ![MyAvatar_1](img/HEOWorldSetting_MyAvatar_1.jpg)
 
