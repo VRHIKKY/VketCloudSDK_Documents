@@ -2,6 +2,8 @@
 
 ## Added Pages
 
+- SDKTools
+  - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/SDKTools/TextureImportViewer.html)
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldEditingTips/BuildOptions.html)
 

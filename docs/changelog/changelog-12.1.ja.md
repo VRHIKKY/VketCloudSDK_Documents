@@ -2,6 +2,8 @@
 
 ## 追加されたページ
 
+- SDKTools
+  - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/SDKTools/TextureImportViewer.html)
 - 編集のためのTips
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldEditingTips/BuildOptions.html)
 
