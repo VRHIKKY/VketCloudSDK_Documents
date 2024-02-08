@@ -18,5 +18,9 @@
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
+- ワールドの軽量化方法
+  - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldOptimization/TextureCompression.html)
+    - Added overview of Texture Import Viewer
+
 
 ## Deleted Pages

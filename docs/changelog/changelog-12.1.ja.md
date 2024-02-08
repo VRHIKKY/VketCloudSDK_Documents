@@ -18,5 +18,8 @@
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
+- ワールドの軽量化方法
+  - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldOptimization/TextureCompression.html)
+    - Texture Import Viewerについて案内を追加
 
 ## 削除されたページ
