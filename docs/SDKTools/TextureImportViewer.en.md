@@ -2,66 +2,66 @@
 
 ![TextureImportViewer_1](img/TextureImportViewer_1.jpg)
 
-## 概要
+## Overview
 
-Texture Import Viewerは、プロジェクト内にあるテクスチャのインポート設定や圧縮サイズなどを一覧で確認できるVketCloudSDK独自のビューワーツールです。
+Texture Import Viewer is a SDK Tool dedicated to view the project's texture import settings and compressed size as a list.
 
-Viewer上からテクスチャのインポート設定をまとめて変更したり、あるいは容量順に並び替えたりすることもできます。<br>
-また、リスト上で各テクスチャ設定項目を編集し、設定をまとめて保存もしくは[Export Compressed Texture](./ExportCompressedTexture.md)と同じ手法でテクスチャファイルのエクスポート・画像差し替えが行えます。
+On the Viewer, the texture can be sorted by size, name, etc., which import settings can be edited / exported by once.<br>
+This allows the texture settings to be reformatted at once, which can either be saved or exported/replaced by same procedure as [Export Compressed Texture](./ExportCompressedTexture.md).
 
-まとめて画像の再フォーマットを行いたい際に便利なツールです。
+Therefore, this tool is handy when multiple texture files needs reformatting.
 
-## 使用方法
+## How to Use
 
 ![TextureImportViewer_2](img/TextureImportViewer_2.jpg)
 
-Unity上部のメニューから、VketCloudSDK > Tools > TextureImportViewerを選択し、Viewerのウィンドウを開きます。
+On the Unity Menu, select VketCloudSDK > Tools > TextureImportViewer to open the Viewer's window.
 
 ![TextureImportViewer_3](img/TextureImportViewer_3.jpg)
 
-Viewerを開いた直後は上記のような表示になります。
+The Viewer is displayed above on opening the window.
 
-以下の検索オプションを設定し、「Update Texture List」を押すとテクスチャ情報がリスト表示されます。
+By setting the search options below and pressing "Update Texture List", the textures in Scene/Project will be shown in a list.
 
-### 検索オプション
+### Search Options
 
-| 名称 | 初期値 | 機能 |
+| Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Ignored Folders (Size / Element)| 1, Assets/IgnoredFolderName | テクスチャ検索時に除外するフォルダを名前によって指定します。<br>Sizeの数値を増やすと指定できるフォルダ数が増えます。 |
-| Find scene textures only | true | 現在開かれているシーン内に使われているテクスチャのみを検索の対象にします。<br>チェックボックスが空の場合はAssetsフォルダ内の全てのテクスチャが対象になります(検索時間増加) |
-| Show Optional Info | true | 画像の詳細情報欄(Compression,Compressor Quality,Compressed Size(KB),Compressed Pixel)の表示/非表示を選択できます |
-| Load raw pixel (increases search time) | false | 圧縮前テクスチャのピクセルを読み込みます(注意：処理時間が非常に増えます)  |
-| Is NPOT only | false | 圧縮前テクスチャがNPOTのみ検索<br>Load raw pixelをtrueにすると設定できるようになります。 |
+| Ignored Folders (Size / Element)| 1, Assets/IgnoredFolderName | Designates a folder by name to be excluded on updating the texture list.<br>By increasing Size, the number of folders to be excluded can be increased. |
+| Find scene textures only | true | Enables/Disables search mode to only include the textures used in the current scene.<br>If the checkbox is empty, all textures in the Assets folder will be counted(which may lead to longer update time)|
+| Show Optional Info | true | Enable/Disable display of texture details (Compression, Compressor Quality, Compressed Size(KB), Compressed Pixel) |
+| Load raw pixel (increases search time) | false | Loads raw pixel size of the texture before compression (caution: may lead to longer search time) |
+| Is NPOT only | false | Enable/Disable search only for pre-compressed texture in NPOT format.<br> This can be enabled only when `Load raw pixel` is true.|
 
-「Load raw pixel (日本語名：圧縮前テクスチャのピクセルを読み込む)」にチェックを入れると、テクスチャ本来のピクセルサイズが表示されるようになりますが、読み込み時間が激増するためScene外のテクスチャも読み込む場合は注意してください。
+By enabling `Load raw pixel`, the texture's original pixel size can be displayed. However, as this leads to longer load time, handle with caution when loading textures outside the Scene as well.
 
-### Viewerでの操作について
+### Viewer Maneuvers
 
 ![TextureImportViewer_4](img/TextureImportViewer_4.jpg)
 
-Viewer上で各テクスチャをクリックすると、指定されたテクスチャをAssetsにて選択した上でInspectorに表示します。<br>
-このとき、ShiftやCtrlボタンを押しながら項目をクリックすると複数選択が可能です。
+By selecting each texture on the Viewer, the selected texture is selected in Assets and displayed on the Inspector.<br>
+Multiple selection can be done by selecting files while holding Shift or Ctrl key.
 
 ![TextureImportViewer_5](img/TextureImportViewer_5.jpg)
 
-テクスチャリストのヘッダーをクリックすると、その列内で昇順または降順で並び替えできます。
+By selecting categories in the texture list header, the textures can be sorted in ascending/descending order.
 
 ![TextureImportViewer_6](img/TextureImportViewer_6.jpg)
 
-Texture Type ~ Use Crunch Compressionの各テクスチャ設定項目を編集し、「Apply」を選択すると設定をまとめて保存することができます。<br>
-このとき、テクスチャを選択してCompress Selected、あるいはCompress Allを選択すると[Export Compressed Texture](./ExportCompressedTexture.md)と同じ手法でテクスチャファイルのエクスポート・画像差し替えを行います。
+By editing Texture Type ~ Use Crunch Compression settings and selecting "Apply", the settings of each texture can be saved at once.<br>
+Also, selecting "Compress Selected" on selected textures or selecting "Compress All", the texture files can be exported/replaced as the same method of [Export Compressed Texture](./ExportCompressedTexture.md).
 
 ---
 
-## Texture Import Viewerの機能
+## Texture Import Viewer Features
 
-| 名称 | 機能 |
+| Label | Function |
 | ---- | ---- |
-| Compress Selected (日本語名：選択をエクスポート) | 画像名の横のチェックボックスがついているものを対象に、[Export Compressed Texture](./ExportCompressedTexture.md)と同じ手法で、画像をエクスポートします。 |
-| Compress All (日本語名：全てをエクスポート) | 現在のテクスチャ一覧全ての画像を[Export Compressed Texture](./ExportCompressedTexture.md)と同じ手法で、エクスポートします。 |
-| Revert | 元に戻す |
-| Apply | 適用する |
-| Copy | 画像が保存されているパスをクリップボードにコピーします |
-| Jump | 画像が保存されているフォルダの場所を開きます |
+| Compress Selected | Compress/Exports the designated texture files according to procedure of [Export Compressed Texture](./ExportCompressedTexture.md). |
+| Compress All | Compress/Exports all texture files according to procedure of [Export Compressed Texture](./ExportCompressedTexture.md). |
+| Revert | Reverts the applied texture settings |
+| Apply | Saves the applied texture settings |
+| Copy | Copies the texture path onto clipboard  |
+| Jump | Opens the folder where the designated image is saved |
 
-Export Compressed Textureについては[こちらのページ](./ExportCompressedTexture.md)をご覧ください。
+For details of Export Compressed Texture, refer to [this page](./ExportCompressedTexture.md).
