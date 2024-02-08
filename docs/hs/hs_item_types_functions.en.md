@@ -1,44 +1,44 @@
-# Itemの種類一覧 / HeliScript関数対応表
+# Item Types and Usable Functions
 
-## 概要
+## Overview
 
-Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
-HeliScriptにてこれを扱うためのItemクラスには様々なメソッドが用意されていますが、Itemのtype(種類)によって使用できるかどうかが異なります。
+On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
+While the HeliScript language has various Item-class functions to control objects, availability differs among each Item types.
 
-ここではその一覧と対応するHeliScript関数を表としてまとめます。
+Here, an overview and chart of each Items and HeliScript functions will be described.
 
 ---
 
-## Itemのtype
+## Item types
 
-Vket Cloudでは、一口にItemと言っても様々なtypeが存在します。
+On Vket Cloud, there are a wide variety of Items depending by function and specification.
 
-各Itemはそれぞれ該当するHEOコンポーネントをUnity上でオブジェクトに割り当てて表現されます。HeliScriptから思った動作ができない場合は、各オブジェクトに紐づいているItemの種類をご確認ください。
+Each item is described by attaching a corresponding HEO component to a Unity object. If a HeliScript function shows an unintentional behavior, consider checking the Item type of the allocated object.
 
-また、Unityシーン内のゲームオブジェクトがSDKによって設定される条件に合致する場合は、シーン直下や空のオブジェクト以下にあっても出力されます。(HEO Field以下でも別Itemとして出力されます。)
+Also, if the game object in Unity Scenes matches the SDK build conditions, it will be included in build even if it's placed directly on the Scene or an empty object. (e.g. If an item is placed under the object with [HEOField](../HEOComponents/HEOField.md) attached, it will be exported as a separate Item!)
 
-下表に各typeの説明を示します。ギミック実装時に思っていたtypeじゃなくて困るということが減るように、SDKによって設定される条件も記します。
+Each Item type are described on the chart below. To avoid implementation mistakes regarding Item types, a brief explanation is added in `function`.
 
-| Itemのtype / 該当のHEOComponent | typeの説明 |
+| Item type / HEOComponent | function |
 |----|----|
-| [field / HEOField](../HEOComponents/HEOField.md) | 基本的なワールドオブジェクトで使用するItem<br>・ビルド時にHEOField以下のオブジェクトをまとめて一つのHEOファイルとして出力できる。<br>・HEOField以下のゲームオブジェクトはノードという概念となるが、孫の概念はない。<br>・ノード操作系やMaterial操作系機能を使用可能<br>・HEOFieldが入れ子構造になると、下層のFieldもItemとして出力されるが、下層以下のノードは親のノードとして出力されたりするので避けること。<br>・ノードの指定は名前なので、名前の重複は避けること |
-| [object / HEOObject](../HEOComponents/HEOObject.md) | 移動させたりすることがあるオブジェクトに使用するItem<br>・glTF/VRM/[HRM](../WorldEditingTips/BuildOptions.md)を配置するのに使用<br>・移動系の機能が使用可能<br>・HEMアニメーションが使用可能 |
-|  [plane / HEOPlane](../HEOComponents/HEOPlane.md) | テクスチャをそのまま表示できるItem<br>・日本語向けと英語向けとで2種類の画像を設定可能<br>・billboardや両面描写にも対応 |
-| [textplane / HEOTextPlane](../HEOComponents/HEOTextPlane.md) | 任意の文字列を描画することができるItem<br>・文字の書き換えが必要なときに使用<br>・TextPlane系の機能が使用可能 |
-| [bgm/se / HEOAudio](../HEOComponents/HEOAudio.md) | BGMや効果音を再生することができるItem<br>・Play/Stop/IsPlayが使用可能<br>・3種類のtypeは機能としてはどれも同じで、音量設定のどの項目に対応するかが変わる<br> |
-| [particle / HEOParticle](../HEOComponents/HEOParticle.md) | パーティクルを再生することができるItem<br>・Play/Stop/IsPlayが使用可能 |
-|  [spot / HEOSpot](../HEOComponents/HEOSpot.md) | URLで直接任意の場所の前から開始出来るようにするための位置指定に使用するItem<br>・Spot0から連番で好きな位置に配置してURLに&amp;spaceindex=1等のパラメーターを追記することで選んだ位置から開始できる。 |
-|  [areacollider / HEOAreacollider](../HEOComponents/HEOAreacollider.md) | 「侵入するとギミックを発火する」という機能のためのItem<br>Unity上ではFieldの子に配置されるのが正しい<br>・コライダーに入るときと出るときとでそれぞれActionを設定できる |
-|  [bgtexture / HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md) | シーンの背景に画像を配置するために使用するItem<br>・必ず一番はじめに描画される<br>・使用する画像の比率は『1 : 1』である必要がある |
-| [activity / HEOActivity](../HEOComponents/HEOActivity.md) | アクティビティ配置のためのItem<br>・JSONファイルの紐づけによって、ギミックをそのまま配置することが可能 |
-| [camera / HEOCamera](../HEOComponents/HEOCamera.md) | 演出目的等で通常のカメラから切り替えるためのItem<br>・HeliScriptから切り替えることで任意のCameraに切り替えることができる※SDK5.0以降使用可能 |
+| [field / HEOField](../HEOComponents/HEOField.md) | The fundamental Item to place world objects <br>・Exports all objects placed under HEOField as a single HEO file on build.<br>・All game objects under HEOField are described as Nodes, and all Nodes are not nested (i.e. directly a child of the field Item)<br>・Subject to Node functions and Material functions<br>・If another HEOField object is a child of HEOField object, the child will be exported as a separate Item. However, as the child objects under the child HEOField will be a Node of the **parent** HEOObject, avoid placing a nested HEOField object. <br>・As Nodes will be identified by name, avoid naming objects by same name. |
+| [object / HEOObject](../HEOComponents/HEOObject.md) | The Item for placing objects that may move in world<br> Able to place glTF/VRM/[HRM](../WorldEditingTips/BuildOptions.md) models in world<br>・Subject to move functions<br>・Can play HEM animations |
+|  [plane / HEOPlane](../HEOComponents/HEOPlane.md) | The Item for displaying an allocated texture<br>・Can designate variants for Japanese and English<br>・Able to display billboards and double sided textures |
+| [textplane / HEOTextPlane](../HEOComponents/HEOTextPlane.md) | The Item for displaying a designated text<br>・Used for texts that may dynamically change<br>・Subject to TextPlane functions |
+| [bgm/se / HEOAudio](../HEOComponents/HEOAudio.md) | The Item for playing BGM or sound effects<br>・Subject to Play/Stop/IsPlay functions<br>・The two audio types operate the same way, volume can be controlled in world by changing value in the corresponding audio category <br> |
+| [particle / HEOParticle](../HEOComponents/HEOParticle.md) | The Item for playing particles<br>・Subject to Play/Stop/IsPlay functions |
+|  [spot / HEOSpot](../HEOComponents/HEOSpot.md) | The Item for setting an initial spawn position depending on URL query<br>・By placing an object named Spot0, Spot1..., the spawn position can be changed by adding a query such as &amp;spaceindex=1 |
+|  [areacollider / HEOAreacollider](../HEOComponents/HEOAreacollider.md) | The Item for implementing gimmicks which are fired by enter/exit a certain area<br>Expected to be placed under a Field Item on Unity<br>・Able to designate Actions which are fired on enter / on exiting a collider |
+|  [bgtexture / HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md) | The Item for designating a texture as scene background <br>・Always rendered first<br>・Allocated texture must be formatted in a 1 : 1 ratio |
+| [activity / HEOActivity](../HEOComponents/HEOActivity.md) | The Item for placing Activities<br>・According to the activity JSON file, gimmicks and models can be placed without further implementation |
+| [camera / HEOCamera](../HEOComponents/HEOCamera.md) | The Item for switching the ordinary camera to camera for event/movie <br>・Camera switching can be designated by running a function in HeliScript *Available on SDK 5.0 and later versions |
 
 ---
 
-## Itemの種類とItemクラスの関数の使用可否対応表
+## Chart of Item types and usable Item Class functions
 
 | | field | object | plane | textplane | bgm / se | particle | spot | areacollider | bgtexture | activity | camera |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Equals | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
 | GetName | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
 | SetPos | | ○ ||||||||||
@@ -72,7 +72,7 @@ Vket Cloudでは、一口にItemと言っても様々なtypeが存在します�
 | IsEnableCollider | ○ ||||||| ○ ||||
 | SetClickableNode | ○ |||||||||||
 | IsClickableNode | ○ |||||||||||
-| SetUVOffset | ○ | ○ *SDK Ver9.x系以降 ||||||||||
+| SetUVOffset | ○ | ○ *SDK Ver9.x and later ||||||||||
 | PlayVideo | ○ |||||||||||
 | StopVideo | ○ |||||||||||
 | IsPlayVideo | ○ |||||||||||
@@ -90,6 +90,6 @@ Vket Cloudでは、一口にItemと言っても様々なtypeが存在します�
 | SetOverridesProperty | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
 | GetOverridesProperty | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
 
-各メソッドの説明は以下のページを参照して下さい。
+For details on each function, refer to the page below.
 
-[Itemクラス](hs_class_item.md)
+[Item class](hs_class_item.md)
