@@ -6,6 +6,21 @@ As future updates may involve automatic compression/formatting by server, the wo
 
 ## How to do a texture compression
 
+### Texture Import Viewer
+
+![TextureImportViewer_1](../SDKTools/img/TextureImportViewer_1.jpg)
+
+[Texture Import Viewer](../SDKTools/TextureImportViewer.md) is a SDK Tool dedicated to view the project's texture import settings and compressed size as a list.
+
+On the Viewer, the texture can be sorted by size, name, etc., which import settings can be edited / exported by once.<br>
+This allows the texture settings to be reformatted at once, which can either be saved or exported/replaced by same procedure as [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md).
+
+Therefore, this tool is handy when multiple texture files needs reformatting.
+
+For instructions, refer to [Texture Import Viewer](../SDKTools/TextureImportViewer.md).
+
+### Export Compressed Texture
+
 ![ExportCompressedTexture_1](../SDKTools/img/ExportCompressedTexture_1.jpg)
 
 VketCloudSDK has a texture compression/formatting tool named as [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md).
