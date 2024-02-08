@@ -30,8 +30,8 @@ Viewerを開いた直後は上記のような表示になります。
 | Ignored Folders (Size / Element)| 1, Assets/IgnoredFolderName | テクスチャ検索時に除外するフォルダを名前によって指定します。<br>Sizeの数値を増やすと指定できるフォルダ数が増えます。 |
 | Find scene textures only | true | 現在開かれているシーン内に使われているテクスチャのみを検索の対象にします。<br>チェックボックスが空の場合はAssetsフォルダ内の全てのテクスチャが対象になります(検索時間増加) |
 | Show Optional Info | true | 画像の詳細情報欄(Compression,Compressor Quality,Compressed Size(KB),Compressed Pixel)の表示/非表示を選択できます |
-| Load raw pixel (increases search time) | false | 圧縮前テクスチャのピクセルを読み込みます(注意：処理時間が非常に増えます)  |
-| Is NPOT only | false | 圧縮前テクスチャがNPOTのみ検索<br>Load raw pixelをtrueにすると設定できるようになります。 |
+| Load raw pixel (increases search time) | false | 圧縮前テクスチャのピクセルサイズの情報を読み込みます(注意：処理時間が非常に増えます)  |
+| Is NPOT only | false | 圧縮前テクスチャがNPOT形式である画像のみ検索<br>Load raw pixelをtrueにすると設定できるようになります。 |
 
 「Load raw pixel (日本語名：圧縮前テクスチャのピクセルを読み込む)」にチェックを入れると、テクスチャ本来のピクセルサイズが表示されるようになりますが、読み込み時間が激増するためScene外のテクスチャも読み込む場合は注意してください。
 
