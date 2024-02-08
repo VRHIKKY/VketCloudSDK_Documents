@@ -1,8 +1,8 @@
-# If Variable Equal To Value
+# If Variable Less Than Value
 
-![IfEqual](img/IfEqual.jpg)
+![IfLessThan](img/IfLessThan.jpg)
 
-If Variable Equal To Value(日本語名：変数が値に等しい場合)では、比較対象とするVariable(変数)がValue（値）と等しい場合、以降のアクションを実行せずに終了します。
+If Variable Less Than Value(日本語名：変数が値より小さい場合)では、比較対象とするVariable(変数)がValue(値)より小さい場合、以降のアクションを実行せずに終了します。
 
 変数は[SetVar](SetVar.md)にて定義したものが指定できます。
 
