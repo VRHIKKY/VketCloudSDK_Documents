@@ -25,7 +25,7 @@ Vket Cloudでは、一口にItemと言っても様々なtypeが存在します�
 | [object / HEOObject](../HEOComponents/HEOObject.md) | 移動させたりすることがあるオブジェクトに使用するItem<br>・glTF/VRM/[HRM](../WorldEditingTips/BuildOptions.md)を配置するのに使用<br>・移動系の機能が使用可能<br>・HEMアニメーションが使用可能 |
 |  [plane / HEOPlane](../HEOComponents/HEOPlane.md) | テクスチャをそのまま表示できるItem<br>・日本語向けと英語向けとで2種類の画像を設定可能<br>・billboardや両面描写にも対応 |
 | [textplane / HEOTextPlane](../HEOComponents/HEOTextPlane.md) | 任意の文字列を描画することができるItem<br>・文字の書き換えが必要なときに使用<br>・TextPlane系の機能が使用可能 |
-| [bgm/se / HEOAudio](../HEOComponents/HEOAudio.md) | BGMや効果音を再生することができるItem<br>・Play/Stop/IsPlayが使用可能<br>・3種類のtypeは機能としてはどれも同じで、音量設定のどの項目に対応するかが変わる<br> |
+| [bgm/se / HEOAudio](../HEOComponents/HEOAudio.md) | BGMや効果音を再生することができるItem<br>・Play/Stop/IsPlayが使用可能<br>・2種類のtypeは機能としてはどれも同じで、音量設定のどの項目に対応するかが変わる<br> |
 | [particle / HEOParticle](../HEOComponents/HEOParticle.md) | パーティクルを再生することができるItem<br>・Play/Stop/IsPlayが使用可能 |
 |  [spot / HEOSpot](../HEOComponents/HEOSpot.md) | URLで直接任意の場所の前から開始出来るようにするための位置指定に使用するItem<br>・Spot0から連番で好きな位置に配置してURLに&amp;spaceindex=1等のパラメーターを追記することで選んだ位置から開始できる。 |
 |  [areacollider / HEOAreacollider](../HEOComponents/HEOAreacollider.md) | 「侵入するとギミックを発火する」という機能のためのItem<br>Unity上ではFieldの子に配置されるのが正しい<br>・コライダーに入るときと出るときとでそれぞれActionを設定できる |
@@ -38,7 +38,7 @@ Vket Cloudでは、一口にItemと言っても様々なtypeが存在します�
 ## Itemの種類とItemクラスの関数の使用可否対応表
 
 | | field | object | plane | textplane | bgm / se | particle | spot | areacollider | bgtexture | activity | camera |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Equals | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
 | GetName | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
 | SetPos | | ○ ||||||||||
