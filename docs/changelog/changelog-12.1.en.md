@@ -26,6 +26,9 @@
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
+- HEO Components
+  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/HEOComponents/HEOActivity.html)
+    - Added info on Scene Preview and Advanced Settings
 - According to deprecation, added notation to new features on pages below:
   - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/HEOComponents/HEOWorldSetting.html)  
   - [HEODespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/HEOComponents/HEODespawnHeight.html)  
