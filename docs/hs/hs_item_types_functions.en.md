@@ -3,7 +3,7 @@
 ## Overview
 
 On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
-While the HeliScript language has various Item-class functions to control objects, availability differs among each Item types.
+While the HeliScript language has various Item-class functions to control objects, compatibility of such functions differs among each Item types.
 
 Here, an overview and chart of each Items and HeliScript functions will be described.
 
