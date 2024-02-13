@@ -231,6 +231,7 @@ nav:
       - About Screen / How to Operate : particleeditor/pe_about_screen.md
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
+    - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
 - World Editing Tips:
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md

@@ -12,6 +12,8 @@
   - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/VketCloudSettings/AvatarSettings.html)
     - Added mention on preset avatars: 4 types now available!
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/VketCloudSettings/MyAvatarSettings.html)
+- SDKTools
+  - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/SDKTools/VKCActivityExporter.html)
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldEditingTips/BuildOptions.html)
 
