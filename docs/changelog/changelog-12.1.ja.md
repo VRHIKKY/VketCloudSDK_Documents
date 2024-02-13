@@ -2,6 +2,16 @@
 
 ## 追加されたページ
 
+- Vket Cloud Settings
+  - [Vket Cloud Settings - 概要](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/Overview.html)
+  - [BasicSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/BasicSettings.html)
+  - [PlayerSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/PlayerSettings.html)
+  - [DespawnHeightSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/DespawnHeightSettings.html)
+  - [CameraSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/CameraSettings.html)
+  - [RenderingSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/RenderingSettings.html)
+  - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/AvatarSettings.html)
+    - デフォルトアバターを4種類に拡大した旨を追記
+  - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/MyAvatarSettings.html)
 - 編集のためのTips
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldEditingTips/BuildOptions.html)
 
@@ -30,5 +40,9 @@
     - [If Variable Less Than Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/Actions/Programmatic/IfLessThan.html)
       - タイトルを変更（旧：If A <= B）
       - 解説をSDK Ver12.1に準拠
+- 機能廃止に伴い、以下のページにて新機能への誘導を追加
+  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/HEOComponents/HEOWorldSetting.html)  
+  - [HEODespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/HEOComponents/HEODespawnHeight.html)  
+  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/HEOComponents/HEOPlayer.html)  
 
 ## 削除されたページ
