@@ -307,10 +307,10 @@ nav:
     - Programmatic:
       - AddVar: Actions/Programmatic/AddVar.md
       - SetVar: Actions/Programmatic/SetVar.md
-      - If A == B: Actions/Programmatic/IfEqual.md
-      - If A != B: Actions/Programmatic/IfNotEqual.md
-      - If A >= B: Actions/Programmatic/IfGreaterThanOrEqual.md
-      - If A <= B: Actions/Programmatic/IfLessThanOrEqual.md
+      - If Variable Equal To Value: Actions/Programmatic/IfEqual.md
+      - If Variable Not Equal To Value: Actions/Programmatic/IfNotEqual.md
+      - If Variable More Than Value: Actions/Programmatic/IfMoreThan.md
+      - If Variable Less Than Value: Actions/Programmatic/IfLessThan.md
       - Random: Actions/Programmatic/Random.md
       - SetCookieText: Actions/Programmatic/SetCookieText.md
       - CallScript: Actions/Programmatic/CallScript.md
