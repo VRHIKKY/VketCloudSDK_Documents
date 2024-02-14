@@ -36,6 +36,9 @@
 - ワールドの軽量化方法
   - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldOptimization/TextureCompression.html)
     - Texture Import Viewerについて案内を追加
+- HEOコンポーネント
+    - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/HEOComponents/HEOActivity.html)
+      - Scene Previewと高度な設定について追記
 - アクションについて
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/Actions/Programmatic/IfEqual.html)

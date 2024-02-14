@@ -3,14 +3,43 @@
 ![HEOActivity_1](img/HEOActivity_1.jpg)
 
 HEOActivity is a component for setting activities.<br>
-The "Activity" in Vket Cloud is a feature for wrapping models and scripts in a package, aimed for easy placement and implementation on worlds.
+The "Activity" in Vket Cloud is a feature for wrapping models and scripts as a single [Item](../hs/hs_overview.md#item), aimed for easy placement and implementation on worlds.
+
+## 設定項目
 
 | Label | Function |
 | ---- | ---- |
 | World Position | Sets the position for placing the activity. |
 | World Rotation | Sets the rotation for placing the activity. |
+| Scene Preview | Creates a preview object of the designated activity in Scene. |
 | .json | Designates the json file containing the activity information. |
 | Overrides | Edits the settings in each activity. |
+
+!!! caution "About Scene Preview"
+    When enabling `Scene Preview`, a preview object of the activity will be created in Scene, which position / size / rotation can be altered.<br>
+    However, the edits will be **reverted** on build, and Transform values of object with HEOActivity will be referred instead.
+
+![HEOActivity_14](img/HEOActivity_14.jpg)
+
+### Advanced Settings
+
+| Label | Function |
+| ---- | ---- |
+| Auto Loading | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](HEOField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
+| Item Render Priority | Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+
+---
+
+## How to Download Activity
+
+The Vket Cloud Activity can be downloaded from the asset store.<br>
+
+The asset store can be accessed by selecting "Asset Store" in the [Vket Cloud MyPage](https://cloud.vket.com/){target=_blank} after login.
+
+![HEOActivity_13](img/HEOActivity_13.jpg)
+
+For details on how to use the asset store, refer to the manual page below. (English Version WIP)
+[Gimmicks and Features ready to use! How to use the Vket Cloud Asset Store and Activities](https://magazine.vket.com/n/n7d554dbeb552){target=_blank}
 
 ## How to Use
 
@@ -60,14 +89,3 @@ For details on how to get the activity data, refer to the manual which is referr
 11\. Build and see if the analog clock appears.
 
 ![HEOActivity_12](img/HEOActivity_12.jpg)
-
-## How to Download Activity
-
-The Vket Cloud Activity can be downloaded from the asset store.<br>
-
-The asset store can be accessed by selecting "Asset Store" in the [Vket Cloud MyPage](https://cloud.vket.com/){target=_blank} after login.
-
-![HEOActivity_13](img/HEOActivity_13.jpg)
-
-For details on how to use the asset store, refer to the manual page below. (English Version WIP)
-[Gimmicks and Features ready to use! How to use the Vket Cloud Asset Store and Activities](https://magazine.vket.com/n/n7d554dbeb552){target=_blank}

@@ -36,6 +36,9 @@
 - World Optimization
   - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldOptimization/TextureCompression.html)
     - Added overview of Texture Import Viewer
+- HEO Components
+  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/HEOComponents/HEOActivity.html)
+    - Added info on Scene Preview and Advanced Settings
 - Actions
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/Actions/Programmatic/IfEqual.html)
