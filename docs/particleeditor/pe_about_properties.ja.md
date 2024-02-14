@@ -28,15 +28,13 @@
 | Start Lifetime | 5.00 | パーティクル生成時の寿命（秒単位） |
 | Start Speed | 5.00 | パーティクル生成時の速度(m/s単位) |
 | Start Size | 1.00 | パーティクル生成時の大きさ |
-| Start Color | RGBA(255,255,255,255) | パーティクルの生成時の色 |
 | Gravity Modifier | 0.00 | パーティクルにかかる重力の値 |
 | Max Particles | 1000 | パーティクルが放出される最大の数 |
 
 !!! note "パーティクルの色について"
     パーティクルの色は以下のように決定されます：<br>
-    Color + Emission Color (加算) * Start Color (乗算)<br>
+    Color + Emission Color (加算)<br>
     なお、[Color over Lifetime](#color-over-lifetime)が有効の際は本設定に従わないためご注意ください。<br>
-    また、Start Colorについては次回SDKアップデートにて廃止される予定です。
 
 !!! note "Constant / Rand Twoについて"
     数値設定におけるConstant / Rand Twoは以下のように定義されます。<br>
@@ -50,10 +48,6 @@
 | ---- | ---- | ---- |
 | Rate Over Time | 10.00 | 1秒あたりのパーティクル生成数 |
 | Rate Over Distance | 0.00 | パーティクル座標の移動率に応じて生成されるパーティクル数の変化値 |
-
-!!! bug "Rate Over Distance"
-    Rate Over DistanceについてはVer9.11現在設定が反映されない状態を確認しております。<br>
-    恐れ入りますが、修正までお待ちいただければと思います。
 
 ## Shape
 
@@ -69,10 +63,6 @@
 | Arc Mode | Random | 円弧の周りでのパーティクルの生成方法を設定します。<br> Random:円弧の周囲にランダム生成 Loop:円弧の周囲にて順番に生成 |
 | Arc Speed | 1.00 | 放出位置が円弧の周囲を移動する速度を設定します |
 
-!!! bug "Shapeの設定項目について"
-    Ver9.11バージョンのエディターではCone以外のShapeにした際に一部の設定が切り替わらない現象が確認されています。
-    恐れ入りますが、修正までお待ちいただければと思います。
-
 ## Velocity over Lifetime
 
 ![pe_property_5](pe_image/pe_property_5.jpg)
@@ -81,28 +71,6 @@
 | ---- | ---- | ---- |
 | Enable | false | 本機能のオンオフ |
 | Linear | 0,0,0 | パーティクル放出中の速度が値に沿って変化します |
-| Orbital | 0,0,0 | パーティクル放出中の環状の加速度が値に沿って変化します |
-| Offset | 0,0,0 | 環状パーティクルの中心位置が変化します |
-
-!!! bug "Orbital, Offsetについて"
-    本値は現在未使用のパラメーターです。
-
-## Limit Velocity over Lifetime
-
-![pe_property_6](pe_image/pe_property_6.jpg)
-
-| 名称 | 初期値 | 機能 |
-| ---- | ---- | ---- |
-| Enable | false | 本機能のオンオフ |
-| Separate Axis | false | 設定をする際に軸をX,Y,Zに分けます |
-| Speed | 0,0,0 | パーティクルが設定値以上の速度にならないように設定できます |
-| Damp | 0.00 | パーティクルの速度が上限速度を超えた際の減衰量を設定します |
-| Drag | 0.00 | パーティクルの速度の減衰を設定します |
-| Multiply by Size | false | パーティクルの大きさが大きいほど、減衰が大きくなるように設定します |
-| Multiply by Velocity | false | パーティクルの速度が早いほど、より減衰の影響が大きくなるように設定します |
-
-!!! bug "Drag"
-    本値は現在未使用のパラメーターです。
 
 ## Size over Lifetime
 
@@ -169,10 +137,6 @@
 | Type | Birth | サブパーティクル生成の判定を主パーティクルのBirth(生成時)またはDeath(消滅時)に設定します |
 | Probability | 0.00 | サブパーティクル生成の判定の発生割合を設定します |
 
-!!! bug "Probabilityが1以上設定できてしまう不具合"
-    現バージョンのエディターではProbability値が1.00以上に設定できる不具合が確認されています。<br>
-    次回最新版にて修正される予定です。
-
 !!! caution "動作安定性について"
     本機能は現バージョンのエディターでは動作が不安定なものとなっております。<br>
     複数パーティクルを使用したい場合は別途作成することをおすすめいたします。
@@ -183,19 +147,7 @@
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
-| Tiles | 0,0 | テクスチャを分割して作るタイル数を変更します |
-
-## Trail
-
-![pe_property_13](pe_image/pe_property_13.jpg)
-
-| 名称 | 初期値 | 機能 |
-| ---- | ---- | ---- |
-| Enable | false | トレイル機能(トレイルエフェクト)のオンオフを設定します |
-
-!!! bug "本機能について"
-    本機能はVer9.11現在設定できない状態が確認されております。<br>
-    代替として、Render Setting / Render ModeをStretchedに切り替えると疑似的な実装が可能です。
+| Tiles | 1,1 | テクスチャを分割して作るタイル数を変更します |
 
 ## Render Setting
 
@@ -203,10 +155,10 @@
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
-| Render Mode | Billboard | パーティクルの表示方向を設定します<br> Billboard: 常にカメラ方向を向きます Stretched: カメラの方向を向き、大きさの変更が適用されます |
+| Render Mode | Billboard | パーティクルの表示方向を設定します<br> Billboard: 常にカメラ方向を向きます<br> Stretched: カメラの方向を向き、大きさの変更が適用されます。いわゆるTrail効果を作りたい際に有効です |
 | Speed Scale | 0.00 | 速度に比例して大きさを変更します |
 | Length Scale | 0.00 | 大きさを横向きに変更します |
-| Render Alignment | View | パーティクルの整列方法を設定します。<br> View: カメラの平面に対して整列 Local: ゲームオブジェクトのTransformコンポーネントに対して整列 Velocity: パーティクルの進行方向に対して整列 |
+| Render Alignment | View | パーティクルの整列方法を設定します。<br> View: カメラの平面に対して整列 Local: ゲームオブジェクトのTransformコンポーネントに対して整列<br> Velocity: パーティクルの進行方向に対して整列 |
 
 ## Easing Typeについて
 
