@@ -101,6 +101,7 @@ plugins:
           Operator: 演算子
           Class: クラス
           Components / Callback functions: コンポーネント / コールバック関数
+          Item Types and Usable Functions: Itemの種類一覧 / HeliScript関数対応表
           Built-in Classes And Functions: 組み込みクラス・関数
           Vector3: Vector3クラス
           Quaternion: Quaternionクラス
@@ -307,6 +308,7 @@ nav:
         - List: hs/hs_list.md
     - Class: hs/hs_class.md
     - Components / Callback functions: hs/hs_component.md
+    - Item Types and Usable Functions: hs/hs_item_types_functions.md
     - Built-in Classes And Functions:
         - Vector3: hs/hs_struct_vector3.md
         - Quaternion: hs/hs_struct_quaternion.md
