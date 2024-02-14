@@ -123,18 +123,59 @@
 
 ## SDK(Unityでワールドを作るためのEditor拡張ツール)
 
-
 ### バグ修正
+- 外部のVRMの読み込むエラーを修正
+- HEMプレビューのエラー修正
+- クリップ出力時に最終フレームが出力されない場合があるバグを修正しました
+- UI上で対象のオブジェクトが更新された瞬間にシーンの更新マークが表示されるように修正
+- UpdateTextureListを押したとき発生するバグを修正
+- HEM可視化エラー修正
+- MyAvatarが編集できないエラーを修正
+- 3D Item>HEOファイルが無くなったエラーを修正
 
 ###　機能追加
-- Editor > HEOObject > HEO系のコンポーネントに詳細オプション(Advanced Options)のアコーディオンを作る
-- EditorWindow>ControlPanel>OtherSettings/Gitignoreをテンプレから呼び出すボタンを追加
-- Menu > VketCloudSDK > Build Option > Fast Build without UI機能を追加（CanvasList.jsonをビルド時にemptyにする
-- Builder > Actions > HEOActionTrigger > EnableNode, DisableNodeを追加しました
+- HEO系のコンポーネントに詳細オプション(Advanced Options)のアコーディオンを作る
+- OtherSettings/Gitignoreをテンプレから呼び出すボタンを追加
+- Fast Build without UI機能を追加（CanvasList.jsonをビルド時にemptyにする
+- ActionsにEnableNode, DisableNodeを追加しました
+- HEO、VRM、HEMのインスペクターでのプレビュー
+- HEOBackgroundColorを追加しました
+- VRMファイルの読み込みのシェーダーをMToonに設定
+- Priorityの項目を追加してItemがPriorityの値でソートされるように設定
+- HEOTextPlaneにCharacter Space機能を実装
+- ログイン失敗時に登録していないことへのメッセージを出す
+- EditorOnly タグをつけたItem/Nodeオブジェクトはビルドから除外される
+- VketCloudSettingsのSettingsにライセンスプランの表示にチーム名を表示するようにした
+- 安全なファイルかどうかバイナリを解析する機能を追加
+- Disable Nodeがworld.jsonに書き込まれるよう修正しました
+- チュートリアルシーンのインポート導線の追加「Menuからのインポート」「独立したLearning画面」
+- インポートしたチュートリアルの最初に該当するシーンをPing、ロードする機能を実装
+- VketCloudSDKからcom.hikky.heliodorlibにPackage Directoryを変更
+- 右クリックで項目を追加
+- 主要モジュールの動作安定化の上、機能改善
+- 「HeliScript」日本語表示変更
+- UX/UIを分解してVketCloudSettingを使用
+- 設定画面アイコン改修
+- videotiggerのオーバーライドをHEOFieldからVideoTriggerに移した
+- HELScript hsファイルを直接指定した際にHEOScriptの方のリストに追加されるようにする
+- Export Fieldの処理後にAssetDatabse.Refreshを更新
+- ワールドアップローダー画面の機能追加実装(Ver.2.0)
+- Rendering SettingにIBLにdiffuse,specularを設定する機能を追加
+- Debug Console 2.0を実装
+- アバターアイコン表示メニュー追加
+- TextureImportViewer2.0を実装
+- Activity可視化と編集機能
+- VRMデータ圧縮プロセスをオプションにExport Process Systemに追加
+- 優先度設定UI機能の追加
 
 ### 機能変更
-- Menu > Add Essential Object for VketCloud > EssentialObjectsGenerator.csのDespawnHeight値を-1から-10に更新
-- Editor > HEOActivity > HEOActivityUIを改修しました。
+- .heo or .vrm > .heo or .vrm or .glbに変更
+- EssentialObjectsGenerator.csのDespawnHeight値を-1から-10に更新
+- HEOActivityUIを改修しました。
+- SearchTextインプットフィールドに初期フォーカスが設定されるように修正
+- アクションをカテゴリー毎に表示する仕様に変更しました
+- ボタンの一覧をpackage.json、Samples~ディレクトリから動的に表示するように変更
+- HEOAudioのAudioTypeからSystemSEを削除しました
 
 ### パーティクルエディタ
 - 特定条件でのセーブ時にエラーが出るバグを修正
