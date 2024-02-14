@@ -18,6 +18,7 @@
   - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/hs/hs_delegate.html)
   - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/hs/hs_system_function_camera.html)
   - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/hs/hs_system_function_commondialog.html)
+  - [Item Types and Usable Functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/hs/hs_item_types_functions.html)
 
 ## Edited Pages
 
