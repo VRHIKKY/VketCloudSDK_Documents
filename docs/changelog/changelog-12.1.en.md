@@ -14,6 +14,8 @@
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/VketCloudSettings/MyAvatarSettings.html)
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldEditingTips/BuildOptions.html)
+- HeliScript
+  - [Item Types and Usable Functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/hs/hs_item_types_functions.html)
 
 ## Edited Pages
 

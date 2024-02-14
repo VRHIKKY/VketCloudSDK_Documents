@@ -14,6 +14,8 @@
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/MyAvatarSettings.html)
 - 編集のためのTips
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldEditingTips/BuildOptions.html)
+- HeliScript
+  - [Itemの種類一覧 / HeliScript関数対応表](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/hs/hs_item_types_functions.html)
 
 ## 変更されたページ
 
