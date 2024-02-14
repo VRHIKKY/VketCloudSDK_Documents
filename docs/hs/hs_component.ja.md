@@ -75,12 +75,7 @@ public void OnUnload()
 以下のようにOnClickNodeメソッドを定義しておくと、そのアイテムのノードがクリックされた時に呼び出されます。
 
 ```
-component Test
-{
-    public void OnClickNode(int NodeIndex)
-    {
-    }
-}
+public void OnClickNode(int NodeIndex)
 ```
 
 ## コールバック - 無効空間クリック
@@ -117,9 +112,27 @@ component AreaCollider
 }
 ```
 
+## コールバック - オブジェクト選択解除
+
+### ノードの選択解除：OnUnselectNode()
+```
+public void OnUnselectNode(int NodeIndex)
+```
+直前にアイテムのノードをクリックした状態で、その後にアバターをクリックすると、ノードの選択が解除されたと判断されます。
+
+この際に、選択解除されたノードのインデックスを引数として、OnUnselectNode() が呼び出されます。
+
+### アバターの選択解除：OnUnselectAvatar()
+```
+public void OnUnselectAvatar(string Name)
+```
+直前にアバターをクリックした状態で、その後にアイテムのノードをクリックすると、アバターの選択が解除されたと判断されます。
+
+この際に、選択解除されたアバターの名前を引数として、OnUnselectAvatar() が呼び出されます。
+
 ## コールバック - スクリーンサイズ変更
 
-スクリーンサイズが変更された際に OnResize() が呼び出されます。引数 width と height には、変更後のスクリーンの縦横サイズが渡されます。
+スクリーンサイズが変更された際に OnResize() が呼び出されます。引数 width と height には、変更語のスクリーンの縦横サイズが渡されます。
 
 ```
 public void OnResize(int width, int height)
@@ -130,16 +143,8 @@ public void OnResize(int width, int height)
 ルームの管理者から送信された任意のデータを受信するコールバックメソッドです。
 
 ```
-component CustomDataReceiver
-{
-    public void OnReceiveCustomState(string id, string type, string data)
-    {
-    }
-
-    public void OnReceiveCustomData(string id, string type, string data)
-    {
-    }
-}
+public void OnReceiveCustomState(string id, string type, string data)
+public void OnReceiveCustomData(string id, string type, string data)
 ```
 
 ## コールバック - GUIボタン
