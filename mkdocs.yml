@@ -320,6 +320,7 @@ nav:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
         - List: hs/hs_list.md
+        - Delegate: hs_delegate.md
     - Class: hs/hs_class.md
     - Components / Callback functions: hs/hs_component.md
     - Built-in Classes And Functions:
@@ -337,6 +338,8 @@ nav:
         - TextChat: hs/hs_system_function_textchat.md
         - ChatGPT: hs/hs_system_function_chatgpt.md
         - Physics: hs/hs_system_function_physics.md
+        - Camera: hs/hs_system_function_camera.md
+        - Common Dialog: hs/hs_system_function_commondialog.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md
