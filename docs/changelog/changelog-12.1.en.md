@@ -14,6 +14,8 @@
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/VketCloudSettings/MyAvatarSettings.html)
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldEditingTips/BuildOptions.html)
+- SDKTools
+  - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/SDKTools/TextureImportViewer.html)
 - HeliScript
   - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/hs/hs_delegate.html)
   - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/hs/hs_system_function_camera.html)
@@ -31,6 +33,9 @@
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
+- World Optimization
+  - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldOptimization/TextureCompression.html)
+    - Added overview of Texture Import Viewer
 - Actions
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/Actions/Programmatic/IfEqual.html)

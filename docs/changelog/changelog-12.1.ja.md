@@ -14,6 +14,8 @@
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/VketCloudSettings/MyAvatarSettings.html)
 - 編集のためのTips
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldEditingTips/BuildOptions.html)
+ - SDKTools
+  - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/SDKTools/TextureImportViewer.html)
 - HeliScript
   - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/hs/hs_delegate.html)
   - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/hs/hs_system_function_camera.html)
@@ -31,6 +33,9 @@
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
+- ワールドの軽量化方法
+  - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/WorldOptimization/TextureCompression.html)
+    - Texture Import Viewerについて案内を追加
 - アクションについて
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/ja/Actions/Programmatic/IfEqual.html)
