@@ -75,3 +75,15 @@ int chr = 'V';
 
 bool型は内部的に32bit整数値として扱われ、*true* は 1、*false* は 0 が割り当てられます。
 bool型の変数に整数値を代入した場合、0は *false* に、それ以外は全て *true* に変換されます。
+
+## 基本型が持つインスタンスメソッド
+
+### int.ToString()
+`public string ToString()`
+
+int型変数の持つ変数値を、文字列に変換します。
+
+### float.ToString()
+`public string ToString()`
+
+float型変数の持つ変数値を、文字列に変換します。

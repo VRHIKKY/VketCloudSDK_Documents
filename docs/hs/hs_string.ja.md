@@ -22,6 +22,11 @@ HeliScriptの string は変更可能です。"[]" のインデックス指定に
 
 文字列を整数値に変換します。変換に失敗した場合は 0 を返します。
 
+### ToFloat()
+`public float ToFloat()`
+
+文字列を浮動小数点数値に変換します。変換に失敗した場合は 0 を返します。
+
 ### Length()
 `public int Length()`
 
@@ -62,7 +67,62 @@ HeliScriptの string は変更可能です。"[]" のインデックス指定に
 
 引数で指定した位置の文字を、1文字削除します。
 
+### Split()
+`public list<string> Split()`
 
+空白文字で文字列を分割し、結果を文字列のリストとして返します。
+
+空白文字に該当するのは以下の値です。
+
+- 空白 (0x20, ' ')
+- フォームフィード (0x0c, '\f')
+- ラインフィード (0x0a, '\n')
+- キャリッジリターン (0x0d, '\r')
+- 水平タブ (0x09, '\t')
+- 垂直タブ (0x0b, '\v')
+
+### Split(int)
+`public list<string> Split(int opt)`
+
+空白文字で文字列を分割し、結果を文字列のリストとして返します。
+
+引数にオプション値を渡すことで、分割時の挙動を変更できます。
+
+### Split(string)
+`list<string> Split(string separator)`
+
+引数 separator によって文字列を分割し、結果を文字列のリストとして返します。
+
+### Split(string, int)
+`list<string> Split(string separator, int opt)`
+
+引数 separator によって文字列を分割し、結果を文字列のリストとして返します。
+
+引数にオプション値を渡すことで、分割時の挙動を変更できます。
+
+## 分割オプション
+
+### SplitOpt_None
+`const int SplitOpt_None = 0;`
+
+オプションとして何も行わない。
+
+### SplitOpt_RemoveEmpty
+`const int SplitOpt_RemoveEmpty = 1;`
+
+分割後の文字列に空文字が含まれる場合、それを破棄する。
+
+### SplitOpt_Trim
+`const int SplitOpt_Trim = 2;`
+
+分割後の文字列の前後に空白が存在する場合、それらをトリムする。
+
+### SplitOpt_RemoveAll
+`const int SplitOpt_RemoveAll = SplitOpt_RemoveEmpty | SplitOpt_Trim;`
+
+分割オプションの SplitOpt_RemoveEmpty と SplitOpt_Trim を組み合わせた値。
+
+***
 
 
 ## 特殊な演算子
