@@ -79,17 +79,74 @@ plugins:
         ja: 日本語
       nav_translations:
         ja:
+          # 概要
           Introduction: はじめに
+          # VketCloudSDKについて
           About VketCloudSDK: VketCloudSDKについて
           Setup Account: アカウント準備
           Operating Environment: 動作環境
+          Setup SDK: SDKの導入方法
+          Login to SDK: SDKにログインする
+          How to use avatar: アバターの使用方法
+          # ワールド制作の基本
+          First Steps: ワールド制作の基本
+          Essential Objects: ワールドの基本要素
           Build And Run: ローカル環境でのビルドと実行
           World Upload: ワールドアップロード
-          Setup SDK: SDKの導入方法
-          How to use avatar: アバターの使用方法
-          Essential Objects: ワールドの基本要素
+          # Vket Cloud Settings    
+          Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
+          # ワールド制作ガイド
+          World Making Guide: ワールド制作ガイド
+          Avatar File: アバターファイル
+          Specifications Limits : VketCloudの仕様制限
+          HEOExporter: .heoファイルについて
+          HEOExporter Tutorial: .heoファイルを出力する
+          ReflectionProbe: リフレクションプローブ
           Skybox: スカイボックス設定
-          Statements And Flow Control: 文法・制御構文
+          Texture Compression: テクスチャ圧縮
+          How to use Colliders / Tips: コライダーの使い方 / Tips
+          Physics Engine: 物理エンジンの使い方
+          Tips on using HEOField: HEOFieldの使い方
+          Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
+          Mesh Collider: メッシュコライダーについて
+          Adding Preset Avatars : プリセットアバターを追加する
+          How to Animate Objects: オブジェクトをアニメーションさせる
+          How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
+          # ActionNodeGraph: アクションノードグラフ
+          # トラブルシューティング
+          Trouble shooting: トラブルシューティング
+          Trouble shooting - General Checklist: SDK初学者:何か起きたときにとりあえず見るべきリスト
+          SDK does not appear after install: SDKがインストール後に立ち上がらない
+          Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
+          Version Update Troubleshooting: バージョンアップ後によくあるトラブル
+          # SDKTools
+          Particle Editor : パーティクルエディター
+          Particle Editor - Overview: パーティクルエディター：概要 
+          About Screen / How to Operate: ウィンドウ解説・操作方法について
+          Particle Editor - Properties: パーティクルエディター：プロパティ一覧
+          Animation Converter : アニメーションコンバーター
+          Debug Mode: デバッグモード
+          Debug Console: デバッグコンソール
+          Debug Messages: デバッグメッセージ一覧
+          # 編集Tips
+          World Editing Tips: 編集のためのTips
+          Using EditorOnly Tags: EditorOnlyタグの使用方法
+          Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
+          Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
+          Build Options: ビルド時のオプション
+          # 軽量化
+          World Optimization: ワールドの軽量化方法
+          World Optimization - Overview: ワールドの軽量化方法：概要
+          Occlusion Culling: オクルージョンカリング
+          Optimization for Smartphones: スマートフォンのためのワールド軽量化
+          # HEOComponents
+          HEOComponents: HEOコンポーネント
+          # アクション
+          Actions: アクションについて
+          Actions Overview: アクションの概要
+          # HeliScript
+          HeliScript - Overview: HeliScript概要
+          Statements and flow control: 文法と制御構文
           Declarations and definitions: 定義・宣言
           Control Statement: 制御構文
           Reference (ref): 参照(ref)
@@ -98,6 +155,7 @@ plugins:
           Basic Types: 基本型
           String: 文字列(String)
           List: 配列(List)
+          Delegate: デリゲート(Delegate)
           Operator: 演算子
           Class: クラス
           Components / Callback functions: コンポーネント / コールバック関数
@@ -116,64 +174,15 @@ plugins:
           GUI: GUI
           TextChat: テキストチャット
           Physics: 物理演算
-          HEOExporter: .heoファイルについて
-          HEOExporter Tutorial: .heoファイルを出力する
-          Specifications Limits : VketCloudの仕様制限
-          ReflectionProbe: リフレクションプローブ
-          Texture Compression: テクスチャ圧縮
-          How to use Colliders / Tips: コライダーの使い方 / Tips
-          Physics Engine: 物理エンジンの使い方
-          Tips on using HEOField: HEOFieldの使い方
-          Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
-          Mesh Collider: メッシュコライダーについて
-          HEOComponents: HEOコンポーネント
-          About VketCloudSDK: VketCloudSDKについて
-          OperatingEnvironment: 動作環境
-          SetupSDK: 導入方法
-          BuildAndRun: ビルド
-          WorldUpload: アップロード
-          License: 利用規約
-          Loading stops: ブラウザの読み込みが止まる
-          Actions: アクションについて
-          Actions Overview: アクションの概要
-          ActionNodeGraph: アクションノードグラフ
-          Particle Editor : パーティクルエディター
-          Particle Editor - Overview: パーティクルエディター：概要 
-          About Screen / How to Operate: ウィンドウ解説・操作方法について
-          Particle Editor - Properties: パーティクルエディター：プロパティ一覧
-          Animation Converter : アニメーションコンバーター
-          Adding Preset Avatars : プリセットアバターを追加する
-          World Editing Tips: 編集のためのTips
-          Using EditorOnly Tags: EditorOnlyタグの使用方法
-          Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
-          Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
-          Build Options: ビルド時のオプション
-          World Optimization: ワールドの軽量化方法
-          World Optimization - Overview: ワールドの軽量化方法：概要
-          Occlusion Culling: オクルージョンカリング
-          Optimization for Smartphones: スマートフォンのためのワールド軽量化
-          Trouble shooting: トラブルシューティング
-          Trouble shooting - General Checklist: SDK初学者:何か起きたときにとりあえず見るべきリスト
-          SDK does not appear after install: SDKがインストール後に立ち上がらない
-          Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
-          Version Update Troubleshooting: バージョンアップ後によくあるトラブル
-          First Steps: ワールド制作の基本
+          Camera: カメラ
+          Common Dialog: 汎用ダイアログ
+          # チェンジログ / リリースノート
           Change Log: チェンジログ
           About Changelog: チェンジログについて
           Release Note: リリースノート
           About Release Note: リリースノートについて
-          HeliScript - Overview: HeliScript概要
-          Statements and flow control: 宣言と制御
-          Debug Mode: デバッグモード
-          Debug Console: デバッグコンソール
-          Debug Messages: デバッグメッセージ一覧
-          World Making Guide: ワールド制作ガイド
-          Avatar File: アバターファイル
-          How to Animate Objects: オブジェクトをアニメーションさせる
-          How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
-          Utility Tools: 補助ツールの使い方 #元ページ不明タグ
-          Login to SDK: SDKにログインする
-          Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
+          # Misc
+          License: 利用規約
 
 markdown_extensions:
     - admonition
@@ -321,6 +330,7 @@ nav:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
         - List: hs/hs_list.md
+        - Delegate: hs/hs_delegate.md
     - Class: hs/hs_class.md
     - Components / Callback functions: hs/hs_component.md
     - Item Types and Usable Functions: hs/hs_item_types_functions.md
@@ -339,6 +349,8 @@ nav:
         - TextChat: hs/hs_system_function_textchat.md
         - ChatGPT: hs/hs_system_function_chatgpt.md
         - Physics: hs/hs_system_function_physics.md
+        - Camera: hs/hs_system_function_camera.md
+        - Common Dialog: hs/hs_system_function_commondialog.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md

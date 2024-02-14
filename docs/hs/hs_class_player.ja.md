@@ -100,6 +100,18 @@ ActionListの文字列はSceneファイルに記述する"actions":{}の文字�
 次に再生するモーションを設定する。
 
 
+### ChangeActivityMotion
+`bool ChangeActivityMotion(string MotionName)`
+
+アクティビティクラスのSceneファイルで定義されたモーションを再生する。
+
+
+### SetNextActivityMotion
+`bool SetNextActivityMotion(string MotionName)`
+
+次に再生するアクティビティクラスのSceneファイルで定義されたモーションを設定する。
+
+
 ### ShowChatBalloon
 `bool ShowChatBalloon(string Text)`
 
@@ -128,3 +140,11 @@ ActionListの文字列はSceneファイルに記述する"actions":{}の文字�
 `float GetMoveSpeedupRatio()`
 
 高速移動の倍率を取得します。
+
+
+### SetPresetAvatar
+`bool SetPresetAvatar(int AvatarIndex)`
+
+プリセットアバターに切り替えます。自分自身のPlayerオブジェクトにのみ有効です。
+
+
