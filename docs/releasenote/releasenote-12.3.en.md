@@ -5,7 +5,7 @@
 ### Bug Fixes
 - Incorrect click detection on avatars when using dummy avatars.
 - MToon's _Color parameter not being multiplied correctly.
-- English version incorrectly labels blocking as "Forced Exit."
+- English version incorrectly labels blocking as "強制退出"
 - Some VRM eyes turning white.
 - Support for receiving OnNetReceivePosJoin, OnNetReceivePosLeave in subscenes.
 - Unable to receive custom state and custom data in subscenes and activities.
