@@ -1,6 +1,6 @@
 # VKC Activity Exporter
 
-[VKC Activity Exporter](../HEOComponents/VKC Activity Exporter.md)はActivityをエクスポートするためのSDKツールです。このツールを使用して**VKCActivityExporter**オブジェクトを作成することで、Activityのエクスポートが可能となります。
+VKC Activity ExporterはActivityをエクスポートするためのSDKツールです。このツールを使用して**VKCActivityExporter**オブジェクトを作成することで、Activityのエクスポートが可能となります。
 
 エクスポートされたActivityは[HEOActivity](../HEOComponents/HEOActivity.md)を使用してワールド内に複数展開できるほか、フォルダのzipファイル / Unitypackage化によって[Vket Store](https://store.vket.com){target=_blank}や[Vket Cloudマイページ](https://cloud.vket.com/){target=_blank}からアクセスできる「アセットストア」などに公開することで他のユーザーとも共有が可能です。
 
@@ -33,8 +33,28 @@ Activityの概要と使い方については[HEOActivity](../HEOComponents/HEOAc
 | 名称 | 機能 |
 | ---- | ---- |
 | HeliScript | HeliScriptの追加/削除ができます。<br>追加されたHeliScriptは[HEOScript](../HEOComponents/HEOScript.md)と同様に使用できます。 |
-| Motion | Motionの追加/削除ができます。<br> 追加されたモーションはアクティビティのjsonファイルに記載され、アクティビティ内の[HEOObject](../HEOComponents/HEOObject.md)に対して[Item.ChangeMotion()](../hs/hs_class_item.md#changemotion)を実行すると再生できます。<br>また、モーションの実行対象をプレイヤーのアバターにしたい場合は[Player.ChangeActivityMotion()](../hs/hs_class_player.md)または[Player.SetActivityMotion()](../hs/hs_class_player.md)を実行します。|
+| Motion | Motionの追加/削除ができます。<br> 追加されたモーションはアクティビティのjsonファイルに記載され、プレイヤーに対して[Player.ChangeActivityMotion()](../hs/hs_class_player.md#changeactivitymotion)または[Player.SetNextActivityMotion()](../hs/hs_class_player.md#setnextactivitymotion)を実行するとプレイヤーがモーションを再生します。|
 | Thumbnail | Activityのサムネイルを設定できます。<br> 画像が「.png」ファイルではない場合は、Warningを表示します。 |
+
+!!! bug "HEOObjectにVRMを設定しActivityをエクスポートした際のビルドエラーについて"
+    Ver12.x現在、[HEOObject](../HEOComponents/HEOObject.md)にVRMを設定してActivityを書き出した際に、ファイルの読み込みエラーに由来するビルドエラーの発生が確認されています。<br>
+    本不具合については次回のSDKにて修正が予定されています。<br>
+    回避方法として、後述のdataフォルダ下にモデルデータを配置してjsonを手動で書き換えることでビルドエラーの回避が可能です。
+
+![VKCActivityExporter_9](img/VKCActivityExporter_9.jpg)
+
+``` json
+{
+  "scripts": [],
+  "motions": {},
+  "items": [
+    {
+      "name": "GameObject",
+      //filenameをdata/avatar下のvrmファイル名に書き換え
+      "filename": "./data/avatar/Vketchan_MToon_blendshape.vrm",
+      "pose": "",
+// 以下省略
+```
 
 ## エクスポート
 
@@ -69,9 +89,52 @@ Activityを他のクリエイターに配布する際は、このフォルダを
 
 ## Activity / Propertyの設定について
 
+[HEOProperty](../HEOComponents/HEOProperty.md)にてアクティビティを使用する際、設定のためにActivityの`Overrides`(Property)項目を定義し、HeliScriptにて参照することができます。
+
+Propertyを追加するには編集したいアクティビティのjsonファイルを開き、`properties`に例として以下のようにキーと値を追加のうえで保存します。
+
+```json
+//中略
+      "components": [],
+      "properties": {
+          "isShowVketChan":"0",
+          "VketChanName":"VketChan 01",
+          "VketChanCount":"1"
+      },
+      "lookatcamera": false,
+//中略
+```
+
+設定したPropertyは[HEOProperty](../HEOComponents/HEOProperty.md)にてアクティビティのjsonを読み込んだ際に`overrides`にて表示され、ワールド制作者がアクティビティの設定に使用できます。
+
 ![VKCActivityExporter_8](img/VKCActivityExporter_8.jpg)
 
-[HEOProperty](../HEOComponents/HEOProperty.md)と同様に、エクスポートされたActivityの`Overrides`には値を設定することができます。
+また、各PropertyはHeliScriptにて[Item.GetProperty()](../hs/hs_class_item.md#getproperty)および[Item.SetProperty()](../hs/hs_class_item.md#setproperty)を使用して参照と書き込みができます。
+
+なお、Propertyのキー及び値は必ず**string**型で返されるため、別の変数型で扱いたい場合は型変換を行ってください。
+
+```csharp
+component VketChan
+{
+    Item m_Item; //自分自身
+
+    //Activityのパラメーター
+    string isShowVketChan;
+
+    public VketChan() 
+    {
+//hsSystemOutput("アクティビティ読み込み完了" + "\n");
+    m_Item = new Item();
+    m_Item = hsItemGetSelf();
+
+//パラメーターを読み込んで初期化
+    isShowVketChan = m_Item.GetProperty("isShowVketChan");
+    }
+
+// 以下、通常のHeliScriptと同様に isShowVketChanを使用できます
+
+}
+```
 
 ## Activityに含められるHEOコンポーネント
 
@@ -79,19 +142,11 @@ Activityを他のクリエイターに配布する際は、このフォルダを
 
 - [HEOCollider](../HEOComponents/HEOCollider.md)
 
-- [HEOCylinderCollider](../HEOComponents/HEOCylinderCollider.md)
-
 - [HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)
-
-- [HEOMirror](../HEOComponents/HEOMirror.md)
 
 - [HEOUVScroller](../HEOComponents/HEOUVScroller.md)
 
 - [HEOShadow](../HEOComponents/HEOShadow.md)
-
-- [HEOReflectionProbe](../HEOComponents/HEOReflectionProbe.md)
-
-- [HEOLODLevel](../HEOComponents/HEOLODLevel.md)
 
 - [HEOObject](../HEOComponents/HEOObject.md)
 
@@ -117,7 +172,7 @@ Activityを他のクリエイターに配布する際は、このフォルダを
 
 ## Activityに含められない / サポート外のHEOコンポーネント
 
-- [HEOCylinderCollider](../HEOComponents/HEOCylinderCollider.md)
+- [HEOCylinderCollider](../WorldMakingGuide/Collider.md)
 
 - [HEOLODLevel](../HEOComponents/HEOLODLevel.md)
 
@@ -133,4 +188,4 @@ Activityを他のクリエイターに配布する際は、このフォルダを
 
 - [HEOScript](../HEOComponents/HEOScript.md)
 
-- [HEOProperty](../HEOComponents/HEOProperty.md)
+- [HEOProperty](../HEOComponents/HEOProperty.md) *WIP
