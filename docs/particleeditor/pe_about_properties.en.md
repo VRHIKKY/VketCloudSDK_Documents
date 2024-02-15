@@ -28,15 +28,13 @@ Using the particle editor, diverse particle effects can be created by editing th
 | Start Lifetime | 5.00 | Initial Lifetime of particle on emission (seconds) |
 | Start Speed | 5.00 | Initial speed of particle on emission (m/s) |
 | Start Size | 1.00 | Initial size of particle on emission |
-| Start Color | RGBA(255,255,255,255) | Initial color of particle on emission |
 | Gravity Modifier | 0.00 | Gravity bias on particles |
 | Max Particles | 1000 | Maximum particle count allowed to be emitted |
 
 !!! note "Designating particle colors"
     The particle colors are decided as below:<br>
-    Color + Emission Color (Addition) * Start Color (multiplication)<br>
+    Color + Emission Color (Addition) <br>
     Please note that the color decided will not be used when [Color over Lifetime](#color-over-lifetime) is enabled.<br>
-    Also, Start Color is planned to be deprecated on the next SDK update.
 
 !!! note "About Constant / Rand Two"
     The Constant / Rand Two options on designating values is defined as follows:<br>
@@ -50,10 +48,6 @@ Using the particle editor, diverse particle effects can be created by editing th
 | ---- | ---- | ---- |
 | Rate Over Time | 10.00 | Particle emission rate per second |
 | Rate Over Distance | 0.00 | Particle Emission rate change per emitting position change from its original position |
-
-!!! bug "Rate Over Distance"
-    Rate Over Distance is confirmed to be malfunctioning on Ver9.11.<br>
-    We ask you for your patience as fix is underway.
 
 ## Shape
 
@@ -69,10 +63,6 @@ Using the particle editor, diverse particle effects can be created by editing th
 | Arc Mode | Random | Emission mode of how to emit particles on the arc.<br> Random: Random emission around the arc Loop: Ordered emission around the arc |
 | Arc Speed | 1.00 | Designates speed of changing emission positions |
 
-!!! bug "About Shape settings"
-    On the Ver9.11 editor, some settings may not change as intended when changing Shape to other shapes than Cone.
-    We ask you for your patience as fix is underway.
-
 ## Velocity over Lifetime
 
 ![pe_property_5](pe_image/pe_property_5.jpg)
@@ -81,28 +71,6 @@ Using the particle editor, diverse particle effects can be created by editing th
 | ---- | ---- | ---- |
 | Enable | false | Enable/Disable this feature |
 | Linear | 0,0,0 | Velocity change during particle emission on each axis |
-| Orbital | 0,0,0 | Orbital velocity change during particle emission on each axis |
-| Offset | 0,0,0 | Offset for orbital particles' center position |
-
-!!! bug "About Orbital and Offset"
-    These values are currently unused.
-
-## Limit Velocity over Lifetime
-
-![pe_property_6](pe_image/pe_property_6.jpg)
-
-| Label | Initial Value | Function |
-| ---- | ---- | ---- |
-| Enable | false | Enable/Disable this feature |
-| Separate Axis | false | Separates axis to X, Y, and Z for each value settings |
-| Speed | 0,0,0 | Designates the speed limit of the particle |
-| Damp | 0.00 | Designates the damp rate when particle velocity is over the speed limit |
-| Drag | 0.00 | Sets the drag rate of particle velocity |
-| Multiply by Size | false | When enabled, drag effect will be bigger when particle size is bigger |
-| Multiply by Velocity | false |  When enabled, drag effect will be bigger when particle velocity is bigger |
-
-!!! bug "Drag"
-    This value is currently unused.
 
 ## Size over Lifetime
 
@@ -169,10 +137,6 @@ Using the particle editor, diverse particle effects can be created by editing th
 | Type | Birth | Emits the sub particle on the main particle's Birth or Death |
 | Probability | 0.00 | Designates the probability of sub particle emitting |
 
-!!! bug "Probability being able to set over 1"
-    On the current SDK version's editor, an issue is recognized which the Probability value can be set over than 1.00.<br>
-    This issue is planned to be fixed on the next version.
-
 !!! caution "Performance Instability"
     This feature is unstable on the current version's particle editor.<br>
     Creating another particle is recommended for using multiple particles.
@@ -185,28 +149,16 @@ Using the particle editor, diverse particle effects can be created by editing th
 | ---- | ---- | ---- |
 | Tiles | 0,0 | Designates the number of tiles created by splitting the texture |
 
-## Trail
-
-![pe_property_13](pe_image/pe_property_13.jpg)
-
-| Label | Initial Value | Function |
-| ---- | ---- | ---- |
-| Enable | false | Enable/Disable Trail Effects |
-
-!!! bug "Feature unusable"
-    On the current SDK version's editor, this feature is unusable due to technical issues.<br>
-    As a substitute, setting "Render Setting / Render Mode" to Streched will create a pseudo-trail effect.
-
 ## Render Setting
 
 ![pe_property_14](pe_image/pe_property_14.jpg)
 
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Render Mode | Billboard | Designates the particle render mode<br> Billboard: Always face the camera Stretched: Faces the camera, and allows scale change |
+| Render Mode | Billboard | Designates the particle render mode<br> Billboard: Always face the camera <br> Stretched: Faces the camera, and allows scale change. Creates a pseudo-trail effect |
 | Speed Scale | 0.00 | Designates the scale change according to particle speed |
 | Length Scale | 0.00 | Changes the particle scale horizontally |
-| Render Alignment | View | Designates the particle alignment. <br> View: align according to camera Local: align according to gameobject's Transform component Velocity: align according to particle direction |
+| Render Alignment | View | Designates the particle alignment. <br> View: align according to camera Local: align according to gameobject's Transform component<br> Velocity: align according to particle direction |
 
 ## About Easing Type
 

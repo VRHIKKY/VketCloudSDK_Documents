@@ -35,6 +35,8 @@
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
+  - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/particleeditor/pe_about_properties.html)
+    - Removed notice on fixed bugs and deleted info on deprecated features
 - World Optimization
   - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.1/en/WorldOptimization/TextureCompression.html)
     - Added overview of Texture Import Viewer
