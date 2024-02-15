@@ -10,5 +10,7 @@
 - HEOコンポーネント
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOReflectionProbe.html)
     - 機能廃止について案内を追記
+  - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOObject.html)
+    - Ver12.3に追加された機能(hrm, glb対応)を追記し、コンポーネント設定解説を更新
 
 ## 削除されたページ

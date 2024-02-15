@@ -1,25 +1,36 @@
 # HEOObject
 
-![HEOObject](img/HEOObject.jpg)
+![HEOObject_1](img/HEOObject_1.jpg)
 
-HEOObjectは、オブジェクトをあらかじめheoファイルとして出力しておき、それらをインスタンス生成するために使用します。<br>heoだけではなく、vrmも配置できます。
+HEOObjectは、動的なオブジェクトをシーンに生成するために使用します。<br>
+ここではあらかじめ生成したheoファイルだけではなく、vrm、 [hrm](../WorldOptimization/TextureCompression.md)、 glb形式のファイルも配置できます。
 
 ## 設定項目
+
+### 基本設定
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Show | true | オブジェクトの表示 / 非表示を切り替えます。 |
-| Clickable | false | オブジェクトがクリックされた際の判定を発生させるか否かを設定します。 |
-| .heo or .vrm | | heoファイルもしくはvrmファイルを指定します。<br>vrmファイルをしている状態で、モデルの[テクスチャ圧縮](../WorldOptimization/TextureCompression.ja.md)を行っている場合はここで指定します。 |
-| Scene Preview | false | オブジェクトの生成された状態をUnityシーン上でプレビューします。<br>詳細は下記「プレビュー機能」にて解説します。 | 
-| Enable Bone | false | アーマチュアによるアニメーションを再生する場合はオンにします。（vrmのみ） |
-| Auto Loading | true | [動的ローディング](HEOField.md)にて使用します。<br> デフォルトはtrueで初回ローディング時に読み込まれます。 |
-| Shadow Caster | false | [シャドウマッピング](HEOWorldSetting.md)が有効になっている際に、本オブジェクトの影を他のオブジェクトに投影するか設定します。 |
-| Shadow Receiver | false | [シャドウマッピング](HEOWorldSetting.md)が有効になっている際に、他オブジェクトの影を本オブジェクトへと投影するか設定します。 |
+| File Mode | | heo, vrm, hrm, glbファイルのいずれかを指定します。<br>vrmモデルの[テクスチャ圧縮](../WorldOptimization/TextureCompression.md)を行っている場合はhrmに該当のファイルを指定します。 |
+| Scene Preview | false | オブジェクトの生成された状態をUnityシーン上でプレビューします。<br>詳細は下記「プレビュー機能」にて解説します。 |
+| Enable Bone | false | アーマチュアによるアニメーションを再生する場合はオンにします。（vrm, hrm, glbのみ） |
 | Circle Shadow | false | オブジェクトの足元に丸影を投影するか切り替えます。 |
-| Foreground Rendering | false |最前面描画(深度値を考慮せずに一番手前に描画)を行うか設定します。 |
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります。 |
 | Object Mode | None | None、Pose、Motionから任意に選択します。PoseもしくはMotionを選択した場合、追加でhemファイルを指定する必要があります。 |
+
+### Advanced
+
+![HEOObject_2](img/HEOObject_2.jpg)
+
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| Clickable | false | オブジェクトがクリックされた際の判定を発生させるか否かを設定します。 |
+| Auto Loading | true | [動的ローディング](HEOField.md)にて使用します。<br> デフォルトはtrueで初回ローディング時に読み込まれます。 |
+| Shadow Caster | false | [シャドウマッピング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、本オブジェクトの影を他のオブジェクトに投影するか設定します。 |
+| Shadow Receiver | false | [シャドウマッピング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、他オブジェクトの影を本オブジェクトへと投影するか設定します。 |
+| Foreground Rendering | false |最前面描画(深度値を考慮せずに一番手前に描画)を行うか設定します。 |
+| Item Render Priority || Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
 | Begin Actions | | モーション再生時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
 | End Actions | | モーション終了時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
 | HeliScript | | [HEOScript](HEOScript.md)にて設定したHeliScriptの対象となるか否かを設定します。<br>[HEOScript](HEOScript.md)が設定されていない際は本項目の説明が表示されます。|
@@ -48,7 +59,7 @@ HEOObjectは、オブジェクトをあらかじめheoファイルとして出�
 
 ## プレビュー機能
 
-Scene Previewを有効にすると、以下のように設定したheoファイルまたはvrmファイルが生成位置にプレビュー表示されます。
+Scene Previewを有効にすると、以下のように設定したオブジェクトファイルが生成位置にプレビュー表示されます。
 
 ![HEOObject_Preview](img/HEOObject_Preview.jpg)
 
