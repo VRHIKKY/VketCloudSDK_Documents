@@ -88,7 +88,7 @@ plugins:
           Specifications Limits : VketCloudの仕様制限
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
-          ReflectionProbe: リフレクションプローブ
+          Reflection Probe: リフレクションプローブ
           Skybox: スカイボックス設定
           Texture Compression: テクスチャ圧縮
           How to use Colliders / Tips: コライダーの使い方 / Tips
@@ -206,7 +206,7 @@ nav:
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
     - Tips on using HEOField: WorldMakingGuide/HEOFieldTips.md
-    - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
+    - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
