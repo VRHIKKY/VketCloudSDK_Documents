@@ -44,9 +44,9 @@ extra:
     default: latest
   homepage: https://www.hikky.co.jp/vketcloud
   analytics: 
+    provider: google
+    property: G-R753QL60GW
     feedback:
-      provider: google
-      property: G-R753QL60GW
       title: Was this page helpful?
       ratings:
         - icon: material/emoticon-happy-outline
