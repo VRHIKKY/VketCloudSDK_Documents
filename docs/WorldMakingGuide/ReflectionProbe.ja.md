@@ -19,7 +19,7 @@ Vket Cloudで使用されるリフレクションプローブは、プリミテ�
 
 ## リフレクションプローブの設定方法
 
-Ver12.3以降のVketCloudSDKでは、ワールドのビルド時にReflection Probeが自動検出されてVket Cloud仕様に変換されます。
+Ver12.3以降のVketCloudSDKでは、ワールドのビルド時にシーン内のReflection Probeが自動検出されてVket Cloud仕様に変換されます。
 
 1. Reflection ProbeをアタッチしたGameObjectをシーン内に配置します。
 

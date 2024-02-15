@@ -1,7 +1,7 @@
 # HEOReflectionProbe
 
-!!! caution "HEOReflectionProbeの廃止"
-    Ver12.3において、HEOReflectionProbeコンポーネントは廃止されました。<br>
-    本バージョンでのReflection Probeの設定方法は制作ガイドの[リフレクションプローブ](../WorldMakingGuide/ReflectionProbe.md)をご参照ください。
+!!! caution "Deprecation of HEOReflectionProbe"
+    On Ver12.3, the HEOReflectionProbe component has been deprecated.<br>
+    For setup instructions of Reflection Probe on this version, refer to [Reflection Probe](../WorldMakingGuide/ReflectionProbe.md) located in the world making guide.
 
 ![HEOReflectionProbe](img/HEOReflectionProbe.jpg)
