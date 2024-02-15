@@ -7,4 +7,8 @@
 
 ## 変更されたページ
 
+- ワールド制作ガイド
+  - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Skybox.html)
+    - クイックメニューについて案内を追記
+
 ## 削除されたページ

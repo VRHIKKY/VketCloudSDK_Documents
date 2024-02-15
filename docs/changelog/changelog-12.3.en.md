@@ -7,4 +7,8 @@
 
 ## Edited Pages
 
+- World Making Guide
+  - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
+    - Added Guide for Setup using Quick Menu
+
 ## Deleted Pages

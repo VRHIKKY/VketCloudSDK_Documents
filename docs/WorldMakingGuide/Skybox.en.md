@@ -1,7 +1,13 @@
 # Skybox
 
+!!! note "Adding Skybox and Background Texture using Quick Menu"
+    On Ver12.3, a new quick menu feature has been added, which includes easier Skybox and Background Texture setup. <br>
+    For details, refer to [Quick Menu for adding Vket Cloud objects](../WorldEditingTips/QuickMenu.md).
+
 !!! note "about HEOBackgroundTexture"
     As an alternative method to setup background, the [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md) component can be used to designate background textures.
+
+---
 
 VketCloudSDK cannot output Unity SkyBox. Therefore, instead, we need to place a Box or Sphere object whose face is reversed and output it as a pseudo skybox.
 
