@@ -33,7 +33,7 @@ On VketCloudSDK later than Ver12.3, Reflection Probes located in the scene will 
 
     ![ReflectionProbe_Setup_3](img/ReflectionProbe_Setup_3.jpg)
 
-3. Build and Run the world via the VketCloudSDK menu, which should create texture files inside tex_reflection_probe folder, which is located under data/Field/World.
+3. Build and Run the world via the VketCloudSDK menu, which should create texture files inside tex_reflection_probe folder located under data/Field/World.
 
     To check texture files, select VketCloudSDK > Open Release Folder, and move to release/data/Field/World path.
 
