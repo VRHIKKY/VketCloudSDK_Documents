@@ -117,6 +117,7 @@ plugins:
           Debug Messages: デバッグメッセージ一覧
           # 編集Tips
           World Editing Tips: 編集のためのTips
+          Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
           Using EditorOnly Tags: EditorOnlyタグの使用方法
           Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
           Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
@@ -231,6 +232,7 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
 - World Editing Tips:
+  - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
