@@ -3,14 +3,43 @@
 ![HEOActivity_1](img/HEOActivity_1.jpg)
 
 HEOActivityはアクティビティを使用する際に設定するコンポーネントです。<br>
-アクティビティとはモデル・スクリプトをひとまとめに統合し、ワールドへの配置と設定を便利にするための機能です。
+アクティビティとはモデル・スクリプトをひとまとめの[Item](../hs/hs_overview.md#item)として統合し、ワールドへの配置と設定を便利にするための機能です。
+
+## 設定項目
 
 | 名称 | 機能 |
 | ---- | ---- |
 | World Position | アクティビティを配置する位置を指定します。 |
 | World Rotation | アクティビティを配置する角度を指定します。 |
+| Scene Preview | 設定されたアクティビティをシーン内で表示します。|
 | .json | アクティビティの情報をまとめたjsonファイルを指定します。|
 | Overrides | 各アクティビティに定義されている設定項目を編集します。 |
+
+!!! caution "Scene Previewについて"
+    `Scene Preview`を有効にすると、Scene内でアクティビティのプレビュー用オブジェクトが表示され、このオブジェクトの座標・大きさ・角度などを編集することができます。<br>
+    この操作による変更はビルド時には**元に戻り**、HEOActivityが付いているオブジェクトのTransform値が参照されるためご注意ください。
+
+![HEOActivity_14](img/HEOActivity_14.jpg)
+
+### 高度な設定
+
+| 名称 | 機能 |
+| ---- | ---- |
+| Auto Loading | 有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、[動的ローディング](HEOField.md)を使用するか、HeliScriptで[Load()](../hs/hs_class_item.md#load)を使用して読み込みます。|
+| Item Render Priority | Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
+
+---
+
+## アクティビティの入手方法について
+
+Vket Cloudのアクティビティはアセットストアにて入手が可能です。<br>
+
+アセットストアは[Vket Cloudマイページ](https://cloud.vket.com/){target=_blank}にログイン後、画面上部のタブにおける「アセットストア」からアクセスが可能です。
+
+![HEOActivity_13](img/HEOActivity_13.jpg)
+
+アセットストアのアクセス方法、使い方の詳細は以下のマニュアルページをご確認ください。
+[便利機能をお手軽にインストール！Vket Cloudアセットストア・アクティビティの使い方](https://magazine.vket.com/n/n7d554dbeb552){target=_blank}
 
 ## 設定方法
 
@@ -60,14 +89,3 @@ HEOActivityはアクティビティを使用する際に設定するコンポー
 11\. ビルドしてアナログ時計が出現していれば完了です。
 
 ![HEOActivity_12](img/HEOActivity_12.jpg)
-
-## アクティビティの入手方法について
-
-Vket Cloudのアクティビティはアセットストアにて入手が可能です。<br>
-
-アセットストアは[Vket Cloudマイページ](https://cloud.vket.com/){target=_blank}にログイン後、画面上部のタブにおける「アセットストア」からアクセスが可能です。
-
-![HEOActivity_13](img/HEOActivity_13.jpg)
-
-アセットストアのアクセス方法、使い方の詳細は以下のマニュアルページをご確認ください。
-[便利機能をお手軽にインストール！Vket Cloudアセットストア・アクティビティの使い方](https://magazine.vket.com/n/n7d554dbeb552){target=_blank}

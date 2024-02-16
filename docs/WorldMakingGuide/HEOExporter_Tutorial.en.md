@@ -18,7 +18,7 @@ If successful, the console will output "Exported" and the number of polygons as 
 
 Open the "tex_sample" folder in the output folder.
 
-Here you will find the original texture files for confirmation purpose. If it contains files other than PNG files (JPEG, TGA, etc.), VketCloud won't be able to read them. Replace the textures, modify the materials, and export again.
+Here you will find the original texture files for confirmation purpose. If it contains files other than png files (JPEG, TGA, etc.), VketCloud won't be able to read them. Replace the textures, modify the materials, and export again.
 
 In the above example, "009_VketCloudComu.jpg" is the problematic one. The numbers added to the beginning such as "000_" were added at the time of export, and the original file name was "VketCloudComu.jpg".
 

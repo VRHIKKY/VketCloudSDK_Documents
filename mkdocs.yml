@@ -43,7 +43,10 @@ extra:
     provider: mike
     default: latest
   homepage: https://www.hikky.co.jp/vketcloud
-  
+  analytics: 
+    provider: google
+    property: G-R753QL60GW
+    
 use_directory_urls: false
 
 plugins:
@@ -57,23 +60,81 @@ plugins:
       javascript_dir: js
       canonical_version: null
   - i18n:
-      default_language: en
+      default_language: ja
       languages:
         en: English
         ja: 日本語
       nav_translations:
         ja:
+          # 概要
           Introduction: はじめに
+          # VketCloudSDKについて
           About VketCloudSDK: VketCloudSDKについて
           Setup Account: アカウント準備
           Operating Environment: 動作環境
-          Build And Run: ビルド方法
-          World Upload: ワールドアップロード
           Setup SDK: SDKの導入方法
+          Login to SDK: SDKにログインする
           How to use avatar: アバターの使用方法
+          # ワールド制作の基本
+          First Steps: ワールド制作の基本
           Essential Objects: ワールドの基本要素
+          Build And Run: ローカル環境でのビルドと実行
+          World Upload: ワールドアップロード
+          # Vket Cloud Settings    
+          Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
+          # ワールド制作ガイド
+          World Making Guide: ワールド制作ガイド
+          Avatar File: アバターファイル
+          Specifications Limits : VketCloudの仕様制限
+          HEOExporter: .heoファイルについて
+          HEOExporter Tutorial: .heoファイルを出力する
+          Reflection Probe: リフレクションプローブ
           Skybox: スカイボックス設定
-          Statements And Flow Control: 文法・制御構文
+          Texture Compression: テクスチャ圧縮
+          How to use Colliders / Tips: コライダーの使い方 / Tips
+          Physics Engine: 物理エンジンの使い方
+          Tips on using HEOField: HEOFieldの使い方
+          Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
+          Mesh Collider: メッシュコライダーについて
+          Adding Preset Avatars : プリセットアバターを追加する
+          How to Animate Objects: オブジェクトをアニメーションさせる
+          How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
+          # ActionNodeGraph: アクションノードグラフ
+          # トラブルシューティング
+          Trouble shooting: トラブルシューティング
+          Trouble shooting - General Checklist: SDK初学者:何か起きたときにとりあえず見るべきリスト
+          SDK does not appear after install: SDKがインストール後に立ち上がらない
+          Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
+          Version Update Troubleshooting: バージョンアップ後によくあるトラブル
+          # SDKTools
+          Particle Editor : パーティクルエディター
+          Particle Editor - Overview: パーティクルエディター：概要 
+          About Screen / How to Operate: ウィンドウ解説・操作方法について
+          Particle Editor - Properties: パーティクルエディター：プロパティ一覧
+          Animation Converter : アニメーションコンバーター
+          Debug Mode: デバッグモード
+          Debug Console: デバッグコンソール
+          Debug Messages: デバッグメッセージ一覧
+          # 編集Tips
+          World Editing Tips: 編集のためのTips
+          Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
+          Using EditorOnly Tags: EditorOnlyタグの使用方法
+          Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
+          Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
+          Build Options: ビルド時のオプション
+          # 軽量化
+          World Optimization: ワールドの軽量化方法
+          World Optimization - Overview: ワールドの軽量化方法：概要
+          Occlusion Culling: オクルージョンカリング
+          Optimization for Smartphones: スマートフォンのためのワールド軽量化
+          # HEOComponents
+          HEOComponents: HEOコンポーネント
+          # アクション
+          Actions: アクションについて
+          Actions Overview: アクションの概要
+          # HeliScript
+          HeliScript - Overview: HeliScript概要
+          Statements and flow control: 文法と制御構文
           Declarations and definitions: 定義・宣言
           Control Statement: 制御構文
           Reference (ref): 参照(ref)
@@ -82,9 +143,11 @@ plugins:
           Basic Types: 基本型
           String: 文字列(String)
           List: 配列(List)
+          Delegate: デリゲート(Delegate)
           Operator: 演算子
           Class: クラス
           Components / Callback functions: コンポーネント / コールバック関数
+          Item Types and Usable Functions: Itemの種類一覧 / HeliScript関数対応表
           Built-in Classes And Functions: 組み込みクラス・関数
           Vector3: Vector3クラス
           Quaternion: Quaternionクラス
@@ -99,58 +162,15 @@ plugins:
           GUI: GUI
           TextChat: テキストチャット
           Physics: 物理演算
-          HEOExporter: .heoファイルについて
-          HEOExporter Tutorial: .heoファイルを出力する
-          Specifications Limits : VketCloudの仕様制限
-          ReflectionProbe: リフレクションプローブ
-          Texture Compression: テクスチャ圧縮
-          How to use Colliders / Tips: コライダーの使い方 / Tips
-          Physics Engine: 物理エンジンの使い方
-          Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
-          Mesh Collider: メッシュコライダーについて
-          HEOComponents: HEOコンポーネント
-          About VketCloudSDK: VketCloudSDKについて
-          OperatingEnvironment: 動作環境
-          SetupSDK: 導入方法
-          BuildAndRun: ビルド
-          WorldUpload: アップロード
-          License: 利用規約
-          Loading stops: ブラウザの読み込みが止まる
-          Actions: アクションについて
-          Actions Overview: アクションの概要
-          ActionNodeGraph: アクションノードグラフ
-          Particle Editor : パーティクルエディター
-          ParticleEditor Overview: パーティクルエディター概要 
-          About Screen / How to Operate: ウィンドウ解説・操作方法について
-          Animation Converter : アニメーションコンバーター
-          Adding Preset Avatars : プリセットアバターを追加する
-          World Editing Tips: 編集のためのTips
-          Using EditorOnly Tags: EditorOnlyタグの使用方法
-          Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
-          Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
-          World Optimization: ワールドの軽量化方法
-          World Optimization - Overview: ワールドの軽量化方法：概要
-          Occlusion Culling: オクルージョンカリング
-          Trouble shooting: トラブルシューティング
-          SDK does not appear after install: SDKがインストール後に立ち上がらない
-          Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
-          Version Update Troubleshooting: バージョンアップ後によくあるトラブル
-          First Step: ワールド制作の基本
+          Camera: カメラ
+          Common Dialog: 汎用ダイアログ
+          # チェンジログ / リリースノート
           Change Log: チェンジログ
           About Changelog: チェンジログについて
           Release Note: リリースノート
           About Release Note: リリースノートについて
-          HeliScript - Overview: HeliScript概要
-          Statements and flow control: 宣言と制御
-          Debug Mode: デバッグモード
-          Debug Console: デバッグコンソール
-          Debug Messages: デバッグメッセージ一覧
-          World Making Guide: ワールド制作ガイド
-          Avatar File: アバターファイル
-          How to Animate Objects: オブジェクトをアニメーションさせる
-          How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
-          Utility Tools: 補助ツールの使い方 #元ページ不明タグ
-          Login to SDK: SDKにログインする
+          # Misc
+          License: 利用規約
 
 markdown_extensions:
     - admonition
@@ -165,16 +185,28 @@ nav:
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
     - Login to SDK: AboutVketCloudSDK/LoginSDK.md
     - How to use avatar : AboutVketCloudSDK/SetupAvatar.md
-- First Step:
+- First Steps:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
     - World Upload : FirstStep/WorldUpload.md
+- Vket Cloud Settings:
+    - Vket Cloud Settings - Overview: VketCloudSettings/Overview.md
+    # Basic
+    - Basic Settings: VketCloudSettings/BasicSettings.md
+    - Player Settings: VketCloudSettings/PlayerSettings.md
+    - Despawn Height Settings: VketCloudSettings/DespawnHeightSettings.md
+    # Advanced
+    - Camera Settings: VketCloudSettings/CameraSettings.md
+    - Rendering Settings: VketCloudSettings/RenderingSettings.md
+    - Avatar Settings: VketCloudSettings/AvatarSettings.md
+    - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
     - Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
-    - ReflectionProbe : WorldMakingGuide/ReflectionProbe.md
+    - Tips on using HEOField: WorldMakingGuide/HEOFieldTips.md
+    - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
@@ -182,6 +214,7 @@ nav:
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
+    - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
     - Build Error / How to troubleshoot issues: troubleshooting/BuildError.md
     - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
@@ -192,16 +225,23 @@ nav:
     - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :
-      - ParticleEditor Overview : particleeditor/pe_about_particleeditor.md
+      - Particle Editor - Overview : particleeditor/pe_about_particleeditor.md
       - About Screen / How to Operate : particleeditor/pe_about_screen.md
+      - Particle Editor - Properties : particleeditor/pe_about_properties.md
+    - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
+    - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
+    - Texture Import Viewer: SDKTools/TextureImportViewer.md
 - World Editing Tips:
+  - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
+  - Build Options: WorldEditingTips/BuildOptions.md
 - World Optimization: 
-  - World Optimization - Overview : WorldMakingGuide/WorldOptimization.md
-  - Occlusion Culling : WorldMakingGuide/OcclusionCulling.md
-  - Texture Compression : heoexporter/he_TextureCompression.md
+  - World Optimization - Overview : WorldOptimization/WorldOptimization.md
+  - Occlusion Culling : WorldOptimization/OcclusionCulling.md
+  - Texture Compression : WorldOptimization/TextureCompression.md
+  - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
     - HEOActivity: HEOComponents/HEOActivity.md
@@ -209,13 +249,16 @@ nav:
     - HEOAreacollider: HEOComponents/HEOAreacollider.md
     - HEOAudio: HEOComponents/HEOAudio.md
     - HEOBackgroundTexture: HEOComponents/HEOBackgroundTexture.md
+    - HEOCamera: HEOComponents/HEOCamera.md
     - HEOCollider: HEOComponents/HEOCollider.md
     - HEOClickGuide: HEOComponents/HEOClickGuide.md
     - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
     - HEOField: HEOComponents/HEOField.md
     #- HEOInfo: HEOComponents/HEOInfo.md #整備中
-    - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
     - HEOLODLevel: HEOComponents/HEOLODLevel.md
+    - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
+    - HEOMirror: HEOComponents/HEOMirror.md
+    - HEONameplate: HEOComponents/HEONameplate.md
     - HEOObject: HEOComponents/HEOObject.md
     #- HEOObjectType: HEOComponents/HEOObjectType.md #整備中
     - HEOParticle: HEOComponents/HEOParticle.md
@@ -242,7 +285,6 @@ nav:
       - Enter/LeaveVoiceGroup: Actions/System/EnterLeaveVoiceGroup.md
       - WhiteOut/In: Actions/System/WhiteOutIn.md
       - FadeOut/In: Actions/System/FadeOutIn.md
-      #- OpenComicViewer: Actions/System/OpenComicViewer.md #現バージョンでは使用できないため除外
     - Node:
       - Show/HideNode: Actions/Node/ShowHideNode.md
       - Enable/DisableClickableNode: Actions/Node/EnableDisableClickableNode.md
@@ -266,10 +308,10 @@ nav:
     - Programmatic:
       - AddVar: Actions/Programmatic/AddVar.md
       - SetVar: Actions/Programmatic/SetVar.md
-      - If A == B: Actions/Programmatic/IfEqual.md
-      - If A != B: Actions/Programmatic/IfNotEqual.md
-      - If A >= B: Actions/Programmatic/IfGreaterThanOrEqual.md
-      - If A <= B: Actions/Programmatic/IfLessThanOrEqual.md
+      - If Variable Equal To Value: Actions/Programmatic/IfEqual.md
+      - If Variable Not Equal To Value: Actions/Programmatic/IfNotEqual.md
+      - If Variable More Than Value: Actions/Programmatic/IfMoreThan.md
+      - If Variable Less Than Value: Actions/Programmatic/IfLessThan.md
       - Random: Actions/Programmatic/Random.md
       - SetCookieText: Actions/Programmatic/SetCookieText.md
       - CallScript: Actions/Programmatic/CallScript.md
@@ -279,8 +321,10 @@ nav:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
         - List: hs/hs_list.md
+        - Delegate: hs/hs_delegate.md
     - Class: hs/hs_class.md
     - Components / Callback functions: hs/hs_component.md
+    - Item Types and Usable Functions: hs/hs_item_types_functions.md
     - Built-in Classes And Functions:
         - Vector3: hs/hs_struct_vector3.md
         - Quaternion: hs/hs_struct_quaternion.md
@@ -296,12 +340,19 @@ nav:
         - TextChat: hs/hs_system_function_textchat.md
         - ChatGPT: hs/hs_system_function_chatgpt.md
         - Physics: hs/hs_system_function_physics.md
+        - Camera: hs/hs_system_function_camera.md
+        - Common Dialog: hs/hs_system_function_commondialog.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
-        - Control Statement: hs/hs_statement_constrol.md
+        - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v12.x:
+        - v12.3: releasenote/releasenote-12.3.md
+        - v12.2: releasenote/releasenote-12.2.md
+        - v12.1: releasenote/releasenote-12.1.md
+        - v12.0: releasenote/releasenote-12.0.md
     - v9.x:
         - v9.11: releasenote/releasenote-9.11.md
         - v9.10: releasenote/releasenote-9.10.md
@@ -358,8 +409,12 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v12.x:
+        - v12.3: changelog/changelog-12.3.md
+        - v12.1: changelog/changelog-12.1.md
+        - v12.0: changelog/changelog-12.0.md
     - v9.x:
-        - v9.8: changelog/changelog-9.11.md
+        - v9.11: changelog/changelog-9.11.md
         - v9.5: changelog/changelog-9.5.md
         - v9.4: changelog/changelog-9.4.md
         - v9.3: changelog/changelog-9.3.md

@@ -11,9 +11,10 @@ VketCloudSDKでは、ワールドに入ったユーザーが手持ちのアバ�
 
 スマートフォン上でもアバターが表示できるようにテクスチャの圧縮を行います。<br>
 
-テクスチャの圧縮方法は[ワールドテクスチャの圧縮](../heoexporter/he_TextureCompression.md)と同じツールを使用して行えます。
+テクスチャの圧縮方法は[ワールドテクスチャの圧縮](../WorldOptimization/TextureCompression.md)と同じツールを使用して行えます。
 
 ## 2. AvatarFileを作成する
+
 ### 2.1 HEOWorldSettingからAvatarFileを新規作成する
 
 VketCloudSDKではAvatarFileというファイルにアバター情報を設定し、ワールドのビルド時にプリセットアバターとして反映します。
@@ -25,8 +26,13 @@ VketCloudSDKではAvatarFileというファイルにアバター情報を設定�
 AvatarFileリスト右下の +/- を押すことで、プリセットアバターのリストに項目を追加/削除することができます。<br>
 リストから削除した場合でも、元のAvatarFileのデータが残ります。
 
+!!! caution "DefaultのAvatarFileが編集できる現象について"
+    特定の手順によって、デフォルトで設定されているAvatarFile(`Vketchan_v1.6_Mtoon_blendshape`)の設定が編集できる現象が確認されています。<br>
+    デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
+    この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。
+
 !!! note
-        以下の画像のようにAvatarFileリストが表示されず、「CreatAvatarFileForOldData」ボタンが表示されている場合があります。<br>
+        以下の画像のようにAvatarFileリストが表示されず、「CreateAvatarFileForOldData」ボタンが表示されている場合があります。<br>
         これは、古いSDKのアバターデータ情報が残っている時に見られます。<br>
         ボタンを押すことで、元々あったアバター情報がAvatarFileリスト形式に書き出されます。
 

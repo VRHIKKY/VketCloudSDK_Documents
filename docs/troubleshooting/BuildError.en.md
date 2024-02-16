@@ -16,6 +16,10 @@ This can be caused by several reasons, but the common issues are the following:
 | Cannot find the necessary file (404) | From the error log explained below, find the 404-ing file and change it to a different file format that Vket Cloud supports. |
 | The directory path / file name in your Unity Project contains spaces or full-width characters | Delete any spaces or double-byte characters. |
 
+!!! caution "First build on Mac environments"
+    Depending on your Mac environment, the first Build and Run may result to display "Can't Find the Server" or cause a Build Error.<br>
+    If this issue happens, try Build and Run again or reload the browser to solve the issue.
+
 ### If changes you made are not showing up 
 
 There are cases where the changes you made in Unity does not apply in the web browser.

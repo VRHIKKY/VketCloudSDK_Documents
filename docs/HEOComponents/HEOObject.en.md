@@ -1,27 +1,39 @@
 
 # HEOObject
-![HEOObject](img/HEOObject.jpg)
 
-HEOObject is used to instantiate a pre-exported .heo file, or an vrm model.
+![HEOObject_1](img/HEOObject_1.jpg)
+
+
+HEOObject is used to instantiate a dynamic object, which is based on a pre-exported .heo file, or using a vrm, [hrm](../WorldOptimization/TextureCompression.md), or glb format model.
 
 ## Settings
+
+### Basic Settings
 
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
 | Show | true | Toggle object visibility. |
-| Clickable | false | Toggle mouse interaction on object. |
-| .heo or .vrm | | Specify heo or vrm files. <br>If a chosen vrm file has a [Compressed Texture](../heoexporter/he_TextureCompression.md), specify the texture file here. |
+| File Mode | | Allocate a heo, vrm, hrm, or glb file.<br>If a  vrm file has a [Compressed Texture](../WorldOptimization/TextureCompression.md), specify the texture file on hrm.  |
 | Scene Preview | false | Preview the object instantiation on the Unity Scene.<br>Further details are on "Previewing Objects" article. |
-| Enable Bone | false | (only for vrm) Enable if you want to play armature animation. |
-| Auto Loading | true | Used for setting up [Dynamic Loading](HEOField.md). <br> The object will be loaded on the first load by default.  |
-| Shadow Caster | false | If [Shadow Mapping](HEOWorldSetting.md) is enabled, this sets the object's shadow to be casted on other shadow recievers. |
-| Shadow Receiver | false | If [Shadow Mapping](HEOWorldSetting.md) is enabled, this sets the object to recieve shadows from other objects. |
+| Enable Bone | false | (only for vrm, hrm, and gbl) Enable if you want to play armature animation. |
 | Circle Shadow | false |  Sets to draw a circle shadow.  |
-| Foreground Rendering | false | Sets Foreground Rendering (render without applying depth value). |
 | Look at Camera | false |  Make the object face towards the camera at all times. |
-| Object Mode | Choose from None, Pose, and Motion. If you choose Pose or Motion, you will need to additionally specify an .hem file. |
-| Begin Actions | Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
-| End Actions | Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
+| Object Mode | None | Choose from None, Pose, and Motion. If you choose Pose or Motion, you will need to additionally specify an .hem file. |
+
+### Advanced Options
+
+![HEOObject_2](img/HEOObject_2.jpg)
+
+| Label | Initial Value | Function |
+| ---- | ---- | ---- |
+| Clickable | false | Toggle mouse interaction on object. |
+| Auto Loading | true | Used for setting up [Dynamic Loading](HEOField.md). <br> The object will be loaded on the first load by default.  |
+| Shadow Caster | false | If [Shadow Mapping](../VketCloudSettings/RenderingSettings.md) is enabled, this sets the object's shadow to be casted on other shadow receivers. |
+| Shadow Receiver | false | If [Shadow Mapping](../VketCloudSettings/RenderingSettings.md) is enabled, this sets the object to receive shadows from other objects. |
+| Foreground Rendering | false | Sets Foreground Rendering (render without applying depth value). |
+| Item Render Priority || Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+| Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
+| End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
 | HeliScript | | Sets the object to be a target for HeliScripts designated in [HEOScript](HEOScript.md). <br>If a [HEOScript](HEOScript.md) is not in scene, an explanation for this setting will be shown. |
 
 ## Mode - Pose Settings
@@ -44,7 +56,7 @@ HEOObject is used to instantiate a pre-exported .heo file, or an vrm model.
 | Loop | Play the motion in a loop. Turn it on for walking and standby motions. |
 | Draw Circle Shadow | true | Sets to draw a circle shadow on playing motion. |
 | Collision Detection | true | Sets collision detection on playing motion. |
-| Actions | Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion is played. |
+| Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion is played. |
 
 ## Previewing Objects
 

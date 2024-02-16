@@ -1,4 +1,7 @@
-# 追加されたページ
+# SDK Manual Change Log - Ver 9.3
+
+## 追加されたページ
+
 - 編集のためのTips
     - [複数のHEOコンポーネントの一括編集](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/WorldEditingTips/MultiSelect_HEOComponents.html)
     - [UnlitマテリアルのContributeGI設定を外す](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/WorldEditingTips/DisableContributeGITool.html)
@@ -11,7 +14,8 @@
     - [HeliScript/組み込み関数 - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_chatgpt.html)
     - [HeliScript/組み込み関数 - 物理演算](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_physics.html)
 
-# 変更されたページ
+## 変更されたページ
+
 - VketCloudSDKについて
     - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
         - インストールウィザード及びVersion Managerの使用方法を追加
@@ -45,6 +49,9 @@
 - アクション
     - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/Actions/Programmatic/CallScript.html)
         - 画像をVer9.3仕様に差し替え
+    - [Warp](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/Actions/System/Warp.html)
+        - 座標指定からオブジェクト指定に変更
+
 - HeliScript
     - [HeliScript/文字列(String)](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_string.html)
     - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/ja/hs/hs_system_function.html)
@@ -63,7 +70,8 @@
         - 設定画面でのバージョン表記が旧バージョンのままになっている / HeliScript・ギミックがバージョンアップ後に動かない際の対処を追記
         - ファイルの破損エラーが表示される際の対処を追記
 
-# 削除されたページ
+## 削除されたページ
+
 - 自動テクスチャ圧縮
 - アクション
     - GTag

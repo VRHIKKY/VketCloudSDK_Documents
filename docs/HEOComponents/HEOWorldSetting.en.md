@@ -1,7 +1,11 @@
 # HEOWorldSetting
 
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 HEOWorldSetting manages your World's basic info.
-This component lets you configurate the following settings:
+This component lets you configure the following settings:
 
 - Basic Info
 - Camera
@@ -9,7 +13,12 @@ This component lets you configurate the following settings:
 - Avatars
 - MyAvatar
 
-# Basic Info
+## Basic Info
+
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 ![BasicInfo](img/HEOWorldSetting_BasicInfo.jpg)
 
 |  Label | Initial Value | function |
@@ -18,7 +27,7 @@ This component lets you configurate the following settings:
 |  `Debug Mode`  | false |  Switch to debug mode. When switched on, players can use the F1/F2 key to access the debug menu on browser.<br>For details, refer to the [debug mode](../WorldEditingTips/DebugMode.md) page.|
 | `Use Avatar Click`| true | Activate functions running when clicking other players. |
 |  `VRM Drop`  | false | Allows users to locally change their avatar by drag-and-dropping their own .vrm avatars to the browser screen.  |
-|  `Occulusion Culling`  | false | Activate the Occulusion Culling.<br>For instructions, please refer to [Occlusion Culling](../WorldMakingGuide/OcclusionCulling.md).  |
+|  `Occlusion Culling`  | false | Activate the Occlusion Culling.<br>For instructions, please refer to [Occlusion Culling](../WorldOptimization/OcclusionCulling.md).  |
 |  `World Name Directory`  | false | When exporting to .heo and other files, the files will be packed into a folder with the same name as the `World Name`. <br>(e.g. data/field/`World Name`/world.heo) |
 | `Use GamePad` | false | Activate usage of GamePads.  |
 | `Use Physics Engine` | false | Activate usage of the Physics Engine. |
@@ -49,6 +58,11 @@ This component lets you configurate the following settings:
 ---
 
 ## Camera
+
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 ![Camera](img/HEOWorldSetting_Camera.jpg)
 
 |  Label | Initial Value | function |
@@ -63,7 +77,12 @@ This component lets you configurate the following settings:
 
 ---
 
-# Rendering
+## Rendering
+
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 ![Rendering_1](img/HEOWorldSetting_Rendering_1.jpg)
 
 |  Label | Initial Value | function |
@@ -84,7 +103,7 @@ This component lets you configurate the following settings:
 
 !!! note caution
         Note that the Intensity value set on the `Directional Light`(as image below) will not be used within the world.<br>
-        To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value. 
+        To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value.
 
 ![Rendering_2](img/HEOWorldSetting_Rendering_2.jpg)
 
@@ -111,7 +130,12 @@ This component lets you configurate the following settings:
 
 ---
 
-# Avatars
+## Avatars
+
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 ![Avatars](img/HEOWorldSetting_Avatars.jpg)
 
 |  Label | Initial Value | function |
@@ -134,6 +158,11 @@ As the SDK has a default avatarfile, select this file if there is an empty entry
 ---
 
 ## MyAvatar
+
+!!! note warning
+    This component has been deprecated on SDK Ver12.0.<br>
+    As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
+
 ![MyAvatar](img/HEOWorldSetting_MyAvatar_1.jpg)
 
 |  Label | Initial Value | function |
@@ -165,6 +194,7 @@ To edit motions for preset avatars in world, edit the [Avatar File](../WorldMaki
 ---
 
 ### Emotion
+
 ![MyAvatar_2](img/HEOWorldSetting_MyAvatar_2.jpg)
 
 |  Label | Initial Value | function |
@@ -176,6 +206,7 @@ To edit motions for preset avatars in world, edit the [Avatar File](../WorldMaki
 ---
 
 ### Objects
+
 ![HEOWorldSetting_Objects](img/HEOWorldSetting_Objects.jpg)
 
 Set the objects (.heo files, particles, audio) to be attached to the avatar. <br>

@@ -1,0 +1,21 @@
+# SDK Manual Change Log - Ver 12.3
+
+## 追加されたページ
+
+- 編集のためのTips
+  - [Vket Cloudオブジェクト追加のためのクイックメニュー](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldEditingTips/QuickMenu.html)
+
+## 変更されたページ
+
+- ワールド制作ガイド
+  - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Skybox.html)
+    - クイックメニューについて案内を追記
+  - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/ReflectionProbe.html)
+    - リフレクションプローブの設定方法を更新
+- HEOコンポーネント
+  - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOReflectionProbe.html)
+    - 機能廃止について案内を追記
+  - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOObject.html)
+    - Ver12.3に追加された機能(hrm, glb対応)を追記し、コンポーネント設定解説を更新
+
+## 削除されたページ

@@ -11,9 +11,10 @@ Before setting a preset avatar, the character model must be converted to the [VR
 
 For optimising avatars to appear on smartphones, texture compression is essential.<br
 
-Texture compression method is same as the [Texture Compression](../heoexporter/he_TextureCompression.md).
+Texture compression method is same as the [Texture Compression](../WorldOptimization/TextureCompression.md).
 
 ## 2. Creating an AvatarFile
+
 ### 2.1 Create an AvatarFile via HEOWorldSetting
 
 VketCloudSDK stores avatar infomation in an AvatarFile format, using the file to list preset avatars on world build.
@@ -24,6 +25,11 @@ By pressing `CreateAvatarFile` in the Avatars tab of [HEOWorldSetting](../HEOCom
 
 By pressing the +/- on the bottom right of the AvatarFile list, a new article on the preset avatar list will be added/deleted.<br>
 The AvatarFile will not be deleted even if the list article is deleted.
+
+!!! caution "Issue enabling edit on Default AvatarFile"
+    Following a certain procedure, the issue causing the default AvatarFile(`Vketchan_v1.6_Mtoon_blendshape`) to be editable may be triggered.<br>
+    As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
+    As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.
 
 !!! note
         There may be edge cases where the AvatarFile list won't appear and the "CreateAvatarFileForOldData" will appear.<br>
