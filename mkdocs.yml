@@ -8,14 +8,12 @@ theme:
   name: material
   palette:
   - scheme: default
-    primary: blue
-    accent: blue
+    primary: custom
     toggle:
         icon: material/toggle-switch-off-outline
         name: ダークモードに切り替えます。
   - scheme: slate
-    primary: blue
-    accent: blue
+    primary: custom
     toggle:
         icon: material/toggle-switch
         name: ライトモードに切り替えます。
@@ -37,6 +35,9 @@ theme:
   nav_style: dark
   custom_dir: custom_theme
 
+extra_css:
+  - stylesheets/extra.css
+  
 extra:
   generator: false
   version:
