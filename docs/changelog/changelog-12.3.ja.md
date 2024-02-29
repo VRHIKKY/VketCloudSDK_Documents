@@ -69,6 +69,8 @@
       - 解説をSDK Ver12.3に準拠
 - HeliScript
 Ver12.xにて追加されたHeliScriptへの変更を追記：
+  - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_overview.html)
+    - コンストラクタにおけるPlayerクラス関数の仕様変更を追記
   - [クラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class.html)
     - オブジェクトの生成・削除、存在の判定について追記
   - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_component.html)
@@ -77,6 +79,7 @@ Ver12.xにて追加されたHeliScriptへの変更を追記：
     - 各メソッドを呼び出し可能なオブジェクトのタイプを追記
   - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class_item.html)
     - 新規関数：ChangeActivityMotion / SetNextActivityMotion, SetPresetAvatarを追記
+    - コンストラクタにおけるPlayerクラス関数の仕様変更を追記
   - [文字列(string)](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_string.html)
     - Split系関数を追加
   - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_statement_control.html)

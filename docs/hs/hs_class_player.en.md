@@ -26,6 +26,37 @@ Get a Player instance of yourself.
 
 Get a Player instance according to the PlayerID.
 
+!!! caution "Change of feature for calling Player class functions"
+    On SDK Ver12.x and later versions, calling Player class functions within the constructor has been disabled. <br>
+    In the example below, a bool variable in the Update function is used to obtain the Player instance outside the constructor.
+
+```
+component PlayerInitSample
+{   
+    //Define a player object
+    //Note that objects cannot be initialized here, including using functions such as hsPlayer
+	Player	ex_player;
+
+    bool    ex_isPlayerInit; //bool for handling player object initialization
+
+    //Constructor
+    public PlayerInitSample()
+    {
+    ex_isPlayerInit = false;
+    //hsPlayerGet() cannot be called here
+    }
+
+    public void update()
+    {
+        //If Player instance has not been obtained yet, call hsPlayerGet() only once
+        if(!ex_isPlayerInit){
+        ex_player = hsPlayerGet();
+        ex_isPlayerInit = true;
+        }
+    }
+}
+```
+
 ***
 
 ## methods
