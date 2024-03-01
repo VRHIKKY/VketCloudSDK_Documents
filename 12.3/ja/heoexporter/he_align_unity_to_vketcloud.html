@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     
       
 
@@ -81,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -94,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#unityvketcloud" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -136,7 +138,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -145,7 +147,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -938,6 +940,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           UnityとVketCloudの見た目を揃える
@@ -952,6 +956,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -5617,6 +5623,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5665,28 +5673,27 @@
               
                 
                 
-                  <h1>UnityとVketCloudの見た目を揃える</h1>
-                
-                <p>VketCloudではglobal illuminationなどまだ一部対応できていない機能があります。下記の設定をすることでUnity側とVketCloud側の見た目を揃えることができます。</p>
+                <h1 id="unityvketcloud">UnityとVketCloudの見た目を揃える</h1>
+<p>VketCloudではglobal illuminationなどまだ一部対応できていない機能があります。下記の設定をすることでUnity側とVketCloud側の見た目を揃えることができます。</p>
 <h2 id="_1">グローバルイルミネーションについて</h2>
 <p>VketCloudではリアルタイムのグローバルイルミネーションをサポートしていないので、そちらはライトマップで表現してください。<a href="../WorldMakingGuide/UnityGuidelines.html#_6">Unity制作ガイドライン/ライトマップ</a> (UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)</p>
 <h2 id="skyboxnone">SkyboxをNoneにする</h2>
-<p>Skyboxを使用していないのであればUnityではLight SettingsのSkyboxの色味がglobal illuminationで乗ってしまうのでNoneにしてください<br />
+<p>Skyboxを使用していないのであればUnityではLight SettingsのSkyboxの色味がglobal illuminationで乗ってしまうのでNoneにしてください。
 ※リフレクションプローブの撮影でSkyboxを使用する時はオンにしていただいて大丈夫です(<a href="../WorldMakingGuide/ReflectionProbe.html">リフレクションプローブの作成</a>)</p>
-<p><img src="he_image/SetSkyboxToNone.jpg"></p>
+<p><img alt="SetSkyboxToNone.jpg" src="he_image/SetSkyboxToNone.jpg" /></p>
 <h2 id="standardshader">StandardShaderの設定を変更する</h2>
 <p>VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。</p>
 <ol>
 <li>「Edit/ProjectSettings/Graphics」を開く
-<img src="he_image/OpenGraphics.jpg"></li>
+<img alt="OpenGraphics.jpg" src="he_image/OpenGraphics.jpg" /></li>
 <li>「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
-<img src="he_image/TierSettings.jpg"></li>
+<img alt="TierSettings.jpg" src="he_image/TierSettings.jpg" /></li>
 <li>「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
-<img src="he_image/StandardShaderQuality.jpg"></li>
+<img alt="StandardShaderQuality.jpg" src="he_image/StandardShaderQuality.jpg" /></li>
 </ol>
 <h2 id="_2">カラースペースがリニアになっていることを確認する</h2>
 <p>「Edit/Project Settings/Player/Other Settings」を開き、Color Spaceが「Linear」になっていることを確認する
-<img src="he_image/ColorSpace.jpg"></p>
+<img alt="ColorSpace.jpg" src="he_image/ColorSpace.jpg" /></p>
                 
               
               

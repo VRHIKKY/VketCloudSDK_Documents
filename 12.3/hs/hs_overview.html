@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     
       
 
@@ -81,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -136,7 +138,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -145,7 +147,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -5837,22 +5839,33 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 例として、以下のように<a href="../HEOComponents/HEOField.html">HEOField</a>下のexampleObjectがクリックされた際にメッセージを出力するスクリプトが書けます。</p>
 <div class="codehilite"><pre><span></span><code>component example
 {
-    //アイテム・プレイヤーを定義
+    //ItemとPlayerを定義
     //ここではhsItemGetなどの取得関数を含め、オブジェクトの初期化はできないためにご注意ください
     Item    ex_Item;
     Player  ex_player;
 
+    bool    ex_isPlayerInit; //Playerクラス初期化管理
     int     ex_ItemNodeIndex;
 
     public example()
     {
-        //アイテムを認識　アイテム名は.heoになっている物を指定する　今回はHEOField指定
+        //Itemを認識　Item名は.heoになっている物を指定する　今回はHEOField指定
         ex_Item = hsItemGet(&quot;World&quot;);
-        //プレイヤーを認識
-        ex_player = hsPlayerGet();
+
+        ex_isPlayerInit = false;
 
         //ItemがHEO Fieldなので、その傘下にあるオブジェクトのノードを取得可能
         ex_ItemNodeIndex = ex_Item.GetNodeIndexByName(&quot;exampleObject&quot;);
+    }
+
+    public void update()
+    {
+        //Playerのインスタンス取得がまだの場合、一度だけhsPlayerGet()を実行する
+        if(!ex_isPlayerInit){
+        //Playerを認識・取得
+        ex_player = hsPlayerGet();
+        ex_isPlayerInit = true;
+        }
     }
 
     //クリックしたとき、対象のノードを取得する。OnClickNodeの使い方はコールバック関数のページをご参照ください
@@ -5867,6 +5880,11 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 }
 </code></pre></div>
 
+<div class="admonition caution">
+<p class="admonition-title">Playerオブジェクトの初期化について</p>
+<p>SDK Ver12.x以降より、Playerクラスの関数はコンストラクタでの呼び出しができなくなりました。<br>
+インスタンスの取得を行いたい際は、例として上記のようにフラグとなるbool変数を用意してコンストラクタ以外の関数にて呼び出してください。</p>
+</div>
 <p>スクリプトを<a href="../HEOComponents/HEOScript.html">HEOScript</a>に設定し、ワールドをビルドすると以下のようにオブジェクトをクリックした際にメッセージが出力されます。</p>
 <p><img alt="hs_overview_6" src="img/hs_overview_6.jpg" /></p>
 <p>OnClickNodeなど、SDKに用意されているコールバック関数は<a href="hs_component.html">コンポーネント / コールバック関数</a>をご参照ください。</p>

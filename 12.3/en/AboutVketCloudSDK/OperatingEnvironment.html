@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     
       
 
@@ -81,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -94,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unity-pre-prep" class="md-skip">
+        <a href="#operating-environment" class="md-skip">
           Skip to content
         </a>
       
@@ -136,7 +138,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -145,7 +147,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -5584,18 +5586,26 @@
               
                 
                 
-                <h1 id="unity-pre-prep"><strong>Unity Pre-prep</strong></h1>
-<p>VketCloudSDK requires the following.</p>
+                <h1 id="operating-environment">Operating Environment</h1>
+<p>VketCloudSDK requires the following Unity editor version:</p>
 <ul>
 <li><strong>Unity 2019.4.31f1</strong></li>
 </ul>
-<p>If the above version of Unity is not installed:</p>
-<p>Step 1. Download Unity Hub (<a href="https://unity3d.com/get-unity/download" target="_blank">From here</a>)  </p>
-<p>Step 2. Find and download the specified version from <a href="https://unity3d.com/jp/get-unity/download/archive" target="_blank">Unity -Download Archive</a> (Click the “Unity Hub” option)
-<img alt="DownloadVersion" src="img/DownloadVersion.jpg" />  </p>
-<p>Please use one of the below systems when running Unity.
-- Windows 10, 64-bit
-- macOS 10.12+.</p>
+<p>If the above version of Unity is not installed, install by following the instructions below:</p>
+<ol>
+<li>
+<p>Download Unity Hub (<a href="https://unity3d.com/get-unity/download" target="_blank">From here</a>)  </p>
+</li>
+<li>
+<p>Find and download the specified version from <a href="https://unity3d.com/jp/get-unity/download/archive" target="_blank">Unity -Download Archive</a> (Click the “Unity Hub” option)</p>
+<p><img alt="DownloadVersion" src="img/DownloadVersion.jpg" />  </p>
+</li>
+</ol>
+<p>Please use one of the operating systems below when running Unity.</p>
+<ul>
+<li>Windows 10, 64-bit</li>
+<li>macOS 10.12+.</li>
+</ul>
 <p>Also, we recommend the below systems when entering your world built with VketCloudSDK.</p>
 <ul>
 <li>PC: A computer that supports web browsers such as Chrome / Firefox / Safari / Edge.</li>
@@ -5626,6 +5636,17 @@ In that case, please follow the below steps to manually change the settings,</p>
 <p><strong>Setting Color Space</strong>
 From Edit &gt;Project Settings, set the  Color Space as Linear.</p>
 <p><img alt="linear" src="img/linear.jpg" /></p>
+<p>On Ver12.3 and later versions, the settings below are required as well:</p>
+<p><strong>Setting Standard Shader Quality</strong></p>
+<p>The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so you will need to make some changes in the settings.</p>
+<ol>
+<li>Open Edit/ProjectSettings/Graphics
+    <img alt="OpenGraphics.jpg" src="he_image/OpenGraphics.jpg" /></li>
+<li>In the Tier Settings, uncheck "Use Defaults" on Low, Medium, and High
+    <img alt="TierSettings.jpg" src="he_image/TierSettings.jpg" /></li>
+<li>In the Tier Settings, change the "Standard Shader Quality" on Low, Medium, and High, to "Medium"
+    <img alt="StandardShaderQuality.jpg" src="he_image/StandardShaderQuality.jpg" /></li>
+</ol>
 </div>
                 
               

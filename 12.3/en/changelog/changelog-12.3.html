@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     
       
 
@@ -81,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -136,7 +138,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -145,7 +147,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -5689,6 +5691,15 @@
 </ul>
 <h2 id="edited-pages">Edited Pages</h2>
 <ul>
+<li>About VketCloudSDK</li>
+<li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html">Operating Environment</a><ul>
+<li>Added editing Standard Shader Quality as a required setup instruction on install</li>
+</ul>
+</li>
+<li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/SetupSDK_external.html">How to install VketCloudSDK</a><ul>
+<li>Added editing Standard Shader Quality as a required setup instruction on install</li>
+</ul>
+</li>
 <li>First Steps</li>
 <li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/BuildAndRun.html">Build and Run</a><ul>
 <li>Revised title and reedited format</li>
@@ -5700,6 +5711,10 @@
 </ul>
 </li>
 <li>World Making Guide</li>
+<li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html">How to use Colliders / Tips</a><ul>
+<li>Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects</li>
+</ul>
+</li>
 <li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html">Skybox</a><ul>
 <li>Added Guide for Setup using Quick Menu</li>
 </ul>
@@ -5727,12 +5742,17 @@
 <li>Added info on Scene Preview and Advanced Settings</li>
 </ul>
 </li>
-<li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html">HEOReflectionProbe</a><ul>
-<li>Added info on component deprecation</li>
+<li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOMeshCollider.html">HEOMeshCollider</a><ul>
+<li>Updated How to Use according to Ver12.3</li>
+<li>Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects</li>
 </ul>
 </li>
 <li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOObject.html">HEOObject</a><ul>
 <li>Added info on new Ver12.3 featuresに(hrm and glb support), updated info on component settings</li>
+</ul>
+</li>
+<li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html">HEOReflectionProbe</a><ul>
+<li>Added info on component deprecation</li>
 </ul>
 </li>
 <li>Actions</li>
@@ -5753,6 +5773,10 @@
 </li>
 <li>HeliScript
 Added information on HeliScript updates on Ver12.x: *English version WIP</li>
+<li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_overview.html">HeliScript Overview</a><ul>
+<li>Added feature change for Player class functions within constructor</li>
+</ul>
+</li>
 <li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class.html">Class</a><ul>
 <li>Added object instantiation / deletion, detecting instants</li>
 </ul>
@@ -5766,6 +5790,7 @@ Added information on HeliScript updates on Ver12.x: *English version WIP</li>
 </ul>
 </li>
 <li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class_item.html">Player class</a><ul>
+<li>Added feature change for Player class functions within constructor</li>
 <li>Added new functions: ChangeActivityMotion / SetNextActivityMotion, and SetPresetAvatar</li>
 </ul>
 </li>
@@ -5789,7 +5814,16 @@ Added information on HeliScript updates on Ver12.x: *English version WIP</li>
 <li>Added ToString function</li>
 </ul>
 </li>
-<li>According to deprecation, added notation to new features on pages below:</li>
+<li>Trouble Shooting</li>
+<li>
+<p><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/heoexporter/he_align_unity_to_vketcloud.html">Unity settings for replicating actual look in Vket Cloud</a></p>
+<ul>
+<li>Fixed minor format issues</li>
+</ul>
+</li>
+<li>
+<p>According to deprecation, added notation to new features on pages below:</p>
+</li>
 <li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>  </li>
 <li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEODespawnHeight.html">HEODespawnHeight</a>  </li>
 <li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOPlayer.html">HEOPlayer</a>  </li>

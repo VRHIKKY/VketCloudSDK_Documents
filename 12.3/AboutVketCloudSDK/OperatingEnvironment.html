@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     
       
 
@@ -81,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -136,7 +138,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -145,7 +147,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -5625,6 +5627,15 @@
 <p><strong>Color Spaceの変更</strong></p>
 <p>Edit &gt; Project SettingsよりColor SpaceをLinearに変更します。
 <img alt="linear" src="img/linear.jpg" /></p>
+<p>SDK Ver12.3以降は以下の設定も必須となりました：</p>
+<p><strong>StandardShaderの設定の変更</strong></p>
+<p>VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
+1. 「Edit/ProjectSettings/Graphics」を開く
+    <img alt="OpenGraphics.jpg" src="../heoexporter/he_image/OpenGraphics.jpg" />
+2. 「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
+    <img alt="TierSettings.jpg" src="../heoexporter/he_image/TierSettings.jpg" />
+3. 「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
+    <img alt="StandardShaderQuality.jpg" src="../heoexporter/he_image/StandardShaderQuality.jpg" /></p>
 </div>
                 
               

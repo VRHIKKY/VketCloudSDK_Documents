@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     
       
 
@@ -81,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -136,7 +138,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -145,7 +147,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -1706,8 +1708,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-with-collider" class="md-nav__link">
-    How to use with Collider
+  <a href="#how-to-use" class="md-nav__link">
+    How to Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
   </a>
   
 </li>
@@ -5610,8 +5619,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-with-collider" class="md-nav__link">
-    How to use with Collider
+  <a href="#how-to-use" class="md-nav__link">
+    How to Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
   </a>
   
 </li>
@@ -5630,14 +5646,35 @@
                 
                 
                 <h1 id="heomeshcollider">HEOMeshCollider</h1>
-<p><img alt="HEOMeshCollider" src="img/HEOMeshCollider.jpg" /></p>
-<p>HEOMeshCollider will generate a collider on build based on the mesh information ib a 3D model.  </p>
-<h2 id="how-to-use-with-collider">How to use with Collider</h2>
-<p>1. Split the mesh and Unity mesh collider to separated gameobjects.</p>
-<p><img alt="meshcollider_separate" src="img/meshcollider_separate.jpg" /></p>
-<p>2. Attach HEOMeshCollider to the object attached with the target Unity mesh collider.</p>
-<p><img alt="attach_heomeshcollider" src="img/attach_heomeshcollider.jpg" /></p>
-<p>3. Build and Run world to see the collider generated according to the 3D model's mesh.</p>
+<p><img alt="HEOMeshCollider_1" src="img/HEOMeshCollider_1.jpg" /></p>
+<p>HEOMeshCollider will generate a collider on build based on the 3D model's mesh information / Mesh Collider.  </p>
+<h2 id="how-to-use">How to Use</h2>
+<ol>
+<li>
+<p>This component is intended to use on an object with Unity Mesh Renderer / Mesh Collider components.<br>To use, select the object and add a new HEOMeshCollider component in the Inspector / Add Component.</p>
+<p><img alt="HEOMeshCollider_2" src="img/HEOMeshCollider_2.jpg" /></p>
+</li>
+<li>
+<p>When setting a HEOMeshCollider component, <a href="HEOCollider.html">HEOCollider</a> will be automatically attached. This component is essential for HEOMeshCollider and cannot be removed.</p>
+<p><img alt="HEOMeshCollider_3" src="img/HEOMeshCollider_3.jpg" /></p>
+</li>
+<li>
+<p>Build and Run world to see the collider generated according to the 3D model's mesh.</p>
+</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<div class="admonition bug">
+<p class="admonition-title">Player floating when world only has Mesh Renderer / Mesh Collider objects</p>
+<p>On SDK Ver12.3, there is an issue occurring when the world has objects only having Mesh Renderer, Mesh Collider, HEOMeshCollider, <a href="HEOCollider.html">HEOCollider</a> components attached, causing the player to float when enter the world.<br>
+This issue is scheduled to be fixed on the next SDK release.<br>
+Also, this issue can be avoided by adding at least a single Cube with Box Collider attached.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">HEOMeshCollider feature changes on Ver12.3</p>
+<p>On SDK versions earlier than Ver12.3, the object's mesh and collider had to be separated as the image below to enable mesh colliders for Vket Cloud worlds, which is no longer needed on Ver12.3 and later versions.<br>
+Also, <a href="HEOCollider.html">HEOCollider</a> component is now considered as essential, which will be automatically attached to the object when adding HEOMeshCollider component.</p>
+</div>
+<p><img alt="HEOMeshCollider_4" src="img/HEOMeshCollider_4.jpg" /></p>
                 
               
               

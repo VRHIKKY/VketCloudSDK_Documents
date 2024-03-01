@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     
       
 
@@ -81,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -136,7 +138,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -145,7 +147,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -5667,6 +5669,12 @@
 <p>以下のコンポーネントは単体では使用せず、<a href="../HEOComponents/HEOCollider.html">HEOCollider</a>と組み合わせて使用します。</p>
 <p><a href="../HEOComponents/HEOAreacollider.html">HEOAreaCollider</a> : プレイヤーの入退場など、特定の範囲の内外でアクションを起こしたい場合に使用します。</p>
 <p><a href="../HEOComponents/HEOMeshCollider.html">HEOMeshCollider</a> : UnityのMesh ColliderをVket Cloudにて使用したい場合に付与します。</p>
+<div class="admonition bug">
+<p class="admonition-title">ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤー浮遊について</p>
+<p>SDK Ver12.3において、ワールドにMesh Renderer, Mesh Collider, HEOMeshCollider, <a href="../HEOComponents/HEOCollider.html">HEOCollider</a>が付いたオブジェクトのみ存在する際、ワールド入場時にプレイヤーが空中に浮遊する不具合が確認されています。<br>
+本不具合は次回のSDKリリースにて修正される予定です。<br>
+なお、本不具合はBox ColliderがアタッチされたCubeなどをワールドに最低１つ配置することで回避が可能です。</p>
+</div>
 <p>HEOCylinderCollider : <a href="PhysicsEngine.html">物理演算</a>にてUnityのCylinder Colliderを物理演算させたい場合に使用します。<br>
 なお、Cylinderは物理演算以外には使えないためご注意ください。</p>
 <h2 id="action-trigger-heliscript">Action Trigger / HeliScriptでの物理演算・コライダーについて</h2>

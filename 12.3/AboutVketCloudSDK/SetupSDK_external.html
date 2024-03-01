@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     
       
 
@@ -81,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -136,7 +138,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -145,7 +147,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
@@ -422,6 +424,13 @@
           <li class="md-nav__item">
   <a href="#color-space" class="md-nav__link">
     Color Spaceの変更
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-shader" class="md-nav__link">
+    Standard Shader設定の変更
   </a>
   
 </li>
@@ -5741,6 +5750,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#standard-shader" class="md-nav__link">
+    Standard Shader設定の変更
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5796,7 +5812,7 @@
                 <h1 id="vketcloudsdk">VketCloudSDKの導入方法</h1>
 <p>VketCloudSDKをインストールするには、はじめにUnityのPackage Managerを使用し、SDKインストールウィザードを導入します。  </p>
 <h2 id="step-1-unity">Step 1. Unityでプロジェクトを開く</h2>
-<p>対応しているバージョン（<a href="OperatingEnvironment.html" target="_blank">動作環境</a>）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。      </p>
+<p>対応しているバージョン（<a href="OperatingEnvironment.html" target="_blank">動作環境</a>）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。</p>
 <div class="admonition note caution">
 <p class="admonition-title">Note</p>
 <p>プロジェクト名にスペースを入れるとビルドに失敗する場合があります。<br>
@@ -5882,7 +5898,29 @@
 <h3 id="color-space">Color Spaceの変更</h3>
 <p>Edit &gt; Project SettingsよりColor SpaceをLinearに変更します。</p>
 <p><img alt="linear" src="img/linear.jpg" /></p>
-<p>4. 設定が完了されるとそれぞれの設定項目の左にチェックマークが表示されます。<br>設定されない状態で「次へ」ボタンを押すと以下警告画面が表示されます。</p>
+<h3 id="standard-shader">Standard Shader設定の変更</h3>
+<div class="admonition caution">
+<p class="admonition-title">Standard Shader設定の変更について</p>
+<p>SDK Ver12.3以降はStandard Shader設定の変更も必須となりました。<br>
+設定されていない場合はビルドエラーが発生するため、導入時に必ず設定してください。</p>
+</div>
+<p>VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。</p>
+<ol>
+<li>
+<p>「Edit/ProjectSettings/Graphics」を開く
+    <img alt="OpenGraphics.jpg" src="../heoexporter/he_image/OpenGraphics.jpg" /></p>
+</li>
+<li>
+<p>「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
+    <img alt="TierSettings.jpg" src="../heoexporter/he_image/TierSettings.jpg" /></p>
+</li>
+<li>
+<p>「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
+    <img alt="StandardShaderQuality.jpg" src="../heoexporter/he_image/StandardShaderQuality.jpg" /></p>
+</li>
+</ol>
+<hr />
+<p>4. 各設定が満たされると、それぞれの設定項目の左にチェックマークが表示されます。<br>設定されない状態で「次へ」ボタンを押すと以下警告画面が表示されます。</p>
 <p><img alt="InstallationWizard_4_jp" src="img/InstallationWizard_4_jp.jpg" /></p>
 <p>5.「次へ」ボタンを押すと、バージョン選択画面が表示されます。<br>安定版、最新版、バージョンアーカイブからバージョンを選択できます。</p>
 <div class="admonition note caution">
