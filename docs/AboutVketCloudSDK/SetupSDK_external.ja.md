@@ -4,7 +4,8 @@
 VketCloudSDKをインストールするには、はじめにUnityのPackage Managerを使用し、SDKインストールウィザードを導入します。  
 
 ## Step 1. Unityでプロジェクトを開く  
-対応しているバージョン（[動作環境](OperatingEnvironment.md){target=_blank}）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。      
+
+対応しているバージョン（[動作環境](OperatingEnvironment.md){target=_blank}）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。
 
 !!! note caution
     プロジェクト名にスペースを入れるとビルドに失敗する場合があります。<br>
@@ -44,6 +45,7 @@ Unityのメニュー Edit > Project Settings から「Project Settings」ウィ�
 ---
 
 ## Step 3. Unity Package ManagerよりSDKインストールウィザードをインストール
+
 Unityのメニュー Window > Package Manager から「Packages」ウィンドウを開きます。ウィンドウ上部のドロップダウンより「My Registries」を選択します。
 
    ![registry](img/registry.jpg)
@@ -98,7 +100,26 @@ Edit > Project SettingsよりColor SpaceをLinearに変更します。
 
 ![linear](img/linear.jpg)
 
-4\. 設定が完了されるとそれぞれの設定項目の左にチェックマークが表示されます。<br>設定されない状態で「次へ」ボタンを押すと以下警告画面が表示されます。
+### Standard Shader設定の変更
+
+!!! caution "Standard Shader設定の変更について"
+    SDK Ver12.3以降はStandard Shader設定の変更も必須となりました。<br>
+    設定されていない場合はビルドエラーが発生するため、導入時に必ず設定してください。
+
+VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
+
+1. 「Edit/ProjectSettings/Graphics」を開く
+    ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics.jpg)
+
+2. 「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
+    ![TierSettings.jpg](../heoexporter/he_image/TierSettings.jpg)
+
+3. 「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
+    ![StandardShaderQuality.jpg](../heoexporter/he_image/StandardShaderQuality.jpg)
+
+---
+
+4\. 各設定が満たされると、それぞれの設定項目の左にチェックマークが表示されます。<br>設定されない状態で「次へ」ボタンを押すと以下警告画面が表示されます。
 
 ![InstallationWizard_4_jp](img/InstallationWizard_4_jp.jpg)
 

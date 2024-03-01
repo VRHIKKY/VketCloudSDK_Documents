@@ -27,6 +27,11 @@
 
 ## Edited Pages
 
+- About VketCloudSDK
+  - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html)
+    - Added editing Standard Shader Quality as a required setup instruction on install
+  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
+    - Added editing Standard Shader Quality as a required setup instruction on install
 - First Steps
   - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/BuildAndRun.html)
     - Revised title and reedited format
@@ -95,6 +100,10 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Edited argument of hsCanvasSetGUIPos
   - [Built-in types - Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_var.html)
     - Added ToString function
+- Trouble Shooting
+  - [Unity settings for replicating actual look in Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/heoexporter/he_align_unity_to_vketcloud.html)
+    - Fixed minor format issues
+
 - According to deprecation, added notation to new features on pages below:
   - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOWorldSetting.html)  
   - [HEODespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEODespawnHeight.html)  

@@ -3,7 +3,9 @@
 To install the VketCloudSDK, the Unity Package Manager and the VketCloudSDK install wizard is required.
   
 ---
-### Step 1. Open a project in Unity
+
+## Step 1. Open a project in Unity
+
 Open a project of a supported version ([Unity Pre-prep](OperatingEnvironment.md){target=_blank}) or create a new project.
 Select "3D" as the template, if you need one.
 
@@ -14,7 +16,8 @@ Select "3D" as the template, if you need one.
     OK) MyProject NG) My Project , マイ　プロジェクト
 
 ---
-### Step 2. Register Registry information
+
+## Step 2. Register Registry information
 
 !!! note caution
     On the release of Version 9.3, the SDK installation registry has been changed to the install wizard.<br>
@@ -43,7 +46,8 @@ Select "Package Manager" from the left tab in the window and describe as follows
 ![SetupSDK_RegistrySpaceError](img/SetupSDK_RegistrySpaceError.jpg)
 
 ---
-### Step 3. Install the VketCloudSDK Install Wizard via Package Manager
+
+## Step 3. Install the VketCloudSDK Install Wizard via Package Manager
   
 Open the "Packages" window from Unity's menu Window > Package Manager.
 
@@ -59,7 +63,7 @@ Installation is complete if the window and Unity menu is displayed as below:
 
 ![InstallationWizard_Menu](img/InstallationWizard_Menu.jpg)
 
-## Step 4. Install the SDK using the Install wizard
+## Step 4. Install the SDK using the VketCloudSDK Install wizard
 
 To install the SDK on a new project, use the SDK Install Wizard.
 
@@ -79,7 +83,7 @@ To install the SDK on a new project, use the SDK Install Wizard.
 
 ![InstallationWizard_3_en](img/InstallationWizard_3.jpg)
 
-### Setting API compatibility level**
+### Setting API compatibility level
 
 1. Click Project Settings... from Edit in the Unity menu bar  
 
@@ -89,7 +93,7 @@ To install the SDK on a new project, use the SDK Install Wizard.
 
 ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
 
-### Setting LightMap Encoding**
+### Setting LightMap Encoding
 
 Likewise above, check the Configuration in the Project Settings and change the Lightmap Encoding to "Normal Quality" from the pull-down menu.
 
@@ -100,6 +104,25 @@ Likewise above, check the Configuration in the Project Settings and change the L
 From Edit >Project Settings, set the  Color Space as Linear.
 
 ![linear](img/linear.jpg)
+
+### Setting Standard Shader Quality
+
+!!! caution "Setting Standard Shader Quality"
+    On Ver12.3 and later versions, setting the standard shader quality has been added as a required setting.<br>
+    If not set the SDK will cause a build error, so make sure to set on install.
+
+The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so you will need to make some changes in the settings.
+
+1. Open Edit/ProjectSettings/Graphics
+    ![OpenGraphics.jpg](he_image/OpenGraphics.jpg)
+
+2. In the Tier Settings, uncheck "Use Defaults" on Low, Medium, and High
+    ![TierSettings.jpg](he_image/TierSettings.jpg)
+
+3. In the Tier Settings, change the "Standard Shader Quality" on Low, Medium, and High, to "Medium"
+    ![StandardShaderQuality.jpg](he_image/StandardShaderQuality.jpg)
+
+---
 
 4\.  By finishing each setting, a check mark will appear on each article. <br>  By ignoring the settings and selecting the "Next" button, a window of warning will appear.
 
