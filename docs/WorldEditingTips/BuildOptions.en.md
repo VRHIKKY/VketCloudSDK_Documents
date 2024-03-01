@@ -34,8 +34,3 @@ This designates how much the texture will be compressed.
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
 | Convert the particle's texture for smartphone use | false | Optimizes particles for smartphone use by compressing files. |
-
-## Custom Path for Build
-
-!!! note caution
-    These settings are planned to be deleted on future updates. Please do not edit.
