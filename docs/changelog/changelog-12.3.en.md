@@ -27,6 +27,11 @@
 
 ## Edited Pages
 
+- About VketCloudSDK
+  - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html)
+    - Added editing Standard Shader Quality as a required setup instruction on install
+  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
+    - Added editing Standard Shader Quality as a required setup instruction on install
 - First Steps
   - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/BuildAndRun.html)
     - Revised title and reedited format

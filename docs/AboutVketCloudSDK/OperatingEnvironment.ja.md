@@ -1,5 +1,5 @@
-
 # VketCloudSDKの動作環境
+
 VketCloudSDKは、以下のUnity環境が必要です。
 
 - **Unity 2019.4.31f1**
@@ -42,3 +42,15 @@ VketCloudSDKは、以下のUnity環境が必要です。
     
     Edit > Project SettingsよりColor SpaceをLinearに変更します。
     ![linear](img/linear.jpg)
+
+    SDK Ver12.3以降は以下の設定も必須となりました：
+
+    **StandardShaderの設定の変更**
+
+    VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
+    1. 「Edit/ProjectSettings/Graphics」を開く
+        ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics.jpg)
+    2. 「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
+        ![TierSettings.jpg](../heoexporter/he_image/TierSettings.jpg)
+    3. 「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
+        ![StandardShaderQuality.jpg](../heoexporter/he_image/StandardShaderQuality.jpg)
