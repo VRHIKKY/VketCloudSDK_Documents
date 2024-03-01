@@ -46,6 +46,8 @@
   - [ワールドの軽量化方法：概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/WorldOptimization.html)
     - 動的ローディングについての概要を追加
 - HEOコンポーネント
+  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOAudio.html)
+    - オーディオファイルのフォーマットについて追記
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOField.html)
     - HEOFieldの使い方への誘導を追加
 - アクション
