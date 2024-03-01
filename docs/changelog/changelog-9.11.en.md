@@ -47,6 +47,8 @@
   - [World Optimization - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/WorldOptimization.html)
     - Added description for dynamic loading
 - HEOComponents
+  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOAudio.html)
+    - Added file format for audio files
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOField.html)
     - Added information of Tips on using HEOField page
 - Actions
