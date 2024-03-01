@@ -95,6 +95,9 @@ Ver12.xにて追加されたHeliScriptへの変更を追記：
     - hsCanvasSetGUIPosの引数を変更
   - [組み込み型](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_var.html)
     - ToString関数を追記
+- トラブルシューティング
+  - [UnityとVketCloudの見た目を揃える](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/heoexporter/he_align_unity_to_vketcloud.html)
+    - 細かな整形と修正を追加
 - 機能廃止に伴い、以下のページにて新機能への誘導を追加
   - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOWorldSetting.html)  
   - [HEODespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEODespawnHeight.html)  
