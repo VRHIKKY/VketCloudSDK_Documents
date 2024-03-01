@@ -34,6 +34,8 @@
   - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/WorldUpload.html)
     - Edited how-to on operating World Uploader
 - World Making Guide
+  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html)
+    - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
     - Added Guide for Setup using Quick Menu
   - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ReflectionProbe.html)
@@ -49,10 +51,13 @@
 - HEO Components
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOActivity.html)
     - Added info on Scene Preview and Advanced Settings
-  - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
-    - Added info on component deprecation
+  - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOMeshCollider.html)
+    - Updated How to Use according to Ver12.3
+    - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
   - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOObject.html)
     - Added info on new Ver12.3 featuresに(hrm and glb support), updated info on component settings
+  - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
+    - Added info on component deprecation
 - Actions
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Programmatic/IfEqual.html)

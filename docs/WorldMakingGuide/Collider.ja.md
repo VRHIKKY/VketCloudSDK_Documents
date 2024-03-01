@@ -17,6 +17,11 @@ VketCloudSDKでは、Unityコライダーに対応するHEOComponentをそれぞ
 
 [HEOMeshCollider](../HEOComponents/HEOMeshCollider.md) : UnityのMesh ColliderをVket Cloudにて使用したい場合に付与します。
 
+!!! bug "ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤー浮遊について"
+    SDK Ver12.3において、ワールドにMesh Renderer, Mesh Collider, HEOMeshCollider, [HEOCollider](./HEOCollider.md)が付いたオブジェクトのみ存在する際、ワールド入場時にプレイヤーが空中に浮遊する不具合が確認されています。<br>
+    本不具合は次回のSDKリリースにて修正される予定です。<br>
+    なお、本不具合はBox ColliderがアタッチされたCubeなどをワールドに最低１つ配置することで回避が可能です。
+
 HEOCylinderCollider : [物理演算](./PhysicsEngine.md)にてUnityのCylinder Colliderを物理演算させたい場合に使用します。<br>
 なお、Cylinderは物理演算以外には使えないためご注意ください。
 
