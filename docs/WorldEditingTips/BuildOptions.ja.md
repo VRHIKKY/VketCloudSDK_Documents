@@ -34,8 +34,3 @@
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Convert the particle's texture for smartphone use | false | パーティクルファイルを圧縮し、スマートフォン用に軽量化します。 |
-
-## Custom Path for Field
-
-!!! note caution
-    本機能は将来のアップデートにて廃止されます。原則として使用しないようお願い致します。
