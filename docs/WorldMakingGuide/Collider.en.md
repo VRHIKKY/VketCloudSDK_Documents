@@ -18,7 +18,7 @@ The components below are meant to be combined with [HEOCollider](../HEOComponent
 [HEOMeshCollider](../HEOComponents/HEOMeshCollider.md) : This component is attached when using the Unity Mesh Collider on Vket Cloud.
 
 !!! bug "Player floating when world only has Mesh Renderer / Mesh Collider objects"
-    On SDK Ver12.3, there is an issue occurring when the world has objects only having Mesh Renderer, Mesh Collider, HEOMeshCollider, [HEOCollider](./HEOCollider.md) components attached, causing the player to float when enter the world.<br>
+    On SDK Ver12.3, there is an issue occurring when the world has objects only having Mesh Renderer, Mesh Collider, HEOMeshCollider, [HEOCollider](../HEOComponents/HEOCollider.md) components attached, causing the player to float when enter the world.<br>
     This issue is scheduled to be fixed on the next SDK release.<br>
     Also, this issue can be avoided by adding at least a single Cube with Box Collider attached.
 
