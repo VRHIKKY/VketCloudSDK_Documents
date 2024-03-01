@@ -15,7 +15,6 @@ class Player {
 
 ***
 
-
 ## Playerのユーティリティー関数
 ### hsPlayerGet
 `Player hsPlayerGet()`
@@ -26,6 +25,39 @@ class Player {
 `Player hsPlayerGetByID(string PlayerID)`
 
 PlayerIDを指定して他のプレイヤーの Player インスタンスを取得する。
+
+!!! caution "Playerクラス関数の呼び出し仕様変更について"
+    SDK Ver12.x以降より、Playerクラスの関数はコンストラクタでの呼び出しができなくなりました。<br>
+    インスタンスの取得を行いたい際は、例として以下のようなフラグとなるbool変数を用意して呼び出してください。
+
+```
+component PlayerInitSample
+{   
+    //Playerオブジェクトを定義
+    //ここではhsPlayerGetなどの取得関数を含め、オブジェクトの初期化はできないためにご注意ください
+	Player	ex_player;
+
+    bool    ex_isPlayerInit; //Playerクラス初期化管理
+
+    //コンストラクタ関数
+    public PlayerInitSample()
+    {
+    ex_isPlayerInit = false;
+    //ここでhsPlayerGet()は実行できません
+    }
+
+    //アップデート関数
+    public void update()
+    {
+        //Playerのインスタンス取得がまだの場合、一度だけhsPlayerGet()を実行する
+        if(!ex_isPlayerInit){
+        //Playerを認識・取得
+        ex_player = hsPlayerGet();
+        ex_isPlayerInit = true;
+        }
+    }
+}
+```
 
 ***
 

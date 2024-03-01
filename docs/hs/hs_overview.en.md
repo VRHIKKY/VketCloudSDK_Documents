@@ -84,18 +84,29 @@ component example
     Item ex_Item;
     Player ex_player;
 
+    bool    ex_isPlayerInit; //bool for handling player object initialization
     int ex_ItemNodeIndex;
 
+    //Constructor
      public example()
      {
          //Refer to Items: Specify items whose name ends by .heo. This instance, enter the object having HEOField
          ex_Item = hsItemGet("World");
-         //Refer to Player
-         ex_player = hsPlayerGet();
+
+         ex_isPlayerInit = false;
         
          //Since Item type is HEOfield, the nodes of the objects under can be obtained
          ex_ItemNodeIndex = ex_Item.GetNodeIndexByName("exampleObject");
      }
+
+    public void update()
+    {
+        //If Player instance has not been obtained yet, call hsPlayerGet() only once
+        if(!ex_isPlayerInit){
+        ex_player = hsPlayerGet();
+        ex_isPlayerInit = true;
+        }
+    }
 
      //Callback triggered when the target node is clicked. Please refer to the callback function page for how to use OnClickNode.
      public void OnClickNode(int NodeIndex)
@@ -108,6 +119,11 @@ component example
      }
 }
 ```
+
+!!! caution "Initializing Player objects"
+    On SDK Ver12.x and later versions, calling Player class functions within the constructor has been disabled. <br>
+    In the example above, a bool variable in the Update function is used to obtain the Player instance outside the constructor.
+
 By attaching script to [HEOScript](../HEOComponents/HEOScript.md) and building the world, a message will be output when you click on the exampleObject as shown below.
 
 ![hs_overview_6](img/hs_overview_6.jpg)
