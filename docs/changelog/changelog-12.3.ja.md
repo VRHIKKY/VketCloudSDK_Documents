@@ -34,6 +34,8 @@
   - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/FirstStep/WorldUpload.html)
     - World Uploaderの機能追加に伴い追記
 - ワールド制作ガイド
+  - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html)
+    - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Skybox.html)
     - クイックメニューについて案内を追記
   - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/ReflectionProbe.html)
@@ -49,10 +51,13 @@
 - HEOコンポーネント
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOActivity.html)
     - Scene Previewと高度な設定について追記
-  - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOReflectionProbe.html)
-    - 機能廃止について案内を追記
+  - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOMeshCollider.html)
+    - 使い方をVer12.3準拠に更新
+    - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
   - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOObject.html)
     - Ver12.3に追加された機能(hrm, glb対応)を追記し、コンポーネント設定解説を更新
+  - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOReflectionProbe.html)
+    - 機能廃止について案内を追記
 - アクションについて
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/Actions/Programmatic/IfEqual.html)
