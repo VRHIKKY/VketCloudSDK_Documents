@@ -4,16 +4,17 @@ If the VketCloudSDK does not boot after installing / show up on the tabs, there 
 In such cases, the issue may be solved by manually importing the Deeplink package.
 
 ## How to import the Deeplink package
+
 1. Open the Unity Package Manager window via **Window-->Package Manager**.
 
-![InstallingDeeplink_1](./img/InstallingDeeplink_1.jpg)
+    ![InstallingDeeplink_1](./img/InstallingDeeplink_1.jpg)
 
 2. Click the `+` button on the Package Manager, then click the `Add Package from git URL / name` button.
 
-![InstallingDeeplink_2](./img/InstallingDeeplink_2.jpg)
+    ![InstallingDeeplink_2](./img/InstallingDeeplink_2.jpg)
 
 3. Copy the Deeplink URL on below: <br>
-`https://github.com/needle-tools/unity-deeplink.git?path=/package`
+    `https://github.com/needle-tools/unity-deeplink.git?path=/package`
 
 4. Paste the Deeplink URL on the URL box of the Package Manager, then click `Add`.
 

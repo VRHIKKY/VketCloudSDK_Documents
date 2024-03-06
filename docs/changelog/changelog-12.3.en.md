@@ -101,6 +101,9 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
   - [Built-in types - Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_var.html)
     - Added ToString function
 - Trouble Shooting
+  - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/troubleshooting/VersionUpdateTroubleshooting.html)
+    - Added solution for VketCloudSDK tab not showing on top menu
+    - Added solution for HEOWorldSetting settings not showing on VketCloudSettings / settings being empty
   - [Unity settings for replicating actual look in Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/heoexporter/he_align_unity_to_vketcloud.html)
     - Fixed minor format issues
 
