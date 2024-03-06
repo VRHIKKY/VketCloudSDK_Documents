@@ -953,8 +953,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#vketcloudsdk" class="md-nav__link">
+    メニューにVketCloudSDKタブが表示されない
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#componentmissing" class="md-nav__link">
     バージョンアップ後にComponentがMissingとして表示される
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vket-cloud-settings-heoworldsetting" class="md-nav__link">
+    Vket Cloud Settingsにおける設定が空欄になっている / 旧バージョンのHEOWorldSettingコンポーネントから要素が引き継がれない
   </a>
   
 </li>
@@ -5639,8 +5653,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#vketcloudsdk" class="md-nav__link">
+    メニューにVketCloudSDKタブが表示されない
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#componentmissing" class="md-nav__link">
     バージョンアップ後にComponentがMissingとして表示される
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vket-cloud-settings-heoworldsetting" class="md-nav__link">
+    Vket Cloud Settingsにおける設定が空欄になっている / 旧バージョンのHEOWorldSettingコンポーネントから要素が引き継がれない
   </a>
   
 </li>
@@ -5686,6 +5714,58 @@
                 
                 
                 <h1 id="_1">バージョンアップ後によくあるトラブル</h1>
+<p>本ページでは、VketCloudSDKのバージョンを<a href="../AboutVketCloudSDK/SetupSDK_external.html#sdk">新しいバージョンに更新</a>した際に発生する可能性のある現象と解決策を掲載しております。</p>
+<p>もしバージョンアップ作業時に本ページに掲載されていない / 解決できない現象に遭遇した際は、<a href="https://www.hikky.co.jp/contact?type=service&amp;category=general" target="_blank">お問い合わせフォーム</a>もしくは<a href="https://discord.com/invite/vsFDNTKdNZ" target="_blank">Vket CloudコミュニティDiscord</a>にてお気軽にお問い合わせください。</p>
+<h2 id="vketcloudsdk">メニューにVketCloudSDKタブが表示されない</h2>
+<p>VketCloudSDK更新後、Unityの上部メニューからVketCloudSDKが本来表示されるべき位置に表示されなくなる場合があります。</p>
+<p><img alt="VersionUpdateTroubleshooting_10" src="img/VersionUpdateTroubleshooting_10.jpg" /></p>
+<p>この場合、必須パッケージのバージョンの手動更新が必要な場合があるため、以下の手順で更新します。</p>
+<ol>
+<li>
+<p>Projectウィンドウの任意の箇所にて右クリックして表示されたメニューにて"Show in Explorer"を選択し、現在のプロジェクトをエクスプローラーにて開きます。</p>
+<p><img alt="VersionUpdateTroubleshooting_11" src="img/VersionUpdateTroubleshooting_11.jpg" /></p>
+</li>
+<li>
+<p>Manifest.jsonが格納されているPackagesフォルダまで遷移し、Manifest.jsonを開きます。</p>
+<p><img alt="VersionUpdateTroubleshooting_12" src="img/VersionUpdateTroubleshooting_11.jpg" /></p>
+</li>
+<li>
+<p>Manifest.jsonにて、VketCloudSDKに関するパッケージのバージョンが正しいものか確認します。</p>
+<p>例として、SDK Ver12.3.0ではパッケージが以下のバージョンである必要があります：</p>
+<p>```</p>
+<p>{
+"dependencies": {
+"com.hikky.editortutorialsystem": "1.0.1",
+"com.hikky.vketcloudsdk": "12.3.0",
+"com.needle.deeplink": "1.2.1",
+//省略</p>
+<p>```</p>
+</li>
+</ol>
+<p>上記にて列挙したSDK付随のパッケージのうち、Deeplinkパッケージがプロジェクトに存在しない現象が発生した場合は<a href="InstallingDeeplink.html">手動での導入</a>をお試しください。</p>
+<p>また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際は<a href="../AboutVketCloudSDK/SetupSDK_external.html#step-2">SDK Install Manager</a>と同様の手順で以下のパッケージを導入してください。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>EditorTutorialSystem</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>https://registry.npmjs.org</td>
+</tr>
+<tr>
+<td>Scope(s)</td>
+<td>com.hikky.editortutorialsystem</td>
+</tr>
+</tbody>
+</table>
 <h2 id="componentmissing">バージョンアップ後にComponentがMissingとして表示される</h2>
 <p><a href="../AboutVketCloudSDK/SetupSDK_external.html">SDKのバージョンアップ</a>を行った際に、バージョンアップ前のコンポーネントがMissingとして表示される場合があります。</p>
 <p><img alt="VersionUpdateTroubleshooting_1" src="img/VersionUpdateTroubleshooting_1.jpg" /></p>
@@ -5714,6 +5794,12 @@
 <p><img alt="HEOWorldSetting_AvatarFileError_1" src="img/HEOWorldSetting_AvatarFileError_1.jpg" /></p>
 <p>SDKでは初期状態のアバターとして用意しているAvatarFileがあるため、バージョンアップ後に空欄が発生している際はこちらをご利用ください。</p>
 <p><img alt="HEOWorldSetting_AvatarFileError_2" src="img/HEOWorldSetting_AvatarFileError_2.jpg" /></p>
+<h2 id="vket-cloud-settings-heoworldsetting">Vket Cloud Settingsにおける設定が空欄になっている / 旧バージョンのHEOWorldSettingコンポーネントから要素が引き継がれない</h2>
+<p>Ver12.3以降、これまで<a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>、<a href="../HEOComponents/HEOPlayer.html">HEOPlayer</a>、<a href="../HEOComponents/HEODespawnHeight.html">HEODespawnHeight</a>コンポーネントにて設定していたワールドに関する設定は<a href="../VketCloudSettings/Overview.html">VketCloudSettings</a>にて設定されるようになりました。</p>
+<p>バージョンアップ時に旧HEOコンポーネントの設定内容は自動でVketCloudSettingsに移植されますが、稀に以下の画像のように正しい設定が移植されず、空欄のままになる場合があります。</p>
+<p><img alt="VersionUpdateTroubleshooting_8" src="img/VersionUpdateTroubleshooting_8.jpg" /></p>
+<p>このとき、該当のVketCloudSettingsコンポーネントの三点リーダー（…）を選択し、「Reset」を選択するとデフォルトの値が入力されます。</p>
+<p><img alt="VersionUpdateTroubleshooting_9" src="img/VersionUpdateTroubleshooting_9.jpg" /></p>
 <h2 id="heliscript">設定画面でのバージョン表記が旧バージョンのままになっている / HeliScript・ギミックが動かない</h2>
 <p>既存のプロジェクトからバージョンを9.3へアップデートした後、ビルドを行ったワールドにて設定画面の右下に表示されているバージョン表記が旧バージョンのままになっている場合があります。<br></p>
 <p><img alt="VersionUpdateTroubleshooting_2" src="img/VersionUpdateTroubleshooting_2.jpg" /></p>

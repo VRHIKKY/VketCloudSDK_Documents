@@ -953,8 +953,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#vketcloudsdk-tab-not-showing-on-the-top-menu" class="md-nav__link">
+    VketCloudSDK tab not showing on the top menu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#missing-components-after-version-update" class="md-nav__link">
     Missing Components After Version Update
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vket-cloud-settings-are-empty-old-settings-from-heoworldsetting-and-other-components-do-not-exist" class="md-nav__link">
+    Vket Cloud Settings are empty / Old settings from HEOWorldSetting and other components do not exist
   </a>
   
 </li>
@@ -5639,8 +5653,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#vketcloudsdk-tab-not-showing-on-the-top-menu" class="md-nav__link">
+    VketCloudSDK tab not showing on the top menu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#missing-components-after-version-update" class="md-nav__link">
     Missing Components After Version Update
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vket-cloud-settings-are-empty-old-settings-from-heoworldsetting-and-other-components-do-not-exist" class="md-nav__link">
+    Vket Cloud Settings are empty / Old settings from HEOWorldSetting and other components do not exist
   </a>
   
 </li>
@@ -5686,6 +5714,58 @@
                 
                 
                 <h1 id="version-update-troubleshooting">Version Update Troubleshooting</h1>
+<p>This page lists troubles and solution that may happen when <a href="../AboutVketCloudSDK/SetupSDK_external.html#installing-a-specified-version-updating-an-existing-sdk">updating the VketCloudSDK</a>.</p>
+<p>If a trouble not listed / cannot be solved by solutions on this page happens on version updating, feel free to ask on the <a href="https://www.hikky.co.jp/contact?type=service&amp;category=general" target="_blank">contact form</a> or the <a href="https://discord.com/invite/vsFDNTKdNZ" target="_blank">Vket Cloud community Discord</a>.</p>
+<h2 id="vketcloudsdk-tab-not-showing-on-the-top-menu">VketCloudSDK tab not showing on the top menu</h2>
+<p>After updating the VketCloudSDK, the VketCloudSDK tab may not be shown on the Unity editor's top menu as expected.</p>
+<p><img alt="VersionUpdateTroubleshooting_10" src="img/VersionUpdateTroubleshooting_10.jpg" /></p>
+<p>This can be solved by manually updating the required packages' version by the following procedure:</p>
+<ol>
+<li>
+<p>Select "Show in Explorer" through the right-click menu on the Project window, which will open the current project on the explorer.</p>
+<p><img alt="VersionUpdateTroubleshooting_11" src="img/VersionUpdateTroubleshooting_11.jpg" /></p>
+</li>
+<li>
+<p>Move to the Packages folder containing the Manifest.json file, and open Manifest.json.</p>
+<p><img alt="VersionUpdateTroubleshooting_12" src="img/VersionUpdateTroubleshooting_11.jpg" /></p>
+</li>
+<li>
+<p>Check if the VketCloudSDK and related packages are on the correct versions in Manifest.json. 
+    For example, package versions must be as below for SDK Ver12.3.0:</p>
+<p>```</p>
+<p>{
+"dependencies": {
+"com.hikky.editortutorialsystem": "1.0.1",
+"com.hikky.vketcloudsdk": "12.3.0",
+"com.needle.deeplink": "1.2.1",
+// etc</p>
+<p>```</p>
+</li>
+</ol>
+<p>If the Deeplink package does not exist in the project, please try a <a href="InstallingDeeplink.html">manual package import</a>.</p>
+<p>Also, if the EditorTutorialSystem does not exist, add the package below following the instructions of <a href="../AboutVketCloudSDK/SetupSDK_external.html#step-2-register-registry-information">SDK Install Manager</a>.</p>
+<table>
+<thead>
+<tr>
+<th>item</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>EditorTutorialSystem</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>https://registry.npmjs.org</td>
+</tr>
+<tr>
+<td>Scope(s)</td>
+<td>com.hikky.editortutorialsystem</td>
+</tr>
+</tbody>
+</table>
 <h2 id="missing-components-after-version-update">Missing Components After Version Update</h2>
 <p>After committing a <a href="../AboutVketCloudSDK/SetupSDK_external.html">SDK version upgrade</a>, the components created in the previous version may be shown as Missing.</p>
 <p><img alt="VersionUpdateTroubleshooting_1" src="img/VersionUpdateTroubleshooting_1.jpg" /></p>
@@ -5714,6 +5794,13 @@ Taking a backup of the pre-updated world is <strong>strongly</strong> recommende
 <p><img alt="HEOWorldSetting_AvatarFileError_1" src="img/HEOWorldSetting_AvatarFileError_1.jpg" /></p>
 <p>As the SDK has a default avatarfile, select this file if there is an empty entry in the list after switching the version.</p>
 <p><img alt="HEOWorldSetting_AvatarFileError_2" src="img/HEOWorldSetting_AvatarFileError_2.jpg" /></p>
+<h2 id="vket-cloud-settings-are-empty-old-settings-from-heoworldsetting-and-other-components-do-not-exist">Vket Cloud Settings are empty / Old settings from HEOWorldSetting and other components do not exist</h2>
+<p>On Ver12.3 and later versions, settings in <a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>, <a href="../HEOComponents/HEOPlayer.html">HEOPlayer</a>, and <a href="../HEOComponents/HEODespawnHeight.html">HEODespawnHeight</a> have been migrated to
+ <a href="../VketCloudSettings/Overview.html">VketCloudSettings</a>.</p>
+<p>Although settings in the HEO components will be automatically migrated to VketCloudSettings, rare cases may occur causing settings to be empty as below:</p>
+<p><img alt="VersionUpdateTroubleshooting_8" src="img/VersionUpdateTroubleshooting_8.jpg" /></p>
+<p>This can be solved by resetting the settings values to default, by selecting the three-dot（…） button on the VketCloudSettings component, and selecting "Reset".</p>
+<p><a href="img/VersionUpdateTroubleshooting_9.jpg">VersionUpdateTroubleshooting_9</a></p>
 <h2 id="version-information-not-updated-on-settings-window-heliscript-and-gimmick-not-working">Version Information Not Updated on Settings Window / HeliScript and Gimmick not working</h2>
 <p>After updating an existing project to Ver9.3, the version information on the bottom right of the settings window may remain to be the older version after build.</p>
 <p><img alt="VersionUpdateTroubleshooting_2" src="img/VersionUpdateTroubleshooting_2.jpg" /></p>
