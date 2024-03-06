@@ -12,7 +12,7 @@ VketCloudSDK更新後、Unityの上部メニューからVketCloudSDKが本来表
 
 この場合、必須パッケージのバージョンの手動更新が必要な場合があるため、以下の手順で更新します。
 
-1. Projectウィンドウの任意の箇所にて"Show in Explorer"を選択し、現在のプロジェクトをエクスプローラーにて開きます。
+1. Projectウィンドウの任意の箇所にて右クリックして表示されたメニューにて"Show in Explorer"を選択し、現在のプロジェクトをエクスプローラーにて開きます。
 
     ![VersionUpdateTroubleshooting_11](img/VersionUpdateTroubleshooting_11.jpg)
 
@@ -82,7 +82,7 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 
 ## Vket Cloud Settingsにおける設定が空欄になっている / 旧バージョンのHEOWorldSettingコンポーネントから要素が引き継がれない
 
-Ver12.3以降、これまで[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), [HEOPlayer](../HEOComponents/HEOPlayer.md)、[HEODespawnHeight](../HEOComponents/HEODespawnHeight.md)コンポーネントにて設定していたワールドに関する設定は[VketCloudSettings](../VketCloudSettings/Overview.md)にて設定されるようになりました。
+Ver12.3以降、これまで[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)、[HEOPlayer](../HEOComponents/HEOPlayer.md)、[HEODespawnHeight](../HEOComponents/HEODespawnHeight.md)コンポーネントにて設定していたワールドに関する設定は[VketCloudSettings](../VketCloudSettings/Overview.md)にて設定されるようになりました。
 
 バージョンアップ時に旧HEOコンポーネントの設定内容は自動でVketCloudSettingsに移植されますが、稀に以下の画像のように正しい設定が移植されず、空欄のままになる場合があります。
 

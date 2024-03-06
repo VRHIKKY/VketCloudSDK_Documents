@@ -1,6 +1,50 @@
 # Version Update Troubleshooting
 
-##  Missing Components After Version Update
+This page lists troubles and solution that may happen when [updating the VketCloudSDK](../AboutVketCloudSDK/SetupSDK_external.html#installing-a-specified-version-updating-an-existing-sdk).
+
+If a trouble not listed / cannot be solved by solutions on this page happens on version updating, feel free to ask on the [contact form](https://www.hikky.co.jp/contact?type=service&category=general){target=_blank} or the [Vket Cloud community Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}.
+
+## VketCloudSDK tab not showing on the top menu
+
+After updating the VketCloudSDK, the VketCloudSDK tab may not be shown on the Unity editor's top menu as expected.
+
+![VersionUpdateTroubleshooting_10](img/VersionUpdateTroubleshooting_10.jpg)
+
+This can be solved by manually updating the required packages' version by the following procedure:
+
+1. Select "Show in Explorer" through the right-click menu on the Project window, which will open the current project on the explorer.
+
+    ![VersionUpdateTroubleshooting_11](img/VersionUpdateTroubleshooting_11.jpg)
+
+2. Move to the Packages folder containing the Manifest.json file, and open Manifest.json.
+
+    ![VersionUpdateTroubleshooting_12](img/VersionUpdateTroubleshooting_11.jpg)
+
+3. Check if the VketCloudSDK and related packages are on the correct versions in Manifest.json. 
+    For example, package versions must be as below for SDK Ver12.3.0:
+
+    ```
+
+    {
+    "dependencies": {
+    "com.hikky.editortutorialsystem": "1.0.1",
+    "com.hikky.vketcloudsdk": "12.3.0",
+    "com.needle.deeplink": "1.2.1",
+    // etc
+
+    ```
+
+If the Deeplink package does not exist in the project, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).
+
+Also, if the EditorTutorialSystem does not exist, add the package below following the instructions of [SDK Install Manager](../AboutVketCloudSDK/SetupSDK_external.md#step-2-register-registry-information).
+
+|  item  |  value  |
+| ---- | ---- |
+|  Name  |  EditorTutorialSystem  |
+|  URL  |  https://registry.npmjs.org  |
+|  Scope(s)  |  com.hikky.editortutorialsystem  |
+
+## Missing Components After Version Update
 
 After committing a [SDK version upgrade](../AboutVketCloudSDK/SetupSDK_external.md), the components created in the previous version may be shown as Missing.
 
@@ -34,6 +78,19 @@ If the HEOWorldSetting > Avatars > Avatar File settings is empty, or has no cont
 As the SDK has a default avatarfile, select this file if there is an empty entry in the list after switching the version.
 
 ![HEOWorldSetting_AvatarFileError_2](img/HEOWorldSetting_AvatarFileError_2.jpg)
+
+## Vket Cloud Settings are empty / Old settings from HEOWorldSetting and other components do not exist
+
+On Ver12.3 and later versions, settings in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), [HEOPlayer](../HEOComponents/HEOPlayer.md), and [HEODespawnHeight](../HEOComponents/HEODespawnHeight.md) have been migrated to
+ [VketCloudSettings](../VketCloudSettings/Overview.md).
+
+Although settings in the HEO components will be automatically migrated to VketCloudSettings, rare cases may occur causing settings to be empty as below:
+
+![VersionUpdateTroubleshooting_8](img/VersionUpdateTroubleshooting_8.jpg)
+
+This can be solved by resetting the settings values to default, by selecting the three-dot（…） button on the VketCloudSettings component, and selecting "Reset".
+
+[VersionUpdateTroubleshooting_9](img/VersionUpdateTroubleshooting_9.jpg)
 
 ## Version Information Not Updated on Settings Window / HeliScript and Gimmick not working
 
