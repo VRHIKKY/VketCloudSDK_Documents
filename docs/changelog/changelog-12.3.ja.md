@@ -101,6 +101,9 @@ Ver12.xにて追加されたHeliScriptへの変更を追記：
   - [組み込み型](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_var.html)
     - ToString関数を追記
 - トラブルシューティング
+  - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/troubleshooting/VersionUpdateTroubleshooting.html)
+    - メニューにてVketCloudSDKタブが表示されない際の解決策を追加
+    - HEOWorldSettingなどの設定がVketCloudSettingsに反映されない / 空欄になる場合の解決策を追加  
   - [UnityとVketCloudの見た目を揃える](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/heoexporter/he_align_unity_to_vketcloud.html)
     - 細かな整形と修正を追加
 - 機能廃止に伴い、以下のページにて新機能への誘導を追加

@@ -1,5 +1,50 @@
 # バージョンアップ後によくあるトラブル
 
+本ページでは、VketCloudSDKのバージョンを[新しいバージョンに更新](../AboutVketCloudSDK/SetupSDK_external.md#sdk)した際に発生する可能性のある現象と解決策を掲載しております。
+
+もしバージョンアップ作業時に本ページに掲載されていない / 解決できない現象に遭遇した際は、[お問い合わせフォーム](https://www.hikky.co.jp/contact?type=service&category=general){target=_blank}もしくは[Vket CloudコミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}にてお気軽にお問い合わせください。
+
+## メニューにVketCloudSDKタブが表示されない
+
+VketCloudSDK更新後、Unityの上部メニューからVketCloudSDKが本来表示されるべき位置に表示されなくなる場合があります。
+
+![VersionUpdateTroubleshooting_10](img/VersionUpdateTroubleshooting_10.jpg)
+
+この場合、必須パッケージのバージョンの手動更新が必要な場合があるため、以下の手順で更新します。
+
+1. Projectウィンドウの任意の箇所にて"Show in Explorer"を選択し、現在のプロジェクトをエクスプローラーにて開きます。
+
+    ![VersionUpdateTroubleshooting_11](img/VersionUpdateTroubleshooting_11.jpg)
+
+2. Manifest.jsonが格納されているPackagesフォルダまで遷移し、Manifest.jsonを開きます。
+
+    ![VersionUpdateTroubleshooting_12](img/VersionUpdateTroubleshooting_11.jpg)
+
+3. Manifest.jsonにて、VketCloudSDKに関するパッケージのバージョンが正しいものか確認します。
+
+    例として、SDK Ver12.3.0ではパッケージが以下のバージョンである必要があります：
+
+    ```
+
+    {
+    "dependencies": {
+    "com.hikky.editortutorialsystem": "1.0.1",
+    "com.hikky.vketcloudsdk": "12.3.0",
+    "com.needle.deeplink": "1.2.1",
+    //省略
+
+    ```
+
+上記にて列挙したSDK付随のパッケージのうち、Deeplinkパッケージがプロジェクトに存在しない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
+
+また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際は[SDK Install Manager](../AboutVketCloudSDK/SetupSDK_external.md#step-2)と同様の手順で以下のパッケージを導入してください。
+
+|  項目  |  値  |
+| ---- | ---- |
+|  Name  |  EditorTutorialSystem  |
+|  URL  |  https://registry.npmjs.org  |
+|  Scope(s)  |  com.hikky.editortutorialsystem  |  
+
 ## バージョンアップ後にComponentがMissingとして表示される
 
 [SDKのバージョンアップ](../AboutVketCloudSDK/SetupSDK_external.md)を行った際に、バージョンアップ前のコンポーネントがMissingとして表示される場合があります。
@@ -34,6 +79,18 @@ HEOWorldSetting > Avatars > Avatar Fileにて空欄がある、Avatar Fileが1�
 SDKでは初期状態のアバターとして用意しているAvatarFileがあるため、バージョンアップ後に空欄が発生している際はこちらをご利用ください。
 
 ![HEOWorldSetting_AvatarFileError_2](img/HEOWorldSetting_AvatarFileError_2.jpg)
+
+## Vket Cloud Settingsにおける設定が空欄になっている / 旧バージョンのHEOWorldSettingコンポーネントから要素が引き継がれない
+
+Ver12.3以降、これまで[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), [HEOPlayer](../HEOComponents/HEOPlayer.md)、[HEODespawnHeight](../HEOComponents/HEODespawnHeight.md)コンポーネントにて設定していたワールドに関する設定は[VketCloudSettings](../VketCloudSettings/Overview.md)にて設定されるようになりました。
+
+バージョンアップ時に旧HEOコンポーネントの設定内容は自動でVketCloudSettingsに移植されますが、稀に以下の画像のように正しい設定が移植されず、空欄のままになる場合があります。
+
+![VersionUpdateTroubleshooting_8](img/VersionUpdateTroubleshooting_8.jpg)
+
+このとき、該当のVketCloudSettingsコンポーネントの三点リーダー（…）を選択し、「Reset」を選択するとデフォルトの値が入力されます。
+
+![VersionUpdateTroubleshooting_9](img/VersionUpdateTroubleshooting_9.jpg)
 
 ## 設定画面でのバージョン表記が旧バージョンのままになっている / HeliScript・ギミックが動かない
 
