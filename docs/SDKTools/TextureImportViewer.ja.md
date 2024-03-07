@@ -2,7 +2,7 @@
 
 ![TextureImportViewer_1](img/TextureImportViewer_1.jpg)
 
-!!! bug "Ver9.11でのTexture Import Viewerの動作について"
+!!! bug "SDK Ver9.11でのTexture Import Viewerの動作について"
     SDK Ver9.11ではTexture Import Viewerは動作しない状態が確認されています。<br>
     恐れ入りますが、本機能を使用したい際は[Ver12.x以降のSDK](../AboutVketCloudSDK/SetupSDK_external.md#sdk)をご使用ください。
 

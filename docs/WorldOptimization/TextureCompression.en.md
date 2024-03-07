@@ -10,6 +10,10 @@ As future updates may involve automatic compression/formatting by server, the wo
 
 ![TextureImportViewer_1](../SDKTools/img/TextureImportViewer_1.jpg)
 
+!!! bug "Texture Import Viewer malfunction on SDK Ver9.11"
+    On SDK Ver9.11, the Texture Import Viewer is recognized to be malfunctioning.<br>
+    To use this feature, please consider [updating your SDK](../AboutVketCloudSDK/SetupSDK_external.md#installing-a-specified-version-updating-an-existing-sdk) to Ver12.x and later versions.
+
 [Texture Import Viewer](../SDKTools/TextureImportViewer.md) is a SDK Tool dedicated to view the project's texture import settings and compressed size as a list.
 
 On the Viewer, the texture can be sorted by size, name, etc., which import settings can be edited / exported by once.<br>
