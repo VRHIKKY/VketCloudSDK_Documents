@@ -116,6 +116,7 @@ plugins:
           Debug Mode: デバッグモード
           Debug Console: デバッグコンソール
           Debug Messages: デバッグメッセージ一覧
+          VketCloudSDK Settings : VketCloudSDK設定
           # 編集Tips
           World Editing Tips: 編集のためのTips
           Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
@@ -231,6 +232,7 @@ nav:
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
+    - VketCloudSDK Settings : SDKTools/VketCloudSDK 
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
