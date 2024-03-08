@@ -51,6 +51,8 @@
     - Added file format for audio files
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOField.html)
     - Added information of Tips on using HEOField page
+  - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOVideoTrigger.html)
+    - Updated usage and settings according to Ver9.11 environment
 - Actions
   - [Motion](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/Actions/Avatar/Motion.html)
     - Edited details on how to implement action
