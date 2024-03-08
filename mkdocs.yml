@@ -76,7 +76,7 @@ plugins:
           Setup SDK: SDKの導入方法
           How to use avatar: アバターの使用方法
           Essential Objects: ワールドの基本要素
-          Skybox: スカイボックス設定
+          Setting up a Skybox: スカイボックス設定
           Statements And Flow Control: 文法・制御構文
           Declarations and definitions: 定義・宣言
           Control Statement: 制御構文
@@ -179,7 +179,7 @@ nav:
     - World Upload : FirstStep/WorldUpload.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
-    - Skybox : WorldMakingGuide/Skybox.md 
+    - Setting up a Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
     - Tips on using HEOField: WorldMakingGuide/HEOFieldTips.md

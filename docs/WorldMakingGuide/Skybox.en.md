@@ -1,15 +1,34 @@
-# Skybox
+# Setting up a Skybox
+
+![Skybox_1](img/Skybox_1.jpg)
+
+VketCloudSDK cannot handle a Unity Skybox. Therefore, a Box or Sphere object with a reversed normal can be used as a pseudo-Skybox instead.
+
+While an object with reversed normal is usually created by using Blender and other 3D modeling software, the SDK has a Skybox object in its tutorial scene, which can be used in your creation by placing the object / replacing texture in your project.
+
+## How to setup a background
+
+1. Select the tutorial scene (Basic) in the SDK settings (VketCloudSDK menu > Settings), which will download the tutorial scene data and related assets.
+    ![Skybox_2](img/Skybox_2.jpg)
+
+2. The Skybox object used in the tutorial scene is located in "Assets > Samples > Vket Cloud SDK > 9.11.1 > Tutorial -basic- > Used Files > Models".
+    Select the "Sky_Sphere" object in the "Models" folder and drag & drop to place it in your scene.
+
+    ![Skybox_3](img/Skybox_3.jpg)
+
+3. The scale of the Sky_Sphere can be edited in the Inspector. Also, the texture can be replaced by your own by editing the Skybox material located in the Inspector.
+    ![Skybox_4](img/Skybox_4.jpg)
+
+4. Build & Run to see the Skybox in scene.
+    ![Skybox_5](img/Skybox_5.jpg)
+
+## Tips
+
+By selecting "Unlit/Texture" for the material shader, the Skybox object will be displayed without shadows.
+
+![Skybox_1](img/Skybox_1.jpg)
 
 !!! note "about HEOBackgroundTexture"
-    As an alternative method to setup background, the [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md) component can be used to designate background textures.
+    As an alternative method to setup a background, the [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md) component can be used to designate background textures.
 
-VketCloudSDK cannot output Unity SkyBox. Therefore, instead, we need to place a Box or Sphere object whose face is reversed and output it as a pseudo skybox.
-
-!!! note
-     If you select "Unlit/Texture" for the material shader, the object will be displayed as is, without shadows.
-
-    ![Skybox](img/Skybox.jpg)
-
-     You can obtain and use the Skybox sample by installing the tutorial scene (Basic) from the control panel (VketCloudSDK menu > Control Panel).
-
-    ![ControlPanel](img/ControlPanel.jpg)
+    ![HEOBackgroundTexture_2](../HEOComponents/img/HEOBackgroundTexture_2.jpg)

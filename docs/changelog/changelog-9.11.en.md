@@ -40,6 +40,7 @@
     - Added Translation
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/Skybox.html)
     - Added guide to HEOBackgroundTexture as an alternative implementation
+    - Edited setup instructions according to Ver9.11 environment
   - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/PresetAvatar.html)
     - Added caution on editing preset avatar files
 - Troubleshooting
