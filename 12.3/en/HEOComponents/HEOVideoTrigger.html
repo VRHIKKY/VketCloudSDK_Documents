@@ -705,7 +705,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/Skybox.html" class="md-nav__link">
-        Skybox
+        Setting up a Skybox
       </a>
     </li>
   
@@ -1918,8 +1918,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
+  <a href="#how-to-use" class="md-nav__link">
+    How to Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-settings" class="md-nav__link">
+    Basic Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings-thumbnail-tool" class="md-nav__link">
+    Advanced Settings / Thumbnail Tool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-format" class="md-nav__link">
+    Video Format
   </a>
   
 </li>
@@ -1939,8 +1960,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-video-files-to-use" class="md-nav__link">
-    About video files to use
+  <a href="#notes" class="md-nav__link">
+    Notes
   </a>
   
 </li>
@@ -5633,8 +5654,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
+  <a href="#how-to-use" class="md-nav__link">
+    How to Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-settings" class="md-nav__link">
+    Basic Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings-thumbnail-tool" class="md-nav__link">
+    Advanced Settings / Thumbnail Tool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-format" class="md-nav__link">
+    Video Format
   </a>
   
 </li>
@@ -5654,8 +5696,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-video-files-to-use" class="md-nav__link">
-    About video files to use
+  <a href="#notes" class="md-nav__link">
+    Notes
   </a>
   
 </li>
@@ -5674,60 +5716,94 @@
                 
                 
                 <h1 id="heovideotrigger">HEOVideoTrigger</h1>
-<p><img alt="HEOVideoTrigger" src="img/HEOVideoTrigger.jpg" /></p>
-<p>HEOVideoTrigger is used to play a video in the world.</p>
+<p><img alt="HEOVideoTrigger_1" src="img/HEOVideoTrigger_1.jpg" /></p>
+<p>HEOVideoTrigger is used to play a video clip.</p>
+<h2 id="how-to-use">How to Use</h2>
+<p>When placing an object with the HEOVideoTrigger attached (with Autoplay disabled), the thumbnail with a play button icon will be displayed.</p>
+<p>This thumbnail material with a play button can be generated using the later mentioned Thumbnail Tool.</p>
+<p><img alt="HEOVideoTrigger_4" src="img/HEOVideoTrigger_4.jpg" /></p>
+<p>Selecting the object will begin playing the video.</p>
+<p>Selecting the object during the video playing will stop the video and return to displaying the thumbnail. This function is same even when Autoplay is enabled.</p>
+<p><img alt="HEOVideoTrigger_5" src="img/HEOVideoTrigger_5.jpg" /></p>
+<hr />
+<h2 id="basic-settings">Basic Settings</h2>
+<p><img alt="HEOVideoTrigger_1" src="img/HEOVideoTrigger_1.jpg" /></p>
 <table>
 <thead>
 <tr>
 <th>Label</th>
+<th>Initial Value</th>
 <th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Enable</td>
-<td>Toggles the clickability of the HEOVideoTrigger.</td>
+<td>true</td>
+<td>Enable/disable the click to play for HEOVideoTrigger.</td>
 </tr>
 <tr>
 <td>Video Material</td>
+<td>VideoPlayer</td>
 <td>Specify the material where the video will be displayed.</td>
 </tr>
 <tr>
 <td>Video Path Mode</td>
-<td>Specify how to find the path to video data. <br> <code>Clip Mode</code>: designates a video file to be played from the Asset folder. <br> <code>String Mode</code>: designates a video file via string input (e.g. URLs, directory, etc. ).</td>
+<td>Clip Mode / SampleVideo</td>
+<td>Specify the path of the video data. By default, a SampleVideo in the SDK will be designated. <br> <code>Clip Mode</code>: designates a video file to be played from the Asset folder. <br> <code>String Mode</code>: designates a video file via string input (e.g. URLs, directory, etc. ).</td>
+</tr>
+<tr>
+<td>Scene Preview</td>
+<td></td>
+<td>Clicking this will play the video in Scene as a preview.</td>
 </tr>
 <tr>
 <td>Autoplay</td>
+<td>false</td>
 <td>Specify whether to automatically play the video.<br>Each scene enables a single video to be played at a time. <br> If more than two objects are designated as <code>True</code>, only the last one will be played.</td>
 </tr>
 <tr>
 <td>Loop</td>
+<td>false</td>
 <td>Specify whether the video should loop at the end.</td>
-</tr>
-<tr>
-<td>Access in HEOObject</td>
-<td>Mode to access a material in <a href="HEOObject.html">HEOObject</a> for displaying the video. <br> On setting this to <code>true</code>, specify the target material name on <code>Target Object Name</code>.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="notes">Notes</h2>
-<p>Make sure to add a <a href="HEOField.html">HEOField</a>, for this component alone cannot pack video files into .heo. </br></p>
-<p>VketCloudSDK enables only a single video to be played at a time.
-To make a pseudo-display of multiple videos, split the display within one video to two, and designate the display range within the screen's material.<br></p>
-<p>If you don't set autoplay, you need to control the start of playback by some means, such as an action. </br>
-The below image uses <a href="HEOActionTrigger.html">HEOActionTrigger</a> to implement video playback on click.</p>
-<p><img alt="HEOVideoTrigger" src="img/HEOVideoTriggerAdd.jpg" /></p>
-<h2 id="about-video-materials">About Video Materials</h2>
-<p>The Shader of the material needs to be Unlit/Texture.</p>
-<h2 id="about-videopathmode">About VideoPathMode</br></h2>
-<p>ClipMode refers to data inside the project. </br>
-StringMode refers to the specified URL. It can be used for video streaming, etc.</p>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>StringMode is currently able only for internal developers. </p>
-<p>For playing videos, please use the ClipMode.</p>
-</div>
-<h2 id="about-video-files-to-use">About video files to use</h2>
+<h2 id="advanced-settings-thumbnail-tool">Advanced Settings / Thumbnail Tool</h2>
+<p><img alt="HEOVideoTrigger_2" src="img/HEOVideoTrigger_2.jpg" /></p>
+<p>The Thumbnail Tool generates a video thumbnail, which is made by designating a thumbnail image and a playbutton icon.</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Initial Value</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access in HEOObject</td>
+<td>false</td>
+<td>Mode to access a material in <a href="HEOObject.html">HEOObject</a> for displaying the video. <br> On setting this to <code>true</code>, specify the target material name on <code>Target Object Name</code>.</td>
+</tr>
+<tr>
+<td>Thumbnail Texture</td>
+<td></td>
+<td>Designate a image for video thumbnail.</td>
+</tr>
+<tr>
+<td>PlayButton Texture</td>
+<td>playbutton.png</td>
+<td>Designate a playbutton icon to be on the thumbnail image.</td>
+</tr>
+<tr>
+<td>Generate Thumbnail Material</td>
+<td></td>
+<td>Generate a new thumbnail png image and material using images from Thumbnail Texture and PlayButton Texture. <br>Saving the generated image and material will automatically allocate them to the Video object.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="video-format">Video Format</h2>
 <p>Please follow the format below.</p>
 <table>
 <thead>
@@ -5759,10 +5835,33 @@ StringMode refers to the specified URL. It can be used for video streaming, etc.
 </tr>
 </tbody>
 </table>
+<h2 id="about-video-materials">About Video Materials</h2>
+<p>The Shader of the material needs to be Unlit/Texture.</p>
+<h2 id="about-videopathmode">About VideoPathMode</h2>
+<p>ClipMode refers to data inside the project.<br>
+StringMode refers to the specified URL. It can be used for video streaming, etc.</p>
 <div class="admonition note caution">
 <p class="admonition-title">Note</p>
-<p>The SDK does not support distance falloff for video audio.</p>
-<p>As an alternative implementation, the <a href="HEOAreacollider.html">HEOAreaCollider</a> can be used to stop the video when the player goes out from a certain range.</p>
+<p>StringMode is currently able only for internal developers.<br>
+For playing videos, please use the ClipMode.</p>
+</div>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>
+<p>Please Make sure to include this object under an object with <a href="HEOField.html">HEOField</a>, as this object will not be displayed unless included into another Item. </br></p>
+</li>
+<li>
+<p>VketCloudSDK enables only a single video to be played at a time.<br>To make a pseudo-display of multiple videos, split the display within one video to two, and designate the display range within the screen's material.</p>
+</li>
+<li>
+<p>If you don't set autoplay, you need to control the start of playback by some means, such as an action.<br>The below image uses <a href="HEOActionTrigger.html">HEOActionTrigger</a> to implement video playback on click.</p>
+</li>
+</ul>
+<p><img alt="HEOVideoTrigger_3" src="img/HEOVideoTrigger_3.jpg" /></p>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>The SDK does not support distance falloff for video audio.<br>
+As an alternative implementation, the <a href="HEOAreacollider.html">HEOAreaCollider</a> can be used to stop the video when the player goes out from a certain range.</p>
 </div>
                 
               

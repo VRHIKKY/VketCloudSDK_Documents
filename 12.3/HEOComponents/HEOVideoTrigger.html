@@ -1919,7 +1919,28 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    注意事項
+    使い方
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    設定項目
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thumbnail-tool" class="md-nav__link">
+    詳細設定 / Thumbnail Tool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    使用する動画ファイルについて
   </a>
   
 </li>
@@ -1939,8 +1960,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    使用する動画ファイルについて
+  <a href="#_4" class="md-nav__link">
+    注意事項
   </a>
   
 </li>
@@ -5634,7 +5655,28 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    注意事項
+    使い方
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    設定項目
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thumbnail-tool" class="md-nav__link">
+    詳細設定 / Thumbnail Tool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    使用する動画ファイルについて
   </a>
   
 </li>
@@ -5654,8 +5696,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    使用する動画ファイルについて
+  <a href="#_4" class="md-nav__link">
+    注意事項
   </a>
   
 </li>
@@ -5674,60 +5716,94 @@
                 
                 
                 <h1 id="heovideotrigger">HEOVideoTrigger</h1>
-<p><img alt="HEOVideoTrigger" src="img/HEOVideoTrigger.jpg" /></p>
+<p><img alt="HEOVideoTrigger_1" src="img/HEOVideoTrigger_1.jpg" /></p>
 <p>HEOVideoTriggerは動画を再生するために使用します。</p>
+<h2 id="_1">使い方</h2>
+<p>Autoplayが無効な初期状態でHEOVideoTriggerをアタッチしたオブジェクトをワールドに設置すると、画像のようにサムネイルと再生ボタンアイコンが重なったマテリアルが表示されます。</p>
+<p>サムネイルと再生ボタンアイコンが重なった状態のマテリアルは後述のThumbnail Toolによって作成できます。</p>
+<p><img alt="HEOVideoTrigger_4" src="img/HEOVideoTrigger_4.jpg" /></p>
+<p>上記の状態でオブジェクトを選択すると、動画の再生が開始されます。</p>
+<p>動画再生中にオブジェクトを選択すると、動画再生を終了しサムネイル表示に戻ります。なお、本挙動はAutoplayが有効な時も同様です。</p>
+<p><img alt="HEOVideoTrigger_5" src="img/HEOVideoTrigger_5.jpg" /></p>
+<hr />
+<h2 id="_2">設定項目</h2>
+<p><img alt="HEOVideoTrigger_1" src="img/HEOVideoTrigger_1.jpg" /></p>
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>詳細</th>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Enable</td>
+<td>true</td>
 <td>ビデオトリガーのクリック判定を有効にします。</td>
 </tr>
 <tr>
 <td>Video Material</td>
+<td>VideoPlayer</td>
 <td>動画を表示するマテリアルを指定します。</td>
 </tr>
 <tr>
 <td>Video Path Mode</td>
-<td>ビデオのパスを指定します。<br> Clip Mode：Asset上の動画ファイルを指定するためのモードです。<br> String Mode：URL等、文字列で指定するためのモードです。</td>
+<td>Clip Mode / SampleVideo</td>
+<td>ビデオのパスを指定します。初期状態ではSDK内蔵のSampleVideoが設定されています。<br> Clip Mode：Asset上の動画ファイルを指定するためのモードです。<br> String Mode：URL等、文字列で指定するためのモードです。</td>
+</tr>
+<tr>
+<td>Scene Preview</td>
+<td></td>
+<td>クリックすると動作確認としてSceneにて動画を再生します。</td>
 </tr>
 <tr>
 <td>Autoplay</td>
+<td>false</td>
 <td>動画を自動で再生するか指定します。<br>シーン上で同時に再生可能なビデオは1つのみです。<br> シーン上にこれをTrueにしたオブジェクトが2つ以上ある場合、最後のもののみが流れます。</td>
 </tr>
 <tr>
 <td>Loop</td>
+<td>false</td>
 <td>動画が終了した際にループ再生するか指定します。</td>
-</tr>
-<tr>
-<td>Access in HEOObject</td>
-<td>映像反映対象を<a href="HEOObject.html">HEOObject</a>内のマテリアルにするためのモードです。<br> <code>True</code>にした場合に表示される<code>Target Object Name</code>には、対象となるマテリアル名を記載してください。</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_1">注意事項</h2>
-<p>本コンポーネントだけでは動画ファイルを.heoにパッキングすることができないため、<a href="HEOField.html">HEOField</a>を必ず追加してください。</br></p>
-<p>VketCloudSDKでは複数のビデオを同時に再生できない仕様です。
-複数のビデオを同時に再生しているように見せかけたい場合、動画ファイル内で画面分割を行い、映し出す側のスクリーンで動画の映し出す範囲を調整することで可能です。<br></p>
-<p>autoplayを設定しない場合にはアクション等いずれかの手段で再生開始をコントロールする必要があります。</br>
-画像では<a href="HEOActionTrigger.html">HEOActionTrigger</a>を使用したクリックによる動画再生を実装しています。</p>
-<p><img alt="HEOVideoTrigger" src="img/HEOVideoTriggerAdd.jpg" /></p>
-<h2 id="videomaterial">VideoMaterialについて</h2>
-<p>マテリアルに使用するShaderはUnlit/Textureである必要があります。</p>
-<h2 id="videopathmode">VideoPathModeについて</br></h2>
-<p>ClipModeはプロジェクトの内部にあるデータを参照します。</br>
-StringModeはURLを指定して参照します。動画ストリーミング等に利用できます。</p>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>StringModeは現在内部開発者向けの機能となっております。</p>
-<p>動画を再生する際はClipModeをご利用ください。</p>
-</div>
-<h2 id="_2">使用する動画ファイルについて</h2>
+<h2 id="thumbnail-tool">詳細設定 / Thumbnail Tool</h2>
+<p><img alt="HEOVideoTrigger_2" src="img/HEOVideoTrigger_2.jpg" /></p>
+<p>Thumbnail Toolでは動画再生前のサムネイルとして、サムネイル画像と再生アイコンを重ねたテクスチャが割り当てられたマテリアルを作成できます。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access in HEOObject</td>
+<td>false</td>
+<td>映像反映対象を<a href="HEOObject.html">HEOObject</a>内のマテリアルにするためのモードです。<br> <code>True</code>にした場合に表示される<code>Target Object Name</code>には、対象となるマテリアル名を記載してください。</td>
+</tr>
+<tr>
+<td>Thumbnail Texture</td>
+<td></td>
+<td>動画のサムネイルとなる画像を指定します。</td>
+</tr>
+<tr>
+<td>PlayButton Texture</td>
+<td>playbutton.png</td>
+<td>サムネイルの上に重ねる再生アイコンを指定します。</td>
+</tr>
+<tr>
+<td>Generate Thumbnail Material</td>
+<td></td>
+<td>Thumbnail Texture と PlayButton Textureを重ねたpng画像とマテリアルを生成します。<br>サムネイル画像とマテリアルを保存するとVideoTriggerのサムネイルとして自動で設定されます。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">使用する動画ファイルについて</h2>
 <p>以下のフォーマットに従ってください。</p>
 <table>
 <thead>
@@ -5759,10 +5835,34 @@ StringModeはURLを指定して参照します。動画ストリーミング等�
 </tr>
 </tbody>
 </table>
+<h2 id="videomaterial">VideoMaterialについて</h2>
+<p>マテリアルに使用するShaderはUnlit/Textureである必要があります。</p>
+<h2 id="videopathmode">VideoPathModeについて</h2>
+<p>ClipModeはプロジェクトの内部にあるデータを参照します。<br>
+StringModeはURLを指定して参照します。動画ストリーミング等に利用できます。</p>
 <div class="admonition note caution">
 <p class="admonition-title">Note</p>
-<p>動画音声は距離減衰に対応していません。</p>
-<p>代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は<a href="HEOAreacollider.html">HEOAreaCollider</a>を使用してください。</p>
+<p>StringModeは現在内部開発者向けの機能となっております。<br>
+動画を再生する際はClipModeをご利用ください。</p>
+</div>
+<h2 id="_4">注意事項</h2>
+<ul>
+<li>
+<p>本コンポーネントだけでは動画オブジェクトをItemとして表示できないため、<a href="HEOField.html">HEOField</a>下に必ず配置してください。</p>
+</li>
+<li>
+<p>VketCloudSDKでは複数のビデオを同時に再生できない仕様です。<br>複数のビデオを同時に再生しているように見せかけたい場合、動画ファイル内で画面分割を行い、映し出す側のスクリーンで動画の映し出す範囲を調整することで可能です。</p>
+</li>
+<li>
+<p>EnableとAutoplayが無効な場合にはアクション等いずれかの手段で再生開始をコントロールする必要があります。<br></p>
+</li>
+</ul>
+<p>以下の画像では<a href="HEOActionTrigger.html">HEOActionTrigger</a>を使用したクリックによる動画再生を実装しています。</p>
+<p><img alt="HEOVideoTrigger_3" src="img/HEOVideoTrigger_3.jpg" /></p>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>動画音声は距離減衰に対応していません。<br>
+代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は<a href="HEOAreacollider.html">HEOAreaCollider</a>と<a href="../Actions/System/StopVideo.html">StopVideoアクション</a>を使用してください。</p>
 </div>
                 
               

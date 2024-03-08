@@ -18,7 +18,7 @@
     
     
       
-        <title>Skybox - VketCloudSDK Manual</title>
+        <title>Setting up a Skybox - VketCloudSDK Manual</title>
       
     
     
@@ -96,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#skybox" class="md-skip">
+        <a href="#setting-up-a-skybox" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Skybox
+              Setting up a Skybox
             
           </span>
         </div>
@@ -715,9 +715,46 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Setting up a Skybox
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="Skybox.html" class="md-nav__link md-nav__link--active">
-        Skybox
+        Setting up a Skybox
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-setup-a-background" class="md-nav__link">
+    How to setup a background
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    Tips
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5575,6 +5612,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-setup-a-background" class="md-nav__link">
+    How to setup a background
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    Tips
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5586,24 +5645,42 @@
               
                 
                 
-                <h1 id="skybox">Skybox</h1>
+                <h1 id="setting-up-a-skybox">Setting up a Skybox</h1>
+<p><img alt="Skybox_1" src="img/Skybox_1.jpg" /></p>
+<p>VketCloudSDK cannot handle a Unity Skybox. Therefore, a Box or Sphere object with a reversed normal can be used as a pseudo-Skybox instead.</p>
+<p>While an object with reversed normal is usually created by using Blender and other 3D modeling software, the SDK has a Skybox object in its tutorial scene, which can be used in your creation by placing the object / replacing texture in your project.</p>
+<h2 id="how-to-setup-a-background">How to setup a background</h2>
 <div class="admonition note">
 <p class="admonition-title">Adding Skybox and Background Texture using Quick Menu</p>
 <p>On Ver12.3, a new quick menu feature has been added, which includes easier Skybox and Background Texture setup. <br>
 For details, refer to <a href="../WorldEditingTips/QuickMenu.html">Quick Menu for adding Vket Cloud objects</a>.</p>
 </div>
+<ol>
+<li>
+<p>Select the tutorial scene (Basic) in the VketCloudSDK menu &gt; Tutorials &gt; Tutorial -Basic-, which will download the tutorial scene data and related assets.
+    <img alt="Skybox_2" src="img/Skybox_2.jpg" /></p>
+</li>
+<li>
+<p>The Skybox object used in the tutorial scene is located in "Assets &gt; Samples &gt; Vket Cloud SDK &gt; [Current_SDK_Version] &gt; Tutorial -basic- &gt; Used Files &gt; Models".
+    Select the "Sky_Sphere" object in the "Models" folder and drag &amp; drop to place it in your scene.</p>
+<p><img alt="Skybox_3" src="img/Skybox_3.jpg" /></p>
+</li>
+<li>
+<p>The scale of the Sky_Sphere can be edited in the Inspector. Also, the texture can be replaced by your own by editing the Skybox material located in the Inspector.
+    <img alt="Skybox_4" src="img/Skybox_4.jpg" /></p>
+</li>
+<li>
+<p>Build &amp; Run to see the Skybox in scene.
+    <img alt="Skybox_5" src="img/Skybox_5.jpg" /></p>
+</li>
+</ol>
+<h2 id="tips">Tips</h2>
+<p>By selecting "Unlit/Texture" for the material shader, the Skybox object will be displayed without shadows.</p>
+<p><img alt="Skybox_1" src="img/Skybox_1.jpg" /></p>
 <div class="admonition note">
 <p class="admonition-title">about HEOBackgroundTexture</p>
-<p>As an alternative method to setup background, the <a href="../HEOComponents/HEOBackgroundTexture.html">HEOBackgroundTexture</a> component can be used to designate background textures.</p>
-</div>
-<hr />
-<p>VketCloudSDK cannot output Unity SkyBox. Therefore, instead, we need to place a Box or Sphere object whose face is reversed and output it as a pseudo skybox.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you select "Unlit/Texture" for the material shader, the object will be displayed as is, without shadows.</p>
-<p><img alt="Skybox" src="img/Skybox.jpg" /></p>
-<p>You can obtain and use the Skybox sample by installing the tutorial scene (Basic) from the control panel (VketCloudSDK menu &gt; Control Panel).</p>
-<p><img alt="ControlPanel" src="img/ControlPanel.jpg" /></p>
+<p>As an alternative method to setup a background, the <a href="../HEOComponents/HEOBackgroundTexture.html">HEOBackgroundTexture</a> component can be used to designate background textures.</p>
+<p><img alt="HEOBackgroundTexture_2" src="../HEOComponents/img/HEOBackgroundTexture_2.jpg" /></p>
 </div>
                 
               
