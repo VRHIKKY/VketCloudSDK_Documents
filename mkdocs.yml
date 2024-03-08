@@ -90,7 +90,7 @@ plugins:
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
           Reflection Probe: リフレクションプローブ
-          Skybox: スカイボックス設定
+          Setting up a Skybox: スカイボックス設定
           Texture Compression: テクスチャ圧縮
           How to use Colliders / Tips: コライダーの使い方 / Tips
           Physics Engine: 物理エンジンの使い方
@@ -203,7 +203,7 @@ nav:
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
-    - Skybox : WorldMakingGuide/Skybox.md 
+    - Setting up a Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
     - Tips on using HEOField: WorldMakingGuide/HEOFieldTips.md
