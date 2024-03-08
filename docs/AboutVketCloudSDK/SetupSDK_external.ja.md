@@ -3,15 +3,17 @@
 
 VketCloudSDKをインストールするには、はじめにUnityのPackage Managerを使用し、SDKインストールウィザードを導入します。  
 
-## Step 1. Unityでプロジェクトを開く  
+## Step 1. Unityでプロジェクトを開く
 
 対応しているバージョン（[動作環境](OperatingEnvironment.md){target=_blank}）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。
 
-!!! note caution
-    プロジェクト名にスペースを入れるとビルドに失敗する場合があります。<br>
+!!! caution "プロジェクト名・プロジェクトパスの名前について"
+    プロジェクト名およびプロジェクトディレクトリにスペースを入れるとビルドに失敗する場合があります。<br>
     また、日本語など2バイト文字の使用も避けることをおすすめします。
 
     OK例) MyProject　　NG例) My Project , マイ　プロジェクト
+
+![SetupSDK_FullWidthNG](img/SetupSDK_FullWidthNG.jpg)
 
 ---
 
@@ -201,15 +203,14 @@ manifest.json内の`"com.hikky.vketcloudsdk"`の右側を使用したいバー�
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-
-!!! note caution
+!!! caution "UnityメニューにてVketCloudSDKが表示されない場合は"
       UnityのメニューにVketCloudSDKが表示されない場合は、再起動すると表示される場合があります。<br>
       上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
-      
+
       また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際はStep 2.と同じ手順で以下のパッケージを導入してください。
 
 |  項目  |  値  |
 | ---- | ---- |
 |  Name  |  EditorTutorialSystem  |
 |  URL  |  https://registry.npmjs.org  |
-|  Scope(s)  |  com.hikky.editortutorialsystem  |  
+|  Scope(s)  |  com.hikky.editortutorialsystem  |
