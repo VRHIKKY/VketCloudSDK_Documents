@@ -37,6 +37,7 @@
     - 階段にコライダーを設定する際のTipsを追加
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/Skybox.html)
     - Skyboxの代替実装としてHEOBackgroundTextureを追記
+    - Ver9.11における設定方法を追記
   - [プリセットアバターを追加する](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/PresetAvatar.html)
     - プリセットアバター編集時の注意を追加
 - トラブルシューティング
