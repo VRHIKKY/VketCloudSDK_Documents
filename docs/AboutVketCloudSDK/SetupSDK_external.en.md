@@ -11,7 +11,7 @@ Select "3D" as the template.
     If a space is included in the project / project path (directory) name, it may cause build errors and other unexpected issues. <br>
     Also avoid using full-width characters such as CJK characters.
 
-    OK例) MyProject　　NG例) My Project , マイ　プロジェクト
+    OK) MyProject　　NG) My Project , マイ　プロジェクト
 
 ![SetupSDK_FullWidthNG](img/SetupSDK_FullWidthNG.jpg)
 
