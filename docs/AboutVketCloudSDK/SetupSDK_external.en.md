@@ -2,18 +2,18 @@
 
 To install the VketCloudSDK, the Unity Package Manager and the VketCloudSDK install wizard is required.
   
----
-
 ## Step 1. Open a project in Unity
 
-Open a project of a supported version ([Unity Pre-prep](OperatingEnvironment.md){target=_blank}) or create a new project.
-Select "3D" as the template, if you need one.
+Open a project created using a supported Unity version ([Unity Pre-prep](OperatingEnvironment.md){target=_blank}) or create a new project.
+Select "3D" as the template.
 
-!!! note caution
-    If you put a space in the project name, it may cause build failures and other issues. <br>
-    We advise to avoid using full-width characters such as CJK characters.
+!!! caution "Notes about project names and path (directory) names"
+    If a space is included in the project / project path (directory) name, it may cause build errors and other unexpected issues. <br>
+    Also avoid using full-width characters such as CJK characters.
 
-    OK) MyProject NG) My Project , マイ　プロジェクト
+    OK例) MyProject　　NG例) My Project , マイ　プロジェクト
+
+![SetupSDK_FullWidthNG](img/SetupSDK_FullWidthNG.jpg)
 
 ---
 
@@ -209,11 +209,11 @@ By editing the version number on the right side of `"com.hikky.vketcloudsdk"`, t
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! note 
+!!! caution "Solution to VketCloudSDK not showing on Unity menu"
       If VketCloudSDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
       One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
       If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
-      
+
       As the EditorTutorialSystem may also rarely fail to be imported automatically, add the package below following the instructions on [Step 2.](#step-2-register-registry-information) on such occurence.
 
 |  item  |  value  |
