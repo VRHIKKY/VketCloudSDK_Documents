@@ -51,6 +51,13 @@
     - オーディオファイルのフォーマットについて追記
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOField.html)
     - HEOFieldの使い方への誘導を追加
+  - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOVideoTrigger.html)
+    - 使い方と設定方法をVer9.11準拠に更新
+- アクション
+  - [Motion](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ja/Actions/Avatar/Motion.html)
+    - 設定方法について修正・加筆
+  - [NextMotion](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ja/Actions/Avatar/NextMotion.html)
+    - 設定方法について修正・加筆
 - HeliScript
   - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/hs/hs_component.html)
     - Ver9.11にて使用できるコールバック関数を追記
