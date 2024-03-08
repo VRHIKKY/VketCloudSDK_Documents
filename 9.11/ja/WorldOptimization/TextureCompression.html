@@ -812,6 +812,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -987,6 +989,20 @@
     <li class="md-nav__item">
       <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
         Export Compressed Texture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/TextureImportViewer.html" class="md-nav__link">
+        Texture Import Viewer
       </a>
     </li>
   
@@ -1193,6 +1209,26 @@
   <a href="#_2" class="md-nav__link">
     テクスチャ圧縮を行う方法
   </a>
+  
+    <nav class="md-nav" aria-label="テクスチャ圧縮を行う方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-import-viewer" class="md-nav__link">
+    Texture Import Viewer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-compressed-texture" class="md-nav__link">
+    Export Compressed Texture
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5154,6 +5190,26 @@
     テクスチャ圧縮を行う方法
   </a>
   
+    <nav class="md-nav" aria-label="テクスチャ圧縮を行う方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-import-viewer" class="md-nav__link">
+    Texture Import Viewer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-compressed-texture" class="md-nav__link">
+    Export Compressed Texture
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -5173,6 +5229,19 @@
 <p>Vket Cloudでは、ワールド内のオブジェクトやアバターに使用されているテクスチャの容量を削減することで、ワールド読み込み時にかかる処理時間を大きく改善させることができます。</p>
 <p>将来のアップデートによってサーバー側で画像の自動圧縮・フォーマットが行われる予定ですが、ワールドの実装者が画像の最適化を行うことで、より多様なPC・スマートフォンのスペック環境にて快適な動作を実現できます。</p>
 <h2 id="_2">テクスチャ圧縮を行う方法</h2>
+<h3 id="texture-import-viewer">Texture Import Viewer</h3>
+<p><img alt="TextureImportViewer_1" src="../SDKTools/img/TextureImportViewer_1.jpg" /></p>
+<div class="admonition bug">
+<p class="admonition-title">Ver9.11でのTexture Import Viewerの動作について</p>
+<p>SDK Ver9.11ではTexture Import Viewerは動作しない状態が確認されています。<br>
+恐れ入りますが、本機能を使用したい際は<a href="../AboutVketCloudSDK/SetupSDK_external.html#sdk">Ver12.x以降のSDK</a>をご使用ください。</p>
+</div>
+<p><a href="../SDKTools/TextureImportViewer.html">Texture Import Viewer</a>は、プロジェクト内にあるテクスチャのインポート設定や圧縮サイズなどを一覧で確認できるVketCloudSDK独自のビューワーツールです。</p>
+<p>Viewer上からテクスチャのインポート設定をまとめて変更したり、あるいは容量順に並び替えたりすることもできます。<br>
+また、リスト上で各テクスチャ設定項目を編集し、設定をまとめて保存もしくは後述の<a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>と同じ手法でテクスチャファイルのエクスポート・画像差し替えが行えます。</p>
+<p>まとめて画像の再フォーマットを行いたい際に便利なツールです。</p>
+<p>詳細な操作方法については<a href="../SDKTools/TextureImportViewer.html">Texture Import Viewer</a>をご参照ください。</p>
+<h3 id="export-compressed-texture">Export Compressed Texture</h3>
 <p><img alt="ExportCompressedTexture_1" src="../SDKTools/img/ExportCompressedTexture_1.jpg" /></p>
 <p>VketCloudSDKでは、テクスチャ圧縮・フォーマットツールとして<a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>が用意されています。</p>
 <p>本ツールはテクスチャ画像に設定されている<a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a>を基に圧縮された画像を生成するものです。</p>

@@ -541,7 +541,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/Skybox.html" class="md-nav__link">
-        Skybox
+        Setting up a Skybox
       </a>
     </li>
   
@@ -812,6 +812,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -987,6 +989,20 @@
     <li class="md-nav__item">
       <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
         Export Compressed Texture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/TextureImportViewer.html" class="md-nav__link">
+        Texture Import Viewer
       </a>
     </li>
   
@@ -1193,6 +1209,26 @@
   <a href="#how-to-do-a-texture-compression" class="md-nav__link">
     How to do a texture compression
   </a>
+  
+    <nav class="md-nav" aria-label="How to do a texture compression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-import-viewer" class="md-nav__link">
+    Texture Import Viewer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-compressed-texture" class="md-nav__link">
+    Export Compressed Texture
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5154,6 +5190,26 @@
     How to do a texture compression
   </a>
   
+    <nav class="md-nav" aria-label="How to do a texture compression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-import-viewer" class="md-nav__link">
+    Texture Import Viewer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-compressed-texture" class="md-nav__link">
+    Export Compressed Texture
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -5173,6 +5229,19 @@
 <p>On Vket Cloud, the initial load time can be optimized by compressing the texture size used by world objects and avatars.</p>
 <p>As future updates may involve automatic compression/formatting by server, the world creator should consider optimizing their texture to enable better performance on diverse PC/smartphone environments.</p>
 <h2 id="how-to-do-a-texture-compression">How to do a texture compression</h2>
+<h3 id="texture-import-viewer">Texture Import Viewer</h3>
+<p><img alt="TextureImportViewer_1" src="../SDKTools/img/TextureImportViewer_1.jpg" /></p>
+<div class="admonition bug">
+<p class="admonition-title">Texture Import Viewer malfunction on SDK Ver9.11</p>
+<p>On SDK Ver9.11, the Texture Import Viewer is recognized to be malfunctioning.<br>
+To use this feature, please consider <a href="../AboutVketCloudSDK/SetupSDK_external.html#installing-a-specified-version-updating-an-existing-sdk">updating your SDK</a> to Ver12.x and later versions.</p>
+</div>
+<p><a href="../SDKTools/TextureImportViewer.html">Texture Import Viewer</a> is a SDK Tool dedicated to view the project's texture import settings and compressed size as a list.</p>
+<p>On the Viewer, the texture can be sorted by size, name, etc., which import settings can be edited / exported by once.<br>
+This allows the texture settings to be reformatted at once, which can either be saved or exported/replaced by same procedure as <a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>.</p>
+<p>Therefore, this tool is handy when multiple texture files needs reformatting.</p>
+<p>For instructions, refer to <a href="../SDKTools/TextureImportViewer.html">Texture Import Viewer</a>.</p>
+<h3 id="export-compressed-texture">Export Compressed Texture</h3>
 <p><img alt="ExportCompressedTexture_1" src="../SDKTools/img/ExportCompressedTexture_1.jpg" /></p>
 <p>VketCloudSDK has a texture compression/formatting tool named as <a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>.</p>
 <p>This tool will generate a compressed texture image according to the <a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a> set on the texture settings.</p>

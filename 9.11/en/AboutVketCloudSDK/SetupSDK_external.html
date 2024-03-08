@@ -409,14 +409,14 @@
         
           <li class="md-nav__item">
   <a href="#setting-api-compatibility-level" class="md-nav__link">
-    Setting API compatibility level**
+    Setting API compatibility level
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#setting-lightmap-encoding" class="md-nav__link">
-    Setting LightMap Encoding**
+    Setting LightMap Encoding
   </a>
   
 </li>
@@ -665,7 +665,7 @@
   
     <li class="md-nav__item">
       <a href="../WorldMakingGuide/Skybox.html" class="md-nav__link">
-        Skybox
+        Setting up a Skybox
       </a>
     </li>
   
@@ -936,6 +936,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -1111,6 +1113,20 @@
     <li class="md-nav__item">
       <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
         Export Compressed Texture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/TextureImportViewer.html" class="md-nav__link">
+        Texture Import Viewer
       </a>
     </li>
   
@@ -5262,14 +5278,14 @@
         
           <li class="md-nav__item">
   <a href="#setting-api-compatibility-level" class="md-nav__link">
-    Setting API compatibility level**
+    Setting API compatibility level
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#setting-lightmap-encoding" class="md-nav__link">
-    Setting LightMap Encoding**
+    Setting LightMap Encoding
   </a>
   
 </li>
@@ -5335,18 +5351,18 @@
                 
                 <h1 id="how-to-install-vketcloudsdk">How to install VketCloudSDK</h1>
 <p>To install the VketCloudSDK, the Unity Package Manager and the VketCloudSDK install wizard is required.</p>
-<hr />
-<h3 id="step-1-open-a-project-in-unity">Step 1. Open a project in Unity</h3>
-<p>Open a project of a supported version (<a href="OperatingEnvironment.html" target="_blank">Unity Pre-prep</a>) or create a new project.
-Select "3D" as the template, if you need one.</p>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>If you put a space in the project name, it may cause build failures and other issues. <br>
-We advise to avoid using full-width characters such as CJK characters.</p>
-<p>OK) MyProject NG) My Project , マイ　プロジェクト</p>
+<h2 id="step-1-open-a-project-in-unity">Step 1. Open a project in Unity</h2>
+<p>Open a project created using a supported Unity version (<a href="OperatingEnvironment.html" target="_blank">Unity Pre-prep</a>) or create a new project.
+Select "3D" as the template.</p>
+<div class="admonition caution">
+<p class="admonition-title">Notes about project names and path (directory) names</p>
+<p>If a space is included in the project / project path (directory) name, it may cause build errors and other unexpected issues. <br>
+Also avoid using full-width characters such as CJK characters.</p>
+<p>OK) MyProject　　NG) My Project , マイ　プロジェクト</p>
 </div>
+<p><img alt="SetupSDK_FullWidthNG" src="img/SetupSDK_FullWidthNG.jpg" /></p>
 <hr />
-<h3 id="step-2-register-registry-information">Step 2. Register Registry information</h3>
+<h2 id="step-2-register-registry-information">Step 2. Register Registry information</h2>
 <div class="admonition note caution">
 <p class="admonition-title">Note</p>
 <p>On the release of Version 9.3, the SDK installation registry has been changed to the install wizard.<br>
@@ -5387,7 +5403,7 @@ If the error appears, please check if a space is contained by mistake.</p>
 </div>
 <p><img alt="SetupSDK_RegistrySpaceError" src="img/SetupSDK_RegistrySpaceError.jpg" /></p>
 <hr />
-<h3 id="step-3-install-the-vketcloudsdk-install-wizard-via-package-manager">Step 3. Install the VketCloudSDK Install Wizard via Package Manager</h3>
+<h2 id="step-3-install-the-vketcloudsdk-install-wizard-via-package-manager">Step 3. Install the VketCloudSDK Install Wizard via Package Manager</h2>
 <p>Open the "Packages" window from Unity's menu Window &gt; Package Manager.</p>
 <p>Select "My Registries" from the dropdown at the top of the window.</p>
 <p><img alt="registry" src="img/registry.jpg" /></p>
@@ -5407,7 +5423,7 @@ If the error appears, please check if a space is contained by mistake.</p>
 <p><img alt="InstallationWizard_2_en" src="img/InstallationWizard_2_en.jpg" /></p>
 <p>3. The window for setting the recommended initial settings will appear. Complete all three settings to proceed.<br>  Although the recommended settings may be ignored, SDK functionality cannot be guaranteed in such case.</p>
 <p><img alt="InstallationWizard_3_en" src="img/InstallationWizard_3.jpg" /></p>
-<h3 id="setting-api-compatibility-level">Setting API compatibility level**</h3>
+<h3 id="setting-api-compatibility-level">Setting API compatibility level</h3>
 <ol>
 <li>
 <p>Click Project Settings... from Edit in the Unity menu bar  </p>
@@ -5420,7 +5436,7 @@ If the error appears, please check if a space is contained by mistake.</p>
 </li>
 </ol>
 <p><img alt="ApiCompatibilityLevelSetting" src="img/ApiCompatibilityLevelSetting.jpg" /></p>
-<h3 id="setting-lightmap-encoding">Setting LightMap Encoding**</h3>
+<h3 id="setting-lightmap-encoding">Setting LightMap Encoding</h3>
 <p>Likewise above, check the Configuration in the Project Settings and change the Lightmap Encoding to "Normal Quality" from the pull-down menu.</p>
 <p><img alt="LightMapEncoding" src="img/LightMapEncoding.jpg" /></p>
 <h3 id="setting-color-space">Setting Color Space</h3>
@@ -5485,8 +5501,8 @@ To open the project's manifest.json, right click on the Project window and selec
 <p><img alt="SetupSDK_ManifestJson_2" src="img/SetupSDK_ManifestJson_2.jpg" /></p>
 <p>By editing the version number on the right side of <code>"com.hikky.vketcloudsdk"</code>, the installing / updating version will be switched.</p>
 <p><img alt="SetupSDK_ManifestJson_3" src="img/SetupSDK_ManifestJson_3.jpg" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition caution">
+<p class="admonition-title">Solution to VketCloudSDK not showing on Unity menu</p>
 <p>If VketCloudSDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
   One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
   If such cases occur, please try a <a href="../troubleshooting/InstallingDeeplink.html">manual package import</a>.<br></p>

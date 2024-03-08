@@ -936,6 +936,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -1111,6 +1113,20 @@
     <li class="md-nav__item">
       <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
         Export Compressed Texture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/TextureImportViewer.html" class="md-nav__link">
+        Texture Import Viewer
       </a>
     </li>
   
@@ -5336,13 +5352,14 @@
                 <h1 id="vketcloudsdk">VketCloudSDKの導入方法</h1>
 <p>VketCloudSDKをインストールするには、はじめにUnityのPackage Managerを使用し、SDKインストールウィザードを導入します。  </p>
 <h2 id="step-1-unity">Step 1. Unityでプロジェクトを開く</h2>
-<p>対応しているバージョン（<a href="OperatingEnvironment.html" target="_blank">動作環境</a>）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。      </p>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>プロジェクト名にスペースを入れるとビルドに失敗する場合があります。<br>
+<p>対応しているバージョン（<a href="OperatingEnvironment.html" target="_blank">動作環境</a>）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。</p>
+<div class="admonition caution">
+<p class="admonition-title">プロジェクト名・プロジェクトパスの名前について</p>
+<p>プロジェクト名およびプロジェクトディレクトリにスペースを入れるとビルドに失敗する場合があります。<br>
 また、日本語など2バイト文字の使用も避けることをおすすめします。</p>
 <p>OK例) MyProject　　NG例) My Project , マイ　プロジェクト</p>
 </div>
+<p><img alt="SetupSDK_FullWidthNG" src="img/SetupSDK_FullWidthNG.jpg" /></p>
 <hr />
 <h2 id="step-2">Step 2. レジストリ情報を登録する</h2>
 <div class="admonition note caution">
@@ -5478,8 +5495,8 @@ Package Managerではレジストリ表示を"My Registries"に切り替え、Vk
 <p><img alt="SetupSDK_ManifestJson_2" src="img/SetupSDK_ManifestJson_2.jpg" /></p>
 <p>manifest.json内の<code>"com.hikky.vketcloudsdk"</code>の右側を使用したいバージョンに書き換えると、インストール時(インストール済みの場合は読み込み時)のバージョンが切り替わります。</p>
 <p><img alt="SetupSDK_ManifestJson_3" src="img/SetupSDK_ManifestJson_3.jpg" /></p>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
+<div class="admonition caution">
+<p class="admonition-title">UnityメニューにてVketCloudSDKが表示されない場合は</p>
 <p>UnityのメニューにVketCloudSDKが表示されない場合は、再起動すると表示される場合があります。<br>
   上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は<a href="../troubleshooting/InstallingDeeplink.html">手動での導入</a>をお試しください。</p>
 <p>また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際はStep 2.と同じ手順で以下のパッケージを導入してください。</p>

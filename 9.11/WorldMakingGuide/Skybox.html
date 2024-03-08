@@ -551,9 +551,46 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          スカイボックス設定
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="Skybox.html" class="md-nav__link md-nav__link--active">
         スカイボックス設定
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    背景の設定方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    Tips
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -824,6 +861,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6">
@@ -999,6 +1038,20 @@
     <li class="md-nav__item">
       <a href="../SDKTools/ExportCompressedTexture.html" class="md-nav__link">
         Export Compressed Texture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/TextureImportViewer.html" class="md-nav__link">
+        Texture Import Viewer
       </a>
     </li>
   
@@ -5113,6 +5166,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    背景の設定方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    Tips
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5125,17 +5200,36 @@
                 
                 
                 <h1 id="_1">スカイボックス設定</h1>
+<p><img alt="Skybox_1" src="img/Skybox_1.jpg" /></p>
+<p>VketCloudSDKでは、UnityのSkyboxを出力することは出来ません。そのため、BoxまたはSphereの法線を反転させたオブジェクトを配置して、擬似的なSkyboxとして出力することで代用します。</p>
+<p>法線が反転されたオブジェクトはBlenderなどの3Dモデリングソフトを使用して用意する必要がありますが、SDKに内蔵されたチュートリアルシーンにおけるSkyboxオブジェクトを使用し、テクスチャを貼り替えることも可能です。</p>
+<h2 id="_2">背景の設定方法</h2>
+<ol>
+<li>
+<p>SDK設定（VketCloudSDKメニュー &gt; Settings）からチュートリアルシーン（Basic）をインストールすると、チュートリアルシーンと使用されているアセットがダウンロードされます。
+    <img alt="Skybox_2" src="img/Skybox_2.jpg" /></p>
+</li>
+<li>
+<p>チュートリアルシーンにて使用されているSkyboxオブジェクトは「Assets &gt; Samples &gt; Vket Cloud SDK &gt; 9.11.1 &gt; Tutorial -basic- &gt; Used Files &gt; Models」に格納されています。
+    Modelsファイル内のSky_Sphereを選択し、ドラッグ＆ドロップによって制作中のシーンに配置します。</p>
+<p><img alt="Skybox_3" src="img/Skybox_3.jpg" /></p>
+</li>
+<li>
+<p>Sky_SphereのスケールはInspectorから変更できます。また、別のテクスチャを割り当てたい場合はInspector中のSkyboxマテリアルから差し替えることができます。
+    <img alt="Skybox_4" src="img/Skybox_4.jpg" /></p>
+</li>
+<li>
+<p>Build &amp; Runを行い、Skyboxの反映を確認します。
+    <img alt="Skybox_5" src="img/Skybox_5.jpg" /></p>
+</li>
+</ol>
+<h2 id="tips">Tips</h2>
+<p>マテリアルのシェーダーは「Unlit/Texture」を選択すると、陰が出来ずに綺麗に出力できます。</p>
+<p><img alt="Skybox_1" src="img/Skybox_1.jpg" /></p>
 <div class="admonition note">
 <p class="admonition-title">HEOBackgroundTextureについて</p>
 <p>背景を実装する別の方法として、背景テクスチャを設定する<a href="../HEOComponents/HEOBackgroundTexture.html">HEOBackgroundTexture</a>があります。</p>
-</div>
-<p>VketCloudSDKでは、UnityのSkyBoxを出力することは出来ません。そのため、BoxまたはSphereの面を反転させたオブジェクトを配置して、擬似的なスカイボックスとして出力することで代用します。</p>
-<div class="admonition note info">
-<p class="admonition-title">Note</p>
-<p>マテリアルのシェーダーは「Unlit/Texture」を選択すると、陰が出来ずに綺麗に出力できます。</p>
-<p><img alt="Skybox" src="img/Skybox.jpg" />  </p>
-<p>コントロールパネル（VketCloudSDKメニュー &gt; Control Panel）からチュートリアルシーン（Basic）をインストールすると、Skyboxのサンプルを使用できます。</p>
-<p><img alt="ControllPanel" src="img/ControlPanel.jpg" /></p>
+<p><img alt="HEOBackgroundTexture_2" src="../HEOComponents/img/HEOBackgroundTexture_2.jpg" /></p>
 </div>
                 
               
