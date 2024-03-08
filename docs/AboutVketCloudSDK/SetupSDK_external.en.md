@@ -2,19 +2,22 @@
 
 To install the VketCloudSDK, the Unity Package Manager and the VketCloudSDK install wizard is required.
   
+## Step 1. Open a project in Unity
+
+Open a project created using a supported Unity version ([Unity Pre-prep](OperatingEnvironment.md){target=_blank}) or create a new project.
+Select "3D" as the template.
+
+!!! caution "Notes about project names and path (directory) names"
+    If a space is included in the project / project path (directory) name, it may cause build errors and other unexpected issues. <br>
+    Also avoid using full-width characters such as CJK characters.
+
+    OK) MyProject　　NG) My Project , マイ　プロジェクト
+
+![SetupSDK_FullWidthNG](img/SetupSDK_FullWidthNG.jpg)
+
 ---
-### Step 1. Open a project in Unity
-Open a project of a supported version ([Unity Pre-prep](OperatingEnvironment.md){target=_blank}) or create a new project.
-Select "3D" as the template, if you need one.
 
-!!! note caution
-    If you put a space in the project name, it may cause build failures and other issues. <br>
-    We advise to avoid using full-width characters such as CJK characters.
-
-    OK) MyProject NG) My Project , マイ　プロジェクト
-
----
-### Step 2. Register Registry information
+## Step 2. Register Registry information
 
 !!! note caution
     On the release of Version 9.3, the SDK installation registry has been changed to the install wizard.<br>
@@ -43,7 +46,8 @@ Select "Package Manager" from the left tab in the window and describe as follows
 ![SetupSDK_RegistrySpaceError](img/SetupSDK_RegistrySpaceError.jpg)
 
 ---
-### Step 3. Install the VketCloudSDK Install Wizard via Package Manager
+
+## Step 3. Install the VketCloudSDK Install Wizard via Package Manager
   
 Open the "Packages" window from Unity's menu Window > Package Manager.
 
@@ -79,7 +83,7 @@ To install the SDK on a new project, use the SDK Install Wizard.
 
 ![InstallationWizard_3_en](img/InstallationWizard_3.jpg)
 
-### Setting API compatibility level**
+### Setting API compatibility level
 
 1. Click Project Settings... from Edit in the Unity menu bar  
 
@@ -89,7 +93,7 @@ To install the SDK on a new project, use the SDK Install Wizard.
 
 ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
 
-### Setting LightMap Encoding**
+### Setting LightMap Encoding
 
 Likewise above, check the Configuration in the Project Settings and change the Lightmap Encoding to "Normal Quality" from the pull-down menu.
 
@@ -186,11 +190,11 @@ By editing the version number on the right side of `"com.hikky.vketcloudsdk"`, t
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! note 
+!!! caution "Solution to VketCloudSDK not showing on Unity menu"
       If VketCloudSDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
       One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
       If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
-      
+
       As the EditorTutorialSystem may also rarely fail to be imported automatically, add the package below following the instructions on [Step 2.](#step-2-register-registry-information) on such occurence.
 
 |  item  |  value  |
