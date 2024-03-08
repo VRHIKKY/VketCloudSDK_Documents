@@ -7,6 +7,8 @@
 - SDK Tools
   - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/particleeditor/pe_about_properties.html)
   - [Export Compressed Texture](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/SDKTools/ExportCompressedTexture.html)
+  - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/SDKTools/TextureImportViewer.html)
+    - 本機能はVer9.11では動作しないためご注意ください
 - ワールドの軽量化方法
   - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldOptimization/TextureCompression.html)
   - [スマートフォンのためのワールド軽量化](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldOptimization/SmartphoneOptimization.html)
