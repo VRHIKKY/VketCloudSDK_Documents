@@ -19,6 +19,7 @@
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/BuildOptions.html)
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/TextureImportViewer.html)
+  - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
 - HeliScript
   - [delegate](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_delegate.html) *English version WIP
   - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_camera.html) *English version WIP
