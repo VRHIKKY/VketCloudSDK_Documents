@@ -86,3 +86,7 @@ StringModeはURLを指定して参照します。動画ストリーミング等�
 !!! note caution
     動画音声は距離減衰に対応していません。<br>
     代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は[HEOAreaCollider](../HEOComponents/HEOAreacollider.md)と[StopVideoアクション](../Actions/System/StopVideo.md)を使用してください。
+
+!!! caution "Activityエクスポート時のHEOVideoTriggerについて"
+    SDK Ver12.3.4以降では[VKC Activity Exporter](../SDKTools/VKCActivityExporter.md)にてアクティビティを出力する際、HEOVideoTriggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
+    ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[HEOAreacollider](../HEOComponents/HEOAreacollider.md)による再生を行う必要があります。
