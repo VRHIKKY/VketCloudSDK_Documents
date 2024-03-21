@@ -8,14 +8,12 @@ theme:
   name: material
   palette:
   - scheme: default
-    primary: blue
-    accent: blue
+    primary: custom
     toggle:
         icon: material/toggle-switch-off-outline
         name: ダークモードに切り替えます。
   - scheme: slate
-    primary: blue
-    accent: blue
+    primary: custom
     toggle:
         icon: material/toggle-switch
         name: ライトモードに切り替えます。
@@ -37,6 +35,9 @@ theme:
   nav_style: dark
   custom_dir: custom_theme
 
+extra_css:
+  - stylesheets/extra.css
+  
 extra:
   generator: false
   version:
@@ -89,7 +90,7 @@ plugins:
           HEOExporter: .heoファイルについて
           HEOExporter Tutorial: .heoファイルを出力する
           Reflection Probe: リフレクションプローブ
-          Skybox: スカイボックス設定
+          Setting up a Skybox: スカイボックス設定
           Texture Compression: テクスチャ圧縮
           How to use Colliders / Tips: コライダーの使い方 / Tips
           Physics Engine: 物理エンジンの使い方
@@ -115,6 +116,7 @@ plugins:
           Debug Mode: デバッグモード
           Debug Console: デバッグコンソール
           Debug Messages: デバッグメッセージ一覧
+          VketCloudSDK Settings : VketCloudSDK設定
           # 編集Tips
           World Editing Tips: 編集のためのTips
           Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
@@ -202,7 +204,7 @@ nav:
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
-    - Skybox : WorldMakingGuide/Skybox.md 
+    - Setting up a Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
     - Tips on using HEOField: WorldMakingGuide/HEOFieldTips.md
@@ -230,6 +232,7 @@ nav:
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
+    - VketCloudSDK Settings : SDKTools/VketCloudSDK 
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md

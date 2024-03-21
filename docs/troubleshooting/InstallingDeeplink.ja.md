@@ -7,14 +7,14 @@ VketCloudSDKをインストール後に再起動しても立ち上がらない�
 
 1. **「Window→Package Manager」**でUnityのPackage Managerを開けます。
 
-![InstallingDeeplink_1](./img/InstallingDeeplink_1.jpg)
+    ![InstallingDeeplink_1](./img/InstallingDeeplink_1.jpg)
 
 2. Package Managerの`+`ボタンをクリックして、次の`Add Package from git URL / name`ボタンをクリックします。
 
-![InstallingDeeplink_2](./img/InstallingDeeplink_2.jpg)
+    ![InstallingDeeplink_2](./img/InstallingDeeplink_2.jpg)
 
 3. 以下のDeeplinkのURLをコピーします。<br>
-`https://github.com/needle-tools/unity-deeplink.git?path=/package`
+    `https://github.com/needle-tools/unity-deeplink.git?path=/package`
 
 4. Package ManagerのURLを入力する枠にDeeplinkのURLをペーストして、`Add`ボタンをクリックします。
 

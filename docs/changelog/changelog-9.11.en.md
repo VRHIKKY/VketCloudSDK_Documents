@@ -38,6 +38,7 @@
     - Added Translation
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/Skybox.html)
     - Added guide to HEOBackgroundTexture as an alternative implementation
+    - Edited setup instructions according to Ver9.11 environment
   - [Adding Preset Avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/PresetAvatar.html)
     - Added caution on editing preset avatar files
 - Troubleshooting
@@ -47,8 +48,17 @@
   - [World Optimization - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/WorldMakingGuide/WorldOptimization.html)
     - Added description for dynamic loading
 - HEOComponents
+  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOAudio.html)
+    - Added file format for audio files
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOField.html)
     - Added information of Tips on using HEOField page
+  - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/HEOComponents/HEOVideoTrigger.html)
+    - Updated usage and settings according to Ver9.11 environment
+- Actions
+  - [Motion](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/Actions/Avatar/Motion.html)
+    - Edited details on how to implement action
+  - [NextMotion](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/Actions/Avatar/NextMotion.html)
+    - Edited details on how to implement action
 - HeliScript
   - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/hs/hs_component.html)
     - Added Callback functions that can be used on SDK Ver 9.11

@@ -18,5 +18,3 @@
 - Remove the message button from profiles.
 - Adjusted player rotation speed.
 - Clicking a selected avatar again will deselect it.
-
-This update addresses several critical bugs and makes adjustments to enhance the user experience in browser-displayed worlds, including improvements in avatar interaction, UI display issues, and camera behavior adjustments.

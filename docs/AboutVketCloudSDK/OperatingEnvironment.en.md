@@ -1,17 +1,19 @@
+# Operating Environment
 
-# **Unity Pre-prep**
-VketCloudSDK requires the following.
+VketCloudSDK requires the following Unity editor version:
 
 - **Unity 2019.4.31f1**
 
-If the above version of Unity is not installed:
+If the above version of Unity is not installed, install by following the instructions below:
 
-Step 1. Download Unity Hub ([From here](https://unity3d.com/get-unity/download){target=_blank})  
+1. Download Unity Hub ([From here](https://unity3d.com/get-unity/download){target=_blank})  
   
-Step 2. Find and download the specified version from [Unity -Download Archive](https://unity3d.com/jp/get-unity/download/archive){target=_blank} (Click the “Unity Hub” option)
-![DownloadVersion](img/DownloadVersion.jpg)  
+2. Find and download the specified version from [Unity -Download Archive](https://unity3d.com/jp/get-unity/download/archive){target=_blank} (Click the “Unity Hub” option)
 
-Please use one of the below systems when running Unity.
+    ![DownloadVersion](img/DownloadVersion.jpg)  
+
+Please use one of the operating systems below when running Unity.
+
 - Windows 10, 64-bit
 - macOS 10.12+.
 
@@ -47,3 +49,16 @@ Also, we recommend the below systems when entering your world built with VketClo
     From Edit >Project Settings, set the  Color Space as Linear.
 
     ![linear](img/linear.jpg)
+
+    On Ver12.3 and later versions, the settings below are required as well:
+
+    **Setting Standard Shader Quality**
+
+    The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so you will need to make some changes in the settings.
+
+    1. Open Edit/ProjectSettings/Graphics
+        ![OpenGraphics.jpg](he_image/OpenGraphics.jpg)
+    2. In the Tier Settings, uncheck "Use Defaults" on Low, Medium, and High
+        ![TierSettings.jpg](he_image/TierSettings.jpg)
+    3. In the Tier Settings, change the "Standard Shader Quality" on Low, Medium, and High, to "Medium"
+        ![StandardShaderQuality.jpg](he_image/StandardShaderQuality.jpg)

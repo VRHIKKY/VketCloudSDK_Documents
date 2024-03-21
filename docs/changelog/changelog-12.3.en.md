@@ -2,20 +2,117 @@
 
 ## Added Pages
 
+- Vket Cloud Settings
+  - [Vket Cloud Settings - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/Overview.html)
+  - [BasicSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/BasicSettings.html)
+  - [PlayerSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/PlayerSettings.html)
+  - [DespawnHeightSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/DespawnHeightSettings.html)
+  - [CameraSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/CameraSettings.html)
+  - [RenderingSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/RenderingSettings.html)
+  - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/AvatarSettings.html)
+    - Added mention on preset avatars: 4 types now available!
+  - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/MyAvatarSettings.html)
+- SDKTools
+  - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VKCActivityExporter.html)
 - World Editing Tips
   - [Quick Menu for adding Vket Cloud objects](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/QuickMenu.html)
+  - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/BuildOptions.html)
+- SDKTools
+  - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/TextureImportViewer.html)
+  - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
+- HeliScript
+  - [delegate](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_delegate.html) *English version WIP
+  - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_camera.html) *English version WIP
+  - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_commondialog.html) *English version WIP
+  - [Item Types and Usable Functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
 
 ## Edited Pages
 
+- About VketCloudSDK
+  - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html)
+    - Added editing Standard Shader Quality as a required setup instruction on install
+  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
+    - Added editing Standard Shader Quality as a required setup instruction on install
+- First Steps
+  - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/BuildAndRun.html)
+    - Revised title and reedited format
+    - Added info on build options
+  - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/WorldUpload.html)
+    - Edited how-to on operating World Uploader
 - World Making Guide
+  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html)
+    - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
     - Added Guide for Setup using Quick Menu
   - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ReflectionProbe.html)
     - Edited setup instructions for reflection probe
-- HEOComponents
+- SDK Tools
+  - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
+    - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
+  - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/particleeditor/pe_about_properties.html)
+    - Removed notice on fixed bugs and deleted info on deprecated features
+  - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VKCActivityExporter.html)
+    - On SDK12.3.4 and later: added caution on using HEOVideoTrigger
+- World Optimization
+  - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldOptimization/TextureCompression.html)
+    - Added overview of Texture Import Viewer
+- HEO Components
+  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOActivity.html)
+    - Added info on Scene Preview and Advanced Settings
+  - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOMeshCollider.html)
+    - Updated How to Use according to Ver12.3
+    - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
+  - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOObject.html)
+    - Added info on new Ver12.3 featuresに(hrm and glb support), updated info on component settings
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
     - Added info on component deprecation
-  - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOObject.html)
-    - Added info on new Ver12.3 featuresに(hrm and glb support), updated info on component settings
+- Actions
+  - Programmatic
+    - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Programmatic/IfEqual.html)
+      - Changed Title (old:If A == B)
+      - Updated description according to SDK Ver12.3
+    - [If Variable Not Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Programmatic/IfNotEqual.html)
+      - Changed Title (old:If A != B)
+      - Updated description according to SDK Ver12.3
+    - [If Variable More Than Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Programmatic/IfMoreThan.html)
+      - Changed Title (old:If A >= B)
+      - Updated description according to SDK Ver12.3
+    - [If Variable Less Than Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Programmatic/IfLessThan.html)
+      - Changed Title (old:If A <= B)
+      - Updated description according to SDK Ver12.3
+- HeliScript
+Added information on HeliScript updates on Ver12.x: *English version WIP
+  - [HeliScript Overview](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_overview.html)
+    - Added feature change for Player class functions within constructor
+  - [Class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class.html)
+    - Added object instantiation / deletion, detecting instants
+  - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_component.html)
+    - Added callback function on object deselect
+  - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class_item.html)
+    - Added list of object type which can call each function
+  - [Player class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class_item.html)
+    - Added feature change for Player class functions within constructor
+    - Added new functions: ChangeActivityMotion / SetNextActivityMotion, and SetPresetAvatar
+  - [String](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_string.html)
+    - Added Split functions
+  - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_statement_control.html)
+    - Edited loop examples, break, and continue
+  - [Built-in Functions - System](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function.html)
+    - Added new functions: hsIsMobile and casting functions
+  - [Built-in Functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_gui.html)
+    - Edited argument of hsCanvasSetGUIPos
+  - [Built-in types - Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_var.html)
+    - Added ToString function
+- Trouble Shooting
+  - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/troubleshooting/VersionUpdateTroubleshooting.html)
+    - Added solution for VketCloudSDK tab not showing on top menu
+    - Added solution for HEOWorldSetting settings not showing on VketCloudSettings / settings being empty
+  - [Unity settings for replicating actual look in Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/heoexporter/he_align_unity_to_vketcloud.html)
+    - Fixed minor format issues
+
+- According to deprecation, added notation to new features on pages below:
+  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOWorldSetting.html)  
+  - [HEODespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEODespawnHeight.html)  
+  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOPlayer.html)  
 
 ## Deleted Pages

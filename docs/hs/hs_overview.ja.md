@@ -79,22 +79,33 @@ HeliScript内で各オブジェクトを参照する際は、後述するItem及
 ```
 component example
 {
-    //アイテム・プレイヤーを定義
+    //ItemとPlayerを定義
     //ここではhsItemGetなどの取得関数を含め、オブジェクトの初期化はできないためにご注意ください
 	Item	ex_Item;
 	Player	ex_player;
 
+    bool    ex_isPlayerInit; //Playerクラス初期化管理
 	int		ex_ItemNodeIndex;
 
     public example()
     {
-        //アイテムを認識　アイテム名は.heoになっている物を指定する　今回はHEOField指定
+        //Itemを認識　Item名は.heoになっている物を指定する　今回はHEOField指定
         ex_Item = hsItemGet("World");
-        //プレイヤーを認識
-        ex_player = hsPlayerGet();
+
+        ex_isPlayerInit = false;
         
         //ItemがHEO Fieldなので、その傘下にあるオブジェクトのノードを取得可能
         ex_ItemNodeIndex = ex_Item.GetNodeIndexByName("exampleObject");
+    }
+
+    public void update()
+    {
+        //Playerのインスタンス取得がまだの場合、一度だけhsPlayerGet()を実行する
+        if(!ex_isPlayerInit){
+        //Playerを認識・取得
+        ex_player = hsPlayerGet();
+        ex_isPlayerInit = true;
+        }
     }
 
     //クリックしたとき、対象のノードを取得する。OnClickNodeの使い方はコールバック関数のページをご参照ください
@@ -108,6 +119,11 @@ component example
     }
 }
 ```
+
+!!! caution "Playerオブジェクトの初期化について"
+    SDK Ver12.x以降より、Playerクラスの関数はコンストラクタでの呼び出しができなくなりました。<br>
+    インスタンスの取得を行いたい際は、例として上記のようにフラグとなるbool変数を用意してコンストラクタ以外の関数にて呼び出してください。
+
 スクリプトを[HEOScript](../HEOComponents/HEOScript.md)に設定し、ワールドをビルドすると以下のようにオブジェクトをクリックした際にメッセージが出力されます。
 
 ![hs_overview_6](img/hs_overview_6.jpg)

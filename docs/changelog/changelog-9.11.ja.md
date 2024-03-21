@@ -37,6 +37,7 @@
     - 階段にコライダーを設定する際のTipsを追加
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/Skybox.html)
     - Skyboxの代替実装としてHEOBackgroundTextureを追記
+    - Ver9.11における設定方法を追記
   - [プリセットアバターを追加する](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/PresetAvatar.html)
     - プリセットアバター編集時の注意を追加
 - トラブルシューティング
@@ -46,8 +47,17 @@
   - [ワールドの軽量化方法：概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/WorldMakingGuide/WorldOptimization.html)
     - 動的ローディングについての概要を追加
 - HEOコンポーネント
+  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOAudio.html)
+    - オーディオファイルのフォーマットについて追記
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOField.html)
     - HEOFieldの使い方への誘導を追加
+  - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOVideoTrigger.html)
+    - 使い方と設定方法をVer9.11準拠に更新
+- アクション
+  - [Motion](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ja/Actions/Avatar/Motion.html)
+    - 設定方法について修正・加筆
+  - [NextMotion](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ja/Actions/Avatar/NextMotion.html)
+    - 設定方法について修正・加筆
 - HeliScript
   - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/hs/hs_component.html)
     - Ver9.11にて使用できるコールバック関数を追記

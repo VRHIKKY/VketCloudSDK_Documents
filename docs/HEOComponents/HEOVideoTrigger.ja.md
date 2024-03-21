@@ -1,55 +1,92 @@
-
 # HEOVideoTrigger
 
-![HEOVideoTrigger](img/HEOVideoTrigger.jpg)
+![HEOVideoTrigger_1](img/HEOVideoTrigger_1.jpg)
 
 HEOVideoTriggerは動画を再生するために使用します。
 
-| Label | 詳細 |
-| ---- | ---- |
-| Enable | ビデオトリガーのクリック判定を有効にします。 |
-| Video Material | 動画を表示するマテリアルを指定します。 |
-| Video Path Mode | ビデオのパスを指定します。<br> Clip Mode：Asset上の動画ファイルを指定するためのモードです。<br> String Mode：URL等、文字列で指定するためのモードです。 |
-| Autoplay | 動画を自動で再生するか指定します。<br>シーン上で同時に再生可能なビデオは1つのみです。<br> シーン上にこれをTrueにしたオブジェクトが2つ以上ある場合、最後のもののみが流れます。 |
-| Loop | 動画が終了した際にループ再生するか指定します。|
-| Access in HEOObject | 映像反映対象を[HEOObject](HEOObject.md)内のマテリアルにするためのモードです。<br> `True`にした場合に表示される`Target Object Name`には、対象となるマテリアル名を記載してください。 |
+## 使い方
 
-## 注意事項
-本コンポーネントだけでは動画ファイルを.heoにパッキングすることができないため、[HEOField](HEOField.md)を必ず追加してください。</br>
+Autoplayが無効な初期状態でHEOVideoTriggerをアタッチしたオブジェクトをワールドに設置すると、画像のようにサムネイルと再生ボタンアイコンが重なったマテリアルが表示されます。
 
-VketCloudSDKでは複数のビデオを同時に再生できない仕様です。
-複数のビデオを同時に再生しているように見せかけたい場合、動画ファイル内で画面分割を行い、映し出す側のスクリーンで動画の映し出す範囲を調整することで可能です。<br>
+サムネイルと再生ボタンアイコンが重なった状態のマテリアルは後述のThumbnail Toolによって作成できます。
 
-autoplayを設定しない場合にはアクション等いずれかの手段で再生開始をコントロールする必要があります。</br>
-画像では[HEOActionTrigger](HEOActionTrigger.md)を使用したクリックによる動画再生を実装しています。
+![HEOVideoTrigger_4](img/HEOVideoTrigger_4.jpg)
 
-![HEOVideoTrigger](img/HEOVideoTriggerAdd.jpg)
+上記の状態でオブジェクトを選択すると、動画の再生が開始されます。
 
+動画再生中にオブジェクトを選択すると、動画再生を終了しサムネイル表示に戻ります。なお、本挙動はAutoplayが有効な時も同様です。
 
-##VideoMaterialについて
-マテリアルに使用するShaderはUnlit/Textureである必要があります。
+![HEOVideoTrigger_5](img/HEOVideoTrigger_5.jpg)
 
-##VideoPathModeについて</br>
-ClipModeはプロジェクトの内部にあるデータを参照します。</br>
-StringModeはURLを指定して参照します。動画ストリーミング等に利用できます。
+---
 
-!!! note caution
-    StringModeは現在内部開発者向けの機能となっております。
-    
-    動画を再生する際はClipModeをご利用ください。
+## 設定項目
 
-##使用する動画ファイルについて
+![HEOVideoTrigger_1](img/HEOVideoTrigger_1.jpg)
+
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| Enable | true | ビデオトリガーのクリック判定を有効にします。 |
+| Video Material | VideoPlayer | 動画を表示するマテリアルを指定します。 |
+| Video Path Mode | Clip Mode / SampleVideo | ビデオのパスを指定します。初期状態ではSDK内蔵のSampleVideoが設定されています。<br> Clip Mode：Asset上の動画ファイルを指定するためのモードです。<br> String Mode：URL等、文字列で指定するためのモードです。 |
+| Scene Preview | | クリックすると動作確認としてSceneにて動画を再生します。 |
+| Autoplay | false | 動画を自動で再生するか指定します。<br>シーン上で同時に再生可能なビデオは1つのみです。<br> シーン上にこれをTrueにしたオブジェクトが2つ以上ある場合、最後のもののみが流れます。 |
+| Loop | false | 動画が終了した際にループ再生するか指定します。|
+
+## 詳細設定 / Thumbnail Tool
+
+![HEOVideoTrigger_2](img/HEOVideoTrigger_2.jpg)
+
+Thumbnail Toolでは動画再生前のサムネイルとして、サムネイル画像と再生アイコンを重ねたテクスチャが割り当てられたマテリアルを作成できます。
+
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| Access in HEOObject | false | 映像反映対象を[HEOObject](HEOObject.md)内のマテリアルにするためのモードです。<br> `True`にした場合に表示される`Target Object Name`には、対象となるマテリアル名を記載してください。 |
+| Thumbnail Texture | | 動画のサムネイルとなる画像を指定します。 |
+| PlayButton Texture | playbutton.png | サムネイルの上に重ねる再生アイコンを指定します。 |
+| Generate Thumbnail Material | | Thumbnail Texture と PlayButton Textureを重ねたpng画像とマテリアルを生成します。<br>サムネイル画像とマテリアルを保存するとVideoTriggerのサムネイルとして自動で設定されます。 |
+
+## 使用する動画ファイルについて
+
 以下のフォーマットに従ってください。
 
 | Label | 詳細 |
 | ---- | ---- |
 | ファイル形式 | .mp4 |
-| 解像度 | 1280x720 H.264|
+| 解像度 | 1280x720 H.264 |
 | AAC | 44.1kHz |
 | フレームレート | 29.97 or 30 |
 | プロファイルレベル | 4.1, AAC 44.1kHz, yuv420 |
 
-!!! note caution
-    動画音声は距離減衰に対応していません。
+## VideoMaterialについて
 
-    代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は[HEOAreaCollider](../HEOComponents/HEOAreacollider.md)を使用してください。
+マテリアルに使用するShaderはUnlit/Textureである必要があります。
+
+## VideoPathModeについて
+
+ClipModeはプロジェクトの内部にあるデータを参照します。<br>
+StringModeはURLを指定して参照します。動画ストリーミング等に利用できます。
+
+!!! note caution
+    StringModeは現在内部開発者向けの機能となっております。<br>
+    動画を再生する際はClipModeをご利用ください。
+
+## 注意事項
+
+- 本コンポーネントだけでは動画オブジェクトをItemとして表示できないため、[HEOField](HEOField.md)下に必ず配置してください。
+
+- VketCloudSDKでは複数のビデオを同時に再生できない仕様です。<br>複数のビデオを同時に再生しているように見せかけたい場合、動画ファイル内で画面分割を行い、映し出す側のスクリーンで動画の映し出す範囲を調整することで可能です。
+
+- EnableとAutoplayが無効な場合にはアクション等いずれかの手段で再生開始をコントロールする必要があります。<br>
+
+以下の画像では[HEOActionTrigger](HEOActionTrigger.md)を使用したクリックによる動画再生を実装しています。
+
+![HEOVideoTrigger_3](img/HEOVideoTrigger_3.jpg)
+
+!!! note caution
+    動画音声は距離減衰に対応していません。<br>
+    代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は[HEOAreaCollider](../HEOComponents/HEOAreacollider.md)と[StopVideoアクション](../Actions/System/StopVideo.md)を使用してください。
+
+!!! caution "Activityエクスポート時のHEOVideoTriggerについて"
+    SDK Ver12.3.4以降では[VKC Activity Exporter](../SDKTools/VKCActivityExporter.md)にてアクティビティを出力する際、HEOVideoTriggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
+    ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[HEOAreacollider](../HEOComponents/HEOAreacollider.md)による再生を行う必要があります。

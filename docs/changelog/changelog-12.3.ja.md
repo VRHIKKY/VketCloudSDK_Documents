@@ -2,20 +2,116 @@
 
 ## 追加されたページ
 
+- Vket Cloud Settings
+  - [Vket Cloud Settings - 概要](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/VketCloudSettings/Overview.html)
+  - [BasicSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/VketCloudSettings/BasicSettings.html)
+  - [PlayerSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/VketCloudSettings/PlayerSettings.html)
+  - [DespawnHeightSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/VketCloudSettings/DespawnHeightSettings.html)
+  - [CameraSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/VketCloudSettings/CameraSettings.html)
+  - [RenderingSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/VketCloudSettings/RenderingSettings.html)
+  - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/VketCloudSettings/AvatarSettings.html)
+    - デフォルトアバターを4種類に拡大した旨を追記
+  - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/VketCloudSettings/MyAvatarSettings.html)
+- SDKTools
+  - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VKCActivityExporter.html)
 - 編集のためのTips
   - [Vket Cloudオブジェクト追加のためのクイックメニュー](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldEditingTips/QuickMenu.html)
+  - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldEditingTips/BuildOptions.html)
+- SDKTools
+  - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/TextureImportViewer.html)
+  - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VketCloudSDKSettings.html)
+- HeliScript
+  - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_delegate.html)
+  - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_camera.html)
+  - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_commondialog.html)
+  - [Itemの種類一覧 / HeliScript関数対応表](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_item_types_functions.html)
 
 ## 変更されたページ
 
+- VketCloudSDKについて
+  - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/OperatingEnvironment.html)
+    - 必須設定としてStandard Shader品質の変更を追加
+  - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
+    - 必須設定としてStandard Shader品質の変更を追加
+- ワールド制作の基本
+  - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/FirstStep/BuildAndRun.html)
+    - タイトルを変更し、フォーマットを修正
+    - ビルド時のオプションについて案内を追記
+  - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/FirstStep/WorldUpload.html)
+    - World Uploaderの機能追加に伴い追記
 - ワールド制作ガイド
+  - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html)
+    - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Skybox.html)
     - クイックメニューについて案内を追記
   - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/ReflectionProbe.html)
     - リフレクションプローブの設定方法を更新
+- SDK Tools
+  - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/debugconsole/debugconsole.html)
+    - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
+  - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/particleeditor/pe_about_properties.html)
+    - 修正されたバグ・廃止された機能を追記
+  - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VKCActivityExporter.html)
+    - SDK12.3.4以降：HEOVideoTrigger使用の際の注意を追加
+- ワールドの軽量化方法
+  - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldOptimization/TextureCompression.html)
+    - Texture Import Viewerについて案内を追加
 - HEOコンポーネント
-  - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOReflectionProbe.html)
-    - 機能廃止について案内を追記
+  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOActivity.html)
+    - Scene Previewと高度な設定について追記
+  - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOMeshCollider.html)
+    - 使い方をVer12.3準拠に更新
+    - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
   - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOObject.html)
     - Ver12.3に追加された機能(hrm, glb対応)を追記し、コンポーネント設定解説を更新
+  - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOReflectionProbe.html)
+    - 機能廃止について案内を追記
+- アクションについて
+  - Programmatic
+    - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/Actions/Programmatic/IfEqual.html)
+      - タイトルを変更（旧：If A == B）
+      - 解説をSDK Ver12.3に準拠
+    - [If Variable Not Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/Actions/Programmatic/IfNotEqual.html)
+      - タイトルを変更（旧：If A != B）
+      - 解説をSDK Ver12.3に準拠
+    - [If Variable More Than Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/Actions/Programmatic/IfMoreThan.html)
+      - タイトルを変更（旧：If A >= B）
+      - 解説をSDK Ver12.3に準拠
+    - [If Variable Less Than Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/Actions/Programmatic/IfLessThan.html)
+      - タイトルを変更（旧：If A <= B）
+      - 解説をSDK Ver12.3に準拠
+- HeliScript
+Ver12.xにて追加されたHeliScriptへの変更を追記：
+  - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_overview.html)
+    - コンストラクタにおけるPlayerクラス関数の仕様変更を追記
+  - [クラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class.html)
+    - オブジェクトの生成・削除、存在の判定について追記
+  - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_component.html)
+    - オブジェクトの選択解除のコールバック関数を追加
+  - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class_item.html)
+    - 各メソッドを呼び出し可能なオブジェクトのタイプを追記
+  - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class_item.html)
+    - 新規関数：ChangeActivityMotion / SetNextActivityMotion, SetPresetAvatarを追記
+    - コンストラクタにおけるPlayerクラス関数の仕様変更を追記
+  - [文字列(string)](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_string.html)
+    - Split系関数を追加
+  - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_statement_control.html)
+    - ループの例示、break, continueについて追記
+  - [組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function.html)
+    - hsIsMobile, 型変換(キャスト)系関数を追加
+  - [組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_gui.html)
+    - hsCanvasSetGUIPosの引数を変更
+  - [組み込み型](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_var.html)
+    - ToString関数を追記
+- トラブルシューティング
+  - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/troubleshooting/VersionUpdateTroubleshooting.html)
+    - メニューにてVketCloudSDKタブが表示されない際の解決策を追加
+    - HEOWorldSettingなどの設定がVketCloudSettingsに反映されない / 空欄になる場合の解決策を追加  
+  - [UnityとVketCloudの見た目を揃える](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/heoexporter/he_align_unity_to_vketcloud.html)
+    - 細かな整形と修正を追加
+- 機能廃止に伴い、以下のページにて新機能への誘導を追加
+  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOWorldSetting.html)  
+  - [HEODespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEODespawnHeight.html)  
+  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOPlayer.html)  
 
 ## 削除されたページ
