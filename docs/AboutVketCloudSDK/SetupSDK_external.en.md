@@ -114,13 +114,13 @@ From Edit >Project Settings, set the  Color Space as Linear.
 The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so you will need to make some changes in the settings.
 
 1. Open Edit/ProjectSettings/Graphics
-    ![OpenGraphics.jpg](he_image/OpenGraphics.jpg)
+    ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics.jpg)
 
 2. In the Tier Settings, uncheck "Use Defaults" on Low, Medium, and High
-    ![TierSettings.jpg](he_image/TierSettings.jpg)
+    ![TierSettings.jpg](../heoexporter/he_image/TierSettings.jpg)
 
 3. In the Tier Settings, change the "Standard Shader Quality" on Low, Medium, and High, to "Medium"
-    ![StandardShaderQuality.jpg](he_image/StandardShaderQuality.jpg)
+    ![StandardShaderQuality.jpg](../heoexporter/he_image/StandardShaderQuality.jpg)
 
 ---
 
