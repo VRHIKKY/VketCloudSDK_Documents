@@ -24,20 +24,8 @@ Buildタブでは、ビルド時にワールドを構成するファイルに対
 
 Run Serverタブでは、ローカルサーバー関連の設定が編集できます。
 
-### Local Server Settings
-
-| 名称 | 機能 |
-| ---- | ---- |
-| Default Port Number | |
-
-### Local Server Info
-
-### Remote Debug
-
-| 名称 | 機能 |
-| ---- | ---- |
-| Firewall | |
-| Access from Remote Device | |
+!!! caution "Run Serverについて"
+    本機能は内部開発者向けの機能となっております。
 
 ## Language
 
@@ -52,13 +40,8 @@ Languageタブでは、SDKに関する表示言語を選択できます。<br>
 
 Extensionsタブでは、拡張パッケージを選択してインポートできます。
 
-### インポートできるパッケージ
-
-| 名称 | 機能 |
-| ---- | ---- |
-| VRMShader Package | |
-| GLTF Package | |
-| VRM Package | |
+!!! caution "Extensionsについて"
+    本機能は内部開発者向けの機能となっております。
 
 ## Package Info
 
@@ -88,4 +71,4 @@ Other Settingsタブでは、上記タブに分類されないその他の設定
 
 | 名称 | 機能 |
 | ---- | ---- |
-| Replace .gitignore | |
+| Replace .gitignore | プロジェクトフォルダ内に配置されている.gitignoreをSDKが推奨する設定に書き換えます。 |

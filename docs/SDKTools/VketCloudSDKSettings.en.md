@@ -1,91 +1,74 @@
-# VketCloudSDK設定
+# VketCloudSDK Settings
 
 ![VketCloudSDKSettings_1](img/VketCloudSDKSettings_1.jpg)
 
-VketCloudSDK Settingsでは、VketCloudSDKに関する設定を編集します。
+VketCloudSDK Settings handles the settings related to VketCloudSDK.
 
-## アカウント
+## Account
 
 ![VketCloudSDKSettings_1](img/VketCloudSDKSettings_1.jpg)
 
-アカウントタブでは、現在ログインしているユーザーの名前、アイコン、使用中のライセンスプランが表示されます。
+The account tab shows the current login user, icon, and used license plan.
 
 ## Build
 
 ![VketCloudSDKSettings_2](img/VketCloudSDKSettings_2.jpg)
 
-Buildタブでは、ビルド時にワールドを構成するファイルに対して様々な操作を行うことができます。
+The Build tab has settings to handle the world assets on build.
 
-詳しくは[ビルド時のオプション](../WorldEditingTips/BuildOptions.md)をご参照ください。
+For details, please refer to [Build Options](../WorldEditingTips/BuildOptions.md).
 
 ## Run Server
 
 ![VketCloudSDKSettings_3](img/VketCloudSDKSettings_3.jpg)
 
-Run Serverタブでは、ローカルサーバー関連の設定が編集できます。
+The Run Server tab has settings to setup local servers.
 
-### Local Server Settings
-
-| 名称 | 機能 |
-| ---- | ---- |
-| Default Port Number | |
-
-### Local Server Info
-
-### Remote Debug
-
-| 名称 | 機能 |
-| ---- | ---- |
-| Firewall | |
-| Access from Remote Device | |
+!!! caution "About Run Server"
+    This feature is open only for internal developers.
 
 ## Language
 
 ![VketCloudSDKSettings_4](img/VketCloudSDKSettings_4.jpg)
 
-Languageタブでは、SDKに関する表示言語を選択できます。<br>
-言語は日本語もしくは英語から選択できます。
+The Language tab has settings for switching the language used for the SDK.<br>
+Current options are Japanese or English.
 
 ## Extensions
 
 ![VketCloudSDKSettings_5](img/VketCloudSDKSettings_5.jpg)
 
-Extensionsタブでは、拡張パッケージを選択してインポートできます。
+The Extensions has options to import extension packages.
 
-### インポートできるパッケージ
-
-| 名称 | 機能 |
-| ---- | ---- |
-| VRMShader Package | |
-| GLTF Package | |
-| VRM Package | |
+!!! caution "About Extensions"
+    This feature is open only for internal developers.
 
 ## Package Info
 
 ![VketCloudSDKSettings_6](img/VketCloudSDKSettings_6.jpg)
 
-Package Infoタブでは、SDKの更新ログが確認できます。
+The Package Info tab displays update logs of the SDK.
 
 ## License
 
 ![VketCloudSDKSettings_7](img/VketCloudSDKSettings_7.jpg)
 
-Licenseタブでは、SDKのライセンスが確認できます。
+The License tab shows licenses related to the SDK.
 
 ## Other Settings
 
 ![VketCloudSDKSettings_8](img/VketCloudSDKSettings_8.jpg)
 
-Other Settingsタブでは、上記タブに分類されないその他の設定が編集できます。
+The Other Settings tabs contains miscellaneous settings which are not categorized in the previously mentioned tabs.
 
 ### Startup Info Display Option
 
-| 名称 | 機能 |
+| Label | Function |
 | ---- | ---- |
-| Show at Startup | Unity起動時に表示されるVketCloudSDKの情報ウィンドウを表示するか否か切り替えます。<br> Always: 毎回表示 When New Version Available: 新しいSDKバージョンが公開されたとき表示 Never: 表示しない |
+| Show at Startup | Set display/non-display of the VketCloudSDK splash window on opening the Unity project.<br> Always: display always on startup / When New Version Available: display when new SDK version is released / Never: do not display |
 
 ### Set the .gitignore to the recommended configuration
 
-| 名称 | 機能 |
+| Label | Function |
 | ---- | ---- |
-| Replace .gitignore | |
+| Replace .gitignore | Replaces the .gitignore file in the project folder according to SDK recommendation. |
