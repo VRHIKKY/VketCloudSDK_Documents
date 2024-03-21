@@ -5,7 +5,7 @@
 HEOActivity is a component for setting activities.<br>
 The "Activity" in Vket Cloud is a feature for wrapping models and scripts as a single [Item](../hs/hs_overview.md#item), aimed for easy placement and implementation on worlds.
 
-## 設定項目
+## Basic Settings
 
 | Label | Function |
 | ---- | ---- |
@@ -27,6 +27,10 @@ The "Activity" in Vket Cloud is a feature for wrapping models and scripts as a s
 | ---- | ---- |
 | Auto Loading | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](HEOField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
 | Item Render Priority | Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+
+!!! info "Creating your own Activity"
+    On SDK Ver12.x and later versions, a tool has been added to create/export your own Activity.<br>
+    For details, please see [VKC Activity Exporter](../SDKTools/VKCActivityExporter.md).
 
 ---
 

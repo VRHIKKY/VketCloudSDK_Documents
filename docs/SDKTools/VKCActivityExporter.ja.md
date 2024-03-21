@@ -89,7 +89,7 @@ Activityを他のクリエイターに配布する際は、このフォルダを
 
 ## Activity / Propertyの設定について
 
-[HEOProperty](../HEOComponents/HEOProperty.md)にてアクティビティを使用する際、設定のためにActivityの`Overrides`(Property)項目を定義し、HeliScriptにて参照することができます。
+[HEOActivity](../HEOComponents/HEOActivity.md)にてアクティビティを使用する際、設定のためにActivityの`Overrides`(Property)項目を定義し、HeliScriptにて参照することができます。
 
 Propertyを追加するには編集したいアクティビティのjsonファイルを開き、`properties`に例として以下のようにキーと値を追加のうえで保存します。
 
@@ -105,7 +105,7 @@ Propertyを追加するには編集したいアクティビティのjsonファ�
 //中略
 ```
 
-設定したPropertyは[HEOProperty](../HEOComponents/HEOProperty.md)にてアクティビティのjsonを読み込んだ際に`overrides`にて表示され、ワールド制作者がアクティビティの設定に使用できます。
+設定したPropertyは[HEOActivity](../HEOComponents/HEOActivity.md)にてアクティビティのjsonを読み込んだ際に`overrides`にて表示され、ワールド制作者がアクティビティの設定に使用できます。
 
 ![VKCActivityExporter_8](img/VKCActivityExporter_8.jpg)
 
@@ -138,54 +138,60 @@ component VketChan
 
 ## Activityに含められるHEOコンポーネント
 
+- [HEOActivity](../HEOComponents/HEOActivity.md)
+
 - [HEOAnimation](../HEOComponents/HEOAnimation.md)
-
-- [HEOCollider](../HEOComponents/HEOCollider.md)
-
-- [HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)
-
-- [HEOUVScroller](../HEOComponents/HEOUVScroller.md)
-
-- [HEOShadow](../HEOComponents/HEOShadow.md)
-
-- [HEOObject](../HEOComponents/HEOObject.md)
-
-- [HEOPlane](../HEOComponents/HEOPlane.md)
-
-- [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
-
-- [HEOSpot](../HEOComponents/HEOSpot.md)
-
-- [HEOParticle](../HEOComponents/HEOParticle.md)
-
-- [HEOField](../HEOComponents/HEOField.md)
-
-- [HEOCamera](../HEOComponents/HEOCamera.md)
-
-- [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-
-- [HEOAudio](../HEOComponents/HEOAudio.md)
 
 - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
 
-- [HEOActivity](../HEOComponents/HEOActivity.md)
+- [HEOAudio](../HEOComponents/HEOAudio.md)
+
+- [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
+
+- [HEOCamera](../HEOComponents/HEOCamera.md)
+
+- [HEOCollider](../HEOComponents/HEOCollider.md)
+
+- [HEOField](../HEOComponents/HEOField.md)
+
+- [HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)
+
+- [HEOObject](../HEOComponents/HEOObject.md)
+
+- [HEOParticle](../HEOComponents/HEOParticle.md)
+
+- [HEOPlane](../HEOComponents/HEOPlane.md)
+
+- [HEOShadow](../HEOComponents/HEOShadow.md)
+
+- [HEOSpot](../HEOComponents/HEOSpot.md)
+
+- [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+
+- [HEOUVScroller](../HEOComponents/HEOUVScroller.md)
+
+- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md) * SDK Ver12.3.4以降
+
+!!! caution "Activityエクスポート時のHEOVideoTriggerについて"
+    SDK Ver12.3.4以降ではHEOVideoTriggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
+    ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[HEOAreacollider](../HEOComponents/HEOAreacollider.md)による再生を行う必要があります。
 
 ## Activityに含められない / サポート外のHEOコンポーネント
 
+- [HEOActionTrigger](../HEOComponents/HEOActionTrigger.md)
+
 - [HEOCylinderCollider](../WorldMakingGuide/Collider.md)
+
+- [HEOInfo](../HEOComponents/HEOInfo.md)
 
 - [HEOLODLevel](../HEOComponents/HEOLODLevel.md)
 
 - [HEOMirror](../HEOComponents/HEOMirror.md)
 
-- [HEOInfo](../HEOComponents/HEOInfo.md)
-
 - [HEOObjectType](../HEOComponents/HEOObjectType.md)
 
-- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md)
-
-- [HEOActionTrigger](../HEOComponents/HEOActionTrigger.md)
+- [HEOProperty](../HEOComponents/HEOProperty.md) *ページ作成中
 
 - [HEOScript](../HEOComponents/HEOScript.md)
 
-- [HEOProperty](../HEOComponents/HEOProperty.md) *WIP
+- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md) * SDK Ver12.3.4以前

@@ -84,3 +84,7 @@ StringMode refers to the specified URL. It can be used for video streaming, etc.
 !!! note caution
     The SDK does not support distance falloff for video audio.<br>
     As an alternative implementation, the [HEOAreaCollider](../HEOComponents/HEOAreacollider.md) can be used to stop the video when the player goes out from a certain range.
+
+!!! caution "HEOVideoTrigger in Activity"
+    On SDK Ver12.3.4 and later versions, HEOVideoTrigger can be included on exporting Activity using [VKC Activity Exporter](../SDKTools/VKCActivityExporter.md).<br>
+    However, as Autoplay cannot be enabled in Activity, the player must manually click or use the [HEOAreacollider](../HEOComponents/HEOAreacollider.md) to play the video.

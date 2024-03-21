@@ -51,6 +51,8 @@
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
   - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/particleeditor/pe_about_properties.html)
     - 修正されたバグ・廃止された機能を追記
+  - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VKCActivityExporter.html)
+    - SDK12.3.4以降：HEOVideoTrigger使用の際の注意を追加
 - ワールドの軽量化方法
   - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldOptimization/TextureCompression.html)
     - Texture Import Viewerについて案内を追加
