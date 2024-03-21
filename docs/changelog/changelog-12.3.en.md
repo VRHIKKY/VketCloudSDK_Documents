@@ -50,6 +50,8 @@
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
   - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/particleeditor/pe_about_properties.html)
     - Removed notice on fixed bugs and deleted info on deprecated features
+  - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VKCActivityExporter.html)
+    - On SDK12.3.4 and later: added caution on using HEOVideoTrigger
 - World Optimization
   - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldOptimization/TextureCompression.html)
     - Added overview of Texture Import Viewer
