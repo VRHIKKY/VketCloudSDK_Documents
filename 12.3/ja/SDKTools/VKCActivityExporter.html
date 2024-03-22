@@ -982,6 +982,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_7">
@@ -1260,6 +1262,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SDKTools/VketCloudSDK" class="md-nav__link">
+        VketCloudSDK設定
+      </a>
     </li>
   
 
@@ -5825,7 +5841,7 @@
 <p>Activityを他のクリエイターに配布する際は、このフォルダをzipもしくはUnitypackageに圧縮/変換した上で配布を行います。</p>
 <p>なお、配布の際はdataフォルダ下のテクスチャ/3Dモデルなどのデータが第三者の著作権等を侵害しないこと、<a href="https://account.vket.com/terms#vket-cloud" target="_blank">Vket Cloudエンジン利用規約</a>を十分確認した上で配布を行ってください。</p>
 <h2 id="activity-property">Activity / Propertyの設定について</h2>
-<p><a href="../HEOComponents/HEOProperty.md">HEOProperty</a>にてアクティビティを使用する際、設定のためにActivityの<code>Overrides</code>(Property)項目を定義し、HeliScriptにて参照することができます。</p>
+<p><a href="../HEOComponents/HEOActivity.html">HEOActivity</a>にてアクティビティを使用する際、設定のためにActivityの<code>Overrides</code>(Property)項目を定義し、HeliScriptにて参照することができます。</p>
 <p>Propertyを追加するには編集したいアクティビティのjsonファイルを開き、<code>properties</code>に例として以下のようにキーと値を追加のうえで保存します。</p>
 <div class="codehilite"><pre><span></span><code><span class="c1">//中略</span>
 <span class="w">      </span><span class="nt">&quot;components&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
@@ -5838,7 +5854,7 @@
 <span class="c1">//中略</span>
 </code></pre></div>
 
-<p>設定したPropertyは<a href="../HEOComponents/HEOProperty.md">HEOProperty</a>にてアクティビティのjsonを読み込んだ際に<code>overrides</code>にて表示され、ワールド制作者がアクティビティの設定に使用できます。</p>
+<p>設定したPropertyは<a href="../HEOComponents/HEOActivity.html">HEOActivity</a>にてアクティビティのjsonを読み込んだ際に<code>overrides</code>にて表示され、ワールド制作者がアクティビティの設定に使用できます。</p>
 <p><img alt="VKCActivityExporter_8" src="img/VKCActivityExporter_8.jpg" /></p>
 <p>また、各PropertyはHeliScriptにて<a href="../hs/hs_class_item.html#getproperty">Item.GetProperty()</a>および<a href="../hs/hs_class_item.html#setproperty">Item.SetProperty()</a>を使用して参照と書き込みができます。</p>
 <p>なお、Propertyのキー及び値は必ず<strong>string</strong>型で返されるため、別の変数型で扱いたい場合は型変換を行ってください。</p>
@@ -5867,58 +5883,72 @@
 <h2 id="activityheo">Activityに含められるHEOコンポーネント</h2>
 <ul>
 <li>
+<p><a href="../HEOComponents/HEOActivity.html">HEOActivity</a></p>
+</li>
+<li>
 <p><a href="../HEOComponents/HEOAnimation.html">HEOAnimation</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOCollider.html">HEOCollider</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOMeshCollider.html">HEOMeshCollider</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOUVScroller.html">HEOUVScroller</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOShadow.html">HEOShadow</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOObject.html">HEOObject</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOPlane.html">HEOPlane</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOTextPlane.html">HEOTextPlane</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOSpot.html">HEOSpot</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOParticle.html">HEOParticle</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOField.html">HEOField</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOCamera.html">HEOCamera</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOBackgroundTexture.html">HEOBackgroundTexture</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOAudio.html">HEOAudio</a></p>
 </li>
 <li>
 <p><a href="../HEOComponents/HEOAreacollider.html">HEOAreacollider</a></p>
 </li>
 <li>
-<p><a href="../HEOComponents/HEOActivity.html">HEOActivity</a></p>
+<p><a href="../HEOComponents/HEOAudio.html">HEOAudio</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOBackgroundTexture.html">HEOBackgroundTexture</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOCamera.html">HEOCamera</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOCollider.html">HEOCollider</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOField.html">HEOField</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOMeshCollider.html">HEOMeshCollider</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOObject.html">HEOObject</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOParticle.html">HEOParticle</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOPlane.html">HEOPlane</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOShadow.html">HEOShadow</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOSpot.html">HEOSpot</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOTextPlane.html">HEOTextPlane</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOUVScroller.html">HEOUVScroller</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOVideoTrigger.html">HEOVideoTrigger</a> * SDK Ver12.3.4以降</p>
 </li>
 </ul>
+<div class="admonition caution">
+<p class="admonition-title">Activityエクスポート時のHEOVideoTriggerについて</p>
+<p>SDK Ver12.3.4以降ではHEOVideoTriggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
+ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは<a href="../HEOComponents/HEOAreacollider.html">HEOAreacollider</a>による再生を行う必要があります。</p>
+</div>
 <h2 id="activity-heo">Activityに含められない / サポート外のHEOコンポーネント</h2>
 <ul>
 <li>
+<p><a href="../HEOComponents/HEOActionTrigger.html">HEOActionTrigger</a></p>
+</li>
+<li>
 <p><a href="../WorldMakingGuide/Collider.html">HEOCylinderCollider</a></p>
+</li>
+<li>
+<p><a href="../HEOComponents/HEOInfo.html">HEOInfo</a></p>
 </li>
 <li>
 <p><a href="../HEOComponents/HEOLODLevel.html">HEOLODLevel</a></p>
@@ -5927,22 +5957,16 @@
 <p><a href="../HEOComponents/HEOMirror.html">HEOMirror</a></p>
 </li>
 <li>
-<p><a href="../HEOComponents/HEOInfo.html">HEOInfo</a></p>
-</li>
-<li>
 <p><a href="../HEOComponents/HEOObjectType.html">HEOObjectType</a></p>
 </li>
 <li>
-<p><a href="../HEOComponents/HEOVideoTrigger.html">HEOVideoTrigger</a></p>
-</li>
-<li>
-<p><a href="../HEOComponents/HEOActionTrigger.html">HEOActionTrigger</a></p>
+<p><a href="../HEOComponents/HEOProperty.md">HEOProperty</a> *ページ作成中</p>
 </li>
 <li>
 <p><a href="../HEOComponents/HEOScript.html">HEOScript</a></p>
 </li>
 <li>
-<p><a href="../HEOComponents/HEOProperty.md">HEOProperty</a> *WIP</p>
+<p><a href="../HEOComponents/HEOVideoTrigger.html">HEOVideoTrigger</a> * SDK Ver12.3.4以前</p>
 </li>
 </ul>
                 

@@ -980,6 +980,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_7">
@@ -1169,6 +1171,20 @@
     <li class="md-nav__item">
       <a href="../SDKTools/VKCActivityExporter.html" class="md-nav__link">
         VKC Activity Exporter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SDKTools/VketCloudSDK" class="md-nav__link">
+        VketCloudSDK設定
       </a>
     </li>
   
@@ -5863,6 +5879,11 @@ StringModeはURLを指定して参照します。動画ストリーミング等�
 <p class="admonition-title">Note</p>
 <p>動画音声は距離減衰に対応していません。<br>
 代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は<a href="HEOAreacollider.html">HEOAreaCollider</a>と<a href="../Actions/System/StopVideo.html">StopVideoアクション</a>を使用してください。</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Activityエクスポート時のHEOVideoTriggerについて</p>
+<p>SDK Ver12.3.4以降では<a href="../SDKTools/VKCActivityExporter.html">VKC Activity Exporter</a>にてアクティビティを出力する際、HEOVideoTriggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
+ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは<a href="HEOAreacollider.html">HEOAreacollider</a>による再生を行う必要があります。</p>
 </div>
                 
               
