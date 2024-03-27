@@ -24,6 +24,6 @@ For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide
 ## About collision / area range detection by collider
 
 The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
-Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md) on HEOWorldSettings and pressing F4.
+Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
 
 ![HEOCollider_2](img/HEOCollider_2.jpg)

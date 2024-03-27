@@ -61,6 +61,8 @@
 - HEOコンポーネント
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOActivity.html)
     - Scene Previewと高度な設定について追記
+  - [HEOAreacollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOAreacollider.html)
+    - デバッグモードにおけるコリジョン可視化を有効にする手順について更新
   - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOMeshCollider.html)
     - 使い方をVer12.3準拠に更新
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記

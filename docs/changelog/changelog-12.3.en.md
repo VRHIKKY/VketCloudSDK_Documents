@@ -61,6 +61,8 @@
 - HEO Components
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOActivity.html)
     - Added info on Scene Preview and Advanced Settings
+  - [HEOAreacollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOAreacollider.html)
+    - Updated instructions on enabling collision view on debug mode
   - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOMeshCollider.html)
     - Updated How to Use according to Ver12.3
     - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
