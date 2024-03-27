@@ -49,6 +49,8 @@
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
+  - [Debug Mode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/DebugMode.html)
+    - Updated information according to Ver12.3.4 (English version WIP)
   - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/particleeditor/pe_about_properties.html)
     - Removed notice on fixed bugs and deleted info on deprecated features
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VKCActivityExporter.html)

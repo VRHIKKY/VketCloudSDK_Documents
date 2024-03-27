@@ -49,6 +49,8 @@
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
+  - [デバッグモード](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldEditingTips/DebugMode.html)
+    - 表示される情報をVer12.3.4基準に更新
   - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/particleeditor/pe_about_properties.html)
     - 修正されたバグ・廃止された機能を追記
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VKCActivityExporter.html)
