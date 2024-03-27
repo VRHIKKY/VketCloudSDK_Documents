@@ -166,6 +166,9 @@ plugins:
           Physics: 物理演算
           Camera: カメラ
           Common Dialog: 汎用ダイアログ
+          # External API
+          External API: 外部API連携
+          Broker API: ブローカーAPIについて
           # チェンジログ / リリースノート
           Change Log: チェンジログ
           About Changelog: チェンジログについて
@@ -349,6 +352,9 @@ nav:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
+- External API:
+  - Broker API: ExternalAPI/BrokerAPI.md
+  - JsVal: ExternalAPI/JsVal.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v12.x:
