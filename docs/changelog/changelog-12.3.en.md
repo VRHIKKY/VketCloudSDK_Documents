@@ -24,7 +24,6 @@
   - [delegate](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_delegate.html) *English version WIP
   - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_camera.html) *English version WIP
   - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_commondialog.html) *English version WIP
-  - [Item Types and Usable Functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
 
 ## Edited Pages
 
@@ -90,6 +89,9 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Added callback function on object deselect
   - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class_item.html)
     - Added list of object type which can call each function
+  - [Item Types and HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
+    - Changed title（Old: Item Types and Usable Functions）
+    - Deleted chart of functions usable for each HEOComponent, as latest information is now on Item class page
   - [Player class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class_item.html)
     - Added feature change for Player class functions within constructor
     - Added new functions: ChangeActivityMotion / SetNextActivityMotion, and SetPresetAvatar
