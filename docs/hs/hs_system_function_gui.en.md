@@ -19,13 +19,13 @@ Shows the Canvas specified by name with true and hides it with false.
 
 
 ### hsCanvasSetGUIPos
-`bool hsCanvasSetGUIPos(string LayerName, string GUIName, float X, float Y)`
+`bool hsCanvasSetGUIPos(string LayerName, bool IsPortrait, string GUIName, float X, float Y)`
 
 Sets the GUI element's position as the designated value.
 
 
 ### hsCanvasGetGUIPos
-`bool hsCanvasSetGUIPos(string LayerName, string GUIName, ref float X, ref float Y)`
+`bool hsCanvasGetGUIPos(string LayerName, bool IsPortrait, string GUIName, ref float X, ref float Y)`
 
 Gets the GUI element's position value.
 
