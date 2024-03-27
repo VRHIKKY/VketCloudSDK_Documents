@@ -1,7 +1,7 @@
 # デバッグモード
 
 Vket Cloud Settings / [BasicSettings](../VketCloudSettings/BasicSettings.md)にてデバッグモードを有効にすると、ワールドをビルドした際に様々な検証用機能が使えるようになります。<br>
-デバッグモードが有効なとき、F1～F7キーでデバッグ機能を使うことが出来るようになります。
+デバッグモードが有効なとき、F2～F9キーでデバッグ機能を使うことが出来るようになります。
 
 ## デバッグモード：ステータス表示について
 
@@ -23,7 +23,7 @@ Vket Cloud Settings / [BasicSettings](../VketCloudSettings/BasicSettings.md)に�
 | VRAM | グラフィックスメモリの使用状況です。単位はMBです。|
 | Total | 総使用メモリです。|
 | Tex | テクスチャに使用しているメモリです。|
-| Comp | 圧縮テクスチャに使用している目盛です。|
+| Comp | 圧縮テクスチャに使用しているメモリです。|
 | Text | テキスト表示に使用しているメモリです。|
 | RT | RenderTargetに使用しているメモリです。|
 | Etc | それ以外で使用しているメモリです。|
@@ -48,19 +48,19 @@ Vket Cloud Settings / [BasicSettings](../VketCloudSettings/BasicSettings.md)に�
 
 コンポーネントテキストです。例として [HEOScript](../HEOComponents/HEOScript.md) にて [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline)を実行するとここに出力されます。
 
-### F2：インフォメーションUI表示
+## F2：インフォメーションUI表示
 
 ![DebugMode_F2_1](./img/DebugMode_F2_1.jpg)
 
 各種情報を表示したり設定変更を行ったりできるUIを表示します。
 
-#### Main
+### Main
 
 ビデオメモリとドローコールについて表示します。
 
 ![DebugMode_F2_2](./img/DebugMode_F2_2.jpg)
 
-#### Sprite
+### Sprite
 
 ![DebugMode_F2_3](./img/DebugMode_F2_3.jpg)
 
@@ -68,34 +68,34 @@ Vket Cloud Settings / [BasicSettings](../VketCloudSettings/BasicSettings.md)に�
 名前や種別、所属レイヤーや位置、大きさの情報を確認することができます。<br>
 文字がグレーになっているのは非アクティブなUIです。
 
-一覧から好きな項目をクリックすることで、ゲーム画面でのそのUIのある位置ををアクティブ非アクティブ問わず黄色ハイライトで強調表示します。
+一覧から好きな項目をクリックすることで、ゲーム画面でのそのUIのある位置をアクティブ・非アクティブ問わず黄色ハイライトで強調表示します。
 
-#### Texture
+### Texture
 
 ![DebugMode_F2_4](./img/DebugMode_F2_4.jpg)
 
-シーン内で使われているテクスチャの一覧を表示します。  
+シーン内で使われているテクスチャの一覧を表示します。<br>
 どこで使われているか、大きさはいくつか、ということについても確認可能です。
 
-#### Rendering
+### Rendering
 
 ![DebugMode_F2_5](./img/DebugMode_F2_5.jpg)
 
 レンダリング設定を調整するUIを表示します。
 
-##### Lighting
+#### Lighting
 
 ライトの強さとライトマップの強さを変更できます。
 
-##### Shadow
+#### Shadow
 
 動的影の設定を変更できます。<br>
 各パラメータの定義は[RenderingSettings / Shadow](../VketCloudSettings/RenderingSettings.md)をご覧ください。
 
-##### LightScattering
+#### LightScattering
 
-各パラメータゲージを操作することで色合いを変更することができます。  
-Useにチェックが入っている間だけ適用状態となります。  
+各パラメータゲージを操作することで色合いを変更することができます。<br>
+Useにチェックが入っている間だけ適用状態となります。<br>  
 再度Useをクリックするとライトスキャタリング設定未適用状態に戻ります。
 
 ライトスキャタリング設定については[こちら](../VketCloudSettings/RenderingSettings.md)をご確認ください。
@@ -104,12 +104,7 @@ Useにチェックが入っている間だけ適用状態となります。
 
 ![DebugMode_F2_6](./img/DebugMode_F2_6.jpg)
 
-LSタブのUseをクリックし、各パラメータゲージを操作することで色合いを変更することができます。<br>
-再度Useをクリックするとライトスキャタリング設定未適用状態に戻ります。
-
-ライトスキャタリング設定については[こちら](../VketCloudSettings/RenderingSettings.md)をご確認ください。
-
-##### Lens
+#### Lens
 
 カメラフィルターです。  
 
@@ -122,13 +117,13 @@ Mono : 白黒映像になります。
 Sepia : セピア調になります。
 ![DebugMode_Camera_3](./img/DebugMode_Camera_3.jpg)
 
-#### Script
+### Script
 
 ![DebugMode_F2_7](./img/DebugMode_F2_7.jpg)
 
 スクリプト情報を表示します。
 
-##### 表示情報について
+#### 表示情報について
 
 | 名称 | 機能 |
 | ---- | ---- |
@@ -136,7 +131,7 @@ Sepia : セピア調になります。
 | ローカルフレームカウント | 関数フレームのスタック状態 (0であるはず。そうでなければ異常)  |
 | オペランドスタックカウント | 演算用スタックに積まれている要素数 (0であるはず。そうでなければ異常) |
 
-### F3：当たり判定表示
+## F3：当たり判定表示
 
 ![DebugMode_3](./img/DebugMode_3.jpg)
 
@@ -157,7 +152,7 @@ SphereColliderは円形モデル表示、BoxColliderは枠線表示になりま�
 | 黄　|　エリアコライダーです。  |
 | 緑　|　ReflectionProbeの範囲です。|
 
-### F4：オクルージョンカリング
+## F4：オクルージョンカリング
 
 ![DebugMode_4](./img/DebugMode_4.jpg)
 
@@ -168,7 +163,7 @@ SphereColliderは円形モデル表示、BoxColliderは枠線表示になりま�
 オクルージョンカリング機能を使うためには別途準備が必要です。<br>
 詳しくは[こちら](../WorldOptimization/OcclusionCulling.md)をご確認ください。
 
-### F5：Script情報表示
+## F5：Script情報表示
 
 ![DebugMode_5](./img/DebugMode_5.jpg)
 
@@ -177,7 +172,7 @@ Script情報を表示します。<br>
 
 F2で表示されるウィンドウのScriptタブと同様です。
 
-#### F5：表示情報について
+### F5：表示情報について
 
 | 名称 | 機能 |
 | ---- | ---- |
@@ -185,7 +180,7 @@ F2で表示されるウィンドウのScriptタブと同様です。
 | ローカルフレームカウント | 関数フレームのスタック状態 (0であるはず。そうでなければ異常)  |
 | オペランドスタックカウント | 演算用スタックに積まれている要素数 (0であるはず。そうでなければ異常) |
 
-### F6：当たり判定無視
+## F6：当たり判定無視
 
 ![DebugMode_6](./img/DebugMode_6.jpg)
 
@@ -215,7 +210,7 @@ Image、Text、Buttonについて表示状況や座標等の情報を確認す�
 | Pivot | 中心点です。 |
 | Anchor | アンカーの情報です。 |
 
-### F8ステータス非表示
+## F8：ステータス非表示
 
 画面上部のステータスを非表示にします。
 
@@ -231,23 +226,3 @@ Image、Text、Buttonについて表示状況や座標等の情報を確認す�
 
 !!! note "UI非表示キーについて"
     Ver9.0以前のSDKでは**F1**キーが割り当てられていましたが、現バージョンではF9で使用できます。
-
----
-
-## F2：ライトスキャタリング設定
-
-![DebugMode_2](./img/DebugMode_2.jpg)
-
-ライトスキャタリング設定を調整するUIを表示します。<br>
-LSタブのUseをクリックし、各パラメータゲージを操作することで色合いを変更することができます。<br>
-再度Useをクリックするとライトスキャタリング設定未適用状態に戻ります。
-
-ライトスキャタリング設定については[こちら](../VketCloudSettings/RenderingSettings.md)をご確認ください。
-
-SDK9.0では「Lens」という項目が追加され、カメラフィルターが使えるようになっています。
-
-![DebugMode_Camera_1](./img/DebugMode_Camera_1.jpg)
-
-![DebugMode_Camera_2](./img/DebugMode_Camera_2.jpg)
-
-![DebugMode_Camera_3](./img/DebugMode_Camera_3.jpg)
