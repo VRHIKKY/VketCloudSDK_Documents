@@ -40,7 +40,6 @@ Animationコンポーネントを持つオブジェクトを選択した状態�
 
 ![PropAnimation_TroubleShooting_6](./img/PropAnimation_TroubleShooting_6.jpg)
 
-
 上記画像の場合、Animationコンポーネントを持つオブジェクト「Root」を直接アニメーションで動かそうとしているため、エラーとなります。
 
 ![PropAnimation_TroubleShooting_7](./img/PropAnimation_TroubleShooting_7.jpg)
@@ -87,7 +86,8 @@ Vket Cloudが対応しているシェーダーは限られています。
 上記画像では、`Index was out of range`のエラーが表示されています。<br>
 こちらのエラーはuv2のないメッシュをMeshRendererで扱おうとすると発生するため、uv2の作成またはSkinnedMeshRendererの使用によって回避できます。
 
-ただし、SkinnedMeshRendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。
+!!! caution "SkinnedMeshRendererに関する注意"
+    SkinnedMeshRendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。
 
 この例のように、コンポーネント設定に不備がある場合に書き出しが失敗する場合があります。
 
