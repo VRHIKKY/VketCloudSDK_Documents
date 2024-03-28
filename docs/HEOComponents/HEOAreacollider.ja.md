@@ -1,4 +1,5 @@
 # HEOAreaCollider
+
 ![HEOAreaCollider](img/HEOAreaCollider.jpg)
 
 HEOAreaColliderは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
@@ -21,10 +22,9 @@ Actions,LeaveActionsそれぞれにおいてAddをクリックすることで任
 アクションについては[アクションの概要](../Actions/ActionsOverview.md)を参照してください。<br>
 コライダーについては[Unity制作ガイドライン - コライダー](../WorldMakingGuide/UnityGuidelines.md)を参照してください。
 
-
 ## コライダーの衝突 / エリア範囲判定について
 
 ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>
-また、以下のようなコリジョンの可視化はHEOWorldSettingから[デバッグモード](../WorldEditingTips/DebugMode.md)を有効にした上でF4キーを押すと切り替えできます。
+また、以下のようなコリジョンの可視化は[VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md)から[デバッグモード](../WorldEditingTips/DebugMode.md#f3)を有効にした上でF3キーを押すと切り替えできます。
 
 ![HEOCollider_2](img/HEOCollider_2.jpg)
