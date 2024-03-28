@@ -1,6 +1,6 @@
 # Version Update Troubleshooting
 
-This page lists troubles and solution that may happen when [updating the VketCloudSDK](../AboutVketCloudSDK/SetupSDK_external.html#installing-a-specified-version-updating-an-existing-sdk).
+This page lists troubles and solution that may happen when [updating the VketCloudSDK](../AboutVketCloudSDK/SetupSDK_external.md#installing-a-specified-version-updating-an-existing-sdk).
 
 If a trouble not listed / cannot be solved by solutions on this page happens on version updating, feel free to ask on the [contact form](https://www.hikky.co.jp/contact?type=service&category=general){target=_blank} or the [Vket Cloud community Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}.
 
