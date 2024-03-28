@@ -67,6 +67,9 @@
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
     - Added info on component deprecation
 - Actions
+  - Item
+    - [Play/StopItem](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Item/PlayStopItem.html)
+      - Added information about StopItem
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Programmatic/IfEqual.html)
       - Changed Title (old:If A == B)
