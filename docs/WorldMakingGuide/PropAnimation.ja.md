@@ -12,6 +12,7 @@ VketCloudSDKでは、[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポ�
 [HEOAnimation](../HEOComponents/HEOAnimation.md)コンポーネントの`使い方`項目をご参照ください。
 
 ## HEOObjectにアニメーションを付与する方法
+
 オブジェクトを.heoに書き出し、アニメーションを.hemに書き出し、シーン上に配置することで、[HEOAnimation](../HEOComponents/HEOAnimation.md)より自由に動くオブジェクトを作成することができます。
 
 なお、ここで使用できるアニメーションのパラメータは**Transformの値変更のみ**です。
@@ -19,7 +20,7 @@ VketCloudSDKでは、[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポ�
 ### .hemファイル(Heliodor Export Motionファイル)を書き出す
 
 1\. アニメーション作成用に空の親オブジェクト(下記画像におけるAnimationBase)と動かすためのCubeオブジェクト（下記画像におけるCubeRotation）を新規作成し、親子関係をヒエラルキーにて構成した上でともにPosition(0,0,0)地点に設置します。<br>
-    
+
 ![PropAnimation_1](./img/PropAnimation_1.jpg)
 
 2\. 空オブジェクトを選択し、InspectorビューのAdd ComponentからAnimationを追加します。<br>
@@ -71,12 +72,14 @@ Legacyにチェックを入れます。
 ![PropAnimation_11](./img/PropAnimation_11.jpg)
 
 !!! note
-        手順②でAdd ComponentでAnimationを追加する際、誤って子オブジェクトのCubeオブジェクトに対してAnimationを追加してしまっていないか確認してください。<br>
-        そのまま作業を進めてしまうと`KeyNotFoundException: The given key was not present in the dictionary.`が発生する原因となります。
+    手順②でAdd ComponentでAnimationを追加する際、誤って子オブジェクトのCubeオブジェクトに対してAnimationを追加してしまっていないか確認してください。<br>
+    そのまま作業を進めてしまうと`KeyNotFoundException: The given key was not present in the dictionary.`が発生する原因となります。
 
 詳しいアニメーションの作り方はここでは説明しませんが、
+
 - 始点と終点はすべての項目でキーフレームが入力されている必要がある
 - Animationコンポーネントをアタッチしたオブジェクト（空オブジェクト）を動かしていない
+
 の2点は守ってください。
 
 キーフレームをいくつか追加し、任意のアニメーションを作成してください。
@@ -93,7 +96,7 @@ Legacyにチェックを入れます。
 ![PropAnimation_14](./img/PropAnimation_14.jpg)
 
 !!! note
-        エラーが出てしまった場合は [オブジェクトを動かす - できないときは]() を参照するようにしてください。
+    エラーが出てしまった場合は [オブジェクトを動かす - できないときは](./PropAnimation_TroubleShooting.md) を参照するようにしてください。
 
 ### .heoファイル(Heliodor Export Objectファイル)を書き出す
 
@@ -109,7 +112,7 @@ Legacyにチェックを入れます。
 
 ![PropAnimation_17](./img/PropAnimation_17.jpg)
 
-正しく保存されたことを確認するため、コンソールタブを開き、下記のような画面が出たら保存完了です。<br>
+正しく保存されたことを確認するため、コンソールタブを開き、下記のような画面が出たら保存完了です。
 
 ![PropAnimation_18](./img/PropAnimation_18.jpg)
 
@@ -135,13 +138,12 @@ Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示され�
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-!!! note caution
-        .heo書き出しの注意点：<br>
-        - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、[HEOObject](../HEOComponents/HEOObject.md)にてシーン上に配置した際に、[HEOObject](../HEOComponents/HEOObject.md)のPosition + 書き出し時のPositionになります。<br>
-        - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
-        - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
-        - Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
-          自動再生したくない場合は、Motion欄の1番目は空欄にしてください。<br>
+!!! caution ".heo書き出しの注意点"
+    - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、[HEOObject](../HEOComponents/HEOObject.md)にてシーン上に配置した際に、[HEOObject](../HEOComponents/HEOObject.md)のPosition + 書き出し時のPositionになります。<br>
+    - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
+    - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
+    - Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
+        自動再生したくない場合は、Motion欄の1番目は空欄にしてください。
 
 ## HEOObjectに付与したアニメーションの制御
 
@@ -150,9 +152,9 @@ Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示され�
 [PlayItem](../Actions/Item/PlayStopItem.md)で[HEOObject](../HEOComponents/HEOObject.md)に付与したアニメーションの再生が可能です。<br>
 Indexは[PlayItem](../Actions/Item/PlayStopItem.md)にObject TypeがMotionのオブジェクトを入れた際に出現します。
 
-!!! note 
-        [PlayItem](../Actions/Item/PlayStopItem.md)：アイテムを再生する。Indexは再生対象となるMotion番号です。<br>
-        PlayItemはMotionの入ったHEOオブジェクトのほか、AudioやParticleに対しても有効です。
+!!! note "PlayItemについて"
+    [PlayItem](../Actions/Item/PlayStopItem.md)：アイテムを再生する。Indexは再生対象となるMotion番号です。<br>
+    PlayItemはMotionの入ったHEOオブジェクトのほか、AudioやParticleに対しても有効です。
 
 アニメーションするCubeのアニメーションを2番目に設定し、Loopしないようにし、BeginActions上部の”Add”をクリックしてMotion欄を追加します。<br>
 1つ目のMotionでは.hemに指定されているモーションを削除し、2つ目のMotionに.hemファイルを指定します。
@@ -167,7 +169,6 @@ Actionsの下のList is Emptyと書かれている右下の＋ボタンを押下
 
 ![PropAnimation_25](./img/PropAnimation_25.jpg)
 
-
 Targetの欄で.heoと.hemを追加したオブジェクトを選択したし、対象となるMotionのIndex番号を入力します。<br>
 先程1つ目のMotionは空にし（Index 0）、2つ目のMotion（Index 1）に作動させたいMotionを設定したため、Indexは1と入力します。
 
@@ -177,20 +178,20 @@ Targetの欄で.heoと.hemを追加したオブジェクトを選択したし、
 
 ![PropAnimation_Result_2](./img/PropAnimation_Result_2.gif)
 
-!!! note
-        [StopItem](../Actions/Item/PlayStopItem.md)について：<br>
-        [PlayItem](../Actions/Item/PlayStopItem.md)の対になるアクションに[StopItem](../Actions/Item/PlayStopItem.md)があります。<br>
-        一見、再生中のアニメーションを停止しそうなアクションですが、StopItemの効果はbeginactionの停止であり、再生中のアニメーションはBeginActionsに該当しないので止まりません。<br>
-        StopItemはパーティクルやサウンドを止めるのに使うことができます。
+!!! caution " [StopItem](../Actions/Item/PlayStopItem.md)について"
+    [PlayItem](../Actions/Item/PlayStopItem.md)の対になるアクションに[StopItem](../Actions/Item/PlayStopItem.md)があります。<br>
+    一見、再生中のアニメーションを停止しそうなアクションですが、StopItemの効果はBeginActionsの停止であり、再生中のアニメーションはBeginActionsに該当しないので止まりません。<br>
+    StopItemはパーティクルやサウンドを止めるのに使うことができます。<br>
+    なお、疑似的なアニメーション停止の実装としては[PlayItemを使用した空のMotion呼び出し](../Actions/Item/PlayStopItem.md#_3)があります。
 
 ### HeliScriptを使用した制御
 
 HeliScriptを使用して、アニメーションの制御を行うことができます。<br>
-例として、以下のように3秒ごとにアニメーションの再生を繰り返すHeliScriptが作成できます。<br>
+例として、以下のように3秒ごとにアニメーションの再生を繰り返すHeliScriptが作成できます。
 
 ここでは[Itemクラス](../hs/hs_class_item.md)のChangeMotion()を使用して[HEOObject](../HEOComponents/HEOObject.md)内のモーションを制御しています。<br>
 
-``````
+```
 component SwitchAnimation
 {
     // 回転キューブ
@@ -224,7 +225,7 @@ component SwitchAnimation
         }
     }
 }
-``````
+```
 
 作成したHeliScriptは、HEOScriptを使用してワールド内に配置します。
 
