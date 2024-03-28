@@ -50,7 +50,7 @@ component BrokerAPI
     //定数
     const string GET_SWITCH_NAME = "Button_Get";//Worldで押すボタンのgameObject名を入れる
     const string API_URL = "https://www.googleapis.com/youtube/v3/search";//アクセス許可に表示するURL兼疎通URL
-    const string YOUTUBE_API_KEY = "AIzaSyAQBSwoI0lxVPN-QZm98MTpZ-1EQUx-puc";//youtube APIのapiキーを入れる
+    const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//youtube APIのapiキーを入れる
     const string SPATIUM_CODE = "Default";//特殊なことをしなければDefault
     const string SEARCH_WORD = "VketCloud";//検索するワードを入れる
     const int MAX_RESULTS = 10;//検索結果の数を入れる。1～50
