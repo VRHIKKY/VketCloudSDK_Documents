@@ -2,8 +2,8 @@
 
 [オブジェクトをアニメーションさせる](PropAnimation.md) にて、各手順が出来ないときに見るページです。
 
-
 ## HEOAnimationのアタッチについて
+
 ### 思っていた挙動と異なる
 
 ![PropAnimation_TroubleShooting_1](./img/PropAnimation_TroubleShooting_1.jpg)
@@ -23,15 +23,14 @@ Scaleを変更したオブジェクトの子オブジェクトのRotationを変�
 ---
 
 ## .hemファイル書き出しについて
+
 ### 書き出し時にエラーが出る
+
 .hemファイルの書き出しでエラーが出る要因はいくつか考えられます。
 
-``````
-KeyNotFoundException: The given key was not present in the dictionary.
-``````
+`KeyNotFoundException: The given key was not present in the dictionary.`
 
 ![PropAnimation_TroubleShooting_4](./img/PropAnimation_TroubleShooting_4.jpg)
-
 
 ### ①書き出し元となるオブジェクトを動かすアニメーションがある
 
@@ -40,7 +39,6 @@ KeyNotFoundException: The given key was not present in the dictionary.
 Animationコンポーネントを持つオブジェクトを選択した状態でExport Motionを選択することでそのオブジェクトのアニメーションが書き出されますが、書き出し元となるオブジェクト自体に対するアニメーションが入っていたらエラーとなります。
 
 ![PropAnimation_TroubleShooting_6](./img/PropAnimation_TroubleShooting_6.jpg)
-
 
 上記画像の場合、Animationコンポーネントを持つオブジェクト「Root」を直接アニメーションで動かそうとしているため、エラーとなります。
 
@@ -56,6 +54,7 @@ Animationコンポーネントを持つオブジェクトを選択した状態�
 現状のアニメーション編集シーンを一度保存し、再度開きなおすことでエラーが解消されます。
 
 ### ローディング画面でエラーが出る
+
 hemの書き出しに成功しても、アニメーションを実装した後ローディング画面でエラーとなる場合もあります。
 
 ![PropAnimation_TroubleShooting_8](./img/PropAnimation_TroubleShooting_8.jpg)
@@ -63,39 +62,51 @@ hemの書き出しに成功しても、アニメーションを実装した後�
 だいたい41%か42％あたりでこれが出る
 
 ### Legacyアニメーションにしていない
+
 Animatorコンポーネントを入れることで作成できるAnimationではLegacy設定がされていません。<br>
 [オブジェクトをアニメーションさせる - .hemファイル書き出し](PropAnimation.md#hemheliodor-export-motion#hemheliodor-export-motion)の④に記載があるので、参考にしてみてください。
 
 ---
 
 ## .heoファイル書き出しについて
+
 ### 書き出しに失敗する
+
 Export Fieldでのオブジェクト書き出しが失敗することがあります。
 
 ### ①Vket Cloudで使用できないシェーダーを使っている
+
 Vket Cloudが対応しているシェーダーは限られています。
 使用できないシェーダーの場合、下記画像のように「UnknownShader」として表示されます。
 
 ![PropAnimation_TroubleShooting_9](./img/PropAnimation_TroubleShooting_9.jpg)
 
 ### ②コンポーネント設定に不備がある
+
 上記画像では、`Index was out of range`のエラーが表示されています。<br>
 こちらのエラーはuv2のないメッシュをMeshRendererで扱おうとすると発生するため、uv2の作成またはSkinnedMeshRendererの使用によって回避できます。
 
-このように、コンポーネント設定に不備がある場合、書き出しが失敗する可能性があります。
+!!! caution "SkinnedMeshRendererに関する注意"
+    SkinnedMeshRendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。
+
+この例のように、コンポーネント設定に不備がある場合に書き出しが失敗する場合があります。
 
 ### ③連続で色々なオブジェクトを書き出しすぎている
+
 アニメーション同様、連続で色々なオブジェクトを書き出しているとエラーとなる場合があります。<br>
 一度Unityシーンを再起動してから書き出しを行ってみましょう。
 
 ## 書き出しは成功するが、シーン上に表示されない
+
 ### ①書き出し座標がおかしい
+
 特例が無い限り、書き出し元オブジェクトの座標は(0,0,0)にしておきましょう。<br>
 HEOObjectとしてシーンに配置した際の座標は、HEOObjectがアタッチされたオブジェクトの座標 + 書き出し元オブジェクトの座標となります。
 
 例：書き出し元オブジェクトの座標 = (5, 2, 10) 、HEOObjectアタッチオブジェクトの座標 = (-3, 2, -6)の場合、シーン表示位置 = (2 , 4 , 4)となる
 
 ### ②書き出し元オブジェクトのシェーダーがVketCloudに対応していない
+
 シェーダーが対応していないため表示されていない可能性があります。<br>
 Standardなどに変更してみて表示されるかどうかお試しください。
 
@@ -106,7 +117,8 @@ Standardなどに変更してみて表示されるかどうかお試しくださ
 ![PropAnimation_TroubleShooting_10](./img/PropAnimation_TroubleShooting_10.jpg)
 
 ## 書き出し後Unityを再起動したら、プロジェクトが立ち上がらなくなった
-稀にあります。
+
+稀にあります。<br>
 原因は、テクスチャ圧縮用のbatの誤検知です。
 
 ![PropAnimation_TroubleShooting_11](./img/PropAnimation_TroubleShooting_10.jpg)
@@ -117,9 +129,11 @@ Standardなどに変更してみて表示されるかどうかお試しくださ
 ---
 
 ## HEOObjectのアニメーションについて
+
 ### アニメーションが再生されない
 
 ### ①アニメーションとオブジェクト階層・名称が一致していない
+
 VketCloudのアニメーションは、階層と名称に対して実行します。<br>
 例えば、子オブジェクト「Object_1」のPositionを変更するアニメーションを作成した場合、HEOObjectとして書き出しを行ったオブジェクト階層を原点として、子オブジェクトとなる「Object_1」という名称のオブジェクトを動かす、ということになります。
 
@@ -128,6 +142,7 @@ VketCloudのアニメーションは、階層と名称に対して実行しま�
 また、原点となる親オブジェクトの名称は異なっていても構いません。
 
 ### ②アニメーションが適用されていない
+
 HEOObjectのObject TypeをMotionに切り替えてアニメーションを入れるのを忘れた、PlayItemでアニメーションを再生するようにはしたが再生トリガーが実行できていない、など、アニメーションを適用しても何らかの理由で再生されないことがあります。
 
 こういった場合、「loopにチェックマークを入れ、Index 0に持ってきて動いているかどうかを調査する」のが一番手っ取り早いです。
