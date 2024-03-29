@@ -5541,9 +5541,7 @@ It is a good idea to check how it works on Unity before entering the values.</p>
 <h2 id="about-hem-file-export">About .hem file export</h2>
 <h3 id="error-occurs-when-exporting">Error occurs when exporting</h3>
 <p>There are several possible reasons why an error may occur when exporting a .hem file.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">KeyNotFoundException</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">present</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">dictionary</span><span class="o">.</span>
-</code></pre></div>
-
+<p><code>KeyNotFoundException: The given key was not present in the dictionary.</code></p>
 <p><img alt="PropAnimation_TroubleShooting_4" src="img/PropAnimation_TroubleShooting_4.jpg" /></p>
 <h3 id="1-there-is-an-animation-that-moves-the-object-that-is-the-export-source">1. There is an animation that moves the object that is the export source</h3>
 <p><img alt="PropAnimation_TroubleShooting_5" src="img/PropAnimation_TroubleShooting_5.jpg" /></p>
@@ -5573,8 +5571,12 @@ Please refer to step 4 of <a href="PropAnimation.html#export-hem-file-heliodor-e
 If the shader cannot be used, it will be displayed as "UnknownShader" as shown in the image below.</p>
 <p><img alt="PropAnimation_TroubleShooting_9" src="img/PropAnimation_TroubleShooting_9.jpg" /></p>
 <h3 id="2-there-is-a-problem-with-the-component-settings">2. There is a problem with the component settings</h3>
-<p>In the image above, the error `Index was out of range`` is displayed. <br>
+<p>In the image above, the error <code>Index was out of range</code> is displayed. <br>
 This error occurs when you try to handle a mesh without uv2 with MeshRenderer, so you can avoid it by creating uv2 or using SkinnedMeshRenderer.</p>
+<div class="admonition caution">
+<p class="admonition-title">Notice on SkinnedMeshRenderer</p>
+<p>As objects with SkinnedMeshRenderer cannot be animated on hem animations, recreate the mesh if this object is intended to be animated.</p>
+</div>
 <p>Like this example, if the component settings are incorrect, the export may fail.</p>
 <h3 id="3-exporting-too-many-different-objects-in-succession">3. Exporting too many different objects in succession</h3>
 <p>As like animation in Vket Cloud, if you export various objects continuously, an error may occur. <br>
