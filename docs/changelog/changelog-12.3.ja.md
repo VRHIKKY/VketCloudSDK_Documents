@@ -49,6 +49,8 @@
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
+  - [デバッグモード](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldEditingTips/DebugMode.html)
+    - 表示される情報をVer12.3.4基準に更新
   - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/particleeditor/pe_about_properties.html)
     - 修正されたバグ・廃止された機能を追記
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VKCActivityExporter.html)
@@ -59,6 +61,8 @@
 - HEOコンポーネント
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOActivity.html)
     - Scene Previewと高度な設定について追記
+  - [HEOAreacollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOAreacollider.html)
+    - デバッグモードにおけるコリジョン可視化を有効にする手順について更新
   - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOMeshCollider.html)
     - 使い方をVer12.3準拠に更新
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
