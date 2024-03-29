@@ -24,7 +24,6 @@
   - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_delegate.html)
   - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_camera.html)
   - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_commondialog.html)
-  - [Itemの種類一覧 / HeliScript関数対応表](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_item_types_functions.html)
 
 ## 変更されたページ
 
@@ -97,6 +96,9 @@ Ver12.xにて追加されたHeliScriptへの変更を追記：
     - オブジェクトの選択解除のコールバック関数を追加
   - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class_item.html)
     - 各メソッドを呼び出し可能なオブジェクトのタイプを追記
+  - [Itemの種類 / HEOComponentとの対応一覧](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_item_types_functions.html)
+    - タイトルを変更（旧題：Itemの種類一覧 / HeliScript関数対応表）
+    - 関数 - HEOComponent対応関係の記載がItemクラスに追加されたため、対応表を削除
   - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class_item.html)
     - 新規関数：ChangeActivityMotion / SetNextActivityMotion, SetPresetAvatarを追記
     - コンストラクタにおけるPlayerクラス関数の仕様変更を追記
