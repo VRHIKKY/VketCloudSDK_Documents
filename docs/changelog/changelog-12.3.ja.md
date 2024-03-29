@@ -90,6 +90,7 @@
 Ver12.xにて追加されたHeliScriptへの変更を追記：
   - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_overview.html)
     - コンストラクタにおけるPlayerクラス関数の仕様変更を追記
+    - 導入方法をVer12.3準拠に更新
   - [クラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class.html)
     - オブジェクトの生成・削除、存在の判定について追記
   - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_component.html)
