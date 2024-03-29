@@ -32,9 +32,8 @@ HEOCollider is a component to set what kind of collision detection a collider ha
 
 | Target | Function |
 | ---- | ---- |
-| `None` | Does not restrict the collision detection. |
-| `Avatar` | Collision detection is enabled only for avatars. |
-| `Camera` | Collision detection is enabled only for the camera. It is used to prevent the camera from digging into the wall. |
+| `All` | Does not restrict the collision detection. |
+| `Avatar Only` | Collision detection is enabled only for avatars. |
 
 ## About collision / area range detection by collider
 

@@ -51,6 +51,8 @@
 - HEOコンポーネント
   - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOAudio.html)
     - オーディオファイルのフォーマットについて追記
+  - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOCollider.html)
+    - 解説をVer9.11準拠に更新
   - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOField.html)
     - HEOFieldの使い方への誘導を追加
   - [HEOVideoTrigger](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/ja/HEOComponents/HEOVideoTrigger.html)
