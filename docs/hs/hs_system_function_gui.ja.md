@@ -21,13 +21,13 @@
 
 
 ### hsCanvasSetGUIPos
-`bool hsCanvasSetGUIPos(string LayerName, string GUIName, float X, float Y)`
+`bool hsCanvasSetGUIPos(string LayerName, bool IsPortrait, string GUIName, float X, float Y)`
 
 指定したGUI要素の座標を変更する。
 
 
 ### hsCanvasGetGUIPos
-`bool hsCanvasSetGUIPos(string LayerName, bool IsPortrait, string GUIName, ref float X, ref float Y)`
+`bool hsCanvasGetGUIPos(string LayerName, bool IsPortrait, string GUIName, ref float X, ref float Y)`
 
 指定したGUI要素の座標を取得する。
 
