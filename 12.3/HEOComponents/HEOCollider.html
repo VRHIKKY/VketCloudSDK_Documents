@@ -2963,7 +2963,7 @@
   
     <li class="md-nav__item">
       <a href="../hs/hs_item_types_functions.html" class="md-nav__link">
-        Itemの種類一覧 / HeliScript関数対応表
+        Itemの種類 / HEOComponentとの対応一覧
       </a>
     </li>
   
@@ -5681,36 +5681,44 @@
 <table>
 <thead>
 <tr>
-<th>ラベル</th>
+<th>Label</th>
+<th>名称</th>
 <th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Collider Type</td>
 <td><code>コライダータイプ</code></td>
 <td>コライダーのタイプを指定します。</td>
 </tr>
 <tr>
+<td>Collider Target</td>
 <td><code>コライダーターゲット</code></td>
 <td>ターゲットを指定します。</td>
 </tr>
 <tr>
+<td>Use Physics</td>
 <td><code>物理演算を適用</code></td>
 <td>Box Colliderに対して物理演算を可能にします。</td>
 </tr>
 <tr>
+<td>Fixed</td>
 <td><code>位置の固定</code></td>
 <td>Box Colliderの位置を固定することができます。</td>
 </tr>
 <tr>
+<td>Enable Body</td>
 <td><code>ロード時に物理演算を有効にする</code></td>
 <td>オブジェクトが読み込まれた際に物理演算を有効にするかどうかを選択できます。</td>
 </tr>
 <tr>
+<td>Mass</td>
 <td><code>重さ</code></td>
 <td>重さパラメータを調整します。</td>
 </tr>
 <tr>
+<td>Restitution</td>
 <td><code>反発係数</code></td>
 <td>反発係数のパラメータを調整します。</td>
 </tr>
@@ -5720,32 +5728,39 @@
 <table>
 <thead>
 <tr>
-<th>タイプ</th>
+<th>Label</th>
+<th>名称</th>
 <th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Collider</td>
 <td><code>コライダー</code></td>
 <td>コライダーの役割を果たします。</td>
 </tr>
 <tr>
+<td>Clickable</td>
 <td><code>クリック対象</code></td>
 <td>プレイヤーがクリックすることを可能にします。</td>
 </tr>
 <tr>
+<td>Area</td>
 <td><code>エリア</code></td>
-<td>通過することのできるコライダーです。HEOAreaColliderと組み合わせることで、範囲内に入った任意のアクションを設定できます。</td>
+<td>通過することのできるコライダーです。<a href="HEOAreacollider.html">HEOAreaCollider</a>と組み合わせることで、範囲内に入った任意のアクションを設定できます。</td>
 </tr>
 <tr>
+<td>Occlusion</td>
 <td><code>オクルージョン</code></td>
 <td>接触した際にオクルージョンを有効にします。<br>詳しい使い方は<a href="../WorldOptimization/OcclusionCulling.html">オクルージョンカリング</a>をご確認ください。</td>
 </tr>
 <tr>
+<td>Reflection Probe</td>
 <td><code>リフレクションプローブ</code></td>
 <td>接触した際にリフレクションプローブを有効にします。</td>
 </tr>
 <tr>
+<td>In View</td>
 <td><code>描画判定</code></td>
 <td>　視野に入ったかどうかを判定したい場合に扱います</td>
 </tr>
@@ -5759,28 +5774,27 @@
 <table>
 <thead>
 <tr>
-<th>ターゲット</th>
+<th>Label</th>
+<th>名称</th>
 <th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>なし</code></td>
+<td>All</td>
+<td><code>全て</code></td>
 <td>衝突判定に対象をとりません。</td>
 </tr>
 <tr>
-<td><code>アバター</code></td>
+<td>Avatar Only</td>
+<td><code>アバターのみ</code></td>
 <td>アバターだけ衝突判定が有効になります。</td>
-</tr>
-<tr>
-<td><code>カメラ</code></td>
-<td>カメラのみ衝突判定が有効になります。カメラが壁にめり込むのを防止する用途に使用します。</td>
 </tr>
 </tbody>
 </table>
 <h2 id="_3">コライダーの衝突 / エリア範囲判定について</h2>
 <p>ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>
-また、以下のようなコリジョンの可視化はHEOWorldSettingから<a href="../WorldEditingTips/DebugMode.html">デバッグモード</a>を有効にした上でF4キーを押すと切り替えできます。</p>
+また、以下のようなコリジョンの可視化は<a href="../VketCloudSettings/BasicSettings.html">VketCloudSettings / BasicSettings</a>から<a href="../WorldEditingTips/DebugMode.html#f3">デバッグモード</a>を有効にした上でF3キーを押すと切り替えできます。</p>
 <p><img alt="HEOCollider_2" src="img/HEOCollider_2.jpg" /></p>
                 
               

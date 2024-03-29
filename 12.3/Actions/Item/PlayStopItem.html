@@ -2270,9 +2270,59 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Play/StopItem
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="PlayStopItem.html" class="md-nav__link md-nav__link--active">
         Play/StopItem
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopitem" class="md-nav__link">
+    StopItemについて
+  </a>
+  
+    <nav class="md-nav" aria-label="StopItemについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motion" class="md-nav__link">
+    停止用のMotionを作る
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2921,7 +2971,7 @@
   
     <li class="md-nav__item">
       <a href="../../hs/hs_item_types_functions.html" class="md-nav__link">
-        Itemの種類一覧 / HeliScript関数対応表
+        Itemの種類 / HEOComponentとの対応一覧
       </a>
     </li>
   
@@ -5593,6 +5643,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopitem" class="md-nav__link">
+    StopItemについて
+  </a>
+  
+    <nav class="md-nav" aria-label="StopItemについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motion" class="md-nav__link">
+    停止用のMotionを作る
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5605,19 +5690,48 @@
                 
                 
                 <h1 id="playstopitem">Play/StopItem</h1>
-<p><img alt="PlayStopItem" src="img/PlayStopItem.jpg" /></p>
-<p>PlayItemは、オーディオ・パーティクル・オブジェクトアニメーションを再生します。</p>
+<p><img alt="PlayStopItem_1" src="img/PlayStopItem_1.jpg" /></p>
+<h2 id="_1">概要</h2>
+<p>PlayItemは、オーディオ・パーティクル・<strong>アバター以外の</strong>オブジェクトアニメーションを再生します。</p>
 <p>Targetに指定できるオブジェクトは、</p>
 <ul>
-<li>HEOObject</li>
-<li>HEOParticle</li>
-<li>HEOAudio</li>
+<li><a href="../../HEOComponents/HEOAudio.html">HEOAudio</a></li>
+<li><a href="../../HEOComponents/HEOParticle.html">HEOParticle</a></li>
+<li><a href="../../HEOComponents/HEOObject.html">HEOObject</a></li>
 </ul>
 <p>を持つシーン上のオブジェクトです。</p>
-<p>HEOObjectを指定した場合のみ、Indexを追加で設定することができます。
+<p>※アバターアニメーションの再生については<a href="../Avatar/Motion.html">Motion</a>をご参照ください。</p>
+<p><a href="../../HEOComponents/HEOObject.html">HEOObject</a>を指定した場合のみ、Indexを追加で設定することができます。<br>
 その場合、設定したIndex番号のモーションが再生されます。</p>
-<p>また、Targetがbeginactionsを持つItemであれば、それも同時に実行します。</p>
-<p>StopItemは、逆に再生を停止します。実行中のbeginactionsがあれば、それも停止します。</p>
+<p>また、TargetがBeginActionsを持つItemであれば、それも同時に実行します。</p>
+<div class="admonition info">
+<p class="admonition-title">オブジェクトアニメーションのより詳細な解説</p>
+<p>オブジェクトのアニメーションについてより詳しい解説が知りたい場合は、<a href="../../WorldMakingGuide/PropAnimation.html">ワールド制作ガイド / オブジェクトをアニメーションさせる</a>をご参照ください。</p>
+</div>
+<h2 id="stopitem">StopItemについて</h2>
+<p>StopItemは、オーディオ・パーティクルを停止します。実行中のBeginActionsがあれば、それも停止します。</p>
+<p>StopItemは一見、再生中のアニメーションを停止しそうなアクションですが、 StopItemの効果はBeginActionsの停止であり、<strong>再生中の「オブジェクトアニメーション」</strong>はBeginActionsに該当しないので止まりません。<br>
+StopItemはパーティクルやサウンドを止めるのに使うことができます。</p>
+<p>したがって、オブジェクトアニメーションを停止させたい際はLoopをオフにして自然停止させるか、もしくは以下の手順で停止用のMotionを用意してPlayItemにて呼び出す必要があります。</p>
+<h3 id="motion">停止用のMotionを作る</h3>
+<ol>
+<li>
+<p>ワールド制作ガイド「オブジェクトをアニメーションさせる」ページにおける<a href="../../WorldMakingGuide/PropAnimation.html#heoobject">HEOObjectにアニメーションを付与する方法</a>を参考に、以下のように<a href="../../HEOComponents/HEOObject.html">HEOObject</a>を常にデフォルトの状態におくアニメーション(例としてIdleと命名)を用意・hemファイルに書き出しします。</p>
+<p><img alt="PlayStopItem_2" src="img/PlayStopItem_2.jpg" /></p>
+</li>
+<li>
+<p><a href="../../HEOComponents/HEOObject.html">HEOObject</a>では1番目にIdleをおき、2番目以降に再生したいアニメーションを配置します。1番目のMotionはワールド入場時の初期状態 / 待機時のMotionとなり、アニメーションを停止させたい際に呼び出すMotionを兼ねます。
+    <img alt="PlayStopItem_3" src="img/PlayStopItem_3.jpg" /></p>
+</li>
+<li>
+<p>ここでは停止制御の例として<a href="../../HEOComponents/HEOAreacollider.html">HEOAreacollider</a>を使用します。<br>プレイヤーがエリアコライダーの範囲に入場した際にPlayItemを使用してCubeの2番目のMotion(Index <strong>1</strong>)を呼び出し、退場時にはPlayItemによって1番目のMotion(Index <strong>0</strong>)を呼び出します。</p>
+<p><img alt="PlayStopItem_4" src="img/PlayStopItem_4.jpg" /></p>
+</li>
+<li>
+<p>ワールドに入場すると以下のような挙動となります。</p>
+<p><img alt="PlayStopItem_Result" src="img/PlayStopItem_Result.gif" /></p>
+</li>
+</ol>
                 
               
               

@@ -3025,7 +3025,7 @@
   
     <li class="md-nav__item">
       <a href="hs_item_types_functions.html" class="md-nav__link">
-        Item Types and Usable Functions
+        Item Types and HEOComponents
       </a>
     </li>
   
@@ -5808,7 +5808,7 @@ As an example, we will show a basic implementation of displaying "Hello World" o
 <h3 id="1-add-a-heliscript-file-to-assets-folder">1. Add a HeliScript file to Assets Folder</h3>
 <p><img alt="hs_overview_1" src="img/hs_overview_1.jpg" /></p>
 <p>First, create a file to write HeliScript. <br>
-Right-click in the Project window (where folder such as Assets are located), select <strong>"HS script"</strong>, and add the HeliScript file to any folder.</p>
+Right-click in the Project window (where folder such as Assets are located), select <strong>"HeliScript"</strong>, and add the HeliScript file to any folder.</p>
 <p>As an example, a Scripts folder is newly added to the Assets folder, followed by creating a new HeliScript file with the name <code>HelloWorld.hs</code>.</p>
 <p><img alt="hs_overview_2" src="img/hs_overview_2.jpg" /></p>
 <h3 id="2-add-heoscript-to-the-scene">2. Add HEOScript to the scene</h3>
@@ -5821,7 +5821,7 @@ By selecting "Select" on the right side of the menu, a list of HeliScripts will 
 <h3 id="3-enable-debug-mode-in-heoworldsetting">3. Enable debug mode in HEOWorldSetting</h3>
 <p><img alt="hs_overview_4" src="img/hs_overview_4.jpg" /></p>
 <p>In the HelloWorld script for this example, it is necessary to enable debug mode in order to display the result on the debug log. <br>
-To use debug mode, enable <a href="../WorldEditingTips/DebugMode.html">Debug Mode</a> in <a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>.</p>
+To use debug mode, enable <a href="../WorldEditingTips/DebugMode.html">Debug Mode</a> in VketCloudSettings / <a href="../VketCloudSettings/BasicSettings.html">BasicSettings</a>.</p>
 <h3 id="4-write-heliscript">4. Write HeliScript</h3>
 <p>Now it's time to write the HeliScript itself. <br>
 A code example is shown below as an implementation of HelloWorld.hs.</p>
@@ -5830,14 +5830,14 @@ A code example is shown below as an implementation of HelloWorld.hs.</p>
 <span class="p">{</span>
 
 <span class="w">     </span><span class="c1">//Constructor: executed only once on player entry</span>
-<span class="w">     </span><span class="n">public</span><span class="w"> </span><span class="n">HelloWorld</span><span class="p">()</span>
+<span class="w">     </span><span class="k">public</span><span class="w"> </span><span class="nf">HelloWorld</span><span class="p">()</span>
 <span class="w">     </span><span class="p">{</span>
 <span class="w">     </span><span class="c1">//Output to debug log</span>
-<span class="w">     </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;Hello, World!\n&quot;</span><span class="p">);</span>
+<span class="w">     </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
 <span class="w">     </span><span class="p">}</span>
 
 <span class="w">     </span><span class="c1">//Update function: executed every frame</span>
-<span class="w">     </span><span class="n">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">Update</span><span class="p">()</span>
+<span class="w">     </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Update</span><span class="p">()</span>
 <span class="w">     </span><span class="p">{</span>
 
 <span class="w">     </span><span class="p">}</span>
@@ -5853,44 +5853,44 @@ For details on how to place HeliScript, please check <a href="../HEOComponents/H
 <p><img alt="HEOScript_attachable" src="../HEOComponents/img/HEOScript_attachable.jpg" /></p>
 <p>In HeliScript, each objects are referenced by using Item and Node classes mentioned later. <br>
 For example, a script that outputs a message when the exampleObject under <a href="../HEOComponents/HEOField.html">HEOField</a> is clicked can be written as follows.</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">component</span><span class="w"> </span><span class="nx">example</span>
+<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">example</span>
 <span class="p">{</span>
 <span class="w">     </span><span class="c1">//Define item/player class</span>
 <span class="w">     </span><span class="c1">//Note that objects cannot be initialized here, including using functions such as hsItemGet</span>
-<span class="w">    </span><span class="nx">Item</span><span class="w"> </span><span class="nx">ex_Item</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">Player</span><span class="w"> </span><span class="nx">ex_player</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Item</span><span class="w"> </span><span class="n">ex_Item</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Player</span><span class="w"> </span><span class="n">ex_player</span><span class="p">;</span>
 
-<span class="w">    </span><span class="kt">bool</span><span class="w">    </span><span class="nx">ex_isPlayerInit</span><span class="p">;</span><span class="w"> </span><span class="c1">//bool for handling player object initialization</span>
-<span class="w">    </span><span class="nx">int</span><span class="w"> </span><span class="nx">ex_ItemNodeIndex</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w">    </span><span class="n">ex_isPlayerInit</span><span class="p">;</span><span class="w"> </span><span class="c1">//bool for handling player object initialization</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">ex_ItemNodeIndex</span><span class="p">;</span>
 
 <span class="w">    </span><span class="c1">//Constructor</span>
-<span class="w">     </span><span class="nx">public</span><span class="w"> </span><span class="nx">example</span><span class="p">()</span>
+<span class="w">     </span><span class="k">public</span><span class="w"> </span><span class="nf">example</span><span class="p">()</span>
 <span class="w">     </span><span class="p">{</span>
 <span class="w">         </span><span class="c1">//Refer to Items: Specify items whose name ends by .heo. This instance, enter the object having HEOField</span>
-<span class="w">         </span><span class="nx">ex_Item</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">hsItemGet</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">);</span>
+<span class="w">         </span><span class="n">ex_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">);</span>
 
-<span class="w">         </span><span class="nx">ex_isPlayerInit</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">         </span><span class="n">ex_isPlayerInit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
 <span class="w">         </span><span class="c1">//Since Item type is HEOfield, the nodes of the objects under can be obtained</span>
-<span class="w">         </span><span class="nx">ex_ItemNodeIndex</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">ex_Item</span><span class="p">.</span><span class="nx">GetNodeIndexByName</span><span class="p">(</span><span class="s">&quot;exampleObject&quot;</span><span class="p">);</span>
+<span class="w">         </span><span class="n">ex_ItemNodeIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ex_Item</span><span class="p">.</span><span class="n">GetNodeIndexByName</span><span class="p">(</span><span class="s">&quot;exampleObject&quot;</span><span class="p">);</span>
 <span class="w">     </span><span class="p">}</span>
 
-<span class="w">    </span><span class="nx">public</span><span class="w"> </span><span class="nx">void</span><span class="w"> </span><span class="nx">update</span><span class="p">()</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">//If Player instance has not been obtained yet, call hsPlayerGet() only once</span>
-<span class="w">        </span><span class="k">if</span><span class="p">(!</span><span class="nx">ex_isPlayerInit</span><span class="p">){</span>
-<span class="w">        </span><span class="nx">ex_player</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">hsPlayerGet</span><span class="p">();</span>
-<span class="w">        </span><span class="nx">ex_isPlayerInit</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">ex_isPlayerInit</span><span class="p">){</span>
+<span class="w">        </span><span class="n">ex_player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsPlayerGet</span><span class="p">();</span>
+<span class="w">        </span><span class="n">ex_isPlayerInit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">     </span><span class="c1">//Callback triggered when the target node is clicked. Please refer to the callback function page for how to use OnClickNode.</span>
-<span class="w">     </span><span class="nx">public</span><span class="w"> </span><span class="nx">void</span><span class="w"> </span><span class="nx">OnClickNode</span><span class="p">(</span><span class="nx">int</span><span class="w"> </span><span class="nx">NodeIndex</span><span class="p">)</span>
+<span class="w">     </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnClickNode</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
 <span class="w">     </span><span class="p">{</span>
 <span class="w">         </span><span class="c1">//When the click target matches the node obtained previously:</span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="nx">NodeIndex</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">ex_ItemNodeIndex</span><span class="p">){</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">NodeIndex</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ex_ItemNodeIndex</span><span class="p">){</span>
 <span class="w">        </span><span class="c1">//Display message on debug console</span>
-<span class="w">         </span><span class="nx">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;exObj Clicked.\n&quot;</span><span class="p">);</span>
+<span class="w">         </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;exObj Clicked.&quot;</span><span class="p">);</span>
 <span class="w">         </span><span class="p">}</span>
 <span class="w">     </span><span class="p">}</span>
 <span class="p">}</span>

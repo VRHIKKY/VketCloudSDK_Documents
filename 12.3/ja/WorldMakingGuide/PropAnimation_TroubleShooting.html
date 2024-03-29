@@ -3119,7 +3119,7 @@
   
     <li class="md-nav__item">
       <a href="../hs/hs_item_types_functions.html" class="md-nav__link">
-        Itemの種類一覧 / HeliScript関数対応表
+        Itemの種類 / HEOComponentとの対応一覧
       </a>
     </li>
   
@@ -6003,9 +6003,7 @@
 <h2 id="hem">.hemファイル書き出しについて</h2>
 <h3 id="_2">書き出し時にエラーが出る</h3>
 <p>.hemファイルの書き出しでエラーが出る要因はいくつか考えられます。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">KeyNotFoundException</span><span class="o">:</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">present</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">dictionary</span><span class="o">.</span>
-</code></pre></div>
-
+<p><code>KeyNotFoundException: The given key was not present in the dictionary.</code></p>
 <p><img alt="PropAnimation_TroubleShooting_4" src="img/PropAnimation_TroubleShooting_4.jpg" /></p>
 <h3 id="1">①書き出し元となるオブジェクトを動かすアニメーションがある</h3>
 <p><img alt="PropAnimation_TroubleShooting_5" src="img/PropAnimation_TroubleShooting_5.jpg" /></p>
@@ -6036,7 +6034,11 @@
 <h3 id="2_1">②コンポーネント設定に不備がある</h3>
 <p>上記画像では、<code>Index was out of range</code>のエラーが表示されています。<br>
 こちらのエラーはuv2のないメッシュをMeshRendererで扱おうとすると発生するため、uv2の作成またはSkinnedMeshRendererの使用によって回避できます。</p>
-<p>このように、コンポーネント設定に不備がある場合、書き出しが失敗する可能性があります。</p>
+<div class="admonition caution">
+<p class="admonition-title">SkinnedMeshRendererに関する注意</p>
+<p>SkinnedMeshRendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。</p>
+</div>
+<p>この例のように、コンポーネント設定に不備がある場合に書き出しが失敗する場合があります。</p>
 <h3 id="3">③連続で色々なオブジェクトを書き出しすぎている</h3>
 <p>アニメーション同様、連続で色々なオブジェクトを書き出しているとエラーとなる場合があります。<br>
 一度Unityシーンを再起動してから書き出しを行ってみましょう。</p>
@@ -6057,7 +6059,7 @@ Standardなどに変更してみて表示されるかどうかお試しくださ
 </div>
 <p><img alt="PropAnimation_TroubleShooting_10" src="img/PropAnimation_TroubleShooting_10.jpg" /></p>
 <h2 id="unity">書き出し後Unityを再起動したら、プロジェクトが立ち上がらなくなった</h2>
-<p>稀にあります。
+<p>稀にあります。<br>
 原因は、テクスチャ圧縮用のbatの誤検知です。</p>
 <p><img alt="PropAnimation_TroubleShooting_11" src="img/PropAnimation_TroubleShooting_10.jpg" /></p>
 <p>解決するためには、batを削除する必要があります。<br>

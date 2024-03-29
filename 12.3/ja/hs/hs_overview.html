@@ -3025,7 +3025,7 @@
   
     <li class="md-nav__item">
       <a href="hs_item_types_functions.html" class="md-nav__link">
-        Itemの種類一覧 / HeliScript関数対応表
+        Itemの種類 / HEOComponentとの対応一覧
       </a>
     </li>
   
@@ -5808,7 +5808,7 @@ HeliScriptを使用すると、<a href="../Actions/ActionsOverview.html">アク�
 <h3 id="1-assetsheliscript">1. AssetsにHeliScriptファイルを追加する</h3>
 <p><img alt="hs_overview_1" src="img/hs_overview_1.jpg" /></p>
 <p>初めに、HeliScriptを書き込むファイルを作ります。<br>
-Projectウィンドウ(Assetsなどがあるところ)で右クリックして、<strong>「HS script」</strong>を選択し、任意のフォルダにHeliScriptファイルを追加します。</p>
+Projectウィンドウ(Assetsなどがあるところ)で右クリックして、<strong>「HeliScript」</strong>を選択し、任意のフォルダにHeliScriptファイルを追加します。</p>
 <p>例として、ここではAssetsフォルダにScriptsフォルダを追加し、HelloWorld.hsという名前でHeliScriptファイルを新規生成しています。</p>
 <p><img alt="hs_overview_2" src="img/hs_overview_2.jpg" /></p>
 <h3 id="2-heoscript">2. HEOScriptをシーンに追加する</h3>
@@ -5821,7 +5821,7 @@ Inspector画面にてAdd Component &gt; HEOScriptと選択してコンポーネ�
 <h3 id="3-heoworldsetting">3. HEOWorldSettingにてデバッグモードを有効にする</h3>
 <p><img alt="hs_overview_4" src="img/hs_overview_4.jpg" /></p>
 <p>今回実装するHelloWorldでは、デバッグログにて文字を出力するためにワールドのビルドをデバッグモードに設定する必要があります。<br>
-デバッグモードを使うために<a href="../HEOComponents/HEOWorldSetting.html">HEOWorldSetting</a>の<a href="../WorldEditingTips/DebugMode.html">Debug Mode</a>を有効にします。</p>
+デバッグモードを使うためにVketCloudSettings<a href="../VketCloudSettings/BasicSettings.html">BasicSettings</a>の<a href="../WorldEditingTips/DebugMode.html">Debug Mode</a>を有効にします。</p>
 <h3 id="4-heliscript">4. HeliScriptを書く</h3>
 <p>いよいよHeliScript本体を書いていきます。<br>
 HelloWorld.hsの実装として以下に例を示します。</p>
@@ -5830,14 +5830,14 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 <span class="p">{</span><span class="w">   </span>
 
 <span class="w">    </span><span class="c1">//コンストラクタ関数：ワールド入場時に一度だけ実行されます</span>
-<span class="w">    </span><span class="n">public</span><span class="w"> </span><span class="n">HelloWorld</span><span class="p">()</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">HelloWorld</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">//デバッグログに出力</span>
-<span class="w">    </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;Hello, World!\n&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="c1">//アップデート関数：毎フレーム実行されます</span>
-<span class="w">    </span><span class="n">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">Update</span><span class="p">()</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Update</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 
 <span class="w">    </span><span class="p">}</span>
@@ -5853,47 +5853,47 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 <p><img alt="HEOScript_attachable" src="../HEOComponents/img/HEOScript_attachable.jpg" /></p>
 <p>HeliScript内で各オブジェクトを参照する際は、後述するItem及びNodeによって取り扱います。<br>
 例として、以下のように<a href="../HEOComponents/HEOField.html">HEOField</a>下のexampleObjectがクリックされた際にメッセージを出力するスクリプトが書けます。</p>
-<div class="codehilite"><pre><span></span><code>component example
-{
-    //ItemとPlayerを定義
-    //ここではhsItemGetなどの取得関数を含め、オブジェクトの初期化はできないためにご注意ください
-    Item    ex_Item;
-    Player  ex_player;
+<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">example</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">//ItemとPlayerを定義</span>
+<span class="w">    </span><span class="c1">//ここではhsItemGetなどの取得関数を含め、オブジェクトの初期化はできないためにご注意ください</span>
+<span class="w">    </span><span class="n">Item</span><span class="w">    </span><span class="n">ex_Item</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Player</span><span class="w">  </span><span class="n">ex_player</span><span class="p">;</span>
 
-    bool    ex_isPlayerInit; //Playerクラス初期化管理
-    int     ex_ItemNodeIndex;
+<span class="w">    </span><span class="kt">bool</span><span class="w">    </span><span class="n">ex_isPlayerInit</span><span class="p">;</span><span class="w"> </span><span class="c1">//Playerクラス初期化管理</span>
+<span class="w">    </span><span class="kt">int</span><span class="w">     </span><span class="n">ex_ItemNodeIndex</span><span class="p">;</span>
 
-    public example()
-    {
-        //Itemを認識　Item名は.heoになっている物を指定する　今回はHEOField指定
-        ex_Item = hsItemGet(&quot;World&quot;);
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">example</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//Itemを認識　Item名は.heoになっている物を指定する　今回はHEOField指定</span>
+<span class="w">        </span><span class="n">ex_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">);</span>
 
-        ex_isPlayerInit = false;
+<span class="w">        </span><span class="n">ex_isPlayerInit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
-        //ItemがHEO Fieldなので、その傘下にあるオブジェクトのノードを取得可能
-        ex_ItemNodeIndex = ex_Item.GetNodeIndexByName(&quot;exampleObject&quot;);
-    }
+<span class="w">        </span><span class="c1">//ItemがHEO Fieldなので、その傘下にあるオブジェクトのノードを取得可能</span>
+<span class="w">        </span><span class="n">ex_ItemNodeIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ex_Item</span><span class="p">.</span><span class="n">GetNodeIndexByName</span><span class="p">(</span><span class="s">&quot;exampleObject&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 
-    public void update()
-    {
-        //Playerのインスタンス取得がまだの場合、一度だけhsPlayerGet()を実行する
-        if(!ex_isPlayerInit){
-        //Playerを認識・取得
-        ex_player = hsPlayerGet();
-        ex_isPlayerInit = true;
-        }
-    }
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//Playerのインスタンス取得がまだの場合、一度だけhsPlayerGet()を実行する</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">ex_isPlayerInit</span><span class="p">){</span>
+<span class="w">        </span><span class="c1">//Playerを認識・取得</span>
+<span class="w">        </span><span class="n">ex_player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsPlayerGet</span><span class="p">();</span>
+<span class="w">        </span><span class="n">ex_isPlayerInit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
 
-    //クリックしたとき、対象のノードを取得する。OnClickNodeの使い方はコールバック関数のページをご参照ください
-    public void OnClickNode(int NodeIndex)
-    {
-        //クリック対象と上で取得したノードが一致したとき
-        if(NodeIndex == ex_ItemNodeIndex){
-            //メッセージを表示
-            hsSystemOutput(&quot;exObj Clicked.\n&quot;);
-        }
-    }
-}
+<span class="w">    </span><span class="c1">//クリックしたとき、対象のノードを取得する。OnClickNodeの使い方はコールバック関数のページをご参照ください</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnClickNode</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//クリック対象と上で取得したノードが一致したとき</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">NodeIndex</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ex_ItemNodeIndex</span><span class="p">){</span>
+<span class="w">            </span><span class="c1">//メッセージを表示</span>
+<span class="w">            </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;exObj Clicked.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <div class="admonition caution">
