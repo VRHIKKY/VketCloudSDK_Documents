@@ -22,6 +22,8 @@ JSの型と対応した整数値。
 
 ### makeJsNull()
 
+`JsVal makeJsNull();`
+
 null値を表現するJsValインスタンスを生成して返す。
 
 ### makeJsVal()
@@ -34,11 +36,15 @@ null値を表現するJsValインスタンスを生成して返す。
 
 ### makeJsObj()
 
+`JsVal makeJsObj();`
+
 JSのオブジェクトを表現するJsValインスタンスを生成して返す。
 
 生成時点では空オブジェクト( { } )になっている。
 
 ### makeJsArray()
+
+`JsVal makeJsArray();`
 
 JSのArrayを表現するJsValインスタンスを生成して返す。
 
@@ -52,7 +58,9 @@ JSのArrayを表現するJsValインスタンスを生成して返す。
 
 ### makeJsNum()
 
-JSのNumberを表現するJsValインスタンスを生成して返す。
+`JsVal makeJsNum();`
+
+JSのNumberを表現するJsValインスタンスを生成して返す。初期値は 0。
 
 ### makeJsNumFrom()
 
@@ -62,7 +70,9 @@ JSのNumberを表現するJsValインスタンスを生成して返す。
 
 ### makeJsBool()
 
-引数で初期値を指定して、JSのBooleanを表現するJsValインスタンスを生成して返す。
+`JsVal makeJsBool();`
+
+JSのBooleanを表現するJsValインスタンスを生成して返す。初期値は false。
 
 ### makeJsBoolFrom()
 
@@ -72,7 +82,9 @@ JSのNumberを表現するJsValインスタンスを生成して返す。
 
 ### makeJsStr()
 
-JSのStringを表現するJsValインスタンスを生成して返す。
+`JsVal makeJsStr();`
+
+JSのStringを表現するJsValインスタンスを生成して返す。初期値は空文字列になる。
 
 ### makeJsStrFrom()
 
@@ -112,15 +124,21 @@ JsVal型は、生成後に多様な型の値を設定することができる。
 
 ### コンストラクタ
 
+`public JsVal();`
+
 空のJsValを生成する。
 
 生成された時点では、JS側のnullに相当する状態になっている。後から自由に中身の値と型を変更できる。
 
 ### Clear()
 
+`public void Clear();`
+
 JsValインスタンスに設定された情報を消去し、型情報を JS\_NULL に設定する。
 
 ### GetType()
+
+`public int GetType()`
 
 JsValインスタンスの現在の型を返す。
 
@@ -138,9 +156,13 @@ JsValインスタンスに、新たに型を設定する。設定後、自分自
 
 ### IsNull()
 
+`public bool IsNull();`
+
 JsValインスタンスが null 値の場合、true を返す。
 
 ### SetNull()
+
+`public void SetNull();`
 
 JsValインスタンスを null に設定する。
 
@@ -162,6 +184,8 @@ JsValインスタンスにfloat値を設定し、型を JS\_NUM に変更する�
 
 ### GetNum()
 
+`public float GetNum();`
+
 JsValインスタンスの型が JS\_NUM の場合、インスタンスが保持している数値を返す。
 
 インスタンスの型が JS\_BOOL の場合、false=0, true=1 のいずれかが返る。
@@ -176,6 +200,8 @@ JsValインスタンスにbool値を設定し、型を JS\_BOOL に変更する�
 
 ### GetBool()
 
+`public bool GetBool();`
+
 JsValインスタンスの型が JS\_BOOL の場合、インスタンスが保持している真偽値を返す。
 
 インスタンスの型が JS\_NUM の場合、0=false, それ以外の値=true のいずれかが返る。
@@ -189,6 +215,8 @@ JsValインスタンスの型が JS\_BOOL の場合、インスタンスが保�
 JsValインスタンスにString値を設定し、型を JS\_STR に変更する。
 
 ### GetStr()
+
+`public string GetStr();`
 
 JsValインスタンスの型が JS\_STR の場合、インスタンスが保持しているString値を返す。
 
@@ -316,6 +344,8 @@ JavaScriptのプロパティを表現するクラス。
 
 ### GetName()
 
+`public string GetName();`
+
 プロパティのキーとなる名前を取得する。
 
 ### SetValue()
@@ -325,5 +355,7 @@ JavaScriptのプロパティを表現するクラス。
 プロパティの値を設定する。
 
 ### GetValue()
+
+`public JsVal GetValue();`
 
 プロパティの値を取得する。

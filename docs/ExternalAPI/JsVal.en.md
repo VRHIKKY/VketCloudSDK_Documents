@@ -22,6 +22,8 @@ Constant values defined to correspond with JS types.
 
 ### makeJsNull()
 
+`JsVal makeJsNull();`
+
 Returns a JsVal instance expressing null.
 
 ### makeJsVal()
@@ -34,11 +36,15 @@ Returns a JsVal instance expressing the type designated by the integer argument.
 
 ### makeJsObj()
 
+`JsVal makeJsObj();`
+
 Returns a JsVal instance expressing a JS object.
 
 The object is empty ( { } ) on generation.
 
 ### makeJsArray()
+
+`JsVal makeJsArray();`
 
 Returns a JsVal instance expressing a JS Array.
 
@@ -52,7 +58,9 @@ Returns a JsVal instance expressing a JS Array, which is initialized by the JsPr
 
 ### makeJsNum()
 
-Returns a JsVal instance expressing a JS Number.
+`JsVal makeJsNum();`
+
+Returns a JsVal instance expressing a JS Number. The initial value is 0.
 
 ### makeJsNumFrom()
 
@@ -62,7 +70,9 @@ Returns a JsVal instance expressing a JS Number, which is initialized by the int
 
 ### makeJsBool()
 
-Returns a JsVal instance expressing a JS Boolean, which is initialized by the bool value in argument.
+`JsVal makeJsBool();`
+
+Returns a JsVal instance expressing a JS Boolean. The initial value is false.
 
 ### makeJsBoolFrom()
 
@@ -72,7 +82,9 @@ Returns a JsVal instance expressing a JS Boolean, which is initialized by the bo
 
 ### makeJsStr()
 
-Returns a JsVal instance expressing a JS String.
+`JsVal makeJsStr();`
+
+Returns a JsVal instance expressing a JS String. The initial value is an empty string.
 
 ### makeJsStrFrom()
 
@@ -112,15 +124,21 @@ JsVal type can contain diverse type values after its initialization. The propert
 
 ### Constructor
 
+`public JsVal();`
+
 Instantiates an empty JsVal.
 
 On instantiation, the variable is equivalent as null on JS. The type and value can be defined after its instantiation.
 
 ### Clear()
 
+`public void Clear();`
+
 Deletes information on the JsVal instance and sets the type information to JS\_NULL.
 
 ### GetType()
+
+`public int GetType()`
 
 Returns the current type of the JsVal instance.
 
@@ -138,9 +156,13 @@ On changing the instance type, its content will be reset as like the Clear() fun
 
 ### IsNull()
 
+`public bool IsNull();`
+
 Returns a true value if the JsVal instance is a null value.
 
 ### SetNull()
+
+`public void SetNull();`
 
 Set the JsVal instance to null.
 
@@ -162,6 +184,8 @@ Set the designated float value to the JSVal instance, and change the type to JS\
 
 ### GetNum()
 
+`public float GetNum();`
+
 Returns the instance's number value if the instance type is JS\_NUM.
 
 If the JsVal instance type is JS\_BOOL, either false=0 or true=1 will be returned.
@@ -176,6 +200,8 @@ Set the designated bool value to the JSVal instance, and change the type to JS\_
 
 ### GetBool()
 
+`public bool GetBool();`
+
 Returns the instance's boolean value if the instance type is JS\_BOOL.
 
 If the JsVal instance type is JS\_NUM, the return value is false on 0, true on any other number value.
@@ -189,6 +215,8 @@ If instance type is neither of the above, the return value is undefined.
 Set the designated string value to the JSVal instance, and change the type to JS\_STR.
 
 ### GetStr()
+
+`public string GetStr();`
 
 Returns the instance's string value if the JsVal instance type is JS\_STR.
 
@@ -316,6 +344,8 @@ Set a name which is the property's key.
 
 ### GetName()
 
+`public string GetName();`
+
 Get a name which is the property's key.
 
 ### SetValue()
@@ -325,5 +355,7 @@ Get a name which is the property's key.
 Set a property's value.
 
 ### GetValue()
+
+`public JsVal GetValue();`
 
 Get a property's value.
