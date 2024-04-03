@@ -1,329 +1,329 @@
 # JsVal
 
-JsValは、Vket Cloudの機能のひとつである[ブローカーAPI](./BrokerAPI.md)を使用して外部APIとの通信を行う際に使用するHeliScriptの型です。<br>
-以下の値、関数、クラスによって定義されます。
+JsVal is a HeliScript type used to operate external API connections via [Broker API](./BrokerAPI.md), which is a feature of Vket Cloud.<br>
+This type is defined by the following values, functions, and classes.
 
-## 【定数値】
+## Predefined Constant Values
 
 ```js
 const int JS_NULL = 0; // null 
-const int JS_OBJ = 1; // JSオブジェクト
+const int JS_OBJ = 1; // JS Object
 const int JS_ARRAY = 2; // Array
 const int JS_NUM = 3; // Number
 const int JS_BOOL = 4; // Boolean
 const int JS_STR = 5; // String
 ```
 
-JSの型と対応した整数値。
+Constant values defined to correspond with JS types.
 
 ---
 
-## 【JsVal を生成する関数】
+## Functions generating JsVal
 
 ### makeJsNull()
 
-null値を表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing null.
 
 ### makeJsVal()
 
 `JsVal makeJsVal(int type);`
 
-引数の整数値で指定した、JSの型を表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing the type designated by the integer argument.
 
-(引数に指定できる整数値は、`JS_OBJ`などの定義済み整数値を参照)
+(To see which type is available, see the defined constant values such as `JS_OBJ` on above)
 
 ### makeJsObj()
 
-JSのオブジェクトを表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS object.
 
-生成時点では空オブジェクト( { } )になっている。
+The object is empty ( { } ) on generation.
 
 ### makeJsArray()
 
-JSのArrayを表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS Array.
 
-生成時点では中身は空。
+The array is empty on instantiation.
 
 ### makeJsArrayFrom()
 
 `JsVal makeJsArrayFrom(list<JsProp> newList);`
 
-引数で指定した JsProp の配列を設定して、JSのArrayを生成して返す。
+Returns a JsVal instance expressing a JS Array, which is initialized by the JsProp list in argument.
 
 ### makeJsNum()
 
-JSのNumberを表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS Number.
 
 ### makeJsNumFrom()
 
 `JsVal makeJsNumFrom(int value);`
 
-引数で初期値を指定して、JSのNumberを表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS Number, which is initialized by the integer value in argument.
 
 ### makeJsBool()
 
-引数で初期値を指定して、JSのBooleanを表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS Boolean, which is initialized by the bool value in argument.
 
 ### makeJsBoolFrom()
 
 `JsVal makeJsBoolFrom(bool value);`
 
-引数で初期値を指定して、JSのBooleanを表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS Boolean, which is initialized by the bool value in argument.
 
 ### makeJsStr()
 
-JSのStringを表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS String.
 
 ### makeJsStrFrom()
 
 `JsVal makeJsStrFrom(string value);`
 
-引数で初期値を指定して、JSのStringを表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS String, which is initialized by the string value in argument.
 
 ### makeJsProp()
 
 `JsProp makeJsProp(string name);`
 
-JSのプロパティ(名前と値が組になったもの)を表現するJsValインスタンスを生成して返す。
+Returns a JsVal instance expressing a JS Property (set of name and value).
 
-この関数自体は、初期値としてキーとなる名前のみを設定可能で、生成されるJsPropの値は空となる。
+This function only defines the name/key on initialization, which its value is undefined on instantiation.
 
 ### makeJsArrayElem()
 
 `JsProp makeJsArrayElem();`
 
-配列の要素を返す。
+Returns an array element.
 
 ### makeJsArrayElemFrom()
 
 `JsProp makeJsArrayElemFrom(JsVal newVal);`
 
-配列の要素を返す。初期値をJsValとして指定可能。
+Returns an array element, which can be initialized by a JsVal.
 
 ---
 
-## 【JsVal クラス】
+## JsVal Class
 
-HeliScript で JavaScript の型を扱う仕組み。
+JsVal is defined for handling JavaScript types on HeliScript.
 
-JsVal型は、JavaScript連携において、extern関数の戻り値と引数に指定できる。また、JavaScriptコールバックの戻り値と引数にも利用できる。
+JsVal type variables can be used as a return value / argument on extern functions for JavaScript bridging. The variables can also be used for  return value / argument on JavaScript callback functions.
 
-JsVal型は、生成後に多様な型の値を設定することができる。また、JavaScriptオブジェクトのように、プロパティを動的に追加・削除可能。
+JsVal type can contain diverse type values after its initialization. The property can be dynamically added/deleted as like a JavaScript object.
 
-### コンストラクタ
+### Constructor
 
-空のJsValを生成する。
+Instantiates an empty JsVal.
 
-生成された時点では、JS側のnullに相当する状態になっている。後から自由に中身の値と型を変更できる。
+On instantiation, the variable is equivalent as null on JS. The type and value can be defined after its instantiation.
 
 ### Clear()
 
-JsValインスタンスに設定された情報を消去し、型情報を JS\_NULL に設定する。
+Deletes information on the JsVal instance and sets the type information to JS\_NULL.
 
 ### GetType()
 
-JsValインスタンスの現在の型を返す。
+Returns the current type of the JsVal instance.
 
 ### SetType()
 
 `public JsVal SetType(int type)`
 
-JsValインスタンスに、新たに型を設定する。設定後、自分自身を戻り値として返す。
+Sets a new type on the JsVal instance. After setting, the instance itself will be the return value.
 
-設定できる値は「定数値」の項目を参照。
+Please refer to [Predefined Constant Values](#predefined-constant-values) for available types.
 
-インスタンスの現在の型と同じ型を指定すると、何もしない。
+If the argument type is same as the current type, no process will be made.
 
-インスタンスの型を変更した場合、Clear() と同等の初期化処理が走る。
+On changing the instance type, its content will be reset as like the Clear() function.
 
 ### IsNull()
 
-JsValインスタンスが null 値の場合、true を返す。
+Returns a true value if the JsVal instance is a null value.
 
 ### SetNull()
 
-JsValインスタンスを null に設定する。
+Set the JsVal instance to null.
 
-SetType(JS\_NULL) と同等。
+This operates in same manner as SetType(JS\_NULL).
 
 ### HasPropertyType()
 
 `public bool HasPropertyType();`
 
-現在の型が、プロパティを持つことが可能な型の場合に true を返す。
+Returns a true value if the current type is able to hold a property.
 
-具体的には、型が JS\_OBJ と JS\_ARRAY の場合にtrueを返す。
+In specific, this will return a true value when the JsVal instance type is JS\_OBJ or JS\_ARRAY.
 
 ### SetNum()
 
 `public void SetNum(float val);`
 
-Jsvalインスタンスにfloat値を設定し、型を JS\_NUM に変更する。
+Set the designated float value to the JSVal instance, and change the type to JS\_NUM.
 
 ### GetNum()
 
-Jsvalインスタンスの型が JS\_NUM の場合、インスタンスが保持している数値を返す。
+Returns the instance's number value if the instance type is JS\_NUM.
 
-インスタンスの型が JS\_BOOL の場合、false=0, true=1 のいずれかが返る。
+If the JsVal instance type is JS\_BOOL, either false=0 or true=1 will be returned.
 
-インスタンスの型がそれらのどれでもない場合、返却値の内容は保証されない。
+If instance type is neither of the above, the return value is undefined.
 
 ### SetBool()
 
 `public void SetBool(bool val);`
 
-Jsvalインスタンスにbool値を設定し、型を JS\_BOOL に変更する。
+Set the designated bool value to the JSVal instance, and change the type to JS\_BOOL.
 
 ### GetBool()
 
-Jsvalインスタンスの型が JS\_BOOL の場合、インスタンスが保持している真偽値を返す。
+Returns the instance's boolean value if the instance type is JS\_BOOL.
 
-インスタンスの型が JS\_NUM の場合、0=false, それ以外の値=true のいずれかが返る。
+If the JsVal instance type is JS\_NUM, the return value is false on 0, true on any other number value.
 
-インスタンスの型がそれらのどれでもない場合、返却値の内容は保証されない。
+If instance type is neither of the above, the return value is undefined.
 
 ### SetStr()
 
 `public void SetStr(string val);`
 
-JsvalインスタンスにString値を設定し、型を JS\_STR に変更する。
+Set the designated string value to the JSVal instance, and change the type to JS\_STR.
 
 ### GetStr()
 
-Jsvalインスタンスの型が JS\_STR の場合、インスタンスが保持しているString値を返す。
+Returns the instance's string value if the JsVal instance type is JS\_STR.
 
-インスタンスの型が JS\_STR でない場合、返却値の内容は保証されない。
+If JsVal instance type is not JS\_STR, the return value is undefined.
 
 ### GetProperty()
 
 `public JsVal GetProperty(string name);`
 
-JsValインスタンスの型が JS\_OBJ の場合、名前で指定したプロパティをJsValとして返す。
+Returns the instance's property value designated by the string name, if the JsVal instance type is JS\_OBJ.
 
-存在しない場合は null を返す。
+Is the value does not exist, null will be returned.
 
 ### GetPropertyList()
 
 `public list<JsProp> GetPropertyList();`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、オブジェクトの保持するプロパティを全て返す。
+Returns the object's property in a list if the JsVal instance type is JS\_OBJ or JS\_ARRAY.
 
-プロパティが存在しない場合は、空のlistを返す。
+If property does not exist, an empty list will be returned.
 
 ### SetPropertyList()
 
 `public bool SetPropertyList(list<JsProp> propList);`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、オブジェクトにプロパティをまとめて設定する。
+Set the object's property by the designated propList, if the JsVal instance type is JS\_OBJ or JS\_ARRAY.
 
-処理に成功すると true を返す。
+If function is completed, true will be returned.
 
 ### GetPropertyCount()
 
 `public int GetPropertyCount();`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、オブジェクトが保持しているプロパティの総数を返す。
+Returns the object's property count, if the JsVal instance type is JS\_OBJ or JS\_ARRAY.
 
 ### FindProperty()
 
 `public bool FindProperty(string name, ref JsProp found, ref int index);`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、オブジェクトが保持しているプロパティを名前で検索し、見つかったらプロパティをJsPropとして引数 found に設定する。同時にプロパティのインデックスを引数indexに設定する。
+If the JsVal instance type is JS\_OBJ or JS\_ARRAY, this function will search the object's property by the given name, and sets the found property as JsProp to the designated `found`. The property's index will be set to the given `index` as well.
 
-プロパティが見つかった場合は true を返す。
+If the property is found, true will be returned.
 
 ### AddElement()
 
 `public JsVal AddElement();`
 
-JsValインスタンスの型が JS\_ARRAY の場合、空の要素(型がJS\_NULLのJsVal)を配列の末尾に追加して、その追加したJsValを戻り値として返す。
+If the JsVal instance type is JS\_ARRAY, an empty element (JsVal which type is JS\_NULL) will be added, which the added JsVal will be the return value.
 
-追加に失敗すると null を返す。
+If addition fails, null will be returned.
 
 ### AddElementByVal()
 
 `public bool AddElementByVal(JsVal newVal);`
 
-JsValインスタンスの型が JS\_ARRAY の場合、引数で指定した要素を配列の末尾に追加する。
+If the JsVal instance type is JS\_ARRAY, the designated JsVal element will be added to the end of the array.
 
-追加に成功すると true を返す。
+On addition success, true will be returned.
 
 ### AddProperty()
 
 `public JsVal AddProperty(string name);`
 
-JsValインスタンスの型が JS\_OBJ の場合、引数で指定した名前でプロパティを生成し、プロパティのリストの末尾に追加する。追加したJsValは初期値(JS\_NULL)となる。
+If the JsVal instance type is JS\_OBJ, a new property will be defined by the given name, and added to the end of the property list. The new JsVal property's initial value is JS\_NULL.
 
-追加に成功すると、追加したJsValを戻り値として返す。
+On addition success, the added JsVal will be returned.
 
 ### AddPropertyByVal()
 
 `public bool AddPropertyByVal(string name, JsVal newVal);`
 
-JsValインスタンスの型が JS\_OBJ の場合、引数で指定した名前と値でプロパティを生成し、プロパティのリストの末尾に追加する。
+If the JsVal instance type is JS\_OBJ, a new property will be defined by the given name and newVal, and added to the end of the property list.
 
-追加に成功すると true を返す。
+On addition success, true will be returned.
 
 ### HasProperty()
 
 `public bool HasProperty(string name);`
 
-JsValインスタンスの型が JS\_OBJ の場合、引数で指定した名前でプロパティを検索し、そのプロパティが存在するならtrueを返す。
+If the JsVal instance type is JS\_OBJ, a property will be searched by the given name, and return true if the property exists.
 
 ### At()
 
 `public JsVal At(int index);`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、引数で指定したインデックスのプロパティを返す。
+Returns the property located by the given index, if the JsVal instance type is JS\_OBJ or JS\_ARRAY.
 
 ### SetAt()
 
 `public bool SetAt(int index, JsVal newVal);`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、引数で指定したインデックスのプロパティに、newvalで指定した値を設定する。
+Set the property's value to the given newVal which located by the given index, if the JsVal instance type is JS\_OBJ or JS\_ARRAY.
 
-設定に成功すると true を返す。
+On setting success, true will be returned.
 
 ### RemoveAt()
 
 `public bool RemoveAt(int index);`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、引数で指定したインデックスのプロパティを削除する。
+Delete the property located by the given index, if the JsVal instance type is JS\_OBJ or JS\_ARRAY.
 
-削除に成功すると true を返す。
+On deletion success, true will be returned.
 
 ### AtProperty()
 
 `public JsProp AtProperty(int index);`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、引数で指定したインデックスのプロパティを、JsPropの (名前, 値) の組として取得する。
+Returns the JsVal's property located by the given index as a JsProp (name, value), if the JsVal instance type is JS\_OBJ or JS\_ARRAY.
 
-取得に失敗すると null を返す。
+On obtain failure, null will be returned.
 
 ---
 
-## 【JsProp クラス】
+## JsProp Class
 
-JavaScriptのプロパティを表現するクラス。
+The class for expressing a JavaScript property.
 
-名前と、その値とをセットで扱うことができる。
+This class handles a name and its value as a pair.
 
 ### SetName()
 
 `public void SetName(string name);`
 
-プロパティのキーとなる名前を設定する。
+Set a name which is the property's key.
 
 ### GetName()
 
-プロパティのキーとなる名前を取得する。
+Get a name which is the property's key.
 
 ### SetValue()
 
 `public void SetValue(JsVal value);`
 
-プロパティの値を設定する。
+Set a property's value.
 
 ### GetValue()
 
-プロパティの値を取得する。
+Get a property's value.

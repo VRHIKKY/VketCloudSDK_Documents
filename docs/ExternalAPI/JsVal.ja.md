@@ -158,11 +158,11 @@ SetType(JS\_NULL) と同等。
 
 `public void SetNum(float val);`
 
-Jsvalインスタンスにfloat値を設定し、型を JS\_NUM に変更する。
+JsValインスタンスにfloat値を設定し、型を JS\_NUM に変更する。
 
 ### GetNum()
 
-Jsvalインスタンスの型が JS\_NUM の場合、インスタンスが保持している数値を返す。
+JsValインスタンスの型が JS\_NUM の場合、インスタンスが保持している数値を返す。
 
 インスタンスの型が JS\_BOOL の場合、false=0, true=1 のいずれかが返る。
 
@@ -172,11 +172,11 @@ Jsvalインスタンスの型が JS\_NUM の場合、インスタンスが保持
 
 `public void SetBool(bool val);`
 
-Jsvalインスタンスにbool値を設定し、型を JS\_BOOL に変更する。
+JsValインスタンスにbool値を設定し、型を JS\_BOOL に変更する。
 
 ### GetBool()
 
-Jsvalインスタンスの型が JS\_BOOL の場合、インスタンスが保持している真偽値を返す。
+JsValインスタンスの型が JS\_BOOL の場合、インスタンスが保持している真偽値を返す。
 
 インスタンスの型が JS\_NUM の場合、0=false, それ以外の値=true のいずれかが返る。
 
@@ -186,11 +186,11 @@ Jsvalインスタンスの型が JS\_BOOL の場合、インスタンスが保�
 
 `public void SetStr(string val);`
 
-JsvalインスタンスにString値を設定し、型を JS\_STR に変更する。
+JsValインスタンスにString値を設定し、型を JS\_STR に変更する。
 
 ### GetStr()
 
-Jsvalインスタンスの型が JS\_STR の場合、インスタンスが保持しているString値を返す。
+JsValインスタンスの型が JS\_STR の場合、インスタンスが保持しているString値を返す。
 
 インスタンスの型が JS\_STR でない場合、返却値の内容は保証されない。
 
@@ -280,7 +280,7 @@ JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、引数�
 
 `public bool SetAt(int index, JsVal newVal);`
 
-JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、引数で指定したインデックスのプロパティに、newvalで指定した値を設定する。
+JsValインスタンスの型が JS\_OBJ または JS\_ARRAY の場合、引数で指定したインデックスのプロパティに、newValで指定した値を設定する。
 
 設定に成功すると true を返す。
 
