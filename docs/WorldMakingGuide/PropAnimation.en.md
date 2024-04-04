@@ -12,6 +12,7 @@ If you stumble on each step, please refer to [How to Animate Objects - Troublesh
 Please refer to [HEOAnimation](../HEOComponents/HEOAnimation.md) for usage instructions.
 
 ## How to add animation to HEOObject
+
 By exporting the object to .heo, exporting the animation to .hem, and placing it on the scene, you can create objects that move freely from [HEOAnimation](../HEOComponents/HEOAnimation.md).
 
 Note that the only animation parameter that can be used here is **Transform value change**.
@@ -19,7 +20,7 @@ Note that the only animation parameter that can be used here is **Transform valu
 ### Export .hem file (Heliodor Export Motion file)
 
 1\. Create a new empty parent object (Named as AnimationBase in the image below) for setting animation, and a new Cube object (CubeRotation in the image below) subject of animation, configure the parent-child relationship in a hierarchy, and then set them both to Position(0,0,0). <br>
-    
+
 ![PropAnimation_1](./img/PropAnimation_1.jpg)
 
 2\. Select the empty object and add Animation by `Add Component` in the Inspector view. <br>
@@ -28,7 +29,7 @@ Note that the only animation parameter that can be used here is **Transform valu
 ![PropAnimation_2](./img/PropAnimation_2.jpg)
 
 !!! note
-         There is a similar component called Animator, but please note that this is not used.
+    There is a similar component called Animator, but please note that this is not used.
 
 3\. Open the animation tab by selecting `Window > Animation > Animation` or Ctrl+6.
 
@@ -75,6 +76,7 @@ Here, select Rotation and Scale from `CubeRotation - Transform`. You can add ite
     Proceeding as is will cause `KeyNotFoundException: The given key was not present in the dictionary.` to occur.
 
 We will not explain in detail how to create an animation here, but follow the points below:
+
 - Keyframes must be entered for all items for the start and end points.
 - The object to which the Animation component is attached (empty object) is not moving
 
@@ -92,7 +94,7 @@ After saving, the export is complete when `"Exported"` appears on the Unity cons
 ![PropAnimation_14](./img/PropAnimation_14.jpg)
 
 !!! note
-        If an error occurs, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
+    If an error occurs, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
 
 ### Export .heo file (Heliodor Export Object file)
 
@@ -134,13 +136,12 @@ By committing build at this point, you can display animated objects on the scene
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-!!! note caution
-        Notes when exporting .heo: <br>
-        - If you export the original object without setting its Position to (0,0,0), the placement position will be the [HEOObject](../HEOComponents/HEOObject.md) Position added with the Position value at the time of export. <br>
-        - If the original object has collision detection enabled, the exported object will also have collision detection. <br>
-        - Even if you move an object in .hem, the collision detection information of the object will not be moved. <br>
-        - The first animation in the Motion column will be automatically played when the world starts. <br>
-        If you do not want animations played on world start, please leave the first Motion entry blank. <br>
+!!! caution "Notes when exporting .heo"
+    - If you export the original object without setting its Position to (0,0,0), the placement position will be the [HEOObject](../HEOComponents/HEOObject.md) Position added with the Position value at the time of export. <br>
+    - If the original object has collision detection enabled, the exported object will also have collision detection. <br>
+    - Even if you move an object in .hem, the collision detection information of the object will not be moved. <br>
+    - The first animation in the Motion column will be automatically played when the world starts. <br>
+    If you do not want animations played on world start, please leave the first Motion entry blank.
 
 ## Controlling animation set to HEOObject
 
@@ -148,9 +149,9 @@ By committing build at this point, you can display animated objects on the scene
 
 You can play the animation added to [HEOObject](../HEOComponents/HEOObject.md) by using the  [PlayItem](../Actions/Item/PlayStopItem.md) action. <br>
 
-!!! note
-        [PlayItem](../Actions/Item/PlayStopItem.md): Plays the designated item. The Index setting is the Motion number to be played. <br>
-        PlayItem is valid for HEO objects containing Motion, as well as Audio and Particles.
+!!! note "About PlayItem Action"
+    [PlayItem](../Actions/Item/PlayStopItem.md): Plays the designated item. The Index setting is the Motion number to be played. <br>
+    PlayItem is valid for HEO objects containing Motion, as well as Audio and Particles.
 
 Set the animation of the animated Cube to be the second one with loop disa, and click “Add” at the top of BeginActions to add the Motion field. <br>
 Delete the motion specified in .hem in the first Motion, and specify the .hem file in the second Motion.
@@ -174,16 +175,16 @@ On world build, the Cube will rotate (play Motion) when clicked.
 
 ![PropAnimation_Result_2](./img/PropAnimation_Result_2.gif)
 
-!!! note
-        About [StopItem](../Actions/Item/PlayStopItem.md):<br>
-        [StopItem](../Actions/Item/PlayStopItem.md) is a companion action to [PlayItem](../Actions/Item/PlayStopItem.md). <br>
-        Although this action might seem to stop the playing animation, but the effect of StopItem is to stop beginaction, which the playing animation does not fall under BeginActions and will not stop. <br>
-        StopItem can be used to stop particles or sounds.
+!!! note "About [StopItem](../Actions/Item/PlayStopItem.md)"
+    [StopItem](../Actions/Item/PlayStopItem.md) is a companion action to [PlayItem](../Actions/Item/PlayStopItem.md). <br>
+    Although this action might seem to stop the playing animation, but the effect of StopItem is to stop beginaction, which the playing animation does not fall under BeginActions and will not stop. <br>
+    StopItem can be used to stop particles or sounds.<br>
+    As a substitute implementation to stop an animation, PlayItem can be used to [call an empty Motion](../Actions/Item/PlayStopItem.md#_3).
 
 ### Control using HeliScript
 
 Animation can be controlled using HeliScript. <br>
-As an example, you can create a HeliScript that repeats animation playback every 3 seconds as shown below. <br>
+As an example, you can create a HeliScript that repeats animation playback every 3 seconds as shown below.
 
 Here, ChangeMotion() of [Item class](../hs/hs_class_item.md) is used to control the motion in [HEOObject](../HEOComponents/HEOObject.md). <br>
 

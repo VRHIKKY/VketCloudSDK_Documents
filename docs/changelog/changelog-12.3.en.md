@@ -49,9 +49,13 @@
     - Added Guide for Setup using Quick Menu
   - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ReflectionProbe.html)
     - Edited setup instructions for reflection probe
+  - [How to Animate Objects - Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation_TroubleShooting.html)
+    - Revised solution for error caused when meshes without uv2 is handled by MeshRenderer
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
+  - [Debug Mode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/DebugMode.html)
+    - Updated information according to Ver12.3.4
   - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/particleeditor/pe_about_properties.html)
     - Removed notice on fixed bugs and deleted info on deprecated features
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VKCActivityExporter.html)
@@ -62,6 +66,10 @@
 - HEO Components
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOActivity.html)
     - Added info on Scene Preview and Advanced Settings
+  - [HEOAreacollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOAreacollider.html)
+    - Updated instructions on enabling collision view on debug mode
+  - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOCollider.html)
+    - Update information according to Ver12.3
   - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOMeshCollider.html)
     - Updated How to Use according to Ver12.3
     - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
@@ -70,6 +78,9 @@
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
     - Added info on component deprecation
 - Actions
+  - Item
+    - [Play/StopItem](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Item/PlayStopItem.html)
+      - Added information about StopItem
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Programmatic/IfEqual.html)
       - Changed Title (old:If A == B)
@@ -87,12 +98,16 @@
 Added information on HeliScript updates on Ver12.x: *English version WIP
   - [HeliScript Overview](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_overview.html)
     - Added feature change for Player class functions within constructor
+    - Updated instructions according to Ver12.3
   - [Class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class.html)
     - Added object instantiation / deletion, detecting instants
   - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_component.html)
     - Added callback function on object deselect
   - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class_item.html)
     - Added list of object type which can call each function
+  - [Item Types and HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
+    - Changed title（Old: Item Types and Usable Functions）
+    - Deleted chart of functions usable for each HEOComponent, as latest information is now on Item class page
   - [Player class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class_item.html)
     - Added feature change for Player class functions within constructor
     - Added new functions: ChangeActivityMotion / SetNextActivityMotion, and SetPresetAvatar

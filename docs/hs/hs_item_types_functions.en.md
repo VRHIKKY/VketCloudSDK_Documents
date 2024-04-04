@@ -1,4 +1,4 @@
-# Item Types and Usable Functions
+# Item Types and HEOComponents
 
 ## Overview
 
@@ -35,61 +35,6 @@ Each Item type are described on the chart below. To avoid implementation mistake
 
 ---
 
-## Chart of Item types and usable Item Class functions
+For details on each function and applicable HEOComponents, please refer to the page below:
 
-| | field | object | plane | textplane | bgm / se | particle | spot | areacollider | bgtexture | activity | camera |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Equals | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| GetName | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| SetPos | | ○ ||||||||||
-| GetPos | | ○ ||||||||||
-| GetWorldPos || ○ ||||||||||
-| SetQuaternion || ○ ||||||||||
-| GetQuaternion || ○ ||||||||||
-| GetWorldQuaternion || ○ ||||||||||
-| GetWorldRotate || ○ ||||||||||
-| GetScale || ○ ||||||||||
-| SetScale || ○ ||||||||||
-| MovePos || ○ ||||||||||
-| IsMoving || ○ ||||||||||
-| Play || ○ ||| ○ | ○ ||||||
-| Stop ||||| ○ | ○ ||||||
-| IsPlay || ○ ||| ○ | ○ ||||||
-| SetShow | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| IsShow | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| ChangeMotion || ○ ||||||||||
-| Load | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| Unload | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| IsLoading | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| IsLoaded | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| GetNodeIndexByName | ○ |||||||||||
-| GetNodeNameByIndex | ○ |||||||||||
-| GetNodePosByIndex | ○ |||||||||||
-| SetShowNode | ○ | ○ ||||||||||
-| IsShowNode | ○ | ○ ||||||||||
-| SetRotateNode | ○ |||||||||||
-| SetEnableCollider | ○ ||||||| ○ ||||
-| IsEnableCollider | ○ ||||||| ○ ||||
-| SetClickableNode | ○ |||||||||||
-| IsClickableNode | ○ |||||||||||
-| SetUVOffset | ○ | ○ *SDK Ver9.x and later ||||||||||
-| PlayVideo | ○ |||||||||||
-| StopVideo | ○ |||||||||||
-| IsPlayVideo | ○ |||||||||||
-| ClearTextPlane |||| ○ ||||||||
-| WriteTextPlane |||| ○ ||||||||
-| SetCamera ||||||||||| ○ |
-| ResetCamera ||||||||||| ○ |
-| ReplaceItem | ○ | ○ |||| ○ ||||||
-| ReplaceTexture | ○ | ○ | ○ ||| ○ ||||||
-| SetPhysicsEnable || ○ ||||||||||
-| IsPhysicsFixed || ○ ||||||||||
-| SetProperty | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| GetProperty | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| CallComponentMethod | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| SetOverridesProperty | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-| GetOverridesProperty | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ | ○ |
-
-For details on each function, refer to the page below.
-
-[Item class](hs_class_item.md)
+- [Item class](hs_class_item.md)
