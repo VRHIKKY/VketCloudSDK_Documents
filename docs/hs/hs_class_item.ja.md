@@ -294,16 +294,16 @@ Item が移動中の場合はtrueを返す。
 ### IsPlay
 `public bool IsPlay()`
 
-サウンドやパーティクルが再生中の場合は true を返す。
+オブジェクトのモーションやサウンドやパーティクルが再生中の場合は true を返す。
 
-<details>
-<summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
-<ul>
-  <li>HEOObject</li>
-  <li>HEOAudio</li>
-  <li>HEOParticle</li>
-</ul>
-</details>
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - HEOAudio
+    - HEOObject
+    - HEOParticle
+    ??? caution "返り値について"
+        - HEOAudio: オーディオクリップで設定したサウンドが再生中の場合はtrueを返す
+        - HEOObject: オブジェクトモードがMotionの際に、Motionリストに設定したhemが再生中の場合はtrueを返す
+        - HEOParticle: .hepで設定したパーティクルが再生中の場合はtrueを返す
 
 ### SetShow
 `public void SetShow(bool flag)`
