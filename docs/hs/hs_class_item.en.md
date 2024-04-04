@@ -131,6 +131,15 @@ Stop the sound or particle that is playing.
 
 Returns true if the sound or particle is playing.
 
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - HEOAudio
+    - HEOObject
+    - HEOParticle
+    ??? caution "返り値について"
+        - HEOAudio: オーディオクリップで設定したサウンドが再生中の場合はtrueを返す
+        - HEOObject: オブジェクトモードがMotionの際に、Motionリストに設定したhemが再生中の場合はtrueを返す
+        - HEOParticle: .hepで設定したパーティクルが再生中の場合はtrueを返す
+
 ### SetShow
 `public void SetShow(bool flag)`
 
