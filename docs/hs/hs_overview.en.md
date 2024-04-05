@@ -158,4 +158,9 @@ Please note that `ObjectD` below is not a child object of [HEOField](../HEOCompo
 
 ![hs_overview_7](img/hs_overview_7.jpg)
 
+
+(要翻訳)また、各Nodeは階層構造を持たない点にご留意ください。<br>
+例えば、複数のGameObjectを[Show/HideNode](../Actions/Node/ShowHideNode.md)からまとめて非表示にしたい場合、Unity上で親子構造を持った親側のGameObjectをTargetに指定して非表示にしたとしても、アクション / HeliScript上ではUnityのHierarchy上の親子構造が無視されるため、配下の子GameObjectも同時にまとめて非表示にするようなことはできません。<br>
+そのため、非表示にしたいGameObject / Nodeを対象の数だけ個別に指定する必要がございます。 
+
 For handling Node by HeliScript, please refer to [Item class](./hs_class_item.md).
