@@ -292,6 +292,7 @@ nav:
       - Show/HideNode: Actions/Node/ShowHideNode.md
       - Enable/DisableClickableNode: Actions/Node/EnableDisableClickableNode.md
       - Enable/DisableCollider: Actions/Node/EnableDisableCollider.md
+      - Enable/DisableNode: Actions/Node/EnableDisableNode.md
     - Item:
       - Play/StopItem: Actions/Item/PlayStopItem.md
       - Show/HideItem: Actions/Item/ShowHideItem.md
