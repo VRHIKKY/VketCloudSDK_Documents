@@ -13,7 +13,7 @@ HeliScriptの文法については[基本系](./hs_var.md)から順番に読む�
 ![hs_overview_1](img/hs_overview_1.jpg)
 
 初めに、HeliScriptを書き込むファイルを作ります。<br>
-Projectウィンドウ(Assetsなどがあるところ)で右クリックして、**「HS script」**を選択し、任意のフォルダにHeliScriptファイルを追加します。
+Projectウィンドウ(Assetsなどがあるところ)で右クリックして、**「HeliScript」**を選択し、任意のフォルダにHeliScriptファイルを追加します。
 
 例として、ここではAssetsフォルダにScriptsフォルダを追加し、HelloWorld.hsという名前でHeliScriptファイルを新規生成しています。
 
@@ -35,14 +35,14 @@ Inspector画面にてAdd Component > HEOScriptと選択してコンポーネン�
 ![hs_overview_4](img/hs_overview_4.jpg)
 
 今回実装するHelloWorldでは、デバッグログにて文字を出力するためにワールドのビルドをデバッグモードに設定する必要があります。<br>
-デバッグモードを使うために[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)の[Debug Mode](../WorldEditingTips/DebugMode.md)を有効にします。
+デバッグモードを使うためにVketCloudSettings[BasicSettings](../VketCloudSettings/BasicSettings.md)の[Debug Mode](../WorldEditingTips/DebugMode.md)を有効にします。
 
 ### 4. HeliScriptを書く
 
 いよいよHeliScript本体を書いていきます。<br>
 HelloWorld.hsの実装として以下に例を示します。
 
-```
+```C#
 //コンポーネント
 component HelloWorld
 {   
@@ -51,7 +51,7 @@ component HelloWorld
     public HelloWorld()
     {
     //デバッグログに出力
-    hsSystemOutput("Hello, World!\n");
+    hsSystemWriteLine("Hello, World!");
     }
 
     //アップデート関数：毎フレーム実行されます
@@ -78,7 +78,7 @@ component HelloWorld
 HeliScript内で各オブジェクトを参照する際は、後述するItem及びNodeによって取り扱います。<br>
 例として、以下のように[HEOField](../HEOComponents/HEOField.md)下のexampleObjectがクリックされた際にメッセージを出力するスクリプトが書けます。
 
-```
+```C#
 component example
 {
     //ItemとPlayerを定義
@@ -116,7 +116,7 @@ component example
         //クリック対象と上で取得したノードが一致したとき
     	if(NodeIndex == ex_ItemNodeIndex){
     	    //メッセージを表示
-        	hsSystemOutput("exObj Clicked.\n");
+        	hsSystemWriteLine("exObj Clicked.");
         }
     }
 }
