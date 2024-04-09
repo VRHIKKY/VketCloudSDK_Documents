@@ -101,6 +101,8 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Added callback function on object deselect
   - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class_item.html)
     - Added list of object type which can call each function
+    - Added information regarding return values for IsPlay
+    - Fixed description for GetPhysicsIDByNodeName
   - [Item Types and HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
     - Changed title（Old: Item Types and Usable Functions）
     - Deleted chart of functions usable for each HEOComponent, as latest information is now on Item class page
