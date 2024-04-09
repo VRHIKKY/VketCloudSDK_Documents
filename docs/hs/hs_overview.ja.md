@@ -61,7 +61,9 @@ component HelloWorld
     }
 }
 ```
+
 ### 5. Build And Runでテストする
+
 コードの実装を完了した上で、Build And Runを実行すると画面上のデバッグログに"Hello, World!"が出力されます。
 
 ![hs_overview_5](img/hs_overview_5.jpg)
@@ -160,6 +162,6 @@ ItemのHeliScriptでの取り扱いは[Itemクラス](./hs_class_item.md)をご�
 
 また、各Nodeは階層構造を持たない点にご留意ください。<br>
 例えば、複数のGameObjectを[Show/HideNode](../Actions/Node/ShowHideNode.md)からまとめて非表示にしたい場合、Unity上で親子構造を持った親側のGameObjectをTargetに指定して非表示にしたとしても、アクション / HeliScript上ではUnityのHierarchy上の親子構造が無視されるため、配下の子GameObjectも同時にまとめて非表示にするようなことはできません。<br>
-そのため、非表示にしたいGameObject / Nodeを対象の数だけ個別に指定する必要がございます。 
+そのため、非表示にしたいGameObject / Nodeを対象の数だけ個別に指定する必要がございます。
 
 NodeのHeliScriptでの取り扱いは[Itemクラス](./hs_class_item.md)をご参照ください。

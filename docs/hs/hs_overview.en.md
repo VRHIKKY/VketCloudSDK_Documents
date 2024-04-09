@@ -61,7 +61,9 @@ component HelloWorld
      }
 }
 ```
+
 ### 5. Test with Build And Run
+
 After completing the code implementation and executing Build And Run, "Hello, World!" will be displayed to the debug log on the screen.
 
 ![hs_overview_5](img/hs_overview_5.jpg)
@@ -158,9 +160,8 @@ Please note that `ObjectD` below is not a child object of [HEOField](../HEOCompo
 
 ![hs_overview_7](img/hs_overview_7.jpg)
 
-
-(要翻訳)また、各Nodeは階層構造を持たない点にご留意ください。<br>
-例えば、複数のGameObjectを[Show/HideNode](../Actions/Node/ShowHideNode.md)からまとめて非表示にしたい場合、Unity上で親子構造を持った親側のGameObjectをTargetに指定して非表示にしたとしても、アクション / HeliScript上ではUnityのHierarchy上の親子構造が無視されるため、配下の子GameObjectも同時にまとめて非表示にするようなことはできません。<br>
-そのため、非表示にしたいGameObject / Nodeを対象の数だけ個別に指定する必要がございます。 
+Also, please be aware that Nodes are not in a hierarchy structure.<br>
+For example, if multiple GameObjects are to be hided using [Show/HideNode](../Actions/Node/ShowHideNode.md), the child-object on the Unity hierarchy will not be hidden when the parent-object is hided by the action / HeliScript. This is because Nodes do not consider the Unity hierarchy.<br>
+Therefore, each GameObject / Node must be explicitly called to be a target for the Hide action / script.
 
 For handling Node by HeliScript, please refer to [Item class](./hs_class_item.md).
