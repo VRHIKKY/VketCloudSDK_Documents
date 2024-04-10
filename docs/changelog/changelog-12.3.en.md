@@ -27,7 +27,7 @@
   - [Item Types and Usable Functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
 - External API
   - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/JsVal.html)
-　- [Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/ExternalAPI/BrokerAPI.html) *English version WIP
+　- [Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/BrokerAPI.html)
 
 ## Edited Pages
 

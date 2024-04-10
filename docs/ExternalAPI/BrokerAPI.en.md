@@ -1,129 +1,129 @@
-# ブローカーAPIについて
+# About Broker API
 
-ブローカーAPIとは、Vket Cloudにおいて外部APIとの連携を行う際、該当のAPIをホワイトリストに登録した上で通信を行うためのAPIです。
+The Broker API is an API feature for Vket Cloud, which is intended to register external APIs to an allowlist and verify the connection inside Vket Cloud worlds.
 
-!!! caution "APIの実装予定について"
-    SDK Ver12.3.4現在、ブローカーAPIはGETにのみ対応しております。<br>
-    今後のアップデートによってPOST, PUT, DELETEなどに対応する予定です。
+!!! caution "API feature schedules"
+    On SDK Ver12.3.4, the Broker API is currently available only for GET requests.<br>
+    Other features such as POST, PUT, and DELETE are scheduled to be enabled on future updates.
 
-## 使い方
+## How to Use
 
-!!! caution "外部API連携機能の公開について"
-    外部API連携機能は現在Vket Cloud開発者コミュニティに向けて限定公開されております。<br>
-    当機能をお使いになりたい場合は[Vket CloudコミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}にご参加の上、[ロール取得チャンネル](https://discord.com/channels/900943744575103017/1178589689393975317){target=_blank}にて「開発コミュニティ」ロールをご取得ください。<br>
-    開発者コミュニティにご参加いただくと、APIをホワイトリストに入れる手順のほか、最新の更新情報などが受け取れるようになります。ぜひご参加ください！
+!!! caution "External API feature availability"
+    The external API feature is currently under open test for Vket Cloud developer community members.<br>
+    If you wish to try this feature, join the [Vket Cloud Community Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank} and obtain a "Developer Community" role in the [Roles channel](https://discord.com/channels/900943744575103017/1178589689393975317){target=_blank}.<br>
+    In the developer community, instructions for allowlisting API and other new updates will be announced. Feel free to join us!
 
-1\. 使いたいAPIをVket Cloud公式サイトにてホワイトリストに入れます。
+1\. Add an external API to the allowlist located in the Vket Cloud official website.
 
-[Vket Cloud公式サイト](https://cloud.vket.com/){target=_blank}にてマイページにログインし、外部API一覧ページへ移動します。<br>
-ここではブローカーAPIのホワイトリストとして扱うAPIが一覧として表示されます。
+Login to the [Vket Cloud official website](https://cloud.vket.com/){target=_blank}'s MyPage, and move to the external API list page.<br>
+This page will show the allowlist of external APIs for the Broker API.
 
-![BrokerAPI_1](img/BrokerAPI_1.jpg)
+![BrokerAPI_1_en](img/BrokerAPI_1_en.jpg)
 
-「外部APIを追加する」を選択し、API名とURLを記載します。<br>
-API名は識別のために任意の名前を付け、URLは使用したいAPIのものを指定し、保存します。<br>
-例として、この後のサンプルコードで用いる[Youtube Data API](https://developers.google.com/youtube/v3/getting-started?hl=ja){target=_blank}の情報を以下のように記載します。
+Select **Add external API** to register the name and URL of API to be used. <br>
+The API name can be named at choice, and the URL should be designated according to the using API. Select save to confirm edit.<br>
+As an example, the [Youtube Data API](https://developers.google.com/youtube/v3/getting-started?hl=ja){target=_blank} is registered as below to be used in the later mentioned sample code.
 
-![BrokerAPI_2](img/BrokerAPI_2.jpg)
+![BrokerAPI_2_en](img/BrokerAPI_2_en.jpg)
 
-なお、APIを使用する際はあらかじめ認証に必要なAPIキーなどのセットアップと取得を済ませる必要があります。
+To use an external API, authorization such as API keys must be setup and obtained beforehand.
 
-2\. ワールドをセットアップし、APIを呼び出すためのHeliScriptを[JsVal](JsVal.md)を使用しつつ作成します。
+2\. Setup a world, and create a HeliScript to call the API using [JsVal](JsVal.md).
 
-例として、以下にYoutube Data APIを使用してオブジェクトがクリックされた際に指定の動画の検索結果を取得・表示するHeliScriptの実装を示します。
+For example, a HeliScript for calling/displaying a search result text when a designated object is clicked is described as below:
 
 ```c#
-delegate void fJsValCallback(JsVal);//コールバック用
-extern api.broker//ブローカーAPIの関数を呼び出すための宣言
+delegate void fJsValCallback(JsVal); //Method for callback
+extern api.broker //declaration to call a Broker API method
 {
     bool registerAgreement(string url, string spatiumCode, string worldCode, string guestUuid);
     bool connectExternalApi(async fJsValCallback, string method, string url, string spatiumCode, string worldCode, string guestUuid, JsVal data);
 }
 extern console
 {
-    void log(JsVal);//JsValの中身確認用。ブラウザのコンソールで確認できる
+    void log(JsVal); //For checking JsVal content. Can be viewed on the browser console
 }
 component BrokerAPI
 {
-    Item thisItem;//BrokerAPIコンポーネントが割り当てられているItem
-    Item resultTextPlane;//取得結果を表示するTextPlane
-    //定数
-    const string GET_SWITCH_NAME = "Button_Get";//Worldで押すボタンのgameObject名を入れる
-    const string API_URL = "https://www.googleapis.com/youtube/v3/search";//アクセス許可に表示するURL兼疎通URL
-    const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//youtube APIのapiキーを入れる
-    const string SPATIUM_CODE = "Default";//特殊なことをしなければDefault
-    const string SEARCH_WORD = "VketCloud";//検索するワードを入れる
-    const int MAX_RESULTS = 10;//検索結果の数を入れる。1～50
-    const string RESULT_ITEM_NAME = "Result";//取得結果を表示するTextPlaneの名前。12.3だとFontSize大きくすると文字化けし易い
+    Item thisItem;// Item which BrokerAPI component is allocated
+    Item resultTextPlane;//TextPlane to show results 
+    //Constants
+    const string GET_SWITCH_NAME = "Button_Get";// Name of GameObject which will be clicked by the player in world
+    const string API_URL = "https://www.googleapis.com/youtube/v3/search";//URL for API access and confirmation dialog
+    const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//API key for the youtube API
+    const string SPATIUM_CODE = "Default";//this value should be Default unless explicitly changed by worldsettings
+    const string SEARCH_WORD = "VketCloud";//Word to be searched by API
+    const int MAX_RESULTS = 10;//number of search results to be obtained
+    const string RESULT_ITEM_NAME = "Result";//Name of TextPlane to show the obtained search results. May cause text corruption if FontSize value is enlarged on Ver12.3
     //----------------------------------------
     public BrokerAPI()
     {
-        //BrokerAPI.hsが割り当てられているItemを取得。
-        //ボタン(GET_SWITCH_NAME)のGameObjectが存在するFieldにBrokerAPI.hsのHEOScriptを割り当てる必要がある。
+        //Get the Item where BrokerAPI.hs is allocated.
+        //The BrokerAPI.hs must be allocated by a HEOScript component, which should be added to the Field where the button GameObject mentioned by GET_SWITCH_NAME exists
         thisItem = hsItemGetSelf();
         resultTextPlane = hsItemGet(RESULT_ITEM_NAME);
     }
     public void OnClickNode(int NodeIndex)
     {
-        string clickedNodeName = thisItem.GetNodeNameByIndex(NodeIndex);//クリックされたノードの名前を取得
+        string clickedNodeName = thisItem.GetNodeNameByIndex(NodeIndex);//Get the Node name of the object clicked by player
         switch (clickedNodeName)
         {
-            case GET_SWITCH_NAME://GET用のボタン
+            case GET_SWITCH_NAME://Button for calling GET API
                 if(!hsCommonDialogIsOpened())
                 {
                     ComfirmApiAccess();
                 }
                 break;
-            default://その他
-                hsSystemWriteLine("未登録のNodeName:" + clickedNodeName);
+            default://else
+                hsSystemWriteLine("Unregistered NodeName:" + clickedNodeName);
         }
     }
-    void ComfirmApiAccess()//APIアクセス許可のための汎用ダイアログを設定、表示する
-    {
-        //汎用ダイアログについては下記マニュアルを参照
+    void ComfirmApiAccess()//Setup and display a common dialog to get API access permission from the player
+
+        //See the manual below for details about common dialog *English version WIP        
         //https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_system_function_commondialog.html#hscommondialogsettitle
-        hsCommonDialogSetUseTitle(true);//タイトルを表示
-        hsCommonDialogSetUseYesNoButton(true);//YES/NOボタンを表示
-        if(hsIsLangJA())//ブラウザ設定が日本語かどうか
+        hsCommonDialogSetUseTitle(true);//Show title
+        hsCommonDialogSetUseYesNoButton(true);//Set a YES/NO button
+        if(hsIsLangJA())//If browser language is Japanese *Use hsIsLangEN() to explicitly implement texts in EN browser
         {
-            hsCommonDialogSetTitle("Youtube検索");//ダイアログのタイトル
-            hsCommonDialogSetText(API_URL + "\nにアクセスします。よろしいですか?");//ダイアログの本文
+            hsCommonDialogSetTitle("Youtube検索");//Title of dialog
+            hsCommonDialogSetText(API_URL + "\nにアクセスします。よろしいですか?");//Main text *meaning: Are you sure you want to access to API_URL?
         }
-        else
+        else // For EN browser
         {
-            hsCommonDialogSetTitle("Youtube Search");//ダイアログのタイトル
-            hsCommonDialogSetText("Do you allow access to \n" + API_URL);//ダイアログの本文
+            hsCommonDialogSetTitle("Youtube Search");//Title of dialog
+            hsCommonDialogSetText("Do you allow access to \n" + API_URL);//Main text
         }
-        hsCommonDialogSetTextAlignment(HSAlignLM);//本文の配置。左詰め中央表示
-        hsCommonDialogSetTextOverflowWrap(true);//本文の折り返しをする設定
-        hsCommonDialogSetTextURLClickable(false);//URLをクリック不可に
-        hsCommonDialogSetYesButtonText("YES");//YESボタンのテキスト設定
-        hsCommonDialogSetNoButtonText("NO");//NOボタンのテキスト設定
-        hsCommonDialogSetYesButtonDelegate(YesButtonCallback);//YESボタンを押したらNoButtonCallbckを実行
-        hsCommonDialogSetNoButtonDelegate(NoButtonCallback);//NOボタンを押したらNoButtonCallbckを実行
-        hsCommonDialogOpen();//ダイアログを開く
+        hsCommonDialogSetTextAlignment(HSAlignLM);//Alignment of main text. Aligned to right middle
+        hsCommonDialogSetTextOverflowWrap(true);//Set text wrapping
+        hsCommonDialogSetTextURLClickable(false);//Disable clicking on URL
+        hsCommonDialogSetYesButtonText("YES");//Set text for YES button
+        hsCommonDialogSetNoButtonText("NO");//Set text for NO button
+        hsCommonDialogSetYesButtonDelegate(YesButtonCallback);//Run YesButtonCallback if YES button is clicked
+        hsCommonDialogSetNoButtonDelegate(NoButtonCallback);//Run NoButtonCallback if NO button is clicked
+        hsCommonDialogOpen();//Open dialog
     }
-    void NoButtonCallback()//Noボタンを押したら実行
+    void NoButtonCallback()//Run this is NO button is clicked
     {
-        hsCommonDialogClose();//汎用ダイアログを閉じる
+        hsCommonDialogClose();//Close common dialog
     }
-    void YesButtonCallback()//Yesボタンを押したら実行
+    void YesButtonCallback()//Run this is YES button is clicked
     {
         APIGetTest();
         hsCommonDialogClose();
     }
-    void APIGetTest()//youtubeの検索結果を取得
+    void APIGetTest()//GET search results from youtube
     {
         hsSystemWriteLine("APIGetTest");
         string url = GetAPIUrl();
         string worldID = hsGetCurrentWorldId();
 
-        //本来は将来的な機能に対応するためguestの場合ここでuuidを取得する必要があるが、現在はuuidを固定値として設定
+        //For future implementations, uuid must be obtained here if player is a guest. Constant value is used for now
         /*
         string SelfUserType = GetSelfUserType();
         string guestUuid = GetSelfGuestUuid();
 
-        //guestでuuidがない場合またはSelfUserTypeが空の場合は疎通しない。ローカルホストでの動作確認では起こり得る。
+        //Terminate if guest does not have a uuid, or SelfUserType is empty. This may happen when world is running on a local host.
         if (guestUuid == "" && SelfUserType == "guest" || SelfUserType == "")
         {
             hsSystemWriteLine("UserInfoError");
@@ -132,24 +132,24 @@ component BrokerAPI
         */
         string guestUuid = "Uuid";
 
-        //許可を取ったURLを登録
+        //Register the allowlisted URL
         bool result = api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
-        BoolLogOutput("registerAgreement: ",result);//agreementの結果をlogで確認
+        BoolLogOutput("registerAgreement: ",result);// see the result of agreement procedure in log
 
-        string method = "get";//HTTPリクエストメソッド。今回はget
-        JsVal data = makeJsNull();//connectExternalApiの第7引数用のJsVal。getの場合はnullでよい
+        string method = "get";//HTTP request method. GET is used for this method.
+        JsVal data = makeJsNull();//JsVal for 7th argument in connectExternalApi. Null value is allowed for GET
 
-        //APIに接続。第一引数に指定したメソッドにdataが入って呼ばれる
+        //Connect to API. Returned data will be entered to the method designated in 1st argument
         api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
     }
     string GetAPIUrl()
     {
-        string apiUrl = API_URL;//APIのURL
-        apiUrl += "?key=" + YOUTUBE_API_KEY;//Apiキーを指定
+        string apiUrl = API_URL;//API URL
+        apiUrl += "?key=" + YOUTUBE_API_KEY;//Designate Api key
         apiUrl += "&part=snippet";
-        apiUrl += "&type=video";//検索したいものを指定
-        apiUrl += "&q=" + SEARCH_WORD;//=の後に検索したいワードを入力
-        apiUrl += "&maxResults=" + MAX_RESULTS.String();//検索結果の数を指定
+        apiUrl += "&type=video";//Designate type to search
+        apiUrl += "&q=" + SEARCH_WORD;//Enter the search word after "="
+        apiUrl += "&maxResults=" + MAX_RESULTS.String();//Designate number of search results
         return apiUrl;
     }
     void BoolLogOutput(string logStr, bool flag)
@@ -159,24 +159,24 @@ component BrokerAPI
     }
     string GetSelfGuestUuid()
     {
-        //本来は将来的な機能のため、guestの場合ここでuuidを取得する必要があるが、現在はuuidを固定値として設定
-        string guestUuid = "Uuid";//
+        //For future implementations, uuid must be obtained here if player is a guest. Constant value is used for now
+        string guestUuid = "Uuid";
         return guestUuid;
     }
     string GetSelfUserType()
     {
-        string SelfUserType = "";//UserTypeを取得する方法は未公開なため、空文字を設定
+        string SelfUserType = "";//Set an empty string as method to obtain UserType is not public 
         return SelfUserType;
     }
-    void GetCallback(JsVal data)//youtubeの検索結果を処理
+    void GetCallback(JsVal data)//Process search result from youtube
     {
         hsSystemWriteLine("GetCallback");
-        console.log(data);//JsValの中身確認用
+        console.log(data);//log to see content of JsVal
         string outputText = "";
-        if (!IsDataValid(data)) return;//dataが有効かどうかを判定
+        if (!IsDataValid(data)) return;//Check if data is valid
 
-        int resultsPerPage = data.GetProperty("data").GetProperty("data").GetProperty("pageInfo").GetProperty("resultsPerPage").GetNum();//結果の数を取得
-        for (int i = 0; i < resultsPerPage; i++)//titleをoutputTextに格納
+        int resultsPerPage = data.GetProperty("data").GetProperty("data").GetProperty("pageInfo").GetProperty("resultsPerPage").GetNum();//Get number of results
+        for (int i = 0; i < resultsPerPage; i++)//Put video titles to outputText
         {
             string title = data.GetProperty("data").GetProperty("data").GetProperty("items").At(i).GetProperty("snippet").GetProperty("title").GetStr();
             //hsSystemWriteLine(title);
@@ -190,13 +190,13 @@ component BrokerAPI
         bool result = true;
         if (data.IsNull())
         {
-            result = false;//dataがnullの場合にはfalse
+            result = false;//false if data is null
             hsSystemWriteLine("Data is Null");
         } 
         string status = data.GetProperty("status").GetStr();
         if (status == "ng")
         {
-            //statusがngの場合にはfalse。ローカルホスト等で認証サーバーにアクセスできない場合に起こる
+            //false if status is ng. This may happen when world is running on a local host
             result = false;
             hsSystemWriteLine("Data is NG");
         }
@@ -205,6 +205,6 @@ component BrokerAPI
 }
 ```
 
-3\. ワールドをビルドし、結果を確認します。
+3\. Build the world to see if API operates as intended.
 
 ![BrokerAPI_Result](img/BrokerAPI_Result.gif)

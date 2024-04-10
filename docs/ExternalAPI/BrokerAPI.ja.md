@@ -9,8 +9,8 @@
 ## 使い方
 
 !!! caution "外部API連携機能の公開について"
-    外部API連携機能は現在Vket Cloud開発者コミュニティに向けて限定公開されております。<br>
-    当機能をお使いになりたい場合は[Vket CloudコミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}にご参加の上、[ロール取得チャンネル](https://discord.com/channels/900943744575103017/1178589689393975317){target=_blank}にて「開発コミュニティ」ロールをご取得ください。<br>
+    外部API連携機能は現在Vket Cloud開発者コミュニティにおいて公開テストとして開放されております。<br>
+    当機能をお使いになりたい場合は[Vket CloudコミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}にご参加の上、[ロール取得チャンネル](https://discord.com/channels/900943744575103017/1178589689393975317){target=_blank}にて**開発コミュニティ**ロールをご取得ください。<br>
     開発者コミュニティにご参加いただくと、APIをホワイトリストに入れる手順のほか、最新の更新情報などが受け取れるようになります。ぜひご参加ください！
 
 1\. 使いたいAPIをVket Cloud公式サイトにてホワイトリストに入れます。
@@ -20,7 +20,7 @@
 
 ![BrokerAPI_1](img/BrokerAPI_1.jpg)
 
-「外部APIを追加する」を選択し、API名とURLを記載します。<br>
+**外部APIを追加する**を選択し、API名とURLを記載します。<br>
 API名は識別のために任意の名前を付け、URLは使用したいAPIのものを指定し、保存します。<br>
 例として、この後のサンプルコードで用いる[Youtube Data API](https://developers.google.com/youtube/v3/getting-started?hl=ja){target=_blank}の情報を以下のように記載します。
 
@@ -99,15 +99,15 @@ component BrokerAPI
         hsCommonDialogSetTextURLClickable(false);//URLをクリック不可に
         hsCommonDialogSetYesButtonText("YES");//YESボタンのテキスト設定
         hsCommonDialogSetNoButtonText("NO");//NOボタンのテキスト設定
-        hsCommonDialogSetYesButtonDelegate(YesButtonCallback);//YESボタンを押したらNoButtonCallbckを実行
-        hsCommonDialogSetNoButtonDelegate(NoButtonCallback);//NOボタンを押したらNoButtonCallbckを実行
+        hsCommonDialogSetYesButtonDelegate(YesButtonCallback);//YESボタンを押したらYesButtonCallbackを実行
+        hsCommonDialogSetNoButtonDelegate(NoButtonCallback);//NOボタンを押したらNoButtonCallbackを実行
         hsCommonDialogOpen();//ダイアログを開く
     }
-    void NoButtonCallback()//Noボタンを押したら実行
+    void NoButtonCallback()//NOボタンを押したら実行
     {
         hsCommonDialogClose();//汎用ダイアログを閉じる
     }
-    void YesButtonCallback()//Yesボタンを押したら実行
+    void YesButtonCallback()//YESボタンを押したら実行
     {
         APIGetTest();
         hsCommonDialogClose();
@@ -160,7 +160,7 @@ component BrokerAPI
     string GetSelfGuestUuid()
     {
         //本来は将来的な機能のため、guestの場合ここでuuidを取得する必要があるが、現在はuuidを固定値として設定
-        string guestUuid = "Uuid";//
+        string guestUuid = "Uuid";
         return guestUuid;
     }
     string GetSelfUserType()
