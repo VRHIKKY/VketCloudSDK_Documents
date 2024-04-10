@@ -160,4 +160,8 @@ Please note that `ObjectD` below is not a child object of [HEOField](../HEOCompo
 
 ![hs_overview_7](img/hs_overview_7.jpg)
 
+Also, please be aware that Nodes are not in a hierarchy structure.<br>
+For example, if multiple GameObjects are to be hided using [Show/HideNode](../Actions/Node/ShowHideNode.md), the child-object on the Unity hierarchy will not be hidden when the parent-object is hided by the action / HeliScript. This is because Nodes do not consider the Unity hierarchy.<br>
+Therefore, each GameObject / Node must be explicitly called to be a target for the Hide action / script.
+
 For handling Node by HeliScript, please refer to [Item class](./hs_class_item.md).
