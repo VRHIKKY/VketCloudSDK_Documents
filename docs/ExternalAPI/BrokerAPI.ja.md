@@ -81,10 +81,9 @@ component BrokerAPI
     void ComfirmApiAccess()//APIアクセス許可のための汎用ダイアログを設定、表示する
     {
         //汎用ダイアログについては下記マニュアルを参照
-        //https://vrhikky.github.io/VketCloudSDK_Documents/12.3/hs/hs_system_function_commondialog.html#hscommondialogsettitle
+        //https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_commondialog.html#hscommondialogsettitle
         hsCommonDialogSetUseTitle(true);//タイトルを表示
         hsCommonDialogSetUseYesNoButton(true);//YES/NOボタンを表示
-        string url = GetAPIUrl();//APIアクセス許可のためのURLを取得
         if(hsIsLangJA())//ブラウザ設定が日本語かどうか
         {
             hsCommonDialogSetTitle("Youtube検索");//ダイアログのタイトル
