@@ -145,7 +145,7 @@ component BrokerAPI
     string GetAPIUrl()
     {
         string apiUrl = API_URL;//API URL
-        apiUrl += "?key=" + YOUTUBE_API_KEY;//Designate Api key
+        apiUrl += "?key=" + YOUTUBE_API_KEY;//Designate API key
         apiUrl += "&part=snippet";
         apiUrl += "&type=video";//Designate type to search
         apiUrl += "&q=" + SEARCH_WORD;//Enter the search word after "="

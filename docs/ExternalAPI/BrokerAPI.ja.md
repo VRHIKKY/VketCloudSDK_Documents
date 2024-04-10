@@ -50,11 +50,11 @@ component BrokerAPI
     //定数
     const string GET_SWITCH_NAME = "Button_Get";//Worldで押すボタンのgameObject名を入れる
     const string API_URL = "https://www.googleapis.com/youtube/v3/search";//アクセス許可に表示するURL兼疎通URL
-    const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//youtube APIのapiキーを入れる
+    const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//youtube APIのAPIキーを入れる
     const string SPATIUM_CODE = "Default";//特殊なことをしなければDefault
     const string SEARCH_WORD = "VketCloud";//検索するワードを入れる
     const int MAX_RESULTS = 10;//検索結果の数を入れる。1～50
-    const string RESULT_ITEM_NAME = "Result";//取得結果を表示するTextPlaneの名前。12.3だとFontSize大きくすると文字化けし易い
+    const string RESULT_ITEM_NAME = "Result";//取得結果を表示するTextPlaneの名前。SDK Ver12.3だとFontSizeを大きくすると文字化けしやすい
     //----------------------------------------
     public BrokerAPI()
     {
@@ -145,7 +145,7 @@ component BrokerAPI
     string GetAPIUrl()
     {
         string apiUrl = API_URL;//APIのURL
-        apiUrl += "?key=" + YOUTUBE_API_KEY;//Apiキーを指定
+        apiUrl += "?key=" + YOUTUBE_API_KEY;//APIキーを指定
         apiUrl += "&part=snippet";
         apiUrl += "&type=video";//検索したいものを指定
         apiUrl += "&q=" + SEARCH_WORD;//=の後に検索したいワードを入力
