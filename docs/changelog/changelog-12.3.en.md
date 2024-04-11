@@ -20,6 +20,8 @@
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/TextureImportViewer.html)
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
+- HEO Components
+  - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOProperty.html) *English version WIP
 - Actions
   - Node
     - [Enable/DisableNode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Node/EnableDisableNode.html)
