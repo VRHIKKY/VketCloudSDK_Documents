@@ -1501,6 +1501,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_10">
@@ -1775,6 +1777,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOPlayer.html" class="md-nav__link">
         HEOPlayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOProperty.html" class="md-nav__link">
+        HEOProperty
       </a>
     </li>
   
@@ -2152,6 +2168,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_11_3">
@@ -2202,6 +2220,20 @@
     <li class="md-nav__item">
       <a href="../Actions/Node/EnableDisableCollider.html" class="md-nav__link">
         Enable/DisableCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Node/EnableDisableNode.html" class="md-nav__link">
+        Enable/DisableNode
       </a>
     </li>
   
@@ -5920,6 +5952,9 @@ Items include objects with <a href="../HEOComponents/HEOField.html">HEOField</a>
 As an example, ObjectA, ObjectB, ObjectC, ObjectC2, and ObjectC3 attached to <a href="../HEOComponents/HEOField.html">HEOField</a> on the image below become Nodes, which can be handled by actions such as <a href="../Actions/Node/ShowHideNode.html">Show/HideNode</a>, <a href="../Actions/Node/EnableDisableCollider.html">Enable/DisableCollider</a>. <br></p>
 <p>Please note that <code>ObjectD</code> below is not a child object of <a href="../HEOComponents/HEOField.html">HEOField</a> (i.e. not a Node)nor an Item, it will not be included in the world on build.</p>
 <p><img alt="hs_overview_7" src="img/hs_overview_7.jpg" /></p>
+<p>Also, please be aware that Nodes are not in a hierarchy structure.<br>
+For example, if multiple GameObjects are to be hided using <a href="../Actions/Node/ShowHideNode.html">Show/HideNode</a>, the child-object on the Unity hierarchy will not be hidden when the parent-object is hided by the action / HeliScript. This is because Nodes do not consider the Unity hierarchy.<br>
+Therefore, each GameObject / Node must be explicitly called to be a target for the Hide action / script.</p>
 <p>For handling Node by HeliScript, please refer to <a href="hs_class_item.html">Item class</a>.</p>
                 
               

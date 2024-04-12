@@ -1501,6 +1501,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_10">
@@ -1775,6 +1777,20 @@
     <li class="md-nav__item">
       <a href="../HEOComponents/HEOPlayer.html" class="md-nav__link">
         HEOPlayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOProperty.html" class="md-nav__link">
+        HEOProperty
       </a>
     </li>
   
@@ -2152,6 +2168,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_11_3">
@@ -2202,6 +2220,20 @@
     <li class="md-nav__item">
       <a href="../Actions/Node/EnableDisableCollider.html" class="md-nav__link">
         Enable/DisableCollider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Actions/Node/EnableDisableNode.html" class="md-nav__link">
+        Enable/DisableNode
       </a>
     </li>
   
@@ -5920,6 +5952,9 @@ Playerの振る舞い方は<a href="../HEOComponents/HEOPlayer.html">HEOPlayer</
 例として、以下の<a href="../HEOComponents/HEOField.html">HEOField</a>に取り付けられたObjectA, ObjectB, ObjectC, ObjectC2, ObjectC3はNodeとなり、<a href="../Actions/Node/ShowHideNode.html">Show/HideNode</a>, <a href="../Actions/Node/EnableDisableCollider.html">Enable/DisableCollider</a>などのアクションの対象となります。<br></p>
 <p>なお、<a href="../HEOComponents/HEOField.html">HEOField</a>の子オブジェクトになっていない<code>ObjectD</code>はNodeではなく、かつItemでもない場合はビルド時にワールドに含まれないことに注意してください。</p>
 <p><img alt="hs_overview_7" src="img/hs_overview_7.jpg" /></p>
+<p>また、各Nodeは階層構造を持たない点にご留意ください。<br>
+例えば、複数のGameObjectを<a href="../Actions/Node/ShowHideNode.html">Show/HideNode</a>からまとめて非表示にしたい場合、Unity上で親子構造を持った親側のGameObjectをTargetに指定して非表示にしたとしても、アクション / HeliScript上ではUnityのHierarchy上の親子構造が無視されるため、配下の子GameObjectも同時にまとめて非表示にするようなことはできません。<br>
+そのため、非表示にしたいGameObject / Nodeを対象の数だけ個別に指定する必要がございます。</p>
 <p>NodeのHeliScriptでの取り扱いは<a href="hs_class_item.html">Itemクラス</a>をご参照ください。</p>
                 
               
