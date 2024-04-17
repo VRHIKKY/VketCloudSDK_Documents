@@ -47,6 +47,17 @@ extra:
   analytics: 
     provider: google
     property: G-R753QL60GW
+    feedback:
+      title: Was this page helpful?
+      ratings:
+      - icon: material/emoticon-happy-outline
+        name: This page was helpful
+        data: 1
+        note: Thanks for your feedback!
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+        note: Thanks for your feedback!
     
 use_directory_urls: false
 
@@ -164,6 +175,21 @@ plugins:
             World Optimization: ワールドの軽量化方法
             World Optimization - Overview: ワールドの軽量化方法：概要
             World Upload: ワールドアップロード
+          extra:
+            analytics:
+                provider: google
+                property: G-R753QL60GW
+                feedback:
+                  title: このページは役に立ちましたか？
+                  ratings:
+                  - icon: material/emoticon-happy-outline
+                    name: はい、役に立ちました！
+                    data: 1
+                    note: ページの評価にご協力いただきありがとうございます！
+                  - icon: material/emoticon-sad-outline
+                    name: いいえ、改善が必要です！
+                    data: 0
+                    note: ページの評価にご協力いただきありがとうございます！
       reconfigure_material: true
       reconfigure_search: true
 
