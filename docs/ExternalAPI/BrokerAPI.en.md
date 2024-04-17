@@ -30,7 +30,17 @@ To use an external API, authorization such as API keys must be setup and obtaine
 
 2\. Setup a world, and create a HeliScript to call the API using [JsVal](JsVal.md).
 
-For example, a HeliScript for calling/displaying a search result text when a designated object is clicked is described as below:
+As an example, a [cube for receiving player clicking](../HEOComponents/HEOCollider.md) and [TextPlane](../HEOComponents/HEOTextPlane.md) for showing API results are placed as below:
+
+![BrokerAPI_3](img/BrokerAPI_3.jpg)
+
+![BrokerAPI_4](img/BrokerAPI_4.jpg)
+
+Also, a HeliScript for displaying a Youtube Data API search result on the TextPlane when a designated cube is clicked is described as below.
+
+This script must be attached to the World object using [HEOScript](../HEOComponents/HEOScript.md).
+
+![BrokerAPI_5](img/BrokerAPI_5.jpg)
 
 ```c#
 delegate void fJsValCallback(JsVal); //Method for callback

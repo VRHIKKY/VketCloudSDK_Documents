@@ -30,7 +30,17 @@ API名は識別のために任意の名前を付け、URLは使用したいAPI�
 
 2\. ワールドをセットアップし、APIを呼び出すためのHeliScriptを[JsVal](JsVal.md)を使用しつつ作成します。
 
-例として、以下にYoutube Data APIを使用してオブジェクトがクリックされた際に指定の動画の検索結果を取得・表示するHeliScriptの実装を示します。
+例として、以下のように[クリック用のキューブ](../HEOComponents/HEOCollider.md)と結果表示用の[TextPlane](../HEOComponents/HEOTextPlane.md)を配置します。
+
+![BrokerAPI_3](img/BrokerAPI_3.jpg)
+
+![BrokerAPI_4](img/BrokerAPI_4.jpg)
+
+また、以下にてYoutube Data APIを使用して設置したキューブがクリックされた際に指定の動画の検索結果を取得、TextPlaneに表示するHeliScriptの実装を示します。
+
+このスクリプトはWorldオブジェクトに[HEOScript](../HEOComponents/HEOScript.md)を用いてアタッチします。
+
+![BrokerAPI_5](img/BrokerAPI_5.jpg)
 
 ```c#
 delegate void fJsValCallback(JsVal);//コールバック用
