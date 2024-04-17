@@ -29,6 +29,10 @@
   - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_delegate.html)
   - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_camera.html)
   - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_commondialog.html)
+  - [Itemの種類一覧 / HeliScript関数対応表](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_item_types_functions.html)
+- 外部API連携
+  - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/ExternalAPI/JsVal.html)
+　- [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/ExternalAPI/BrokerAPI.html)
 
 ## 変更されたページ
 

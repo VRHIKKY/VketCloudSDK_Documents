@@ -29,6 +29,10 @@
   - [delegate](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_delegate.html) *English version WIP
   - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_camera.html) *English version WIP
   - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_commondialog.html) *English version WIP
+  - [Item Types and Usable Functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
+- External API
+  - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/JsVal.html)
+　- [Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/BrokerAPI.html)
 
 ## Edited Pages
 
