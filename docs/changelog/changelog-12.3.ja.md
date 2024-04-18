@@ -20,11 +20,19 @@
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/TextureImportViewer.html)
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VketCloudSDKSettings.html)
+- HEOコンポーネント
+  - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOProperty.html)
+- アクションについて
+  - Node
+    - [Enable/DisableNode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/Actions/Node/EnableDisableNode.html)
 - HeliScript
   - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_delegate.html)
   - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_camera.html)
   - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_system_function_commondialog.html)
   - [Itemの種類一覧 / HeliScript関数対応表](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_item_types_functions.html)
+- 外部API連携
+  - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/ExternalAPI/JsVal.html)
+　- [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/ExternalAPI/BrokerAPI.html)
 
 ## 変更されたページ
 
@@ -46,9 +54,13 @@
     - クイックメニューについて案内を追記
   - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/ReflectionProbe.html)
     - リフレクションプローブの設定方法を更新
+  - [オブジェクトをアニメーションさせる - できないときは](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/PropAnimation_TroubleShooting.html)
+    - uv2のないメッシュをMeshRendererで扱おうとすると発生するエラーへの対処法を修正
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
+  - [デバッグモード](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldEditingTips/DebugMode.html)
+    - 表示される情報をVer12.3.4基準に更新
   - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/particleeditor/pe_about_properties.html)
     - 修正されたバグ・廃止された機能を追記
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VKCActivityExporter.html)
@@ -59,6 +71,10 @@
 - HEOコンポーネント
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOActivity.html)
     - Scene Previewと高度な設定について追記
+  - [HEOAreacollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOAreacollider.html)
+    - デバッグモードにおけるコリジョン可視化を有効にする手順について更新
+  - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOCollider.html)
+    - 解説をVer12.3準拠に更新
   - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOMeshCollider.html)
     - 使い方をVer12.3準拠に更新
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
@@ -67,6 +83,9 @@
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOReflectionProbe.html)
     - 機能廃止について案内を追記
 - アクションについて
+  - Itemクラス
+    - [Play/StopItem](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/Actions/Item/PlayStopItem.html)
+      - StopItemに関する記載を追加
   - Programmatic
     - [If Variable Equal To Value](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/Actions/Programmatic/IfEqual.html)
       - タイトルを変更（旧：If A == B）
@@ -84,12 +103,19 @@
 Ver12.xにて追加されたHeliScriptへの変更を追記：
   - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_overview.html)
     - コンストラクタにおけるPlayerクラス関数の仕様変更を追記
+    - Nodeに関する補足を追記
+    - 導入方法をVer12.3準拠に更新
   - [クラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class.html)
     - オブジェクトの生成・削除、存在の判定について追記
   - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_component.html)
     - オブジェクトの選択解除のコールバック関数を追加
   - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class_item.html)
     - 各メソッドを呼び出し可能なオブジェクトのタイプを追記
+    - IsPlayに関する返り値について補足を追記
+    - GetPhysicsIDByNodeNameに関する解説を修正
+  - [Itemの種類 / HEOComponentとの対応一覧](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_item_types_functions.html)
+    - タイトルを変更（旧題：Itemの種類一覧 / HeliScript関数対応表）
+    - 関数 - HEOComponent対応関係の記載がItemクラスに追加されたため、対応表を削除
   - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_class_item.html)
     - 新規関数：ChangeActivityMotion / SetNextActivityMotion, SetPresetAvatarを追記
     - コンストラクタにおけるPlayerクラス関数の仕様変更を追記
