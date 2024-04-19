@@ -115,12 +115,14 @@ Please try changing it to something like Standard and see if it appears.
         After build, select VketCloudSDK > Tools > Open Release Folder, go to data > Scene, and search for the exported object name in the json file (scene json) to check the exported object information on the scene. <br>
         If there are no hits after searching, it is not displayed on the scene.
 
+![PropAnimation_TroubleShooting_10](./img/PropAnimation_TroubleShooting_10.jpg)
+
 ## After restarting Unity after exporting, the project no longer starts
 
 Rare error to happen.
 The cause is a false positive by the batch file used for texture compression.
 
-![PropAnimation_TroubleShooting_10](./img/PropAnimation_TroubleShooting_10.jpg)
+![PropAnimation_TroubleShooting_11](./img/PropAnimation_TroubleShooting_11.jpg)
 
 To solve it you need to remove the batch file causing the error. <br>
 After compressing the texture, the batch file is no longer needed, so it is a good idea to compress the texture beforehand and then delete it.
@@ -146,8 +148,16 @@ Even if the animation is applied, it does not play for some reason, such as swit
 
 In this case, the quickest way is to "check the loop, bring it to Index 0, and check whether it is working."
 
-![PropAnimation_TroubleShooting_11](./img/PropAnimation_TroubleShooting_11.jpg)
+![PropAnimation_TroubleShooting_12](./img/PropAnimation_TroubleShooting_12.jpg)
 
 If it moves, there is a problem with the animation playback trigger.
 
 If it still doesn't work, there is a problem with creating the animation, so you may want to review the process of creating the HEM.
+
+### 3. Multiple animations are allocated on exporting hem file
+
+As the image below, if multiple animations are allocated in Animation component / Animations on exporting a hem file, it may lead to unintended animation behavior.
+
+When exporting an animation, be sure that the component only has **one** animation allocated at a time.
+
+![PropAnimation_TroubleShooting_13](./img/PropAnimation_TroubleShooting_13.jpg)

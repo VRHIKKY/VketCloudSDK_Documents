@@ -96,6 +96,12 @@ After saving, the export is complete when `"Exported"` appears on the Unity cons
 !!! note
     If an error occurs, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
 
+!!! caution "Caution on Export Motion"
+    When using Export Motion, if multiple animations are allocated in Animation component / Animations on exporting a hem file as the image below, it may lead to unintended animation behavior.<br>
+    When exporting an animation, be sure that the component only has **one** animation allocated at a time.
+
+    ![PropAnimation_TroubleShooting_13](./img/PropAnimation_TroubleShooting_13.jpg)
+
 ### Export .heo file (Heliodor Export Object file)
 
 ![PropAnimation_15](./img/PropAnimation_15.jpg)

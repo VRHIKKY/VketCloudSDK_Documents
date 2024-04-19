@@ -54,8 +54,11 @@
     - Added Guide for Setup using Quick Menu
   - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ReflectionProbe.html)
     - Edited setup instructions for reflection probe
+  - [How to Animate Objects](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation.html)
+    - Added caution on allocating multiple animations when committing Export Motion
   - [How to Animate Objects - Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation_TroubleShooting.html)
     - Revised solution for error caused when meshes without uv2 is handled by MeshRenderer
+    - Added caution on allocating multiple animations when committing Export Motion
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator

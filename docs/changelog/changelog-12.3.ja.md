@@ -54,8 +54,11 @@
     - クイックメニューについて案内を追記
   - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/ReflectionProbe.html)
     - リフレクションプローブの設定方法を更新
+  - [オブジェクトをアニメーションさせる](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/PropAnimation.html)
+    - Export Motion時に複数アニメーションを割り当てている際の意図しない挙動について注意点を追記
   - [オブジェクトをアニメーションさせる - できないときは](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/PropAnimation_TroubleShooting.html)
     - uv2のないメッシュをMeshRendererで扱おうとすると発生するエラーへの対処法を修正
+    - Export Motion時に複数アニメーションを割り当てている際の意図しない挙動について注意点を追記
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
