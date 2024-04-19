@@ -98,6 +98,12 @@ Legacyにチェックを入れます。
 !!! note
     エラーが出てしまった場合は [オブジェクトを動かす - できないときは](./PropAnimation_TroubleShooting.md) を参照するようにしてください。
 
+!!! caution "Export Motionを行う際の注意"
+    Export Motionを行う際、以下の画像のように、hemファイル書き出し時にAnimationコンポーネント / Animations内に複数のアニメーションが割り当てられていると意図しない挙動が発生する場合があります。<br>
+    書き出しの際は原則として1つのアニメーション**だけ**が割り当てられているか確認するとよいでしょう。
+
+    ![PropAnimation_TroubleShooting_13](./img/PropAnimation_TroubleShooting_13.jpg)
+
 ### .heoファイル(Heliodor Export Objectファイル)を書き出す
 
 ![PropAnimation_15](./img/PropAnimation_15.jpg)
