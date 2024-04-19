@@ -61,121 +61,129 @@ plugins:
       javascript_dir: js
       canonical_version: null
   - i18n:
-      default_language: ja
+      docs_structure: suffix
+      fallback_to_default: true
       languages:
-        en: English
-        ja: 日本語
-      nav_translations:
-        ja:
-          # 概要
-          Introduction: はじめに
-          # VketCloudSDKについて
-          About VketCloudSDK: VketCloudSDKについて
-          Setup Account: アカウント準備
-          Operating Environment: 動作環境
-          Setup SDK: SDKの導入方法
-          Login to SDK: SDKにログインする
-          How to use avatar: アバターの使用方法
-          # ワールド制作の基本
-          First Steps: ワールド制作の基本
-          Essential Objects: ワールドの基本要素
-          Build And Run: ローカル環境でのビルドと実行
-          World Upload: ワールドアップロード
-          # Vket Cloud Settings    
-          Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
-          # ワールド制作ガイド
-          World Making Guide: ワールド制作ガイド
-          Avatar File: アバターファイル
-          Specifications Limits : VketCloudの仕様制限
-          HEOExporter: .heoファイルについて
-          HEOExporter Tutorial: .heoファイルを出力する
-          Reflection Probe: リフレクションプローブ
-          Setting up a Skybox: スカイボックス設定
-          Texture Compression: テクスチャ圧縮
-          How to use Colliders / Tips: コライダーの使い方 / Tips
-          Physics Engine: 物理エンジンの使い方
-          Tips on using HEOField: HEOFieldの使い方
-          Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
-          Mesh Collider: メッシュコライダーについて
-          Adding Preset Avatars : プリセットアバターを追加する
-          How to Animate Objects: オブジェクトをアニメーションさせる
-          How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
-          # ActionNodeGraph: アクションノードグラフ
-          # トラブルシューティング
-          Trouble shooting: トラブルシューティング
-          Trouble shooting - General Checklist: SDK初学者:何か起きたときにとりあえず見るべきリスト
-          SDK does not appear after install: SDKがインストール後に立ち上がらない
-          Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
-          Version Update Troubleshooting: バージョンアップ後によくあるトラブル
-          # SDKTools
-          Particle Editor : パーティクルエディター
-          Particle Editor - Overview: パーティクルエディター：概要 
-          About Screen / How to Operate: ウィンドウ解説・操作方法について
-          Particle Editor - Properties: パーティクルエディター：プロパティ一覧
-          Animation Converter : アニメーションコンバーター
-          Debug Mode: デバッグモード
-          Debug Console: デバッグコンソール
-          Debug Messages: デバッグメッセージ一覧
-          VketCloudSDK Settings : VketCloudSDK設定
-          # 編集Tips
-          World Editing Tips: 編集のためのTips
-          Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
-          Using EditorOnly Tags: EditorOnlyタグの使用方法
-          Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
-          Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
-          Build Options: ビルド時のオプション
-          # 軽量化
-          World Optimization: ワールドの軽量化方法
-          World Optimization - Overview: ワールドの軽量化方法：概要
-          Occlusion Culling: オクルージョンカリング
-          Optimization for Smartphones: スマートフォンのためのワールド軽量化
-          # HEOComponents
-          HEOComponents: HEOコンポーネント
-          # アクション
-          Actions: アクションについて
-          Actions Overview: アクションの概要
-          # HeliScript
-          HeliScript - Overview: HeliScript概要
-          Statements and flow control: 文法と制御構文
-          Declarations and definitions: 定義・宣言
-          Control Statement: 制御構文
-          Reference (ref): 参照(ref)
-          Constant Variable (const): 定数(const)
-          Built-in Types: 組み込み型
-          Basic Types: 基本型
-          String: 文字列(String)
-          List: 配列(List)
-          Delegate: デリゲート(Delegate)
-          Operator: 演算子
-          Class: クラス
-          Components / Callback functions: コンポーネント / コールバック関数
-          Item Types and HEOComponents: Itemの種類 / HEOComponentとの対応一覧
-          Built-in Classes And Functions: 組み込みクラス・関数
-          Vector3: Vector3クラス
-          Quaternion: Quaternionクラス
-          Matrix: Matrixクラス
-          Item: Itemクラス
-          Player: Playerクラス
-          Built-in Functions: 組み込み関数
-          System: システム
-          Math: 数学
-          Network: ネットワーク
-          NamePlate: ネームプレート
-          GUI: GUI
-          TextChat: テキストチャット
-          Physics: 物理演算
-          Camera: カメラ
-          Common Dialog: 汎用ダイアログ
-          # External API
-          External API: 外部API連携
-          Broker API: ブローカーAPIについて
-          # チェンジログ / リリースノート
-          Change Log: チェンジログ
-          About Changelog: チェンジログについて
-          Release Note: リリースノート
-          About Release Note: リリースノートについて
-          # Misc
-          License: 利用規約
+        - build: true
+          default: false
+          locale: en
+          name: English
+        - build: true
+          default: true
+          locale: ja
+          name: 日本語
+          nav_translations:
+            # 概要
+            Introduction: はじめに
+            # VketCloudSDKについて
+            About VketCloudSDK: VketCloudSDKについて
+            Setup Account: アカウント準備
+            Operating Environment: 動作環境
+            Setup SDK: SDKの導入方法
+            Login to SDK: SDKにログインする
+            How to use avatar: アバターの使用方法
+            # ワールド制作の基本
+            First Steps: ワールド制作の基本
+            Essential Objects: ワールドの基本要素
+            Build And Run: ローカル環境でのビルドと実行
+            World Upload: ワールドアップロード
+            # Vket Cloud Settings    
+            Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
+            # ワールド制作ガイド
+            World Making Guide: ワールド制作ガイド
+            Avatar File: アバターファイル
+            Specifications Limits : VketCloudの仕様制限
+            HEOExporter: .heoファイルについて
+            HEOExporter Tutorial: .heoファイルを出力する
+            Reflection Probe: リフレクションプローブ
+            Setting up a Skybox: スカイボックス設定
+            Texture Compression: テクスチャ圧縮
+            How to use Colliders / Tips: コライダーの使い方 / Tips
+            Physics Engine: 物理エンジンの使い方
+            Tips on using HEOField: HEOFieldの使い方
+            Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
+            Mesh Collider: メッシュコライダーについて
+            Adding Preset Avatars : プリセットアバターを追加する
+            How to Animate Objects: オブジェクトをアニメーションさせる
+            How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
+            # ActionNodeGraph: アクションノードグラフ
+            # トラブルシューティング
+            Trouble shooting: トラブルシューティング
+            Trouble shooting - General Checklist: SDK初学者:何か起きたときにとりあえず見るべきリスト
+            SDK does not appear after install: SDKがインストール後に立ち上がらない
+            Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
+            Version Update Troubleshooting: バージョンアップ後によくあるトラブル
+            # SDKTools
+            Particle Editor : パーティクルエディター
+            Particle Editor - Overview: パーティクルエディター：概要 
+            About Screen / How to Operate: ウィンドウ解説・操作方法について
+            Particle Editor - Properties: パーティクルエディター：プロパティ一覧
+            Animation Converter : アニメーションコンバーター
+            Debug Mode: デバッグモード
+            Debug Console: デバッグコンソール
+            Debug Messages: デバッグメッセージ一覧
+            VketCloudSDK Settings : VketCloudSDK設定
+            # 編集Tips
+            World Editing Tips: 編集のためのTips
+            Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
+            Using EditorOnly Tags: EditorOnlyタグの使用方法
+            Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
+            Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
+            Build Options: ビルド時のオプション
+            # 軽量化
+            World Optimization: ワールドの軽量化方法
+            World Optimization - Overview: ワールドの軽量化方法：概要
+            Occlusion Culling: オクルージョンカリング
+            Optimization for Smartphones: スマートフォンのためのワールド軽量化
+            # HEOComponents
+            HEOComponents: HEOコンポーネント
+            # アクション
+            Actions: アクションについて
+            Actions Overview: アクションの概要
+            # HeliScript
+            HeliScript - Overview: HeliScript概要
+            Statements and flow control: 文法と制御構文
+            Declarations and definitions: 定義・宣言
+            Control Statement: 制御構文
+            Reference (ref): 参照(ref)
+            Constant Variable (const): 定数(const)
+            Built-in Types: 組み込み型
+            Basic Types: 基本型
+            String: 文字列(String)
+            List: 配列(List)
+            Delegate: デリゲート(Delegate)
+            Operator: 演算子
+            Class: クラス
+            Components / Callback functions: コンポーネント / コールバック関数
+            Item Types and HEOComponents: Itemの種類 / HEOComponentとの対応一覧
+            Built-in Classes And Functions: 組み込みクラス・関数
+            Vector3: Vector3クラス
+            Quaternion: Quaternionクラス
+            Matrix: Matrixクラス
+            Item: Itemクラス
+            Player: Playerクラス
+            Built-in Functions: 組み込み関数
+            System: システム
+            Math: 数学
+            Network: ネットワーク
+            NamePlate: ネームプレート
+            GUI: GUI
+            TextChat: テキストチャット
+            Physics: 物理演算
+            Camera: カメラ
+            Common Dialog: 汎用ダイアログ
+            # External API
+            External API: 外部API連携
+            Broker API: ブローカーAPIについて
+            # チェンジログ / リリースノート
+            Change Log: チェンジログ
+            About Changelog: チェンジログについて
+            Release Note: リリースノート
+            About Release Note: リリースノートについて
+            # Misc
+            License: 利用規約
+      reconfigure_material: true
+      reconfigure_search: true
 
 markdown_extensions:
     - admonition
