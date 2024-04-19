@@ -245,6 +245,7 @@ nav:
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDK 
+    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
