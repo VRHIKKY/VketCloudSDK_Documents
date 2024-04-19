@@ -13,7 +13,7 @@ As an example, we will show a basic implementation of displaying "Hello World" o
 ![hs_overview_1](img/hs_overview_1.jpg)
 
 First, create a file to write HeliScript. <br>
-Right-click in the Project window (where folder such as Assets are located), select **"HS script"**, and add the HeliScript file to any folder.
+Right-click in the Project window (where folder such as Assets are located), select **"HeliScript"**, and add the HeliScript file to any folder.
 
 As an example, a Scripts folder is newly added to the Assets folder, followed by creating a new HeliScript file with the name `HelloWorld.hs`.
 
@@ -35,14 +35,14 @@ By selecting "Select" on the right side of the menu, a list of HeliScripts will 
 ![hs_overview_4](img/hs_overview_4.jpg)
 
 In the HelloWorld script for this example, it is necessary to enable debug mode in order to display the result on the debug log. <br>
-To use debug mode, enable [Debug Mode](../WorldEditingTips/DebugMode.md) in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md).
+To use debug mode, enable [Debug Mode](../WorldEditingTips/DebugMode.md) in VketCloudSettings / [BasicSettings](../VketCloudSettings/BasicSettings.md).
 
 ### 4. Write HeliScript
 
 Now it's time to write the HeliScript itself. <br>
 A code example is shown below as an implementation of HelloWorld.hs.
 
-```
+```C#
 //component
 component HelloWorld
 {
@@ -51,7 +51,7 @@ component HelloWorld
      public HelloWorld()
      {
      //Output to debug log
-     hsSystemOutput("Hello, World!\n");
+     hsSystemWriteLine("Hello, World!");
      }
 
      //Update function: executed every frame
@@ -61,7 +61,9 @@ component HelloWorld
      }
 }
 ```
+
 ### 5. Test with Build And Run
+
 After completing the code implementation and executing Build And Run, "Hello, World!" will be displayed to the debug log on the screen.
 
 ![hs_overview_5](img/hs_overview_5.jpg)
@@ -76,7 +78,7 @@ For details on how to place HeliScript, please check [HEOScript](../HEOComponent
 In HeliScript, each objects are referenced by using Item and Node classes mentioned later. <br>
 For example, a script that outputs a message when the exampleObject under [HEOField](../HEOComponents/HEOField.md) is clicked can be written as follows.
 
-```
+```C#
 component example
 {
      //Define item/player class
@@ -114,7 +116,7 @@ component example
          //When the click target matches the node obtained previously:
         if(NodeIndex == ex_ItemNodeIndex){
         //Display message on debug console
-         hsSystemOutput("exObj Clicked.\n");
+         hsSystemWriteLine("exObj Clicked.");
          }
      }
 }
@@ -157,5 +159,9 @@ As an example, ObjectA, ObjectB, ObjectC, ObjectC2, and ObjectC3 attached to [HE
 Please note that `ObjectD` below is not a child object of [HEOField](../HEOComponents/HEOField.md) (i.e. not a Node)nor an Item, it will not be included in the world on build.
 
 ![hs_overview_7](img/hs_overview_7.jpg)
+
+Also, please be aware that Nodes are not in a hierarchy structure.<br>
+For example, if multiple GameObjects are to be hided using [Show/HideNode](../Actions/Node/ShowHideNode.md), the child-object on the Unity hierarchy will not be hidden when the parent-object is hided by the action / HeliScript. This is because Nodes do not consider the Unity hierarchy.<br>
+Therefore, each GameObject / Node must be explicitly called to be a target for the Hide action / script.
 
 For handling Node by HeliScript, please refer to [Item class](./hs_class_item.md).
