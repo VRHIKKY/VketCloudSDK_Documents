@@ -25,8 +25,10 @@
 |less than or equal|op1 <= op2|
 |greater than |op1 > op2|
 |greater than or equal|op1 >= op2|
-|equivalent|op1 == op2|
-|unequal|op1 != op2|
+|equality|op1 == op2|
+|inequality|op1 != op2|
+|strict equality|op1 === op2|
+|strict inequality|op1 !== op2|
 |logical and|op1 && op2|
 |logical or|op1 \|\| op2|
 |condition|op1 ? op2 : op3|

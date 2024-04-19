@@ -129,6 +129,8 @@ Ver12.xにて追加されたHeliScriptへの変更を追記：
     - hsCanvasSetGUIPosの引数を変更
   - [組み込み型](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_var.html)
     - ToString関数を追記
+  - [演算子](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/hs/hs_operator.html)
+    - 厳密等価と厳密非等価演算子を追加
 - トラブルシューティング
   - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/troubleshooting/VersionUpdateTroubleshooting.html)
     - メニューにてVketCloudSDKタブが表示されない際の解決策を追加
