@@ -3,7 +3,7 @@
 ## 力を追加
 力を加えます。
 
-![PhysicsClearAddForce](img/AddForce.ja.jpg)
+![PhysicsClearAddForce](img/AddForce.jpg)
 
 |  ラベル |  機能  |
 | ----   | ---- |
@@ -12,7 +12,7 @@
 
 ## 力を削除
 加わっている力・速度を全て0にします。
-![PhysicsClearAddForce](img/ClearForce.ja.jpg)
+![PhysicsClearAddForce](img/ClearForce.jpg)
 
 |  ラベル |  機能  |
 | ----   | ---- |

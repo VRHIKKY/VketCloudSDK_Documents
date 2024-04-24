@@ -3,100 +3,100 @@
 ## 追加されたページ
 
 - トラブルシューティング
-  - [SDK初学者：何か起きたときにとりあえず見るべきリスト](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/GeneralChecklist.html)
+  - [SDK初学者：何か起きたときにとりあえず見るべきリスト](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/GeneralChecklist.html)
 - 編集のためのTips
-  - [複数のHEOコンポーネントの一括編集](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldEditingTips/MultiSelect_HEOComponents.html)
-  - [UnlitマテリアルのContributeGI設定を外す](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldEditingTips/DisableContributeGITool.html)
-  - [EditorOnlyタグの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldEditingTips/EditorOnlyTag.html)
-  - [デバッグモード](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldEditingTips/DebugMode.html)
+  - [複数のHEOコンポーネントの一括編集](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldEditingTips/MultiSelect_HEOComponents.html)
+  - [UnlitマテリアルのContributeGI設定を外す](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldEditingTips/DisableContributeGITool.html)
+  - [EditorOnlyタグの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldEditingTips/EditorOnlyTag.html)
+  - [デバッグモード](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldEditingTips/DebugMode.html)
 - HEOコンポーネント
-  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOActivity.html)
-  - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOBackgroundTexture.html)
+  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOActivity.html)
+  - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOBackgroundTexture.html)
 - HeliScript
-  - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_overview.html)
-  - [HeliScript/組み込み関数 - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_chatgpt.html)
-  - [HeliScript/組み込み関数 - 物理演算](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_physics.html)
+  - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_overview.html)
+  - [HeliScript/組み込み関数 - ChatGPT](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_chatgpt.html)
+  - [HeliScript/組み込み関数 - 物理演算](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_physics.html)
 
 ## 変更されたページ
 
 - VketCloudSDKについて
-  - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/AboutVketCloudSDK/OperatingEnvironment.html)
+  - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/OperatingEnvironment.html)
     - 推奨設定の設定方法を追記
-  - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/AboutVketCloudSDK/SetupSDK_external.html)
+  - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupSDK_external.html)
     - インストールウィザード及びVersion Managerの使用方法を追加
     - 推奨設定の設定方法を追記
-  - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/AboutVketCloudSDK/SetupAvatar.html)
+  - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupAvatar.html)
     - アバターの使用方法を現行版に更新
 - ワールド制作ガイド
-  - [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldMakingGuide/UnityGuidelines.html)
+  - [Vket Cloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/UnityGuidelines.html)
     - 同名のオブジェクトの複数配置非推奨を明記
-  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldMakingGuide/AvatarFile.html)
+  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/AvatarFile.html)
     - 設定方法及び解説画像を更新
-  - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldMakingGuide/ReflectionProbe.html)
+  - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/ReflectionProbe.html)
     - 題名を変更　（旧題：反射を写り込ませるには）
     - 未使用画像を削除し、リンクを修正
     - 一部文言を変更
-  - [物理エンジン / コライダーの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/WorldMakingGuide/PhysicsEngine.html)
+  - [物理エンジン / コライダーの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/WorldMakingGuide/PhysicsEngine.html)
     - 題名を変更 (旧題：物理エンジン)
     - コライダーの付け方、HeliScriptでの物理演算の扱い方を追記
     - 文書について細かな整形
 - SDK Tools
-  - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_particleeditor.html)
+  - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_particleeditor.html)
     - 起動方法を更新
     - MacOSにおける動作不具合について追記
-  - [ウィンドウ解説・操作方法について](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/particleeditor/pe_about_screen.html)
+  - [ウィンドウ解説・操作方法について](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/particleeditor/pe_about_screen.html)
     - ウィンドウ解説・操作方法ページを統合
 - ワールドの軽量化方法
-  - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/heoexporter/he_TextureCompression.html)
+  - [テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/heoexporter/he_TextureCompression.html)
     - pvrtcに加えてdxt変換が廃止になったため記述から削除
 - HEOコンポーネント
-  - [HEOAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOAreacollider.html)
+  - [HEOAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOAreacollider.html)
     - コライダーの衝突 / エリア範囲判定について追記
     - HEOAreaCollider追加時に自動でHEOColliderとBox Colliderが追加される旨を追記
-  - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOCollider.html)
+  - [HEOCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOCollider.html)
     - コライダーの衝突 / エリア範囲判定について追記
     - コライダータイプがコライダー以外の場合に衝突しない旨を追記
-  - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOField.html)
+  - [HEOField](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOField.html)
     - 各設定項目及びLook at Cameraの説明を追加
-  - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOMeshCollider.html)
+  - [HEOMeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOMeshCollider.html)
     - 設定手順を整理
-  - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOObject.html)
+  - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOObject.html)
     - 新規の設定項目を追加し、関連の解説を追加 (shadow caster / receiver, foreground rendering, circle shadow, lookatcamera, etc.)
     - heoファイル及びモーションのプレビュー機能解説を追加
-  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOPlane.html)
+  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOPlane.html)
     - 新規の設定項目を追加し、関連の解説を追加 (lookatcamera)
-  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOPlayer.html)
+  - [HEOPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOPlayer.html)
     - TPS Rotation, Jump Velocity, Move Speedなどの設定項目を追加
-  - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOTextPlane.html)
+  - [HEOTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOTextPlane.html)
     - 新規の設定項目を追加し、関連の解説を追加 (textalignment, charaspace, linespace, overflowwrap, lookatcamera) 
-  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/HEOComponents/HEOWorldSetting.html)
+  - [HEOWorldSetting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/HEOComponents/HEOWorldSetting.html)
     - ゲームパッドの設定・操作方法を追加
     - アバターの設定についての解説を追記
     - 音声減衰、TPSカメラの最大ピッチ角度、スペキュラーのミップマップカウントを記載
     - Multi Play Mode In Local Build廃止に伴い項目を削除(現バージョンにおいてはデフォルトでマルチプレイモードです)
 - アクション
-  - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/Actions/Programmatic/CallScript.html)
+  - [CallScript](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/Actions/Programmatic/CallScript.html)
     - 画像をVer9.5仕様に差し替え
 - HeliScript
-  - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_component.html)
+  - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_component.html)
     - 題名を変更(旧題：コンポーネント)
-  - [HeliScript/文字列(String)](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_string.html)
-  - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function.html)
+  - [HeliScript/文字列(String)](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_string.html)
+  - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function.html)
     - 文字列におけるアポストロフィ / シングルクォートの使用について不具合を記載
-  - [HeliScript/Vector3クラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_struct_vector3.html)
-  - [HeliScript/Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_class_player.html)
-  - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function.html)
-  - [HeliScript/組み込み関数 - ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function_net.html)
-  - [HeliScript/組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_system_function_gui.html)
+  - [HeliScript/Vector3クラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_struct_vector3.html)
+  - [HeliScript/Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_class_player.html)
+  - [HeliScript/組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function.html)
+  - [HeliScript/組み込み関数 - ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function_net.html)
+  - [HeliScript/組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_system_function_gui.html)
     - 現バージョンにて使用できる関数を反映
-  - [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/hs/hs_class_item.html)
+  - [HeliScript/Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/hs/hs_class_item.html)
     - 概要を追記
     - 現バージョンにて使用できる関数を反映
 - トラブルシューティング
-  - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/BuildError.html)に統合
+  - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/BuildError.html)に統合
     - 旧タイトルを改題 (旧：ビルドエラー)
     - 似た内容のページを統合
-  - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/VersionUpdateTroubleshooting.html)
+  - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/VersionUpdateTroubleshooting.html)
     - 旧タイトルを改題
     - Ver9.5へのアップデート時に欠落する恐れのある設定について追記
     - 設定画面でのバージョン表記が旧バージョンのままになっている / HeliScript・ギミックがバージョンアップ後に動かない際の対処を追記
@@ -114,9 +114,9 @@
   - 組み込み関数
   - JavaScript
 - HEOTweetTrigger
-- チェックツール (本バージョンでは[デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/debugconsole/debugconsole.html)をご使用ください)
+- チェックツール (本バージョンでは[デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/debugconsole/debugconsole.html)をご使用ください)
 - トラブルシューティング
   - ブラウザが立ち上がらない
   - ブラウザウィンドウが暗転したまま動かない
   - 変更が更新されない
-    - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/ja/troubleshooting/BuildError.html)に統合
+    - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/troubleshooting/BuildError.html)に統合

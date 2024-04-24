@@ -10,7 +10,7 @@
   - [Using EditorOnly Tags](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldEditingTips/EditorOnlyTag.html)
   - [Debug Mode](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/WorldEditingTips/DebugMode.html)
 - HEO Components
-  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/ja/HEOComponents/HEOActivity.html)
+  - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOActivity.html)
   - [HEOBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/HEOComponents/HEOBackgroundTexture.html)
 - HeliScript
   - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/hs/hs_overview.html)
@@ -96,7 +96,7 @@
   - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/troubleshooting/BuildError.html)
     - Changed page title (old: Build Error)
     - Integrated related pages
-  - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/ja/troubleshooting/VersionUpdateTroubleshooting.html)
+  - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/troubleshooting/VersionUpdateTroubleshooting.html)
     - Changed page title
     - Added information on settings that may reset on updating to Ver9.5
     - Added solution for version information not updated on settings window / HeliScript and gimmicks not working after update

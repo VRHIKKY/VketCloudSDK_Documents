@@ -39,7 +39,7 @@
 - About VketCloudSDK
   - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
-  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
+  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
 - First Steps
   - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/BuildAndRun.html)
@@ -48,7 +48,7 @@
   - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/WorldUpload.html)
     - Edited how-to on operating World Uploader
 - World Making Guide
-  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html)
+  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Collider.html)
     - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
     - Added Guide for Setup using Quick Menu
