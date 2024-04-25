@@ -48,6 +48,8 @@
   - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/FirstStep/WorldUpload.html)
     - World Uploaderの機能追加に伴い追記
 - ワールド制作ガイド
+  - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html)
+    - ワールドのトライアングル数およびオーディオ、動画ファイルの仕様制限の追記
   - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html)
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Skybox.html)
@@ -80,6 +82,8 @@
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
   - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOObject.html)
     - Ver12.3に追加された機能(hrm, glb対応)を追記し、コンポーネント設定解説を更新
+  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/latest/HEOComponents/HEOPlane.html)
+    - 画像ファイルの仕様制限について追記
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/HEOComponents/HEOReflectionProbe.html)
     - 機能廃止について案内を追記
 - アクションについて
