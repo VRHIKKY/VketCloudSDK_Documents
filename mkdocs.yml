@@ -244,7 +244,7 @@ nav:
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
-    - VketCloudSDK Settings : SDKTools/VketCloudSDK 
+    - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
