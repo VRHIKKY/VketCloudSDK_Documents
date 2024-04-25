@@ -39,6 +39,8 @@
 - VketCloudSDKについて
   - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/OperatingEnvironment.html)
     - 必須設定としてStandard Shader品質の変更を追加
+  - [アカウント準備](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupAccount.html)
+    - Vket Cloudアカウント登録手順画像を追加
   - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
     - 必須設定としてStandard Shader品質の変更を追加
 - ワールド制作の基本
