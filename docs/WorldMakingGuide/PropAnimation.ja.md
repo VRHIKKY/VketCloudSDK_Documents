@@ -86,6 +86,16 @@ Legacyにチェックを入れます。
 
 ![PropAnimation_12](./img/PropAnimation_12.jpg)
 
+!!! warning "ヒエラルキー状のアニメーション再生について"
+    Ver12.3において、画像のように「アニメーション対象の子オブジェクトをアニメーションさせる」設定にした状態でHEMをエクスポートすると意図しない動作を起こす可能性が確認されております。<br>
+    アニメーションを制作する際は、オブジェクトの構造を並列に整形したうえでアニメーションの制作を推奨します。
+    ![PropAnimation_28](./img/PropAnimation_28.jpg)
+
+!!! warning "アニメーション作成時の注意"
+    Ver12.3において、本方式はボーン(SkinnedMeshRenderer)が含まれたモデルのアニメーションの再生には対応しておりません。<br>
+    ボーン付きのモデルにてアニメーションを再生したい場合は、モデルをVRMで出力し、モーションも合わせて出力する必要があります。<br>
+    または、ボーンをすべて削除してSkinnedMeshRendererを使用していない状態とする必要があります。
+
 入力が完了したら、Inspectorビュー上でAnimationを持つオブジェクト（空オブジェクト）を選んだ状態で、画面上部VketCloudSDKタブの「Export Motion」を選択してください。<br>
 選択後、.hemの保存場所選択ウィンドウが起動するので、任意の場所に任意の名前で保存してください。
 
@@ -98,7 +108,7 @@ Legacyにチェックを入れます。
 !!! note
     エラーが出てしまった場合は [オブジェクトを動かす - できないときは](./PropAnimation_TroubleShooting.md) を参照するようにしてください。
 
-!!! caution "Export Motionを行う際の注意"
+!!! warning "Export Motionを行う際の注意"
     Export Motionを行う際、以下の画像のように、hemファイル書き出し時にAnimationコンポーネント / Animations内に複数のアニメーションが割り当てられていると意図しない挙動が発生する場合があります。<br>
     書き出しの際は原則として1つのアニメーション**だけ**が割り当てられているか確認するとよいでしょう。
 
@@ -144,7 +154,7 @@ Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示され�
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-!!! caution ".heo書き出しの注意点"
+!!! warning ".heo書き出しの注意点"
     - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、[HEOObject](../HEOComponents/HEOObject.md)にてシーン上に配置した際に、[HEOObject](../HEOComponents/HEOObject.md)のPosition + 書き出し時のPositionになります。<br>
     - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
     - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
@@ -184,7 +194,7 @@ Targetの欄で.heoと.hemを追加したオブジェクトを選択したし、
 
 ![PropAnimation_Result_2](./img/PropAnimation_Result_2.gif)
 
-!!! caution " [StopItem](../Actions/Item/PlayStopItem.md)について"
+!!! warning " [StopItem](../Actions/Item/PlayStopItem.md)について"
     [PlayItem](../Actions/Item/PlayStopItem.md)の対になるアクションに[StopItem](../Actions/Item/PlayStopItem.md)があります。<br>
     一見、再生中のアニメーションを停止しそうなアクションですが、StopItemの効果はBeginActionsの停止であり、再生中のアニメーションはBeginActionsに該当しないので止まりません。<br>
     StopItemはパーティクルやサウンドを止めるのに使うことができます。<br>
