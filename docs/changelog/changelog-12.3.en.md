@@ -39,6 +39,8 @@
 - About VketCloudSDK
   - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
+  - [Set up your Account](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/SetupAccount.html) *English version WIP
+    - Added images of registering the Vket account
   - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
 - First Steps
