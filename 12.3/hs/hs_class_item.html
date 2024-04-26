@@ -1558,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SDKTools/VketCloudSDK" class="md-nav__link">
+      <a href="../SDKTools/VketCloudSDKSettings.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9338,7 +9338,11 @@
 </details>
 <h3 id="setuvoffset">SetUVOffset</h3>
 <p><code>public bool SetUVOffset(string naterialName, float u, float v)</code></p>
-<p>名前でマテリアルを指定し、そのマテリアルの uv座標を変更する。変更に失敗すると false を返す。</p>
+<p>名前でマテリアルを指定し、<strong>原点を左上として</strong>uv座標を変更する。変更に失敗すると false を返す。</p>
+<div class="admonition warning">
+<p class="admonition-title">UV座標原点について</p>
+<p>通常のUnityプロジェクトではUVの原点(0,0)はUVの左下にありますが、HeliScriptでは<strong>左上</strong>を原点としていることにご注意ください。</p>
+</div>
 <details class="note">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>

@@ -1675,7 +1675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SDKTools/VketCloudSDK" class="md-nav__link">
+      <a href="../SDKTools/VketCloudSDKSettings.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8060,6 +8060,18 @@ Inspectorビューが下記画像のようになっていたらOKです。</p>
 <p>の2点は守ってください。</p>
 <p>キーフレームをいくつか追加し、任意のアニメーションを作成してください。</p>
 <p><img alt="PropAnimation_12" src="img/PropAnimation_12.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">ヒエラルキー状のアニメーション再生について</p>
+<p>Ver12.3において、画像のように「アニメーション対象の子オブジェクトをアニメーションさせる」設定にした状態でHEMをエクスポートすると意図しない動作を起こす可能性が確認されております。<br>
+アニメーションを制作する際は、オブジェクトの構造を並列に整形したうえでアニメーションの制作を推奨します。
+<img alt="PropAnimation_28" src="img/PropAnimation_28.jpg" /></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">アニメーション作成時の注意</p>
+<p>Ver12.3において、本方式はボーン(SkinnedMeshRenderer)が含まれたモデルのアニメーションの再生には対応しておりません。<br>
+ボーン付きのモデルにてアニメーションを再生したい場合は、モデルをVRMで出力し、モーションも合わせて出力する必要があります。<br>
+または、ボーンをすべて削除してSkinnedMeshRendererを使用していない状態とする必要があります。</p>
+</div>
 <p>入力が完了したら、Inspectorビュー上でAnimationを持つオブジェクト（空オブジェクト）を選んだ状態で、画面上部VketCloudSDKタブの「Export Motion」を選択してください。<br>
 選択後、.hemの保存場所選択ウィンドウが起動するので、任意の場所に任意の名前で保存してください。</p>
 <p><img alt="PropAnimation_13" src="img/PropAnimation_13.jpg" /></p>
@@ -8069,7 +8081,7 @@ Inspectorビューが下記画像のようになっていたらOKです。</p>
 <p class="admonition-title">Note</p>
 <p>エラーが出てしまった場合は <a href="PropAnimation_TroubleShooting.html">オブジェクトを動かす - できないときは</a> を参照するようにしてください。</p>
 </div>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">Export Motionを行う際の注意</p>
 <p>Export Motionを行う際、以下の画像のように、hemファイル書き出し時にAnimationコンポーネント / Animations内に複数のアニメーションが割り当てられていると意図しない挙動が発生する場合があります。<br>
 書き出しの際は原則として1つのアニメーション<strong>だけ</strong>が割り当てられているか確認するとよいでしょう。</p>
@@ -8097,7 +8109,7 @@ Inspectorビューが下記画像のようになっていたらOKです。</p>
 <p>ループアニメーションの場合は、loopにチェックを入れます。<br>
 この状態でビルドすることで、アニメーション付きのオブジェクトをシーン上に出すことができます。</p>
 <p><img alt="PropAnimation_Result_1" src="img/PropAnimation_Result_1.gif" /></p>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">.heo書き出しの注意点</p>
 <ul>
 <li>元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、<a href="../HEOComponents/HEOObject.html">HEOObject</a>にてシーン上に配置した際に、<a href="../HEOComponents/HEOObject.html">HEOObject</a>のPosition + 書き出し時のPositionになります。<br></li>
@@ -8128,7 +8140,7 @@ PlayItemはMotionの入ったHEOオブジェクトのほか、AudioやParticle�
 <p><img alt="PropAnimation_26" src="img/PropAnimation_26.jpg" /></p>
 <p>ビルドすると、クリックした時のみCubeが回転（Motionが再生）するようになります。</p>
 <p><img alt="PropAnimation_Result_2" src="img/PropAnimation_Result_2.gif" /></p>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title"> <a href="../Actions/Item/PlayStopItem.html">StopItem</a>について</p>
 <p><a href="../Actions/Item/PlayStopItem.html">PlayItem</a>の対になるアクションに<a href="../Actions/Item/PlayStopItem.html">StopItem</a>があります。<br>
 一見、再生中のアニメーションを停止しそうなアクションですが、StopItemの効果はBeginActionsの停止であり、再生中のアニメーションはBeginActionsに該当しないので止まりません。<br>

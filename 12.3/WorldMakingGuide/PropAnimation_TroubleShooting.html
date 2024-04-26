@@ -1281,6 +1281,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      アニメーションの挙動がおかしい
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1828,7 +1837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SDKTools/VketCloudSDK" class="md-nav__link">
+      <a href="../SDKTools/VketCloudSDKSettings.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8290,6 +8299,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      アニメーションの挙動がおかしい
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -8357,7 +8375,7 @@
 <h3 id="2_1">②コンポーネント設定に不備がある</h3>
 <p>上記画像では、<code>Index was out of range</code>のエラーが表示されています。<br>
 こちらのエラーはuv2のないメッシュをMeshRendererで扱おうとすると発生するため、uv2の作成またはSkinnedMeshRendererの使用によって回避できます。</p>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">SkinnedMeshRendererに関する注意</p>
 <p>SkinnedMeshRendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。</p>
 </div>
@@ -8405,6 +8423,19 @@ Standardなどに変更してみて表示されるかどうかお試しくださ
 <p>以下の画像のように、hemファイル書き出し時にAnimationコンポーネント / Animations内に複数のアニメーションが割り当てられていると意図しない挙動が発生する場合があります。</p>
 <p>書き出しの際は原則として1つのアニメーション<strong>だけ</strong>が割り当てられているか確認するとよいでしょう。</p>
 <p><img alt="PropAnimation_TroubleShooting_13" src="img/PropAnimation_TroubleShooting_13.jpg" /></p>
+<h3 id="_7">アニメーションの挙動がおかしい</h3>
+<div class="admonition warning">
+<p class="admonition-title">ヒエラルキー状のアニメーション再生について</p>
+<p>Ver12.3において、画像のように「アニメーション対象の子オブジェクトをアニメーションさせる」設定にした状態でHEMをエクスポートすると意図しない動作を起こす可能性が確認されております。<br>
+アニメーションを制作する際は、オブジェクトの構造を並列に整形したうえでアニメーションの制作を推奨します。
+<img alt="PropAnimation_28" src="img/PropAnimation_28.jpg" /></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">アニメーション作成時の注意</p>
+<p>Ver12.3において、本方式はボーン(SkinnedMeshRenderer)が含まれたモデルのアニメーションの再生には対応しておりません。<br>
+ボーン付きのモデルにてアニメーションを再生したい場合は、モデルをVRMで出力し、モーションも合わせて出力する必要があります。<br>
+または、ボーンをすべて削除してSkinnedMeshRendererを使用していない状態とする必要があります。</p>
+</div>
 
 
 

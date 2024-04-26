@@ -1019,6 +1019,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      オーディオファイルのフォーマット
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      動画ファイルのフォーマット
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1708,7 +1726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SDKTools/VketCloudSDK" class="md-nav__link">
+      <a href="../SDKTools/VketCloudSDKSettings.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8055,6 +8073,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      オーディオファイルのフォーマット
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      動画ファイルのフォーマット
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8073,11 +8109,13 @@
 <h1 id="vketcloud">VketCloudの仕様制限</h1>
 <p>VketCloudで使用するワールドモデル等はUnityでセットアップします。ただし、Unityの機能がすべて使用できるわけではないため、後述する仕様に合わせて調整をおこなう必要があります。</p>
 <h2 id="_1">ポリゴン</h2>
-<p>ワールドに配置するモデルは、合計８０万トライアングル以下にしてください。</p>
+<p>ワールドに配置するモデルは、目安として合計80万トライアングル以下にしてください。<br>
+アバターをワールド内に配置した場合、アバターのトライアングル数も含みます。<br>
+プレイヤーのアバターのトライアングル数はこの制限には含みません。</p>
 <h2 id="_2">テクスチャ</h2>
-<p>Vket Cloudでは以下のフォーマットのテクスチャ画像が使用できます。</p>
+<p>Vket Cloudでは以下のフォーマットのテクスチャ画像が使用できます。<br></p>
 <ul>
-<li>大きさが2048x2048以下のpng　*jpg, psdなどは使えません</li>
+<li>大きさが2048x2048以下のpng形式のファイル　※jpg, psd形式などは使えません</li>
 <li>２の累乗サイズの正方形（2048x2048,1024x1024,512x512等）または2の累乗サイズの長方形</li>
 <li>ビット深度は24bitまたは32bit</li>
 <li>png換算で80MB以下</li>
@@ -8175,6 +8213,70 @@
 デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
 この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。</p>
 </div>
+<h2 id="_12">オーディオファイルのフォーマット</h2>
+<p>オーディオファイルを使用する場合、以下のフォーマットに従ってください。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ファイル形式</td>
+<td>mp3</td>
+</tr>
+<tr>
+<td>サンプリングレート</td>
+<td>44100 Hz</td>
+</tr>
+<tr>
+<td>ビットレート</td>
+<td>160 kbps</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>BGMは以下の点に注意が必要です。</p>
+<ul>
+<li>動画再生時には、動画の音声が優先されます。</li>
+<li>距離減衰には対応していません。</li>
+</ul>
+</div>
+<h2 id="_13">動画ファイルのフォーマット</h2>
+<p>動画ファイルを使用する場合、以下のフォーマットに従ってください。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ファイル形式</td>
+<td>.mp4</td>
+</tr>
+<tr>
+<td>解像度</td>
+<td>1280x720 H.264</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>44.1kHz</td>
+</tr>
+<tr>
+<td>フレームレート</td>
+<td>29.97 or 30</td>
+</tr>
+<tr>
+<td>プロファイルレベル</td>
+<td>4.1, AAC 44.1kHz, yuv420</td>
+</tr>
+</tbody>
+</table>
 
 
 

@@ -1558,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SDKTools/VketCloudSDK" class="md-nav__link">
+      <a href="../SDKTools/VketCloudSDKSettings.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9122,7 +9122,7 @@ For example, objects defined as items are <a href="../HEOComponents/HEOField.htm
 <li><a href="../HEOComponents/HEOObject.html">HEOObject</a></li>
 <li><a href="../HEOComponents/HEOParticle.html">HEOParticle</a></li>
 </ul>
-<details class="caution">
+<details class="warning">
 <summary>Different return values for IsPlay</summary>
 <ul>
 <li><a href="../HEOComponents/HEOAudio.html">HEOAudio</a>: Returns true if the designated audio clip is playing</li>
@@ -9337,8 +9337,12 @@ For example, objects defined as items are <a href="../HEOComponents/HEOField.htm
 </ul>
 </details>
 <h3 id="setuvoffset">SetUVOffset</h3>
-<p><code>public bool SetUVOffset(string naterialName, float u, float v)</code></p>
-<p>Specify a material by name and change the uv coordinates of that material. Returns false if the change fails.</p>
+<p><code>public bool SetUVOffset(string materialName, float u, float v)</code></p>
+<p>Specify a material by name and change the uv offset of that material <strong>starting from the top-left origin</strong>. Returns false if the change fails.</p>
+<div class="admonition warning">
+<p class="admonition-title">Origin coordinate of UV</p>
+<p>While Unity considers the bottom-left coordinate of the UV as the origin, note that HeliScript considers the <strong>top-left</strong> as the origin.</p>
+</div>
 <details class="note">
 <summary>Available object types for this method</summary>
 <ul>
