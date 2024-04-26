@@ -86,7 +86,7 @@ Vket Cloudが対応しているシェーダーは限られています。
 上記画像では、`Index was out of range`のエラーが表示されています。<br>
 こちらのエラーはuv2のないメッシュをMeshRendererで扱おうとすると発生するため、uv2の作成またはSkinnedMeshRendererの使用によって回避できます。
 
-!!! caution "SkinnedMeshRendererに関する注意"
+!!! warning "SkinnedMeshRendererに関する注意"
     SkinnedMeshRendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。
 
 この例のように、コンポーネント設定に不備がある場合に書き出しが失敗する場合があります。
@@ -160,3 +160,15 @@ HEOObjectのObject TypeをMotionに切り替えてアニメーションを入れ
 書き出しの際は原則として1つのアニメーション**だけ**が割り当てられているか確認するとよいでしょう。
 
 ![PropAnimation_TroubleShooting_13](./img/PropAnimation_TroubleShooting_13.jpg)
+
+### アニメーションの挙動がおかしい
+
+!!! warning "ヒエラルキー状のアニメーション再生について"
+    Ver12.3において、画像のように「アニメーション対象の子オブジェクトをアニメーションさせる」設定にした状態でHEMをエクスポートすると意図しない動作を起こす可能性が確認されております。<br>
+    アニメーションを制作する際は、オブジェクトの構造を並列に整形したうえでアニメーションの制作を推奨します。
+    ![PropAnimation_28](./img/PropAnimation_28.jpg)
+
+!!! warning "アニメーション作成時の注意"
+    Ver12.3において、本方式はボーン(SkinnedMeshRenderer)が含まれたモデルのアニメーションの再生には対応しておりません。<br>
+    ボーン付きのモデルにてアニメーションを再生したい場合は、モデルをVRMで出力し、モーションも合わせて出力する必要があります。<br>
+    または、ボーンをすべて削除してSkinnedMeshRendererを使用していない状態とする必要があります。

@@ -60,9 +60,13 @@
     - リフレクションプローブの設定方法を更新
   - [オブジェクトをアニメーションさせる](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/PropAnimation.html)
     - Export Motion時に複数アニメーションを割り当てている際の意図しない挙動について注意点を追記
+    - ヒエラルキー構造のオブジェクトのアニメーション再生について注意を追記
+    - ボーンが含まれたアニメーションに対応していない旨の明記と解決策を追記
   - [オブジェクトをアニメーションさせる - できないときは](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/PropAnimation_TroubleShooting.html)
     - uv2のないメッシュをMeshRendererで扱おうとすると発生するエラーへの対処法を修正
     - Export Motion時に複数アニメーションを割り当てている際の意図しない挙動について注意点を追記
+    - ヒエラルキー構造のオブジェクトのアニメーション再生について注意を追記
+    - ボーンが含まれたアニメーションに対応していない旨の明記と解決策を追記
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記

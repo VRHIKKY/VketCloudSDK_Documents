@@ -87,7 +87,7 @@ If the shader cannot be used, it will be displayed as "UnknownShader" as shown i
 In the image above, the error `Index was out of range` is displayed. <br>
 This error occurs when you try to handle a mesh without uv2 with MeshRenderer, so you can avoid it by creating uv2 or using SkinnedMeshRenderer.
 
-!!! caution "Notice on SkinnedMeshRenderer"
+!!! warning "Notice on SkinnedMeshRenderer"
     As objects with SkinnedMeshRenderer cannot be animated on hem animations, recreate the mesh if this object is intended to be animated.
 
 Like this example, if the component settings are incorrect, the export may fail.
