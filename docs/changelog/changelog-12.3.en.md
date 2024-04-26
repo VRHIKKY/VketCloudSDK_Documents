@@ -39,7 +39,7 @@
 - About VketCloudSDK
   - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
-  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
+  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
 - First Steps
   - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/BuildAndRun.html)
@@ -48,14 +48,17 @@
   - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/WorldUpload.html)
     - Edited how-to on operating World Uploader
 - World Making Guide
-  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html)
+  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Collider.html)
     - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
     - Added Guide for Setup using Quick Menu
   - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ReflectionProbe.html)
     - Edited setup instructions for reflection probe
+  - [How to Animate Objects](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation.html)
+    - Added caution on allocating multiple animations when committing Export Motion
   - [How to Animate Objects - Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation_TroubleShooting.html)
     - Revised solution for error caused when meshes without uv2 is handled by MeshRenderer
+    - Added caution on allocating multiple animations when committing Export Motion
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
@@ -113,6 +116,7 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Added list of object type which can call each function
     - Added information regarding return values for IsPlay
     - Fixed description for GetPhysicsIDByNodeName
+    - Added caution for the UV origin position on using SetUVOffset
   - [Item Types and HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
     - Changed title（Old: Item Types and Usable Functions）
     - Deleted chart of functions usable for each HEOComponent, as latest information is now on Item class page
@@ -129,6 +133,8 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Edited argument of hsCanvasSetGUIPos
   - [Built-in types - Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_var.html)
     - Added ToString function
+  - [Operator](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_operator.html)
+    - Added strict equality and strict inequality operators
 - Trouble Shooting
   - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/troubleshooting/VersionUpdateTroubleshooting.html)
     - Added solution for VketCloudSDK tab not showing on top menu

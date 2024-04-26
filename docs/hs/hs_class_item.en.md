@@ -253,7 +253,7 @@ Returns true if the sound or particle is playing.
     - [HEOAudio](../HEOComponents/HEOAudio.md)
     - [HEOObject](../HEOComponents/HEOObject.md)
     - [HEOParticle](../HEOComponents/HEOParticle.md)
-    ??? caution "Different return values for IsPlay"
+    ??? warning "Different return values for IsPlay"
         - [HEOAudio](../HEOComponents/HEOAudio.md): Returns true if the designated audio clip is playing
         - [HEOObject](../HEOComponents/HEOObject.md): Returns true if designated hem in Motion list is playing, when object mode is Motion
         - [HEOParticle](../HEOComponents/HEOParticle.md): Returns true if designated .hep particle is playing
@@ -465,9 +465,12 @@ Specify a node by name and returns true if the node is clickable, false otherwis
 
 ### SetUVOffset
 
-`public bool SetUVOffset(string naterialName, float u, float v)`
+`public bool SetUVOffset(string materialName, float u, float v)`
 
-Specify a material by name and change the uv coordinates of that material. Returns false if the change fails.
+Specify a material by name and change the uv offset of that material **starting from the top-left origin**. Returns false if the change fails.
+
+!!! warning "Origin coordinate of UV"
+    While Unity considers the bottom-left coordinate of the UV as the origin, note that HeliScript considers the **top-left** as the origin.
 
 ??? note "Available object types for this method"
     - [HEOField](../HEOComponents/HEOField.md)

@@ -121,7 +121,7 @@ Standardなどに変更してみて表示されるかどうかお試しくださ
 稀にあります。<br>
 原因は、テクスチャ圧縮用のbatの誤検知です。
 
-![PropAnimation_TroubleShooting_11](./img/PropAnimation_TroubleShooting_10.jpg)
+![PropAnimation_TroubleShooting_11](./img/PropAnimation_TroubleShooting_11.jpg)
 
 解決するためには、batを削除する必要があります。<br>
 テクスチャ圧縮を行った後、batは不要となるため、予めテクスチャ圧縮を行ってから削除すると良いでしょう。
@@ -147,8 +147,16 @@ HEOObjectのObject TypeをMotionに切り替えてアニメーションを入れ
 
 こういった場合、「loopにチェックマークを入れ、Index 0に持ってきて動いているかどうかを調査する」のが一番手っ取り早いです。
 
-![PropAnimation_TroubleShooting_12](./img/PropAnimation_TroubleShooting_11.jpg)
+![PropAnimation_TroubleShooting_12](./img/PropAnimation_TroubleShooting_12.jpg)
 
 動く場合、アニメーション再生トリガーに問題があります。
 
 それでも動かない場合、アニメーションの作りに問題があるので、HEM作成までの過程を見直してみると良いでしょう。
+
+### ③hemファイル書き出し時にアニメーションが複数指定されている
+
+以下の画像のように、hemファイル書き出し時にAnimationコンポーネント / Animations内に複数のアニメーションが割り当てられていると意図しない挙動が発生する場合があります。
+
+書き出しの際は原則として1つのアニメーション**だけ**が割り当てられているか確認するとよいでしょう。
+
+![PropAnimation_TroubleShooting_13](./img/PropAnimation_TroubleShooting_13.jpg)
