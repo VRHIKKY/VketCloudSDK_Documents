@@ -30,7 +30,7 @@ Select "Add Component" > "HEOScript" on the Inspector screen to attach the compo
 In the [HEOScript](../HEOComponents/HEOScript.md) component, select the HeliScript file you want to run. <br>
 By selecting "Select" on the right side of the menu, a list of HeliScripts will appear, so select the HeliScript to be used.
 
-### 3. Enable debug mode in HEOWorldSetting
+### 3. Enable debug mode in VketCloudSettings / BasicSettings
 
 ![hs_overview_4](img/hs_overview_4.jpg)
 

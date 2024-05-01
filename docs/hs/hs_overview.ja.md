@@ -30,12 +30,12 @@ Inspector画面にてAdd Component > HEOScriptと選択してコンポーネン�
 [HEOScript](../HEOComponents/HEOScript.md)コンポーネントでは実行したいHeliScriptファイルを選びます。<br>
 メニュー右の「Select」を選択するとHeliScriptの一覧が出現するため、使いたいHeliScriptを選択します。
 
-### 3. HEOWorldSettingにてデバッグモードを有効にする
+### 3. VketCloudSettings / BasicSettingsにてデバッグモードを有効にする
 
 ![hs_overview_4](img/hs_overview_4.jpg)
 
 今回実装するHelloWorldでは、デバッグログにて文字を出力するためにワールドのビルドをデバッグモードに設定する必要があります。<br>
-デバッグモードを使うためにVketCloudSettings[BasicSettings](../VketCloudSettings/BasicSettings.md)の[Debug Mode](../WorldEditingTips/DebugMode.md)を有効にします。
+デバッグモードを使うためにVketCloudSettings / [BasicSettings](../VketCloudSettings/BasicSettings.md)の[Debug Mode](../WorldEditingTips/DebugMode.md)を有効にします。
 
 ### 4. HeliScriptを書く
 
