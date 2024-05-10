@@ -68,16 +68,24 @@
     
     
     
-  
-  <meta name="google-site-verification" content="00M2sXmq2-lN8vSLlXsdetq0upC9-Zk9CyvkryyNgkw" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R753QL60GW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<script>
+    // リダイレクト用のオブジェクトを作成
+    const redirects = {
+        "/ja": "",
+    };
 
-    gtag('config', 'G-R753QL60GW');
-  </script>
+    (function redirect(){
+        const currentPath = window.location.pathname;
+        for (const [key, value] of Object.entries(redirects)) {
+            if (currentPath.startsWith(key)) {
+                const newPath = currentPath.substring(key.length);
+                const redirectUrl = value + newPath + (window.location.search ? window.location.search : '') + (window.location.hash ? window.location.hash : '');
+                window.location.href = `${window.location.origin}${redirectUrl}`;
+                return;
+            }
+        }
+    })();		
+</script>
 
   </head>
   
@@ -7790,7 +7798,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+  <h1>404</h1>
 
               </article>
             </div>
@@ -7808,7 +7816,7 @@
           
             <img class="md-footer-logo" src="/images/HikkyLogo.png" alt="VketCloudSDK Manual" />
           
-          <div class="md-footer-copyright">
+          <div class="md-copyright">
             ©HIKKY Co.,Ltd. All rights reserved.
           </div>
         </div>
