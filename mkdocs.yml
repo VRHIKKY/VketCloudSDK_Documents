@@ -34,6 +34,8 @@ theme:
     search: 83   # s
   nav_style: dark
   custom_dir: custom_theme
+  static_templates:
+    - 404.html
 
 extra_css:
   - stylesheets/extra.css
