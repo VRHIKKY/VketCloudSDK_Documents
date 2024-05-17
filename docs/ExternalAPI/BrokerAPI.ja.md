@@ -215,6 +215,11 @@ component BrokerAPI
 }
 ```
 
-3\. ワールドをビルドし、結果を確認します。
+3\. ワールドをアップロードし、結果を確認します。
+
+!!! warning "BrokerAPI動作確認時の注意"
+    ローカル環境での**Build And Run**では動作が確認できません。<br>
+    一度非公開の状態などでワールドとしてアップロードして頂いた上、結果の確認をお願いいたします。<br>
+    ワールドのアップロード方法については、[ワールドアップロード](../FirstStep/WorldUpload.md)をご参照ください。
 
 ![BrokerAPI_Result](img/BrokerAPI_Result.gif)
