@@ -7,6 +7,12 @@ For devices with weaker machine power (e.g. smartphones), optimization is vital 
 
 Few points on world optimization for smartphones will be discussed below.
 
+## Build options for Smartphones
+
+VketCloudSDK has a convinient feature that can bulk convert textures, avatar files, and particles for smartphone optimization in buld option window.
+
+For more details, see [Build Option](../WorldEditingTips/BuildOptions.md).
+
 ## Criteria for Optimization
 
 As an example for a criteria of smartphone optimization, world resources should be fulfilling the specs below on an average.
