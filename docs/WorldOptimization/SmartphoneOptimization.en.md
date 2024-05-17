@@ -9,7 +9,7 @@ Few points on world optimization for smartphones will be discussed below.
 
 ## Build options for Smartphones
 
-Vket Cloud SDK has a convinient feature that can bulk conversion of textures, avatar files, and particles for smartphone optimization in buld option window.
+VketCloudSDK has a convinient feature that can bulk convert textures, avatar files, and particles for smartphone optimization in buld option window.
 
 For more details, see [Build Option](../WorldEditingTips/BuildOptions.md).
 
