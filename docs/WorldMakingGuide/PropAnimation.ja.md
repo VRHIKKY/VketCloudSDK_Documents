@@ -245,7 +245,7 @@ component SwitchAnimation
 
 作成したHeliScriptは、HEOScriptを使用してワールド内に配置します。
 
-![PropAnimation_27](./img/propanimation_27.jpg)
+![PropAnimation_27](./img/PropAnimation_27.jpg)
 
 ワールドをビルドすると、該当のHeliScriptが動作してアニメーションを制御します。
 

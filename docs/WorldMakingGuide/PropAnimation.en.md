@@ -232,7 +232,7 @@ component SwitchAnimation
 
 Place the created HeliScript in the world using HEOScript.
 
-![PropAnimation_27](./img/propanimation_27.jpg)
+![PropAnimation_27](./img/PropAnimation_27.jpg)
 
 On world build, the corresponding HeliScript will run and control the animation.
 
