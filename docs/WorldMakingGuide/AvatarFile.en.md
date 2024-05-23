@@ -11,7 +11,12 @@ This file stores information to initiate avatars on Vket Cloud.
 | Thumbnail(English) | Sets the thumbnail image for the avatar when language is English. <br> The thumbnail will be used in the preset avatar list. |
 
 The thumbnail image will be applied to the preset avatar list located in the in-world settings as below.<br>
-The avatar display order will be set according to the setting in [HEOWorldSetting > Avatar > Avatar File](../HEOComponents/HEOWorldSetting.md).<br>
+The avatar display order will be set according to the setting in [VketCloudSettings > Avatar Settings > Avatar Setting > Avatar File](../VketCloudSettings/AvatarSettings.md).<br>
+
+!!! note "About Avatar Settings"
+    Avatar Settings can be configured by switching to `Advanced` setting mode in [Vket Cloud Settings](../VketCloudSettings/Overview.md) object.<br>
+    By doing above, the object `Avatar Settings` appears in the hierarchy and can be configured.
+
 Note that thumbnail image must be in png format and 1:1 square ratio.
 
 ![AvatarFile_Result](img/AvatarFile_Result.jpg)
