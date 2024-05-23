@@ -2,17 +2,17 @@
 
 To build with VketCloudSDK, following objects must be placed in the scene.
   
-| Component Name | Overview |
+| Objects Name | Overview |
 | ---- | ---- |
-| VketCloudSettings | Component for setting world name, avatar, etc. |
-| BasicSettings | Component for 3D model |
-| PlayerSettings | A component that specifies the initial spawn position of the player |
-| DespawnHeightSettings | A component that specifies the height to respawn the player |
+| VketCloudSettings | Group of objects to manage world settings |
+| BasicSettings | An object handles the main settings of the world |
+| PlayerSettings | An object that specifies the initial spawn position of the player |
+| DespawnHeightSettings | An object that specifies the height to respawn the player |
 
 For more details about these settings, see [Vket Cloud Settings - Overview](../VketCloudSettings/Overview.md).
 
 !!!note tip
-     Preset objects can be called by right clicking in the hierarchy and clicking Add essential Objects for VketCloud.
+     Preset objects can be created by right clicking in the hierarchy and clicking Add essential Objects for VketCloud.
 
      ![AddEssentialObjects](img/AddEssentialObjects.jpg)
   
