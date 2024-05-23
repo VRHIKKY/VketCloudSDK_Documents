@@ -48,21 +48,21 @@ extra:
     provider: google
     property: G-R753QL60GW
     feedback:
-      title: このページは役に立ちましたか？
+      title: Was this page useful？
       ratings:
         - icon: material/thumb-up-outline
           name: This page was helpful
           data: 1
           note: >-
-            フィードバックありがとうございます!
-            詳しくページの改善に関するご意見に関して投稿したい場合は、<a href="https://github.com/VRHIKKY/VketCloudSDK_Documents/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">フィードバックフォーム</a>でお知らせください。 
+            Thank you for your feedback!
+            If you would like to post detailed opinions on how to improve the page, please let us know through the <a href="https://github.com/VRHIKKY/VketCloudSDK_Documents/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
         - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
           note: >- 
-            フィードバックありがとうございます!
-            詳しくページの改善に関するご意見に関して投稿したい場合は、<a href="https://github.com/VRHIKKY/VketCloudSDK_Documents/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">フィードバックフォーム</a>でお知らせください。 
-    
+            Thank you for your feedback!
+            If you would like to post detailed opinions on how to improve the page, please let us know through the <a href="https://github.com/VRHIKKY/VketCloudSDK_Documents/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+
 use_directory_urls: false
 
 plugins:
@@ -87,6 +87,30 @@ plugins:
           default: true
           locale: ja
           name: 日本語
+          extra:
+            generator: false
+            version:
+              provider: mike
+              default: latest
+            homepage: https://www.hikky.co.jp/vketcloud
+            analytics: 
+              provider: google
+              property: G-R753QL60GW
+              feedback:
+                title: このページは役に立ちましたか？
+                ratings:
+                  - icon: material/thumb-up-outline
+                    name: This page was helpful
+                    data: 1
+                    note: >-
+                      フィードバックありがとうございます!
+                      詳しくページの改善に関するご意見に関して投稿したい場合は、<a href="https://github.com/VRHIKKY/VketCloudSDK_Documents/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">フィードバックフォーム</a>でお知らせください。 
+                  - icon: material/thumb-down-outline
+                    name: This page could be improved
+                    data: 0
+                    note: >- 
+                      フィードバックありがとうございます!
+                      詳しくページの改善に関するご意見に関して投稿したい場合は、<a href="https://github.com/VRHIKKY/VketCloudSDK_Documents/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">フィードバックフォーム</a>でお知らせください。 
           nav_translations:
             # 概要
             Introduction: はじめに
