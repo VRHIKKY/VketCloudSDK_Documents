@@ -2,7 +2,7 @@
 
 ![HEOMeshCollider_1](img/HEOCylinderCollider_01.jpg)
 
-HEOCylinderCollider will generate cylindical collider based on CapsuleCollider of the object by attaching with the HEOCollider.
+HEOCylinderCollider will generate cylinder collider based on CapsuleCollider of the object by attaching with the HEOCollider.
 
 Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "HEOCylinderCollider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
 
