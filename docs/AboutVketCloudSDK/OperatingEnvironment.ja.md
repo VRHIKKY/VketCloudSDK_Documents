@@ -49,9 +49,17 @@ VketCloudSDKは、以下のUnity環境が必要です。
     **StandardShaderの設定の変更**
 
     VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
+
     1. 「Edit/ProjectSettings/Graphics」を開く
-        ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics.jpg)
+
+        ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_1.jpg)
+
+        ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_2.jpg)
+
     2. 「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
+
         ![TierSettings.jpg](../heoexporter/he_image/TierSettings.jpg)
+
     3. 「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
+
         ![StandardShaderQuality.jpg](../heoexporter/he_image/StandardShaderQuality.jpg)
