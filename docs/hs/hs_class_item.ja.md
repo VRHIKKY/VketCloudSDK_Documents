@@ -466,7 +466,7 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 ### SetUVOffset
 
-`public bool SetUVOffset(string naterialName, float u, float v)`
+`public bool SetUVOffset(string materialName, float u, float v)`
 
 名前でマテリアルを指定し、**原点を左上として**uv座標を変更する。変更に失敗すると false を返す。
 
