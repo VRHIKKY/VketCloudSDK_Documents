@@ -6,7 +6,7 @@ HEOCylinderCollider will generate cylinder collider based on CapsuleCollider of 
 
 Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "HEOCylinderCollider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
 
-!!! note "注意点"
+!!! note "Notes"
     Due to the implementation of collision detection in the physics engine, capsule colliders and cylinder colliders, and cylinder colliders and cylinder colliders do not collide.<br>
     When using a cylinder collider, thin colliders like Plane may penetrate, so you need to use a box for the ground.
 
