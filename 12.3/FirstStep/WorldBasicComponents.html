@@ -1976,6 +1976,8 @@
       
         
       
+        
+      
     
     
     
@@ -2184,6 +2186,27 @@
   
   <span class="md-ellipsis">
     HEOClickGuide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOCylinderCollider.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HEOCylinderCollider
   </span>
   
 
@@ -7817,36 +7840,37 @@
 
 
 <h1 id="_1">ワールドの基本要素</h1>
-<p>VketCloudSDKでビルドするには、以下のコンポーネントを含むオブジェクトがシーンに配置されている必要があります。  </p>
+<p>VketCloudSDKでビルドするには、最低限、以下のオブジェクトがシーンに配置されている必要があります。  </p>
 <table>
 <thead>
 <tr>
-<th>コンポーネント名</th>
+<th>オブジェクト名</th>
 <th>概要</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>HEOWorldSetting</td>
-<td>ワールド名やアバター等の設定をするコンポーネント</td>
+<td>VketCloudSettings</td>
+<td>ワールドの設定を管理するためのオブジェクト群</td>
 </tr>
 <tr>
-<td>HEOField</td>
-<td>3Dモデルを入れるためのコンポーネント</td>
+<td>BasicSettings</td>
+<td>ワールドの基本的な設定</td>
 </tr>
 <tr>
-<td>HEOPlayer</td>
-<td>プレイヤーの初期スポーン位置を指定するコンポーネント</td>
+<td>PlayerSettings</td>
+<td>スポーン位置など、ワールドにおけるプレイヤーの挙動を設定</td>
 </tr>
 <tr>
-<td>DespawnHeight</td>
-<td>プレイヤーをリスポーンする高さを指定するコンポーネント</td>
+<td>DespawnHeightSettings</td>
+<td>プレイヤーをリスポーンする高さを設定</td>
 </tr>
 </tbody>
 </table>
+<p>これらの設定項目の詳細については<a href="../VketCloudSettings/Overview.html">Vket Cloud Settings - 概要</a>を参照してください。</p>
 <div class="admonition note tip">
 <p class="admonition-title">Note</p>
-<p>これらのコンポーネントがプリセットされたオブジェクトは、ヒエラルキーで右クリックし、Add essential Objects for VketCloudから呼び出すことができます。</p>
+<p>これらのオブジェクトは、ヒエラルキーで右クリックし、Add essential Objects for VketCloudから呼び出すことができます。</p>
 <p><img alt="AddEssentialObjects" src="img/AddEssentialObjects.jpg" />   </p>
 </div>
 <div class="admonition note question">
@@ -7854,7 +7878,7 @@
 <ul>
 <li>連続して初期のスポーンポイントに戻される　　</li>
 </ul>
-<p>という現象が起きている場合は、意図せずリスポーン判定されている可能性があります。DespawnHeightの高さ（y軸）やHEOPlayerの位置を調整してみてください。    </p>
+<p>という現象が起きている場合は、意図せずリスポーン判定されている可能性があります。DespawnHeightSettingsの高さ（y軸）やPlayerSettingsの位置を調整してみてください。    </p>
 </div>
 
 

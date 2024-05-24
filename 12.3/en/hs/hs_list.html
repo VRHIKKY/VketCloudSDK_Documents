@@ -1964,6 +1964,8 @@
       
         
       
+        
+      
     
     
     
@@ -2172,6 +2174,27 @@
   
   <span class="md-ellipsis">
     HEOClickGuide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOCylinderCollider.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HEOCylinderCollider
   </span>
   
 
@@ -8215,15 +8238,15 @@
 <p>list is a built-in type that represents a variable length array.</p>
 <h2 id="declaration">Declaration</h2>
 <p>To specify the type of data to be placed in the list, you need to specify the type with "&lt; &gt;".</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">list</span><span class="p">&lt;</span><span class="k">type</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="n">list</span><span class="o">&lt;</span><span class="n">type</span><span class="o">&gt;</span><span class="w"> </span><span class="kt">object</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
 </code></pre></div>
 
 <p>The specific initialization code looks like this:</p>
 <div class="codehilite"><pre><span></span><code><span class="c1">// define a list that holds int values</span>
-<span class="nb">list</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numList</span><span class="p">;</span>
+<span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numList</span><span class="p">;</span>
 
 <span class="c1">// initialize a list holding strings with an initial size of 10</span>
-<span class="nb">list</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">strList</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="nb">list</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">strList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
 </code></pre></div>
 
 <h2 id="resize-list">Resize list</h2>
@@ -8237,7 +8260,7 @@ When the size is expanded, the [initial value] (hs_var.md) of that type is set i
 If you don't specify an initial size, it will be instantiated with a size of 0.</p>
 <h3 id="addt">Add(T)</h3>
 <p><code>void Add(T value)</code></p>
-<p>Add value to list.</p>
+<p>Add the designated value to the end of list.</p>
 <p>The type of the value specified in the argument must match the type of the calling list of this method.</p>
 <p>Inserts a new element at the position specified by the argument.</p>
 <h3 id="isempty">IsEmpty()</h3>
@@ -8264,7 +8287,7 @@ If you don't specify an initial size, it will be instantiated with a size of 0.<
 <p><code>void Insert(int index, T value)</code></p>
 <p>Insert the specified value at the position specified by the argument.</p>
 <h3 id="copyfromint-listt-int-int">CopyFrom(int, list&lt;T&gt;, int, int)</h3>
-<p><code>void CopyFrom(int index, list&lt;T&gt; sourceList, int start, int lnegth)</code></p>
+<p><code>void CopyFrom(int index, list&lt;T&gt; sourceList, int start, int length)</code></p>
 <p>Copies the contents of sourceList from start to length size to the position specified by index.</p>
 <p>The type of the list specified in the argument must match the list type of the caller of this method.</p>
 <h3 id="fillint-int-t">Fill(int, int, T)</h3>
@@ -8282,9 +8305,9 @@ If you don't specify an initial size, it will be instantiated with a size of 0.<
 <p>Searches for a value in the range specified by the argument and returns the position of the first occurrence of that value if found. Returns -1 if the searched value is not found.</p>
 <h3 id="operator">[ ] operator</h3>
 <p>Gets the value at the specified position in list. It is also possible to assign an element at the specified position.</p>
-<div class="codehilite"><pre><span></span><code>list&lt;int&gt; numList = new list&lt;int&gt;(10);
-numList[0] = 999;
-int value = numList[6];
+<div class="codehilite"><pre><span></span><code><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
+<span class="n">numList</span><span class="p">[</span><span class="m">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">999</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="k">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numList</span><span class="p">[</span><span class="m">6</span><span class="p">];</span>
 </code></pre></div>
 
 

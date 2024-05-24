@@ -1924,7 +1924,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      軽量化の目安
+      スマートフォン向けビルド時の一括変換機能について
     </span>
   </a>
   
@@ -1933,7 +1933,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      アバターの制限について
+      軽量化の目安
     </span>
   </a>
   
@@ -1942,7 +1942,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      ロード時間の短縮のために
+      アバターの制限について
     </span>
   </a>
   
@@ -1951,7 +1951,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      テクスチャの再フォーマットと負荷軽減
+      ロード時間の短縮のために
     </span>
   </a>
   
@@ -1959,6 +1959,15 @@
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      テクスチャの再フォーマットと負荷軽減
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       ワールド内動作の改善とワールドの導線設計
     </span>
@@ -1990,6 +1999,8 @@
   
     
     
+      
+        
       
         
       
@@ -2259,6 +2270,27 @@
   
   <span class="md-ellipsis">
     HEOClickGuide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOCylinderCollider.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HEOCylinderCollider
   </span>
   
 
@@ -7887,7 +7919,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      軽量化の目安
+      スマートフォン向けビルド時の一括変換機能について
     </span>
   </a>
   
@@ -7896,7 +7928,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      アバターの制限について
+      軽量化の目安
     </span>
   </a>
   
@@ -7905,7 +7937,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      ロード時間の短縮のために
+      アバターの制限について
     </span>
   </a>
   
@@ -7914,7 +7946,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      テクスチャの再フォーマットと負荷軽減
+      ロード時間の短縮のために
     </span>
   </a>
   
@@ -7922,6 +7954,15 @@
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      テクスチャの再フォーマットと負荷軽減
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       ワールド内動作の改善とワールドの導線設計
     </span>
@@ -7949,7 +7990,10 @@
 <p>しかし一方で、各ワールドにおける動作の快適さやストレスの少なさを実現するためにワールドの軽量化は必須であり、ワールド制作者は可能な限り動作の快適性に気を配る必要があります。<br>
 特に、スマートフォンなどPCと比べてスペックが弱めの端末にて遜色のない動作体験を作るには、PC以上に軽量化を意識した制作が重要といえます。</p>
 <p>以下にスマートフォン向けの対応を考える際にワールドとして気を付けるべきポイントを述べます。</p>
-<h2 id="_2">軽量化の目安</h2>
+<h2 id="_2">スマートフォン向けビルド時の一括変換機能について</h2>
+<p>VketCloudSDKではビルド時のオプションにてテクスチャやアバターファイル、パーティクルを一括でスマートフォン向けに軽量化変換する機能を備えております。</p>
+<p>詳しくは<a href="../WorldEditingTips/BuildOptions.html">ビルド時のオプション</a>のページをご参照ください。</p>
+<h2 id="_3">軽量化の目安</h2>
 <p>スマートフォン用の軽量化の目安として、一度に読みこまれているワールドのリソースが下記のような要件を満たしていることが一つの基準と考えられます：</p>
 <ul>
 <li>ポリゴン数：60万トライアングル以下</li>
@@ -7965,7 +8009,7 @@
 <li>大量のパーティクル設置</li>
 <li>範囲の広いメッシュコライダー</li>
 </ul>
-<h2 id="_3">アバターの制限について</h2>
+<h2 id="_4">アバターの制限について</h2>
 <p>Vket Cloudにて、プレイヤーは自分の<a href="../AboutVketCloudSDK/SetupAvatar.html">マイアバター</a>もしくはワールド付属の<a href="../WorldMakingGuide/PresetAvatar.html">プリセットアバター</a>の二択から自身のアバターを選択できます。<br>
 これによって幅広いアバターの選択肢が生まれる一方で、大人数が集まるようなワールドではアバターの描画がデバイスにとって負荷となる場合があります。</p>
 <p>アバターによる描画負荷の対策として、ワールド側の対策として<a href="../HEOComponents/HEOWorldSetting.html#_5">HEOWorldSetting / MyAvatar</a>においてワールド内で使用できるアバターの最大ポリゴン数、あるいはマイアバターの使用に制限を設けることができます。<br>
@@ -7977,20 +8021,20 @@
 <p><img alt="SmartphoneOptimization_1" src="img/SmartphoneOptimization_1.jpg" /></p>
 <p>また、マイアバターを持っていない/利用が制限されている、あるいは未ログインのユーザーはワールド入場時に自動的に<a href="../WorldMakingGuide/PresetAvatar.html">プリセットアバター</a>の1番目のアバターが割り当てられます。<br></p>
 <p><img alt="SmartphoneOptimization_2" src="img/SmartphoneOptimization_2.jpg" /></p>
-<h2 id="_4">ロード時間の短縮のために</h2>
+<h2 id="_5">ロード時間の短縮のために</h2>
 <p>プレイヤーにとって、ワールド入場時のロード時間はなるべく短い方が体験時のストレスが少ない傾向にあります。<br>
 SDKでは、入場前のロード時間を短縮するためにワールドのリソースを分割する<a href="../HEOComponents/HEOField.html">動的ローディング</a>が使用できます。</p>
 <p>特にスマートフォンなどPCに比べて処理に制約があるデバイスにおいては、例として入口 / 廊下 / メインの部屋...と細かくワールド内を分けることで一度に読み込まれるリソース量を分割すると負荷軽減の面において効果的です。<br>
 また、ブラウザの開発コンソールにおいてワールド入場時の読み込まれるリソースを分析することで、読み込み時間の負荷の原因となっているリソースを探し出すのも有効です。</p>
 <p>詳細な実装方法は<a href="../HEOComponents/HEOField.html">動的ローディング</a>をご参照ください。</p>
-<h2 id="_5">テクスチャの再フォーマットと負荷軽減</h2>
+<h2 id="_6">テクスチャの再フォーマットと負荷軽減</h2>
 <p>Vket Cloudにおいてスマートフォンにおける快適な動作を実現するためには、ロード時間と描画のボトルネックとなるテクスチャの削減と圧縮は非常に効果的といえます。</p>
 <p>SDKではフォーマットツールとして<a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>が用意されています。<br>
 これを使用すると、png以外 / 縦横サイズが2の累乗でないテクスチャ画像を<a href="../WorldMakingGuide/UnityGuidelines.html#_2">Vket Cloudの仕様制限</a>に合わせてフォーマットするため、なるべく多くのテクスチャを変換することをお勧めします。<br>
 このとき、テクスチャの解像度を下げる設定もツール内で併せて行うと、リソース読み込み時の負荷軽減につながります。</p>
 <p><img alt="ExportCompressedTexture_1" src="../SDKTools/img/ExportCompressedTexture_1.jpg" /></p>
 <p>テクスチャの圧縮方法については<a href="TextureCompression.html">テクスチャ圧縮</a>及び<a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>をご参照ください。</p>
-<h2 id="_6">ワールド内動作の改善とワールドの導線設計</h2>
+<h2 id="_7">ワールド内動作の改善とワールドの導線設計</h2>
 <p>ワールド内では<a href="../WorldEditingTips/DebugMode.html">デバッグモード</a>を有効にするとFPS、ドローコールなどの情報が見られます。</p>
 <p><img alt="DebugMode_4" src="../WorldEditingTips/img/DebugMode_4.jpg" /></p>
 <p>なお、Static BatchingなどといったUnity側の軽減機能はVket Cloudにないため、同メッシュ同マテリアルのオブジェクトだとしても、置いた分だけドローコールが増えます。</p>

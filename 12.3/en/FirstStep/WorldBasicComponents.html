@@ -1976,6 +1976,8 @@
       
         
       
+        
+      
     
     
     
@@ -2184,6 +2186,27 @@
   
   <span class="md-ellipsis">
     HEOClickGuide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HEOComponents/HEOCylinderCollider.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HEOCylinderCollider
   </span>
   
 
@@ -7817,36 +7840,37 @@
 
 
 <h1 id="essential-objects">Essential objects</h1>
-<p>To build with VketCloudSDK, objects containing the following components must be placed in the scene.</p>
+<p>To build with VketCloudSDK, following objects must be placed in the scene.</p>
 <table>
 <thead>
 <tr>
-<th>Component Name</th>
+<th>Objects Name</th>
 <th>Overview</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>HEOWorldSetting</td>
-<td>Component for setting world name, avatar, etc.</td>
+<td>VketCloudSettings</td>
+<td>Group of objects to manage world settings</td>
 </tr>
 <tr>
-<td>HEOField</td>
-<td>Component for 3D model</td>
+<td>BasicSettings</td>
+<td>An object handles the main settings of the world</td>
 </tr>
 <tr>
-<td>HEOPlayer</td>
-<td>A component that specifies the initial spawn position of the player</td>
+<td>PlayerSettings</td>
+<td>An object that specifies the initial spawn position of the player</td>
 </tr>
 <tr>
-<td>DespawnHeight</td>
-<td>A component that specifies the height to respawn the player</td>
+<td>DespawnHeightSettings</td>
+<td>An object that specifies the height to respawn the player</td>
 </tr>
 </tbody>
 </table>
+<p>For more details about these settings, see <a href="../VketCloudSettings/Overview.html">Vket Cloud Settings - Overview</a>.</p>
 <div class="admonition note tip">
 <p class="admonition-title">Note</p>
-<p>Preset objects equipped with these components can be called by right clicking in the hierarchy and clicking Add essential Objects for VketCloud.</p>
+<p>Preset objects can be created by right clicking in the hierarchy and clicking Add essential Objects for VketCloud.</p>
 <p><img alt="AddEssentialObjects" src="../../FirstStep/img/AddEssentialObjects.jpg" /></p>
 </div>
 <div class="admonition note question">
@@ -7854,7 +7878,7 @@
 <ul>
 <li>If you are continuously returning to the initial spawn point,</li>
 </ul>
-<p>the issue may be caused by unintentional respawns. Try adjusting the height (y-axis) of DespawnHeight and the position of HEOPlayer.</p>
+<p>the issue may be caused by unintentional respawns. Try adjusting the height (y-axis) of DespawnHeightSettings and the position of PlayerSettings.</p>
 </div>
 
 
