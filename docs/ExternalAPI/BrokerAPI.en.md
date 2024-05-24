@@ -215,6 +215,11 @@ component BrokerAPI
 }
 ```
 
-3\. Build the world to see if API operates as intended.
+3\. Upload the world data to see if API operates as intended.
+
+!!! warning "Testing BrokerAPI implementations"
+    By feature, BrokerAPI will not function on local **Build And Run** results.<br>
+    To test the function, please upload the world data (in private if needed), and access the uploaded world.<br>
+    For instructions on how to upload the world data, please refer to [World upload](../FirstStep/WorldUpload.md).
 
 ![BrokerAPI_Result](img/BrokerAPI_Result.gif)
