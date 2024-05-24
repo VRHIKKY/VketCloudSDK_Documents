@@ -33,6 +33,7 @@
 - External API
   - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/JsVal.html)
 　- [Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/BrokerAPI.html)
+- [HEOCylinderCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOCylinderCollider.html)
 
 ## Edited Pages
 

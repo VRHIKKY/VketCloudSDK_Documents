@@ -33,6 +33,7 @@
 - 外部API連携
   - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ExternalAPI/JsVal.html)
 　- [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ExternalAPI/BrokerAPI.html)
+- [HEOCylinderCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOCylinderCollider.html)
 
 ## 変更されたページ
 
