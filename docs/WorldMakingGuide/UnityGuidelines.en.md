@@ -2,6 +2,31 @@
 
 All world models and assets used in Vket Cloud are set up in Unity. Since not all Unity functions can be used in Vket Cloud, however, adjustments must be made according to the specification limits as below.
 
+## Available Characters
+
+!!! warning "Notes about available characters"
+    If unavailable characters are being used, it may lead to unexpected build errors and malfunctions.
+
+### Object Name / Item Name
+
+Alphabet (lower case and upper case), numbers, _(underscore), -(hyphen), ()(brackets)
+
+### File Name
+
+Alphabet (lower case and upper case), numbers, _(underscore), -(hyphen)
+
+### HeliScript Component Names
+
+Alphabet (lower case and upper case), numbers, _(underscore)
+
+#### Detailed Rules
+
+- 1文字目に使えるのはアルファべット(小文字と大文字)または _(半角アンダーバー)
+
+- 2文字目以降では上記に加えて半角数字も使用できます
+
+---
+
 ## Polygon
 
 Please keep the total number of models in the world to 800,000 triangles or less.
@@ -111,3 +136,31 @@ For instructions on each setup and usage, refer to the pages below.
     Following a certain procedure, the issue causing the default AvatarFile(`Vketchan_v1.6_Mtoon_blendshape`) to be editable may be triggered.<br>
     As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
     As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.
+
+## オーディオファイルのフォーマット
+
+オーディオファイルを使用する場合、以下のフォーマットに従ってください。
+
+| 名称 | 詳細 |
+| ---- | ---- |
+| ファイル形式 | mp3 |
+| サンプリングレート | 44100 Hz |
+| ビットレート | 160 kbps |
+
+!!! note warning
+    BGMは以下の点に注意が必要です。
+
+    - 動画再生時には、動画の音声が優先されます。
+    - 距離減衰には対応していません。
+
+## 動画ファイルのフォーマット
+
+動画ファイルを使用する場合、以下のフォーマットに従ってください。
+
+| 名称 | 詳細 |
+| ---- | ---- |
+| ファイル形式 | .mp4 |
+| 解像度 | 1280x720 H.264 |
+| AAC | 44.1kHz |
+| フレームレート | 29.97 or 30 |
+| プロファイルレベル | 4.1, AAC 44.1kHz, yuv420 |
