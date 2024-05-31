@@ -2,6 +2,31 @@
 
 VketCloudで使用するワールドモデル等はUnityでセットアップします。ただし、Unityの機能がすべて使用できるわけではないため、後述する仕様に合わせて調整をおこなう必要があります。
 
+## 使用可能な文字について
+
+!!! warning "使用可能文字に関する注意"
+    使用可能でない文字が使用されている場合、予期せぬビルドエラーや動作不具合につながるためご注意ください。
+
+### オブジェクト名 / Item名
+
+アルファべット(小文字と大文字)、半角数字、_(半角アンダーバー)、-(半角ハイフン)、()(半角かっこ)
+
+### ファイル名
+
+アルファべット(小文字と大文字)、半角数字、_(半角アンダーバー)、-(半角ハイフン)
+
+### HeliScriptコード内のコンポーネント名
+
+アルファべット(小文字と大文字)、半角数字、_(半角アンダーバー)
+
+#### 細則
+
+- 1文字目に使えるのはアルファべット(小文字と大文字)または _(半角アンダーバー)
+
+- 2文字目以降では上記に加えて半角数字も使用できます
+
+---
+
 ## ポリゴン
 
 ワールドに配置するモデルは、目安として合計80万トライアングル以下にしてください。<br>
@@ -20,7 +45,7 @@ Vket Cloudでは以下のフォーマットのテクスチャ画像が使用で�
 
 また、SDKでは画像の変換ツールとして[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)を用意しています。
 
-!!! caution "Sprite Rendererについて"
+!!! warning "Sprite Rendererについて"
     Vket CloudではUnityの[Sprite Renderer](https://docs.unity3d.com/ja/2019.4/Manual/class-SpriteRenderer.html){target=_blank}に対応しておりません。
 
 ## テクスチャ圧縮
@@ -38,7 +63,7 @@ Vket CloudではUnityのリフレクションプローブを使用すること�
 
 ![Rendering_2](../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg)
 
-!!! caution "Realtime Lightについて"
+!!! warning "Realtime Lightについて"
     Vket CloudではRealtime Modeのライトに対応しておりません。必ずMixedまたはBakedに変更してご使用ください。
 
 ## ライトマップ
@@ -111,7 +136,7 @@ Vket Cloudにてアバターを使用するには、1. [My Vketにてマイア�
 
 2. [プリセットアバターを追加する](../WorldMakingGuide/PresetAvatar.md)
 
-!!! caution "DefaultのAvatarFileが編集できる現象について"
+!!! warning "DefaultのAvatarFileが編集できる現象について"
     特定の手順によって、デフォルトで設定されているAvatarFile(`Vketchan_v1.6_Mtoon_blendshape`)の設定が編集できる現象が確認されています。<br>
     デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
     この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。
@@ -126,7 +151,7 @@ Vket Cloudにてアバターを使用するには、1. [My Vketにてマイア�
 | サンプリングレート | 44100 Hz |
 | ビットレート | 160 kbps |
 
-!!! note caution
+!!! note warning
     BGMは以下の点に注意が必要です。
 
     - 動画再生時には、動画の音声が優先されます。
