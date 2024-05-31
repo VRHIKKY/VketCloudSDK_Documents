@@ -111,6 +111,7 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Added feature change for Player class functions within constructor
     - Added explanation for Nodes
     - Updated instructions according to Ver12.3
+    - Revised description about HeliScript
   - [Class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class.html)
     - Added object instantiation / deletion, detecting instants
   - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_component.html)

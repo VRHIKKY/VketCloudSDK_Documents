@@ -1,6 +1,6 @@
 # HeliScript概要
 
-Vket Cloudでは、HeliScriptというエンジン独自のスクリプトを使用してプログラミングを行うことができます。<br>
+Vket Cloudでは、HeliScriptというエンジン独自の言語を使用してプログラミングを行うことができます。<br>
 HeliScriptを使用すると、[アクション](../Actions/ActionsOverview.md)と比べてより複雑なギミック・挙動を実装できます。
 
 HeliScriptの文法については[基本系](./hs_var.md)から順番に読むことで習得できます。<br>
