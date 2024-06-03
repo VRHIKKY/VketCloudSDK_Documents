@@ -108,6 +108,7 @@ plugins:
             Adding Preset Avatars : プリセットアバターを追加する
             How to Animate Objects: オブジェクトをアニメーションさせる
             How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
+            Keep files with the world data: ワールドに任意のファイルを保持させる
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -228,6 +229,7 @@ nav:
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+    - Keep files with the world data : WorldMakingGuide/FileDeploymentConfig.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
