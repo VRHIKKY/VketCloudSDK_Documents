@@ -21,15 +21,16 @@ Alphabet (lower case and upper case), numbers, _(underscore)
 
 #### Detailed Rules
 
-- 1文字目に使えるのはアルファべット(小文字と大文字)または _(半角アンダーバー)
-
-- 2文字目以降では上記に加えて半角数字も使用できます
+- 1st character must be an alphabet (lower case and upper case) or _(underscore)
+- 2nd character and on can use characters above and numbers
 
 ---
 
 ## Polygon
 
-Please keep the total number of models in the world to 800,000 triangles or less.
+Please keep the total number of models in the world to 800,000 triangles or less.<br>
+When an avatar is placed in the world, the avatar's triangles are counted in the world's total.<br>
+However, this excludes the player avatar's triangles.
 
 ## Texture
 
@@ -137,30 +138,30 @@ For instructions on each setup and usage, refer to the pages below.
     As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
     As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.
 
-## オーディオファイルのフォーマット
+## Audio file format
 
-オーディオファイルを使用する場合、以下のフォーマットに従ってください。
+On using audio files, please follow the format below:
 
-| 名称 | 詳細 |
+| Label | Format |
 | ---- | ---- |
-| ファイル形式 | mp3 |
-| サンプリングレート | 44100 Hz |
-| ビットレート | 160 kbps |
+| File format | .mp3 |
+| Sampling rate | 44100 Hz |
+| Bitrate | 160 kbps |
 
 !!! note warning
-    BGMは以下の点に注意が必要です。
+    World BGM follows the following specifications:
 
-    - 動画再生時には、動画の音声が優先されます。
-    - 距離減衰には対応していません。
+    - When playing a video, the video's sounds will overwrite the BGM.
+    - Distance attenuation is not supported.
 
-## 動画ファイルのフォーマット
+## Video file format
 
-動画ファイルを使用する場合、以下のフォーマットに従ってください。
+On using video files, please follow the format below:
 
-| 名称 | 詳細 |
+| Label | Format |
 | ---- | ---- |
-| ファイル形式 | .mp4 |
-| 解像度 | 1280x720 H.264 |
+| File format | .mp4 |
+| Resolution | 1280x720 H.264 |
 | AAC | 44.1kHz |
-| フレームレート | 29.97 or 30 |
-| プロファイルレベル | 4.1, AAC 44.1kHz, yuv420 |
+| Framerate | 29.97 or 30 |
+| Profile level | 4.1, AAC 44.1kHz, yuv420 |
