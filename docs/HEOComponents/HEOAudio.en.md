@@ -27,7 +27,7 @@ When setting an audio file, please follow the format below:
 
 | Label | Value |
 | ---- | ---- |
-| File format | mp3 |
+| File format | .mp3 |
 | Sampling rate | 44100 Hz |
 | Bit rate | 160 kbps |
 
