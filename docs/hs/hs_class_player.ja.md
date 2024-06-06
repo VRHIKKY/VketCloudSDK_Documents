@@ -172,11 +172,3 @@ ActionListの文字列はSceneファイルに記述する"actions":{}の文字�
 `float GetMoveSpeedupRatio()`
 
 高速移動の倍率を取得します。
-
-
-### SetPresetAvatar
-`bool SetPresetAvatar(int AvatarIndex)`
-
-プリセットアバターに切り替えます。自分自身のPlayerオブジェクトにのみ有効です。
-
-
