@@ -912,6 +912,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#available-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Characters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Available Characters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#object-name-item-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Name / Item Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heliscript-component-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      HeliScript Component Names
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HeliScript Component Names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detailed-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#polygon" class="md-nav__link">
     <span class="md-ellipsis">
       Polygon
@@ -1014,6 +1071,24 @@
   <a href="#avatars" class="md-nav__link">
     <span class="md-ellipsis">
       Avatars
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio file format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video file format
     </span>
   </a>
   
@@ -7971,6 +8046,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#available-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Characters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Available Characters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#object-name-item-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Name / Item Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heliscript-component-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      HeliScript Component Names
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HeliScript Component Names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detailed-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#polygon" class="md-nav__link">
     <span class="md-ellipsis">
       Polygon
@@ -8078,6 +8210,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#audio-file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio file format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-file-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video file format
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8095,8 +8245,27 @@
 
 <h1 id="specification-limits-of-vket-cloud">Specification Limits of Vket Cloud</h1>
 <p>All world models and assets used in Vket Cloud are set up in Unity. Since not all Unity functions can be used in Vket Cloud, however, adjustments must be made according to the specification limits as below.</p>
+<h2 id="available-characters">Available Characters</h2>
+<div class="admonition warning">
+<p class="admonition-title">Notes about available characters</p>
+<p>If unavailable characters are being used, it may lead to unexpected build errors and malfunctions.</p>
+</div>
+<h3 id="object-name-item-name">Object Name / Item Name</h3>
+<p>Alphabet (lower case and upper case), numbers, _(underscore), -(hyphen), ()(brackets)</p>
+<h3 id="file-name">File Name</h3>
+<p>Alphabet (lower case and upper case), numbers, _(underscore), -(hyphen)</p>
+<h3 id="heliscript-component-names">HeliScript Component Names</h3>
+<p>Alphabet (lower case and upper case), numbers, _(underscore)</p>
+<h4 id="detailed-rules">Detailed Rules</h4>
+<ul>
+<li>1st character must be an alphabet (lower case and upper case) or _(underscore)</li>
+<li>2nd character and on can use characters above and numbers</li>
+</ul>
+<hr />
 <h2 id="polygon">Polygon</h2>
-<p>Please keep the total number of models in the world to 800,000 triangles or less.</p>
+<p>Please keep the total number of models in the world to 800,000 triangles or less.<br>
+When an avatar is placed in the world, the avatar's triangles are counted in the world's total.<br>
+However, this excludes the player avatar's triangles.</p>
 <h2 id="texture">Texture</h2>
 <p>On Vket Cloud, textures fitting the format below can be used:</p>
 <ul>
@@ -8197,6 +8366,70 @@ For details, refer to <a href="../AboutVketCloudSDK/OperatingEnvironment.html">O
 As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
 As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.</p>
 </div>
+<h2 id="audio-file-format">Audio file format</h2>
+<p>On using audio files, please follow the format below:</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File format</td>
+<td>.mp3</td>
+</tr>
+<tr>
+<td>Sampling rate</td>
+<td>44100 Hz</td>
+</tr>
+<tr>
+<td>Bitrate</td>
+<td>160 kbps</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note warning">
+<p class="admonition-title">Note</p>
+<p>World BGM follows the following specifications:</p>
+<ul>
+<li>When playing a video, the video's sounds will overwrite the BGM.</li>
+<li>Distance attenuation is not supported.</li>
+</ul>
+</div>
+<h2 id="video-file-format">Video file format</h2>
+<p>On using video files, please follow the format below:</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File format</td>
+<td>.mp4</td>
+</tr>
+<tr>
+<td>Resolution</td>
+<td>1280x720 H.264</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>44.1kHz</td>
+</tr>
+<tr>
+<td>Framerate</td>
+<td>29.97 or 30</td>
+</tr>
+<tr>
+<td>Profile level</td>
+<td>4.1, AAC 44.1kHz, yuv420</td>
+</tr>
+</tbody>
+</table>
 
 
 
