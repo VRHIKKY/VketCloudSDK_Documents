@@ -2,9 +2,35 @@
 
 All world models and assets used in Vket Cloud are set up in Unity. Since not all Unity functions can be used in Vket Cloud, however, adjustments must be made according to the specification limits as below.
 
+## Available Characters
+
+!!! warning "Notes about available characters"
+    If unavailable characters are being used, it may lead to unexpected build errors and malfunctions.
+
+### Object Name / Item Name
+
+Alphabet (lower case and upper case), numbers, _(underscore), -(hyphen), ()(brackets)
+
+### File Name
+
+Alphabet (lower case and upper case), numbers, _(underscore), -(hyphen)
+
+### HeliScript Component Names
+
+Alphabet (lower case and upper case), numbers, _(underscore)
+
+#### Detailed Rules
+
+- 1st character must be an alphabet (lower case and upper case) or _(underscore)
+- 2nd character and on can use characters above and numbers
+
+---
+
 ## Polygon
 
-Please keep the total number of models in the world to 800,000 triangles or less.
+Please keep the total number of models in the world to 800,000 triangles or less.<br>
+When an avatar is placed in the world, the avatar's triangles are counted in the world's total.<br>
+However, this excludes the player avatar's triangles.
 
 ## Texture
 
@@ -111,3 +137,31 @@ For instructions on each setup and usage, refer to the pages below.
     Following a certain procedure, the issue causing the default AvatarFile(`Vketchan_v1.6_Mtoon_blendshape`) to be editable may be triggered.<br>
     As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
     As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.
+
+## Audio file format
+
+On using audio files, please follow the format below:
+
+| Label | Format |
+| ---- | ---- |
+| File format | .mp3 |
+| Sampling rate | 44100 Hz |
+| Bitrate | 160 kbps |
+
+!!! note warning
+    World BGM follows the following specifications:
+
+    - When playing a video, the video's sounds will overwrite the BGM.
+    - Distance attenuation is not supported.
+
+## Video file format
+
+On using video files, please follow the format below:
+
+| Label | Format |
+| ---- | ---- |
+| File format | .mp4 |
+| Resolution | 1280x720 H.264 |
+| AAC | 44.1kHz |
+| Framerate | 29.97 or 30 |
+| Profile level | 4.1, AAC 44.1kHz, yuv420 |

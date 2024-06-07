@@ -51,6 +51,9 @@
   - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/WorldUpload.html)
     - Edited how-to on operating World Uploader
 - World Making Guide
+  - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/UnityGuidelines.html)
+    - Added specification on total triangular polygon count in world, audio, and video files
+    - Added specification on available characters
   - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Collider.html)
     - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
