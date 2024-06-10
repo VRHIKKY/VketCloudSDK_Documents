@@ -372,6 +372,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v13.x:
+        - v13.1: releasenote/releasenote-13.1.md
         - v13.0: releasenote/releasenote-13.0.md
     - v12.x:
         - v12.3: releasenote/releasenote-12.3.md
@@ -435,6 +436,7 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v13.x:
+        - v13.1: changelog/changelog-13.1.md
         - v13.0: changelog/changelog-13.0.md
     - v12.x:
         - v12.3: changelog/changelog-12.3.md
