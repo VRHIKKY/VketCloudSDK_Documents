@@ -2,8 +2,8 @@
 
 ## 概要
 
-ビルドもしくはアップロードするワールドへ、ユーザーが指定する任意のファイルをワールドデータ内に保持させることが可能です。
-当機能は、任意のファイルをシーンの設定以外に設定したい場合に便利です。
+ビルドもしくはアップロードするワールドへ、ユーザーが指定する任意のファイルをワールドデータ内に保持させることが可能です。<br>
+当機能は、任意のファイルをシーンの設定以外に設定したい場合に便利です。<br>
 たとえば、ブラウザでワールドをロード後、HeliScriptを用いて動的にスクリプトの処理や各種データの内容を差し替えたい場合などにお使い頂けます。
 
 保持対象のファイルやフォルダーは、release/data/配下に配置されます。
@@ -12,7 +12,6 @@
 | ----   | ---- |
 | SceneFiles | data/Scene |
 | HeliScript | data/HeliScript |
-| JavaScript | data/ |
 | Avatars(vrm) | data/Avatar |
 | Motions(hem) | data/Motion |
 | Fields(Heoもしくはglb) | data/Fields |
@@ -27,7 +26,7 @@
 
     ![FileDeploymentConfig](img/filedeploymentconfig_01.jpg)
 
-1. `FileDeploymetnConfig.asset`が生成されます。
+1. `FileDeploymentConfig.asset`が生成されます。
 
     ![FileDeploymentConfig](img/filedeploymentconfig_02.jpg)
 
@@ -42,6 +41,6 @@
 
 1. `Build And Run`もしくはアップロードすることで、保持したいデータが同時にビルドされます。
 
-!!! note ファイルの作成方法について
+!!! note "ファイルの作成方法について"
     1.の手順の際、Base Settingの`Create File Deployment Config`を押し、「.asset」のファイルをAssets内に作成する方法でも作成可能です。
     ![FileDeploymentConfig](img/filedeploymentconfig_05.jpg)
