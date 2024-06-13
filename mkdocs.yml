@@ -137,8 +137,8 @@ plugins:
             World Optimization - Overview: ワールドの軽量化方法：概要
             Occlusion Culling: オクルージョンカリング
             Optimization for Smartphones: スマートフォンのためのワールド軽量化
-            # HEOComponents
-            HEOComponents: HEOコンポーネント
+            # VKCComponents
+            VKCComponents: VKCコンポーネント
             # アクション
             Actions: アクションについて
             Actions Overview: アクションの概要
@@ -259,40 +259,43 @@ nav:
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
   - Texture Compression : WorldOptimization/TextureCompression.md
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
-- HEOComponents:
-    - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
+- VKCComponents:
+  - VKCSetting:
+    - HEONameplate: HEOComponents/HEONameplate.md
+    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
+    - HEOPlayer: HEOComponents/HEOPlayer.md
+    - HEOSpawn: HEOComponents/HEOSpawn.md
+  - VKCItem:
     - HEOActivity: HEOComponents/HEOActivity.md
-    - HEOAnimation: HEOComponents/HEOAnimation.md
     - HEOAreacollider: HEOComponents/HEOAreacollider.md
     - HEOAudio: HEOComponents/HEOAudio.md
     - HEOBackgroundTexture: HEOComponents/HEOBackgroundTexture.md
     - HEOCamera: HEOComponents/HEOCamera.md
-    - HEOCollider: HEOComponents/HEOCollider.md
-    - HEOClickGuide: HEOComponents/HEOClickGuide.md
-    - HEOCylinderCollider: HEOComponents/HEOCylinderCollider.md
-    - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
     - HEOField: HEOComponents/HEOField.md
+    - HEOObject: HEOComponents/HEOObject.md
+    - HEOParticle: HEOComponents/HEOParticle.md
+    - HEOPlane: HEOComponents/HEOPlane.md
+    - HEOSpot: HEOComponents/HEOSpot.md
+    - HEOTextPlane: HEOComponents/HEOTextPlane.md
+  - VKCNode:
+    - HEOAnimation: HEOComponents/HEOAnimation.md
+    - HEOCollider: HEOComponents/HEOCollider.md
+    - HEOCylinderCollider: HEOComponents/HEOCylinderCollider.md
     #- HEOInfo: HEOComponents/HEOInfo.md #整備中
     - HEOLODLevel: HEOComponents/HEOLODLevel.md
     - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
     - HEOMirror: HEOComponents/HEOMirror.md
-    - HEONameplate: HEOComponents/HEONameplate.md
-    - HEOObject: HEOComponents/HEOObject.md
-    #- HEOObjectType: HEOComponents/HEOObjectType.md #整備中
-    - HEOParticle: HEOComponents/HEOParticle.md
-    - HEOPlane: HEOComponents/HEOPlane.md
-    - HEOPlayer: HEOComponents/HEOPlayer.md
-    - HEOProperty: HEOComponents/HEOProperty.md
     - HEOReflectionProbe : HEOComponents/HEOReflectionProbe.md
-    - HEOScript: HEOComponents/HEOScript.md
     - HEOShadow: HEOComponents/HEOShadow.md
+    #- HEOObjectType: HEOComponents/HEOObjectType.md #整備中
     - HEOShowFlag : HEOComponents/HEOShowFlag.md
-    - HEOSpawn: HEOComponents/HEOSpawn.md
-    - HEOSpot: HEOComponents/HEOSpot.md
-    - HEOTextPlane: HEOComponents/HEOTextPlane.md
     - HEOUVScroller: HEOComponents/HEOUVScroller.md
     - HEOVideoTrigger: HEOComponents/HEOVideoTrigger.md
-    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
+  - VKCAttribute:
+    - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
+    - HEOClickGuide: HEOComponents/HEOClickGuide.md
+    - HEOProperty: HEOComponents/HEOProperty.md
+    - HEOScript: HEOComponents/HEOScript.md
 - Actions: 
     #- ActionNodeGraph: Actions/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Actions/ActionsOverview.md
