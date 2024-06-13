@@ -12,13 +12,13 @@
 | ----   | ---- |
 | SceneFiles | data/Scene |
 | HeliScript | data/HeliScript |
-| Avatars(vrm) | data/Avatar |
-| Motions(hem) | data/Motion |
-| Fields(Heoもしくはglb) | data/Fields |
-| Sounds(.mp3) | data/Sound |
-| Videos(mp4) | data/Video |
-| Images(.png) | data/Image |
-| Activity json(json) | data/Activity |
+| Avatars (vrm) | data/Avatar |
+| Motions (hem) | data/Motion |
+| Fields (Heoもしくはglb) | data/Fields |
+| Sounds (.mp3) | data/Sound |
+| Videos (mp4) | data/Video |
+| Images (.png) | data/Image |
+| Activity json (json) | data/Activity |
 
 ## 使い方
 
@@ -35,12 +35,12 @@
 
     ![FileDeploymentConfig](img/filedeploymentconfig_03.jpg)
 
-1. Base Settingの`File Deployment Mode`を`Custom`に変更したのち、対象のScriptable Objectを設定します。
+1. [BasicSettings](../VketCloudSettings/BasicSettings.md)の`File Deployment Mode`を`Custom`に変更したのち、3. にて設定したFileDeploymentConfigを設定します。
 
     ![FileDeploymentConfig](img/filedeploymentconfig_04.jpg)
 
-1. `Build And Run`もしくはアップロードすることで、保持したいデータが同時にビルドされます。
+1. `Build And Run`を実行するか、もしくはワールドをアップロードすることで、保持したいデータが同時にビルドされます。
 
 !!! note "ファイルの作成方法について"
-    1.の手順の際、Base Settingの`Create File Deployment Config`を押し、「.asset」のファイルをAssets内に作成する方法でも作成可能です。
+    1.の手順の際、[BasicSettings](../VketCloudSettings/BasicSettings.md)の`Create File Deployment Config`を押し、`FileDeploymentConfig.asset`ファイルをAssets内に作成する方法でも作成可能です。
     ![FileDeploymentConfig](img/filedeploymentconfig_05.jpg)

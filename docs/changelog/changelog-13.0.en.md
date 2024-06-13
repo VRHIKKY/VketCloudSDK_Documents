@@ -3,7 +3,7 @@
 ## Added Pages
 
 - World Making Guide
-  - [ワールドに任意のファイルを保持させる](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/FileDeploymentConfig.html)
+  - [File Deployment Config](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/FileDeploymentConfig.html)
 
 ## Edited Pages
 
