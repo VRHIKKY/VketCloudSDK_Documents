@@ -61,9 +61,7 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 ## Motion
 
 各ユーザーが使用できるモーションを設定する項目です。Vket Cloudでは任意のモーションを追加することができ、`.hem`という独自のファイル形式を採用しています。<br>
-[アニメーションファイルを用意し差し替える](../HEMAnimationConverter/AnimationConverter.md)ことで待機・歩行などのアバターのアニメーションを差し替えることができます。<br>
-
-また、出来れば、ユーザーに、Turn Right, Turn Left, Turn Backの切り返しモーションを使いたい場合は、それを手動で設定してもらう。そのためのセクションが欲しいです。
+[アニメーションファイルを用意し差し替える](../HEMAnimationConverter/AnimationConverter.md)ことで待機・歩行や、振り向く・切り返すなどのアバターのアニメーションを差し替えることができます。<br>
 
 ![AvatarFile_2](img/AvatarFile_3.jpg)
 
