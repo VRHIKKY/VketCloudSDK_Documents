@@ -18,7 +18,7 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 !!! note "Avatar Settingsの項目について"
     Avatar Settingsの設定項目は[Vket Cloud Settings](../VketCloudSettings/Overview.md)のSetting modeを`Advanced`へ切り替える事で、`Avatar Settings`のオブジェクトがHierarchy上に現れ、設定変更が可能になります。
 
-なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。+
+なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。
 
 ![AvatarFile_Result](img/AvatarFile_Result.jpg)
 
@@ -56,7 +56,6 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 | .hrm Png | [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_png.hrmファイルを指定します。 |
 | .hrm Astc |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_astc.hrmファイルを指定します。|
 | .hrm Etc 2 |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_etc.hrmファイルを指定します。 |
-| Avatar Type | CommonまたはMaleから選択します。＜何が違う？＞ |
 
 ## Motion
 
