@@ -7,45 +7,65 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 
 | 名称 | 機能 |
 | ---- | ---- |
-| Thumbnail(Japanese) | 言語設定が日本語の際のアバターのサムネイルを設定します。<br> 設定されたサムネイルはワールド内設定画面にて使用されます。|
-| Thumbnail(English) | 言語設定が英語の際のアバターのサムネイルを設定します。<br> 設定されたサムネイルはワールド内設定画面にて使用されます。|
-
-サムネイルは、ワールド内設定画面のプリセットアバターのサムネイルとして以下のように使用されます。<br>
-また、設定画面でのアバターの表示の順番は[VketCloudSettings > Avatar Settings > Avatar Setting > Avatar File](../VketCloudSettings/AvatarSettings.md)にて設定された順番で表示されます。<br>
-
-!!! note "Avatar Settingsの項目について"
-    Avatar Settingsの設定項目は[Vket Cloud Settings](../VketCloudSettings/Overview.md)のSetting modeを`Advanced`へ切り替える事で、`Avatar Settings`のオブジェクトがHierarchy上に現れ、設定変更が可能になります。
-
-なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。
-
-![AvatarFile_Result](img/AvatarFile_Result.jpg)
-
-## .vrm
-
-初期設定で表示するVRM形式のアバターを指定する項目です。
-
-![AvatarFile_1](img/AvatarFile_1.jpg)
-
-| 名称 | 機能 |
-| ---- | ---- |
-| .vrm | アバターに使用するモデルを設定します。 |
-| Height | アバターのカメラ基準位置を設定します。0にすると、足元を中心にカメラが追従します。 |
-| Hrm Png | [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_png.hrmファイルを指定します。 |
-| Hrm Astc |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_astc.hrmファイルを指定します。|
-| Hrm Etc 2 |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_etc.hrmファイルを指定します。 |
-| Hrm Dxt |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_dxt.hrmファイルを指定します。 |
+| Thumbnail(Japanese) | 言語設定が日本語の際のアバターのサムネイルを設定します。  <br>設定されたサムネイルはワールド内設定画面にて使用されます。 |
+| Thumbnail(English) | 	言語設定が英語の際のアバターのサムネイルを設定します。<br>設定されたサムネイルはワールド内設定画面にて使用されます。 |
 
 !!! note "テクスチャ圧縮について"
     テクスチャ圧縮ツールについては、サーバー側で自動圧縮を行うために将来のバージョンでの廃止が予定されております。<br>
     代替の軽量化手段として、元のテクスチャサイズを変更する方法がSDKToolとして用意されています。<br>
     詳しくは[テクスチャ圧縮](../WorldOptimization/TextureCompression.md)をご確認ください。
 
+!!! note "Avatar Settingsの項目について"
+    Avatar Settingsの設定項目は[Vket Cloud Settings](../VketCloudSettings/Overview.md)のSetting modeを`Advanced`へ切り替える事で、`Avatar Settings`のオブジェクトがHierarchy上に現れ、設定変更が可能になります。
+
+なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。+
+
+![AvatarFile_Result](img/AvatarFile_Result.jpg)
+
+## Avatar
+
+アバターデータを`.vrm`または`.hrm`から選択できます。
+
+サムネイルは、ワールド内設定画面のプリセットアバターのサムネイルとして以下のように使用されます。<br>
+また、設定画面でのアバターの表示の順番は[VketCloudSettings > Avatar Settings > Avatar Setting > Avatar File](../VketCloudSettings/AvatarSettings.md)にて設定された順番で表示されます。<br>
+
+### .vrm
+
+アバターデータに`.vrm`を指定する場合、以下の項目が設定可能です。
+
+![AvatarFile_1](img/AvatarFile_1.jpg)
+
+| 名称 | 機能 |
+| ---- | ---- |
+| .vrm | アバターに使用するモデルを設定します。 |
+| Avatar Type | アバターのエモートのプリセットを選択する項目です。現在は`Common`のみが選択可能となっております。 |
+| Thumbnail(Japanese) | 言語設定が日本語の際のアバターのサムネイルを設定します。
+設定されたサムネイルはワールド内設定画面にて使用されます。 |
+| Thumbnail(English) | アバターに使用するモデルを設定します。 |
+
+なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。
+
+### .hrm
+
+アバターデータに`.hrm`を指定する場合、以下の項目が設定可能です。
+
+![AvatarFile_1](img/AvatarFile_2.jpg)
+
+| 名称 | 機能 |
+| ---- | ---- |
+| .hrm Png | [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_png.hrmファイルを指定します。 |
+| .hrm Astc |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_astc.hrmファイルを指定します。|
+| .hrm Etc 2 |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_etc.hrmファイルを指定します。 |
+| Avatar Type | CommonまたはMaleから選択します。＜何が違う？＞ |
+
 ## Motion
 
 各ユーザーが使用できるモーションを設定する項目です。Vket Cloudでは任意のモーションを追加することができ、`.hem`という独自のファイル形式を採用しています。<br>
 [アニメーションファイルを用意し差し替える](../HEMAnimationConverter/AnimationConverter.md)ことで待機・歩行などのアバターのアニメーションを差し替えることができます。<br>
 
-![AvatarFile_2](img/AvatarFile_2.jpg)
+また、出来れば、ユーザーに、Turn Right, Turn Left, Turn Backの切り返しモーションを使いたい場合は、それを手動で設定してもらう。そのためのセクションが欲しいです。
+
+![AvatarFile_2](img/AvatarFile_3.jpg)
 
 | 名称 | 初期値 | 機能 |
 | ----   | ---- | ---- |
@@ -55,18 +75,6 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 | Use Action | false | モーション再生時に実行するアクションを設定します。<br> 具体的には、本項目を有効にした上で`Setting`から実行するアクションを設定します。|
 | Draw Circle Shadow | true | モーション再生時に丸影を描画するかどうか設定します。 |
 | Collision Detection | true | モーション再生時に衝突判定をおこなうかどうか設定します。 |
-
-## Emotion
-
-アバターが使用できるエモートを設定する項目です。Vket Cloudでは任意のエモートを追加することができ、`.hem`という独自のファイル形式を採用しています。
-
-![AvatarFile_3](img/AvatarFile_3.jpg)
-
-| 名称 | 初期値 | 機能 |
-| ----   | ---- | ---- |
-| .hem |  | アバターが使用するエモートを指定します。 |
-| loop | false | アニメーションをループ再生するか設定します。 |
-| useAction |   | エモート再生開始時に実行するアクションを設定します。<br> 具体的には、本項目を有効にした上で`Setting`から実行するアクションを設定します。|
 
 ## Objects
 
