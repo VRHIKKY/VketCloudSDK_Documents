@@ -8,12 +8,16 @@ For example, when a world is loaded on the browser, this configuration can be dy
 
 The included files and folders will be deployed under release/data/.
 
+When `Build And Run`,  the included files and folders will be deployed under `release/data/`.
+When `Upload to Remote Server`, the included files and folders will be deployed under `upload/data/`.
+
 | Label | Stored data |
 | ----   | ---- |
 | SceneFiles | data/Scene |
 | HeliScript | data/HeliScript |
 | Avatars (vrm) | data/Avatar |
 | Motions (hem) | data/Motion |
+| Particles (hep) | data/Particles |
 | Fields (Heo or glb) | data/Fields |
 | Sounds (.mp3) | data/Sound |
 | Videos (mp4) | data/Video |

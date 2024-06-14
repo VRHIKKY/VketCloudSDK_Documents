@@ -6,7 +6,8 @@
 当機能は、任意のファイルをシーンの設定以外に設定したい場合に便利です。<br>
 たとえば、ブラウザでワールドをロード後、HeliScriptを用いて動的にスクリプトの処理や各種データの内容を差し替えたい場合などにお使い頂けます。
 
-保持対象のファイルやフォルダーは、release/data/配下に配置されます。
+`Build And Run`時には保持対象のファイルやフォルダーは、`release/data/`配下に配置されます。  
+`Upload to Remote Server`時には、保持対象のファイルやフォルダーは、`upload/data/`配下に配置されます。
 
 | ラベル | 格納できるデータ |
 | ----   | ---- |
@@ -14,6 +15,7 @@
 | HeliScript | data/HeliScript |
 | Avatars (vrm) | data/Avatar |
 | Motions (hem) | data/Motion |
+| Particles (hep) | data/Particles |
 | Fields (Heoもしくはglb) | data/Fields |
 | Sounds (.mp3) | data/Sound |
 | Videos (mp4) | data/Video |
