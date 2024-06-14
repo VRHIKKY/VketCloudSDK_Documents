@@ -8,8 +8,8 @@ For example, when a world is loaded on the browser, this configuration can be dy
 
 The included files and folders will be deployed under release/data/.
 
-When `Build And Run`,  the included files and folders will be deployed under `release/data/`.
-When `Upload to Remote Server`, the included files and folders will be deployed under `upload/data/`.
+When committing `Build And Run`,  the included files and folders will be deployed under `release/data/`.
+When committing `Upload to Remote Server`, the included files and folders will be deployed under `upload/data/`.
 
 | Label | Stored data |
 | ----   | ---- |
