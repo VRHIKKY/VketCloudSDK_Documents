@@ -10,11 +10,6 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 | Thumbnail(Japanese) | 言語設定が日本語の際のアバターのサムネイルを設定します。  <br>設定されたサムネイルはワールド内設定画面にて使用されます。 |
 | Thumbnail(English) | 	言語設定が英語の際のアバターのサムネイルを設定します。<br>設定されたサムネイルはワールド内設定画面にて使用されます。 |
 
-!!! note "テクスチャ圧縮について"
-    テクスチャ圧縮ツールについては、サーバー側で自動圧縮を行うために将来のバージョンでの廃止が予定されております。<br>
-    代替の軽量化手段として、元のテクスチャサイズを変更する方法がSDKToolとして用意されています。<br>
-    詳しくは[テクスチャ圧縮](../WorldOptimization/TextureCompression.md)をご確認ください。
-
 !!! note "Avatar Settingsの項目について"
     Avatar Settingsの設定項目は[Vket Cloud Settings](../VketCloudSettings/Overview.md)のSetting modeを`Advanced`へ切り替える事で、`Avatar Settings`のオブジェクトがHierarchy上に現れ、設定変更が可能になります。
 
@@ -38,10 +33,6 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 | 名称 | 機能 |
 | ---- | ---- |
 | .vrm | アバターに使用するモデルを設定します。 |
-| Avatar Type | アバターのエモートのプリセットを選択する項目です。現在は`Common`のみが選択可能となっております。 |
-| Thumbnail(Japanese) | 言語設定が日本語の際のアバターのサムネイルを設定します。
-設定されたサムネイルはワールド内設定画面にて使用されます。 |
-| Thumbnail(English) | アバターに使用するモデルを設定します。 |
 
 なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。
 
@@ -56,6 +47,11 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 | .hrm Png | [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_png.hrmファイルを指定します。 |
 | .hrm Astc |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_astc.hrmファイルを指定します。|
 | .hrm Etc 2 |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_etc.hrmファイルを指定します。 |
+
+!!! note "テクスチャ圧縮について"
+    テクスチャ圧縮ツールについては、サーバー側で自動圧縮を行うために将来のバージョンでの廃止が予定されております。<br>
+    代替の軽量化手段として、元のテクスチャサイズを変更する方法がSDKToolとして用意されています。<br>
+    詳しくは[テクスチャ圧縮](../WorldOptimization/TextureCompression.md)をご確認ください。
 
 ## Motion
 
