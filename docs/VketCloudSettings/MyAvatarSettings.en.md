@@ -32,6 +32,12 @@ To edit motions for preset avatars in world, edit the [Avatar File](../WorldMaki
 
 ---
 
+!!! note "About Emotion function"
+    If you want to use `Emotion` function, please use SDK12.3.4 or earlier versions.<br>
+    `Emotion` function is no longer available after SDK 13.0.
+
+---
+
 ## Objects
 
 ![MyAvatarSettings_3](img/MyAvatarSettings_3.jpg)

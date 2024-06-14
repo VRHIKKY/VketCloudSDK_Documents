@@ -3,6 +3,10 @@
 AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvatar.md)などのために使用するファイルです。<br>
 本ファイルにはVket Cloud上でアバターを動作させるための情報を設定します。
 
+!!! note "Emotion機能について"
+    `Emotion`機能をご使用になる場合は、SDK12.3.4までのバージョンをご利用ください。<br>
+    SDK13.0より新しいバージョンでは`Emotion`機能はお使い頂けませんのでご了承ください。
+
 ## 一般情報
 
 | 名称 | 機能 |
@@ -55,18 +59,6 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 | Use Action | false | モーション再生時に実行するアクションを設定します。<br> 具体的には、本項目を有効にした上で`Setting`から実行するアクションを設定します。|
 | Draw Circle Shadow | true | モーション再生時に丸影を描画するかどうか設定します。 |
 | Collision Detection | true | モーション再生時に衝突判定をおこなうかどうか設定します。 |
-
-## Emotion
-
-アバターが使用できるエモートを設定する項目です。Vket Cloudでは任意のエモートを追加することができ、`.hem`という独自のファイル形式を採用しています。
-
-![AvatarFile_3](img/AvatarFile_3.jpg)
-
-| 名称 | 初期値 | 機能 |
-| ----   | ---- | ---- |
-| .hem |  | アバターが使用するエモートを指定します。 |
-| loop | false | アニメーションをループ再生するか設定します。 |
-| useAction |   | エモート再生開始時に実行するアクションを設定します。<br> 具体的には、本項目を有効にした上で`Setting`から実行するアクションを設定します。|
 
 ## Objects
 

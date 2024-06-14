@@ -32,6 +32,12 @@ MyAvatarSettingsでは、ワールド内における[マイアバター](../Abou
 
 ---
 
+!!! note "Emotion機能について"
+    `Emotion`機能をご使用になる場合は、SDK12.3.4までのバージョンをご利用ください。<br>
+    SDK13.0より新しいバージョンでは`Emotion`機能はお使い頂けませんのでご了承ください。
+
+---
+
 ## Objects設定
 
 ![MyAvatarSettings_3](img/MyAvatarSettings_3.jpg)
