@@ -259,6 +259,9 @@ nav:
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
   - Texture Compression : WorldOptimization/TextureCompression.md
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
+- VKCComponents:
+  - VKCNode:
+    - VKCNodeAlphaAnimation: VKCComponents/VKCNode/VKCNodeAlphaAnimation.md
 - HEOComponents:
     - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
     - HEOActivity: HEOComponents/HEOActivity.md
