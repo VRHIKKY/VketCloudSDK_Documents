@@ -95,14 +95,14 @@ plugins:
             World Making Guide: ワールド制作ガイド
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
-            HEOExporter: .heoファイルについて
-            HEOExporter Tutorial: .heoファイルを出力する
+            Exporter: .heoファイルについて
+            Export Field Tutorial: .heoファイルを出力する
             Reflection Probe: リフレクションプローブ
             Setting up a Skybox: スカイボックス設定
             Texture Compression: テクスチャ圧縮
             How to use Colliders / Tips: コライダーの使い方 / Tips
             Physics Engine: 物理エンジンの使い方
-            Tips on using HEOField: HEOFieldの使い方
+            Tips on using VKC Item Field: VKC Item Fieldの使い方
             Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
             Mesh Collider: メッシュコライダーについて
             Adding Preset Avatars : プリセットアバターを追加する
@@ -129,7 +129,7 @@ plugins:
             World Editing Tips: 編集のためのTips
             Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
             Using EditorOnly Tags: EditorOnlyタグの使用方法
-            Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
+            Editing Multiple VKCComponents: 複数のVKCコンポーネントの一括編集
             Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
             Build Options: ビルド時のオプション
             # 軽量化
@@ -157,7 +157,7 @@ plugins:
             Operator: 演算子
             Class: クラス
             Components / Callback functions: コンポーネント / コールバック関数
-            Item Types and HEOComponents: Itemの種類 / HEOComponentとの対応一覧
+            Item Types and VKCComponents: Itemの種類 / VKCComponentとの対応一覧
             Built-in Classes And Functions: 組み込みクラス・関数
             Vector3: Vector3クラス
             Quaternion: Quaternionクラス
@@ -221,7 +221,7 @@ nav:
     - Setting up a Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
-    - Tips on using HEOField: WorldMakingGuide/HEOFieldTips.md
+    - Tips on using VKC Item Field: WorldMakingGuide/HEOFieldTips.md
     - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
@@ -238,7 +238,7 @@ nav:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
     - Debug Mode: WorldEditingTips/DebugMode.md
-    - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
+    - Export Field Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :
       - Particle Editor - Overview : particleeditor/pe_about_particleeditor.md
@@ -251,7 +251,7 @@ nav:
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
-  - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
+  - Editing Multiple VKCComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
   - Build Options: WorldEditingTips/BuildOptions.md
 - World Optimization: 
@@ -349,7 +349,7 @@ nav:
         - Delegate: hs/hs_delegate.md
     - Class: hs/hs_class.md
     - Components / Callback functions: hs/hs_component.md
-    - Item Types and HEOComponents: hs/hs_item_types_functions.md
+    - Item Types and VKCComponents: hs/hs_item_types_functions.md
     - Built-in Classes And Functions:
         - Vector3: hs/hs_struct_vector3.md
         - Quaternion: hs/hs_struct_quaternion.md
