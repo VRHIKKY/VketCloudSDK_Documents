@@ -25,7 +25,7 @@ Projectウィンドウ(Assetsなどがあるところ)で右クリックして�
 
 HeliScriptファイルを追加したら、次はシーンにHeliScriptの設定を行います。<pr>
 HeliScriptは[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)コンポーネントを使用してシーン内に登場させます。
-Inspector画面にてAdd Component > HEOScriptと選択してコンポーネントのアタッチを行います。
+Inspector画面にてAdd Component > VKC Attribute Scriptと選択してコンポーネントのアタッチを行います。
 
 [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)コンポーネントでは実行したいHeliScriptファイルを選びます。<br>
 メニュー右の「Select」を選択するとHeliScriptの一覧が出現するため、使いたいHeliScriptを選択します。
@@ -68,7 +68,7 @@ component HelloWorld
 
 ![hs_overview_5](img/hs_overview_5.jpg)
 
-## HEOScriptの配置・オブジェクトの参照について
+## VKC Attribute Scriptの配置・オブジェクトの参照について
 
 [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)をアタッチ可能なGameObjectは、スクリプトの対象となる[VKC Item Field](../VKCComponents/VKCItemField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
 詳しいHeliScriptの配置方法は[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)をご確認ください。

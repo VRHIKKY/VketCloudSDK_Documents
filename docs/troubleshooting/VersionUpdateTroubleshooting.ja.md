@@ -56,18 +56,18 @@ Missingになったコンポーネントについては該当のコンポーネ�
 
 以下のコンポーネントについてMissingになる可能性を確認しております：
 
-- VKCRotateAnimation/HEO Animation
-- VKC Node Collider/HEO Collider
-- VKC Node Cylinder Collider/HEO Cylinder Collider
-- VKC Node Ibl Cube Map/HEO lbl Cube Map
-- VKC Node Blendshape Translator/HEO Info
-- VKC Node Mesh Collider/HEO Mesh Collider
-- VKC Node Mirror/HEO Mirror
-- VKC Node Reflection Probe Type/HEO Object Type
+- VKC Node Rotate Animation/HEOAnimation
+- VKC Node Collider/HEOCollider
+- VKC Node Cylinder Collider/HEOCylinderCollider
+- HEOIblCubeMap
+- VKC Node Blendshape Translator/HEOInfo
+- VKC Node Mesh Collider/HEOMeshCollider
+- VKC Node Mirror/HEOMirror
+- VKC Node Reflection Probe Type/HEOObjectType
 - HEO Reflection Probe
-- VKC Node/HEO Shadow
-- VKC Node LOD Level/HEO LOD Level
-- VKC Node UV Scroller/HEO UV Scroller
+- VKC Node Shadow/HEOShadow
+- VKC Node LOD Level/HEOLODLevel
+- VKC Node UV Scroller/HEOUVScroller
 
 !!! note caution
     Ver5.4からVer9.3へのアップデート時においてはHEOWorldSetting > Avatars > Avatar Fileの設定が欠落する恐れがあるため、欠落している場合は再設定をお願いいたします。

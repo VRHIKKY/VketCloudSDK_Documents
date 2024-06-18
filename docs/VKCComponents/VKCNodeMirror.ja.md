@@ -2,7 +2,7 @@
 
 ![HEOMirror_1](img/HEOMirror_1.jpg)
 
-HEOMirrorはQuadを使用して鏡のような挙動を再現するために設置します。
+VKC Node MirrorはQuadを使用して鏡のような挙動を再現するために設置します。
 
 ![HEOMirror_2](img/HEOMirror_2.jpg)
 
@@ -40,7 +40,7 @@ Shaderは画像を入れることが出来たらUnlit/Textureでなくても動�
 
 ![HEOMirror_6](img/HEOMirror_6.jpg)
 
-QuadにHEOMirrorをアタッチします。Enable Mirrorはチェックを入れたままにします。
+QuadにVKC Node Mirrorをアタッチします。Enable Mirrorはチェックを入れたままにします。
 
 この状態でビルドすることで、該当のオブジェクトがMirrorになります。
 
@@ -63,7 +63,7 @@ Standardシェーダーなど、色を付けることができるシェーダー
 
 ![HEOMirror_10](img/HEOMirror_10.jpg)
 
-### HEOMirrorをアタッチしたオブジェクトと同じマテリアルを別オブジェクトに用いた場合
+### VKC Node Mirrorをアタッチしたオブジェクトと同じマテリアルを別オブジェクトに用いた場合
 
 ビデオ再生と異なり、マテリアルに鏡像を映すのではなく、VKC Node Mirrorがアタッチされたもののみが鏡になります。
 

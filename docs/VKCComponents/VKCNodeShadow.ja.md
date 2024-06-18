@@ -34,7 +34,7 @@ VKC Node Shadowは、動的影(シャドウマップ)を設定するために使
 
 !!! note caution
         VKC Node Shadowで動的影が出力されるのは、VKC Node Shadowをアタッチしたオブジェクトのみになります。<br>
-        [HEOWorldSetting](HEOWorldSetting.md)にて`Normal Shadow Map`が有効になっている場合、HEOShadowがアタッチされていないオブジェクトは影を表示しない + 影が投影されない状態となります。
+        [HEOWorldSetting](HEOWorldSetting.md)にて`Normal Shadow Map`が有効になっている場合、VKC Node Shadowがアタッチされていないオブジェクトは影を表示しない + 影が投影されない状態となります。
 
 また、`Shadow Reciever`にチェックが入っていないオブジェクトの場合は影が投影されなくなるためご注意ください。
 

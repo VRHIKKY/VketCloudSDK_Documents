@@ -2,7 +2,7 @@
 
 ![HEOMirror_1](img/HEOMirror_1.jpg)
 
-HEOMirror is placed with a Quad to implement a pseudo-mirror.
+VKC Node Mirror is placed with a Quad to implement a pseudo-mirror.
 
 ![HEOMirror_2](img/HEOMirror_2.jpg)
 

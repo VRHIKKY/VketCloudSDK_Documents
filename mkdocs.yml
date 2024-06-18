@@ -138,7 +138,7 @@ plugins:
             Occlusion Culling: オクルージョンカリング
             Optimization for Smartphones: スマートフォンのためのワールド軽量化
             # VKCComponents
-            VKCComponents: VKCコンポーネント
+            VKC Components: VKCコンポーネント
             # アクション
             Actions: アクションについて
             Actions Overview: アクションの概要
@@ -259,8 +259,18 @@ nav:
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
   - Texture Compression : WorldOptimization/TextureCompression.md
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
-- VKCComponents:
+- VKC Components:
   - VKCSetting:
+      # Basic
+    - VKCSettingBase: VketCloudSettings/BasicSettings.md
+    - VKCSettingPlayer: VketCloudSettings/PlayerSettings.md
+    - VKCSettingDespawnHeight: VketCloudSettings/DespawnHeightSettings.md
+    # Advanced
+    - VKCSettingCamera: VketCloudSettings/CameraSettings.md
+    - VKCSettingRendering: VketCloudSettings/RenderingSettings.md
+    - VKCSettingAvatar: VketCloudSettings/AvatarSettings.md
+    - VKCSettingMyAvatar: VketCloudSettings/MyAvatarSettings.md
+    # Optional
     - VKCSettingNameplate: VKCComponents/VKCSettingNameplate.md
     - VKCSettingSpawn: VKCComponents/VKCSettingSpawn.md
   - VKCItem:

@@ -177,7 +177,7 @@ Indexは[PlayItem](../Actions/Item/PlayStopItem.md)にObject TypeがMotionのオ
 
 ![PropAnimation_23](./img/PropAnimation_23.jpg)
 
-Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてHEOActionTriggerを追加します。<br>
+Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてVKC Attribute Action Triggerを追加します。<br>
 
 ![PropAnimation_24](./img/PropAnimation_24.jpg)
 
@@ -243,7 +243,7 @@ component SwitchAnimation
 }
 ```
 
-作成したHeliScriptは、HEOScriptを使用してワールド内に配置します。
+作成したHeliScriptは、VKC Attribute Scriptを使用してワールド内に配置します。
 
 ![PropAnimation_27](./img/PropAnimation_27.jpg)
 

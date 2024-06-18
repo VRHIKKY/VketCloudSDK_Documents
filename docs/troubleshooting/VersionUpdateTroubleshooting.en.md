@@ -55,18 +55,18 @@ Taking a backup of the pre-updated world is **strongly** recommended for reattac
 
 The components listed below may potentially be shown as missing:
 
-- VKCRotateAnimation/HEO Animation
-- VKC Node Collider/HEO Collider
-- VKC Node Cylinder Collider/HEO Cylinder Collider
-- VKC Node Ibl Cube Map/HEO lbl Cube Map
-- VKC Node Blendshape Translator/HEO Info
-- VKC Node Mesh Collider/HEO Mesh Collider
-- VKC Node Mirror/HEO Mirror
-- VKC Node Reflection Probe Type/HEO Object Type
+- VKC Node Rotate Animation/HEOAnimation
+- VKC Node Collider/HEOCollider
+- VKC Node Cylinder Collider/HEOCylinderCollider
+- HEOIblCubeMap
+- VKC Node Blendshape Translator/HEOInfo
+- VKC Node Mesh Collider/HEOMeshCollider
+- VKC Node Mirror/HEOMirror
+- VKC Node Reflection Probe Type/HEOObjectType
 - HEO Reflection Probe
-- VKC Node/HEO Shadow
-- VKC Node LOD Level/HEO LOD Level
-- VKC Node UV Scroller/HEO UV Scroller
+- VKC Node Shadow/HEOShadow
+- VKC Node LOD Level/HEOLODLevel
+- VKC Node UV Scroller/HEOUVScroller
 
 !!! note caution
     When updating from Ver5.4 to Ver9.3, the HEOWorldSetting > Avatars > Avatar File settings may be missing, set the file by the procedure below on such occasion.

@@ -55,7 +55,7 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 
 ## シリンダーコライダーについて
 
-通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で`HEOCylinderCollider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
+通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で`VKC Node Cylinder Collider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
 ![PhysicsEngine](img/PhysicsEngineCylinderCollider.jpg)
 
 !!! 注意点 Info

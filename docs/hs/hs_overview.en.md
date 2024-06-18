@@ -68,7 +68,7 @@ After completing the code implementation and executing Build And Run, "Hello, Wo
 
 ![hs_overview_5](img/hs_overview_5.jpg)
 
-## Placing HEOScript and referencing objects
+## Placing VKC Attribute Script and referencing objects
 
 [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md) components can be attached to gameobjects with [VKC Item Field](../VKCComponents/VKCItemField.md) and its child gameobjects.
 For details on how to place HeliScript, please check [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md).
