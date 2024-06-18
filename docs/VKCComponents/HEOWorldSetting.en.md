@@ -35,7 +35,7 @@ This component lets you configure the following settings:
 | `Min Distance (m)`| 5.0 | Designate start of voice attenuation by meter. |
 | `Max Distance (m)`| 10.0 | Designate end of voice attenuation by meter. |
 | `Favicon` | blank | Set the Favicon of the World. |
-| `HeliScript` | blank | The HeliScripts used in this world will be listed here. HeliScripts designated in components such as [HEOScript](./HEOScript.md) will be listed automatically. |
+| `HeliScript` | blank | The HeliScripts used in this world will be listed here. HeliScripts designated in components such as [VKC Attribute Script](./VKCAttributeScript.md) will be listed automatically. |
 
 !!! note
     While `HeliScript` elements will be added automatically, it may become a `None` or `Missing` entry due to deleting files, etc.
@@ -90,7 +90,7 @@ This component lets you configure the following settings:
 |  `PBR` | true |  Enables PBR lighting. |
 | `Directional Light` | blank | Set a Directional Light placed in the scene as the directional light for this world. |
 | `Fade In Time` | 2.0 | Set the white fade-in length on world enter in seconds.|
-| `Shadow Type`| Round | Set the Shadow Type. `round` is a round shadow, and `normalshadowmap` is a normal shadow map. <br>`normalshadowmap` is used with [HEOShadow](HEOShadow.md).|
+| `Shadow Type`| Round | Set the Shadow Type. `round` is a round shadow, and `normalshadowmap` is a normal shadow map. <br>`normalshadowmap` is used with [VKC Node Shadow](VKCNodeShadow.md).|
 | `Shadow Bias` | 0.001 | Set the bias value on drawing shadows.|
 | `Shadow Area Size` | 3.0 | Set the distance for drawing shadow in meter.|
 | `Shadow Fade Size` | 1.0 |Set the fadeout size growing from the shadow's periphery in meter. |

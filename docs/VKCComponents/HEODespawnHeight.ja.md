@@ -4,7 +4,7 @@
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
-HEODespawnHeightを使用することにより、プレイヤーが指定した位置に到達した際に[HEOPlayer](HEOPlayer.md)へリスポーンするようになります。
+HEODespawnHeightを使用することにより、プレイヤーが指定した位置に到達した際に[VKC Setting Player](../VketCloudSettings/PlayerSettings.md)へリスポーンするようになります。
 また、プレイヤーが落下してしまった場合、永続的に落下し続ける状態になってしまうのを防ぐことができます。
 
 ![HEODespawnHeight](img/HEODespawnHeight.jpg)

@@ -36,7 +36,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `Min Distance (m)`| 5.0 | 減衰を開始する距離をメートル単位で指定します。 |
 | `Max Distance (m)`| 10.0 | 減衰を終了する距離をメートル単位で指定します。|
 | `Favicon` | 空欄 | Faviconを設定する項目です。 |
-| `HeliScript` | 空欄 | ワールド内で使用されるHeliScriptが一覧表示されます。[HEOScript](./HEOScript.md)などで指定したHeliScriptは本項目にリストアップされます。|
+| `HeliScript` | 空欄 | ワールド内で使用されるHeliScriptが一覧表示されます。[VKC Attribute Script](./VKCAttributeScript.md)などで指定したHeliScriptは本項目にリストアップされます。|
 
 !!! note
     `HeliScript`は基本的には自動で項目が追加されますが、ファイルの削除などによって項目に`None`(未指定)または`Missing`が発生する場合があります。
@@ -91,7 +91,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `PBR` | true |  PBRライティングをオンにします。|
 | `Directional Light` | 空欄 | シーンに設置されたディレクショナルライトをワールドライトとして指定します。 |
 | `Fade In Time` | 2.0 |　ワールド入場時のホワイトフェードインの時間を秒単位で指定します。|
-| `Shadow Type`| Round |　影の描画方法を指定します。`round`は 丸影、`normalshadowmap`は通常のシャドウマップです。<br>`normalshadowmap`は[HEOShadow](HEOShadow.md)と組み合わせて使用します。|
+| `Shadow Type`| Round |　影の描画方法を指定します。`round`は 丸影、`normalshadowmap`は通常のシャドウマップです。<br>`normalshadowmap`は[VKC Node Shadow](VKCNodeShadow.md)と組み合わせて使用します。|
 | `Shadow Bias` | 0.001 |　影描画のバイアス値を設定します。|
 | `Shadow Area Size` | 3.0 |　シャドウを描画する距離をメートル単位で指定します。|
 | `Shadow Fade Size` | 1.0 |　シャドウ外周に向かってフェードアウトする距離をメートル単位で指定します。　|

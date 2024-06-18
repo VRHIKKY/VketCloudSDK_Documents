@@ -4,7 +4,7 @@
     This component has been deprecated on SDK Ver12.0.<br>
     As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
-HEODespawnHeight will send the player to [HEOPlayer] (HEOPlayer.md), or respawn, when the player reaches the specified height.
+HEODespawnHeight will send the player to [VKC Setting Player](../VketCloudSettings/PlayerSettings.md), or respawn, when the player reaches the specified height.
 Also, if the player falls from the world, it will prevent the state of falling permanently.
 
 ![HEODespawnHeight](img/HEODespawnHeight.jpg)

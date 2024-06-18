@@ -261,41 +261,43 @@ nav:
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
 - VKCComponents:
   - VKCSetting:
-    - HEONameplate: HEOComponents/HEONameplate.md
-    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
-    - HEOPlayer: HEOComponents/HEOPlayer.md
-    - HEOSpawn: HEOComponents/HEOSpawn.md
+    - VKCSettingNameplate: VKCComponents/VKCSettingNameplate.md
+    - VKCSettingSpawn: VKCComponents/VKCSettingSpawn.md
   - VKCItem:
-    - HEOActivity: HEOComponents/HEOActivity.md
-    - HEOAreacollider: HEOComponents/HEOAreacollider.md
-    - HEOAudio: HEOComponents/HEOAudio.md
-    - HEOBackgroundTexture: HEOComponents/HEOBackgroundTexture.md
-    - HEOCamera: HEOComponents/HEOCamera.md
-    - HEOField: HEOComponents/HEOField.md
-    - HEOObject: HEOComponents/HEOObject.md
-    - HEOParticle: HEOComponents/HEOParticle.md
-    - HEOPlane: HEOComponents/HEOPlane.md
-    - HEOSpot: HEOComponents/HEOSpot.md
-    - HEOTextPlane: HEOComponents/HEOTextPlane.md
+    - VKCItemActivity: VKCComponents/VKCItemActivity.md
+    - VKCItemAreaCollider: VKCComponents/VKCItemAreaCollider.md
+    - VKCItemAudio: VKCComponents/VKCItemAudio.md
+    - VKCItemBackgroundTexture: VKCComponents/VKCItemBackgroundTexture.md
+    - VKCItemCamera: VKCComponents/VKCItemCamera.md
+    - VKCItemField: VKCComponents/VKCItemField.md
+    - VKCItemObject: VKCComponents/VKCItemObject.md
+    - VKCItemParticle: VKCComponents/VKCItemParticle.md
+    - VKCItemPlane: VKCComponents/VKCItemPlane.md
+    - VKCItemSpot: VKCComponents/VKCItemSpot.md
+    - VKCItemTextPlane: VKCComponents/VKCItemTextPlane.md
   - VKCNode:
-    - HEOAnimation: HEOComponents/HEOAnimation.md
-    - HEOCollider: HEOComponents/HEOCollider.md
-    - HEOCylinderCollider: HEOComponents/HEOCylinderCollider.md
-    #- HEOInfo: HEOComponents/HEOInfo.md #整備中
-    - HEOLODLevel: HEOComponents/HEOLODLevel.md
-    - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
-    - HEOMirror: HEOComponents/HEOMirror.md
-    - HEOReflectionProbe : HEOComponents/HEOReflectionProbe.md
-    - HEOShadow: HEOComponents/HEOShadow.md
-    #- HEOObjectType: HEOComponents/HEOObjectType.md #整備中
-    - HEOShowFlag : HEOComponents/HEOShowFlag.md
-    - HEOUVScroller: HEOComponents/HEOUVScroller.md
-    - HEOVideoTrigger: HEOComponents/HEOVideoTrigger.md
+    - VKCNodeBlendShapeTranslator: VKCComponents/VKCNodeBlendShapeTranslator.md
+    - VKCNodeCollider: VKCComponents/VKCNodeCollider.md
+    - VKCNodeCylinderCollider: VKCComponents/VKCNodeCylinderCollider.md
+    - VKCNodeLODLevel: VKCComponents/VKCNodeLODLevel.md
+    - VKCNodeMeshCollider: VKCComponents/VKCNodeMeshCollider.md
+    - VKCNodeMirror: VKCComponents/VKCNodeMirror.md
+    - VKCNodeReflectionProbeType: VKCComponents/VKCNodeReflectionProbeType.md
+    - VKCNodeRotateAnimation: VKCComponents/VKCNodeRotateAnimation.md
+    - VKCNodeShadow: VKCComponents/VKCNodeShadow.md
+    - VKCNodeUVScroller: VKCComponents/VKCNodeUVScroller.md
+    - VKCNodeVideoTrigger: VKCComponents/VKCNodeVideoTrigger.md
   - VKCAttribute:
-    - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
-    - HEOClickGuide: HEOComponents/HEOClickGuide.md
-    - HEOProperty: HEOComponents/HEOProperty.md
-    - HEOScript: HEOComponents/HEOScript.md
+    - VKCAttributeActionTrigger: VKCComponents/VKCAttributeActionTrigger.md
+    - VKCAttributeClickGuide: VKCComponents/VKCAttributeClickGuide.md
+    - VKCAttributeProperty: VKCComponents/VKCAttributeProperty.md
+    - VKCAttributeScript: VKCComponents/VKCAttributeScript.md
+    - VKCAttributeShowFlag: VKCComponents/VKCAttributeShowFlag.md
+  - VKCLegacy:
+    - HEODespawnHeight: VKCComponents/HEODespawnHeight.md
+    - HEOPlayer: VKCComponents/HEOPlayer.md
+    - HEOWorldSetting: VKCComponents/HEOWorldSetting.md
+    - HEOReflectionProbe: VKCComponents/HEOReflectionProbe.md
 - Actions: 
     #- ActionNodeGraph: Actions/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Actions/ActionsOverview.md
