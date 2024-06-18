@@ -17,7 +17,7 @@ Switching camera will be done by HeliScript as explained later.
 
 ![HEOCamera_2](img/HEOCamera_2.jpg)
 
-As this object will be treated as a different [Item](../hs/hs_class_item.md) than HEOField, this can be placed outside the World object.
+As this object will be treated as a different [Item](../hs/hs_class_item.md) than VKC Item Field, this can be placed outside the World object.
 
 ![HEOCamera_3](img/HEOCamera_3.jpg)
 

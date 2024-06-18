@@ -138,7 +138,7 @@ VKC Attribute Propertyの活用例を紹介します。
 
 ![HEOProperty_5](./img/HEOProperty_5.jpg)
 
-シーンjsonを適切な形に変更した後にHEOActivityで読み込むと下記のようになります。
+シーンjsonを適切な形に変更した後にVKC Item Activityで読み込むと下記のようになります。
 
 ![HEOProperty_6](./img/HEOProperty_6.jpg)
 

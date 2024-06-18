@@ -55,9 +55,9 @@ VketCloudSDKタブから`ツール`を選択し、`デバッグコンソール`�
     -  `Renderer`
     -  `MeshRenderer`
     -  `SkinnedMeshRenderer`
-    -  `HEOPlane`
-    -  `HEOBackgroundTexture`
-    -  `HEONameplate`: NameplateのImageタイプ
+    -  `VKC Item Plane`
+    -  `VKC Item Background Texture`
+    -  `VKC Setting Nameplate`: NameplateのImageタイプ
     -  `AvatarSetting` のAvatar File
       -  Thumbnail(日本語)
       -  Thumbnail(英語)

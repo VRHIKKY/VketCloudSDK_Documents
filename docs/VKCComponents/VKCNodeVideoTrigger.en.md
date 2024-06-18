@@ -41,7 +41,7 @@ The Thumbnail Tool generates a video thumbnail, which is made by designating a t
 
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Access in HEOObject | false | Mode to access a material in [VKC Item Object](VKCItemObject.md) for displaying the video. <br> On setting this to `true`, specify the target material name on `Target Object Name`.|
+| Access in VKCItemObject | false | Mode to access a material in [VKC Item Object](VKCItemObject.md) for displaying the video. <br> On setting this to `true`, specify the target material name on `Target Object Name`.|
 | Thumbnail Texture | | Designate a image for video thumbnail. |
 | PlayButton Texture | playbutton.png | Designate a playbutton icon to be on the thumbnail image.  |
 | Generate Thumbnail Material | | Generate a new thumbnail png image and material using images from Thumbnail Texture and PlayButton Texture. <br>Saving the generated image and material will automatically allocate them to the Video object. |

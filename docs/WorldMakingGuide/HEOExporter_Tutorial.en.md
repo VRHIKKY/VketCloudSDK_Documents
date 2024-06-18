@@ -31,7 +31,7 @@ In the above example, "009_VketCloudComu.jpg" is the problematic one. The number
 If there is no problem with the texture file, the export is successful for the time being. Copy the exported file / folder to load it in Vket Cloud.
 
 !!!note tip
-     Objects exported as .heo can be included in the BuildAndRun output by setting it in HEOObject. See [here](../VKCComponents/VKCItemObject.md) for how to use HEOObject.
+     Objects exported as .heo can be included in the BuildAndRun output by setting it in VKC Item Object. See [here](../VKCComponents/VKCItemObject.md) for how to use VKC Item Object.
 
 A sample of this HEO file read and displayed by VketCloud is as follows.
 

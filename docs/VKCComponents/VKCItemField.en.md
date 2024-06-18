@@ -2,7 +2,7 @@
 
 ![VKC Item Field](img/HEOField.jpg)
 
-Objects with VKC Item Field attached will be packed into .heo during BuildAndRun. Make sure to set objects you want to include in the .heo file as children of the object with HEOField.
+Objects with VKC Item Field attached will be packed into .heo during BuildAndRun. Make sure to set objects you want to include in the .heo file as children of the object with VKC Item Field.
 
 For tips on how to place VKC Item Field, see [Tips on using VKC Item Field](../WorldMakingGuide/HEOFieldTips.md).
 
@@ -42,7 +42,7 @@ VketCloud allows objects to be loaded when entering a specific area after enteri
 ### Unload initiator
 
 1. Open the Unload Collider item and press "Generate Unload Collider" to generate an area collider to be used for loading.
-2. Set the generated collider for unloading as a child object of HEOField and adjust the position and range.
+2. Set the generated collider for unloading as a child object of VKC Item Field and adjust the position and range.
 
 !!! note caution
      The set colliders can be deleted from the list by pressing the X button on the right side of each item, but the objects will remain and must be deleted manually.

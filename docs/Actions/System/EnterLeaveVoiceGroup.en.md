@@ -6,7 +6,7 @@ EnterVoiceGroup adds a player to the specified voice group.
 
 LeaveVoiceGroup removes a player from the specified voice group. 
 
-Mainly intended to be called from an HEOAreacollider's Action.
+Mainly intended to be called from an VKC Item Area Collider's Action.
 
 |  Label |  function  |
 | ----   | ---- |

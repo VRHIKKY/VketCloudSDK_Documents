@@ -91,12 +91,12 @@ component example
 
     public example()
     {
-        //Itemを認識　Item名は.heoになっている物を指定する　今回はHEOField指定
+        //Itemを認識　Item名は.heoになっている物を指定する　今回はVKC Item Field指定
         ex_Item = hsItemGet("World");
 
         ex_isPlayerInit = false;
         
-        //ItemがHEO Fieldなので、その傘下にあるオブジェクトのノードを取得可能
+        //ItemがVKC Item Fieldなので、その傘下にあるオブジェクトのノードを取得可能
         ex_ItemNodeIndex = ex_Item.GetNodeIndexByName("exampleObject");
     }
 

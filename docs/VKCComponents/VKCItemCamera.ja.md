@@ -17,7 +17,7 @@ VKC Item Cameraコンポーネントは演出目的等で通常のカメラか�
 
 ![HEOCamera_2](img/HEOCamera_2.jpg)
 
-なお、本オブジェクトはHEOFieldとは別個の[アイテム](../hs/hs_class_item.md)として扱われるため、Worldオブジェクトの外に置かれても問題ございません。
+なお、本オブジェクトはVKCItemFieldとは別個の[アイテム](../hs/hs_class_item.md)として扱われるため、Worldオブジェクトの外に置かれても問題ございません。
 
 ![HEOCamera_3](img/HEOCamera_3.jpg)
 

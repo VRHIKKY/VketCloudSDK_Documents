@@ -6,7 +6,7 @@ EnterVoiceGroupは、プレイヤーを指定名のボイスグループに追�
 
 LeaveVoiceGroupは、プレイヤーを指定名のボイスグループから削除します。
 
-基本的には、HEOAreacolliderに入ったときのactionで利用します。
+基本的には、VKC Item Area Colliderに入ったときのactionで利用します。
 
 |  Label |  function  |
 | ----   | ---- |

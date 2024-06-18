@@ -157,7 +157,7 @@ You can play the animation added to [VKC Item Object](../VKCComponents/VKCItemOb
 
 !!! note "About PlayItem Action"
     [PlayItem](../Actions/Item/PlayStopItem.md): Plays the designated item. The Index setting is the Motion number to be played. <br>
-    PlayItem is valid for HEO objects containing Motion, as well as Audio and Particles.
+    PlayItem is valid for VKC Item Object objects containing Motion, as well as Audio and Particles.
 
 Set the animation of the animated Cube to be the second one with loop disa, and click “Add” at the top of BeginActions to add the Motion field. <br>
 Delete the motion specified in .hem in the first Motion, and specify the .hem file in the second Motion.

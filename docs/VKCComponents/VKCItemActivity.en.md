@@ -76,15 +76,15 @@ For details on how to get the activity data, refer to the manual which is referr
 
 ![HEOActivity_8](img/HEOActivity_8.jpg)
 
-7\. Attach the HEOActivity component to the AnalogClock object.
+7\. Attach the VKC Item Activity component to the AnalogClock object.
 
 ![HEOActivity_9](img/HEOActivity_9.jpg)
 
-8\. Set the `activity\analogclock\AnalogClockActivity.json` to the HEOActivity's json setting.
+8\. Set the `activity\analogclock\AnalogClockActivity.json` to the VKC Item Activity's json setting.
 
 ![HEOActivity_10](img/HEOActivity_10.jpg)
 
-9\. Set a value for "useSecondHand" in HEOActivity's overrides. For details on the settings, refer to the "Activity Settings".
+9\. Set a value for "useSecondHand" in VKC Item Activity's overrides. For details on the settings, refer to the "Activity Settings".
 
 10\. As the analog clock will appear on the object origin, adjust the placement position via Transform.
 

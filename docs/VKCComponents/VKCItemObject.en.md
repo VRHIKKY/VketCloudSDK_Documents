@@ -68,7 +68,7 @@ If the "Object Mode" is set to `Pose` or `Motion`, the motion's hem file will be
 
 ![HEOObject_Motion_Preview](img/HEOObject_Motion_Preview.jpg)
 
-The slider appearing on enabling scene preview will modify the play position of the HEOObject's action.<br>
+The slider appearing on enabling scene preview will modify the play position of the VKC Item Object's action.<br>
 This slider value is intended for motion previewing, and will not be reflected on the action after build.
 
 ![HEOObject_Motion_Preview_Result](img/HEOObject_Motion_Preview_Result.jpg)

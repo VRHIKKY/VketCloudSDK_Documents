@@ -76,15 +76,15 @@ Vket Cloudのアクティビティはアセットストアにて入手が可能�
 
 ![HEOActivity_8](img/HEOActivity_8.jpg)
 
-7\. HEO ActivityコンポーネントをAnalogClockオブジェクトにアタッチします。
+7\. VKC Item ActivityコンポーネントをAnalogClockオブジェクトにアタッチします。
 
 ![HEOActivity_9](img/HEOActivity_9.jpg)
 
-8\. activity\analogclock\AnalogClockActivity.jsonをHEO Activityのjson項目にセットします。
+8\. activity\analogclock\AnalogClockActivity.jsonをVKC Item Activityのjson項目にセットします。
 
 ![HEOActivity_10](img/HEOActivity_10.jpg)
 
-9\. HEOActivityのoverridesで"useSecondHand"の設定をします。パラメーターの説明に関してはREADME.mdの「アクティビティ設定」項目を参照して下さい。
+9\. VKC Item Activityのoverridesで"useSecondHand"の設定をします。パラメーターの説明に関してはREADME.mdの「アクティビティ設定」項目を参照して下さい。
 
 10\. オブジェクトの原点にアナログ時計が出現するので、設置場所をTransformで調整します。
 
