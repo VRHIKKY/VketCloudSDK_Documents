@@ -23,7 +23,7 @@ VKCAttributeClickableUIコンポーネントは、ワールド内のオブジェ
 | Follow Nodes | ノードに追従 | true | ノードが動的な場合UIも動かせるか否かを切り替えます |
 | Auto Hide | 時間経過で非表示 | true | エリアに侵入後、時間経過で非表示にするか否かを切り替えます |
 | Time for Hiding(s) | 非表示になるまでの時間(秒) | 5.0 | エリアに侵入後、何秒表示させるかを設定できます |
-| Single Image/Animation | シングルイメージ/アニメーション | Single Image | 表示する画像を静的なPng画像にするか、コマ送りのアニメーション画像を設定するかを決められます |
+| Single Image/Animation | シングルイメージ/アニメーション | Single Image | 表示する画像を静的なpng画像にするか、コマ送りのアニメーション画像を設定するかを決められます |
 | Image(.png) | 画像（.png） | .guideframe | Guideframeの画像を設定できます |
 | Position | 位置 | [0.0, 0.0, 0.0] | 同じGameObject内のTransformコンポーネントのPosition値からの相対位置を設定できます |
 | Rotation | 回転 | [0.0, 0.0, 0.0] | 同じGameObject内のTransformコンポーネントのRotation値からの相対回転を設定できます |
@@ -45,11 +45,11 @@ VKCAttributeClickableUIコンポーネントは、ワールド内のオブジェ
 ## 使い方
 
 1. 空のゲームオブジェクトにVKCAttributeClickableUIコンポーネントをアタッチします。<br>
-    このとき、VKCNodeCollider, BoxCollider, VKCItemAreaColliderが必ずアタッチされます。
+    このとき、[VKCNodeCollider](../../HEOComponents/HEOCollider.md)、BoxCollider、[VKCItemAreaCollider](../../HEOComponents/HEOAreacollider.md)が必ずアタッチされます。
 
     ![VKCAttributeClickableUI_03](img/VKCAttributeClickableUI_03.jpg)
 
-1. BoxColliderの範囲内において、クリックが可能である旨がUIによって示されます。<br>
+1. BoxColliderの範囲内にプレイヤーが侵入した際、クリックが可能である旨がUIによって示されます。<br>
     この時オブジェクトをクリック可能とさせたい距離に応じてBoxColliderのスケールを変更しておきます。
 
     ![VKCAttributeClickableUI_04](img/VKCAttributeClickableUI_04.jpg)
@@ -75,3 +75,7 @@ VKCAttributeClickableUIコンポーネントは、ワールド内のオブジェ
 1. ワールドをビルドすると、以下のようにガイドUIが拡大・縮小して表示されます。
 
     ![VKCAttributeClickableUI_08](img/VKCAttributeClickableUI_08.gif)
+
+!!! tip "複雑なアニメーションの実装について"
+    Animationモードではコマ送りによるアニメーションの設定を主な用途として想定しています。<br>
+    より複雑なアニメーション・演出を再生したい場合は、一例として[オブジェクトをアニメーションさせる / HEOObjectにアニメーションを付与する方法](../../WorldMakingGuide/PropAnimation.md#heoobject)を参考にアニメーションを設定し、[VKCItemObject](../../HEOComponents/HEOObject.md)と[VKCItemAreaCollider](../../HEOComponents/HEOAreacollider.md)の連携の実装が考えられます。
