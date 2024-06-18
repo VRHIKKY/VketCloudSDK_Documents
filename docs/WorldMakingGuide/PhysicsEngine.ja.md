@@ -10,17 +10,17 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 
 ## 物理エンジンの使用方法
 
-1\. 物理演算を適応したいゲームオブジェクトに『Unityコライダー』と[HEOCollider](../HEOComponents/HEOCollider.md)をアタッチしてください。<br>
+1\. 物理演算を適応したいゲームオブジェクトに『Unityコライダー』と[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)をアタッチしてください。<br>
 物理演算に使用できるUnityコライダーは『Box Collider』『Sphere Collider』『Capsule Collider』です。
 
-また、後述されているように『Capsule Collider』がアタッチされているゲームオブジェクトに[HEOCollider](../HEOComponents/HEOCollider.md)に加えて`HEOCylinderCollider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
+また、後述されているように『Capsule Collider』がアタッチされているゲームオブジェクトに[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)に加えて`VKC Node Cylinder Collider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
 
 ![PhysicsEngine](img/PhysicsEngine.jpg)
 
-2\. HEOCollider/Physicsの項目のプロパティを設定します。<br>
-各項目は下記で説明いたしますが、[HEOWorldSettings](../HEOComponents/HEOWorldSetting.md#_1)にて`Use Physics Engine`を有効にし、各コライダーコンポーネントに『`UsePhysics`』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。
+2\. VKC Node Collider/Physicsの項目のプロパティを設定します。<br>
+各項目は下記で説明いたしますが、[HEOWorldSettings](../VKCComponents/HEOWorldSetting.md#_1)にて`Use Physics Engine`を有効にし、各コライダーコンポーネントに『`UsePhysics`』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。
 
-### HEOCollider/Physicsのプロパティについて
+### VKC Node Collider/Physicsのプロパティについて
 
   ![PhysicsEngine](img/PhysicsEngineCollider.jpg)
 

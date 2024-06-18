@@ -2,18 +2,18 @@
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-VketCloudSDK allows you to place animated objects in world using the [HEOAnimation](../HEOComponents/HEOAnimation.md) component or .heo files and .hem.
+VketCloudSDK allows you to place animated objects in world using the [VKC Node RotateAnimation](../VKCComponents/VKCNodeRotateAnimation.md) component or .heo files and .hem.
 Placing moving objects on the world will greatly improve the appearance.
 
 If you stumble on each step, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
 
-## Animation by attaching HEOAnimation
+## Animation by attaching VKC Node Rotate Animation
 
-Please refer to [HEOAnimation](../HEOComponents/HEOAnimation.md) for usage instructions.
+Please refer to [VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md) for usage instructions.
 
-## How to add animation to HEOObject
+## How to add animation to VKC Item Object
 
-By exporting the object to .heo, exporting the animation to .hem, and placing it on the scene, you can create objects that move freely from [HEOAnimation](../HEOComponents/HEOAnimation.md).
+By exporting the object to .heo, exporting the animation to .hem, and placing it on the scene, you can create objects that move freely from [VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md).
 
 Note that the only animation parameter that can be used here is **Transform value change**.
 
@@ -120,7 +120,7 @@ To confirm that the file was saved correctly, open the console tab to see if the
 
 ![PropAnimation_18](./img/PropAnimation_18.jpg)
 
-Create a new empty object, select the Inspector tab, press Add Component, and add [HEOObject](../HEOComponents/HEOObject.md).
+Create a new empty object, select the Inspector tab, press Add Component, and add [VKC Item Object](../VKCComponents/VKCItemObject.md).
 
 ![PropAnimation_19](./img/PropAnimation_19.jpg)
 
@@ -143,17 +143,17 @@ By committing build at this point, you can display animated objects on the scene
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
 !!! warning "Notes when exporting .heo"
-    - If you export the original object without setting its Position to (0,0,0), the placement position will be the [HEOObject](../HEOComponents/HEOObject.md) Position added with the Position value at the time of export. <br>
+    - If you export the original object without setting its Position to (0,0,0), the placement position will be the [VKC Item Object](../VKCComponents/VKCItemObject.md) Position added with the Position value at the time of export. <br>
     - If the original object has collision detection enabled, the exported object will also have collision detection. <br>
     - Even if you move an object in .hem, the collision detection information of the object will not be moved. <br>
     - The first animation in the Motion column will be automatically played when the world starts. <br>
     If you do not want animations played on world start, please leave the first Motion entry blank.
 
-## Controlling animation set to HEOObject
+## Controlling animation set to VKC Item Object
 
 ### Control using Actions
 
-You can play the animation added to [HEOObject](../HEOComponents/HEOObject.md) by using the  [PlayItem](../Actions/Item/PlayStopItem.md) action. <br>
+You can play the animation added to [VKC Item Object](../VKCComponents/VKCItemObject.md) by using the  [PlayItem](../Actions/Item/PlayStopItem.md) action. <br>
 
 !!! note "About PlayItem Action"
     [PlayItem](../Actions/Item/PlayStopItem.md): Plays the designated item. The Index setting is the Motion number to be played. <br>
@@ -192,7 +192,7 @@ On world build, the Cube will rotate (play Motion) when clicked.
 Animation can be controlled using HeliScript. <br>
 As an example, you can create a HeliScript that repeats animation playback every 3 seconds as shown below.
 
-Here, ChangeMotion() of [Item class](../hs/hs_class_item.md) is used to control the motion in [HEOObject](../HEOComponents/HEOObject.md). <br>
+Here, ChangeMotion() of [Item class](../hs/hs_class_item.md) is used to control the motion in [VKC Item Object](../VKCComponents/VKCItemObject.md). <br>
 
 ``````
 component SwitchAnimation
@@ -205,7 +205,7 @@ component SwitchAnimation
 
     public SwitchAnimation() //constructor
     {
-        m_RotationCube = hsItemGet("CubeRotation_HEO"); //Enter the object name to which HEOObject is attached
+        m_RotationCube = hsItemGet("CubeRotation_HEO"); //Enter the object name to which VKC Item Object is attached
     }
 
     public void Update()

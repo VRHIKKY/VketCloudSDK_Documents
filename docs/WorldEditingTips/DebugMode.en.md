@@ -46,7 +46,7 @@ By enabling the Debug Mode, a status indicator will appear on top of the window.
 
 ### 5th Row and so on
 
-This row shows text from each components. For example, if [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline) is called within [HEOScript](../HEOComponents/HEOScript.md), the text will be displayed here.
+This row shows text from each components. For example, if [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline) is called within [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md), the text will be displayed here.
 
 ## F2: Display Information UI
 

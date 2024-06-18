@@ -46,7 +46,7 @@ Vket Cloud Settings / [BasicSettings](../VketCloudSettings/BasicSettings.md)に�
 
 ### 5行目以降
 
-コンポーネントテキストです。例として [HEOScript](../HEOComponents/HEOScript.md) にて [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline)を実行するとここに出力されます。
+コンポーネントテキストです。例として [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md) にて [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline)を実行するとここに出力されます。
 
 ## F2：インフォメーションUI表示
 
