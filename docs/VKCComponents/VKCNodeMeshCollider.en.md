@@ -10,7 +10,7 @@ VKC Node Mesh Collider will generate a collider on build based on the 3D model's
 
     ![HEOMeshCollider_2](img/HEOMeshCollider_2.jpg)
 
-2. When setting a VKC Node Mesh Collider component, [HEOCollider](./HEOCollider.md) will be automatically attached. This component is essential for VKC Node Mesh Collider and cannot be removed.
+2. When setting a VKC Node Mesh Collider component, [VKC Node Collider](./VKCNodeCollider.md) will be automatically attached. This component is essential for VKC Node Mesh Collider and cannot be removed.
 
     ![HEOMeshCollider_3](img/HEOMeshCollider_3.jpg)
 
@@ -19,12 +19,12 @@ VKC Node Mesh Collider will generate a collider on build based on the 3D model's
 ## Notes
 
 !!! bug "Player floating when world only has Mesh Renderer / Mesh Collider objects"
-    On SDK Ver12.3, there is an issue occurring when the world has objects only having Mesh Renderer, Mesh Collider, VKC Node Mesh Collider, [VKC Node Collider](./HEOCollider.md) components attached, causing the player to float when enter the world.<br>
+    On SDK Ver12.3, there is an issue occurring when the world has objects only having Mesh Renderer, Mesh Collider, VKC Node Mesh Collider, [VKC Node Collider](./VKCNodeCollider.md) components attached, causing the player to float when enter the world.<br>
     This issue is scheduled to be fixed on the next SDK release.<br>
     Also, this issue can be avoided by adding at least a single Cube with Box Collider attached.
 
 !!! note "HEOMeshCollider feature changes on Ver12.3"
     On SDK versions earlier than Ver12.3, the object's mesh and collider had to be separated as the image below to enable mesh colliders for Vket Cloud worlds, which is no longer needed on Ver12.3 and later versions.<br>
-    Also, [VKC Node Collider](./HEOCollider.md) component is now considered as essential, which will be automatically attached to the object when adding HEOMeshCollider component.
+    Also, [VKC Node Collider](./VKCNodeCollider.md) component is now considered as essential, which will be automatically attached to the object when adding HEOMeshCollider component.
 
 ![HEOMeshCollider_4](img/HEOMeshCollider_4.jpg)

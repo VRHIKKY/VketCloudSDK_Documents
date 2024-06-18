@@ -3,11 +3,11 @@
 
 |  Label |  function  |
 | ----   | ---- |
-| HeliScript | Specify the `HeliScript` file to run from the list located in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)'s `BasicInfo/HeliScript`.<br> If the `HeliScript` file to run doesn't appear, add the file to [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md) via `Select`.|
+| HeliScript | Specify the `HeliScript` file to run from the list located in [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md)'s `BasicInfo/HeliScript`.<br> If the `HeliScript` file to run doesn't appear, add the file to [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md) via `Select`.|
 | Component | Designate the component to be used from the specified `HeliScript` file. |
 
 ## Cautions:
-- VKC Attribute Script components are attachable to the GameObject with the [VKC Item Field](./HEOField.md) component, or its child objects (See image below for reference)
+- VKC Attribute Script components are attachable to the GameObject with the [VKC Item Field](./VKCItemField.md) component, or its child objects (See image below for reference)
 - For details on writing HeliScript, refer to the pages below:
 - [Class](../hs/hs_class.md)
 - [Components / Callback functions](../hs/hs_component.md)

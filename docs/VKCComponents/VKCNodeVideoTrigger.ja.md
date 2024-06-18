@@ -41,7 +41,7 @@ Thumbnail Toolでは動画再生前のサムネイルとして、サムネイル
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
-| Access in HEOObject | false | 映像反映対象を[HEOObject](HEOObject.md)内のマテリアルにするためのモードです。<br> `True`にした場合に表示される`Target Object Name`には、対象となるマテリアル名を記載してください。 |
+| Access in VKCItemObject | false | 映像反映対象を[VKC Item Object](VKCItemObject.md)内のマテリアルにするためのモードです。<br> `True`にした場合に表示される`Target Object Name`には、対象となるマテリアル名を記載してください。 |
 | Thumbnail Texture | | 動画のサムネイルとなる画像を指定します。 |
 | PlayButton Texture | playbutton.png | サムネイルの上に重ねる再生アイコンを指定します。 |
 | Generate Thumbnail Material | | Thumbnail Texture と PlayButton Textureを重ねたpng画像とマテリアルを生成します。<br>サムネイル画像とマテリアルを保存するとVideoTriggerのサムネイルとして自動で設定されます。 |
@@ -73,20 +73,20 @@ StringModeはURLを指定して参照します。動画ストリーミング等�
 
 ## 注意事項
 
-- 本コンポーネントだけでは動画オブジェクトをItemとして表示できないため、[HEOField](HEOField.md)下に必ず配置してください。
+- 本コンポーネントだけでは動画オブジェクトをItemとして表示できないため、[VKC Item Field](VKCItemField.md)下に必ず配置してください。
 
 - VketCloudSDKでは複数のビデオを同時に再生できない仕様です。<br>複数のビデオを同時に再生しているように見せかけたい場合、動画ファイル内で画面分割を行い、映し出す側のスクリーンで動画の映し出す範囲を調整することで可能です。
 
 - EnableとAutoplayが無効な場合にはアクション等いずれかの手段で再生開始をコントロールする必要があります。<br>
 
-以下の画像では[HEOActionTrigger](HEOActionTrigger.md)を使用したクリックによる動画再生を実装しています。
+以下の画像では[VKC Attribute Action Trigger](VKCAttributeActionTrigger.md)を使用したクリックによる動画再生を実装しています。
 
 ![HEOVideoTrigger_3](img/HEOVideoTrigger_3.jpg)
 
 !!! note caution
     動画音声は距離減衰に対応していません。<br>
-    代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は[HEOAreaCollider](../HEOComponents/HEOAreacollider.md)と[StopVideoアクション](../Actions/System/StopVideo.md)を使用してください。
+    代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)と[StopVideoアクション](../Actions/System/StopVideo.md)を使用してください。
 
 !!! caution "Activityエクスポート時のVKC Node Video Triggerについて"
     SDK Ver12.3.4以降では[VKC Activity Exporter](../SDKTools/VKCActivityExporter.md)にてアクティビティを出力する際、VKC Node Video Triggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
-    ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[HEOAreacollider](../HEOComponents/HEOAreacollider.md)による再生を行う必要があります。
+    ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)による再生を行う必要があります。

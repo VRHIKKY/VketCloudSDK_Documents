@@ -23,7 +23,7 @@ HEOMirror is placed with a Quad to implement a pseudo-mirror.
 ![HEOMirror_3](img/HEOMirror_3.jpg)
 
 Create a Quad by selecting Create > 3D Object.<br>
-As VKC Node Mirror is categorized as a Node, the Quad must be a child object of the object with [VKC Item Field](HEOField.md) attached.
+As VKC Node Mirror is categorized as a Node, the Quad must be a child object of the object with [VKC Item Field](VKCItemField.md) attached.
 
 2\. Create Texture and Material
 
@@ -48,7 +48,7 @@ By building world at this moment, the object will be a Mirror.
 
 ### Enabling Mirror while the player is in the designated area
 
-By attaching a Box Collider and [VKC Node Collider](HEOCollider.md), the mirror will be enabled only when the player is in the designated area. Set the [VKC Node Collider](HEOCollider.md)'s collider type to Area, and Collider Target to None.<br>
+By attaching a Box Collider and [VKC Node Collider](VKCNodeCollider.md), the mirror will be enabled only when the player is in the designated area. Set the [VKC Node Collider](VKCNodeCollider.md)'s collider type to Area, and Collider Target to None.<br>
 If the Box Collider is not attached the mirror will be enabled regardless of player position.
 
 ![HEOMirror_7](img/HEOMirror_7.jpg)

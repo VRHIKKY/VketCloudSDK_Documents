@@ -26,14 +26,14 @@ VKC Item Objectは、動的なオブジェクトをシーンに生成するた�
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Clickable | false | オブジェクトがクリックされた際の判定を発生させるか否かを設定します。 |
-| Auto Loading | true | [動的ローディング](HEOField.md)にて使用します。<br> デフォルトはtrueで初回ローディング時に読み込まれます。 |
+| Auto Loading | true | [動的ローディング](VKCItemField.md)にて使用します。<br> デフォルトはtrueで初回ローディング時に読み込まれます。 |
 | Shadow Caster | false | [シャドウマッピング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、本オブジェクトの影を他のオブジェクトに投影するか設定します。 |
 | Shadow Receiver | false | [シャドウマッピング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、他オブジェクトの影を本オブジェクトへと投影するか設定します。 |
 | Foreground Rendering | false |最前面描画(深度値を考慮せずに一番手前に描画)を行うか設定します。 |
 | Item Render Priority || Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
 | Begin Actions | | モーション再生時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
 | End Actions | | モーション終了時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
-| HeliScript | | [VKC Attribute Script](HEOScript.md)にて設定したHeliScriptの対象となるか否かを設定します。<br>[VKC Attribute Script](HEOScript.md)が設定されていない際は本項目の説明が表示されます。|
+| HeliScript | | [VKC Attribute Script](VKCAttributeScript.md)にて設定したHeliScriptの対象となるか否かを設定します。<br>[VKC Attribute Script](VKCAttributeScript.md)が設定されていない際は本項目の説明が表示されます。|
 
 ## Mode - Pose設定項目
 

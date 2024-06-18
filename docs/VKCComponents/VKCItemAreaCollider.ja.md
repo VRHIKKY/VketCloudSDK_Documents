@@ -5,11 +5,11 @@
 VKC Item Area Colliderは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
 コライダーにプレイヤーが進入した際にアクションを実行します。
 
-VKC Item Area Colliderをアタッチするオブジェクトには[HEOCollider](./HEOCollider.md)とColliderがアタッチされている必要があります。<br>
-なお、VKC Item Area Colliderをオブジェクトにアタッチすると[HEOCollider](./HEOCollider.md)とBox Colliderが自動で追加されます。<br>
-[HEOCollider](./HEOCollider.md)のtypeはAreaに設定されている必要があります。
+VKC Item Area Colliderをアタッチするオブジェクトには[VKCNodeCollider](./VKCNodeCollider.md)とColliderがアタッチされている必要があります。<br>
+なお、VKC Item Area Colliderをオブジェクトにアタッチすると[VKCNodeCollider](./VKCNodeCollider.md)とBox Colliderが自動で追加されます。<br>
+[VKCNodeCollider](./VKCNodeCollider.md)のtypeはAreaに設定されている必要があります。
 
-![HEOCollider](img/HEOCollider_1.jpg)
+![VKCNodeCollider](img/HEOCollider_1.jpg)
 
 Actions,LeaveActionsそれぞれにおいてAddをクリックすることで任意のアクションを設定できます。<br>
 反対に、Deleteをクリックすることで最後尾のアクションを削除できます。
@@ -27,4 +27,4 @@ Actions,LeaveActionsそれぞれにおいてAddをクリックすることで任
 ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>
 また、以下のようなコリジョンの可視化は[VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md)から[デバッグモード](../WorldEditingTips/DebugMode.md#f3)を有効にした上でF3キーを押すと切り替えできます。
 
-![HEOCollider_2](img/HEOCollider_2.jpg)
+![VKCNodeCollider_2](img/HEOCollider_2.jpg)

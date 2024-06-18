@@ -12,7 +12,7 @@ VKC Item Fieldの詳しい配置方法については[VKC Item Fieldの使い方
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります |
 | Load Collider |  | 範囲に入った際に特定のオブジェクトをロードするコライダーを生成します |
 | UnLoad Collider |  | 範囲に入った際に特定のオブジェクトをアンロードするコライダーを生成します |
-| Overrides | | ワールド入場時に`Overrides`にて設定された`Node Name`に指定したオブジェクトにアタッチしている[VKC Node Video Trigger](HEOVideoTrigger.md)に紐づいた動画を、`Video Clip`に指定した動画で上書きします。 |
+| Overrides | | ワールド入場時に`Overrides`にて設定された`Node Name`に指定したオブジェクトにアタッチしている[VKC Node Video Trigger](VKCNodeVideoTrigger.md)に紐づいた動画を、`Video Clip`に指定した動画で上書きします。 |
 
 !!! note caution
     Overrides項目は現在実装中の機能です。<br>

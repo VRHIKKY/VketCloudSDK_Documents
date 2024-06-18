@@ -27,14 +27,14 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
 | Clickable | false | Toggle mouse interaction on object. |
-| Auto Loading | true | Used for setting up [Dynamic Loading](HEOField.md). <br> The object will be loaded on the first load by default.  |
+| Auto Loading | true | Used for setting up [Dynamic Loading](VKCItemField.md). <br> The object will be loaded on the first load by default.  |
 | Shadow Caster | false | If [Shadow Mapping](../VketCloudSettings/RenderingSettings.md) is enabled, this sets the object's shadow to be casted on other shadow receivers. |
 | Shadow Receiver | false | If [Shadow Mapping](../VketCloudSettings/RenderingSettings.md) is enabled, this sets the object to receive shadows from other objects. |
 | Foreground Rendering | false | Sets Foreground Rendering (render without applying depth value). |
 | Item Render Priority || Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
 | Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
 | End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
-| HeliScript | | Sets the object to be a target for HeliScripts designated in [VKC Attribute Script](HEOScript.md). <br>If a [VKC Attribute Script](HEOScript.md) is not in scene, an explanation for this setting will be shown. |
+| HeliScript | | Sets the object to be a target for HeliScripts designated in [VKC Attribute Script](VKCAttributeScript.md). <br>If a [VKC Attribute Script](VKCAttributeScript.md) is not in scene, an explanation for this setting will be shown. |
 
 ## Mode - Pose Settings
 

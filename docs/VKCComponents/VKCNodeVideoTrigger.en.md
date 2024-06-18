@@ -41,7 +41,7 @@ The Thumbnail Tool generates a video thumbnail, which is made by designating a t
 
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
-| Access in HEOObject | false | Mode to access a material in [HEOObject](HEOObject.md) for displaying the video. <br> On setting this to `true`, specify the target material name on `Target Object Name`.|
+| Access in HEOObject | false | Mode to access a material in [VKC Item Object](VKCItemObject.md) for displaying the video. <br> On setting this to `true`, specify the target material name on `Target Object Name`.|
 | Thumbnail Texture | | Designate a image for video thumbnail. |
 | PlayButton Texture | playbutton.png | Designate a playbutton icon to be on the thumbnail image.  |
 | Generate Thumbnail Material | | Generate a new thumbnail png image and material using images from Thumbnail Texture and PlayButton Texture. <br>Saving the generated image and material will automatically allocate them to the Video object. |
@@ -73,18 +73,18 @@ StringMode refers to the specified URL. It can be used for video streaming, etc.
 
 ## Notes
 
-- Please Make sure to include this object under an object with [HEOField](HEOField.md), as this object will not be displayed unless included into another Item. </br>
+- Please Make sure to include this object under an object with [VKC Item Field](VKCItemField.md), as this object will not be displayed unless included into another Item. </br>
 
 - VketCloudSDK enables only a single video to be played at a time.<br>To make a pseudo-display of multiple videos, split the display within one video to two, and designate the display range within the screen's material.
 
-- If you don't set autoplay, you need to control the start of playback by some means, such as an action.<br>The below image uses [HEOActionTrigger](HEOActionTrigger.md) to implement video playback on click.
+- If you don't set autoplay, you need to control the start of playback by some means, such as an action.<br>The below image uses [VKC Attribute Action Trigger](VKCAttributeActionTrigger.md) to implement video playback on click.
 
 ![HEOVideoTrigger_3](img/HEOVideoTrigger_3.jpg)
 
 !!! note caution
     The SDK does not support distance falloff for video audio.<br>
-    As an alternative implementation, the [HEOAreaCollider](../HEOComponents/HEOAreacollider.md) can be used to stop the video when the player goes out from a certain range.
+    As an alternative implementation, the [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) can be used to stop the video when the player goes out from a certain range.
 
 !!! caution "VKC Node Video Trigger in Activity"
     On SDK Ver12.3.4 and later versions, VKC Node Video Trigger can be included on exporting Activity using [VKC Activity Exporter](../SDKTools/VKCActivityExporter.md).<br>
-    However, as Autoplay cannot be enabled in Activity, the player must manually click or use the [VKC Item Areacollider](../HEOComponents/HEOAreacollider.md) to play the video.
+    However, as Autoplay cannot be enabled in Activity, the player must manually click or use the [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) to play the video.

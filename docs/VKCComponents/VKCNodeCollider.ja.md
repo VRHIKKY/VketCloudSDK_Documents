@@ -20,7 +20,7 @@ VKC Node Colliderとは、Vket Cloud上でコライダーがどのような衝�
 | ---- | ---- | ---- |
 | Collider | `コライダー` | コライダーの役割を果たします。 |
 | Clickable | `クリック対象` | プレイヤーがクリックすることを可能にします。|
-| Area | `エリア` | 通過することのできるコライダーです。[HEOAreaCollider](./HEOAreacollider.md)と組み合わせることで、範囲内に入った任意のアクションを設定できます。 |
+| Area | `エリア` | 通過することのできるコライダーです。[VKC Item Area Collider](./VKCItemAreaCollider.md)と組み合わせることで、範囲内に入った任意のアクションを設定できます。 |
 | Occlusion | `オクルージョン` | 接触した際にオクルージョンを有効にします。<br>詳しい使い方は[オクルージョンカリング](../WorldOptimization/OcclusionCulling.md)をご確認ください。 |
 | Reflection Probe | `リフレクションプローブ` | 接触した際にリフレクションプローブを有効にします。 |
 | In View | `描画判定` |　視野に入ったかどうかを判定したい場合に扱います  |

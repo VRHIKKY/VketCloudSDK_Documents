@@ -12,7 +12,7 @@ For tips on how to place VKC Item Field, see [Tips on using VKC Item Field](../W
 | Look at Camera | false | Make the image face towards the camera at all times. |
 | Load Collider |  | Generates a collider that will load a designated object on enter |
 | UnLoad Collider |  | Generates a collider that will unload a designated object on enter |
-| Overrides | | On Entering the world, the videoclip in the [VKCNodeVideoTrigger](VKCNodeVideoTrigger.md) attached to the object designated by `Node Name` will be overwrited, using the `Video Clip` set in `Overrides` property. |
+| Overrides | | On Entering the world, the videoclip in the [VKC Node Video Trigger](VKCNodeVideoTrigger.md) attached to the object designated by `Node Name` will be overwrited, using the `Video Clip` set in `Overrides` property. |
 
 !!! note caution
     The Overrides property is currently under progress.<br>

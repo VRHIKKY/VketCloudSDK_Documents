@@ -2,9 +2,9 @@
 
 VKC Activity ExporterはActivityをエクスポートするためのSDKツールです。このツールを使用して**VKCActivityExporter**オブジェクトを作成することで、Activityのエクスポートが可能となります。
 
-エクスポートされたActivityは[HEOActivity](../HEOComponents/HEOActivity.md)を使用してワールド内に複数展開できるほか、フォルダのzipファイル / Unitypackage化によって[Vket Store](https://store.vket.com){target=_blank}や[Vket Cloudマイページ](https://cloud.vket.com/){target=_blank}からアクセスできる「アセットストア」などに公開することで他のユーザーとも共有が可能です。
+エクスポートされたActivityは[VKC Item Activity](../VKCComponents/VKCItemActivity.md)を使用してワールド内に複数展開できるほか、フォルダのzipファイル / Unitypackage化によって[Vket Store](https://store.vket.com){target=_blank}や[Vket Cloudマイページ](https://cloud.vket.com/){target=_blank}からアクセスできる「アセットストア」などに公開することで他のユーザーとも共有が可能です。
 
-Activityの概要と使い方については[HEOActivity](../HEOComponents/HEOActivity.md)をご参照ください。
+Activityの概要と使い方については[VKC Item Activity](../VKCComponents/VKCItemActivity.md)をご参照ください。
 
 ## 使い方
 
@@ -32,12 +32,12 @@ Activityの概要と使い方については[HEOActivity](../HEOComponents/HEOAc
 
 | 名称 | 機能 |
 | ---- | ---- |
-| HeliScript | HeliScriptの追加/削除ができます。<br>追加されたHeliScriptは[HEOScript](../HEOComponents/HEOScript.md)と同様に使用できます。 |
+| HeliScript | HeliScriptの追加/削除ができます。<br>追加されたHeliScriptは[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)と同様に使用できます。 |
 | Motion | Motionの追加/削除ができます。<br> 追加されたモーションはアクティビティのjsonファイルに記載され、プレイヤーに対して[Player.ChangeActivityMotion()](../hs/hs_class_player.md#changeactivitymotion)または[Player.SetNextActivityMotion()](../hs/hs_class_player.md#setnextactivitymotion)を実行するとプレイヤーがモーションを再生します。|
 | Thumbnail | Activityのサムネイルを設定できます。<br> 画像が「.png」ファイルではない場合は、Warningを表示します。 |
 
-!!! bug "HEOObjectにVRMを設定しActivityをエクスポートした際のビルドエラーについて"
-    Ver12.x現在、[HEOObject](../HEOComponents/HEOObject.md)にVRMを設定してActivityを書き出した際に、ファイルの読み込みエラーに由来するビルドエラーの発生が確認されています。<br>
+!!! bug "VKC Item ObjectにVRMを設定しActivityをエクスポートした際のビルドエラーについて"
+    Ver12.x現在、[VKC Item Object](../VKCComponents/VKCItemObject.md)にVRMを設定してActivityを書き出した際に、ファイルの読み込みエラーに由来するビルドエラーの発生が確認されています。<br>
     本不具合については次回のSDKにて修正が予定されています。<br>
     回避方法として、後述のdataフォルダ下にモデルデータを配置してjsonを手動で書き換えることでビルドエラーの回避が可能です。
 
@@ -89,7 +89,7 @@ Activityを他のクリエイターに配布する際は、このフォルダを
 
 ## Activity / Propertyの設定について
 
-[HEOActivity](../HEOComponents/HEOActivity.md)にてアクティビティを使用する際、設定のためにActivityの`Overrides`(Property)項目を定義し、HeliScriptにて参照することができます。
+[VKC Item Activity](../VKCComponents/VKCItemActivity.md)にてアクティビティを使用する際、設定のためにActivityの`Overrides`(Property)項目を定義し、HeliScriptにて参照することができます。
 
 Propertyを追加するには編集したいアクティビティのjsonファイルを開き、`properties`に例として以下のようにキーと値を追加のうえで保存します。
 
@@ -105,7 +105,7 @@ Propertyを追加するには編集したいアクティビティのjsonファ�
 //中略
 ```
 
-設定したPropertyは[HEOActivity](../HEOComponents/HEOActivity.md)にてアクティビティのjsonを読み込んだ際に`overrides`にて表示され、ワールド制作者がアクティビティの設定に使用できます。
+設定したPropertyは[VKC Item Activity](../VKCComponents/VKCItemActivity.md)にてアクティビティのjsonを読み込んだ際に`overrides`にて表示され、ワールド制作者がアクティビティの設定に使用できます。
 
 ![VKCActivityExporter_8](img/VKCActivityExporter_8.jpg)
 
@@ -138,60 +138,60 @@ component VketChan
 
 ## Activityに含められるHEOコンポーネント
 
-- [HEOActivity](../HEOComponents/HEOActivity.md)
+- [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
 
-- [HEOAnimation](../HEOComponents/HEOAnimation.md)
+- [VKCNodeRotateAnimation](../VKCComponents/VKCNodeRotateAnimation.md)
 
-- [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
+- [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
 
-- [HEOAudio](../HEOComponents/HEOAudio.md)
+- [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
 
-- [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
+- [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
 
-- [HEOCamera](../HEOComponents/HEOCamera.md)
+- [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
 
-- [HEOCollider](../HEOComponents/HEOCollider.md)
+- [VKCNodeCollider](../VKCComponents/VKCNodeCollider.md)
 
-- [HEOField](../HEOComponents/HEOField.md)
+- [VKCItemField](../VKCComponents/VKCItemField.md)
 
-- [HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)
+- [VKCNodeMeshCollider](../VKCComponents/VKCNodeMeshCollider.md)
 
-- [HEOObject](../HEOComponents/HEOObject.md)
+- [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
-- [HEOParticle](../HEOComponents/HEOParticle.md)
+- [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
 
-- [HEOPlane](../HEOComponents/HEOPlane.md)
+- [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
 
-- [HEOShadow](../HEOComponents/HEOShadow.md)
+- [VKCNodeShadow](../VKCComponents/VKCNodeShadow.md)
 
-- [HEOSpot](../HEOComponents/HEOSpot.md)
+- [VKCItemSpot](../VKCComponents/VKCItemSpot.md)
 
-- [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+- [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
-- [HEOUVScroller](../HEOComponents/HEOUVScroller.md)
+- [VKCNodeUVScroller](../VKCComponents/VKCNodeUVScroller.md)
 
-- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md) * SDK Ver12.3.4以降
+- [VKCNodeVideoTrigger](../VKCComponents/VKCNodeVideoTrigger.md) * SDK Ver12.3.4以降
 
-!!! caution "Activityエクスポート時のHEOVideoTriggerについて"
-    SDK Ver12.3.4以降ではHEOVideoTriggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
-    ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[HEOAreacollider](../HEOComponents/HEOAreacollider.md)による再生を行う必要があります。
+!!! caution "Activityエクスポート時のVKCNodeVideoTriggerについて"
+    SDK Ver12.3.4以降ではVKCNodeVideoTriggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
+    ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)による再生を行う必要があります。
 
 ## Activityに含められない / サポート外のHEOコンポーネント
 
-- [HEOActionTrigger](../HEOComponents/HEOActionTrigger.md)
+- [VKCAttributeActionTrigger](../VKCComponents/VKCAttributeActionTrigger.md)
 
-- [HEOCylinderCollider](../WorldMakingGuide/Collider.md)
+- [VKCNodeCylinderCollider](../WorldMakingGuide/Collider.md)
 
-- [HEOInfo](../HEOComponents/HEOInfo.md)
+- [VKCNodeBlendShapeTranslator](../VKCComponents/VKCNodeBlendShapeTranslator.md)
 
-- [HEOLODLevel](../HEOComponents/HEOLODLevel.md)
+- [VKCNodeLODLevel](../VKCComponents/VKCNodeLODLevel.md)
 
-- [HEOMirror](../HEOComponents/HEOMirror.md)
+- [VKCNodeMirror](../VKCComponents/VKCNodeMirror.md)
 
-- [HEOObjectType](../HEOComponents/HEOObjectType.md)
+- [VKCNodeReflectionProbeType](../VKCComponents/VKCNodeReflectionProbeType.md)
 
-- [HEOProperty](../HEOComponents/HEOProperty.md) *ページ作成中
+- [VKCAttributeProperty](../VKCComponents/VKCAttributeProperty.md) *ページ作成中
 
-- [HEOScript](../HEOComponents/HEOScript.md)
+- [VKCAttributeScript](../VKCComponents/VKCAttributeScript.md)
 
-- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md) * SDK Ver12.3.4以前
+- [VKCNodeVideoTrigger](../VKCComponents/VKCNodeVideoTrigger.md) * SDK Ver12.3.4以前

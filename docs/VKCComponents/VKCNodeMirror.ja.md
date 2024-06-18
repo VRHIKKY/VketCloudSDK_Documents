@@ -23,7 +23,7 @@ HEOMirrorはQuadを使用して鏡のような挙動を再現するために設�
 ![HEOMirror_3](img/HEOMirror_3.jpg)
 
 Create > 3D ObjectからQuadを作成します。<br>
-VKC Node Mirrorはノードに分類されるので、Quadは[VKC Item Field](HEOField.md)がアタッチされたオブジェクトの子オブジェクトである必要があります。
+VKC Node Mirrorはノードに分類されるので、Quadは[VKC Item Field](VKCItemField.md)がアタッチされたオブジェクトの子オブジェクトである必要があります。
 
 2\. Textureを用意し、マテリアルの作成
 
@@ -48,7 +48,7 @@ QuadにHEOMirrorをアタッチします。Enable Mirrorはチェックを入れ
 
 ### エリア内にプレイヤーがいるときだけ鏡を有効にする
 
-Box Colliderと[VKC Node Collider](HEOCollider.md)をアタッチすることで、プレイヤーがコライダー内にいるときだけ鏡描画処理を行うように制御できます。このとき、VKC Node ColliderのCollider TypeをAreaに、Collider TargetをNoneに設定してください。<br>
+Box Colliderと[VKC Node Collider](VKCNodeCollider.md)をアタッチすることで、プレイヤーがコライダー内にいるときだけ鏡描画処理を行うように制御できます。このとき、VKC Node ColliderのCollider TypeをAreaに、Collider TargetをNoneに設定してください。<br>
 Box Colliderをアタッチしない場合、鏡描画処理はプレイヤーの位置に依らず常に行われます。
 
 ![HEOMirror_7](img/HEOMirror_7.jpg)

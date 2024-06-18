@@ -17,7 +17,7 @@ Mesh Colliderを設定したいオブジェクトに対して、Inspector / Add 
 
     ![HEOMeshCollider_2](img/HEOCylinderCollider_02.jpg)
 
-1. このとき、VKC Node Cylinder Colliderコンポーネントと同時に[HEOCollider](./HEOCollider.md)がアタッチされます。[HEOCollider](./HEOCollider.md)はVKC Node Cylinder Colliderにとって必須となるコンポーネントのため、削除はできません。
+1. このとき、VKC Node Cylinder Colliderコンポーネントと同時に[VKC Node Collider](./VKCNodeCollider.md)がアタッチされます。[VKC Node Collider](./VKCNodeCollider.md)はVKC Node Cylinder Colliderにとって必須となるコンポーネントのため、削除はできません。
 
     ![HEOMeshCollider_3](img/HEOCylinderCollider_03.jpg)
 

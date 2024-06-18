@@ -11,7 +11,7 @@
 
 ![HEOClickGuide_2](./img/HEOClickGuide_2.jpg)
 
-`clickArea`では`clickGuide`の表示/非表示を[HEOAreaCollider](./HEOAreacollider.md)及び[Show/HideItem](../Actions/Item/ShowHideItem.md)を使用して切りかえています。<br>
+`clickArea`では`clickGuide`の表示/非表示を[VKC Ite mArea Collider](./VKCItemAreaCollider.md)及び[Show/HideItem](../Actions/Item/ShowHideItem.md)を使用して切りかえています。<br>
 
 ![HEOClickGuide_3](./img/HEOClickGuide_3.jpg)
 
@@ -24,11 +24,11 @@
 
 ![HEOClickGuide_5](./img/HEOClickGuide_5.jpg)
 
-生成元のオブジェクトでは、例として[OpenWeb](../Actions/System/Openweb.md)及び[HEOCollider](./HEOCollider.md)にて`Clickable`を設定することで、クリックガイドが表示されている際にのみウェブページを開くギミックが実装できます。
+生成元のオブジェクトでは、例として[OpenWeb](../Actions/System/Openweb.md)及び[VKC Node Collider](./VKCNodeCollider.md)にて`Clickable`を設定することで、クリックガイドが表示されている際にのみウェブページを開くギミックが実装できます。
 
 ![HEOClickGuide_6](./img/HEOClickGuide_6.jpg)
 
-`clickguide`にはクリックガイド用の画像を表示するための[HEOPlane](./HEOPlane.md)があります。<br>
+`clickguide`にはクリックガイド用の画像を表示するための[VKC Item Plane](./VKCItemPlane.md)があります。<br>
 初期状態では`Billboard`及び`Show`が無効となっているため、有効に切り替えることをおすすめします。
 
 ![HEOClickGuide_7](./img/HEOClickGuide_7.jpg)

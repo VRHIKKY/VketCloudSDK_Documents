@@ -17,7 +17,7 @@ To use, select the object and add a new VKC Node Cylinder Collider component in 
 
     ![HEOMeshCollider_2](img/HEOCylinderCollider_02.jpg)
 
-1. When setting a VKC Node Cylinder Collider component, [HEOCollider](./HEOCollider.md) will be automatically attached. This component is essential for VKC Node Cylinder Collider and cannot be removed.
+1. When setting a VKC Node Cylinder Collider component, [VKC Node Collider](./VKCNodeCollider.md) will be automatically attached. This component is essential for VKC Node Cylinder Collider and cannot be removed.
 
     ![HEOMeshCollider_3](img/HEOCylinderCollider_03.jpg)
 

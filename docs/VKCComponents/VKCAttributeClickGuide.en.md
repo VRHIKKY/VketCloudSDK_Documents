@@ -12,7 +12,7 @@ Also, `[objectname_clickArea]` (henceforth referred as `clickguide`) will be gen
 
 ![HEOClickGuide_2](./img/HEOClickGuide_2.jpg)
 
-The `clickArea` gameobject controls the show/hide state of the `clickguide` gameobject, using the [HEOAreaCollider](./HEOAreacollider.md) and [Show/HideItem](../Actions/Item/ShowHideItem.md).
+The `clickArea` gameobject controls the show/hide state of the `clickguide` gameobject, using the [VKC Item Area Collider](./VKCItemAreaCollider.md) and [Show/HideItem](../Actions/Item/ShowHideItem.md).
 
 ![HEOClickGuide_3](./img/HEOClickGuide_3.jpg)
 
@@ -26,11 +26,11 @@ By modifying `clickArea` using [Enable/DisableClickableNode](../Actions/Node/Ena
 ![HEOClickGuide_5](./img/HEOClickGuide_5.jpg)
 
 For example, a clickable webpage gimmick syncronized with the click guide can be implemented. <br>
-This gimmick uses [OpenWeb](../Actions/System/Openweb.md) and a `Clickable` [HEOCollider](./HEOCollider.md) set to the original object.
+This gimmick uses [OpenWeb](../Actions/System/Openweb.md) and a `Clickable` [VKC Node Collider](./VKCNodeCollider.md) set to the original object.
 
 ![HEOClickGuide_6](./img/HEOClickGuide_6.jpg)
 
-The `clickguide` object contains a [HEOPlane](./HEOPlane.md) component to show the click guide image.<br>
+The `clickguide` object contains a [VKC Item Plane](./VKCItemPlane.md) component to show the click guide image.<br>
 In the initial state, the `Billboard` and `Show` is disabled, therefore enabling them are highly recommended.
 
 ![HEOClickGuide_7](./img/HEOClickGuide_7.jpg)
