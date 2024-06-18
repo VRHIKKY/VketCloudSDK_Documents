@@ -261,7 +261,7 @@ nav:
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
 - VKC Components:
   - VKCSetting:
-      # Basic
+    # Basic
     - VKCSettingBase: VketCloudSettings/BasicSettings.md
     - VKCSettingPlayer: VketCloudSettings/PlayerSettings.md
     - VKCSettingDespawnHeight: VketCloudSettings/DespawnHeightSettings.md
