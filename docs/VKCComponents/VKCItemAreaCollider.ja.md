@@ -5,11 +5,11 @@
 VKC Item Area Colliderは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
 コライダーにプレイヤーが進入した際にアクションを実行します。
 
-VKC Item Area Colliderをアタッチするオブジェクトには[VKCNodeCollider](./VKCNodeCollider.md)とColliderがアタッチされている必要があります。<br>
-なお、VKC Item Area Colliderをオブジェクトにアタッチすると[VKCNodeCollider](./VKCNodeCollider.md)とBox Colliderが自動で追加されます。<br>
-[VKCNodeCollider](./VKCNodeCollider.md)のtypeはAreaに設定されている必要があります。
+VKC Item Area Colliderをアタッチするオブジェクトには[VKC Node Collider](./VKCNodeCollider.md)とColliderがアタッチされている必要があります。<br>
+なお、VKC Item Area Colliderをオブジェクトにアタッチすると[VKC Node Collider](./VKCNodeCollider.md)とBox Colliderが自動で追加されます。<br>
+[VKC Node Collider](./VKCNodeCollider.md)のtypeはAreaに設定されている必要があります。
 
-![VKCNodeCollider](img/HEOCollider_1.jpg)
+![VKC Node Collider](img/HEOCollider_1.jpg)
 
 Actions,LeaveActionsそれぞれにおいてAddをクリックすることで任意のアクションを設定できます。<br>
 反対に、Deleteをクリックすることで最後尾のアクションを削除できます。
