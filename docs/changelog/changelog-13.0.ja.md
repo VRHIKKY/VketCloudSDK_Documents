@@ -2,6 +2,10 @@
 
 ## 追加されたページ
 
+- VKCComponents
+  - VKCAttribute
+    - [VKCAttributeClickableUI](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCAttribute/VKCAttributeClickableUI.html)
+
 ## 変更されたページ
 
 ## 削除されたページ
