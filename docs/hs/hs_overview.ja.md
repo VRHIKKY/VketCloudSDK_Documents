@@ -19,15 +19,15 @@ Projectウィンドウ(Assetsなどがあるところ)で右クリックして�
 
 ![hs_overview_2](img/hs_overview_2.jpg)
 
-### 2. HEOScriptをシーンに追加する
+### 2. VKC Attribute Scriptをシーンに追加する
 
 ![hs_overview_3](img/hs_overview_3.jpg)
 
 HeliScriptファイルを追加したら、次はシーンにHeliScriptの設定を行います。<pr>
-HeliScriptは[HEOScript](../HEOComponents/HEOScript.md)コンポーネントを使用してシーン内に登場させます。
+HeliScriptは[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)コンポーネントを使用してシーン内に登場させます。
 Inspector画面にてAdd Component > HEOScriptと選択してコンポーネントのアタッチを行います。
 
-[HEOScript](../HEOComponents/HEOScript.md)コンポーネントでは実行したいHeliScriptファイルを選びます。<br>
+[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)コンポーネントでは実行したいHeliScriptファイルを選びます。<br>
 メニュー右の「Select」を選択するとHeliScriptの一覧が出現するため、使いたいHeliScriptを選択します。
 
 ### 3. VketCloudSettings / BasicSettingsにてデバッグモードを有効にする
@@ -70,13 +70,13 @@ component HelloWorld
 
 ## HEOScriptの配置・オブジェクトの参照について
 
-[HEOScript](../HEOComponents/HEOScript.md)をアタッチ可能なGameObjectは、スクリプトの対象となる[HEOField](../HEOComponents/HEOField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
-詳しいHeliScriptの配置方法は[HEOScript](../HEOComponents/HEOScript.md)をご確認ください。
+[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)をアタッチ可能なGameObjectは、スクリプトの対象となる[VKC Item Field](../VKCComponents/VKCItemField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
+詳しいHeliScriptの配置方法は[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)をご確認ください。
 
-![HEOScript_attachable](../HEOComponents/img/HEOScript_attachable.jpg)
+![HEOScript_attachable](../VKCComponents/img/HEOScript_attachable.jpg)
 
 HeliScript内で各オブジェクトを参照する際は、後述するItem及びNodeによって取り扱います。<br>
-例として、以下のように[HEOField](../HEOComponents/HEOField.md)下のexampleObjectがクリックされた際にメッセージを出力するスクリプトが書けます。
+例として、以下のように[VKC Item Field](../VKCComponents/VKCItemField.md)下のexampleObjectがクリックされた際にメッセージを出力するスクリプトが書けます。
 
 ```C#
 component example
@@ -126,7 +126,7 @@ component example
     SDK Ver12.x以降より、Playerクラスの関数はコンストラクタでの呼び出しができなくなりました。<br>
     インスタンスの取得を行いたい際は、例として上記のようにフラグとなるbool変数を用意してコンストラクタ以外の関数にて呼び出してください。
 
-スクリプトを[HEOScript](../HEOComponents/HEOScript.md)に設定し、ワールドをビルドすると以下のようにオブジェクトをクリックした際にメッセージが出力されます。
+スクリプトを[VKCAttributeScript](../VKCComponents/VKCAttributeScript.md)に設定し、ワールドをビルドすると以下のようにオブジェクトをクリックした際にメッセージが出力されます。
 
 ![hs_overview_6](img/hs_overview_6.jpg)
 
@@ -140,23 +140,23 @@ Vket Cloud独自の概念として、Player, Item, そしてNodeがあります�
 ## Player
 
 Vket Cloudにおいて、Playerはワールド内の操作主体である自身を指します。<br>
-Playerの振る舞い方は[HEOPlayer](../HEOComponents/HEOPlayer.md)で定義されます。
+Playerの振る舞い方は[HEOPlayer](../VKCComponents/HEOPlayer.md)で定義されます。
 
 PlayerのHeliScriptでの取り扱いは[Playerクラス](./hs_class_player.md)をご参照ください。
 
 ## Item
 
 Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
-[HEOField](../HEOComponents/HEOField.md), [HEOObject](../HEOComponents/HEOObject.md), [HEOPlane](../HEOComponents/HEOPlane.md), [HEOActivity](../HEOComponents/HEOActivity.md)などがこれにあたります。
+[VKC Item Field](../VKCComponents/VKCItemField.md), [VKC Item Object](../VKCComponents/VKCItemObject.md), [VKC Item Plane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md)などがこれにあたります。
 
 ItemのHeliScriptでの取り扱いは[Itemクラス](./hs_class_item.md)をご参照ください。
 
 ## Node
 
-前述のItemのうち、[HEOField](../HEOComponents/HEOField.md)で定義されたItemに子オブジェクトがある場合、その子オブジェクトはItemのNodeとして扱われます。<br>
-例として、以下の[HEOField](../HEOComponents/HEOField.md)に取り付けられたObjectA, ObjectB, ObjectC, ObjectC2, ObjectC3はNodeとなり、[Show/HideNode](../Actions/Node/ShowHideNode.md), [Enable/DisableCollider](../Actions/Node/EnableDisableCollider.md)などのアクションの対象となります。<br>
+前述のItemのうち、[VKC Item Field](../VKCComponents/VKCItemField.md)で定義されたItemに子オブジェクトがある場合、その子オブジェクトはItemのNodeとして扱われます。<br>
+例として、以下の[VKC Item Field](../VKCComponents/VKCItemField.md)に取り付けられたObjectA, ObjectB, ObjectC, ObjectC2, ObjectC3はNodeとなり、[Show/HideNode](../Actions/Node/ShowHideNode.md), [Enable/DisableCollider](../Actions/Node/EnableDisableCollider.md)などのアクションの対象となります。<br>
 
-なお、[HEOField](../HEOComponents/HEOField.md)の子オブジェクトになっていない`ObjectD`はNodeではなく、かつItemでもない場合はビルド時にワールドに含まれないことに注意してください。
+なお、[VKC Item Field](../VKCComponents/VKCItemField.md)の子オブジェクトになっていない`ObjectD`はNodeではなく、かつItemでもない場合はビルド時にワールドに含まれないことに注意してください。
 
 ![hs_overview_7](img/hs_overview_7.jpg)
 

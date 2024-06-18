@@ -81,7 +81,7 @@ As the SDK has a default avatarfile, select this file if there is an empty entry
 
 ## Vket Cloud Settings are empty / Old settings from HEOWorldSetting and other components do not exist
 
-On Ver12.3 and later versions, settings in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), [HEOPlayer](../HEOComponents/HEOPlayer.md), and [HEODespawnHeight](../HEOComponents/HEODespawnHeight.md) have been migrated to
+On Ver12.3 and later versions, settings in [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md), [HEOPlayer](../VKCComponents/HEOPlayer.md), and [HEODespawnHeight](../VKCComponents/HEODespawnHeight.md) have been migrated to
  [VketCloudSettings](../VketCloudSettings/Overview.md).
 
 Although settings in the HEO components will be automatically migrated to VketCloudSettings, rare cases may occur causing settings to be empty as below:

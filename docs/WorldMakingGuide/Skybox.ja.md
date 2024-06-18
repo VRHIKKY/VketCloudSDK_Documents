@@ -33,6 +33,6 @@ VketCloudSDKでは、UnityのSkyboxを出力することは出来ません。そ
 ![Skybox_1](img/Skybox_1.jpg)
 
 !!! note "HEOBackgroundTextureについて"
-    背景を実装する別の方法として、背景テクスチャを設定する[HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)があります。
+    背景を実装する別の方法として、背景テクスチャを設定する[VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)があります。
 
-    ![HEOBackgroundTexture_2](../HEOComponents/img/HEOBackgroundTexture_2.jpg)
+    ![HEOBackgroundTexture_2](../VKCComponents/img/HEOBackgroundTexture_2.jpg)

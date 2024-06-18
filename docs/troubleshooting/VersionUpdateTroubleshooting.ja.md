@@ -82,7 +82,7 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 
 ## Vket Cloud Settingsにおける設定が空欄になっている / 旧バージョンのHEOWorldSettingコンポーネントから要素が引き継がれない
 
-Ver12.3以降、これまで[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)、[HEOPlayer](../HEOComponents/HEOPlayer.md)、[HEODespawnHeight](../HEOComponents/HEODespawnHeight.md)コンポーネントにて設定していたワールドに関する設定は[VketCloudSettings](../VketCloudSettings/Overview.md)にて設定されるようになりました。
+Ver12.3以降、これまで[HEOWorldSetting](../VKCComponents/HEOWorldSetting.md)、[HEOPlayer](../VKCComponents/HEOPlayer.md)、[HEODespawnHeight](../VKCComponents/HEODespawnHeight.md)コンポーネントにて設定していたワールドに関する設定は[VketCloudSettings](../VketCloudSettings/Overview.md)にて設定されるようになりました。
 
 バージョンアップ時に旧HEOコンポーネントの設定内容は自動でVketCloudSettingsに移植されますが、稀に以下の画像のように正しい設定が移植されず、空欄のままになる場合があります。
 

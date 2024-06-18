@@ -22,7 +22,7 @@ VketCloudSDKではビルド時のオプションにてテクスチャやアバ�
 - ワールドの平均ドローコール数：300以下
 - ワールドの最大ドローコール数：600以下
 
-ポリゴン数は、ビルド時にConsoleに表示されるNumofPolygonの総計 ([HEOObject](../HEOComponents/HEOObject.md)でheoファイルを読みこんでいる場合はフィールドのエクスポートを行ったとき)に表示されています。
+ポリゴン数は、ビルド時にConsoleに表示されるNumofPolygonの総計 ([VKC Item Object](../VKCComponents/VKCItemObject.md)でheoファイルを読みこんでいる場合はフィールドのエクスポートを行ったとき)に表示されています。
 
 また、テクスチャ容量は、releaseフォルダ内のdata/Field配下に存在するフォルダ内にあるtexフォルダの容量の総計で算出することができます。
 
@@ -37,13 +37,13 @@ VketCloudSDKではビルド時のオプションにてテクスチャやアバ�
 Vket Cloudにて、プレイヤーは自分の[マイアバター](../AboutVketCloudSDK/SetupAvatar.md)もしくはワールド付属の[プリセットアバター](../WorldMakingGuide/PresetAvatar.md)の二択から自身のアバターを選択できます。<br>
 これによって幅広いアバターの選択肢が生まれる一方で、大人数が集まるようなワールドではアバターの描画がデバイスにとって負荷となる場合があります。
 
-アバターによる描画負荷の対策として、ワールド側の対策として[HEOWorldSetting / MyAvatar](../HEOComponents/HEOWorldSetting.md#_5)においてワールド内で使用できるアバターの最大ポリゴン数、あるいはマイアバターの使用に制限を設けることができます。<br>
+アバターによる描画負荷の対策として、ワールド側の対策として[HEOWorldSetting / MyAvatar](../VKCComponents/HEOWorldSetting.md#_5)においてワールド内で使用できるアバターの最大ポリゴン数、あるいはマイアバターの使用に制限を設けることができます。<br>
 デフォルトでは50,000ポリゴンを上限としていますが、例として大人数が集まる場合は20,000ポリゴンまで下げる、といった設定が考えられます。
 
-![HEOWorldSetting_MyAvatar_1](../HEOComponents/img/HEOWorldSetting_MyAvatar_1.jpg)
+![HEOWorldSetting_MyAvatar_1](../VKCComponents/img/HEOWorldSetting_MyAvatar_1.jpg)
 
-この時、ポリゴン上限を超えたポリゴン数のアバターは、ワールドにて設定された[ダミーアバター](../HEOComponents/HEOWorldSetting.md#_4)に変更されます。<br>
-ダミーアバターの見た目は[heoファイル](../WorldMakingGuide/HEOExporter_Tutorial.md)の出力と[アバター設定](../HEOComponents/HEOWorldSetting.md#_4)での差し替えによって変えることができます。
+この時、ポリゴン上限を超えたポリゴン数のアバターは、ワールドにて設定された[ダミーアバター](../VKCComponents/HEOWorldSetting.md#_4)に変更されます。<br>
+ダミーアバターの見た目は[heoファイル](../WorldMakingGuide/HEOExporter_Tutorial.md)の出力と[アバター設定](../VKCComponents/HEOWorldSetting.md#_4)での差し替えによって変えることができます。
 
 SDKデフォルトのダミーアバター：
 
@@ -56,12 +56,12 @@ SDKデフォルトのダミーアバター：
 ## ロード時間の短縮のために
 
 プレイヤーにとって、ワールド入場時のロード時間はなるべく短い方が体験時のストレスが少ない傾向にあります。<br>
-SDKでは、入場前のロード時間を短縮するためにワールドのリソースを分割する[動的ローディング](../HEOComponents/HEOField.md)が使用できます。
+SDKでは、入場前のロード時間を短縮するためにワールドのリソースを分割する[動的ローディング](../VKCComponents/VKCItemField.md)が使用できます。
 
 特にスマートフォンなどPCに比べて処理に制約があるデバイスにおいては、例として入口 / 廊下 / メインの部屋...と細かくワールド内を分けることで一度に読み込まれるリソース量を分割すると負荷軽減の面において効果的です。<br>
 また、ブラウザの開発コンソールにおいてワールド入場時の読み込まれるリソースを分析することで、読み込み時間の負荷の原因となっているリソースを探し出すのも有効です。
 
-詳細な実装方法は[動的ローディング](../HEOComponents/HEOField.md)をご参照ください。
+詳細な実装方法は[動的ローディング](../VKCComponents/VKCItemField.md)をご参照ください。
 
 ## テクスチャの再フォーマットと負荷軽減
 
@@ -90,6 +90,6 @@ SDKではフォーマットツールとして[Export Compressed Texture](../SDKT
 - モデリングツール上でポリゴン数を削減、マテリアルを統合
 - 遠景のビルボード（画像）化
 
-また、一度に読み込まれるリソースを削減するために、[動的ローディング](../HEOComponents/HEOField.md)及び[オクルージョンカリング](./OcclusionCulling.md)が有効です。
+また、一度に読み込まれるリソースを削減するために、[動的ローディング](../VKCComponents/VKCItemField.md)及び[オクルージョンカリング](./OcclusionCulling.md)が有効です。
 
 ![OcclusionCulling_Result](img/OcclusionCulling_Result.gif)

@@ -15,6 +15,6 @@ By compressing textures, the texture load time causing longer world loading can 
 
 ## Dynamic Loading
 
-Using the [HEOField](../HEOComponents/HEOField.md) component, world resources can be [Dynamically Loaded / Unloaded](../HEOComponents/HEOField.md#configure-dynamic-loading) depending on the player's position.
+Using the [VKC Item Field](../VKCComponents/VKCItemField.md) component, world resources can be [Dynamically Loaded / Unloaded](../VKCComponents/VKCItemField.md#configure-dynamic-loading) depending on the player's position.
 
 By dynamic loading, the world load can be split to optimize resource loading, such as loading **only** the initial resources for world entrance, and controlling resources according to the player's actions.
