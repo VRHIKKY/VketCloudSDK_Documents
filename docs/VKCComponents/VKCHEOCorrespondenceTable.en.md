@@ -29,7 +29,7 @@ The VketCloudSDK includes the following types of components:
 | Field        | HEO Field                 | VKC Item Field             |
 | Object       | HEO Object                | VKC Item Object            |
 | Plane        | HEO Plane                 | VKC Item Plane             |
-| Text Plane   | HEO Text Plane            | VKC Item Textplane         |
+| Text Plane   | HEO Text Plane            | VKC Item Text Plane         |
 | Audio        | HEO Audio                 | VKC Item Audio             |
 | Particle     | HEO Particle              | VKC Item Particle          |
 | Spot         | HEO Spot                  | VKC Item Spot              |
