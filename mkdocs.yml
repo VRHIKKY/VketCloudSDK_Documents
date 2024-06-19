@@ -139,6 +139,7 @@ plugins:
             Optimization for Smartphones: スマートフォンのためのワールド軽量化
             # VKCComponents
             VKC Components: VKCコンポーネント
+            VKC/HEO Correspondence Table: VKC/HEO対応表
             # アクション
             Actions: アクションについて
             Actions Overview: アクションの概要
@@ -260,6 +261,7 @@ nav:
   - Texture Compression : WorldOptimization/TextureCompression.md
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
 - VKC Components:
+  - VKC/HEO Correspondence Table: VKCComponents/VKCHEOCorrespondenceTable.md
   - VKCSetting:
     # Basic
     - VKCSettingBase: VketCloudSettings/BasicSettings.md
