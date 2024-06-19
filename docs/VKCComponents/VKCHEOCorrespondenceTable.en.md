@@ -1,4 +1,4 @@
-# VKC / HEO Correspondence Chart
+# VKC / HEO Correspondence Table
 
 The VketCloudSDK includes the following types of components:
 
