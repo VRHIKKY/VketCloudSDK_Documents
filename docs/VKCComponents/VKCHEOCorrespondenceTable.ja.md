@@ -35,19 +35,19 @@ VketCloudSDKには、以下のような種類のコンポーネントが存在�
 
 ## Item 項目
 
-| Item 項目     | Item タイプ           | コンポーネント名 (-SDK12.3) | コンポーネント名 (SDK13.X-) |
-|---------------|----------------------|-----------------------------|------------------------------|
-| Field         | HEO Field            | VKC Item Field              | VKC Item Field               |
-| Object        | HEO Object           | VKC Item Object             | VKC Item Object              |
-| Plane         | HEO Plane            | VKC Item Plane              | VKC Item Plane               |
-| TextPlane     | HEO Text Plane       | VKC Item Textplane          | VKC Item Textplane           |
-| Audio         | HEO Audio            | VKC Item Audio              | VKC Item Audio               |
-| Particle      | HEO Particle         | VKC Item Particle           | VKC Item Particle            |
-| Spot          | HEO Spot             | VKC Item Spot               | VKC Item Spot                |
-| Area Collider | HEO Area Collider    | VKC Item Area Collider      | VKC Item Area Collider       |
-| Bg Texture    | HEO Background Texture | VKC Item Background Texture | VKC Item Background Texture  |
-| Activity      | HEO Activity         | VKC Item Activity           | VKC Item Activity            |
-| Camera        | HEO Camera           | VKC Item Camera             | VKC Item Camera              |
+| Item 項目     | コンポーネント名 (-SDK12.3) | コンポーネント名 (SDK13.X-) |
+|---------------|-----------------------------|------------------------------|
+| Field         | HEO Field                   | VKC Item Field               |
+| Object        | HEO Object                  | VKC Item Object              |
+| Plane         | HEO Plane                   | VKC Item Plane               |
+| TextPlane     | HEO Text Plane              | VKC Item Textplane           |
+| Audio         | HEO Audio                   | VKC Item Audio               |
+| Particle      | HEO Particle                | VKC Item Particle            |
+| Spot          | HEO Spot                    | VKC Item Spot                |
+| Area Collider | HEO Area Collider           | VKC Item Area Collider       |
+| Bg Texture    | HEO Background Texture      | VKC Item Background Texture  |
+| Activity      | HEO Activity                | VKC Item Activity            |
+| Camera        | HEO Camera                  | VKC Item Camera              |
 
 ## Node 項目
 

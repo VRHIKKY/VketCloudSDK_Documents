@@ -8,9 +8,9 @@ The VketCloudSDK includes the following types of components:
 - **Attribute Component**: A component that assigns attributes to items, nodes, objects, etc.
 - **Legacy Component (Deprecated)**: Components from older versions.
 
-## Setting Items
+## Setting Components
 
-| Major Item | Minor Item          | Component Name (-SDK9.X) | Component Name (SDK10.X-SDK12.3) | Component Name (SDK13.X-) |
+| Major Component | Minor Item          | Component Name (-SDK9.X) | Component Name (SDK10.X-SDK12.3) | Component Name (SDK13.X-) |
 |------------|---------------------|--------------------------|----------------------------------|---------------------------|
 | Basic      | version             | HEO World Settings       | Base Setting                     | VKC Setting Base          |
 |            | debug mode          | HEO World Settings       | Base Setting                     | VKC Setting Base          |
@@ -33,25 +33,25 @@ The VketCloudSDK includes the following types of components:
 | Spawn      | spawns              | HEO Spawn                | HEO Spawn                        | VKC Setting Spawn         |
 | Nameplate  | nameplate           | HEO Nameplate            | HEO Nameplate                    | VKC Setting Nameplate     |
 
-## Item Items
+## Item Components
 
-| Item Item    | Item Type            | Component Name (-SDK12.3) | Component Name (SDK13.X-) |
-|--------------|----------------------|---------------------------|----------------------------|
-| Field        | HEO Field            | VKC Item Field            | VKC Item Field             |
-| Object       | HEO Object           | VKC Item Object           | VKC Item Object            |
-| Plane        | HEO Plane            | VKC Item Plane            | VKC Item Plane             |
-| Text Plane   | HEO Text Plane       | VKC Item Textplane        | VKC Item Textplane         |
-| Audio        | HEO Audio            | VKC Item Audio            | VKC Item Audio             |
-| Particle     | HEO Particle         | VKC Item Particle         | VKC Item Particle          |
-| Spot         | HEO Spot             | VKC Item Spot             | VKC Item Spot              |
-| Area Collider| HEO Area Collider    | VKC Item Area Collider    | VKC Item Area Collider     |
-| Bg Texture   | HEO Background Texture | VKC Item Background Texture | VKC Item Background Texture |
-| Activity     | HEO Activity         | VKC Item Activity         | VKC Item Activity          |
-| Camera       | HEO Camera           | VKC Item Camera           | VKC Item Camera            |
+| Item Component    | Component Name (-SDK12.3) | Component Name (SDK13.X-) |
+|--------------|---------------------------|----------------------------|
+| Field        | HEO Field                 | VKC Item Field             |
+| Object       | HEO Object                | VKC Item Object            |
+| Plane        | HEO Plane                 | VKC Item Plane             |
+| Text Plane   | HEO Text Plane            | VKC Item Textplane         |
+| Audio        | HEO Audio                 | VKC Item Audio             |
+| Particle     | HEO Particle              | VKC Item Particle          |
+| Spot         | HEO Spot                  | VKC Item Spot              |
+| Area Collider| HEO Area Collider         | VKC Item Area Collider     |
+| Bg Texture   | HEO Background Texture    | VKC Item Background Texture |
+| Activity     | HEO Activity              | VKC Item Activity          |
+| Camera       | HEO Camera                | VKC Item Camera            |
 
-## Node Items
+## Node Components
 
-| Node Item           | Component Name (-SDK12.3) | Component Name (SDK13.X-)        |
+| Node Component           | Component Name (-SDK12.3) | Component Name (SDK13.X-)        |
 |---------------------|---------------------------|----------------------------------|
 | Alpha Animation     | -                         | VKC Node Alpha Animation         |
 | Animation           | HEO Animation             | VKC Node Rotate Animation        |
@@ -69,9 +69,9 @@ The VketCloudSDK includes the following types of components:
 | UV Scroll           | HEO UV Scroller           | VKC Node UV Scroller             |
 | Video               | HEO Video Trigger         | VKC Node Video Trigger           |
 
-## Attribute Items
+## Attribute Components
 
-| Attribute Item | Component Name (-SDK12.3) | Component Name (SDK13.X-)       |
+| Attribute Component | Component Name (-SDK12.3) | Component Name (SDK13.X-)       |
 |----------------|---------------------------|---------------------------------|
 | Action Trigger | HEO Action Trigger        | VKC Attribute Action Trigger    |
 | Property       | HEO Property              | VKC Attribute Property          |
