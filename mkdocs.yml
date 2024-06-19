@@ -213,8 +213,8 @@ nav:
     - Player Settings: VketCloudSettings/PlayerSettings.md
     - Despawn Height Settings: VketCloudSettings/DespawnHeightSettings.md
     # Advanced
-    - Camera Settings: VketCloudSettings/CameraSettings.md
     - Rendering Settings: VketCloudSettings/RenderingSettings.md
+    - Camera Settings: VketCloudSettings/CameraSettings.md
     - Avatar Settings: VketCloudSettings/AvatarSettings.md
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
@@ -268,8 +268,8 @@ nav:
     - VKCSettingPlayer: VketCloudSettings/PlayerSettings.md
     - VKCSettingDespawnHeight: VketCloudSettings/DespawnHeightSettings.md
     # Advanced
-    - VKCSettingCamera: VketCloudSettings/CameraSettings.md
     - VKCSettingRendering: VketCloudSettings/RenderingSettings.md
+    - VKCSettingCamera: VketCloudSettings/CameraSettings.md
     - VKCSettingAvatar: VketCloudSettings/AvatarSettings.md
     - VKCSettingMyAvatar: VketCloudSettings/MyAvatarSettings.md
     # Optional
