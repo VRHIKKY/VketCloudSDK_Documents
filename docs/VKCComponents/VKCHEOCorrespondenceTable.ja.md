@@ -10,28 +10,17 @@ VketCloudSDKには、以下のような種類のコンポーネントが存在�
 
 ## Setting 項目
 
-| 大項目    | 小項目               | コンポーネント名 (-SDK9.X)  | コンポーネント名 (SDK10.X-SDK12.3) | コンポーネント名 (SDK13.X-) |
-|-----------|----------------------|----------------------------|------------------------------------|-----------------------------|
-| Basic     | version              | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | debugmode            | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | spatiumcode          | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | vrmdrop              | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | occlusionculling     | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | usegamepad           | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | useavatarclick       | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | voiceattenuation     | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | worldicon            | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | physics              | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-|           | scripts              | HEO World Settings         | Base Setting                        | VKC Setting Base            |
-| Avatars   | avatars              | HEO World Settings         | Avatar Setting                      | VKC Setting Avatar          |
-|           | avatariconshow       | HEO World Settings         | Avatar Setting                      | VKC Setting Avatar          |
-|           | dummyavatars         | HEO World Settings         | Avatar Setting                      | VKC Setting Avatar          |
-| My Avatar | my avatar            | HEO World Settings         | My Avatar Setting                   | VKC Setting My Avatar       |
-| Camera    | camera               | HEO World Settings         | World Camera Setting                | VKC Setting World Camera    |
-|           | raycastmaxdistance   | HEO World Settings         | World Camera Setting                | VKC Setting World Camera    |
-| Player    | player               | HEO Player                 | Player Setting                      | VKC Setting Player          |
-| Spawn     | spawns               | HEO Spawn                  | HEO Spawn                           | VKC Setting Spawn           |
-| Nameplate | nameplate            | HEO Nameplate              | HEO Nameplate                       | VKC Setting Nameplate       |
+| 大項目    | コンポーネント名 (-SDK9.X)  | コンポーネント名 (SDK10.X-SDK12.3) | コンポーネント名 (SDK13.X-) |
+|-----------|----------------------------|------------------------------------|-----------------------------|
+| Basic     | HEO World Settings         | Base Setting                        | VKC Setting Base            |
+| Player    | HEO Player                 | Player Setting                      | VKC Setting Player          |
+| DespawnHeight    | HEO Despawn Height                 | Despawn Height Setting                      | VKC Setting Despawn Height          |
+| Rendering | HEO Rendering              | Rendering Setting                       | VKC Setting Rendering       |
+| Camera    | HEO World Settings         | World Camera Setting                | VKC Setting World Camera    |
+| Avatars   | HEO World Settings         | Avatar Setting                      | VKC Setting Avatar          |
+| My Avatar | HEO World Settings         | My Avatar Setting                   | VKC Setting My Avatar       |
+| Spawn     | HEO Spawn                  | HEO Spawn                           | VKC Setting Spawn           |
+| Nameplate | HEO Nameplate              | HEO Nameplate                       | VKC Setting Nameplate       |
 
 ## Item 項目
 

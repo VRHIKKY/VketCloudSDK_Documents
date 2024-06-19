@@ -10,28 +10,17 @@ The VketCloudSDK includes the following types of components:
 
 ## Setting Components
 
-| Major Component | Minor Item          | Component Name (-SDK9.X) | Component Name (SDK10.X-SDK12.3) | Component Name (SDK13.X-) |
-|------------|---------------------|--------------------------|----------------------------------|---------------------------|
-| Basic      | version             | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | debug mode          | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | spatium code        | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | vrm drop            | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | occlusion culling   | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | use gamepad         | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | use avatar click    | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | voice attenuation   | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | world icon          | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | physics             | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-|            | scripts             | HEO World Settings       | Base Setting                     | VKC Setting Base          |
-| Avatars    | avatars             | HEO World Settings       | Avatar Setting                   | VKC Setting Avatar        |
-|            | avatar icon show    | HEO World Settings       | Avatar Setting                   | VKC Setting Avatar        |
-|            | dummy avatars       | HEO World Settings       | Avatar Setting                   | VKC Setting Avatar        |
-| My Avatar  | my avatar           | HEO World Settings       | My Avatar Setting                | VKC Setting My Avatar     |
-| Camera     | camera              | HEO World Settings       | World Camera Setting             | VKC Setting World Camera  |
-|            | raycast max distance| HEO World Settings       | World Camera Setting             | VKC Setting World Camera  |
-| Player     | player              | HEO Player               | Player Setting                   | VKC Setting Player        |
-| Spawn      | spawns              | HEO Spawn                | HEO Spawn                        | VKC Setting Spawn         |
-| Nameplate  | nameplate           | HEO Nameplate            | HEO Nameplate                    | VKC Setting Nameplate     |
+| Major Component | Component Name (-SDK9.X) | Component Name (SDK10.X-SDK12.3) | Component Name (SDK13.X-) |
+|------------|--------------------------|----------------------------------|---------------------------|
+| Basic     | HEO World Settings         | Base Setting                        | VKC Setting Base            |
+| Player    | HEO Player                 | Player Setting                      | VKC Setting Player          |
+| DespawnHeight    | HEO Despawn Height                 | Despawn Height Setting                      | VKC Setting Despawn Height          |
+| Rendering | HEO Rendering              | Rendering Setting                       | VKC Setting Rendering       |
+| Camera    | HEO World Settings         | World Camera Setting                | VKC Setting World Camera    |
+| Avatars   | HEO World Settings         | Avatar Setting                      | VKC Setting Avatar          |
+| My Avatar | HEO World Settings         | My Avatar Setting                   | VKC Setting My Avatar       |
+| Spawn     | HEO Spawn                  | HEO Spawn                           | VKC Setting Spawn           |
+| Nameplate | HEO Nameplate              | HEO Nameplate                       | VKC Setting Nameplate       |
 
 ## Item Components
 
