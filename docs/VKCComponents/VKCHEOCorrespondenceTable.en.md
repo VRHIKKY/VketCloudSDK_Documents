@@ -2,15 +2,15 @@
 
 The VketCloudSDK includes the following types of components:
 
-- **Setting Component**: A component that can only be assigned one value per scene.
-- **Item Component**: A component that can be assigned multiple values within a scene.
-- **Node Component**: A component related to nodes.
-- **Attribute Component**: A component that assigns attributes to items, nodes, objects, etc.
+- **Setting Component**: Components that can only be assigned one value per scene.
+- **Item Component**: Components that can be assigned multiple values within a scene.
+- **Node Component**: Components related to nodes.
+- **Attribute Component**: Components that assigns attributes to items, nodes, objects, etc.
 - **Legacy Component (Deprecated)**: Components from older versions.
 
 ## Setting Components
 
-| Major Component | Component Name (-SDK9.X) | Component Name (SDK10.X-SDK12.3) | Component Name (SDK13.X-) |
+| Category | Component Name (-SDK9.X) | Component Name (SDK10.X-SDK12.3) | Component Name (SDK13.X-) |
 |------------|--------------------------|----------------------------------|---------------------------|
 | Basic     | HEO World Settings         | Base Setting                        | VKC Setting Base            |
 | Player    | HEO Player                 | Player Setting                      | VKC Setting Player          |
@@ -33,8 +33,8 @@ The VketCloudSDK includes the following types of components:
 | Audio        | HEO Audio                 | VKC Item Audio             |
 | Particle     | HEO Particle              | VKC Item Particle          |
 | Spot         | HEO Spot                  | VKC Item Spot              |
-| Area Collider| HEO Area Collider         | VKC Item Area Collider     |
-| Bg Texture   | HEO Background Texture    | VKC Item Background Texture |
+| Area Collider | HEO Area Collider         | VKC Item Area Collider     |
+| Bg. Texture   | HEO Background Texture    | VKC Item Background Texture |
 | Activity     | HEO Activity              | VKC Item Activity          |
 | Camera       | HEO Camera                | VKC Item Camera            |
 
