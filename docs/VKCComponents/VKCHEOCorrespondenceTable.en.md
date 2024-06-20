@@ -5,7 +5,7 @@ The VketCloudSDK includes the following types of components:
 - **Setting Component**: Components that can only be assigned one value per scene.
 - **Item Component**: Components that can be assigned multiple values within a scene.
 - **Node Component**: Components related to nodes.
-- **Attribute Component**: Components that assigns attributes to items, nodes, objects, etc.
+- **Attribute Component**: Components that assign attributes to items, nodes, objects, etc.
 - **Legacy Component (Deprecated)**: Components from older versions.
 
 ## Setting Components
