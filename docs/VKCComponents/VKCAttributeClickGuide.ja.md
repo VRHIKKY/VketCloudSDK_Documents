@@ -6,12 +6,13 @@
 `OFF`を選択すると、生成されたオブジェクトは**削除**されます。
 
 ## 使い方
+
 `VKC Attribute Click Guide`を押した際、`VKC Attribute Click Guide`がアタッチされたオブジェクトの子に`[オブジェクト名_clickArea]`(以下、`clickArea`)が生成されます。<br>
 また、`World`オブジェクトの外に`[オブジェクト名_clickguide]`(以下、`clickguide`)が生成されます。
 
 ![HEOClickGuide_2](./img/HEOClickGuide_2.jpg)
 
-`clickArea`では`clickGuide`の表示/非表示を[VKC Ite mArea Collider](./VKCItemAreaCollider.md)及び[Show/HideItem](../Actions/Item/ShowHideItem.md)を使用して切りかえています。<br>
+`clickArea`では`clickGuide`の表示/非表示を[VKC Item Area Collider](./VKCItemAreaCollider.md)及び[Show/HideItem](../Actions/Item/ShowHideItem.md)を使用して切りかえています。<br>
 
 ![HEOClickGuide_3](./img/HEOClickGuide_3.jpg)
 

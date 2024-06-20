@@ -5,8 +5,8 @@
 By selecting `ON`, this component generates gameobjects for showing a click guide within the designated range.<br>
 Selecting `OFF` will **delete** the generated gameobjects.
 
-
 ## Usage
+
 When activating `VKC Attribute Click Guide`, the `[objectname_clickArea]` gameobject (henceforth referred as `clickArea`) will be generated as a child object.<br>
 Also, `[objectname_clickArea]` (henceforth referred as `clickguide`) will be generated outside the `World` object.
 
