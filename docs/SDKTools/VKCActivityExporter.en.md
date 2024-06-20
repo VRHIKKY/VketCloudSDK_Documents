@@ -20,7 +20,7 @@ For basic information about Activity and how-to-use, please refer to [VKC Item A
 
     See "[VKCComponents available in Activity](#VKCComponents-available-in-activity)" for a list of available VKCComponents.
 
-3. Select `Export as Activity` to generate a **VKC Activity Exporter** object.<br> The previously selected objects will be a child-object of **VKC Activity Exporter**. 
+3. Select `Export as Activity` to generate a **VKC Activity Exporter** object.<br> The previously selected objects will be a child-object of **VKC Activity Exporter**.
 
     ![VKCActivityExporter_3](img/VKCActivityExporter_3.jpg)
 
@@ -138,60 +138,60 @@ component VketChan
 
 ## VKCComponents available in Activity
 
-- [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+- [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
 
-- [VKCNodeRotateAnimation](../VKCComponents/VKCNodeRotateAnimation.md)
+- [VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md)
 
-- [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+- [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
 
-- [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+- [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
 
-- [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+- [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
 
-- [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+- [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
 
-- [VKCNodeCollider](../VKCComponents/VKCNodeCollider.md)
+- [VKC Node Collider](../VKCComponents/VKCNodeCollider.md)
 
-- [VKCItemField](../VKCComponents/VKCItemField.md)
+- [VKC Item Field](../VKCComponents/VKCItemField.md)
 
-- [VKCNodeMeshCollider](../VKCComponents/VKCNodeMeshCollider.md)
+- [VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)
 
-- [VKCItemObject](../VKCComponents/VKCItemObject.md)
+- [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
-- [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+- [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
 
-- [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+- [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
-- [VKCNodeShadow](../VKCComponents/VKCNodeShadow.md)
+- [VKC Node Shadow](../VKCComponents/VKCNodeShadow.md)
 
-- [VKCItemSpot](../VKCComponents/VKCItemSpot.md)
+- [VKC Item Spot](../VKCComponents/VKCItemSpot.md)
 
-- [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+- [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
-- [VKCNodeUVScroller](../VKCComponents/VKCNodeUVScroller.md)
+- [VKC Node UV Scroller](../VKCComponents/VKCNodeUVScroller.md)
 
-- [VKCNodeVideoTrigger](../VKCComponents/VKCNodeVideoTrigger.md)  *On SDK Ver12.3.4 and later versions
+- [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) * On SDK Ver12.3.4 and later versions
 
-!!! caution "HEOVideoTrigger in Activity"
-    On SDK Ver12.3.4 and later versions, HEOVideoTrigger can be included on exporting Activity.<br>
+!!! caution "VKC Node Video Trigger in Activity"
+    On SDK Ver12.3.4 and later versions, [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) can be included on exporting Activity.<br>
     However, as Autoplay cannot be enabled in Activity, the player must manually click or use the [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) to play the video.
 
 ## VKCComponents unavailable/unsupported in Activity
 
-- [VKCAttributeActionTrigger](../VKCComponents/VKCAttributeActionTrigger.md)
+- [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.md)
 
-- [VKCNodeCylinderCollider](../WorldMakingGuide/Collider.md)
+- [VKC Node Cylinder Collider](../WorldMakingGuide/Collider.md)
 
-- [VKCNodeBlendShapeTranslator](../VKCComponents/VKCNodeBlendShapeTranslator.md)
+- [VKC Node Blend Shape Translator](../VKCComponents/VKCNodeBlendShapeTranslator.md)
 
-- [VKCNodeLODLevel](../VKCComponents/VKCNodeLODLevel.md)
+- [VKC Node LOD Level](../VKCComponents/VKCNodeLODLevel.md)
 
-- [VKCNodeMirror](../VKCComponents/VKCNodeMirror.md)
+- [VKC Node Mirror](../VKCComponents/VKCNodeMirror.md)
 
-- [VKCNodeReflectionProbeType](../VKCComponents/VKCNodeReflectionProbeType.md)
+- [VKC Node Reflection Probe Type](../VKCComponents/VKCNodeReflectionProbeType.md)
 
-- [VKCAttributeProperty](../VKCComponents/VKCAttributeProperty.md) * WIP
+- [VKC Attribute Property](../VKCComponents/VKCAttributeProperty.md)
 
-- [VKCAttributeScript](../VKCComponents/VKCAttributeScript.md)
+- [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)
 
-- [VKCNodeVideoTrigger](../VKCComponents/VKCNodeVideoTrigger.md) * Before SDK Ver12.3.4
+- [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) * Before SDK Ver12.3.4
