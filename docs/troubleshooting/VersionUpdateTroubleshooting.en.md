@@ -55,18 +55,18 @@ Taking a backup of the pre-updated world is **strongly** recommended for reattac
 
 The components listed below may potentially be shown as missing:
 
-- HEO Animation
-- HEO Collider
-- HEO Cylinder Collider
-- HEO lbl Cube Map
-- HEO Info
-- HEO Mesh Collider
-- HEO Mirror
-- HEO Object Type
+- VKC Node Rotate Animation/HEOAnimation
+- VKC Node Collider/HEOCollider
+- VKC Node Cylinder Collider/HEOCylinderCollider
+- HEOIblCubeMap
+- VKC Node Blendshape Translator/HEOInfo
+- VKC Node Mesh Collider/HEOMeshCollider
+- VKC Node Mirror/HEOMirror
+- VKC Node Reflection Probe Type/HEOObjectType
 - HEO Reflection Probe
-- HEO Shadow
-- HEO LOD Level
-- HEO UV Scroller
+- VKC Node Shadow/HEOShadow
+- VKC Node LOD Level/HEOLODLevel
+- VKC Node UV Scroller/HEOUVScroller
 
 !!! note caution
     When updating from Ver5.4 to Ver9.3, the HEOWorldSetting > Avatars > Avatar File settings may be missing, set the file by the procedure below on such occasion.
@@ -81,7 +81,7 @@ As the SDK has a default avatarfile, select this file if there is an empty entry
 
 ## Vket Cloud Settings are empty / Old settings from HEOWorldSetting and other components do not exist
 
-On Ver12.3 and later versions, settings in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), [HEOPlayer](../HEOComponents/HEOPlayer.md), and [HEODespawnHeight](../HEOComponents/HEODespawnHeight.md) have been migrated to
+On Ver12.3 and later versions, settings in [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md), [HEOPlayer](../VKCComponents/HEOPlayer.md), and [HEODespawnHeight](../VKCComponents/HEODespawnHeight.md) have been migrated to
  [VketCloudSettings](../VketCloudSettings/Overview.md).
 
 Although settings in the HEO components will be automatically migrated to VketCloudSettings, rare cases may occur causing settings to be empty as below:

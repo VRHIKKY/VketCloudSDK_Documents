@@ -230,7 +230,7 @@ VketCloudSDKは、簡易アバターの設定が通常のワールド設定で�
 
 #### VketCloudSDKのポリゴン数設定方法
 
-1. Hierarchyから[WorldSetting](../HEOComponents/HEOWorldSetting.md)オブジェクトを選択する
+1. Hierarchyから[WorldSetting](../VKCComponents/HEOWorldSetting.md)オブジェクトを選択する
 
 2. MyAvatarタブを選択する
 

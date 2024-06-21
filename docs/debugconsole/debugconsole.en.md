@@ -58,9 +58,9 @@ The Texture Size (Memory) will display the total texture size of the components 
     -  `Renderer`
     -  `MeshRenderer`
     -  `SkinnedMeshRenderer`
-    -  `HEOPlane`
-    -  `HEOBackgroundTexture`
-    -  `HEONameplate`: Nameplate / Image type object
+    -  `VKC Item Plane`
+    -  `VKC Item BackgroundTexture`
+    -  `VKC Setting Nameplate`: Nameplate / Image type object
     -  `AvatarSetting`: Avatar File components
       -  Thumbnail(Japanese)
       -  Thumbnail(English)

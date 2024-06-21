@@ -12,7 +12,7 @@ RenderingSettings handles the rendering settings of the world.
 | `Light Intensity` | 1.0 | Set the world light's intensity. |
 | `Lightmap Intensity` | 1.0 | Set the light map's intensity. |
 | `Fade In Time` | 2.0 | Set the white fade-in length on world enter in seconds.|
-| `Shadow Type`| Round | Set the Shadow Type. `round` is a round shadow, and `normalshadowmap` is a normal shadow map. <br>`normalshadowmap` is used with [HEOShadow](../HEOComponents/HEOShadow.md).|
+| `Shadow Type`| Round | Set the Shadow Type. `round` is a round shadow, and `normalshadowmap` is a normal shadow map. <br>`normalshadowmap` is used with [VKC Node Shadow](../VKCComponents/VKCNodeShadow.md).|
 | `Shadow Bias` | 0.001 | Set the bias value on drawing shadows.|
 | `Shadow Area Size` | 3.0 | Set the distance for drawing shadow in meter.|
 | `Shadow Fade Size` | 1.0 |Set the fadeout size growing from the shadow's periphery in meter. |
