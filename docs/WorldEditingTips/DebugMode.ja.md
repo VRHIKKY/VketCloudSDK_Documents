@@ -46,7 +46,7 @@ Vket Cloud Settings / [BasicSettings](../VketCloudSettings/BasicSettings.md)に�
 
 ### 5行目以降
 
-コンポーネントテキストです。例として [HEOScript](../HEOComponents/HEOScript.md) にて [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline)を実行するとここに出力されます。
+コンポーネントテキストです。例として [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md) にて [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline)を実行するとここに出力されます。
 
 ## F2：インフォメーションUI表示
 
@@ -140,14 +140,14 @@ Sepia : セピア調になります。
 ワールド内の当たり判定を表示します。<br>
 SphereColliderは円形モデル表示、BoxColliderは枠線表示になります。
 
-※Mesh Rendererを無効にした状態でHEOObjectに書き出したクリック判定は表示されません。
+※Mesh Rendererを無効にした状態でVKC Item Objectに書き出したクリック判定は表示されません。
 
 各色の役割は下記の通りです。
 
 | 名称 | 機能 |
 | ---- | ---- |
 | 赤　|　クリック判定です。|
-| 紫　|　Fieldオブジェクト設置位置です。基本は(0,0,0)の原点に表示され、HEOActivityを設置している場合はそれの座標にも表示されます。<br>扱い上はBoxColliderと同様ですが、例外的に枠線ではなく紫色のモデル表示となっています。|
+| 紫　|　Fieldオブジェクト設置位置です。基本は(0,0,0)の原点に表示され、VKC Item Activityを設置している場合はそれの座標にも表示されます。<br>扱い上はBoxColliderと同様ですが、例外的に枠線ではなく紫色のモデル表示となっています。|
 | 橙　|　プレイヤーのクリック判定です。 |
 | 黄　|　エリアコライダーです。  |
 | 緑　|　ReflectionProbeの範囲です。|

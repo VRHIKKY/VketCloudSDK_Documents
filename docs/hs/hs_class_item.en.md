@@ -1,9 +1,9 @@
 # Item class
 
 On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
-For example, objects defined as items are [HEOField](../HEOComponents/HEOField.md), [HEOObject](../HEOComponents/HEOObject.md), [HEOPlane](../HEOComponents/HEOPlane.md), [HEOActivity](../HEOComponents/HEOActivity.md), and other objects.
+For example, objects defined as items are [VKCItemField](../VKCComponents/VKCItemField.md), [VKCItemObject](../VKCComponents/VKCItemObject.md), [VKCItemPlane](../VKCComponents/VKCItemPlane.md), [VKCItemActivity](../VKCComponents/VKCItemActivity.md), and other objects.
 
-The Item class is for handling such Items, and "Nodes" which are child objects of [HEOField](../HEOComponents/HEOField.md) on HeliScript.
+The Item class is for handling such Items, and "Nodes" which are child objects of [VKCItemField](../VKCComponents/VKCItemField.md) on HeliScript.
 
 An Item class object is obtainable by specifying the item name with hsItemGet() or running hsItemGetSelf().
 
@@ -30,7 +30,7 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-Global function. Obtains the Item located under [HEOField](../HEOComponents/HEOField.md) and returns it as an Item instance.
+Global function. Obtains the Item located under [VKCItemField](../VKCComponents/VKCItemField.md) and returns it as an Item instance.
 
 ### hsItemGetSelf
 
@@ -51,16 +51,16 @@ Judges whether this class is identical to the argument obj.
 When obtaining Item objects using hsItemGet(), etc., a different instance may be obtained despite being the same Item. For checking identity, use Equals() instead of "===" operator.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetName
 
@@ -69,16 +69,16 @@ When obtaining Item objects using hsItemGet(), etc., a different instance may be
 Get the name of the Item.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetPos
 
@@ -87,14 +87,14 @@ Get the name of the Item.
 Move Item to the designated position.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetPos
 
@@ -103,15 +103,15 @@ Move Item to the designated position.
 Get the local position of Item.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetWorldPos
 
@@ -120,8 +120,8 @@ Get the local position of Item.
 Get the world position of Item.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### SetQuaternion
 
@@ -130,14 +130,14 @@ Get the world position of Item.
 Set the quaternion rotation of Item.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetQuaternion
 
@@ -146,14 +146,14 @@ Set the quaternion rotation of Item.
 Get the local rotation of Item by quaternion.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetWorldQuaternion
 
@@ -162,8 +162,8 @@ Get the local rotation of Item by quaternion.
 Get the world rotation of Item by quaternion.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### GetWorldRotate
 
@@ -172,8 +172,8 @@ Get the world rotation of Item by quaternion.
 Get the world rotation of Item by Vector3.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### GetScale
 
@@ -182,10 +182,10 @@ Get the world rotation of Item by Vector3.
 Get the scale of Item by Vector3.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetScale
 
@@ -194,10 +194,10 @@ Get the scale of Item by Vector3.
 Set the scale of Item by Vector3.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### MovePos
 
@@ -208,8 +208,8 @@ Moves the Item over [time] seconds to the coordinates specified by pos.
 If CollisionDetection is set to true, collision detection will be enabled as like the player avatar.
 
 ??? note "Available object types for this method"
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsMoving
 
@@ -218,8 +218,8 @@ If CollisionDetection is set to true, collision detection will be enabled as lik
 Returns true if the Item is moving.
 
 ??? note "Available object types for this method"
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### Play
 
@@ -228,9 +228,9 @@ Returns true if the Item is moving.
 Start playing a sound or particle. Returns true if the playback process has started successfully. Returns false on failure.
 
 ??? note "Available object types for this method"
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
 
 ### Stop
 
@@ -239,9 +239,9 @@ Start playing a sound or particle. Returns true if the playback process has star
 Stop the sound or particle that is playing.
 
 ??? note "Available object types for this method"
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
 
 ### IsPlay
 
@@ -250,13 +250,13 @@ Stop the sound or particle that is playing.
 Returns true if the sound or particle is playing.
 
 ??? note "Available object types for this method"
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
     ??? warning "Different return values for IsPlay"
-        - [HEOAudio](../HEOComponents/HEOAudio.md): Returns true if the designated audio clip is playing
-        - [HEOObject](../HEOComponents/HEOObject.md): Returns true if designated hem in Motion list is playing, when object mode is Motion
-        - [HEOParticle](../HEOComponents/HEOParticle.md): Returns true if designated .hep particle is playing
+        - [VKCItemAudio](../VKCComponents/VKCItemAudio.md): Returns true if the designated audio clip is playing
+        - [VKCItemObject](../VKCComponents/VKCItemObject.md): Returns true if designated hem in Motion list is playing, when object mode is Motion
+        - [VKCItemParticle](../VKCComponents/VKCItemParticle.md): Returns true if designated .hep particle is playing
 
 ### SetShow
 
@@ -265,12 +265,12 @@ Returns true if the sound or particle is playing.
 Display Item with true. Hide the Item with false.
 
 ??? note "Available object types for this method"
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsShow
 
@@ -279,12 +279,12 @@ Display Item with true. Hide the Item with false.
 Returns true if the Item is visible, false otherwise.
 
 ??? note "Available object types for this method"
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### ChangeMotion
 
@@ -293,7 +293,7 @@ Returns true if the Item is visible, false otherwise.
 Change the motion according to the designated MotionName.
 
 ??? note "Available object types for this method"
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### Load
 
@@ -302,16 +302,16 @@ Change the motion according to the designated MotionName.
 Start loading the Item. Returns false if the loading process fails to start.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### Unload
 
@@ -320,16 +320,16 @@ Start loading the Item. Returns false if the loading process fails to start.
 Unload the Item. Returns false if the unloading process fails.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsLoading
 
@@ -338,16 +338,16 @@ Unload the Item. Returns false if the unloading process fails.
 Returns true if the Item is loading, false otherwise.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsLoaded
 
@@ -356,16 +356,16 @@ Returns true if the Item is loading, false otherwise.
 Returns true if the Item has finished loading, false otherwise.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetNodeIndexByName
 
@@ -374,8 +374,8 @@ Returns true if the Item has finished loading, false otherwise.
 Finds a node by name and returns an index identifying that node.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### GetNodeNameByIndex
 
@@ -384,8 +384,8 @@ Finds a node by name and returns an index identifying that node.
 Given a node by index, return the name of that node.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### GetNodePosByIndex
 
@@ -394,7 +394,7 @@ Given a node by index, return the name of that node.
 Specify a node by index and return the coordinates of that node.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### SetShowNode
 
@@ -403,8 +403,8 @@ Specify a node by index and return the coordinates of that node.
 Specify a node by name, show it if flag is true and hide it if flag is false.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### IsShowNode
 
@@ -413,8 +413,8 @@ Specify a node by name, show it if flag is true and hide it if flag is false.
 Specify a node by name, returns true if the node is visible and false if it is hidden.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### SetRotateNode
 
@@ -423,7 +423,7 @@ Specify a node by name, returns true if the node is visible and false if it is h
 Specify a node by name and rotate that node.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### SetEnableCollider
 
@@ -432,8 +432,8 @@ Specify a node by name and rotate that node.
 Specify a collider by name, true to enable it, false to disable it.
 
 ??? note "Available object types for this method"
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### IsEnableCollider
 
@@ -442,8 +442,8 @@ Specify a collider by name, true to enable it, false to disable it.
 Specify a collider by name, returns true if the collider is enabled, false otherwise.
 
 ??? note "Available object types for this method"
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### SetClickableNode
 
@@ -452,7 +452,7 @@ Specify a collider by name, returns true if the collider is enabled, false other
 Specify a clickable node by name, enable clicks if flag is set to true and disable clicks if flag is set to false.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### IsClickableNode
 
@@ -461,7 +461,7 @@ Specify a clickable node by name, enable clicks if flag is set to true and disab
 Specify a node by name and returns true if the node is clickable, false otherwise.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### SetUVOffset
 
@@ -473,8 +473,8 @@ Specify a material by name and change the uv offset of that material **starting 
     While Unity considers the bottom-left coordinate of the UV as the origin, note that HeliScript considers the **top-left** as the origin.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
 ### PlayVideo
 
@@ -483,9 +483,9 @@ Specify a material by name and change the uv offset of that material **starting 
 Specifies the material to play and starts playing the video. Loop playback is performed if loop is set to true.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
 
 ### StopVideo
 
@@ -494,9 +494,9 @@ Specifies the material to play and starts playing the video. Loop playback is pe
 Stop the video that is playing.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
 
 ### IsPlayVideo
 
@@ -505,9 +505,9 @@ Stop the video that is playing.
 Returns true if a video is playing.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
 
 ### ClearTextPlane
 
@@ -516,7 +516,7 @@ Returns true if a video is playing.
 Delete the text.
 
 ??? note "Available object types for this method"
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### WriteTextPlane
 
@@ -525,27 +525,27 @@ Delete the text.
 Set the text.
 
 ??? note "Available object types for this method"
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetCamera
 
 `public bool SetCamera()`
 
 Set the camera type Item as a camera.
-Refer to [HEOCamera](../HEOComponents/HEOCamera.md) for usage.
+Refer to [VKCItemCamera](../VKCComponents/VKCItemCamera.md) for usage.
 
 ??? note "Available object types for this method"
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
 
 ### ResetCamera
 
 `public void ResetCamera()`
 
 Detach camera set by SetCamera.
-Refer to [HEOCamera](../HEOComponents/HEOCamera.md) for usage.
+Refer to [VKCItemCamera](../VKCComponents/VKCItemCamera.md) for usage.
 
 ??? note "Available object types for this method"
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
 
 ### ReplaceItem
 
@@ -554,16 +554,16 @@ Refer to [HEOCamera](../HEOComponents/HEOCamera.md) for usage.
 Replace the Item by the designated model data.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### ReplaceTexture
 
@@ -572,10 +572,10 @@ Replace the Item by the designated model data.
 Replace the texture attached to the MaterialName's material by the designated URL content.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetPhysicsEnable
 
@@ -584,7 +584,7 @@ Replace the texture attached to the MaterialName's material by the designated UR
 Enable physics for Node designated by NodeName if Flag is true, disable if Flag is false.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### IsPhysicsFixed
 
@@ -593,7 +593,7 @@ Enable physics for Node designated by NodeName if Flag is true, disable if Flag 
 When physics is enabled, returns true if this Item is fixed.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### GetPhysicsIDByNodeName
 
@@ -604,7 +604,7 @@ Get the PhysicsId for the designated Node.
 When physics is enabled, returns true if this Item is fixed.
 
 ??? note "Available object types for this method"
-    - [HEOField](../HEOComponents/HEOField.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
 
 ### SetProperty
 
@@ -613,16 +613,16 @@ When physics is enabled, returns true if this Item is fixed.
 Set property by Key and Value.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetProperty
 
@@ -631,16 +631,16 @@ Set property by Key and Value.
 Get property by Key. If the Key does not exist, an empty string will return.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### CallComponentMethod
 
@@ -655,16 +655,16 @@ The callable methods must follow the limits below:
 * Return value is void
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetOverridesProperty
 
@@ -673,16 +673,16 @@ The callable methods must follow the limits below:
 Sets overrides property. If the same Key exists, its value will be overwritten, otherwise the Key and Value will be appended. If Key does not use "itemname", enter an empty string as an argument.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetOverridesProperty
 
@@ -691,13 +691,13 @@ Sets overrides property. If the same Key exists, its value will be overwritten, 
 Get the overrides property.
 
 ??? note "Available object types for this method"
-    - [HEOActivity](../HEOComponents/HEOActivity.md)
-    - [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
-    - [HEOAudio](../HEOComponents/HEOAudio.md)
-    - [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
-    - [HEOCamera](../HEOComponents/HEOCamera.md)
-    - [HEOField](../HEOComponents/HEOField.md)
-    - [HEOObject](../HEOComponents/HEOObject.md)
-    - [HEOParticle](../HEOComponents/HEOParticle.md)
-    - [HEOPlane](../HEOComponents/HEOPlane.md)
-    - [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)

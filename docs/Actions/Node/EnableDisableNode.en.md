@@ -8,11 +8,11 @@ Using this action will set the node's parameters as [Show/HideNode](ShowHideNode
 
 | Name | Parameter | Default Value | Function |
 | ---- | ---- | ---- | ---- |
-| Enablenode | Target(Node) | None | Selects the target node placed under an [HEOField](../../HEOComponents/HEOField.md) object. |
+| Enablenode | Target(Node) | None | Selects the target node placed under an [VKC Item Field](../../VKCComponents/VKCItemField.md) object. |
 |  | Show | false | If enabled, show the target node's `mesh`. |
 |  | Enable Collider | false | If set to true, enable the target node's `collider`. |
 |  | Enable Clickable Node | false | If set to true, enable the target node's `clickable colllider`. |
-| Disablenode | Target(Node) | None |  Selects the target node placed under an [HEOField](../../HEOComponents/HEOField.md) object. |
+| Disablenode | Target(Node) | None |  Selects the target node placed under an [VKC Item Field](../../VKCComponents/VKCItemField.md) object. |
 |  | Hide | false | If enabled, hide the target node's `mesh`. |
 |  | Disable Collider| false | If set to true, disable the target node's `collider`. |
 |  | Disable Clickable Node | false | If set to true, disable the target node's `clickable colllider`. |
