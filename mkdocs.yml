@@ -125,6 +125,8 @@ plugins:
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
             VketCloudSDK Settings : VketCloudSDK設定
+            # GUITools 
+            GUITools Overview & Setup: GUITools - 概要とセットアップ
             # 編集Tips
             World Editing Tips: 編集のためのTips
             Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
@@ -248,6 +250,8 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
+    - GUITools: 
+      - GUITools Overview & Setup: GUITools/Setup.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
