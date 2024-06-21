@@ -1,23 +1,21 @@
-# HEOActivity
+# VKC Item Activity
 
-![HEOActivity_1](img/HEOActivity_1.jpg)
+![VKCItemActivity_1](img/VKCItemActivity_1.jpg)
 
-HEOActivityはアクティビティを使用する際に設定するコンポーネントです。<br>
+VKC Item Activityはアクティビティを使用する際に設定するコンポーネントです。<br>
 アクティビティとはモデル・スクリプトをひとまとめの[Item](../hs/hs_overview.md#item)として統合し、ワールドへの配置と設定を便利にするための機能です。
 
 ## 設定項目
 
 | 名称 | 機能 |
 | ---- | ---- |
-| World Position | アクティビティを配置する位置を指定します。 |
-| World Rotation | アクティビティを配置する角度を指定します。 |
 | Scene Preview | 設定されたアクティビティをシーン内で表示します。|
 | .json | アクティビティの情報をまとめたjsonファイルを指定します。|
 | Overrides | 各アクティビティに定義されている設定項目を編集します。 |
 
 !!! caution "Scene Previewについて"
     `Scene Preview`を有効にすると、Scene内でアクティビティのプレビュー用オブジェクトが表示され、このオブジェクトの座標・大きさ・角度などを編集することができます。<br>
-    この操作による変更はビルド時には**元に戻り**、HEOActivityが付いているオブジェクトのTransform値が参照されるためご注意ください。
+    この操作による変更はビルド時には**元に戻り**、VKC Item Activityが付いているオブジェクトのTransform値が参照されるためご注意ください。
 
 ![HEOActivity_14](img/HEOActivity_14.jpg)
 
@@ -25,12 +23,45 @@ HEOActivityはアクティビティを使用する際に設定するコンポー
 
 | 名称 | 機能 |
 | ---- | ---- |
+| Clickable | クリック可能かどうかを変更します |
 | Auto Loading | 有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、[動的ローディング](HEOField.md)を使用するか、HeliScriptで[Load()](../hs/hs_class_item.md#load)を使用して読み込みます。|
 | Item Render Priority | Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
+| Show Photo Mode | 写真撮影モードの際、Activityを表示するかどうかを変更します |
 
 !!! info "アクティビティの自作について"
     SDK Ver12.x以降では、自分のアクティビティを制作して他の人に共有できるように出力する機能が追加されました。<br>
     詳細は[VKC Activity Exporter](../SDKTools/VKCActivityExporter.md)をご覧ください。
+
+### Edit Modeについて
+
+Edit ModeはエクスポートされたActivityファイルをUnityEditorで再編集できる機能です。  
+Edit ModeのON状態になるとActivityに関連するHeliScriptとMotionのリストを表示し、編集が可能になります。
+
+Edit ModeがOn状態のときScene PreviewはOnに固定され、チェックボックスは非表示になります。
+
+![VKCItemActivity_2](img/VKCItemActivity_2.jpg)
+
+#### Activity編集の方法
+
+ここではAnalogClockActivityを例に編集の方法を解説します。
+
+![VKCItemActivity_3](img/VKCItemActivity_3.jpg)
+
+- 画像の「Activity」オブジェクトはVKC Item Activityスクリプトをアタッチしているオブジェクトです。
+- Activity直下のAnalogClockObjectは可視化するオブジェクトのルートです。
+オブジェクトの追加、削除、変更をする場合、PreviewObjectRootの下層のオブジェクトのみに適用されます。
+
+可視化オブジェクトは、シーンビューからTransfrom等の調整が可能です。
+
+![VKCItemActivity_8](img/VKCItemActivity_8.jpg)
+
+インスペクタービューでVKC Item ActivityのEdit ModeのOffボタンをクリックすると、編集したActivity内容を自動的に保存されます。
+
+![VKCItemActivity_4](img/VKCItemActivity_4.jpg)
+
+保存成功の場合は以下のダイアログを表示します。
+
+![VKCItemActivity_5](img/VKCItemActivity_5.jpg)
 
 ---
 
@@ -72,19 +103,19 @@ Vket Cloudのアクティビティはアセットストアにて入手が可能�
 
 ![HEOActivity_7](img/HEOActivity_7.jpg)
 
-6\. 作成した空のオブジェクトの名前をAnalogClockなどに変更します。（他オブジェクトとは別の名称にしてください。）
+6\. 作成した空のオブジェクトの名前を`AnalogClock`などに変更します。（他オブジェクトとは別の名称にしてください。）
 
 ![HEOActivity_8](img/HEOActivity_8.jpg)
 
-7\. HEO ActivityコンポーネントをAnalogClockオブジェクトにアタッチします。
+7\. VKC Item ActivityコンポーネントをAnalogClockオブジェクトにアタッチします。
 
-![HEOActivity_9](img/HEOActivity_9.jpg)
+![VKCItemActivity_5](img/VKCItemActivity_6.jpg)
 
-8\. activity\analogclock\AnalogClockActivity.jsonをHEO Activityのjson項目にセットします。
+8\. activity\analogclock\AnalogClockActivity.jsonをVKC Item Activityのjson項目にセットします。
 
-![HEOActivity_10](img/HEOActivity_10.jpg)
+![VKCItemActivity_5](img/VKCItemActivity_7.jpg)
 
-9\. HEOActivityのoverridesで"useSecondHand"の設定をします。パラメーターの説明に関してはREADME.mdの「アクティビティ設定」項目を参照して下さい。
+9\. VKC Item Activityのoverridesで"useSecondHand"の設定をします。パラメーターの説明に関してはREADME.mdの「アクティビティ設定」項目を参照して下さい。
 
 10\. オブジェクトの原点にアナログ時計が出現するので、設置場所をTransformで調整します。
 
