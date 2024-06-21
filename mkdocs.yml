@@ -127,6 +127,8 @@ plugins:
             VketCloudSDK Settings : VketCloudSDK設定
             # GUITools 
             GUITools Overview & Setup: GUITools - 概要とセットアップ
+            How to Use: 基本的な使い方
+            Advanced Use: 応用実装
             # 編集Tips
             World Editing Tips: 編集のためのTips
             Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
@@ -252,6 +254,8 @@ nav:
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - GUITools: 
       - GUITools Overview & Setup: GUITools/Setup.md
+      - How to Use: GUITools/HowToUse.md
+      - Advanced Use: GUITools/AdvancedUse.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
