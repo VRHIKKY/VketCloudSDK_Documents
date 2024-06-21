@@ -21,7 +21,7 @@ VketCloudSDKではAvatarFileというファイルにアバター情報を設定�
 
 ![PresetAvatar_2](./img/PresetAvatar_2.jpg)
 
-[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)内のAvatarsタブ下の`CreateAvatarFile`を押すことで、新しいAvatarFileを作成します。
+[HEOWorldSetting](../VKCComponents/HEOWorldSetting.md)内のAvatarsタブ下の`CreateAvatarFile`を押すことで、新しいAvatarFileを作成します。
 
 AvatarFileリスト右下の +/- を押すことで、プリセットアバターのリストに項目を追加/削除することができます。<br>
 リストから削除した場合でも、元のAvatarFileのデータが残ります。

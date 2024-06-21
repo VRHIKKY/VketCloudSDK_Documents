@@ -4,7 +4,7 @@ UnityのEditorOnlyタグが付加されたオブジェクトは、VketCloudSDK�
 
 !!! note caution
     現バージョンではNode系オブジェクト(Cube, Sphereなど)の除外に対応しております。<br>
-    [HEOObject](../HEOComponents/HEOObject.md), [HEOActivity](../HEOComponents/HEOActivity.md)などHEOコンポーネント系のオブジェクトは除外に対応していないためご注意ください。
+    [VKC Item Object](../VKCComponents/VKCItemObject.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md)などVKCItemコンポーネント系のオブジェクトは除外に対応していないためご注意ください。
 
 ## 使い方
 
