@@ -27,20 +27,8 @@ MyAvatarSettingsでは、ワールド内における[マイアバター](../Abou
 ### モーションについて
 
 デフォルトで設定されているアニメーション及びモーション名はSDK側で使用しているモーションです。<br>
-[アニメーションファイルを用意し差し替える](../HEMAnimationConverter/AnimationConverter.md)ことで待機・歩行などのマイアバターのアニメーションを差し替えることができます。<br>
+[アニメーションファイルを用意し差し替える](../HEMAnimationConverter/AnimationConverter.md)ことで待機・歩行・切り返しなどのマイアバターのアニメーションを差し替えることができます。<br>
 ワールドにて用意したプリセットアバターのアニメーションを設定するにはアバター設定にて指定した[アバターファイル](../WorldMakingGuide/AvatarFile.md)を編集します。
-
----
-
-## Emotion設定
-
-![MyAvatarSettings_2](img/MyAvatarSettings_2.jpg)
-
-| 名称 | 初期値 | 機能 |
-| ---- | ---- | ---- |
-| `Emotion` || マイアバターが使用するエモートを指定します。|
-| `loop` | true | アニメーションをループ再生するか設定します。 |
-| `Use Action` | false | エモーション再生時に実行するアクションを設定します。<br> 具体的には、本項目を有効にした上で`Setting`から実行するアクションを設定します。|
 
 ---
 
