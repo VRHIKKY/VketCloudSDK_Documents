@@ -10,4 +10,8 @@
 
 ## 変更されたページ
 
+- VKCコンポーネント
+  - [VKCSettingMyAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VketCloudSettings/MyAvatarSettings.html)
+    - 説明画像の更新、Emotion機能の削除
+
 ## 削除されたページ
