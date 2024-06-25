@@ -290,6 +290,7 @@ nav:
     - VKCItemSpot: VKCComponents/VKCItemSpot.md
     - VKCItemTextPlane: VKCComponents/VKCItemTextPlane.md
   - VKCNode:
+    - VKCNodeAlphaAnimation: VKCComponents/VKCNodeAlphaAnimation.md
     - VKCNodeBlendShapeTranslator: VKCComponents/VKCNodeBlendShapeTranslator.md
     - VKCNodeCollider: VKCComponents/VKCNodeCollider.md
     - VKCNodeCylinderCollider: VKCComponents/VKCNodeCylinderCollider.md
