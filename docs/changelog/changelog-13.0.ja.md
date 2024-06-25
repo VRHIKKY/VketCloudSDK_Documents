@@ -10,4 +10,11 @@
 
 ## 変更されたページ
 
+- VketCloudSDKについて
+  - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/latest/AboutVketCloudSDK/LoginSDK.html)
+    - macOS, Safariを使用している場合のトラブルシュートについて追記
+- トラブルシューティング
+  - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/latest/troubleshooting/InstallingDeeplink.html)
+    - macOS, Safariを使用している場合のトラブルシュートについて追記
+
 ## 削除されたページ
