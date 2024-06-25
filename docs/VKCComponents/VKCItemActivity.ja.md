@@ -17,7 +17,7 @@ VKC Item Activityはアクティビティを使用する際に設定するコン
     `Scene Preview`を有効にすると、Scene内でアクティビティのプレビュー用オブジェクトが表示され、このオブジェクトの座標・大きさ・角度などを編集することができます。<br>
     この操作による変更はビルド時には**元に戻り**、VKC Item Activityが付いているオブジェクトのTransform値が参照されるためご注意ください。
 
-![HEOActivity_14](img/HEOActivity_14.jpg)
+![VKCItemActivity_2](img/VKCItemActivity_2.jpg)
 
 ### 高度な設定
 
@@ -39,13 +39,13 @@ Edit ModeのON状態になるとActivityに関連するHeliScriptとMotionのリ
 
 Edit ModeがOn状態のときScene PreviewはOnに固定され、チェックボックスは非表示になります。
 
-![VKCItemActivity_2](img/VKCItemActivity_2.jpg)
+![VKCItemActivity_3](img/VKCItemActivity_3.jpg)
 
 #### Activity編集の方法
 
 ここではAnalogClockActivityを例に編集の方法を解説します。
 
-![VKCItemActivity_3](img/VKCItemActivity_3.jpg)
+![VKCItemActivity_4](img/VKCItemActivity_4.jpg)
 
 - 画像の「Activity」オブジェクトはVKC Item Activityスクリプトをアタッチしているオブジェクトです。
 - Activity直下のAnalogClockObjectは可視化するオブジェクトのルートです。
@@ -53,15 +53,15 @@ Edit ModeがOn状態のときScene PreviewはOnに固定され、チェックボ
 
 可視化オブジェクトは、シーンビューからTransfrom等の調整が可能です。
 
-![VKCItemActivity_8](img/VKCItemActivity_8.jpg)
+![VKCItemActivity_5](img/VKCItemActivity_5.jpg)
 
 インスペクタービューでVKC Item ActivityのEdit ModeのOffボタンをクリックすると、編集したActivity内容を自動的に保存されます。
 
-![VKCItemActivity_4](img/VKCItemActivity_4.jpg)
+![VKCItemActivity_6](img/VKCItemActivity_6.jpg)
 
 保存成功の場合は以下のダイアログを表示します。
 
-![VKCItemActivity_5](img/VKCItemActivity_5.jpg)
+![VKCItemActivity_7](img/VKCItemActivity_7.jpg)
 
 ---
 
@@ -71,7 +71,7 @@ Vket Cloudのアクティビティはアセットストアにて入手が可能�
 
 アセットストアは[Vket Cloudマイページ](https://cloud.vket.com/){target=_blank}にログイン後、画面上部のタブにおける「アセットストア」からアクセスが可能です。
 
-![HEOActivity_13](img/HEOActivity_13.jpg)
+![VKCItemActivity_8](img/VKCItemActivity_8.jpg)
 
 アセットストアのアクセス方法、使い方の詳細は以下のマニュアルページをご確認ください。
 [便利機能をお手軽にインストール！Vket Cloudアセットストア・アクティビティの使い方](https://magazine.vket.com/n/n7d554dbeb552){target=_blank}
@@ -83,44 +83,44 @@ Vket Cloudのアクティビティはアセットストアにて入手が可能�
 
 1\. ダウンロードしたActivityファイルを解凍します。OSごとに方法が異なりますが、お好みの方法で解凍してください。
 
-![HEOActivity_2](img/HEOActivity_2.jpg)
+![VKCItemActivity_9](img/VKCItemActivity_9.jpg)
 
 2\. ファイル内容を確認し、必ずREADMEをご確認ください。
 
-![HEOActivity_3](img/HEOActivity_3.jpg)
+![VKCItemActivity_10](img/VKCItemActivity_10.jpg)
 
-3\. 以下READMEの内容を確認し、どのパラメータがカスタマイズできるのかを事前に「アクティビティ設定」項目でご確認ください。
+3\. 以下READMEの内容を確認し、どのパラメーターがカスタマイズできるのかを事前に「アクティビティ設定」項目でご確認ください。
 
-![HEOActivity_4](img/HEOActivity_4_ja.jpg)
+![VKCItemActivity_11](img/VKCItemActivity_11.jpg)
 
 4\. 解凍したanalogclockフォルダーをVketCloudSDKがインストールされているUnityのProjectのアセット内任意のパスに配置してください。
 
-![HEOActivity_5](img/HEOActivity_5.jpg)
+![VKCItemActivity_12](img/VKCItemActivity_12.jpg)
 
 5\. 空のシーンを作成し、シーンにて右クリックした上で "Add Essential Objects for Vket Cloud"を選択して必須コンポーネントを配置します。<br>その後、アクティビティの配置のために空のオブジェクトを作成します。
 
-![HEOActivity_6](img/HEOActivity_6.jpg)
+![VKCItemActivity_13](img/VKCItemActivity_13.jpg)
 
-![HEOActivity_7](img/HEOActivity_7.jpg)
+![VKCItemActivity_14](img/VKCItemActivity_14.jpg)
 
 6\. 作成した空のオブジェクトの名前を`AnalogClock`などに変更します。（他オブジェクトとは別の名称にしてください。）
 
-![HEOActivity_8](img/HEOActivity_8.jpg)
+![VKCItemActivity_15](img/VKCItemActivity_15.jpg)
 
 7\. VKC Item ActivityコンポーネントをAnalogClockオブジェクトにアタッチします。
 
-![VKCItemActivity_5](img/VKCItemActivity_6.jpg)
+![VKCItemActivity_16](img/VKCItemActivity_16.jpg)
 
 8\. activity\analogclock\AnalogClockActivity.jsonをVKC Item Activityのjson項目にセットします。
 
-![VKCItemActivity_5](img/VKCItemActivity_7.jpg)
+![VKCItemActivity_17](img/VKCItemActivity_17.jpg)
 
 9\. VKC Item Activityのoverridesで"useSecondHand"の設定をします。パラメーターの説明に関してはREADME.mdの「アクティビティ設定」項目を参照して下さい。
 
 10\. オブジェクトの原点にアナログ時計が出現するので、設置場所をTransformで調整します。
 
-![HEOActivity_11](img/HEOActivity_11.jpg)
+![VKCItemActivity_18](img/VKCItemActivity_18.jpg)
 
 11\. ビルドしてアナログ時計が出現していれば完了です。
 
-![HEOActivity_12](img/HEOActivity_12.jpg)
+![VKCItemActivity_19](img/VKCItemActivity_19.jpg)
