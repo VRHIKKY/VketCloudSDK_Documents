@@ -3,6 +3,8 @@
 ## 追加されたページ
 
 - VKCComponents
+  - VKCAttribute
+    - [VKCAttributeClickableUI](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCAttribute/VKCAttributeClickableUI.html)
   - VKCNode
     - [VKCNodeAlphaAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCNode/VKCNodeAlphaAnimation.html)
 - ワールド制作ガイド
