@@ -13,6 +13,10 @@ VKC Node Colliderとは、Vket Cloud上でコライダーがどのような衝�
 | Enable Body | `ロード時に物理演算を有効にする` | オブジェクトが読み込まれた際に物理演算を有効にするかどうかを選択できます。 |
 | Mass | `重さ` | 重さパラメータを調整します。 |
 | Restitution | `反発係数` | 反発係数のパラメータを調整します。 |
+| Allow Cross Over | `埋まりを許容` | Allows the player to pass through the collider |
+| Cross Over Rate | `埋まり比率` | Set the rate of distance passing through the collider. Set from zero to 1. |
+| Extrusion Speed | `押し出しスピード` | Set the speed of the extrusion when crossing. |
+| Grounding Detetion | `接地処理` | Enable grounding detection. |
 
 ## コライダータイプ
 
@@ -34,6 +38,7 @@ VKC Node Colliderとは、Vket Cloud上でコライダーがどのような衝�
 | ---- | ---- | ---- |
 | All | `全て` | 衝突判定に対象をとりません。 |
 | Avatar Only | `アバターのみ` | アバターだけ衝突判定が有効になります。 |
+| Self Player Only | `プレーヤー自身のみ` | 操作しているプレイヤーのみ衝突判定が有効になります。|
 
 ## コライダーの衝突 / エリア範囲判定について
 

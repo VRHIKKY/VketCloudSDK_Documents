@@ -13,6 +13,11 @@ VKC Node Collider is a component to set what kind of collision detection a colli
 | `Enable body` | You can choose whether to enable physics when the object is loaded. |
 | `Mass` | Adjust the weight parameter. |
 | `Restitution` | Adjust the coefficient of restitution. |
+| `Allow Cross Over` | Allows the player to pass through the collider |
+| `Cross Over Rate` | Set the rate of distance passing through the collider. Set from zero to one. |
+| `Extrusion Speed` | Set the speed of the extrusion when crossing. |
+| `Grounding Detection` | Enable grounding detection. |
+
 
 ## Collider type
 
@@ -34,6 +39,7 @@ VKC Node Collider is a component to set what kind of collision detection a colli
 | ---- | ---- |
 | `All` | Does not restrict the collision detection. |
 | `Avatar Only` | Collision detection is enabled only for avatars. |
+| `Self Player Only` | Collision detection is enabled only for the player themselves. |
 
 ## About collision / area range detection by collider
 
@@ -41,3 +47,10 @@ The collision / area range detection by collider will be done by obtaining the p
 Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md#f3-display-collision) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
 
 ![HEOCollider_2](img/HEOCollider_2.jpg)
+
+## Grounding Detection
+| Type | Function |
+| ---- | ---- |
+| `Auto` |  |
+| `Enable` |  |
+| `Disable` | |
