@@ -32,9 +32,9 @@ Vket Cloud allows the use of Unity's reflection probes. See [here](ReflectionPro
 ## Directional Light
 
 Note that the Intensity value set on the `Directional Light`(as image below) will not be used within the world.<br>
-To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md).
+To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value in [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md).
 
-![Rendering_2](../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg)
+![Rendering_2](../VKCComponents/img/HEOWorldSetting_Rendering_2.jpg)
 
 !!! caution "Using Realtime Lights"
     Vket Cloud disallows use of Realtime Mode lights. Please switch to Mixed or Baked.
@@ -74,7 +74,7 @@ For details, refer to [Operating Environment](../AboutVketCloudSDK/OperatingEnvi
 
 ## Collider
 
-- Only BoxCollider and MeshCollider are supported for collision detection. Note that MeshCollider takes very heavy load on processing. Avoid MeshCollider if possible. BoxCollider is also used to prevent objects getting in the way between the player avatar and the camera in TPS mode. As such, set BoxColliders on unreachable objects like the ceiling. See [here](../HEOComponents/HEOMeshCollider.md) for how to export a MeshCollider.
+- Only BoxCollider and MeshCollider are supported for collision detection. Note that MeshCollider takes very heavy load on processing. Avoid MeshCollider if possible. BoxCollider is also used to prevent objects getting in the way between the player avatar and the camera in TPS mode. As such, set BoxColliders on unreachable objects like the ceiling. See [here](../VKCComponents/VKCNodeMeshCollider.md) for how to export a MeshCollider.
 - SphereCollider is used only for click (tap) judgment. (Poster, etc.)
 - If the hierarchy is nested deeply, colliders may not be exported upon Build and Run.
 - Colliders lower than the knee can be climbed. But be careful, too large colliders may hamper the movement of the camera.
@@ -84,7 +84,7 @@ For details, refer to [Operating Environment](../AboutVketCloudSDK/OperatingEnvi
 
 - Skybox is not supported. Please avoid using skyboxes, or setup a sphere object instead.
 
-In order to create the background, the SDK recommends creating a [Sphere object](Skybox.md), or using the [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md) component.
+In order to create the background, the SDK recommends creating a [Sphere object](Skybox.md), or using the [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md) component.
 
 ## Scale
 

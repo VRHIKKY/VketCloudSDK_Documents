@@ -34,9 +34,9 @@ Vket CloudではUnityのリフレクションプローブを使用すること�
 ## Directional Light
 
 `Directional Light`に設定されているIntensityの値（下記画像参照）はワールドに反映されないためご注意ください。<br>
-ライトの強弱は[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)内の`LightColor`の色を`Directional Light`側の色と重ね合わせることで表現が可能です。
+ライトの強弱は[HEOWorldSetting](../VKCComponents/HEOWorldSetting.md)内の`LightColor`の色を`Directional Light`側の色と重ね合わせることで表現が可能です。
 
-![Rendering_2](../HEOComponents/img/HEOWorldSetting_Rendering_2.jpg)
+![Rendering_2](../VKCComponents/img/HEOWorldSetting_Rendering_2.jpg)
 
 !!! caution "Realtime Lightについて"
     Vket CloudではRealtime Modeのライトに対応しておりません。必ずMixedまたはBakedに変更してご使用ください。
@@ -78,7 +78,7 @@ VketCloudSDKでは、上記の環境設定を推奨設定としております�
 
 ## コライダー
 
-- 衝突判定用はBoxColliderとMeshColliderのみ対応。MeshColliderは処理に非常に負荷がかかるため使用は必要最低限にしてください。BoxColliderはTPSモード時にプレイヤーアバターとカメラの間に位置するオブジェクトによって遮断されるのを防ぐためにも利用しているため、天井など移動出来ない場所でも設定して下さい。MeshColliderの書き出し方法については[こちら](../HEOComponents/HEOMeshCollider.md)をご覧ください。
+- 衝突判定用はBoxColliderとMeshColliderのみ対応。MeshColliderは処理に非常に負荷がかかるため使用は必要最低限にしてください。BoxColliderはTPSモード時にプレイヤーアバターとカメラの間に位置するオブジェクトによって遮断されるのを防ぐためにも利用しているため、天井など移動出来ない場所でも設定して下さい。MeshColliderの書き出し方法については[こちら](../VKCComponents/VKCNodeMeshCollider.md)をご覧ください。
 - SphereColliderはクリック（タップ）判定用にのみ使用しています。（ポスターなど）
 - ヒエラルキーのネストが深いとコライダーが出力されない場合があります。
 - 膝下ぐらいのコライダーは登れてしまいます。しかし、大きすぎるコライダーはカメラの妨げになるので、気を付けてください。
@@ -88,7 +88,7 @@ VketCloudSDKでは、上記の環境設定を推奨設定としております�
 
 - スカイボックスは非対応です。使わない、もしくは天球などでごまかす必要があります。
 
-背景の実装方法としては[天球オブジェクト](Skybox.md)を用意する方法と、[HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)コンポーネントを使用する方法があります。
+背景の実装方法としては[天球オブジェクト](Skybox.md)を用意する方法と、[VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)コンポーネントを使用する方法があります。
 
 ## スケール
 

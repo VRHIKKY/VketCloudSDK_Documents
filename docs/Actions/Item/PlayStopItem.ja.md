@@ -8,15 +8,15 @@ PlayItemは、オーディオ・パーティクル・**アバター以外の**�
 
 Targetに指定できるオブジェクトは、
 
-- [HEOAudio](../../HEOComponents/HEOAudio.md)
-- [HEOParticle](../../HEOComponents/HEOParticle.md)
-- [HEOObject](../../HEOComponents/HEOObject.md)
+- [VKC Item Audio](../../VKCComponents/VKCItemAudio.md)
+- [VKC Item Particle](../../VKCComponents/VKCItemParticle.md)
+- [VKC Item Object](../../VKCComponents/VKCItemObject.md)
 
 を持つシーン上のオブジェクトです。
 
 ※アバターアニメーションの再生については[Motion](../Avatar/Motion.md)をご参照ください。
 
-[HEOObject](../../HEOComponents/HEOObject.md)を指定した場合のみ、Indexを追加で設定することができます。<br>
+[VKC Item Object](../../VKCComponents/VKCItemObject.md)を指定した場合のみ、Indexを追加で設定することができます。<br>
 その場合、設定したIndex番号のモーションが再生されます。
 
 また、TargetがBeginActionsを持つItemであれば、それも同時に実行します。
@@ -35,14 +35,14 @@ StopItemはパーティクルやサウンドを止めるのに使うことがで
 
 ### 停止用のMotionを作る
 
-1. ワールド制作ガイド「オブジェクトをアニメーションさせる」ページにおける[HEOObjectにアニメーションを付与する方法](../../WorldMakingGuide/PropAnimation.md#heoobject)を参考に、以下のように[HEOObject](../../HEOComponents/HEOObject.md)を常にデフォルトの状態におくアニメーション(例としてIdleと命名)を用意・hemファイルに書き出しします。
+1. ワールド制作ガイド「オブジェクトをアニメーションさせる」ページにおける[VKC Item Objectにアニメーションを付与する方法](../../WorldMakingGuide/PropAnimation.md#VKCItemObject)を参考に、以下のように[VKC Item Object](../../VKCComponents/VKCItemObject.md)を常にデフォルトの状態におくアニメーション(例としてIdleと命名)を用意・hemファイルに書き出しします。
 
     ![PlayStopItem_2](img/PlayStopItem_2.jpg)
 
-2. [HEOObject](../../HEOComponents/HEOObject.md)では1番目にIdleをおき、2番目以降に再生したいアニメーションを配置します。1番目のMotionはワールド入場時の初期状態 / 待機時のMotionとなり、アニメーションを停止させたい際に呼び出すMotionを兼ねます。
+2. [VKC Item Object](../../VKCComponents/VKCItemObject.md)では1番目にIdleをおき、2番目以降に再生したいアニメーションを配置します。1番目のMotionはワールド入場時の初期状態 / 待機時のMotionとなり、アニメーションを停止させたい際に呼び出すMotionを兼ねます。
     ![PlayStopItem_3](img/PlayStopItem_3.jpg)
 
-3. ここでは停止制御の例として[HEOAreacollider](../../HEOComponents/HEOAreacollider.md)を使用します。<br>プレイヤーがエリアコライダーの範囲に入場した際にPlayItemを使用してCubeの2番目のMotion(Index **1**)を呼び出し、退場時にはPlayItemによって1番目のMotion(Index **0**)を呼び出します。
+3. ここでは停止制御の例として[VKC Item AreaCollider](../../VKCComponents/VKCItemAreaCollider.md)を使用します。<br>プレイヤーがエリアコライダーの範囲に入場した際にPlayItemを使用してCubeの2番目のMotion(Index **1**)を呼び出し、退場時にはPlayItemによって1番目のMotion(Index **0**)を呼び出します。
 
     ![PlayStopItem_4](img/PlayStopItem_4.jpg)
 

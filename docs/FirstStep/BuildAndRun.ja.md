@@ -28,7 +28,7 @@ VketCloudSDKでシーンをビルドするには、[必要コンポーネント]
 
 ## 「ビルドと実行」で起きること
 
- Build and Runを押すと、[HEOField](../HEOComponents/HEOField.md)コンポーネントが付いたオブジェクトとそのすべての子オブジェクトが.heoファイルに変換されます。「.heo」はVketCloudの描画エンジンで使われている専用の3Dフォーマットです。  
+ Build and Runを押すと、[VKC Item Field](../VKCComponents/VKCItemField.md)コンポーネントが付いたオブジェクトとそのすべての子オブジェクトが.heoファイルに変換されます。「.heo」はVketCloudの描画エンジンで使われている専用の3Dフォーマットです。  
 
 ビルドされたファイルは`[プロジェクト名]\release\data`フォルダにコピーされます。これにより、3Dワールドをブラウザで動かすのに必要なアセットがすべてこのフォルダに入ります。
 

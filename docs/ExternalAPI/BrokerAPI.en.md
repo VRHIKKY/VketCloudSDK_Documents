@@ -30,7 +30,7 @@ To use an external API, authorization such as API keys must be setup and obtaine
 
 2\. Setup a world, and create a HeliScript to call the API using [JsVal](JsVal.md).
 
-As an example, a [cube for receiving player clicking](../HEOComponents/HEOCollider.md) and [TextPlane](../HEOComponents/HEOTextPlane.md) for showing API results are placed as below:
+As an example, a [cube for receiving player clicking](../VKCComponents/VKCNodeCollider.md) and [TextPlane](../VKCComponents/VKCItemTextPlane.md) for showing API results are placed as below:
 
 ![BrokerAPI_3](img/BrokerAPI_3.jpg)
 
@@ -38,7 +38,7 @@ As an example, a [cube for receiving player clicking](../HEOComponents/HEOCollid
 
 Also, a HeliScript for displaying a Youtube Data API search result on the TextPlane when a designated cube is clicked is described as below.
 
-This script must be attached to the World object using [HEOScript](../HEOComponents/HEOScript.md).
+This script must be attached to the World object using [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md).
 
 ![BrokerAPI_5](img/BrokerAPI_5.jpg)
 
