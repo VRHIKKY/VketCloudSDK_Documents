@@ -12,5 +12,8 @@
 
   - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/AvatarFile.html)
     - .hrmファイルの追記、アニメーション周りの記述の刷新、Emotionの記載の削除
+- VKCコンポーネント
+  - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemActivity.html)
+    - Edit modeと使用方法を追記
 
 ## 削除されたページ

@@ -12,5 +12,8 @@
 
   - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/AvatarFile.html)
     - Added info about .hrm files, revised description about animation, deleted content about Emotion
+- VKCComponents
+  - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VKCComponents/VKCItemActivity.html)
+    - Added Edit mode description and how to use
 
 ## Deleted Pages
