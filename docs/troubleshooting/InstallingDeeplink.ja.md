@@ -3,6 +3,10 @@
 VketCloudSDKをインストール後に再起動しても立ち上がらない・VketCloudSDKタブが表示されない際は、Deeplinkパッケージが何らかの原因によって自動インポートされなかった可能性があります。<br>
 手動でDeeplinkパッケージをインポートすることで解決する場合があります。
 
+!!! warning "macOSをお使いの方へ"
+    macOSとSafariを使用している環境において、Uniy 2019とUnity 2022が同じ環境にインストールされている場合、正常にログインできない事象が発生する場合がございます。  
+    その場合、Unity HubからUnity 2022をアンインストールの上、OSを再起動の上、再度ログインをお試しください。
+
 ## Deeplinkパッケージの導入方法
 
 1. **「Window→Package Manager」**でUnityのPackage Managerを開けます。
