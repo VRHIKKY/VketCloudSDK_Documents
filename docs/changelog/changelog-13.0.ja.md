@@ -12,6 +12,13 @@
 
 ## 変更されたページ
 
+- VketCloudSDKについて
+  - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/AboutVketCloudSDK/LoginSDK.html)
+    - macOS, Safariを使用している場合のトラブルシュートについて追記
+- トラブルシューティング
+  - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/troubleshooting/InstallingDeeplink.html)
+    - macOS, Safariを使用している場合のトラブルシュートについて追記
+- ワールド制作ガイド
   - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/AvatarFile.html)
     - .hrmファイルの追記、アニメーション周りの記述の刷新、Emotionの記載の削除
 - VKCコンポーネント

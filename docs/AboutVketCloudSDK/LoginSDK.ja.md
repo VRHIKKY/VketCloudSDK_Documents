@@ -9,3 +9,7 @@
 
 3. Unityに戻り、メニューが以下のように更新されていれば、ログイン完了です。
     ![MenuAfterLogin](img/MenuAfterLogin.jpg)
+
+!!! warning "macOSをお使いの方へ"
+    macOSとSafariを使用している環境において、Unity 2019とUnity 2022が同じ環境にインストールされている場合、正常にログインできない事象が発生する場合がございます。
+    その場合、Unity HubからUnity 2022をアンインストールの上、OSを再起動の上、再度ログインをお試しください。  
