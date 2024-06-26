@@ -1,4 +1,40 @@
-# 13.0.0
+# Version 13.0.0
+
+## SDK (Editor extension tools for creating worlds in Unity)
+
+### New Features
+- **HEOActivity Editing:** Added functionality for editing HEOActivity.
+- **File Deployment Config:** New configuration options for file deployment.
+- **VKC Attribute Clickable UI:** Added clickable UI attributes within VKC.
+- **VKC Node Alpha Animation:** Added alpha animation options for VKC nodes.
+- **GUITools Package Distribution:** Distributed the GUITools package for enhanced GUI editing capabilities.
+
+### Modified Features
+- **Debug Console Updates:**
+  - Now throws an error if HEO Fields are overlapping in the hierarchy.
+  - Displays a warning if the Mesh setting 'Read/Write Enabled' is not active in FBX files when imported into Unity projects, and automatically sets FBX file R/W to true.
+- **Compression Function Speed Improvement:** Enhanced the function to compress to powers of two for faster operation.
+- **Avatar File Organization:**
+  - Removed the 'Emotion' field.
+  - Removed the 'Height' field (now automatically retrieved from the avatar's VRM by the engine).
+- **HEOActivity JSON Selection:** Restricted search functionality to JSON files within the Assets folder only.
+- **File Icon Asset Updates:** Updated the asset for file icons.
+- **Component Name Changes:** Renamed various components.
+- **Name Change from HEOObjectType to VKCNodeReflectionProbeDetectType.**
+- **Action Trigger Type PopUp Consolidation:** Reviewed and consolidated the states of Type PopUp for Action Triggers.
+- **Basic Settings:**
+  - Changed the label from 'World Name' to 'World ID'.
+  - Added 'File Deployment Config' settings.
+- **Avatar Settings:**
+  - Made default avatar files (e.g., Vketchan_v1.6_MToon_blendshape.asset, vketnyan) non-editable.
+  - Added a new 'File Mode' setting for avatar files (options include VRM/HRM).
+- **HEO Collider Updates:**
+  - Added a new 'Player' option to Collider Target settings.
+
+### Deprecated Features
+- **Build Options > UI-less Build Acceleration:** Removed the feature that sped up builds without UI.
+- **My Avatar Setting > Emotion:** Removed the Emotion functionality.
+- **Avatar File > Emotion:** Removed the Emotion functionality from avatar files.
 
 ## HeliodorLib(ブラウザで表示されるワールドで使われているエンジン)
 
