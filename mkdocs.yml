@@ -406,12 +406,11 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v13.x:
+        - v13.4: releasenote/releasenote-13.4.md
+        - v13.3: releasenote/releasenote-13.3.md
+        - v13.2: releasenote/releasenote-13.2.md
         - v13.1: releasenote/releasenote-13.1.md
         - v13.0: releasenote/releasenote-13.0.md
-        - v13.1: releasenote/releasenote-13.1.md
-        - v13.2: releasenote/releasenote-13.2.md
-        - v13.3: releasenote/releasenote-13.3.md
-        - v13.4: releasenote/releasenote-13.4.md
     - v12.x:
         - v12.3: releasenote/releasenote-12.3.md
         - v12.2: releasenote/releasenote-12.2.md
