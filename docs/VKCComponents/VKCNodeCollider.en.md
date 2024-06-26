@@ -1,6 +1,6 @@
 # VKC Node Collider
 
-![HEOCollider_1](img/HEOCollider_1.jpg)
+![VKCNodeCollider_1](img/VKCNodeCollider_1.jpg)
 
 VKC Node Collider is a component to set what kind of collision detection a collider has on Vket Cloud.
 
@@ -13,11 +13,14 @@ VKC Node Collider is a component to set what kind of collision detection a colli
 | `Enable body` | You can choose whether to enable physics when the object is loaded. |
 | `Mass` | Adjust the weight parameter. |
 | `Restitution` | Adjust the coefficient of restitution. |
-| `Allow Cross Over` | Allows the player to pass through the collider |
-| `Cross Over Rate` | Set the rate of distance passing through the collider. Set from zero to one. |
-| `Extrusion Speed` | Set the speed of the extrusion when crossing. |
-| `Grounding Detection` | Enable grounding detection. |
+| `Allow Cross Over` | Specifies whether to allow penetration for the collider. |
+| `Cross Over Rate` | The ratio of how much penetration is allowed. The closer to 0.0, the larger the range of penetration. |
+| `Extrusion Speed` | Set the extrusion speed when the penetration ratio exceeds the allowable penetration ratio. |
+| `Grounding Detection` | Set the grounding process. Grounding detection is the process of determining whether the top of the collider is on the ground and the process of riding on it if it is on the ground. |
 
+!!! note "About Extrusion"
+    The function of VKC Node Collider added in SDK13.0 that allows you to adjust the behavior of the extrusion process of collision detection.
+    For example, you can allow a certain amount of penetration through a gap (collider) that cannot be passed through in the collision detection, or prevent small objects from interfering with movement.
 
 ## Collider type
 
@@ -41,16 +44,17 @@ VKC Node Collider is a component to set what kind of collision detection a colli
 | `Avatar Only` | Collision detection is enabled only for avatars. |
 | `Self Player Only` | Collision detection is enabled only for the player themselves. |
 
+## Grounding Detection
+
+| Label | Function |
+| ---- | ---- |
+| `Auto` | Automatically detects based on the collider size. Small sizes are disabled, and medium and large sizes are enabled. |
+| `Enable` | Grounding detection enabled |
+| `Disable` | Grounding detection disabled |
+
 ## About collision / area range detection by collider
 
 The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
 Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md#f3-display-collision) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
 
 ![HEOCollider_2](img/HEOCollider_2.jpg)
-
-## Grounding Detection
-| Type | Function |
-| ---- | ---- |
-| `Auto` |  |
-| `Enable` |  |
-| `Disable` | |

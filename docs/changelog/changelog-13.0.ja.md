@@ -12,5 +12,8 @@
 
   - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/AvatarFile.html)
     - .hrmファイルの追記、アニメーション周りの記述の刷新、Emotionの記載の削除
+  - [VKCNodeCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCNodeCollider.html)
+    - 新しいコライダーターゲットタイプ "Self Player Only" についての情報を追加
+    - 新しい押し出しパラメータについての情報を追加
 
 ## 削除されたページ
