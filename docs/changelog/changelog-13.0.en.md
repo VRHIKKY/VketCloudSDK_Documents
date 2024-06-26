@@ -12,6 +12,9 @@
 
 ## Edited Pages
 
+- VKCComponents
+  - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VKCComponents/VKCItemActivity.html)
+    - Added Edit mode description and how to use
 - About VketCloudSDK
   - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/AboutVketCloudSDK/LoginSDK.html)
     - Added troubleshooting note for macOS, Safari users

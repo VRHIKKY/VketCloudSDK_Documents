@@ -12,6 +12,9 @@
 
 ## 変更されたページ
 
+- VKCコンポーネント
+  - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCItemActivity.html)
+    - Edit modeと使用方法を追記
 - VketCloudSDKについて
   - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/AboutVketCloudSDK/LoginSDK.html)
     - macOS, Safariを使用している場合のトラブルシュートについて追記
