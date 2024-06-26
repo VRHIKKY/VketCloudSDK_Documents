@@ -43,16 +43,15 @@ Note that Scene Preview will be set to On when Edit Mode is enabled, which will 
 
 #### How to Edit Activity
 
-Fir example, the AnalogClockActivity is edited by the instructions below.
+For example, the AnalogClockActivity is edited by the instructions below.
 
 ![VKCItemActivity_4](img/VKCItemActivity_4.jpg)
 
 - The "Activity" object in the image above is the object with VKC Item Activity component attached.
-- The AnalogClockObject located under Activity is the root object shown for Scene Preview.
+- To add, delete, or edit an Activity, the objects under the root object with VKC Item Activity attached must be edited. Other objects outside the root object will not be saved to the Activity. <br>
+For this case, the `AnalogClockObject` and its child objects located under Activity will be edited.
 
-If an object is added, deleted, or edited, it will be reflected only to the objects under PreviewObjectRoot.
-
-The Preview Object can be edited in the scene view, by editing components such as Transform, etc.
+The objects under Activity can be edited in the scene view, by editing components such as Transform, etc.
 
 ![VKCItemActivity_5](img/VKCItemActivity_5.jpg)
 
