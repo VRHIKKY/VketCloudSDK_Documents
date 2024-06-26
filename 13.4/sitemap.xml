@@ -323,6 +323,27 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/FirstStep/WorldUpload.html"/>
     </url>
     <url>
+        <loc>NoneGUITools/AdvancedUse.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneGUITools/AdvancedUse.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/GUITools/AdvancedUse.html"/>
+    </url>
+    <url>
+        <loc>NoneGUITools/HowToUse.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneGUITools/HowToUse.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/GUITools/HowToUse.html"/>
+    </url>
+    <url>
+        <loc>NoneGUITools/Setup.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneGUITools/Setup.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/GUITools/Setup.html"/>
+    </url>
+    <url>
         <loc>NoneHEMAnimationConverter/AnimationConverter.html</loc>
         <lastmod>2024-06-26</lastmod>
         <changefreq>daily</changefreq>
@@ -1464,6 +1485,34 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.0.html"/>
     </url>
     <url>
+        <loc>Nonereleasenote/releasenote-13.1.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.1.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.1.html"/>
+    </url>
+    <url>
+        <loc>Nonereleasenote/releasenote-13.2.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.2.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.2.html"/>
+    </url>
+    <url>
+        <loc>Nonereleasenote/releasenote-13.3.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.3.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.3.html"/>
+    </url>
+    <url>
+        <loc>Nonereleasenote/releasenote-13.4.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.4.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.4.html"/>
+    </url>
+    <url>
         <loc>Nonereleasenote/releasenote-3.2.html</loc>
         <lastmod>2024-06-26</lastmod>
         <changefreq>daily</changefreq>
@@ -2141,6 +2190,27 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/FirstStep/WorldUpload.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="NoneFirstStep/WorldUpload.html"/>
+    </url>
+    <url>
+        <loc>Noneen/GUITools/AdvancedUse.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/GUITools/AdvancedUse.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneGUITools/AdvancedUse.html"/>
+    </url>
+    <url>
+        <loc>Noneen/GUITools/HowToUse.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/GUITools/HowToUse.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneGUITools/HowToUse.html"/>
+    </url>
+    <url>
+        <loc>Noneen/GUITools/Setup.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/GUITools/Setup.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneGUITools/Setup.html"/>
     </url>
     <url>
         <loc>Noneen/HEMAnimationConverter/AnimationConverter.html</loc>
@@ -3282,6 +3352,34 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.0.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.0.html"/>
+    </url>
+    <url>
+        <loc>Noneen/releasenote/releasenote-13.1.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.1.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.1.html"/>
+    </url>
+    <url>
+        <loc>Noneen/releasenote/releasenote-13.2.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.2.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.2.html"/>
+    </url>
+    <url>
+        <loc>Noneen/releasenote/releasenote-13.3.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.3.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.3.html"/>
+    </url>
+    <url>
+        <loc>Noneen/releasenote/releasenote-13.4.html</loc>
+        <lastmod>2024-06-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-13.4.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-13.4.html"/>
     </url>
     <url>
         <loc>Noneen/releasenote/releasenote-3.2.html</loc>
