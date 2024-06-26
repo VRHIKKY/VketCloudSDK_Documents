@@ -40,9 +40,6 @@ When you switch the display tab to My Registries, `VketCloudSDK_GUITools` should
 
 Click the Install button to perform the installation.
 
-![GUITools_Setup_05](img/GUITools_Setup_05.jpg)
-
-Once the installation is complete, VketCloudGUITools is now installed. Confirm that 'VketCloudGUITools' is displayed in the Unity top tab.
 
 ## C. Installing UniTask
 
@@ -61,3 +58,7 @@ Copy the following URL into the textbox that appears and click the Add button
 `https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask`
 
 ![GUITools_Setup_07](img/GUITools_Setup_07.jpg)
+
+Once the installation is complete, VketCloudGUITools is now installed. Confirm that 'VketCloudGUITools' is displayed in the Unity top tab.
+
+![GUITools_Setup_05](img/GUITools_Setup_05.jpg)
