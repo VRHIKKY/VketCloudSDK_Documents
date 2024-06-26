@@ -15,6 +15,10 @@
   - 組み込み関数
     - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/hs/hs_system_function_gui_HSGUIModel.html)
     - [レンダリング](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/hs/hs_system_function_rendering.html)
+- SDK Tools
+  - [GUITools - 概要とセットアップ](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/GUITools/Setup.html)
+  - [基本的な使い方](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/GUITools/HowToUse.html)
+
 
 ## 変更されたページ
 
