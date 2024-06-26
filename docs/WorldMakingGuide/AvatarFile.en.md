@@ -3,6 +3,10 @@
 The AvatarFile is used in the VketCloudSDK for such as [Adding Preset Avatars](PresetAvatar.md).<br>
 This file stores information to initiate avatars on Vket Cloud.
 
+!!! note "About Emotion function"
+    If you want to use `Emotion` function, please use SDK12.3.4 or earlier versions.<br>
+    `Emotion` function is no longer available after SDK 13.0.
+
 ## General Information
 
 | Label | Function |
