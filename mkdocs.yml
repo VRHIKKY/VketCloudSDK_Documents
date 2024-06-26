@@ -166,6 +166,7 @@ plugins:
             Matrix: Matrixクラス
             Item: Itemクラス
             Player: Playerクラス
+            Date: Dateクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -372,6 +373,7 @@ nav:
         - Matrix: hs/hs_struct_matrix.md
         - Item: hs/hs_class_item.md
         - Player: hs/hs_class_player.md
+        - Date: hs/hs_class_date.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md
