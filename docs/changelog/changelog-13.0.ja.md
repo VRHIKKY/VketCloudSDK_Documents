@@ -18,9 +18,23 @@
 
 ## 変更されたページ
 
+- VketCloudSDKについて
+  - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/AboutVketCloudSDK/LoginSDK.html)
+    - macOS, Safariを使用している場合のトラブルシュートについて追記
+- トラブルシューティング
+  - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/troubleshooting/InstallingDeeplink.html)
+    - macOS, Safariを使用している場合のトラブルシュートについて追記
 - ワールド制作ガイド
-  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/hs/hs_class_date.html)
+  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/AvatarFile.html)
     - .hrmファイルの追記、アニメーション周りの記述の刷新、Emotionの記載の削除
+- VKCコンポーネント
+  - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCItemActivity.html)
+    - Edit modeと使用方法を追記
+  - [VKCNodeCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCNodeCollider.html)
+    - 新しいコライダーターゲットタイプ "Self Player Only" についての情報を追加
+    - 新しい押し出しパラメータについての情報を追加
+  - [VKCSettingMyAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VketCloudSettings/MyAvatarSettings.html)
+    - 説明画像の更新、Emotion機能の削除
 - HeliScript
   - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/hs/hs_component.html)
     - OnClickNode()について仕様を追記

@@ -27,20 +27,14 @@ MyAvatarSettings handles settings for using [MyAvatars](../AboutVketCloudSDK/Set
 ### About Motions
 
 The default motions/animations are set and used by the SDK.<br>
-By [Preparing an animation and replacing](../HEMAnimationConverter/AnimationConverter.md), MyAvatar's idle, walk, and other motions can be replaced by the animation.<br>
+By [Preparing an animation and replacing](../HEMAnimationConverter/AnimationConverter.md), MyAvatar's idle, walk, turnbacks and other motions can be replaced by the animation.<br>
 To edit motions for preset avatars in world, edit the [Avatar File](../WorldMakingGuide/AvatarFile.md) of the preset avatar.
 
 ---
 
-## Emotion
-
-![MyAvatarSettings_2](img/MyAvatarSettings_2.jpg)
-
-|  Label | Initial Value | function |
-| ----   | ---- | ---- |
-| `Emotion` || Set the emotes to be used by the MyAvatars. |
-| `loop` | true | Play the motion in a loop. |
-| `Use Action` | false | Sets the action to call when the motion starts playing.<br>  In particular, enable this setting and designate the action to be fired via `Setting`. |
+!!! note "About Emotion function"
+    If you want to use `Emotion` function, please use SDK12.3.4 or earlier versions.<br>
+    `Emotion` function is no longer available after SDK 13.0.
 
 ---
 

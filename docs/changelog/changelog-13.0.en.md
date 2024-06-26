@@ -8,26 +8,37 @@
   - VKCNode
     - [VKCNodeAlphaAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VKCComponents/VKCNode/VKCNodeAlphaAnimation.html)
 - World Making Guide
-  - [File Deployment Config](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/FileDeploymentConfig.html)
+  - [File Deployment Config](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/WorldMakingGuide/FileDeploymentConfig.html)
 - HeliScript
   - Built-in Classes And Functions
     - [Date](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/hs/hs_class_date.html) *English version WIP
   - Built-in Functions
     - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/hs/hs_system_function_gui_HSGUIModel.html) *English version WIP
-  - Built-in Functions
     - [Rendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/hs/hs_system_function_rendering.html) *English version WIP
-  - Built-in Functions
 
 ## Edited Pages
 
-  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/AvatarFile.html)
+- VKCComponents
+
+- About VketCloudSDK
+  - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/AboutVketCloudSDK/LoginSDK.html)
+    - Added troubleshooting note for macOS, Safari users
+- Trouble shooting
+  - [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/troubleshooting/InstallingDeeplink.html)
+    - Added troubleshooting note for macOS, Safari users
+- World Making Guide
+  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/WorldMakingGuide/AvatarFile.html)
     - Added info about .hrm files, revised description about animation, deleted content about Emotion
-- ワールド制作ガイド
-  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/hs/hs_class_date.html)
-    - .hrmファイルの追記、アニメーション周りの記述の刷新、Emotionの記載の削除
+- VKCComponents
+ - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VKCComponents/VKCItemActivity.html)
+    - Added Edit mode description and how to use
+ 　- [VKCNodeCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VKCComponents/VKCNodeCollider.html)
+    - Added info about new collider target type "Self Player Only".
+    - Added info about new extrusion parameters.
+   - [VKCSettingMyAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VketCloudSettings/MyAvatarSettings.html)
+     - Updated images, deleted content about Emotion
 - HeliScript
   - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/hs/hs_component.html) *English version WIP
-  - Built-in Functions
     - Added description about OnClickNode()
   - Built-in Classes And Functions : Added functions and description about features
     - [Vector3](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/hs/hs_struct_vector3.html) *English version WIP
