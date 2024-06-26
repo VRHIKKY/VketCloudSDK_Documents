@@ -1,6 +1,6 @@
 # GUITools - 概要とセットアップ
 
-VketCloudSDK外の派生ツールとして、Vket Cloudにて制作したワールドにおけるGUI (メニュー、チャットなどを操作するためのボタンやガイド表示)を編集・保存・読み込みを行うためのGUIToolsがあります。<br>
+VketCloudSDK外の派生ツールとして、Vket Cloudにて制作したワールドにおける （VKC Item Activity用）Activity Canvas GUIを編集・保存を行うためのGUIToolsがあります。<br>
 ツールとしては大きくGUI ImporterとGUI Exporterに分かれており、ワールド読み込み時にはGUIToolsにて行ったUIへの編集を保存したjsonファイルが参照されます。<br>
 新たにUIを追加した場合はHeliScriptによって操作を定義づける必要があります。詳しくは [応用実装](AdvancedUse.md) および [組み込み関数 - GUI](../hs/hs_system_function_gui.md) をご参照ください。
 
@@ -45,11 +45,6 @@ Apply後、Unity上部タブ Window > Package Managerを選択します。
 
 Installボタンを押すことでインストールされます。
 
-![GUITools_Setup_05](img/GUITools_Setup_05.jpg)
-
-インストールが完了したら、VketCloudGUIToolsが導入された状態となります。  
-Unity上部タブに「VketCloudGUITools」の表示があることを確認してください。
-
 ## C. UniTask導入
 
 環境によってUniTaskが自動インポートしていない場合があるので、UniTaskをPackageManagerから導入してください。
@@ -67,3 +62,8 @@ Unity上部タブに「VketCloudGUITools」の表示があることを確認し�
 `https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask`
 
 ![GUITools_Setup_07](img/GUITools_Setup_07.jpg)
+
+インストールが完了したら、VketCloudGUIToolsが導入された状態となります。  
+Unity上部タブに「VketCloudGUITools」の表示があることを確認してください。
+
+![GUITools_Setup_05](img/GUITools_Setup_05.jpg)

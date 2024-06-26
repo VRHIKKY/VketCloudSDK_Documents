@@ -1,68 +1,62 @@
-# GUITools - 概要とセットアップ
+# GUITools - Overview and Setup
 
-VketCloudSDK外の派生ツールとして、Vket Cloudにて制作したワールドにおけるGUI (メニュー、チャットなどを操作するためのボタンやガイド表示)を編集・保存・読み込みを行うためのGUIToolsがあります。<br>
-ツールとしては大きくGUI ImporterとGUI Exporterに分かれており、ワールド読み込み時にはGUIToolsにて行ったUIへの編集を保存したjsonファイルが参照されます。<br>
-新たにUIを追加した場合はHeliScriptによって操作を定義づける必要があります。詳しくは [応用実装](AdvancedUse.md) および [組み込み関数 - GUI](../hs/hs_system_function_gui.md) をご参照ください。
+GUITools is a derivative tool outside of VketCloudSDK designed to edit and save the Activity Canvas GUI for VKC Item Activities in worlds created in Vket Cloud. The tools are primarily divided into GUI Importer and GUI Exporter, and the json files saved by the edits made in GUITools are referenced at the time of world loading. If a new UI is added, it needs to be defined by HeliScript. For more details, see [Advanced Implementation](AdvancedUse.md) and [Built-in Functions - GUI](../hs/hs_system_function_gui.md).
 
-## A. 下準備
+## A. Preparation
 
-下準備として、[VketCloudSDKの導入方法](../AboutVketCloudSDK/SetupSDK_external.md)における手順に沿ってUnityプロジェクトのセットアップとVketCloudSDKのインストールを行います。
+As preparation, set up the Unity project and install the VketCloudSDK according to the procedures in [How to Install VketCloudSDK](../AboutVketCloudSDK/SetupSDK_external.md).
 
-!!! caution "環境導入時の注意点"
+!!! caution "Points to Note When Setting Up the Environment"
 
-    - エディターバージョンは2019.4.31f1になっている
+    - The editor version should be 2019.4.31f1
+    - Use the 3D template
+    - Ensure the project name does not include spaces, Hiragana, Katakana, Kanji, or any other double-byte characters
 
-    - 使用するテンプレートは3Dになっている
+From here on, explanations will be provided with Unity's Layout in "2 by 3" and the Project view in One Column Layout.
 
-    - プロジェクト名にSpace、ひらがなカタカナ漢字などの2バイト文字が入っていない
-
-以後、UnityのLayoutは「2 by 3」の状態、ProjectビューはOne Column Layoutの状態で解説を行います。
-
-## B. GUIToolsの導入
+## B. Installing GUITools
 
 ![GUITools_Setup_01](img/GUITools_Setup_01.jpg)
 
-Unity上部タブ Edit > Project Settings… を選択します。
+Select Edit > Project Settings… from the top tab in Unity.
 
 ![GUITools_Setup_02](img/GUITools_Setup_02.jpg)
 
-Package Managerを選び、+を選択します。
-その後、Name、URL、Scope(s)に下記を入力し、Applyを選択します。
+Choose Package Manager, click +, and enter the following information, then select Apply.
 
-| 項目 | 入力内容 |
+| Item | Input |
 | ---- | ---- |
 | Name | VketCloudSDK_GUITools |
 | URL  | https://registry.npmjs.com |
 | Scope(s) | com.hikky.vketcloudguitools |
 
-Apply後、Unity上部タブ Window > Package Managerを選択します。
+After applying, select Window > Package Manager from the Unity top tab.
 
 ![GUITools_Setup_03](img/GUITools_Setup_03.jpg)
 
-表示タブをMy Registriesにした際、`VketCloudSDK_GUITools`が表示されているはずです。
+When you switch the display tab to My Registries, `VketCloudSDK_GUITools` should be displayed.
 
 ![GUITools_Setup_04](img/GUITools_Setup_04.jpg)
 
-Installボタンを押すことでインストールされます。
+Click the Install button to perform the installation.
 
 ![GUITools_Setup_05](img/GUITools_Setup_05.jpg)
 
-インストールが完了したら、VketCloudGUIToolsが導入された状態となります。  
-Unity上部タブに「VketCloudGUITools」の表示があることを確認してください。
+Once the installation is complete, VketCloudGUITools is now installed. Confirm that 'VketCloudGUITools' is displayed in the Unity top tab.
 
-## C. UniTask導入
+## C. Installing UniTask
 
-環境によってUniTaskが自動インポートしていない場合があるので、UniTaskをPackageManagerから導入してください。
+If UniTask is not automatically imported depending on the environment, please install UniTask from the PackageManager.
 
 ![GUITools_Setup_03](img/GUITools_Setup_03.jpg)
 
-左上の＋ボタンをクリックし、Add package from git URL… を選択
+Click the + button in the upper left corner, and select Add package from git URL…
 
 ![GUITools_Setup_06](img/GUITools_Setup_06.jpg)
 
-現れたテキストボックスに下記URLをコピーしてAddボタンをクリック
+Copy the following URL into the textbox that appears and click the Add button
 
-※すでにプロジェクト内にUniTaskが入っている場合、スキップしてください
+*Skip this step if UniTask is already included in the project
 
 `https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask`
 

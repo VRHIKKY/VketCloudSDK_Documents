@@ -261,7 +261,6 @@ nav:
     - GUITools: 
       - GUITools Overview & Setup: GUITools/Setup.md
       - How to Use: GUITools/HowToUse.md
-      - Advanced Use: GUITools/AdvancedUse.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md

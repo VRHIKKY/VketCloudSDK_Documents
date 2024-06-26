@@ -15,6 +15,9 @@
   - Built-in Functions
     - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/hs/hs_system_function_gui_HSGUIModel.html) *English version WIP
     - [Rendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/hs/hs_system_function_rendering.html) *English version WIP
+- SDK Tools
+  - [GUITools - Overview and Setup](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/GUITools/Setup.html)
+  - [How to Use](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/GUITools/HowToUse.html)
 
 ## Edited Pages
 

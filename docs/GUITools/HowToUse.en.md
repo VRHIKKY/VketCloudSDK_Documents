@@ -1,61 +1,76 @@
-# 基本的な使い方
+# Basic Usage
 
-## 作業前の準備
+## Preparation Before Work
 
-Unityで作業をする前にUIの編集をしやすいレイアウトに変更しましょう。  
-右上のドロップダウンメニューからTallを選択し、上下に分かれたHierarchyとProjectのProjectのタブをドラッグして、Hierarchyの隣に持っていきます。
+Before working in Unity, change to a layout that is useful for editing 2D UI.
+Select Tall from the dropdown menu in the upper right corner, and drag the Project tab of Hierarchy and Project to place it next to Hierarchy.
 
 ![GUITools_HowToUse_01](img/GUITools_HowToUse_01.jpg)
 
-左上の方の「2D」と書かれたボタンをオンにします。
+Turn on the button labeled "2D" in the upper left.
 
 ![GUITools_HowToUse_02](img/GUITools_HowToUse_02.jpg)
 
-2Dの3つ隣にあるキラキラマークがついたボタンをクリックしてオフにします。
+Click the button with a sparkle icon, located three places to the right of the "2D" button, to turn it off.
 
 ![GUITools_HowToUse_03](img/GUITools_HowToUse_03.jpg)
-オフにする
+Turn off
 
-Main CameraとDirectional Lightは選択した後、Inspectorに表示されるチェックボックスのチェックを外して一旦非表示にしておきます。
+Select Main Camera and Directional Light, then uncheck the checkbox displayed in the Inspector to temporarily hide them.
 
 ![GUITools_HowToUse_04](img/GUITools_HowToUse_04.jpg)
 
-Projectタブを開き、Assetsを右クリックしCreate → FolderでUIの画像素材を入れるフォルダを作成します。一時的に素材を入れる場所なので名前は任意でOK。(ただし全角NG)
+Open the Project tab, right-click on Assets, and create a folder for UI image materials with Create → Folder. The name can be arbitrary (however, no full-width characters).
 
 ![GUITools_HowToUse_05](img/GUITools_HowToUse_05.jpg)
 
-## Jsonファイルのインポート
+## Loading Sample Activity Canvas (Template)
 
-メニューの VketCloudGUITools → GUI Importer をクリック
+![GUITools_HowToUse_12](img/GUITools_HowToUse_12.jpg)
+
+Install using Import Into Project.
+
+![GUITools_HowToUse_13](img/GUITools_HowToUse_13.jpg)
+
+It will then be installed into Assets.
+
+
+## Importing Json File
+
+Click VketCloudGUITools → GUI Importer from the menu.
 
 ![GUITools_HowToUse_06](img/GUITools_HowToUse_06.jpg)
 
-インポート用のダイアログで読み込みたいjsonファイルと素材のコピー先とスケールの設定をしてインポートします。
+In the import dialog, set the json file you want to load, the destination for copying materials, and the scale, and proceed with the import.
+
+The json file for the Sample Activity Canvas can be found at the following location, so please select it.
+
+`C:\{UnityProject}\Assets\Samples\VketCloud GUI Tools\13.0.0\Sample\Canvas\landscape\activity_modal.json`
 
 ![GUITools_HowToUse_07](img/GUITools_HowToUse_07.jpg)
 
-Importをクリックして100%の表示が出ていれば完了していますのでダイアログを閉じてください。
+Click Import and close the dialog when you see 100% displayed, indicating completion.
 
-読み込まれたはずなのに何も表示されない！となりますが、慌てずHierarchy内の読み込まれたひとつ下の階層を開いて選択し、Inspectorの一番上のチェックボックスにチェックを入れると表示されます。
+If nothing appears to be displayed after loading, do not panic. Open the hierarchy just below the loaded one in the Hierarchy, select it, and check the top checkbox in the Inspector to display it.
 
 ![GUITools_HowToUse_08](img/GUITools_HowToUse_08.jpg)
 
-Inspector一番上のチェックボックスで表示非表示がコントロールできます
+Visibility can be controlled by the top checkbox in the Inspector.
 
-## Unityの操作方法
+## Navigating in Unity
 
 ![GUITools_HowToUse_09](img/GUITools_HowToUse_09.jpg)
 
-Hierarchyはレイヤーのような構造ですが、Photoshopなどとは違い、上にあるものほど下に描画されるので注意です。
+Although the Hierarchy has a structure similar to layers, unlike Photoshop, items higher in the list are drawn underneath, so be mindful of this.
 
 ![GUITools_HowToUse_10](img/GUITools_HowToUse_10.jpg)
 
-**マウスホイール**  
-画面の拡大縮小  
-**マウス右クリックのドラッグ**  
-ハンドツール  
-UI編集の際は**Rect Tool (四角いアイコン)**にしておくと編集しやすいです。
+**Mouse Wheel**  
+Zoom in and out of the screen.  
+**Right-click Drag of the Mouse**  
+Hand tool.  
+When editing UI, it's easier to work with the **Rect Tool (square icon)**.
 
 ![GUITools_HowToUse_11](img/GUITools_HowToUse_11.jpg)
 
-Inspectorの一番上にチェックを入れているにも関わらず、何も表示されていないという場合は、Inspector内のImageの所にチェックを入れると表示されます。
+If nothing is displayed even though the top checkbox in the Inspector is checked, make sure the checkbox in the Image section of the Inspector is checked to display the image.

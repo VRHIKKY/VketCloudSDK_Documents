@@ -24,6 +24,17 @@ Projectタブを開き、Assetsを右クリックしCreate → FolderでUIの画
 
 ![GUITools_HowToUse_05](img/GUITools_HowToUse_05.jpg)
 
+## サンプルActivity Canvasの読み込み（テンプレート）
+
+![GUITools_HowToUse_12](img/GUITools_HowToUse_12.jpg)
+
+Import Into Projectでインストールします。
+
+![GUITools_HowToUse_13](img/GUITools_HowToUse_13.jpg)
+
+その後、Assetsにインストールされます。
+
+
 ## Jsonファイルのインポート
 
 メニューの VketCloudGUITools → GUI Importer をクリック
@@ -31,6 +42,10 @@ Projectタブを開き、Assetsを右クリックしCreate → FolderでUIの画
 ![GUITools_HowToUse_06](img/GUITools_HowToUse_06.jpg)
 
 インポート用のダイアログで読み込みたいjsonファイルと素材のコピー先とスケールの設定をしてインポートします。
+
+サンプルActivity Canvasのjsonファイルは以下の場所にありますのでそちらを選択してください。
+
+`C:\{UnityProject}\Assets\Samples\VketCloud GUI Tools\13.0.0\Sample\Canvas\landscape\activity_modal.json`
 
 ![GUITools_HowToUse_07](img/GUITools_HowToUse_07.jpg)
 
