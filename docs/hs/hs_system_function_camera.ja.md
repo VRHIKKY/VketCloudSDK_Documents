@@ -40,4 +40,11 @@ TPSカメラのＹ方向のオフセットを指定します。単位はメー�
 
 ワールド座標系におけるカメラの位置をVector3として取得します。
 
+
+### hsCameraGetQuaternion
+`Quaternion hsCameraGetQuaternion()`
+
+ワールド座標系におけるカメラの向きをQuaternionとして取得します。
+
+
 ***

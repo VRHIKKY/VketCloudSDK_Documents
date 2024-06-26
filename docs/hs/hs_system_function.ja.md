@@ -64,6 +64,11 @@ Vket Cloudがデバッグモードで動作している場合は true を返す�
 
 それぞれの数値の意味は、hsGetDate() を確認してください。
 
+### hsGetEpochSeconds
+`int GetEpochSeconds()`
+
+UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経過秒数を返します。
+
 ### hsGetTimezoneOffset
 `int hsGetTimezoneOffset()`
 

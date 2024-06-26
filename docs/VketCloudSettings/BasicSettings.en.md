@@ -18,7 +18,7 @@ BasicSettings handles the main settings of the world.
 | `Voice Attenuation` | true | Activate player voice attenuation. |
 | `Min Distance (m)`| 5.0 | Designate start of voice attenuation by meter. |
 | `Max Distance (m)`| 10.0 | Designate end of voice attenuation by meter. |
-| `HeliScript` | blank | The HeliScripts used in this world will be listed here. HeliScripts designated in components such as [HEOScript](../HEOComponents/HEOScript.md) will be listed automatically. |
+| `HeliScript` | blank | The HeliScripts used in this world will be listed here. HeliScripts designated in components such as [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md) will be listed automatically. |
 
 !!! note
     While `HeliScript` elements will be added automatically, it may become a `None` or `Missing` entry due to deleting files, etc.

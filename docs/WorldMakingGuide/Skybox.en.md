@@ -32,7 +32,7 @@ By selecting "Unlit/Texture" for the material shader, the Skybox object will be 
 
 ![Skybox_1](img/Skybox_1.jpg)
 
-!!! note "about HEOBackgroundTexture"
-    As an alternative method to setup a background, the [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md) component can be used to designate background textures.
+!!! note "about VKC Item Background Texture"
+    As an alternative method to setup a background, the [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md) component can be used to designate background textures.
 
-    ![HEOBackgroundTexture_2](../HEOComponents/img/HEOBackgroundTexture_2.jpg)
+    ![HEOBackgroundTexture_2](../VKCComponents/img/HEOBackgroundTexture_2.jpg)

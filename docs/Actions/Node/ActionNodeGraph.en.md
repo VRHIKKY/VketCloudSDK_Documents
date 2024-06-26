@@ -7,7 +7,7 @@ This article will explain how to use ActionNodeGraph. <br>
 
 ## Overview
 
-This component can be used as an alternative to [HEOActionTrigger](../../HEOComponents/HEOActionTrigger.md). <br>
+This component can be used as an alternative to [HEOActionTrigger](../../VKCComponents/VKCAttributeActionTrigger.md). <br>
 It has the following advantages compared to HEOActionTrigger.  
 
 - Actions can be managed visually with nodes
@@ -64,7 +64,7 @@ Right click on the parameter to rename or delete the parameter. <br>
 Parameters can be used by dragging and dropping them into the node space and connecting them to the corresponding ○. <br>
 <br>
 <br>
-■ Example: Play the first animation of HEO Object name "music" (playback only once)■<br>
+■ Example: Play the first animation of VKC Item Object name "music" (playback only once)■<br>
 ![ActionNodeGraph12](img/ActionNodeCompiler12.jpg)<br>
 <br>
 "music" is created as a String type parameter and "1" an int type parameter. <br>
@@ -73,7 +73,7 @@ Connect "music" to Ifequal's Name and "1" to NValue. <br>
 This completes the process of "if the content of music is 1, the subsequent processes does not occur". <br>
 <br>
 Connect "music" to the PlayItem's Name and "1" to the Index. <br>
-This completes the process of "playing the animation registered at Index number "1" of HEO Object "music"". <br>
+This completes the process of "playing the animation registered at Index number "1" of VKC Item Object "music"". <br>
 <br>
 Connect SetVar's Name to "music" and Index to "1". <br>
 This completes the process of "setting the contents of the parameter music to 1". <br>

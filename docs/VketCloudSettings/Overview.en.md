@@ -3,10 +3,10 @@
 ![Overview_2](img/Overview_2.jpg)
 
 Vket Cloud Settings is a suite of objects introduced in SDKVer12.0, which handles world settings in each category.<br>
-The settings are a refinement and reorganization of HEO components such as [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), [HEOPlayer](../HEOComponents/HEOPlayer.md), and [HEODespawnHeight](../HEOComponents/HEODespawnHeight.md), aimed for better convenience and practicalness.
+The settings are a refinement and reorganization of HEO components such as [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md), [HEOPlayer](../VKCComponents/HEOPlayer.md), and [HEODespawnHeight](../VKCComponents/HEODespawnHeight.md), aimed for better convenience and practicalness.
 
 !!! note "Migrating settings on updating SDK version"
-    When updating a world made in pre-SDK Ver12.0 environments to Ver12.0, the settings in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), [HEOPlayer](../HEOComponents/HEOPlayer.md), and [HEODespawnHeight](../HEOComponents/HEODespawnHeight.md) will be migrated to each Settings objects automatically.
+    When updating a world made in pre-SDK Ver12.0 environments to Ver12.0, the settings in [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md), [HEOPlayer](../VKCComponents/HEOPlayer.md), and [HEODespawnHeight](../VKCComponents/HEODespawnHeight.md) will be migrated to each Settings objects automatically.
 
 ## How to use VketCloudSettings
 

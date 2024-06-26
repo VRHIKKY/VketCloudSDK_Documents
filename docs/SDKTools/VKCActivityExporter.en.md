@@ -2,9 +2,9 @@
 
 VKC Activity Exporter is an SDK tool to export Activities. Using this tool, the creator can make a **VKCActivityExporter** object to export Activities.
 
-The exported Activities can be called by [HEOActivity](../HEOComponents/HEOActivity.md) as a pseudo-prefab to place multiple objects in worlds, and shared to other users by creating a zip file / Unitypackage containing the Activity to be distributed on platforms such as [Vket Store](https://store.vket.com/en/){target=_blank} or the "Asset Store" on the [Vket Cloud Mypage](https://cloud.vket.com/en/){target=_blank}.
+The exported Activities can be called by [VKC Item Activity](../VKCComponents/VKCItemActivity.md) as a pseudo-prefab to place multiple objects in worlds, and shared to other users by creating a zip file / Unitypackage containing the Activity to be distributed on platforms such as [Vket Store](https://store.vket.com/en/){target=_blank} or the "Asset Store" on the [Vket Cloud Mypage](https://cloud.vket.com/en/){target=_blank}.
 
-For basic information about Activity and how-to-use, please refer to [HEOActivity](../HEOComponents/HEOActivity.md).
+For basic information about Activity and how-to-use, please refer to [VKC Item Activity](../VKCComponents/VKCItemActivity.md).
 
 ## Usage
 
@@ -16,11 +16,11 @@ For basic information about Activity and how-to-use, please refer to [HEOActivit
 
     ![VKCActivityExporter_2](img/VKCActivityExporter_2.jpg)
 
-    Note that `Export as Activity` will appear only when selected objects have the HEOComponents available in Activity attached.
+    Note that `Export as Activity` will appear only when selected objects have the VKCComponents available in Activity attached.
 
-    See "[HEOComponents available in Activity](#heocomponents-available-in-activity)" for a list of available HEOComponents.
+    See "[VKCComponents available in Activity](#VKCComponents-available-in-activity)" for a list of available VKCComponents.
 
-3. Select `Export as Activity` to generate a **VKC Activity Exporter** object.<br> The previously selected objects will be a child-object of **VKC Activity Exporter**. 
+3. Select `Export as Activity` to generate a **VKC Activity Exporter** object.<br> The previously selected objects will be a child-object of **VKC Activity Exporter**.
 
     ![VKCActivityExporter_3](img/VKCActivityExporter_3.jpg)
 
@@ -32,12 +32,12 @@ The export process can be started by setting properties on the `VKC Activity Exp
 
 | Label | Function |
 | ---- | ---- |
-| HeliScript | Add/Delete HeliScript. <br> Added HeliScript can be used in same manner as[HEOScript](../HEOComponents/HEOScript.md). |
+| HeliScript | Add/Delete HeliScript. <br> Added HeliScript can be used in same manner as[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md). |
 | Motion | Add/Delete Motion.<br> Added Motion will be labeled inside the Activity's json file, which can be called by functions such as [Player.ChangeActivityMotion()](../hs/hs_class_player.md#changeactivitymotion) or [Player.SetNextActivityMotion()](../hs/hs_class_player.md#setnextactivitymotion) to play the motion on the player's avatar. |
 | Thumbnail | Designate a thumbnail image for the Activity.<br> A warning will be displayed if this image is not a .png file. |
 
-!!! bug "Build error when setting a VRM for HEOObject and exporting as an Activity"
-    On SDK Ver12.x, when settings a VRM on [HEOObject](../HEOComponents/HEOObject.md) and exporting as an Activity, a build error is caused by file reading error.<br>
+!!! bug "Build error when setting a VRM for VKC Item Object and exporting as an Activity"
+    On SDK Ver12.x, when settings a VRM on [VKC Item Object](../VKCComponents/VKCItemObject.md) and exporting as an Activity, a build error is caused by file reading error.<br>
     This issue is scheduled to be fixed on the next SDK version.<br>
     As a workaround, the json can be manually rewritten after placing the vrm file in the later mentioned data folder.
 
@@ -89,7 +89,7 @@ Please take good consideration that the assets in data folder do not violate cop
 
 ## Setting Property in Activity
 
-When using an Activity in [HEOActivity](../HEOComponents/HEOActivity.md), the Activity's `Overrides`(Property) can be defined to be used in HeliScript.
+When using an Activity in [VKC Item Activity](../VKCComponents/VKCItemActivity.md), the Activity's `Overrides`(Property) can be defined to be used in HeliScript.
 
 To add a new Property, open the json file of the Activity and define a key and value in `properties` as like below:
 
@@ -105,7 +105,7 @@ To add a new Property, open the json file of the Activity and define a key and v
 // ...
 ```
 
-The defined Property will be displayed in [HEOActivity](../HEOComponents/HEOActivity.md) / `overrides` on loading the Activity's json, which can be used to predefine the Activity's behavior.
+The defined Property will be displayed in [VKC Item Activity](../VKCComponents/VKCItemActivity.md) / `overrides` on loading the Activity's json, which can be used to predefine the Activity's behavior.
 
 ![VKCActivityExporter_8](img/VKCActivityExporter_8.jpg)
 
@@ -136,62 +136,62 @@ component VketChan
 }
 ```
 
-## HEOComponents available in Activity
+## VKCComponents available in Activity
 
-- [HEOActivity](../HEOComponents/HEOActivity.md)
+- [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
 
-- [HEOAnimation](../HEOComponents/HEOAnimation.md)
+- [VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md)
 
-- [HEOAreacollider](../HEOComponents/HEOAreacollider.md)
+- [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
 
-- [HEOAudio](../HEOComponents/HEOAudio.md)
+- [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
 
-- [HEOBackgroundTexture](../HEOComponents/HEOBackgroundTexture.md)
+- [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
 
-- [HEOCamera](../HEOComponents/HEOCamera.md)
+- [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
 
-- [HEOCollider](../HEOComponents/HEOCollider.md)
+- [VKC Node Collider](../VKCComponents/VKCNodeCollider.md)
 
-- [HEOField](../HEOComponents/HEOField.md)
+- [VKC Item Field](../VKCComponents/VKCItemField.md)
 
-- [HEOMeshCollider](../HEOComponents/HEOMeshCollider.md)
+- [VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)
 
-- [HEOObject](../HEOComponents/HEOObject.md)
+- [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
-- [HEOParticle](../HEOComponents/HEOParticle.md)
+- [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
 
-- [HEOPlane](../HEOComponents/HEOPlane.md)
+- [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
-- [HEOShadow](../HEOComponents/HEOShadow.md)
+- [VKC Node Shadow](../VKCComponents/VKCNodeShadow.md)
 
-- [HEOSpot](../HEOComponents/HEOSpot.md)
+- [VKC Item Spot](../VKCComponents/VKCItemSpot.md)
 
-- [HEOTextPlane](../HEOComponents/HEOTextPlane.md)
+- [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
-- [HEOUVScroller](../HEOComponents/HEOUVScroller.md)
+- [VKC Node UV Scroller](../VKCComponents/VKCNodeUVScroller.md)
 
-- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md) *On SDK Ver12.3.4 and later versions
+- [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) * On SDK Ver12.3.4 and later versions
 
-!!! caution "HEOVideoTrigger in Activity"
-    On SDK Ver12.3.4 and later versions, HEOVideoTrigger can be included on exporting Activity.<br>
-    However, as Autoplay cannot be enabled in Activity, the player must manually click or use the [HEOAreacollider](../HEOComponents/HEOAreacollider.md) to play the video.
+!!! caution "VKC Node Video Trigger in Activity"
+    On SDK Ver12.3.4 and later versions, [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) can be included on exporting Activity.<br>
+    However, as Autoplay cannot be enabled in Activity, the player must manually click or use the [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) to play the video.
 
-## HEOComponents unavailable/unsupported in Activity
+## VKCComponents unavailable/unsupported in Activity
 
-- [HEOActionTrigger](../HEOComponents/HEOActionTrigger.md)
+- [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.md)
 
-- [HEOCylinderCollider](../WorldMakingGuide/Collider.md)
+- [VKC Node Cylinder Collider](../WorldMakingGuide/Collider.md)
 
-- [HEOInfo](../HEOComponents/HEOInfo.md)
+- [VKC Node Blend Shape Translator](../VKCComponents/VKCNodeBlendShapeTranslator.md)
 
-- [HEOLODLevel](../HEOComponents/HEOLODLevel.md)
+- [VKC Node LOD Level](../VKCComponents/VKCNodeLODLevel.md)
 
-- [HEOMirror](../HEOComponents/HEOMirror.md)
+- [VKC Node Mirror](../VKCComponents/VKCNodeMirror.md)
 
-- [HEOObjectType](../HEOComponents/HEOObjectType.md)
+- [VKC Node Reflection Probe Type](../VKCComponents/VKCNodeReflectionProbeType.md)
 
-- [HEOProperty](../HEOComponents/HEOProperty.md) *WIP
+- [VKC Attribute Property](../VKCComponents/VKCAttributeProperty.md)
 
-- [HEOScript](../HEOComponents/HEOScript.md)
+- [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)
 
-- [HEOVideoTrigger](../HEOComponents/HEOVideoTrigger.md) *Before SDK Ver12.3.4
+- [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) * Before SDK Ver12.3.4

@@ -46,7 +46,7 @@ By enabling the Debug Mode, a status indicator will appear on top of the window.
 
 ### 5th Row and so on
 
-This row shows text from each components. For example, if [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline) is called within [HEOScript](../HEOComponents/HEOScript.md), the text will be displayed here.
+This row shows text from each components. For example, if [hsSystemWriteLine()](../hs/hs_system_function.md#hssystemwriteline) is called within [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md), the text will be displayed here.
 
 ## F2: Display Information UI
 
@@ -140,14 +140,14 @@ Displays Script information.
 Displays colliders placed in world.<br>
 SphereColliders will be shown by a round model, and BoxCollider by frames.
 
-*If Mesh Renderer is disabled, clickable colliders in HEOObjects will not be shown.
+*If Mesh Renderer is disabled, clickable colliders in VKC Item Objects will not be shown.
 
 Each color resembles the following colliders:
 
 | Label | Function |
 | ---- | ---- |
 | Red　| Clickable area. |
-| Violet　|　Position of Field object. This is usually on the (0,0,0) origin, which is also placed on the position of HEOActivity if any is placed.<br>This is used in same manner as BoxCollider, although this is displayed by a violet model unlike the BoxCollider's frames. |
+| Violet　|　Position of Field object. This is usually on the (0,0,0) origin, which is also placed on the position of VKC Item Activity if any is placed.<br>This is used in same manner as BoxCollider, although this is displayed by a violet model unlike the BoxCollider's frames. |
 | Orange　|　Clickable area for player avatar.  |
 | Yellow　|　Area Collider.  |
 | Green　|　Range of ReflectionProbe. |

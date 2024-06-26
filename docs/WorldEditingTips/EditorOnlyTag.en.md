@@ -4,7 +4,7 @@ The object with Unity's EditorOnly tag attached will be ignored on the VketCloud
 
 !!! note caution
     In the current version, the Node objects (e.g. Cube, Sphere, etc.) are available to be ignored.<br>
-    Note that HEOComponent objects such as [HEOObject](../HEOComponents/HEOObject.md) and [HEOActivity](../HEOComponents/HEOActivity.md) are unavailable to be ignored.
+    Note that VKCComponent objects such as [VKC Item Object](../VKCComponents/VKCItemObject.md) and [VKC Item Activity](../VKCComponents/VKCItemActivity.md) are unavailable to be ignored.
 
 ## How to Use
 
