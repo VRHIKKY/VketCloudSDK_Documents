@@ -75,6 +75,14 @@ public void OnUnload()
 以下のようにOnClickNodeメソッドを定義しておくと、そのアイテムのノードがクリックされた時に呼び出されます。
 
 ```
+public bool OnClickNode(int NodeIndex)
+```
+
+何らかの処理をおこなった場合はtrueを返すことで、エンジン側のクリック移動などが無効化されます。
+
+互換性のために以下の戻り値の型がvoidのものも定義出来ますが、Sceneファイルのclickablenodesに定義されていない場合はクリック移動などが実行されます。
+
+```
 public void OnClickNode(int NodeIndex)
 ```
 

@@ -259,6 +259,44 @@ Item が移動中の場合はtrueを返す。
         - [VKC Item Object](../VKCComponents/VKCItemObject.md): オブジェクトモードがMotionの際に、Motionリストに設定したhemが再生中の場合はtrueを返す
         - [VKC Item Particle](../VKCComponents/VKCItemParticle.md): .hepで設定したパーティクルが再生中の場合はtrueを返す
 
+### Pause
+
+`public bool Pause()`
+
+オブジェクトのモーション再生を一時停止します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### Restart
+
+`public bool Restart()`
+
+オブジェクトの一時停止したモーション再生を再開します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetPlayTime
+
+`public bool SetPlayTime(float PlayTimeMS)`
+
+オブジェクトのモーション再生時間の位置を変更します。
+単位はミリセカンドです。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetPlayTime
+
+`public float GetPlayTime()`
+
+オブジェクトのモーション再生時間の位置を取得します。
+単位はミリセカンドです。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
 ### SetShow
 
 `public void SetShow(bool flag)`
@@ -269,6 +307,7 @@ true で Item を表示する。false で Item を非表示にする。
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
@@ -283,6 +322,7 @@ Item が表示状態の場合は true を、そうでない場合は false を�
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
@@ -292,6 +332,32 @@ Item が表示状態の場合は true を、そうでない場合は false を�
 `public bool ChangeMotion(string MotionName)`
 
 MotionName で指定したモーションに動作を切り替えます。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### LoadMotion
+
+`public bool LoadMotion(string MotionName, string FileName, bool Loop)`
+
+モーションをロードします。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### FacialEmoteFixed
+
+`public bool FacialEmoteFixed(int FacialEmoteType)`
+
+表情を切り替えます。切り替えは即時おこなわれ、プレイヤーアバターのように一定時間で戻ることはありません。
+
+指定出来るタイプは以下になります。
+
+- FACIALEMOTETYPE_NEUTRAL
+- FACIALEMOTETYPE_JOY
+- FACIALEMOTETYPE_ANGRY
+- FACIALEMOTETYPE_SORROW
+- FACIALEMOTETYPE_FUN
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -609,7 +675,7 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 
 `public bool SetProperty(string Key, string Value)`
 
-プロパティを設定します。
+プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
@@ -650,8 +716,8 @@ ComponentNameでコンポーネント名を、MethodNameでメソッド名を指
 
 呼び出せるメソッドには、以下の制限があります。
 
-* 引数として string を 1つだけ持つこと。
-* 戻り値がvoidであること。
+- 引数として string を 1つだけ持つこと。
+- 戻り値がvoidであること。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)

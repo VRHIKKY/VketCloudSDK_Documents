@@ -52,6 +52,19 @@ class Quaternion
 
 グローバル関数。オイラー角の x, y, z の3要素からクォータニオンを生成する。
 
+### makeQuaternionFromTo
+`Quaternion makeQuaternionFromTo(Vector3 From, Vector3 To)`
+
+グローバル関数。FromベクトルからToベクトルに回転させるクォータニオンを生成する。
+
+### makeQuaternionLook
+`Quaternion makeQuaternionLook(Vector3 LookView, Vector3 Up)`
+
+グローバル関数。LookView方向を向くクォータニオンを生成する。Upベクトルは通常は(0.0f, 1.0f, 0.0f)を指定する。
+
+***
+
+
 
 ## コンストラクタ
 ### Quaternion()

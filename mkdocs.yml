@@ -166,16 +166,19 @@ plugins:
             Matrix: Matrixクラス
             Item: Itemクラス
             Player: Playerクラス
+            Date: Dateクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
             Network: ネットワーク
             NamePlate: ネームプレート
             GUI: GUI
+            HSGUIModel: HSGUIModel
             TextChat: テキストチャット
             Physics: 物理演算
             Camera: カメラ
             Common Dialog: 汎用ダイアログ
+            Rendering: レンダリング
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -372,17 +375,20 @@ nav:
         - Matrix: hs/hs_struct_matrix.md
         - Item: hs/hs_class_item.md
         - Player: hs/hs_class_player.md
+        - Date: hs/hs_class_date.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md
         - Network: hs/hs_system_function_net.md
         - NamePlate: hs/hs_system_function_nameplate.md
         - GUI: hs/hs_system_function_gui.md
+        - HSGUIModel: hs/hs_system_function_gui_HSGUIModel.md
         - TextChat: hs/hs_system_function_textchat.md
         - ChatGPT: hs/hs_system_function_chatgpt.md
         - Physics: hs/hs_system_function_physics.md
         - Camera: hs/hs_system_function_camera.md
         - Common Dialog: hs/hs_system_function_commondialog.md
+        - Rendering: hs/hs_system_function_rendering.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md
