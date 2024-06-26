@@ -22,6 +22,9 @@
   - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/AvatarFile.html)
     - .hrmファイルの追記、アニメーション周りの記述の刷新、Emotionの記載の削除
 - VKCコンポーネント
+  - [VKCNodeCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCNodeCollider.html)
+    - 新しいコライダーターゲットタイプ "Self Player Only" についての情報を追加
+    - 新しい押し出しパラメータについての情報を追加
   - [VKCSettingMyAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VketCloudSettings/MyAvatarSettings.html)
     - 説明画像の更新、Emotion機能の削除
 
