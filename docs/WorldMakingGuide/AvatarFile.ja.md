@@ -11,11 +11,8 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 
 | 名称 | 機能 |
 | ---- | ---- |
-| Thumbnail(Japanese) | 言語設定が日本語の際のアバターのサムネイルを設定します。<br> 設定されたサムネイルはワールド内設定画面にて使用されます。|
-| Thumbnail(English) | 言語設定が英語の際のアバターのサムネイルを設定します。<br> 設定されたサムネイルはワールド内設定画面にて使用されます。|
-
-サムネイルは、ワールド内設定画面のプリセットアバターのサムネイルとして以下のように使用されます。<br>
-また、設定画面でのアバターの表示の順番は[VketCloudSettings > Avatar Settings > Avatar Setting > Avatar File](../VketCloudSettings/AvatarSettings.md)にて設定された順番で表示されます。<br>
+| Thumbnail(Japanese) | 言語設定が日本語の際のアバターのサムネイルを設定します。  <br>設定されたサムネイルはワールド内設定画面にて使用されます。 |
+| Thumbnail(English) | 	言語設定が英語の際のアバターのサムネイルを設定します。<br>設定されたサムネイルはワールド内設定画面にて使用されます。 |
 
 !!! note "Avatar Settingsの項目について"
     Avatar Settingsの設定項目は[Vket Cloud Settings](../VketCloudSettings/Overview.md)のSetting modeを`Advanced`へ切り替える事で、`Avatar Settings`のオブジェクトがHierarchy上に現れ、設定変更が可能になります。
@@ -24,20 +21,36 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 
 ![AvatarFile_Result](img/AvatarFile_Result.jpg)
 
-## .vrm
+## Avatar
 
-初期設定で表示するVRM形式のアバターを指定する項目です。
+アバターデータを`.vrm`または`.hrm`から選択できます。
+
+サムネイルは、ワールド内設定画面のプリセットアバターのサムネイルとして以下のように使用されます。<br>
+また、設定画面でのアバターの表示の順番は[VketCloudSettings > Avatar Settings > Avatar Setting > Avatar File](../VketCloudSettings/AvatarSettings.md)にて設定された順番で表示されます。<br>
+
+### .vrm
+
+アバターデータに`.vrm`を指定する場合、以下の項目が設定可能です。
 
 ![AvatarFile_1](img/AvatarFile_1.jpg)
 
 | 名称 | 機能 |
 | ---- | ---- |
 | .vrm | アバターに使用するモデルを設定します。 |
-| Height | アバターのカメラ基準位置を設定します。0にすると、足元を中心にカメラが追従します。 |
-| Hrm Png | [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_png.hrmファイルを指定します。 |
-| Hrm Astc |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_astc.hrmファイルを指定します。|
-| Hrm Etc 2 |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_etc.hrmファイルを指定します。 |
-| Hrm Dxt |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_dxt.hrmファイルを指定します。 |
+
+なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。
+
+### .hrm
+
+アバターデータに`.hrm`を指定する場合、以下の項目が設定可能です。
+
+![AvatarFile_1](img/AvatarFile_2.jpg)
+
+| 名称 | 機能 |
+| ---- | ---- |
+| .hrm Png | [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_png.hrmファイルを指定します。 |
+| .hrm Astc |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_astc.hrmファイルを指定します。|
+| .hrm Etc 2 |  [テクスチャ圧縮](../WorldOptimization/TextureCompression.md)の結果生成された[モデル名]_etc.hrmファイルを指定します。 |
 
 !!! note "テクスチャ圧縮について"
     テクスチャ圧縮ツールについては、サーバー側で自動圧縮を行うために将来のバージョンでの廃止が予定されております。<br>
@@ -47,9 +60,9 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 ## Motion
 
 各ユーザーが使用できるモーションを設定する項目です。Vket Cloudでは任意のモーションを追加することができ、`.hem`という独自のファイル形式を採用しています。<br>
-[アニメーションファイルを用意し差し替える](../HEMAnimationConverter/AnimationConverter.md)ことで待機・歩行などのアバターのアニメーションを差し替えることができます。<br>
+[アニメーションファイルを用意し差し替える](../HEMAnimationConverter/AnimationConverter.md)ことで待機・歩行や、振り向く・切り返すなどのアバターのアニメーションを差し替えることができます。<br>
 
-![AvatarFile_2](img/AvatarFile_2.jpg)
+![AvatarFile_3](img/AvatarFile_3.jpg)
 
 | 名称 | 初期値 | 機能 |
 | ----   | ---- | ---- |
