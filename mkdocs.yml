@@ -177,6 +177,7 @@ plugins:
             Physics: 物理演算
             Camera: カメラ
             Common Dialog: 汎用ダイアログ
+            Rendering: レンダリング
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -385,6 +386,7 @@ nav:
         - Physics: hs/hs_system_function_physics.md
         - Camera: hs/hs_system_function_camera.md
         - Common Dialog: hs/hs_system_function_commondialog.md
+        - Rendering: hs/hs_system_function_rendering.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md
