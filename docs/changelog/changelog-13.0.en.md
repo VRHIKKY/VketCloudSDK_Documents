@@ -3,17 +3,29 @@
 ## Added Pages
 
 - VKCComponents
+  - VKCAttribute
+    - [VKCAttributeClickableUI](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VKCComponents/VKCAttribute/VKCAttributeClickableUI.html)
   - VKCNode
     - [VKCNodeAlphaAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VKCComponents/VKCNode/VKCNodeAlphaAnimation.html)
 - World Making Guide
-  - [File Deployment Config](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/FileDeploymentConfig.html)
+  - [File Deployment Config](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/WorldMakingGuide/FileDeploymentConfig.html)
 
 ## Edited Pages
 
-  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/AvatarFile.html)
+- About VketCloudSDK
+  - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/AboutVketCloudSDK/LoginSDK.html)
+    - Added troubleshooting note for macOS, Safari users
+- Trouble shooting
+  - [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/troubleshooting/InstallingDeeplink.html)
+    - Added troubleshooting note for macOS, Safari users
+- World Making Guide
+  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/WorldMakingGuide/AvatarFile.html)
     - Added info about .hrm files, revised description about animation, deleted content about Emotion
-  - [VKCNodeCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VKCComponents/VKCNodeCollider.html)
+- VKCComponents
+ 　- [VKCNodeCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VKCComponents/VKCNodeCollider.html)
     - Added info about new collider target type "Self Player Only".
     - Added info about new extrusion parameters.
+   - [VKCSettingMyAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/VketCloudSettings/MyAvatarSettings.html)
+     - Updated images, deleted content about Emotion
 
 ## Deleted Pages

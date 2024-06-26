@@ -305,6 +305,7 @@ nav:
   - VKCAttribute:
     - VKCAttributeActionTrigger: VKCComponents/VKCAttributeActionTrigger.md
     - VKCAttributeClickGuide: VKCComponents/VKCAttributeClickGuide.md
+    - VKCAttributeClickableUI: VKCComponents/VKCAttributeClickableUI.md
     - VKCAttributeProperty: VKCComponents/VKCAttributeProperty.md
     - VKCAttributeScript: VKCComponents/VKCAttributeScript.md
     - VKCAttributeShowFlag: VKCComponents/VKCAttributeShowFlag.md
