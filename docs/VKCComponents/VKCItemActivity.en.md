@@ -98,7 +98,7 @@ For details on how to get the activity data, refer to the manual which is referr
 
 ![VKCItemActivity_12](img/VKCItemActivity_12.jpg)
 
-5\. In an empty scene, place the essential components by right clicking and selecting "Add Essential Objects for Vket Cloud", and create an empty object for setting the activity. 
+5\. In an empty scene, place the essential components by right clicking and selecting "Add Essential Objects for Vket Cloud", and create an empty object for setting the activity.
 
 ![VKCItemActivity_13](img/VKCItemActivity_13.jpg)
 

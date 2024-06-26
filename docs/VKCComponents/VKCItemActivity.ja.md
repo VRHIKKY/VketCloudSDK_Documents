@@ -51,7 +51,7 @@ Edit ModeがOn状態のときScene PreviewはOnに固定され、チェックボ
 - Activity直下のAnalogClockObjectは可視化するオブジェクトのルートです。
 オブジェクトの追加、削除、変更をする場合、PreviewObjectRootの下層のオブジェクトのみに適用されます。
 
-可視化オブジェクトは、シーンビューからTransfrom等の調整が可能です。
+可視化オブジェクトは、シーンビューからTransform等の調整が可能です。
 
 ![VKCItemActivity_5](img/VKCItemActivity_5.jpg)
 
