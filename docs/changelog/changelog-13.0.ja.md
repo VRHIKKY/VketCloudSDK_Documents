@@ -9,10 +9,39 @@
     - [VKCNodeAlphaAnimation](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/VKCComponents/VKCNode/VKCNodeAlphaAnimation.html)
 - ワールド制作ガイド
   - [ワールドに任意のファイルを保持させる](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/FileDeploymentConfig.html)
+- HeliScript
+  - 組み込みクラス・関数
+    - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/hs/hs_class_date.html)
+  - 組み込み関数
+    - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/hs/hs_system_function_gui_HSGUIModel.html)
+    - [レンダリング](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/hs/hs_system_function_rendering.html)
 
 ## 変更されたページ
 
-  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/AvatarFile.html)
+- ワールド制作ガイド
+  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/hs/hs_class_date.html)
     - .hrmファイルの追記、アニメーション周りの記述の刷新、Emotionの記載の削除
+- HeliScript
+  - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_component.html)
+    - OnClickNode()について仕様を追記
+  - 組み込みクラス・関数 : 以下ページに新規追加関数及び仕様を追記
+    - [Vector3クラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_struct_vector3.html)
+      - makeVector3Dot(), makeVector3Cross()を追加
+    - [Quaternionクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_struct_quaternion.html)
+      - makeQuaternionFromTo(), makeQuaternionLook()を追加
+    - [Itemクラス](http://127.0.0.1:8000/hs/hs_class_item.html)
+      - Pause(), Restart(), SetPlayTime(), GetPlayTime()を追加
+      - LoadMotion(), FacialEmoteFixed()を追加
+      - SetProperty()に関する仕様を追記
+    - [Playerクラス](http://127.0.0.1:8000/hs/hs_class_player.html)
+      - SetControlEnabled(), SetJumpVelocity(), GetPresetAvatar()を追加
+  - 組み込み関数
+    - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_gui.html)
+      - hsCanvasIsPortrait(), hsCanvasSetConfigClosedFlag(), hsCanvasAddGUI(), その他HSGUIModelクラスを使用した関数を追加
+    - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_camera.html)
+      - hsCameraGetQuaternion()を追加
+  - 文法と制御構文
+    - [定義・宣言](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_statement_def.html)
+      - グローバル関数：makeQuaternionFromTo(), makeQuaternionLook()を追加
 
 ## 削除されたページ
