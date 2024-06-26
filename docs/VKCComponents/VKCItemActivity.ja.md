@@ -34,8 +34,8 @@ VKC Item Activityはアクティビティを使用する際に設定するコン
 
 ### Edit Modeについて
 
-Edit ModeはエクスポートされたActivityファイルをUnityEditorで再編集できる機能です。  
-Edit ModeのON状態になるとActivityに関連するHeliScriptとMotionのリストを表示し、編集が可能になります。
+Edit ModeはエクスポートされたActivityファイルをUnityEditorで再編集できる機能です。<br>
+Edit ModeがOn状態になるとActivityに関連するHeliScriptとMotionのリストを表示し、編集が可能になります。
 
 Edit ModeがOn状態のときScene PreviewはOnに固定され、チェックボックスは非表示になります。
 
@@ -47,7 +47,7 @@ Edit ModeがOn状態のときScene PreviewはOnに固定され、チェックボ
 
 ![VKCItemActivity_4](img/VKCItemActivity_4.jpg)
 
-- 画像の「Activity」オブジェクトはVKC Item Activityスクリプトをアタッチしているオブジェクトです。
+- 画像の「Activity」オブジェクトはVKC Item Activityコンポーネントをアタッチしているオブジェクトです。
 - Activity直下のAnalogClockObjectは可視化するオブジェクトのルートです。
 オブジェクトの追加、削除、変更をする場合、PreviewObjectRootの下層のオブジェクトのみに適用されます。
 

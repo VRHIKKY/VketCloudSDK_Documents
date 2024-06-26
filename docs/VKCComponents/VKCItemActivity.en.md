@@ -23,43 +23,44 @@ The "Activity" in Vket Cloud is a feature for wrapping models and scripts as a s
 
 | Label | Function |
 | ---- | ---- |
-| Clickable | クリック可能かどうかを変更します |
+| Clickable | Toggles acceptance of click input from player |
 | Auto Loading | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](VKCItemField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
 | Item Render Priority | Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
-| Show Photo Mode | 写真撮影モードの際、Activityを表示するかどうかを変更します |
+| Show Photo Mode | Toggles display/hide activity when in photo mode |
 
 !!! info "Creating your own Activity"
     On SDK Ver12.x and later versions, a tool has been added to create/export your own Activity.<br>
     For details, please see [VKC Activity Exporter](../SDKTools/VKCActivityExporter.md).
 
-### Edit Modeについて
+### About Edit Mode
 
-Edit ModeはエクスポートされたActivityファイルをUnityEditorで再編集できる機能です。  
-Edit ModeのON状態になるとActivityに関連するHeliScriptとMotionのリストを表示し、編集が可能になります。
+The Edit Mode allows re-editing of exported Activity files on the Unity Editor.<br>
+When Edit Mode is set to On, a list of HeliScripts and Motions related to the activity will be shown, allowing to edit and configure.
 
-Edit ModeがOn状態のときScene PreviewはOnに固定され、チェックボックスは非表示になります。
+Note that Scene Preview will be set to On when Edit Mode is enabled, which will disallow preview to be hidden.
 
 ![VKCItemActivity_3](img/VKCItemActivity_3.jpg)
 
-#### Activity編集の方法
+#### How to Edit Activity
 
-ここではAnalogClockActivityを例に編集の方法を解説します。
+Fir example, the AnalogClockActivity is edited by the instructions below.
 
 ![VKCItemActivity_4](img/VKCItemActivity_4.jpg)
 
-- 画像の「Activity」オブジェクトはVKC Item Activityスクリプトをアタッチしているオブジェクトです。
-- Activity直下のAnalogClockObjectは可視化するオブジェクトのルートです。
-オブジェクトの追加、削除、変更をする場合、PreviewObjectRootの下層のオブジェクトのみに適用されます。
+- The "Activity" object in the image above is the object with VKC Item Activity component attached.
+- The AnalogClockObject located under Activity is the root object shown for Scene Preview.
 
-可視化オブジェクトは、シーンビューからTransfrom等の調整が可能です。
+If an object is added, deleted, or edited, it will be reflected only to the objects under PreviewObjectRoot.
+
+The Preview Object can be edited in the scene view, by editing components such as Transform, etc.
 
 ![VKCItemActivity_5](img/VKCItemActivity_5.jpg)
 
-インスペクタービューでVKC Item ActivityのEdit ModeのOffボタンをクリックすると、編集したActivity内容を自動的に保存されます。
+By selecting Off in VKC Item Activity's Edit Mode, the edited contents will be automatically saved.
 
 ![VKCItemActivity_6](img/VKCItemActivity_6.jpg)
 
-保存成功の場合は以下のダイアログを表示します。
+When save is successfully completed, a dialog as the image below will be shown.
 
 ![VKCItemActivity_7](img/VKCItemActivity_7.jpg)
 
