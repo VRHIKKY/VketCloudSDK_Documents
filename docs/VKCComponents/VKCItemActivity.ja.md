@@ -48,18 +48,18 @@ Edit ModeがOn状態のときScene PreviewはOnに固定され、チェックボ
 ![VKCItemActivity_4](img/VKCItemActivity_4.jpg)
 
 - 画像の「Activity」オブジェクトはVKC Item Activityコンポーネントをアタッチしているオブジェクトです。
-- Activity直下のAnalogClockObjectは可視化するオブジェクトのルートです。
-オブジェクトの追加、削除、変更をする場合、PreviewObjectRootの下層のオブジェクトのみに適用されます。
+- オブジェクトの追加、削除、変更をする場合、VKC Item Activityがアタッチされたオブジェクトより下層のオブジェクトのみに適用されます。<br>
+今回の例では、Activityの一階層下にある`AnalogClockObject`の配下のオブジェクトが編集対象となります。
 
-可視化オブジェクトは、シーンビューからTransform等の調整が可能です。
+編集対象のオブジェクトは、シーンビューからTransform等の調整が可能です。
 
 ![VKCItemActivity_5](img/VKCItemActivity_5.jpg)
 
-インスペクタービューでVKC Item ActivityのEdit ModeのOffボタンをクリックすると、編集したActivity内容を自動的に保存されます。
+インスペクタービューでVKC Item ActivityのEdit ModeのOffボタンをクリックすると、編集したActivityの内容が保存されます。
 
 ![VKCItemActivity_6](img/VKCItemActivity_6.jpg)
 
-保存成功の場合は以下のダイアログを表示します。
+保存が成功した場合は、以下のメッセージが表示されます。
 
 ![VKCItemActivity_7](img/VKCItemActivity_7.jpg)
 
