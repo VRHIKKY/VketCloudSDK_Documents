@@ -95,19 +95,20 @@ plugins:
             World Making Guide: ワールド制作ガイド
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
-            HEOExporter: .heoファイルについて
-            HEOExporter Tutorial: .heoファイルを出力する
+            Exporter: .heoファイルについて
+            Export Field Tutorial: .heoファイルを出力する
             Reflection Probe: リフレクションプローブ
             Setting up a Skybox: スカイボックス設定
             Texture Compression: テクスチャ圧縮
             How to use Colliders / Tips: コライダーの使い方 / Tips
             Physics Engine: 物理エンジンの使い方
-            Tips on using HEOField: HEOFieldの使い方
+            Tips on using VKC Item Field: VKC Item Fieldの使い方
             Unity settings for replicating actual look in Vket Cloud: UnityとVketCloudの見た目を揃える
             Mesh Collider: メッシュコライダーについて
             Adding Preset Avatars : プリセットアバターを追加する
             How to Animate Objects: オブジェクトをアニメーションさせる
             How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
+            File Deployment Config: ワールドに任意のファイルを保持させる
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -125,11 +126,15 @@ plugins:
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
             VketCloudSDK Settings : VketCloudSDK設定
+            # GUITools 
+            GUITools Overview & Setup: GUITools - 概要とセットアップ
+            How to Use: 基本的な使い方
+            Advanced Use: 応用実装
             # 編集Tips
             World Editing Tips: 編集のためのTips
             Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
             Using EditorOnly Tags: EditorOnlyタグの使用方法
-            Editing Multiple HEOComponents: 複数のHEOコンポーネントの一括編集
+            Editing Multiple VKCComponents: 複数のVKCコンポーネントの一括編集
             Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
             Build Options: ビルド時のオプション
             # 軽量化
@@ -137,8 +142,9 @@ plugins:
             World Optimization - Overview: ワールドの軽量化方法：概要
             Occlusion Culling: オクルージョンカリング
             Optimization for Smartphones: スマートフォンのためのワールド軽量化
-            # HEOComponents
-            HEOComponents: HEOコンポーネント
+            # VKCComponents
+            VKC Components: VKCコンポーネント
+            VKC/HEO Correspondence Table: VKC/HEO対応表
             # アクション
             Actions: アクションについて
             Actions Overview: アクションの概要
@@ -157,23 +163,26 @@ plugins:
             Operator: 演算子
             Class: クラス
             Components / Callback functions: コンポーネント / コールバック関数
-            Item Types and HEOComponents: Itemの種類 / HEOComponentとの対応一覧
+            Item Types and VKCComponents: Itemの種類 / VKCComponentとの対応一覧
             Built-in Classes And Functions: 組み込みクラス・関数
             Vector3: Vector3クラス
             Quaternion: Quaternionクラス
             Matrix: Matrixクラス
             Item: Itemクラス
             Player: Playerクラス
+            Date: Dateクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
             Network: ネットワーク
             NamePlate: ネームプレート
             GUI: GUI
+            HSGUIModel: HSGUIModel
             TextChat: テキストチャット
             Physics: 物理演算
             Camera: カメラ
             Common Dialog: 汎用ダイアログ
+            Rendering: レンダリング
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -212,8 +221,8 @@ nav:
     - Player Settings: VketCloudSettings/PlayerSettings.md
     - Despawn Height Settings: VketCloudSettings/DespawnHeightSettings.md
     # Advanced
-    - Camera Settings: VketCloudSettings/CameraSettings.md
     - Rendering Settings: VketCloudSettings/RenderingSettings.md
+    - Camera Settings: VketCloudSettings/CameraSettings.md
     - Avatar Settings: VketCloudSettings/AvatarSettings.md
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
@@ -221,13 +230,14 @@ nav:
     - Setting up a Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
-    - Tips on using HEOField: WorldMakingGuide/HEOFieldTips.md
+    - Tips on using VKC Item Field: WorldMakingGuide/HEOFieldTips.md
     - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+    - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -238,7 +248,7 @@ nav:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
     - Debug Mode: WorldEditingTips/DebugMode.md
-    - HEOExporter Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
+    - Export Field Tutorial : WorldMakingGuide/HEOExporter_Tutorial.md
     - Animation Converter : HEMAnimationConverter/AnimationConverter.md
     - Particle Editor :
       - Particle Editor - Overview : particleeditor/pe_about_particleeditor.md
@@ -248,10 +258,13 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
+    - GUITools: 
+      - GUITools Overview & Setup: GUITools/Setup.md
+      - How to Use: GUITools/HowToUse.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
-  - Editing Multiple HEOComponents: WorldEditingTips/MultiSelect_HEOComponents.md
+  - Editing Multiple VKCComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
   - Build Options: WorldEditingTips/BuildOptions.md
 - World Optimization: 
@@ -259,40 +272,58 @@ nav:
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
   - Texture Compression : WorldOptimization/TextureCompression.md
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
-- HEOComponents:
-    - HEOActionTrigger: HEOComponents/HEOActionTrigger.md
-    - HEOActivity: HEOComponents/HEOActivity.md
-    - HEOAnimation: HEOComponents/HEOAnimation.md
-    - HEOAreacollider: HEOComponents/HEOAreacollider.md
-    - HEOAudio: HEOComponents/HEOAudio.md
-    - HEOBackgroundTexture: HEOComponents/HEOBackgroundTexture.md
-    - HEOCamera: HEOComponents/HEOCamera.md
-    - HEOCollider: HEOComponents/HEOCollider.md
-    - HEOClickGuide: HEOComponents/HEOClickGuide.md
-    - HEOCylinderCollider: HEOComponents/HEOCylinderCollider.md
-    - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
-    - HEOField: HEOComponents/HEOField.md
-    #- HEOInfo: HEOComponents/HEOInfo.md #整備中
-    - HEOLODLevel: HEOComponents/HEOLODLevel.md
-    - HEOMeshCollider: HEOComponents/HEOMeshCollider.md
-    - HEOMirror: HEOComponents/HEOMirror.md
-    - HEONameplate: HEOComponents/HEONameplate.md
-    - HEOObject: HEOComponents/HEOObject.md
-    #- HEOObjectType: HEOComponents/HEOObjectType.md #整備中
-    - HEOParticle: HEOComponents/HEOParticle.md
-    - HEOPlane: HEOComponents/HEOPlane.md
-    - HEOPlayer: HEOComponents/HEOPlayer.md
-    - HEOProperty: HEOComponents/HEOProperty.md
-    - HEOReflectionProbe : HEOComponents/HEOReflectionProbe.md
-    - HEOScript: HEOComponents/HEOScript.md
-    - HEOShadow: HEOComponents/HEOShadow.md
-    - HEOShowFlag : HEOComponents/HEOShowFlag.md
-    - HEOSpawn: HEOComponents/HEOSpawn.md
-    - HEOSpot: HEOComponents/HEOSpot.md
-    - HEOTextPlane: HEOComponents/HEOTextPlane.md
-    - HEOUVScroller: HEOComponents/HEOUVScroller.md
-    - HEOVideoTrigger: HEOComponents/HEOVideoTrigger.md
-    - HEOWorldSetting: HEOComponents/HEOWorldSetting.md
+- VKC Components:
+  - VKC/HEO Correspondence Table: VKCComponents/VKCHEOCorrespondenceTable.md
+  - VKCSetting:
+    # Basic
+    - VKCSettingBase: VketCloudSettings/BasicSettings.md
+    - VKCSettingPlayer: VketCloudSettings/PlayerSettings.md
+    - VKCSettingDespawnHeight: VketCloudSettings/DespawnHeightSettings.md
+    # Advanced
+    - VKCSettingRendering: VketCloudSettings/RenderingSettings.md
+    - VKCSettingCamera: VketCloudSettings/CameraSettings.md
+    - VKCSettingAvatar: VketCloudSettings/AvatarSettings.md
+    - VKCSettingMyAvatar: VketCloudSettings/MyAvatarSettings.md
+    # Optional
+    - VKCSettingNameplate: VKCComponents/VKCSettingNameplate.md
+    - VKCSettingSpawn: VKCComponents/VKCSettingSpawn.md
+  - VKCItem:
+    - VKCItemActivity: VKCComponents/VKCItemActivity.md
+    - VKCItemAreaCollider: VKCComponents/VKCItemAreaCollider.md
+    - VKCItemAudio: VKCComponents/VKCItemAudio.md
+    - VKCItemBackgroundTexture: VKCComponents/VKCItemBackgroundTexture.md
+    - VKCItemCamera: VKCComponents/VKCItemCamera.md
+    - VKCItemField: VKCComponents/VKCItemField.md
+    - VKCItemObject: VKCComponents/VKCItemObject.md
+    - VKCItemParticle: VKCComponents/VKCItemParticle.md
+    - VKCItemPlane: VKCComponents/VKCItemPlane.md
+    - VKCItemSpot: VKCComponents/VKCItemSpot.md
+    - VKCItemTextPlane: VKCComponents/VKCItemTextPlane.md
+  - VKCNode:
+    - VKCNodeAlphaAnimation: VKCComponents/VKCNodeAlphaAnimation.md
+    - VKCNodeBlendShapeTranslator: VKCComponents/VKCNodeBlendShapeTranslator.md
+    - VKCNodeCollider: VKCComponents/VKCNodeCollider.md
+    - VKCNodeCylinderCollider: VKCComponents/VKCNodeCylinderCollider.md
+    - VKCNodeLODLevel: VKCComponents/VKCNodeLODLevel.md
+    - VKCNodeMeshCollider: VKCComponents/VKCNodeMeshCollider.md
+    - VKCNodeMirror: VKCComponents/VKCNodeMirror.md
+    - VKCNodeReflectionProbeType: VKCComponents/VKCNodeReflectionProbeType.md
+    - VKCNodeRotateAnimation: VKCComponents/VKCNodeRotateAnimation.md
+    - VKCNodeShadow: VKCComponents/VKCNodeShadow.md
+    - VKCNodeUVScroller: VKCComponents/VKCNodeUVScroller.md
+    - VKCNodeVideoTrigger: VKCComponents/VKCNodeVideoTrigger.md
+  - VKCAttribute:
+    - VKCAttributeActionTrigger: VKCComponents/VKCAttributeActionTrigger.md
+    - VKCAttributeClickGuide: VKCComponents/VKCAttributeClickGuide.md
+    - VKCAttributeClickableUI: VKCComponents/VKCAttributeClickableUI.md
+    - VKCAttributeProperty: VKCComponents/VKCAttributeProperty.md
+    - VKCAttributeScript: VKCComponents/VKCAttributeScript.md
+    - VKCAttributeShowFlag: VKCComponents/VKCAttributeShowFlag.md
+  - VKCLegacy:
+    - HEODespawnHeight: VKCComponents/HEODespawnHeight.md
+    - HEOPlayer: VKCComponents/HEOPlayer.md
+    - HEOWorldSetting: VKCComponents/HEOWorldSetting.md
+    - HEOReflectionProbe: VKCComponents/HEOReflectionProbe.md
 - Actions: 
     #- ActionNodeGraph: Actions/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Actions/ActionsOverview.md
@@ -344,24 +375,27 @@ nav:
         - Delegate: hs/hs_delegate.md
     - Class: hs/hs_class.md
     - Components / Callback functions: hs/hs_component.md
-    - Item Types and HEOComponents: hs/hs_item_types_functions.md
+    - Item Types and VKCComponents: hs/hs_item_types_functions.md
     - Built-in Classes And Functions:
         - Vector3: hs/hs_struct_vector3.md
         - Quaternion: hs/hs_struct_quaternion.md
         - Matrix: hs/hs_struct_matrix.md
         - Item: hs/hs_class_item.md
         - Player: hs/hs_class_player.md
+        - Date: hs/hs_class_date.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md
         - Network: hs/hs_system_function_net.md
         - NamePlate: hs/hs_system_function_nameplate.md
         - GUI: hs/hs_system_function_gui.md
+        - HSGUIModel: hs/hs_system_function_gui_HSGUIModel.md
         - TextChat: hs/hs_system_function_textchat.md
         - ChatGPT: hs/hs_system_function_chatgpt.md
         - Physics: hs/hs_system_function_physics.md
         - Camera: hs/hs_system_function_camera.md
         - Common Dialog: hs/hs_system_function_commondialog.md
+        - Rendering: hs/hs_system_function_rendering.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md

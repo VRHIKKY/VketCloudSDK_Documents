@@ -18,7 +18,7 @@ BasicSettingsでは、ワールドの基本的な設定を編集できます。
 | `Voice Attenuation` | true | プレイヤー音声の距離減衰の有効/無効を切り替えます。 |
 | `Min Distance (m)`| 5.0 | 減衰を開始する距離をメートル単位で指定します。 |
 | `Max Distance (m)`| 10.0 | 減衰を終了する距離をメートル単位で指定します。|
-| `HeliScript` | 空欄 | ワールド内で使用されるHeliScriptが一覧表示されます。[HEOScript](../HEOComponents/HEOScript.md)などで指定したHeliScriptは本項目にリストアップされます。|
+| `HeliScript` | 空欄 | ワールド内で使用されるHeliScriptが一覧表示されます。[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)などで指定したHeliScriptは本項目にリストアップされます。|
 
 !!! note
     `HeliScript`は基本的には自動で項目が追加されますが、ファイルの削除などによって項目に`None`(未指定)または`Missing`が発生する場合があります。

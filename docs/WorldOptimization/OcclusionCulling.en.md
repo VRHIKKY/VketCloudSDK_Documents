@@ -13,11 +13,11 @@ At this time, if you do not need to show the Cube itself to the player, you can 
 
 Next, set up a Sphere as a shielded target on the other side of the Cube.
 ![OcclusionCulling_3](img/OcclusionCulling_3.jpg)
-
-Insert [HEOCollider](../HEOComponents/HEOCollider.md) into the Cube and set ColliderType to Occlusion.
+i
+Insert [VKC Node Collider](../VKCComponents/VKCNodeCollider.md) into the Cube and set ColliderType to Occlusion.
 ![OcclusionCulling_4](img/OcclusionCulling_4.jpg)
 
-Also, check Occlusion Culling in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md) and build.
+Also, check Occlusion Culling in [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md) and build.
 ![OcclusionCulling_5](img/OcclusionCulling_5.jpg)
 
 The Sphere will be hidden by placing a Cube with Occlusion settings between the camera and the Sphere.
@@ -27,7 +27,7 @@ At this time, the Cube has neither hit detection nor camera non-penetration dete
 
 ## How to debug occlusion culling
 
-If DebugMode is turned on in [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), information can be displayed at the top of the screen by pressing the F1 key twice.
+If DebugMode is turned on in [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md), information can be displayed at the top of the screen by pressing the F1 key twice.
 
 The number next to "DrawCall(Field)" on the top line of the displayed information is the number of draw calls for the currently displayed object, and the OC indicates that the occlusion culling setting is ON. <br>
 In this state, you can check the increase or decrease in the number of draw calls by showing/hiding objects using occlusion culling by moving the camera, etc. <br>

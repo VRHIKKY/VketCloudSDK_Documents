@@ -31,7 +31,7 @@ If the build succeeds, the browser will automatically open. Please check if the 
 
 ## What happens on running "Build and Run""
 
-Running "Build and Run" will convert objects with the [HEOField](../HEOComponents/HEOField.md) component and all its child objects into a .heo file format. ".heo" is a 3D file format used exclusively by Vket Cloud's drawing engine.
+Running "Build and Run" will convert objects with the [VKC Item Field](../VKCComponents/VKCItemField.md) component and all its child objects into a .heo file format. ".heo" is a 3D file format used exclusively by Vket Cloud's drawing engine.
 
 The built files are then copied to the `[project name]\release\data` folder. This folder will contain all the assets needed to run the world in a browser.
 

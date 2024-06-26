@@ -30,14 +30,24 @@ vec.z = 2.0f;
 Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 ```
 
-
 ## Vector3のユーティリティー関数
-### makeVector3(float, float, float)
+
+### makeVector3
 `Vector3 makeVector3(float x, float y, float z)`
 
 グローバル関数。指定した x, y, z 成分で初期化されたVector3を返す。
 
-### lerpVector3(Vector3 from, Vector3 to, float t)
+### makeVector3Dot
+`float makeVector3Dot(Vector3 vec1, Vector3 vec2)`
+
+グローバル関数。ベクトル同士の内積を計算します。
+
+### makeVector3Cross
+`Vector3 makeVector3Cross(Vector3 vec1, Vector3 vec2)`
+
+グローバル関数。ベクトル同士の外積を計算します。
+
+### lerpVector3
 `Vector3 lerpVector3(Vector3 from, Vector3 to, float t)`
 
 グローバル関数。from と to の間を時間 t で線形補間し、結果を Vector3 として返す。
