@@ -1,11 +1,12 @@
-
 # Definition/declaration
 
 Here we will go over the definitions of variables, functions, and constants.
 
 ## Variable
+
 Variables can be defined with "[type name] [variable name]".
 Variables can also be initialized at the same time they are declared.
+
 ```
 // Initialize to be 100 upon declaration
 int value = 100;
@@ -14,9 +15,10 @@ string emptyText;
 ```
 
 ## Definition of constant
+
 If *const* is added before the variable definition of [basic type](hs_var.md), the variable cannot be changed after initialization.
 
-Class variables cannot be given *const*.
+The following types are able to be defined as const: int, float, bool, and string.
 
 ```
 // Define an immutable constant integer variable
@@ -24,6 +26,7 @@ const int immutable = 999;
 ```
 
 ## Definition of functions
+
 Functions can be defined in the form of "[return value] [function name] ([argument 1], [argument 2], ...)". Specify *void* to declare a function that does not return a value.
 
 ```
@@ -41,8 +44,8 @@ void LogOutput(string log) {
 }
 ```
 
-
 ## Definition of class
+
 You can define a class, which is a structured type, by writing *class* followed by the class name, thereafter followed by code enclosed in *{ }*.
 
 ```
@@ -69,8 +72,8 @@ If you define *public* function with the same name as the class name inside the 
 
 HeliScript currently does not support constructors with arguments.
 
-
 ## Scope of variables and functions
+
 Variables get the following scopes depending on where they are defined. Global variables and global functions defined globally can be called and used from files other than the file in which they are defined.
 
 * Global scope: defined at the top level of the file. It can be accessed from other files as well. Class and function definitions can only be written globally.
