@@ -1,112 +1,105 @@
-# 応用実装
+# Advanced Usage
 
-GUIToolsの導入と準備が済んだらいよいよ実際にUI素材を配置してみましょう。
+Once you have installed and set up GUITools, you can start placing UI elements.
 
-## 大まかな流れ
+## General Workflow
 
-1. 既存のJsonファイルを読み込ませる
+1. Load the existing JSON file.
+2. Adjust the placement and size of elements.
+3. **Export** the JSON file.
 
-2. 素材の配置やサイズを調整する
+We avoid using the GUI Exporter feature because it can disrupt the original JSON file format, doesn't support some features like masks, and removes comments. However, if you are creating a screen from scratch, you may use the Export function.
 
-3. **エクスポートする**
-
-GUI Exporter の機能を使わないのは、元々あるJsonファイルのフォーマットを崩したくないのと、マスクなど一部機能が対応していない、コメントが削除されてしまう等の問題があるためです。  
-ゼロから画面を作成したい場合はExportを利用してもいいかもしれません。
-
-## Inspectorについて
+## About the Inspector
 
 ![GUITools_AdvancedUse_01](img/GUITools_AdvancedUse_01.jpg)
 
-素材のサイズや位置の調整はScene上で直接行うか、InspectorのRect Transformで数値入力することで行えます。
+You can adjust the size and position of elements either directly in the Scene or by inputting values in the Rect Transform section of the Inspector.
 
 ![GUITools_AdvancedUse_02](img/GUITools_AdvancedUse_02.jpg)
 
-赤枠部をクリックすると、素材のアンカーの位置を変更することができます。
+Clicking the red frame allows you to change the anchor point of the element.
 
-## 素材を追加したい時
+## Adding New Elements
 
-Unity上で新たに素材を追加して配置したい場合の方法です。
+Here is how to add and place new elements in Unity.
 
-まずは2のべき乗サイズで書き出した画像素材を用意します。
+First, prepare image assets in sizes that are powers of two.
 
-Projectタブを開き、素材を入れるために指定したフォルダを選択し、右クリックメニューからShow in Explorerをクリックします。
+Open the Project tab, select the folder where you want to place the assets, and right-click to choose "Show in Explorer."
 
 ![GUITools_AdvancedUse_03](img/GUITools_AdvancedUse_03.jpg)
 
-立ち上がったExplorerのフォルダに追加したい素材を入れます。
+Add the new assets to the opened Explorer folder.
 
-追加した素材をProjectタブで確認すると、△の矢印がついていない状態になっています。
+In the Project tab, verify that the added assets do not have the triangle arrow icon.
 
 ![GUITools_AdvancedUse_04](img/GUITools_AdvancedUse_04.jpg)
 
 ![GUITools_AdvancedUse_05](img/GUITools_AdvancedUse_05.jpg)
 
-追加した素材をクリックし、Inspectorで  
-Texture Type を Sprite (2D and UI) に変更します。
-
-その後**Applyボタンを押して適用**します。
+Click on the added asset and change the Texture Type to Sprite (2D and UI) in the Inspector. Then click the **Apply button**.
 
 ![GUITools_AdvancedUse_06](img/GUITools_AdvancedUse_06.jpg)
 
-適当なパーツをHierarchy上で複製します。
+Duplicate an appropriate part in the Hierarchy.
 
-そして複製したパーツのSource Image横の◎ボタンをクリック。
+Click the circle button next to the Source Image of the duplicated part.
 
 ![GUITools_AdvancedUse_07](img/GUITools_AdvancedUse_07.jpg)
 
-表示されたウィンドウから差し替えたい画像素材を選択
+Select the image asset you want to replace from the displayed window.
 
 ![GUITools_AdvancedUse_08](img/GUITools_AdvancedUse_08.jpg)
 
-画像の比率がおかしい時は、Image内の  
-Set Native Size ボタンをクリックして、素材の元のサイズを適用すると比率が正しくなります。
+If the aspect ratio of the image is incorrect, click the Set Native Size button in the Image section to apply the original size of the asset and correct the ratio.
 
-後は配置したい場所とサイズを調整して完了です！
+Finally, adjust the position and size to complete the placement!
 
-## Jsonエクスポート
+## JSON Export
 
-上部メニュー > **VketCloudGUITools** \> **GUI Exporter**からGUI Exporterウィンドウを開き、修正作業を行ったCanvasオブジェクトをVketCloud上で扱う**Jsonファイル**として出力します。
+Open the GUI Exporter window from the top menu: **VketCloudGUITools > GUI Exporter**, and export the modified Canvas object as a **JSON file** to be used in VketCloud.
 
 ![GUITools_AdvancedUse_09](img/GUITools_AdvancedUse_09.jpg)
 
-### **Heliodor Data Path(必須項目)**
+### **Heliodor Data Path (Required)**
 
-「jsonの出力先のフォルダ」（CanvasフォルダやFieldフォルダがあるところ）を指定します。**必ず「data」フォルダを指定してください。**
+Specify the folder where the JSON file will be exported (where the Canvas or Field folders are located). **Make sure to specify the "data" folder.**
 
-### **Unity Data Path(必須項目)**
+### **Unity Data Path (Required)**
 
-「Unityプロジェクト内のテクスチャ保存先のフォルダ」を指定します。  
-上記の**Heliodor Data Pathの「data」フォルダに対応する場所を指定してください**。
+Specify the folder where textures are saved within the Unity project.  
+It should correspond to the location specified in the **Heliodor Data Path's "data" folder**.
 
-### **Target Canvas(必須項目)**
+### **Target Canvas (Required)**
 
-出力したい**Canvasオブジェクト**を指定します。これの子となっているアイテムが１つのjsonとして出力されます。  
-非対応コンポーネントなどはこのウィンドウでエラーとして表示されます。（対応しているものは下記の「対応コンポーネント」を見てください。）
+Specify the **Canvas object** you want to export. The items under this will be exported as one JSON file.  
+Unsupported components will be displayed as errors in this window (see "Supported Components" below).
 
 ### Auto Generated Layer
 
-変換元のUIにレイヤーがない場合、ここで指定したレイヤーに割り当てられます。  
-未設定の場合は「Auto Fix」から対応されます。
+If the source UI does not have layers, they will be assigned to the layer specified here.  
+If not set, it will be handled by "Auto Fix."
 
 ### Auto Fix Settings
 
-後述する「エラーの自動解決」を自動で実行するルールを指定します。
+Specify the rules for automatically executing "auto-fix" for the errors mentioned below.
 
-### エラーの一覧
+### List of Errors
 
-**自動解決**が可能な場合は「**Auto Fix**」ボタンがあるため、押してください。  
-**Undoに対応している**ため、間違って押した場合は、あわてずに「Ctrl＋Z」を押して巻き戻してください。
+If **auto-fix** is possible, an **Auto Fix** button will appear; press it.  
+**Undo is supported**, so if you press it by mistake, don't worry, just press "Ctrl+Z" to undo.
 
-黄色文字：どの順番でAuto Fixしても問題ありません。
+Yellow text: You can auto-fix in any order.
 
-赤文字：Heliodorでは再現できない、あきらかに見た目が変わる要素。**できれば手動で解決したい**内容です。  
-　　　　無視してExportできますが、**大きくデザインや挙動が変わる可能性**があります。
+Red text: Elements that can't be reproduced in Heliodor and obviously change the appearance. **Ideally, fix these manually.**  
+You can export by ignoring these, but **it may significantly change the design or behavior**.
 
-**赤背景赤文字**：致命的な問題。**これを解決するまでExportはできません。**  
-　　　　　　　自動解決が不可能だったり、**Auto Fixの順番で結果が変わる可能性があります。**
+**Red background red text**: Critical issue. **You cannot export until this is resolved.**  
+Auto-fix might be impossible, or the results might vary depending on the order of auto-fix.
 
-任意のCanvasを指定して「**Export .json**」を押すと出力できます。
+Specify any Canvas and press **Export .json** to export.
 
-この際、Data Pathが適切に設定されている場合はImageなどに設定されているアセットが自動的にコピーされます。（例：Assets/gui\_test/test.png → UnityDataPathで指定した場所/gui\_test/test.png）
+If the Data Path is set correctly, assets set in Image etc. will be automatically copied (e.g., Assets/gui_test/test.png → the location specified by UnityDataPath/gui_test/test.png).
 
 ![GUITools_AdvancedUse_10](img/GUITools_AdvancedUse_10.jpg)

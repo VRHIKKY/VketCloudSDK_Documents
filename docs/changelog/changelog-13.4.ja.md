@@ -2,7 +2,13 @@
 
 ## 2024年6月28日更新
 
+## 2024年6月28日 - 追加されたページ
+
+- SDK Tools
+  - [GUITools - 応用実装](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/GUITools/AdvancedUsage.html)
+
 ## 2024年6月28日 - 変更されたページ
+
 - VketCloudSettings
   - [BasicSettings](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
     - World IDに関する設定記述を変更

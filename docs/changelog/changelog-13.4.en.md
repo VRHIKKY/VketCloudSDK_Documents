@@ -2,7 +2,13 @@
 
 ## June 28 2024 Update
 
+## June 28 2024 - Added Pages
+
+- SDK Tools
+  - [Advanced Usage](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/GUITools/AdvancedUsage.html)
+
 ## June 28 2024 - Edited Pages
+
 - VketCloudSettings
   - [BasicSettings](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/BasicSettings.html)
     - Changed description about World ID
