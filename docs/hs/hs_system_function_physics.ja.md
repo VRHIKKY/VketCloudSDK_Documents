@@ -5,12 +5,12 @@
 
 ***
 
-### hsPhysicsSetEnable()
+## hsPhysicsSetEnable
 
 `bool hsPhysicsSetEnable(int itemIndex, string nodeName, bool flag)`
 対象のノードの物理演算が有効かどうかを取得する。
 
-### hsPhysicsIsFixed()
+## hsPhysicsIsFixed
 
 `bool hsPhysicsIsFixed(int itemIndex, string nodeName)`
 物理演算において、対象のノードが固定しているかどうかを取得する。

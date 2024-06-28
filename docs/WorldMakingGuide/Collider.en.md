@@ -22,7 +22,7 @@ The components below are meant to be combined with [VKC Node Collider](../VKCCom
     This issue is scheduled to be fixed on the next SDK release.<br>
     Also, this issue can be avoided by adding at least a single Cube with Box Collider attached.
 
-HEOCylinderCollider : Used for enabling [Physics](./PhysicsEngine.md) for the Unity Cylinder Col lider.<br>
+VKC Node Cylinder Collider : Used for enabling [Physics](./PhysicsEngine.md) for the Unity Cylinder Col lider.<br>
 Note that Cylinders cannot be used other than simulating physics.
 
 ## Using Colliders and Physics in Action Trigger / HeliScript

@@ -69,7 +69,7 @@ component BrokerAPI
     public BrokerAPI()
     {
         //BrokerAPI.hsが割り当てられているItemを取得。
-        //ボタン(GET_SWITCH_NAME)のGameObjectが存在するFieldにBrokerAPI.hsのHEOScriptを割り当てる必要がある。
+        //ボタン(GET_SWITCH_NAME)のGameObjectが存在するFieldにBrokerAPI.hsのVKC Attribute Scriptを割り当てる必要がある。
         thisItem = hsItemGetSelf();
         resultTextPlane = hsItemGet(RESULT_ITEM_NAME);
     }

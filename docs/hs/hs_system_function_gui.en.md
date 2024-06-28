@@ -1,81 +1,169 @@
-
 # built-in functions - GUI
 
 !!! Note Info
     Utility functions that manipulate GUI elements.
 
-
 ***
+
+## Functions
+
 ### hsCanvasSetLayerShow
+
 `bool hsCanvasSetLayerShow(string layerName, bool show)`
 
 Shows the layer specified by name with true and hides it with false.
 
-
 ### hsCanvasSetGUIShow
+
 `bool hsCanvasSetGUIShow(string layerName, string guiName, bool show)`
 
 Shows the Canvas specified by name with true and hides it with false.
 
-
 ### hsCanvasSetGUIPos
+
 `bool hsCanvasSetGUIPos(string LayerName, bool IsPortrait, string GUIName, float X, float Y)`
 
 Sets the GUI element's position as the designated value.
 
-
 ### hsCanvasGetGUIPos
+
 `bool hsCanvasGetGUIPos(string LayerName, bool IsPortrait, string GUIName, ref float X, ref float Y)`
 
 Gets the GUI element's position value.
 
-
 ### hsCanvasSetGUIText
+
 `bool hsCanvasSetGUIText(string LayerName, string GUIName, string Text)`
 
 Sets a string to the Canvas specified by name.
 
-
 ### hsCanvasSetGUITextAlignment
+
 `bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)`
 
 Sets the text element's alignment.
 
-
-
 ### hsCanvasSetGUITextOverflowWrap
+
 `bool hsCanvasSetGUITextOverflowWrap(string LayerName, string GUIName, bool OverflowWrap)`
 
 Sets the text element's auto overflow wrap setting.
 
-
-
 ### hsCanvasSetGUITextURLClickable
+
 `bool hsCanvasSetGUITextURLClickable(string LayerName, string GUIName, bool URLClickable)`
 
 Gets the URL clickable state of the text element.
 
 ### hsCanvasSetGUIImage
+
 `bool hsCanvasSetGUIImage(string layerName, string guiName, string path)`
 
 Sets an image on the Canvas specified by name.
 
-
 ### hsCanvasResetToggleDefault
+
 `bool hsCanvasResetToggleDefault(string name)`
 
 Resets the GUI element specified by name to its default state.
 
-
 ### hsCanvasToggleChange
+
 `bool hsCanvasToggleChange(string name)`
 
 Toggles the state of a GUI element specified by name.
 
 ### hsCanvasWorldToScreenPos
+
 `bool hsCanvasWorldToScreenPos(Vector3 WorldPos, ref float ScreenX, ref float ScreenY)`
 
 Converts the world position to screen position. If the position is out of range, `false` will be returned.
 
+### hsCanvasIsPortrait
+
+`bool hsCanvasIsPortrait()`
+
+Returns a bool value whether the screen is in portrait or landscape.
+
+### hsCanvasSetConfigClosedFlag
+
+`void hsCanvasSetConfigClosedFlag(bool Flag)`
+
+Toggles the show status of configuration window.
 
 ***
+
+### hsCanvasAddGUI
+
+`void hsCanvasAddGUI(string LayerName, bool IsPortrait, HSGUIModel Model)`
+
+Adds a GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.
+
+HelScript Example:
+``` 
+HSGUIModel model;
+model = new HSGUIModel();
+model.SetName("test_button");
+model.SetShow(true);
+model.SetType("button");
+HS2DI size;
+size = new HS2DI();
+size.SetXY(100,100);
+model.SetSize(size);
+model.GetButtonModel().SetFileName("test_button.png");
+hsCanvasAddGUI("HUD",false,model);
+```
+
+For details about HSGUIModel class, see [HSGUIModel - Summary](./hs_system_function_gui_HSGUIModel.md).
+
+***
+
+### hsCanvasSetGUISize
+
+`bool hsCanvasSetGUISize(string LayerName, bool IsPortrait, string GUIName, float X, float Y)`
+
+Set the size of GUI.
+
+### hsCanvasGetGUISize
+
+`bool hsCanvasGetGUISize(string LayerName, bool IsPortrait, string GUIName, ref float X, ref float Y)`
+
+Get the size of GUI.
+
+### hsCanvasSetGUIAngle
+
+`bool hsCanvasSetGUIAngle(string LayerName, bool IsPortrait, string GUIName, float Angle)`
+
+Set the angle of GUI.
+
+### hsCanvasGetGUIAngle
+
+`bool hsCanvasGetGUIAngle(string LayerName, bool IsPortrait, string GUIName, ref float Angle)`
+
+Get the angle of GUI.
+
+### hsAddGUIImage
+
+`void hsAddGUIImage(string LayerName, bool IsPortrait, 
+    string GUIName, string Platform, string Language, string Portrait, bool Show, int Z, int PosX, int PosY, int SizeX, int SizeY, float PivotX, float PivotY, string Anchor, bool RaycastTarget, float Angle,
+    string URI, int UVAreaX, int UVAreaY, int UVAreaWidth, int UVAreaHeight, int L, int R, int T, int B)`
+
+Adds a image type GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.
+
+### hsAddGUIButton
+
+`void hsAddGUIImage(string LayerName, bool IsPortrait,
+    string GUIName, string Platform, string Language, string Portrait, bool Show, int Z, int PosX, int PosY, int SizeX, int SizeY, float PivotX, float PivotY, string Anchor, bool RaycastTarget, float Angle,
+    string URI, int UVAreaX, int UVAreaY, int UVAreaWidth, int UVAreaHeight, int L, int R, int T, int B)`
+
+Adds a button type GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.
+
+### hsAddGUIText
+
+`hsAddGUIText(string LayerName, bool IsPortrait,
+    string GUIName, bool Show, int Z, int PosX, int PosY, int SizeX, int SizeY, float PivotX, float PivotY, string Anchor, bool RaycastTarget, float Angle,
+    string Text, string FontFamily, int FontSize, float ColorR, float ColorG, float ColorB, float ColorA, string Alignment, int CharaSpace, int LineSpace, bool IsOverflowWrap,
+	bool URLClickable, float URLColorR, float URLColorG, float URLColorB, float URLColorA
+)`
+
+Adds a text type GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.

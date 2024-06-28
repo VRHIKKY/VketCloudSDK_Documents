@@ -1,40 +1,41 @@
-# Version 13.0.0
+# 13.0.0
+## SDK(Unityでワールドを作るためのEditor拡張ツール)
 
-## SDK (Editor extension tools for creating worlds in Unity)
+### 新規機能
+- HEOActivityにおいてのActivity編集機能
+- File Deployment Config
+- VKC Attribute Clickable UI
+- VKC Node Alpha Animation項目の追加
+- GUIToolsパッケージ配布
 
-### New Features
-- **HEOActivity Editing:** Added functionality for editing HEOActivity.
-- **File Deployment Config:** New configuration options for file deployment.
-- **VKC Attribute Clickable UI:** Added clickable UI attributes within VKC.
-- **VKC Node Alpha Animation:** Added alpha animation options for VKC nodes.
-- **GUITools Package Distribution:** Distributed the GUITools package for enhanced GUI editing capabilities.
+### 変更機能
+- デバッグコンソールの新規項目
+  - ヒエラルキー上で、HEO Fieldが多重に重なっている場合、エラーを出すようにする
+  - fbxファイルのMesh設定のRead/WriteをEnableになっていない警告を表示する/Unityプロジェクトにインポート時に、FBXファイルのR/Wをtrueにする
+- ２の累乗に圧縮する機能の高速化
+- Avatar Fileの項目整理
+  - Emotion項目を削除
+  - Height項目の削除（Avatar のvrmからエンジン側で自動取得できるようにしている）
+- HEOActivityのjsonの選択において、Assetsフォルダー内のjsonのみ検索できるようにする
+- ファイルアイコン類アセット更新
+- コンポーネントの名称変更
+- 名称変更HEOObjectType → VKCNodeReflectionProbeDetectType
+- Action TriggerのType PopUp の統廃合、統合後の状態の検討
+- Basic Setting
+  - World NameからWorld IDに項目のラベルを変更
+  - File Deployment Config項目の追加
+- Avatar Settings
+  - デフォルトのavatarfile（Vketchan_v1.6_MToon_blendshape.asset、vketnyan等）を編集できないようにする（実装済み）
+  - ファイルモード項目を追加（vrm/hrm）
+  - Avatar Fileの項目整理
+    - Emotion項目を削除
+    - Height項目の削除（Avatar のvrmからエンジン側で自動取得できるようにしている）
+- HEO ColliderのCollider Targetに新しい「プレーヤー」項目の追加
 
-### Modified Features
-- **Debug Console Updates:**
-  - Now throws an error if HEO Fields are overlapping in the hierarchy.
-  - Displays a warning if the Mesh setting 'Read/Write Enabled' is not active in FBX files when imported into Unity projects, and automatically sets FBX file R/W to true.
-- **Compression Function Speed Improvement:** Enhanced the function to compress to powers of two for faster operation.
-- **Avatar File Organization:**
-  - Removed the 'Emotion' field.
-  - Removed the 'Height' field (now automatically retrieved from the avatar's VRM by the engine).
-- **HEOActivity JSON Selection:** Restricted search functionality to JSON files within the Assets folder only.
-- **File Icon Asset Updates:** Updated the asset for file icons.
-- **Component Name Changes:** Renamed various components.
-- **Name Change from HEOObjectType to VKCNodeReflectionProbeDetectType.**
-- **Action Trigger Type PopUp Consolidation:** Reviewed and consolidated the states of Type PopUp for Action Triggers.
-- **Basic Settings:**
-  - Changed the label from 'World Name' to 'World ID'.
-  - Added 'File Deployment Config' settings.
-- **Avatar Settings:**
-  - Made default avatar files (e.g., Vketchan_v1.6_MToon_blendshape.asset, vketnyan) non-editable.
-  - Added a new 'File Mode' setting for avatar files (options include VRM/HRM).
-- **HEO Collider Updates:**
-  - Added a new 'Player' option to Collider Target settings.
-
-### Deprecated Features
-- **Build Options > UI-less Build Acceleration:** Removed the feature that sped up builds without UI.
-- **My Avatar Setting > Emotion:** Removed the Emotion functionality.
-- **Avatar File > Emotion:** Removed the Emotion functionality from avatar files.
+### 廃止機能
+- ビルドオプション>UIなしビルド高速化機能の削除
+- My Avatar Setting > Emotion機能
+- Avatar File > Emotion機能
 
 ## HeliodorLib(ブラウザで表示されるワールドで使われているエンジン)
 

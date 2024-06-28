@@ -54,7 +54,7 @@ Also, for usage of physics and colliders on HeliScript, refer to the following p
 
 ## About Cylinder Collider
 
-Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "HEOCylinderCollider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
+Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "VKC Node Cylinder Collider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
 
 ![PhysicsEngine](img/PhysicsEngineCylinderCollider.jpg)
 
