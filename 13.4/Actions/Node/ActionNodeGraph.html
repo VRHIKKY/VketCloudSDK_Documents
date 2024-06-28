@@ -1627,6 +1627,8 @@
       
         
       
+        
+      
     
     
     
@@ -1666,7 +1668,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools - 概要とセットアップ
+    概要とセットアップ
   </span>
   
 
@@ -1687,7 +1689,28 @@
         
   
   <span class="md-ellipsis">
-    基本的な使い方
+    基本実装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    応用実装
   </span>
   
 
@@ -7274,11 +7297,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -8793,7 +8816,7 @@ ActionNodeGraphの使用方法について、解説します。<br>
 ※この機能はβ機能です。お気づきの点がございましたら、お問い合わせにてご連絡いただけますと幸いです。</p>
 <h2 id="_1">概要</h2>
 <p>本コンポーネントは<a href="../../VKCComponents/VKCAttributeActionTrigger.html">VKC Attribute Action Trigger</a>の代替として使用できるコンポーネントです。<br>
-HEOActionTriggerと比べ、</p>
+VKC Attribute Action Triggerと比べ、</p>
 <ul>
 <li>アクションをノードで視覚的に管理することが可能</li>
 <li>アクション実行順の変更が容易</li>
@@ -8851,7 +8874,7 @@ Start NodeからResultまでの間にあるノードが実際に発生するア�
 変数はノード空間にドラッグ&amp;ドロップし、対応する○に繋げることで使用可能です。<br>
 <br>
 <br>
-■例：HEO Object名"music"の1番目のアニメーションを再生する(再生は1度きり)　を作る場合■<br>
+■例：VKC Item Object名"music"の1番目のアニメーションを再生する(再生は1度きり)　を作る場合■<br>
 <img alt="ActionNodeGraph12" src="img/ActionNodeCompiler12.jpg" /><br>
 <br>
 "music"をString型の変数で、"1"をint型の変数で作ります。<br>
@@ -8860,7 +8883,7 @@ IfequalのNameに"music"、NValueに"1"を接続します。<br>
 これで、「musicの中身が1の場合、先の処理を発生させない」処理が完成します。<br>
 <br>
 PlayItemのNameに"music"、Indexに"1"を接続します。<br>
-これで、「HEO Object"music"のIndex番号"1"に登録されたアニメーションを再生する」処理が完成します。<br>
+これで、「VKC Item Object"music"のIndex番号"1"に登録されたアニメーションを再生する」処理が完成します。<br>
 <br>
 SetVarのNameに"music"、Indexに"1"を接続します。<br>
 これで、「変数musicの中身を1にする」処理が完成します。<br>
@@ -8886,7 +8909,7 @@ Parameter上で作成する変数と同様の使い方をすることができ�
 <img alt="ActionNodeGraph14" src="img/ActionNodeCompiler14.jpg" /><br>
 <br>
 クリックした際に非表示となるオブジェクトを複数個用意する際、<br>
-HEOActionTriggerであれば1つ1つ当たり判定と表示を消す対象を変更する作業が必要がありますが、<br>
+VKC Attribute Action Triggerであれば1つ1つ当たり判定と表示を消す対象を変更する作業が必要がありますが、<br>
 この例の場合、NodeNameの部分にActionNodeCompilerがアタッチされたオブジェクトが自動で入るため、<br>
 ActionNodeCompilerにこのActionNodeGraphをアタッチしたものを非表示にしたいオブジェクトにアタッチするだけで、<br>
 当たり判定と表示を変更する作業を行うことなく実装することができます。<br>
@@ -8895,7 +8918,7 @@ ActionNodeCompilerにこのActionNodeGraphをアタッチしたものを非表�
 ActionNodeGraphではアクションリストを保存することができます。<br>
 <img alt="ActionNodeGraph15" src="img/ActionNodeCompiler15.jpg" /><br>
 ActionNodeCompilerのAssetでActionNodeGraphを選択することができます。<br>
-HEOActionTriggerでは困難なアクションリストの変更を容易に行うことができます。<br></p>
+VKC Attribute Action Triggerでは困難なアクションリストの変更を容易に行うことができます。<br></p>
 
 
 

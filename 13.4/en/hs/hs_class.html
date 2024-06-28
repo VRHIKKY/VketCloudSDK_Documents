@@ -1631,6 +1631,8 @@
       
         
       
+        
+      
     
     
     
@@ -1670,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools Overview & Setup
+    Overview & Setup
   </span>
   
 
@@ -1692,6 +1694,27 @@
   
   <span class="md-ellipsis">
     How to Use
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Use
   </span>
   
 
@@ -4697,6 +4720,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#object-instantiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Instantiation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-deletion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Deletion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detecting-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecting Objects
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7365,11 +7415,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -8880,6 +8930,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#object-instantiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Instantiation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-deletion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Object Deletion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detecting-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecting Objects
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8932,6 +9009,33 @@
 <h2 id="access-specifier">access specifier</h2>
 <p>By specifying public before a member or method declaration, this member will become accessible from outside the class.</p>
 <p>If you specify private, the member cannot be accessed from the outside. If the access specifier is omitted, the behavior is the same as the private specification.</p>
+<h2 id="object-instantiation">Object Instantiation</h2>
+<p>To instantiate a new class object, use the new operator.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
+}
+
+<span class="n">Test</span> <span class="n">obj</span>;
+<span class="n">obj</span> = <span class="nb">new</span> <span class="n">Test</span>();
+</code></pre></div>
+
+<h2 id="object-deletion">Object Deletion</h2>
+<p>To delete an object, assign a null value. Objects will be deleted when nothing is referring to the object.</p>
+<div class="codehilite"><pre><span></span><code>Test obj;
+obj = new Test();
+
+obj = null;
+</code></pre></div>
+
+<h2 id="detecting-objects">Detecting Objects</h2>
+<p>To detect the existence of an object, use === or !== operator.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">obj</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="nv">null</span><span class="ss">)</span><span class="w"> </span>{
+<span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="nv">Exists</span>
+}
+
+<span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">obj</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nv">null</span><span class="ss">)</span><span class="w"> </span>{
+<span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="nv">Does</span><span class="w"> </span><span class="nv">not</span><span class="w"> </span><span class="nv">exist</span>
+}
+</code></pre></div>
 
 
 

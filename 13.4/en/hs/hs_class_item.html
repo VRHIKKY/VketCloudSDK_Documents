@@ -1631,6 +1631,8 @@
       
         
       
+        
+      
     
     
     
@@ -1670,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools Overview & Setup
+    Overview & Setup
   </span>
   
 
@@ -1692,6 +1694,27 @@
   
   <span class="md-ellipsis">
     How to Use
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Use
   </span>
   
 
@@ -5026,6 +5049,42 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pause" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pause
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setplaytime" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetPlayTime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getplaytime" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetPlayTime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setshow" class="md-nav__link">
     <span class="md-ellipsis">
       SetShow
@@ -5047,6 +5106,24 @@
   <a href="#changemotion" class="md-nav__link">
     <span class="md-ellipsis">
       ChangeMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadmotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoadMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facialemotefixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      FacialEmoteFixed
     </span>
   </a>
   
@@ -7838,11 +7915,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -9505,6 +9582,42 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pause" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pause
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setplaytime" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetPlayTime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getplaytime" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetPlayTime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setshow" class="md-nav__link">
     <span class="md-ellipsis">
       SetShow
@@ -9526,6 +9639,24 @@
   <a href="#changemotion" class="md-nav__link">
     <span class="md-ellipsis">
       ChangeMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadmotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoadMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facialemotefixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      FacialEmoteFixed
     </span>
   </a>
   
@@ -10043,7 +10174,8 @@ For example, objects defined as items are <a href="../VKCComponents/VKCItemField
 </details>
 <h3 id="play">Play</h3>
 <p><code>public bool Play()</code></p>
-<p>Start playing a sound or particle. Returns true if the playback process has started successfully. Returns false on failure.</p>
+<p>Start playing a sound or particle. Returns true if the playback process has started successfully.<br>
+Returns false on failure.</p>
 <details class="note">
 <summary>Available object types for this method</summary>
 <ul>
@@ -10082,6 +10214,44 @@ For example, objects defined as items are <a href="../VKCComponents/VKCItemField
 </ul>
 </details>
 </details>
+<h3 id="pause">Pause</h3>
+<p><code>public bool Pause()</code></p>
+<p>Pauses the object's playing motion.</p>
+<details class="note">
+<summary>Available object types for this method</summary>
+<ul>
+<li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
+</ul>
+</details>
+<h3 id="restart">Restart</h3>
+<p><code>public bool Restart()</code></p>
+<p>Resumes the object's playing motion after pause.</p>
+<details class="note">
+<summary>Available object types for this method</summary>
+<ul>
+<li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
+</ul>
+</details>
+<h3 id="setplaytime">SetPlayTime</h3>
+<p><code>public bool SetPlayTime(float PlayTimeMS)</code></p>
+<p>Sets the object's motion playing position by designated time.<br>
+The time is designated by millisecond.</p>
+<details class="note">
+<summary>Available object types for this method</summary>
+<ul>
+<li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
+</ul>
+</details>
+<h3 id="getplaytime">GetPlayTime</h3>
+<p><code>public float GetPlayTime()</code></p>
+<p>Gets the object's motion playing position by designated time.<br>
+The time is designated by millisecond.</p>
+<details class="note">
+<summary>Available object types for this method</summary>
+<ul>
+<li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
+</ul>
+</details>
 <h3 id="setshow">SetShow</h3>
 <p><code>public void SetShow(bool flag)</code></p>
 <p>Display Item with true. Hide the Item with false.</p>
@@ -10111,12 +10281,39 @@ For example, objects defined as items are <a href="../VKCComponents/VKCItemField
 </ul>
 </details>
 <h3 id="changemotion">ChangeMotion</h3>
-<p><code>public bool ChangeMotion(string MotionName)</code></p>
-<p>Change the motion according to the designated MotionName.</p>
+<p><code>public bool ChangeMotion(string MotionName, float BlendTimeMS = 0.0f)</code></p>
+<p>Change the motion according to the designated MotionName.<br>
+BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <details class="note">
 <summary>Available object types for this method</summary>
 <ul>
-<li><a href="../VKCComponents/VKCItemObject.html">VKCItemObject</a></li>
+<li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
+</ul>
+</details>
+<h3 id="loadmotion">LoadMotion</h3>
+<p><code>public bool LoadMotion(string MotionName, string FileName, bool Loop)</code></p>
+<p>Loads the designated motion.</p>
+<details class="note">
+<summary>Available object types for this method</summary>
+<ul>
+<li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
+</ul>
+</details>
+<h3 id="facialemotefixed">FacialEmoteFixed</h3>
+<p><code>public bool FacialEmoteFixed(int FacialEmoteType)</code></p>
+<p>Changes facial expression. Change will be done immediately, and will not return automatically as like the player avatar.</p>
+<p>The facial types below can be designated:</p>
+<ul>
+<li>FACIALEMOTETYPE_NEUTRAL</li>
+<li>FACIALEMOTETYPE_JOY</li>
+<li>FACIALEMOTETYPE_ANGRY</li>
+<li>FACIALEMOTETYPE_SORROW</li>
+<li>FACIALEMOTETYPE_FUN</li>
+</ul>
+<details class="note">
+<summary>Available object types for this method</summary>
+<ul>
+<li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
 </ul>
 </details>
 <h3 id="load">Load</h3>
@@ -10354,7 +10551,7 @@ For example, objects defined as items are <a href="../VKCComponents/VKCItemField
 </details>
 <h3 id="setcamera">SetCamera</h3>
 <p><code>public bool SetCamera()</code></p>
-<p>Set the camera type Item as a camera.
+<p>Set the camera type Item as a camera.<br>
 Refer to <a href="../VKCComponents/VKCItemCamera.html">VKCItemCamera</a> for usage.</p>
 <details class="note">
 <summary>Available object types for this method</summary>
@@ -10364,7 +10561,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKCItemCamera</a> for usa
 </details>
 <h3 id="resetcamera">ResetCamera</h3>
 <p><code>public void ResetCamera()</code></p>
-<p>Detach camera set by SetCamera.
+<p>Detach camera set by SetCamera.<br>
 Refer to <a href="../VKCComponents/VKCItemCamera.html">VKCItemCamera</a> for usage.</p>
 <details class="note">
 <summary>Available object types for this method</summary>

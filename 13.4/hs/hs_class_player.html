@@ -1631,6 +1631,8 @@
       
         
       
+        
+      
     
     
     
@@ -1670,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools - 概要とセットアップ
+    概要とセットアップ
   </span>
   
 
@@ -1691,7 +1693,28 @@
         
   
   <span class="md-ellipsis">
-    基本的な使い方
+    基本実装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    応用実装
   </span>
   
 
@@ -7595,11 +7618,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -9420,23 +9443,23 @@
 <p><code>public string GetCustomState(string CustomStateName)</code></p>
 <p>カスタムステートを任意のタイミングで取得する。</p>
 <h3 id="setpos">SetPos</h3>
-<p><code>public void SetPos(Vector3 pos)</code></p>
-<p>座標を設定する。</p>
+<p><code>void SetPos(Vector3 pos, bool CameraRotate = true)</code></p>
+<p>座標を設定する。TPSモードかつCameraRotateがfalseの場合はカメラ回転はおこなわれません。</p>
 <h3 id="getpos">GetPos</h3>
-<p><code>public Vector3 GetPos()</code></p>
+<p><code>Vector3 GetPos()</code></p>
 <p>座標を取得する。</p>
 <h3 id="setrotate">SetRotate</h3>
-<p><code>public void SetRotate(float angle)</code></p>
+<p><code>void SetRotate(float angle)</code></p>
 <p>プレイヤーの向きを設定する。</p>
 <h3 id="getrotate">GetRotate</h3>
-<p><code>public float GetRotate()</code></p>
+<p><code>float GetRotate()</code></p>
 <p>プレイヤーの向きを取得する。</p>
 <h3 id="setjumpvelocity">SetJumpVelocity</h3>
 <p><code>void SetJumpVelocity(float JumpVelocity)</code></p>
 <p>プレイヤーのジャンプ時の初速度を設定します。
 デフォルト値は<a href="../VketCloudSettings/PlayerSettings.html">Player Settings</a>にて設定した数値が参照されます。</p>
 <h3 id="getname">GetName</h3>
-<p><code>public string GetName()</code></p>
+<p><code>string GetName()</code></p>
 <p>プレイヤーの名前を取得する。</p>
 <h3 id="getphysicsid">GetPhysicsID</h3>
 <p><code>int GetPhysicsID()</code></p>
@@ -9456,10 +9479,10 @@
 <p>次に再生するモーションを設定する。</p>
 <h3 id="changeactivitymotion">ChangeActivityMotion</h3>
 <p><code>bool ChangeActivityMotion(string MotionName)</code></p>
-<p>アクティビティクラスのSceneファイルで定義されたモーションを再生する。</p>
+<p><a href="../SDKTools/VKCActivityExporter.html">アクティビティファイル</a>で定義されたモーションを再生する。</p>
 <h3 id="setnextactivitymotion">SetNextActivityMotion</h3>
 <p><code>bool SetNextActivityMotion(string MotionName)</code></p>
-<p>次に再生するアクティビティクラスのSceneファイルで定義されたモーションを設定する。</p>
+<p>次に再生する<a href="../SDKTools/VKCActivityExporter.html">アクティビティファイル</a>で定義されたモーションを設定する。</p>
 <h3 id="showchatballoon">ShowChatBalloon</h3>
 <p><code>bool ShowChatBalloon(string Text)</code></p>
 <p>チャットバルーンに指定のテキストを表示します。</p>

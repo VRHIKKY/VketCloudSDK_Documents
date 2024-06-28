@@ -1631,6 +1631,8 @@
       
         
       
+        
+      
     
     
     
@@ -1670,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools - 概要とセットアップ
+    概要とセットアップ
   </span>
   
 
@@ -1691,7 +1693,28 @@
         
   
   <span class="md-ellipsis">
-    基本的な使い方
+    基本実装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    応用実装
   </span>
   
 
@@ -5035,9 +5058,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatesetshowstring-string-bool" class="md-nav__link">
+  <a href="#hsnameplatesetshow" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateSetShow(string, string, bool)
+      hsNamePlateSetShow
     </span>
   </a>
   
@@ -5059,18 +5082,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatecleartextstring-string" class="md-nav__link">
+  <a href="#hsnameplatecleartext" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateClearText(string, string)
+      hsNamePlateClearText
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hsnameplatewritetextstring-string-int-int-string" class="md-nav__link">
+  <a href="#hsnameplatewritetext" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateWriteText(string, string, int, int, string)
+      hsNamePlateWriteText
     </span>
   </a>
   
@@ -5092,9 +5115,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatesetimagestring-string-string" class="md-nav__link">
+  <a href="#hsnameplatesetimage" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateSetImage(string, string, string)
+      hsNamePlateSetImage
     </span>
   </a>
   
@@ -7403,11 +7426,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -8884,9 +8907,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatesetshowstring-string-bool" class="md-nav__link">
+  <a href="#hsnameplatesetshow" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateSetShow(string, string, bool)
+      hsNamePlateSetShow
     </span>
   </a>
   
@@ -8908,18 +8931,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatecleartextstring-string" class="md-nav__link">
+  <a href="#hsnameplatecleartext" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateClearText(string, string)
+      hsNamePlateClearText
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hsnameplatewritetextstring-string-int-int-string" class="md-nav__link">
+  <a href="#hsnameplatewritetext" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateWriteText(string, string, int, int, string)
+      hsNamePlateWriteText
     </span>
   </a>
   
@@ -8941,9 +8964,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatesetimagestring-string-string" class="md-nav__link">
+  <a href="#hsnameplatesetimage" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateSetImage(string, string, string)
+      hsNamePlateSetImage
     </span>
   </a>
   
@@ -8970,26 +8993,26 @@
 
 
 <h1 id="-">組み込み関数 - ネームプレート</h1>
-<div class="admonition 情報 info">
-<p class="admonition-title">情報</p>
+<div class="admonition note">
+<p class="admonition-title">概要</p>
 <p>プレイヤーアバターの頭上に表示されるネームプレートを、動的にカスタマイズするための関数です。</p>
-<p>各プレイヤーを一意に識別するため、(ネットワーク機能)[hs_system_function_net.md]のカスタムステート・カスタムデータ受信時のIDを利用します。</p>
+<p>各プレイヤーを一意に識別するため、<a href="hs_system_function_net.html">ネットワーク機能</a>のカスタムステート・カスタムデータ受信時のIDを利用します。</p>
 <p>IDに空文字列を指定した場合は、自分自身のネームプレートへの操作となります。また、引数 name はプレイヤーの名前ではなく、ネームプレート自身の "name" 要素を意味します。</p>
 </div>
 <hr />
 <h2 id="_1">表示・非表示</h2>
-<h3 id="hsnameplatesetshowstring-string-bool">hsNamePlateSetShow(string, string, bool)</h3>
+<h3 id="hsnameplatesetshow">hsNamePlateSetShow</h3>
 <p><code>bool hsNamePlateSetShow(string id, string name, bool show)</code></p>
 <p>ID と name でネームプレートを指定し、true で表示、false で非表示にする。</p>
 <h2 id="_2">テキスト要素の操作</h2>
-<h3 id="hsnameplatecleartextstring-string">hsNamePlateClearText(string, string)</h3>
+<h3 id="hsnameplatecleartext">hsNamePlateClearText</h3>
 <p><code>bool hsNamePlateClearText(string id, string name)</code></p>
 <p>ID と name でネームプレートを指定し、テキストを消去する。</p>
-<h3 id="hsnameplatewritetextstring-string-int-int-string">hsNamePlateWriteText(string, string, int, int, string)</h3>
+<h3 id="hsnameplatewritetext">hsNamePlateWriteText</h3>
 <p><code>bool hsNamePlateWriteText(string id, string name, int x, int y, string text)</code></p>
 <p>ID と name でネームプレートを指定し、新しいテキストを設定する。x, y でオフセットを指定できる。</p>
 <h2 id="_3">画像要素の操作</h2>
-<h3 id="hsnameplatesetimagestring-string-string">hsNamePlateSetImage(string, string, string)</h3>
+<h3 id="hsnameplatesetimage">hsNamePlateSetImage</h3>
 <p><code>bool hsNamePlateSetImage(string id, string name, string fileName)</code></p>
 <p>ID と name でネームプレートを指定し、新しい画像を適用する。</p>
 

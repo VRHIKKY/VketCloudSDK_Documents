@@ -1631,6 +1631,8 @@
       
         
       
+        
+      
     
     
     
@@ -1670,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools Overview & Setup
+    Overview & Setup
   </span>
   
 
@@ -1692,6 +1694,27 @@
   
   <span class="md-ellipsis">
     How to Use
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Use
   </span>
   
 
@@ -4912,6 +4935,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setcontrolenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetControlEnabled
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getheadheight" class="md-nav__link">
     <span class="md-ellipsis">
       GetHeadHeight()
@@ -4960,6 +4992,15 @@
   <a href="#getrotate" class="md-nav__link">
     <span class="md-ellipsis">
       GetRotate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setjumpvelocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetJumpVelocity
     </span>
   </a>
   
@@ -5020,6 +5061,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#changeactivitymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChangeActivityMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setnextactivitymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetNextActivityMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#showchatballoon" class="md-nav__link">
     <span class="md-ellipsis">
       ShowChatBalloon
@@ -5059,6 +5118,24 @@
   <a href="#getmovespeedupratio" class="md-nav__link">
     <span class="md-ellipsis">
       GetMoveSpeedupRatio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setpresetavatar" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetPresetAvatar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpresetavatar" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetPresetAvatar
     </span>
   </a>
   
@@ -7541,11 +7618,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -9073,6 +9150,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setcontrolenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetControlEnabled
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getheadheight" class="md-nav__link">
     <span class="md-ellipsis">
       GetHeadHeight()
@@ -9121,6 +9207,15 @@
   <a href="#getrotate" class="md-nav__link">
     <span class="md-ellipsis">
       GetRotate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setjumpvelocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetJumpVelocity
     </span>
   </a>
   
@@ -9181,6 +9276,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#changeactivitymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChangeActivityMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setnextactivitymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetNextActivityMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#showchatballoon" class="md-nav__link">
     <span class="md-ellipsis">
       ShowChatBalloon
@@ -9220,6 +9333,24 @@
   <a href="#getmovespeedupratio" class="md-nav__link">
     <span class="md-ellipsis">
       GetMoveSpeedupRatio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setpresetavatar" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetPresetAvatar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpresetavatar" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetPresetAvatar
     </span>
   </a>
   
@@ -9273,7 +9404,7 @@ In the example below, a bool variable in the Update function is used to obtain t
 {   
     //Define a player object
     //Note that objects cannot be initialized here, including using functions such as hsPlayer
-    Player  ex_player;
+ Player ex_player;
 
     bool    ex_isPlayerInit; //bool for handling player object initialization
 
@@ -9300,6 +9431,9 @@ In the example below, a bool variable in the Update function is used to obtain t
 <h3 id="getid">GetID</h3>
 <p><code>string GetID()</code></p>
 <p>Get the ID identifying the player.</p>
+<h3 id="setcontrolenabled">SetControlEnabled</h3>
+<p><code>bool SetControlEnabled(bool Enabled)</code></p>
+<p>Enable/Disable player controls. When set to false, the player cannot move by WASD key, or move the camera by mouse dragging.</p>
 <h3 id="getheadheight">GetHeadHeight()</h3>
 <p><code>public float GetHeadHeight()</code></p>
 <p>Get the avatar height.</p>
@@ -9307,19 +9441,23 @@ In the example below, a bool variable in the Update function is used to obtain t
 <p><code>public string GetCustomState(string CustomStateName)</code></p>
 <p>Get the custom state at a designated timing.</p>
 <h3 id="setpos">SetPos</h3>
-<p><code>public void SetPos(Vector3 pos)</code></p>
-<p>Set coordinates.</p>
+<p><code>void SetPos(Vector3 pos, bool CameraRotate = true)</code></p>
+<p>Set the player's position. camera will not rotate when in TPS mode and CameraRotate is false.</p>
 <h3 id="getpos">GetPos</h3>
-<p><code>public Vector3 GetPos()</code></p>
+<p><code>Vector3 GetPos()</code></p>
 <p>Get coordinates.</p>
 <h3 id="setrotate">SetRotate</h3>
-<p><code>public void SetRotate(float angle)</code></p>
+<p><code>void SetRotate(float angle)</code></p>
 <p>Sets the orientation of the player.</p>
 <h3 id="getrotate">GetRotate</h3>
-<p><code>public float GetRotate()</code></p>
+<p><code>float GetRotate()</code></p>
 <p>Get the orientation of the player.</p>
+<h3 id="setjumpvelocity">SetJumpVelocity</h3>
+<p><code>void SetJumpVelocity(float JumpVelocity)</code></p>
+<p>Designates the initial velocity for player jump.
+The default value is designated in <a href="../VketCloudSettings/PlayerSettings.html">Player Settings</a>.</p>
 <h3 id="getname">GetName</h3>
-<p><code>public string GetName()</code></p>
+<p><code>string GetName()</code></p>
 <p>Get the player's name.</p>
 <h3 id="getphysicsid">GetPhysicsID</h3>
 <p><code>int GetPhysicsID()</code></p>
@@ -9337,6 +9475,12 @@ In the example below, a bool variable in the Update function is used to obtain t
 <h3 id="setnextmotion">SetNextMotion</h3>
 <p><code>bool SetNextMotion(string MotionName)</code></p>
 <p>Set the next motion to be played.</p>
+<h3 id="changeactivitymotion">ChangeActivityMotion</h3>
+<p><code>bool ChangeActivityMotion(string MotionName)</code></p>
+<p>Plays the motion defined in the <a href="../SDKTools/VKCActivityExporter.html">Activity file</a>.</p>
+<h3 id="setnextactivitymotion">SetNextActivityMotion</h3>
+<p><code>bool SetNextActivityMotion(string MotionName)</code></p>
+<p>Sets the next motion to play after the current motion is played, which defined in the <a href="../SDKTools/VKCActivityExporter.html">Activity file</a>.</p>
 <h3 id="showchatballoon">ShowChatBalloon</h3>
 <p><code>bool ShowChatBalloon(string Text)</code></p>
 <p>Show the designated text in the chat balloon.</p>
@@ -9352,6 +9496,13 @@ In the example below, a bool variable in the Update function is used to obtain t
 <h3 id="getmovespeedupratio">GetMoveSpeedupRatio</h3>
 <p><code>float GetMoveSpeedupRatio()</code></p>
 <p>Get the player's move speed up ratio when running.</p>
+<h3 id="setpresetavatar">SetPresetAvatar</h3>
+<p><code>bool SetPresetAvatar(int AvatarIndex)</code></p>
+<p>Changes the player's avatar to a preset avatar. This will only affect the Player object, and will not change other players.</p>
+<h3 id="getpresetavatar">GetPresetAvatar</h3>
+<p><code>int GetPresetAvatar()</code></p>
+<p>Gets the index value of the current preset avatar.</p>
+<p>If the player is using their MyAvatar or Player object is disabled, -1 value will be returned.</p>
 
 
 

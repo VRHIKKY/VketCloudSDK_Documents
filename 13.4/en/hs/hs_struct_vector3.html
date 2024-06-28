@@ -1631,6 +1631,8 @@
       
         
       
+        
+      
     
     
     
@@ -1670,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools Overview & Setup
+    Overview & Setup
   </span>
   
 
@@ -1692,6 +1694,27 @@
   
   <span class="md-ellipsis">
     How to Use
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Use
   </span>
   
 
@@ -4804,6 +4827,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#makevector3dot" class="md-nav__link">
+    <span class="md-ellipsis">
+      makeVector3Dot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#makevector3cross" class="md-nav__link">
+    <span class="md-ellipsis">
+      makeVector3Cross
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lerpvector3vector3-from-vector3-to-float-t" class="md-nav__link">
     <span class="md-ellipsis">
       lerpVector3(Vector3 from, Vector3 to, float t)
@@ -7508,11 +7549,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -9016,6 +9057,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#makevector3dot" class="md-nav__link">
+    <span class="md-ellipsis">
+      makeVector3Dot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#makevector3cross" class="md-nav__link">
+    <span class="md-ellipsis">
+      makeVector3Cross
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lerpvector3vector3-from-vector3-to-float-t" class="md-nav__link">
     <span class="md-ellipsis">
       lerpVector3(Vector3 from, Vector3 to, float t)
@@ -9209,6 +9268,12 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 <h3 id="makevector3float-float-float">makeVector3(float, float, float)</h3>
 <p><code>Vector3 makeVector3(float x, float y, float z)</code></p>
 <p>global function. Returns a Vector3 initialized with the specified x, y, z components.</p>
+<h3 id="makevector3dot">makeVector3Dot</h3>
+<p><code>float makeVector3Dot(Vector3 vec1, Vector3 vec2)</code></p>
+<p>グローバル関数。ベクトル同士の内積を計算します。</p>
+<h3 id="makevector3cross">makeVector3Cross</h3>
+<p><code>Vector3 makeVector3Cross(Vector3 vec1, Vector3 vec2)</code></p>
+<p>グローバル関数。ベクトル同士の外積を計算します。</p>
 <h3 id="lerpvector3vector3-from-vector3-to-float-t">lerpVector3(Vector3 from, Vector3 to, float t)</h3>
 <p><code>Vector3 lerpVector3(Vector3 from, Vector3 to, float t)</code></p>
 <p>A global function. Returns a linear interpolated Vector3 result between <code>from</code> and <code>to</code> by time t.</p>

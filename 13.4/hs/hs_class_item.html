@@ -1631,6 +1631,8 @@
       
         
       
+        
+      
     
     
     
@@ -1670,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools - 概要とセットアップ
+    概要とセットアップ
   </span>
   
 
@@ -1691,7 +1693,28 @@
         
   
   <span class="md-ellipsis">
-    基本的な使い方
+    基本実装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    応用実装
   </span>
   
 
@@ -7892,11 +7915,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -10210,7 +10233,7 @@
 </details>
 <h3 id="setplaytime">SetPlayTime</h3>
 <p><code>public bool SetPlayTime(float PlayTimeMS)</code></p>
-<p>オブジェクトのモーション再生時間の位置を変更します。
+<p>オブジェクトのモーション再生時間の位置を変更します。<br>
 単位はミリセカンドです。</p>
 <details class="note">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
@@ -10220,7 +10243,7 @@
 </details>
 <h3 id="getplaytime">GetPlayTime</h3>
 <p><code>public float GetPlayTime()</code></p>
-<p>オブジェクトのモーション再生時間の位置を取得します。
+<p>オブジェクトのモーション再生時間の位置を取得します。<br>
 単位はミリセカンドです。</p>
 <details class="note">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
@@ -10259,8 +10282,9 @@
 </ul>
 </details>
 <h3 id="changemotion">ChangeMotion</h3>
-<p><code>public bool ChangeMotion(string MotionName)</code></p>
-<p>MotionName で指定したモーションに動作を切り替えます。</p>
+<p><code>public bool ChangeMotion(string MotionName, float BlendTimeMS = 0.0f)</code></p>
+<p>MotionName で指定したモーションに動作を切り替えます。<br>
+BlendTimeMSはブレンディングする時間をミリセカンド単位で指定します。</p>
 <details class="note">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
@@ -10641,7 +10665,7 @@
 </details>
 <h3 id="callcomponentmethod">CallComponentMethod</h3>
 <p><code>public void CallComponentMethod(string ComponentName, string MethodName, string Params)</code></p>
-<p>Item に設定されているコンポーネントのメソッドを呼び出します。
+<p>Item に設定されているコンポーネントのメソッドを呼び出します。<br>
 ComponentNameでコンポーネント名を、MethodNameでメソッド名を指定し、メソッドを呼び出します。その際、Paramsで指定した文字列が引数として渡されます。</p>
 <p>呼び出せるメソッドには、以下の制限があります。</p>
 <ul>

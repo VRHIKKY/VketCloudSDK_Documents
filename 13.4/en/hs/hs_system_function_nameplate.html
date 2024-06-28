@@ -1631,6 +1631,8 @@
       
         
       
+        
+      
     
     
     
@@ -1670,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    GUITools Overview & Setup
+    Overview & Setup
   </span>
   
 
@@ -1692,6 +1694,27 @@
   
   <span class="md-ellipsis">
     How to Use
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GUITools/AdvancedUse.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Use
   </span>
   
 
@@ -5035,9 +5058,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatesetshowstring-string-bool" class="md-nav__link">
+  <a href="#hsnameplatesetshow" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateSetShow(string, string, bool)
+      hsNamePlateSetShow
     </span>
   </a>
   
@@ -5059,18 +5082,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatecleartextstring-string" class="md-nav__link">
+  <a href="#hsnameplatecleartext" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateClearText(string, string)
+      hsNamePlateClearText
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hsnameplatewritetextstring-string-int-int-string" class="md-nav__link">
+  <a href="#hsnameplatewritetext" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateWriteText(string, string, int, int, string)
+      hsNamePlateWriteText
     </span>
   </a>
   
@@ -5092,9 +5115,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatesetimagestring-string-string" class="md-nav__link">
+  <a href="#hsnameplatesetimage" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateSetImage(string, string, string)
+      hsNamePlateSetImage
     </span>
   </a>
   
@@ -7403,11 +7426,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    v13.0
+    v13.4
   </span>
   
 
@@ -8884,9 +8907,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatesetshowstring-string-bool" class="md-nav__link">
+  <a href="#hsnameplatesetshow" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateSetShow(string, string, bool)
+      hsNamePlateSetShow
     </span>
   </a>
   
@@ -8908,18 +8931,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatecleartextstring-string" class="md-nav__link">
+  <a href="#hsnameplatecleartext" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateClearText(string, string)
+      hsNamePlateClearText
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hsnameplatewritetextstring-string-int-int-string" class="md-nav__link">
+  <a href="#hsnameplatewritetext" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateWriteText(string, string, int, int, string)
+      hsNamePlateWriteText
     </span>
   </a>
   
@@ -8941,9 +8964,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hsnameplatesetimagestring-string-string" class="md-nav__link">
+  <a href="#hsnameplatesetimage" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNamePlateSetImage(string, string, string)
+      hsNamePlateSetImage
     </span>
   </a>
   
@@ -8970,26 +8993,26 @@
 
 
 <h1 id="built-in-functions-nameplate">Built-in functions - nameplate</h1>
-<div class="admonition note info">
-<p class="admonition-title">Note</p>
+<div class="admonition note">
+<p class="admonition-title">Overview</p>
 <p>Functions for dynamically customizing the nameplate displayed above the player avatar's head.</p>
-<p>To uniquely identify each player, it uses the ID for receiving custom state/custom data in (network function) [hs_system_function_net.md].</p>
+<p>To uniquely identify each player, it uses the ID for receiving custom state/custom data in <a href="hs_system_function_net.html">network function</a>.</p>
 <p>If you specify an empty string for the ID, it will perform the operation on your own nameplate. Also, the argument name means the "name" element of the nameplate itself, not the player's name.</p>
 </div>
 <hr />
 <h2 id="showhide">Show/hide</h2>
-<h3 id="hsnameplatesetshowstring-string-bool">hsNamePlateSetShow(string, string, bool)</h3>
+<h3 id="hsnameplatesetshow">hsNamePlateSetShow</h3>
 <p><code>bool hsNamePlateSetShow(string id, string name, bool show)</code></p>
 <p>Specify the nameplate by ID and name, show it if show is set to true and hide it if show is set to false.</p>
 <h2 id="changing-text-elements">Changing text elements</h2>
-<h3 id="hsnameplatecleartextstring-string">hsNamePlateClearText(string, string)</h3>
+<h3 id="hsnameplatecleartext">hsNamePlateClearText</h3>
 <p><code>bool hsNamePlateClearText(string id, string name)</code></p>
 <p>Specify a nameplate by ID and name and clear the text.</p>
-<h3 id="hsnameplatewritetextstring-string-int-int-string">hsNamePlateWriteText(string, string, int, int, string)</h3>
+<h3 id="hsnameplatewritetext">hsNamePlateWriteText</h3>
 <p><code>bool hsNamePlateWriteText(string id, string name, int x, int y, string text)</code></p>
 <p>Specify a nameplate by ID and name and set the new text. You can specify the offset with x, y.</p>
 <h2 id="changing-image-elements">Changing image elements</h2>
-<h3 id="hsnameplatesetimagestring-string-string">hsNamePlateSetImage(string, string, string)</h3>
+<h3 id="hsnameplatesetimage">hsNamePlateSetImage</h3>
 <p><code>bool hsNamePlateSetImage(string id, string name, string fileName)</code></p>
 <p>Specify a nameplate by ID and name and apply a new image.</p>
 
