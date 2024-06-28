@@ -3,7 +3,9 @@
 ## 2024年6月28日更新
 
 ## 2024年6月28日 - 変更されたページ
-
+- VketCloudSettings
+  - [BasicSettings](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
+    - World IDに関する設定記述を変更
 - HeliScript
   - 翻訳が欠けていたページを補完
   - 日本語ページにのみ適用されていた更新を英語文へ適用

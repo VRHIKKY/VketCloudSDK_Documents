@@ -3,7 +3,9 @@
 ## June 28 2024 Update
 
 ## June 28 2024 - Edited Pages
-
+- VketCloudSettings
+  - [BasicSettings](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/BasicSettings.html)
+    - Changed description about World ID
 - HeliScript
   - Added translation to pages not having English
   - Fixed issue of features only written on Japanese page
