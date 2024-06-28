@@ -4,6 +4,7 @@
 Describes control constructs such as conditional branching and repetition.
 
 ## if - conditional branch
+
 Conditional branching can be realized by dividing the processing with *{}* after `if (conditional expression)`.
 
 ```
@@ -18,6 +19,7 @@ if (x == y) {
 ```
 
 ## while - repeat
+
 By writing `while (conditional expression) { }`, you can write a process that repeatedly executes *{}* until the conditional expression becomes *false*.
 
 Use *break* to force exit from the loop.
@@ -41,6 +43,7 @@ while (true) {
 ```
 
 ## for - iteration with initialization and iterators
+
 By writing `for (initialization; conditional expression; iterator) { }`, the following process will occur.
 
 1. Initialize and
@@ -59,6 +62,7 @@ for (i = 0; i < 100; ++i) {
 ```
 
 ## switch - Concise description of many branch conditions
+
 ```
 switch (value used for condition judgment) {
      case judgment_value_A:

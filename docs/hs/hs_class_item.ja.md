@@ -1,4 +1,3 @@
-
 # Item クラス
 
 Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
@@ -281,7 +280,7 @@ Item が移動中の場合はtrueを返す。
 
 `public bool SetPlayTime(float PlayTimeMS)`
 
-オブジェクトのモーション再生時間の位置を変更します。
+オブジェクトのモーション再生時間の位置を変更します。<br>
 単位はミリセカンドです。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
@@ -291,7 +290,7 @@ Item が移動中の場合はtrueを返す。
 
 `public float GetPlayTime()`
 
-オブジェクトのモーション再生時間の位置を取得します。
+オブジェクトのモーション再生時間の位置を取得します。<br>
 単位はミリセカンドです。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
@@ -329,9 +328,10 @@ Item が表示状態の場合は true を、そうでない場合は false を�
 
 ### ChangeMotion
 
-`public bool ChangeMotion(string MotionName)`
+`public bool ChangeMotion(string MotionName, float BlendTimeMS = 0.0f)`
 
-MotionName で指定したモーションに動作を切り替えます。
+MotionName で指定したモーションに動作を切り替えます。<br>
+BlendTimeMSはブレンディングする時間をミリセカンド単位で指定します。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -711,7 +711,7 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 
 `public void CallComponentMethod(string ComponentName, string MethodName, string Params)`
 
-Item に設定されているコンポーネントのメソッドを呼び出します。
+Item に設定されているコンポーネントのメソッドを呼び出します。<br>
 ComponentNameでコンポーネント名を、MethodNameでメソッド名を指定し、メソッドを呼び出します。その際、Paramsで指定した文字列が引数として渡されます。
 
 呼び出せるメソッドには、以下の制限があります。
