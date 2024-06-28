@@ -4350,18 +4350,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hsnetsetcustomstatestring-string" class="md-nav__link">
+  <a href="#hsnetsetcustomstate" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNetSetCustomState(string, string)
+      hsNetSetCustomState
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#hsnetsendcustomdatastring-string" class="md-nav__link">
+  <a href="#hsnetsendcustomdata" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNetSendCustomData(string, string)
+      hsNetSendCustomData
     </span>
   </a>
   
@@ -7958,18 +7958,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hsnetsetcustomstatestring-string" class="md-nav__link">
+  <a href="#hsnetsetcustomstate" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNetSetCustomState(string, string)
+      hsNetSetCustomState
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#hsnetsendcustomdatastring-string" class="md-nav__link">
+  <a href="#hsnetsendcustomdata" class="md-nav__link">
     <span class="md-ellipsis">
-      hsNetSendCustomData(string, string)
+      hsNetSendCustomData
     </span>
   </a>
   
@@ -8075,13 +8075,13 @@
 <p>Each uses the following functions to send data. Any string can be specified for type, but it is preferable to choose an appropriate name according to the purpose of use.</p>
 </div>
 <hr />
-<h3 id="hsnetsetcustomstatestring-string">hsNetSetCustomState(string, string)</h3>
+<h2 id="hsnetsetcustomstate">hsNetSetCustomState</h2>
 <p><code>void hsNetSetCustomState(string type, string data)</code></p>
 <p>By setting type and data in advance, (type, data) is automatically notified to users entering the room.</p>
-<h3 id="hsnetsendcustomdatastring-string">hsNetSendCustomData(string, string)</h3>
+<h2 id="hsnetsendcustomdata">hsNetSendCustomData</h2>
 <p><code>void hsNetSendCustomData(string type, string data)</code></p>
 <p>Notify (type, data) to users in the room.</p>
-<h3 id="data-reception-callback-method">Data Reception Callback Method</h3>
+<h2 id="data-reception-callback-method">Data Reception Callback Method</h2>
 <p>The sent data can be retrieved in the <code>OnReceiveCustomState()</code> and <code>OnReceiveCustomData()</code> methods defined in the component. Argument id is the identifier of the sending player.</p>
 <div class="codehilite"><pre><span></span><code><span class="nx">component</span><span class="w"> </span><span class="nx">CustomDataReceiver</span>
 <span class="p">{</span>
@@ -8113,9 +8113,9 @@
 <h3 id="hsnetgetmicpermissionstate">hsNetGetMicPermissionState</h3>
 <p><code>int hsNetGetMicPermissionState()</code></p>
 <p>Gets the Mike Permission State. The constants below will be returned.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">HSMicPermissionState_Prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">      </span><span class="o">//</span><span class="w"> </span><span class="n">Permission</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">queue</span>
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">HSMicPermissionState_Granted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="n">Permission</span><span class="w"> </span><span class="n">Granted</span>
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">HSMicPermissionState_Denied</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">      </span><span class="o">//</span><span class="w"> </span><span class="n">Permission</span><span class="w"> </span><span class="n">Denied</span>
+<div class="codehilite"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">HSMicPermissionState_Prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Permission</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">queue</span>
+<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">HSMicPermissionState_Granted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Permission</span><span class="w"> </span><span class="n">Granted</span>
+<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">HSMicPermissionState_Denied</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Permission</span><span class="w"> </span><span class="n">Denied</span>
 </code></pre></div>
 
 <h3 id="callback-method">Callback Method</h3>

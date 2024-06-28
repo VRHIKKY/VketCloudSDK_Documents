@@ -7982,7 +7982,7 @@ Variables can also be initialized at the same time they are declared.</p>
 
 <h2 id="definition-of-constant">Definition of constant</h2>
 <p>If <em>const</em> is added before the variable definition of <a href="hs_var.html">basic type</a>, the variable cannot be changed after initialization.</p>
-<p>Class variables cannot be given <em>const</em>.</p>
+<p>The following types are able to be defined as const: int, float, bool, and string.</p>
 <div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">Define</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">immutable</span><span class="w"> </span><span class="n">constant</span><span class="w"> </span><span class="n">integer</span><span class="w"> </span><span class="n">variable</span>
 <span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">immutable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">999</span><span class="p">;</span>
 </code></pre></div>

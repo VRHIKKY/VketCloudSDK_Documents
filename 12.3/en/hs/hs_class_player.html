@@ -4391,6 +4391,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#changeactivitymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChangeActivityMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setnextactivitymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetNextActivityMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#showchatballoon" class="md-nav__link">
     <span class="md-ellipsis">
       ShowChatBalloon
@@ -8253,6 +8271,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#changeactivitymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChangeActivityMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setnextactivitymotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetNextActivityMotion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#showchatballoon" class="md-nav__link">
     <span class="md-ellipsis">
       ShowChatBalloon
@@ -8379,19 +8415,19 @@ In the example below, a bool variable in the Update function is used to obtain t
 <p><code>public string GetCustomState(string CustomStateName)</code></p>
 <p>Get the custom state at a designated timing.</p>
 <h3 id="setpos">SetPos</h3>
-<p><code>public void SetPos(Vector3 pos)</code></p>
+<p><code>void SetPos(Vector3 pos)</code></p>
 <p>Set coordinates.</p>
 <h3 id="getpos">GetPos</h3>
-<p><code>public Vector3 GetPos()</code></p>
+<p><code>Vector3 GetPos()</code></p>
 <p>Get coordinates.</p>
 <h3 id="setrotate">SetRotate</h3>
-<p><code>public void SetRotate(float angle)</code></p>
+<p><code>void SetRotate(float angle)</code></p>
 <p>Sets the orientation of the player.</p>
 <h3 id="getrotate">GetRotate</h3>
-<p><code>public float GetRotate()</code></p>
+<p><code>float GetRotate()</code></p>
 <p>Get the orientation of the player.</p>
 <h3 id="getname">GetName</h3>
-<p><code>public string GetName()</code></p>
+<p><code>string GetName()</code></p>
 <p>Get the player's name.</p>
 <h3 id="getphysicsid">GetPhysicsID</h3>
 <p><code>int GetPhysicsID()</code></p>
@@ -8409,6 +8445,12 @@ In the example below, a bool variable in the Update function is used to obtain t
 <h3 id="setnextmotion">SetNextMotion</h3>
 <p><code>bool SetNextMotion(string MotionName)</code></p>
 <p>Set the next motion to be played.</p>
+<h3 id="changeactivitymotion">ChangeActivityMotion</h3>
+<p><code>bool ChangeActivityMotion(string MotionName)</code></p>
+<p>Plays the motion defined in the <a href="../SDKTools/VKCActivityExporter.html">Activity file</a>.</p>
+<h3 id="setnextactivitymotion">SetNextActivityMotion</h3>
+<p><code>bool SetNextActivityMotion(string MotionName)</code></p>
+<p>Sets the next motion to play after the current motion is played, which defined in the <a href="../SDKTools/VKCActivityExporter.html">Activity file</a>.</p>
 <h3 id="showchatballoon">ShowChatBalloon</h3>
 <p><code>bool ShowChatBalloon(string Text)</code></p>
 <p>Show the designated text in the chat balloon.</p>
