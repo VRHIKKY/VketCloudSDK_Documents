@@ -30,14 +30,28 @@ vec.z = 2.0f;
 Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 ```
 
-
 ## Vector3 utility functions
+
 ### makeVector3(float, float, float)
+
 `Vector3 makeVector3(float x, float y, float z)`
 
 global function. Returns a Vector3 initialized with the specified x, y, z components.
 
+### makeVector3Dot
+
+`float makeVector3Dot(Vector3 vec1, Vector3 vec2)`
+
+グローバル関数。ベクトル同士の内積を計算します。
+
+### makeVector3Cross
+
+`Vector3 makeVector3Cross(Vector3 vec1, Vector3 vec2)`
+
+グローバル関数。ベクトル同士の外積を計算します。
+
 ### lerpVector3(Vector3 from, Vector3 to, float t)
+
 `Vector3 lerpVector3(Vector3 from, Vector3 to, float t)`
 
 A global function. Returns a linear interpolated Vector3 result between `from` and `to` by time t.
@@ -45,55 +59,65 @@ A global function. Returns a linear interpolated Vector3 result between `from` a
 ## Constructor
 
 ### Vector3()
+
 `public Vector3()`
 
 Creates an instance of Vector3 with x, y, z elements set to 0.
 
-
-
 ## member variables
+
 ### float x
+
 `public float x`
 
 The x component of the vector.
 
 ### float y
+
 `public float y`
 
 The y component of the vector.
 
 ### float z
+
 `public float z`
 
 The z-component of the vector.
 
 ## Methods
+
 ### Add(Vector3)
+
 `public void Add(Vector3 v)`
 
 Adds the vector specified by the argument to the calling vector.
 
 ### Sub(Vector3 v)
+
 `public void Sub(Vector3 v)`
 
 Subtracts the vector specified by the argument to the calling vector.
 
 ### Rotate(Quaternion)
+
 `public Vector3 Rotate(Quaternion q)`
 
 Rotates the calling vector and returns the result as a new Vector3.
 
 ### RotateMatrix(Matrix)
+
 `public Vector3 RotateMatrix(Matrix mat)`
 
 Rotates the calling vector and returns the result as a new Vector3.
 
 ### Distance(Vector3 v)
+
 `public float Distance(Vector3 v)`
 
 Returns the distance from vector `v`.
 
 ### GetNormalize()
+
 `public Vector3 GetNormalize()`
 
 Returns a new Vector3 value by normalizing the vector.

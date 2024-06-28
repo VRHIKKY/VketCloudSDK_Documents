@@ -6,7 +6,8 @@ ChatGPTに関連した関数です。
 
 ## ChatGPT関連
 
-### hsAddOnReceiveChatGPT()
+### hsAddOnReceiveChatGPT
+
 `delegate void hsDGOnReceivedChatGPT(string Text);`
 
 `void hsAddOnReceiveChatGPT(hsDGOnReceivedChatGPT dg);`

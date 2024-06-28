@@ -6,6 +6,8 @@
 
 ***
 
+## 関数の一覧
+
 ### hsCanvasSetLayerShow
 
 `bool hsCanvasSetLayerShow(string layerName, bool show)`
@@ -134,7 +136,7 @@ GUIのサイズを取得する。
 
 GUIの角度を設定する。
 
-### hsCanvasSetGUIAngle
+### hsCanvasGetGUIAngle
 
 `bool hsCanvasGetGUIAngle(string LayerName, bool IsPortrait, string GUIName, ref float Angle)`
 

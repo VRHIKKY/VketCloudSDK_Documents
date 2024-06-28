@@ -6,9 +6,10 @@ The Functions related to ChatGPT.
 
 ## ChatGPT related methods
 
-### hsAddOnReceiveChatGPT()
+### hsAddOnReceiveChatGPT
+
 `delegate void hsDGOnReceivedChatGPT(string Text);`
 
 `void hsAddOnReceiveChatGPT(hsDGOnReceivedChatGPT dg);`
 
-Set a callback method for receiving an answer from ChatGPT. 
+Set a callback method for receiving an answer from ChatGPT.

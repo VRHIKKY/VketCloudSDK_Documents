@@ -3,25 +3,22 @@
 
 レンダリングに関するユーティリティ関数
 
-
 ***
 
+## hsRenderingSetLightDir
 
-### hsRenderingSetLightDir
 `void hsRenderingSetLightDir(Vector3 Dir)`
 
 ライト方向を設定します。
 
+## hsRenderingSetLightColor
 
-### hsRenderingSetLightColor
 `void hsRenderingSetLightColor(float R, float G, float B)`
 
 ライトの色を設定します。
 
+## hsRenderingSetLightScattering
 
-### hsRenderingSetLightScattering
 `void hsRenderingSetLightScattering(float BetaR, float BetaM, float G, float Distance, float LightColorR, float LightColorG, float LightColorB, float SunColorR, float SunColorG, float SunColorB)`
 
 ライトスキャタリングの設定をおこないます。
-
-

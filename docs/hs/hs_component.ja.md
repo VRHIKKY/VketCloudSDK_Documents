@@ -1,4 +1,3 @@
-
 # コンポーネント / コールバック関数
 
 ## コンポーネントの定義
@@ -122,7 +121,8 @@ component AreaCollider
 
 ## コールバック - オブジェクト選択解除
 
-### ノードの選択解除：OnUnselectNode()
+### ノードの選択解除：OnUnselectNode
+
 ```
 public void OnUnselectNode(int NodeIndex)
 ```
@@ -130,7 +130,8 @@ public void OnUnselectNode(int NodeIndex)
 
 この際に、選択解除されたノードのインデックスを引数として、OnUnselectNode() が呼び出されます。
 
-### アバターの選択解除：OnUnselectAvatar()
+### アバターの選択解除：OnUnselectAvatar
+
 ```
 public void OnUnselectAvatar(string Name)
 ```
