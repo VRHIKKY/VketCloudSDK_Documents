@@ -1,10 +1,11 @@
-
 # 組み込み関数 - GUI
 
 !!! 情報 Info
     GUI要素を操作するユーティリティー関数。
 
 ***
+
+## 関数の一覧
 
 ### hsCanvasSetLayerShow
 
@@ -88,7 +89,7 @@
 
 `void hsCanvasSetConfigClosedFlag(bool Flag)`
 
-コンフィグ画面を表示状態を切り替える。
+コンフィグ画面の表示状態を切り替える。
 ***
 
 ### hsCanvasAddGUI
@@ -134,7 +135,7 @@ GUIのサイズを取得する。
 
 GUIの角度を設定する。
 
-### hsCanvasSetGUIAngle
+### hsCanvasGetGUIAngle
 
 `bool hsCanvasGetGUIAngle(string LayerName, bool IsPortrait, string GUIName, ref float Angle)`
 
