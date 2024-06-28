@@ -2,7 +2,7 @@
 
 This is the page to see when you cannot perform each step in [How to Animate Objects](PropAnimation.md).
 
-## About attaching HEOAnimation
+## About attaching VKC Node Rotate Animation
 
 ### Behavior is different from what I expected
 
@@ -15,9 +15,9 @@ If you just want to rotate horizontally, but the object somehow stretches, the o
 
 ![PropAnimation_TroubleShooting_3](./img/PropAnimation_TroubleShooting_3.jpg)
 
-If behavior is strange, it is better to make the object containing HEOAnimation a child object of Position(0,0,0), Rotation(0,0,0), and Scale(1,1,1).
+If behavior is strange, it is better to make the object containing VKC Node Rotate Animation a child object of Position(0,0,0), Rotation(0,0,0), and Scale(1,1,1).
 
-Also, the result of adding HEOAnimation is the same as changing the Rotation of the object in Unity. <br>
+Also, the result of adding VKC Node Rotate Animation is the same as changing the Rotation of the object in Unity. <br>
 It is a good idea to check how it works on Unity before entering the values.
 
 ---

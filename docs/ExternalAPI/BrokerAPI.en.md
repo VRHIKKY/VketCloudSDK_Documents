@@ -69,7 +69,7 @@ component BrokerAPI
     public BrokerAPI()
     {
         //Get the Item where BrokerAPI.hs is allocated.
-        //The BrokerAPI.hs must be allocated by a HEOScript component, which should be added to the Field where the button GameObject mentioned by GET_SWITCH_NAME exists
+        //The BrokerAPI.hs must be allocated by a VKC Attribute Script component, which should be added to the Field where the button GameObject mentioned by GET_SWITCH_NAME exists
         thisItem = hsItemGetSelf();
         resultTextPlane = hsItemGet(RESULT_ITEM_NAME);
     }

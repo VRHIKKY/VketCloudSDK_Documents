@@ -2,7 +2,7 @@
 
 [オブジェクトをアニメーションさせる](PropAnimation.md) にて、各手順が出来ないときに見るページです。
 
-## HEOAnimationのアタッチについて
+## VKC Node Rotate Animationのアタッチについて
 
 ### 思っていた挙動と異なる
 
@@ -15,9 +15,9 @@ Scaleを変更したオブジェクトの子オブジェクトのRotationを変�
 
 ![PropAnimation_TroubleShooting_3](./img/PropAnimation_TroubleShooting_3.jpg)
 
-動作が変な場合、HEOAnimationを入れるオブジェクトは、Position(0,0,0)、Rotation(0,0,0)、Scale(1,1,1)の子オブジェクトにした方が良いでしょう。
+動作が変な場合、VKC Node Rotate Animationを入れるオブジェクトは、Position(0,0,0)、Rotation(0,0,0)、Scale(1,1,1)の子オブジェクトにした方が良いでしょう。
 
-また、HEOAnimationを入れた動作結果は、Unity上で該当オブジェクトのRotationを変更したものと同じになります。<br>
+また、VKC Node Rotate Animationを入れた動作結果は、Unity上で該当オブジェクトのRotationを変更したものと同じになります。<br>
 予めUnity上でどのように動作するか確認してから値を入力すると良いでしょう。
 
 ---

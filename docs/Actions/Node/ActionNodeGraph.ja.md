@@ -8,7 +8,7 @@ ActionNodeGraphの使用方法について、解説します。<br>
 ## 概要
 
 本コンポーネントは[VKC Attribute Action Trigger](../../VKCComponents/VKCAttributeActionTrigger.md)の代替として使用できるコンポーネントです。<br>
-HEOActionTriggerと比べ、
+VKC Attribute Action Triggerと比べ、
 
 - アクションをノードで視覚的に管理することが可能
 - アクション実行順の変更が容易
@@ -68,7 +68,7 @@ Start NodeからResultまでの間にあるノードが実際に発生するア�
 変数はノード空間にドラッグ&ドロップし、対応する○に繋げることで使用可能です。<br>
 <br>
 <br>
-■例：HEO Object名"music"の1番目のアニメーションを再生する(再生は1度きり)　を作る場合■<br>
+■例：VKC Item Object名"music"の1番目のアニメーションを再生する(再生は1度きり)　を作る場合■<br>
 ![ActionNodeGraph12](img/ActionNodeCompiler12.jpg)<br>
 <br>
 "music"をString型の変数で、"1"をint型の変数で作ります。<br>
@@ -77,7 +77,7 @@ IfequalのNameに"music"、NValueに"1"を接続します。<br>
 これで、「musicの中身が1の場合、先の処理を発生させない」処理が完成します。<br>
 <br>
 PlayItemのNameに"music"、Indexに"1"を接続します。<br>
-これで、「HEO Object"music"のIndex番号"1"に登録されたアニメーションを再生する」処理が完成します。<br>
+これで、「VKC Item Object"music"のIndex番号"1"に登録されたアニメーションを再生する」処理が完成します。<br>
 <br>
 SetVarのNameに"music"、Indexに"1"を接続します。<br>
 これで、「変数musicの中身を1にする」処理が完成します。<br>
@@ -103,7 +103,7 @@ Parameter上で作成する変数と同様の使い方をすることができ�
 ![ActionNodeGraph14](img/ActionNodeCompiler14.jpg)<br>
 <br>
 クリックした際に非表示となるオブジェクトを複数個用意する際、<br>
-HEOActionTriggerであれば1つ1つ当たり判定と表示を消す対象を変更する作業が必要がありますが、<br>
+VKC Attribute Action Triggerであれば1つ1つ当たり判定と表示を消す対象を変更する作業が必要がありますが、<br>
 この例の場合、NodeNameの部分にActionNodeCompilerがアタッチされたオブジェクトが自動で入るため、<br>
 ActionNodeCompilerにこのActionNodeGraphをアタッチしたものを非表示にしたいオブジェクトにアタッチするだけで、<br>
 当たり判定と表示を変更する作業を行うことなく実装することができます。<br>
@@ -112,4 +112,4 @@ ActionNodeCompilerにこのActionNodeGraphをアタッチしたものを非表�
 ActionNodeGraphではアクションリストを保存することができます。<br>
 ![ActionNodeGraph15](img/ActionNodeCompiler15.jpg)<br>
 ActionNodeCompilerのAssetでActionNodeGraphを選択することができます。<br>
-HEOActionTriggerでは困難なアクションリストの変更を容易に行うことができます。<br>
+VKC Attribute Action Triggerでは困難なアクションリストの変更を容易に行うことができます。<br>
