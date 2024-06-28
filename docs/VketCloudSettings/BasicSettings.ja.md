@@ -6,10 +6,10 @@ BasicSettingsでは、ワールドの基本的な設定を編集できます。
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
-|  `World Name` | "world" |  ワールド名を設定する項目です。基本的にはワールド作成時に自動生成されたIDがアップロード時に自動入力され、URLなどに反映されます。<br> (例：[VketID_of_Creator].cloud.vket.com/worlds/[World_Name])|
+|  `World ID` | "world" |  ワールドIDを設定する項目です。基本的にはワールド作成時に自動生成されたIDがアップロード時に自動入力され、URLなどに反映されます。<br> (例：[VketID_of_Creator].cloud.vket.com/worlds/[World ID])|
 |  `Debug Mode` | false |  デバッグモードを切り替えることができます。オンにするとブラウザ上で`F1`または`F2`からデバッグ機能を使用することが可能になります。<br>詳しくはデバッグモードの[解説ページ](../WorldEditingTips/DebugMode.md)をご確認ください。|
 | `Use Avatar Click`| true | 他のプレイヤーをクリックした時に処理を利用するかどうかの設定です。 |
-| `VRM Drop` | false | ブラウザ上へのVRMドロップによるローカルの(他プレイヤーから見えない)アバター変更を許可します。 |
+| `VRM Drag & Drop` | false | ブラウザ上へのVRMドロップによるローカルの(他プレイヤーから見えない)アバター変更を許可します。 |
 | `Occlusion Culling` | false | オクルージョンカリングをオンにします。<br>詳しい使い方は[オクルージョンカリング](../WorldOptimization/OcclusionCulling.md)をご確認ください。　|
 | `World Name Directory` | false | .heoファイルなどの出力時に、ワールド名の付いたフォルダにまとめます。<br>(例： data/field/`ワールド名`/world.heo)|
 | `Use GamePad` | false | ゲームパッドを使用するかどうかの設定です。 |
