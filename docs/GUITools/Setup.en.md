@@ -1,4 +1,4 @@
-# GUITools - Overview and Setup
+# Overview and Setup
 
 GUITools is a derivative tool outside of VketCloudSDK designed to edit and save the Activity Canvas GUI for VKC Item Activities in worlds created in Vket Cloud. The tools are primarily divided into GUI Importer and GUI Exporter, and the json files saved by the edits made in GUITools are referenced at the time of world loading. If a new UI is added, it needs to be defined by HeliScript. For more details, see [Advanced Implementation](AdvancedUse.md) and [Built-in Functions - GUI](../hs/hs_system_function_gui.md).
 
