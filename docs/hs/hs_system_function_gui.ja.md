@@ -1,4 +1,3 @@
-
 # 組み込み関数 - GUI
 
 !!! 情報 Info
@@ -90,7 +89,7 @@
 
 `void hsCanvasSetConfigClosedFlag(bool Flag)`
 
-コンフィグ画面を表示状態を切り替える。
+コンフィグ画面の表示状態を切り替える。
 ***
 
 ### hsCanvasAddGUI
