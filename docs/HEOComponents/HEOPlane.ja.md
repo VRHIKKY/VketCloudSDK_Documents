@@ -20,7 +20,7 @@ Vket Cloudでは以下のフォーマットのテクスチャ画像が使用で�
 | World Rotation | TransformのRotation値と同一 | テキストを表示する角度を指定します |
 | World Scale | TransformのScale値と同一 | テキストを表示する大きさを指定します |
 | Alpha Blending | false | 半透明やカットアウトを使用できます |
-| Show | false | あらかじめ表示したい場合はオンにします |
+| Show | true | あらかじめ表示したい場合はオンにします |
 | Z-Bias | 0 | z値が高いと、ほかのオブジェクトよりも手前に表示されます |
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります |
 | Double Side | false | 両面表示するか否かを切り替えます |
