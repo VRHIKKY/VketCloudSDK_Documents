@@ -65,6 +65,8 @@
   - [How to Animate Objects - Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation_TroubleShooting.html)
     - Revised solution for error caused when meshes without uv2 is handled by MeshRenderer
     - Added caution on allocating multiple animations when committing Export Motion
+  - [アバターファイル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/AvatarFile.html)
+    - Revised the example of bones name
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
