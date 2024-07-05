@@ -7,8 +7,8 @@ This article will explain how to use ActionNodeGraph. <br>
 
 ## Overview
 
-This component can be used as an alternative to [HEOActionTrigger](../../VKCComponents/VKCAttributeActionTrigger.md). <br>
-It has the following advantages compared to HEOActionTrigger.  
+This component can be used as an alternative to [VKC Attribute Action Trigger](../../VKCComponents/VKCAttributeActionTrigger.md). <br>
+It has the following advantages compared to VKC Attribute Action Trigger.  
 
 - Actions can be managed visually with nodes
 - Easy to change action execution order
@@ -97,10 +97,10 @@ By checking this, the target of the operation can be the object itself to which 
 Example: Hide when clicked<br>
 ![ActionNodeGraph14](img/ActionNodeCompiler14.jpg)<br>
 <br>
-When preparing multiple objects that are hidden when clicked, if it is HEOActionTrigger, you will need to change the collider setting and the target to be hidden one by one. In this example's case, however, the NodeName will be automatically filled with the object with ActionNodeCompiler attached. Thus, you will only need to attach the ActionNodeCompiler with this ActionNodeGraph to the object you want to hide, without the need to change the colliders and hide target. <br>
+When preparing multiple objects that are hidden when clicked, if it is VKC Attribute Action Trigger, you will need to change the collider setting and the target to be hidden one by one. In this example's case, however, the NodeName will be automatically filled with the object with ActionNodeCompiler attached. Thus, you will only need to attach the ActionNodeCompiler with this ActionNodeGraph to the object you want to hide, without the need to change the colliders and hide target. <br>
 <br>
 ②Switch ActionNodeGraph<br>
 ActionNodeGraph can save action lists. <br>
 ![ActionNodeGraph15](img/ActionNodeCompiler15.jpg)<br>
 ActionNodeGraph can be selected in Asset of ActionNodeCompiler. <br>
-HEOActionTrigger makes it easy to change the action list. <br>
+VKC Attribute Action Trigger makes it easy to change the action list. <br>

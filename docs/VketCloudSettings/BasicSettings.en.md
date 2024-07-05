@@ -6,10 +6,10 @@ BasicSettings handles the main settings of the world.
 
 |  Label | Initial Value | function |
 | ---- | ---- | ---- |
-|  `World Name` | "world" | Set the name of the World. This value will be autofilled by the generated world ID on upload, which will mainly be used for the world URL.<br> (e.g. [VketID_of_Creator].cloud.vket.com/worlds/[World_Name]) |
+|  `World ID` | "world" | Set the World ID. This value will be autofilled by the generated world ID on upload, which will mainly be used for the world URL.<br> (e.g. [VketID_of_Creator].cloud.vket.com/worlds/[World_Name]) |
 |  `Debug Mode`  | false |  Switch to debug mode. When switched on, players can use the F1/F2 key to access the debug menu on browser.<br>For details, refer to the [debug mode](../WorldEditingTips/DebugMode.md) page.|
 | `Use Avatar Click`| true | Activate functions running when clicking other players. |
-|  `VRM Drop`  | false | Allows users to locally change their avatar by drag-and-dropping their own .vrm avatars to the browser screen.  |
+|  `VRM Drag & Drop`  | false | Allows users to locally change their avatar by drag-and-dropping their own .vrm avatars to the browser screen.  |
 |  `Occlusion Culling`  | false | Activate the Occlusion Culling.<br>For instructions, please refer to [Occlusion Culling](../WorldOptimization/OcclusionCulling.md).  |
 |  `World Name Directory`  | false | When exporting to .heo and other files, the files will be packed into a folder with the same name as the `World Name`. <br>(e.g. data/field/`World Name`/world.heo) |
 | `Use GamePad` | false | Activate usage of GamePads.  |

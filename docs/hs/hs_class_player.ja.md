@@ -1,9 +1,7 @@
-
 # Playerクラス
 
 !!! 情報 Info
     Playerクラスは、自分自身のプレイヤー（アバター）を表すものです。
-
 
 ## クラス定義
 
@@ -16,12 +14,15 @@ class Player {
 ***
 
 ## Playerのユーティリティー関数
+
 ### hsPlayerGet
+
 `Player hsPlayerGet()`
 
 自分自身の Player インスタンスを取得する。
 
 ### hsPlayerGetByID
+
 `Player hsPlayerGetByID(string PlayerID)`
 
 PlayerIDを指定して他のプレイヤーの Player インスタンスを取得する。
@@ -62,121 +63,152 @@ component PlayerInitSample
 ***
 
 ## メソッド
+
 ### GetID
+
 `string GetID()`
 
 プレイヤーを識別するIDを取得する。
 
+### SetControlEnabled
+
+`bool SetControlEnabled(bool Enabled)`
+
+プレイヤーの操作許可を設定します。falseに設定すると、WASDキーによる移動、マウスドラッグによるカメラ回転などがおこなえなくなります。
+
 ### GetHeadHeight()
+
 `public float GetHeadHeight()`
 
 アバターの身長を取得する。
 
 ### GetCustomState()
+
 `public string GetCustomState(string CustomStateName)`
 
 カスタムステートを任意のタイミングで取得する。
 
 ### SetPos
-`public void SetPos(Vector3 pos)`
 
-座標を設定する。
+`void SetPos(Vector3 pos, bool CameraRotate = true)`
+
+座標を設定する。TPSモードかつCameraRotateがfalseの場合はカメラ回転はおこなわれません。
 
 ### GetPos
-`public Vector3 GetPos()`
+
+`Vector3 GetPos()`
 
 座標を取得する。
 
 ### SetRotate
-`public void SetRotate(float angle)`
+
+`void SetRotate(float angle)`
 
 プレイヤーの向きを設定する。
 
 ### GetRotate
-`public float GetRotate()`
+
+`float GetRotate()`
 
 プレイヤーの向きを取得する。
 
+### SetJumpVelocity
+
+`void SetJumpVelocity(float JumpVelocity)`
+
+プレイヤーのジャンプ時の初速度を設定します。
+デフォルト値は[Player Settings](../VketCloudSettings/PlayerSettings.md)にて設定した数値が参照されます。
+
 ### GetName
-`public string GetName()`
+
+`string GetName()`
 
 プレイヤーの名前を取得する。
 
 ### GetPhysicsID
+
 `int GetPhysicsID()`
 
 PhysicsIDを取得する。
 
 ### Emote
+
 `bool Emote(int EmoteIndex)`
 
 エモートを再生する。
 
 ### SetEmotion
+
 `bool SetEmotion(int Index, string FileName, bool Loop, string ActionList)`
 
 エモーションを読み込む。
 
 ActionListの文字列はSceneファイルに記述する"actions":{}の文字列を渡します。
 
-
 ### ChangeMotion
+
 `bool ChangeMotion(string MotionName)`
 
 モーションを再生する。
 
-
 ### SetNextMotion
+
 `bool SetNextMotion(string MotionName)`
 
 次に再生するモーションを設定する。
 
-
 ### ChangeActivityMotion
+
 `bool ChangeActivityMotion(string MotionName)`
 
-アクティビティクラスのSceneファイルで定義されたモーションを再生する。
-
+[アクティビティファイル](../SDKTools/VKCActivityExporter.md)で定義されたモーションを再生する。
 
 ### SetNextActivityMotion
+
 `bool SetNextActivityMotion(string MotionName)`
 
-次に再生するアクティビティクラスのSceneファイルで定義されたモーションを設定する。
-
+次に再生する[アクティビティファイル](../SDKTools/VKCActivityExporter.md)で定義されたモーションを設定する。
 
 ### ShowChatBalloon
+
 `bool ShowChatBalloon(string Text)`
 
 チャットバルーンに指定のテキストを表示します。
 
-
 ### SetMoveSpeed
+
 `bool SetMoveSpeed(float MoveSpeed)`
 
 移動速度を設定します。単位はm/sです。
 
-
 ### GetMoveSpeed
+
 `float GetMoveSpeed()`
 
 移動速度を取得します。単位はm/sです。
 
-
 ### SetMoveSpeedupRatio
+
 `bool SetMoveSpeedupRatio(float MoveSpeedupRatio)`
 
 高速移動の倍率を設定します。
 
-
 ### GetMoveSpeedupRatio
+
 `float GetMoveSpeedupRatio()`
 
 高速移動の倍率を取得します。
 
-
 ### SetPresetAvatar
+
 `bool SetPresetAvatar(int AvatarIndex)`
 
 プリセットアバターに切り替えます。自分自身のPlayerオブジェクトにのみ有効です。
 
+### GetPresetAvatar
 
+`int GetPresetAvatar()`
+
+プリセットアバターのインデックスを取得します。
+
+マイアバターを使用していたり、Playerオブジェクトが無効な状態の場合は-1が返ります。

@@ -126,6 +126,10 @@ plugins:
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
             VketCloudSDK Settings : VketCloudSDK設定
+            # GUITools 
+            Overview & Setup: 概要とセットアップ
+            How to Use: 基本実装
+            Advanced Use: 応用実装
             # 編集Tips
             World Editing Tips: 編集のためのTips
             Quick Menu for adding Vket Cloud objects: Vket Cloudオブジェクト追加のためのクイックメニュー
@@ -166,16 +170,19 @@ plugins:
             Matrix: Matrixクラス
             Item: Itemクラス
             Player: Playerクラス
+            Date: Dateクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
             Network: ネットワーク
             NamePlate: ネームプレート
             GUI: GUI
+            HSGUIModel: HSGUIModel
             TextChat: テキストチャット
             Physics: 物理演算
             Camera: カメラ
             Common Dialog: 汎用ダイアログ
+            Rendering: レンダリング
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -251,6 +258,10 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
+    - GUITools: 
+      - Overview & Setup: GUITools/Setup.md
+      - How to Use: GUITools/HowToUse.md
+      - Advanced Use: GUITools/AdvancedUse.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
@@ -305,6 +316,7 @@ nav:
   - VKCAttribute:
     - VKCAttributeActionTrigger: VKCComponents/VKCAttributeActionTrigger.md
     - VKCAttributeClickGuide: VKCComponents/VKCAttributeClickGuide.md
+    - VKCAttributeClickableUI: VKCComponents/VKCAttributeClickableUI.md
     - VKCAttributeProperty: VKCComponents/VKCAttributeProperty.md
     - VKCAttributeScript: VKCComponents/VKCAttributeScript.md
     - VKCAttributeShowFlag: VKCComponents/VKCAttributeShowFlag.md
@@ -371,17 +383,20 @@ nav:
         - Matrix: hs/hs_struct_matrix.md
         - Item: hs/hs_class_item.md
         - Player: hs/hs_class_player.md
+        - Date: hs/hs_class_date.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md
         - Network: hs/hs_system_function_net.md
         - NamePlate: hs/hs_system_function_nameplate.md
         - GUI: hs/hs_system_function_gui.md
+        - HSGUIModel: hs/hs_system_function_gui_HSGUIModel.md
         - TextChat: hs/hs_system_function_textchat.md
         - ChatGPT: hs/hs_system_function_chatgpt.md
         - Physics: hs/hs_system_function_physics.md
         - Camera: hs/hs_system_function_camera.md
         - Common Dialog: hs/hs_system_function_commondialog.md
+        - Rendering: hs/hs_system_function_rendering.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md
@@ -392,6 +407,10 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v13.x:
+        - v13.4: releasenote/releasenote-13.4.md
+        - v13.3: releasenote/releasenote-13.3.md
+        - v13.2: releasenote/releasenote-13.2.md
+        - v13.1: releasenote/releasenote-13.1.md
         - v13.0: releasenote/releasenote-13.0.md
     - v12.x:
         - v12.3: releasenote/releasenote-12.3.md
@@ -455,7 +474,7 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v13.x:
-        - v13.0: changelog/changelog-13.0.md
+        - v13.4: changelog/changelog-13.4.md
     - v12.x:
         - v12.3: changelog/changelog-12.3.md
         - v12.1: changelog/changelog-12.1.md

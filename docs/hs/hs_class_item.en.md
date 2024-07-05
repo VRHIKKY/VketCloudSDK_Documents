@@ -225,7 +225,8 @@ Returns true if the Item is moving.
 
 `public bool Play()`
 
-Start playing a sound or particle. Returns true if the playback process has started successfully. Returns false on failure.
+Start playing a sound or particle. Returns true if the playback process has started successfully.<br>
+Returns false on failure.
 
 ??? note "Available object types for this method"
     - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
@@ -258,6 +259,44 @@ Returns true if the sound or particle is playing.
         - [VKCItemObject](../VKCComponents/VKCItemObject.md): Returns true if designated hem in Motion list is playing, when object mode is Motion
         - [VKCItemParticle](../VKCComponents/VKCItemParticle.md): Returns true if designated .hep particle is playing
 
+### Pause
+
+`public bool Pause()`
+
+Pauses the object's playing motion.
+
+??? note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### Restart
+
+`public bool Restart()`
+
+Resumes the object's playing motion after pause.
+
+??? note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetPlayTime
+
+`public bool SetPlayTime(float PlayTimeMS)`
+
+Sets the object's motion playing position by designated time.<br>
+The time is designated by millisecond.
+
+??? note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetPlayTime
+
+`public float GetPlayTime()`
+
+Gets the object's motion playing position by designated time.<br>
+The time is designated by millisecond.
+
+??? note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
 ### SetShow
 
 `public void SetShow(bool flag)`
@@ -288,12 +327,39 @@ Returns true if the Item is visible, false otherwise.
 
 ### ChangeMotion
 
-`public bool ChangeMotion(string MotionName)`
+`public bool ChangeMotion(string MotionName, float BlendTimeMS = 0.0f)`
 
-Change the motion according to the designated MotionName.
+Change the motion according to the designated MotionName.<br>
+BlendTimeMS will designate the time to blend the motion by milliseconds.
 
 ??? note "Available object types for this method"
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### LoadMotion
+
+`public bool LoadMotion(string MotionName, string FileName, bool Loop)`
+
+Loads the designated motion.
+
+??? note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### FacialEmoteFixed
+
+`public bool FacialEmoteFixed(int FacialEmoteType)`
+
+Changes facial expression. Change will be done immediately, and will not return automatically as like the player avatar.
+
+The facial types below can be designated:
+
+- FACIALEMOTETYPE_NEUTRAL
+- FACIALEMOTETYPE_JOY
+- FACIALEMOTETYPE_ANGRY
+- FACIALEMOTETYPE_SORROW
+- FACIALEMOTETYPE_FUN
+
+??? note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### Load
 
@@ -531,7 +597,7 @@ Set the text.
 
 `public bool SetCamera()`
 
-Set the camera type Item as a camera.
+Set the camera type Item as a camera.<br>
 Refer to [VKCItemCamera](../VKCComponents/VKCItemCamera.md) for usage.
 
 ??? note "Available object types for this method"
@@ -541,7 +607,7 @@ Refer to [VKCItemCamera](../VKCComponents/VKCItemCamera.md) for usage.
 
 `public void ResetCamera()`
 
-Detach camera set by SetCamera.
+Detach camera set by SetCamera.<br>
 Refer to [VKCItemCamera](../VKCComponents/VKCItemCamera.md) for usage.
 
 ??? note "Available object types for this method"

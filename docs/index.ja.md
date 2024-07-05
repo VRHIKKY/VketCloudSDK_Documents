@@ -22,8 +22,8 @@ SDKを利用するには、`各種アカウントへの登録`と`指定バー�
     また、一定期間のサポートが盛り込まれた安定版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/stable/index.html)ご参照ください。
 
 !!! info "更新履歴について"
-    本バージョンのVketCloudSDKの更新情報は[リリースノート](releasenote/releasenote-12.3.md)から確認できます。<br>
-    また、[チェンジログ](changelog/changelog-12.3.md)では本マニュアルにおける更新情報が確認できます。<br>
+    本バージョンのVketCloudSDKの更新情報は[リリースノート](releasenote/releasenote-13.4.md)から確認できます。<br>
+    また、[チェンジログ](changelog/changelog-13.4.md)では本マニュアルにおける更新情報が確認できます。<br>
     もし参照したいバージョンのリリースノートがない際はページトップよりバージョンの切り替えをお試しください。
 
 !!! info "本マニュアルへのコントリビューション"
