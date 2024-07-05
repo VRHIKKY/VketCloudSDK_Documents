@@ -2,7 +2,7 @@
 
 ## July 05 2024 Update
 
-## June 28 2024 - Edited Pages
+## July 05 2024 - Edited Pages
 
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldEditingTips/BuildOptions.html)

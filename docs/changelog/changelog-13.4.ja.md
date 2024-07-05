@@ -2,7 +2,7 @@
 
 ## 2024年7月05日更新
 
-## 2024年6月28日 - 変更されたページ
+## 2024年7月05日 - 変更されたページ
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldEditingTips/BuildOptions.html)
     - VketCloudSDK > Build Optionの設定について説明を追加
