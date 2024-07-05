@@ -1,10 +1,19 @@
 # Build Options
 
-On build options, the creator can set various settings for world assets on build.
+In build settings, creators can perform various operations on the files that make up the world during the Build and Run process. There are two ways to change the build settings:
 
-To edit build options, Open VketCloudSDK > Settings, and select the "Build" tab.
+1. You can toggle the simple settings on or off by navigating to **VketCloudSDK > Build Option**.
 
-![BuildOptions_1](img/BuildOptions_1.jpg)
+   ![BuildOptions_0](img/BuildOptions_0.jpg)
+
+2. To edit the detailed build settings, open the settings window via **VketCloudSDK > Settings** and select the "Build" tab.
+
+   ![BuildOptions_1](img/BuildOptions_1.jpg)
+
+## Build Option Settings
+| Name | Default Value | Function |
+| ---- | ------------- | -------- |
+| Auto Clear Cache | false | Sets whether to clear the release folder before Build And Run. When enabled, the release folder is cleared before Build And Run. |
 
 ## Texture Override Settings
 

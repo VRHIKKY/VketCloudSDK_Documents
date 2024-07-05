@@ -1,11 +1,26 @@
 # SDK Manual Change Log - Ver 13.4
 
+## July 05 2024 Update
+
+## July 05 2024 - Added Pages
+
+- SDK Tools
+  - [Scene Preview (β)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/SDKTools/ScenePreview.html)
+
+## July 05 2024 - Edited Pages
+
+- World Editing Tips
+  - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldEditingTips/BuildOptions.html)
+    - Added description about VketCloudSDK > Build Option settings
+
+---
+
 ## June 28 2024 Update
 
 ## June 28 2024 - Added Pages
 
 - SDK Tools
-  - [Advanced Usage](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/en/GUITools/AdvancedUsage.html)
+  - [Advanced Usage](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/GUITools/AdvancedUsage.html)
 
 ## June 28 2024 - Edited Pages
 
