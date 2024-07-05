@@ -2,11 +2,18 @@
 
 ## July 05 2024 Update
 
+## July 05 2024 - Added Pages
+
+- SDK Tools
+  - [Scene Preview (β)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/SDKTools/ScenePreview.html)
+
 ## July 05 2024 - Edited Pages
 
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldEditingTips/BuildOptions.html)
     - Added description about VketCloudSDK > Build Option settings
+
+---
 
 ## June 28 2024 Update
 

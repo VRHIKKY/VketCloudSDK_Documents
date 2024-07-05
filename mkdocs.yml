@@ -126,6 +126,7 @@ plugins:
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
             VketCloudSDK Settings : VketCloudSDK設定
+            ScenePreview (β): シーンプレビュー (β)
             # GUITools 
             Overview & Setup: 概要とセットアップ
             How to Use: 基本実装
@@ -262,6 +263,7 @@ nav:
       - Overview & Setup: GUITools/Setup.md
       - How to Use: GUITools/HowToUse.md
       - Advanced Use: GUITools/AdvancedUse.md
+    - ScenePreview (β): SDKTools/ScenePreview.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md

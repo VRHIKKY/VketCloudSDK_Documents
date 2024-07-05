@@ -2,10 +2,17 @@
 
 ## 2024年7月05日更新
 
+## 2024年7月05日 - 追加されたページ
+
+- SDK Tools
+  - [シーンプレビュー (β)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/ScenePreview.html)
+
 ## 2024年7月05日 - 変更されたページ
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldEditingTips/BuildOptions.html)
     - VketCloudSDK > Build Optionの設定について説明を追加
+
+---
 
 ## 2024年6月28日更新
 
