@@ -1,11 +1,20 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月05日更新
+
+## 2024年7月05日 - 追加されたページ
+
+- SDK Tools
+  - [シーンプレビュー (β)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/ScenePreview.html)
+
+---
+
 ## 2024年6月28日更新
 
 ## 2024年6月28日 - 追加されたページ
 
 - SDK Tools
-  - [GUITools - 応用実装](https://vrhikky.github.io/VketCloudSDK_Documents/13.0/GUITools/AdvancedUsage.html)
+  - [GUITools - 応用実装](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/GUITools/AdvancedUsage.html)
 
 ## 2024年6月28日 - 変更されたページ
 
