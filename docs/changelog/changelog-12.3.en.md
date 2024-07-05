@@ -78,6 +78,8 @@
   - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldOptimization/TextureCompression.html)
     - Added overview of Texture Import Viewer
 - HEO Components
+  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOPlane.html)
+    - Updated the default value of the component
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOActivity.html)
     - Added info on Scene Preview and Advanced Settings
   - [HEOAreacollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOAreacollider.html)
