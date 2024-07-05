@@ -12,6 +12,7 @@
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldEditingTips/BuildOptions.html)
     - Added description about VketCloudSDK > Build Option settings
+    - Revised description about Texture Override Settings
 
 ---
 

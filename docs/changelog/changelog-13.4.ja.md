@@ -8,9 +8,11 @@
   - [シーンプレビュー (β)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/ScenePreview.html)
 
 ## 2024年7月05日 - 変更されたページ
-- World Editing Tips
-  - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldEditingTips/BuildOptions.html)
+
+- 編集のためのTips
+  - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldEditingTips/BuildOptions.html)
     - VketCloudSDK > Build Optionの設定について説明を追加
+    - テクスチャオーバーライド設定について解説を更新
 
 ---
 
