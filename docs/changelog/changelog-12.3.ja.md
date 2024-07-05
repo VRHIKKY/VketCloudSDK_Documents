@@ -68,6 +68,8 @@
     - Export Motion時に複数アニメーションを割り当てている際の意図しない挙動について注意点を追記
     - ヒエラルキー構造のオブジェクトのアニメーション再生について注意を追記
     - ボーンが含まれたアニメーションに対応していない旨の明記と解決策を追記
+  - [アバターファイル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/AvatarFile.html)
+    - ボーン名の例の表記を修正
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
