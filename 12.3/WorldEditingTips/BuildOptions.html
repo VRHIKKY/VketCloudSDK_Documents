@@ -1788,7 +1788,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      テクスチャオーバーライド設定
+      ビルドオプション設定
     </span>
   </a>
   
@@ -1797,7 +1797,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      モデル書き出し設定
+      テクスチャオーバーライド設定
     </span>
   </a>
   
@@ -1806,7 +1806,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      アバター書き出し設定
+      モデル書き出し設定
     </span>
   </a>
   
@@ -1814,6 +1814,15 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      アバター書き出し設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       パーティクル書き出し設定
     </span>
@@ -7901,7 +7910,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      テクスチャオーバーライド設定
+      ビルドオプション設定
     </span>
   </a>
   
@@ -7910,7 +7919,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      モデル書き出し設定
+      テクスチャオーバーライド設定
     </span>
   </a>
   
@@ -7919,7 +7928,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      アバター書き出し設定
+      モデル書き出し設定
     </span>
   </a>
   
@@ -7927,6 +7936,15 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      アバター書き出し設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       パーティクル書き出し設定
     </span>
@@ -7950,10 +7968,43 @@
 
 
 <h1 id="_1">ビルド時のオプション</h1>
-<p>ビルド設定において、制作者はビルド時にワールドを構成するファイルに対して様々な操作を行うことができます。</p>
-<p>ビルド設定を編集するには、VketCloudSDK &gt; Settingsより設定ウィンドウを開き、「Build」タブを選択します。</p>
+<p>ビルド設定において、制作者はビルド時にワールドを構成するファイルに対して様々な操作を行うことができます。
+以下２つの方法でビルド時の設定を変更できます。</p>
+<ol>
+<li>VketCloudSDK &gt; Build Optionより、簡易設定をオン/オフすることができます。</li>
+</ol>
+<p><img alt="BuildOptions_0" src="img/BuildOptions_0.jpg" /></p>
+<ol>
+<li>ビルドの詳細設定を編集するには、VketCloudSDK &gt; Settingsより設定ウィンドウを開き、「Build」タブを選択します。</li>
+</ol>
 <p><img alt="BuildOptions_1" src="img/BuildOptions_1.jpg" /></p>
-<h2 id="_2">テクスチャオーバーライド設定</h2>
+<h2 id="_2">ビルドオプション設定</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto Clear Cache</td>
+<td>false</td>
+<td>Build And Run前にreleaseフォルダを空にする処理を実行するかしないかを設定します。オンにした場合、BuildAndRun前にreleaseフォルダを空にする処理が実行されます。</td>
+</tr>
+<tr>
+<td>Fast Build Without UI</td>
+<td>false</td>
+<td>ビルド時にUIを表示せずにビルドを行うかどうかを設定します。オンにした場合、ビルド時にUIが表示されず、BuildAndRunが素早く実行されます。</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="BuildOptions_3" src="img/BuildOptions_3.jpg" /></p>
+<p>Fast Build Without UI がオフの場合、UIが表示される。</p>
+<p><img alt="BuildOptions_4" src="img/BuildOptions_4.jpg" /></p>
+<p>Fast Build Without UI がオンの場合、UIが表示されずに、高速にBuildAndRunが可能になる。</p>
+<h2 id="_3">テクスチャオーバーライド設定</h2>
 <table>
 <thead>
 <tr>
@@ -7973,7 +8024,7 @@
 <p>テクスチャのMaxSize(ビルド時に変換されるサイズ)はInspectorから指定が可能です。<br>
 これによって、どの程度圧縮がかけられるか設定が可能です。</p>
 <p><img alt="BuildOptions_2" src="img/BuildOptions_2.jpg" /></p>
-<h2 id="_3">モデル書き出し設定</h2>
+<h2 id="_4">モデル書き出し設定</h2>
 <table>
 <thead>
 <tr>
@@ -7990,7 +8041,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_4">アバター書き出し設定</h2>
+<h2 id="_5">アバター書き出し設定</h2>
 <table>
 <thead>
 <tr>
@@ -8007,7 +8058,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">パーティクル書き出し設定</h2>
+<h2 id="_6">パーティクル書き出し設定</h2>
 <table>
 <thead>
 <tr>
