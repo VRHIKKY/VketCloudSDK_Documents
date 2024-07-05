@@ -1287,6 +1287,8 @@
       
         
       
+        
+      
     
     
     
@@ -1732,6 +1734,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/ScenePreview.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    シーンプレビュー (β)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1927,7 +1950,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      テクスチャオーバーライド設定
+      ビルドオプション設定
     </span>
   </a>
   
@@ -1936,7 +1959,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      モデル書き出し設定
+      テクスチャオーバーライド設定
     </span>
   </a>
   
@@ -1945,7 +1968,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      アバター書き出し設定
+      モデル書き出し設定
     </span>
   </a>
   
@@ -1953,6 +1976,15 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      アバター書き出し設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       パーティクル書き出し設定
     </span>
@@ -8852,7 +8884,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      テクスチャオーバーライド設定
+      ビルドオプション設定
     </span>
   </a>
   
@@ -8861,7 +8893,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      モデル書き出し設定
+      テクスチャオーバーライド設定
     </span>
   </a>
   
@@ -8870,7 +8902,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      アバター書き出し設定
+      モデル書き出し設定
     </span>
   </a>
   
@@ -8878,6 +8910,15 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      アバター書き出し設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       パーティクル書き出し設定
     </span>
@@ -8901,10 +8942,17 @@
 
 
 <h1 id="_1">ビルド時のオプション</h1>
-<p>ビルド設定において、制作者はビルド時にワールドを構成するファイルに対して様々な操作を行うことができます。</p>
-<p>ビルド設定を編集するには、VketCloudSDK &gt; Settingsより設定ウィンドウを開き、「Build」タブを選択します。</p>
+<p>ビルド設定において、制作者はビルド時にワールドを構成するファイルに対して様々な操作を行うことができます。
+以下２つの方法でビルド時の設定を変更できます。</p>
+<ol>
+<li>VketCloudSDK &gt; Build Optionより、簡易設定をオン/オフすることができます。</li>
+</ol>
+<p><img alt="BuildOptions_0" src="img/BuildOptions_0.jpg" /></p>
+<ol>
+<li>ビルドの詳細設定を編集するには、VketCloudSDK &gt; Settingsより設定ウィンドウを開き、「Build」タブを選択します。</li>
+</ol>
 <p><img alt="BuildOptions_1" src="img/BuildOptions_1.jpg" /></p>
-<h2 id="_2">テクスチャオーバーライド設定</h2>
+<h2 id="_2">ビルドオプション設定</h2>
 <table>
 <thead>
 <tr>
@@ -8915,16 +8963,35 @@
 </thead>
 <tbody>
 <tr>
-<td>Set the texture size to a power of 2 during build</td>
-<td>true</td>
-<td>テクスチャのInspectorで指定したMaxSizeを基にファイルを変換します。</td>
+<td>Auto Clear Cache</td>
+<td>false</td>
+<td>Build And Run前にreleaseフォルダを空にする処理を実行するかしないかを設定します。オンにした場合、BuildAndRun前にreleaseフォルダを空にする処理が実行されます。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">テクスチャオーバーライド設定</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Convert texture size to Max size at build time</td>
+<td>false</td>
+<td>テクスチャのInspectorで指定したMaxSizeを基にファイルを変換します。<br> Ver13.4から変換方式が変わり、本設定が有効な際のビルド完了までの時間の削減とワールドのロード時間が短縮されました。</td>
 </tr>
 </tbody>
 </table>
 <p>テクスチャのMaxSize(ビルド時に変換されるサイズ)はInspectorから指定が可能です。<br>
-これによって、どの程度圧縮がかけられるか設定が可能です。</p>
+これによって、どの程度圧縮がかけられるか設定が可能です。<br>
+例として、MaxSizeを64に設定し、「Convert texture size to Max size at build time」をビルド時に有効にすることでロード時間の削減が期待されます。</p>
 <p><img alt="BuildOptions_2" src="img/BuildOptions_2.jpg" /></p>
-<h2 id="_3">モデル書き出し設定</h2>
+<h2 id="_4">モデル書き出し設定</h2>
 <table>
 <thead>
 <tr>
@@ -8941,7 +9008,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_4">アバター書き出し設定</h2>
+<h2 id="_5">アバター書き出し設定</h2>
 <table>
 <thead>
 <tr>
@@ -8958,7 +9025,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">パーティクル書き出し設定</h2>
+<h2 id="_6">パーティクル書き出し設定</h2>
 <table>
 <thead>
 <tr>
