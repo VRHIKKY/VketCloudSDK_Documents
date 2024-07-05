@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.4
 
+## July 05 2024 Update
+
+## July 05 2024 - Added Pages
+
+- SDK Tools
+  - [Scene Preview (β)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/ScenePreview.html)
+
+---
+
 ## June 28 2024 Update
 
 ## June 28 2024 - Added Pages
