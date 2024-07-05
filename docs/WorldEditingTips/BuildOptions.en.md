@@ -11,9 +11,12 @@ In build settings, creators can perform various operations on the files that mak
    ![BuildOptions_1](img/BuildOptions_1.jpg)
 
 ## Build Option Settings
+
 | Name | Default Value | Function |
 | ---- | ------------- | -------- |
 | Auto Clear Cache | false | Sets whether to clear the release folder before Build And Run. When enabled, the release folder is cleared before Build And Run. |
+
+---
 
 ## Texture Override Settings
 

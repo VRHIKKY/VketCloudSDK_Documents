@@ -12,10 +12,12 @@
 ![BuildOptions_1](img/BuildOptions_1.jpg)
 
 ## ビルドオプション設定
+
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Auto Clear Cache | false | Build And Run前にreleaseフォルダを空にする処理を実行するかしないかを設定します。オンにした場合、BuildAndRun前にreleaseフォルダを空にする処理が実行されます。 |
 
+---
 
 ## テクスチャオーバーライド設定
 
