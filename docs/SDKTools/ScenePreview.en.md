@@ -1,41 +1,41 @@
-# シーンプレビュー (β)
+# Scene Preview (β)
 
 ![ScenePreview_2](./img/ScenePreview_2.jpg)
 
-SDK Ver13.4では、従来の[Build & Run](../FirstStep/BuildAndRun.md)によるワールドの確認のほかに新たにUnity上でのシーンプレビューに対応しました。<br>
-本機能によって、ビルドを行うことなく簡易的にワールド上でのプレイヤーの挙動を確認することができます。
+On SDK Ver13.4, scene preview on Unity has been added as an easier alternative for [Build & Run](../FirstStep/BuildAndRun.md) world check. <br>
+Using this feature, world creators can quickly check world & player actions without build.
 
-!!! caution "β機能について"
-    本機能は現在β版であり、未実装の機能や挙動が含まれております。<br>
-    次回以降のSDKバージョンにおいて機能が追加される予定です。
+!!! caution "About β feature"
+    This feature is currently a beta feature, which includes functions currently not fully implemented.<br>
+    These features are planned to be implemented in future SDK versions.
 
-## 使い方
+## How to Use
 
 ![ScenePreview_1](./img/ScenePreview_1.jpg)
 
-シーンを保存した状態で、Unity上部のPlayボタン (▶)を押します。
+After saving your scene, press the Play button (▶) on top of the Unity editor.
 
 ![ScenePreview_2](./img/ScenePreview_2.jpg)
 
-Gameウィンドウに[AvatarSettings](../VketCloudSettings/AvatarSettings.md)にて設定されているデフォルト(0番目)のプレイヤーアバターが表示されます。<br>
-通常のワールド内と同様に、WASDキーでプレイヤーの移動、スペースキーでジャンプ、マウスドラッグでカメラ移動が可能です。
+On the Game window, the default player avatar set in [AvatarSettings](../VketCloudSettings/AvatarSettings.md) (No.0) will spawn.<br>
+As like usually built worlds, the player can be moved by WASD keys, jump by space key, and move camera by mouse dragging.
 
-## 注意事項
+## Notes
 
-現バージョンでは、以下コンポーネントが含まれているオブジェクトはシーンプレビューにて表示・再生されません。
+In the current version, objects with the components below cannot be displayed / function in the scene preview.
 
 ### VKCSettings
 
 - [BasicSettings](../VketCloudSettings/BasicSettings.md)
-  - ブラウザでのみ確認可能な設定：
+  - Features available only on browser:
     - Gamepad Mode
     - Use Avatar Click
     - Occlusion Culling
     - Physics Engine
-  - マルチプレイ関連の設定：
+  - Multiplayer features
     - Voice Attenuation
-    - テキストチャット
-    - アバターの変更
+    - Text chat
+    - Change avatar
 
 - [MyAvatarSettings](../VketCloudSettings/MyAvatarSettings.md)
   - Motion
@@ -43,7 +43,7 @@ Gameウィンドウに[AvatarSettings](../VketCloudSettings/AvatarSettings.md)�
   - Objects
 
 - [CameraSettings](../VketCloudSettings/CameraSettings.md)
-  - カメラズームに関する設定 (TPS Max Distance / Max Pitch Angle)
+  - Settings related to camera zoom (TPS Max Distance / Max Pitch Angle)
 
 ### Attribute
 
@@ -63,9 +63,9 @@ Gameウィンドウに[AvatarSettings](../VketCloudSettings/AvatarSettings.md)�
 - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
 - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
 
-### その他
+### Other components
 
 - SkinnedMeshRenderer
 
-また、HeliScript, [VKCNodeVideoTrigger](../VKCComponents/VKCNodeVideoTrigger.md), [VKCAttributeActionTrigger](../VKCComponents/VKCAttributeActionTrigger.md), [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)などのギミックはUnity上のシーンプレビューでは動作しません。<br>
-これらの挙動をチェックしたい場合は、ワールドの[Build & Run](../FirstStep/BuildAndRun.md)を行ってください。
+Also, gimmick related components such as HeliScript, [VKCNodeVideoTrigger](../VKCComponents/VKCNodeVideoTrigger.md), [VKCAttributeActionTrigger](../VKCComponents/VKCAttributeActionTrigger.md), and [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md) will not operate on Unity scene preview.<br>
+To check these functions, please use [Build & Run](../FirstStep/BuildAndRun.md).

@@ -5,7 +5,7 @@
 ## July 05 2024 - Added Pages
 
 - SDK Tools
-  - [Scene Preview (β)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/ScenePreview.html) *English Version WIP
+  - [Scene Preview (β)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/ScenePreview.html)
 
 ---
 
