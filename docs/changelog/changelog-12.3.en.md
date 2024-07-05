@@ -17,6 +17,7 @@
 - World Editing Tips
   - [Quick Menu for adding Vket Cloud objects](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/QuickMenu.html)
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/BuildOptions.html)
+    - Added description about VketCloudSDK > Build Option settings
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/TextureImportViewer.html)
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
