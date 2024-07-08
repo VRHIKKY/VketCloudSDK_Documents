@@ -11,8 +11,8 @@ VKCNodeAlphaAnimationコンポーネントでは、この透過および透過�
 
 !!! caution "透過が適用されるオブジェクトについて"
     透過が設定できるオブジェクトはVKCItemFieldのNodeにできるオブジェクトのみです。<br>
-    これ以外のオブジェクト(例：[右クリックメニューから生成できるオブジェクト](../../WorldEditingTips/QuickMenu.md))には透過は適用されないため、ご注意ください。<br>
-    Nodeについての詳細は[HeliScript概要 / Node](../../hs/hs_overview.md#node)をご覧ください。
+    これ以外のオブジェクト(例：[右クリックメニューから生成できるオブジェクト](../WorldEditingTips/QuickMenu.md))には透過は適用されないため、ご注意ください。<br>
+    Nodeについての詳細は[HeliScript概要 / Node](../hs/hs_overview.md#node)をご覧ください。
 
 ## 使い方
 

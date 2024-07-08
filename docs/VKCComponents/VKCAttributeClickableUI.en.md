@@ -1,12 +1,12 @@
-# VKCAttributeClickableUI
+# VKC Attribute Clickable UI
 
 ![VKCAttributeClickableUI_01](img/VKCAttributeClickableUI_01.jpg)
 
 VKCAttributeClickableUI component contains a feature to setup a guide UI indicating a "clickable" object in the world.<br>
 
-!!! note "About VKCAttributeClickGuide (old: HEOClickGuide)"
-    This component is intended to simplify and generalize the VKCAttributeClickGuide (old: HEOClickGuide) component.<br>
-    As VKCAttributeClickGuide is scheduled to be deprecated in future versions, please use this component instead.
+!!! note "About VKC Attribute Click Guide (old: HEOClickGuide)"
+    This component is intended to simplify and generalize the VKC Attribute Click Guide (old: HEOClickGuide) component.<br>
+    As VKC Attribute Click Guide is scheduled to be deprecated in future versions, please use this component instead.
 
 ## Basic Settings
 
@@ -44,8 +44,8 @@ VKCAttributeClickableUI component contains a feature to setup a guide UI indicat
 
 ## How to Use
 
-1. Attach VKCAttributeClickableUI component to an empty GameObject.<br>
-    When component is attached, [VKCNodeCollider](../../HEOComponents/HEOCollider.md), BoxCollider, and [VKCItemAreaCollider](../../HEOComponents/HEOAreacollider.md) will be attached automatically as well.
+1. Attach VKC Attribute Clickable UI component to an empty GameObject.<br>
+    When component is attached, [VKC Node Collider](../VKCComponents/VKCNodeCollider.md), BoxCollider, and [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) will be attached automatically as well.
 
     ![VKCAttributeClickableUI_03](img/VKCAttributeClickableUI_03.jpg)
 
@@ -54,8 +54,8 @@ VKCAttributeClickableUI component contains a feature to setup a guide UI indicat
 
     ![VKCAttributeClickableUI_04](img/VKCAttributeClickableUI_04.jpg)
 
-1. Designate the object to be clicked on [VKCItemAreaCollider](../../HEOComponents/HEOAreacollider.md)'s OnEnter / OnExit, which can be used to control the object's clickable status.<br>
-    For example, the Sphere object is controlled in the areacollider using [Enable / DisableClickableNode](../../Actions/Node/EnableDisableClickableNode.ja.md) actions.
+1. Designate the object to be clicked on [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)'s OnEnter / OnExit, which can be used to control the object's clickable status.<br>
+    For example, the Sphere object is controlled in the areacollider using [Enable / DisableClickableNode](../Actions/Node/EnableDisableClickableNode.md) actions.
 
     ![VKCAttributeClickableUI_05](img/VKCAttributeClickableUI_05.jpg)
 
@@ -78,4 +78,4 @@ VKCAttributeClickableUI component contains a feature to setup a guide UI indicat
 
 !!! tip "Implementing complex animations"
     The Animation mode is intended to be used for frame-by-frame animations.<br>
-    If complex animations and effects is needed, further implementation can be done by following setup instructions on [How to Animate Objects / How to add animation to HEOObject](../../WorldMakingGuide/PropAnimation.md#how-to-add-animation-to-heoobject), and setup connection between [VKCItemObject](../../HEOComponents/HEOObject.md) and [VKCItemAreaCollider](../../HEOComponents/HEOAreacollider.md).
+    If complex animations and effects is needed, further implementation can be done by following setup instructions on [How to Animate Objects / How to add animation to VKC Item Object](../WorldMakingGuide/PropAnimation.md#how-to-add-animation-to-heoobject), and setup connection between [VKC Item Object](../VKCComponents/VKCItemObject.md) and [VKC Item AreaCollider](../VKCComponents/VKCItemAreaCollider.md).

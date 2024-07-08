@@ -1,12 +1,12 @@
-# VKCAttributeClickableUI
+# VKC Attribute Clickable UI
 
 ![VKCAttributeClickableUI_01](img/VKCAttributeClickableUI_01.jpg)
 
 VKCAttributeClickableUIコンポーネントは、ワールド内のオブジェクトが「クリックできる」状態を強調するためのガイドUIを設定するためのコンポーネントです。
 
-!!! note "VKCAttributeClickGuide (旧：HEOClickGuide)について"
-    本コンポーネントはVKCAttributeClickGuide (旧：HEOClickGuide)の一般化を意図したコンポーネントです。<br>
-    今後のアップデートでVKCAttributeClickGuideは徐々に廃止される予定であるため、基本的には本コンポーネントをお使いください。
+!!! note "VKC Attribute Click Guide (旧：HEOClickGuide)について"
+    本コンポーネントはVKC Attribute Click Guide (旧：HEOClickGuide)の一般化を意図したコンポーネントです。<br>
+    今後のアップデートでVKC Attribute Click Guideは徐々に廃止される予定であるため、基本的には本コンポーネントをお使いください。
 
 ## 基本設定
 
@@ -44,8 +44,8 @@ VKCAttributeClickableUIコンポーネントは、ワールド内のオブジェ
 
 ## 使い方
 
-1. 空のゲームオブジェクトにVKCAttributeClickableUIコンポーネントをアタッチします。<br>
-    このとき、[VKCNodeCollider](../../HEOComponents/HEOCollider.md)、BoxCollider、[VKCItemAreaCollider](../../HEOComponents/HEOAreacollider.md)が必ずアタッチされます。
+1. 空のゲームオブジェクトにVKC Attribute Clickable UIコンポーネントをアタッチします。<br>
+    このとき、[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)、BoxCollider、[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)が必ずアタッチされます。
 
     ![VKCAttributeClickableUI_03](img/VKCAttributeClickableUI_03.jpg)
 
@@ -54,8 +54,8 @@ VKCAttributeClickableUIコンポーネントは、ワールド内のオブジェ
 
     ![VKCAttributeClickableUI_04](img/VKCAttributeClickableUI_04.jpg)
 
-1. クリックの対象であるオブジェクトをVKCItemAreaCollider OnEnter / OnExitにて指定し、クリック可能と不可能を切り替えることができます。<br>
-    ここでは一例として、Sphereオブジェクトを[Enable / DisableClickableNode](../../Actions/Node/EnableDisableClickableNode.ja.md)アクションを使用してクリック可能と不可能を切り替えます。
+1. クリックの対象であるオブジェクトをVKC Item Area Collider OnEnter / OnExitにて指定し、クリック可能と不可能を切り替えることができます。<br>
+    ここでは一例として、Sphereオブジェクトを[Enable / DisableClickableNode](../Actions/Node/EnableDisableClickableNode.ja.md)アクションを使用してクリック可能と不可能を切り替えます。
 
     ![VKCAttributeClickableUI_05](img/VKCAttributeClickableUI_05.jpg)
 
@@ -78,4 +78,4 @@ VKCAttributeClickableUIコンポーネントは、ワールド内のオブジェ
 
 !!! tip "複雑なアニメーションの実装について"
     Animationモードではコマ送りによるアニメーションの設定を主な用途として想定しています。<br>
-    より複雑なアニメーション・演出を再生したい場合は、一例として[オブジェクトをアニメーションさせる / HEOObjectにアニメーションを付与する方法](../../WorldMakingGuide/PropAnimation.md#heoobject)を参考にアニメーションを設定し、[VKCItemObject](../../HEOComponents/HEOObject.md)と[VKCItemAreaCollider](../../HEOComponents/HEOAreacollider.md)の連携の実装が考えられます。
+    より複雑なアニメーション・演出を再生したい場合は、一例として[オブジェクトをアニメーションさせる / VKC Item Objectにアニメーションを付与する方法](../WorldMakingGuide/PropAnimation.md#heoobject)を参考にアニメーションを設定し、[VKC Item Object](../VKCComponents/VKCItemObject.md)と[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)の連携の実装が考えられます。
