@@ -1,5 +1,5 @@
 
-# SetVar
+# Set Var
 ![SetVar](img/SetVar.jpg)
 
 SetVar lets the World hold a variable, and enters an integer there.

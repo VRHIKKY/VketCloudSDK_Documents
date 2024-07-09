@@ -8,7 +8,7 @@ The variable defined at [SetVar](SetVar.md) is applicable.
 
 Addition to the variable can be done by using [AddVar](AddVar.md).
 
-| Label | function |
+| Label | Function |
 | ---- | ---- |
 | Variable | Specify the variable name being compared. |
 | Value | Set the comparing integer value. |
