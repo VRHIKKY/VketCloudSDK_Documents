@@ -153,49 +153,49 @@ plugins:
             Random: ランダム
             Wait: 待機
             Operation: 演算
-            AddVar: 変数の加算
-            If Variable Equal To Value: 変数が指定値と等しい場合
-            If Variable Less Than Value: 変数が指定値より小さい場合
-            If Variable More Than Value: 変数が指定値より大きい場合3
-            If Variable Not Equal To Value: 変数が指定値と等しくない場合
-            SetVar: 変数の設定
+            Add Var: 値の追加
+            If Variable Equal To Value: 変数が値に等しい場合
+            If Variable Less Than Value: 変数が値より小さい場合
+            If Variable More Than Value: 変数が値より大きい場合
+            If Variable Not Equal To Value: 変数が値に等しくない場合
+            Set Var: 値の設定
             Item: アイテム
-            Show/HideItem: アイテムの表示/非表示
-            Play/StopItem: アイテムの再生/停止
+            Show/Hide Item: アイテム表示/非表示
+            Play/Stop Item: アイテム再生/停止
             Node: ノード
-            Show/HideNode: ノードの表示/非表示
-            Enable/DisableClickableNode: クリッカブルノードの有効化/無効化
-            Enable/DisableCollider: コライダーの有効化/無効化
-            Enable/DisableNode: ノードの有効化/無効化
+            Show/Hide Node: ノード表示/非表示
+            Enable/Disable Clickable Node: クリック可能ノード有効化/無効化
+            Enable/Disable Collider: コライダー有効化/無効化
+            Enable/Disable Node: ノード有効化/無効化
             Object: オブジェクト
-            Show/HideObject: オブジェクトの表示/非表示
-            Play/StopObject: オブジェクトの再生/停止
+            Show/Hide Object: オブジェクト表示/非表示
+            Play/Stop Object: オブジェクト再生/停止
             Fade: フェード
-            FadeOut/In: フェードアウト/イン
-            WhiteOut/In: ホワイトアウト/イン
+            Fade Out/In: フェードアウト/イン
+            White Out/In: ホワイトアウト/イン
             Transform: トランスフォーム
-            MoveTo: 移動
-            SetPosRelativePlayer: プレイヤーに対して相対位置設定
+            Move To: 移動
+            Set Pos Relative Player: プレイヤー相対位置に設定
             Warp: ワープ
             Motion/Emotion: モーション/エモーション
             Emote: エモート
             Motion: モーション
-            NextMotion: 次のモーション
+            Next Motion: 次のモーション
             HeliScript: HeliScript
-            CallScript: スクリプトの呼び出し
+            Call Script: HeliScriptを呼び出す
             Physics: 物理
-            AddVelocity: 速度の追加
-            Add / ClearForce: 力の追加/クリア
-            SetPhysicsEnable: 物理の有効化/無効化
-            SetPosition / Rotation: 位置/回転の設定
-            WindowState: ウィンドウ状態
-            VoiceChat: ボイスチャット
-            Enter/LeaveVoiceGroup: ボイスグループへの参加/退出
-            Web: Web
-            OpenWeb: Webを開く
+            Add Velocity: 速度を追加
+            Add/Clear Force: 力を追加/削除
+            Set Physics Enable: 物理有効化/無効化
+            Set Position/Rotation: 位置/回転を設定
+            Window State: ウィンドウ状態
+            Voice Chat: ボイスチャット
+            Enter/Leave Voice Group: 音声グループに参加/退出
+            Web: ウェブ
+            Open Links in New Tab: 新しいタブでWEBページを開く
             Others: その他
-            SetCookieText: Cookieテキストの設定
-            StopVideo: 動画の停止
+            Set Cookie Text: クッキーテキストの設定
+            Stop Video: ビデオ停止
             # HeliScript
             HeliScript - Overview: HeliScript概要
             Statements and flow control: 文法と制御構文
@@ -213,12 +213,12 @@ plugins:
             Components / Callback functions: コンポーネント / コールバック関数
             Item Types and VKCComponents: Itemの種類 / VKCComponentとの対応一覧
             Built-in Classes And Functions: 組み込みクラス・関数
-            Vector3: Vector3クラス
-            Quaternion: Quaternionクラス
-            Matrix: Matrixクラス
-            Item: Itemクラス
-            Player: Playerクラス
-            Date: Dateクラス
+            Vector3 Class: Vector3クラス
+            Quaternion Class: Quaternionクラス
+            Matrix Class: Matrixクラス
+            Item Class: Itemクラス
+            Player Class: Playerクラス
+            Date Class: Dateクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -381,48 +381,48 @@ nav:
       - Random: Actions/Basics/Random.md
       - Wait: Actions/Basics/Wait.md
     - Operation:
-      - AddVar: Actions/Operation/AddVar.md
+      - Add Var: Actions/Operation/AddVar.md
       - If Variable Equal To Value: Actions/Operation/IfEqual.md
       - If Variable Less Than Value: Actions/Operation/IfLessThan.md
       - If Variable More Than Value: Actions/Operation/IfMoreThan.md
       - If Variable Not Equal To Value: Actions/Operation/IfNotEqual.md
-      - SetVar: Actions/Operation/SetVar.md
+      - Set Var: Actions/Operation/SetVar.md
     - Item:
-      - Show/HideItem: Actions/Item/ShowHideItem.md
-      - Play/StopItem: Actions/Item/PlayStopItem.md
+      - Show/Hide Item: Actions/Item/ShowHideItem.md
+      - Play/Stop Item: Actions/Item/PlayStopItem.md
     - Node:
-      - Show/HideNode: Actions/Node/ShowHideNode.md
-      - Enable/DisableClickableNode: Actions/Node/EnableDisableClickableNode.md
-      - Enable/DisableCollider: Actions/Node/EnableDisableCollider.md
-      - Enable/DisableNode: Actions/Node/EnableDisableNode.md
+      - Show/Hide Node: Actions/Node/ShowHideNode.md
+      - Enable/Disable Clickable Node: Actions/Node/EnableDisableClickableNode.md
+      - Enable/Disable Collider: Actions/Node/EnableDisableCollider.md
+      - Enable/Disable Node: Actions/Node/EnableDisableNode.md
     - Object:
-      - Show/HideObject: Actions/Object/ShowHideObject.md
-      - Play/StopObject: Actions/Object/PlayStopObject.md
+      - Show/Hide Object: Actions/Object/ShowHideObject.md
+      - Play/Stop Object: Actions/Object/PlayStopObject.md
     - Fade:
-      - FadeOut/In: Actions/Fade/FadeOutIn.md
-      - WhiteOut/In: Actions/Fade/WhiteOutIn.md
+      - Fade Out/In: Actions/Fade/FadeOutIn.md
+      - White Out/In: Actions/Fade/WhiteOutIn.md
     - Transform:
-      - MoveTo: Actions/Transform/MoveTo.md
-      - SetPosRelativePlayer: Actions/Transform/SetPosRelativePlayer.md
+      - Move To: Actions/Transform/MoveTo.md
+      - Set Pos Relative Player: Actions/Transform/SetPosRelativePlayer.md
       - Warp: Actions/Transform/Warp.md
     - Motion/Emotion:
       - Emote: Actions/Motion/Emote.md
       - Motion: Actions/Motion/Motion.md
-      - NextMotion: Actions/Motion//NextMotion.md
+      - Next Motion: Actions/Motion//NextMotion.md
     - HeliScript:
-      - CallScript: Actions/HeliScript/CallScript.md
+      - Call Script: Actions/HeliScript/CallScript.md
     - Physics:
-      - AddVelocity: Actions/PhysicsEngine/PhysicsAddVelocity.md
-      - Add / ClearForce: Actions/PhysicsEngine/PhysicsClearAddForce.md
-      - SetPhysicsEnable: Actions/PhysicsEngine/PhysicsSetEnable.md
-      - SetPosition / Rotation: Actions/PhysicsEngine/PhysicsSetPosRot.md
-    - VoiceChat:
-      - Enter/LeaveVoiceGroup: Actions/VoiceChat/EnterLeaveVoiceGroup.md
+      - Add Velocity: Actions/PhysicsEngine/PhysicsAddVelocity.md
+      - Add/Clear Force: Actions/PhysicsEngine/PhysicsClearAddForce.md
+      - Set Physics Enable: Actions/PhysicsEngine/PhysicsSetEnable.md
+      - Set Position/Rotation: Actions/PhysicsEngine/PhysicsSetPosRot.md
+    - Voice Chat:
+      - Enter/Leave Voice Group: Actions/VoiceChat/EnterLeaveVoiceGroup.md
     - Web:
-      - OpenWeb: Actions/Web/Openweb.md
+      - Open Links in New Tab: Actions/Web/Openweb.md
     - Others:
-      - SetCookieText: Actions/Others/SetCookieText.md
-      - StopVideo: Actions/Others/StopVideo.md
+      - Set Cookie Text: Actions/Others/SetCookieText.md
+      - Stop Video: Actions/Others/StopVideo.md
 - HeliScript:
     - HeliScript - Overview: hs/hs_overview.md
     - Built-in Types:
@@ -434,12 +434,12 @@ nav:
     - Components / Callback functions: hs/hs_component.md
     - Item Types and VKCComponents: hs/hs_item_types_functions.md
     - Built-in Classes And Functions:
-        - Vector3: hs/hs_struct_vector3.md
-        - Quaternion: hs/hs_struct_quaternion.md
-        - Matrix: hs/hs_struct_matrix.md
-        - Item: hs/hs_class_item.md
-        - Player: hs/hs_class_player.md
-        - Date: hs/hs_class_date.md
+        - Vector3 Class: hs/hs_struct_vector3.md
+        - Quaternion Class: hs/hs_struct_quaternion.md
+        - Matrix Class: hs/hs_struct_matrix.md
+        - Item Class: hs/hs_class_item.md
+        - Player Class: hs/hs_class_player.md
+        - Date Class: hs/hs_class_date.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md
