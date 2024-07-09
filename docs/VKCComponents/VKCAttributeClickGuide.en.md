@@ -26,7 +26,7 @@ By modifying `clickArea` using [Enable/DisableClickableNode](../Actions/Node/Ena
 ![HEOClickGuide_5](./img/HEOClickGuide_5.jpg)
 
 For example, a clickable webpage gimmick syncronized with the click guide can be implemented. <br>
-This gimmick uses [OpenWeb](../Actions/System/Openweb.md) and a `Clickable` [VKC Node Collider](./VKCNodeCollider.md) set to the original object.
+This gimmick uses [OpenWeb](../Actions/Web/Openweb.md) and a `Clickable` [VKC Node Collider](./VKCNodeCollider.md) set to the original object.
 
 ![HEOClickGuide_6](./img/HEOClickGuide_6.jpg)
 

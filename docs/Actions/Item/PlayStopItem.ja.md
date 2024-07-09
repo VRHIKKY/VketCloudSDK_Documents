@@ -14,7 +14,7 @@ Targetに指定できるオブジェクトは、
 
 を持つシーン上のオブジェクトです。
 
-※アバターアニメーションの再生については[Motion](../Avatar/Motion.md)をご参照ください。
+※アバターアニメーションの再生については[Motion](../Motion/Motion.md)をご参照ください。
 
 [VKC Item Object](../../VKCComponents/VKCItemObject.md)を指定した場合のみ、Indexを追加で設定することができます。<br>
 その場合、設定したIndex番号のモーションが再生されます。

@@ -70,7 +70,7 @@ component EventCameraTest
 
 これを実装したシーンが下記のようになります。<br>
 イベントカメラが有効となっている時、ワールドの中心を軸として回転するカメラワークとなります。<br>
-以下の画像ではSphereに[CallScript](../Actions/Programmatic/CallScript.md)を入れており、クリックするたびカメラが切り替わるように実装されています。
+以下の画像ではSphereに[CallScript](../Actions/HeliScript/CallScript.md)を入れており、クリックするたびカメラが切り替わるように実装されています。
 
 ![HEOCamera_4](img/HEOCamera_4.jpg)
 

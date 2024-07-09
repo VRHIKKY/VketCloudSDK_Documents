@@ -25,7 +25,7 @@
 
 ![HEOClickGuide_5](./img/HEOClickGuide_5.jpg)
 
-生成元のオブジェクトでは、例として[OpenWeb](../Actions/System/Openweb.md)及び[VKC Node Collider](./VKCNodeCollider.md)にて`Clickable`を設定することで、クリックガイドが表示されている際にのみウェブページを開くギミックが実装できます。
+生成元のオブジェクトでは、例として[OpenWeb](../Actions/Web/Openweb.md)及び[VKC Node Collider](./VKCNodeCollider.md)にて`Clickable`を設定することで、クリックガイドが表示されている際にのみウェブページを開くギミックが実装できます。
 
 ![HEOClickGuide_6](./img/HEOClickGuide_6.jpg)
 

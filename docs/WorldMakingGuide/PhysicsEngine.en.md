@@ -40,10 +40,10 @@ While each property is explained below, basically enabling  `Use Physics Engine`
 For how to use the ActionTrigger, refer to the following pages:
 
 - [ActionsOverview](../Actions/ActionsOverview.md)
-  - [PhysicsAddVelocity](../Actions/Physics/PhysicsAddVelocity.md)
-  - [PhysicsClearAddForce](../Actions/Physics/PhysicsClearAddForce.md)
-  - [PhysicsSetEnable](../Actions/Physics/PhysicsSetEnable.md)
-  - [PhyscsSetPosRot](../Actions/Physics/PhysicsSetPosRot.md)
+  - [PhysicsAddVelocity](../Actions/PhysicsEngine/PhysicsAddVelocity.md)
+  - [PhysicsClearAddForce](../Actions/PhysicsEngine/PhysicsClearAddForce.md)
+  - [PhysicsSetEnable](../Actions/PhysicsEngine/PhysicsSetEnable.md)
+  - [PhyscsSetPosRot](../Actions/PhysicsEngine/PhysicsSetPosRot.md)
 
 Also, for usage of physics and colliders on HeliScript, refer to the following pages:
 
