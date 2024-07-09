@@ -149,6 +149,53 @@ plugins:
             # アクション
             Actions: アクションについて
             Actions Overview: アクションの概要
+            Basics: 基本
+            Random: ランダム
+            Wait: 待機
+            Operation: 演算
+            AddVar: 変数の加算
+            If Variable Equal To Value: 変数が指定値と等しい場合
+            If Variable Less Than Value: 変数が指定値より小さい場合
+            If Variable More Than Value: 変数が指定値より大きい場合3
+            If Variable Not Equal To Value: 変数が指定値と等しくない場合
+            SetVar: 変数の設定
+            Item: アイテム
+            Show/HideItem: アイテムの表示/非表示
+            Play/StopItem: アイテムの再生/停止
+            Node: ノード
+            Show/HideNode: ノードの表示/非表示
+            Enable/DisableClickableNode: クリッカブルノードの有効化/無効化
+            Enable/DisableCollider: コライダーの有効化/無効化
+            Enable/DisableNode: ノードの有効化/無効化
+            Object: オブジェクト
+            Show/HideObject: オブジェクトの表示/非表示
+            Play/StopObject: オブジェクトの再生/停止
+            Fade: フェード
+            FadeOut/In: フェードアウト/イン
+            WhiteOut/In: ホワイトアウト/イン
+            Transform: トランスフォーム
+            MoveTo: 移動
+            SetPosRelativePlayer: プレイヤーに対して相対位置設定
+            Warp: ワープ
+            Motion/Emotion: モーション/エモーション
+            Emote: エモート
+            Motion: モーション
+            NextMotion: 次のモーション
+            HeliScript: HeliScript
+            CallScript: スクリプトの呼び出し
+            Physics: 物理
+            AddVelocity: 速度の追加
+            Add / ClearForce: 力の追加/クリア
+            SetPhysicsEnable: 物理の有効化/無効化
+            SetPosition / Rotation: 位置/回転の設定
+            WindowState: ウィンドウ状態
+            VoiceChat: ボイスチャット
+            Enter/LeaveVoiceGroup: ボイスグループへの参加/退出
+            Web: Web
+            OpenWeb: Webを開く
+            Others: その他
+            SetCookieText: Cookieテキストの設定
+            StopVideo: 動画の停止
             # HeliScript
             HeliScript - Overview: HeliScript概要
             Statements and flow control: 文法と制御構文
@@ -330,45 +377,52 @@ nav:
 - Actions: 
     #- ActionNodeGraph: Actions/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Actions/ActionsOverview.md
-    - System:
-      - Openweb: Actions/System/Openweb.md
-      - StopVideo: Actions/System/StopVideo.md
-      - Wait: Actions/System/Wait.md
-      - Warp: Actions/System/Warp.md
-      - Enter/LeaveVoiceGroup: Actions/System/EnterLeaveVoiceGroup.md
-      - WhiteOut/In: Actions/System/WhiteOutIn.md
-      - FadeOut/In: Actions/System/FadeOutIn.md
+    - Basics:
+      - Random: Actions/Basics/Random.md
+      - Wait: Actions/Basics/Wait.md
+    - Operation:
+      - AddVar: Actions/Operation/AddVar.md
+      - If Variable Equal To Value: Actions/Operation/IfEqual.md
+      - If Variable Less Than Value: Actions/Operation/IfLessThan.md
+      - If Variable More Than Value: Actions/Operation/IfMoreThan.md
+      - If Variable Not Equal To Value: Actions/Operation/IfNotEqual.md
+      - SetVar: Actions/Operation/SetVar.md
+    - Item:
+      - Show/HideItem: Actions/Item/ShowHideItem.md
+      - Play/StopItem: Actions/Item/PlayStopItem.md
     - Node:
       - Show/HideNode: Actions/Node/ShowHideNode.md
       - Enable/DisableClickableNode: Actions/Node/EnableDisableClickableNode.md
       - Enable/DisableCollider: Actions/Node/EnableDisableCollider.md
       - Enable/DisableNode: Actions/Node/EnableDisableNode.md
-    - Item:
-      - Play/StopItem: Actions/Item/PlayStopItem.md
-      - Show/HideItem: Actions/Item/ShowHideItem.md
-      - SetPosRelativePlayer: Actions/Item/SetPosRelativePlayer.md
-      - MoveTo: Actions/Item/MoveTo.md
-    - Avatar:
-      - Play/StopObject: Actions/Avatar/PlayStopObject.md
-      - Show/HideObject: Actions/Avatar/ShowHideObject.md
-      - Emote: Actions/Avatar/Emote.md
-      - Motion: Actions/Avatar/Motion.md
-      - NextMotion: Actions/Avatar//NextMotion.md
+    - Object:
+      - Show/HideObject: Actions/Object/ShowHideObject.md
+      - Play/StopObject: Actions/Object/PlayStopObject.md
+    - Fade:
+      - FadeOut/In: Actions/Fade/FadeOutIn.md
+      - WhiteOut/In: Actions/Fade/WhiteOutIn.md
+    - Transform:
+      - MoveTo: Actions/Transform/MoveTo.md
+      - SetPosRelativePlayer: Actions/Transform/SetPosRelativePlayer.md
+      - Warp: Actions/Transform/Warp.md
+    - Motion/Emotion:
+      - Emote: Actions/Motion/Emote.md
+      - Motion: Actions/Motion/Motion.md
+      - NextMotion: Actions/Motion//NextMotion.md
+    - HeliScript:
+      - CallScript: Actions/HeliScript/CallScript.md
     - Physics:
-      - AddVelocity: Actions/Physics/PhysicsAddVelocity.md
-      - Add / ClearForce: Actions/Physics/PhysicsClearAddForce.md
-      - SetPhysicsEnable: Actions/Physics/PhysicsSetEnable.md
-      - SetPosition / Rotation: Actions/Physics/PhysicsSetPosRot.md
-    - Programmatic:
-      - AddVar: Actions/Programmatic/AddVar.md
-      - SetVar: Actions/Programmatic/SetVar.md
-      - If Variable Equal To Value: Actions/Programmatic/IfEqual.md
-      - If Variable Not Equal To Value: Actions/Programmatic/IfNotEqual.md
-      - If Variable More Than Value: Actions/Programmatic/IfMoreThan.md
-      - If Variable Less Than Value: Actions/Programmatic/IfLessThan.md
-      - Random: Actions/Programmatic/Random.md
-      - SetCookieText: Actions/Programmatic/SetCookieText.md
-      - CallScript: Actions/Programmatic/CallScript.md
+      - AddVelocity: Actions/PhysicsEngine/PhysicsAddVelocity.md
+      - Add / ClearForce: Actions/PhysicsEngine/PhysicsClearAddForce.md
+      - SetPhysicsEnable: Actions/PhysicsEngine/PhysicsSetEnable.md
+      - SetPosition / Rotation: Actions/PhysicsEngine/PhysicsSetPosRot.md
+    - VoiceChat:
+      - Enter/LeaveVoiceGroup: Actions/VoiceChat/EnterLeaveVoiceGroup.md
+    - Web:
+      - OpenWeb: Actions/Web/Openweb.md
+    - Others:
+      - SetCookieText: Actions/Others/SetCookieText.md
+      - StopVideo: Actions/Others/StopVideo.md
 - HeliScript:
     - HeliScript - Overview: hs/hs_overview.md
     - Built-in Types:
