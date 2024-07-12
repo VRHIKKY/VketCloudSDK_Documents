@@ -11,12 +11,13 @@ Build And Runでブラウザが起動しますが、稀にエラーによって�
 |  原因 |  対策  |
 | ----   | ---- |
 | アバターリストが空になっている | 最低1体以上、アバターを登録してください |
-| `HEOWorldSettings/BasicInfo/HeliScript`の中身が空になっている | [`None`あるいは`Missing`](../VKCComponents/HEOWorldSetting.md)となっている項目を削除してください　|
+| [VketCloudSettings/BasicSettings/HeliScript](../VketCloudSettings/BasicSettings.md)の中身が空になっている | [`None`あるいは`Missing`](../VketCloudSettings/BasicSettings.md)となっている項目を削除してください　|
 | .heoファイルの出力に失敗している | Unityのコンソールあるいは[デバッグコンソール](../debugconsole/debugconsole.md)にエラー（赤文字）が出ていないか確認してください |
 | Unity側のキャッシュによる不具合 | VketCloudSDK --> Clear Cache からキャッシュをクリアしてください |
 | ブラウザのキャッシュによる不具合 | 使用しているブラウザのキャッシュをクリアしてください |
 | 必要なファイルが見つからない(404) | 後述の方法するエラーログから、404なファイルを確認し、Vket Cloudがサポートしないファイルなら変更してください |
 | Unityプロジェクトが配置されたディレクトリ、配置されたファイル名にスペースや二バイト文字が含まれている | スペースや二バイト文字を抜いてください |
+| HeliScript実装エラー | [エラーログを確認](./#_4)して原因を解消してください |
 
 !!! caution "Mac環境における初回ビルドについて"
     お使いのMacの環境によっては、 初回のBuild and Runの際に「サーバに接続できません」の表示あるいはビルドエラーのいずれかが発生する場合があります。<br>
@@ -52,7 +53,13 @@ Unity側のキャッシュはSDKツールバーのVketCloudSDK > Clear Cacheを�
 
 ![DeveloperToolConsole](img/DeveloperToolConsole.jpg)
 
+!!! caution "ロード中のHeliScriptの実装エラーの確認方法"
+    SDK Ver13.4以降、UI調整の一環として[デバッグモード](../WorldEditingTips/DebugMode.md)が有効な際の「ワールドのローディング中に発生したHeliScript由来のエラーメッセージ」が非表示になるように変更されました。<br>
+    ワールドのロードが停止した際はブラウザの開発者モードを開き、コンソールタブを開いてエラーをご確認ください。<br>
+    なお、ロード画面を抜けた後は従来通りの個所に表示されます。
+
 ### インポートしたライブラリを確認する
+
 Package Managerなどからインポートしたライブラリまたはスクリプトによってエラーの原因になっている可能性があります。
 
 このケースでは後から追加した対象のライブラリをインポートし直すことで解消される場合があります。

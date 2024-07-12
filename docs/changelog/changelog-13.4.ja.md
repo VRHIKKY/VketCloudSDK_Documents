@@ -13,6 +13,13 @@
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldEditingTips/BuildOptions.html)
     - VketCloudSDK > Build Optionの設定について説明を追加
     - テクスチャオーバーライド設定について解説を更新
+- HeliScriptエラーの表示方法に関する注意を以下ページに追記：
+  - ワールド制作の基本
+    - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/FirstStep/BuildAndRun.html)
+  - HeliScript
+    - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_overview.html)
+  - トラブルシューティング
+    - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/troubleshooting/BuildError.html)
 
 ---
 
