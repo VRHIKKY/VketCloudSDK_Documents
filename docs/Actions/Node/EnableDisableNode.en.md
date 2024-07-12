@@ -1,10 +1,10 @@
 # Enable/Disable Node
 
-![EnableDisableNode](img/EnableDisableNode_1.jpg)
+![Enable Disable Node](img/EnableDisableNode_1.jpg)
 
 Enable/Disable Node is an action handling the target node's show/hide, enable/disable collider, and enable/disable click ability.
 
-Using this action will set the node's parameters as [Show/HideNode](ShowHideNode.md), [EnableDisableCollider](./EnableDisableCollider.md), and [EnableDisableClickableNode](./EnableDisableClickableNode.md) at once. If explicit toggle of each parameter is needed, the mentioned actions should be used.
+Using this action will set the node's parameters as [Show/Hide Node](ShowHideNode.md), [Enable Disable Collider](./EnableDisableCollider.md), and [Enable Disable Clickable Node](./EnableDisableClickableNode.md) at once. If explicit toggle of each parameter is needed, the mentioned actions should be used.
 
 | Name | Parameter | Default Value | Function |
 | ---- | ---- | ---- | ---- |

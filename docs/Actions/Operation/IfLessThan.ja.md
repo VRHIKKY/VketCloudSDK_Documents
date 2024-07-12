@@ -4,7 +4,7 @@
 
 If Variable Less Than Value(日本語名：変数が値より小さい場合)では、比較対象とするVariable(変数)がValue(値)より小さい場合、以降のアクションを実行せずに終了します。
 
-変数は[SetVar](SetVar.md)にて定義したものが指定できます。
+変数は[Set Var](SetVar.md)にて定義したものが指定できます。
 
 変数の加算は[AddVar](AddVar.md)で行う事が出来ます。
 

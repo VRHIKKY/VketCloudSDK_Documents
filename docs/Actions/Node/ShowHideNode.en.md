@@ -1,8 +1,8 @@
-# Show/HideNode
+# Show/Hide Node
 
 ![ShowHideNode](img/ShowHideNode.jpg)
 
-Show/HideNode lets you display/hide meshes inside a .heo file.
+Show/Hide Node lets you display/hide meshes inside a .heo file.
 
 From the Select button, you can see a list of objects to set as the target.
 

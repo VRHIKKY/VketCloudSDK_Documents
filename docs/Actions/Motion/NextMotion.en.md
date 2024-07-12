@@ -6,6 +6,6 @@ NextMotion lets you set a motion to play after the previous Motion Action is com
 
 |  Label |  function  |
 | ----   | ---- |
-| Motion Name | Set the motion's name. |
+| Name | Set the motion's name. |
 
 ![MotionNameInAvatar](img/MotionNameInAvatar.jpg)

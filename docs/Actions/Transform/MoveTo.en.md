@@ -1,8 +1,8 @@
 
-# MoveTo
+# Move To
 ![MoveTo](img/MoveTo.jpg)
 
-MoveTo lets you move an VKC Item Object linearly to a specified Object.
+Move To lets you move an VKC Item Object linearly to a specified Object.
 
 For target, set the VKC Item Object you wish to move.
 For destination, set the VKC Item Field GameObject that contains the goal GameObject.

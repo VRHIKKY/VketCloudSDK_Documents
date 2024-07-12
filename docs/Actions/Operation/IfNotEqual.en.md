@@ -4,9 +4,9 @@
 
 If a designated Variable is not equal to Value(integer), the Actions that follow will be discarded.
 
-The variable defined at [SetVar](SetVar.md) is applicable.
+The variable defined at [Set Var](SetVar.md) is applicable.
 
-Addition to the variable can be done by using [AddVar](AddVar.md).
+Addition to the variable can be done by using [Add Var](AddVar.md).
 
 | Label | Function |
 | ---- | ---- |

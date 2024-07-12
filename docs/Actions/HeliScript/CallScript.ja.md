@@ -1,4 +1,4 @@
-# CallScript
+# Call Script
 ![CallScript](img/CallScript.jpg)
 
 ActionsからHeliScriptやScriptのメソッドを呼び出す際に使用します。

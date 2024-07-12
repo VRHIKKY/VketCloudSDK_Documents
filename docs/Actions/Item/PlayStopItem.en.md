@@ -1,4 +1,4 @@
-# Play/StopItem
+# Play/Stop Item
 
 ![PlayStopItem_1](img/PlayStopItem_1.jpg)
 

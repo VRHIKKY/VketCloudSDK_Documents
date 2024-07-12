@@ -1,10 +1,10 @@
-# EnterLeaveVoiceGroup
+# Enter Leave Voice Group
 
 ![EnterLeaveVoiceGroup](img/EnterLeaveVoiceGroup.jpg)
 
-EnterVoiceGroup adds a player to the specified voice group.
+Enter Voice Group adds a player to the specified voice group.
 
-LeaveVoiceGroup removes a player from the specified voice group.
+Leave Voice Group removes a player from the specified voice group.
 
 Mainly intended to be called from an [VKC Item Area Collider](../../VKCComponents/VKCItemAreaCollider.md)'s Action.
 

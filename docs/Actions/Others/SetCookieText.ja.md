@@ -1,5 +1,5 @@
 
-# SetCookieText
+# Set Cookie Text
 ![SetCookieText](img/SetCookieText.jpg)
 
 Cookieにname=textの情報として保存します。どちらかが空文字列の場合は設定されません。

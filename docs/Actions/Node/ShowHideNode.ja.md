@@ -1,8 +1,8 @@
-# Show/HideNode
+# Show/Hide Node
 
 ![ShowHideNode](img/ShowHideNode.jpg)
 
-ShowNodeやHideNodeは、.heoに含まれるメッシュの表示・非表示をコントロールすることができます。
+Show NodeやHide Nodeは、.heoに含まれるメッシュの表示・非表示をコントロールすることができます。
 
 Selectボタンより、targetに指定できるオブジェクトの一覧を表示することができます。
 

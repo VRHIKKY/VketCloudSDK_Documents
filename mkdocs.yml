@@ -193,6 +193,7 @@ plugins:
             Enter/Leave Voice Group: 音声グループに参加/退出
             Web: ウェブ
             Open Links in New Tab: 新しいタブでWEBページを開く
+            Open Links in Current Tab: 現在のタブでWEBページを開く
             Others: その他
             Set Cookie Text: クッキーテキストの設定
             Stop Video: ビデオ停止

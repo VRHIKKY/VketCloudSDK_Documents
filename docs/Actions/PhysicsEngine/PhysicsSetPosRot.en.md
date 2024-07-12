@@ -1,4 +1,4 @@
-# Set Position & Rotation
+# Set Position/Rotation
 
 ## Set Position
 Changes the position in the physics calculation.

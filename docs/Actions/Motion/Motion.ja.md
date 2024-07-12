@@ -6,8 +6,7 @@ Motionは、HEOWorldSettingのAvatarに設定されたモーションを再生�
 
 |  ラベル |  機能  |
 | ----   | ---- |
-| name | 変数名を自由に設定してください。 |
-| nvalue | 代入する整数値を設定してください。 |
+| Motion Name | 再生するモーション名を設定してください。 |
 
 
 ![MotionNameInAvatar](img/MotionNameInAvatar.jpg)
