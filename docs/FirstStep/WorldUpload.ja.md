@@ -25,7 +25,7 @@
     `World Preview`を選択すると、アップロードされたワールドが確認できます。<br>
     まだアップロードされていない初回の状態では何も表示されないためご注意ください。
 
-    ![CheckTheWorld_WorldUploader](WorldUpload04.jpg)
+    ![CheckTheWorld_WorldUploader](img/WorldUpload04.jpg)
 
     `Upload`を選択すると、アップロードを行うか確認するウィンドウが表示されます。<br>
     `Yes`を選択するとアップロードが開始されます。

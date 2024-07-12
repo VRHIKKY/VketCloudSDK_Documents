@@ -22,10 +22,10 @@ Uploading is also needed for private world testing with multiple people.
 
     ![TeamName](img/WorldUpload03.jpg)
 
-    By selecting "Check the World", the uploaded world can be entered for testing purposes.<br>
+    By selecting "World Preview", the uploaded world can be entered for testing purposes.<br>
     Please note that nothing will be shown before upload.
 
-    ![CheckTheWorld_WorldUploader](WorldUpload04.jpg)
+    ![CheckTheWorld_WorldUploader](img/WorldUpload04.jpg)
 
     On selecting "Upload", a confirmation window will appear.<br>
     Selecting "Yes" will begin the upload process.
@@ -36,19 +36,19 @@ Uploading is also needed for private world testing with multiple people.
 
 3. A dialog will appear when the upload is complete.
 
-     ![UploadSuccess](img/UploadSuccess.jpg)
-
-4. To enter the uploaded world, click `check the world` from the [World ID management page](https://cloud.vket.com/en/account/world){target=blank}.
-
     ![UploadSuccess](img/WorldUpload07.jpg)
 
-    Also, the "Check the World" button in the World Uploader will open the uploaded world as well.
+4. To enter the uploaded world, click `World Preview` from the [World ID management page](https://cloud.vket.com/en/account/world){target=blank}.
 
-    ![CheckTheWorld_WorldUploader](img/CheckTheWorld_WorldUploader.jpg)
+    ![CheckTheWorld_Web](img/WorldUpload08.jpg)
+
+    Also, the "World Preview" button in the World Uploader will open the uploaded world as well.
+
+    ![CheckTheWorld_WorldUploader](img/WorldUpload04.jpg)
 
 !!! caution "Update timing of the uploaded world"
     Updating the uploaded world may cause 5 ~ 15 minutes depending on server process and network environment factors.<br>
-    If the world hasn't been updated on after upload and selecting `check the world`, please wait shortly until the update process is completed.
+    If the world hasn't been updated on after upload and selecting `World Preview`, please wait shortly until the update process is completed.
 
 ## Publishing the World
 
