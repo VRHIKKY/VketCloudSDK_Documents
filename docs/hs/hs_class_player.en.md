@@ -197,6 +197,12 @@ Set the player's move speed up ratio when running.
 
 Get the player's move speed up ratio when running.
 
+### ResetVelocity
+
+`public void ResetVelocity()`
+
+Resets the player's velocity.
+
 ### SetPresetAvatar
 
 `bool SetPresetAvatar(int AvatarIndex)`
