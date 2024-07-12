@@ -41,10 +41,10 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 物理演算に関するActionTriggerの使い方に関しては、以下ページにて記述しております。
   
 - [ActionsOverview](../Actions/ActionsOverview.md)
-  - [PhysicsAddVelocity](../Actions/Physics/PhysicsAddVelocity.md)
-  - [PhysicsClearAddForce](../Actions/Physics/PhysicsClearAddForce.md)
-  - [PhysicsSetEnable](../Actions/Physics/PhysicsSetEnable.md)
-  - [PhysicsSetPosRot](../Actions/Physics/PhysicsSetPosRot.md)
+  - [PhysicsAddVelocity](../Actions/PhysicsEngine/PhysicsAddVelocity.md)
+  - [PhysicsClearAddForce](../Actions/PhysicsEngine/PhysicsClearAddForce.md)
+  - [PhysicsSetEnable](../Actions/PhysicsEngine/PhysicsSetEnable.md)
+  - [PhysicsSetPosRot](../Actions/PhysicsEngine/PhysicsSetPosRot.md)
 
 また、HeliScriptにおける物理演算・コライダーの扱い方は以下のページにて記述しております。
 

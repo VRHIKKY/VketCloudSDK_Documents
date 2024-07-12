@@ -22,8 +22,8 @@ If you want to try out Vket Cloud worlds, or get an idea on what can be made, ch
     For the manual for stable version, which is supported for an extended period of time, access from [here](https://vrhikky.github.io/VketCloudSDK_Documents/stable/index.html).
 
 !!! info "About Updates"
-    The updates on each VketCloudSDK version can be checked in the [Release Note](releasenote/releasenote-12.3.md).<br>
-    For checking the version updates of this manual, refer to the [Change Log](changelog/changelog-12.3.md).
+    The updates on each VketCloudSDK version can be checked in the [Release Note](releasenote/releasenote-13.4.md).<br>
+    For checking the version updates of this manual, refer to the [Change Log](changelog/changelog-13.4.md).
     If the release note to be read is missing, try changing the version via the page top.
 
 !!! info "Contributions to this manual"

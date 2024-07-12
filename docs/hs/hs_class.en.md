@@ -31,7 +31,6 @@ class Test {
 }
 ```
 
-
 ## method definition
 
 ```
@@ -45,8 +44,45 @@ class Test {
 }
 ```
 
-
 ## access specifier
+
 By specifying public before a member or method declaration, this member will become accessible from outside the class.
 
 If you specify private, the member cannot be accessed from the outside. If the access specifier is omitted, the behavior is the same as the private specification.
+
+## Object Instantiation
+
+To instantiate a new class object, use the new operator.
+
+```
+class Test {
+}
+
+Test obj;
+obj = new Test();
+```
+
+## Object Deletion
+
+To delete an object, assign a null value. Objects will be deleted when nothing is referring to the object.
+
+```
+Test obj;
+obj = new Test();
+
+obj = null;
+```
+
+## Detecting Objects
+
+To detect the existence of an object, use === or !== operator.
+
+```
+if (obj !== null) {
+ // Exists
+}
+
+if (obj === null) {
+ // Does not exist
+}
+```

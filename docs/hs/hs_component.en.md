@@ -1,4 +1,3 @@
-
 # Components / Callback functions
 
 ## Defining components
@@ -70,7 +69,21 @@ This callback will be triggered before complete unload of the current page.
 public void OnUnload()
 ```
 
-## Callback - Click node
+## Callback - Click Node
+
+By calling OnClickNode method as below, this callback method will be triggered when the Item's Node is clicked.
+
+```
+public bool OnClickNode(int NodeIndex)
+```
+
+By returning true after a certain process, the engine's click-to-move process will be disabled.
+
+For compatibility, the function with the void return type can be designated, which click-to-move process will be triggered if the Node is not defined as in the Scene file as clickablenodes.
+
+```
+public void OnClickNode(int NodeIndex)
+```
 
 If you define the OnClickNode method as follows, it will be called when the item's node is clicked.
 
@@ -117,11 +130,29 @@ component AreaCollider
 }
 ```
 
-## Callback - Screen  Size Change
+## Callback - Unselecting Objects
 
-This callback will be triggered when the screen size is changed.
+### OnUnselectNode
 
-The width and height arguments contains the screen's width and height after resize.
+```
+public void OnUnselectNode(int NodeIndex)
+```
+By clicking on an Item's Node beforehand, and clicking an avatar after, this will be considered as unselecting a Node.
+
+This will trigger OnUnselectNode() with the NodeIndex as an argument.
+
+### OnUnselectAvatar
+
+```
+public void OnUnselectAvatar(string Name)
+```
+By clicking on an avatar beforehand, and clicking an Item's Node after, this will be considered as unselecting an avatar.
+
+This will trigger OnUnselectNode() with the avatar's name as an argument.
+
+## Callback - Screen Size Change
+
+This callback will be triggered when the screen size is changed. The width and height arguments contains the screen's width and height after resize.
 
 ```
 public void OnResize(int width, int height)

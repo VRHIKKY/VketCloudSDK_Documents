@@ -1,4 +1,3 @@
-
 # Playerクラス
 
 !!! 情報 Info
@@ -91,25 +90,25 @@ component PlayerInitSample
 
 ### SetPos
 
-`public void SetPos(Vector3 pos)`
+`void SetPos(Vector3 pos, bool CameraRotate = true)`
 
-座標を設定する。
+座標を設定する。TPSモードかつCameraRotateがfalseの場合はカメラ回転はおこなわれません。
 
 ### GetPos
 
-`public Vector3 GetPos()`
+`Vector3 GetPos()`
 
 座標を取得する。
 
 ### SetRotate
 
-`public void SetRotate(float angle)`
+`void SetRotate(float angle)`
 
 プレイヤーの向きを設定する。
 
 ### GetRotate
 
-`public float GetRotate()`
+`float GetRotate()`
 
 プレイヤーの向きを取得する。
 
@@ -122,7 +121,7 @@ component PlayerInitSample
 
 ### GetName
 
-`public string GetName()`
+`string GetName()`
 
 プレイヤーの名前を取得する。
 
@@ -162,13 +161,13 @@ ActionListの文字列はSceneファイルに記述する"actions":{}の文字�
 
 `bool ChangeActivityMotion(string MotionName)`
 
-アクティビティクラスのSceneファイルで定義されたモーションを再生する。
+[アクティビティファイル](../SDKTools/VKCActivityExporter.md)で定義されたモーションを再生する。
 
 ### SetNextActivityMotion
 
 `bool SetNextActivityMotion(string MotionName)`
 
-次に再生するアクティビティクラスのSceneファイルで定義されたモーションを設定する。
+次に再生する[アクティビティファイル](../SDKTools/VKCActivityExporter.md)で定義されたモーションを設定する。
 
 ### ShowChatBalloon
 
@@ -199,6 +198,12 @@ ActionListの文字列はSceneファイルに記述する"actions":{}の文字�
 `float GetMoveSpeedupRatio()`
 
 高速移動の倍率を取得します。
+
+### ResetVelocity
+
+`public void ResetVelocity()`
+
+プレイヤーの速度をリセットします。
 
 ### SetPresetAvatar
 

@@ -1,8 +1,8 @@
-# Show/HideItem
+# Show/Hide Item
 
 ![ShowHideItem](img/ShowHideItem.jpg)
 
-ShowItemは、Itemとして管理されているオブジェクトを表示します。HideItemは、逆に非表示にします。
+Show Itemは、Itemとして管理されているオブジェクトを表示します。Hide Itemは、逆に非表示にします。
 ここでいうItemとは、以下のコンポーネントで管理されるオブジェクトを指します。
 
 - [VKC Item Object](../../VKCComponents/VKCItemObject.md)

@@ -1,8 +1,8 @@
-# Show/HideItem
+# Show/Hide Item
 
 ![ShowHideItem](img/ShowHideItem.jpg)
 
-Show/HideItem lets you display/hide GameObjects marked as "Items".
+Show/Hide Item lets you display/hide GameObjects marked as "Items".
 GameObjects are marked as "Items" if they have any of the following components.
 
 - [VKC Item Object](../../VKCComponents/VKCItemObject.md)

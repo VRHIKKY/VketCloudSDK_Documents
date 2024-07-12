@@ -164,7 +164,7 @@ Delete the motion specified in .hem in the first Motion, and specify the .hem fi
 
 ![PropAnimation_23](./img/PropAnimation_23.jpg)
 
-Create a new Sphere object, place it to the right, select Add Component from the Inspector tab, and add a HEOActionTrigger. <br>
+Create a new Sphere object, place it to the right, select Add Component from the Inspector tab, and add a VKC Attribute Action Trigger. <br>
 
 ![PropAnimation_24](./img/PropAnimation_24.jpg)
 
@@ -230,7 +230,7 @@ component SwitchAnimation
 }
 ``````
 
-Place the created HeliScript in the world using HEOScript.
+Place the created HeliScript in the world using VKC Attribute Script.
 
 ![PropAnimation_27](./img/PropAnimation_27.jpg)
 

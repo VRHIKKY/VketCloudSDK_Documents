@@ -22,7 +22,7 @@ VketCloudSDKでは、Unityコライダーに対応するVKCComponentをそれぞ
     本不具合は次回のSDKリリースにて修正される予定です。<br>
     なお、本不具合はBox ColliderがアタッチされたCubeなどをワールドに最低１つ配置することで回避が可能です。
 
-HEOCylinderCollider : [物理演算](./PhysicsEngine.md)にてUnityのCylinder Colliderを物理演算させたい場合に使用します。<br>
+VKC Node Cylinder Collider : [物理演算](./PhysicsEngine.md)にてUnityのCylinder Colliderを物理演算させたい場合に使用します。<br>
 なお、Cylinderは物理演算以外には使えないためご注意ください。
 
 ## Action Trigger / HeliScriptでの物理演算・コライダーについて

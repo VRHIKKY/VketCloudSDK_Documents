@@ -5,12 +5,12 @@ The functions related to the physics engine.
 
 ***
 
-### hsPhysicsSetEnable()
+## hsPhysicsSetEnable
 
 `bool hsPhysicsSetEnable(int itemIndex, string nodeName, bool flag)`
 Get the state whether the designated Node has physics enabled.
 
-### hsPhysicsIsFixed()
+## hsPhysicsIsFixed
 
 `bool hsPhysicsIsFixed(int itemIndex, string nodeName)`
 Get the state whether the designated Node has a fixed position on physics.

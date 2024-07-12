@@ -7,6 +7,8 @@
 
 ***
 
+## 関数の一覧
+
 ### hsCommonDialogIsOpened
 
 `bool hsCommonDialogIsOpened()`

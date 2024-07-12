@@ -1,4 +1,4 @@
-# Play/StopItem
+# Play/Stop Item
 
 ![PlayStopItem_1](img/PlayStopItem_1.jpg)
 
@@ -12,7 +12,7 @@ The designated object needs to have either of the following components:
 - [VKC Item Particle](../../VKCComponents/VKCItemParticle.md)
 - [VKC Item Object](../../VKCComponents/VKCItemObject.md)
 
-*For playing avatar animation, see the [Motion](../Avatar/Motion.md) page.
+*For playing avatar animation, see the [Motion](../Motion/Motion.md) page.
 
 If a [VKC Item Object](../../VKCComponents/VKCItemObject.md) component is designated, its Index will be also available for designation.
 The Index will be referred to play the Object's motion.

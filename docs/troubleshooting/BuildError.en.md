@@ -1,5 +1,7 @@
 # Build Error / How to troubleshoot issues
 
+## Build Errors
+
 ![BuildError](img/BuildError.jpg)
 
 Build And Run launches your web browser, but the contents may not be displayed properly.
@@ -9,18 +11,19 @@ This can be caused by several reasons, but the common issues are the following:
 |  Cause |  Solution  |
 | ----   | ---- |
 | The avatar list is empty | Register at least one avatar |
-| Element in `HEOWorldSettings/BasicInfo/HeliScript` is empty. | Delete the element that is being [`None` or `Missing`](../VKCComponents/HEOWorldSetting.md). |
+| Element in [VketCloudSettings/BasicSettings/HeliScript](../VketCloudSettings/BasicSettings.md) is empty. | Delete the element that is being [`None` or `Missing`](../VketCloudSettings/BasicSettings.md). |
 | The .heo export is failing. | Please check the Unity Console or [Debug Console](../debugconsole/debugconsole.md) for red errors. |
 | Error in the Unity cache. | Clear your cache from Preferences |
 | Error in the browser cache. | Clear your cache of your browser |
 | Cannot find the necessary file (404) | From the error log explained below, find the 404-ing file and change it to a different file format that Vket Cloud supports. |
 | The directory path / file name in your Unity Project contains spaces or full-width characters | Delete any spaces or double-byte characters. |
+| HeliScript Errors | Please see the [Error Log](#checking-the-error-log) to solve the issue. |
 
 !!! caution "First build on Mac environments"
     Depending on your Mac environment, the first Build and Run may result to display "Can't Find the Server" or cause a Build Error.<br>
     If this issue happens, try Build and Run again or reload the browser to solve the issue.
 
-### If changes you made are not showing up 
+### If changes you made are not showing up
 
 There are cases where the changes you made in Unity does not apply in the web browser.
 
@@ -51,6 +54,11 @@ The info on the console is not always linked with Vket Cloud's build error, but 
 
 ![DeveloperToolConsole](img/DeveloperToolConsole.jpg)
 
+!!! caution "How to check HeliScript function errors while loading"
+    On SDK Ver13.4 and later versions, the [Debug Mode's](../WorldEditingTips/DebugMode.md) message window showing HeliScript errors during world loading has been omitted as part of UI adjustments.<br>
+    If the world loading stops, please check if any errors are happening by opening the console tab on the browser's Developer Mode.<br>
+    Please note that the debug message window will appear as previous SDK versions after world loading.
+
 ### Checking the imported library
 
 Sometimes the build error may be caused by library or script imported from Package Manager or others.
@@ -75,7 +83,7 @@ If the browser window remains to blackout on entering the world, check the follo
 
 |  Cause |  How to Fix |
 | ----   | ---- |
-| Hardware Acceleration on the browser is disabled | Enable hardware acceleration via the browser settings | 
+| Hardware Acceleration on the browser is disabled | Enable hardware acceleration via the browser settings |
 | A gamepad is connected on the PC | Disconnect the gamepad connected to the PC |
 | Build Error is unsolved | See [Build Error](./BuildError.md) for instructions |
 

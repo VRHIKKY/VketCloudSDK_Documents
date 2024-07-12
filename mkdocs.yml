@@ -126,9 +126,10 @@ plugins:
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
             VketCloudSDK Settings : VketCloudSDK設定
+            ScenePreview (β): シーンプレビュー (β)
             # GUITools 
-            GUITools Overview & Setup: GUITools - 概要とセットアップ
-            How to Use: 基本的な使い方
+            Overview & Setup: 概要とセットアップ
+            How to Use: 基本実装
             Advanced Use: 応用実装
             # 編集Tips
             World Editing Tips: 編集のためのTips
@@ -148,6 +149,54 @@ plugins:
             # アクション
             Actions: アクションについて
             Actions Overview: アクションの概要
+            Basics: 基本
+            Random: ランダム
+            Wait: 待機
+            Operation: 演算
+            Add Var: 値の追加
+            If Variable Equal To Value: 変数が値に等しい場合
+            If Variable Less Than Value: 変数が値より小さい場合
+            If Variable More Than Value: 変数が値より大きい場合
+            If Variable Not Equal To Value: 変数が値に等しくない場合
+            Set Var: 値の設定
+            Item: アイテム
+            Show/Hide Item: アイテム表示/非表示
+            Play/Stop Item: アイテム再生/停止
+            Node: ノード
+            Show/Hide Node: ノード表示/非表示
+            Enable/Disable Clickable Node: クリック可能ノード有効化/無効化
+            Enable/Disable Collider: コライダー有効化/無効化
+            Enable/Disable Node: ノード有効化/無効化
+            Object: オブジェクト
+            Show/Hide Object: オブジェクト表示/非表示
+            Play/Stop Object: オブジェクト再生/停止
+            Fade: フェード
+            Fade Out/In: フェードアウト/イン
+            White Out/In: ホワイトアウト/イン
+            Transform: トランスフォーム
+            Move To: 移動
+            Set Pos Relative Player: プレイヤー相対位置に設定
+            Warp: ワープ
+            Motion/Emotion: モーション/エモーション
+            Emote: エモート
+            Motion: モーション
+            Next Motion: 次のモーション
+            HeliScript: HeliScript
+            Call Script: HeliScriptを呼び出す
+            Physics: 物理
+            Add Velocity: 速度を追加
+            Add/Clear Force: 力を追加/削除
+            Set Physics Enable: 物理有効化/無効化
+            Set Position/Rotation: 位置/回転を設定
+            Window State: ウィンドウ状態
+            Voice Chat: ボイスチャット
+            Enter/Leave Voice Group: 音声グループに参加/退出
+            Web: ウェブ
+            Open Links in New Tab: 新しいタブでWEBページを開く
+            Open Links in Current Tab: 現在のタブでWEBページを開く
+            Others: その他
+            Set Cookie Text: クッキーテキストの設定
+            Stop Video: ビデオ停止
             # HeliScript
             HeliScript - Overview: HeliScript概要
             Statements and flow control: 文法と制御構文
@@ -165,12 +214,12 @@ plugins:
             Components / Callback functions: コンポーネント / コールバック関数
             Item Types and VKCComponents: Itemの種類 / VKCComponentとの対応一覧
             Built-in Classes And Functions: 組み込みクラス・関数
-            Vector3: Vector3クラス
-            Quaternion: Quaternionクラス
-            Matrix: Matrixクラス
-            Item: Itemクラス
-            Player: Playerクラス
-            Date: Dateクラス
+            Vector3 Class: Vector3クラス
+            Quaternion Class: Quaternionクラス
+            Matrix Class: Matrixクラス
+            Item Class: Itemクラス
+            Player Class: Playerクラス
+            Date Class: Dateクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -259,8 +308,10 @@ nav:
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - GUITools: 
-      - GUITools Overview & Setup: GUITools/Setup.md
+      - Overview & Setup: GUITools/Setup.md
       - How to Use: GUITools/HowToUse.md
+      - Advanced Use: GUITools/AdvancedUse.md
+    - ScenePreview (β): SDKTools/ScenePreview.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
@@ -327,45 +378,53 @@ nav:
 - Actions: 
     #- ActionNodeGraph: Actions/ActionNodeGraph.md #整備のために一旦取り下げ
     - Actions Overview: Actions/ActionsOverview.md
-    - System:
-      - Openweb: Actions/System/Openweb.md
-      - StopVideo: Actions/System/StopVideo.md
-      - Wait: Actions/System/Wait.md
-      - Warp: Actions/System/Warp.md
-      - Enter/LeaveVoiceGroup: Actions/System/EnterLeaveVoiceGroup.md
-      - WhiteOut/In: Actions/System/WhiteOutIn.md
-      - FadeOut/In: Actions/System/FadeOutIn.md
-    - Node:
-      - Show/HideNode: Actions/Node/ShowHideNode.md
-      - Enable/DisableClickableNode: Actions/Node/EnableDisableClickableNode.md
-      - Enable/DisableCollider: Actions/Node/EnableDisableCollider.md
-      - Enable/DisableNode: Actions/Node/EnableDisableNode.md
+    - Basics:
+      - Random: Actions/Basics/Random.md
+      - Wait: Actions/Basics/Wait.md
+    - Operation:
+      - Add Var: Actions/Operation/AddVar.md
+      - If Variable Equal To Value: Actions/Operation/IfEqual.md
+      - If Variable Less Than Value: Actions/Operation/IfLessThan.md
+      - If Variable More Than Value: Actions/Operation/IfMoreThan.md
+      - If Variable Not Equal To Value: Actions/Operation/IfNotEqual.md
+      - Set Var: Actions/Operation/SetVar.md
     - Item:
-      - Play/StopItem: Actions/Item/PlayStopItem.md
-      - Show/HideItem: Actions/Item/ShowHideItem.md
-      - SetPosRelativePlayer: Actions/Item/SetPosRelativePlayer.md
-      - MoveTo: Actions/Item/MoveTo.md
-    - Avatar:
-      - Play/StopObject: Actions/Avatar/PlayStopObject.md
-      - Show/HideObject: Actions/Avatar/ShowHideObject.md
-      - Emote: Actions/Avatar/Emote.md
-      - Motion: Actions/Avatar/Motion.md
-      - NextMotion: Actions/Avatar//NextMotion.md
+      - Show/Hide Item: Actions/Item/ShowHideItem.md
+      - Play/Stop Item: Actions/Item/PlayStopItem.md
+    - Node:
+      - Show/Hide Node: Actions/Node/ShowHideNode.md
+      - Enable/Disable Clickable Node: Actions/Node/EnableDisableClickableNode.md
+      - Enable/Disable Collider: Actions/Node/EnableDisableCollider.md
+      - Enable/Disable Node: Actions/Node/EnableDisableNode.md
+    - Object:
+      - Show/Hide Object: Actions/Object/ShowHideObject.md
+      - Play/Stop Object: Actions/Object/PlayStopObject.md
+    - Fade:
+      - Fade Out/In: Actions/Fade/FadeOutIn.md
+      - White Out/In: Actions/Fade/WhiteOutIn.md
+    - Transform:
+      - Move To: Actions/Transform/MoveTo.md
+      - Set Pos Relative Player: Actions/Transform/SetPosRelativePlayer.md
+      - Warp: Actions/Transform/Warp.md
+    - Motion/Emotion:
+      - Emote: Actions/Motion/Emote.md
+      - Motion: Actions/Motion/Motion.md
+      - Next Motion: Actions/Motion//NextMotion.md
+    - HeliScript:
+      - Call Script: Actions/HeliScript/CallScript.md
     - Physics:
-      - AddVelocity: Actions/Physics/PhysicsAddVelocity.md
-      - Add / ClearForce: Actions/Physics/PhysicsClearAddForce.md
-      - SetPhysicsEnable: Actions/Physics/PhysicsSetEnable.md
-      - SetPosition / Rotation: Actions/Physics/PhysicsSetPosRot.md
-    - Programmatic:
-      - AddVar: Actions/Programmatic/AddVar.md
-      - SetVar: Actions/Programmatic/SetVar.md
-      - If Variable Equal To Value: Actions/Programmatic/IfEqual.md
-      - If Variable Not Equal To Value: Actions/Programmatic/IfNotEqual.md
-      - If Variable More Than Value: Actions/Programmatic/IfMoreThan.md
-      - If Variable Less Than Value: Actions/Programmatic/IfLessThan.md
-      - Random: Actions/Programmatic/Random.md
-      - SetCookieText: Actions/Programmatic/SetCookieText.md
-      - CallScript: Actions/Programmatic/CallScript.md
+      - Add Velocity: Actions/PhysicsEngine/PhysicsAddVelocity.md
+      - Add/Clear Force: Actions/PhysicsEngine/PhysicsClearAddForce.md
+      - Set Physics Enable: Actions/PhysicsEngine/PhysicsSetEnable.md
+      - Set Position/Rotation: Actions/PhysicsEngine/PhysicsSetPosRot.md
+    - Voice Chat:
+      - Enter/Leave Voice Group: Actions/VoiceChat/EnterLeaveVoiceGroup.md
+    - Web:
+      - Open Links in New Tab: Actions/Web/Openweb.md
+      - Open Links in Current Tab: Actions/Web/OpenwebCurrentTab.md
+    - Others:
+      - Set Cookie Text: Actions/Others/SetCookieText.md
+      - Stop Video: Actions/Others/StopVideo.md
 - HeliScript:
     - HeliScript - Overview: hs/hs_overview.md
     - Built-in Types:
@@ -377,12 +436,12 @@ nav:
     - Components / Callback functions: hs/hs_component.md
     - Item Types and VKCComponents: hs/hs_item_types_functions.md
     - Built-in Classes And Functions:
-        - Vector3: hs/hs_struct_vector3.md
-        - Quaternion: hs/hs_struct_quaternion.md
-        - Matrix: hs/hs_struct_matrix.md
-        - Item: hs/hs_class_item.md
-        - Player: hs/hs_class_player.md
-        - Date: hs/hs_class_date.md
+        - Vector3 Class: hs/hs_struct_vector3.md
+        - Quaternion Class: hs/hs_struct_quaternion.md
+        - Matrix Class: hs/hs_struct_matrix.md
+        - Item Class: hs/hs_class_item.md
+        - Player Class: hs/hs_class_player.md
+        - Date Class: hs/hs_class_date.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md
@@ -473,6 +532,7 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v13.x:
+        - v13.4: changelog/changelog-13.4.md
         - v13.1: changelog/changelog-13.1.md
         - v13.0: changelog/changelog-13.0.md
     - v12.x:

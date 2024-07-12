@@ -1,4 +1,4 @@
-# Enable/DisableClickableNode
+# Enable/Disable Clickable Node
 
 ![EnableDisableClickableNode](img/EnableDisableClickableNode.jpg)
 

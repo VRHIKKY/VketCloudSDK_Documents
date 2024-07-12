@@ -11,8 +11,8 @@ VKCNodeAlphaAnimation component flags the designated object to be transparent wh
 
 !!! caution "Available objects for transparent effect"
     Note that Node objects under the VKCItemField are only available to be transparent.<br>
-    Other objects (e.g. objects generated from the [quick menu](../../WorldEditingTips/QuickMenu.md)) cannot be transparent.<br>
-    For details about Node, please refer to [HeliScript - Overview / Node](../../hs/hs_overview.md#node).
+    Other objects (e.g. objects generated from the [quick menu](../WorldEditingTips/QuickMenu.md)) cannot be transparent.<br>
+    For details about Node, please refer to [HeliScript - Overview / Node](../hs/hs_overview.md#node).
 
 ## How to Use
 
