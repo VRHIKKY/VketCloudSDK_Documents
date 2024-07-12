@@ -68,6 +68,12 @@ component HelloWorld
 
 ![hs_overview_5](img/hs_overview_5.jpg)
 
+!!! caution "エラーが起きた場合は"
+    HeliScriptがワールドロード中あるいは呼び出しによって実行された際にエラーが起きた場合はデバッグログとブラウザのコンソールに表示されます。<br>
+    初期状態ではデバッグログは非表示になっているため、表示するには[デバッグモード](../WorldEditingTips/DebugMode.md)を有効にしてください。<br>
+    なお、ワールドロード時にデバッグログは非表示になるため、ロードが停止した際は[ブラウザのコンソール](../troubleshooting/BuildError.md#_4)をご確認ください。
+
+
 ## VKC Attribute Scriptの配置・オブジェクトの参照について
 
 [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)をアタッチ可能なGameObjectは、スクリプトの対象となる[VKC Item Field](../VKCComponents/VKCItemField.md)がアタッチされているオブジェクト及びその子オブジェクトです。<br>
