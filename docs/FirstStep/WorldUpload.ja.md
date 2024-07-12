@@ -42,7 +42,7 @@
 
     ![CheckTheWorld_Web](img/WorldUpload08.jpg)
 
-    また、World Uploader内の"World preview"を選択しても同様にアップロードされたワールドが確認できます。
+    また、World Uploader内の`World preview`を選択しても同様にアップロードされたワールドが確認できます。
 
     ![CheckTheWorld_WorldUploader](img/WorldUpload04.jpg)
 
