@@ -1,4 +1,4 @@
-# Enable/DisableCollider
+# Enable/Disable Collider
 
 ![EnableDisableCollider](img/EnableDisableCollider.jpg)
 

@@ -70,7 +70,7 @@ component EventCameraTest
 
 The scene implementing this script is as the image below.<br>
 When the defined event camera is enabled, camera will pivot around the world center.<br>
-On the image below, the Sphere object has a [CallScript](../Actions/Programmatic/CallScript.md) attached to switch camera when clicked.
+On the image below, the Sphere object has a [CallScript](../Actions/HeliScript/CallScript.md) attached to switch camera when clicked.
 
 ![HEOCamera_4](img/HEOCamera_4.jpg)
 
