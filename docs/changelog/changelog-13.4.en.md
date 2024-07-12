@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## July 12 2024 Update
+
+## July 12 2024 - Edited Pages
+
+- HeliScript
+  - Built-in Classes And Functions
+    - [Player](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_player.html)
+      - Added function : ResetVelocity()
+
+---
+
 ## July 05 2024 Update
 
 ## July 05 2024 - Added Pages
