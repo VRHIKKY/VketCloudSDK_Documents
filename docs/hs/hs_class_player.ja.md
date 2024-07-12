@@ -199,6 +199,12 @@ ActionListの文字列はSceneファイルに記述する"actions":{}の文字�
 
 高速移動の倍率を取得します。
 
+### ResetVelocity
+
+`public void ResetVelocity()`
+
+プレイヤーの速度をリセットします。
+
 ### SetPresetAvatar
 
 `bool SetPresetAvatar(int AvatarIndex)`

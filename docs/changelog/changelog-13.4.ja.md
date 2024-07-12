@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月12日更新
+
+## 2024年7月12日 - 変更されたページ
+
+- HeliScript
+  - 組み込みクラス・関数
+    - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_player.html)
+      - ResetVelocity()を追加
+
+---
+
 ## 2024年7月05日更新
 
 ## 2024年7月05日 - 追加されたページ
