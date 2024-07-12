@@ -3,7 +3,7 @@
 ##　位置をセット
 物理演算上の位置を変更します。
 
-![SetPosition](img/SetPosition.en.jpg)
+![SetPosition](img/SetPosition.jpg)
 
 |  名称 |  機能  |
 | ----   | ---- |
@@ -13,7 +13,7 @@
 ## 回転をセット
 物理演算上の回転を変更します。
 
-![SetRotation](img/SetRotation.en.jpg)
+![SetRotation](img/SetRotation.jpg)
 
 |  名称 |  機能  |
 | ----   | ---- |

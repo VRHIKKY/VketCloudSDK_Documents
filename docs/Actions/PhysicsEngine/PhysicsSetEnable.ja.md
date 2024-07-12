@@ -2,7 +2,7 @@
 
 物理演算の有効・無効化する為の機能です。
 
-![PhysicsAddVelocity](img/SetEnable.en.jpg)
+![PhysicsAddVelocity](img/SetEnable.jpg)
 
 | 名称 |  機能  |
 | ----   | ---- |

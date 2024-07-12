@@ -3,7 +3,7 @@
 ## Add Force
 Adds force.
 
-![PhysicsClearAddForce](img/AddForce.en.jpg)
+![PhysicsClearAddForce](img/AddForce.jpg)
 
 |  Label |  Function  |
 | ----   | ---- |
@@ -13,7 +13,7 @@ Adds force.
 ## Clear Force
 Sets all applied forces and velocities to zero.
 
-![PhysicsClearAddForce](img/ClearForce.en.jpg)
+![PhysicsClearAddForce](img/ClearForce.jpg)
 
 |  Label |  Function  |
 | ----   | ---- |
