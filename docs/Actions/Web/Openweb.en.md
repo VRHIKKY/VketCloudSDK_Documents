@@ -1,5 +1,10 @@
 
-# Openweb
+# Open Links in New Tab
+
 ![Openweb](img/Openweb.jpg)
 
-Open is the action for open the website on the browser.
+Open Links in New Tab is an action to open a website in a new tab in the browser.
+
+| Label | Function |
+| ---- | ---- |
+| URL | Please specify the URL of the website to open. |

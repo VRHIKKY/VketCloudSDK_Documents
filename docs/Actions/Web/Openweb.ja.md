@@ -1,5 +1,10 @@
 
-# Openweb
+# Open Links in New Tab
+
 ![Openweb](img/Openweb.jpg)
 
-Openwebは、指定されたURLをウェブブラウザで開く機能です。
+Open Links in New Tabは、ブラウザで新しいタブで、ウェブサイトを開くためのアクションです。
+
+| 名称 |  機能  |
+| ----   | ---- |
+| URL | 開くウェブサイトのURLを指定してください。 |

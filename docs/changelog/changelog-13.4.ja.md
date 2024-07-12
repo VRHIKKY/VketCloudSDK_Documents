@@ -1,5 +1,20 @@
 # SDK Manual Change Log - Ver 13.4
 
+
+## 2024年7月12日更新
+
+## 2024年7月12日 - 追加されたページ
+
+- アクション
+  - [OpenLinksInCurrentTab](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/Web/OpenwebCurrentTab.html)
+
+## 2024年7月12日 - 変更されたページ
+
+- アクション
+  - [カテゴリー整理](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/ActionsOverview.html)
+    - 全てのActionのカテゴリーの整理と、画像更新と内容更新
+
+
 ## 2024年7月05日更新
 
 ## 2024年7月05日 - 追加されたページ

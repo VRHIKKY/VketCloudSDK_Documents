@@ -420,6 +420,7 @@ nav:
       - Enter/Leave Voice Group: Actions/VoiceChat/EnterLeaveVoiceGroup.md
     - Web:
       - Open Links in New Tab: Actions/Web/Openweb.md
+      - Open Links in Current Tab: Actions/Web/OpenwebCurrentTab.md
     - Others:
       - Set Cookie Text: Actions/Others/SetCookieText.md
       - Stop Video: Actions/Others/StopVideo.md
