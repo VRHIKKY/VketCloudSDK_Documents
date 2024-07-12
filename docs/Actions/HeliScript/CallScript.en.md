@@ -15,7 +15,11 @@ void Method(string Param)
 
 If you specify "Foo,Method,abc" as the argument, the "Method" will be called with "abc" assigned to the parameter.
 
-| Label |  Function  |
-| ----   | ---- |
-| Name | Specify ItemName |
-| Text | Specify the Ccmponent name, method name, and arguments|
+
+| Label | Function |
+| ---- | ---- |
+| Category | Specify whether the component to be called is on the scene side or the canvas side. |
+| Item Name | Specify the item name or layer name. |
+| Component Name | Specify the component name. |
+| Function Name | Specify the method name. |
+| String Argument | Specify the argument name. |

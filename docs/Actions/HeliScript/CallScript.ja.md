@@ -16,7 +16,10 @@ void Method(string Param)
 ```
 を呼び出したい場合は、”Foo,Method,abc”などと指定すると、Paramに”abc”が代入された状態でMethodが呼び出されます。
 
-| フィールド |  機能  |
+| 名称 |  機能  |
 | ----   | ---- |
-| 名前 | ItemNameを自由に設定してください。 |
-| 引数 | コンポーネント名・メソッド名・引数を設定してください。 |
+| Category | 呼び出し対象のコンポーネントが、シーン側にあるのか、それともCanvas側にあるのかを指定します。 |
+| Item Name | Item名、またはレイヤー名を指定します。 |
+| Component Name | コンポーネント名を設定してください。 |
+| Function Name | メソッド名を指定してください。 |
+| String Argument | 引数を設定してください。 |
