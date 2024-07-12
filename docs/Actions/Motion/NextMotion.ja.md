@@ -12,4 +12,4 @@ Motion Nameには、モーション名を指定します。
 | nvalue | 代入する整数値を設定してください。 |
 
 
-![MotionNameInAvatar](img/MotionNameInAvatarJP.jpg)
+![MotionNameInAvatar](img/MotionNameInAvatar.jpg)
