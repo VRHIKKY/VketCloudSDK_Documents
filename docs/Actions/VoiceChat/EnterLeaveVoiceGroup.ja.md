@@ -8,6 +8,6 @@ LeaveVoiceGroupは、プレイヤーを指定名のボイスグループから�
 
 基本的には、[VKC Item Area Collider](../../VKCComponents/VKCItemAreaCollider.md)に入ったときのactionで利用します。
 
-|  Label |  function  |
+|  名称 |  機能  |
 | ----   | ---- |
-| name | ボイスグループ名を指定してください。 |
+| Name | ボイスグループ名を指定してください。 |

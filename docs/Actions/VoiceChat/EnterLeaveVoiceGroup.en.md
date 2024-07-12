@@ -10,4 +10,4 @@ Mainly intended to be called from an [VKC Item Area Collider](../../VKCComponent
 
 |  Label |  function  |
 | ----   | ---- |
-| name | Specify the name of the voice group |
+| Name | Specify the name of the voice group |
