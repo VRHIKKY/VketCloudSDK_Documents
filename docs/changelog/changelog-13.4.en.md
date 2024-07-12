@@ -1,5 +1,11 @@
 # SDK Manual Change Log - Ver 13.4
 
+## July 12 2024 - Edited Pages
+
+- First Steps
+  - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/FirstStep/WorldUpload.html)
+    - Updated descriptions and images
+
 ## July 05 2024 Update
 
 ## July 05 2024 - Added Pages

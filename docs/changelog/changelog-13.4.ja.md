@@ -1,5 +1,11 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月12日 - 変更されたページ
+
+- ワールド制作の基本
+  - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/FirstStep/WorldUpload.html)
+    - 説明文および画像を更新
+
 ## 2024年7月05日更新
 
 ## 2024年7月05日 - 追加されたページ
