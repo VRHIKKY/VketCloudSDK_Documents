@@ -1,6 +1,5 @@
 # SDK Manual Change Log - Ver 13.4
 
-
 ## 2024年7月12日更新
 
 ## 2024年7月12日 - 追加されたページ
@@ -10,10 +9,20 @@
 
 ## 2024年7月12日 - 変更されたページ
 
+- HeliScript
+  - 組み込みクラス・関数
+    - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_player.html)
+      - ResetVelocity()を追加
+
+- ワールド制作の基本
+  - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/FirstStep/WorldUpload.html)
+    - 説明文および画像を更新
+
 - アクション
   - [カテゴリー整理](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/ActionsOverview.html)
     - 全てのActionのカテゴリーの整理と、画像更新と内容更新
 
+---
 
 ## 2024年7月05日更新
 
@@ -28,6 +37,13 @@
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldEditingTips/BuildOptions.html)
     - VketCloudSDK > Build Optionの設定について説明を追加
     - テクスチャオーバーライド設定について解説を更新
+- HeliScriptエラーの表示方法に関する注意を以下ページに追記：
+  - ワールド制作の基本
+    - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/FirstStep/BuildAndRun.html)
+  - HeliScript
+    - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_overview.html)
+  - トラブルシューティング
+    - [ビルドエラー / ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/troubleshooting/BuildError.html)
 
 ---
 

@@ -68,6 +68,11 @@ After completing the code implementation and executing Build And Run, "Hello, Wo
 
 ![hs_overview_5](img/hs_overview_5.jpg)
 
+!!! caution "Troubleshooting Errors"
+    If an error occurs when running a HeliScript during world loading or by trigger, the error will be displayed on the debug log and browser console.<br>
+    Please enable the [Debug Mode](../WorldEditingTips/DebugMode.md) to show the debug log.<br>
+    As the debug log will be hidden during world loading, please see the [Browser Console](../troubleshooting/BuildError.md#checking-the-error-log) for checking the reason of loading error.
+
 ## Placing VKC Attribute Script and referencing objects
 
 [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md) components can be attached to gameobjects with [VKC Item Field](../VKCComponents/VKCItemField.md) and its child gameobjects.

@@ -9,9 +9,20 @@
 
 ## July 12 2024 - Edited Pages
 
+- HeliScript
+  - Built-in Classes And Functions
+    - [Player](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_player.html)
+      - Added function : ResetVelocity()
+
+- First Steps
+  - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/FirstStep/WorldUpload.html)
+    - Updated descriptions and images
+
 - Actions
   - [Actions Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/ActionsOverview.html)
     - Organized all Action categories, updated images and content.
+
+---
 
 ## July 05 2024 Update
 
@@ -26,6 +37,13 @@
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldEditingTips/BuildOptions.html)
     - Added description about VketCloudSDK > Build Option settings
     - Revised description about Texture Override Settings
+- Added notice on how to view HeliScript errors:
+  - First Steps
+    - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/FirstStep/BuildAndRun.html)
+  - HeliScript
+    - [HeliScript Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_overview.html)
+  - Trouble shooting
+    - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/troubleshooting/BuildError.html)
 
 ---
 
