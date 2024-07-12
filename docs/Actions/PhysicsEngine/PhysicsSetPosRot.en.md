@@ -7,7 +7,7 @@ Changes the position in the physics calculation.
 
 |  Label |  Function  |
 | ----   | ---- |
-| Name | Please specify the name of the physics object to which the action applies. |
+| Target | Please specify the physics object to which the action applies. |
 | Position | Please specify the position in the world coordinate system. |
 
 ## Set Rotation
@@ -17,8 +17,8 @@ Changes the rotation in the physics calculation.
 
 |  Label |  Function  |
 | ----   | ---- |
-| Name | Please specify the name of the physics object to which the action applies. |
-| Direction | Please specify the rotation in the world coordinate system. |
+| Target | Please specify the physics object to which the action applies. |
+| Rotation | Please specify the rotation in the world coordinate system. |
 
 !!! Note Info
     This is only effective for objects where the physics engine is enabled.

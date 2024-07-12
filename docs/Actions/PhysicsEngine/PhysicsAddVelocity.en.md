@@ -2,11 +2,11 @@
 
 The function adds velocity to an object.
 
-![PhysicsAddVelocity](img/PhysicsAddVelocity.en.jpg)
+![PhysicsAddVelocity](img/PhysicsAddVelocity.jpg)
 
 |  Label |  Function  |
 | ----   | ---- |
-| Name | Please specify the name of the physics object to which the action applies. |
+| Target | Please specify the name of the physics object to which the action applies. |
 | Vector | Please specify the vector in the world coordinate system. |
 
 !!! Note Info

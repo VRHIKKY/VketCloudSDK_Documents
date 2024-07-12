@@ -3,20 +3,20 @@
 ## 力を追加
 力を加えます。
 
-![PhysicsClearAddForce](img/AddForce.jpg)
+![PhysicsClearAddForce](img/AddForce.en.jpg)
 
 |  ラベル |  機能  |
 | ----   | ---- |
-| 名前 | アクションを適応する物理オブジェクトの名前を指定してください。 |
-| ベクトル | ワールド座標系でのベクトルを指定してください。 |
+| Target | アクションを適応する物理オブジェクトを指定してください。 |
+| Vector | ワールド座標系でのベクトルを指定してください。 |
 
 ## 力を削除
 加わっている力・速度を全て0にします。
-![PhysicsClearAddForce](img/ClearForce.jpg)
+![PhysicsClearAddForce](img/ClearForce.en.jpg)
 
 |  ラベル |  機能  |
 | ----   | ---- |
-| 名前 | アクションを適応する物理オブジェクトの名前を指定してください。 |
+| Target | アクションを適応する物理オブジェクトを指定してください。 |
 
 !!! Note Info
     物理エンジンが有効なオブジェクトに対してのみ有効です。

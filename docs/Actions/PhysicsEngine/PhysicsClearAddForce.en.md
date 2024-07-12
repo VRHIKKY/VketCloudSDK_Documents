@@ -7,7 +7,7 @@ Adds force.
 
 |  Label |  Function  |
 | ----   | ---- |
-| Name | Please specify the name of the physics object to which the action applies. |
+| Target | Please specify the physics object to which the action applies. |
 | Vector | Please specify the vector in the world coordinate system. |
 
 ## Clear Force
@@ -17,7 +17,7 @@ Sets all applied forces and velocities to zero.
 
 |  Label |  Function  |
 | ----   | ---- |
-| Name | Please specify the name of the physics object to which the action applies. |
+| Target | Please specify the physics object to which the action applies. |
 
 !!! Note Info
     This is only effective for objects where the physics engine is enabled.

@@ -6,7 +6,7 @@ This is a function to enable or disable physics calculations.
 
 | Label |  Function  |
 | ----   | ---- |
-| Name | Please specify the name of the physics object to which the action applies. |
+| Target | Please specify the physics object to which the action applies. |
 | Flag | Judgement for enable/disable |
 
 !!! Note Info
