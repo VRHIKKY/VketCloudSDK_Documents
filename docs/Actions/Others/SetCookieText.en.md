@@ -6,5 +6,5 @@ Saves the data name=text onto the Cookie. If either one is blank, nothing will b
 
 |  Label |  function  |
 | ----   | ---- |
-| name | Variable Name |
-| text | The text you want to save. |
+| Name | Variable Name |
+| Text | The text you want to save. |
