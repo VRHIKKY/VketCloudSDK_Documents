@@ -1,5 +1,17 @@
 # SDK Manual Change Log - Ver 13.4
 
+## July 19 2024 Update
+
+## July 19 2024 - Added Pages
+
+- Actions
+  - WindowState
+    - [Movie Viewer Full Screen Off](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenOff.html)
+    - [Movie Viewer Full Screen On](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenOn.html)
+    - [Movie Viewer Full Screen Toggle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenToggle.html)
+    - [Open Movie Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/OpenMovieViewer.html)
+    - [Set Generic Window State](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/SetGenericWindowState.html)
+
 ## July 12 2024 Update
 
 ## July 12 2024 - Added Pages
