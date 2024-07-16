@@ -12,6 +12,7 @@
 |Error|Essential Objects Error|[VKC Item Field](../VKCComponents/VKCItemField.md)を持つオブジェクトがシーンに存在しません。|[VKC Item Field](../VKCComponents/VKCItemField.md)を持つオブジェクトを作成してください。|[ワールドの基本要素](../FirstStep/WorldBasicComponents.md) |
 |Error|Essential Objects Error|[HEOPlayer](../VKCComponents/HEOPlayer.md)を持つオブジェクトがシーンに存在しません。|[HEOPlayer](../VKCComponents/HEOPlayer.md)を持つオブジェクトを作成してください。|[ワールドの基本要素](../FirstStep/WorldBasicComponents.md) |
 |Error|Essential Objects Error|[HEODespawnHeight](../VKCComponents/HEODespawnHeight.md)を持つオブジェクトがシーンに存在しません。|[HEODespawnHeight](../VKCComponents/HEODespawnHeight.md)を持つオブジェクトを作成してください。|[ワールドの基本要素](../FirstStep/WorldBasicComponents.md) |
+|Error|Essential Objects Error|[VKCItemField](../VKCComponents/VKCItemField.md)は持つオブジェクト配下にメッシュを持つオブジェクトが存在しません。|Fieldにオブジェクトを設置するには、[VKCItemField](../VKCComponents/VKCItemField.md)配下にオブジェクトを追加してください||
 |Alert|Video Alert|サポートされていない形式の動画ファイルが使用されています。|動画はVketCloudがサポートする動画形式に変換してください。||
 |Alert|Video Alert|動画サイズが、Debug Log Console設定の最大動画サイズよりも大きくなっています。|動画を圧縮してください。もしくは[チェックツール設定](debugconsole.md)から、最大動画サイズを再設定してください。||
 |Alert|Video Alert|動画尺が、Debug Log Console設定の最大動画尺よりも大きくなっています。|動画をクロップしてください。もしくは[チェックツール設定](debugconsole.md)から、最大動画尺を再設定してください。||
