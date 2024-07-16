@@ -32,6 +32,7 @@
 |Alert|Light Map Alert|AndroidプラットフォームのLightmap EncodingがLow Qualityに設定されていません。ライトマップが白飛びする恐れがあります。|プラットフォームのライトマップのエンコーディングを設定するには、「Edit」>「Project Settings」>「Player」>「Other Settings」>「Lightmap Encoding」から行ってください。|[ライトマップ - 技術的な情報 - Unity マニュアル](https://docs.unity3d.com/ja/2019.4/Manual/Lightmaps-TechnicalInformation.html){target=_blank} |
 |Alert|Transform Error|Transformのスケール値がマイナスのオブジェクトが存在します。|Transformのスケール値を0より大きい値に設定してください。||
 |Error|FBX Error|サポートされていないFBXファイルが使用されています。|FBXファイルをバイナリ形式に変換してください。|
+|Error|FBX Error|シーン内に配置したFBXのMeshesの「Read/Write Enabled」項目がオフになっています。|シーン内に配置したFBXのMeshesの「Read/Write Enabled項目」をオンにしてください。||
 |Alert|Texture Alert|サポートされていないテクスチャ形式が設定されたテクスチャが使用されています。|Texture FormatよりRGB24/RGBA32に変更してください。||
 |Alert|Texture Alert|サポートされていない拡張子のテクスチャが使用されています。|.pngに変換してください。||
 |Alert|Texture Alert|テクスチャサイズがDebug Log Console設定の最大テクスチャサイズよりも大きくなっています。|テクスチャサイズを落としてください。もしくは[チェックツール設定](debugconsole.md)から、最大テクスチャサイズを再設定してください。||

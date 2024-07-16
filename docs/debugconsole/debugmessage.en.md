@@ -32,6 +32,7 @@ Note that errors/alerts not on this list (e.g. build error caused by Unity, etc.
 |Alert|Light Map Alert|The Lightmap Encoding on the Android platform is not set to Low Quality. There is a risk of overexposed lightmaps.|To control the encoding/compression of the lightmaps for these platforms, go to Edit > Project Settings > Player > Other Settings > Lightmap Encoding.|[Lightmaps: Technical information - Unity Documentation](https://docs.unity3d.com/2019.4/Documentation/Manual/Lightmaps-TechnicalInformation.html){target=_blank} |
 |Alert|Transform Error|There are objects with negative scale values in Transform.|Please set the scale value of Transform to a value greater than 0.||
 |Error|FBX Error|An unsupported FBX file is being used.|Please convert the FBX file to binary format.|
+|Errror|FBX Error|The "Read/Write Enabled" option for the FBX meshes placed in the scene is turned off.|Please turn on the "Read/Write Enabled" option for the FBX meshes placed in the scene.||
 |Alert|Texture Alert|A texture with an unsupported texture format is being used.|Please change the Texture Format to RGB24/RGBA32.||
 |Alert|Texture Alert|A texture with an unsupported extension is being used.|Please convert to .png.||
 |Alert|Texture Alert|The texture size is larger than the maximum texture size set in the check tool.|Please reduce the texture size or reset the maximum texture size from the [check tool settings](debugconsole.md).||
