@@ -23,6 +23,7 @@
 |Alert|Mesh Renderer Error|SkinnedMeshRendererを使用したオブジェクトがシーンに存在します。|アニメーションするオブジェクトはvrmに変換し、[VKC Item Object](../VKCComponents/VKCItemObject.md)を使用して配置してください。||
 |Alert|Mesh Renderer Alert|マテリアルが設定されていないオブジェクトが存在します。|対象のオブジェクトのMeshRendererよりマテリアルをアタッチしてください。||
 |Alert|Mesh Renderer Alert|サポートされていないシェーダーが使用されています。|VketCloudでサポートされているシェーダーを割り当ててください。||
+|Alert|Mesh Renderer Alert|MeshFilterがNoneもしくはMissingになっています。|MeshFilterにMeshをアタッチしてください。||
 |Alert|Mesh Collider Alert|メッシュコライダーとメッシュレンダラーを同時に持つオブジェクトが存在します。|それぞれのコンポーネントを別々のオブジェクトに分離してください。||
 |Alert|Mesh Collider Alert|[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)を持たないメッシュコライダーが存在します。|VketCloud上でメッシュコライダーを有効にするには、対象のオブジェクトに[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)を追加してください。||
 |Error|Light Map Error|ライトマップサイズが2048を超過しています。|ライトマップサイズを2048以下に設定してください。||
@@ -37,7 +38,4 @@
 |Alert|Texture Alert|サポートされていない拡張子のテクスチャが使用されています。|.pngに変換してください。||
 |Alert|Texture Alert|テクスチャサイズがDebug Log Console設定の最大テクスチャサイズよりも大きくなっています。|テクスチャサイズを落としてください。もしくは[チェックツール設定](debugconsole.md)から、最大テクスチャサイズを再設定してください。||
 |Alert|Texture Alert|Debug Log Console設定の最大テクスチャピクセルサイズよりも大きくなっています。|テクスチャピクセルサイズを落としてください。もしくは[チェックツール設定](debugconsole.md)から、最大テクスチャピクセルサイズを再設定してください。||
-
- 
-
  
