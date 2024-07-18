@@ -8,7 +8,7 @@
 - **Unresponsive Emote Button After Avatar Switch:** Addressed an issue where the emote button did not respond on the first press after switching to My Avatar.
 - **Camera Mode Emote Button Issue:** Corrected a problem where, if the emote section was left open when exiting camera mode, the emote button had to be pressed twice before the emote section would open again.
 
-## Version 13.4.1
+# Version 13.4.1
 
 ## SDK (Editor extension tool for creating worlds in Unity)
 
