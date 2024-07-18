@@ -1,6 +1,6 @@
 # Version 13.5.0
 
-## HeliodorLib (Engine used in browser-displayed world)
+## HeliodorLib (Engine used in browser-displayed worlds)
 
 ### Feature Additions and Adjustments
 - The extrusion parameter of HEO is now off by default.
