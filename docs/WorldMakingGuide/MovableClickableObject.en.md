@@ -1,10 +1,10 @@
 # Movable Clickable Object
 
-VKCItemObject is an Item, not a Node, so the click detection method GetNodeIndexByName described in [this manual](../hs/hs_overview.md) cannot be used. However, it is possible to achieve a movable object with click detection in VketCloud using a different approach. Follow the steps below:
+VKCItemObject is an Item, not a Node, so the click detection method GetNodeIndexByName described in [this manual](../hs/hs_overview.md){target=_blank} cannot be used. However, it is possible to achieve a movable object with click detection in VketCloud using a different approach. Follow the steps below:
 
 ## Setting Up the Floor
 
-![floor](img/movable_clickable_floor.png)
+![floor](img/movable_clickable_floor.jpg)
 
 1. Create a Cube and name it "Floor".
 2. Set the Scale to `100, 1, 100`.
@@ -12,9 +12,9 @@ VKCItemObject is an Item, not a Node, so the click detection method GetNodeIndex
 
 ## Outputting HEO and HEM
 
-![root](img/movable_clickable_root.png)
+![root](img/movable_clickable_root.jpg)
 
-![cube](img/movable_clickable_cube.png)
+![cube](img/movable_clickable_cube.jpg)
 
 1. Create an empty GameObject named "Root".
 2. Create a Cube as a child of Root.
@@ -32,7 +32,7 @@ VKCItemObject is an Item, not a Node, so the click detection method GetNodeIndex
 
 ## Placing a TextPlane for Click Confirmation
 
-![text](img/movable_clickable_text.png)
+![text](img/movable_clickable_text.jpg)
 
 1. Create an empty GameObject named "Text".
 2. Add a VKCItemTextPlane to it.
@@ -41,7 +41,7 @@ VKCItemObject is an Item, not a Node, so the click detection method GetNodeIndex
 
 ## Setting Up HeliScript
 
-![item_object](img/movable_clickable_item_object.png)
+![item_object](img/movable_clickable_item_object.jpg)
 
 1. Right-click in the Project pane and create a new HeliScript.
 2. Paste the following HeliScript:
@@ -71,6 +71,6 @@ component Sample
 
 ## BuildAndRun
 
-![run](img/movable_clickable_run.png)
+![run](img/movable_clickable_run.jpg)
 
 When you BuildAndRun, it will work as described above. Clicking on the moving Cube will increase the click count on the Text.
