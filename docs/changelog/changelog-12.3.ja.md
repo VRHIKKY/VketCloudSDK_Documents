@@ -12,6 +12,8 @@
   - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/VketCloudSettings/AvatarSettings.html)
     - デフォルトアバターを4種類に拡大した旨を追記
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/VketCloudSettings/MyAvatarSettings.html)
+- ワールド制作ガイド
+  - [Unityアセットのアニメーションを変換する](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/ConvertAnimationFromUntiyAsset.html)
 - SDKTools
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/VKCActivityExporter.html)
 - 編集のためのTips
