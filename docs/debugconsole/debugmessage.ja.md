@@ -40,3 +40,4 @@
 |Alert|Texture Alert|テクスチャサイズがDebug Log Console設定の最大テクスチャサイズよりも大きくなっています。|テクスチャサイズを落としてください。もしくは[チェックツール設定](debugconsole.md)から、最大テクスチャサイズを再設定してください。||
 |Alert|Texture Alert|Debug Log Console設定の最大テクスチャピクセルサイズよりも大きくなっています。|テクスチャピクセルサイズを落としてください。もしくは[チェックツール設定](debugconsole.md)から、最大テクスチャピクセルサイズを再設定してください。||
 |Alert|Texture Alert|このテクスチャは、「Use Crunched Compression」が有効になっていますが、この形式はサポートされていません。|テクスチャの仕様制限を確認し、テクスチャをProject Window内で右クリックし、「Export Compressed Texture」機能を検討してください。|[テクスチャ圧縮](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldOptimization/TextureCompression.html)|
+|Error|Other Error|サポートされていないHeliScriptのエンコーディングが検出されました。|スクリプトファイルがBOMなしのUTF-8エンコーディングで保存されていることを確認してください。必要に応じてテキストエディタを使用してファイルのエンコーディングを変更してください。||
