@@ -20,15 +20,15 @@ VKCItemObjectはItemでありNodeではないため、 [こちら](../hs/hs_over
 2. Rootの子供にCubeを作成します
 3. Rootに `Animation` のコンポーネントをAddします
 4. Cubeが左右に移動するAnimationClipを作成します
-5. Rootを右クリックし、 `VKCヘルプ>モーションのエクスポート` 
+5. Rootを右クリックし、 `VKCHelper>Export Motion` 
 6. 作成されたHEMファイルをAssetsフォルダ以下に保存します
-7. CubeにVKCNodeColliderをAddし、`コライダータイプ` を `クリック対象` にします
-8. Rootを右クリックし、 `VKCヘルプ>VKCオブジェクトを生成`
+7. CubeにVKCNodeColliderをAddし、`ColliderType` を `Clickable` にします
+8. Rootを右クリックし、 `VKCHelper>CrateVKCObject`
 9. Root_VKCItemObjectが生成されます。Rootは不要になったので削除します
-10. 生成されたRoot_VKCItemObjectの `シーン内可視化` をONにします
+10. 生成されたRoot_VKCItemObjectの `ScenePreview` をONにします
 11. オブジェクトモードを `Motion` にします
 12. Hemに作成したHEMファイルをドラッグアンドドロップします
-13. ループ再生をONにします
+13. LoopをONにします
 
 ## Click確認用TextPlaneの配置
 
