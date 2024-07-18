@@ -141,6 +141,7 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Edited loop examples, break, and continue
   - [Built-in Functions - System](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function.html)
     - Added new functions: hsIsMobile and casting functions
+    - Changed data type of hsGetCurrentWorldId from float to string.
   - [Built-in Functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_gui.html)
     - Edited argument of hsCanvasSetGUIPos
   - [Built-in types - Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_var.html)
