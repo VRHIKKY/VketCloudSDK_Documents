@@ -32,7 +32,7 @@ VKCItemObjectはItemでありNodeではないため、 [こちら](../hs/hs_over
 
 ## Click確認用TextPlaneの配置
 
-![item_object](img/movable_clickable_text.png)
+![text](img/movable_clickable_text.png)
 
 1. Textと名前をつけた空のGameObjectを作成
 2. VKCItemTextPlaneをAdd
@@ -70,3 +70,6 @@ component Sample
 
 ## BuildAndRun
 
+![run](img/movable_clickable_run.png)
+
+BuildAndRunをすると上記のようになります。移動するCubeをクリックするとTextのクリック回数が増えていきます。
