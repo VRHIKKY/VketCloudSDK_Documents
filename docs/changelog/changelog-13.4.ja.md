@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月19日更新
+
+## 2024年7月19日 - 変更されたページ
+
+- HeliScript
+  - 組み込み関数
+    - [システム](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function.html)
+      - hsGetCurrentWorldIdのデータタイプをfloatからstringに変更する。
+
+---
+
 ## 2024年7月12日更新
 
 ## 2024年7月12日 - 追加されたページ
