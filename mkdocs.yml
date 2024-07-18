@@ -109,6 +109,7 @@ plugins:
             How to Animate Objects: オブジェクトをアニメーションさせる
             How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
             File Deployment Config: ワールドに任意のファイルを保持させる
+            How to convert animation from Unity assets: Unityアセットのアニメーションを変換する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -284,6 +285,7 @@ nav:
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
+    - How to convert animation from Unity assets: WorldMakingGuide/ConvertAnimationFromUntiyAsset.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
     - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
