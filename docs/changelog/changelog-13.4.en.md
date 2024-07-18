@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 13.4
 
+## July 19 2024 Update
+
+## July 19 2024 - Added Pages
+
+- World Making Guide
+    - [MovableClickableObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+
 ## July 12 2024 Update
 
 ## July 12 2024 - Added Pages

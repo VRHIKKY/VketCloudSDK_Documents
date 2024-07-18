@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月19日更新
+
+## 2024年7月19日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [クリック判定のある移動オブジェクト](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+
 ## 2024年7月12日更新
 
 ## 2024年7月12日 - 追加されたページ
