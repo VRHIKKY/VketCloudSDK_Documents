@@ -8,14 +8,6 @@
   - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/debugconsole/debugmessage.html)
     - Added new debug console message
 
-- First Steps
-  - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/FirstStep/WorldUpload.html)
-    - Updated descriptions and images
-
-- Actions
-  - [Actions Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/ActionsOverview.html)
-    - Organized all Action categories, updated images and content.
-
 ---
 
 ## July 12 2024 Update
