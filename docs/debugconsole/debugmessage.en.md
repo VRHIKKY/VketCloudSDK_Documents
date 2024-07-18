@@ -38,3 +38,4 @@ Note that errors/alerts not on this list (e.g. build error caused by Unity, etc.
 |Alert|Texture Alert|A texture with an unsupported extension is being used.|Please convert to .png.||
 |Alert|Texture Alert|The texture size is larger than the maximum texture size set in the check tool.|Please reduce the texture size or reset the maximum texture size from the [check tool settings](debugconsole.md).||
 |Alert|Texture Alert|The texture pixel size is larger than the maximum texture pixel size set in the check tool.|Please reduce the texture pixel size or reset the maximum texture pixel size from the [check tool settings](debugconsole.md).|| 
+|Alert|Texture Alert|Texture is using crunched compression, which is not supported.|Consider using "Export Compressed Texture" by right clicking the texture.|[Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldOptimization/TextureCompression.html)| 
