@@ -25,6 +25,7 @@ Note that errors/alerts not on this list (e.g. build error caused by Unity, etc.
 |Alert|Mesh Renderer Alert|There are objects without material settings.|Please attach a material from the MeshRenderer of the target object.||
 |Alert|Mesh Renderer Alert|An unsupported shader is being used.|Please assign a shader supported by VketCloud.||
 |Alert|Mesh Renderer Alert|MeshFilter is set to either 'None' or 'Missing'.|Please attach a Mesh to the MeshFilter.||
+|Alert|Mesh Renderer Alert|The settings for the Reflection Probes of Mesh Renderer are set to something other than "Simple".|In the MeshRenderer settings, the Reflection Probes are not set to "Simple." This may significantly affect the appearance of the reflection probes after building.|[Reflection Probe - Unity Manual](https://docs.unity3d.com/ja/2019.4/Manual/class-ReflectionProbe.html){target=_blank}|
 |Alert|Mesh Collider Alert|There are objects that have both a mesh collider and a mesh renderer.|Please separate each component into different objects.||
 |Alert|Mesh Collider Alert|There are mesh colliders that do not have a [VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md).|To enable mesh collider on VketCloud, please add [VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md) to the target object.||
 |Error|Light Map Error|The lightmap size exceeds 2048.|Please set the lightmap size to 2048 or less.||
