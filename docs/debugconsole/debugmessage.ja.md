@@ -30,7 +30,7 @@
 |Alert|Mesh Collider Alert|[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)を持たないメッシュコライダーが存在します。|VketCloud上でメッシュコライダーを有効にするには、対象のオブジェクトに[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)を追加してください。||
 |Error|Light Map Error|ライトマップサイズが2048を超過しています。|ライトマップサイズを2048以下に設定してください。||
 |Error|Light Map Error|ライトマップの圧縮がオンになっています。|ライトマップの圧縮設定をオフにしてください。||
-|Error|Light Map Error|サポートされていないライトマップ形式が選択されています。|ライトマップ形式はRGB24/RGBA32に設定してください。|[リフレクションプローブ - Unity マニュアル](https://docs.unity3d.com/ja/2019.4/Manual/class-ReflectionProbe.html){target=_blank} |
+|Error|Light Map Error|サポートされていないライトマップ形式が選択されています。|ライトマップ形式はRGB24/RGBA32に設定してください。|[リフレクションプローブ - Unity マニュアル](https://docs.unity3d.com/ja/2019.4/Manual/class-ReflectionProbe.html){target=_blank}|
 |Alert|Light Map Alert|PCプラットフォームのLightmap EncodingがNormal Qualityに設定されていません。ライトマップが白飛びする恐れがあります。|プラットフォームのライトマップのエンコーディングを設定するには、「Edit」>「Project Settings」>「Player」>「Other Settings」>「Lightmap Encoding」から行ってください。|[ライトマップ - 技術的な情報 - Unity マニュアル](https://docs.unity3d.com/ja/2019.4/Manual/Lightmaps-TechnicalInformation.html){target=_blank} |
 |Alert|Light Map Alert|AndroidプラットフォームのLightmap EncodingがLow Qualityに設定されていません。ライトマップが白飛びする恐れがあります。|プラットフォームのライトマップのエンコーディングを設定するには、「Edit」>「Project Settings」>「Player」>「Other Settings」>「Lightmap Encoding」から行ってください。|[ライトマップ - 技術的な情報 - Unity マニュアル](https://docs.unity3d.com/ja/2019.4/Manual/Lightmaps-TechnicalInformation.html){target=_blank} |
 |Alert|Transform Error|Transformのスケール値がマイナスのオブジェクトが存在します。|Transformのスケール値を0より大きい値に設定してください。||
