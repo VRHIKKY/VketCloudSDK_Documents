@@ -465,6 +465,8 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v13.x:
+        - v13.6: releasenote/releasenote-13.6.md
+        - v13.5: releasenote/releasenote-13.5.md
         - v13.4: releasenote/releasenote-13.4.md
         - v13.3: releasenote/releasenote-13.3.md
         - v13.2: releasenote/releasenote-13.2.md
