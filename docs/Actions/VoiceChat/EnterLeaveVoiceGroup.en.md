@@ -8,6 +8,6 @@ Leave Voice Group removes a player from the specified voice group.
 
 Mainly intended to be called from an [VKC Item Area Collider](../../VKCComponents/VKCItemAreaCollider.md)'s Action.
 
-|  Label |  function  |
+|  Label |  Function  |
 | ----   | ---- |
 | Name | Specify the name of the voice group |
