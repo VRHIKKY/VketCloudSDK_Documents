@@ -50,6 +50,11 @@
     サーバーの内部処理・通信環境によって、アップロードされたワールドの更新に5~15分程度かかります。<br>
     アップロード / ワールド更新後に`World preview`を選択し、ワールドの更新が反映されていない際はしばらくお待ちください。
 
+!!! note "アップロード時のビルドオプションについて"
+    [VketCloudSDK Settings](../SDKTools/VketCloudSDKSettings.md)では、Build & Run及びワールドデータのアップロード時にエンジン側でファイルを圧縮するか否かを[設定できる機能](../WorldEditingTips/BuildOptions.md)があります。<br>
+    本機能を使うことによって、スマートフォンなど軽量さが要求される環境での動作を改善させられます。<br>
+    アップロードにかかる時間が長い・ビルドに失敗する場合は本設定を見直すか、[ビルドエラー / ワールドが動かないときは](../troubleshooting/BuildError.md)をご参照ください。
+
 ## ワールドの公開について
 
 公開されたワールドは、My Vketの[ワールド一覧](https://vket.com/play/world){target=blank}にて一覧化されて表示されます。

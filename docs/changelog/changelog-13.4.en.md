@@ -21,6 +21,9 @@
 
 ## July 19 2024 - Edited Pages
 
+- First Steps
+  - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/FirstStep/WorldUpload.html)
+    - Added note: Build Options on World Upload
 - SDK Tools
   - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/debugconsole/debugmessage.html)
     - Added new debug console message

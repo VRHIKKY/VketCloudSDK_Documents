@@ -50,6 +50,11 @@ Uploading is also needed for private world testing with multiple people.
     Updating the uploaded world may cause 5 ~ 15 minutes depending on server process and network environment factors.<br>
     If the world hasn't been updated on after upload and selecting `World Preview`, please wait shortly until the update process is completed.
 
+!!! note "Build Options on World Upload"
+    In [VketCloudSDK Settings](../SDKTools/VketCloudSDKSettings.md), there is a feature for [configuring build options](../WorldEditingTips/BuildOptions.md) to enable engine-side file compression on Build & Run and world data upload.<br>
+    Using this feature will improve performance on tight-spec environments such as smartphones.<br>
+    If upload time seems long, or build fails repeatedly, please reconsider this settings, or see [Build Error / How to troubleshoot issues](../troubleshooting/BuildError.md).
+
 ## Publishing the World
 
 The published world will be listed on My Vket's [World List](https://vket.com/en/play/world){target=blank}.
