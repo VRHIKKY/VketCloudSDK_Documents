@@ -2,6 +2,17 @@
 
 ## 2024年7月19日更新
 
+## 2024年7月19日 - 追加されたページ
+
+- アクションについて
+  - ウィンドウ状態
+    - [動画ビューアのフルスクリーン表示を切る](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/MovieViewerFullScreenOff.html)
+    - [動画ビューアのフルスクリーン表示する](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/MovieViewerFullScreenOn.html)
+    - [動画ビューアのフルスクリーン表示トグル](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/MovieViewerFullScreenToggle.html)
+    - [動画ビューアを開く](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/OpenMovieViewer.html)
+    - [汎用ウィンドウステータスを指定する](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/SetGenericWindowState.html)
+
+
 ## 2024年7月19日 - 変更されたページ
 
 - SDK Tools
@@ -14,8 +25,8 @@
 
 ## 2024年7月12日 - 追加されたページ
 
-- アクション
-  - [OpenLinksInCurrentTab](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/Web/OpenwebCurrentTab.html)
+- アクションについて
+  - [現在のタブでWEBページを開く](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/Web/OpenwebCurrentTab.html)
 
 ## 2024年7月12日 - 変更されたページ
 
@@ -28,7 +39,7 @@
   - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/FirstStep/WorldUpload.html)
     - 説明文および画像を更新
 
-- アクション
+- アクションについて
   - [カテゴリー整理](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/ActionsOverview.html)
     - 全てのActionのカテゴリーの整理と、画像更新と内容更新
 
