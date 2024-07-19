@@ -2,11 +2,35 @@
 
 ## July 19 2024 Update
 
+## July 19 2024 - Added Pages
+
+- World Making Guide
+    - [MovableClickableObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+- Actions
+  - WindowState
+    - [Movie Viewer Full Screen Off](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenOff.html)
+    - [Movie Viewer Full Screen On](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenOn.html)
+    - [Movie Viewer Full Screen Toggle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenToggle.html)
+    - [Open Movie Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/OpenMovieViewer.html)
+    - [Set Generic Window State](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/SetGenericWindowState.html)
+- Release Note
+  - [v13.5](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/releasenote/releasenote-13.5.html)
+    - Added new page for v13.5 release note
+  - [v13.6](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/releasenote/releasenote-13.6.html)
+    - Added new page for v13.6 release note
+
 ## July 19 2024 - Edited Pages
 
 - First Steps
   - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/FirstStep/WorldUpload.html)
     - Added note: Build Options on World Upload
+- SDK Tools
+  - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/debugconsole/debugmessage.html)
+    - Added new debug console message
+- HeliScript
+  - Built-in Functions
+    - [System](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function.html)
+      - Changed data type of hsGetCurrentWorldId from float to string.
 
 ---
 
@@ -18,6 +42,11 @@
   - [OpenLinksInCurrentTab](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/Web/OpenwebCurrentTab.html)
 
 ## July 12 2024 - Edited Pages
+
+- VKC Components
+  - VKCItemObject
+    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
+      - Updated descriptions of settings, updated images.
 
 - HeliScript
   - Built-in Classes And Functions
