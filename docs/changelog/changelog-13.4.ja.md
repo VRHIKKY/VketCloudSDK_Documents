@@ -4,6 +4,8 @@
 
 ## 2024年7月19日 - 追加されたページ
 
+- ワールド制作ガイド
+    - [クリック判定のある移動オブジェクト](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
 - アクションについて
   - ウィンドウ状態
     - [動画ビューアのフルスクリーン表示を切る](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/MovieViewerFullScreenOff.html)

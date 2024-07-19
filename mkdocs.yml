@@ -109,6 +109,7 @@ plugins:
             How to Animate Objects: オブジェクトをアニメーションさせる
             How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
             File Deployment Config: ワールドに任意のファイルを保持させる
+            Movable Clickable Object: クリック判定のある移動オブジェクト
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -292,6 +293,7 @@ nav:
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
     - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
+    - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
