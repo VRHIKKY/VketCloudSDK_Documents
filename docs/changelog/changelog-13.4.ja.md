@@ -41,6 +41,11 @@
 
 ## 2024年7月12日 - 変更されたページ
 
+- VKCコンポーネント
+  - VKCItemObject
+    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
+      - 各設定項目の説明、画像を更新
+
 - HeliScript
   - 組み込みクラス・関数
     - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_player.html)

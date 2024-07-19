@@ -40,6 +40,11 @@
 
 ## July 12 2024 - Edited Pages
 
+- VKC Components
+  - VKCItemObject
+    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
+      - Updated descriptions of settings, updated images.
+
 - HeliScript
   - Built-in Classes And Functions
     - [Player](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_player.html)
