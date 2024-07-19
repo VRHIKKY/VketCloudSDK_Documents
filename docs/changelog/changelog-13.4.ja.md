@@ -4,8 +4,6 @@
 
 ## 2024年7月19日 - 追加されたページ
 
-- ワールド制作ガイド
-  - [Unityアセットのアニメーションを変換する](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/ConvertAnimationFromUntiyAsset.html)
 - リリースノート
   - [v13.5](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/releasenote/releasenote-13.5.html)
     - v13.5リリースノートの新規ページ

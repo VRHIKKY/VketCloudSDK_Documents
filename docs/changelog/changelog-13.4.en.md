@@ -4,8 +4,6 @@
 
 ## July 19 2024 - Added Pages
 
-- World Making Guide
-  - [How to convert animation from Unity assets](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ConvertAnimationFromUntiyAsset.html)
 - Release Note
   - [v13.5](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/releasenote/releasenote-13.5.html)
     - Added new page for v13.5 release note
