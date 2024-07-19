@@ -5,7 +5,8 @@
 ## July 19 2024 - Added Pages
 
 - World Making Guide
-    - [MovableClickableObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+  - [How to convert animation from Unity assets](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/ConvertAnimationFromUnityAsset.html)
+  - [Movable　Clickable　Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/MovableClickableObject.html)
 - Actions
   - WindowState
     - [Movie Viewer Full Screen Off](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenOff.html)
@@ -25,12 +26,17 @@
   - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/FirstStep/WorldUpload.html)
     - Added note: Build Options on World Upload
 - SDK Tools
-  - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/debugconsole/debugmessage.html)
+  - [Debug Messages](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/debugconsole/debugmessage.html)
     - Added new debug console message
 - HeliScript
   - Built-in Functions
     - [System](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function.html)
-      - Changed data type of hsGetCurrentWorldId from float to string.
+      - Changed data type of hsGetCurrentWorldId from float to string
+- VKC Components
+  - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+    - Updated descriptions of settings, updated images
+  - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
+    - Updated descriptions of settings, updated images
 
 ---
 
@@ -42,11 +48,6 @@
   - [OpenLinksInCurrentTab](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/Web/OpenwebCurrentTab.html)
 
 ## July 12 2024 - Edited Pages
-
-- VKC Components
-  - VKCItemObject
-    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
-      - Updated descriptions of settings, updated images.
 
 - HeliScript
   - Built-in Classes And Functions

@@ -1,11 +1,13 @@
 # SDK Manual Change Log - Ver 13.4
 
+
 ## 2024年7月19日更新
 
 ## 2024年7月19日 - 追加されたページ
 
 - ワールド制作ガイド
-    - [クリック判定のある移動オブジェクト](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+  - [Unityアセットのアニメーションを変換する](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/ConvertAnimationFromUnityAsset.html)
+  - [クリック判定のある移動オブジェクト](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
 - アクションについて
   - ウィンドウ状態
     - [動画ビューアのフルスクリーン表示を切る](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/MovieViewerFullScreenOff.html)
@@ -27,10 +29,15 @@
 - HeliScript
   - 組み込み関数
     - [システム](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function.html)
-      - hsGetCurrentWorldIdのデータタイプをfloatからstringに変更する。
+      - hsGetCurrentWorldIdのデータタイプをfloatからstringに変更
 - ワールド制作の基本
   - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/FirstStep/WorldUpload.html)
     - アップロード時のビルドオプションについて追記
+- VKCコンポーネント
+  - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+    - 説明文および画像を更新
+  - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
+    - 各設定項目の説明、画像を更新
 
 ---
 
@@ -42,11 +49,6 @@
   - [現在のタブでWEBページを開く](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/Web/OpenwebCurrentTab.html)
 
 ## 2024年7月12日 - 変更されたページ
-
-- VKCコンポーネント
-  - VKCItemObject
-    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
-      - 各設定項目の説明、画像を更新
 
 - HeliScript
   - 組み込みクラス・関数
