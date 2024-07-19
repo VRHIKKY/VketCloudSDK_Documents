@@ -2,6 +2,8 @@
 
 ## July 19 2024 Update
 
+
+
 ## July 19 2024 - Added Pages
 
 - Actions
@@ -11,6 +13,15 @@
     - [Movie Viewer Full Screen Toggle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenToggle.html)
     - [Open Movie Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/OpenMovieViewer.html)
     - [Set Generic Window State](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/SetGenericWindowState.html)
+
+
+## July 19 2024 - Edited Pages
+
+- SDK Tools
+  - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/debugconsole/debugmessage.html)
+    - Added new debug console message
+
+---
 
 ## July 12 2024 Update
 

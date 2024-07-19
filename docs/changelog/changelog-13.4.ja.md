@@ -12,6 +12,15 @@
     - [動画ビューアを開く](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/OpenMovieViewer.html)
     - [汎用ウィンドウステータスを指定する](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/SetGenericWindowState.html)
 
+
+## 2024年7月19日 - 変更されたページ
+
+- SDK Tools
+  - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/debugconsole/debugmessage.html)
+    - 新しいデバッグコンソールメッセージを追加
+
+---
+
 ## 2024年7月12日更新
 
 ## 2024年7月12日 - 追加されたページ
