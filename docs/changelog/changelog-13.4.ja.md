@@ -7,6 +7,37 @@
 
 - ワールド制作ガイド
   - [Unityアセットのアニメーションを変換する](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/ConvertAnimationFromUnityAsset.html)
+  - [クリック判定のある移動オブジェクト](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+- アクションについて
+  - ウィンドウ状態
+    - [動画ビューアのフルスクリーン表示を切る](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/MovieViewerFullScreenOff.html)
+    - [動画ビューアのフルスクリーン表示する](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/MovieViewerFullScreenOn.html)
+    - [動画ビューアのフルスクリーン表示トグル](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/MovieViewerFullScreenToggle.html)
+    - [動画ビューアを開く](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/OpenMovieViewer.html)
+    - [汎用ウィンドウステータスを指定する](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/WindowState/SetGenericWindowState.html)
+- リリースノート
+  - [v13.5](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/releasenote/releasenote-13.5.html)
+    - v13.5リリースノートの新規ページ
+  - [v13.6](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/releasenote/releasenote-13.6.html)
+    - v13.6リリースノートの新規ページ
+
+## 2024年7月19日 - 変更されたページ
+
+- SDK Tools
+  - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/debugconsole/debugmessage.html)
+    - 新しいデバッグコンソールメッセージを追加
+- HeliScript
+  - 組み込み関数
+    - [システム](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function.html)
+      - hsGetCurrentWorldIdのデータタイプをfloatからstringに変更
+- ワールド制作の基本
+  - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/FirstStep/WorldUpload.html)
+    - アップロード時のビルドオプションについて追記
+- VKCコンポーネント
+  - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+    - 説明文および画像を更新
+  - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
+    - 各設定項目の説明、画像を更新
 
 ---
 
@@ -14,14 +45,10 @@
 
 ## 2024年7月12日 - 追加されたページ
 
-- アクション
-  - [OpenLinksInCurrentTab](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/Web/OpenwebCurrentTab.html)
+- アクションについて
+  - [現在のタブでWEBページを開く](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/Web/OpenwebCurrentTab.html)
 
 ## 2024年7月12日 - 変更されたページ
-
-- VKCコンポーネント
-  - [VKCItemField](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
-    - 説明文および画像を更新
 
 - HeliScript
   - 組み込みクラス・関数
@@ -32,7 +59,7 @@
   - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/FirstStep/WorldUpload.html)
     - 説明文および画像を更新
 
-- アクション
+- アクションについて
   - [カテゴリー整理](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/ActionsOverview.html)
     - 全てのActionのカテゴリーの整理と、画像更新と内容更新
 
