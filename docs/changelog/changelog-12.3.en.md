@@ -13,7 +13,7 @@
     - Added mention on preset avatars: 4 types now available!
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/MyAvatarSettings.html)
 - World Making Guide
-  - [How to convert animation from Unity assets](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ConvertAnimationFromUntiyAsset.html)
+  - [How to convert animation from Unity assets](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ConvertAnimationFromUnityAsset.html)
 - SDKTools
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VKCActivityExporter.html)
 - World Editing Tips
