@@ -113,7 +113,7 @@ Right-click in the Hierarchy view and select 3D Item > Create VKC Avatar.
 
 ![ConvertAnimationFromUntiyAsset](img/ConvertAnimationFromUntiyAsset_15.jpg)
 
-In the HEO Object component, open the .heo tab and press the `select` button. In the Select window that opens, choose the .heo file you created earlier. At this time, check the `Enable Bone` item.
+In the VKC Item Object component, open the .heo tab and press the `select` button. In the Select window that opens, choose the .heo file you created earlier. At this time, check the `Enable Bone` item.
 
 ![ConvertAnimationFromUntiyAsset](img/ConvertAnimationFromUntiyAsset_16.jpg)
 

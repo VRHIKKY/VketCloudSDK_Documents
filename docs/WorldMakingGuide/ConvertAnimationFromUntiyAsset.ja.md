@@ -122,7 +122,7 @@ Hierarchyビュー上で右クリックし、`3D Item`＞`Create VKC Avatar`を�
 
 ![ConvertAnimationFromUntiyAsset](img/ConvertAnimationFromUntiyAsset_15.jpg)
 
-HEO Objectのコンポーネント内で.heoタブを開き`select`ボタンを押下すると、Selectウィンドウが開くので、さきほど作成した.heoファイルを選択します。  
+VKC Item Objectのコンポーネント内で.heoタブを開き`select`ボタンを押下すると、Selectウィンドウが開くので、さきほど作成した.heoファイルを選択します。  
 このとき、`Enable Bone`の項目にチェックを入れます。
 
 ![ConvertAnimationFromUntiyAsset](img/ConvertAnimationFromUntiyAsset_16.jpg)
