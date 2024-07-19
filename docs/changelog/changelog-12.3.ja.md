@@ -148,6 +148,7 @@ Ver12.xにて追加されたHeliScriptへの変更を追記：
     - ループの例示、break, continueについて追記
   - [組み込み関数 - システム](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/hs/hs_system_function.html)
     - hsIsMobile, 型変換(キャスト)系関数を追加
+    - hsGetCurrentWorldIdのデータタイプをfloatからstringに変更
   - [組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/hs/hs_system_function_gui.html)
     - hsCanvasSetGUIPosの引数を変更
   - [組み込み型](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/hs/hs_var.html)
