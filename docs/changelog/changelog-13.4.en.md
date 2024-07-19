@@ -13,6 +13,11 @@
     - [Movie Viewer Full Screen Toggle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/MovieViewerFullScreenToggle.html)
     - [Open Movie Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/OpenMovieViewer.html)
     - [Set Generic Window State](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/Actions/WindowState/SetGenericWindowState.html)
+- Release Note
+  - [v13.5](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/releasenote/releasenote-13.5.html)
+    - Added new page for v13.5 release note
+  - [v13.6](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/releasenote/releasenote-13.6.html)
+    - Added new page for v13.6 release note
 
 ## July 19 2024 - Edited Pages
 
