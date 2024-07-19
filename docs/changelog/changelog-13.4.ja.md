@@ -1,11 +1,12 @@
 # SDK Manual Change Log - Ver 13.4
 
+
 ## 2024年7月19日更新
 
 ## 2024年7月19日 - 追加されたページ
 
 - ワールド制作ガイド
-  - [Unityアセットのアニメーションを変換する](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/ConvertAnimationFromUntiyAsset.html)
+  - [Unityアセットのアニメーションを変換する](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/ConvertAnimationFromUnityAsset.html)
 
 ---
 
@@ -17,6 +18,10 @@
   - [OpenLinksInCurrentTab](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/Actions/Web/OpenwebCurrentTab.html)
 
 ## 2024年7月12日 - 変更されたページ
+
+- VKCコンポーネント
+  - [VKCItemField](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+    - 説明文および画像を更新
 
 - HeliScript
   - 組み込みクラス・関数
