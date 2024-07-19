@@ -25,6 +25,11 @@
   - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/debugconsole/debugmessage.html)
     - 新しいデバッグコンソールメッセージを追加
 
+- HeliScript
+  - 組み込み関数
+    - [システム](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function.html)
+      - hsGetCurrentWorldIdのデータタイプをfloatからstringに変更する。
+
 ---
 
 ## 2024年7月12日更新

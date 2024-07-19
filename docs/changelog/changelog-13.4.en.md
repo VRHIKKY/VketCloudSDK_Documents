@@ -24,6 +24,10 @@
 - SDK Tools
   - [デバッグメッセージ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/debugconsole/debugmessage.html)
     - Added new debug console message
+- HeliScript
+  - Built-in Functions
+    - [System](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function.html)
+      - Changed data type of hsGetCurrentWorldId from float to string.
 
 ---
 
