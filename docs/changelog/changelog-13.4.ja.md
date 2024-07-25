@@ -5,7 +5,8 @@
 ## 2024年7月26日 - 変更されたページ
 - VKCコンポーネント
     - VKCSetting
-        - [VKCSettingPlayer](../VketCloudSettings/PlayerSettings.md)
+        - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/PlayerSettings.html)
+            - 画像を更新
 
 ## 2024年7月19日更新
 
