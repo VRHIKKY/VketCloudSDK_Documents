@@ -5,7 +5,7 @@
 ## July 26 2024 - Edited Pages
 
 - VKC Components
-    - [VKC Setting Base](../VketCloudSettings/BasicSettings.md)
+    - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
         - add description of File Deployment Mode
 
 ## July 19 2024 Update
