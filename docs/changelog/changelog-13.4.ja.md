@@ -1,5 +1,11 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月26日更新
+
+## 2024年7月26日 - 変更されたページ
+- VKCコンポーネント
+    - VKCSetting
+        - [VKCSettingPlayer](../VketCloudSettings/PlayerSettings.md)
 
 ## 2024年7月19日更新
 
