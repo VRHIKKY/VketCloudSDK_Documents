@@ -2,78 +2,76 @@
 
 ![HEOProperty_1](./img/HEOProperty_1.jpg)
 
-## 概要
+## Overview
 
-SDK9以降で登場したHEOPropertyを使うことで、Vket Cloudのプロパティ機能を設定することができます。
+By using HEOProperty on SDK Ver9.x and later versions, each Item can have a "Property" when in Vket Cloud worlds.
 
-プロパティ機能はItemに対してキーと値を持たせる方法で、コンポーネント間の値渡しやUnityエディタ上での動作カスタマイズといった使用方法が可能です。
+Property is a set of key and value attributed to an Item, which can be used to pass-by-value between components, customize implementation on the Unity editor, and many other usages.
 
-本ページでは、何かと便利なHEOPropertyとVket Cloudのプロパティ機能について紹介します。
+This page will introduce the concept of Property in Vket Cloud, and how to use the HEOProperty.
 
-## HEOProperty実装手順
+## How to setup HEOProperty
 
-### 1. アイテムとなるオブジェクトにアタッチ
+### 1. Attach HEOProperty to an Item object
 
 ![HEOProperty_2](./img/HEOProperty_2.jpg)
 
-HEOFieldやHEOObject、HEOActivityなど、ビルド時にアイテムとなるオブジェクトに対しHEOPropertyをアタッチします。
+Attach HEOProperty to an object that will be an Item, such as [HEOField](HEOField.md), [HEOObject](HEOObject.md), and [HEOActivity](HEOActivity.md).
 
-### 2. HEOPropertyにKeyとValueを入力
+### 2. Define a Key and Value on HEOProperty
 
-Listの「+」ボタンを押すことで、KeyとValueの入力欄が表示されます。
+By pressing the "+" button on the List, a new Key and Value can be added.
 
-!!! info "プロパティの仕組み"
-    Vket Cloudのプロパティ機能は、キー(Key)に対応する値(Value)を保持する機能です。<br>
-    保持した値はHeliScriptで読み込んだり、上書きしたりすることが可能です。
+!!! info "Definition of Property"
+    "Property" on Vket Cloud is a feature to define a Key and Value set.<br>
+    The defined Value can be read on HeliScript, or written by functions.
 
 ![HEOProperty_3](./img/HEOProperty_3.jpg)
 
-KeyおよびValueはいずれもString型として保持されます。
+Please note that Key and Value will both be a String type.
 
-これで、HEOPropertyの設定が完了です。
+This completes the setup for HEOProperty.
 
 ![HEOProperty_4](./img/HEOProperty_4.jpg)
 
-ビルド後のScene.jsonのproperties項目に入力内容が反映されています。
+The defined properties will stored in the Scene.json file after build.
 
 ---
 
-## HeliScriptでの使い方
+## How to Use on HeliScript
 
-設定したプロパティはHeliScriptで使うことができます。
+The defined property can be used by HeliScript.
 
-ここでは、
+For example, a GameObject Item will hold a property as below:
 
 ```c#
 Key：Vket　Value：Cloud
 Key：SDK　Value：12.1
 ```
 
-と設定されたアイテムGameObjectを例に紹介します。
-
 ### 1. GetProperty
 
-`Item.GetProperty(string Key)`では、アイテムが持つプロパティのKeyに対応するValueを取得します。
+`Item.GetProperty(string Key)` will get a Property Value according to the Item's Key.
 
 ```C#
-// サンプルコード(コンポーネント構造無視)
+// Sample Code (partial)
 
 Item m_Item;
 m_Item = hsItemGet("GameObject");
 
 string Value;
 Value = m_Item.GetProperty("Vket");
-hsSystemWriteLine("%s" % Value); //「Cloud」と出力される
+hsSystemWriteLine("%s" % Value); // output will be "Cloud"
 
 ```
 
 ### 2. SetProperty
 
-`Item.SetProperty(string Key)`では、アイテムが持つプロパティのKeyに対応するValueを変更します。
+`Item.SetProperty(string Key)` will set a Property Value according to the Item's Key.
 
 ```c#
 
-// サンプルコード(コンポーネント構造無視)
+// Sample Code (partial)
 
 Item m_Item;
 m_Item = hsItemGet("GameObject");
@@ -82,19 +80,18 @@ m_Item.SetProperty("Vket","Chan");
 
 string Value;
 Value = m_Item.GetProperty("Vket");
-hsSystemWriteLine("%s" % Value); //「Chan」と出力される
+hsSystemWriteLine("%s" % Value); // output will be "Chan"
 
 ```
 
 ### 3. OnChangedProperty
 
-`OnChangedProperty(string Key, string Value)`は、プロパティの変更が発生した際に実行されるコールバックです。<br>
-SetPropertyで特定のキーに対し同一の値が入力され変更が発生しなかった場合には実行されません。
+`OnChangedProperty(string Key, string Value)` is a callback triggered when a property is changed.<br>
+This will not be triggered if an exact same Value is entered to a Key on SetProperty, and change did not occur as a result.
 
 ```c#
 
-// サンプルコード(コンポーネント構造無視)
-
+// Sample Code (partial)
 Item m_Item;
 m_Item = hsItemGet("GameObject");
 
@@ -110,43 +107,40 @@ public void OnChangedProperty(string Key, string Value){
   }
 }
 
-// 上記の場合、
-// 6行目　SDKは初期Valueが12.1のためコールバック実行なし
-// 7行目　Vketは初期ValueがCloudのためコールバック実行
-// 8行目　SDKはValueが12.1のためコールバック実行
-// 9行目　Vketは7行目でValueがChanとなっているためコールバック実行なし
-// となり、
+// On the example above,
+// Line 6: initial Value for SDK is 12.1, callback will not be triggered
+// Line 7: initial Value for Vket is Cloud, callback will be triggered
+// Line 8: Value for SDK is 12.1, callback will be triggered
+// Line 9: Value for Vket has been changed to Chan on Line 7, callback will not be triggered
+// which will output the result as following:
 // Changed Vket, Chan
 // Vket Changed
 // Changed SDK, 12.2
-// が出力される
 
 ```
 
-HeliScriptでは、以上の3通りの関数が用意されています。
+Property can be used on HeliScript by using the 3 functions above.
 
 ---
 
-## 活用方法
+## Usage
 
-HEOPropertyの活用例を紹介します。
+Here are some ways to use HEOProperty:
 
-### 1. アクティビティへの値渡し
+### 1. Pass-by-Value to an Activity
 
-最もオーソドックスな使い方です。<br>
-アクティビティクラスの作成時、プロパティでカスタマイズ可能要素を作成する際にHEOPropertyを使います。
+This may be the most primary usage!<br>
+On creating an Activity class, HEOProperty can be used to define a configurable value.
 
 ![HEOProperty_5](./img/HEOProperty_5.jpg)
 
-シーンjsonを適切な形に変更した後にHEOActivityで読み込むと下記のようになります。
+By formatting the scene json and reading it by HEOActivity, the result will be as below:
 
 ![HEOProperty_6](./img/HEOProperty_6.jpg)
 
-Valueに値を入れておくことで、初期入力値を設定することができます。
+By adding/editing an initial value, this can be read on the Activity's HeliScript using `GetProperty()`.
 
-アクティビティ側HeliScriptでは`GetProperty()`を使用して入力した値を読み込みます。
-
-### 2. コンポーネント間の値渡し
+### 2. Pass-by-Value to a Component
 
 コンポーネント間で値渡しをする際、以下のようにHEOPropertyを使用できます。<br>  
 ※値を変更する関数を用意して、`hsCallComponentMethod()`を使用しても同じことができます。
@@ -230,7 +224,7 @@ component exampleC{
 
 ---
 
-## 注意点
+## Notes
 
 ### 1. SetProperty / GetPropertyする際は対象となるアイテムに注意
 
