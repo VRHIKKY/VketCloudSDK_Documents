@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月26日更新
+
+## 2024年7月26日 - 変更されたページ
+- VKCコンポーネント
+    - VKCSettings
+        - [VKCSetttingsDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/DespawnHeightSettings.html)
+            - 画像を更新
+
 
 ## 2024年7月19日更新
 
