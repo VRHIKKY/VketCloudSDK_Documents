@@ -109,6 +109,8 @@ plugins:
             How to Animate Objects: オブジェクトをアニメーションさせる
             How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
             File Deployment Config: ワールドに任意のファイルを保持させる
+            How to convert animation from Unity asset: Unityアセットのアニメーションを変換する
+            Movable Clickable Object: クリック判定のある移動オブジェクト
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -183,12 +185,17 @@ plugins:
             Next Motion: 次のモーション
             HeliScript: HeliScript
             Call Script: HeliScriptを呼び出す
-            Physics: 物理
+            Physics Engine: 物理エンジン
             Add Velocity: 速度を追加
             Add/Clear Force: 力を追加/削除
             Set Physics Enable: 物理有効化/無効化
             Set Position/Rotation: 位置/回転を設定
             Window State: ウィンドウ状態
+            Movie Viewer Full Screen On: 動画ビューアのフルスクリーン表示を切る
+            Movie Viewer Full Screen Off: 動画ビューアのフルスクリーン表示する
+            Movie Viewer Full Screen Toggle: 動画ビューアのフルスクリーン表示トグル
+            Open Movie Viewer: 動画ビューアを開く
+            Set Generic Window State: 汎用ウィンドウステータスを指定する
             Voice Chat: ボイスチャット
             Enter/Leave Voice Group: 音声グループに参加/退出
             Web: ウェブ
@@ -284,9 +291,11 @@ nav:
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
+    - How to convert animation from Unity asset: WorldMakingGuide/ConvertAnimationFromUnityAsset.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
     - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
+    - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -412,11 +421,17 @@ nav:
       - Next Motion: Actions/Motion//NextMotion.md
     - HeliScript:
       - Call Script: Actions/HeliScript/CallScript.md
-    - Physics:
+    - Physics Engine:
       - Add Velocity: Actions/PhysicsEngine/PhysicsAddVelocity.md
       - Add/Clear Force: Actions/PhysicsEngine/PhysicsClearAddForce.md
       - Set Physics Enable: Actions/PhysicsEngine/PhysicsSetEnable.md
       - Set Position/Rotation: Actions/PhysicsEngine/PhysicsSetPosRot.md
+    - Window State:
+      - Movie Viewer Full Screen On: Actions/WindowState/MovieViewerFullScreenOn.md
+      - Movie Viewer Full Screen Off: Actions/WindowState/MovieViewerFullScreenOff.md
+      - Movie Viewer Full Screen Toggle: Actions/WindowState/MovieViewerFullScreenToggle.md
+      - Open Movie Viewer: Actions/WindowState/OpenMovieViewer.md
+      - Set Generic Window State: Actions/WindowState/SetGenericWindowState.md
     - Voice Chat:
       - Enter/Leave Voice Group: Actions/VoiceChat/EnterLeaveVoiceGroup.md
     - Web:
@@ -465,6 +480,8 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v13.x:
+        - v13.6: releasenote/releasenote-13.6.md
+        - v13.5: releasenote/releasenote-13.5.md
         - v13.4: releasenote/releasenote-13.4.md
         - v13.3: releasenote/releasenote-13.3.md
         - v13.2: releasenote/releasenote-13.2.md

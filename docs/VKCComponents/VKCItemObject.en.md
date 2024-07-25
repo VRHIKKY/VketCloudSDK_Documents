@@ -1,8 +1,7 @@
 
 # VKC Item Object
 
-![HEOObject_1](img/HEOObject_1.jpg)
-
+![VKCItemObject_1](img/VKCItemObject_1.jpg)
 
 VKC Item Object is used to instantiate a dynamic object, which is based on a pre-exported .heo file, or using a vrm, [hrm](../WorldOptimization/TextureCompression.md), or glb format model.
 
@@ -22,19 +21,23 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 
 ### Advanced Options
 
-![HEOObject_2](img/HEOObject_2.jpg)
+![VKCItemObject_2](img/VKCItemObject_2.jpg)
 
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
 | Clickable | false | Toggle mouse interaction on object. |
 | Auto Loading | true | Used for setting up [Dynamic Loading](VKCItemField.md). <br> The object will be loaded on the first load by default.  |
+| Light Scattering Target | true | Sets whether the object is affected by scattering when [Light Scattering](../VketCloudSettings/RenderingSettings.md) is enabled. |
 | Shadow Caster | false | If [Shadow Mapping](../VketCloudSettings/RenderingSettings.md) is enabled, this sets the object's shadow to be casted on other shadow receivers. |
 | Shadow Receiver | false | If [Shadow Mapping](../VketCloudSettings/RenderingSettings.md) is enabled, this sets the object to receive shadows from other objects. |
 | Foreground Rendering | false | Sets Foreground Rendering (render without applying depth value). |
+| Depth Buffer Target | true | Sets whether to write to the depth buffer. |
+| Opaque Alpha Blend | false | If this sets true, it forces alpha-blended rendering to be performed in the opaque rendering pass. | 
+| Alpha Animation Target | false|Here's the English translation:
+Sets whether to make objects transparent when they obstruct the camera's view in order to maintain visibility. For more details, please refer to [VKCNodeAlphaAnimation](../VKCComponents/VKCNodeAlphaAnimation.md). |
 | Item Render Priority || Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
 | Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
 | End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
-| HeliScript | | Sets the object to be a target for HeliScripts designated in [VKC Attribute Script](VKCAttributeScript.md). <br>If a [VKC Attribute Script](VKCAttributeScript.md) is not in scene, an explanation for this setting will be shown. |
 
 ## Mode - Pose Settings
 
