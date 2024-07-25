@@ -19,6 +19,7 @@ BasicSettings handles the main settings of the world.
 | `Min Distance (m)`| 5.0 | Designate start of voice attenuation by meter. |
 | `Max Distance (m)`| 10.0 | Designate end of voice attenuation by meter. |
 | `HeliScript` | blank | The HeliScripts used in this world will be listed here. HeliScripts designated in components such as [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md) will be listed automatically. |
+| `File Deployment Mode` | Default | When custom mode, the data to be uploaded can contain various files using ScriptableObjects. For details, refer to the [File Deployment Config](../WorldMakingGuide/FileDeploymentConfig.md) page.|
 
 !!! note
     While `HeliScript` elements will be added automatically, it may become a `None` or `Missing` entry due to deleting files, etc.

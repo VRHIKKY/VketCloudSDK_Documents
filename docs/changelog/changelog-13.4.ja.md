@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月26日更新
+
+## 2024年7月26日 - 変更されたページ
+
+- VKCコンポーネント
+    - [VKC Setting Base](../VketCloudSettings/BasicSettings.md)
+        - File Deployment Modeについて追記
 
 ## 2024年7月19日更新
 
