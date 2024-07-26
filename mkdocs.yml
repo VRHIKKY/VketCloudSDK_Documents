@@ -275,7 +275,7 @@ nav:
     # Basic
     - Basic Settings: VketCloudSettings/BasicSettings.md
     - Player Settings: VketCloudSettings/PlayerSettings.md
-    - Despawn Height Settings: VketCloudSettings/DespawnHeightSettings.md
+    - VKCSettingDespawnHeight: VketCloudSettings/DespawnHeightSettings.md
     # Advanced
     - Rendering Settings: VketCloudSettings/RenderingSettings.md
     - Camera Settings: VketCloudSettings/CameraSettings.md

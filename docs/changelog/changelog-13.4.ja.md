@@ -5,6 +5,8 @@
 ## 2024年7月26日 - 変更されたページ
 - VKCコンポーネント
     - VKCSetting
+        - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/DespawnHeightSettings.html)
+            - 説明文および画像を更新
         - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/PlayerSettings.html)
             - 画像を更新
 
