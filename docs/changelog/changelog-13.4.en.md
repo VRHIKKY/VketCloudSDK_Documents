@@ -8,6 +8,13 @@
   - VKCItem
     - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
       - Updated descriptions and images
+  - VKCSetting
+      - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/DespawnHeightSettings.html)
+          - Updated descriptions, updated images
+      - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/PlayerSettings.html)
+          - updated images
+      - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
+          - add description of File Deployment Mode
 
 ## July 19 2024 Update
 
