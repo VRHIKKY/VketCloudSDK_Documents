@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年7月26日更新
+
+## 2024年7月26日 - 変更されたページ
+
+- VKCコンポーネント
+  - VKCItem
+    - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+      - 説明文および画像を更新
+
 ## 2024年7月12日更新
 
 ## 2024年7月12日 - 追加されたページ
