@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 13.4
 
+## July 26 2024 Update
+
+## July 26 2024 - Edited Pages
+
+- VKC Components
+    - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
+        - add description of File Deployment Mode
+
 ## July 19 2024 Update
 
 ## July 19 2024 - Added Pages
