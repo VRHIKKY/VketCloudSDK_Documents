@@ -5,9 +5,9 @@
 ## July 26 2024 - Edited Pages
 
 - VKCComponents
-    - VKCSettings
-        - [VKCSetttingsDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/DespawnHeightSettings.html)
-            - updated images
+    - VKCSetting
+        - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/DespawnHeightSettings.html)
+            - Updated descriptions, updated images
 
 ## July 19 2024 Update
 
