@@ -5,8 +5,17 @@
 ## July 26 2024 - Edited Pages
 
 - VKC Components
+  - VKCItem
+    - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+      - Updated descriptions and images
   - VKCSetting
-    - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingNameplate.html)
+      - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/DespawnHeightSettings.html)
+          - Updated descriptions, updated images
+      - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/PlayerSettings.html)
+          - updated images
+      - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
+          - add description of File Deployment Mode
+      - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingNameplate.html)
       - Updated images
 
 ## July 19 2024 Update
@@ -46,8 +55,6 @@
     - Updated descriptions of settings, updated images
   - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
     - Updated descriptions of settings, updated images
-
----
 
 ## July 12 2024 Update
 
