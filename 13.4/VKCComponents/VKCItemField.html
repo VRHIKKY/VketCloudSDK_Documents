@@ -699,7 +699,7 @@
         
   
   <span class="md-ellipsis">
-    Despawn Height Settings
+    VKCSettingDespawnHeight
   </span>
   
 
@@ -2675,6 +2675,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      高度な設定
+    </span>
+  </a>
   
 </li>
       
@@ -9510,6 +9519,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      高度な設定
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -9526,7 +9544,7 @@
 
 
 <h1 id="vkc-item-field">VKC Item Field</h1>
-<p><img alt="HEOField" src="img/HEOField.jpg" /></p>
+<p><img alt="VKC Item Field" src="img/VKCItemField1.jpg" /></p>
 <p>VKC Item Fieldがアタッチされたオブジェクトは、BuildAndRun時に.heoとしてパックされます。.heoファイルに含めたいオブジェクトは、必ずVKC Item Field以下に配置してください。</p>
 <p>VKC Item Fieldの詳しい配置方法については<a href="../WorldMakingGuide/HEOFieldTips.html">VKC Item Fieldの使い方</a>を参照ください。</p>
 <table>
@@ -9539,14 +9557,14 @@
 </thead>
 <tbody>
 <tr>
+<td>Show</td>
+<td>true</td>
+<td>オブジェクトの表示状態を管理します</td>
+</tr>
+<tr>
 <td>Auto Loading</td>
 <td>true</td>
 <td>動的ローディングの有効/無効を切り替えます</td>
-</tr>
-<tr>
-<td>Look at Camera</td>
-<td>false</td>
-<td>カメラ方向に対して常に正面を向くようになります</td>
 </tr>
 <tr>
 <td>Load Collider</td>
@@ -9558,18 +9576,8 @@
 <td></td>
 <td>範囲に入った際に特定のオブジェクトをアンロードするコライダーを生成します</td>
 </tr>
-<tr>
-<td>Overrides</td>
-<td></td>
-<td>ワールド入場時に<code>Overrides</code>にて設定された<code>Node Name</code>に指定したオブジェクトにアタッチしている<a href="VKCNodeVideoTrigger.html">VKC Node Video Trigger</a>に紐づいた動画を、<code>Video Clip</code>に指定した動画で上書きします。</td>
-</tr>
 </tbody>
 </table>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>Overrides項目は現在実装中の機能です。<br>
-本機能については今後のアップデートで使い方が更新される予定です。</p>
-</div>
 <div class="admonition note info">
 <p class="admonition-title">Note</p>
 <p>VKC Item Fieldはシーンに複数配置することができます。</p>
@@ -9588,7 +9596,7 @@
 <li>ロードコライダーの項目を開き、「ロードコライダー生成」を押してロードに使うエリアコライダーを生成する。</li>
 <li>生成されたロード用のコライダーを最初から読み込まれるVKC Item Fieldの子オブジェクトにし、位置や範囲を調整する。</li>
 </ol>
-<p><img alt="HEOField" src="img/HEOFieldAutoLoading.png" /></p>
+<p><img alt="VKC Item Field" src="img/VKCItemField2.jpg" /></p>
 <h3 id="_3">アンロード発火側</h3>
 <ol>
 <li>アンロードコライダーの項目を開き、「アンロードコライダー生成」を押してロードに使うエリアコライダーを生成する。</li>
@@ -9598,6 +9606,45 @@
 <p class="admonition-title">Note</p>
 <p>設定されたコライダーは、各項目の右側にあるXボタンを押すことでリストから消すことができますが、オブジェクトは残ったままになるので、そちらは手動で削除が必要になります。</p>
 </div>
+<hr />
+<h2 id="_4">高度な設定</h2>
+<p><img alt="VKC Item Field" src="img/VKCItemField3.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clickable</td>
+<td>false</td>
+<td>クリックできるようになります</td>
+</tr>
+<tr>
+<td>Alpha Animation Target</td>
+<td>false</td>
+<td>カメラを遮ったときに透過されます</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>アイテムレンダー優先度を設定します</td>
+</tr>
+<tr>
+<td>Collision Detection</td>
+<td>true</td>
+<td>オブジェクトの衝突判定を検知するか切り替えます</td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>true</td>
+<td>撮影モードで表示されるかどうかを指定します</td>
+</tr>
+</tbody>
+</table>
 
 
 

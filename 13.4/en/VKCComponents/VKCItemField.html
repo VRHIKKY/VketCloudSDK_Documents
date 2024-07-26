@@ -699,7 +699,7 @@
         
   
   <span class="md-ellipsis">
-    Despawn Height Settings
+    VKCSettingDespawnHeight
   </span>
   
 
@@ -2675,6 +2675,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
   
 </li>
       
@@ -9510,6 +9519,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -9526,7 +9544,7 @@
 
 
 <h1 id="vkc-item-field">VKC Item Field</h1>
-<p><img alt="VKC Item Field" src="../../VKCComponents/img/HEOField.jpg" /></p>
+<p><img alt="VKC Item Field" src="../../VKCComponents/img/VKCItemField1.jpg" /></p>
 <p>Objects with VKC Item Field attached will be packed into .heo during BuildAndRun. Make sure to set objects you want to include in the .heo file as children of the object with VKC Item Field.</p>
 <p>For tips on how to place VKC Item Field, see <a href="../WorldMakingGuide/HEOFieldTips.html">Tips on using VKC Item Field</a>.</p>
 <table>
@@ -9539,14 +9557,14 @@
 </thead>
 <tbody>
 <tr>
+<td>Show</td>
+<td>true</td>
+<td>Sets the display state of objects</td>
+</tr>
+<tr>
 <td>Auto Loading</td>
 <td>true</td>
 <td>Activates Dynamic Loading</td>
-</tr>
-<tr>
-<td>Look at Camera</td>
-<td>false</td>
-<td>Make the image face towards the camera at all times.</td>
 </tr>
 <tr>
 <td>Load Collider</td>
@@ -9558,18 +9576,8 @@
 <td></td>
 <td>Generates a collider that will unload a designated object on enter</td>
 </tr>
-<tr>
-<td>Overrides</td>
-<td></td>
-<td>On Entering the world, the videoclip in the <a href="VKCNodeVideoTrigger.html">VKC Node Video Trigger</a> attached to the object designated by <code>Node Name</code> will be overwrited, using the <code>Video Clip</code> set in <code>Overrides</code> property.</td>
-</tr>
 </tbody>
 </table>
-<div class="admonition note caution">
-<p class="admonition-title">Note</p>
-<p>The Overrides property is currently under progress.<br>
-Further usage are to be added by future updates.</p>
-</div>
 <div class="admonition note info">
 <p class="admonition-title">Note</p>
 <p>Multiple VKC Item Fields can be placed in the scene.</p>
@@ -9588,7 +9596,7 @@ If the scene data is migrated from past SDK versions, the <code>Billboard</code>
 <li>Open the load collider item and press "Generate load collider" to generate an area collider to be used for loading.</li>
 <li>Set the generated collider for loading as a child object of VKC Item Field that is loaded from the beginning, and adjust the position and range.</li>
 </ol>
-<p><img alt="HEOField" src="../../VKCComponents/img/HEOFieldAutoLoading.jpg" /></p>
+<p><img alt="VKC Item Field" src="../../VKCComponents/img/VKCItemField2.jpg" /></p>
 <h3 id="unload-initiator">Unload initiator</h3>
 <ol>
 <li>Open the Unload Collider item and press "Generate Unload Collider" to generate an area collider to be used for loading.</li>
@@ -9598,6 +9606,45 @@ If the scene data is migrated from past SDK versions, the <code>Billboard</code>
 <p class="admonition-title">Note</p>
 <p>The set colliders can be deleted from the list by pressing the X button on the right side of each item, but the objects will remain and must be deleted manually.</p>
 </div>
+<hr />
+<h2 id="advanced-options">Advanced Options</h2>
+<p><img alt="VKC Item Field" src="../../VKCComponents/img/VKCItemField3.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clickable</td>
+<td>false</td>
+<td>Allows click the object</td>
+</tr>
+<tr>
+<td>Alpha Animation Target</td>
+<td>false</td>
+<td>Becomes transparent when obstructing the camera</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>Sets the item rendering priority</td>
+</tr>
+<tr>
+<td>Collision Detection</td>
+<td>true</td>
+<td>Toggles whether object collision detection is enabled</td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>true</td>
+<td>Specifies whether it is displayed in photo mode</td>
+</tr>
+</tbody>
+</table>
 
 
 
