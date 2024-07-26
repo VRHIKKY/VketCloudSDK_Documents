@@ -7,7 +7,12 @@
     - VKCSetting
         - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/DespawnHeightSettings.html)
             - 説明文および画像を更新
+        - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/PlayerSettings.html)
+            - 画像を更新
 
+- VKCコンポーネント
+    - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
+        - File Deployment Modeについて追記
 
 ## 2024年7月19日更新
 

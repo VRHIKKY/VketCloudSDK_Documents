@@ -19,6 +19,7 @@ BasicSettingsでは、ワールドの基本的な設定を編集できます。
 | `Min Distance (m)`| 5.0 | 減衰を開始する距離をメートル単位で指定します。 |
 | `Max Distance (m)`| 10.0 | 減衰を終了する距離をメートル単位で指定します。|
 | `HeliScript` | 空欄 | ワールド内で使用されるHeliScriptが一覧表示されます。[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)などで指定したHeliScriptは本項目にリストアップされます。|
+| `File Deployment Mode` | Default | アップロードするデータに様々なファイルをScriptableObjectで保持させることができます。詳細は[解説ページ](../WorldMakingGuide/FileDeploymentConfig.md)を確認ください。|
 
 !!! note
     `HeliScript`は基本的には自動で項目が追加されますが、ファイルの削除などによって項目に`None`(未指定)または`Missing`が発生する場合があります。
