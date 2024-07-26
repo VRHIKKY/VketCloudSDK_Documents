@@ -7,6 +7,9 @@
     - VKCSetting
         - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/PlayerSettings.html)
             - updated images
+- VKC Components
+    - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
+        - add description of File Deployment Mode
 
 ## July 19 2024 Update
 
