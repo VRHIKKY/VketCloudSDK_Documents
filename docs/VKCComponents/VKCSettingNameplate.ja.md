@@ -1,18 +1,18 @@
 # VKC Setting Nameplate
 
-![HEONameplate_1](img/HEONameplate_1.jpg)
+![VKCSettingNameplate_1](img/VKCSettingNameplate_1.jpg)
 
 VKC Setting Nameplateは、プレイヤーアバターの頭の上に表示されるネームプレートをカスタマイズしたい場合に設定するコンポーネントです。
 
 Listに各設定要素を追加することで、ビルド後に表示されるプレイヤーのネームプレートをカスタマイズすることができます。
 
-![HEONameplate_2](img/HEONameplate_2.jpg)
+![VKCSettingNameplate_2](img/VKCSettingNameplate_2.jpg)
 
 ---
 
 ## Avatar Icon
 
-![HEONameplate_3](img/HEONameplate_3.jpg)
+![VKCSettingNameplate_3](img/VKCSettingNameplate_3.jpg)
 
 ネームプレート左のアバターアイコンの表示を設定します。
 
@@ -26,7 +26,7 @@ Listに各設定要素を追加することで、ビルド後に表示される�
 
 ## Base
 
-![HEONameplate_4](img/HEONameplate_4.jpg)
+![VKCSettingNameplate_4](img/VKCSettingNameplate_4.jpg)
 
 ネームプレートの土台部分の表示を設定します。
 
@@ -36,7 +36,7 @@ Listに各設定要素を追加することで、ビルド後に表示される�
 
 ## Image
 
-![HEONameplate_5](img/HEONameplate_5.jpg)
+![VKCSettingNameplate_5](img/VKCSettingNameplate_5.jpg)
 
 ネームプレート以外に画像を追加したい場合に設定します。
 
@@ -50,11 +50,11 @@ Listに各設定要素を追加することで、ビルド後に表示される�
 
 本設定によって、例として以下のような白い画像を設定することができます。
 
-![HEONameplate_9](img/HEONameplate_9.jpg)
+![VKCSettingNameplate_9](img/VKCSettingNameplate_9.jpg)
 
 ## Mic Icon
 
-![HEONameplate_6](img/HEONameplate_6.jpg)
+![VKCSettingNameplate_6](img/VKCSettingNameplate_6.jpg)
 
 マイクのアイコンの表示を設定します。
 
@@ -68,7 +68,7 @@ Listに各設定要素を追加することで、ビルド後に表示される�
 
 ## Name
 
-![HEONameplate_7](img/HEONameplate_7.jpg)
+![VKCSettingNameplate_7](img/VKCSettingNameplate_7.jpg)
 
 プレイヤーの名前の表示を設定します。
 
@@ -78,7 +78,7 @@ Listに各設定要素を追加することで、ビルド後に表示される�
 
 ## Text
 
-![HEONameplate_8](img/HEONameplate_8.jpg)
+![VKCSettingNameplate_8](img/VKCSettingNameplate_8.jpg)
 
 プレイヤー名以外にテキストを表示したい場合に設定します。
 

@@ -15,6 +15,8 @@
           - updated images
       - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
           - add description of File Deployment Mode
+      - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingNameplate.html)
+      - Updated images
 
 ## July 19 2024 Update
 

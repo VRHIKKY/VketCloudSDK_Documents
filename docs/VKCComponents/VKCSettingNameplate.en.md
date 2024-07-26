@@ -1,18 +1,18 @@
 # VKC Setting Nameplate
 
-![HEONameplate_1](img/HEONameplate_1.jpg)
+![VKCSettingNameplate_1](img/VKCSettingNameplate_1.jpg)
 
 VKC Setting Nameplate is the component used for customizing the nameplate shown above the player avatar.
 
 By adding each elements in the List, the player nameplate will be customized after build according to the settings.
 
-![HEONameplate_2](img/HEONameplate_2.jpg)
+![VKCSettingNameplate_2](img/VKCSettingNameplate_2.jpg)
 
 ---
 
 ## Avatar Icon
 
-![HEONameplate_3](img/HEONameplate_3.jpg)
+![VKCSettingNameplate_3](img/VKCSettingNameplate_3.jpg)
 
 This customizes the avatar icon on the left of the nameplate.
 
@@ -26,7 +26,7 @@ This customizes the avatar icon on the left of the nameplate.
 
 ## Base
 
-![HEONameplate_4](img/HEONameplate_4.jpg)
+![VKCSettingNameplate_4](img/VKCSettingNameplate_4.jpg)
 
 This customizes the base element of the nameplate.
 
@@ -36,7 +36,7 @@ This customizes the base element of the nameplate.
 
 ## Image
 
-![HEONameplate_5](img/HEONameplate_5.jpg)
+![VKCSettingNameplate_5](img/VKCSettingNameplate_5.jpg)
 
 This adds an image to be displayed other than the nameplate.
 
@@ -50,11 +50,11 @@ This adds an image to be displayed other than the nameplate.
 
 As an example, by using this setting a white image can be displayed as below:
 
-![HEONameplate_9](img/HEONameplate_9.jpg)
+![VKCSettingNameplate_9](img/VKCSettingNameplate_9.jpg)
 
 ## Mic Icon
 
-![HEONameplate_6](img/HEONameplate_6.jpg)
+![VKCSettingNameplate_6](img/VKCSettingNameplate_6.jpg)
 
 This customizes the Mic Icon element of the nameplate.
 
@@ -68,7 +68,7 @@ This customizes the Mic Icon element of the nameplate.
 
 ## Name
 
-![HEONameplate_7](img/HEONameplate_7.jpg)
+![VKCSettingNameplate_7](img/VKCSettingNameplate_7.jpg)
 
 This customizes the name element of the nameplate.
 
@@ -78,7 +78,7 @@ This customizes the name element of the nameplate.
 
 ## Text
 
-![HEONameplate_8](img/HEONameplate_8.jpg)
+![VKCSettingNameplate_8](img/VKCSettingNameplate_8.jpg)
 
 This adds a text element to display other than the player's name.
 

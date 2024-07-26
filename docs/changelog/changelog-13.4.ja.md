@@ -15,6 +15,8 @@
         - 画像を更新
     - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
         - File Deployment Modeについて追記
+    - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingNameplate.html)
+      - 画像を更新
 
 ## 2024年7月19日更新
 
