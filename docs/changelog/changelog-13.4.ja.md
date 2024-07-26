@@ -3,14 +3,16 @@
 ## 2024年7月26日更新
 
 ## 2024年7月26日 - 変更されたページ
-- VKCコンポーネント
-    - VKCSetting
-        - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/DespawnHeightSettings.html)
-            - 説明文および画像を更新
-        - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/PlayerSettings.html)
-            - 画像を更新
 
 - VKCコンポーネント
+  - VKCItem
+    - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+      - 説明文および画像を更新
+  - VKCSetting
+    - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/DespawnHeightSettings.html)
+        - 説明文および画像を更新
+    - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/PlayerSettings.html)
+        - 画像を更新
     - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
         - File Deployment Modeについて追記
 
@@ -51,8 +53,6 @@
     - 説明文および画像を更新
   - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
     - 各設定項目の説明、画像を更新
-
----
 
 ## 2024年7月12日更新
 
