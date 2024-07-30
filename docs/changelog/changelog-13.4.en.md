@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 2 2024 Update
+
+## August 2 2024 - Edited Pages
+
+- Vket Cloud Settings
+    - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
+        - Updated descriptions and images
+
 ## July 26 2024 Update
 
 ## July 26 2024 - Edited Pages
