@@ -1,5 +1,17 @@
 # SDK Manual Change Log - Ver 13.4
 
+## Augast 3 2024 Update
+
+## Augast 3 2024 - Edited Pages
+
+- VKC Components
+  - VKCSettings
+    - VKCSettingAvatar
+      - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
+        - Updated descriptions and images
+
+---
+
 ## July 26 2024 Update
 
 ## July 26 2024 - Edited Pages
