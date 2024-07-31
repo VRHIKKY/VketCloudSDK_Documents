@@ -2,18 +2,18 @@
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-VketCloudSDKでは、[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
+VketCloudSDKでは、[VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md)コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
 動くオブジェクトがワールド上に設置されることで、見栄えが大きく向上します。
 
 各ステップで躓いた際は[オブジェクトをアニメーションさせる - できないときは](PropAnimation_TroubleShooting.md)を参照してください。
 
-## HEOAnimationのアタッチ
+## VKC Node Rotate Animationのアタッチ
 
-[HEOAnimation](../HEOComponents/HEOAnimation.md)コンポーネントの`使い方`項目をご参照ください。
+[VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md)コンポーネントの`使い方`項目をご参照ください。
 
-## HEOObjectにアニメーションを付与する方法
+## VKC Item Objectにアニメーションを付与する方法
 
-オブジェクトを.heoに書き出し、アニメーションを.hemに書き出し、シーン上に配置することで、[HEOAnimation](../HEOComponents/HEOAnimation.md)より自由に動くオブジェクトを作成することができます。
+オブジェクトを.heoに書き出し、アニメーションを.hemに書き出し、シーン上に配置することで、[VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md)より自由に動くオブジェクトを作成することができます。
 
 なお、ここで使用できるアニメーションのパラメータは**Transformの値変更のみ**です。
 
@@ -132,7 +132,7 @@ Legacyにチェックを入れます。
 
 ![PropAnimation_18](./img/PropAnimation_18.jpg)
 
-新しく空のオブジェクトを作成してInspectorタブを選択し、Add Componentを押下し、[HEOObject](../HEOComponents/HEOObject.md)を追加します。
+新しく空のオブジェクトを作成してInspectorタブを選択し、Add Componentを押下し、[VKC Item Object](../VKCComponents/VKCItemObject.md)を追加します。
 
 ![PropAnimation_19](./img/PropAnimation_19.jpg)
 
@@ -155,17 +155,17 @@ Object ModeをMotionに変更し、Add(丸ボタン)を選択し、表示され�
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
 !!! warning ".heo書き出しの注意点"
-    - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、[HEOObject](../HEOComponents/HEOObject.md)にてシーン上に配置した際に、[HEOObject](../HEOComponents/HEOObject.md)のPosition + 書き出し時のPositionになります。<br>
+    - 元オブジェクトのPositionを(0,0,0)にせずに書き出しした場合、[VKC Item Object](../VKCComponents/VKCItemObject.md)にてシーン上に配置した際に、[VKC Item Object](../VKCComponents/VKCItemObject.md)のPosition + 書き出し時のPositionになります。<br>
     - 元のオブジェクトが当たり判定を持っていた場合、書き出し後のオブジェクトも当たり判定を持ちます。<br>
     - .hemにてオブジェクトを移動させた場合であってもオブジェクトの持つ当たり判定情報が移動することはありません。<br>
     - Motion欄の1番目に入れたアニメーションはワールド起動時に自動再生されます。<br>
         自動再生したくない場合は、Motion欄の1番目は空欄にしてください。
 
-## HEOObjectに付与したアニメーションの制御
+## VKC Item Objectに付与したアニメーションの制御
 
 ### Actionを使用した制御
 
-[PlayItem](../Actions/Item/PlayStopItem.md)で[HEOObject](../HEOComponents/HEOObject.md)に付与したアニメーションの再生が可能です。<br>
+[PlayItem](../Actions/Item/PlayStopItem.md)で[VKC Item Object](../VKCComponents/VKCItemObject.md)に付与したアニメーションの再生が可能です。<br>
 Indexは[PlayItem](../Actions/Item/PlayStopItem.md)にObject TypeがMotionのオブジェクトを入れた際に出現します。
 
 !!! note "PlayItemについて"
@@ -177,7 +177,7 @@ Indexは[PlayItem](../Actions/Item/PlayStopItem.md)にObject TypeがMotionのオ
 
 ![PropAnimation_23](./img/PropAnimation_23.jpg)
 
-Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてHEOActionTriggerを追加します。<br>
+Sphereオブジェクトを新規作成して右隣に配置し、InspectorタブからAdd ComponentしてVKC Attribute Action Triggerを追加します。<br>
 
 ![PropAnimation_24](./img/PropAnimation_24.jpg)
 
@@ -205,7 +205,7 @@ Targetの欄で.heoと.hemを追加したオブジェクトを選択したし、
 HeliScriptを使用して、アニメーションの制御を行うことができます。<br>
 例として、以下のように3秒ごとにアニメーションの再生を繰り返すHeliScriptが作成できます。
 
-ここでは[Itemクラス](../hs/hs_class_item.md)のChangeMotion()を使用して[HEOObject](../HEOComponents/HEOObject.md)内のモーションを制御しています。<br>
+ここでは[Itemクラス](../hs/hs_class_item.md)のChangeMotion()を使用して[VKC Item Object](../VKCComponents/VKCItemObject.md)内のモーションを制御しています。<br>
 
 ```
 component SwitchAnimation
@@ -218,7 +218,7 @@ component SwitchAnimation
 
     public SwitchAnimation() //コンストラクタ
     {
-        m_RotationCube = hsItemGet("CubeRotation_HEO"); //HEOObjectをアタッチしているオブジェクト名を入れる
+        m_RotationCube = hsItemGet("CubeRotation_HEO"); //VKC Item Objectをアタッチしているオブジェクト名を入れる
     }
 
     public void Update()
@@ -243,9 +243,9 @@ component SwitchAnimation
 }
 ```
 
-作成したHeliScriptは、HEOScriptを使用してワールド内に配置します。
+作成したHeliScriptは、VKC Attribute Scriptを使用してワールド内に配置します。
 
-![PropAnimation_27](./img/propanimation_27.jpg)
+![PropAnimation_27](./img/PropAnimation_27.jpg)
 
 ワールドをビルドすると、該当のHeliScriptが動作してアニメーションを制御します。
 

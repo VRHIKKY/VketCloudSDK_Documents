@@ -12,6 +12,8 @@
   - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/AvatarSettings.html)
     - Added mention on preset avatars: 4 types now available!
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/MyAvatarSettings.html)
+- World Making Guide
+  - [How to convert animation from Unity assets](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ConvertAnimationFromUnityAsset.html)
 - SDKTools
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VKCActivityExporter.html)
 - World Editing Tips
@@ -33,6 +35,7 @@
 - External API
   - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/JsVal.html)
 　- [Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/BrokerAPI.html)
+- [HEOCylinderCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOCylinderCollider.html)
 
 ## Edited Pages
 
@@ -61,6 +64,8 @@
   - [How to Animate Objects - Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation_TroubleShooting.html)
     - Revised solution for error caused when meshes without uv2 is handled by MeshRenderer
     - Added caution on allocating multiple animations when committing Export Motion
+  - [アバターファイル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/AvatarFile.html)
+    - Revised the example of bones name
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
@@ -74,6 +79,8 @@
   - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldOptimization/TextureCompression.html)
     - Added overview of Texture Import Viewer
 - HEO Components
+  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOPlane.html)
+    - Updated the default value of the component
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOActivity.html)
     - Added info on Scene Preview and Advanced Settings
   - [HEOAreacollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOAreacollider.html)

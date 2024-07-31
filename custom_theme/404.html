@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+{% block extrahead %}
+<script>
+    // リダイレクト用のオブジェクトを作成
+    const redirects = {
+        "/ja": "",
+    };
+
+    (function redirect(){
+        const currentPath = window.location.pathname;
+        for (const [key, value] of Object.entries(redirects)) {
+            if (currentPath.startsWith(key)) {
+                const newPath = currentPath.substring(key.length);
+                const redirectUrl = value + newPath + (window.location.search ? window.location.search : '') + (window.location.hash ? window.location.hash : '');
+                window.location.href = `${window.location.origin}${redirectUrl}`;
+                return;
+            }
+        }
+    })();		
+</script>
+{% endblock %}
+{% block content %}
+  <h1>404</h1>
+{% endblock %}

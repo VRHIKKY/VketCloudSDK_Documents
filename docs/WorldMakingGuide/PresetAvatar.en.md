@@ -21,7 +21,7 @@ VketCloudSDK stores avatar infomation in an AvatarFile format, using the file to
 
 ![PresetAvatar_2](./img/PresetAvatar_2.jpg)
 
-By pressing `CreateAvatarFile` in the Avatars tab of [HEOWorldSetting](../HEOComponents/HEOWorldSetting.md), a new AvatarFile is created.
+By pressing `CreateAvatarFile` in the Avatars tab of [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md), a new AvatarFile is created.
 
 By pressing the +/- on the bottom right of the AvatarFile list, a new article on the preset avatar list will be added/deleted.<br>
 The AvatarFile will not be deleted even if the list article is deleted.

@@ -9,17 +9,17 @@ In Vket Cloud, collision and physics can be simulated by using Unity colliders a
 
 ## How to Use the Physics Engine
 
-1\. To apply physics simulation to game objects, attach "Unity Collider" and [HEOCollider](../HEOComponents/HEOCollider.md)to the game object.<br>
+1\. To apply physics simulation to game objects, attach "Unity Collider" and [HEO Node Collider](../VKCComponents/VKCNodeCollider.md)to the game object.<br>
 Unity colliders that can be used for physics simulation are "Box Collider", "Sphere Collider", and "Capsule Collider".
 
-Furthermore, by attaching an additional "HEOCylinderCollider" to a game object with a "Capsule Collider" as mentioned later, it can be used as a cylinder collider exclusively in the Vket Cloud physics engine.
+Furthermore, by attaching an additional "VKC Node Cylinder Collider" to a game object with a "Capsule Collider" as mentioned later, it can be used as a cylinder collider exclusively in the Vket Cloud physics engine.
 
 ![PhysicsEngine](img/PhysicsEngine.jpg)
 
-2\. Set the properties of the HEOCollider/Physics item.<br>
-While each property is explained below, basically enabling  `Use Physics Engine` on [HEOWorldSettings](../HEOComponents/HEOWorldSetting.md#_1) and enabling `UsePhysics` on each collider component will enable the gameobject to simulate their physics.
+2\. Set the properties of the HEO Node Collider/Physics item.<br>
+While each property is explained below, basically enabling  `Use Physics Engine` on [HEOWorldSettings](../VKCComponents/HEOWorldSetting.md#_1) and enabling `UsePhysics` on each collider component will enable the gameobject to simulate their physics.
 
-### Brief Overview of HEOCollider/Physics properties
+### Brief Overview of HEO Node Collider/Physics properties
 
 ![PhysicsEngine](img/PhysicsEngineCollider.jpg)
 
@@ -40,10 +40,10 @@ While each property is explained below, basically enabling  `Use Physics Engine`
 For how to use the ActionTrigger, refer to the following pages:
 
 - [ActionsOverview](../Actions/ActionsOverview.md)
-  - [PhysicsAddVelocity](../Actions/Physics/PhysicsAddVelocity.md)
-  - [PhysicsClearAddForce](../Actions/Physics/PhysicsClearAddForce.md)
-  - [PhysicsSetEnable](../Actions/Physics/PhysicsSetEnable.md)
-  - [PhyscsSetPosRot](../Actions/Physics/PhysicsSetPosRot.md)
+  - [PhysicsAddVelocity](../Actions/PhysicsEngine/PhysicsAddVelocity.md)
+  - [PhysicsClearAddForce](../Actions/PhysicsEngine/PhysicsClearAddForce.md)
+  - [PhysicsSetEnable](../Actions/PhysicsEngine/PhysicsSetEnable.md)
+  - [PhyscsSetPosRot](../Actions/PhysicsEngine/PhysicsSetPosRot.md)
 
 Also, for usage of physics and colliders on HeliScript, refer to the following pages:
 
@@ -54,7 +54,7 @@ Also, for usage of physics and colliders on HeliScript, refer to the following p
 
 ## About Cylinder Collider
 
-Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "HEOCylinderCollider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
+Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "VKC Node Cylinder Collider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
 
 ![PhysicsEngine](img/PhysicsEngineCylinderCollider.jpg)
 

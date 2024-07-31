@@ -14,10 +14,10 @@
 次に、Cubeの向こう側に遮蔽される対象としてSphereを設置します。
 ![OcclusionCulling_3](img/OcclusionCulling_3.jpg)
 
-Cubeには[HEOCollider](../HEOComponents/HEOCollider.md)を入れ、ColliderTypeを`Occlusion`に設定します。
+Cubeには[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)を入れ、ColliderTypeを`Occlusion`に設定します。
 ![OcclusionCulling_4](img/OcclusionCulling_4.jpg)
 
-また、[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)の`Occlusion Culling`にチェックを入れ、ビルドします。
+また、[HEOWorldSetting](../VKCComponents/HEOWorldSetting.md)の`Occlusion Culling`にチェックを入れ、ビルドします。
 ![OcclusionCulling_5](img/OcclusionCulling_5.jpg)
 
 カメラとSphereの間にOcclusion設定を行ったCubeが入ることで、Sphereが非表示になります。
@@ -27,7 +27,7 @@ Cubeには[HEOCollider](../HEOComponents/HEOCollider.md)を入れ、ColliderType
 
 ## オクルージョンカリングのデバッグ方法
 
-[HEOWorldSetting](../HEOComponents/HEOWorldSetting.md)でDebugModeをオンにしている場合、F1キーを2回押すことで画面上部に情報表示することができます。
+[HEOWorldSetting](../VKCComponents/HEOWorldSetting.md)でDebugModeをオンにしている場合、F1キーを2回押すことで画面上部に情報表示することができます。
 
 表示された情報の1番上の行の「DrawCall(Field)」の隣の数字が現在表示されているオブジェクトのドローコール数で、OCがオクルージョンカリング設定がONになっている表示です。<br>
 この状態でオクルージョンカリングによるオブジェクトの表示/非表示をカメラ移動等で行うことで、ドローコール数の増減が確認できると思います。<br>

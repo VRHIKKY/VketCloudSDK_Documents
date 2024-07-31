@@ -1,5 +1,5 @@
-## HEOExporterの使い方
-HEOExporterとは、VketCloudSDKに含まれているツールの一つで、VketCloud専用の3Dオブジェクトファイルフォーマットである『.heo』を出力することができます。主にモデルデータを.heoとして書き出します。
+## Export Fieldの使い方
+Export Fieldとは、VketCloudSDKに含まれているツールの一つで、VketCloud専用の3Dオブジェクトファイルフォーマットである『.heo』を出力することができます。主にモデルデータを.heoとして書き出します。
 
 ## シーンの準備
 空のオブジェクトを配置して任意の名前を付けてください。ここでは『VketCloudSample』とします。このオブジェクト名は、出力時の.heoファイル名となります。
@@ -31,7 +31,7 @@ HierarchyでVketCloudSampleオブジェクトを選択した状態で、ウィ�
 テクスチャファイルに問題なければエクスポートはひとまず成功です。この後、VketCloudで読み込ませる場合は、出力されたファイル・フォルダを一式コピーします。
 
 !!! note tip
-    .heoとして吐き出したオブジェクトは、HEOObjectからセットすることでBuildAndRunの出力に含めることができます。HEOObjectの使い方は[こちら](../HEOComponents/HEOObject.md)をご覧ください。
+    .heoとして吐き出したオブジェクトは、VKC Item ObjectからセットすることでBuildAndRunの出力に含めることができます。VKC Item Objectの使い方は[こちら](../VKCComponents/VKCItemObject.md)をご覧ください。
 
 このHEOファイルをVketCloudで読み込んで表示したサンプルは以下のものになります。
 

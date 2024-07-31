@@ -1,8 +1,8 @@
-# Enable/DisableCollider
+# Enable/Disable Collider
 
 ![EnableDisableCollider](img/EnableDisableCollider.jpg)
 
-Enable/DisableColliderは、[HEOField](../../HEOComponents/HEOField.md)や[HEOObject](../../HEOComponents/HEOObject.md)に含まれるコライダーの無効化・有効化をコントロールします。
+Enable/DisableColliderは、[VKC Item Field](../../VKCComponents/VKCItemField.md)や[VKC Item Object](../../VKCComponents/VKCItemObject.md)に含まれるコライダーの無効化・有効化をコントロールします。
 
-Targetには、対象とする[HEOField](../../HEOComponents/HEOField.md)もしくは[HEOObject](../../HEOComponents/HEOObject.md)を指定してください。
+Targetには、対象とする[VKC Item Field](../../VKCComponents/VKCItemField.md)もしくは[VKC Item Object](../../VKCComponents/VKCItemObject.md)を指定してください。
 Collider In Targetには、Targetに指定したオブジェクトがもつコライダー名を指定します。

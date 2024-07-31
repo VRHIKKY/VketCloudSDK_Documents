@@ -1,4 +1,3 @@
-
 # コンポーネント / コールバック関数
 
 ## コンポーネントの定義
@@ -75,6 +74,14 @@ public void OnUnload()
 以下のようにOnClickNodeメソッドを定義しておくと、そのアイテムのノードがクリックされた時に呼び出されます。
 
 ```
+public bool OnClickNode(int NodeIndex)
+```
+
+何らかの処理をおこなった場合はtrueを返すことで、エンジン側のクリック移動などが無効化されます。
+
+互換性のために以下の戻り値の型がvoidのものも定義出来ますが、Sceneファイルのclickablenodesに定義されていない場合はクリック移動などが実行されます。
+
+```
 public void OnClickNode(int NodeIndex)
 ```
 
@@ -114,7 +121,8 @@ component AreaCollider
 
 ## コールバック - オブジェクト選択解除
 
-### ノードの選択解除：OnUnselectNode()
+### ノードの選択解除：OnUnselectNode
+
 ```
 public void OnUnselectNode(int NodeIndex)
 ```
@@ -122,7 +130,8 @@ public void OnUnselectNode(int NodeIndex)
 
 この際に、選択解除されたノードのインデックスを引数として、OnUnselectNode() が呼び出されます。
 
-### アバターの選択解除：OnUnselectAvatar()
+### アバターの選択解除：OnUnselectAvatar
+
 ```
 public void OnUnselectAvatar(string Name)
 ```

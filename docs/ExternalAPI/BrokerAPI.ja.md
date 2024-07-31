@@ -30,7 +30,7 @@ API名は識別のために任意の名前を付け、URLは使用したいAPI�
 
 2\. ワールドをセットアップし、APIを呼び出すためのHeliScriptを[JsVal](JsVal.md)を使用しつつ作成します。
 
-例として、以下のように[クリック用のキューブ](../HEOComponents/HEOCollider.md)と結果表示用の[TextPlane](../HEOComponents/HEOTextPlane.md)を配置します。
+例として、以下のように[クリック用のキューブ](../VKCComponents/VKCNodeCollider.md)と結果表示用の[TextPlane](../VKCComponents/VKCItemTextPlane.md)を配置します。
 
 ![BrokerAPI_3](img/BrokerAPI_3.jpg)
 
@@ -38,7 +38,7 @@ API名は識別のために任意の名前を付け、URLは使用したいAPI�
 
 また、以下にてYoutube Data APIを使用して設置したキューブがクリックされた際に指定の動画の検索結果を取得、TextPlaneに表示するHeliScriptの実装を示します。
 
-このスクリプトはWorldオブジェクトに[HEOScript](../HEOComponents/HEOScript.md)を用いてアタッチします。
+このスクリプトはWorldオブジェクトに[VKC Attribute Script](../VKCComponents/VKCAttributeScript.md)を用いてアタッチします。
 
 ![BrokerAPI_5](img/BrokerAPI_5.jpg)
 
@@ -69,7 +69,7 @@ component BrokerAPI
     public BrokerAPI()
     {
         //BrokerAPI.hsが割り当てられているItemを取得。
-        //ボタン(GET_SWITCH_NAME)のGameObjectが存在するFieldにBrokerAPI.hsのHEOScriptを割り当てる必要がある。
+        //ボタン(GET_SWITCH_NAME)のGameObjectが存在するFieldにBrokerAPI.hsのVKC Attribute Scriptを割り当てる必要がある。
         thisItem = hsItemGetSelf();
         resultTextPlane = hsItemGet(RESULT_ITEM_NAME);
     }
@@ -215,6 +215,11 @@ component BrokerAPI
 }
 ```
 
-3\. ワールドをビルドし、結果を確認します。
+3\. ワールドをアップロードし、結果を確認します。
+
+!!! warning "BrokerAPI動作確認時の注意"
+    ローカル環境での**Build And Run**では動作が確認できません。<br>
+    一度非公開の状態などでワールドとしてアップロードして頂いた上、結果の確認をお願いいたします。<br>
+    ワールドのアップロード方法については、[ワールドアップロード](../FirstStep/WorldUpload.md)をご参照ください。
 
 ![BrokerAPI_Result](img/BrokerAPI_Result.gif)

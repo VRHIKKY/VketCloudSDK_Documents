@@ -11,6 +11,11 @@ To build a scene with VketCloudSDK, make sure you have placed the [required comp
 !!! note question "If you can't build"
      There may be various reasons causing the build error. Please refer to [Troubleshooting](../troubleshooting/BuildError.md).
 
+!!! caution "Troubleshooting Errors"
+    If an error occurs when running a HeliScript during world loading or by trigger, the error will be displayed on the debug log and browser console.<br>
+    Please enable the [Debug Mode](../WorldEditingTips/DebugMode.md) to show the debug log.<br>
+    As the debug log will be hidden during world loading, please see the [Browser Console](../troubleshooting/BuildError.md#checking-the-error-log) for checking the reason of loading error.
+
 !!! note "Build Options"
     The build options on VketCloudSDK > Settings > "Build" can designate settings such as auto texture compression on build.<br>
     For details, refer to [Build Options](../WorldEditingTips/BuildOptions.md).
@@ -31,7 +36,7 @@ If the build succeeds, the browser will automatically open. Please check if the 
 
 ## What happens on running "Build and Run""
 
-Running "Build and Run" will convert objects with the [HEOField](../HEOComponents/HEOField.md) component and all its child objects into a .heo file format. ".heo" is a 3D file format used exclusively by Vket Cloud's drawing engine.
+Running "Build and Run" will convert objects with the [VKC Item Field](../VKCComponents/VKCItemField.md) component and all its child objects into a .heo file format. ".heo" is a 3D file format used exclusively by Vket Cloud's drawing engine.
 
 The built files are then copied to the `[project name]\release\data` folder. This folder will contain all the assets needed to run the world in a browser.
 

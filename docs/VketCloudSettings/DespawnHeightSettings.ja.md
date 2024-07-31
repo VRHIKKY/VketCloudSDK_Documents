@@ -1,4 +1,4 @@
-# DespawnHeightSettings
+# VKCSettingDespawnHeight
 
 ![DespawnHeightSettings_1](./img/DespawnHeightSettings_1.jpg)
 

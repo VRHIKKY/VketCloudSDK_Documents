@@ -12,6 +12,8 @@
   - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/VketCloudSettings/AvatarSettings.html)
     - デフォルトアバターを4種類に拡大した旨を追記
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/VketCloudSettings/MyAvatarSettings.html)
+- ワールド制作ガイド
+  - [Unityアセットのアニメーションを変換する](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/ConvertAnimationFromUnityAsset.html)
 - SDKTools
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/VKCActivityExporter.html)
 - 編集のためのTips
@@ -33,6 +35,7 @@
 - 外部API連携
   - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ExternalAPI/JsVal.html)
 　- [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ExternalAPI/BrokerAPI.html)
+- [HEOCylinderCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOCylinderCollider.html)
 
 ## 変更されたページ
 
@@ -50,7 +53,7 @@
   - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/FirstStep/WorldUpload.html)
     - World Uploaderの機能追加に伴い追記
 - ワールド制作ガイド
-  - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html)
+  - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/UnityGuidelines.html)
     - ワールドのトライアングル数およびオーディオ、動画ファイルの仕様制限の追記
   - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Collider.html)
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
@@ -67,6 +70,8 @@
     - Export Motion時に複数アニメーションを割り当てている際の意図しない挙動について注意点を追記
     - ヒエラルキー構造のオブジェクトのアニメーション再生について注意を追記
     - ボーンが含まれたアニメーションに対応していない旨の明記と解決策を追記
+  - [アバターファイル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/AvatarFile.html)
+    - ボーン名の例の表記を修正
 - SDK Tools
   - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/debugconsole/debugconsole.html)
     - テクスチャサイズ（メモリ）とメッシュポリゴン数の表示について追記
@@ -91,8 +96,9 @@
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
   - [HEOObject](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOObject.html)
     - Ver12.3に追加された機能(hrm, glb対応)を追記し、コンポーネント設定解説を更新
-  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/latest/HEOComponents/HEOPlane.html)
+  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOPlane.html)
     - 画像ファイルの仕様制限について追記
+    - コンポーネントのデフォルト値表記を変更
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOReflectionProbe.html)
     - 機能廃止について案内を追記
 - アクションについて

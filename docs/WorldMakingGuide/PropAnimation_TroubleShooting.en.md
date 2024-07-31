@@ -2,7 +2,7 @@
 
 This is the page to see when you cannot perform each step in [How to Animate Objects](PropAnimation.md).
 
-## About attaching HEOAnimation
+## About attaching VKC Node Rotate Animation
 
 ### Behavior is different from what I expected
 
@@ -15,9 +15,9 @@ If you just want to rotate horizontally, but the object somehow stretches, the o
 
 ![PropAnimation_TroubleShooting_3](./img/PropAnimation_TroubleShooting_3.jpg)
 
-If behavior is strange, it is better to make the object containing HEOAnimation a child object of Position(0,0,0), Rotation(0,0,0), and Scale(1,1,1).
+If behavior is strange, it is better to make the object containing VKC Node Rotate Animation a child object of Position(0,0,0), Rotation(0,0,0), and Scale(1,1,1).
 
-Also, the result of adding HEOAnimation is the same as changing the Rotation of the object in Unity. <br>
+Also, the result of adding VKC Node Rotate Animation is the same as changing the Rotation of the object in Unity. <br>
 It is a good idea to check how it works on Unity before entering the values.
 
 ---
@@ -102,9 +102,9 @@ Restart the Unity Editor and then try exporting if such error happens.
 ### 4. The object position is incorrect
 
 Unless there is a special reason, set the position of the export source object to (0,0,0). <br>
-When placed in the scene as a HEOObject, the position will be where the object position of HEOObject, added with the position of the export source object.
+When placed in the scene as a VKC Item Object, the position will be where the object position of VKC Item Object, added with the position of the export source object.
 
-Example: If the position of the export source object is (5, 2, 10) and the position of the HEOObject attached object is (-3, 2, -6), the displaying position will be (2, 4, 4)
+Example: If the position of the export source object is (5, 2, 10) and the position of the VKC Item Object attached object is (-3, 2, -6), the displaying position will be (2, 4, 4)
 
 ### 5. The shader of the export source object is not compatible with Vket Cloud
 
@@ -129,14 +129,14 @@ After compressing the texture, the batch file is no longer needed, so it is a go
 
 ---
 
-## About HEOObject animation
+## About VKC Item Object animation
 
 ### Animation not playing
 
 ### 1. Animation and object hierarchy/name do not match
 
 VketCloud animations are performed on hierarchies and names. <br>
-For example, if you create an animation that changes the position of the child object "Object_1", the child object named "Object_1" will be moved using the object hierarchy exported as HEOObject as the origin.
+For example, if you create an animation that changes the position of the child object "Object_1", the child object named "Object_1" will be moved using the object hierarchy exported as VKC Item Object as the origin.
 
 At this case, the object type of Object_1 is allowed to be set different when exporting the animation and when implementing the object.
 
@@ -144,7 +144,7 @@ Also, the name of the parent object that serves as the origin is allowed to be s
 
 ### 2. Animation is not applied
 
-Even if the animation is applied, it does not play for some reason, such as switching the HEOObject's Object Type to Motion and forgetting to insert the animation, or trying to play the animation with a PlayItem but not being able to execute the playback trigger.
+Even if the animation is applied, it does not play for some reason, such as switching the VKC Item Object's Object Type to Motion and forgetting to insert the animation, or trying to play the animation with a PlayItem but not being able to execute the playback trigger.
 
 In this case, the quickest way is to "check the loop, bring it to Index 0, and check whether it is working."
 

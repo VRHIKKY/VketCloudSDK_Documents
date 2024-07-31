@@ -10,17 +10,17 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 
 ## 物理エンジンの使用方法
 
-1\. 物理演算を適応したいゲームオブジェクトに『Unityコライダー』と[HEOCollider](../HEOComponents/HEOCollider.md)をアタッチしてください。<br>
+1\. 物理演算を適応したいゲームオブジェクトに『Unityコライダー』と[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)をアタッチしてください。<br>
 物理演算に使用できるUnityコライダーは『Box Collider』『Sphere Collider』『Capsule Collider』です。
 
-また、後述されているように『Capsule Collider』がアタッチされているゲームオブジェクトに[HEOCollider](../HEOComponents/HEOCollider.md)に加えて`HEOCylinderCollider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
+また、後述されているように『Capsule Collider』がアタッチされているゲームオブジェクトに[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)に加えて`VKC Node Cylinder Collider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
 
 ![PhysicsEngine](img/PhysicsEngine.jpg)
 
-2\. HEOCollider/Physicsの項目のプロパティを設定します。<br>
-各項目は下記で説明いたしますが、[HEOWorldSettings](../HEOComponents/HEOWorldSetting.md#_1)にて`Use Physics Engine`を有効にし、各コライダーコンポーネントに『`UsePhysics`』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。
+2\. VKC Node Collider/Physicsの項目のプロパティを設定します。<br>
+各項目は下記で説明いたしますが、[HEOWorldSettings](../VKCComponents/HEOWorldSetting.md#_1)にて`Use Physics Engine`を有効にし、各コライダーコンポーネントに『`UsePhysics`』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。
 
-### HEOCollider/Physicsのプロパティについて
+### VKC Node Collider/Physicsのプロパティについて
 
   ![PhysicsEngine](img/PhysicsEngineCollider.jpg)
 
@@ -41,10 +41,10 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 物理演算に関するActionTriggerの使い方に関しては、以下ページにて記述しております。
   
 - [ActionsOverview](../Actions/ActionsOverview.md)
-  - [PhysicsAddVelocity](../Actions/Physics/PhysicsAddVelocity.md)
-  - [PhysicsClearAddForce](../Actions/Physics/PhysicsClearAddForce.md)
-  - [PhysicsSetEnable](../Actions/Physics/PhysicsSetEnable.md)
-  - [PhysicsSetPosRot](../Actions/Physics/PhysicsSetPosRot.md)
+  - [PhysicsAddVelocity](../Actions/PhysicsEngine/PhysicsAddVelocity.md)
+  - [PhysicsClearAddForce](../Actions/PhysicsEngine/PhysicsClearAddForce.md)
+  - [PhysicsSetEnable](../Actions/PhysicsEngine/PhysicsSetEnable.md)
+  - [PhysicsSetPosRot](../Actions/PhysicsEngine/PhysicsSetPosRot.md)
 
 また、HeliScriptにおける物理演算・コライダーの扱い方は以下のページにて記述しております。
 
@@ -55,7 +55,7 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 
 ## シリンダーコライダーについて
 
-通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で`HEOCylinderCollider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
+通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で`VKC Node Cylinder Collider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
 ![PhysicsEngine](img/PhysicsEngineCylinderCollider.jpg)
 
 !!! 注意点 Info

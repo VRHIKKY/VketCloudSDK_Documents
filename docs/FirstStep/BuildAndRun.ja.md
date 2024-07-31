@@ -9,8 +9,13 @@ VketCloudSDKでシーンをビルドするには、[必要コンポーネント]
   
 ![BuildAndRun](img/BuildAndRun.jpg)  
 
-!!! note question "ビルドが出来ない場合" 
+!!! note question "ビルドが出来ない場合"
     さまざまな要因でビルドに失敗している可能性があります。エラー事例をまとめた[トラブルシューティング](../troubleshooting/BuildError.md)をご覧ください。
+
+!!! caution "エラーが起きた場合は"
+    HeliScriptがワールドロード中あるいは呼び出しによって実行された際にエラーが起きた場合はデバッグログとブラウザのコンソールに表示されます。<br>
+    初期状態ではデバッグログは非表示になっているため、表示するには[デバッグモード](../WorldEditingTips/DebugMode.md)を有効にしてください。<br>
+    なお、ワールドロード時にデバッグログは非表示になるため、ロードが停止した際は[ブラウザのコンソール](../troubleshooting/BuildError.md#_4)をご確認ください。
 
 !!! note "ビルドオプションについて"
     VketCloudSDK > Settingsより設定ウィンドウを開き、「Build」タブを選択するとビルド時のテクスチャの自動圧縮などのオプションを設定出来ます。<br>
@@ -28,7 +33,7 @@ VketCloudSDKでシーンをビルドするには、[必要コンポーネント]
 
 ## 「ビルドと実行」で起きること
 
- Build and Runを押すと、[HEOField](../HEOComponents/HEOField.md)コンポーネントが付いたオブジェクトとそのすべての子オブジェクトが.heoファイルに変換されます。「.heo」はVketCloudの描画エンジンで使われている専用の3Dフォーマットです。  
+ Build and Runを押すと、[VKC Item Field](../VKCComponents/VKCItemField.md)コンポーネントが付いたオブジェクトとそのすべての子オブジェクトが.heoファイルに変換されます。「.heo」はVketCloudの描画エンジンで使われている専用の3Dフォーマットです。  
 
 ビルドされたファイルは`[プロジェクト名]\release\data`フォルダにコピーされます。これにより、3Dワールドをブラウザで動かすのに必要なアセットがすべてこのフォルダに入ります。
 

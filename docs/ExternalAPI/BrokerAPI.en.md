@@ -30,7 +30,7 @@ To use an external API, authorization such as API keys must be setup and obtaine
 
 2\. Setup a world, and create a HeliScript to call the API using [JsVal](JsVal.md).
 
-As an example, a [cube for receiving player clicking](../HEOComponents/HEOCollider.md) and [TextPlane](../HEOComponents/HEOTextPlane.md) for showing API results are placed as below:
+As an example, a [cube for receiving player clicking](../VKCComponents/VKCNodeCollider.md) and [TextPlane](../VKCComponents/VKCItemTextPlane.md) for showing API results are placed as below:
 
 ![BrokerAPI_3](img/BrokerAPI_3.jpg)
 
@@ -38,7 +38,7 @@ As an example, a [cube for receiving player clicking](../HEOComponents/HEOCollid
 
 Also, a HeliScript for displaying a Youtube Data API search result on the TextPlane when a designated cube is clicked is described as below.
 
-This script must be attached to the World object using [HEOScript](../HEOComponents/HEOScript.md).
+This script must be attached to the World object using [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md).
 
 ![BrokerAPI_5](img/BrokerAPI_5.jpg)
 
@@ -69,7 +69,7 @@ component BrokerAPI
     public BrokerAPI()
     {
         //Get the Item where BrokerAPI.hs is allocated.
-        //The BrokerAPI.hs must be allocated by a HEOScript component, which should be added to the Field where the button GameObject mentioned by GET_SWITCH_NAME exists
+        //The BrokerAPI.hs must be allocated by a VKC Attribute Script component, which should be added to the Field where the button GameObject mentioned by GET_SWITCH_NAME exists
         thisItem = hsItemGetSelf();
         resultTextPlane = hsItemGet(RESULT_ITEM_NAME);
     }
@@ -215,6 +215,11 @@ component BrokerAPI
 }
 ```
 
-3\. Build the world to see if API operates as intended.
+3\. Upload the world data to see if API operates as intended.
+
+!!! warning "Testing BrokerAPI implementations"
+    By feature, BrokerAPI will not function on local **Build And Run** results.<br>
+    To test the function, please upload the world data (in private if needed), and access the uploaded world.<br>
+    For instructions on how to upload the world data, please refer to [World upload](../FirstStep/WorldUpload.md).
 
 ![BrokerAPI_Result](img/BrokerAPI_Result.gif)
