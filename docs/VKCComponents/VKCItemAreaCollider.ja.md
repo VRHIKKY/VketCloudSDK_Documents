@@ -11,8 +11,8 @@ VKC Item Area Colliderをアタッチするオブジェクトには[VKC Node Col
 
 ![VKC Node Collider](img/HEOCollider_1.jpg)
 
-Actions,LeaveActionsそれぞれにおいてAddをクリックすることで任意のアクションを設定できます。<br>
-反対に、Deleteをクリックすることで最後尾のアクションを削除できます。
+Actions,LeaveActionsそれぞれにおいて+をクリックすることで任意のアクションを設定できます。<br>
+反対に、-をクリックすることで選択中のアクションを削除できます。
 
 |  Label |  function  |
 | ----   | ---- |
@@ -28,3 +28,14 @@ Actions,LeaveActionsそれぞれにおいてAddをクリックすることで任
 また、以下のようなコリジョンの可視化は[VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md)から[デバッグモード](../WorldEditingTips/DebugMode.md#f3)を有効にした上でF3キーを押すと切り替えできます。
 
 ![VKCNodeCollider_2](img/HEOCollider_2.jpg)
+
+### 高度な設定
+
+| 名称 | 機能 |
+| ---- | ---- |
+| Show | 表示するかどうかを変更します |
+| Clickable | クリック可能かどうかを変更します |
+| Auto Loading | 有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、[動的ローディング](VKCItemField.md)を使用するか、HeliScriptで[Load()](../hs/hs_class_item.md#load)を使用して読み込みます。|
+| Item Render Priority | Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
+| Show Photo Mode | 写真撮影モードの際、表示するかどうかを変更します |
+
