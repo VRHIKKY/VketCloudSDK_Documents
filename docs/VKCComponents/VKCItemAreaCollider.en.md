@@ -11,8 +11,8 @@ The [VKC Node Collider](./VKCNodeCollider.md) type must be set to Area.
 
 ![VKC Node Collider](img/HEOCollider_1.jpg)
 
-In each of Actions and LeaveActions, you can set any action by clicking +. <br>
-You can remove the selecting action by clicking -.
+In each of Actions and LeaveActions, you can set any action by clicking Add. <br>
+You can remove the last action by clicking Delete.
 
 | Label | Function |
 | ---- | ---- |
@@ -28,14 +28,3 @@ The collision / area range detection by collider will be done by obtaining the p
 Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md#f3-display-collision) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
 
 ![VKCNodeCollider_2](img/HEOCollider_2.jpg)
-
-### Advanced Settings
-
-| Label | Function |
-| ---- | ---- |
-| Show | Toggles to change whether to display or not. |
-| Clickable | Toggles acceptance of click input from player |
-| Auto Loading | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](VKCItemField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
-| Item Render Priority | Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
-| Show Photo Mode | Toggles display/hide when in photo mode |
-
