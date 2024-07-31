@@ -1,14 +1,5 @@
 # SDK Manual Change Log - Ver 13.4
 
-## August 2 2024 Update
-
-## August 2 2024 - Edited Pages
-
-- VKC Components
-    - VKCItem
-        - [VKCItemAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemAreaCollider.html)
-            - Updated descriptions and images.
-
 ## July 26 2024 Update
 
 ## July 26 2024 - Edited Pages
