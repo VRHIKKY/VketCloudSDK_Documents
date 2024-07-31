@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 2 2024 Update
+
+## August 2 2024 - Edited Pages
+
+- HeliScript
+  - Built-in Classes And Functions
+    - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
+      - Removed duplicate method descriptions
+
+---
+
 ## July 26 2024 Update
 
 ## July 26 2024 - Edited Pages
@@ -17,6 +28,8 @@
           - add description of File Deployment Mode
       - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingNameplate.html)
       - Updated images
+
+---
 
 ## July 19 2024 Update
 
@@ -55,6 +68,8 @@
     - Updated descriptions of settings, updated images
   - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
     - Updated descriptions of settings, updated images
+
+---
 
 ## July 12 2024 Update
 
