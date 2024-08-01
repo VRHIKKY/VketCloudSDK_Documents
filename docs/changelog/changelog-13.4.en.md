@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 02 2024 Update
+
+## August 02 2024 - Edited Pages
+
+- SDK Tools
+  - GUITools
+    - [Overview and Setup](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/GUITools/Setup.html)
+      - Added note about infinite installation issue, and how to resolve it by restarting Unity project
+
+---
+
 ## July 26 2024 Update
 
 ## July 26 2024 - Edited Pages

@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月02日更新
+
+## 2024年8月02日 - 変更されたページ
+
+- SDK Tools
+  - GUITools
+    - [概要とセットアップ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/GUITools/Setup.html)
+      - インストール手順で、無限にインストールが終わらない場合があるので、Unityプロジェクトを再起動することで解決することがある旨を追記
+
+---
+
 ## 2024年7月26日更新
 
 ## 2024年7月26日 - 変更されたページ
