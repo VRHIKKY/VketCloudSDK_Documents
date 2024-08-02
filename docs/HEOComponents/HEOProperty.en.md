@@ -142,12 +142,12 @@ By adding/editing an initial value, this can be read on the Activity's HeliScrip
 
 ### 2. Pass-by-Value to a Component
 
-コンポーネント間で値渡しをする際、以下のようにHEOPropertyを使用できます。<br>  
-※値を変更する関数を用意して、`hsCallComponentMethod()`を使用しても同じことができます。
+When doing a pass-by-value among components, HEOProperty can be used as below.<br>
+*The same process can be implemented by defining a value change method, and calling it using `hsCallComponentMethod()`.
 
 ```c#
-// exampleA exampleBの2つのコンポーネントとKey:status, Value:aliveを持つアイテム「Monster」があり、
-// exampleAがもつ変数HPの値が0以下になった際、exampleBで動作が発生する場合
+// 2 components: exampleA and exampleB, an Item with property: Key:status, Value:alive is defined,
+// exampleB will function when the HP value in exampleA becomes lower than 0
 
 component exampleA{
 
@@ -179,15 +179,15 @@ component exampleB{
     if(Key == "status"){
       switch(Value){
         case: "alive"
-          hsSystemWriteLine("モンスターが　あらわれた！");
+          hsSystemWriteLine("A Monster has appeared!");
           status = 1;
           break;
         case: "poison"
-          hsSystemWriteLine("モンスターが　どくを　あびた！");
+          hsSystemWriteLine("The monster is poisoned!");
           status = 2;
           break;
         case: "death"
-          hsSystemWriteLine("モンスターを　やっつけた！");
+          hsSystemWriteLine("The monster is defeated!");
           status = -1;
           break;
       }
@@ -196,11 +196,11 @@ component exampleB{
 }
 ```
 
-### 3. Unityの\[SerializeField\]属性的運用
+### 3. Similar Usage as Unity's \[SerializeField\] Attribution
 
-①のアクティビティへの値渡しと同様に、HEOPropertyから変数の中身を定義するように設定しておくことで、Unityエディタ上でパラメータ設定を行うことができるようになります。
+As like "1. Pass-by-Value to an Activity", parameter configuration on the Unity editor can be done by defining a variable property through HEOProperty.
 
-ただし、KeyおよびValueはすべてstring値であることは注意が必要です。
+However, Key and Value will always be a string value.
 
 ```c#
 component exampleC{
@@ -217,25 +217,25 @@ component exampleC{
   }
 }
 
-//上記の設定を行い、Unity上で「Monster」オブジェクトに対しHEOPropertyを付け、
-//HP:30、damage:3、skill:れんぞく斬り　とした場合、
-//それぞれの入力内容がHeliScriptの変数に適用される
+//After defining the above, add a HEOProperty component to a Monster object on Unity,
+//and define properties: HP:30、damage:3、skill:Serial Cut,
+//Each property will overwrite the HeliScript variable values
 ```
 
 ---
 
 ## Notes
 
-### 1. SetProperty / GetPropertyする際は対象となるアイテムに注意
+### 1. Check which Item is targeted for SetProperty / GetProperty
 
-アイテムごとに異なるプロパティを設定することが可能です。<br>  
-HeliScript上で対象となるアイテムを間違えると、上手く動作しない場合があるので、気を付けましょう。
+Each Item can have different properties defined.<br>
+If the Item name is wrong on reference, this may lead to unintended behaviors.
 
 !!! note caution
-    SDK9.11現在、対象となるプロパティが存在しないのにSetPropertyを行おうとした場合、エラー文も出ずに他のHeliScriptの動作に影響を及ぼす場合があります。
+    On SDK Ver9.11, when trying to run SetProperty without a target property, unexpected behavior may occur without error notices.
 
-## 2. KeyおよびValueはString型
+## 2. Key and Value will always be a String type
 
-少し上でも解説した通り、KeyおよびValueはString型となるため、String型以外の変数を扱う場合、SetPropertyやGetPropertyする際に型変換を行う必要があります。
+As previously mentioned, Key and Value will always be a String. When connecting with non-String type variables, type cast is needed before running SetProperty or GetProperty.
 
-型変換を行わずにSetPropertyやGetPropertyした場合、nullとなります。
+If SetProperty or GetProperty is done without type casting, null values will be used instead.
