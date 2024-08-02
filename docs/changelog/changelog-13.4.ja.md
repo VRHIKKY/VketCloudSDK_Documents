@@ -17,6 +17,11 @@
   - VKCItem
         - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
             - 説明文および画像を更新
+  - VKCAttribute
+        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCAttributeProperty.html)
+            - 説明文および画像を更新
+            - アクティビティにおけるプロパティの定義方法について解説を変更
+            - SetPropertyの挙動変更について追記
 
 ---
 

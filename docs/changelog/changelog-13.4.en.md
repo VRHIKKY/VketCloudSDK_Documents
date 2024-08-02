@@ -5,7 +5,7 @@
 ## August 2 2024 - Edited Pages
 
 - Vket Cloud Settings
-    
+
 - VKC Components
   - VKCSettings
     - VKCSettingAvatar
@@ -18,8 +18,14 @@
   - VKCItem
         - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
             - Updated descriptions and images.
+  - VKCAttribute
+        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCAttributeProperty.html)
+            - Updated descriptions and images
+            - Changed instructions for defining property on Activity
+            - Added change of function for SetProperty
 
 ---
+
 ## July 26 2024 Update
 
 ## July 26 2024 - Edited Pages
