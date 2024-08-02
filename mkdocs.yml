@@ -278,7 +278,7 @@ nav:
     - VKCSettingDespawnHeight: VketCloudSettings/DespawnHeightSettings.md
     # Advanced
     - Rendering Settings: VketCloudSettings/RenderingSettings.md
-    - Camera Settings: VketCloudSettings/CameraSettings.md
+    - VKCSettingWorldCamera: VketCloudSettings/CameraSettings.md
     - Avatar Settings: VketCloudSettings/AvatarSettings.md
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:

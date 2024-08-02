@@ -1,13 +1,19 @@
 # SDK Manual Change Log - Ver 13.4
 
-## Augast 3 2024 Update
+## Augast 2 2024 Update
 
-## Augast 3 2024 - Edited Pages
+## Augast 2 2024 - Edited Pages
 
+- Vket Cloud Settings
+    
 - VKC Components
   - VKCSettings
     - VKCSettingAvatar
       - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
+    - VKCSettingWorldCamera
+      - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
+    - VKCSettingRendering
+      - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/RenderingSettings.html)
         - Updated descriptions and images
 
 ---
@@ -29,6 +35,8 @@
           - add description of File Deployment Mode
       - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingNameplate.html)
       - Updated images
+
+---
 
 ## July 19 2024 Update
 
@@ -67,6 +75,8 @@
     - Updated descriptions of settings, updated images
   - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
     - Updated descriptions of settings, updated images
+
+---
 
 ## July 12 2024 Update
 
