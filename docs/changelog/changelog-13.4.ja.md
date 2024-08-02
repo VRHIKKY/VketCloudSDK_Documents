@@ -1,8 +1,12 @@
 # SDK Manual Change Log - Ver 13.4
 
-## 2024年8月3日更新
+## 2024年8月2日更新
 
-## 2024年8月3日 - 変更されたページ
+## 2024年8月2日 - 変更されたページ
+
+- Vket Cloud Settings
+    - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
+        - 説明文および画像を更新
 
 - VKCコンポーネント
   - VKCItem
