@@ -9,6 +9,9 @@
     - [概要とセットアップ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/GUITools/Setup.html)
       - インストール手順で、無限にインストールが終わらない場合があるので、Unityプロジェクトを再起動することで解決することがある旨を追記
 - VKCコンポーネント
+  - [VKC/HEO コンポーネント 概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCHEOCorrespondenceTable.html)
+    - 題名を更新
+    - Item, Node各要素について概要を追加
   - VKCSetting
         - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/AvatarSettings.html)
         - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
