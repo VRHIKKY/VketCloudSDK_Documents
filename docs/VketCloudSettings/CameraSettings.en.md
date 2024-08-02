@@ -1,8 +1,8 @@
-# CameraSettings
+# VKCSettingWorldCamera
 
 ![CameraSettings_1](./img/CameraSettings_1.jpg)
 
-CameraSettings specifies the camera's functions.
+VKCSettingWorldCamera specifies the camera's functions.
 
 | Label | Initial Value | function |
 | ---- | ---- | ---- |
@@ -13,4 +13,5 @@ CameraSettings specifies the camera's functions.
 | `Raycast Max Distance` | 50.0 | Set the maximum raycast distance from the click detection camera in meter. |
 | `TPS Pitch Max Angle` | 6.0 | Set the maximum pitch angle for the TPS camera.<br> If the player sets the "Eye-level" on the in-world settings to "High", this value will be applied.<br> If set to "Medium", the halved value will be applied. |
 | `TPS Camera Max Distance` | 10.0 | Set the TPS Camera's maximum zoom-out distance. |
-| `Default TPS Camera` | Set the offset for the TPS camera. `center`: right behind (default) `right`: Over the right shoulder（Typical TPS Camera-style）`left`: Over the left shoulder |
+| `Enable X Rotation` | true | When set to false, the rotation of the camera on th X-axis is restricted, preventing the ability to look up or down. |
+| `Default TPS Camera` | TPS Center | Set the offset for the TPS camera. `center`: right behind (default) `right`: Over the right shoulder（Typical TPS Camera-style）`left`: Over the left shoulder |

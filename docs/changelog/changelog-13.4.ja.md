@@ -8,7 +8,19 @@
   - 組み込みクラス・関数
     - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_date.html)
       - メソッド（日時の設定）の重複していたメソッドの説明を削除
-
+- VKCコンポーネント
+  - VKCSetting
+    - VKCSetting Avatar
+      - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/AvatarSettings.html)
+    - VKCSettingWorldCamera
+      - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
+        - 説明文および画像を更新
+    - VKCSettingRendering
+      - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/RenderingSettings.html)
+        - 説明文および画像を更新
+  - VKCItem
+        - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+            - 説明文および画像を更新
 
 ---
 
