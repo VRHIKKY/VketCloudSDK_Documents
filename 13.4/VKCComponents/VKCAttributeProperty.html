@@ -741,7 +741,7 @@
         
   
   <span class="md-ellipsis">
-    Camera Settings
+    VKCSettingWorldCamera
   </span>
   
 
@@ -2165,7 +2165,7 @@
         
   
   <span class="md-ellipsis">
-    VKC/HEO対応表
+    VKC/HEOコンポーネント概要
   </span>
   
 
@@ -9778,15 +9778,15 @@
 
 
 <h1 id="vkc-attribute-property">VKC Attribute Property</h1>
-<p><img alt="HEOProperty_1" src="img/HEOProperty_1.jpg" /></p>
+<p><img alt="VKCAttributeProperty_1" src="img/VKCAttributeProperty_1.jpg" /></p>
 <h2 id="_1">概要</h2>
 <p>SDK9以降で登場したVKC Attribute Propertyを使うことで、Vket Cloudのプロパティ機能を設定することができます。</p>
 <p>プロパティ機能はItemに対してキーと値を持たせる方法で、コンポーネント間の値渡しやUnityエディタ上での動作カスタマイズといった使用方法が可能です。</p>
 <p>本ページでは、何かと便利なVKC Attribute PropertyとVket Cloudのプロパティ機能について紹介します。</p>
 <h2 id="vkc-attribute-property_1">VKC Attribute Property実装手順</h2>
 <h3 id="1">1. アイテムとなるオブジェクトにアタッチ</h3>
-<p><img alt="HEOProperty_2" src="img/HEOProperty_2.jpg" /></p>
-<p>VKC Item FieldやVKC Item Object、VKC Item Activityなど、ビルド時にアイテムとなるオブジェクトに対しVKC Attribute Propertyをアタッチします。</p>
+<p><img alt="VKCAttributeProperty_2" src="img/VKCAttributeProperty_2.jpg" /></p>
+<p><a href="VKCItemField.html">VKC Item Field</a>、 <a href="VKCItemObject.html">VKC Item Object</a>、 <a href="VKCItemActivity.html">VKC Item Activity</a>など、ビルド時にアイテムとなるオブジェクトに対しVKC Attribute Propertyをアタッチします。</p>
 <h3 id="2-vkc-attribute-propertykeyvalue">2. VKC Attribute PropertyにKeyとValueを入力</h3>
 <p>Listの「+」ボタンを押すことで、KeyとValueの入力欄が表示されます。</p>
 <div class="admonition info">
@@ -9794,10 +9794,10 @@
 <p>Vket Cloudのプロパティ機能は、キー(Key)に対応する値(Value)を保持する機能です。<br>
 保持した値はHeliScriptで読み込んだり、上書きしたりすることが可能です。</p>
 </div>
-<p><img alt="HEOProperty_3" src="img/HEOProperty_3.jpg" /></p>
+<p><img alt="VKCAttributeProperty_3" src="img/VKCAttributeProperty_3.jpg" /></p>
 <p>KeyおよびValueはいずれもString型として保持されます。</p>
 <p>これで、VKC Attribute Propertyの設定が完了です。</p>
-<p><img alt="HEOProperty_4" src="img/HEOProperty_4.jpg" /></p>
+<p><img alt="VKCAttributeProperty_4" src="img/VKCAttributeProperty_4.jpg" /></p>
 <p>ビルド後のScene.jsonのproperties項目に入力内容が反映されています。</p>
 <hr />
 <h2 id="heliscript">HeliScriptでの使い方</h2>
@@ -9871,13 +9871,11 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <h2 id="_2">活用方法</h2>
 <p>VKC Attribute Propertyの活用例を紹介します。</p>
 <h3 id="1_1">1. アクティビティへの値渡し</h3>
-<p>最もオーソドックスな使い方です。<br>
-アクティビティクラスの作成時、プロパティでカスタマイズ可能要素を作成する際にVKC Attribute Propertyを使います。</p>
-<p><img alt="HEOProperty_5" src="img/HEOProperty_5.jpg" /></p>
-<p>シーンjsonを適切な形に変更した後にVKC Item Activityで読み込むと下記のようになります。</p>
-<p><img alt="HEOProperty_6" src="img/HEOProperty_6.jpg" /></p>
-<p>Valueに値を入れておくことで、初期入力値を設定することができます。</p>
-<p>アクティビティ側HeliScriptでは<code>GetProperty()</code>を使用して入力した値を読み込みます。</p>
+<div class="admonition tip">
+<p class="admonition-title">アクティビティにおけるプロパティ定義について</p>
+<p>以前のバージョンとは異なり、アクティビティにプロパティを設定して値渡しを行うには、VKCAttributePropertyを使用せずにアクティビティのjsonファイルにて定義を行うのがおすすめです。<br>
+詳しくは<a href="../SDKTools/VKCActivityExporter.html#activity-property">VKC Activity Exporter: Activity / Propertyの設定について</a>をご参照ください。</p>
+</div>
 <h3 id="2">2. コンポーネント間の値渡し</h3>
 <p>コンポーネント間で値渡しをする際、以下のようにVKC Attribute Propertyを使用できます。<br><br />
 ※値を変更する関数を用意して、<code>hsCallComponentMethod()</code>を使用しても同じことができます。</p>
@@ -9932,7 +9930,7 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 </code></pre></div>
 
 <h3 id="3-unityserializefield">3. Unityの[SerializeField]属性的運用</h3>
-<p>①のアクティビティへの値渡しと同様に、VKC Attribute Propertyから変数の中身を定義するように設定しておくことで、Unityエディタ上でパラメータ設定を行うことができるようになります。</p>
+<p>「2. コンポーネントへの値渡し」と同様に、VKC Attribute Propertyから変数の中身を定義するように設定しておくことで、Unityエディタ上でパラメータ設定を行うことができるようになります。</p>
 <p>ただし、KeyおよびValueはすべてstring値であることは注意が必要です。</p>
 <div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">exampleC</span><span class="p">{</span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">HP</span><span class="p">;</span>
@@ -9958,9 +9956,10 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <h3 id="1-setproperty-getproperty">1. SetProperty / GetPropertyする際は対象となるアイテムに注意</h3>
 <p>アイテムごとに異なるプロパティを設定することが可能です。<br><br />
 HeliScript上で対象となるアイテムを間違えると、上手く動作しない場合があるので、気を付けましょう。</p>
-<div class="admonition note caution">
+<div class="admonition note warning">
 <p class="admonition-title">Note</p>
-<p>SDK9.11現在、対象となるプロパティが存在しないのにSetPropertyを行おうとした場合、エラー文も出ずに他のHeliScriptの動作に影響を及ぼす場合があります。</p>
+<p>更新：SDK12.x及び以降のバージョンでは、プロパティが存在しない際にSetPropertyを行った場合は新たにプロパティを追加するように変更されました。<br>
+SDK9.11現在、対象となるプロパティが存在しないのにSetPropertyを行おうとした場合、エラー文も出ずに他のHeliScriptの動作に影響を及ぼす場合があります。</p>
 </div>
 <h2 id="2-keyvaluestring">2. KeyおよびValueはString型</h2>
 <p>少し上でも解説した通り、KeyおよびValueはString型となるため、String型以外の変数を扱う場合、SetPropertyやGetPropertyする際に型変換を行う必要があります。</p>

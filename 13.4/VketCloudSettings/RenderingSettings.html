@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#renderingsettings" class="md-skip">
+        <a href="#vkc-rendering-settings" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -741,7 +741,7 @@
         
   
   <span class="md-ellipsis">
-    Camera Settings
+    VKCSettingWorldCamera
   </span>
   
 
@@ -2165,7 +2165,7 @@
         
   
   <span class="md-ellipsis">
-    VKC/HEO対応表
+    VKC/HEOコンポーネント概要
   </span>
   
 
@@ -9531,7 +9531,7 @@
                   
 
 
-<h1 id="renderingsettings">RenderingSettings</h1>
+<h1 id="vkc-rendering-settings">VKC Rendering Settings</h1>
 <p><img alt="RenderingSettings_1" src="img/RenderingSettings_1.jpg" /></p>
 <p>RenderingSettingsでは、ワールドにおける描画設定を編集します。</p>
 <table>
@@ -9555,22 +9555,22 @@
 </tr>
 <tr>
 <td><code>Directional Light</code></td>
-<td>空欄</td>
+<td>none(空欄)</td>
 <td>シーンに設置されたディレクショナルライトをワールドライトとして指定します。</td>
 </tr>
 <tr>
 <td><code>Light Intensity</code></td>
-<td>1.0</td>
+<td>1</td>
 <td>ワールドライトの強度を設定します。</td>
 </tr>
 <tr>
 <td><code>Lightmap Intensity</code></td>
-<td>1.0</td>
+<td>1</td>
 <td>ライトマップの強度を設定します。</td>
 </tr>
 <tr>
 <td><code>Fade In Time</code></td>
-<td>2.0</td>
+<td>2</td>
 <td>　ワールド入場時のホワイトフェードインの時間を秒単位で指定します。</td>
 </tr>
 <tr>
@@ -9585,12 +9585,12 @@
 </tr>
 <tr>
 <td><code>Shadow Area Size</code></td>
-<td>3.0</td>
+<td>3</td>
 <td>　シャドウを描画する距離をメートル単位で指定します。</td>
 </tr>
 <tr>
 <td><code>Shadow Fade Size</code></td>
-<td>1.0</td>
+<td>1</td>
 <td>　シャドウ外周に向かってフェードアウトする距離をメートル単位で指定します。</td>
 </tr>
 <tr>
@@ -9600,12 +9600,12 @@
 </tr>
 <tr>
 <td><code>Projection Far</code></td>
-<td>500.0</td>
+<td>500</td>
 <td>遠方のクリッピング距離を指定します。</td>
 </tr>
 <tr>
 <td><code>Projection Degree</code></td>
-<td>70.0</td>
+<td>70</td>
 <td>画角を指定します。（デフォルト値推奨）</td>
 </tr>
 <tr>
@@ -9629,7 +9629,7 @@
 <td>SSAO (screen-space ambient occlusion)のオンオフを切り替えます。</td>
 </tr>
 <tr>
-<td><code>Priority List</code></td>
+<td><code>VKC Item Render Priority Settings</code></td>
 <td></td>
 <td>ワールド内のオブジェクトの描画優先度を管理します。<br>数字の小さいアイテムから順番に描画され、数字が同じアイテムは同時に描画されます。</td>
 </tr>
@@ -9693,12 +9693,12 @@
 </tr>
 <tr>
 <td><code>G</code></td>
-<td>0.0</td>
+<td>0</td>
 <td>IBLの強さを調整するパラメータを設定します。</td>
 </tr>
 <tr>
 <td><code>Distance</code></td>
-<td>150.0</td>
+<td>150</td>
 <td>効果開始距離を設定します。</td>
 </tr>
 <tr>
@@ -9742,7 +9742,7 @@
 </tr>
 <tr>
 <td><code>SpecularMipMapCount</code></td>
-<td>6.0</td>
+<td>6</td>
 <td>スペキュラ用キューブマップのミップマップの数を指定します。</td>
 </tr>
 <tr>
@@ -9790,7 +9790,7 @@
 </tr>
 <tr>
 <td><code>Attenuation</code></td>
-<td>3.0</td>
+<td>3</td>
 <td>0.0 ~ 3.0</td>
 <td>柱や浮いている看板の背後など、距離が空いているのにAOが出てしまう箇所を押さえます。</td>
 </tr>
@@ -9808,7 +9808,7 @@
 </tr>
 <tr>
 <td><code>AO Ratio</code></td>
-<td>3.0</td>
+<td>3</td>
 <td>0.25 ~ 5.0</td>
 <td>AOの強さ（濃度）を設定します。</td>
 </tr>

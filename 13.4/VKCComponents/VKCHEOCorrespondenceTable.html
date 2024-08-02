@@ -24,7 +24,7 @@
     
     
       
-        <title>VKC/HEO対応表 - VketCloudSDK Manual</title>
+        <title>VKC/HEOコンポーネント概要 - VketCloudSDK Manual</title>
       
     
     
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vkc-heo" class="md-skip">
+        <a href="#vkcheo" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              VKC/HEO対応表
+              VKC/HEOコンポーネント概要
             
           </span>
         </div>
@@ -741,7 +741,7 @@
         
   
   <span class="md-ellipsis">
-    Camera Settings
+    VKCSettingWorldCamera
   </span>
   
 
@@ -2174,7 +2174,7 @@
           
   
   <span class="md-ellipsis">
-    VKC/HEO対応表
+    VKC/HEOコンポーネント概要
   </span>
   
 
@@ -2185,7 +2185,7 @@
         
   
   <span class="md-ellipsis">
-    VKC/HEO対応表
+    VKC/HEOコンポーネント概要
   </span>
   
 
@@ -2221,6 +2221,30 @@
       Item 項目
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Item 項目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#item-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Item - Fieldについて
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Item - Objectについて
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -9503,6 +9527,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Item 項目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#item-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Item - Fieldについて
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Item - Objectについて
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -9547,7 +9595,7 @@
                   
 
 
-<h1 id="vkc-heo">VKC / HEO 対応表</h1>
+<h1 id="vkcheo">VKC/HEO コンポーネント 概要</h1>
 <p>VketCloudSDKには、以下のような種類のコンポーネントが存在します。</p>
 <ul>
 <li><strong>Setting 項目</strong>: シーンごとに1つの値しか割り当てられないコンポーネント</li>
@@ -9624,6 +9672,20 @@
 </tbody>
 </table>
 <h2 id="item">Item 項目</h2>
+<p>Vket Cloudのワールドの１シーンにおいて配置されているモデル、コライダー、サウンド、パーティクルなど様々な構成要素は内部的にはitemとして分類されます。<br>
+これらのitemは、VKC Item Field、VKC Item Objectなど、VketCloudSDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。</p>
+<p>itemにはtypeという要素があり、typeによって、そのitemの役割が決まります。<br>
+typeは十数種類あり、いくつか例に挙げると、</p>
+<ul>
+<li>fieldタイプのitemであれば、設置された位置を動かせないもの。</li>
+<li>objectタイプのitemであれば、位置を動かしたり、Animationを行えるもの。</li>
+<li>planeタイプのitemであれば、画像を配置できるもの。</li>
+<li>textplaneタイプのitemであれば、文字入力ができるもの。</li>
+<li>cameraタイプのitemであれば、演出目的等で通常のカメラから切り替えるためのもの。</li>
+<li>bgm, se, systemタイプのitemであれば、サウンドの再生に使用するもの。(コンポーネント名はAudio)</li>
+<li>particleタイプのitemであれば、パーティクルの再生に使用するもの。</li>
+</ul>
+<p>というように振舞います。</p>
 <table>
 <thead>
 <tr>
@@ -9690,7 +9752,53 @@
 </tr>
 </tbody>
 </table>
+<h3 id="item-field">Item - Fieldについて</h3>
+<p>fieldタイプのitemは、シーン上の設置された位置から動かせません。そのため、scriptを使用して、fieldタイプのitemを取得して動かそうとしても、仕様上動かせません。<br>
+一方で、nodeに対しての操作が豊富に行えたり、Unity上での編集が簡単に行える利点があります。<br>
+動かない地形などについては、fieldとして設置するのが推奨されます。<br></p>
+<p>fieldとしてオブジェクトを設置するには、以下の手順を行います：</p>
+<ol>
+<li>
+<p><a href="VKCItemField.html">VKC Item Field</a>コンポーネントを持つゲームオブジェクトをUnityのシーン上に設置。</p>
+</li>
+<li>
+<p>設置したゲームオブジェクトの子に3Dモデルやコライダーを配置する。</p>
+</li>
+</ol>
+<p>これによって、Field及びその子要素はビルド時にheoファイルとしてパックされ、シーン上にfieldタイプのitemとして登録されます。<br>
+ここで登録されたFieldの子要素のオブジェクトは、後述のNodeとして表現されます。</p>
+<h3 id="item-object">Item - Objectについて</h3>
+<p>fieldと同じく3Dモデルを配置するためのtypeとしてobjectがあります。<br>
+objectタイプのitemは、fieldと違って移動、回転、スケールの変更がスクリプトによって変更できたり、さらに、ボーンアニメーションを含むアニメーションが使用できたりします。<br>
+ただし、書き出しまでの手順が少し複雑であるため、何度も微調整が必要なものに関してはfieldにしておいた方が編集の面において楽と考えられます。<br>
+動くモノや、scriptによる複雑な動作をさせたいモノに関しては、objectとして設置するのが推奨されます。</p>
+<p>objectとしてオブジェクトを設置するには、以下の手順を行います：</p>
+<ol>
+<li>
+<p>objectとして設定したいゲームオブジェクトを選択（複数選択は不可）</p>
+</li>
+<li>
+<p>VketCloudSDK &gt; <a href="../WorldMakingGuide/HEOExporter_Tutorial.html">Export Field</a>を行う。</p>
+</li>
+<li>
+<p>heoファイルの保存場所を設定し書き出す。</p>
+</li>
+<li>
+<p><a href="VKCItemObject.html">VKC Item Object</a>コンポーネントを持つゲームオブジェクトをUnityのシーン上に配置する</p>
+</li>
+<li>
+<p>書き出したheoを<a href="VKCItemObject.html">VKC Item Object</a>に設定する。</p>
+</li>
+</ol>
+<p>これによって、ビルド時に設定されたheoファイルが任意の場所にコピーされ、シーン上にobjectタイプのitemとして登録されます。</p>
+<p>※また、わかりづらい要素として、Avatarのボーンに対して追従するモノについてもObjectという名称になっています。
+<a href="VKCAttributeActionTrigger.html">Action Trigger</a>で設定できる<a href="../Actions/Object/ShowHideObject.html">Show/HideObject</a>のObjectはこのAvatarに設定できるObjectのことを指します。</p>
 <h2 id="node">Node 項目</h2>
+<p>Vket Cloudにて、前述のField及びObjectは.heoという独自の3Dモデルの規格によって表現されます。<br>
+大きな特徴として、Unity上での子オブジェクトは.heoにおいては<strong>Node</strong>として扱われ、Nodeに関連するコンポーネントやHeliScript関数の対象となります。</p>
+<p>なお、重要な点として<strong>nodeは階層構造を持っていません。</strong><br>
+Unity上でオブジェクトが階層構造を持っていたとしても、heoとして書き出した後は一列に並んでいます。<br>
+Unity上では親だったGameObjectを選択して表示非表示などの動作を行ったとしても、Vket Cloud上では親子関係はなくなっているため、したがってもともと子だった要素に対して表示非表示は動作しません。</p>
 <table>
 <thead>
 <tr>

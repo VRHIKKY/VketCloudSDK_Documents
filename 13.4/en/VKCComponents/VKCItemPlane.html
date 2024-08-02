@@ -741,7 +741,7 @@
         
   
   <span class="md-ellipsis">
-    Camera Settings
+    VKCSettingWorldCamera
   </span>
   
 
@@ -2165,7 +2165,7 @@
         
   
   <span class="md-ellipsis">
-    VKC/HEO Correspondence Table
+    VKC/HEO Components Overview
   </span>
   
 
@@ -2672,6 +2672,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    VKCItemPlane
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="VKCItemPlane.html" class="md-nav__link md-nav__link--active">
         
   
@@ -2681,6 +2692,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -9408,6 +9447,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9436,39 +9492,19 @@ The file format needs to be in png format.</p>
 </thead>
 <tbody>
 <tr>
-<td>Texture in JP / EN</td>
-<td>Blank</td>
-<td>Specify the image texture. Texture in EN is the image shown when your browser's language setting is set to English. Leave it blank if unncessary.</td>
-</tr>
-<tr>
-<td>World Position</td>
-<td>Same value as Transform's Position value</td>
-<td>Set the position for displaying text</td>
-</tr>
-<tr>
-<td>World Rotation</td>
-<td>Same value as Transform's Rotation value</td>
-<td>Set the rotation for displaying text</td>
-</tr>
-<tr>
-<td>World Scale</td>
-<td>Same value as Transform's Scale value</td>
-<td>Set the scale for displaying text</td>
-</tr>
-<tr>
-<td>Alpha Blending</td>
-<td>false</td>
-<td>Lets you use cutout/transparency.</td>
-</tr>
-<tr>
 <td>Show</td>
 <td>true</td>
 <td>Enable if you want the image to appear from the beginning.</td>
 </tr>
 <tr>
-<td>Z-bias</td>
-<td>0</td>
-<td>Higher z value will make the image show in front of other objects.</td>
+<td>Texture in JP / EN</td>
+<td>Blank</td>
+<td>Specify the image texture. Texture in EN is the image shown when your browser's language setting is set to English. Leave it blank if unncessary.</td>
+</tr>
+<tr>
+<td>Scene Preview</td>
+<td>false</td>
+<td>Creates a preview object in Scene.</td>
 </tr>
 <tr>
 <td>Look at Camera</td>
@@ -9476,13 +9512,49 @@ The file format needs to be in png format.</p>
 <td>Make the image face towards the camera at all times.</td>
 </tr>
 <tr>
+<td>Alpha Blending</td>
+<td>false</td>
+<td>Lets you use cutout/transparency.</td>
+</tr>
+<tr>
+<td>Z-bias</td>
+<td>0</td>
+<td>Higher z value will make the image show in front of other objects.</td>
+</tr>
+<tr>
 <td>Double Side</td>
 <td>false</td>
 <td>Enable/Disable display on double sides</td>
 </tr>
+</tbody>
+</table>
+<h3 id="advanced-settings">Advanced Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clickable</td>
+<td>Toggles acceptance of click input from player</td>
+</tr>
+<tr>
+<td>Auto Loading</td>
+<td>When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when <code>Auto Loading</code> is disabled, use <a href="VKCItemField.html">Dynamic Loading</a> or use <a href="../hs/hs_class_item.html#load">Load()</a> on HeliScript.</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>Designates the Item's render priority. <br> For details, refer to <a href="../VketCloudSettings/RenderingSettings.html">RenderingSettings / Priority List</a></td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>Toggles display/hide when in photo mode</td>
+</tr>
 <tr>
 <td>Overrides</td>
-<td></td>
 <td>On Entering the world, the <code>Material</code> and <code>Texture</code> set in the Overrides will be used instead of textures set in VKC Item Plane.</td>
 </tr>
 </tbody>

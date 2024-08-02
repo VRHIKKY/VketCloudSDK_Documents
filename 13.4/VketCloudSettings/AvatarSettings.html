@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#avatarsettings" class="md-skip">
+        <a href="#vkc-setting-avatar" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -741,7 +741,7 @@
         
   
   <span class="md-ellipsis">
-    Camera Settings
+    VKCSettingWorldCamera
   </span>
   
 
@@ -2165,7 +2165,7 @@
         
   
   <span class="md-ellipsis">
-    VKC/HEO対応表
+    VKC/HEOコンポーネント概要
   </span>
   
 
@@ -9421,7 +9421,7 @@
                   
 
 
-<h1 id="avatarsettings">AvatarSettings</h1>
+<h1 id="vkc-setting-avatar">VKC Setting Avatar</h1>
 <p><img alt="AvatarSettings_1" src="img/AvatarSettings_1.jpg" /></p>
 <p>AvatarSettingsはワールド内におけるアバターに関する設定を扱います。</p>
 <table>
@@ -9434,17 +9434,22 @@
 </thead>
 <tbody>
 <tr>
-<td><code>Dummy Avatar</code></td>
+<td>Avatar icon show</td>
+<td>false</td>
+<td>名前の横にアイコンを表示します。<br>プリセットアバターの場合はそのアバターのアイコン、マイアバターを使用している場合は、自分のアカウントのアイコンを表示します。</td>
+</tr>
+<tr>
+<td>Dummy Avatar</td>
 <td>dummy_human_02</td>
 <td>遠方や描画制限がかかった場合に描画するダミーアバターのためのheoファイルを指定します。</td>
 </tr>
 <tr>
-<td><code>Avatar Files</code></td>
+<td>Avatar Files</td>
 <td>Vketchan_v1.6_Mtoon_blendshape,<br>Vketchan2_v1.6_Mtoon_blendshape,<br>Vketnyan_Mtoon_blendshape,<br>LesserMokuri_blendshape</td>
 <td>ワールド内にて使える<a href="../WorldMakingGuide/PresetAvatar.html">プリセットアバター</a>を設定します。<br>プリセットアバターを設定するには、あらかじめアバター情報をまとめた<a href="../WorldMakingGuide/AvatarFile.html">アバターファイル</a>を用意します。<br>VketCloudSDKではデフォルトのアバターとして<a href="https://store.vket.com/ja/items/656" target="blank">Vketちゃん1号</a>, <a href="https://store.vket.com/ja/items/657" target="blank">Vketちゃん2号</a>, <a href="https://store.vket.com/ja/items/7140" target="blank">Vketにゃん</a>, そして<a href="https://store.vket.com/ja/items/2157" target="blank">レッサーモクリ</a>を用意しています。</td>
 </tr>
 <tr>
-<td><code>CreateAvatarFile</code></td>
+<td>CreateAvatarFile</td>
 <td></td>
 <td>新規のアバターファイルを生成します。</td>
 </tr>
@@ -9454,9 +9459,6 @@
 <p class="admonition-title">Note</p>
 <p><code>Avatar Files</code>にて空欄がある / 1つも設定されていない場合はビルドエラーが発生したり、初期状態のアバターが表示されない状態となります。必ず最低1体はアバターを割り当ててください。</p>
 </div>
-<p><img alt="AvatarSettings_2" src="../troubleshooting/img/HEOWorldSetting_AvatarFileError_1.jpg" /></p>
-<p>SDKでは初期状態のアバターとして用意しているAvatarFileがあるため、空欄が発生している際はこちらをご利用ください。</p>
-<p><img alt="AvatarSettings_3" src="../troubleshooting/img/HEOWorldSetting_AvatarFileError_2.jpg" /></p>
 
 
 
