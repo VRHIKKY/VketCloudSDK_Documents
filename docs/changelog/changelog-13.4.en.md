@@ -4,10 +4,10 @@
 
 ## August 2 2024 - Edited Pages
 
-- HeliScript
-  - Built-in Classes And Functions
-    - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
-      - Removed duplicate method descriptions
+- SDK Tools
+  - GUITools
+    - [Overview and Setup](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/GUITools/Setup.html)
+      - Added note about infinite installation issue, and how to resolve it by restarting Unity project
 - VKC Components
   - VKCSettings
     - VKCSettingAvatar
@@ -20,6 +20,10 @@
   - VKCItem
         - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
             - Updated descriptions and images.
+- HeliScript
+  - Built-in Classes And Functions
+    - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
+      - Removed duplicate method descriptions
 
 ---
 
