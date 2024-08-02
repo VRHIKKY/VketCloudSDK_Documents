@@ -1,13 +1,30 @@
 # SDK Manual Change Log - Ver 13.4
 
-## 2024年8月02日更新
+## 2024年8月2日更新
 
-## 2024年8月02日 - 変更されたページ
+## 2024年8月2日 - 変更されたページ
 
 - SDK Tools
   - GUITools
     - [概要とセットアップ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/GUITools/Setup.html)
       - インストール手順で、無限にインストールが終わらない場合があるので、Unityプロジェクトを再起動することで解決することがある旨を追記
+- VKCコンポーネント
+  - VKCSetting
+    - VKCSetting Avatar
+      - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/AvatarSettings.html)
+    - VKCSettingWorldCamera
+      - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
+        - 説明文および画像を更新
+    - VKCSettingRendering
+      - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/RenderingSettings.html)
+        - 説明文および画像を更新
+  - VKCItem
+        - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+            - 説明文および画像を更新
+- HeliScript
+  - 組み込みクラス・関数
+    - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_date.html)
+      - メソッド（日時の設定）の重複していたメソッドの説明を削除
 
 ---
 
@@ -28,6 +45,8 @@
         - File Deployment Modeについて追記
     - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingNameplate.html)
       - 画像を更新
+
+---
 
 ## 2024年7月19日更新
 
@@ -66,6 +85,8 @@
     - 説明文および画像を更新
   - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
     - 各設定項目の説明、画像を更新
+
+---
 
 ## 2024年7月12日更新
 
