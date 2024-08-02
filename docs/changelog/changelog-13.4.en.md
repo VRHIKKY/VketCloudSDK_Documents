@@ -6,23 +6,28 @@
 
 - Vket Cloud Settings
 
+- SDK Tools
+  - GUITools
+    - [Overview and Setup](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/GUITools/Setup.html)
+      - Added note about infinite installation issue, and how to resolve it by restarting Unity project
 - VKC Components
   - VKCSettings
-    - VKCSettingAvatar
-      - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
-    - VKCSettingWorldCamera
-      - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
-    - VKCSettingRendering
-      - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/RenderingSettings.html)
-        - Updated descriptions and images
+        - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
+        - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
+        - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/RenderingSettings.html)
+            - Updated descriptions and images
   - VKCItem
         - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
-            - Updated descriptions and images.
+            - Updated descriptions and images
   - VKCAttribute
-        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCAttributeProperty.html)
+        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCAttributeProperty.html)
             - Updated descriptions and images
             - Changed instructions for defining property on Activity
             - Added change of function for SetProperty
+- HeliScript
+  - Built-in Classes And Functions
+    - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
+      - Removed duplicate method descriptions
 
 ---
 
