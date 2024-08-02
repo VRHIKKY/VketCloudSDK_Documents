@@ -5,9 +5,20 @@
 ## 2024年8月2日 - 変更されたページ
 
 - VKCコンポーネント
-    - VKCItem
+  - VKCSetting
+    - VKCSetting Avatar
+      - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/AvatarSettings.html)
+    - VKCSettingWorldCamera
+      - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
+        - 説明文および画像を更新
+    - VKCSettingRendering
+      - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/RenderingSettings.html)
+        - 説明文および画像を更新
+  - VKCItem
         - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
             - 説明文および画像を更新
+
+---
 
 ## 2024年7月26日更新
 
@@ -26,6 +37,8 @@
         - File Deployment Modeについて追記
     - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingNameplate.html)
       - 画像を更新
+
+---
 
 ## 2024年7月19日更新
 
@@ -64,6 +77,8 @@
     - 説明文および画像を更新
   - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
     - 各設定項目の説明、画像を更新
+
+---
 
 ## 2024年7月12日更新
 
