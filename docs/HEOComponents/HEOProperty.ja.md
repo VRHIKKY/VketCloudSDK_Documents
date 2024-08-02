@@ -237,7 +237,8 @@ component exampleC{
 アイテムごとに異なるプロパティを設定することが可能です。<br>  
 HeliScript上で対象となるアイテムを間違えると、上手く動作しない場合があるので、気を付けましょう。
 
-!!! note caution
+!!! note warning
+    Update: On SDK version 12.x and later, SetProperty will add a new property if it does not exist.<br>
     SDK9.11現在、対象となるプロパティが存在しないのにSetPropertyを行おうとした場合、エラー文も出ずに他のHeliScriptの動作に影響を及ぼす場合があります。
 
 ## 2. KeyおよびValueはString型
