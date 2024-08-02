@@ -4,8 +4,10 @@
 
 ## August 2 2024 - Edited Pages
 
-- Vket Cloud Settings
-    
+- HeliScript
+  - Built-in Classes And Functions
+    - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
+      - Removed duplicate method descriptions
 - VKC Components
   - VKCSettings
     - VKCSettingAvatar
@@ -20,6 +22,7 @@
             - Updated descriptions and images.
 
 ---
+
 ## July 26 2024 Update
 
 ## July 26 2024 - Edited Pages

@@ -4,6 +4,10 @@
 
 ## 2024年8月2日 - 変更されたページ
 
+- HeliScript
+  - 組み込みクラス・関数
+    - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_date.html)
+      - メソッド（日時の設定）の重複していたメソッドの説明を削除
 - VKCコンポーネント
   - VKCSetting
     - VKCSetting Avatar
