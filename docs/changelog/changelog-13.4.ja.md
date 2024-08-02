@@ -4,15 +4,19 @@
 
 ## 2024年8月2日 - 変更されたページ
 
-- Vket Cloud Settings
-    - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
-        - 説明文および画像を更新
-
 - VKCコンポーネント
-  - VKCItem
-    - VKCSetting
+  - VKCSetting
+    - VKCSetting Avatar
+      - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/AvatarSettings.html)
+    - VKCSettingWorldCamera
+      - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
+        - 説明文および画像を更新
+    - VKCSettingRendering
       - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/RenderingSettings.html)
         - 説明文および画像を更新
+  - VKCItem
+        - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+            - 説明文および画像を更新
 
 ---
 
