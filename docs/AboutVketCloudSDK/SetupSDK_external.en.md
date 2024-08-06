@@ -101,7 +101,7 @@ The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Un
 
   ![SetupSDK_External](img/SetupSDK_External_11.jpg)
 
-2. Once the Project Settings window opens, in the Graphics settings screen, under "Tier Settings," uncheck "Use Defaults" for the "Low (Tier 1)" option, and change the "Standard Shader Quality" setting to "Medium."
+2. Once the Project Settings window opens, in the Graphics settings tab, under "Tier Settings," uncheck "Use Defaults" for the "Low (Tier 1)" option, and change the "Standard Shader Quality" setting to "Medium."
 
   ![SetupSDK_External](img/SetupSDK_External_12.jpg)
 

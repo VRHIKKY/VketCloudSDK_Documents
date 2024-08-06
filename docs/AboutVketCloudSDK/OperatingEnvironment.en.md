@@ -37,18 +37,18 @@ Also, we recommend the below systems when entering your world built with VketClo
 
     3. Check the Configuration in the Project Settings and change the Api Compatibility Level to ".NET 4.x" from the pull-down menu.
 
-    ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
+    ![ApiCompatibilityLevelSetting](img/SetupSDK_External_16.jpg)
 
     **Setting LightMap Encoding**
 
     Likewise above, check the Configuration in the Project Settings and change the Lightmap Encoding to "Normal Quality" from the pull-down menu.
 
-    ![LightMapEncoding](img/LightMapEncoding.jpg)
+    ![LightMapEncoding](img/SetupSDK_External_15.jpg)
 
     **Setting Color Space**
     From Edit >Project Settings, set the  Color Space as Linear.
 
-    ![linear](img/linear.jpg)
+    ![linear](img/SetupSDK_External_14.jpg)
 
     On Ver12.3 and later versions, the settings below are required as well:
 
@@ -56,16 +56,8 @@ Also, we recommend the below systems when entering your world built with VketClo
 
     The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so you will need to make some changes in the settings.
 
-1. Open Edit/ProjectSettings/Graphics
-
-    ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_1.jpg)
-
-    ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_2.jpg)
-
-2. In the Tier Settings, uncheck "Use Defaults" on Low, Medium, and High
-
-    ![TierSettings.jpg](../heoexporter/he_image/TierSettings.jpg)
-
-3. In the Tier Settings, change the "Standard Shader Quality" on Low, Medium, and High, to "Medium"
-
-    ![StandardShaderQuality.jpg](../heoexporter/he_image/StandardShaderQuality.jpg)
+    1. In the Graphics settings screen, under "Tier Settings," uncheck "Use Defaults" for the "Low (Tier 1)" option, and change the "Standard Shader Quality" setting to "Medium."
+      ![StandardShader1](img/SetupSDK_External_12.jpg)
+      
+    2. Repeat the process for "Medium (Tier 2)" and "High (Tier 3)" options located below "Low (Tier 1)."
+      ![StandardShader2](img/SetupSDK_External_13.jpg)
