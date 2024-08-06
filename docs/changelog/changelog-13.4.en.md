@@ -1,5 +1,49 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 9 2024 Update
+
+## August 9 2024 - Edited Pages
+
+- About VketCloudSDK
+    - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
+        - Updated descriptions and images
+
+---
+
+## August 2 2024 Update
+
+## August 2 2024 - Edited Pages
+
+- Vket Cloud Settings
+
+- SDK Tools
+  - GUITools
+    - [Overview and Setup](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/GUITools/Setup.html)
+      - Added note about infinite installation issue, and how to resolve it by restarting Unity project
+- VKC Components
+  - [VKC/HEO Component Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCHEOCorrespondenceTable.html)
+    - Renamed page title
+    - Added an overview description for Item, Node *English Version WIP
+  - VKCSettings
+        - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
+        - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
+        - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/RenderingSettings.html)
+            - Updated descriptions and images
+  - VKCItem
+        - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
+            - Updated descriptions and images
+  - VKCAttribute
+        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCAttributeProperty.html)
+            - Updated descriptions and images
+            - Changed instructions for defining property on Activity
+            - Added change of function for SetProperty
+- HeliScript
+  - Built-in Classes And Functions
+    - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
+      - Removed duplicate method descriptions
+
+---
+
 ## July 26 2024 Update
 
 ## July 26 2024 - Edited Pages

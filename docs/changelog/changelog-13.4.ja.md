@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+
+## 2024年8月9日更新
+
+## 2024年8月9日 - 変更されたページ
+
+- VketCloudSDKについて
+    - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
+        - 説明文および画像を更新
+
+---
+
 ## 2024年7月26日更新
 
 ## 2024年7月26日 - 変更されたページ
@@ -17,6 +28,8 @@
         - File Deployment Modeについて追記
     - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingNameplate.html)
       - 画像を更新
+
+---
 
 ## 2024年7月19日更新
 
