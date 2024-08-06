@@ -24,6 +24,7 @@
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/VketCloudSDKSettings.html)
 - HEOコンポーネント
   - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOProperty.html)
+    - 2024年8月6日： SDK 12.x以降のSetPropertyの挙動変更について追記
 - アクションについて
   - Node
     - [Enable/DisableNode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/Actions/Node/EnableDisableNode.html)
