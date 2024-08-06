@@ -24,6 +24,20 @@ The VketCloudSDK includes the following types of components:
 
 ## Item Components
 
+In Vket Cloud worlds, each element such as models, colliders, sound, and particles are internally categorized as "items".<br>
+Defining a new item on the world scene can be done by adding a component to a game object, using such as VKC Item Field, VKC Item Object, etc.
+
+Items are further categorized by "type", which defines the role of each item.<br>
+here are a few examples:
+
+- field: an item which cannot be moved from its initial position
+- object: an item that can move, animate, and other dynamic actions
+- plane: item for displaying an image
+- textplane: item for displaying a text
+- camera: item for switching to a new camera from the ordinary camera, mainly for special effects
+- bg, se, system (component named as Audio): item for playing sound effects
+- particle: item for emitting particles
+
 | Item Component    | Component Name (-SDK12.3) | Component Name (SDK13.X-) |
 |--------------|---------------------------|----------------------------|
 | Field        | HEO Field                 | VKC Item Field             |
@@ -37,6 +51,42 @@ The VketCloudSDK includes the following types of components:
 | Bg. Texture   | HEO Background Texture    | VKC Item Background Texture |
 | Activity     | HEO Activity              | VKC Item Activity          |
 | Camera       | HEO Camera                | VKC Item Camera            |
+
+### About Item - Field
+
+The "field" type item is unique for its immutability in the scene, which its position cannot be moved. Even if a script calls a field item to move it, it cannot be moved by feature.<br>
+However, field items are useful for node controls and editing on Unity.<br>
+Immutable objects such as background assets/props are recommended to be placed as a "field" item.<br>
+
+Follow the instructions below to place an object as a "field" item:
+
+1. Attach a [VKC Item Field](VKCItemField.md) component to a game object in the Unity scene
+
+2. Place 3D models, colliders, etc. under the object with the [VKC Item Field](VKCItemField.md) component
+
+This process will pack the Field object and its child objects to a single heo file on build, and place it on the scene as a field type item.<br>
+The child objects will be referred as Nodes, which is explained later on.
+
+### About Item - Object
+
+As another type to place 3D models, "object" type items are used aside from field item.<br>
+Object type items are able to change position, rotation, and scale by script unlike field item, and can play animations including bone animations.<br>
+However, as outputting the item requires a rather complex procedure, field item is a viable option if the object needs several readjustments.<br>
+For dynamic objects or scriptable objects, "object" type would be the recommended item.
+
+Follow the instructions below to place an object as a "object" item:
+
+1. Select a game object to designate as an "object" item (multiple selections are not allowed)
+
+2.
+
+3.
+
+4.
+
+5.
+
+
 
 ## Node Components
 
