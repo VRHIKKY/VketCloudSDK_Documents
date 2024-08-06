@@ -40,6 +40,11 @@ When you switch the display tab to My Registries, `VketCloudSDK_GUITools` should
 
 Click the Install button to perform the installation.
 
+!!! warning "If the installation does not complete"
+
+    When installing GUITools v13.0.0, the installation may continue indefinitely.
+    
+    In such cases, restarting the Unity project may resolve the issue.
 
 ## C. Installing UniTask
 

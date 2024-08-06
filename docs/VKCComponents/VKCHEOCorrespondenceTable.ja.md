@@ -1,4 +1,4 @@
-# VKC / HEO 対応表
+# VKC/HEO コンポーネント 概要
 
 VketCloudSDKには、以下のような種類のコンポーネントが存在します。
 
@@ -24,6 +24,22 @@ VketCloudSDKには、以下のような種類のコンポーネントが存在�
 
 ## Item 項目
 
+Vket Cloudのワールドの１シーンにおいて配置されているモデル、コライダー、サウンド、パーティクルなど様々な構成要素は内部的にはitemとして分類されます。<br>
+これらのitemは、VKC Item Field、VKC Item Objectなど、VketCloudSDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
+
+itemにはtypeという要素があり、typeによって、そのitemの役割が決まります。<br>
+typeは十数種類あり、いくつか例に挙げると、
+
+- fieldタイプのitemであれば、設置された位置を動かせないもの。
+- objectタイプのitemであれば、位置を動かしたり、Animationを行えるもの。
+- planeタイプのitemであれば、画像を配置できるもの。
+- textplaneタイプのitemであれば、文字入力ができるもの。
+- cameraタイプのitemであれば、演出目的等で通常のカメラから切り替えるためのもの。
+- bgm, se, systemタイプのitemであれば、サウンドの再生に使用するもの。(コンポーネント名はAudio)
+- particleタイプのitemであれば、パーティクルの再生に使用するもの。
+
+というように振舞います。
+
 | Item 項目     | コンポーネント名 (-SDK12.3) | コンポーネント名 (SDK13.X-) |
 |---------------|-----------------------------|------------------------------|
 | Field         | HEO Field                   | VKC Item Field               |
@@ -38,7 +54,53 @@ VketCloudSDKには、以下のような種類のコンポーネントが存在�
 | Activity      | HEO Activity                | VKC Item Activity            |
 | Camera        | HEO Camera                  | VKC Item Camera              |
 
+### Item - Fieldについて
+
+fieldタイプのitemは、シーン上の設置された位置から動かせません。そのため、scriptを使用して、fieldタイプのitemを取得して動かそうとしても、仕様上動かせません。<br>
+一方で、nodeに対しての操作が豊富に行えたり、Unity上での編集が簡単に行える利点があります。<br>
+動かない地形などについては、fieldとして設置するのが推奨されます。<br>
+
+fieldとしてオブジェクトを設置するには、以下の手順を行います：
+
+1. [VKC Item Field](VKCItemField.md)コンポーネントを持つゲームオブジェクトをUnityのシーン上に設置。
+
+2. 設置したゲームオブジェクトの子に3Dモデルやコライダーを配置する。
+
+これによって、Field及びその子要素はビルド時にheoファイルとしてパックされ、シーン上にfieldタイプのitemとして登録されます。<br>
+ここで登録されたFieldの子要素のオブジェクトは、後述のNodeとして表現されます。
+
+### Item - Objectについて
+
+fieldと同じく3Dモデルを配置するためのtypeとしてobjectがあります。<br>
+objectタイプのitemは、fieldと違って移動、回転、スケールの変更がスクリプトによって変更できたり、さらに、ボーンアニメーションを含むアニメーションが使用できたりします。<br>
+ただし、書き出しまでの手順が少し複雑であるため、何度も微調整が必要なものに関してはfieldにしておいた方が編集の面において楽と考えられます。<br>
+動くモノや、scriptによる複雑な動作をさせたいモノに関しては、objectとして設置するのが推奨されます。
+
+objectとしてオブジェクトを設置するには、以下の手順を行います：
+
+1. objectとして設定したいゲームオブジェクトを選択（複数選択は不可）
+
+2. VketCloudSDK > [Export Field](../WorldMakingGuide/HEOExporter_Tutorial.md)を行う。
+
+3. heoファイルの保存場所を設定し書き出す。
+
+4. [VKC Item Object](../VKCComponents/VKCItemObject.md)コンポーネントを持つゲームオブジェクトをUnityのシーン上に配置する
+
+5. 書き出したheoを[VKC Item Object](../VKCComponents/VKCItemObject.md)に設定する。
+
+これによって、ビルド時に設定されたheoファイルが任意の場所にコピーされ、シーン上にobjectタイプのitemとして登録されます。
+
+※また、わかりづらい要素として、Avatarのボーンに対して追従するモノについてもObjectという名称になっています。
+[Action Trigger](VKCAttributeActionTrigger.md)で設定できる[Show/HideObject](../Actions/Object/ShowHideObject.md)のObjectはこのAvatarに設定できるObjectのことを指します。
+
 ## Node 項目
+
+Vket Cloudにて、前述のField及びObjectは.heoという独自の3Dモデルの規格によって表現されます。<br>
+大きな特徴として、Unity上での子オブジェクトは.heoにおいては**Node**として扱われ、Nodeに関連するコンポーネントやHeliScript関数の対象となります。
+
+なお、重要な点として**nodeは階層構造を持っていません。**<br>
+Unity上でオブジェクトが階層構造を持っていたとしても、heoとして書き出した後は一列に並んでいます。<br>
+Unity上では親だったGameObjectを選択して表示非表示などの動作を行ったとしても、Vket Cloud上では親子関係はなくなっているため、したがってもともと子だった要素に対して表示非表示は動作しません。
 
 | Node 項目          | コンポーネント名 (-SDK12.3) | コンポーネント名 (SDK13.X-)       |
 |--------------------|-----------------------------|-----------------------------------|

@@ -206,45 +206,6 @@ UTCに基づく、0を起点とした「ミリ秒」を返します。(範囲: 0
 
 このインスタンスの「ミリ秒」を、引数valueの値に更新します。
 
-## メソッド (日時の設定)
-
-### SetYear
-`void SetYear(int value)`
-
-このインスタンスの「年」を、引数valueの値に更新します。
-
-### SetMonth
-`void SetMonth(int value)`
-
-このインスタンスの「月」を、引数valueの値に更新します。
-
-### SetDay
-`void SetDay(int value)`
-
-このインスタンスの「日」を、引数valueの値に更新します。
-
-### SetHours
-`void SetHours(int value)`
-
-このインスタンスの「時間」を、引数valueの値に更新します。
-
-### SetMinutes
-`void SetMinutes(int value)`
-
-このインスタンスの「分」を、引数valueの値に更新します。
-
-### SetSeconds
-`void SetSeconds(int value)`
-
-このインスタンスの「秒」を、引数valueの値に更新します。
-
-### SetMilliseconds
-`void SetMilliseconds(int value)`
-
-このインスタンスの「ミリ秒」を、引数valueの値に更新します。
-
-
-
 ## メソッド (日時の加算・減算)
 Dateインスタンスに対して、日時の加算を行うメソッドです。
 引数が負数の場合、減算が行われます。

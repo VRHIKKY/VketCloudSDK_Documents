@@ -62,6 +62,8 @@
       - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingNameplate.html)
       - Updated images
 
+---
+
 ## July 19 2024 Update
 
 ## July 19 2024 - Added Pages
@@ -99,6 +101,8 @@
     - Updated descriptions of settings, updated images
   - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
     - Updated descriptions of settings, updated images
+
+---
 
 ## July 12 2024 Update
 
