@@ -61,6 +61,7 @@
     - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
     - Added Guide for Setup using Quick Menu
+    - Updated description of HEOBackgroundTexture
   - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ReflectionProbe.html)
     - Edited setup instructions for reflection probe
   - [How to Animate Objects](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation.html)

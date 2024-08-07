@@ -60,6 +60,7 @@
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Skybox.html)
     - クイックメニューについて案内を追記
+    - HEOBackgroundTextureの説明文を更新
   - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/ReflectionProbe.html)
     - リフレクションプローブの設定方法を更新
   - [オブジェクトをアニメーションさせる](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/PropAnimation.html)
