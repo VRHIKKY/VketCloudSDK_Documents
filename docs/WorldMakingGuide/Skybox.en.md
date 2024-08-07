@@ -33,6 +33,6 @@ By selecting "Unlit/Texture" for the material shader, the Skybox object will be 
 ![Skybox_1](img/Skybox_1.jpg)
 
 !!! note "about VKC Item Background Texture"
-    As an alternative method to setup a background, the [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md) component can be used to designate background textures.
+    As an alternative method to setup a background, the [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md) which displays the same image from any camera angle and is particularly useful when creating backgrounds for 2D games and similar applications.
 
     ![HEOBackgroundTexture_2](../VKCComponents/img/HEOBackgroundTexture_2.jpg)

@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 9 2024 Update
+
+## August 9 2024 - Edited Pages
+
+- World Making Guide
+    - [Setting up a Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/Skybox.html)
+        - Updated descriptions
+
+---
+
 ## August 2 2024 Update
 
 ## August 2 2024 - Edited Pages

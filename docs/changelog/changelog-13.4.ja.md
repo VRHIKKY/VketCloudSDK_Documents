@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月9日更新
+
+## 2024年8月9日 - 変更されたページ
+
+- ワールド制作ガイド
+    - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/Skybox.html)
+        - 説明文を更新
+
+---
 ## 2024年8月2日更新
 
 ## 2024年8月2日 - 変更されたページ
