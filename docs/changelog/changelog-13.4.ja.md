@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月9日更新
+
+## 2024年8月9日 - 変更されたページ
+
+- VketCloudSDKについて
+    - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
+        - 説明文および画像を更新
+
+---
+
 ## 2024年8月2日更新
 
 ## 2024年8月2日 - 変更されたページ
