@@ -1,5 +1,21 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月9日更新
+
+## 2024年8月9日 - 変更されたページ
+
+- ワールド制作ガイド
+  - [クリック判定できる可動オブジェクトの作り方](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+    - VKCコンポーネントの表記ゆれ問題を修正
+- VKC Component
+  - 見出しのVKCコンポーネント表記ゆれ問題を修正
+- HeliScript
+  - 組み込みクラス・関数
+    - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+      - VKCコンポーネントの表記ゆれ問題を修正
+
+---
+
 ## 2024年8月2日更新
 
 ## 2024年8月2日 - 変更されたページ
