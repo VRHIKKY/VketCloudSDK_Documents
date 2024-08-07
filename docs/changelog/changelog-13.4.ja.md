@@ -7,6 +7,10 @@
 - VketCloudSDKについて
     - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
         - 説明文および画像を更新
+- HeliScript
+  - 組み込みクラス・関数
+    - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+      - GetWorldRotateの説明の「ワールド回転をVector3として取得」にオイラー角と記載する
 
 ---
 

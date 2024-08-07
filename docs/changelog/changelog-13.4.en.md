@@ -7,6 +7,10 @@
 - About VketCloudSDK
     - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
         - Updated descriptions and images
+- HeliScript
+  - Built-in Classes And Functions
+    - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
+        - Added euler angles to the description of the GetWorldRotate method
 
 ---
 

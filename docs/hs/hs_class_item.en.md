@@ -169,7 +169,7 @@ Get the world rotation of Item by quaternion.
 
 `public Vector3 GetWorldRotate()`
 
-Get the world rotation of Item by Vector3.
+Get the world rotation of Item by Vector3 (Euler angles).
 
 ??? note "Available object types for this method"
     - [VKCItemField](../VKCComponents/VKCItemField.md)

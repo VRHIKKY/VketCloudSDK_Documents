@@ -169,7 +169,7 @@ Itemのワールド回転をQuaternionとして取得します。
 
 `public Vector3 GetWorldRotate()`
 
-Itemのワールド回転をVector3として取得します。
+Itemのワールド回転をVector3（オイラー角）として取得します。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
