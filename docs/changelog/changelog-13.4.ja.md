@@ -8,6 +8,11 @@
     - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
         - 説明文および画像を更新
 
+- HeliScript
+  - 組み込み型
+    - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
+      - 「NULL」の表記ゆれ問題を修正
+
 ---
 
 ## 2024年8月2日更新

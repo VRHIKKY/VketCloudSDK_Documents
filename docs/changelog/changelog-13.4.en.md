@@ -5,8 +5,13 @@
 ## August 9 2024 - Edited Pages
 
 - About VketCloudSDK
-    - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
-        - Updated descriptions and images
+  - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
+    - Updated descriptions and images
+
+- HeliScript
+  - Built-in Types
+    - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_var.html)
+      - Fixed the inconsistency in the label of the type "NULL".
 
 ---
 
