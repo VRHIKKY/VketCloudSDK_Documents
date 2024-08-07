@@ -78,17 +78,27 @@ Follow the instructions below to place an object as a "object" item:
 
 1. Select a game object to designate as an "object" item (multiple selections are not allowed)
 
-2.
+2. Run VketCloudSDK > [Export Field](../WorldMakingGuide/HEOExporter_Tutorial.md)
 
-3.
+3. Save heo file at a designated location
 
-4.
+4. Place a game object in the scene and attach [VKC Item Object](../VKCComponents/VKCItemObject.md) component
 
-5.
+5. Allocate the saved heo file to [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
+This procedure will copy the heo file at the designated location on build, and register it as an object type item.
 
+*Note: Objects following an Avatar bone is also referred to as "Object".
+When configuring [Show/HideObject](../Actions/Object/ShowHideObject.md) in [Action Trigger](VKCAttributeActionTrigger.md), the "Object" referred here is Avatar-following objects!
 
 ## Node Components
+
+In Vket Cloud, the previously mentioned Field and Object are formatted in a unique .heo 3D model file format.<br>
+.heo has a unique feature, which child objects in Unity will be considered as **Nodes** in .heo, and will be a target for Node-related components and HeliScript methods.
+
+As an important note, nodes in .heo objects **do not have a Hierarchy**<br>
+Even if the original object had a hierarchy defined on Unity, this will be dismantled on exporting as a heo file.<br>
+For instance, if a Node which was a parent object on Unity is designated for show/hide, the former-child object nodes will not be affected by show/hide on Vket Cloud, as the hierarchy does not exist.
 
 | Node Component           | Component Name (-SDK12.3) | Component Name (SDK13.X-)        |
 |---------------------|---------------------------|----------------------------------|
