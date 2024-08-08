@@ -7,6 +7,10 @@
 - About VketCloudSDK
     - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
         - Updated descriptions and images
+- VKCComponents
+    - VKCItem
+        - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemBackgroundTexture.html)
+            - Updated descriptions and images
 
 ---
 
