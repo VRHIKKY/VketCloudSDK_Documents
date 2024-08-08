@@ -7,6 +7,10 @@
 - VketCloudSDKについて
     - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
         - 説明文および画像を更新
+- VKCコンポーネント
+    - VKCItem
+        - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemBackgroundTexture.html)
+            - 説明文および画像を更新
 
 ---
 
