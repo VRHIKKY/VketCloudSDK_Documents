@@ -13,6 +13,9 @@
   - Built-in Classes And Functions
     - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
       - Fixed the inconsistency in the label of the VKC components.
+- About VketCloudSDK
+    - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
+        - Updated descriptions and images
 
 ---
 
