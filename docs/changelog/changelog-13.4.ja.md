@@ -25,6 +25,11 @@
     - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
       - GetWorldRotateの説明の「ワールド回転をVector3として取得」にオイラー角と記載する
 
+- HeliScript
+  - 組み込み型
+    - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
+      - 「NULL」の表記ゆれ問題を修正
+
 ---
 
 ## 2024年8月2日更新

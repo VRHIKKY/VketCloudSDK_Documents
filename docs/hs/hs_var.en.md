@@ -18,7 +18,7 @@ A class type is provided as a type that has a structure and can be independently
 
 |type|content|
 |:--|:--|
-|[class](hs_class.md)|structured reference type (valid reference value, or *NULL*)|
+|[class](hs_class.md)|structured reference type (valid reference value, or *null*)|
 
 ## Manage references
 
@@ -26,7 +26,7 @@ Instances of class are treated as references.
 
 HeliScript uses reference counter to manage the life of references. It increments an internally recorded "reference counter" when an object is referenced from anywhere, and decrements the "reference counter" when it is unreferenced. Objects that are no longer referenced will have a reference counter of 0 and proceed to be automatically deleted.
 
-HeliScript provides *NULL* as a value that represents an "empty reference" that does not point to anything.
+HeliScript provides *null* as a value that represents an "empty reference" that does not point to anything.
 
 ## Get reference
 
@@ -75,7 +75,7 @@ When you define a variable, if you do not initialize it, the following initial v
 |float|0.0f|
 |bool|*false*|
 |[string](hs_string.md)|empty string|
-|[class](hs_class.md)|*NULL*|
+|[class](hs_class.md)|*null*|
 
 The bool type is treated internally as a 32-bit integer value, with 1 assigned to *true* and 0 to *false*.
 If you assign an integer value to a bool type variable, 0 will be converted to *false* and everything else will be converted to *true*.
