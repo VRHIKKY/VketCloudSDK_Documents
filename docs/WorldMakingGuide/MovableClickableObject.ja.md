@@ -1,6 +1,6 @@
 # クリック判定できる可動オブジェクトの作り方
 
-VKCItemObjectはItemでありNodeではないため、 [こちら](../hs/hs_overview.md){target=_blank} のマニュアルにあるクリック判定の方法のGetNodeIndexByNameが使用できません。ですが別のアプローチでクリック判定をもちながら移動するオブジェクトはVketCloudで実現可能です。下記の手順を行います。
+VKC Item ObjectはItemでありNodeではないため、 [こちら](../hs/hs_overview.md){target=_blank} のマニュアルにあるクリック判定の方法のGetNodeIndexByNameが使用できません。ですが別のアプローチでクリック判定をもちながら移動するオブジェクトはVketCloudで実現可能です。下記の手順を行います。
 
 ## Floorの設定
 
@@ -35,7 +35,7 @@ VKCItemObjectはItemでありNodeではないため、 [こちら](../hs/hs_over
 ![text](img/movable_clickable_text.jpg)
 
 1. Textと名前をつけた空のGameObjectを作成。
-2. VKCItemTextPlaneをAddします。
+2. VKC Item TextPlaneをAddします。
 3. そのままだと確認しづらいのでPositionを`0, 2, 0`に設定します。
 4. テキストに `クリック回数: 0` を設定します。
 
