@@ -9,26 +9,23 @@
     - VKCコンポーネントの表記ゆれ問題を修正
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/Skybox.html)
     - 説明文を更新
+    - [物理エンジンの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/PhysicsEngine.html)
+        - 説明文および画像を更新
 - VKC Component
   - 見出しのVKCコンポーネント表記ゆれ問題を修正
 - HeliScript
+  - 組み込み型
+    - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
+      - 「NULL」の表記ゆれ問題を修正
   - 組み込みクラス・関数
     - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
       - VKCコンポーネントの表記ゆれ問題を修正
+      - GetWorldRotateの説明の「ワールド回転をVector3として取得」にオイラー角と記載する
     - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
         - 説明文を更新
 - VketCloudSDKについて
     - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
         - 説明文および画像を更新
-- HeliScript
-  - 組み込みクラス・関数
-    - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
-      - GetWorldRotateの説明の「ワールド回転をVector3として取得」にオイラー角と記載する
-
-- HeliScript
-  - 組み込み型
-    - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
-      - 「NULL」の表記ゆれ問題を修正
 
 ---
 
