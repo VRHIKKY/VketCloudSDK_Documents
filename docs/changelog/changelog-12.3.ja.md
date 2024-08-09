@@ -59,6 +59,8 @@
     - 使用可能な文字に関する仕様を追記
   - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Collider.html)
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
+  - [物理エンジンの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/PhysicsEngine.html)
+    - 説明文を修正、画像を追加
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Skybox.html)
     - クイックメニューについて案内を追記
     - HEOBackgroundTextureの説明文を更新
