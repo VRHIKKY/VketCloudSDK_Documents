@@ -5,17 +5,17 @@
 ## 2024年8月9日 - 変更されたページ
 
 - ワールド制作ガイド
+  - [クリック判定できる可動オブジェクトの作り方](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+    - VKCコンポーネントの表記ゆれ問題を修正
+  - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/Skybox.html)
+    - 説明文を更新
+- VKC Component
+  - 見出しのVKCコンポーネント表記ゆれ問題を修正
+- HeliScript
+  - 組み込みクラス・関数
+    - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+      - VKCコンポーネントの表記ゆれ問題を修正
     - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
-        - 説明文を更新
-
----
-
-## 2024年8月9日更新
-
-## 2024年8月9日 - 変更されたページ
-
-- ワールド制作ガイド
-    - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/Skybox.html)
         - 説明文を更新
 - VketCloudSDKについて
     - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
