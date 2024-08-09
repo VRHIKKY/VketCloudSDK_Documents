@@ -13,6 +13,8 @@
   - Built-in Classes And Functions
     - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
       - Fixed the inconsistency in the label of the VKC components.
+    - [Setting up a Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/Skybox.html)
+        - Updated descriptions
 - About VketCloudSDK
     - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
         - Updated descriptions and images
@@ -32,7 +34,7 @@
 - VKC Components
   - [VKC/HEO Component Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCHEOCorrespondenceTable.html)
     - Renamed page title
-    - Added an overview description for Item, Node *English Version WIP
+    - Added an overview description for Item, Node
   - VKCSettings
         - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
         - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
