@@ -45,10 +45,10 @@ Vket CloudではUnityのリフレクションプローブを使用すること�
 
 Vket Cloudではライトマップを使用する際は以下のフォーマットに従う必要があります。
 
-- Other SettingsのLightMap Encodingが『Normal Quality』になっているか確認する
+- Other SettingsのLightMap Encodingが「Normal Quality」になっているか確認する
  *LightMap Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください
 - リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVket Cloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
-- Other Settings の Color Spaceが『Linear』になっているか確認する
+- Other Settings の Color Spaceが「Linear」になっているか確認する
 
 VketCloudSDKでは、上記の環境設定を推奨設定としております。<br>
 詳しい設定方法は[VketCloudSDKの動作環境](../AboutVketCloudSDK/OperatingEnvironment.md)を参照してください。

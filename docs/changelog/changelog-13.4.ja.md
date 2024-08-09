@@ -1,4 +1,14 @@
-# SDK Manual Change Log - Ver 13.4
+  # SDK Manual Change Log - Ver 13.4
+
+## 2024年8月9日更新
+
+## 2024年8月9日 - 変更されたページ
+
+- ワールド制作ガイド
+    - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
+        - 説明文を更新
+
+---
 
 ## 2024年8月9日更新
 
