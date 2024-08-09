@@ -8011,14 +8011,15 @@
 <p>コライダーの付け方についての解説は<a href="Collider.html">コライダーの付け方 / Tips</a>ページに移動しました。</p>
 </div>
 <h2 id="_3">物理エンジンの使用方法</h2>
-<p>1. 物理演算を適応したいゲームオブジェクトに『Unityコライダー』と<a href="../HEOComponents/HEOCollider.html">HEOCollider</a>をアタッチしてください。<br>
-物理演算に使用できるUnityコライダーは『Box Collider』『Sphere Collider』『Capsule Collider』です。</p>
-<p>また、後述されているように『Capsule Collider』がアタッチされているゲームオブジェクトに<a href="../HEOComponents/HEOCollider.html">HEOCollider</a>に加えて<code>HEOCylinderCollider</code>をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。</p>
-<p><img alt="PhysicsEngine" src="img/PhysicsEngine.jpg" /></p>
+<p>1. 物理演算を適応したいゲームオブジェクトに「Unityコライダー」と<a href="../HEOComponents/HEOCollider.html">HEOCollider</a>をアタッチしてください。<br>
+物理演算に使用できるUnityコライダーは「Box Collider」「Sphere Collider」「Capsule Collider」です。</p>
+<p>また、後述されているように「Capsule Collider」がアタッチされているゲームオブジェクトに<a href="../HEOComponents/HEOCollider.html">HEOCollider</a>に加えて<code>HEOCylinderCollider</code>をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。</p>
+<p><img alt="PhysicsEngine" src="img/PhysicsEngine_1.jpg" /></p>
 <p>2. HEOCollider/Physicsの項目のプロパティを設定します。<br>
-各項目は下記で説明いたしますが、<a href="../HEOComponents/HEOWorldSetting.html#_1">HEOWorldSettings</a>にて<code>Use Physics Engine</code>を有効にし、各コライダーコンポーネントに『<code>UsePhysics</code>』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。</p>
+各項目は下記で説明いたしますが、<a href="../VketCloudSettings/BasicSettings.html">Basic Settings</a>にて<code>Use Physics Engine</code>を有効にし、各コライダーコンポーネントに「<code>UsePhysics</code>」にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。</p>
+<p><img alt="PhysicsEngine" src="img/PhysicsEngine_2.jpg" /></p>
 <h3 id="heocolliderphysics">HEOCollider/Physicsのプロパティについて</h3>
-<p><img alt="PhysicsEngine" src="img/PhysicsEngineCollider.jpg" /></p>
+<p><img alt="PhysicsEngine" src="img/PhysicsEngine_3.jpg" /></p>
 <table>
 <thead>
 <tr>
@@ -8037,7 +8038,7 @@
 </tr>
 <tr>
 <td><code>UsePhysics</code></td>
-<td>Colliderに対して物理演算を可能にします。</td>
+<td>コライダーに対して物理演算を可能にします。</td>
 </tr>
 <tr>
 <td><code>Fixed</code></td>
@@ -8075,8 +8076,8 @@
 <li><a href="../hs/hs_system_function_physics.html">組み込み関数 - 物理演算</a></li>
 </ul>
 <h2 id="_4">シリンダーコライダーについて</h2>
-<p>通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で<code>HEOCylinderCollider</code>をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
-<img alt="PhysicsEngine" src="img/PhysicsEngineCylinderCollider.jpg" /></p>
+<p>通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように「Capsule Collider」を持っているオブジェクトに追加で<code>HEOCylinderCollider</code>をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。</p>
+<p><img alt="PhysicsEngine" src="img/PhysicsEngine_4.jpg" /></p>
 <div class="admonition 注意点 info">
 <p class="admonition-title">注意点</p>
 <ul>

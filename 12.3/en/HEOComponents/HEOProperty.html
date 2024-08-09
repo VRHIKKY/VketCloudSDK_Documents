@@ -8395,9 +8395,10 @@ On creating an Activity class, HEOProperty can be used to define a configurable 
 <h3 id="1-check-which-item-is-targeted-for-setproperty-getproperty">1. Check which Item is targeted for SetProperty / GetProperty</h3>
 <p>Each Item can have different properties defined.<br>
 If the Item name is wrong on reference, this may lead to unintended behaviors.</p>
-<div class="admonition note caution">
+<div class="admonition note warning">
 <p class="admonition-title">Note</p>
-<p>On SDK Ver9.11, when trying to run SetProperty without a target property, unexpected behavior may occur without error notices.</p>
+<p>Update: On SDK version 12.x and later, SetProperty will add a new property if it does not exist.<br>
+On SDK Ver9.11, when trying to run SetProperty without a target property, unexpected behavior may occur without error notices.</p>
 </div>
 <h2 id="2-key-and-value-will-always-be-a-string-type">2. Key and Value will always be a String type</h2>
 <p>As previously mentioned, Key and Value will always be a String. When connecting with non-String type variables, type cast is needed before running SetProperty or GetProperty.</p>

@@ -8399,9 +8399,10 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <h3 id="1-setproperty-getproperty">1. SetProperty / GetPropertyする際は対象となるアイテムに注意</h3>
 <p>アイテムごとに異なるプロパティを設定することが可能です。<br><br />
 HeliScript上で対象となるアイテムを間違えると、上手く動作しない場合があるので、気を付けましょう。</p>
-<div class="admonition note caution">
+<div class="admonition note warning">
 <p class="admonition-title">Note</p>
-<p>SDK9.11現在、対象となるプロパティが存在しないのにSetPropertyを行おうとした場合、エラー文も出ずに他のHeliScriptの動作に影響を及ぼす場合があります。</p>
+<p>更新：SDK12.x及び以降のバージョンでは、プロパティが存在しない際にSetPropertyを行った場合は新たにプロパティを追加するように変更されました。<br>
+SDK9.11現在、対象となるプロパティが存在しないのにSetPropertyを行おうとした場合、エラー文も出ずに他のHeliScriptの動作に影響を及ぼす場合があります。</p>
 </div>
 <h2 id="2-keyvaluestring">2. KeyおよびValueはString型</h2>
 <p>少し上でも解説した通り、KeyおよびValueはString型となるため、String型以外の変数を扱う場合、SetPropertyやGetPropertyする際に型変換を行う必要があります。</p>
