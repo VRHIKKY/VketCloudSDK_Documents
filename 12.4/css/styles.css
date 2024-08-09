@@ -1,0 +1,10 @@
+.md-footer-logo {
+  max-width: 100px; /* Adjust the size of the logo as needed */
+  display: block;
+  float: left; /* Align the logo to the left */
+  margin-right: 1rem; /* Add some spacing between the logo and the copyright text */
+}
+
+.md-footer__inner:not([hidden]) {
+  display: block;
+}
