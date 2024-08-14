@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 16 2024 Update
+
+## August 16 2024 - Edited Pages
+
+- VKC Components
+    - VKC Item
+        - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAudio.html)
+            - Updated descriptions and images
+
+---
+
 ## August 9 2024 Update
 
 ## August 9 2024 - Edited Pages

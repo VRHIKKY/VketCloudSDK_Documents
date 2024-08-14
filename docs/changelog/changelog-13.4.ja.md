@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月16日更新
+
+## 2024年8月16日 - 変更されたページ
+
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAudio.html)
+            - 説明文および画像を更新
+
+---
+
 ## 2024年8月9日更新
 
 ## 2024年8月9日 - 変更されたページ
