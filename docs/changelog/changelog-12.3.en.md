@@ -98,6 +98,8 @@
     - Added info on new Ver12.3 featuresに(hrm and glb support), updated info on component settings
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
     - Added info on component deprecation
+  - [HEOShowFlag](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOShowFlag.html)
+    - Update information according to Ver12.3
 - Actions
   - Item
     - [Play/StopItem](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Item/PlayStopItem.html)

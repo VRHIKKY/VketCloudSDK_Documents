@@ -105,6 +105,8 @@
     - コンポーネントのデフォルト値表記を変更
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOReflectionProbe.html)
     - 機能廃止について案内を追記
+  - [HEOShowFlag](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOShowFlag.html)
+    - 使い方をVer12.3準拠に更新
 - アクションについて
   - Itemクラス
     - [Play/StopItem](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/Actions/Item/PlayStopItem.html)
