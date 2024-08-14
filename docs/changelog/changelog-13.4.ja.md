@@ -18,6 +18,9 @@
         - 説明文を更新
 - VKC Component
     - 見出しのVKCコンポーネント表記ゆれ問題を修正
+    - VKC Attribute
+        - [VKC Attribute Show Flag](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCAttributeShowFlag.html)
+            - 説明文および画像を更新
 - HeliScript
     - 組み込み型
         - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
