@@ -10,25 +10,27 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 
 ## 物理エンジンの使用方法
 
-1\. 物理演算を適応したいゲームオブジェクトに『Unityコライダー』と[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)をアタッチしてください。<br>
-物理演算に使用できるUnityコライダーは『Box Collider』『Sphere Collider』『Capsule Collider』です。
+1\. 物理演算を適応したいゲームオブジェクトに「Unityコライダー」と[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)をアタッチしてください。<br>
+物理演算に使用できるUnityコライダーは「Box Collider」「Sphere Collider」「Capsule Collider」です。
 
-また、後述されているように『Capsule Collider』がアタッチされているゲームオブジェクトに[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)に加えて`VKC Node Cylinder Collider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
+また、後述されているように「Capsule Collider」がアタッチされているゲームオブジェクトに[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)に加えて`VKC Node Cylinder Collider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
 
-![PhysicsEngine](img/PhysicsEngine.jpg)
+![PhysicsEngine](img/PhysicsEngine_1.jpg)
 
 2\. VKC Node Collider/Physicsの項目のプロパティを設定します。<br>
-各項目は下記で説明いたしますが、[HEOWorldSettings](../VKCComponents/HEOWorldSetting.md#_1)にて`Use Physics Engine`を有効にし、各コライダーコンポーネントに『`UsePhysics`』にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。
+各項目は下記で説明いたしますが、[BasicSettings](../VketCloudSettings/BasicSettings.md)にて`Use Physics Engine`を有効にし、各コライダーコンポーネントに「`UsePhysics`」にチェックを入れることでそのゲームオブジェクトに物理演算が適応されるようになります。
+
+![PhysicsEngine](img/PhysicsEngine_2.jpg)
 
 ### VKC Node Collider/Physicsのプロパティについて
 
-  ![PhysicsEngine](img/PhysicsEngineCollider.jpg)
+![PhysicsEngine](img/PhysicsEngine_3.jpg)
 
 | 名称 | 機能 |
 | ---- | ---- |
 | `Collider Type` | コライダーのタイプを指定します。 |
 | `Collider Target` | ターゲットを指定します。 |
-| `UsePhysics` | Colliderに対して物理演算を可能にします。 |
+| `UsePhysics` | コライダーに対して物理演算を可能にします。 |
 | `Fixed` | 物理演算においてこのゲームオブジェクトを固定するか設定できます。<br> 例: 床や壁などの動かないもの → Fixedオン <br> ボールなどの動くもの  → Fixedオフ |
 | `EnableBody` | 物理演算の有無の初期値。<br>後述しますが、Action Triggerで物理演算を有無を切り替えることができます。EnableBody はその初期値です。<br>例えば、自動販売機の中にジュースの缶を物理演算を無効にして仕込んでおいて、自動販売機の購入ボタンを押したときに缶の物理演算を有効にして自動販売機の中から缶を転がすといったギミックを作成することができます。 |
 | `Mass` | 重さパラメータを調整します。 |
@@ -55,8 +57,9 @@ Vket Cloudでは、UnityのコライダーとSDKの諸機能を使用して衝�
 
 ## シリンダーコライダーについて
 
-通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように『Capsule Collider』を持っているオブジェクトに追加で`VKC Node Cylinder Collider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
-![PhysicsEngine](img/PhysicsEngineCylinderCollider.jpg)
+通常Unityではシリンダーコライダーは無くカプセルコライダーで代用されますが、Vket Cloudでは下記の画像のように「Capsule Collider」を持っているオブジェクトに追加で`VKC Node Cylinder Collider`をアタッチすることで、Vket Cloudの物理エンジンにおいてシリンダーコライダーとして使用することができます。
+
+![PhysicsEngine](img/PhysicsEngine_4.jpg)
 
 !!! 注意点 Info
     - 物理エンジンの衝突判定の実装の都合上、カプセルコライダーとシリンダーコライダー・シリンダーコライダーとシリンダーコライダーは衝突しません。
