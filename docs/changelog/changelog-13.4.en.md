@@ -14,6 +14,9 @@
         - Updated descriptions and images
 - VKC Component 
     - Fixed the inconsistency in the label of the VKC components.
+    - VKCItem
+        - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemBackgroundTexture.html)
+            - Updated descriptions and images
 - HeliScript
     - Built-in Types
         - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_var.html)
