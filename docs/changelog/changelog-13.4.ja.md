@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月16日更新
+
+## 2024年8月16日 - 変更されたページ
+
+- VKC Component
+    - VKCItem
+        - [VKCItemCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemCamera.html)
+            - 説明文および画像を更新
+
 ## 2024年8月9日更新
 
 ## 2024年8月9日 - 変更されたページ
