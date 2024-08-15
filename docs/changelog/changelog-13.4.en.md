@@ -17,6 +17,8 @@
     - VKCItem
         - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemBackgroundTexture.html)
             - Updated descriptions and images
+        - [VKCItemTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemTextPlane.html)
+            - Updated descriptions and images
 - HeliScript
     - Built-in Types
         - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_var.html)

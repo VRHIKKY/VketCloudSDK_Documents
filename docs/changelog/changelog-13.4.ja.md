@@ -21,6 +21,8 @@
     - VKCItem
         - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemBackgroundTexture.html)
             - 説明文および画像を更新
+        - [VKCItemTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemTextPlane.html)
+            - 説明文および画像を更新
 - HeliScript
     - 組み込み型
         - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
