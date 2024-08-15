@@ -33,6 +33,6 @@ VketCloudSDKでは、UnityのSkyboxを出力することは出来ません。そ
 ![Skybox_1](img/Skybox_1.jpg)
 
 !!! note "VKC Item Background Textureについて"
-    背景を実装する別の方法として、背景テクスチャを設定する[VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)があります。
+    背景を実装する別の方法として、どのカメラ角度からも同じ画像を表示させ、2Dゲームの背景などを作る際に便利な[VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)があります。
 
     ![HEOBackgroundTexture_2](../VKCComponents/img/HEOBackgroundTexture_2.jpg)
