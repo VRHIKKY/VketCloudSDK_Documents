@@ -234,7 +234,7 @@ m_PhysicsIDCube;
 
 ## Callback - In-field collider detection
 
-Called when the collider with HEOCollider specified "InView" enters the field of view or goes out of the field of view.
+Called when the collider with [VKC Node Collider](../VKCComponents/VKCNodeCollider.md) specified "InView" enters the field of view or goes out of the field of view.
 
 Components must be set to the same item.
 
