@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 16 2024 Update
+
+## August 16 2024 - Edited Pages
+
+- About VketCloudSDK
+    - [Setup Account](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupAccount.html)
+        - Added English translation
+
+---
+
 ## August 9 2024 Update
 
 ## August 9 2024 - Edited Pages
