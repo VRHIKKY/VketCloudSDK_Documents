@@ -102,7 +102,7 @@
     - Added info on new Ver12.3 featuresに(hrm and glb support), updated info on component settings
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
     - Added info on component deprecation
-  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOAudio.html)
+  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOAudio.html)
     - Update information according to Ver12.3
 - Actions
   - Item

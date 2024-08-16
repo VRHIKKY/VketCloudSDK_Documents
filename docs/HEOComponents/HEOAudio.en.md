@@ -2,7 +2,7 @@
 
 ![HEOAudio_1](img/HEOAudio_01.jpg)
 
-| Label | Initial Value | Function  |
+| Label | Default | Function  |
 | ----  | ----  | ---- |
 | Audio Type | BGM | Choose from BGM, SE, or SystemSE |
 | Audio Clip |  | Specify the audio file. <br> Currently, only mp3 files are supported. |
@@ -22,7 +22,7 @@ By accessing the in-game config, the player may set the volume of each audio typ
 
 ## Advanced Options
 
-| Label | Initial Value | Function |
+| Label | Default | Function |
 | ---- | ---- | ---- |
 | Override | - | When entering the world, the Audio Clip set in `Overrides` will be used instead of the `Audio Clip` set in HEOAudio. |
 
