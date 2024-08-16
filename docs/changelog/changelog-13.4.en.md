@@ -4,6 +4,9 @@
 
 ## August 16 2024 - Edited Pages
 
+- About VketCloudSDK
+    - [Setup Account](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupAccount.html)
+        - Added English translation
 - VKC Component
     - VKC Item
         - [VKC Item Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemCamera.html)
