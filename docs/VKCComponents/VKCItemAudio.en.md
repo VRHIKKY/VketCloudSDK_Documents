@@ -2,7 +2,7 @@
 
 ![VKCItemAudio_1](img/VKCItemAudio_01.jpg)
 
-| Label | Initial Value | Function  |
+| Label | Default | Function  |
 | ----  | ----  | ---- |
 | Audio Type | BGM | Choose from BGM, SE, or SystemSE |
 | Audio Clip |  | Specify the audio file. <br> Currently, only mp3 files are supported. |
@@ -18,11 +18,11 @@ Each `Audio Type` matches the In-game config label.
 
 By accessing the in-game config, the player may set the volume of each audio type.
 
-![HEOAudio_2](img/HEOAudio_2_en.jpg)
+![VKCItemAudio_2](img/VKCItemAudio_02_en.jpg)
 
 ## Advanced Options
 
-| Label | Initial Value | Function |
+| Label | Default | Function |
 | ---- | ---- | ---- |
 | Auto Loading | True | Toggles dynamic loading on/off. |
 | Clickable | False | Makes the item clickable. |
@@ -41,7 +41,7 @@ When setting an audio file, please follow the format below:
 | Bit rate | 160 kbps |
 
 !!! note caution
-    Upon using HEOAudio for playing BGM, consider the following:
+    Upon using VKC Item Audio for playing BGM, consider the following:
 
     - When a video file is playing, the video audio will be prioritized.
     - SDK does not support distance falloff.

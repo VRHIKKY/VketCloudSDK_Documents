@@ -6,7 +6,7 @@
 
 - VKC Components
     - VKC Item
-        - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAudio.html)
+        - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemAudio.html)
             - Updated descriptions and images
 
 ---
