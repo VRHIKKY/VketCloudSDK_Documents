@@ -6,7 +6,7 @@
 
 - VKC Component
     - VKCItem
-        - [VKCItemParticle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemParticle.html)
+        - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemParticle.html)
             - Updated descriptions and images
 
 ## August 9 2024 Update
