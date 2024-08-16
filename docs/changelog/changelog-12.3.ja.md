@@ -24,6 +24,7 @@
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/VketCloudSDKSettings.html)
 - HEOコンポーネント
   - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOProperty.html)
+    - 2024年8月6日： SDK 12.x以降のSetPropertyの挙動変更について追記
 - アクションについて
   - Node
     - [Enable/DisableNode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/Actions/Node/EnableDisableNode.html)
@@ -58,8 +59,11 @@
     - 使用可能な文字に関する仕様を追記
   - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Collider.html)
     - ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤーが浮遊する不具合について追記
+  - [物理エンジンの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/PhysicsEngine.html)
+    - 説明文を修正、画像を追加
   - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Skybox.html)
     - クイックメニューについて案内を追記
+    - HEOBackgroundTextureの説明文を更新
   - [リフレクションプローブ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/ReflectionProbe.html)
     - リフレクションプローブの設定方法を更新
   - [オブジェクトをアニメーションさせる](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/PropAnimation.html)
@@ -107,6 +111,8 @@
     - 機能廃止について案内を追記
   - [HEOShowFlag](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOShowFlag.html)
     - 使い方をVer12.3準拠に更新
+  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOAudio.html)
+    - 解説をVer12.3準拠に更新
 - アクションについて
   - Itemクラス
     - [Play/StopItem](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/Actions/Item/PlayStopItem.html)

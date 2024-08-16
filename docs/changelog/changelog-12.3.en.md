@@ -25,6 +25,7 @@
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
 - HEO Components
   - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOProperty.html)
+    - August 6, 2024: Added change of function for SetProperty
 - Actions
   - Node
     - [Enable/DisableNode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Node/EnableDisableNode.html)
@@ -59,8 +60,11 @@
     - Added specification on available characters
   - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Collider.html)
     - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
+  - [PhysicsEngine](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PhysicsEngine.html)
+    - Updated descriptions and images
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
     - Added Guide for Setup using Quick Menu
+    - Updated description of HEOBackgroundTexture
   - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ReflectionProbe.html)
     - Edited setup instructions for reflection probe
   - [How to Animate Objects](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation.html)
@@ -99,6 +103,7 @@
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
     - Added info on component deprecation
   - [HEOShowFlag](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOShowFlag.html)
+  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOAudio.html)
     - Update information according to Ver12.3
 - Actions
   - Item
