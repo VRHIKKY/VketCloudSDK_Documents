@@ -2,7 +2,7 @@
 
 The component can be used to display or hide an object on VKC Item Field.
 
-![HEOShowFlag](img/HEOShowFlag_01.jpg)
+![HEOShowFlag](img/VKCAttributeShowFlag_01.jpg)
 
 | Label | Default | Function |
 | ---- | ---- | ---- |
@@ -40,6 +40,6 @@ The default value for all flags is True, and if even one flag in the array is Fa
 
 For example, set it as below:
 
-![HEOShowFlag](img/HEOShowFlag_02.jpg)
+![HEOShowFlag](img/VKCAttributeShowFlag_02.jpg)
 
 In this case, if `Show` becomes True from other operations such as HeliScript, and `Is Lang Ja` is True, then the overall result is considered True, and the item will be displayed.
