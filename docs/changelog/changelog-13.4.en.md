@@ -8,9 +8,6 @@
     - VKC Item
         - [VKC Item Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemCamera.html)
             - Updated descriptions and images
-
-- VKC Components
-    - VKC Item
         - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemAudio.html)
             - Updated descriptions and images
 
