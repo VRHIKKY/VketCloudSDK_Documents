@@ -5,8 +5,8 @@
 ## August 16 2024 - Edited Pages
 
 - VKC Component
-    - VKCItem
-        - [VKCItemCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemCamera.html)
+    - VKC Item
+        - [VKC Item Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemCamera.html)
             - Updated descriptions and images
 
 ## August 9 2024 Update
