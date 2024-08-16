@@ -5,12 +5,9 @@
 ## August 16 2024 - Edited Pages
 
 - VKC Component
-    - VKCItem
+    - VKC Item
         - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemParticle.html)
             - Updated descriptions and images
-
-- VKC Components
-    - VKC Item
         - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemAudio.html)
             - Updated descriptions and images
 

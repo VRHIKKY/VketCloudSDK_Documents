@@ -5,12 +5,9 @@
 ## 2024年8月16日 - 変更されたページ
 
 - VKC Component
-    - VKCItem
+    - VKC Item
         - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemParticle.html)
             - 説明文および画像を更新
-
-- VKCコンポーネント
-    - VKC Item
         - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAudio.html)
             - 説明文および画像を更新
 
