@@ -2627,6 +2627,30 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      設定項目
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="設定項目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      高度な設定
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
       使い方
     </span>
   </a>
@@ -2634,7 +2658,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       その他知見
     </span>
@@ -9465,6 +9489,30 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      設定項目
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="設定項目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      高度な設定
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
       使い方
     </span>
   </a>
@@ -9472,7 +9520,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       その他知見
     </span>
@@ -9500,6 +9548,7 @@
 <p>VKC Item Cameraコンポーネントは演出目的等で通常のカメラから別のカメラ制御に切り替えるために使用します。<br>
 この機能を使うことにより、イベントシーンなどでのカメラの切り替えや特殊カメラワークを作ることができます。<br>
 カメラの切り替えは後述するようにHeliScriptからおこないます。</p>
+<h2 id="_1">設定項目</h2>
 <table>
 <thead>
 <tr>
@@ -9510,18 +9559,45 @@
 </thead>
 <tbody>
 <tr>
-<td>Position</td>
-<td>0,0,0</td>
-<td>カメラのGlobal座標を保管します</td>
-</tr>
-<tr>
-<td>Rotation</td>
-<td>0,0,0</td>
-<td>カメラのGlobal回転値を保管します</td>
+<td>Show</td>
+<td>true</td>
+<td>オンにすると表示します</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_1">使い方</h2>
+<h3 id="_2">高度な設定</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto Loading</td>
+<td>true</td>
+<td>有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、<a href="VKCItemField.html">動的ローディング</a>を使用するか、HeliScriptで<a href="../hs/hs_class_item.html#load">Load()</a>を使用して読み込みます。</td>
+</tr>
+<tr>
+<td>Clickable</td>
+<td>false</td>
+<td>クリック可能かどうかを変更します</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>Itemの描画順序を決定します。<br>詳細は<a href="../VketCloudSettings/RenderingSettings.html">RenderingSettings / Priority List</a>をご参照ください。</td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>true</td>
+<td>写真撮影モードの際、itemを表示するかどうかを変更します</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">使い方</h2>
 <p>1. 空のGameObjectを作成し、VKC Item Cameraコンポーネントをアタッチしてシーン上に配置します。</p>
 <p><img alt="HEOCamera_2" src="img/HEOCamera_2.jpg" /></p>
 <p>なお、本オブジェクトはVKCItemFieldとは別個の<a href="../hs/hs_class_item.html">アイテム</a>として扱われるため、Worldオブジェクトの外に置かれても問題ございません。</p>
@@ -9579,7 +9655,7 @@
 以下の画像ではSphereに<a href="../Actions/HeliScript/CallScript.html">CallScript</a>を入れており、クリックするたびカメラが切り替わるように実装されています。</p>
 <p><img alt="HEOCamera_4" src="img/HEOCamera_4.jpg" /></p>
 <p><img alt="HEOCamera_Result" src="img/HEOCamera_Result.gif" /></p>
-<h2 id="_2">その他知見</h2>
+<h2 id="_4">その他知見</h2>
 <p>イベントカメラには下記の特徴があります。</p>
 <ul>
 <li>プレイヤーの操作はカメラの影響を受ける</li>

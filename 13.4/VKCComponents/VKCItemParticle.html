@@ -2651,6 +2651,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    VKC Item Particle
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="VKCItemParticle.html" class="md-nav__link md-nav__link--active">
         
   
@@ -2660,6 +2671,49 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      高度な設定
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -9408,6 +9462,38 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      高度な設定
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9424,30 +9510,67 @@
 <h1 id="vkc-item-particle">VKC Item Particle</h1>
 <p><img alt="HEOParticle" src="img/HEOParticle.jpg" /></p>
 <p>VKC Item Particleは、.hep形式のファイルを元にパーティクルを展開するコンポーネントです。<br/></p>
+<p>UnityEditorメニュー &gt; VketCloudSDK &gt; ExportParticleで.hepファイルを出力することが出来ますが、現在は非推奨です。<br/>
+代わりに <a href="../particleeditor/pe_about_particleeditor.html">パーティクルエディター</a> を使用して.hepファイルの作成を行ってください。</p>
+<h2 id="_1">設定</h2>
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>function</th>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>.hep</td>
+<td>None</td>
 <td>hepファイルを指定します。</td>
 </tr>
 <tr>
 <td>autoplay</td>
+<td>false</td>
 <td>パーティクルを自動再生します。</td>
 </tr>
 <tr>
 <td>loop</td>
+<td>false</td>
 <td>パーティクルの再生をループします。</td>
 </tr>
 </tbody>
 </table>
-<p>UnityEditorメニュー &gt; VketCloudSDK &gt; ExportParticleで.hepファイルを出力することが出来ますが、現在は非推奨です。<br/>
-代わりに <a href="../particleeditor/pe_about_particleeditor.html">パーティクルエディター</a> を使用して.hepファイルの作成を行ってください。</p>
+<h3 id="_2">高度な設定</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto Loading</td>
+<td>true</td>
+<td>有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、<a href="VKCItemField.html">動的ローディング</a>を使用するか、HeliScriptで<a href="../hs/hs_class_item.html#load">Load()</a>を使用して読み込みます。</td>
+</tr>
+<tr>
+<td>Clickable</td>
+<td>false</td>
+<td>クリック可能かどうかを変更します</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>Itemの描画順序を決定します。<br>詳細は<a href="../VketCloudSettings/RenderingSettings.html">RenderingSettings / Priority List</a>をご参照ください。</td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>true</td>
+<td>写真撮影モードの際、itemを表示するかどうかを変更します</td>
+</tr>
+</tbody>
+</table>
 
 
 

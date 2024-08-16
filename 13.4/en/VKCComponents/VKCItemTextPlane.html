@@ -2757,6 +2757,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -9460,6 +9475,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -9493,39 +9523,9 @@ For example, by Build &amp; Running the world the text will be displayed as belo
 </thead>
 <tbody>
 <tr>
-<td>World Position</td>
-<td>Same value as Transform's Position value</td>
-<td>Set the position for displaying text</td>
-</tr>
-<tr>
-<td>World Rotation</td>
-<td>Same value as Transform's Rotation value</td>
-<td>Set the rotation for displaying text</td>
-</tr>
-<tr>
-<td>World Scale</td>
-<td></td>
-<td>Same value as Transform's Scale value</td>
-</tr>
-<tr>
 <td>Show</td>
 <td>true</td>
 <td>Enable this if you want the text to display by default</td>
-</tr>
-<tr>
-<td>Scene Preview</td>
-<td>true</td>
-<td>Enable/Disable text preview in the Unity editor's Scenet view.<br> This setting is a beta feature</td>
-</tr>
-<tr>
-<td>Look at Camera</td>
-<td>false</td>
-<td>Make the text face towards the camera at all times</td>
-</tr>
-<tr>
-<td>Alpha Blending</td>
-<td>true</td>
-<td>Lets you use cutout/transparency</td>
 </tr>
 <tr>
 <td>Text</td>
@@ -9533,9 +9533,19 @@ For example, by Build &amp; Running the world the text will be displayed as belo
 <td>Input the text to be displayed</td>
 </tr>
 <tr>
+<td>Scene Preview</td>
+<td>true</td>
+<td>Enable/Disable text preview in the Unity editor's Scenet view.<br> This setting is a beta feature</td>
+</tr>
+<tr>
 <td>Font Size</td>
 <td>128</td>
 <td>Specify the text size</td>
+</tr>
+<tr>
+<td>Texture Size</td>
+<td>X:512 Y:512</td>
+<td>Specify the base resolution for the displayed text texture <br> <strong>Value needs to be a power of two!</strong></td>
 </tr>
 <tr>
 <td>Text Alignment</td>
@@ -9553,9 +9563,36 @@ For example, by Build &amp; Running the world the text will be displayed as belo
 <td>Enable/Disable automatic text wrapping</td>
 </tr>
 <tr>
-<td>Texture Size</td>
-<td>X:512 Y:512</td>
-<td>Specify the base resolution for the displayed text texture <br> <strong>Value needs to be a power of two!</strong></td>
+<td>Look at Camera</td>
+<td>false</td>
+<td>Make the text face towards the camera at all times</td>
+</tr>
+<tr>
+<td>Alpha Blending</td>
+<td>true</td>
+<td>Lets you use cutout/transparency</td>
+</tr>
+</tbody>
+</table>
+<h3 id="advanced">Advanced</h3>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Initial Value</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto Loading</td>
+<td>true</td>
+<td>When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when <code>Auto Loading</code> is disabled, use <a href="VKCItemField.html">Dynamic Loading</a> or use <a href="../hs/hs_class_item.html#load">Load()</a> on HeliScript.</td>
+</tr>
+<tr>
+<td>Clickable</td>
+<td>false</td>
+<td>Toggles acceptance of click input from player</td>
 </tr>
 <tr>
 <td>Character Space</td>
@@ -9571,6 +9608,11 @@ For example, by Build &amp; Running the world the text will be displayed as belo
 <td>Z-Bias</td>
 <td>-0.05</td>
 <td>Higher z value will make the text drawn in front of other objects</td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>true</td>
+<td>Toggles display/hide item when in photo mode</td>
 </tr>
 <tr>
 <td>Overrides</td>

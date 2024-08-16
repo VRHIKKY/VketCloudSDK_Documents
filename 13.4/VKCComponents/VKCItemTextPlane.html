@@ -2757,6 +2757,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="設定項目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      高度な設定
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -9460,6 +9475,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="設定項目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      高度な設定
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -9493,39 +9523,9 @@
 </thead>
 <tbody>
 <tr>
-<td>World Position</td>
-<td>TransformのPosition値と同一</td>
-<td>テキストを表示する位置を指定します</td>
-</tr>
-<tr>
-<td>World Rotation</td>
-<td>TransformのRotation値と同一</td>
-<td>テキストを表示する角度を指定します</td>
-</tr>
-<tr>
-<td>World Scale</td>
-<td>TransformのScale値と同一</td>
-<td>テキストを表示する大きさを指定します</td>
-</tr>
-<tr>
 <td>Show</td>
 <td>true</td>
 <td>ビルド時の初期状態として文字を表示したい場合はオンにします</td>
-</tr>
-<tr>
-<td>Scene Preview</td>
-<td>true</td>
-<td>UnityのSceneビューにてプレビューするか否かを設定します。<br> 本機能は試験的な機能です</td>
-</tr>
-<tr>
-<td>Look at Camera</td>
-<td>false</td>
-<td>カメラ方向に対して常に正面を向くようになります</td>
-</tr>
-<tr>
-<td>Alpha Blending</td>
-<td>true</td>
-<td>半透明やカットアウトを使用できます</td>
 </tr>
 <tr>
 <td>Text</td>
@@ -9533,9 +9533,19 @@
 <td>表示するテキストを入力します</td>
 </tr>
 <tr>
+<td>Scene Preview</td>
+<td>true</td>
+<td>UnityのSceneビューにてプレビューするか否かを設定します。<br> 本機能は試験的な機能です</td>
+</tr>
+<tr>
 <td>Font Size</td>
 <td>128</td>
 <td>文字の大きさを指定します</td>
+</tr>
+<tr>
+<td>Texture Size</td>
+<td>X:512 Y:512</td>
+<td>テキスト表示のベースとなるテクスチャサイズを指定します<br> <strong>※2の累乗である必要があります！</strong></td>
 </tr>
 <tr>
 <td>Text Alignment</td>
@@ -9553,9 +9563,36 @@
 <td>自動改行するか否かを設定します</td>
 </tr>
 <tr>
-<td>Texture Size</td>
-<td>X:512 Y:512</td>
-<td>テキスト表示のベースとなるテクスチャサイズを指定します<br> <strong>※2の累乗である必要があります！</strong></td>
+<td>Look at Camera</td>
+<td>false</td>
+<td>カメラ方向に対して常に正面を向くようになります</td>
+</tr>
+<tr>
+<td>Alpha Blending</td>
+<td>true</td>
+<td>半透明やカットアウトを使用できます</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_2">高度な設定</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto Loading</td>
+<td>true</td>
+<td>有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、<a href="VKCItemField.html">動的ローディング</a>を使用するか、HeliScriptで<a href="../hs/hs_class_item.html#load">Load()</a>を使用して読み込みます。</td>
+</tr>
+<tr>
+<td>Clickable</td>
+<td>false</td>
+<td>クリック可能かどうかを変更します</td>
 </tr>
 <tr>
 <td>Character Space</td>
@@ -9571,6 +9608,16 @@
 <td>Z-Bias</td>
 <td>-0.05</td>
 <td>z値が高いと、ほかのオブジェクトよりも手前に表示されます</td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>true</td>
+<td>写真撮影モードの際、itemを表示するかどうかを変更します</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>Itemの描画順序を決定します。<br>詳細は<a href="../VketCloudSettings/RenderingSettings.html">RenderingSettings / Priority List</a>をご参照ください。</td>
 </tr>
 <tr>
 <td>Overrides</td>

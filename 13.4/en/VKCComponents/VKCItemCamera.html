@@ -2625,6 +2625,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -9463,6 +9487,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
@@ -9500,24 +9548,52 @@
 <p>VKC Item Camera is used to switch camera controls for visual purposes.<br>
 Using this component, camera can be switched in occasions such as event cut scenes, special camera works, and more purposes.<br>
 Switching camera will be done by HeliScript as explained later.</p>
+<h2 id="settings">Settings</h2>
 <table>
 <thead>
 <tr>
 <th>Label</th>
-<th>Default</th>
+<th>Initial Value</th>
 <th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Position</td>
-<td>0,0,0</td>
-<td>Stores the camera's global position</td>
+<td>Show</td>
+<td>true</td>
+<td>Enable this if you want the item to display by default</td>
+</tr>
+</tbody>
+</table>
+<h3 id="advanced">Advanced</h3>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Initial Value</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto Loading</td>
+<td>true</td>
+<td>When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when <code>Auto Loading</code> is disabled, use <a href="VKCItemField.html">Dynamic Loading</a> or use <a href="../hs/hs_class_item.html#load">Load()</a> on HeliScript.</td>
 </tr>
 <tr>
-<td>Rotation</td>
-<td>0,0,0</td>
-<td>Stores the camera's global rotation</td>
+<td>Clickable</td>
+<td>false</td>
+<td>Toggles acceptance of click input from player</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>Designates the Item's render priority. <br> For details, refer to <a href="../VketCloudSettings/RenderingSettings.html">RenderingSettings / Priority List</a></td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>true</td>
+<td>Toggles display/hide item when in photo mode</td>
 </tr>
 </tbody>
 </table>
