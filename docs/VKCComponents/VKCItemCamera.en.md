@@ -6,10 +6,20 @@ VKC Item Camera is used to switch camera controls for visual purposes.<br>
 Using this component, camera can be switched in occasions such as event cut scenes, special camera works, and more purposes.<br>
 Switching camera will be done by HeliScript as explained later.
 
-| Label | Default | Function |
+## Settings
+
+| Label | Initial Value | Function |
 | ---- | ---- | ----|
-| Position | 0,0,0 | Stores the camera's global position |
-| Rotation | 0,0,0 | Stores the camera's global rotation |
+| Show | true | Enable this if you want the item to display by default |
+
+### Advanced
+
+| Label | Initial Value | Function |
+| ----   | ---- | ---- |
+| Auto Loading | true | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](VKCItemField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
+| Clickable | false | Toggles acceptance of click input from player |
+| Item Render Priority | 0 | Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+| Show Photo Mode | true | Toggles display/hide item when in photo mode |
 
 ## Usage
 

@@ -6,10 +6,20 @@ VKC Item Cameraコンポーネントは演出目的等で通常のカメラか�
 この機能を使うことにより、イベントシーンなどでのカメラの切り替えや特殊カメラワークを作ることができます。<br>
 カメラの切り替えは後述するようにHeliScriptからおこないます。
 
+## 設定項目
+
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ----|
-| Position | 0,0,0 | カメラのGlobal座標を保管します |
-| Rotation | 0,0,0 | カメラのGlobal回転値を保管します |
+| Show | true | オンにすると表示します |
+
+### 高度な設定
+
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ----|
+| Auto Loading | true | 有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、[動的ローディング](VKCItemField.md)を使用するか、HeliScriptで[Load()](../hs/hs_class_item.md#load)を使用して読み込みます。|
+| Clickable | false | クリック可能かどうかを変更します |
+| Item Render Priority | 0 | Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
+| Show Photo Mode | true | 写真撮影モードの際、itemを表示するかどうかを変更します |
 
 ## 使い方
 

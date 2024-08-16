@@ -7,6 +7,13 @@
 - About VketCloudSDK
     - [Setup Account](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupAccount.html)
         - Added English translation
+- VKC Component
+    - VKC Item
+        - [VKC Item Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemCamera.html)
+        - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemParticle.html)
+            - Updated descriptions and images
+        - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemAudio.html)
+            - Updated descriptions and images
 
 ---
 
@@ -24,10 +31,12 @@
         - Updated descriptions and images
 - VKC Component 
     - Fixed the inconsistency in the label of the VKC components.
-    - VKCItem
-        - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemBackgroundTexture.html)
+    - VKC Attribute
+        - [VKC Attribute Show Flag](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCAttributeShowFlag.html)
+    - VKC Item
+        - [VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemBackgroundTexture.html)
             - Updated descriptions and images
-        - [VKCItemTextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemTextPlane.html)
+        - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemTextPlane.html)
             - Updated descriptions and images
 - HeliScript
     - Built-in Types
@@ -57,15 +66,15 @@
     - Renamed page title
     - Added an overview description for Item, Node
   - VKCSettings
-        - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
-        - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
-        - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/RenderingSettings.html)
+        - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
+        - [VKC Setting World Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
+        - [VKC Setting Rendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/RenderingSettings.html)
             - Updated descriptions and images
   - VKCItem
-        - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
+        - [VKC Item Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
             - Updated descriptions and images
   - VKCAttribute
-        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCAttributeProperty.html)
+        - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCAttributeProperty.html)
             - Updated descriptions and images
             - Changed instructions for defining property on Activity
             - Added change of function for SetProperty
