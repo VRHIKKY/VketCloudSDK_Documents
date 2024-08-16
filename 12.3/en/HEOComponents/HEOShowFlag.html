@@ -2539,6 +2539,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    HEOShowFlag
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="HEOShowFlag.html" class="md-nav__link md-nav__link--active">
         
   
@@ -2548,6 +2559,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-condition-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show Condition Types
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -7849,6 +7897,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-condition-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show Condition Types
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -7864,18 +7938,30 @@
 
 <h1 id="heoshowflag">HEOShowFlag</h1>
 <p>The component can be used to display or hide an object on HEO Field.</p>
-<p><img alt="HEOShowFlag" src="../../HEOComponents/img/HEOShowFlag.jpg" /></p>
+<p><img alt="HEOShowFlag" src="../../HEOComponents/img/HEOShowFlag_01.jpg" /></p>
 <table>
 <thead>
 <tr>
 <th>Label</th>
-<th>function</th>
+<th>Default</th>
+<th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>show</td>
-<td>False to hide</td>
+<td>Show</td>
+<td>True</td>
+<td>Can be hidden by unchecking this option.</td>
+</tr>
+<tr>
+<td>Depth Buffer Enable</td>
+<td>False</td>
+<td>Specifies whether to write to the depth buffer.</td>
+</tr>
+<tr>
+<td>Alpha Blend To Opaque</td>
+<td>False</td>
+<td>Forces alpha-blended rendering to be done in the opaque rendering pass.</td>
 </tr>
 </tbody>
 </table>
@@ -7888,6 +7974,63 @@
 <li>The component only hides its appearance. Colliders and other functions remain effective.</li>
 </ul>
 </div>
+<h2 id="advanced-options">Advanced Options</h2>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Default</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show1 - show9</td>
+<td>True</td>
+<td>Toggles the display flag settings.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="show-condition-types">Show Condition Types</h2>
+<p>The display flags are internally arranged as an array, and can be set individually from show1 to show9.
+The default value for all flags is True, and if even one flag in the array is False, it is evaluated as False.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>Always returns True.</td>
+</tr>
+<tr>
+<td>False</td>
+<td>Always returns False.</td>
+</tr>
+<tr>
+<td>Is Lang Ja</td>
+<td>Whether the language setting is Japanese.</td>
+</tr>
+<tr>
+<td>Is Not Lang Ja</td>
+<td>Whether the language setting is not Japanese.</td>
+</tr>
+<tr>
+<td>Is Logined</td>
+<td>Whether the user is logged in.</td>
+</tr>
+<tr>
+<td>Is Not Logined</td>
+<td>Whether the user is not logged in.</td>
+</tr>
+</tbody>
+</table>
+<p>For example, set it as below:</p>
+<p><img alt="HEOShowFlag" src="../../HEOComponents/img/HEOShowFlag_02.jpg" /></p>
+<p>In this case, if <code>Show</code> becomes True from other operations such as HeliScript, and <code>Is Lang Ja</code> is True, then the overall result is considered True, and the item will be displayed.</p>
 
 
 

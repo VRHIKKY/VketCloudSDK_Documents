@@ -2158,6 +2158,15 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      詳細設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
       オーディオファイルのフォーマット
     </span>
   </a>
@@ -7897,6 +7906,15 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      詳細設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
       オーディオファイルのフォーマット
     </span>
   </a>
@@ -7919,29 +7937,34 @@
 
 
 <h1 id="heoaudio">HEOAudio</h1>
-<p><img alt="HEOAudio_1" src="img/HEOAudio_1_jp.jpg" /></p>
+<p><img alt="HEOAudio_1" src="img/HEOAudio_01.jpg" /></p>
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>function</th>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>オーディオタイプ</code></td>
-<td>BGM、効果音、システム効果音から選択できます。</td>
+<td>Audio Type</td>
+<td>BGM</td>
+<td>BGM、効果音から選択できます。</td>
 </tr>
 <tr>
-<td><code>オーディオクリップ</code></td>
+<td>Audio Clip</td>
+<td>なし</td>
 <td>オーディオファイルを指定します。<br>なお、現時点ではmp3ファイルの再生にのみ対応しております。</td>
 </tr>
 <tr>
-<td><code>ループ</code></td>
+<td>Loop</td>
+<td>False</td>
 <td>繰り返し再生するかどうか設定します。</td>
 </tr>
 <tr>
-<td><code>自動再生</code></td>
+<td>Autoplay</td>
+<td>False</td>
 <td>ワールドBGMのように、入室後から自動で再生する場合に使用します。</td>
 </tr>
 </tbody>
@@ -7960,18 +7983,31 @@
 <td>BGM</td>
 </tr>
 <tr>
-<td><code>効果音</code></td>
+<td><code>SE</code></td>
 <td>効果音</td>
-</tr>
-<tr>
-<td><code>システム効果音</code></td>
-<td>システム音</td>
 </tr>
 </tbody>
 </table>
 <p>ユーザーはワールド内の設定画面から各オーディオタイプの音量が調整できます。</p>
 <p><img alt="HEOAudio_2" src="img/HEOAudio_2_jp.jpg" /></p>
-<h2 id="_1">オーディオファイルのフォーマット</h2>
+<h2 id="_1">詳細設定</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Override</td>
+<td>-</td>
+<td>ワールド入場時に<code>Overrides</code>にて設定された<code>Audio Clip</code>がHEOAudioにて設定した<code>Audio Clip</code>に代わって使用されます。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">オーディオファイルのフォーマット</h2>
 <p>オーディオファイルを設定する際、以下のフォーマットに従ってください：</p>
 <table>
 <thead>

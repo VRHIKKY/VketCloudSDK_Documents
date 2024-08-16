@@ -2156,6 +2156,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#audio-file-format" class="md-nav__link">
     <span class="md-ellipsis">
       Audio file format
@@ -7895,6 +7904,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#audio-file-format" class="md-nav__link">
     <span class="md-ellipsis">
       Audio file format
@@ -7919,29 +7937,34 @@
 
 
 <h1 id="heoaudio">HEOAudio</h1>
-<p><img alt="HEOAudio_1" src="../../HEOComponents/img/HEOAudio_1_en.jpg" /></p>
+<p><img alt="HEOAudio_1" src="../../HEOComponents/img/HEOAudio_01.jpg" /></p>
 <table>
 <thead>
 <tr>
 <th>Label</th>
-<th>function</th>
+<th>Default</th>
+<th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>Audio Type</code></td>
+<td>Audio Type</td>
+<td>BGM</td>
 <td>Choose from BGM, SE, or SystemSE</td>
 </tr>
 <tr>
-<td><code>Audio Clip</code></td>
+<td>Audio Clip</td>
+<td></td>
 <td>Specify the audio file. <br> Currently, only mp3 files are supported.</td>
 </tr>
 <tr>
-<td><code>loop</code></td>
+<td>loop</td>
+<td>False</td>
 <td>Set if you want it to loop.</td>
 </tr>
 <tr>
-<td><code>autoplay</code></td>
+<td>autoplay</td>
+<td>False</td>
 <td>If you want the audio to play automatically after joining. e.g. world BGM.</td>
 </tr>
 </tbody>
@@ -7963,14 +7986,27 @@
 <td><code>SE</code></td>
 <td>Effects</td>
 </tr>
-<tr>
-<td><code>System SE</code></td>
-<td>Interface</td>
-</tr>
 </tbody>
 </table>
 <p>By accessing the in-game config, the player may set the volume of each audio type.</p>
 <p><img alt="HEOAudio_2" src="../../HEOComponents/img/HEOAudio_2_en.jpg" /></p>
+<h2 id="advanced-options">Advanced Options</h2>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Default</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Override</td>
+<td>-</td>
+<td>When entering the world, the Audio Clip set in <code>Overrides</code> will be used instead of the <code>Audio Clip</code> set in HEOAudio.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="audio-file-format">Audio file format</h2>
 <p>When setting an audio file, please follow the format below:</p>
 <table>
