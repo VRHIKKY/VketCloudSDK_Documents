@@ -34,7 +34,12 @@ For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide
 
 ## About collision / area range detection by collider
 
-The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
+The collision / area range detection by collider will be done by obtaining the player's origin point as the very bottom orange sphere of the image shown below.<br>
+
 Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md#f3-display-collision) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
 
-![VKC Node Collider](img/VKCItemAreaCollider_03.jp)
+![VKC Node Collider](img/VKCItemAreaCollider_03.jpg)
+
+!!! warning "If the collider is not working"
+    If the collider is floating even slightly above the ground, collision detection at the player's feet (origin point) will not function.<br>
+    If the collider is not working, please check whether the collider is floating above the ground.
