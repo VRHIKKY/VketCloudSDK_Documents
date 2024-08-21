@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月23日更新
+
+## 2024年8月23日 - 追加されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        - [HSMessageクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_hsmessage.html)
+
+---
+
 ## 2024年8月16日更新
 
 ## 2024年8月16日 - 変更されたページ

@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 23 2024 Update
+
+## August 23 2024 - Added Pages
+
+- HeliScript
+    - Built-in Classes And Functions
+        - [HSMessage Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_hsmessage.html)
+
+---
+
 ## August 16 2024 Update
 
 ## August 16 2024 - Edited Pages
