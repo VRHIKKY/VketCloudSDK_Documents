@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月23日更新
+
+## 2024年8月23日 - 変更されたページ
+
+- VKC Component
+    - VKC Item
+        - [VKC Item Area Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAreaCollider.html)
+            - 説明文および画像を更新
+
+---
+
 ## 2024年8月16日更新
 
 ## 2024年8月16日 - 変更されたページ
