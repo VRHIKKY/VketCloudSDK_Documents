@@ -22,6 +22,16 @@ VKC Item Area Colliderをアタッチするオブジェクトには[VKC Node Col
 アクションについては[アクションの概要](../Actions/ActionsOverview.md)を参照してください。<br>
 コライダーについては[Unity制作ガイドライン - コライダー](../WorldMakingGuide/UnityGuidelines.md)を参照してください。
 
+## 詳細設定
+
+| 名称 | 初期値 |  説明  |
+| ---- | ---- | ---- |
+| Show | True | VKC Item Area Colliderでは動作しません。 |
+| Clickable | False | VKC Item Area Colliderでは動作しません。 |
+| Auto Loading | True | 動的ローディングの有効/無効を切り替えます。 |
+| Item Render Priority | 0 | ワールド内のItemの描画優先度を変更できます。 |
+| Show Photo Mode | True | VKC Item Area Colliderでは動作しません。 |
+
 ## コライダーの衝突 / エリア範囲判定について
 
 ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>

@@ -22,6 +22,16 @@ You can remove the last action by clicking Delete(-).
 For actions, see [Actions Overview](../Actions/ActionsOverview.md). <br>
 For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide/UnityGuidelines.md).
 
+## Advanced Options
+
+| Label | Default | Function |
+| ---- | ---- | ---- |
+| Show | True | This option does not work with the VKC Item Area Collider. |
+| Clickable | False | This option does not work with the VKC Item Area Collider. |
+| Auto Loading | True | Toggles dynamic loading on/off. |
+| Item Render Priority | 0 | Allows changing the rendering priority of the item in the world. |
+| Show Photo Mode | True | This option does not work with the VKC Item Area Collider. |
+
 ## About collision / area range detection by collider
 
 The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
