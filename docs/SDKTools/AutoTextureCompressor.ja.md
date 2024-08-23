@@ -30,13 +30,13 @@ Auto Texture Compressorは、メニューバーにて**VketCloudSDK --> Tools --
 | 英語 | 日本語 | 説明 |
 |----|----|----|
 | Target Files | 対象ファイル | テクスチャ圧縮の対象となっているファイルのリストが表示されます |
-| Checkbox (unchecked) | チェックボックス（無効） | チェックボックスを無効にすると、HEOSameTexOptimizerを使わずに1つのHEOファイルだけを圧縮します |
+| Checkbox (unchecked) | チェックボックス（無効） | チェックボックスを無効にすると、HEOSameTexOptimizerを使わずに1つのheoファイルだけを圧縮します |
 | Group Name | グループ名 | HEOSameTexOptimizerが自らの処理を終えた途端、どのフォルダ名で新しいフォルダーを作って新ファイルを入れるのか決定します |
 | Export Path | 出力パス | HEOSameTexOptimizerがどこで新しいフォルダを作成すべきか設定します |
 | Files In Group | グループ内容 | このグループに入っているファイルリストにファイルを追加したり削除したりすることができる |
-| File Checkbox (checked) | チェックボックス（有効） | チェックボックスを有効にすると、複数のHEOFieldをグループで纏めてHEOSameTexOptimizerで最適化することになります |
-| Auto Add Fields | 自動フィールド追加 | 【任意のオプション】現在開かれているシーンにて[HEOField](../HEOComponents/HEOField.md)が追加された場合、自動的にこのツールのウィンドウに追加できます |
-| Remove Existing Fields | 既存フィールド削除 | このチェックボックスを有効にすると、自動的にフィールドを追加する場合、その前に書いてあったフィールドの全部が削除され、ゼロから新しく見つけたHEOFieldが追加されます |
+| File Checkbox (checked) | チェックボックス（有効） | チェックボックスを有効にすると、複数の[VKC Item Field](../VKCComponents/VKCItemField.md)をグループで纏めてHEOSameTexOptimizerで最適化することになります |
+| Auto Add Fields | 自動フィールド追加 | 【任意のオプション】現在開かれているシーンにて[VKC Item Field](../VKCComponents/VKCItemField.md)が追加された場合、自動的にこのツールのウィンドウに追加できます |
+| Remove Existing Fields | 既存フィールド削除 | このチェックボックスを有効にすると、自動的にフィールドを追加する場合、その前に書いてあったフィールドの全部が削除され、ゼロから新しく見つけた[VKC Item Field](../VKCComponents/VKCItemField.md)が追加されます |
 | Proceed | 進む | 自動フィールド追加機能を起動するボタン |
 | Start | スタート | テクスチャ圧縮を開始します |
 
@@ -72,4 +72,4 @@ Proceed / 進むボタンを押さなくても、以下の場合には自動フ�
 
 ### Auto Texture Compressorに関する注意
 
-- 実際に存在するHEOファイルが1つでも選択されていない場合、スタートボタンが無効になって押せなくなります。必ずひとつは選択するようにご注意ください。
+- 実際に存在するheoファイルが1つでも選択されていない場合、スタートボタンが無効になって押せなくなります。必ずひとつは選択するようにご注意ください。

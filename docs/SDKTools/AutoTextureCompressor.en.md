@@ -30,13 +30,13 @@ Auto Texture Compressor can be launched by selecting **VketCloudSDK --> Tools --
 | English | Description |
 |----|----|
 | Target Files | Displays a list of files that are targeted for texture compression |
-| Checkbox (unchecked)  | If unchecked, compresses only one HEO file without using HEOSameTexOptimizer |
+| Checkbox (unchecked)  | If unchecked, compresses only one heo file without using HEOSameTexOptimizer |
 | Group Name | Determines the folder name for creating new folders and placing new files after HEOSameTexOptimizer completes its processing |
 | Export Path | Sets where HEOSameTexOptimizer should create new folders |
 | Files In Group  | Allows adding or removing files from the list of files in this group |
-| File Checkbox (checked)  | If checked, groups multiple [HEOField](../HEOComponents/HEOField.md) components for optimization with HEOSameTexOptimizer |
-| Auto Add Fields | (Optional) Automatically adds [HEOField](../HEOComponents/HEOField.md) to this tool’s window when added to the currently open scene |
-| Remove Existing Fields | When enabled, removes all previously listed fields before automatically adding new HEOFields |
+| File Checkbox (checked)  | If checked, groups multiple [VKC Item Field](../VKCComponents/VKCItemField.md) components for optimization with HEOSameTexOptimizer |
+| Auto Add Fields | (Optional) Automatically adds [VKC Item Field](../VKCComponents/VKCItemField.md) to this tool’s window when added to the currently open scene |
+| Remove Existing Fields | When enabled, removes all previously listed fields before automatically adding new [VKC Item Field](../VKCComponents/VKCItemField.md) components |
 | Proceed| Button to activate the auto field addition feature |
 | Start | Begins the texture compression process |
 
@@ -72,4 +72,4 @@ Auto Add Fields will be done in the following cases even when the "Proceed" butt
 
 ### Notes on Auto Texture Compressor
 
-- If no actual HEO files are selected, the Start button will be disabled and cannot be pressed. Please ensure at least one file is selected.
+- If no actual heo files are selected, the Start button will be disabled and cannot be pressed. Please ensure at least one file is selected.

@@ -2,6 +2,11 @@
 
 ## 2024年8月23日更新
 
+## 2024年8月23日 - 追加されたページ
+
+- SDKTools
+  - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/AutoTextureCompressor.html)
+
 ## 2024年8月23日 - 変更されたページ
 
 - VKC Component
