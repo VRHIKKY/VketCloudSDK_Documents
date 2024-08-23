@@ -230,14 +230,14 @@ VketCloudSDKは、簡易アバターの設定が通常のワールド設定で�
 
 #### VketCloudSDKのポリゴン数設定方法
 
-1. Hierarchyから[WorldSetting](../HEOComponents/HEOWorldSetting.md)オブジェクトを選択する
 
-2. MyAvatarタブを選択する
+1. Hierarchyから[VketCloudSettings](../VketCloudSettings/Overview.md)を選択し、Setting Modeに`Advanced`を選択する
 
-3. Polygonで数字を調整する
+1. Hierarchyから[MyAvatarSettings](../VketCloudSettings/MyAvatarSettings.md)を選択する
+
+1. `Polygon`の数字を調整する
 
 ![GeneralChecklist_12](img/GeneralChecklist_12.jpg)
-
 ## それでも解決できない場合
 
 - Discordでサポートを受ける

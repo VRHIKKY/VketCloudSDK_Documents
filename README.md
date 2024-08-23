@@ -1,7 +1,7 @@
 # VketCloudSDKマニュアルのレポジトリへようこそ！
 このリポジトリは、VketCloudSDKのマニュアルを管理するリポジトリです。
 最新のSDKマニュアルは以下のURLから確認できます。
-https://vrhikky.github.io/VketCloudSDK_Documents/latest/ja/index.html
+https://vrhikky.github.io/VketCloudSDK_Documents/latest/index.html
 
 ## Contribution policy
 社外のSDKユーザーからのコントリビューションの参加も絶賛受付中です。

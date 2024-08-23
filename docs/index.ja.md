@@ -18,8 +18,8 @@ SDKを利用するには、`各種アカウントへの登録`と`指定バー�
 とりあえずワールドに入ってみたい・どんなものが作れるか知りたい方は[My Vket](https://vket.com/){target=_blank}をチェックしましょう！
 
 !!! info "SDKバージョンについて"
-    現在のVketCloudSDKの最新版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ja/index.html)ご参照ください。<br>
-    また、一定期間のサポートが盛り込まれた安定版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/stable/ja/index.html)ご参照ください。
+    現在のVketCloudSDKの最新版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/latest/index.html)ご参照ください。<br>
+    また、一定期間のサポートが盛り込まれた安定版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/stable/index.html)ご参照ください。
 
 !!! info "更新履歴について"
     本バージョンのVketCloudSDKの更新情報は[リリースノート](releasenote/releasenote-12.3.md)から確認できます。<br>

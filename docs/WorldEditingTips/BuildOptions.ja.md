@@ -1,10 +1,30 @@
 # ビルド時のオプション
 
 ビルド設定において、制作者はビルド時にワールドを構成するファイルに対して様々な操作を行うことができます。
+以下２つの方法でビルド時の設定を変更できます。
 
-ビルド設定を編集するには、VketCloudSDK > Settingsより設定ウィンドウを開き、「Build」タブを選択します。
+1. VketCloudSDK > Build Optionより、簡易設定をオン/オフすることができます。
+
+![BuildOptions_0](img/BuildOptions_0.jpg)
+
+2. ビルドの詳細設定を編集するには、VketCloudSDK > Settingsより設定ウィンドウを開き、「Build」タブを選択します。
 
 ![BuildOptions_1](img/BuildOptions_1.jpg)
+
+## ビルドオプション設定
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| Auto Clear Cache | false | Build And Run前にreleaseフォルダを空にする処理を実行するかしないかを設定します。オンにした場合、BuildAndRun前にreleaseフォルダを空にする処理が実行されます。 |
+| Fast Build Without UI | false | ビルド時にUIを表示せずにビルドを行うかどうかを設定します。オンにした場合、ビルド時にUIが表示されず、BuildAndRunが素早く実行されます。 |
+
+![BuildOptions_3](img/BuildOptions_3.jpg)
+
+Fast Build Without UI がオフの場合、UIが表示される。
+
+![BuildOptions_4](img/BuildOptions_4.jpg)
+
+Fast Build Without UI がオンの場合、UIが表示されずに、高速にBuildAndRunが可能になる。
+
 
 ## テクスチャオーバーライド設定
 

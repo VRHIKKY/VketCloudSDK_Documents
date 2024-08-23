@@ -14,7 +14,7 @@ For details, please refer to the [specification limit](../WorldMakingGuide/Unity
 | World Rotation | Same value as Transform's Rotation value | Set the rotation for displaying text |
 | World Scale | Same value as Transform's Scale value | Set the scale for displaying text |
 | Alpha Blending | false| Lets you use cutout/transparency. |
-| Show | false | Enable if you want the image to appear from the beginning. |
+| Show | true | Enable if you want the image to appear from the beginning. |
 | Z-bias | 0 | Higher z value will make the image show in front of other objects. |
 | Look at Camera | false | Make the image face towards the camera at all times. |
 | Double Side | false | Enable/Disable display on double sides |

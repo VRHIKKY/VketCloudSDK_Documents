@@ -1,7 +1,6 @@
 
 # 組み込み関数 - ネットワーク
 
-
 !!! 情報 Info
     ルームのプレイヤー全体に、任意のデータを送信します。
 
@@ -15,18 +14,19 @@
 
 ***
 
-### hsNetSetCustomState(string, string)
+## hsNetSetCustomState
+
 `void hsNetSetCustomState(string type, string data)`
 
 あらかじめ type と data を設定しておくことによって、ルームに入場したユーザーに (type, data) を自動で通知する。
 
-### hsNetSendCustomData(string, string)
+## hsNetSendCustomData
+
 `void hsNetSendCustomData(string type, string data)`
 
 ルーム内のユーザーに (type, data) を通知する。
 
-
-### データ受信コールバックメソッド
+## データ受信コールバックメソッド
 
 送信されたデータは、コンポーネントに定義された `OnReceiveCustomState()` と `OnReceiveCustomData()` メソッドで取得できます。引数 id は送信したプレイヤーの識別子です。
 
@@ -43,36 +43,19 @@ component CustomDataReceiver
 }
 ```
 
-## 音声チャンネル入退出コールバックメソッド
-
-他のユーザーの音声チャンネルへの入退出は`OnVCPlayerJoin()`と`OnVCPlayerLeave()`メソッドで取得できます。引数 ID は送信したプレイヤーの識別子です。
-```
-component JoinLeaveSample
-{
-    public void OnVCPlayerJoin(string ID, string Data)
-    {
-    }
-
-    public void OnVCPlayerLeave(string ID, string Data)
-    {
-    }
-}
-```
-
-
 ## マイク許可状態
 
 ### hsNetGetMicPermissionState
+
 `int hsNetGetMicPermissionState()`
 
 マイク許可状態を取得します。以下の定数値が返ります。
 
 ```
-const int HSMicPermissionState_Prompt = 0;		// 確認が必要
-const int HSMicPermissionState_Granted = 1;		// 許可
-const int HSMicPermissionState_Denied = 2;		// 不許可
+const int HSMicPermissionState_Prompt = 0;  // 確認が必要
+const int HSMicPermissionState_Granted = 1;  // 許可
+const int HSMicPermissionState_Denied = 2;  // 不許可
 ```
-
 
 ### コールバックメソッド
 
@@ -84,10 +67,10 @@ public void OnChangedMicPermissionState(int MicPermissionState)
 }
 ```
 
-
 ## SpatiumCode
 
 ### hsNetGetSpatiumCode
+
 `string hsNetGetSpatiumCode()`
 
 Sceneファイルに定義されたSpatiumCodeを取得します。

@@ -1,7 +1,6 @@
 
 # Built-in functions - network
 
-
 !!! Note Info
      Send arbitrary data to all players in the room.
 
@@ -15,17 +14,19 @@
 
 ***
 
-### hsNetSetCustomState(string, string)
+## hsNetSetCustomState
+
 `void hsNetSetCustomState(string type, string data)`
 
 By setting type and data in advance, (type, data) is automatically notified to users entering the room.
 
-### hsNetSendCustomData(string, string)
+## hsNetSendCustomData
+
 `void hsNetSendCustomData(string type, string data)`
 
 Notify (type, data) to users in the room.
 
-### Data Reception Callback Method
+## Data Reception Callback Method
 
 The sent data can be retrieved in the `OnReceiveCustomState()` and `OnReceiveCustomData()` methods defined in the component. Argument id is the identifier of the sending player.
 
@@ -41,6 +42,7 @@ component CustomDataReceiver
      }
 }
 ```
+
 ## Voice Channel Join/Leave Callback Method
 
 The join/leave event of other users in the voice channel can be retrieved by `OnVCPlayerJoin()` and `OnVCPlayerLeave()` method. Argument id is the identifier of the sending player.
@@ -58,20 +60,19 @@ component JoinLeaveSample
 }
 ```
 
-
 ## Mike Permission State
 
 ### hsNetGetMicPermissionState
+
 `int hsNetGetMicPermissionState()`
 
 Gets the Mike Permission State. The constants below will be returned.
 
 ```
-const int HSMicPermissionState_Prompt = 0;		// Permission in queue
-const int HSMicPermissionState_Granted = 1;		// Permission Granted
-const int HSMicPermissionState_Denied = 2;		// Permission Denied
+const int HSMicPermissionState_Prompt = 0;  // Permission in queue
+const int HSMicPermissionState_Granted = 1;  // Permission Granted
+const int HSMicPermissionState_Denied = 2;  // Permission Denied
 ```
-
 
 ### Callback Method
 
@@ -83,10 +84,10 @@ public void OnChangedMicPermissionState(int MicPermissionState)
 }
 ```
 
-
 ## SpatiumCode
 
 ### hsNetGetSpatiumCode
+
 `string hsNetGetSpatiumCode()`
 
 Gets the SpatiumCode defined in the Scene file.

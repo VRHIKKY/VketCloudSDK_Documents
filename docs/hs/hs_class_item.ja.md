@@ -466,9 +466,12 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 ### SetUVOffset
 
-`public bool SetUVOffset(string naterialName, float u, float v)`
+`public bool SetUVOffset(string materialName, float u, float v)`
 
-名前でマテリアルを指定し、そのマテリアルの uv座標を変更する。変更に失敗すると false を返す。
+名前でマテリアルを指定し、**原点を左上として**uv座標を変更する。変更に失敗すると false を返す。
+
+!!! warning "UV座標原点について"
+    通常のUnityプロジェクトではUVの原点(0,0)はUVの左下にありますが、HeliScriptでは**左上**を原点としていることにご注意ください。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [HEOField](../HEOComponents/HEOField.md)

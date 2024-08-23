@@ -70,7 +70,7 @@ Vket Cloudがデバッグモードで動作している場合は true を返す�
 システム上の現在のタイムゾーンと、UTCタイムゾーンの差を分単位で返します。
 
 ### hsGetCurrentWorldId
-`float hsGetCurrentWorldId()`
+`string hsGetCurrentWorldId()`
 
 ワールドIDを取得する。
 

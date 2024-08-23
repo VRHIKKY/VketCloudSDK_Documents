@@ -11,7 +11,12 @@ This file stores information to initiate avatars on Vket Cloud.
 | Thumbnail(English) | Sets the thumbnail image for the avatar when language is English. <br> The thumbnail will be used in the preset avatar list. |
 
 The thumbnail image will be applied to the preset avatar list located in the in-world settings as below.<br>
-The avatar display order will be set according to the setting in [HEOWorldSetting > Avatar > Avatar File](../HEOComponents/HEOWorldSetting.md).<br>
+The avatar display order will be set according to the setting in [VketCloudSettings > Avatar Settings > Avatar Setting > Avatar File](../VketCloudSettings/AvatarSettings.md).<br>
+
+!!! note "About Avatar Settings"
+    Avatar Settings can be configured by switching to `Advanced` setting mode in [Vket Cloud Settings](../VketCloudSettings/Overview.md) object.<br>
+    By doing above, the object `Avatar Settings` appears in the hierarchy and can be configured.
+
 Note that thumbnail image must be in png format and 1:1 square ratio.
 
 ![AvatarFile_Result](img/AvatarFile_Result.jpg)
@@ -79,4 +84,4 @@ The object may be set in three formats: Heo, Hep, or Audio.
 | File | blank | Set the file to be used as an object. |
 | Position | 0,0,0 | Set the relative position from the Target. |
 | Rotation | 0,0,0 | Set the relative rotation from the Target. |
-| Target | blank | Specifies the bone that serves as the coordinate origin. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview){target=_blank}, name in snakeCase (e.g. head, leftLowerLeg, leftThumbProximal...)|
+| Target | blank | Specifies the bone that serves as the coordinate origin. <br> The bone name is akin to the [VRM Humanoid](https://vrm.dev/en/univrm/humanoid/humanoid_overview){target=_blank}, name in snake_case (e.g. head, left_lower_leg, left_thumb_proximal...)|

@@ -3,7 +3,13 @@
 ![HEOPlane_1](img/HEOPlane_1.jpg)
 
 HEOPlaneは、画像ファイルをインスタンス生成する機能です。<br>
-ファイル形式は必ずpng形式である必要があります。
+Vket Cloudでは以下のフォーマットのテクスチャ画像が使用できます。
+
+- 大きさが2048x2048以下のpng形式のファイル　※jpg, psd形式などは使えません
+- ２の累乗サイズの正方形（2048x2048,1024x1024,512x512等）または2の累乗サイズの長方形
+- ビット深度は24bitまたは32bit
+- png換算で80MB以下
+- 拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップロードでエラーが出ることがあります。
 
 詳しくは[Unity制作ガイドライン](../WorldMakingGuide/UnityGuidelines.md)をご覧ください。
 
@@ -14,7 +20,7 @@ HEOPlaneは、画像ファイルをインスタンス生成する機能です。
 | World Rotation | TransformのRotation値と同一 | テキストを表示する角度を指定します |
 | World Scale | TransformのScale値と同一 | テキストを表示する大きさを指定します |
 | Alpha Blending | false | 半透明やカットアウトを使用できます |
-| Show | false | あらかじめ表示したい場合はオンにします |
+| Show | true | あらかじめ表示したい場合はオンにします |
 | Z-Bias | 0 | z値が高いと、ほかのオブジェクトよりも手前に表示されます |
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります |
 | Double Side | false | 両面表示するか否かを切り替えます |

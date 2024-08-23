@@ -34,6 +34,8 @@ theme:
     search: 83   # s
   nav_style: dark
   custom_dir: custom_theme
+  static_templates:
+    - 404.html
 
 extra_css:
   - stylesheets/extra.css
@@ -106,6 +108,7 @@ plugins:
             Adding Preset Avatars : プリセットアバターを追加する
             How to Animate Objects: オブジェクトをアニメーションさせる
             How to Animate Objects - Troubleshooting: オブジェクトをアニメーションさせる - 動かないときは
+            How to convert animation from Unity asset: Unityアセットのアニメーションを変換する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -224,6 +227,7 @@ nav:
     #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
     - How to Animate Objects: WorldMakingGuide/PropAnimation.md
     - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
+    - How to convert animation from Unity asset: WorldMakingGuide/ConvertAnimationFromUnityAsset.md
     - Avatar File: WorldMakingGuide/AvatarFile.md
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
 - Trouble shooting:
@@ -244,9 +248,9 @@ nav:
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
-    - VketCloudSDK Settings : SDKTools/VketCloudSDK 
-    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
+    - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
+    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
@@ -268,6 +272,7 @@ nav:
     - HEOCamera: HEOComponents/HEOCamera.md
     - HEOCollider: HEOComponents/HEOCollider.md
     - HEOClickGuide: HEOComponents/HEOClickGuide.md
+    - HEOCylinderCollider: HEOComponents/HEOCylinderCollider.md
     - HEODespawnHeight: HEOComponents/HEODespawnHeight.md
     - HEOField: HEOComponents/HEOField.md
     #- HEOInfo: HEOComponents/HEOInfo.md #整備中

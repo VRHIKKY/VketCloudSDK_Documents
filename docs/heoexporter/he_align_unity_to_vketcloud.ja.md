@@ -18,11 +18,18 @@ Skyboxを使用していないのであればUnityではLight SettingsのSkybox�
 VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
 
 1. 「Edit/ProjectSettings/Graphics」を開く
-![OpenGraphics.jpg](he_image/OpenGraphics.jpg)
+
+    ![OpenGraphics.jpg](he_image/OpenGraphics_1.jpg)
+
+    ![OpenGraphics.jpg](he_image/OpenGraphics_2.jpg)
+
 2. 「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
-![TierSettings.jpg](he_image/TierSettings.jpg)
+
+    ![TierSettings.jpg](he_image/TierSettings.jpg)
+
 3. 「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
-![StandardShaderQuality.jpg](he_image/StandardShaderQuality.jpg)
+
+    ![StandardShaderQuality.jpg](he_image/StandardShaderQuality.jpg)
 
 ## カラースペースがリニアになっていることを確認する
 

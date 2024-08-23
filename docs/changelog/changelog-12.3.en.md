@@ -12,17 +12,21 @@
   - [AvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/AvatarSettings.html)
     - Added mention on preset avatars: 4 types now available!
   - [MyAvatarSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/VketCloudSettings/MyAvatarSettings.html)
+- World Making Guide
+  - [How to convert animation from Unity assets](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ConvertAnimationFromUnityAsset.html)
 - SDKTools
   - [VKC Activity Exporter](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VKCActivityExporter.html)
 - World Editing Tips
   - [Quick Menu for adding Vket Cloud objects](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/QuickMenu.html)
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/BuildOptions.html)
+    - Added description about VketCloudSDK > Build Option settings
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/TextureImportViewer.html)
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
 　- [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/AutoTextureCompressor.html)
 - HEO Components
-  - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOProperty.html) *English version WIP
+  - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOProperty.html)
+    - August 6, 2024: Added change of function for SetProperty
 - Actions
   - Node
     - [Enable/DisableNode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Node/EnableDisableNode.html)
@@ -34,13 +38,16 @@
 - External API
   - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/JsVal.html)
 　- [Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/BrokerAPI.html)
+- [HEOCylinderCollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOCylinderCollider.html)
 
 ## Edited Pages
 
 - About VketCloudSDK
   - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
-  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/AboutVketCloudSDK/SetupSDK_external.html)
+  - [Set up your Account](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/SetupAccount.html)
+    - Added images of registering the Vket account
+  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
 - First Steps
   - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/BuildAndRun.html)
@@ -49,14 +56,25 @@
   - [World upload](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/WorldUpload.html)
     - Edited how-to on operating World Uploader
 - World Making Guide
-  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/WorldMakingGuide/Collider.html)
+  - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/UnityGuidelines.html)
+    - Added specification on total triangular polygon count in world, audio, and video files
+    - Added specification on available characters
+  - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/Collider.html)
     - Added issue causing player floating when world only has Mesh Renderer / Mesh Collider objects
+  - [PhysicsEngine](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PhysicsEngine.html)
+    - Updated descriptions and images
   - [Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/Skybox.html)
     - Added Guide for Setup using Quick Menu
+    - Updated description of HEOBackgroundTexture
   - [Reflection Probe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/ReflectionProbe.html)
     - Edited setup instructions for reflection probe
+  - [How to Animate Objects](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation.html)
+    - Added caution on allocating multiple animations when committing Export Motion
   - [How to Animate Objects - Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation_TroubleShooting.html)
     - Revised solution for error caused when meshes without uv2 is handled by MeshRenderer
+    - Added caution on allocating multiple animations when committing Export Motion
+  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/AvatarFile.html)
+    - Revised the example of bones name
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
     - Added info on Texture Size (Memory) and Mesh Polygon Count indicator
@@ -70,6 +88,8 @@
   - [Texture Compression](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldOptimization/TextureCompression.html)
     - Added overview of Texture Import Viewer
 - HEO Components
+  - [HEOPlane](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOPlane.html)
+    - Updated the default value of the component
   - [HEOActivity](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOActivity.html)
     - Added info on Scene Preview and Advanced Settings
   - [HEOAreacollider](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOAreacollider.html)
@@ -83,6 +103,9 @@
     - Added info on new Ver12.3 featuresに(hrm and glb support), updated info on component settings
   - [HEOReflectionProbe](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOReflectionProbe.html)
     - Added info on component deprecation
+  - [HEOShowFlag](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOShowFlag.html)
+  - [HEOAudio](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOAudio.html)
+    - Update information according to Ver12.3
 - Actions
   - Item
     - [Play/StopItem](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Item/PlayStopItem.html)
@@ -106,6 +129,7 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Added feature change for Player class functions within constructor
     - Added explanation for Nodes
     - Updated instructions according to Ver12.3
+    - Revised description about HeliScript
   - [Class](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_class.html)
     - Added object instantiation / deletion, detecting instants
   - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_component.html)
@@ -114,6 +138,7 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Added list of object type which can call each function
     - Added information regarding return values for IsPlay
     - Fixed description for GetPhysicsIDByNodeName
+    - Added caution for the UV origin position on using SetUVOffset
   - [Item Types and HEOComponents](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
     - Changed title（Old: Item Types and Usable Functions）
     - Deleted chart of functions usable for each HEOComponent, as latest information is now on Item class page
@@ -126,6 +151,7 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Edited loop examples, break, and continue
   - [Built-in Functions - System](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function.html)
     - Added new functions: hsIsMobile and casting functions
+    - Changed data type of hsGetCurrentWorldId from float to string.
   - [Built-in Functions - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_gui.html)
     - Edited argument of hsCanvasSetGUIPos
   - [Built-in types - Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_var.html)

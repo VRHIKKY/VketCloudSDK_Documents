@@ -96,6 +96,12 @@ After saving, the export is complete when `"Exported"` appears on the Unity cons
 !!! note
     If an error occurs, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
 
+!!! warning "warning on Export Motion"
+    When using Export Motion, if multiple animations are allocated in Animation component / Animations on exporting a hem file as the image below, it may lead to unintended animation behavior.<br>
+    When exporting an animation, be sure that the component only has **one** animation allocated at a time.
+
+    ![PropAnimation_TroubleShooting_13](./img/PropAnimation_TroubleShooting_13.jpg)
+
 ### Export .heo file (Heliodor Export Object file)
 
 ![PropAnimation_15](./img/PropAnimation_15.jpg)
@@ -136,7 +142,7 @@ By committing build at this point, you can display animated objects on the scene
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-!!! caution "Notes when exporting .heo"
+!!! warning "Notes when exporting .heo"
     - If you export the original object without setting its Position to (0,0,0), the placement position will be the [HEOObject](../HEOComponents/HEOObject.md) Position added with the Position value at the time of export. <br>
     - If the original object has collision detection enabled, the exported object will also have collision detection. <br>
     - Even if you move an object in .hem, the collision detection information of the object will not be moved. <br>
@@ -226,7 +232,7 @@ component SwitchAnimation
 
 Place the created HeliScript in the world using HEOScript.
 
-![PropAnimation_27](./img/propanimation_27.jpg)
+![PropAnimation_27](./img/PropAnimation_27.jpg)
 
 On world build, the corresponding HeliScript will run and control the animation.
 

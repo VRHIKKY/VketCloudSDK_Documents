@@ -11,7 +11,11 @@ AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvat
 | Thumbnail(English) | 言語設定が英語の際のアバターのサムネイルを設定します。<br> 設定されたサムネイルはワールド内設定画面にて使用されます。|
 
 サムネイルは、ワールド内設定画面のプリセットアバターのサムネイルとして以下のように使用されます。<br>
-また、設定画面でのアバターの表示の順番は[HEOWorldSetting > Avatar > Avatar File](../HEOComponents/HEOWorldSetting.md)にて設定された順番で表示されます。<br>
+また、設定画面でのアバターの表示の順番は[VketCloudSettings > Avatar Settings > Avatar Setting > Avatar File](../VketCloudSettings/AvatarSettings.md)にて設定された順番で表示されます。<br>
+
+!!! note "Avatar Settingsの項目について"
+    Avatar Settingsの設定項目は[Vket Cloud Settings](../VketCloudSettings/Overview.md)のSetting modeを`Advanced`へ切り替える事で、`Avatar Settings`のオブジェクトがHierarchy上に現れ、設定変更が可能になります。
+
 なお、サムネイル画像はpng形式で比率が1:1のものが使用できます。
 
 ![AvatarFile_Result](img/AvatarFile_Result.jpg)
@@ -79,4 +83,4 @@ Heo・Hep・Audioの3つの形式に対応しています。<br>
 | File | 空欄 | 使用するファイルを指定します。 |
 | Position| 0,0,0 | Targetからの相対座標を指定します。 |
 | Rotation | 0,0,0 | Targetからの相対角度を指定します。 | 
-| Target | 空欄 | Position及びRotationの基準となるボーン名を指定します。<br>ボーン名は[VRMヒューマノイド](https://vrm.dev/univrm/humanoid/humanoid_overview){target=_blank}のフォーマットに由来しており、記載する際はスネークケースにします(例： head, leftLowerLeg, leftThumbProximal...) |
+| Target | 空欄 | Position及びRotationの基準となるボーン名を指定します。<br>ボーン名は[VRMヒューマノイド](https://vrm.dev/univrm/humanoid/humanoid_overview){target=_blank}のフォーマットに由来しており、記載する際はスネークケースにします(例： head, left_lower_leg, left_thumb_proximal...)|

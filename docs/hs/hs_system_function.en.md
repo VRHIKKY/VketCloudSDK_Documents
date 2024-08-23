@@ -65,7 +65,7 @@ Refer to hsGetDate() for arguments.
 Returns the offset of local timezone and UTC timezone by minutes.
 
 ### hsGetCurrentWorldId
-`float hsGetCurrentWorldId()`
+`string hsGetCurrentWorldId()`
 
 Returns the current world ID.
 
