@@ -20,11 +20,9 @@
   - [Vket Cloudオブジェクト追加のためのクイックメニュー](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldEditingTips/QuickMenu.html)
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldEditingTips/BuildOptions.html)
 - SDKTools
-  - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/TextureImportViewer.html)
-  - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/VketCloudSDKSettings.html)
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/TextureImportViewer.html)
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/VketCloudSDKSettings.html)
-  - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/ja/SDKTools/AutoTextureCompressor.html)
+  - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/AutoTextureCompressor.html)
 - HEOコンポーネント
   - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOProperty.html)
     - 2024年8月6日： SDK 12.x以降のSetPropertyの挙動変更について追記
