@@ -5,9 +5,11 @@
 ## August 23 2024 - Edited Pages
 
 - VKC Component
+    - VKC Setting
+        - [VKC Setting Spawn](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingSpawn.html)
+            - Updated descriptions and images
     - VKC Item
         - [VKC Item Area Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemAreaCollider.html)
-            - Updated descriptions and images
 
 ---
 
