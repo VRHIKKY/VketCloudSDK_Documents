@@ -2,12 +2,31 @@
 
 ## 2024年8月23日更新
 
-## 2024年8月23日 - 変更されたページ
+## 2024年8月23日 - 追加されたページ
 
+- リリースノート
+    - [v13.7](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/ja/releasenote/releasenote-13.7.html)
+        - v13.7のリリースノートの新しいページを追加
 - HeliScript
+    - 組み込みクラス・関数
+        - [HSMessageクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_hsmessage.html)
     - 組み込み関数
         - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_commondialog.html)
             - 表記をhsSystemOutputに統一
+
+## 2024年8月23日 - 変更されたページ
+
+
+- VKC Component
+    - VKC Setting
+        - [VKC Setting Spawn](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingSpawn.html)
+            - 説明文および画像を更新
+    - VKC Item
+        - [VKC Item Area Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAreaCollider.html)
+            - 説明文および画像を更新
+        - [VKC Item Spot](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemSpot.html)
+            - 説明文および画像を更新
+
 ---
 
 ## 2024年8月16日更新
