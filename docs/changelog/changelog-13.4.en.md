@@ -7,6 +7,16 @@
 - Release Note
   - [v13.7](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/releasenote/releasenote-13.7.html)
     - Added new page for v13.7 release note 
+- HeliScript
+    - Built-in Classes And Functions
+        - [HSMessage Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_hsmessage.html)
+
+## August 23 2024 - Edited Pages
+
+- VKC Component
+    - VKC Setting
+        - [VKC Setting Spawn](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingSpawn.html)
+            - Updated descriptions and images
 
 ---
 
