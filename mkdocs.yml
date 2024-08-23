@@ -316,6 +316,7 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
+    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - GUITools: 
       - Overview & Setup: GUITools/Setup.md
       - How to Use: GUITools/HowToUse.md
