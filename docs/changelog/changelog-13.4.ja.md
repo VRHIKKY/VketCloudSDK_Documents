@@ -10,6 +10,9 @@
 - HeliScript
     - 組み込みクラス・関数
         - [HSMessageクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_hsmessage.html)
+    - 組み込み関数
+        - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_commondialog.html)
+            - 表記をhsSystemOutputに統一
 
 ## 2024年8月23日 - 変更されたページ
 

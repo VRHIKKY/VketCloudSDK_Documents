@@ -2,11 +2,6 @@
 
 ## August 23 2024 Update
 
-## August 23 2024 - Edited Pages
-
-- VKC Component
-    
-
 ## August 23 2024 - Added Pages
 
 - Release Note
@@ -15,6 +10,9 @@
 - HeliScript
     - Built-in Classes And Functions
         - [HSMessage Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_hsmessage.html)
+    - Built-in Functions
+        - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function_commondialog.html)
+            - Changed Expression Into "hsSystemOutput"
 
 ## August 23 2024 - Edited Pages
 
