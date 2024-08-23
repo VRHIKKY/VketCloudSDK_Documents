@@ -2,15 +2,14 @@
 
 ## 概要
 
-Auto Texture Compressorとは、
-
-!!! caution "ビルド時の圧縮について"
+Auto Texture Compressorとは、ワールド内のテクスチャをツールによって圧縮して保存するためのツールです。
 
 ## 事前準備
 
 1. 本ツールを使用するには、以下の外部ツールをインストールする必要があります。
 
-    - [PVRTexTool](https://developer.imaginationtech.com/pvrtextool/){_target=blank}
+    - [PVRTexTool](https://developer.imaginationtech.com/pvrtextool/){target=_blank}
+    - [Textconv](https://github.com/microsoft/DirectXTex){target=_blank}
 
     インストール後、`PVRTexTool\CLI\Windows_x86_64\PVRTexToolCLI.exe`が格納されているフォルダのPATHを通しておきます。（本項では手順について省略いたします。）
 
@@ -31,19 +30,19 @@ Auto Texture Compressorは、メニューバーにて**VketCloudSDK --> Tools --
 | 英語 | 日本語 | 説明 |
 |----|----|----|
 | Target Files | 対象ファイル | テクスチャ圧縮の対象となっているファイルのリストが表示されます |
-| Checkbox (unchecked) | チェックボックス（無効） | チェックボックスを無効にすると、HEOSameTexOptimizerを使わずに1つのHEOファイルだけを圧縮する |
-| Group Name | グループ名 | HEOSameTexOptimizerが自らの処理を終えた途端、どのフォルダ名で新しいフォルダーを作って新ファイルを入れるのか決定する |
-| Export Path | 出力パス | HEOSameTexOptimizerがどこで新しいフォルダを作成すべきか設定する |
+| Checkbox (unchecked) | チェックボックス（無効） | チェックボックスを無効にすると、HEOSameTexOptimizerを使わずに1つのHEOファイルだけを圧縮します |
+| Group Name | グループ名 | HEOSameTexOptimizerが自らの処理を終えた途端、どのフォルダ名で新しいフォルダーを作って新ファイルを入れるのか決定します |
+| Export Path | 出力パス | HEOSameTexOptimizerがどこで新しいフォルダを作成すべきか設定します |
 | Files In Group | グループ内容 | このグループに入っているファイルリストにファイルを追加したり削除したりすることができる |
-| File Checkbox (checked) | チェックボックス（有効） | チェックボックスを有効にすると、複数のHEOFieldをグループで纏めてHEOSameTexOptimizerで最適化することになる |
+| File Checkbox (checked) | チェックボックス（有効） | チェックボックスを有効にすると、複数のHEOFieldをグループで纏めてHEOSameTexOptimizerで最適化することになります |
 | Auto Add Fields | 自動フィールド追加 | 【任意のオプション】現在開かれているシーンにて[HEOField](../HEOComponents/HEOField.md)が追加された場合、自動的にこのツールのウィンドウに追加できます |
-| Remove Existing Fields | 既存フィールド削除 | このチェックボックスを有効にすると、自動的にフィールドを追加する場合、その前に書いてあったフィールドの全部が削除され、ゼロから新しく見つけたHEOFieldが追加される |
+| Remove Existing Fields | 既存フィールド削除 | このチェックボックスを有効にすると、自動的にフィールドを追加する場合、その前に書いてあったフィールドの全部が削除され、ゼロから新しく見つけたHEOFieldが追加されます |
 | Proceed | 進む | 自動フィールド追加機能を起動するボタン |
 | Start | スタート | テクスチャ圧縮を開始します |
 
 ## 使用例
 
-その上に添付されたキャプチャー通りに設定して起動してみたら、以下の処理が行われる：
+機能説明の参考画像のように設定を行い、ツールを起動すると以下の処理が行われます：
 
 1. `World.heo`の圧縮用`.bat`ファイルが起動される
 
@@ -63,7 +62,7 @@ Auto Texture Compressorは、メニューバーにて**VketCloudSDK --> Tools --
 
 ### 自動フィールド追加について
 
-自動フィールド追加は、  既存フィールド削除というチェックボックスが無効になっている場合、重複せずにまだ入っていないファイルだけを追加する
+自動フィールド追加は、「Remove Existing Fields / 既存フィールド削除」というチェックボックスが無効になっている場合、重複せずにまだ入っていないファイルだけを追加します
 
 Proceed / 進むボタンを押さなくても、以下の場合には自動フィールド追加が行われます：
 
@@ -73,4 +72,4 @@ Proceed / 進むボタンを押さなくても、以下の場合には自動フ�
 
 ### Auto Texture Compressorに関する注意
 
-- 実際に存在するHEOファイルが1つでも選択されていない場合、スタートボタンが無効になって、押せなくなる
+- 実際に存在するHEOファイルが1つでも選択されていない場合、スタートボタンが無効になって押せなくなります。必ずひとつは選択するようにご注意ください。
