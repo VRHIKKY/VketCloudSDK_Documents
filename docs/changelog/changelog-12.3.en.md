@@ -155,6 +155,8 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Edited argument of hsCanvasSetGUIPos
   - [Built-in types - Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_var.html)
     - Added ToString function
+  - [Built-in types - Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_var_commondialog.html)
+    - Changed an expression into "hsSystemOutput"
   - [Operator](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_operator.html)
     - Added strict equality and strict inequality operators
 - Trouble Shooting

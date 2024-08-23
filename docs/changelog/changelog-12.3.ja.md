@@ -161,6 +161,8 @@ Ver12.xにて追加されたHeliScriptへの変更を追記：
     - hsGetCurrentWorldIdのデータタイプをfloatからstringに変更
   - [組み込み関数 - GUI](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/hs/hs_system_function_gui.html)
     - hsCanvasSetGUIPosの引数を変更
+  - [組み込み関数 - 汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/hs/hs_system_function_commondialog.html)
+    - 表記をhsSystemOutputに統一
   - [組み込み型](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/hs/hs_var.html)
     - ToString関数を追記
   - [演算子](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/hs/hs_operator.html)
