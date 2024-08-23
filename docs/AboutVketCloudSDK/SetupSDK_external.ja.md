@@ -63,6 +63,10 @@ Unityに以下のインストールウィザード画面とメニュー表示が
 
 ![SetupSDK_External](img/SetupSDK_External_08.jpg)
 
+プロジェクトパスにスペースもしくは２バイト文字が入っている場合は、起動時に以下警告が表示されます。
+
+![SetupSDK_External](img/SetupSDK_External_28.jpg)
+
 ## Step 4. インストールウィザードを使用してSDKをインストールする
 
 新規にSDKをインストールする際はSDKインストールウィザードを使用します。
@@ -79,9 +83,16 @@ Unityに以下のインストールウィザード画面とメニュー表示が
 
 ![SetupSDK_External](img/SetupSDK_External_09.jpg)
 
-3\. VketCloud SDKの初期設定をガイドする画面です。4つの設定を完了させてください。
+3\. VketCloud SDKの初期設定をガイドする画面です。
+
+Unity 2019の場合、4つの設定を完了させてください。
 
 ![SetupSDK_External](img/SetupSDK_External_10.jpg)
+
+Unity 2022の場合、３つの設定を完了させてください。
+* SDK13.7以降、Unity 2019とUnity 2022の両方に対応しております。
+
+![SetupSDK_External](img/SetupSDK_External_27.jpg)
 
 ### Standard Shader設定の変更
 
@@ -115,7 +126,11 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 ![SetupSDK_External](img/SetupSDK_External_15.jpg)
 
-### API Compatibility Level (API互換性レベル)の変更
+### API Compatibility Level (API互換性レベル)の変更 (Unity 2019.4のみ)
+
+!!! caution "API Compatibility Levelの変更について"
+    Unity 2022以降はAPI Compatibility Levelの変更は不要です。
+    SDK13.7以降、Unity 2019とUnity 2022の両方に対応しております。
 
 最後に「Other Settings」にある、「Api Compatibility Level」の項目をプルダウンメニューから「.NET 4.x」に変更してください。
 
