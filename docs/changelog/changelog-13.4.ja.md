@@ -13,13 +13,17 @@
 
 ## 2024年8月23日 - 変更されたページ
 
+
 - VKC Component
     - VKC Setting
         - [VKC Setting Spawn](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingSpawn.html)
             - 説明文および画像を更新
     - VKC Item
+        - [VKC Item Area Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAreaCollider.html)
+            - 説明文および画像を更新
         - [VKC Item Spot](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemSpot.html)
             - 説明文および画像を更新
+
 ---
 
 ## 2024年8月16日更新
