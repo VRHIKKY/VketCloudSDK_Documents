@@ -2562,6 +2562,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#about-collision-area-range-detection-by-collider" class="md-nav__link">
     <span class="md-ellipsis">
       About collision / area range detection by collider
@@ -5341,6 +5350,8 @@
       
         
       
+        
+      
     
     
     
@@ -5486,6 +5497,27 @@
   
   <span class="md-ellipsis">
     Date Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_class_hsmessage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HSMessage Class
   </span>
   
 
@@ -6136,6 +6168,8 @@
       
         
       
+        
+      
     
     
     
@@ -6163,6 +6197,27 @@
             v13.x
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-13.7.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v13.7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -9454,6 +9509,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#about-collision-area-range-detection-by-collider" class="md-nav__link">
     <span class="md-ellipsis">
       About collision / area range detection by collider
@@ -9478,15 +9542,15 @@
 
 
 <h1 id="vkc-item-area-collider">VKC Item Area Collider</h1>
-<p><img alt="HEOAreaCollider" src="../../VKCComponents/img/HEOAreaCollider.jpg" /></p>
+<p><img alt="VKC Item Area Collider" src="../../VKCComponents/img/VKCItemAreaCollider_01.jpg" /></p>
 <p>VKC Item Area Collider is a component for introducing actions to objects. <br>
 It executes the specified actions when a player enters the collider.</p>
 <p>To attach VKC Item Area Collider, <a href="VKCNodeCollider.html">VKC Node Collider</a> and Collider must be attached to the object.<br>
 On attaching a VKC Item Area Collider component to an object, the <a href="VKCNodeCollider.html">VKC Node Collider</a> and Box Collider will be added.<br>
 The <a href="VKCNodeCollider.html">VKC Node Collider</a> type must be set to Area.</p>
-<p><img alt="VKC Node Collider" src="../../VKCComponents/img/HEOCollider_1.jpg" /></p>
-<p>In each of Actions and LeaveActions, you can set any action by clicking Add. <br>
-You can remove the last action by clicking Delete.</p>
+<p><img alt="VKC Node Collider" src="../../VKCComponents/img/VKCItemAreaCollider_02.jpg" /></p>
+<p>In each of <code>Actions on Enter</code> and <code>Actions on Leave</code>, you can set any action by clicking Add(+). <br>
+You can remove the last action by clicking Delete(-).</p>
 <table>
 <thead>
 <tr>
@@ -9496,21 +9560,63 @@ You can remove the last action by clicking Delete.</p>
 </thead>
 <tbody>
 <tr>
-<td>Actions</td>
+<td>Actions on Enter</td>
 <td>Set the action when entering the area.</td>
 </tr>
 <tr>
-<td>LeaveActions</td>
+<td>Actions on Leave</td>
 <td>Sets the action when leaving the area.</td>
 </tr>
 </tbody>
 </table>
 <p>For actions, see <a href="../Actions/ActionsOverview.html">Actions Overview</a>. <br>
 For colliders, see <a href="../WorldMakingGuide/UnityGuidelines.html">Unity Production Guidelines - Colliders</a>.</p>
+<h2 id="advanced-options">Advanced Options</h2>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Default</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show</td>
+<td>True</td>
+<td>This option does not work with the VKC Item Area Collider.</td>
+</tr>
+<tr>
+<td>Clickable</td>
+<td>False</td>
+<td>This option does not work with the VKC Item Area Collider.</td>
+</tr>
+<tr>
+<td>Auto Loading</td>
+<td>True</td>
+<td>Toggles dynamic loading on/off.</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>Allows changing the rendering priority of the item in the world.</td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>True</td>
+<td>This option does not work with the VKC Item Area Collider.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="about-collision-area-range-detection-by-collider">About collision / area range detection by collider</h2>
-<p>The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
-Collision visualization can be toggled by enabling the <a href="../WorldEditingTips/DebugMode.html#f3-display-collision">debug mode</a> on <a href="../VketCloudSettings/BasicSettings.html">VketCloudSettings / BasicSettings</a> and pressing F3.</p>
-<p><img alt="VKCNodeCollider_2" src="../../VKCComponents/img/HEOCollider_2.jpg" /></p>
+<p>The collision / area range detection by collider will be done by obtaining the player's origin point as the very bottom orange sphere of the image shown below.<br></p>
+<p>Collision visualization can be toggled by enabling the <a href="../WorldEditingTips/DebugMode.html#f3-display-collision">debug mode</a> on <a href="../VketCloudSettings/BasicSettings.html">VketCloudSettings / BasicSettings</a> and pressing F3.</p>
+<p><img alt="VKC Node Collider" src="../../VKCComponents/img/VKCItemAreaCollider_03.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">If the collider is not working</p>
+<p>If the collider is floating even slightly above the ground, collision detection at the player's feet (origin point) will not function.<br>
+If the collider is not working, please check whether the collider is floating above the ground.</p>
+</div>
 
 
 

@@ -2564,6 +2564,15 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      詳細設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
       コライダーの衝突 / エリア範囲判定について
     </span>
   </a>
@@ -5341,6 +5350,8 @@
       
         
       
+        
+      
     
     
     
@@ -5486,6 +5497,27 @@
   
   <span class="md-ellipsis">
     Dateクラス
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_class_hsmessage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HSMessageクラス
   </span>
   
 
@@ -6136,6 +6168,8 @@
       
         
       
+        
+      
     
     
     
@@ -6163,6 +6197,27 @@
             v13.x
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-13.7.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v13.7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -9456,6 +9511,15 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
+      詳細設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
       コライダーの衝突 / エリア範囲判定について
     </span>
   </a>
@@ -9478,39 +9542,81 @@
 
 
 <h1 id="vkc-item-area-collider">VKC Item Area Collider</h1>
-<p><img alt="HEOAreaCollider" src="img/HEOAreaCollider.jpg" /></p>
+<p><img alt="VKC Item Area Collider" src="img/VKCItemAreaCollider_01.jpg" /></p>
 <p>VKC Item Area Colliderは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
 コライダーにプレイヤーが進入した際にアクションを実行します。</p>
 <p>VKC Item Area Colliderをアタッチするオブジェクトには<a href="VKCNodeCollider.html">VKC Node Collider</a>とColliderがアタッチされている必要があります。<br>
 なお、VKC Item Area Colliderをオブジェクトにアタッチすると<a href="VKCNodeCollider.html">VKC Node Collider</a>とBox Colliderが自動で追加されます。<br>
 <a href="VKCNodeCollider.html">VKC Node Collider</a>のtypeはAreaに設定されている必要があります。</p>
-<p><img alt="VKC Node Collider" src="img/HEOCollider_1.jpg" /></p>
-<p>Actions,LeaveActionsそれぞれにおいてAddをクリックすることで任意のアクションを設定できます。<br>
-反対に、Deleteをクリックすることで最後尾のアクションを削除できます。</p>
+<p><img alt="VKC Node Collider" src="img/VKCItemAreaCollider_02.jpg" /></p>
+<p><code>Actions on Enter</code>, <code>Actions on Leave</code>それぞれにおいてAdd(+ボタン)をクリックすることで任意のアクションを設定できます。<br>
+反対に、Delete(-ボタン)をクリックすることで最後尾のアクションを削除できます。</p>
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>function</th>
+<th>名称</th>
+<th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Actions</td>
+<td>Actions on Enter</td>
 <td>エリア進入時のアクションを設定します。</td>
 </tr>
 <tr>
-<td>LeaveActions</td>
+<td>Actions on Leave</td>
 <td>エリア退出時のアクションを設定します。</td>
 </tr>
 </tbody>
 </table>
 <p>アクションについては<a href="../Actions/ActionsOverview.html">アクションの概要</a>を参照してください。<br>
 コライダーについては<a href="../WorldMakingGuide/UnityGuidelines.html">Unity制作ガイドライン - コライダー</a>を参照してください。</p>
-<h2 id="_1">コライダーの衝突 / エリア範囲判定について</h2>
-<p>ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>
+<h2 id="_1">詳細設定</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show</td>
+<td>True</td>
+<td>VKC Item Area Colliderでは動作しません。</td>
+</tr>
+<tr>
+<td>Clickable</td>
+<td>False</td>
+<td>VKC Item Area Colliderでは動作しません。</td>
+</tr>
+<tr>
+<td>Auto Loading</td>
+<td>True</td>
+<td>動的ローディングの有効/無効を切り替えます。</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>ワールド内のItemの描画優先度を変更できます。</td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>True</td>
+<td>VKC Item Area Colliderでは動作しません。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">コライダーの衝突 / エリア範囲判定について</h2>
+<p>ワールド内でのコライダーの衝突 / エリア範囲判定は、画像のオレンジ級の一番下の地点、プレイヤーの足元の原点位置にて判定されます。<br>
 また、以下のようなコリジョンの可視化は<a href="../VketCloudSettings/BasicSettings.html">VketCloudSettings / BasicSettings</a>から<a href="../WorldEditingTips/DebugMode.html#f3">デバッグモード</a>を有効にした上でF3キーを押すと切り替えできます。</p>
-<p><img alt="VKCNodeCollider_2" src="img/HEOCollider_2.jpg" /></p>
+<p><img alt="VKCNodeCollider_2" src="img/VKCItemAreaCollider_03.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">コライダーが動作しない場合</p>
+<p>コライダーが地面から少しでも浮いている場合、プレイヤーの足元(原点)にて判定される衝突が動作しません。<br>
+もしコライダーが動作しない場合、地面からコライダーが浮いていないかを確認してください。</p>
+</div>
 
 
 
