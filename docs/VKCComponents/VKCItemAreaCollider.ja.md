@@ -14,7 +14,7 @@ VKC Item Area Colliderをアタッチするオブジェクトには[VKC Node Col
 `Actions on Enter`, `Actions on Leave`それぞれにおいてAdd(+ボタン)をクリックすることで任意のアクションを設定できます。<br>
 反対に、Delete(-ボタン)をクリックすることで最後尾のアクションを削除できます。
 
-|  Label |  function  |
+|  名称 |  機能  |
 | ----   | ---- |
 | Actions on Enter | エリア進入時のアクションを設定します。 |
 | Actions on Leave | エリア退出時のアクションを設定します。 |
