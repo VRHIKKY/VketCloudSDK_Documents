@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 23 2024 Update
+
+## August 23 2024 - Edited Pages
+
+- VKC Component
+    - VKC Item
+        - [VKC Item Spot](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemSpot.html)
+            - Updated descriptions and images
+
+---
+
 ## August 16 2024 Update
 
 ## August 16 2024 - Edited Pages
