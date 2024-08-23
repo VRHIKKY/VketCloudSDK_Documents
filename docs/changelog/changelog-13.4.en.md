@@ -2,6 +2,11 @@
 
 ## August 23 2024 Update
 
+## August 23 2024 - Edited Pages
+
+- VKC Component
+    
+
 ## August 23 2024 - Added Pages
 
 - Release Note
@@ -16,6 +21,9 @@
 - VKC Component
     - VKC Setting
         - [VKC Setting Spawn](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingSpawn.html)
+            - Updated descriptions and images
+    - VKC Item
+        - [VKC Item Spot](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemSpot.html)
             - Updated descriptions and images
 
 ---

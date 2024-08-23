@@ -17,7 +17,9 @@
     - VKC Setting
         - [VKC Setting Spawn](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingSpawn.html)
             - 説明文および画像を更新
-
+    - VKC Item
+        - [VKC Item Spot](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemSpot.html)
+            - 説明文および画像を更新
 ---
 
 ## 2024年8月16日更新
