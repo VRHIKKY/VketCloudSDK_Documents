@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 23 2024 Update
+
+## August 23 2024 - Edited Pages
+
+- HeliScript
+  - Built-in Functions
+    - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function_commondialog.html)
+      - Changed Expression Into "hsSystemOutput"
+
+---
+
 ## August 16 2024 Update
 
 ## August 16 2024 - Edited Pages
