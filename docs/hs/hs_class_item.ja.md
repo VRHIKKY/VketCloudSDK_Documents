@@ -406,7 +406,8 @@ Item がロード中の場合は true を、そうでない場合は false を�
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
-    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item AreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -424,6 +425,7 @@ Item のロードが完了していた場合は true を、そうでない場合
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
