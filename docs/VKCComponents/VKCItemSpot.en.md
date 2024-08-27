@@ -6,6 +6,19 @@ VKC Item Spot enables changing the player's initial spawn position by URL parame
 
 To change the normal initial spawn position, set via the [HEOPlayer](HEOPlayer.md).
 
+|  Label |  Function  |
+| ----   | ---- |
+| Show | Does not work with VKC Item Spot. |
+
+## Advanced Options
+
+| Name | Default | Description |
+| ---- | ---- | ---- |
+| Auto Loading | True | Enable/Disable dynamic loading. |
+| Clickable | False | Does not work with VKC Item Spot. |
+| Show Photo Mode | True | Does not work with VKC Item Spot. |
+| Item Render Priority | 0 | Change the rendering priority of items in the world. |
+
 ## How to use VKC Item Spot
 
 Create a new GameObject, add the VKC Item Spot component and rename the GameObject in a form of `Spot{x}` such as `Spot1`, `Spot2`.
