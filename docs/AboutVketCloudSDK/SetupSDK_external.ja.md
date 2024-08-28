@@ -63,7 +63,7 @@ Unityに以下のインストールウィザード画面とメニュー表示が
 
 ![SetupSDK_External](img/SetupSDK_External_08.jpg)
 
-プロジェクトパスにスペースもしくは２バイト文字が入っている場合は、起動時に以下警告が表示されます。
+プロジェクトパスにスペースもしくは2バイト文字が入っている場合は、起動時に以下警告が表示されます。
 
 ![SetupSDK_External](img/SetupSDK_External_28.jpg)
 
@@ -153,7 +153,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 ![SetupSDK_External](img/SetupSDK_External_19.jpg)
 
-7\.　およそ２～５分待つと、インストールが完了して以下の画面が表示されます。この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。
+7\.　およそ2～5分待つと、インストールが完了して以下の画面が表示されます。この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。
 
 ![SetupSDK_External](img/SetupSDK_External_20.jpg)
 
