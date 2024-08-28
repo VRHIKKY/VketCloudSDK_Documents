@@ -89,7 +89,7 @@ Unity 2019の場合、4つの設定を完了させてください。
 
 ![SetupSDK_External](img/SetupSDK_External_10.jpg)
 
-Unity 2022の場合、３つの設定を完了させてください。
+Unity 2022の場合、3つの設定を完了させてください。
 * SDK13.7以降、Unity 2019とUnity 2022の両方に対応しております。
 
 ![SetupSDK_External](img/SetupSDK_External_27.jpg)
