@@ -52,4 +52,4 @@ For more information on pricing plans, please check [here](https://cloud.vket.co
 
 5. Finally, perform **Build And Run** or **Upload**.
 
-This completes the procedure for setting up the JS upload feature in SDK 13.1.
+This completes the procedure for setting up the JS upload feature in SDK 13.7.
