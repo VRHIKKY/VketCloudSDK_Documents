@@ -2,7 +2,7 @@
 
 ## Purpose
 
-By uploading JavaScript, you can execute JavaScript within your world. For example, using JS, you can integrate with external APIs (such as weather information, news, SNS feeds) and display real-time information in VR.
+By uploading JavaScript (aka JS), you can execute JavaScript within your world. For example, using JS, you can integrate with external APIs (such as weather information, news, SNS feeds) and display real-time information in VR.
 
 Other use cases include:
 
