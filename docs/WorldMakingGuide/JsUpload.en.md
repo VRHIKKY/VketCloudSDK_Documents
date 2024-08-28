@@ -53,7 +53,3 @@ For more information on pricing plans, please check [here](https://cloud.vket.co
 5. Finally, perform **Build And Run** or **Upload**.
 
 This completes the procedure for setting up the JS upload feature in SDK 13.1.
-
---- 
-
-This should accurately convey the information from the original Japanese text in English while maintaining the Markdown format.
