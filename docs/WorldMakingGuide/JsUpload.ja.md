@@ -28,7 +28,7 @@ JavaScriptをアップロードすることで、ワールド内でJavaScriptを
 - ビジネスプラスプラン
 - エンタープライズプラン
 
-料金プランについて知りたい際は、[こちら](https://cloud.vket.com/plan)をご確認ください。
+料金プランについて知りたい際は、[こちら](https://cloud.vket.com/plan){target=_blank}をご確認ください。
 
 
 ## JS入稿手順

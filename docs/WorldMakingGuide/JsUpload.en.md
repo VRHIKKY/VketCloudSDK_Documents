@@ -27,7 +27,7 @@ Users subscribed to the following paid plans can enable the JS upload feature in
 - Business Plus Plan
 - Enterprise Plan
 
-For more information on pricing plans, please check [here](https://cloud.vket.com/plan).
+For more information on pricing plans, please check [here](https://cloud.vket.com/plan){target=_blank}.
 
 ## JS Submission Procedure
 
