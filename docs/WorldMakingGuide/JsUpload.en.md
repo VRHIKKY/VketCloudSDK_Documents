@@ -1,4 +1,4 @@
-# Enabling JS Upload Feature in SDK 13.1 (Paid Plans Only, SDK 13.7 and Later)
+# Enabling JS Upload Feature in SDK 13.7 (Paid Plans Only, SDK 13.7 and Later)
 
 ## Purpose
 
