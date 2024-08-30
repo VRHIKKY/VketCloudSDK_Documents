@@ -1,5 +1,17 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月30日更新
+
+## 2024年8月30日 - 変更されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+          - Itemクラスの説明を更新
+          - hsItemGetの関数の説明を更新
+
+---
+
 ## 2024年8月9日更新
 
 ## 2024年8月9日 - 変更されたページ
