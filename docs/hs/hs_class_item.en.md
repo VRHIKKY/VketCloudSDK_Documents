@@ -1,11 +1,12 @@
 # Item class
 
 On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
-For example, objects defined as items are [VKCItemField](../VKCComponents/VKCItemField.md), [VKCItemObject](../VKCComponents/VKCItemObject.md), [VKCItemPlane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md), and other objects.
 
-The Item class is for handling such Items, and "Nodes" which are child objects of [VKCItemField](../VKCComponents/VKCItemField.md) on HeliScript.
+Items can be output to the scene by placing and configuring game objects with components added by VketCloudSDK, such as VKC Item Field and VKC Item Object.
 
-An Item class object is obtainable by specifying the item name with hsItemGet() or running hsItemGetSelf().
+The Item class is used to manipulate the above-mentioned Item in HeliScript.
+
+You can retrieve an instance of the Item class by calling functions such as hsItemGet().
 
 Item class has various methods to operate the obtained Item object.
 
@@ -30,7 +31,7 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-Global function. Obtains the Item located under [VKCItemField](../VKCComponents/VKCItemField.md) and returns it as an Item instance.
+Global Function. Gets an Item by the specified name.
 
 ### hsItemGetSelf
 
