@@ -1,4 +1,4 @@
-# HSGUIModel - Summary
+# Built-in functions - HSGUIModel
 
 Details about the `HSGUIModel` class used for GUI elements.
 

@@ -1,5 +1,5 @@
 
-# Built-in types
+# Basic Types
 
 ## Kinds of built-in types
 

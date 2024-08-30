@@ -1,5 +1,5 @@
 
-# Control structure
+# Control Statement
 
 Describes control constructs such as conditional branching and repetition.
 

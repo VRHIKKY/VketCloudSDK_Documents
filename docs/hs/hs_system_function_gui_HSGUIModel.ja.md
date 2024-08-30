@@ -1,4 +1,4 @@
-# HSGUIModel - Summary
+# 組み込み関数 - HSGUIModel
 
 GUI要素のHSGUIModelクラス詳細
 
