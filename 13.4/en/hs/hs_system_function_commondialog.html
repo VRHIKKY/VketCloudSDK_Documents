@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#-" class="md-skip">
+        <a href="#built-in-functions-common-dialog" class="md-skip">
           Skip to content
         </a>
       
@@ -1335,6 +1335,8 @@
       
         
       
+        
+      
     
     
     
@@ -1672,6 +1674,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../SDKTools/AutoTextureCompressor.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Texture Compressor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1688,10 +1711,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" >
         
           
-          <label class="md-nav__link" for="__nav_7_11" id="__nav_7_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1702,8 +1725,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12">
             <span class="md-nav__icon md-icon"></span>
             GUITools
           </label>
@@ -9841,118 +9864,119 @@
                   
 
 
-<h1 id="-">組み込み関数 - 汎用ダイアログ</h1>
-<p>汎用ダイアログを操作するユーティリティー関数。</p>
-<p>汎用ダイアログには、タイトルあり/なし・OKボタン１つ/YesNoボタン２つ・ボタン長短の組み合わせ計８種類が使用出来ます。</p>
+<h1 id="built-in-functions-common-dialog">Built-in Functions - Common Dialog</h1>
+<p>Utility functions to manage common dialogs.</p>
+<p>Common dialogs can have various combinations of titles, buttons (OK/Yes/No), and button lengths, resulting in eight possible configurations.</p>
 <hr />
 <h2 id="list-of-functions">List of Functions</h2>
 <h3 id="hscommondialogisopened">hsCommonDialogIsOpened</h3>
 <p><code>bool hsCommonDialogIsOpened()</code></p>
-<p>汎用ダイアログが既に開かれているか確認します。開かれていればtrueが返ります。汎用ダイアログは１つしか開くことが出来ないため、他のHeliScriptのコードから開かれている場合があり、その場合は開かないようにして下さい。</p>
+<p>Checks if a common dialog is already open. Returns <code>true</code> if a dialog is open. Only one common dialog can be open at a time, so ensure that no other HeliScript code has opened a dialog before attempting to open a new one.</p>
 <h3 id="hscommondialogsetusetitle">hsCommonDialogSetUseTitle</h3>
 <p><code>void hsCommonDialogSetUseTitle(bool Use)</code></p>
-<p>タイトルを使用するかの設定をおこないます。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets whether to use a title. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsetuseyesnobutton">hsCommonDialogSetUseYesNoButton</h3>
 <p><code>void hsCommonDialogSetUseYesNoButton(bool Use)</code></p>
-<p>Yes/Noボタンを使用するかの設定をおこないます。使用しない場合はOKボタンのみになります。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets whether to use Yes/No buttons. If not used, only the OK button will be available. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsetuselongbutton">hsCommonDialogSetUseLongButton</h3>
 <p><code>void hsCommonDialogSetUseLongButton(bool Use)</code></p>
-<p>長いボタンを使用するかの設定をおこないます。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets whether to use long buttons. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsettitle">hsCommonDialogSetTitle</h3>
 <p><code>void hsCommonDialogSetTitle(string Text)</code></p>
-<p>タイトルの文字列を設定します。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets the title text. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsettext">hsCommonDialogSetText</h3>
 <p><code>void hsCommonDialogSetText(string Text)</code></p>
-<p>本文のテキストを設定します。改行をおこないたい場合は文字列中に"\n"を記述します。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets the main body text. To include line breaks, use <code>\n</code> within the string. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsettextalignment">hsCommonDialogSetTextAlignment</h3>
 <p><code>void hsCommonDialogSetTextAlignment(int Alignment)</code></p>
-<p>本文テキストのアライメントを指定します。指定する定義値は以下の表の左側になります。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Specifies the text alignment for the main body text. Use the values from the table below. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <table>
 <thead>
 <tr>
-<th>定義値</th>
-<th>アライメント</th>
+<th>Value</th>
+<th>Alignment</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>HSAlignLT</td>
-<td>左上</td>
+<td>Top Left</td>
 </tr>
 <tr>
 <td>HSAlignCT</td>
-<td>中上</td>
+<td>Top Center</td>
 </tr>
 <tr>
 <td>HSAlignRT</td>
-<td>右上</td>
+<td>Top Right</td>
 </tr>
 <tr>
 <td>HSAlignLM</td>
-<td>左中</td>
+<td>Middle Left</td>
 </tr>
 <tr>
 <td>HSAlignCM</td>
-<td>中中</td>
+<td>Middle Center</td>
 </tr>
 <tr>
 <td>HSAlignRM</td>
-<td>右中</td>
+<td>Middle Right</td>
 </tr>
 <tr>
 <td>HSAlignLB</td>
-<td>左下</td>
+<td>Bottom Left</td>
 </tr>
 <tr>
 <td>HSAlignCB</td>
-<td>中下</td>
+<td>Bottom Center</td>
 </tr>
 <tr>
 <td>HSAlignRB</td>
-<td>右下</td>
+<td>Bottom Right</td>
 </tr>
 </tbody>
 </table>
 <h3 id="hscommondialogsettextoverflowwrap">hsCommonDialogSetTextOverflowWrap</h3>
 <p><code>void hsCommonDialogSetTextOverflowWrap(bool OverflowWrap)</code></p>
-<p>自動改行するかどうかを設定します。</p>
+<p>Sets whether to automatically wrap text.</p>
 <h3 id="hscommondialogsettexturlclickable">hsCommonDialogSetTextURLClickable</h3>
 <p><code>void hsCommonDialogSetTextURLClickable(bool URLClickable)</code></p>
-<p>URLクリック可能かどうかを設定します。</p>
+<p>Sets whether URLs in the text are clickable.</p>
 <h3 id="hscommondialogsetokbuttontext">hsCommonDialogSetOKButtonText</h3>
 <p><code>void hsCommonDialogSetOKButtonText(string Text)</code></p>
-<p>OKボタンのテキストを設定します。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets the text for the OK button. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsetyesbuttontext">hsCommonDialogSetYesButtonText</h3>
 <p><code>void hsCommonDialogSetYesButtonText(string Text)</code></p>
-<p>Yesボタンのテキストを設定します。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets the text for the Yes button. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsetnobuttontext">hsCommonDialogSetNoButtonText</h3>
 <p><code>void hsCommonDialogSetNoButtonText(string Text)</code></p>
-<p>Noボタンのテキストを設定します。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets the text for the No button. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsetokbuttondelegate">hsCommonDialogSetOKButtonDelegate</h3>
 <p><code>void hsCommonDialogSetOKButtonDelegate(hsDGCommonDialog dg)</code></p>
-<p>OKボタンがクリックされたときのdelegate関数を設定します。delegateの型はvoid func(void)です。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
-<div class="codehilite"><pre><span></span><code>hsCommonDialogSetOKButtonDelegate(OnDialogOK);
+<p>Sets the delegate function for the OK button click event. The delegate type is <code>void func(void)</code>. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">hsCommonDialogSetOKButtonDelegate</span><span class="p">(</span><span class="n">OnDialogOK</span><span class="p">);</span>
 
-public void OnDialogOK(void)
-{
-    hsSystemOutput(&quot;OnDialogOK callback\n&quot;);
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnDialogOK</span><span class="p">(</span><span class="k">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;OnDialogOK callback\n&quot;</span><span class="p">);</span>
 
-    hsCommonDialogClose();
-}
+<span class="w">    </span><span class="n">hsCommonDialogClose</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h3 id="hscommondialogsetyesbuttondelegate">hsCommonDialogSetYesButtonDelegate</h3>
 <p><code>void hsCommonDialogSetYesButtonDelegate(hsDGCommonDialog dg)</code></p>
-<p>Yesボタンがクリックされたときのdelegate関数を設定します。delegateの型はvoid func(void)です。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets the delegate function for the Yes button click event. The delegate type is <code>void func(void)</code>. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogsetnobuttondelegate">hsCommonDialogSetNoButtonDelegate</h3>
 <p><code>void hsCommonDialogSetNoButtonDelegate(hsDGCommonDialog dg)</code></p>
-<p>Noボタンがクリックされたときのdelegate関数を設定します。delegateの型はvoid func(void)です。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。</p>
+<p>Sets the delegate function for the No button click event. The delegate type is <code>void func(void)</code>. Must be set before calling <code>hsCommonDialogOpen</code>.</p>
 <h3 id="hscommondialogopen">hsCommonDialogOpen</h3>
 <p><code>bool hsCommonDialogOpen()</code></p>
-<p>汎用ダイアログを開きます。既に開かれている場合等のエラーがある場合はfalseが返ります。</p>
+<p>Opens the common dialog. Returns <code>false</code> if an error occurs, such as if a dialog is already open.</p>
 <h3 id="hscommondialogclose">hsCommonDialogClose</h3>
 <p><code>bool hsCommonDialogClose()</code></p>
-<p>汎用ダイアログを閉じます。既に閉じられている場合等のエラーがある場合はfalseが返ります。</p>
+<p>Closes the common dialog. Returns <code>false</code> if an error occurs, such as if the dialog is already closed.</p>
 <hr />
 
 

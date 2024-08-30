@@ -1335,6 +1335,8 @@
       
         
       
+        
+      
     
     
     
@@ -1672,6 +1674,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../SDKTools/AutoTextureCompressor.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Texture Compressor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1688,10 +1711,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" >
         
           
-          <label class="md-nav__link" for="__nav_7_11" id="__nav_7_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1702,8 +1725,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12">
             <span class="md-nav__icon md-icon"></span>
             GUITools
           </label>
@@ -10646,10 +10669,10 @@
 
 
 <h1 id="item-class">Item class</h1>
-<p>On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
-For example, objects defined as items are <a href="../VKCComponents/VKCItemField.html">VKCItemField</a>, <a href="../VKCComponents/VKCItemObject.html">VKCItemObject</a>, <a href="../VKCComponents/VKCItemPlane.html">VKCItemPlane</a>, <a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a>, and other objects.</p>
-<p>The Item class is for handling such Items, and "Nodes" which are child objects of <a href="../VKCComponents/VKCItemField.html">VKCItemField</a> on HeliScript.</p>
-<p>An Item class object is obtainable by specifying the item name with hsItemGet() or running hsItemGetSelf().</p>
+<p>On Vket Cloud, each non-Player objects on the world are defined as Items.<br></p>
+<p>Items can be output to the scene by placing and configuring game objects with components added by VketCloudSDK, such as VKC Item Field and VKC Item Object.</p>
+<p>The Item class is used to manipulate the above-mentioned Item in HeliScript.</p>
+<p>You can retrieve an instance of the Item class by calling functions such as hsItemGet().</p>
 <p>Item class has various methods to operate the obtained Item object.</p>
 <h2 id="how-to-get-item-class-object-from-component">How to get Item class object from component</h2>
 <p>The Item class object held by the component is obtainable by making the following call from the method in the component.</p>
@@ -10664,7 +10687,7 @@ For example, objects defined as items are <a href="../VKCComponents/VKCItemField
 <h2 id="item-utility-functions">Item utility functions</h2>
 <h3 id="hsitemget">hsItemGet</h3>
 <p><code>Item hsItemGet(string itemName)</code></p>
-<p>Global function. Obtains the Item located under <a href="../VKCComponents/VKCItemField.html">VKCItemField</a> and returns it as an Item instance.</p>
+<p>Global Function. Gets an Item by the specified name.</p>
 <h3 id="hsitemgetself">hsItemGetSelf</h3>
 <p><code>Item hsItemGetSelf()</code></p>
 <p>Global function. Gets the Item object of where this component itself is attached, by calling this function in the component's constructor, or methods such as Update, OnClickNode, etc.</p>
@@ -11035,7 +11058,6 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
-<li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
 <li><a href="../VKCComponents/VKCItemBackgroundTexture.html">VKC Item Background Texture</a></li>
 <li><a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></li>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11053,7 +11075,6 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
-<li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
 <li><a href="../VKCComponents/VKCItemBackgroundTexture.html">VKC Item Background Texture</a></li>
 <li><a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></li>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>

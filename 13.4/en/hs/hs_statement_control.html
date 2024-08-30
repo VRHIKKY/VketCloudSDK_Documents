@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#control-structure" class="md-skip">
+        <a href="#control-statement" class="md-skip">
           Skip to content
         </a>
       
@@ -1335,6 +1335,8 @@
       
         
       
+        
+      
     
     
     
@@ -1672,6 +1674,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../SDKTools/AutoTextureCompressor.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Texture Compressor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1688,10 +1711,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" >
         
           
-          <label class="md-nav__link" for="__nav_7_11" id="__nav_7_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1702,8 +1725,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12">
             <span class="md-nav__icon md-icon"></span>
             GUITools
           </label>
@@ -5942,6 +5965,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#exiting-loops-break-continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exiting Loops (break, continue)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exiting Loops (break, continue)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#break" class="md-nav__link">
+    <span class="md-ellipsis">
+      break
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      continue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#switch-concise-description-of-many-branch-conditions" class="md-nav__link">
     <span class="md-ellipsis">
       switch - Concise description of many branch conditions
@@ -9554,6 +9610,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#exiting-loops-break-continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exiting Loops (break, continue)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exiting Loops (break, continue)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#break" class="md-nav__link">
+    <span class="md-ellipsis">
+      break
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      continue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#switch-concise-description-of-many-branch-conditions" class="md-nav__link">
     <span class="md-ellipsis">
       switch - Concise description of many branch conditions
@@ -9577,7 +9666,7 @@
                   
 
 
-<h1 id="control-structure">Control structure</h1>
+<h1 id="control-statement">Control Statement</h1>
 <p>Describes control constructs such as conditional branching and repetition.</p>
 <h2 id="if-conditional-branch">if - conditional branch</h2>
 <p>Conditional branching can be realized by dividing the processing with <em>{}</em> after <code>if (conditional expression)</code>.</p>
@@ -9614,7 +9703,7 @@
 <h2 id="for-iteration-with-initialization-and-iterators">for - iteration with initialization and iterators</h2>
 <p>By writing <code>for (initialization; conditional expression; iterator) { }</code>, the following process will occur.</p>
 <ol>
-<li>Initialize and</li>
+<li>Initialize variable,</li>
 <li>If the result of evaluating the conditional expression is <em>true</em>, execute the processing within <em>{}</em>.</li>
 <li>After processing the iterator,</li>
 <li>Check the conditional expression again, and if it is <em>true</em>, return to 2. and repeat the process</li>
@@ -9625,6 +9714,33 @@
 <span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="nv">repeat</span><span class="w"> </span><span class="nv">this</span><span class="w"> </span><span class="nv">process</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="nv">times</span>
 <span class="w">     </span><span class="nv">hsSystemOutput</span><span class="ss">(</span><span class="s2">&quot;%d\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="nv">i</span><span class="ss">)</span><span class="c1">;</span>
 }
+</code></pre></div>
+
+<h2 id="exiting-loops-break-continue">Exiting Loops (break, continue)</h2>
+<p>Using <em>break</em> or <em>continue</em>, you can control execution of loop process.</p>
+<h3 id="break">break</h3>
+<p><em>break</em> allows you to exit the loop in the middle of its execution.</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="c1">// This loop will continue indefinitely since the condition is always true, unless explicitly exited with break.</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="k">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Forcefully exit the loop with break.</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="o">++</span><span class="n">i</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="continue">continue</h3>
+<p><em>continue</em> allows you to skip the remaining loop process and move on to the next iteration.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">// This loop displays the value of i 100 times.</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">100</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// However, when i equals 5, continue skips the rest of the loop, so nothing is displayed.</span>
+<span class="w">        </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;i=%d&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="switch-concise-description-of-many-branch-conditions">switch - Concise description of many branch conditions</h2>

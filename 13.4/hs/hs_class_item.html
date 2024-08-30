@@ -1335,6 +1335,8 @@
       
         
       
+        
+      
     
     
     
@@ -1672,6 +1674,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../SDKTools/AutoTextureCompressor.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Texture Compressor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1688,10 +1711,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" >
         
           
-          <label class="md-nav__link" for="__nav_7_11" id="__nav_7_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1702,8 +1725,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12">
             <span class="md-nav__icon md-icon"></span>
             GUITools
           </label>
@@ -10646,10 +10669,10 @@
 
 
 <h1 id="item">Item クラス</h1>
-<p>Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
-<a href="../VKCComponents/VKCItemField.html">VKC Item Field</a>, <a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>, <a href="../VKCComponents/VKCItemPlane.html">VKC Item Plane</a>, <a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a>などがこれにあたります。</p>
-<p>Itemクラスは、ワールド内に配置された<a href="../VKCComponents/VKCItemField.html">VKC Item Field</a>及びその子オブジェクトであるNodeなど、個々のアイテムをHeliScriptにて操作するためのものです。</p>
-<p>hsItemGet() などの関数を呼び出すことで、特定のアイテムを表すItemクラスのインスタンスを取得できます。</p>
+<p>Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br></p>
+<p>Itemは、VKC Item Field、VKC Item Objectなど、VketCloudSDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。</p>
+<p>Itemクラスは、上記のItemをHeliScriptにて操作するためのものです。</p>
+<p>hsItemGet() などの関数を呼び出すことで、Itemクラスのインスタンスを取得できます。</p>
 <p>Itemクラスは多くのメソッドを持ち、これらのメソッドを呼び出すことで、様々な操作を行うことが可能です。</p>
 <h2 id="item_1">コンポーネントからItemクラスオブジェクトの取得方法</h2>
 <p>コンポーネント内のメソッドから以下のような呼び出しを行うことで、Itemクラスのインスタンスを取得できます。</p>
@@ -10664,7 +10687,7 @@
 <h2 id="item_2">Itemのユーティリティー関数</h2>
 <h3 id="hsitemget">hsItemGet</h3>
 <p><code>Item hsItemGet(string itemName)</code></p>
-<p>グローバル関数。指定した名前で VKC Item Field 以下のアイテムを取得し、Itemクラスのインスタンスとして返す。</p>
+<p>グローバル関数。指定した名前でItemを取得する。</p>
 <h3 id="hsitemgetself">hsItemGetSelf</h3>
 <p><code>Item hsItemGetSelf()</code></p>
 <p>グローバル関数。コンポーネントのコンストラクタや、Update(), OnClickNode() 等のメソッド内から呼び出すことで、コンポーネント自身が所属しているItemインスタンスを取得します。</p>
@@ -11035,8 +11058,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
-<li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item AreaCollider</a></li>
-<li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
+<li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
 <li><a href="../VKCComponents/VKCItemBackgroundTexture.html">VKC Item Background Texture</a></li>
 <li><a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></li>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11054,7 +11076,6 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
-<li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
 <li><a href="../VKCComponents/VKCItemBackgroundTexture.html">VKC Item Background Texture</a></li>
 <li><a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></li>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
