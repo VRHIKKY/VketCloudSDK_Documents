@@ -9,3 +9,8 @@
         - Install Wizardが以下機能が加わって、アップデートされたので、説明文および画像を13.7向けに更新
            - Unity 2022のときはAPI Compatibilityの必須設定項目がなくなった
            - プロジェクトパスにスペースもしくは２バイト文字が入っている場合に、起動時に警告を表示しインストールできなくする
+
+## 2024年9月11日 - 追加されたページ
+
+- ワールド制作ガイド
+  - [JSをアップロードする方法について](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/JsUpload.html)
