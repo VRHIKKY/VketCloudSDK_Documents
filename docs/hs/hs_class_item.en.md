@@ -406,7 +406,6 @@ Returns true if the Item is loading, false otherwise.
 ??? note "Available object types for this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -424,7 +423,6 @@ Returns true if the Item has finished loading, false otherwise.
 ??? note "Available object types for this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
