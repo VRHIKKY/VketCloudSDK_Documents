@@ -1,9 +1,9 @@
 # Item クラス
 
 Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
-[VKC Item Field](../VKCComponents/VKCItemField.md), [VKC Item Object](../VKCComponents/VKCItemObject.md), [VKC Item Plane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md)などがこれにあたります。
+Itemは、[VKC Item Field](../VKCComponents/VKCItemField.md), [VKC Item Object](../VKCComponents/VKCItemObject.md), [VKC Item Plane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md)など、VKC Itemの接頭語のついたコンポーネントを指します。
 
-Itemクラスは、ワールド内に配置された[VKC Item Field](../VKCComponents/VKCItemField.md)及びその子オブジェクトであるNodeなど、個々のアイテムをHeliScriptにて操作するためのものです。
+Itemクラスは、上記のItemをHeliScriptにて操作するためのものです。
 
 hsItemGet() などの関数を呼び出すことで、特定のアイテムを表すItemクラスのインスタンスを取得できます。
 
@@ -30,7 +30,7 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-グローバル関数。指定した名前で VKC Item Field 以下のアイテムを取得し、Itemクラスのインスタンスとして返す。
+グローバル関数。指定した名前でItemを取得し、Itemクラスのインスタンスとして返す。
 
 ### hsItemGetSelf
 
