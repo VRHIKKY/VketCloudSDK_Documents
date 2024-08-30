@@ -66,6 +66,10 @@ Installation is complete if the window and Unity menu is displayed as below:
 
 ![SetupSDK_External](img/SetupSDK_External_08.jpg)
 
+If the project path contains a space or full-width characters, the following warning will appear at startup.
+
+![SetupSDK_External](img/SetupSDK_External_28.jpg)
+
 ## Step 4. Install the SDK using the VketCloudSDK Install wizard
 
 To install the SDK on a new project, use the SDK Install Wizard.
@@ -84,7 +88,15 @@ By opening the Install Wizard, the window will appear as below.
 
 3\. The window for setting the recommended initial settings will appear. Complete all four settings to proceed.
 
+
+If Unity 2019 is installed, complete the following settings:
+
 ![SetupSDK_External](img/SetupSDK_External_10.jpg)
+
+
+If Unity 2022 or later is installed, complete the following settings
+
+![SetupSDK_External](img/SetupSDK_External_27.jpg)
 
 
 ### Setting Standard Shader Quality
@@ -121,11 +133,15 @@ Likewise above, check the Configuration in the Project Settings and change the L
 
 ![SetupSDK_External](img/SetupSDK_External_15.jpg)
 
-### Setting API compatibility level
+### Setting API compatibility level (Only for Unity 2019.4)
 
-2. When the Project Settings window appears, click Player from the list.  
+!!! note caution
+    For Unity 2022 or later, this setting is not required.
+    SDK 13.7 and later versions support both Unity 2019 and Unity 2022.
 
-3. Check the Configuration in the Project Settings and change the Api Compatibility Level to ".NET 4.x" from the pull-down menu.
+1. When the Project Settings window appears, click Player from the list.  
+
+2. Check the Configuration in the Project Settings and change the Api Compatibility Level to ".NET 4.x" from the pull-down menu.
 
 ![SetupSDK_External](img/SetupSDK_External_16.jpg)
 

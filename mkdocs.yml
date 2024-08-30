@@ -57,6 +57,8 @@ plugins:
       lang: 
         - en
         - ja
+  - exclude-search:
+      
   - mike:
       version_selector: true
       css_dir: css
