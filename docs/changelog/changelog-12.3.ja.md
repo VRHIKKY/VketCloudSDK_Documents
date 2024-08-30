@@ -22,6 +22,7 @@
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/TextureImportViewer.html)
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/VketCloudSDKSettings.html)
+  - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/AutoTextureCompressor.html)
 - HEOコンポーネント
   - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOProperty.html)
     - 2024年8月6日： SDK 12.x以降のSetPropertyの挙動変更について追記

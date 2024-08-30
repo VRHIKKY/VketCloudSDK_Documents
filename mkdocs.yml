@@ -250,6 +250,7 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
+    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
