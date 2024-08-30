@@ -16,6 +16,7 @@
     - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_component.html)
     - 組み込みクラス・関数
         - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_date.html)
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
     - 組み込み関数
         - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_gui_HSGUIModel.html)
         - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_camera.html)

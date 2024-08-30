@@ -18,6 +18,7 @@
     - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_component.html)
     - Built-in Classes And Functions
         - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
+        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
     - Built-in Functions
         - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function_gui_HSGUIModel.html)
         - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function_camera.html)
