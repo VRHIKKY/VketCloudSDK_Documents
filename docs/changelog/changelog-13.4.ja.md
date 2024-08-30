@@ -8,6 +8,22 @@
 
 ## 2024年8月30日 - 変更されたページ
 - HeliScript
+  - 英訳を更新：
+    - 組み込み型
+        - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
+        - [文字列(string)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_string.html)
+        - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_delegate.html)
+    - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_component.html)
+    - 組み込みクラス・関数
+        - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_date.html)
+    - 組み込み関数
+        - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_gui_HSGUIModel.html)
+        - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_camera.html)
+        - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_commondialog.html)
+        - [レンダリング](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_rendering.html)
+    - 文法と制御構文
+        - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_statement_control.html)
+
   - 組み込みクラス・関数
     - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
       - 'Isloading'と'IsLoaded'の対応するオブジェクトタイプからVKC Item Audioを外す

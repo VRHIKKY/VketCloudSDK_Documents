@@ -10,6 +10,22 @@
 ## August 30 2024 - Edited Pages
 
 - HeliScript
+  - Updated English Translation:
+    - Built-in Types
+        - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_var.html)
+        - [String](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_string.html)
+        - [Delegate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_delegate.html)
+    - [Components / Callback functions](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_component.html)
+    - Built-in Classes And Functions
+        - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
+    - Built-in Functions
+        - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function_gui_HSGUIModel.html)
+        - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function_camera.html)
+        - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function_commondialog.html)
+        - [Rendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_system_function_rendering.html)
+    - Statements and flow control
+        - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_statement_control.html)
+
   - Built-in Classes And Functions
     - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
       - Remove VKC Item Audio from available object types from 'IsLoaded' and 'IsLoading' methods.
