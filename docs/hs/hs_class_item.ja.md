@@ -30,7 +30,7 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-グローバル関数。指定した名前でItemを取得し、Itemクラスのインスタンスとして返す。
+グローバル関数。指定した名前でItemを取得する。
 
 ### hsItemGetSelf
 
