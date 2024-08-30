@@ -2,7 +2,7 @@
 
 ## 用途
 
-JavaScriptをアップロードすることで、ワールド内でJavaScriptを実行することができます。
+JavaScript(以下、JS)をアップロードすることで、ワールド内でJSを実行することができます。
 例えば、JSを使用して、外部のAPI（天気情報、ニュース、SNSフィードなど）と連携し、VR内でリアルタイムの情報を表示します。
 
 その他の用途としては以下が挙げられます。
@@ -21,7 +21,7 @@ JavaScriptをアップロードすることで、ワールド内でJavaScriptを
 
 ## 対象者
 
-以下の有償プランを利用しているユーザーでしたら、JS入稿機能をSDK13.7以降、Onにし、アップロードできます。無料プランの場合は、強制的にJavaScriptをアップロード対象ファイルから排除いたしいます。
+以下の有償プランを利用しているユーザーでしたら、JS入稿機能をSDK13.7以降、Onにし、アップロードできます。無料プランの場合は、強制的にJSをアップロード対象ファイルから排除いたしいます。
 
 - ベーシックプラン
 - ビジネスプラン
@@ -40,11 +40,11 @@ JavaScriptをアップロードすることで、ワールド内でJavaScriptを
 
    ![File Deployment Modeの設定](img/JsUpload_2.jpg)
 
-3. 対象の`File Deployment Config`にセットしたいJavaScriptをセットします。
+3. 対象の`File Deployment Config`にセットしたいJSをセットします。
 
    **サンプルJS**: `vkc_sample.js`
 
-   ![JavaScriptのセット](img/JsUpload_3.jpg)
+   ![JSのセット](img/JsUpload_3.jpg)
 
 4. **Base SettingのFile Deployment Config**に対象の`Scriptable Object`をセットします。
 
