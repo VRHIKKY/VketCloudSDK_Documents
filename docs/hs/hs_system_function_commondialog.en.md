@@ -105,8 +105,9 @@ hsCommonDialogSetOKButtonDelegate(OnDialogOK);
 
 public void OnDialogOK(void)
 {
-    system.Output("OnDialogOK callback\n");
-    hsCommonDialogClose();
+	hsSystemOutput("OnDialogOK callback\n");
+	
+	hsCommonDialogClose();
 }
 ```
 
