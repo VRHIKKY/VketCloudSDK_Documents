@@ -31,9 +31,9 @@
   - Node
     - [Enable/DisableNode](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/Actions/Node/EnableDisableNode.html)
 - HeliScript
-  - [delegate](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_delegate.html) *English version WIP
-  - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_camera.html) *English version WIP
-  - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_commondialog.html) *English version WIP
+  - [delegate](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_delegate.html)
+  - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_camera.html)
+  - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_system_function_commondialog.html)
   - [Item Types and Usable Functions](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_item_types_functions.html)
 - External API
   - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/ExternalAPI/JsVal.html)
@@ -124,7 +124,7 @@
       - Changed Title (old:If A <= B)
       - Updated description according to SDK Ver12.3
 - HeliScript
-Added information on HeliScript updates on Ver12.x: *English version WIP
+Added information on HeliScript updates on Ver12.x:
   - [HeliScript Overview](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/hs/hs_overview.html)
     - Added feature change for Player class functions within constructor
     - Added explanation for Nodes

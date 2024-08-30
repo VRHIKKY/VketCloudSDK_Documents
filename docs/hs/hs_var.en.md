@@ -74,3 +74,17 @@ When you define a variable, if you do not initialize it, the following initial v
 
 The bool type is treated internally as a 32-bit integer value, with 1 assigned to *true* and 0 to *false*.
 If you assign an integer value to a bool type variable, 0 will be converted to *false* and everything else will be converted to *true*.
+
+## Instance methods defined on basic types
+
+### int.ToString()
+
+`public string ToString()`
+
+Converts integer-type variable values to string.
+
+### float.ToString()
+
+`public string ToString()`
+
+Converts float-type variable values to string.
