@@ -1,7 +1,6 @@
+# Built-in Functions - Camera
 
-# 組み込み関数 - カメラ
-
-カメラに関するユーティリティ関数
+Utility functions related to camera.
 
 
 ***
@@ -10,34 +9,34 @@
 ### hsCameraGetXVector
 `void hsCameraGetXVector(ref float X, ref float Y, ref float Z)`
 
-カメラのワールド座標系のＸベクトルを取得します。
+Retrieves the X vector of the camera in world coordinates.
 
 
 ### hsCameraGetYVector
 `void hsCameraGetYVector(ref float X, ref float Y, ref float Z)`
 
-カメラのワールド座標系のＹベクトルを取得します。
+Retrieves the Y vector of the camera in world coordinates.
 
 
 ### hsCameraGetZVector
 `void hsCameraGetZVector(ref float X, ref float Y, ref float Z)`
 
-カメラのワールド座標系のＺベクトルを取得します。
+Retrieves the Z vector of the camera in world coordinates.
 
 
 ### hsCameraSetTPSCameraYOffset
 `void hsCameraSetTPSCameraYOffset(float YOffset, float YDistanceOffset)`
 
-TPSカメラのＹ方向のオフセットを指定します。単位はメートルです。YDistanceOffsetはカメラズームによってさらに補正させる場合に使用するパラメータです。
+Specifies the Y-axis offset for the TPS (Third-Person Shooter) camera. The unit is meters. The `YDistanceOffset` parameter is used for further adjustment based on camera zoom.
 
 ### hsCameraGetPos
 `void hsCameraGetPos(ref float X, ref float Y, ref float Z)`
 
-ワールド座標系におけるカメラの位置を取得します。
+Retrieves the position of the camera in world coordinates.
 
 ### hsCameraGetPosVector3
 `Vector3 hsCameraGetPosVector3()`
 
-ワールド座標系におけるカメラの位置をVector3として取得します。
+Retrieves the position of the camera as a `Vector3` in world coordinates.
 
 ***
