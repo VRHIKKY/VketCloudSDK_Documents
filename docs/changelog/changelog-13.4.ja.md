@@ -2,17 +2,21 @@
 
 ## 2024年8月30日更新
 
+## 2024年8月30日 - 追加されたページ
+- SDKTools
+  - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/AutoTextureCompressor.html)
+
 ## 2024年8月30日 - 変更されたページ
 - HeliScript
   - 組み込みクラス・関数
     - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
       - 'Isloading'と'IsLoaded'の対応するオブジェクトタイプからVKC Item Audioを外す
 
+---
 
 ## 2024年8月23日更新
 
 ## 2024年8月23日 - 追加されたページ
-
 - リリースノート
     - [v13.7](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/ja/releasenote/releasenote-13.7.html)
         - v13.7のリリースノートの新しいページを追加

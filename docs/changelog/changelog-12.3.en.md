@@ -22,6 +22,7 @@
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/TextureImportViewer.html)
   - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
+　- [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/AutoTextureCompressor.html)
 - HEO Components
   - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOProperty.html)
 - Actions
