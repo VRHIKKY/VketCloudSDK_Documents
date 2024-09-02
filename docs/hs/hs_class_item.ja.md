@@ -102,6 +102,7 @@ Item を指定した座標に移動させる。
 `public Vector3 GetPos()`
 
 Item の座標を取得する。
+
 このItemがActivityの中にある場合、取得できる値はActivityからの相対座標になります。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
@@ -120,10 +121,12 @@ Item の座標を取得する。
 `public Vector3 GetWorldPos()`
 
 Item のワールド座標を取得する。
+
 このItemがどこにあるのか(Activityの外か中か)に関わらず、常にワールド空間における座標を返します。
 
 ??? warning "使用上の注意"
     Activityの場合でワールド座標を取得したいときはこちらを使用してください。
+    
     Activityではない場合は通常はGetPosを使用してください。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"

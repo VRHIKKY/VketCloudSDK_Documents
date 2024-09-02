@@ -102,6 +102,7 @@ Move Item to the designated position.
 `public Vector3 GetPos()`
 
 Get the local position of Item.
+
 If this Item is inside a VKC Item Activity, the obtained value will be the coordinates relative to the VKC Item Activity.
 
 ??? note "Available object types for this method"
@@ -120,10 +121,12 @@ If this Item is inside a VKC Item Activity, the obtained value will be the coord
 `public Vector3 GetWorldPos()`
 
 Get the world position of Item.
+
 Regardless of where this Item is located (inside or outside of a VKC Item Activity), it always returns the coordinates in world space.
 
 ??? warning Usage Caution
     Use this method when you want to obtain world coordinates in the case of an Activity.
+
     If it is not an Activity, use GetPos for most of the time.
 
 ??? note "Available object types for this method"
