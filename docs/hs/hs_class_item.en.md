@@ -104,6 +104,9 @@ Move Item to the designated position.
 Get the local position of Item.
 If this Item is inside a VKC Item Activity, the obtained value will be the coordinates relative to the VKC Item Activity.
 
+??? warning Usage Caution
+    If the item is not a VKC Item Activity, please use this method for most of the time.
+
 ??? note "Available object types for this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)

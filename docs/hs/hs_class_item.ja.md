@@ -104,6 +104,9 @@ Item を指定した座標に移動させる。
 Item の座標を取得する。
 このItemがActivityの中にある場合、取得できる値はActivityからの相対座標になります。
 
+??? warning "使用上の注意"
+    Activityではない場合は通常はこちらを使用してください。
+
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
