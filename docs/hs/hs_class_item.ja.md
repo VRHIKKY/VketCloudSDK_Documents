@@ -102,6 +102,7 @@ Item を指定した座標に移動させる。
 `public Vector3 GetPos()`
 
 Item の座標を取得する。
+このItemがActivityの中にある場合、取得できる値はActivityからの相対座標になります。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
@@ -119,6 +120,7 @@ Item の座標を取得する。
 `public Vector3 GetWorldPos()`
 
 Item のワールド座標を取得する。
+このItemがどこにあるのか(Activityの外か中か)に関わらず、常にワールド空間における座標を返します。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
