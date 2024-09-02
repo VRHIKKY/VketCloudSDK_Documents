@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 13.4
 
+## September 6 2024 Update
+
+## September 6 2024 - Edited Pages
+- HeliScript
+  - Built-in Classes And Functions
+    - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
+      - Updated description about 'GetPos' and 'GetWorldPos'method
+
 ## August 30 2024 Update
 
 ## August 30 2024 - Added Pages
