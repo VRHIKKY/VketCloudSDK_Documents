@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.4
 
+## September 6 2024 Update
+
+## September 6 2024 - Edited Pages
+- HeliScript
+  - Built-in Classes And Functions
+    - [Player Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_player.html)
+      - Add a CameraRotate argument to Player.SetRotate
+
+---
+
 ## August 30 2024 Update
 
 ## August 30 2024 - Added Pages
