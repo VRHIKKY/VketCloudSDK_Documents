@@ -10749,6 +10749,7 @@
 <h3 id="getpos">GetPos</h3>
 <p><code>public Vector3 GetPos()</code></p>
 <p>Item の座標を取得する。</p>
+<p>このItemがActivityの中にある場合、取得できる値はActivityからの相対座標になります。</p>
 <details class="note">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
@@ -10766,6 +10767,12 @@
 <h3 id="getworldpos">GetWorldPos</h3>
 <p><code>public Vector3 GetWorldPos()</code></p>
 <p>Item のワールド座標を取得する。</p>
+<p>このItemがどこにあるのか(Activityの外か中か)に関わらず、常にワールド空間における座標を返します。</p>
+<details class="warning">
+<summary>使用上の注意</summary>
+<p>Activityの場合でワールド座標を取得したいときはこちらを使用してください。</p>
+<p>Activityではない場合は通常はGetPosを使用してください。</p>
+</details>
 <details class="note">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>

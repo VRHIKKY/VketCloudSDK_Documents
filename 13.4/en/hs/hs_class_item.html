@@ -10749,6 +10749,7 @@
 <h3 id="getpos">GetPos</h3>
 <p><code>public Vector3 GetPos()</code></p>
 <p>Get the local position of Item.</p>
+<p>If this Item is inside a VKC Item Activity, the obtained value will be the coordinates relative to the VKC Item Activity.</p>
 <details class="note">
 <summary>Available object types for this method</summary>
 <ul>
@@ -10766,6 +10767,12 @@
 <h3 id="getworldpos">GetWorldPos</h3>
 <p><code>public Vector3 GetWorldPos()</code></p>
 <p>Get the world position of Item.</p>
+<p>Regardless of where this Item is located (inside or outside of a VKC Item Activity), it always returns the coordinates in world space.</p>
+<details class="warning usage caution">
+<summary>Warning</summary>
+<p>Use this method when you want to obtain world coordinates in the case of an Activity.</p>
+<p>If it is not an Activity, use GetPos for most of the time.</p>
+</details>
 <details class="note">
 <summary>Available object types for this method</summary>
 <ul>
