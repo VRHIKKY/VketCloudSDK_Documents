@@ -5,6 +5,8 @@
 ## September 6 2024 - Edited Pages
 - HeliScript
   - Built-in Classes And Functions
+    - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
+      - Updated description about 'GetPos' and 'GetWorldPos'method
     - [Player Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_player.html)
       - Add a CameraRotate argument to Player.SetRotate
 
