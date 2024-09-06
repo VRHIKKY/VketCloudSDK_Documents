@@ -7,6 +7,8 @@
   - 組み込みクラス・関数
     - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
       - 'GetPos'と'GetWorldPos'の説明を修正
+    - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_player.html)
+      - Player.SetRotateにCameraRotateの引数を追加
 
 ---
 

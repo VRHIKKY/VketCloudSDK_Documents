@@ -102,7 +102,7 @@ component PlayerInitSample
 
 ### SetRotate
 
-`void SetRotate(float angle)`
+`void SetRotate(float angle, bool CameraRotate = true)`
 
 プレイヤーの向きを設定する。
 
