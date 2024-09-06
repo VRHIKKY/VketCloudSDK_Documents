@@ -8,6 +8,8 @@
     - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
       - Updated description about 'GetPos' and 'GetWorldPos'method
 
+---
+
 ## August 30 2024 Update
 
 ## August 30 2024 - Added Pages
