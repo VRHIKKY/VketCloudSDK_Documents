@@ -45,6 +45,13 @@ Apply後、Unity上部タブ Window > Package Managerを選択します。
 
 Installボタンを押すことでインストールされます。
 
+!!! warning "インストールが終わらない場合"
+
+    GUITools v13.0.0をインストール時に、無限にインストールが続く場合があります。
+
+    その場合、Unity プロジェクトを再起動することで、解決することがあります。
+
+
 ## C. UniTask導入
 
 環境によってUniTaskが自動インポートしていない場合があるので、UniTaskをPackageManagerから導入してください。

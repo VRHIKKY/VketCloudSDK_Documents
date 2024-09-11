@@ -1,79 +1,77 @@
 # VKC Attribute Property
 
-![HEOProperty_1](./img/HEOProperty_1.jpg)
+![VKCAttributeProperty_1](./img/VKCAttributeProperty_1.jpg)
 
-## 概要
+## Overview
 
-SDK9以降で登場したVKC Attribute Propertyを使うことで、Vket Cloudのプロパティ機能を設定することができます。
+By using VKC Attribute Property on SDK Ver9.x and later versions, each Item can have a "Property" when in Vket Cloud worlds.
 
-プロパティ機能はItemに対してキーと値を持たせる方法で、コンポーネント間の値渡しやUnityエディタ上での動作カスタマイズといった使用方法が可能です。
+Property is a set of key and value attributed to an Item, which can be used to pass-by-value between components, customize implementation on the Unity editor, and many other usages.
 
-本ページでは、何かと便利なVKC Attribute PropertyとVket Cloudのプロパティ機能について紹介します。
+This page will introduce the concept of Property in Vket Cloud, and how to use VKC Attribute Property.
 
-## VKC Attribute Property実装手順
+## How to setup VKC Attribute Property
 
-### 1. アイテムとなるオブジェクトにアタッチ
+### 1. Attach VKC Attribute Property to an Item object
 
-![HEOProperty_2](./img/HEOProperty_2.jpg)
+![VKCAttributeProperty_2](./img/VKCAttributeProperty_2.jpg)
 
-VKCItemFieldやVKCItemObject、VKCItemActivityなど、ビルド時にアイテムとなるオブジェクトに対しVKC Attribute Propertyをアタッチします。
+Attach VKC Attribute Property to an object that will be an Item, such as [VKC Item Field](VKCItemField.md), [VKC Item Object](VKCItemObject.md), and [VKC Item Activity](VKCItemActivity.md).
 
-### 2. VKC Attribute PropertyにKeyとValueを入力
+### 2. Define a Key and Value on VKC Attribute Property
 
-Listの「+」ボタンを押すことで、KeyとValueの入力欄が表示されます。
+By pressing the "+" button on the List, a new Key and Value can be added.
 
-!!! info "プロパティの仕組み"
-    Vket Cloudのプロパティ機能は、キー(Key)に対応する値(Value)を保持する機能です。<br>
-    保持した値はHeliScriptで読み込んだり、上書きしたりすることが可能です。
+!!! info "Definition of Property"
+    "Property" on Vket Cloud is a feature to define a Key and Value set.<br>
+    The defined Value can be read on HeliScript, or written by functions.
 
-![HEOProperty_3](./img/HEOProperty_3.jpg)
+![VKCAttributeProperty_3](./img/VKCAttributeProperty_3.jpg)
 
-KeyおよびValueはいずれもString型として保持されます。
+Please note that Key and Value will both be a String type.
 
-これで、VKC Attribute Propertyの設定が完了です。
+This completes the setup for VKC Attribute Property.
 
-![HEOProperty_4](./img/HEOProperty_4.jpg)
+![VKCAttributeProperty_4](./img/VKCAttributeProperty_4.jpg)
 
-ビルド後のScene.jsonのproperties項目に入力内容が反映されています。
+The defined properties will stored in the Scene.json file after build.
 
 ---
 
-## HeliScriptでの使い方
+## How to Use on HeliScript
 
-設定したプロパティはHeliScriptで使うことができます。
+The defined property can be used by HeliScript.
 
-ここでは、
+For example, a GameObject Item will hold a property as below:
 
 ```c#
 Key：Vket　Value：Cloud
 Key：SDK　Value：12.1
 ```
 
-と設定されたアイテムGameObjectを例に紹介します。
-
 ### 1. GetProperty
 
-`Item.GetProperty(string Key)`では、アイテムが持つプロパティのKeyに対応するValueを取得します。
+`Item.GetProperty(string Key)` will get a Property Value according to the Item's Key.
 
 ```C#
-// サンプルコード(コンポーネント構造無視)
+// Sample Code (partial)
 
 Item m_Item;
 m_Item = hsItemGet("GameObject");
 
 string Value;
 Value = m_Item.GetProperty("Vket");
-hsSystemWriteLine("%s" % Value); //「Cloud」と出力される
+hsSystemWriteLine("%s" % Value); // output will be "Cloud"
 
 ```
 
 ### 2. SetProperty
 
-`Item.SetProperty(string Key)`では、アイテムが持つプロパティのKeyに対応するValueを変更します。
+`Item.SetProperty(string Key)` will set a Property Value according to the Item's Key.
 
 ```c#
 
-// サンプルコード(コンポーネント構造無視)
+// Sample Code (partial)
 
 Item m_Item;
 m_Item = hsItemGet("GameObject");
@@ -82,19 +80,18 @@ m_Item.SetProperty("Vket","Chan");
 
 string Value;
 Value = m_Item.GetProperty("Vket");
-hsSystemWriteLine("%s" % Value); //「Chan」と出力される
+hsSystemWriteLine("%s" % Value); // output will be "Chan"
 
 ```
 
 ### 3. OnChangedProperty
 
-`OnChangedProperty(string Key, string Value)`は、プロパティの変更が発生した際に実行されるコールバックです。<br>
-SetPropertyで特定のキーに対し同一の値が入力され変更が発生しなかった場合には実行されません。
+`OnChangedProperty(string Key, string Value)` is a callback triggered when a property is changed.<br>
+This will not be triggered if an exact same Value is entered to a Key on SetProperty, and change did not occur as a result.
 
 ```c#
 
-// サンプルコード(コンポーネント構造無視)
-
+// Sample Code (partial)
 Item m_Item;
 m_Item = hsItemGet("GameObject");
 
@@ -110,50 +107,40 @@ public void OnChangedProperty(string Key, string Value){
   }
 }
 
-// 上記の場合、
-// 6行目　SDKは初期Valueが12.1のためコールバック実行なし
-// 7行目　Vketは初期ValueがCloudのためコールバック実行
-// 8行目　SDKはValueが12.1のためコールバック実行
-// 9行目　Vketは7行目でValueがChanとなっているためコールバック実行なし
-// となり、
+// On the example above,
+// Line 6: initial Value for SDK is 12.1, callback will not be triggered
+// Line 7: initial Value for Vket is Cloud, callback will be triggered
+// Line 8: Value for SDK is 12.1, callback will be triggered
+// Line 9: Value for Vket has been changed to Chan on Line 7, callback will not be triggered
+// which will output the result as following:
 // Changed Vket, Chan
 // Vket Changed
 // Changed SDK, 12.2
-// が出力される
 
 ```
 
-HeliScriptでは、以上の3通りの関数が用意されています。
+Property can be used on HeliScript by using the 3 functions above.
 
 ---
 
-## 活用方法
+## Usage
 
-VKC Attribute Propertyの活用例を紹介します。
+Here are some ways to use VKC Attribute Property:
 
-### 1. アクティビティへの値渡し
+### 1. Pass-by-Value to an Activity
 
-最もオーソドックスな使い方です。<br>
-アクティビティクラスの作成時、プロパティでカスタマイズ可能要素を作成する際にVKC Attribute Propertyを使います。
+!!! tip "Defining property values on Activity"
+    Unlike previous versions, defining property on Activities is recommended to be done by editing the Activity json file without using VKC Attribute Property component.<br>
+    For details, please see [VKC Activity Exporter: Setting Property in Activity](../SDKTools/VKCActivityExporter.md#setting-property-in-activity).
 
-![HEOProperty_5](./img/HEOProperty_5.jpg)
+### 2. Pass-by-Value to a Component
 
-シーンjsonを適切な形に変更した後にVKC Item Activityで読み込むと下記のようになります。
-
-![HEOProperty_6](./img/HEOProperty_6.jpg)
-
-Valueに値を入れておくことで、初期入力値を設定することができます。
-
-アクティビティ側HeliScriptでは`GetProperty()`を使用して入力した値を読み込みます。
-
-### 2. コンポーネント間の値渡し
-
-コンポーネント間で値渡しをする際、以下のようにVKC Attribute Propertyを使用できます。<br>  
-※値を変更する関数を用意して、`hsCallComponentMethod()`を使用しても同じことができます。
+When doing a pass-by-value among components, VKC Attribute Property can be used as below.<br>
+*The same process can be implemented by defining a value change method, and calling it using `hsCallComponentMethod()`.
 
 ```c#
-// exampleA exampleBの2つのコンポーネントとKey:status, Value:aliveを持つアイテム「Monster」があり、
-// exampleAがもつ変数HPの値が0以下になった際、exampleBで動作が発生する場合
+// 2 components: exampleA and exampleB, an Item with property: Key:status, Value:alive is defined,
+// exampleB will function when the HP value in exampleA becomes lower than 0
 
 component exampleA{
 
@@ -185,15 +172,15 @@ component exampleB{
     if(Key == "status"){
       switch(Value){
         case: "alive"
-          hsSystemWriteLine("モンスターが　あらわれた！");
+          hsSystemWriteLine("A Monster has appeared!");
           status = 1;
           break;
         case: "poison"
-          hsSystemWriteLine("モンスターが　どくを　あびた！");
+          hsSystemWriteLine("The monster is poisoned!");
           status = 2;
           break;
         case: "death"
-          hsSystemWriteLine("モンスターを　やっつけた！");
+          hsSystemWriteLine("The monster is defeated!");
           status = -1;
           break;
       }
@@ -202,11 +189,11 @@ component exampleB{
 }
 ```
 
-### 3. Unityの\[SerializeField\]属性的運用
+### 3. Similar Usage as Unity's \[SerializeField\] Attribution
 
-①のアクティビティへの値渡しと同様に、VKC Attribute Propertyから変数の中身を定義するように設定しておくことで、Unityエディタ上でパラメータ設定を行うことができるようになります。
+As like "2. Pass-by-Value to a Component", parameter configuration on the Unity editor can be done by defining a variable property through VKC Attribute Property.
 
-ただし、KeyおよびValueはすべてstring値であることは注意が必要です。
+However, Key and Value will always be a string value.
 
 ```c#
 component exampleC{
@@ -223,25 +210,26 @@ component exampleC{
   }
 }
 
-//上記の設定を行い、Unity上で「Monster」オブジェクトに対しVKC Attribute Propertyを付け、
-//HP:30、damage:3、skill:れんぞく斬り　とした場合、
-//それぞれの入力内容がHeliScriptの変数に適用される
+//After defining the above, add a VKC Attribute Property component to a Monster object on Unity,
+//and define properties: HP:30、damage:3、skill:Serial Cut,
+//Each property will overwrite the HeliScript variable values
 ```
 
 ---
 
-## 注意点
+## Notes
 
-### 1. SetProperty / GetPropertyする際は対象となるアイテムに注意
+### 1. Check which Item is targeted for SetProperty / GetProperty
 
-アイテムごとに異なるプロパティを設定することが可能です。<br>  
-HeliScript上で対象となるアイテムを間違えると、上手く動作しない場合があるので、気を付けましょう。
+Each Item can have different properties defined.<br>
+If the Item name is wrong on reference, this may lead to unintended behaviors.
 
-!!! note caution
-    SDK9.11現在、対象となるプロパティが存在しないのにSetPropertyを行おうとした場合、エラー文も出ずに他のHeliScriptの動作に影響を及ぼす場合があります。
+!!! note warning
+    Update: On SDK version 12.x and later, SetProperty will add a new property if it does not exist.<br>
+    On SDK Ver9.11, when trying to run SetProperty without a target property, unexpected behavior may occur without error notices.
 
-## 2. KeyおよびValueはString型
+## 2. Key and Value will always be a String type
 
-少し上でも解説した通り、KeyおよびValueはString型となるため、String型以外の変数を扱う場合、SetPropertyやGetPropertyする際に型変換を行う必要があります。
+As previously mentioned, Key and Value will always be a String. When connecting with non-String type variables, type cast is needed before running SetProperty or GetProperty.
 
-型変換を行わずにSetPropertyやGetPropertyした場合、nullとなります。
+If SetProperty or GetProperty is done without type casting, null values will be used instead.

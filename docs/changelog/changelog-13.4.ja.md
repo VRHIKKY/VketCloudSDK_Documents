@@ -1,5 +1,85 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年8月9日更新
+
+## 2024年8月9日 - 変更されたページ
+
+- VketCloudSDKについて
+    - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
+        - 説明文および画像を更新
+- ワールド制作ガイド
+    - [クリック判定できる可動オブジェクトの作り方](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
+        - VKCコンポーネントの表記ゆれ問題を修正
+    - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/Skybox.html)
+        - 説明文を更新
+    - [物理エンジンの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/PhysicsEngine.html)
+        - 説明文および画像を更新
+    - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
+        - 説明文を更新
+- VKC Component
+    - 見出しのVKCコンポーネント表記ゆれ問題を修正
+- HeliScript
+    - 組み込み型
+        - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
+          - 「NULL」の表記ゆれ問題を修正
+    - 組み込みクラス・関数
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+          - VKCコンポーネントの表記ゆれ問題を修正
+          - GetWorldRotateの説明の「ワールド回転をVector3として取得」にオイラー角と記載する
+
+---
+
+## 2024年8月2日更新
+
+## 2024年8月2日 - 変更されたページ
+
+- SDK Tools
+  - GUITools
+    - [概要とセットアップ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/GUITools/Setup.html)
+      - インストール手順で、無限にインストールが終わらない場合があるので、Unityプロジェクトを再起動することで解決することがある旨を追記
+- VKCコンポーネント
+  - [VKC/HEO コンポーネント 概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCHEOCorrespondenceTable.html)
+    - 題名を更新
+    - Item, Node各要素について概要を追加
+  - VKCSetting
+        - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/AvatarSettings.html)
+        - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
+        - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/RenderingSettings.html)
+            - 説明文および画像を更新
+  - VKCItem
+        - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+            - 説明文および画像を更新
+  - VKCAttribute
+        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCAttributeProperty.html)
+            - 説明文および画像を更新
+            - アクティビティにおけるプロパティの定義方法について解説を変更
+            - SetPropertyの挙動変更について追記
+- HeliScript
+  - 組み込みクラス・関数
+    - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_date.html)
+      - メソッド（日時の設定）の重複していたメソッドの説明を削除
+
+---
+
+## 2024年7月26日更新
+
+## 2024年7月26日 - 変更されたページ
+
+- VKCコンポーネント
+  - VKCItem
+    - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+      - 説明文および画像を更新
+  - VKCSetting
+    - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/DespawnHeightSettings.html)
+        - 説明文および画像を更新
+    - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/PlayerSettings.html)
+        - 画像を更新
+    - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
+        - File Deployment Modeについて追記
+    - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingNameplate.html)
+      - 画像を更新
+
+---
 
 ## 2024年7月19日更新
 

@@ -2,7 +2,10 @@
 
 VketCloudSDKは、以下のUnity環境が必要です。
 
-- **Unity 2019.4.31f1**
+- **Unity 2019.4.31f1** (SDK13.7.7以前)
+- **Unity 2022.3.6f1** (SDK13.7.7以降)
+
+* SDK13.7.7では両方のバージョンをサポートしています。
 
 該当のUnityをお持ちでない方は[こちら](https://unity.com/releases/editor/archive){target=_blank}より対応バージョンをダウンロードしてください。
 
@@ -31,18 +34,18 @@ VketCloudSDKは、以下のUnity環境が必要です。
 
     3. Project設定中にあるConfigurationを確認し、API Compatibility Levelの項目をプルダウンメニューから「.NET 4.x」に変更してください。
 
-    ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
+    ![ApiCompatibilityLevelSetting](img/SetupSDK_External_16.jpg)
 
     **LightMapEncodingの変更**
 
     上記と同じくPC設定内のOther Settingsにある、Lightmap Encodingの項目をプルダウンメニューからNormal Qualityに変更してください。
 
-    ![LightMapEncoding](img/LightMapEncoding.jpg)
+    ![LightMapEncoding](img/SetupSDK_External_15.jpg)
 
     **Color Spaceの変更**
     
     Edit > Project SettingsよりColor SpaceをLinearに変更します。
-    ![linear](img/linear.jpg)
+    ![linear](img/SetupSDK_External_14.jpg)
 
     SDK Ver12.3以降は以下の設定も必須となりました：
 
@@ -50,16 +53,8 @@ VketCloudSDKは、以下のUnity環境が必要です。
 
     VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
 
-    1. 「Edit/ProjectSettings/Graphics」を開く
-
-        ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_1.jpg)
-
-        ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_2.jpg)
-
-    2. 「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
-
-        ![TierSettings.jpg](../heoexporter/he_image/TierSettings.jpg)
-
-    3. 「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
-
-        ![StandardShaderQuality.jpg](../heoexporter/he_image/StandardShaderQuality.jpg)
+    1. Graphicsの設定画面の中で、「Tier Setting」の「Low (Tier 1)」の項目の中の「Use Defaults」のチェックを外し、「Standard Shader Quality」の項目を「Medium」 へと変更します。
+      ![StandardShader1](img/SetupSDK_External_12.jpg)
+      
+    2. 上記を「Low(Tier 1)」の下にある「Medium(Tier 2)」、「High(Tier 3)」の3つの項目とも行います。
+      ![StandardShader2](img/SetupSDK_External_13.jpg)

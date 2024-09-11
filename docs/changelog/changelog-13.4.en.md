@@ -1,5 +1,86 @@
 # SDK Manual Change Log - Ver 13.4
 
+## August 9 2024 Update
+
+## August 9 2024 - Edited Pages
+
+- About VketCloudSDK
+    - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
+        - Updated descriptions and images
+- World Making Guide
+    - [Movable Clickable Object](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/MovableClickableObject.html)
+        - Fixed the inconsistency in the label of the VKC components.
+    - [Physics Engine](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/PhysicsEngine.html)
+        - Updated descriptions and images
+- VKC Component 
+    - Fixed the inconsistency in the label of the VKC components.
+- HeliScript
+    - Built-in Types
+        - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_var.html)
+          - Fixed the inconsistency in the label of the type "NULL".
+    - Built-in Classes And Functions
+        - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
+            - Fixed the inconsistency in the label of the VKC components.
+            - Added euler angles to the description of the GetWorldRotate method
+        - [Setting up a Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/Skybox.html)
+            - Updated descriptions
+
+---
+
+## August 2 2024 Update
+
+## August 2 2024 - Edited Pages
+
+- Vket Cloud Settings
+
+- SDK Tools
+  - GUITools
+    - [Overview and Setup](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/GUITools/Setup.html)
+      - Added note about infinite installation issue, and how to resolve it by restarting Unity project
+- VKC Components
+  - [VKC/HEO Component Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCHEOCorrespondenceTable.html)
+    - Renamed page title
+    - Added an overview description for Item, Node
+  - VKCSettings
+        - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/AvatarSettings.html)
+        - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/CameraSettings.html)
+        - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/RenderingSettings.html)
+            - Updated descriptions and images
+  - VKCItem
+        - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
+            - Updated descriptions and images
+  - VKCAttribute
+        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCAttributeProperty.html)
+            - Updated descriptions and images
+            - Changed instructions for defining property on Activity
+            - Added change of function for SetProperty
+- HeliScript
+  - Built-in Classes And Functions
+    - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_date.html)
+      - Removed duplicate method descriptions
+
+---
+
+## July 26 2024 Update
+
+## July 26 2024 - Edited Pages
+
+- VKC Components
+  - VKCItem
+    - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+      - Updated descriptions and images
+  - VKCSetting
+      - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/DespawnHeightSettings.html)
+          - Updated descriptions, updated images
+      - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VketCloudSettings/PlayerSettings.html)
+          - updated images
+      - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
+          - add description of File Deployment Mode
+      - [VKC Setting Nameplate](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCSettingNameplate.html)
+      - Updated images
+
+---
+
 ## July 19 2024 Update
 
 ## July 19 2024 - Added Pages
