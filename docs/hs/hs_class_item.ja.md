@@ -1,11 +1,12 @@
 # Item クラス
 
 Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
-[VKC Item Field](../VKCComponents/VKCItemField.md), [VKC Item Object](../VKCComponents/VKCItemObject.md), [VKC Item Plane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md)などがこれにあたります。
 
-Itemクラスは、ワールド内に配置された[VKC Item Field](../VKCComponents/VKCItemField.md)及びその子オブジェクトであるNodeなど、個々のアイテムをHeliScriptにて操作するためのものです。
+Itemは、VKC Item Field、VKC Item Objectなど、VketCloudSDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
 
-hsItemGet() などの関数を呼び出すことで、特定のアイテムを表すItemクラスのインスタンスを取得できます。
+Itemクラスは、上記のItemをHeliScriptにて操作するためのものです。
+
+hsItemGet() などの関数を呼び出すことで、Itemクラスのインスタンスを取得できます。
 
 Itemクラスは多くのメソッドを持ち、これらのメソッドを呼び出すことで、様々な操作を行うことが可能です。
 
@@ -30,7 +31,7 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-グローバル関数。指定した名前で VKC Item Field 以下のアイテムを取得し、Itemクラスのインスタンスとして返す。
+グローバル関数。指定した名前でItemを取得する。
 
 ### hsItemGetSelf
 
@@ -102,6 +103,8 @@ Item を指定した座標に移動させる。
 
 Item の座標を取得する。
 
+このItemがActivityの中にある場合、取得できる値はActivityからの相対座標になります。
+
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
@@ -118,6 +121,13 @@ Item の座標を取得する。
 `public Vector3 GetWorldPos()`
 
 Item のワールド座標を取得する。
+
+このItemがどこにあるのか(Activityの外か中か)に関わらず、常にワールド空間における座標を返します。
+
+??? warning "使用上の注意"
+    Activityの場合でワールド座標を取得したいときはこちらを使用してください。
+    
+    Activityではない場合は通常はGetPosを使用してください。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -406,8 +416,7 @@ Item がロード中の場合は true を、そうでない場合は false を�
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
-    - [VKC Item AreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -425,7 +434,6 @@ Item のロードが完了していた場合は true を、そうでない場合
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)

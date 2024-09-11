@@ -1,11 +1,12 @@
 # Item class
 
 On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
-For example, objects defined as items are [VKCItemField](../VKCComponents/VKCItemField.md), [VKCItemObject](../VKCComponents/VKCItemObject.md), [VKCItemPlane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md), and other objects.
 
-The Item class is for handling such Items, and "Nodes" which are child objects of [VKCItemField](../VKCComponents/VKCItemField.md) on HeliScript.
+Items can be output to the scene by placing and configuring game objects with components added by VketCloudSDK, such as VKC Item Field and VKC Item Object.
 
-An Item class object is obtainable by specifying the item name with hsItemGet() or running hsItemGetSelf().
+The Item class is used to manipulate the above-mentioned Item in HeliScript.
+
+You can retrieve an instance of the Item class by calling functions such as hsItemGet().
 
 Item class has various methods to operate the obtained Item object.
 
@@ -30,7 +31,7 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-Global function. Obtains the Item located under [VKCItemField](../VKCComponents/VKCItemField.md) and returns it as an Item instance.
+Global Function. Gets an Item by the specified name.
 
 ### hsItemGetSelf
 
@@ -102,6 +103,8 @@ Move Item to the designated position.
 
 Get the local position of Item.
 
+If this Item is inside a VKC Item Activity, the obtained value will be the coordinates relative to the VKC Item Activity.
+
 ??? note "Available object types for this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
@@ -118,6 +121,13 @@ Get the local position of Item.
 `public Vector3 GetWorldPos()`
 
 Get the world position of Item.
+
+Regardless of where this Item is located (inside or outside of a VKC Item Activity), it always returns the coordinates in world space.
+
+??? warning Usage Caution
+    Use this method when you want to obtain world coordinates in the case of an Activity.
+
+    If it is not an Activity, use GetPos for most of the time.
 
 ??? note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -406,7 +416,6 @@ Returns true if the Item is loading, false otherwise.
 ??? note "Available object types for this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -424,7 +433,6 @@ Returns true if the Item has finished loading, false otherwise.
 ??? note "Available object types for this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)

@@ -229,6 +229,7 @@ plugins:
             Item Class: Itemクラス
             Player Class: Playerクラス
             Date Class: Dateクラス
+            HSMessage Class: HSMessageクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -318,6 +319,7 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
+    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - GUITools: 
       - Overview & Setup: GUITools/Setup.md
       - How to Use: GUITools/HowToUse.md
@@ -459,6 +461,7 @@ nav:
         - Item Class: hs/hs_class_item.md
         - Player Class: hs/hs_class_player.md
         - Date Class: hs/hs_class_date.md
+        - HSMessage Class: hs/hs_class_hsmessage.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md

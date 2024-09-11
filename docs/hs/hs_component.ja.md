@@ -220,7 +220,7 @@ public void OnEnterViewCollider(string NodeName)
 public void OnLeaveViewCollider(string NodeName)
 ```
 
-HEOColliderで「InView」を指定したコライダーが視野内に入った場合または視野外に出た場合に呼び出されます。
+[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)で「InView」を指定したコライダーが視野内に入った場合または視野外に出た場合に呼び出されます。
 
 コンポーネントは同一のアイテムに設定する必要があります。
 

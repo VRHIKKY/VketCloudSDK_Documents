@@ -1,5 +1,90 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年9月6更新
+
+## 2024年9月6日 - 変更されたページ
+- HeliScript
+  - 組み込みクラス・関数
+    - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+      - 'GetPos'と'GetWorldPos'の説明を修正
+    - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_player.html)
+      - Player.SetRotateにCameraRotateの引数を追加
+
+---
+
+## 2024年8月30日更新
+
+## 2024年8月30日 - 追加されたページ
+- SDKTools
+  - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/AutoTextureCompressor.html)
+
+## 2024年8月30日 - 変更されたページ
+- HeliScript
+  - 英訳を更新：
+    - 組み込み型
+        - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
+        - [文字列(string)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_string.html)
+        - [デリゲート(delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_delegate.html)
+    - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_component.html)
+    - 組み込みクラス・関数
+        - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_date.html)
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+    - 組み込み関数
+        - [HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_gui_HSGUIModel.html)
+        - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_camera.html)
+        - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_commondialog.html)
+        - [レンダリング](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_rendering.html)
+    - 文法と制御構文
+        - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_statement_control.html)
+
+  - 組み込みクラス・関数
+    - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+      - 'Isloading'と'IsLoaded'の対応するオブジェクトタイプからVKC Item Audioを外す
+
+---
+
+## 2024年8月23日更新
+
+## 2024年8月23日 - 追加されたページ
+- リリースノート
+    - [v13.7](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/ja/releasenote/releasenote-13.7.html)
+        - v13.7のリリースノートの新しいページを追加
+- HeliScript
+    - 組み込みクラス・関数
+        - [HSMessageクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_hsmessage.html)
+    - 組み込み関数
+        - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_system_function_commondialog.html)
+            - 表記をhsSystemOutputに統一
+
+## 2024年8月23日 - 変更されたページ
+
+
+- VKC Component
+    - VKC Setting
+        - [VKC Setting Spawn](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCSettingSpawn.html)
+            - 説明文および画像を更新
+    - VKC Item
+        - [VKC Item Area Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAreaCollider.html)
+            - 説明文および画像を更新
+        - [VKC Item Spot](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemSpot.html)
+            - 説明文および画像を更新
+
+---
+
+## 2024年8月16日更新
+
+## 2024年8月16日 - 変更されたページ
+
+- VKC Component
+    - VKC Item
+        - [VKC Item Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemCamera.html)
+        - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemParticle.html)
+            - 説明文および画像を更新
+        - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAudio.html)
+            - 説明文および画像を更新
+
+---
+
 ## 2024年8月9日更新
 
 ## 2024年8月9日 - 変更されたページ
@@ -18,6 +103,13 @@
         - 説明文を更新
 - VKC Component
     - 見出しのVKCコンポーネント表記ゆれ問題を修正
+    - VKC Attribute
+        - [VKC Attribute Show Flag](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCAttributeShowFlag.html)
+    - VKC Item
+        - [VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemBackgroundTexture.html)
+            - 説明文および画像を更新
+        - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemTextPlane.html)
+            - 説明文および画像を更新
 - HeliScript
     - 組み込み型
         - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_var.html)
@@ -42,15 +134,15 @@
     - 題名を更新
     - Item, Node各要素について概要を追加
   - VKCSetting
-        - [VKCSettingAvatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/AvatarSettings.html)
-        - [VKCSettingWorldCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
-        - [VKCSettingRendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/RenderingSettings.html)
+        - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/AvatarSettings.html)
+        - [VKC Setting World Camera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/CameraSettings.html)
+        - [VKC Setting Rendering](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/RenderingSettings.html)
             - 説明文および画像を更新
   - VKCItem
-        - [VKCItemPlane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+        - [VKC Item Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
             - 説明文および画像を更新
   - VKCAttribute
-        - [VKCAttributeProperty](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCAttributeProperty.html)
+        - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCAttributeProperty.html)
             - 説明文および画像を更新
             - アクティビティにおけるプロパティの定義方法について解説を変更
             - SetPropertyの挙動変更について追記
@@ -70,9 +162,9 @@
     - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
       - 説明文および画像を更新
   - VKCSetting
-    - [VKCSetttingDespawnHeight](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/DespawnHeightSettings.html)
+    - [VKC Settting Despawn Height](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/DespawnHeightSettings.html)
         - 説明文および画像を更新
-    - [VKCSettingPlayer](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/PlayerSettings.html)
+    - [VKC Setting Player](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/PlayerSettings.html)
         - 画像を更新
     - [VKC Setting Base](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VketCloudSettings/BasicSettings.html)
         - File Deployment Modeについて追記
