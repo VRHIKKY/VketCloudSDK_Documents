@@ -25,6 +25,10 @@ Also, we recommend the below systems when entering your world built with VketClo
 - PC: A computer that supports web browsers such as Chrome / Firefox / Safari / Edge.
 - iOS: iPhone X or later, iPhone SE (2nd generation) or later
 - Android: Android 11 or later / RAM: 8GB or more / For Google Pixel series, Pixel 5 or later
+- IDE: When editing HeliScript, Visual Studio is not recommended. Please use Visual Studio Code.
+
+!!! note warning
+    When you open and save heliscript created with Unity VketCloudSDK in Visual Studio, it may become ANSI, and you may not be able to build.
 
 ---
 

@@ -19,6 +19,10 @@ VketCloudSDKは、以下のUnity環境が必要です。
 - PC: Chrome / Firefox / Safari / Edge等のWebブラウザが使用できるもの。
 - iOS: iPhone X以降、iPhone SE（第2世代）以降
 - Android: Android 11.0以降、RAM 8GB以上（Google Pixelなら Pixel 5以降）
+- IDE: HeliScriptを編集する際は Visual Studioは非推奨となり、Visual Studio Codeをご使用ください。
+
+!!! note warning
+Visual StudioでUnity VketCloudSDKで作成されたheliscriptを開き保存するとANSIになり、ビルドが出来なくなってしまう場合があります。
 
 ---
 
