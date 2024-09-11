@@ -1335,6 +1335,8 @@
       
         
       
+        
+      
     
     
     
@@ -1672,6 +1674,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../SDKTools/AutoTextureCompressor.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Texture Compressor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1688,10 +1711,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" >
         
           
-          <label class="md-nav__link" for="__nav_7_11" id="__nav_7_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1702,8 +1725,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12">
             <span class="md-nav__icon md-icon"></span>
             GUITools
           </label>
@@ -3218,6 +3241,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    VKC Attribute Show Flag
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="VKCAttributeShowFlag.html" class="md-nav__link md-nav__link--active">
         
   
@@ -3227,6 +3261,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-condition-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show Condition Types
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5302,6 +5373,8 @@
       
         
       
+        
+      
     
     
     
@@ -5447,6 +5520,27 @@
   
   <span class="md-ellipsis">
     Dateクラス
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_class_hsmessage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HSMessageクラス
   </span>
   
 
@@ -9454,6 +9548,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-condition-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show Condition Types
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9468,19 +9588,31 @@
 
 
 <h1 id="vkc-attribute-show-flag">VKC Attribute Show Flag</h1>
-<p>HEOフィールド上のオブジェクトを表示/非表示にする場合に利用します。</p>
-<p><img alt="VKC Attribute Show Flag" src="img/HEOShowFlagJP.jpg" /></p>
+<p>VKC Item Field上のオブジェクトを表示/非表示にする場合に利用します。</p>
+<p><img alt="HEOShowFlag" src="img/VKCAttributeShowFlag_01.jpg" /></p>
 <table>
 <thead>
 <tr>
-<th>ラベル</th>
+<th>名称</th>
+<th>初期値</th>
 <th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>表示</code></td>
+<td>Show</td>
+<td>True</td>
 <td>チェックを外すことで非表示にできます。</td>
+</tr>
+<tr>
+<td>Depth Buffer Enable</td>
+<td>False</td>
+<td>デプスバッファに描き込むかどうかを指定します。</td>
+</tr>
+<tr>
+<td>Alpha Blend To Opaque</td>
+<td>False</td>
+<td>アルファブレンド描画を強制的に不透明描画パスで行います。</td>
 </tr>
 </tbody>
 </table>
@@ -9493,6 +9625,63 @@
 <li>非表示にするのは見た目のみで、コライダーなどの判定は機能します。</li>
 </ul>
 </div>
+<h2 id="advanced-options">Advanced Options</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>初期値</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show1 - show9</td>
+<td>True</td>
+<td>表示フラグ設定を切り替えます。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="show-condition-types">Show Condition Types</h2>
+<p>表示フラグは内部的には配列化されており、<code>show1</code>～<code>show9</code>まで個別に設定出来ます。<br />
+すべてのフラグのデフォルト値はTrueで、配列内の１つでもFalseであればFalseと判定されます。</p>
+<table>
+<thead>
+<tr>
+<th>種類</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>常にTrueを返す。</td>
+</tr>
+<tr>
+<td>False</td>
+<td>常にFalseを返す。</td>
+</tr>
+<tr>
+<td>Is Lang Ja</td>
+<td>言語設定が日本語かどうか。</td>
+</tr>
+<tr>
+<td>Is Not Lang Ja</td>
+<td>言語設定が日本語以外かどうか。</td>
+</tr>
+<tr>
+<td>Is Logined</td>
+<td>ログインしているかどうか。</td>
+</tr>
+<tr>
+<td>Is Not Logined</td>
+<td>ログインしていないかどうか。</td>
+</tr>
+</tbody>
+</table>
+<p>例えば、以下のように設定します。</p>
+<p><img alt="HEOShowFlag" src="img/VKCAttributeShowFlag_02.jpg" /></p>
+<p>この場合、他のHeliScriptなどの操作から<code>Show</code>がTrueになり、かつ<code>Is Lang Ja</code>がTrueであれば全体としてTrueとみなされ、表示されます。</p>
 
 
 

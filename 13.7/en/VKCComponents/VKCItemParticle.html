@@ -1335,6 +1335,8 @@
       
         
       
+        
+      
     
     
     
@@ -1672,6 +1674,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../SDKTools/AutoTextureCompressor.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Texture Compressor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1688,10 +1711,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" >
         
           
-          <label class="md-nav__link" for="__nav_7_11" id="__nav_7_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1702,8 +1725,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12">
             <span class="md-nav__icon md-icon"></span>
             GUITools
           </label>
@@ -2651,6 +2674,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    VKC Item Particle
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="VKCItemParticle.html" class="md-nav__link md-nav__link--active">
         
   
@@ -2660,6 +2694,49 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5302,6 +5379,8 @@
       
         
       
+        
+      
     
     
     
@@ -5447,6 +5526,27 @@
   
   <span class="md-ellipsis">
     Date Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_class_hsmessage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HSMessage Class
   </span>
   
 
@@ -9454,6 +9554,38 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9470,30 +9602,67 @@
 <h1 id="vkc-item-particle">VKC Item Particle</h1>
 <p><img alt="HEOParticle" src="../../VKCComponents/img/HEOParticle.jpg" /></p>
 <p>VKC Item Particle is a component that expands particles based on .hep format files. <br/></p>
+<p>You can output a .hep file with UnityEditor menu &gt; VketCloudSDK &gt; ExportParticle, but it is currently deprecated. <br/>
+Please use <a href="../particleeditor/pe_about_particleeditor.html">Particle Editor</a> to create .hep files instead.</p>
+<h2 id="settings">Settings</h2>
 <table>
 <thead>
 <tr>
 <th>Label</th>
+<th>Initial Value</th>
 <th>function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>.hep</td>
+<td>None</td>
 <td>Specifies the hep file.</td>
 </tr>
 <tr>
 <td>autoplay</td>
+<td>false</td>
 <td>Automatically play particles.</td>
 </tr>
 <tr>
 <td>loop</td>
+<td>false</td>
 <td>Loops particle playback.</td>
 </tr>
 </tbody>
 </table>
-<p>You can output a .hep file with UnityEditor menu &gt; VketCloudSDK &gt; ExportParticle, but it is currently deprecated. <br/>
-Please use <a href="../particleeditor/pe_about_particleeditor.html">Particle Editor</a> to create .hep files instead.</p>
+<h3 id="advanced">Advanced</h3>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Initial Value</th>
+<th>function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto Loading</td>
+<td>true</td>
+<td>Used for setting up <a href="VKCItemField.html">Dynamic Loading</a>. <br> The object will be loaded on the first load by default.</td>
+</tr>
+<tr>
+<td>Clickable</td>
+<td>false</td>
+<td>Toggle mouse interaction on object.</td>
+</tr>
+<tr>
+<td>Item Render Priority</td>
+<td>0</td>
+<td>Designates the Item's render priority. <br> For details, refer to <a href="../VketCloudSettings/RenderingSettings.html">RenderingSettings / Priority List</a></td>
+</tr>
+<tr>
+<td>Show Photo Mode</td>
+<td>true</td>
+<td>Specifies whether it is displayed in photo mode</td>
+</tr>
+</tbody>
+</table>
 
 
 

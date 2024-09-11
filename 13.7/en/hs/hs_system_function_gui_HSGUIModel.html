@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hsguimodel-summary" class="md-skip">
+        <a href="#built-in-functions-hsguimodel" class="md-skip">
           Skip to content
         </a>
       
@@ -1335,6 +1335,8 @@
       
         
       
+        
+      
     
     
     
@@ -1672,6 +1674,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../SDKTools/AutoTextureCompressor.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Texture Compressor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -1688,10 +1711,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" >
         
           
-          <label class="md-nav__link" for="__nav_7_11" id="__nav_7_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1702,8 +1725,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12">
             <span class="md-nav__icon md-icon"></span>
             GUITools
           </label>
@@ -5290,6 +5313,8 @@
       
         
       
+        
+      
     
     
     
@@ -5435,6 +5460,27 @@
   
   <span class="md-ellipsis">
     Date Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_class_hsmessage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HSMessage Class
   </span>
   
 
@@ -9823,285 +9869,278 @@
                   
 
 
-<h1 id="hsguimodel-summary">HSGUIModel - Summary</h1>
-<p>GUI要素のHSGUIModelクラス詳細</p>
+<h1 id="built-in-functions-hsguimodel">Built-in functions - HSGUIModel</h1>
+<p>Details about the <code>HSGUIModel</code> class used for GUI elements.</p>
 <h2 id="hsguimodel-types">HSGUIModel - Types</h2>
-<div class="codehilite"><pre><span></span><code>HSGUIModel() 
-{
-  m_Name = &quot;&quot;;
-  m_Type = &quot;&quot;;
-  m_Platform = &quot;&quot;;
-  m_Language = &quot;&quot;;
-  m_Show = false;
-  m_Pos = new HS2DI();
-  m_Size = new HS2DI();
-  m_Size.SetXY(100,100);
-  m_Z = 0;
-  m_Rotate = 0.0f;
-  m_RaycastTarget = true;
-  m_Pivot = new HS2D();
-  m_Pivot.SetXY(0.5f,0.5f);
-  m_Anchor = &quot;CM&quot;;
-  m_ParamText = new HSTextModel();
-  m_ParamImage = new HSImageModel();
-  m_ParamButton = new HSButtonModel();
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HSGUIModel</span><span class="p">()</span><span class="w"> </span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Show</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_Size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_Size</span><span class="p">.</span><span class="n">SetXY</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="m">100</span><span class="p">);</span>
+<span class="w">  </span><span class="n">m_Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Rotate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_RaycastTarget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Pivot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2D</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_Pivot</span><span class="p">.</span><span class="n">SetXY</span><span class="p">(</span><span class="m">0.5f</span><span class="p">,</span><span class="m">0.5f</span><span class="p">);</span>
+<span class="w">  </span><span class="n">m_Anchor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CM&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_ParamText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSTextModel</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_ParamImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSImageModel</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_ParamButton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSButtonModel</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hsguimodel-functions">HSGUIModel - Functions</h2>
 <h3 id="setname">SetName</h3>
 <p><code>void SetName(string Name)</code></p>
-<p>GUIのNameを設定する。</p>
+<p>Sets the name of the GUI element.</p>
 <h3 id="settype">SetType</h3>
 <p><code>void SetType(string Type)</code></p>
-<p>GUIのTypeを設定する。</p>
+<p>Sets the type of the GUI element.</p>
 <h3 id="setplatform">SetPlatform</h3>
 <p><code>void SetPlatform(string Platform)</code></p>
-<p>GUIのPlatformを設定する。</p>
-<p>使用想定はスマホかPCでButtonやImageの画像を変更したい場合で、</p>
-<p>"_sp"を設定した場合、画像の名前の語尾にその文字列を追加し、画像を差し替えることが出来る。</p>
+<p>Sets the platform for the GUI element. This can be used to adjust images based on the platform (e.g., adding "_sp" to image filenames for smartphones).</p>
 <h3 id="setlanguage">SetLanguage</h3>
 <p><code>void SetLanguage(string Language)</code></p>
-<p>GUIのLanguageを設定する。</p>
-<p>使用想定はButtonやImageの画像を変更したい場合で、</p>
-<p>"_en"を設定した場合、画像の名前の語尾にその文字列を追加し、画像を差し替えることが出来る。</p>
+<p>Sets the language for the GUI element. This can be used to adjust images based on the language (e.g., adding "_en" to image filenames for English).</p>
 <h3 id="setshow">SetShow</h3>
 <p><code>void SetShow(bool Show)</code></p>
-<p>GUIの表示/非表示を設定する。</p>
+<p>Sets whether the GUI element is visible.</p>
 <h3 id="setpos">SetPos</h3>
 <p><code>void SetPos(HS2DI Pos)</code></p>
-<p>GUIの座標を設定する。</p>
+<p>Sets the position of the GUI element.</p>
 <h3 id="setsize">SetSize</h3>
 <p><code>void SetSize(HS2DI Size)</code></p>
-<p>GUIの大きさを設定する。</p>
+<p>Sets the size of the GUI element.</p>
 <h3 id="setz">SetZ</h3>
 <p><code>void SetZ(int Z)</code></p>
-<p>GUIのZ軸を設定する。</p>
+<p>Sets the Z-order of the GUI element.</p>
 <h3 id="setrotate">SetRotate</h3>
 <p><code>void SetRotate(float Rotate)</code></p>
-<p>GUIの角度を設定する。</p>
+<p>Sets the rotation angle of the GUI element.</p>
 <h3 id="setraycasttarget">SetRaycastTarget</h3>
 <p><code>void SetRaycastTarget(bool RaycastTarget)</code></p>
-<p>GUIがマウスに当たるかどうかを設定する。</p>
+<p>Sets whether the GUI element can interact with mouse events.</p>
 <h3 id="setpivot">SetPivot</h3>
 <p><code>void SetPivot(HS2D Pivot)</code></p>
-<p>GUIのPivotを設定する。</p>
+<p>Sets the pivot point of the GUI element.</p>
 <h3 id="setanchor">SetAnchor</h3>
 <p><code>void SetAnchor(string Anchor)</code></p>
-<p>GUIのAnchorを設定する。</p>
-<p>Anchorには<code>LT</code>,<code>LM</code>,<code>LB</code>,<code>CT</code>,<code>CM</code>,<code>CB</code>,<code>RT</code>,<code>RM</code>,<code>RB</code>が設定できる。</p>
+<p>Sets the anchor point of the GUI element. Options include <code>LT</code>, <code>LM</code>, <code>LB</code>, <code>CT</code>, <code>CM</code>, <code>CB</code>, <code>RT</code>, <code>RM</code>, <code>RB</code>.</p>
 <h3 id="settextmodel">SetTextModel</h3>
 <p><code>void SetTextModel(HSTextModel Model)</code></p>
-<p>GUIのTextModelを設定できる。</p>
-<p>TextModelについては、後述する。</p>
+<p>Sets the text model for the GUI element. Details of <code>HSTextModel</code> are provided later.</p>
 <h3 id="setimagemodel">SetImageModel</h3>
 <p><code>void SetImageModel(HSImageModel Model)</code></p>
-<p>GUIのImageModelを設定できる。</p>
-<p>ImageModelについては、後述する。</p>
+<p>Sets the image model for the GUI element. Details of <code>HSImageModel</code> are provided later.</p>
 <h3 id="setbuttonmodel">SetButtonModel</h3>
 <p><code>void SetButtonModel(HSButtonModel Model)</code></p>
-<p>GUIのButtonModelを設定できる。</p>
-<p>ButtonModelについては、後述する。</p>
+<p>Sets the button model for the GUI element. Details of <code>HSButtonModel</code> are provided later.</p>
 <hr />
-<h1 id="hsguimodel-">HSGUIModel - 汎用クラス</h1>
+<h1 id="hsguimodel-common-classes">HSGUIModel - Common Classes</h1>
 <h2 id="hscolor-summary">HSColor - Summary</h2>
-<p>HSColorクラス</p>
+<p>Represents color in the GUI.</p>
 <h2 id="hscolor-types">HSColor - Types</h2>
-<div class="codehilite"><pre><span></span><code>HSColor()
-{
-  m_R = 0.0f;
-  m_G = 0.0f;
-  m_B = 0.0f;
-  m_A = 1.0f;
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HSColor</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_R</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_G</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.0f</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hscolor-functions">HSColor - Functions</h2>
 <h3 id="setcolor">SetColor</h3>
 <p><code>void SetColor(HSColor color)</code></p>
-<p>HSColor型で色を設定する。</p>
+<p>Sets the color using an <code>HSColor</code> object.</p>
 <h3 id="setrgb">SetRGB</h3>
-<p><code>void SetRGB(float red,float green,float blue)</code></p>
-<p>float型の<code>R</code>,<code>G</code>,<code>B</code>で色を設定する。</p>
+<p><code>void SetRGB(float red, float green, float blue)</code></p>
+<p>Sets the color using RGB values.</p>
 <h3 id="setrgba">SetRGBA</h3>
-<p><code>void SetRGBA(float red,float green,float blue,float alpha)</code></p>
-<p>float型の<code>R</code>,<code>G</code>,<code>B</code>,<code>A</code>で色を設定する。</p>
+<p><code>void SetRGBA(float red, float green, float blue, float alpha)</code></p>
+<p>Sets the color using RGBA values.</p>
 <h2 id="hs2di-summary">HS2DI - Summary</h2>
-<p>HS2DIクラス</p>
+<p>Represents a 2D integer vector.</p>
 <h2 id="hs2di-types">HS2DI - Types</h2>
-<div class="codehilite"><pre><span></span><code>HS2DI()
-{
-  m_X = 0;
-  m_Y = 0;
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HS2DI</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hs2di-functions">HS2DI - Functions</h2>
 <h3 id="sets2di">SetS2DI</h3>
 <p><code>void SetS2DI(HS2DI s2di)</code></p>
-<p>HS2DI型で2DIを設定する。</p>
+<p>Sets the 2D vector using another <code>HS2DI</code> object.</p>
 <h3 id="setxy">SetXY</h3>
-<p><code>void SetXY(int _x,int _y)</code></p>
-<p>int型の<code>X</code>,<code>Y</code>で2DIを設定する。</p>
+<p><code>void SetXY(int _x, int _y)</code></p>
+<p>Sets the 2D vector using X and Y values.</p>
 <h2 id="hs2d-summary">HS2D - Summary</h2>
-<p>HS2Dクラス</p>
+<p>Represents a 2D float vector.</p>
 <h2 id="hs2d-types">HS2D - Types</h2>
-<div class="codehilite"><pre><span></span><code>HS2D()
-{
-  m_X = 0.0f;
-  m_Y = 0.0f;
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HS2D</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hs2d-functions">HS2D - Functions</h2>
 <h3 id="sets2di_1">SetS2DI</h3>
 <p><code>void SetS2D(HS2D s2d)</code></p>
-<p>HS2D型で2Dを設定する。</p>
+<p>Sets the 2D vector using another <code>HS2D</code> object.</p>
 <h3 id="setxy_1">SetXY</h3>
-<p><code>void SetXY(float _x,float _y)</code></p>
-<p>float型の<code>X</code>,<code>Y</code>で2Dを設定する。</p>
+<p><code>void SetXY(float _x, float _y)</code></p>
+<p>Sets the 2D vector using X and Y float values.</p>
 <h2 id="hsrect-summary">HSRect - Summary</h2>
-<p>HSRectクラス</p>
+<p>Represents a rectangular area.</p>
 <h2 id="hsrect-types">HSRect - Types</h2>
-<div class="codehilite"><pre><span></span><code>HSRect()
-{
-  m_Pos = new HS2DI();
-  m_Size = new HS2DI();
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HSRect</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_Pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_Size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hsrect-functions">HSRect - Functions</h2>
 <h3 id="setrect">SetRect</h3>
-<p><code>void SetRect(HS2DI pos,HS2DI size)</code></p>
-<p>HS2DI型の座標と大きさでRectを設定する。</p>
+<p><code>void SetRect(HS2DI pos, HS2DI size)</code></p>
+<p>Sets the rectangle using position and size.</p>
 <h3 id="setxywh">SetXYWH</h3>
-<p><code>void SetXYWH(int _x,int _y,int _w,int _h)</code></p>
-<p><code>x</code>,<code>y</code>,<code>width</code>,<code>height</code>でRectを設定する。</p>
+<p><code>void SetXYWH(int _x, int _y, int _w, int _h)</code></p>
+<p>Sets the rectangle using X, Y, width, and height.</p>
 <h2 id="hsrectltrb-summary">HSRectLTRB - Summary</h2>
-<p>HSRectLTRBクラス</p>
+<p>Represents a rectangle using left, top, right, and bottom coordinates.</p>
 <h2 id="hsrectltrb-types">HSRectLTRB - Types</h2>
-<div class="codehilite"><pre><span></span><code>HSRectLTRB()
-{
-  m_PosLT = new HS2DI();
-  m_PosRB = new HS2DI();
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HSRectLTRB</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_PosLT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_PosRB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hsrectltrb-functions">HSRectLTRB - Functions</h2>
 <h3 id="setrectltrb">SetRectLTRB</h3>
-<p><code>void SetRectLTRB(HS2DI LT,HS2DI RB)</code></p>
-<p>HS2DI型の右上と左下の座標と大きさでRectLTRBを設定する。</p>
+<p><code>void SetRectLTRB(HS2DI LT, HS2DI RB)</code></p>
+<p>Sets the rectangle using top-left and bottom-right coordinates.</p>
 <h3 id="setltrb">SetLTRB</h3>
-<p><code>void SetLTRB(int _l,int _t,int _r,int _b)</code></p>
-<p><code>left</code>,<code>top</code>,<code>right</code>,<code>bottom</code>でRectLTRBを設定する。</p>
-<h1 id="hsguimodel-guitype">HSGUIModel - GUIType</h1>
+<p><code>void SetLTRB(int _l, int _t, int _r, int _b)</code></p>
+<p>Sets the rectangle using left, top, right, and bottom values.</p>
+<hr />
+<h1 id="hsguimodel-gui-types">HSGUIModel - GUI Types</h1>
 <h2 id="hstextmodel-summary">HSTextModel - Summary</h2>
-<p>HSTextModel クラス</p>
+<p>Represents a text element in the GUI.</p>
 <h2 id="hstextmodel-types">HSTextModel - Types</h2>
-<div class="codehilite"><pre><span></span><code>HSTextModel()
-{
-  m_FontSize = 16;
-  m_FontFamily = &quot;&quot;;
-  m_Color = new HSColor();
-  m_URLColor = new HSColor();
-  m_URLColor.SetRGB(0.0f,0.0f,1.0f);
-  m_Text = &quot;&quot;;
-  m_Alignment = &quot;LT&quot;;
-  m_CharaSpace = 0;
-  m_LineSpace = 0;
-  m_OverflowWrap = false;
-  m_URLClickable = false;
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HSTextModel</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_FontSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_FontFamily</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSColor</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_URLColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSColor</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_URLColor</span><span class="p">.</span><span class="n">SetRGB</span><span class="p">(</span><span class="m">0.0f</span><span class="p">,</span><span class="m">0.0f</span><span class="p">,</span><span class="m">1.0f</span><span class="p">);</span>
+<span class="w">  </span><span class="n">m_Text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Alignment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;LT&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_CharaSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_LineSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_OverflowWrap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_URLClickable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hstextmodel-functions">HSTextModel - Functions</h2>
 <h3 id="setfontsize">SetFontSize</h3>
 <p><code>void SetFontSize(int FontSize)</code></p>
-<p>Textのフォントサイズを設定する。</p>
+<p>Sets the font size of the text.</p>
 <h3 id="setfontfamily">SetFontFamily</h3>
 <p><code>void SetFontFamily(string FontFamily)</code></p>
-<p>TextのFontFamilyを設定する。</p>
+<p>Sets the font family of the text.</p>
 <h3 id="setcolor_1">SetColor</h3>
 <p><code>void SetColor(HSColor Color)</code></p>
-<p>Textの色を設定する。</p>
+<p>Sets the color of the text.</p>
 <h3 id="seturlcolor">SetURLColor</h3>
 <p><code>void SetURLColor(HSColor Color)</code></p>
-<p>TextのURLの色を設定する。</p>
+<p>Sets the color of URLs in the text.</p>
 <h3 id="settext">SetText</h3>
 <p><code>void SetText(string Text)</code></p>
-<p>Textの文字を設定する。</p>
+<p>Sets the text content.</p>
 <h3 id="setalignment">SetAlignment</h3>
 <p><code>void SetAlignment(string Alignment)</code></p>
-<p>Textの表示位置を設定する。</p>
-<p>Alignmentには<code>LT</code>,<code>LM</code>,<code>LB</code>,<code>CT</code>,<code>CM</code>,<code>CB</code>,<code>RT</code>,<code>RM</code>,<code>RB</code>が設定できる。</p>
+<p>Sets the alignment of the text. Options include <code>LT</code>, <code>LM</code>, <code>LB</code>, <code>CT</code>, <code>CM</code>, <code>CB</code>, <code>RT</code>, <code>RM</code>, <code>RB</code>.</p>
 <h3 id="setcharaspace">SetCharaSpace</h3>
 <p><code>void SetCharaSpace(int CharaSpace)</code></p>
-<p>Textの間隔を設定する。</p>
+<p>Sets the character spacing.</p>
 <h3 id="setlinespace">SetLineSpace</h3>
 <p><code>void SetLineSpace(int LineSpace)</code></p>
-<p>Textの上下の間隔を設定する。</p>
+<p>Sets the line spacing.</p>
 <h3 id="setoverflowwrap">SetOverflowWrap</h3>
 <p><code>void SetOverflowWrap(bool OverflowWrap)</code></p>
-<p>Textの範囲内で折り返すかどうかを設定する。</p>
+<p>Sets whether the text should wrap within the available space.</p>
 <h3 id="seturlclickable">SetURLClickable</h3>
 <p><code>void SetURLClickable(bool URLClickable)</code></p>
-<p>TextのURLをクリックできるかどうかを設定をする。</p>
+<p>Sets whether URLs in the text can be clicked.</p>
 <h2 id="hsimagemodel-summary">HSImageModel - Summary</h2>
-<p>HSImageModel クラス</p>
+<p>Represents an image element in the GUI.</p>
 <h2 id="hsimagemodel-types">HSImageModel - Types</h2>
-<div class="codehilite"><pre><span></span><code>HSImageModel()
-{
-  m_Uri = &quot;&quot;;
-  m_UVArea = new HSRect();
-  m_LTRB = new HSRectLTRB();
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HSImageModel</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_Uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_UVArea</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRect</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_LTRB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRectLTRB</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hsimagemodel-functions">HSImageModel - Functions</h2>
 <h3 id="seturi">SetURI</h3>
 <p><code>void SetURI(string uri)</code></p>
-<p>画像のアドレスを設定する。</p>
+<p>Sets the URI for the image.</p>
 <h3 id="setuvarea">SetUVArea</h3>
 <p><code>void SetUVArea(HSRect UVArea)</code></p>
-<p>画像のUVAreaを設定する。</p>
+<p>Sets the UV area for the image.</p>
 <h3 id="setltrb_1">SetLTRB</h3>
 <p><code>void SetLTRB(HSRectLTRB LTRB)</code></p>
-<p>画像のLTRBを設定する。</p>
+<p>Sets the LTRB for the image.</p>
 <h2 id="hsbuttonmodel-summary">HSButtonModel - Summary</h2>
-<p>HSButtonModel クラス</p>
+<p>Represents a button element in the GUI.</p>
 <h2 id="hsbuttonmodel-types">HSButtonModel - Types</h2>
-<div class="codehilite"><pre><span></span><code>HSButtonModel()
-{
-  m_FileName = &quot;&quot;;
-  m_OnCursorFileName = &quot;&quot;;
-  m_DownFileName = &quot;&quot;;
-  m_ClickAreaSize = new HS2DI();
-  m_UVArea = new HSRect();
-  m_LTRB = new HSRectLTRB();
-  m_OnKeyDownMulColor = new HSColor();
-  m_OnKeyDownMulColor.SetRGB(1.0f,1.0f,1.0f);
-}
+<div class="codehilite"><pre><span></span><code><span class="n">HSButtonModel</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">m_FileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_OnCursorFileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_DownFileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_ClickAreaSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_UVArea</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRect</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_LTRB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRectLTRB</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_OnKeyDownMulColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSColor</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_OnKeyDownMulColor</span><span class="p">.</span><span class="n">SetRGB</span><span class="p">(</span><span class="m">1.0f</span><span class="p">,</span><span class="m">1.0f</span><span class="p">,</span><span class="m">1.0f</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <h2 id="hsbuttonmodel-functions">HSButtonModel - Functions</h2>
 <h3 id="setfilename">SetFileName</h3>
 <p><code>void SetFileName(string FileName)</code></p>
-<p>Buttonが通常時の画像のURIを設定する。</p>
-<h3 id="setoncursorfilename">SetOnCursorFileName</h3>
-<p><code>void SetOnCursorFileName(string OnCursorFileName)</code></p>
-<p>Buttonがマウスカーソルが乗っている時の画像のURIを設定する。</p>
+<p>Sets the URI for the button's normal state image.</p>
+<h3 id="setoncursorfile">SetOnCursorFile</h3>
+<p>Name
+<code>void SetOnCursorFileName(string OnCursorFileName)</code></p>
+<p>Sets the URI for the button's hover state image.</p>
 <h3 id="setdownfilename">SetDownFileName</h3>
 <p><code>void SetDownFileName(string DownFileName)</code></p>
-<p>Buttonがマウスカーソルがクリックされている時の画像のURIを設定する。</p>
+<p>Sets the URI for the button's clicked state image.</p>
 <h3 id="setclickareasize">SetClickAreaSize</h3>
 <p><code>void SetClickAreaSize(HS2DI ClickAreaSize)</code></p>
-<p>Buttonのクリック範囲を設定する。</p>
+<p>Sets the clickable area of the button.</p>
 <h3 id="setuvarea_1">SetUVArea</h3>
 <p><code>void SetUVArea(HSRect UVArea)</code></p>
-<p>Buttonの画像のUVAreaの設定をする。</p>
+<p>Sets the UV area for the button's image.</p>
 <h3 id="setltrb_2">SetLTRB</h3>
 <p><code>void SetLTRB(HSRectLTRB LTRB)</code></p>
-<p>Buttonの画像のLTRBの設定をする。</p>
+<p>Sets the LTRB for the button's image.</p>
 
 
 

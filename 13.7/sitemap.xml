@@ -393,6 +393,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/HEMAnimationConverter/AnimationConverter.html"/>
     </url>
     <url>
+        <loc>NoneSDKTools/AutoTextureCompressor.html</loc>
+        <lastmod>2024-09-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneSDKTools/AutoTextureCompressor.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/SDKTools/AutoTextureCompressor.html"/>
+    </url>
+    <url>
         <loc>NoneSDKTools/BuildOption.html</loc>
         <lastmod>2024-09-11</lastmod>
         <changefreq>daily</changefreq>
@@ -1315,6 +1322,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_class_date.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_class_date.html"/>
+    </url>
+    <url>
+        <loc>Nonehs/hs_class_hsmessage.html</loc>
+        <lastmod>2024-09-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_class_hsmessage.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_class_hsmessage.html"/>
     </url>
     <url>
         <loc>Nonehs/hs_class_item.html</loc>
@@ -2367,6 +2381,13 @@
         <xhtml:link rel="alternate" hreflang="ja" href="NoneHEMAnimationConverter/AnimationConverter.html"/>
     </url>
     <url>
+        <loc>Noneen/SDKTools/AutoTextureCompressor.html</loc>
+        <lastmod>2024-09-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/SDKTools/AutoTextureCompressor.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneSDKTools/AutoTextureCompressor.html"/>
+    </url>
+    <url>
         <loc>Noneen/SDKTools/BuildOption.html</loc>
         <lastmod>2024-09-11</lastmod>
         <changefreq>daily</changefreq>
@@ -3289,6 +3310,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_class_date.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_class_date.html"/>
+    </url>
+    <url>
+        <loc>Noneen/hs/hs_class_hsmessage.html</loc>
+        <lastmod>2024-09-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_class_hsmessage.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_class_hsmessage.html"/>
     </url>
     <url>
         <loc>Noneen/hs/hs_class_item.html</loc>
