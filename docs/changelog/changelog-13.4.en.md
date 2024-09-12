@@ -1,14 +1,40 @@
 # SDK Manual Change Log - Ver 13.4
 
+## September 13 2024 Update
+
+## September 13 2024 - Edited Pages
+- HeliScript
+    - Built-in Classes And Functions
+        - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
+            - Change to expand the list of callable object types for each method by default
+- VKC Components
+    - VKC Item
+        - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemActivity.html)
+            - Add a list of available Item classes using this object type
+        - [VKCItemAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemAreaCollider.html)
+            - Add a list of available Item classes using this object type
+        - [VKCItemAudio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemAudio.html)
+            - Add a list of available Item classes using this object type
+        - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemBackgroundTexture.html)
+            - Add a list of available Item classes using this object type
+        - [VKCItemCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemCamera.html)
+            - Add a list of available Item classes using this object type      
+        - [VKCItemField](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemField.html)
+            - Add a list of available Item classes using this object type
+        - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemObject.html)
+            - Add a list of available Item classes using this object type
+
+---
+
 ## September 6 2024 Update
 
 ## September 6 2024 - Edited Pages
 - HeliScript
-  - Built-in Classes And Functions
-    - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
-      - Updated description about 'GetPos' and 'GetWorldPos'method
-    - [Player Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_player.html)
-      - Add a CameraRotate argument to Player.SetRotate
+    - Built-in Classes And Functions
+        - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
+            - Updated description about 'GetPos' and 'GetWorldPos'method
+        - [Player Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_player.html)
+           - Add a CameraRotate argument to Player.SetRotate
 
 ---
 
