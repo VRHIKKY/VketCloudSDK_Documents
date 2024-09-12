@@ -20,6 +20,21 @@ By accessing the in-game config, the player may set the volume of each audio typ
 
 ![VKCItemAudio_2](img/VKCItemAudio_02_en.jpg)
 
+???+ note "Available methods for this object type"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [Play](../hs/hs_class_item.md#play)
+    - [Stop](../hs/hs_class_item.md#stop)
+    - [IsPlay](../hs/hs_class_item.md#isplay)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [ReplaceItem](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## Advanced Options
 
 | Label | Default | Function |
