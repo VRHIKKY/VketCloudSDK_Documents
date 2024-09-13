@@ -5,6 +5,52 @@
 
 VKC Item Object is used to instantiate a dynamic object, which is based on a pre-exported .heo file, or using a vrm, [hrm](../WorldOptimization/TextureCompression.md), or glb format model.
 
+???+ note "Available methods for this object type"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [GetWorldPos](../hs/hs_class_item.md#getworldpos)z
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [GetWorldQuaternion](../hs/hs_class_item.md#getworldquaternion)
+    - [GetWorldRotate](../hs/hs_class_item.md#getworldrotate)
+    - [GetScale](../hs/hs_class_item.md#getscale)
+    - [SetScale](../hs/hs_class_item.md#setscale)
+    - [MovePos](../hs/hs_class_item.md#movepos)
+    - [IsMoving](../hs/hs_class_item.md#ismoving)
+    - [Play](../hs/hs_class_item.md#play)
+    - [Stop](../hs/hs_class_item.md#stop)
+    - [IsPlay](../hs/hs_class_item.md#isplay)
+    - [Pause](../hs/hs_class_item.md#pause)
+    - [Restart](../hs/hs_class_item.md#restart)
+    - [SetPlayTime](../hs/hs_class_item.md#setplaytime)
+    - [GetPlayTime](../hs/hs_class_item.md#getplaytime)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [ChangeMotion](../hs/hs_class_item.md#changemotion)
+    - [LoadMotion](../hs/hs_class_item.md#loadmotion)
+    - [LoadMotion](../hs/hs_class_item.md#loadmotion)
+    - [FacialEmoteFixed](../hs/hs_class_item.md#facialemotefixed)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [GetNodeIndexByName](../hs/hs_class_item.md#getnodeindexbyname)
+    - [GetNodeNameByIndex](../hs/hs_class_item.md#getnodenamebyindex)
+    - [SetShowNode](../hs/hs_class_item.md#setshownode)
+    - [IsShowNode](../hs/hs_class_item.md#isshownode)
+    - [SetUVOffset](../hs/hs_class_item.md#setuvoffset)
+    - [PlayVideo](../hs/hs_class_item.md#playvideo)
+    - [StopVideo](../hs/hs_class_item.md#stopvideo)
+    - [IsPlayVideo](../hs/hs_class_item.md#isplayvideo)
+    - [ReplaceItem](../hs/hs_class_item.md#replacetexture)
+    - [ReplaceTexture](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## Settings
 
 ### Basic Settings
