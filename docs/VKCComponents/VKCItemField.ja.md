@@ -20,6 +20,48 @@ VKC Item Fieldの詳しい配置方法については[VKC Item Fieldの使い方
     Ver9.3以前の`Billboard`設定は`Look at Camera`に名称が変更されました。<br>
     以前のSDKバージョンからシーンデータを移植した場合、`Billboard`の設定は`Look at Camera`に引き継がれます。
 
+???+ note "このオブジェクトタイプを使用可能なItemクラス"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [GetWorldPos](../hs/hs_class_item.md#getworldpos)z
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [GetWorldQuaternion](../hs/hs_class_item.md#getworldquaternion)
+    - [GetWorldRotate](../hs/hs_class_item.md#getworldrotate)
+    - [GetScale](../hs/hs_class_item.md#getscale)
+    - [SetScale](../hs/hs_class_item.md#setscale)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [GetNodeIndexByName](../hs/hs_class_item.md#getnodeindexbyname)
+    - [GetNodeNameByIndex](../hs/hs_class_item.md#getnodenamebyindex)
+    - [GetNodePosByIndex](../hs/hs_class_item.md#getnodeposbyindex)
+    - [SetShowNode](../hs/hs_class_item.md#setshownode)
+    - [IsShowNode](../hs/hs_class_item.md#isshownode)
+    - [SetRotateNode](../hs/hs_class_item.md#setrotatenode)
+    - [SetEnableCollider](../hs/hs_class_item.md#setenablecollider)
+    - [IsEnableCollider](../hs/hs_class_item.md#isenablecollider)
+    - [SetClickableNode](../hs/hs_class_item.md#setclickablenode)
+    - [IsClickableNode](../hs/hs_class_item.md#isclickablenode)
+    - [SetUVOffset](../hs/hs_class_item.md#setuvoffset)
+    - [PlayVideo](../hs/hs_class_item.md#playvideo)
+    - [StopVideo](../hs/hs_class_item.md#stopvideo)
+    - [IsPlayVideo](../hs/hs_class_item.md#isplayvideo)
+    - [ReplaceItem](../hs/hs_class_item.md#replacetexture)
+    - [ReplaceTexture](../hs/hs_class_item.md#replaceitem)
+    - [SetPhysicsEnable](../hs/hs_class_item.md#setphysicsenable)
+    - [IsPhysicsFixed](../hs/hs_class_item.md#isphysicsfixed)
+    - [GetPhysicsIDByNodeName](../hs/hs_class_item.md#getphysicsidbynodename)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ---
 
 ## 動的ローディング設定方法
