@@ -22,6 +22,27 @@ VKC Item Area Colliderをアタッチするオブジェクトには[VKC Node Col
 アクションについては[アクションの概要](../Actions/ActionsOverview.md)を参照してください。<br>
 コライダーについては[Unity制作ガイドライン - コライダー](../WorldMakingGuide/UnityGuidelines.md)を参照してください。
 
+???+ note "このオブジェクトタイプを使用可能なItemクラス"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [SetEnableCollider](../hs/hs_class_item.md#setenablecollider)
+    - [IsEnableCollider](../hs/hs_class_item.md#isenablecollider)
+    - [ReplaceItem](../hs/hs_class_item.md#replaceitem)
+    - [IsEnableCollider](../hs/hs_class_item.md#isenablecollider)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## 詳細設定
 
 | 名称 | 初期値 |  説明  |
