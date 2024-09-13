@@ -10,7 +10,7 @@ HeliScriptの文法については[基本系](./hs_var.md)から順番に読む�
 推奨のIDEはVisual Studio Codeです。Visual Studio Codeは軽量で高機能なエディタであり、HeliScriptの文法に対応しています。<br>
 Visual Studio Codeのインストール方法は[こちら](https://code.visualstudio.com/){target=_blank}からダウンロードしてください。
 
-非推奨のIDEはVisual Studioです。Visual StudioでUnity VketCloudSDKで作成されたheliscriptを開き保存するとANSIになり、ビルドが出来なくなってしまう場合があります。
+非推奨のIDEはVisual Studioです。Visual Studioを使用してUnityプロジェクト内にVketCloudSDKが作成したHeliScriptファイルを開き、編集を保存すると、エンコードがANSIに変換されてビルドが出来なくなってしまう場合があります。
 
 ## HeliScriptの使い方の例 (Hello Worldをコンソールに出力する)
 

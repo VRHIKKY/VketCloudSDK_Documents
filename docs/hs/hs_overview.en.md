@@ -11,7 +11,7 @@ As an example, we will show a basic implementation of displaying "Hello World" o
 The recommended IDE is Visual Studio Code. Visual Studio Code is a lightweight and high-function editor that supports HeliScript syntax. <br>
 Download Visual Studio Code from [here](https://code.visualstudio.com/){target=_blank}.
 
-Visual Studio is not recommended as an IDE. When you open and save heliscript created with Unity VketCloudSDK in Visual Studio, it may become ANSI, and you may not be able to build.
+Visual Studio is not recommended as an IDE. When you open and save HeliScript created with Unity VketCloudSDK in Visual Studio, it may become ANSI, and you may not be able to build.
 
 ## Example of how to use HeliScript (displaying Hello World on the console)
 
