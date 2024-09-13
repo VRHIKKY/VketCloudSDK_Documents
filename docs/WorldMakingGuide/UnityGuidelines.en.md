@@ -14,8 +14,7 @@ On Vket Cloud, textures fitting the format below can be used:
 - Power-of-two sized squares (2048x2048, 1024x1024, 512x512, etc.) or power-of-two sized rectangles
 - Bit depth is 24bit or 32bit
 - 80MB or less in png
-- Make the extension lowercase (.png). If it is ".PNG", an error may occur when uploading to the server.
-
+- Only ".png" in lowercase is accepted as an extension. If it is ".PNG" in uppercase, problems will occur during build, upload, and Export Field.
 As a conversion tool, the SDK has [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md) for use.
 
 !!! caution "Using Sprite Renderer"

@@ -9,13 +9,19 @@
 
 ## 2024年9月13日 - 変更されたページ
 
-- ワールド制作ガイド
+- ワールド制作の基本
   - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/UnityGuidelines.html)
     - シェーダー対応項目への案内を追記
+    - 受け付けるテクスチャが小文字のpng形式のみであることを明示する。
+- VketCloudSDKについて
+  - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/AboutVketCloudSDK/OperatingEnvironment.html)
+        - HeliScriptのIDEについての注意事項を追加
 - HeliScript
-    - 組み込みクラス・関数
-        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_class_item.html)
-            - 各メソッドの呼び出し可能なオブジェクトタイプの一覧をあらかじめ展開されるよう変更
+  - [HeliScriptの概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/HeliScript/Overview.html)
+        - HeliScriptのIDEについての注意事項を追加
+  - 組み込みクラス・関数
+      - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_class_item.html)
+          - 各メソッドの呼び出し可能なオブジェクトタイプの一覧をあらかじめ展開されるよう変更
 - VKCコンポーネント
     - VKC Item
         - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCItemActivity.html)
@@ -32,6 +38,9 @@
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCItemObject.html)
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+  - VKC Node
+    - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeAlphaAnimation.html)
+        - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
 
 ---
 
@@ -42,6 +51,7 @@
 - リリースノート
   - [v13.8](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/releasenote/releasenote-13.8.html)
     - v13.8リリースノートの新規ページ
+    
 ---
 
 ## 2024年9月11日更新

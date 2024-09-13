@@ -12,10 +12,16 @@
 - World Making Guide
   - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/WorldMakingGuide/UnityGuidelines.html)
     - Added reference to Shader Availability
+    - Added a caution about the use of the ".png" extension for texture files
+- About VketCloudSDK
+  - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
+        - Added notes about HeliScript IDE
 - HeliScript
-    - Built-in Classes And Functions
-        - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/hs/hs_class_item.html)
-            - Change to expand the list of callable object types for each method by default
+  - [Overview of HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/HeliScript/Overview.html)
+        - Added notes about HeliScript IDE
+  - Built-in Classes And Functions
+      - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/hs/hs_class_item.html)
+          - Change to expand the list of callable object types for each method by default
 - VKC Components
     - VKC Item
         - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCItemActivity.html)
@@ -32,6 +38,10 @@
             - Add a list of available Item classes using this object type
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCItemObject.html)
             - Add a list of available Item classes using this object type
+    - VKC Node
+        - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeAlphaAnimation.html)
+            - Changed the notation from VKCNodeAlphaAnimation to VKC Node Alpha Animation
+
 
 ---
 
