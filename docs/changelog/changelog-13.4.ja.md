@@ -27,7 +27,9 @@
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
-
+    - VKC Node
+        - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCNodeAlphaAnimation.html)
+            - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
 ---
 
 ## 2024年9月6日更新
