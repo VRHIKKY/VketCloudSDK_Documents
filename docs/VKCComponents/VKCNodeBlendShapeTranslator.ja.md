@@ -2,14 +2,12 @@
 
 ![VKCNodeBlendShapeTranslator_1](img/VKCNodeBlendShapeTranslator_1.jpg)
 
-VKCNodeBlendShapeTranslatorはHEMキャラモーション出力の時に使用するコンポーネントです。
-
+VKC Node Blend Shape TranslatorはHEMキャラモーション出力の時に使用するコンポーネントです。
 出力したHEMファイルはプリセットアバターやVKCItemObjectでのアニメーションの再生に使用できます。
-
 
 ![VKCNodeBlendShapeTranslator_2](img/VKCNodeBlendShapeTranslator_2.jpg)
 
-そこで、HEMファイルを出力するキャラクターにHEOExporter/HEOInfoコンポーネントを追加し、BlendShapeTransNameTableのSizeを変更し、SrcName/DestNameに変換前と変換後の名前を設定します。
+キャラクターにVKC Node Blend Shape Translatorコンポーネントを追加したうえでBlend Shape Trans Name Tableに新たな項目を追加し、SrcName/DestNameに変換前と変換後のモーション名を設定します。
 
 ![VKCNodeBlendShapeTranslator_3](img/VKCNodeBlendShapeTranslator_3.jpg)
 
