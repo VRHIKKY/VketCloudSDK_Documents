@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年9月13日更新
+
+## 2024年9月13日 - 変更されたページ
+
+- VKCコンポーネント
+  - VKC Node
+    - [VKC Node Blend Shape Translator](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeBlendShapeTranslator.html)
+      - HEMファイルを出力するキャラクターにHEOExporter/HEOInfoコンポーネントを追加し、BlendShapeTransNameTableのSizeを変更し、SrcName/DestNameに変換前と変換後の名前を設定する方法についてのページを追加
+
+---
+
 ## 2024年9月12日更新
 
 ## 2024年9月12日 - 追加されたページ
