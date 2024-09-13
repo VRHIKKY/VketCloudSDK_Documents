@@ -71,6 +71,10 @@ For details, refer to [Operating Environment](../AboutVketCloudSDK/OperatingEnvi
 !!! note
      Metallic textures from Autodesk Interactive cannot be used due to the number of texture slots. Use the Standard Shader when using a combination of metallic and roughness textures.
 
+!!! note "Shader Availability"
+    On VketCloudSDK, shaders are available with exceptions in each settings.<br>
+    For details, please see [Shader Availability](ShaderAvailability.md).
+
 ## Collider
 
 - Only BoxCollider and MeshCollider are supported for collision detection. Note that MeshCollider takes very heavy load on processing. Avoid MeshCollider if possible. BoxCollider is also used to prevent objects getting in the way between the player avatar and the camera in TPS mode. As such, set BoxColliders on unreachable objects like the ceiling. See [here](../VKCComponents/VKCNodeMeshCollider.md) for how to export a MeshCollider.
