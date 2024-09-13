@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年9月13日更新
+
+## 2024年9月13日 - 編集されたページ
+
+- VKCコンポーネント
+  - VKC Node
+    - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeAlphaAnimation.html)
+        - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
+
+---
+
 ## 2024年9月12日更新
 
 ## 2024年9月12日 - 追加されたページ
