@@ -2,9 +2,16 @@
 
 ## 2024年9月13日更新
 
+## 2024年9月13日 - 追加されたページ
+
+- ワールド制作ガイド
+  - [シェーダー対応項目一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/ShaderAvailability.html)
+
 ## 2024年9月13日 - 変更されたページ
 
 - ワールド制作の基本
+  - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
+    - シェーダー対応項目への案内を追記
   - [Unityガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
     - 受け付けるテクスチャが小文字のpng形式のみであることを明示する。
 - HeliScript
@@ -30,6 +37,7 @@
     - VKC Node
         - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCNodeAlphaAnimation.html)
             - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
+
 ---
 
 ## 2024年9月6日更新

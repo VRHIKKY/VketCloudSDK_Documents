@@ -93,6 +93,7 @@ plugins:
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
             # ワールド制作ガイド
             World Making Guide: ワールド制作ガイド
+            Shader Availability : シェーダー対応項目一覧
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
             Exporter: .heoファイルについて
@@ -284,6 +285,7 @@ nav:
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
+    - Shader Availability : WorldMakingGuide/ShaderAvailability.md
     - Setting up a Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
