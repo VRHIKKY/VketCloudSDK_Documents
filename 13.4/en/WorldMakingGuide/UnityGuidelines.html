@@ -16,7 +16,7 @@
         <link rel="prev" href="../VketCloudSettings/MyAvatarSettings.html">
       
       
-        <link rel="next" href="Skybox.html">
+        <link rel="next" href="ShaderAvailability.html">
       
       
       <link rel="icon" href="../../images/VketCloudIcon.png">
@@ -837,6 +837,8 @@
       
         
       
+        
+      
     
     
     
@@ -1029,6 +1031,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ShaderAvailability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shader Availability
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -9753,9 +9776,9 @@
 <li>Power-of-two sized squares (2048x2048, 1024x1024, 512x512, etc.) or power-of-two sized rectangles</li>
 <li>Bit depth is 24bit or 32bit</li>
 <li>80MB or less in png</li>
-<li>Make the extension lowercase (.png). If it is ".PNG", an error may occur when uploading to the server.</li>
+<li>Only ".png" in lowercase is accepted as an extension. If it is ".PNG" in uppercase, problems will occur during build, upload, and Export Field.
+As a conversion tool, the SDK has <a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a> for use.</li>
 </ul>
-<p>As a conversion tool, the SDK has <a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a> for use.</p>
 <div class="admonition caution">
 <p class="admonition-title">Using Sprite Renderer</p>
 <p>On Vket Cloud, the Unity <a href="https://docs.unity3d.com/2019.4/Manual/class-SpriteRenderer.html" target="_blank">Sprite Renderer</a> cannot be used.</p>
@@ -9804,6 +9827,11 @@ For details, refer to <a href="../AboutVketCloudSDK/OperatingEnvironment.html">O
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Metallic textures from Autodesk Interactive cannot be used due to the number of texture slots. Use the Standard Shader when using a combination of metallic and roughness textures.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Shader Availability</p>
+<p>On VketCloudSDK, shaders are available with exceptions in each settings.<br>
+For details, please see <a href="ShaderAvailability.html">Shader Availability</a>.</p>
 </div>
 <h2 id="collider">Collider</h2>
 <ul>
