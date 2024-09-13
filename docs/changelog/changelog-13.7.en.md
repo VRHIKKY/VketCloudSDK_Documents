@@ -4,6 +4,12 @@
 
 ## September 13 2024 - Edited Pages
 
+- About VketCloudSDK
+  - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
+        - Added notes about HeliScript IDE
+- HeliScript
+  - [Overview of HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/HeliScript/Overview.html)
+        - Added notes about HeliScript IDE
 - World Making Basics
   - [Unity Guidelines](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/WorldMakingGuide/UnityGuideline.html)
     - Added a caution about the use of the ".png" extension for texture files

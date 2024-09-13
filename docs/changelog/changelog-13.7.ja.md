@@ -4,6 +4,12 @@
 
 ## 2024年9月13日 - 変更されたページ
 
+- VketCloudSDKについて
+  - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/AboutVketCloudSDK/OperatingEnvironment.html)
+        - HeliScriptのIDEについての注意事項を追加
+- HeliScript
+  - [HeliScriptの概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/HeliScript/Overview.html)
+        - HeliScriptのIDEについての注意事項を追加
 - ワールド制作の基本
   - [Unityガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/UnityGuideline.html)
     - 受け付けるテクスチャが小文字のpng形式のみであることを明示する。
