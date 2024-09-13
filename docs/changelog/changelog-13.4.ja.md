@@ -4,22 +4,43 @@
 
 ## 2024年9月13日 - 変更されたページ
 
+- ワールド制作の基本
+  - [Unityガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
+    - 受け付けるテクスチャが小文字のpng形式のみであることを明示する。
+- HeliScript
+    - 組み込みクラス・関数
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+            - 各メソッドの呼び出し可能なオブジェクトタイプの一覧をあらかじめ展開されるよう変更
 - VKCコンポーネント
-  - VKC Node
-    - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCNodeAlphaAnimation.html)
-        - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
-
+    - VKC Item
+        - [VKCItemActivity](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemActivity.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKCItemAreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAreaCollider.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKCItemAudio](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemAudio.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemBackgroundTexture.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKCItemCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemCamera.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加      
+        - [VKCItemField](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+    - VKC Node
+        - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCNodeAlphaAnimation.html)
+            - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
 ---
 
 ## 2024年9月6日更新
 
 ## 2024年9月6日 - 変更されたページ
 - HeliScript
-  - 組み込みクラス・関数
-    - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
-      - 'GetPos'と'GetWorldPos'の説明を修正
-    - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_player.html)
-      - Player.SetRotateにCameraRotateの引数を追加
+    - 組み込みクラス・関数
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
+          - 'GetPos'と'GetWorldPos'の説明を修正
+      - [Playerクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_player.html)
+          - Player.SetRotateにCameraRotateの引数を追加
 
 ---
 
@@ -27,7 +48,7 @@
 
 ## 2024年8月30日 - 追加されたページ
 - SDKTools
-  - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/AutoTextureCompressor.html)
+    - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/SDKTools/AutoTextureCompressor.html)
 
 ## 2024年8月30日 - 変更されたページ
 - HeliScript
