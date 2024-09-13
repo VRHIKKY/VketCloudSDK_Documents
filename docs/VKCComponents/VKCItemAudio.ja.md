@@ -20,6 +20,21 @@
 
 ![VKCItemAudio_2](img/VKCItemAudio_02_jp.jpg)
 
+???+ note "このオブジェクトタイプを使用可能なItemクラス"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [Play](../hs/hs_class_item.md#play)
+    - [Stop](../hs/hs_class_item.md#stop)
+    - [IsPlay](../hs/hs_class_item.md#isplay)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [ReplaceItem](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## 詳細設定
 
 | 名称 | 初期値 |  説明  |
