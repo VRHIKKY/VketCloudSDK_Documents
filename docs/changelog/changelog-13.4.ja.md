@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年9月13日更新
+
+## 2024年9月13日 - 変更されたページ
+- ワールド制作の基本
+  - [Unityガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
+    - 受け付けるテクスチャが小文字のpng形式のみであることを明示する。
+
+---
+
 ## 2024年9月6更新
 
 ## 2024年9月6日 - 変更されたページ

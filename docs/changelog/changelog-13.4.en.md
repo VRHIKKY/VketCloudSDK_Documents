@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.4
 
+## September 13 2024 Update
+
+## September 13 2024 - Edited Pages
+- World Making Guide
+  - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/UnityGuidelines.html)
+    - Added a caution about the use of the ".png" extension for texture files
+    
+---
+
 ## September 6 2024 Update
 
 ## September 6 2024 - Edited Pages
