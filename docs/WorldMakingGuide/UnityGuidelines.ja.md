@@ -76,6 +76,10 @@ VketCloudSDKでは、上記の環境設定を推奨設定としております�
 !!! note
     Autodesk Interactiveのメタリックテクスチャは、テクスチャスロット数の都合上、使用できません。メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。
 
+!!! note "対応しているシェーダー項目について"
+    VketCloudSDKではシェーダーの設定項目において対応しているものとしていないものが存在します。<br>
+    詳細は[シェーダー対応項目一覧](ShaderAvailability.md)をご覧ください。
+
 ## コライダー
 
 - 衝突判定用はBoxColliderとMeshColliderのみ対応。MeshColliderは処理に非常に負荷がかかるため使用は必要最低限にしてください。BoxColliderはTPSモード時にプレイヤーアバターとカメラの間に位置するオブジェクトによって遮断されるのを防ぐためにも利用しているため、天井など移動出来ない場所でも設定して下さい。MeshColliderの書き出し方法については[こちら](../VKCComponents/VKCNodeMeshCollider.md)をご覧ください。

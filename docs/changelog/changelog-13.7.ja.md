@@ -2,8 +2,16 @@
 
 ## 2024年9月13日更新
 
+## 2024年9月13日 - 追加されたページ
+
+- ワールド制作ガイド
+  - [シェーダー対応項目一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/ShaderAvailability.html)
+
 ## 2024年9月13日 - 変更されたページ
 
+- ワールド制作ガイド
+  - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/UnityGuidelines.html)
+    - シェーダー対応項目への案内を追記
 - HeliScript
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_class_item.html)
