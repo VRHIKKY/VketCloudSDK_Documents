@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.7
 
+## September 13 2024 Update
+
+## September 13 2024 - Edited Pages
+
+- About VketCloudSDK
+  - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
+        - Added notes about HeliScript IDE
+- HeliScript
+  - [Overview of HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/HeliScript/Overview.html)
+        - Added notes about HeliScript IDE
+
 ## September 11 2024 Update
 
 ## September 11 2024 - Edited Pages
