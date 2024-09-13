@@ -3,6 +3,7 @@
 ## September 13 2024 Update
 
 ## September 13 2024 - Edited Pages
+
 - HeliScript
     - Built-in Classes And Functions
         - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
@@ -18,7 +19,7 @@
         - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemBackgroundTexture.html)
             - Add a list of available Item classes using this object type
         - [VKCItemCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemCamera.html)
-            - Add a list of available Item classes using this object type      
+            - Add a list of available Item classes using this object type
         - [VKCItemField](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemField.html)
             - Add a list of available Item classes using this object type
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemObject.html)

@@ -3,6 +3,7 @@
 ## 2024年9月13日更新
 
 ## 2024年9月13日 - 変更されたページ
+
 - HeliScript
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
@@ -18,7 +19,7 @@
         - [VKCItemBackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemBackgroundTexture.html)
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
         - [VKCItemCamera](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemCamera.html)
-            - オブジェクトタイプを使用可能なItemクラスの一覧を追加      
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
         - [VKCItemField](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemField.html)
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
