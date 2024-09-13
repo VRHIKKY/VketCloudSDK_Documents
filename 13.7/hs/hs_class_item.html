@@ -835,6 +835,8 @@
       
         
       
+        
+      
     
     
     
@@ -875,6 +877,27 @@
   
   <span class="md-ellipsis">
     VketCloudの仕様制限
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/ShaderAvailability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    シェーダー対応項目一覧
   </span>
   
 
@@ -10743,7 +10766,7 @@
 <p><code>public bool Equals(Item obj)</code></p>
 <p>引数 obj と自身の同一性を判定する。</p>
 <p>hsItemGet() などで Item を取得する場合、同一の Item であっても別のインスタンスが返る場合があるため、同一性の確認には "===" 演算子ではなく Equals() を利用してください。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10761,7 +10784,7 @@
 <h3 id="getname">GetName</h3>
 <p><code>public string GetName()</code></p>
 <p>Item の名前を取得する。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10779,7 +10802,7 @@
 <h3 id="setpos">SetPos</h3>
 <p><code>public void SetPos(Vector3 pos)</code></p>
 <p>Item を指定した座標に移動させる。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10796,7 +10819,7 @@
 <p><code>public Vector3 GetPos()</code></p>
 <p>Item の座標を取得する。</p>
 <p>このItemがActivityの中にある場合、取得できる値はActivityからの相対座標になります。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10814,12 +10837,12 @@
 <p><code>public Vector3 GetWorldPos()</code></p>
 <p>Item のワールド座標を取得する。</p>
 <p>このItemがどこにあるのか(Activityの外か中か)に関わらず、常にワールド空間における座標を返します。</p>
-<details class="warning">
+<details class="warning" open="open">
 <summary>使用上の注意</summary>
 <p>Activityの場合でワールド座標を取得したいときはこちらを使用してください。</p>
 <p>Activityではない場合は通常はGetPosを使用してください。</p>
 </details>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10829,7 +10852,7 @@
 <h3 id="setquaternion">SetQuaternion</h3>
 <p><code>public bool SetQuaternion(Quaternion Rotate)</code></p>
 <p>Itemの回転を設定します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10845,7 +10868,7 @@
 <h3 id="getquaternion">GetQuaternion</h3>
 <p><code>public Quaternion GetQuaternion()</code></p>
 <p>Itemの回転をQuaternionとして取得します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10861,7 +10884,7 @@
 <h3 id="getworldquaternion">GetWorldQuaternion</h3>
 <p><code>public Quaternion GetWorldQuaternion()</code></p>
 <p>Itemのワールド回転をQuaternionとして取得します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10871,7 +10894,7 @@
 <h3 id="getworldrotate">GetWorldRotate</h3>
 <p><code>public Vector3 GetWorldRotate()</code></p>
 <p>Itemのワールド回転をVector3（オイラー角）として取得します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10881,7 +10904,7 @@
 <h3 id="getscale">GetScale</h3>
 <p><code>public Vector3 GetScale()</code></p>
 <p>ItemのスケールをVector3として取得します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10893,7 +10916,7 @@
 <h3 id="setscale">SetScale</h3>
 <p><code>public void SetScale(Vector3 Scale)</code></p>
 <p>ItemのスケールをVector3で設定します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10906,7 +10929,7 @@
 <p><code>public void MovePos(Vector3 pos, float time, bool CollisionDetection = false)</code></p>
 <p>posで指定した座標に、time秒かけて Item を移動させる。</p>
 <p>CollisionDetectionがtrueの場合は、プレイヤーアバターと同等の衝突判定がおこなわれます。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10916,7 +10939,7 @@
 <h3 id="ismoving">IsMoving</h3>
 <p><code>public bool IsMoving()</code></p>
 <p>Item が移動中の場合はtrueを返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10926,7 +10949,7 @@
 <h3 id="play">Play</h3>
 <p><code>public bool Play()</code></p>
 <p>サウンドやパーティクルの再生を開始する。再生処理の開始に成功すると true を返す。失敗した場合は false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
@@ -10937,7 +10960,7 @@
 <h3 id="stop">Stop</h3>
 <p><code>public void Stop()</code></p>
 <p>サウンドやパーティクルの再生を停止する。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
@@ -10948,7 +10971,7 @@
 <h3 id="isplay">IsPlay</h3>
 <p><code>public bool IsPlay()</code></p>
 <p>オブジェクトのモーションやサウンドやパーティクルが再生中の場合は true を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
@@ -10967,7 +10990,7 @@
 <h3 id="pause">Pause</h3>
 <p><code>public bool Pause()</code></p>
 <p>オブジェクトのモーション再生を一時停止します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10976,7 +10999,7 @@
 <h3 id="restart">Restart</h3>
 <p><code>public bool Restart()</code></p>
 <p>オブジェクトの一時停止したモーション再生を再開します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10986,7 +11009,7 @@
 <p><code>public bool SetPlayTime(float PlayTimeMS)</code></p>
 <p>オブジェクトのモーション再生時間の位置を変更します。<br>
 単位はミリセカンドです。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10996,7 +11019,7 @@
 <p><code>public float GetPlayTime()</code></p>
 <p>オブジェクトのモーション再生時間の位置を取得します。<br>
 単位はミリセカンドです。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -11005,7 +11028,7 @@
 <h3 id="setshow">SetShow</h3>
 <p><code>public void SetShow(bool flag)</code></p>
 <p>true で Item を表示する。false で Item を非表示にする。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
@@ -11020,7 +11043,7 @@
 <h3 id="isshow">IsShow</h3>
 <p><code>public bool IsShow()</code></p>
 <p>Item が表示状態の場合は true を、そうでない場合は false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
@@ -11036,7 +11059,7 @@
 <p><code>public bool ChangeMotion(string MotionName, float BlendTimeMS = 0.0f)</code></p>
 <p>MotionName で指定したモーションに動作を切り替えます。<br>
 BlendTimeMSはブレンディングする時間をミリセカンド単位で指定します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -11045,7 +11068,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="loadmotion">LoadMotion</h3>
 <p><code>public bool LoadMotion(string MotionName, string FileName, bool Loop)</code></p>
 <p>モーションをロードします。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -11062,7 +11085,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <li>FACIALEMOTETYPE_SORROW</li>
 <li>FACIALEMOTETYPE_FUN</li>
 </ul>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -11071,7 +11094,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="load">Load</h3>
 <p><code>public bool Load()</code></p>
 <p>Item のロードを開始する。ロード処理の開始に失敗した場合は false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11089,7 +11112,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="unload">Unload</h3>
 <p><code>public bool Unload()</code></p>
 <p>Item をアンロードする。アンロード処理に失敗した場合は false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11107,7 +11130,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="isloading">IsLoading</h3>
 <p><code>public bool IsLoading()</code></p>
 <p>Item がロード中の場合は true を、そうでない場合は false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11124,7 +11147,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="isloaded">IsLoaded</h3>
 <p><code>public bool IsLoaded()</code></p>
 <p>Item のロードが完了していた場合は true を、そうでない場合は false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11141,7 +11164,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="getnodeindexbyname">GetNodeIndexByName</h3>
 <p><code>public int GetNodeIndexByName(string nodeName)</code></p>
 <p>名前でノードを検索し、該当するノードを識別するインデックスを返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11151,7 +11174,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="getnodenamebyindex">GetNodeNameByIndex</h3>
 <p><code>public string GetNodeNameByIndex(int nodeIndex)</code></p>
 <p>インデックスでノードを指定し、そのノードの名前を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11161,7 +11184,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="getnodeposbyindex">GetNodePosByIndex</h3>
 <p><code>public Vector3 GetNodePosByIndex(int nodeIndex)</code></p>
 <p>インデックスでノードを指定し、そのノードの座標を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11170,7 +11193,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="setshownode">SetShowNode</h3>
 <p><code>public bool SetShowNode(string nodeName, bool flag)</code></p>
 <p>名前でノードを指定し、そのノードを true で表示、false で非表示にする。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11180,7 +11203,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="isshownode">IsShowNode</h3>
 <p><code>public bool IsShowNode(string nodeName)</code></p>
 <p>名前でノードを指定し、そのノードが表示されている場合は true を、非表示の場合は false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11190,7 +11213,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="setrotatenode">SetRotateNode</h3>
 <p><code>public bool SetRotateNode(string nodeName, Vector3 rotate)</code></p>
 <p>名前でノードを指定し、そのノードを回転させる。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11199,7 +11222,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="setenablecollider">SetEnableCollider</h3>
 <p><code>public bool SetEnableCollider(string nodeName, bool flag)</code></p>
 <p>名前でコライダーを指定し、そのコライダーを true で有効、false で無効にする。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
@@ -11209,7 +11232,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="isenablecollider">IsEnableCollider</h3>
 <p><code>public bool IsEnableCollider(string nodeName)</code></p>
 <p>名前でコライダーを指定し、そのコライダーが有効なら true を、無効なら false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
@@ -11219,7 +11242,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="setclickablenode">SetClickableNode</h3>
 <p><code>public bool SetClickableNode(string nodeName, bool flag)</code></p>
 <p>名前でクリック可能なノードを指定し、true でクリックを有効に、false でクリックを無効にする。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11228,7 +11251,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="isclickablenode">IsClickableNode</h3>
 <p><code>public bool IsClickableNode(string nodeName)</code></p>
 <p>名前でノードを指定し、そのノードをクリック可能なら true を、そうでないなら false を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11241,7 +11264,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <p class="admonition-title">UV座標原点について</p>
 <p>通常のUnityプロジェクトではUVの原点(0,0)はUVの左下にありますが、HeliScriptでは<strong>左上</strong>を原点としていることにご注意ください。</p>
 </div>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11251,7 +11274,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="playvideo">PlayVideo</h3>
 <p><code>public void PlayVideo(string materialName, string url, bool loop)</code></p>
 <p>再生するマテリアルを指定し、ビデオ再生を開始する。loop に true を指定するとループ再生を行う。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11262,7 +11285,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="stopvideo">StopVideo</h3>
 <p><code>public void StopVideo()</code></p>
 <p>再生中のビデオを停止する。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11273,7 +11296,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="isplayvideo">IsPlayVideo</h3>
 <p><code>public bool IsPlayVideo()</code></p>
 <p>ビデオが再生中であれば true を返す。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11284,7 +11307,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="cleartextplane">ClearTextPlane</h3>
 <p><code>public void ClearTextPlane()</code></p>
 <p>テキストを消去する。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a></li>
@@ -11293,7 +11316,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="writetextplane">WriteTextPlane</h3>
 <p><code>public void WriteTextPlane(string text)</code></p>
 <p>テキストを設定する。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a></li>
@@ -11303,7 +11326,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <p><code>public bool SetCamera()</code></p>
 <p>カメラタイプのアイテムをカメラとして設定する。<br>
 使い方については<a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a>を参照してください。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></li>
@@ -11313,7 +11336,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <p><code>public void ResetCamera()</code></p>
 <p>SetCameraで設定したものを解除する。<br>
 使い方については<a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a>を参照してください。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></li>
@@ -11322,7 +11345,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="replaceitem">ReplaceItem</h3>
 <p><code>public bool ReplaceItem(string URL)</code></p>
 <p>指定したモデルデータでItemの内容を置き換えます。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11340,7 +11363,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="replacetexture">ReplaceTexture</h3>
 <p><code>public bool ReplaceTexture(string MaterialName, string URL)</code></p>
 <p>MaterialNameで指定したマテリアルのテクスチャを、URLの内容で置き換えます。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11352,7 +11375,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="setphysicsenable">SetPhysicsEnable</h3>
 <p><code>public bool SetPhysicsEnable(string NodeName, bool Flag)</code></p>
 <p>NodeName で指定したノードに対し、trueで物理演算を有効化、falseで無効化します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11361,7 +11384,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="isphysicsfixed">IsPhysicsFixed</h3>
 <p><code>public bool IsPhysicsFixed(string NodeName)</code></p>
 <p>物理演算において、このItemが固定されている場合は true を返します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11370,7 +11393,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="getphysicsidbynodename">GetPhysicsIDByNodeName</h3>
 <p><code>public int GetPhysicsIDByNodeName(string NodeName)</code></p>
 <p>ノード名を指定して、ItemのPhysicsIDを取得します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11379,7 +11402,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="setproperty">SetProperty</h3>
 <p><code>public bool SetProperty(string Key, string Value)</code></p>
 <p>プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11397,7 +11420,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="getproperty">GetProperty</h3>
 <p><code>public string GetProperty(string Key)</code></p>
 <p>プロパティを取得します。Keyが存在しない場合は空文字列が返ります。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11421,7 +11444,7 @@ ComponentNameでコンポーネント名を、MethodNameでメソッド名を指
 <li>引数として string を 1つだけ持つこと。</li>
 <li>戻り値がvoidであること。</li>
 </ul>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11439,7 +11462,7 @@ ComponentNameでコンポーネント名を、MethodNameでメソッド名を指
 <h3 id="setoverridesproperty">SetOverridesProperty</h3>
 <p><code>public bool SetOverridesProperty(string Key, string Value, string ItemName)</code></p>
 <p>overridesを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。"itemname"を使用していない場合はItemNameには空文字列を指定します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11457,7 +11480,7 @@ ComponentNameでコンポーネント名を、MethodNameでメソッド名を指
 <h3 id="getoverridesproperty">GetOverridesProperty</h3>
 <p><code>public bool GetOverridesProperty(string Key, ref string Value, ref string ItemName)</code></p>
 <p>overrides設定を取得します。</p>
-<details class="note">
+<details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>

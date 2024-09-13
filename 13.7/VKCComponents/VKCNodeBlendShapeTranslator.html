@@ -835,6 +835,8 @@
       
         
       
+        
+      
     
     
     
@@ -875,6 +877,27 @@
   
   <span class="md-ellipsis">
     VketCloudの仕様制限
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/ShaderAvailability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    シェーダー対応項目一覧
   </span>
   
 
@@ -2848,17 +2871,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    VKC Node BlendShape Translator
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="VKCNodeBlendShapeTranslator.html" class="md-nav__link md-nav__link--active">
         
   
@@ -2868,34 +2880,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blend-shape-trans-name-name-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blend Shape Trans Name Name Table
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -9562,23 +9546,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blend-shape-trans-name-name-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blend Shape Trans Name Name Table
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -9593,21 +9560,33 @@
 
 
 <h1 id="vkc-node-blend-shape-translator">VKC Node Blend Shape Translator</h1>
-<h2 id="blend-shape-trans-name-name-table">Blend Shape Trans Name Name Table</h2>
+<p><img alt="VKCNodeBlendShapeTranslator_1" src="img/VKCNodeBlendShapeTranslator_1.jpg" /></p>
+<p>VKC Node Blend Shape TranslatorはHEMキャラモーション出力の時に使用するコンポーネントです。
+出力したHEMファイルはプリセットアバターやVKCItemObjectでのアニメーションの再生に使用できます。</p>
+<p>Humanoid側のアニメーションを作成した後、Legacyに変換するとBlendShape名が「eye_mabataki」など元のSkinnedMeshRendererのBlendShapes内の名前のままになっています。このままHEMファイルを出力しても、VRMファイルではそのBlendhape名が失われているため反映されません。</p>
+<p><img alt="VKCNodeBlendShapeTranslator_2" src="img/VKCNodeBlendShapeTranslator_2.jpg" /></p>
+<p>キャラクターにVKC Node Blend Shape Translatorコンポーネントを追加したうえでBlend Shape Trans Name Tableに新たな項目を追加し、SrcName/DestNameに変換前と変換後のモーション名を設定します。</p>
+<p><img alt="VKCNodeBlendShapeTranslator_3" src="img/VKCNodeBlendShapeTranslator_3.jpg" /></p>
 <table>
 <thead>
 <tr>
 <th>Label</th>
-<th>function</th>
+<th>機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Size</td>
-<td></td>
+<td>Src Name</td>
+<td>変換前のモーション名</td>
+</tr>
+<tr>
+<td>Dest Name</td>
+<td>変換後のモーション名</td>
 </tr>
 </tbody>
 </table>
+<p>この状態でHEMファイルを出力すると、BlendShape名が変換された状態で出力されます。</p>
+<p><img alt="VKCNodeBlendShapeTranslator_4" src="img/VKCNodeBlendShapeTranslator_4.jpg" /></p>
 
 
 

@@ -16,7 +16,7 @@
         <link rel="prev" href="../VketCloudSettings/MyAvatarSettings.html">
       
       
-        <link rel="next" href="Skybox.html">
+        <link rel="next" href="ShaderAvailability.html">
       
       
       <link rel="icon" href="../images/VketCloudIcon.png">
@@ -837,6 +837,8 @@
       
         
       
+        
+      
     
     
     
@@ -1047,6 +1049,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ShaderAvailability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    シェーダー対応項目一覧
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -9837,7 +9860,7 @@
 <li>２の累乗サイズの正方形（2048x2048,1024x1024,512x512等）または2の累乗サイズの長方形</li>
 <li>ビット深度は24bitまたは32bit</li>
 <li>png換算で80MB以下</li>
-<li>拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップロードでエラーが出ることがあります。</li>
+<li>拡張子は小文字の".png"しか受け付けません。大文字の”.PNG”になっていると必ず、ビルド時・アップロード・Export Field時に問題が発生いたします。</li>
 </ul>
 <p>また、SDKでは画像の変換ツールとして<a href="../SDKTools/ExportCompressedTexture.html">Export Compressed Texture</a>を用意しています。</p>
 <div class="admonition caution">
@@ -9889,6 +9912,11 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Autodesk Interactiveのメタリックテクスチャは、テクスチャスロット数の都合上、使用できません。メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">対応しているシェーダー項目について</p>
+<p>VketCloudSDKではシェーダーの設定項目において対応しているものとしていないものが存在します。<br>
+詳細は<a href="ShaderAvailability.html">シェーダー対応項目一覧</a>をご覧ください。</p>
 </div>
 <h2 id="_7">コライダー</h2>
 <ul>

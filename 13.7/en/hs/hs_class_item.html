@@ -835,6 +835,8 @@
       
         
       
+        
+      
     
     
     
@@ -875,6 +877,27 @@
   
   <span class="md-ellipsis">
     Specifications Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/ShaderAvailability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shader Availability
   </span>
   
 
@@ -10743,7 +10766,7 @@
 <p><code>public bool Equals(Item obj)</code></p>
 <p>Judges whether this class is identical to the argument obj.</p>
 <p>When obtaining Item objects using hsItemGet(), etc., a different instance may be obtained despite being the same Item. For checking identity, use Equals() instead of "===" operator.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10761,7 +10784,7 @@
 <h3 id="getname">GetName</h3>
 <p><code>public string GetName()</code></p>
 <p>Get the name of the Item.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10779,7 +10802,7 @@
 <h3 id="setpos">SetPos</h3>
 <p><code>public void SetPos(Vector3 pos)</code></p>
 <p>Move Item to the designated position.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10796,7 +10819,7 @@
 <p><code>public Vector3 GetPos()</code></p>
 <p>Get the local position of Item.</p>
 <p>If this Item is inside a VKC Item Activity, the obtained value will be the coordinates relative to the VKC Item Activity.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10814,12 +10837,12 @@
 <p><code>public Vector3 GetWorldPos()</code></p>
 <p>Get the world position of Item.</p>
 <p>Regardless of where this Item is located (inside or outside of a VKC Item Activity), it always returns the coordinates in world space.</p>
-<details class="warning usage caution">
+<details class="warning usage caution" open="open">
 <summary>Warning</summary>
 <p>Use this method when you want to obtain world coordinates in the case of an Activity.</p>
 <p>If it is not an Activity, use GetPos for most of the time.</p>
 </details>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10829,7 +10852,7 @@
 <h3 id="setquaternion">SetQuaternion</h3>
 <p><code>public bool SetQuaternion(Quaternion Rotate)</code></p>
 <p>Set the quaternion rotation of Item.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10845,7 +10868,7 @@
 <h3 id="getquaternion">GetQuaternion</h3>
 <p><code>public Quaternion GetQuaternion()</code></p>
 <p>Get the local rotation of Item by quaternion.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -10861,7 +10884,7 @@
 <h3 id="getworldquaternion">GetWorldQuaternion</h3>
 <p><code>public Quaternion GetWorldQuaternion()</code></p>
 <p>Get the world rotation of Item by quaternion.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10871,7 +10894,7 @@
 <h3 id="getworldrotate">GetWorldRotate</h3>
 <p><code>public Vector3 GetWorldRotate()</code></p>
 <p>Get the world rotation of Item by Vector3 (Euler angles).</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10881,7 +10904,7 @@
 <h3 id="getscale">GetScale</h3>
 <p><code>public Vector3 GetScale()</code></p>
 <p>Get the scale of Item by Vector3.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10893,7 +10916,7 @@
 <h3 id="setscale">SetScale</h3>
 <p><code>public void SetScale(Vector3 Scale)</code></p>
 <p>Set the scale of Item by Vector3.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -10906,7 +10929,7 @@
 <p><code>public void MovePos(Vector3 pos, float time, bool CollisionDetection = false)</code></p>
 <p>Moves the Item over [time] seconds to the coordinates specified by pos.</p>
 <p>If CollisionDetection is set to true, collision detection will be enabled as like the player avatar.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10916,7 +10939,7 @@
 <h3 id="ismoving">IsMoving</h3>
 <p><code>public bool IsMoving()</code></p>
 <p>Returns true if the Item is moving.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10927,7 +10950,7 @@
 <p><code>public bool Play()</code></p>
 <p>Start playing a sound or particle. Returns true if the playback process has started successfully.<br>
 Returns false on failure.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
@@ -10938,7 +10961,7 @@ Returns false on failure.</p>
 <h3 id="stop">Stop</h3>
 <p><code>public void Stop()</code></p>
 <p>Stop the sound or particle that is playing.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
@@ -10949,7 +10972,7 @@ Returns false on failure.</p>
 <h3 id="isplay">IsPlay</h3>
 <p><code>public bool IsPlay()</code></p>
 <p>Returns true if the sound or particle is playing.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></li>
@@ -10968,7 +10991,7 @@ Returns false on failure.</p>
 <h3 id="pause">Pause</h3>
 <p><code>public bool Pause()</code></p>
 <p>Pauses the object's playing motion.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10977,7 +11000,7 @@ Returns false on failure.</p>
 <h3 id="restart">Restart</h3>
 <p><code>public bool Restart()</code></p>
 <p>Resumes the object's playing motion after pause.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10987,7 +11010,7 @@ Returns false on failure.</p>
 <p><code>public bool SetPlayTime(float PlayTimeMS)</code></p>
 <p>Sets the object's motion playing position by designated time.<br>
 The time is designated by millisecond.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -10997,7 +11020,7 @@ The time is designated by millisecond.</p>
 <p><code>public float GetPlayTime()</code></p>
 <p>Gets the object's motion playing position by designated time.<br>
 The time is designated by millisecond.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -11006,7 +11029,7 @@ The time is designated by millisecond.</p>
 <h3 id="setshow">SetShow</h3>
 <p><code>public void SetShow(bool flag)</code></p>
 <p>Display Item with true. Hide the Item with false.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
@@ -11020,7 +11043,7 @@ The time is designated by millisecond.</p>
 <h3 id="isshow">IsShow</h3>
 <p><code>public bool IsShow()</code></p>
 <p>Returns true if the Item is visible, false otherwise.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
@@ -11035,7 +11058,7 @@ The time is designated by millisecond.</p>
 <p><code>public bool ChangeMotion(string MotionName, float BlendTimeMS = 0.0f)</code></p>
 <p>Change the motion according to the designated MotionName.<br>
 BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -11044,7 +11067,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="loadmotion">LoadMotion</h3>
 <p><code>public bool LoadMotion(string MotionName, string FileName, bool Loop)</code></p>
 <p>Loads the designated motion.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -11061,7 +11084,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <li>FACIALEMOTETYPE_SORROW</li>
 <li>FACIALEMOTETYPE_FUN</li>
 </ul>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a></li>
@@ -11070,7 +11093,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="load">Load</h3>
 <p><code>public bool Load()</code></p>
 <p>Start loading the Item. Returns false if the loading process fails to start.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11088,7 +11111,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="unload">Unload</h3>
 <p><code>public bool Unload()</code></p>
 <p>Unload the Item. Returns false if the unloading process fails.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11106,7 +11129,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="isloading">IsLoading</h3>
 <p><code>public bool IsLoading()</code></p>
 <p>Returns true if the Item is loading, false otherwise.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11123,7 +11146,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="isloaded">IsLoaded</h3>
 <p><code>public bool IsLoaded()</code></p>
 <p>Returns true if the Item has finished loading, false otherwise.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11140,7 +11163,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="getnodeindexbyname">GetNodeIndexByName</h3>
 <p><code>public int GetNodeIndexByName(string nodeName)</code></p>
 <p>Finds a node by name and returns an index identifying that node.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11150,7 +11173,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="getnodenamebyindex">GetNodeNameByIndex</h3>
 <p><code>public string GetNodeNameByIndex(int nodeIndex)</code></p>
 <p>Given a node by index, return the name of that node.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11160,7 +11183,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="getnodeposbyindex">GetNodePosByIndex</h3>
 <p><code>public Vector3 GetNodePosByIndex(int nodeIndex)</code></p>
 <p>Specify a node by index and return the coordinates of that node.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11169,7 +11192,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="setshownode">SetShowNode</h3>
 <p><code>public bool SetShowNode(string nodeName, bool flag)</code></p>
 <p>Specify a node by name, show it if flag is true and hide it if flag is false.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11179,7 +11202,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="isshownode">IsShowNode</h3>
 <p><code>public bool IsShowNode(string nodeName)</code></p>
 <p>Specify a node by name, returns true if the node is visible and false if it is hidden.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11189,7 +11212,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="setrotatenode">SetRotateNode</h3>
 <p><code>public bool SetRotateNode(string nodeName, Vector3 rotate)</code></p>
 <p>Specify a node by name and rotate that node.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11198,7 +11221,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="setenablecollider">SetEnableCollider</h3>
 <p><code>public bool SetEnableCollider(string nodeName, bool flag)</code></p>
 <p>Specify a collider by name, true to enable it, false to disable it.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
@@ -11208,7 +11231,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="isenablecollider">IsEnableCollider</h3>
 <p><code>public bool IsEnableCollider(string nodeName)</code></p>
 <p>Specify a collider by name, returns true if the collider is enabled, false otherwise.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></li>
@@ -11218,7 +11241,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="setclickablenode">SetClickableNode</h3>
 <p><code>public bool SetClickableNode(string nodeName, bool flag)</code></p>
 <p>Specify a clickable node by name, enable clicks if flag is set to true and disable clicks if flag is set to false.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11227,7 +11250,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="isclickablenode">IsClickableNode</h3>
 <p><code>public bool IsClickableNode(string nodeName)</code></p>
 <p>Specify a node by name and returns true if the node is clickable, false otherwise.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11240,7 +11263,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <p class="admonition-title">Origin coordinate of UV</p>
 <p>While Unity considers the bottom-left coordinate of the UV as the origin, note that HeliScript considers the <strong>top-left</strong> as the origin.</p>
 </div>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11250,7 +11273,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="playvideo">PlayVideo</h3>
 <p><code>public void PlayVideo(string materialName, string url, bool loop)</code></p>
 <p>Specifies the material to play and starts playing the video. Loop playback is performed if loop is set to true.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11261,7 +11284,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="stopvideo">StopVideo</h3>
 <p><code>public void StopVideo()</code></p>
 <p>Stop the video that is playing.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11272,7 +11295,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="isplayvideo">IsPlayVideo</h3>
 <p><code>public bool IsPlayVideo()</code></p>
 <p>Returns true if a video is playing.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11283,7 +11306,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="cleartextplane">ClearTextPlane</h3>
 <p><code>public void ClearTextPlane()</code></p>
 <p>Delete the text.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a></li>
@@ -11292,7 +11315,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <h3 id="writetextplane">WriteTextPlane</h3>
 <p><code>public void WriteTextPlane(string text)</code></p>
 <p>Set the text.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a></li>
@@ -11302,7 +11325,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 <p><code>public bool SetCamera()</code></p>
 <p>Set the camera type Item as a camera.<br>
 Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for usage.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></li>
@@ -11312,7 +11335,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <p><code>public void ResetCamera()</code></p>
 <p>Detach camera set by SetCamera.<br>
 Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for usage.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></li>
@@ -11321,7 +11344,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <h3 id="replaceitem">ReplaceItem</h3>
 <p><code>public bool ReplaceItem(string URL)</code></p>
 <p>Replace the Item by the designated model data.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11339,7 +11362,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <h3 id="replacetexture">ReplaceTexture</h3>
 <p><code>public bool ReplaceTexture(string MaterialName, string URL)</code></p>
 <p>Replace the texture attached to the MaterialName's material by the designated URL content.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11351,7 +11374,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <h3 id="setphysicsenable">SetPhysicsEnable</h3>
 <p><code>public bool SetPhysicsEnable(string NodeName, bool Flag)</code></p>
 <p>Enable physics for Node designated by NodeName if Flag is true, disable if Flag is false.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11360,7 +11383,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <h3 id="isphysicsfixed">IsPhysicsFixed</h3>
 <p><code>public bool IsPhysicsFixed(string NodeName)</code></p>
 <p>When physics is enabled, returns true if this Item is fixed.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11370,7 +11393,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <p><code>public int GetPhysicsIDByNodeName(string NodeName)</code></p>
 <p>Get the PhysicsId for the designated Node.</p>
 <p>When physics is enabled, returns true if this Item is fixed.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemField.html">VKC Item Field</a></li>
@@ -11379,7 +11402,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <h3 id="setproperty">SetProperty</h3>
 <p><code>public bool SetProperty(string Key, string Value)</code></p>
 <p>Set property by Key and Value.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11397,7 +11420,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <h3 id="getproperty">GetProperty</h3>
 <p><code>public string GetProperty(string Key)</code></p>
 <p>Get property by Key. If the Key does not exist, an empty string will return.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11421,7 +11444,7 @@ The method can be called by designating the Componentname and MethodName. the Pa
 <li>Has one and only String type as an argument </li>
 <li>Return value is void</li>
 </ul>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11439,7 +11462,7 @@ The method can be called by designating the Componentname and MethodName. the Pa
 <h3 id="setoverridesproperty">SetOverridesProperty</h3>
 <p><code>public bool SetOverridesProperty(string Key, string Value, string ItemName)</code></p>
 <p>Sets overrides property. If the same Key exists, its value will be overwritten, otherwise the Key and Value will be appended. If Key does not use "itemname", enter an empty string as an argument.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>
@@ -11457,7 +11480,7 @@ The method can be called by designating the Componentname and MethodName. the Pa
 <h3 id="getoverridesproperty">GetOverridesProperty</h3>
 <p><code>public bool GetOverridesProperty(string Key, ref string Value, ref string ItemName)</code></p>
 <p>Get the overrides property.</p>
-<details class="note">
+<details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
 <li><a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a></li>

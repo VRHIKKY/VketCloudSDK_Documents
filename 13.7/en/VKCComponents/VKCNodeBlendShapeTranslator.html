@@ -835,6 +835,8 @@
       
         
       
+        
+      
     
     
     
@@ -875,6 +877,27 @@
   
   <span class="md-ellipsis">
     Specifications Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/ShaderAvailability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shader Availability
   </span>
   
 
@@ -2848,17 +2871,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    VKC Node BlendShape Translator
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="VKCNodeBlendShapeTranslator.html" class="md-nav__link md-nav__link--active">
         
   
@@ -2868,34 +2880,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blend-shape-trans-name-name-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blend Shape Trans Name Name Table
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -9562,23 +9546,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blend-shape-trans-name-name-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blend Shape Trans Name Name Table
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -9593,21 +9560,33 @@
 
 
 <h1 id="vkc-node-blend-shape-translator">VKC Node Blend Shape Translator</h1>
-<h2 id="blend-shape-trans-name-name-table">Blend Shape Trans Name Name Table</h2>
+<p><img alt="VKCNodeBlendShapeTranslator_1" src="../../VKCComponents/img/VKCNodeBlendShapeTranslator_1.jpg" /></p>
+<p>VKC Node Blend Shape Translator is a component used when exporting HEM character motion.
+The exported HEM file can be used to play animations for preset avatars or VKCItemObjects.</p>
+<p>After creating the humanoid animation, converting it to Legacy will leave the blend shape names as they are, such as "eye_mabataki," in the original SkinnedMeshRenderer's BlendShapes. If the HEM file is output as is, the blend shape name will be lost in the VRM file and will not be reflected.</p>
+<p><img alt="VKCNodeBlendShapeTranslator_2" src="../../VKCComponents/img/VKCNodeBlendShapeTranslator_2.jpg" /></p>
+<p>Add the VKC Node Blend Shape Translator component to the character, add a new item to Blend Shape Trans Name Table, and set the motion name before and after conversion in SrcName/DestName.</p>
+<p><img alt="VKCNodeBlendShapeTranslator_3" src="../../VKCComponents/img/VKCNodeBlendShapeTranslator_3.jpg" /></p>
 <table>
 <thead>
 <tr>
 <th>Label</th>
-<th>function</th>
+<th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Size</td>
-<td></td>
+<td>Src Name</td>
+<td>Motion name before conversion</td>
+</tr>
+<tr>
+<td>Dest Name</td>
+<td>Motion name after conversion</td>
 </tr>
 </tbody>
 </table>
+<p>When the HEM file is exported in this state, the blend shape names will be output with the converted names.</p>
+<p><img alt="VKCNodeBlendShapeTranslator_4" src="../../VKCComponents/img/VKCNodeBlendShapeTranslator_4.jpg" /></p>
 
 
 
