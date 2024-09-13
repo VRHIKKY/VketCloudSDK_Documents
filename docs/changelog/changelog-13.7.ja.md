@@ -2,6 +2,12 @@
 
 ## 2024年9月13日更新
 
+## 2024年9月13日 - 変更されたページ
+
+- VKCコンポーネント
+  - VKC Node
+    
+
 ## 2024年9月13日 - 追加されたページ
 
 - ワールド制作ガイド
@@ -38,9 +44,11 @@
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCItemObject.html)
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
-  - VKC Node
-    - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeAlphaAnimation.html)
-        - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
+    - VKC Node
+        - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeAlphaAnimation.html)
+            - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
+        - [VKC Node Blend Shape Translator](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeBlendShapeTranslator.html)
+            - HEMファイルを出力するキャラクターにHEOExporter/HEOInfoコンポーネントを追加し、BlendShapeTransNameTableのSizeを変更し、SrcName/DestNameに変換前と変換後の名前を設定する方法についてのページを追加
 
 ---
 
