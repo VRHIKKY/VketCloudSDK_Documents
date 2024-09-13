@@ -3,6 +3,10 @@
 ## September 13 2024 Update
 
 ## September 13 2024 - Edited Pages
+
+- World Making Guide
+  - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/UnityGuidelines.html)
+    - Added a caution about the use of the ".png" extension for texture files
 - HeliScript
     - Built-in Classes And Functions
         - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)

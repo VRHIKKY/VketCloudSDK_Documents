@@ -3,6 +3,10 @@
 ## 2024年9月13日更新
 
 ## 2024年9月13日 - 変更されたページ
+
+- ワールド制作の基本
+  - [Unityガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
+    - 受け付けるテクスチャが小文字のpng形式のみであることを明示する。
 - HeliScript
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
