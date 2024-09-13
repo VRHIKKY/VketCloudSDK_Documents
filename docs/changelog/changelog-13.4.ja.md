@@ -1,6 +1,21 @@
 # SDK Manual Change Log - Ver 13.4
 
-## 2024年9月6更新
+## 2024年9月13日更新
+
+## 2024年8月30日 - 追加されたページ
+
+- ワールド制作ガイド
+  - [シェーダー対応項目一覧](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/ShaderAvailability.html)
+
+## 2024年9月13日 - 変更されたページ
+
+- ワールド制作ガイド
+  - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
+    - シェーダー対応項目への案内を追記
+
+---
+
+## 2024年9月6日更新
 
 ## 2024年9月6日 - 変更されたページ
 - HeliScript
