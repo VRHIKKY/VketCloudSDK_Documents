@@ -33,6 +33,10 @@
             - Add a list of available Item classes using this object type
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCItemObject.html)
             - Add a list of available Item classes using this object type
+    - VKC Node
+        - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeAlphaAnimation.html)
+            - Changed the notation from VKCNodeAlphaAnimation to VKC Node Alpha Animation
+
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## 2024年9月13日更新
 
-## 2024年9月13日 - 変更されたページ
+## 2024年9月13日 - 編集されたページ
 
 - VketCloudSDKについて
   - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/AboutVketCloudSDK/OperatingEnvironment.html)
@@ -33,6 +33,10 @@
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCItemObject.html)
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+  - VKC Node
+    - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeAlphaAnimation.html)
+        - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
+
 
 ---
 
