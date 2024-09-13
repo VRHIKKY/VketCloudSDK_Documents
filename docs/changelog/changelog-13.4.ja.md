@@ -9,9 +9,11 @@
 
 ## 2024年9月13日 - 変更されたページ
 
-- ワールド制作ガイド
+- ワールド制作の基本
   - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
     - シェーダー対応項目への案内を追記
+  - [Unityガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/UnityGuidelines.html)
+    - 受け付けるテクスチャが小文字のpng形式のみであることを明示する。
 - HeliScript
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/hs/hs_class_item.html)
@@ -32,6 +34,9 @@
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemObject.html)
             - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+    - VKC Node
+        - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCNodeAlphaAnimation.html)
+            - VKCNodeAlphaAnimationからスペースありのVKC Node Alpha Animationに表記変更
 
 ---
 
