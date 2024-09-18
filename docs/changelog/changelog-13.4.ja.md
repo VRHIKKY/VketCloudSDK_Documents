@@ -1,5 +1,20 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年9月20日更新
+
+## 2024年9月20日 - 変更されたページ
+
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemParticle.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKC Item Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+
+---
+
 ## 2024年9月13日更新
 
 ## 2024年9月13日 - 追加されたページ
