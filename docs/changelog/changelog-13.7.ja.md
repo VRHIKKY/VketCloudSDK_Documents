@@ -1,12 +1,17 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年9月18日更新
+
+## 2024年9月18日 - 追加されたページ
+
+- ワールド制作ガイド
+  - JS入稿
+    - [JS入稿機能の有効化](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/JsUpload.html)
+    - [JS入稿のサンプル](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/JsUpload_Sample.html)
+
+---
+
 ## 2024年9月13日更新
-
-## 2024年9月13日 - 変更されたページ
-
-- VKCコンポーネント
-  - VKC Node
-    
 
 ## 2024年9月13日 - 追加されたページ
 
@@ -71,8 +76,3 @@
         - Install Wizardが以下機能が加わって、アップデートされたので、説明文および画像を13.7向けに更新
            - Unity 2022のときはAPI Compatibilityの必須設定項目がなくなった
            - プロジェクトパスにスペースもしくは２バイト文字が入っている場合に、起動時に警告を表示しインストールできなくする
-
-## 2024年9月11日 - 追加されたページ
-
-- ワールド制作ガイド
-  - [JSをアップロードする方法について](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/JsUpload.html)
