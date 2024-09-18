@@ -16,6 +16,12 @@ With this feature, Vket Cloud developers can achieve the following:
 
 - **Operation of a Membership-based Web Metaverse Space Linked to Your Own Database**: Operate a membership-based web metaverse space linked to your own database.
 
+## Sample JS Upload World
+
+We have prepared a sample world for uploading JS. By uploading the sample JS, you can display the state of the keyboard (pressed/released) as text in the world.
+
+For more information, refer to [Introducing Sample JS Upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/JsUpload_Sample.html).
+
 ## Prerequisites
 
 - **SDK 13.7 and Later**

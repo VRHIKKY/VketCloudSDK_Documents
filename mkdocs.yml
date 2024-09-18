@@ -113,6 +113,9 @@ plugins:
             File Deployment Config: ワールドに任意のファイルを保持させる
             How to convert animation from Unity asset: Unityアセットのアニメーションを変換する
             Movable Clickable Object: クリック判定のある移動オブジェクト
+            JS Upload: JS入稿
+            Enabling JS Upload Feature: JS入稿機能の有効化
+            Sample JS Upload: JS入稿のサンプル
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -300,6 +303,9 @@ nav:
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
     - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
     - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
+    - JS Upload :
+      - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
+      - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
