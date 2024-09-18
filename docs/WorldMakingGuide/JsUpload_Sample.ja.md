@@ -13,6 +13,9 @@
 ## サンプルJS入稿ワールドの説明
 
 キーボードの状態(Up and Down)がテキストとして表示されるワールドです。
+
+![JsUploadSampleWorld](./img/JSUpload_SampleWorld.gif)
+
 このサンプルワールドでは、ユーザーのキーボード入力（キーの押下や離す動作）をリアルタイムで検知し、その状態（Down、Up）をテキストとして表示します。この一連の動作は、Vket Cloud側のHeliScriptスクリプトとJavaScriptを用いた双方向の通信を通じて実現されています。
 
 ## 通信の説明

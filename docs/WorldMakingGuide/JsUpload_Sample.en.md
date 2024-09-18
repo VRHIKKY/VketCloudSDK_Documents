@@ -13,7 +13,11 @@ Make sure the following prerequisites are met:
 
 ## Overview of the Sample JS Submission World
 
-In this sample world, the state of the keyboard (Up or Down) is displayed as text. The system detects keyboard inputs from the user (key presses and releases) in real-time and displays their status (Down, Up) as text. This functionality is enabled through bidirectional communication between Vket Cloud's HeliScript and JavaScript.
+In this sample world, the state of the keyboard (Up or Down) is displayed as text. 
+
+![JsUploadSampleWorld](./img/JSUpload_SampleWorld.gif)
+
+The system detects keyboard inputs from the user (key presses and releases) in real-time and displays their status (Down, Up) as text. This functionality is enabled through bidirectional communication between Vket Cloud's HeliScript and JavaScript.
 
 ## Explanation of the Communication Flow
 
