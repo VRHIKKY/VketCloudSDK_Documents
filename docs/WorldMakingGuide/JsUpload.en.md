@@ -2,17 +2,20 @@
 
 ## Purpose
 
-By uploading JavaScript (aka JS), you can execute JavaScript within your world. For example, using JS, you can integrate with external APIs (such as weather information, news, SNS feeds) and display real-time information in VR.
+By uploading JavaScript (aka JS), you can execute JS in your world. 
 
-Other use cases include:
+You can implement various gimmicks using JavaScript-based scripts (programming) in Vket Cloud, such as "browser games," "3D websites," and "online events."
 
-- **Data Collection and Analysis**: Embed a feature within the VR space that analyzes user data in real-time and displays the results using JS. Provide immediate feedback based on user behavior data to optimize the experience.
+JavaScript is a programming language that is commonly used in the development of web browser-based applications. JavaScript is often used in combination with HTML and CSS, making it easy for beginners to start developing on the web browser. JavaScript is also characterized by its rich library support.
 
-- **Integration with External APIs**: Use JS to integrate with external APIs (such as weather information, news, SNS feeds) and display real-time information in VR. This allows for dynamic content updates and the importation of external information, providing a more interactive experience.
+With this feature, Vket Cloud developers can achieve the following:
 
-- **Implementation of Interactive Content**: Add interactive effects and events using JS that respond in real-time to user actions such as clicks or gestures. Enhance user immersion in the content and provide a deeper experience.
+- **Implementation of Game World Save Functionality**: Implement a full-fledged online game with server synchronization and game world save functionality.
 
-- **Customization of Game Logic**: Use JS to customize game logic within VR (such as scoring systems, enemy behavior, item actions), creating unique gaming experiences. Game developers can easily implement custom rules and systems, enabling creative game design.
+- **Weather Animation in the World Using Public Weather APIs**: Change the weather animation in the world using publicly available weather APIs.
+
+- **Operation of a Membership-based Web Metaverse Space Linked to Your Own Database**: Operate a membership-based web metaverse space linked to your own database.
+
 
 ## Supported SDK Versions
 
