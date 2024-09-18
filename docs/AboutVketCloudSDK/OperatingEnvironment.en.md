@@ -2,7 +2,10 @@
 
 VketCloudSDK requires the following Unity editor version:
 
-- **Unity 2019.4.31f1**
+- **Unity 2019.4.31f1** (SDK13.7.7 and earlier)
+- **Unity 2022.3.6f1** (SDK13.7.7 and later)
+
+* SDK13.7.7 supports both versions.
 
 If the above version of Unity is not installed, install by following the instructions below:
 
@@ -22,7 +25,10 @@ Also, we recommend the below systems when entering your world built with VketClo
 - PC: A computer that supports web browsers such as Chrome / Firefox / Safari / Edge.
 - iOS: iPhone X or later, iPhone SE (2nd generation) or later
 - Android: Android 11 or later / RAM: 8GB or more / For Google Pixel series, Pixel 5 or later
+- IDE: When editing HeliScript, Visual Studio is not recommended due to the encoding issue. If you want to edit in an environment similar to Visual Studio, please use Visual Studio Code.
 
+!!! note warning
+    When you open and save HeliScript created with Unity VketCloudSDK in Visual Studio, it may become ANSI, and you may not be able to build.
 ---
 
 !!! note warning

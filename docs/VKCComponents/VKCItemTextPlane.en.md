@@ -11,22 +11,28 @@ For example, by Build & Running the world the text will be displayed as below:
 
 | Label | Initial Value | Function |
 | ----   | ---- | ---- |
-| World Position | Same value as Transform's Position value | Set the position for displaying text |
-| World Rotation | Same value as Transform's Rotation value | Set the rotation for displaying text |
-| World Scale |  | Same value as Transform's Scale value | Set the scale for displaying text |
 | Show | true | Enable this if you want the text to display by default |
-| Scene Preview | true | Enable/Disable text preview in the Unity editor's Scenet view.<br> This setting is a beta feature | 
-| Look at Camera | false |  Make the text face towards the camera at all times |
-| Alpha Blending | true | Lets you use cutout/transparency |
 | Text | blank | Input the text to be displayed |
+| Scene Preview | true | Enable/Disable text preview in the Unity editor's Scenet view.<br> This setting is a beta feature | 
 | Font Size | 128 |  Specify the text size |
+| Texture Size | X:512 Y:512 | Specify the base resolution for the displayed text texture <br> **Value needs to be a power of two!** |
 | Text Alignment | Left Top | Set the text alignment and centering for display |
 | Color | #FFFFFF | Specify the text color |
 | Wrap Text | false | Enable/Disable automatic text wrapping |
-| Texture Size | X:512 Y:512 | Specify the base resolution for the displayed text texture <br> **Value needs to be a power of two!** |
+| Look at Camera | false |  Make the text face towards the camera at all times |
+| Alpha Blending | true | Lets you use cutout/transparency |
+
+
+### Advanced
+
+| Label | Initial Value | Function |
+| ----   | ---- | ---- |
+| Auto Loading | true | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](VKCItemField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
+| Clickable | false | Toggles acceptance of click input from player |
 | Character Space | 0.0| Set the character space by pixel |
 | Line Space | 1.0 | Set the line space by pixel |
 | Z-Bias | -0.05 | Higher z value will make the text drawn in front of other objects |
+| Show Photo Mode | true | Toggles display/hide item when in photo mode |
 | Overrides | | On Entering the world, the text set in this `text` property will be used instead Text in VKC Item Text Plane. |
 
 !!! note caution

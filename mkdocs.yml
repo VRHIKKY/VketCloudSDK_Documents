@@ -57,6 +57,7 @@ plugins:
       lang: 
         - en
         - ja
+      
   - mike:
       version_selector: true
       css_dir: css
@@ -93,6 +94,7 @@ plugins:
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
             # ワールド制作ガイド
             World Making Guide: ワールド制作ガイド
+            Shader Availability : シェーダー対応項目一覧
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
             Exporter: .heoファイルについて
@@ -111,7 +113,6 @@ plugins:
             File Deployment Config: ワールドに任意のファイルを保持させる
             How to convert animation from Unity asset: Unityアセットのアニメーションを変換する
             Movable Clickable Object: クリック判定のある移動オブジェクト
-            How to Upload JavaScript: JSをアップロードする方法について
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -228,6 +229,7 @@ plugins:
             Item Class: Itemクラス
             Player Class: Playerクラス
             Date Class: Dateクラス
+            HSMessage Class: HSMessageクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -284,6 +286,7 @@ nav:
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
+    - Shader Availability : WorldMakingGuide/ShaderAvailability.md
     - Setting up a Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
@@ -297,7 +300,6 @@ nav:
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
     - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
     - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
-    - How to Upload JavaScript : WorldMakingGuide/JsUpload.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -318,6 +320,7 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
+    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - GUITools: 
       - Overview & Setup: GUITools/Setup.md
       - How to Use: GUITools/HowToUse.md
@@ -459,6 +462,7 @@ nav:
         - Item Class: hs/hs_class_item.md
         - Player Class: hs/hs_class_player.md
         - Date Class: hs/hs_class_date.md
+        - HSMessage Class: hs/hs_class_hsmessage.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md
@@ -482,6 +486,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v13.x:
+        - v13.8: releasenote/releasenote-13.8.md
         - v13.7: releasenote/releasenote-13.7.md
         - v13.6: releasenote/releasenote-13.6.md
         - v13.5: releasenote/releasenote-13.5.md

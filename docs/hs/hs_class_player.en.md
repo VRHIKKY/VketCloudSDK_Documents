@@ -100,7 +100,7 @@ Get coordinates.
 
 ### SetRotate
 
-`void SetRotate(float angle)`
+`void SetRotate(float angle, bool CameraRotate = true)`
 
 Sets the orientation of the player.
 

@@ -1,9 +1,10 @@
-# HSGUIModel - Summary
+# Built-in functions - HSGUIModel
 
-GUI要素のHSGUIModelクラス詳細
+Details about the `HSGUIModel` class used for GUI elements.
 
 ## HSGUIModel - Types
-```
+
+```csharp
 HSGUIModel() 
 {
   m_Name = "";
@@ -25,100 +26,110 @@ HSGUIModel()
   m_ParamButton = new HSButtonModel();
 }
 ```
+
 ## HSGUIModel - Functions
+
 ### SetName
+
 `void SetName(string Name)`
 
-GUIのNameを設定する。
+Sets the name of the GUI element.
+
 ### SetType
+
 `void SetType(string Type)`
 
-GUIのTypeを設定する。
+Sets the type of the GUI element.
 
 ### SetPlatform
+
 `void SetPlatform(string Platform)`
 
-GUIのPlatformを設定する。
-
-使用想定はスマホかPCでButtonやImageの画像を変更したい場合で、
-
-"_sp"を設定した場合、画像の名前の語尾にその文字列を追加し、画像を差し替えることが出来る。
+Sets the platform for the GUI element. This can be used to adjust images based on the platform (e.g., adding "_sp" to image filenames for smartphones).
 
 ### SetLanguage
+
 `void SetLanguage(string Language)`
 
-GUIのLanguageを設定する。
-
-使用想定はButtonやImageの画像を変更したい場合で、
-
-"_en"を設定した場合、画像の名前の語尾にその文字列を追加し、画像を差し替えることが出来る。
+Sets the language for the GUI element. This can be used to adjust images based on the language (e.g., adding "_en" to image filenames for English).
 
 ### SetShow
+
 `void SetShow(bool Show)`
 
-GUIの表示/非表示を設定する。
+Sets whether the GUI element is visible.
 
 ### SetPos
+
 `void SetPos(HS2DI Pos)`
 
-GUIの座標を設定する。
+Sets the position of the GUI element.
 
 ### SetSize
+
 `void SetSize(HS2DI Size)`
 
-GUIの大きさを設定する。
+Sets the size of the GUI element.
 
 ### SetZ
+
 `void SetZ(int Z)`
 
-GUIのZ軸を設定する。
+Sets the Z-order of the GUI element.
 
 ### SetRotate
+
 `void SetRotate(float Rotate)`
 
-GUIの角度を設定する。
+Sets the rotation angle of the GUI element.
 
 ### SetRaycastTarget
+
 `void SetRaycastTarget(bool RaycastTarget)`
 
-GUIがマウスに当たるかどうかを設定する。
+Sets whether the GUI element can interact with mouse events.
 
 ### SetPivot
+
 `void SetPivot(HS2D Pivot)`
 
-GUIのPivotを設定する。
+Sets the pivot point of the GUI element.
 
 ### SetAnchor
+
 `void SetAnchor(string Anchor)`
 
-GUIのAnchorを設定する。
-
-Anchorには`LT`,`LM`,`LB`,`CT`,`CM`,`CB`,`RT`,`RM`,`RB`が設定できる。
+Sets the anchor point of the GUI element. Options include `LT`, `LM`, `LB`, `CT`, `CM`, `CB`, `RT`, `RM`, `RB`.
 
 ### SetTextModel
+
 `void SetTextModel(HSTextModel Model)`
 
-GUIのTextModelを設定できる。
+Sets the text model for the GUI element. Details of `HSTextModel` are provided later.
 
-TextModelについては、後述する。
 ### SetImageModel
+
 `void SetImageModel(HSImageModel Model)`
 
-GUIのImageModelを設定できる。
+Sets the image model for the GUI element. Details of `HSImageModel` are provided later.
 
-ImageModelについては、後述する。
 ### SetButtonModel
+
 `void SetButtonModel(HSButtonModel Model)`
 
-GUIのButtonModelを設定できる。
+Sets the button model for the GUI element. Details of `HSButtonModel` are provided later.
 
-ButtonModelについては、後述する。
-***
-# HSGUIModel - 汎用クラス
+---
+
+# HSGUIModel - Common Classes
+
 ## HSColor - Summary
-HSColorクラス
+
+Represents color in the GUI.
+
 ## HSColor - Types
-```
+
+```csharp
 HSColor()
 {
   m_R = 0.0f;
@@ -127,100 +138,150 @@ HSColor()
   m_A = 1.0f;
 }
 ```
+
 ## HSColor - Functions
+
 ### SetColor
+
 `void SetColor(HSColor color)`
 
-HSColor型で色を設定する。
+Sets the color using an `HSColor` object.
+
 ### SetRGB
-`void SetRGB(float red,float green,float blue)`
 
-float型の`R`,`G`,`B`で色を設定する。
+`void SetRGB(float red, float green, float blue)`
+
+Sets the color using RGB values.
+
 ### SetRGBA
-`void SetRGBA(float red,float green,float blue,float alpha)`
 
-float型の`R`,`G`,`B`,`A`で色を設定する。
+`void SetRGBA(float red, float green, float blue, float alpha)`
+
+Sets the color using RGBA values.
+
 ## HS2DI - Summary
-HS2DIクラス
+
+Represents a 2D integer vector.
+
 ## HS2DI - Types
-```
+
+```csharp
 HS2DI()
 {
   m_X = 0;
   m_Y = 0;
 }
 ```
+
 ## HS2DI - Functions
+
 ### SetS2DI
+
 `void SetS2DI(HS2DI s2di)`
 
-HS2DI型で2DIを設定する。
-### SetXY
-`void SetXY(int _x,int _y)`
+Sets the 2D vector using another `HS2DI` object.
 
-int型の`X`,`Y`で2DIを設定する。
+### SetXY
+
+`void SetXY(int _x, int _y)`
+
+Sets the 2D vector using X and Y values.
+
 ## HS2D - Summary
-HS2Dクラス
+
+Represents a 2D float vector.
+
 ## HS2D - Types
-```
+
+```csharp
 HS2D()
 {
   m_X = 0.0f;
   m_Y = 0.0f;
 }
 ```
+
 ## HS2D - Functions
+
 ### SetS2DI
+
 `void SetS2D(HS2D s2d)`
 
-HS2D型で2Dを設定する。
-### SetXY
-`void SetXY(float _x,float _y)`
+Sets the 2D vector using another `HS2D` object.
 
-float型の`X`,`Y`で2Dを設定する。
+### SetXY
+
+`void SetXY(float _x, float _y)`
+
+Sets the 2D vector using X and Y float values.
+
 ## HSRect - Summary
-HSRectクラス
+
+Represents a rectangular area.
+
 ## HSRect - Types
-```
+
+```csharp
 HSRect()
 {
   m_Pos = new HS2DI();
   m_Size = new HS2DI();
 }
 ```
+
 ## HSRect - Functions
+
 ### SetRect
-`void SetRect(HS2DI pos,HS2DI size)`
 
-HS2DI型の座標と大きさでRectを設定する。
+`void SetRect(HS2DI pos, HS2DI size)`
+
+Sets the rectangle using position and size.
+
 ### SetXYWH
-`void SetXYWH(int _x,int _y,int _w,int _h)`
 
-`x`,`y`,`width`,`height`でRectを設定する。
+`void SetXYWH(int _x, int _y, int _w, int _h)`
+
+Sets the rectangle using X, Y, width, and height.
+
 ## HSRectLTRB - Summary
-HSRectLTRBクラス
+
+Represents a rectangle using left, top, right, and bottom coordinates.
+
 ## HSRectLTRB - Types
-```
+
+```csharp
 HSRectLTRB()
 {
   m_PosLT = new HS2DI();
   m_PosRB = new HS2DI();
 }
 ```
+
 ## HSRectLTRB - Functions
+
 ### SetRectLTRB
-`void SetRectLTRB(HS2DI LT,HS2DI RB)`
 
-HS2DI型の右上と左下の座標と大きさでRectLTRBを設定する。
+`void SetRectLTRB(HS2DI LT, HS2DI RB)`
+
+Sets the rectangle using top-left and bottom-right coordinates.
+
 ### SetLTRB
-`void SetLTRB(int _l,int _t,int _r,int _b)`
 
-`left`,`top`,`right`,`bottom`でRectLTRBを設定する。
-# HSGUIModel - GUIType
+`void SetLTRB(int _l, int _t, int _r, int _b)`
+
+Sets the rectangle using left, top, right, and bottom values.
+
+---
+
+# HSGUIModel - GUI Types
+
 ## HSTextModel - Summary
-HSTextModel クラス
+
+Represents a text element in the GUI.
+
 ## HSTextModel - Types
-```
+
+```csharp
 HSTextModel()
 {
   m_FontSize = 16;
@@ -236,53 +297,76 @@ HSTextModel()
   m_URLClickable = false;
 }
 ```
+
 ## HSTextModel - Functions
+
 ### SetFontSize
+
 `void SetFontSize(int FontSize)`
 
-Textのフォントサイズを設定する。
+Sets the font size of the text.
+
 ### SetFontFamily
+
 `void SetFontFamily(string FontFamily)`
 
-TextのFontFamilyを設定する。
+Sets the font family of the text.
+
 ### SetColor
+
 `void SetColor(HSColor Color)`
 
-Textの色を設定する。
+Sets the color of the text.
+
 ### SetURLColor
+
 `void SetURLColor(HSColor Color)`
 
-TextのURLの色を設定する。
+Sets the color of URLs in the text.
+
 ### SetText
+
 `void SetText(string Text)`
 
-Textの文字を設定する。
+Sets the text content.
+
 ### SetAlignment
+
 `void SetAlignment(string Alignment)`
 
-Textの表示位置を設定する。
+Sets the alignment of the text. Options include `LT`, `LM`, `LB`, `CT`, `CM`, `CB`, `RT`, `RM`, `RB`.
 
-Alignmentには`LT`,`LM`,`LB`,`CT`,`CM`,`CB`,`RT`,`RM`,`RB`が設定できる。
 ### SetCharaSpace
+
 `void SetCharaSpace(int CharaSpace)`
 
-Textの間隔を設定する。
+Sets the character spacing.
+
 ### SetLineSpace
+
 `void SetLineSpace(int LineSpace)`
 
-Textの上下の間隔を設定する。
+Sets the line spacing.
+
 ### SetOverflowWrap
+
 `void SetOverflowWrap(bool OverflowWrap)`
 
-Textの範囲内で折り返すかどうかを設定する。
+Sets whether the text should wrap within the available space.
+
 ### SetURLClickable
+
 `void SetURLClickable(bool URLClickable)`
 
-TextのURLをクリックできるかどうかを設定をする。
+Sets whether URLs in the text can be clicked.
+
 ## HSImageModel - Summary
-HSImageModel クラス
+
+Represents an image element in the GUI.
+
 ## HSImageModel - Types
-```
+
+```csharp
 HSImageModel()
 {
   m_Uri = "";
@@ -290,23 +374,34 @@ HSImageModel()
   m_LTRB = new HSRectLTRB();
 }
 ```
+
 ## HSImageModel - Functions
+
 ### SetURI
+
 `void SetURI(string uri)`
-    
-画像のアドレスを設定する。
+
+Sets the URI for the image.
+
 ### SetUVArea
+
 `void SetUVArea(HSRect UVArea)`
 
-画像のUVAreaを設定する。
+Sets the UV area for the image.
+
 ### SetLTRB
+
 `void SetLTRB(HSRectLTRB LTRB)`
 
-画像のLTRBを設定する。
+Sets the LTRB for the image.
+
 ## HSButtonModel - Summary
-HSButtonModel クラス
+
+Represents a button element in the GUI.
+
 ## HSButtonModel - Types
-```
+
+```csharp
 HSButtonModel()
 {
   m_FileName = "";
@@ -319,28 +414,42 @@ HSButtonModel()
   m_OnKeyDownMulColor.SetRGB(1.0f,1.0f,1.0f);
 }
 ```
+
 ## HSButtonModel - Functions
+
 ### SetFileName
+
 `void SetFileName(string FileName)`
-    
-Buttonが通常時の画像のURIを設定する。
-### SetOnCursorFileName
+
+Sets the URI for the button's normal state image.
+
+### SetOnCursorFile
+
+Name
 `void SetOnCursorFileName(string OnCursorFileName)`
-    
-Buttonがマウスカーソルが乗っている時の画像のURIを設定する。
+
+Sets the URI for the button's hover state image.
+
 ### SetDownFileName
+
 `void SetDownFileName(string DownFileName)`
-    
-Buttonがマウスカーソルがクリックされている時の画像のURIを設定する。
+
+Sets the URI for the button's clicked state image.
+
 ### SetClickAreaSize
+
 `void SetClickAreaSize(HS2DI ClickAreaSize)`
-    
-Buttonのクリック範囲を設定する。
+
+Sets the clickable area of the button.
+
 ### SetUVArea
+
 `void SetUVArea(HSRect UVArea)`
-    
-Buttonの画像のUVAreaの設定をする。
+
+Sets the UV area for the button's image.
+
 ### SetLTRB
+
 `void SetLTRB(HSRectLTRB LTRB)`
 
-Buttonの画像のLTRBの設定をする。
+Sets the LTRB for the button's image.

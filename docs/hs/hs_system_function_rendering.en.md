@@ -1,7 +1,7 @@
 
-# 組み込み関数 - レンダリング
+# Built-in functions - Rendering
 
-レンダリングに関するユーティリティ関数
+Utility functions related to rendering
 
 ***
 
@@ -9,16 +9,16 @@
 
 `void hsRenderingSetLightDir(Vector3 Dir)`
 
-ライト方向を設定します。
+Designates light direction.
 
 ## hsRenderingSetLightColor
 
 `void hsRenderingSetLightColor(float R, float G, float B)`
 
-ライトの色を設定します。
+Designates light color.
 
 ## hsRenderingSetLightScattering
 
 `void hsRenderingSetLightScattering(float BetaR, float BetaM, float G, float Distance, float LightColorR, float LightColorG, float LightColorB, float SunColorR, float SunColorG, float SunColorB)`
 
-ライトスキャタリングの設定をおこないます。
+Designates settings related to light scattering.
