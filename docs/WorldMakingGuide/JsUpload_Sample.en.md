@@ -2,7 +2,7 @@
 
 ## Prerequisites
 Make sure the following prerequisites are met:
-- [Requirements for enabling the JS Submission Feature in SDK 13.7](https://vrhikky.github.io/VketCloudSDK_Documents/en/13.7/WorldMakingGuide/JsUpload.html#Prerequisites)
+- [Requirements for enabling the JS Submission Feature in SDK 13.7](../WorldMakingGuide/JsUpload.md#_2)
 
 ## Sample JS Submission Steps
 
@@ -20,8 +20,8 @@ In this sample world, the state of the keyboard (Up or Down) is displayed as tex
 Data is exchanged bidirectionally between HeliScript and the JavaScript running on the browser. The process consists of sending input data from the Unity side to JavaScript, which processes the data.
 
 - **Data Communication between HeliScript and JavaScript:**
-   - Data is sent from HeliScript to JavaScript, and vice versa.
-   - The `heliport.customApi` namespace handles this communication, where methods like `sendData` and `receiveData` are used for sending and receiving data.
+      - Data is sent from HeliScript to JavaScript, and vice versa.
+      - The `heliport.customApi` namespace handles this communication, where methods like `sendData` and `receiveData` are used for sending and receiving data.
 
 ## Data Flow Overview
 
@@ -89,10 +89,11 @@ window.heliport.customApi = {
 ```
 
 - **handleKeyEvent() Function:**
-   - Listens for `keydown` and `keyup` events and pushes the corresponding key state into the `keyEventStream$` RxJS stream.
+     - Listens for `keydown` and `keyup` events and pushes the corresponding key state into the `keyEventStream$` RxJS stream.
+
 - **Data Communication:**
-   - The `toIngame$` stream is used to send data to HeliScript, while `fromIngame$` receives data from HeliScript.
-   - The `receiveData()` method asynchronously returns data upon request from HeliScript.
+     - The `toIngame$` stream is used to send data to HeliScript, while `fromIngame$` receives data from HeliScript.
+     - The `receiveData()` method asynchronously returns data upon request from HeliScript.
 
 ## HeliScript Implementation
 
@@ -185,8 +186,10 @@ component keyLogging
 ```
 
 - **keyLogging Component:**
-   - Manages the state of keyboard input and waits for data from JavaScript via the `Watch()` function.
-   - The received data (`OnReceive()` method) represents the state of key presses, which is then reflected in Unity's UI.
+      - Manages the state of keyboard input and waits for data from JavaScript via the `Watch()` function.
+      - The received data (`OnReceive()` method) represents the state of key presses, which is then reflected in Unity's UI.
+
+   
 - **Key Features:**
-   - `heliport.customApi.receiveData()` is used to asynchronously receive data from JavaScript.
-   - The `sendClick()` method sends click events to JavaScript when a node is clicked.
+      - `heliport.customApi.receiveData()` is used to asynchronously receive data from JavaScript.
+      - The `sendClick()` method sends click events to JavaScript when a node is clicked.

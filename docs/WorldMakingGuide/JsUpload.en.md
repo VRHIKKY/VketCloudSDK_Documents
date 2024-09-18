@@ -4,9 +4,9 @@
 
 By uploading JavaScript (aka JS), you can execute JS in your world. 
 
-You can implement various gimmicks using JavaScript-based scripts (programming) in Vket Cloud, such as "browser games," "3D websites," and "online events."
+You can implement various gimmicks using JS in Vket Cloud, such as "browser games," "3D websites," and "online events."
 
-JavaScript is a programming language that is commonly used in the development of web browser-based applications. JavaScript is often used in combination with HTML and CSS, making it easy for beginners to start developing on the web browser. JavaScript is also characterized by its rich library support.
+JS is a programming language that is commonly used in the development of web browser-based applications. JS is often used in combination with HTML and CSS, making it easy for beginners to start developing on the web browser. JS is also characterized by its rich library support.
 
 With this feature, Vket Cloud developers can achieve the following:
 
@@ -20,13 +20,13 @@ With this feature, Vket Cloud developers can achieve the following:
 
 We have prepared a sample world for uploading JS. By uploading the sample JS, you can display the state of the keyboard (pressed/released) as text in the world.
 
-For more information, refer to [Introducing Sample JS Upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/JsUpload_Sample.html).
+For more information, refer to [Introducing Sample JS Upload](../WorldMakingGuide/JsUpload_Sample.md).
 
 ## Prerequisites
 
 - **SDK 13.7 and Later**
 - You must have read and agreed to the terms of service and submitted the application form ([Terms of Service](https://account.vket.com/terms?locale=en#vket-cloud){target=_blank}, [Application Form](https://forms.gle/uEwNtVvMWvf4SqZV8){target=_blank}).
-   - When applying, please prepare your Team ID and VketID. Please check [Team and Plan Management](https://cloud.vket.com/en/account/admin/team){target=_blank} and [Account Management](https://cloud.vket.com/en/account/admin/member){target=_blank} in Vket Cloud.
+      - When applying, please prepare your Team ID and VketID. Please check [Team and Plan Management](https://cloud.vket.com/en/account/admin/team){target=_blank} and [Account Management](https://cloud.vket.com/en/account/admin/member){target=_blank} in Vket Cloud.
 
 ## JS Submission Procedure
 

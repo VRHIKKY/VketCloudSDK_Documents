@@ -1,7 +1,7 @@
 # サンプルJS入稿ワールドの導入方法
 
 ## 前提条件
-- [JS入稿機能をSDK13.7にてOnにする方法の前提条件](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/JsUpload.html#前提条件)を満たしていること
+- [JS入稿機能をSDK13.7にてOnにする方法の前提条件](../WorldMakingGuide/JsUpload.md#_2)を満たしていること
 
 ## サンプルJS入稿手順
 
@@ -20,8 +20,8 @@
 HeliScript と、ブラウザ上で実行される JavaScript 間でデータを双方向にやり取りしています。この仕組みは、Unity側からの入力情報をJavaScriptに送信し、JavaScript側からそのデータを処理するという流れで構成されています。
 
 - HeliScript ⇔ JavaScriptのデータ通信
-   - HeliScript側から JavaScript に対してデータ送信が行われ、また逆に JavaScript から HeliScript へデータが返されます。
-   - heliport.customApi 名前空間が両者の通信を仲介し、sendData や receiveData メソッドでデータの送受信を行います。
+      - HeliScript側から JavaScript に対してデータ送信が行われ、また逆に JavaScript から HeliScript へデータが返されます。
+      - heliport.customApi 名前空間が両者の通信を仲介し、sendData や receiveData メソッドでデータの送受信を行います。
 
 ## データフローの全体像
 1. キーボードの入力があると、JavaScriptがそのイベントを検知し、keyEventStream$ にデータを流します。
@@ -88,10 +88,11 @@ window.heliport.customApi = {
 ```
 
 - handleKeyEvent() 関数
-   - keydown および keyup イベントを監視し、それぞれのイベントに対応するキーの状態を keyEventStream$ というRxJSのストリームに送ります。
+      - keydown および keyup イベントを監視し、それぞれのイベントに対応するキーの状態を keyEventStream$ というRxJSのストリームに送ります。
+
 - データの送受信
-   - JavaScript側では、toIngame$ ストリームを通してHeliScriptにデータを送信し、fromIngame$ でHeliScriptからのデータを受信します。
-   - receiveData() メソッドは、HeliScriptからデータ要求があった際に、非同期的にデータを返す役割を持ちます。
+      - JavaScript側では、toIngame$ ストリームを通してHeliScriptにデータを送信し、fromIngame$ でHeliScriptからのデータを受信します。
+      - receiveData() メソッドは、HeliScriptからデータ要求があった際に、非同期的にデータを返す役割を持ちます。
 
 ## HeliScriptの実装
 
@@ -184,9 +185,9 @@ component keyLogging
 ```
 
 - keyLogging コンポーネント
-   - キーボードの入力状態を管理し、Watch() 関数で JavaScript 側からのデータ受信を待ち受けています。
-   - 受信したデータ（OnReceive() メソッドで取得）は、キーの押下状態を示し、そのデータをUnity内のUIに反映させます。
-- 主な機能
-   - heliport.customApi.receiveData() を使って、非同期的にJavaScriptからのデータを受け取ります。
-   - sendClick() メソッドは、ノードをクリックした際のイベントを JavaScript 側に送信します。
+      - キーボードの入力状態を管理し、Watch() 関数で JavaScript 側からのデータ受信を待ち受けています。
+      - 受信したデータ（OnReceive() メソッドで取得）は、キーの押下状態を示し、そのデータをUnity内のUIに反映させます。
 
+- 主な機能
+      - heliport.customApi.receiveData() を使って、非同期的にJavaScriptからのデータを受け取ります。
+      - sendClick() メソッドは、ノードをクリックした際のイベントを JavaScript 側に送信します。
