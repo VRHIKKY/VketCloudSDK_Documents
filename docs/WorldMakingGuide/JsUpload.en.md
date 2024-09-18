@@ -16,21 +16,11 @@ With this feature, Vket Cloud developers can achieve the following:
 
 - **Operation of a Membership-based Web Metaverse Space Linked to Your Own Database**: Operate a membership-based web metaverse space linked to your own database.
 
-
-## Supported SDK Versions
+## Prerequisites
 
 - **SDK 13.7 and Later**
-
-## Eligible Users
-
-Users subscribed to the following paid plans can enable the JS upload feature in SDK 13.7 and later, allowing them to upload JavaScript. For users on free plans, JavaScript will be automatically excluded from the uploadable files.
-
-- Basic Plan
-- Business Plan
-- Business Plus Plan
-- Enterprise Plan
-
-For more information on pricing plans, please check [here](https://cloud.vket.com/plan){target=_blank}.
+- You must have read and agreed to the terms of service and submitted the application form ([Terms of Service](https://account.vket.com/terms?locale=en#vket-cloud){target=_blank}, [Application Form](https://forms.gle/uEwNtVvMWvf4SqZV8){target=_blank}).
+   - When applying, please prepare your Team ID and VketID. Please check [Team and Plan Management](https://cloud.vket.com/en/account/admin/team){target=_blank} and [Account Management](https://cloud.vket.com/en/account/admin/member){target=_blank} in Vket Cloud.
 
 ## JS Submission Procedure
 
