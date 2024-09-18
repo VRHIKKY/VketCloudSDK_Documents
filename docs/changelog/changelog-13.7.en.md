@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.7
 
+## September 18 2024 Update
+
+## September 18 2024 - Added Pages
+
+- World Making Guide
+  - JS Upload
+    - [Enabling JS Upload Feature](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/WorldMakingGuide/JsUpload.html)
+    - [Sample JS Upload](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/WorldMakingGuide/JsUpload_Sample.html)
+
 ## September 13 2024 Update
     
 ## September 13 2024 - Added Pages
@@ -65,8 +74,3 @@
         - The Install Wizard has been updated with the following features, so the explanatory text and images have been updated to 13.7
            - When using Unity 2022, the required setting item for API Compatibility has been removed
            - If there are spaces or 2-byte characters in the project path, a warning will be displayed at startup and installation will not be possible
-
-## September 11 2024 - Added Pages
-
-- World Making Guide
-  - [How to Upload JavaScript](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/WorldMakingGuide/JsUpload.html)
