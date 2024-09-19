@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.4
 
+## September 20 2024 Update
+
+## September 20 2024 - Edited Pages
+
+- HeliScript
+      - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/hs/hs_overview.html)
+          - Fixed descriptions and links
+
+---
+
 ## September 13 2024 Update
 
 ## September 13 2024 - Added Pages
