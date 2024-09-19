@@ -2,7 +2,7 @@
 
 ## September 20 2024 Update
 
-## September 20 2024 - Added Pages
+## September 20 2024 - Edited Pages
 
 - VKC Components
     - VKC Item
