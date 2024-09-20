@@ -8,8 +8,9 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 ???+ note "Available methods for this object type"
     - [Equals](../hs/hs_class_item.md#equals)
     - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
     - [GetPos](../hs/hs_class_item.md#getpos)
-    - [GetWorldPos](../hs/hs_class_item.md#getworldpos)z
+    - [GetWorldPos](../hs/hs_class_item.md#getworldpos)
     - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
     - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
     - [GetWorldQuaternion](../hs/hs_class_item.md#getworldquaternion)

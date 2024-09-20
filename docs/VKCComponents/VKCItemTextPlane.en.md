@@ -1,11 +1,34 @@
-
 # VKC Item Text Plane
+
 ![HEOTextPlane_1](img/HEOTextPlane_1.jpg)
 
 VKC Item Text Plane will display the designated text at the object position attaching this component.<br>
 For example, by Build & Running the world the text will be displayed as below: 
 
 ![HEOTextPlane_3](img/HEOTextPlane_3.jpg)
+
+???+ note "Available methods for this object type"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [GetScale](../hs/hs_class_item.md#getscale)
+    - [SetScale](../hs/hs_class_item.md#setscale)
+    - [MovePos](../hs/hs_class_item.md#movepos)
+    - [IsMoving](../hs/hs_class_item.md#ismoving)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [ClearTextPlane](../hs/hs_class_item.md#cleartextplane)
+    - [WriteTextPlane](../hs/hs_class_item.md#writetextplane)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
 
 ## Settings
 
