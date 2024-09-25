@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.7
 
+## September 27 2024 Update
+
+## September 27 2024 - Edited Pages
+
+- About VketCloudSDK
+      - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
+          - Added description of how to change the Unity editor to Visual Studio Code.
+
+---
+
 ## September 18 2024 Update
 
 ## September 18 2024 - Added Pages

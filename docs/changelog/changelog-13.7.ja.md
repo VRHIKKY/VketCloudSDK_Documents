@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年9月27日更新
+
+## 2024年9月27日 - 変更されたページ
+
+- VketCloudSDKについて
+      - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/AboutVketCloudSDK/OperatingEnvironment.html)
+          - UnityエディターをVisual Studio Codeに変更する方法を記載
+
+---
+
 ## 2024年9月18日更新
 
 ## 2024年9月18日 - 追加されたページ
