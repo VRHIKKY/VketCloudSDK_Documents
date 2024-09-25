@@ -1,5 +1,23 @@
 # SDK Manual Change Log - Ver 13.4
 
+## 2024年9月20日更新
+
+## 2024年9月20日 - 変更されたページ
+
+- HeliScript
+      - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_overview.html)
+          - 説明文およびリンク修正
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemParticle.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKC Item Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+        - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/VKCComponents/VKCItemPlane.html)
+            - オブジェクトタイプを使用可能なItemクラスの一覧を追加
+
+---
+
 ## 2024年9月13日更新
 
 ## 2024年9月13日 - 追加されたページ

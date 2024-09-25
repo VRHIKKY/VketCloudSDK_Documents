@@ -10,6 +10,24 @@
 
 ---
 
+## September 20 2024 Update
+
+## September 20 2024 - Edited Pages
+
+- HeliScript
+      - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/hs/hs_overview.html)
+          - Fixed descriptions and links
+- VKC Components
+    - VKC Item
+        - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemParticle.html)
+            - Add a list of available Item classes using this object type
+        - [VKC Item Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
+            - Add a list of available Item classes using this object type
+        - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemPlane.html)
+            - Add a list of available Item classes using this object type
+
+---
+
 ## September 18 2024 Update
 
 ## September 18 2024 - Added Pages

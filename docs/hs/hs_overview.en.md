@@ -152,7 +152,7 @@ An brief explanation of each concept is as follows.
 ## Player
 
 In Vket Cloud, Player refers to the avatar who operates in the world. <br>
-How the Player behaves is defined in [HEOPlayer](../VKCComponents/HEOPlayer.md).
+How the Player behaves is defined in [VKC Setting Player](../VketCloudSettings/PlayerSettings.md).
 
 For handling Player by HeliScript, please refer to [Player class](./hs_class_player.md).
 

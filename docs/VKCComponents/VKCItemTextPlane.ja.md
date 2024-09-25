@@ -7,6 +7,29 @@ VKC Item Text Planeは、ワールドのビルド時に本コンポーネント�
 
 ![HEOTextPlane_3](img/HEOTextPlane_3.jpg)
 
+???+ note "このオブジェクトタイプを使用可能なItemクラス"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [GetScale](../hs/hs_class_item.md#getscale)
+    - [SetScale](../hs/hs_class_item.md#setscale)
+    - [MovePos](../hs/hs_class_item.md#movepos)
+    - [IsMoving](../hs/hs_class_item.md#ismoving)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [ClearTextPlane](../hs/hs_class_item.md#cleartextplane)
+    - [WriteTextPlane](../hs/hs_class_item.md#writetextplane)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## 設定項目
 
 | 名称 | 初期値 | 機能 |

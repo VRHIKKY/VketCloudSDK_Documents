@@ -152,7 +152,7 @@ Vket Cloud独自の概念として、Player, Item, そしてNodeがあります�
 ## Player
 
 Vket Cloudにおいて、Playerはワールド内の操作主体である自身を指します。<br>
-Playerの振る舞い方は[HEOPlayer](../VKCComponents/HEOPlayer.md)で定義されます。
+Playerの振る舞い方は[VKC Setting Player](../VketCloudSettings/PlayerSettings.md)で定義されます。
 
 PlayerのHeliScriptでの取り扱いは[Playerクラス](./hs_class_player.md)をご参照ください。
 
