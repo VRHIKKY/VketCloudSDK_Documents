@@ -1,5 +1,19 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年9月27日更新
+
+## 2024年9月27日 - 変更されたページ
+
+- アクションについて
+    - [アクションの概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/Actions/ActionsOverview.html)
+        - 各Actionの個別ページへのリンクを追加、VKC Attribution Action Triggerページへのリンクを追加
+- VKCコンポーネント
+    - VKC Attribute
+        - [VKC Attribute Action Trigger](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCAttributeActionTrigger.html)
+            - 画像および記載を更新
+
+---
+
 ## 2024年9月20日更新
 
 ## 2024年9月20日 - 変更されたページ
