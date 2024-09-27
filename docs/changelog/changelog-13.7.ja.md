@@ -4,6 +4,9 @@
 
 ## 2024年9月27日 - 変更されたページ
 
+- VketCloudSDKについて
+      - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/AboutVketCloudSDK/OperatingEnvironment.html)
+          - UnityエディターをVisual Studio Codeに変更する方法を記載
 - アクションについて
     - [アクションの概要](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/Actions/ActionsOverview.html)
         - 各Actionの個別ページへのリンクを追加、VKC Attribution Action Triggerページへのリンクを追加
