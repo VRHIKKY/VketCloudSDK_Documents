@@ -7,6 +7,13 @@
 - About VketCloudSDK
       - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
           - Added description of how to change the Unity editor to Visual Studio Code.
+- Actions
+    - [Actions Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/Actions/ActionsOverview.html)
+        - Add links to each actions in the description
+- VKC Components
+    - VKC Attribute
+        - [VKC Attribute Action Trigger](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCAttributeActionTrigger.html)
+            - Updated an image and descriptions
 
 ---
 
