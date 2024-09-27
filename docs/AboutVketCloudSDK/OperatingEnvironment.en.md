@@ -33,6 +33,6 @@ Also, we recommend the below systems when entering your world built with VketClo
 
 !!! note "How to Change the Unity Editor to Visual Studio Code"
     Open the "Preferences" window from the Unity menu by selecting Edit > Preferences.<br>
-    ![OperatingEnvironment](./img/OperatingEnvironment_01.jpg)<br><br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_01.jpg)<br>
     In the "External Tools" tab, select "Visual Studio Code" from the "External Script Editor" dropdown menu.<br>
     ![OperatingEnvironment](./img/OperatingEnvironment_02.jpg)

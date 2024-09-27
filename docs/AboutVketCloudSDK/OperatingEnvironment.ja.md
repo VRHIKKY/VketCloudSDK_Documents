@@ -27,6 +27,6 @@ VketCloudSDKは、以下のUnity環境が必要です。
 
 !!! note "Unity指定エディターをVisual Studio Codeに変更する方法"
     Unityのメニュー上でEdit>Preferenceから「Preference」ウィンドウを開きます。<br>
-    ![OperatingEnvironment](./img/OperatingEnvironment_01.jpg)<br><br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_01.jpg)<br>
     「External Tools」タブ内、「External Script Editor」から、「Visual Studio Code」を選択します。<br>
     ![OperatingEnvironment](./img/OperatingEnvironment_02.jpg)
