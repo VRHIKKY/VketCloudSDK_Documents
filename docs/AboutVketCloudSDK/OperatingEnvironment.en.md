@@ -28,42 +28,11 @@ Also, we recommend the below systems when entering your world built with VketClo
 - IDE: When editing HeliScript, Visual Studio is not recommended due to the encoding issue. If you want to edit in an environment similar to Visual Studio, please use Visual Studio Code.
 
 !!! note warning
-    When you open and save HeliScript created with Unity VketCloudSDK in Visual Studio, it may become ANSI, and you may not be able to build.
----
+    When you open and save HeliScript created with Unity VketCloudSDK in Visual Studio, it may become ANSI, and you may not be able to build.<br>
+    The following description explains how to change the editor that opens from Unity to Visual Studio Code.
 
-!!! note warning
-    The below items will be automatically changed by the SDK, but sometimes the settings may be nullified.<br>
-    In that case, please follow the below steps to manually change the settings,
-
-    **Setting API compatibility level**
-
-    1. Click Project Settings... from Edit in the Unity menu bar  
-
-    2. When the Project Settings window appears, click Player from the list.  
-
-    3. Check the Configuration in the Project Settings and change the Api Compatibility Level to ".NET 4.x" from the pull-down menu.
-
-    ![ApiCompatibilityLevelSetting](img/SetupSDK_External_16.jpg)
-
-    **Setting LightMap Encoding**
-
-    Likewise above, check the Configuration in the Project Settings and change the Lightmap Encoding to "Normal Quality" from the pull-down menu.
-
-    ![LightMapEncoding](img/SetupSDK_External_15.jpg)
-
-    **Setting Color Space**
-    From Edit >Project Settings, set the  Color Space as Linear.
-
-    ![linear](img/SetupSDK_External_14.jpg)
-
-    On Ver12.3 and later versions, the settings below are required as well:
-
-    **Setting Standard Shader Quality**
-
-    The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so you will need to make some changes in the settings.
-
-    1. In the Graphics settings screen, under "Tier Settings," uncheck "Use Defaults" for the "Low (Tier 1)" option, and change the "Standard Shader Quality" setting to "Medium."
-      ![StandardShader1](img/SetupSDK_External_12.jpg)
-      
-    2. Repeat the process for "Medium (Tier 2)" and "High (Tier 3)" options located below "Low (Tier 1)."
-      ![StandardShader2](img/SetupSDK_External_13.jpg)
+!!! note "How to Change the Unity Editor to Visual Studio Code"
+    Open the "Preferences" window from the Unity menu by selecting Edit > Preferences.<br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_01.jpg)<br>
+    In the "External Tools" tab, select "Visual Studio Code" from the "External Script Editor" dropdown menu.<br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_02.jpg)
