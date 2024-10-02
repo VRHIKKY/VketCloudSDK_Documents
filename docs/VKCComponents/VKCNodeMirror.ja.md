@@ -40,7 +40,7 @@ Shaderは画像を入れることが出来たらUnlit/Textureでなくても動�
 
 ![HEOMirror_6](img/HEOMirror_6.jpg)
 
-QuadにVKC Node Mirrorをアタッチします。Enable Mirrorはチェックを入れたままにします。
+QuadにVKC Node Mirrorをアタッチします。Enableはチェックを入れたままにします。
 
 この状態でビルドすることで、該当のオブジェクトがMirrorになります。
 
