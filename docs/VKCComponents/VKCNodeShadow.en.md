@@ -12,7 +12,7 @@ Using this component, shadows syncronizing to avatar and object movement can be 
 
 ## How to Use
 
-1\. Change the Rendering setting in [HEOWorldSetting](HEOWorldSetting.md) from `Round`(round shadow) to `Normal Shadow Map`.
+1\. Change the Rendering setting in [VKCRenderingSettings](../VketCloudSettings/RenderingSettings.md) from `Round`(round shadow) to `Normal Shadow Map`.
 
 ![HEOShadow_2](./img/HEOShadow_2.jpg)
 
