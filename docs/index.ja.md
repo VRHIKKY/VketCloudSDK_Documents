@@ -1,6 +1,8 @@
 
 # VketCloudSDK 公式マニュアルへようこそ！
 
+## VketCloudSDKとは
+
 VketCloudSDKは、Vket Cloudエンジンを使用したコンテンツ・ワールド制作のための開発キットです。  
   
 SDKを利用するには、`各種アカウントへの登録`と`指定バージョンのUnityの導入`が必要です。  
@@ -29,3 +31,10 @@ SDKを利用するには、`各種アカウントへの登録`と`指定バー�
 !!! info "本マニュアルへのコントリビューション"
     VketCloudSDK公式マニュアルは[Github](https://github.com/VRHIKKY/VketCloudSDK_Documents){target=_blank}にて更新管理を行っています。<br>
     誤字の修正・情報の追加など、コントリビューションはぜひお気軽にどうぞ！
+
+## WorldBuilderについて
+
+World Builderは、Unityを使うことなく、Webブラウザだけ動作する、簡単にVket Cloudのコンテンツやワールドが制作できるVket Cloudの開発キットです。<br>
+World Builderについて詳しく知りたい方は、以下のマニュアルページをチェックしてみてください！
+
+[World Builder Manual](https://vrhikky.github.io/SceneBuilder_Documents/latest/index.html){target=_blank}
