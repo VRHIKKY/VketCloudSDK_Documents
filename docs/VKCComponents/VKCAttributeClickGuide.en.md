@@ -1,6 +1,6 @@
 # VKC Attribute Click Guide
 
-![HEOClickGuide_1](./img/HEOClickGuide_1.jpg)
+![HEOClickGuide_1](./img/VKCAttributeClickGuide_1.jpg)
 
 By selecting `ON`, this component generates gameobjects for showing a click guide within the designated range.<br>
 Selecting `OFF` will **delete** the generated gameobjects.

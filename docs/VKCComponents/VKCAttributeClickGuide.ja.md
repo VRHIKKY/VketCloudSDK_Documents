@@ -1,6 +1,6 @@
 # VKC Attribute Click Guide
 
-![HEOClickGuide_1](./img/HEOClickGuide_1.jpg)
+![HEOClickGuide_1](./img/VKCAttributeClickGuide_1.jpg)
 
 コンポーネントの`ON`を選択すると、一定のエリア内に入るとクリックガイドを出現させるためのオブジェクト類を生成します。<br>
 `OFF`を選択すると、生成されたオブジェクトは**削除**されます。
