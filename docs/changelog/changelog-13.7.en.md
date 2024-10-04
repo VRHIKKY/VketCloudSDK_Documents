@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.7
 
+## October 4 2024 Update
+
+## October 4 2024 - Edited Pages
+
+- [Introduction](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/index.html)
+    - Added introduction of World Builder
+
+---
+
 ## September 27 2024 Update
 
 ## September 27 2024 - Edited Pages

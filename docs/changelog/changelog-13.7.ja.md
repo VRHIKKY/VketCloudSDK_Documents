@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年10月4日更新
+
+## 2024年10月4日 - 変更されたページ
+
+- [はじめに](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/index.html)
+    - World Builderの紹介を追記
+
+---
+
 ## 2024年9月27日更新
 
 ## 2024年9月27日 - 変更されたページ
