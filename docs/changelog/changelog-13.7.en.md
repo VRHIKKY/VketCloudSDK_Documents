@@ -3,6 +3,25 @@
 ## October 4 2024 Update
 
 ## October 4 2024 - Edited Pages
+- VKC Node
+    - [VKC Node Cylindar Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeCylinderCollider.html)
+        - Update images
+    - [VKC Node LOD Level](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeLODLevel.html)
+        - Update images
+    - [VKC Node Mesh Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeMeshCollider.html)
+        - Update images
+    - [VKC Node Mirror](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeMirror.html)
+        - Update images and description
+    - [VKC Node Reflection Prove Type](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeReflectionProbeType.html)
+        - Update images
+    - [VKC Node Rotate Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeRotateAnimation.html)
+        - Update images
+    - [VKC Node Shadow](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeShadow.html)
+        - Update images and description
+    - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeUVScroller.html)
+        - Update images
+    - [VKC Node Video Trigger](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeVideoTrigger.html)
+        - Update images
 
 - [Introduction](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/index.html)
     - Added introduction of World Builder

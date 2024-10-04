@@ -12,7 +12,7 @@ VKC Node Shadowは、動的影(シャドウマップ)を設定するために使
 
 ## 使い方
 
-1\. [HEOWorldSetting](HEOWorldSetting.md)のRenderingタブにて影を`Round`(丸影)から`Normal Shadow Map`(シャドーマップ)に変更します。
+1\. [VKCRenderingSettings](../VketCloudSettings/RenderingSettings.md)にて影を`Round`(丸影)から`Normal Shadow Map`(シャドーマップ)に変更します。
 
 ![HEOShadow_2](./img/HEOShadow_2.jpg)
 
