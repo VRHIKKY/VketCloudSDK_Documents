@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年10月4日更新
+
+## 2024年10月4日 - 変更されたページ
+- VKCAttributeScript
+    -[VKCClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeClickGuide.html)
+        - 画像を更新
+
 ## 2024年9月27日更新
 
 ## 2024年9月27日 - 変更されたページ
