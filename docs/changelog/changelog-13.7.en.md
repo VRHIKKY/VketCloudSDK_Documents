@@ -23,13 +23,18 @@
     - [VKC Node Video Trigger](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeVideoTrigger.html)
         - Update images
 
+- [Introduction](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/index.html)
+    - Added introduction of World Builder
+
+---
+
 ## September 27 2024 Update
 
 ## September 27 2024 - Edited Pages
 
 - About VketCloudSDK
-      - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
-          - Added description of how to change the Unity editor to Visual Studio Code.
+    - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
+        - Added description of how to change the Unity editor to Visual Studio Code.
 - Actions
     - [Actions Overview](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/Actions/ActionsOverview.html)
         - Add links to each actions in the description

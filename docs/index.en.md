@@ -1,5 +1,6 @@
-
 # Welcome to the VketCloudSDK Official Manual!
+
+## About VketCloudSDK
 
 VketCloudSDK is the developer kit for creating virtual worlds using the Vket Cloud Engine.  
 
@@ -29,3 +30,10 @@ If you want to try out Vket Cloud worlds, or get an idea on what can be made, ch
 !!! info "Contributions to this manual"
     The VketCloudSDK official manual is updated on [Github](https://github.com/VRHIKKY/VketCloudSDK_Documents){target=_blank}.<br>
     If you want to contribute by fixing typos, adding information, feel free to take a look!
+
+## About World Builder
+
+World Builder is a development kit for Vket Cloud that allows you to create content and worlds easily, all within a web browser without the need for Unity.<br>
+If you want to learn more about World Builder, please check out the manual page below!
+
+[World Builder Manual](https://vrhikky.github.io/SceneBuilder_Documents/latest/en/index.html){target=_blank}
