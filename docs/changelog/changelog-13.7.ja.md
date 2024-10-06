@@ -4,9 +4,10 @@
 
 ## 2024年9月27日 - 変更されたページ
 
-- VKCAttributeScript
-    - [VKCAttributeScript](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeScript.html)
-        - 画像を更新
+- VKCコンポーネント
+    - VKC Attribute
+        - [VKC Attribute Script](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeScript.html)
+            - 画像を更新
 
 
 ## 2024年9月27日更新

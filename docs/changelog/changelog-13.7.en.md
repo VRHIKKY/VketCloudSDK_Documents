@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.7
 
+## october 4 2024 Update
+
+## october 4 2024 - Edited Pages
+
+- VKC Components
+    - VKC Attribute
+        - [VKC Attribute Script](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VKCComponents/VKCAttributeScript.html)
+            - Updated an image
+
 ## September 27 2024 Update
 
 ## September 27 2024 - Edited Pages
