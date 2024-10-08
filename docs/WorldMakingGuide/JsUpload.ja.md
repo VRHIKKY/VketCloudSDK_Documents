@@ -43,6 +43,8 @@ JSは、一般的にWebブラウザベースのアプリケーションの開発
 
    ![JSのセット](img/JsUpload_3.jpg)
 
+（注意：複数のファイルを指定した場合、現在、`Build and run`時には読み込み順序はこの設定順になりますが、Vket Cloudの本番環境においてはファイル名順にソートされた読み込み順になるため、後半に読み込みたいファイル名は「z」を前置するなどして、読み込み順を制御してください。）
+
 4. **Base SettingのFile Deployment Config**に対象の`Scriptable Object`をセットします。
 
    ![Scriptable Objectのセット](img/JsUpload_4.jpg)

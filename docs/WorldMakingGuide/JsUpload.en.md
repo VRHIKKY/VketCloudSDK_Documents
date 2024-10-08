@@ -44,6 +44,8 @@ For more information, refer to [Introducing Sample JS Upload](../WorldMakingGuid
 
    ![Set JavaScript](img/JsUpload_3.jpg)
 
+   (Note: When specifying multiple files, the loading order during `Build and run` follows the order of this setting. However, in the Vket Cloud production environment, the files will be loaded in alphabetical order. To control the loading order, for example, you can prefix file names with a letter like "z" for files that you want to be loaded later.)
+
 4. Set the target `Scriptable Object` in the **Base Setting's File Deployment Config**.
 
    ![Set Scriptable Object](img/JsUpload_4.jpg)
