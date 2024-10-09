@@ -3,9 +3,12 @@
 ## 2024年10月4日更新
 
 ## 2024年10月4日 - 変更されたページ
-- VKCAttributeScript
-    -[VKCClickGuide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeClickGuide.html)
-        - 画像を更新
+- VKCコンポーネント
+    - VKCAttributeScript
+        -[VKC Attribute Click Guide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeClickGuide.html)
+            - 画像を更新
+
+---
 
 ## 2024年9月27日更新
 
