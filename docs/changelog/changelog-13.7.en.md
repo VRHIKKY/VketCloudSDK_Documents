@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 13.7
 
-## October 7 2024 Update
+## October 11 2024 Update
 
-## October 7 2024 - Edited Pages
+## October 11 2024 - Edited Pages
 - VKC Components
     - VKC Attribute
         - [VKC Attribute Click Guide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VKCComponents/VKCAttributeClickGuide.html)
