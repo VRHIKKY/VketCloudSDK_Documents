@@ -1,14 +1,15 @@
 # SDK Manual Change Log - Ver 13.7
 
-## 2024年10月04日更新
+## 2024年10月11日更新
 
-## 2024年9月27日 - 変更されたページ
+## 2024年10月11日 - 変更されたページ
 
 - VKCコンポーネント
     - VKC Attribute
         - [VKC Attribute Script](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeScript.html)
             - 画像を更新
 
+---
 
 ## 2024年9月27日更新
 
