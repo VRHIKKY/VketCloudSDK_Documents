@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 13.7
 
+## October 11 2024 Update
+
+## October 11 2024 - Edited Pages
+
+- VKC Node
+    - [VKC Node Mirror](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeMirror.html)
+        - Update images and description
+
 ## October 4 2024 Update
 
 ## October 4 2024 - Edited Pages
