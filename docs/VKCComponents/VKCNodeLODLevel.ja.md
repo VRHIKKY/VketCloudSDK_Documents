@@ -2,7 +2,7 @@
 VKC Node LOD Levelは、LOD Groupが設定されたアセットを分解することなく、heoとして書き出すメッシュをスイッチできる機能です。
 例えば、LOD0が設定された場合、LOD GroupのLOD 0にセットされたオブジェクトだけが出力されます。
 
-![HEOLODLevel](img/HEOLODLevelJP.jpg)
+![HEOLODLevel](img/HEOLODLevel.jpg)
 
 書き出し対象にするLODレベルのオプション
 
