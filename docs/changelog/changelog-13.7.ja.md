@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年10月11日更新
+
+## 2024年10月11日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [アセットストアからアバターをセットアップする](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/ImportAssetStore.html)
+
+---
+
 ## 2024年10月4日更新
 
 ## 2024年10月4日 - 変更されたページ
