@@ -1,8 +1,5 @@
 # How to Set Up an Avatar Downloaded from the Asset Store
 
-## Introduction
-In Vket Cloud, avatars are functions that combine models and scripts into a unified package, making it convenient to place and configure them in the world. By using avatars, you can enrich the world without having to implement complex codes or mechanics yourself.
-
 ## How to Use the Asset Store
 To use the Asset Store, you must first create a Vket Cloud account. If you have not yet created an account, please refer to [this guide](../AboutVketCloudSDK/SetupAccount.md) to create one.
 
