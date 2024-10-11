@@ -123,6 +123,7 @@ plugins:
             SDK does not appear after install: SDKがインストール後に立ち上がらない
             Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
             Version Update Troubleshooting: バージョンアップ後によくあるトラブル
+            Comment / Bug Reports Form : ご意見・バグ報告フォーム
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -312,6 +313,7 @@ nav:
     - Build Error / How to troubleshoot issues: troubleshooting/BuildError.md
     - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
+    - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
