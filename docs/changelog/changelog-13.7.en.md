@@ -4,9 +4,17 @@
 
 ## October 11 2024 - Edited Pages
 
-- VKC Node
-    - [VKC Node Mirror](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeMirror.html)
-        - Update images and description
+- VKC Components
+    - VKC Node
+        - [VKC Node Mirror](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/VKCComponents/VKCNodeMirror.html)
+            - Update images and description
+    - VKC Attribute
+        - [VKC Attribute Click Guide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VKCComponents/VKCAttributeClickGuide.html)
+            -  Updated an image
+        - [VKC Attribute Script](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VKCComponents/VKCAttributeScript.html)
+            - Updated an image
+
+---
 
 ## October 4 2024 Update
 
