@@ -7,6 +7,39 @@
     - VKCAttributeScript
         -[VKC Attribute Click Guide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeClickGuide.html)
             - 画像を更新
+- VKCコンポーネント
+    - VKC Attribute
+        - [VKC Attribute Script](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeScript.html)
+            - 画像を更新
+
+---
+
+## 2024年10月4日更新
+
+## 2024年10月4日 - 変更されたページ
+
+- VKC Node
+    - [VKC Node Cylindar Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeCylinderCollider.html)
+        - 画像を更新
+    - [VKC Node LOD Level](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeLODLevel.html)
+        - 画像を更新
+    - [VKC Node Mesh Collider](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeMeshCollider.html)
+        - 画像を更新
+    - [VKC Node Mirror](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeMirror.html)
+        - 画像および記載を更新
+    - [VKC Node Reflection Prove Type](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeReflectionProbeType.html)
+        - 画像を更新
+    - [VKC Node Rotate Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeRotateAnimation.html)
+        - 画像を更新
+    - [VKC Node Shadow](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeShadow.html)
+        - 画像および記載更新
+    - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeUVScroller.html)
+        - 画像を更新
+    - [VKC Node Video Trigger](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeVideoTrigger.html)
+        - 画像を更新
+
+- [はじめに](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/index.html)
+    - World Builderの紹介を追記
 
 ---
 

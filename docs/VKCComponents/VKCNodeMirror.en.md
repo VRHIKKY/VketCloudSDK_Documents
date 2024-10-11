@@ -40,7 +40,7 @@ If the intended Shader accepts textures, the material's shader does not have to 
 
 ![HEOMirror_6](img/HEOMirror_6.jpg)
 
-Attach VKC Node Mirror to the Quad. Make sure to select the `Enable Mirror`.
+Attach VKC Node Mirror to the Quad. Make sure to select the `Enable`.
 
 By building world at this moment, the object will be a Mirror.
 
