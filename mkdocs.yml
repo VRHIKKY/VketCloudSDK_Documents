@@ -116,6 +116,7 @@ plugins:
             JS Upload: JS入稿
             Enabling JS Upload Feature: JS入稿機能の有効化
             Sample JS Upload: JS入稿のサンプル
+            Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -306,6 +307,7 @@ nav:
     - JS Upload :
       - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
       - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
+    - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
