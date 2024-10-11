@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -13,28 +13,32 @@
       
       
       
+        <link rel="prev" href="JsUpload_Sample.html">
       
       
-      <link rel="icon" href="../../images/VketCloudIcon.png">
+        <link rel="next" href="../troubleshooting/InstallingDeeplink.html">
+      
+      
+      <link rel="icon" href="../images/VketCloudIcon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>SDK Manual Change Log - Ver 14.1 - VketCloudSDK Manual</title>
+        <title>アセットストアからアバターをセットアップする - VketCloudSDK Manual</title>
       
     
     
   
-      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
 
     
-  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
     
       
@@ -49,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -98,8 +102,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#sdk-manual-change-log-ver-141" class="md-skip">
-          Skip to content
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
         </a>
       
     </div>
@@ -117,10 +121,10 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href="https://www.hikky.co.jp/vketcloud" title="VketCloudSDK Manual" class="md-header__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
       
-  <img src="../../images/VketCloudIcon.png" alt="logo">
+  <img src="../images/VketCloudIcon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -137,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SDK Manual Change Log - Ver 14.1
+              アセットストアからアバターをセットアップする
             
           </span>
         </div>
@@ -177,20 +181,20 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Select language">
+    <button class="md-header__button md-icon" aria-label="言語切り替え">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="changelog-14.1.html" hreflang="en" class="md-select__link">
+            <a href="../en/WorldMakingGuide/ImportAssetStore.html" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../changelog/changelog-14.1.html" hreflang="ja" class="md-select__link">
+            <a href="ImportAssetStore.html" hreflang="ja" class="md-select__link">
               日本語
             </a>
           </li>
@@ -209,16 +213,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="検索">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
@@ -231,7 +235,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            検索を初期化
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -264,11 +268,11 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://www.hikky.co.jp/vketcloud" title="VketCloudSDK Manual" class="md-nav__button md-logo" aria-label="VketCloudSDK Manual" data-md-component="logo">
       
-  <img src="../../images/VketCloudIcon.png" alt="logo">
+  <img src="../images/VketCloudIcon.png" alt="logo">
 
     </a>
     VketCloudSDK Manual
@@ -287,7 +291,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    はじめに
   </span>
   
 
@@ -329,7 +333,7 @@
             
   
   <span class="md-ellipsis">
-    About VketCloudSDK
+    VketCloudSDKについて
   </span>
   
 
@@ -339,7 +343,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            About VketCloudSDK
+            VketCloudSDKについて
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -354,7 +358,7 @@
         
   
   <span class="md-ellipsis">
-    Setup Account
+    アカウント準備
   </span>
   
 
@@ -375,7 +379,7 @@
         
   
   <span class="md-ellipsis">
-    Operating Environment
+    動作環境
   </span>
   
 
@@ -396,7 +400,7 @@
         
   
   <span class="md-ellipsis">
-    Setup SDK
+    SDKの導入方法
   </span>
   
 
@@ -417,7 +421,7 @@
         
   
   <span class="md-ellipsis">
-    Login to SDK
+    SDKにログインする
   </span>
   
 
@@ -438,7 +442,7 @@
         
   
   <span class="md-ellipsis">
-    How to use avatar
+    アバターの使用方法
   </span>
   
 
@@ -484,7 +488,7 @@
             
   
   <span class="md-ellipsis">
-    First Steps
+    ワールド制作の基本
   </span>
   
 
@@ -494,7 +498,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            First Steps
+            ワールド制作の基本
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -509,7 +513,7 @@
         
   
   <span class="md-ellipsis">
-    Essential Objects
+    ワールドの基本要素
   </span>
   
 
@@ -530,7 +534,7 @@
         
   
   <span class="md-ellipsis">
-    Build And Run
+    ローカル環境でのビルドと実行
   </span>
   
 
@@ -551,7 +555,7 @@
         
   
   <span class="md-ellipsis">
-    World Upload
+    ワールドアップロード
   </span>
   
 
@@ -632,7 +636,7 @@
         
   
   <span class="md-ellipsis">
-    Vket Cloud Settings - Overview
+    Vket Cloud Settings - 概要
   </span>
   
 
@@ -800,8 +804,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -835,31 +841,33 @@
       
         
       
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    World Making Guide
+    ワールド制作ガイド
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            World Making Guide
+            ワールド制作ガイド
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -870,11 +878,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/UnityGuidelines.html" class="md-nav__link">
+      <a href="UnityGuidelines.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Specifications Limits
+    VketCloudの仕様制限
   </span>
   
 
@@ -891,11 +899,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/ShaderAvailability.html" class="md-nav__link">
+      <a href="ShaderAvailability.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Shader Availability
+    シェーダー対応項目一覧
   </span>
   
 
@@ -912,11 +920,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/Skybox.html" class="md-nav__link">
+      <a href="Skybox.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Setting up a Skybox
+    スカイボックス設定
   </span>
   
 
@@ -933,11 +941,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/Collider.html" class="md-nav__link">
+      <a href="Collider.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    How to use Colliders / Tips
+    コライダーの使い方 / Tips
   </span>
   
 
@@ -954,11 +962,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/PhysicsEngine.html" class="md-nav__link">
+      <a href="PhysicsEngine.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Physics Engine
+    物理エンジン
   </span>
   
 
@@ -975,11 +983,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HEOFieldTips.html" class="md-nav__link">
+      <a href="HEOFieldTips.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Tips on using VKC Item Field
+    VKC Item Fieldの使い方
   </span>
   
 
@@ -996,11 +1004,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/ReflectionProbe.html" class="md-nav__link">
+      <a href="ReflectionProbe.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Reflection Probe
+    リフレクションプローブ
   </span>
   
 
@@ -1017,11 +1025,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/PropAnimation.html" class="md-nav__link">
+      <a href="PropAnimation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    How to Animate Objects
+    オブジェクトをアニメーションさせる
   </span>
   
 
@@ -1038,11 +1046,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/PropAnimation_TroubleShooting.html" class="md-nav__link">
+      <a href="PropAnimation_TroubleShooting.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    How to Animate Objects - Troubleshooting
+    オブジェクトをアニメーションさせる - 動かないときは
   </span>
   
 
@@ -1059,11 +1067,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/ConvertAnimationFromUnityAsset.html" class="md-nav__link">
+      <a href="ConvertAnimationFromUnityAsset.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    How to convert animation from Unity asset
+    Unityアセットのアニメーションを変換する
   </span>
   
 
@@ -1080,11 +1088,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/AvatarFile.html" class="md-nav__link">
+      <a href="AvatarFile.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Avatar File
+    アバターファイル
   </span>
   
 
@@ -1101,11 +1109,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/PresetAvatar.html" class="md-nav__link">
+      <a href="PresetAvatar.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Adding Preset Avatars
+    プリセットアバターを追加する
   </span>
   
 
@@ -1122,11 +1130,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/FileDeploymentConfig.html" class="md-nav__link">
+      <a href="FileDeploymentConfig.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    File Deployment Config
+    ワールドに任意のファイルを保持させる
   </span>
   
 
@@ -1143,11 +1151,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/MovableClickableObject.html" class="md-nav__link">
+      <a href="MovableClickableObject.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Movable Clickable Object
+    クリック判定のある移動オブジェクト
   </span>
   
 
@@ -1184,7 +1192,7 @@
             
   
   <span class="md-ellipsis">
-    JS Upload
+    JS入稿
   </span>
   
 
@@ -1194,7 +1202,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_15_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_15">
             <span class="md-nav__icon md-icon"></span>
-            JS Upload
+            JS入稿
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1205,11 +1213,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload.html" class="md-nav__link">
+      <a href="JsUpload.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Enabling JS Upload Feature
+    JS入稿機能の有効化
   </span>
   
 
@@ -1226,11 +1234,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="JsUpload_Sample.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    JS入稿のサンプル
   </span>
   
 
@@ -1248,6 +1256,136 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    アセットストアからアバターをセットアップする
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ImportAssetStore.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    アセットストアからアバターをセットアップする
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      アセットストアの使い方
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      入手したアバターをワールドに配置する
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="入手したアバターをワールドに配置する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ1: アセットのダウンロードと解凍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-unityhierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ2: UnityのHierarchyに必須オブジェクトを作成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-vkc-item-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ3: VKC Item Objectの追加
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ4: プリセットアバターの配置とビルド
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ4: アバターの配置とビルド
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1263,8 +1401,6 @@
   
     
     
-      
-        
       
         
       
@@ -1290,7 +1426,7 @@
             
   
   <span class="md-ellipsis">
-    Trouble shooting
+    トラブルシューティング
   </span>
   
 
@@ -1300,7 +1436,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Trouble shooting
+            トラブルシューティング
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1315,7 +1451,7 @@
         
   
   <span class="md-ellipsis">
-    SDK does not appear after install
+    SDKがインストール後に立ち上がらない
   </span>
   
 
@@ -1336,7 +1472,7 @@
         
   
   <span class="md-ellipsis">
-    Trouble shooting - General Checklist
+    SDK初学者:何か起きたときにとりあえず見るべきリスト
   </span>
   
 
@@ -1357,7 +1493,7 @@
         
   
   <span class="md-ellipsis">
-    Build Error / How to troubleshoot issues
+    ビルドエラー / ワールドが動かないときは
   </span>
   
 
@@ -1378,7 +1514,7 @@
         
   
   <span class="md-ellipsis">
-    Version Update Troubleshooting
+    バージョンアップ後によくあるトラブル
   </span>
   
 
@@ -1399,28 +1535,7 @@
         
   
   <span class="md-ellipsis">
-    Unity settings for replicating actual look in Vket Cloud
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/Comment_Bug_Reports.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Comment / Bug Reports Form
+    UnityとVketCloudの見た目を揃える
   </span>
   
 
@@ -1511,7 +1626,7 @@
         
   
   <span class="md-ellipsis">
-    Debug Console
+    デバッグコンソール
   </span>
   
 
@@ -1532,7 +1647,7 @@
         
   
   <span class="md-ellipsis">
-    Debug Messages
+    デバッグメッセージ一覧
   </span>
   
 
@@ -1553,7 +1668,7 @@
         
   
   <span class="md-ellipsis">
-    Debug Mode
+    デバッグモード
   </span>
   
 
@@ -1570,11 +1685,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HEOExporter_Tutorial.html" class="md-nav__link">
+      <a href="HEOExporter_Tutorial.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Export Field Tutorial
+    .heoファイルを出力する
   </span>
   
 
@@ -1595,7 +1710,7 @@
         
   
   <span class="md-ellipsis">
-    Animation Converter
+    アニメーションコンバーター
   </span>
   
 
@@ -1634,7 +1749,7 @@
             
   
   <span class="md-ellipsis">
-    Particle Editor
+    パーティクルエディター
   </span>
   
 
@@ -1644,7 +1759,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_6">
             <span class="md-nav__icon md-icon"></span>
-            Particle Editor
+            パーティクルエディター
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1659,7 +1774,7 @@
         
   
   <span class="md-ellipsis">
-    Particle Editor - Overview
+    パーティクルエディター：概要
   </span>
   
 
@@ -1680,7 +1795,7 @@
         
   
   <span class="md-ellipsis">
-    About Screen / How to Operate
+    ウィンドウ解説・操作方法について
   </span>
   
 
@@ -1701,7 +1816,7 @@
         
   
   <span class="md-ellipsis">
-    Particle Editor - Properties
+    パーティクルエディター：プロパティ一覧
   </span>
   
 
@@ -1772,7 +1887,7 @@
         
   
   <span class="md-ellipsis">
-    VketCloudSDK Settings
+    VketCloudSDK設定
   </span>
   
 
@@ -1878,7 +1993,7 @@
         
   
   <span class="md-ellipsis">
-    Overview & Setup
+    概要とセットアップ
   </span>
   
 
@@ -1899,7 +2014,7 @@
         
   
   <span class="md-ellipsis">
-    How to Use
+    基本実装
   </span>
   
 
@@ -1920,7 +2035,7 @@
         
   
   <span class="md-ellipsis">
-    Advanced Use
+    応用実装
   </span>
   
 
@@ -1949,7 +2064,7 @@
         
   
   <span class="md-ellipsis">
-    ScenePreview (β)
+    シーンプレビュー (β)
   </span>
   
 
@@ -1999,7 +2114,7 @@
             
   
   <span class="md-ellipsis">
-    World Editing Tips
+    編集のためのTips
   </span>
   
 
@@ -2009,7 +2124,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            World Editing Tips
+            編集のためのTips
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2024,7 +2139,7 @@
         
   
   <span class="md-ellipsis">
-    Quick Menu for adding Vket Cloud objects
+    Vket Cloudオブジェクト追加のためのクイックメニュー
   </span>
   
 
@@ -2045,7 +2160,7 @@
         
   
   <span class="md-ellipsis">
-    Using EditorOnly Tags
+    EditorOnlyタグの使用方法
   </span>
   
 
@@ -2066,7 +2181,7 @@
         
   
   <span class="md-ellipsis">
-    Editing Multiple VKCComponents
+    複数のVKCコンポーネントの一括編集
   </span>
   
 
@@ -2087,7 +2202,7 @@
         
   
   <span class="md-ellipsis">
-    Disable Contribute GI of Unlit Materials
+    UnlitマテリアルのContributeGI設定を外す
   </span>
   
 
@@ -2108,7 +2223,7 @@
         
   
   <span class="md-ellipsis">
-    Build Options
+    ビルド時のオプション
   </span>
   
 
@@ -2156,7 +2271,7 @@
             
   
   <span class="md-ellipsis">
-    World Optimization
+    ワールドの軽量化方法
   </span>
   
 
@@ -2166,7 +2281,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            World Optimization
+            ワールドの軽量化方法
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2181,7 +2296,7 @@
         
   
   <span class="md-ellipsis">
-    World Optimization - Overview
+    ワールドの軽量化方法：概要
   </span>
   
 
@@ -2202,7 +2317,7 @@
         
   
   <span class="md-ellipsis">
-    Occlusion Culling
+    オクルージョンカリング
   </span>
   
 
@@ -2223,7 +2338,7 @@
         
   
   <span class="md-ellipsis">
-    Texture Compression
+    テクスチャ圧縮
   </span>
   
 
@@ -2244,7 +2359,7 @@
         
   
   <span class="md-ellipsis">
-    Optimization for Smartphones
+    スマートフォンのためのワールド軽量化
   </span>
   
 
@@ -2296,7 +2411,7 @@
             
   
   <span class="md-ellipsis">
-    VKC Components
+    VKCコンポーネント
   </span>
   
 
@@ -2306,7 +2421,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            VKC Components
+            VKCコンポーネント
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2321,7 +2436,7 @@
         
   
   <span class="md-ellipsis">
-    VKC/HEO Components Overview
+    VKC/HEOコンポーネント概要
   </span>
   
 
@@ -3582,7 +3697,7 @@
             
   
   <span class="md-ellipsis">
-    Actions
+    アクションについて
   </span>
   
 
@@ -3592,7 +3707,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
-            Actions
+            アクションについて
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3607,7 +3722,7 @@
         
   
   <span class="md-ellipsis">
-    Actions Overview
+    アクションの概要
   </span>
   
 
@@ -3644,7 +3759,7 @@
             
   
   <span class="md-ellipsis">
-    Basics
+    基本
   </span>
   
 
@@ -3654,7 +3769,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_2">
             <span class="md-nav__icon md-icon"></span>
-            Basics
+            基本
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3669,7 +3784,7 @@
         
   
   <span class="md-ellipsis">
-    Random
+    ランダム
   </span>
   
 
@@ -3690,7 +3805,7 @@
         
   
   <span class="md-ellipsis">
-    Wait
+    待機
   </span>
   
 
@@ -3743,7 +3858,7 @@
             
   
   <span class="md-ellipsis">
-    Operation
+    演算
   </span>
   
 
@@ -3753,7 +3868,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_3">
             <span class="md-nav__icon md-icon"></span>
-            Operation
+            演算
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3768,7 +3883,7 @@
         
   
   <span class="md-ellipsis">
-    Add Var
+    値の追加
   </span>
   
 
@@ -3789,7 +3904,7 @@
         
   
   <span class="md-ellipsis">
-    If Variable Equal To Value
+    変数が値に等しい場合
   </span>
   
 
@@ -3810,7 +3925,7 @@
         
   
   <span class="md-ellipsis">
-    If Variable Less Than Value
+    変数が値より小さい場合
   </span>
   
 
@@ -3831,7 +3946,7 @@
         
   
   <span class="md-ellipsis">
-    If Variable More Than Value
+    変数が値より大きい場合
   </span>
   
 
@@ -3852,7 +3967,7 @@
         
   
   <span class="md-ellipsis">
-    If Variable Not Equal To Value
+    変数が値に等しくない場合
   </span>
   
 
@@ -3873,7 +3988,7 @@
         
   
   <span class="md-ellipsis">
-    Set Var
+    値の設定
   </span>
   
 
@@ -3918,7 +4033,7 @@
             
   
   <span class="md-ellipsis">
-    Item
+    アイテム
   </span>
   
 
@@ -3928,7 +4043,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_4">
             <span class="md-nav__icon md-icon"></span>
-            Item
+            アイテム
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3943,7 +4058,7 @@
         
   
   <span class="md-ellipsis">
-    Show/Hide Item
+    アイテム表示/非表示
   </span>
   
 
@@ -3964,7 +4079,7 @@
         
   
   <span class="md-ellipsis">
-    Play/Stop Item
+    アイテム再生/停止
   </span>
   
 
@@ -4013,7 +4128,7 @@
             
   
   <span class="md-ellipsis">
-    Node
+    ノード
   </span>
   
 
@@ -4023,7 +4138,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_5">
             <span class="md-nav__icon md-icon"></span>
-            Node
+            ノード
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4038,7 +4153,7 @@
         
   
   <span class="md-ellipsis">
-    Show/Hide Node
+    ノード表示/非表示
   </span>
   
 
@@ -4059,7 +4174,7 @@
         
   
   <span class="md-ellipsis">
-    Enable/Disable Clickable Node
+    クリック可能ノード有効化/無効化
   </span>
   
 
@@ -4080,7 +4195,7 @@
         
   
   <span class="md-ellipsis">
-    Enable/Disable Collider
+    コライダー有効化/無効化
   </span>
   
 
@@ -4101,7 +4216,7 @@
         
   
   <span class="md-ellipsis">
-    Enable/Disable Node
+    ノード有効化/無効化
   </span>
   
 
@@ -4146,7 +4261,7 @@
             
   
   <span class="md-ellipsis">
-    Object
+    オブジェクト
   </span>
   
 
@@ -4156,7 +4271,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_6">
             <span class="md-nav__icon md-icon"></span>
-            Object
+            オブジェクト
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4171,7 +4286,7 @@
         
   
   <span class="md-ellipsis">
-    Show/Hide Object
+    オブジェクト表示/非表示
   </span>
   
 
@@ -4192,7 +4307,7 @@
         
   
   <span class="md-ellipsis">
-    Play/Stop Object
+    オブジェクト再生/停止
   </span>
   
 
@@ -4237,7 +4352,7 @@
             
   
   <span class="md-ellipsis">
-    Fade
+    フェード
   </span>
   
 
@@ -4247,7 +4362,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_7">
             <span class="md-nav__icon md-icon"></span>
-            Fade
+            フェード
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4262,7 +4377,7 @@
         
   
   <span class="md-ellipsis">
-    Fade Out/In
+    フェードアウト/イン
   </span>
   
 
@@ -4283,7 +4398,7 @@
         
   
   <span class="md-ellipsis">
-    White Out/In
+    ホワイトアウト/イン
   </span>
   
 
@@ -4330,7 +4445,7 @@
             
   
   <span class="md-ellipsis">
-    Transform
+    トランスフォーム
   </span>
   
 
@@ -4340,7 +4455,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_8">
             <span class="md-nav__icon md-icon"></span>
-            Transform
+            トランスフォーム
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4355,7 +4470,7 @@
         
   
   <span class="md-ellipsis">
-    Move To
+    移動
   </span>
   
 
@@ -4376,7 +4491,7 @@
         
   
   <span class="md-ellipsis">
-    Set Pos Relative Player
+    プレイヤー相対位置に設定
   </span>
   
 
@@ -4397,7 +4512,7 @@
         
   
   <span class="md-ellipsis">
-    Warp
+    ワープ
   </span>
   
 
@@ -4444,7 +4559,7 @@
             
   
   <span class="md-ellipsis">
-    Motion/Emotion
+    モーション/エモーション
   </span>
   
 
@@ -4454,7 +4569,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_9">
             <span class="md-nav__icon md-icon"></span>
-            Motion/Emotion
+            モーション/エモーション
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4469,7 +4584,7 @@
         
   
   <span class="md-ellipsis">
-    Emote
+    エモート
   </span>
   
 
@@ -4490,7 +4605,7 @@
         
   
   <span class="md-ellipsis">
-    Motion
+    モーション
   </span>
   
 
@@ -4511,7 +4626,7 @@
         
   
   <span class="md-ellipsis">
-    Next Motion
+    次のモーション
   </span>
   
 
@@ -4579,7 +4694,7 @@
         
   
   <span class="md-ellipsis">
-    Call Script
+    HeliScriptを呼び出す
   </span>
   
 
@@ -4628,7 +4743,7 @@
             
   
   <span class="md-ellipsis">
-    Physics Engine
+    物理エンジン
   </span>
   
 
@@ -4638,7 +4753,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_11">
             <span class="md-nav__icon md-icon"></span>
-            Physics Engine
+            物理エンジン
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4653,7 +4768,7 @@
         
   
   <span class="md-ellipsis">
-    Add Velocity
+    速度を追加
   </span>
   
 
@@ -4674,7 +4789,7 @@
         
   
   <span class="md-ellipsis">
-    Add/Clear Force
+    力を追加/削除
   </span>
   
 
@@ -4695,7 +4810,7 @@
         
   
   <span class="md-ellipsis">
-    Set Physics Enable
+    物理有効化/無効化
   </span>
   
 
@@ -4716,7 +4831,7 @@
         
   
   <span class="md-ellipsis">
-    Set Position/Rotation
+    位置/回転を設定
   </span>
   
 
@@ -4767,7 +4882,7 @@
             
   
   <span class="md-ellipsis">
-    Window State
+    ウィンドウ状態
   </span>
   
 
@@ -4777,7 +4892,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_12">
             <span class="md-nav__icon md-icon"></span>
-            Window State
+            ウィンドウ状態
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4792,7 +4907,7 @@
         
   
   <span class="md-ellipsis">
-    Movie Viewer Full Screen On
+    動画ビューアのフルスクリーン表示を切る
   </span>
   
 
@@ -4813,7 +4928,7 @@
         
   
   <span class="md-ellipsis">
-    Movie Viewer Full Screen Off
+    動画ビューアのフルスクリーン表示する
   </span>
   
 
@@ -4834,7 +4949,7 @@
         
   
   <span class="md-ellipsis">
-    Movie Viewer Full Screen Toggle
+    動画ビューアのフルスクリーン表示トグル
   </span>
   
 
@@ -4855,7 +4970,7 @@
         
   
   <span class="md-ellipsis">
-    Open Movie Viewer
+    動画ビューアを開く
   </span>
   
 
@@ -4876,7 +4991,7 @@
         
   
   <span class="md-ellipsis">
-    Set Generic Window State
+    汎用ウィンドウステータスを指定する
   </span>
   
 
@@ -4919,7 +5034,7 @@
             
   
   <span class="md-ellipsis">
-    Voice Chat
+    ボイスチャット
   </span>
   
 
@@ -4929,7 +5044,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_13_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_13">
             <span class="md-nav__icon md-icon"></span>
-            Voice Chat
+            ボイスチャット
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4944,7 +5059,7 @@
         
   
   <span class="md-ellipsis">
-    Enter/Leave Voice Group
+    音声グループに参加/退出
   </span>
   
 
@@ -4989,7 +5104,7 @@
             
   
   <span class="md-ellipsis">
-    Web
+    ウェブ
   </span>
   
 
@@ -4999,7 +5114,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_14_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_14">
             <span class="md-nav__icon md-icon"></span>
-            Web
+            ウェブ
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5014,7 +5129,7 @@
         
   
   <span class="md-ellipsis">
-    Open Links in New Tab
+    新しいタブでWEBページを開く
   </span>
   
 
@@ -5035,7 +5150,7 @@
         
   
   <span class="md-ellipsis">
-    Open Links in Current Tab
+    現在のタブでWEBページを開く
   </span>
   
 
@@ -5080,7 +5195,7 @@
             
   
   <span class="md-ellipsis">
-    Others
+    その他
   </span>
   
 
@@ -5090,7 +5205,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_15_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_15">
             <span class="md-nav__icon md-icon"></span>
-            Others
+            その他
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5105,7 +5220,7 @@
         
   
   <span class="md-ellipsis">
-    Set Cookie Text
+    クッキーテキストの設定
   </span>
   
 
@@ -5126,7 +5241,7 @@
         
   
   <span class="md-ellipsis">
-    Stop Video
+    ビデオ停止
   </span>
   
 
@@ -5215,7 +5330,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScript - Overview
+    HeliScript概要
   </span>
   
 
@@ -5256,7 +5371,7 @@
             
   
   <span class="md-ellipsis">
-    Built-in Types
+    組み込み型
   </span>
   
 
@@ -5266,7 +5381,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12_2">
             <span class="md-nav__icon md-icon"></span>
-            Built-in Types
+            組み込み型
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5281,7 +5396,7 @@
         
   
   <span class="md-ellipsis">
-    Basic Types
+    基本型
   </span>
   
 
@@ -5302,7 +5417,7 @@
         
   
   <span class="md-ellipsis">
-    String
+    文字列(String)
   </span>
   
 
@@ -5323,7 +5438,7 @@
         
   
   <span class="md-ellipsis">
-    List
+    配列(List)
   </span>
   
 
@@ -5344,7 +5459,7 @@
         
   
   <span class="md-ellipsis">
-    Delegate
+    デリゲート(Delegate)
   </span>
   
 
@@ -5373,7 +5488,7 @@
         
   
   <span class="md-ellipsis">
-    Class
+    クラス
   </span>
   
 
@@ -5394,7 +5509,7 @@
         
   
   <span class="md-ellipsis">
-    Components / Callback functions
+    コンポーネント / コールバック関数
   </span>
   
 
@@ -5415,7 +5530,7 @@
         
   
   <span class="md-ellipsis">
-    Item Types and VKCComponents
+    Itemの種類 / VKCComponentとの対応一覧
   </span>
   
 
@@ -5462,7 +5577,7 @@
             
   
   <span class="md-ellipsis">
-    Built-in Classes And Functions
+    組み込みクラス・関数
   </span>
   
 
@@ -5472,7 +5587,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12_6">
             <span class="md-nav__icon md-icon"></span>
-            Built-in Classes And Functions
+            組み込みクラス・関数
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5487,7 +5602,7 @@
         
   
   <span class="md-ellipsis">
-    Vector3 Class
+    Vector3クラス
   </span>
   
 
@@ -5508,7 +5623,7 @@
         
   
   <span class="md-ellipsis">
-    Quaternion Class
+    Quaternionクラス
   </span>
   
 
@@ -5529,7 +5644,7 @@
         
   
   <span class="md-ellipsis">
-    Matrix Class
+    Matrixクラス
   </span>
   
 
@@ -5550,7 +5665,7 @@
         
   
   <span class="md-ellipsis">
-    Item Class
+    Itemクラス
   </span>
   
 
@@ -5571,7 +5686,7 @@
         
   
   <span class="md-ellipsis">
-    Player Class
+    Playerクラス
   </span>
   
 
@@ -5592,7 +5707,7 @@
         
   
   <span class="md-ellipsis">
-    Date Class
+    Dateクラス
   </span>
   
 
@@ -5613,7 +5728,7 @@
         
   
   <span class="md-ellipsis">
-    HSMessage Class
+    HSMessageクラス
   </span>
   
 
@@ -5678,7 +5793,7 @@
             
   
   <span class="md-ellipsis">
-    Built-in Functions
+    組み込み関数
   </span>
   
 
@@ -5688,7 +5803,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12_7">
             <span class="md-nav__icon md-icon"></span>
-            Built-in Functions
+            組み込み関数
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5703,7 +5818,7 @@
         
   
   <span class="md-ellipsis">
-    System
+    システム
   </span>
   
 
@@ -5724,7 +5839,7 @@
         
   
   <span class="md-ellipsis">
-    Math
+    数学
   </span>
   
 
@@ -5745,7 +5860,7 @@
         
   
   <span class="md-ellipsis">
-    Network
+    ネットワーク
   </span>
   
 
@@ -5766,7 +5881,7 @@
         
   
   <span class="md-ellipsis">
-    NamePlate
+    ネームプレート
   </span>
   
 
@@ -5829,7 +5944,7 @@
         
   
   <span class="md-ellipsis">
-    TextChat
+    テキストチャット
   </span>
   
 
@@ -5871,7 +5986,7 @@
         
   
   <span class="md-ellipsis">
-    Physics
+    物理演算
   </span>
   
 
@@ -5892,7 +6007,7 @@
         
   
   <span class="md-ellipsis">
-    Camera
+    カメラ
   </span>
   
 
@@ -5913,7 +6028,7 @@
         
   
   <span class="md-ellipsis">
-    Common Dialog
+    汎用ダイアログ
   </span>
   
 
@@ -5934,7 +6049,7 @@
         
   
   <span class="md-ellipsis">
-    Rendering
+    レンダリング
   </span>
   
 
@@ -5981,7 +6096,7 @@
             
   
   <span class="md-ellipsis">
-    Statements and flow control
+    文法と制御構文
   </span>
   
 
@@ -5991,7 +6106,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12_8">
             <span class="md-nav__icon md-icon"></span>
-            Statements and flow control
+            文法と制御構文
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6006,7 +6121,7 @@
         
   
   <span class="md-ellipsis">
-    Declarations and definitions
+    定義・宣言
   </span>
   
 
@@ -6027,7 +6142,7 @@
         
   
   <span class="md-ellipsis">
-    Control Statement
+    制御構文
   </span>
   
 
@@ -6048,7 +6163,7 @@
         
   
   <span class="md-ellipsis">
-    Operator
+    演算子
   </span>
   
 
@@ -6100,7 +6215,7 @@
             
   
   <span class="md-ellipsis">
-    External API
+    外部API連携
   </span>
   
 
@@ -6110,7 +6225,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
-            External API
+            外部API連携
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6125,7 +6240,7 @@
         
   
   <span class="md-ellipsis">
-    Broker API
+    ブローカーAPIについて
   </span>
   
 
@@ -6206,7 +6321,7 @@
             
   
   <span class="md-ellipsis">
-    Release Note
+    リリースノート
   </span>
   
 
@@ -6216,7 +6331,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_14">
             <span class="md-nav__icon md-icon"></span>
-            Release Note
+            リリースノート
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6231,7 +6346,7 @@
         
   
   <span class="md-ellipsis">
-    About Release Note
+    リリースノートについて
   </span>
   
 
@@ -8076,7 +8191,7 @@
             
   
   <span class="md-ellipsis">
-    Change Log
+    チェンジログ
   </span>
   
 
@@ -8086,7 +8201,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
-            Change Log
+            チェンジログ
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -8097,11 +8212,11 @@
   
   
     <li class="md-nav__item">
-      <a href="AboutChangelog.html" class="md-nav__link">
+      <a href="../changelog/AboutChangelog.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    About Changelog
+    チェンジログについて
   </span>
   
 
@@ -8159,7 +8274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-13.7.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.7.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8180,7 +8295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-13.4.html" class="md-nav__link">
+      <a href="../changelog/changelog-13.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8252,7 +8367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-12.3.html" class="md-nav__link">
+      <a href="../changelog/changelog-12.3.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8273,7 +8388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-12.1.html" class="md-nav__link">
+      <a href="../changelog/changelog-12.1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8294,7 +8409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-12.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-12.0.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8374,7 +8489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-9.11.html" class="md-nav__link">
+      <a href="../changelog/changelog-9.11.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8395,7 +8510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-9.5.html" class="md-nav__link">
+      <a href="../changelog/changelog-9.5.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8416,7 +8531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-9.4.html" class="md-nav__link">
+      <a href="../changelog/changelog-9.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8437,7 +8552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-9.3.html" class="md-nav__link">
+      <a href="../changelog/changelog-9.3.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8458,7 +8573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-9.2.html" class="md-nav__link">
+      <a href="../changelog/changelog-9.2.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8479,7 +8594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-9.1.html" class="md-nav__link">
+      <a href="../changelog/changelog-9.1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8500,7 +8615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-9.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-9.0.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8572,7 +8687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-8.2.html" class="md-nav__link">
+      <a href="../changelog/changelog-8.2.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8593,7 +8708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-8.1.html" class="md-nav__link">
+      <a href="../changelog/changelog-8.1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8614,7 +8729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-8.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-8.0.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8688,7 +8803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-7.3.html" class="md-nav__link">
+      <a href="../changelog/changelog-7.3.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8709,7 +8824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-7.2.html" class="md-nav__link">
+      <a href="../changelog/changelog-7.2.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8730,7 +8845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-7.1.html" class="md-nav__link">
+      <a href="../changelog/changelog-7.1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8751,7 +8866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-7.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-7.0.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8827,7 +8942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-6.4.html" class="md-nav__link">
+      <a href="../changelog/changelog-6.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8848,7 +8963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-6.3.html" class="md-nav__link">
+      <a href="../changelog/changelog-6.3.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8869,7 +8984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-6.2.html" class="md-nav__link">
+      <a href="../changelog/changelog-6.2.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8890,7 +9005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-6.1.html" class="md-nav__link">
+      <a href="../changelog/changelog-6.1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8911,7 +9026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-6.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-6.0.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8989,7 +9104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-5.5.html" class="md-nav__link">
+      <a href="../changelog/changelog-5.5.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9010,7 +9125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-5.4.html" class="md-nav__link">
+      <a href="../changelog/changelog-5.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9031,7 +9146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-5.3.html" class="md-nav__link">
+      <a href="../changelog/changelog-5.3.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9052,7 +9167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-5.2.html" class="md-nav__link">
+      <a href="../changelog/changelog-5.2.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9073,7 +9188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-5.1.html" class="md-nav__link">
+      <a href="../changelog/changelog-5.1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9094,7 +9209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-5.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-5.0.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9178,7 +9293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.8.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.8.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9199,7 +9314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.7.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.7.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9220,7 +9335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.6.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.6.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9241,7 +9356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.5.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.5.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9262,7 +9377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.4.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9283,7 +9398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.3.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.3.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9304,7 +9419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.2.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.2.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9325,7 +9440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.1.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.1.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9346,7 +9461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-4.0.html" class="md-nav__link">
+      <a href="../changelog/changelog-4.0.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9428,7 +9543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-3.9.html" class="md-nav__link">
+      <a href="../changelog/changelog-3.9.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9449,7 +9564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-3.8.html" class="md-nav__link">
+      <a href="../changelog/changelog-3.8.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9470,7 +9585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-3.7.html" class="md-nav__link">
+      <a href="../changelog/changelog-3.7.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9491,7 +9606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-3.6.html" class="md-nav__link">
+      <a href="../changelog/changelog-3.6.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9512,7 +9627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-3.5.html" class="md-nav__link">
+      <a href="../changelog/changelog-3.5.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9533,7 +9648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-3.4.html" class="md-nav__link">
+      <a href="../changelog/changelog-3.4.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9554,7 +9669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-3.3.html" class="md-nav__link">
+      <a href="../changelog/changelog-3.3.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9575,7 +9690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog-3.2.html" class="md-nav__link">
+      <a href="../changelog/changelog-3.2.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9615,7 +9730,7 @@
         
   
   <span class="md-ellipsis">
-    License
+    利用規約
   </span>
   
 
@@ -9637,7 +9752,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -9646,25 +9761,76 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#october-30-2024-update" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      October 30 2024 Update
+      アセットストアの使い方
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#october-30-2024-added-pages" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      October 30 2024 - Added Pages
+      入手したアバターをワールドに配置する
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="入手したアバターをワールドに配置する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ1: アセットのダウンロードと解凍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-unityhierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ2: UnityのHierarchyに必須オブジェクトを作成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-vkc-item-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ3: VKC Item Objectの追加
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ4: プリセットアバターの配置とビルド
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ4: アバターの配置とビルド
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -9683,15 +9849,45 @@
                   
 
 
-<h1 id="sdk-manual-change-log-ver-141">SDK Manual Change Log - Ver 14.1</h1>
-<h2 id="october-30-2024-update">October 30 2024 Update</h2>
-<h2 id="october-30-2024-added-pages">October 30 2024 - Added Pages</h2>
+<h1 id="_1">アセットストアからダウンロードするアバターの設定方法</h1>
+<h2 id="_2">アセットストアの使い方</h2>
+<p>アセットストアを使うには、初めにVket Cloudのアカウントを作成する必要があります。もしアカウントが未作成の場合は、<a href="../AboutVketCloudSDK/SetupAccount.html">こちら</a>を参照してアカウントを作成してください。</p>
+<ol>
+<li>ログインしたうえで以下のリンクをクリックし、アセットストアにアクセスします。</li>
+<li><a href="https://cloud.vket.com/account/asset/store" target="_blank">アセットストア</a></li>
+<li>以下のような(avatar)とのカテゴリ表記のあるアセットを選択してください。アセットを選択すると、アセットの名前、バージョン、説明、価格などが表示されます。</li>
+</ol>
+<p><img alt="Asset Improve1" src="img/ImproveAssetStore_1.jpg" /></p>
+<ol>
+<li>ここでは、詳細を確認した上で「入手」を選択します。</li>
+</ol>
+<p><img alt="Asset Improve2" src="img/ImproveAssetStore_2.jpg" /></p>
+<ol>
+<li>入手したアセットはマイページの<a href="https://cloud.vket.com/account/asset" target="_blank">アセット管理画面</a>にて確認とダウンロードができます。続いてダウンロードしたら、VketCloudSDKを使用してワールドに配置してみましょう。</li>
+</ol>
+<p><img alt="Asset Improve3" src="img/ImproveAssetStore_3.jpg" /></p>
+<h2 id="_3">入手したアバターをワールドに配置する</h2>
+<h3 id="1">ステップ1: アセットのダウンロードと解凍</h3>
+<p>アセットストアから入手したアバター(.hrm)をダウンロードします。次に、ファイルをUnityのAssetsフォルダ内に配置します。</p>
+<p><img alt="Asset Improve4" src="img/ImproveAssetStore_4.jpg" /></p>
+<h3 id="2-unityhierarchy">ステップ2: UnityのHierarchyに必須オブジェクトを作成</h3>
+<p>Hiearchyウィンドウで必須オブジェクトを作成します。</p>
+<p><img alt="Asset Improve4" src="img/ImproveAssetStore_5.jpg" /></p>
+<p>作成すると以下の様な設定オブジェクトが表示されます。</p>
+<p><img alt="Asset Improve4" src="img/ImproveAssetStore_6.jpg" /></p>
+<h3 id="3-vkc-item-object">ステップ3: VKC Item Objectの追加</h3>
 <ul>
-<li>Trouble shooting<ul>
-<li><a href="https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/troubleshooting/Comment_Bug_Reports.html">Comment and Bug Reports Form</a></li>
+<li>以下のようにVKC Item Objectを配置し、アバターのファイル（.hrm）を指定します。</li>
+<li>またEnable Boneを有効化してください</li>
 </ul>
-</li>
+<p><img alt="Asset Improve4" src="img/ImproveAssetStore_8.jpg" /></p>
+<h3 id="4">ステップ4: プリセットアバターの配置とビルド</h3>
+<ul>
+<li>またプリセットアバターとして配置する場合は、以下ページをご参照ください。</li>
+<li><a href="PresetAvatar.html">プリセットアバターの配置</a></li>
 </ul>
+<h3 id="4_1">ステップ4: アバターの配置とビルド</h3>
+<p>最後に、VKCItemObjectのTransformを編集し、アバターの位置、角度を調整します。これが完了したら、ワールドをビルドします。ビルドが終われば、ワールド内にアバターが正しく配置されているか確認しましょう。</p>
 
 
 
@@ -9721,7 +9917,7 @@
       <div class="md-footer-nav md-grid md-grid--no-gutter">
         <div class="md-footer-nav__section">
           
-            <img class="md-footer-logo" src="../../images/HikkyLogo.png" alt="VketCloudSDK Manual" />
+            <img class="md-footer-logo" src="../images/HikkyLogo.png" alt="VketCloudSDK Manual" />
           
           <div class="md-copyright">
             ©HIKKY Co.,Ltd. All rights reserved.
@@ -9737,10 +9933,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   </body>

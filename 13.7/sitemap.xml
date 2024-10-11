@@ -841,6 +841,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/HEOFieldTips.html"/>
     </url>
     <url>
+        <loc>NoneWorldMakingGuide/ImportAssetStore.html</loc>
+        <lastmod>2024-10-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/ImportAssetStore.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/ImportAssetStore.html"/>
+    </url>
+    <url>
         <loc>NoneWorldMakingGuide/JsUpload.html</loc>
         <lastmod>2024-10-11</lastmod>
         <changefreq>daily</changefreq>
@@ -986,13 +993,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonechangelog/changelog-13.7.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/changelog/changelog-13.7.html"/>
-    </url>
-    <url>
-        <loc>Nonechangelog/changelog-14.1.html</loc>
-        <lastmod>2024-10-11</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonechangelog/changelog-14.1.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/changelog/changelog-14.1.html"/>
     </url>
     <url>
         <loc>Nonechangelog/changelog-3.2.html</loc>
@@ -1996,13 +1996,6 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/troubleshooting/BuildError.html"/>
     </url>
     <url>
-        <loc>Nonetroubleshooting/Comment_Bug_Reports.html</loc>
-        <lastmod>2024-10-11</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonetroubleshooting/Comment_Bug_Reports.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/troubleshooting/Comment_Bug_Reports.html"/>
-    </url>
-    <url>
         <loc>Nonetroubleshooting/GeneralChecklist.html</loc>
         <lastmod>2024-10-11</lastmod>
         <changefreq>daily</changefreq>
@@ -2864,6 +2857,13 @@
         <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/HEOFieldTips.html"/>
     </url>
     <url>
+        <loc>Noneen/WorldMakingGuide/ImportAssetStore.html</loc>
+        <lastmod>2024-10-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/ImportAssetStore.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/ImportAssetStore.html"/>
+    </url>
+    <url>
         <loc>Noneen/WorldMakingGuide/JsUpload.html</loc>
         <lastmod>2024-10-11</lastmod>
         <changefreq>daily</changefreq>
@@ -3009,13 +3009,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/changelog/changelog-13.7.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonechangelog/changelog-13.7.html"/>
-    </url>
-    <url>
-        <loc>Noneen/changelog/changelog-14.1.html</loc>
-        <lastmod>2024-10-11</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/changelog/changelog-14.1.html"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonechangelog/changelog-14.1.html"/>
     </url>
     <url>
         <loc>Noneen/changelog/changelog-3.2.html</loc>
@@ -4017,13 +4010,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/troubleshooting/BuildError.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonetroubleshooting/BuildError.html"/>
-    </url>
-    <url>
-        <loc>Noneen/troubleshooting/Comment_Bug_Reports.html</loc>
-        <lastmod>2024-10-11</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/troubleshooting/Comment_Bug_Reports.html"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonetroubleshooting/Comment_Bug_Reports.html"/>
     </url>
     <url>
         <loc>Noneen/troubleshooting/GeneralChecklist.html</loc>

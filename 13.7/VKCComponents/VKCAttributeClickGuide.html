@@ -839,6 +839,8 @@
       
         
       
+        
+      
     
     
     
@@ -1252,6 +1254,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/ImportAssetStore.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    アセットストアからアバターをセットアップする
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1267,8 +1290,6 @@
   
     
     
-      
-        
       
         
       
@@ -1404,27 +1425,6 @@
   
   <span class="md-ellipsis">
     UnityとVketCloudの見た目を揃える
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/Comment_Bug_Reports.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ご意見・バグ報告フォーム
   </span>
   
 
@@ -9732,30 +9732,30 @@
 
 
 <h1 id="vkc-attribute-click-guide">VKC Attribute Click Guide</h1>
-<p><img alt="HEOClickGuide_1" src="img/HEOClickGuide_1.jpg" /></p>
+<p><img alt="HEOClickGuide_1" src="img/VKCAttributeClickGuide_1.jpg" /></p>
 <p>コンポーネントの<code>ON</code>を選択すると、一定のエリア内に入るとクリックガイドを出現させるためのオブジェクト類を生成します。<br>
 <code>OFF</code>を選択すると、生成されたオブジェクトは<strong>削除</strong>されます。</p>
 <h2 id="_1">使い方</h2>
 <p><code>VKC Attribute Click Guide</code>を押した際、<code>VKC Attribute Click Guide</code>がアタッチされたオブジェクトの子に<code>[オブジェクト名_clickArea]</code>(以下、<code>clickArea</code>)が生成されます。<br>
 また、<code>World</code>オブジェクトの外に<code>[オブジェクト名_clickguide]</code>(以下、<code>clickguide</code>)が生成されます。</p>
-<p><img alt="HEOClickGuide_2" src="img/HEOClickGuide_2.jpg" /></p>
+<p><img alt="HEOClickGuide_2" src="img/VKCAttributeClickGuide_2.jpg" /></p>
 <p><code>clickArea</code>では<code>clickGuide</code>の表示/非表示を<a href="VKCItemAreaCollider.html">VKC Item Area Collider</a>及び<a href="../Actions/Item/ShowHideItem.html">Show/HideItem</a>を使用して切りかえています。<br></p>
-<p><img alt="HEOClickGuide_3" src="img/HEOClickGuide_3.jpg" /></p>
+<p><img alt="HEOClickGuide_3" src="img/VKCAttributeClickGuide_3.jpg" /></p>
 <p>生成時の初期状態では<code>clickArea</code>はデフォルトのキューブと同一のサイズです。<br>
 下記画像のように、ガイドを表示させたい範囲に応じて<code>clickArea</code>のサイズ調整を行うことをおすすめします。</p>
-<p><img alt="HEOClickGuide_4" src="img/HEOClickGuide_4.jpg" /></p>
+<p><img alt="HEOClickGuide_4" src="img/VKCAttributeClickGuide_4.jpg" /></p>
 <p><code>clickArea</code>では<a href="../Actions/Node/EnableDisableClickableNode.html">Enable/DisableClickableNode</a>を使用して元オブジェクトのクリック判定のオンオフを切り替えることができます。</p>
-<p><img alt="HEOClickGuide_5" src="img/HEOClickGuide_5.jpg" /></p>
+<p><img alt="HEOClickGuide_5" src="img/VKCAttributeClickGuide_5.jpg" /></p>
 <p>生成元のオブジェクトでは、例として<a href="../Actions/Web/Openweb.html">OpenWeb</a>及び<a href="VKCNodeCollider.html">VKC Node Collider</a>にて<code>Clickable</code>を設定することで、クリックガイドが表示されている際にのみウェブページを開くギミックが実装できます。</p>
-<p><img alt="HEOClickGuide_6" src="img/HEOClickGuide_6.jpg" /></p>
+<p><img alt="HEOClickGuide_6" src="img/VKCAttributeClickGuide_6.jpg" /></p>
 <p><code>clickguide</code>にはクリックガイド用の画像を表示するための<a href="VKCItemPlane.html">VKC Item Plane</a>があります。<br>
 初期状態では<code>Billboard</code>及び<code>Show</code>が無効となっているため、有効に切り替えることをおすすめします。</p>
-<p><img alt="HEOClickGuide_7" src="img/HEOClickGuide_7.jpg" /></p>
+<p><img alt="HEOClickGuide_7" src="img/VKCAttributeClickGuide_7.jpg" /></p>
 <p>ビルドした際のクリックガイドの見た目は以下の通りです。</p>
 <p><code>clickArea</code>内にいて、クリックガイドが表示されている状態：</p>
-<p><img alt="HEOClickGuide_8" src="img/HEOClickGuide_8.jpg" /></p>
+<p><img alt="HEOClickGuide_8" src="img/VKCAttributeClickGuide_8.jpg" /></p>
 <p><code>clickArea</code>外にいて、クリックガイドが非表示の状態：</p>
-<p><img alt="HEOClickGuide_9" src="img/HEOClickGuide_9.jpg" /></p>
+<p><img alt="HEOClickGuide_9" src="img/VKCAttributeClickGuide_9.jpg" /></p>
 
 
 

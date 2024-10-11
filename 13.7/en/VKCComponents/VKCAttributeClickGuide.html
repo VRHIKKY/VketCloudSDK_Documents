@@ -839,6 +839,8 @@
       
         
       
+        
+      
     
     
     
@@ -1252,6 +1254,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/ImportAssetStore.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set Up Avatar From Asset Store
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1267,8 +1290,6 @@
   
     
     
-      
-        
       
         
       
@@ -1404,27 +1425,6 @@
   
   <span class="md-ellipsis">
     Unity settings for replicating actual look in Vket Cloud
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/Comment_Bug_Reports.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Comment / Bug Reports Form
   </span>
   
 
@@ -9732,31 +9732,31 @@
 
 
 <h1 id="vkc-attribute-click-guide">VKC Attribute Click Guide</h1>
-<p><img alt="HEOClickGuide_1" src="../../VKCComponents/img/HEOClickGuide_1.jpg" /></p>
+<p><img alt="HEOClickGuide_1" src="../../VKCComponents/img/VKCAttributeClickGuide_1.jpg" /></p>
 <p>By selecting <code>ON</code>, this component generates gameobjects for showing a click guide within the designated range.<br>
 Selecting <code>OFF</code> will <strong>delete</strong> the generated gameobjects.</p>
 <h2 id="usage">Usage</h2>
 <p>When activating <code>VKC Attribute Click Guide</code>, the <code>[objectname_clickArea]</code> gameobject (henceforth referred as <code>clickArea</code>) will be generated as a child object.<br>
 Also, <code>[objectname_clickArea]</code> (henceforth referred as <code>clickguide</code>) will be generated outside the <code>World</code> object.</p>
-<p><img alt="HEOClickGuide_2" src="../../VKCComponents/img/HEOClickGuide_2.jpg" /></p>
+<p><img alt="HEOClickGuide_2" src="./img/VKCAttributeClickGuide_.jpg" /></p>
 <p>The <code>clickArea</code> gameobject controls the show/hide state of the <code>clickguide</code> gameobject, using the <a href="VKCItemAreaCollider.html">VKC Item Area Collider</a> and <a href="../Actions/Item/ShowHideItem.html">Show/HideItem</a>.</p>
-<p><img alt="HEOClickGuide_3" src="../../VKCComponents/img/HEOClickGuide_3.jpg" /></p>
+<p><img alt="HEOClickGuide_3" src="../../VKCComponents/img/VKCAttributeClickGuide_3.jpg" /></p>
 <p>In the initial state, <code>clickArea</code> is the same size as the default cube.<br>
 Like the image below, resizing the <code>clickArea</code> to designate the zone for click guide appearance is highly recommended.</p>
-<p><img alt="HEOClickGuide_4" src="../../VKCComponents/img/HEOClickGuide_4.jpg" /></p>
+<p><img alt="HEOClickGuide_4" src="../../VKCComponents/img/VKCAttributeClickGuide_4.jpg" /></p>
 <p>By modifying <code>clickArea</code> using <a href="../Actions/Node/EnableDisableClickableNode.html">Enable/DisableClickableNode</a>, the clickable state of the original object can be toggled.</p>
-<p><img alt="HEOClickGuide_5" src="../../VKCComponents/img/HEOClickGuide_5.jpg" /></p>
+<p><img alt="HEOClickGuide_5" src="../../VKCComponents/img/VKCAttributeClickGuide_5.jpg" /></p>
 <p>For example, a clickable webpage gimmick syncronized with the click guide can be implemented. <br>
 This gimmick uses <a href="../Actions/Web/Openweb.html">OpenWeb</a> and a <code>Clickable</code> <a href="VKCNodeCollider.html">VKC Node Collider</a> set to the original object.</p>
-<p><img alt="HEOClickGuide_6" src="../../VKCComponents/img/HEOClickGuide_6.jpg" /></p>
+<p><img alt="HEOClickGuide_6" src="../../VKCComponents/img/VKCAttributeClickGuide_6.jpg" /></p>
 <p>The <code>clickguide</code> object contains a <a href="VKCItemPlane.html">VKC Item Plane</a> component to show the click guide image.<br>
 In the initial state, the <code>Billboard</code> and <code>Show</code> is disabled, therefore enabling them are highly recommended.</p>
-<p><img alt="HEOClickGuide_7" src="../../VKCComponents/img/HEOClickGuide_7.jpg" /></p>
+<p><img alt="HEOClickGuide_7" src="../../VKCComponents/img/VKCAttributeClickGuide_7.jpg" /></p>
 <p>The appearance of the click guide after build is as below. </p>
 <p>The click guide appearing when the player is inside the <code>clickArea</code>:</p>
-<p><img alt="HEOClickGuide_8" src="../../VKCComponents/img/HEOClickGuide_8.jpg" /></p>
+<p><img alt="HEOClickGuide_8" src="../../VKCComponents/img/VKCAttributeClickGuide_8.jpg" /></p>
 <p>The click guide disappearing when the player is outside the <code>clickArea</code>:</p>
-<p><img alt="HEOClickGuide_9" src="../../VKCComponents/img/HEOClickGuide_9.jpg" /></p>
+<p><img alt="HEOClickGuide_9" src="../../VKCComponents/img/VKCAttributeClickGuide_9.jpg" /></p>
 
 
 
