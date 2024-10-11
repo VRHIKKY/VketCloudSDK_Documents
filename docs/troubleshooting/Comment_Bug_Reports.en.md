@@ -4,7 +4,7 @@ This feature allows you to directly send feedback, requests, and bug reports abo
 It provides a way to easily and anonymously share any inconveniences you experience while using the VketCloud SDK, as well as any bugs you discover during development.
 We encourage you to share your thoughts with us.
 
-If you would like a direct response or support from staff, please contact us on VketCloud/MyVket Discord{target=_blank}
+If you would like a direct response or support from staff, please contact us on [VketCloud/MyVket Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}
 
 1. Select VketCloudSDK > Comments and Bug Report Form from the Unity Editor.
 
