@@ -2,6 +2,11 @@
 
 ## 2024年10月11日更新
 
+## 2024年10月11日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [アセットストアからアバターをセットアップする](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/ImportAssetStore.html)
+
 ## 2024年10月11日 - 変更されたページ
 
 - VKCコンポーネント
@@ -14,6 +19,8 @@
             - 画像を更新
         - [VKC Attribute Script](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeScript.html)
             - 画像を更新
+
+---
 
 ## 2024年10月4日更新
 

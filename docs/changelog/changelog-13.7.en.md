@@ -2,6 +2,11 @@
 
 ## October 11 2024 Update
 
+## October 11 2024 - Added Pages
+- World Making Guide
+    - [Setting up an avatar from the Asset Store](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/WorldMakingGuide/ImportAssetStore.html)
+
+
 ## October 11 2024 - Edited Pages
 
 - VKC Components
