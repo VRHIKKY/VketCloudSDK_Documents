@@ -3,16 +3,17 @@
 ## 2024年10月11日更新
 
 ## 2024年10月11日 - 変更されたページ
+
 - VKCコンポーネント
-    - VKCAttributeScript
-        -[VKC Attribute Click Guide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeClickGuide.html)
-            - 画像を更新
-- VKCコンポーネント
+
+    - VKC Node
+        - [VKC Node Mirror](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeMirror.html)
+            - 画像および記載を更新
     - VKC Attribute
+        - [VKC Attribute Click Guide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeClickGuide.html)
+            - 画像を更新
         - [VKC Attribute Script](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeScript.html)
             - 画像を更新
-
----
 
 ## 2024年10月4日更新
 
