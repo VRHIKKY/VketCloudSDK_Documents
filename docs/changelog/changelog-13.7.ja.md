@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年10月25日更新
+
+## 2024年10月25日 - 追加されたページ
+
+- HeliScript
+    - [HeliScriptキャスト](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/ja/hs/hs_casting.html)
+
+---
+
 ## 2024年10月11日更新
 
 ## 2024年10月11日 - 追加されたページ
