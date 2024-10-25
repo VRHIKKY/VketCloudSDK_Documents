@@ -1,5 +1,7 @@
 # SDK Manual Change Log - Ver 14.1
 
+---
+
 ## 2024年10月30日更新
 
 ## 2024年10月30日 - 追加されたページ
@@ -12,3 +14,7 @@
 - ワールド制作の基本
   - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/FirstStep/WorldUpload.html)
     - SDK内からワールドを新規登録する際の手順を追加
+- VKCコンポーネント
+    - VKC Setting
+        - [VKC Rendering Settings](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/VketCloudSettings/RenderingSettings.html)
+            - ToneMapの記載を追記
