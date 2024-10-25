@@ -6,8 +6,7 @@
 
 - HeliScript
     - [HeliScriptキャスト](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/ja/hs/hs_casting.html)
-- HeliScript
-    - [HeliScriptコメント]（https://vrhikky.github.io/VketCloudSDK_Documents/13.7/ja/hs/hs_comment_out.html）
+    - [HeliScriptコメント](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/ja/hs/hs_comment_out.html)
 
 ---
 
