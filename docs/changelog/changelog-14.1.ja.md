@@ -11,6 +11,9 @@
 
 ## 2024年10月30日 - 変更されたページ
 
+- SDK Tools
+    - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/debugconsole/debugconsole.html)
+        - デバッグコンソールのUIの画像を更新しました
 - VKCコンポーネント
     - VKC Setting
         - [VKC Rendering Settings](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/VketCloudSettings/RenderingSettings.html)
