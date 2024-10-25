@@ -6,3 +6,9 @@
 
 - Trouble shooting
     - [Comment and Bug Reports Form](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/troubleshooting/Comment_Bug_Reports.html)
+
+## October 4 2024 - Edited Pages
+
+- First Steps
+  - [World Upload](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/FirstStep/WorldUpload.html)
+    - Added instructions on how to register a new world on the SDK
