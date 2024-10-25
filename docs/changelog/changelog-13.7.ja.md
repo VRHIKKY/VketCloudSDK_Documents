@@ -5,8 +5,8 @@
 ## 2024年10月25日 - 追加されたページ
 
 - HeliScript
-    - [HeliScriptキャスト](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/ja/hs/hs_casting.html)
-    - [HeliScriptコメント](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/ja/hs/hs_comment_out.html)
+    - [HeliScriptキャスト](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_casting.html)
+    - [HeliScriptコメント](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_comment_out.html)
 
 ---
 
