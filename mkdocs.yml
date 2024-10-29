@@ -573,6 +573,8 @@ nav:
     - v13.x:
         - v13.7: changelog/changelog-13.7.md
         - v13.4: changelog/changelog-13.4.md
+        - v13.1: changelog/changelog-13.1.md
+        - v13.0: changelog/changelog-13.0.md
     - v12.x:
         - v12.3: changelog/changelog-12.3.md
         - v12.1: changelog/changelog-12.1.md
