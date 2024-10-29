@@ -116,6 +116,7 @@ plugins:
             JS Upload: JS入稿
             Enabling JS Upload Feature: JS入稿機能の有効化
             Sample JS Upload: JS入稿のサンプル
+            Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -212,6 +213,8 @@ plugins:
             Stop Video: ビデオ停止
             # HeliScript
             HeliScript - Overview: HeliScript概要
+            HeliScript - Casting: HeliScriptキャスト
+            HeliScript - Commenting: HeliScriptコメント
             Statements and flow control: 文法と制御構文
             Declarations and definitions: 定義・宣言
             Control Statement: 制御構文
@@ -307,6 +310,7 @@ nav:
     - JS Upload :
       - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
       - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
+    - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -455,6 +459,8 @@ nav:
       - Stop Video: Actions/Others/StopVideo.md
 - HeliScript:
     - HeliScript - Overview: hs/hs_overview.md
+    - HeliScript - Casting: hs/hs_casting.md
+    - HeliScript - Commenting: hs/hs_comment_out.md
     - Built-in Types:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
