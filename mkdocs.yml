@@ -499,6 +499,10 @@ nav:
   - JsVal: ExternalAPI/JsVal.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v14.x:
+        - v14.2: releasenote/releasenote-14.2.md
+        - v14.1: releasenote/releasenote-14.1.md
+        - v14.0: releasenote/releasenote-14.0.md
     - v13.x:
         - v13.8: releasenote/releasenote-13.8.md
         - v13.7: releasenote/releasenote-13.7.md
