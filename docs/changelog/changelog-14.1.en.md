@@ -9,9 +9,12 @@
         - Updated the image of the Debug Console UI
 - Trouble shooting
     - [Comment and Bug Reports Form](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/troubleshooting/Comment_Bug_Reports.html)
-    
+
 ## October 30 2024 - Edited Pages
 
+- First Steps
+  - [World Upload](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/FirstStep/WorldUpload.html)
+    - Added instructions on how to register a new world on the SDK
 - VKC Components
     - VKC Setting
         - [VKC Rendering Settings](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/VketCloudSettings/RenderingSettings.html)
