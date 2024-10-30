@@ -35,7 +35,7 @@ Projectタブを開き、Assetsを右クリックしCreate → FolderでUIの画
 
 ![GUITools_HowToUse_12](img/GUITools_HowToUse_12.jpg)
 
-２つ目の方法として、Package ManagaerからImport Into Projectでインストールします。
+２つ目の方法として、Package ManagerからImport Into Projectでインストールします。
 
 ![GUITools_HowToUse_13](img/GUITools_HowToUse_13.jpg)
 
