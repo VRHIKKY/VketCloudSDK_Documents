@@ -21,3 +21,5 @@
     - VKC Setting
         - [VKC Rendering Settings](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/VketCloudSettings/RenderingSettings.html)
             - ToneMapの記載を追記
+    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/VKCComponents/VKCItemObject.html)
+        - Pickableフィールドの記載を追記

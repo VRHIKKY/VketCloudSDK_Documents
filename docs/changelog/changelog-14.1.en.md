@@ -19,3 +19,5 @@
     - VKC Setting
         - [VKC Rendering Settings](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/VketCloudSettings/RenderingSettings.html)
             - Added description of ToneMap function
+    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/VKCComponents/VKCItemObject.html)
+        - Added description of Pickable field
