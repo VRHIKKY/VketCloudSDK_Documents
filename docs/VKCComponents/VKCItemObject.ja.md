@@ -65,6 +65,21 @@ VKC Item Objectは、動的なオブジェクトをシーンに生成するた�
 | Circle Shadow | false | オブジェクトの足元に丸影を投影するか切り替えます。 |
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります。 |
 | Object Mode | None | None、Pose、Motionから任意に選択します。PoseもしくはMotionを選択した場合、追加でhemファイルを指定する必要があります。 |
+| Pickable | false | 掴む機能の有効化する。詳細は以下参照 |
+
+### Pickable
+
+![VKCItemObject_8](img/VKCItemObject_8.jpg)
+
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| Display Name (ja) | "" | 日本語表示名 |
+| Display Name (en) | "" | 英語表示名 |
+| Enable Collision Detection | false | 掴んだ後に、衝突判定の有効化するかの設定をします。 |
+| Bone Name | "hips" | 掴む対象のボーン名を指定します。 |
+| Offset Position | (0, 0, 0) | 掴んだ際のボーン位置からのオフセット位置を指定します。 |
+| Offset Rotation | (0, 0, 0) | 掴んだ際のボーン回転からのオフセット回転を指定します。 |
+| Offset Scale | (1, 1, 1) | 掴んだ際のボーンスケールからのオフセットスケールを指定します。 |
 
 ### Advanced
 

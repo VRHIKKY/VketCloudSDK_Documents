@@ -12,13 +12,11 @@
 
 2. `Upload to Remote Server`をクリックすると、World Uploaderウィンドウが開かれます。
 
-    ここでは[Vket Cloud](https://cloud.vket.com/account/world){target=blank}公式サイトにてあらかじめ発行したワールドIDとそれに紐づいている情報（ワールド名、サムネイル、ワールド説明）が一覧表示されます。
-
-    アップロードしたいワールドIDを選択してください。
+    ここでは[Vket Cloud](https://cloud.vket.com/account/world){target=_blank}公式サイト、もしくは後述の「[ワールド情報の新規登録](#_3)」にて発行したワールドIDとそれに紐づいている情報（ワールド名、サムネイル、ワールド説明）が一覧表示されます。
 
     ![WorldListForUpload](img/WorldUpload02.jpg)
 
-    また、[Basicプラン](https://cloud.vket.com/plan){target=blank}以上のライセンスを使用している場合、チーム制作機能が解放され所属チームと管理しているワールドの表示の切り替えが左上のチーム名より行えます。
+    また、[Basicプラン](https://cloud.vket.com/plan){target=_blank}以上のライセンスを使用している場合、チーム制作機能が解放され所属チームと管理しているワールドの表示の切り替えが左上のチーム名より行えます。
 
     ![TeamName](img/WorldUpload03.jpg)
 
@@ -27,7 +25,57 @@
 
     ![CheckTheWorld_WorldUploader](img/WorldUpload04.jpg)
 
-    `Upload`を選択すると、アップロードを行うか確認するウィンドウが表示されます。<br>
+### ワールド情報の新規登録
+
+SDK Ver14.1から、これまで[Vket Cloud](https://cloud.vket.com/account/world){target=_blank}公式サイト上で行っていたワールドIDの発行 / 情報登録がSDK上で行えるようになりました。
+
+1. ウィンドウ左下の`Add World`をクリックしてください。
+
+    ![WorldUpload11](img/WorldUpload11.jpg)
+
+2. `Add World`をクリックすると、ワールド情報を登録するためのウィンドウが開きます。<br>
+    ウィンドウの案内に沿って以下の情報を入力してください。
+
+    - 所属チーム ※[Basicプラン](https://cloud.vket.com/plan){target=_blank}以上のライセンスにて切り替え可能
+    - ワールド名
+      - 30文字まで入力可能
+    - ワールド説明
+      - 500文字まで入力可能
+    - ワールドサムネイル画像
+      - jpg / png画像
+      - 推奨サイズ：382px × 696 px (比率 16:9)
+      - ファイルサイズ：3MB以下
+
+    ![WorldUpload12](img/WorldUpload12.jpg)
+
+3. `Advanced Settings (Optional)`タブを開くと、追加で詳細情報を加えることができます。
+
+    - ワールド詳細画像
+    - ロード画面用画像　※設定のない場合は代わりにサムネイル画像が使用されます。
+      - PC / モバイル横画面用
+      - モバイル縦画面用
+
+    ![WorldUpload13](img/WorldUpload13.jpg)
+
+4. 全ての情報を入力し終えたら、`Create World`をクリックして情報を送信します。
+
+    ![WorldUpload14](img/WorldUpload14.jpg)
+
+5. ワールド情報の登録が完了すると、完了を示すウィンドウが表示され、ワールド情報一覧にて情報を確認できます。<br>
+  登録した情報を編集したい場合は、公式サイトの[ワールド管理ページ](https://cloud.vket.com/account/world){target=_blank}にて確認と編集を行ってください。<br>
+  ワールド管理ページは、ウィンドウ右上のMy Pageボタンからもアクセスできます。
+
+    ![WorldUpload15](img/WorldUpload15.jpg)
+
+    ![WorldUpload16](img/WorldUpload16.jpg)
+
+### ワールドデータをアップロードする
+
+1. アップロードしたいワールドIDを選択してください。
+
+    ![WorldListForUpload](img/WorldUpload02.jpg)
+
+2. `Upload`を選択すると、アップロードを行うか確認するウィンドウが表示されます。<br>
     `Yes`を選択するとアップロードが開始されます。
 
     ![WorldUpload](img/WorldUpload05.jpg)
@@ -38,7 +86,7 @@
 
     ![UploadSuccess](img/WorldUpload07.jpg)
 
-4. アップロードしたワールドへ入室するには、[ワールドIDの管理画面](https://cloud.vket.com/account/world){target=blank}から`World preview`をクリックしてください。
+4. アップロードしたワールドへ入室するには、[ワールドIDの管理画面](https://cloud.vket.com/account/world){target=_blank}から`World preview`をクリックしてください。
 
     ![CheckTheWorld_Web](img/WorldUpload08.jpg)
 
@@ -57,7 +105,7 @@
 
 ## ワールドの公開について
 
-公開されたワールドは、My Vketの[ワールド一覧](https://vket.com/play/world){target=blank}にて一覧化されて表示されます。
+公開されたワールドは、My Vketの[ワールド一覧](https://vket.com/play/world){target=_blank}にて一覧化されて表示されます。
 
 また、非公開の状態でURLを共有すると、My Vketでは非公開の状態でワールドにアクセスできるようになります。<br>
 複数人でのテスト、限定的な公開を行いたい際に有効です。<br>
@@ -67,7 +115,7 @@
 
 !!! note caution
     アップロード先ワールドは、アカウント管理画面であらかじめIDだけ作成しておく必要があります。<br>
-    リストにワールド名が表示されない場合は、[こちら](https://cloud.vket.com/account/world){target=blank}の`ワールドを追加`ボタンよりワールドIDを作成してください。
+    リストにワールド名が表示されない場合は、[こちら](https://cloud.vket.com/account/world){target=_blank}の`ワールドを追加`ボタンよりワールドIDを作成してください。
 
 ![CreateWorldID](img/WorldUpload10.jpg)
 
