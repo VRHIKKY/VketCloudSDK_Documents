@@ -575,6 +575,7 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v13.x:
+        - v14.1: changelog/changelog-14.1.md
         - v13.7: changelog/changelog-13.7.md
         - v13.4: changelog/changelog-13.4.md
         - v13.1: changelog/changelog-13.1.md
