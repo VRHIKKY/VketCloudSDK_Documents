@@ -30,6 +30,7 @@
 - World Making Guide
   - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldMakingGuide/UnityGuidelines.html)
     - Added reference to Shader Availability
+    - Added a caution about the use of the ".png" extension for texture files
 - HeliScript
     - Built-in Classes And Functions
         - [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/hs/hs_class_item.html)
@@ -50,6 +51,9 @@
             - Add a list of available Item classes using this object type
         - [VKCItemObject](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCItemObject.html)
             - Add a list of available Item classes using this object type
+   - VKC Node
+        - [VKC Node Alpha Animation](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/VKCComponents/VKCNodeAlphaAnimation.html)
+            - Changed the notation from VKCNodeAlphaAnimation to VKC Node Alpha Animation
 
 ---
 

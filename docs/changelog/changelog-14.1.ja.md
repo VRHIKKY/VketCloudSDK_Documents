@@ -11,6 +11,9 @@
 
 ## 2024年10月30日 - 変更されたページ
 
+- ワールド制作の基本
+  - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/FirstStep/WorldUpload.html)
+    - SDK内からワールドを新規登録する際の手順を追加
 - SDK Tools
     - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/debugconsole/debugconsole.html)
         - デバッグコンソールのUIの画像を更新しました
@@ -21,3 +24,5 @@
     - VKC Setting
         - [VKC Rendering Settings](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/VketCloudSettings/RenderingSettings.html)
             - ToneMapの記載を追記
+    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/VKCComponents/VKCItemObject.html)
+        - Pickableフィールドの記載を追記
