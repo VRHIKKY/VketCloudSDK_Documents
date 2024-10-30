@@ -11,7 +11,12 @@
     - [Comment and Bug Reports Form](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/troubleshooting/Comment_Bug_Reports.html)
 
 ## October 30 2024 - Edited Pages
-
+- SDK Tools
+    - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/debugconsole/debugconsole.html)
+        - Updated the image of the Debug Console UI
+- GUI Tools
+    - [How to Use](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/GUITools/HowToUse.html)
+        - Added description of the standard AddEssential function for VketCloudGUITools
 - First Steps
   - [World Upload](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/FirstStep/WorldUpload.html)
     - Added instructions on how to register a new world on the SDK

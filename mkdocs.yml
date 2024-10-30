@@ -333,11 +333,11 @@ nav:
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
-    - GUITools: 
-      - Overview & Setup: GUITools/Setup.md
-      - How to Use: GUITools/HowToUse.md
-      - Advanced Use: GUITools/AdvancedUse.md
     - ScenePreview (β): SDKTools/ScenePreview.md
+- GUITools: 
+    - Overview & Setup: GUITools/Setup.md
+    - How to Use: GUITools/HowToUse.md
+    - Advanced Use: GUITools/AdvancedUse.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md

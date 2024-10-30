@@ -24,11 +24,17 @@ Open the Project tab, right-click on Assets, and create a folder for UI image ma
 
 ![GUITools_HowToUse_05](img/GUITools_HowToUse_05.jpg)
 
+## Adding Essential Objects (Template)
+
+![GUITools_HowToUse_14](img/GUITools_HowToUse_14.jpg)
+
+Select GameObject > Add Essential objects for VketCloudGUITool from the top menu to add Essential Objects.
+
 ## Loading Sample Activity Canvas (Template)
 
 ![GUITools_HowToUse_12](img/GUITools_HowToUse_12.jpg)
 
-Install using Import Into Project.
+As a second method, install it from the Package Manager with Import Into Project.
 
 ![GUITools_HowToUse_13](img/GUITools_HowToUse_13.jpg)
 

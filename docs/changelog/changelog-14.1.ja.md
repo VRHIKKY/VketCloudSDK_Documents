@@ -17,6 +17,9 @@
 - SDK Tools
     - [デバッグコンソール](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/debugconsole/debugconsole.html)
         - デバッグコンソールのUIの画像を更新しました
+- GUI Tools
+    - [基本実装](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/GUITools/HowToUse.html)
+        - VketCloudGUITools用の標準搭載のAddEssential機能の説明を追加
 - VKCコンポーネント
     - VKC Setting
         - [VKC Rendering Settings](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/VketCloudSettings/RenderingSettings.html)
