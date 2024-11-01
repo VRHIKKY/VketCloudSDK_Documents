@@ -97,3 +97,5 @@ VketCloud allows objects to be loaded when entering a specific area after enteri
 | Item Render Priority | 0 | Sets the item rendering priority |
 | Collision Detection | true | Toggles whether object collision detection is enabled|
 | Show Photo Mode | true | Specifies whether it is displayed in photo mode |
+| Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
+| Force Collider Disable | false | Forcibly disables the collider |

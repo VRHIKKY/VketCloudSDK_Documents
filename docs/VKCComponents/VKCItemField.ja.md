@@ -97,3 +97,5 @@ VketCloudでは、ワールドに入った後に特定のエリアへ侵入し�
 | Item Render Priority |  0 | アイテムレンダー優先度を設定します |
 | Collision Detection | true | オブジェクトの衝突判定を検知するか切り替えます |
 | Show Photo Mode | true | 撮影モードで表示されるかどうかを指定します | 
+| Force Raycast Check Disable | false | Item単位でraycastの判定を強制的に無効にするかどうかを設定します |
+| Force Collider Disable | false | 強制的にコライダーを無効にします |
