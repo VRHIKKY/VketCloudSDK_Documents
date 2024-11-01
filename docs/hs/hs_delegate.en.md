@@ -1,176 +1,176 @@
-# デリゲート(delegate)
+# delegate
 
-## デリゲートの概要
+## Overview
 
-デリゲートは、関数やクラスメソッドの参照を表す型です。
-デリゲート型の変数には関数の参照を保存でき、また保存している関数を呼び出すことが可能です。
+A delegate is a type that represents a reference to a function or class method.<br>
+A delegate type variable can store a reference to a function and also call a stored method.
 
-## デリゲートを宣言する
+## Declaring a Delegate
 
-デリゲートを利用するには、関数のシグネチャ(戻り値や引数の型情報)を指定して、デリゲート型を宣言する必要があります。
+To use a delegate, you need to declare a delegate type by specifying the function's signature (return type and parameter types).
 
-以下の形式で、デリゲート型の宣言を行います。
-
-```
-delegate "戻り値" "デリゲート型名"("引数1", "引数2", ...);
-```
-
-具体的なデリゲート型の宣言の例です。
-ここでは、「戻り値の型が int で、第1引数の型が string、第2引数の型が bool」である、PerformAction型を定義しています。
+A delegate type is declared in the following format:
 
 ```
-// PerformAction型を宣言
+delegate "ReturnType" "DelegateTypeName"("Parameter1", "Parameter2", ...);
+```
+
+Here is an example of declaring a specific delegate type.
+ In this example, a `PerformAction` type is defined with a return type of `int`, the first parameter type is `string`, and the second parameter type is `bool`.
+
+```csharp
+// Declare the PerformAction delegate type
 delegate int PerformAction(string text, bool flag);
 
-// 引数名は省略可能なので、このようにも宣言できます。
+// The parameter names are optional, so it can also be declared like this
 delegate int PerformAction(string, bool);
 ```
 
-## デリゲートを利用する
+## Using a Delegate
 
-delegate型変数に関数を登録し、呼び出すコード例です。
+Here is an example of code that registers and invokes a function using a delegate type variable.
 
-```
-// PerformAction型を宣言
+```csharp
+// Declare the PerformAction delegate type
 delegate int PerformAction(string text, bool flag);
 
-// PerformAction型の変数を定義
+// Define a variable of PerformAction type
 PerformAction action;
 
-// 事前定義済みの関数 TestFunc を登録
+// Register the pre-defined function TestFunc
 action += &TestFunc;
 
-// 登録した関数(TestFunc)を呼び出し
+// Invoke the registered function (TestFunc)
 action("id", true);
 ```
 
-## 関数の登録について
+## Registering Functions
 
-* 関数をデリゲート型変数に登録するには、関数名の前に "&" を付ける必要があります。
-* クラスメソッドをデリゲート型変数に登録する場合、関数名がそのまま利用できます。
+* To register a function to a delegate type variable, you need to prefix the function name with "&".
+* When registering a class method to a delegate type variable, you can use the method name directly.
 
-```
-// 関数を定義
+```csharp
+// Define a function
 int TestFunc(string text, bool flag) {
     // ...
 }
 
-// 関数名の前に "&" が必要
+// Prefix the function name with "&"
 PerformAction action = &TestFunc;
 ```
 
-```
-// クラスメソッドを定義
+```csharp
+// Define a class method
 class SampleClass {
     int TestMethod(string text, bool flag) {
         // ...
     }
 }
 
-// メソッド名をそのまま利用して登録できる。
+// Register using the method name directly
 SampleClass sample = new SampleClass();
 PerformAction action = sample.TestMethod;
 ```
 
-## その他の情報
+## Additional Information
 
-### デリゲートは値型
+### Delegates as Value Types
 
-デリゲートは値型であり、つまり new を呼び出さずに生成できます。また、デリゲート型変数に null は代入できません。
+Delegates are value types, therefore these can be created without calling `new`. Also, `null` cannot be assigned to a delegate type variable.
 
-また、デリゲート型変数を別の変数に代入したり、関数の引数として渡す場合、デリゲート型変数の中身が新しい変数にコピーされます。
+When a delegate type variable is assigned to another variable or passed as a function argument, the content of the delegate type variable is copied to the new variable.
 
-```
-// 初期化時に new が不要
+```csharp
+// No need to use new during initialization
 PerformAction action;
 
-// もう1つデリゲート型変数を定義し、代入してみる。ここでコピーが行われる。
+// Define another delegate type variable and assign the previous one. This will perform a copy.
 PerformAction action2nd = action;
 
-// action2nd に加えた変更は、action側には反映されない。逆も同じ。
+// Changes made to action2nd will not affect action, and vice versa.
 action2nd += &DummyFunc;
 ```
 
-### 関数を複数実行した場合の戻り値
+### Return Values When Multiple Functions Are Executed
 
-戻り値がある関数を複数登録したデリゲートを呼び出した場合、返却される戻り値は、最後に登録された関数のものになります。
+When calling a delegate that has multiple registered functions with return values, the returned value will be from the last registered function.
 
-***
+---
 
-## メソッド
+## Method
 
-(引数Tは、デリゲート型変数の型シグネチャに適合する関数を意味します。)
+(Parameter `T` refers to a function that matches the delegate type variable's signature.)
 
 ### Add(T)
 
 `void Add(T func)`
 
-このオブジェクトに、引数で指定した関数を追加登録します。
+Adds the specified function to this object.
 
-関数がすでに登録済みの場合は、何も行いません。
+If the function is already registered, no action is taken.
 
-演算子 `+=` と同等の機能です。
+This is equivalent to the `+=` operator.
 
 ### Set(T)
 
 `void Set(T func)`
 
-このオブジェクトに登録されている全ての関数をクリアし、引数で指定した関数を新たに登録します。
+Clears all functions registered to this object and registers the specified function.
 
-演算子 `=` と同等の機能です。
+This is equivalent to the `=` operator.
 
 ### Erase(T)
 
 `void Erase(T func)`
 
-引数で指定した関数がこのオブジェクトに登録されている場合、それを消去します。
+Removes the specified function from this object if it is registered.
 
-関数が存在しない場合、何も行いません。
+If the function does not exist, no action is taken.
 
-演算子 `-=` と同等の機能です。
+This is equivalent to the `-=` operator.
 
 ### Clear()
 
 `void Clear()`
 
-このオブジェクトに登録されている、全ての関数を削除します。
+Removes all functions registered to this object.
 
 ### Count()
 
 `int Count()`
 
-このオブジェクトに登録されている関数の個数を返します。
+Returns the number of functions registered to this object.
 
 ### IsEmpty()
 
 `bool IsEmpty()`
 
-このオブジェクトに登録されている関数が0個だった場合に、trueを返します。
+Returns `true` if no functions are registered to this object.
 
 ### Exist(T)
 
 `bool Exist(T func)`
 
-引数で指定した関数がこのオブジェクトに登録されている場合、trueを返します。
+Returns `true` if the specified function is registered to this object.
 
-***
+---
 
-## 演算子
+## Operators
 
-### += 演算子
+### `+=` Operator
 
-Add() と同等の機能を持つ演算子です。
+This operator has the same functionality as `Add()`.
 
-右辺に指定した関数を、オブジェクトに追加登録します。
+It adds the function specified on the right-hand side to the object.
 
-### -= 演算子
+### `-=` Operator
 
-Erase() と同等の機能を持つ演算子です。
+This operator has the same functionality as `Erase()`.
 
-右辺に指定した関数を、オブジェクトから削除します。
+It removes the function specified on the right-hand side from the object.
 
-### = 演算子
+### `=` Operator
 
-Set() と同等の機能を持つ演算子です。
+This operator has the same functionality as `Set()`.
 
-右辺に指定した関数をオブジェクトに設定し、既存の登録済み関数を全て削除します。
+It sets the function specified on the right-hand side to the object and removes all existing registered functions.

@@ -19,42 +19,14 @@ VketCloudSDKは、以下のUnity環境が必要です。
 - PC: Chrome / Firefox / Safari / Edge等のWebブラウザが使用できるもの。
 - iOS: iPhone X以降、iPhone SE（第2世代）以降
 - Android: Android 11.0以降、RAM 8GB以上（Google Pixelなら Pixel 5以降）
-
----
+- IDE: HeliScriptを編集する際、下記の理由によりVisual Studioは非推奨です。Visual Studioと同様の環境で編集を行いたい場合はVisual Studio Codeをご使用ください。
 
 !!! note warning
-    以下の項目は、SDKが自動で設定しますが、稀に設定が無効化されてしまう場合があります。
-    その場合、手動で設定しなおしてください。
+    Visual Studioを使用してUnityプロジェクト内にVketCloudSDKが作成したHeliScriptファイルを開き、編集を保存すると、エンコードがANSIに変換されてビルドが出来なくなってしまう場合があります。<br>
+    以下にUntiyから開くエディターをVisual Studio Codeに変更する方法を記載しますので、参考にしてください。
 
-    **API Compatibility Level (API互換性レベル)の変更**
-
-    1. UnityのメニューバーのEditからProject Settings...をクリックしてください。  
-
-    2. Project Settingsウインドウが表示されたら、一覧からPlayerをクリックしてください。
-
-    3. Project設定中にあるConfigurationを確認し、API Compatibility Levelの項目をプルダウンメニューから「.NET 4.x」に変更してください。
-
-    ![ApiCompatibilityLevelSetting](img/SetupSDK_External_16.jpg)
-
-    **LightMapEncodingの変更**
-
-    上記と同じくPC設定内のOther Settingsにある、Lightmap Encodingの項目をプルダウンメニューからNormal Qualityに変更してください。
-
-    ![LightMapEncoding](img/SetupSDK_External_15.jpg)
-
-    **Color Spaceの変更**
-    
-    Edit > Project SettingsよりColor SpaceをLinearに変更します。
-    ![linear](img/SetupSDK_External_14.jpg)
-
-    SDK Ver12.3以降は以下の設定も必須となりました：
-
-    **StandardShaderの設定の変更**
-
-    VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
-
-    1. Graphicsの設定画面の中で、「Tier Setting」の「Low (Tier 1)」の項目の中の「Use Defaults」のチェックを外し、「Standard Shader Quality」の項目を「Medium」 へと変更します。
-      ![StandardShader1](img/SetupSDK_External_12.jpg)
-      
-    2. 上記を「Low(Tier 1)」の下にある「Medium(Tier 2)」、「High(Tier 3)」の3つの項目とも行います。
-      ![StandardShader2](img/SetupSDK_External_13.jpg)
+!!! note "Unity指定エディターをVisual Studio Codeに変更する方法"
+    Unityのメニュー上でEdit>Preferenceから「Preference」ウィンドウを開きます。<br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_01.jpg)<br>
+    「External Tools」タブ内、「External Script Editor」から、「Visual Studio Code」を選択します。<br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_02.jpg)

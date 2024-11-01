@@ -57,7 +57,6 @@ plugins:
       lang: 
         - en
         - ja
-  - exclude-search:
       
   - mike:
       version_selector: true
@@ -95,6 +94,7 @@ plugins:
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
             # ワールド制作ガイド
             World Making Guide: ワールド制作ガイド
+            Shader Availability : シェーダー対応項目一覧
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
             Exporter: .heoファイルについて
@@ -113,6 +113,10 @@ plugins:
             File Deployment Config: ワールドに任意のファイルを保持させる
             How to convert animation from Unity asset: Unityアセットのアニメーションを変換する
             Movable Clickable Object: クリック判定のある移動オブジェクト
+            JS Upload: JS入稿
+            Enabling JS Upload Feature: JS入稿機能の有効化
+            Sample JS Upload: JS入稿のサンプル
+            Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -120,6 +124,7 @@ plugins:
             SDK does not appear after install: SDKがインストール後に立ち上がらない
             Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
             Version Update Troubleshooting: バージョンアップ後によくあるトラブル
+            Comment / Bug Reports Form : ご意見・バグ報告フォーム
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -142,6 +147,7 @@ plugins:
             Editing Multiple VKCComponents: 複数のVKCコンポーネントの一括編集
             Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
             Build Options: ビルド時のオプション
+            Hierarchy Icons: ヒエラルキーアイコン
             # 軽量化
             World Optimization: ワールドの軽量化方法
             World Optimization - Overview: ワールドの軽量化方法：概要
@@ -208,6 +214,8 @@ plugins:
             Stop Video: ビデオ停止
             # HeliScript
             HeliScript - Overview: HeliScript概要
+            HeliScript - Casting: HeliScriptキャスト
+            HeliScript - Commenting: HeliScriptコメント
             Statements and flow control: 文法と制御構文
             Declarations and definitions: 定義・宣言
             Control Statement: 制御構文
@@ -229,6 +237,7 @@ plugins:
             Item Class: Itemクラス
             Player Class: Playerクラス
             Date Class: Dateクラス
+            HSMessage Class: HSMessageクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -285,6 +294,7 @@ nav:
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
+    - Shader Availability : WorldMakingGuide/ShaderAvailability.md
     - Setting up a Skybox : WorldMakingGuide/Skybox.md 
     - How to use Colliders / Tips : WorldMakingGuide/Collider.md
     - Physics Engine: WorldMakingGuide/PhysicsEngine.md
@@ -298,12 +308,17 @@ nav:
     - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
     - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
     - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
+    - JS Upload :
+      - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
+      - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
+    - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
     - Build Error / How to troubleshoot issues: troubleshooting/BuildError.md
     - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
+    - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
@@ -318,17 +333,19 @@ nav:
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
-    - GUITools: 
-      - Overview & Setup: GUITools/Setup.md
-      - How to Use: GUITools/HowToUse.md
-      - Advanced Use: GUITools/AdvancedUse.md
+    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - ScenePreview (β): SDKTools/ScenePreview.md
+- GUITools: 
+    - Overview & Setup: GUITools/Setup.md
+    - How to Use: GUITools/HowToUse.md
+    - Advanced Use: GUITools/AdvancedUse.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple VKCComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
   - Build Options: WorldEditingTips/BuildOptions.md
+  - Hierarchy Icons: WorldEditingTips/HierarchyIcons.md
 - World Optimization: 
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
@@ -444,6 +461,8 @@ nav:
       - Stop Video: Actions/Others/StopVideo.md
 - HeliScript:
     - HeliScript - Overview: hs/hs_overview.md
+    - HeliScript - Casting: hs/hs_casting.md
+    - HeliScript - Commenting: hs/hs_comment_out.md
     - Built-in Types:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
@@ -459,6 +478,7 @@ nav:
         - Item Class: hs/hs_class_item.md
         - Player Class: hs/hs_class_player.md
         - Date Class: hs/hs_class_date.md
+        - HSMessage Class: hs/hs_class_hsmessage.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Math: hs/hs_system_function_math.md
@@ -481,7 +501,12 @@ nav:
   - JsVal: ExternalAPI/JsVal.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v14.x:
+        - v14.2: releasenote/releasenote-14.2.md
+        - v14.1: releasenote/releasenote-14.1.md
+        - v14.0: releasenote/releasenote-14.0.md
     - v13.x:
+        - v13.8: releasenote/releasenote-13.8.md
         - v13.7: releasenote/releasenote-13.7.md
         - v13.6: releasenote/releasenote-13.6.md
         - v13.5: releasenote/releasenote-13.5.md
@@ -551,6 +576,9 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v14.x:
+        - v14.2: changelog/changelog-14.2.md
+        - v14.1: changelog/changelog-14.1.md
     - v13.x:
         - v13.7: changelog/changelog-13.7.md
         - v13.4: changelog/changelog-13.4.md

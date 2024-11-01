@@ -1,4 +1,4 @@
-# World upload
+# World Upload
 
 Using the SDK, the world can be uploaded to the Vket Cloud / My Vket server for publishing.
 
@@ -12,13 +12,11 @@ Uploading is also needed for private world testing with multiple people.
 
 2. By selecting "Upload to Remote Server", the World Uploader window will open.
 
-    On this window, the World ID and related information (world name, thumbnail, world description) registered on the [Vket Cloud](https://cloud.vket.com/en/account/world){target=blank} official website will be shown as a list.
-
-    Select the world ID to upload the data.
+    On this window, the World ID and related information (world name, thumbnail, world description) registered on the [Vket Cloud](https://cloud.vket.com/en/account/world){target=_blank} official website or by [Registering a new world on SDK](#registering-a-new-world) will be shown as a list.
 
     ![WorldListForUpload](img/WorldUpload02.jpg)
 
-    Also, if the creator is subscribed to [Basic Plan](https://cloud.vket.com/en/plan){target=blank} and higher licenses, team collaboration features will be accessible. The team and world can be switched via the upper left team name display.
+    Also, if the creator is subscribed to [Basic Plan](https://cloud.vket.com/en/plan){target=_blank} and higher licenses, team collaboration features will be accessible. The team and world can be switched via the upper left team name display.
 
     ![TeamName](img/WorldUpload03.jpg)
 
@@ -27,8 +25,58 @@ Uploading is also needed for private world testing with multiple people.
 
     ![CheckTheWorld_WorldUploader](img/WorldUpload04.jpg)
 
-    On selecting "Upload", a confirmation window will appear.<br>
-    Selecting "Yes" will begin the upload process.
+### Registering a New World
+
+From SDK Ver14.1, registering a new world / World ID creation can now be done on the SDK aside from the [Vket Cloud](https://cloud.vket.com/en/account/world){target=_blank} official website.
+
+1. Click the `Add World` button on the bottom left.
+
+    ![WorldUpload11](img/WorldUpload11.jpg)
+
+2. By clicking `Add World`, a window for registering a new world will open.<br>
+    Follow the instructions to enter the required information:
+
+    - Creator Team *Switchable on [Basic Plan](https://cloud.vket.com/plan){target=_blank} and higher licenses
+    - World Name
+      - Up to 30 characters
+    - World Description
+      - Up to 500 characters
+    - World Thumbnail Image
+      - jpg / png format
+      - Recommended Size: 382px × 696 px (Aspect Ratio 16:9)
+      - File Size: 3MB or under
+
+    ![WorldUpload12](img/WorldUpload12.jpg)
+
+3. The `Advanced Settings (Optional)` tab includes additional information to be configured.
+
+    - World Detail Images
+    - Loading Images *If none, the thumbnail image will be used instead
+      - PC / Mobile Landscape
+      - Mobile Portrait
+
+    ![WorldUpload13](img/WorldUpload13.jpg)
+
+4. After adding all information, click `Create World` to submit world information.
+
+    ![WorldUpload14](img/WorldUpload14.jpg)
+
+5. If world registration is complete, a window showing completion will be shown, and the new world will be added to the world list. <br>
+  If you wish to edit the registered information, access the [Manage Worlds](https://cloud.vket.com/account/world){target=_blank} page on the official website.<br>
+  This page can be accessed by the "My Page" button located on the window's top right.
+
+    ![WorldUpload15](img/WorldUpload15.jpg)
+
+    ![WorldUpload16](img/WorldUpload16.jpg)
+
+### Uploading World Data
+
+1. Select the world ID to upload the data.
+
+    ![WorldListForUpload](img/WorldUpload02.jpg)
+
+2. On selecting "Upload", a confirmation window will appear.<br>
+   Selecting "Yes" will begin the upload process.
 
     ![WorldUpload](img/WorldUpload05.jpg)
 
@@ -38,7 +86,7 @@ Uploading is also needed for private world testing with multiple people.
 
     ![UploadSuccess](img/WorldUpload07.jpg)
 
-4. To enter the uploaded world, click `World Preview` from the [World ID management page](https://cloud.vket.com/en/account/world){target=blank}.
+4. To enter the uploaded world, click `World Preview` from the [World ID management page](https://cloud.vket.com/en/account/world){target=_blank}.
 
     ![CheckTheWorld_Web](img/WorldUpload08.jpg)
 
@@ -57,7 +105,7 @@ Uploading is also needed for private world testing with multiple people.
 
 ## Publishing the World
 
-The published world will be listed on My Vket's [World List](https://vket.com/en/play/world){target=blank}.
+The published world will be listed on My Vket's [World List](https://vket.com/en/play/world){target=_blank}.
 
 Also, if a private world URL is shared, the world can be accessed while it is not public on My Vket.<br>
 This is useful for world testing with multiple people or to create a closed-community world.<br>
@@ -66,7 +114,7 @@ When you create a new World ID, it is initially set as a private world. If you w
 ![WorldPublish](img/WorldUpload09.jpg)
 
 !!! note caution
-     To upload the world data, the world ID must be created in advance on the account management screen. If you don't see your world name in the list, please create a world ID from [here](https://cloud.vket.com/en/account/world){target=blank}.
+     To upload the world data, the world ID must be created in advance on the account management screen. If you don't see your world name in the list, please create a world ID from [here](https://cloud.vket.com/en/account/world){target=_blank}.
 
 ![CreateWorldID](img/WorldUpload10.jpg)
 

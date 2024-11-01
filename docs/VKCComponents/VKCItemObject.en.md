@@ -5,6 +5,53 @@
 
 VKC Item Object is used to instantiate a dynamic object, which is based on a pre-exported .heo file, or using a vrm, [hrm](../WorldOptimization/TextureCompression.md), or glb format model.
 
+???+ note "Available methods for this object type"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [GetWorldPos](../hs/hs_class_item.md#getworldpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [GetWorldQuaternion](../hs/hs_class_item.md#getworldquaternion)
+    - [GetWorldRotate](../hs/hs_class_item.md#getworldrotate)
+    - [GetScale](../hs/hs_class_item.md#getscale)
+    - [SetScale](../hs/hs_class_item.md#setscale)
+    - [MovePos](../hs/hs_class_item.md#movepos)
+    - [IsMoving](../hs/hs_class_item.md#ismoving)
+    - [Play](../hs/hs_class_item.md#play)
+    - [Stop](../hs/hs_class_item.md#stop)
+    - [IsPlay](../hs/hs_class_item.md#isplay)
+    - [Pause](../hs/hs_class_item.md#pause)
+    - [Restart](../hs/hs_class_item.md#restart)
+    - [SetPlayTime](../hs/hs_class_item.md#setplaytime)
+    - [GetPlayTime](../hs/hs_class_item.md#getplaytime)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [ChangeMotion](../hs/hs_class_item.md#changemotion)
+    - [LoadMotion](../hs/hs_class_item.md#loadmotion)
+    - [LoadMotion](../hs/hs_class_item.md#loadmotion)
+    - [FacialEmoteFixed](../hs/hs_class_item.md#facialemotefixed)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [GetNodeIndexByName](../hs/hs_class_item.md#getnodeindexbyname)
+    - [GetNodeNameByIndex](../hs/hs_class_item.md#getnodenamebyindex)
+    - [SetShowNode](../hs/hs_class_item.md#setshownode)
+    - [IsShowNode](../hs/hs_class_item.md#isshownode)
+    - [SetUVOffset](../hs/hs_class_item.md#setuvoffset)
+    - [PlayVideo](../hs/hs_class_item.md#playvideo)
+    - [StopVideo](../hs/hs_class_item.md#stopvideo)
+    - [IsPlayVideo](../hs/hs_class_item.md#isplayvideo)
+    - [ReplaceItem](../hs/hs_class_item.md#replacetexture)
+    - [ReplaceTexture](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## Settings
 
 ### Basic Settings
@@ -18,6 +65,21 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Circle Shadow | false |  Sets to draw a circle shadow.  |
 | Look at Camera | false |  Make the object face towards the camera at all times. |
 | Object Mode | None | Choose from None, Pose, and Motion. If you choose Pose or Motion, you will need to additionally specify an .hem file. |
+| Pickable | false | Enable the grab function. |
+
+### Pickable
+
+![VKCItemObject_8](img/VKCItemObject_8.jpg)
+
+| Label | Initial Value | Function |
+| ---- | ---- | ---- |
+| Display Name (ja) | "" | Display name in Japanese. |
+| Display Name (en) | "" | Display name in English. |
+| Enable Collision Detection | false | Set whether to enable collision detection after picking. |
+| Bone Name | "hips" | Specify the bone name to grab. |
+| Offset Position | (0, 0, 0) | Specify the offset position from the bone position when picked. |
+| Offset Rotation | (0, 0, 0) | Specify the offset rotation from the bone rotation when picked. |
+| Offset Scale | (1, 1, 1) | Specify the offset scale from the bone scale when picked. |
 
 ### Advanced Options
 
@@ -36,6 +98,9 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Alpha Animation Target | false|Here's the English translation:
 Sets whether to make objects transparent when they obstruct the camera's view in order to maintain visibility. For more details, please refer to [VKCNodeAlphaAnimation](../VKCComponents/VKCNodeAlphaAnimation.md). |
 | Item Render Priority || Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+| Show Photo Mode | true | Specifies whether it is displayed in photo mode |
+| Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
+| Force Collider Disable | false | Forcibly disables the collider |
 | Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
 | End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
 

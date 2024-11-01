@@ -25,22 +25,22 @@ VKC Node Mirror is placed with a Quad to implement a pseudo-mirror.
 Create a Quad by selecting Create > 3D Object.<br>
 As VKC Node Mirror is categorized as a Node, the Quad must be a child object of the object with [VKC Item Field](VKCItemField.md) attached.
 
-2\. Create Texture and Material
+2\. Create Texture
+
+![HEOMirror_14](img/HEOMirror_14.jpg)
 
 Create a Texture which width/height is formatted as the power of 2.<br>
-For example, a square 1024*1024 texture is used here. Note that the texture does not have to be a square.
-
-As the Texture is created, prepare a material as below:
-
-![HEOMirror_5](img/HEOMirror_5.jpg)
-
-If the intended Shader accepts textures, the material's shader does not have to be Unlit/Texture.
+For example, a square 256*256 texture is used here. Note that the texture does not have to be a square.
 
 3\. Attach VKC Node Mirror to the Quad
 
 ![HEOMirror_6](img/HEOMirror_6.jpg)
 
-Attach VKC Node Mirror to the Quad. Make sure to select the `Enable Mirror`.
+Attach VKC Node Mirror to the Quad. Make sure to select the `Enable`. Also, turn off the `Scene Preview` .
+
+4\. Attach Texture
+
+![HEOMirror_15](img/HEOMirror_15.jpg)
 
 By building world at this moment, the object will be a Mirror.
 

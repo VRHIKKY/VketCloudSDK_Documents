@@ -6,6 +6,13 @@ Using HeliScript, you can implement more complex gimmicks and behaviors compared
 You can learn about the syntax of HeliScript by reading it in order starting from [Built-in types](./hs_var.md). <br>
 As an example, we will show a basic implementation of displaying "Hello World" on the console.
 
+## About IDE
+
+The recommended IDE is Visual Studio Code. Visual Studio Code is a lightweight and high-function editor that supports HeliScript syntax. <br>
+Download Visual Studio Code from [here](https://code.visualstudio.com/){target=_blank}.
+
+Visual Studio is not recommended as an IDE. When you open and save HeliScript created with Unity VketCloudSDK in Visual Studio, it may become ANSI, and you may not be able to build.
+
 ## Example of how to use HeliScript (displaying Hello World on the console)
 
 ### 1. Add a HeliScript file to Assets Folder
@@ -145,7 +152,7 @@ An brief explanation of each concept is as follows.
 ## Player
 
 In Vket Cloud, Player refers to the avatar who operates in the world. <br>
-How the Player behaves is defined in [HEOPlayer](../VKCComponents/HEOPlayer.md).
+How the Player behaves is defined in [VKC Setting Player](../VketCloudSettings/PlayerSettings.md).
 
 For handling Player by HeliScript, please refer to [Player class](./hs_class_player.md).
 
