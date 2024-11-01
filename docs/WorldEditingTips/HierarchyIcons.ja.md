@@ -21,7 +21,7 @@ VketCloudSDK 14以降のバージョンでは、ヒエラルキービュー上�
 | ![icon](./img/HierarchyIcons_06_HEOParticle.png) | [VKC Item Particle](../VKCComponents/VKCItemParticle.md) |
 | ![icon](./img/HierarchyIcons_01_HEOSpot.png) | [VKC Item Spot](../VKCComponents/VKCItemSpot.md) |
 | ![icon](./img/HierarchyIcons_11_VKCAttributeScript.png) | [VKC Attribute Script](../VKCComponents/VKCAttributeScript.md) |
-| ![icon](./img/HierarchyIcons_12_VKCAttribute Property.png) | [VKC Attribute Property](../VKCComponents/VKCAttributeProperty.md) |
+| ![icon](./img/HierarchyIcons_12_VKCAttribute_Property.png) | [VKC Attribute Property](../VKCComponents/VKCAttributeProperty.md) |
 | ![icon](./img/HierarchyIcons_13_VKCAttributeActionTrigger.png) | [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.md) |
 | ![icon](./img/HierarchyIcons_14_VKCAttributeClickableUI.png) | [VKC Attribute Clickable UI](../VKCComponents/VKCAttributeClickableUI.md) |
 | ![icon](./img/HierarchyIcons_15_VKCNode_VideoTrigger.png) | [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) |
