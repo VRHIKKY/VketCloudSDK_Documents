@@ -98,6 +98,9 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Alpha Animation Target | false|Here's the English translation:
 Sets whether to make objects transparent when they obstruct the camera's view in order to maintain visibility. For more details, please refer to [VKCNodeAlphaAnimation](../VKCComponents/VKCNodeAlphaAnimation.md). |
 | Item Render Priority || Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+| Show Photo Mode | true | Specifies whether it is displayed in photo mode |
+| Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
+| Force Collider Disable | false | Forcibly disables the collider |
 | Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
 | End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
 

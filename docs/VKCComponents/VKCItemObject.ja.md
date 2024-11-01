@@ -97,6 +97,9 @@ VKC Item Objectは、動的なオブジェクトをシーンに生成するた�
 | Opaque Alpha Blend | false | Trueのとき、アルファブレンド描画を強制的に不透明描画パスで行います。 | 
 | Alpha Animation Target | false| カメラがオブジェクトによって遮られた際、視界確保のために透過するかを設定します。詳細は[VKCNodeAlphaAnimation](../VKCComponents/VKCNodeAlphaAnimation.md)をご参照ください。 |
 | Item Render Priority || Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
+| Show Photo Mode | false | 撮影モード中にそのitemを表示するかどうかを設定します |
+| Force Raycast Check Disable | false | Item単位でraycastの判定を強制的に無効にするかどうかを設定します |
+| Force Collider Disable | false | 強制的にコライダーを無効にします |
 | Begin Actions | | モーション再生時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
 | End Actions | | モーション終了時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
 
