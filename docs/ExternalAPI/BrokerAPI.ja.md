@@ -44,7 +44,7 @@ API名は識別のために任意の名前を付け、URLは使用したいAPI�
 
 ```c#
 delegate void fJsValCallback(JsVal);//コールバック用
-extern api.broker//ブローカーAPIの関数を呼び出すための宣言
+extern heliport.v3.api.broker//ブローカーAPIの関数を呼び出すための宣言
 {
     bool registerAgreement(string url, string spatiumCode, string worldCode, string guestUuid);
     bool connectExternalApi(async fJsValCallback, string method, string url, string spatiumCode, string worldCode, string guestUuid, JsVal data);
@@ -143,14 +143,14 @@ component BrokerAPI
         string guestUuid = "Uuid";
 
         //許可を取ったURLを登録
-        bool result = api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
+        bool result = heliport.v3.api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
         BoolLogOutput("registerAgreement: ",result);//agreementの結果をlogで確認
 
         string method = "get";//HTTPリクエストメソッド。今回はget
         JsVal data = makeJsNull();//connectExternalApiの第7引数用のJsVal。getの場合はnullでよい
 
         //APIに接続。第一引数に指定したメソッドにdataが入って呼ばれる
-        api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
+        heliport.v3.api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
     }
     string GetAPIUrl()
     {
