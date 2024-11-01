@@ -1,15 +1,15 @@
-# ヒエラルキーアイコン
+# Hierarchy Icons
 
 ![image](./img/HierarchyIcons_1.jpg)
 
-VketCloudSDK 14以降のバージョンでは、ヒエラルキービュー上にVKCコンポーネントが付いている場合アイコンが表示され、どのオブジェクトに何のコンポーネントが付いているか分かりやすくなりました。
+After VketCloudSDK 14, icons are displayed in the Hierarchy view when VKC components are attached, making it easier to identify which objects have which components.
 
-さらに、警告時には黄色く、エラー時には赤く表示されるため、どのオブジェクトがエラーを起こしてるかヒエラルキービューから判断しやすくなっております。
+Furthermore, warnings are highlighted in yellow and errors in red, allowing for quick identification of which objects are causing errors from the Hierarchy view.
 
-ヒエラルキービュー上に表示されるアイコンと、対応するVKCコンポーネントの一覧を下表に示します。<br>
-また、複数のVKCコンポーネントが付いていた場合のアイコンの表示優先度もこの表の順序に従います。
+The following table lists the icons displayed in the Hierarchy view along with their corresponding VKC components.<br>
+Additionally, the priority for icon display when multiple VKC components are attached follows the order in this table.
 
-| アイコン | VKCコンポーネント |
+| Icon | VKC Components |
 | ---- | ---- |
 | ![icon](./img/HierarchyIcons_08_HEOField.png) | [VKC Item Field](../VKCComponents/VKCItemField.md) |
 | ![icon](./img/HierarchyIcons_04_HEOObject.png) | [VKC Item Object](../VKCComponents/VKCItemObject.md) |
@@ -39,9 +39,9 @@ VketCloudSDK 14以降のバージョンでは、ヒエラルキービュー上�
 | ![icon](./img/HierarchyIcons_27_VKCNodeShadow.png) | [VKC Node Shadow](../VKCComponents/VKCNodeShadow.md) |
 | ![icon](./img/HierarchyIcons_28_VKCAttributeShowFlag.png) | [VKC Attribute Show Flag](../VKCComponents/VKCAttributeShowFlag.md) |
 
-エラー時、警告時のアイコン表示の例を以下に示します。<br>
-エラーと警告が両方ある場合は、エラーが優先され、赤く表示されます。
+Examples of icon displays for errors and warnings are shown below.<br>
+When both an error and a warning are present, the error takes precedence and is displayed in red.
 
-| 通常アイコン | エラー時アイコン | 警告時アイコン |
+| Normal Icon | Icon when it has warnings | Icon when it has errors |
 | ---- | ---- | ---- |
 | ![icon](./img/HierarchyIcons_04_HEOObject.png) | ![warning](./img/HierarchyIcons_04_HEOObject_Warning.png) | ![error](./img/HierarchyIcons_04_HEOObject_Error.png) |

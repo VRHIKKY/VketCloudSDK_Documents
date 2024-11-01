@@ -1,0 +1,11 @@
+# SDK Manual Change Log - Ver 14.2
+
+---
+
+## November 1 2024 Update
+
+## November 1 2024 - Added Pages
+
+- World Editing Tips
+    - [Hierarchy Icons
+](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldEditingTips/HierarchyIcons.html)
