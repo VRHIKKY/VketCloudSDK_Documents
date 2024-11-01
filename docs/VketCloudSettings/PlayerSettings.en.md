@@ -14,6 +14,8 @@ PlayerSettings specifies the settings for the player in the world.
 | Jump Velocity | 4.5 | Set the upward velocity for jump in world |
 | Move Speed | 7.0 | Set m/s speed for player movement in world |
 | Move Speed Up Ratio | 2.0 | Set ratio for speed change when player's dashing |
+| Enable Click to Move | false | Set the default value for click movement in the config screen. However, it will be forced to be on when opened with X-embed |
+| Despawn Height (Y) | false | Threshold Y coordinate for player to respawn forcibly. The player will respawn if it goes below this value |
 
 The spawn point defined by `World Position` and `World Rotation` will be shown as follows.
 
