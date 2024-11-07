@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.1
 
+## November 8 2024 Update
+
+## November 8 2024 - Added Pages
+
+- World Editing Tips
+    - [Displaying Gizmos in the Scene View](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/WorldEditingTips/Gizmos.html)
+
+---
+
 ## October 30 2024 Update
 
 ## October 30 2024 - Added Pages
