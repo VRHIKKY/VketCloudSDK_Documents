@@ -2,6 +2,13 @@
 
 ---
 
+## 2024年11月07日更新
+
+## 2024年11月07日 - 追加されたページ
+- 編集のためのTips
+    - [Sceneビューにおけるギズモの表示](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/WorldEditingTips/Gizmos.html)
+
+
 ## 2024年10月30日更新
 
 ## 2024年10月30日 - 追加されたページ
