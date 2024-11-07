@@ -1,13 +1,13 @@
 # SDK Manual Change Log - Ver 14.1
 
----
+## 2024年11月08日更新
 
-## 2024年11月07日更新
-
-## 2024年11月07日 - 変更されたページ
+## 2024年11月08日 - 変更されたページ
 - 編集のためのTips
     - [Vket Cloudオブジェクト追加のためのクイックメニュー](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldEditingTips/QuickMenu.html)
+        - SDK14.2系のメニュー更新
 
+---
 
 ## 2024年10月30日更新
 
