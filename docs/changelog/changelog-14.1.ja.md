@@ -2,6 +2,13 @@
 
 ---
 
+## 2024年11月07日更新
+
+## 2024年11月07日 - 変更されたページ
+- 編集のためのTips
+    - [Vket Cloudオブジェクト追加のためのクイックメニュー](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldEditingTips/QuickMenu.html)
+
+
 ## 2024年10月30日更新
 
 ## 2024年10月30日 - 追加されたページ
