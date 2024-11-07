@@ -114,3 +114,37 @@ For instructions on each setup and usage, refer to the pages below.
     Following a certain procedure, the issue causing the default AvatarFile(`Vketchan_v1.6_Mtoon_blendshape`) to be editable may be triggered.<br>
     As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
     As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.
+
+## Audio File Formats
+
+When using audio files, please follow the formats listed below.
+
+| Name | Details |
+| ---- | ---- |
+| File format | mp3 |
+| Sampling rate | 44100 Hz |
+| Bit rate | 160 kbps |
+
+!!! note caution
+    There are a few important points to note regarding BGM:
+
+    - When playing videos, the audio from the video will take priority.
+    - BGM does not support distance attenuation.
+
+## Video File Formats
+
+When using video files, please follow the formats listed below.
+
+| Name | Details |
+| ---- | ---- |
+| File format | .mp4 |
+| Resolution | 1280x720 H.264 |
+| AAC | 44.1kHz |
+| Frame rate | 29.97 or 30 |
+| Profile level | 4.1, AAC 44.1kHz, yuv420 |
+
+## VKC Item Text Plane Text
+
+When inputting text into the VKC Item Text Plane, please be aware of the following:
+
+If you input any characters other than the newline character "\n" (such as tab "\t", carriage return "\r", or backspace "\b") into the text, it will result in a build error.
