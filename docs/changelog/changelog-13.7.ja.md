@@ -1,5 +1,19 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年11月8日更新
+
+## 2024年11月8日 - 変更されたページ
+
+- ワールド制作ガイド
+    - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/UnityGuidelines.html)
+        - VKC Item Text Planeにおいて、"\n"以外の文字列を入力した場合のビルドエラーについての注意を追加しました
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCItemTextPlane.html)
+            - 正規表現の"\n"以外の文字列を入力した場合のビルドエラーについての注意を追加しました
+
+---
+
 ## 2024年11月1日更新
 
 ## 2024年11月1日 - 変更されたページ
