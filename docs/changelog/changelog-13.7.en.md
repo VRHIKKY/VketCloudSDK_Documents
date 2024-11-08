@@ -4,6 +4,13 @@
 
 ## November 8 2024 - Edited Pages
 
+- World Making Guide
+    - [Vket Cloud Specifications](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/UnityGuidelines.html)
+        - Added a note about build errors when entering a string other than "\n" in VKC Item Text Plane
+- VKC Components
+    - VKC Item
+        - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemTextPlane.html)
+            - Added a note about build errors when entering a string other than "\n" in regular expressions
 - HeliScript
     - Built-in Classes and Functions
         - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/hs/hs_class_item.html)
