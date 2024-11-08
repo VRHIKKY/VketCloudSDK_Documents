@@ -447,6 +447,7 @@ Item のロードが完了していた場合は true を、そうでない場合
 `public int GetNodeIndexByName(string nodeName)`
 
 名前でノードを検索し、該当するノードを識別するインデックスを返す。
+見つからない場合は、-1 を返す。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -457,6 +458,7 @@ Item のロードが完了していた場合は true を、そうでない場合
 `public string GetNodeNameByIndex(int nodeIndex)`
 
 インデックスでノードを指定し、そのノードの名前を返す。
+見つからない場合は、空文字列を返す。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -467,6 +469,7 @@ Item のロードが完了していた場合は true を、そうでない場合
 `public Vector3 GetNodePosByIndex(int nodeIndex)`
 
 インデックスでノードを指定し、そのノードの座標を返す。
+見つからない場合は、Vector3.zeroを返す。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)

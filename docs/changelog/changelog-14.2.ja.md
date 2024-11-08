@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年11月8日更新
+
+## 2024年11月8日 - 変更されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_item.html)
+            - GetNodeIndexByNameとGetNodeNameByIndexとGetNodePosByIndexのメソッドに、見つからなかったときに返す値を追記する
+
+---
+
 ## 2024年11月1日更新
 
 ## 2024年11月1日 - 変更されたページ
