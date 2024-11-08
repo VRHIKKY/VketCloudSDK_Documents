@@ -28,10 +28,10 @@ Icons representing the type and state of the VKCItem object will be displayed at
 ![Gizmos_8](./img/Gizmos_8.jpg)
 
 
-The icon color changes based on the state of the corresponding component:
-White: Normal state
-Yellow: Warning
-Red: Error
+The icon color changes based on the state of the corresponding component:<br>
+White: Normal state<br>
+Yellow: Warning<br>
+Red: Error<br>
 
 The number below the icon
 Displays the render priority number set in the Rendering Settings.
@@ -39,8 +39,6 @@ Displays the render priority number set in the Rendering Settings.
 
 
 | Component Name | Icon |
-|----|----|
-| Item | Image |
 |-----------------|-------------------------------------------|
 | VKCItemField    | ![VKCItemField](./img/Gizmos_ItemField.jpg) |
 | VKCItemObject   | ![VKCItemObject](./img/Gizmos_ItemObject.jpg) |
