@@ -1031,6 +1031,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#audio-file-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio File Formats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-file-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video File Formats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vkc-item-text-plane-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      VKC Item Text Plane Text
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2161,6 +2188,8 @@
       
         
       
+        
+      
     
     
     
@@ -2285,6 +2314,27 @@
   
   <span class="md-ellipsis">
     Build Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldEditingTips/Gizmos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gizmos
   </span>
   
 
@@ -10256,6 +10306,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#audio-file-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio File Formats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-file-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video File Formats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vkc-item-text-plane-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      VKC Item Text Plane Text
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10380,6 +10457,73 @@ For details, please see <a href="ShaderAvailability.html">Shader Availability</a
 As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
 As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.</p>
 </div>
+<h2 id="audio-file-formats">Audio File Formats</h2>
+<p>When using audio files, please follow the formats listed below.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File format</td>
+<td>mp3</td>
+</tr>
+<tr>
+<td>Sampling rate</td>
+<td>44100 Hz</td>
+</tr>
+<tr>
+<td>Bit rate</td>
+<td>160 kbps</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>There are a few important points to note regarding BGM:</p>
+<ul>
+<li>When playing videos, the audio from the video will take priority.</li>
+<li>BGM does not support distance attenuation.</li>
+</ul>
+</div>
+<h2 id="video-file-formats">Video File Formats</h2>
+<p>When using video files, please follow the formats listed below.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File format</td>
+<td>.mp4</td>
+</tr>
+<tr>
+<td>Resolution</td>
+<td>1280x720 H.264</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>44.1kHz</td>
+</tr>
+<tr>
+<td>Frame rate</td>
+<td>29.97 or 30</td>
+</tr>
+<tr>
+<td>Profile level</td>
+<td>4.1, AAC 44.1kHz, yuv420</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vkc-item-text-plane-text">VKC Item Text Plane Text</h2>
+<p>When inputting text into the VKC Item Text Plane, please be aware of the following:</p>
+<p>If you input any characters other than the newline character "\n" (such as tab "\t", carriage return "\r", or backspace "\b") into the text, it will result in a build error.</p>
 
 
 

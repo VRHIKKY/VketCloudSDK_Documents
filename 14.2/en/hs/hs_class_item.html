@@ -2011,6 +2011,8 @@
       
         
       
+        
+      
     
     
     
@@ -2135,6 +2137,27 @@
   
   <span class="md-ellipsis">
     Build Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldEditingTips/Gizmos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gizmos
   </span>
   
 
@@ -11622,7 +11645,8 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 </details>
 <h3 id="getnodeindexbyname">GetNodeIndexByName</h3>
 <p><code>public int GetNodeIndexByName(string nodeName)</code></p>
-<p>Finds a node by name and returns an index identifying that node.</p>
+<p>Finds a node by name and returns an index identifying that node. 
+If the node is not found, -1 will be returned.</p>
 <details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
@@ -11632,7 +11656,8 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 </details>
 <h3 id="getnodenamebyindex">GetNodeNameByIndex</h3>
 <p><code>public string GetNodeNameByIndex(int nodeIndex)</code></p>
-<p>Given a node by index, return the name of that node.</p>
+<p>Given a node by index, return the name of that node.
+If the node is not found, an empty string will be returned.</p>
 <details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
@@ -11642,7 +11667,8 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.</p>
 </details>
 <h3 id="getnodeposbyindex">GetNodePosByIndex</h3>
 <p><code>public Vector3 GetNodePosByIndex(int nodeIndex)</code></p>
-<p>Specify a node by index and return the coordinates of that node.</p>
+<p>Specify a node by index and return the coordinates of that node.
+If the node is not found, Vector3.zero will be returned.</p>
 <details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>

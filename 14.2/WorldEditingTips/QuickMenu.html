@@ -2013,6 +2013,8 @@
       
         
       
+        
+      
     
     
     
@@ -2186,6 +2188,27 @@
   
   <span class="md-ellipsis">
     ビルド時のオプション
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Gizmos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ギズモ
   </span>
   
 
@@ -10074,7 +10097,7 @@
 
 
 <h1 id="vket-cloud">Vket Cloudオブジェクト追加のためのクイックメニュー</h1>
-<p>VketCloudSDKを導入すると、Hierarchy上で右クリックした際のコンテクストメニューにVket Cloudワールドのためのオブジェクトをシーンに追加できるメニューが追加されます。</p>
+<p>VketCloudSDKを導入すると、Hierarchy上で右クリックした際のコンテクストメニューにVket Cloudワールドに関連した機能が追加できるメニューに追加されます。</p>
 <p><img alt="QuickMenu_1" src="img/QuickMenu_1.jpg" /></p>
 <h2 id="_1">作成できるオブジェクトのカテゴリと機能</h2>
 <table>
@@ -10087,22 +10110,37 @@
 </thead>
 <tbody>
 <tr>
+<td>Add essential objects for VketCloud</td>
+<td></td>
+<td>設定オブジェクト等の必須オブジェクトを生成します</td>
+</tr>
+<tr>
+<td>Bake SkinnedMesh Pose</td>
+<td></td>
+<td>選択したスキンドメッシュからボーンを抜き、現在の形の静的なメッシュに変換します</td>
+</tr>
+<tr>
+<td>Create Quad From Sprite</td>
+<td></td>
+<td>選択したSpriteをQuadに変換します</td>
+</tr>
+<tr>
 <td>3D Item</td>
 <td>Create VKC Sphere</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>をアタッチし、SphereのVKCItemをアタッチする</td>
 </tr>
 <tr>
-<td></td>
+<td>3D Item</td>
 <td>Create VKC Cube</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>をアタッチし、CubeのVKCItemをアタッチする</td>
 </tr>
 <tr>
-<td></td>
+<td>3D Item</td>
 <td>Create VKC Avatar</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>をアタッチし、Vket_Chanのvrmをアタッチする</td>
 </tr>
 <tr>
-<td></td>
+<td>3D Item</td>
 <td>Create VKC Platform</td>
 <td>アバターが立てる地面のようなPlatformを作成する(Box Colliderが入ったUnity Planeと類似）</td>
 </tr>
@@ -10112,23 +10150,23 @@
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemPlane.html">VKC Item Plane</a>をアタッチする。</td>
 </tr>
 <tr>
-<td></td>
+<td>2D Item</td>
 <td>Create VKC TextPlane</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a>をアタッチする。</td>
 </tr>
 <tr>
-<td>Create VKC Audio Player</td>
 <td></td>
+<td>Create VKC Audio Player</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a>をアタッチする。</td>
 </tr>
 <tr>
-<td>Create VKC Video Player</td>
 <td></td>
+<td>Create VKC Video Player</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCNodeVideoTrigger.html">VKC Node Video Trigger</a>をアタッチする。</td>
 </tr>
 <tr>
-<td>Create VKC Particle</td>
 <td></td>
+<td>Create VKC Particle</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemParticle.html">VKC Item Particle</a>をアタッチする。</td>
 </tr>
 <tr>
@@ -10137,27 +10175,27 @@
 <td>シーン内に Tutorials &gt; Tutorial -basic-のシーンに入っているようなskybox prefabをシーン内に追加 <img alt="QuickMenu_2" src="img/QuickMenu_2.jpg" /></td>
 </tr>
 <tr>
-<td></td>
+<td>Environment</td>
 <td>Create Background texture</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemBackgroundTexture.html">VKC Item Background Texture</a>をアタッチする。</td>
 </tr>
 <tr>
-<td></td>
+<td>Environment</td>
 <td>Create VKC Camera</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a>をアタッチする。</td>
 </tr>
 <tr>
-<td>Gimmics</td>
+<td>Gimmicks</td>
 <td>Create VKC ActionTrigger</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCAttributeActionTrigger.html">VKC Attribute Action Trigger</a>をアタッチする。</td>
 </tr>
 <tr>
-<td></td>
+<td>Gimmicks</td>
 <td>Create VKC Area Collider</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a>をアタッチする。</td>
 </tr>
 <tr>
-<td></td>
+<td>Gimmicks</td>
 <td>Create VKC Spot</td>
 <td>シーン内にGameObjectを作成し、<a href="../VKCComponents/VKCItemSpot.html">VKC Item Spot</a>をアタッチする。</td>
 </tr>

@@ -2013,6 +2013,8 @@
       
         
       
+        
+      
     
     
     
@@ -2094,9 +2096,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#categories-of-objects-and-functions" class="md-nav__link">
+  <a href="#categories-and-functions-of-objects-that-can-be-created" class="md-nav__link">
     <span class="md-ellipsis">
-      Categories of objects and functions
+      Categories and Functions of Objects That Can Be Created
     </span>
   </a>
   
@@ -2186,6 +2188,27 @@
   
   <span class="md-ellipsis">
     Build Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Gizmos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gizmos
   </span>
   
 
@@ -10050,9 +10073,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#categories-of-objects-and-functions" class="md-nav__link">
+  <a href="#categories-and-functions-of-objects-that-can-be-created" class="md-nav__link">
     <span class="md-ellipsis">
-      Categories of objects and functions
+      Categories and Functions of Objects That Can Be Created
     </span>
   </a>
   
@@ -10073,93 +10096,108 @@
                   
 
 
-<h1 id="quick-menu-for-adding-vket-cloud-objects">Quick Menu for adding Vket Cloud objects</h1>
-<p>On installing VketCloudSDK, a quick menu for adding Vket Cloud world objects to the scene will be added on the Hierarchy's context (i.e. right-click) menu.</p>
+<h1 id="quick-menu-for-adding-vket-cloud-objects">Quick Menu for Adding Vket Cloud Objects</h1>
+<p>When you install the VketCloudSDK, the context menu that appears when you right-click in the Hierarchy Window will have additional functions related to the Vket Cloud world added to it.</p>
 <p><img alt="QuickMenu_1" src="../../WorldEditingTips/img/QuickMenu_1.jpg" /></p>
-<h2 id="categories-of-objects-and-functions">Categories of objects and functions</h2>
+<h2 id="categories-and-functions-of-objects-that-can-be-created">Categories and Functions of Objects That Can Be Created</h2>
 <table>
 <thead>
 <tr>
-<th>Category</th>
-<th>Minor Category</th>
+<th>Main Category</th>
+<th>Subcategory</th>
 <th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Add essential objects for VketCloud</td>
+<td></td>
+<td>Generates necessary objects such as settings</td>
+</tr>
+<tr>
+<td>Bake SkinnedMesh Pose</td>
+<td></td>
+<td>Converts the selected skinned mesh into a static mesh by extracting the bones and preserving the current shape</td>
+</tr>
+<tr>
+<td>Create Quad From Sprite</td>
+<td></td>
+<td>Converts the selected Sprite into a Quad</td>
+</tr>
+<tr>
 <td>3D Item</td>
 <td>Create VKC Sphere</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a> component attached which has a Sphere VKCItem setup.</td>
+<td>Creates a GameObject in the scene, attaches a <a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>, and adds a Sphere VKCItem</td>
 </tr>
 <tr>
-<td></td>
+<td>3D Item</td>
 <td>Create VKC Cube</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a> component attached which has a Cube VKCItem setup.</td>
+<td>Creates a GameObject in the scene, attaches a <a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>, and adds a Cube VKCItem</td>
 </tr>
 <tr>
-<td></td>
+<td>3D Item</td>
 <td>Create VKC Avatar</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a> component attached which has a Vket_Chan vrm setup.</td>
+<td>Creates a GameObject in the scene, attaches a <a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>, and adds a Vket_Chan vrm</td>
 </tr>
 <tr>
-<td></td>
+<td>3D Item</td>
 <td>Create VKC Platform</td>
-<td>Creates a Platform which allows the player to stand on (Similar to a Unity Plane with Box Collider attached)</td>
+<td>Creates a Platform-like object (similar to a Unity Plane with a Box Collider) that avatars can stand on</td>
 </tr>
 <tr>
 <td>2D Item</td>
 <td>Create VKC Plane</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemPlane.html">VKC Item Plane</a> attached.</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCItemPlane.html">VKC Item Plane</a></td>
 </tr>
 <tr>
-<td></td>
+<td>2D Item</td>
 <td>Create VKC TextPlane</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a> attached.</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a></td>
 </tr>
 <tr>
+<td></td>
 <td>Create VKC Audio Player</td>
-<td></td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a> attached.</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCItemAudio.html">VKC Item Audio</a></td>
 </tr>
 <tr>
+<td></td>
 <td>Create VKC Video Player</td>
-<td></td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCNodeVideoTrigger.html">VKC Node Video Trigger</a> attached.</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCNodeVideoTrigger.html">VKC Node Video Trigger</a></td>
 </tr>
 <tr>
-<td>Create VKC Particle</td>
 <td></td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemParticle.html">VKC Item Particle</a> attached.</td>
+<td>Create VKC Particle</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCItemParticle.html">VKC Item Particle</a></td>
 </tr>
 <tr>
 <td>Environment</td>
-<td>Create Sky box</td>
-<td>Creates a skybox prefab in the scene, which is alike the prefab in the Tutorials &gt; Tutorial -basic- scene. <img alt="QuickMenu_2" src="../../WorldEditingTips/img/QuickMenu_2.jpg" /></td>
+<td>Create Skybox</td>
+<td>Adds a skybox prefab like the one in Tutorials &gt; Tutorial -basic- to the scene</td>
 </tr>
 <tr>
-<td></td>
+<td>Environment</td>
 <td>Create Background texture</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemBackgroundTexture.html">VKC Item Background Texture</a> attached.</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCItemBackgroundTexture.html">VKC Item Background Texture</a></td>
 </tr>
 <tr>
-<td></td>
+<td>Environment</td>
 <td>Create VKC Camera</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> attached.</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a></td>
 </tr>
 <tr>
-<td>Gimmics</td>
-<td>Create VKC Action Trigger</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCAttributeActionTrigger.html">VKC Attribute Action Trigger</a> attached.</td>
+<td>Gimmicks</td>
+<td>Create VKC ActionTrigger</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCAttributeActionTrigger.html">VKC Attribute Action Trigger</a></td>
 </tr>
 <tr>
-<td></td>
-<td>Create VKC AreaCollider</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a> attached.</td>
+<td>Gimmicks</td>
+<td>Create VKC Area Collider</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></td>
 </tr>
 <tr>
-<td></td>
+<td>Gimmicks</td>
 <td>Create VKC Spot</td>
-<td>Creates a new GameObject in the scene, with <a href="../VKCComponents/VKCItemSpot.html">VKC Item Spot</a> attached.</td>
+<td>Creates a GameObject in the scene and attaches a <a href="../VKCComponents/VKCItemSpot.html">VKC Item Spot</a></td>
 </tr>
 </tbody>
 </table>

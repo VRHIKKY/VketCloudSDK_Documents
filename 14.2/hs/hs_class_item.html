@@ -2011,6 +2011,8 @@
       
         
       
+        
+      
     
     
     
@@ -2135,6 +2137,27 @@
   
   <span class="md-ellipsis">
     ビルド時のオプション
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldEditingTips/Gizmos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ギズモ
   </span>
   
 
@@ -11623,7 +11646,8 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 </details>
 <h3 id="getnodeindexbyname">GetNodeIndexByName</h3>
 <p><code>public int GetNodeIndexByName(string nodeName)</code></p>
-<p>名前でノードを検索し、該当するノードを識別するインデックスを返す。</p>
+<p>名前でノードを検索し、該当するノードを識別するインデックスを返す。
+見つからない場合は、-1 を返す。</p>
 <details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
@@ -11633,7 +11657,8 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 </details>
 <h3 id="getnodenamebyindex">GetNodeNameByIndex</h3>
 <p><code>public string GetNodeNameByIndex(int nodeIndex)</code></p>
-<p>インデックスでノードを指定し、そのノードの名前を返す。</p>
+<p>インデックスでノードを指定し、そのノードの名前を返す。
+見つからない場合は、空文字列を返す。</p>
 <details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
@@ -11643,7 +11668,8 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 </details>
 <h3 id="getnodeposbyindex">GetNodePosByIndex</h3>
 <p><code>public Vector3 GetNodePosByIndex(int nodeIndex)</code></p>
-<p>インデックスでノードを指定し、そのノードの座標を返す。</p>
+<p>インデックスでノードを指定し、そのノードの座標を返す。
+見つからない場合は、Vector3.zeroを返す。</p>
 <details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
