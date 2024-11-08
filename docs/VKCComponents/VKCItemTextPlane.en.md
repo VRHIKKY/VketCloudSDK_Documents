@@ -45,6 +45,9 @@ For example, by Build & Running the world the text will be displayed as below:
 | Look at Camera | false |  Make the text face towards the camera at all times |
 | Alpha Blending | true | Lets you use cutout/transparency |
 
+!!! note caution
+    In the Text property, if you want to insert a line break, specify "\n" in the string.<br>
+    If you input any other regular expressions (e.g. tab "\t", line break "\r", backspace "\b"), a build error will occur.
 
 ### Advanced
 

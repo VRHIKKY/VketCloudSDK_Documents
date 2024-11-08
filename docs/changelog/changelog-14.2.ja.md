@@ -4,6 +4,13 @@
 
 ## 2024年11月8日 - 変更されたページ
 
+- ワールド制作ガイド
+    - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/UnityGuidelines.html)
+        - VKC Item Text Planeにおいて、"\n"以外の文字列を入力した場合のビルドエラーについての注意を追加しました
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCItemTextPlane.html)
+            - 正規表現の"\n"以外の文字列を入力した場合のビルドエラーについての注意を追加しました
 - HeliScript
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_item.html)
