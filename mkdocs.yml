@@ -147,6 +147,7 @@ plugins:
             Editing Multiple VKCComponents: 複数のVKCコンポーネントの一括編集
             Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
             Build Options: ビルド時のオプション
+            Hierarchy Icons: ヒエラルキーアイコン
             # 軽量化
             World Optimization: ワールドの軽量化方法
             World Optimization - Overview: ワールドの軽量化方法：概要
@@ -344,6 +345,7 @@ nav:
   - Editing Multiple VKCComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
   - Build Options: WorldEditingTips/BuildOptions.md
+  - Hierarchy Icons: WorldEditingTips/HierarchyIcons.md
 - World Optimization: 
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
@@ -499,6 +501,10 @@ nav:
   - JsVal: ExternalAPI/JsVal.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v14.x:
+        - v14.2: releasenote/releasenote-14.2.md
+        - v14.1: releasenote/releasenote-14.1.md
+        - v14.0: releasenote/releasenote-14.0.md
     - v13.x:
         - v13.8: releasenote/releasenote-13.8.md
         - v13.7: releasenote/releasenote-13.7.md
@@ -570,6 +576,9 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v14.x:
+        - v14.2: changelog/changelog-14.2.md
+        - v14.1: changelog/changelog-14.1.md
     - v13.x:
         - v13.7: changelog/changelog-13.7.md
         - v13.4: changelog/changelog-13.4.md

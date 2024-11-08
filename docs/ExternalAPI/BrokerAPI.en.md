@@ -44,7 +44,7 @@ This script must be attached to the World object using [VKC Attribute Script](..
 
 ```c#
 delegate void fJsValCallback(JsVal); //Method for callback
-extern api.broker //declaration to call a Broker API method
+extern heliport.v3.api.broker //declaration to call a Broker API method
 {
     bool registerAgreement(string url, string spatiumCode, string worldCode, string guestUuid);
     bool connectExternalApi(async fJsValCallback, string method, string url, string spatiumCode, string worldCode, string guestUuid, JsVal data);
@@ -143,14 +143,14 @@ component BrokerAPI
         string guestUuid = "Uuid";
 
         //Register the allowlisted URL
-        bool result = api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
+        bool result = heliport.v3.api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
         BoolLogOutput("registerAgreement: ",result);// see the result of agreement procedure in log
 
         string method = "get";//HTTP request method. GET is used for this method.
         JsVal data = makeJsNull();//JsVal for 7th argument in connectExternalApi. Null value is allowed for GET
 
         //Connect to API. Returned data will be entered to the method designated in 1st argument
-        api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
+        heliport.v3.api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
     }
     string GetAPIUrl()
     {
