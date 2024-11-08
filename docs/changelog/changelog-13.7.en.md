@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.7
 
+## November 8 2024 Update
+
+## November 8 2024 - Edited Pages
+
+- HeliScript
+    - Built-in Classes and Functions
+        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/hs/hs_class_item.html)
+            - Added the value to return when not found in the methods GetNodeIndexByName, GetNodeNameByIndex, and GetNodePosByIndex
+
+---
+
 ## November 1 2024 Update
 
 ## November 1 2024 - Edited Pages
