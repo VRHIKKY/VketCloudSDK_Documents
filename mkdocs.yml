@@ -116,6 +116,7 @@ plugins:
             JS Upload: JS入稿
             Enabling JS Upload Feature: JS入稿機能の有効化
             Sample JS Upload: JS入稿のサンプル
+            Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -147,6 +148,7 @@ plugins:
             Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
             Build Options: ビルド時のオプション
             Gizmos: ギズモ
+            Hierarchy Icons: ヒエラルキーアイコン
             # 軽量化
             World Optimization: ワールドの軽量化方法
             World Optimization - Overview: ワールドの軽量化方法：概要
@@ -213,6 +215,8 @@ plugins:
             Stop Video: ビデオ停止
             # HeliScript
             HeliScript - Overview: HeliScript概要
+            HeliScript - Casting: HeliScriptキャスト
+            HeliScript - Commenting: HeliScriptコメント
             Statements and flow control: 文法と制御構文
             Declarations and definitions: 定義・宣言
             Control Statement: 制御構文
@@ -308,6 +312,7 @@ nav:
     - JS Upload :
       - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
       - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
+    - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -330,11 +335,11 @@ nav:
     - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
-    - GUITools: 
-      - Overview & Setup: GUITools/Setup.md
-      - How to Use: GUITools/HowToUse.md
-      - Advanced Use: GUITools/AdvancedUse.md
     - ScenePreview (β): SDKTools/ScenePreview.md
+- GUITools: 
+    - Overview & Setup: GUITools/Setup.md
+    - How to Use: GUITools/HowToUse.md
+    - Advanced Use: GUITools/AdvancedUse.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
@@ -342,6 +347,7 @@ nav:
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
   - Build Options: WorldEditingTips/BuildOptions.md
   - Gizmos: WorldEditingTips/Gizmos.md
+  - Hierarchy Icons: WorldEditingTips/HierarchyIcons.md
 - World Optimization: 
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
@@ -457,6 +463,8 @@ nav:
       - Stop Video: Actions/Others/StopVideo.md
 - HeliScript:
     - HeliScript - Overview: hs/hs_overview.md
+    - HeliScript - Casting: hs/hs_casting.md
+    - HeliScript - Commenting: hs/hs_comment_out.md
     - Built-in Types:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
@@ -495,6 +503,10 @@ nav:
   - JsVal: ExternalAPI/JsVal.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v14.x:
+        - v14.2: releasenote/releasenote-14.2.md
+        - v14.1: releasenote/releasenote-14.1.md
+        - v14.0: releasenote/releasenote-14.0.md
     - v13.x:
         - v13.8: releasenote/releasenote-13.8.md
         - v13.7: releasenote/releasenote-13.7.md
@@ -566,9 +578,14 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v14.x:
+        - v14.2: changelog/changelog-14.2.md
+        - v14.1: changelog/changelog-14.1.md
     - v13.x:
         - v13.7: changelog/changelog-13.7.md
         - v13.4: changelog/changelog-13.4.md
+        - v13.1: changelog/changelog-13.1.md
+        - v13.0: changelog/changelog-13.0.md
     - v12.x:
         - v12.3: changelog/changelog-12.3.md
         - v12.1: changelog/changelog-12.1.md

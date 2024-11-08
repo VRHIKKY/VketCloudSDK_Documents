@@ -65,6 +65,21 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Circle Shadow | false |  Sets to draw a circle shadow.  |
 | Look at Camera | false |  Make the object face towards the camera at all times. |
 | Object Mode | None | Choose from None, Pose, and Motion. If you choose Pose or Motion, you will need to additionally specify an .hem file. |
+| Pickable | false | Enable the grab function. |
+
+### Pickable
+
+![VKCItemObject_8](img/VKCItemObject_8.jpg)
+
+| Label | Initial Value | Function |
+| ---- | ---- | ---- |
+| Display Name (ja) | "" | Display name in Japanese. |
+| Display Name (en) | "" | Display name in English. |
+| Enable Collision Detection | false | Set whether to enable collision detection after picking. |
+| Bone Name | "hips" | Specify the bone name to grab. |
+| Offset Position | (0, 0, 0) | Specify the offset position from the bone position when picked. |
+| Offset Rotation | (0, 0, 0) | Specify the offset rotation from the bone rotation when picked. |
+| Offset Scale | (1, 1, 1) | Specify the offset scale from the bone scale when picked. |
 
 ### Advanced Options
 
@@ -83,6 +98,9 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Alpha Animation Target | false|Here's the English translation:
 Sets whether to make objects transparent when they obstruct the camera's view in order to maintain visibility. For more details, please refer to [VKCNodeAlphaAnimation](../VKCComponents/VKCNodeAlphaAnimation.md). |
 | Item Render Priority || Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+| Show Photo Mode | true | Specifies whether it is displayed in photo mode |
+| Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
+| Force Collider Disable | false | Forcibly disables the collider |
 | Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
 | End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
 

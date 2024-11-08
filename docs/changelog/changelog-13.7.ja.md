@@ -1,5 +1,37 @@
 # SDK Manual Change Log - Ver 13.7
 
+## 2024年10月25日更新
+
+## 2024年10月25日 - 追加されたページ
+
+- HeliScript
+    - [HeliScriptキャスト](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_casting.html)
+    - [HeliScriptコメント](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_comment_out.html)
+
+---
+
+## 2024年10月11日更新
+
+## 2024年10月11日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [アセットストアからアバターをセットアップする](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/ImportAssetStore.html)
+
+## 2024年10月11日 - 変更されたページ
+
+- VKCコンポーネント
+
+    - VKC Node
+        - [VKC Node Mirror](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/VKCComponents/VKCNodeMirror.html)
+            - 画像および記載を更新
+    - VKC Attribute
+        - [VKC Attribute Click Guide](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeClickGuide.html)
+            - 画像を更新
+        - [VKC Attribute Script](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeScript.html)
+            - 画像を更新
+
+---
+
 ## 2024年10月4日更新
 
 ## 2024年10月4日 - 変更されたページ
