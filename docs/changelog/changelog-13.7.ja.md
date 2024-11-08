@@ -11,6 +11,10 @@
     - VKC Item
         - [VKC Item Text Plane](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCItemTextPlane.html)
             - 正規表現の"\n"以外の文字列を入力した場合のビルドエラーについての注意を追加しました
+- HeliScript
+    - 組み込みクラス・関数
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/hs/hs_class_item.html)
+            - GetNodeIndexByNameとGetNodeNameByIndexとGetNodePosByIndexのメソッドに、見つからなかったときに返す値を追記する
 
 ---
 
