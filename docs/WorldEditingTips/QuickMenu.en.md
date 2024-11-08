@@ -23,6 +23,6 @@ When you install the VketCloudSDK, the context menu that appears when you right-
 | Environment | Create Skybox | Adds a skybox prefab like the one in Tutorials > Tutorial -basic- to the scene | ![QuickMenu_2](img/QuickMenu_2.jpg) |
 | Environment | Create Background texture | Creates a GameObject in the scene and attaches a [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md) |
 | Environment | Create VKC Camera | Creates a GameObject in the scene and attaches a [VKC Item Camera](../VKCComponents/VKCItemCamera.md) |
-| Gimmics | Create VKC ActionTrigger | Creates a GameObject in the scene and attaches a [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.md) |
-| Gimmics | Create VKC Area Collider | Creates a GameObject in the scene and attaches a [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) |
-| Gimmics | Create VKC Spot | Creates a GameObject in the scene and attaches a [VKC Item Spot](../VKCComponents/VKCItemSpot.md) |
+| Gimmicks | Create VKC ActionTrigger | Creates a GameObject in the scene and attaches a [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.md) |
+| Gimmicks | Create VKC Area Collider | Creates a GameObject in the scene and attaches a [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) |
+| Gimmicks | Create VKC Spot | Creates a GameObject in the scene and attaches a [VKC Item Spot](../VKCComponents/VKCItemSpot.md) |

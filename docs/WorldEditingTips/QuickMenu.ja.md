@@ -23,6 +23,6 @@ VketCloudSDKを導入すると、Hierarchy上で右クリックした際のコ�
 | Environment | Create Skybox | シーン内に Tutorials > Tutorial -basic-のシーンに入っているようなskybox prefabをシーン内に追加 ![QuickMenu_2](img/QuickMenu_2.jpg) |
 | Environment |Create Background texture | シーン内にGameObjectを作成し、[VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)をアタッチする。 |
 | Environment | Create VKC Camera | シーン内にGameObjectを作成し、[VKC Item Camera](../VKCComponents/VKCItemCamera.md)をアタッチする。 |
-| Gimmics | Create VKC ActionTrigger | シーン内にGameObjectを作成し、[VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.md)をアタッチする。 |
-| Gimmics | Create VKC Area Collider | シーン内にGameObjectを作成し、[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)をアタッチする。 |
-| Gimmics | Create VKC Spot | シーン内にGameObjectを作成し、[VKC Item Spot](../VKCComponents/VKCItemSpot.md)をアタッチする。 |
+| Gimmicks | Create VKC ActionTrigger | シーン内にGameObjectを作成し、[VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.md)をアタッチする。 |
+| Gimmicks | Create VKC Area Collider | シーン内にGameObjectを作成し、[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)をアタッチする。 |
+| Gimmicks | Create VKC Spot | シーン内にGameObjectを作成し、[VKC Item Spot](../VKCComponents/VKCItemSpot.md)をアタッチする。 |
