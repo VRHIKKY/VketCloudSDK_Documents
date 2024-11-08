@@ -147,6 +147,7 @@ plugins:
             Editing Multiple VKCComponents: 複数のVKCコンポーネントの一括編集
             Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
             Build Options: ビルド時のオプション
+            Gizmos: ギズモ
             Hierarchy Icons: ヒエラルキーアイコン
             # 軽量化
             World Optimization: ワールドの軽量化方法
@@ -345,6 +346,7 @@ nav:
   - Editing Multiple VKCComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
   - Build Options: WorldEditingTips/BuildOptions.md
+  - Gizmos: WorldEditingTips/Gizmos.md
   - Hierarchy Icons: WorldEditingTips/HierarchyIcons.md
 - World Optimization: 
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md

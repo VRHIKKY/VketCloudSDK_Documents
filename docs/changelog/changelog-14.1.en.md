@@ -2,6 +2,11 @@
 
 ## November 8 2024 Update
 
+## November 8 2024 - Added Pages
+
+- World Editing Tips
+    - [Displaying Gizmos in the Scene View](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/en/WorldEditingTips/Gizmos.html)
+
 ## November 8 2024 - Edited Pages
 - Editing Tips
     - [Quick Menu for Adding Vket Cloud Objects](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldEditingTips/QuickMenu.html)

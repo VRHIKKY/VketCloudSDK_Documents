@@ -1,6 +1,12 @@
 # SDK Manual Change Log - Ver 14.1
 
-## 2024年11月08日更新
+
+## 2024年11月8日更新
+
+## 2024年11月8日 - 追加されたページ
+
+- 編集のためのTips
+    - [Sceneビューにおけるギズモの表示](https://vrhikky.github.io/VketCloudSDK_Documents/14.1/WorldEditingTips/Gizmos.html)
 
 ## 2024年11月08日 - 変更されたページ
 - 編集のためのTips
