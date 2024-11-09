@@ -445,7 +445,8 @@ Returns true if the Item has finished loading, false otherwise.
 
 `public int GetNodeIndexByName(string nodeName)`
 
-Finds a node by name and returns an index identifying that node.
+Finds a node by name and returns an index identifying that node. 
+If the node is not found, -1 will be returned.
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -456,6 +457,7 @@ Finds a node by name and returns an index identifying that node.
 `public string GetNodeNameByIndex(int nodeIndex)`
 
 Given a node by index, return the name of that node.
+If the node is not found, an empty string will be returned.
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -466,6 +468,7 @@ Given a node by index, return the name of that node.
 `public Vector3 GetNodePosByIndex(int nodeIndex)`
 
 Specify a node by index and return the coordinates of that node.
+If the node is not found, Vector3.zero will be returned.
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
