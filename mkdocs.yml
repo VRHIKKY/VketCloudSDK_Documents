@@ -504,6 +504,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v14.x:
+        - v14.3: releasenote/releasenote-14.3.md
         - v14.2: releasenote/releasenote-14.2.md
         - v14.1: releasenote/releasenote-14.1.md
         - v14.0: releasenote/releasenote-14.0.md
@@ -579,7 +580,6 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v14.x:
-        - v14.3: changelog/changelog-14.3.md
         - v14.2: changelog/changelog-14.2.md
         - v14.1: changelog/changelog-14.1.md
     - v13.x:
