@@ -11,7 +11,7 @@
 * Made the text chat preview background non-clickable
 * Set the main canvas HUD's Z-value to negative to ensure it's always displayed at the back
 * Added Show flag checking for Field-type items as well
-* Changed the error message displayed when PI key is invalid
+* Changed the error message displayed when API key is invalid
 
 ### HeliScript
 * Added TimeSpan class
