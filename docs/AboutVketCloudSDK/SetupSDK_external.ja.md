@@ -166,6 +166,9 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 ![SetupSDK_External](img/SetupSDK_External_22.jpg)
 
+!!! warning "SDKインストール後、error CS0234: 'EditorCoroutines'"
+    Unityの不具合でSDKが依存しているEditorCoroutinesがインストール出来ていないケースがあります。その場合はお手数ですがEditorCoroutinesを単体でインストールをお願いします。Package ManagerでUnity Registryを選択し検索ボックスでEditorCoroutinesと入力してください。出てきたPackageをInstallすれば解決します。![SetupSDK_External](img/EditorCoroutines.jpg)
+
 ## 任意のバージョンの導入・既存バージョンSDKのアップデート
 
 既にSDKを導入しているプロジェクトについては、SDKバージョンマネージャーを使用してバージョンの切り替え・アップデートが可能です。<br>

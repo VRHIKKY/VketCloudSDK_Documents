@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年11月22日更新
+
+## 2024年11月22日 - 変更されたページ
+
+- VketCloudSDKについて
+    - [SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/AboutVketCloudSDK/SetupSDK_external.html)
+        - EditorCoroutineのPackageがInstallされない問題の対処法を追加
+
 ## 2024年11月8日更新
 
 ## 2024年11月8日 - 変更されたページ
