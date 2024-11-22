@@ -45,7 +45,7 @@ extra:
   version:
     provider: mike
     default: latest
-  homepage: https://www.hikky.co.jp/vketcloud
+  homepage: https://cloud.vket.com/creator
   analytics: 
     provider: google
     property: G-R753QL60GW
@@ -125,6 +125,9 @@ plugins:
             Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
             Version Update Troubleshooting: バージョンアップ後によくあるトラブル
             Comment / Bug Reports Form : ご意見・バグ報告フォーム
+            # FAQ
+            FAQ : FAQ
+            Solution to Profile Image Error When Creating an Account on Old MyVket : 旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -320,6 +323,8 @@ nav:
     - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
     - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
+- FAQ:
+    - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md

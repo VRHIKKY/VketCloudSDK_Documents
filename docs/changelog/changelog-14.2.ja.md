@@ -2,8 +2,20 @@
 
 ## 2024年11月22日更新
 
+## 2024年11月22日 - 追加されたページ
+
+- FAQ
+    - [旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/ProfileImage.html)
+
 ## 2024年11月22日 - 変更されたページ
 
+- VketCloudSDKについて
+    - [SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/AboutVketCloudSDK/SetupSDK_external.html)
+        - EditorCoroutineのPackageがInstallされない問題の対処法を追加
+- VKCコンポーネント
+    - VKC Node
+        - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCNodeCollider.html)
+            - コライダータイプ設定についての注意を追加しました
 - HeliScript
     - 組み込み関数
         - [システム](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function.html)

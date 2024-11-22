@@ -2,13 +2,25 @@
 
 ## November 22 2024 Update
 
+## November 22 2024 -  Added Page
+
+- FAQ
+    - [Solution to Profile Image Error When Creating an Account on Old MyVket](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/ProfileImage.html)
+
 ## November 22 2024 - Edited Pages
 
+- About VketCloudSDK
+    - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/AboutVketCloudSDK/SetupSDK_external.html)
+        - Add a solution for the issue where the EditorCoroutine package cannot be installed.
+- VKC Components
+    - VKC Node
+        - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeCollider.html)
+            - Added a caution note about the collider type setting.
 - HeliScript
     - Built-in Functions
         - [System](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function.html)
             - hsWebReload関数の説明を追加
-            
+
 ---
 
 ## November 8 2024 Update
