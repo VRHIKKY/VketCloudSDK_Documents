@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 13.7
 
+## November 22 2024 Update
+
+## November 22 2024 - Edited Pages
+
+- VKC Components
+    - VKC Node
+        - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeCollider.html)
+            - Added a caution note about the collider type setting.
+
+---
+
 ## November 8 2024 Update
 
 ## November 8 2024 - Edited Pages

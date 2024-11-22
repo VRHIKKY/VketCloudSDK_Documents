@@ -44,6 +44,9 @@ VKC Node Collider is a component to set what kind of collision detection a colli
 | `Avatar Only` | Collision detection is enabled only for avatars. |
 | `Self Player Only` | Collision detection is enabled only for the player themselves. |
 
+!!! note caution
+    The collider target setting is only effective when the collider type is `Collider`.
+
 ## Grounding Detection
 
 | Label | Function |
