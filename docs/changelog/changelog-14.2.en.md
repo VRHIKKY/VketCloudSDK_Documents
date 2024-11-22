@@ -6,6 +6,7 @@
 
 - FAQ
     - [Solution to Profile Image Error When Creating an Account on Old MyVket](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/ProfileImage.html)
+    - [Solution to Build Error when a Mesh Object without UV2 is attached to Mesh](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/UV2MeshError.html)
 
 ---
 
