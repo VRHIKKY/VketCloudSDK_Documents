@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## November 22 2024 Update
+
+## November 22 2024 - Edited Pages
+
+- About VketCloudSDK
+    - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/AboutVketCloudSDK/SetupSDK_external.html)
+        - Add a solution for the issue where the EditorCoroutine package cannot be installed.
+
 ## November 8 2024 Update
 
 ## November 8 2024 - Edited Pages
