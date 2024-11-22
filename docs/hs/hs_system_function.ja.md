@@ -137,11 +137,6 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 
 urlを開く。
 
-### hsWebReload
-`void hsWebReload()`
-
-Webページをリロードします。
-
 ***
 
 ## 言語
