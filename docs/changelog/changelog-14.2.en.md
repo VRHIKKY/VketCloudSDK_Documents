@@ -7,6 +7,12 @@
 - About VketCloudSDK
     - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/AboutVketCloudSDK/SetupSDK_external.html)
         - Add a solution for the issue where the EditorCoroutine package cannot be installed.
+- VKC Components
+    - VKC Node
+        - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeCollider.html)
+            - Added a caution note about the collider type setting.
+
+---
 
 ## November 8 2024 Update
 
