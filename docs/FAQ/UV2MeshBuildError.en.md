@@ -19,20 +19,20 @@ Since the error was unfamiliar, I compared the settings of the mesh object with 
 
 | Object that built successfully | Object that caused the error |
 | ---- | ---- |
-| ![Object that built successfully](./img/UV2MeshBuildError_2.jpg) | ![Object that caused the error](img/UV2MeshBuildError_3.jpg) |
+| ![Object that built successfully](img/UV2MeshBuildError_2.jpg) | ![Object that caused the error](img/UV2MeshBuildError_3.jpg) |
 
 Upon comparison, I noticed the absence of UV2.
-The cause of the error was attempting to use a MeshRenderer without UV2.
+The cause of the error was attempting to use a Mesh Renderer without UV2.
 
 ## Conclusion
-Attempting to handle a mesh without UV2 using a MeshRenderer results in a build error.
+Attempting to handle a mesh without UV2 using a Mesh Renderer results in a build error.
 
 Request the modeling team to recreate the mesh to include UV2,
-use a SkinnedMeshRenderer,
+use a Skinned Mesh Renderer,
 or apply the texture to another object.
 
 ## Additional Insights
-Even meshes without UV2 can pass the build and be reflected in VketCloud by using a SkinnedMeshRenderer.
+Even meshes without UV2 can pass the build and be reflected in VketCloud by using a Skinned Mesh Renderer.
 
 !!! info
-    Objects using SkinnedMeshRenderer cannot be animated with hem animation. Therefore, if you want to create objects that move with animation, address this by recreating the mesh.
+    Objects using Skinned Mesh Renderer cannot be animated with hem animation. Therefore, if you want to create objects that move with animation, address this by recreating the mesh.

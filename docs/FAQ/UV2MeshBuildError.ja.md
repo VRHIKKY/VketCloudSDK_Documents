@@ -19,20 +19,20 @@ Unity : 2019.4.31.f1
 
 | 正常にビルドできたオブジェクト | エラーが発生したオブジェクト |
 | ---- | ---- |
-| ![正常にビルドできたオブジェクト](./img/UV2MeshBuildError_2.jpg) | ![エラーが発生したオブジェクト](img/UV2MeshBuildError_3.jpg) |
+| ![正常にビルドできたオブジェクト](img/UV2MeshBuildError_2.jpg) | ![エラーが発生したオブジェクト](img/UV2MeshBuildError_3.jpg) |
 
 見比べたところ、uv2の表示がない事に気が付いた。
-エラーの原因はuv2がないのにMeshRendererを使用しようとしていたことだった。
+エラーの原因はuv2がないのにMesh Rendererを使用しようとしていたことだった。
 
 ## 結論
-uv2のないメッシュをMeshRendererで扱おうとするとビルドエラーになる。
+uv2のないメッシュをMesh Rendererで扱おうとするとビルドエラーになる。
 
 uv2を含むようにモデリング班にメッシュの作り直し依頼を行うか、
-SkinnedMeshRendererを使用するか、
+SkinnedMesh Rendererを使用するか、
 テクスチャを別のオブジェクトに貼り付けて使おう。
 
 ## その他知見
-uv2を含まないメッシュであっても、SkinnedMeshRendererを用いることでビルドが通り、VketCloudに反映可能。
+uv2を含まないメッシュであっても、SkinnedMesh Rendererを用いることでビルドが通り、VketCloudに反映可能。
 
 !!! info
-    SkinnedMeshRendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。
+    SkinnedMesh Rendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。
