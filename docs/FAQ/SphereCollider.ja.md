@@ -1,16 +1,16 @@
 # SphereColliderをクリックしても反応しない場合の解決方法
 
 ## 現象
-SphereColliderをクリックしてもなぜか反応がない。
+Sphere Colliderをクリックしてもなぜか反応がない。
 
 ## 原因
-SphereColliderが付いているGameObjectのスケール値が小さい。
+Sphere Colliderが付いているGameObjectのスケール値が小さい。
 
 ## 解決方法
 GameObjectのスケール値をそろえる。
 
 ## 罠
-下図のように「反応しないケース」では、SphereColliderのみための大きさは「正常なケース」と変わらないが、反応しなくなる。
+下図のように「反応しないケース」では、Sphere Colliderのみための大きさは「正常なケース」と変わらないが、反応しなくなる。
 
 ### 正常なケース
 
@@ -28,7 +28,7 @@ GameObjectのスケール値をそろえる。
 
 
 ## 補足
-SphereCollider付のGameObjectの親GameObjectのスケール値が小さくても問題ない。
+Sphere Collider付のGameObjectの親GameObjectのスケール値が小さくても問題ない。
 
 ※scale.x = 0だけど、反応する
 

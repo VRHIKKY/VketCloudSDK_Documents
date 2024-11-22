@@ -1,16 +1,16 @@
-# Solution for When Clicking on SphereCollider Does Not Respond
+# Solution for When Clicking on Sphere Collider Does Not Respond
 
 ## Issue
-Clicking on the SphereCollider does not elicit any response.
+Clicking on the Sphere Collider does not elicit any response.
 
 ## Cause
-The scale value of the GameObject with the SphereCollider is too small.
+The scale value of the GameObject with the Sphere Collider is too small.
 
 ## Solution
 Align the scale values of the GameObject.
 
 ## Pitfall
-As shown in the figure below, in the "Non-responsive Case," the apparent size of the SphereCollider is the same as in the "Normal Case," but it becomes non-responsive.
+As shown in the figure below, in the "Non-responsive Case," the apparent size of the Sphere Collider is the same as in the "Normal Case," but it becomes non-responsive.
 
 ### Normal Case
 
@@ -27,7 +27,7 @@ The apparent size (green sphere) does not change, but it becomes non-responsive.
 ![SphereCollider_2](img/SphereCollider_2.jpg)
 
 ## Additional Information
-It is not a problem if the scale value of the parent GameObject of the GameObject with the SphereCollider is small.
+It is not a problem if the scale value of the parent GameObject of the GameObject with the Sphere Collider is small.
 
 *Scale.x = 0 but still responds*
 
