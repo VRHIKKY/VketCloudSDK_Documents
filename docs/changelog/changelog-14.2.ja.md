@@ -16,6 +16,10 @@
     - VKC Node
         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCNodeCollider.html)
             - コライダータイプ設定についての注意を追加しました
+- HeliScript
+    - 組み込み関数
+        - [システム](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function.html)
+            - hsWebReload関数の説明を追加しました
 
 ---
 

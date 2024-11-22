@@ -138,6 +138,12 @@ Converts float value to string.
 
 Opens the url designated by string.
 
+### hsWebReload
+
+`void hsWebReload()`
+
+Reloads the web page.
+
 ***
 
 ## Language

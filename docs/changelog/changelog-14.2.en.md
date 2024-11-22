@@ -16,6 +16,10 @@
     - VKC Node
         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeCollider.html)
             - Added a caution note about the collider type setting.
+- HeliScript
+    - Built-in Functions
+        - [System](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function.html)
+            - hsWebReload関数の説明を追加
 
 ---
 
