@@ -2,6 +2,11 @@
 
 ## November 22 2024 Update
 
+## November 22 2024 -  Added Page
+
+- FAQ
+    - [Solution to Profile Image Error When Creating an Account on Old MyVket](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/ProfileImage.html)
+
 ## November 22 2024 - Edited Pages
 
 - About VketCloudSDK
