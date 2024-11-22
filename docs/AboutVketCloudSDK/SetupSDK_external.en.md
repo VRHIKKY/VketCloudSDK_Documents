@@ -177,6 +177,9 @@ A Web browser will open automatically.
 
 ![SetupSDK_External](img/SetupSDK_External_22.jpg)
 
+!!! warning "After installing the SDK, error CS0234: 'EditorCoroutines'"
+    In some cases, due to a Unity issue, the EditorCoroutines package that the SDK depends on may not be installed correctly. If this occurs, we kindly ask you to install the EditorCoroutines package manually. Open the Package Manager, select "Unity Registry," and enter "EditorCoroutines" in the search box. Install the package that appears, and this should resolve the issue.![SetupSDK_External](img/EditorCoroutines.jpg)
+
 ## Installing a specified version / Updating an existing SDK
 
 For a project with an existing SDK, the SDK Version Manager can be used for switching and updating SDK versions.<br>
