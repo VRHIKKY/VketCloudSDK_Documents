@@ -45,7 +45,7 @@ extra:
   version:
     provider: mike
     default: latest
-  homepage: https://www.hikky.co.jp/vketcloud
+  homepage: https://cloud.vket.com/creator
   analytics: 
     provider: google
     property: G-R753QL60GW
