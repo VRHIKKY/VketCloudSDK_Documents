@@ -6,6 +6,7 @@
 
 - FAQ
     - [旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/ProfileImage.html)
+    - [SphereColliderをクリックしても反応しない場合の解決方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/SphereCollider.html)
 
 ---
 
