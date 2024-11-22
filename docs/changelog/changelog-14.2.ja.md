@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年11月22日更新
+
+## 2024年11月22日 - 変更されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [システム](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function.html)
+            - hsWebReload関数の説明を追加しました
+
+---
+
 ## 2024年11月8日更新
 
 ## 2024年11月8日 - 変更されたページ
