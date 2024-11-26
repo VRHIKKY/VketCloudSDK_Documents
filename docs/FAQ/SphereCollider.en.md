@@ -4,7 +4,7 @@
 Clicking on the Sphere Collider does not elicit any response.
 
 ## Cause
-The scale value of the GameObject with the Sphere Collider is too small.
+The scale values of the GameObject with the Sphere Collider are not the same for X, Y, and Z.
 
 ## Solution
 Align the scale values of the GameObject.
