@@ -4,7 +4,7 @@
 Sphere Colliderをクリックしてもなぜか反応がない。
 
 ## 原因
-Sphere Colliderが付いているGameObjectのスケール値が小さい。
+Sphere Colliderが付いているGameObjectのスケール値がX、Y、Zで同値でない。
 
 ## 解決方法
 GameObjectのスケール値をそろえる。
