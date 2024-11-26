@@ -28,11 +28,11 @@ Unity : 2019.4.31.f1
 uv2のないメッシュをMesh Rendererで扱おうとするとビルドエラーになる。
 
 uv2を含むようにモデリング班にメッシュの作り直し依頼を行うか、
-SkinnedMesh Rendererを使用するか、
+Skinned Mesh Rendererを使用するか、
 テクスチャを別のオブジェクトに貼り付けて使おう。
 
 ## その他知見
-uv2を含まないメッシュであっても、SkinnedMesh Rendererを用いることでビルドが通り、VketCloudに反映可能。
+uv2を含まないメッシュであっても、Skinned Mesh Rendererを用いることでビルドが通り、Vket Cloudに反映可能。
 
 !!! info
-    SkinnedMesh Rendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。
+    Skinned Mesh Rendererを用いたオブジェクトはhemアニメーションで動かすことができないため、アニメーションで動かすオブジェクトを作成したいときはメッシュの作り直しで対応しましょう。
