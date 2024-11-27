@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## November 27 2024 Update
+
+## November 27 2024 - Added Page
+
+- Release Note
+    - [v14.2](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/ReleaseNote/ReleaseNote-14.2.html)
+        - Added release notes for v14.2
+
 ## November 22 2024 Update
 
 ## November 22 2024 -  Added Page
