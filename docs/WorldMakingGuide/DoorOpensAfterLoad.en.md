@@ -26,7 +26,3 @@ VKCItemAreaCollider is a stand-alone item, but the parent hit decision is manage
 At the start of the scene, the door remains closed and the dead end collider is still functioning because there is no parent hit decision for the VKCItemAreaCollider, but after the dynamic loading material is completed, the door opens and the dead end collider is deactivated.
 
 Using this mechanism, a post-dynamic loading process can be created without any coding.
-
-## Movie
-
-![DoorOpensAfterLoad00](img/DoorOpensAfterLoad00.gif)
