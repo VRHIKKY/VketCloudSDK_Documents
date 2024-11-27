@@ -5,8 +5,8 @@
 ## 2024年11月27日 - 追加されたページ
 
 - リリースノート
-    - [v14.2](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/ReleaseNote/ReleaseNote-14.2.html)
-        - v14.2のリリースノートを追加しました 
+    - [v14.4](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/releasenote/releasenote-14.4.html)
+        - v14.4のリリースノートを追加しました 
 
 ---
 
