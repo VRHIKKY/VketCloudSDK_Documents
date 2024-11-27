@@ -13,6 +13,17 @@
     - VKC Item
         - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemField.html)
             - ロードが完了したら開く扉へのリンクを追加
+---
+
+## November 27 2024 Update
+
+## November 27 2024 - Added Page
+
+- Release Note
+    - [v14.2](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/releasenote/releasenote-14.4.html)
+        - Added release notes for v14.4
+        - 
+---
 
 ## November 22 2024 Update
 
