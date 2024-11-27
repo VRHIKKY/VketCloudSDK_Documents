@@ -1,5 +1,19 @@
 # SDK Manual Change Log - Ver 14.2
 
+## November 29 2024 Update
+
+## November 29 2024 -  Added Page
+
+- World Making Guide
+    - [Door Open After Load](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/DoorOpensAfterLoad.html)
+
+## November 29 2024 - Edited Pages
+
+- VKC Components
+    - VKC Item
+        - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemField.html)
+            - ロードが完了したら開く扉へのリンクを追加
+
 ## November 22 2024 Update
 
 ## November 22 2024 -  Added Page
