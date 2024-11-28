@@ -1,21 +1,58 @@
-# UnityとVketCloudの見た目を揃える
+# UnityとVket Cloudの見た目を揃える
 
-VketCloudではglobal illuminationなどまだ一部対応できていない機能があります。下記の設定をすることでUnity側とVketCloud側の見た目を揃えることができます。
+## 概要
 
-## グローバルイルミネーションについて
+Unityのライティング設定によっては、Unityの見た目と、Vket Cloudシーンビルド後の見た目が異なることがあります。
+本ページではその現象を発生しなくする方法について記載します。
 
-VketCloudではリアルタイムのグローバルイルミネーションをサポートしていないので、そちらはライトマップで表現してください。[Unity制作ガイドライン/ライトマップ](../WorldMakingGuide/UnityGuidelines.md#_6) (UnityとVketCloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
+!!! info
+    SDKバージョン : 4.1.4<br>
+    OS : Windows 10<br>
+    Unity : 2019.4.31.f1<br>
+    ブラウザ : Google Chrome
 
-## SkyboxをNoneにする
+## 方法
 
-Skyboxを使用していないのであればUnityではLight SettingsのSkyboxの色味がglobal illuminationで乗ってしまうのでNoneにしてください。
-※リフレクションプローブの撮影でSkyboxを使用する時はオンにしていただいて大丈夫です([リフレクションプローブの作成](../WorldMakingGuide/ReflectionProbe.md))
+## ①グローバルイルミネーションの確認
 
-![SetSkyboxToNone.jpg](he_image/SetSkyboxToNone.jpg)
+Vket Cloudではリアルタイムのグローバルイルミネーションをサポートしていないので、そちらはライトマップで表現してください。
 
-## StandardShaderの設定を変更する
+[Unity制作ガイドライン/ライトマップ](../WorldMakingGuide/UnityGuidelines.md#_6) (UnityとVket Cloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
 
-VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
+| Unity上のグローバルイルミネーション設定 | Vket Cloudビルド後の画面 |
+| ---- | ---- |
+| ![he_align_unity_to_vketcloud_1](he_image/he_align_unity_to_vketcloud_1.jpg) | ![he_align_unity_to_vketcloud_2](he_image/he_align_unity_to_vketcloud_2.jpg) |
+
+!!! info "グローバルイルミネーションについて"
+    Emissionを設定しているマテリアルと、Mesh RendererのContribute Global Illuminationにチェックが付いた状態でライトマップを作成すると、上記左のように、グローバルイルミネーションが作成できます。<br>
+    Vket Cloudでは誤作動の原因になりがちなので、Contribute Global Illuminationは使用しないようにしましょう。
+
+![he_align_unity_to_vketcloud_3](he_image/he_align_unity_to_vketcloud_3.jpg)
+
+
+| グローバルイルミネーション未設定＠Unity | 未設定＠Vket Cloud |
+| ---- | ---- |
+| ![he_align_unity_to_vketcloud_4](he_image/he_align_unity_to_vketcloud_4.jpg) | ![he_align_unity_to_vketcloud_5](he_image/he_align_unity_to_vketcloud_5.jpg) |
+
+グローバルイルミネーションが無い時は、Unity・Vket Cloudで差異が生じません。<br>
+特に多いのが、*Unlit/Textureに設定しているにもかかわらず、ライトマップの影響を受け、黒ずむ*というパターンです。
+
+## ②SkyboxをNoneにする
+
+Skyboxを設定した状態でライティングを行うと、各オブジェクトがContribute Global Illuminationの設定をfalseにしていても、Skyboxの色味が反映されてしまいます。
+
+![he_align_unity_to_vketcloud_6](he_image/he_align_unity_to_vketcloud_6.jpg)
+
+上記画像のように、Unity画面上では真っ黄色になっていても…
+
+![he_align_unity_to_vketcloud_7](he_image/he_align_unity_to_vketcloud_7.jpg)
+
+ビルド後のシーンはこの通り。Skyboxの影響は一切受け付けません。<br>
+Vket CloudではSkyboxは使用できないため、不要なSkyboxが入っている場合、None或いはDefault-Skyboxにしましょう。
+
+## ③StandardShaderの設定を変更する
+
+Vket Cloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
 
 1. 「Edit/ProjectSettings/Graphics」を開く
 
@@ -31,7 +68,19 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
     ![StandardShaderQuality.jpg](he_image/StandardShaderQuality.jpg)
 
+##  プラットフォームに適したライトマップフォーマットが設定されていることを確認する
+
+[Unity制作ガイドライン/ライトマップ](../WorldMakingGuide/UnityGuidelines.md#_6) にあるように、PCとAndroidで適切なライトマップフォーマットが異なり、設定を間違えていると、白飛びが発生してしまいます。
+
+![he_align_unity_to_vketcloud_8](he_image/he_align_unity_to_vketcloud_8.jpg)
+
+プラットフォーム : PCでAndroid向けのライトマップフォーマットの設定を行っていた場合
+
 ## カラースペースがリニアになっていることを確認する
 
 「Edit/Project Settings/Player/Other Settings」を開き、Color Spaceが「Linear」になっていることを確認する
 ![ColorSpace.jpg](he_image/ColorSpace.jpg)
+ 
+| 設定前 | 設定後 |
+| ---- | ---- |
+| ![he_align_unity_to_vketcloud_9](he_image/he_align_unity_to_vketcloud_9.jpg) | ![he_align_unity_to_vketcloud_10](he_image/he_align_unity_to_vketcloud_10.jpg) |
