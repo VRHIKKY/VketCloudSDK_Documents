@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.2
 
+## November 29 2024 Update
+
+## November 29 2024 - Edited Pages
+
+- Troubleshooting
+    - [Aligning Unity and Vket Cloud Appearance](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/heoexporter/he_align_unity_to_vketcloud.html)
+        - Updated images and text with explanations of the legend
+
+---
+
 ## November 27 2024 Update
 
 ## November 27 2024 - Added Page

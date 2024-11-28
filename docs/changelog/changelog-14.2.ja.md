@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年11月29日更新
+
+## 2024年11月29日 - 変更されたページ
+
+- トラブルシューティング
+    - [UnityとVketCloudの見た目をそろえる](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/heoexporter/he_align_unity_to_vketcloud.html)
+        - 画像や文章を凡例の説明とともに更新しました。
+
+---
+
 ## 2024年11月27日更新
 
 ## 2024年11月27日 - 追加されたページ
