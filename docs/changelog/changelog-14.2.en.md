@@ -14,6 +14,7 @@
 
 - FAQ
     - [Solution to Profile Image Error When Creating an Account on Old MyVket](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/ProfileImage.html)
+    - [Solution for When Clicking on SphereCollider Does Not Respond](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/SphereCollider.html)
 
 ## November 22 2024 - Edited Pages
 
