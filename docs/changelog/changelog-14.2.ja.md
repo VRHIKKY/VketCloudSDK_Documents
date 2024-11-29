@@ -7,12 +7,26 @@
     - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCNodeUVScroller.html)
         - Sampleを追加
 
+---
+
+## 2024年11月27日更新
+
+## 2024年11月27日 - 追加されたページ
+
+- リリースノート
+    - [v14.4](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/releasenote/releasenote-14.4.html)
+        - v14.4のリリースノートを追加しました 
+
+---
+
 ## 2024年11月22日更新
 
 ## 2024年11月22日 - 追加されたページ
 
 - FAQ
     - [旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/ProfileImage.html)
+    - [UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/UV2MeshError.html)
+    - [SphereColliderをクリックしても反応しない場合の解決方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/SphereCollider.html)
 
 ## 2024年11月22日 - 変更されたページ
 
