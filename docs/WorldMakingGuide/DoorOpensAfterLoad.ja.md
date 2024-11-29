@@ -1,5 +1,9 @@
-動的ローディングを実装したワールドで、ローディングが完了したらスポーン地点から移動できるようにするギミックの作り方です。
+!!! info "VketCloudSDK13以降で名称が変化しています。"
+    HEOField → VKCItemField <br>
+    HEOAreaCollider → VKCItemAreaCollider <br>
+    ※出来ることは変わっていないので、読み替えてください。
 
+動的ローディングを実装したワールドで、ローディングが完了したらスポーン地点から移動できるようにするギミックの作り方です。
 本ページでは、VketSpaceでの実装事例を紹介します。
 
 ![DoorOpensAfterLoad00](img/DoorOpensAfterLoad00.jpg)

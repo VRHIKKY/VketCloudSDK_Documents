@@ -1,3 +1,8 @@
+!!! info “The names have been changed since VketCloudSDK13.”
+    HEOField → VKCItemField <br>
+    HEOAreaCollider → VKCItemAreaCollider <br>
+    Please note that the functionality remains unchanged, so adjust your understanding accordingly. <br>
+
 This is a way to create a gimmick that allows a world with dynamic loading to move from the spawn point once loading is complete.
 This page presents an example of implementation in VketSpace.
 
