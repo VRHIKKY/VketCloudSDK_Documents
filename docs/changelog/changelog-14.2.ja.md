@@ -13,6 +13,8 @@
     - VKC Item
         - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCItemField.html)
             - ロードが完了したら開く扉へのリンクを追加
+        - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCNodeUVScroller.html)
+            - Sampleを追加
 
 ---
 
@@ -32,6 +34,8 @@
 
 - FAQ
     - [旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/ProfileImage.html)
+    - [UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/UV2MeshError.html)
+    - [SphereColliderをクリックしても反応しない場合の解決方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/SphereCollider.html)
 
 ## 2024年11月22日 - 変更されたページ
 
