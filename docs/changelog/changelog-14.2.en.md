@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## November 27 2024 Update
+
+## November 27 2024 - Added Page
+
+- Release Note
+    - [v14.2](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/releasenote/releasenote-14.4.html)
+        - Added release notes for v14.4
+
 ## November 22 2024 Update
 
 ## November 22 2024 -  Added Page
@@ -7,6 +15,21 @@
 - FAQ
     - [Solution to Profile Image Error When Creating an Account on Old MyVket](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/ProfileImage.html)
     - [Solution to Build Error when a Mesh Object without UV2 is attached to Mesh](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/UV2MeshError.html)
+    - [Solution for When Clicking on SphereCollider Does Not Respond](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/SphereCollider.html)
+
+## November 22 2024 - Edited Pages
+
+- About VketCloudSDK
+    - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/AboutVketCloudSDK/SetupSDK_external.html)
+        - Add a solution for the issue where the EditorCoroutine package cannot be installed.
+- VKC Components
+    - VKC Node
+        - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeCollider.html)
+            - Added a caution note about the collider type setting.
+- HeliScript
+    - Built-in Functions
+        - [System](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function.html)
+            - hsWebReload関数の説明を追加
 
 ---
 

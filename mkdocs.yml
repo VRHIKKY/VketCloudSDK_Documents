@@ -45,7 +45,7 @@ extra:
   version:
     provider: mike
     default: latest
-  homepage: https://www.hikky.co.jp/vketcloud
+  homepage: https://cloud.vket.com/creator
   analytics: 
     provider: google
     property: G-R753QL60GW
@@ -129,6 +129,7 @@ plugins:
             FAQ : FAQ
             Solution to Profile Image Error When Creating an Account on Old MyVket : 旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
             Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法
+            Solution for When Clicking on Sphere Collider Does Not Respond : SphereColliderをクリックしても反応しない場合の解決方法
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -327,6 +328,7 @@ nav:
 - FAQ:
     - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
     - Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: FAQ/UV2MeshBuildError.md
+    - Solution for When Clicking on Sphere Collider Does Not Respond: FAQ/SphereCollider.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
@@ -511,6 +513,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v14.x:
+        - v14.4: releasenote/releasenote-14.4.md
         - v14.3: releasenote/releasenote-14.3.md
         - v14.2: releasenote/releasenote-14.2.md
         - v14.1: releasenote/releasenote-14.1.md
