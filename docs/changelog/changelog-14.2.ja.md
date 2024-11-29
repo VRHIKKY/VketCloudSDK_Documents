@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年11月29日更新
+
+## 2024年11月29日 - 追加されたページ
+
+- FAQ
+    - [デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
+
+
 ## 2024年11月22日更新
 
 ## 2024年11月22日 - 追加されたページ
