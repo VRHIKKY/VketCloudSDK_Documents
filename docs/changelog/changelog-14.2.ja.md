@@ -2,19 +2,21 @@
 
 ## 2024年11月29日更新
 
-## 2024年11月29日 - 追加されたページ
-
-- ワールド制作ガイド
-    - [ロードが完了したら開く扉](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/DoorOpensAfterLoad.html)
-
 ## 2024年11月29日 - 変更されたページ
-
 - VKCコンポーネント
     - VKC Item
         - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCItemField.html)
             - ロードが完了したら開く扉へのリンクを追加
         - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCNodeUVScroller.html)
             - Sampleを追加
+- トラブルシューティング
+    - [UnityとVketCloudの見た目をそろえる](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/heoexporter/he_align_unity_to_vketcloud.html)
+        - 画像や文章を凡例の説明とともに更新しました。
+
+## 2024年11月29日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [ロードが完了したら開く扉](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/DoorOpensAfterLoad.html)
 
 ---
 
