@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年11月29日更新
+
+## 2024年11月29日 - 追加されたページ
+- FAQ
+    - [VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/VRChatAnimationForVKC.html)
+
+
 ## 2024年11月27日更新
 
 ## 2024年11月27日 - 追加されたページ
