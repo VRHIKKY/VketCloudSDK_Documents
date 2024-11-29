@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年11月29日更新
+
+## 2024年11月22日 - 変更されたページ
+- VKCコンポーネント
+    - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCNodeUVScroller.html)
+        - Sampleを追加
+
+---
+
 ## 2024年11月27日更新
 
 ## 2024年11月27日 - 追加されたページ
