@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年11月29日更新
+
+## 2024年11月29日 - 追加されたページ
+- FAQ
+    - [MeshColliderとHEOAreaColliderを持つコライダーが重なっていた場合、HEOAreaColliderが動作しない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/MeshColiderAndAreaColliderOverrap.html)
+
+
 ## 2024年11月27日更新
 
 ## 2024年11月27日 - 追加されたページ
