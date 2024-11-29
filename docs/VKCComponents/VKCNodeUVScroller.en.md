@@ -48,12 +48,6 @@ For example, if you set the following
 ## Samples
 In this example, we will use a texture like this.
 
-!!! info
-    SDK Version: 4.1.4<br>
-    OS: Windows 10<br>
-    Unity: 2019.4.31.f1<br>
-    Browser: Google Chrome
-
 ![VKCNodeUVScrollerSample00](img/VKCNodeUVScrollerSample00.jpg)
 
 ### Instant Switch Sample
@@ -87,16 +81,22 @@ With this configuration, the image scrolls upward over 2 seconds after being dis
 
 
 !!! Warning caution
-    When you export the HEO file after applying this configuration, the scroll information is added to the material data. Since the information is applied to the material, other objects using the same material will scroll in the same way, so please be aware of this.
+    When you export the HEO file after applying this configuration, the scroll information is added to the material data. Since the information is applied to the material, other objects using the same material will scroll in the same way, so please be aware of this.<br>
+    This specification is before VketCloudSDK9. In the current version, different scrolls can be applied to different objects, even if the same material is used.
 
-    If there are objects with a shared material located above the object with the VKCNodeUVScroller component in the Hierarchy, scrolling may not work properly.
+    If there are objects with a shared material located above the object with the VKCNodeUVScroller component in the Hierarchy, scrolling may not work properly.<br>
+    This specification is also before VketCloudSDK9.
 
-    If you replace the texture of the object with the VKCNodeUVScroller component via JavaScript, an issue may occur where the replaced texture is not displayed correctly.
+    If you replace the texture of the object with the VKCNodeUVScroller component via HeliScript, an issue may occur where the replaced texture is not displayed correctly.
 
     When left in the background state and then resumed, the UV scrolling may occur at ultra-high speed for the duration it was left inactive. Unfortunately, this behavior cannot be avoided, but to prevent ultra-high-speed UV scrolling, use the following code-based scrolling method instead.
 
 ### Code Scroll Sample
 HeliScript provides a method called Item.SetUVOffset, which allows you to freely modify the UV offset of a texture associated with an item.
+
+!!! note caution
+    The method written here is a configuration method that does not use VKCUVScroller.
+    If you want to know how to implement HeliScript, see [HeliScript - Overview](../hs/hs_overview.md). 
 
 !!! Code Scroll caution
     `public bool SetUVOffset(string naterialName, float u, float v)`
