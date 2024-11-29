@@ -2,11 +2,20 @@
 
 ## November 29 2024 Update
 
+## November 29 2024 -  Added Page
+
+- World Making Guide
+    - [Door Open After Load](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/DoorOpensAfterLoad.html)
+
 ## November 29 2024 - Edited Pages
 
 - VKC Components
-    - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeUVScroller.html)
-        - Add Samples.
+    - VKC Item
+        - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemField.html)
+            - ロードが完了したら開く扉へのリンクを追加
+        - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeUVScroller.html)
+            - Add Samples.
+
 ---
 
 ## November 27 2024 Update
@@ -16,6 +25,8 @@
 - Release Note
     - [v14.2](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/releasenote/releasenote-14.4.html)
         - Added release notes for v14.4
+        - 
+---
 
 ## November 22 2024 Update
 
