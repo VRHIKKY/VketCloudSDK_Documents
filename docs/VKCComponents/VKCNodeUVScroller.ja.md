@@ -48,6 +48,12 @@
 ## サンプル集
 ここでの例ではこのようなテクスチャを使用します。
 
+!!! info
+    SDK Version: 4.1.4<br>
+    OS: Windows 10<br>
+    Unity: 2019.4.31.f1<br>
+    Browser: Google Chrome
+
 ![VKCNodeUVScrollerSample00](img/VKCNodeUVScrollerSample00.jpg)
 
 ### 即時切り替えサンプル

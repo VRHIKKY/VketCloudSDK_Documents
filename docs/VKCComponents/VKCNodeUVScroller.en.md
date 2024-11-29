@@ -48,6 +48,12 @@ For example, if you set the following
 ## Samples
 In this example, we will use a texture like this.
 
+!!! info
+    SDK Version: 4.1.4<br>
+    OS: Windows 10<br>
+    Unity: 2019.4.31.f1<br>
+    Browser: Google Chrome
+
 ![VKCNodeUVScrollerSample00](img/VKCNodeUVScrollerSample00.jpg)
 
 ### Instant Switch Sample
