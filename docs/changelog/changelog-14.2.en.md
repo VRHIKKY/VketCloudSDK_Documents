@@ -7,7 +7,7 @@
 - VKC Components
     - VKC Item
         - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemField.html)
-            - ロードが完了したら開く扉へのリンクを追加
+            - Add a link to the door to open once the loading is complete.
         - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeUVScroller.html)
             - Add Samples.
 - Troubleshooting
