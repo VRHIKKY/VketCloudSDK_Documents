@@ -86,6 +86,9 @@ VketCloudでは、ワールドに入った後に特定のエリアへ侵入し�
 
 ---
 
+### 参考
+[ロードが完了したら開く扉](../WorldMakingGuide/DoorOpensAfterLoad.html)
+
 ## 高度な設定
 
 ![VKC Item Field](img/VKCItemField3.jpg)
@@ -99,3 +102,4 @@ VketCloudでは、ワールドに入った後に特定のエリアへ侵入し�
 | Show Photo Mode | true | 撮影モードで表示されるかどうかを指定します | 
 | Force Raycast Check Disable | false | Item単位でraycastの判定を強制的に無効にするかどうかを設定します |
 | Force Collider Disable | false | 強制的にコライダーを無効にします |
+

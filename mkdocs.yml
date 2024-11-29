@@ -117,6 +117,7 @@ plugins:
             Enabling JS Upload Feature: JS入稿機能の有効化
             Sample JS Upload: JS入稿のサンプル
             Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
+            Door Opens After Load: ロードが完了したら開く扉
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -128,6 +129,8 @@ plugins:
             # FAQ
             FAQ : FAQ
             Solution to Profile Image Error When Creating an Account on Old MyVket : 旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
+            Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法
+            Solution for When Clicking on Sphere Collider Does Not Respond : SphereColliderをクリックしても反応しない場合の解決方法
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -316,6 +319,7 @@ nav:
       - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
       - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
     - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
+    - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -325,6 +329,8 @@ nav:
     - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
 - FAQ:
     - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
+    - Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: FAQ/UV2MeshBuildError.md
+    - Solution for When Clicking on Sphere Collider Does Not Respond: FAQ/SphereCollider.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
