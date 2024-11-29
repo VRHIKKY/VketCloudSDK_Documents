@@ -841,6 +841,8 @@
       
         
       
+        
+      
     
     
     
@@ -1275,6 +1277,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/DoorOpensAfterLoad.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ロードが完了したら開く扉
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1475,6 +1498,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1515,6 +1542,48 @@
   
   <span class="md-ellipsis">
     旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/UV2MeshBuildError.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/SphereCollider.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SphereColliderをクリックしても反応しない場合の解決方法
   </span>
   
 
@@ -3351,6 +3420,48 @@
       Step UV List
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      サンプル集
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="サンプル集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      即時切り替えサンプル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      スクロールサンプル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      コードスクロールサンプル
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -10196,6 +10307,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      サンプル集
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="サンプル集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      即時切り替えサンプル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      スクロールサンプル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      コードスクロールサンプル
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10267,6 +10420,72 @@
 <p>1秒間：停止</p>
 <p>↓</p>
 <p>...以降ループ</p>
+<h2 id="_1">サンプル集</h2>
+<p>ここでの例ではこのようなテクスチャを使用します。</p>
+<p><img alt="VKCNodeUVScrollerSample00" src="img/VKCNodeUVScrollerSample00.jpg" /></p>
+<h3 id="_2">即時切り替えサンプル</h3>
+<p>一定時間表示後、即時切り替えていくサンプルを作成します。まず例としてQuadを作成し、以下のようなマテリアルの設定をおこないます。</p>
+<p><img alt="VKCNodeUVScrollerSample01" src="img/VKCNodeUVScrollerSample01.jpg" /></p>
+<p>これで左上の画像のみ表示されます。 次にそのQuadオブジェクトにVKCNodeUVScrollerコンポーネントを追加し、以下のような設定をおこないます。</p>
+<p><img alt="VKCNodeUVScrollerSample02" src="img/VKCNodeUVScrollerSample02.jpg" /></p>
+<p>「Wait Time」は表示待ちしている時間（秒）で、即時切り替えるので「Scroll Time」は０にします。 「Step UV List」は切り替えていく際に加算していくUV座標で、まず１回目は(0.5, 0)が加算されるので、右上に移動し、次は左下に、最後に右下に移動し、また左上に戻ります。</p>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>画像の上下と左右はそれぞれ繋がった状態になっています</p>
+</div>
+<p><img alt="VKCNodeUVScrollerSample03" src="img/VKCNodeUVScrollerSample03.jpg" /></p>
+<p>実際の動作画面は下記の通りです。</p>
+<p><img alt="VKCNodeUVScrollerSampleGif00" src="img/VKCNodeUVScrollerSampleGif00.gif" /></p>
+<h3 id="_3">スクロールサンプル</h3>
+<p>一定方向にスクロールさせるサンプルを作成します。</p>
+<p><img alt="VKCNodeUVScrollerSample04" src="img/VKCNodeUVScrollerSample04.jpg" /></p>
+<p>このように設定すると、１秒間表示後に２秒かけて上方向に画像がスクロールし、左下の画像が表示され、また１秒間表示後に上方向にスクロールし左上画像に戻ります。実際の動作画面は下記の通りです。</p>
+<p><img alt="VKCNodeUVScrollerSampleGif01" src="img/VKCNodeUVScrollerSampleGif01.gif" /></p>
+<div class="admonition 注意点 caution">
+<p class="admonition-title">注意点</p>
+<p>この設定をおこなった上でHEOファイルをエクスポートすると、マテリアル情報にこのスクロール情報が追加されます。マテリアルに付与されますので、同じマテリアルを使用している他のオブジェクトも同じようにスクロールしますのでご注意下さい。<br>
+(VketCloudSDK9以前の仕様です。現在は同じマテリアルを使用していてもオブジェクトごとに異なるスクロールを適用できます。)</p>
+<p>Hierarchyにおいて、VKCNodeUVScrollerがアタッチされているオブジェクトより上に共通マテリアルを持っているオブジェクトがあるとスクロールできない現象が発生します。<br>
+(VketCloudSDK9以前の仕様です。)</p>
+<p>VKCNodeUVScrollerがアタッチされているオブジェクトに対し、HeliScriptによりテクスチャの差し替えを行った場合、差し替え後のテクスチャが上手く表示されない現象が発生します。</p>
+<p>バックグラウンド状態で放置し、復帰した際、放置していた分だけ超高速でUVスクロールが発生します。こればかりはどうしようもないので、超高速UVスクロールを避けるためには↓のコードスクロールを使いましょう。</p>
+</div>
+<h3 id="_4">コードスクロールサンプル</h3>
+<p>HeliScriptには、Item.SetUVOffsetというメソッドが用意されており、使用することで、アイテムの持つテクスチャのUVOffsetを自由に変更することができます。</p>
+<div class="admonition note caution">
+<p class="admonition-title">Note</p>
+<p>こちらで紹介している方法は、VKCNodeUVScrollerコンポーネントを使用しない設定方法になります。
+HeliScriptの実装方法については、<a href="../hs/hs_overview.html">HeliScript概要</a>をご覧ください。</p>
+</div>
+<div class="admonition コードによるスクロール caution">
+<p class="admonition-title">コードによるスクロール</p>
+<p><code>public bool SetUVOffset(string naterialName, float u, float v)</code></p>
+<p>名前でマテリアルを指定し、そのマテリアルの uv座標を変更する。変更に失敗すると false を返す。</p>
+</div>
+<p>VKCNodeUVScrollerでは一定時間おきに一定法則でしかスクロールさせることができませんが、こちらの手法では任意のタイミングで自由な方向にスクロールさせることができるため、汎用性が高いです。</p>
+<p>下記は、「Position(0,0,0)に設置されたScale(10,1,10)の床の上を移動した際、テクスチャを移動座標に対応したスクロール位置にする」HeliScriptです。</p>
+<div class="codehilite"><pre><span></span><code>component vketquad
+{
+    Item m_Item;
+    Player m_Player;
+    Vector3 player_pos;
+
+    public vketquad()
+    {
+        m_Item = hsItemGet(&quot;World&quot;);
+        m_Player = hsPlayerGet();
+        player_pos = new Vector3();
+    }
+    public void Update()
+    {
+        player_pos = m_Player.GetPos();
+        m_Item.SetUVOffset(&quot;matQuad&quot;,(player_pos.x+2.5f)/10,(2.5f-player_pos.z)/10);
+    }
+}
+</code></pre></div>
+
+<p>実際の動作画面は下記の通りです。</p>
+<p><img alt="VKCNodeUVScrollerSampleGif02" src="img/VKCNodeUVScrollerSampleGif02.gif" /></p>
 
 
 
