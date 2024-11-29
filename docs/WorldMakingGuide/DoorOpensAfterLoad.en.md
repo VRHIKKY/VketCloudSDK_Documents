@@ -1,4 +1,5 @@
-!!! info “The names have been changed since VketCloudSDK13.”
+!!! info “Information on this page is for VketCloudSDK4.1.4.”
+    The names have been changed since VketCloudSDK13.<br>
     HEOField → VKCItemField <br>
     HEOAreaCollider → VKCItemAreaCollider <br>
     Please note that the functionality remains unchanged, so adjust your understanding accordingly. <br>
@@ -14,7 +15,7 @@ This page presents an example of implementation in VketSpace.
 
 ![DoorOpensAfterLoad01](img/DoorOpensAfterLoad01.jpg)
 
-Place a hit judgment to block the entrance to the part to be loaded by dynamic loading. The hit detection is placed in a VKCItemField that is loaded from the beginning (= autoloading : true). Basically, it is included in the VKCItemField around the spawn point.
+Place a hit judgment to block the entrance to the part to be loaded by dynamic loading. The hit detection is placed in a HEOField that is loaded from the beginning (= autoloading : true). Basically, it is included in the HEOField around the spawn point.
 
 ![DoorOpensAfterLoad03](img/DoorOpensAfterLoad03.jpg)
 
@@ -23,11 +24,11 @@ Place a hit judgment to block the entrance to the part to be loaded by dynamic l
 ![DoorOpensAfterLoad04](img/DoorOpensAfterLoad04.jpg)
 ![DoorOpensAfterLoad06](img/DoorOpensAfterLoad06.jpg)
 
-Put VKCItemAreaCollider in the VKCItemField (= autoloading : false) that is loaded in dynamic loading, disable the collider that prevents entering the loading area set in 1 for the action when the area collider enters and the door opens animation to play.
+Put HEOAreaCollider in the HEOField (= autoloading : false) that is loaded in dynamic loading, disable the collider that prevents entering the loading area set in 1 for the action when the area collider enters and the door opens animation to play.
 
 ## Principle
-VKCItemAreaCollider is a stand-alone item, but the parent hit decision is managed by the VKCItemField to which each belongs.
+HEOAreaCollider is a stand-alone item, but the parent hit decision is managed by the HEOField to which each belongs.
 
-At the start of the scene, the door remains closed and the dead end collider is still functioning because there is no parent hit decision for the VKCItemAreaCollider, but after the dynamic loading material is completed, the door opens and the dead end collider is deactivated.
+At the start of the scene, the door remains closed and the dead end collider is still functioning because there is no parent hit decision for the HEOAreaCollider, but after the dynamic loading material is completed, the door opens and the dead end collider is deactivated.
 
 Using this mechanism, a post-dynamic loading process can be created without any coding.
