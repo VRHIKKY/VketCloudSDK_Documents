@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.2
 
-## November 12 2024 Update
+## December 12 2024 Update
 
-## November 12 2024 -  Added Page
+## December 12 2024 -  Added Page
 
 - World Making Guide
     - [Guide To Clear Textures](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/GuideToClearTextures.html)
