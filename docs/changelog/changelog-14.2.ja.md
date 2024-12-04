@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年12月12日更新
+
+## 2024年12月12日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [テクスチャをぼやけさせない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/GuideToClearTextures.html)
+
 ## 2024年11月29日更新
 
 ## 2024年11月29日 - 変更されたページ

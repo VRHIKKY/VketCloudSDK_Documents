@@ -118,6 +118,7 @@ plugins:
             Sample JS Upload: JS入稿のサンプル
             Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
             Door Opens After Load: ロードが完了したら開く扉
+            Guide To Clear Textures: テクスチャをぼやけさせない
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -320,6 +321,7 @@ nav:
       - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
     - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
     - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
+    - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
