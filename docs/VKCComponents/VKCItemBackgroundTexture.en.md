@@ -38,3 +38,7 @@ For example, a sky image having a 1:1 aspect ratio is used as the scene backgrou
 | Clickable | false | Toggles acceptance of click input from player |
 | Auto Loading | true | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](VKCItemField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
 | Show Photo Mode | true | Toggles display/hide item when in photo mode |
+
+!!! note info
+    For more details, please refer to the following page:
+    - [How to Use VKC Item Background Texture](../WorldMakingGuide/BackgroundTexture.md)
