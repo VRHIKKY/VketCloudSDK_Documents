@@ -7,9 +7,9 @@ VKC Item Background Texture/HEOBackGroundTextureを使うことで、ワール�
 ![BackgroundTexture_0](img/BackgroundTexture_0.jpg)
 
 !!! info "検証環境"
-    SDKバージョン : 9.3.0
-    OS : Windows 10
-    Unity : 2019.4.31.f1
+    SDKバージョン : 9.3.0<br>
+    OS : Windows 10<br>
+    Unity : 2019.4.31.f1<br>
     ブラウザ : Google Chrome
 
 !!! warning "VketCloudSDK13以降で名称が変化しています。"
