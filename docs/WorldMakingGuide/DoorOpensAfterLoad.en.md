@@ -1,4 +1,4 @@
-!!! info “Information on this page is for VketCloudSDK4.1.4.”
+!!! info "Information on this page is for VketCloudSDK4.1.4."
     The names have been changed since VketCloudSDK13.<br>
     HEOField → VKCItemField <br>
     HEOAreaCollider → VKCItemAreaCollider <br>

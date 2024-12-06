@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## December 12 2024 Update
+
+## December 12 2024 - Edited Pages
+
+- World Making Guide
+    - [Door Opens After Load](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/DoorOpensAfterLoad.html)
+        - Fix layout.
+
 ## November 29 2024 Update
 
 ## November 29 2024 - Edited Pages
