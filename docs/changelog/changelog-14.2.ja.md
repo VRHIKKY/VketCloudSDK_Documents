@@ -8,6 +8,9 @@
     - VKC Item
         - [VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCItemBackgroundTexture.html)
             - 使い方のページのリンクURLを追加しました
+- ワールド制作ガイド
+    - [ロードが完了したら開く扉](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/DoorOpensAfterLoad.html)
+        - レイアウト修正
 
 ## 2024年12月6日 - 追加されたページ
 

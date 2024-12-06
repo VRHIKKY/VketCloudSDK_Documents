@@ -8,6 +8,9 @@
     - VKC Item
         - [VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemBackgroundTexture.html)
             - Added a link to the usage page.
+- World Making Guide
+    - [Door Opens After Load](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/DoorOpensAfterLoad.html)
+        - Fix layout.
 
 ## December 6 2024 - Added Page
 
