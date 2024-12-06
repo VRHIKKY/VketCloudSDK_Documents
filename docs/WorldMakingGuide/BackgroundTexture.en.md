@@ -7,14 +7,15 @@ However, there are some restrictions to be aware of.
 ![BackgroundTexture_0](img/BackgroundTexture_0.jpg)
 
 !!! info "Test Environment"
-    SDK Version: 9.3.0<br>
-    OS: Windows 10<br>
-    Unity: 2019.4.31.f1<br>
+    SDK Version: 9.3.0 <br>
+    OS: Windows 10 <br>
+    Unity: 2019.4.31.f1 <br>
     Browser: Google Chrome
 
 !!! warning "The names have changed since VketCloudSDK13."
-    HEOBackgroundTexture → VKCItemBackgroundTexture <br>
-    HEOScript → VKCAttributeScript <br>
+    HEOBackgroundTexture → VKC Item Background Texture <br>
+    HEOScript → VKC Attribute Script <br>
+    HEOField → VKC Item Field <br>
     *The functionality remains the same, so please read accordingly.*
 
 ## Implementation Steps
