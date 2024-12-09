@@ -1,3 +1,5 @@
+# Guide To Clear Textures
+
 !!! info
     SDK Version: 13.1.0<br>
     OS: Windows 10<br>
