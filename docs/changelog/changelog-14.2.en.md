@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.2
 
+## December 13 2024 Update
+
+## December 13 2024 - Edited Pages
+
+- HeliScript
+    - Built-in functions
+        - [TextChat](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_textchat.html)
+            - Added a description that the hsTextChatOutput function is not available in SDK 12.3.4 or later.
+
 ## December 6 2024 Update
 
 ## December 6 2024 - Edited Pages

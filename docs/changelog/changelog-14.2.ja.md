@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年12月13日更新
+
+## 2024年12月13日 - 変更されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [TextChat](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_textchat.html)
+            - hsTextChatOutput関数がSDK12.3.4以降利用できないことを記載。
+
+---
+
 ## 2024年12月6日更新
 
 ## 2024年12月6日 - 変更されたページ
