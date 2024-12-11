@@ -877,3 +877,24 @@ Gets the number of polygons.
     - [VKCItemField](../VKCComponents/VKCItemField.md)
     - [VKCItemObject](../VKCComponents/VKCItemObject.md)
 
+### SendMessage
+
+`public bool SendMessage(HSMessage message)`
+
+Sends a message to this Item. The sent message is notified to the OnReceiveMessage() method of the components set on the Item.
+
+Message sending is synchronous, meaning that sending and receiving occur within the same frame. Even if the receiver sends a message back to the sender, and the sender sends another message in response, all processing occurs within the same frame.
+
+The sent message is notified to all components of the target Item, but if even one component successfully receives the message, meaning if the message reaches at least one OnReceiveMessage() callback method, SendMessage() returns true.
+
+??? note "Object types that can call this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)

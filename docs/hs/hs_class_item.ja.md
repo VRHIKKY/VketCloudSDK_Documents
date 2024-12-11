@@ -875,3 +875,25 @@ overrides設定を取得します。
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SendMessage
+
+`public bool SendMessage(HSMessage message)`
+
+このItemにメッセージを送信します。送信したメッセージは、Itemに設定されているコンポーネントの OnReceiveMessage() メソッドに通知されます。
+
+メッセージの送信は同期的であり、つまり同一フレーム中で送信と受信までが行われます。メッセージを受信した側が送信元にメッセージを送り返し、それを受けた側が再度メッセージを送信し…と処理が続く場合でも、全て同一フレーム内で処理されます。
+
+送信したメッセージは対象Itemが持つすべてのコンポーネントに通知されますが、そのうち1つでも送信に成功した場合、つまりメッセージが1つでも OnReceiveMessage() コールバックメソッドに到達した場合、SendMessage() は戻り値として ture を返します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
