@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.2
 
+## Decembee 13 2024 update
+
+## December 13 2024 -  Added Page
+
+- FAQ
+    - [Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
+
 ## November 22 2024 Update
 
 ## November 22 2024 -  Added Page
