@@ -5,6 +5,9 @@
 ## 2024年12月13日 - 変更されたページ
 
 - HeliScript
+    - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_component.html)
+        - コールバック - ItemColliderの説明を追加
+        - コールバック - メッセージの説明を追加
     - 組み込みクラス・関数
         - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_date.html)
             - hsParseDate関数の説明を追加しました

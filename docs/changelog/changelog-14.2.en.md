@@ -5,6 +5,10 @@
 ## December 13 2024 - Edited Pages
 
 - HeliScript
+    - Components / Callback Functions
+        - [Component Definition](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_component.html)
+            - Added a description of the callback - ItemCollider
+            - Added a description of the callback - Message
     - Built-in Classes and Functions
         - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_date.html)
             - Added explanation of the hsParseDate function
