@@ -35,6 +35,8 @@
             - hsMathAsin関数の説明を追加しました
             - hsMathDegToRad関数の説明を追加しました
             - hsMathRadToDeg関数の説明を追加しました
+        - [ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_net.html)
+            - ページのレイアウト調整
         - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_gui.html)
             - hsCanvasSuspendVisibleLayers関数の説明を追加しました
             - hsCanvasResumeVisibleLayers関数の説明を追加しました

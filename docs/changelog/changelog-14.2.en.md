@@ -35,6 +35,8 @@
             - Added explanation of the hsMathAsin function
             - Added explanation of the hsMathDegToRad function
             - Added explanation of the hsMathRadToDeg function
+        - [Network](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_net.html)
+            - Adjusted the layout of the page
         - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_gui.html)
             - Added explanation of the hsCanvasSuspendVisibleLayers function
             - Added explanation of the hsCanvasResumeVisibleLayers function
