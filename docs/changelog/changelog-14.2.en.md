@@ -30,6 +30,11 @@
             - Added explanation of the operation methods
             - Added explanation of the comparison methods
     - Built-in Functions
+        - [Math](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_math.html)
+            - Added explanation of the hsMathAcos function
+            - Added explanation of the hsMathAsin function
+            - Added explanation of the hsMathDegToRad function
+            - Added explanation of the hsMathRadToDeg function
         - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_gui.html)
             - Added explanation of the hsCanvasSuspendVisibleLayers function
             - Added explanation of the hsCanvasResumeVisibleLayers function
