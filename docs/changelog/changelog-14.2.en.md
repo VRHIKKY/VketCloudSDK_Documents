@@ -30,6 +30,10 @@
             - Added explanation of the operation methods
             - Added explanation of the comparison methods
     - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_gui.html)
+            - Added explanation of the hsCanvasSuspendVisibleLayers function
+            - Added explanation of the hsCanvasResumeVisibleLayers function
+            - Added explanation of the window system
         - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_commondialog.html)
             - Modified the description of the common dialog
 

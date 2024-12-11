@@ -30,6 +30,10 @@
             - メソッド (演算)の説明を追加しました
             - メソッド (比較)の説明を追加しました
     - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_gui.html)
+            - hsCanvasSuspendVisibleLayers関数の説明を追加しました
+            - hsCanvasResumeVisibleLayers関数の説明を追加しました
+            - ウィンドウシステムの説明を追加しました
         - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_commondialog.html)
             - 汎用ダイアログの説明を修正
 
