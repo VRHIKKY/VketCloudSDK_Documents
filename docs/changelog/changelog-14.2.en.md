@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.2
 
+## December 13 2024 Update
+
+## December 13 2024 - Edited Pages
+
+- First Steps
+    - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FirstStep/BuildAndRun.html)
+        - Added a note that login and API integration are not possible with local builds.
+
+---
+
 ## December 6 2024 Update
 
 ## December 6 2024 - Edited Pages

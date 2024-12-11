@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年12月13日更新
+
+## 2024年12月13日 - 変更されたページ
+
+- ワールドの制作の基本
+    - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FirstStep/BuildAndRun.html)
+        - ローカルビルドだと、ログインやAPI周りの連携はできないことを記載する
+
+---
+
 ## 2024年12月6日更新
 
 ## 2024年12月6日 - 変更されたページ
