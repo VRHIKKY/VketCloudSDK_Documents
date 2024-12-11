@@ -20,6 +20,12 @@
             - SetPropertyWithoutNotify関数の説明を追加しました
             - GetNumofPolygon関数の説明を追加しました
 
+## 2024年12月13日 - 追加されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        - [TimeSpanクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_timespan.html)
+
 ---
 
 ## 2024年12月6日更新
