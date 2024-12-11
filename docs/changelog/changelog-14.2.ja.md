@@ -42,6 +42,10 @@
 - HeliScript
     - 組み込みクラス・関数
         - [TimeSpanクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_timespan.html)
+    - 組み込み関数
+        - [入力](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_input.html)
+            - hsInputIsKeyDown関数の説明を追加しました
+            - hsInputSetKeyValid関数の説明を追加しました
 
 ---
 
