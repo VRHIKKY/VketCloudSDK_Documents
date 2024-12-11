@@ -5,15 +5,16 @@
 ## December 13 2024 - Edited Pages
 
 - HeliScript
-    - Components / Callback Functions
-        - [Component Definition](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_component.html)
+    - [Components / Callback Functions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_component.html)
             - Added a description of the callback - ItemCollider
             - Added a description of the callback - Message
     - Built-in Classes and Functions
-        - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_date.html)
-            - Added explanation of the hsParseDate function
-            - Added explanation of the operation methods
-            - Added explanation of the comparison methods
+        - [Quaternion Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_struct_quaternion.html)
+            - Added explanation of the Set function
+            - Added explanation of the SetEuler function
+            - Added explanation of the SetEulerVector3 function
+            - Added explanation of the GetEuler function
+            - Added explanation of the GetEulerVector3 function
         - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_item.html)
             - Added explanation of the SetUVScale function
             - Added explanation of the SetMaterialColor function
@@ -24,6 +25,10 @@
             - Added explanation of the SetPropertyWithoutNotify function
             - Added explanation of the GetNumofPolygon function
             - Added explanation of the SendMessage function
+        - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_date.html)
+            - Added explanation of the hsParseDate function
+            - Added explanation of the operation methods
+            - Added explanation of the comparison methods
 
 ## December 13 2024 - Added Page
 

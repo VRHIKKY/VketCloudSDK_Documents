@@ -9,10 +9,12 @@
         - コールバック - ItemColliderの説明を追加
         - コールバック - メッセージの説明を追加
     - 組み込みクラス・関数
-        - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_date.html)
-            - hsParseDate関数の説明を追加しました
-            - メソッド (演算)の説明を追加しました
-            - メソッド (比較)の説明を追加しました
+        - [Quaternionクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_struct_quaternion.html)
+            - Set関数の説明を追加しました
+            - SetEuler関数の説明を追加しました
+            - SetEulerVector3関数の説明を追加しました
+            - GetEuler関数の説明を追加しました
+            - GetEulerVector3関数の説明を追加しました
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_item.html)
             - SetUVScale関数の説明を追加しました
             - SetMaterialColor関数の説明を追加しました
@@ -23,6 +25,10 @@
             - SetPropertyWithoutNotify関数の説明を追加しました
             - GetNumofPolygon関数の説明を追加しました
             - SendMessage関数の説明を追加しました
+        - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_date.html)
+            - hsParseDate関数の説明を追加しました
+            - メソッド (演算)の説明を追加しました
+            - メソッド (比較)の説明を追加しました
 
 ## 2024年12月13日 - 追加されたページ
 
