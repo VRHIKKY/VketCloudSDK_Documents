@@ -257,7 +257,7 @@ Add the given value to the instance's second.
 
 Add the given value to the instance's millisecond.
 
-## Methods (Arithmetic)
+## Methods (Operation)
 
 ### Until
 `TimeSpan Until(Date date)`
