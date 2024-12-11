@@ -14,19 +14,21 @@
 
 ***
 
-## hsNetSetCustomState
+## Data Transmission Functions
+
+### hsNetSetCustomState
 
 `void hsNetSetCustomState(string type, string data)`
 
 By setting type and data in advance, (type, data) is automatically notified to users entering the room.
 
-## hsNetSendCustomData
+### hsNetSendCustomData
 
 `void hsNetSendCustomData(string type, string data)`
 
 Notify (type, data) to users in the room.
 
-### Data Reception Callback Method
+## Data Reception Callback Method
 
 The sent data can be retrieved in the `OnReceiveCustomState()` and `OnReceiveCustomData()` methods defined in the component. Argument id is the identifier of the sending player.
 
@@ -43,7 +45,7 @@ component CustomDataReceiver
 }
 ```
 
-## Mike Permission State
+## Microphone Permission State
 
 ### hsNetGetMicPermissionState
 
