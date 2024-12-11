@@ -541,6 +541,17 @@ Item のロードが完了していた場合は true を、そうでない場合
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
+### SetUVScale
+
+`public bool SetUVScale(string materialName, float u, float v)`
+
+名前でマテリアルを指定し、uvスケールを変更する。変更に失敗すると false を返す。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
 ### SetUVOffset
 
 `public bool SetUVOffset(string materialName, float u, float v)`
@@ -553,6 +564,33 @@ Item のロードが完了していた場合は true を、そうでない場合
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### SetMaterialColor
+
+`public bool SetMaterialColor(string materialName, float R, float G, float B, float A)`
+
+指定したマテリアルの色を変更します。
+
+オブジェクトがロードされていない場合や、未対応のオブジェクトタイプの場合はfalseが返ります。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetAlpha
+
+`public bool SetAlpha(float Alpha)`
+
+アルファブレンディングをおこなうα値を設定します。値の範囲は0.0f～1.0fです。
+
+オブジェクトがロードされていない場合や、未対応のオブジェクトタイプの場合はfalseが返ります。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### PlayVideo
 
@@ -605,6 +643,15 @@ Item のロードが完了していた場合は true を、そうでない場合
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
+### SetPlaneZBias
+
+`public void SetPlaneZBias(float ZBias)`
+
+VKC Item Plane の Z-Bias を設定する。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
 ### SetCamera
 
 `public bool SetCamera()`
@@ -655,6 +702,18 @@ MaterialNameで指定したマテリアルのテクスチャを、URLの内容�
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
+### ReplaceBackupTexture
+
+`public bool ReplaceBackupTexture(string MaterialName)`
+
+ReplaceTexture() で変更したマテリアルのテクスチャを、直前の内容に戻します。
+
+変更に成功するとtrueを返します。マテリアルが見つからないなどの理由で、変更に失敗するとfalseを返します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
 ### SetPhysicsEnable
 
 `public bool SetPhysicsEnable(string NodeName, bool Flag)`
@@ -689,6 +748,26 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPropertyWithoutNotify
+
+`public bool SetPropertyWithoutNotify(string Key, string Value)`
+
+プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
+
+SetProperty() と同等の機能を持つメソッドですが、SetPropertyWithoutNotify() でプロパティを変更した場合、コールバックメソッドの OnChangedProperty() が呼び出されません。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
@@ -777,3 +856,13 @@ overrides設定を取得します。
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetNumofPolygon
+
+`public int GetNumofPolygon()`
+
+ポリゴン数を取得します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
