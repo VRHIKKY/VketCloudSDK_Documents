@@ -253,6 +253,7 @@ plugins:
             Network: ネットワーク
             NamePlate: ネームプレート
             GUI: GUI
+            Input: 入力
             HSGUIModel: HSGUIModel
             TextChat: テキストチャット
             Physics: 物理演算
@@ -498,6 +499,7 @@ nav:
         - HSMessage Class: hs/hs_class_hsmessage.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
+        - Input: hs/hs_system_function_input.md
         - Math: hs/hs_system_function_math.md
         - Network: hs/hs_system_function_net.md
         - NamePlate: hs/hs_system_function_nameplate.md
