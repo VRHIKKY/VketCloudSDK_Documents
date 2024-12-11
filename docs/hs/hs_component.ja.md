@@ -119,6 +119,31 @@ component AreaCollider
 }
 ```
 
+## コールバック - ItemCollider
+
+以下のようにOnItemEnterCollider, OnItemLeaveColliderメソッドを定義しておくと、このコンポーネントを持つItemが別のItem内ノードのコライダーに侵入・退出した時に呼び出されます。現在対応している衝突形状はボックスコライダーのみです。
+
+```
+component CollisionTest
+{
+    public void OnItemEnterCollider(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+
+        hsSystemOutput("[OnItemEnterCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+
+    public void OnItemLeaveCollider(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+
+        hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+}
+```
+
 ## コールバック - オブジェクト選択解除
 
 ### ノードの選択解除：OnUnselectNode
@@ -273,3 +298,11 @@ Itemのプロパティが更新されたときに呼び出されます。同一�
 ```
 public void OnChangedProperty(string Key, string Value)
 ```
+
+## コールバック - メッセージ
+
+```
+public void OnReceiveMessage(HSMessage message)
+```
+
+Itemがメッセージを受信した際に呼ばれます。引数 message に、受信したデータや送信者の情報が含まれています。
