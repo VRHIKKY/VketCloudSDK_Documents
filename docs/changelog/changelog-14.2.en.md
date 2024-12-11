@@ -29,6 +29,9 @@
             - Added explanation of the hsParseDate function
             - Added explanation of the operation methods
             - Added explanation of the comparison methods
+    - Built-in Functions
+        - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_commondialog.html)
+            - Modified the description of the common dialog
 
 ## December 13 2024 - Added Page
 
