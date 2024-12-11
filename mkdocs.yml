@@ -245,6 +245,7 @@ plugins:
             Item Class: Itemクラス
             Player Class: Playerクラス
             Date Class: Dateクラス
+            TimeSpan Class: TimeSpanクラス
             HSMessage Class: HSMessageクラス
             Built-in Functions: 組み込み関数
             System: システム
@@ -493,6 +494,7 @@ nav:
         - Item Class: hs/hs_class_item.md
         - Player Class: hs/hs_class_player.md
         - Date Class: hs/hs_class_date.md
+        - TimeSpan Class: hs/hs_class_timespan.md
         - HSMessage Class: hs/hs_class_hsmessage.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
