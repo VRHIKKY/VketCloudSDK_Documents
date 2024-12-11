@@ -19,6 +19,7 @@
             - ReplaceBackupTexture関数の説明を追加しました
             - SetPropertyWithoutNotify関数の説明を追加しました
             - GetNumofPolygon関数の説明を追加しました
+            - SendMessage関数の説明を追加しました
 
 ## 2024年12月13日 - 追加されたページ
 

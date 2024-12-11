@@ -19,6 +19,7 @@
             - Added explanation of the ReplaceBackupTexture function
             - Added explanation of the SetPropertyWithoutNotify function
             - Added explanation of the GetNumofPolygon function
+            - Added explanation of the SendMessage function
 
 ## December 13 2024 - Added Page
 
