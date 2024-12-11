@@ -9,6 +9,10 @@ To save the Date data before update, please consider copying by using Clone().
 
 If Date class is set with a value over a certain range, the data will be overlapped automatically. For example, if a Date class with the date "May 33 1990" was generated, it will be normalized to "June 2 1990".
 
+## Date and TimeSpan
+
+Date class is for representing a specific date and time, while TimeSpan is used for representing a time interval.
+
 ## Date utility functions
 
 ### hsCreateDate
@@ -22,6 +26,13 @@ Create a Date instance with the defined date in the current local time zone.
 `Date hsCreateDateUTC(int year, int month = 1, int day = 1, int hour = 0,  int minite = 0,  int second = 0, int millisecond = 0)`
 
 Create a Date instance with the defined date in UTC.
+
+### hsParseDate
+`Date hsParseDate(string dateStr)`
+
+Parse the ISO 8601 formatted string and create a Date instance.<br>
+
+If the string parsing fails, it will return null.
 
 ***
 
@@ -80,94 +91,94 @@ Returns the past seconds from the UNIX epoch.
 ### GetYear
 `int GetYear()`
 
-Get the year value based on the local time zone.
+Gets the year value based on the local time zone.
 
 ### GetMonth
 `int GetMonth()`
 
-Get the month value based on the local time zone, starting with 1. (Range: 1-12)
+Gets the month value based on the local time zone, starting with 1. (Range: 1-12)
 
 ### GetDayOfYear
 `int GetDayOfYear()`
 
-Get the day of year based on the local time zone, starting with 1. (Range: 1-366)
+Gets the day of year based on the local time zone, starting with 1. (Range: 1-366)
 
 ### GetDayOfWeek
 `int GetDayOfWeek()`
 
-Get the day of week based on the local time zone, starting with 0. (Range: 0-6)
+Gets the day of week based on the local time zone, starting with 0. (Range: 0-6)
 
 ### GetDay
 `int GetDay()`
 
-Get the day of month based on the local time zone, starting with 1. (Range: 1-31)
+Gets the day of month based on the local time zone, starting with 1. (Range: 1-31)
 
 ### GetHours
 `int GetHours()`
 
-Get the hour based on the local time zone, starting with 0. (Range: 0-23)
+Gets the hour based on the local time zone, starting with 0. (Range: 0-23)
 
 ### GetMinutes
 `int GetMinutes()`
 
-Get the minute based on the local time zone, starting with 0. (Range: 0-59)
+Gets the minute based on the local time zone, starting with 0. (Range: 0-59)
 
 ### GetSeconds
 `int GetSeconds()`
 
-Get the second based on the local time zone, starting with 0. (Range: 0-59)
+Gets the second based on the local time zone, starting with 0. (Range: 0-59)
 
 ### GetMilliseconds
 `int GetMilliseconds()`
 
-Get the millisecond based on the local time zone, starting with 0. (Range: 0-999)
+Gets the millisecond based on the local time zone, starting with 0. (Range: 0-999)
 
 ## Methods (Get value based on UTC)
 
 ### GetUTCYear
 `int GetUTCYear()`
 
-Get the year value based on UTC.
+Gets the year value based on UTC.
 
 ### GetUTCMonth
 `int GetUTCMonth()`
 
-Get the month value based on UTC, starting with 1. (Range: 1-12)
+Gets the month value based on UTC, starting with 1. (Range: 1-12)
 
 ### GetUTCDayOfYear
 `int GetUTCDayOfYear()`
 
-Get the day of year based on UTC, starting with 1. (Range: 1-366)
+Gets the day of year based on UTC, starting with 1. (Range: 1-366)
 
 ### GetUTCDayOfWeek
 `int GetUTCDayOfWeek()`
 
-Get the day of week based on UTC, starting with 0. (Range: 0-6)
+Gets the day of week based on UTC, starting with 0. (Range: 0-6)
 
 ### GetUTCDay
 `int GetUTCDay()`
 
-Get the day of month based on UTC, starting with 1. (Range: 1-31)
+Gets the day of month based on UTC, starting with 1. (Range: 1-31)
 
 ### GetUTCHours
 `int GetUTCHours()`
 
-Get the hour based on UTC, starting with 0. (Range: 0-23)
+Gets the hour based on UTC, starting with 0. (Range: 0-23)
 
 ### GetUTCMinutes
 `int GetUTCMinutes()`
 
-Get the minute based on UTC, starting with 0. (Range: 0-59)
+Gets the minute based on UTC, starting with 0. (Range: 0-59)
 
 ### GetUTCSeconds
 `int GetUTCSeconds()`
 
-Get the second based on UTC, starting with 0. (Range: 0-59)
+Gets the second based on UTC, starting with 0. (Range: 0-59)
 
 ### GetUTCMilliseconds
 `int GetUTCMilliseconds()`
 
-Get the millisecond based on UTC, starting with 0. (Range: 0-999)
+Gets the millisecond based on UTC, starting with 0. (Range: 0-999)
 
 ## Methods (Set Date values)
 
@@ -245,3 +256,49 @@ Add the given value to the instance's second.
 `void AddMilliseconds(int value)`
 
 Add the given value to the instance's millisecond.
+
+## Methods (Arithmetic)
+
+### Until
+`TimeSpan Until(Date date)`
+
+Gets the time interval from the date and time of this instance to the date and time of the argument `date` as a `TimeSpan`.
+This operation can be represented as `date - this` in arithmetic.
+
+### Since
+`TimeSpan Since(Date date)`
+
+Gets the time interval from the date and time of the argument `date` to the date and time of this instance as a `TimeSpan`.
+This operation can be represented as `this - date` in arithmetic.
+
+### Add
+`Date Add(TimeSpan span)`
+
+Adds the time interval of the argument `span` to the date and time of this instance and returns the result as a new `Date` instance.
+
+### Sub
+`Date Sub(TimeSpan span)`
+
+Subtracts the time interval of the argument `span` from the date and time of this instance and returns the result as a new `Date` instance.
+
+## Methods (Comparison)
+
+### Equals
+`bool Equals(Date other)`
+
+Returns `true` if the date and time represented by this instance and the argument `other` are the same.
+
+### IsAfter
+`bool IsAfter(Date date)`
+
+Compares this instance with the argument `Date` and returns `true` if this instance is later than the argument `Date`.
+
+### IsBefore
+`bool IsBefore(Date date)`
+
+Compares this instance with the argument `Date` and returns `true` if this instance is earlier than the argument `Date`.
+
+### Compare
+`int Compare(Date date)`
+
+Compares this instance with the argument `Date` and returns `0` if they are the same, `1` if this instance is later, and `-1` if this instance is earlier.

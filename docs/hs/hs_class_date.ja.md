@@ -10,6 +10,10 @@ Dateクラスは可変であり、インスタンス生成後に SetYear() や A
 
 Dateクラスに、既定の範囲を超えた値を設定した場合、自動でオーバーラップが行われます。例えば、「1990年5月33日」を表現するDateクラスを生成すると、実際には「1990年6月2日」となるよう正規化が行われます。
 
+## DateとTimeSpan
+
+Dateは特定の日時を表すクラスですが、時間間隔を表すには TimeSpan を利用します。
+
 ## Dateのユーティリティー関数
 
 ### hsCreateDate
@@ -21,6 +25,14 @@ Dateクラスに、既定の範囲を超えた値を設定した場合、自動�
 `Date hsCreateDateUTC(int year, int month = 1, int day = 1, int hour = 0,  int minite = 0,  int second = 0, int millisecond = 0)`
 
 UTCにおける、指定した日時のDateインスタンスを生成する。
+
+### hsParseDate
+`Date hsParseDate(string dateStr)`
+
+ISO 8601形式の文字列を解析し、Dateインスタンスを生成します。<br>
+
+文字列の解析に失敗した場合、nullを返します。
+
 
 ***
 
@@ -244,3 +256,49 @@ Dateインスタンスに対して、日時の加算を行うメソッドです�
 `void AddMilliseconds(int value)`
 
 このインスタンスの「ミリ秒」に、引数valueの値を加算します。
+
+## メソッド (演算)
+
+### Until
+`TimeSpan Until(Date date)`
+
+このインスタンスの日時から、引数dateの日時までの時間間隔を、TimeSpanとして取得します。
+この処理を四則演算で例えると `date - this` となります。
+
+### Since
+`TimeSpan Since(Date date)`
+
+引数dateの日時から、このインスタンスの日時までの時間間隔を、TimeSpanとして取得します。
+この処理を四則演算で例えると `this - date` となります。
+
+### Add
+`Date Add(TimeSpan span)`
+
+このインスタンスの日時に、引数spanの時間間隔を加算し、その結果を新しいDateインスタンスとして返します。
+
+### Sub
+`Date Sub(TimeSpan span)`
+
+このインスタンスの日時から、引数spanの時間間隔を減算し、その結果を新しいDateインスタンスとして返します。
+
+## メソッド (比較)
+
+### Equals
+`bool Equals(Date other)`
+
+このインスタンスと、引数otherが表す日時が同じである場合に true を返します。
+
+### IsAfter
+`bool IsAfter(Date date)`
+
+このインスタンスと、引数のDateを比較し、自身が引数Dateより未来であれば true を返します。
+
+### IsBefore
+`bool IsBefore(Date date)`
+
+このインスタンスと、引数のDateを比較し、自身が引数Dateより過去であれば true を返します。
+
+### Compare
+`int Compare(Date date)`
+
+このインスタンスと、引数のDateを比較し、同じなら0を、自分が未来なら1を、自分が過去なら-1を返します。
