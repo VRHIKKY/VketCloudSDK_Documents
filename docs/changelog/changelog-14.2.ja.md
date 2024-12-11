@@ -1,5 +1,18 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年12月13日更新
+
+## 2024年12月13日 - 変更されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_date.html)
+            - hsParseDate関数の説明を追加しました
+            - メソッド (演算)の説明を追加しました
+            - メソッド (比較)の説明を追加しました
+
+---
+
 ## 2024年12月6日更新
 
 ## 2024年12月6日 - 変更されたページ
