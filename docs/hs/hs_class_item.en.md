@@ -651,6 +651,15 @@ Sets the Z-Bias of the VKC Item Plane.
 ??? note "Available object types for this method"
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
+### GetPlaneZBias
+
+`public float GetPlaneZBias()`
+
+Gets the Z-Bias of the VKC Item Plane.
+
+??? note "Available object types for this method"
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
 ### SetCamera
 
 `public bool SetCamera()`

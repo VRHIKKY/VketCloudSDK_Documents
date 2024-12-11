@@ -652,6 +652,15 @@ VKC Item Plane の Z-Bias を設定する。
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
+### GetPlaneZBias
+
+`public float GetPlaneZBias()`
+
+VKC Item Plane の Z-Bias を取得する。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
 ### SetCamera
 
 `public bool SetCamera()`
