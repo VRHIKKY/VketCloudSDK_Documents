@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.2
 
+## December 13 2024 Update
+
+## December 13 2024 - Added Page
+- FAQ
+    - [rocedure for Porting Animation Shader Materials for VRChat to VketCloud](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/VRChatAnimationForVKC.html)
+
+
 ## November 27 2024 Update
 
 ## November 27 2024 - Added Page
