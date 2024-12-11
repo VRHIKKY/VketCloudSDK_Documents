@@ -10,6 +10,15 @@
             - hsParseDate関数の説明を追加しました
             - メソッド (演算)の説明を追加しました
             - メソッド (比較)の説明を追加しました
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_item.html)
+            - SetUVScale関数の説明を追加しました
+            - SetMaterialColor関数の説明を追加しました
+            - SetAlpha関数の説明を追加しました
+            - SetPlaneZBias関数の説明を追加しました
+            - GetPlaneZBias関数の説明を追加しました
+            - ReplaceBackupTexture関数の説明を追加しました
+            - SetPropertyWithoutNotify関数の説明を追加しました
+            - GetNumofPolygon関数の説明を追加しました
 
 ---
 

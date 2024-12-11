@@ -10,6 +10,15 @@
             - Added explanation of the hsParseDate function
             - Added explanation of the operation methods
             - Added explanation of the comparison methods
+        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_item.html)
+            - Added explanation of the SetUVScale function
+            - Added explanation of the SetMaterialColor function
+            - Added explanation of the SetAlpha function
+            - Added explanation of the SetPlaneZBias function
+            - Added explanation of the GetPlaneZBias function
+            - Added explanation of the ReplaceBackupTexture function
+            - Added explanation of the SetPropertyWithoutNotify function
+            - Added explanation of the GetNumofPolygon function
 
 ## December 6 2024 Update
 
