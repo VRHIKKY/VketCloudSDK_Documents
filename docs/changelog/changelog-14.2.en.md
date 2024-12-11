@@ -46,6 +46,8 @@
         - [Input](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_input.html)
             - Added an explanation of the hsInputIsKeyDown function
             - Added an explanation of the hsInputSetKeyValid function
+        - [JavaScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_js.html)
+            - Added an explanation of the collaboration between HeliScript and JavaScript
 
 ## December 6 2024 Update
 
