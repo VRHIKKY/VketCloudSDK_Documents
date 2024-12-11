@@ -1,5 +1,5 @@
 
-# Built-in functions - math
+# Built-in functions - Math
 
 !!! Note Info
     Functions that enable math operations.
