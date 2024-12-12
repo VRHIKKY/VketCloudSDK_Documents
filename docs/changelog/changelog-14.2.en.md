@@ -16,6 +16,7 @@
             - Added explanation of the GetEuler function
             - Added explanation of the GetEulerVector3 function
         - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_item.html)
+            - Added explanation of the GetParentItem function
             - Added explanation of the SetUVScale function
             - Added explanation of the SetMaterialColor function
             - Added explanation of the SetAlpha function
