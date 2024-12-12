@@ -2,22 +2,23 @@
 
 ## Issue
 
-The animation shader material "FX/FlareSC" for VRChat is not compatible with VketCloud. To reproduce the effect using shaders supported by VketCloud, a series of steps is required.
+The animation shader material "FX/FlareSC" for VRChat is not compatible with VketCloud.
+To reproduce the effect using shaders supported by VketCloud, a series of steps is required.
 
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_1.jpg)
 
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_2.jpg)
 
-On the left, the top part shows a cyan display, but when the object is implemented as is, the cyan display disappears. The cyan display rotates continuously.
+On the left, the top part shows a cyan display, but when the object is implemented as is, the cyan display disappears. 
+The cyan display rotates continuously.
 
 !!! info "Environment"
-    SDK Version: 4.1.1  
-    OS: Windows 10  
-    Unity: 2019.4.31.f1  
+    SDK Version: 4.1.1 <br>
+    OS: Windows 10 <br>
+    Unity: 2019.4.31.f1 <br>
     Browser: Google Chrome
 
 # Procedure
-
 ## ① Download GIMP
 The images used in FlareSC have black set as the transparent color.  
 Download GIMP from [窓の杜](https://forest.watch.impress.co.jp/library/software/gimp/) and set black as the transparent color.

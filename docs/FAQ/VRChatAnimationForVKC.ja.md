@@ -13,10 +13,10 @@ VketCloudで使用できるシェーダーで再現するため、いくつか�
 水色の表示は常に回転している。
 
 !!! info "発生環境"
-    SDKバージョン : 4.1.1  
-    OS : Windows 10  
-    Unity : 2019.4.31.f1  
-    ブラウザ : Google Chrome
+    SDKバージョン : 4.1.1 <br>
+    OS : Windows 10 <br>
+    Unity : 2019.4.31.f1 <br>
+    ブラウザ : Google Chrome 
 
 # 手順
 ## ①GIMPのダウンロード
