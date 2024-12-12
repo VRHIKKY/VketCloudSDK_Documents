@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.2
 
+## December 12 2024 Update
+
+## December 12 2024 - Added Page
+
+- World Making Guide
+    - [Implementing text that follows the player](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/PlayerFollowText.html)
+
+---
+
 ## December 6 2024 Update
 
 ## December 6 2024 - Edited Pages

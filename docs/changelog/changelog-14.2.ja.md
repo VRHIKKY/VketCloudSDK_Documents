@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年12月12日更新
+
+## 2024年12月12日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [プレイヤーに追従するテキストの実装](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/PlayerFollowText.html)
+
+---
+
 ## 2024年12月6日更新
 
 ## 2024年12月6日 - 変更されたページ

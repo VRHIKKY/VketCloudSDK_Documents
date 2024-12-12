@@ -1,4 +1,4 @@
-# Text that follows player
+# Implementing text that follows the player
 
 ## Overview
 
