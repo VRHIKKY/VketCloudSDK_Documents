@@ -128,6 +128,7 @@ plugins:
             # FAQ
             FAQ : FAQ
             Solution to Profile Image Error When Creating an Account on Old MyVket : 旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
+            HEOAreaCollider Does Not Work When Overlapping with a MeshCollider : MeshColliderとHEOAreaColliderを持つコライダーが重なっていた場合、HEOAreaColliderが動作しない
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -325,6 +326,7 @@ nav:
     - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
 - FAQ:
     - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
+    - HEOAreaCollider Does Not Work When Overlapping with a MeshCollider: FAQ/MeshColiderAndAreaColliderOverrap.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md

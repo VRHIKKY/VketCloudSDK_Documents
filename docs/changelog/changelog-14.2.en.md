@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.2
 
+## December 13 2024 Update
+
+## December 13 2024 - Added Page
+
+- FAQ
+    - [HEOAreaCollider Does Not Work When Overlapping with a MeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/MeshColiderAndAreaColliderOverrap.html)
+
 ## November 27 2024 Update
 
 ## November 27 2024 - Added Page
