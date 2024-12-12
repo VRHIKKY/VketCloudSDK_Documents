@@ -3,6 +3,9 @@ site_description: 'VketCloudSDKのマニュアルです'
 site_author: 'HIKKY'
 
 theme:
+  font:
+    text: Noto Sans JP
+    code: Inconsolata
   favicon: images/VketCloudIcon.png
   logo: images/VketCloudIcon.png
   name: material
