@@ -81,6 +81,28 @@ Item の名前を取得する。
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
+### GetParentItem
+
+`public Item GetParentItem()`
+
+Item 自身から見て、親に相当する Item を取得する。
+
+アクティビティはItem内にItemを持つ構造であるため、アクティビティ内Itemから GetParentItem() を呼び出すと、親のItemを取得できる。
+
+親Itemが存在しない場合、nullを返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
 ### SetPos
 
 `public void SetPos(Vector3 pos)`

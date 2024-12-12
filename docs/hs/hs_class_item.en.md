@@ -81,6 +81,28 @@ Get the name of the Item.
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
+### GetParentItem
+
+`public Item GetParentItem()`
+
+Retrieves the parent Item relative to the Item itself.
+
+Since an activity has a structure where an Item contains other Items, calling GetParentItem() from an Item within an activity will retrieve the parent Item.
+
+If there is no parent Item, it returns null.
+
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
 ### SetPos
 
 `public void SetPos(Vector3 pos)`
