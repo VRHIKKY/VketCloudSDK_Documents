@@ -5,15 +5,12 @@ MeshColliderとHEOAreaColliderを持つCubeが重なっている時、HEOAreaCol
 
 確認環境では、パーティクルの再生を行うようにしていたが、再生されなかった。
 
-
 ![MeshColliderAndAreaColliderOverrap](img/MeshColliderAndAreaColliderOverrap.jpg)
 
-
-
 !!! info "発生環境"
-    SDKバージョン : 4.1.1  
-    OS : Windows 10  
-    Unity : 2019.4.31.f1  
+    SDKバージョン : 4.1.1 <br>
+    OS : Windows 10 <br>
+    Unity : 2019.4.31.f1 <br>
     ブラウザ : Google Chrome
 
 ## 解決までに試したこと
@@ -33,7 +30,6 @@ Cubeの位置を変更し、入退室が行えたことを分かりやすくし�
 
 以前、MeshColliderのせいでジャンプが行えなかったことがあった。
 MeshColliderを非Active化し除外することで、動作の改善が見込めるのではないかと考えた。
-
 
 ## 結論
 
