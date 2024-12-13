@@ -7,6 +7,28 @@
 - World Making Guide
     - [Guide To Clear Textures](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/GuideToClearTextures.html)
 
+---
+
+## December 6 2024 Update
+
+## December 6 2024 - Edited Pages
+
+- VKC Components
+    - VKC Item
+        - [VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemBackgroundTexture.html)
+            - Added a link to the usage page.
+- World Making Guide
+    - [Door Opens After Load](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/DoorOpensAfterLoad.html)
+        - Fix layout.
+
+## December 6 2024 - Added Page
+
+- World Making Guide
+    - [How to Use VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/BackgroundTexture.html)
+        - Added a page on how to use VKC Item Background Texture.
+
+---
+
 ## November 29 2024 Update
 
 ## November 29 2024 - Edited Pages
