@@ -1,9 +1,9 @@
-# [Practical / Unity] Procedure for Porting Animation Shader Materials for VRChat to VketCloud
+# [Practical / Unity] Procedure for Porting Animation Shader Materials for VRChat to Vket Cloud
 
 ## Issue
 
-The animation shader material "FX/FlareSC" for VRChat is not compatible with VketCloud.
-To reproduce the effect using shaders supported by VketCloud, a series of steps is required.
+The animation shader material "FX/FlareSC" for VRChat is not compatible with Vket Cloud.
+To reproduce the effect using shaders supported by Vket Cloud, a series of steps is required.
 
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_1.jpg)
 
@@ -66,9 +66,9 @@ No additional settings need to be changed on this screen; simply select "Export.
 
 ## ⑤ Prepare MToon
 The following steps will be performed in Unity.  
-For shaders compatible with VketCloud, use "VRM/MToon."
+For shaders compatible with Vket Cloud, use "VRM/MToon."
 
-You can install this from the Extensions tab in the VketCloud SDK settings.
+You can install this from the Extensions tab in the Vket Cloud SDK settings.
 
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_15.jpg)
 
@@ -95,7 +95,7 @@ Adjust the horizontal and vertical scrolling speeds with Scroll X and Scroll Y.
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_14.jpg)
 
 You can check the animation by entering Play mode.  
-Depending on the SDK version, logging into VketCloud may be required when entering Play mode.
+Depending on the SDK version, logging into Vket Cloud may be required when entering Play mode.
 
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_16.gif)
 

@@ -1,9 +1,9 @@
-# 【実務 / Unity】VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順
+# 【実務 / Unity】VRChat用のアニメーションシェーダー素材をVket Cloudに移植する手順
 
 ## 現象
 
-VRChat用のアニメーションシェーダー素材「FX/FlareSC」はVketCloudで使用できない。
-VketCloudで使用できるシェーダーで再現するため、いくつか手順を踏む必要がある。
+VRChat用のアニメーションシェーダー素材「FX/FlareSC」はVket Cloudで使用できない。
+Vket Cloudで使用できるシェーダーで再現するため、いくつか手順を踏む必要がある。
 
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_1.jpg)
 
@@ -67,9 +67,9 @@ Colorウィンドウを選択し、色を黒(RGB#000000)に設定し、OKを選�
 ## ⑤MToonの用意
 
 ここからはUnityでの操作となります。
-VketCloudで動くシェーダーは「VRM/MToon」を使用します。
+Vket Cloudで動くシェーダーは「VRM/MToon」を使用します。
 
-VketCloudSDK設定の、拡張からインストール可能です
+Vket CloudSDK設定の、拡張からインストール可能です
 
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_15.jpg)
 
@@ -96,7 +96,7 @@ Scroll X Scroll Yで横方向/縦方向のスクロール速度を調整する�
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_14.jpg)
 
 動いている様子はPlayモードにすることで確認可能です。
-SDKのバージョンによってはPlayモードにした瞬間VketCloudのログイン認証が発生することがあります。
+SDKのバージョンによってはPlayモードにした瞬間Vket Cloudのログイン認証が発生することがあります。
 
 ![VRChatAnimationForVKC](img/VRChatAnimationForVKC_16.gif)
 
