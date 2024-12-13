@@ -68,6 +68,7 @@
 - ワールド制作ガイド
     - [テクスチャをぼやけさせない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/GuideToClearTextures.html)
     - [ライトスキャタリング](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/LightScattering.html)
+    - [プレイヤーに追従するテキストの実装](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/PlayerFollowText.html)
 
 ---
 

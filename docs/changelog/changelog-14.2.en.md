@@ -49,7 +49,7 @@
             - Modified the description of the common dialog
 
 ## December 13 2024 - Added Page
-
+    
 - HeliScript
     - Built-in Classes and Functions
         - [TimeSpan Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_timespan.html)
@@ -66,6 +66,7 @@
     - [Procedure for Porting Animation Shader Materials for VRChat to VketCloud](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/VRChatAnimationForVKC.html)
     - [Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
 - World Making Guide
+    - [Implementing text that follows the player](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/PlayerFollowText.html)
     - [Guide To Clear Textures](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/GuideToClearTextures.html)
     - [Light Scattering](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/LightScattering.html)
 

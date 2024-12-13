@@ -120,6 +120,7 @@ plugins:
             Door Opens After Load: ロードが完了したら開く扉
             Guide To Clear Textures: テクスチャをぼやけさせない
             How to Use VKC Item Background Texture: VKC Item Background Textureの使い方
+            Implementing text that follows the player: プレイヤーに追従するテキストの実装
             Light Scattering: ライトスキャタリング
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
@@ -331,6 +332,7 @@ nav:
     - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
     - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
     - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
+    - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
     - Light Scattering: WorldMakingGuide/LightScattering.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
