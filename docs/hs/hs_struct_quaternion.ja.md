@@ -111,3 +111,33 @@ x, y, z 要素を0, w要素を1に設定してクォータニオンのインス�
 `public Matrix    GetMatrix()`
 
 クォータニオンを4x4の行列として返す。
+
+### Set
+
+`public void Set(float x, float y, float z, float w)`
+
+x, y, z, w の4要素をクォータニオンに設定する。
+
+### SetEuler
+
+`public void SetEuler(float x, float y, float z)`
+
+x, y, z のオイラー角(度数)をクォータニオンに設定する。
+
+### SetEulerVector3
+
+`public void SetEulerVector3(Vector3 angles)`
+
+x, y, z のオイラー角(度数)を、Vector3としてクォータニオンに設定する。
+
+### GetEuler
+
+`public void GetEuler(ref float x, ref float y, ref float z)`
+
+クォータニオンから、オイラー角(度数)を引数 x, y, z として取得する。
+
+### GetEulerVector3
+
+`public Vector3 GetEulerVector3()`
+
+クォータニオンから、オイラー角(度数)をVector3として取得する。

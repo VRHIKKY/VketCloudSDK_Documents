@@ -110,3 +110,33 @@ The w component of the quaternion.
 `public Matrix GetMatrix()`
 
 Returns the quaternion as a 4x4 matrix.
+
+### Set
+
+`public void Set(float x, float y, float z, float w)`
+
+Sets the quaternion with the four elements x, y, z, and w.
+
+### SetEuler
+
+`public void SetEuler(float x, float y, float z)`
+
+Sets the quaternion with the Euler angles (degrees) x, y, and z.
+
+### SetEulerVector3
+
+`public void SetEulerVector3(Vector3 angles)`
+
+Sets the quaternion with the Euler angles (degrees) x, y, and z as a Vector3.
+
+### GetEuler
+
+`public void GetEuler(ref float x, ref float y, ref float z)`
+
+Gets the Euler angles (degrees) from the quaternion as the arguments x, y, and z.
+
+### GetEulerVector3
+
+`public Vector3 GetEulerVector3()`
+
+Gets the Euler angles (degrees) from the quaternion as a Vector3.

@@ -130,6 +130,31 @@ component AreaCollider
 }
 ```
 
+## Callback - ItemCollider
+
+If you define the OnItemEnterCollider and OnItemLeaveCollider methods as shown below, they will be called when the Item with this component enters or exits the collider of a node within another Item. Currently, only box colliders are supported.
+
+```
+component CollisionTest
+{
+    public void OnItemEnterCollider(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+
+        hsSystemOutput("[OnItemEnterCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+
+    public void OnItemLeaveCollider(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+
+        hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+}
+```
+
 ## Callback - Unselecting Objects
 
 ### OnUnselectNode
@@ -292,3 +317,11 @@ This callback is triggered when the item's property has been changed. if the Val
 ```
 public void OnChangedProperty(string Key, string Value)
 ```
+
+## Callback - Message
+
+```
+public void OnReceiveMessage(HSMessage message)
+```
+
+This will be called when the item receives a message. The argument message contains the received data and sender information.
