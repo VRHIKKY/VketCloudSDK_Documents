@@ -7,6 +7,52 @@
 - FAQ
     - [HEOAreaCollider Does Not Work When Overlapping with a MeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/MeshColiderAndAreaColliderOverrap.html)
 
+---
+
+## December 6 2024 Update
+
+## December 6 2024 - Edited Pages
+
+- VKC Components
+    - VKC Item
+        - [VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemBackgroundTexture.html)
+            - Added a link to the usage page.
+- World Making Guide
+    - [Door Opens After Load](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/DoorOpensAfterLoad.html)
+        - Fix layout.
+
+## December 6 2024 - Added Page
+
+- World Making Guide
+    - [How to Use VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/BackgroundTexture.html)
+        - Added a page on how to use VKC Item Background Texture.
+
+---
+
+## November 29 2024 Update
+
+## November 29 2024 - Edited Pages
+
+- VKC Components
+    - VKC Item
+        - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCItemField.html)
+            - Add a link to the door to open once the loading is complete.
+        - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/VKCComponents/VKCNodeUVScroller.html)
+            - Add Samples.
+- Troubleshooting
+    - [Aligning Unity and Vket Cloud Appearance](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/heoexporter/he_align_unity_to_vketcloud.html)
+        - Updated images and text with explanations of the legend
+
+## November 29 2024 -  Added Page
+
+- World Making Guide
+    - [Door Open After Load](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/DoorOpensAfterLoad.html)
+- FAQ
+    - [Solution to Build Error when a Mesh Object without UV2 is attached to Mesh](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/UV2MeshError.html)
+    - [Solution for When Clicking on SphereCollider Does Not Respond](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/SphereCollider.html)
+
+---
+
 ## November 27 2024 Update
 
 ## November 27 2024 - Added Page
@@ -14,6 +60,8 @@
 - Release Note
     - [v14.2](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/releasenote/releasenote-14.4.html)
         - Added release notes for v14.4
+        - 
+---
 
 ## November 22 2024 Update
 
@@ -21,6 +69,8 @@
 
 - FAQ
     - [Solution to Profile Image Error When Creating an Account on Old MyVket](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/ProfileImage.html)
+    - [Solution to Build Error when a Mesh Object without UV2 is attached to Mesh](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/UV2MeshError.html)
+    - [Solution for When Clicking on SphereCollider Does Not Respond](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/SphereCollider.html)
 
 ## November 22 2024 - Edited Pages
 

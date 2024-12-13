@@ -6,6 +6,50 @@
 - FAQ
     - [MeshColliderとHEOAreaColliderを持つコライダーが重なっていた場合、HEOAreaColliderが動作しない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/MeshColiderAndAreaColliderOverrap.html)
 
+---
+
+## 2024年12月6日更新
+
+## 2024年12月6日 - 変更されたページ
+
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Background Texture](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCItemBackgroundTexture.html)
+            - 使い方のページのリンクURLを追加しました
+- ワールド制作ガイド
+    - [ロードが完了したら開く扉](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/DoorOpensAfterLoad.html)
+        - レイアウト修正
+
+## 2024年12月6日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [VKC Item Background Textureの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/BackgroundTexture.html)
+        - VKC Item Background Textureの使い方のページを追加しました
+
+---
+
+## 2024年11月29日更新
+
+## 2024年11月29日 - 変更されたページ
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCItemField.html)
+            - ロードが完了したら開く扉へのリンクを追加
+        - [VKC Node UV Scroller](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/VKCComponents/VKCNodeUVScroller.html)
+            - Sampleを追加
+- トラブルシューティング
+    - [UnityとVketCloudの見た目をそろえる](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/heoexporter/he_align_unity_to_vketcloud.html)
+        - 画像や文章を凡例の説明とともに更新しました。
+
+## 2024年11月29日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [ロードが完了したら開く扉](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/DoorOpensAfterLoad.html)
+- FAQ
+    - [UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/UV2MeshError.html)
+    - [SphereColliderをクリックしても反応しない場合の解決方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/SphereCollider.html)
+
+---
 
 ## 2024年11月27日更新
 
@@ -23,6 +67,8 @@
 
 - FAQ
     - [旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/ProfileImage.html)
+    - [UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/UV2MeshError.html)
+    - [SphereColliderをクリックしても反応しない場合の解決方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/SphereCollider.html)
 
 ## 2024年11月22日 - 変更されたページ
 
