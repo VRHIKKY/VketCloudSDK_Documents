@@ -7,13 +7,13 @@
 ![PlayerFollowText](img/PlayerFollowText_01.jpg)
 
 !!! info "検証環境"
-    SDKバージョン : SDK5.4.0  
-    OS : Windows 10  
-    Unity : 2019.4.31.f1  
+    SDKバージョン : SDK5.4.0<br>
+    OS : Windows 10<br>
+    Unity : 2019.4.31.f1<br>
     ブラウザ :Google Chrome  
 
 !!! warning "VketCloudSDK13以降で名称が変化しています。"
-    HEOTextPlane → VKCItemTextPlane  
+    HEOTextPlane → VKCItemTextPlane<br>
     ※出来ることは変わっていないので、読み替えてください。
 
 ## 手順

@@ -7,13 +7,13 @@ Here's how to implement text that follows the player.
 ![PlayerFollowText](img/PlayerFollowText_01.jpg)
 
 !!! info "Environment"
-    SDK Version : SDK5.4.0  
-    OS : Windows 10  
-    Unity : 2019.4.31.f1  
+    SDK Version : SDK5.4.0<br>
+    OS : Windows 10<br>
+    Unity : 2019.4.31.f1<br>
     Browser :Google Chrome  
 
 !!! warning "The names have changed since VketCloudSDK13."
-    HEOTextPlane → VKCItemTextPlane  
+    HEOTextPlane -> VKCItemTextPlane<br>
     The functionality remains the same, so please read accordingly.
 
 ## Implementation Steps
