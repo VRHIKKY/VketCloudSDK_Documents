@@ -16,7 +16,7 @@ MeshColliderとHEOAreaColliderを持つCubeが重なっている時、HEOAreaCol
 ## 解決までに試したこと
 ### ① HeliScriptでの再生
 
-hel_scene_PlayItem()を使い、該当のパーティクルの再生を試みたが、正常に再生ができた。
+Item.Play()を使い、該当のパーティクルの再生を試みたが、正常に再生ができた。
 
 ### ② Cubeの当たり判定の位置を調整
 

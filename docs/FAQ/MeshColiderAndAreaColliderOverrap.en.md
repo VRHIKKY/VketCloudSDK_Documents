@@ -16,7 +16,7 @@ In the test environment, the action was set to play particles, but they did not 
 ## Steps Taken to Resolve
 ### ① Playing the particles using HeliScript
 
-Attempted to play the relevant particles using `hel_scene_PlayItem()`, and the particles played successfully.
+Attempted to play the relevant particles using `Item.Play()`, and the particles played successfully.
 
 ### ② Adjusting the position of the Cube’s collision box
 
