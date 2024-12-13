@@ -16,7 +16,7 @@
         <link rel="prev" href="hs_class_player.html">
       
       
-        <link rel="next" href="hs_class_hsmessage.html">
+        <link rel="next" href="hs_class_timespan.html">
       
       
       <link rel="icon" href="../../images/VketCloudIcon.png">
@@ -845,6 +845,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1307,11 +1313,74 @@
   
   
     <li class="md-nav__item">
+      <a href="../WorldMakingGuide/GuideToClearTextures.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide To Clear Textures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../WorldMakingGuide/BackgroundTexture.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     How to Use VKC Item Background Texture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/PlayerFollowText.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implementing text that follows the player
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/LightScattering.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Light Scattering
   </span>
   
 
@@ -1525,6 +1594,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1565,6 +1640,69 @@
   
   <span class="md-ellipsis">
     Solution to Profile Image Error When Creating an Account on Old MyVket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/MeshColiderAndAreaColliderOverrap.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HEOAreaCollider Does Not Work When Overlapping with a MeshCollider
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/VRChatAnimationForVKC.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Procedure for Porting Animation Shader Materials for VRChat to VketCloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/hsItemGetOwnScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function
   </span>
   
 
@@ -5727,6 +5865,8 @@
       
         
       
+        
+      
     
     
     
@@ -5913,6 +6053,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#date-and-timespan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date and TimeSpan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#date-utility-functions" class="md-nav__link">
     <span class="md-ellipsis">
       Date utility functions
@@ -5935,6 +6084,15 @@
   <a href="#hscreatedateutc" class="md-nav__link">
     <span class="md-ellipsis">
       hsCreateDateUTC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hsparsedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      hsParseDate
     </span>
   </a>
   
@@ -6386,10 +6544,133 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#methods-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods (Operation)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods (Operation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#until" class="md-nav__link">
+    <span class="md-ellipsis">
+      Until
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#since" class="md-nav__link">
+    <span class="md-ellipsis">
+      Since
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods (Comparison)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods (Comparison)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isafter" class="md-nav__link">
+    <span class="md-ellipsis">
+      IsAfter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbefore" class="md-nav__link">
+    <span class="md-ellipsis">
+      IsBefore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compare
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_class_timespan.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TimeSpan Class
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -6457,6 +6738,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -6497,6 +6782,27 @@
   
   <span class="md-ellipsis">
     System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_input.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input
   </span>
   
 
@@ -6728,6 +7034,27 @@
   
   <span class="md-ellipsis">
     Rendering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_js.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript
   </span>
   
 
@@ -10745,6 +11072,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#date-and-timespan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date and TimeSpan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#date-utility-functions" class="md-nav__link">
     <span class="md-ellipsis">
       Date utility functions
@@ -10767,6 +11103,15 @@
   <a href="#hscreatedateutc" class="md-nav__link">
     <span class="md-ellipsis">
       hsCreateDateUTC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hsparsedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      hsParseDate
     </span>
   </a>
   
@@ -11218,6 +11563,108 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#methods-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods (Operation)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods (Operation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#until" class="md-nav__link">
+    <span class="md-ellipsis">
+      Until
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#since" class="md-nav__link">
+    <span class="md-ellipsis">
+      Since
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods (Comparison)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods (Comparison)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isafter" class="md-nav__link">
+    <span class="md-ellipsis">
+      IsAfter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbefore" class="md-nav__link">
+    <span class="md-ellipsis">
+      IsBefore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compare
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -11239,6 +11686,8 @@
 <p>Date class is a variable class, which can be updated by calling SetYear(), AddHour(), and other functions to update the internal data after instantiation.
 To save the Date data before update, please consider copying by using Clone().</p>
 <p>If Date class is set with a value over a certain range, the data will be overlapped automatically. For example, if a Date class with the date "May 33 1990" was generated, it will be normalized to "June 2 1990".</p>
+<h2 id="date-and-timespan">Date and TimeSpan</h2>
+<p>Date class is for representing a specific date and time, while TimeSpan is used for representing a time interval.</p>
 <h2 id="date-utility-functions">Date utility functions</h2>
 <h3 id="hscreatedate">hsCreateDate</h3>
 <p><code>Date hsCreateDate(int year, int month = 1, int day = 1, int hour = 0,  int minite = 0,  int second = 0, int millisecond = 0)</code></p>
@@ -11246,6 +11695,10 @@ To save the Date data before update, please consider copying by using Clone().</
 <h3 id="hscreatedateutc">hsCreateDateUTC</h3>
 <p><code>Date hsCreateDateUTC(int year, int month = 1, int day = 1, int hour = 0,  int minite = 0,  int second = 0, int millisecond = 0)</code></p>
 <p>Create a Date instance with the defined date in UTC.</p>
+<h3 id="hsparsedate">hsParseDate</h3>
+<p><code>Date hsParseDate(string dateStr)</code></p>
+<p>Parse the ISO 8601 formatted string and create a Date instance.<br></p>
+<p>If the string parsing fails, it will return null.</p>
 <hr />
 <h2 id="constant-values">Constant Values</h2>
 <p>The following constant values are for expressing the day of the week:</p>
@@ -11282,59 +11735,59 @@ To save the Date data before update, please consider copying by using Clone().</
 <h2 id="methods-get-value-based-on-local-time-zone">Methods (Get value based on local time zone)</h2>
 <h3 id="getyear">GetYear</h3>
 <p><code>int GetYear()</code></p>
-<p>Get the year value based on the local time zone.</p>
+<p>Gets the year value based on the local time zone.</p>
 <h3 id="getmonth">GetMonth</h3>
 <p><code>int GetMonth()</code></p>
-<p>Get the month value based on the local time zone, starting with 1. (Range: 1-12)</p>
+<p>Gets the month value based on the local time zone, starting with 1. (Range: 1-12)</p>
 <h3 id="getdayofyear">GetDayOfYear</h3>
 <p><code>int GetDayOfYear()</code></p>
-<p>Get the day of year based on the local time zone, starting with 1. (Range: 1-366)</p>
+<p>Gets the day of year based on the local time zone, starting with 1. (Range: 1-366)</p>
 <h3 id="getdayofweek">GetDayOfWeek</h3>
 <p><code>int GetDayOfWeek()</code></p>
-<p>Get the day of week based on the local time zone, starting with 0. (Range: 0-6)</p>
+<p>Gets the day of week based on the local time zone, starting with 0. (Range: 0-6)</p>
 <h3 id="getday">GetDay</h3>
 <p><code>int GetDay()</code></p>
-<p>Get the day of month based on the local time zone, starting with 1. (Range: 1-31)</p>
+<p>Gets the day of month based on the local time zone, starting with 1. (Range: 1-31)</p>
 <h3 id="gethours">GetHours</h3>
 <p><code>int GetHours()</code></p>
-<p>Get the hour based on the local time zone, starting with 0. (Range: 0-23)</p>
+<p>Gets the hour based on the local time zone, starting with 0. (Range: 0-23)</p>
 <h3 id="getminutes">GetMinutes</h3>
 <p><code>int GetMinutes()</code></p>
-<p>Get the minute based on the local time zone, starting with 0. (Range: 0-59)</p>
+<p>Gets the minute based on the local time zone, starting with 0. (Range: 0-59)</p>
 <h3 id="getseconds">GetSeconds</h3>
 <p><code>int GetSeconds()</code></p>
-<p>Get the second based on the local time zone, starting with 0. (Range: 0-59)</p>
+<p>Gets the second based on the local time zone, starting with 0. (Range: 0-59)</p>
 <h3 id="getmilliseconds">GetMilliseconds</h3>
 <p><code>int GetMilliseconds()</code></p>
-<p>Get the millisecond based on the local time zone, starting with 0. (Range: 0-999)</p>
+<p>Gets the millisecond based on the local time zone, starting with 0. (Range: 0-999)</p>
 <h2 id="methods-get-value-based-on-utc">Methods (Get value based on UTC)</h2>
 <h3 id="getutcyear">GetUTCYear</h3>
 <p><code>int GetUTCYear()</code></p>
-<p>Get the year value based on UTC.</p>
+<p>Gets the year value based on UTC.</p>
 <h3 id="getutcmonth">GetUTCMonth</h3>
 <p><code>int GetUTCMonth()</code></p>
-<p>Get the month value based on UTC, starting with 1. (Range: 1-12)</p>
+<p>Gets the month value based on UTC, starting with 1. (Range: 1-12)</p>
 <h3 id="getutcdayofyear">GetUTCDayOfYear</h3>
 <p><code>int GetUTCDayOfYear()</code></p>
-<p>Get the day of year based on UTC, starting with 1. (Range: 1-366)</p>
+<p>Gets the day of year based on UTC, starting with 1. (Range: 1-366)</p>
 <h3 id="getutcdayofweek">GetUTCDayOfWeek</h3>
 <p><code>int GetUTCDayOfWeek()</code></p>
-<p>Get the day of week based on UTC, starting with 0. (Range: 0-6)</p>
+<p>Gets the day of week based on UTC, starting with 0. (Range: 0-6)</p>
 <h3 id="getutcday">GetUTCDay</h3>
 <p><code>int GetUTCDay()</code></p>
-<p>Get the day of month based on UTC, starting with 1. (Range: 1-31)</p>
+<p>Gets the day of month based on UTC, starting with 1. (Range: 1-31)</p>
 <h3 id="getutchours">GetUTCHours</h3>
 <p><code>int GetUTCHours()</code></p>
-<p>Get the hour based on UTC, starting with 0. (Range: 0-23)</p>
+<p>Gets the hour based on UTC, starting with 0. (Range: 0-23)</p>
 <h3 id="getutcminutes">GetUTCMinutes</h3>
 <p><code>int GetUTCMinutes()</code></p>
-<p>Get the minute based on UTC, starting with 0. (Range: 0-59)</p>
+<p>Gets the minute based on UTC, starting with 0. (Range: 0-59)</p>
 <h3 id="getutcseconds">GetUTCSeconds</h3>
 <p><code>int GetUTCSeconds()</code></p>
-<p>Get the second based on UTC, starting with 0. (Range: 0-59)</p>
+<p>Gets the second based on UTC, starting with 0. (Range: 0-59)</p>
 <h3 id="getutcmilliseconds">GetUTCMilliseconds</h3>
 <p><code>int GetUTCMilliseconds()</code></p>
-<p>Get the millisecond based on UTC, starting with 0. (Range: 0-999)</p>
+<p>Gets the millisecond based on UTC, starting with 0. (Range: 0-999)</p>
 <h2 id="methods-set-date-values">Methods (Set Date values)</h2>
 <h3 id="setyear">SetYear</h3>
 <p><code>void SetYear(int value)</code></p>
@@ -11381,6 +11834,34 @@ If the given value is negative, subtraction will be done.</p>
 <h3 id="addmilliseconds">AddMilliseconds</h3>
 <p><code>void AddMilliseconds(int value)</code></p>
 <p>Add the given value to the instance's millisecond.</p>
+<h2 id="methods-operation">Methods (Operation)</h2>
+<h3 id="until">Until</h3>
+<p><code>TimeSpan Until(Date date)</code></p>
+<p>Gets the time interval from the date and time of this instance to the date and time of the argument <code>date</code> as a <code>TimeSpan</code>.
+This operation can be represented as <code>date - this</code> in arithmetic.</p>
+<h3 id="since">Since</h3>
+<p><code>TimeSpan Since(Date date)</code></p>
+<p>Gets the time interval from the date and time of the argument <code>date</code> to the date and time of this instance as a <code>TimeSpan</code>.
+This operation can be represented as <code>this - date</code> in arithmetic.</p>
+<h3 id="add">Add</h3>
+<p><code>Date Add(TimeSpan span)</code></p>
+<p>Adds the time interval of the argument <code>span</code> to the date and time of this instance and returns the result as a new <code>Date</code> instance.</p>
+<h3 id="sub">Sub</h3>
+<p><code>Date Sub(TimeSpan span)</code></p>
+<p>Subtracts the time interval of the argument <code>span</code> from the date and time of this instance and returns the result as a new <code>Date</code> instance.</p>
+<h2 id="methods-comparison">Methods (Comparison)</h2>
+<h3 id="equals_1">Equals</h3>
+<p><code>bool Equals(Date other)</code></p>
+<p>Returns <code>true</code> if the date and time represented by this instance and the argument <code>other</code> are the same.</p>
+<h3 id="isafter">IsAfter</h3>
+<p><code>bool IsAfter(Date date)</code></p>
+<p>Compares this instance with the argument <code>Date</code> and returns <code>true</code> if this instance is later than the argument <code>Date</code>.</p>
+<h3 id="isbefore">IsBefore</h3>
+<p><code>bool IsBefore(Date date)</code></p>
+<p>Compares this instance with the argument <code>Date</code> and returns <code>true</code> if this instance is earlier than the argument <code>Date</code>.</p>
+<h3 id="compare">Compare</h3>
+<p><code>int Compare(Date date)</code></p>
+<p>Compares this instance with the argument <code>Date</code> and returns <code>0</code> if they are the same, <code>1</code> if this instance is later, and <code>-1</code> if this instance is earlier.</p>
 
 
 

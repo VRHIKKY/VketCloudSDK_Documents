@@ -16,7 +16,7 @@
         <link rel="prev" href="hs_class_player.html">
       
       
-        <link rel="next" href="hs_class_hsmessage.html">
+        <link rel="next" href="hs_class_timespan.html">
       
       
       <link rel="icon" href="../images/VketCloudIcon.png">
@@ -845,6 +845,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1307,11 +1313,74 @@
   
   
     <li class="md-nav__item">
+      <a href="../WorldMakingGuide/GuideToClearTextures.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    テクスチャをぼやけさせない
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../WorldMakingGuide/BackgroundTexture.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     VKC Item Background Textureの使い方
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/PlayerFollowText.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    プレイヤーに追従するテキストの実装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/LightScattering.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ライトスキャタリング
   </span>
   
 
@@ -1525,6 +1594,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1565,6 +1640,69 @@
   
   <span class="md-ellipsis">
     旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/MeshColiderAndAreaColliderOverrap.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MeshColliderとHEOAreaColliderを持つコライダーが重なっていた場合、HEOAreaColliderが動作しない
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/VRChatAnimationForVKC.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/hsItemGetOwnScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある
   </span>
   
 
@@ -5727,6 +5865,8 @@
       
         
       
+        
+      
     
     
     
@@ -5913,6 +6053,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#datetimespan" class="md-nav__link">
+    <span class="md-ellipsis">
+      DateとTimeSpan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#date_1" class="md-nav__link">
     <span class="md-ellipsis">
       Dateのユーティリティー関数
@@ -5935,6 +6084,15 @@
   <a href="#hscreatedateutc" class="md-nav__link">
     <span class="md-ellipsis">
       hsCreateDateUTC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hsparsedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      hsParseDate
     </span>
   </a>
   
@@ -6386,10 +6544,133 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      メソッド (演算)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="メソッド (演算)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#until" class="md-nav__link">
+    <span class="md-ellipsis">
+      Until
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#since" class="md-nav__link">
+    <span class="md-ellipsis">
+      Since
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      メソッド (比較)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="メソッド (比較)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isafter" class="md-nav__link">
+    <span class="md-ellipsis">
+      IsAfter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbefore" class="md-nav__link">
+    <span class="md-ellipsis">
+      IsBefore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compare
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_class_timespan.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TimeSpanクラス
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -6457,6 +6738,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -6497,6 +6782,27 @@
   
   <span class="md-ellipsis">
     システム
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_input.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    入力
   </span>
   
 
@@ -6728,6 +7034,27 @@
   
   <span class="md-ellipsis">
     レンダリング
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_js.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript
   </span>
   
 
@@ -10745,6 +11072,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#datetimespan" class="md-nav__link">
+    <span class="md-ellipsis">
+      DateとTimeSpan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#date_1" class="md-nav__link">
     <span class="md-ellipsis">
       Dateのユーティリティー関数
@@ -10767,6 +11103,15 @@
   <a href="#hscreatedateutc" class="md-nav__link">
     <span class="md-ellipsis">
       hsCreateDateUTC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hsparsedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      hsParseDate
     </span>
   </a>
   
@@ -11218,6 +11563,108 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      メソッド (演算)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="メソッド (演算)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#until" class="md-nav__link">
+    <span class="md-ellipsis">
+      Until
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#since" class="md-nav__link">
+    <span class="md-ellipsis">
+      Since
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      メソッド (比較)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="メソッド (比較)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isafter" class="md-nav__link">
+    <span class="md-ellipsis">
+      IsAfter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbefore" class="md-nav__link">
+    <span class="md-ellipsis">
+      IsBefore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compare
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -11239,6 +11686,8 @@
 <p>Dateクラスは可変であり、インスタンス生成後に SetYear() や AddHour() などのメソッドを呼びだすことで、Dateの内部データを更新することが可能です。
 変更前のDateの状態を保持したい場合は、Clone() メソッドによるコピー生成を検討してください。</p>
 <p>Dateクラスに、既定の範囲を超えた値を設定した場合、自動でオーバーラップが行われます。例えば、「1990年5月33日」を表現するDateクラスを生成すると、実際には「1990年6月2日」となるよう正規化が行われます。</p>
+<h2 id="datetimespan">DateとTimeSpan</h2>
+<p>Dateは特定の日時を表すクラスですが、時間間隔を表すには TimeSpan を利用します。</p>
 <h2 id="date_1">Dateのユーティリティー関数</h2>
 <h3 id="hscreatedate">hsCreateDate</h3>
 <p><code>Date hsCreateDate(int year, int month = 1, int day = 1, int hour = 0,  int minite = 0,  int second = 0, int millisecond = 0)</code></p>
@@ -11246,6 +11695,10 @@
 <h3 id="hscreatedateutc">hsCreateDateUTC</h3>
 <p><code>Date hsCreateDateUTC(int year, int month = 1, int day = 1, int hour = 0,  int minite = 0,  int second = 0, int millisecond = 0)</code></p>
 <p>UTCにおける、指定した日時のDateインスタンスを生成する。</p>
+<h3 id="hsparsedate">hsParseDate</h3>
+<p><code>Date hsParseDate(string dateStr)</code></p>
+<p>ISO 8601形式の文字列を解析し、Dateインスタンスを生成します。<br></p>
+<p>文字列の解析に失敗した場合、nullを返します。</p>
 <hr />
 <h2 id="_1">定数値</h2>
 <p>週の曜日を表現する定数値です。</p>
@@ -11381,6 +11834,34 @@
 <h3 id="addmilliseconds">AddMilliseconds</h3>
 <p><code>void AddMilliseconds(int value)</code></p>
 <p>このインスタンスの「ミリ秒」に、引数valueの値を加算します。</p>
+<h2 id="_7">メソッド (演算)</h2>
+<h3 id="until">Until</h3>
+<p><code>TimeSpan Until(Date date)</code></p>
+<p>このインスタンスの日時から、引数dateの日時までの時間間隔を、TimeSpanとして取得します。
+この処理を四則演算で例えると <code>date - this</code> となります。</p>
+<h3 id="since">Since</h3>
+<p><code>TimeSpan Since(Date date)</code></p>
+<p>引数dateの日時から、このインスタンスの日時までの時間間隔を、TimeSpanとして取得します。
+この処理を四則演算で例えると <code>this - date</code> となります。</p>
+<h3 id="add">Add</h3>
+<p><code>Date Add(TimeSpan span)</code></p>
+<p>このインスタンスの日時に、引数spanの時間間隔を加算し、その結果を新しいDateインスタンスとして返します。</p>
+<h3 id="sub">Sub</h3>
+<p><code>Date Sub(TimeSpan span)</code></p>
+<p>このインスタンスの日時から、引数spanの時間間隔を減算し、その結果を新しいDateインスタンスとして返します。</p>
+<h2 id="_8">メソッド (比較)</h2>
+<h3 id="equals_1">Equals</h3>
+<p><code>bool Equals(Date other)</code></p>
+<p>このインスタンスと、引数otherが表す日時が同じである場合に true を返します。</p>
+<h3 id="isafter">IsAfter</h3>
+<p><code>bool IsAfter(Date date)</code></p>
+<p>このインスタンスと、引数のDateを比較し、自身が引数Dateより未来であれば true を返します。</p>
+<h3 id="isbefore">IsBefore</h3>
+<p><code>bool IsBefore(Date date)</code></p>
+<p>このインスタンスと、引数のDateを比較し、自身が引数Dateより過去であれば true を返します。</p>
+<h3 id="compare">Compare</h3>
+<p><code>int Compare(Date date)</code></p>
+<p>このインスタンスと、引数のDateを比較し、同じなら0を、自分が未来なら1を、自分が過去なら-1を返します。</p>
 
 
 
