@@ -3,8 +3,14 @@
 ## 2024年12月13日更新
 
 ## 2024年12月13日 - 追加されたページ
+- FAQ
+    - [VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/VRChatAnimationForVKC.html)
+    - [デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
 - ワールド制作ガイド
+    - [テクスチャをぼやけさせない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/GuideToClearTextures.html)
     - [ライトスキャタリング](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/LightScattering.html)
+
+---
 
 ## 2024年12月6日更新
 

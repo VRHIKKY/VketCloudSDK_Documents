@@ -118,6 +118,7 @@ plugins:
             Sample JS Upload: JS入稿のサンプル
             Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
             Door Opens After Load: ロードが完了したら開く扉
+            Guide To Clear Textures: テクスチャをぼやけさせない
             How to Use VKC Item Background Texture: VKC Item Background Textureの使い方
             Light Scattering: ライトスキャタリング
             # ActionNodeGraph: アクションノードグラフ
@@ -131,6 +132,8 @@ plugins:
             # FAQ
             FAQ : FAQ
             Solution to Profile Image Error When Creating an Account on Old MyVket : 旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
+            Procedure for Porting Animation Shader Materials for VRChat to VketCloud : VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順
+            Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function : デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある
             Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法
             Solution for When Clicking on Sphere Collider Does Not Respond : SphereColliderをクリックしても反応しない場合の解決方法
             # SDKTools
@@ -322,6 +325,7 @@ nav:
       - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
     - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
     - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
+    - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
     - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
     - Light Scattering: WorldMakingGuide/LightScattering.md
 - Trouble shooting:
@@ -333,6 +337,8 @@ nav:
     - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
 - FAQ:
     - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
+    - Procedure for Porting Animation Shader Materials for VRChat to VketCloud: FAQ/VRChatAnimationForVKC.md
+    - Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function : FAQ/hsItemGetOwnScene.md
     - Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: FAQ/UV2MeshBuildError.md
     - Solution for When Clicking on Sphere Collider Does Not Respond: FAQ/SphereCollider.md
 - SDK Tools:
