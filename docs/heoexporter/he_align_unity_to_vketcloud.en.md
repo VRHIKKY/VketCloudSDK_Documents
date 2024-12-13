@@ -1,38 +1,85 @@
-# Unity settings for replicating actual look in Vket Cloud
+# Unity settings for replicating actual appearance in Vket Cloud
 
-There are still some functions that are not available in Vket Cloud, such as global illumination.
-Apply the below settings to make your Unity Scene look closer to the final Vket Cloud output.
+## Overview
 
-## About Global Illumination
+Depending on the lighting settings in Unity, the appearance in Unity and the appearance after building the Vket Cloud scene may differ.
+This page describes how to prevent this phenomenon from occurring.
 
-VketCloud does not support real-time global illumination, so please express it with lightmaps. See [Unity Guidelines/Lightmaps](../WorldMakingGuide/UnityGuidelines.md#_6) (If the appearance differs between Unity and VketCloud, it's mostly likely due to issues around GI).
+!!! info
+    SDK Version: 4.1.4<br>
+    OS: Windows 10<br>
+    Unity: 2019.4.31.f1<br>
+    Browser: Google Chrome
 
-## Set Skybox to None
+## Method
 
-Unity's Skybox setting under the Light Setting applies global illumination to the Scene and alters its look. Set this to None.
-It's still fine to set a Skybox when capturing your reflection probes. ([Create Reflection Probe](../WorldMakingGuide/ReflectionProbe.md))
+## ① Check Global Illumination
 
-![SetSkyboxToNone.jpg](he_image/SetSkyboxToNone.jpg)
+Vket Cloud does not support real-time global illumination, so please express it with lightmaps.
 
-## Change the Settings of StandardShader
+[Unity Production Guidelines/Lightmaps](../WorldMakingGuide/UnityGuidelines.md#_6) (If the appearance differs between Unity and Vket Cloud, it is mostly due to issues around GI)
 
-The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so you will need to make some changes in the settings.
+| Global Illumination Settings in Unity | Screen after Vket Cloud Build |
+| ---- | ---- |
+| ![he_align_unity_to_vketcloud_1](he_image/he_align_unity_to_vketcloud_1.jpg) | ![he_align_unity_to_vketcloud_2](he_image/he_align_unity_to_vketcloud_2.jpg) |
 
-1. Open Edit/ProjectSettings/Graphics
+!!! info "About Global Illumination"
+    When creating a lightmap with materials that have Emission set and Mesh Renderer with Contribute Global Illumination checked, global illumination can be created as shown on the left above.<br>
+    In Vket Cloud, Contribute Global Illumination tends to cause malfunctions, so avoid using it.
+
+![he_align_unity_to_vketcloud_3](he_image/he_align_unity_to_vketcloud_3.jpg)
+
+| Global Illumination Not Set in Unity | Not Set in Vket Cloud |
+| ---- | ---- |
+| ![he_align_unity_to_vketcloud_4](he_image/he_align_unity_to_vketcloud_4.jpg) | ![he_align_unity_to_vketcloud_5](he_image/he_align_unity_to_vketcloud_5.jpg) |
+
+When there is no global illumination, there is no difference between Unity and Vket Cloud.<br>
+A common issue is that even though it is set to *Unlit/Texture, it is affected by the lightmap and becomes dark*.
+
+## ② Set Skybox to None
+
+When lighting with a Skybox set, the color of the Skybox will be reflected even if the Contribute Global Illumination setting of each object is set to false.
+
+![he_align_unity_to_vketcloud_6](he_image/he_align_unity_to_vketcloud_6.jpg)
+
+Even if it is bright yellow on the Unity screen as shown in the image above...
+
+![he_align_unity_to_vketcloud_7](he_image/he_align_unity_to_vketcloud_7.jpg)
+
+The scene after the build will look like this. The Skybox has no effect.<br>
+Since Skybox cannot be used in Vket Cloud, if there is an unnecessary Skybox, set it to None or Default-Skybox.
+
+## ③ Change Standard Shader Settings
+
+The physically-based rendering of Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so the settings need to be aligned.
+
+1. Open "Edit/ProjectSettings/Graphics"
 
     ![OpenGraphics.jpg](he_image/OpenGraphics_1.jpg)
 
     ![OpenGraphics.jpg](he_image/OpenGraphics_2.jpg)
 
-2. In the Tier Settings, uncheck "Use Defaults" on Low, Medium, and High
+2. Uncheck "Use Defaults" for Low, Medium, and High in "Tier Settings"
 
     ![TierSettings.jpg](he_image/TierSettings.jpg)
 
-3. In the Tier Settings, change the "Standard Shader Quality" on Low, Medium, and High, to "Medium"
+3. Change "Standard Shader Quality" to "Medium" for Low, Medium, and High in "Tier Settings"
 
     ![StandardShaderQuality.jpg](he_image/StandardShaderQuality.jpg)
 
-## Check if the Color Space is Set to Linear
+##  Ensure that the lightmap format suitable for the platform is set
 
-Open Edit/Project Settings/Player/Other Settings, and check if Color Space is set to Linear.
+As stated in [Unity Production Guidelines/Lightmaps](../WorldMakingGuide/UnityGuidelines.md#_6), the appropriate lightmap format differs for PC and Android, and incorrect settings can cause overexposure.
+
+![he_align_unity_to_vketcloud_8](he_image/he_align_unity_to_vketcloud_8.jpg)
+
+Platform: When the lightmap format for Android is set on PC
+
+## Ensure that the color space is set to linear
+
+Open "Edit/Project Settings/Player/Other Settings" and ensure that Color Space is set to "Linear"
 ![ColorSpace.jpg](he_image/ColorSpace.jpg)
+ 
+| Before Setting | After Setting |
+| ---- | ---- |
+| ![he_align_unity_to_vketcloud_9](he_image/he_align_unity_to_vketcloud_9.jpg) | ![he_align_unity_to_vketcloud_10](he_image/he_align_unity_to_vketcloud_10.jpg) |
