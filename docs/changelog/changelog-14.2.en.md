@@ -9,6 +9,18 @@
         - [TextChat](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_textchat.html)
             - Added a description that the hsTextChatOutput function is not available in SDK 12.3.4 or later.
 
+## December 13 2024 - Added Page
+
+- FAQ
+    - [HEOAreaCollider Does Not Work When Overlapping with a MeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/MeshColiderAndAreaColliderOverrap.html)
+    - [Procedure for Porting Animation Shader Materials for VRChat to VketCloud](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/VRChatAnimationForVKC.html)
+    - [Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
+- World Making Guide
+    - [Guide To Clear Textures](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/GuideToClearTextures.html)
+    - [Light Scattering](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/LightScattering.html)
+
+---
+
 ## December 6 2024 Update
 
 ## December 6 2024 - Edited Pages

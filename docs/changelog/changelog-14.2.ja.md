@@ -9,6 +9,16 @@
         - [TextChat](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_textchat.html)
             - hsTextChatOutput関数がSDK12.3.4以降利用できないことを記載。
 
+## 2024年12月13日 - 追加されたページ
+
+- FAQ
+    - [MeshColliderとHEOAreaColliderを持つコライダーが重なっていた場合、HEOAreaColliderが動作しない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/MeshColiderAndAreaColliderOverrap.html)
+    - [VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/VRChatAnimationForVKC.html)
+    - [デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
+- ワールド制作ガイド
+    - [テクスチャをぼやけさせない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/GuideToClearTextures.html)
+    - [ライトスキャタリング](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/LightScattering.html)
+
 ---
 
 ## 2024年12月6日更新
