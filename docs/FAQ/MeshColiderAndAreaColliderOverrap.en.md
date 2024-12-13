@@ -14,7 +14,7 @@ In the test environment, the action was set to play particles, but they did not 
     Browser: Google Chrome
 
 ## Steps Taken to Resolve
-### ① Playing particles via the Developer Tool Console
+### ① Playing the particles using HeliScript
 
 Attempted to play the relevant particles using `hel_scene_PlayItem()`, and the particles played successfully.
 
