@@ -8,6 +8,7 @@
     - [デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
 - ワールド制作ガイド
     - [テクスチャをぼやけさせない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/GuideToClearTextures.html)
+    - [ライトスキャタリング](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/LightScattering.html)
 
 ---
 
