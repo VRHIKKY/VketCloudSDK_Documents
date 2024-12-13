@@ -81,6 +81,28 @@ Get the name of the Item.
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
+### GetParentItem
+
+`public Item GetParentItem()`
+
+Retrieves the parent Item relative to the Item itself.
+
+Since an activity has a structure where an Item contains other Items, calling GetParentItem() from an Item within an activity will retrieve the parent Item.
+
+If there is no parent Item, it returns null.
+
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
 ### SetPos
 
 `public void SetPos(Vector3 pos)`
@@ -540,6 +562,17 @@ Specify a node by name and returns true if the node is clickable, false otherwis
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
+### SetUVScale
+
+`public bool SetUVScale(string materialName, float u, float v)`
+
+Specify a material by name and change the uv scale of that material. Returns false if the change fails.
+
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
 ### SetUVOffset
 
 `public bool SetUVOffset(string materialName, float u, float v)`
@@ -552,6 +585,33 @@ Specify a material by name and change the uv offset of that material **starting 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### SetMaterialColor
+
+`public bool SetMaterialColor(string materialName, float R, float G, float B, float A)`
+
+Changes the color of the specified material.
+
+Returns false if the object is not loaded or if the object type is not supported.
+
+??? note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetAlpha
+
+`public bool SetAlpha(float Alpha)`
+
+Sets the alpha value for alpha blending. The range of values is 0.0f to 1.0f.
+
+Returns false if the object is not loaded or if the object type is not supported.
+
+??? note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### PlayVideo
 
@@ -568,7 +628,7 @@ Specifies the material to play and starts playing the video. Loop playback is pe
 
 `public void StopVideo()`
 
-Stop the video that is playing.
+Stops the video that is playing.
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -590,7 +650,7 @@ Returns true if a video is playing.
 
 `public void ClearTextPlane()`
 
-Delete the text.
+Deletes the text.
 
 ???+ note "Available object types for this method"
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
@@ -599,10 +659,28 @@ Delete the text.
 
 `public void WriteTextPlane(string text)`
 
-Set the text.
+Sets the text.
 
 ???+ note "Available object types for this method"
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPlaneZBias
+
+`public void SetPlaneZBias(float ZBias)`
+
+Sets the Z-Bias of the VKC Item Plane.
+
+??? note "Available object types for this method"
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### GetPlaneZBias
+
+`public float GetPlaneZBias()`
+
+Gets the Z-Bias of the VKC Item Plane.
+
+??? note "Available object types for this method"
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### SetCamera
 
@@ -654,6 +732,18 @@ Replace the texture attached to the MaterialName's material by the designated UR
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
 
+### ReplaceBackupTexture
+
+`public bool ReplaceBackupTexture(string MaterialName)`
+
+Restores the texture of the material changed by ReplaceTexture() to its previous state.
+
+Returns true if the change is successful. Returns false if the change fails, such as when the material is not found.
+
+??? note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
 ### SetPhysicsEnable
 
 `public bool SetPhysicsEnable(string NodeName, bool Flag)`
@@ -690,6 +780,26 @@ When physics is enabled, returns true if this Item is fixed.
 Set property by Key and Value.
 
 ???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPropertyWithoutNotify
+
+`public bool SetPropertyWithoutNotify(string Key, string Value)`
+
+Sets a property. If the same key exists, it will be overwritten; if not, it will be added.
+
+This method has the same functionality as SetProperty(), but when the property is changed with SetPropertyWithoutNotify(), the callback method OnChangedProperty() is not called.
+
+??? note "Available object types for this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
@@ -768,6 +878,38 @@ Sets overrides property. If the same Key exists, its value will be overwritten, 
 Get the overrides property.
 
 ???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetNumofPolygon
+
+`public int GetNumofPolygon()`
+
+Gets the number of polygons.
+
+??? note "Available object types for this method"
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+
+### SendMessage
+
+`public bool SendMessage(HSMessage message)`
+
+Sends a message to this Item. The sent message is notified to the OnReceiveMessage() method of the components set on the Item.
+
+Message sending is synchronous, meaning that sending and receiving occur within the same frame. Even if the receiver sends a message back to the sender, and the sender sends another message in response, all processing occurs within the same frame.
+
+The sent message is notified to all components of the target Item, but if even one component successfully receives the message, meaning if the message reaches at least one OnReceiveMessage() callback method, SendMessage() returns true.
+
+??? note "Object types that can call this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)

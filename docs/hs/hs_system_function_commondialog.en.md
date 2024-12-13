@@ -105,7 +105,7 @@ hsCommonDialogSetOKButtonDelegate(OnDialogOK);
 
 public void OnDialogOK(void)
 {
-	hsSystemOutput("OnDialogOK callback\n");
+	system.Output("OnDialogOK callback\n");
 	
 	hsCommonDialogClose();
 }
@@ -127,7 +127,8 @@ Sets the delegate function for the No button click event. The delegate type is `
 
 `bool hsCommonDialogOpen()`
 
-Opens the common dialog. Returns `false` if an error occurs, such as if a dialog is already open.
+Opens the common dialog. Returns `false` if an error occurs, such as if a dialog is already open.<br>
+When using in Canvas HeliScript, you need to add `"canvas"` as an argument and call it like `hsCommonDialogOpen("canvas")`. No arguments are needed for non-Canvas cases.
 
 ### hsCommonDialogClose
 
