@@ -4,6 +4,9 @@
 
 ## December 13 2024 - Edited Pages
 
+- First Steps
+    - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FirstStep/BuildAndRun.html)
+        - Added a note that login and API integration are not possible with local builds.
 - HeliScript
     - [Components / Callback Functions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_component.html)
             - Added a description of the callback - ItemCollider

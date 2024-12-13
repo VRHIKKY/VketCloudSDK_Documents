@@ -4,6 +4,9 @@
 
 ## 2024年12月13日 - 変更されたページ
 
+- ワールドの制作の基本
+    - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FirstStep/BuildAndRun.html)
+        - ローカルビルドだと、ログインやAPI周りの連携はできないことを記載する
 - HeliScript
     - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_component.html)
         - コールバック - ItemColliderの説明を追加
