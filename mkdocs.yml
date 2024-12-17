@@ -122,7 +122,6 @@ plugins:
             How to Use VKC Item Background Texture: VKC Item Background Textureの使い方
             Implementing text that follows the player: プレイヤーに追従するテキストの実装
             Light Scattering: ライトスキャタリング
-            Playing Entrance Sound Effects Only Under Specific Conditions: 特定の条件下でのみ入場時効果音を鳴らす
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -335,7 +334,6 @@ nav:
     - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
     - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
     - Light Scattering: WorldMakingGuide/LightScattering.md
-    - Playing Entrance Sound Effects Only Under Specific Conditions: WorldMakingGuide/SoundEffectEntrance.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
