@@ -1,15 +1,5 @@
 # SDK Manual Change Log - Ver 14.2
 
-## 2024年12月20日更新
-
-## 2024年12月20日 - 追加されたページ
-
-- ワールド制作ガイド
-    - [特定の条件下でのみ入場時効果音を鳴らす](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/SoundEffectEntrance.html)
-        - 特定の条件下でのみ入場時効果音を鳴らす
-
----
-
 ## 2024年12月13日更新
 
 ## 2024年12月13日 - 変更されたページ
