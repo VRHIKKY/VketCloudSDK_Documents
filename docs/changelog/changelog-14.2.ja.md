@@ -1,5 +1,77 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2024年12月13日更新
+
+## 2024年12月13日 - 変更されたページ
+
+- ワールドの制作の基本
+    - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FirstStep/BuildAndRun.html)
+        - ローカルビルドだと、ログインやAPI周りの連携はできないことを記載する
+- HeliScript
+    - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_component.html)
+        - コールバック - ItemColliderの説明を追加
+        - コールバック - メッセージの説明を追加
+    - 組み込みクラス・関数
+        - [Quaternionクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_struct_quaternion.html)
+            - Set関数の説明を追加しました
+            - SetEuler関数の説明を追加しました
+            - SetEulerVector3関数の説明を追加しました
+            - GetEuler関数の説明を追加しました
+            - GetEulerVector3関数の説明を追加しました
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_item.html)
+            - GetParentItem関数の説明を追加しました
+            - SetUVScale関数の説明を追加しました
+            - SetMaterialColor関数の説明を追加しました
+            - SetAlpha関数の説明を追加しました
+            - SetPlaneZBias関数の説明を追加しました
+            - GetPlaneZBias関数の説明を追加しました
+            - ReplaceBackupTexture関数の説明を追加しました
+            - SetPropertyWithoutNotify関数の説明を追加しました
+            - GetNumofPolygon関数の説明を追加しました
+            - SendMessage関数の説明を追加しました
+        - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_date.html)
+            - hsParseDate関数の説明を追加しました
+            - メソッド (演算)の説明を追加しました
+            - メソッド (比較)の説明を追加しました
+    - 組み込み関数
+        - [数学](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_math.html)
+            - hsMathAcos関数の説明を追加しました
+            - hsMathAsin関数の説明を追加しました
+            - hsMathDegToRad関数の説明を追加しました
+            - hsMathRadToDeg関数の説明を追加しました
+        - [ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_net.html)
+            - ページのレイアウト調整
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_gui.html)
+            - hsCanvasSuspendVisibleLayers関数の説明を追加しました
+            - hsCanvasResumeVisibleLayers関数の説明を追加しました
+            - ウィンドウシステムの説明を追加しました
+        - [汎用ダイアログ](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_commondialog.html)
+            - 汎用ダイアログの説明を修正
+
+## 2024年12月13日 - 追加されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        - [TimeSpanクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_timespan.html)
+    - 組み込み関数
+        - [入力](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_input.html)
+            - hsInputIsKeyDown関数の説明を追加しました
+            - hsInputSetKeyValid関数の説明を追加しました
+        - [JavaScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_js.html)
+            - HeliScript と JavaScript の連携についての説明を追加しました
+        - [TextChat](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_system_function_textchat.html)
+            - hsTextChatOutput関数がSDK12.3.4以降利用できないことを記載。
+- FAQ
+    - [MeshColliderとHEOAreaColliderを持つコライダーが重なっていた場合、HEOAreaColliderが動作しない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/MeshColiderAndAreaColliderOverrap.html)
+    - [VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/VRChatAnimationForVKC.html)
+    - [デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
+- ワールド制作ガイド
+    - [テクスチャをぼやけさせない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/GuideToClearTextures.html)
+    - [ライトスキャタリング](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/LightScattering.html)
+    - [プレイヤーに追従するテキストの実装](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/PlayerFollowText.html)
+
+---
+
 ## 2024年12月6日更新
 
 ## 2024年12月6日 - 変更されたページ

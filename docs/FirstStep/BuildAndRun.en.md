@@ -16,6 +16,10 @@ To build a scene with VketCloudSDK, make sure you have placed the [required comp
     Please enable the [Debug Mode](../WorldEditingTips/DebugMode.md) to show the debug log.<br>
     As the debug log will be hidden during world loading, please see the [Browser Console](../troubleshooting/BuildError.md#checking-the-error-log) for checking the reason of loading error.
 
+!!! caution "Login and API connection are not available on local build"
+    In the local environment, the login function and API connection function are not available.<br>
+    If the function requires connection with the API, please upload the world to check.
+
 !!! note "Build Options"
     The build options on VketCloudSDK > Settings > "Build" can designate settings such as auto texture compression on build.<br>
     For details, refer to [Build Options](../WorldEditingTips/BuildOptions.md).

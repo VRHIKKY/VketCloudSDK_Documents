@@ -14,13 +14,15 @@
 
 ***
 
-## hsNetSetCustomState
+## データ送信関数
+
+### hsNetSetCustomState
 
 `void hsNetSetCustomState(string type, string data)`
 
 あらかじめ type と data を設定しておくことによって、ルームに入場したユーザーに (type, data) を自動で通知する。
 
-## hsNetSendCustomData
+### hsNetSendCustomData
 
 `void hsNetSendCustomData(string type, string data)`
 

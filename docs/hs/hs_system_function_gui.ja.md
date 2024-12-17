@@ -13,6 +13,18 @@
 
 名前で指定したレイヤーを、true で表示、false で非表示にする。
 
+### hsCanvasSuspendVisibleLayers
+`bool hsCanvasSuspendVisibleLayers()`
+
+現在表示されているすべてのレイヤーを一時的に非表示にします。hsCanvasResumeVisibleLayers()を呼び出すと表示状態を復帰します。<br>
+既にサスペンドしている場合はfalseが返ります。
+
+### hsCanvasResumeVisibleLayers
+`bool hsCanvasResumeVisibleLayers()`
+
+hsCanvasSuspendVisibleLayers()で非表示にしたレイヤーを復帰します。<br>
+サスペンドされていない場合はfalseが返ります。
+
 ### hsCanvasSetGUIShow
 
 `bool hsCanvasSetGUIShow(string layerName, string guiName, bool show)`
@@ -169,3 +181,58 @@ buttonタイプのGUIを追加する。
 
 LayerNameで検索したLayerにIsPortraitで縦か横画面を判定して、
 textタイプのGUIを追加する。
+
+## ウィンドウシステム
+モーダル・モードレスウィンドウを作れるようにする（以降これらの機能をまとめてウィンドウシステムと呼ぶ）
+
+- ウィンドウシステムはレイヤ機能とは独立しており、レイヤを操作することで動作を実現する。
+- ウィンドウシステムはレイヤのZ値の再設定と表示状態の操作はするが、生成削除は行わない。
+- モーダルウィンドウに対し、モードレスウィンドウを子として追加できる
+  - モーダル状態ではそのウィンドウとその子のモードレスウィンドウのみ入力を受け取れる。
+- どのウィンドウもモーダルではない状態に対してもモードレスウィンドウを設定できる。
+- モーダルウィンドウをPushするときに、他のモーダルウィンドウを非表示にするオプションがある(Pop時に再表示される)
+- モーダルウィンドウをPopするときにそのレイヤと子のモードレスウィンドウに設定されたレイヤは非表示状態にされる
+- モーダルウィンドウのトップレベルの変化があった際に(新しいモーダルウィンドウのpush、もしくはトップレベルのモーダルウィンドウのPop)、新しくモーダル状態になったウィンドウはZ値が一番手前に修正される。
+
+```
+hsWindowModalPush(string layerName, bool hideOther);
+```
+指定レイヤをモーダルウィンドウとして最上位にPushする。そのレイヤは表示状態になり、モーダル状態になる。
+hideOther=trueで、モーダル状態中他のモーダルウィンドウと子モードレスウィンドウを非表示にする
+
+```
+hsWindowModalPop();
+```
+最上位のモーダルウィンドウをPopする。モーダル状態は一つ前のモーダルウィンドウに戻る。
+Popされたモーダルウィンドウに設定されていたレイヤは非表示になる。
+Popされたモーダルウィンドウの子モードレスウィンドウは全てRemoveされレイヤは非表示になる。hideOther=trueでpushしていた場合は一時的に非表示されていたウィンドウの表示状態が復帰する。
+
+```
+hsWindowModalPopUntil(string layerName);
+```
+指定レイヤまでモーダルウィンドウをPopする。
+
+```
+hsWindowModelessAdd(string layerName);
+```
+最上位のモーダルウィンドウの子モードレスウィンドウとして指定レイヤを追加する。表示状態は変更しない。
+
+```
+hsWindowModelessRemove(string layerName);
+```
+最上位のモーダルウィンドウの子モードレスウィンドウから指定レイヤを削除する。レイヤは非表示状態になる。
+
+```
+hsWindowModelessShowOnly(string layerName);
+```
+最上位のモーダルウィンドウの子モードレスウィンドウのうち指定レイヤだけ表示状態にし、残りは非表示状態にする。
+
+```
+hsWindowModelessShowAll(bool isShown);
+```
+最上位のモーダルウィンドウの子モードレスウィンドウ全てを表示もしくは非表示状態にする(isShownで表示状態を指定)。
+
+```
+hsWindowClear();
+```
+全てのモーダルウィンドウとその子モードレスウィンドウを削除し、設定したレイヤを非表示状態にする。
