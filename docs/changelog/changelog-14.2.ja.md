@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2025年1月14日更新
+
+## 2025年1月14日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [モーション付きアクティビティ](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ActivityWithMotion.html)
+
 ## 2024年12月13日更新
 
 ## 2024年12月13日 - 変更されたページ
