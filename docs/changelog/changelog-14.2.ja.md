@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2025年1月14日更新
+
+## 2025年1月14日 - 変更されたページ
+
+- トラブルシューティング
+    - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/InstallingDeeplink.html)
+        - 対処法を追加
+
 ## 2024年12月13日更新
 
 ## 2024年12月13日 - 変更されたページ

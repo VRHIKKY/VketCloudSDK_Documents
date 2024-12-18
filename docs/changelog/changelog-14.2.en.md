@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## January 14 2025 Update
+
+## January 14 2025 - Edited Pages
+
+- Trouble shooting
+    - [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/InstallingDeeplink.html)
+        - Added solutions.
+
 ## December 13 2024 Update
 
 ## December 13 2024 - Edited Pages
