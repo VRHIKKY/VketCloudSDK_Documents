@@ -13,6 +13,20 @@
 
 Shows the layer specified by name with true and hides it with false.
 
+### hsCanvasSuspendVisibleLayers
+
+`bool hsCanvasSuspendVisibleLayers()`
+
+Temporarily hides all currently visible layers. The display state can be restored by calling hsCanvasResumeVisibleLayers().<br>
+If already suspended, `false` will be returned.
+
+### hsCanvasResumeVisibleLayers
+
+`bool hsCanvasResumeVisibleLayers()`
+
+Restores the layers that were hidden by hsCanvasSuspendVisibleLayers().<br>
+If not suspended, `false` will be returned.
+
 ### hsCanvasSetGUIShow
 
 `bool hsCanvasSetGUIShow(string layerName, string guiName, bool show)`
@@ -167,3 +181,61 @@ Adds a button type GUI by searching a Layer by LayerName, with determining wheth
 )`
 
 Adds a text type GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.
+
+## Window System
+Enable the creation of modal and modeless windows (hereafter collectively referred to as the window system).
+
+- The window system operates independently of the layer system, using layer manipulation to achieve its functionality.
+- The window system does not handle the creation or deletion of layers but controls the Z-value reconfiguration and visibility of layers.
+- A modeless window can be added as a child to a modal window.
+  - In modal mode, only the modal window and its child modeless windows can receive input.
+- Modeless windows can be set for layers that are not in a modal state.
+- When pushing a modal window, there is an option to hide other modal windows (and their child modeless windows). These hidden windows are re-displayed upon popping.
+- When a modal window is popped, its associated layer and child modeless windows are hidden.
+- When there is a change in the top-level modal window (e.g., pushing a new modal window or popping the current top-level modal window), the newly activated modal window's Z-value is adjusted to bring it to the forefront.
+
+### API Functions
+
+```
+hsWindowModalPush(string layerName, bool hideOther);
+```
+Push the specified layer as the top-level modal window. The layer becomes visible and enters modal mode.  
+If `hideOther = true`, other modal windows and their child modeless windows are temporarily hidden.
+
+```
+hsWindowModalPop();
+```
+Pop the top-level modal window. The modal state reverts to the previous modal window.  
+The layer associated with the popped modal window becomes hidden.  
+All child modeless windows of the popped modal window are removed, and their layers are hidden.  
+If `hideOther = true` was set during the push, the temporarily hidden windows are restored to their previous visibility state.
+
+```
+hsWindowModalPopUntil(string layerName);
+```
+Pop modal windows until the specified layer becomes the top-level modal window.
+
+```
+hsWindowModelessAdd(string layerName);
+```
+Add the specified layer as a child modeless window to the top-level modal window. The visibility state of the layer is not changed.
+
+```
+hsWindowModelessRemove(string layerName);
+```
+Remove the specified layer from the child modeless windows of the top-level modal window. The layer becomes hidden.
+
+```
+hsWindowModelessShowOnly(string layerName);
+```
+Show only the specified layer among the child modeless windows of the top-level modal window, hiding all others.
+
+```
+hsWindowModelessShowAll(bool isShown);
+```
+Show or hide all child modeless windows of the top-level modal window. Use `isShown` to specify the desired visibility state.
+
+```
+hsWindowClear();
+```
+Remove all modal windows and their child modeless windows, setting all associated layers to a hidden state.

@@ -7,6 +7,79 @@
 - World Making Guide
     - [How to Use VKC Node Shadow/HEO Shadow](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/HEOShadow.html)
 
+---
+
+## December 13 2024 Update
+
+## December 13 2024 - Edited Pages
+
+- First Steps
+    - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FirstStep/BuildAndRun.html)
+        - Added a note that login and API integration are not possible with local builds.
+- HeliScript
+    - [Components / Callback Functions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_component.html)
+            - Added a description of the callback - ItemCollider
+            - Added a description of the callback - Message
+    - Built-in Classes and Functions
+        - [Quaternion Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_struct_quaternion.html)
+            - Added explanation of the Set function
+            - Added explanation of the SetEuler function
+            - Added explanation of the SetEulerVector3 function
+            - Added explanation of the GetEuler function
+            - Added explanation of the GetEulerVector3 function
+        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_item.html)
+            - Added explanation of the GetParentItem function
+            - Added explanation of the SetUVScale function
+            - Added explanation of the SetMaterialColor function
+            - Added explanation of the SetAlpha function
+            - Added explanation of the SetPlaneZBias function
+            - Added explanation of the GetPlaneZBias function
+            - Added explanation of the ReplaceBackupTexture function
+            - Added explanation of the SetPropertyWithoutNotify function
+            - Added explanation of the GetNumofPolygon function
+            - Added explanation of the SendMessage function
+        - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_date.html)
+            - Added explanation of the hsParseDate function
+            - Added explanation of the operation methods
+            - Added explanation of the comparison methods
+    - Built-in Functions
+        - [Math](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_math.html)
+            - Added explanation of the hsMathAcos function
+            - Added explanation of the hsMathAsin function
+            - Added explanation of the hsMathDegToRad function
+            - Added explanation of the hsMathRadToDeg function
+        - [Network](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_net.html)
+            - Adjusted the layout of the page
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_gui.html)
+            - Added explanation of the hsCanvasSuspendVisibleLayers function
+            - Added explanation of the hsCanvasResumeVisibleLayers function
+            - Added explanation of the window system
+        - [Common Dialog](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_commondialog.html)
+            - Modified the description of the common dialog
+
+## December 13 2024 - Added Page
+    
+- HeliScript
+    - Built-in Classes and Functions
+        - [TimeSpan Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_timespan.html)
+    - Built-in Functions
+        - [Input](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_input.html)
+            - Added an explanation of the hsInputIsKeyDown function
+            - Added an explanation of the hsInputSetKeyValid function
+        - [JavaScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_js.html)
+            - Added an explanation of the collaboration between HeliScript and JavaScript
+        - [TextChat](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_system_function_textchat.html)
+            - Added a description that the hsTextChatOutput function is not available in SDK 12.3.4 or later.
+- FAQ
+    - [HEOAreaCollider Does Not Work When Overlapping with a MeshCollider](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/MeshColiderAndAreaColliderOverrap.html)
+    - [Procedure for Porting Animation Shader Materials for VRChat to VketCloud](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/VRChatAnimationForVKC.html)
+    - [Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/hsItemGetOwnScene.html)
+- World Making Guide
+    - [Implementing text that follows the player](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/PlayerFollowText.html)
+    - [Guide To Clear Textures](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/GuideToClearTextures.html)
+    - [Light Scattering](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/LightScattering.html)
+
+---
 
 ## December 6 2024 Update
 
