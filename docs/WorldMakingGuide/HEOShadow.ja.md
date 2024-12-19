@@ -1,20 +1,18 @@
-# HEOShadowの使い方
+# VKC Node Shadow/HEO Shadowの使い方
 
 ## 概要
 
-HEOShadowを使うことで、動的影（シャドウマップ）を設定することができます。
+VKC Node Shadow/HEO Shadowを使うことで、動的影（シャドウマップ）を設定することができます。
 
 !!! info "検証環境"
-    SDKバージョン : 4.1.4
-    OS : Windows 10
-    Unity : 2019.4.31.f1
+    SDKバージョン : 4.1.4<br>
+    OS : Windows 10<br>
+    Unity : 2019.4.31.f1<br>
     ブラウザ : Google Chrome
 
-VketCloudSDK13以降で名称が変化しています。
-
-HEOShadow → VKCNodeShadow
-
-※出来ることは変わっていないので、読み替えてください。
+!!! warning "VketCloudSDK13以降で名称が変化しています。"
+    HEOShadow → VKCNodeShadow<br>
+    ※出来ることは変わっていないので、読み替えてください。
 
 ## 手順
 
@@ -36,8 +34,9 @@ HEOShadow → VKCNodeShadow
         
 ### ①HEOShadowのアタッチ
 
+オブジェクトにHEOShadowをアタッチします。
 
-
+![HEOShadow](img/HEOShadow_01.jpg)
 
 ・影を映し出すオブジェクト
 　→ Is Shadow Caster にチェックを入れます。
@@ -47,14 +46,17 @@ HEOShadow → VKCNodeShadow
 
 ひとつのオブジェクトをCasterとReceiverの両方に設定することも可能です。
 
-### ②シーンJsonのrendering項目にshadowtypeを追加
+### ②VKC Setting Rendering内のShadowTypeを変更
 
-上記画像のように、"shadowtype":"normalshadowmap" の記載を追加します。
+![HEOShadow](img/HEOShadow_02.jpg)
+
+Vket Setting Rendering設定内の Shadow Typeを`Normal Shadow Map`に変更します。
+※この画像のみVer13.7.7環境の画面キャプチャを使用しています
 
 ### ③確認
 ブラウザを更新することで、HEOShadow設定が読み込まれます。
 
-![HEOShadow](img/HEOShadow_01.jpg)
+![HEOShadow](img/HEOShadow_03.jpg)
 
 HEOShadowが設定されたオブジェクトの影がリアルに表現されます。
 
@@ -63,7 +65,7 @@ HEOShadowが設定されたオブジェクトの影がリアルに表現され�
 HEOShadowで動的影が出力されるのは、HEOShadowをアタッチしたオブジェクトのみになります。
 HEOShadowがアタッチされていないオブジェクトは影を表示しない + 影が投影されない状態となります。
 
-![HEOShadow](img/HEOShadow_02.jpg)
+![HEOShadow](img/HEOShadow_04.jpg)
 
 上記画像では、黄色のオブジェクトにのみHEOShadowを入れ、空中にあるCubeにはCaster設定、床にはReceiver設定を行っています。
 
@@ -71,7 +73,7 @@ HEOShadowがアタッチされていないオブジェクトは影を表示し�
 
 ## HEOShadowによる影の生成の比較
 
-![HEOShadow](img/HEOShadow_03.jpg)
+![HEOShadow](img/HEOShadow_05.jpg)
 
 床とVketちゃんの右上の黄色CubeにHEOShadowを入れ、
 それぞれのHEOShadowのCasterとReceiverの設定を変更した時の影のでき方の違いを画像にしています。
@@ -82,22 +84,22 @@ Cubeに影が投影される場合、Cubeの上に乗って撮影しています
 
 | 床 Caster | 床 Receiver | Cube Caster | Cube Receiver | 画像 |
 | ---- | ---- | ---- | ---- | ---- |
-| false | false | false | false | ![HEOShadow](img/HEOShadow_04.jpg) |
-| true | false | false | false | ![HEOShadow](img/HEOShadow_05.jpg) |
-| false | true | false | false | ![HEOShadow](img/HEOShadow_06.jpg) |
-| true | true | false | false | ![HEOShadow](img/HEOShadow_07.jpg) |
-| false | false | true | false | ![HEOShadow](img/HEOShadow_08.jpg) |
-| true | false | true | false | ![HEOShadow](img/HEOShadow_09.jpg) |
-| false | true | true | false | ![HEOShadow](img/HEOShadow_10.jpg) |
-| true | true | true | false | ![HEOShadow](img/HEOShadow_11.jpg) |
-| false | false | false | true | ![HEOShadow](img/HEOShadow_12.jpg) |
-| true | false | false | true | ![HEOShadow](img/HEOShadow_13.jpg) |
-| false | true | false | true | ![HEOShadow](img/HEOShadow_14.jpg) |
-| true | true | false | true | ![HEOShadow](img/HEOShadow_15.jpg) |
-| false | false | true | true | ![HEOShadow](img/HEOShadow_16.jpg) |
-| true | false | true | true | ![HEOShadow](img/HEOShadow_17.jpg) |
-| false | true | true | true | ![HEOShadow](img/HEOShadow_18.jpg) |
-| true | true | true | true | ![HEOShadow](img/HEOShadow_19.jpg) |
+| false | false | false | false | ![HEOShadow](img/HEOShadow_06.jpg) |
+| true | false | false | false | ![HEOShadow](img/HEOShadow_07.jpg) |
+| false | true | false | false | ![HEOShadow](img/HEOShadow_08.jpg) |
+| true | true | false | false | ![HEOShadow](img/HEOShadow_09.jpg) |
+| false | false | true | false | ![HEOShadow](img/HEOShadow_10.jpg) |
+| true | false | true | false | ![HEOShadow](img/HEOShadow_11.jpg) |
+| false | true | true | false | ![HEOShadow](img/HEOShadow_12.jpg) |
+| true | true | true | false | ![HEOShadow](img/HEOShadow_13.jpg) |
+| false | false | false | true | ![HEOShadow](img/HEOShadow_14.jpg) |
+| true | false | false | true | ![HEOShadow](img/HEOShadow_15.jpg) |
+| false | true | false | true | ![HEOShadow](img/HEOShadow_16.jpg) |
+| true | true | false | true | ![HEOShadow](img/HEOShadow_17.jpg) |
+| false | false | true | true | ![HEOShadow](img/HEOShadow_18.jpg) |
+| true | false | true | true | ![HEOShadow](img/HEOShadow_19.jpg) |
+| false | true | true | true | ![HEOShadow](img/HEOShadow_20.jpg) |
+| true | true | true | true | ![HEOShadow](img/HEOShadow_21.jpg) |
 
 ## 結論
 
@@ -111,14 +113,14 @@ Receiverに設定されたオブジェクトに影が投影される範囲にHEO
 
 ### ①一人称視点時の仕様
 
-![HEOShadow](img/HEOShadow_20.jpg)
+![HEOShadow](img/HEOShadow_22.jpg)
 
 一人称視点のとき、真下を向いても自分自身の影は表示されません。
 
 ### ②カメラ撮影時の仕様
 
-![HEOShadow](img/HEOShadow_21.jpg)
-![HEOShadow](img/HEOShadow_22.jpg)
+![HEOShadow](img/HEOShadow_23.jpg)
+![HEOShadow](img/HEOShadow_24.jpg)
 
 カメラで視点を変更しても、影は変わりません。  
 そのため、カメラを起動した地点より遠くにあるオブジェクトは影がない、  
@@ -126,13 +128,13 @@ Receiverに設定されたオブジェクトに影が投影される範囲にHEO
 
 ### ③HEOMirrorの中の動的影
 
-![HEOShadow](img/HEOShadow_23.jpg)
+![HEOShadow](img/HEOShadow_25.jpg)
 
 HEOMirrorの鏡像の影はプレイヤー位置によって発生している影と同じものになります。
 
 ### ④その他動的影にまつわるパラメータ
 
-[シーンファイル仕様 | rendering](https://hikky.atlassian.net/wiki/spaces/VKETCLOUD/pages/222136775#rendering) に記載がありますが、動的影を調整するパラメータがあります。
+Vket Rendering Settings内に動的影を調整するパラメータがあります。
 
 **shadowbias**  
 影描画のバイアスを設定します。
@@ -145,7 +147,7 @@ HEOMirrorの鏡像の影はプレイヤー位置によって発生している�
 
 ### ⑤Directional Lightの影響
 
-![HEOShadow](img/HEOShadow_24.jpg)
+![HEOShadow](img/HEOShadow_26.jpg)
 
 Directional Lightの角度を変更することで、動的影の角度を変更できます。
 
