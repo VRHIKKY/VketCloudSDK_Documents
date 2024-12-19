@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## December 20 2024 - Update
+
+## December 20 2024 - AddedPage
+
+- World Making Guide
+    - [How to Use HEOProperty (Vket Cloud Property Function)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
+
+
 ## December 13 2024 Update
 
 ## December 13 2024 - Edited Pages

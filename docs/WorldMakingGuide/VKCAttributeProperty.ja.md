@@ -1,4 +1,4 @@
-# VKC Attribute Property
+# HEOProperty(Vket Cloudのプロパティ機能)の使い方
 
 ![VKCAttributeProperty_1](./img/VKCAttributeProperty_1.jpg)
 
