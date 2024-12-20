@@ -1,11 +1,21 @@
 # SDK Manual Change Log - Ver 14.2
 
-## January 10 2025 Update
+## December 20 2024 Update
 
-## January 10 2025 - Added Pages
+## December 20 2024 - Added Page
 
 - World Making Guide
+    - [How to Use HEOProperty (Vket Cloud Property Function)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
+    - [How to Use VKC Node Shadow/HEO Shadow](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/HEOShadow.html)
+    - [Activity With Motion](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ActivityWithMotion.html)
     - [Execute Activity Json Method](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ExecuteActivityJsonMethod.html)
+
+## December 20 2024 - Edited Page
+
+- VKCComponent
+    - The utilization methods have been divided into sections in [HEOProperty (Using the Vket Cloud Property Functionality)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html).
+
+---
 
 ## December 13 2024 Update
 
