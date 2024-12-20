@@ -122,6 +122,7 @@ plugins:
             How to Use VKC Item Background Texture: VKC Item Background Textureの使い方
             Implementing text that follows the player: プレイヤーに追従するテキストの実装
             Light Scattering: ライトスキャタリング
+            How to Use VKC Node Shadow: VKC Node Shadowの使い方
             Activity With Motion: モーション付きアクティビティ
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
@@ -335,6 +336,7 @@ nav:
     - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
     - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
     - Light Scattering: WorldMakingGuide/LightScattering.md
+    - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
     - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md

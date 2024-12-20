@@ -1,11 +1,14 @@
 # SDK Manual Change Log - Ver 14.2
 
-## January 14 2024 Update
+## December 20 2024 Update
 
-## January 14 2024 - Added Page
+## December 20 2024 - Added Page
 
 - World Making Guide
+    - [How to Use VKC Node Shadow/HEO Shadow](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/HEOShadow.html)
     - [Activity With Motion](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ActivityWithMotion.html)
+
+---
 
 ## December 13 2024 Update
 
