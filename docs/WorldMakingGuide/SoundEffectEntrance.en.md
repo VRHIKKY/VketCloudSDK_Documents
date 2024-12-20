@@ -1,4 +1,3 @@
-@ -0,0 +1,74 @@
 # Playing Entrance Sound Effects Only Under Specific Conditions
 
 This explains how to play entrance sound effects under specific conditions.
@@ -67,6 +66,7 @@ void SetAnnounceSound() // Load the announcement sound
         announceItem.Load();
     }
 }
+```
 
 ### Additional Insights
 
