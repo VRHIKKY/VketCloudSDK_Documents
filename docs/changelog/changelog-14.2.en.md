@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.2
 
+## January 10 2025 Update
+
+## January 10 2025 - Added Pages
+
+- World Making Guide
+    - [Execute Activity Json Method](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ExecuteActivityJsonMethod.html)
+
 ## December 13 2024 Update
 
 ## December 13 2024 - Edited Pages
