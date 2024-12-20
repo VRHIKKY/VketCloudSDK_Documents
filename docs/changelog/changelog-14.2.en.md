@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## January 10 2025 Update
+
+## January 10 2025 - Edited Pages
+
+- Trouble shooting
+    - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/BuildError.html)
+        - Added error list.
+
 ## December 13 2024 Update
 
 ## December 13 2024 - Edited Pages
