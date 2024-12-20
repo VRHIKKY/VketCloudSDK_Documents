@@ -5,6 +5,8 @@
 ## December 20 2024 - Added Page
 
 - World Making Guide
+    - [Play Sound Effect Only Under Specific Conditions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/SoundEffectEntrance.html)
+        - Playing Entrance Sound Effects Only Under Specific Conditions
     - [How to Use HEOProperty (Vket Cloud Property Function)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
     - [How to Use VKC Node Shadow/HEO Shadow](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/HEOShadow.html)
     - [Activity With Motion](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ActivityWithMotion.html)
