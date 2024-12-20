@@ -1,5 +1,5 @@
 # SDK Manual Change Log - Ver 14.2
-
+    
 ## 2024年12月20日更新
 
 ## 2024年12月20日 - 追加されたページ
@@ -8,6 +8,7 @@
     - [HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
     - [VKC Node Shadow/HEO Shadowの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/HEOShadow.html)
     - [モーション付きアクティビティ](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ActivityWithMotion.html)
+    - [Activityのjsonのメソッドを実行する](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ExecuteActivityJsonMethod.html)
 
 ## 2024年12月20日 - 変更されたページ
 - VKCコンポーネント
