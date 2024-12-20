@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.2
 
+## December 20 2024 Update
+
+## December 20 2024 - Added Page
+
+- World Making Guide
+    - [Play Sound Effect Only Under Specific Conditions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/SoundEffectEntrance.html)
+        - Playing Entrance Sound Effects Only Under Specific Conditions
+
+---
+
 ## December 13 2024 Update
 
 ## December 13 2024 - Edited Pages
