@@ -123,6 +123,8 @@ plugins:
             Implementing text that follows the player: プレイヤーに追従するテキストの実装
             Light Scattering: ライトスキャタリング
             How to Use HEOProperty (Vket Cloud Property Function) : HEOProperty(Vket Cloudのプロパティ機能)の使い方
+            How to Use VKC Node Shadow: VKC Node Shadowの使い方
+            Activity With Motion: モーション付きアクティビティ
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -336,6 +338,8 @@ nav:
     - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
     - Light Scattering: WorldMakingGuide/LightScattering.md
     - How to Use HEOProperty (Vket Cloud Property Function): WorldMakingGuide/VKCAttributeProperty.md
+    - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
+    - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
