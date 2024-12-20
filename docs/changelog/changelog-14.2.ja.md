@@ -6,6 +6,7 @@
 
 - ワールド制作ガイド
     - [VKC Node Shadow/HEO Shadowの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/HEOShadow.html)
+    - [モーション付きアクティビティ](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ActivityWithMotion.html)
 
 ---
 
