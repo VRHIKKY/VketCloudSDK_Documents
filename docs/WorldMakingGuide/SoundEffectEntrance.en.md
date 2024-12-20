@@ -70,6 +70,6 @@ void SetAnnounceSound() // Load the announcement sound
 
 ### Additional Insights
 
-It seems that the sound effect will play even if Auto Loading is set to true and UnLoad() is called in the constructor.
+It seems that the sound effect will play even if Auto Loading is set to true and Unload() is called in the constructor.
 
 ![SoundEffect_Entrance_4](img/SoundEffect_Entrance_4.jpg)

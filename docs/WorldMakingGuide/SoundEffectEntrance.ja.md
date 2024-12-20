@@ -72,6 +72,6 @@ void SetAnnounceSound()//アナウンス音のロード
 
 ## その他知見
 
-Auto Loadingをtrueにして、コンストラクタでUnLoad()しても効果音は鳴るみたいです。
+Auto Loadingをtrueにして、コンストラクタでUnload()しても効果音は鳴るみたいです。
 
 ![SoundEffect_Entrance_4](img/SoundEffect_Entrance_4.jpg)
