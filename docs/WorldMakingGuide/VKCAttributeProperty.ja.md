@@ -1,4 +1,4 @@
-# VKC Attribute Property
+# HEOProperty(Vket Cloudのプロパティ機能)の使い方
 
 ![VKCAttributeProperty_1](./img/VKCAttributeProperty_1.jpg)
 
@@ -127,6 +127,100 @@ HeliScriptでは、以上の3通りの関数が用意されています。
 
 ---
 
+## 活用方法
+
+VKC Attribute Propertyの活用例を紹介します。
+
+### 1. アクティビティへの値渡し
+
+!!! tip "アクティビティにおけるプロパティ定義について"
+    以前のバージョンとは異なり、アクティビティにプロパティを設定して値渡しを行うには、VKCAttributePropertyを使用せずにアクティビティのjsonファイルにて定義を行うのがおすすめです。<br>
+    詳しくは[VKC Activity Exporter: Activity / Propertyの設定について](../SDKTools/VKCActivityExporter.md#activity-property)をご参照ください。
+
+### 2. コンポーネント間の値渡し
+
+コンポーネント間で値渡しをする際、以下のようにVKC Attribute Propertyを使用できます。<br>  
+※値を変更する関数を用意して、`hsCallComponentMethod()`を使用しても同じことができます。
+
+```c#
+// exampleA exampleBの2つのコンポーネントとKey:status, Value:aliveを持つアイテム「Monster」があり、
+// exampleAがもつ変数HPの値が0以下になった際、exampleBで動作が発生する場合
+
+component exampleA{
+
+  int HP;
+  Item m_Item;
+
+  public exampleA{
+    HP = 20;
+    m_Item = hsItemGet("Monster");
+  }
+  
+  public void damage(){
+    HP--;
+    if(HP<=0){
+      m_Item.SetProperty("status","death");
+    }
+  }
+}
+
+component exampleB{
+
+  int status;
+
+  public exampleB{
+    status = 1;
+  }
+
+  public void OnChangedProperty(string Key, string Value){
+    if(Key == "status"){
+      switch(Value){
+        case: "alive"
+          hsSystemWriteLine("モンスターが　あらわれた！");
+          status = 1;
+          break;
+        case: "poison"
+          hsSystemWriteLine("モンスターが　どくを　あびた！");
+          status = 2;
+          break;
+        case: "death"
+          hsSystemWriteLine("モンスターを　やっつけた！");
+          status = -1;
+          break;
+      }
+    }
+  }
+}
+```
+
+### 3. Unityの\[SerializeField\]属性的運用
+
+「2. コンポーネントへの値渡し」と同様に、VKC Attribute Propertyから変数の中身を定義するように設定しておくことで、Unityエディタ上でパラメータ設定を行うことができるようになります。
+
+ただし、KeyおよびValueはすべてstring値であることは注意が必要です。
+
+```c#
+component exampleC{
+  int HP;
+  int damage;
+  string skill;
+  Item m_Item;
+  
+  public exampleC{
+    m_Item = hsItemGet("Monster");
+    HP = m_Item.GetProperty("HP").ToInt();
+    damage = m_Item.GetProperty("damage").ToInt();
+    skill = m_Item.GetProperty("skill");
+  }
+}
+
+//上記の設定を行い、Unity上で「Monster」オブジェクトに対しVKC Attribute Propertyを付け、
+//HP:30、damage:3、skill:れんぞく斬り　とした場合、
+//それぞれの入力内容がHeliScriptの変数に適用される
+```
+
+---
+
 ## 注意点
 
 ### 1. SetProperty / GetPropertyする際は対象となるアイテムに注意
@@ -143,6 +237,3 @@ HeliScript上で対象となるアイテムを間違えると、上手く動作�
 少し上でも解説した通り、KeyおよびValueはString型となるため、String型以外の変数を扱う場合、SetPropertyやGetPropertyする際に型変換を行う必要があります。
 
 型変換を行わずにSetPropertyやGetPropertyした場合、nullとなります。
-
-##　関連ページ
-    - [HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)

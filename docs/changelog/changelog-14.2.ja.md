@@ -5,8 +5,13 @@
 ## 2024年12月20日 - 追加されたページ
 
 - ワールド制作ガイド
+    - [HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
     - [VKC Node Shadow/HEO Shadowの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/HEOShadow.html)
     - [モーション付きアクティビティ](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ActivityWithMotion.html)
+
+## 2024年12月20日 - 変更されたページ
+- VKCコンポーネント
+    - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeProperty.html)    
 
 ---
 
