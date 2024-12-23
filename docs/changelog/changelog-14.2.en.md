@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## January 10 2025 Update
+
+## January 10 2025 - Added Page
+
+- HeliScript
+    - Tips/HeliScript Guide
+        - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
+
 ## December 20 2024 Update
 
 ## December 20 2024 - Added Page
