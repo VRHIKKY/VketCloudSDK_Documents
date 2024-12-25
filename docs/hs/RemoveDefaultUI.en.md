@@ -5,6 +5,8 @@ In this article, we'll introduce how to remove these UI elements.
 
 ![RemoveDefaultUI00](img/RemoveDefaultUI00.jpg)
 
+The existing UI is displayed, and in addition, a text chat overlaps at the bottom right of the right page.
+
 !!! info
     SDK Version: 14.1.2<br>
     OS: Windows 10<br>

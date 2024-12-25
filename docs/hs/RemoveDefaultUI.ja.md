@@ -6,6 +6,8 @@ Activityで新規に実装したUIを表示する際、既存のUIを一時的�
 
 ![RemoveDefaultUI00](img/RemoveDefaultUI00.jpg)
 
+既存UIが出ているほか、右ページ右下にテキストチャットが被っている。
+
 !!! info
     SDKバージョン : 14.1.2<br>
     OS : Windows10<br>
