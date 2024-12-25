@@ -122,6 +122,11 @@ plugins:
             How to Use VKC Item Background Texture: VKC Item Background Textureの使い方
             Implementing text that follows the player: プレイヤーに追従するテキストの実装
             Light Scattering: ライトスキャタリング
+            Playing Entrance Sound Effects Only Under Specific Conditions: 特定の条件下でのみ入場時効果音を鳴らす
+            Execute Activity Json Method: Activityのjsonのメソッドを実行する
+            How to Use HEOProperty (Vket Cloud Property Function) : HEOProperty(Vket Cloudのプロパティ機能)の使い方
+            How to Use VKC Node Shadow: VKC Node Shadowの使い方
+            Activity With Motion: モーション付きアクティビティ
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -220,6 +225,8 @@ plugins:
             Set Generic Window State: 汎用ウィンドウステータスを指定する
             Voice Chat: ボイスチャット
             Enter/Leave Voice Group: 音声グループに参加/退出
+            Tips/HeliScript Guide: Tips/HeliScriptガイド
+            Remove Default UI: 既存UIの消し方
             Web: ウェブ
             Open Links in New Tab: 新しいタブでWEBページを開く
             Open Links in Current Tab: 現在のタブでWEBページを開く
@@ -334,6 +341,11 @@ nav:
     - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
     - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
     - Light Scattering: WorldMakingGuide/LightScattering.md
+    - Playing Entrance Sound Effects Only Under Specific Conditions: WorldMakingGuide/SoundEffectEntrance.md
+    - Execute Activity Json Method: WorldMakingGuide/ExecuteActivityJsonMethod.md
+    - How to Use HEOProperty (Vket Cloud Property Function): WorldMakingGuide/VKCAttributeProperty.md
+    - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
+    - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -529,6 +541,8 @@ nav:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
+    - Tips/HeliScript Guide:
+        - Remove Default UI: hs/RemoveDefaultUI.md
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md
