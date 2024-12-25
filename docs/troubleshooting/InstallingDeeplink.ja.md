@@ -43,7 +43,7 @@ Unity上部に「VketCloudSDK」の表示がない状態になることがあり
 
 ![InstallingDeeplink_5](./img/InstallingDeeplink_7.jpg)
 
-Project SettingsのPlayerのConfiguraitionのApi Compatibility Levelが.NET 4.xになっていない可能性があります。更新しましょう。
+Project SettingsのPlayerのConfigurationのApi Compatibility Levelが.NET 4.xになっていない可能性があります。更新しましょう。
 
 それでも表示されない場合、一度Unityを再起動し、エラーコンソールを確認してください。
 
