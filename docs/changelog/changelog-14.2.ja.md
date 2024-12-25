@@ -2,11 +2,39 @@
 
 ## 2025年1月10日更新
 
+## 2025年1月10日 - 追加されたページ
+
+- HeliScript
+    - Tips/HeliScriptガイド
+        - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
+
 ## 2025年1月10日 - 変更されたページ
 
-- トラブルシューティング
-    - [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
+- [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
         - エラー一覧を追加しました
+- トラブルシューティング
+    - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/InstallingDeeplink.html)
+        - 対処法を追加
+
+---
+
+## 2024年12月20日更新
+
+## 2024年12月20日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [特定の条件下でのみ入場時効果音を鳴らす](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/SoundEffectEntrance.html)
+        - 特定の条件下でのみ入場時効果音を鳴らす
+    - [HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
+    - [VKC Node Shadow/HEO Shadowの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/HEOShadow.html)
+    - [モーション付きアクティビティ](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ActivityWithMotion.html)
+    - [Activityのjsonのメソッドを実行する](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ExecuteActivityJsonMethod.html)
+
+## 2024年12月20日 - 変更されたページ
+- VKCコンポーネント
+    - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeProperty.html)    
+
+---
 
 ## 2024年12月13日更新
 

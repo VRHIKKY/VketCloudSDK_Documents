@@ -2,11 +2,40 @@
 
 ## January 10 2025 Update
 
+## January 10 2025 - Added Page
+
+- HeliScript
+    - Tips/HeliScript Guide
+        - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
+
 ## January 10 2025 - Edited Pages
 
 - Trouble shooting
     - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/BuildError.html)
         - Added error list.
+    - [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/InstallingDeeplink.html)
+        - Added solutions.
+
+---
+
+## December 20 2024 Update
+
+## December 20 2024 - Added Page
+
+- World Making Guide
+    - [Play Sound Effect Only Under Specific Conditions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/SoundEffectEntrance.html)
+        - Playing Entrance Sound Effects Only Under Specific Conditions
+    - [How to Use HEOProperty (Vket Cloud Property Function)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
+    - [How to Use VKC Node Shadow/HEO Shadow](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/HEOShadow.html)
+    - [Activity With Motion](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ActivityWithMotion.html)
+    - [Execute Activity Json Method](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ExecuteActivityJsonMethod.html)
+
+## December 20 2024 - Edited Page
+
+- VKCComponent
+    - The utilization methods have been divided into sections in [HEOProperty (Using the Vket Cloud Property Functionality)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html).
+
+---
 
 ## December 13 2024 Update
 
