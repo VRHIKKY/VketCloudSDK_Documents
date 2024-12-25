@@ -11,6 +11,8 @@
 ## January 10 2025 - Edited Pages
 
 - Trouble shooting
+    - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/BuildError.html)
+        - Added error list.
     - [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/InstallingDeeplink.html)
         - Added solutions.
 
