@@ -31,3 +31,22 @@ VketCloudSDKをインストール後に再起動しても立ち上がらない�
 インストールできたら、Package ManagerでDeeplinkのバージョンなどのインフォメーションが表示します。
 
 ![InstallingDeeplink_5](./img/InstallingDeeplink_5.jpg)
+
+## VketCloudSDKタブが表示されない
+
+![InstallingDeeplink_5](./img/InstallingDeeplink_6.jpg)
+
+Unity上部に「VketCloudSDK」の表示がない状態になることがあります。
+ここでは特に多い2パターンについて紹介します。
+
+### Api Compatibility Levelを.NET 4.xにする
+
+![InstallingDeeplink_5](./img/InstallingDeeplink_7.jpg)
+
+Project SettingsのPlayerのConfigurationのApi Compatibility Levelが.NET 4.xになっていない可能性があります。更新しましょう。
+
+それでも表示されない場合、一度Unityを再起動し、エラーコンソールを確認してください。
+
+### VRChat関連の資材が入っている
+
+特にUdonスクリプトやVRM変換スクリプト、UniGLTFスクリプトあたりは誤作動を起こしやすいです。これらとVketCloudの共存は難しいので、スクリプト類(.cs)はすべて削除するのが一番早い解決方法となります。VRCから資材を移植する際は、スクリプトはVketCloudでは使用できないことを留意しておきましょう。

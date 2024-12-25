@@ -8,6 +8,14 @@
     - Tips/HeliScriptガイド
         - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
 
+## 2025年1月10日 - 変更されたページ
+
+- トラブルシューティング
+    - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/InstallingDeeplink.html)
+        - 対処法を追加
+
+---
+
 ## 2024年12月20日更新
 
 ## 2024年12月20日 - 追加されたページ

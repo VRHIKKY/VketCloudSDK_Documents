@@ -8,6 +8,14 @@
     - Tips/HeliScript Guide
         - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
 
+## January 10 2025 - Edited Pages
+
+- Trouble shooting
+    - [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/InstallingDeeplink.html)
+        - Added solutions.
+
+---
+
 ## December 20 2024 Update
 
 ## December 20 2024 - Added Page
