@@ -4,6 +4,8 @@
 
 ## January 10 2025 - Added Page
 
+- World Making Guide
+    - [How to check the Chrome Developer Tools console on iPhone alone](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/iPhoneConsole.html)
 - HeliScript
     - Tips/HeliScript Guide
         - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
