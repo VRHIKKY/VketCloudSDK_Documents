@@ -46,7 +46,6 @@
         - Added a note that login and API integration are not possible with local builds.
 - HeliScript
     - [Components / Callback Functions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_component.html)
-            - Added a description of the callback - ItemCollider
             - Added a description of the callback - Message
     - Built-in Classes and Functions
         - [Quaternion Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_struct_quaternion.html)
@@ -60,10 +59,7 @@
             - Added explanation of the SetUVScale function
             - Added explanation of the SetMaterialColor function
             - Added explanation of the SetAlpha function
-            - Added explanation of the SetPlaneZBias function
-            - Added explanation of the GetPlaneZBias function
             - Added explanation of the ReplaceBackupTexture function
-            - Added explanation of the SetPropertyWithoutNotify function
             - Added explanation of the GetNumofPolygon function
             - Added explanation of the SendMessage function
         - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_date.html)
