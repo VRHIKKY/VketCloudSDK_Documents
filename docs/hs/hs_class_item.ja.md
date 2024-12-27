@@ -81,27 +81,6 @@ Item の名前を取得する。
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
-### GetParentItem
-
-`public Item GetParentItem()`
-
-Item 自身から見て、親に相当する Item を取得する。
-
-アクティビティはItem内にItemを持つ構造であるため、アクティビティ内Itemから GetParentItem() を呼び出すと、親のItemを取得できる。
-
-親Itemが存在しない場合、nullを返す。
-
-???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
-    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
-    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
-    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
-    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetPos
 
@@ -563,17 +542,6 @@ Item のロードが完了していた場合は true を、そうでない場合
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
-### SetUVScale
-
-`public bool SetUVScale(string materialName, float u, float v)`
-
-名前でマテリアルを指定し、uvスケールを変更する。変更に失敗すると false を返す。
-
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
-    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-
 ### SetUVOffset
 
 `public bool SetUVOffset(string materialName, float u, float v)`
@@ -587,18 +555,6 @@ Item のロードが完了していた場合は true を、そうでない場合
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-
-### SetMaterialColor
-
-`public bool SetMaterialColor(string materialName, float R, float G, float B, float A)`
-
-指定したマテリアルの色を変更します。
-
-オブジェクトがロードされていない場合や、未対応のオブジェクトタイプの場合はfalseが返ります。
-
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
-    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetAlpha
 
@@ -664,24 +620,6 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
-
-### SetPlaneZBias
-
-`public void SetPlaneZBias(float ZBias)`
-
-VKC Item Plane の Z-Bias を設定する。
-
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-
-### GetPlaneZBias
-
-`public float GetPlaneZBias()`
-
-VKC Item Plane の Z-Bias を取得する。
-
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### SetCamera
 
@@ -779,26 +717,6 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
-    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
-    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
-    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
-    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
-
-### SetPropertyWithoutNotify
-
-`public bool SetPropertyWithoutNotify(string Key, string Value)`
-
-プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
-
-SetProperty() と同等の機能を持つメソッドですが、SetPropertyWithoutNotify() でプロパティを変更した場合、コールバックメソッドの OnChangedProperty() が呼び出されません。
-
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
