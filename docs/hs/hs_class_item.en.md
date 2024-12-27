@@ -81,6 +81,28 @@ Get the name of the Item.
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
+### GetParentItem
+
+`public Item GetParentItem()`
+
+Retrieves the parent Item relative to the Item itself.
+
+Since an activity has a structure where an Item contains other Items, calling GetParentItem() from an Item within an activity will retrieve the parent Item.
+
+If there is no parent Item, it returns null.
+
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
 ### SetPos
 
 `public void SetPos(Vector3 pos)`
@@ -540,6 +562,17 @@ Specify a node by name and returns true if the node is clickable, false otherwis
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
+### SetUVScale
+
+`public bool SetUVScale(string materialName, float u, float v)`
+
+Specify a material by name and change the uv scale of that material. Returns false if the change fails.
+
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
 ### SetUVOffset
 
 `public bool SetUVOffset(string materialName, float u, float v)`
@@ -553,6 +586,18 @@ Specify a material by name and change the uv offset of that material **starting 
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### SetMaterialColor
+
+`public bool SetMaterialColor(string materialName, float R, float G, float B, float A)`
+
+Changes the color of the specified material.
+
+Returns false if the object is not loaded or if the object type is not supported.
+
+??? note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetAlpha
 

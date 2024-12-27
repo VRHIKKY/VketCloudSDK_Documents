@@ -54,6 +54,9 @@
             - GetEuler関数の説明を追加しました
             - GetEulerVector3関数の説明を追加しました
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_item.html)
+            - GetParentItem関数の説明を追加しました
+            - SetUVScale関数の説明を追加しました
+            - SetMaterialColor関数の説明を追加しました
             - SetAlpha関数の説明を追加しました
             - ReplaceBackupTexture関数の説明を追加しました
             - GetNumofPolygon関数の説明を追加しました
