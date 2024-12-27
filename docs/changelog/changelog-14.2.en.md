@@ -1,5 +1,7 @@
 # SDK Manual Change Log - Ver 14.2
 
+
+
 ## January 10 2025 Update
 
 ## January 10 2025 - Added Page
@@ -7,7 +9,9 @@
 - HeliScript
     - Tips/HeliScript Guide
         - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
-
+- FAQ
+    - [About the Split Function](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Sprit.html)
+    
 ## January 10 2025 - Edited Pages
 
 - Trouble shooting
