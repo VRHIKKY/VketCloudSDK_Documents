@@ -10,7 +10,8 @@ CallScriptを行った際、parameterに変数を複数登録したいときに�
 
 ![HSSprit](img/HSSprit.jpg)
 
-```
+
+```C#
 //第1引数の文字列を、第2引数の文字で分割して、リストを返す。
     public list<string> Split(string str, string separator)
     {

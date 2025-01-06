@@ -10,7 +10,7 @@ Additionally, it becomes easier to set variables according to their respective r
 
 ![HSSprit](img/HSSprit.jpg)  
 
-```
+```C#
 // Splits the first argument string using the second argument character and returns a list.
     public list<string> Split(string str, string separator)
     {
