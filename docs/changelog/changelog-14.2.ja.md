@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2025年1月17日更新
+
+## 2025年1月10日 - 変更されたページ
+
+- ワールド制作ガイド
+    - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html#_2)
+        - pngの大文字制限についての記述を削除
+
 ## 2025年1月10日更新
 
 ## 2025年1月10日 - 追加されたページ
