@@ -7,7 +7,7 @@ However, by connecting to a Mac OS computer, you can access the developer tools.
 This page will introduce that method.
 
 !!! info "Test Environment"
-    OS : iOS 16.5.1
+    OS : iOS 16.5.1<br>
     Browser : Google Chrome(App)
 
 ## Steps
