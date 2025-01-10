@@ -7,6 +7,8 @@
 - HeliScript
     - Tips/HeliScriptガイド
         - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
+- FAQ
+    - [アクティビティに同封した.mp3音源ファイルがビルド時に出力されない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/AudioExportWithMeta.html)
 
 ## 2025年1月10日 - 変更されたページ
 - ワールド制作ガイド
@@ -17,6 +19,8 @@
         - エラー一覧を追加しました
     - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/InstallingDeeplink.html)
         - 対処法を追加
+    - [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
+        - エラー一覧を追加しました
 
 ---
 
