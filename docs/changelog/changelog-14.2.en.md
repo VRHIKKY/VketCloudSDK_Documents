@@ -1,13 +1,5 @@
 # SDK Manual Change Log - Ver 14.2
 
-## january 17 2025 Update
-
-## january 17 2025  - Edited Pages
-
-- World Making Guide
-    - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html#_2)
-        - Remove the description about uppercase restrictions for PNG.
-
 ## January 10 2025 Update
 
 ## January 10 2025 - Added Page
@@ -17,7 +9,9 @@
         - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
 
 ## January 10 2025 - Edited Pages
-
+- World Making Guide
+    - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html#_2)
+        - Remove the description about uppercase restrictions for PNG.
 - Trouble shooting
     - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/BuildError.html)
         - Added error list.
