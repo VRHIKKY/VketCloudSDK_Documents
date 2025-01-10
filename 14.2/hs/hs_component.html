@@ -1715,6 +1715,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1860,6 +1864,48 @@
   
   <span class="md-ellipsis">
     SphereColliderをクリックしても反応しない場合の解決方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/HS_Split.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Split関数について
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/AudioExportWithMeta.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
   </span>
   
 
@@ -5664,6 +5710,8 @@
       
         
       
+        
+      
     
     
     
@@ -6032,15 +6080,6 @@
   <a href="#-areacollider" class="md-nav__link">
     <span class="md-ellipsis">
       コールバック - AreaCollider
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-itemcollider" class="md-nav__link">
-    <span class="md-ellipsis">
-      コールバック - ItemCollider
     </span>
   </a>
   
@@ -6892,6 +6931,74 @@
   
   <span class="md-ellipsis">
     演算子
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_14_11" id="__nav_14_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tips/HeliScriptガイド
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14_11">
+            <span class="md-nav__icon md-icon"></span>
+            Tips/HeliScriptガイド
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RemoveDefaultUI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    既存UIの消し方
   </span>
   
 
@@ -10867,15 +10974,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-itemcollider" class="md-nav__link">
-    <span class="md-ellipsis">
-      コールバック - ItemCollider
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#-_6" class="md-nav__link">
     <span class="md-ellipsis">
       コールバック - オブジェクト選択解除
@@ -11096,28 +11194,6 @@
         hsSystemOutput(&quot;OnLeaveAreaCollider &quot; + m_Item.GetName() + &quot;\n&quot;);
     }
 }
-</code></pre></div>
-
-<h2 id="-itemcollider">コールバック - ItemCollider</h2>
-<p>以下のようにOnItemEnterCollider, OnItemLeaveColliderメソッドを定義しておくと、このコンポーネントを持つItemが別のItem内ノードのコライダーに侵入・退出した時に呼び出されます。現在対応している衝突形状はボックスコライダーのみです。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">CollisionTest</span>
-<span class="err">{</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">OnItemEnterCollider</span><span class="p">(</span><span class="nc">int</span><span class="w"> </span><span class="n">ItemInstanceID</span><span class="p">,</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
-<span class="w">    </span><span class="err">{</span>
-<span class="w">        </span><span class="n">Item</span><span class="w"> </span><span class="n">CollidedItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGetByInstanceID</span><span class="p">(</span><span class="n">ItemInstanceID</span><span class="p">);</span>
-<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">NodeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetNodeNameByIndex</span><span class="p">(</span><span class="n">NodeIndex</span><span class="p">);</span>
-
-<span class="w">        </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="ss">&quot;[OnItemEnterCollider] ItemName: %s, NodeName: %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetName</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">NodeName</span><span class="p">);</span>
-<span class="w">    </span><span class="err">}</span>
-
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">OnItemLeaveCollider</span><span class="p">(</span><span class="nc">int</span><span class="w"> </span><span class="n">ItemInstanceID</span><span class="p">,</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
-<span class="w">    </span><span class="err">{</span>
-<span class="w">        </span><span class="n">Item</span><span class="w"> </span><span class="n">CollidedItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGetByInstanceID</span><span class="p">(</span><span class="n">ItemInstanceID</span><span class="p">);</span>
-<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">NodeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetNodeNameByIndex</span><span class="p">(</span><span class="n">NodeIndex</span><span class="p">);</span>
-
-<span class="w">        </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="ss">&quot;[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetName</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">NodeName</span><span class="p">);</span>
-<span class="w">    </span><span class="err">}</span>
-<span class="err">}</span>
 </code></pre></div>
 
 <h2 id="-_6">コールバック - オブジェクト選択解除</h2>

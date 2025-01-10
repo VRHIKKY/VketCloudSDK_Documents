@@ -1717,6 +1717,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#error-message-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Message List
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1804,6 +1813,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1962,6 +1975,48 @@
   
   <span class="md-ellipsis">
     Solution for When Clicking on Sphere Collider Does Not Respond
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/HS_Split.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Split Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/AudioExportWithMeta.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The .mp3 audio file in the activity is not output during the build
   </span>
   
 
@@ -5764,6 +5819,8 @@
       
         
       
+        
+      
     
     
     
@@ -6748,6 +6805,74 @@
   
   <span class="md-ellipsis">
     Operator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_14_11" id="__nav_14_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tips/HeliScript Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14_11">
+            <span class="md-nav__icon md-icon"></span>
+            Tips/HeliScript Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/RemoveDefaultUI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remove Default UI
   </span>
   
 
@@ -10710,6 +10835,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#error-message-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Message List
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10851,6 +10985,103 @@ Refer to the pages below for instructions.</p>
 </table>
 <p>For example, if the browser is Chrome, enabling "Use hardware acceleration when available" via the "System" section on settings may fix the blackout.</p>
 <p><img alt="BrowserBlackWindow" src="../../troubleshooting/img/BrowserBlackWindow_en.jpg" /></p>
+<h2 id="error-message-list">Error Message List</h2>
+<table>
+<thead>
+<tr>
+<th>エラーメッセージ</th>
+<th>Timing of message appearance</th>
+<th>Cause</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>バイナリ出力に失敗しました</td>
+<td>During HeliScript check in loading</td>
+<td>When <code>T</code> in a member variable list (<code>list&lt;T&gt;</code>) is a class and is <code>new</code>ed at the definition</td>
+<td>An error saying "バイナリ出力に失敗しました" appears and the process freezes during the loading screen</td>
+</tr>
+<tr>
+<td>return文の最後に【;】がありません</td>
+<td>During HeliScript check in loading</td>
+<td>Forgot the <code>;</code> at the end of the return statement</td>
+<td></td>
+</tr>
+<tr>
+<td>クラスの中でのオブジェクト初期化は出来ません</td>
+<td>During HeliScript check in loading</td>
+<td>Initializing objects inside the class</td>
+<td></td>
+</tr>
+<tr>
+<td>【Vector3】は定数型として有効ではありません</td>
+<td>During HeliScript check in loading</td>
+<td>Tried to define a Vector3 class constant with <code>const</code><br><code>const</code> can only be applied to <code>int</code>, <code>float</code>, <code>bool</code>, and <code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td>引数配列型次元数【1】に対して、引数の次元数は【0】です</td>
+<td>During HeliScript check in loading</td>
+<td>Attempting to pass a non-list argument to a <code>list</code> parameter</td>
+<td></td>
+</tr>
+<tr>
+<td>【◯◯】はクラスメンバ名としては無効です</td>
+<td>During HeliScript check in loading</td>
+<td>Forgot to specify the method’s return type</td>
+<td></td>
+</tr>
+<tr>
+<td>関数【×××】の第◯引数は◯◯値ではなく◯◯参照です</td>
+<td>During HeliScript check in loading</td>
+<td>Incorrect type passed as an argument</td>
+<td></td>
+</tr>
+<tr>
+<td>float値に剰余演算は適用できません</td>
+<td>During HeliScript check in loading</td>
+<td>Attempted to perform a modulo operation on a float (e.g., <code>float % int</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>クラス【◯◯】にメンバ【××】は存在しません</td>
+<td>During HeliScript check in loading</td>
+<td>Incorrect class method name specified</td>
+<td></td>
+</tr>
+<tr>
+<td>delegate型でないオブジェクトを使って関数が呼び出されました</td>
+<td>During HeliScript check in loading</td>
+<td>Incorrect method name specified</td>
+<td></td>
+</tr>
+<tr>
+<td>関数定義ブロックの最後に【}】がありません</td>
+<td>During HeliScript check in loading</td>
+<td>This appears along with method name errors<br><code>}</code> was forgotten</td>
+<td></td>
+</tr>
+<tr>
+<td>【 REF 】命令 範囲外アクセスエラー (Page = ◯, Index = ◯) 要素数 = ◯ at {クラス名}::{メソッド名}</td>
+<td>During method execution</td>
+<td>An out-of-range reference<br>Attempted to reference a null Vector3 or Quaternion</td>
+<td>It’s unclear what "Page" refers to.<br>Page or element count can be negative.</td>
+</tr>
+<tr>
+<td>【 CALLMETHOD 】命令 Null reference error: Method "{クラス名}@{メソッド名}" was called from null object. at Helicopter::Helicopter</td>
+<td>During method execution</td>
+<td>The class instance on which the method was executed is null<br>Forgot initialization or called before initialization</td>
+<td></td>
+</tr>
+<tr>
+<td>関数呼び出しの深さ制限に到達しました</td>
+<td>During method execution</td>
+<td>Infinite loop in repeated processing</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 
