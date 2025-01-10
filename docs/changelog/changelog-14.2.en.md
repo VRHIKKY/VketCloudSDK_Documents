@@ -11,7 +11,8 @@
         - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
 - FAQ
     - [About the Split Function](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Split.html)
-    
+    - [The .mp3 audio file in the activity is not output during the build](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/AudioExportWithMeta.html)
+
 ## January 10 2025 - Edited Pages
 
 - Trouble shooting
@@ -50,7 +51,6 @@
         - Added a note that login and API integration are not possible with local builds.
 - HeliScript
     - [Components / Callback Functions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_component.html)
-            - Added a description of the callback - ItemCollider
             - Added a description of the callback - Message
     - Built-in Classes and Functions
         - [Quaternion Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_struct_quaternion.html)
@@ -64,10 +64,7 @@
             - Added explanation of the SetUVScale function
             - Added explanation of the SetMaterialColor function
             - Added explanation of the SetAlpha function
-            - Added explanation of the SetPlaneZBias function
-            - Added explanation of the GetPlaneZBias function
             - Added explanation of the ReplaceBackupTexture function
-            - Added explanation of the SetPropertyWithoutNotify function
             - Added explanation of the GetNumofPolygon function
             - Added explanation of the SendMessage function
         - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_date.html)
