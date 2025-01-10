@@ -1,17 +1,18 @@
-# About the Split Function  
+# Split関数について
 
-The Split function has been available as a standard feature of the String type in HeliScript since Lib10.0.  
+Split関数はLib10.0以降、HeliScriptのString型の標準機能になりました。
 
-If you want to use the Split function in earlier versions, please open the section below and use the provided method.  
+それより前のバージョンでSplit関数を使用したい場合は、下記の展開を開いて、メソッドをご使用ください
 
-When executing a CallScript and registering multiple variables in the parameter, you can use the Split function below to divide them into a list. By selecting each item by its index and assigning it to variables, you can increase the number of variables configurable in Unity.  
+CallScriptを行った際、parameterに変数を複数登録したいときに、下記のSplit関数で、listに分割して、それぞれの番号で選択して変数に格納してあげることで、Unity上で設定できる変数が増えます。
 
-Additionally, it becomes easier to set variables according to their respective roles. (The example screenshot shows variables being split using a comma `","`.)  
+また、それぞれの役割ごとに変数設定もしやすくなります。（スクリーンショットは、”,”で変数を分割するようにしています）
 
-![HSSprit](img/HSSprit.jpg)  
+![HSSplit](img/HSSplit.jpg)
+
 
 ```csharp
-// Splits the first argument string using the second argument character and returns a list.
+//第1引数の文字列を、第2引数の文字で分割して、リストを返す。
     public list<string> Split(string str, string separator)
     {
         list<string> result = new list<string>();

@@ -361,7 +361,7 @@ nav:
     - Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function : FAQ/hsItemGetOwnScene.md
     - Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: FAQ/UV2MeshBuildError.md
     - Solution for When Clicking on Sphere Collider Does Not Respond: FAQ/SphereCollider.md
-    -　About the Split Function: FAQ/HS_Sprit.md
+    -　About the Split Function: FAQ/HS_Split.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md

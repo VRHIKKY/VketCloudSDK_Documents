@@ -8,7 +8,7 @@
     - Tips/HeliScriptガイド
         - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
 -FAQ
-    - [Sprit関数について](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Sprit.html)
+    - [Split関数について](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Split.html)
 
 ## 2025年1月10日 - 変更されたページ
 
