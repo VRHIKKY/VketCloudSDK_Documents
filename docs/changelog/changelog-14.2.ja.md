@@ -7,7 +7,8 @@
 - HeliScript
     - Tips/HeliScriptガイド
         - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
-- FAQ
+-FAQ
+    - [Split関数について](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Split.html)
     - [アクティビティに同封した.mp3音源ファイルがビルド時に出力されない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/AudioExportWithMeta.html)
 
 ## 2025年1月10日 - 変更されたページ
