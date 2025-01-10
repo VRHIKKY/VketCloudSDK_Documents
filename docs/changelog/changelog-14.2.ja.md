@@ -9,8 +9,6 @@
         - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
 - トラブルシューティング
     - [ワールド入室後にマルチプレイができない時の確認ポイント](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/MultiplayerTroubleshooting.html)
-    - [UnityとVketCloudの見た目をそろえる](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/heoexporter/he_align_unity_to_vketcloud.html)
-
 
 ## 2025年1月10日 - 変更されたページ
 
