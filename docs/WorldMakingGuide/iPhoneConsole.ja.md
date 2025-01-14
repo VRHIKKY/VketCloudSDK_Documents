@@ -37,6 +37,8 @@ chrome://inspectと入力することにより、
 そのタブでのコンソール出力がchrome://inspectに記載されます。
 
 ![iPhoneConsole](img/iPhoneConsole03.jpg)
+
+
 ログ記録中は別タブでこのようにVketCloudを開いて通常通り操作します。
 
 ### ③ログ結果を確認
