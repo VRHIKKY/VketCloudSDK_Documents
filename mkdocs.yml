@@ -3,7 +3,7 @@ site_description: 'VketCloudSDKのマニュアルです'
 site_author: 'HIKKY'
 
 theme:
-  favicon: images/VketCloudIcon.png
+  favicon: images/Favicon.png
   logo: images/VketCloudIcon.png
   name: material
   palette:
