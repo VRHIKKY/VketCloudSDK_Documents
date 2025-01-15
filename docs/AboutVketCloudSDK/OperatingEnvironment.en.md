@@ -1,6 +1,6 @@
 # Operating Environment
 
-VketCloudSDK requires the following Unity editor version:
+Vket Cloud SDK requires the following Unity editor version:
 
 - **Unity 2019.4.31f1** (SDK13.7.7 and earlier)
 - **Unity 2022.3.6f1** (SDK13.7.7 and later)
@@ -20,7 +20,7 @@ Please use one of the operating systems below when running Unity.
 - Windows 10, 64-bit
 - macOS 10.12+.
 
-Also, we recommend the below systems when entering your world built with VketCloudSDK.
+Also, we recommend the below systems when entering your world built with Vket Cloud SDK.
 
 - PC: A computer that supports web browsers such as Chrome / Firefox / Safari / Edge.
 - iOS: iPhone X or later, iPhone SE (2nd generation) or later
@@ -28,7 +28,7 @@ Also, we recommend the below systems when entering your world built with VketClo
 - IDE: When editing HeliScript, Visual Studio is not recommended due to the encoding issue. If you want to edit in an environment similar to Visual Studio, please use Visual Studio Code.
 
 !!! note warning
-    When you open and save HeliScript created with Unity VketCloudSDK in Visual Studio, it may become ANSI, and you may not be able to build.<br>
+    When you open and save HeliScript created with Unity Vket Cloud SDK in Visual Studio, it may become ANSI, and you may not be able to build.<br>
     The following description explains how to change the editor that opens from Unity to Visual Studio Code.
 
 !!! note "How to Change the Unity Editor to Visual Studio Code"

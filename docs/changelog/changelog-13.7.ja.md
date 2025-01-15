@@ -65,7 +65,7 @@
 
 ## 2024年9月27日 - 変更されたページ
 
-- VketCloudSDKについて
+- Vket Cloud SDKについて
     - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/AboutVketCloudSDK/OperatingEnvironment.html)
         - UnityエディターをVisual Studio Codeに変更する方法を記載
 - アクションについて
@@ -120,7 +120,7 @@
   - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/WorldMakingGuide/UnityGuidelines.html)
     - シェーダー対応項目への案内を追記
     - 受け付けるテクスチャが小文字のpng形式のみであることを明示する。
-- VketCloudSDKについて
+- Vket Cloud SDKについて
   - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/AboutVketCloudSDK/OperatingEnvironment.html)
         - HeliScriptのIDEについての注意事項を追加
 - HeliScript
@@ -167,7 +167,7 @@
 
 ## 2024年9月11日 - 変更されたページ
 
-- VketCloudSDKの導入
+- Vket Cloud SDKの導入
   - [SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/AboutVketCloudSDK/SetupSDK_external.html)
         - Install Wizardが以下機能が加わって、アップデートされたので、説明文および画像を13.7向けに更新
            - Unity 2022のときはAPI Compatibilityの必須設定項目がなくなった

@@ -8,7 +8,7 @@ By configuring light scattering settings, you can achieve effects such as fog-li
     Unity: 2019.4.31.f1<br>
     Browser: Google Chrome<br>
 
-!!! info The location of settings has changed in VketCloudSDK version 12 and later
+!!! info The location of settings has changed in Vket Cloud SDK version 12 and later
     HEOWorldSetting →  It is located in RenderingSettings in VketCloudSettings<br>
     ![LightScattering00](img/LightScattering00.jpg)<br>
     Also, in order to display RenderingSettings, you need to set the setting mode to Advanced in VketCloudSettings.<br>
@@ -29,7 +29,7 @@ No light scattering
 In HEOWorldSetting, with Debug Mode checked, press the F2 key during execution to open the debug window, select the Renderring tab, expand the LightScattering item, and check the light scattering settings while adjusting them. You can.
 
 !!! info 
-    Before VketCloudSDK9, the UI looks different, but the functions that can be used are roughly the same.
+    Before Vket Cloud SDK9, the UI looks different, but the functions that can be used are roughly the same.
 
 ![LightScattering04](img/LightScattering04.jpg)
 

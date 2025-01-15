@@ -45,7 +45,7 @@ To express light intensity, multiply the `Directional Light`'s color by using th
 - Real-time global illumination is not supported, so please use lightmaps. Most discrepancies between what looks in Unity window and Vket Cloud are caused by Global Illumination settings.
 - Check if Color Space in Other Settings is set to "Linear"
 
-The VketCloudSDK recommends to set the environment settings as above.<br>
+The Vket Cloud SDK recommends to set the environment settings as above.<br>
 For details, refer to [Operating Environment](../AboutVketCloudSDK/OperatingEnvironment.md).
 
 ![UnityGuidelines_1](./img/UnityGuidelines_1.jpg)
@@ -66,13 +66,13 @@ For details, refer to [Operating Environment](../AboutVketCloudSDK/OperatingEnvi
 - MToon
 - Unlit
 - UnlitWF (supports double-sided display only)
-- VketChanDoubleSided Shaders contained in the VketCloudSDK
+- VketChanDoubleSided Shaders contained in the Vket Cloud SDK
 
 !!! note
      Metallic textures from Autodesk Interactive cannot be used due to the number of texture slots. Use the Standard Shader when using a combination of metallic and roughness textures.
 
 !!! note "Shader Availability"
-    On VketCloudSDK, shaders are available with exceptions in each settings.<br>
+    On Vket Cloud SDK, shaders are available with exceptions in each settings.<br>
     For details, please see [Shader Availability](ShaderAvailability.md).
 
 ## Collider

@@ -22,7 +22,7 @@
     - [リリースノート](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/releasenote/releasenote-5.4.html)と[チェンジログ](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/changelog/changelog-5.4.html)についての案内を追加
 - [ビルド方法](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/FirstStep/BuildAndRun.html) 
     - キャッシュクリアについての記述を変更
-- [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupSDK_external.html)
+- [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupSDK_external.html)
     - 必須パッケージが自動で入らない場合の案内
     - バージョン切り替えの方法を追記
 - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/5.4/AboutVketCloudSDK/SetupAvatar.html)

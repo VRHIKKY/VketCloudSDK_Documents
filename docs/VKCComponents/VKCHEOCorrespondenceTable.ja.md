@@ -1,6 +1,6 @@
 # VKC/HEO コンポーネント 概要
 
-VketCloudSDKには、以下のような種類のコンポーネントが存在します。
+Vket Cloud SDKには、以下のような種類のコンポーネントが存在します。
 
 - **Setting 項目**: シーンごとに1つの値しか割り当てられないコンポーネント
 - **Item 項目**: シーンに複数の値を振り当てられるコンポーネント
@@ -25,7 +25,7 @@ VketCloudSDKには、以下のような種類のコンポーネントが存在�
 ## Item 項目
 
 Vket Cloudのワールドの１シーンにおいて配置されているモデル、コライダー、サウンド、パーティクルなど様々な構成要素は内部的にはitemとして分類されます。<br>
-これらのitemは、VKC Item Field、VKC Item Objectなど、VketCloudSDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
+これらのitemは、VKC Item Field、VKC Item Objectなど、Vket Cloud SDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
 
 itemにはtypeという要素があり、typeによって、そのitemの役割が決まります。<br>
 typeは十数種類あり、いくつか例に挙げると、
@@ -80,7 +80,7 @@ objectとしてオブジェクトを設置するには、以下の手順を行�
 
 1. objectとして設定したいゲームオブジェクトを選択（複数選択は不可）
 
-2. VketCloudSDK > [Export Field](../WorldMakingGuide/HEOExporter_Tutorial.md)を行う。
+2. Vket Cloud SDK > [Export Field](../WorldMakingGuide/HEOExporter_Tutorial.md)を行う。
 
 3. heoファイルの保存場所を設定し書き出す。
 

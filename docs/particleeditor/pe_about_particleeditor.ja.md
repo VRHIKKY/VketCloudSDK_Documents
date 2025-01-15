@@ -16,7 +16,7 @@ Vket Cloudと同一エンジンを用いて描画しているので、エディ�
 
 ## 起動方法
 
-パーティクルエディターを開くには、VketCloudSDK > Tools > ParticleEditorを選択します。
+パーティクルエディターを開くには、Vket Cloud SDK > Tools > ParticleEditorを選択します。
 
 ![pe_about_particleeditor_1](pe_image/pe_about_particleeditor_1.jpg)
 

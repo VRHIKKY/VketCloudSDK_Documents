@@ -6,7 +6,7 @@ Uploading is also needed for private world testing with multiple people.
 
 ## How to upload
   
-1. Open the "VketCloudSDK" tab and select "Upload to Remote Server".
+1. Open the "Vket Cloud SDK" tab and select "Upload to Remote Server".
 
     ![UploadToRemoteServer](img/WorldUpload01.jpg)
 
@@ -99,7 +99,7 @@ From SDK Ver14.1, registering a new world / World ID creation can now be done on
     If the world hasn't been updated on after upload and selecting `World Preview`, please wait shortly until the update process is completed.
 
 !!! note "Build Options on World Upload"
-    In [VketCloudSDK Settings](../SDKTools/VketCloudSDKSettings.md), there is a feature for [configuring build options](../WorldEditingTips/BuildOptions.md) to enable engine-side file compression on Build & Run and world data upload.<br>
+    In [Vket Cloud SDK Settings](../SDKTools/VketCloudSDKSettings.md), there is a feature for [configuring build options](../WorldEditingTips/BuildOptions.md) to enable engine-side file compression on Build & Run and world data upload.<br>
     Using this feature will improve performance on tight-spec environments such as smartphones.<br>
     If upload time seems long, or build fails repeatedly, please reconsider this settings, or see [Build Error / How to troubleshoot issues](../troubleshooting/BuildError.md).
 

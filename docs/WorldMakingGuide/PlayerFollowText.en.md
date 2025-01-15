@@ -12,7 +12,7 @@ Here's how to implement text that follows the player.
     Unity : 2019.4.31.f1<br>
     Browser :Google Chrome  
 
-!!! warning "The names have changed since VketCloudSDK13."
+!!! warning "The names have changed since Vket Cloud SDK13."
     HEOTextPlane -> VKCItemTextPlane<br>
     The functionality remains the same, so please read accordingly.
 

@@ -59,7 +59,7 @@ Select the model's Object and confirm that the Animation component has been adde
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_03.jpg)
 
-Select `Export Motion` from the VketCloudSDK tab at the top of the Unity screen.
+Select `Export Motion` from the Vket Cloud SDK tab at the top of the Unity screen.
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_04.jpg)
 
@@ -74,7 +74,7 @@ Confirm that the `Animation Type` is set to `Humanoid` in the inspector of the m
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_06.jpg)
 
-Launch HEMAnimationConverter by clicking VketCloudSDK tab > Tools > HEMAnimationConverter.
+Launch HEMAnimationConverter by clicking Vket Cloud SDK tab > Tools > HEMAnimationConverter.
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_07.jpg)
 
@@ -99,7 +99,7 @@ Place the `Balloon_Ghost_v2` 1 used in the previous example in the scene.
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_12.jpg)
 
-Select `Export Field` from VketCloudSDK with the object with the Animation component attached (in the figure showing the placed model, it's Balloon_Ghost_v2 1) selected. When saving the .heo, it's recommended to create a new folder and save it inside, as multiple assets will be created.
+Select `Export Field` from Vket Cloud SDK with the object with the Animation component attached (in the figure showing the placed model, it's Balloon_Ghost_v2 1) selected. When saving the .heo, it's recommended to create a new folder and save it inside, as multiple assets will be created.
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_13.jpg)
 

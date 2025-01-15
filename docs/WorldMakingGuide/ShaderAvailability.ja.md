@@ -7,7 +7,7 @@ SDKでは、すべての設定ではないですが、以下シェーダーに�
 -   [MToon](#mtoon)
 -   [Unlit](#unlit)
 -   [UnlitWF（両面表示等のみ対応）](#unlitwf)
--   [VketCloudSDKに含まれるVketChanDoubleSided系のシェーダー](#vketcloudsdkvketchandoublesided)
+-   [Vket Cloud SDKに含まれるVketChanDoubleSided系のシェーダー](#vket cloud sdkvketchandoublesided)
     -   [VketChanDoubleSided](#vketchandoublesided)
     -   [VketChanDoubleSidedCutoff](#vketchandoublesidedcutoff)
     -   [VketChanDoubleSidedTransparent](#vketchandoublesidedtransparent)
@@ -125,7 +125,7 @@ SDKでは、すべての設定ではないですが、以下シェーダーに�
 
 [UnlitWFの共通設定 | whiteflare's vpm-repos](https://whiteflare.github.io/vpm-repos/docs/unlitwf/Manual-Common){target=_blank}
 
-## VketCloudSDKに含まれるVketChanDoubleSided系のシェーダー
+## Vket Cloud SDKに含まれるVketChanDoubleSided系のシェーダー
 
 ### VketChanDoubleSided
 

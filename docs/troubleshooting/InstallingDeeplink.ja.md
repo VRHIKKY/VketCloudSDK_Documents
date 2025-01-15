@@ -1,10 +1,10 @@
 # SDKがインストール後に立ち上がらない
 
-VketCloudSDKをインストール後に再起動しても立ち上がらない・VketCloudSDKタブが表示されない際は、Deeplinkパッケージが何らかの原因によって自動インポートされなかった可能性があります。<br>
+Vket Cloud SDKをインストール後に再起動しても立ち上がらない・Vket Cloud SDKタブが表示されない際は、Deeplinkパッケージが何らかの原因によって自動インポートされなかった可能性があります。<br>
 手動でDeeplinkパッケージをインポートすることで解決する場合があります。
 
 !!! warning "macOSをお使いの方へ"
-    macOSとSafariを使用している環境において、Unity 2019とUnity 2022が同じ環境にインストールされている場合、[VketCloudSDKに正常にログインできない](../AboutVketCloudSDK/LoginSDK.md)事象が発生する場合がございます。  
+    macOSとSafariを使用している環境において、Unity 2019とUnity 2022が同じ環境にインストールされている場合、[Vket Cloud SDKに正常にログインできない](../AboutVketCloudSDK/LoginSDK.md)事象が発生する場合がございます。  
     その場合、Unity HubからUnity 2022をアンインストールの上、OSを再起動の上、再度ログインをお試しください。
 
 ## Deeplinkパッケージの導入方法
@@ -32,11 +32,11 @@ VketCloudSDKをインストール後に再起動しても立ち上がらない�
 
 ![InstallingDeeplink_5](./img/InstallingDeeplink_5.jpg)
 
-## VketCloudSDKタブが表示されない
+## Vket Cloud SDKタブが表示されない
 
 ![InstallingDeeplink_5](./img/InstallingDeeplink_6.jpg)
 
-Unity上部に「VketCloudSDK」の表示がない状態になることがあります。
+Unity上部に「Vket Cloud SDK」の表示がない状態になることがあります。
 ここでは特に多い2パターンについて紹介します。
 
 ### Api Compatibility Levelを.NET 4.xにする

@@ -5,9 +5,9 @@
 
 ## サンプルJS入稿手順
 
-1. 上部メニューからVketCloudSDK > Tutorial > Tutorial - Scripts - をクリックする
-2. Assets/Samples/Vket Cloud SDK/13.7.7/Tutorial -Scripts-/02_JSUpload.unityを開く。
-3. 上部メニューからVketCloudSDK > Upload To Remote Serverをクリックする
+1. 上部メニューからVket Cloud SDK > Tutorial > Tutorial - Scripts - をクリックする
+2. Assets/Samples/VketCloudSDK/13.7.7/Tutorial -Scripts-/02_JSUpload.unityを開く。
+3. 上部メニューからVket Cloud SDK > Upload To Remote Serverをクリックする
 4. 事前準備で作成したワールドを選択し、Uploadボタンを押す
 
 ## サンプルJS入稿ワールドの説明
