@@ -40,6 +40,8 @@
 - SDK内部でFile Streamなどの使い終わったリソースがCloseされていない処理がある可能性がある
 
 ## 既知バグ
+- Install Wizardで社外版SDK14.2.1→社外版SDK14.4.12にアップデートした際、ロードの演出が終わらない時があります。
+  - 強制的にunityを再起動すると問題なくアップデートが可能になります。
 - SDK14.4.12では、Tutorial-Visual-はメンテナンスのため、一時的に利用できません。
   - Visualを使用したい場合はひとつ前のバージョン14.2.1か13.7.7で作成したものを流用してください
 - [WindowsとMac]VKCNodeActionTriggerとVKC Item ActivityとVKC Setting NameplateとVKCSetting Spawnが、13.7.7から14.4.12に引き継ぐと表示が崩れる

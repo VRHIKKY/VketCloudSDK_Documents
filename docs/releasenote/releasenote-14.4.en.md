@@ -40,6 +40,8 @@
 - Ensured all resources like file streams are properly closed after use in the SDK.
 
 ## Unresolved Issues
+- When updating from the external version of SDK 14.2.1 to SDK 14.4.12 using the Install Wizard, the loading animation may not complete.
+  - Force-restarting Unity allows the update to proceed without issue.
 - In SDK 14.4.12, `Tutorial-Visual` is temporarily unavailable due to maintenance.
   - To use Visual features, please reuse content created in versions 14.2.1 or 13.7.7.
 - [Windows & Mac] `VKCNodeActionTrigger`, `VKC Item Activity`, `VKC Setting Nameplate`, and `VKCSetting Spawn` display improperly when carried over from 13.7.7 to 14.4.12.
