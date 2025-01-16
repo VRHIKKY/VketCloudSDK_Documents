@@ -16,14 +16,21 @@
 - HeliScript
     - Tips/HeliScriptガイド
         - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
+-FAQ
+    - [Split関数について](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Split.html)
+    - [アクティビティに同封した.mp3音源ファイルがビルド時に出力されない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/AudioExportWithMeta.html)
 
 ## 2025年1月10日 - 変更されたページ
-
-- [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
-        - エラー一覧を追加しました
+- ワールド制作ガイド
+    - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html#_2)
+        - pngの大文字制限についての記述を削除
 - トラブルシューティング
+    - [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
+        - エラー一覧を追加しました
     - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/InstallingDeeplink.html)
         - 対処法を追加
+    - [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
+        - エラー一覧を追加しました
 
 ---
 
@@ -54,7 +61,6 @@
         - ローカルビルドだと、ログインやAPI周りの連携はできないことを記載する
 - HeliScript
     - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_component.html)
-        - コールバック - ItemColliderの説明を追加
         - コールバック - メッセージの説明を追加
     - 組み込みクラス・関数
         - [Quaternionクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_struct_quaternion.html)
@@ -68,10 +74,7 @@
             - SetUVScale関数の説明を追加しました
             - SetMaterialColor関数の説明を追加しました
             - SetAlpha関数の説明を追加しました
-            - SetPlaneZBias関数の説明を追加しました
-            - GetPlaneZBias関数の説明を追加しました
             - ReplaceBackupTexture関数の説明を追加しました
-            - SetPropertyWithoutNotify関数の説明を追加しました
             - GetNumofPolygon関数の説明を追加しました
             - SendMessage関数の説明を追加しました
         - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_date.html)
