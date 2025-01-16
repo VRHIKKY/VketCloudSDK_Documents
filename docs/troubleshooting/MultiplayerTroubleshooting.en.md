@@ -29,7 +29,7 @@ Make sure that you can enter the world and play multiplayer properly in the foll
     When tethering, the connection is treated as a mobile network, so the assets being downloaded are tailored for mobile devices.
 
 !!! note "Conclusion"
-    Check the network environment of the other party.
+    Check the network environment.
 
 ### 2.Unable to Play Multiplayer
 
@@ -40,7 +40,7 @@ Make sure that you can enter the world and play multiplayer properly in the foll
 !!! info "Investigation Result"
     Cause 1: The microphone device was not connected.
     Without a microphone device, RTC (Real-Time Communication) connection cannot be established.
-    Cause 2: The other party's security software was blocking SSO (Single Sign-On) communication.
+    Cause 2: The security software was blocking SSO (Single Sign-On) communication.
 
 !!! note "Conclusion"
     The issue might be related to the device. Check the hardware environment as well.
@@ -52,8 +52,7 @@ Here are the things to check in order to resolve the issue:
 
 !!! info "Checklist for When Multiplayer is Not Working (or You Can't Enter the World)"
     - Can you play multiplayer in your own environment?
-    - Is the network environment special (e.g., tethering, company Ethernet based on a mobile connection, etc.)?
+    - Is the network environment special (e.g., tethering, Ethernet based on a mobile connection, etc.)?
     - Does the connected device have a microphone?
     - Is there a gamepad with a limited number of buttons connected to the device?
     - Is there any security software running on the connected device?
-    - In the playground environment, is the world ID not set to 'world'?
