@@ -15,7 +15,6 @@ This page explains how to create an activity class that shows a UI when clicked.
 
 Add a directory structure for Canvas-related files inside the activity class, similar to the usual release folder.  
 The directory structure for the activity class with the added Canvas folder is shown below.  
-The brown text represents folders, and the black text represents files.  
 *The added parts are highlighted in bold.*  
 
 !!! info Folder Structure
