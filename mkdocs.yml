@@ -144,6 +144,8 @@ plugins:
             Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法
             Solution for When Clicking on Sphere Collider Does Not Respond : SphereColliderをクリックしても反応しない場合の解決方法
             The .mp3 audio file in the activity is not output during the build : アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
+            Special Specifications of the Date Type : Data型の特殊仕様
+            Date Class Special Specifications
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -362,6 +364,7 @@ nav:
     - Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: FAQ/UV2MeshBuildError.md
     - Solution for When Clicking on Sphere Collider Does Not Respond: FAQ/SphereCollider.md
     - The .mp3 audio file in the activity is not output during the build: FAQ/AudioExportWithMeta.md
+    - Special Specifications of the Date Type: FAQ/DateSpecialSpecifications.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md

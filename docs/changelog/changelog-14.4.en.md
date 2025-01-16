@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.4
 
+## January 17 2025 Update
+
+## January 17 2025 - Add Page
+
+- FAQ
+    - [DateSpecialSpecifications](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/DateSpecialSpecifications.html)
+
 ## January 15 2025 Update
 
 ## January 15 2025 - Edited Page
