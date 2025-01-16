@@ -18,36 +18,40 @@ SDK12から、アクティビティクラスの中にUI画像を設定するこ�
 アクティビティクラス内に通常のreleaseフォルダのCanvas関連ディレクトリと同じ構造を追加します。  
 Canvas用フォルダを追加したアクティビティクラス内ディレクトリの構成は下記の通りです。  
 茶文字がフォルダ、黒文字がファイルです。  
-※追加部分を太字にしています。
+※追加部分を太字にしています。  
 
-ActivityClassFile  
-┣**Canvas**  
-┃┣**HeliScript**  
-┃┃┗**Canvas用HeliScript**  
-┃┣**landscape**  
-┃┃┗**横画面用Canvasjson**  
-┃┣**portrait**  
-┃┃┗**縦画面用Canvasjson**  
-┃┗**アクティビティCanvasListjson**  
-┣**gui**  
-┃┗**UI用画像**  
-┣HEO  
-┃┗オブジェクト  
-┣アクティビティHeliScript  
-┗アクティビティjson
+!!! info フォルダ構成
+    ActivityClassFile  
+    ┣**📂Canvas**  
+    ┃┣**📂HeliScript**  
+    ┃┃┗**📄Canvas用HeliScript**  
+    ┃┣**📂landscape**  
+    ┃┃┗**📄横画面用Canvasjson**  
+    ┃┣**📂portrait**  
+    ┃┃┗**📄縦画面用Canvasjson**  
+    ┃┗**📄アクティビティCanvasListjson**  
+    ┣**📂gui**  
+    ┃┗**📄UI用画像**  
+    ┣📂HEO  
+    ┃┗📄オブジェクト  
+    ┣📄アクティビティjson
+    ┗📄アクティビティHeliScript  
+      
+    ※📂...フォルダー、📄...ファイルを表しています。
+
+---
 
 ## ②アクティビティjsonにアクティビティCanvasListjsonの情報を記載する
 
 アクティビティjsonに、アクティビティで用いるCanvasListの情報を記載します。
 
-**Vket Cloud UIの仕組み**
+!!! info "Vket Cloud UIの仕組み"
+    ①CanvasListで必要なCanvasjsonの情報を読み込む。  
+    ②各Canvasjsonを読み込み、必要なHeliScriptやUI画像を読み込む。
 
-①CanvasListで必要なCanvasjsonの情報を読み込む。  
-②各Canvasjsonを読み込み、必要なHeliScriptやUI画像を読み込む。
+    したがって、まずはCanvasListを読み込む必要があります。
 
-したがって、まずはCanvasListを読み込む必要がある。
-
-記載方法は”canvaslist”項目にCanvasListjsonのパスを書きます。
+    記載方法は”canvaslist”項目にCanvasListjsonのパスを書きます。
 
 
 ![ActivityWithCanvasUI](img/ActivityWithCanvasUI01.jpg)
@@ -55,14 +59,32 @@ ActivityClassFile
 名前はCanvasList.jsonである必要はありません。  
 アクティビティjsonからの相対パスで記載します。
 
+---
+
 ## ③アクティビティCanvasListjsonを編集する
 
 ![ActivityWithCanvasUI](img/ActivityWithCanvasUI02.jpg)
 
 アクティビティ用のCanvasListjsonを作成します。  
-[GUITools - 概要とセットアップ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/GUITools/Setup.html) などを参照してください。
+上記画像のように、
+```
+{
+  "LandscapeCanvasList":
+  [
+    "./Canvas/landscape/(CanvasUIjsonファイル名).json"
+  ],
+  "PortraitCanvasList":
+  [
+    "./Canvas/portrait/(CanvasUIjsonファイル名).json"
+  ],
+}
+```
+
+といった記載を行います。
 
 パスはアクティビティjsonからの相対パスです。
+
+---
 
 ## ④アクティビティ用Canvasjsonを作成する
 
@@ -72,10 +94,16 @@ ActivityClassFile
 
 パスはアクティビティjsonからの相対パスです。
 
+---
+
 ## ⑤アクティビティHeliScriptで表示処理を作成する
 
-通常のCanvas同様、hsSetLayerShow()などのCanvas関数が使用できます。  
-Layout層の名称記載ルールも通常と同じです。
+通常のCanvas同様、hsSetLayerShow()などの[Canvas関数](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_gui.html)が使用できます。
+
+各Canvas関数のlayerNameには"Layout"の"Name"項目の要素を、  
+guiNameには"Gui"の"Name"項目の要素を入れます。  
+「④アクティビティ用Canvasjsonを作成する」にて提示した画像の場合、  
+layerNameは`test`、guiNameは`comic_bg`となります。  
 
 Canvasボタンを押したときの動作については、Canvas側のHeliScriptをご利用ください。
 
@@ -87,7 +115,7 @@ Canvasボタンを押したときの動作については、Canvas側のHeliScri
 
 ![ActivityWithCanvasUI](img/ActivityWithCanvasUI04.jpg)
 
-画像・ボタンの表示をGUIアクティビティで行っている。
+画像・ボタンの表示をGUIアクティビティで行っています。
 
 ## その他知見
 

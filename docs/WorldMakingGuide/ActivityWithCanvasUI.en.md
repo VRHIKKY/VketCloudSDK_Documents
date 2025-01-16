@@ -11,81 +11,106 @@ This page explains how to create an activity class that shows a UI when clicked.
 
 ## Steps
 
-### ① Create a Folder for Canvas
+### 1. Create a Folder for Canvas
 
-Add the Canvas-related directories within the activity class, following the same structure as the usual release folder.  
-The directory structure with the added Canvas folder is as follows:  
-Brown text represents folders, black text represents files.  
-*Note: The added parts are in bold.*
+Add a directory structure for Canvas-related files inside the activity class, similar to the usual release folder.  
+The directory structure for the activity class with the added Canvas folder is shown below.  
+The brown text represents folders, and the black text represents files.  
+*The added parts are highlighted in bold.*  
 
-ActivityClassFile  
-┣**Canvas**  
-┃┣**HeliScript**  
-┃┃┗**Canvas HeliScript**  
-┃┣**landscape**  
-┃┃┗**Canvas json for Landscape**  
-┃┣**portrait**  
-┃┃┗**Canvas json for Portrait**  
-┃┗**Activity Canvas List json**  
-┣**gui**  
-┃┗**UI images**  
-┣HEO  
-┃┗Objects  
-┣Activity HeliScript  
-┗Activity json
+!!! info Folder Structure
+    ActivityClassFile  
+    ┣**📂Canvas**  
+    ┃┣**📂HeliScript**  
+    ┃┃┗**📄Canvas HeliScript**  
+    ┃┣**📂landscape**  
+    ┃┃┗**📄Landscape Canvas JSON**  
+    ┃┣**📂portrait**  
+    ┃┃┗**📄Portrait Canvas JSON**  
+    ┃┗**📄Activity Canvas List JSON**  
+    ┣**📂gui**  
+    ┃┗**📄UI Image Files**  
+    ┣📂HEO  
+    ┃┗📄Objects  
+    ┣📄Activity JSON  
+    ┗📄Activity HeliScript  
 
-## ② Add CanvasList json Information to Activity json
+    *📂...Folder, 📄...File.
 
-In the Activity json, include the information for the CanvasList used by the activity.
+---
 
-**Vket Cloud UI Structure**
+## 2. Add CanvasList json Information to Activity json
 
-1. Read the required Canvas json information from the CanvasList.  
-2. Load each Canvas json and the necessary HeliScript or UI images.
+Add the CanvasList information used by the activity to the activity JSON.
 
-Therefore, it is necessary to load the CanvasList first.
+!!! info "Vket Cloud UI System"
+    1. Load the necessary Canvas JSON information from CanvasList.  
+    2. Load each Canvas JSON and the necessary HeliScripts and UI images.
 
-To include this, write the path to the CanvasList json in the "canvaslist" field.
+    Therefore, you must first load the CanvasList.
+
+    To write this, specify the path to the CanvasList JSON in the "canvaslist" item.
 
 ![ActivityWithCanvasUI](img/ActivityWithCanvasUI01.jpg)
 
 The name doesn't have to be CanvasList.json.  
 It should be written with a relative path from the Activity json.
 
-## ③ Edit the Activity CanvasList json
+---
+
+## 3. Edit the Activity CanvasList json
 
 ![ActivityWithCanvasUI](img/ActivityWithCanvasUI02.jpg)
 
-Create the CanvasList json for the activity.  
-For more details, refer to [GUITools - Overview and Setup](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/GUITools/Setup.html).
+Create the CanvasList JSON for the activity.  
+You should write it as shown in the code within the image above.
+
+```
+{
+  "LandscapeCanvasList":
+  [
+    "./Canvas/landscape/(CanvasUIjson file name).json"
+  ],
+  "PortraitCanvasList":
+  [
+    "./Canvas/portrait/(CanvasUIjson file name).json"
+  ],
+}
+```
 
 The path should be relative from the Activity json.
 
-## ④ Create the Activity Canvas json
+## 4. Create the Activity Canvas JSON
 
 ![ActivityWithCanvasUI](img/ActivityWithCanvasUI03.jpg)
 
-Create the json file specified in step ③.  
+Create the JSON file specified in step ③.
 
-The path should be relative from the Activity json.
+The path should be a relative path from the activity JSON.
 
-## ⑤ Create the Display Process in Activity HeliScript
+---
 
-Like regular Canvas, you can use Canvas functions such as hsSetLayerShow().  
-The naming rules for Layout layers are the same as usual.
+## 5. Create Display Logic in Activity HeliScript
+
+As with regular Canvas, you can use Canvas functions like hsSetLayerShow() and other [Canvas Functions](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_system_function_gui.html).
+
+For each Canvas function, the layerName should correspond to the "Name" element of the "Layout" item,  
+and the guiName should correspond to the "Name" element of the "Gui" item.  
+In the image provided in "④ Create the Activity Canvas JSON",  
+the layerName would be `test`, and the guiName would be `comic_bg`.
 
 For actions when pressing Canvas buttons, please use the HeliScript on the Canvas side.
 
 ---
 
-## Usage Example
+## Example
 
 Comic Viewer Activity
 
 ![ActivityWithCanvasUI](img/ActivityWithCanvasUI04.jpg)
 
-Images and buttons are displayed using the GUI activity.
+Image and button displays are handled by the GUI activity.
 
-## Other Insights
+## Additional Notes
 
 If it doesn't work, try clearing the browser cache.
