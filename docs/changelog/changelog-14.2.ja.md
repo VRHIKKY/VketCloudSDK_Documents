@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2025年1月17日更新
+
+## 2025年1月17日 - 追加されたページ
+
+- トラブルシューティング
+    - [ワールド入室後にマルチプレイができない時の確認ポイント](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/MultiplayerTroubleshooting.html)
+
+---
+
 ## 2025年1月10日更新
 
 ## 2025年1月10日 - 追加されたページ
@@ -7,8 +16,6 @@
 - HeliScript
     - Tips/HeliScriptガイド
         - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
-- トラブルシューティング
-    - [ワールド入室後にマルチプレイができない時の確認ポイント](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/MultiplayerTroubleshooting.html)
 
 ## 2025年1月10日 - 変更されたページ
 
