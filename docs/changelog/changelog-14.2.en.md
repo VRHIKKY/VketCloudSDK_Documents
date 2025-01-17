@@ -1,14 +1,5 @@
 # SDK Manual Change Log - Ver 14.2
 
-## January 17 2025 Update
-
-## January 17 2025 - Added Page
-
-- World Making Guide
-    - [Activity Class With CanvasUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ActivityWithCanvasUI.html)
-
----
-
 ## January 10 2025 Update
 
 ## January 10 2025 - Added Page
