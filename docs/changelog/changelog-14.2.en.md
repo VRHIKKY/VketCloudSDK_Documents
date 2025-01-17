@@ -6,6 +6,8 @@
 
 - Trouble shooting
     - [Multiplayer Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/MultiplayerTroubleshooting.html)
+- World Making Guide
+    - [How to check the Chrome Developer Tools console on iPhone alone](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/iPhoneConsole.html)
 
 ---
 
