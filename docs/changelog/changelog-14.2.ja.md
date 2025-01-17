@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2025年1月17日更新
+
+## 2025年1月17日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/iPhoneConsole.html)
+
+---
+
 ## 2025年1月10日更新
 
 ## 2025年1月10日 - 追加されたページ
