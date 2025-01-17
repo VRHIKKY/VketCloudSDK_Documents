@@ -166,9 +166,10 @@ Adds a image type GUI by searching a Layer by LayerName, with determining whethe
 
 ### hsAddGUIButton
 
-`void hsAddGUIImage(string LayerName, bool IsPortrait,
-    string GUIName, string Platform, string Language, string Portrait, bool Show, int Z, int PosX, int PosY, int SizeX, int SizeY, float PivotX, float PivotY, string Anchor, bool RaycastTarget, float Angle,
-    string URI, int UVAreaX, int UVAreaY, int UVAreaWidth, int UVAreaHeight, int L, int R, int T, int B)`
+`void hsAddGUIButton(string LayerName, bool IsPortrait, 
+string GUIName, string Platform, string Language, string Portrait, bool Show, int Z, int PosX, int PosY, int SizeX, int SizeY, float PivotX, float PivotY, string Anchor, bool RaycastTarget, float Angle,
+string FileName, string OnCursorFileName, string DownFileName, string ClickAreaFileName, int ClickAreaSizeX, int ClickAreaSizeY, float FlickCheckTime, float FlickLengthThreshold,
+int UVAreaX, int UVAreaY, int UVAreaWidth, int UVAreaHeight, int L, int R, int T, int B)`
 
 Adds a button type GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.
 
