@@ -145,7 +145,6 @@ plugins:
             Solution for When Clicking on Sphere Collider Does Not Respond : SphereColliderをクリックしても反応しない場合の解決方法
             The .mp3 audio file in the activity is not output during the build : アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
             Special Specifications of the Date Type : Data型の特殊仕様
-            Date Class Special Specifications
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
