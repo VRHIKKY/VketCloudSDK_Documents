@@ -5,7 +5,7 @@
 The `Date` type available in HeliScript has some unique characteristics in the current Lib14 environment.  
 This article introduces these special specifications and provides solutions.
 
-!!! info "Environment"<br>
+!!! info "Environment"
     SDK Version: 14.2.1<br>
     Lib Version: 14.4<br>
     Unity: 2022.3.6.f1  
