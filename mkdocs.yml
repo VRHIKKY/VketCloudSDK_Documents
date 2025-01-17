@@ -632,6 +632,7 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v14.x:
+        - v14.4: changelog/changelog-14.4.md
         - v14.2: changelog/changelog-14.2.md
         - v14.1: changelog/changelog-14.1.md
     - v13.x:
