@@ -1,11 +1,18 @@
 # SDK Manual Change Log - Ver 14.4
 
+## 2025年1月24日更新
+
+## 2025年1月24日 - 追加されたページ
+
+- トラブルシューティング
+    - [ワールド入室後にマルチプレイができない時の確認ポイント](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/MultiplayerTroubleshooting.html)
+
 ## 2025年1月17日更新
 
 ## 2025年1月17日 - 追加されたページ
 
 - ワールド制作ガイド
-    - [CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ActivityWithCanvasUI.html)
+    - [CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/ActivityWithCanvasUI.html)
 
 ---
 

@@ -1,11 +1,18 @@
 # SDK Manual Change Log - Ver 14.4
 
+## January 24 2025 Update
+
+## January 24 2025 - Added Page
+
+- Trouble shooting
+    - [Multiplayer Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/troubleshooting/MultiplayerTroubleshooting.html)
+
 ## January 17 2025 Update
 
 ## January 17 2025 - Added Page
 
 - World Making Guide
-    - [Activity Class With CanvasUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ActivityWithCanvasUI.html)
+    - [Activity Class With CanvasUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/ActivityWithCanvasUI.html)
 
 ---
 
