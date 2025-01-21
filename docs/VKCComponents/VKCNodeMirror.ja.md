@@ -88,5 +88,5 @@ VKC Node MirrorをアタッチしたオブジェクトはVKC Node Mirrorに映�
     鏡の設置の際は負荷についてご留意ください。
 
 !!! warning "14.xの不具合"
-    鏡のQuadのMaterialにStandardやAutodesk Interactiveを設定し、特定の角度にすると鏡として機能しない不具合が確認されています。
+    鏡のQuadのMaterialにStandardやAutodesk Interactiveを設定し、0.0, 180.0, 0.0のRotationなどにすると鏡として機能しない不具合が確認されています。
     修正を予定しておりますが発生した場合は対応としてはUnlit/Textureに変更をお願いいたします。
