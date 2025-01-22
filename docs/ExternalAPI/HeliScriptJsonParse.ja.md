@@ -2,9 +2,6 @@
 
 ## 概要
 
-heliport3.0より、JavaScriptからHeliScriptへの情報送信の際のReturn型の仕様が変わり、  
-JsonではなくJsValを使って受け取り、HeliScriptのプロパティ機能で値を管理するようになりました。
-
 JsValとプロパティを使うことで、格納したJsonファイル情報を読み込むことができます。
 
 このページではHeliScriptでのJsonファイルの読み込み方について説明します。
@@ -35,7 +32,7 @@ JsVal shopInfo;
 ## ①JsValクラス変数にデータを入れる
 
 JsValクラス変数にデータを入れるには、コールバック関数を使用します。  
-今回は`heliport.api.worlds.getWorldList()`を利用し取得したワールドリストのデータをJsValを利用し取得、それを反映します。
+今回は`heliport.v3.api.worlds.getWorldList()`を利用し取得したワールドリストのデータをJsValを利用し取得、それを反映します。
 
 予め、
 
@@ -52,7 +49,7 @@ delegate void fJsValCallback(JsVal);
     }
     
     //この関数を発火したタイミングでJsVal変数にデータが入る
-    heliport.api.worlds.getWorldList(_FetchWorldListCallback, 6, 0, "myvket", "", "", "official");
+    heliport.v3.api.worlds.getWorldList(_FetchWorldListCallback, 6, 0, "myvket", "", "", "official");
 ```
 
 関数を定義します。

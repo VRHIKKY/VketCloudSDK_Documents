@@ -2,9 +2,6 @@
 
 ## Overview
 
-From Heliport 3.0, the specification for the Return type when sending information from JavaScript to HeliScript has changed.  
-Instead of using JSON, JsVal is now used to receive data, and the property feature of HeliScript is used to manage the values.
-
 By using JsVal and properties, you can load information stored in a JSON file.
 
 This page explains how to load a JSON file in HeliScript.
@@ -35,7 +32,7 @@ By defining it like this, you can create a variable of the JsVal class.
 ## 1. Populating Data in the JsVal Class Variable
 
 To populate data in a JsVal class variable, a callback function is used.  
-In this example, we use `heliport.api.worlds.getWorldList()` to obtain the world list data and store it in JsVal.
+In this example, we use `heliport.v3.api.worlds.getWorldList()` to obtain the world list data and store it in JsVal.
 
 First, define the callback function as:
 
@@ -52,7 +49,7 @@ public void _FetchWorldListCallback(JsVal val)
 }
 
 // Triggering this function will populate the JsVal variable with data
-heliport.api.worlds.getWorldList(_FetchWorldListCallback, 6, 0, "myvket", "", "", "official");
+heliport.v3.api.worlds.getWorldList(_FetchWorldListCallback, 6, 0, "myvket", "", "", "official");
 ```
 
 
