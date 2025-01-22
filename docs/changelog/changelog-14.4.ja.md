@@ -1,11 +1,11 @@
 # SDK Manual Change Log - Ver 14.4
 
-## 2025年1月17日更新
+## 2025年1月24日更新
 
-## 2025年1月17日 - 追加されたページ
+## 2025年1月24日 - 追加されたページ
 
 - FAQ
-    - [Special Specifications of the Date Type](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/DateSpecialSpecifications.html)
+    - [Date型の特殊仕様](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/DateSpecialSpecifications.html)
 
 ## 2025年1月15日更新
 
