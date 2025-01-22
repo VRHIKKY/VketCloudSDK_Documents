@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.4
 
+## January 24 2025 Update
+
+## January 24 2025 - Added Page
+
+- External API
+  - [Reading JSON in HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/ExternalAPI/HeliScriptJsonParse.html)
+
+---
+
 ## January 17 2025 Update
 
 ## January 17 2025 - Added Page
