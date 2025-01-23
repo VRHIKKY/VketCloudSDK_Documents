@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.4
 
+## 2025年1月24日更新
+
+## 2025年1月24日 - 編集されたページ
+
+- トラブルシューティング
+    - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VersionUpdateTroubleshooting.html)
+        - 一度バージョンアップ後、過去バージョンに巻き戻した際Unityが起動しなくなった際の解消法を追記
+
+---
+
 ## 2025年1月17日更新
 
 ## 2025年1月17日 - 追加されたページ

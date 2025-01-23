@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.4
 
+## January 24 2025 Update
+
+## January 24 2025 - Edited Page
+
+- Trouble shooting
+    - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/troubleshooting/VersionUpdateTroubleshooting.html)
+        - Add a solution for when Unity fails to start after rolling back to a previous version following an upgrade.
+
+---
+
 ## January 17 2025 Update
 
 ## January 17 2025 - Added Page

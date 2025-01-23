@@ -129,3 +129,24 @@ If this issue appears, fix it by deleting the Library and Temp folder in the pro
 ![VersionUpdateTroubleshooting_7](img/VersionUpdateTroubleshooting_7.jpg)
 
 4\. Reopen the Unity project, and check if the error has been solved!
+
+## After a version upgrade, rolling back to a previous version causes Unity to fail to start
+
+!!! info
+    SDK Version : 9.3->12.3<br>
+    OS : Windows10<br>
+    Unity : 2019.4.31.f1<br>
+    Browser :Chrome
+
+After updating the SDK, when referencing a previous version or needing to make fixes on a previous version, we’ve observed that when reverting the SDK to an older version using GitHub's version control tool, Unity fails to start.
+
+The issue occurs when Unity freezes during the importing process (reaching "Max"), and it crashes without displaying any error messages.
+
+### How to Fix
+
+1\. Delete Library folder.
+
+![VersionUpdateTroubleshooting_13](img/VersionUpdateTroubleshooting_13.jpg)
+
+In such cases, deleting the Library folder and restarting Unity has allowed it to launch successfully.
+If the issue persists, try deleting both the Library folder and the Packages-lock.json file before restarting Unity, as this may resolve the problem.
