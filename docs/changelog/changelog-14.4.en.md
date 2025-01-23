@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.4
 
+## January 24 2025 Update
+
+## January 24 2025 - Added Page
+
+- World Making Guide
+    - [How to check the Chrome Developer Tools console on iPhone alone](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/iPhoneConsole.html)
+
+---
 ## January 17 2025 Update
 
 ## January 17 2025 - Added Page

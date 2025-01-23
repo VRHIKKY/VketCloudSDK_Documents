@@ -127,6 +127,7 @@ plugins:
             How to Use HEOProperty (Vket Cloud Property Function) : HEOProperty(Vket Cloudのプロパティ機能)の使い方
             How to Use VKC Node Shadow: VKC Node Shadowの使い方
             Activity With Motion: モーション付きアクティビティ
+            How to check the Chrome Developer Tools console on iPhone alone: iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法
             Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
@@ -350,6 +351,7 @@ nav:
     - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
     - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
     - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
+    - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
