@@ -5,7 +5,8 @@
 ## 2025年1月24日 - 追加されたページ
 
 - ワールド制作ガイド
-    - [CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ActivityWithCanvasUI.html)
+    - [iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/iPhoneConsole.html)
+    - [CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/ActivityWithCanvasUI.html)
 
 ---
 
