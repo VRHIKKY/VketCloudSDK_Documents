@@ -3,7 +3,8 @@
 ## January 24 2025 Update
 
 ## January 24 2025 - Added Page
-
+- FAQ
+    - [DateSpecialSpecifications](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/DateSpecialSpecifications.html)
 - World Making Guide
     - [How to check the Chrome Developer Tools console on iPhone alone](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/iPhoneConsole.html)
     - [Activity Class With CanvasUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/ActivityWithCanvasUI.html)

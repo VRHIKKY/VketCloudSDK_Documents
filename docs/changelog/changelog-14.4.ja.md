@@ -4,6 +4,8 @@
 
 ## 2025年1月24日 - 追加されたページ
 
+- FAQ
+    - [Date型の特殊仕様](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/DateSpecialSpecifications.html)
 - ワールド制作ガイド
     - [iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/iPhoneConsole.html)
     - [CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/ActivityWithCanvasUI.html)
