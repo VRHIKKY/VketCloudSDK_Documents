@@ -4,9 +4,10 @@
 
 ## 2025年1月24日 - 編集されたページ
 
-- トラブルシューティング
-    - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VersionUpdateTroubleshooting.html)
-        - 一度バージョンアップ後、過去バージョンに巻き戻した際Unityが起動しなくなった際の解消法を追記
+- HeliScript
+    - 文法と制御構文
+        - [定義・宣言](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/hs/hs_statement_def.html)
+            - 文言を修正
 
 ## 2025年1月24日 - 追加されたページ
 
@@ -14,8 +15,11 @@
     - [Date型の特殊仕様](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/DateSpecialSpecifications.html)
 - ワールド制作ガイド
     - [iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/iPhoneConsole.html)
+    - [バイナリ出力に失敗](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/BinaryOutputError.html)
 - トラブルシューティング
     - [ワールド入室後にマルチプレイができない時の確認ポイント](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/MultiplayerTroubleshooting.html)
+    - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VersionUpdateTroubleshooting.html)
+        - 一度バージョンアップ後、過去バージョンに巻き戻した際Unityが起動しなくなった際の解消法を追記
 - 外部API連携
   - [HeliScriptでJsonを読み込む](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/HeliScriptJsonParse.html)
 

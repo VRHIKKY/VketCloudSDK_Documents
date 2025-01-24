@@ -2,16 +2,38 @@
 
 Here we will go over the definitions of variables, functions, and constants.
 
-## Variable
+## Local Variables
 
-Variables can be defined with "[type name] [variable name]".
-Variables can also be initialized at the same time they are declared.
+By declaring variables with "type name variable name" within a function or class method, you can create variables that are only accessible within that scope. Variables can also be initialized at the time of declaration.
 
 ```
-// Initialize to be 100 upon declaration
-int value = 100;
 // Do not specify initial values, only define variables
 string emptyText;
+// Initialize to be 100 upon declaration
+int value = 100;
+```
+
+## Global Variables
+By declaring a variable outside of functions or methods, you can create a global variable that is accessible within the source file and throughout the entire application.
+
+```
+// Declare and initialize a global variable
+int value = 100;
+void TestFunc(){
+  // ...
+  }
+```
+
+Both [basic types](hs_var.md) and [classes](hs_class.md) can be declared as global variables. However, for [classes](hs_class.md), they cannot be initialized at the time of declaration.
+
+## Class Variables
+By declaring a variable within a class definition, you can create a variable that belongs to that class.
+
+```
+class MyClass {
+    // Declare a class variable
+    int value = 100;
+}
 ```
 
 ## Definition of constant
@@ -24,6 +46,8 @@ The following types are able to be defined as const: int, float, bool, and strin
 // Define an immutable constant integer variable
 const int immutable = 999;
 ```
+
+It is possible to declare all local variables, global variables, and class variables as constants by adding const.
 
 ## Definition of functions
 
