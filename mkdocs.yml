@@ -127,6 +127,7 @@ plugins:
             How to Use HEOProperty (Vket Cloud Property Function) : HEOProperty(Vket Cloudのプロパティ機能)の使い方
             How to Use VKC Node Shadow: VKC Node Shadowの使い方
             Activity With Motion: モーション付きアクティビティ
+            How to check the Chrome Developer Tools console on iPhone alone: iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法
             Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
@@ -135,6 +136,7 @@ plugins:
             SDK does not appear after install: SDKがインストール後に立ち上がらない
             Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
             Version Update Troubleshooting: バージョンアップ後によくあるトラブル
+            Multiplayer Troubleshooting: ワールド入室後にマルチプレイができない時の確認ポイント
             Comment / Bug Reports Form : ご意見・バグ報告フォーム
             # FAQ
             FAQ : FAQ
@@ -350,12 +352,14 @@ nav:
     - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
     - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
     - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
+    - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
     - Build Error / How to troubleshoot issues: troubleshooting/BuildError.md
     - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
+    - Multiplayer Troubleshooting: troubleshooting/MultiplayerTroubleshooting.md
     - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
 - FAQ:
     - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
