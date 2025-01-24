@@ -2,7 +2,7 @@
 
 ![PresetAvatar_1](img/PresetAvatar_1.jpg)
 
-VketCloudSDKでは、ワールドに入ったユーザーが手持ちのアバター以外に使えるプリセットアバターを設定できます。<br>
+Vket Cloud SDKでは、ワールドに入ったユーザーが手持ちのアバター以外に使えるプリセットアバターを設定できます。<br>
 設定されたアバターは「設定画面」-->「マイページ」-->「アバター」-->「プリセットアバター」にて一覧表示され、ワールドの中でユーザーが自由に着脱することができます。
 
 なお、プリセットアバターを追加するにあたって、追加したいアバターをあらかじめ[vrm形式に変換](https://vrm.dev/vrm/how_to_make_vrm/index.html){target=_blank}する必要があります。<br>
@@ -17,7 +17,7 @@ VketCloudSDKでは、ワールドに入ったユーザーが手持ちのアバ�
 
 ### 2.1 HEOWorldSettingからAvatarFileを新規作成する
 
-VketCloudSDKではAvatarFileというファイルにアバター情報を設定し、ワールドのビルド時にプリセットアバターとして反映します。
+Vket Cloud SDKではAvatarFileというファイルにアバター情報を設定し、ワールドのビルド時にプリセットアバターとして反映します。
 
 ![PresetAvatar_2](./img/PresetAvatar_2.jpg)
 

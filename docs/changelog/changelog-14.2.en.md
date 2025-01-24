@@ -8,10 +8,13 @@
     - Tips/HeliScript Guide
         - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
 - FAQ
+    - [About the Split Function](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Split.html)
     - [The .mp3 audio file in the activity is not output during the build](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/AudioExportWithMeta.html)
 
 ## January 10 2025 - Edited Pages
-
+- World Making Guide
+    - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html#_2)
+        - Remove the description about uppercase restrictions for PNG.
 - Trouble shooting
     - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/BuildError.html)
         - Added error list.
@@ -172,7 +175,7 @@
 
 ## November 22 2024 - Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
     - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/AboutVketCloudSDK/SetupSDK_external.html)
         - Add a solution for the issue where the EditorCoroutine package cannot be installed.
 - VKC Components

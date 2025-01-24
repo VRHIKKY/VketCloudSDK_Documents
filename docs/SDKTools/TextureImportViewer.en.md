@@ -15,7 +15,7 @@ Therefore, this tool is handy when multiple texture files needs reformatting.
 
 ![TextureImportViewer_2](img/TextureImportViewer_2.jpg)
 
-On the Unity Menu, select VketCloudSDK > Tools > TextureImportViewer to open the Viewer's window.
+On the Unity Menu, select Vket Cloud SDK > Tools > TextureImportViewer to open the Viewer's window.
 
 ![TextureImportViewer_3](img/TextureImportViewer_3.jpg)
 

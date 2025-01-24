@@ -1,5 +1,5 @@
-!!! info "Information on this page is for VketCloudSDK4.1.4."
-    The names have been changed since VketCloudSDK13.<br>
+!!! info "Information on this page is for Vket Cloud SDK4.1.4."
+    The names have been changed since Vket Cloud SDK13.<br>
     HEOField → VKCItemField <br>
     HEOAreaCollider → VKCItemAreaCollider <br>
     Please note that the functionality remains unchanged, so adjust your understanding accordingly. <br>

@@ -111,7 +111,7 @@ VKC Item Objectとしてシーンに配置した際の座標は、VKC Item Objec
 Standardなどに変更してみて表示されるかどうかお試しください。
 
 !!! note 
-        ビルド後にVketCloudSDK > Tools > Open Release Folderを選択し、data > Sceneと遷移舌先で確認できるjsonファイル(シーンjson)にて、書き出したオブジェクト名を検索することで、シーン上での書き出しオブジェクト情報を確認することができます。<br>
+        ビルド後にVket Cloud SDK > Tools > Open Release Folderを選択し、data > Sceneと遷移舌先で確認できるjsonファイル(シーンjson)にて、書き出したオブジェクト名を検索することで、シーン上での書き出しオブジェクト情報を確認することができます。<br>
         検索してもヒットしない場合は、シーン上に反映されていません。
 
 ![PropAnimation_TroubleShooting_10](./img/PropAnimation_TroubleShooting_10.jpg)

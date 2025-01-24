@@ -111,7 +111,7 @@ Vket Cloudのアクティビティはアセットストアにて入手が可能�
 
 ![VKCItemActivity_11](img/VKCItemActivity_11.jpg)
 
-4\. 解凍したanalogclockフォルダーをVketCloudSDKがインストールされているUnityのProjectのアセット内任意のパスに配置してください。
+4\. 解凍したanalogclockフォルダーをVket Cloud SDKがインストールされているUnityのProjectのアセット内任意のパスに配置してください。
 
 ![VKCItemActivity_12](img/VKCItemActivity_12.jpg)
 

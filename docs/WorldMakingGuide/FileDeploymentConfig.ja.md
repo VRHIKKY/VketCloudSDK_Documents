@@ -24,7 +24,7 @@
 
 ## 使い方
 
-1. Projectウィンドウで 右クリック > Create > VketCloudSDK > File Deployment Config を選択してください。
+1. Projectウィンドウで 右クリック > Create > Vket Cloud SDK > File Deployment Config を選択してください。
 
     ![FileDeploymentConfig](img/filedeploymentconfig_01.jpg)
 

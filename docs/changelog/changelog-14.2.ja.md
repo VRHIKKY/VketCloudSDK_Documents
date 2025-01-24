@@ -7,12 +7,17 @@
 - HeliScript
     - Tips/HeliScriptガイド
         - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
-- FAQ
+-FAQ
+    - [Split関数について](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Split.html)
     - [アクティビティに同封した.mp3音源ファイルがビルド時に出力されない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/AudioExportWithMeta.html)
 
 ## 2025年1月10日 - 変更されたページ
-
+- ワールド制作ガイド
+    - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html#_2)
+        - pngの大文字制限についての記述を削除
 - トラブルシューティング
+    - [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
+        - エラー一覧を追加しました
     - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/InstallingDeeplink.html)
         - 対処法を追加
     - [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
@@ -170,7 +175,7 @@
 
 ## 2024年11月22日 - 変更されたページ
 
-- VketCloudSDKについて
+- Vket Cloud SDKについて
     - [SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/AboutVketCloudSDK/SetupSDK_external.html)
         - EditorCoroutineのPackageがInstallされない問題の対処法を追加
 - VKCコンポーネント

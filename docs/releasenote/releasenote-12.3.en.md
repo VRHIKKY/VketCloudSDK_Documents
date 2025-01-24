@@ -27,7 +27,7 @@
 
 - Video file paths written in .json are different between Windows and Mac.
 
-### Bug Fixes for Toolbar's VketCloudSDK > Help
+### Bug Fixes for Toolbar's Vket Cloud SDK > Help
 
 - Pressing Help under English settings displays the manual in Japanese.
 

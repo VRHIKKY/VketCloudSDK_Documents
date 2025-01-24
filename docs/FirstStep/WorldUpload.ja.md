@@ -6,7 +6,7 @@
 
 ## アップロード方法
   
-1. メニューの`VketCloudSDK`>`Upload to Remote Server`をクリックしてください。
+1. メニューの`Vket Cloud SDK`>`Upload to Remote Server`をクリックしてください。
 
     ![UploadToRemoteServer](img/WorldUpload01.jpg)
 
@@ -99,7 +99,7 @@ SDK Ver14.1から、これまで[Vket Cloud](https://cloud.vket.com/account/worl
     アップロード / ワールド更新後に`World preview`を選択し、ワールドの更新が反映されていない際はしばらくお待ちください。
 
 !!! note "アップロード時のビルドオプションについて"
-    [VketCloudSDK Settings](../SDKTools/VketCloudSDKSettings.md)では、Build & Run及びワールドデータのアップロード時にエンジン側でファイルを圧縮するか否かを[設定できる機能](../WorldEditingTips/BuildOptions.md)があります。<br>
+    [Vket Cloud SDK Settings](../SDKTools/VketCloudSDKSettings.md)では、Build & Run及びワールドデータのアップロード時にエンジン側でファイルを圧縮するか否かを[設定できる機能](../WorldEditingTips/BuildOptions.md)があります。<br>
     本機能を使うことによって、スマートフォンなど軽量さが要求される環境での動作を改善させられます。<br>
     アップロードにかかる時間が長い・ビルドに失敗する場合は本設定を見直すか、[ビルドエラー / ワールドが動かないときは](../troubleshooting/BuildError.md)をご参照ください。
 

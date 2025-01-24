@@ -4,7 +4,7 @@
 
 VKC Item Particle is a component that expands particles based on .hep format files. <br/>
 
-You can output a .hep file with UnityEditor menu > VketCloudSDK > ExportParticle, but it is currently deprecated. <br/>
+You can output a .hep file with UnityEditor menu > Vket Cloud SDK > ExportParticle, but it is currently deprecated. <br/>
 Please use [Particle Editor](../particleeditor/pe_about_particleeditor.md) to create .hep files instead.
 
 ???+ note "Available methods for this object type"

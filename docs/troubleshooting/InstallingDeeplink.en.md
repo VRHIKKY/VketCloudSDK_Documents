@@ -1,10 +1,10 @@
 # SDK does not appear after install
 
-If the VketCloudSDK does not boot after installing / show up on the tabs, there is high chance that the Deeplink package failed to be imported automatically.<br>
+If the Vket Cloud SDK does not boot after installing / show up on the tabs, there is high chance that the Deeplink package failed to be imported automatically.<br>
 In such cases, the issue may be solved by manually importing the Deeplink package.
 
 !!! warning "Note to macOS users"
-    If you are using a macOS environment having Safari, Unity 2019, and Unity 2022 installed, this may cause an issue disabling [login to VketCloudSDK](../AboutVketCloudSDK/LoginSDK.md). <br>
+    If you are using a macOS environment having Safari, Unity 2019, and Unity 2022 installed, this may cause an issue disabling [login to Vket Cloud SDK](../AboutVketCloudSDK/LoginSDK.md). <br>
     In such case, please uninstall Unity 2022 from the Unity Hub, restart the OS, and retry login.
 
 ## How to import the Deeplink package
@@ -33,11 +33,11 @@ After completing the installation, the information of Deeplink (e.g. current ver
 
 ![InstallingDeeplink_5](./img/InstallingDeeplink_5.jpg)
 
-## "VketCloudSDK" Tab Not Appearing
+## "Vket Cloud SDK" Tab Not Appearing
 
 ![InstallingDeeplink_5](./img/InstallingDeeplink_6.jpg)
 
-Sometimes, the "VketCloudSDK" menu does not appear at the top of the Unity interface. Below are two common reasons why this might happen.
+Sometimes, the "Vket Cloud SDK" menu does not appear at the top of the Unity interface. Below are two common reasons why this might happen.
 
 ### Set the Api Compatibility Level to .NET 4.x
 

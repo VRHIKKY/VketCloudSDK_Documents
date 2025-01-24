@@ -84,3 +84,7 @@ Example: Placing 8 Quads with VKC Node Mirror, each rotated 45°
 !!! caution "Performance when placing Mirrors"
     If multiple mirrors are placed with video playing in the mirror's vicinity, it may result to poorer performance on smartphones.
     Please consider the positions when placing mirrors.
+
+!!! warning "Issues in 14.x"
+    We have confirmed an issue where a Quad with a Material set to Standard or Autodesk Interactive does not function as a mirror when its Rotation is set to (0.0, 180.0, 0.0).
+    A fix is planned, but as a workaround, please switch to Unlit/Texture if this issue occurs.
