@@ -7,7 +7,7 @@ During loading after a build, the console displays the error "Binary output fail
     SDK Version: 13.7<br>
     OS: Windows<br>
     Unity: 2022.3.6f1<br>
-    Browser: Google Chrome<br>
+    Browser: Google Chrome
 
 ## Cause and Solution
 

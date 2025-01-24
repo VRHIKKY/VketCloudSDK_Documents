@@ -7,7 +7,7 @@
     SDKバージョン : 13.7<br>
     OS : Windows<br>
     Unity : 2022.3.6f1<br>
-    ブラウザ : Google Chrome<br>
+    ブラウザ : Google Chrome
 
 ## 原因と解決方法
 
