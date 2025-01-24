@@ -11,7 +11,7 @@ By using VKC Node Shadow / HEO Shadow, you can configure dynamic shadows (shadow
     Unity : 2019.4.31.f1<br>
     Browser : Google Chrome
 
-!!! warning "The names have changed since VketCloudSDK13."
+!!! warning "The names have changed since Vket Cloud SDK13."
     HEOShadow → VKCNodeShadow<br>
     The functionality remains the same, so please read accordingly.
 

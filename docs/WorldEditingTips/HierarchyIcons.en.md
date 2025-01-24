@@ -2,7 +2,7 @@
 
 ![image](./img/HierarchyIcons_1.jpg)
 
-After VketCloudSDK 14, icons are displayed in the Hierarchy view when VKC components are attached, making it easier to identify which objects have which components.
+After Vket Cloud SDK 14, icons are displayed in the Hierarchy view when VKC components are attached, making it easier to identify which objects have which components.
 
 Furthermore, warnings are highlighted in yellow and errors in red, allowing for quick identification of which objects are causing errors from the Hierarchy view.
 

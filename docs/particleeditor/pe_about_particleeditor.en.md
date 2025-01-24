@@ -16,7 +16,7 @@ This tool offers exactly the same look as in actual Vket Cloud worlds, for the t
 
 ## How to launch
 
-To open the editor, select VketCloudSDK > Tools > ParticleEditor.
+To open the editor, select Vket Cloud SDK > Tools > ParticleEditor.
 
 ![pe_about_particleeditor_1](pe_image/pe_about_particleeditor_1.jpg)
 

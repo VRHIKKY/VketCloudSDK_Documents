@@ -2,7 +2,7 @@
 
 Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
 
-Itemは、VKC Item Field、VKC Item Objectなど、VketCloudSDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
+Itemは、VKC Item Field、VKC Item Objectなど、Vket Cloud SDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
 
 Itemクラスは、上記のItemをHeliScriptにて操作するためのものです。
 

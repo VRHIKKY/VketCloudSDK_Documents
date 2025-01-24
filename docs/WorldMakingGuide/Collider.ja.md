@@ -6,7 +6,7 @@ Vket Cloudでは、UnityのコライダーにVKCComponentを付与すること�
 
 ![VKCNodeCollider_1](../VKCComponents/img/HEOCollider_1.jpg)
 
-VketCloudSDKでは、Unityコライダーに対応するVKCComponentをそれぞれアタッチすることでワールド上で扱えるようになります。<br>
+Vket Cloud SDKでは、Unityコライダーに対応するVKCComponentをそれぞれアタッチすることでワールド上で扱えるようになります。<br>
 コライダーの設定方法・各設定項目の詳細は各ページをご確認ください。
 
 [VKC Node Collider](../VKCComponents/VKCNodeCollider.md) : コライダーにおける基本的なコンポーネントです。
@@ -27,7 +27,7 @@ VKC Node Cylinder Collider : [物理演算](./PhysicsEngine.md)にてUnityのCyl
 
 ## Action Trigger / HeliScriptでの物理演算・コライダーについて
 
-VketCloudSDKにおいて、コライダーはクリックや[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)を使用した入退場判定によってアクションを起こすことができます。
+Vket Cloud SDKにおいて、コライダーはクリックや[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)を使用した入退場判定によってアクションを起こすことができます。
 詳しくは[Actionについて](../Actions/ActionsOverview.md)をご確認ください。
 
 また、コライダーはその範囲内外にてHeliScriptのコールバック関数を呼び、様々なギミックの作成に役立てられます。<br>

@@ -19,10 +19,10 @@
 
 ## 変更されたページ
 
-- VketCloudSDKについて
+- Vket Cloud SDKについて
   - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/OperatingEnvironment.html)
     - 推奨設定の設定方法を追記
-  - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupSDK_external.html)
+  - [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupSDK_external.html)
     - インストールウィザード及びVersion Managerの使用方法を追加
     - 推奨設定の設定方法を追記
   - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/AboutVketCloudSDK/SetupAvatar.html)

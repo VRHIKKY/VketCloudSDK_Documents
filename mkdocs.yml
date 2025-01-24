@@ -1,9 +1,9 @@
-site_name: VketCloudSDK Manual
-site_description: 'VketCloudSDKのマニュアルです'
+site_name: Vket Cloud SDK Manual
+site_description: 'Vket Cloud SDKのマニュアルです'
 site_author: 'HIKKY'
 
 theme:
-  favicon: images/VketCloudIcon.png
+  favicon: images/Favicon.png
   logo: images/VketCloudIcon.png
   name: material
   palette:
@@ -78,8 +78,8 @@ plugins:
           nav_translations:
             # 概要
             Introduction: はじめに
-            # VketCloudSDKについて
-            About VketCloudSDK: VketCloudSDKについて
+            # Vket Cloud SDKについて
+            About Vket Cloud SDK: Vket Cloud SDKについて
             Setup Account: アカウント準備
             Operating Environment: 動作環境
             Setup SDK: SDKの導入方法
@@ -157,7 +157,7 @@ plugins:
             Debug Mode: デバッグモード
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
-            VketCloudSDK Settings : VketCloudSDK設定
+            Vket Cloud SDK Settings : Vket Cloud SDK設定
             ScenePreview (β): シーンプレビュー (β)
             # GUITools 
             Overview & Setup: 概要とセットアップ
@@ -300,7 +300,7 @@ markdown_extensions:
 
 nav:
 - Introduction: index.md
-- About VketCloudSDK:
+- About Vket Cloud SDK:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
@@ -382,7 +382,7 @@ nav:
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
-    - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
+    - Vket Cloud SDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - ScenePreview (β): SDKTools/ScenePreview.md

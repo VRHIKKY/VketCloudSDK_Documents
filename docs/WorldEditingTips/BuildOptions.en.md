@@ -2,11 +2,11 @@
 
 In build settings, creators can perform various operations on the files that make up the world during the Build and Run process. There are two ways to change the build settings:
 
-1. You can toggle the simple settings on or off by navigating to **VketCloudSDK > Build Option**.
+1. You can toggle the simple settings on or off by navigating to **Vket Cloud SDK > Build Option**.
 
    ![BuildOptions_0](img/BuildOptions_0.jpg)
 
-2. To edit the detailed build settings, open the settings window via **VketCloudSDK > Settings** and select the "Build" tab.
+2. To edit the detailed build settings, open the settings window via **Vket Cloud SDK > Settings** and select the "Build" tab.
 
    ![BuildOptions_1](img/BuildOptions_1.jpg)
 

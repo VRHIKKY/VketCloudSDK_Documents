@@ -1,12 +1,12 @@
 # Version Update Troubleshooting
 
-This page lists troubles and solution that may happen when [updating the VketCloudSDK](../AboutVketCloudSDK/SetupSDK_external.md#installing-a-specified-version-updating-an-existing-sdk).
+This page lists troubles and solution that may happen when [updating the Vket Cloud SDK](../AboutVketCloudSDK/SetupSDK_external.md#installing-a-specified-version-updating-an-existing-sdk).
 
 If a trouble not listed / cannot be solved by solutions on this page happens on version updating, feel free to ask on the [contact form](https://www.hikky.co.jp/contact?type=service&category=general){target=_blank} or the [Vket Cloud community Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}.
 
-## VketCloudSDK tab not showing on the top menu
+## Vket Cloud SDK tab not showing on the top menu
 
-After updating the VketCloudSDK, the VketCloudSDK tab may not be shown on the Unity editor's top menu as expected.
+After updating the Vket Cloud SDK, the Vket Cloud SDK tab may not be shown on the Unity editor's top menu as expected.
 
 ![VersionUpdateTroubleshooting_10](img/VersionUpdateTroubleshooting_10.jpg)
 
@@ -20,7 +20,7 @@ This can be solved by manually updating the required packages' version by the fo
 
     ![VersionUpdateTroubleshooting_12](img/VersionUpdateTroubleshooting_11.jpg)
 
-3. Check if the VketCloudSDK and related packages are on the correct versions in Manifest.json. 
+3. Check if the Vket Cloud SDK and related packages are on the correct versions in Manifest.json. 
     For example, package versions must be as below for SDK Ver12.3.0:
 
     ```
@@ -28,7 +28,7 @@ This can be solved by manually updating the required packages' version by the fo
     {
     "dependencies": {
     "com.hikky.editortutorialsystem": "1.0.1",
-    "com.hikky.vketcloudsdk": "12.3.0",
+    "com.hikky.VketCloudSDK": "12.3.0",
     "com.needle.deeplink": "1.2.1",
     // etc
 
@@ -98,7 +98,7 @@ After updating an existing project to Ver9.3, the version information on the bot
 
 ![VersionUpdateTroubleshooting_2](./img/VersionUpdateTroubleshooting_2.jpg)
 
-This can be solved by clearing the cache by VketCloudSDK > Clear Cache.
+This can be solved by clearing the cache by Vket Cloud SDK > Clear Cache.
 
 ![VersionUpdateTroubleshooting_3](./img/VersionUpdateTroubleshooting_3.jpg)
 

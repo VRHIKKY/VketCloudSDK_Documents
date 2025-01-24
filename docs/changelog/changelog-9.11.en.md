@@ -17,7 +17,7 @@
 
 ## Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
   - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/en/AboutVketCloudSDK/SetupSDK_external.html)
     - Updated few images of Install Wizard
 - First Steps

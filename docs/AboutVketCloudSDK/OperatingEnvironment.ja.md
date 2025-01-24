@@ -1,6 +1,6 @@
-# VketCloudSDKの動作環境
+# Vket Cloud SDKの動作環境
 
-VketCloudSDKは、以下のUnity環境が必要です。
+Vket Cloud SDKは、以下のUnity環境が必要です。
 
 - **Unity 2019.4.31f1** (SDK13.7.7以前)
 - **Unity 2022.3.6f1** (SDK13.7.7以降)
@@ -14,7 +14,7 @@ VketCloudSDKは、以下のUnity環境が必要です。
 - Windows 10, 64-bit
 - macOS 10.12+.
 
-ならびに、VketCloudSDKでビルドしたワールドに入室する端末スペックは以下を推奨します。
+ならびに、Vket Cloud SDKでビルドしたワールドに入室する端末スペックは以下を推奨します。
 
 - PC: Chrome / Firefox / Safari / Edge等のWebブラウザが使用できるもの。
 - iOS: iPhone X以降、iPhone SE（第2世代）以降
@@ -22,7 +22,7 @@ VketCloudSDKは、以下のUnity環境が必要です。
 - IDE: HeliScriptを編集する際、下記の理由によりVisual Studioは非推奨です。Visual Studioと同様の環境で編集を行いたい場合はVisual Studio Codeをご使用ください。
 
 !!! note warning
-    Visual Studioを使用してUnityプロジェクト内にVketCloudSDKが作成したHeliScriptファイルを開き、編集を保存すると、エンコードがANSIに変換されてビルドが出来なくなってしまう場合があります。<br>
+    Visual Studioを使用してUnityプロジェクト内にVket Cloud SDKが作成したHeliScriptファイルを開き、編集を保存すると、エンコードがANSIに変換されてビルドが出来なくなってしまう場合があります。<br>
     以下にUntiyから開くエディターをVisual Studio Codeに変更する方法を記載しますので、参考にしてください。
 
 !!! note "Unity指定エディターをVisual Studio Codeに変更する方法"

@@ -19,7 +19,7 @@ Vket Cloudで使用されるリフレクションプローブは、プリミテ�
 
 ## リフレクションプローブの設定方法
 
-Ver12.3以降のVketCloudSDKでは、ワールドのビルド時にシーン内のReflection Probeが自動検出されてVket Cloud仕様に変換されます。
+Ver12.3以降のVket Cloud SDKでは、ワールドのビルド時にシーン内のReflection Probeが自動検出されてVket Cloud仕様に変換されます。
 
 1. Reflection ProbeをアタッチしたGameObjectをシーン内に配置します。
 
@@ -37,9 +37,9 @@ Ver12.3以降のVketCloudSDKでは、ワールドのビルド時にシーン内�
 
     ![ReflectionProbe_Setup_3](img/ReflectionProbe_Setup_3.jpg)
 
-3. VketCloudSDKメニューよりBuild And Runを実行し、data/Field/Worldのtex_reflection_probeフォルダにテクスチャファイルが入っていれば成功です。
+3. Vket Cloud SDKメニューよりBuild And Runを実行し、data/Field/Worldのtex_reflection_probeフォルダにテクスチャファイルが入っていれば成功です。
 
-    テクスチャファイルの有無はVketCloudSDK > Open Release Folderを選択し、release/data/Field/Worldに移動すると確認できます。
+    テクスチャファイルの有無はVket Cloud SDK > Open Release Folderを選択し、release/data/Field/Worldに移動すると確認できます。
 
     ![ReflectionProbe_Setup_4](img/ReflectionProbe_Setup_4.jpg)
 

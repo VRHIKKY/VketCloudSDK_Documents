@@ -1,6 +1,6 @@
 # AvatarFile
 
-AvatarFileはVketCloudSDKにて[プリセットアバターの追加](PresetAvatar.md)などのために使用するファイルです。<br>
+AvatarFileはVket Cloud SDKにて[プリセットアバターの追加](PresetAvatar.md)などのために使用するファイルです。<br>
 本ファイルにはVket Cloud上でアバターを動作させるための情報を設定します。
 
 !!! note "Emotion機能について"

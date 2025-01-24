@@ -111,7 +111,7 @@ For details on how to get the activity data, refer to the manual which is referr
 
 ![VKCItemActivity_11](img/VKCItemActivity_11.jpg)
 
-4\. Move the unzipped analogclock folder to the Unity project with the VketCloudSDK installed. Folder position within the Assets is at your choice.
+4\. Move the unzipped analogclock folder to the Unity project with the Vket Cloud SDK installed. Folder position within the Assets is at your choice.
 
 ![VKCItemActivity_12](img/VKCItemActivity_12.jpg)
 

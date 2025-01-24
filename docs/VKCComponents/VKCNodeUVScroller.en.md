@@ -82,10 +82,10 @@ With this configuration, the image scrolls upward over 2 seconds after being dis
 
 !!! Warning caution
     When you export the HEO file after applying this configuration, the scroll information is added to the material data. Since the information is applied to the material, other objects using the same material will scroll in the same way, so please be aware of this.<br>
-    This specification is before VketCloudSDK9. In the current version, different scrolls can be applied to different objects, even if the same material is used.
+    This specification is before Vket Cloud SDK9. In the current version, different scrolls can be applied to different objects, even if the same material is used.
 
     If there are objects with a shared material located above the object with the VKCNodeUVScroller component in the Hierarchy, scrolling may not work properly.<br>
-    This specification is also before VketCloudSDK9.
+    This specification is also before Vket Cloud SDK9.
 
     If you replace the texture of the object with the VKCNodeUVScroller component via HeliScript, an issue may occur where the replaced texture is not displayed correctly.
 
