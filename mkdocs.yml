@@ -128,6 +128,7 @@ plugins:
             How to Use VKC Node Shadow: VKC Node Shadowの使い方
             Activity With Motion: モーション付きアクティビティ
             Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
+            Binary Output Error: バイナリ出力に失敗
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -350,6 +351,7 @@ nav:
     - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
     - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
     - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
+    - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md

@@ -1,5 +1,19 @@
 # SDK Manual Change Log - Ver 14.4
 
+## 2025年1月24日更新
+
+## 2025年1月24日 - 編集されたページ
+
+- HeliScript
+    - 文法と制御構文
+        - [定義・宣言](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/hs/hs_statement_def.html)
+            - 文言を修正
+
+## 2025年1月24日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [バイナリ出力に失敗](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/BinaryOutputError.html)
+
 ## 2025年1月17日更新
 
 ## 2025年1月17日 - 追加されたページ

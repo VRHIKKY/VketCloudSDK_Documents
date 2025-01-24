@@ -1,5 +1,19 @@
 # SDK Manual Change Log - Ver 14.4
 
+## January 24 2025 Update
+
+## January 24 2025 - Edited Page
+
+- HeliScript
+    - Statements and flow control
+        - [Declarations and definitions](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/hs/hs_statement_def.html)
+            - Fixed descriptions.
+
+## January 24 2025 - Added Page
+
+- World Making Guide
+    - [Binary Output Error](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/BinaryOutputError.html)
+
 ## January 17 2025 Update
 
 ## January 17 2025 - Added Page
