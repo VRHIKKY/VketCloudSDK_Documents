@@ -75,7 +75,7 @@ StringMode refers to the specified URL. It can be used for video streaming, etc.
 
 - Please Make sure to include this object under an object with [VKC Item Field](VKCItemField.md), as this object will not be displayed unless included into another Item. </br>
 
-- VketCloudSDK enables only a single video to be played at a time.<br>To make a pseudo-display of multiple videos, split the display within one video to two, and designate the display range within the screen's material.
+- Vket Cloud SDK enables only a single video to be played at a time.<br>To make a pseudo-display of multiple videos, split the display within one video to two, and designate the display range within the screen's material.
 
 - If you don't set autoplay, you need to control the start of playback by some means, such as an action.<br>The below image uses [VKC Attribute Action Trigger](VKCAttributeActionTrigger.md) to implement video playback on click.
 

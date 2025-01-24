@@ -12,7 +12,7 @@ However, there are some restrictions to be aware of.
     Unity: 2019.4.31.f1 <br>
     Browser: Google Chrome
 
-!!! warning "The names have changed since VketCloudSDK13."
+!!! warning "The names have changed since Vket Cloud SDK13."
     HEOBackgroundTexture → VKC Item Background Texture <br>
     HEOScript → VKC Attribute Script <br>
     HEOField → VKC Item Field <br>

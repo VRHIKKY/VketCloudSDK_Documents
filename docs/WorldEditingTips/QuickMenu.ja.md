@@ -1,6 +1,6 @@
 # Vket Cloudオブジェクト追加のためのクイックメニュー
 
-VketCloudSDKを導入すると、Hierarchy上で右クリックした際のコンテクストメニューにVket Cloudワールドに関連した機能が追加できるメニューに追加されます。
+Vket Cloud SDKを導入すると、Hierarchy上で右クリックした際のコンテクストメニューにVket Cloudワールドに関連した機能が追加できるメニューに追加されます。
 
 ![QuickMenu_1](./img/QuickMenu_1.jpg)
 

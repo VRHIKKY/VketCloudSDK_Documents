@@ -1,6 +1,6 @@
-# VketCloudSDKの導入方法
+# Vket Cloud SDKの導入方法
 
-VketCloudSDKをインストールするには、はじめにUnityのPackage Managerを使用し、SDKインストールウィザードを導入します。  
+Vket Cloud SDKをインストールするには、はじめにUnityのPackage Managerを使用し、SDKインストールウィザードを導入します。  
 
 ## Step 1. Unityでプロジェクトを開く
 
@@ -19,7 +19,7 @@ VketCloudSDKをインストールするには、はじめにUnityのPackage Mana
 ## Step 2. レジストリ情報を登録する  
 
 !!! note caution
-    Version 9.3リリース以降、VketCloudSDK導入時に入力するレジストリがインストールウィザードのものに変更となりました。<br>
+    Version 9.3リリース以降、Vket Cloud SDK導入時に入力するレジストリがインストールウィザードのものに変更となりました。<br>
     既存のプロジェクトにインストールウィザードを導入する際は**必ず**「+」ボタンを選択して新規のレジストリを追加し、SDKのレジストリを上書きしないようご注意ください。<br>
     インストールウィザードをインストールした後、[任意のバージョンの導入・既存バージョンSDKのアップデート](#sdk)に移行してください。
 
@@ -29,9 +29,9 @@ Unityのメニュー Edit > Project Settings から「Project Settings」ウィ�
   
 | 項目 | 値 |
 | ---- | ---- |
-| Name | VketCloudSDK Install Wizard |
+| Name | Vket Cloud SDK Install Wizard |
 | URL | https://registry.npmjs.com |
-| Scope(s) | com.hikky.vketcloudsdk-install-wizard |  
+| Scope(s) | com.hikky.VketCloudSDK-install-wizard |  
 
 最後に右下の「Save」ボタンを押して設定内容を保存します。
 
@@ -53,7 +53,7 @@ Unityのメニュー Window > Package Manager から「Packages」ウィンド�
 
 ![SetupSDK_External](img/SetupSDK_External_05.jpg)
 
-表示されたリスト内から VketCloudSDK Install Wizard を選択し、「Install」ボタンを押してインストールを開始します。<br>
+表示されたリスト内から Vket Cloud SDK Install Wizard を選択し、「Install」ボタンを押してインストールを開始します。<br>
 
 ![SetupSDK_External](img/SetupSDK_External_06.jpg)
 
@@ -157,7 +157,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 ![SetupSDK_External](img/SetupSDK_External_20.jpg)
 
-8\. Unityメニューの「VketCloudSDK」の項目から、「Login」を押してください。<br>
+8\. Unityメニューの「Vket Cloud SDK」の項目から、「Login」を押してください。<br>
 自動でWebブラウザが開きます。
 
 ![SetupSDK_External](img/SetupSDK_External_21.jpg)
@@ -211,7 +211,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 ### Package Managerによるバージョン切り替え
 
 Step 2.にてレジストリ情報を登録した後、「Window」-->「Package Manager」からPackage Managerを開きます。<br>
-Package Managerではレジストリ表示を"My Registries"に切り替え、VketCloudSDKが表示されることを確認します。<br>
+Package Managerではレジストリ表示を"My Registries"に切り替え、Vket Cloud SDKが表示されることを確認します。<br>
 
 ![SetupSDK_PackageManager_1](./img/SetupSDK_PackageManager_1.jpg)
 
@@ -229,12 +229,12 @@ Package Managerではレジストリ表示を"My Registries"に切り替え、Vk
 
 ![SetupSDK_ManifestJson_2](./img/SetupSDK_ManifestJson_2.jpg)
 
-manifest.json内の`"com.hikky.vketcloudsdk"`の右側を使用したいバージョンに書き換えると、インストール時(インストール済みの場合は読み込み時)のバージョンが切り替わります。
+manifest.json内の`"com.hikky.VketCloudSDK"`の右側を使用したいバージョンに書き換えると、インストール時(インストール済みの場合は読み込み時)のバージョンが切り替わります。
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! caution "UnityメニューにてVketCloudSDKが表示されない場合は"
-      UnityのメニューにVketCloudSDKが表示されない場合は、再起動すると表示される場合があります。<br>
+!!! caution "UnityメニューにてVket Cloud SDKが表示されない場合は"
+      UnityのメニューにVket Cloud SDKが表示されない場合は、再起動すると表示される場合があります。<br>
       上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
 
       また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際はStep 2.と同じ手順で以下のパッケージを導入してください。

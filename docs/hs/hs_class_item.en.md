@@ -2,7 +2,7 @@
 
 On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
 
-Items can be output to the scene by placing and configuring game objects with components added by VketCloudSDK, such as VKC Item Field and VKC Item Object.
+Items can be output to the scene by placing and configuring game objects with components added by Vket Cloud SDK, such as VKC Item Field and VKC Item Object.
 
 The Item class is used to manipulate the above-mentioned Item in HeliScript.
 

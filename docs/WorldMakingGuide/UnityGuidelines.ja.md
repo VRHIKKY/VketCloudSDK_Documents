@@ -49,8 +49,8 @@ Vket Cloudではライトマップを使用する際は以下のフォーマッ�
 - リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVket Cloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
 - Other Settings の Color Spaceが「Linear」になっているか確認する
 
-VketCloudSDKでは、上記の環境設定を推奨設定としております。<br>
-詳しい設定方法は[VketCloudSDKの動作環境](../AboutVketCloudSDK/OperatingEnvironment.md)を参照してください。
+Vket Cloud SDKでは、上記の環境設定を推奨設定としております。<br>
+詳しい設定方法は[Vket Cloud SDKの動作環境](../AboutVketCloudSDK/OperatingEnvironment.md)を参照してください。
 
 ![UnityGuidelines_1](./img/UnityGuidelines_1.jpg)
 
@@ -70,13 +70,13 @@ VketCloudSDKでは、上記の環境設定を推奨設定としております�
 - MToon
 - Unlit
 - UnlitWF（両面表示等のみ対応）
-- VketCloudSDKに含まれるVketChanDoubleSided系のシェーダー
+- Vket Cloud SDKに含まれるVketChanDoubleSided系のシェーダー
 
 !!! note
     Autodesk Interactiveのメタリックテクスチャは、テクスチャスロット数の都合上、使用できません。メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。
 
 !!! note "対応しているシェーダー項目について"
-    VketCloudSDKではシェーダーの設定項目において対応しているものとしていないものが存在します。<br>
+    Vket Cloud SDKではシェーダーの設定項目において対応しているものとしていないものが存在します。<br>
     詳細は[シェーダー対応項目一覧](ShaderAvailability.md)をご覧ください。
 
 ## コライダー

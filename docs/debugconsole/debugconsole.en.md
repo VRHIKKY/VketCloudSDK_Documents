@@ -2,7 +2,7 @@
 
 ![debugconsole_1](./img/debugconsole_1.jpg)
 
-The debug console is the tool for troubleshooting issues and debugging when developing worlds on VketCloudSDK.<br> 
+The debug console is the tool for troubleshooting issues and debugging when developing worlds on Vket Cloud SDK.<br> 
 Main purpose of the console is to provide realtime information about function behaviour and status of running programs.
 
 Main features of the debug console are the following:
@@ -17,13 +17,13 @@ This tool is vital especially for developing complex systems and large-scale pro
 
 ## How to open the Debug Console
 
-Select the `Tools` on the VketCloudSDK tab, and open the debug console window by selecting `Debug Console`.
+Select the `Tools` on the Vket Cloud SDK tab, and open the debug console window by selecting `Debug Console`.
 
 ![debugconsole_2](./img/debugconsole_2.jpg)
 
 ## Differences between the Unity Console
 
-1. **Built-in support** especially for world developing on VketCloudSDK, including specialized display, filtering, originally implemented error types
+1. **Built-in support** especially for world developing on Vket Cloud SDK, including specialized display, filtering, originally implemented error types
 2. **Reinforced search feature**: The debug console provides searching for log messages. <br> The developer may access the related information by swift searching the log containing a certain keyword/phrase. <br>This feature allows easier finding of information from massive log data.
 3. **Log copying**: The debug console allows easy copy of log messages and stack traces.<br> The developer may share the information via copying on the clipboard, or analyzing it by pasting it on other tools.
 4. **Log exporting**: The debug console provides exporting log data as an external file.<br> The developer may take backup of log data, and share the log in a handier way. 

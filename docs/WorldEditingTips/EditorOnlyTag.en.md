@@ -1,6 +1,6 @@
 # Using EditorOnly Tags
 
-The object with Unity's EditorOnly tag attached will be ignored on the VketCloudSDK build.
+The object with Unity's EditorOnly tag attached will be ignored on the Vket Cloud SDK build.
 
 !!! note caution
     In the current version, the Node objects (e.g. Cube, Sphere, etc.) are available to be ignored.<br>

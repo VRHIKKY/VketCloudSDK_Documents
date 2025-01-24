@@ -5,7 +5,7 @@
 
 ## ビルドを行う方法 / ビルドのオプションについて
 
-VketCloudSDKでシーンをビルドするには、[必要コンポーネント](WorldBasicComponents.md)を配置したことを確認し、VketCloudSDK > Build And Run からビルドを実行してください。  
+Vket Cloud SDKでシーンをビルドするには、[必要コンポーネント](WorldBasicComponents.md)を配置したことを確認し、Vket Cloud SDK > Build And Run からビルドを実行してください。  
   
 ![BuildAndRun](img/BuildAndRun.jpg)  
 
@@ -22,7 +22,7 @@ VketCloudSDKでシーンをビルドするには、[必要コンポーネント]
     APIとの接続が必要な機能の場合は、ワールドをアップロードして確認してください。
 
 !!! note "ビルドオプションについて"
-    VketCloudSDK > Settingsより設定ウィンドウを開き、「Build」タブを選択するとビルド時のテクスチャの自動圧縮などのオプションを設定出来ます。<br>
+    Vket Cloud SDK > Settingsより設定ウィンドウを開き、「Build」タブを選択するとビルド時のテクスチャの自動圧縮などのオプションを設定出来ます。<br>
     詳細は[ビルド時のオプション](../WorldEditingTips/BuildOptions.md)をご参照ください。
 
 ビルドが成功したら、自動的にブラウザに遷移します。シーンの内容が反映されているかテストしてください。
@@ -30,10 +30,10 @@ VketCloudSDKでシーンをビルドするには、[必要コンポーネント]
 ![BuildAndRun](img/buildsuccess.jpg)  
 
 !!! note tip "キャッシュクリアについて"
-    VketCloudSDKのビルド時に発生するキャッシュは、基本的にはビルド毎に上書きされるため消去は不要です。<br>
+    Vket Cloud SDKのビルド時に発生するキャッシュは、基本的にはビルド毎に上書きされるため消去は不要です。<br>
     SDKのバージョンアップ直後などにおいて稀にキャッシュが原因のビルドエラーが発生するため、その際は以下より手動でのキャッシュクリアをお試しください。<br>
-    - VketCloudSDK > キャッシュクリア<br>
-    また、 - VketCloudSDK > Build Option > Auto Clear Cache にチェックを入れることでビルド毎にキャッシュクリアするように設定出来ますが、通常のビルド時には有効にしなくても問題ございません。
+    - Vket Cloud SDK > キャッシュクリア<br>
+    また、 - Vket Cloud SDK > Build Option > Auto Clear Cache にチェックを入れることでビルド毎にキャッシュクリアするように設定出来ますが、通常のビルド時には有効にしなくても問題ございません。
 
 ## 「ビルドと実行」で起きること
 

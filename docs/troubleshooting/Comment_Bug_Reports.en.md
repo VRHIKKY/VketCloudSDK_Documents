@@ -6,7 +6,7 @@ We encourage you to share your thoughts with us.
 
 If you would like a direct response or support from staff, please contact us on [VketCloud/MyVket Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}
 
-1. Select VketCloudSDK > Comments and Bug Report Form from the Unity Editor.
+1. Select Vket Cloud SDK > Comments and Bug Report Form from the Unity Editor.
 
 ![Comments](img/Comments_01.jpg)
 

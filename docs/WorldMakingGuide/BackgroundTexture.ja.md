@@ -12,7 +12,7 @@ VKC Item Background Texture/HEOBackGroundTextureを使うことで、ワール�
     Unity : 2019.4.31.f1 <br>
     ブラウザ : Google Chrome
 
-!!! warning "VketCloudSDK13以降で名称が変化しています。"
+!!! warning "Vket Cloud SDK13以降で名称が変化しています。"
     HEOBackgroundTexture → VKC Item BackgroundTexture <br>
     HEOScript → VKC Attribute Script <br>
     HEOField → VKC Item Field <br>

@@ -19,7 +19,7 @@
 
 ## Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
   - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/AboutVketCloudSDK/OperatingEnvironment.html)
     - Added instructions on setting recommended Settings
   - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.5/en/AboutVketCloudSDK/SetupSDK_external.html)
