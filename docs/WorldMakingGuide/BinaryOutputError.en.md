@@ -13,7 +13,7 @@ During loading after a build, the console displays the error "Binary output fail
 
 The issue arises when using `new` to initialize fields or global variables in Heliscript classes. Moving the initialization to the constructor resolves the problem.
 
-```csharp
+```
 class Test {
     // Incorrect
     list<Transform> _list = new list<Transform>();
@@ -27,3 +27,4 @@ class Test {
         _list = new list<Transform>();
     }
 }
+```
