@@ -4,7 +4,7 @@
 
 ## 概要
 
-Texture Import Viewerは、プロジェクト内にあるテクスチャのインポート設定や圧縮サイズなどを一覧で確認できるVketCloudSDK独自のビューワーツールです。
+Texture Import Viewerは、プロジェクト内にあるテクスチャのインポート設定や圧縮サイズなどを一覧で確認できるVket Cloud SDK独自のビューワーツールです。
 
 Viewer上からテクスチャのインポート設定をまとめて変更したり、あるいは容量順に並び替えたりすることもできます。<br>
 また、リスト上で各テクスチャ設定項目を編集し、設定をまとめて保存もしくは[Export Compressed Texture](./ExportCompressedTexture.md)と同じ手法でテクスチャファイルのエクスポート・画像差し替えが行えます。
@@ -15,7 +15,7 @@ Viewer上からテクスチャのインポート設定をまとめて変更し�
 
 ![TextureImportViewer_2](img/TextureImportViewer_2.jpg)
 
-Unity上部のメニューから、VketCloudSDK > Tools > TextureImportViewerを選択し、Viewerのウィンドウを開きます。
+Unity上部のメニューから、Vket Cloud SDK > Tools > TextureImportViewerを選択し、Viewerのウィンドウを開きます。
 
 ![TextureImportViewer_3](img/TextureImportViewer_3.jpg)
 

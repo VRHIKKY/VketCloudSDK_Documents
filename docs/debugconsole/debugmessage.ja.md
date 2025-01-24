@@ -5,8 +5,8 @@
 
 |ビルドエラー (⛔) / アラート (⚠)|メッセージカテゴリー|メッセージ内容|メッセージ修正の提案文|参照リンク|
 |-----|-----|-----|-----|-----|
-|Error|Unity Option Alert|お使いのUnityバージョンは、VketCloudSDKのサポート対象外です。|2019.4.31f1にバージョンを変更してください。|[Download Archive](https://unity.com/ja/releases/editor/archive#download-archive-2019){target=_blank} |
-|Alert|Unity Option Alert|Color SpaceがLinearに設定されていません。ビルド後の見た目が大きく異なる可能性があります。|Color SpaceをLinearに設定してください。| [VketCloudSDKの動作環境](../AboutVketCloudSDK/OperatingEnvironment.md) |
+|Error|Unity Option Alert|お使いのUnityバージョンは、Vket Cloud SDKのサポート対象外です。|2019.4.31f1にバージョンを変更してください。|[Download Archive](https://unity.com/ja/releases/editor/archive#download-archive-2019){target=_blank} |
+|Alert|Unity Option Alert|Color SpaceがLinearに設定されていません。ビルド後の見た目が大きく異なる可能性があります。|Color SpaceをLinearに設定してください。| [Vket Cloud SDKの動作環境](../AboutVketCloudSDK/OperatingEnvironment.md) |
 |Alert|Unity Option Alert|Player設定のTier設定において、スタンダードシェーダーの品質レベルがMediumに設定されていません。ビルド後の見た目が大きく異なる可能性があります。|スタンダードシェーダーの品質をMediumに設定してください。|[Graphics - Unity マニュアル](https://docs.unity3d.com/ja/2019.4/Manual/class-GraphicsSettings.html){target=_blank}|
 |Error|Essential Objects Error|[HEOWorldSetting](../VKCComponents/HEOWorldSetting.md)を持つオブジェクトがシーンに存在しません。|[HEOWorldSetting](../VKCComponents/HEOWorldSetting.md)を持つオブジェクトを作成してください。|[ワールドの基本要素](../FirstStep/WorldBasicComponents.md) |
 |Error|Essential Objects Error|[VKC Item Field](../VKCComponents/VKCItemField.md)を持つオブジェクトがシーンに存在しません。|[VKC Item Field](../VKCComponents/VKCItemField.md)を持つオブジェクトを作成してください。|[ワールドの基本要素](../FirstStep/WorldBasicComponents.md) |

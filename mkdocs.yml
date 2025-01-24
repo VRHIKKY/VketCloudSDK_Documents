@@ -1,9 +1,9 @@
-site_name: VketCloudSDK Manual
-site_description: 'VketCloudSDKのマニュアルです'
+site_name: Vket Cloud SDK Manual
+site_description: 'Vket Cloud SDKのマニュアルです'
 site_author: 'HIKKY'
 
 theme:
-  favicon: images/VketCloudIcon.png
+  favicon: images/Favicon.png
   logo: images/VketCloudIcon.png
   name: material
   palette:
@@ -78,8 +78,8 @@ plugins:
           nav_translations:
             # 概要
             Introduction: はじめに
-            # VketCloudSDKについて
-            About VketCloudSDK: VketCloudSDKについて
+            # Vket Cloud SDKについて
+            About Vket Cloud SDK: Vket Cloud SDKについて
             Setup Account: アカウント準備
             Operating Environment: 動作環境
             Setup SDK: SDKの導入方法
@@ -127,6 +127,7 @@ plugins:
             How to Use HEOProperty (Vket Cloud Property Function) : HEOProperty(Vket Cloudのプロパティ機能)の使い方
             How to Use VKC Node Shadow: VKC Node Shadowの使い方
             Activity With Motion: モーション付きアクティビティ
+            How to check the Chrome Developer Tools console on iPhone alone: iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法
             Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
@@ -135,6 +136,7 @@ plugins:
             SDK does not appear after install: SDKがインストール後に立ち上がらない
             Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
             Version Update Troubleshooting: バージョンアップ後によくあるトラブル
+            Multiplayer Troubleshooting: ワールド入室後にマルチプレイができない時の確認ポイント
             Comment / Bug Reports Form : ご意見・バグ報告フォーム
             # FAQ
             FAQ : FAQ
@@ -146,6 +148,7 @@ plugins:
             Solution for When Clicking on Sphere Collider Does Not Respond : SphereColliderをクリックしても反応しない場合の解決方法
             About the Split Function : Split関数について
             The .mp3 audio file in the activity is not output during the build : アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
+            Special Specifications of the Date Type : Data型の特殊仕様
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -155,7 +158,7 @@ plugins:
             Debug Mode: デバッグモード
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
-            VketCloudSDK Settings : VketCloudSDK設定
+            Vket Cloud SDK Settings : Vket Cloud SDK設定
             ScenePreview (β): シーンプレビュー (β)
             # GUITools 
             Overview & Setup: 概要とセットアップ
@@ -300,7 +303,7 @@ markdown_extensions:
 
 nav:
 - Introduction: index.md
-- About VketCloudSDK:
+- About Vket Cloud SDK:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
@@ -352,12 +355,14 @@ nav:
     - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
     - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
     - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
+    - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
     - Build Error / How to troubleshoot issues: troubleshooting/BuildError.md
     - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
+    - Multiplayer Troubleshooting: troubleshooting/MultiplayerTroubleshooting.md
     - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
 - FAQ:
     - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
@@ -368,6 +373,7 @@ nav:
     - Solution for When Clicking on Sphere Collider Does Not Respond: FAQ/SphereCollider.md
     - About the Split Function: FAQ/HS_Split.md
     - The .mp3 audio file in the activity is not output during the build: FAQ/AudioExportWithMeta.md
+    - Special Specifications of the Date Type: FAQ/DateSpecialSpecifications.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
@@ -380,7 +386,7 @@ nav:
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
-    - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
+    - Vket Cloud SDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - ScenePreview (β): SDKTools/ScenePreview.md

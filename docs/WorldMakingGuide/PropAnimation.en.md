@@ -2,7 +2,7 @@
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-VketCloudSDK allows you to place animated objects in world using the [VKC Node RotateAnimation](../VKCComponents/VKCNodeRotateAnimation.md) component or .heo files and .hem.
+Vket Cloud SDK allows you to place animated objects in world using the [VKC Node RotateAnimation](../VKCComponents/VKCNodeRotateAnimation.md) component or .heo files and .hem.
 Placing moving objects on the world will greatly improve the appearance.
 
 If you stumble on each step, please refer to [How to Animate Objects - Troubleshooting](PropAnimation_TroubleShooting.md).
@@ -84,7 +84,7 @@ Add some keyframes and create an animation at your choice!
 
 ![PropAnimation_12](./img/PropAnimation_12.jpg)
 
-Once setting animation is complete, select the object with Animation (empty object) on the Inspector view and select `"Export Motion"` on the VketCloudSDK tab at the top of the screen. <br>
+Once setting animation is complete, select the object with Animation (empty object) on the Inspector view and select `"Export Motion"` on the Vket Cloud SDK tab at the top of the screen. <br>
 After selecting, the explorer will appear to designate a .hem save location, so save it in any location with a name at your choice.
 
 ![PropAnimation_13](./img/PropAnimation_13.jpg)
@@ -106,7 +106,7 @@ After saving, the export is complete when `"Exported"` appears on the Unity cons
 
 ![PropAnimation_15](./img/PropAnimation_15.jpg)
 
-Select the object containing the Animation component (empty object) above and select `Export Field` on the VketCloudSDK menu.
+Select the object containing the Animation component (empty object) above and select `Export Field` on the Vket Cloud SDK menu.
 
 ![PropAnimation_16](./img/PropAnimation_16.jpg)
 

@@ -13,7 +13,7 @@
 
 ![Asset Improve2](img/ImproveAssetStore_2.jpg)
 
-4. 入手したアセットはマイページの[アセット管理画面](https://cloud.vket.com/account/asset){target=_blank}にて確認とダウンロードができます。続いてダウンロードしたら、VketCloudSDKを使用してワールドに配置してみましょう。
+4. 入手したアセットはマイページの[アセット管理画面](https://cloud.vket.com/account/asset){target=_blank}にて確認とダウンロードができます。続いてダウンロードしたら、Vket Cloud SDKを使用してワールドに配置してみましょう。
 
 ![Asset Improve3](img/ImproveAssetStore_3.jpg)
 

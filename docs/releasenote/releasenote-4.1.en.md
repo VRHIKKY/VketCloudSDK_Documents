@@ -24,7 +24,7 @@
 - Added SetPhysicsEnable to HeliScript.
 - Added IsPhysicsFixed to HeliScript.
 - When IBL and Lightening USE turned off, the folded numbers are not written to the scene file.
-- Added an option of 'Essential Scene for VketCloudSDK' to the asset menu.
+- Added an option of 'Essential Scene for Vket Cloud SDK' to the asset menu.
 - Added an option to delete cache in each build to the menu.
 - The cash clear can be triggered from the menu.
 - The image file name of the control has been spelled out and mistakes have been modified.

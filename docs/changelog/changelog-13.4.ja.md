@@ -147,8 +147,8 @@
 
 ## 2024年8月9日 - 変更されたページ
 
-- VketCloudSDKについて
-    - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
+- Vket Cloud SDKについて
+    - [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/SetupSDK_external.html)
         - 説明文および画像を更新
 - ワールド制作ガイド
     - [クリック判定できる可動オブジェクトの作り方](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldMakingGuide/MovableClickableObject.html)
@@ -306,7 +306,7 @@
 
 - 編集のためのTips
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/WorldEditingTips/BuildOptions.html)
-    - VketCloudSDK > Build Optionの設定について説明を追加
+    - Vket Cloud SDK > Build Optionの設定について説明を追加
     - テクスチャオーバーライド設定について解説を更新
 - HeliScriptエラーの表示方法に関する注意を以下ページに追記：
   - ワールド制作の基本
@@ -364,7 +364,7 @@
 
 ## 2024年6月26日 - 変更されたページ
 
-- VketCloudSDKについて
+- Vket Cloud SDKについて
   - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/AboutVketCloudSDK/LoginSDK.html)
     - macOS, Safariを使用している場合のトラブルシュートについて追記
 - トラブルシューティング

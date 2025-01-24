@@ -1,6 +1,6 @@
 # World Optimization - Overview
 
-VketCloudSDK provides viable methods of optimization for better world performance on web browsers / smartphones.
+Vket Cloud SDK provides viable methods of optimization for better world performance on web browsers / smartphones.
 
 ## Occlusion Culling
 

@@ -18,8 +18,8 @@
 
 ## 変更されたページ
 
-- VketCloudSDKについて
-  - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/AboutVketCloudSDK/SetupSDK_external.html)
+- Vket Cloud SDKについて
+  - [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/AboutVketCloudSDK/SetupSDK_external.html)
     - インストールウィザードの画像を一部更新
 - ワールド制作の基本
   - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/9.11/FirstStep/WorldUpload.html)

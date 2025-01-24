@@ -15,7 +15,7 @@
 
 ## Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
     - [How to install VketCloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupSDK_external.html)
         - Added instructions on how to use the install wizard / version manager
     - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/en/AboutVketCloudSDK/SetupAvatar.html)

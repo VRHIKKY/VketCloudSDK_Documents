@@ -1,6 +1,6 @@
 # Displaying Gizmos in the Scene View
 
-When you install the VketCloudSDK, some VKC components will be displayed as gizmos in the Scene view.
+When you install the Vket Cloud SDK, some VKC components will be displayed as gizmos in the Scene view.
 
 ![Gizmos_1](./img/Gizmos_1.jpg)
 

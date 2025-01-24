@@ -23,7 +23,7 @@ For instructions, refer to [Texture Import Viewer](../SDKTools/TextureImportView
 
 ![ExportCompressedTexture_1](../SDKTools/img/ExportCompressedTexture_1.jpg)
 
-VketCloudSDK has a texture compression/formatting tool named as [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md).
+Vket Cloud SDK has a texture compression/formatting tool named as [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md).
 
 This tool will generate a compressed texture image according to the [MaxSize](https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html){target=_blank} set on the texture settings.
 

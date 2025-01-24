@@ -145,7 +145,7 @@
 - Adjusted so that Disable Node is written into world.json.
 - Added import guidance for tutorial scenes, including import from Menu and a dedicated Learning screen.
 - Ping and load the corresponding scene at the start of the imported tutorial.
-- Changed Package Directory from VketCloudSDK to com.hikky.heliodorlib.
+- Changed Package Directory from Vket Cloud SDK to com.hikky.heliodorlib.
 - Added right-click menu items.
 - Stabilized major modules and improved functionality.
 - Changed "HeliScript" display to Japanese.
