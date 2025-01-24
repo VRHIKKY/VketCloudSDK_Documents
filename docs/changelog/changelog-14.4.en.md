@@ -2,17 +2,31 @@
 
 ## January 24 2025 Update
 
+## January 24 2025 - Edited Page
+
+- Trouble shooting
+    - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/troubleshooting/VersionUpdateTroubleshooting.html)
+        - Add a solution for when Unity fails to start after rolling back to a previous version following an upgrade.
+
 ## January 24 2025 - Added Page
 
 - FAQ
     - [DateSpecialSpecifications](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/DateSpecialSpecifications.html)
 - World Making Guide
     - [How to check the Chrome Developer Tools console on iPhone alone](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/iPhoneConsole.html)
-    - [Activity Class With CanvasUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/ActivityWithCanvasUI.html)
 - Trouble shooting
     - [Multiplayer Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/troubleshooting/MultiplayerTroubleshooting.html)
 - External API
   - [Reading JSON in HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/ExternalAPI/HeliScriptJsonParse.html)
+
+---
+
+## January 17 2025 Update
+
+## January 17 2025 - Added Page
+
+- World Making Guide
+    - [Activity Class With CanvasUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/ActivityWithCanvasUI.html)
 
 ---
 

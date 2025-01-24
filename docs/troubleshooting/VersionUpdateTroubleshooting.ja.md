@@ -129,3 +129,24 @@ Ver12.3以降、これまで[HEOWorldSetting](../VKCComponents/HEOWorldSetting.m
 ![VersionUpdateTroubleshooting_7](img/VersionUpdateTroubleshooting_7.jpg)
 
 4\. Unityプロジェクトを再度開き、エラーの解消を確認する
+
+## 一度バージョンアップ後、過去バージョンに巻き戻すと、Unityが起動しなくなった
+
+!!! info
+    SDKバージョン : 9.3→12.3<br>
+    OS : Windows10<br>
+    Unity : 2019.4.31.f1<br>
+    ブラウザ :Chrome
+
+SDKを更新した後に、過去バージョンを参照する、過去バージョンの修正作業が必要になるなどの都合により、GitHubのバージョン管理ツールを使用してSDKを過去のバージョンに戻した際、Unityが起動できなくなる事象を確認しております。
+
+※Unity起動中のimportingがMaxとなると同時にUnityがクラッシュし、エラーメッセージも出ないという事象
+
+### 操作手順
+
+1. Libraryフォルダを削除する。
+
+![VersionUpdateTroubleshooting_13](img/VersionUpdateTroubleshooting_13.jpg)
+
+Libraryフォルダを削除して起動し直すとこで起動できるようになったことがあります。  
+それでも解消しない場合、Libraryフォルダに加え、Packages-lock.jsonを削除して再度起動すると解消するかもしれません。

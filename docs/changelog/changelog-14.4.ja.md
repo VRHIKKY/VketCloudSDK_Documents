@@ -2,17 +2,31 @@
 
 ## 2025年1月24日更新
 
+## 2025年1月24日 - 編集されたページ
+
+- トラブルシューティング
+    - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VersionUpdateTroubleshooting.html)
+        - 一度バージョンアップ後、過去バージョンに巻き戻した際Unityが起動しなくなった際の解消法を追記
+
 ## 2025年1月24日 - 追加されたページ
 
 - FAQ
     - [Date型の特殊仕様](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/DateSpecialSpecifications.html)
 - ワールド制作ガイド
     - [iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/iPhoneConsole.html)
-    - [CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/ActivityWithCanvasUI.html)
 - トラブルシューティング
     - [ワールド入室後にマルチプレイができない時の確認ポイント](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/MultiplayerTroubleshooting.html)
 - 外部API連携
   - [HeliScriptでJsonを読み込む](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/HeliScriptJsonParse.html)
+
+---
+
+## 2025年1月17日更新
+
+## 2025年1月17日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/ActivityWithCanvasUI.html)
 
 ---
 
