@@ -3,6 +3,7 @@
 ## January 24 2025 Update
 
 ## January 24 2025 - Added Page
+
 - FAQ
     - [DateSpecialSpecifications](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/DateSpecialSpecifications.html)
 - World Making Guide
@@ -10,6 +11,8 @@
     - [Activity Class With CanvasUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/WorldMakingGuide/ActivityWithCanvasUI.html)
 - Trouble shooting
     - [Multiplayer Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/troubleshooting/MultiplayerTroubleshooting.html)
+- External API
+  - [Reading JSON in HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/ExternalAPI/HeliScriptJsonParse.html)
 
 ---
 

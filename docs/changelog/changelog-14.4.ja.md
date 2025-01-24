@@ -11,6 +11,8 @@
     - [CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/ActivityWithCanvasUI.html)
 - トラブルシューティング
     - [ワールド入室後にマルチプレイができない時の確認ポイント](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/MultiplayerTroubleshooting.html)
+- 外部API連携
+  - [HeliScriptでJsonを読み込む](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/HeliScriptJsonParse.html)
 
 ---
 

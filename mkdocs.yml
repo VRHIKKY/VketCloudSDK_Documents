@@ -283,6 +283,8 @@ plugins:
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
+            JsVal: JsVal
+            Reading JSON in HeliScript: HeliScriptでJsonを読み込む
             # チェンジログ / リリースノート
             Change Log: チェンジログ
             About Changelog: チェンジログについて
@@ -558,6 +560,7 @@ nav:
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md
+  - Reading JSON in HeliScript: ExternalAPI/HeliScriptJsonParse.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v14.x:
