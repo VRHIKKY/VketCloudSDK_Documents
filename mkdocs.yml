@@ -148,6 +148,7 @@ plugins:
             Solution for When Clicking on Sphere Collider Does Not Respond : SphereColliderをクリックしても反応しない場合の解決方法
             About the Split Function : Split関数について
             The .mp3 audio file in the activity is not output during the build : アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
+            The screen goes completely black after loading is complete : ロードが完了すると画面が真っ暗になる
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -370,6 +371,7 @@ nav:
     - Solution for When Clicking on Sphere Collider Does Not Respond: FAQ/SphereCollider.md
     - About the Split Function: FAQ/HS_Split.md
     - The .mp3 audio file in the activity is not output during the build: FAQ/AudioExportWithMeta.md
+    - The screen goes completely black after loading is complete : FAQ/Load_Blackout.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md

@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.4
 
+## January 31 2025 Update
+
+## January 31 2025 - Added Page
+
+- FAQ
+    -[The screen goes completely black after loading is complete](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/Load_Blackout.html)
+
+---
+
 ## January 24 2025 Update
 
 ## January 24 2025 - Added Page

@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.4
 
+## 2025年1月31日更新
+
+## 2025年1月31日 - 追加されたページ
+- FAQ
+    - [ロードが完了すると画面が真っ暗になる](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/Load_Blackout.html)
+
+---
+
 ## 2025年1月24日更新
 
 ## 2025年1月24日 - 追加されたページ
