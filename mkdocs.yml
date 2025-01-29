@@ -150,6 +150,9 @@ plugins:
             About the Split Function : Split関数について
             The .mp3 audio file in the activity is not output during the build : アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
             Special Specifications of the Date Type : Data型の特殊仕様
+            Loading Stack : ローディングが止まる
+            Not Reflected During Build : ビルド時に反映されない
+            Error Not Displayed : エラーが表示されない不具合への対処法
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -376,6 +379,9 @@ nav:
     - About the Split Function: FAQ/HS_Split.md
     - The .mp3 audio file in the activity is not output during the build: FAQ/AudioExportWithMeta.md
     - Special Specifications of the Date Type: FAQ/DateSpecialSpecifications.md
+    - Loading Stack: FAQ/LoadingStack.md
+    - Not Reflected During Build: FAQ/NotReflectedDuringBuild.md
+    - Error Not Displayed: FAQ/ErrorNotDisplayed.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
