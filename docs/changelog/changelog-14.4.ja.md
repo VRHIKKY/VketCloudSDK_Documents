@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.4
 
+## 2025年1月30日更新
+
+## 2025年1月30日 - 編集されたページ
+
+- Vket Cloud SDKについて
+  - [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/AboutVketCloudSDK/SetupSDK_external.html)
+    - レジストリ情報におけるScope(s)の表記を修正
+
+---
+
 ## 2025年1月24日更新
 
 ## 2025年1月24日 - 編集されたページ
