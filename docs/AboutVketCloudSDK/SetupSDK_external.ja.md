@@ -31,7 +31,7 @@ Unityのメニュー Edit > Project Settings から「Project Settings」ウィ�
 | ---- | ---- |
 | Name | Vket Cloud SDK Install Wizard |
 | URL | https://registry.npmjs.com |
-| Scope(s) | com.hikky.VketCloudSDK-install-wizard |  
+| Scope(s) | com.hikky.vketcloudsdk-install-wizard |  
 
 最後に右下の「Save」ボタンを押して設定内容を保存します。
 

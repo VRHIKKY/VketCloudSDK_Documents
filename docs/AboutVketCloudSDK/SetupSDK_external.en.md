@@ -34,7 +34,7 @@ Select "Package Manager" from the left tab in the window and describe as follows
 | ---- | ---- |
 | Name |Vket Cloud SDK Install Wizard|
 | URL |https://registry.npmjs.com|
-| Scope(s) |com.hikky.VketCloudSDK-install-wizard|  
+| Scope(s) |com.hikky.vketcloudsdk-install-wizard|  
 
 Finally, press the "Save" button to save the settings.
   
