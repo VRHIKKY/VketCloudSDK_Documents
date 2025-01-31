@@ -9,6 +9,12 @@
     - [ビルド時に反映されない](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/NotReflectedDuringBuild.html)
     - [エラーが表示されない不具合への対処法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/ErrorNotDisplayed.html)
 
+## 2025年1月31日 - 編集されたページ
+
+- ワールド制作の基本
+  - [ワールドアップロード](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FirstStep/WorldUpload.html)
+    - ワールド公開設定に関する記述を現行仕様に合わせて更新
+
 ---
 
 ## 2025年1月30日更新

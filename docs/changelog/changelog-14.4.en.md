@@ -9,6 +9,12 @@
     - [Not Reflected During Build](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/FAQ/NotReflectedDuringBuild.html)
     - [Error Not Displayed](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/FAQ/ErrorNotDisplayed.html)
 
+## January 31 2025 - Edited Page
+
+- First Steps
+  - [World Upload](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/FirstStep/WorldUpload.html)
+    - Revised description of World Publish Settings according to current features
+
 ---
 
 ## January 30 2025 Update

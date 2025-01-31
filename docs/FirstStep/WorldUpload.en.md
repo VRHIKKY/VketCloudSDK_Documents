@@ -94,7 +94,7 @@ From SDK Ver14.1, registering a new world / World ID creation can now be done on
 
     ![CheckTheWorld_WorldUploader](img/WorldUpload04.jpg)
 
-!!! caution "Update timing of the uploaded world"
+!!! warning "Update timing of the uploaded world"
     Updating the uploaded world may cause 5 ~ 15 minutes depending on server process and network environment factors.<br>
     If the world hasn't been updated on after upload and selecting `World Preview`, please wait shortly until the update process is completed.
 
@@ -105,20 +105,30 @@ From SDK Ver14.1, registering a new world / World ID creation can now be done on
 
 ## Publishing the World
 
-The published world will be listed on My Vket's [World List](https://vket.com/en/play/world){target=_blank}.
+The world's public/private status may be chosen from the following 3 options:
 
-Also, if a private world URL is shared, the world can be accessed while it is not public on My Vket.<br>
-This is useful for world testing with multiple people or to create a closed-community world.<br>
-When you create a new World ID, it is initially set as a private world. If you want to make it public, go to the World Management screen, select "World Publish Settings", and choose "Publish".
+!!! note "World Publish Settings"
+    Public: Open this world for all users.<br>
+    Limited: The world will be open only to those who know the world's URL. World will not be displayed on search engines.<br>
+    Private: Only team members can access.
+
+World set to "Public" will be listed on My Vket's [World List](https://vket.com/en/play/world){target=_blank}.
+
+Also, if the world is set to "Limited," only the users who know the world URL may access.
+This is useful for world testing with multiple people or to create a closed-community world.
+
+Worlds set to "Private" may only be accessed by the team members within the world author's license.
+
+When you create a new World ID, it is initially set as a private world. If you want to make it public, go to the World Management screen, select `"World Publish Settings"`, and choose `"Publish"`.
 
 ![WorldPublish](img/WorldUpload09.jpg)
 
-!!! note caution
+!!! note warning
      To upload the world data, the world ID must be created in advance on the account management screen. If you don't see your world name in the list, please create a world ID from [here](https://cloud.vket.com/en/account/world){target=_blank}.
 
 ![CreateWorldID](img/WorldUpload10.jpg)
 
-!!! caution "Issues when uploading multiple scenes"
+!!! warning "Issues when uploading multiple scenes"
     If a single Unity project contains more than two scenes, which may be uploaded to different worlds, the first uploaded world may be duplicated, or cause 404 / build errors when entering.<br>
     To prevent this, consider containing only one scene/world per project.<br>
     Also, if this issue happened, it can be fixed by closing the project and deleting the `upload` folder located in the project files, and reboot/reupload the world.
