@@ -2,6 +2,13 @@
 
 ## 2025年1月31日更新
 
+## 2025年1月31日 - 追加されたページ
+
+- FAQ
+    - [ローディングが止まる](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/LoadingStack.html)
+    - [ビルド時に反映されない](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/NotReflectedDuringBuild.html)
+    - [エラーが表示されない不具合への対処法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/ErrorNotDisplayed.html)
+
 ## 2025年1月31日 - 編集されたページ
 
 - ワールド制作の基本
