@@ -1897,6 +1897,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -2105,6 +2111,69 @@
   
   <span class="md-ellipsis">
     Data型の特殊仕様
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/LoadingStack.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ローディングが止まる
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/NotReflectedDuringBuild.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ビルド時に反映されない
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/ErrorNotDisplayed.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    エラーが表示されない不具合への対処法
   </span>
   
 
@@ -11054,7 +11123,7 @@
 <p><img alt="CheckTheWorld_WorldUploader" src="img/WorldUpload04.jpg" /></p>
 </li>
 </ol>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">アップロードの反映タイミングについて</p>
 <p>サーバーの内部処理・通信環境によって、アップロードされたワールドの更新に5~15分程度かかります。<br>
 アップロード / ワールド更新後に<code>World preview</code>を選択し、ワールドの更新が反映されていない際はしばらくお待ちください。</p>
@@ -11066,18 +11135,26 @@
 アップロードにかかる時間が長い・ビルドに失敗する場合は本設定を見直すか、<a href="../troubleshooting/BuildError.html">ビルドエラー / ワールドが動かないときは</a>をご参照ください。</p>
 </div>
 <h2 id="_5">ワールドの公開について</h2>
-<p>公開されたワールドは、My Vketの<a href="https://vket.com/play/world" target="_blank">ワールド一覧</a>にて一覧化されて表示されます。</p>
-<p>また、非公開の状態でURLを共有すると、My Vketでは非公開の状態でワールドにアクセスできるようになります。<br>
-複数人でのテスト、限定的な公開を行いたい際に有効です。<br>
-新規ワールドIDを作成すると、始めは非公開ワールドとして作成されます。公開したい場合は、ワールド管理画面より<code>ワールドの公開設定</code>を選択し、<code>公開</code>を選択してください。</p>
+<p>ワールドの公開状態は、以下の三種類から選択して設定が可能です。</p>
+<div class="admonition note">
+<p class="admonition-title">ワールドの公開設定</p>
+<p>公開：ワールドは全ユーザーに公開されます。<br>
+限定公開：URLを知っている人のみアクセス可能です。検索エンジンには表示されません。<br>
+非公開：チームメンバーのみアクセス可能です。</p>
+</div>
+<p>「公開」に設定されたワールドは、My Vketの<a href="https://vket.com/play/world" target="_blank">ワールド一覧</a>にて一覧化されて表示されます。</p>
+<p>また、「限定公開」に設定されたワールドへはURLを知っているユーザーのみ入場できます。
+「非公開」に設定されたワールドへはそのワールド作成者のライセンスのチームに所属するメンバーのみ入場できます。
+複数人でのテスト、限定的な公開を行いたい際に有効です。</p>
+<p>新規ワールドIDを作成すると、はじめは非公開ワールドとして作成されます。公開したい場合は、ワールド管理画面より<code>ワールドの公開設定</code>を選択し、<code>公開</code>を選択してください。</p>
 <p><img alt="WorldPublish" src="img/WorldUpload09.jpg" /></p>
-<div class="admonition note caution">
+<div class="admonition note warning">
 <p class="admonition-title">Note</p>
 <p>アップロード先ワールドは、アカウント管理画面であらかじめIDだけ作成しておく必要があります。<br>
 リストにワールド名が表示されない場合は、<a href="https://cloud.vket.com/account/world" target="_blank">こちら</a>の<code>ワールドを追加</code>ボタンよりワールドIDを作成してください。</p>
 </div>
 <p><img alt="CreateWorldID" src="img/WorldUpload10.jpg" /></p>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">複数シーンのアップロードについて</p>
 <p>同プロジェクトで2つシーンを作成し、それぞれ別のワールドにアップロードした際、先にアップロードしたワールドが2つアップロードされてしまう事があったり、アップロード後に入場を試みた際に404 / ビルドエラーとなってしまうことがあります。<br>
 本現象の防止としては、異なるワールドのシーンを同じプロジェクトで管理しないようにすることが考えられます。<br>

@@ -1897,6 +1897,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -2105,6 +2111,69 @@
   
   <span class="md-ellipsis">
     Special Specifications of the Date Type
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/LoadingStack.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loading Stack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/NotReflectedDuringBuild.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Not Reflected During Build
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/ErrorNotDisplayed.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error Not Displayed
   </span>
   
 
@@ -11054,7 +11123,7 @@ Please note that nothing will be shown before upload.</p>
 <p><img alt="CheckTheWorld_WorldUploader" src="../../FirstStep/img/WorldUpload04.jpg" /></p>
 </li>
 </ol>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">Update timing of the uploaded world</p>
 <p>Updating the uploaded world may cause 5 ~ 15 minutes depending on server process and network environment factors.<br>
 If the world hasn't been updated on after upload and selecting <code>World Preview</code>, please wait shortly until the update process is completed.</p>
@@ -11066,17 +11135,25 @@ Using this feature will improve performance on tight-spec environments such as s
 If upload time seems long, or build fails repeatedly, please reconsider this settings, or see <a href="../troubleshooting/BuildError.html">Build Error / How to troubleshoot issues</a>.</p>
 </div>
 <h2 id="publishing-the-world">Publishing the World</h2>
-<p>The published world will be listed on My Vket's <a href="https://vket.com/en/play/world" target="_blank">World List</a>.</p>
-<p>Also, if a private world URL is shared, the world can be accessed while it is not public on My Vket.<br>
-This is useful for world testing with multiple people or to create a closed-community world.<br>
-When you create a new World ID, it is initially set as a private world. If you want to make it public, go to the World Management screen, select "World Publish Settings", and choose "Publish".</p>
+<p>The world's public/private status may be chosen from the following 3 options:</p>
+<div class="admonition note">
+<p class="admonition-title">World Publish Settings</p>
+<p>Public: Open this world for all users.<br>
+Limited: The world will be open only to those who know the world's URL. World will not be displayed on search engines.<br>
+Private: Only team members can access.</p>
+</div>
+<p>World set to "Public" will be listed on My Vket's <a href="https://vket.com/en/play/world" target="_blank">World List</a>.</p>
+<p>Also, if the world is set to "Limited," only the users who know the world URL may access.
+This is useful for world testing with multiple people or to create a closed-community world.</p>
+<p>Worlds set to "Private" may only be accessed by the team members within the world author's license.</p>
+<p>When you create a new World ID, it is initially set as a private world. If you want to make it public, go to the World Management screen, select <code>"World Publish Settings"</code>, and choose <code>"Publish"</code>.</p>
 <p><img alt="WorldPublish" src="../../FirstStep/img/WorldUpload09.jpg" /></p>
-<div class="admonition note caution">
+<div class="admonition note warning">
 <p class="admonition-title">Note</p>
 <p>To upload the world data, the world ID must be created in advance on the account management screen. If you don't see your world name in the list, please create a world ID from <a href="https://cloud.vket.com/en/account/world" target="_blank">here</a>.</p>
 </div>
 <p><img alt="CreateWorldID" src="../../FirstStep/img/WorldUpload10.jpg" /></p>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">Issues when uploading multiple scenes</p>
 <p>If a single Unity project contains more than two scenes, which may be uploaded to different worlds, the first uploaded world may be duplicated, or cause 404 / build errors when entering.<br>
 To prevent this, consider containing only one scene/world per project.<br>
