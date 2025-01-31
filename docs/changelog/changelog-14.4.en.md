@@ -9,6 +9,18 @@
     - [Not Reflected During Build](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/FAQ/NotReflectedDuringBuild.html)
     - [Error Not Displayed](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/FAQ/ErrorNotDisplayed.html)
 
+---
+
+## January 30 2025 Update
+
+## January 30 2025 - Edited Page
+
+- About Vket Cloud SDK
+  - [How to install Vket Cloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/AboutVketCloudSDK/SetupSDK_external.html)
+    - Fixed registry information misprint located in Scope(s)
+
+---
+
 ## January 24 2025 Update
 
 ## January 24 2025 - Edited Page

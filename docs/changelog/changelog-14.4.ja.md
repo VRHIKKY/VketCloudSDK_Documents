@@ -9,6 +9,18 @@
     - [ビルド時に反映されない](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/NotReflectedDuringBuild.html)
     - [エラーが表示されない不具合への対処法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/ErrorNotDisplayed.html)
 
+---
+
+## 2025年1月30日更新
+
+## 2025年1月30日 - 編集されたページ
+
+- Vket Cloud SDKについて
+  - [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/AboutVketCloudSDK/SetupSDK_external.html)
+    - レジストリ情報におけるScope(s)の表記を修正
+
+---
+
 ## 2025年1月24日更新
 
 ## 2025年1月24日 - 編集されたページ
