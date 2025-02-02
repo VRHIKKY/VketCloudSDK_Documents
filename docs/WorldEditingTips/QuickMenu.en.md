@@ -1,6 +1,6 @@
 # Quick Menu for Adding Vket Cloud Objects
 
-When you install the VketCloudSDK, the context menu that appears when you right-click in the Hierarchy Window will have additional functions related to the Vket Cloud world added to it.
+When you install the Vket Cloud SDK, the context menu that appears when you right-click in the Hierarchy Window will have additional functions related to the Vket Cloud world added to it.
 
 ![QuickMenu_1](./img/QuickMenu_1.jpg)
 

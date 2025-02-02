@@ -63,7 +63,7 @@
 
 ## September 27 2024 - Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
     - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
         - Added description of how to change the Unity editor to Visual Studio Code.
 - Actions
@@ -118,7 +118,7 @@
   - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/WorldMakingGuide/UnityGuidelines.html)
     - Added reference to Shader Availability
     - Added a caution about the use of the ".png" extension for texture files
-- About VketCloudSDK
+- About Vket Cloud SDK
   - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/OperatingEnvironment.html)
         - Added notes about HeliScript IDE
 - HeliScript
@@ -165,7 +165,7 @@
 
 ## September 11 2024 - Edited Pages
 
-- Introduction to VketCloudSDK
+- Introduction to Vket Cloud SDK
   - [How to install the SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.7/en/AboutVketCloudSDK/SetupSDK_external.html)
         - The Install Wizard has been updated with the following features, so the explanatory text and images have been updated to 13.7
            - When using Unity 2022, the required setting item for API Compatibility has been removed

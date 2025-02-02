@@ -2,7 +2,7 @@
 
 Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
 
-Itemは、VKC Item Field、VKC Item Objectなど、VketCloudSDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
+Itemは、VKC Item Field、VKC Item Objectなど、Vket Cloud SDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
 
 Itemクラスは、上記のItemをHeliScriptにて操作するためのものです。
 
@@ -665,24 +665,6 @@ Item のロードが完了していた場合は true を、そうでない場合
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
-### SetPlaneZBias
-
-`public void SetPlaneZBias(float ZBias)`
-
-VKC Item Plane の Z-Bias を設定する。
-
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-
-### GetPlaneZBias
-
-`public float GetPlaneZBias()`
-
-VKC Item Plane の Z-Bias を取得する。
-
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-
 ### SetCamera
 
 `public bool SetCamera()`
@@ -779,26 +761,6 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
-    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
-    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
-    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
-    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
-
-### SetPropertyWithoutNotify
-
-`public bool SetPropertyWithoutNotify(string Key, string Value)`
-
-プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
-
-SetProperty() と同等の機能を持つメソッドですが、SetPropertyWithoutNotify() でプロパティを変更した場合、コールバックメソッドの OnChangedProperty() が呼び出されません。
-
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)

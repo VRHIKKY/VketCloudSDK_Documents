@@ -27,7 +27,7 @@
 ### VKC ActivityExporterで、HEOParticleを含むItemをActivityエクスポートしたときのバグ修正
 - WindowsとMacで、.jsonに記述されているビデオファイルパスが違う 
 
-### ツールバーのVketCloudSDK > Helpのバグを修正
+### ツールバーのVket Cloud SDK > Helpのバグを修正
 - 英語設定時にHelpを押すと、日本語のマニュアルが表示される
 
 ### Install Wizard2.0.1のバグを修正

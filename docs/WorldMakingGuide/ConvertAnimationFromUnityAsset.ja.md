@@ -62,7 +62,7 @@ Project内のモデル（画像では`Baloon_Ghost_v2 1）を選択し、Hierarc
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_03.jpg)
 
-Unity画面上部のVketCloudSDKタブから`Export Motion`を選択してください。
+Unity画面上部のVket Cloud SDKタブから`Export Motion`を選択してください。
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_04.jpg)
 
@@ -79,7 +79,7 @@ Unity画面上部のVketCloudSDKタブから`Export Motion`を選択してくだ
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_06.jpg)
 
-HEMAnimationConverterをVketCloudSDKタブ > Tools > HEMAnimationConverterをクリックし、  HEMAnimationConverterを立ち上げます。
+HEMAnimationConverterをVket Cloud SDKタブ > Tools > HEMAnimationConverterをクリックし、  HEMAnimationConverterを立ち上げます。
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_07.jpg)
 
@@ -107,7 +107,7 @@ HEMAnimationConverterの画面の左側に変換したいアニメーション�
 
 モデルを配置した図
 
-Animationコンポーネントがアタッチされたオブジェクト（モデルを配置した図では**Baloon\_Ghost\_v2 1**）を選択した状態でVketCloudSDKの`Export Field`を選択してください。  
+Animationコンポーネントがアタッチされたオブジェクト（モデルを配置した図では**Baloon\_Ghost\_v2 1**）を選択した状態でVket Cloud SDKの`Export Field`を選択してください。  
 .heoの保存の際、アセットが**複数作成されるため、新しいフォルダを作り、その中に保存すること**を推奨します。
 
 ![ConvertAnimationFromUnityAsset](img/ConvertAnimationFromUnityAsset_13.jpg)

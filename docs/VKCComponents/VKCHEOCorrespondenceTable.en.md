@@ -1,6 +1,6 @@
 # VKC/HEO Components Overview
 
-The VketCloudSDK includes the following types of components:
+The Vket Cloud SDK includes the following types of components:
 
 - **Setting Component**: Components that can only be assigned one value per scene.
 - **Item Component**: Components that can be assigned multiple values within a scene.
@@ -78,7 +78,7 @@ Follow the instructions below to place an object as a "object" item:
 
 1. Select a game object to designate as an "object" item (multiple selections are not allowed)
 
-2. Run VketCloudSDK > [Export Field](../WorldMakingGuide/HEOExporter_Tutorial.md)
+2. Run Vket Cloud SDK > [Export Field](../WorldMakingGuide/HEOExporter_Tutorial.md)
 
 3. Save heo file at a designated location
 

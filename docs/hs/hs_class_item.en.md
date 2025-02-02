@@ -2,7 +2,7 @@
 
 On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
 
-Items can be output to the scene by placing and configuring game objects with components added by VketCloudSDK, such as VKC Item Field and VKC Item Object.
+Items can be output to the scene by placing and configuring game objects with components added by Vket Cloud SDK, such as VKC Item Field and VKC Item Object.
 
 The Item class is used to manipulate the above-mentioned Item in HeliScript.
 
@@ -664,24 +664,6 @@ Sets the text.
 ???+ note "Available object types for this method"
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
-### SetPlaneZBias
-
-`public void SetPlaneZBias(float ZBias)`
-
-Sets the Z-Bias of the VKC Item Plane.
-
-??? note "Available object types for this method"
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-
-### GetPlaneZBias
-
-`public float GetPlaneZBias()`
-
-Gets the Z-Bias of the VKC Item Plane.
-
-??? note "Available object types for this method"
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-
 ### SetCamera
 
 `public bool SetCamera()`
@@ -790,27 +772,6 @@ Set property by Key and Value.
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
-
-### SetPropertyWithoutNotify
-
-`public bool SetPropertyWithoutNotify(string Key, string Value)`
-
-Sets a property. If the same key exists, it will be overwritten; if not, it will be added.
-
-This method has the same functionality as SetProperty(), but when the property is changed with SetPropertyWithoutNotify(), the callback method OnChangedProperty() is not called.
-
-??? note "Available object types for this method"
-    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
-    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
-    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
-    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
-    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
-    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
-
 ### GetProperty
 
 `public string GetProperty(string Key)`

@@ -133,7 +133,7 @@
 
 ## August 16 2024 - Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
     - [Setup Account](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupAccount.html)
         - Added English translation
 - VKC Component
@@ -150,7 +150,7 @@
 
 ## August 9 2024 - Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
     - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/SetupSDK_external.html)
         - Updated descriptions and images
 - World Making Guide
@@ -309,7 +309,7 @@
 
 - World Editing Tips
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/WorldEditingTips/BuildOptions.html)
-    - Added description about VketCloudSDK > Build Option settings
+    - Added description about Vket Cloud SDK > Build Option settings
     - Revised description about Texture Override Settings
 - Added notice on how to view HeliScript errors:
   - First Steps
@@ -368,7 +368,7 @@
 
 - VKCComponents
 
-- About VketCloudSDK
+- About Vket Cloud SDK
   - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/13.4/en/AboutVketCloudSDK/LoginSDK.html)
     - Added troubleshooting note for macOS, Safari users
 - Trouble shooting

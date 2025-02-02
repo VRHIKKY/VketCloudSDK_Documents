@@ -6,9 +6,9 @@ Make sure the following prerequisites are met:
 
 ## Sample JS Submission Steps
 
-1. From the top menu, navigate to `VketCloudSDK > Tutorial > Tutorial - Scripts -`
-2. Open `Assets/Samples/Vket Cloud SDK/13.7.7/Tutorial - Scripts -/02_JSUpload.unity`.
-3. From the top menu, click on `VketCloudSDK > Upload To Remote Server`.
+1. From the top menu, navigate to `Vket Cloud SDK > Tutorial > Tutorial - Scripts -`
+2. Open `Assets/Samples/VketCloudSDK/13.7.7/Tutorial - Scripts -/02_JSUpload.unity`.
+3. From the top menu, click on `Vket Cloud SDK > Upload To Remote Server`.
 4. Select the world you prepared during setup and click the `Upload` button.
 
 ## Overview of the Sample JS Submission World

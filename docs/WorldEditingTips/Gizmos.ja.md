@@ -1,6 +1,6 @@
 # Sceneビューにおけるギズモの表示
 
-VketCloudSDKを導入すると、Sceneビューに一部のVKCコンポーネントがギズモとして表示されるようになります
+Vket Cloud SDKを導入すると、Sceneビューに一部のVKCコンポーネントがギズモとして表示されるようになります
 
 ![Gizmos_1](./img/Gizmos_1.jpg)
 

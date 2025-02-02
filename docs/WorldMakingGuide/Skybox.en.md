@@ -2,7 +2,7 @@
 
 ![Skybox_1](img/Skybox_1.jpg)
 
-VketCloudSDK cannot handle a Unity Skybox. Therefore, a Box or Sphere object with a reversed normal can be used as a pseudo-Skybox instead.
+Vket Cloud SDK cannot handle a Unity Skybox. Therefore, a Box or Sphere object with a reversed normal can be used as a pseudo-Skybox instead.
 
 While an object with reversed normal is usually created by using Blender and other 3D modeling software, the SDK has a Skybox object in its tutorial scene, which can be used in your creation by placing the object / replacing texture in your project.
 
@@ -12,7 +12,7 @@ While an object with reversed normal is usually created by using Blender and oth
     On Ver12.3, a new quick menu feature has been added, which includes easier Skybox and Background Texture setup. <br>
     For details, refer to [Quick Menu for adding Vket Cloud objects](../WorldEditingTips/QuickMenu.md).
 
-1. Select the tutorial scene (Basic) in the VketCloudSDK menu > Tutorials > Tutorial -Basic-, which will download the tutorial scene data and related assets.
+1. Select the tutorial scene (Basic) in the Vket Cloud SDK menu > Tutorials > Tutorial -Basic-, which will download the tutorial scene data and related assets.
     ![Skybox_2](img/Skybox_2.jpg)
 
 2. The Skybox object used in the tutorial scene is located in "Assets > Samples > Vket Cloud SDK > [Current_SDK_Version] > Tutorial -basic- > Used Files > Models".

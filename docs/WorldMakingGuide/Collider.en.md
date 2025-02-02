@@ -6,7 +6,7 @@ On Vket Cloud, the Unity Collider can be modified by attaching VKCComponents, wh
 
 ![VKCNodeCollider_1](../VKCComponents/img/HEOCollider_1.jpg)
 
-On VketCloudSDK, setting a corresponding VKCComponent to each Unity Colliders will enable it to be used in world.<br>
+On Vket Cloud SDK, setting a corresponding VKCComponent to each Unity Colliders will enable it to be used in world.<br>
 See the following pages for each collider setup and details.
 
 [VKC Node Collider](../VKCComponents/VKCNodeCollider.md) : The standard component for handling colliders.
@@ -27,7 +27,7 @@ Note that Cylinders cannot be used other than simulating physics.
 
 ## Using Colliders and Physics in Action Trigger / HeliScript
 
-On the VketCloudSDK, Colliders can be used to detect user clicks and player going in/out areas by [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) to trigger actions.<br>
+On the Vket Cloud SDK, Colliders can be used to detect user clicks and player going in/out areas by [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) to trigger actions.<br>
 For details, see [Actions Overview](../Actions/ActionsOverview.md).
 
 Also, Colliders can be used for calling Callback functions on HeliScript, which can be applied for creating various gimmicks.<br>

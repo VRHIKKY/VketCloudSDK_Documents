@@ -150,7 +150,7 @@
 - Disable Nodeがworld.jsonに書き込まれるよう修正しました
 - チュートリアルシーンのインポート導線の追加「Menuからのインポート」「独立したLearning画面」
 - インポートしたチュートリアルの最初に該当するシーンをPing、ロードする機能を実装
-- VketCloudSDKからcom.hikky.heliodorlibにPackage Directoryを変更
+- Vket Cloud SDKからcom.hikky.heliodorlibにPackage Directoryを変更
 - 右クリックで項目を追加
 - 主要モジュールの動作安定化の上、機能改善
 - 「HeliScript」日本語表示変更

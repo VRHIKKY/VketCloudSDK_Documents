@@ -1,6 +1,6 @@
-# How to install VketCloudSDK
+# How to install Vket Cloud SDK
 
-To install the VketCloudSDK, the Unity Package Manager and the VketCloudSDK install wizard is required.
+To install the Vket Cloud SDK, the Unity Package Manager and the Vket Cloud SDK install wizard is required.
   
 ## Step 1. Open a project in Unity
 
@@ -32,7 +32,7 @@ Select "Package Manager" from the left tab in the window and describe as follows
   
 | item | value |
 | ---- | ---- |
-| Name |VketCloudSDK Install Wizard|
+| Name |Vket Cloud SDK Install Wizard|
 | URL |https://registry.npmjs.com|
 | Scope(s) |com.hikky.vketcloudsdk-install-wizard|  
 
@@ -46,7 +46,7 @@ Finally, press the "Save" button to save the settings.
 
 ---
 
-## Step 3. Install the VketCloudSDK Install Wizard via Package Manager
+## Step 3. Install the Vket Cloud SDK Install Wizard via Package Manager
   
 Open the "Packages" window from Unity's menu Window > Package Manager.
 
@@ -56,7 +56,7 @@ Select "My Registries" from the dropdown at the top of the window.
 
 ![SetupSDK_External](img/SetupSDK_External_05.jpg)
 
-Select the VketCloudSDK Install Wizard from the displayed list and press the “Install” button to start the installation.<br>
+Select the Vket Cloud SDK Install Wizard from the displayed list and press the “Install” button to start the installation.<br>
 
 ![SetupSDK_External](img/SetupSDK_External_06.jpg)
 
@@ -70,7 +70,7 @@ If the project path contains a space or full-width characters, the following war
 
 ![SetupSDK_External](img/SetupSDK_External_28.jpg)
 
-## Step 4. Install the SDK using the VketCloudSDK Install wizard
+## Step 4. Install the SDK using the Vket Cloud SDK Install wizard
 
 To install the SDK on a new project, use the SDK Install Wizard.
 
@@ -168,7 +168,7 @@ The SDK manual and community discord server can be accessed from this window.
 
 ![SetupSDK_External](img/SetupSDK_External_20.jpg)
 
-8\. In the Unity menu, click on "Login" under the "VketCloudSDK" item.<br>
+8\. In the Unity menu, click on "Login" under the "Vket Cloud SDK" item.<br>
 A Web browser will open automatically.
 
 ![SetupSDK_External](img/SetupSDK_External_21.jpg)
@@ -222,7 +222,7 @@ The SDK manual and community discord server can be accessed from this window.
 ### Version switching via Package Manager
 
 After registering the registry information on [Step 2.](#step-2-register-registry-information), open the Package Manager via "Window" --> "Package Manager".<br>
-In the Package Manager, make sure that the VketCloudSDK shows up on switching the registry view to "My Registries".<br>
+In the Package Manager, make sure that the Vket Cloud SDK shows up on switching the registry view to "My Registries".<br>
 
 ![SetupSDK_PackageManager_1](./img/SetupSDK_PackageManager_1.jpg)
 
@@ -240,12 +240,12 @@ To open the project's manifest.json, right click on the Project window and selec
 
 ![SetupSDK_ManifestJson_2](./img/SetupSDK_ManifestJson_2.jpg)
 
-By editing the version number on the right side of `"com.hikky.vketcloudsdk"`, the installing / updating version will be switched.
+By editing the version number on the right side of `"com.hikky.VketCloudSDK"`, the installing / updating version will be switched.
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! caution "Solution to VketCloudSDK not showing on Unity menu"
-      If VketCloudSDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
+!!! caution "Solution to Vket Cloud SDK not showing on Unity menu"
+      If Vket Cloud SDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
       One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
       If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
 

@@ -1,5 +1,47 @@
 # SDK Manual Change Log - Ver 14.2
 
+## January 10 2025 Update
+
+## January 10 2025 - Added Page
+
+- HeliScript
+    - Tips/HeliScript Guide
+        - [Remove Default UI](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/RemoveDefaultUI.html)
+- FAQ
+    - [About the Split Function](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Split.html)
+    - [The .mp3 audio file in the activity is not output during the build](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/FAQ/AudioExportWithMeta.html)
+
+## January 10 2025 - Edited Pages
+- World Making Guide
+    - [Specification Limits of Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html#_2)
+        - Remove the description about uppercase restrictions for PNG.
+- Trouble shooting
+    - [Build Error / How to troubleshoot issues](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/BuildError.html)
+        - Added error list.
+    - [SDK does not appear after install](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/troubleshooting/InstallingDeeplink.html)
+        - Added solutions.
+
+---
+
+## December 20 2024 Update
+
+## December 20 2024 - Added Page
+
+- World Making Guide
+    - [Play Sound Effect Only Under Specific Conditions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/SoundEffectEntrance.html)
+        - Playing Entrance Sound Effects Only Under Specific Conditions
+    - [How to Use HEOProperty (Vket Cloud Property Function)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
+    - [How to Use VKC Node Shadow/HEO Shadow](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/HEOShadow.html)
+    - [Activity With Motion](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ActivityWithMotion.html)
+    - [Execute Activity Json Method](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/WorldMakingGuide/ExecuteActivityJsonMethod.html)
+
+## December 20 2024 - Edited Page
+
+- VKCComponent
+    - The utilization methods have been divided into sections in [HEOProperty (Using the Vket Cloud Property Functionality)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html).
+
+---
+
 ## December 13 2024 Update
 
 ## December 13 2024 - Edited Pages
@@ -9,7 +51,6 @@
         - Added a note that login and API integration are not possible with local builds.
 - HeliScript
     - [Components / Callback Functions](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_component.html)
-            - Added a description of the callback - ItemCollider
             - Added a description of the callback - Message
     - Built-in Classes and Functions
         - [Quaternion Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_struct_quaternion.html)
@@ -23,10 +64,7 @@
             - Added explanation of the SetUVScale function
             - Added explanation of the SetMaterialColor function
             - Added explanation of the SetAlpha function
-            - Added explanation of the SetPlaneZBias function
-            - Added explanation of the GetPlaneZBias function
             - Added explanation of the ReplaceBackupTexture function
-            - Added explanation of the SetPropertyWithoutNotify function
             - Added explanation of the GetNumofPolygon function
             - Added explanation of the SendMessage function
         - [Date Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/hs/hs_class_date.html)
@@ -137,7 +175,7 @@
 
 ## November 22 2024 - Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
     - [Setup SDK](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/en/AboutVketCloudSDK/SetupSDK_external.html)
         - Add a solution for the issue where the EditorCoroutine package cannot be installed.
 - VKC Components

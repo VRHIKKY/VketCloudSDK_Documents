@@ -16,8 +16,8 @@
 
 ## 変更されたページ
 
-- VketCloudSDKについて
-    - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupSDK_external.html)
+- Vket Cloud SDKについて
+    - [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupSDK_external.html)
         - インストールウィザード及びVersion Managerの使用方法を追加
     - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/9.3/AboutVketCloudSDK/SetupAvatar.html)
         - アバターの使用方法を現行版に更新

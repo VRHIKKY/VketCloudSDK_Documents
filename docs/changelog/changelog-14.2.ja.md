@@ -1,5 +1,48 @@
 # SDK Manual Change Log - Ver 14.2
 
+## 2025年1月10日更新
+
+## 2025年1月10日 - 追加されたページ
+
+- HeliScript
+    - Tips/HeliScriptガイド
+        - [既存UIの消し方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/RemoveDefaultUI.html)
+-FAQ
+    - [Split関数について](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/HS_Split.html)
+    - [アクティビティに同封した.mp3音源ファイルがビルド時に出力されない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/FAQ/AudioExportWithMeta.html)
+
+## 2025年1月10日 - 変更されたページ
+- ワールド制作ガイド
+    - [VketCloudの仕様制限](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/UnityGuidelines.html#_2)
+        - pngの大文字制限についての記述を削除
+- トラブルシューティング
+    - [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
+        - エラー一覧を追加しました
+    - [SDKがインストール後に立ち上がらない](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/InstallingDeeplink.html)
+        - 対処法を追加
+    - [ビルドエラー/ワールドが動かないときは](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/troubleshooting/BuildError.html)
+        - エラー一覧を追加しました
+
+---
+
+## 2024年12月20日更新
+
+## 2024年12月20日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [特定の条件下でのみ入場時効果音を鳴らす](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/SoundEffectEntrance.html)
+        - 特定の条件下でのみ入場時効果音を鳴らす
+    - [HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
+    - [VKC Node Shadow/HEO Shadowの使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/HEOShadow.html)
+    - [モーション付きアクティビティ](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ActivityWithMotion.html)
+    - [Activityのjsonのメソッドを実行する](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/ExecuteActivityJsonMethod.html)
+
+## 2024年12月20日 - 変更されたページ
+- VKCコンポーネント
+    - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeProperty.html)    
+
+---
+
 ## 2024年12月13日更新
 
 ## 2024年12月13日 - 変更されたページ
@@ -9,7 +52,6 @@
         - ローカルビルドだと、ログインやAPI周りの連携はできないことを記載する
 - HeliScript
     - [コンポーネント / コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_component.html)
-        - コールバック - ItemColliderの説明を追加
         - コールバック - メッセージの説明を追加
     - 組み込みクラス・関数
         - [Quaternionクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_struct_quaternion.html)
@@ -23,10 +65,7 @@
             - SetUVScale関数の説明を追加しました
             - SetMaterialColor関数の説明を追加しました
             - SetAlpha関数の説明を追加しました
-            - SetPlaneZBias関数の説明を追加しました
-            - GetPlaneZBias関数の説明を追加しました
             - ReplaceBackupTexture関数の説明を追加しました
-            - SetPropertyWithoutNotify関数の説明を追加しました
             - GetNumofPolygon関数の説明を追加しました
             - SendMessage関数の説明を追加しました
         - [Dateクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/hs/hs_class_date.html)
@@ -136,7 +175,7 @@
 
 ## 2024年11月22日 - 変更されたページ
 
-- VketCloudSDKについて
+- Vket Cloud SDKについて
     - [SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/AboutVketCloudSDK/SetupSDK_external.html)
         - EditorCoroutineのPackageがInstallされない問題の対処法を追加
 - VKCコンポーネント

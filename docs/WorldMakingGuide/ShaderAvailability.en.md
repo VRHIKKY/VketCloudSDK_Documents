@@ -1,13 +1,13 @@
 # Shader Availability
 
-On VketCloudSDK, shaders below can be used with partial exceptions in each shaders' settings.
+On Vket Cloud SDK, shaders below can be used with partial exceptions in each shaders' settings.
 
 -   [Standard](#standard)
 -   [Autodesk Interactive](#autodesk-interactive)
 -   [MToon](#mtoon)
 -   [Unlit](#unlit)
 -   [UnlitWF (supports double-sided display only)](#unlitwf)
--   [VketChanDoubleSided Shaders contained in the VketCloudSDK](#vketcloudsdkvketchandoublesided)
+-   [VketChanDoubleSided Shaders contained in the Vket Cloud SDK](#Vket Cloud SDKvketchandoublesided)
     -   [VketChanDoubleSided](#vketchandoublesided)
     -   [VketChanDoubleSidedCutoff](#vketchandoublesidedcutoff)
     -   [VketChanDoubleSidedTransparent](#vketchandoublesidedtransparent)
@@ -125,7 +125,7 @@ On VketCloudSDK, shaders below can be used with partial exceptions in each shade
 
 [UnlitWFの共通設定 | whiteflare's vpm-repos](https://whiteflare.github.io/vpm-repos/docs/unlitwf/Manual-Common){target=_blank} *Page in Japanese
 
-## VketChanDoubleSided Shaders contained in the VketCloudSDK
+## VketChanDoubleSided Shaders contained in the Vket Cloud SDK
 
 ### VketChanDoubleSided
 

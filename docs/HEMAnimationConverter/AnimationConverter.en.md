@@ -6,7 +6,7 @@ HEM Animation Converter can convert the Humanoid animation of a certain characte
 
 ## How to start HEM Animation Converter
 
-Select [Tools] --> [HEMAnimationConverter] from [VketCloudSDK] tab.
+Select [Tools] --> [HEMAnimationConverter] from [Vket Cloud SDK] tab.
 
 ![AnimationConverter_1](img/AnimationConverter_1.jpg)
 

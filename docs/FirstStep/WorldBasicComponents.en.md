@@ -1,6 +1,6 @@
 # Essential objects
 
-To build with VketCloudSDK, following objects must be placed in the scene.
+To build with Vket Cloud SDK, following objects must be placed in the scene.
   
 | Objects Name | Overview |
 | ---- | ---- |
