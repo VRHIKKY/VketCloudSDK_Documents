@@ -1,5 +1,7 @@
 # ReplaceTextureでテクスチャの差し替えが正常に出来ない
 
+## 現象
+
 `Item.ReplaceTexture()`を使用し、あるマテリアルに対しテクスチャの差し替えを行った際、他のテクスチャも差し替わってしまう。
 
 ![ReplaceTexture_1](./img/ReplaceTexture01.jpg)
@@ -12,6 +14,8 @@
     Unity : 2019.3.6f1<br>
     ブラウザ : Google Chrome
 
+---
+
 ## 結論
 
 ### ① Canvas用フォルダの作成
@@ -22,6 +26,7 @@
 
 ![ReplaceTexture_4](./img/ReplaceTexture04.jpg)
 
-別のマテリアルのテクスチャを別ファイルにし、差し替え命令を実行したところ、正常に画像が差し替わった。
+!!! note "解決方法"
+    差し替え対象のマテリアルで使用されているテクスチャを別のマテリアルで使われていないものにする。
 
 `ReplaceTexture()`を使用する場合は、マテリアルと対応するテクスチャのファイルに注意が必要。

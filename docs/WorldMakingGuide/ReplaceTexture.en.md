@@ -1,5 +1,7 @@
 # ReplaceTexture Unexpectedly Replaces Other Textures
 
+## Issue
+
 When using `Item.ReplaceTexture()` to replace a texture on a material, other textures are also replaced unexpectedly.
 
 ![ReplaceTexture_1](./img/ReplaceTexture01.jpg)
@@ -12,6 +14,8 @@ When using `Item.ReplaceTexture()` to replace a texture on a material, other tex
     Unity : 2019.3.6f1<br>
     Browser : Google Chrome
 
+---
+
 ## Conclusion
 
 ### 1.Create a Folder for Canvas
@@ -22,6 +26,7 @@ If the texture of the target material being replaced is also used in another mat
 
 ![ReplaceTexture_4](./img/ReplaceTexture04.jpg)
 
-When the texture of the other material was placed in a separate file and the replacement command was executed, the image was replaced properly.
+!!! note "Solution"
+    Make sure the texture being replaced is not used by any other material.
 
 When using `ReplaceTexture()`, it's important to be careful with the material and the corresponding texture files.
