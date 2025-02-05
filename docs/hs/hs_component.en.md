@@ -160,7 +160,7 @@ public void OnResize(int width, int height)
 
 ## Callback - Custom State/Custom Data
 
-A callback method that receives any data sent by the room's manager.
+This is a callback method that receives any data sent from any player in the room.
 
 ```
 component CustomDataReceiver

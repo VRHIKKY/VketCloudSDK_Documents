@@ -149,7 +149,7 @@ public void OnResize(int width, int height)
 
 ## コールバック - カスタムステート/カスタムデータ
 
-ルームの管理者から送信された任意のデータを受信するコールバックメソッドです。
+ルーム内の任意のプレイヤーから送信された任意のデータを受信するコールバックメソッドです。
 
 ```
 public void OnReceiveCustomState(string id, string type, string data)
