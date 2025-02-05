@@ -7,11 +7,10 @@ Additionally, the DrawCall count is unusually high.
 
 When switching to debug mode and enabling fly mode, the screen becomes visible, and the DrawCall count decreases. However, interactive elements such as gimmicks and UI cannot be operated. The display in fly mode may occasionally appear sepia-toned.
 
-If you have any screenshots, please attach them here and describe their contents.
 
 !!! info "Environment"
-SDK Version: 9.3<br>
-Unity: 2019.4.31.f1<br>
+    SDK Version: 9.3<br>
+    Unity: 2019.4.31.f1<br>
 
 ## Steps Taken to Resolve the Issue
 ### Checked in Debug Mode
