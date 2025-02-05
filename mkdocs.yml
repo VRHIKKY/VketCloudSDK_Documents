@@ -1,9 +1,9 @@
-site_name: VketCloudSDK Manual
-site_description: 'VketCloudSDKのマニュアルです'
+site_name: Vket Cloud SDK Manual
+site_description: 'Vket Cloud SDKのマニュアルです'
 site_author: 'HIKKY'
 
 theme:
-  favicon: images/VketCloudIcon.png
+  favicon: images/Favicon.png
   logo: images/VketCloudIcon.png
   name: material
   palette:
@@ -78,8 +78,8 @@ plugins:
           nav_translations:
             # 概要
             Introduction: はじめに
-            # VketCloudSDKについて
-            About VketCloudSDK: VketCloudSDKについて
+            # Vket Cloud SDKについて
+            About Vket Cloud SDK: Vket Cloud SDKについて
             Setup Account: アカウント準備
             Operating Environment: 動作環境
             Setup SDK: SDKの導入方法
@@ -129,6 +129,7 @@ plugins:
             Activity With Motion: モーション付きアクティビティ
             How to check the Chrome Developer Tools console on iPhone alone: iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法
             Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
+            Binary Output Error: バイナリ出力に失敗
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -149,6 +150,10 @@ plugins:
             About the Split Function : Split関数について
             The .mp3 audio file in the activity is not output during the build : アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
             The screen goes completely black after loading is complete : ロードが完了すると画面が真っ暗になる
+            Special Specifications of the Date Type : Data型の特殊仕様
+            Loading Stack : ローディングが止まる
+            Not Reflected During Build : ビルド時に反映されない
+            Error Not Displayed : エラーが表示されない不具合への対処法
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -158,7 +163,7 @@ plugins:
             Debug Mode: デバッグモード
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
-            VketCloudSDK Settings : VketCloudSDK設定
+            Vket Cloud SDK Settings : Vket Cloud SDK設定
             ScenePreview (β): シーンプレビュー (β)
             # GUITools 
             Overview & Setup: 概要とセットアップ
@@ -283,6 +288,8 @@ plugins:
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
+            JsVal: JsVal
+            Reading JSON in HeliScript: HeliScriptでJsonを読み込む
             # チェンジログ / リリースノート
             Change Log: チェンジログ
             About Changelog: チェンジログについて
@@ -301,7 +308,7 @@ markdown_extensions:
 
 nav:
 - Introduction: index.md
-- About VketCloudSDK:
+- About Vket Cloud SDK:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
@@ -353,6 +360,7 @@ nav:
     - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
     - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
     - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
+    - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
     - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
@@ -372,6 +380,10 @@ nav:
     - About the Split Function: FAQ/HS_Split.md
     - The .mp3 audio file in the activity is not output during the build: FAQ/AudioExportWithMeta.md
     - The screen goes completely black after loading is complete : FAQ/Load_Blackout.md
+    - Special Specifications of the Date Type: FAQ/DateSpecialSpecifications.md
+    - Loading Stack: FAQ/LoadingStack.md
+    - Not Reflected During Build: FAQ/NotReflectedDuringBuild.md
+    - Error Not Displayed: FAQ/ErrorNotDisplayed.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
@@ -384,7 +396,7 @@ nav:
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
-    - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
+    - Vket Cloud SDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - ScenePreview (β): SDKTools/ScenePreview.md
@@ -558,6 +570,7 @@ nav:
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md
+  - Reading JSON in HeliScript: ExternalAPI/HeliScriptJsonParse.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v14.x:

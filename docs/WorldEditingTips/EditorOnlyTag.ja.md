@@ -1,6 +1,6 @@
 # EditorOnlyタグの使用方法
 
-UnityのEditorOnlyタグが付加されたオブジェクトは、VketCloudSDKでのビルド時にビルドの対象から外れます。
+UnityのEditorOnlyタグが付加されたオブジェクトは、Vket Cloud SDKでのビルド時にビルドの対象から外れます。
 
 !!! note caution
     現バージョンではNode系オブジェクト(Cube, Sphereなど)の除外に対応しております。<br>

@@ -13,13 +13,13 @@ Auto Texture Compressorとは、ワールド内のテクスチャをツールに
 
     インストール後、`PVRTexTool\CLI\Windows_x86_64\PVRTexToolCLI.exe`が格納されているフォルダのPATHを通しておきます。（本項では手順について省略いたします。）
 
-2. メニューバーにて**VketCloudSDK -> Build And Run**を選択し、テクスチャ圧縮の対象となるワールド内のテクスチャをreleaseフォルダ下にあらかじめ生成します。
+2. メニューバーにて**Vket Cloud SDK -> Build And Run**を選択し、テクスチャ圧縮の対象となるワールド内のテクスチャをreleaseフォルダ下にあらかじめ生成します。
 
 ---
 
 ## 起動方法
 
-Auto Texture Compressorは、メニューバーにて**VketCloudSDK --> Tools --> Auto Texture Compressor**を選択するとウィンドウが表示されます。
+Auto Texture Compressorは、メニューバーにて**Vket Cloud SDK --> Tools --> Auto Texture Compressor**を選択するとウィンドウが表示されます。
 
 ![AutoTextureCompressor_1](img/AutoTextureCompressor_1.jpg)
 

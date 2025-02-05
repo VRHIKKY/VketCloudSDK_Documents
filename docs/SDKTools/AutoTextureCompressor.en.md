@@ -13,13 +13,13 @@ Auto Texture Compressor is a tool used to compress in-world textures.
 
     After installation, ensure that the folder containing `PVRTexTool\CLI\Windows_x86_64\PVRTexToolCLI.exe` is added to your system PATH. (The steps for this are omitted here.)
 
-2. From the menu bar, select **VketCloudSDK -> Build And Run** to generate textures within the world that will be compressed under the release folder in advance.
+2. From the menu bar, select **Vket Cloud SDK -> Build And Run** to generate textures within the world that will be compressed under the release folder in advance.
 
 ---
 
 ## How to Start
 
-Auto Texture Compressor can be launched by selecting **VketCloudSDK --> Tools --> Auto Texture Compressor** from the menu bar.
+Auto Texture Compressor can be launched by selecting **Vket Cloud SDK --> Tools --> Auto Texture Compressor** from the menu bar.
 
 ![AutoTextureCompressor_1](img/AutoTextureCompressor_1.jpg)
 

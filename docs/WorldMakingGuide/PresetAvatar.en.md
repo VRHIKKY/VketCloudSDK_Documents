@@ -2,7 +2,7 @@
 
 ![PresetAvatar_1](img/PresetAvatar_1.jpg)
 
-In VketCloudSDK, the world may provide a variety of preset avatars in addition to the users' own avatars.<br>
+In Vket Cloud SDK, the world may provide a variety of preset avatars in addition to the users' own avatars.<br>
 The preset avatar list can be accessed via "Setting"-->"Mypage"-->"Avatar"-->"Preset Avatar".
 
 Before setting a preset avatar, the character model must be converted to the [VRM format](https://vrm.dev/en/vrm/how_to_make_vrm/index){target=_blank}.<br>
@@ -17,7 +17,7 @@ Texture compression method is same as the [Texture Compression](../WorldOptimiza
 
 ### 2.1 Create an AvatarFile via HEOWorldSetting
 
-VketCloudSDK stores avatar infomation in an AvatarFile format, using the file to list preset avatars on world build.
+Vket Cloud SDK stores avatar infomation in an AvatarFile format, using the file to list preset avatars on world build.
 
 ![PresetAvatar_2](./img/PresetAvatar_2.jpg)
 

@@ -2,7 +2,7 @@
 
 ![Skybox_1](img/Skybox_1.jpg)
 
-VketCloudSDKでは、UnityのSkyboxを出力することは出来ません。そのため、BoxまたはSphereの法線を反転させたオブジェクトを配置して、擬似的なSkyboxとして出力することで代用します。
+Vket Cloud SDKでは、UnityのSkyboxを出力することは出来ません。そのため、BoxまたはSphereの法線を反転させたオブジェクトを配置して、擬似的なSkyboxとして出力することで代用します。
 
 法線が反転されたオブジェクトはBlenderなどの3Dモデリングソフトを使用して用意する必要がありますが、SDKに内蔵されたチュートリアルシーンにおけるSkyboxオブジェクトを使用し、テクスチャを貼り替えることも可能です。
 
@@ -12,7 +12,7 @@ VketCloudSDKでは、UnityのSkyboxを出力することは出来ません。そ
     Ver12.3にて、Skybox及びBackground Textureがシーンに簡単に追加できるクイックメニューが追加されました。<br>
     詳しくは[Vket Cloudオブジェクト追加のためのクイックメニュー](../WorldEditingTips/QuickMenu.md)をご参照ください。
 
-1. VketCloudSDKメニュー > Tutorials > Tutorial -Basic-を選択してチュートリアルシーン（Basic）をインストールすると、チュートリアルシーンと使用されているアセットがダウンロードされます。
+1. Vket Cloud SDKメニュー > Tutorials > Tutorial -Basic-を選択してチュートリアルシーン（Basic）をインストールすると、チュートリアルシーンと使用されているアセットがダウンロードされます。
     ![Skybox_2](img/Skybox_2.jpg)
 
 2. チュートリアルシーンにて使用されているSkyboxオブジェクトは「Assets > Samples > Vket Cloud SDK > [現在のSDKバージョン] > Tutorial -basic- > Used Files > Models」に格納されています。

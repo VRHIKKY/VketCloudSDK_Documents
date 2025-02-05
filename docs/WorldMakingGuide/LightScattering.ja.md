@@ -8,7 +8,7 @@
     Unity: 2019.4.31.f1<br>
     ブラウザ: Google Chrome<br>
 
-!!! info VketCloudSDK12以降で設定の場所が変化しています
+!!! info Vket Cloud SDK12以降で設定の場所が変化しています
     HEOWorldSetting → VketCloudSettings内RenderingSettings内にあります。<br>
     ![LightScattering00](img/LightScattering00.jpg)<br>
     また、RenderingSettingsを表示するためには、VketCloudSettingsにて、設定モードを詳細(Advanced)にする必要があります。<br>
@@ -27,7 +27,7 @@
 HEOWorldSettingにて、Debug Modeにチェックが入っている状態で実行時にF2キーを押してデバッグウィンドウを開き、Renderringタブを選択し、LightScatteringの項目を展開すると、ライトスキャタリングの設定を調整しながら確認することが出来ます。
 
 !!! info 
-    VketCloudSDK9以前はUIの見た目が異なりますが、使える機能はおおよそ同じです。
+    Vket Cloud SDK9以前はUIの見た目が異なりますが、使える機能はおおよそ同じです。
 
 ![LightScattering04](img/LightScattering04.jpg)
 

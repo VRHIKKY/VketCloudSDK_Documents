@@ -6,7 +6,7 @@ HEM Animation ConverterはあるキャラクターモデルのHumanoidアニメ�
 
 ## HEM Animation Converterの起動方法
 
-「VketCloudSDK」タブから「Tool」-->「HEMAnimationConverter」を選択します。
+「Vket Cloud SDK」タブから「Tool」-->「HEMAnimationConverter」を選択します。
 
 ![AnimationConverter_1](img/AnimationConverter_1.jpg)
 

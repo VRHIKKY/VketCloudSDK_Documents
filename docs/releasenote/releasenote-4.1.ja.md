@@ -24,7 +24,7 @@
 - SetPhysicsEnableをHeliScriptに追加しました。
 - IsPhysicsFixedをHeliScriptに追加しました。
 - iblとlighteningのuseがオフになった際に、折りたたんだ数値がシーンファイルに書き込まれないようにしました。
-- Essential Scene for VketCloudSDKのオプションをアセットメニューに追加しました。
+- Essential Scene for Vket Cloud SDKのオプションをアセットメニューに追加しました。
 - 毎回のビルドでキャッシュを削除するオプションをメニューに追加しました。
 - キャッシュクリアをメニューからも実行できるようにしました。
 - コントロールの画像ファイル名を綴りミスを修正しました。

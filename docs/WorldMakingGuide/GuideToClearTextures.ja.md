@@ -11,16 +11,16 @@
 ## Import設定
 ![GuideToClearTextures00](img/GuideToClearTextures00.jpg)
 
-VketCloudSDK13.1以降png以外のテクスチャは自動でpngへ変換する機能が追加されています。ですがこの機能を利用するとテクスチャがにじむ可能性があるため、あらかじめpngを用意してください。
+Vket Cloud SDK13.1以降png以外のテクスチャは自動でpngへ変換する機能が追加されています。ですがこの機能を利用するとテクスチャがにじむ可能性があるため、あらかじめpngを用意してください。
 
 ### Advanced/Non-Power of 2
 NPOTなテクスチャだとこのオプションが選択できます。ToNearestやToLargerなど各種アルゴリズムが選べます。がしかし、NPOTなテクスチャはどうやってもにじんだりドット欠けします。よってPOTなテクスチャを用意しましょう。
 
 ### Advanced/Read/Write Enabled
-VketCloudSDKは各所でRead処理をするためチェックが必要です。
+Vket Cloud SDKは各所でRead処理をするためチェックが必要です。
 
 ### FilterMode
-Pointを選択してください。VketCloudSDKはテクスチャを拡大縮小させる際にこのアルゴリズムを使います。
+Pointを選択してください。Vket Cloud SDKはテクスチャを拡大縮小させる際にこのアルゴリズムを使います。
 
 ### Compression
 Noneにしてください。色のにじみの原因となります。

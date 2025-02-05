@@ -33,7 +33,7 @@ In most cases, this is caused by **the cache keeping old information**.
 | ----   | ---- |
 | Your web browser still has the cache of old information. | Hard reload the web page using Ctrl+Shift+R. |
 
-Cache in Unity can be cleared by clearing the cache by VketCloudSDK > Clear Cache.
+Cache in Unity can be cleared by clearing the cache by Vket Cloud SDK > Clear Cache.
 
 ![VersionUpdateTroubleshooting_3](./img/VersionUpdateTroubleshooting_3.jpg)
 

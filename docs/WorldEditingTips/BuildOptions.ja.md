@@ -3,11 +3,11 @@
 ビルド設定において、制作者はビルド時にワールドを構成するファイルに対して様々な操作を行うことができます。
 以下２つの方法でビルド時の設定を変更できます。
 
-1. VketCloudSDK > Build Optionより、簡易設定をオン/オフすることができます。
+1. Vket Cloud SDK > Build Optionより、簡易設定をオン/オフすることができます。
 
 ![BuildOptions_0](img/BuildOptions_0.jpg)
 
-2. ビルドの詳細設定を編集するには、VketCloudSDK > Settingsより設定ウィンドウを開き、「Build」タブを選択します。
+2. ビルドの詳細設定を編集するには、Vket Cloud SDK > Settingsより設定ウィンドウを開き、「Build」タブを選択します。
 
 ![BuildOptions_1](img/BuildOptions_1.jpg)
 

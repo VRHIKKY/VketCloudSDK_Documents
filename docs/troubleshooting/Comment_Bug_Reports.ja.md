@@ -5,7 +5,7 @@
 ぜひお気軽にお声をお聞かせください。
 もし、運営からの返答やサポートをご希望される場合は、[VketCloud/MyVket Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}にてお問合せください。
 
-1. メニューからVketCloudSDK>Comments and Bug Report Formを選択します。
+1. メニューからVket Cloud SDK>Comments and Bug Report Formを選択します。
 
 ![Comments](img/Comments_01.jpg)
 

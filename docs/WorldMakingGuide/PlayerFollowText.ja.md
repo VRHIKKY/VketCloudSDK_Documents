@@ -12,7 +12,7 @@
     Unity : 2019.4.31.f1<br>
     ブラウザ :Google Chrome  
 
-!!! warning "VketCloudSDK13以降で名称が変化しています。"
+!!! warning "Vket Cloud SDK13以降で名称が変化しています。"
     HEOTextPlane → VKCItemTextPlane<br>
     ※出来ることは変わっていないので、読み替えてください。
 

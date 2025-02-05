@@ -1,5 +1,5 @@
 ## Export Field
-Export Field is one of the tools included in VketCloudSDK, and can export ".heo", a 3D object file format dedicated to VketCloud. It is mainly used to export model data as .heo.
+Export Field is one of the tools included in Vket Cloud SDK, and can export ".heo", a 3D object file format dedicated to VketCloud. It is mainly used to export model data as .heo.
 
 ## Preparing the scene
 Place an empty object and give it any name. Let's call it "VketCloudSample" here. This name will be used for the .heo file name when exported.
@@ -9,7 +9,7 @@ And place the world model etc. that you want to export as the child of VketCloud
 ![PrepareScene](img/PrepareScene.jpg)
 
 ## Export as .heo
-With the VketCloudSample object selected in the Hierarchy, click VketCloudSDK > Export Field in the topmenu. A save dialog will show up. Create a folder in an appropriate location and save the file.
+With the VketCloudSample object selected in the Hierarchy, click Vket Cloud SDK > Export Field in the topmenu. A save dialog will show up. Create a folder in an appropriate location and save the file.
 
 ![SelectSample](img/SelectSample.jpg)
 

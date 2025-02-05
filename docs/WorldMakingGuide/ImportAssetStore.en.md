@@ -13,7 +13,7 @@ To use the Asset Store, you must first create a Vket Cloud account. If you have 
 
 ![Asset Improve2](img/ImproveAssetStore_2.jpg)
 
-4. You can check and download the acquired assets on the [Asset Management page](https://cloud.vket.com/account/asset){target=_blank}. Once downloaded, let's try placing them in your world using VketCloudSDK.
+4. You can check and download the acquired assets on the [Asset Management page](https://cloud.vket.com/account/asset){target=_blank}. Once downloaded, let's try placing them in your world using Vket Cloud SDK.
 
 ![Asset Improve3](img/ImproveAssetStore_3.jpg)
 
