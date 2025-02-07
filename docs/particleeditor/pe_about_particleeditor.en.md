@@ -5,7 +5,18 @@
 The Particle Editor is a particle creation tool that generates HEP files, which is specifically made for Vket Cloud.
 This tool offers exactly the same look as in actual Vket Cloud worlds, for the tool uses the the same rendering engine.
 
+!!! bug "Input issue on Particle Editor"
+    When clicking on the numerical input field for a property and entering a number, the value is not properly reflected, and subsequent operations (such as checking checkboxes) do not function correctly.<br>
+    This issue affects the particle editor included in the following versions of the Vket Cloud SDK, which therefore cannot be used normally:<br>
+    - SDK 14.4.12<br>
+    - SDK 14.2.1<br>
+    - SDK 13.7.7<br>
+    - SDK 13.4.1<br>
+    - SDK 12.3.4<br>
+    An updated SDK (version 14.5.X) including the fix to the mentioned issue is planned to be released in the near future. We will notify users as soon as the update is released.
+
 ## Requirements
+
 - Chrome (Safari and Firefox unsupported)  
 - Python later than 3.10
 
@@ -31,11 +42,13 @@ The particle editor will open on the web browser.
 
 The Particle Editor is provided as a Web application. To run the editor on your local PC, you need to launch a Web server.  
 Here we'll use python.  
+
 1. Use terminal softwares such as Command Prompt and set the directory to `Tools\ParticleEditor`.  
 2. input `python -m http.server` in your console to launch the Web server.  
 3. Open `http://localhost:65535/` in your browser.  
 
 ## Save and load HEP file
+
 HEO file is saved and loaded as a folder in its entirety, rather than a single file.  
 As such, the following conditions must be met.
 
