@@ -1,5 +1,11 @@
 # SDK Manual Change Log - Ver 14.4
 
+## 2025年2月7日 更新
+
+## 2025年2月7日 - 編集されたページ
+- HeliScript
+    - [コンポーネント/コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/hs/hs_component.html)
+        - カスタムステート/カスタムデータの情報を修正
 ## 2025年2月7日更新
 
 ## 2025年2月7日 - 追加されたページ

@@ -2,6 +2,11 @@
 
 ## February 7 2025 Update
 
+## February 7 2025 - Edited Page
+- HeliScript
+    - [Custom State/Custom Data](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/hs/hs_component.html)
+        - Fixed Custom State/Custom Data
+
 ## February 7 2025 - Added Page
 
 - FAQ
