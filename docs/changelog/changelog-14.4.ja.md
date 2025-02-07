@@ -7,6 +7,14 @@
 - FAQ
     - [ロードが完了すると画面が真っ暗になる](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/Load_Blackout.html)
 
+## 2025年2月7日 - 編集されたページ
+
+- SDK Tools
+  - パーティクルエディター
+    - [パーティクルエディター：概要](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/particleeditor/pe_about_particleeditor.html)
+    - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/particleeditor/pe_about_properties.html)
+      - パーティクルエディターにおける入力不具合および修正予定について記載
+
 ---
 
 ## 2025年1月31日更新
@@ -57,7 +65,7 @@
     - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VersionUpdateTroubleshooting.html)
         - 一度バージョンアップ後、過去バージョンに巻き戻した際Unityが起動しなくなった際の解消法を追記
 - 外部API連携
-  - [HeliScriptでJsonを読み込む](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/HeliScriptJsonParse.html)
+  - [HeliScriptでJsonを読み込む](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/ExternalAPI/HeliScriptJsonParse.html)
 
 ---
 

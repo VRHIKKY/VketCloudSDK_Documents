@@ -7,6 +7,14 @@
 - FAQ
     -[The screen goes completely black after loading is complete](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/Load_Blackout.html)
 
+## February 7 2025 - Edited Page
+
+- SDK Tools
+  - Particle Editor
+    - [Particle Editor - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/particleeditor/pe_about_particleeditor.html)
+    - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/particleeditor/pe_about_properties.html)
+      - Added details and fix schedule regarding the issue causing input issues on the Particle Editor
+
 ---
 
 ## January 31 2025 Update
