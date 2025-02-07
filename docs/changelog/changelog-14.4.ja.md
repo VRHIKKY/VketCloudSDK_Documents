@@ -1,11 +1,5 @@
 # SDK Manual Change Log - Ver 14.4
 
-## 2025年2月7日 更新
-
-## 2025年2月7日 - 編集されたページ
-- HeliScript
-    - [コンポーネント/コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/hs/hs_component.html)
-        - カスタムステート/カスタムデータの情報を修正
 ## 2025年2月7日更新
 
 ## 2025年2月7日 - 追加されたページ
@@ -22,7 +16,9 @@
     - [パーティクルエディター：概要](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/particleeditor/pe_about_particleeditor.html)
     - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/particleeditor/pe_about_properties.html)
       - パーティクルエディターにおける入力不具合および修正予定について記載
-
+- HeliScript
+    - [コンポーネント/コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/hs/hs_component.html)
+        - カスタムステート/カスタムデータの情報を修正
 ---
 
 ## 2025年1月31日更新
