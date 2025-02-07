@@ -867,6 +867,8 @@
       
         
       
+        
+      
     
     
     
@@ -1574,6 +1576,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/ReplaceTexture.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReplaceTexture Unexpectedly Replaces Other Textures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1819,6 +1842,8 @@
       
         
       
+        
+      
     
     
     
@@ -2006,6 +2031,27 @@
   
   <span class="md-ellipsis">
     The .mp3 audio file in the activity is not output during the build
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/Load_Blackout.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The screen goes completely black after loading is complete
   </span>
   
 
@@ -11029,6 +11075,17 @@
 <p><img alt="pe_particleeditor_overview" src="../../particleeditor/pe_image/pe_particleeditor_overview.gif" /></p>
 <p>The Particle Editor is a particle creation tool that generates HEP files, which is specifically made for Vket Cloud.
 This tool offers exactly the same look as in actual Vket Cloud worlds, for the tool uses the the same rendering engine.</p>
+<div class="admonition bug">
+<p class="admonition-title">Input issue on Particle Editor</p>
+<p>When clicking on the numerical input field for a property and entering a number, the value is not properly reflected, and subsequent operations (such as checking checkboxes) do not function correctly.<br>
+This issue affects the particle editor included in the following versions of the Vket Cloud SDK, which therefore cannot be used normally:<br>
+- SDK 14.4.12<br>
+- SDK 14.2.1<br>
+- SDK 13.7.7<br>
+- SDK 13.4.1<br>
+- SDK 12.3.4<br>
+An updated SDK (version 14.5.X) including the fix to the mentioned issue is planned to be released in the near future. We will notify users as soon as the update is released.</p>
+</div>
 <h2 id="requirements">Requirements</h2>
 <ul>
 <li>Chrome (Safari and Firefox unsupported)  </li>
@@ -11051,10 +11108,12 @@ We are sorry for the inconveniences caused by this issue, and would like to ask 
 <p>The instructions below are used to open the particle editor on previous SDK versions older than Ver5.4.</p>
 </div>
 <p>The Particle Editor is provided as a Web application. To run the editor on your local PC, you need to launch a Web server.<br />
-Here we'll use python.<br />
-1. Use terminal softwares such as Command Prompt and set the directory to <code>Tools\ParticleEditor</code>.<br />
-2. input <code>python -m http.server</code> in your console to launch the Web server.<br />
-3. Open <code>http://localhost:65535/</code> in your browser.  </p>
+Here we'll use python.  </p>
+<ol>
+<li>Use terminal softwares such as Command Prompt and set the directory to <code>Tools\ParticleEditor</code>.  </li>
+<li>input <code>python -m http.server</code> in your console to launch the Web server.  </li>
+<li>Open <code>http://localhost:65535/</code> in your browser.  </li>
+</ol>
 <h2 id="save-and-load-hep-file">Save and load HEP file</h2>
 <p>HEO file is saved and loaded as a folder in its entirety, rather than a single file.<br />
 As such, the following conditions must be met.</p>
