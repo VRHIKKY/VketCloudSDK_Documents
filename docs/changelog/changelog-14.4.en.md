@@ -2,11 +2,6 @@
 
 ## February 7 2025 Update
 
-## February 7 2025 - Edited Page
-- HeliScript
-    - [Custom State/Custom Data](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/hs/hs_component.html)
-        - Fixed Custom State/Custom Data
-
 ## February 7 2025 - Added Page
 
 - World Making Guide
@@ -15,7 +10,9 @@
     -[The screen goes completely black after loading is complete](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/Load_Blackout.html)
 
 ## February 7 2025 - Edited Page
-
+- HeliScript
+    - [Custom State/Custom Data](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/hs/hs_component.html)
+        - Fixed Custom State/Custom Data
 - SDK Tools
   - Particle Editor
     - [Particle Editor - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/particleeditor/pe_about_particleeditor.html)
