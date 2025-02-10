@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.4
 
+## February 14 2025 Update
+
+## February 14 2025 - Added Page
+
+- Trouble shooting
+    - [Voice Attenuation Trouble](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/troubleshooting/VoiceAttenuationTrouble.html)
+
 ## February 7 2025 Update
 
 ## February 7 2025 - Added Page
