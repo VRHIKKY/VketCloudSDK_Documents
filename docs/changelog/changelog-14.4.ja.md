@@ -7,6 +7,15 @@
 - トラブルシューティング
     - [音声減衰の不具合](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VoiceAttenuationTrouble.html)
 
+## 2025年2月14日 - 編集されたページ
+
+- HeliScript
+  - 組み込み関数
+    - [ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/hs/hs_system_function_net.html)
+      - OnReceiveCustomStateとOnReceiveCustomDataのコールバックについて、送信したプレイヤーには届かないことを追記
+
+---
+
 ## 2025年2月7日更新
 
 ## 2025年2月7日 - 追加されたページ
