@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.4
 
+## 2025年2月14日更新
+
+## 2025年2月14日 - 追加されたページ
+
+- トラブルシューティング
+    - [音声減衰の不具合](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VoiceAttenuationTrouble.html)
+
 ## 2025年2月7日更新
 
 ## 2025年2月7日 - 追加されたページ

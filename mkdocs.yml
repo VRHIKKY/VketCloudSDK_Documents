@@ -140,6 +140,7 @@ plugins:
             Version Update Troubleshooting: バージョンアップ後によくあるトラブル
             Multiplayer Troubleshooting: ワールド入室後にマルチプレイができない時の確認ポイント
             Comment / Bug Reports Form : ご意見・バグ報告フォーム
+            Voice Attenuation Trouble: 音声減衰の不具合
             # FAQ
             FAQ : FAQ
             Solution to Profile Image Error When Creating an Account on Old MyVket : 旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
@@ -372,6 +373,7 @@ nav:
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
     - Multiplayer Troubleshooting: troubleshooting/MultiplayerTroubleshooting.md
     - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
+    - Voice Attenuation Trouble: troubleshooting/VoiceAttenuationTrouble.md
 - FAQ:
     - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
     - HEOAreaCollider Does Not Work When Overlapping with a MeshCollider: FAQ/MeshColiderAndAreaColliderOverrap.md
