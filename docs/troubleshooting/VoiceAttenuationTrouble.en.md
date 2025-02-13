@@ -19,4 +19,4 @@ By setting the maximum movement distance for the world in the Voice Attenuation 
 ![VoiceAttenuation01](img/VoiceAttenuation01.jpg)
 
 !!! info
-    This issue is scheduled to be fixed. Until then, we apologize for the inconvenience and ask that you use the above workaround.
+    This issue is scheduled to be fixed in a future version. We sincerely apologize for the inconvenience, but if you wish to disable distance attenuation, please use the above workaround as a temporary solution.
