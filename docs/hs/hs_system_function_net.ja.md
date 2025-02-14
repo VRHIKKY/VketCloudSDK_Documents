@@ -30,7 +30,8 @@
 
 ## データ受信コールバックメソッド
 
-送信されたデータは、コンポーネントに定義された `OnReceiveCustomState()` と `OnReceiveCustomData()` メソッドで取得できます。引数 id は送信したプレイヤーの識別子です。
+送信されたデータは、コンポーネントに定義された `OnReceiveCustomState()` と `OnReceiveCustomData()` メソッドで取得できます。引数 id は送信したプレイヤーの識別子です。  
+なお、送信したプレイヤーにはデータが届きませんのでご留意ください。
 
 ```
 component CustomDataReceiver

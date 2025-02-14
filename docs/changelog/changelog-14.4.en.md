@@ -7,6 +7,15 @@
 - Trouble shooting
     - [Voice Attenuation Trouble](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/troubleshooting/VoiceAttenuationTrouble.html)
 
+## February 14 2025 - Edited Page
+
+- HeliScript
+  - Built-in Functions
+    - [Network](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/hs/hs_system_function_net.html)
+      - Add a note that the OnReceiveCustomState and OnReceiveCustomData callbacks will not be received by the player who sent them.
+
+---
+
 ## February 7 2025 Update
 
 ## February 7 2025 - Added Page
@@ -17,6 +26,7 @@
     -[The screen goes completely black after loading is complete](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/Load_Blackout.html)
 
 ## February 7 2025 - Edited Page
+
 - HeliScript
     - [Custom State/Custom Data](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/en/hs/hs_component.html)
         - Fixed Custom State/Custom Data
