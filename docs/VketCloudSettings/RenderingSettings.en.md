@@ -91,6 +91,10 @@ RenderingSettings handles the rendering settings of the world.
 
 ## ToneMap
 
+!!! warning "Not available in Stable SDK 14.4.12"
+    This feature has been rolled back in Stable SDK 14.4.12 and is therefore not available.
+    Please use SDK 14.2.1 or a version newer than 14.4.12 if available.
+
 ![RenderingSettings_6](./img/RenderingSettings_6.jpg)
 
 | Label | Initial Value | function |
