@@ -11,7 +11,7 @@ The features that were rolled back in version 14.4.12 have been restored in vers
 - **VKC Item TextPlane:** Font Weight
 - **VKC Setting Player:** Enable Click to Move
 - **VKC Setting Player:** Despawn Height (y)
-- **VKC Item Field:** Added "Force Collider Disable" option
+- **VKC Item Field:** Force Collider Disable
 
 ### Particle Editor
 
@@ -24,5 +24,5 @@ The features that were rolled back in version 14.4.12 have been restored in vers
 
 When installing SDK 14.4.12 as a new installation or updating via the Install Wizard (from SDK 13.7.7 → 14.4.12 or SDK 14.2.1 → 14.4.12), there were cases where the loading process would never complete.
 
-- **Fixed:** The infinite loading issue has been resolved when updating from **SDK 13.7.7 → 14.5.6**.
+- **Resolved:** The infinite loading issue has been resolved when updating from **SDK 13.7.7 → 14.5.6**.
 - **Unresolved:** When updating from **SDK 14.2.1** or **14.4.12 → 14.5.6**, the infinite loading problem remains.

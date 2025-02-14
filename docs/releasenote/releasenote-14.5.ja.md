@@ -11,14 +11,14 @@
 - VKC Item TextPlaneのFont Weight
 - VKC Setting PlayerのEnable Click to Move
 - VKC Setting PlayerのDespawn Height(y)
-- VKC Item FieldのForce Collider Disable項目が追加
+- VKC Item FieldのForce Collider Disable
 
 ## パーティクルエディター
 
 プロパティの数値入力欄をクリックし、数値を入力しても、数値が正常に反映されない不具合が修正されました。<br>
 また、操作後はチェックボックスへの入力などが正常に行えなくなる不具合も修正されました<br>
 
-ただ、注意点として、SDK14.5.6時点でも、画面解像度が100%以上ですと、不具合が再発する可能性がありまますので、「ディスプレイ」の設定から画面解像度を100%に設定してください。
+ただ、注意点として、SDK14.5.6時点でも、画面解像度が100%より上ですと、不具合が再発する可能性がありまますので、「ディスプレイ」の設定から画面解像度を100%に設定してください。
 
 ## その他の不具合（無限ロード）
 
