@@ -1627,6 +1627,8 @@
       
         
       
+        
+      
     
     
     
@@ -1793,6 +1795,27 @@
   
   <span class="md-ellipsis">
     ご意見・バグ報告フォーム
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/VoiceAttenuationTrouble.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    音声減衰の不具合
   </span>
   
 
@@ -12433,12 +12456,12 @@
 <span class="w">  </span><span class="n">m_Show</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_Pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_Size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
-<span class="w">  </span><span class="n">m_Size</span><span class="p">.</span><span class="n">SetXY</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="m">100</span><span class="p">);</span>
-<span class="w">  </span><span class="n">m_Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_Rotate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Size</span><span class="p">.</span><span class="n">SetXY</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
+<span class="w">  </span><span class="n">m_Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Rotate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_RaycastTarget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_Pivot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2D</span><span class="p">();</span>
-<span class="w">  </span><span class="n">m_Pivot</span><span class="p">.</span><span class="n">SetXY</span><span class="p">(</span><span class="m">0.5f</span><span class="p">,</span><span class="m">0.5f</span><span class="p">);</span>
+<span class="w">  </span><span class="n">m_Pivot</span><span class="p">.</span><span class="n">SetXY</span><span class="p">(</span><span class="mf">0.5f</span><span class="p">,</span><span class="mf">0.5f</span><span class="p">);</span>
 <span class="w">  </span><span class="n">m_Anchor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CM&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_ParamText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSTextModel</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_ParamImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSImageModel</span><span class="p">();</span>
@@ -12507,10 +12530,10 @@
 <h2 id="hscolor-types">HSColor - Types</h2>
 <div class="codehilite"><pre><span></span><code><span class="n">HSColor</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">m_R</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_G</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_R</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_G</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 
@@ -12529,8 +12552,8 @@
 <h2 id="hs2di-types">HS2DI - Types</h2>
 <div class="codehilite"><pre><span></span><code><span class="n">HS2DI</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">m_X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 
@@ -12546,8 +12569,8 @@
 <h2 id="hs2d-types">HS2D - Types</h2>
 <div class="codehilite"><pre><span></span><code><span class="n">HS2D</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">m_X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 
@@ -12598,15 +12621,15 @@
 <h2 id="hstextmodel-types">HSTextModel - Types</h2>
 <div class="codehilite"><pre><span></span><code><span class="n">HSTextModel</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">m_FontSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_FontSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_FontFamily</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_Color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSColor</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_URLColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSColor</span><span class="p">();</span>
-<span class="w">  </span><span class="n">m_URLColor</span><span class="p">.</span><span class="n">SetRGB</span><span class="p">(</span><span class="m">0.0f</span><span class="p">,</span><span class="m">0.0f</span><span class="p">,</span><span class="m">1.0f</span><span class="p">);</span>
+<span class="w">  </span><span class="n">m_URLColor</span><span class="p">.</span><span class="n">SetRGB</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="mf">0.0f</span><span class="p">,</span><span class="mf">1.0f</span><span class="p">);</span>
 <span class="w">  </span><span class="n">m_Text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_Alignment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;LT&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_CharaSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_LineSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_CharaSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_LineSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_OverflowWrap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_URLClickable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 <span class="p">}</span>
@@ -12677,7 +12700,7 @@
 <span class="w">  </span><span class="n">m_UVArea</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRect</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_LTRB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRectLTRB</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_OnKeyDownMulColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSColor</span><span class="p">();</span>
-<span class="w">  </span><span class="n">m_OnKeyDownMulColor</span><span class="p">.</span><span class="n">SetRGB</span><span class="p">(</span><span class="m">1.0f</span><span class="p">,</span><span class="m">1.0f</span><span class="p">,</span><span class="m">1.0f</span><span class="p">);</span>
+<span class="w">  </span><span class="n">m_OnKeyDownMulColor</span><span class="p">.</span><span class="n">SetRGB</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">,</span><span class="mf">1.0f</span><span class="p">,</span><span class="mf">1.0f</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 

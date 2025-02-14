@@ -1627,6 +1627,8 @@
       
         
       
+        
+      
     
     
     
@@ -1793,6 +1795,27 @@
   
   <span class="md-ellipsis">
     Comment / Bug Reports Form
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/VoiceAttenuationTrouble.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Voice Attenuation Trouble
   </span>
   
 
@@ -11109,6 +11132,11 @@ For example, by Build &amp; Running the world the text will be displayed as belo
 <td>Specify the text size</td>
 </tr>
 <tr>
+<td>Font Weight</td>
+<td>400</td>
+<td>Specify the boldness</td>
+</tr>
+<tr>
 <td>Texture Size</td>
 <td>X:512 Y:512</td>
 <td>Specify the base resolution for the displayed text texture <br> <strong>Value needs to be a power of two!</strong></td>
@@ -11144,6 +11172,11 @@ For example, by Build &amp; Running the world the text will be displayed as belo
 <p class="admonition-title">Note</p>
 <p>In the Text property, if you want to insert a line break, specify "\n" in the string.<br>
 If you input any other regular expressions (e.g. tab "\t", line break "\r", backspace "\b"), a build error will occur.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Font Weight is not available in the stable SDK 14.4.12</p>
+<p>Font Weight cannot be used in the stable SDK 14.4.12 because its functionality has been rolled back.
+If you have SDK 14.2.1 or any version later than 14.4.12, please use that instead.</p>
 </div>
 <h3 id="advanced">Advanced</h3>
 <table>

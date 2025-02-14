@@ -1627,6 +1627,8 @@
       
         
       
+        
+      
     
     
     
@@ -1793,6 +1795,27 @@
   
   <span class="md-ellipsis">
     Comment / Bug Reports Form
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/VoiceAttenuationTrouble.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Voice Attenuation Trouble
   </span>
   
 
@@ -11065,7 +11088,7 @@ As an example, the <a href="https://developers.google.com/youtube/v3/getting-sta
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">YOUTUBE_API_KEY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;XXXXXXXXXXXXXXX&quot;</span><span class="p">;</span><span class="c1">//API key for the youtube API</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SPATIUM_CODE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Default&quot;</span><span class="p">;</span><span class="c1">//this value should be Default unless explicitly changed by worldsettings</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SEARCH_WORD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;VketCloud&quot;</span><span class="p">;</span><span class="c1">//Word to be searched by API</span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">MAX_RESULTS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="c1">//number of search results to be obtained</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">MAX_RESULTS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="c1">//number of search results to be obtained</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">RESULT_ITEM_NAME</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Result&quot;</span><span class="p">;</span><span class="c1">//Name of TextPlane to show the obtained search results. May cause text corruption if FontSize value is enlarged on Ver12.3</span>
 <span class="w">    </span><span class="c1">//----------------------------------------</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">BrokerAPI</span><span class="p">()</span>
@@ -11188,12 +11211,12 @@ As an example, the <a href="https://developers.google.com/youtube/v3/getting-sta
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">IsDataValid</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="p">;</span><span class="c1">//Check if data is valid</span>
 
 <span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;pageInfo&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;resultsPerPage&quot;</span><span class="p">).</span><span class="n">GetNum</span><span class="p">();</span><span class="c1">//Get number of results</span>
-<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="c1">//Put video titles to outputText</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="c1">//Put video titles to outputText</span>
 <span class="w">        </span><span class="p">{</span>
 <span class="w">            </span><span class="kt">string</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;items&quot;</span><span class="p">).</span><span class="n">At</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;snippet&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;title&quot;</span><span class="p">).</span><span class="n">GetStr</span><span class="p">();</span>
 <span class="w">            </span><span class="c1">//hsSystemWriteLine(title);</span>
 <span class="w">            </span><span class="n">outputText</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">;</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="n">outputText</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">outputText</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">;</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="n">resultTextPlane</span><span class="p">.</span><span class="n">WriteTextPlane</span><span class="p">(</span><span class="n">outputText</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>

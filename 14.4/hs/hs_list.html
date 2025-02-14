@@ -1627,6 +1627,8 @@
       
         
       
+        
+      
     
     
     
@@ -1793,6 +1795,27 @@
   
   <span class="md-ellipsis">
     ご意見・バグ報告フォーム
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/VoiceAttenuationTrouble.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    音声減衰の不具合
   </span>
   
 
@@ -11366,7 +11389,7 @@
 <span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numList</span><span class="p">;</span>
 
 <span class="c1">// stringを保持するlistを、初期サイズ10で初期化</span>
-<span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">strList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
+<span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">strList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
 </code></pre></div>
 
 <h2 id="list_2">listのサイズ変更</h2>
@@ -11425,9 +11448,9 @@
 <p>引数で指定した範囲から値を検索し、見つかった場合はその値が最初に現れる位置を返します。検索対象の値が見つからなかった場合は -1 を返します。</p>
 <h3 id="_3">[ ] 演算子</h3>
 <p>list 中の指定した位置にある値を取得します。指定した位置への代入も可能です。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="m">10</span><span class="p">);</span>
-<span class="n">numList</span><span class="p">[</span><span class="m">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">999</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="k">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numList</span><span class="p">[</span><span class="m">6</span><span class="p">];</span>
+<div class="codehilite"><pre><span></span><code><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">list</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="n">numList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">999</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="k">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numList</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span>
 </code></pre></div>
 
 

@@ -1627,6 +1627,8 @@
       
         
       
+        
+      
     
     
     
@@ -1793,6 +1795,27 @@
   
   <span class="md-ellipsis">
     ご意見・バグ報告フォーム
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/VoiceAttenuationTrouble.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    音声減衰の不具合
   </span>
   
 
@@ -11215,7 +11238,8 @@
 <p><code>void hsNetSendCustomData(string type, string data)</code></p>
 <p>ルーム内のユーザーに (type, data) を通知する。</p>
 <h2 id="_2">データ受信コールバックメソッド</h2>
-<p>送信されたデータは、コンポーネントに定義された <code>OnReceiveCustomState()</code> と <code>OnReceiveCustomData()</code> メソッドで取得できます。引数 id は送信したプレイヤーの識別子です。</p>
+<p>送信されたデータは、コンポーネントに定義された <code>OnReceiveCustomState()</code> と <code>OnReceiveCustomData()</code> メソッドで取得できます。引数 id は送信したプレイヤーの識別子です。<br />
+なお、送信したプレイヤーにはデータが届きませんのでご留意ください。</p>
 <div class="codehilite"><pre><span></span><code><span class="nx">component</span><span class="w"> </span><span class="nx">CustomDataReceiver</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="nx">public</span><span class="w"> </span><span class="nx">void</span><span class="w"> </span><span class="nx">OnReceiveCustomState</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
