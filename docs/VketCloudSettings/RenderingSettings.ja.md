@@ -91,6 +91,10 @@ RenderingSettingsでは、ワールドにおける描画設定を編集します
 
 ## ToneMap
 
+!!! warning "安定版SDK14.4.12でご使用いただけません"
+    安定版SDK14.4.12で機能がロールバックのためご使用いただけません。
+    SDK14.2.1もしくは14.4.12より新しいバージョンがあれば、そちらをご使用ください。
+
 ![RenderingSettings_6](./img/RenderingSettings_6.jpg)
 
 |  名称 | 初期値 | 機能 |

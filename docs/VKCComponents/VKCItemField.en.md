@@ -102,3 +102,7 @@ VketCloud allows objects to be loaded when entering a specific area after enteri
 | Show Photo Mode | true | Specifies whether it is displayed in photo mode |
 | Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
 | Force Collider Disable | false | Forcibly disables the collider |
+
+!!! warning "Force Collider Disable is not available in the stable SDK 14.4.12"
+    Force Collider Disable cannot be used in the stable SDK 14.4.12 because its functionality has been rolled back.
+    If you have SDK 14.2.1 or any version later than 14.4.12, please use that instead.

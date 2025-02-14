@@ -69,6 +69,10 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 
 ### Pickable
 
+!!! warning "Not available in SDK 14.4.12"
+    This feature has been rolled back in SDK 14.4.12 and is therefore not available.
+    Please use SDK 14.2.1 or a version newer than 14.4.12 if available.
+
 ![VKCItemObject_8](img/VKCItemObject_8.jpg)
 
 | Label | Initial Value | Function |
