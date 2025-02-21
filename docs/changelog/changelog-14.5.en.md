@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.5
 
-## February 14 2025 Update
+## February 21 2025 Update
 
-## February 14 2025 - Edited Page
+## February 21 2025 - Edited Page
 
 - VKC Components
   - VKC Item
@@ -12,3 +12,6 @@
   - Particle Editor
     - [Particle Editor Overview](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/particleeditor/pe_about_particleeditor.html)
       - Edited a note that the issue has been fixed in version 14.5.6.
+- World Making Guide
+    - [Animating Objects](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/PropAnimation.html)
+        - Changed from system.GetDeltaTime() to hsSystemGetDeltaTime()

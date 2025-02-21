@@ -12,3 +12,6 @@
   - パーティクルエディター
     - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/particleeditor/pe_about_particleeditor.html)
       - 注記に14.5.6にて不具合修正済の旨追記
+- ワールド制作ガイド
+    - [オブジェクトをアニメーションさせる](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/PropAnimation.html)
+        - system.GetDeltaTime()からhsSystemGetDeltaTime()に変更
