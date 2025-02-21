@@ -11378,7 +11378,7 @@ StopItemはパーティクルやサウンドを止めるのに使うことがで
 
     public void Update()
     {
-        m_ParseTime += system.GetDeltaTime();
+        m_ParseTime += hsSystemGetDeltaTime();
 
         if (m_ParseTime &gt;= 3.0f)
         {

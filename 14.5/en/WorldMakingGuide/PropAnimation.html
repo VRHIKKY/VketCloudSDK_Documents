@@ -11362,7 +11362,7 @@ As an example, you can create a HeliScript that repeats animation playback every
 
 <span class="w">    </span><span class="n">public</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">Update</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">m_ParseTime</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">system</span><span class="o">.</span><span class="n">GetDeltaTime</span><span class="p">();</span>
+<span class="w">        </span><span class="n">m_ParseTime</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">hsSystemGetDeltaTime</span><span class="p">();</span>
 
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">m_ParseTime</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">3.0</span><span class="n">f</span><span class="p">)</span>
 <span class="w">        </span><span class="p">{</span>
