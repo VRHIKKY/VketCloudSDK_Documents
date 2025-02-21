@@ -13,7 +13,7 @@ This tool offers exactly the same look as in actual Vket Cloud worlds, for the t
     - SDK 13.7.7<br>
     - SDK 13.4.1<br>
     - SDK 12.3.4<br>
-    An updated SDK (version 14.5.X) including the fix to the mentioned issue is planned to be released in the near future. We will notify users as soon as the update is released.
+    SDK version 14.5.6, which includes a fix for this issue, has been released. Please install the latest version.
 
 ## Requirements
 
