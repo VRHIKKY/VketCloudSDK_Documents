@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.5
 
+## February 28 2025 Update
+
+## February 28 2025 - Added Page
+
+- World Making Guide
+  - [Creating Capsule Rectangle Images Using 9-Slice](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/9slice.html)
+
+---
+
 ## February 21 2025 Update
 
 ## February 21 2025 - Edited Page
