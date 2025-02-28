@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月7日更新
+
+## 2025年3月7日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - hsCanvasWorldToScreenPosの関数の変換後のScreen座標の詳細を記述する。
+
+---
+
 ## 2025年2月28日更新
 
 ## 2025年2月28日 - 追加されたページ

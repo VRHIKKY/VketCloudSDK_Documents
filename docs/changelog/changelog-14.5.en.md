@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 7 2025 Update
+
+## March 7 2025 - Edited Page
+
+- HeliScript
+    - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - Added detailed description of the screen coordinates after conversion by the hsCanvasWorldToScreenPos function.
+
+---
+
 ## February 28 2025 Update
 
 ## February 28 2025 - Added Page
