@@ -6,7 +6,9 @@
 
 ### Unityのバージョンを確認する
 
-Vket Cloud SDKでのUnityの推奨バージョンは`Unity 2019.4.31f1`です。
+Vket Cloud SDKでのUnityの推奨バージョンは、SDKバージョンによって異なります。  
+[Vket Cloud SDKの動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/latest/AboutVketCloudSDK/OperatingEnvironment.html)のページをご参照ください。
+
 バージョンが間違っている場合は動作が保証されないため、推奨バージョンでのプロジェクトの再作成が必要です。
 
 ![GeneralChecklist_1](img/GeneralChecklist_1.jpg)
@@ -22,7 +24,7 @@ Unityエディタの上部にバージョン記載があります。
 SDKでは、ビルドしたワールドのデータをReleaseフォルダに格納しています。<br>
 フォルダの中身は以下から確認できます。
 
-1/. Tools->Open Release Folderを選択
+Tools->Open Release Folderを選択
 
 ![GeneralChecklist_2](img/GeneralChecklist_2.jpg)
 
@@ -153,20 +155,20 @@ Vket Cloud SDKでログインを行うには、VketIDの登録とは別として
 下記のサイトでログインを行い、ライセンスの取得をお試しください。
 [https://cloud.vket.com/](https://cloud.vket.com/)
 
-- A. [パスとファイル名に空白や日本語などの2バイト文字が含まれていないか確認する](#パスとファイル名に空白や日本語などの2バイト文字が含まれていないか確認する)
+- A. [パスとファイル名に空白や日本語などの2バイト文字が含まれていないか確認する](#2)
 
 Vket Cloud SDKでは、Unityの読み込み参照先のファイルやフォルダに日本語などの全角の2バイト文字が含まれている場合にエラーが発生します。<br>
 必ず読み込み先のファイルやフォルダは半角英数字で作成してください。
 
 ### Q. 「ビルドと実行」をしてもワールド読み込みが進まない
 
-- A. [Unityプロジェクトとブラウザのキャッシュクリアを行う](#unityプロジェクトとブラウザのキャッシュクリアを行う)
+- A. [Unityプロジェクトとブラウザのキャッシュクリアを行う](#unity_1)
 
-- A. テクスチャを仕様に収まっているかを確認する
+- A. テクスチャがSDK仕様のフォーマットに収まっているかを確認する
 
 テクスチャの制限でビルドエラーになることが多いため、必ず仕様をご確認ください。
 
-- 大きさが2048x2048以下のpngファイル
+- 大きさが2048x2048以下のpng
 
 - ２の累乗サイズの正方形（2048x2048,1024x1024,512x512等）または2の累乗サイズの長方形
 
@@ -174,7 +176,7 @@ Vket Cloud SDKでは、Unityの読み込み参照先のファイルやフォル�
 
 - png換算で80MB以下
 
-- 拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップロードでエラーが出ることがあります。 
+- 拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップロードでエラーが出ることがあります。
 
 [VketCloudの仕様制限](../WorldMakingGuide/UnityGuidelines.md)
 
@@ -222,7 +224,7 @@ Google Pixelなら Pixel 5以降
 Vket Cloudでマルチプレイを行う場合、ワールド入場時にブラウザにて「マイクを許可」を必ず有効にしてください。<br>
 ※マイク許可がされていない場合、VketCloudの仕様上マルチプレイはできません
 
-### Q. MyVketでアバターアップロードをしたがVket Cloud SDKで簡易アバターになってしまう
+### Q. Vket Cloud 公式サイトでアバターアップロードをしたがVket Cloud SDKで簡易アバターになってしまう
 
 Vket Cloud SDKは、簡易アバターの設定が通常のワールド設定では5万ポリゴンに設定されております。<br>
 簡易アバター設定を行う場合はワールド側で設定を行うか、もしくは自分のアバターのポリゴン数を下げる必要があります。<br>
@@ -242,9 +244,9 @@ Vket Cloud SDKは、簡易アバターの設定が通常のワールド設定で
 
 - Discordでサポートを受ける
 
-VketCloud/MyVketコミュニティDiscordに参加し、問題を「#質問・要望・不具合報告」フォーラムに投稿するか、あるいは「📨｜inquiry-ticket」にてプライベートチャンネルを作成します。
+Vket Cloud コミュニティDiscordに参加し、問題を「#質問・要望・不具合報告」フォーラムに投稿するか、あるいは「📨｜inquiry-ticket」にてプライベートチャンネルを作成します。
 
-[VketCloud/MyVketコミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ)
+[Vket Cloud コミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ)
 
 - メールで問い合わせる
 
