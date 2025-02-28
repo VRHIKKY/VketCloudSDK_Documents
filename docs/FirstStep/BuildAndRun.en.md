@@ -20,6 +20,19 @@ To build a scene with Vket Cloud SDK, make sure you have placed the [required co
     In the local environment, the login function and API connection function are not available.<br>
     If the function requires connection with the API, please upload the world to check.
 
+!!! caution "Login and API connection are not available on local build"
+    In the local environment, the login function and API connection function are not available.<br>
+    If the function requires connection with the API, please upload the world to check.
+    
+    ![BuildAndRun_1](img/BuildAndRun_1.jpg)
+
+    The registration and login features that are unavailable are shown below.<br>
+
+    ![BuildAndRun_2](img/BuildAndRun_2.jpg)
+
+    For features that require an API connection or login features, please upload your world to test them.
+
+
 !!! note "Build Options"
     The build options on Vket Cloud SDK > Settings > "Build" can designate settings such as auto texture compression on build.<br>
     For details, refer to [Build Options](../WorldEditingTips/BuildOptions.md).
