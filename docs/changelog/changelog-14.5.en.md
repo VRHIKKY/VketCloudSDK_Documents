@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 7 2025 Update
+
+## March 7 2025 - Added Page
+
+- FAQ
+    - [Add Motions After Lib13](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/FAQ/AddMotionsAfterLib13.html)
+
 ## February 28 2025 Update
 
 ## February 28 2025 - Added Page
