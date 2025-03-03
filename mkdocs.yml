@@ -366,6 +366,7 @@ nav:
     - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
     - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
     - ReplaceTexture Unexpectedly Replaces Other Textures : WorldMakingGuide/ReplaceTexture.md
+    - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.ja.md
 
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
@@ -418,7 +419,6 @@ nav:
   - Build Options: WorldEditingTips/BuildOptions.md
   - Gizmos: WorldEditingTips/Gizmos.md
   - Hierarchy Icons: WorldEditingTips/HierarchyIcons.md
-  - Improving Usability in VketCloud : WorldEditingTips/VketCloudUsability.md
 - World Optimization: 
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
