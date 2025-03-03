@@ -4,8 +4,8 @@
 
 ## March 7 2025 - Added Page 
 
-- World Editing Tips
-  - [Improving Usability in VketCloud](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldEditingTips/VketCloudUsability.html)
+- WorldMakingGuide
+  - [Improving Usability in VketCloud](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/VketCloudUsability.html)
 
 
 ## February 21 2025 Update

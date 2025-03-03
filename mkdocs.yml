@@ -366,6 +366,7 @@ nav:
     - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
     - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
     - ReplaceTexture Unexpectedly Replaces Other Textures : WorldMakingGuide/ReplaceTexture.md
+
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
