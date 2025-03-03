@@ -180,6 +180,7 @@ plugins:
             Build Options: ビルド時のオプション
             Gizmos: ギズモ
             Hierarchy Icons: ヒエラルキーアイコン
+            Improving Usability in VketCloud : VketCloudでのユーザビリティを向上させる
             # 軽量化
             World Optimization: ワールドの軽量化方法
             World Optimization - Overview: ワールドの軽量化方法：概要
@@ -416,6 +417,7 @@ nav:
   - Build Options: WorldEditingTips/BuildOptions.md
   - Gizmos: WorldEditingTips/Gizmos.md
   - Hierarchy Icons: WorldEditingTips/HierarchyIcons.md
+  - Improving Usability in VketCloud : WorldEditingTips/VketCloudUsability.md
 - World Optimization: 
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md

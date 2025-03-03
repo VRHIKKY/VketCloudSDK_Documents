@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月7日更新
+
+## 2025年3月7日 - 追加されたページ
+
+- 編集のためのTips
+  -[VketCloudでのユーザビリティを向上させる](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldEditingTips/VketCloudUsability.html)
+
 ## 2025年2月21日更新
 
 ## 2025年2月21日 - 編集されたページ

@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 7 2025 Update
+
+## March 7 2025 - Added Page 
+
+- World Editing Tips
+  - [Improving Usability in VketCloud](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldEditingTips/VketCloudUsability.html)
+
+
 ## February 21 2025 Update
 
 ## February 21 2025 - Edited Page
