@@ -157,6 +157,7 @@ plugins:
             Loading Stack : ローディングが止まる
             Not Reflected During Build : ビルド時に反映されない
             Error Not Displayed : エラーが表示されない不具合への対処法
+            Resolving the Issue of Slow Initial Sound Effect Playback : 効果音の初回再生が遅い問題の解消
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -390,6 +391,7 @@ nav:
     - Loading Stack: FAQ/LoadingStack.md
     - Not Reflected During Build: FAQ/NotReflectedDuringBuild.md
     - Error Not Displayed: FAQ/ErrorNotDisplayed.md
+    - Resolving the Issue of Slow Initial Sound Effect Playback: FAQ/FirstSE.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md

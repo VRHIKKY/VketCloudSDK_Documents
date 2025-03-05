@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 7 2025 Update
+
+## March 7 2025 - Added Page
+
+- FAQ
+    - [Resolving the Issue of Slow Initial Sound Effect Playback](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/FAQ/FirstSE.html)
+
 ## February 28 2025 Update
 
 ## February 28 2025 - Added Page
