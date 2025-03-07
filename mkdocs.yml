@@ -131,6 +131,7 @@ plugins:
             Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
             Binary Output Error: バイナリ出力に失敗
             ReplaceTexture Unexpectedly Replaces Other Textures: ReplaceTextureでテクスチャの差し替えが正常に出来ない
+            Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -366,6 +367,7 @@ nav:
     - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
     - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
     - ReplaceTexture Unexpectedly Replaces Other Textures : WorldMakingGuide/ReplaceTexture.md
+    - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
