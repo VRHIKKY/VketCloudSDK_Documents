@@ -158,6 +158,7 @@ plugins:
             Not Reflected During Build : ビルド時に反映されない
             Error Not Displayed : エラーが表示されない不具合への対処法
             Resolving the Issue of Slow Initial Sound Effect Playback : 効果音の初回再生が遅い問題の解消
+            Add Motions After Lib13: Lib13移行のモーション追加
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -182,11 +183,13 @@ plugins:
             Build Options: ビルド時のオプション
             Gizmos: ギズモ
             Hierarchy Icons: ヒエラルキーアイコン
+            Improving Usability in VketCloud : VketCloudでのユーザビリティを向上させる
             # 軽量化
             World Optimization: ワールドの軽量化方法
             World Optimization - Overview: ワールドの軽量化方法：概要
             Occlusion Culling: オクルージョンカリング
             Optimization for Smartphones: スマートフォンのためのワールド軽量化
+            ASTC and ETC2: ASTCとETC2とは
             # VKCComponents
             VKC Components: VKCコンポーネント
             VKC/HEO Components Overview: VKC/HEOコンポーネント概要
@@ -367,6 +370,7 @@ nav:
     - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
     - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
     - ReplaceTexture Unexpectedly Replaces Other Textures : WorldMakingGuide/ReplaceTexture.md
+    - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
     - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
@@ -392,6 +396,7 @@ nav:
     - Not Reflected During Build: FAQ/NotReflectedDuringBuild.md
     - Error Not Displayed: FAQ/ErrorNotDisplayed.md
     - Resolving the Issue of Slow Initial Sound Effect Playback: FAQ/FirstSE.md
+    - Add Motions After Lib13: FAQ/AddMotionsAfterLib13.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
@@ -425,6 +430,7 @@ nav:
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
   - Texture Compression : WorldOptimization/TextureCompression.md
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
+  - ASTC and ETC2: WorldOptimization/AstcAndEtc2.md
 - VKC Components:
   - VKC/HEO Components Overview: VKCComponents/VKCHEOCorrespondenceTable.md
   - VKC Setting:

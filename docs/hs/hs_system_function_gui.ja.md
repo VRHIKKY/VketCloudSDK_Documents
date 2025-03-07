@@ -89,7 +89,11 @@ hsCanvasSuspendVisibleLayers()で非表示にしたレイヤーを復帰しま�
 
 `bool hsCanvasWorldToScreenPos(Vector3 WorldPos, ref float ScreenX, ref float ScreenY)`
 
-ワールド座標をスクリーン座標に変換する。視野角外の場合はfalseが返る。
+ワールド座標をスクリーン座標に変換する。 
+
+変換後のスクリーン座標 (ScreenX, ScreenY) は 画面左上を基点 とした座標系で返す。
+
+視野角外の場合は false を返す。
 
 ### hsCanvasIsPortrait
 

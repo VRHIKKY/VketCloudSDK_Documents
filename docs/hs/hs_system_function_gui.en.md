@@ -91,7 +91,11 @@ Toggles the state of a GUI element specified by name.
 
 `bool hsCanvasWorldToScreenPos(Vector3 WorldPos, ref float ScreenX, ref float ScreenY)`
 
-Converts the world position to screen position. If the position is out of range, `false` will be returned.
+Converts the world position to screen position. 
+
+The resulting screen coordinates (ScreenX, ScreenY) are returned using a coordinate system with the top-left corner of the screen as the origin.
+
+If the position is out of range, `false` will be returned.
 
 ### hsCanvasIsPortrait
 
