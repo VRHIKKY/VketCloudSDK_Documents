@@ -20,8 +20,6 @@ The ID3 metadata that can pass the SDK check is as follows.
 
 ## Solution
 
-![AudioExportWithMeta_1](img/AudioExportWithMeta_1.gif)
-
 1. Select the rejected .mp3 audio file
 
 2. Open properties and move to the "Details" tab
