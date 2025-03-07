@@ -181,6 +181,7 @@ plugins:
             Build Options: ビルド時のオプション
             Gizmos: ギズモ
             Hierarchy Icons: ヒエラルキーアイコン
+            Improving Usability in VketCloud : VketCloudでのユーザビリティを向上させる
             # 軽量化
             World Optimization: ワールドの軽量化方法
             World Optimization - Overview: ワールドの軽量化方法：概要
@@ -367,6 +368,7 @@ nav:
     - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
     - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
     - ReplaceTexture Unexpectedly Replaces Other Textures : WorldMakingGuide/ReplaceTexture.md
+    - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
     - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md

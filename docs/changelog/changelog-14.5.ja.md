@@ -2,16 +2,18 @@
 
 ## 2025年3月7日更新
 
+## 2025年3月7日 - 追加されたページ
+
+- ワールド制作ガイド
+    -[VketCloudでのユーザビリティを向上させる](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/VketCloudUsability.html)
+- ワールドの軽量化方法
+    - [ASTCとETC2とは](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldOptimization/AstcAndEtc2.html)
+
 ## 2025年3月7日 - 編集されたページ
 
 - ワールド制作の基本
     - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/FirstStep/BuildAndRun.html)
         - ローカルでAPI機能とログイン機能が使えない文言にさらに画像を追加し、説明を加える。
-
-## 2025年3月7日 - 追加されたページ
-
-- ワールドの軽量化方法
-    - [ASTCとETC2とは](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldOptimization/AstcAndEtc2.html)
 
 ---
 
