@@ -157,6 +157,7 @@ plugins:
             Loading Stack : ローディングが止まる
             Not Reflected During Build : ビルド時に反映されない
             Error Not Displayed : エラーが表示されない不具合への対処法
+            Add Motions After Lib13: Lib13移行のモーション追加
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -393,6 +394,7 @@ nav:
     - Loading Stack: FAQ/LoadingStack.md
     - Not Reflected During Build: FAQ/NotReflectedDuringBuild.md
     - Error Not Displayed: FAQ/ErrorNotDisplayed.md
+    - Add Motions After Lib13: FAQ/AddMotionsAfterLib13.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
