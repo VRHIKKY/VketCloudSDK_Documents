@@ -1,5 +1,21 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月7日更新
+
+## 2025年3月7日 - 編集されたページ
+
+- Vket Cloud SDKについて
+    - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/AboutVketCloudSDK/SetupAvatar.html)
+        - MyVketからVket Cloud公式サイトへ導線を変更
+- FAQ
+    - [旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/FAQ/ProfileImage.html)
+        - MyVketからVket Cloud公式サイトへ導線を変更
+- トラブルシューティング
+    - [SDK初学者：何か起きたときにとりあえず見るべきリスト](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/troubleshooting/GeneralChecklist.html)
+        - Discordサーバ名を変更
+
+---
+
 ## 2025年2月21日更新
 
 ## 2025年2月21日 - 編集されたページ
