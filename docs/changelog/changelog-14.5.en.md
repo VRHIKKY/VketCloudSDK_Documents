@@ -21,6 +21,15 @@
 - First Steps
   - [Build And Run](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/FirstStep/BuildAndRun.html)
     - Added images regarding registration and login features not available for local builds.
+- About Vket Cloud SDK
+    - [How to use avatars](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/AboutVketCloudSDK/SetupAvatar.html)
+        - Change the link from MyVket to the official Vket Cloud website
+- FAQ
+    - [Solution to Profile Image Error When Creating an Account on Old MyVket](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/FAQ/ProfileImage.html)
+        - Change the link from MyVket to the official Vket Cloud website
+- Trouble shooting
+    - [Trouble shooting - General Checklist](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/troubleshooting/GeneralChecklist.html)
+        - Updated the name of the Discord server
 
 ---
 

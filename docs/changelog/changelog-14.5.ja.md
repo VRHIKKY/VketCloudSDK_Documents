@@ -21,6 +21,15 @@
 - ワールド制作の基本
     - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/FirstStep/BuildAndRun.html)
         - ローカルでAPI機能とログイン機能が使えない文言にさらに画像を追加し、説明を加える。
+- Vket Cloud SDKについて
+    - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/AboutVketCloudSDK/SetupAvatar.html)
+        - MyVketからVket Cloud公式サイトへ導線を変更
+- FAQ
+    - [旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/FAQ/ProfileImage.html)
+        - MyVketからVket Cloud公式サイトへ導線を変更
+- トラブルシューティング
+    - [SDK初学者：何か起きたときにとりあえず見るべきリスト](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/troubleshooting/GeneralChecklist.html)
+        - Discordサーバ名を変更
 
 ---
 
