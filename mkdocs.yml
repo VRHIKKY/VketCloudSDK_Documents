@@ -187,6 +187,7 @@ plugins:
             World Optimization - Overview: ワールドの軽量化方法：概要
             Occlusion Culling: オクルージョンカリング
             Optimization for Smartphones: スマートフォンのためのワールド軽量化
+            ASTC and ETC2: ASTCとETC2とは
             # VKCComponents
             VKC Components: VKCコンポーネント
             VKC/HEO Components Overview: VKC/HEOコンポーネント概要
@@ -425,6 +426,7 @@ nav:
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
   - Texture Compression : WorldOptimization/TextureCompression.md
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
+  - ASTC and ETC2: WorldOptimization/AstcAndEtc2.md
 - VKC Components:
   - VKC/HEO Components Overview: VKCComponents/VKCHEOCorrespondenceTable.md
   - VKC Setting:
