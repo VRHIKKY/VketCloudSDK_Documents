@@ -2,6 +2,12 @@
 
 ## March 7 2025 Update
 
+## March 7 2025 - Edited Page
+
+- First Steps
+  - [Build And Run](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/FirstStep/BuildAndRun.html)
+    - Added images regarding registration and login features not available for local builds.
+
 ## March 7 2025 - Added Page
 
 - World Optimazation
@@ -31,5 +37,5 @@
         - [Particle Editor Overview](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/particleeditor/pe_about_particleeditor.html)
             - Edited a note that the issue has been fixed in version 14.5.6.
 - World Making Guide
-      - [Animating Objects](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/PropAnimation.html)
-          - Changed from system.GetDeltaTime() to hsSystemGetDeltaTime()
+    - [Animating Objects](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/PropAnimation.html)
+        - Changed from system.GetDeltaTime() to hsSystemGetDeltaTime()
