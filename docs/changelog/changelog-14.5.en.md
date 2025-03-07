@@ -8,6 +8,11 @@
   - [Build And Run](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/FirstStep/BuildAndRun.html)
     - Added images regarding registration and login features not available for local builds.
 
+## March 7 2025 - Added Page
+
+- World Optimazation
+    - [ASTC and ETC2](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldOptimization/AstcAndEtc2.html)
+
 ---
 
 ## February 28 2025 Update
