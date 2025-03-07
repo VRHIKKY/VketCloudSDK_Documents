@@ -5,6 +5,7 @@
 ## 2025年3月7日 - 追加されたページ
 
 - FAQ
+    - [効果音の初回再生が遅い問題の解消](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/FAQ/FirstSE.html)
     - [Lib13移行のモーション追加](https://vrhikky.github.io/VketCloudSDK_Documents/latest/FAQ/AddMotionsAfterLib13.html)
 - ワールド制作ガイド
     -[VketCloudでのユーザビリティを向上させる](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/VketCloudUsability.html)

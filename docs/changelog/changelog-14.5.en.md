@@ -5,6 +5,7 @@
 ## March 7 2025 - Added Page
 
 - FAQ
+    - [Resolving the Issue of Slow Initial Sound Effect Playback](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/FAQ/FirstSE.html)
     - [Add Motions After Lib13](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/FAQ/AddMotionsAfterLib13.html)
 - WorldMakingGuide
     - [Improving Usability in VketCloud](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/VketCloudUsability.html)

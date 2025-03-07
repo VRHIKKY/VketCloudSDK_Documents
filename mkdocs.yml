@@ -157,6 +157,7 @@ plugins:
             Loading Stack : ローディングが止まる
             Not Reflected During Build : ビルド時に反映されない
             Error Not Displayed : エラーが表示されない不具合への対処法
+            Resolving the Issue of Slow Initial Sound Effect Playback : 効果音の初回再生が遅い問題の解消
             Add Motions After Lib13: Lib13移行のモーション追加
             # SDKTools
             Particle Editor : パーティクルエディター
@@ -394,6 +395,7 @@ nav:
     - Loading Stack: FAQ/LoadingStack.md
     - Not Reflected During Build: FAQ/NotReflectedDuringBuild.md
     - Error Not Displayed: FAQ/ErrorNotDisplayed.md
+    - Resolving the Issue of Slow Initial Sound Effect Playback: FAQ/FirstSE.md
     - Add Motions After Lib13: FAQ/AddMotionsAfterLib13.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
