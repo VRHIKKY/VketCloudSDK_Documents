@@ -223,7 +223,7 @@ component SwitchAnimation
 
     public void Update()
     {
-        m_ParseTime += system.GetDeltaTime();
+        m_ParseTime += hsSystemGetDeltaTime();
 
         if (m_ParseTime >= 3.0f)
         {

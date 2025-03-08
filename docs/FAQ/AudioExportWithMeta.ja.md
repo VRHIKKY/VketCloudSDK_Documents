@@ -20,8 +20,6 @@ SDKでチェックを通れるID3メタ情報は以下の通り。
 
 ## 解決策
 
-![AudioExportWithMeta_1](img/AudioExportWithMeta_1.gif)
-
 1. 弾かれた.mp3音源ファイルを選択
 
 2. プロパティを開いて「詳細」タブへ移動

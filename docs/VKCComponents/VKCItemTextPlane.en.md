@@ -38,6 +38,7 @@ For example, by Build & Running the world the text will be displayed as below:
 | Text | blank | Input the text to be displayed |
 | Scene Preview | true | Enable/Disable text preview in the Unity editor's Scenet view.<br> This setting is a beta feature | 
 | Font Size | 128 |  Specify the text size |
+| Font Weight | 400 | Specify the boldness |
 | Texture Size | X:512 Y:512 | Specify the base resolution for the displayed text texture <br> **Value needs to be a power of two!** |
 | Text Alignment | Left Top | Set the text alignment and centering for display |
 | Color | #FFFFFF | Specify the text color |
@@ -48,6 +49,10 @@ For example, by Build & Running the world the text will be displayed as below:
 !!! note caution
     In the Text property, if you want to insert a line break, specify "\n" in the string.<br>
     If you input any other regular expressions (e.g. tab "\t", line break "\r", backspace "\b"), a build error will occur.
+
+!!! warning "Font Weight is not available in the stable SDK 14.4.12"
+    Font Weight cannot be used in the stable SDK 14.4.12 because its functionality has been rolled back.
+    If you have SDK 14.2.1 or any version later than 14.4.12, please use that instead.
 
 ### Advanced
 

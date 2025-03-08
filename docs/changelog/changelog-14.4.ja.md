@@ -1,5 +1,42 @@
 # SDK Manual Change Log - Ver 14.4
 
+## 2025年2月14日更新
+
+## 2025年2月14日 - 追加されたページ
+
+- トラブルシューティング
+    - [音声減衰の不具合](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VoiceAttenuationTrouble.html)
+
+## 2025年2月14日 - 編集されたページ
+
+- HeliScript
+  - 組み込み関数
+    - [ネットワーク](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/hs/hs_system_function_net.html)
+      - OnReceiveCustomStateとOnReceiveCustomDataのコールバックについて、送信したプレイヤーには届かないことを追記
+
+---
+
+## 2025年2月7日更新
+
+## 2025年2月7日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [ReplaceTextureでテクスチャの差し替えが正常に出来ない](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/WorldMakingGuide/ReplaceTexture.html)
+- FAQ
+    - [ロードが完了すると画面が真っ暗になる](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/FAQ/Load_Blackout.html)
+
+## 2025年2月7日 - 編集されたページ
+
+- SDK Tools
+  - パーティクルエディター
+    - [パーティクルエディター：概要](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/particleeditor/pe_about_particleeditor.html)
+    - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/particleeditor/pe_about_properties.html)
+      - パーティクルエディターにおける入力不具合および修正予定について記載
+- HeliScript
+    - [コンポーネント/コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/hs/hs_component.html)
+        - カスタムステート/カスタムデータの情報を修正
+---
+
 ## 2025年1月31日更新
 
 ## 2025年1月31日 - 追加されたページ
@@ -48,7 +85,7 @@
     - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/troubleshooting/VersionUpdateTroubleshooting.html)
         - 一度バージョンアップ後、過去バージョンに巻き戻した際Unityが起動しなくなった際の解消法を追記
 - 外部API連携
-  - [HeliScriptでJsonを読み込む](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/HeliScriptJsonParse.html)
+  - [HeliScriptでJsonを読み込む](https://vrhikky.github.io/VketCloudSDK_Documents/14.4/ExternalAPI/HeliScriptJsonParse.html)
 
 ---
 

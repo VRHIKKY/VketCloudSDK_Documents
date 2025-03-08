@@ -103,3 +103,6 @@ VketCloudでは、ワールドに入った後に特定のエリアへ侵入し�
 | Force Raycast Check Disable | false | Item単位でraycastの判定を強制的に無効にするかどうかを設定します |
 | Force Collider Disable | false | 強制的にコライダーを無効にします |
 
+!!! warning "Force Collider Disableは安定版SDK14.4.12でご使用いただけません"
+    Force Collider Disableは安定版SDK14.4.12で機能がロールバックのためご使用いただけません。
+    SDK14.2.1もしくは14.4.12より新しいバージョンがあれば、そちらをご使用ください。

@@ -17,9 +17,14 @@ PlayerSettingsでは、ワールドにおけるプレイヤーの挙動を設定
 | Enable Click to Move | false | コンフィグ画面でのクリック移動のデフォルト値を設定します。ただしX埋めこみで開いた時は強制的にオンになります |
 | Despawn Height (Y) | false | プレイヤーを強制的にリスポーンさせるＹ座標の閾値。この値以下になればリスポーンします |
 
+!!! warning "Enable Click to MoveとDespawn Height (Y)は安定版SDK14.4.12でご使用いただけません"
+    Enable Click to MoveとDespawn Height (Y)は安定版SDK14.4.12で機能がロールバックのためご使用いただけません。
+    SDK14.2.1もしくは14.4.12より新しいバージョンがあれば、そちらをご使用ください。
+
 `World Position`と`World Rotation`で設定されたプレイヤーのスポーン地点は以下のようにシーンに表示されます。
 
 ![PlayerSettings_SpawnPoint](img/PlayerSettings_SpawnPoint.jpg)
+
 
 ## 詳細設定
 

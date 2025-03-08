@@ -30,7 +30,8 @@ Notify (type, data) to users in the room.
 
 ## Data Reception Callback Method
 
-The sent data can be retrieved in the `OnReceiveCustomState()` and `OnReceiveCustomData()` methods defined in the component. Argument id is the identifier of the sending player.
+The sent data can be retrieved in the `OnReceiveCustomState()` and `OnReceiveCustomData()` methods defined in the component. Argument id is the identifier of the sending player.  
+Please note that the data will not be received by the player you sent it to.
 
 ```
 component CustomDataReceiver

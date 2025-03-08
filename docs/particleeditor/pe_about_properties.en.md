@@ -2,6 +2,16 @@
 
 Using the particle editor, diverse particle effects can be created by editing the following settings.
 
+!!! bug "Input issue on Particle Editor"
+    When clicking on the numerical input field for a property and entering a number, the value is not properly reflected, and subsequent operations (such as checking checkboxes) do not function correctly.<br>
+    This issue affects the particle editor included in the following versions of the Vket Cloud SDK, which therefore cannot be used normally:<br>
+    - SDK 14.4.12<br>
+    - SDK 14.2.1<br>
+    - SDK 13.7.7<br>
+    - SDK 13.4.1<br>
+    - SDK 12.3.4<br>
+    An updated SDK (version 14.5.X) including the fix to the mentioned issue is planned to be released in the near future. We will notify users as soon as the update is released.
+
 ## Transform
 
 ![pe_property_1](pe_image/pe_property_1.jpg)
