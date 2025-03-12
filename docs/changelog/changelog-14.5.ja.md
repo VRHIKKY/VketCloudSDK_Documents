@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月14日更新
+
+## 2025年3月14日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [カメラ]()
+            - hsCameraSetFPSModeとhsCameraGetFPSModeの説明を追加
+
 ## 2025年3月7日更新
 
 ## 2025年3月7日 - 追加されたページ
