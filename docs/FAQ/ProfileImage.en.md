@@ -24,3 +24,5 @@ The implementation causes all processes to stop due to a communication failure, 
 ## Conclusion
 
 If you created an account on the old MyVket, it's recommended to update both your profile image and other details. The issue seems to occur under certain conditions when setting the profile icon in-game.
+
+*The information above is from the time it was provided. Please update your profile information now from the [Vket Cloud official website](https://cloud.vket.com/).
