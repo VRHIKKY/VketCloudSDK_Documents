@@ -6,7 +6,7 @@
 
 - HeliScript
     - Built-in Functions
-        - [Camera]()
+        - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_camera.html)
             - Added descriptions for `hsCameraSetFPSMode` and `hsCameraGetFPSMode`.
 
 ## March 7 2025 Update

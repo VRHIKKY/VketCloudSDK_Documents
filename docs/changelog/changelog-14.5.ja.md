@@ -6,7 +6,7 @@
 
 - HeliScript
     - 組み込み関数
-        - [カメラ]()
+        - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_camera.html)
             - hsCameraSetFPSModeとhsCameraGetFPSModeの説明を追加
 
 ## 2025年3月7日更新
