@@ -6,10 +6,10 @@ In Lib15, functions like hsSetLayerMask() have been added, enabling direct manip
 You can apply these functions to standard UI elements like HUDs, but creating your own custom Canvas elements requires a few extra steps.  
 This article will walk you through those steps.  
 
-If you'd like to try this out in a Lib15 environment right away, please jump to the "Template" section.
+If you'd like to try this out in a Lib15 environment right away, please jump to the ["Template" section](#template).
 
 !!! note "Environment"
-    Lib Version : 15.0 Beta  
+    Lib Version : 15.2  
     OS : Windows 10  
     Unity : 2022.3.6f1  
     Browser : Google Chrome
@@ -21,7 +21,7 @@ To create your own Canvas elements, follow the steps outlined below.
 
 Custom Canvas elements are created using the 「[HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_gui_HSGUIModel.html)」class.
 
-*This method works from Lib13 onwards.  
+*HSGUIModel works from Lib13 onwards.  
 Even if you execute it within an Activity, the custom element will be added to the main scene's Canvas.
 
 ---
@@ -407,7 +407,7 @@ AddImageGUI(
 #### Template - Button
 
 ```
-void AddButtonGUI(string guiName, string layerName, string normalUri, string onCursorUri, string onCursorUri, string downUri, int posX, int posY, int sizeX, int sizeY, int z){
+void AddButtonGUI(string guiName, string layerName, string normalUri, string onCursorUri, string downUri, int posX, int posY, int sizeX, int sizeY, int z){
     HSGUIModel guiModel;
     HS2DI guiPos, guiSize;
     HSButtonModel buttonModel;
@@ -429,10 +429,10 @@ void AddButtonGUI(string guiName, string layerName, string normalUri, string onC
     guiModel.SetRotate(0);
     
     // Define button-specific parameters for HSButtonModel
-    _buttonModel.SetFileName(normalUri);
-    _buttonModel.SetOnCursorFileName(onCursorUri);
-    _buttonModel.SetDownFileName(downUri);
-    _buttonModel.SetClickAreaSize(guiSize);
+    buttonModel.SetFileName(normalUri);
+    buttonModel.SetOnCursorFileName(onCursorUri);
+    buttonModel.SetDownFileName(downUri);
+    buttonModel.SetClickAreaSize(guiSize);
 }
 
 AddButtonGUI(

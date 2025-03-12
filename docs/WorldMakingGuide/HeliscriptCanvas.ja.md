@@ -6,10 +6,10 @@ Lib15では、hsSetLayerMask()など、Canvas要素をHeliScript上で直接操�
 HUD等、標準で入っているUIに対しても実行可能ですが、独自Canvas要素を作成し、そちらに対し実行するためにはやや手順を踏まないといけません。  
 本記事では、その手順について紹介します。  
 
-とりあえずLib15環境で実機で確認してみたい！という方は「テンプレート」まで飛ばしてください。
+とりあえずLib15環境で実機で確認してみたい！という方は[「テンプレート」の章](#_2)まで飛ばしてください。
 
 !!! note "検証環境"
-    Libバージョン : 15.0 Beta
+    Libバージョン : 15.2  
     OS : Windows 10  
     Unity : 2022.3.6f1  
     ブラウザ : Google Chrome
@@ -21,7 +21,7 @@ Lib15で新しく増えたLayer・GUI関数は、Activityではなく、標準�
 
 独自のCanvas要素は「[HSGUIModel](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_gui_HSGUIModel.html)」クラスを利用します。
 
-※こちらの手順はLib13以降であれば可能です。  
+※HSGUIModelはLib13以降であれば可能です。  
 ※Activity内で実行した場合でも、メインシーンのCanvasに追加されます。
 
 ---
@@ -416,7 +416,7 @@ AddImageGUI(
 #### テンプレート - Button
 
 ```
-void AddButtonGUI(string guiName, string layerName, string normalUri, string onCursorUri, string onCursorUri, string downUri, int posX, int posY, int sizeX, int sizeY, int z){
+void AddButtonGUI(string guiName, string layerName, string normalUri, string onCursorUri, string downUri, int posX, int posY, int sizeX, int sizeY, int z){
     HSGUIModel guiModel;
     HS2DI guiPos, guiSize;
     HSButtonModel buttonModel;
@@ -438,10 +438,10 @@ void AddButtonGUI(string guiName, string layerName, string normalUri, string onC
     guiModel.SetRotate(0);
     
     // HSButtonModelに専用パラメータを定義
-    _buttonModel.SetFileName(normalUri);
-    _buttonModel.SetOnCursorFileName(onCursorUri);
-    _buttonModel.SetDownFileName(downUri);
-    _buttonModel.SetClickAreaSize(guiSize);
+    buttonModel.SetFileName(normalUri);
+    buttonModel.SetOnCursorFileName(onCursorUri);
+    buttonModel.SetDownFileName(downUri);
+    buttonModel.SetClickAreaSize(guiSize);
 }
 
 AddButtonGUI(
