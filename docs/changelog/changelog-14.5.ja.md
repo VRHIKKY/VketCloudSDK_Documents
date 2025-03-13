@@ -1,5 +1,24 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月14日更新
+
+## 2025年3月14日 - 追加されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        - [HSRaycastHIT Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_struct_hsraycasthit.html)
+    - 組み込み関数
+        - [Raycast](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_raycast.html)
+
+## 2025年3月7日 - 編集されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        -  [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_class.html)
+            - `IsCollisionDetection`を追記
+
+---
+
 ## 2025年3月7日更新
 
 ## 2025年3月7日 - 追加されたページ

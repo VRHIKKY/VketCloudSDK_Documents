@@ -278,6 +278,7 @@ plugins:
             Date Class: Dateクラス
             TimeSpan Class: TimeSpanクラス
             HSMessage Class: HSMessageクラス
+            HSRaycastHIT Class: HSRaycastHITクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -292,6 +293,7 @@ plugins:
             Common Dialog: 汎用ダイアログ
             Rendering: レンダリング
             JavaScript: JavaScript
+            RayCast: レイキャスト
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -560,6 +562,7 @@ nav:
         - Date Class: hs/hs_class_date.md
         - TimeSpan Class: hs/hs_class_timespan.md
         - HSMessage Class: hs/hs_class_hsmessage.md
+        - HSRaycastHIT Class: hs/hs_struct_hsraycasthit.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Input: hs/hs_system_function_input.md
@@ -575,6 +578,7 @@ nav:
         - Common Dialog: hs/hs_system_function_commondialog.md
         - Rendering: hs/hs_system_function_rendering.md
         - JavaScript: hs/hs_system_function_js.md
+        - Raycast: hs/hs_system_function_raycast.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md

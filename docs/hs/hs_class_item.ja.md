@@ -883,3 +883,10 @@ overrides設定を取得します。
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### IsCollisionDetection
+
+`public bool IsCollisionDetection()`
+
+アイテム単位で衝突判定が有効かどうかを取得します。  
+trueの場合、レイとItemの当たり判定を行う関数 hsItemRaycast() の対象になります。
