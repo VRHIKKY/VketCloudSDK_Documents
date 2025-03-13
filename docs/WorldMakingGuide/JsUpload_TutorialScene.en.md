@@ -2,7 +2,7 @@
 
 ## Prerequisites
 Make sure the following prerequisites are met:
-- [Requirements for enabling the JS Submission Feature in SDK 13.7](../WorldMakingGuide/JsUpload.md#_2)
+- [Requirements for enabling the JS Submission Feature in SDK 13.7](../WorldMakingGuide/JsUpload.md#prerequisites)
 
 ## Steps
 
@@ -10,6 +10,13 @@ Make sure the following prerequisites are met:
 2. Open `Assets/Samples/VketCloudSDK/13.7.7/Tutorial - Scripts -/02_JSUpload.unity`.
 3. From the top menu, click on `Vket Cloud SDK > Upload To Remote Server`.
 4. Select the world you prepared during setup and click the `Upload` button.
+
+!!! bug "About Build Errors"
+    As of version 14.x, build errors have been confirmed.<br>
+    The following steps can be taken to avoid them:<br>
+    1. Delete and regenerate the VketCloudSettings object.<br>
+    2. Complete the [JS Submission Procedure](../WorldMakingGuide/JsUpload.md#js-submission-procedure).<br>
+    3. Re-select the hs file (customDataExchange) attached to the World object.
 
 ## Overview of the Tutorial Scene
 

@@ -9,6 +9,13 @@
 3. 上部メニューからVket Cloud SDK > Upload To Remote Serverをクリックする
 4. 事前準備で作成したワールドを選択し、Uploadボタンを押す
 
+!!! bug "ビルド不具合について"
+    Ver14.x現在、ビルドエラーの発生が確認されています。<br>
+    下記手順で回避が可能です。<br>
+    1. VketCloudSettingsオブジェクトを削除、再生成してください。<br>
+    2. [JS入稿手順](../WorldMakingGuide/JsUpload.md#js_1)を完了してください。<br>
+    3. Worldオブジェクトにアタッチされているhsファイル(customDataExchange)を再選択してください。 
+
 ## シーン解説
 
 キーボードの状態(Up and Down)がテキストとして表示されるシーンです。
