@@ -2,7 +2,7 @@
 
 ## March 14, 2025 Update
 
-## Pages Added on March 14, 2025
+## March 14, 2025 - Added Page
 - HelicScript
     - Built-in Functions
         - [Cookie](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_cookie.html)
