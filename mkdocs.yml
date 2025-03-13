@@ -292,6 +292,7 @@ plugins:
             Common Dialog: 汎用ダイアログ
             Rendering: レンダリング
             JavaScript: JavaScript
+            Cookie: Cookie
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -575,6 +576,7 @@ nav:
         - Common Dialog: hs/hs_system_function_commondialog.md
         - Rendering: hs/hs_system_function_rendering.md
         - JavaScript: hs/hs_system_function_js.md
+        - Cookie: hs/hs_system_function_cookie.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md
