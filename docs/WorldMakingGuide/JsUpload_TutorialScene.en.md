@@ -1,25 +1,25 @@
-# Introducing Sample JS Upload
+# Js Upload Tutorial Scene
 
 ## Prerequisites
 Make sure the following prerequisites are met:
 - [Requirements for enabling the JS Submission Feature in SDK 13.7](../WorldMakingGuide/JsUpload.md#_2)
 
-## Sample JS Submission Steps
+## Steps
 
 1. From the top menu, navigate to `Vket Cloud SDK > Tutorial > Tutorial - Scripts -`
 2. Open `Assets/Samples/VketCloudSDK/13.7.7/Tutorial - Scripts -/02_JSUpload.unity`.
 3. From the top menu, click on `Vket Cloud SDK > Upload To Remote Server`.
 4. Select the world you prepared during setup and click the `Upload` button.
 
-## Overview of the Sample JS Submission World
+## Overview of the Tutorial Scene
 
-In this sample world, the state of the keyboard (Up or Down) is displayed as text. 
+In this tutorial, the state of the keyboard (Up or Down) is displayed as text. 
 
-![JsUploadSampleWorld](./img/JSUpload_SampleWorld.gif)
+![JsUploadTutorialScene](./img/JSUpload_TutorialScene.gif)
 
 The system detects keyboard inputs from the user (key presses and releases) in real-time and displays their status (Down, Up) as text. This functionality is enabled through bidirectional communication between Vket Cloud's HeliScript and JavaScript.
 
-## Explanation of the Communication Flow
+### Explanation of the Communication Flow
 
 Data is exchanged bidirectionally between HeliScript and the JavaScript running on the browser. The process consists of sending input data from the Unity side to JavaScript, which processes the data.
 
@@ -27,14 +27,14 @@ Data is exchanged bidirectionally between HeliScript and the JavaScript running 
       - Data is sent from HeliScript to JavaScript, and vice versa.
       - The `heliport.customApi` namespace handles this communication, where methods like `sendData` and `receiveData` are used for sending and receiving data.
 
-## Data Flow Overview
+### Data Flow Overview
 
 1. When a keyboard input is detected, JavaScript captures the event and pushes the data into the `keyEventStream$`.
 2. When the state of the key changes (Down/Up), JavaScript sends the data to HeliScript.
 3. HeliScript receives the data via the `OnReceive()` method and updates the text display accordingly.
 4. If needed, HeliScript can also send data to JavaScript, for instance, to handle click events.
 
-## JavaScript Implementation
+### JavaScript Implementation
 
 On the JavaScript side, the `rxjs` library is used to handle reactive data processing. The keyboard input events are monitored, and the data is sent to HeliScript based on state changes.
 
@@ -99,7 +99,7 @@ window.heliport.customApi = {
      - The `toIngame$` stream is used to send data to HeliScript, while `fromIngame$` receives data from HeliScript.
      - The `receiveData()` method asynchronously returns data upon request from HeliScript.
 
-## HeliScript Implementation
+### HeliScript Implementation
 
 In HeliScript, the state of the keyboard input is monitored and sent to JavaScript. Additionally, data from JavaScript is received and processed accordingly.
 

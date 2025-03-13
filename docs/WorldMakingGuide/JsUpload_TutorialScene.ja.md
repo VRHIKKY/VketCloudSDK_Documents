@@ -1,24 +1,23 @@
-# サンプルJS入稿ワールドの導入方法
+# JS入稿のチュートリアルシーン
 
 ## 前提条件
 - [JS入稿機能をSDK13.7にてOnにする方法の前提条件](../WorldMakingGuide/JsUpload.md#_2)を満たしていること
 
-## サンプルJS入稿手順
-
+## 使用手順
 1. 上部メニューからVket Cloud SDK > Tutorial > Tutorial - Scripts - をクリックする
 2. Assets/Samples/VketCloudSDK/13.7.7/Tutorial -Scripts-/02_JSUpload.unityを開く。
 3. 上部メニューからVket Cloud SDK > Upload To Remote Serverをクリックする
 4. 事前準備で作成したワールドを選択し、Uploadボタンを押す
 
-## サンプルJS入稿ワールドの説明
+## シーン解説
 
-キーボードの状態(Up and Down)がテキストとして表示されるワールドです。
+キーボードの状態(Up and Down)がテキストとして表示されるシーンです。
 
-![JsUploadSampleWorld](./img/JSUpload_SampleWorld.gif)
+![JsUploadTutorialScene](./img/JSUpload_TutorialScene.gif)
 
-このサンプルワールドでは、ユーザーのキーボード入力（キーの押下や離す動作）をリアルタイムで検知し、その状態（Down、Up）をテキストとして表示します。この一連の動作は、Vket Cloud側のHeliScriptスクリプトとJavaScriptを用いた双方向の通信を通じて実現されています。
+このチュートリアルシーンでは、ユーザーのキーボード入力（キーの押下や離す動作）をリアルタイムで検知し、その状態（Down、Up）をテキストとして表示します。この一連の動作は、Vket Cloud側のHeliScriptスクリプトとJavaScriptを用いた双方向の通信を通じて実現されています。
 
-## 通信の説明
+### 通信の説明
 
 HeliScript と、ブラウザ上で実行される JavaScript 間でデータを双方向にやり取りしています。この仕組みは、Unity側からの入力情報をJavaScriptに送信し、JavaScript側からそのデータを処理するという流れで構成されています。
 
@@ -26,13 +25,13 @@ HeliScript と、ブラウザ上で実行される JavaScript 間でデータを
       - HeliScript側から JavaScript に対してデータ送信が行われ、また逆に JavaScript から HeliScript へデータが返されます。
       - heliport.customApi 名前空間が両者の通信を仲介し、sendData や receiveData メソッドでデータの送受信を行います。
 
-## データフローの全体像
+### データフローの全体像
 1. キーボードの入力があると、JavaScriptがそのイベントを検知し、keyEventStream$ にデータを流します。
 2. JavaScript側で、キーの状態（Down/Up）が変化したタイミングでHeliScript側にデータを送信します。
 3. Heliscriptは OnReceive() メソッドでデータを受け取り、表示用のテキストを更新します。
 4. 必要に応じてHeliScriptからもJavaScriptにデータを送信し、クリックイベントなどを処理します。
 
-## JavaScript の実装
+### JavaScript の実装
 
 JavaScript側では、rxjs ライブラリを使用して、リアクティブなデータ処理を行っています。キーボードの入力イベントを監視し、状態の変化に応じてHeliScript側にデータを送信します。
 
@@ -97,7 +96,7 @@ window.heliport.customApi = {
       - JavaScript側では、toIngame$ ストリームを通してHeliScriptにデータを送信し、fromIngame$ でHeliScriptからのデータを受信します。
       - receiveData() メソッドは、HeliScriptからデータ要求があった際に、非同期的にデータを返す役割を持ちます。
 
-## HeliScriptの実装
+### HeliScriptの実装
 
 HeliScriptでは、キーボードの入力状態を監視し、JavaScriptに送信します。また、JavaScriptからの入力データを受け取って処理します。
 
