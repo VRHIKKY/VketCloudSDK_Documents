@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 14, 2025 Update
+
+## Pages Added on March 14, 2025
+- HelicScript
+    - Built-in Functions
+        - [Cookie](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_cookie.html)
+
 ## March 7 2025 Update
 
 ## March 7 2025 - Added Page
