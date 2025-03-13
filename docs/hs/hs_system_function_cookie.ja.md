@@ -8,9 +8,7 @@ Cookieの存在確認、値の設定および取得を行う関数群です。�
 
 ### hsCookieExists
 
-```c
-bool hsCookieExists(string name)
-```
+`bool hsCookieExists(string name)`
 
 引数 `name` に指定したcookieが存在する場合に `true` を返します。
 
@@ -18,9 +16,7 @@ bool hsCookieExists(string name)
 
 ### hsCookieSetStr
 
-```c
-void hsCookieSetStr(string name, string value)
-```
+`void hsCookieSetStr(string name, string value)`
 
 引数 `name` に指定した名前で、文字列の `value` を書き込みます。
 
@@ -28,9 +24,7 @@ void hsCookieSetStr(string name, string value)
 
 ### hsCookieSetInt
 
-```c
-void hsCookieSetInt(string name, int value)
-```
+`void hsCookieSetInt(string name, int value)`
 
 引数 `name` に指定した名前で、整数値の `value` を書き込みます。
 
@@ -38,9 +32,7 @@ void hsCookieSetInt(string name, int value)
 
 ### hsCookieSetFloat
 
-```c
-void hsCookieSetFloat(string name, float value)
-```
+`void hsCookieSetFloat(string name, float value)`
 
 引数 `name` に指定した名前で、浮動小数点数値の `value` を書き込みます。
 
@@ -48,9 +40,7 @@ void hsCookieSetFloat(string name, float value)
 
 ### hsCookieSetBool
 
-```c
-void hsCookieSetBool(string name, bool value)
-```
+`void hsCookieSetBool(string name, bool value)`
 
 引数 `name` に指定した名前で、booleanの `value` を書き込みます。
 
@@ -58,9 +48,7 @@ void hsCookieSetBool(string name, bool value)
 
 ### hsCookieGetStr
 
-```c
-string hsCookieGetStr(string name)
-```
+`string hsCookieGetStr(string name)`
 
 引数 `name` に指定した名前でcookieを検索し、見つかった内容を文字列として返します。
 
@@ -68,9 +56,7 @@ string hsCookieGetStr(string name)
 
 ### hsCookieGetInt
 
-```c
-int hsCookieGetInt(string name)
-```
+`int hsCookieGetInt(string name)`
 
 引数 `name` に指定した名前でcookieを検索し、見つかった内容を整数値として返します。
 
@@ -78,9 +64,7 @@ int hsCookieGetInt(string name)
 
 ### hsCookieGetFloat
 
-```c
-float hsCookieGetFloat(string name)
-```
+`float hsCookieGetFloat(string name)`
 
 引数 `name` に指定した名前でcookieを検索し、見つかった内容を浮動小数点数値として返します。
 
@@ -88,8 +72,6 @@ float hsCookieGetFloat(string name)
 
 ### hsCookieGetBool
 
-```c
-bool hsCookieGetBool(string name)
-```
+`bool hsCookieGetBool(string name)`
 
 引数 `name` に指定した名前でcookieを検索し、見つかった内容をbooleanとして返します。

@@ -8,9 +8,7 @@ A set of functions to check for the existence of cookies, and to store and retri
 
 ### hsCookieExists
 
-```c
-bool hsCookieExists(string name)
-```
+`bool hsCookieExists(string name)`
 
 Returns `true` if the cookie specified by the `name` argument exists.
 
@@ -18,9 +16,7 @@ Returns `true` if the cookie specified by the `name` argument exists.
 
 ### hsCookieSetStr
 
-```c
-void hsCookieSetStr(string name, string value)
-```
+`void hsCookieSetStr(string name, string value)`
 
 Stores the given string `value` in a cookie with the specified `name`.
 
@@ -28,9 +24,7 @@ Stores the given string `value` in a cookie with the specified `name`.
 
 ### hsCookieSetInt
 
-```c
-void hsCookieSetInt(string name, int value)
-```
+`void hsCookieSetInt(string name, int value)`
 
 Stores the given integer `value` in a cookie with the specified `name`.
 
@@ -38,9 +32,7 @@ Stores the given integer `value` in a cookie with the specified `name`.
 
 ### hsCookieSetFloat
 
-```c
-void hsCookieSetFloat(string name, float value)
-```
+`void hsCookieSetFloat(string name, float value)`
 
 Stores the given floating-point `value` in a cookie with the specified `name`.
 
@@ -48,9 +40,7 @@ Stores the given floating-point `value` in a cookie with the specified `name`.
 
 ### hsCookieSetBool
 
-```c
-void hsCookieSetBool(string name, bool value)
-```
+`void hsCookieSetBool(string name, bool value)`
 
 Stores the given boolean `value` in a cookie with the specified `name`.
 
@@ -58,9 +48,7 @@ Stores the given boolean `value` in a cookie with the specified `name`.
 
 ### hsCookieGetStr
 
-```c
-string hsCookieGetStr(string name)
-```
+`string hsCookieGetStr(string name)`
 
 Searches for a cookie with the specified `name` and returns its content as a string.
 
@@ -68,9 +56,7 @@ Searches for a cookie with the specified `name` and returns its content as a str
 
 ### hsCookieGetInt
 
-```c
-int hsCookieGetInt(string name)
-```
+`int hsCookieGetInt(string name)`
 
 Searches for a cookie with the specified `name` and returns its content as an integer.
 
@@ -78,9 +64,7 @@ Searches for a cookie with the specified `name` and returns its content as an in
 
 ### hsCookieGetFloat
 
-```c
-float hsCookieGetFloat(string name)
-```
+`float hsCookieGetFloat(string name)`
 
 Searches for a cookie with the specified `name` and returns its content as a floating-point number.
 
@@ -88,8 +72,6 @@ Searches for a cookie with the specified `name` and returns its content as a flo
 
 ### hsCookieGetBool
 
-```c
-bool hsCookieGetBool(string name)
-```
+`bool hsCookieGetBool(string name)`
 
 Searches for a cookie with the specified `name` and returns its content as a boolean.
