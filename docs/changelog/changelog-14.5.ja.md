@@ -4,7 +4,10 @@
 
 ## 2025年3月14日 - 編集されたページ
 
-- HeliScript 
+- HeliScript
+    - 組み込み関数
+        - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_camera.html)
+            - hsCameraSetFPSModeとhsCameraGetFPSModeの説明を追加
     - [コンポーネント/コールバック関数](https://vrhikky.github.ioVketCloudSDK_Documents/14.5/hs/hs_component.html)
         - ItemColliderのコールバックを追記
 

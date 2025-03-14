@@ -3,7 +3,11 @@
 ## March 14 2025 Update
 
 ## March 14 2025 - Edited Page
-- HeliScript 
+
+- HeliScript
+    - Built-in Functions
+        - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_camera.html)
+            - Added descriptions for `hsCameraSetFPSMode` and `hsCameraGetFPSMode`.
     - [Components / Callback functions](https://vrhikky.github.ioVketCloudSDK_Documents/14.5/en/hs/hs_component.html)
         - Add callbacks for ItemCollider
 
