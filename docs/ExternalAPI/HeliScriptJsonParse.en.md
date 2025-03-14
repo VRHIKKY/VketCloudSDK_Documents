@@ -1,95 +1,249 @@
-# Reading JSON in HeliScript
+# Handling Json in HeliScript
 
 ## Overview
 
-By using JsVal and properties, you can load information stored in a JSON file.
+This article introduces how to define and utilize Json in HeliScript.
 
-This page explains how to load a JSON file in HeliScript.
+!!! info "Verification Environment"
+    **SDK Version**: 15.1.0<br>
+    **OS**: Windows 10<br>
+    **Unity**: 22019.4.31.f1<br>
+    **Browser**: Google Chrome
 
-!!! info "Test Environment"
-    SDK Version: 12.3.4<br>
-    OS: Windows 10<br>
-    Unity: 2019.4.31.f1<br>  
-    Browser: Google Chrome
+!!! success "Setting up Json"
+    The Json handled on this page simulates a list of product information displayed within the shop world.<br>
+    *Note: The test data used on this page contains arbitrary values.*<br><br>
+    〇 List of Parameters<br>
+    **position**: Number indicating the location in the world.<br>
+    **item_id**: Number assigned to the product.<br>
+    **name**: Product name.<br>
+    **category_name**: Name of the category to which the product belongs.<br>
+    **item_type**: Type of item (3D model, avatar, texture, etc.).<br>
+    **like_count**: Number of likes received by the item.<br>
+    **price_range**: Price range setting.<br>
+    **image**: URL of the product thumbnail image.<br>
+    **shop_name**: Name of the shop where the product is listed.<br>
+    **shop_icon**: URL of the shop's icon image.
 
----
+## ① Variable Definition
 
-## Prerequisite Knowledge: What is the JsVal Class?
+In HeliScript, a Json class is provided. Therefore,
 
-HeliScript provides the JsVal class.  
-This class is used to load JavaScript data.  
-It allows you to use associative array formats.  
-For more details, please refer to the [JsVal page](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/JsVal.html).
-
-```
-JsVal shopInfo;
-```
-
-By defining it like this, you can create a variable of the JsVal class.
-
----
-
-## 1. Populating Data in the JsVal Class Variable
-
-To populate data in a JsVal class variable, a callback function is used.  
-In this example, we use `heliport.v3.api.worlds.getWorldList()` to obtain the world list data and store it in JsVal.
-
-First, define the callback function as:
-
-```
-delegate void fJsValCallback(JsVal);
+```js
+Json _shopInfo;
 ```
 
-Then, implement the function:
+defines a variable of the Json class.
 
+## ② Inserting Data into Json Class Variables
+
+You can insert Json into a Json class variable using `hsLoadJson(string)`.
+
+In this case, we use the String-type function `GetRawData()` provided below.
+
+```hs
+string GetRawData(){
+    return
+    "{" +
+        "\"status\":\"ok\"," +
+        "\"data\":{" +
+            "\"items\":[" +
+                "{" +
+                    "\"position\":1," +
+                    "\"item_id\":10," +
+                    "\"name\":\"Test Test\"," +
+                    "\"category_name\":\"test\"," +
+                    "\"item_type\":\"test\"," +
+                    "\"like_count\":2," +
+                    "\"price_range\":\"￥0-1,000\"," +
+                    "\"image\":\"URL\"," +
+                    "\"shop_name\":\"URL\"," +
+                    "\"shop_icon\":\"URL\"" +
+                "}," +
+                "{" +
+                    "\"position\":2," +
+                    "\"item_id\":11," +
+                    "\"name\":\"Test2 Test2\"," +
+                    "\"category_name\":\"test2\"," +
+                    "\"item_type\":\"test2\"," +
+                    "\"like_count\":3," +
+                    "\"price_range\":\"￥3-1,000\"," +
+                    "\"image\":\"URL2\"," +
+                    "\"shop_name\":\"URL2\"," +
+                    "\"shop_icon\":\"URL2\"" +
+                "}" +
+            "]" +
+        "}" +
+    "}";
+}
 ```
-public void _FetchWorldListCallback(JsVal val)
+
+The HeliScript code to insert the data looks like this:
+
+```c#
+_shopInfo = hsLoadJson(GetRawData());
+```
+
+## ③ Extracting Necessary Information from Json
+
+The Json used here includes the following hierarchy:
+
+```c#
+・status
+・data
+　├items
+　├position
+　├item_id
+　├name
+　├category_name
+　├item_type
+　├like_count
+　├price_range
+　├image
+　├shop_name
+　└shop_icon
+```
+
+We'll extract `item_id` and `name` in this example.
+
+### 1. Extracting `data` from the overall Json and defining it as a new Json file
+
+Using the `Find` function defined in the Json class, you can locate and define the content under a specified data type and key as a new Json file.
+
+Therefore,
+
+```c#
+Json datablock = _shopInfo.Find(EJSONDataType_Block, "data");
+```
+
+defines `datablock` as the Json containing data.
+
+### 2. Extracting `items` from `data` and defining it as a new Json file
+
+Similarly, using the `Find` function, extract `items` from `datablock`.
+
+```c#
+Json items = datablock.Find(EJSONDataType_Array, "items");
+```
+
+Now, `items` is a Json file containing items.
+
+!!! info "Difference in EJSONDataType"
+    When extracting `datablock`, `EJSONDataType_Block` is used in the Find function, and when extracting `items`, `EJSONDataType_Array` is used. These are used based on the data definition format in Json.<br><br>
+    Use `Block` for elements enclosed in `{}`, and `Array` for elements enclosed in `[]`.
+
+### 3. Creating an ArrayList from `items`
+
+Within `items`, 15 items are defined.  
+To access each element, you need to list them as Json.
+
+```c#
+list<Json> dataJsons = items.GetArrayList();
+```
+
+This creates `dataJsons`, listing each of the 15 items in `items` as separate Json.
+
+### 4. Extracting data from each element of the item
+
+After these preparations, you can finally extract the data.
+
+For extraction, use functions like `FindValueString` and `FindValueInt`, tailored to the type of data you're extracting.
+
+With these functions, you can assign values from specified items to variables.  
+Therefore, the code would look like this:
+
+```c#
+int itemId; // Variable to store item_id
+string itemName; // Variable to store name
+
+for(int i =  0; i < dataJsons.Count; i++){ // Loop through each item
+  itemId = -1; // Initialize variables
+  itemName = ""; // Initialize variables
+  dataJsons[i].FindValueInt("item_id",itemId); // Assign value of item_id to itemId
+  dataJsons[i].FindValueString("name",itemName); // Assign value of name to itemName
+  hsSystemOutput("dataJsons[%d] item_id : %d , name : %s\n" % i %itemId % itemName);
+}
+```
+
+Summarizing the code, it looks like this:
+
+```c#
+component SetProductData
 {
+    Json _shopInfo;
 
+    public SetProductData()
+    {
+        _shopInfo = hsLoadJson(GetRawData());
+        FindJsonContents();
+    }
+
+    public void Update()
+    {
+        
+    }
+
+    string GetRawData(){
+        return
+        "{" +
+            "\"status\":\"ok\"," +
+            "\"data\":{" +
+                "\"items\":[" +
+                    "{" +
+                        "\"position\":1," +
+                        "\"item_id\":10," +
+                        "\"name\":\"Test Test\"," +
+                        "\"category_name\":\"test\"," +
+                        "\"item_type\":\"test\"," +
+                        "\"like_count\":2," +
+                        "\"price_range\":\"￥0-1,000\"," +
+                        "\"image\":\"URL\"," +
+                        "\"shop_name\":\"URL\"," +
+                        "\"shop_icon\":\"URL\"" +
+                    "}," +
+                    "{" +
+                        "\"position\":2," +
+                        "\"item_id\":11," +
+                        "\"name\":\"Test2 Test2\"," +
+                        "\"category_name\":\"test2\"," +
+                        "\"item_type\":\"test2\"," +
+                        "\"like_count\":3," +
+                        "\"price_range\":\"￥3-1,000\"," +
+                        "\"image\":\"URL2\"," +
+                        "\"shop_name\":\"URL2\"," +
+                        "\"shop_icon\":\"URL2\"" +
+                    "}," +
+                "]" +
+            "}" +
+        "}";
+    }
+
+    void FindJsonContents(){
+        int itemId;
+        string itemName;
+        Json datablock = _shopInfo.Find(EJSONDataType_Block, "data");
+        Json items = datablock.Find(EJSONDataType_Array, "items");
+        list<Json> dataJsons = items.GetArrayList();
+        for(int i =  0; i < dataJsons.Count; i++){ // Loop through each item
+            itemId = -1; // Initialize variables
+            itemName = ""; // Initialize variables
+            dataJsons[i].FindValueInt("item_id",itemId); // Assign value of item_id to itemId
+            dataJsons[i].FindValueString("name",itemName); // Assign value of name to itemName
+            hsSystemOutput("dataJsons[%d] item_id : %d , name : %s\n" % i %itemId % itemName);
+        }
+    }
 }
-
-// Triggering this function will populate the JsVal variable with data
-heliport.v3.api.worlds.getWorldList(_FetchWorldListCallback, 6, 0, "myvket", "", "", "official");
 ```
 
+When executed, this code produces the following output:
 
-Once this setup is complete, calling the function will trigger the callback and populate the JsVal class variable `val` with the data.
-
----
-
-## 2. Extracting Required Information from JsVal
-
-The data we are working with has the following structure:
-
-```
-data {
-world_portals [
-id : int
-name : string
-visit_count : int
-ingame_url : string
-thumbnail : string
-]
-}
+```c#
+dataJsons[0] item_id : 10 , name : Test Test
+dataJsons[1] item_id : 11 , name : Test2 Test2
 ```
 
-(world_portals consists of a set of 5 elements: id, name, visit_count, ingame_url, and thumbnail)
+## Caution
 
-To extract data from JsVal, two methods are used: `GetProperty()` and `GetProperty().At()`.
+When handling Json, there's a possibility of malfunction with `Shift_JIS` depending on the incoming data. Therefore, it's recommended to use `UTF-8` for `.hs` file encoding.
 
-Elements are accessed with `GetProperty()`, and associative arrays are accessed using `GetProperty().At()` by specifying the key and array index.  
-When you reach the final property, use `GetNum()` for int values and `GetStr()` for string values to retrieve the data.
-
-To get the first element's id, name, visit_count, ingame_url, and thumbnail, the following code would be written:
-
-```
-_id = val.GetProperty("data").GetProperty("world_portals").At(0).GetProperty("id").GetNum(); _name = val.GetProperty("data").GetProperty("world_portals").At(0).GetProperty("name").GetStr(); _visit_count = val.GetProperty("data").GetProperty("world_portals").At(0).GetProperty("visit_count").GetNum(); _ingame_url = val.GetProperty("data").GetProperty("world_portals").At(0).GetProperty("ingame_url").GetStr(); _thumb_url = val.GetProperty("data").GetProperty("world_portals").At(0).GetProperty("thumbnail").GetStr();
-```
-
-The extracted data can be used as int or string types, and can be reflected in `hsSystemWriteLine`, used for calculations, or applied in the world.
-
----
-
-## Reference Pages
-
-[Broker API Information](https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/BrokerAPI.html): The Broker API also uses JsVal for data retrieval.
+Moreover, using [JsVal](../ExternalAPI/JsVal.md) for reading can offer greater convenience.
