@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月14日更新
+
+## 2025年3月14日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [HeliScriptでCanvas要素を制御する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/HeliscriptCanvas.html)
+
+---
+
 ## 2025年3月7日更新
 
 ## 2025年3月7日 - 追加されたページ
