@@ -116,6 +116,7 @@ plugins:
             JS Upload: JS入稿
             Enabling JS Upload Feature: JS入稿機能の有効化
             Sample JS Upload: JS入稿のサンプル
+            Restrict World Entry Time: ワールド入場時間を制限する
             Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
             Door Opens After Load: ロードが完了したら開く扉
             Guide To Clear Textures: テクスチャをぼやけさせない
@@ -355,6 +356,7 @@ nav:
     - JS Upload :
       - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
       - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
+      - Restrict World Entry Time: WorldMakingGuide/JsUpload_RestrictEntryTime.md
     - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
     - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
     - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
