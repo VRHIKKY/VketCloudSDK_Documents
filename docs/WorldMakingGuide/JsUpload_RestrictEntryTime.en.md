@@ -7,7 +7,7 @@ Therefore, if you want to create an event that spans multiple days or only allow
 
 This page demonstrates how to use JavaScript to create a world that can be entered for more than 24 hours in total or only during specific times, which is challenging with the standard event features.
 
-!!! failure
+!!! failure "caution"
     - A paid plan feature is used here.<br>
     - If the world is set to “Public,” the access link to the world will remain visible even when it’s outside of the allowed timeframe.<br>
     - This does not forcibly remove people already inside the world when it’s outside of the permitted time.
