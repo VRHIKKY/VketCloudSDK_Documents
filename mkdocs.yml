@@ -116,6 +116,7 @@ plugins:
             JS Upload: JS入稿
             Enabling JS Upload Feature: JS入稿機能の有効化
             Sample JS Upload: JS入稿のサンプル
+            Get Current Weather Using Web API: Web APIを使用し現在の天気を取得する
             Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
             Door Opens After Load: ロードが完了したら開く扉
             Guide To Clear Textures: テクスチャをぼやけさせない
@@ -355,6 +356,7 @@ nav:
     - JS Upload :
       - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
       - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
+      - Get Current Weather Using Web API: WorldMakingGuide/JsUpload_FetchCurrentWeather.md
     - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
     - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
     - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
