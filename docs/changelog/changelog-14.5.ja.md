@@ -2,6 +2,12 @@
 
 ## 2025年3月14日更新
 
+## 2025年3月14日 - 編集されたページ
+
+- HeliScript 
+    - [コンポーネント/コールバック関数](https://vrhikky.github.ioVketCloudSDK_Documents/14.5/hs/hs_component.html)
+        - ItemColliderのコールバックを追記
+
 ## 2025年3月14日 - 追加されたページ
 
 - ワールド制作ガイド
