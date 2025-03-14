@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月21日更新
+
+## 2025年3月21日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [ワールド入場時間を制限する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_RestrictEntryTime.html)  
+
 ## 2025年3月7日更新
 
 ## 2025年3月7日 - 追加されたページ
