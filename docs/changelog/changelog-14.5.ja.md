@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月21日更新
+
+## 2025年3月21日 - 編集されたページ
+
+- 外部API連携
+    - [HeliScriptでJsonを扱う](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/HeliScriptJsonParse.html)  
+        - 新しいsdk向けに情報を更新しました
+
 ## 2025年3月7日更新
 
 ## 2025年3月7日 - 追加されたページ
