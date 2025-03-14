@@ -8,6 +8,15 @@
     - Built-in Functions
         - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_camera.html)
             - Added descriptions for `hsCameraSetFPSMode` and `hsCameraGetFPSMode`.
+    - [Components / Callback functions](https://vrhikky.github.ioVketCloudSDK_Documents/14.5/en/hs/hs_component.html)
+        - Add callbacks for ItemCollider
+
+## March 14 2025 - Added Page
+
+- WorldMakingGuide
+    - [Controlling Canvas Elements with HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/HeliscriptCanvas.html)
+
+---
 
 ## March 7 2025 Update
 
