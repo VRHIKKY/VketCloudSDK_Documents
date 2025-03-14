@@ -12,12 +12,11 @@ This page demonstrates how to use JavaScript to create a world that can be enter
     - If the world is set to “Public,” the access link to the world will remain visible even when it’s outside of the allowed timeframe.<br>
     - This does not forcibly remove people already inside the world when it’s outside of the permitted time.
 
-## Test Environment
-
-- **SDK Version**: 13.7.7  
-- **OS**: Windows 10  
-- **Unity**: 2019.4.31.f1  
-- **Browser**: Chrome  
+!!! note "Test Environment"
+    - **SDK Version**: 13.7.7<br>
+    - **OS**: Windows 10<br>
+    - **Unity**: 2019.4.31.f1<br>
+    - **Browser**: Google Chrome
 
 ## Procedure
 
