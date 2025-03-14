@@ -873,6 +873,8 @@
       
         
       
+        
+      
     
     
     
@@ -1634,6 +1636,27 @@
   
   <span class="md-ellipsis">
     Creating Capsule Rectangle Images Using 9-Slice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control the Canvas element with HeliScript
   </span>
   
 
@@ -6454,6 +6477,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#callbacks-itemcollider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callbacks - ItemCollider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#callback-unselecting-objects" class="md-nav__link">
     <span class="md-ellipsis">
       Callback - Unselecting Objects
@@ -6614,6 +6646,8 @@
   
     
     
+      
+        
       
         
       
@@ -6827,6 +6861,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HSRaycastHIT Class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6843,6 +6898,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -7185,6 +7244,48 @@
   
   <span class="md-ellipsis">
     JavaScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_raycast.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Raycast
   </span>
   
 
@@ -11434,6 +11535,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#callbacks-itemcollider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callbacks - ItemCollider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#callback-unselecting-objects" class="md-nav__link">
     <span class="md-ellipsis">
       Callback - Unselecting Objects
@@ -11663,6 +11773,26 @@
          hsSystemOutput(&quot;OnLeaveAreaCollider&quot; + m_Item.GetName() + &quot;\n&quot;);
      }
 }
+</code></pre></div>
+
+<h2 id="callbacks-itemcollider">Callbacks - ItemCollider</h2>
+<p>By defining the OnItemEnterCollider and OnItemLeaveCollider methods as shown below,they will be called when an Item with this component enters or exits the collider of another Item's internal node.<br />
+Currently, only box collider collision shapes are supported.  </p>
+<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">CollisionTest</span>
+<span class="err">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">OnItemEnterCollider</span><span class="p">(</span><span class="nc">int</span><span class="w"> </span><span class="n">ItemInstanceID</span><span class="p">,</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
+<span class="w">    </span><span class="err">{</span>
+<span class="w">        </span><span class="n">Item</span><span class="w"> </span><span class="n">CollidedItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGetByInstanceID</span><span class="p">(</span><span class="n">ItemInstanceID</span><span class="p">);</span>
+<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">NodeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetNodeNameByIndex</span><span class="p">(</span><span class="n">NodeIndex</span><span class="p">);</span>
+<span class="w">        </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="ss">&quot;[OnItemEnterCollider] ItemName: %s, NodeName: %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetName</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">NodeName</span><span class="p">);</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">OnItemLeaveCollider</span><span class="p">(</span><span class="nc">int</span><span class="w"> </span><span class="n">ItemInstanceID</span><span class="p">,</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
+<span class="w">    </span><span class="err">{</span>
+<span class="w">        </span><span class="n">Item</span><span class="w"> </span><span class="n">CollidedItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGetByInstanceID</span><span class="p">(</span><span class="n">ItemInstanceID</span><span class="p">);</span>
+<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">NodeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetNodeNameByIndex</span><span class="p">(</span><span class="n">NodeIndex</span><span class="p">);</span>
+<span class="w">        </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="ss">&quot;[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetName</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">NodeName</span><span class="p">);</span>
+<span class="w">    </span><span class="err">}</span>
+<span class="err">}</span>
 </code></pre></div>
 
 <h2 id="callback-unselecting-objects">Callback - Unselecting Objects</h2>
