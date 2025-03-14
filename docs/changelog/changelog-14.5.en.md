@@ -5,6 +5,9 @@
 ## March 14 2025 - Edited Page
 
 - HeliScript
+    - Built-in Classes And Functions
+        -  [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_class.html)
+            - Added `IsCollisionDetection`
     - Built-in Functions
         - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_camera.html)
             - Added descriptions for `hsCameraSetFPSMode` and `hsCameraGetFPSMode`.
@@ -12,7 +15,11 @@
         - Add callbacks for ItemCollider
 
 ## March 14 2025 - Added Page
-
+- HeliScript
+    - Built-in Classes And Functions
+        - [HSRaycastHIT Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_struct_hsraycasthit.html)
+    - Built-in Functions
+        - [Raycast](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_raycast.html)
 - WorldMakingGuide
     - [Controlling Canvas Elements with HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/HeliscriptCanvas.html)
 
