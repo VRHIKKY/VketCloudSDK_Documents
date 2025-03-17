@@ -7,7 +7,7 @@ HeliScript上でJsonを定義する方法と活用方法を紹介します。
 !!! info "検証環境"
     **SDKバージョン** : 15.1.0<br>
     **OS** : Windows 10<br>
-    **Unity** : 22019.4.31.f1<br>
+    **Unity** : 2022.3.6f1<br>
     **ブラウザ** : Google Chrome
 
 !!! success "Jsonの状況設定"

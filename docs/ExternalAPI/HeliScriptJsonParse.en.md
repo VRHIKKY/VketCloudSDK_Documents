@@ -7,7 +7,7 @@ This article introduces how to define and utilize Json in HeliScript.
 !!! info "Verification Environment"
     **SDK Version**: 15.1.0<br>
     **OS**: Windows 10<br>
-    **Unity**: 22019.4.31.f1<br>
+    **Unity**: 2022.3.6f1<br>
     **Browser**: Google Chrome
 
 !!! success "Setting up Json"
