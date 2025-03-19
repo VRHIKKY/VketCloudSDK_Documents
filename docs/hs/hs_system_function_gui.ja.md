@@ -187,6 +187,13 @@ buttonタイプのGUIを追加する。
 LayerNameで検索したLayerにIsPortraitで縦か横画面を判定して、
 textタイプのGUIを追加する。
 
+### hsGetTextAreaContentSize()
+
+`void hsGetTextAreaContentSize(string LayerName, string GUIName, ref int width, ref int height)`
+
+GUIのTextの本来のwidthとheigtを取得します。
+
+
 ## ウィンドウシステム
 モーダル・モードレスウィンドウを作れるようにする（以降これらの機能をまとめてウィンドウシステムと呼ぶ）
 
