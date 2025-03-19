@@ -22,6 +22,7 @@ theme:
     - header.autohide
     - search.suggest
     - search.highlight
+    - content.code.copy
   footer:
     logo: images/HikkyLogo.png
     copyright: ©HIKKY Co.,Ltd. All rights reserved.
