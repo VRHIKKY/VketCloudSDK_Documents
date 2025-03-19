@@ -318,6 +318,7 @@ markdown_extensions:
     - codehilite
     - attr_list
     - pymdownx.details
+    - pymdownx.superfences
 
 nav:
 - Introduction: index.md
