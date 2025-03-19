@@ -2,6 +2,11 @@
 
 ## 2025年3月21日更新
 
+## 2025年3月21日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [Web APIを使用し現在の天気を取得する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_FetchCurrentWeather.html)  
+
 ## 2025年3月21日 - 編集されたページ
 
 - ワールド制作ガイド

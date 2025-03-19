@@ -2,6 +2,11 @@
 
 ## March 21 2025 Update
 
+## March 21 2025 - Added Page
+
+- World Creation Guide
+    - [Fetch Current Weather](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/JsUpload_FetchCurrentWeather.html)  
+
 ## March 21 2025 - Edited Page
 
 - World Creation Guide  
