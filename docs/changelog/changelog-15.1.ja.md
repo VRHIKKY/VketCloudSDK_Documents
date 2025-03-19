@@ -6,5 +6,5 @@
 
 - HeliScript
     - 組み込み関数
-        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/15.1/hs/hs_system_function_gui.html)
             - hsGetTextAreaContentSize関数の説明文を追記

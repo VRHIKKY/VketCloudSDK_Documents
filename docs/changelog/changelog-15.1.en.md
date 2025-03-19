@@ -6,5 +6,5 @@
 
 - HeliScript
     - Built-in Functions
-        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/15.1/hs/hs_system_function_gui.html)
             - Added description for the `hsGetTextAreaContentSize` function
