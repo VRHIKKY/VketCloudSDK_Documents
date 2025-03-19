@@ -49,4 +49,15 @@ TPSカメラのＹ方向のオフセットを指定します。単位はメー�
 
 ワールド座標系におけるカメラの向きをQuaternionとして取得します。
 
+### hsCameraSetFPSMode
+
+`void hsCameraSetFPSMode(bool Enable)`
+
+引数 Enable をtrueに設定するとカメラをFPSモードに、falseに設定するとカメラをTPSモードに変更します。
+
+### hsCameraGetFPSMode
+
+`bool hsCameraGetFPSMode()`
+
+現在のカメラのFPSモードの値を返します。
 ***
