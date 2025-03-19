@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 25 2025 Update
+
+## March 25 2025 - Edited Page
+
+- HeliScript
+    - Built-in Classes And Functions
+        - [Quaternion class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_struct_quaternion.html)
+            - Added annotation to makequaternioneuler function
+
+---
 ## March 21 2025 Update
 
 ## March 21 2025 - Added Page
