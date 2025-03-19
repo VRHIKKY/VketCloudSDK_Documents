@@ -6,5 +6,5 @@
 
 - HeliScript
     - 組み込み関数
-        - [GUI]()
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
             - Layer関連の関数の記述を追加
