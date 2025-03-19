@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 21 2025 Update
+
+## March 21 2025 - Edited Page
+
+- World Creation Guide  
+    - [JS Submission Sample](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_Sample.html)  
+        - Changed wording from "Sample World" to "Tutorial Scene."  
+
+---
+
 ## March 14 2025 Update
 
 ## March 14 2025 - Edited Page

@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月21日更新
+
+## 2025年3月21日 - 編集されたページ
+
+- ワールド制作ガイド
+    - [JS入稿のサンプル](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_Sample.html)
+        - サンプルワールドからチュートリアルシーンへ文言を変更。
+
+---
+
 ## 2025年3月14日更新
 
 ## 2025年3月14日 - 編集されたページ
