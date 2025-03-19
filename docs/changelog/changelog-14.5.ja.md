@@ -8,6 +8,34 @@
     - [JS入稿のサンプル](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_Sample.html)
         - サンプルワールドからチュートリアルシーンへ文言を変更。
 
+---
+
+## 2025年3月14日更新
+
+## 2025年3月14日 - 編集されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        -  [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_class.html)
+            - `IsCollisionDetection`を追記
+    - 組み込み関数
+        - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_camera.html)
+            - hsCameraSetFPSModeとhsCameraGetFPSModeの説明を追加
+    - [コンポーネント/コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_component.html)
+        - ItemColliderのコールバックを追記
+
+## 2025年3月14日 - 追加されたページ
+- HeliScript
+    - 組み込みクラス・関数
+        - [HSRaycastHIT Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_struct_hsraycasthit.html)
+    - 組み込み関数
+        - [Raycast](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_raycast.html)
+        - [Cookie](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_cookie.html)
+- ワールド制作ガイド
+    - [HeliScriptでCanvas要素を制御する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/HeliscriptCanvas.html)
+
+---
+
 ## 2025年3月7日更新
 
 ## 2025年3月7日 - 追加されたページ

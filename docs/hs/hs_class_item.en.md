@@ -883,3 +883,10 @@ The sent message is notified to all components of the target Item, but if even o
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### IsCollisionDetection
+
+`public bool IsCollisionDetection()`
+
+Retrieves whether collision detection is enabled for individual items.  
+If true, the item will be subject to collision detection with a ray using the hsItemRaycast() function.
