@@ -897,3 +897,23 @@ The sent message is notified to all components of the target Item, but if even o
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetVolume
+
+`public void SetVolume(float Volume)`
+
+Sets the volume.
+
+??? note "Object types that can call this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### GetVolume
+
+`public float GetVolume()`
+
+Gets the volume set by SetVolume().  
+The default value is 0.2.
+
+??? note "Object types that can call this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    
