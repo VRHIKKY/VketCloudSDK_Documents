@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 28 2025 Update
+
+## March 28 2025 - Edited Page
+
+- HeliScript
+    - Built-in Types
+        - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
+            - Added explanation about referencing the instance itself using 'this'
+
+---
+
 ## March 21 2025 Update
 
 ## March 21 2025 - Added Page
