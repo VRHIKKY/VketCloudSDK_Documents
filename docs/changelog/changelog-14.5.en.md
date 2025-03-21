@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 28 2025 Update
+
+## March 28 2025 - Edited Page
+
+- World Making Guide
+    - [ReplaceTexture Unexpectedly Replaces Other Textures](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_operator.html)
+        - Add Trouble Shooting Case
+
+---
+
 ## March 21 2025 Update
 
 ## March 21 2025 - Added Page
