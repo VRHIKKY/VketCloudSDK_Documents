@@ -7,6 +7,7 @@
 - HeliScript
     - 組み込みクラス・関数
         - [Item クラス](https://vrhikky.github.io/VketCloudSDK_Documents/15.1/hs/hs_class_item.html)
+            - hsItemCreateCloneおよびhsItemDestroyCloneクラスを追加
             - SetVolumeおよびGetVolumeクラスを追加
 ## 2025年3月21日 - 更新されたページ
 
