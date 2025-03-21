@@ -1,16 +1,5 @@
 # SDK Manual Change Log - Ver 14.5
 
-## 2025年3月28日更新
-
-## 2025年3月28日 - 編集されたページ
-
-- HeliScript
-    - 組み込みクラス・関数
-        - [Quaternionクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_struct_quaternion.html)
-            - makequaternioneuler関数に注釈を追記
-
----
-
 ## 2025年3月21日更新
 
 ## 2025年3月21日 - 追加されたページ

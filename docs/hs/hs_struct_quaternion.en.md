@@ -55,25 +55,6 @@ global function. Returns the quaternion rotated by rotateRadian around the z-axi
 
 global function. Generates a quaternion from the triplet of Euler angles x, y, z.
 
-!!! warning "Matching Unity's Euler Angles with Visual Appearance"
-    In Unity, Euler angle rotations are performed in the order of Z-axis, X-axis, and Y-axis.<br>
-    Since this order differs from the Vket Cloud engine, please refer to the code below to match Unity's settings with the visual appearance.
-
-    ??? quote "Code Sample"
-        ```
-        Quaternion CreateQuaternionEuler(float x, float y, float z)
-        {
-            Quaternion XRot = makeQuaternionXRotation(hsMathDegToRad(x));
-            Quaternion YRot = makeQuaternionYRotation(hsMathDegToRad(y));
-            Quaternion ZRot = makeQuaternionZRotation(hsMathDegToRad(z));
-
-            Quaternion YXRot = makeQuaternionMul(YRot, XRot);
-            Quaternion YXZRot = makeQuaternionMul(YXRot, ZRot);
-
-            return YXZRot;
-        }
-        ```
-
 ### makeQuaternionFromTo
 
 `Quaternion makeQuaternionFromTo(Vector3 From, Vector3 To)`
