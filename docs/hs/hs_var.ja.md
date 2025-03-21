@@ -93,3 +93,9 @@ int型変数の持つ変数値を、文字列に変換します。
 `public string ToString()`
 
 float型変数の持つ変数値を、文字列に変換します。
+
+### bool.ToString()
+
+`public string ToString()`
+
+bool型変数の持つ変数値を、文字列に変換します。
