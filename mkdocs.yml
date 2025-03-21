@@ -131,7 +131,7 @@ plugins:
             How to check the Chrome Developer Tools console on iPhone alone: iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法
             Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
             Binary Output Error: バイナリ出力に失敗
-            ReplaceTexture Unexpectedly Replaces Other Textures: ReplaceTextureでテクスチャの差し替えが正常に出来ない
+            Texture Replacement Issues with ReplaceTexture: ReplaceTextureでテクスチャの差し替えが正常に出来ない
             Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
             Control the Canvas element with HeliScript: HeliScriptでCanvas要素を制御する
             # ActionNodeGraph: アクションノードグラフ
@@ -375,7 +375,7 @@ nav:
     - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
     - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
     - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
-    - ReplaceTexture Unexpectedly Replaces Other Textures : WorldMakingGuide/ReplaceTexture.md
+    - Texture Replacement Issues with ReplaceTexture : WorldMakingGuide/ReplaceTexture.md
     - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
     - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
     - Control the Canvas element with HeliScript : WorldMakingGuide/HeliscriptCanvas.md
