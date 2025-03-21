@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 25 2025 Update
+
+## March 25 2025 - Edited Page
+
+- HeliScript
+    - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_gui.html)
+            - Added annotation to hsCanvasSetGUIText function
+
+---
 ## March 21 2025 Update
 
 ## March 21 2025 - Added Page
