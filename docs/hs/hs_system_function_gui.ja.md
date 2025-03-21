@@ -49,6 +49,9 @@ hsCanvasSuspendVisibleLayers()で非表示にしたレイヤーを復帰しま�
 
 指定したテキスト要素のテキストを設定する。
 
+!!! warning "テキスト内のカンマ「,」使用について"
+    現在テキスト内にてカンマ「,」を使用すると、テキストが表示されない不具合が発生することを確認しています。カンマ「,」の使用は避けてください。
+
 ### hsCanvasSetGUITextAlignment
 
 `bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)`
