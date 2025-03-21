@@ -5,6 +5,7 @@
 ## 2025年3月21日 - 追加されたページ
 
 - ワールド制作ガイド
+    - [ワールド入場時間を制限する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_RestrictEntryTime.html)  
     - [Web APIを使用し現在の天気を取得する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_FetchCurrentWeather.html)  
 
 ## 2025年3月21日 - 編集されたページ

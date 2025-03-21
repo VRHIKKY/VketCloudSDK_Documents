@@ -5,6 +5,7 @@
 ## March 21 2025 - Added Page
 
 - World Creation Guide
+    - [Restrict World Entry Time](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/JsUpload_RestrictEntryTime.html)  
     - [Fetch Current Weather](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/JsUpload_FetchCurrentWeather.html)  
 
 ## March 21 2025 - Edited Page
