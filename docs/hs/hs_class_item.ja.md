@@ -883,3 +883,22 @@ overrides設定を取得します。
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetVolume
+
+`public void SetVolume(float Volume)`
+
+音量を設定します
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### GetVolume
+
+`public float GetVolume()`
+
+SetVolume()で設定した音量を取得します
+初期値は0.2です
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
