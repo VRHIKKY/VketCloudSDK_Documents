@@ -13,6 +13,9 @@
 - ワールド制作ガイド
     - [JS入稿のサンプル](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_Sample.html)
         - サンプルワールドからチュートリアルシーンへ文言を変更。
+- 外部API連携
+    - [HeliScriptでJsonを扱う](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/HeliScriptJsonParse.html)  
+        - 新しいsdk向けに情報を更新しました
 
 ---
 

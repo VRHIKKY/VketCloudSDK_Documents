@@ -13,7 +13,9 @@
 - World Creation Guide  
     - [JS Submission Sample](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_Sample.html)  
         - Changed wording from "Sample World" to "Tutorial Scene."  
-
+- External API
+    - [Handling Json in HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/HeliScriptJsonParse.html)  
+        - Updated the information for the new SDK.
 ---
 
 ## March 14 2025 Update
