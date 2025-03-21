@@ -134,3 +134,21 @@ switch (id) {
          break;
 }
 ```
+
+## { } - Block-Based Scope
+Within a method, *{ }* can be used to define scope.
+
+```
+public void example() {
+    int x = 10;
+    { 
+        int y = 20;
+    }
+
+    // -> "x:10"
+    hsSystemOutput("x: %d" % x);
+
+    // Error because y is out of scope
+    hsSystemOutput("y: %d" % y); 
+}
+```

@@ -129,3 +129,21 @@ switch (id) {
         break;
 }
 ```
+
+## { } - ブロックによるスコープ
+メソッド内の*{ }*によって、スコープの定義が可能です。
+
+```
+public void example() {
+    int x = 10;
+    { 
+        int y = 20;
+    }
+
+    // -> "x:10"
+    hsSystemOutput("x: %d" % x);
+
+    // スコープ外のためエラー
+    hsSystemOutput("y: %d" % y); 
+}
+```
