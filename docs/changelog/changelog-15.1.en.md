@@ -6,5 +6,5 @@
 
 - HeliScript
     - Built-in Classes And Functions
-        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/15.1/hs/hs_class_item.html)
+        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/15.1/en/hs/hs_class_item.html)
             - Add SetVolume and GetVolume classes
