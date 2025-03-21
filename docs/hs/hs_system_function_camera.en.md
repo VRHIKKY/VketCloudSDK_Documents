@@ -42,4 +42,15 @@ Retrieves the position of the camera in world coordinates.
 
 Retrieves the position of the camera as a `Vector3` in world coordinates.
 
+### hsCameraSetFPSMode
+
+`void hsCameraSetFPSMode(bool Enable)`
+
+Sets the camera to FPS mode when `Enable` is set to `true`, and to TPS mode when set to `false`.
+
+### hsCameraGetFPSMode
+
+`bool hsCameraGetFPSMode()`
+
+Returns the current value of the camera's FPS mode.
 ***
