@@ -8,3 +8,9 @@
     - 組み込みクラス・関数
         - [Item クラス](https://vrhikky.github.io/VketCloudSDK_Documents/15.1/hs/hs_class_item.html)
             - SetVolumeおよびGetVolumeクラスを追加
+## 2025年3月21日 - 更新されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [レンダリング](https://vrhikky.github.io/VketCloudSDK_Documents/15.1/hs/hs_system_function_rendering.html)
+            - Light, Bloom, LightScatteringについての記述を追加
