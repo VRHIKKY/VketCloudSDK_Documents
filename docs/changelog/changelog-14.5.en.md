@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 28 2025 Update
+
+## March 28 2025 - Edited Page
+
+- HeliScript
+    - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - Corrected the explanation for `hsCanvasResetToggleDefault` and `hsCanvasToggleChange`.
+
+---
+
 ## March 21 2025 Update
 
 ## March 21 2025 - Added Page
