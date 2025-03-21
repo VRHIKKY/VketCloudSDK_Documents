@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 28 2025 Update
+
+## March 28 2025 - Edited Page
+
+- HeliScript
+    - Statements and flow control
+        - [Operator](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_operator.html)
+            - Fixed incorrect explanation of the operator === and ==
+
+---
+
 ## March 21 2025 Update
 
 ## March 21 2025 - Added Page
