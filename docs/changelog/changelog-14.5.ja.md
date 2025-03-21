@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月28日更新
+
+## 2025年3月28日 - 編集されたページ
+
+- HeliScript
+    - 組み込み型
+        - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
+            - bool型変数のToString()メソッドの説明を追加
+
+---
+
 ## 2025年3月21日更新
 
 ## 2025年3月21日 - 追加されたページ
