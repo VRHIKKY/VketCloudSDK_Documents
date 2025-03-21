@@ -1037,6 +1037,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/HEOShadow.html"/>
     </url>
     <url>
+        <loc>NoneWorldMakingGuide/HeliscriptCanvas.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/HeliscriptCanvas.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/HeliscriptCanvas.html"/>
+    </url>
+    <url>
         <loc>NoneWorldMakingGuide/ImportAssetStore.html</loc>
         <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
@@ -1051,11 +1058,25 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload.html"/>
     </url>
     <url>
-        <loc>NoneWorldMakingGuide/JsUpload_Sample.html</loc>
+        <loc>NoneWorldMakingGuide/JsUpload_FetchCurrentWeather.html</loc>
         <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload_Sample.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload_Sample.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload_FetchCurrentWeather.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload_FetchCurrentWeather.html"/>
+    </url>
+    <url>
+        <loc>NoneWorldMakingGuide/JsUpload_RestrictEntryTime.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload_RestrictEntryTime.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload_RestrictEntryTime.html"/>
+    </url>
+    <url>
+        <loc>NoneWorldMakingGuide/JsUpload_TutorialScene.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload_TutorialScene.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload_TutorialScene.html"/>
     </url>
     <url>
         <loc>NoneWorldMakingGuide/LightScattering.html</loc>
@@ -1280,13 +1301,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonechangelog/changelog-14.5.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/changelog/changelog-14.5.html"/>
-    </url>
-    <url>
-        <loc>Nonechangelog/changelog-15.1.html</loc>
-        <lastmod>2025-03-21</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonechangelog/changelog-15.1.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/changelog/changelog-15.1.html"/>
     </url>
     <url>
         <loc>Nonechangelog/changelog-3.2.html</loc>
@@ -1751,6 +1765,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_string.html"/>
     </url>
     <url>
+        <loc>Nonehs/hs_struct_hsraycasthit.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_struct_hsraycasthit.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_struct_hsraycasthit.html"/>
+    </url>
+    <url>
         <loc>Nonehs/hs_struct_matrix.html</loc>
         <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
@@ -1798,6 +1819,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_system_function_commondialog.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_system_function_commondialog.html"/>
+    </url>
+    <url>
+        <loc>Nonehs/hs_system_function_cookie.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_system_function_cookie.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_system_function_cookie.html"/>
     </url>
     <url>
         <loc>Nonehs/hs_system_function_gui.html</loc>
@@ -1854,6 +1882,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_system_function_physics.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_system_function_physics.html"/>
+    </url>
+    <url>
+        <loc>Nonehs/hs_system_function_raycast.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_system_function_raycast.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_system_function_raycast.html"/>
     </url>
     <url>
         <loc>Nonehs/hs_system_function_rendering.html</loc>
@@ -3452,6 +3487,13 @@
         <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/HEOShadow.html"/>
     </url>
     <url>
+        <loc>Noneen/WorldMakingGuide/HeliscriptCanvas.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/HeliscriptCanvas.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/HeliscriptCanvas.html"/>
+    </url>
+    <url>
         <loc>Noneen/WorldMakingGuide/ImportAssetStore.html</loc>
         <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
@@ -3466,11 +3508,25 @@
         <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload.html"/>
     </url>
     <url>
-        <loc>Noneen/WorldMakingGuide/JsUpload_Sample.html</loc>
+        <loc>Noneen/WorldMakingGuide/JsUpload_FetchCurrentWeather.html</loc>
         <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload_Sample.html"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload_Sample.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload_FetchCurrentWeather.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload_FetchCurrentWeather.html"/>
+    </url>
+    <url>
+        <loc>Noneen/WorldMakingGuide/JsUpload_RestrictEntryTime.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload_RestrictEntryTime.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload_RestrictEntryTime.html"/>
+    </url>
+    <url>
+        <loc>Noneen/WorldMakingGuide/JsUpload_TutorialScene.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/WorldMakingGuide/JsUpload_TutorialScene.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="NoneWorldMakingGuide/JsUpload_TutorialScene.html"/>
     </url>
     <url>
         <loc>Noneen/WorldMakingGuide/LightScattering.html</loc>
@@ -3695,13 +3751,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/changelog/changelog-14.5.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonechangelog/changelog-14.5.html"/>
-    </url>
-    <url>
-        <loc>Noneen/changelog/changelog-15.1.html</loc>
-        <lastmod>2025-03-21</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/changelog/changelog-15.1.html"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="Nonechangelog/changelog-15.1.html"/>
     </url>
     <url>
         <loc>Noneen/changelog/changelog-3.2.html</loc>
@@ -4166,6 +4215,13 @@
         <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_string.html"/>
     </url>
     <url>
+        <loc>Noneen/hs/hs_struct_hsraycasthit.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_struct_hsraycasthit.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_struct_hsraycasthit.html"/>
+    </url>
+    <url>
         <loc>Noneen/hs/hs_struct_matrix.html</loc>
         <lastmod>2025-03-21</lastmod>
         <changefreq>daily</changefreq>
@@ -4213,6 +4269,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_system_function_commondialog.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_system_function_commondialog.html"/>
+    </url>
+    <url>
+        <loc>Noneen/hs/hs_system_function_cookie.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_system_function_cookie.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_system_function_cookie.html"/>
     </url>
     <url>
         <loc>Noneen/hs/hs_system_function_gui.html</loc>
@@ -4269,6 +4332,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_system_function_physics.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_system_function_physics.html"/>
+    </url>
+    <url>
+        <loc>Noneen/hs/hs_system_function_raycast.html</loc>
+        <lastmod>2025-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/hs/hs_system_function_raycast.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonehs/hs_system_function_raycast.html"/>
     </url>
     <url>
         <loc>Noneen/hs/hs_system_function_rendering.html</loc>
