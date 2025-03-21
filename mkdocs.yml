@@ -22,6 +22,7 @@ theme:
     - header.autohide
     - search.suggest
     - search.highlight
+    - content.code.copy
   footer:
     logo: images/HikkyLogo.png
     copyright: ©HIKKY Co.,Ltd. All rights reserved.
@@ -319,6 +320,7 @@ markdown_extensions:
     - codehilite
     - attr_list
     - pymdownx.details
+    - pymdownx.superfences
 
 nav:
 - Introduction: index.md
