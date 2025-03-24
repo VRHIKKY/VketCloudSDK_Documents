@@ -8,6 +8,13 @@
     - 組み込みクラス・関数
         - [Quaternionクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_struct_quaternion.html)
             - makequaternioneuler関数に注釈を追記
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Area Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCItemAreaCollider.html)
+            - 文言を修正
+    - VKC Node
+        - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCNodeCollider.html)
+            - 画像リンク・文言を修正
 
 ---
 
