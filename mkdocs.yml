@@ -587,6 +587,8 @@ nav:
   - Reading JSON in HeliScript: ExternalAPI/HeliScriptJsonParse.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v15.x:
+        - v15.2: releasenote/releasenote-15.2.md
     - v14.x:
         - v14.5: releasenote/releasenote-14.5.md
         - v14.4: releasenote/releasenote-14.4.md
