@@ -1,5 +1,55 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 26 2025 Update
+
+## March 26 2025 - Edited Page
+
+- HeliScript
+    - Built-in Classes And Functions
+        - [Quaternion class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_struct_quaternion.html)
+            - Added annotation to makequaternioneuler function
+
+---
+
+## March 21 2025 Update
+
+## March 21 2025 - Added Page
+
+- World Creation Guide
+    - [Restrict World Entry Time](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/JsUpload_RestrictEntryTime.html)  
+    - [Fetch Current Weather](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/JsUpload_FetchCurrentWeather.html)  
+
+## March 21 2025 - Edited Page
+
+- World Creation Guide  
+    - [JS Submission Sample](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_Sample.html)  
+        - Changed wording from "Sample World" to "Tutorial Scene."  
+- External API
+    - [Handling Json in HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/HeliScriptJsonParse.html)  
+        - Updated the information for the new SDK.
+---
+
+## March 14 2025 Update
+
+## March 14 2025 - Edited Page
+
+- HeliScript
+    - Built-in Classes And Functions
+        -  [Item class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_class.html)
+            - Added `IsCollisionDetection`
+
+
+## March 14 2025 - Added Page
+- HeliScript
+    - Built-in Classes And Functions
+        - [HSRaycastHIT Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_struct_hsraycasthit.html)
+    - Built-in Functions
+        - [Cookie](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_cookie.html)
+- WorldMakingGuide
+    - [Controlling Canvas Elements with HeliScript](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/HeliscriptCanvas.html)
+
+---
+
 ## March 7 2025 Update
 
 ## March 7 2025 - Added Page
