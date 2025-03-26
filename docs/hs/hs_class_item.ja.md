@@ -916,3 +916,10 @@ SetVolume()で設定した音量を取得します
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### IsCollisionDetection
+
+`public bool IsCollisionDetection()`
+
+アイテム単位で衝突判定が有効かどうかを取得します。  
+trueの場合、レイとItemの当たり判定を行う関数 hsItemRaycast() の対象になります。

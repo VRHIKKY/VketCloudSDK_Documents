@@ -916,4 +916,10 @@ The default value is 0.2.
 
 ??? note "Object types that can call this method"
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
-    
+
+### IsCollisionDetection
+
+`public bool IsCollisionDetection()`
+
+Retrieves whether collision detection is enabled for individual items.  
+If true, the item will be subject to collision detection with a ray using the hsItemRaycast() function.
