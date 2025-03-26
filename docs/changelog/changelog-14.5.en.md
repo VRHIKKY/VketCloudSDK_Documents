@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.5
 
-## March 28 2025 Update
+## March 26 2025 Update
 
-## March 28 2025 - Edited Page
+## March 26 2025 - Edited Page
 
 - HeliScript
     - Built-in Classes And Functions
