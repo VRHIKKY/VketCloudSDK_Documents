@@ -8,6 +8,14 @@
      - [Components / Callback functions](https://vrhikky.github.ioVketCloudSDK_Documents/14.5/en/hs/hs_component.html)
          - Add callbacks for ItemCollider
 
+## March 26 2025 - Added Page
+
+- HeliScript
+    - Built-in Classes And Functions
+        - [HSRaycastHIT Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_struct_hsraycasthit.html)
+    - Built-in Functions
+        - [Raycast](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_raycast.html)
+
 ---
 
 ## March 21 2025 Update
