@@ -39,6 +39,20 @@ Global Function. Gets an Item by the specified name.
 
 Global function. Gets the Item object of where this component itself is attached, by calling this function in the component's constructor, or methods such as Update, OnClickNode, etc.
 
+### hsItemCreateClone
+
+`Item hsItemCreateClone(Item Origin, string Name = "")`
+
+Global function. Creates a clone of the specified item in the same location. The cloneable item type is `object`.  
+Pass the original item object to Origin.  
+Optionally pass the item name you want to set for the clone item to Name. If not specified, a name will be automatically assigned.
+
+### hsItemDestroyClone
+
+`void hsItemDestroyClone(Item item)`
+
+Global function. Deletes the specified clone item. Non-clone items cannot be deleted.
+
 ***
 
 ## Methods
@@ -883,3 +897,23 @@ The sent message is notified to all components of the target Item, but if even o
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetVolume
+
+`public void SetVolume(float Volume)`
+
+Sets the volume.
+
+??? note "Object types that can call this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### GetVolume
+
+`public float GetVolume()`
+
+Gets the volume set by SetVolume().  
+The default value is 0.2.
+
+??? note "Object types that can call this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    
