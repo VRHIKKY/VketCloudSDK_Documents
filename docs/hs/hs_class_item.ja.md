@@ -39,6 +39,20 @@ Item myitem = hsItemGetSelf();
 
 グローバル関数。コンポーネントのコンストラクタや、Update(), OnClickNode() 等のメソッド内から呼び出すことで、コンポーネント自身が所属しているItemインスタンスを取得します。
 
+### hsItemCreateClone
+
+`Item hsItemCreateClone(Item Origin, string Name = "")`
+
+グローバル関数。指定したアイテムのクローンを同じ場所に作成します。クローン可能なアイテムタイプは`object`です。  
+Originにはオリジナルのアイテムオブジェクトを渡します。  
+Nameにはクローンアイテムに設定したいアイテム名を任意で渡します。指定が無い場合は自動的に名前が付けられます。
+
+### hsItemDestroyClone
+
+`void hsItemDestroyClone(Item item)`
+
+グローバル関数。指定したクローンアイテムを削除します。クローン以外のアイテムを削除することはできません。
+
 ***
 
 ## メソッド
@@ -883,3 +897,22 @@ overrides設定を取得します。
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetVolume
+
+`public void SetVolume(float Volume)`
+
+音量を設定します
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### GetVolume
+
+`public float GetVolume()`
+
+SetVolume()で設定した音量を取得します
+初期値は0.2です
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
