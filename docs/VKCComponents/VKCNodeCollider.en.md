@@ -60,4 +60,4 @@ VKC Node Collider is a component to set what kind of collision detection a colli
 The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
 Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md#f3-display-collision) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
 
-![HEOCollider_2](img/HEOCollider_2.jpg)
+![HEOCollider_2](img/VKCItemAreaCollider_03.jpg)
