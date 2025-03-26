@@ -1,6 +1,6 @@
 # Quaternion class
 
-!!! Note Info
+!!! info "Note"
      A class that represents the four elements x, y, z, and w of a quaternion.
 
 ***

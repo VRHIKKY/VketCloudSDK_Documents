@@ -59,7 +59,7 @@ Vket Cloudでは以下のフォーマットのテクスチャ画像が使用で�
 | Show Photo Mode | 写真撮影モードの際、表示するかどうかを変更します |
 | Overrides |ワールド入場時に`Overrides`にて設定された`Material`及び`Texture`がVKC Item Planeにて設定したTextureに代わって使用されます |
 
-!!! note caution
+!!! warning "caution"
     Overrides項目は現在実装中の機能です。<br>
     本機能については今後のアップデートで使い方が更新される予定です。
 

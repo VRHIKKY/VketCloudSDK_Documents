@@ -6,7 +6,7 @@ GUITools is a derivative tool outside of Vket Cloud SDK designed to edit and sav
 
 As preparation, set up the Unity project and install the Vket Cloud SDK according to the procedures in [How to Install Vket Cloud SDK](../AboutVketCloudSDK/SetupSDK_external.md).
 
-!!! caution "Points to Note When Setting Up the Environment"
+!!! warning "Points to Note When Setting Up the Environment"
 
     - The editor version should be 2019.4.31f1
     - Use the 3D template

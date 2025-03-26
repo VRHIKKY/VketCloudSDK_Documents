@@ -61,7 +61,7 @@ This will display only the top-left image. Next, add the VKCNodeUVScroller compo
 
 The “Wait Time” is the duration (in seconds) to wait while displaying, and since we are switching instantly, set “Scroll Time” to 0. The “Step UV List” specifies the UV coordinates to add during switching. For the first step, (0.5, 0) is added, moving to the top-right. Next, it moves to the bottom-left, then to the bottom-right, and finally back to the top-left.
 
-!!! note caution
+!!! warning "caution"
     The top and bottom, as well as the left and right sides of the image, are seamlessly connected.
 
 ![VKCNodeUVScrollerSample03](img/VKCNodeUVScrollerSample03.jpg)
@@ -94,7 +94,7 @@ With this configuration, the image scrolls upward over 2 seconds after being dis
 ### Code Scroll Sample
 HeliScript provides a method called Item.SetUVOffset, which allows you to freely modify the UV offset of a texture associated with an item.
 
-!!! note caution
+!!! warning "caution"
     The method written here is a configuration method that does not use VKCUVScroller.
     If you want to know how to implement HeliScript, see [HeliScript - Overview](../hs/hs_overview.md). 
 

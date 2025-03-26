@@ -13,7 +13,7 @@ For tips on how to place VKC Item Field, see [Tips on using VKC Item Field](../W
 | Load Collider |  | Generates a collider that will load a designated object on enter |
 | UnLoad Collider |  | Generates a collider that will unload a designated object on enter |
 
-!!! note info
+!!! info "Note"
      Multiple VKC Item Fields can be placed in the scene.
 
 !!! note
@@ -81,7 +81,7 @@ VketCloud allows objects to be loaded when entering a specific area after enteri
 1. Open the Unload Collider item and press "Generate Unload Collider" to generate an area collider to be used for loading.
 2. Set the generated collider for unloading as a child object of VKC Item Field and adjust the position and range.
 
-!!! note caution
+!!! warning "caution"
      The set colliders can be deleted from the list by pressing the X button on the right side of each item, but the objects will remain and must be deleted manually.
 
 ---

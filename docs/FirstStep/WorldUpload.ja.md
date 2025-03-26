@@ -122,7 +122,7 @@ SDK Ver14.1から、これまで[Vket Cloud](https://cloud.vket.com/account/worl
 
 ![WorldPublish](img/WorldUpload09.jpg)
 
-!!! note warning
+!!! warning "Note"
     アップロード先ワールドは、アカウント管理画面であらかじめIDだけ作成しておく必要があります。<br>
     リストにワールド名が表示されない場合は、[こちら](https://cloud.vket.com/account/world){target=_blank}の`ワールドを追加`ボタンよりワールドIDを作成してください。
 

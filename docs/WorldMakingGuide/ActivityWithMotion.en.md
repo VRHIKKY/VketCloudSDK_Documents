@@ -4,7 +4,7 @@ Starting from SDK 12, motions can now be set within the activity class, allowing
 
 This page introduces the steps to implement something like "furniture that triggers a motion when clicked" using the activity class.
 
-!!! info Test Environment
+!!! info "Test Environment"
     SDK Version: 12.1<br>
     OS: Windows 10<br>
     Unity: 2019.4.31.f1<br>

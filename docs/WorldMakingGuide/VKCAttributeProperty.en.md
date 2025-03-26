@@ -224,7 +224,7 @@ component exampleC{
 Each Item can have different properties defined.<br>
 If the Item name is wrong on reference, this may lead to unintended behaviors.
 
-!!! note warning
+!!! warning "Note"
     Update: On SDK version 12.x and later, SetProperty will add a new property if it does not exist.<br>
     On SDK Ver9.11, when trying to run SetProperty without a target property, unexpected behavior may occur without error notices.
 

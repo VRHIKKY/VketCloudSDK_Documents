@@ -4,7 +4,7 @@ In Vket Cloud, collision and physics can be simulated by using Unity colliders a
 
 ## How to Use Colliders
 
-!!! note info
+!!! info "Note"
     This article has moved to [How to Use Colliders / tips](./Collider.md).
 
 ## How to Use the Physics Engine
@@ -60,6 +60,6 @@ Normally in Unity there is no cylinder collider, and it is substituted by a caps
 
 ![PhysicsEngine](img/PhysicsEngine_4.jpg)
 
-!!! Notes Info
+!!! info "Notes"
     - Due to the implementation of collision detection in the physics engine, capsule colliders and cylinder colliders, and cylinder colliders and cylinder colliders do not collide.
     - When using a cylinder collider, thin colliders like Plane may penetrate, so you need to use a box for the ground.

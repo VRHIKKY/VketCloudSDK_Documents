@@ -46,7 +46,7 @@ For example, by Build & Running the world the text will be displayed as below:
 | Look at Camera | false |  Make the text face towards the camera at all times |
 | Alpha Blending | true | Lets you use cutout/transparency |
 
-!!! note caution
+!!! warning "caution"
     In the Text property, if you want to insert a line break, specify "\n" in the string.<br>
     If you input any other regular expressions (e.g. tab "\t", line break "\r", backspace "\b"), a build error will occur.
 
@@ -66,7 +66,7 @@ For example, by Build & Running the world the text will be displayed as below:
 | Show Photo Mode | true | Toggles display/hide item when in photo mode |
 | Overrides | | On Entering the world, the text set in this `text` property will be used instead Text in VKC Item Text Plane. |
 
-!!! note caution
+!!! warning "caution"
     The Overrides property is currently under progress.<br>
     Further usage are to be added by future updates.
 

@@ -19,6 +19,6 @@ VKC Node LOD Levelは、LOD Groupが設定されたアセットを分解する�
 | 全て |
 | 無し |
 
-!!! note caution
+!!! warning "caution"
     - デフォルトは「全て」に設定されております。
     - VketCloud上でLOD切り替えができるわけではありません。

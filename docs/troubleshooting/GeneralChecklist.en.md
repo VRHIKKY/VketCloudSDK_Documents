@@ -52,7 +52,7 @@ Vket Cloud SDK --> Clear Cache を選択し、Releaseフォルダーの中身を
 
 4. 「キャッシュされた画像とファイル」にチェックし、[データを削除]をクリックする。
 
-!!! note caution
+!!! warning "caution"
     ※削除対象の期間を全期間にすると確実に全てのキャッシュが削除されますが、Vket Cloud SDK以外のウェブサイトのキャッシュも削除されるためご注意ください。<br>
     ※お使いのブラウザによってキャッシュクリアの手順が異なるため、適宜ブラウザ側のヘルプをご参照ください。
 
@@ -133,7 +133,7 @@ Hierarchyにある、問題があると思われるオブジェクトやスク�
 
 ![GeneralChecklist_11](img/GeneralChecklist_11.jpg)
 
-!!! note caution
+!!! warning "caution"
     SDKの中身を移動させる際は、念のためにバックアップを取ることを**強く**おすすめいたします。
 
 ## Unityエディターの再インストールを行う
@@ -214,7 +214,7 @@ RAM 8GB以上
 
 Google Pixelなら Pixel 5以降
 
-!!! note caution
+!!! warning "caution"
     ※上記のスペックを満たす全ての機種の動作を保証するものではありません。<br>
     ※お使いの端末の使用状況や通信環境などによって正しく挙動しない場合がございますので予めご了承ください。
 

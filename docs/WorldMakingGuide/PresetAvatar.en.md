@@ -26,7 +26,7 @@ By pressing `CreateAvatarFile` in the Avatars tab of [HEOWorldSetting](../VKCCom
 By pressing the +/- on the bottom right of the AvatarFile list, a new article on the preset avatar list will be added/deleted.<br>
 The AvatarFile will not be deleted even if the list article is deleted.
 
-!!! caution "Issue enabling edit on Default AvatarFile"
+!!! warning "Issue enabling edit on Default AvatarFile"
     Following a certain procedure, the issue causing the default AvatarFile(`Vketchan_v1.6_Mtoon_blendshape`) to be editable may be triggered.<br>
     As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
     As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.

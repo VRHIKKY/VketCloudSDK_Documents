@@ -8,7 +8,7 @@
 
 ![ReplaceTexture_2](./img/ReplaceTexture02.jpg)
 
-!!! info 発生環境
+!!! info "発生環境"
     SDKバージョン : 14.4.12<br>
     OS : Windows10<br>
     Unity : 2019.3.6f1<br>

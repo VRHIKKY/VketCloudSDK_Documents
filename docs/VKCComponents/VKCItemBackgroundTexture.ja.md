@@ -39,6 +39,6 @@ Skyboxのように上下左右で画像は変わらず、常に同じ画像が�
 | Auto Loading | true | [動的ローディング](VKCItemField.md)にて使用します。<br> デフォルトはtrueで初回ローディング時に読み込まれます。 |
 | Show Photo Mode | true | 写真撮影モードの際、Activityを表示するかどうかを変更します |
 
-!!! note info
+!!! info "Note"
     使い方の詳細は以下ページをご参照ください。
     - [VKC Item Background Textureの使い方](../WorldMakingGuide/BackgroundTexture.md)

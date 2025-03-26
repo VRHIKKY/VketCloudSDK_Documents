@@ -1,6 +1,6 @@
 # HEOPlayer
 
-!!! note warning
+!!! warning "Note"
     This component has been deprecated on SDK Ver12.0.<br>
     As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 

@@ -145,6 +145,6 @@ This slider value is intended for motion previewing, and will not be reflected o
 
 ![HEOObject_Motion_Preview_Result](img/HEOObject_Motion_Preview_Result.jpg)
 
-!!! note caution
+!!! warning "caution"
     If an heo file from previous SDK versions is designated for preview, the model may not be displayed correctly.<br>
     If such issue happens, please recreate the heo file.
