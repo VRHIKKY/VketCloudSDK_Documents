@@ -130,29 +130,6 @@ component AreaCollider
 }
 ```
 
-## Callbacks - ItemCollider
-
-By defining the OnItemEnterCollider and OnItemLeaveCollider methods as shown below,they will be called when an Item with this component enters or exits the collider of another Item's internal node.  
-Currently, only box collider collision shapes are supported.  
-
-```
-component CollisionTest
-{
-    public void OnItemEnterCollider(int ItemInstanceID, int NodeIndex)
-    {
-        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
-        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
-        hsSystemOutput("[OnItemEnterCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
-    }
-    public void OnItemLeaveCollider(int ItemInstanceID, int NodeIndex)
-    {
-        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
-        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
-        hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
-    }
-}
-```
-
 ## Callback - Unselecting Objects
 
 ### OnUnselectNode
