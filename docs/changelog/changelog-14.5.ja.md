@@ -38,9 +38,6 @@
     - 組み込みクラス・関数
         -  [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_class.html)
             - `IsCollisionDetection`を追記
-    - 組み込み関数
-        - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_camera.html)
-            - hsCameraSetFPSModeとhsCameraGetFPSModeの説明を追加
 
 ## 2025年3月14日 - 追加されたページ
 - HeliScript
