@@ -116,7 +116,6 @@ plugins:
             Movable Clickable Object: クリック判定のある移動オブジェクト
             JS Upload: JS入稿
             Enabling JS Upload Feature: JS入稿機能の有効化
-            Sample JS Upload: JS入稿のサンプル
             Restrict World Entry Time: ワールド入場時間を制限する
             Get Current Weather Using Web API: Web APIを使用し現在の天気を取得する
             JS Upload Tutorial Scene: JS入稿のチュートリアルシーン
@@ -360,7 +359,6 @@ nav:
     - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
     - JS Upload :
       - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
-      - Sample JS Upload: WorldMakingGuide/JsUpload_Sample.md
       - Restrict World Entry Time: WorldMakingGuide/JsUpload_RestrictEntryTime.md
       - Get Current Weather Using Web API: WorldMakingGuide/JsUpload_FetchCurrentWeather.md
       - JS Upload Tutorial Scene: WorldMakingGuide/JsUpload_TutorialScene.md
