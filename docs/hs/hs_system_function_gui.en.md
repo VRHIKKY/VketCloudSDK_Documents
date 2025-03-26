@@ -255,6 +255,12 @@ Adds a button type GUI by searching a Layer by LayerName, with determining wheth
 
 Adds a text type GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.
 
+### hsGetTextAreaContentSize
+
+`void hsGetTextAreaContentSize(string LayerName, string GUIName, ref int width, ref int height)`
+
+Retrieves the original width and height of the text content in a GUI TextArea.
+
 ## Window System
 Enable the creation of modal and modeless windows (hereafter collectively referred to as the window system).
 
