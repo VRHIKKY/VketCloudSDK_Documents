@@ -8,6 +8,10 @@
     - Built-in Classes And Functions
         - [Quaternion class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_struct_quaternion.html)
             - Added annotation to makequaternioneuler function
+- VKC Components
+    - VKC Node
+        - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCItemAreaCollider.html)
+            - Fixed image link
 
 ---
 
