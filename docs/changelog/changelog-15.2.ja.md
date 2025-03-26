@@ -2,6 +2,12 @@
 
 ## 2025年3月26日更新
 
+## 2025年3月26日 - 編集されたページ
+
+ - HeliScript 
+     - [コンポーネント/コールバック関数](https://vrhikky.github.ioVketCloudSDK_Documents/14.5/hs/hs_component.html)
+         - ItemColliderのコールバックを追記
+
 ## 2025年3月26日 - 追加されたページ
 
 - HeliScript
@@ -9,6 +15,8 @@
         - [HSRaycastHIT Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_struct_hsraycasthit.html)
     - 組み込み関数
         - [Raycast](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_raycast.html)
+
+---
 
 ## 2025年3月21日更新
 
