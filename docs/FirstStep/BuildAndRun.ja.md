@@ -9,7 +9,7 @@ Vket Cloud SDKでシーンをビルドするには、[必要コンポーネン�
   
 ![BuildAndRun](img/BuildAndRun.jpg)  
 
-!!! note question "ビルドが出来ない場合"
+!!! question "ビルドが出来ない場合"
     さまざまな要因でビルドに失敗している可能性があります。エラー事例をまとめた[トラブルシューティング](../troubleshooting/BuildError.md)をご覧ください。
 
 !!! warning "エラーが起きた場合は"
@@ -37,7 +37,7 @@ Vket Cloud SDKでシーンをビルドするには、[必要コンポーネン�
 
 ![BuildAndRun](img/buildsuccess.jpg)  
 
-!!! note tip "キャッシュクリアについて"
+!!! tip "note" "キャッシュクリアについて"
     Vket Cloud SDKのビルド時に発生するキャッシュは、基本的にはビルド毎に上書きされるため消去は不要です。<br>
     SDKのバージョンアップ直後などにおいて稀にキャッシュが原因のビルドエラーが発生するため、その際は以下より手動でのキャッシュクリアをお試しください。<br>
     - Vket Cloud SDK > キャッシュクリア<br>

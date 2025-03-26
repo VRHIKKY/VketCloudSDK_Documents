@@ -15,7 +15,7 @@
 
 詳しい使い方については [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.md)のコンポーネントページを参照してください。
 
-!!! 注意点 Info
+!!! info "注意点 "
     アクションを設定する上で重要なことは、以下のとおりです。
     
     - アクションはリストの上から順番に実行されます。

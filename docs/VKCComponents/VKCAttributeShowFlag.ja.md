@@ -14,7 +14,7 @@ VKC Item Field上のオブジェクトを表示/非表示にする場合に利�
 
 ![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.jpg)
 
-!!! note info
+!!! info "Note"
     - ActionTriggerの[Show/HideNode](../Actions/Node/ShowHideNode.md)でも、動的に表示/非表示にすることができます。
     - 非表示にするのは見た目のみで、コライダーなどの判定は機能します。
 

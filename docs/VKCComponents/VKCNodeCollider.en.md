@@ -33,7 +33,7 @@ VKC Node Collider is a component to set what kind of collision detection a colli
 | `Reflection Probe` | Enable reflection probes on touch. |
 | `in View` | Handled when you want to judge whether or not the object entered the field of view |
 
-!!! note caution
+!!! warning "caution"
     If collider type is set to other than `Collider` (i.e. Clickable, Area, Occlusion, Reflection Probe, inView), the player will not collide with the collider.
 
 ## Collider target
@@ -44,7 +44,7 @@ VKC Node Collider is a component to set what kind of collision detection a colli
 | `Avatar Only` | Collision detection is enabled only for avatars. |
 | `Self Player Only` | Collision detection is enabled only for the player themselves. |
 
-!!! note caution
+!!! warning "caution"
     The collider target setting is only effective when the collider type is `Collider`.
     
 ## Grounding Detection

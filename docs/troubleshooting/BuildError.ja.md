@@ -64,7 +64,7 @@ Package Managerなどからインポートしたライブラリまたはスク�
 
 このケースでは後から追加した対象のライブラリをインポートし直すことで解消される場合があります。
 
-!!! note caution
+!!! warning "caution"
         稀に必須パッケージであるEditorTutorialSystemが自動インポートされず、ビルドエラーの原因となる場合があるため、その際は[Package Manager](../AboutVketCloudSDK/SetupSDK_external.md)を通じて該当のパッケージを導入してください。
 
 ### デバッグコンソール / DebugModeを使用する

@@ -19,7 +19,7 @@ Select "3D" as the template.
 
 ## Step 2. Register Registry information
 
-!!! note caution
+!!! warning "caution"
     On the release of Version 9.3, the SDK installation registry has been changed to the install wizard.<br>
     If you want to install the install wizard on an existing project, you **must** create a new registry by selecting "+", and **do not overwrite** the existing SDK registry.<br>
     After installing the install wizard, proceed to [Installing a specified version / Updating an existing SDK](#installing-a-specified-version-updating-an-existing-sdk).
@@ -135,7 +135,7 @@ Likewise above, check the Configuration in the Project Settings and change the L
 
 ### Setting API compatibility level (Only for Unity 2019.4)
 
-!!! note caution
+!!! warning "caution"
     For Unity 2022 or later, this setting is not required.
     SDK 13.7 and later versions support both Unity 2019 and Unity 2022.
 
@@ -153,7 +153,7 @@ Likewise above, check the Configuration in the Project Settings and change the L
 
 5\. By selecting "Next", the version selection window will appear.<br> The SDK version can be chosen from stable, latest, archive versions.
 
-!!! note caution
+!!! warning "caution"
     The archive versions are deprecated and planned to be unaccessible in the near future.<br>
     Do not use these versions for setting up new world projects.
 
@@ -192,7 +192,7 @@ For a project with an existing SDK, the SDK Version Manager can be used for swit
 
 2\. Select the new version to be installed, and press the "Install" button.
 
-!!! note caution
+!!! warning "caution"
     The archive versions are deprecated and planned to be unaccessible in the near future.<br>
     Do not use these versions for setting up new world projects.
 
@@ -208,15 +208,15 @@ For a project with an existing SDK, the SDK Version Manager can be used for swit
 
 The SDK manual and community discord server can be accessed from this window.
 
-!!! note caution
+!!! warning "caution"
       On updating an existing SDK, Components may be gone missing after the update.<br>
       We strongly recommend to take a backup of the pre-update project by duplicating files.
 
-!!! note caution
+!!! warning "caution"
     If issues such as build errors appear on updating the SDK, please refer to the page below:<br>
     [Version Update Troubleshooting](../troubleshooting/VersionUpdateTroubleshooting.md)
 
-!!! note caution
+!!! warning "caution"
     The version switching methods below remains to be usable, using the version manager is recommended.
 
 ### Version switching via Package Manager

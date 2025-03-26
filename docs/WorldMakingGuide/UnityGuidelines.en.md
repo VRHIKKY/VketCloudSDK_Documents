@@ -124,7 +124,7 @@ When using audio files, please follow the formats listed below.
 | Sampling rate | 44100 Hz |
 | Bit rate | 160 kbps |
 
-!!! note caution
+!!! warning "caution"
     There are a few important points to note regarding BGM:
 
     - When playing videos, the audio from the video will take priority.

@@ -69,7 +69,7 @@ Missingになったコンポーネントについては該当のコンポーネ�
 - VKC Node LOD Level/HEOLODLevel
 - VKC Node UV Scroller/HEOUVScroller
 
-!!! note caution
+!!! warning "caution"
     Ver5.4からVer9.3へのアップデート時においてはHEOWorldSetting > Avatars > Avatar Fileの設定が欠落する恐れがあるため、欠落している場合は再設定をお願いいたします。
 
 HEOWorldSetting > Avatars > Avatar Fileにて空欄がある、Avatar Fileが1つも設定されていない場合はビルドエラーが発生したり、初期状態のアバターが表示されない状態となります。<br>
@@ -102,7 +102,7 @@ Ver12.3以降、これまで[HEOWorldSetting](../VKCComponents/HEOWorldSetting.m
 
 ![VersionUpdateTroubleshooting_3](img/VersionUpdateTroubleshooting_3.jpg)
 
-!!! note caution
+!!! warning "caution"
     バージョンアップ後にブラウザ側のキャッシュが原因でHeliScript・ギミックが動かない場合があります。<br>
     該当の現象が発生した際はブラウザのキャッシュクリアをお試しください。
 

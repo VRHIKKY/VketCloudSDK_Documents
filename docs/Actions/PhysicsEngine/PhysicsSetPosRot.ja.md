@@ -20,6 +20,6 @@
 | Target | アクションを適応する物理オブジェクトを指定してください。 |
 | Rotation | ワールド座標系での回転を指定してください。 |
 
-!!! Note Info
+!!! info "Note"
     物理エンジンが有効なオブジェクトに対してのみ有効です。
     物理エンジンの使い方については[PhysicsEngine](../../WorldMakingGuide/PhysicsEngine.md)を参照ください。

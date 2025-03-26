@@ -25,6 +25,6 @@ Vket Cloudでは、**①Vket Cloud公式サイトを使用する方法**と**②
 8. ワールドにアバターが反映されます。
 ![SetupAvatar_6](./img/SetupAvatar_07.jpg)
 
-!!! note tip
+!!! tip "note"
     Avatar Maker（[こちら](https://avatarmaker.vket.com/edit/){target=_blank}）を使用して自作VRMを作成することもできます。モデリングソフト等で作成が難しい方は、ぜひこちらのサービスをご利用ください。<br>
     また、ワールド内にて選択できるプリセットアバターを追加したい場合は[プリセットアバターを追加する](../WorldMakingGuide/PresetAvatar.md)をご参照ください。

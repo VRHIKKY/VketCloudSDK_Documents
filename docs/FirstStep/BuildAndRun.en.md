@@ -8,7 +8,7 @@ To build a scene with Vket Cloud SDK, make sure you have placed the [required co
   
 ![BuildAndRun](img/BuildAndRun.jpg)
 
-!!! note question "If you can't build"
+!!! question "If you can't build"
      There may be various reasons causing the build error. Please refer to [Troubleshooting](../troubleshooting/BuildError.md).
 
 !!! warning "Troubleshooting Errors"
@@ -45,7 +45,7 @@ If the build succeeds, the browser will automatically open. Please check if the 
 
 ![BuildAndRun](img/buildsuccess.jpg)
 
-!!! note tip "Clear Cache"
+!!! tip "note" "Clear Cache"
     The build cache stored in the Vket Cloud SDK will be overwrited every build, therefore clearing cache is unrequired.<br>
     However, some build errors may be related to the cache in rare cases such as after upgrading the SDK, so consider clearing cache in such situation.<br>
     - Vket Cloud SDK > Clear Cache<br>

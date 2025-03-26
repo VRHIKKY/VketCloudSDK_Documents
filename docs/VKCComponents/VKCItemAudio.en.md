@@ -55,7 +55,7 @@ When setting an audio file, please follow the format below:
 | Sampling rate | 44100 Hz |
 | Bit rate | 160 kbps |
 
-!!! note caution
+!!! warning "caution"
     Upon using VKC Item Audio for playing BGM, consider the following:
 
     - When a video file is playing, the video audio will be prioritized.

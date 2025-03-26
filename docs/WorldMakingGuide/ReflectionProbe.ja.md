@@ -2,7 +2,7 @@
 
 (旧題：反射を映り込ませるには)
 
-!!! note Info
+!!! info "Note"
     リフレクションプローブとは何か / 基本的な使い方については、Unityの公式ドキュメント等([こちら](https://docs.unity3d.com/ja/2019.4/Manual/class-ReflectionProbe.html){target=blank})をご覧ください。
 
 Vket Cloudで使用されるリフレクションプローブは、プリミティブ単位ではなくヒエラルキー上のオブジェクト単位で決定されます。

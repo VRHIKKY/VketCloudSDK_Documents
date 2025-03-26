@@ -18,7 +18,7 @@ Vket Cloud SDKをインストールするには、はじめにUnityのPackage Ma
 
 ## Step 2. レジストリ情報を登録する  
 
-!!! note caution
+!!! warning "caution"
     Version 9.3リリース以降、Vket Cloud SDK導入時に入力するレジストリがインストールウィザードのものに変更となりました。<br>
     既存のプロジェクトにインストールウィザードを導入する際は**必ず**「+」ボタンを選択して新規のレジストリを追加し、SDKのレジストリを上書きしないようご注意ください。<br>
     インストールウィザードをインストールした後、[任意のバージョンの導入・既存バージョンSDKのアップデート](#sdk)に移行してください。
@@ -144,7 +144,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 5\.「次へ」ボタンを押すと、バージョン選択画面が表示されます。<br>安定版、最新版、バージョンアーカイブからバージョンを選択できます。
 
-!!! note caution
+!!! warning "caution"
     バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
 
   ![SetupSDK_External](img/SetupSDK_External_18.jpg)
@@ -182,7 +182,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 2\. バージョン選択画面でバージョンを選択し、インストールボタンを押してください。
 
-!!! note caution
+!!! warning "caution"
     バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
 
 ![SetupSDK_External](img/SetupSDK_External_24.jpg)
@@ -197,15 +197,15 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。
 
-!!! note caution
+!!! warning "caution"
       既存のSDKのバージョンアップを行う際、アップデート後にComponentが欠落する現象が確認されています。<br>
       バージョンアップを行う際はプロジェクトの複製などによってバージョンアップ前の状態のバックアップを取ることを強くおすすめします。
 
-!!! note caution
+!!! warning "caution"
     SDKアップデート後にビルドエラー等の不具合が発生する場合は以下のページをご確認ください。
     [バージョンアップ後によくあるトラブル](../troubleshooting/VersionUpdateTroubleshooting.md)
 
-!!! note caution
+!!! warning "caution"
     以下にて解説しているPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えは引き続き利用可能ですが、基本的にはSDKバージョンマネージャーの利用を推奨します。<br>
 
 ### Package Managerによるバージョン切り替え

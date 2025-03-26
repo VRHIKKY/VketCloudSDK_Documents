@@ -1,6 +1,6 @@
 # Matrix クラス
 
-!!! Note Info
+!!! info "Note"
     4x4の行列を表現するクラス。
 
 ***

@@ -1,6 +1,6 @@
 # Reflection Probe
 
-!!! note Info
+!!! info "Note"
      For basic functions of reflection probes, please see Unity's official documentation ([here](https://docs.unity3d.com/en/2018.4/Manual/class-ReflectionProbe.html){target=blank})
 
 In Vket Cloud, reflection probes are determined per object in the hierarchy, not per primitive.

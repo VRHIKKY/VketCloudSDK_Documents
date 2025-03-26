@@ -3,7 +3,7 @@ Since SDK12, it has become possible to set UI images inside activity classes, al
 
 This page explains how to create an activity class that shows a UI when clicked.
 
-!!! info Verification Environment
+!!! info "Verification Environment"
     SDK Version: 12.1<br>
     OS: Windows 10<br>
     Unity: 2019.4.31.f1<br>
@@ -17,7 +17,7 @@ Add a directory structure for Canvas-related files inside the activity class, si
 The directory structure for the activity class with the added Canvas folder is shown below.  
 *The added parts are highlighted in bold.*  
 
-!!! info Folder Structure
+!!! info "Folder Structure"
     ActivityClassFile  
     ┣**📂Canvas**  
     ┃┣**📂HeliScript**  

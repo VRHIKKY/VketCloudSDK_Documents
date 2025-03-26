@@ -123,7 +123,7 @@ When you create a new World ID, it is initially set as a private world. If you w
 
 ![WorldPublish](img/WorldUpload09.jpg)
 
-!!! note warning
+!!! warning "Note"
      To upload the world data, the world ID must be created in advance on the account management screen. If you don't see your world name in the list, please create a world ID from [here](https://cloud.vket.com/en/account/world){target=_blank}.
 
 ![CreateWorldID](img/WorldUpload10.jpg)

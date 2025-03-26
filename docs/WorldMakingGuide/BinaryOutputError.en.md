@@ -3,7 +3,7 @@
 ## Issue
 During loading after a build, the console displays the error "Binary output failed," causing the application to freeze.
 
-!!! info Environment Details
+!!! info "Environment Details"
     SDK Version: 13.7<br>
     OS: Windows<br>
     Unity: 2022.3.6f1<br>

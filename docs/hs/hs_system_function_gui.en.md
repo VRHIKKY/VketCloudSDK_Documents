@@ -1,6 +1,6 @@
 # built-in functions - GUI
 
-!!! Note Info
+!!! info "Note"
     Utility functions that manipulate GUI elements.
 
 ***

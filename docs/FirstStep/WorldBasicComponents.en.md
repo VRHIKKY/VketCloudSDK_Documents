@@ -16,7 +16,7 @@ For more details about these settings, see [Vket Cloud Settings - Overview](../V
 
      ![AddEssentialObjects](img/AddEssentialObjects.jpg)
   
-!!! note question
+!!! question "Note"
      - If you are continuously returning to the initial spawn point,
 
      the issue may be caused by unintentional respawns. Try adjusting the height (y-axis) of DespawnHeightSettings and the position of PlayerSettings.

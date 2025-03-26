@@ -68,7 +68,7 @@ The components listed below may potentially be shown as missing:
 - VKC Node LOD Level/HEOLODLevel
 - VKC Node UV Scroller/HEOUVScroller
 
-!!! note caution
+!!! warning "caution"
     When updating from Ver5.4 to Ver9.3, the HEOWorldSetting > Avatars > Avatar File settings may be missing, set the file by the procedure below on such occasion.
 
 If the HEOWorldSetting > Avatars > Avatar File settings is empty, or has no contents, it may lead to build errors or no avatars displayed on default.<br>
@@ -102,7 +102,7 @@ This can be solved by clearing the cache by Vket Cloud SDK > Clear Cache.
 
 ![VersionUpdateTroubleshooting_3](./img/VersionUpdateTroubleshooting_3.jpg)
 
-!!! note caution
+!!! warning "caution"
     HeliScript/gimmicks may not work due to browser cache after version switching.<br>
     If such issue happens, try clearing the browser cache.
 

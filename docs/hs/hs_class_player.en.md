@@ -1,6 +1,6 @@
 # Player class
 
-!!! Note Info
+!!! info "Note"
      The Player class represents your own player (avatar).
 
 ## class definition

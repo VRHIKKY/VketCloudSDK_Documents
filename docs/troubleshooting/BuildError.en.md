@@ -65,7 +65,7 @@ Sometimes the build error may be caused by library or script imported from Packa
 
 In such cases, the error can be fixed by reimporting the newly imported library that is likely to be the cause.
 
-!!! note caution
+!!! warning "caution"
         As the EditorTutorialSystem package may rarely fail to be imported automatically, causing build errors, add the package below using the [Package Manager](../AboutVketCloudSDK/SetupSDK_external.md) on such occurrence.
 
 ### Using the Debug Console / DebugMode

@@ -61,7 +61,7 @@
 
 「Wait Time」は表示待ちしている時間（秒）で、即時切り替えるので「Scroll Time」は０にします。 「Step UV List」は切り替えていく際に加算していくUV座標で、まず１回目は(0.5, 0)が加算されるので、右上に移動し、次は左下に、最後に右下に移動し、また左上に戻ります。
 
-!!! note caution
+!!! warning "caution"
     画像の上下と左右はそれぞれ繋がった状態になっています
 
 ![VKCNodeUVScrollerSample03](img/VKCNodeUVScrollerSample03.jpg)
@@ -93,7 +93,7 @@
 
 ### コードスクロールサンプル
 HeliScriptには、Item.SetUVOffsetというメソッドが用意されており、使用することで、アイテムの持つテクスチャのUVOffsetを自由に変更することができます。
-!!! note caution
+!!! warning "caution"
     こちらで紹介している方法は、VKCNodeUVScrollerコンポーネントを使用しない設定方法になります。
     HeliScriptの実装方法については、[HeliScript概要](../hs/hs_overview.md)をご覧ください。
 

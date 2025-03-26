@@ -11,7 +11,7 @@ By using Actions, you can implement basic gimmicks like:
 - Play [Motion](./Motion/Motion.md)
 - [Play/Stop Item](./Item/PlayStopItem.md) such as Audio, Particle ...etc
 
-!!! Note Info
+!!! info "caution"
     Keep in mind these points when setting up your Actions:
 
     - Actions are executed in order from the top

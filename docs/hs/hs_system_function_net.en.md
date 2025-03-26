@@ -1,7 +1,7 @@
 
 # Built-in functions - network
 
-!!! Note Info
+!!! info "Note"
      Send arbitrary data to all players in the room.
 
      There are two ways to send data to the player: custom states and custom data.
