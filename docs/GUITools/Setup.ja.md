@@ -8,7 +8,7 @@ Vket Cloud SDK外の派生ツールとして、Vket Cloudにて制作したワ�
 
 下準備として、[Vket Cloud SDKの導入方法](../AboutVketCloudSDK/SetupSDK_external.md)における手順に沿ってUnityプロジェクトのセットアップとVket Cloud SDKのインストールを行います。
 
-!!! caution "環境導入時の注意点"
+!!! warning "環境導入時の注意点"
 
     - エディターバージョンは2019.4.31f1になっている
 

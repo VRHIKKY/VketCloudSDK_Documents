@@ -19,7 +19,7 @@ Vket Cloudでは以下のフォーマットのテクスチャ画像が使用で�
 
 また、SDKでは画像の変換ツールとして[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)を用意しています。
 
-!!! caution "Sprite Rendererについて"
+!!! warning "Sprite Rendererについて"
     Vket CloudではUnityの[Sprite Renderer](https://docs.unity3d.com/ja/2019.4/Manual/class-SpriteRenderer.html){target=_blank}に対応しておりません。
 
 ## テクスチャ圧縮
@@ -37,7 +37,7 @@ Vket CloudではUnityのリフレクションプローブを使用すること�
 
 ![Rendering_2](../VKCComponents/img/HEOWorldSetting_Rendering_2.jpg)
 
-!!! caution "Realtime Lightについて"
+!!! warning "Realtime Lightについて"
     Vket CloudではRealtime Modeのライトに対応しておりません。必ずMixedまたはBakedに変更してご使用ください。
 
 ## ライトマップ
@@ -114,7 +114,7 @@ Vket Cloudにてアバターを使用するには、1. [My Vketにてマイア�
 
 2. [プリセットアバターを追加する](../WorldMakingGuide/PresetAvatar.md)
 
-!!! caution "DefaultのAvatarFileが編集できる現象について"
+!!! warning "DefaultのAvatarFileが編集できる現象について"
     特定の手順によって、デフォルトで設定されているAvatarFile(`Vketchan_v1.6_Mtoon_blendshape`)の設定が編集できる現象が確認されています。<br>
     デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
     この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。

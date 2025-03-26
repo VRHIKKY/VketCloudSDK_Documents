@@ -27,7 +27,7 @@ Get a Player instance of yourself.
 
 Get a Player instance according to the PlayerID.
 
-!!! caution "Change of feature for calling Player class functions"
+!!! warning "Change of feature for calling Player class functions"
     On SDK Ver12.x and later versions, calling Player class functions within the constructor has been disabled. <br>
     In the example below, a bool variable in the Update function is used to obtain the Player instance outside the constructor.
 

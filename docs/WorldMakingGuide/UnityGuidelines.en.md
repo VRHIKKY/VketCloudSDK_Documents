@@ -16,7 +16,7 @@ On Vket Cloud, textures fitting the format below can be used:
 - 80MB or less in png
 As a conversion tool, the SDK has [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md) for use.
 
-!!! caution "Using Sprite Renderer"
+!!! warning "Using Sprite Renderer"
     On Vket Cloud, the Unity [Sprite Renderer](https://docs.unity3d.com/2019.4/Manual/class-SpriteRenderer.html){target=_blank} cannot be used.
 
 ## Texture Compression
@@ -34,7 +34,7 @@ To express light intensity, multiply the `Directional Light`'s color by using th
 
 ![Rendering_2](../VKCComponents/img/HEOWorldSetting_Rendering_2.jpg)
 
-!!! caution "Using Realtime Lights"
+!!! warning "Using Realtime Lights"
     Vket Cloud disallows use of Realtime Mode lights. Please switch to Mixed or Baked.
 
 ## Lightmap
@@ -109,7 +109,7 @@ For instructions on each setup and usage, refer to the pages below.
 
 2. [Adding Preset Avatars](../WorldMakingGuide/PresetAvatar.md)
 
-!!! caution "Issue enabling edit on Default AvatarFile"
+!!! warning "Issue enabling edit on Default AvatarFile"
     Following a certain procedure, the issue causing the default AvatarFile(`Vketchan_v1.6_Mtoon_blendshape`) to be editable may be triggered.<br>
     As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
     As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.

@@ -41,7 +41,7 @@ On Vket Cloud SDK later than Ver12.3, Reflection Probes located in the scene wil
 
     ![ReflectionProbe_Setup_5](img/ReflectionProbe_Setup_5.jpg)
 
-!!! caution "Precautions on exporting reflection probes"
+!!! warning "Precautions on exporting reflection probes"
 
      - When using Reflection Probe on larger objects (floors, walls, objects with huge faces), set the baking cubemap to a higher resolution (e.g. 2048). This is because the image quality drops significantly when reflecting on a large object.
 
@@ -67,7 +67,7 @@ In VketCloud, you can optionally use Box Projection of Unity's reflection probe.
 
 ## (Outdated) How to export reflection probes
 
-!!! caution "Deprecation of HEOReflectionProbe"
+!!! warning "Deprecation of HEOReflectionProbe"
     On Ver12.3, the HEOReflectionProbe component has been deprecated.<br>
     The instructions below are solely for archive purpose.
 

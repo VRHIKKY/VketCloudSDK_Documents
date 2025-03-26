@@ -7,7 +7,7 @@ To install the Vket Cloud SDK, the Unity Package Manager and the Vket Cloud SDK 
 Open a project created using a supported Unity version ([Unity Pre-prep](OperatingEnvironment.md){target=_blank}) or create a new project.
 Select "3D" as the template.
 
-!!! caution "Notes about project names and path (directory) names"
+!!! warning "Notes about project names and path (directory) names"
     If a space is included in the project / project path (directory) name, it may cause build errors and other unexpected issues. <br>
     Also avoid using full-width characters such as CJK characters.
 
@@ -101,7 +101,7 @@ If Unity 2022 or later is installed, complete the following settings
 
 ### Setting Standard Shader Quality
 
-!!! caution "Setting Standard Shader Quality"
+!!! warning "Setting Standard Shader Quality"
     On Ver12.3 and later versions, setting the standard shader quality has been added as a required setting.<br>
     If not set the SDK will cause a build error, so make sure to set on install.
 
@@ -244,12 +244,12 @@ By editing the version number on the right side of `"com.hikky.VketCloudSDK"`, t
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! caution "Solution to Vket Cloud SDK not showing on Unity menu"
-      If Vket Cloud SDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
-      One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
-      If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
+!!! warning "Solution to Vket Cloud SDK not showing on Unity menu"
+    If Vket Cloud SDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
+    One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
+    If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
 
-      As the EditorTutorialSystem may also rarely fail to be imported automatically, add the package below following the instructions on [Step 2.](#step-2-register-registry-information) on such occurence.
+    As the EditorTutorialSystem may also rarely fail to be imported automatically, add the package below following the instructions on [Step 2.](#step-2-register-registry-information) on such occurence.
 
 |  item  |  value  |
 | ---- | ---- |

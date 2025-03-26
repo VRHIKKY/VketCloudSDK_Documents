@@ -19,7 +19,7 @@ This can be caused by several reasons, but the common issues are the following:
 | The directory path / file name in your Unity Project contains spaces or full-width characters | Delete any spaces or double-byte characters. |
 | HeliScript Errors | Please see the [Error Log](#checking-the-error-log) to solve the issue. |
 
-!!! caution "First build on Mac environments"
+!!! warning "First build on Mac environments"
     Depending on your Mac environment, the first Build and Run may result to display "Can't Find the Server" or cause a Build Error.<br>
     If this issue happens, try Build and Run again or reload the browser to solve the issue.
 
@@ -54,7 +54,7 @@ The info on the console is not always linked with Vket Cloud's build error, but 
 
 ![DeveloperToolConsole](img/DeveloperToolConsole.jpg)
 
-!!! caution "How to check HeliScript function errors while loading"
+!!! warning "How to check HeliScript function errors while loading"
     On SDK Ver13.4 and later versions, the [Debug Mode's](../WorldEditingTips/DebugMode.md) message window showing HeliScript errors during world loading has been omitted as part of UI adjustments.<br>
     If the world loading stops, please check if any errors are happening by opening the console tab on the browser's Developer Mode.<br>
     Please note that the debug message window will appear as previous SDK versions after world loading.

@@ -6,7 +6,7 @@ Vket Cloud SDKをインストールするには、はじめにUnityのPackage Ma
 
 対応しているバージョン（[動作環境](OperatingEnvironment.md){target=_blank}）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。
 
-!!! caution "プロジェクト名・プロジェクトパスの名前について"
+!!! warning "プロジェクト名・プロジェクトパスの名前について"
     プロジェクト名およびプロジェクトディレクトリにスペースを入れるとビルドに失敗する場合があります。<br>
     また、日本語など2バイト文字の使用も避けることをおすすめします。
 
@@ -96,7 +96,7 @@ Unity 2022の場合、3つの設定を完了させてください。
 
 ### Standard Shader設定の変更
 
-!!! caution "Standard Shader設定の変更について"
+!!! warning "Standard Shader設定の変更について"
     SDK Ver12.3以降はStandard Shader設定の変更も必須となりました。<br>
     設定されていない場合はビルドエラーが発生するため、導入時に必ず設定してください。
 
@@ -128,7 +128,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 ### API Compatibility Level (API互換性レベル)の変更 (Unity 2019.4のみ)
 
-!!! caution "API Compatibility Levelの変更について"
+!!! warning "API Compatibility Levelの変更について"
     Unity 2022以降はAPI Compatibility Levelの変更は不要です。
     SDK13.7以降、Unity 2019とUnity 2022の両方に対応しております。
 
@@ -233,11 +233,11 @@ manifest.json内の`"com.hikky.VketCloudSDK"`の右側を使用したいバー�
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! caution "UnityメニューにてVket Cloud SDKが表示されない場合は"
-      UnityのメニューにVket Cloud SDKが表示されない場合は、再起動すると表示される場合があります。<br>
-      上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
+!!! warning "UnityメニューにてVket Cloud SDKが表示されない場合は"
+    UnityのメニューにVket Cloud SDKが表示されない場合は、再起動すると表示される場合があります。<br>
+    上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
 
-      また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際はStep 2.と同じ手順で以下のパッケージを導入してください。
+    また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際はStep 2.と同じ手順で以下のパッケージを導入してください。
 
 |  項目  |  値  |
 | ---- | ---- |

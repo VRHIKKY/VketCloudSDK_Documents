@@ -26,7 +26,7 @@ Vket Cloud SDKではAvatarFileというファイルにアバター情報を設�
 AvatarFileリスト右下の +/- を押すことで、プリセットアバターのリストに項目を追加/削除することができます。<br>
 リストから削除した場合でも、元のAvatarFileのデータが残ります。
 
-!!! caution "DefaultのAvatarFileが編集できる現象について"
+!!! warning "DefaultのAvatarFileが編集できる現象について"
     特定の手順によって、デフォルトで設定されているAvatarFile(`Vketchan_v1.6_Mtoon_blendshape`)の設定が編集できる現象が確認されています。<br>
     デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
     この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。

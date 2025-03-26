@@ -31,7 +31,7 @@ VKC Item Activityはアクティビティを使用する際に設定するコン
 | .json | アクティビティの情報をまとめたjsonファイルを指定します。|
 | Overrides | 各アクティビティに定義されている設定項目を編集します。 |
 
-!!! caution "Scene Previewについて"
+!!! warning "Scene Previewについて"
     `Scene Preview`を有効にすると、Scene内でアクティビティのプレビュー用オブジェクトが表示され、このオブジェクトの座標・大きさ・角度などを編集することができます。<br>
     この操作による変更はビルド時には**元に戻り**、VKC Item Activityが付いているオブジェクトのTransform値が参照されるためご注意ください。
 

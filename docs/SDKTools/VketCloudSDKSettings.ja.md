@@ -24,7 +24,7 @@ Buildタブでは、ビルド時にワールドを構成するファイルに対
 
 Run Serverタブでは、ローカルサーバー関連の設定が編集できます。
 
-!!! caution "Run Serverについて"
+!!! warning "Run Serverについて"
     本機能は内部開発者向けの機能となっております。
 
 ## Language
@@ -40,7 +40,7 @@ Languageタブでは、SDKに関する表示言語を選択できます。<br>
 
 Extensionsタブでは、拡張パッケージを選択してインポートできます。
 
-!!! caution "Extensionsについて"
+!!! warning "Extensionsについて"
     本機能は内部開発者向けの機能となっております。
 
 ## Package Info

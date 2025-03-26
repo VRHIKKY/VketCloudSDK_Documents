@@ -11,16 +11,16 @@ To build a scene with Vket Cloud SDK, make sure you have placed the [required co
 !!! note question "If you can't build"
      There may be various reasons causing the build error. Please refer to [Troubleshooting](../troubleshooting/BuildError.md).
 
-!!! caution "Troubleshooting Errors"
+!!! warning "Troubleshooting Errors"
     If an error occurs when running a HeliScript during world loading or by trigger, the error will be displayed on the debug log and browser console.<br>
     Please enable the [Debug Mode](../WorldEditingTips/DebugMode.md) to show the debug log.<br>
     As the debug log will be hidden during world loading, please see the [Browser Console](../troubleshooting/BuildError.md#checking-the-error-log) for checking the reason of loading error.
 
-!!! caution "Login and API connection are not available on local build"
+!!! warning "Login and API connection are not available on local build"
     In the local environment, the login function and API connection function are not available.<br>
     If the function requires connection with the API, please upload the world to check.
 
-!!! caution "Login and API connection are not available on local build"
+!!! warning "Login and API connection are not available on local build"
     In the local environment, the login function and API connection function are not available.<br>
     If the function requires connection with the API, please upload the world to check.
     
