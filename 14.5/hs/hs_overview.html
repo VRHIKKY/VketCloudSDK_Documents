@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6642,8 +6596,6 @@
       
         
       
-        
-      
     
     
     
@@ -6840,27 +6792,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6877,8 +6808,6 @@
   
     
     
-      
-        
       
         
       
@@ -7244,27 +7173,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11600,7 +11508,7 @@ Inspector画面にてAdd Component &gt; VKC Attribute Scriptと選択してコ�
 <h3 id="4-heliscript">4. HeliScriptを書く</h3>
 <p>いよいよHeliScript本体を書いていきます。<br>
 HelloWorld.hsの実装として以下に例を示します。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">//コンポーネント</span>
+<div class="highlight"><pre><span></span><code><span class="c1">//コンポーネント</span>
 <span class="n">component</span><span class="w"> </span><span class="n">HelloWorld</span>
 <span class="p">{</span><span class="w">   </span>
 
@@ -11618,7 +11526,6 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="5-build-and-run">5. Build And Runでテストする</h3>
 <p>コードの実装を完了した上で、Build And Runを実行すると画面上のデバッグログに"Hello, World!"が出力されます。</p>
 <p><img alt="hs_overview_5" src="img/hs_overview_5.jpg" /></p>
@@ -11634,7 +11541,7 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 <p><img alt="HEOScript_attachable" src="../VKCComponents/img/HEOScript_attachable.jpg" /></p>
 <p>HeliScript内で各オブジェクトを参照する際は、後述するItem及びNodeによって取り扱います。<br>
 例として、以下のように<a href="../VKCComponents/VKCItemField.html">VKC Item Field</a>下のexampleObjectがクリックされた際にメッセージを出力するスクリプトが書けます。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">example</span>
+<div class="highlight"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">example</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">//ItemとPlayerを定義</span>
 <span class="w">    </span><span class="c1">//ここではhsItemGetなどの取得関数を含め、オブジェクトの初期化はできないためにご注意ください</span>
@@ -11676,7 +11583,6 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <div class="admonition caution">
 <p class="admonition-title">Playerオブジェクトの初期化について</p>
 <p>SDK Ver12.x以降より、Playerクラスの関数はコンストラクタでの呼び出しができなくなりました。<br>
@@ -11750,7 +11656,7 @@ Playerの振る舞い方は<a href="../VketCloudSettings/PlayerSettings.html">VK
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

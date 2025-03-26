@@ -13,7 +13,7 @@
       
       
       
-        <link rel="prev" href="hs_system_function_raycast.html">
+        <link rel="prev" href="hs_system_function_cookie.html">
       
       
         <link rel="next" href="hs_statement_control.html">
@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6488,8 +6442,6 @@
       
         
       
-        
-      
     
     
     
@@ -6686,27 +6638,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6723,8 +6654,6 @@
   
     
     
-      
-        
       
         
       
@@ -7090,27 +7019,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11475,77 +11383,71 @@
 <h2 id="_2">ローカル変数</h2>
 <p>関数やクラスメソッドの中で「型名 変数名」と宣言することで、そのスコープの中でのみ利用可能な変数を宣言できます。
 変数は宣言と同時に初期化することもできます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 初期値を指定せず、変数定義のみを行う</span>
-<span class="nb">string</span><span class="w"> </span><span class="n">emptyText</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// 初期値を指定せず、変数定義のみを行う
+string emptyText;
 
-<span class="c1">// 宣言と同時に100で初期化</span>
-<span class="nb">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+// 宣言と同時に100で初期化
+int value = 100;
 </code></pre></div>
-
 <h2 id="_3">グローバル変数</h2>
 <p>関数やメソッドの外に変数を宣言すると、そのソースファイルの中と、アプリ全体で利用できるグローバル変数を宣言できます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// グローバル変数の宣言と同時に初期化</span>
-<span class="nb">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
-<span class="n">void</span><span class="w"> </span><span class="n">TestFunc</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="c1">// ...</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>// グローバル変数の宣言と同時に初期化
+int value = 100;
+void TestFunc() {
+  // ...
+}
 </code></pre></div>
-
 <p><a href="hs_var.html">基本型</a> と<a href="hs_class.html">クラス</a> のどちらの型もグローバル変数として宣言できますが、<a href="hs_class.html">クラス</a> に関しては宣言と同時に初期化することができません。</p>
 <h2 id="_4">クラス変数</h2>
 <p>クラス定義の中に変数を宣言すると、そのクラスに所属する変数を宣言できます。</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">MyClass</span> {
-    // <span class="n">クラス変数を宣言</span>
-    <span class="n">int</span> <span class="nb">value</span> = <span class="mi">100</span>;
+<div class="highlight"><pre><span></span><code>class MyClass {
+    // クラス変数を宣言
+    int value = 100;
 }
 </code></pre></div>
-
 <p><a href="hs_var.html">基本型</a> と<a href="hs_class.html">クラス</a> のどちらの型もクラス変数として宣言できます。また、宣言と同時に初期化することが可能です。</p>
 <h2 id="_5">定数の定義</h2>
 <p><a href="hs_var.html">基本型</a>の変数定義の前に <em>const</em> を付与すると、その変数を初期化後に変更できなくなります。</p>
 <p>constが付与できる型は、int, float, bool, string となります。</p>
-<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="err">変更できない定数の整数変数を定義</span>
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">immutable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">999</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// 変更できない定数の整数変数を定義
+const int immutable = 999;
 </code></pre></div>
-
 <p>ローカル変数、グローバル変数、クラス変数の全てについて、const を付与して定数とすることが可能です。</p>
 <h2 id="_6">関数の定義</h2>
 <p>「戻り値 関数名(引数1, 引数2, ...)」という形で、関数を定義できます。戻り値を返さない関数を定義するには、<em>void</em> を指定します。</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">Add</span><span class="ss">(</span><span class="nv">int</span><span class="w"> </span><span class="nv">x</span>,<span class="w"> </span><span class="nv">int</span><span class="w"> </span><span class="nv">y</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">y</span><span class="c1">;</span>
+<div class="highlight"><pre><span></span><code>int Add(int x, int y) {
+    return x + y;
 }
 
-<span class="nv">string</span><span class="w"> </span><span class="nv">CreateName</span><span class="ss">(</span><span class="nv">string</span><span class="w"> </span><span class="nv">firstName</span>,<span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="nv">lastName</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">    </span><span class="nv">string</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">lastName</span><span class="c1">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nv">name</span><span class="c1">;</span>
+string CreateName(string firstName, string lastName) {
+    string name = firstName + &quot; &quot; + lastName;
+    return name;
 }
 
-<span class="nv">void</span><span class="w"> </span><span class="nv">LogOutput</span><span class="ss">(</span><span class="nv">string</span><span class="w"> </span><span class="nv">log</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">    </span><span class="nv">hsSystemOutput</span><span class="ss">(</span><span class="nv">log</span><span class="ss">)</span><span class="c1">;</span>
+void LogOutput(string log) {
+    hsSystemOutput(log);
 }
 </code></pre></div>
-
 <h2 id="class">classの定義</h2>
 <p><em>class</em> の後にクラス名を、その後に <em>{ }</em> で囲んだコードを記述することで、構造を持った型であるクラスを定義できます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// クラスの定義</span>
-<span class="n">class</span><span class="w"> </span><span class="n">MyAvatar</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nb">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
-<span class="w">    </span><span class="nb">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// クラスの定義
+class MyAvatar {
+    string name;
+    int age;
 
-<span class="w">    </span><span class="n">public</span><span class="w"> </span><span class="n">MyAvatar</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// 初期化処理をここに書く</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+    public MyAvatar() {
+        // 初期化処理をここに書く
+    }
+}
 
-<span class="n">void</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// クラスの生成</span>
-<span class="w">    </span><span class="n">MyAvatar</span><span class="w"> </span><span class="n">avatar</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">MyAvatar</span><span class="p">();</span>
+void main() {
+    // クラスの生成
+    MyAvatar avatar = new MyAvatar();
 
-<span class="w">    </span><span class="c1">// ageは公開設定されていないので、アクセスするとコンパイルエラーになる</span>
-<span class="w">    </span><span class="n">avatar</span><span class="p">.</span><span class="n">age</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">999</span><span class="p">;</span>
-<span class="p">}</span>
+    // ageは公開設定されていないので、アクセスするとコンパイルエラーになる
+    avatar.age = 999;
+}
 </code></pre></div>
-
 <p>クラス定義の中に、クラス名と同じ名前の関数を <em>public</em> で定義すると、それはコンストラクタになります。クラスのインスタンスを生成する際には、<em>new</em> 演算子の後にクラスのコンストラクタを呼び出してください。</p>
 <p>現時点で、HeliScriptは引数を持つコンストラクタに対応していません。</p>
 <h2 id="_7">変数・関数のスコープ</h2>
@@ -11555,21 +11457,21 @@
 <li>ローカルスコープ：関数の中で定義。関数が終了すると消える。外部からアクセスできない。</li>
 <li>クラススコープ：クラスの中で定義。クラススコープの変数は、インスタンスごとに個別のデータを持つ。<em>public</em> を付与すると、クラスの外部からもアクセスできる。</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="err">グローバル変数</span>
-<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">globalInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// グローバル変数
+int globalInt = 100;
 
-<span class="o">//</span><span class="w"> </span><span class="err">グローバル関数</span>
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">GlobalFunc</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="o">.....</span>
-<span class="p">}</span>
+// グローバル関数
+void GlobalFunc() {
+    // .....
+}
 
-<span class="o">//</span><span class="w"> </span><span class="err">グローバルなクラス定義</span>
-<span class="k">class</span><span class="w"> </span><span class="n">MyClass</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="err">クラススコープ</span><span class="p">(</span><span class="err">非公開</span><span class="p">)</span>
-<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">secretID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;xxxx&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="err">クラススコープ</span><span class="p">(</span><span class="err">公開</span><span class="p">)</span>
-<span class="w">    </span><span class="n">pubic</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123</span><span class="p">;</span>
-<span class="p">}</span>
+// グローバルなクラス定義
+class MyClass {
+    // クラススコープ(非公開)
+    string secretID = &quot;xxxx&quot;;
+    // クラススコープ(公開)
+    pubic const int value = 123;
+}
 </code></pre></div>
 
 
@@ -11616,7 +11518,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

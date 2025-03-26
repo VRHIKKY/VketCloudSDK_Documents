@@ -875,8 +875,6 @@
       
         
       
-        
-      
     
     
     
@@ -1301,8 +1299,6 @@
       
         
       
-        
-      
     
     
     
@@ -1343,27 +1339,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1792,27 +1767,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6573,8 +6527,6 @@
       
         
       
-        
-      
     
     
     
@@ -6771,27 +6723,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6808,8 +6739,6 @@
   
     
     
-      
-        
       
         
       
@@ -7175,27 +7104,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11473,24 +11381,23 @@
 <li>Projectのペインで右クリック&gt;HeliScriptでHeliScriptを新規作成します。</li>
 <li>下記HeliScriptをペースト。</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="nt">component</span><span class="w"> </span><span class="nt">Sample</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="err">Item</span><span class="w"> </span><span class="err">target</span><span class="p">;</span>
-<span class="w">    </span><span class="err">int</span><span class="w"> </span><span class="err">count</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>component Sample
+{
+    Item target;
+    int count;
 
-<span class="w">    </span><span class="err">public</span><span class="w"> </span><span class="err">Sample()</span>
-<span class="w">    </span><span class="err">{</span>
-<span class="w">        </span><span class="err">target</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">hsItemGet(&quot;Text&quot;)</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    public Sample()
+    {
+        target = hsItemGet(&quot;Text&quot;);
+    }
 
-<span class="w">    </span><span class="nt">public</span><span class="w"> </span><span class="nt">void</span><span class="w"> </span><span class="nt">OnClickNode</span><span class="o">(</span><span class="nt">int</span><span class="w"> </span><span class="nt">NodeIndex</span><span class="o">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="err">count</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">count</span><span class="w"> </span><span class="err">+</span><span class="w"> </span><span class="err">1</span><span class="p">;</span>
-<span class="w">        </span><span class="err">target.WriteTextPlane(&quot;クリック回数:</span><span class="w"> </span><span class="err">&quot;</span><span class="w"> </span><span class="err">+</span><span class="w"> </span><span class="err">count.ToString())</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="err">}</span>
+    public void OnClickNode(int NodeIndex)
+    {
+        count = count + 1;
+        target.WriteTextPlane(&quot;クリック回数: &quot; + count.ToString());
+    }
+}
 </code></pre></div>
-
 <ol>
 <li>Root_VKCItemObjectにVKCAttributeScriptをAddします。</li>
 <li>VKCAttributeScriptの+ボタンを押し、選択ボタンからSampleを選択します。</li>
@@ -11543,7 +11450,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

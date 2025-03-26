@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     Enabling JS Upload Feature
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample JS Upload
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     Creating Capsule Rectangle Images Using 9-Slice
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control the Canvas element with HeliScript
   </span>
   
 
@@ -6486,8 +6440,6 @@
       
         
       
-        
-      
     
     
     
@@ -6684,27 +6636,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHIT Class
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6721,8 +6652,6 @@
   
     
     
-      
-        
       
         
       
@@ -7088,27 +7017,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11390,7 +11298,7 @@ As an example, the <a href="https://developers.google.com/youtube/v3/getting-sta
 <p>Also, a HeliScript for displaying a Youtube Data API search result on the TextPlane when a designated cube is clicked is described as below.</p>
 <p>This script must be attached to the World object using <a href="../VKCComponents/VKCAttributeScript.html">VKC Attribute Script</a>.</p>
 <p><img alt="BrokerAPI_5" src="../../ExternalAPI/img/BrokerAPI_5.jpg" /></p>
-<div class="codehilite"><pre><span></span><code><span class="k">delegate</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">fJsValCallback</span><span class="p">(</span><span class="n">JsVal</span><span class="p">);</span><span class="w"> </span><span class="c1">//Method for callback</span>
+<div class="highlight"><pre><span></span><code><span class="k">delegate</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">fJsValCallback</span><span class="p">(</span><span class="n">JsVal</span><span class="p">);</span><span class="w"> </span><span class="c1">//Method for callback</span>
 <span class="k">extern</span><span class="w"> </span><span class="n">heliport</span><span class="p">.</span><span class="n">v3</span><span class="p">.</span><span class="n">api</span><span class="p">.</span><span class="n">broker</span><span class="w"> </span><span class="c1">//declaration to call a Broker API method</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">registerAgreement</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">spatiumCode</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">worldCode</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">guestUuid</span><span class="p">);</span>
@@ -11561,7 +11469,6 @@ As an example, the <a href="https://developers.google.com/youtube/v3/getting-sta
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>3. Upload the world data to see if API operates as intended.</p>
 <div class="admonition warning">
 <p class="admonition-title">Testing BrokerAPI implementations</p>
@@ -11615,7 +11522,7 @@ For instructions on how to upload the world data, please refer to <a href="../Fi
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

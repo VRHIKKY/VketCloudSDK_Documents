@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6546,15 +6500,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-itemcollider" class="md-nav__link">
-    <span class="md-ellipsis">
-      コールバック - ItemCollider
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#-_6" class="md-nav__link">
     <span class="md-ellipsis">
       コールバック - オブジェクト選択解除
@@ -6715,8 +6660,6 @@
   
     
     
-      
-        
       
         
       
@@ -6930,27 +6873,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6967,8 +6889,6 @@
   
     
     
-      
-        
       
         
       
@@ -7334,27 +7254,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11604,15 +11503,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-itemcollider" class="md-nav__link">
-    <span class="md-ellipsis">
-      コールバック - ItemCollider
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#-_6" class="md-nav__link">
     <span class="md-ellipsis">
       コールバック - オブジェクト選択解除
@@ -11754,15 +11644,14 @@
 <h2 id="_2">コンポーネントの定義</h2>
 <p>コンポーネントとは、Sceneファイルに記述されたアイテムに対して追加するクラスオブジェクトです。</p>
 <p>予約語のcomponentの次にコンポーネント名を指定したブロックを定義します。</p>
-<div class="codehilite"><pre><span></span><code>component コンポーネント名 {
+<div class="highlight"><pre><span></span><code>component コンポーネント名 {
         // component内部にはクラスと同等のメソッド・フィールド定義が可能
 }
 </code></pre></div>
-
 <p>また、ブロック内でコンポーネント名と同じ名前でpublicのメソッドを定義するとコンストラクタになります。これはコンポーネントオブジェクト生成時に一度だけ呼び出されます。</p>
 <p>public void Update()メソッドを定義すると、画面描画時に毎フレーム呼び出されます。</p>
 <p>以下が最小限のサンプルコードになります。</p>
-<div class="codehilite"><pre><span></span><code>component Test
+<div class="highlight"><pre><span></span><code>component Test
 {
     public Test()
     {
@@ -11773,48 +11662,40 @@
     }
 }
 </code></pre></div>
-
 <p>上記の Update() のように、あらかじめ決められた名前と引数を持つメソッドをcomponent内に定義すると、特定のイベントが発生した際に呼び出し(コールバック)が行われます。</p>
 <h2 id="-">コールバック - ロード完了</h2>
 <p>Vket Cloudエンジンが起動し、リソースのロードや初期化処理が完了した際に1回だけ OnLoaded() が呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnLoaded()
+<div class="highlight"><pre><span></span><code>public void OnLoaded()
 </code></pre></div>
-
 <h2 id="-_1">コールバック - タブの表示・非表示</h2>
 <p>ブラウザのタブがアクティブ・非アクティブ化した際にコールバックを受け取ることができます。</p>
 <p>タブがアクティブ化すると IsActivate が true に、非アクティブ化すると IsActivate が false として呼ばれます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnWindowActivate(bool IsActivate)
+<div class="highlight"><pre><span></span><code>public void OnWindowActivate(bool IsActivate)
 </code></pre></div>
-
 <h2 id="-_2">コールバック - ページのアンロード開始</h2>
 <p>ブラウザのタブを閉じたり、別のURLへ遷移する際に、現在のページのアンロード開始を通知するコールバック処理です。</p>
 <p>このイベントが発生したタイミングでは、ページの内容はまだ保持されています。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">public</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">OnBeforeUnload</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code>public void OnBeforeUnload()
 </code></pre></div>
-
 <h2 id="-_3">コールバック - ページのアンロード</h2>
 <p>現在のページが完全にアンロードされる直前に通知されるコールバック処理です。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">public</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">OnUnload</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code>public void OnUnload()
 </code></pre></div>
-
 <h2 id="-_4">コールバック - クリックノード</h2>
 <p>以下のようにOnClickNodeメソッドを定義しておくと、そのアイテムのノードがクリックされた時に呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code>public bool OnClickNode(int NodeIndex)
+<div class="highlight"><pre><span></span><code>public bool OnClickNode(int NodeIndex)
 </code></pre></div>
-
 <p>何らかの処理をおこなった場合はtrueを返すことで、エンジン側のクリック移動などが無効化されます。</p>
 <p>互換性のために以下の戻り値の型がvoidのものも定義出来ますが、Sceneファイルのclickablenodesに定義されていない場合はクリック移動などが実行されます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnClickNode(int NodeIndex)
+<div class="highlight"><pre><span></span><code>public void OnClickNode(int NodeIndex)
 </code></pre></div>
-
 <h2 id="-_5">コールバック - 無効空間クリック</h2>
 <p>以下のようにOnClickEmptyメソッドを定義しておくと、何もない空間をクリックしたときに呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnClickEmpty()
+<div class="highlight"><pre><span></span><code>public void OnClickEmpty()
 </code></pre></div>
-
 <h2 id="-areacollider">コールバック - AreaCollider</h2>
 <p>以下のようにOnEnterAreaCollider,OnLeaveAreaColliderメソッドを定義しておくと、"areacollider"タイプのアイテムに侵入・退出したときに呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code>component AreaCollider
+<div class="highlight"><pre><span></span><code>component AreaCollider
 {
     Item    m_Item;
 
@@ -11834,72 +11715,46 @@
     }
 }
 </code></pre></div>
-
-<h2 id="-itemcollider">コールバック - ItemCollider</h2>
-<p>以下のようにOnItemEnterCollider, OnItemLeaveColliderメソッドを定義しておくと、このコンポーネントを持つItemが別のItem内ノードのコライダーに侵入・退出した時に呼び出されます。<br />
-現在対応している衝突形状はボックスコライダーのみです。  </p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">CollisionTest</span>
-<span class="err">{</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">OnItemEnterCollider</span><span class="p">(</span><span class="nc">int</span><span class="w"> </span><span class="n">ItemInstanceID</span><span class="p">,</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
-<span class="w">    </span><span class="err">{</span>
-<span class="w">        </span><span class="n">Item</span><span class="w"> </span><span class="n">CollidedItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGetByInstanceID</span><span class="p">(</span><span class="n">ItemInstanceID</span><span class="p">);</span>
-<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">NodeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetNodeNameByIndex</span><span class="p">(</span><span class="n">NodeIndex</span><span class="p">);</span>
-<span class="w">        </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="ss">&quot;[OnItemEnterCollider] ItemName: %s, NodeName: %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetName</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">NodeName</span><span class="p">);</span>
-<span class="w">    </span><span class="err">}</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">OnItemLeaveCollider</span><span class="p">(</span><span class="nc">int</span><span class="w"> </span><span class="n">ItemInstanceID</span><span class="p">,</span><span class="w"> </span><span class="nc">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
-<span class="w">    </span><span class="err">{</span>
-<span class="w">        </span><span class="n">Item</span><span class="w"> </span><span class="n">CollidedItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGetByInstanceID</span><span class="p">(</span><span class="n">ItemInstanceID</span><span class="p">);</span>
-<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">NodeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetNodeNameByIndex</span><span class="p">(</span><span class="n">NodeIndex</span><span class="p">);</span>
-<span class="w">        </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="ss">&quot;[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">CollidedItem</span><span class="p">.</span><span class="n">GetName</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">NodeName</span><span class="p">);</span>
-<span class="w">    </span><span class="err">}</span>
-<span class="err">}</span>
-</code></pre></div>
-
 <h2 id="-_6">コールバック - オブジェクト選択解除</h2>
 <h3 id="onunselectnode">ノードの選択解除：OnUnselectNode</h3>
-<div class="codehilite"><pre><span></span><code>public void OnUnselectNode(int NodeIndex)
+<p><div class="highlight"><pre><span></span><code>public void OnUnselectNode(int NodeIndex)
 </code></pre></div>
-
-<p>直前にアイテムのノードをクリックした状態で、その後にアバターをクリックすると、ノードの選択が解除されたと判断されます。</p>
+直前にアイテムのノードをクリックした状態で、その後にアバターをクリックすると、ノードの選択が解除されたと判断されます。</p>
 <p>この際に、選択解除されたノードのインデックスを引数として、OnUnselectNode() が呼び出されます。</p>
 <h3 id="onunselectavatar">アバターの選択解除：OnUnselectAvatar</h3>
-<div class="codehilite"><pre><span></span><code>public void OnUnselectAvatar(string Name)
+<p><div class="highlight"><pre><span></span><code>public void OnUnselectAvatar(string Name)
 </code></pre></div>
-
-<p>直前にアバターをクリックした状態で、その後にアイテムのノードをクリックすると、アバターの選択が解除されたと判断されます。</p>
+直前にアバターをクリックした状態で、その後にアイテムのノードをクリックすると、アバターの選択が解除されたと判断されます。</p>
 <p>この際に、選択解除されたアバターの名前を引数として、OnUnselectAvatar() が呼び出されます。</p>
 <h2 id="-_7">コールバック - スクリーンサイズ変更</h2>
 <p>スクリーンサイズが変更された際に OnResize() が呼び出されます。引数 width と height には、変更語のスクリーンの縦横サイズが渡されます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnResize(int width, int height)
+<div class="highlight"><pre><span></span><code>public void OnResize(int width, int height)
 </code></pre></div>
-
 <h2 id="-_8">コールバック - カスタムステート/カスタムデータ</h2>
 <p>ルーム内の任意のプレイヤーから送信された任意のデータを受信するコールバックメソッドです。</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">public</span><span class="w"> </span><span class="nx">void</span><span class="w"> </span><span class="nx">OnReceiveCustomState</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
-<span class="nx">public</span><span class="w"> </span><span class="nx">void</span><span class="w"> </span><span class="nx">OnReceiveCustomData</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code>public void OnReceiveCustomState(string id, string type, string data)
+public void OnReceiveCustomData(string id, string type, string data)
 </code></pre></div>
-
 <h2 id="-gui">コールバック - GUIボタン</h2>
 <p><code>public void OnClickedButton(string layerName, string buttonName)</code></p>
 <p>以下のようにOnClickedButton()メソッドを定義しておくと、GUIのボタンがタップされたときに呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">component</span><span class="w"> </span><span class="nv">ButtonClickable</span>
+<div class="highlight"><pre><span></span><code>component ButtonClickable
 {
-<span class="w">    </span><span class="nv">public</span><span class="w"> </span><span class="nv">void</span><span class="w"> </span><span class="nv">OnClickedButton</span><span class="ss">(</span><span class="nv">string</span><span class="w"> </span><span class="nv">layerName</span>,<span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="nv">buttonname</span><span class="ss">)</span>
-<span class="w">    </span>{
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">layerName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;MenuUI&quot;</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">            </span><span class="nv">hsSystemOutput</span><span class="ss">(</span><span class="s2">&quot;Button Clicked! :&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">buttonname</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;\n&quot;</span><span class="ss">)</span><span class="c1">;</span>
-<span class="w">        </span>}
-<span class="w">    </span>}
+    public void OnClickedButton(string layerName, string buttonname)
+    {
+        if (layerName == &quot;MenuUI&quot;) {
+            hsSystemOutput(&quot;Button Clicked! :&quot; + buttonname + &quot;\n&quot;);
+        }
+    }
 }
 </code></pre></div>
-
 <h2 id="-_9">コールバック - 物理衝突判定</h2>
 <p><code>public void OnPhysicsCollision(int ID0, int ID1)</code></p>
 <p>物理処理を設定しているオブジェクト同士が衝突したときに呼び出されます。</p>
 <p>IDはPhysicsIDと呼ばれるもので、ItemクラスのGetPhysicsIDByNodeNameや、PlayerクラスのGetPhysicsIDから取得できます。</p>
 <p>コンストラクタ等で前もってPhysicsIDを取得してメンバ変数に保存しておき、コールバック関数で比較して衝突したかどうかを判定します。</p>
 <p>なお、衝突した直後に何度も同じIDの組み合わせでコールバック関数が呼び出される場合があるので、衝突によってパーティクル再生などをおこなう場合は、何度も再生しないように処理する必要があります。</p>
-<div class="codehilite"><pre><span></span><code>component Test {
+<div class="highlight"><pre><span></span><code>component Test {
     Item    m_Field;
 
     int     m_PhysicsIDFloor,
@@ -11924,50 +11779,40 @@
     }
 }
 </code></pre></div>
-
 <h2 id="-_10">コールバック - 視野内コライダー判定</h2>
-<div class="codehilite"><pre><span></span><code>public void OnEnterViewCollider(string NodeName)
+<div class="highlight"><pre><span></span><code>public void OnEnterViewCollider(string NodeName)
 public void OnLeaveViewCollider(string NodeName)
 </code></pre></div>
-
 <p><a href="../VKCComponents/VKCNodeCollider.html">VKC Node Collider</a>で「InView」を指定したコライダーが視野内に入った場合または視野外に出た場合に呼び出されます。</p>
 <p>コンポーネントは同一のアイテムに設定する必要があります。</p>
 <h2 id="-_11">コールバック - テキストチャット</h2>
-<div class="codehilite"><pre><span></span><code>public void OnReceiveTextChat(string ID, string PlayerName, string Text)
+<div class="highlight"><pre><span></span><code>public void OnReceiveTextChat(string ID, string PlayerName, string Text)
 </code></pre></div>
-
 <p>ユーザーがテキストチャットを送信した場合に呼び出されます。</p>
 <h2 id="-_12">コールバック - プレイヤーアバタークリック</h2>
-<div class="codehilite"><pre><span></span><code>public void OnClickedAvatar(string PlayerID)
+<div class="highlight"><pre><span></span><code>public void OnClickedAvatar(string PlayerID)
 </code></pre></div>
-
 <p>他のプレイヤーのアバターがクリックされた時に呼び出されます。</p>
 <h2 id="-_13">コールバック - 動画再生</h2>
 <p>動画の再生開始時に呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnPlayVideo()
+<div class="highlight"><pre><span></span><code>public void OnPlayVideo()
 </code></pre></div>
-
 <p>動画の一時停止の際に呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnPauseVideo()
+<div class="highlight"><pre><span></span><code>public void OnPauseVideo()
 </code></pre></div>
-
 <p>動画の再生を再開した時に呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnResumeVideo()
+<div class="highlight"><pre><span></span><code>public void OnResumeVideo()
 </code></pre></div>
-
 <p>動画の再生を停止した時に呼び出されます。</p>
-<div class="codehilite"><pre><span></span><code>public void OnStopVideo()
+<div class="highlight"><pre><span></span><code>public void OnStopVideo()
 </code></pre></div>
-
 <h2 id="-_14">コールバック - プロパティ</h2>
 <p>Itemのプロパティが更新されたときに呼び出されます。同一のValueの場合は呼び出されません。</p>
-<div class="codehilite"><pre><span></span><code>public void OnChangedProperty(string Key, string Value)
+<div class="highlight"><pre><span></span><code>public void OnChangedProperty(string Key, string Value)
 </code></pre></div>
-
 <h2 id="-_15">コールバック - メッセージ</h2>
-<div class="codehilite"><pre><span></span><code>public void OnReceiveMessage(HSMessage message)
+<div class="highlight"><pre><span></span><code>public void OnReceiveMessage(HSMessage message)
 </code></pre></div>
-
 <p>Itemがメッセージを受信した際に呼ばれます。引数 message に、受信したデータや送信者の情報が含まれています。</p>
 
 
@@ -12014,7 +11859,7 @@ public void OnLeaveViewCollider(string NodeName)
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6600,8 +6554,6 @@
       
         
       
-        
-      
     
     
     
@@ -6798,27 +6750,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6835,8 +6766,6 @@
   
     
     
-      
-        
       
         
       
@@ -7202,27 +7131,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11489,65 +11397,59 @@
 <h1 id="_1">クラス・構造体</h1>
 <h2 id="_2">クラスの定義</h2>
 <p>予約語の class の次に、クラス名を指定したブロックを定義します。</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">クラス名</span> {
+<div class="highlight"><pre><span></span><code>class クラス名 {
 }
 </code></pre></div>
-
 <h2 id="_3">コンストラクタ</h2>
 <p>ブロック内でクラス名と同じ名前でpublicのメソッドを定義すると、コンストラクタになります。これはクラスオブジェクト生成時に一度だけ呼び出されます。</p>
 <p>以下が最小限のサンプルコードになります。</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
-    <span class="n">public</span> <span class="n">Test</span>()
+<div class="highlight"><pre><span></span><code>class Test {
+    public Test()
     {
     }
 }
 </code></pre></div>
-
 <h2 id="_4">メンバ変数</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
-    <span class="n">float</span> <span class="n">Data</span>;
+<div class="highlight"><pre><span></span><code>class Test {
+    float Data;
 }
 </code></pre></div>
-
 <h2 id="_5">メソッド定義</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
-    <span class="n">float</span> <span class="n">Data</span>;
+<div class="highlight"><pre><span></span><code>class Test {
+    float Data;
 
-    <span class="n">public</span> <span class="n">void</span> <span class="n">Foo</span>()
+    public void Foo()
     {
-        <span class="n">Data</span> = <span class="mf">0.0</span><span class="n">f</span>;
+        Data = 0.0f;
     }
 }
 </code></pre></div>
-
 <h2 id="_6">アクセス指定子</h2>
 <p>メンバやメソッドの宣言の前に、public を指定すると、classの外部からこのメンバにアクセスできるようになります。</p>
 <p>private を指定すると、外部からそのメンバにアクセスすることはできません。アクセス指定子を省略した場合も、private 指定と同様の振る舞いになります。</p>
 <h2 id="_7">オブジェクトの生成</h2>
 <p>クラスオブジェクトを生成するにはnew演算子を使用します。</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
+<div class="highlight"><pre><span></span><code>class Test {
 }
 
-<span class="n">Test</span> <span class="n">obj</span>;
-<span class="n">obj</span> = <span class="nb">new</span> <span class="n">Test</span>();
+Test obj;
+obj = new Test();
 </code></pre></div>
-
 <h2 id="_8">オブジェクトの削除</h2>
 <p>オブジェクトを削除するにはnullを代入します。どこからも参照されなくなれば削除されます。</p>
-<div class="codehilite"><pre><span></span><code>Test obj;
+<div class="highlight"><pre><span></span><code>Test obj;
 obj = new Test();
 
 obj = null;
 </code></pre></div>
-
 <h2 id="_9">オブジェクトが存在するかどうかの確認</h2>
 <p>===演算子、!==演算子を使用してnullと比較します。</p>
-<div class="codehilite"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">obj</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="nv">null</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w"> </span><span class="o">//</span><span class="w"> </span>存在する
+<div class="highlight"><pre><span></span><code>if (obj !== null) {
+ // 存在する
 }
 
-<span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">obj</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nv">null</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w"> </span><span class="o">//</span><span class="w"> </span>存在しない
+if (obj === null) {
+ // 存在しない
 }
 </code></pre></div>
 
@@ -11595,7 +11497,7 @@ obj = null;
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

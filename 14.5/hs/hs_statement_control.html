@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6488,8 +6442,6 @@
       
         
       
-        
-      
     
     
     
@@ -6686,27 +6638,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6723,8 +6654,6 @@
   
     
     
-      
-        
       
         
       
@@ -7090,27 +7019,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11486,37 +11394,35 @@
 <p>条件分岐や繰り返しなどの、制御構文について説明します。</p>
 <h2 id="if-">if - 条件分岐</h2>
 <p><code>if (条件式)</code> の後に <em>{}</em> で処理を書き分けることで、条件分岐を実現できます。</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="c1">;</span>
-<span class="nv">int</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="c1">;</span>
+<div class="highlight"><pre><span></span><code>int x = 100;
+int y = 200;
 
-<span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span>の評価結果が<span class="w"> </span><span class="nv">true</span><span class="w"> </span>だった場合の処理
-}<span class="w"> </span><span class="k">else</span><span class="w"> </span>{
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span>の評価結果が<span class="w"> </span><span class="nv">false</span><span class="w"> </span>だった場合の処理
+if (x == y) {
+    // x == y の評価結果が true だった場合の処理
+} else {
+    // x == y の評価結果が false だった場合の処理
 }
 </code></pre></div>
-
 <h2 id="while-">while - 繰り返し</h2>
 <p><code>while (条件式) { }</code> と書くことで、条件式が <em>false</em> になるまで、<em>{}</em> の中を繰り返し実行する処理が書けます。</p>
 <p>ループを強制的に抜けるには <em>break</em> を利用します。</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">;</span>
-<span class="k">while</span><span class="w"> </span><span class="ss">(</span><span class="nv">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span>が<span class="w"> </span><span class="mi">100</span>より小さい間は、この処理を繰り返し実行する
-<span class="w">    </span><span class="nv">hsSystemWriteLine</span><span class="ss">(</span><span class="s2">&quot;x=%d&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nv">x</span><span class="ss">)</span><span class="c1">;</span>
-<span class="w">    </span><span class="o">++</span><span class="nv">x</span><span class="c1">;</span>
+<div class="highlight"><pre><span></span><code>int x = 0;
+while (x &lt; 100) {
+    // x が 100より小さい間は、この処理を繰り返し実行する
+    hsSystemWriteLine(&quot;x=%d&quot; % x);
+    ++x;
 }
 
-<span class="nv">int</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">;</span>
-<span class="o">//</span><span class="w"> </span>条件式が常に<span class="nv">true</span>なので、<span class="nv">break</span>で明示的に抜けるまで中の処理を繰り返す
-<span class="k">while</span><span class="w"> </span><span class="ss">(</span><span class="nv">true</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">y</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">100</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">        </span><span class="o">//</span><span class="w"> </span>強制的にループを抜ける
-<span class="w">        </span><span class="k">break</span><span class="c1">;</span>
-<span class="w">    </span>}
-<span class="w">    </span><span class="o">++</span><span class="nv">y</span><span class="c1">;</span>
+int y = 0;
+// 条件式が常にtrueなので、breakで明示的に抜けるまで中の処理を繰り返す
+while (true) {
+    if (y &gt;= 100) {
+        // 強制的にループを抜ける
+        break;
+    }
+    ++y;
 }
 </code></pre></div>
-
 <h2 id="for-">for - 初期化と反復子込みの繰り返し</h2>
 <p><code>for (初期化処理; 条件式; 反復子) { }</code> と書くことで、</p>
 <ol>
@@ -11525,71 +11431,67 @@
 <li>反復子を処理したあと、</li>
 <li>再度条件式を確認し、<em>true</em> であれば 2. に戻り処理を繰り返す </li>
 </ol>
-<p>という処理を実現できます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// ループ開始前に、初期化処理によって i が 0 で初期化される。</span>
-<span class="c1">// ループ処理の開始前に、条件式の i &lt; 100 が毎回判定され、trueの間はループを繰り返す。</span>
-<span class="c1">// ループの末尾で、反復子である ++i が毎回実行される。</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nb">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// i が 100 より小さい間、この処理を繰り返す。</span>
-<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;i=%d&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="n">i</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-
+<p>という処理を実現できます。
+<div class="highlight"><pre><span></span><code>// ループ開始前に、初期化処理によって i が 0 で初期化される。
+// ループ処理の開始前に、条件式の i &lt; 100 が毎回判定され、trueの間はループを繰り返す。
+// ループの末尾で、反復子である ++i が毎回実行される。
+for (int i = 0; i &lt; 100; ++i) {
+    // i が 100 より小さい間、この処理を繰り返す。
+    hsSystemWriteLine(&quot;i=%d&quot; % i);
+}
+</code></pre></div></p>
 <h2 id="break-continue">ループからの脱出 (break, continue)</h2>
 <p><em>break</em> または <em>continue</em> を利用することで、while や for によるループ処理の流れを制御することができます。</p>
 <h3 id="break">break</h3>
-<p><em>break</em> によって、ループ処理の途中で処理を中断させることができます。</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">;</span>
-<span class="o">//</span><span class="w"> </span>条件式が常に<span class="nv">true</span>なので、<span class="nv">break</span>で明示的に抜けるまで中の処理を繰り返す。
-<span class="k">while</span><span class="w"> </span><span class="ss">(</span><span class="nv">true</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">100</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">        </span><span class="o">//</span><span class="w"> </span><span class="nv">break</span>で強制的にループを終了させる。
-<span class="w">        </span><span class="k">break</span><span class="c1">;</span>
-<span class="w">    </span>}
-<span class="w">    </span><span class="o">++</span><span class="nv">i</span><span class="c1">;</span>
+<p><em>break</em> によって、ループ処理の途中で処理を中断させることができます。
+<div class="highlight"><pre><span></span><code>int i = 0;
+// 条件式が常にtrueなので、breakで明示的に抜けるまで中の処理を繰り返す。
+while (true) {
+    if (i &gt;= 100) {
+        // breakで強制的にループを終了させる。
+        break;
+    }
+    ++i;
+}
+</code></pre></div></p>
+<h3 id="continue">continue</h3>
+<p><em>continue</em> によって、ループ処理の途中で処理をスキップし、次のループ処理に移ることができます。
+<div class="highlight"><pre><span></span><code>// 変数 i の値を100回表示するループ処理。
+for (int i = 0; i &lt; 100; ++i) {
+    if (i == 5) {
+        // ただし i = 5 の場合にだけ、continueで処理を切り上げるため、何も表示されない。
+        continue;
+    }
+    hsSystemWriteLine(&quot;i=%d&quot; % i);
+}
+</code></pre></div></p>
+<h2 id="switch-">switch - 多数の分岐条件を簡潔に記述</h2>
+<div class="highlight"><pre><span></span><code>switch (条件判定に利用する値) {
+    case 判定に利用する値:
+        // 処理A
+        break;
+    case 判定に利用する値:
+        // 処理B
+        break;
+    // ...
 }
 </code></pre></div>
-
-<h3 id="continue">continue</h3>
-<p><em>continue</em> によって、ループ処理の途中で処理をスキップし、次のループ処理に移ることができます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 変数 i の値を100回表示するループ処理。</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nb">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// ただし i = 5 の場合にだけ、continueで処理を切り上げるため、何も表示されない。</span>
-<span class="w">        </span><span class="k">continue</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;i=%d&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="n">i</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<h2 id="switch-">switch - 多数の分岐条件を簡潔に記述</h2>
-<div class="codehilite"><pre><span></span><code><span class="nt">switch</span><span class="w"> </span><span class="o">(</span><span class="nt">条件判定に利用する値</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="err">case</span><span class="w"> </span><span class="err">判定に利用する値:</span>
-<span class="w">        </span><span class="err">//</span><span class="w"> </span><span class="err">処理A</span>
-<span class="w">        </span><span class="err">break</span><span class="p">;</span>
-<span class="w">    </span><span class="err">case</span><span class="w"> </span><span class="err">判定に利用する値:</span>
-<span class="w">        </span><span class="err">//</span><span class="w"> </span><span class="err">処理B</span>
-<span class="w">        </span><span class="err">break</span><span class="p">;</span>
-<span class="w">    </span><span class="err">//</span><span class="w"> </span><span class="err">...</span>
-<span class="p">}</span>
-</code></pre></div>
-
 <p>と書くことで、1つの値に対して、複数の条件判定式と、それが真である場合に実行する処理を簡潔に書くことができます。</p>
 <p><em>case</em> の末尾に <em>default</em> 節を置くことで、それより上にある全ての <em>case</em> に一致しない場合の処理を書くことができます。</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">int</span><span class="w"> </span><span class="nt">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">100</span><span class="o">;</span>
-<span class="nt">string</span><span class="w"> </span><span class="nt">message</span><span class="o">;</span>
+<div class="highlight"><pre><span></span><code>int id = 100;
+string message;
 
-<span class="nt">switch</span><span class="w"> </span><span class="o">(</span><span class="nt">id</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="err">case</span><span class="w"> </span><span class="err">-1:</span>
-<span class="w">        </span><span class="err">message</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;dummy</span><span class="w"> </span><span class="err">account&quot;</span><span class="p">;</span>
-<span class="w">        </span><span class="err">break</span><span class="p">;</span>
-<span class="w">    </span><span class="err">case</span><span class="w"> </span><span class="err">0:</span>
-<span class="w">        </span><span class="err">message</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;root</span><span class="w"> </span><span class="err">user&quot;</span><span class="p">;</span>
-<span class="w">        </span><span class="err">break</span><span class="p">;</span>
-<span class="w">    </span><span class="n">default</span><span class="p">:</span>
-<span class="w">        </span><span class="n">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;restricted user&quot;</span><span class="p">;</span>
-<span class="w">        </span><span class="err">break</span><span class="p">;</span>
-<span class="p">}</span>
+switch (id) {
+    case -1:
+        message = &quot;dummy account&quot;;
+        break;
+    case 0:
+        message = &quot;root user&quot;;
+        break;
+    default:
+        message = &quot;restricted user&quot;;
+        break;
+}
 </code></pre></div>
 
 
@@ -11636,7 +11538,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6782,8 +6736,6 @@
       
         
       
-        
-      
     
     
     
@@ -6980,27 +6932,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -7017,8 +6948,6 @@
   
     
     
-      
-        
       
         
       
@@ -7384,27 +7313,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11931,7 +11839,7 @@
 <h2 id="_4">特殊な演算子</h2>
 <h3 id="_5">[ ] 演算子</h3>
 <p>文字列中の指定した位置にある文字を、int値として取得します。指定した位置への代入も可能です。</p>
-<div class="codehilite"><pre><span></span><code>string text = &quot;Hello!&quot;;
+<div class="highlight"><pre><span></span><code>string text = &quot;Hello!&quot;;
 
 // &#39;H&#39; を取得
 int part = text[0];
@@ -11939,10 +11847,9 @@ int part = text[0];
 // &quot;Hello!&quot; を &quot;Hello?&quot; に書き換える
 text[text.Length() - 1] = &#39;?&#39;;
 </code></pre></div>
-
 <h3 id="_6">+ 演算子</h3>
 <p>文字列を連結し、新しい文字列を生成します。</p>
-<div class="codehilite"><pre><span></span><code>string text = &quot;Vket&quot;;
+<div class="highlight"><pre><span></span><code>string text = &quot;Vket&quot;;
 
 // &quot;VketCloud&quot; を生成
 string vketcloud = text + &quot;Cloud&quot;;
@@ -11950,16 +11857,14 @@ string vketcloud = text + &quot;Cloud&quot;;
 // +=演算子で文字列そのものを置き換える
 text += &quot;Cloud&quot;;
 </code></pre></div>
-
 <h3 id="_7">% 演算子</h3>
 <p>一定の書式に沿ったテンプレート文字列に対し、引数として与えた多様な型の値を当てはめ、新たな文字列を生成します。</p>
-<p>以下のサンプルコードのように、数値を文字列に変換することも可能です。</p>
-<div class="codehilite"><pre><span></span><code>int n;
+<p>以下のサンプルコードのように、数値を文字列に変換することも可能です。
+<div class="highlight"><pre><span></span><code>int n;
 string s;
 
 s = &quot;%d&quot; % n;
-</code></pre></div>
-
+</code></pre></div></p>
 <p>文字列中に、"%" で始まる書式文字列を配置することで、% 演算子の引数を順番に適用します。 </p>
 <ul>
 <li>%d</li>
@@ -11969,16 +11874,16 @@ s = &quot;%d&quot; % n;
 <li>%s</li>
 <li>文字列を表現する書式指定子です。</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 1 + 1 = 2</span>
-<span class="nb">int</span><span class="w"> </span><span class="n">answer</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-<span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;1 + 1 = %d\n&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="n">answer</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>// 1 + 1 = 2
+int answer = 2;
+hsSystemOutput(&quot;1 + 1 = %d\n&quot; % answer);
 
-<span class="c1">// VketCloud hello world!</span>
-<span class="nb">string</span><span class="w"> </span><span class="n">hello</span><span class="w">  </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;hello world!&quot;</span><span class="p">;</span>
-<span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;VketCloud %s\n&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="n">hello</span><span class="p">);</span>
+// VketCloud hello world!
+string hello  = &quot;hello world!&quot;;
+hsSystemOutput(&quot;VketCloud %s\n&quot; % hello);
 
-<span class="c1">// &quot;int value = myArray[99];&quot;</span>
-<span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;int %s = %s[%d];\n&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="s">&quot;value&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="s">&quot;myArray&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="mi">99</span><span class="p">);</span>
+// &quot;int value = myArray[99];&quot;
+hsSystemOutput(&quot;int %s = %s[%d];\n&quot; % &quot;value&quot; % &quot;myArray&quot; % 99);
 </code></pre></div>
 
 
@@ -12025,7 +11930,7 @@ s = &quot;%d&quot; % n;
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

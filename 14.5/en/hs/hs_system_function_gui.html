@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     Enabling JS Upload Feature
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample JS Upload
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     Creating Capsule Rectangle Images Using 9-Slice
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control the Canvas element with HeliScript
   </span>
   
 
@@ -6488,8 +6442,6 @@
       
         
       
-        
-      
     
     
     
@@ -6686,27 +6638,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHIT Class
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6725,8 +6656,6 @@
   
     
     
-      
-        
       
         
       
@@ -7387,27 +7316,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11917,8 +11825,8 @@ If not suspended, <code>false</code> will be returned.</p>
 <h3 id="hscanvasaddgui">hsCanvasAddGUI</h3>
 <p><code>void hsCanvasAddGUI(string LayerName, bool IsPortrait, HSGUIModel Model)</code></p>
 <p>Adds a GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.</p>
-<p>HelScript Example:</p>
-<div class="codehilite"><pre><span></span><code>HSGUIModel model;
+<p>HelScript Example:
+<div class="highlight"><pre><span></span><code>HSGUIModel model;
 model = new HSGUIModel();
 model.SetName(&quot;test_button&quot;);
 model.SetShow(true);
@@ -11929,8 +11837,7 @@ size.SetXY(100,100);
 model.SetSize(size);
 model.GetButtonModel().SetFileName(&quot;test_button.png&quot;);
 hsCanvasAddGUI(&quot;HUD&quot;,false,model);
-</code></pre></div>
-
+</code></pre></div></p>
 <p>For details about HSGUIModel class, see <a href="hs_system_function_gui_HSGUIModel.html">HSGUIModel - Summary</a>.</p>
 <hr />
 <h3 id="hscanvassetguisize">hsCanvasSetGUISize</h3>
@@ -11976,42 +11883,34 @@ int UVAreaX, int UVAreaY, int UVAreaWidth, int UVAreaHeight, int L, int R, int T
 <li>When there is a change in the top-level modal window (e.g., pushing a new modal window or popping the current top-level modal window), the newly activated modal window's Z-value is adjusted to bring it to the forefront.</li>
 </ul>
 <h3 id="api-functions">API Functions</h3>
-<div class="codehilite"><pre><span></span><code>hsWindowModalPush(string layerName, bool hideOther);
+<p><div class="highlight"><pre><span></span><code>hsWindowModalPush(string layerName, bool hideOther);
 </code></pre></div>
-
-<p>Push the specified layer as the top-level modal window. The layer becomes visible and enters modal mode.<br />
+Push the specified layer as the top-level modal window. The layer becomes visible and enters modal mode.<br />
 If <code>hideOther = true</code>, other modal windows and their child modeless windows are temporarily hidden.</p>
-<div class="codehilite"><pre><span></span><code>hsWindowModalPop();
+<p><div class="highlight"><pre><span></span><code>hsWindowModalPop();
 </code></pre></div>
-
-<p>Pop the top-level modal window. The modal state reverts to the previous modal window.<br />
+Pop the top-level modal window. The modal state reverts to the previous modal window.<br />
 The layer associated with the popped modal window becomes hidden.<br />
 All child modeless windows of the popped modal window are removed, and their layers are hidden.<br />
 If <code>hideOther = true</code> was set during the push, the temporarily hidden windows are restored to their previous visibility state.</p>
-<div class="codehilite"><pre><span></span><code>hsWindowModalPopUntil(string layerName);
+<p><div class="highlight"><pre><span></span><code>hsWindowModalPopUntil(string layerName);
 </code></pre></div>
-
-<p>Pop modal windows until the specified layer becomes the top-level modal window.</p>
-<div class="codehilite"><pre><span></span><code>hsWindowModelessAdd(string layerName);
+Pop modal windows until the specified layer becomes the top-level modal window.</p>
+<p><div class="highlight"><pre><span></span><code>hsWindowModelessAdd(string layerName);
 </code></pre></div>
-
-<p>Add the specified layer as a child modeless window to the top-level modal window. The visibility state of the layer is not changed.</p>
-<div class="codehilite"><pre><span></span><code>hsWindowModelessRemove(string layerName);
+Add the specified layer as a child modeless window to the top-level modal window. The visibility state of the layer is not changed.</p>
+<p><div class="highlight"><pre><span></span><code>hsWindowModelessRemove(string layerName);
 </code></pre></div>
-
-<p>Remove the specified layer from the child modeless windows of the top-level modal window. The layer becomes hidden.</p>
-<div class="codehilite"><pre><span></span><code>hsWindowModelessShowOnly(string layerName);
+Remove the specified layer from the child modeless windows of the top-level modal window. The layer becomes hidden.</p>
+<p><div class="highlight"><pre><span></span><code>hsWindowModelessShowOnly(string layerName);
 </code></pre></div>
-
-<p>Show only the specified layer among the child modeless windows of the top-level modal window, hiding all others.</p>
-<div class="codehilite"><pre><span></span><code>hsWindowModelessShowAll(bool isShown);
+Show only the specified layer among the child modeless windows of the top-level modal window, hiding all others.</p>
+<p><div class="highlight"><pre><span></span><code>hsWindowModelessShowAll(bool isShown);
 </code></pre></div>
-
-<p>Show or hide all child modeless windows of the top-level modal window. Use <code>isShown</code> to specify the desired visibility state.</p>
-<div class="codehilite"><pre><span></span><code>hsWindowClear();
+Show or hide all child modeless windows of the top-level modal window. Use <code>isShown</code> to specify the desired visibility state.</p>
+<p><div class="highlight"><pre><span></span><code>hsWindowClear();
 </code></pre></div>
-
-<p>Remove all modal windows and their child modeless windows, setting all associated layers to a hidden state.</p>
+Remove all modal windows and their child modeless windows, setting all associated layers to a hidden state.</p>
 
 
 
@@ -12057,7 +11956,7 @@ If <code>hideOther = true</code> was set during the push, the temporarily hidden
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

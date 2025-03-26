@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6617,8 +6571,6 @@
       
         
       
-        
-      
     
     
     
@@ -6815,27 +6767,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6852,8 +6783,6 @@
   
     
     
-      
-        
       
         
       
@@ -7219,27 +7148,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11570,32 +11478,30 @@
 <h2 id="_4">参照の取得</h2>
 <p>関数の引数定義に <em>ref</em> を付与すると、引数の参照渡しを行います。</p>
 <p>つまり、引数を渡した先で代入を行うと、呼び出し元の変数を書き換えることができます。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">void</span><span class="w"> </span><span class="n">RefFunc</span><span class="p">(</span><span class="n">ref</span><span class="w"> </span><span class="n">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">ref</span><span class="w"> </span><span class="n">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
-<span class="w">    </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>void RefFunc(ref int x, ref int y) {
+    x = 100;
+    y = 200;
+}
 
-<span class="n">void</span><span class="w"> </span><span class="n">Test</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="n">int</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+void Test() {
+    int x = 0;
+    int y = 0;
 
-<span class="w">    </span><span class="c1">// 引数をrefで渡す</span>
-<span class="w">    </span><span class="n">RefFunc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+    // 引数をrefで渡す
+    RefFunc(x, y);
 
-<span class="w">    </span><span class="c1">// -&gt; &quot;x=100, y=200&quot;</span>
-<span class="w">    </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;x=%d, y=%d\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
-<span class="p">}</span>
+    // -&gt; &quot;x=100, y=200&quot;
+    hsSystemOutput(&quot;x=%d, y=%d\n&quot; % x % y);
+}
 </code></pre></div>
-
 <h2 id="_5">「文字列」と「文字」</h2>
 <p>ダブルクォーテーション 「""」で囲まれた文字列を、HeliScriptは文字列オブジェクトとして認識します。</p>
 <p>シングルクォーテーション 「''」 で1つの文字を囲むと、それは文字型になります。文字型は、内部的に32bitの整数値として表現されます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 文字列型のオブジェクト</span>
-<span class="nb">string</span><span class="w"> </span><span class="n">str</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;VketCloud&quot;</span><span class="p">;</span>
-<span class="c1">// 文字型 (実際には整数値)</span>
-<span class="nb">int</span><span class="w"> </span><span class="n">chr</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;V&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// 文字列型のオブジェクト
+string str = &quot;VketCloud&quot;;
+// 文字型 (実際には整数値)
+int chr = &#39;V&#39;;
 </code></pre></div>
-
 <h2 id="_6">未初期化の変数の自動初期化</h2>
 <p>変数を定義した際に、初期化を行わなかった場合、型によって以下の初期値が自動で設定されます。</p>
 <table>
@@ -11682,7 +11588,7 @@ bool型の変数に整数値を代入した場合、0は <em>false</em> に、�
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

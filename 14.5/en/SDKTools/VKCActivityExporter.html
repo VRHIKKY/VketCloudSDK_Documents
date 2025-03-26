@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     Enabling JS Upload Feature
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample JS Upload
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     Creating Capsule Rectangle Images Using 9-Slice
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control the Canvas element with HeliScript
   </span>
   
 
@@ -6597,8 +6551,6 @@
       
         
       
-        
-      
     
     
     
@@ -6795,27 +6747,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHIT Class
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6832,8 +6763,6 @@
   
     
     
-      
-        
       
         
       
@@ -7199,27 +7128,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11533,7 +11441,7 @@ This issue is scheduled to be fixed on the next SDK version.<br>
 As a workaround, the json can be manually rewritten after placing the vrm file in the later mentioned data folder.</p>
 </div>
 <p><img alt="VKCActivityExporter_9" src="../../SDKTools/img/VKCActivityExporter_9.jpg" /></p>
-<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
 <span class="w">  </span><span class="nt">&quot;motions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
 <span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -11544,7 +11452,6 @@ As a workaround, the json can be manually rewritten after placing the vrm file i
 <span class="w">      </span><span class="nt">&quot;pose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
 <span class="c1">// ...</span>
 </code></pre></div>
-
 <h2 id="export">Export</h2>
 <p>Selecting the <strong>Export</strong> button on the Activity Exporter will begin the export process.</p>
 <ol>
@@ -11580,7 +11487,7 @@ As a workaround, the json can be manually rewritten after placing the vrm file i
 <h2 id="setting-property-in-activity">Setting Property in Activity</h2>
 <p>When using an Activity in <a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a>, the Activity's <code>Overrides</code>(Property) can be defined to be used in HeliScript.</p>
 <p>To add a new Property, open the json file of the Activity and define a key and value in <code>properties</code> as like below:</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// ...</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// ...</span>
 <span class="w">      </span><span class="nt">&quot;components&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
 <span class="w">      </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">          </span><span class="nt">&quot;isShowVketChan&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span><span class="p">,</span>
@@ -11590,12 +11497,11 @@ As a workaround, the json can be manually rewritten after placing the vrm file i
 <span class="w">      </span><span class="nt">&quot;lookatcamera&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="c1">// ...</span>
 </code></pre></div>
-
 <p>The defined Property will be displayed in <a href="../VKCComponents/VKCItemActivity.html">VKC Item Activity</a> / <code>overrides</code> on loading the Activity's json, which can be used to predefine the Activity's behavior.</p>
 <p><img alt="VKCActivityExporter_8" src="../../SDKTools/img/VKCActivityExporter_8.jpg" /></p>
 <p>Each Property can be called in HeliScript by using <a href="../hs/hs_class_item.html#getproperty">Item.GetProperty()</a> and <a href="../hs/hs_class_item.html#setproperty">Item.SetProperty()</a>.</p>
 <p>Note that Property key and value will always be a <strong>string</strong> value, cast the type to use in other context.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">VketChan</span>
+<div class="highlight"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">VketChan</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span><span class="w"> </span><span class="c1">//Item object itself</span>
 
@@ -11616,7 +11522,6 @@ As a workaround, the json can be manually rewritten after placing the vrm file i
 
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="vkccomponents-available-in-activity">VKCComponents available in Activity</h2>
 <ul>
 <li>
@@ -11751,7 +11656,7 @@ However, as Autoplay cannot be enabled in Activity, the player must manually cli
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

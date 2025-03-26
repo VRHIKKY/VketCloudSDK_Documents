@@ -16,7 +16,7 @@
         <link rel="prev" href="hs_class_timespan.html">
       
       
-        <link rel="next" href="hs_struct_hsraycasthit.html">
+        <link rel="next" href="hs_system_function.html">
       
       
       <link rel="icon" href="../images/Favicon.png">
@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     JS入稿機能の有効化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS入稿のサンプル
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     カプセル長方形の画像を9sliceで作成する
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HeliScriptでCanvas要素を制御する
   </span>
   
 
@@ -6490,8 +6444,6 @@
       
         
       
-        
-      
     
     
     
@@ -6971,27 +6923,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHITクラス
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -7008,8 +6939,6 @@
   
     
     
-      
-        
       
         
       
@@ -7375,27 +7304,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11835,29 +11743,26 @@
 HSMessage を生成し、任意のItemに対して送信することができます。</p>
 <p>HSMessageにはint, float, bool, stringで表現されるデータを保存できます。同時に送信者の情報も設定可能であり、これを利用してメッセージの送受信(往復)も可能になっています。</p>
 <p>なお、HSMessageには自身のインスタンスを戻り値として返すメソッドが多くあるので、以下の例のようにメソッドを繋げて処理を継続することができます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// メッセージを作成する。</span>
-<span class="nx">HSMessage</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">hsCreateSelfMessage</span><span class="p">(</span><span class="s">&quot;EnemyData&quot;</span><span class="p">).</span><span class="nx">AddInt</span><span class="p">(</span><span class="s">&quot;damage&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">120</span><span class="p">).</span><span class="nx">AddBool</span><span class="p">(</span><span class="s">&quot;visible&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
-<span class="c1">// 送信対象のItemへメッセージを送信する</span>
-<span class="nx">Item</span><span class="w"> </span><span class="nx">receiver</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">hsItemGet</span><span class="p">(</span><span class="s">&quot;enemyobj&quot;</span><span class="p">);</span>
-<span class="nx">receiver</span><span class="p">.</span><span class="nx">SendMessage</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>// メッセージを作成する。
+HSMessage message = hsCreateSelfMessage(&quot;EnemyData&quot;).AddInt(&quot;damage&quot;, 120).AddBool(&quot;visible&quot;, false);
+// 送信対象のItemへメッセージを送信する
+Item receiver = hsItemGet(&quot;enemyobj&quot;);
+receiver.SendMessage(message);
 </code></pre></div>
-
 <h2 id="_1">メッセージの送信</h2>
-<p>Item クラスの SendMessage() メソッドを呼び出し、そのItemにメッセージを送信できます。</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Item</span> {
-  <span class="n">public</span> <span class="n">bool</span> <span class="n">SendMessage</span>(<span class="n">HSMessage</span> <span class="nb">message</span>);
+<p>Item クラスの SendMessage() メソッドを呼び出し、そのItemにメッセージを送信できます。
+<div class="highlight"><pre><span></span><code>class Item {
+  public bool SendMessage(HSMessage message);
 }
-</code></pre></div>
-
+</code></pre></div></p>
 <h2 id="_2">メッセージの受信</h2>
 <p>Itemがメッセージを受信すると、そのItemに設定されているコンポーネントの OnReceiveMessage() メソッドが呼び出されます。引数 message に、受信したメッセージの情報が渡されます。</p>
-<div class="codehilite"><pre><span></span><code>component Comp {
+<div class="highlight"><pre><span></span><code>component Comp {
   public void OnReceiveMessage(HSMessage message) {
     // メッセージ受信時の処理
   }
 }
 </code></pre></div>
-
 <hr />
 <h2 id="hsmessage_1">HSMessageのユーティリティー関数</h2>
 <h3 id="hscreatemessage">hsCreateMessage</h3>
@@ -11981,7 +11886,7 @@ HSMessage を生成し、任意のItemに対して送信することができま
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

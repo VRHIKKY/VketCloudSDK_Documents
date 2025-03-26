@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     Enabling JS Upload Feature
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample JS Upload
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     Creating Capsule Rectangle Images Using 9-Slice
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control the Canvas element with HeliScript
   </span>
   
 
@@ -6486,8 +6440,6 @@
       
         
       
-        
-      
     
     
     
@@ -6684,27 +6636,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHIT Class
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6721,8 +6652,6 @@
   
     
     
-      
-        
       
         
       
@@ -7088,27 +7017,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11544,14 +11452,13 @@
 </div>
 <h2 id="1-variable-definition">① Variable Definition</h2>
 <p>In HeliScript, a Json class is provided. Therefore,</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">Json</span><span class="w"> </span><span class="nx">_shopInfo</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Json</span><span class="w"> </span><span class="nx">_shopInfo</span><span class="p">;</span>
 </code></pre></div>
-
 <p>defines a variable of the Json class.</p>
 <h2 id="2-inserting-data-into-json-class-variables">② Inserting Data into Json Class Variables</h2>
 <p>You can insert Json into a Json class variable using <code>hsLoadJson(string)</code>.</p>
 <p>In this case, we use the String-type function <code>GetRawData()</code> provided below.</p>
-<div class="codehilite"><pre><span></span><code><span class="nf">string</span><span class="w"> </span><span class="kt">GetRawData</span><span class="nb">()</span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="nf">string</span><span class="w"> </span><span class="kt">GetRawData</span><span class="nb">()</span><span class="p">{</span>
 <span class="w">    </span><span class="n">return</span>
 <span class="w">    </span><span class="s">&quot;{&quot;</span><span class="w"> </span><span class="o">+</span>
 <span class="w">        </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">status</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">ok</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
@@ -11586,14 +11493,12 @@
 <span class="w">    </span><span class="s">&quot;}&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>The HeliScript code to insert the data looks like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">_shopInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsLoadJson</span><span class="p">(</span><span class="n">GetRawData</span><span class="p">());</span>
+<div class="highlight"><pre><span></span><code><span class="n">_shopInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsLoadJson</span><span class="p">(</span><span class="n">GetRawData</span><span class="p">());</span>
 </code></pre></div>
-
 <h2 id="3-extracting-necessary-information-from-json">③ Extracting Necessary Information from Json</h2>
 <p>The Json used here includes the following hierarchy:</p>
-<div class="codehilite"><pre><span></span><code><span class="err">・</span><span class="n">status</span>
+<div class="highlight"><pre><span></span><code><span class="err">・</span><span class="n">status</span>
 <span class="err">・</span><span class="n">data</span>
 <span class="w">　</span><span class="err">├</span><span class="n">items</span>
 <span class="w">　</span><span class="err">├</span><span class="n">position</span>
@@ -11607,20 +11512,17 @@
 <span class="w">　</span><span class="err">├</span><span class="n">shop_name</span>
 <span class="w">　</span><span class="err">└</span><span class="n">shop_icon</span>
 </code></pre></div>
-
 <p>We'll extract <code>item_id</code> and <code>name</code> in this example.</p>
 <h3 id="1-extracting-data-from-the-overall-json-and-defining-it-as-a-new-json-file">1. Extracting <code>data</code> from the overall Json and defining it as a new Json file</h3>
 <p>Using the <code>Find</code> function defined in the Json class, you can locate and define the content under a specified data type and key as a new Json file.</p>
 <p>Therefore,</p>
-<div class="codehilite"><pre><span></span><code><span class="n">Json</span><span class="w"> </span><span class="n">datablock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_shopInfo</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">EJSONDataType_Block</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="n">Json</span><span class="w"> </span><span class="n">datablock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_shopInfo</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">EJSONDataType_Block</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <p>defines <code>datablock</code> as the Json containing data.</p>
 <h3 id="2-extracting-items-from-data-and-defining-it-as-a-new-json-file">2. Extracting <code>items</code> from <code>data</code> and defining it as a new Json file</h3>
 <p>Similarly, using the <code>Find</code> function, extract <code>items</code> from <code>datablock</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">Json</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datablock</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">EJSONDataType_Array</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;items&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="n">Json</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datablock</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">EJSONDataType_Array</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;items&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 <p>Now, <code>items</code> is a Json file containing items.</p>
 <div class="admonition info">
 <p class="admonition-title">Difference in EJSONDataType</p>
@@ -11630,16 +11532,15 @@ Use <code>Block</code> for elements enclosed in <code>{}</code>, and <code>Array
 <h3 id="3-creating-an-arraylist-from-items">3. Creating an ArrayList from <code>items</code></h3>
 <p>Within <code>items</code>, 15 items are defined.<br />
 To access each element, you need to list them as Json.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">list</span><span class="o">&lt;</span><span class="n">Json</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dataJsons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">items</span><span class="p">.</span><span class="n">GetArrayList</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="n">list</span><span class="o">&lt;</span><span class="n">Json</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dataJsons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">items</span><span class="p">.</span><span class="n">GetArrayList</span><span class="p">();</span>
 </code></pre></div>
-
 <p>This creates <code>dataJsons</code>, listing each of the 15 items in <code>items</code> as separate Json.</p>
 <h3 id="4-extracting-data-from-each-element-of-the-item">4. Extracting data from each element of the item</h3>
 <p>After these preparations, you can finally extract the data.</p>
 <p>For extraction, use functions like <code>FindValueString</code> and <code>FindValueInt</code>, tailored to the type of data you're extracting.</p>
 <p>With these functions, you can assign values from specified items to variables.<br />
 Therefore, the code would look like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">itemId</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable to store item_id</span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">itemId</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable to store item_id</span>
 <span class="kt">string</span><span class="w"> </span><span class="n">itemName</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable to store name</span>
 
 <span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dataJsons</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span><span class="w"> </span><span class="c1">// Loop through each item</span>
@@ -11650,9 +11551,8 @@ Therefore, the code would look like this:</p>
 <span class="w">  </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;dataJsons[%d] item_id : %d , name : %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="n">itemId</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">itemName</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Summarizing the code, it looks like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">SetProductData</span>
+<div class="highlight"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">SetProductData</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">Json</span><span class="w"> </span><span class="n">_shopInfo</span><span class="p">;</span>
 
@@ -11718,12 +11618,10 @@ Therefore, the code would look like this:</p>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>When executed, this code produces the following output:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">dataJsons</span><span class="p">[</span><span class="m">0</span><span class="p">]</span><span class="w"> </span><span class="n">item_id</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Test</span><span class="w"> </span><span class="n">Test</span>
+<div class="highlight"><pre><span></span><code><span class="n">dataJsons</span><span class="p">[</span><span class="m">0</span><span class="p">]</span><span class="w"> </span><span class="n">item_id</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Test</span><span class="w"> </span><span class="n">Test</span>
 <span class="n">dataJsons</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="n">item_id</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Test2</span><span class="w"> </span><span class="n">Test2</span>
 </code></pre></div>
-
 <h2 id="caution">Caution</h2>
 <p>When handling Json, there's a possibility of malfunction with <code>Shift_JIS</code> depending on the incoming data. Therefore, it's recommended to use <code>UTF-8</code> for <code>.hs</code> file encoding.</p>
 <p>Moreover, using <a href="JsVal.html">JsVal</a> for reading can offer greater convenience.</p>
@@ -11772,7 +11670,7 @@ Therefore, the code would look like this:</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

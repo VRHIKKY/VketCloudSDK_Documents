@@ -873,8 +873,6 @@
       
         
       
-        
-      
     
     
     
@@ -1214,8 +1212,6 @@
       
         
       
-        
-      
     
     
     
@@ -1256,27 +1252,6 @@
   
   <span class="md-ellipsis">
     Enabling JS Upload Feature
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample JS Upload
   </span>
   
 
@@ -1705,27 +1680,6 @@
   
   <span class="md-ellipsis">
     Creating Capsule Rectangle Images Using 9-Slice
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../WorldMakingGuide/HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control the Canvas element with HeliScript
   </span>
   
 
@@ -6490,8 +6444,6 @@
       
         
       
-        
-      
     
     
     
@@ -7263,15 +7215,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#iscollisiondetection" class="md-nav__link">
-    <span class="md-ellipsis">
-      IsCollisionDetection
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -7370,27 +7313,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHIT Class
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -7407,8 +7329,6 @@
   
     
     
-      
-        
       
         
       
@@ -7774,27 +7694,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -12599,15 +12498,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#iscollisiondetection" class="md-nav__link">
-    <span class="md-ellipsis">
-      IsCollisionDetection
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -12636,13 +12526,11 @@
 <p>Item class has various methods to operate the obtained Item object.</p>
 <h2 id="how-to-get-item-class-object-from-component">How to get Item class object from component</h2>
 <p>The Item class object held by the component is obtainable by making the following call from the method in the component.</p>
-<div class="codehilite"><pre><span></span><code>Item myItem = hsItemGet(&quot;Item name&quot;);
+<div class="highlight"><pre><span></span><code>Item myItem = hsItemGet(&quot;Item name&quot;);
 </code></pre></div>
-
-<p>Calling hsItemGetSelf() will obtain the Item instance of the script's current component.</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">Item</span><span class="w"> </span><span class="nx">myitem</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">hsItemGetSelf</span><span class="p">();</span>
-</code></pre></div>
-
+<p>Calling hsItemGetSelf() will obtain the Item instance of the script's current component.
+<div class="highlight"><pre><span></span><code>Item myitem = hsItemGetSelf();
+</code></pre></div></p>
 <hr />
 <h2 id="item-utility-functions">Item utility functions</h2>
 <h3 id="hsitemget">hsItemGet</h3>
@@ -13487,10 +13375,6 @@ The method can be called by designating the Componentname and MethodName. the Pa
 <li><a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a></li>
 </ul>
 </details>
-<h3 id="iscollisiondetection">IsCollisionDetection</h3>
-<p><code>public bool IsCollisionDetection()</code></p>
-<p>Retrieves whether collision detection is enabled for individual items.<br />
-If true, the item will be subject to collision detection with a ray using the hsItemRaycast() function.</p>
 
 
 
@@ -13536,7 +13420,7 @@ If true, the item will be subject to collision detection with a ray using the hs
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

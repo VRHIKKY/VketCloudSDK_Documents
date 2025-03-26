@@ -875,8 +875,6 @@
       
         
       
-        
-      
     
     
     
@@ -1218,8 +1216,6 @@
       
         
       
-        
-      
     
     
     
@@ -1260,27 +1256,6 @@
   
   <span class="md-ellipsis">
     Enabling JS Upload Feature
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../WorldMakingGuide/JsUpload_Sample.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sample JS Upload
   </span>
   
 
@@ -1818,27 +1793,6 @@
   
   <span class="md-ellipsis">
     Creating Capsule Rectangle Images Using 9-Slice
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="HeliscriptCanvas.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control the Canvas element with HeliScript
   </span>
   
 
@@ -6599,8 +6553,6 @@
       
         
       
-        
-      
     
     
     
@@ -6797,27 +6749,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_struct_hsraycasthit.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HSRaycastHIT Class
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -6834,8 +6765,6 @@
   
     
     
-      
-        
       
         
       
@@ -7201,27 +7130,6 @@
   
   <span class="md-ellipsis">
     Cookie
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hs/hs_system_function_raycast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raycast
   </span>
   
 
@@ -11523,7 +11431,7 @@ The following steps can be taken to avoid them:<br>
 </ol>
 <h3 id="javascript-implementation">JavaScript Implementation</h3>
 <p>On the JavaScript side, the <code>rxjs</code> library is used to handle reactive data processing. The keyboard input events are monitored, and the data is sent to HeliScript based on state changes.</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Subject</span><span class="p">,</span><span class="w"> </span><span class="nx">zipWith</span><span class="p">,</span><span class="w"> </span><span class="nx">groupBy</span><span class="p">,</span><span class="w"> </span><span class="nx">distinctUntilChanged</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rxjs</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Subject</span><span class="p">,</span><span class="w"> </span><span class="nx">zipWith</span><span class="p">,</span><span class="w"> </span><span class="nx">groupBy</span><span class="p">,</span><span class="w"> </span><span class="nx">distinctUntilChanged</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rxjs</span><span class="p">;</span>
 <span class="c1">// Data received from the in-game side flows into fromIngame$</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">fromIngame$</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Subject</span><span class="p">();</span>
 <span class="c1">// Handler for data sent from in-game</span>
@@ -11575,7 +11483,6 @@ The following steps can be taken to avoid them:<br>
 <span class="w">  </span><span class="nx">receiveData</span><span class="p">,</span>
 <span class="p">};</span>
 </code></pre></div>
-
 <ul>
 <li>
 <p><strong>handleKeyEvent() Function:</strong></p>
@@ -11593,7 +11500,7 @@ The following steps can be taken to avoid them:<br>
 </ul>
 <h3 id="heliscript-implementation">HeliScript Implementation</h3>
 <p>In HeliScript, the state of the keyboard input is monitored and sent to JavaScript. Additionally, data from JavaScript is received and processed accordingly.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Delegate declaration. Takes the data received from JavaScript as an argument and returns nothing.</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Delegate declaration. Takes the data received from JavaScript as an argument and returns nothing.</span>
 <span class="k">delegate</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">fJsValCallback</span><span class="p">(</span><span class="n">JsVal</span><span class="p">);</span>
 
 <span class="c1">// Declares the JavaScript console object externally, providing a function to log messages.</span>
@@ -11677,7 +11584,6 @@ The following steps can be taken to avoid them:<br>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <ul>
 <li>
 <p><strong>keyLogging Component:</strong></p>
@@ -11739,7 +11645,7 @@ The following steps can be taken to avoid them:<br>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
