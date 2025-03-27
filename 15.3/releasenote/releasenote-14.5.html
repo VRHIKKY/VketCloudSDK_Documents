@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#version-1456" class="md-skip">
+        <a href="#version-1457" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -7481,6 +7481,8 @@
       
         
       
+        
+      
     
     
     
@@ -7508,6 +7510,27 @@
             v15.x
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="releasenote-15.3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v15.3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -7690,9 +7713,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="SDK(Unityでワールドを作るためのEditor拡張ツール)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       修正された不具合
@@ -7700,22 +7724,9 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      パーティクルエディター
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      その他の不具合（無限ロード）
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -11535,9 +11546,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="SDK(Unityでワールドを作るためのEditor拡張ツール)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       修正された不具合
@@ -11545,22 +11557,9 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      パーティクルエディター
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      その他の不具合（無限ロード）
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -11579,9 +11578,16 @@
                   
 
 
-<h1 id="version-1456">Version 14.5.6</h1>
+<h1 id="version-1457">Version 14.5.7</h1>
 <h2 id="sdkunityeditor">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
-<h2 id="_1">修正された不具合</h2>
+<h3 id="_1">修正された不具合</h3>
+<ul>
+<li>HeliodorLibが15.3の時に、ローカルビルド(Build And Run)時に、インゲームが適切にロードされない不具合を修正しました。</li>
+</ul>
+<hr />
+<h1 id="version-1456">Version 14.5.6</h1>
+<h2 id="sdkunityeditor_1">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
+<h2 id="_2">修正された不具合</h2>
 <p>以下14.4.12でロールバックされた機能が14.5.6で機能が復活いたしました<br></p>
 <ul>
 <li>VKC Item ObjectのPickable</li>
@@ -11591,11 +11597,11 @@
 <li>VKC Setting PlayerのDespawn Height(y)</li>
 <li>VKC Item FieldのForce Collider Disable</li>
 </ul>
-<h2 id="_2">パーティクルエディター</h2>
+<h2 id="_3">パーティクルエディター</h2>
 <p>プロパティの数値入力欄をクリックし、数値を入力しても、数値が正常に反映されない不具合が修正されました。<br>
-また、操作後はチェックボックスへの入力などが正常に行えなくなる不具合も修正されました<br></p>
+また、操作後はチェックボックスへの入力などが正常に行えなくなる不具合も修正されました。<br></p>
 <p>ただ、注意点として、SDK14.5.6時点でも、画面解像度が100%より上ですと、不具合が再発する可能性がありまますので、「ディスプレイ」の設定から画面解像度を100%に設定してください。</p>
-<h2 id="_3">その他の不具合（無限ロード）</h2>
+<h2 id="_4">その他の不具合（無限ロード）</h2>
 <p>SDK14.4.12を新規に導入した際、もしくは、Install WizardでSDK13.7.7→SDK14.4.12、SDK14.2.1→SDK14.4.12にアップデートした際に、ロードが終わらない場合がありました。<br></p>
 <p>こちらは、SDK13.7.7 -&gt; 14.5.6にアップデートする際は、無限ロード問題が修正されました。<br></p>
 <p>ただし、SDK14.2.1、14.4.12　-&gt; SDK14.5.6の場合は以前と、無限ロードは修正されておりません。<br></p>
