@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 15.2
 
+## 2025年4月4日更新
+
+## 2025年4月4日 - 編集されたページ
+
+- HeliScript
+    - 文法と制御構文
+        - [スコープ・定義](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_scope_def.html)
+            - ページの全体的改訂を実施いたしました
+
+---
+
 ## 2025年3月26日更新
 
 ## 2025年3月26日 - 編集されたページ
