@@ -600,6 +600,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v15.x:
+        - v15.3: releasenote/releasenote-15.3.md
         - v15.2: releasenote/releasenote-15.2.md
         - v15.1: releasenote/releasenote-15.1.md
         - v15.0: releasenote/releasenote-15.0.md
