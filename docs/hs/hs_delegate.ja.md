@@ -26,6 +26,36 @@ delegate int PerformAction(string text, bool flag);
 delegate int PerformAction(string, bool);
 ```
 
+!!! warning "引数として使用できる型は、基本型の*int*,*float*,*bool*,*string*と、 *JsVal*のみです"
+    カスタムクラスやその他の型は引数として使用できません。
+
+    ```
+    // 引数にカスタムクラスは使用できません。
+    // delegate int PerformAction(CustomData);
+
+    class CustomData{}
+    ```
+
+!!! warning "グローバルスコープで宣言と定義をしてください"
+    delegateはグローバルスコープで宣言する必要があります。
+    また、delegate型の変数定義もグローバルスコープである必要があります。
+
+    ```
+    // グローバルスコープなので宣言可能
+    delegate void fCallback();
+
+    // グローバルスコープなので定義可能
+    fCallback SimpleCallback;
+
+    class SampleClass{
+        // クラススコープなので宣言できません
+        // delegate void fBoolCallback(bool);
+
+        // クラススコープなので定義できません。
+        // fCallback MyCallback;
+    }
+    ```
+
 ## デリゲートを利用する
 
 delegate型変数に関数を登録し、呼び出すコード例です。
