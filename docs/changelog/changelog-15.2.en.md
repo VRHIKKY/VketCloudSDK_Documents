@@ -6,7 +6,7 @@
 
 - HeliScript
     - Built-in Classes And Functions
-        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_delegate.html)
+        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_class_item.html)
             - Added annotations to the delegate.
 
 ---

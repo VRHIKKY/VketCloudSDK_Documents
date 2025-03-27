@@ -6,7 +6,7 @@
 
 - HeliScript
     - 組み込みクラス・関数
-        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_delegate.html)
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html)
             - デリゲートに注釈を追記しました
 
 ---
