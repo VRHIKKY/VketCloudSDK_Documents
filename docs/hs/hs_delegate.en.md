@@ -26,6 +26,36 @@ delegate int PerformAction(string text, bool flag);
 delegate int PerformAction(string, bool);
 ```
 
+!!! warning "Only basic types int, float, bool, string, and JsVal can be used as arguments"
+    Custom classes and other types cannot be used as arguments.
+
+    ```
+    // Custom classes cannot be used as arguments
+    // delegate int PerformAction(CustomData);
+
+    class CustomData{}
+    ```
+
+!!! warning "Declare and define in the global scope"
+    Delegates must be declared in the global scope.
+    Additionally, delegate type variable definitions must also be in the global scope.
+
+    ```
+    // Declaration possible in global scope
+    delegate void fCallback();
+
+    // Definition possible in global scope
+    fCallback SimpleCallback;
+
+    class SampleClass{
+        // Cannot declare in class scope
+        // delegate void fBoolCallback(bool);
+
+        // Cannot define in class scope
+        // fCallback MyCallback;
+    }
+    ```
+
 ## Using a Delegate
 
 Here is an example of code that registers and invokes a function using a delegate type variable.
