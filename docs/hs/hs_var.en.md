@@ -34,23 +34,54 @@ If *ref* is added to the argument definition of a function, the argument will be
 
 As such, you can change the variable of the calling function by assigning the variable at the destination of the argument.
 
-```
-void RefFunc(ref int x, ref int y) {
-     x = 100;
-     y = 200;
-}
+??? quote "Code example of *ref*"
+     ```
+     void RefFunc(ref int x, ref int y) {
+          x = 100;
+          y = 200;
+     }
 
-void Test() {
-     int x = 0;
-     int y = 0;
-    
-     // pass arguments by ref
-     RefFunc(x, y);
-    
-     // -> "x=100, y=200"
-     hsSystemOutput("x=%d, y=%d\n" %x%y);
-}
-```
+     void Test() {
+          int x = 0;
+          int y = 0;
+     
+          // pass arguments by ref
+          RefFunc(x, y);
+     
+          // -> "x=100, y=200"
+          hsSystemOutput("x=%d, y=%d\n" %x%y);
+     }
+     ```
+
+Additionally, within a class method, this allows you to reference the current instance itself.
+
+??? quote "Code example of *this*"
+    ```
+    Printer printer = new Printer();
+    Person person = new Person();
+    person.Construct(20);
+
+    // -> "age: 20"
+    person.PrintAge(printer);
+
+    class Person{
+        public int Age;
+
+        public void Construct(int age){
+            Age = age;
+        }
+
+        public void PrintAge(Printer printer){
+            printer.PrintAge(this);
+        }
+    }
+
+    class Printer{
+        public void PrintAge(Person person){
+            hsSystemWriteLine("age: %d" % person.Age); 
+        }
+    }
+    ```
 
 ## "string" and 'character'
 
@@ -93,3 +124,9 @@ Converts integer-type variable values to string.
 `public string ToString()`
 
 Converts float-type variable values to string.
+
+### bool.ToString()
+
+`public string ToString()`
+
+Converts bool-type variable values to string.
