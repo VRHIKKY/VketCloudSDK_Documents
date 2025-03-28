@@ -4,6 +4,10 @@
 
 ## 2025年3月28日 - 編集されたページ
 
+- HeliScript
+    - 組み込み型
+        - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
+            - 'this'によるインスタンス自身の参照取得について説明追加しました
 - ワールド制作ガイド
     - [ReplaceTextureでテクスチャの差し替えが正常に出来ない](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/ReplaceTexture.html)
         - トラブルシューティングのケースを追加しました
@@ -32,7 +36,7 @@
     - VKC Node
         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCNodeCollider.html)
             - 画像リンク・文言を修正
-
+            
 ---
 
 ## 2025年3月21日更新

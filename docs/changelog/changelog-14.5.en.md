@@ -4,6 +4,10 @@
 
 ## March 28 2025 - Edited Page
 
+- HeliScript
+    - Built-in Types
+        - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
+            - Added explanation about referencing the instance itself using 'this'
 - World Making Guide
     - [ReplaceTexture Unexpectedly Replaces Other Textures](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_operator.html)
         - Add Trouble Shooting Case
