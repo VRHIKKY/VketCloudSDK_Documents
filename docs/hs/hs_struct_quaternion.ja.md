@@ -56,6 +56,25 @@ class Quaternion
 
 グローバル関数。オイラー角の x, y, z の3要素からクォータニオンを生成する。
 
+!!! warning "Unityのオイラー角と見た目を合わせる"
+    Unity では、Z 軸、X 軸、Y 軸の順にオイラー角回転を行います。<br>
+    Vket Cloudエンジンと順序が異なるため、Unityの設定値と見た目を合わせるには下記コードを参照してください。
+
+    ??? quote "コードサンプル"
+        ```
+        Quaternion CreateQuaternionEuler(float x, float y, float z)
+        {
+            Quaternion XRot = makeQuaternionXRotation(hsMathDegToRad(x));
+            Quaternion YRot = makeQuaternionYRotation(hsMathDegToRad(y));
+            Quaternion ZRot = makeQuaternionZRotation(hsMathDegToRad(z));
+
+            Quaternion YXRot = makeQuaternionMul(YRot, XRot);
+            Quaternion YXZRot = makeQuaternionMul(YXRot, ZRot);
+
+            return YXZRot;
+        }
+        ```
+
 ### makeQuaternionFromTo
 
 `Quaternion makeQuaternionFromTo(Vector3 From, Vector3 To)`
