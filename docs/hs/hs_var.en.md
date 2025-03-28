@@ -124,3 +124,9 @@ Converts integer-type variable values to string.
 `public string ToString()`
 
 Converts float-type variable values to string.
+
+### bool.ToString()
+
+`public string ToString()`
+
+Converts bool-type variable values to string.
