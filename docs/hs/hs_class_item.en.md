@@ -722,7 +722,7 @@ Replace the Item by the designated model data.
 
 Replace the texture attached to the MaterialName's material by the designated URL content.
 
-Related Page: [ReplaceTexture Unexpectedly Replaces Other Textures](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html)
+Related Page: [Texture Replacement Issues with ReplaceTexture](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html)
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)

@@ -101,6 +101,9 @@ Layerを削除する予定をします。
 
 指定したテキスト要素のテキストを設定する。
 
+!!! warning "テキスト内のカンマ「,」使用について"
+    現在テキスト内にてカンマ「,」を使用すると、テキストが表示されない不具合が発生することを確認しています。カンマ「,」の使用は避けてください。
+
 ### hsCanvasSetGUITextAlignment
 
 `bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)`
@@ -127,15 +130,15 @@ Layerを削除する予定をします。
 
 ### hsCanvasResetToggleDefault
 
-`bool hsCanvasResetToggleDefault(string name)`
+`bool hsCanvasResetToggleDefault(string toggleName)`
 
-名前で指定したGUI要素をデフォルトの状態にリセットする。
+名前で指定したトグルをデフォルトの状態にリセットする。
 
 ### hsCanvasToggleChange
 
-`bool hsCanvasToggleChange(string name)`
+`bool hsCanvasToggleChange(string toggleName)`
 
-名前で指定したGUI要素の状態を切り替える。
+名前で指定したトグルの状態を切り替える。
 
 ### hsCanvasWorldToScreenPos
 
