@@ -51,6 +51,9 @@ Gets the GUI element's position value.
 
 Sets a string to the Canvas specified by name.
 
+!!! warning "About using commas (,) in text"
+    We have confirmed that there is currently a bug where text display fails when commas (,) are used in the text.Please avoid using commas (,).
+
 ### hsCanvasSetGUITextAlignment
 
 `bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)`
