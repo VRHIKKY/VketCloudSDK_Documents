@@ -7,7 +7,7 @@
 - HeliScript
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html)
-            - デリゲートに注釈を追記しました
+            - GetWorldRotateの説明に軸範囲詳細追記
 
 ---
 
