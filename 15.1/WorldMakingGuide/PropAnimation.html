@@ -1325,6 +1325,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1381,11 +1385,53 @@
   
   
     <li class="md-nav__item">
-      <a href="JsUpload_Sample.html" class="md-nav__link">
+      <a href="JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    JS入稿のサンプル
+    ワールド入場時間を制限する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web APIを使用し現在の天気を取得する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS入稿のチュートリアルシーン
   </span>
   
 
@@ -6752,6 +6798,8 @@
       
         
       
+        
+      
     
     
     
@@ -7074,6 +7122,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7367,7 +7436,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptでJsonを読み込む
+    HeliScriptでJsonを扱う
   </span>
   
 
@@ -11641,7 +11710,7 @@ StopItemはパーティクルやサウンドを止めるのに使うことがで
 <p>HeliScriptを使用して、アニメーションの制御を行うことができます。<br>
 例として、以下のように3秒ごとにアニメーションの再生を繰り返すHeliScriptが作成できます。</p>
 <p>ここでは<a href="../hs/hs_class_item.html">Itemクラス</a>のChangeMotion()を使用して<a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>内のモーションを制御しています。<br></p>
-<div class="codehilite"><pre><span></span><code>component SwitchAnimation
+<div class="highlight"><pre><span></span><code>component SwitchAnimation
 {
     // 回転キューブ
     Item m_RotationCube;
@@ -11675,7 +11744,6 @@ StopItemはパーティクルやサウンドを止めるのに使うことがで
     }
 }
 </code></pre></div>
-
 <p>作成したHeliScriptは、VKC Attribute Scriptを使用してワールド内に配置します。</p>
 <p><img alt="PropAnimation_27" src="img/PropAnimation_27.jpg" /></p>
 <p>ワールドをビルドすると、該当のHeliScriptが動作してアニメーションを制御します。</p>
@@ -11725,7 +11793,7 @@ StopItemはパーティクルやサウンドを止めるのに使うことがで
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

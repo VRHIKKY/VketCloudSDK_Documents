@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6868,6 +6914,8 @@
       
         
       
+        
+      
     
     
     
@@ -7190,6 +7238,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7483,7 +7552,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11731,21 +11800,19 @@ A delegate type variable can store a reference to a function and also call a sto
 <h2 id="declaring-a-delegate">Declaring a Delegate</h2>
 <p>To use a delegate, you need to declare a delegate type by specifying the function's signature (return type and parameter types).</p>
 <p>A delegate type is declared in the following format:</p>
-<div class="codehilite"><pre><span></span><code>delegate &quot;ReturnType&quot; &quot;DelegateTypeName&quot;(&quot;Parameter1&quot;, &quot;Parameter2&quot;, ...);
+<div class="highlight"><pre><span></span><code>delegate &quot;ReturnType&quot; &quot;DelegateTypeName&quot;(&quot;Parameter1&quot;, &quot;Parameter2&quot;, ...);
 </code></pre></div>
-
 <p>Here is an example of declaring a specific delegate type.
  In this example, a <code>PerformAction</code> type is defined with a return type of <code>int</code>, the first parameter type is <code>string</code>, and the second parameter type is <code>bool</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Declare the PerformAction delegate type</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Declare the PerformAction delegate type</span>
 <span class="k">delegate</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">PerformAction</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">flag</span><span class="p">);</span>
 
 <span class="c1">// The parameter names are optional, so it can also be declared like this</span>
 <span class="k">delegate</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">PerformAction</span><span class="p">(</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="using-a-delegate">Using a Delegate</h2>
 <p>Here is an example of code that registers and invokes a function using a delegate type variable.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Declare the PerformAction delegate type</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Declare the PerformAction delegate type</span>
 <span class="k">delegate</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">PerformAction</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">flag</span><span class="p">);</span>
 
 <span class="c1">// Define a variable of PerformAction type</span>
@@ -11757,13 +11824,12 @@ A delegate type variable can store a reference to a function and also call a sto
 <span class="c1">// Invoke the registered function (TestFunc)</span>
 <span class="n">action</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="registering-functions">Registering Functions</h2>
 <ul>
 <li>To register a function to a delegate type variable, you need to prefix the function name with "&amp;".</li>
 <li>When registering a class method to a delegate type variable, you can use the method name directly.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Define a function</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Define a function</span>
 <span class="kt">int</span><span class="w"> </span><span class="nf">TestFunc</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">flag</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// ...</span>
 <span class="p">}</span>
@@ -11771,8 +11837,7 @@ A delegate type variable can store a reference to a function and also call a sto
 <span class="c1">// Prefix the function name with &quot;&amp;&quot;</span>
 <span class="n">PerformAction</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">TestFunc</span><span class="p">;</span>
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="c1">// Define a class method</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Define a class method</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">SampleClass</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">TestMethod</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">flag</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// ...</span>
@@ -11783,12 +11848,11 @@ A delegate type variable can store a reference to a function and also call a sto
 <span class="n">SampleClass</span><span class="w"> </span><span class="n">sample</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SampleClass</span><span class="p">();</span>
 <span class="n">PerformAction</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sample</span><span class="p">.</span><span class="n">TestMethod</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="additional-information">Additional Information</h2>
 <h3 id="delegates-as-value-types">Delegates as Value Types</h3>
 <p>Delegates are value types, therefore these can be created without calling <code>new</code>. Also, <code>null</code> cannot be assigned to a delegate type variable.</p>
 <p>When a delegate type variable is assigned to another variable or passed as a function argument, the content of the delegate type variable is copied to the new variable.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// No need to use new during initialization</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// No need to use new during initialization</span>
 <span class="n">PerformAction</span><span class="w"> </span><span class="n">action</span><span class="p">;</span>
 
 <span class="c1">// Define another delegate type variable and assign the previous one. This will perform a copy.</span>
@@ -11797,7 +11861,6 @@ A delegate type variable can store a reference to a function and also call a sto
 <span class="c1">// Changes made to action2nd will not affect action, and vice versa.</span>
 <span class="n">action2nd</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">DummyFunc</span><span class="p">;</span>
 </code></pre></div>
-
 <h3 id="return-values-when-multiple-functions-are-executed">Return Values When Multiple Functions Are Executed</h3>
 <p>When calling a delegate that has multiple registered functions with return values, the returned value will be from the last registered function.</p>
 <hr />
@@ -11885,7 +11948,7 @@ A delegate type variable can store a reference to a function and also call a sto
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

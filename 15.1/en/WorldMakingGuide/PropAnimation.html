@@ -1325,6 +1325,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1381,11 +1385,53 @@
   
   
     <li class="md-nav__item">
-      <a href="JsUpload_Sample.html" class="md-nav__link">
+      <a href="JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1708,7 +1754,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6752,6 +6798,8 @@
       
         
       
+        
+      
     
     
     
@@ -7074,6 +7122,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7367,7 +7436,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11625,41 +11694,40 @@ As a substitute implementation to stop an animation, PlayItem can be used to <a 
 <p>Animation can be controlled using HeliScript. <br>
 As an example, you can create a HeliScript that repeats animation playback every 3 seconds as shown below.</p>
 <p>Here, ChangeMotion() of <a href="../hs/hs_class_item.html">Item class</a> is used to control the motion in <a href="../VKCComponents/VKCItemObject.html">VKC Item Object</a>. <br></p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">SwitchAnimation</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="n">rotating</span><span class="w"> </span><span class="n">cube</span>
-<span class="w">    </span><span class="n">Item</span><span class="w"> </span><span class="n">m_RotationCube</span><span class="p">;</span>
-<span class="w">    </span><span class="nb nb-Type">float</span><span class="w"> </span><span class="n">m_ParseTime</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>component SwitchAnimation
+{
+    // rotating cube
+    Item m_RotationCube;
+    float m_ParseTime;
 
-<span class="w">    </span><span class="nb nb-Type">bool</span><span class="w"> </span><span class="n">isMotionChangeTriggered</span><span class="p">;</span>
+    bool isMotionChangeTriggered;
 
-<span class="w">    </span><span class="n">public</span><span class="w"> </span><span class="n">SwitchAnimation</span><span class="p">()</span><span class="w"> </span><span class="o">//</span><span class="n">constructor</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">m_RotationCube</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s2">&quot;CubeRotation_HEO&quot;</span><span class="p">);</span><span class="w"> </span><span class="o">//</span><span class="n">Enter</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">which</span><span class="w"> </span><span class="n">VKC</span><span class="w"> </span><span class="n">Item</span><span class="w"> </span><span class="nb nb-Type">Object</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">attached</span>
-<span class="w">    </span><span class="p">}</span>
+    public SwitchAnimation() //constructor
+    {
+        m_RotationCube = hsItemGet(&quot;CubeRotation_HEO&quot;); //Enter the object name to which VKC Item Object is attached
+    }
 
-<span class="w">    </span><span class="n">public</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">Update</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">m_ParseTime</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">hsSystemGetDeltaTime</span><span class="p">();</span>
+    public void Update()
+    {
+        m_ParseTime += hsSystemGetDeltaTime();
 
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">m_ParseTime</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">3.0</span><span class="n">f</span><span class="p">)</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isMotionChangeTriggered</span><span class="p">)</span>
-<span class="w">            </span><span class="p">{</span>
-<span class="w">                </span><span class="n">m_RotationCube</span><span class="o">.</span><span class="n">ChangeMotion</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">);</span>
-<span class="w">                </span><span class="n">isMotionChangeTriggered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">false</span><span class="p">;</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">            </span><span class="k">else</span>
-<span class="w">            </span><span class="p">{</span>
-<span class="w">                </span><span class="n">m_RotationCube</span><span class="o">.</span><span class="n">ChangeMotion</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">);</span>
-<span class="w">                </span><span class="n">isMotionChangeTriggered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">true</span><span class="p">;</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">            </span><span class="n">m_ParseTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="n">f</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+        if (m_ParseTime &gt;= 3.0f)
+        {
+            if (isMotionChangeTriggered)
+            {
+                m_RotationCube.ChangeMotion(&quot;0&quot;);
+                isMotionChangeTriggered = false;
+            }
+            else
+            {
+                m_RotationCube.ChangeMotion(&quot;1&quot;);
+                isMotionChangeTriggered = true;
+            }
+            m_ParseTime = 0.0f;
+        }
+    }
+}
 </code></pre></div>
-
 <p>Place the created HeliScript in the world using VKC Attribute Script.</p>
 <p><img alt="PropAnimation_27" src="../../WorldMakingGuide/img/PropAnimation_27.jpg" /></p>
 <p>On world build, the corresponding HeliScript will run and control the animation.</p>
@@ -11709,7 +11777,7 @@ As an example, you can create a HeliScript that repeats animation playback every
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6713,6 +6759,8 @@
       
         
       
+        
+      
     
     
     
@@ -7035,6 +7083,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7328,7 +7397,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11428,16 +11497,14 @@ Unity: 2022.3.6.f1  </p>
 </div>
 <h2 id="initialization">Initialization</h2>
 <p>When assigning the earliest value to the <code>Date</code> type:</p>
-<div class="codehilite"><pre><span></span><code><span class="nb">Date</span><span class="w"> </span><span class="nx">_newDate</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">Date</span><span class="w"> </span><span class="nx">_newDate</span><span class="p">;</span>
 <span class="nx">_newDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">hsCreateDateUTC</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">);</span>
 </code></pre></div>
-
 <p>This will not assign the expected value (it will instead use the current timestamp).  </p>
 <p>Instead, specify <code>1970-01-01 00:00:00.000</code> explicitly as follows:</p>
-<div class="codehilite"><pre><span></span><code><span class="nb">Date</span><span class="w"> </span><span class="nx">_newDate</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">Date</span><span class="w"> </span><span class="nx">_newDate</span><span class="p">;</span>
 <span class="nx">_newDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">hsCreateDateUTC</span><span class="p">(</span><span class="mf">1970</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">);</span>
 </code></pre></div>
-
 <h2 id="date-type-lists-do-not-function-properly">Date Type Lists Do Not Function Properly</h2>
 <p>When creating a list of <code>Date</code> type, attempting to assign <code>Date</code> objects (e.g., using <code>hsCreateDate()</code>) to list elements results in the error:</p>
 <blockquote>
@@ -11445,7 +11512,7 @@ Unity: 2022.3.6.f1  </p>
 </blockquote>
 <p><img alt="DateSpecialSpecifications" src="../../FAQ/img/DateSpecialSpecifications.jpg" /></p>
 <p>To create a list of dates, use a list of <code>string</code> instead. Convert <code>Date</code> to <code>string</code> using <code>ToString()</code>, and when you need to use them as <code>Date</code> objects, parse them back with <code>hsParseDate()</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Creating a &quot;Date type list&quot; (workaround)</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Creating a &quot;Date type list&quot; (workaround)</span>
 <span class="nx">list</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span><span class="w"> </span><span class="nx">_dateList</span><span class="p">;</span>
 <span class="nx">_dateList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">list</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
 
@@ -11463,7 +11530,6 @@ Unity: 2022.3.6.f1  </p>
 <span class="c1">// Retrieve the 6th element of the &quot;Date type list&quot; (workaround)</span>
 <span class="nx">_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">hsParseDate</span><span class="p">(</span><span class="nx">_dateList</span><span class="p">[</span><span class="nx">_index</span><span class="p">]);</span>
 </code></pre></div>
-
 <h2 id="precautions-when-initializing-with-string">Precautions When Initializing with <code>string</code></h2>
 <p>When using <code>hsParseDate()</code> to create a <code>Date</code> object from a <code>string</code>, if the <code>string</code> is empty, a <code>Date</code> object with <code>null</code> content will be created.  </p>
 <p>Use <code>hsCreateDateUTC(1970,1,1,0,0,0,0).ToString()</code> or similar to ensure valid content is stored in the <code>string</code> variable.</p>
@@ -11512,7 +11578,7 @@ Unity: 2022.3.6.f1  </p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

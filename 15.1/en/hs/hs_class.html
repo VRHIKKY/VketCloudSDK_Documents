@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6749,6 +6795,8 @@
       
         
       
+        
+      
     
     
     
@@ -7071,6 +7119,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7364,7 +7433,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11491,65 +11560,59 @@
 <h1 id="classstructure">Class/Structure</h1>
 <h2 id="class-definition">Class definition</h2>
 <p>After the reserved word class, define a block that specifies the class name.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="k">class_name</span><span class="w"> </span><span class="p">{</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>class class_name {
+}
 </code></pre></div>
-
 <h2 id="constructor">Constructor</h2>
 <p>If you define a public method with the same name as the class name inside the block, it becomes a constructor. This is called only once when the class object is created.</p>
 <p>Below is a minimal sample code.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
-     <span class="n">public</span> <span class="n">Test</span>()
+<div class="highlight"><pre><span></span><code>class Test {
+     public Test()
      {
      }
 }
 </code></pre></div>
-
 <h2 id="member-variables">member variables</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
-     <span class="n">float</span> <span class="n">Data</span>;
+<div class="highlight"><pre><span></span><code>class Test {
+     float Data;
 }
 </code></pre></div>
-
 <h2 id="method-definition">method definition</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
-     <span class="n">float</span> <span class="n">Data</span>;
+<div class="highlight"><pre><span></span><code>class Test {
+     float Data;
 
-     <span class="n">public</span> <span class="n">void</span> <span class="n">Foo</span>()
+     public void Foo()
      {
-         <span class="n">Data</span> = <span class="mf">0.0</span><span class="n">f</span>;
+         Data = 0.0f;
      }
 }
 </code></pre></div>
-
 <h2 id="access-specifier">access specifier</h2>
 <p>By specifying public before a member or method declaration, this member will become accessible from outside the class.</p>
 <p>If you specify private, the member cannot be accessed from the outside. If the access specifier is omitted, the behavior is the same as the private specification.</p>
 <h2 id="object-instantiation">Object Instantiation</h2>
 <p>To instantiate a new class object, use the new operator.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Test</span> {
+<div class="highlight"><pre><span></span><code>class Test {
 }
 
-<span class="n">Test</span> <span class="n">obj</span>;
-<span class="n">obj</span> = <span class="nb">new</span> <span class="n">Test</span>();
+Test obj;
+obj = new Test();
 </code></pre></div>
-
 <h2 id="object-deletion">Object Deletion</h2>
 <p>To delete an object, assign a null value. Objects will be deleted when nothing is referring to the object.</p>
-<div class="codehilite"><pre><span></span><code>Test obj;
+<div class="highlight"><pre><span></span><code>Test obj;
 obj = new Test();
 
 obj = null;
 </code></pre></div>
-
 <h2 id="detecting-objects">Detecting Objects</h2>
 <p>To detect the existence of an object, use === or !== operator.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">obj</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="nv">null</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="nv">Exists</span>
+<div class="highlight"><pre><span></span><code>if (obj !== null) {
+ // Exists
 }
 
-<span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">obj</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nv">null</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="nv">Does</span><span class="w"> </span><span class="nv">not</span><span class="w"> </span><span class="nv">exist</span>
+if (obj === null) {
+ // Does not exist
 }
 </code></pre></div>
 
@@ -11597,7 +11660,7 @@ obj = null;
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

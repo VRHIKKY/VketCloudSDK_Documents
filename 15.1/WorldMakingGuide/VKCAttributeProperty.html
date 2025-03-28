@@ -1210,6 +1210,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1266,11 +1270,53 @@
   
   
     <li class="md-nav__item">
-      <a href="JsUpload_Sample.html" class="md-nav__link">
+      <a href="JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    JS入稿のサンプル
+    ワールド入場時間を制限する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web APIを使用し現在の天気を取得する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS入稿のチュートリアルシーン
   </span>
   
 
@@ -6836,6 +6882,8 @@
       
         
       
+        
+      
     
     
     
@@ -7158,6 +7206,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7451,7 +7520,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptでJsonを読み込む
+    HeliScriptでJsonを扱う
   </span>
   
 
@@ -11688,14 +11757,13 @@
 <h2 id="heliscript">HeliScriptでの使い方</h2>
 <p>設定したプロパティはHeliScriptで使うことができます。</p>
 <p>ここでは、</p>
-<div class="codehilite"><pre><span></span><code><span class="n">Key</span><span class="err">：</span><span class="n">Vket</span><span class="w">　</span><span class="n">Value</span><span class="err">：</span><span class="n">Cloud</span>
+<div class="highlight"><pre><span></span><code><span class="n">Key</span><span class="err">：</span><span class="n">Vket</span><span class="w">　</span><span class="n">Value</span><span class="err">：</span><span class="n">Cloud</span>
 <span class="n">Key</span><span class="err">：</span><span class="n">SDK</span><span class="w">　</span><span class="n">Value</span><span class="err">：</span><span class="m">12.1</span>
 </code></pre></div>
-
 <p>と設定されたアイテムGameObjectを例に紹介します。</p>
 <h3 id="1-getproperty">1. GetProperty</h3>
 <p><code>Item.GetProperty(string Key)</code>では、アイテムが持つプロパティのKeyに対応するValueを取得します。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
 
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
 <span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
@@ -11704,10 +11772,9 @@
 <span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">);</span>
 <span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">//「Cloud」と出力される</span>
 </code></pre></div>
-
 <h3 id="2-setproperty">2. SetProperty</h3>
 <p><code>Item.SetProperty(string Key)</code>では、アイテムが持つプロパティのKeyに対応するValueを変更します。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
 
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
 <span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
@@ -11718,11 +11785,10 @@
 <span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">);</span>
 <span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">//「Chan」と出力される</span>
 </code></pre></div>
-
 <h3 id="3-onchangedproperty">3. OnChangedProperty</h3>
 <p><code>OnChangedProperty(string Key, string Value)</code>は、プロパティの変更が発生した際に実行されるコールバックです。<br>
 SetPropertyで特定のキーに対し同一の値が入力され変更が発生しなかった場合には実行されません。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
 
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
 <span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
@@ -11750,7 +11816,6 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <span class="c1">// Changed SDK, 12.2</span>
 <span class="c1">// が出力される</span>
 </code></pre></div>
-
 <p>HeliScriptでは、以上の3通りの関数が用意されています。</p>
 <hr />
 <h2 id="_2">活用方法</h2>
@@ -11764,7 +11829,7 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <h3 id="2">2. コンポーネント間の値渡し</h3>
 <p>コンポーネント間で値渡しをする際、以下のようにVKC Attribute Propertyを使用できます。<br><br />
 ※値を変更する関数を用意して、<code>hsCallComponentMethod()</code>を使用しても同じことができます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// exampleA exampleBの2つのコンポーネントとKey:status, Value:aliveを持つアイテム「Monster」があり、</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// exampleA exampleBの2つのコンポーネントとKey:status, Value:aliveを持つアイテム「Monster」があり、</span>
 <span class="c1">// exampleAがもつ変数HPの値が0以下になった際、exampleBで動作が発生する場合</span>
 
 <span class="n">component</span><span class="w"> </span><span class="n">exampleA</span><span class="p">{</span>
@@ -11813,11 +11878,10 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="3-unityserializefield">3. Unityの[SerializeField]属性的運用</h3>
 <p>「2. コンポーネントへの値渡し」と同様に、VKC Attribute Propertyから変数の中身を定義するように設定しておくことで、Unityエディタ上でパラメータ設定を行うことができるようになります。</p>
 <p>ただし、KeyおよびValueはすべてstring値であることは注意が必要です。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">exampleC</span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">exampleC</span><span class="p">{</span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">HP</span><span class="p">;</span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">damage</span><span class="p">;</span>
 <span class="w">  </span><span class="kt">string</span><span class="w"> </span><span class="n">skill</span><span class="p">;</span>
@@ -11835,7 +11899,6 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <span class="c1">//HP:30、damage:3、skill:れんぞく斬り　とした場合、</span>
 <span class="c1">//それぞれの入力内容がHeliScriptの変数に適用される</span>
 </code></pre></div>
-
 <hr />
 <h2 id="_3">注意点</h2>
 <h3 id="1-setproperty-getproperty">1. SetProperty / GetPropertyする際は対象となるアイテムに注意</h3>
@@ -11894,7 +11957,7 @@ SDK9.11現在、対象となるプロパティが存在しないのにSetPropert
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

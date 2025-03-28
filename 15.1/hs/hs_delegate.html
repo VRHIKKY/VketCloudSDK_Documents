@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    JS入稿のサンプル
+    ワールド入場時間を制限する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web APIを使用し現在の天気を取得する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS入稿のチュートリアルシーン
   </span>
   
 
@@ -6868,6 +6914,8 @@
       
         
       
+        
+      
     
     
     
@@ -7190,6 +7238,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7483,7 +7552,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptでJsonを読み込む
+    HeliScriptでJsonを扱う
   </span>
   
 
@@ -11731,73 +11800,67 @@
 <h2 id="_2">デリゲートを宣言する</h2>
 <p>デリゲートを利用するには、関数のシグネチャ(戻り値や引数の型情報)を指定して、デリゲート型を宣言する必要があります。</p>
 <p>以下の形式で、デリゲート型の宣言を行います。</p>
-<div class="codehilite"><pre><span></span><code>delegate &quot;戻り値&quot; &quot;デリゲート型名&quot;(&quot;引数1&quot;, &quot;引数2&quot;, ...);
+<div class="highlight"><pre><span></span><code>delegate &quot;戻り値&quot; &quot;デリゲート型名&quot;(&quot;引数1&quot;, &quot;引数2&quot;, ...);
 </code></pre></div>
-
 <p>具体的なデリゲート型の宣言の例です。
 ここでは、「戻り値の型が int で、第1引数の型が string、第2引数の型が bool」である、PerformAction型を定義しています。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// PerformAction型を宣言</span>
-<span class="n">delegate</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="n">PerformAction</span><span class="p">(</span><span class="nb">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="n">flag</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>// PerformAction型を宣言
+delegate int PerformAction(string text, bool flag);
 
-<span class="c1">// 引数名は省略可能なので、このようにも宣言できます。</span>
-<span class="n">delegate</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="n">PerformAction</span><span class="p">(</span><span class="nb">string</span><span class="p">,</span><span class="w"> </span><span class="n">bool</span><span class="p">);</span>
+// 引数名は省略可能なので、このようにも宣言できます。
+delegate int PerformAction(string, bool);
 </code></pre></div>
-
 <h2 id="_3">デリゲートを利用する</h2>
 <p>delegate型変数に関数を登録し、呼び出すコード例です。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// PerformAction型を宣言</span>
-<span class="n">delegate</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="n">PerformAction</span><span class="p">(</span><span class="nb">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="n">flag</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>// PerformAction型を宣言
+delegate int PerformAction(string text, bool flag);
 
-<span class="c1">// PerformAction型の変数を定義</span>
-<span class="n">PerformAction</span><span class="w"> </span><span class="n">action</span><span class="p">;</span>
+// PerformAction型の変数を定義
+PerformAction action;
 
-<span class="c1">// 事前定義済みの関数 TestFunc を登録</span>
-<span class="n">action</span><span class="w"> </span><span class="o">+</span><span class="p">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">TestFunc</span><span class="p">;</span>
+// 事前定義済みの関数 TestFunc を登録
+action += &amp;TestFunc;
 
-<span class="c1">// 登録した関数(TestFunc)を呼び出し</span>
-<span class="n">action</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">true</span><span class="p">);</span>
+// 登録した関数(TestFunc)を呼び出し
+action(&quot;id&quot;, true);
 </code></pre></div>
-
 <h2 id="_4">関数の登録について</h2>
 <ul>
 <li>関数をデリゲート型変数に登録するには、関数名の前に "&amp;" を付ける必要があります。</li>
 <li>クラスメソッドをデリゲート型変数に登録する場合、関数名がそのまま利用できます。</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 関数を定義</span>
-<span class="nb">int</span><span class="w"> </span><span class="n">TestFunc</span><span class="p">(</span><span class="nb">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="n">flag</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// ...</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>// 関数を定義
+int TestFunc(string text, bool flag) {
+    // ...
+}
 
-<span class="c1">// 関数名の前に &quot;&amp;&quot; が必要</span>
-<span class="n">PerformAction</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">TestFunc</span><span class="p">;</span>
+// 関数名の前に &quot;&amp;&quot; が必要
+PerformAction action = &amp;TestFunc;
 </code></pre></div>
+<div class="highlight"><pre><span></span><code>// クラスメソッドを定義
+class SampleClass {
+    int TestMethod(string text, bool flag) {
+        // ...
+    }
+}
 
-<div class="codehilite"><pre><span></span><code><span class="c1">// クラスメソッドを定義</span>
-<span class="n">class</span><span class="w"> </span><span class="n">SampleClass</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nb">int</span><span class="w"> </span><span class="n">TestMethod</span><span class="p">(</span><span class="nb">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">bool</span><span class="w"> </span><span class="n">flag</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// ...</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-
-<span class="c1">// メソッド名をそのまま利用して登録できる。</span>
-<span class="n">SampleClass</span><span class="w"> </span><span class="nb">sample</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">SampleClass</span><span class="p">();</span>
-<span class="n">PerformAction</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">sample</span><span class="p">.</span><span class="n">TestMethod</span><span class="p">;</span>
+// メソッド名をそのまま利用して登録できる。
+SampleClass sample = new SampleClass();
+PerformAction action = sample.TestMethod;
 </code></pre></div>
-
 <h2 id="_5">その他の情報</h2>
 <h3 id="_6">デリゲートは値型</h3>
 <p>デリゲートは値型であり、つまり new を呼び出さずに生成できます。また、デリゲート型変数に null は代入できません。</p>
 <p>また、デリゲート型変数を別の変数に代入したり、関数の引数として渡す場合、デリゲート型変数の中身が新しい変数にコピーされます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 初期化時に new が不要</span>
-<span class="n">PerformAction</span><span class="w"> </span><span class="n">action</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// 初期化時に new が不要
+PerformAction action;
 
-<span class="c1">// もう1つデリゲート型変数を定義し、代入してみる。ここでコピーが行われる。</span>
-<span class="n">PerformAction</span><span class="w"> </span><span class="n">action2nd</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">action</span><span class="p">;</span>
+// もう1つデリゲート型変数を定義し、代入してみる。ここでコピーが行われる。
+PerformAction action2nd = action;
 
-<span class="c1">// action2nd に加えた変更は、action側には反映されない。逆も同じ。</span>
-<span class="n">action2nd</span><span class="w"> </span><span class="o">+</span><span class="p">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">DummyFunc</span><span class="p">;</span>
+// action2nd に加えた変更は、action側には反映されない。逆も同じ。
+action2nd += &amp;DummyFunc;
 </code></pre></div>
-
 <h3 id="_7">関数を複数実行した場合の戻り値</h3>
 <p>戻り値がある関数を複数登録したデリゲートを呼び出した場合、返却される戻り値は、最後に登録された関数のものになります。</p>
 <hr />
@@ -11885,7 +11948,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

@@ -16,7 +16,7 @@
         <link rel="prev" href="hs_system_function_rendering.html">
       
       
-        <link rel="next" href="hs_statement_def.html">
+        <link rel="next" href="hs_system_function_cookie.html">
       
       
       <link rel="icon" href="../../images/Favicon.png">
@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6639,6 +6685,8 @@
       
         
       
+        
+      
     
     
     
@@ -7034,6 +7082,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7327,7 +7396,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11423,7 +11492,7 @@
 If a JavaScript function <code>hel_action_bridge(name, text)</code> is defined, HeliScript can call it with the parameters <code>name</code> and <code>text</code>. If the function is not defined, no action will be taken.</p>
 <p>How to use the <code>name</code> and <code>text</code> parameters is up to the implementer. A common approach is to treat <code>name</code> as the function name and <code>text</code> as its argument, enabling diverse processing on the JavaScript side.</p>
 <p><strong>Example:</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// JavaScript function definition</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// JavaScript function definition</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">hel_action_bridge</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// Handle actions based on the name</span>
 <span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -11437,22 +11506,20 @@ If a JavaScript function <code>hel_action_bridge(name, text)</code> is defined, 
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <hr />
 <h2 id="invoking-component-methods-from-javascript">Invoking Component Methods from JavaScript</h2>
 <p>JavaScript can call methods of components assigned to items using the following function:</p>
 <p><code>function hel_script_CallComponentMethod(ItemName, ComponentName, MethodName, Param)</code></p>
 <p>The component method should have a return type of <code>void</code> and accept a single <code>string</code> parameter.</p>
 <p><strong>Example:</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// HeliScript component definition</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// HeliScript component definition</span>
 <span class="n">component</span><span class="w"> </span><span class="n">Test</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">DoFromJS</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">Param</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// Example method logic</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="c1">// Invoking the above component method from JavaScript</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Invoking the above component method from JavaScript</span>
 <span class="nx">hel_script_CallComponentMethod</span><span class="p">(</span><span class="s2">&quot;FieldItem&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Test&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DoFromJS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;TestParam&quot;</span><span class="p">);</span>
 </code></pre></div>
 
@@ -11500,7 +11567,7 @@ If a JavaScript function <code>hel_action_bridge(name, text)</code> is defined, 
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

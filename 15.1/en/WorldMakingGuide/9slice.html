@@ -1210,6 +1210,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1266,11 +1270,53 @@
   
   
     <li class="md-nav__item">
-      <a href="JsUpload_Sample.html" class="md-nav__link">
+      <a href="JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1593,7 +1639,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6788,6 +6834,8 @@
       
         
       
+        
+      
     
     
     
@@ -7110,6 +7158,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7403,7 +7472,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11592,28 +11661,27 @@ Browser: Google Chrome</p>
 <source src="../../WorldMakingGuide/img/9slice.mp4" type="video/mp4">
 </video>
 
-<p>Transcript:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">This</span><span class="w"> </span><span class="n">video</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">explain</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">procedure</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">creating</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mi">256</span><span class="err">×</span><span class="mi">43</span><span class="w"> </span><span class="n">capsule</span><span class="o">.</span>
+<p>Transcript:
+<div class="highlight"><pre><span></span><code>This video will explain the procedure for creating a 256×43 capsule.
 
-<span class="n">First</span><span class="p">,</span><span class="w"> </span><span class="n">create</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mi">43</span><span class="err">×</span><span class="mi">43</span><span class="w"> </span><span class="n">circle</span><span class="w"> </span><span class="n">aligned</span><span class="w"> </span><span class="n">vertically</span><span class="o">.</span>
+First, create a 43×43 circle aligned vertically.
 
-<span class="n">Next</span><span class="p">,</span><span class="w"> </span><span class="n">create</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">sure</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">power</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">greater</span><span class="o">.</span><span class="w"> </span><span class="n">In</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">case</span><span class="p">,</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="mi">64</span><span class="err">×</span><span class="mf">64.</span>
+Next, create a frame, and make sure the size of this frame is a power of 2 or greater. In this case, I will make it 64×64.
 
-<span class="n">This</span><span class="w"> </span><span class="n">way</span><span class="p">,</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="n">outputting</span><span class="p">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">power</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="mf">2.</span>
+This way, when outputting, the size will be a power of 2.
 
-<span class="n">However</span><span class="p">,</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">we</span><span class="w"> </span><span class="n">leave</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">like</span><span class="w"> </span><span class="n">this</span><span class="p">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">circle</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">appear</span><span class="w"> </span><span class="n">squished</span><span class="p">,</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">we</span><span class="w"> </span><span class="n">stretch</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">vertically</span><span class="o">.</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">exactly</span><span class="w"> </span><span class="mf">64.</span>
+However, if we leave it like this, the circle will appear squished, so we stretch it vertically. Set it so that the height is exactly 64.
 
-<span class="n">Since</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">centered</span><span class="p">,</span><span class="w"> </span><span class="n">we</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">move</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">center</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">look</span><span class="w"> </span><span class="n">something</span><span class="w"> </span><span class="n">like</span><span class="w"> </span><span class="n">this</span><span class="o">.</span>
+Since it is not centered, we will move it to the center, and it will look something like this.
 
-<span class="n">Change</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">it</span><span class="o">.</span>
+Change the name and export it.
 
-<span class="p">[</span><span class="n">Exports</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">file</span><span class="p">]</span>
+[Exports to file]
 
-<span class="n">In</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">JSON</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="mi">256</span><span class="err">×</span><span class="mi">43</span><span class="p">,</span><span class="w"> </span><span class="n">which</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">size</span><span class="o">.</span>
+In the JSON file, set the size to 256×43, which will be the final size.
 
-<span class="n">For</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="mi">9</span><span class="o">-</span><span class="n">slice</span><span class="w"> </span><span class="n">settings</span><span class="p">,</span><span class="w"> </span><span class="n">specify</span><span class="w"> </span><span class="mi">32</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">both</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="n">sides</span><span class="o">.</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">split</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">draw</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">half</span><span class="o">-</span><span class="n">point</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">original</span><span class="w"> </span><span class="n">material</span><span class="o">.</span>
-</code></pre></div>
-
+For the 9-slice settings, specify 32 for both the left and right sides. This will split and draw the image at the half-point of the original material.
+</code></pre></div></p>
 <p>Source Material:</p>
 <p><img alt="9slice" src="../../WorldMakingGuide/img/9slice_02.jpg" /></p>
 <p>Completed Version:</p>
@@ -11693,7 +11761,7 @@ Browser: Google Chrome</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6922,6 +6968,8 @@
       
         
       
+        
+      
     
     
     
@@ -7244,6 +7292,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7537,7 +7606,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11836,29 +11905,26 @@
 <p>HSMessage represents a message that can be sent and received between Items. You can create an HSMessage and send it to any Item.</p>
 <p>HSMessage can store data represented by int, float, bool, and string. Additionally, it allows you to set information about the sender, enabling bidirectional message communication.</p>
 <p>HSMessage provides many methods that return the instance itself as a return value, allowing you to chain methods together as shown in the example below:</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Create a message.</span>
-<span class="nx">HSMessage</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">hsCreateSelfMessage</span><span class="p">(</span><span class="s">&quot;EnemyData&quot;</span><span class="p">).</span><span class="nx">AddInt</span><span class="p">(</span><span class="s">&quot;damage&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">120</span><span class="p">).</span><span class="nx">AddBool</span><span class="p">(</span><span class="s">&quot;visible&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
-<span class="c1">// Send the message to the target Item.</span>
-<span class="nx">Item</span><span class="w"> </span><span class="nx">receiver</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">hsItemGet</span><span class="p">(</span><span class="s">&quot;enemyobj&quot;</span><span class="p">);</span>
-<span class="nx">receiver</span><span class="p">.</span><span class="nx">SendMessage</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>// Create a message.
+HSMessage message = hsCreateSelfMessage(&quot;EnemyData&quot;).AddInt(&quot;damage&quot;, 120).AddBool(&quot;visible&quot;, false);
+// Send the message to the target Item.
+Item receiver = hsItemGet(&quot;enemyobj&quot;);
+receiver.SendMessage(message);
 </code></pre></div>
-
 <h2 id="sending-messages">Sending Messages</h2>
 <p>You can send a message to an Item by calling the SendMessage() method of the Item class.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Item</span> {
-  <span class="n">public</span> <span class="n">bool</span> <span class="n">SendMessage</span>(<span class="n">HSMessage</span> <span class="nb">message</span>);
+<div class="highlight"><pre><span></span><code>class Item {
+  public bool SendMessage(HSMessage message);
 }
 </code></pre></div>
-
 <h2 id="receiving-messages">Receiving Messages</h2>
 <p>When an Item receives a message, the OnReceiveMessage() method of the component attached to that Item is called. The received message information is passed as an argument to this method.</p>
-<div class="codehilite"><pre><span></span><code>component Comp {
+<div class="highlight"><pre><span></span><code>component Comp {
   public void OnReceiveMessage(HSMessage message) {
     // Process the message upon receipt.
   }
 }
 </code></pre></div>
-
 <hr />
 <h2 id="hsmessage-utility-functions">HSMessage Utility Functions</h2>
 <h3 id="hscreatemessage">hsCreateMessage</h3>
@@ -11982,7 +12048,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

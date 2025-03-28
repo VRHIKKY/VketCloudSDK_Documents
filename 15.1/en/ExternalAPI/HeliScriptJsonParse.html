@@ -24,7 +24,7 @@
     
     
       
-        <title>Reading JSON in HeliScript - Vket Cloud SDK Manual</title>
+        <title>Handling Json in HeliScript - Vket Cloud SDK Manual</title>
       
     
     
@@ -102,7 +102,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reading-json-in-heliscript" class="md-skip">
+        <a href="#handling-json-in-heliscript" class="md-skip">
           Skip to content
         </a>
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Reading JSON in HeliScript
+              Handling Json in HeliScript
             
           </span>
         </div>
@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6635,6 +6681,8 @@
       
         
       
+        
+      
     
     
     
@@ -6957,6 +7005,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7261,7 +7330,7 @@
           
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -7272,7 +7341,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -7303,36 +7372,78 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisite-knowledge-what-is-the-jsval-class" class="md-nav__link">
+  <a href="#1-variable-definition" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisite Knowledge: What is the JsVal Class?
+      ① Variable Definition
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-populating-data-in-the-jsval-class-variable" class="md-nav__link">
+  <a href="#2-inserting-data-into-json-class-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Populating Data in the JsVal Class Variable
+      ② Inserting Data into Json Class Variables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-extracting-required-information-from-jsval" class="md-nav__link">
+  <a href="#3-extracting-necessary-information-from-json" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Extracting Required Information from JsVal
+      ③ Extracting Necessary Information from Json
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="③ Extracting Necessary Information from Json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-extracting-data-from-the-overall-json-and-defining-it-as-a-new-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Extracting data from the overall Json and defining it as a new Json file
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#2-extracting-items-from-data-and-defining-it-as-a-new-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Extracting items from data and defining it as a new Json file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-creating-an-arraylist-from-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Creating an ArrayList from items
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-extracting-data-from-each-element-of-the-item" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Extracting data from each element of the item
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#reference-pages" class="md-nav__link">
+  <a href="#caution" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference Pages
+      Caution
     </span>
   </a>
   
@@ -11384,36 +11495,78 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisite-knowledge-what-is-the-jsval-class" class="md-nav__link">
+  <a href="#1-variable-definition" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisite Knowledge: What is the JsVal Class?
+      ① Variable Definition
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-populating-data-in-the-jsval-class-variable" class="md-nav__link">
+  <a href="#2-inserting-data-into-json-class-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Populating Data in the JsVal Class Variable
+      ② Inserting Data into Json Class Variables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-extracting-required-information-from-jsval" class="md-nav__link">
+  <a href="#3-extracting-necessary-information-from-json" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Extracting Required Information from JsVal
+      ③ Extracting Necessary Information from Json
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="③ Extracting Necessary Information from Json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-extracting-data-from-the-overall-json-and-defining-it-as-a-new-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Extracting data from the overall Json and defining it as a new Json file
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#2-extracting-items-from-data-and-defining-it-as-a-new-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Extracting items from data and defining it as a new Json file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-creating-an-arraylist-from-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Creating an ArrayList from items
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-extracting-data-from-each-element-of-the-item" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Extracting data from each element of the item
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#reference-pages" class="md-nav__link">
+  <a href="#caution" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference Pages
+      Caution
     </span>
   </a>
   
@@ -11434,72 +11587,207 @@
                   
 
 
-<h1 id="reading-json-in-heliscript">Reading JSON in HeliScript</h1>
+<h1 id="handling-json-in-heliscript">Handling Json in HeliScript</h1>
 <h2 id="overview">Overview</h2>
-<p>By using JsVal and properties, you can load information stored in a JSON file.</p>
-<p>This page explains how to load a JSON file in HeliScript.</p>
+<p>This article introduces how to define and utilize Json in HeliScript.</p>
 <div class="admonition info">
-<p class="admonition-title">Test Environment</p>
-<p>SDK Version: 12.3.4<br>
-OS: Windows 10<br>
-Unity: 2019.4.31.f1<br><br />
-Browser: Google Chrome</p>
+<p class="admonition-title">Verification Environment</p>
+<p><strong>SDK Version</strong>: 15.1.0<br>
+<strong>OS</strong>: Windows 10<br>
+<strong>Unity</strong>: 2022.3.6f1<br>
+<strong>Browser</strong>: Google Chrome</p>
 </div>
-<hr />
-<h2 id="prerequisite-knowledge-what-is-the-jsval-class">Prerequisite Knowledge: What is the JsVal Class?</h2>
-<p>HeliScript provides the JsVal class.<br />
-This class is used to load JavaScript data.<br />
-It allows you to use associative array formats.<br />
-For more details, please refer to the <a href="https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/JsVal.html">JsVal page</a>.</p>
-<div class="codehilite"><pre><span></span><code>JsVal shopInfo;
+<div class="admonition success">
+<p class="admonition-title">Setting up Json</p>
+<p>The Json handled on this page simulates a list of product information displayed within the shop world.<br>
+<em>Note: The test data used on this page contains arbitrary values.</em><br><br>
+〇 List of Parameters<br>
+<strong>position</strong>: Number indicating the location in the world.<br>
+<strong>item_id</strong>: Number assigned to the product.<br>
+<strong>name</strong>: Product name.<br>
+<strong>category_name</strong>: Name of the category to which the product belongs.<br>
+<strong>item_type</strong>: Type of item (3D model, avatar, texture, etc.).<br>
+<strong>like_count</strong>: Number of likes received by the item.<br>
+<strong>price_range</strong>: Price range setting.<br>
+<strong>image</strong>: URL of the product thumbnail image.<br>
+<strong>shop_name</strong>: Name of the shop where the product is listed.<br>
+<strong>shop_icon</strong>: URL of the shop's icon image.</p>
+</div>
+<h2 id="1-variable-definition">① Variable Definition</h2>
+<p>In HeliScript, a Json class is provided. Therefore,</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Json</span><span class="w"> </span><span class="nx">_shopInfo</span><span class="p">;</span>
 </code></pre></div>
-
-<p>By defining it like this, you can create a variable of the JsVal class.</p>
-<hr />
-<h2 id="1-populating-data-in-the-jsval-class-variable">1. Populating Data in the JsVal Class Variable</h2>
-<p>To populate data in a JsVal class variable, a callback function is used.<br />
-In this example, we use <code>heliport.v3.api.worlds.getWorldList()</code> to obtain the world list data and store it in JsVal.</p>
-<p>First, define the callback function as:</p>
-<div class="codehilite"><pre><span></span><code>delegate void fJsValCallback(JsVal);
+<p>defines a variable of the Json class.</p>
+<h2 id="2-inserting-data-into-json-class-variables">② Inserting Data into Json Class Variables</h2>
+<p>You can insert Json into a Json class variable using <code>hsLoadJson(string)</code>.</p>
+<p>In this case, we use the String-type function <code>GetRawData()</code> provided below.</p>
+<div class="highlight"><pre><span></span><code><span class="nf">string</span><span class="w"> </span><span class="kt">GetRawData</span><span class="nb">()</span><span class="p">{</span>
+<span class="w">    </span><span class="n">return</span>
+<span class="w">    </span><span class="s">&quot;{&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">        </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">status</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">ok</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">        </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">data</span><span class="se">\&quot;</span><span class="s">:{&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">            </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">items</span><span class="se">\&quot;</span><span class="s">:[&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s">&quot;{&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">position</span><span class="se">\&quot;</span><span class="s">:1,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">item_id</span><span class="se">\&quot;</span><span class="s">:10,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">name</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">Test Test</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">category_name</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">test</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">item_type</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">test</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">like_count</span><span class="se">\&quot;</span><span class="s">:2,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">price_range</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">￥0-1,000</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">image</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">URL</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">shop_name</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">URL</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">shop_icon</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">URL</span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s">&quot;},&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s">&quot;{&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">position</span><span class="se">\&quot;</span><span class="s">:2,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">item_id</span><span class="se">\&quot;</span><span class="s">:11,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">name</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">Test2 Test2</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">category_name</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">test2</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">item_type</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">test2</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">like_count</span><span class="se">\&quot;</span><span class="s">:3,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">price_range</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">￥3-1,000</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">image</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">URL2</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">shop_name</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">URL2</span><span class="se">\&quot;</span><span class="s">,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">shop_icon</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">URL2</span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s">&quot;}&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">            </span><span class="s">&quot;]&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">        </span><span class="s">&quot;}&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">    </span><span class="s">&quot;}&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
+<p>The HeliScript code to insert the data looks like this:</p>
+<div class="highlight"><pre><span></span><code><span class="n">_shopInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsLoadJson</span><span class="p">(</span><span class="n">GetRawData</span><span class="p">());</span>
+</code></pre></div>
+<h2 id="3-extracting-necessary-information-from-json">③ Extracting Necessary Information from Json</h2>
+<p>The Json used here includes the following hierarchy:</p>
+<div class="highlight"><pre><span></span><code><span class="err">・</span><span class="n">status</span>
+<span class="err">・</span><span class="n">data</span>
+<span class="w">　</span><span class="err">├</span><span class="n">items</span>
+<span class="w">　</span><span class="err">├</span><span class="n">position</span>
+<span class="w">　</span><span class="err">├</span><span class="n">item_id</span>
+<span class="w">　</span><span class="err">├</span><span class="n">name</span>
+<span class="w">　</span><span class="err">├</span><span class="n">category_name</span>
+<span class="w">　</span><span class="err">├</span><span class="n">item_type</span>
+<span class="w">　</span><span class="err">├</span><span class="n">like_count</span>
+<span class="w">　</span><span class="err">├</span><span class="n">price_range</span>
+<span class="w">　</span><span class="err">├</span><span class="n">image</span>
+<span class="w">　</span><span class="err">├</span><span class="n">shop_name</span>
+<span class="w">　</span><span class="err">└</span><span class="n">shop_icon</span>
+</code></pre></div>
+<p>We'll extract <code>item_id</code> and <code>name</code> in this example.</p>
+<h3 id="1-extracting-data-from-the-overall-json-and-defining-it-as-a-new-json-file">1. Extracting <code>data</code> from the overall Json and defining it as a new Json file</h3>
+<p>Using the <code>Find</code> function defined in the Json class, you can locate and define the content under a specified data type and key as a new Json file.</p>
+<p>Therefore,</p>
+<div class="highlight"><pre><span></span><code><span class="n">Json</span><span class="w"> </span><span class="n">datablock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_shopInfo</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">EJSONDataType_Block</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>defines <code>datablock</code> as the Json containing data.</p>
+<h3 id="2-extracting-items-from-data-and-defining-it-as-a-new-json-file">2. Extracting <code>items</code> from <code>data</code> and defining it as a new Json file</h3>
+<p>Similarly, using the <code>Find</code> function, extract <code>items</code> from <code>datablock</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Json</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datablock</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">EJSONDataType_Array</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;items&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>Now, <code>items</code> is a Json file containing items.</p>
+<div class="admonition info">
+<p class="admonition-title">Difference in EJSONDataType</p>
+<p>When extracting <code>datablock</code>, <code>EJSONDataType_Block</code> is used in the Find function, and when extracting <code>items</code>, <code>EJSONDataType_Array</code> is used. These are used based on the data definition format in Json.<br><br>
+Use <code>Block</code> for elements enclosed in <code>{}</code>, and <code>Array</code> for elements enclosed in <code>[]</code>.</p>
+</div>
+<h3 id="3-creating-an-arraylist-from-items">3. Creating an ArrayList from <code>items</code></h3>
+<p>Within <code>items</code>, 15 items are defined.<br />
+To access each element, you need to list them as Json.</p>
+<div class="highlight"><pre><span></span><code><span class="n">list</span><span class="o">&lt;</span><span class="n">Json</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dataJsons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">items</span><span class="p">.</span><span class="n">GetArrayList</span><span class="p">();</span>
+</code></pre></div>
+<p>This creates <code>dataJsons</code>, listing each of the 15 items in <code>items</code> as separate Json.</p>
+<h3 id="4-extracting-data-from-each-element-of-the-item">4. Extracting data from each element of the item</h3>
+<p>After these preparations, you can finally extract the data.</p>
+<p>For extraction, use functions like <code>FindValueString</code> and <code>FindValueInt</code>, tailored to the type of data you're extracting.</p>
+<p>With these functions, you can assign values from specified items to variables.<br />
+Therefore, the code would look like this:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">itemId</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable to store item_id</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">itemName</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable to store name</span>
 
-<p>Then, implement the function:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">public</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">_FetchWorldListCallback</span><span class="p">(</span><span class="n">JsVal</span><span class="w"> </span><span class="n">val</span><span class="p">)</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dataJsons</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span><span class="w"> </span><span class="c1">// Loop through each item</span>
+<span class="w">  </span><span class="n">itemId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// Initialize variables</span>
+<span class="w">  </span><span class="n">itemName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Initialize variables</span>
+<span class="w">  </span><span class="n">dataJsons</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">FindValueInt</span><span class="p">(</span><span class="s">&quot;item_id&quot;</span><span class="p">,</span><span class="n">itemId</span><span class="p">);</span><span class="w"> </span><span class="c1">// Assign value of item_id to itemId</span>
+<span class="w">  </span><span class="n">dataJsons</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">FindValueString</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="n">itemName</span><span class="p">);</span><span class="w"> </span><span class="c1">// Assign value of name to itemName</span>
+<span class="w">  </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;dataJsons[%d] item_id : %d , name : %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="n">itemId</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">itemName</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Summarizing the code, it looks like this:</p>
+<div class="highlight"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">SetProductData</span>
 <span class="p">{</span>
+<span class="w">    </span><span class="n">Json</span><span class="w"> </span><span class="n">_shopInfo</span><span class="p">;</span>
 
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">SetProductData</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">_shopInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsLoadJson</span><span class="p">(</span><span class="n">GetRawData</span><span class="p">());</span>
+<span class="w">        </span><span class="n">FindJsonContents</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Update</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">string</span><span class="w"> </span><span class="nf">GetRawData</span><span class="p">(){</span>
+<span class="w">        </span><span class="k">return</span>
+<span class="w">        </span><span class="s">&quot;{&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">            </span><span class="s">&quot;\&quot;status\&quot;:\&quot;ok\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">            </span><span class="s">&quot;\&quot;data\&quot;:{&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s">&quot;\&quot;items\&quot;:[&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;{&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;position\&quot;:1,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;item_id\&quot;:10,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;name\&quot;:\&quot;Test Test\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;category_name\&quot;:\&quot;test\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;item_type\&quot;:\&quot;test\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;like_count\&quot;:2,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;price_range\&quot;:\&quot;￥0-1,000\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;image\&quot;:\&quot;URL\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;shop_name\&quot;:\&quot;URL\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;shop_icon\&quot;:\&quot;URL\&quot;&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;},&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;{&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;position\&quot;:2,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;item_id\&quot;:11,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;name\&quot;:\&quot;Test2 Test2\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;category_name\&quot;:\&quot;test2\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;item_type\&quot;:\&quot;test2\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;like_count\&quot;:3,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;price_range\&quot;:\&quot;￥3-1,000\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;image\&quot;:\&quot;URL2\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;shop_name\&quot;:\&quot;URL2\&quot;,&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                        </span><span class="s">&quot;\&quot;shop_icon\&quot;:\&quot;URL2\&quot;&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                    </span><span class="s">&quot;},&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s">&quot;]&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">            </span><span class="s">&quot;}&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">        </span><span class="s">&quot;}&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">FindJsonContents</span><span class="p">(){</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">itemId</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">itemName</span><span class="p">;</span>
+<span class="w">        </span><span class="n">Json</span><span class="w"> </span><span class="n">datablock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_shopInfo</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">EJSONDataType_Block</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Json</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datablock</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="n">EJSONDataType_Array</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;items&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">list</span><span class="o">&lt;</span><span class="n">Json</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dataJsons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">items</span><span class="p">.</span><span class="n">GetArrayList</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dataJsons</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span><span class="w"> </span><span class="c1">// Loop through each item</span>
+<span class="w">            </span><span class="n">itemId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// Initialize variables</span>
+<span class="w">            </span><span class="n">itemName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Initialize variables</span>
+<span class="w">            </span><span class="n">dataJsons</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">FindValueInt</span><span class="p">(</span><span class="s">&quot;item_id&quot;</span><span class="p">,</span><span class="n">itemId</span><span class="p">);</span><span class="w"> </span><span class="c1">// Assign value of item_id to itemId</span>
+<span class="w">            </span><span class="n">dataJsons</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">FindValueString</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="n">itemName</span><span class="p">);</span><span class="w"> </span><span class="c1">// Assign value of name to itemName</span>
+<span class="w">            </span><span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;dataJsons[%d] item_id : %d , name : %s\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="n">itemId</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">itemName</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-
-<span class="o">//</span><span class="w"> </span><span class="n">Triggering</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">populate</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">JsVal</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">data</span>
-<span class="n">heliport</span><span class="o">.</span><span class="n">v3</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">worlds</span><span class="o">.</span><span class="n">getWorldList</span><span class="p">(</span><span class="n">_FetchWorldListCallback</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;myvket&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;official&quot;</span><span class="p">);</span>
 </code></pre></div>
-
-<p>Once this setup is complete, calling the function will trigger the callback and populate the JsVal class variable <code>val</code> with the data.</p>
-<hr />
-<h2 id="2-extracting-required-information-from-jsval">2. Extracting Required Information from JsVal</h2>
-<p>The data we are working with has the following structure:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">data</span><span class="w"> </span><span class="p">{</span>
-<span class="n">world_portals</span><span class="w"> </span><span class="p">[</span>
-<span class="nl">id</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kt">int</span>
-<span class="nl">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">string</span>
-<span class="nl">visit_count</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kt">int</span>
-<span class="nl">ingame_url</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">string</span>
-<span class="nl">thumbnail</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">string</span>
-<span class="p">]</span>
-<span class="p">}</span>
+<p>When executed, this code produces the following output:</p>
+<div class="highlight"><pre><span></span><code><span class="n">dataJsons</span><span class="p">[</span><span class="m">0</span><span class="p">]</span><span class="w"> </span><span class="n">item_id</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Test</span><span class="w"> </span><span class="n">Test</span>
+<span class="n">dataJsons</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="n">item_id</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Test2</span><span class="w"> </span><span class="n">Test2</span>
 </code></pre></div>
-
-<p>(world_portals consists of a set of 5 elements: id, name, visit_count, ingame_url, and thumbnail)</p>
-<p>To extract data from JsVal, two methods are used: <code>GetProperty()</code> and <code>GetProperty().At()</code>.</p>
-<p>Elements are accessed with <code>GetProperty()</code>, and associative arrays are accessed using <code>GetProperty().At()</code> by specifying the key and array index.<br />
-When you reach the final property, use <code>GetNum()</code> for int values and <code>GetStr()</code> for string values to retrieve the data.</p>
-<p>To get the first element's id, name, visit_count, ingame_url, and thumbnail, the following code would be written:</p>
-<div class="codehilite"><pre><span></span><code>_id = val.GetProperty(&quot;data&quot;).GetProperty(&quot;world_portals&quot;).At(0).GetProperty(&quot;id&quot;).GetNum(); _name = val.GetProperty(&quot;data&quot;).GetProperty(&quot;world_portals&quot;).At(0).GetProperty(&quot;name&quot;).GetStr(); _visit_count = val.GetProperty(&quot;data&quot;).GetProperty(&quot;world_portals&quot;).At(0).GetProperty(&quot;visit_count&quot;).GetNum(); _ingame_url = val.GetProperty(&quot;data&quot;).GetProperty(&quot;world_portals&quot;).At(0).GetProperty(&quot;ingame_url&quot;).GetStr(); _thumb_url = val.GetProperty(&quot;data&quot;).GetProperty(&quot;world_portals&quot;).At(0).GetProperty(&quot;thumbnail&quot;).GetStr();
-</code></pre></div>
-
-<p>The extracted data can be used as int or string types, and can be reflected in <code>hsSystemWriteLine</code>, used for calculations, or applied in the world.</p>
-<hr />
-<h2 id="reference-pages">Reference Pages</h2>
-<p><a href="https://vrhikky.github.io/VketCloudSDK_Documents/latest/ExternalAPI/BrokerAPI.html">Broker API Information</a>: The Broker API also uses JsVal for data retrieval.</p>
+<h2 id="caution">Caution</h2>
+<p>When handling Json, there's a possibility of malfunction with <code>Shift_JIS</code> depending on the incoming data. Therefore, it's recommended to use <code>UTF-8</code> for <code>.hs</code> file encoding.</p>
+<p>Moreover, using <a href="JsVal.html">JsVal</a> for reading can offer greater convenience.</p>
 
 
 
@@ -11545,7 +11833,7 @@ When you reach the final property, use <code>GetNum()</code> for int values and 
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

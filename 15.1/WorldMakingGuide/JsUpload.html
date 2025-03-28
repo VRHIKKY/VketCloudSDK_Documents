@@ -16,7 +16,7 @@
         <link rel="prev" href="MovableClickableObject.html">
       
       
-        <link rel="next" href="JsUpload_Sample.html">
+        <link rel="next" href="JsUpload_RestrictEntryTime.html">
       
       
       <link rel="icon" href="../images/Favicon.png">
@@ -1212,6 +1212,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1304,7 +1308,7 @@
         <li class="md-nav__item">
   <a href="#js" class="md-nav__link">
     <span class="md-ellipsis">
-      サンプルJS入稿ワールド
+      JS入稿のチュートリアルシーン
     </span>
   </a>
   
@@ -1344,11 +1348,53 @@
   
   
     <li class="md-nav__item">
-      <a href="JsUpload_Sample.html" class="md-nav__link">
+      <a href="JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    JS入稿のサンプル
+    ワールド入場時間を制限する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web APIを使用し現在の天気を取得する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS入稿のチュートリアルシーン
   </span>
   
 
@@ -6715,6 +6761,8 @@
       
         
       
+        
+      
     
     
     
@@ -7037,6 +7085,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7330,7 +7399,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptでJsonを読み込む
+    HeliScriptでJsonを扱う
   </span>
   
 
@@ -11379,7 +11448,7 @@
         <li class="md-nav__item">
   <a href="#js" class="md-nav__link">
     <span class="md-ellipsis">
-      サンプルJS入稿ワールド
+      JS入稿のチュートリアルシーン
     </span>
   </a>
   
@@ -11435,9 +11504,9 @@
 <p><strong>自社のデータベースと連携した会員制のWebメタバース空間の運用</strong></p>
 </li>
 </ul>
-<h2 id="js">サンプルJS入稿ワールド</h2>
-<p>試しにJSをアップロードするためのサンプルワールドをご用意しています。サンプルJSをアップロードすることで、ワールド内でキーボードの状態（押下/離す）をテキストとして表示することができます。</p>
-<p>詳細は、<a href="JsUpload_Sample.html">サンプルJS入稿ワールドの導入方法</a>を参照してください。</p>
+<h2 id="js">JS入稿のチュートリアルシーン</h2>
+<p>試しにJSをアップロードするためのチュートリアルシーンをご用意しています。ワールド内でキーボードの状態（押下/離す）をテキストとして表示することができます。</p>
+<p>詳細は、<a href="JsUpload_TutorialScene.html">JS入稿のチュートリアルシーン</a>を参照してください。</p>
 <h2 id="_2">前提条件</h2>
 <ul>
 <li><strong>SDK 13.7 以降</strong></li>
@@ -11515,7 +11584,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

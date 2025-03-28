@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6883,6 +6929,8 @@
       
         
       
+        
+      
     
     
     
@@ -7205,6 +7253,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7498,7 +7567,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11761,17 +11830,16 @@
 </div>
 <hr />
 <h2 id="class-definition">class definition</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Vector3</span> {
-     <span class="n">public</span> <span class="n">float</span> <span class="nb">x</span>, <span class="n">y</span>, <span class="nb">z</span>;
+<div class="highlight"><pre><span></span><code>class Vector3 {
+     public float x, y, z;
 
-     <span class="n">public</span> <span class="n">void</span> <span class="n">Add</span>(<span class="n">Vector3v</span>)
-     <span class="n">public</span> <span class="n">Vector3</span> <span class="n">Rotate</span>(<span class="n">Quaternion</span> <span class="s">q)</span>
-<span class="s">     public Vector3 RotateMatrix(Matrix mat)</span>
+     public void Add(Vector3v)
+     public Vector3 Rotate(Quaternion q)
+     public Vector3 RotateMatrix(Matrix mat)
 }
 </code></pre></div>
-
 <h2 id="example-of-use">Example of use</h2>
-<div class="codehilite"><pre><span></span><code>Vector3 vec = new Vector3();
+<div class="highlight"><pre><span></span><code>Vector3 vec = new Vector3();
 vec.x = 0.0f;
 vec.y = 1.0f;
 vec.z = 2.0f;
@@ -11779,7 +11847,6 @@ vec.z = 2.0f;
 // same as above
 Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 </code></pre></div>
-
 <h2 id="vector3-utility-functions">Vector3 utility functions</h2>
 <h3 id="makevector3float-float-float">makeVector3(float, float, float)</h3>
 <p><code>Vector3 makeVector3(float x, float y, float z)</code></p>
@@ -11871,7 +11938,7 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

@@ -16,7 +16,7 @@
         <link rel="prev" href="hs_system_function_rendering.html">
       
       
-        <link rel="next" href="hs_statement_def.html">
+        <link rel="next" href="hs_system_function_cookie.html">
       
       
       <link rel="icon" href="../images/Favicon.png">
@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    JS入稿のサンプル
+    ワールド入場時間を制限する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web APIを使用し現在の天気を取得する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS入稿のチュートリアルシーン
   </span>
   
 
@@ -6639,6 +6685,8 @@
       
         
       
+        
+      
     
     
     
@@ -7034,6 +7082,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7327,7 +7396,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptでJsonを読み込む
+    HeliScriptでJsonを扱う
   </span>
   
 
@@ -11422,37 +11491,35 @@
 <p></br>
 JavaScript側で <code>function hel_action_bridge(name, text)</code> が定義されていれば、HeliSctipt側から name, text パラメータによって hel_action_bridge() 関数が呼び出されます。hel_action_bridge() 関数が定義されていない場合は、何も行われません。</p>
 <p>引数 name, text をどのように活用するかは実装者の自由ですが、一般的には name を関数名、text をその引数、といったルールを決めることで、JavaScript側で様々な処理を行うことができます。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// JavaScript側の定義</span>
-<span class="k">function</span><span class="w"> </span><span class="nf">hel_action_bridge</span><span class="p">(</span>name, text<span class="p">)</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="c1">// nameで処理を切り分ける</span>
-<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;LogOutput&quot;</span>
-<span class="w">        </span><span class="n">console</span><span class="p">.</span><span class="nb">log</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
-<span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;LoadImage&quot;</span>
-<span class="w">        </span><span class="n">LoadImage</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
-<span class="w">        </span><span class="k">break</span><span class="p">;</span>
-<span class="w">        </span><span class="c1">// .....</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>// JavaScript側の定義
+function hel_action_bridge(name, text)
+{
+    // nameで処理を切り分ける
+    switch (name) {
+    case &quot;LogOutput&quot;
+        console.log(text);
+        break;
+    case &quot;LoadImage&quot;
+        LoadImage(text);
+        break;
+        // .....
+    }
+}
 </code></pre></div>
-
 <hr />
 <h2 id="javascript_1">JavaScriptからコンポーネントメソッドを呼び出す</h2>
 <p>以下のJavaScript関数を使って、Itemに割り当てられた任意のコンポーネントメソッドを呼び出すことが出来ます。</p>
 <p><code>function hel_script_CallComponentMethod(ItemName, ComponentName, MethodName, Param)</code></p>
 <p>コンポーネントメソッド側は、戻り値の型が void で、引数は string 1つのみで定義しておく必要があります。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// HeliScriptのコンポーネント定義</span>
-<span class="n">component</span><span class="w"> </span><span class="n">Test</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">public</span><span class="w"> </span><span class="n">void</span><span class="w"> </span><span class="n">DoFromJS</span><span class="p">(</span><span class="nb">string</span><span class="w"> </span><span class="n">Param</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// .....</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>// HeliScriptのコンポーネント定義
+component Test {
+    public void DoFromJS(string Param) {
+        // .....
+    }
+}
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="c1">// JavaScriptから上記のコンポーネントメソッドを呼び出す</span>
-<span class="n">hel_script_CallComponentMethod</span><span class="p">(</span><span class="s">&quot;FieldItem&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Test&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;DoFromJS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TestParam&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>// JavaScriptから上記のコンポーネントメソッドを呼び出す
+hel_script_CallComponentMethod(&quot;FieldItem&quot;, &quot;Test&quot;, &quot;DoFromJS&quot;, &quot;TestParam&quot;);
 </code></pre></div>
 
 
@@ -11499,7 +11566,7 @@ JavaScript側で <code>function hel_action_bridge(name, text)</code> が定義�
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

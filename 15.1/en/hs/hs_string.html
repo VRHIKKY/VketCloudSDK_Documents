@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6931,6 +6977,8 @@
       
         
       
+        
+      
     
     
     
@@ -7253,6 +7301,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7546,7 +7615,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11933,7 +12002,7 @@ Therefore, please avoid using the quotation within strings.</p>
 <h2 id="special-operators">special operators</h2>
 <h3 id="operator">[ ] operator</h3>
 <p>Gets the character at the specified position in the string as an int value. Assignment to the specified position is also possible.</p>
-<div class="codehilite"><pre><span></span><code>string text = &quot;Hello!&quot;;
+<div class="highlight"><pre><span></span><code>string text = &quot;Hello!&quot;;
 
 // get &#39;H&#39;
 int part = text[0];
@@ -11941,10 +12010,9 @@ int part = text[0];
 // Rewrite &quot;Hello!&quot; to &quot;Hello?&quot;
 text[text.Length() - 1] = &#39;?&#39;;
 </code></pre></div>
-
 <h3 id="operator_1">+ operator</h3>
 <p>Concatenate strings to produce a new string.</p>
-<div class="codehilite"><pre><span></span><code>string text = &quot;Vket&quot;;
+<div class="highlight"><pre><span></span><code>string text = &quot;Vket&quot;;
 
 // create &quot;VketCloud&quot;
 string vketcloud = text + &quot;Cloud&quot;;
@@ -11952,16 +12020,14 @@ string vketcloud = text + &quot;Cloud&quot;;
 // replace the string itself with the += operator
 text += &quot;Cloud&quot;;
 </code></pre></div>
-
 <h3 id="operator_2">% operator</h3>
 <p>Generates a new string by applying various types of values given as arguments to a template string that follows a certain format.</p>
 <p>It is also possible to convert numbers to strings, as in the sample code below.</p>
-<div class="codehilite"><pre><span></span><code>int n;
+<div class="highlight"><pre><span></span><code>int n;
 string s;
 
 s = &quot;%d&quot; %n;
 </code></pre></div>
-
 <p>Place format specifier character starting from "%" inside the string to apply the arguments of % operators in its order.</p>
 <ul>
 <li>%d</li>
@@ -11971,16 +12037,16 @@ s = &quot;%d&quot; %n;
 <li>%s</li>
 <li>is a format specifier that represents a string.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 1 + 1 = 2</span>
-<span class="nb">int</span><span class="w"> </span><span class="n">answer</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-<span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;1 + 1 = %d\n&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="n">answer</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code>// 1 + 1 = 2
+int answer = 2;
+hsSystemOutput(&quot;1 + 1 = %d\n&quot; % answer);
 
-<span class="c1">// VketCloud hello world!</span>
-<span class="nb">string</span><span class="w"> </span><span class="n">hello</span><span class="w">  </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;hello world!&quot;</span><span class="p">;</span>
-<span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;VketCloud %s\n&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="n">hello</span><span class="p">);</span>
+// VketCloud hello world!
+string hello  = &quot;hello world!&quot;;
+hsSystemOutput(&quot;VketCloud %s\n&quot; % hello);
 
-<span class="c1">// &quot;int value = myArray[99];&quot;</span>
-<span class="n">hsSystemOutput</span><span class="p">(</span><span class="s">&quot;int %s = %s[%d];\n&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="s">&quot;value&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="s">&quot;myArray&quot;</span><span class="w"> </span>%<span class="w"> </span><span class="mi">99</span><span class="p">);</span>
+// &quot;int value = myArray[99];&quot;
+hsSystemOutput(&quot;int %s = %s[%d];\n&quot; % &quot;value&quot; % &quot;myArray&quot; % 99);
 </code></pre></div>
 
 
@@ -12027,7 +12093,7 @@ s = &quot;%d&quot; %n;
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

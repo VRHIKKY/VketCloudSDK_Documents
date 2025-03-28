@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6637,6 +6683,8 @@
       
         
       
+        
+      
     
     
     
@@ -6950,6 +6998,27 @@
   
   <span class="md-ellipsis">
     JavaScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
   </span>
   
 
@@ -7330,7 +7399,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11449,50 +11518,49 @@ Note that using these methods <strong>does not</strong> remove the text in the i
 <p>To hide an HTML element, use the JavaScript function <code>hel_set_HTMLElement_visibility(string elementName, bool visibility)</code>.</p>
 <h2 id="coding-example">Coding Example</h2>
 <p>Below is an example of how to hide the existing UI + input fields when displaying the Activity GUI, and then restore them to their original state when hiding the Activity GUI.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">JavaScript</span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">toggle</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">visibility</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">HTML</span><span class="w"> </span><span class="n">elements</span>
-<span class="n">extern</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">elementName</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">bool</span><span class="w"> </span><span class="n">visibility</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>// JavaScript function to toggle the visibility of HTML elements
+extern {
+    void hel_set_HTMLElement_visibility(string elementName, bool visibility);
+}
 
-<span class="o">//</span><span class="w"> </span><span class="n">Whether</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">voice</span><span class="w"> </span><span class="n">chat</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">displayed</span>
-<span class="nb nb-Type">bool</span><span class="w"> </span><span class="n">_isChannelCreateShow</span><span class="p">;</span>
+// Whether or not the voice chat channel input field is displayed
+bool _isChannelCreateShow;
 
-<span class="o">//</span><span class="w"> </span><span class="n">Names</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">HTML</span><span class="w"> </span><span class="n">elements</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="n">fields</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">layer</span><span class="w"> </span><span class="n">where</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">voice</span><span class="w"> </span><span class="n">chat</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">located</span>
-<span class="k">const</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">_TextchatElementName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;textchat-text&quot;</span><span class="p">;</span>
-<span class="k">const</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">_ChannelnameElementName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;channelname-text&quot;</span><span class="p">;</span>
-<span class="k">const</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">_ChannnelCreateLayerName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;vcc_setting_channel_window&quot;</span><span class="p">;</span>
+// Names of the HTML elements for the input fields and the layer where the voice chat channel input field is located
+const string _TextchatElementName = &quot;textchat-text&quot;;
+const string _ChannelnameElementName = &quot;channelname-text&quot;;
+const string _ChannnelCreateLayerName = &quot;vcc_setting_channel_window&quot;;
 
-<span class="n">private</span><span class="w"> </span><span class="n">LayerBundle</span><span class="w"> </span><span class="n">_channelCreateLayer</span><span class="p">;</span>
+private LayerBundle _channelCreateLayer;
 
-<span class="n">_channelCreateLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsLayerGet</span><span class="p">(</span><span class="n">_ChannnelCreateLayerName</span><span class="p">);</span>
+_channelCreateLayer = hsLayerGet(_ChannnelCreateLayerName);
 
-<span class="o">//</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">required</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="n">displaying</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">GUI</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Activity</span>
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">ActivityGUIShow</span><span class="p">(){</span>
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Check</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">voice</span><span class="w"> </span><span class="n">chat</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">currently</span><span class="w"> </span><span class="n">visible</span>
-<span class="w">  </span><span class="n">_isChannelCreateShow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_channelCreateLayer</span><span class="o">.</span><span class="n">IsShow</span><span class="p">();</span>
+// Processing required when displaying the GUI for the Activity
+void ActivityGUIShow(){
+  // Check if the voice chat channel input field is currently visible
+  _isChannelCreateShow = _channelCreateLayer.IsShow();
 
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Hide</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">existing</span><span class="w"> </span><span class="n">UI</span>
-<span class="w">  </span><span class="n">hsCanvasSuspendVisibleLayers</span><span class="p">();</span>
+  // Hide the existing UI
+  hsCanvasSuspendVisibleLayers();
 
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Hide</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="n">fields</span>
-<span class="w">  </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">_TextchatElementName</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">);</span>
-<span class="w">  </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">_ChannelnameElementName</span><span class="p">,</span><span class="w"> </span><span class="bp">false</span><span class="p">);</span>
-<span class="p">}</span>
+  // Hide the input fields
+  hel_set_HTMLElement_visibility(_TextchatElementName, false);
+  hel_set_HTMLElement_visibility(_ChannelnameElementName, false);
+}
 
-<span class="o">//</span><span class="w"> </span><span class="n">Processing</span><span class="w"> </span><span class="n">required</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="n">hiding</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">GUI</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Activity</span>
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">ActivityGUIHide</span><span class="p">(){</span>
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Show</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">existing</span><span class="w"> </span><span class="n">UI</span>
-<span class="w">  </span><span class="n">hsCanvasResumeVisibleLayers</span><span class="p">();</span>
+// Processing required when hiding the GUI for the Activity
+void ActivityGUIHide(){
+  // Show the existing UI
+  hsCanvasResumeVisibleLayers();
 
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Show</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="n">fields</span><span class="w"> </span><span class="p">(</span><span class="n">the</span><span class="w"> </span><span class="n">voice</span><span class="w"> </span><span class="n">chat</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="n">field</span><span class="err">’</span><span class="n">s</span><span class="w"> </span><span class="n">visibility</span><span class="w"> </span><span class="n">depends</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">its</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">hide</span><span class="w"> </span><span class="n">command</span><span class="p">)</span>
-<span class="w">  </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">_TextchatElementName</span><span class="p">,</span><span class="w"> </span><span class="bp">true</span><span class="p">);</span>
-<span class="w">  </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">_ChannelnameElementName</span><span class="p">,</span><span class="w"> </span><span class="n">_isChannelCreateShow</span><span class="p">);</span>
-<span class="p">}</span>
+  // Show the input fields (the voice chat channel input field’s visibility depends on its state during the hide command)
+  hel_set_HTMLElement_visibility(_TextchatElementName, true);
+  hel_set_HTMLElement_visibility(_ChannelnameElementName, _isChannelCreateShow);
+}
 </code></pre></div>
-
 <h2 id="important-notes">Important Notes</h2>
 <p>IsShow(), which is used to check the visibility of the voice chat channel input field, does not work correctly if it’s called from a HeliScript inside a Canvas.</p>
-<div class="codehilite"><pre><span></span><code>Activity
+<p><div class="highlight"><pre><span></span><code>Activity
 ├ Canvas
 │ ├ HeliScript
 │ │ └ VCCChannelIsShow.hs × NG
@@ -11501,8 +11569,7 @@ Note that using these methods <strong>does not</strong> remove the text in the i
 └ HeliScript
    └ VCCChannelIsShow.hs ○ OK
 </code></pre></div>
-
-<p>Make sure to run it in the ActivityHeliScript instead.</p>
+Make sure to run it in the ActivityHeliScript instead.</p>
 
 
 
@@ -11548,7 +11615,7 @@ Note that using these methods <strong>does not</strong> remove the text in the i
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

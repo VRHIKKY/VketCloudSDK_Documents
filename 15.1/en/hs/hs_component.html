@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6872,6 +6918,8 @@
       
         
       
+        
+      
     
     
     
@@ -7194,6 +7242,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7487,7 +7556,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11738,15 +11807,14 @@
 <h2 id="defining-components">Defining components</h2>
 <p>A component is a class object added to the items described in the Scene file.</p>
 <p>Define a block that specifies the component name after the reserved word component.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="p">[</span><span class="n">component</span><span class="w"> </span><span class="n">name</span><span class="p">]</span><span class="w"> </span><span class="p">{</span>
-<span class="w">         </span><span class="c1">// Inside the component, methods and fields equivalent to classes can be defined</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>component [component name] {
+         // Inside the component, methods and fields equivalent to classes can be defined
+}
 </code></pre></div>
-
 <p>Also, if you define a public method with the same name as the component name inside the block, it becomes a constructor. This is called only once when the component object is created.</p>
 <p>If you define a public void Update() method, it will be called every frame when the screen is drawn.</p>
 <p>Below is a minimal sample code.</p>
-<div class="codehilite"><pre><span></span><code>component test
+<div class="highlight"><pre><span></span><code>component test
 {
      public Test()
      {
@@ -11757,57 +11825,48 @@
      }
 }
 </code></pre></div>
-
 <p>As the Update() method shown above, if the method having a preset name and arguments is defined within component, it will act as a callback when certain events are triggered.</p>
 <h2 id="callback-load-complete">Callback - Load complete</h2>
 <p>After the Vket Cloud engine is booted, and completed resource loading and  initialization, OnLoaded() will be called just once.</p>
-<div class="codehilite"><pre><span></span><code>public void OnLoaded()
+<div class="highlight"><pre><span></span><code>public void OnLoaded()
 </code></pre></div>
-
 <h2 id="callback-activation-deactivation-of-browser-tab">Callback - Activation / Deactivation of browser tab</h2>
 <p>This callback can be triggered on the Activation / Deactivation of browser tab.</p>
 <p>If the tab becomes active, the IsActivate will be true, while on deactivation IsActivate will be false.</p>
-<div class="codehilite"><pre><span></span><code>public void OnWindowActivate(bool IsActivate)
+<div class="highlight"><pre><span></span><code>public void OnWindowActivate(bool IsActivate)
 </code></pre></div>
-
 <h2 id="callback-beginning-of-page-unload">Callback - Beginning of page unload</h2>
 <p>This callback can be triggered on closing the browser tab, or jumping to another URL which actions will cause the current page to unload.</p>
 <p>At the moment of this event to trigger, the page resources will still be kept.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">public</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">OnBeforeUnload</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code>public void OnBeforeUnload()
 </code></pre></div>
-
 <h2 id="callback-page-unload">Callback - Page unload</h2>
 <p>This callback will be triggered before complete unload of the current page.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">public</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">OnUnload</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code>public void OnUnload()
 </code></pre></div>
-
 <h2 id="callback-click-node">Callback - Click Node</h2>
 <p>By calling OnClickNode method as below, this callback method will be triggered when the Item's Node is clicked.</p>
-<div class="codehilite"><pre><span></span><code>public bool OnClickNode(int NodeIndex)
+<div class="highlight"><pre><span></span><code>public bool OnClickNode(int NodeIndex)
 </code></pre></div>
-
 <p>By returning true after a certain process, the engine's click-to-move process will be disabled.</p>
 <p>For compatibility, the function with the void return type can be designated, which click-to-move process will be triggered if the Node is not defined as in the Scene file as clickablenodes.</p>
-<div class="codehilite"><pre><span></span><code>public void OnClickNode(int NodeIndex)
+<div class="highlight"><pre><span></span><code>public void OnClickNode(int NodeIndex)
 </code></pre></div>
-
 <p>If you define the OnClickNode method as follows, it will be called when the item's node is clicked.</p>
-<div class="codehilite"><pre><span></span><code>component Test
+<div class="highlight"><pre><span></span><code>component Test
 {
      public void OnClickNode(int NodeIndex)
      {
      }
 }
 </code></pre></div>
-
 <h2 id="callback-click-empty-space">Callback - Click empty space</h2>
 <p>This callback will be triggered on clicking an empty space.</p>
-<div class="codehilite"><pre><span></span><code>public void OnClickEmpty()
+<div class="highlight"><pre><span></span><code>public void OnClickEmpty()
 </code></pre></div>
-
 <h2 id="callback-areacollider">Callback - AreaCollider</h2>
 <p>If you define the OnEnterAreaCollider and OnLeaveAreaCollider methods as follows, they will be called when entering or leaving an "areacollider" type item.</p>
-<div class="codehilite"><pre><span></span><code>component AreaCollider
+<div class="highlight"><pre><span></span><code>component AreaCollider
 {
      Item m_Item;
 
@@ -11827,60 +11886,54 @@
      }
 }
 </code></pre></div>
-
 <h2 id="callback-unselecting-objects">Callback - Unselecting Objects</h2>
 <h3 id="onunselectnode">OnUnselectNode</h3>
-<div class="codehilite"><pre><span></span><code>public void OnUnselectNode(int NodeIndex)
+<p><div class="highlight"><pre><span></span><code>public void OnUnselectNode(int NodeIndex)
 </code></pre></div>
-
-<p>By clicking on an Item's Node beforehand, and clicking an avatar after, this will be considered as unselecting a Node.</p>
+By clicking on an Item's Node beforehand, and clicking an avatar after, this will be considered as unselecting a Node.</p>
 <p>This will trigger OnUnselectNode() with the NodeIndex as an argument.</p>
 <h3 id="onunselectavatar">OnUnselectAvatar</h3>
-<div class="codehilite"><pre><span></span><code>public void OnUnselectAvatar(string Name)
+<p><div class="highlight"><pre><span></span><code>public void OnUnselectAvatar(string Name)
 </code></pre></div>
-
-<p>By clicking on an avatar beforehand, and clicking an Item's Node after, this will be considered as unselecting an avatar.</p>
+By clicking on an avatar beforehand, and clicking an Item's Node after, this will be considered as unselecting an avatar.</p>
 <p>This will trigger OnUnselectNode() with the avatar's name as an argument.</p>
 <h2 id="callback-screen-size-change">Callback - Screen Size Change</h2>
 <p>This callback will be triggered when the screen size is changed. The width and height arguments contains the screen's width and height after resize.</p>
-<div class="codehilite"><pre><span></span><code>public void OnResize(int width, int height)
+<div class="highlight"><pre><span></span><code>public void OnResize(int width, int height)
 </code></pre></div>
-
 <h2 id="callback-custom-statecustom-data">Callback - Custom State/Custom Data</h2>
 <p>This is a callback method that receives any data sent from any player in the room.</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">component</span><span class="w"> </span><span class="nx">CustomDataReceiver</span>
-<span class="p">{</span>
-<span class="w">     </span><span class="nx">public</span><span class="w"> </span><span class="nx">void</span><span class="w"> </span><span class="nx">OnReceiveCustomState</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">     </span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code>component CustomDataReceiver
+{
+     public void OnReceiveCustomState(string id, string type, string data)
+     {
+     }
 
-<span class="w">     </span><span class="nx">public</span><span class="w"> </span><span class="nx">void</span><span class="w"> </span><span class="nx">OnReceiveCustomData</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
-<span class="w">     </span><span class="p">{</span>
-<span class="w">     </span><span class="p">}</span>
-<span class="p">}</span>
+     public void OnReceiveCustomData(string id, string type, string data)
+     {
+     }
+}
 </code></pre></div>
-
 <h2 id="callback-gui-button">Callback - GUI button</h2>
 <p><code>public void OnClickedButton(string layerName, string buttonName)</code></p>
 <p>If you define the OnClickedButton() method as below, it will be called when the GUI button is tapped.</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">component</span><span class="w"> </span><span class="nv">ButtonClickable</span>
+<div class="highlight"><pre><span></span><code>component ButtonClickable
 {
-<span class="w">     </span><span class="nv">public</span><span class="w"> </span><span class="nv">void</span><span class="w"> </span><span class="nv">OnClickedButton</span><span class="ss">(</span><span class="nv">string</span><span class="w"> </span><span class="nv">layerName</span>,<span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="nv">buttonname</span><span class="ss">)</span>
-<span class="w">     </span>{
-<span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">layerName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;MenuUI&quot;</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">             </span><span class="nv">hsSystemOutput</span><span class="ss">(</span><span class="s2">&quot;Button Clicked! :&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">buttonname</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;\n&quot;</span><span class="ss">)</span><span class="c1">;</span>
-<span class="w">         </span>}
-<span class="w">     </span>}
+     public void OnClickedButton(string layerName, string buttonname)
+     {
+         if (layerName == &quot;MenuUI&quot;) {
+             hsSystemOutput(&quot;Button Clicked! :&quot; + buttonname + &quot;\n&quot;);
+         }
+     }
 }
 </code></pre></div>
-
 <h2 id="callback-physics-collision-detection">Callback - physics collision detection</h2>
 <p><code>public void OnPhysicsCollision(int ID0, int ID1)</code></p>
 <p>Called when objects with physics set collide with each other.</p>
 <p>The ID is called PhysicsID and can be obtained from GetPhysicsIDByNodeName of the Item class or GetPhysicsID of the Player class.</p>
 <p>Get the PhysicsID in advance in the constructor, etc., save it in a member variable, and compare it in the callback function to determine if there is a collision.</p>
 <p>Note that the callback function may be called many times with the same combination of IDs immediately after a collision, so when a collision causes particles to regenerate, it is necessary to prevent them from regenerating too many times.</p>
-<div class="codehilite"><pre><span></span><code>component Test {
+<div class="highlight"><pre><span></span><code>component Test {
 Item m_Field;
 
 int m_PhysicsIDFloor,
@@ -11905,50 +11958,40 @@ m_PhysicsIDCube;
     }
 }
 </code></pre></div>
-
 <h2 id="callback-in-field-collider-detection">Callback - In-field collider detection</h2>
 <p>Called when the collider with <a href="../VKCComponents/VKCNodeCollider.html">VKC Node Collider</a> specified "InView" enters the field of view or goes out of the field of view.</p>
 <p>Components must be set to the same item.</p>
-<div class="codehilite"><pre><span></span><code>public void OnEnterViewCollider(string NodeName)
+<div class="highlight"><pre><span></span><code>public void OnEnterViewCollider(string NodeName)
 public void OnLeaveViewCollider(string NodeName)
 </code></pre></div>
-
 <h2 id="callback-text-chat">Callback - Text chat</h2>
 <p>Called when user sent message to the text chat.</p>
-<div class="codehilite"><pre><span></span><code>public void OnReceiveTextChat(string ID, string PlayerName, string Text)
+<div class="highlight"><pre><span></span><code>public void OnReceiveTextChat(string ID, string PlayerName, string Text)
 </code></pre></div>
-
 <h2 id="callback-player-avatar-click">Callback - Player Avatar Click</h2>
 <p>This callback is triggered when other player's avatars are clicked.</p>
-<div class="codehilite"><pre><span></span><code>public void OnClickedAvatar(string PlayerID)
+<div class="highlight"><pre><span></span><code>public void OnClickedAvatar(string PlayerID)
 </code></pre></div>
-
 <h2 id="callback-video">Callback - Video</h2>
 <p>This callback is triggered on the beginning of playing a video.</p>
-<div class="codehilite"><pre><span></span><code>public void OnPlayVideo()
+<div class="highlight"><pre><span></span><code>public void OnPlayVideo()
 </code></pre></div>
-
 <p>This callback is triggered on pausing a video.</p>
-<div class="codehilite"><pre><span></span><code>public void OnPauseVideo()
+<div class="highlight"><pre><span></span><code>public void OnPauseVideo()
 </code></pre></div>
-
 <p>This callback is triggered on resuming a paused video.</p>
-<div class="codehilite"><pre><span></span><code>public void OnResumeVideo()
+<div class="highlight"><pre><span></span><code>public void OnResumeVideo()
 </code></pre></div>
-
 <p>This callback is triggered on stopping a video.</p>
-<div class="codehilite"><pre><span></span><code>public void OnStopVideo()
+<div class="highlight"><pre><span></span><code>public void OnStopVideo()
 </code></pre></div>
-
 <h2 id="callback-property-change">Callback - Property Change</h2>
 <p>This callback is triggered when the item's property has been changed. if the Value is same as before, this will not be triggered.</p>
-<div class="codehilite"><pre><span></span><code>public void OnChangedProperty(string Key, string Value)
+<div class="highlight"><pre><span></span><code>public void OnChangedProperty(string Key, string Value)
 </code></pre></div>
-
 <h2 id="callback-message">Callback - Message</h2>
-<div class="codehilite"><pre><span></span><code>public void OnReceiveMessage(HSMessage message)
+<div class="highlight"><pre><span></span><code>public void OnReceiveMessage(HSMessage message)
 </code></pre></div>
-
 <p>This will be called when the item receives a message. The argument message contains the received data and sender information.</p>
 
 
@@ -11995,7 +12038,7 @@ public void OnLeaveViewCollider(string NodeName)
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

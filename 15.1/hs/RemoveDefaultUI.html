@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    JS入稿のサンプル
+    ワールド入場時間を制限する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web APIを使用し現在の天気を取得する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS入稿のチュートリアルシーン
   </span>
   
 
@@ -6637,6 +6683,8 @@
       
         
       
+        
+      
     
     
     
@@ -6950,6 +6998,27 @@
   
   <span class="md-ellipsis">
     JavaScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
   </span>
   
 
@@ -7330,7 +7399,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptでJsonを読み込む
+    HeliScriptでJsonを扱う
   </span>
   
 
@@ -11452,50 +11521,49 @@ ActivityのGUIを非表示にした際、原状復帰のため再表示する必
 <p>HTML要素の非表示にはJavaScriptの機能hel_set_HTMLElement_visibility(string elementName, bool visibility)を使います。</p>
 <h2 id="_2">コーディング例</h2>
 <p>ActivityのGUIを表示する際、既存のUI+入力欄を消し、ActivityのGUIを非表示にする時、元の状態に復帰するコーディングの例です。</p>
-<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">HTML要素の表示を切り替えるJavaScript機能</span>
-<span class="n">extern</span><span class="p">{</span>
-<span class="w">    </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">elementName</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">bool</span><span class="w"> </span><span class="n">visibility</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>// HTML要素の表示を切り替えるJavaScript機能
+extern{
+    void hel_set_HTMLElement_visibility(string elementName, bool visibility);
+}
 
-<span class="o">//</span><span class="w"> </span><span class="err">ボイスチャットチャンネルの入力欄が表示されているかどうか</span>
-<span class="nb nb-Type">bool</span><span class="w"> </span><span class="n">_isChannelCreateShow</span><span class="p">;</span>
+// ボイスチャットチャンネルの入力欄が表示されているかどうか
+bool _isChannelCreateShow;
 
-<span class="o">//</span><span class="w"> </span><span class="err">入力欄の</span><span class="n">HTML要素</span><span class="err">・ボイスチャットチャンネルの入力欄のあるレイヤーの名称</span>
-<span class="k">const</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">_TextchatElementName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;textchat-text&quot;</span><span class="p">;</span>
-<span class="k">const</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">_ChannelnameElementName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;channelname-text&quot;</span><span class="p">;</span>
-<span class="k">const</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">_ChannnelCreateLayerName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;vcc_setting_channel_window&quot;</span><span class="p">;</span>
+// 入力欄のHTML要素・ボイスチャットチャンネルの入力欄のあるレイヤーの名称
+const string _TextchatElementName = &quot;textchat-text&quot;;
+const string _ChannelnameElementName = &quot;channelname-text&quot;;
+const string _ChannnelCreateLayerName = &quot;vcc_setting_channel_window&quot;;
 
-<span class="n">private</span><span class="w"> </span><span class="n">LayerBundle</span><span class="w"> </span><span class="n">_channelCreateLayer</span><span class="p">;</span>
+private LayerBundle _channelCreateLayer;
 
-<span class="n">_channelCreateLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsLayerGet</span><span class="p">(</span><span class="n">_ChannnelCreateLayerName</span><span class="p">);</span>
+_channelCreateLayer = hsLayerGet(_ChannnelCreateLayerName);
 
-<span class="o">//</span><span class="w"> </span><span class="err">アクティビティによる</span><span class="n">GUIを表示する際に必要な処理</span>
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">ActivityGUIShow</span><span class="p">(){</span>
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="err">ボイスチャットチャンネルの入力欄の表示状況を確認</span>
-<span class="w">  </span><span class="n">_isChannelCreateShow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_channelCreateLayer</span><span class="o">.</span><span class="n">IsShow</span><span class="p">();</span>
+// アクティビティによるGUIを表示する際に必要な処理
+void ActivityGUIShow(){
+  // ボイスチャットチャンネルの入力欄の表示状況を確認
+  _isChannelCreateShow = _channelCreateLayer.IsShow();
 
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="err">既存</span><span class="n">UIの非表示化</span>
-<span class="w">  </span><span class="n">hsCanvasSuspendVisibleLayers</span><span class="p">();</span>
+  // 既存UIの非表示化
+  hsCanvasSuspendVisibleLayers();
 
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="err">入力欄の非表示</span>
-<span class="w">  </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">_TextchatElementName</span><span class="p">,</span><span class="bp">false</span><span class="p">);</span>
-<span class="w">  </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">_ChannelnameElementName</span><span class="p">,</span><span class="bp">false</span><span class="p">);</span>
-<span class="p">}</span>
+  // 入力欄の非表示
+  hel_set_HTMLElement_visibility(_TextchatElementName,false);
+  hel_set_HTMLElement_visibility(_ChannelnameElementName,false);
+}
 
-<span class="o">//</span><span class="w"> </span><span class="err">アクティビティによる</span><span class="n">GUIを非表示にする際に必要な処理</span>
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">ActivityGUIHide</span><span class="p">(){</span>
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="err">既存</span><span class="n">UIの表示</span>
-<span class="w">  </span><span class="n">hsCanvasResumeVisibleLayers</span><span class="p">();</span>
+// アクティビティによるGUIを非表示にする際に必要な処理
+void ActivityGUIHide(){
+  // 既存UIの表示
+  hsCanvasResumeVisibleLayers();
 
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="err">入力欄の表示</span><span class="p">(</span><span class="err">ボイスチャットチャンネルの入力欄は非表示命令実行時の表示状況を参照する</span><span class="p">)</span>
-<span class="w">  </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">_TextchatElementName</span><span class="p">,</span><span class="bp">true</span><span class="p">);</span>
-<span class="w">  </span><span class="n">hel_set_HTMLElement_visibility</span><span class="p">(</span><span class="n">_ChannelnameElementName</span><span class="p">,</span><span class="n">_isChannelCreateShow</span><span class="p">);</span>
-<span class="p">}</span>
+  // 入力欄の表示(ボイスチャットチャンネルの入力欄は非表示命令実行時の表示状況を参照する)
+  hel_set_HTMLElement_visibility(_TextchatElementName,true);
+  hel_set_HTMLElement_visibility(_ChannelnameElementName,_isChannelCreateShow);
+}
 </code></pre></div>
-
 <h2 id="_3">注意点</h2>
 <p>ボイスチャットチャンネルの入力欄の表示状況を確認で使用するIsShow()はCanvas内のHeliScriptだと正常に動作しません。</p>
-<div class="codehilite"><pre><span></span><code>Activity
+<p><div class="highlight"><pre><span></span><code>Activity
 ├ Canvas
 │├ HeliScript
 ││└ VCCChannelIsShow.hs × NG
@@ -11504,8 +11572,7 @@ ActivityのGUIを非表示にした際、原状復帰のため再表示する必
 └ HeliScript
 　└ VCCChannelIsShow.hs ○ OK
 </code></pre></div>
-
-<p>必ず、ActivityHeliScript内で行いましょう。</p>
+必ず、ActivityHeliScript内で行いましょう。</p>
 
 
 
@@ -11551,7 +11618,7 @@ ActivityのGUIを非表示にした際、原状復帰のため再表示する必
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>

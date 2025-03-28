@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6637,6 +6683,8 @@
       
         
       
+        
+      
     
     
     
@@ -6959,6 +7007,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7149,6 +7218,15 @@
   <a href="#switch-concise-description-of-many-branch-conditions" class="md-nav__link">
     <span class="md-ellipsis">
       switch - Concise description of many branch conditions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-block-based-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      { } - Block-Based Scope
     </span>
   </a>
   
@@ -7363,7 +7441,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11469,6 +11547,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#-block-based-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      { } - Block-Based Scope
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -11488,36 +11575,34 @@
 <p>Describes control constructs such as conditional branching and repetition.</p>
 <h2 id="if-conditional-branch">if - conditional branch</h2>
 <p>Conditional branching can be realized by dividing the processing with <em>{}</em> after <code>if (conditional expression)</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="c1">;</span>
-<span class="nv">int</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="c1">;</span>
+<div class="highlight"><pre><span></span><code>int x = 100;
+int y = 200;
 
-<span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="nv">what</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="nv">evaluates</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">true</span>
-}<span class="w"> </span><span class="k">else</span><span class="w"> </span>{
-<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="nv">What</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="nv">evaluates</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">false</span>
+if (x == y) {
+     // what to do if x == y evaluates to true
+} else {
+     // What to do if x == y evaluates to false
 }
 </code></pre></div>
-
 <h2 id="while-repeat">while - repeat</h2>
 <p>By writing <code>while (conditional expression) { }</code>, you can write a process that repeatedly executes <em>{}</em> until the conditional expression becomes <em>false</em>.</p>
 <p>Use <em>break</em> to force exit from the loop.</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">;</span>
-<span class="k">while</span><span class="w"> </span><span class="ss">(</span><span class="nv">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="nv">repeat</span><span class="w"> </span><span class="nv">this</span><span class="w"> </span><span class="nv">process</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">less</span><span class="w"> </span><span class="nv">than</span><span class="w"> </span><span class="mi">100</span>
-<span class="w">     </span><span class="o">++</span><span class="nv">x</span><span class="c1">;</span>
+<div class="highlight"><pre><span></span><code>int x = 0;
+while (x &lt; 100) {
+     // repeat this process while x is less than 100
+     ++x;
 }
 
-<span class="nv">int</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">;</span>
-<span class="o">//</span><span class="w"> </span><span class="nv">Since</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">conditional</span><span class="w"> </span><span class="nv">expression</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">always</span><span class="w"> </span><span class="nv">true</span>,<span class="w"> </span><span class="nv">repeat</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">processing</span><span class="w"> </span><span class="k">until</span><span class="w"> </span><span class="nv">you</span><span class="w"> </span><span class="nv">explicitly</span><span class="w"> </span><span class="k">exit</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="k">break</span>
-<span class="k">while</span><span class="w"> </span><span class="ss">(</span><span class="nv">true</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="ss">(</span><span class="nv">y</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">100</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">         </span><span class="o">//</span><span class="w"> </span><span class="nv">force</span><span class="w"> </span><span class="k">exit</span><span class="w"> </span><span class="nv">from</span><span class="w"> </span><span class="k">loop</span>
-<span class="w">         </span><span class="k">break</span><span class="c1">;</span>
-<span class="w">     </span>}
-<span class="w">     </span><span class="o">++</span><span class="nv">y</span><span class="c1">;</span>
+int y = 0;
+// Since the conditional expression is always true, repeat the processing until you explicitly exit with break
+while (true) {
+     if (y &gt;= 100) {
+         // force exit from loop
+         break;
+     }
+     ++y;
 }
 </code></pre></div>
-
 <h2 id="for-iteration-with-initialization-and-iterators">for - iteration with initialization and iterators</h2>
 <p>By writing <code>for (initialization; conditional expression; iterator) { }</code>, the following process will occur.</p>
 <ol>
@@ -11527,18 +11612,17 @@
 <li>Check the conditional expression again, and if it is <em>true</em>, return to 2. and repeat the process</li>
 </ol>
 <p>Conditional branching is achieved by containing the processing statements in <em>{}</em>.</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">i</span><span class="c1">;</span>
-<span class="k">for</span><span class="w"> </span><span class="ss">(</span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="c1">; i &lt; 100; ++i) {</span>
-<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="nv">repeat</span><span class="w"> </span><span class="nv">this</span><span class="w"> </span><span class="nv">process</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="nv">times</span>
-<span class="w">     </span><span class="nv">hsSystemOutput</span><span class="ss">(</span><span class="s2">&quot;%d\n&quot;</span><span class="w"> </span><span class="o">%</span><span class="nv">i</span><span class="ss">)</span><span class="c1">;</span>
+<div class="highlight"><pre><span></span><code>int i;
+for (i = 0; i &lt; 100; ++i) {
+     // repeat this process 100 times
+     hsSystemOutput(&quot;%d\n&quot; %i);
 }
 </code></pre></div>
-
 <h2 id="exiting-loops-break-continue">Exiting Loops (break, continue)</h2>
 <p>Using <em>break</em> or <em>continue</em>, you can control execution of loop process.</p>
 <h3 id="break">break</h3>
 <p><em>break</em> allows you to exit the loop in the middle of its execution.</p>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
 <span class="c1">// This loop will continue indefinitely since the condition is always true, unless explicitly exited with break.</span>
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="k">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -11548,10 +11632,9 @@
 <span class="w">    </span><span class="o">++</span><span class="n">i</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="continue">continue</h3>
 <p><em>continue</em> allows you to skip the remaining loop process and move on to the next iteration.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// This loop displays the value of i 100 times.</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// This loop displays the value of i 100 times.</span>
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">100</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// However, when i equals 5, continue skips the rest of the loop, so nothing is displayed.</span>
@@ -11560,35 +11643,48 @@
 <span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;i=%d&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="switch-concise-description-of-many-branch-conditions">switch - Concise description of many branch conditions</h2>
-<div class="codehilite"><pre><span></span><code><span class="nt">switch</span><span class="w"> </span><span class="o">(</span><span class="nt">value</span><span class="w"> </span><span class="nt">used</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nt">condition</span><span class="w"> </span><span class="nt">judgment</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="err">case</span><span class="w"> </span><span class="n">judgment_value_A</span><span class="p">:</span>
-<span class="w">         </span><span class="o">//</span><span class="w"> </span><span class="n">Process</span><span class="w"> </span><span class="n">A</span>
-<span class="w">         </span><span class="n">break</span><span class="p">;</span>
-<span class="w">     </span><span class="err">case</span><span class="w"> </span><span class="n">judgment_value_B</span><span class="p">:</span>
-<span class="w">         </span><span class="o">//</span><span class="w"> </span><span class="n">process</span><span class="w"> </span><span class="n">B</span>
-<span class="w">         </span><span class="n">break</span><span class="p">;</span>
-<span class="w">     </span><span class="err">//</span><span class="w"> </span><span class="err">...</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>switch (value used for condition judgment) {
+     case judgment_value_A:
+         // Process A
+         break;
+     case judgment_value_B:
+         // process B
+         break;
+     // ...
+}
 </code></pre></div>
-
 <p>You can concisely write multiple conditional expressions and the processing to be executed when true for one value.</p>
 <p>By putting a <em>default</em> clause at the end of a <em>case</em>, you can write the processing statements when none of the <em>cases</em> are met.</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">int</span><span class="w"> </span><span class="nt">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">100</span><span class="o">;</span>
-<span class="nt">string</span><span class="w"> </span><span class="nt">message</span><span class="o">;</span>
+<div class="highlight"><pre><span></span><code>int id = 100;
+string message;
 
-<span class="nt">switch</span><span class="w"> </span><span class="o">(</span><span class="nt">id</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="err">case</span><span class="w"> </span><span class="err">-1:</span>
-<span class="w">         </span><span class="err">message</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;dummy</span><span class="w"> </span><span class="err">account&quot;</span><span class="p">;</span>
-<span class="w">         </span><span class="err">break</span><span class="p">;</span>
-<span class="w">     </span><span class="err">case</span><span class="w"> </span><span class="err">0:</span>
-<span class="w">         </span><span class="err">message</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;root</span><span class="w"> </span><span class="err">user&quot;</span><span class="p">;</span>
-<span class="w">         </span><span class="err">break</span><span class="p">;</span>
-<span class="w">     </span><span class="n">default</span><span class="p">:</span>
-<span class="w">         </span><span class="n">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;restricted user&quot;</span><span class="p">;</span>
-<span class="w">         </span><span class="err">break</span><span class="p">;</span>
-<span class="p">}</span>
+switch (id) {
+     case -1:
+         message = &quot;dummy account&quot;;
+         break;
+     case 0:
+         message = &quot;root user&quot;;
+         break;
+     default:
+         message = &quot;restricted user&quot;;
+         break;
+}
+</code></pre></div>
+<h2 id="-block-based-scope">{ } - Block-Based Scope</h2>
+<p>Within a method, <em>{ }</em> can be used to define scope.</p>
+<div class="highlight"><pre><span></span><code>public void example() {
+    int x = 10;
+    { 
+        int y = 20;
+    }
+
+    // -&gt; &quot;x:10&quot;
+    hsSystemOutput(&quot;x: %d&quot; % x);
+
+    // Error because y is out of scope
+    hsSystemOutput(&quot;y: %d&quot; % y); 
+}
 </code></pre></div>
 
 
@@ -11635,7 +11731,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

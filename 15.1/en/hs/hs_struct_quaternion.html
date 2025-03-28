@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6919,6 +6965,8 @@
       
         
       
+        
+      
     
     
     
@@ -7241,6 +7289,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7534,7 +7603,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11833,15 +11902,14 @@
 </div>
 <hr />
 <h2 id="class-definition">class definition</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">Quaternion</span>
+<div class="highlight"><pre><span></span><code>class Quaternion
 {
-     <span class="n">public</span> <span class="n">float</span> <span class="nb">x</span>, <span class="n">y</span>, <span class="nb">z</span>, <span class="nb">w</span>;
+     public float x, y, z, w;
 
-     <span class="n">public</span> <span class="n">Quaternion</span>()
-     <span class="n">public</span> <span class="n">Matrix</span> <span class="n">GetMatrix</span>()
+     public Quaternion()
+     public Matrix GetMatrix()
 }
 </code></pre></div>
-
 <h2 id="quaternion-utility-functions">Quaternion utility functions</h2>
 <h3 id="makequaternion">makeQuaternion</h3>
 <p><code>Quaternion makeQuaternion(float x, float y, float z, float w)</code></p>
@@ -11861,6 +11929,26 @@
 <h3 id="makequaternioneuler">makeQuaternionEuler</h3>
 <p><code>Quaternion makeQuaternionEuler(float x, float y, float z)</code></p>
 <p>global function. Generates a quaternion from the triplet of Euler angles x, y, z.</p>
+<div class="admonition warning">
+<p class="admonition-title">Matching Unity's Euler Angles with Visual Appearance</p>
+<p>In Unity, Euler angle rotations are performed in the order of Z-axis, X-axis, and Y-axis.<br>
+Since this order differs from the Vket Cloud engine, please refer to the code below to match Unity's settings with the visual appearance.</p>
+<details class="quote">
+<summary>Code Sample</summary>
+<div class="highlight"><pre><span></span><code>Quaternion CreateQuaternionEuler(float x, float y, float z)
+{
+    Quaternion XRot = makeQuaternionXRotation(hsMathDegToRad(x));
+    Quaternion YRot = makeQuaternionYRotation(hsMathDegToRad(y));
+    Quaternion ZRot = makeQuaternionZRotation(hsMathDegToRad(z));
+
+    Quaternion YXRot = makeQuaternionMul(YRot, XRot);
+    Quaternion YXZRot = makeQuaternionMul(YXRot, ZRot);
+
+    return YXZRot;
+}
+</code></pre></div>
+</details>
+</div>
 <h3 id="makequaternionfromto">makeQuaternionFromTo</h3>
 <p><code>Quaternion makeQuaternionFromTo(Vector3 From, Vector3 To)</code></p>
 <p>global function. Generates a quaternion from From vector to To vector.</p>
@@ -11949,7 +12037,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

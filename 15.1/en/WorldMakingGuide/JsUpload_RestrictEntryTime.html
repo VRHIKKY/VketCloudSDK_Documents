@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -16,29 +16,29 @@
         <link rel="prev" href="JsUpload.html">
       
       
-        <link rel="next" href="ImportAssetStore.html">
+        <link rel="next" href="JsUpload_FetchCurrentWeather.html">
       
       
-      <link rel="icon" href="../images/Favicon.png">
+      <link rel="icon" href="../../images/Favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>JS入稿のサンプル - Vket Cloud SDK Manual</title>
+        <title>Restrict World Entry Time - Vket Cloud SDK Manual</title>
       
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
 
     
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../../css/styles.css">
 
     
       
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -102,8 +102,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#js" class="md-skip">
-          コンテンツにスキップ
+        <a href="#restrict-world-entry-time" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -121,10 +121,10 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://cloud.vket.com/creator" title="Vket Cloud SDK Manual" class="md-header__button md-logo" aria-label="Vket Cloud SDK Manual" data-md-component="logo">
       
-  <img src="../images/VketCloudIcon.png" alt="logo">
+  <img src="../../images/VketCloudIcon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              JS入稿のサンプル
+              Restrict World Entry Time
             
           </span>
         </div>
@@ -181,20 +181,20 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="言語切り替え">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../en/WorldMakingGuide/JsUpload_Sample.html" hreflang="en" class="md-select__link">
+            <a href="JsUpload_RestrictEntryTime.html" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="JsUpload_Sample.html" hreflang="ja" class="md-select__link">
+            <a href="../../WorldMakingGuide/JsUpload_RestrictEntryTime.html" hreflang="ja" class="md-select__link">
               日本語
             </a>
           </li>
@@ -213,16 +213,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="検索">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
@@ -235,7 +235,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -268,11 +268,11 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://cloud.vket.com/creator" title="Vket Cloud SDK Manual" class="md-nav__button md-logo" aria-label="Vket Cloud SDK Manual" data-md-component="logo">
       
-  <img src="../images/VketCloudIcon.png" alt="logo">
+  <img src="../../images/VketCloudIcon.png" alt="logo">
 
     </a>
     Vket Cloud SDK Manual
@@ -291,7 +291,7 @@
         
   
   <span class="md-ellipsis">
-    はじめに
+    Introduction
   </span>
   
 
@@ -333,7 +333,7 @@
             
   
   <span class="md-ellipsis">
-    Vket Cloud SDKについて
+    About Vket Cloud SDK
   </span>
   
 
@@ -343,7 +343,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Vket Cloud SDKについて
+            About Vket Cloud SDK
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -358,7 +358,7 @@
         
   
   <span class="md-ellipsis">
-    アカウント準備
+    Setup Account
   </span>
   
 
@@ -379,7 +379,7 @@
         
   
   <span class="md-ellipsis">
-    動作環境
+    Operating Environment
   </span>
   
 
@@ -400,7 +400,7 @@
         
   
   <span class="md-ellipsis">
-    SDKの導入方法
+    Setup SDK
   </span>
   
 
@@ -421,7 +421,7 @@
         
   
   <span class="md-ellipsis">
-    SDKにログインする
+    Login to SDK
   </span>
   
 
@@ -442,7 +442,7 @@
         
   
   <span class="md-ellipsis">
-    アバターの使用方法
+    How to use avatar
   </span>
   
 
@@ -488,7 +488,7 @@
             
   
   <span class="md-ellipsis">
-    ワールド制作の基本
+    First Steps
   </span>
   
 
@@ -498,7 +498,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            ワールド制作の基本
+            First Steps
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -513,7 +513,7 @@
         
   
   <span class="md-ellipsis">
-    ワールドの基本要素
+    Essential Objects
   </span>
   
 
@@ -534,7 +534,7 @@
         
   
   <span class="md-ellipsis">
-    ローカル環境でのビルドと実行
+    Build And Run
   </span>
   
 
@@ -555,7 +555,7 @@
         
   
   <span class="md-ellipsis">
-    ワールドアップロード
+    World Upload
   </span>
   
 
@@ -636,7 +636,7 @@
         
   
   <span class="md-ellipsis">
-    Vket Cloud Settings - 概要
+    Vket Cloud Settings - Overview
   </span>
   
 
@@ -889,7 +889,7 @@
             
   
   <span class="md-ellipsis">
-    ワールド制作ガイド
+    World Making Guide
   </span>
   
 
@@ -899,7 +899,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            ワールド制作ガイド
+            World Making Guide
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -914,7 +914,7 @@
         
   
   <span class="md-ellipsis">
-    VketCloudの仕様制限
+    Specifications Limits
   </span>
   
 
@@ -935,7 +935,7 @@
         
   
   <span class="md-ellipsis">
-    シェーダー対応項目一覧
+    Shader Availability
   </span>
   
 
@@ -956,7 +956,7 @@
         
   
   <span class="md-ellipsis">
-    スカイボックス設定
+    Setting up a Skybox
   </span>
   
 
@@ -977,7 +977,7 @@
         
   
   <span class="md-ellipsis">
-    コライダーの使い方 / Tips
+    How to use Colliders / Tips
   </span>
   
 
@@ -998,7 +998,7 @@
         
   
   <span class="md-ellipsis">
-    物理エンジン
+    Physics Engine
   </span>
   
 
@@ -1019,7 +1019,7 @@
         
   
   <span class="md-ellipsis">
-    VKC Item Fieldの使い方
+    Tips on using VKC Item Field
   </span>
   
 
@@ -1040,7 +1040,7 @@
         
   
   <span class="md-ellipsis">
-    リフレクションプローブ
+    Reflection Probe
   </span>
   
 
@@ -1061,7 +1061,7 @@
         
   
   <span class="md-ellipsis">
-    オブジェクトをアニメーションさせる
+    How to Animate Objects
   </span>
   
 
@@ -1082,7 +1082,7 @@
         
   
   <span class="md-ellipsis">
-    オブジェクトをアニメーションさせる - 動かないときは
+    How to Animate Objects - Troubleshooting
   </span>
   
 
@@ -1103,7 +1103,7 @@
         
   
   <span class="md-ellipsis">
-    Unityアセットのアニメーションを変換する
+    How to convert animation from Unity asset
   </span>
   
 
@@ -1124,7 +1124,7 @@
         
   
   <span class="md-ellipsis">
-    アバターファイル
+    Avatar File
   </span>
   
 
@@ -1145,7 +1145,7 @@
         
   
   <span class="md-ellipsis">
-    プリセットアバターを追加する
+    Adding Preset Avatars
   </span>
   
 
@@ -1166,7 +1166,7 @@
         
   
   <span class="md-ellipsis">
-    ワールドに任意のファイルを保持させる
+    File Deployment Config
   </span>
   
 
@@ -1187,7 +1187,7 @@
         
   
   <span class="md-ellipsis">
-    クリック判定のある移動オブジェクト
+    Movable Clickable Object
   </span>
   
 
@@ -1212,6 +1212,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1226,7 +1230,7 @@
             
   
   <span class="md-ellipsis">
-    JS入稿
+    JS Upload
   </span>
   
 
@@ -1236,7 +1240,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_15_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_15">
             <span class="md-nav__icon md-icon"></span>
-            JS入稿
+            JS Upload
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1251,7 +1255,7 @@
         
   
   <span class="md-ellipsis">
-    JS入稿機能の有効化
+    Enabling JS Upload Feature
   </span>
   
 
@@ -1281,18 +1285,18 @@
           
   
   <span class="md-ellipsis">
-    JS入稿のサンプル
+    Restrict World Entry Time
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="JsUpload_Sample.html" class="md-nav__link md-nav__link--active">
+      <a href="JsUpload_RestrictEntryTime.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    JS入稿のサンプル
+    Restrict World Entry Time
   </span>
   
 
@@ -1300,7 +1304,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="目次">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1309,70 +1313,40 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目次
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      前提条件
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#js_1" class="md-nav__link">
+  <a href="#procedure" class="md-nav__link">
     <span class="md-ellipsis">
-      サンプルJS入稿手順
+      Procedure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-upload-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      ① Upload JavaScript
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#js_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      サンプルJS入稿ワールドの説明
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      通信の説明
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      データフローの全体像
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      JavaScript の実装
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#heliscript" class="md-nav__link">
-    <span class="md-ellipsis">
-      HeliScriptの実装
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1380,6 +1354,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1404,7 +1420,7 @@
         
   
   <span class="md-ellipsis">
-    アセットストアからアバターをセットアップする
+    Set Up Avatar From Asset Store
   </span>
   
 
@@ -1425,7 +1441,7 @@
         
   
   <span class="md-ellipsis">
-    ロードが完了したら開く扉
+    Door Opens After Load
   </span>
   
 
@@ -1446,7 +1462,7 @@
         
   
   <span class="md-ellipsis">
-    テクスチャをぼやけさせない
+    Guide To Clear Textures
   </span>
   
 
@@ -1467,7 +1483,7 @@
         
   
   <span class="md-ellipsis">
-    VKC Item Background Textureの使い方
+    How to Use VKC Item Background Texture
   </span>
   
 
@@ -1488,7 +1504,7 @@
         
   
   <span class="md-ellipsis">
-    プレイヤーに追従するテキストの実装
+    Implementing text that follows the player
   </span>
   
 
@@ -1509,7 +1525,7 @@
         
   
   <span class="md-ellipsis">
-    ライトスキャタリング
+    Light Scattering
   </span>
   
 
@@ -1530,7 +1546,7 @@
         
   
   <span class="md-ellipsis">
-    特定の条件下でのみ入場時効果音を鳴らす
+    Playing Entrance Sound Effects Only Under Specific Conditions
   </span>
   
 
@@ -1551,7 +1567,7 @@
         
   
   <span class="md-ellipsis">
-    Activityのjsonのメソッドを実行する
+    Execute Activity Json Method
   </span>
   
 
@@ -1572,7 +1588,7 @@
         
   
   <span class="md-ellipsis">
-    HEOProperty(Vket Cloudのプロパティ機能)の使い方
+    How to Use HEOProperty (Vket Cloud Property Function)
   </span>
   
 
@@ -1593,7 +1609,7 @@
         
   
   <span class="md-ellipsis">
-    VKC Node Shadowの使い方
+    How to Use VKC Node Shadow
   </span>
   
 
@@ -1614,7 +1630,7 @@
         
   
   <span class="md-ellipsis">
-    モーション付きアクティビティ
+    Activity With Motion
   </span>
   
 
@@ -1635,7 +1651,7 @@
         
   
   <span class="md-ellipsis">
-    CanvasUI表示機能付きアクティビティクラスを作る
+    Activity With Canvas UI
   </span>
   
 
@@ -1656,7 +1672,7 @@
         
   
   <span class="md-ellipsis">
-    バイナリ出力に失敗
+    Binary Output Error
   </span>
   
 
@@ -1677,7 +1693,7 @@
         
   
   <span class="md-ellipsis">
-    iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法
+    How to check the Chrome Developer Tools console on iPhone alone
   </span>
   
 
@@ -1698,7 +1714,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTextureでテクスチャの差し替えが正常に出来ない
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -1719,7 +1735,7 @@
         
   
   <span class="md-ellipsis">
-    VketCloudでのユーザビリティを向上させる
+    Improving Usability in VketCloud
   </span>
   
 
@@ -1740,7 +1756,7 @@
         
   
   <span class="md-ellipsis">
-    カプセル長方形の画像を9sliceで作成する
+    Creating Capsule Rectangle Images Using 9-Slice
   </span>
   
 
@@ -1796,7 +1812,7 @@
             
   
   <span class="md-ellipsis">
-    トラブルシューティング
+    Trouble shooting
   </span>
   
 
@@ -1806,7 +1822,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            トラブルシューティング
+            Trouble shooting
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1821,7 +1837,7 @@
         
   
   <span class="md-ellipsis">
-    SDKがインストール後に立ち上がらない
+    SDK does not appear after install
   </span>
   
 
@@ -1842,7 +1858,7 @@
         
   
   <span class="md-ellipsis">
-    SDK初学者:何か起きたときにとりあえず見るべきリスト
+    Trouble shooting - General Checklist
   </span>
   
 
@@ -1863,7 +1879,7 @@
         
   
   <span class="md-ellipsis">
-    ビルドエラー / ワールドが動かないときは
+    Build Error / How to troubleshoot issues
   </span>
   
 
@@ -1884,7 +1900,7 @@
         
   
   <span class="md-ellipsis">
-    バージョンアップ後によくあるトラブル
+    Version Update Troubleshooting
   </span>
   
 
@@ -1905,7 +1921,7 @@
         
   
   <span class="md-ellipsis">
-    UnityとVketCloudの見た目を揃える
+    Unity settings for replicating actual look in Vket Cloud
   </span>
   
 
@@ -1926,7 +1942,7 @@
         
   
   <span class="md-ellipsis">
-    ワールド入室後にマルチプレイができない時の確認ポイント
+    Multiplayer Troubleshooting
   </span>
   
 
@@ -1947,7 +1963,7 @@
         
   
   <span class="md-ellipsis">
-    ご意見・バグ報告フォーム
+    Comment / Bug Reports Form
   </span>
   
 
@@ -1968,7 +1984,7 @@
         
   
   <span class="md-ellipsis">
-    音声減衰の不具合
+    Voice Attenuation Trouble
   </span>
   
 
@@ -2063,7 +2079,7 @@
         
   
   <span class="md-ellipsis">
-    旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
+    Solution to Profile Image Error When Creating an Account on Old MyVket
   </span>
   
 
@@ -2084,7 +2100,7 @@
         
   
   <span class="md-ellipsis">
-    MeshColliderとHEOAreaColliderを持つコライダーが重なっていた場合、HEOAreaColliderが動作しない
+    HEOAreaCollider Does Not Work When Overlapping with a MeshCollider
   </span>
   
 
@@ -2105,7 +2121,7 @@
         
   
   <span class="md-ellipsis">
-    VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順
+    Procedure for Porting Animation Shader Materials for VRChat to VketCloud
   </span>
   
 
@@ -2126,7 +2142,7 @@
         
   
   <span class="md-ellipsis">
-    デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある
+    Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function
   </span>
   
 
@@ -2147,7 +2163,7 @@
         
   
   <span class="md-ellipsis">
-    UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法
+    Solution to Build Error when a Mesh Object without UV2 is attached to Mesh
   </span>
   
 
@@ -2168,7 +2184,7 @@
         
   
   <span class="md-ellipsis">
-    SphereColliderをクリックしても反応しない場合の解決方法
+    Solution for When Clicking on Sphere Collider Does Not Respond
   </span>
   
 
@@ -2189,7 +2205,7 @@
         
   
   <span class="md-ellipsis">
-    Split関数について
+    About the Split Function
   </span>
   
 
@@ -2210,7 +2226,7 @@
         
   
   <span class="md-ellipsis">
-    アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
+    The .mp3 audio file in the activity is not output during the build
   </span>
   
 
@@ -2231,7 +2247,7 @@
         
   
   <span class="md-ellipsis">
-    ロードが完了すると画面が真っ暗になる
+    The screen goes completely black after loading is complete
   </span>
   
 
@@ -2252,7 +2268,7 @@
         
   
   <span class="md-ellipsis">
-    Data型の特殊仕様
+    Special Specifications of the Date Type
   </span>
   
 
@@ -2273,7 +2289,7 @@
         
   
   <span class="md-ellipsis">
-    ローディングが止まる
+    Loading Stack
   </span>
   
 
@@ -2294,7 +2310,7 @@
         
   
   <span class="md-ellipsis">
-    ビルド時に反映されない
+    Not Reflected During Build
   </span>
   
 
@@ -2315,7 +2331,7 @@
         
   
   <span class="md-ellipsis">
-    エラーが表示されない不具合への対処法
+    Error Not Displayed
   </span>
   
 
@@ -2336,7 +2352,7 @@
         
   
   <span class="md-ellipsis">
-    効果音の初回再生が遅い問題の解消
+    Resolving the Issue of Slow Initial Sound Effect Playback
   </span>
   
 
@@ -2357,7 +2373,7 @@
         
   
   <span class="md-ellipsis">
-    Lib13移行のモーション追加
+    Add Motions After Lib13
   </span>
   
 
@@ -2446,7 +2462,7 @@
         
   
   <span class="md-ellipsis">
-    デバッグコンソール
+    Debug Console
   </span>
   
 
@@ -2467,7 +2483,7 @@
         
   
   <span class="md-ellipsis">
-    デバッグメッセージ一覧
+    Debug Messages
   </span>
   
 
@@ -2488,7 +2504,7 @@
         
   
   <span class="md-ellipsis">
-    デバッグモード
+    Debug Mode
   </span>
   
 
@@ -2509,7 +2525,7 @@
         
   
   <span class="md-ellipsis">
-    .heoファイルを出力する
+    Export Field Tutorial
   </span>
   
 
@@ -2530,7 +2546,7 @@
         
   
   <span class="md-ellipsis">
-    アニメーションコンバーター
+    Animation Converter
   </span>
   
 
@@ -2569,7 +2585,7 @@
             
   
   <span class="md-ellipsis">
-    パーティクルエディター
+    Particle Editor
   </span>
   
 
@@ -2579,7 +2595,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8_6">
             <span class="md-nav__icon md-icon"></span>
-            パーティクルエディター
+            Particle Editor
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2594,7 +2610,7 @@
         
   
   <span class="md-ellipsis">
-    パーティクルエディター：概要
+    Particle Editor - Overview
   </span>
   
 
@@ -2615,7 +2631,7 @@
         
   
   <span class="md-ellipsis">
-    ウィンドウ解説・操作方法について
+    About Screen / How to Operate
   </span>
   
 
@@ -2636,7 +2652,7 @@
         
   
   <span class="md-ellipsis">
-    パーティクルエディター：プロパティ一覧
+    Particle Editor - Properties
   </span>
   
 
@@ -2707,7 +2723,7 @@
         
   
   <span class="md-ellipsis">
-    Vket Cloud SDK設定
+    Vket Cloud SDK Settings
   </span>
   
 
@@ -2770,7 +2786,7 @@
         
   
   <span class="md-ellipsis">
-    シーンプレビュー (β)
+    ScenePreview (β)
   </span>
   
 
@@ -2841,7 +2857,7 @@
         
   
   <span class="md-ellipsis">
-    概要とセットアップ
+    Overview & Setup
   </span>
   
 
@@ -2862,7 +2878,7 @@
         
   
   <span class="md-ellipsis">
-    基本実装
+    How to Use
   </span>
   
 
@@ -2883,7 +2899,7 @@
         
   
   <span class="md-ellipsis">
-    応用実装
+    Advanced Use
   </span>
   
 
@@ -2937,7 +2953,7 @@
             
   
   <span class="md-ellipsis">
-    編集のためのTips
+    World Editing Tips
   </span>
   
 
@@ -2947,7 +2963,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            編集のためのTips
+            World Editing Tips
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2962,7 +2978,7 @@
         
   
   <span class="md-ellipsis">
-    Vket Cloudオブジェクト追加のためのクイックメニュー
+    Quick Menu for adding Vket Cloud objects
   </span>
   
 
@@ -2983,7 +2999,7 @@
         
   
   <span class="md-ellipsis">
-    EditorOnlyタグの使用方法
+    Using EditorOnly Tags
   </span>
   
 
@@ -3004,7 +3020,7 @@
         
   
   <span class="md-ellipsis">
-    複数のVKCコンポーネントの一括編集
+    Editing Multiple VKCComponents
   </span>
   
 
@@ -3025,7 +3041,7 @@
         
   
   <span class="md-ellipsis">
-    UnlitマテリアルのContributeGI設定を外す
+    Disable Contribute GI of Unlit Materials
   </span>
   
 
@@ -3046,7 +3062,7 @@
         
   
   <span class="md-ellipsis">
-    ビルド時のオプション
+    Build Options
   </span>
   
 
@@ -3067,7 +3083,7 @@
         
   
   <span class="md-ellipsis">
-    ギズモ
+    Gizmos
   </span>
   
 
@@ -3088,7 +3104,7 @@
         
   
   <span class="md-ellipsis">
-    ヒエラルキーアイコン
+    Hierarchy Icons
   </span>
   
 
@@ -3138,7 +3154,7 @@
             
   
   <span class="md-ellipsis">
-    ワールドの軽量化方法
+    World Optimization
   </span>
   
 
@@ -3148,7 +3164,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
-            ワールドの軽量化方法
+            World Optimization
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3163,7 +3179,7 @@
         
   
   <span class="md-ellipsis">
-    ワールドの軽量化方法：概要
+    World Optimization - Overview
   </span>
   
 
@@ -3184,7 +3200,7 @@
         
   
   <span class="md-ellipsis">
-    オクルージョンカリング
+    Occlusion Culling
   </span>
   
 
@@ -3205,7 +3221,7 @@
         
   
   <span class="md-ellipsis">
-    テクスチャ圧縮
+    Texture Compression
   </span>
   
 
@@ -3226,7 +3242,7 @@
         
   
   <span class="md-ellipsis">
-    スマートフォンのためのワールド軽量化
+    Optimization for Smartphones
   </span>
   
 
@@ -3247,7 +3263,7 @@
         
   
   <span class="md-ellipsis">
-    ASTCとETC2とは
+    ASTC and ETC2
   </span>
   
 
@@ -3299,7 +3315,7 @@
             
   
   <span class="md-ellipsis">
-    VKCコンポーネント
+    VKC Components
   </span>
   
 
@@ -3309,7 +3325,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
-            VKCコンポーネント
+            VKC Components
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3324,7 +3340,7 @@
         
   
   <span class="md-ellipsis">
-    VKC/HEOコンポーネント概要
+    VKC/HEO Components Overview
   </span>
   
 
@@ -4585,7 +4601,7 @@
             
   
   <span class="md-ellipsis">
-    アクションについて
+    Actions
   </span>
   
 
@@ -4595,7 +4611,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
-            アクションについて
+            Actions
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4610,7 +4626,7 @@
         
   
   <span class="md-ellipsis">
-    アクションの概要
+    Actions Overview
   </span>
   
 
@@ -4647,7 +4663,7 @@
             
   
   <span class="md-ellipsis">
-    基本
+    Basics
   </span>
   
 
@@ -4657,7 +4673,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_2">
             <span class="md-nav__icon md-icon"></span>
-            基本
+            Basics
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4672,7 +4688,7 @@
         
   
   <span class="md-ellipsis">
-    ランダム
+    Random
   </span>
   
 
@@ -4693,7 +4709,7 @@
         
   
   <span class="md-ellipsis">
-    待機
+    Wait
   </span>
   
 
@@ -4746,7 +4762,7 @@
             
   
   <span class="md-ellipsis">
-    演算
+    Operation
   </span>
   
 
@@ -4756,7 +4772,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_3">
             <span class="md-nav__icon md-icon"></span>
-            演算
+            Operation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4771,7 +4787,7 @@
         
   
   <span class="md-ellipsis">
-    値の追加
+    Add Var
   </span>
   
 
@@ -4792,7 +4808,7 @@
         
   
   <span class="md-ellipsis">
-    変数が値に等しい場合
+    If Variable Equal To Value
   </span>
   
 
@@ -4813,7 +4829,7 @@
         
   
   <span class="md-ellipsis">
-    変数が値より小さい場合
+    If Variable Less Than Value
   </span>
   
 
@@ -4834,7 +4850,7 @@
         
   
   <span class="md-ellipsis">
-    変数が値より大きい場合
+    If Variable More Than Value
   </span>
   
 
@@ -4855,7 +4871,7 @@
         
   
   <span class="md-ellipsis">
-    変数が値に等しくない場合
+    If Variable Not Equal To Value
   </span>
   
 
@@ -4876,7 +4892,7 @@
         
   
   <span class="md-ellipsis">
-    値の設定
+    Set Var
   </span>
   
 
@@ -4921,7 +4937,7 @@
             
   
   <span class="md-ellipsis">
-    アイテム
+    Item
   </span>
   
 
@@ -4931,7 +4947,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_4">
             <span class="md-nav__icon md-icon"></span>
-            アイテム
+            Item
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4946,7 +4962,7 @@
         
   
   <span class="md-ellipsis">
-    アイテム表示/非表示
+    Show/Hide Item
   </span>
   
 
@@ -4967,7 +4983,7 @@
         
   
   <span class="md-ellipsis">
-    アイテム再生/停止
+    Play/Stop Item
   </span>
   
 
@@ -5016,7 +5032,7 @@
             
   
   <span class="md-ellipsis">
-    ノード
+    Node
   </span>
   
 
@@ -5026,7 +5042,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_5">
             <span class="md-nav__icon md-icon"></span>
-            ノード
+            Node
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5041,7 +5057,7 @@
         
   
   <span class="md-ellipsis">
-    ノード表示/非表示
+    Show/Hide Node
   </span>
   
 
@@ -5062,7 +5078,7 @@
         
   
   <span class="md-ellipsis">
-    クリック可能ノード有効化/無効化
+    Enable/Disable Clickable Node
   </span>
   
 
@@ -5083,7 +5099,7 @@
         
   
   <span class="md-ellipsis">
-    コライダー有効化/無効化
+    Enable/Disable Collider
   </span>
   
 
@@ -5104,7 +5120,7 @@
         
   
   <span class="md-ellipsis">
-    ノード有効化/無効化
+    Enable/Disable Node
   </span>
   
 
@@ -5149,7 +5165,7 @@
             
   
   <span class="md-ellipsis">
-    オブジェクト
+    Object
   </span>
   
 
@@ -5159,7 +5175,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_6">
             <span class="md-nav__icon md-icon"></span>
-            オブジェクト
+            Object
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5174,7 +5190,7 @@
         
   
   <span class="md-ellipsis">
-    オブジェクト表示/非表示
+    Show/Hide Object
   </span>
   
 
@@ -5195,7 +5211,7 @@
         
   
   <span class="md-ellipsis">
-    オブジェクト再生/停止
+    Play/Stop Object
   </span>
   
 
@@ -5240,7 +5256,7 @@
             
   
   <span class="md-ellipsis">
-    フェード
+    Fade
   </span>
   
 
@@ -5250,7 +5266,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_7">
             <span class="md-nav__icon md-icon"></span>
-            フェード
+            Fade
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5265,7 +5281,7 @@
         
   
   <span class="md-ellipsis">
-    フェードアウト/イン
+    Fade Out/In
   </span>
   
 
@@ -5286,7 +5302,7 @@
         
   
   <span class="md-ellipsis">
-    ホワイトアウト/イン
+    White Out/In
   </span>
   
 
@@ -5333,7 +5349,7 @@
             
   
   <span class="md-ellipsis">
-    トランスフォーム
+    Transform
   </span>
   
 
@@ -5343,7 +5359,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_8">
             <span class="md-nav__icon md-icon"></span>
-            トランスフォーム
+            Transform
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5358,7 +5374,7 @@
         
   
   <span class="md-ellipsis">
-    移動
+    Move To
   </span>
   
 
@@ -5379,7 +5395,7 @@
         
   
   <span class="md-ellipsis">
-    プレイヤー相対位置に設定
+    Set Pos Relative Player
   </span>
   
 
@@ -5400,7 +5416,7 @@
         
   
   <span class="md-ellipsis">
-    ワープ
+    Warp
   </span>
   
 
@@ -5447,7 +5463,7 @@
             
   
   <span class="md-ellipsis">
-    モーション/エモーション
+    Motion/Emotion
   </span>
   
 
@@ -5457,7 +5473,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_9">
             <span class="md-nav__icon md-icon"></span>
-            モーション/エモーション
+            Motion/Emotion
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5472,7 +5488,7 @@
         
   
   <span class="md-ellipsis">
-    エモート
+    Emote
   </span>
   
 
@@ -5493,7 +5509,7 @@
         
   
   <span class="md-ellipsis">
-    モーション
+    Motion
   </span>
   
 
@@ -5514,7 +5530,7 @@
         
   
   <span class="md-ellipsis">
-    次のモーション
+    Next Motion
   </span>
   
 
@@ -5582,7 +5598,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptを呼び出す
+    Call Script
   </span>
   
 
@@ -5631,7 +5647,7 @@
             
   
   <span class="md-ellipsis">
-    物理エンジン
+    Physics Engine
   </span>
   
 
@@ -5641,7 +5657,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_11">
             <span class="md-nav__icon md-icon"></span>
-            物理エンジン
+            Physics Engine
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5656,7 +5672,7 @@
         
   
   <span class="md-ellipsis">
-    速度を追加
+    Add Velocity
   </span>
   
 
@@ -5677,7 +5693,7 @@
         
   
   <span class="md-ellipsis">
-    力を追加/削除
+    Add/Clear Force
   </span>
   
 
@@ -5698,7 +5714,7 @@
         
   
   <span class="md-ellipsis">
-    物理有効化/無効化
+    Set Physics Enable
   </span>
   
 
@@ -5719,7 +5735,7 @@
         
   
   <span class="md-ellipsis">
-    位置/回転を設定
+    Set Position/Rotation
   </span>
   
 
@@ -5770,7 +5786,7 @@
             
   
   <span class="md-ellipsis">
-    ウィンドウ状態
+    Window State
   </span>
   
 
@@ -5780,7 +5796,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_12">
             <span class="md-nav__icon md-icon"></span>
-            ウィンドウ状態
+            Window State
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5795,7 +5811,7 @@
         
   
   <span class="md-ellipsis">
-    動画ビューアのフルスクリーン表示を切る
+    Movie Viewer Full Screen On
   </span>
   
 
@@ -5816,7 +5832,7 @@
         
   
   <span class="md-ellipsis">
-    動画ビューアのフルスクリーン表示する
+    Movie Viewer Full Screen Off
   </span>
   
 
@@ -5837,7 +5853,7 @@
         
   
   <span class="md-ellipsis">
-    動画ビューアのフルスクリーン表示トグル
+    Movie Viewer Full Screen Toggle
   </span>
   
 
@@ -5858,7 +5874,7 @@
         
   
   <span class="md-ellipsis">
-    動画ビューアを開く
+    Open Movie Viewer
   </span>
   
 
@@ -5879,7 +5895,7 @@
         
   
   <span class="md-ellipsis">
-    汎用ウィンドウステータスを指定する
+    Set Generic Window State
   </span>
   
 
@@ -5922,7 +5938,7 @@
             
   
   <span class="md-ellipsis">
-    ボイスチャット
+    Voice Chat
   </span>
   
 
@@ -5932,7 +5948,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_13_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_13">
             <span class="md-nav__icon md-icon"></span>
-            ボイスチャット
+            Voice Chat
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5947,7 +5963,7 @@
         
   
   <span class="md-ellipsis">
-    音声グループに参加/退出
+    Enter/Leave Voice Group
   </span>
   
 
@@ -5992,7 +6008,7 @@
             
   
   <span class="md-ellipsis">
-    ウェブ
+    Web
   </span>
   
 
@@ -6002,7 +6018,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_14_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_14">
             <span class="md-nav__icon md-icon"></span>
-            ウェブ
+            Web
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6017,7 +6033,7 @@
         
   
   <span class="md-ellipsis">
-    新しいタブでWEBページを開く
+    Open Links in New Tab
   </span>
   
 
@@ -6038,7 +6054,7 @@
         
   
   <span class="md-ellipsis">
-    現在のタブでWEBページを開く
+    Open Links in Current Tab
   </span>
   
 
@@ -6083,7 +6099,7 @@
             
   
   <span class="md-ellipsis">
-    その他
+    Others
   </span>
   
 
@@ -6093,7 +6109,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_15_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_13_15">
             <span class="md-nav__icon md-icon"></span>
-            その他
+            Others
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6108,7 +6124,7 @@
         
   
   <span class="md-ellipsis">
-    クッキーテキストの設定
+    Set Cookie Text
   </span>
   
 
@@ -6129,7 +6145,7 @@
         
   
   <span class="md-ellipsis">
-    ビデオ停止
+    Stop Video
   </span>
   
 
@@ -6224,7 +6240,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScript概要
+    HeliScript - Overview
   </span>
   
 
@@ -6245,7 +6261,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptキャスト
+    HeliScript - Casting
   </span>
   
 
@@ -6266,7 +6282,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptコメント
+    HeliScript - Commenting
   </span>
   
 
@@ -6307,7 +6323,7 @@
             
   
   <span class="md-ellipsis">
-    組み込み型
+    Built-in Types
   </span>
   
 
@@ -6317,7 +6333,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_14_4">
             <span class="md-nav__icon md-icon"></span>
-            組み込み型
+            Built-in Types
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6332,7 +6348,7 @@
         
   
   <span class="md-ellipsis">
-    基本型
+    Basic Types
   </span>
   
 
@@ -6353,7 +6369,7 @@
         
   
   <span class="md-ellipsis">
-    文字列(String)
+    String
   </span>
   
 
@@ -6374,7 +6390,7 @@
         
   
   <span class="md-ellipsis">
-    配列(List)
+    List
   </span>
   
 
@@ -6395,7 +6411,7 @@
         
   
   <span class="md-ellipsis">
-    デリゲート(Delegate)
+    Delegate
   </span>
   
 
@@ -6424,7 +6440,7 @@
         
   
   <span class="md-ellipsis">
-    クラス
+    Class
   </span>
   
 
@@ -6445,7 +6461,7 @@
         
   
   <span class="md-ellipsis">
-    コンポーネント / コールバック関数
+    Components / Callback functions
   </span>
   
 
@@ -6466,7 +6482,7 @@
         
   
   <span class="md-ellipsis">
-    Itemの種類 / VKCComponentとの対応一覧
+    Item Types and VKCComponents
   </span>
   
 
@@ -6515,7 +6531,7 @@
             
   
   <span class="md-ellipsis">
-    組み込みクラス・関数
+    Built-in Classes And Functions
   </span>
   
 
@@ -6525,7 +6541,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_14_8">
             <span class="md-nav__icon md-icon"></span>
-            組み込みクラス・関数
+            Built-in Classes And Functions
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6540,7 +6556,7 @@
         
   
   <span class="md-ellipsis">
-    Vector3クラス
+    Vector3 Class
   </span>
   
 
@@ -6561,7 +6577,7 @@
         
   
   <span class="md-ellipsis">
-    Quaternionクラス
+    Quaternion Class
   </span>
   
 
@@ -6582,7 +6598,7 @@
         
   
   <span class="md-ellipsis">
-    Matrixクラス
+    Matrix Class
   </span>
   
 
@@ -6603,7 +6619,7 @@
         
   
   <span class="md-ellipsis">
-    Itemクラス
+    Item Class
   </span>
   
 
@@ -6624,7 +6640,7 @@
         
   
   <span class="md-ellipsis">
-    Playerクラス
+    Player Class
   </span>
   
 
@@ -6645,7 +6661,7 @@
         
   
   <span class="md-ellipsis">
-    Dateクラス
+    Date Class
   </span>
   
 
@@ -6666,7 +6682,7 @@
         
   
   <span class="md-ellipsis">
-    TimeSpanクラス
+    TimeSpan Class
   </span>
   
 
@@ -6687,7 +6703,7 @@
         
   
   <span class="md-ellipsis">
-    HSMessageクラス
+    HSMessage Class
   </span>
   
 
@@ -6742,6 +6758,8 @@
       
         
       
+        
+      
     
     
     
@@ -6756,7 +6774,7 @@
             
   
   <span class="md-ellipsis">
-    組み込み関数
+    Built-in Functions
   </span>
   
 
@@ -6766,7 +6784,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_14_9">
             <span class="md-nav__icon md-icon"></span>
-            組み込み関数
+            Built-in Functions
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6781,7 +6799,7 @@
         
   
   <span class="md-ellipsis">
-    システム
+    System
   </span>
   
 
@@ -6802,7 +6820,7 @@
         
   
   <span class="md-ellipsis">
-    入力
+    Input
   </span>
   
 
@@ -6823,7 +6841,7 @@
         
   
   <span class="md-ellipsis">
-    数学
+    Math
   </span>
   
 
@@ -6844,7 +6862,7 @@
         
   
   <span class="md-ellipsis">
-    ネットワーク
+    Network
   </span>
   
 
@@ -6865,7 +6883,7 @@
         
   
   <span class="md-ellipsis">
-    ネームプレート
+    NamePlate
   </span>
   
 
@@ -6928,7 +6946,7 @@
         
   
   <span class="md-ellipsis">
-    テキストチャット
+    TextChat
   </span>
   
 
@@ -6970,7 +6988,7 @@
         
   
   <span class="md-ellipsis">
-    物理演算
+    Physics
   </span>
   
 
@@ -6991,7 +7009,7 @@
         
   
   <span class="md-ellipsis">
-    カメラ
+    Camera
   </span>
   
 
@@ -7012,7 +7030,7 @@
         
   
   <span class="md-ellipsis">
-    汎用ダイアログ
+    Common Dialog
   </span>
   
 
@@ -7033,7 +7051,7 @@
         
   
   <span class="md-ellipsis">
-    レンダリング
+    Rendering
   </span>
   
 
@@ -7055,6 +7073,27 @@
   
   <span class="md-ellipsis">
     JavaScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
   </span>
   
 
@@ -7101,7 +7140,7 @@
             
   
   <span class="md-ellipsis">
-    文法と制御構文
+    Statements and flow control
   </span>
   
 
@@ -7111,7 +7150,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_14_10">
             <span class="md-nav__icon md-icon"></span>
-            文法と制御構文
+            Statements and flow control
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -7126,7 +7165,7 @@
         
   
   <span class="md-ellipsis">
-    定義・宣言
+    Declarations and definitions
   </span>
   
 
@@ -7147,7 +7186,7 @@
         
   
   <span class="md-ellipsis">
-    制御構文
+    Control Statement
   </span>
   
 
@@ -7168,7 +7207,7 @@
         
   
   <span class="md-ellipsis">
-    演算子
+    Operator
   </span>
   
 
@@ -7211,7 +7250,7 @@
             
   
   <span class="md-ellipsis">
-    Tips/HeliScriptガイド
+    Tips/HeliScript Guide
   </span>
   
 
@@ -7221,7 +7260,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_14_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_14_11">
             <span class="md-nav__icon md-icon"></span>
-            Tips/HeliScriptガイド
+            Tips/HeliScript Guide
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -7236,7 +7275,7 @@
         
   
   <span class="md-ellipsis">
-    既存UIの消し方
+    Remove Default UI
   </span>
   
 
@@ -7290,7 +7329,7 @@
             
   
   <span class="md-ellipsis">
-    外部API連携
+    External API
   </span>
   
 
@@ -7300,7 +7339,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
-            外部API連携
+            External API
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -7315,7 +7354,7 @@
         
   
   <span class="md-ellipsis">
-    ブローカーAPIについて
+    Broker API
   </span>
   
 
@@ -7357,7 +7396,7 @@
         
   
   <span class="md-ellipsis">
-    HeliScriptでJsonを読み込む
+    Handling Json in HeliScript
   </span>
   
 
@@ -7421,7 +7460,7 @@
             
   
   <span class="md-ellipsis">
-    リリースノート
+    Release Note
   </span>
   
 
@@ -7431,7 +7470,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
-            リリースノート
+            Release Note
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -7446,7 +7485,7 @@
         
   
   <span class="md-ellipsis">
-    リリースノートについて
+    About Release Note
   </span>
   
 
@@ -9569,7 +9608,7 @@
             
   
   <span class="md-ellipsis">
-    チェンジログ
+    Change Log
   </span>
   
 
@@ -9579,7 +9618,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_17">
             <span class="md-nav__icon md-icon"></span>
-            チェンジログ
+            Change Log
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -9594,7 +9633,7 @@
         
   
   <span class="md-ellipsis">
-    チェンジログについて
+    About Changelog
   </span>
   
 
@@ -9924,7 +9963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/changelog-13.0.md" class="md-nav__link">
+      <a href="../../changelog/changelog-13.0.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11359,7 +11398,7 @@
         
   
   <span class="md-ellipsis">
-    利用規約
+    License
   </span>
   
 
@@ -11381,7 +11420,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="目次">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -11390,70 +11429,40 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目次
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      前提条件
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#js_1" class="md-nav__link">
+  <a href="#procedure" class="md-nav__link">
     <span class="md-ellipsis">
-      サンプルJS入稿手順
+      Procedure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-upload-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      ① Upload JavaScript
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#js_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      サンプルJS入稿ワールドの説明
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      通信の説明
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      データフローの全体像
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      JavaScript の実装
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#heliscript" class="md-nav__link">
-    <span class="md-ellipsis">
-      HeliScriptの実装
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -11472,211 +11481,76 @@
                   
 
 
-<h1 id="js">サンプルJS入稿ワールドの導入方法</h1>
-<h2 id="_1">前提条件</h2>
+<h1 id="restrict-world-entry-time">Restrict World Entry Time</h1>
+<h2 id="overview">Overview</h2>
+<p>With Vket Cloud’s event feature, you cannot schedule an event longer than 24 hours.<br />
+Therefore, if you want to create an event that spans multiple days or only allows access during specific timeframes (e.g., from 7:00 AM to 10:00 AM daily), you may find it difficult to meet these requirements using the default event features.</p>
+<p>This page demonstrates how to use JavaScript to create a world that can be entered for more than 24 hours in total or only during specific times, which is challenging with the standard event features.</p>
+<div class="admonition failure">
+<p class="admonition-title">caution</p>
 <ul>
-<li><a href="JsUpload.html#_2">JS入稿機能をSDK13.7にてOnにする方法の前提条件</a>を満たしていること</li>
+<li>A paid plan feature is used here.<br></li>
+<li>If the world is set to “Public,” the access link to the world will remain visible even when it’s outside of the allowed timeframe.<br></li>
+<li>This does not forcibly remove people already inside the world when it’s outside of the permitted time.</li>
 </ul>
-<h2 id="js_1">サンプルJS入稿手順</h2>
-<ol>
-<li>上部メニューからVket Cloud SDK &gt; Tutorial &gt; Tutorial - Scripts - をクリックする</li>
-<li>Assets/Samples/VketCloudSDK/13.7.7/Tutorial -Scripts-/02_JSUpload.unityを開く。</li>
-<li>上部メニューからVket Cloud SDK &gt; Upload To Remote Serverをクリックする</li>
-<li>事前準備で作成したワールドを選択し、Uploadボタンを押す</li>
-</ol>
-<h2 id="js_2">サンプルJS入稿ワールドの説明</h2>
-<p>キーボードの状態(Up and Down)がテキストとして表示されるワールドです。</p>
-<p><img alt="JsUploadSampleWorld" src="img/JSUpload_SampleWorld.gif" /></p>
-<p>このサンプルワールドでは、ユーザーのキーボード入力（キーの押下や離す動作）をリアルタイムで検知し、その状態（Down、Up）をテキストとして表示します。この一連の動作は、Vket Cloud側のHeliScriptスクリプトとJavaScriptを用いた双方向の通信を通じて実現されています。</p>
-<h2 id="_2">通信の説明</h2>
-<p>HeliScript と、ブラウザ上で実行される JavaScript 間でデータを双方向にやり取りしています。この仕組みは、Unity側からの入力情報をJavaScriptに送信し、JavaScript側からそのデータを処理するという流れで構成されています。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Test Environment</p>
 <ul>
-<li>HeliScript ⇔ JavaScriptのデータ通信<ul>
-<li>HeliScript側から JavaScript に対してデータ送信が行われ、また逆に JavaScript から HeliScript へデータが返されます。</li>
-<li>heliport.customApi 名前空間が両者の通信を仲介し、sendData や receiveData メソッドでデータの送受信を行います。</li>
+<li><strong>SDK Version</strong>: 13.7.7<br></li>
+<li><strong>OS</strong>: Windows 10<br></li>
+<li><strong>Unity</strong>: 2019.4.31.f1<br></li>
+<li><strong>Browser</strong>: Google Chrome</li>
 </ul>
-</li>
-</ul>
-<h2 id="_3">データフローの全体像</h2>
-<ol>
-<li>キーボードの入力があると、JavaScriptがそのイベントを検知し、keyEventStream$ にデータを流します。</li>
-<li>JavaScript側で、キーの状態（Down/Up）が変化したタイミングでHeliScript側にデータを送信します。</li>
-<li>Heliscriptは OnReceive() メソッドでデータを受け取り、表示用のテキストを更新します。</li>
-<li>必要に応じてHeliScriptからもJavaScriptにデータを送信し、クリックイベントなどを処理します。</li>
-</ol>
-<h2 id="javascript">JavaScript の実装</h2>
-<p>JavaScript側では、rxjs ライブラリを使用して、リアクティブなデータ処理を行っています。キーボードの入力イベントを監視し、状態の変化に応じてHeliScript側にデータを送信します。</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Subject</span><span class="p">,</span><span class="w"> </span><span class="nx">zipWith</span><span class="p">,</span><span class="w"> </span><span class="nx">groupBy</span><span class="p">,</span><span class="w"> </span><span class="nx">distinctUntilChanged</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rxjs</span><span class="p">;</span>
-<span class="c1">// インゲームから渡されたデータは fromIngame$ に流れている</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">fromIngame$</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Subject</span><span class="p">();</span>
-<span class="c1">// インゲームから送られるデータのハンドラ</span>
-<span class="nx">fromIngame$</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
-<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="sb">`Data received from ingame: </span><span class="si">${</span><span class="nx">data</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
-<span class="p">);</span>
-<span class="cm">/**</span>
-<span class="cm"> * 1. JSからインゲームに渡すデータは toIngame$ に流す(next)</span>
-<span class="cm"> * 2. インゲームからのデータ取得要求は receiveRequest$ に流れてくる</span>
-<span class="cm"> * 1と2が揃ったらデータ取得要求に1のデータを渡して応答する</span>
-<span class="cm"> */</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">toIngame$</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Subject</span><span class="p">();</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">receiveRequest$</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Subject</span><span class="p">();</span>
-<span class="nx">toIngame$</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">zipWith</span><span class="p">(</span><span class="nx">receiveRequest$</span><span class="p">)).</span><span class="nx">subscribe</span><span class="p">(([</span><span class="nx">v</span><span class="p">,</span><span class="w"> </span><span class="nx">f</span><span class="p">])</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">f</span><span class="p">(</span><span class="nx">v</span><span class="p">));</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">keyEventStream$</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Subject</span><span class="p">();</span>
-<span class="c1">// キーイベントのデータをキーごとに分類し、downとupが切り替わった瞬間だけ toIngame$ に流す</span>
-<span class="nx">keyEventStream$</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">groupBy</span><span class="p">((</span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">key</span><span class="p">)).</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">g</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">g</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">distinctUntilChanged</span><span class="p">((</span><span class="nx">p</span><span class="p">,</span><span class="w"> </span><span class="nx">c</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">p</span><span class="p">.</span><span class="nx">state</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">state</span><span class="p">)).</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">toIngame$</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="w">  </span><span class="p">});</span>
-<span class="p">});</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">handleKeyEvent</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="w"> </span><span class="nx">state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span>
-<span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="w"> </span><span class="o">&amp;&amp;</span>
-<span class="w">    </span><span class="s2">&quot;nodeName&quot;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="w"> </span><span class="o">&amp;&amp;</span>
-<span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">nodeName</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;INPUT&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;TEXTAREA&quot;</span><span class="p">]</span>
-<span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// 入力欄にフォーカスしているときは反応しない</span>
-<span class="w">    </span><span class="k">return</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="c1">// JSのイベントから必要なデータを取り出してRxJSのストリームに流して処理する</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">state</span><span class="w"> </span><span class="p">};</span>
-<span class="w">  </span><span class="nx">keyEventStream$</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;keydown&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">handleKeyEvent</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;down&quot;</span><span class="p">);</span>
-<span class="p">});</span>
-<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;keyup&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">handleKeyEvent</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;up&quot;</span><span class="p">);</span>
-<span class="p">});</span>
-<span class="c1">// インゲームが使用するデータ送受信API</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">receiveData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span>
-<span class="w">  </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">receiveRequest$</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="nx">resolve</span><span class="p">));</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">sendData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">fromIngame$</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</div>
+<h2 id="procedure">Procedure</h2>
+<h3 id="1-upload-javascript">① Upload JavaScript</h3>
+<p>Upload the <code>accsesfilter.js</code> script shown below via JS Upload, then incorporate it into the world where it will be used.<br />
+You must configure the redirect page URL for times outside the event period and the time settings in the “Custom Items” section.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">urlParams</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">URLSearchParams</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">search</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">worldId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">urlParams</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;worldid&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+
+<span class="c1">// Custom Items</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">redirectURL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// URL of the redirect page when it’s outside the event time</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">termList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Time period settings. Specify the date in MM-DD format, and the start and end times in hh:mm format.</span>
+<span class="w">    </span><span class="s2">&quot;4-1&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;StartDate&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;17:00&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;EndDate&quot;</span><span class="o">:</span><span class="s2">&quot;22:00&quot;</span><span class="p">},</span><span class="w"> </span><span class="c1">// On April 1, entry is allowed from 17:00 to 22:00</span>
+<span class="w">    </span><span class="s2">&quot;4-2&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;StartDate&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;10:00&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;EndDate&quot;</span><span class="o">:</span><span class="s2">&quot;20:00&quot;</span><span class="p">},</span><span class="w"> </span><span class="c1">// On April 2, entry is allowed from 10:00 to 20:00</span>
 <span class="p">};</span>
-<span class="nb">window</span><span class="p">.</span><span class="nx">heliport</span><span class="p">.</span><span class="nx">customApi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">sendData</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">receiveData</span><span class="p">,</span>
-<span class="p">};</span>
-</code></pre></div>
 
-<ul>
-<li>
-<p>handleKeyEvent() 関数</p>
-<ul>
-<li>keydown および keyup イベントを監視し、それぞれのイベントに対応するキーの状態を keyEventStream$ というRxJSのストリームに送ります。</li>
-</ul>
-</li>
-<li>
-<p>データの送受信</p>
-<ul>
-<li>JavaScript側では、toIngame$ ストリームを通してHeliScriptにデータを送信し、fromIngame$ でHeliScriptからのデータを受信します。</li>
-<li>receiveData() メソッドは、HeliScriptからデータ要求があった際に、非同期的にデータを返す役割を持ちます。</li>
-</ul>
-</li>
-</ul>
-<h2 id="heliscript">HeliScriptの実装</h2>
-<p>HeliScriptでは、キーボードの入力状態を監視し、JavaScriptに送信します。また、JavaScriptからの入力データを受け取って処理します。</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// デリゲートの宣言。JavaScriptから受け取ったデータを引数に取り、戻り値のない関数型</span>
-<span class="k">delegate</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">fJsValCallback</span><span class="p">(</span><span class="n">JsVal</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">currentDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">termKey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;-&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
 
-<span class="c1">// JavaScriptのconsoleオブジェクトを外部宣言し、ログ出力を行うための関数を提供</span>
-<span class="k">extern</span><span class="w"> </span><span class="n">console</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">log</span><span class="p">(</span><span class="n">JsVal</span><span class="p">);</span><span class="w"> </span><span class="c1">// JavaScriptのconsole.logに対応</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">hours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getHours</span><span class="p">()).</span><span class="nx">padStart</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;0&#39;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">minutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">()).</span><span class="nx">padStart</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;0&#39;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">currentTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">hours</span><span class="si">}</span><span class="sb">:</span><span class="si">${</span><span class="nx">minutes</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current time is &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">termKey</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">currentTime</span><span class="p">);</span>
+
+<span class="c1">// If there is no entry for this day, redirect unconditionally</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">termList</span><span class="p">[</span><span class="nx">termKey</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">OpenRedirectPage</span><span class="p">();</span><span class="w"> </span><span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Open hours are &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">termList</span><span class="p">[</span><span class="nx">termKey</span><span class="p">][</span><span class="s2">&quot;StartDate&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; to &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">termList</span><span class="p">[</span><span class="nx">termKey</span><span class="p">][</span><span class="s2">&quot;EndDate&quot;</span><span class="p">]);</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">isInterm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="c1">// Check if current time falls within specified timeframe</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">currentTime</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="nx">termList</span><span class="p">[</span><span class="nx">termKey</span><span class="p">][</span><span class="s2">&quot;EndDate&quot;</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">currentTime</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nx">termList</span><span class="p">[</span><span class="nx">termKey</span><span class="p">][</span><span class="s2">&quot;StartDate&quot;</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// If within the time period, allow entry</span>
+<span class="w">        </span><span class="nx">isInterm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// カスタムAPIとしてデータ送受信用の関数を外部宣言</span>
-<span class="k">extern</span><span class="w"> </span><span class="n">heliport</span><span class="p">.</span><span class="n">customApi</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">sendData</span><span class="p">(</span><span class="n">JsVal</span><span class="w"> </span><span class="n">data</span><span class="p">);</span><span class="w"> </span><span class="c1">// データ送信用</span>
-<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">receiveData</span><span class="p">(</span><span class="k">async</span><span class="w"> </span><span class="n">fJsValCallback</span><span class="p">);</span><span class="w"> </span><span class="c1">// データ受信用（非同期）</span>
+<span class="c1">// If outside the timeframe, redirect to normal world</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">isInterm</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">OpenRedirectPage</span><span class="p">();</span>
 <span class="p">}</span>
 
-<span class="c1">// キーボードの入力状態を監視してログを残し、表示するコンポーネント</span>
-<span class="n">component</span><span class="w"> </span><span class="n">keyLogging</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="n">Item</span><span class="w"> </span><span class="n">thisItem</span><span class="p">;</span><span class="w"> </span><span class="c1">// このコンポーネントに関連するアイテム</span>
-<span class="w">    </span><span class="n">Item</span><span class="w"> </span><span class="n">resultTextPlane</span><span class="p">;</span><span class="w"> </span><span class="c1">// 結果表示用のテキストプレーン</span>
-
-<span class="w">    </span><span class="c1">// コンストラクタ。アイテムを取得し、キー入力の監視を開始</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">keyLogging</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">thisItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGetSelf</span><span class="p">();</span><span class="w"> </span><span class="c1">// このコンポーネントが紐づくアイテムを取得</span>
-<span class="w">        </span><span class="n">resultTextPlane</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;KeyStatusText&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// テキスト表示用アイテムを取得</span>
-<span class="w">        </span><span class="n">Watch</span><span class="p">();</span><span class="w"> </span><span class="c1">// キー入力の監視を開始</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="c1">// 毎フレーム呼び出される更新関数（ここでは何もしていない）</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Update</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// 更新処理をここに追加可能</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="c1">// JavaScriptからデータを受け取るための監視関数</span>
-<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">Watch</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">heliport</span><span class="p">.</span><span class="n">customApi</span><span class="p">.</span><span class="n">receiveData</span><span class="p">(</span><span class="n">OnReceive</span><span class="p">);</span><span class="w"> </span><span class="c1">// JavaScriptからデータを非同期に受け取る</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="c1">// JavaScriptから受け取ったデータを処理するコールバック関数</span>
-<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">OnReceive</span><span class="p">(</span><span class="n">JsVal</span><span class="w"> </span><span class="n">data</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">console</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">);</span><span class="w"> </span><span class="c1">// 受け取ったデータをコンソールに出力</span>
-<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;key&quot;</span><span class="p">).</span><span class="n">GetStr</span><span class="p">();</span><span class="w"> </span><span class="c1">// データの &quot;key&quot; プロパティを取得</span>
-<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;state&quot;</span><span class="p">).</span><span class="n">GetStr</span><span class="p">();</span><span class="w"> </span><span class="c1">// データの &quot;state&quot; プロパティを取得</span>
-
-<span class="w">        </span><span class="n">handleKeyInput</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">state</span><span class="p">);</span><span class="w"> </span><span class="c1">// キーの入力状態を処理</span>
-
-<span class="w">        </span><span class="n">Watch</span><span class="p">();</span><span class="w"> </span><span class="c1">// 次のデータを受け取るために再度監視を開始</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="c1">// キー入力状態を処理し、テキストプレーンに表示</span>
-<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">handleKeyInput</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">state</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">state</span><span class="p">;</span><span class="w"> </span><span class="c1">// キーと状態を文字列にまとめる</span>
-<span class="w">        </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">);</span><span class="w"> </span><span class="c1">// システムログに出力</span>
-<span class="w">        </span><span class="n">resultTextPlane</span><span class="p">.</span><span class="n">WriteTextPlane</span><span class="p">(</span><span class="n">text</span><span class="p">);</span><span class="w"> </span><span class="c1">// テキストプレーンに表示</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="c1">// ノードがクリックされたときの処理</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">OnClickNode</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">NodeIndex</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">clickedNodeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">thisItem</span><span class="p">.</span><span class="n">GetNodeNameByIndex</span><span class="p">(</span><span class="n">NodeIndex</span><span class="p">);</span><span class="w"> </span><span class="c1">// クリックされたノードの名前を取得</span>
-<span class="w">        </span><span class="n">sendClick</span><span class="p">(</span><span class="n">clickedNodeName</span><span class="p">);</span><span class="w"> </span><span class="c1">// クリックされたノードの名前をJavaScriptに送信</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// クリック処理はここで終了</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="c1">// 空のエリアがクリックされたときの処理</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnClickEmpty</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">sendClick</span><span class="p">(</span><span class="s">&quot;Empty&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// 空のエリアがクリックされたことをJavaScriptに送信</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="c1">// クリックされたオブジェクトの名前をJavaScriptに送信</span>
-<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">sendClick</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">objName</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">JsVal</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">makeJsStr</span><span class="p">();</span><span class="w"> </span><span class="c1">// 送信するデータを作成</span>
-<span class="w">        </span><span class="n">data</span><span class="p">.</span><span class="n">SetStr</span><span class="p">(</span><span class="n">objName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; clicked.&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// クリックされたオブジェクト名を設定</span>
-<span class="w">        </span><span class="n">heliport</span><span class="p">.</span><span class="n">customApi</span><span class="p">.</span><span class="n">sendData</span><span class="p">(</span><span class="n">data</span><span class="p">);</span><span class="w"> </span><span class="c1">// JavaScriptにデータを送信</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">OpenRedirectPage</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Specify the normal world’s URL if you want to redirect there</span>
+<span class="w">    </span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">redirectURL</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
-<ul>
-<li>
-<p>keyLogging コンポーネント</p>
-<ul>
-<li>キーボードの入力状態を管理し、Watch() 関数で JavaScript 側からのデータ受信を待ち受けています。</li>
-<li>受信したデータ（OnReceive() メソッドで取得）は、キーの押下状態を示し、そのデータをUnity内のUIに反映させます。</li>
-</ul>
-</li>
-<li>
-<p>主な機能</p>
-<ul>
-<li>heliport.customApi.receiveData() を使って、非同期的にJavaScriptからのデータを受け取ります。</li>
-<li>sendClick() メソッドは、ノードをクリックした際のイベントを JavaScript 側に送信します。</li>
-</ul>
-</li>
-</ul>
+<p>The settings will be complete once you integrate the above.</p>
 
 
 
@@ -11706,7 +11580,7 @@
       <div class="md-footer-nav md-grid md-grid--no-gutter">
         <div class="md-footer-nav__section">
           
-            <img class="md-footer-logo" src="../images/HikkyLogo.png" alt="Vket Cloud SDK Manual" />
+            <img class="md-footer-logo" src="../../images/HikkyLogo.png" alt="Vket Cloud SDK Manual" />
           
           <div class="md-copyright">
             ©HIKKY Co.,Ltd. All rights reserved.
@@ -11722,10 +11596,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   </body>

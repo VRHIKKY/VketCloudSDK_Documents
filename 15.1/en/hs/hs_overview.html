@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6791,6 +6837,8 @@
       
         
       
+        
+      
     
     
     
@@ -7113,6 +7161,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7406,7 +7475,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11602,7 +11671,7 @@ To use debug mode, enable <a href="../WorldEditingTips/DebugMode.html">Debug Mod
 <h3 id="4-write-heliscript">4. Write HeliScript</h3>
 <p>Now it's time to write the HeliScript itself. <br>
 A code example is shown below as an implementation of HelloWorld.hs.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">//component</span>
+<div class="highlight"><pre><span></span><code><span class="c1">//component</span>
 <span class="n">component</span><span class="w"> </span><span class="n">HelloWorld</span>
 <span class="p">{</span>
 
@@ -11620,7 +11689,6 @@ A code example is shown below as an implementation of HelloWorld.hs.</p>
 <span class="w">     </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="5-test-with-build-and-run">5. Test with Build And Run</h3>
 <p>After completing the code implementation and executing Build And Run, "Hello, World!" will be displayed to the debug log on the screen.</p>
 <p><img alt="hs_overview_5" src="../../hs/img/hs_overview_5.jpg" /></p>
@@ -11636,7 +11704,7 @@ For details on how to place HeliScript, please check <a href="../VKCComponents/V
 <p><img alt="HEOScript_attachable" src="../../VKCComponents/img/HEOScript_attachable.jpg" /></p>
 <p>In HeliScript, each objects are referenced by using Item and Node classes mentioned later. <br>
 For example, a script that outputs a message when the exampleObject under <a href="../VKCComponents/VKCItemField.html">VKC Item Field</a> is clicked can be written as follows.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">example</span>
+<div class="highlight"><pre><span></span><code><span class="n">component</span><span class="w"> </span><span class="n">example</span>
 <span class="p">{</span>
 <span class="w">     </span><span class="c1">//Define item/player class</span>
 <span class="w">     </span><span class="c1">//Note that objects cannot be initialized here, including using functions such as hsItemGet</span>
@@ -11678,7 +11746,6 @@ For example, a script that outputs a message when the exampleObject under <a hre
 <span class="w">     </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <div class="admonition caution">
 <p class="admonition-title">Initializing Player objects</p>
 <p>On SDK Ver12.x and later versions, calling Player class functions within the constructor has been disabled. <br>
@@ -11752,7 +11819,7 @@ Therefore, each GameObject / Node must be explicitly called to be a target for t
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>

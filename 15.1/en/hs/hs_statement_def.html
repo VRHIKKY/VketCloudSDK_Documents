@@ -13,7 +13,7 @@
       
       
       
-        <link rel="prev" href="hs_system_function_js.html">
+        <link rel="prev" href="hs_system_function_cookie.html">
       
       
         <link rel="next" href="hs_statement_control.html">
@@ -1208,6 +1208,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,11 +1268,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../WorldMakingGuide/JsUpload_Sample.html" class="md-nav__link">
+      <a href="../WorldMakingGuide/JsUpload_RestrictEntryTime.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sample JS Upload
+    Restrict World Entry Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_FetchCurrentWeather.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current Weather Using Web API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WorldMakingGuide/JsUpload_TutorialScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS Upload Tutorial Scene
   </span>
   
 
@@ -1591,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6637,6 +6683,8 @@
       
         
       
+        
+      
     
     
     
@@ -6950,6 +6998,27 @@
   
   <span class="md-ellipsis">
     JavaScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_cookie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie
   </span>
   
 
@@ -7357,7 +7426,7 @@
         
   
   <span class="md-ellipsis">
-    Reading JSON in HeliScript
+    Handling Json in HeliScript
   </span>
   
 
@@ -11476,75 +11545,69 @@
 <p>Here we will go over the definitions of variables, functions, and constants.</p>
 <h2 id="local-variables">Local Variables</h2>
 <p>By declaring variables with "type name variable name" within a function or class method, you can create variables that are only accessible within that scope. Variables can also be initialized at the time of declaration.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">Do</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">specify</span><span class="w"> </span><span class="n">initial</span><span class="w"> </span><span class="n">values</span><span class="p">,</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="n">define</span><span class="w"> </span><span class="n">variables</span>
-<span class="n">string</span><span class="w"> </span><span class="n">emptyText</span><span class="p">;</span>
-<span class="o">//</span><span class="w"> </span><span class="n">Initialize</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="n">upon</span><span class="w"> </span><span class="n">declaration</span>
-<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// Do not specify initial values, only define variables
+string emptyText;
+// Initialize to be 100 upon declaration
+int value = 100;
 </code></pre></div>
-
 <h2 id="global-variables">Global Variables</h2>
 <p>By declaring a variable outside of functions or methods, you can create a global variable that is accessible within the source file and throughout the entire application.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">Declare</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">initialize</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">global</span><span class="w"> </span><span class="n">variable</span>
-<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">TestFunc</span><span class="p">(){</span>
-<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="o">...</span>
-<span class="w">  </span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code>// Declare and initialize a global variable
+int value = 100;
+void TestFunc(){
+  // ...
+  }
 </code></pre></div>
-
 <p>Both <a href="hs_var.html">basic types</a> and <a href="hs_class.html">classes</a> can be declared as global variables. However, for <a href="hs_class.html">classes</a>, they cannot be initialized at the time of declaration.</p>
 <h2 id="class-variables">Class Variables</h2>
 <p>By declaring a variable within a class definition, you can create a variable that belongs to that class.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="n">MyClass</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="n">Declare</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="n">variable</span>
-<span class="w">    </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code>class MyClass {
+    // Declare a class variable
+    int value = 100;
+}
 </code></pre></div>
-
 <h2 id="definition-of-constant">Definition of constant</h2>
 <p>If <em>const</em> is added before the variable definition of <a href="hs_var.html">basic type</a>, the variable cannot be changed after initialization.</p>
 <p>The following types are able to be defined as const: int, float, bool, and string.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">Define</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">immutable</span><span class="w"> </span><span class="n">constant</span><span class="w"> </span><span class="n">integer</span><span class="w"> </span><span class="n">variable</span>
-<span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">immutable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">999</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// Define an immutable constant integer variable
+const int immutable = 999;
 </code></pre></div>
-
 <p>It is possible to declare all local variables, global variables, and class variables as constants by adding const.</p>
 <h2 id="definition-of-functions">Definition of functions</h2>
 <p>Functions can be defined in the form of "[return value] [function name] ([argument 1], [argument 2], ...)". Specify <em>void</em> to declare a function that does not return a value.</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">int</span><span class="w"> </span><span class="nv">Add</span><span class="ss">(</span><span class="nv">int</span><span class="w"> </span><span class="nv">x</span>,<span class="w"> </span><span class="nv">int</span><span class="w"> </span><span class="nv">y</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">     </span><span class="k">return</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">y</span><span class="c1">;</span>
+<div class="highlight"><pre><span></span><code>int Add(int x, int y) {
+     return x + y;
 }
 
-<span class="nv">string</span><span class="w"> </span><span class="nv">CreateName</span><span class="ss">(</span><span class="nv">string</span><span class="w"> </span><span class="nv">firstName</span>,<span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="nv">lastName</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">     </span><span class="nv">string</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">lastName</span><span class="c1">;</span>
-<span class="w">     </span><span class="k">return</span><span class="w"> </span><span class="nv">name</span><span class="c1">;</span>
+string CreateName(string firstName, string lastName) {
+     string name = firstName + &quot; &quot; + lastName;
+     return name;
 }
 
-<span class="nv">void</span><span class="w"> </span><span class="nv">LogOutput</span><span class="ss">(</span><span class="nv">string</span><span class="w"> </span><span class="nv">log</span><span class="ss">)</span><span class="w"> </span>{
-<span class="w">     </span><span class="nv">hsSystemOutput</span><span class="ss">(</span><span class="nv">log</span><span class="ss">)</span><span class="c1">;</span>
+void LogOutput(string log) {
+     hsSystemOutput(log);
 }
 </code></pre></div>
-
 <h2 id="definition-of-class">Definition of class</h2>
 <p>You can define a class, which is a structured type, by writing <em>class</em> followed by the class name, thereafter followed by code enclosed in <em>{ }</em>.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// Class definition</span>
-<span class="n">class</span><span class="w"> </span><span class="n">MyAvatar</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="nb">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
-<span class="w">     </span><span class="nb">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// Class definition
+class MyAvatar {
+     string name;
+     int age;
 
-<span class="w">     </span><span class="n">public</span><span class="w"> </span><span class="n">MyAvatar</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">         </span><span class="c1">// write initialization here</span>
-<span class="w">     </span><span class="p">}</span>
-<span class="p">}</span>
+     public MyAvatar() {
+         // write initialization here
+     }
+}
 
-<span class="n">void</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="c1">// create class</span>
-<span class="w">     </span><span class="n">MyAvatar</span><span class="w"> </span><span class="n">avatar</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">MyAvatar</span><span class="p">();</span>
+void main() {
+     // create class
+     MyAvatar avatar = new MyAvatar();
 
-<span class="w">     </span><span class="c1">// age is not set to be public, so accessing it will result in a compilation error</span>
-<span class="w">     </span><span class="n">avatar</span><span class="p">.</span><span class="n">age</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">999</span><span class="p">;</span>
-<span class="p">}</span>
+     // age is not set to be public, so accessing it will result in a compilation error
+     avatar.age = 999;
+}
 </code></pre></div>
-
 <p>If you define <em>public</em> function with the same name as the class name inside the class definition, it becomes a constructor. When creating an instance of a class, call the class constructor after the <em>new</em> operator.</p>
 <p>HeliScript currently does not support constructors with arguments.</p>
 <h2 id="scope-of-variables-and-functions">Scope of variables and functions</h2>
@@ -11554,21 +11617,21 @@
 <li>Local scope: defined within a function. It disappears when the function ends. Not accessible from the outside.</li>
 <li>Class scope: defined within a class. Class scope variables have separate data for each instance. If <em>public</em> is given, it can be accessed from outside the class.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">global</span><span class="w"> </span><span class="n">variables</span>
-<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">globalInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code>// global variables
+int globalInt = 100;
 
-<span class="o">//</span><span class="w"> </span><span class="n">global</span><span class="w"> </span><span class="n">function</span>
-<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">GlobalFunc</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="o">//.....</span>
-<span class="p">}</span>
+// global function
+void GlobalFunc() {
+     //.....
+}
 
-<span class="o">//</span><span class="w"> </span><span class="n">global</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="n">definition</span>
-<span class="k">class</span><span class="w"> </span><span class="n">MyClass</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="n">scope</span><span class="w"> </span><span class="p">(</span><span class="n">private</span><span class="p">)</span>
-<span class="w">     </span><span class="n">string</span><span class="w"> </span><span class="n">secretID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;xxxx&quot;</span><span class="p">;</span>
-<span class="w">     </span><span class="o">//</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="n">scope</span><span class="w"> </span><span class="p">(</span><span class="n">public</span><span class="p">)</span>
-<span class="w">     </span><span class="n">pubic</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123</span><span class="p">;</span>
-<span class="p">}</span>
+// global class definition
+class MyClass {
+     // class scope (private)
+     string secretID = &quot;xxxx&quot;;
+     // class scope (public)
+     pubic const int value = 123;
+}
 </code></pre></div>
 
 
@@ -11615,7 +11678,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "header.autohide", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
