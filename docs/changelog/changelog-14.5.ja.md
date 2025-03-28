@@ -5,6 +5,9 @@
 ## 2025年3月28日 - 編集されたページ
 
 - HeliScript
+    - 文法と制御構文
+        - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_statement_control.html)
+            - *{ }*によるスコープ定義の説明追加しました
     - 組み込み型
         - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
             - 'this'によるインスタンス自身の参照取得について説明追加しました

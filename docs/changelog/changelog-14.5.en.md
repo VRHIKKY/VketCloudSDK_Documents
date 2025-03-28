@@ -5,6 +5,9 @@
 ## March 28 2025 - Edited Page
 
 - HeliScript
+    - Statements and flow control
+        - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_statement_control.html)
+            - Added an explanation of scope definition using { }
     - Built-in Types
         - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
             - Added explanation about referencing the instance itself using 'this'
@@ -33,6 +36,7 @@
     - VKC Node
         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCItemAreaCollider.html)
             - Fixed image link
+
 ---
 
 ## March 21 2025 Update
