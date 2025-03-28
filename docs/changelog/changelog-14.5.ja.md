@@ -5,9 +5,14 @@
 ## 2025年3月28日 - 編集されたページ
 
 - HeliScript
+    - 文法と制御構文
+        - [演算子](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_operator.html)
+            - === と == の演算子の誤った説明を修正しました
     - 組み込み関数
         - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
             - hsCanvasSetGUIText関数に注釈を追記
+
+---
 
 ## 2025年3月26日更新
 

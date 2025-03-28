@@ -5,6 +5,9 @@
 ## March 28 2025 - Edited Page
 
 - HeliScript
+    - Statements and flow control
+        - [Operator](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_operator.html)
+            - Fixed incorrect explanation of the operator === and ==
     - Built-in Functions
         - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_gui.html)
             - Added annotation to hsCanvasSetGUIText function
@@ -23,7 +26,6 @@
     - VKC Node
         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCItemAreaCollider.html)
             - Fixed image link
-
 ---
 
 ## March 21 2025 Update
