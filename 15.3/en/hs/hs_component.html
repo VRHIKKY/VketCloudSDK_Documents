@@ -1637,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6569,6 +6569,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#callback-gui-slider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callback - GUI Slider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#callback-physics-collision-detection" class="md-nav__link">
     <span class="md-ellipsis">
       Callback - physics collision detection
@@ -6626,6 +6635,15 @@
   <a href="#callback-message" class="md-nav__link">
     <span class="md-ellipsis">
       Callback - Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callback-emote-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callback - Emote Change
     </span>
   </a>
   
@@ -11859,6 +11877,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#callback-gui-slider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callback - GUI Slider
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#callback-physics-collision-detection" class="md-nav__link">
     <span class="md-ellipsis">
       Callback - physics collision detection
@@ -11916,6 +11943,15 @@
   <a href="#callback-message" class="md-nav__link">
     <span class="md-ellipsis">
       Callback - Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callback-emote-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Callback - Emote Change
     </span>
   </a>
   
@@ -12079,6 +12115,10 @@ By clicking on an avatar beforehand, and clicking an Item's Node after, this wil
      }
 }
 </code></pre></div>
+<h2 id="callback-gui-slider">Callback - GUI Slider</h2>
+<p><code>public void OnSliderRateChanged(string GUIName, float Rate)</code></p>
+<p>This is a callback method that is invoked when the value of a slider in a GUI element is changed.</p>
+<p>The argument <code>GUIName</code> receives the name of the slider that was operated, and the argument <code>Rate</code> receives the changed slider value as a number between 0 and 1.</p>
 <h2 id="callback-physics-collision-detection">Callback - physics collision detection</h2>
 <p><code>public void OnPhysicsCollision(int ID0, int ID1)</code></p>
 <p>Called when objects with physics set collide with each other.</p>
@@ -12145,6 +12185,11 @@ public void OnLeaveViewCollider(string NodeName)
 <div class="highlight"><pre><span></span><code>public void OnReceiveMessage(HSMessage message)
 </code></pre></div>
 <p>This will be called when the item receives a message. The argument message contains the received data and sender information.</p>
+<h2 id="callback-emote-change">Callback - Emote Change</h2>
+<div class="highlight"><pre><span></span><code>public void OnEmoteChange(int EmoteIndex)
+</code></pre></div>
+<p>This callback is invoked when a player's emote is changed (played).<br />
+<code>EmoteIndex</code> contains the index value of the emote that was changed (played).</p>
 
 
 

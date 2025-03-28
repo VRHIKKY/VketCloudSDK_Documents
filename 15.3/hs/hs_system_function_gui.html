@@ -12427,6 +12427,10 @@ Layerを削除する予定をします。</p>
 <h3 id="hscanvassetguitext">hsCanvasSetGUIText</h3>
 <p><code>bool hsCanvasSetGUIText(string LayerName, string GUIName, string Text)</code></p>
 <p>指定したテキスト要素のテキストを設定する。</p>
+<div class="admonition warning">
+<p class="admonition-title">テキスト内のカンマ「,」使用について</p>
+<p>現在テキスト内にてカンマ「,」を使用すると、テキストが表示されない不具合が発生することを確認しています。カンマ「,」の使用は避けてください。</p>
+</div>
 <h3 id="hscanvassetguitextalignment">hsCanvasSetGUITextAlignment</h3>
 <p><code>bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)</code></p>
 <p>指定したテキスト要素のアライメントを設定する。</p>
@@ -12440,11 +12444,11 @@ Layerを削除する予定をします。</p>
 <p><code>bool hsCanvasSetGUIImage(string layerName, string guiName, string path)</code></p>
 <p>名前で指定したCanvasにイメージを設定する。</p>
 <h3 id="hscanvasresettoggledefault">hsCanvasResetToggleDefault</h3>
-<p><code>bool hsCanvasResetToggleDefault(string name)</code></p>
-<p>名前で指定したGUI要素をデフォルトの状態にリセットする。</p>
+<p><code>bool hsCanvasResetToggleDefault(string toggleName)</code></p>
+<p>名前で指定したトグルをデフォルトの状態にリセットする。</p>
 <h3 id="hscanvastogglechange">hsCanvasToggleChange</h3>
-<p><code>bool hsCanvasToggleChange(string name)</code></p>
-<p>名前で指定したGUI要素の状態を切り替える。</p>
+<p><code>bool hsCanvasToggleChange(string toggleName)</code></p>
+<p>名前で指定したトグルの状態を切り替える。</p>
 <h3 id="hscanvasworldtoscreenpos">hsCanvasWorldToScreenPos</h3>
 <p><code>bool hsCanvasWorldToScreenPos(Vector3 WorldPos, ref float ScreenX, ref float ScreenY)</code></p>
 <p>ワールド座標をスクリーン座標に変換する。 </p>

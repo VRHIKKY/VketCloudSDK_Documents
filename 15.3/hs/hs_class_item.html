@@ -7182,6 +7182,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setpropertywithoutnotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetPropertyWithoutNotify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getproperty" class="md-nav__link">
     <span class="md-ellipsis">
       GetProperty
@@ -12786,6 +12795,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setpropertywithoutnotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetPropertyWithoutNotify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getproperty" class="md-nav__link">
     <span class="md-ellipsis">
       GetProperty
@@ -13628,6 +13646,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <h3 id="setproperty">SetProperty</h3>
 <p><code>public bool SetProperty(string Key, string Value)</code></p>
 <p>プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。</p>
+<p>プロパティの変更が行われると、コールバックメソッドの OnChangedProperty() が呼び出されます。</p>
 <details class="note" open="open">
 <summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
 <ul>
@@ -13641,6 +13660,25 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 <li><a href="../VKCComponents/VKCItemParticle.html">VKC Item Particle</a></li>
 <li><a href="../VKCComponents/VKCItemPlane.html">VKC Item Plane</a></li>
 <li><a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a></li>
+</ul>
+</details>
+<h3 id="setpropertywithoutnotify">SetPropertyWithoutNotify</h3>
+<p><code>public bool SetPropertyWithoutNotify(string Key, string Value)</code></p>
+<p>プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。</p>
+<p>SetProperty() と同等の機能を持つメソッドですが、SetPropertyWithoutNotify() でプロパティを変更した場合、コールバックメソッドの OnChangedProperty() が呼び出されません。</p>
+<details class="note">
+<summary>このメソッドを呼び出し可能なオブジェクトタイプ</summary>
+<ul>
+<li><a href="../VKCComponents/VKCItemActivity.html">VKCItemActivity</a></li>
+<li><a href="../VKCComponents/VKCItemAreaCollider.html">VKCItemAreaCollider</a></li>
+<li><a href="../VKCComponents/VKCItemAudio.html">VKCItemAudio</a></li>
+<li><a href="../VKCComponents/VKCItemBackgroundTexture.html">VKCItemBackgroundTexture</a></li>
+<li><a href="../VKCComponents/VKCItemCamera.html">VKCItemCamera</a></li>
+<li><a href="../VKCComponents/VKCItemField.html">VKCItemField</a></li>
+<li><a href="../VKCComponents/VKCItemObject.html">VKCItemObject</a></li>
+<li><a href="../VKCComponents/VKCItemParticle.html">VKCItemParticle</a></li>
+<li><a href="../VKCComponents/VKCItemPlane.html">VKCItemPlane</a></li>
+<li><a href="../VKCComponents/VKCItemTextPlane.html">VKCItemTextPlane</a></li>
 </ul>
 </details>
 <h3 id="getproperty">GetProperty</h3>

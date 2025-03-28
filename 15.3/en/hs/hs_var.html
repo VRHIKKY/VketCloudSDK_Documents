@@ -1637,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -6393,6 +6393,15 @@
   <a href="#floattostring" class="md-nav__link">
     <span class="md-ellipsis">
       float.ToString()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#booltostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      bool.ToString()
     </span>
   </a>
   
@@ -11684,6 +11693,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#booltostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      bool.ToString()
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11756,6 +11774,8 @@
 <h2 id="get-reference">Get reference</h2>
 <p>If <em>ref</em> is added to the argument definition of a function, the argument will be passed by reference.</p>
 <p>As such, you can change the variable of the calling function by assigning the variable at the destination of the argument.</p>
+<details class="quote">
+<summary>Code example of <em>ref</em></summary>
 <div class="highlight"><pre><span></span><code>void RefFunc(ref int x, ref int y) {
      x = 100;
      y = 200;
@@ -11772,6 +11792,36 @@ void Test() {
      hsSystemOutput(&quot;x=%d, y=%d\n&quot; %x%y);
 }
 </code></pre></div>
+</details>
+<p>Additionally, within a class method, this allows you to reference the current instance itself.</p>
+<details class="quote">
+<summary>Code example of <em>this</em></summary>
+<div class="highlight"><pre><span></span><code>Printer printer = new Printer();
+Person person = new Person();
+person.Construct(20);
+
+// -&gt; &quot;age: 20&quot;
+person.PrintAge(printer);
+
+class Person{
+    public int Age;
+
+    public void Construct(int age){
+        Age = age;
+    }
+
+    public void PrintAge(Printer printer){
+        printer.PrintAge(this);
+    }
+}
+
+class Printer{
+    public void PrintAge(Person person){
+        hsSystemWriteLine(&quot;age: %d&quot; % person.Age); 
+    }
+}
+</code></pre></div>
+</details>
 <h2 id="string-and-character">"string" and 'character'</h2>
 <p>HeliScript recognizes a string enclosed in double quotation marks (" ") as a string object.</p>
 <p>Enclosing a single character in single quotes (' ') makes it a character type. Character types are represented internally as 32-bit integer values.</p>
@@ -11821,6 +11871,9 @@ If you assign an integer value to a bool type variable, 0 will be converted to <
 <h3 id="floattostring">float.ToString()</h3>
 <p><code>public string ToString()</code></p>
 <p>Converts float-type variable values to string.</p>
+<h3 id="booltostring">bool.ToString()</h3>
+<p><code>public string ToString()</code></p>
+<p>Converts bool-type variable values to string.</p>
 
 
 

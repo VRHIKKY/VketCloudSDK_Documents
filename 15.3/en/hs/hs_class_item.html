@@ -1637,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -7176,6 +7176,15 @@
   <a href="#setproperty" class="md-nav__link">
     <span class="md-ellipsis">
       SetProperty
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setpropertywithoutnotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetPropertyWithoutNotify
     </span>
   </a>
   
@@ -12786,6 +12795,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setpropertywithoutnotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      SetPropertyWithoutNotify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getproperty" class="md-nav__link">
     <span class="md-ellipsis">
       GetProperty
@@ -13576,7 +13594,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <h3 id="replacetexture">ReplaceTexture</h3>
 <p><code>public bool ReplaceTexture(string MaterialName, string URL)</code></p>
 <p>Replace the texture attached to the MaterialName's material by the designated URL content.</p>
-<p>Related Page: <a href="https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html">ReplaceTexture Unexpectedly Replaces Other Textures</a></p>
+<p>Related Page: <a href="https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html">Texture Replacement Issues with ReplaceTexture</a></p>
 <details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
@@ -13628,6 +13646,7 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <h3 id="setproperty">SetProperty</h3>
 <p><code>public bool SetProperty(string Key, string Value)</code></p>
 <p>Set property by Key and Value.</p>
+<p>When a property change occurs, the callback method <code>OnChangedProperty()</code> is invoked.</p>
 <details class="note" open="open">
 <summary>Available object types for this method</summary>
 <ul>
@@ -13641,6 +13660,25 @@ Refer to <a href="../VKCComponents/VKCItemCamera.html">VKC Item Camera</a> for u
 <li><a href="../VKCComponents/VKCItemParticle.html">VKC Item Particle</a></li>
 <li><a href="../VKCComponents/VKCItemPlane.html">VKC Item Plane</a></li>
 <li><a href="../VKCComponents/VKCItemTextPlane.html">VKC Item Text Plane</a></li>
+</ul>
+</details>
+<h3 id="setpropertywithoutnotify">SetPropertyWithoutNotify</h3>
+<p><code>public bool SetPropertyWithoutNotify(string Key, string Value)</code></p>
+<p>Sets a property. If the same Key exists, it will be overwritten; otherwise, it will be added.</p>
+<p>This method has the same functionality as SetProperty(), but when you change a property with SetPropertyWithoutNotify(), the callback method OnChangedProperty() is not called.</p>
+<details class="note">
+<summary>Object types that can call this method</summary>
+<ul>
+<li><a href="../VKCComponents/VKCItemActivity.html">VKCItemActivity</a></li>
+<li><a href="../VKCComponents/VKCItemAreaCollider.html">VKCItemAreaCollider</a></li>
+<li><a href="../VKCComponents/VKCItemAudio.html">VKCItemAudio</a></li>
+<li><a href="../VKCComponents/VKCItemBackgroundTexture.html">VKCItemBackgroundTexture</a></li>
+<li><a href="../VKCComponents/VKCItemCamera.html">VKCItemCamera</a></li>
+<li><a href="../VKCComponents/VKCItemField.html">VKCItemField</a></li>
+<li><a href="../VKCComponents/VKCItemObject.html">VKCItemObject</a></li>
+<li><a href="../VKCComponents/VKCItemParticle.html">VKCItemParticle</a></li>
+<li><a href="../VKCComponents/VKCItemPlane.html">VKCItemPlane</a></li>
+<li><a href="../VKCComponents/VKCItemTextPlane.html">VKCItemTextPlane</a></li>
 </ul>
 </details>
 <h3 id="getproperty">GetProperty</h3>

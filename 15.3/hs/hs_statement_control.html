@@ -7269,6 +7269,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      { } - ブロックによるスコープ
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -11653,6 +11662,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      { } - ブロックによるスコープ
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -11769,6 +11787,21 @@ switch (id) {
     default:
         message = &quot;restricted user&quot;;
         break;
+}
+</code></pre></div>
+<h2 id="-">{ } - ブロックによるスコープ</h2>
+<p>メソッド内の<em>{ }</em>によって、スコープの定義が可能です。</p>
+<div class="highlight"><pre><span></span><code>public void example() {
+    int x = 10;
+    { 
+        int y = 20;
+    }
+
+    // -&gt; &quot;x:10&quot;
+    hsSystemOutput(&quot;x: %d&quot; % x);
+
+    // スコープ外のためエラー
+    hsSystemOutput(&quot;y: %d&quot; % y); 
 }
 </code></pre></div>
 
