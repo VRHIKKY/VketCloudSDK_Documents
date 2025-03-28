@@ -80,15 +80,15 @@ Sets an image on the Canvas specified by name.
 
 ### hsCanvasResetToggleDefault
 
-`bool hsCanvasResetToggleDefault(string name)`
+`bool hsCanvasResetToggleDefault(string toggleName)`
 
-Resets the GUI element specified by name to its default state.
+Resets the Toggle specified by name to its default state.
 
 ### hsCanvasToggleChange
 
-`bool hsCanvasToggleChange(string name)`
+`bool hsCanvasToggleChange(string toggleName)`
 
-Toggles the state of a GUI element specified by name.
+Changes the state of a Toggle specified by name.
 
 ### hsCanvasWorldToScreenPos
 

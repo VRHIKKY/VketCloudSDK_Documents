@@ -78,15 +78,15 @@ hsCanvasSuspendVisibleLayers()で非表示にしたレイヤーを復帰しま�
 
 ### hsCanvasResetToggleDefault
 
-`bool hsCanvasResetToggleDefault(string name)`
+`bool hsCanvasResetToggleDefault(string toggleName)`
 
-名前で指定したGUI要素をデフォルトの状態にリセットする。
+名前で指定したトグルをデフォルトの状態にリセットする。
 
 ### hsCanvasToggleChange
 
-`bool hsCanvasToggleChange(string name)`
+`bool hsCanvasToggleChange(string toggleName)`
 
-名前で指定したGUI要素の状態を切り替える。
+名前で指定したトグルの状態を切り替える。
 
 ### hsCanvasWorldToScreenPos
 

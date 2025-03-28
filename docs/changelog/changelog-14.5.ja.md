@@ -5,6 +5,9 @@
 ## 2025年3月28日 - 編集されたページ
 
 - HeliScript
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - `hsCanvasResetToggleDefault`と`hsCanvasToggleChange`の説明を修正
     - 組み込み型
         - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
             - bool型変数のToString()メソッドの説明を追加
