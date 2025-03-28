@@ -34,23 +34,54 @@ HeliScriptでは、参照カウンタによって参照の寿命を管理して�
 
 つまり、引数を渡した先で代入を行うと、呼び出し元の変数を書き換えることができます。
 
-```
-void RefFunc(ref int x, ref int y) {
-    x = 100;
-    y = 200;
-}
+??? quote "*ref*のコード例"
+    ```
+    void RefFunc(ref int x, ref int y) {
+        x = 100;
+        y = 200;
+    }
 
-void Test() {
-    int x = 0;
-    int y = 0;
-    
-    // 引数をrefで渡す
-    RefFunc(x, y);
-    
-    // -> "x=100, y=200"
-    hsSystemOutput("x=%d, y=%d\n" % x % y);
-}
-```
+    void Test() {
+        int x = 0;
+        int y = 0;
+        
+        // 引数をrefで渡す
+        RefFunc(x, y);
+        
+        // -> "x=100, y=200"
+        hsSystemOutput("x=%d, y=%d\n" % x % y);
+    }
+    ```
+
+また、クラス関数内の *this* により、現在のインスタンス自身を参照可能です。
+
+??? quote "*this*のコード例"
+    ```
+    Printer printer = new Printer();
+    Person person = new Person();
+    person.Construct(20);
+
+    // -> "age: 20"
+    person.PrintAge(printer);
+
+    class Person{
+        public int Age;
+
+        public void Construct(int age){
+            Age = age;
+        }
+
+        public void PrintAge(Printer printer){
+            printer.PrintAge(this);
+        }
+    }
+
+    class Printer{
+        public void PrintAge(Person person){
+            hsSystemWriteLine("age: %d" % person.Age); 
+        }
+    }
+    ```
 
 ## 「文字列」と「文字」
 
@@ -93,3 +124,9 @@ int型変数の持つ変数値を、文字列に変換します。
 `public string ToString()`
 
 float型変数の持つ変数値を、文字列に変換します。
+
+### bool.ToString()
+
+`public string ToString()`
+
+bool型変数の持つ変数値を、文字列に変換します。

@@ -1,5 +1,36 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月28日更新
+
+## 2025年3月28日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - `hsCanvasResetToggleDefault`と`hsCanvasToggleChange`の説明を修正
+    - 組み込み型
+        - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
+            - bool型変数のToString()メソッドの説明を追加
+    - 文法と制御構文
+        - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_statement_control.html)
+            - *{ }*によるスコープ定義の説明追加しました
+    - 組み込み型
+        - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
+            - 'this'によるインスタンス自身の参照取得について説明追加しました
+            - bool型変数のToString()メソッドの説明を追加
+- ワールド制作ガイド
+    - [ReplaceTextureでテクスチャの差し替えが正常に出来ない](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/ReplaceTexture.html)
+        - トラブルシューティングのケースを追加しました
+- HeliScript
+    - 文法と制御構文
+        - [演算子](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_operator.html)
+            - === と == の演算子の誤った説明を修正しました
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - hsCanvasSetGUIText関数に注釈を追記
+
+---
+
 ## 2025年3月26日更新
 
 ## 2025年3月26日 - 編集されたページ
@@ -15,7 +46,7 @@
     - VKC Node
         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCNodeCollider.html)
             - 画像リンク・文言を修正
-
+            
 ---
 
 ## 2025年3月21日更新
