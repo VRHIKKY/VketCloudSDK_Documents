@@ -8,7 +8,35 @@
     - 組み込み型
         - [基本型](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
             - 'this'によるインスタンス自身の参照取得について説明追加しました
+- ワールド制作ガイド
+    - [ReplaceTextureでテクスチャの差し替えが正常に出来ない](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/ReplaceTexture.html)
+        - トラブルシューティングのケースを追加しました
+- HeliScript
+    - 文法と制御構文
+        - [演算子](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_operator.html)
+            - === と == の演算子の誤った説明を修正しました
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - hsCanvasSetGUIText関数に注釈を追記
 
+---
+
+## 2025年3月26日更新
+
+## 2025年3月26日 - 編集されたページ
+
+- HeliScript
+    - 組み込みクラス・関数
+        - [Quaternionクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_struct_quaternion.html)
+            - makequaternioneuler関数に注釈を追記
+- VKCコンポーネント
+    - VKC Item
+        - [VKC Item Area Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCItemAreaCollider.html)
+            - 文言を修正
+    - VKC Node
+        - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCNodeCollider.html)
+            - 画像リンク・文言を修正
+            
 ---
 
 ## 2025年3月21日更新
@@ -16,6 +44,7 @@
 ## 2025年3月21日 - 追加されたページ
 
 - ワールド制作ガイド
+    - [ワールド入場時間を制限する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_RestrictEntryTime.html)  
     - [Web APIを使用し現在の天気を取得する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_FetchCurrentWeather.html)  
 
 ## 2025年3月21日 - 編集されたページ
@@ -23,6 +52,9 @@
 - ワールド制作ガイド
     - [JS入稿のサンプル](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/JsUpload_Sample.html)
         - サンプルワールドからチュートリアルシーンへ文言を変更。
+- 外部API連携
+    - [HeliScriptでJsonを扱う](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/HeliScriptJsonParse.html)  
+        - 新しいsdk向けに情報を更新しました
 
 ---
 
@@ -34,18 +66,12 @@
     - 組み込みクラス・関数
         -  [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_class.html)
             - `IsCollisionDetection`を追記
-    - 組み込み関数
-        - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_camera.html)
-            - hsCameraSetFPSModeとhsCameraGetFPSModeの説明を追加
-    - [コンポーネント/コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_component.html)
-        - ItemColliderのコールバックを追記
 
 ## 2025年3月14日 - 追加されたページ
 - HeliScript
     - 組み込みクラス・関数
         - [HSRaycastHIT Class](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_struct_hsraycasthit.html)
     - 組み込み関数
-        - [Raycast](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_raycast.html)
         - [Cookie](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_cookie.html)
 - ワールド制作ガイド
     - [HeliScriptでCanvas要素を制御する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/HeliscriptCanvas.html)
