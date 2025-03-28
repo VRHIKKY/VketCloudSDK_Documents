@@ -119,29 +119,6 @@ component AreaCollider
 }
 ```
 
-## コールバック - ItemCollider
-
-以下のようにOnItemEnterCollider, OnItemLeaveColliderメソッドを定義しておくと、このコンポーネントを持つItemが別のItem内ノードのコライダーに侵入・退出した時に呼び出されます。  
-現在対応している衝突形状はボックスコライダーのみです。  
-
-```
-component CollisionTest
-{
-    public void OnItemEnterCollider(int ItemInstanceID, int NodeIndex)
-    {
-        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
-        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
-        hsSystemOutput("[OnItemEnterCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
-    }
-    public void OnItemLeaveCollider(int ItemInstanceID, int NodeIndex)
-    {
-        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
-        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
-        hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
-    }
-}
-```
-
 ## コールバック - オブジェクト選択解除
 
 ### ノードの選択解除：OnUnselectNode

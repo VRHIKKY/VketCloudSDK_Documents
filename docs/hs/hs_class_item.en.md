@@ -708,7 +708,7 @@ Replace the Item by the designated model data.
 
 Replace the texture attached to the MaterialName's material by the designated URL content.
 
-Related Page: [ReplaceTexture Unexpectedly Replaces Other Textures](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html)
+Related Page: [Texture Replacement Issues with ReplaceTexture](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html)
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -883,10 +883,3 @@ The sent message is notified to all components of the target Item, but if even o
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
-
-### IsCollisionDetection
-
-`public bool IsCollisionDetection()`
-
-Retrieves whether collision detection is enabled for individual items.  
-If true, the item will be subject to collision detection with a ray using the hsItemRaycast() function.

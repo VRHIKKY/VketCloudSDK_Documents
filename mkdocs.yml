@@ -22,6 +22,7 @@ theme:
     - header.autohide
     - search.suggest
     - search.highlight
+    - content.code.copy
   footer:
     logo: images/HikkyLogo.png
     copyright: ©HIKKY Co.,Ltd. All rights reserved.
@@ -115,6 +116,7 @@ plugins:
             Movable Clickable Object: クリック判定のある移動オブジェクト
             JS Upload: JS入稿
             Enabling JS Upload Feature: JS入稿機能の有効化
+            Restrict World Entry Time: ワールド入場時間を制限する
             Get Current Weather Using Web API: Web APIを使用し現在の天気を取得する
             JS Upload Tutorial Scene: JS入稿のチュートリアルシーン
             Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
@@ -131,9 +133,8 @@ plugins:
             How to check the Chrome Developer Tools console on iPhone alone: iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法
             Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
             Binary Output Error: バイナリ出力に失敗
-            ReplaceTexture Unexpectedly Replaces Other Textures: ReplaceTextureでテクスチャの差し替えが正常に出来ない
+            Texture Replacement Issues with ReplaceTexture: ReplaceTextureでテクスチャの差し替えが正常に出来ない
             Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
-            Control the Canvas element with HeliScript: HeliScriptでCanvas要素を制御する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -280,7 +281,6 @@ plugins:
             Date Class: Dateクラス
             TimeSpan Class: TimeSpanクラス
             HSMessage Class: HSMessageクラス
-            HSRaycastHIT Class: HSRaycastHITクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -296,12 +296,11 @@ plugins:
             Rendering: レンダリング
             JavaScript: JavaScript
             Cookie: Cookie
-            RayCast: レイキャスト
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
             JsVal: JsVal
-            Reading JSON in HeliScript: HeliScriptでJsonを読み込む
+            Handling Json in HeliScript: HeliScriptでJsonを扱う
             # チェンジログ / リリースノート
             Change Log: チェンジログ
             About Changelog: チェンジログについて
@@ -317,6 +316,7 @@ markdown_extensions:
     - codehilite
     - attr_list
     - pymdownx.details
+    - pymdownx.superfences
 
 nav:
 - Introduction: index.md
@@ -359,6 +359,7 @@ nav:
     - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
     - JS Upload :
       - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
+      - Restrict World Entry Time: WorldMakingGuide/JsUpload_RestrictEntryTime.md
       - Get Current Weather Using Web API: WorldMakingGuide/JsUpload_FetchCurrentWeather.md
       - JS Upload Tutorial Scene: WorldMakingGuide/JsUpload_TutorialScene.md
     - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
@@ -375,10 +376,9 @@ nav:
     - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
     - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
     - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
-    - ReplaceTexture Unexpectedly Replaces Other Textures : WorldMakingGuide/ReplaceTexture.md
+    - Texture Replacement Issues with ReplaceTexture : WorldMakingGuide/ReplaceTexture.md
     - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
     - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
-    - Control the Canvas element with HeliScript : WorldMakingGuide/HeliscriptCanvas.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -567,7 +567,6 @@ nav:
         - Date Class: hs/hs_class_date.md
         - TimeSpan Class: hs/hs_class_timespan.md
         - HSMessage Class: hs/hs_class_hsmessage.md
-        - HSRaycastHIT Class: hs/hs_struct_hsraycasthit.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Input: hs/hs_system_function_input.md
@@ -584,7 +583,6 @@ nav:
         - Rendering: hs/hs_system_function_rendering.md
         - JavaScript: hs/hs_system_function_js.md
         - Cookie: hs/hs_system_function_cookie.md
-        - Raycast: hs/hs_system_function_raycast.md
     - Statements and flow control:
         - Declarations and definitions: hs/hs_statement_def.md
         - Control Statement: hs/hs_statement_control.md
@@ -594,7 +592,7 @@ nav:
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md
-  - Reading JSON in HeliScript: ExternalAPI/HeliScriptJsonParse.md
+  - Handling Json in HeliScript: ExternalAPI/HeliScriptJsonParse.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v14.x:
