@@ -216,6 +216,14 @@ component ButtonClickable
 }
 ```
 
+## Callback - GUI Slider
+
+`public void OnSliderRateChanged(string GUIName, float Rate)`
+
+This is a callback method that is invoked when the value of a slider in a GUI element is changed.
+
+The argument `GUIName` receives the name of the slider that was operated, and the argument `Rate` receives the changed slider value as a number between 0 and 1.
+
 ## Callback - physics collision detection
 
   `public void OnPhysicsCollision(int ID0, int ID1)`
@@ -323,3 +331,12 @@ public void OnReceiveMessage(HSMessage message)
 ```
 
 This will be called when the item receives a message. The argument message contains the received data and sender information.
+
+## Callback - Emote Change
+
+```
+public void OnEmoteChange(int EmoteIndex)
+```
+
+This callback is invoked when a player's emote is changed (played).  
+`EmoteIndex` contains the index value of the emote that was changed (played).
