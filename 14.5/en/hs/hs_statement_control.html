@@ -1637,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -7223,6 +7223,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#-block-based-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      { } - Block-Based Scope
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -11375,6 +11384,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#-block-based-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      { } - Block-Based Scope
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -11488,6 +11506,21 @@ switch (id) {
      default:
          message = &quot;restricted user&quot;;
          break;
+}
+</code></pre></div>
+<h2 id="-block-based-scope">{ } - Block-Based Scope</h2>
+<p>Within a method, <em>{ }</em> can be used to define scope.</p>
+<div class="highlight"><pre><span></span><code>public void example() {
+    int x = 10;
+    { 
+        int y = 20;
+    }
+
+    // -&gt; &quot;x:10&quot;
+    hsSystemOutput(&quot;x: %d&quot; % x);
+
+    // Error because y is out of scope
+    hsSystemOutput(&quot;y: %d&quot; % y); 
 }
 </code></pre></div>
 
