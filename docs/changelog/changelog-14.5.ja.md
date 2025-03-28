@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年3月28日更新
+
+## 2025年3月28日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - hsCanvasSetGUIText関数に注釈を追記
+
 ## 2025年3月26日更新
 
 ## 2025年3月26日 - 編集されたページ
