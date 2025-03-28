@@ -6398,6 +6398,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#booltostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      bool.ToString()
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11661,6 +11670,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#booltostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      bool.ToString()
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11733,6 +11751,8 @@
 <h2 id="_4">参照の取得</h2>
 <p>関数の引数定義に <em>ref</em> を付与すると、引数の参照渡しを行います。</p>
 <p>つまり、引数を渡した先で代入を行うと、呼び出し元の変数を書き換えることができます。</p>
+<details class="quote">
+<summary><em>ref</em>のコード例</summary>
 <div class="highlight"><pre><span></span><code>void RefFunc(ref int x, ref int y) {
     x = 100;
     y = 200;
@@ -11749,6 +11769,36 @@ void Test() {
     hsSystemOutput(&quot;x=%d, y=%d\n&quot; % x % y);
 }
 </code></pre></div>
+</details>
+<p>また、クラス関数内の <em>this</em> により、現在のインスタンス自身を参照可能です。</p>
+<details class="quote">
+<summary><em>this</em>のコード例</summary>
+<div class="highlight"><pre><span></span><code>Printer printer = new Printer();
+Person person = new Person();
+person.Construct(20);
+
+// -&gt; &quot;age: 20&quot;
+person.PrintAge(printer);
+
+class Person{
+    public int Age;
+
+    public void Construct(int age){
+        Age = age;
+    }
+
+    public void PrintAge(Printer printer){
+        printer.PrintAge(this);
+    }
+}
+
+class Printer{
+    public void PrintAge(Person person){
+        hsSystemWriteLine(&quot;age: %d&quot; % person.Age); 
+    }
+}
+</code></pre></div>
+</details>
 <h2 id="_5">「文字列」と「文字」</h2>
 <p>ダブルクォーテーション 「""」で囲まれた文字列を、HeliScriptは文字列オブジェクトとして認識します。</p>
 <p>シングルクォーテーション 「''」 で1つの文字を囲むと、それは文字型になります。文字型は、内部的に32bitの整数値として表現されます。</p>
@@ -11798,6 +11848,9 @@ bool型の変数に整数値を代入した場合、0は <em>false</em> に、�
 <h3 id="floattostring">float.ToString()</h3>
 <p><code>public string ToString()</code></p>
 <p>float型変数の持つ変数値を、文字列に変換します。</p>
+<h3 id="booltostring">bool.ToString()</h3>
+<p><code>public string ToString()</code></p>
+<p>bool型変数の持つ変数値を、文字列に変換します。</p>
 
 
 

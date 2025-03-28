@@ -1637,7 +1637,7 @@
         
   
   <span class="md-ellipsis">
-    ReplaceTexture Unexpectedly Replaces Other Textures
+    Texture Replacement Issues with ReplaceTexture
   </span>
   
 
@@ -12434,6 +12434,10 @@ Schedules a layer for deletion.</p>
 <h3 id="hscanvassetguitext">hsCanvasSetGUIText</h3>
 <p><code>bool hsCanvasSetGUIText(string LayerName, string GUIName, string Text)</code></p>
 <p>Sets a string to the Canvas specified by name.</p>
+<div class="admonition warning">
+<p class="admonition-title">About using commas (,) in text</p>
+<p>We have confirmed that there is currently a bug where text display fails when commas (,) are used in the text.Please avoid using commas (,).</p>
+</div>
 <h3 id="hscanvassetguitextalignment">hsCanvasSetGUITextAlignment</h3>
 <p><code>bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)</code></p>
 <p>Sets the text element's alignment.</p>
@@ -12447,11 +12451,11 @@ Schedules a layer for deletion.</p>
 <p><code>bool hsCanvasSetGUIImage(string layerName, string guiName, string path)</code></p>
 <p>Sets an image on the Canvas specified by name.</p>
 <h3 id="hscanvasresettoggledefault">hsCanvasResetToggleDefault</h3>
-<p><code>bool hsCanvasResetToggleDefault(string name)</code></p>
-<p>Resets the GUI element specified by name to its default state.</p>
+<p><code>bool hsCanvasResetToggleDefault(string toggleName)</code></p>
+<p>Resets the Toggle specified by name to its default state.</p>
 <h3 id="hscanvastogglechange">hsCanvasToggleChange</h3>
-<p><code>bool hsCanvasToggleChange(string name)</code></p>
-<p>Toggles the state of a GUI element specified by name.</p>
+<p><code>bool hsCanvasToggleChange(string toggleName)</code></p>
+<p>Changes the state of a Toggle specified by name.</p>
 <h3 id="hscanvasworldtoscreenpos">hsCanvasWorldToScreenPos</h3>
 <p><code>bool hsCanvasWorldToScreenPos(Vector3 WorldPos, ref float ScreenX, ref float ScreenY)</code></p>
 <p>Converts the world position to screen position. </p>
