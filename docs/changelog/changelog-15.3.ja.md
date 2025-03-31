@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 15.3
+## 2025年4月4日更新
 
+## 2025年4月4日 - 追加されたページ
+
+ - ワールド制作ガイド
+     - [目次](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/WorldMakingGuide/WorldMakingGuide.html)
+         - ワールド制作ガイドの目次ページを作成し、カテゴリごとに整理
+
+---
 ## 2025年3月28日更新
 
 ## 2025年3月28日 - 編集されたページ

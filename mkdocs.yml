@@ -95,6 +95,8 @@ plugins:
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
             # ワールド制作ガイド
             World Making Guide: ワールド制作ガイド
+            Table of Contents: 目次
+            Articles: 記事
             Shader Availability : シェーダー対応項目一覧
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
@@ -344,43 +346,45 @@ nav:
     - Avatar Settings: VketCloudSettings/AvatarSettings.md
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
-    - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
-    - Shader Availability : WorldMakingGuide/ShaderAvailability.md
-    - Setting up a Skybox : WorldMakingGuide/Skybox.md 
-    - How to use Colliders / Tips : WorldMakingGuide/Collider.md
-    - Physics Engine: WorldMakingGuide/PhysicsEngine.md
-    - Tips on using VKC Item Field: WorldMakingGuide/HEOFieldTips.md
-    - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
-    #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
-    - How to Animate Objects: WorldMakingGuide/PropAnimation.md
-    - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
-    - How to convert animation from Unity asset: WorldMakingGuide/ConvertAnimationFromUnityAsset.md
-    - Avatar File: WorldMakingGuide/AvatarFile.md
-    - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
-    - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
-    - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
-    - JS Upload :
-      - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
-      - Restrict World Entry Time: WorldMakingGuide/JsUpload_RestrictEntryTime.md
-      - Get Current Weather Using Web API: WorldMakingGuide/JsUpload_FetchCurrentWeather.md
-      - JS Upload Tutorial Scene: WorldMakingGuide/JsUpload_TutorialScene.md
-    - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
-    - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
-    - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
-    - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
-    - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
-    - Light Scattering: WorldMakingGuide/LightScattering.md
-    - Playing Entrance Sound Effects Only Under Specific Conditions: WorldMakingGuide/SoundEffectEntrance.md
-    - Execute Activity Json Method: WorldMakingGuide/ExecuteActivityJsonMethod.md
-    - How to Use HEOProperty (Vket Cloud Property Function): WorldMakingGuide/VKCAttributeProperty.md
-    - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
-    - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
-    - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
-    - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
-    - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
-    - Texture Replacement Issues with ReplaceTexture : WorldMakingGuide/ReplaceTexture.md
-    - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
-    - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
+    - Table of Contents : WorldMakingGuide/WorldMakingGuide.md
+    - Articles :
+      - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
+      - Shader Availability : WorldMakingGuide/ShaderAvailability.md
+      - Setting up a Skybox : WorldMakingGuide/Skybox.md 
+      - How to use Colliders / Tips : WorldMakingGuide/Collider.md
+      - Physics Engine: WorldMakingGuide/PhysicsEngine.md
+      - Tips on using VKC Item Field: WorldMakingGuide/HEOFieldTips.md
+      - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
+      #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
+      - How to Animate Objects: WorldMakingGuide/PropAnimation.md
+      - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
+      - How to convert animation from Unity asset: WorldMakingGuide/ConvertAnimationFromUnityAsset.md
+      - Avatar File: WorldMakingGuide/AvatarFile.md
+      - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+      - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
+      - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
+      - JS Upload :
+        - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
+        - Restrict World Entry Time: WorldMakingGuide/JsUpload_RestrictEntryTime.md
+        - Get Current Weather Using Web API: WorldMakingGuide/JsUpload_FetchCurrentWeather.md
+        - JS Upload Tutorial Scene: WorldMakingGuide/JsUpload_TutorialScene.md
+      - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
+      - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
+      - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
+      - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
+      - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
+      - Light Scattering: WorldMakingGuide/LightScattering.md
+      - Playing Entrance Sound Effects Only Under Specific Conditions: WorldMakingGuide/SoundEffectEntrance.md
+      - Execute Activity Json Method: WorldMakingGuide/ExecuteActivityJsonMethod.md
+      - How to Use HEOProperty (Vket Cloud Property Function): WorldMakingGuide/VKCAttributeProperty.md
+      - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
+      - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
+      - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
+      - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
+      - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
+      - Texture Replacement Issues with ReplaceTexture : WorldMakingGuide/ReplaceTexture.md
+      - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
+      - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
