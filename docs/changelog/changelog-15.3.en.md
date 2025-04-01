@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 15.3
+## April 4 2025 Update
 
+## April 4 2025 - Added Pages
+
+ - World Making Guide
+     - [Table of Contents](../WorldMakingGuide/WorldMakingGuide.md)
+         - Created a table of contents page for the World Making Guide, categorized by topic
+         - Organized World Making Guide articles within the article list
+
+---
 ## March 28 2025 Update
 
 ## March 28 2025 - Edited Page

@@ -4,8 +4,9 @@
 ## 2025年4月4日 - 追加されたページ
 
  - ワールド制作ガイド
-     - [目次](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/WorldMakingGuide/WorldMakingGuide.html)
-         - ワールド制作ガイドの目次ページを作成し、カテゴリごとに整理
+     - [目次](../WorldMakingGuide/WorldMakingGuide.md)
+         - ワールド制作ガイドの目次ページを作成し、カテゴリごとに分類
+         - 合わせてワールド制作ガイドの記事を記事一覧内に整理
 
 ---
 ## 2025年3月28日更新
