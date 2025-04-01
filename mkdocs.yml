@@ -96,7 +96,7 @@ plugins:
             # ワールド制作ガイド
             World Making Guide: ワールド制作ガイド
             Table of Contents: 目次
-            Articles: 記事
+            List of Articles: 記事一覧
             Shader Availability : シェーダー対応項目一覧
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
@@ -347,7 +347,7 @@ nav:
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
     - Table of Contents : WorldMakingGuide/WorldMakingGuide.md
-    - Articles :
+    - List of Articles :
       - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
       - Shader Availability : WorldMakingGuide/ShaderAvailability.md
       - Setting up a Skybox : WorldMakingGuide/Skybox.md 
