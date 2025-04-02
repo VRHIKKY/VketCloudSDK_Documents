@@ -88,7 +88,7 @@ If this is not done, clicking anywhere on the dialog other than where buttons ar
 !!! warning "Caution"
     Since the transparent parts of the image set for the button also have button detection, if the dialog background image has transparent parts as margins, the clickable area must be smaller than the button size.
 
-![CloseCanvas](./img/CloseCanvas02.jpg)
+![CloseCanvas](./img/CloseCanvas02.jpg)  
 Background image. Use it by placing it in the gui folder within the Activity class.
 
 If the above image is used as an image and placed on the Canvas with a size of 550 * 400,  
