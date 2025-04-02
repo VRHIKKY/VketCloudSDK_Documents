@@ -53,5 +53,4 @@
 
 ## Others
 - [How to check the Chrome Developer Tools console on iPhone alone](../WorldMakingGuide/iPhoneConsole.md)
-<!-- Pending as categorized under SDK Tools in Table of Contents -->
-<!-- - [Tutorial on using HEO Exporter](../WorldMakingGuide/HEOExporter_Tutorial.md) -->
+- [Tutorial on using HEO Exporter](../WorldMakingGuide/HEOExporter_Tutorial.md)

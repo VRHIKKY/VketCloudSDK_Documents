@@ -53,5 +53,4 @@
 
 ## その他
 - [iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法](../WorldMakingGuide/iPhoneConsole.md)
-<!-- 目次でSDK Toolsに分類されているので保留 -->
-<!-- - [.heoファイルを出力する](../WorldMakingGuide/HEOExporter_Tutorial.md) -->
+- [.heoファイルを出力する](../WorldMakingGuide/HEOExporter_Tutorial.md)
