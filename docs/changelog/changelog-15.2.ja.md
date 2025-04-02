@@ -1,12 +1,5 @@
 # SDK Manual Change Log - Ver 15.2
 
-## 2025年3月28日更新
-
-## 2025年3月28日 - 追加されたページ
-
-- ワールド制作ガイド
-    - [ActivityCanvasでアニメーション](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/WorldMakingGuide/AnimationWithActivityCanvas.html)
-
 ## 2025年3月26日更新
 
 ## 2025年3月26日 - 編集されたページ
