@@ -135,6 +135,7 @@ plugins:
             Binary Output Error: バイナリ出力に失敗
             Texture Replacement Issues with ReplaceTexture: ReplaceTextureでテクスチャの差し替えが正常に出来ない
             Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
+            Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas: Canvas外をクリック(tap)したらダイアログを閉じる機能を実装する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -381,6 +382,7 @@ nav:
     - Texture Replacement Issues with ReplaceTexture : WorldMakingGuide/ReplaceTexture.md
     - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
     - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
+    - Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas : WorldMakingGuide/CloseCanvas.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -683,7 +685,6 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v15.x:
-        - v15.3: changelog/changelog-15.3.md
         - v15.2: changelog/changelog-15.2.md
         - v15.1: changelog/changelog-15.1.md
     - v14.x:
