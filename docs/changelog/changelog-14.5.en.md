@@ -1,5 +1,33 @@
 # SDK Manual Change Log - Ver 14.5
 
+## March 28 2025 Update
+
+## March 28 2025 - Edited Page
+
+- HeliScript
+    - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - Corrected the explanation for `hsCanvasResetToggleDefault` and `hsCanvasToggleChange`.
+    - Statements and flow control
+        - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_statement_control.html)
+            - Added an explanation of scope definition using { }
+    - Built-in Types
+        - [Basic Types](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_var.htm)
+            - Added explanation about referencing the instance itself using 'this'
+            - Added an explanation about the ToString() method for boolean type variables.
+- World Making Guide
+    - [ReplaceTexture Unexpectedly Replaces Other Textures](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_operator.html)
+        - Add Trouble Shooting Case
+- HeliScript
+    - Statements and flow control
+        - [Operator](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_operator.html)
+            - Fixed incorrect explanation of the operator === and ==
+    - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_gui.html)
+            - Added annotation to hsCanvasSetGUIText function
+
+---
+
 ## March 26 2025 Update
 
 ## March 26 2025 - Edited Page

@@ -197,6 +197,13 @@ component ButtonClickable
 }
 ```
 
+## コールバック - GUIスライダー
+ `public void OnSliderRateChanged(string GUIName, float Rate)`
+
+GUI要素のスライダーの値を変更した際に呼び出されるコールバックメソッドです。
+
+引数 GUIName には操作が行われたスライダーの名前、引数 Rate には変更されたスライダーの値が 0 から 1 までの数値として渡されます。
+
 ## コールバック - 物理衝突判定
 
  `public void OnPhysicsCollision(int ID0, int ID1)`
@@ -304,3 +311,12 @@ public void OnReceiveMessage(HSMessage message)
 ```
 
 Itemがメッセージを受信した際に呼ばれます。引数 message に、受信したデータや送信者の情報が含まれています。
+
+## コールバック - エモートチェンジ
+
+```
+public void OnEmoteChange(int EmoteIndex)
+```
+
+Playerのエモートが変更（再生）された際に呼ばれます。  
+EmoteIndex に、変更（再生）されたエモートのインデックス値が入ります。

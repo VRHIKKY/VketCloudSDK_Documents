@@ -776,6 +776,8 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 
 プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
 
+プロパティの変更が行われると、コールバックメソッドの OnChangedProperty() が呼び出されます。
+
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
@@ -787,6 +789,26 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPropertyWithoutNotify
+
+`public bool SetPropertyWithoutNotify(string Key, string Value)`
+
+プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
+
+SetProperty() と同等の機能を持つメソッドですが、SetPropertyWithoutNotify() でプロパティを変更した場合、コールバックメソッドの OnChangedProperty() が呼び出されません。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetProperty
 

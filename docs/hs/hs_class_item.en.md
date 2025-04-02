@@ -722,7 +722,7 @@ Replace the Item by the designated model data.
 
 Replace the texture attached to the MaterialName's material by the designated URL content.
 
-Related Page: [ReplaceTexture Unexpectedly Replaces Other Textures](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html)
+Related Page: [Texture Replacement Issues with ReplaceTexture](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html)
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -777,6 +777,8 @@ When physics is enabled, returns true if this Item is fixed.
 
 Set property by Key and Value.
 
+When a property change occurs, the callback method `OnChangedProperty()` is invoked.
+
 ???+ note "Available object types for this method"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
@@ -788,6 +790,27 @@ Set property by Key and Value.
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPropertyWithoutNotify
+
+`public bool SetPropertyWithoutNotify(string Key, string Value)`
+
+Sets a property. If the same Key exists, it will be overwritten; otherwise, it will be added.
+
+This method has the same functionality as SetProperty(), but when you change a property with SetPropertyWithoutNotify(), the callback method OnChangedProperty() is not called.
+
+??? note "Object types that can call this method"
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+
 ### GetProperty
 
 `public string GetProperty(string Key)`

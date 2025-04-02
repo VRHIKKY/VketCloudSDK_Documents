@@ -103,6 +103,9 @@ Gets the GUI element's position value.
 
 Sets a string to the Canvas specified by name.
 
+!!! warning "About using commas (,) in text"
+    We have confirmed that there is currently a bug where text display fails when commas (,) are used in the text.Please avoid using commas (,).
+
 ### hsCanvasSetGUITextAlignment
 
 `bool hsCanvasSetGUITextAlignment(string LayerName, string GUIName, int Alignment)`
@@ -129,15 +132,15 @@ Sets an image on the Canvas specified by name.
 
 ### hsCanvasResetToggleDefault
 
-`bool hsCanvasResetToggleDefault(string name)`
+`bool hsCanvasResetToggleDefault(string toggleName)`
 
-Resets the GUI element specified by name to its default state.
+Resets the Toggle specified by name to its default state.
 
 ### hsCanvasToggleChange
 
-`bool hsCanvasToggleChange(string name)`
+`bool hsCanvasToggleChange(string toggleName)`
 
-Toggles the state of a GUI element specified by name.
+Changes the state of a Toggle specified by name.
 
 ### hsCanvasWorldToScreenPos
 
