@@ -7,23 +7,25 @@ Vket CloudのUI機能で「ダイアログ外をタップするとダイアロ�
 ダイアログ外をタップすることでダイアログが閉じる動作を作るためには、ダイアログ外に見えない閉じるボタン判定を用意します。
 
 !!! note "検証環境"
-    SDKバージョン : 元々4.2だったが→7.0移行済み環境にて
-    OS : windows10
-    Unity : 2019.4.31.f1
+    SDKバージョン : 元々4.2だったが→7.0移行済み環境にて<br>
+    OS : windows10<br>
+    Unity : 2019.4.31.f1<br>
     ブラウザ :Chrome
 
 ## 前提 - ダイアログとは
 
 下記画像のような、画面上に表示されるウィンドウのことを「ダイアログ」と呼びます。  
-下記画像の通り、ダイアログを画面上から消す方法として、「キャンセル」を押す、「×」を押すといった動作が考えらえれますが、ダイアログが表示されて閉じるための動作を模索する時間はユーザーにとってストレスとなります。
+下記画像の通り、ダイアログを画面上から消す方法として、  
+「キャンセル」を押す、「×」を押すといった動作が考えらえれますが、ダイアログが表示されて閉じるための動作を模索する時間はユーザーにとってストレスとなります。
 
 したがって、ダイアログとは関係のない場所をクリックすることでダイアログを閉じることが出来るようにすることで、ユーザーにとって親切なダイアログとなります。
 
-![CloseCanvas](./img/CloseCanvas01.jpg)
+![CloseCanvas](./img/CloseCanvas01.jpg)  
 Vket Cloud : エントランスにて確認できるダイアログの例
 
 また、Vket Cloudでダイアログを新しく追加するためには、アクティビティクラスを使用する必要があります。
-詳しくはこちらをご覧ください。[CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/ActivityWithCanvasUI.html)
+詳しくはこちらをご覧ください。  
+[CanvasUI表示機能付きアクティビティクラスを作る](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/ActivityWithCanvasUI.html)
 
 ## 手順
 

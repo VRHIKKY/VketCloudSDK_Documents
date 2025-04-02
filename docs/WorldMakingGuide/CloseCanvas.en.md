@@ -1,4 +1,4 @@
-# Implementing a Feature to Close a Dialog When Clicking (Tapping) Outside the Canvas
+# Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas
 
 ## Overview
 
@@ -7,15 +7,16 @@ This page introduces how to implement the feature "close the dialog when tapping
 To create a behavior where tapping outside the dialog closes it, you need to prepare an invisible close button detection outside the dialog.
 
 !!! note "Test Environment"
-    SDK Version: Originally 4.2, migrated to 7.0
-    OS: Windows 10
-    Unity: 2019.4.31.f1
+    SDK Version: Originally 4.2, migrated to 7.0<br>
+    OS: Windows 10<br>
+    Unity: 2019.4.31.f1<br>
     Browser: Chrome
 
 ## Prerequisite - What is a Dialog?
 
 A "dialog" refers to a window displayed on the screen, as shown in the image below.  
-As shown in the image below, possible actions to remove the dialog from the screen include pressing "Cancel" or "×". However, the time spent figuring out how to close the dialog can be stressful for users.
+As shown in the image below, possible actions to remove the dialog from the screen include pressing "Cancel" or "×".  
+However, the time spent figuring out how to close the dialog can be stressful for users.
 
 Therefore, by allowing users to close the dialog by clicking anywhere unrelated to the dialog, it becomes a more user-friendly dialog.
 
@@ -90,8 +91,8 @@ If this is not done, clicking anywhere on the dialog other than where buttons ar
 ![CloseCanvas](./img/CloseCanvas02.jpg)
 Background image. Use it by placing it in the gui folder within the Activity class.
 
-If the above image is used as an image and placed on the Canvas with a size of 550*400,  
-a transparent button for detection blocking should be set to 376*282 for optimal results.
+If the above image is used as an image and placed on the Canvas with a size of 550 * 400,  
+a transparent button for detection blocking should be set to 376 * 282 for optimal results.
 
 You can specify the clickable area size using ClickAreaSize, as shown below.
 
