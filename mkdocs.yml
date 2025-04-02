@@ -135,6 +135,7 @@ plugins:
             Binary Output Error: バイナリ出力に失敗
             ReplaceTexture Unexpectedly Replaces Other Textures: ReplaceTextureでテクスチャの差し替えが正常に出来ない
             Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
+            Animation With ActivityCanvas: ActivityCanvasでアニメーション
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -381,6 +382,7 @@ nav:
     - ReplaceTexture Unexpectedly Replaces Other Textures : WorldMakingGuide/ReplaceTexture.md
     - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
     - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
+    - Animation With ActivityCanvas: WorldMakingGuide/AnimationWithActivityCanvas.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
