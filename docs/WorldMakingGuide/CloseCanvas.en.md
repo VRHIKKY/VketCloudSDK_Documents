@@ -75,7 +75,7 @@ In the above example, an action to close the GameWindow layer is added.
 This implements the behavior of closing the GameWindow layer when clicking outside the dialog.
 
 The size of the background button can be set to any large value.  
-In this example, it is set to 6000*6000.
+In this example, it is set to 6000 * 6000.
 
 An important point is to set the Z value lower than all other buttons within the layer.  
 If the Z value is higher, the close detection will exist above other buttons, making it impossible to perform actions other than closing.
