@@ -80,7 +80,7 @@ In this example, it is set to 6000*6000.
 An important point is to set the Z value lower than all other buttons within the layer.  
 If the Z value is higher, the close detection will exist above other buttons, making it impossible to perform actions other than closing.
 
-## 2. Add a Transparent Button Matching the Size of the Dialog Background Image That Does Nothing
+### 2. Add a Transparent Button Matching the Size of the Dialog Background Image That Does Nothing
 
 Since the image type used to display images does not have the ability to block button detection, set the dialog background as a button and configure it to do nothing when clicked.  
 If this is not done, clicking anywhere on the dialog other than where buttons are present will close the dialog.
