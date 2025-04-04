@@ -1,10 +1,12 @@
 # SDK Manual Change Log - Ver 15.3
-
 ## April 4 2025 Update
 
-## April 4 2025 - Added Page
+## April 4 2025 - Added Pages
 
- - WolrdMakingGuide
+ - World Making Guide
+     - [Table of Contents](../WorldMakingGuide/WorldMakingGuide.md)
+         - Created a table of contents page for the World Making Guide, categorized by topic
+         - Organized World Making Guide articles within the article list
    - [Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/en/WorldMakingGuide/CloseCanvas.html)
 
 ---
