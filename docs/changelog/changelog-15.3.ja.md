@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 15.3
 
+## 2025年4月4日更新
+
+## 2025年4月4日 - 追加されたページ
+
+ - ワールド制作ガイド
+   - [Canvasでダイアログ外をクリック(タップ)したときにダイアログを閉じる機能を実装する](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/WorldMakingGuide/CloseCanvas.html)
+
+
+---
+
 ## 2025年3月28日更新
 
 ## 2025年3月28日 - 編集されたページ

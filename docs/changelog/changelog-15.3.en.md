@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 15.3
 
+## April 4 2025 Update
+
+## April 4 2025 - Added Page
+
+ - WolrdMakingGuide
+   - [Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/en/WorldMakingGuide/CloseCanvas.html)
+
+---
+
 ## March 28 2025 Update
 
 ## March 28 2025 - Edited Page
