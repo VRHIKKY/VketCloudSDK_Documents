@@ -18,6 +18,7 @@ theme:
         icon: material/toggle-switch
         name: ライトモードに切り替えます。
   features:
+    - navigation.top
     - navigation.indexes
     - header.autohide
     - search.suggest
