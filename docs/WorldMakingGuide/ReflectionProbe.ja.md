@@ -2,7 +2,7 @@
 
 (旧題：反射を映り込ませるには)
 
-!!! note Info
+!!! info "Note"
     リフレクションプローブとは何か / 基本的な使い方については、Unityの公式ドキュメント等([こちら](https://docs.unity3d.com/ja/2019.4/Manual/class-ReflectionProbe.html){target=blank})をご覧ください。
 
 Vket Cloudで使用されるリフレクションプローブは、プリミティブ単位ではなくヒエラルキー上のオブジェクト単位で決定されます。
@@ -45,7 +45,7 @@ Ver12.3以降のVket Cloud SDKでは、ワールドのビルド時にシーン�
 
     ![ReflectionProbe_Setup_5](img/ReflectionProbe_Setup_5.jpg)
 
-!!! caution "リフレクションプローブを書き出す際の注意点"
+!!! warning "リフレクションプローブを書き出す際の注意点"
 
     - 大きめのオブジェクト(床・壁・面が巨大なオブジェクト)にリフレクションプローブの反射を使用する場合は、ベイクするキューブマップの解像度を高めに設定してください(2048など)。大きめのオブジェクトに反射させる場合、画質が大幅に低下してしまうためです。
 
@@ -71,7 +71,7 @@ Vket Cloudでは、UnityのリフレクションプローブのBox Projectionを
 
 ## 旧バージョンにおける設定方法
 
-!!! caution "HEOReflectionProbeの廃止"
+!!! warning "HEOReflectionProbeの廃止"
     Ver12.3において、HEOReflectionProbeコンポーネントは廃止されました。<br>
     以下の設定方法はアーカイブのために掲載されております。
 

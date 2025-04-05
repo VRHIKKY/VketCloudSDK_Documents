@@ -1,7 +1,7 @@
 
 # Built-in functions - Math
 
-!!! Note Info
+!!! info "Note"
     Functions that enable math operations.
 
 ## hsMathCos(float)

@@ -6,7 +6,7 @@ Vket Cloud SDKをインストールするには、はじめにUnityのPackage Ma
 
 対応しているバージョン（[動作環境](OperatingEnvironment.md){target=_blank}）のプロジェクトを開く、またはプロジェクトを新規作成します。テンプレートを使用する場合は「3D」を選択してください。
 
-!!! caution "プロジェクト名・プロジェクトパスの名前について"
+!!! warning "プロジェクト名・プロジェクトパスの名前について"
     プロジェクト名およびプロジェクトディレクトリにスペースを入れるとビルドに失敗する場合があります。<br>
     また、日本語など2バイト文字の使用も避けることをおすすめします。
 
@@ -18,7 +18,7 @@ Vket Cloud SDKをインストールするには、はじめにUnityのPackage Ma
 
 ## Step 2. レジストリ情報を登録する  
 
-!!! note caution
+!!! warning "caution"
     Version 9.3リリース以降、Vket Cloud SDK導入時に入力するレジストリがインストールウィザードのものに変更となりました。<br>
     既存のプロジェクトにインストールウィザードを導入する際は**必ず**「+」ボタンを選択して新規のレジストリを追加し、SDKのレジストリを上書きしないようご注意ください。<br>
     インストールウィザードをインストールした後、[任意のバージョンの導入・既存バージョンSDKのアップデート](#sdk)に移行してください。
@@ -96,7 +96,7 @@ Unity 2022の場合、3つの設定を完了させてください。
 
 ### Standard Shader設定の変更
 
-!!! caution "Standard Shader設定の変更について"
+!!! warning "Standard Shader設定の変更について"
     SDK Ver12.3以降はStandard Shader設定の変更も必須となりました。<br>
     設定されていない場合はビルドエラーが発生するため、導入時に必ず設定してください。
 
@@ -128,7 +128,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 ### API Compatibility Level (API互換性レベル)の変更 (Unity 2019.4のみ)
 
-!!! caution "API Compatibility Levelの変更について"
+!!! warning "API Compatibility Levelの変更について"
     Unity 2022以降はAPI Compatibility Levelの変更は不要です。
     SDK13.7以降、Unity 2019とUnity 2022の両方に対応しております。
 
@@ -144,7 +144,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 5\.「次へ」ボタンを押すと、バージョン選択画面が表示されます。<br>安定版、最新版、バージョンアーカイブからバージョンを選択できます。
 
-!!! note caution
+!!! warning "caution"
     バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
 
   ![SetupSDK_External](img/SetupSDK_External_18.jpg)
@@ -182,7 +182,7 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 2\. バージョン選択画面でバージョンを選択し、インストールボタンを押してください。
 
-!!! note caution
+!!! warning "caution"
     バージョンアーカイブ内のバージョンは廃止が予定されております。<br>新規のワールド制作には使用しないようご注意ください。
 
 ![SetupSDK_External](img/SetupSDK_External_24.jpg)
@@ -197,15 +197,15 @@ VketCloudの物理ベースレンダリングは、UnityのMediumレベルのも
 
 この画面からSDKマニュアルやコミュニティDiscordサーバーへとアクセスできます。
 
-!!! note caution
+!!! warning "caution"
       既存のSDKのバージョンアップを行う際、アップデート後にComponentが欠落する現象が確認されています。<br>
       バージョンアップを行う際はプロジェクトの複製などによってバージョンアップ前の状態のバックアップを取ることを強くおすすめします。
 
-!!! note caution
+!!! warning "caution"
     SDKアップデート後にビルドエラー等の不具合が発生する場合は以下のページをご確認ください。
     [バージョンアップ後によくあるトラブル](../troubleshooting/VersionUpdateTroubleshooting.md)
 
-!!! note caution
+!!! warning "caution"
     以下にて解説しているPackage Managerあるいはmanifest.jsonの編集によるバージョン切り替えは引き続き利用可能ですが、基本的にはSDKバージョンマネージャーの利用を推奨します。<br>
 
 ### Package Managerによるバージョン切り替え
@@ -233,11 +233,11 @@ manifest.json内の`"com.hikky.VketCloudSDK"`の右側を使用したいバー�
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! caution "UnityメニューにてVket Cloud SDKが表示されない場合は"
-      UnityのメニューにVket Cloud SDKが表示されない場合は、再起動すると表示される場合があります。<br>
-      上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
+!!! warning "UnityメニューにてVket Cloud SDKが表示されない場合は"
+    UnityのメニューにVket Cloud SDKが表示されない場合は、再起動すると表示される場合があります。<br>
+    上記の原因の一つであるSDK付随のDeeplinkパッケージが自動インポートされない現象が発生した場合は[手動での導入](../troubleshooting/InstallingDeeplink.md)をお試しください。
 
-      また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際はStep 2.と同じ手順で以下のパッケージを導入してください。
+    また、稀に必須パッケージであるEditorTutorialSystemも自動インポートされない場合があるため、その際はStep 2.と同じ手順で以下のパッケージを導入してください。
 
 |  項目  |  値  |
 | ---- | ---- |

@@ -1,6 +1,6 @@
 # built-in functions - GUI
 
-!!! Note Info
+!!! info "Note"
     Utility functions that manipulate GUI elements.
 
 ***
@@ -27,6 +27,58 @@ If already suspended, `false` will be returned.
 Restores the layers that were hidden by hsCanvasSuspendVisibleLayers().<br>
 If not suspended, `false` will be returned.
 
+## hsAddLayer
+`void hsAddLayer(string LayerName, bool IsPortrait, bool IsShow, int Z)`
+Adds a layer.
+
+## hsSetLayerName
+`void hsSetLayerName(string LayerName, bool IsPortrait, string Name)`
+Changes the name of a layer.
+
+## hsSetLayerZ
+`void hsSetLayerZ(string LayerName, bool IsPortrait, int Z)`
+Changes the Z value of a layer.
+
+## hsSetLayerProjectName
+`void hsSetLayerProjectName(string LayerName, bool IsPortrait, string ProjectName)`
+Changes the ProjectName of a layer.
+
+## hsSetLayerComponentNameList
+`void hsSetLayerComponentNameList(string LayerName, bool IsPortrait, string ComponentNameList)`
+Changes the ComponentNameList of a layer.
+
+## hsSetLayerSpreadMode
+`void hsSetLayerSpreadMode(string LayerName, bool IsPortrait, bool SpreadMode)`
+Changes the SpreadMode of a layer.
+
+## hsSetLayerMask
+`void hsSetLayerMask(string LayerName, bool IsPortrait, string URI, int PosX, int PosY, int SizeX, int SizeY, float PivoX, float PivoY, string Anchor, int Z, float ColorR, float ColorG, float ColorB, float ColorA, bool Show, bool Vertical, bool FreeSlide, int WheelTravel)`
+Changes the Mask of a layer.
+
+## hsSetLayerMaskShow
+`void hsSetLayerMaskShow(string LayerName, bool IsPortrait, bool IsShow)`
+Displays the Mask of a layer. *For verification purposes.*
+
+## hsSetLayerSeekBarVertical
+`void hsSetLayerSeekBarVertical(string LayerName, bool IsPortrait, string Base, string Front, string On, string Off, int BarWidth, int OnSizeX, int OnSizeY, int OffSizeX, int OffSizeY)`
+Changes the vertical SeekBar of a layer.
+
+## hsSetLayerSeekBarHorizontal
+`void hsSetLayerSeekBarHorizontal(string LayerName, bool IsPortrait, string Base, string Front, string On, string Off, int BarWidth, int OnSizeX, int OnSizeY, int OffSizeX, int OffSizeY)`
+Changes the horizontal SeekBar of a layer.
+
+## hsSetLayerSeekBarRate
+`void hsSetLayerSeekBarRate(string LayerName, bool IsPortrait, float RateX, float RateY)`
+Changes the SeekBar rate of a layer.
+
+## hsReleaseLayer
+`void hsReleaseLayer(string LayerName, bool IsPortrait)`
+Deletes a layer.
+
+## hsReserveReleaseLayer
+`void hsReserveReleaseLayer(string LayerName, bool IsPortrait)`
+Schedules a layer for deletion.
+
 ### hsCanvasSetGUIShow
 
 `bool hsCanvasSetGUIShow(string layerName, string guiName, bool show)`
@@ -50,6 +102,9 @@ Gets the GUI element's position value.
 `bool hsCanvasSetGUIText(string LayerName, string GUIName, string Text)`
 
 Sets a string to the Canvas specified by name.
+
+!!! warning "About using commas (,) in text"
+    We have confirmed that there is currently a bug where text display fails when commas (,) are used in the text.Please avoid using commas (,).
 
 ### hsCanvasSetGUITextAlignment
 
@@ -77,15 +132,15 @@ Sets an image on the Canvas specified by name.
 
 ### hsCanvasResetToggleDefault
 
-`bool hsCanvasResetToggleDefault(string name)`
+`bool hsCanvasResetToggleDefault(string toggleName)`
 
-Resets the GUI element specified by name to its default state.
+Resets the Toggle specified by name to its default state.
 
 ### hsCanvasToggleChange
 
-`bool hsCanvasToggleChange(string name)`
+`bool hsCanvasToggleChange(string toggleName)`
 
-Toggles the state of a GUI element specified by name.
+Changes the state of a Toggle specified by name.
 
 ### hsCanvasWorldToScreenPos
 
@@ -160,6 +215,22 @@ Set the angle of GUI.
 
 Get the angle of GUI.
 
+## hsAddGUI
+`void hsAddGUI(string LayerName, bool IsPortrait, int Type, string GuiParam, string TypeParam)`
+Adds a GUI.
+
+## hsReleaseGUI
+`void hsReleaseGUI(string LayerName, bool IsPortrait, string GUIName)`
+Deletes a GUI.
+
+## hsAddGUIAction
+`void hsAddGUIAction(string LayerName, bool IsPortrait, string GUIName)`
+Adds a GUIAction to a GUI.
+
+## hsAddGUIToggle
+`void hsAddGUIToggle(string LayerName, string GUIName, string ToggleName, bool state)`
+Adds a GUIToggle to a GUI.
+
 ### hsAddGUIImage
 
 `void hsAddGUIImage(string LayerName, bool IsPortrait, 
@@ -186,6 +257,12 @@ Adds a button type GUI by searching a Layer by LayerName, with determining wheth
 )`
 
 Adds a text type GUI by searching a Layer by LayerName, with determining whether screen is in portrait or landscape by IsPortrait.
+
+### hsGetTextAreaContentSize
+
+`void hsGetTextAreaContentSize(string LayerName, string GUIName, ref int width, ref int height)`
+
+Retrieves the original width and height of the text content in a GUI TextArea.
 
 ## Window System
 Enable the creation of modal and modeless windows (hereafter collectively referred to as the window system).

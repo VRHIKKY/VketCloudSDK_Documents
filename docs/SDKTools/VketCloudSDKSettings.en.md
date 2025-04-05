@@ -24,7 +24,7 @@ For details, please refer to [Build Options](../WorldEditingTips/BuildOptions.md
 
 The Run Server tab has settings to setup local servers.
 
-!!! caution "About Run Server"
+!!! warning "About Run Server"
     This feature is open only for internal developers.
 
 ## Language
@@ -40,7 +40,7 @@ Current options are Japanese or English.
 
 The Extensions has options to import extension packages.
 
-!!! caution "About Extensions"
+!!! warning "About Extensions"
     This feature is open only for internal developers.
 
 ## Package Info

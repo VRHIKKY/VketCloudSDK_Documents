@@ -21,7 +21,7 @@ Vket Cloud SDKは、以下のUnity環境が必要です。
 - Android: Android 11.0以降、RAM 8GB以上（Google Pixelなら Pixel 5以降）
 - IDE: HeliScriptを編集する際、下記の理由によりVisual Studioは非推奨です。Visual Studioと同様の環境で編集を行いたい場合はVisual Studio Codeをご使用ください。
 
-!!! note warning
+!!! warning "Note"
     Visual Studioを使用してUnityプロジェクト内にVket Cloud SDKが作成したHeliScriptファイルを開き、編集を保存すると、エンコードがANSIに変換されてビルドが出来なくなってしまう場合があります。<br>
     以下にUntiyから開くエディターをVisual Studio Codeに変更する方法を記載しますので、参考にしてください。
 

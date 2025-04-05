@@ -2,13 +2,13 @@
 
 ライトスキャタリングの設定をおこなうことで、フォグのような表現や、遠景が青く霞むような表現が出来ます。
 
-!!! info 検証環境
+!!! info "検証環境"
     SDKバージョン: 4<br>
     OS: Windows 10<br>
     Unity: 2019.4.31.f1<br>
     ブラウザ: Google Chrome<br>
 
-!!! info Vket Cloud SDK12以降で設定の場所が変化しています
+!!! info "Vket Cloud SDK12以降で設定の場所が変化しています"
     HEOWorldSetting → VketCloudSettings内RenderingSettings内にあります。<br>
     ![LightScattering00](img/LightScattering00.jpg)<br>
     また、RenderingSettingsを表示するためには、VketCloudSettingsにて、設定モードを詳細(Advanced)にする必要があります。<br>

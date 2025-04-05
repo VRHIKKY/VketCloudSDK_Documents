@@ -2,13 +2,13 @@
 
 By configuring light scattering settings, you can achieve effects such as fog-like expressions or distant scenery appearing hazy and blue.
 
-!!! info Test Enviroment
+!!! info "Test Enviroment"
     SDK version: 4<br>
     OS: Windows 10<br>
     Unity: 2019.4.31.f1<br>
     Browser: Google Chrome<br>
 
-!!! info The location of settings has changed in Vket Cloud SDK version 12 and later
+!!! info "The location of settings has changed in Vket Cloud SDK version 12 and later"
     HEOWorldSetting →  It is located in RenderingSettings in VketCloudSettings<br>
     ![LightScattering00](img/LightScattering00.jpg)<br>
     Also, in order to display RenderingSettings, you need to set the setting mode to Advanced in VketCloudSettings.<br>

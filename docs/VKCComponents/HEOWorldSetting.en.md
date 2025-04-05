@@ -1,6 +1,6 @@
 # HEOWorldSetting
 
-!!! note warning
+!!! warning "Note"
     This component has been deprecated on SDK Ver12.0.<br>
     As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
@@ -15,7 +15,7 @@ This component lets you configure the following settings:
 
 ## Basic Info
 
-!!! note warning
+!!! warning "Note"
     This component has been deprecated on SDK Ver12.0.<br>
     As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
@@ -59,7 +59,7 @@ This component lets you configure the following settings:
 
 ## Camera
 
-!!! note warning
+!!! warning "Note"
     This component has been deprecated on SDK Ver12.0.<br>
     As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
@@ -79,7 +79,7 @@ This component lets you configure the following settings:
 
 ## Rendering
 
-!!! note warning
+!!! warning "Note"
     This component has been deprecated on SDK Ver12.0.<br>
     As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
@@ -101,7 +101,7 @@ This component lets you configure the following settings:
 | `Light Scattering` | false | Enable/disable light scattering. |
 | `IBL` | false | Enable/disable IBL, or Image-Based Lighting. |
 
-!!! note caution
+!!! warning "caution"
         Note that the Intensity value set on the `Directional Light`(as image below) will not be used within the world.<br>
         To express light intensity, multiply the `Directional Light`'s color by using the worldsetting's `LightColor` value.
 
@@ -132,7 +132,7 @@ This component lets you configure the following settings:
 
 ## Avatars
 
-!!! note warning
+!!! warning "Note"
     This component has been deprecated on SDK Ver12.0.<br>
     As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 
@@ -144,7 +144,7 @@ This component lets you configure the following settings:
 | `Avatar Files` | Vketchan_v1.6_Mtoon_blendshape | Set the avatar file that handles all the information for avatars. Refer to [this guide](../WorldMakingGuide/AvatarFile.md) for the details about Avatar Files. |
 | `CreateAvatarFile` | | Generate a new avatar file. |
 
-!!! note caution
+!!! warning "caution"
     When updating from Ver5.4 to Ver9.3, the HEOWorldSetting > Avatars > Avatar File settings may be missing, set the file by the procedure below on such occasion.
 
 If the HEOWorldSetting > Avatars > Avatar File settings is empty, or has no contents, it may lead to build errors or no avatars displayed on default.<br>
@@ -159,7 +159,7 @@ As the SDK has a default avatarfile, select this file if there is an empty entry
 
 ## MyAvatar
 
-!!! note warning
+!!! warning "Note"
     This component has been deprecated on SDK Ver12.0.<br>
     As a new feature, [Vket Cloud Settings](../VketCloudSettings/Overview.md) has been added.
 

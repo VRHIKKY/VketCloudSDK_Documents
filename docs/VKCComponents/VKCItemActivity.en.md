@@ -31,7 +31,7 @@ The "Activity" in Vket Cloud is a feature for wrapping models and scripts as a s
 | .json | Designates the json file containing the activity information. |
 | Overrides | Edits the settings in each activity. |
 
-!!! caution "About Scene Preview"
+!!! warning "About Scene Preview"
     When enabling `Scene Preview`, a preview object of the activity will be created in Scene, which position / size / rotation can be altered.<br>
     However, the edits will be **reverted** on build, and Transform values of object with VKC Item Activity will be referred instead.
 

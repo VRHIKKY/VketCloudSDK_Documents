@@ -7,7 +7,7 @@ To install the Vket Cloud SDK, the Unity Package Manager and the Vket Cloud SDK 
 Open a project created using a supported Unity version ([Unity Pre-prep](OperatingEnvironment.md){target=_blank}) or create a new project.
 Select "3D" as the template.
 
-!!! caution "Notes about project names and path (directory) names"
+!!! warning "Notes about project names and path (directory) names"
     If a space is included in the project / project path (directory) name, it may cause build errors and other unexpected issues. <br>
     Also avoid using full-width characters such as CJK characters.
 
@@ -19,7 +19,7 @@ Select "3D" as the template.
 
 ## Step 2. Register Registry information
 
-!!! note caution
+!!! warning "caution"
     On the release of Version 9.3, the SDK installation registry has been changed to the install wizard.<br>
     If you want to install the install wizard on an existing project, you **must** create a new registry by selecting "+", and **do not overwrite** the existing SDK registry.<br>
     After installing the install wizard, proceed to [Installing a specified version / Updating an existing SDK](#installing-a-specified-version-updating-an-existing-sdk).
@@ -101,7 +101,7 @@ If Unity 2022 or later is installed, complete the following settings
 
 ### Setting Standard Shader Quality
 
-!!! caution "Setting Standard Shader Quality"
+!!! warning "Setting Standard Shader Quality"
     On Ver12.3 and later versions, setting the standard shader quality has been added as a required setting.<br>
     If not set the SDK will cause a build error, so make sure to set on install.
 
@@ -135,7 +135,7 @@ Likewise above, check the Configuration in the Project Settings and change the L
 
 ### Setting API compatibility level (Only for Unity 2019.4)
 
-!!! note caution
+!!! warning "caution"
     For Unity 2022 or later, this setting is not required.
     SDK 13.7 and later versions support both Unity 2019 and Unity 2022.
 
@@ -153,7 +153,7 @@ Likewise above, check the Configuration in the Project Settings and change the L
 
 5\. By selecting "Next", the version selection window will appear.<br> The SDK version can be chosen from stable, latest, archive versions.
 
-!!! note caution
+!!! warning "caution"
     The archive versions are deprecated and planned to be unaccessible in the near future.<br>
     Do not use these versions for setting up new world projects.
 
@@ -192,7 +192,7 @@ For a project with an existing SDK, the SDK Version Manager can be used for swit
 
 2\. Select the new version to be installed, and press the "Install" button.
 
-!!! note caution
+!!! warning "caution"
     The archive versions are deprecated and planned to be unaccessible in the near future.<br>
     Do not use these versions for setting up new world projects.
 
@@ -208,15 +208,15 @@ For a project with an existing SDK, the SDK Version Manager can be used for swit
 
 The SDK manual and community discord server can be accessed from this window.
 
-!!! note caution
+!!! warning "caution"
       On updating an existing SDK, Components may be gone missing after the update.<br>
       We strongly recommend to take a backup of the pre-update project by duplicating files.
 
-!!! note caution
+!!! warning "caution"
     If issues such as build errors appear on updating the SDK, please refer to the page below:<br>
     [Version Update Troubleshooting](../troubleshooting/VersionUpdateTroubleshooting.md)
 
-!!! note caution
+!!! warning "caution"
     The version switching methods below remains to be usable, using the version manager is recommended.
 
 ### Version switching via Package Manager
@@ -244,12 +244,12 @@ By editing the version number on the right side of `"com.hikky.VketCloudSDK"`, t
 
 ![SetupSDK_ManifestJson_3](./img/SetupSDK_ManifestJson_3.jpg)
 
-!!! caution "Solution to Vket Cloud SDK not showing on Unity menu"
-      If Vket Cloud SDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
-      One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
-      If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
+!!! warning "Solution to Vket Cloud SDK not showing on Unity menu"
+    If Vket Cloud SDK fails to show on the Unity menu, it may appear by rebooting the editor.<br>
+    One of the reasons may be the lack of essential SDK packages, as the Deeplink package may fail to be imported automatically.<br>
+    If such cases occur, please try a [manual package import](../troubleshooting/InstallingDeeplink.md).<br>
 
-      As the EditorTutorialSystem may also rarely fail to be imported automatically, add the package below following the instructions on [Step 2.](#step-2-register-registry-information) on such occurence.
+    As the EditorTutorialSystem may also rarely fail to be imported automatically, add the package below following the instructions on [Step 2.](#step-2-register-registry-information) on such occurence.
 
 |  item  |  value  |
 | ---- | ---- |

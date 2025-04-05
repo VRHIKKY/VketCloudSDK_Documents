@@ -172,7 +172,7 @@ component VketChan
 
 - [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) * On SDK Ver12.3.4 and later versions
 
-!!! caution "VKC Node Video Trigger in Activity"
+!!! warning "VKC Node Video Trigger in Activity"
     On SDK Ver12.3.4 and later versions, [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) can be included on exporting Activity.<br>
     However, as Autoplay cannot be enabled in Activity, the player must manually click or use the [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) to play the video.
 

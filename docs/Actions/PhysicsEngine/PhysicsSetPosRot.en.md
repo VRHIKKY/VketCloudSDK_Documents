@@ -20,6 +20,6 @@ Changes the rotation in the physics calculation.
 | Target | Please specify the physics object to which the action applies. |
 | Rotation | Please specify the rotation in the world coordinate system. |
 
-!!! Note Info
+!!! info "Note"
     This is only effective for objects where the physics engine is enabled.
     For how to use the physics engine, please refer to [PhysicsEngine](../../WorldMakingGuide/PhysicsEngine.md)

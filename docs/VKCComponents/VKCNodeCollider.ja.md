@@ -33,7 +33,7 @@ VKC Node Colliderとは、Vket Cloud上でコライダーがどのような衝�
 | Reflection Probe | `リフレクションプローブ` | 接触した際にリフレクションプローブを有効にします。 |
 | In View | `描画判定` |　視野に入ったかどうかを判定したい場合に扱います  |
 
-!!! note caution
+!!! warning "caution"
     コライダータイプが`コライダー`でないコライダー(クリック対象、エリア、オクルージョン、リフレクションプローブ、描画判定)はプレイヤーが触れても衝突しません。
 
 ## コライダーターゲット
@@ -44,7 +44,7 @@ VKC Node Colliderとは、Vket Cloud上でコライダーがどのような衝�
 | Avatar Only | `アバターのみ` | アバターだけ衝突判定が有効になります。 |
 | Self Player Only | `プレーヤー自身のみ` | 操作しているプレイヤーのみ衝突判定が有効になります。|
 
-!!! note caution
+!!! warning "caution"
     コライダータイプが`コライダー`である場合のみ、コライダーターゲットの設定が有効になります。
 
 ## 接地処理
@@ -57,7 +57,7 @@ VKC Node Colliderとは、Vket Cloud上でコライダーがどのような衝�
 
 ## コライダーの衝突 / エリア範囲判定について
 
-ワールド内でのコライダーの衝突 / エリア範囲判定は画像オレンジ円のようにプレイヤーの下半身にて判定されます。<br>
+ワールド内でのコライダーの衝突 / エリア範囲判定は、画像のオレンジ球の一番下の地点、プレイヤーの足元の原点位置にて判定されます。<br>
 また、以下のようなコリジョンの可視化は[VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md)から[デバッグモード](../WorldEditingTips/DebugMode.md#f3)を有効にした上でF3キーを押すと切り替えできます。
 
-![HEOCollider_2](img/HEOCollider_2.jpg)
+![HEOCollider_2](img/VKCItemAreaCollider_03.jpg)

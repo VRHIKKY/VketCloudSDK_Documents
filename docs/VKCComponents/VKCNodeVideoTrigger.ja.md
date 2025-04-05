@@ -67,7 +67,7 @@ Thumbnail Toolでは動画再生前のサムネイルとして、サムネイル
 ClipModeはプロジェクトの内部にあるデータを参照します。<br>
 StringModeはURLを指定して参照します。動画ストリーミング等に利用できます。
 
-!!! note caution
+!!! warning "caution"
     StringModeは現在内部開発者向けの機能となっております。<br>
     動画を再生する際はClipModeをご利用ください。
 
@@ -83,10 +83,10 @@ StringModeはURLを指定して参照します。動画ストリーミング等�
 
 ![HEOVideoTrigger_3](img/HEOVideoTrigger_3.jpg)
 
-!!! note caution
+!!! warning "caution"
     動画音声は距離減衰に対応していません。<br>
     代替の実装として、動画から一定距離を離れた際に再生を停止させたい場合は[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)と[StopVideoアクション](../Actions/Others/StopVideo.md)を使用してください。
 
-!!! caution "Activityエクスポート時のVKC Node Video Triggerについて"
+!!! warning "Activityエクスポート時のVKC Node Video Triggerについて"
     SDK Ver12.3.4以降では[VKC Activity Exporter](../SDKTools/VKCActivityExporter.md)にてアクティビティを出力する際、VKC Node Video Triggerをアクティビティに含めてエクスポートすることができるようになりました。<br>
     ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)による再生を行う必要があります。

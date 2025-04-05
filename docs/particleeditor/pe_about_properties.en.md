@@ -147,7 +147,7 @@ Using the particle editor, diverse particle effects can be created by editing th
 | Type | Birth | Emits the sub particle on the main particle's Birth or Death |
 | Probability | 0.00 | Designates the probability of sub particle emitting |
 
-!!! caution "Performance Instability"
+!!! warning "Performance Instability"
     This feature is unstable on the current version's particle editor.<br>
     Creating another particle is recommended for using multiple particles.
 

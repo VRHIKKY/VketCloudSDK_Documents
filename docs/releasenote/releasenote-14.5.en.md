@@ -1,3 +1,13 @@
+# Version 14.5.7
+
+## SDK (Editor Extension Tool for Creating Worlds in Unity)
+
+### Fixed Issues
+
+- In HeliodorLib 15.3, fixed an issue where in-game content was not loaded properly during a local build (Build And Run).
+
+---
+
 # Version 14.5.6
 
 ## SDK (Editor Extension Tool for Creating Worlds in Unity)
