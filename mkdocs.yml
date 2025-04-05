@@ -37,6 +37,9 @@ theme:
   custom_dir: custom_theme
   static_templates:
     - 404.html
+  font:
+    text: Noto Sans JP
+    code: Inconsolata
 
 extra_css:
   - stylesheets/extra.css
