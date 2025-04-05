@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block outdated %}
+  You're not viewing the latest version.
+  <a href="{{ '../' ~ base_url }}"> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+{% endblock %}
+
 {% block extrahead %}
   {{ super() }}
   <meta name="google-site-verification" content="00M2sXmq2-lN8vSLlXsdetq0upC9-Zk9CyvkryyNgkw" />
