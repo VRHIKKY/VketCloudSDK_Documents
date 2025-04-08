@@ -1,4 +1,15 @@
 # SDK Manual Change Log - Ver 15.3
+
+## 2025年4月11日更新
+
+## 2025年4月11日 - 編集されたページ
+
+ - VKCコンポーネント
+     - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCAttributeProperty.html)
+         - URL表記を修正
+
+---
+
 ## 2025年4月4日更新
 
 ## 2025年4月4日 - 追加されたページ
