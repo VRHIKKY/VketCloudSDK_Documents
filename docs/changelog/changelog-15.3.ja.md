@@ -1,4 +1,17 @@
 # SDK Manual Change Log - Ver 15.3
+
+## 2025年4月11日更新
+
+## 2025年4月11日 - 追加されたページ
+
+- SDKツール
+    - [VRMファイルクリエーター](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/SDKTools/VRMFileCreator.html)
+        - VRMファイルクリエーターのページを作成
+        - ツールの使い方を追加
+        - サポートしない機能を追加
+
+---
+
 ## 2025年4月4日更新
 
 ## 2025年4月4日 - 追加されたページ
