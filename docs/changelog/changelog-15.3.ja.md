@@ -1,4 +1,15 @@
 # SDK Manual Change Log - Ver 15.3
+
+## 2025年4月11日更新
+
+## 2025年4月11日 - 編集されたページ
+
+ - 外部API連携
+     - [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/ExternalAPI/BrokerAPI.html)
+         - ブローカーAPIのサンプルコードを修正
+
+---
+
 ## 2025年4月4日更新
 
 ## 2025年4月4日 - 追加されたページ

@@ -1,4 +1,15 @@
 # SDK Manual Change Log - Ver 15.3
+
+## April 11 2025 Update
+
+## April 11 2025 - Edited Page
+
+ - External API Integration
+     - [About Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/ExternalAPI/BrokerAPI.html)
+         - Fixed sample code for Broker API
+
+---
+
 ## April 4 2025 Update
 
 ## April 4 2025 - Added Pages
