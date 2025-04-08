@@ -79,7 +79,6 @@ component BrokerAPI
         switch (clickedNodeName)
         {
             case GET_SWITCH_NAME://Button for calling GET API
-                if(!hsCommonDialogIsOpened())
                 {
                     ComfirmApiAccess();
                 }
