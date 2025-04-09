@@ -31,18 +31,18 @@ A notable feature is that its properties change significantly based on the colli
 The collider type specified in the properties has the following characteristics:
 
 #### 1. **Collider**
-Adds collision detection to nodes, making it possible to detect contact with other nodes or players that also have collision detection.
-It also creates physical collisions, so this type is used for walls that prevent player movement and floors for walking.<br>
+Adds collision detection to nodes, making it possible to detect contact with other nodes or avatars that also have collision detection.
+It also creates physical collisions, so this type is used for walls that prevent avatar movement and floors for walking.<br>
 <br>
-The player's collider collides with the wall's collider, preventing the player from moving forward.
+The avatar's collider collides with the wall's collider, preventing the avatar from moving forward.
 
-![VKCNodeCollider_2](img/VKCNodeCollider_2.jpg)
+![VKCNodeCollider_2](img/VKCNodeCollider_2.gif)
 
 !!! warning "Please use in combination with the Box Collider component"
     Collision detection will not be added when combined with Unity components other than Box Collider, such as Sphere Collider.
 
-!!! note "Players will pass through if set to any other type"
-    Nodes with types other than `Collider` can be moved through by players without stopping when touched.
+!!! note "Avatars will pass through if set to any other type"
+    Nodes with types other than `Collider` can be moved through by avatars without stopping when touched.
 
 #### 2. **Clickable**
 Making it a clickable target enables detection of mouse cursor clicks.
