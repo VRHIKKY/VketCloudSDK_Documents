@@ -79,9 +79,9 @@ As a use case, for example, you can create enemy characters that don't approach 
 
 | Label | Function |
 | ---- | ---- |
-| All | No restrictions on collision detection targets. |
-| Avatar Only | Collision detection is enabled only for avatars. |
-| Self Player Only | Collision detection is enabled only for the player you are controlling. |
+| All | Collision targets are not restricted, collides with all colliders. |
+| Avatar Only | Collision targets are restricted to avatars only. Collides only with avatars, not with cameras, etc. |
+| Self Player Only | Collision targets are restricted to only the avatar controlled by yourself. Does not collide with avatars controlled by other players.  |
 
 !!! warning "caution"
     The collider target setting functions only when the collider type is set to `Collider`.
