@@ -29,7 +29,7 @@ When these are attached in the Inspector view, VKC Node Collider is also automat
 ## Integrating Colliders with Actions
 
 By combining colliders with actions, you can create a variety of mechanisms.<br>
-See [Actions Overview](../Actions/ActionsOverview.md) for details.
+See [Actions Category](../Actions/ActionsOverview.md) for details.
 
 ## Integrating Colliders with Scripts
 By utilizing HeliScript callback functions, you can create complex mechanisms that cannot be achieved with actions alone:

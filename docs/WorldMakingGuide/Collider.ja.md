@@ -15,21 +15,21 @@ Vket Cloud SDKには、以下のコライダー関連コンポーネントがあ
 
 ### 基本コンポーネント
 
-**[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)**-コライダーを表現する基本的なコンポーネントです。UnityのBoxColliderと併用することで例えば壁や床など衝突可能なノードを作成できます。また、他のVKCコンポーネントとの組み合わせで使用することで、さまざまな表現が可能になります。
+**[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)**- コライダーを表現する基本的なコンポーネントです。UnityのBoxColliderと併用することで例えば壁や床など衝突可能なノードを作成できます。また、他のVKCコンポーネントとの組み合わせで使用することで、さまざまな表現が可能になります。
 
 ### 基本コンポーネントと組み合わせて使うもの
-これらをインスペクタービュー上でアタッチすると、VKC Node Colliderも自動で追加されます
+これらをインスペクタービュー上でアタッチすると、VKC Node Colliderも自動で追加されます。
 
-**[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)**-プレイヤーの特定エリアに出入りをトリガーとしたアクションを設定できます。
+**[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)**- プレイヤーの特定エリアに出入りをトリガーとしたアクションを設定できます。
 
-**[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)**-UnityのMesh Colliderと組み合わせて付与することで、メッシュ形状に合わせたコライダーを作成できます。
+**[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)**- UnityのMesh Colliderと組み合わせて付与することで、メッシュ形状に合わせたコライダーを作成できます。
 
 **[VKC Node Cylinder Collider](../VKCComponents/VKCNodeCylinderCollider.md)**- UnityのCapsuleColliderに物理演算を適用する際に使用します。詳細は[物理エンジン](./PhysicsEngine.md)を参照してください。
 
 ## コライダーとActionの連携
 
 コライダーはアクションと組み合わせることで、多彩なギミックを作成できます。<br>
-詳細は[アクションの概要](../Actions/ActionsOverview.md)を参照してください。
+詳細は[アクションの項目](../Actions/ActionsOverview.md)を参照してください。
 
 ## コライダーとスクリプトの連携
 HeliScriptのコールバック関数を活用することで、アクションだけでは実現できない複雑なギミックも作成可能です：
@@ -53,5 +53,5 @@ HeliScriptのコールバック関数を活用することで、アクション�
     プレイヤーは画像のオレンジ球に衝突判定を持ちます。<br>
     また、下記の操作でオレンジ球が可視化されます。  
     1. 予め[VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md)の[デバッグモード](../WorldEditingTips/DebugMode.md#f3)を有効にしておく。  
-    2. ビルド後、ゲーム中にF3キーを押すことで表示されます。  
+    2. ビルド後、ゲーム中にF3キーを押す。
     ![ColliderTips_player_1](./img/ColliderTips_player_1.jpg)
