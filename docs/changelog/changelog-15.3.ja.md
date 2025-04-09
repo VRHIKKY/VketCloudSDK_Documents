@@ -8,6 +8,15 @@
      - [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/ExternalAPI/BrokerAPI.html)
          - ブローカーAPIのサンプルコードを修正
 
+ - VKCコンポーネント
+     - VKC Node     
+         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeCollider.html)
+             - VKC Node Colliderコンポーネントの説明拡充
+
+ - ワールド制作ガイド
+     - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/WorldMakingGuide/Collider.html)
+         - コライダーの使い方についての説明拡充
+
 ---
 
 ## 2025年4月4日更新
