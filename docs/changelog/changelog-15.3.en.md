@@ -1,4 +1,13 @@
 # SDK Manual Change Log - Ver 15.3
+
+## April 11 2025 Update
+
+## April 11 2025 - Edited Page
+
+- VKC Components
+    - [VKC Node Mesh Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/VKCComponents/VKCNodeMeshCollider.html)
+        - Update the description for required components
+
 ## April 4 2025 Update
 
 ## April 4 2025 - Added Pages
