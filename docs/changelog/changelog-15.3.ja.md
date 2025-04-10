@@ -2,7 +2,7 @@
 
 ## 2025年4月04日更新
 
-## 2025年3月04日 - 追加されたページ
+## 2025年4月04日 - 追加されたページ
 
 - ワールド制作ガイド
     - [ActivityCanvasでアニメーション](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/WorldMakingGuide/AnimationWithActivityCanvas.html)

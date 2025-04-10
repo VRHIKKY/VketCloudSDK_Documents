@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 15.3
 
-## April 4 2025 Update
+## April 11 2025 Update
 
-## April 4 2025 - Added Page
+## April 11 2025 - Added Page
 
 - World Making Guide
     - [Animation With ActivityCanvas](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/en/WorldMakingGuide/AnimationWithActivityCanvas.html)
