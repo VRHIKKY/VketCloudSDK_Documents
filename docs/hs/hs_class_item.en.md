@@ -215,7 +215,8 @@ Get the world rotation of Item by quaternion.
 
 `public Vector3 GetWorldRotate()`
 
-Get the world rotation of Item by Vector3 (Euler angles).
+Get the world rotation of Item by Vector3 (Euler angles).<br>
+The values for each axis (x, y, z) are represented in a range from -180 degrees to 180 degrees.
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
