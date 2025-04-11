@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 15.3
 
+## April 18 2025 Update
+
+## April 18 2025 - Edited Page
+
+- HeliScript
+    - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_overview.html)
+        - Revised the explanation of HeliScript.
+
+---
+
 ## April 11 2025 Update
 
 ## April 11 2025 - Edited Page
