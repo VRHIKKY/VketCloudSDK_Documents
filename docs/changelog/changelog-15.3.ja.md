@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 15.3
 
+## 2025年4月18日更新
+
+## 2025年4月18日 - 編集されたページ
+
+- HeliScript
+    - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_overview.html)
+            - HeliScriptの説明を修正しました
+
+---
+
 ## 2025年4月11日更新
 
 ## 2025年4月11日 - 編集されたページ
