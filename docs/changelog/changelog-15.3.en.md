@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 15.3
 
+## April 18 2025 Update
+
+## April 18 2025 - Edited Page
+
+- HeliScript
+    - Statements and flow control
+        - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_statement_control.html)
+            - Added annotation to switch statement
+
+---
+
 ## April 11 2025 Update
 
 ## April 11 2025 - Edited Page

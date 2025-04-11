@@ -1,5 +1,17 @@
 # SDK Manual Change Log - Ver 15.3
 
+## 2025年4月18日更新
+
+## 2025年4月18日 - 編集されたページ
+
+- HeliScript
+    - 文法と制御構文
+        - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_statement_control.html)
+            - switch文に注釈を追記
+
+---
+
+
 ## 2025年4月11日更新
 
 ## 2025年4月11日 - 編集されたページ
