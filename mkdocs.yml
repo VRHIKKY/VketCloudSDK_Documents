@@ -137,6 +137,7 @@ plugins:
             Binary Output Error: バイナリ出力に失敗
             Texture Replacement Issues with ReplaceTexture: ReplaceTextureでテクスチャの差し替えが正常に出来ない
             Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
+            Animation With ActivityCanvas: ActivityCanvasでアニメーション
             Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas: Canvas外をクリック(タップ)したらダイアログを閉じる機能を実装する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
