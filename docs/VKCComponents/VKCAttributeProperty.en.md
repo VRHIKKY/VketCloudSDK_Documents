@@ -141,4 +141,5 @@ As previously mentioned, Key and Value will always be a String. When connecting 
 If SetProperty or GetProperty is done without type casting, null values will be used instead.
 
 ## Related Articles
+
 [How to Use HEOProperty (Vket Cloud Property Function)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
