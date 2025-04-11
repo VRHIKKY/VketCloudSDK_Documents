@@ -4,6 +4,9 @@
 
 ## 2025年4月11日 - 編集されたページ
 
+ - 外部API連携
+     - [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/ExternalAPI/BrokerAPI.html)
+         - ブローカーAPIのサンプルコードを修正
  - VKCコンポーネント
      - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
          - VKCNodeReflectionProbeTypeの説明を追加

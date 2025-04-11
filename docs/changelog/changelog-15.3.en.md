@@ -4,6 +4,9 @@
 
 ## April 11 2025 - Edited Page
 
+ - External API Integration
+     - [About Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/ExternalAPI/BrokerAPI.html)
+         - Fixed sample code for Broker API
  - VKC Components
      - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
          - Added description for VKCNodeReflectionProbeType
