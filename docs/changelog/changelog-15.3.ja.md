@@ -7,6 +7,9 @@
  - 外部API連携
      - [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/ExternalAPI/BrokerAPI.html)
          - ブローカーAPIのサンプルコードを修正
+ - VKCコンポーネント
+     - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
+         - VKCNodeReflectionProbeTypeの説明を追加
 
 ---
 
@@ -22,6 +25,13 @@
 
 
 ---
+
+## 2025年4月11日更新
+
+## 2025年4月11日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [ActivityCanvasでアニメーション](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/WorldMakingGuide/AnimationWithActivityCanvas.html)
 
 ## 2025年3月28日更新
 

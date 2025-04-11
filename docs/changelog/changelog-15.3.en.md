@@ -7,6 +7,9 @@
  - External API Integration
      - [About Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/ExternalAPI/BrokerAPI.html)
          - Fixed sample code for Broker API
+ - VKC Components
+     - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
+         - Added description for VKCNodeReflectionProbeType
 
 ---
 
@@ -21,6 +24,13 @@
    - [Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/en/WorldMakingGuide/CloseCanvas.html)
 
 ---
+
+## April 11 2025 Update
+
+## April 11 2025 - Added Page
+
+- World Making Guide
+    - [Animation With ActivityCanvas](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/en/WorldMakingGuide/AnimationWithActivityCanvas.html)
 
 ## March 28 2025 Update
 
