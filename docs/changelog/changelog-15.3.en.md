@@ -7,6 +7,21 @@
 - VKC Components
     - [VKC Node Mesh Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/VKCComponents/VKCNodeMeshCollider.html)
         - Update the description for required components
+     - VKC Node     
+         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/VKCComponents/VKCNodeCollider.html)
+             - Expanded explanation of the VKC Node Collider component
+     - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
+         - Added description for VKCNodeReflectionProbeType
+   
+ - External API Integration
+     - [About Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/ExternalAPI/BrokerAPI.html)
+         - Fixed sample code for Broker API
+
+ - World Making Guide
+     - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/WorldMakingGuide/Collider.html)
+         - Expansion of the explanation about the use of colliders
+
+---
 
 ## April 4 2025 Update
 
@@ -19,6 +34,13 @@
    - [Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/en/WorldMakingGuide/CloseCanvas.html)
 
 ---
+
+## April 11 2025 Update
+
+## April 11 2025 - Added Page
+
+- World Making Guide
+    - [Animation With ActivityCanvas](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/en/WorldMakingGuide/AnimationWithActivityCanvas.html)
 
 ## March 28 2025 Update
 

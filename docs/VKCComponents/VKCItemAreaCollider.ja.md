@@ -58,7 +58,7 @@ VKC Item Area Colliderをアタッチするオブジェクトには[VKC Node Col
 ワールド内でのコライダーの衝突 / エリア範囲判定は、画像のオレンジ球の一番下の地点、プレイヤーの足元の原点位置にて判定されます。<br>
 また、以下のようなコリジョンの可視化は[VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md)から[デバッグモード](../WorldEditingTips/DebugMode.md#f3)を有効にした上でF3キーを押すと切り替えできます。
 
-![VKCNodeCollider_2](img/VKCItemAreaCollider_03.jpg)
+![VKCItemAreaCollider_03](img/VKCItemAreaCollider_03.jpg)
 
 !!! warning "コライダーが動作しない場合"
     コライダーが地面から少しでも浮いている場合、プレイヤーの足元(原点)にて判定される衝突が動作しません。<br>

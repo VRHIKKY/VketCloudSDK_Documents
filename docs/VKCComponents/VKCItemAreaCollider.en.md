@@ -59,7 +59,7 @@ The collision / area range detection by collider will be done by obtaining the p
 
 Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md#f3-display-collision) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
 
-![VKC Node Collider](img/VKCItemAreaCollider_03.jpg)
+![VKCItemAreaCollider_03](img/VKCItemAreaCollider_03.jpg)
 
 !!! warning "If the collider is not working"
     If the collider is floating even slightly above the ground, collision detection at the player's feet (origin point) will not function.<br>
