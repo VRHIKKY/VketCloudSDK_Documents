@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 15.3
 
+## April 18 2025 Update
+
+## April 18 2025 - Edited Page
+
+- HeliScript
+    - Scopes and definitions
+        - [Scopes and definitions](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_scope_def.html)
+            -  Implemented a comprehensive revision of the page.
+
+---
+
 ## April 11 2025 Update
 
 ## April 11 2025 - Edited Page
