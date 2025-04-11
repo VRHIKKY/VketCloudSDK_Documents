@@ -4,22 +4,22 @@
 
 ## April 11 2025 - Edited Page
 
+- VKC Components
+    - [VKC Node Mesh Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/VKCComponents/VKCNodeMeshCollider.html)
+        - Update the description for required components
+     - VKC Node     
+         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/VKCComponents/VKCNodeCollider.html)
+             - Expanded explanation of the VKC Node Collider component
+     - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
+         - Added description for VKCNodeReflectionProbeType
+   
  - External API Integration
      - [About Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/ExternalAPI/BrokerAPI.html)
          - Fixed sample code for Broker API
 
- - VKC Components
-     - VKC Node     
-         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/VKCComponents/VKCNodeCollider.html)
-             - Expanded explanation of the VKC Node Collider component
-
  - World Making Guide
      - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/WorldMakingGuide/Collider.html)
          - Expansion of the explanation about the use of colliders
-
- - VKC Components
-     - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
-         - Added description for VKCNodeReflectionProbeType
 
 ---
 

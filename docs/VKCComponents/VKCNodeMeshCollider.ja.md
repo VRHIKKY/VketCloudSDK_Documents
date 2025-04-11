@@ -6,7 +6,7 @@ VKC Node Mesh Colliderはワールドのビルド時に3Dモデルのメッシ�
 
 ## 設定手順
 
-1. 本コンポーネントはUnityのMesh Renderer及びMesh Colliderが付いているオブジェクトが対象です。<br>Mesh Colliderを設定したいオブジェクトに対して、Inspector / Add ComponentにてVKC Node Mesh Colliderを選択してコンポーネントをアタッチします。
+1. 本コンポーネントはUnityのMesh Colliderが付いているオブジェクトが対象です。<br>Mesh Colliderを設定したいオブジェクトに対して、Inspector / Add ComponentにてVKC Node Mesh Colliderを選択してコンポーネントをアタッチします。
 
     ![HEOMeshCollider_2](img/HEOMeshCollider_2.jpg)
 
