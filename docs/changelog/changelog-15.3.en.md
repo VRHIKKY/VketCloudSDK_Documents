@@ -17,6 +17,10 @@
      - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/WorldMakingGuide/Collider.html)
          - Expansion of the explanation about the use of colliders
 
+ - VKC Components
+     - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
+         - Added description for VKCNodeReflectionProbeType
+
 ---
 
 ## April 4 2025 Update
@@ -30,6 +34,13 @@
    - [Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/en/WorldMakingGuide/CloseCanvas.html)
 
 ---
+
+## April 11 2025 Update
+
+## April 11 2025 - Added Page
+
+- World Making Guide
+    - [Animation With ActivityCanvas](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/en/WorldMakingGuide/AnimationWithActivityCanvas.html)
 
 ## March 28 2025 Update
 

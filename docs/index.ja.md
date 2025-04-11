@@ -17,7 +17,7 @@ SDKを利用するには、`各種アカウントへの登録`と`指定バー�
 
 4. **[SDKログイン](AboutVketCloudSDK/LoginSDK.md)**
 
-とりあえずワールドに入ってみたい・どんなものが作れるか知りたい方は[My Vket](https://vket.com/){target=_blank}をチェックしましょう！
+とりあえずワールドに入ってみたい・どんなものが作れるか知りたい方は[Vket Cloud公式サイトのワールド一覧](https://cloud.vket.com/search/worlds){target=_blank}をチェックしましょう！
 
 !!! info "SDKバージョンについて"
     現在のVket Cloud SDKの最新版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/latest/index.html)ご参照ください。<br>
