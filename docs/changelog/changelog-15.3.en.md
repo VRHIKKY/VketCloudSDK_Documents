@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 15.3
 
+## April 18 2025 Update
+
+## April 18 2025 - Edited Page
+
+- VKC Components
+    - VKC Setting
+        - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VketCloudSettings/AvatarSettings.html)
+            - Added annotation to 'CreateAvatarFile'
+
+---
+
 ## April 11 2025 Update
 
 ## April 11 2025 - Edited Page
