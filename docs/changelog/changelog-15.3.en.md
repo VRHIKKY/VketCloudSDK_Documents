@@ -4,6 +4,9 @@
 
 ## April 18 2025 - Edited Page
 
+- About Vket Cloud SDK
+    - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
+        - Correct the Unity version notation in the notes section
 - HeliScript
     - Built-in Classes And Functions
         - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_class_item.html)

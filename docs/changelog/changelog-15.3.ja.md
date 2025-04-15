@@ -4,6 +4,9 @@
 
 ## 2025年4月18日 - 編集されたページ
 
+- Vket Cloud SDKについて
+    - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
+        - 注記部分のUnityバージョンの表記を修正
 - HeliScript
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html)

@@ -12,4 +12,4 @@
 
 !!! warning "Note to macOS users"
     If you are using a macOS environment having Safari, Unity 2019, and Unity 2022 installed, this may cause an issue disabling login to Vket Cloud SDK. <br>
-    In such case, please uninstall Unity 2022 from the Unity Hub, restart the OS, and retry login.
+    In such case, please uninstall Unity 2022 or 2019 that you are not using for your current Vket Cloud SDK project from the Unity Hub, restart the OS, and retry login.
