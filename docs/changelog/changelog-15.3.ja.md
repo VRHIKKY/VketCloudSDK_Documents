@@ -8,6 +8,9 @@
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html)
             - GetWorldRotateの説明に軸範囲詳細追記
+    - 組み込み関数
+        - [数学](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_math.html)
+            - 逆三角関数の説明を修正しました
 
 ---
 
