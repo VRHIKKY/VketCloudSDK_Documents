@@ -5,6 +5,9 @@
 ## April 18 2025 - Edited Page
 
 - HeliScript
+    - Built-in Classes And Functions
+        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_class_item.html)
+            - "Add detailed description of axis range to the GetWorldRotate explanation
     - Built-in Functions
         - [Math](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_system_function_math.html)
             - Revised the explanation of inverse trigonometric functions
