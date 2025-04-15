@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 15.3
 
+## April 18 2025 Update
+
+## April 18 2025 - Edited Page
+
+- HeliScript
+    - Built-in Functions
+        - [Math](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_system_function_math.html)
+            - Revised the explanation of inverse trigonometric functions
+
+---
+
 ## April 11 2025 Update
 
 ## April 11 2025 - Edited Page
