@@ -11,6 +11,9 @@
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VketCloudSettings/AvatarSettings.html)
             - 'CreateAvatarFile' に注釈を追記しました
+    - VKC Attribute
+        - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCAttributeProperty.html)
+            - URL表記を修正
 - HeliScript
     - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_overview.html)
             - HeliScriptの説明を修正しました
@@ -53,7 +56,6 @@
          - コライダーの使い方についての説明拡充
 
 ---
-
 
 ## 2025年4月4日更新
 

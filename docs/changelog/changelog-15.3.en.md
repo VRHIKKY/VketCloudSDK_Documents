@@ -11,6 +11,9 @@
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VketCloudSettings/AvatarSettings.html)
             - Added annotation to 'CreateAvatarFile'
+    - VKC Attribute
+        - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCAttributeProperty.html)
+            - Fixed URL notation
 - HeliScript
     - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_overview.html)
         - Revised the explanation of HeliScript

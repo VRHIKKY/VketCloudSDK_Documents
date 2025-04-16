@@ -145,4 +145,5 @@ HeliScript上で対象となるアイテムを間違えると、上手く動作�
 型変換を行わずにSetPropertyやGetPropertyした場合、nullとなります。
 
 ##　関連ページ
-    - [HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
+
+[HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
