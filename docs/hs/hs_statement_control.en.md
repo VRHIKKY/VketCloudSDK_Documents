@@ -135,6 +135,52 @@ switch (id) {
 }
 ```
 
+??? warning "In functions with a return value, you must return outside the scope of the switch statement"
+    ```
+    string GetStatus(int status){
+        switch (status)
+        {
+            case 0:
+                return "off";
+            default:
+                return "on";
+        }
+        return "on"; // This statement is required even if there is a default clause
+    }
+    ```
+
+??? warning "Constants from other classes cannot be used as branch conditions"
+    Constants defined in the global scope or within the same class can be used.
+    ```
+    const int GlobalConstant = 0;
+
+    class ClassConstant
+    {
+        public const int Value = 1;
+    }
+
+    class NewComponent
+    {
+        const int MyConstant = 2;
+
+        public NewComponent()
+        {
+            int id = 2;
+            ClassConstant OtherClassConstant = new ClassConstant();
+
+            switch (id)
+            {
+                case GlobalConstant: // OK
+                    break;
+                case OtherClassConstant.Value: //NG: Compilation error will occur
+                    break;
+                case MyConstant: // OK
+                    break;
+            }
+        }
+    }
+    ```
+
 ## { } - Block-Based Scope
 Within a method, *{ }* can be used to define scope.
 
