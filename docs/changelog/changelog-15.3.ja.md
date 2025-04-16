@@ -4,6 +4,10 @@
 
 ## 2025年4月18日 - 編集されたページ
 
+- VKCコンポーネント
+    - VKC Setting
+        - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VketCloudSettings/AvatarSettings.html)
+            - 'CreateAvatarFile' に注釈を追記しました
 - HeliScript
     - 文法と制御構文
         - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_statement_control.html)

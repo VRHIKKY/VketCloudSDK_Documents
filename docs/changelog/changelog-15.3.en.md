@@ -4,6 +4,10 @@
 
 ## April 18 2025 - Edited Page
 
+- VKC Components
+    - VKC Setting
+        - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VketCloudSettings/AvatarSettings.html)
+            - Added annotation to 'CreateAvatarFile'
 - HeliScript
     - Statements and flow control
         - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_statement_control.html)
