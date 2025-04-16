@@ -4,9 +4,56 @@
 
 ## April 18 2025 - Edited Page
 
- - VKC Components
-     - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCAttributeProperty.html)
-         - Fixed URL notation
+- About Vket Cloud SDK
+    - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
+        - Correct the Unity version notation in the notes section
+- VKC Components
+    - VKC Setting
+        - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VketCloudSettings/AvatarSettings.html)
+            - Added annotation to 'CreateAvatarFile'
+    - VKC Attribute
+        - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCAttributeProperty.html)
+            - Fixed URL notation
+- HeliScript
+    - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_overview.html)
+        - Revised the explanation of HeliScript
+    - Statements and flow control
+        - [Scopes and definitions](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_scope_def.html)
+            -  Implemented a comprehensive revision of the page
+        - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_statement_control.html)
+            - Added annotation to switch statement
+    - Built-in Classes And Functions
+        - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_class_item.html)
+            - "Add detailed description of axis range to the GetWorldRotate explanation
+    - Built-in Functions
+        - [Math](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_system_function_math.html)
+            - Revised the explanation of inverse trigonometric functions
+    - Built-in Types
+        - [Delegate](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_delegate.html)
+            - Added annotations to the delegate.
+
+---
+
+## April 11 2025 Update
+
+## April 11 2025 - Edited Page
+
+- VKC Components
+    - [VKC Node Mesh Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/VKCComponents/VKCNodeMeshCollider.html)
+        - Update the description for required components
+     - VKC Node     
+         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/VKCComponents/VKCNodeCollider.html)
+             - Expanded explanation of the VKC Node Collider component
+     - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
+         - Added description for VKCNodeReflectionProbeType
+   
+ - External API Integration
+     - [About Broker API](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/ExternalAPI/BrokerAPI.html)
+         - Fixed sample code for Broker API
+
+ - World Making Guide
+     - [How to use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/WorldMakingGuide/Collider.html)
+         - Expansion of the explanation about the use of colliders
 
 ---
 
@@ -21,6 +68,13 @@
    - [Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas](https://vrhikky.github.ioVketCloudSDK_Documents/15.3/en/WorldMakingGuide/CloseCanvas.html)
 
 ---
+
+## April 11 2025 Update
+
+## April 11 2025 - Added Page
+
+- World Making Guide
+    - [Animation With ActivityCanvas](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/en/WorldMakingGuide/AnimationWithActivityCanvas.html)
 
 ## March 28 2025 Update
 

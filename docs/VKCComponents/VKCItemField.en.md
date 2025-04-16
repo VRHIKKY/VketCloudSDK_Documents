@@ -87,7 +87,7 @@ VketCloud allows objects to be loaded when entering a specific area after enteri
 ---
 
 ### Reference
-[DoorOpensAfterLoad](../WorldMakingGuide/DoorOpensAfterLoad.html)
+[DoorOpensAfterLoad](../WorldMakingGuide/DoorOpensAfterLoad.md)
 
 ## Advanced Options
 

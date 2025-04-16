@@ -4,9 +4,56 @@
 
 ## 2025年4月18日 - 編集されたページ
 
- - VKCコンポーネント
-     - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCAttributeProperty.html)
-         - URL表記を修正
+- Vket Cloud SDKについて
+    - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
+        - 注記部分のUnityバージョンの表記を修正
+- VKCコンポーネント
+    - VKC Setting
+        - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VketCloudSettings/AvatarSettings.html)
+            - 'CreateAvatarFile' に注釈を追記しました
+    - VKC Attribute
+        - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCAttributeProperty.html)
+            - URL表記を修正
+- HeliScript
+    - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_overview.html)
+            - HeliScriptの説明を修正しました
+    - 文法と制御構文
+        - [スコープ・定義](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_scope_def.html)
+            - ページの全体的改訂を実施いたしました
+        - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_statement_control.html)
+            - switch文に注釈を追記
+    - 組み込みクラス・関数
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html)
+            - GetWorldRotateの説明に軸範囲詳細追記
+    - 組み込み関数
+        - [数学](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_math.html)
+            - 逆三角関数の説明を修正しました
+    - 組み込み型
+        - [デリゲート(Delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_delegate.html)
+            - デリゲートに注釈を追記しました
+
+---
+
+## 2025年4月11日更新
+
+## 2025年4月11日 - 編集されたページ
+
+- VKCコンポーネント
+    - [VKC Node Mesh Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeMeshCollider.html)
+        - 必須のコンポーネントの記載を修正
+     - VKC Node     
+         - [VKC Node Collider](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeCollider.html)
+             - VKC Node Colliderコンポーネントの説明拡充
+     - [VKCNodeReflectionProbeType](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCNodeReflectionProbeType.html)
+         - VKCNodeReflectionProbeTypeの説明を追加
+
+ - 外部API連携
+     - [ブローカーAPIについて](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/ExternalAPI/BrokerAPI.html)
+         - ブローカーAPIのサンプルコードを修正
+
+ - ワールド制作ガイド
+     - [コライダーの使い方 / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/WorldMakingGuide/Collider.html)
+         - コライダーの使い方についての説明拡充
 
 ---
 
@@ -22,6 +69,13 @@
 
 
 ---
+
+## 2025年4月11日更新
+
+## 2025年4月11日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [ActivityCanvasでアニメーション](https://vrhikky.github.io/VketCloudSDK_Documents/15.2/WorldMakingGuide/AnimationWithActivityCanvas.html)
 
 ## 2025年3月28日更新
 
