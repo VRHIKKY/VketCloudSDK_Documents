@@ -4,6 +4,9 @@
 
 ## April 18 2025 - Edited Page
 
+- About Vket Cloud SDK
+    - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
+        - Correct the Unity version notation in the notes section
 - VKC Components
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VketCloudSettings/AvatarSettings.html)
