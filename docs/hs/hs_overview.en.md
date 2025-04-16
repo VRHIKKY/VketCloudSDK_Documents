@@ -1,6 +1,6 @@
 # HeliScript - Overview
 
-Vket Cloud allows programming using the engine's own script called HeliScript. <br>
+Vket Cloud allows programming using the engine's own programing language called HeliScript. <br>
 Using HeliScript, you can implement more complex gimmicks and behaviors compared to using [Actions](../Actions/ActionsOverview.md).
 
 You can learn about the syntax of HeliScript by reading it in order starting from [Built-in types](./hs_var.md). <br>

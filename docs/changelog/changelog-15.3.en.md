@@ -4,16 +4,16 @@
 
 ## April 18 2025 - Edited Page
 
-- HeliScript
-    - Scopes and definitions
-        - [Scopes and definitions](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_scope_def.html)
-            -  Implemented a comprehensive revision of the page.
 - VKC Components
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VketCloudSettings/AvatarSettings.html)
             - Added annotation to 'CreateAvatarFile'
 - HeliScript
+    - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_overview.html)
+        - Revised the explanation of HeliScript
     - Statements and flow control
+        - [Scopes and definitions](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_scope_def.html)
+            -  Implemented a comprehensive revision of the page
         - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_statement_control.html)
             - Added annotation to switch statement
     - Built-in Classes And Functions
