@@ -5,6 +5,9 @@
 ## April 18 2025 - Edited Page
 
 - HeliScript
+    - Statements and flow control
+        - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_statement_control.html)
+            - Added annotation to switch statement
     - Built-in Classes And Functions
         - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_class_item.html)
             - "Add detailed description of axis range to the GetWorldRotate explanation

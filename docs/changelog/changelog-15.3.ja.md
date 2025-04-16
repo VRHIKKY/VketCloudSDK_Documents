@@ -5,6 +5,9 @@
 ## 2025年4月18日 - 編集されたページ
 
 - HeliScript
+    - 文法と制御構文
+        - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_statement_control.html)
+            - switch文に注釈を追記
     - 組み込みクラス・関数
         - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html)
             - GetWorldRotateの説明に軸範囲詳細追記
