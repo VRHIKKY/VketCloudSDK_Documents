@@ -22,6 +22,9 @@
     - Built-in Functions
         - [Math](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_system_function_math.html)
             - Revised the explanation of inverse trigonometric functions
+    - Built-in Types
+        - [Delegate](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_delegate.html)
+            - Added annotations to the delegate.
 
 ---
 

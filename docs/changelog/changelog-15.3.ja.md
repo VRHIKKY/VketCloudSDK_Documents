@@ -4,8 +4,6 @@
 
 ## 2025年4月18日 - 編集されたページ
 
-- HeliScript
-
 - VKCコンポーネント
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VketCloudSettings/AvatarSettings.html)
@@ -24,6 +22,9 @@
     - 組み込み関数
         - [数学](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_math.html)
             - 逆三角関数の説明を修正しました
+    - 組み込み型
+        - [デリゲート(Delegate)](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_delegate.html)
+            - デリゲートに注釈を追記しました
 
 ---
 
