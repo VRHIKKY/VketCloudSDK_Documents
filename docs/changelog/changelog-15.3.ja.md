@@ -5,8 +5,25 @@
 ## 2025年4月18日 - 編集されたページ
 
 - HeliScript
+
+- VKCコンポーネント
+    - VKC Setting
+        - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VketCloudSettings/AvatarSettings.html)
+            - 'CreateAvatarFile' に注釈を追記しました
+- HeliScript
     - [HeliScript概要](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_overview.html)
             - HeliScriptの説明を修正しました
+    - 文法と制御構文
+        - [スコープ・定義](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_scope_def.html)
+            - ページの全体的改訂を実施いたしました
+        - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_statement_control.html)
+            - switch文に注釈を追記
+    - 組み込みクラス・関数
+        - [Itemクラス](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html)
+            - GetWorldRotateの説明に軸範囲詳細追記
+    - 組み込み関数
+        - [数学](https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_system_function_math.html)
+            - 逆三角関数の説明を修正しました
 
 ---
 

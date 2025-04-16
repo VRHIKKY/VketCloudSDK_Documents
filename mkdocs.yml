@@ -263,7 +263,7 @@ plugins:
             HeliScript - Casting: HeliScriptキャスト
             HeliScript - Commenting: HeliScriptコメント
             Statements and flow control: 文法と制御構文
-            Declarations and definitions: 定義・宣言
+            Scopes and definitions: スコープ・定義
             Control Statement: 制御構文
             Reference (ref): 参照(ref)
             Constant Variable (const): 定数(const)
@@ -581,7 +581,7 @@ nav:
         - Cookie: hs/hs_system_function_cookie.md
         - Raycast: hs/hs_system_function_raycast.md
     - Statements and flow control:
-        - Declarations and definitions: hs/hs_statement_def.md
+        - Scopes and definitions: hs/hs_scope_def.md
         - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
     - Tips/HeliScript Guide:
