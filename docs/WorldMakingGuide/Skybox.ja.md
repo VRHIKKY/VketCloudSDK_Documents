@@ -12,6 +12,20 @@ Vket Cloud SDKでは、UnityのSkyboxを出力することは出来ません。�
     Ver12.3にて、Skybox及びBackground Textureがシーンに簡単に追加できるクイックメニューが追加されました。<br>
     詳しくは[Vket Cloudオブジェクト追加のためのクイックメニュー](../WorldEditingTips/QuickMenu.md)をご参照ください。
 
+### クイックメニューから追加する方法
+
+1. Hierarchy上で右クリックし、「VketCloudSDK > Environment > Create VKC Skybox」を選択します。
+
+![Skybox_6](img/Skybox_6.jpg)
+
+2. 「VKC Skybox」という名前でスカイボックスが生成されます。
+
+![Skybox_7](img/Skybox_7.jpg)
+
+---
+
+### Tutorialから追加する方法
+
 1. Vket Cloud SDKメニュー > Tutorials > Tutorial -Basic-を選択してチュートリアルシーン（Basic）をインストールすると、チュートリアルシーンと使用されているアセットがダウンロードされます。
     ![Skybox_2](img/Skybox_2.jpg)
 
