@@ -6,7 +6,7 @@
 
 - About Vket Cloud SDK
     - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
-        - Correct the Unity version notation in the notes section
+        - Correct the Unity version notation in the notes section, Added a note regarding issues with the Apple Silicon version of Unity.
 - VKC Components
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VketCloudSettings/AvatarSettings.html)
