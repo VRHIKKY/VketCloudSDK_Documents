@@ -15,7 +15,7 @@ Assertion関数は、条件が「真(true)」であることを確認するた�
 
 ## 実装例
 
-以下は、カスタムAssertion関数の実装例です。このコードを[グローバルスコープ]((../hs/hs_scope_def.md))でファイルに追加してください：
+以下は、カスタムAssertion関数の実装例です。このコードを[グローバルスコープ](../hs/hs_scope_def.md)でファイルに追加してください：
 
 ```
 void chsSystemAssert(bool condition, string errorMessage)
