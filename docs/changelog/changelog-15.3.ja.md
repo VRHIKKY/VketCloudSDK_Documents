@@ -2,6 +2,12 @@
 
 ## 2025年4月18日更新
 
+## 2025年4月18日 - 追加されたページ
+
+ - HeliScript
+     - Tips/HeliScriptガイド
+         - [Assertionを使ったスクリプトエラーチェック](../hs/hs_assertion_function.md)
+
 ## 2025年4月18日 - 編集されたページ
 
 - Vket Cloud SDKについて

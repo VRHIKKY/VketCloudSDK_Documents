@@ -2,6 +2,12 @@
 
 ## April 18 2025 Update
 
+## April 18 2025 - Added Pages
+
+ - HeliScript
+     - Tips/HeliScript Guide
+         - [Script Error Checking with Assertions](../hs/hs_assertion_function.md)
+
 ## April 18 2025 - Edited Page
 
 - About Vket Cloud SDK
