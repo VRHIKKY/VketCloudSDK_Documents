@@ -8,7 +8,7 @@
      - Tips/HeliScript Guide
          - [Script Error Checking with Assertions](../hs/hs_assertion_function.md)
  - SDK Tools
-     - [VRM File Creator](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/SDKTools/VRMFileCreator.html)
+     - [VRM File Creator](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/SDKTools/VRMFileCreator.html)
          - Created a page for the VRM File Creator
          - Added instructions on how to use the tool
          - Added unsupported features
@@ -16,17 +16,17 @@
 ## April 18 2025 - Edited Page
 
 - About Vket Cloud SDK
-    - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
+    - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/latest/AboutVketCloudSDK/LoginSDK.html)
         - Correct the Unity version notation in the notes section, Added a note regarding issues with the Apple Silicon version of Unity.
 - World Making Guide
-    - [Setting up a Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/WorldMakingGuide/Skybox.html)
+    - [Setting up a Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/Skybox.html)
         - Added description of how to set up a Skybox from the Quick Menu
 - VKC Components
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/VketCloudSettings/AvatarSettings.html)
             - Added annotation to 'CreateAvatarFile'
     - VKC Attribute
-        - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/VKCComponents/VKCAttributeProperty.html)
+        - [VKC Attribute Property](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCAttributeProperty.html)
             - Fixed URL notation
 - HeliScript
     - [HeliScript - Overview](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/hs/hs_overview.html)
