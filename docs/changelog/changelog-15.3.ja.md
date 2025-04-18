@@ -2,6 +2,14 @@
 
 ## 2025年4月18日更新
 
+## 2025年4月18日 - 追加されたページ
+
+- SDKツール
+    - [VRMファイルクリエーター](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/SDKTools/VRMFileCreator.html)
+        - VRMファイルクリエーターのページを作成
+        - ツールの使い方を追加
+        - サポートしない機能を追加
+
 ## 2025年4月18日 - 編集されたページ
 
 - Vket Cloud SDKについて
