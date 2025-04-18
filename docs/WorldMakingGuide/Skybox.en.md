@@ -12,6 +12,20 @@ While an object with reversed normal is usually created by using Blender and oth
     On Ver12.3, a new quick menu feature has been added, which includes easier Skybox and Background Texture setup. <br>
     For details, refer to [Quick Menu for adding Vket Cloud objects](../WorldEditingTips/QuickMenu.md).
 
+### How to setup a skybox from the Quick Menu
+
+1. Right-click in the Hierarchy window and select "VketCloudSDK > Environment > Create VKC Skybox".
+
+![Skybox_6](img/Skybox_6.jpg)
+
+2. A skybox named "VKC Skybox" will be generated.
+
+![Skybox_7](img/Skybox_7.jpg)
+
+---
+
+### How to setup a skybox from tutorial menu
+
 1. Select the tutorial scene (Basic) in the Vket Cloud SDK menu > Tutorials > Tutorial -Basic-, which will download the tutorial scene data and related assets.
     ![Skybox_2](img/Skybox_2.jpg)
 

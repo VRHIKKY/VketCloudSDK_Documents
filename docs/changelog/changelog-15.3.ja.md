@@ -7,6 +7,9 @@
 - Vket Cloud SDKについて
     - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
         - 注記部分のUnityバージョンの表記を修正
+- ワールド制作ガイド
+    - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/WorldMakingGuide/Skybox.html)
+        - クイックメニューからスカイボックスを設定する方法を追記
 - VKCコンポーネント
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VketCloudSettings/AvatarSettings.html)
