@@ -14,7 +14,7 @@
 
 - About Vket Cloud SDK
     - [Login to SDK](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
-        - Correct the Unity version notation in the notes section
+        - Correct the Unity version notation in the notes section, Added a note regarding issues with the Apple Silicon version of Unity.
 - World Making Guide
     - [Setting up a Skybox](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/WorldMakingGuide/Skybox.html)
         - Added description of how to set up a Skybox from the Quick Menu
