@@ -6,7 +6,7 @@ VKC Node Mesh Collider will generate a collider on build based on the 3D model's
 
 ## How to Use
 
-1. This component is intended to use on an object with Unity Mesh Renderer / Mesh Collider components.<br>To use, select the object and add a new VKC Node Mesh Collider component in the Inspector / Add Component.
+1. This component is intended to use on an object with Unity Mesh Collider components.<br>To use, select the object and add a new VKC Node Mesh Collider component in the Inspector / Add Component.
 
     ![HEOMeshCollider_2](img/HEOMeshCollider_2.jpg)
 

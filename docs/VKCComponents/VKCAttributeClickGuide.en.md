@@ -10,7 +10,7 @@ Selecting `OFF` will **delete** the generated gameobjects.
 When activating `VKC Attribute Click Guide`, the `[objectname_clickArea]` gameobject (henceforth referred as `clickArea`) will be generated as a child object.<br>
 Also, `[objectname_clickArea]` (henceforth referred as `clickguide`) will be generated outside the `World` object.
 
-![HEOClickGuide_2](./img/VKCAttributeClickGuide_.jpg)
+![HEOClickGuide_2](./img/VKCAttributeClickGuide_2.jpg)
 
 The `clickArea` gameobject controls the show/hide state of the `clickguide` gameobject, using the [VKC Item Area Collider](./VKCItemAreaCollider.md) and [Show/HideItem](../Actions/Item/ShowHideItem.md).
 
