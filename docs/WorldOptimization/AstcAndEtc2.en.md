@@ -14,7 +14,7 @@ The texture compression formats ASTC and ETC2 are supported depending on the dev
 
 The area within the HEO files located under `release/data/Field/`.
 
-!!! info How the generated `tex_xxx` folders are used
+!!! info "How the generated `tex_xxx` folders are used"
     The `.heo` file retrieves the model's polygon data, and **depending on the compression format supported by each device, either `tex_astc` or `tex_etc` is selected**.
 
 ## Differences Before and After Applying

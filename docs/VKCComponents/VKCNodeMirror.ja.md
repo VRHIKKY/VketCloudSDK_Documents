@@ -83,7 +83,7 @@ VKC Node MirrorをアタッチしたオブジェクトはVKC Node Mirrorに映�
 
 ![HEOMirror_13](img/HEOMirror_13.jpg)
 
-!!! caution "Mirrorを設置した際の負荷について"
+!!! warning "Mirrorを設置した際の負荷について"
     スマートフォンにて鏡を多重に設置する・鏡の視界内で動画の再生を始めるなどを行うと、動作が不安定になる可能性があります。
     鏡の設置の際は負荷についてご留意ください。
 

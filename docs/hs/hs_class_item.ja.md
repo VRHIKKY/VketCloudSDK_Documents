@@ -39,6 +39,20 @@ Item myitem = hsItemGetSelf();
 
 グローバル関数。コンポーネントのコンストラクタや、Update(), OnClickNode() 等のメソッド内から呼び出すことで、コンポーネント自身が所属しているItemインスタンスを取得します。
 
+### hsItemCreateClone
+
+`Item hsItemCreateClone(Item Origin, string Name = "")`
+
+グローバル関数。指定したアイテムのクローンを同じ場所に作成します。クローン可能なアイテムタイプは`object`です。  
+Originにはオリジナルのアイテムオブジェクトを渡します。  
+Nameにはクローンアイテムに設定したいアイテム名を任意で渡します。指定が無い場合は自動的に名前が付けられます。
+
+### hsItemDestroyClone
+
+`void hsItemDestroyClone(Item item)`
+
+グローバル関数。指定したクローンアイテムを削除します。クローン以外のアイテムを削除することはできません。
+
 ***
 
 ## メソッド
@@ -201,7 +215,8 @@ Itemのワールド回転をQuaternionとして取得します。
 
 `public Vector3 GetWorldRotate()`
 
-Itemのワールド回転をVector3（オイラー角）として取得します。
+Itemのワールド回転をVector3（オイラー角）として取得します。<br>
+取得される各軸（x, y, z）の値は、-180度から180度の範囲で表されます。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -762,6 +777,8 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 
 プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
 
+プロパティの変更が行われると、コールバックメソッドの OnChangedProperty() が呼び出されます。
+
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
@@ -773,6 +790,26 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPropertyWithoutNotify
+
+`public bool SetPropertyWithoutNotify(string Key, string Value)`
+
+プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
+
+SetProperty() と同等の機能を持つメソッドですが、SetPropertyWithoutNotify() でプロパティを変更した場合、コールバックメソッドの OnChangedProperty() が呼び出されません。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetProperty
 
@@ -883,3 +920,29 @@ overrides設定を取得します。
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetVolume
+
+`public void SetVolume(float Volume)`
+
+音量を設定します
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### GetVolume
+
+`public float GetVolume()`
+
+SetVolume()で設定した音量を取得します
+初期値は0.2です
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### IsCollisionDetection
+
+`public bool IsCollisionDetection()`
+
+アイテム単位で衝突判定が有効かどうかを取得します。  
+trueの場合、レイとItemの当たり判定を行う関数 hsItemRaycast() の対象になります。

@@ -144,6 +144,6 @@ Scene Previewを有効にすると出現するスライダーをドラッグす�
 
 ![VKCItemObject_7](img/VKCItemObject_7.jpg)
 
-!!! note caution
+!!! warning "caution"
     以前のバージョンにて作成されたheoファイルのプレビューを有効にした際に、該当のモデルが正常に表示されない場合があります。<br>
     恐れ入りますが、表示不具合が発生した際はheoファイルの再作成をお試しください。

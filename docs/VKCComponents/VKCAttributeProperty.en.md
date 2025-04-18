@@ -130,7 +130,7 @@ Property can be used on HeliScript by using the 3 functions above.
 Each Item can have different properties defined.<br>
 If the Item name is wrong on reference, this may lead to unintended behaviors.
 
-!!! note warning
+!!! warning "Note"
     Update: On SDK version 12.x and later, SetProperty will add a new property if it does not exist.<br>
     On SDK Ver9.11, when trying to run SetProperty without a target property, unexpected behavior may occur without error notices.
 
@@ -141,4 +141,5 @@ As previously mentioned, Key and Value will always be a String. When connecting 
 If SetProperty or GetProperty is done without type casting, null values will be used instead.
 
 ## Related Articles
+
 [How to Use HEOProperty (Vket Cloud Property Function)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)

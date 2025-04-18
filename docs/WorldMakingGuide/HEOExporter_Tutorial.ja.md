@@ -30,7 +30,7 @@ HierarchyでVketCloudSampleオブジェクトを選択した状態で、ウィ�
 
 テクスチャファイルに問題なければエクスポートはひとまず成功です。この後、VketCloudで読み込ませる場合は、出力されたファイル・フォルダを一式コピーします。
 
-!!! note tip
+!!! tip "note"
     .heoとして吐き出したオブジェクトは、VKC Item ObjectからセットすることでBuildAndRunの出力に含めることができます。VKC Item Objectの使い方は[こちら](../VKCComponents/VKCItemObject.md)をご覧ください。
 
 このHEOファイルをVketCloudで読み込んで表示したサンプルは以下のものになります。

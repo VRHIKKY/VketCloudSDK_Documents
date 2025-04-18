@@ -16,7 +16,7 @@ SDK9以降で登場したVKC Attribute Propertyを使うことで、Vket Cloud�
 
 ![VKCAttributeProperty_2](./img/VKCAttributeProperty_2.jpg)
 
-[VKC Item Field](VKCItemField.md)、 [VKC Item Object](VKCItemObject.md)、 [VKC Item Activity](VKCItemActivity.md)など、ビルド時にアイテムとなるオブジェクトに対しVKC Attribute Propertyをアタッチします。
+[VKC Item Field](../VKCComponents/VKCItemField.md)、 [VKC Item Object](../VKCComponents/VKCItemObject.md)、 [VKC Item Activity](../VKCComponents/VKCItemActivity.md)など、ビルド時にアイテムとなるオブジェクトに対しVKC Attribute Propertyをアタッチします。
 
 ### 2. VKC Attribute PropertyにKeyとValueを入力
 
@@ -228,7 +228,7 @@ component exampleC{
 アイテムごとに異なるプロパティを設定することが可能です。<br>  
 HeliScript上で対象となるアイテムを間違えると、上手く動作しない場合があるので、気を付けましょう。
 
-!!! note warning
+!!! warning "Note"
     更新：SDK12.x及び以降のバージョンでは、プロパティが存在しない際にSetPropertyを行った場合は新たにプロパティを追加するように変更されました。<br>
     SDK9.11現在、対象となるプロパティが存在しないのにSetPropertyを行おうとした場合、エラー文も出ずに他のHeliScriptの動作に影響を及ぼす場合があります。
 

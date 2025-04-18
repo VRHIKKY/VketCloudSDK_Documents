@@ -24,7 +24,7 @@ ActivityScene.json(アクティビティフォルダのjson)で定義されるCo
 ### ① まずComponentBを持つアイテムBを取得しておく
 サブシーンのものでも、ComponentでなくItemであればhsItemGetで参照をとれる
 
-!!! info hsItemGet でサブシーンのItemを取得する
+!!! info "hsItemGet でサブシーンのItemを取得する"
     hsItemGet("ActivityItem/ItemB") のように、(アクティビティタイプのアイテム名)/(サブシーン内の指定したい相手名)と階層パスで取得する。 これはアクティビティタイプのアイテムがサブシーンをもっているため。
 
 ### ② 取得したアイテムBを使って、直接メソッドを実行

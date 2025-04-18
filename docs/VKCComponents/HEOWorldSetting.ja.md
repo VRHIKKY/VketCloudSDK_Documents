@@ -1,6 +1,6 @@
 # HEOWorldSetting
 
-!!! note warning
+!!! warning "Note"
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
@@ -16,7 +16,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ## 基本設定
 
-!!! note warning
+!!! warning "Note"
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
@@ -60,7 +60,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ## カメラ設定
 
-!!! note warning
+!!! warning "Note"
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
@@ -80,7 +80,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ## 描画設定
 
-!!! note warning
+!!! warning "Note"
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
@@ -102,7 +102,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `Light Scattering` | false | ライトスキャッタリングのオンオフを切り替えます。 |
 | `IBL` | false | IBL（Image-Based Lighting）のオンオフを切り替えます。 |
 
-!!! note caution
+!!! warning "caution"
         `Directional Light`に設定されているIntensityの値（下記画像参照）はワールドに反映されないためご注意ください。<br>
         ライトの強弱は`LightColor`の色を`Directional Light`側の色と重ね合わせることで表現が可能です。
 
@@ -112,7 +112,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ## Bloom / Light Scattering / IBL設定
 
-!!! note warning
+!!! warning "Note"
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
@@ -139,7 +139,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 
 ## アバター設定
 
-!!! note warning
+!!! warning "Note"
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Setting](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 
@@ -151,7 +151,7 @@ HEOWorldSettingはワールドの基本設定を取りまとめるコンポー�
 | `Avatar Files` | Vketchan_v1.6_Mtoon_blendshape | アバター情報をまとめたアバターファイルを指定します。アバターファイルについては、[こちら](../WorldMakingGuide/AvatarFile.md)をご覧ください。 |
 | `CreateAvatarFile` | | 新規のアバターファイルを生成します。 |
 
-!!! note caution
+!!! warning "caution"
     HEOWorldSetting > Avatars > Avatar Fileにて空欄がある、Avatar Fileが1つも設定されていない場合はビルドエラーが発生したり初期状態のアバターが表示されない状態となります。
 
 ![HEOWorldSetting_AvatarFileError_1](../troubleshooting/img/HEOWorldSetting_AvatarFileError_1.jpg)
@@ -164,7 +164,7 @@ SDKでは初期状態のアバターとして用意しているAvatarFileがあ�
 
 ## マイアバター設定
 
-!!! note warning
+!!! warning "Note"
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Setting](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 

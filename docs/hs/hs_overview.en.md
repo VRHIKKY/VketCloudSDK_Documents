@@ -1,6 +1,6 @@
 # HeliScript - Overview
 
-Vket Cloud allows programming using the engine's own script called HeliScript. <br>
+Vket Cloud allows programming using the engine's own programing language called HeliScript. <br>
 Using HeliScript, you can implement more complex gimmicks and behaviors compared to using [Actions](../Actions/ActionsOverview.md).
 
 You can learn about the syntax of HeliScript by reading it in order starting from [Built-in types](./hs_var.md). <br>
@@ -75,7 +75,7 @@ After completing the code implementation and executing Build And Run, "Hello, Wo
 
 ![hs_overview_5](img/hs_overview_5.jpg)
 
-!!! caution "Troubleshooting Errors"
+!!! warning "Troubleshooting Errors"
     If an error occurs when running a HeliScript during world loading or by trigger, the error will be displayed on the debug log and browser console.<br>
     Please enable the [Debug Mode](../WorldEditingTips/DebugMode.md) to show the debug log.<br>
     As the debug log will be hidden during world loading, please see the [Browser Console](../troubleshooting/BuildError.md#checking-the-error-log) for checking the reason of loading error.
@@ -134,7 +134,7 @@ component example
 }
 ```
 
-!!! caution "Initializing Player objects"
+!!! warning "Initializing Player objects"
     On SDK Ver12.x and later versions, calling Player class functions within the constructor has been disabled. <br>
     In the example above, a bool variable in the Update function is used to obtain the Player instance outside the constructor.
 

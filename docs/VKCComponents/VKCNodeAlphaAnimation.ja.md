@@ -9,7 +9,7 @@ VKC Node Alpha Animationコンポーネントでは、この透過および透�
 | ---- | ---- | ---- | ---- |
 | Enable | 有効化 | false | 透過を有効にします |
 
-!!! caution "透過が適用されるオブジェクトについて"
+!!! warning "透過が適用されるオブジェクトについて"
     透過が設定できるオブジェクトはVKC Item FieldのNodeにできるオブジェクトのみです。<br>
     これ以外のオブジェクト(例：[右クリックメニューから生成できるオブジェクト](../WorldEditingTips/QuickMenu.md))には透過は適用されないため、ご注意ください。<br>
     Nodeについての詳細は[HeliScript概要 / Node](../hs/hs_overview.md#node)をご覧ください。

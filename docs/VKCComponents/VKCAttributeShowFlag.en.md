@@ -14,7 +14,7 @@ The component can be used to display or hide an object on VKC Item Field.
 
 ![HEOShowFlag_ShowField](img/HEOShowFlag_ShowField.jpg)
 
-!!! note info
+!!! info "Note"
     - The object can be shown by using ActionTrigger's [Show/HideNode](../Actions/Node/ShowHideNode.md) or other methods.
     - The component only hides its appearance. Colliders and other functions remain effective.
 

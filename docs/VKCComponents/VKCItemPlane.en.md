@@ -53,7 +53,7 @@ For details, please refer to the [specification limit](../WorldMakingGuide/Unity
 | Show Photo Mode | Toggles display/hide when in photo mode |
 | Overrides | On Entering the world, the `Material` and `Texture` set in the Overrides will be used instead of textures set in VKC Item Plane. |
 
-!!! note caution
+!!! warning "caution"
     The Overrides property is currently under progress.<br>
     Further usage are to be added by future updates.
 

@@ -13,10 +13,10 @@ VKC Item Fieldの詳しい配置方法については[VKC Item Fieldの使い方
 | Load Collider |  | 範囲に入った際に特定のオブジェクトをロードするコライダーを生成します |
 | UnLoad Collider |  | 範囲に入った際に特定のオブジェクトをアンロードするコライダーを生成します |
 
-!!! note info
+!!! info "Note"
     VKC Item Fieldはシーンに複数配置することができます。
 
-!!! note info
+!!! info "Note"
     Ver9.3以前の`Billboard`設定は`Look at Camera`に名称が変更されました。<br>
     以前のSDKバージョンからシーンデータを移植した場合、`Billboard`の設定は`Look at Camera`に引き継がれます。
 
@@ -81,13 +81,13 @@ VketCloudでは、ワールドに入った後に特定のエリアへ侵入し�
 1. アンロードコライダーの項目を開き、「アンロードコライダー生成」を押してロードに使うエリアコライダーを生成する。
 2. 生成されたアンロード用のコライダーをVKC Item Fieldの子オブジェクトにし、位置や範囲を調整する。
 
-!!! note caution
+!!! warning "caution"
     設定されたコライダーは、各項目の右側にあるXボタンを押すことでリストから消すことができますが、オブジェクトは残ったままになるので、そちらは手動で削除が必要になります。
 
 ---
 
 ### 参考
-[ロードが完了したら開く扉](../WorldMakingGuide/DoorOpensAfterLoad.html)
+[ロードが完了したら開く扉](../WorldMakingGuide/DoorOpensAfterLoad.md)
 
 ## 高度な設定
 

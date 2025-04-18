@@ -27,7 +27,7 @@ Also, we recommend the below systems when entering your world built with Vket Cl
 - Android: Android 11 or later / RAM: 8GB or more / For Google Pixel series, Pixel 5 or later
 - IDE: When editing HeliScript, Visual Studio is not recommended due to the encoding issue. If you want to edit in an environment similar to Visual Studio, please use Visual Studio Code.
 
-!!! note warning
+!!! warning "Note"
     When you open and save HeliScript created with Unity Vket Cloud SDK in Visual Studio, it may become ANSI, and you may not be able to build.<br>
     The following description explains how to change the editor that opens from Unity to Visual Studio Code.
 

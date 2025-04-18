@@ -25,7 +25,7 @@ VketCloud provides two methods of using an avatar:**Using Vket Cloud Official Si
 8. Click the avatar icon, and your avatar will be changed!
 ![SetupAvatar_6](./img/SetupAvatar_07.jpg)
 
-!!! note tip
+!!! tip "note"
     You can also use the [Avatar Maker](https://avatarmaker.vket.com/edit/){target=_blank} to create your own avatar VRM.<br> 
     If you find it difficult to create your avatar using modeling softwares or other tools, please consider using this service.<br>
     For details on adding preset avatars, refer to the [Adding Preset Avatars](../WorldMakingGuide/PresetAvatar.md) page.

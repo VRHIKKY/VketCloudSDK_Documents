@@ -67,7 +67,7 @@ The Shader of the material needs to be Unlit/Texture.
 ClipMode refers to data inside the project.<br>
 StringMode refers to the specified URL. It can be used for video streaming, etc.
 
-!!! note caution
+!!! warning "caution"
     StringMode is currently able only for internal developers.<br>
     For playing videos, please use the ClipMode.
 
@@ -81,10 +81,10 @@ StringMode refers to the specified URL. It can be used for video streaming, etc.
 
 ![HEOVideoTrigger_3](img/HEOVideoTrigger_3.jpg)
 
-!!! note caution
+!!! warning "caution"
     The SDK does not support distance falloff for video audio.<br>
     As an alternative implementation, the [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) and [StopVideo Action](../Actions/Others/StopVideo.md) can be used to stop the video when the player goes out from a certain range.
 
-!!! caution "VKC Node Video Trigger in Activity"
+!!! warning "VKC Node Video Trigger in Activity"
     On SDK Ver12.3.4 and later versions, VKC Node Video Trigger can be included on exporting Activity using [VKC Activity Exporter](../SDKTools/VKCActivityExporter.md).<br>
     However, as Autoplay cannot be enabled in Activity, the player must manually click or use the [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) to play the video.

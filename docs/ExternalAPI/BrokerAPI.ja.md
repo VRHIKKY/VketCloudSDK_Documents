@@ -2,13 +2,13 @@
 
 ブローカーAPIとは、Vket Cloudにおいて外部APIとの連携を行う際、該当のAPIをホワイトリストに登録した上で通信を行うためのAPIです。
 
-!!! caution "APIの実装予定について"
+!!! warning "APIの実装予定について"
     SDK Ver12.3.4現在、ブローカーAPIはGETにのみ対応しております。<br>
     今後のアップデートによってPOST, PUT, DELETEなどに対応する予定です。
 
 ## 使い方
 
-!!! caution "外部API連携機能の公開について"
+!!! warning "外部API連携機能の公開について"
     外部API連携機能は現在Vket Cloud開発者コミュニティにおいて公開テストとして開放されております。<br>
     当機能をお使いになりたい場合は[Vket CloudコミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}にご参加の上、[ロール取得チャンネル](https://discord.com/channels/900943744575103017/1178589689393975317){target=_blank}にて**開発コミュニティ**ロールをご取得ください。<br>
     開発者コミュニティにご参加いただくと、APIをホワイトリストに入れる手順のほか、最新の更新情報などが受け取れるようになります。ぜひご参加ください！

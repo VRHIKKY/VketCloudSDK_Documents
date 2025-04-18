@@ -81,7 +81,7 @@ Example: Placing 8 Quads with VKC Node Mirror, each rotated 45°
 
 ![HEOMirror_13](img/HEOMirror_13.jpg)
 
-!!! caution "Performance when placing Mirrors"
+!!! warning "Performance when placing Mirrors"
     If multiple mirrors are placed with video playing in the mirror's vicinity, it may result to poorer performance on smartphones.
     Please consider the positions when placing mirrors.
 

@@ -46,7 +46,7 @@ VKC Item Text Planeは、ワールドのビルド時に本コンポーネント�
 | Look at Camera | false | カメラ方向に対して常に正面を向くようになります |
 | Alpha Blending | true | 半透明やカットアウトを使用できます |
 
-!!! note caution
+!!! warning "caution"
     Text項目では、改行をおこないたい場合は”\n”を文字列中に指定します。
     それ以外のすべての正規表現（例えば、タブ "\t"、改行 "\r"、バックスペース "\b"）を入力した場合、ビルドエラーが発生します。
 
@@ -67,7 +67,7 @@ VKC Item Text Planeは、ワールドのビルド時に本コンポーネント�
 | Item Render Priority | 0 | Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
 | Overrides | | ワールド入場時に`Overrides`にて設定された`Text`を使用して文字列を上書きします |
 
-!!! note caution
+!!! warning "caution"
     Overrides項目は現在実装中の機能です。<br>
     本機能については今後のアップデートで使い方が更新される予定です。
 

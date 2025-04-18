@@ -95,6 +95,8 @@ plugins:
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
             # ワールド制作ガイド
             World Making Guide: ワールド制作ガイド
+            Table of Contents: 目次
+            List of Articles: 記事一覧
             Shader Availability : シェーダー対応項目一覧
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
@@ -135,6 +137,8 @@ plugins:
             Binary Output Error: バイナリ出力に失敗
             Texture Replacement Issues with ReplaceTexture: ReplaceTextureでテクスチャの差し替えが正常に出来ない
             Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
+            Animation With ActivityCanvas: ActivityCanvasでアニメーション
+            Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas: Canvas外をクリック(タップ)したらダイアログを閉じる機能を実装する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -173,6 +177,7 @@ plugins:
             Debug Messages: デバッグメッセージ一覧
             Vket Cloud SDK Settings : Vket Cloud SDK設定
             ScenePreview (β): シーンプレビュー (β)
+            VRM File Creator: VRMファイルクリエーター
             # GUITools 
             Overview & Setup: 概要とセットアップ
             How to Use: 基本実装
@@ -248,6 +253,7 @@ plugins:
             Enter/Leave Voice Group: 音声グループに参加/退出
             Tips/HeliScript Guide: Tips/HeliScriptガイド
             Remove Default UI: 既存UIの消し方
+            Script Error Checking with Assertions: Assertionを使ったスクリプトエラーチェック
             Web: ウェブ
             Open Links in New Tab: 新しいタブでWEBページを開く
             Open Links in Current Tab: 現在のタブでWEBページを開く
@@ -259,7 +265,7 @@ plugins:
             HeliScript - Casting: HeliScriptキャスト
             HeliScript - Commenting: HeliScriptコメント
             Statements and flow control: 文法と制御構文
-            Declarations and definitions: 定義・宣言
+            Scopes and definitions: スコープ・定義
             Control Statement: 制御構文
             Reference (ref): 参照(ref)
             Constant Variable (const): 定数(const)
@@ -281,6 +287,7 @@ plugins:
             Date Class: Dateクラス
             TimeSpan Class: TimeSpanクラス
             HSMessage Class: HSMessageクラス
+            HSRaycastHIT Class: HSRaycastHITクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -296,6 +303,7 @@ plugins:
             Rendering: レンダリング
             JavaScript: JavaScript
             Cookie: Cookie
+            RayCast: レイキャスト
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -342,43 +350,46 @@ nav:
     - Avatar Settings: VketCloudSettings/AvatarSettings.md
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
-    - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
-    - Shader Availability : WorldMakingGuide/ShaderAvailability.md
-    - Setting up a Skybox : WorldMakingGuide/Skybox.md 
-    - How to use Colliders / Tips : WorldMakingGuide/Collider.md
-    - Physics Engine: WorldMakingGuide/PhysicsEngine.md
-    - Tips on using VKC Item Field: WorldMakingGuide/HEOFieldTips.md
-    - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
-    #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
-    - How to Animate Objects: WorldMakingGuide/PropAnimation.md
-    - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
-    - How to convert animation from Unity asset: WorldMakingGuide/ConvertAnimationFromUnityAsset.md
-    - Avatar File: WorldMakingGuide/AvatarFile.md
-    - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
-    - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
-    - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
-    - JS Upload :
-      - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
-      - Restrict World Entry Time: WorldMakingGuide/JsUpload_RestrictEntryTime.md
-      - Get Current Weather Using Web API: WorldMakingGuide/JsUpload_FetchCurrentWeather.md
-      - JS Upload Tutorial Scene: WorldMakingGuide/JsUpload_TutorialScene.md
-    - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
-    - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
-    - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
-    - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
-    - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
-    - Light Scattering: WorldMakingGuide/LightScattering.md
-    - Playing Entrance Sound Effects Only Under Specific Conditions: WorldMakingGuide/SoundEffectEntrance.md
-    - Execute Activity Json Method: WorldMakingGuide/ExecuteActivityJsonMethod.md
-    - How to Use HEOProperty (Vket Cloud Property Function): WorldMakingGuide/VKCAttributeProperty.md
-    - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
-    - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
-    - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
-    - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
-    - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
-    - Texture Replacement Issues with ReplaceTexture : WorldMakingGuide/ReplaceTexture.md
-    - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
-    - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
+    - Table of Contents : WorldMakingGuide/WorldMakingGuide.md
+    - List of Articles :
+      - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
+      - Shader Availability : WorldMakingGuide/ShaderAvailability.md
+      - Setting up a Skybox : WorldMakingGuide/Skybox.md 
+      - How to use Colliders / Tips : WorldMakingGuide/Collider.md
+      - Physics Engine: WorldMakingGuide/PhysicsEngine.md
+      - Tips on using VKC Item Field: WorldMakingGuide/HEOFieldTips.md
+      - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
+      #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
+      - How to Animate Objects: WorldMakingGuide/PropAnimation.md
+      - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
+      - How to convert animation from Unity asset: WorldMakingGuide/ConvertAnimationFromUnityAsset.md
+      - Avatar File: WorldMakingGuide/AvatarFile.md
+      - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+      - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
+      - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
+      - JS Upload :
+        - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
+        - Restrict World Entry Time: WorldMakingGuide/JsUpload_RestrictEntryTime.md
+        - Get Current Weather Using Web API: WorldMakingGuide/JsUpload_FetchCurrentWeather.md
+        - JS Upload Tutorial Scene: WorldMakingGuide/JsUpload_TutorialScene.md
+      - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
+      - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
+      - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
+      - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
+      - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
+      - Light Scattering: WorldMakingGuide/LightScattering.md
+      - Playing Entrance Sound Effects Only Under Specific Conditions: WorldMakingGuide/SoundEffectEntrance.md
+      - Execute Activity Json Method: WorldMakingGuide/ExecuteActivityJsonMethod.md
+      - How to Use HEOProperty (Vket Cloud Property Function): WorldMakingGuide/VKCAttributeProperty.md
+      - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
+      - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
+      - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
+      - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
+      - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
+      - Texture Replacement Issues with ReplaceTexture : WorldMakingGuide/ReplaceTexture.md
+      - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
+      - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
+      - Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas : WorldMakingGuide/CloseCanvas.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
@@ -389,21 +400,7 @@ nav:
     - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
     - Voice Attenuation Trouble: troubleshooting/VoiceAttenuationTrouble.md
 - FAQ:
-    - Solution to Profile Image Error When Creating an Account on Old MyVket: FAQ/ProfileImage.md
-    - HEOAreaCollider Does Not Work When Overlapping with a MeshCollider: FAQ/MeshColiderAndAreaColliderOverrap.md
-    - Procedure for Porting Animation Shader Materials for VRChat to VketCloud: FAQ/VRChatAnimationForVKC.md
-    - Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function : FAQ/hsItemGetOwnScene.md
-    - Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: FAQ/UV2MeshBuildError.md
-    - Solution for When Clicking on Sphere Collider Does Not Respond: FAQ/SphereCollider.md
-    - About the Split Function: FAQ/HS_Split.md
-    - The .mp3 audio file in the activity is not output during the build: FAQ/AudioExportWithMeta.md
-    - The screen goes completely black after loading is complete : FAQ/Load_Blackout.md
-    - Special Specifications of the Date Type: FAQ/DateSpecialSpecifications.md
-    - Loading Stack: FAQ/LoadingStack.md
-    - Not Reflected During Build: FAQ/NotReflectedDuringBuild.md
-    - Error Not Displayed: FAQ/ErrorNotDisplayed.md
-    - Resolving the Issue of Slow Initial Sound Effect Playback: FAQ/FirstSE.md
-    - Add Motions After Lib13: FAQ/AddMotionsAfterLib13.md
+    - FAQ Home: FAQ/FAQ_home.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
@@ -420,6 +417,7 @@ nav:
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - ScenePreview (β): SDKTools/ScenePreview.md
+    - VRM File Creator: SDKTools/VRMFileCreator.md
 - GUITools: 
     - Overview & Setup: GUITools/Setup.md
     - How to Use: GUITools/HowToUse.md
@@ -567,6 +565,7 @@ nav:
         - Date Class: hs/hs_class_date.md
         - TimeSpan Class: hs/hs_class_timespan.md
         - HSMessage Class: hs/hs_class_hsmessage.md
+        - HSRaycastHIT Class: hs/hs_struct_hsraycasthit.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Input: hs/hs_system_function_input.md
@@ -583,18 +582,25 @@ nav:
         - Rendering: hs/hs_system_function_rendering.md
         - JavaScript: hs/hs_system_function_js.md
         - Cookie: hs/hs_system_function_cookie.md
+        - Raycast: hs/hs_system_function_raycast.md
     - Statements and flow control:
-        - Declarations and definitions: hs/hs_statement_def.md
+        - Scopes and definitions: hs/hs_scope_def.md
         - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
     - Tips/HeliScript Guide:
         - Remove Default UI: hs/RemoveDefaultUI.md
+        - Script Error Checking with Assertions: hs/hs_assertion_function.md
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md
   - Handling Json in HeliScript: ExternalAPI/HeliScriptJsonParse.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v15.x:
+        - v15.3: releasenote/releasenote-15.3.md
+        - v15.2: releasenote/releasenote-15.2.md
+        - v15.1: releasenote/releasenote-15.1.md
+        - v15.0: releasenote/releasenote-15.0.md
     - v14.x:
         - v14.5: releasenote/releasenote-14.5.md
         - v14.4: releasenote/releasenote-14.4.md
@@ -673,6 +679,10 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v15.x:
+        - v15.3: changelog/changelog-15.3.md
+        - v15.2: changelog/changelog-15.2.md
+        - v15.1: changelog/changelog-15.1.md
     - v14.x:
         - v14.5: changelog/changelog-14.5.md
         - v14.4: changelog/changelog-14.4.md
@@ -682,7 +692,6 @@ nav:
         - v13.7: changelog/changelog-13.7.md
         - v13.4: changelog/changelog-13.4.md
         - v13.1: changelog/changelog-13.1.md
-        - v13.0: changelog/changelog-13.0.md
     - v12.x:
         - v12.3: changelog/changelog-12.3.md
         - v12.1: changelog/changelog-12.1.md

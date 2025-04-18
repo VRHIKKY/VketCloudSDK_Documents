@@ -2,13 +2,13 @@
 
 The Broker API is an API feature for Vket Cloud, which is intended to register external APIs to an allowlist and verify the connection inside Vket Cloud worlds.
 
-!!! caution "API feature schedules"
+!!! warning "API feature schedules"
     On SDK Ver12.3.4, the Broker API is currently available only for GET requests.<br>
     Other features such as POST, PUT, and DELETE are scheduled to be enabled on future updates.
 
 ## How to Use
 
-!!! caution "External API feature availability"
+!!! warning "External API feature availability"
     The external API feature is currently under open test for Vket Cloud developer community members.<br>
     If you wish to try this feature, join the [Vket Cloud Community Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank} and obtain a "Developer Community" role in the [Roles channel](https://discord.com/channels/900943744575103017/1178589689393975317){target=_blank}.<br>
     In the developer community, instructions for allowlisting API and other new updates will be announced. Feel free to join us!
@@ -79,7 +79,6 @@ component BrokerAPI
         switch (clickedNodeName)
         {
             case GET_SWITCH_NAME://Button for calling GET API
-                if(!hsCommonDialogIsOpened())
                 {
                     ComfirmApiAccess();
                 }
