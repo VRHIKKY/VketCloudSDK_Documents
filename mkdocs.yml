@@ -253,6 +253,7 @@ plugins:
             Enter/Leave Voice Group: 音声グループに参加/退出
             Tips/HeliScript Guide: Tips/HeliScriptガイド
             Remove Default UI: 既存UIの消し方
+            Script Error Checking with Assertions: Assertionを使ったスクリプトエラーチェック
             Web: ウェブ
             Open Links in New Tab: 新しいタブでWEBページを開く
             Open Links in Current Tab: 現在のタブでWEBページを開く
@@ -588,6 +589,7 @@ nav:
         - Operator: hs/hs_operator.md
     - Tips/HeliScript Guide:
         - Remove Default UI: hs/RemoveDefaultUI.md
+        - Script Error Checking with Assertions: hs/hs_assertion_function.md
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md

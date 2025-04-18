@@ -4,6 +4,9 @@
 
 ## April 18 2025 - Added Pages
 
+ - HeliScript
+     - Tips/HeliScript Guide
+         - [Script Error Checking with Assertions](../hs/hs_assertion_function.md)
  - SDK Tools
      - [VRM File Creator](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/en/SDKTools/VRMFileCreator.html)
          - Created a page for the VRM File Creator
