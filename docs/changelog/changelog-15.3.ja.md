@@ -7,12 +7,20 @@
  - HeliScript
      - Tips/HeliScriptガイド
          - [Assertionを使ったスクリプトエラーチェック](../hs/hs_assertion_function.md)
+- SDKツール
+    - [VRMファイルクリエーター](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/SDKTools/VRMFileCreator.html)
+        - VRMファイルクリエーターのページを作成
+        - ツールの使い方を追加
+        - サポートしない機能を追加
 
 ## 2025年4月18日 - 編集されたページ
 
 - Vket Cloud SDKについて
     - [SDKにログインする](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/AboutVketCloudSDK/LoginSDK.html)
         - 注記部分のUnityバージョンの表記を修正
+- ワールド制作ガイド
+    - [スカイボックス設定](https://vrhikky.github.io/VketCloudSDK_Documents/15.3/WorldMakingGuide/Skybox.html)
+        - クイックメニューからスカイボックスを設定する方法を追記
 - VKCコンポーネント
     - VKC Setting
         - [VKC Setting Avatar](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VketCloudSettings/AvatarSettings.html)
