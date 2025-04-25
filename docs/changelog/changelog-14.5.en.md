@@ -1,12 +1,22 @@
 # SDK Manual Change Log - Ver 14.5
 
+## April 25 2025 Update
+
+## April 25 2025 - Edited Page
+
+- World Creation Guide
+    - [How to Use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/Collider.html#_3)
+         - Add to the explanation that GameObjects with Box Colliders will physically collide even without VKCNodeCollider attached
+
+---
+
 ## March 28 2025 Update
 
 ## March 28 2025 - Edited Page
 
 - HeliScript
     - Built-in Functions
-        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_gui.html)
             - Corrected the explanation for `hsCanvasResetToggleDefault` and `hsCanvasToggleChange`.
     - Statements and flow control
         - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_statement_control.html)

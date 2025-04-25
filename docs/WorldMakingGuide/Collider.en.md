@@ -17,6 +17,9 @@ Vket Cloud SDK includes the following collider-related components:
 
 **[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)** - A basic component for representing colliders. By using it with Unity's BoxCollider, you can create collision-enabled nodes such as walls and floors. Various expressions are possible by combining it with other VKC components.
 
+!!! note "Notes on handling Box Colliders"
+    GameObjects with Box Colliders will automatically have colliders applied even without VKCNodeCollider attached.
+
 ### Components Used in Combination with the Basic Component
 When these are attached in the Inspector view, VKC Node Collider is also automatically added
 

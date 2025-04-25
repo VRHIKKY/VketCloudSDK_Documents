@@ -17,6 +17,9 @@ Vket Cloud SDKには、以下のコライダー関連コンポーネントがあ
 
 **[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)**- コライダーを表現する基本的なコンポーネントです。UnityのBoxColliderと併用することで例えば壁や床など衝突可能なノードを作成できます。また、他のVKCコンポーネントとの組み合わせで使用することで、さまざまな表現が可能になります。
 
+!!! note "Boxコライダーを扱う場合の注意点"
+    Boxコライダー付きのGameObjectはVKCNodeColliderがアタッチされていなくとも、自動的にコライダーが付与されます。
+
 ### 基本コンポーネントと組み合わせて使うもの
 これらをインスペクタービュー上でアタッチすると、VKC Node Colliderも自動で追加されます。
 
