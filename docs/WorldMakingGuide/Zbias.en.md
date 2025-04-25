@@ -3,7 +3,7 @@
 Starting from Lib15, you will be able to dynamically change the Z-bias of items using HeliScript.  
 This allows you to switch the display priority of Planes placed in the same location or avoid unnatural texture overlaps caused by the placement position.
 
-![Zbias](img/Zbias.jpg)
+![Zbias](img/zbias.jpg)
 
 Plane in Lib13.
 We wanted to put the click guide's finger icon behind the purchase button, but it wasn't possible.

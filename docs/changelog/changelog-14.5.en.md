@@ -11,7 +11,7 @@
 ## April 25 2025 - Added Page
 
 - World Making Guide
-    - [Dynamically Changing Z-bias of Plane Items](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/zbias.html)
+    - [Dynamically Changing Z-bias of Plane Items](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/Zbias.html)
 
 ---
 
