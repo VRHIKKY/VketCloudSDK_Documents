@@ -9,6 +9,11 @@
 ](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/Collider.html#_3)
          - Boxコライダー付きのGameObjectはVKCNodeColliderがアタッチされていなくとも物理衝突すること説明に追加
 
+## 2025年4月25日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [PlaneアイテムのZbiasを動的に変更する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/zbias.html)
+
 ---
 
 ## 2025年3月28日更新

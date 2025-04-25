@@ -8,6 +8,11 @@
     - [How to Use Colliders / Tips](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/Collider.html#_3)
          - Add to the explanation that GameObjects with Box Colliders will physically collide even without VKCNodeCollider attached
 
+## April 25 2025 - Added Page
+
+- World Making Guide
+    - [Dynamically Changing Z-bias of Plane Items](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/zbias.html)
+
 ---
 
 ## March 28 2025 Update
