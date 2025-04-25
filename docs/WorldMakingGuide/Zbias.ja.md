@@ -3,15 +3,16 @@
 Lib15より、HeliScriptでアイテムのZbiasを動的に変更することが出来るようになります。  
 これにより、同じ場所に設置したPlaneの表示優先度を切り替えたり、設置位置により違和感が生まれるテクスチャの重なりを回避することが可能です。
 
+
 ![Zbias](img/Zbias.jpg)
 
 Lib13のPlane。  
 購入ボタンよりクリックガイドの指アイコンを後ろにしたいが出来なかった。
 
 !!! note "検証環境"
-    SDKバージョン : 15.X.X  
+    Libバージョン : 15.3
     OS : Windows10  
-    Unity : 2022.3.6.f1(予定)  
+    Unity : 2022.3.6.f1  
     ブラウザ : Google Chrome
 
 ## 前提 - ZBiasって？
@@ -27,6 +28,8 @@ ZBias(Z値偏差)とは、奥行きの無い2D画像の疑似的な奥行き表�
 
 今回の動的変更機能の追加により、画像周辺のオブジェクト状況を加味したZBiasの設定がHeliScript上から可能になったほか、同じ位置に複数枚画像を設置したうえで紙芝居のように画像を切り替えることが出来るようにもなりました。
 
+ZBiasを用いることができるのはVKC Item Plane、VKC Item TextPlaneによって実装されたアイテムのみです。
+
 ## メソッド紹介
 
 ### ①void Item.SetPlaneZBias(float ZBias)
@@ -34,6 +37,6 @@ ZBias(Z値偏差)とは、奥行きの無い2D画像の疑似的な奥行き表�
 アイテムのZBiasを変更します。  
 引数のfloat型の値になります。
 
-### ②float Item.GetPlaneZBias
+### ②float Item.GetPlaneZBias()
 
 現在のアイテムのZBias設定値を取得します。

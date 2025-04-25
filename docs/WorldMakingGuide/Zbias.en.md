@@ -9,9 +9,9 @@ Plane in Lib13.
 We wanted to put the click guide's finger icon behind the purchase button, but it wasn't possible.
 
 !!! note "Testing Environment"
-    SDK Version : 15.X.X  
+    Lib Version : 15.3  
     OS : Windows 10  
-    Unity : 2022.3.6.f1 (planned)  
+    Unity : 2022.3.6.f1  
     Browser : Google Chrome
 
 ## Prerequisite - What is ZBias?
@@ -27,13 +27,15 @@ Generally, by decreasing the ZBias, the image is displayed with higher priority 
 
 With the addition of this dynamic change functionality, it is now possible to set the ZBias from HeliScript, taking into account the object situation around the image. Additionally, you can place multiple images in the same position and switch between them like a flipbook.
 
+You can use ZBias only with items implemented by VKC Item Plane and VKC Item TextPlane.
+
 ## Method Introduction
 
-### ① void Item.SetPlaneZBias(float ZBias)
+### 1.void Item.SetPlaneZBias(float ZBias)
 
 Changes the ZBias of the item.  
 The argument is a float value.
 
-### ② float Item.GetPlaneZBias
+### 2.float Item.GetPlaneZBias()
 
 Gets the current ZBias setting value of the item.
