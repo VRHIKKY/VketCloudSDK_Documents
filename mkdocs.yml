@@ -139,6 +139,7 @@ plugins:
             Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
             Animation With ActivityCanvas: ActivityCanvasでアニメーション
             Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas: Canvas外をクリック(タップ)したらダイアログを閉じる機能を実装する
+            Dynamically Changing Z-bias of Plane Items: PlaneアイテムのZbiasを動的に変更する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -390,6 +391,7 @@ nav:
       - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
       - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
       - Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas : WorldMakingGuide/CloseCanvas.md
+      - Dynamically Changing Z-bias of Plane Items: WorldMakingGuide/Zbias.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
