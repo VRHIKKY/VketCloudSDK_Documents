@@ -10,7 +10,7 @@ Lib13のPlane。
 購入ボタンよりクリックガイドの指アイコンを後ろにしたいが出来なかった。
 
 !!! note "検証環境"
-    Libバージョン : 15.3
+    Libバージョン : 15.3  
     OS : Windows10  
     Unity : 2022.3.6.f1  
     ブラウザ : Google Chrome
