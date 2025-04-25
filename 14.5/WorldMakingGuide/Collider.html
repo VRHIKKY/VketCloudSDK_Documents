@@ -941,6 +941,8 @@
       
         
       
+        
+      
     
     
     
@@ -1878,6 +1880,27 @@
   
   <span class="md-ellipsis">
     Canvas外をクリック(タップ)したらダイアログを閉じる機能を実装する
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Zbias.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PlaneアイテムのZbiasを動的に変更する
   </span>
   
 
@@ -11545,6 +11568,10 @@
 <p>Vket Cloud SDKには、以下のコライダー関連コンポーネントがあります：</p>
 <h3 id="_3">基本コンポーネント</h3>
 <p><strong><a href="../VKCComponents/VKCNodeCollider.html">VKC Node Collider</a></strong>- コライダーを表現する基本的なコンポーネントです。UnityのBoxColliderと併用することで例えば壁や床など衝突可能なノードを作成できます。また、他のVKCコンポーネントとの組み合わせで使用することで、さまざまな表現が可能になります。</p>
+<div class="admonition note">
+<p class="admonition-title">Boxコライダーを扱う場合の注意点</p>
+<p>Boxコライダー付きのGameObjectはVKCNodeColliderがアタッチされていなくとも、自動的にコライダーが付与されます。</p>
+</div>
 <h3 id="_4">基本コンポーネントと組み合わせて使うもの</h3>
 <p>これらをインスペクタービュー上でアタッチすると、VKC Node Colliderも自動で追加されます。</p>
 <p><strong><a href="../VKCComponents/VKCItemAreaCollider.html">VKC Item Area Collider</a></strong>- プレイヤーの特定エリアに出入りをトリガーとしたアクションを設定できます。</p>
