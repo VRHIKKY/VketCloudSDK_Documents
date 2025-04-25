@@ -21,6 +21,7 @@
 - [Setting up a Skybox](../WorldMakingGuide/Skybox.md)
 - [How to Use VKC Node Shadow](../WorldMakingGuide/HEOShadow.md)
 - [Creating Capsule Rectangle Images Using 9-Slice](../WorldMakingGuide/9slice.md)
+- [Dynamically Changing Z-bias of Plane Items](../WorldMakingGuide/Zbias.md)
 
 ## Gimmick Implementation
 ### Implementation Using SDK Features

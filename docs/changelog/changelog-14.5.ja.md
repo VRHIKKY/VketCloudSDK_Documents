@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年4月25日更新
+
+## 2025年4月25日 - 追加されたページ
+
+- ワールド制作ガイド
+    - [PlaneアイテムのZbiasを動的に変更する](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/zbias.html)
+
+---
+
 ## 2025年3月28日更新
 
 ## 2025年3月28日 - 編集されたページ

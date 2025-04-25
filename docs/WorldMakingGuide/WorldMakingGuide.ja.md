@@ -21,6 +21,7 @@
 - [スカイボックス設定](../WorldMakingGuide/Skybox.md)
 - [VKC Node Shadowの使い方](../WorldMakingGuide/HEOShadow.md)
 - [カプセル長方形の画像を9sliceで作成する](../WorldMakingGuide/9slice.md)
+- [PlaneアイテムのZbiasを動的に変更する](../WorldMakingGuide/Zbias.md)
 
 ## ギミック実装
 ### SDKの機能での実装
