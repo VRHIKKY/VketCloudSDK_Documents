@@ -335,7 +335,7 @@ This will be called when the item receives a message. The argument message conta
 ## Callback - Emote Change
 
 ```
-public void OnEmoteChange(int EmoteIndex)
+public void OnEmoteChanged(int EmoteIndex)
 ```
 
 This callback is invoked when a player's emote is changed (played).  

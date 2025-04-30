@@ -315,7 +315,7 @@ Itemがメッセージを受信した際に呼ばれます。引数 message に�
 ## コールバック - エモートチェンジ
 
 ```
-public void OnEmoteChange(int EmoteIndex)
+public void OnEmoteChanged(int EmoteIndex)
 ```
 
 Playerのエモートが変更（再生）された際に呼ばれます。  
