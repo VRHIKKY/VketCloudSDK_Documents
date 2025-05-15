@@ -241,7 +241,6 @@ Get the scale of Item by Vector3.
 Set the scale of Item by Vector3.
 
 ???+ note "Available object types for this method"
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
