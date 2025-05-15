@@ -2,6 +2,11 @@
 
 ## HeliodorLib (Engine used in browser-displayed worlds)
 
+### Visual
+### Bug Fixes
+- Fixed an issue where loading would not complete when both Wait Time(s) and Scroll Time(s) were set to 0
+- Fixed a bug where when Scroll Time(s) was set to 0, it would actually display as if it were set to 0.02 seconds
+
 ### Sound
 #### Bug Fixes
 - Fixed an issue where BGM would sometimes not play on Android devices
