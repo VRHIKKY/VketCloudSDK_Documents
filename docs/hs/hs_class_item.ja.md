@@ -241,7 +241,6 @@ ItemのスケールをVector3として取得します。
 ItemのスケールをVector3で設定します。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
