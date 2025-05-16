@@ -614,6 +614,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v15.x:
+        - v15.5: releasenote/releasenote-15.5.md
         - v15.4: releasenote/releasenote-15.4.md
         - v15.3: releasenote/releasenote-15.3.md
         - v15.2: releasenote/releasenote-15.2.md
