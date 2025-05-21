@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年5月23日更新
+
+## 2025年5月23日 - 編集されたページ
+
+- [GUITools - 概要とセットアップ
+](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/GUITools/Setup.html)
+     - GUITools対応のエディターバージョンとして、Unity 2022.3.6f1の記載も含める。
+
+---
+
 ## 2025年4月25日更新
 
 ## 2025年4月25日 - 編集されたページ
