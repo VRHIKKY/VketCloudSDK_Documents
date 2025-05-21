@@ -250,7 +250,7 @@ public void OnEnterViewCollider(string NodeName)
 public void OnLeaveViewCollider(string NodeName)
 ```
 
-[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)で「InView」を指定したコライダーが視野内に入った場合または視野外に出た場合に呼び出されます。
+[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)で「In View」を指定したコライダーが視野内に入った場合または視野外に出た場合に呼び出されます。
 
 コンポーネントは同一のアイテムに設定する必要があります。
 
@@ -315,7 +315,7 @@ Itemがメッセージを受信した際に呼ばれます。引数 message に�
 ## コールバック - エモートチェンジ
 
 ```
-public void OnEmoteChange(int EmoteIndex)
+public void OnEmoteChanged(int EmoteIndex)
 ```
 
 Playerのエモートが変更（再生）された際に呼ばれます。  

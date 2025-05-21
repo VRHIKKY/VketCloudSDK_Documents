@@ -16,7 +16,7 @@ If you are new to Vket Cloud, follow the steps of `About Vket Cloud SDK` to setu
 
 4. **[Login to the SDK](AboutVketCloudSDK/LoginSDK.md)**
 
-If you want to try out Vket Cloud worlds, or get an idea on what can be made, check [My Vket](https://vket.com/en){target=_blank}!
+If you want to try out Vket Cloud worlds, or get an idea on what can be made, check out the [Worlds List on Vket Cloud Official Website](https://cloud.vket.com/en/search/worlds){target=_blank}!
 
 !!! info "About SDK versions"
     To check the manual for the latest version of Vket Cloud SDK, access from [here](https://vrhikky.github.io/VketCloudSDK_Documents/latest/index.html).<br>

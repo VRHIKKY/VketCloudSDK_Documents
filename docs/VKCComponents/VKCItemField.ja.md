@@ -87,7 +87,7 @@ VketCloudでは、ワールドに入った後に特定のエリアへ侵入し�
 ---
 
 ### 参考
-[ロードが完了したら開く扉](../WorldMakingGuide/DoorOpensAfterLoad.html)
+[ロードが完了したら開く扉](../WorldMakingGuide/DoorOpensAfterLoad.md)
 
 ## 高度な設定
 

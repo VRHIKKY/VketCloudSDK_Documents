@@ -16,7 +16,7 @@ SDK9以降で登場したVKC Attribute Propertyを使うことで、Vket Cloud�
 
 ![VKCAttributeProperty_2](./img/VKCAttributeProperty_2.jpg)
 
-[VKC Item Field](VKCItemField.md)、 [VKC Item Object](VKCItemObject.md)、 [VKC Item Activity](VKCItemActivity.md)など、ビルド時にアイテムとなるオブジェクトに対しVKC Attribute Propertyをアタッチします。
+[VKC Item Field](../VKCComponents/VKCItemField.md)、 [VKC Item Object](../VKCComponents/VKCItemObject.md)、 [VKC Item Activity](../VKCComponents/VKCItemActivity.md)など、ビルド時にアイテムとなるオブジェクトに対しVKC Attribute Propertyをアタッチします。
 
 ### 2. VKC Attribute PropertyにKeyとValueを入力
 
@@ -145,4 +145,5 @@ HeliScript上で対象となるアイテムを間違えると、上手く動作�
 型変換を行わずにSetPropertyやGetPropertyした場合、nullとなります。
 
 ##　関連ページ
-    - [HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)
+
+[HEOProperty(Vket Cloudのプロパティ機能)の使い方](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)

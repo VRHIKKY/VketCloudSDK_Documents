@@ -215,7 +215,8 @@ Get the world rotation of Item by quaternion.
 
 `public Vector3 GetWorldRotate()`
 
-Get the world rotation of Item by Vector3 (Euler angles).
+Get the world rotation of Item by Vector3 (Euler angles).<br>
+The values for each axis (x, y, z) are represented in a range from -180 degrees to 180 degrees.
 
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -240,7 +241,6 @@ Get the scale of Item by Vector3.
 Set the scale of Item by Vector3.
 
 ???+ note "Available object types for this method"
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)

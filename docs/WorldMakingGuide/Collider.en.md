@@ -1,52 +1,60 @@
-# How to use Colliders / Tips
+# How to Use Colliders / Tips
 
-On Vket Cloud, the Unity Collider can be modified by attaching VKCComponents, which can be used for various functions not only regular wall and floor collisions. Features involving colliders include [Occlusion Culling](../WorldOptimization/OcclusionCulling.md), [Dynamic Loading](../VKCComponents/VKCItemField.md), [Click / In-Out / In-View Detection](../VKCComponents/VKCNodeCollider.md#_1), and [Physics](./PhysicsEngine.md).
+## What You Can Do with Colliders
+In Vket Cloud, by combining various Unity colliders with VKC components, you can create the following functions and expressions:
 
-## How to setup Colliders
+1. Basic environment construction: [Creating walls and floors](../VKCComponents/VKCNodeCollider.md#1-collider)
+2. Display optimization: [Occlusion function](../WorldOptimization/OcclusionCulling.md) to omit processing of invisible parts
+3. Loading efficiency: [Dynamic loading](../VKCComponents/VKCItemField.md) to load content only when needed
+4. Interaction: Detection of [clicks, area entry/exit, in-view detection](../VKCComponents/VKCNodeCollider.md#_2), etc.
+5. Physics: [Movements such as falling and collisions](./PhysicsEngine.md)
 
-![VKCNodeCollider_1](../VKCComponents/img/HEOCollider_1.jpg)
+## Collider Components
 
-On Vket Cloud SDK, setting a corresponding VKCComponent to each Unity Colliders will enable it to be used in world.<br>
-See the following pages for each collider setup and details.
+Vket Cloud SDK includes the following collider-related components:
 
-[VKC Node Collider](../VKCComponents/VKCNodeCollider.md) : The standard component for handling colliders.
+### Basic Component
 
-The components below are meant to be combined with [VKC Node Collider](../VKCComponents/VKCNodeCollider.md) on use.
+**[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)** - A basic component for representing colliders. By using it with Unity's BoxCollider, you can create collision-enabled nodes such as walls and floors. Various expressions are possible by combining it with other VKC components.
 
-[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) : Used for triggering actions when player is in/out of the area.
+!!! note "Notes on handling Box Colliders"
+    GameObjects with Box Colliders will automatically have colliders applied even without VKCNodeCollider attached.
 
-[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md) : This component is attached when using the Unity Mesh Collider on Vket Cloud.
+### Components Used in Combination with the Basic Component
+When these are attached in the Inspector view, VKC Node Collider is also automatically added
 
-!!! bug "Player floating when world only has Mesh Renderer / Mesh Collider objects"
-    On SDK Ver12.3, there is an issue occurring when the world has objects only having Mesh Renderer, Mesh Collider, VKC Node Mesh Collider, [VKCNodeCollider](../VKCComponents/VKCNodeCollider.md) components attached, causing the player to float when enter the world.<br>
-    This issue is scheduled to be fixed on the next SDK release.<br>
-    Also, this issue can be avoided by adding at least a single Cube with Box Collider attached.
+**[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)** - Allows you to set actions triggered by player entry and exit to specific areas.
 
-VKC Node Cylinder Collider : Used for enabling [Physics](./PhysicsEngine.md) for the Unity Cylinder Col lider.<br>
-Note that Cylinders cannot be used other than simulating physics.
+**[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)** - By adding this in combination with Unity's Mesh Collider, you can create colliders that match the mesh shape.
 
-## Using Colliders and Physics in Action Trigger / HeliScript
+**[VKC Node Cylinder Collider](../VKCComponents/VKCNodeCylinderCollider.md)** - Used when applying physics to Unity's CapsuleCollider. See [Physics Engine](./PhysicsEngine.md) for details.
 
-On the Vket Cloud SDK, Colliders can be used to detect user clicks and player going in/out areas by [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) to trigger actions.<br>
-For details, see [Actions Overview](../Actions/ActionsOverview.md).
+## Integrating Colliders with Actions
 
-Also, Colliders can be used for calling Callback functions on HeliScript, which can be applied for creating various gimmicks.<br>
-Each Callback function is described on the following pages:
+By combining colliders with actions, you can create a variety of mechanisms.<br>
+See [Actions Category](../Actions/ActionsOverview.md) for details.
 
-- [Callback - Area Collider](../hs/hs_component.md#callback-areacollider)
-- [Callback - physics collision detection](../hs/hs_component.md#callback-physics-collision-detection)
-- [Callback - In-field collider detection](../hs/hs_component.md#callback-in-field-collider-detection)
+## Integrating Colliders with Scripts
+By utilizing HeliScript callback functions, you can create complex mechanisms that cannot be achieved with actions alone:
 
-## Tips: Implementing staircase colliders
+- [Callback - Area Collider](../hs/hs_component.md#-areacollider)
+- [Callback - Physics Collision Detection](../hs/hs_component.md#-_2)
+- [Callback - In-View Collider](../hs/hs_component.md#-_3)
 
-When creating stairs in a world, [VKC Node Mesh Colliders](../VKCComponents/VKCNodeMeshCollider.md) or Box Colliders tend to cause camera shakes on stepping on, and requiring the player to jump when step height is too high. This may cause unintentional stress when walking around!
+## Practical Tips
 
-![ColliderTips_Stair_1](./img/ColliderTips_Stair_1.jpg)
+!!! tips "Stair Collider Placement Technique"
+    When placing colliders on stairs, using [VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md) or Box Collider as is can cause movement jitter or require jumping on certain steps, creating stress for players.
+    ![ColliderTips_Stair_1](./img/ColliderTips_Stair_1.jpg)
+    ![ColliderTips_Stair_1_Result](./img/ColliderTips_Stair_1_Result.gif)
+    As a better solution, you can create stairs that players can climb smoothly by placing Box Colliders at an angle to create a slope.
+    ![ColliderTips_Stair_2](./img/ColliderTips_Stair_2.jpg)
+    ![ColliderTips_Stair_2_Result](./img/ColliderTips_Stair_2_Result.gif)
 
-![ColliderTips_Stair_1_Result](./img/ColliderTips_Stair_1_Result.gif)
 
-Therefore, smoother stairs can be implemented by placing a diagonal Box Collider in a slope-like manner.
-
-![ColliderTips_Stair_2](./img/ColliderTips_Stair_2.jpg)
-
-![ColliderTips_Stair_2_Result](./img/ColliderTips_Stair_2_Result.gif)
+!!! note "How Player Collision Detection Works"
+    Players have collision detection on the orange sphere shown in the image.<br>
+    The orange sphere can be visualized with the following steps:  
+    1. First, enable [Debug Mode](../WorldEditingTips/DebugMode.md#f3) in [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md).  
+    2. After building, it will be displayed by pressing the F3 key during gameplay.  
+    ![ColliderTips_player_1](./img/ColliderTips_player_1.jpg)

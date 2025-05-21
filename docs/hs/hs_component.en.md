@@ -265,7 +265,7 @@ m_PhysicsIDCube;
 
 ## Callback - In-field collider detection
 
-Called when the collider with [VKC Node Collider](../VKCComponents/VKCNodeCollider.md) specified "InView" enters the field of view or goes out of the field of view.
+Called when the collider with [VKC Node Collider](../VKCComponents/VKCNodeCollider.md) specified "In View" enters the field of view or goes out of the field of view.
 
 Components must be set to the same item.
 
@@ -335,7 +335,7 @@ This will be called when the item receives a message. The argument message conta
 ## Callback - Emote Change
 
 ```
-public void OnEmoteChange(int EmoteIndex)
+public void OnEmoteChanged(int EmoteIndex)
 ```
 
 This callback is invoked when a player's emote is changed (played).  
