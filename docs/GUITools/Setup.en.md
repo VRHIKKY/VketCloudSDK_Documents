@@ -8,7 +8,7 @@ As preparation, set up the Unity project and install the Vket Cloud SDK accordin
 
 !!! warning "Points to Note When Setting Up the Environment"
 
-    - The editor version should be 2019.4.31f1 or 2022.3.6f1
+    - The editor version should be 2019.4.31f1
     - Use the 3D template
     - Ensure the project name does not include spaces, Hiragana, Katakana, Kanji, or any other double-byte characters
 
