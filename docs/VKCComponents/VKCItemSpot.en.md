@@ -14,7 +14,7 @@ To change the normal initial spawn position, set via the [HEOPlayer](HEOPlayer.m
 
 | Name | Default | Description |
 | ---- | ---- | ---- |
-| Auto Loading | True | Enable/Disable dynamic loading. |
+| Auto Loading | True | Toggles auto loading enable/disable. |
 | Clickable | False | Does not work with VKC Item Spot. |
 | Show Photo Mode | True | Does not work with VKC Item Spot. |
 | Item Render Priority | 0 | Change the rendering priority of items in the world. |
