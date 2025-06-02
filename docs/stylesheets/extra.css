@@ -124,3 +124,38 @@
 .md-search__scrollwrap::-webkit-scrollbar-track {
     background-color: transparent;
 }
+
+/* Rounded edges for all images */
+.md-content img {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.md-content img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Ensure images don't overflow their containers */
+.md-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Special handling for logo images (no shadows) */
+.md-header img,
+.md-footer img,
+.md-logo img {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+/* For inline images in tables or lists */
+.md-content td img,
+.md-content li img {
+    margin: 0.5rem auto;
+}
