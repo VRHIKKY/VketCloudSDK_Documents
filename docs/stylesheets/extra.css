@@ -5,3 +5,122 @@
     --md-accent-fg-color:      #0052aa;
     --md-accent-fg-color--transparent:    #0052aa;
 }
+
+/* Enhanced search results styling */
+.md-search__result {
+    border-radius: 0.4rem;
+    margin-bottom: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.md-search__result:hover {
+    box-shadow: 0 4px 12px rgba(0, 82, 170, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Search result preview text */
+.md-search-result__article {
+    padding: 0.8rem 1rem;
+}
+
+.md-search-result__teaser {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    max-height: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Search result metadata */
+.md-search-result__meta {
+    color: var(--md-default-fg-color--lighter);
+    font-size: 0.64rem;
+    margin-top: 0.4rem;
+}
+
+/* Category/section indicators */
+.md-search-result__icon {
+    color: var(--md-primary-fg-color);
+    margin-right: 0.4rem;
+}
+
+/* Search input enhancements */
+.md-search__input {
+    font-size: 0.9rem;
+    padding: 0.6rem 2.2rem;
+}
+
+/* Search suggestions */
+.md-search__suggest {
+    background-color: var(--md-default-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight search terms */
+.md-search-result em {
+    background-color: rgba(0, 82, 170, 0.1);
+    color: var(--md-primary-fg-color);
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 0.1rem;
+    border-radius: 0.1rem;
+}
+
+/* Search result categories */
+.md-search-result__more summary {
+    color: var(--md-primary-fg-color);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.4rem 0;
+}
+
+.md-search-result__more summary:hover {
+    text-decoration: underline;
+}
+
+/* Improve search result item spacing */
+.md-search-result__item {
+    border-left: 3px solid transparent;
+    padding-left: 0.8rem;
+    transition: border-color 0.2s ease;
+}
+
+.md-search-result__item:hover {
+    border-left-color: var(--md-primary-fg-color);
+}
+
+/* Add visual hierarchy to search results */
+.md-search-result__title {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+/* Search result path/breadcrumb */
+.md-search-result__link::before {
+    content: attr(data-md-component);
+    color: var(--md-default-fg-color--light);
+    font-size: 0.64rem;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+/* Loading indicator improvements */
+.md-search__scrollwrap::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.md-search__scrollwrap::-webkit-scrollbar-thumb {
+    background-color: var(--md-default-fg-color--lighter);
+    border-radius: 0.2rem;
+}
+
+.md-search__scrollwrap::-webkit-scrollbar-track {
+    background-color: transparent;
+}
