@@ -4,7 +4,7 @@ site_author: 'HIKKY'
 
 theme:
   favicon: images/Favicon.png
-  logo: images/VketCloudIcon.png
+  logo: images/VketCloudIcon_White.png
   name: material
   palette:
   - scheme: default
