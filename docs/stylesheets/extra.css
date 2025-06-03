@@ -32,6 +32,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
@@ -158,4 +159,299 @@
 .md-content td img,
 .md-content li img {
     margin: 0.5rem auto;
+}
+
+/* Simple Footer Styling */
+.md-footer {
+    background-color: #f5f5f5;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+    background-color: var(--md-footer-bg-color);
+}
+
+/* Footer logo sizing */
+.md-footer-logo {
+    max-width: 100px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Right side Hikky logo */
+.md-footer-logo-right-link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.md-footer-logo-right {
+    max-width: 100px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Make right SVG logo responsive to theme */
+[data-md-color-scheme="slate"] .md-footer-logo-right {
+    filter: brightness(0) invert(1);
+}
+
+.md-footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.md-footer-nav__section:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.md-footer-logo {
+    flex-shrink: 0;
+}
+
+.md-copyright {
+    white-space: nowrap;
+    font-size: 0.75rem;
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    color: #666666;
+}
+
+[data-md-color-scheme="slate"] .md-copyright {
+    color: var(--md-default-fg-color--light);
+}
+
+.md-footer-social {
+    margin-left: auto;
+}
+
+.md-footer-social__links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.md-footer-social__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--md-default-fg-color--lightest);
+    color: var(--md-default-fg-color--light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.md-footer-social__link:hover {
+    background-color: var(--md-primary-fg-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 82, 170, 0.3);
+}
+
+.md-footer-social__link svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Special styling for Hikky square logo to center it better */
+.md-footer-social__link:first-child svg {
+    width: 20px;
+    height: 20px;
+    transform: translateY(2px);
+}
+
+/* Note and Qiita logo styling */
+.note-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.qiita-logo {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* Light mode: Convert logos to match the dimmed color of other icons */
+.note-logo {
+    filter: opacity(0.54);
+}
+
+.qiita-logo {
+    filter: invert(1) brightness(0) saturate(0%) brightness(0.54);
+}
+
+/* Dark mode: Convert logos to match the dimmed light color */
+[data-md-color-scheme="slate"] .note-logo {
+    filter: brightness(0) invert(1) opacity(0.7);
+}
+
+[data-md-color-scheme="slate"] .qiita-logo {
+    filter: brightness(0) invert(1) opacity(0.7);
+}
+
+.md-footer-social__link--note,
+.md-footer-social__link--qiita {
+    padding: 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+    .md-footer-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .md-footer-nav__section:first-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    /* Center the logo link */
+    .md-footer-nav__section:first-child > a {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+    
+    .md-footer-social {
+        margin-left: 0;
+        order: -1;
+        width: 100%;
+    }
+    
+    .md-footer-social__links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+    
+    /* Hide the right-side Hikky logo on mobile */
+    .md-footer-logo-right-link {
+        display: none;
+    }
+    
+    /* Ensure copyright is centered */
+    .md-copyright {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 44.9375em) {
+    .md-footer__inner {
+        padding: 1rem 0.5rem;
+    }
+    
+    .md-footer-social__links {
+        gap: 0.5rem;
+    }
+    
+    /* Smaller social buttons on very small screens */
+    .md-footer-social__link {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* Adjust logo sizes for mobile */
+    .md-footer-logo {
+        max-width: 80px;
+        max-height: 24px;
+    }
+    
+    .md-footer-social__link svg,
+    .note-logo,
+    .qiita-logo {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .md-footer-social__link:first-child svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .note-logo {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .md-copyright {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--md-primary-fg-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+    background-color: var(--md-primary-fg-color--dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Mobile adjustments for back to top button */
+@media screen and (max-width: 44.9375em) {
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .back-to-top svg {
+        width: 20px;
+        height: 20px;
+    }
 }
