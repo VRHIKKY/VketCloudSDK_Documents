@@ -6,6 +6,24 @@
     --md-accent-fg-color--transparent:    #0052aa;
 }
 
+/* Light mode text color */
+[data-md-color-scheme="default"] {
+    --md-default-fg-color: #333333;
+    --md-default-fg-color--light: #333333cc;
+    --md-default-fg-color--lighter: #33333380;
+    --md-default-fg-color--lightest: #3333334d;
+    --md-typeset-color: #333333;
+}
+
+/* Dark mode text color */
+[data-md-color-scheme="slate"] {
+    --md-default-fg-color: #EEEEEE;
+    --md-default-fg-color--light: #EEEEEEB3;
+    --md-default-fg-color--lighter: #EEEEEE80;
+    --md-default-fg-color--lightest: #EEEEEE4D;
+    --md-typeset-color: #EEEEEE;
+}
+
 /* Enhanced search results styling */
 .md-search__result {
     border-radius: 0.4rem;
