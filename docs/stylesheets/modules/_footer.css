@@ -1,0 +1,233 @@
+/* ================================================
+   Footer Component Styles
+   ================================================ */
+
+/* Footer Container */
+[data-md-color-scheme="default"] .md-footer {
+    background-color: #F5F5F5;
+    border-top: 1px solid rgba(40, 40, 40, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+    background-color: #282828;
+    border-top: 1px solid rgba(245, 245, 245, 0.2);
+}
+
+/* Footer Layout */
+.md-footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.md-footer-nav__section:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Footer Logo */
+.md-footer-logo {
+    max-width: 100px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Right Side Logo */
+.md-footer-logo-right-link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.md-footer-logo-right {
+    max-width: 100px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+[data-md-color-scheme="slate"] .md-footer-logo-right {
+    filter: brightness(0) invert(1);
+}
+
+/* Footer Social Links */
+.md-footer-social {
+    margin-left: auto;
+}
+
+.md-footer-social__links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.md-footer-social__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    color: var(--md-default-fg-color--light);
+    text-decoration: none;
+    transition: var(--transition-default);
+}
+
+[data-md-color-scheme="default"] .md-footer-social__link {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.6),
+                inset 0 -0.5px 0.5px 0 rgba(0, 0, 0, 0.05);
+}
+
+[data-md-color-scheme="slate"] .md-footer-social__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.2),
+                inset 0 -0.5px 0.5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.md-footer-social__link:hover {
+    background-color: var(--md-primary-fg-color);
+    color: white;
+    transform: translateY(-2px);
+    border-color: transparent;
+    box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.3),
+                inset 0 -0.5px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.md-footer-social__link svg {
+    width: 16px;
+    height: 16px;
+}
+
+.md-footer-social__link:first-child svg {
+    width: 20px;
+    height: 20px;
+    transform: translateY(2px);
+}
+
+/* Special Logo Styles */
+.note-logo,
+.qiita-logo {
+    object-fit: contain;
+}
+
+.note-logo {
+    width: 20px;
+    height: 20px;
+    filter: opacity(0.54);
+}
+
+.qiita-logo {
+    width: 16px;
+    height: 16px;
+    filter: invert(1) brightness(0) saturate(0%) brightness(0.54);
+}
+
+[data-md-color-scheme="slate"] .note-logo {
+    filter: brightness(0) invert(1) opacity(0.7);
+}
+
+[data-md-color-scheme="slate"] .qiita-logo {
+    filter: brightness(0) invert(1) opacity(0.7);
+}
+
+.md-footer-social__link--note,
+.md-footer-social__link--qiita {
+    padding: 0;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 76.1875em) {
+    .md-footer-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .md-footer-nav__section:first-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .md-footer-nav__section:first-child > a {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+    
+    .md-footer-social {
+        margin-left: 0;
+        order: -1;
+        width: 100%;
+    }
+    
+    .md-footer-social__links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+    
+    .md-footer-logo-right-link {
+        display: none;
+    }
+    
+    .md-copyright {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 44.9375em) {
+    .md-footer__inner {
+        padding: 1rem 0.5rem;
+    }
+    
+    .md-footer-social__links {
+        gap: 0.5rem;
+    }
+    
+    .md-footer-social__link {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .md-footer-logo {
+        max-width: 80px;
+        max-height: 24px;
+    }
+    
+    .md-footer-social__link svg,
+    .note-logo,
+    .qiita-logo {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .md-footer-social__link:first-child svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .note-logo {
+        width: 18px;
+        height: 18px;
+    }
+}

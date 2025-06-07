@@ -1,0 +1,59 @@
+/* ================================================
+   Back to Top Button Styles
+   ================================================ */
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--md-primary-fg-color);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-default);
+    z-index: 100;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.3),
+                inset 0 -0.5px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+    background-color: var(--md-primary-fg-color--dark);
+    transform: translateY(-2px);
+    box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.4),
+                inset 0 -0.5px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 44.9375em) {
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .back-to-top svg {
+        width: 20px;
+        height: 20px;
+    }
+}

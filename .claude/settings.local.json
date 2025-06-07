@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(mkdocs serve:*)",
+      "Bash(chmod:*)",
+      "Bash(cp:*)",
+      "Bash(mkdir:*)",
+      "Bash(./build-css.sh:*)"
     ],
     "deny": []
   }

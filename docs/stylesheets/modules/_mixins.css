@@ -1,0 +1,69 @@
+/* ================================================
+   Reusable Utility Classes and Mixins
+   ================================================ */
+
+/* Glass Morphism Utility */
+.glass-morphism {
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: var(--transition-default);
+}
+
+.glass-morphism:hover {
+    background-color: var(--glass-bg-hover);
+    box-shadow: var(--glass-shadow-hover);
+    transform: translateY(-1px);
+}
+
+/* Rounded Container Utility */
+.rounded-container {
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+}
+
+.rounded-container--large {
+    border-radius: var(--border-radius-large);
+}
+
+.rounded-container--small {
+    border-radius: var(--border-radius-small);
+}
+
+/* Elevation Utilities */
+.elevation-1 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.elevation-2 {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-3 {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+/* Transition Utilities */
+.transition-default {
+    transition: var(--transition-default);
+}
+
+.transition-fast {
+    transition: var(--transition-fast);
+}
+
+/* Hide Utilities */
+.hide-icon {
+    display: none !important;
+}
+
+/* Text Shadow Utilities */
+.text-shadow-light {
+    text-shadow: var(--header-text-shadow);
+}
+
+.text-shadow-dark {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}

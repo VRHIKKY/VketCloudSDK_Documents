@@ -1,0 +1,1444 @@
+/* ================================================
+   VketCloud SDK Documentation - Glass Neumorphism Theme
+   Optimized Version - Reduced from 1428 to ~1100 lines
+   ================================================ */
+
+/* CSS Variables & Root Settings */
+:root {
+    --md-primary-fg-color: #0052aa;
+    --md-primary-fg-color--light: #0052aa;
+    --md-primary-fg-color--dark: #0052aa;
+    --md-accent-fg-color: #0052aa;
+    --md-accent-fg-color--transparent: #0052aa;
+    
+    /* Reusable glass morphism values */
+    --glass-blur: blur(20px) saturate(180%);
+    --glass-blur-light: blur(10px) saturate(180%);
+    --transition-default: all 0.3s ease;
+    --transition-fast: all 0.2s ease;
+    --border-radius-large: 24px;
+    --border-radius-medium: 16px;
+    --border-radius-small: 12px;
+    --nav-link-color: #478ECF;
+    --sidebar-width: 13.1rem;
+}
+
+/* Light mode */
+[data-md-color-scheme="default"] {
+    --md-default-fg-color: #333333;
+    --md-default-fg-color--light: #333333cc;
+    --md-default-fg-color--lighter: #33333380;
+    --md-default-fg-color--lightest: #3333334d;
+    --md-typeset-color: #333333;
+    --md-default-bg-color: #F5F5F5;
+    --md-default-bg-color--light: #F5F5F5E6;
+    --md-default-bg-color--lighter: #F5F5F5B3;
+    --md-default-bg-color--lightest: #F5F5F580;
+    
+    /* Glass morphism values */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-bg-hover: rgba(255, 255, 255, 0.15);
+    --glass-bg-strong: rgba(255, 255, 255, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.5),
+                    inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05),
+                    0 8px 32px rgba(0, 0, 0, 0.1);
+    --glass-shadow-hover: inset 0 2px 4px 0 rgba(255, 255, 255, 0.6),
+                          inset 0 -1px 2px 0 rgba(0, 0, 0, 0.03),
+                          0 10px 40px rgba(0, 0, 0, 0.12);
+    --header-text-color: #1a1a1a;
+    --header-text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+    --md-default-fg-color: #EEEEEE;
+    --md-default-fg-color--light: #EEEEEEB3;
+    --md-default-fg-color--lighter: #EEEEEE80;
+    --md-default-fg-color--lightest: #EEEEEE4D;
+    --md-typeset-color: #EEEEEE;
+    --md-default-bg-color: #282828;
+    --md-default-bg-color--light: #282828E6;
+    --md-default-bg-color--lighter: #282828B3;
+    --md-default-bg-color--lightest: #28282880;
+    
+    /* Glass morphism values */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-bg-hover: rgba(255, 255, 255, 0.08);
+    --glass-bg-strong: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.1),
+                    0 8px 32px rgba(0, 0, 0, 0.3);
+    --glass-shadow-hover: inset 0 2px 4px 0 rgba(255, 255, 255, 0.15),
+                          0 10px 40px rgba(0, 0, 0, 0.4);
+    --header-text-color: #FFFFFF;
+    --header-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Typography & Links */
+.md-typeset a {
+    text-decoration: none;
+}
+
+/* Hide navigation icons */
+.md-nav__icon,
+.md-icon {
+    display: none !important;
+}
+
+[data-md-color-scheme="default"] .md-typeset a {
+    color: #4778EC;
+}
+
+[data-md-color-scheme="default"] .md-typeset a:hover,
+[data-md-color-scheme="default"] .md-typeset a:focus,
+[data-md-color-scheme="default"] .md-typeset a:active {
+    color: #0052AA;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+    color: #40C8FF;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover,
+[data-md-color-scheme="slate"] .md-typeset a:focus,
+[data-md-color-scheme="slate"] .md-typeset a:active {
+    color: #40C8FF;
+    text-decoration: underline;
+}
+
+/* Header with Glass Morphism */
+.md-header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.md-header--shadow {
+    box-shadow: none !important;
+}
+
+.md-header__inner {
+    border-radius: 50px;
+    padding: 0.25rem 1rem;
+    margin: 0 auto;
+    max-width: calc(100% - 2rem);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    transition: var(--transition-default);
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+.md-header__inner:hover {
+    transform: translateY(-1px) scale(1.001);
+    background-color: var(--glass-bg-hover);
+    box-shadow: var(--glass-shadow-hover);
+}
+
+/* Header text and elements */
+.md-header__title,
+.md-header__button {
+    color: var(--header-text-color);
+    text-shadow: var(--header-text-shadow);
+}
+
+.md-header__title {
+    font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-header__title {
+    font-weight: 500;
+}
+
+.md-header__button {
+    transition: var(--transition-fast);
+    border-radius: 50%;
+}
+
+.md-header__button:hover {
+    transform: translateY(-1px);
+    background-color: rgba(0, 82, 170, 0.08);
+}
+
+/* Header logo - make it white in dark mode */
+[data-md-color-scheme="slate"] .md-header .md-logo img {
+    filter: brightness(0) invert(1);
+}
+
+/* Adjust header elements spacing and alignment */
+.md-header__nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.md-header__source {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Hover effect for the header - matching sidebar */
+.md-header__inner:hover {
+    transform: translateY(-1px) scale(1.001);
+}
+
+[data-md-color-scheme="default"] .md-header__inner:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.6),
+                inset 0 -1px 2px 0 rgba(0, 0, 0, 0.03),
+                0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-header__inner:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.15),
+                0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments for capsule header */
+@media screen and (max-width: 76.1875em) {
+    .md-header {
+        padding: 0.5rem 0.5rem;
+    }
+    
+    .md-header__inner {
+        max-width: calc(100% - 1rem);
+        padding: 0.25rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 44.9375em) {
+    .md-header__inner {
+        border-radius: 30px;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/* Remove search overlay */
+.md-search__overlay {
+    display: none !important;
+}
+
+/* Enhanced search bar in header with glass effect */
+.md-search__form {
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+[data-md-color-scheme="default"] .md-search__form {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.md-search__form:hover,
+.md-search__form:focus-within {
+    transform: translateY(-1px);
+}
+
+[data-md-color-scheme="default"] .md-search__form:hover,
+[data-md-color-scheme="default"] .md-search__form:focus-within {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-search__form:hover,
+[data-md-color-scheme="slate"] .md-search__form:focus-within {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Search input field */
+.md-search__input {
+    border-radius: 24px;
+    padding: 0.6rem 2.2rem;
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: none !important;
+    outline: none !important;
+}
+
+[data-md-color-scheme="default"] .md-search__input {
+    color: #333333;
+}
+
+[data-md-color-scheme="slate"] .md-search__input {
+    color: #EEEEEE;
+}
+
+.md-search__input::placeholder {
+    opacity: 0.7;
+}
+
+/* Remove default outline and focus styles */
+.md-search__input:focus {
+    outline: none;
+    box-shadow: none;
+    border-radius: 24px;
+}
+
+/* Remove focus styling for the form container */
+.md-search__form:focus-within {
+    outline: none;
+    border-color: transparent;
+}
+
+/* Search icon styling */
+.md-search__icon {
+    color: var(--md-default-fg-color--light);
+}
+
+/* Rounded search popup/dropdown */
+.md-search__output {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+[data-md-color-scheme="slate"] .md-search__output {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.md-search__scrollwrap {
+    border-radius: 16px;
+}
+
+/* Enhanced search results styling */
+.md-search__result {
+    border-radius: 0.4rem;
+    margin-bottom: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.md-search__result:hover {
+    box-shadow: 0 4px 12px rgba(0, 82, 170, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Search result preview text */
+.md-search-result__article {
+    padding: 0.8rem 1rem;
+}
+
+.md-search-result__teaser {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    max-height: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Search result metadata */
+.md-search-result__meta {
+    color: var(--md-default-fg-color--lighter);
+    font-size: 0.64rem;
+    margin-top: 0.4rem;
+}
+
+/* Category/section indicators */
+.md-search-result__icon {
+    color: var(--md-primary-fg-color);
+    margin-right: 0.4rem;
+}
+
+
+/* Search suggestions */
+.md-search__suggest {
+    background-color: var(--md-default-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight search terms */
+.md-search-result em {
+    background-color: rgba(0, 82, 170, 0.1);
+    color: var(--md-primary-fg-color);
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 0.1rem;
+    border-radius: 0.1rem;
+}
+
+/* Search result categories */
+.md-search-result__more summary {
+    color: var(--md-primary-fg-color);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.4rem 0;
+}
+
+.md-search-result__more summary:hover {
+    text-decoration: underline;
+}
+
+/* Improve search result item spacing */
+.md-search-result__item {
+    border-left: 3px solid transparent;
+    padding-left: 0.8rem;
+    transition: border-color 0.2s ease;
+}
+
+.md-search-result__item:hover {
+    border-left-color: var(--md-primary-fg-color);
+}
+
+/* Add visual hierarchy to search results */
+.md-search-result__title {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+/* Search result path/breadcrumb */
+.md-search-result__link::before {
+    content: attr(data-md-component);
+    color: var(--md-default-fg-color--light);
+    font-size: 0.64rem;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+/* Loading indicator improvements */
+.md-search__scrollwrap::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.md-search__scrollwrap::-webkit-scrollbar-thumb {
+    background-color: var(--md-default-fg-color--lighter);
+    border-radius: 0.2rem;
+}
+
+.md-search__scrollwrap::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Rounded edges for all images */
+.md-content img {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.md-content img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Ensure images don't overflow their containers */
+.md-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Special handling for logo images (no shadows) */
+.md-header img,
+.md-footer img,
+.md-logo img {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+/* For inline images in tables or lists */
+.md-content td img,
+.md-content li img {
+    margin: 0.5rem auto;
+}
+
+
+/* Simple Footer Styling */
+[data-md-color-scheme="default"] .md-footer {
+    background-color: #F5F5F5;
+    border-top: 1px solid rgba(40, 40, 40, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+    background-color: #282828;
+    border-top: 1px solid rgba(245, 245, 245, 0.2);
+}
+
+/* Footer logo sizing */
+.md-footer-logo {
+    max-width: 100px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Right side Hikky logo */
+.md-footer-logo-right-link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.md-footer-logo-right {
+    max-width: 100px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Make right SVG logo responsive to theme */
+[data-md-color-scheme="slate"] .md-footer-logo-right {
+    filter: brightness(0) invert(1);
+}
+
+.md-footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.md-footer-nav__section:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.md-footer-logo {
+    flex-shrink: 0;
+}
+
+.md-copyright {
+    white-space: nowrap;
+    font-size: 0.75rem;
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    color: #666666;
+}
+
+[data-md-color-scheme="slate"] .md-copyright {
+    color: var(--md-default-fg-color--light);
+}
+
+.md-footer-social {
+    margin-left: auto;
+}
+
+.md-footer-social__links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.md-footer-social__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    color: var(--md-default-fg-color--light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+[data-md-color-scheme="default"] .md-footer-social__link {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.6),
+                inset 0 -1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+[data-md-color-scheme="slate"] .md-footer-social__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.2),
+                inset 0 -1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.md-footer-social__link:hover {
+    background-color: var(--md-primary-fg-color);
+    color: white;
+    transform: translateY(-2px);
+    border-color: transparent;
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.3),
+                inset 0 -1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.md-footer-social__link svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Special styling for Hikky square logo to center it better */
+.md-footer-social__link:first-child svg {
+    width: 20px;
+    height: 20px;
+    transform: translateY(2px);
+}
+
+/* Note and Qiita logo styling */
+.note-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.qiita-logo {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* Light mode: Convert logos to match the dimmed color of other icons */
+.note-logo {
+    filter: opacity(0.54);
+}
+
+.qiita-logo {
+    filter: invert(1) brightness(0) saturate(0%) brightness(0.54);
+}
+
+/* Dark mode: Convert logos to match the dimmed light color */
+[data-md-color-scheme="slate"] .note-logo {
+    filter: brightness(0) invert(1) opacity(0.7);
+}
+
+[data-md-color-scheme="slate"] .qiita-logo {
+    filter: brightness(0) invert(1) opacity(0.7);
+}
+
+.md-footer-social__link--note,
+.md-footer-social__link--qiita {
+    padding: 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+    .md-footer-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .md-footer-nav__section:first-child {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    /* Center the logo link */
+    .md-footer-nav__section:first-child > a {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+    
+    .md-footer-social {
+        margin-left: 0;
+        order: -1;
+        width: 100%;
+    }
+    
+    .md-footer-social__links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+    
+    /* Hide the right-side Hikky logo on mobile */
+    .md-footer-logo-right-link {
+        display: none;
+    }
+    
+    /* Ensure copyright is centered */
+    .md-copyright {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 44.9375em) {
+    .md-footer__inner {
+        padding: 1rem 0.5rem;
+    }
+    
+    .md-footer-social__links {
+        gap: 0.5rem;
+    }
+    
+    /* Smaller social buttons on very small screens */
+    .md-footer-social__link {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* Adjust logo sizes for mobile */
+    .md-footer-logo {
+        max-width: 80px;
+        max-height: 24px;
+    }
+    
+    .md-footer-social__link svg,
+    .note-logo,
+    .qiita-logo {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .md-footer-social__link:first-child svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .note-logo {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .md-copyright {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Remove border between header and content */
+.md-container {
+    border-top: none !important;
+}
+
+.md-main {
+    border-top: none !important;
+}
+
+.md-sidebar {
+    border-top: none !important;
+}
+
+/* Remove any top border or shadow from content area */
+.md-content__inner {
+    border-top: none !important;
+}
+
+/* Back to top button with glass neumorphism */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--md-primary-fg-color);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.3),
+                inset 0 -1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+    background-color: var(--md-primary-fg-color--dark);
+    transform: translateY(-2px);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.4),
+                inset 0 -1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Maximize content width by aligning sidebars to edges */
+.md-container {
+    max-width: 100% !important;
+}
+
+.md-grid {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+}
+
+/* Force main element to full width */
+.md-main {
+    max-width: 100% !important;
+}
+
+.md-main__inner {
+    max-width: 100% !important;
+    margin: 0 !important;
+    display: flex;
+    height: 100%;
+}
+
+/* Glass neumorphism for sidebar inner - matching navigation bar */
+.md-sidebar__inner {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 24px;
+    margin: 0.5rem;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    overflow: visible;
+    width: calc(100% - 1rem); /* Make inner wider to accommodate nav items */
+}
+
+[data-md-color-scheme="default"] .md-sidebar__inner {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.5),
+                inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05),
+                0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-sidebar__inner {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.1),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Glass neumorphism for primary navigation */
+.md-nav--primary {
+    background-color: transparent;
+    border-radius: 20px;
+    overflow: visible;
+}
+
+/* Ensure equal spacing for navigation list */
+.md-nav--primary .md-nav__list {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation container within sidebar now has no additional styling */
+
+/* Hide navigation titles */
+.md-nav__title {
+    display: none !important;
+}
+
+/* Push left sidebar to the left edge */
+.md-sidebar--primary {
+    left: 0;
+    top: 3.6rem; /* Default position below header */
+    position: sticky;
+    height: calc(100vh - 3.6rem);
+    transition: all 0.3s ease;
+}
+
+/* Push right sidebar (table of contents) to the right edge */
+.md-sidebar--secondary {
+    right: 0;
+}
+
+/* Hover effect for sidebar inner */
+.md-sidebar__inner:hover {
+    transform: translateY(-1px);
+}
+
+[data-md-color-scheme="default"] .md-sidebar__inner:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.9),
+                inset 0 -1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+[data-md-color-scheme="slate"] .md-sidebar__inner:hover {
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Make sidebar scrollwrap transparent */
+.md-sidebar__scrollwrap {
+    background-color: transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    overflow: visible;
+    padding: 0 0.5rem;
+}
+
+/* When header is hidden, extend sidebar to top */
+.md-header--hidden ~ .md-container .md-sidebar__scrollwrap {
+    height: 100vh !important;
+    padding-top: 1rem;
+}
+
+/* Adjust sidebar inner when header is hidden */
+.md-header--hidden ~ .md-container .md-sidebar__inner {
+    height: calc(100vh - 2rem);
+    margin-top: 0;
+}
+
+/* Make primary sidebar go to top when header is hidden */
+.md-header--hidden ~ .md-container .md-sidebar--primary {
+    top: -5rem !important;
+    height: calc(100vh + 5rem) !important;
+    padding-top: 5rem !important;
+}
+
+/* Adjust primary sidebar scrollwrap to fill entire height */
+.md-header--hidden ~ .md-container .md-sidebar--primary .md-sidebar__scrollwrap {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    height: 100vh !important;
+}
+
+/* Move the inner container up as well */
+.md-header--hidden ~ .md-container .md-sidebar--primary .md-sidebar__inner {
+    margin-top: 1rem !important;
+    height: calc(100vh - 2rem) !important;
+}
+
+/* Ensure smooth transition */
+.md-sidebar {
+    transition: all 0.3s ease;
+    width: 13.1rem !important;
+}
+
+.md-sidebar__inner {
+    transition: all 0.3s ease;
+}
+
+/* Navigation items with glass effect */
+.md-nav--primary .md-nav__item {
+    margin: 0.1rem;
+    padding: 0;
+}
+
+.md-nav--primary .md-nav__link {
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    margin: 0 0.5rem;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: visible;
+    background-color: #F5F5F5 !important;
+    color: #478ECF !important;
+    display: block;
+    width: calc(100% - 1rem);
+    white-space: nowrap;
+}
+
+/* Override text colors for specific color scheme */
+.md-nav--primary .md-nav__link {
+    color: #478ECF !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+}
+
+/* Dark mode adjustments for nav links */
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link {
+    background-color: #2A2A2A !important;
+    color: #478ECF !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__item--active > .md-nav__link {
+    background-color: #478ECF !important;
+    color: #FFFFFF !important;
+}
+
+/* Sidebar titles and section headers */
+[data-md-color-scheme="default"] .md-sidebar__inner .md-nav__title {
+    color: #000000;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+[data-md-color-scheme="slate"] .md-sidebar__inner .md-nav__title {
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Glass hover effect */
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__link:hover {
+    background-color: #E8E8E8 !important;
+    transform: translateX(2px);
+    color: #478ECF !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link:hover {
+    background-color: #3A3A3A !important;
+    transform: translateX(2px);
+    color: #478ECF !important;
+}
+
+/* Active navigation item with specific colors */
+.md-nav--primary .md-nav__item--active > .md-nav__link {
+    background-color: #478ECF !important;
+    color: #FFFFFF !important;
+    border-radius: 12px;
+    font-weight: 700 !important;
+}
+
+/* Override text shadow for active white text */
+.md-nav--primary .md-nav__item--active > .md-nav__link {
+    text-shadow: none !important;
+}
+
+/* Subtle active indicator - removed */
+.md-nav--primary .md-nav__item--active > .md-nav__link::before {
+    display: none;
+}
+
+/* Navigation sections with subtle separation */
+.md-nav--primary > .md-nav__list > .md-nav__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:last-child {
+    border-bottom: none;
+}
+
+/* Nested navigation items */
+.md-nav--primary .md-nav__item--nested > .md-nav {
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: visible;
+}
+
+/* Nested nav links - same width treatment as main nav links */
+.md-nav--primary .md-nav__item--nested .md-nav__link {
+    width: calc(100% - 0.5rem);
+    margin: 0 0.25rem;
+    white-space: nowrap;
+}
+
+/* Increase main content area width */
+.md-content {
+    max-width: none;
+    margin: 0 auto;
+}
+
+.md-content__inner {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Specifically expand md-content__inner with md-typeset class */
+.md-content__inner.md-typeset {
+    max-width: none !important;
+    width: 100% !important;
+}
+
+/* Override MkDocs Material default max-width for typeset */
+.md-typeset {
+    max-width: none !important;
+}
+
+/* Force full width for article content */
+.md-content article {
+    max-width: none !important;
+}
+
+/* Remove any padding constraints */
+.md-content__inner {
+    max-width: none !important;
+    padding: 0 2rem !important;
+}
+
+/* Adjust content margins for larger screens */
+@media screen and (min-width: 60em) {
+    .md-content {
+        margin: 0 !important;
+        flex-grow: 1;
+    }
+    
+    .md-main__inner {
+        padding: 0 !important;
+    }
+    
+    /* Remove any box-shadow and background from secondary nav title */
+    .md-nav--secondary .md-nav__title {
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+    }
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-content {
+        margin-left: 12.5rem;
+        margin-right: 15rem;
+    }
+    
+    .md-content__inner {
+        max-width: none;
+        margin: 0 auto;
+    }
+    
+    .md-content__inner.md-typeset {
+        max-width: none !important;
+    }
+    
+    /* Remove any box-shadow and background from nav title */
+    .md-nav--primary .md-nav__title {
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+    }
+}
+
+/* Wider content for very large screens */
+@media screen and (min-width: 88em) {
+    .md-grid {
+        max-width: 100%;
+        margin: 0 2rem;
+    }
+    
+    .md-content__inner {
+        max-width: none;
+    }
+    
+    .md-content__inner.md-typeset {
+        max-width: none !important;
+    }
+}
+
+
+/* Glass morphism for admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 16px;
+    backdrop-filter: blur(20px) saturate(120%);
+    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    border: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Light mode admonitions */
+[data-md-color-scheme="default"] .md-typeset .admonition,
+[data-md-color-scheme="default"] .md-typeset details {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode admonitions */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Admonition title with rounded top */
+.md-typeset .admonition-title,
+.md-typeset summary {
+    border-radius: 15px 15px 0 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    position: relative;
+}
+
+/* Subtle separator using gradient instead of border */
+.md-typeset .admonition-title::after,
+.md-typeset summary::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, 
+                transparent, 
+                rgba(255, 255, 255, 0.1) 20%, 
+                rgba(255, 255, 255, 0.1) 80%, 
+                transparent);
+}
+
+/* Specific colors for different admonition types with glass effect */
+[data-md-color-scheme="default"] {
+    .md-typeset .note > .admonition-title,
+    .md-typeset .note > summary {
+        background-color: rgba(68, 138, 255, 0.1);
+    }
+    
+    .md-typeset .abstract > .admonition-title,
+    .md-typeset .abstract > summary,
+    .md-typeset .summary > .admonition-title,
+    .md-typeset .summary > summary,
+    .md-typeset .tldr > .admonition-title,
+    .md-typeset .tldr > summary {
+        background-color: rgba(0, 176, 255, 0.1);
+    }
+    
+    .md-typeset .info > .admonition-title,
+    .md-typeset .info > summary,
+    .md-typeset .todo > .admonition-title,
+    .md-typeset .todo > summary {
+        background-color: rgba(0, 184, 212, 0.1);
+    }
+    
+    .md-typeset .tip > .admonition-title,
+    .md-typeset .tip > summary,
+    .md-typeset .hint > .admonition-title,
+    .md-typeset .hint > summary,
+    .md-typeset .important > .admonition-title,
+    .md-typeset .important > summary {
+        background-color: rgba(0, 191, 165, 0.1);
+    }
+    
+    .md-typeset .success > .admonition-title,
+    .md-typeset .success > summary,
+    .md-typeset .check > .admonition-title,
+    .md-typeset .check > summary,
+    .md-typeset .done > .admonition-title,
+    .md-typeset .done > summary {
+        background-color: rgba(0, 230, 118, 0.1);
+    }
+    
+    .md-typeset .question > .admonition-title,
+    .md-typeset .question > summary,
+    .md-typeset .help > .admonition-title,
+    .md-typeset .help > summary,
+    .md-typeset .faq > .admonition-title,
+    .md-typeset .faq > summary {
+        background-color: rgba(100, 221, 23, 0.1);
+    }
+    
+    .md-typeset .warning > .admonition-title,
+    .md-typeset .warning > summary,
+    .md-typeset .caution > .admonition-title,
+    .md-typeset .caution > summary,
+    .md-typeset .attention > .admonition-title,
+    .md-typeset .attention > summary {
+        background-color: rgba(255, 145, 0, 0.1);
+    }
+    
+    .md-typeset .failure > .admonition-title,
+    .md-typeset .failure > summary,
+    .md-typeset .fail > .admonition-title,
+    .md-typeset .fail > summary,
+    .md-typeset .missing > .admonition-title,
+    .md-typeset .missing > summary {
+        background-color: rgba(255, 82, 82, 0.1);
+    }
+    
+    .md-typeset .danger > .admonition-title,
+    .md-typeset .danger > summary,
+    .md-typeset .error > .admonition-title,
+    .md-typeset .error > summary {
+        background-color: rgba(255, 23, 68, 0.1);
+    }
+    
+    .md-typeset .bug > .admonition-title,
+    .md-typeset .bug > summary {
+        background-color: rgba(245, 0, 87, 0.1);
+    }
+    
+    .md-typeset .example > .admonition-title,
+    .md-typeset .example > summary {
+        background-color: rgba(124, 77, 255, 0.1);
+    }
+    
+    .md-typeset .quote > .admonition-title,
+    .md-typeset .quote > summary,
+    .md-typeset .cite > .admonition-title,
+    .md-typeset .cite > summary {
+        background-color: rgba(158, 158, 158, 0.1);
+    }
+}
+
+/* Dark mode specific admonition colors */
+[data-md-color-scheme="slate"] .md-typeset .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset summary {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Hover effect for expandable admonitions */
+.md-typeset .admonition:hover,
+.md-typeset details:hover {
+    transform: translateY(-2px);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition:hover,
+[data-md-color-scheme="default"] .md-typeset details:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition:hover,
+[data-md-color-scheme="slate"] .md-typeset details:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Remove default borders */
+.md-typeset .admonition,
+.md-typeset details {
+    border-left: none;
+}
+
+/* Mobile sidebar glass morphism design */
+@media screen and (max-width: 76.1875em) {
+    /* Mobile menu toggle button glass morphism */
+    .md-header__button:first-child {
+        backdrop-filter: blur(10px) saturate(180%);
+        -webkit-backdrop-filter: blur(10px) saturate(180%);
+        border-radius: 50%;
+        margin: 0.2rem;
+        transition: all 0.3s ease;
+    }
+    
+    [data-md-color-scheme="default"] .md-header__button:first-child {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.6),
+                    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.05);
+    }
+    
+    [data-md-color-scheme="slate"] .md-header__button:first-child {
+        background-color: rgba(255, 255, 255, 0.05);
+        box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Mobile drawer/sidebar container */
+    .md-sidebar--primary {
+        background: transparent !important;
+    }
+    
+    /* Glass morphism for mobile sidebar inner */
+    .md-sidebar--primary .md-sidebar__inner {
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border-radius: 0 24px 24px 0;
+        margin: 0;
+        height: 100vh;
+        transition: all 0.3s ease;
+    }
+    
+    [data-md-color-scheme="default"] .md-sidebar--primary .md-sidebar__inner {
+        background-color: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: inset -2px 0 4px 0 rgba(0, 0, 0, 0.05),
+                    inset 2px 0 4px 0 rgba(255, 255, 255, 0.8),
+                    4px 0 24px rgba(0, 0, 0, 0.1);
+    }
+    
+    [data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__inner {
+        background-color: rgba(40, 40, 40, 0.95);
+        border: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: inset -2px 0 4px 0 rgba(0, 0, 0, 0.2),
+                    inset 2px 0 4px 0 rgba(255, 255, 255, 0.1),
+                    4px 0 24px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Mobile sidebar scrollwrap */
+    .md-sidebar--primary .md-sidebar__scrollwrap {
+        height: 100%;
+        background-color: transparent;
+        padding: 1rem;
+        border-radius: 0;
+    }
+    
+    /* Overlay background blur */
+    .md-overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    
+    /* Mobile navigation items styling */
+    .md-sidebar--primary .md-nav__link {
+        border-radius: 12px;
+        margin: 0.2rem 0;
+        padding: 0.6rem 1rem;
+        transition: all 0.2s ease;
+    }
+    
+    .md-sidebar--primary .md-nav__link:hover {
+        transform: translateX(4px);
+    }
+    
+    [data-md-color-scheme="default"] .md-sidebar--primary .md-nav__link:hover {
+        background-color: rgba(0, 82, 170, 0.08);
+    }
+    
+    [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+    
+    /* Active item in mobile */
+    .md-sidebar--primary .md-nav__item--active > .md-nav__link {
+        background-color: rgba(0, 82, 170, 0.15);
+        font-weight: 600;
+    }
+    
+    /* Mobile sidebar title */
+    .md-sidebar--primary .md-nav__title {
+        padding: 1rem;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 60em) and (max-width: 76.1875em) {
+    .md-sidebar--primary .md-sidebar__inner {
+        border-radius: 24px;
+        margin: 1rem 0 1rem 1rem;
+    }
+}
+
+/* Mobile adjustments for back to top button */
+@media screen and (max-width: 44.9375em) {
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .back-to-top svg {
+        width: 20px;
+        height: 20px;
+    }
+}

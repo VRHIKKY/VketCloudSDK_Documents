@@ -1,0 +1,95 @@
+/* ================================================
+   CSS Variables and Custom Properties
+   ================================================ */
+
+:root {
+    /* Primary Colors */
+    --md-primary-fg-color: #0052aa;
+    --md-primary-fg-color--light: #0052aa;
+    --md-primary-fg-color--dark: #0052aa;
+    --md-accent-fg-color: #0052aa;
+    --md-accent-fg-color--transparent: #0052aa;
+    
+    /* Glass Morphism Effects */
+    --glass-blur: blur(20px) saturate(180%);
+    --glass-blur-light: blur(10px) saturate(180%);
+    
+    /* Transitions */
+    --transition-default: all 0.3s ease;
+    --transition-fast: all 0.2s ease;
+    
+    /* Border Radius */
+    --border-radius-large: 24px;
+    --border-radius-medium: 16px;
+    --border-radius-small: 12px;
+    
+    /* Layout */
+    --nav-link-color: #478ECF;
+    --sidebar-width: 13.1rem;
+}
+
+/* Light Mode Variables */
+[data-md-color-scheme="default"] {
+    /* Text Colors */
+    --md-default-fg-color: #333333;
+    --md-default-fg-color--light: #333333cc;
+    --md-default-fg-color--lighter: #33333380;
+    --md-default-fg-color--lightest: #3333334d;
+    --md-typeset-color: #333333;
+    
+    /* Background Colors */
+    --md-default-bg-color: #F5F5F5;
+    --md-default-bg-color--light: #F5F5F5E6;
+    --md-default-bg-color--lighter: #F5F5F5B3;
+    --md-default-bg-color--lightest: #F5F5F580;
+    
+    /* Glass Morphism */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-bg-hover: rgba(255, 255, 255, 0.15);
+    --glass-bg-strong: rgba(255, 255, 255, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.5),
+                    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.05),
+                    0 4px 16px rgba(0, 0, 0, 0.08);
+    --glass-shadow-hover: inset 0 1px 2px 0 rgba(255, 255, 255, 0.6),
+                          inset 0 -1px 1px 0 rgba(0, 0, 0, 0.03),
+                          0 6px 20px rgba(0, 0, 0, 0.1);
+    
+    /* Typography */
+    --header-text-color: #1a1a1a;
+    --header-text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    --link-color: #4778EC;
+    --link-hover-color: #0052AA;
+}
+
+/* Dark Mode Variables */
+[data-md-color-scheme="slate"] {
+    /* Text Colors */
+    --md-default-fg-color: #EEEEEE;
+    --md-default-fg-color--light: #EEEEEEB3;
+    --md-default-fg-color--lighter: #EEEEEE80;
+    --md-default-fg-color--lightest: #EEEEEE4D;
+    --md-typeset-color: #EEEEEE;
+    
+    /* Background Colors */
+    --md-default-bg-color: #282828;
+    --md-default-bg-color--light: #282828E6;
+    --md-default-bg-color--lighter: #282828B3;
+    --md-default-bg-color--lightest: #28282880;
+    
+    /* Glass Morphism */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-bg-hover: rgba(255, 255, 255, 0.08);
+    --glass-bg-strong: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.1),
+                    0 4px 16px rgba(0, 0, 0, 0.25);
+    --glass-shadow-hover: inset 0 1px 2px 0 rgba(255, 255, 255, 0.15),
+                          0 6px 20px rgba(0, 0, 0, 0.35);
+    
+    /* Typography */
+    --header-text-color: #FFFFFF;
+    --header-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    --link-color: #40C8FF;
+    --link-hover-color: #40C8FF;
+}

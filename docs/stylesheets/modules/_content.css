@@ -1,0 +1,143 @@
+/* ================================================
+   Content Area Styles
+   ================================================ */
+
+/* Remove Borders */
+.md-container,
+.md-main,
+.md-sidebar,
+.md-content__inner {
+    border-top: none !important;
+}
+
+/* Content Layout */
+.md-container {
+    max-width: 100% !important;
+}
+
+.md-grid {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+}
+
+.md-main {
+    max-width: 100% !important;
+}
+
+.md-main__inner {
+    max-width: 100% !important;
+    margin: 0 !important;
+    display: flex;
+    height: 100%;
+}
+
+/* Content Area */
+.md-content {
+    max-width: none;
+    margin: 0 auto;
+}
+
+.md-content__inner {
+    margin: 0 auto;
+    padding: 0 2rem !important;
+    max-width: none !important;
+}
+
+.md-content__inner.md-typeset {
+    max-width: none !important;
+    width: 100% !important;
+}
+
+.md-typeset {
+    max-width: none !important;
+}
+
+.md-content article {
+    max-width: none !important;
+}
+
+/* Content Images */
+.md-content img {
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-default);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.md-content img:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Exclude Special Images */
+.md-header img,
+.md-footer img,
+.md-logo img {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+.md-content td img,
+.md-content li img {
+    margin: 0.5rem auto;
+}
+
+/* Responsive Content */
+@media screen and (min-width: 60em) {
+    .md-content {
+        margin: 0 !important;
+        flex-grow: 1;
+    }
+    
+    .md-main__inner {
+        padding: 0 !important;
+    }
+    
+    .md-nav--secondary .md-nav__title {
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+    }
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-content {
+        margin-left: 12.5rem;
+        margin-right: 15rem;
+    }
+    
+    .md-content__inner {
+        max-width: none;
+        margin: 0 auto;
+    }
+    
+    .md-content__inner.md-typeset {
+        max-width: none !important;
+    }
+    
+    .md-nav--primary .md-nav__title {
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+    }
+}
+
+@media screen and (min-width: 88em) {
+    .md-grid {
+        max-width: 100%;
+        margin: 0 2rem;
+    }
+    
+    .md-content__inner {
+        max-width: none;
+    }
+    
+    .md-content__inner.md-typeset {
+        max-width: none !important;
+    }
+}

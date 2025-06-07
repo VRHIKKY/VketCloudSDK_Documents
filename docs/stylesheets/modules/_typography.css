@@ -1,0 +1,99 @@
+/* ================================================
+   Typography and Text Styles
+   ================================================ */
+
+/* Base Typography */
+.md-typeset a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: var(--transition-fast);
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus,
+.md-typeset a:active {
+    color: var(--link-hover-color);
+}
+
+/* Dark mode link underline on hover */
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+    text-decoration: underline;
+}
+
+/* Headers and Titles */
+.md-header__title {
+    font-weight: 600;
+    color: var(--header-text-color);
+    text-shadow: var(--header-text-shadow);
+}
+
+[data-md-color-scheme="slate"] .md-header__title {
+    font-weight: 500;
+}
+
+/* Navigation Text */
+.md-nav--primary .md-nav__link {
+    color: var(--nav-link-color) !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+}
+
+/* Active Navigation Text */
+.md-nav--primary .md-nav__item--active > .md-nav__link {
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+
+/* Search Result Typography */
+.md-search-result__title {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.md-search-result__teaser {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    max-height: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.md-search-result__meta {
+    color: var(--md-default-fg-color--lighter);
+    font-size: 0.64rem;
+    margin-top: 0.4rem;
+}
+
+/* Highlighted Search Terms */
+.md-search-result em {
+    background-color: rgba(0, 82, 170, 0.1);
+    color: var(--md-primary-fg-color);
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 0.1rem;
+    border-radius: 0.1rem;
+}
+
+/* Footer Copyright */
+.md-copyright {
+    white-space: nowrap;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #666666;
+}
+
+[data-md-color-scheme="slate"] .md-copyright {
+    color: var(--md-default-fg-color--light);
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 44.9375em) {
+    .md-copyright {
+        font-size: 0.7rem;
+    }
+}

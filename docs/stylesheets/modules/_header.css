@@ -1,0 +1,110 @@
+/* ================================================
+   Header Component Styles
+   ================================================ */
+
+/* Header Container - Positioned lower */
+.md-header {
+    position: sticky;
+    top: 1rem;
+    z-index: 4;
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+    border-bottom: none;
+    transition: padding 0.3s ease, top 0.3s ease;
+}
+
+.md-header--shadow {
+    box-shadow: none !important;
+}
+
+/* Header Inner with Glass Morphism */
+.md-header__inner {
+    border-radius: 50px;
+    padding: 0.5rem 1.25rem;
+    margin: 0 auto;
+    max-width: calc(100% - 2rem);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    transition: var(--transition-default);
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.md-header__inner:hover {
+    transform: translateY(-1px) scale(1.001);
+    background-color: var(--glass-bg-hover);
+    box-shadow: var(--glass-shadow-hover);
+}
+
+/* Header button text color */
+.md-header__button {
+    color: var(--header-text-color);
+}
+
+/* Header Logo */
+[data-md-color-scheme="slate"] .md-header .md-logo img {
+    filter: brightness(0) invert(1);
+}
+
+/* Header Layout */
+.md-header__nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.md-header__source {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Header Icons */
+.md-header .md-icon {
+    display: inline-block !important;
+}
+
+/* Responsive Header */
+@media screen and (max-width: 76.1875em) {
+    .md-header {
+        padding: 0.5rem 0.5rem;
+    }
+    
+    .md-header__inner {
+        max-width: calc(100% - 1rem);
+        padding: 0.25rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 44.9375em) {
+    .md-header__inner {
+        border-radius: 30px;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/* Mobile Menu Toggle with Glass Morphism */
+@media screen and (max-width: 76.1875em) {
+    .md-header__button:first-child {
+        backdrop-filter: blur(10px) saturate(180%);
+        -webkit-backdrop-filter: blur(10px) saturate(180%);
+        border-radius: 50%;
+        margin: 0.2rem;
+        transition: var(--transition-default);
+    }
+    
+    [data-md-color-scheme="default"] .md-header__button:first-child {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.6),
+                    inset 0 -0.5px 0.5px 0 rgba(0, 0, 0, 0.05);
+    }
+    
+    [data-md-color-scheme="slate"] .md-header__button:first-child {
+        background-color: rgba(255, 255, 255, 0.05);
+        box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+    }
+}

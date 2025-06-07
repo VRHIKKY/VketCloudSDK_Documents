@@ -1,0 +1,229 @@
+/* ================================================
+   Header UI/UX Enhancements
+   ================================================ */
+
+/* Logo improvements */
+.md-header__title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+.md-header .md-logo {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.md-header .md-logo:hover {
+    transform: scale(1.05);
+}
+
+.md-header .md-logo img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Search bar enhancements */
+.md-search {
+    flex-grow: 1;
+    max-width: 400px;
+    margin: 0 1rem;
+}
+
+.md-search__form {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+[data-md-color-scheme="default"] .md-search__form {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.md-search__form:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-md-color-scheme="default"] .md-search__form:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.md-search__form:focus-within {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--md-primary-fg-color);
+    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.2);
+}
+
+[data-md-color-scheme="default"] .md-search__form:focus-within {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.3);
+}
+
+/* Header button group */
+.md-header__options {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+/* Simplified header button styling */
+.md-header__button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    position: relative;
+    background: transparent;
+    border: none;
+}
+
+/* Repository/source button enhancement */
+.md-header__source {
+    order: 2;
+}
+
+.md-source {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--md-default-fg-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.md-source:hover {
+    background: var(--glass-bg-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.md-source__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.md-source__repository {
+    display: inline-block;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.3s ease;
+    white-space: nowrap;
+}
+
+.md-source:hover .md-source__repository {
+    max-width: 100px;
+}
+
+/* Language selector enhancement */
+.md-header__option {
+    position: relative;
+}
+
+/* Header scroll behavior */
+.md-header--hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.md-header {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                padding 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* Compact header on scroll */
+body:has(.md-header--hidden) .md-header,
+.md-header--shadow {
+    padding: 0.5rem 1rem;
+}
+
+/* Visual feedback for interactive elements */
+.md-header__button:active {
+    transform: scale(0.95);
+}
+
+/* Breadcrumb navigation (if needed) */
+.md-header__breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--md-default-fg-color--light);
+    margin-left: 1rem;
+}
+
+.md-header__breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.md-header__breadcrumb-separator {
+    opacity: 0.5;
+}
+
+/* Mobile menu button enhancement */
+@media screen and (max-width: 76.1875em) {
+    .md-header__button[for="__drawer"] {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .md-header__button[for="__drawer"]::before {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        background: currentColor;
+        border-radius: 1px;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 0 currentColor, 0 -6px 0 currentColor;
+    }
+    
+    .md-header__button[for="__drawer"]:hover::before {
+        box-shadow: 0 8px 0 currentColor, 0 -8px 0 currentColor;
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 60em) {
+    .md-search {
+        max-width: 300px;
+    }
+    
+    .md-source__repository {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 44.9375em) {
+    .md-header__inner {
+        gap: 0.5rem;
+        padding: 0.375rem 0.75rem;
+    }
+    
+    .md-header__button {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .md-search {
+        margin: 0 0.5rem;
+    }
+}

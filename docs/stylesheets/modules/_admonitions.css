@@ -1,0 +1,189 @@
+/* ================================================
+   Admonitions (Notes, Warnings, etc.) Styles
+   ================================================ */
+
+/* Base Admonition Styles */
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: var(--border-radius-medium);
+    backdrop-filter: blur(20px) saturate(120%);
+    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    border: none;
+    overflow: hidden;
+    transition: var(--transition-default);
+}
+
+/* Light Mode Admonitions */
+[data-md-color-scheme="default"] .md-typeset .admonition,
+[data-md-color-scheme="default"] .md-typeset details {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark Mode Admonitions */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Admonition Title */
+.md-typeset .admonition-title,
+.md-typeset summary {
+    border-radius: 15px 15px 0 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    position: relative;
+}
+
+/* Title Separator */
+.md-typeset .admonition-title::after,
+.md-typeset summary::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, 
+                transparent, 
+                rgba(255, 255, 255, 0.1) 20%, 
+                rgba(255, 255, 255, 0.1) 80%, 
+                transparent);
+}
+
+/* Remove Default Borders */
+.md-typeset .admonition,
+.md-typeset details {
+    border-left: none;
+}
+
+/* Hover Effects */
+.md-typeset .admonition:hover,
+.md-typeset details:hover {
+    transform: translateY(-2px);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition:hover,
+[data-md-color-scheme="default"] .md-typeset details:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition:hover,
+[data-md-color-scheme="slate"] .md-typeset details:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Admonition Type Colors - Light Mode */
+[data-md-color-scheme="default"] {
+    /* Note */
+    .md-typeset .note > .admonition-title,
+    .md-typeset .note > summary {
+        background-color: rgba(68, 138, 255, 0.1);
+    }
+    
+    /* Abstract/Summary/TLDR */
+    .md-typeset .abstract > .admonition-title,
+    .md-typeset .abstract > summary,
+    .md-typeset .summary > .admonition-title,
+    .md-typeset .summary > summary,
+    .md-typeset .tldr > .admonition-title,
+    .md-typeset .tldr > summary {
+        background-color: rgba(0, 176, 255, 0.1);
+    }
+    
+    /* Info/Todo */
+    .md-typeset .info > .admonition-title,
+    .md-typeset .info > summary,
+    .md-typeset .todo > .admonition-title,
+    .md-typeset .todo > summary {
+        background-color: rgba(0, 184, 212, 0.1);
+    }
+    
+    /* Tip/Hint/Important */
+    .md-typeset .tip > .admonition-title,
+    .md-typeset .tip > summary,
+    .md-typeset .hint > .admonition-title,
+    .md-typeset .hint > summary,
+    .md-typeset .important > .admonition-title,
+    .md-typeset .important > summary {
+        background-color: rgba(0, 191, 165, 0.1);
+    }
+    
+    /* Success/Check/Done */
+    .md-typeset .success > .admonition-title,
+    .md-typeset .success > summary,
+    .md-typeset .check > .admonition-title,
+    .md-typeset .check > summary,
+    .md-typeset .done > .admonition-title,
+    .md-typeset .done > summary {
+        background-color: rgba(0, 230, 118, 0.1);
+    }
+    
+    /* Question/Help/FAQ */
+    .md-typeset .question > .admonition-title,
+    .md-typeset .question > summary,
+    .md-typeset .help > .admonition-title,
+    .md-typeset .help > summary,
+    .md-typeset .faq > .admonition-title,
+    .md-typeset .faq > summary {
+        background-color: rgba(100, 221, 23, 0.1);
+    }
+    
+    /* Warning/Caution/Attention */
+    .md-typeset .warning > .admonition-title,
+    .md-typeset .warning > summary,
+    .md-typeset .caution > .admonition-title,
+    .md-typeset .caution > summary,
+    .md-typeset .attention > .admonition-title,
+    .md-typeset .attention > summary {
+        background-color: rgba(255, 145, 0, 0.1);
+    }
+    
+    /* Failure/Fail/Missing */
+    .md-typeset .failure > .admonition-title,
+    .md-typeset .failure > summary,
+    .md-typeset .fail > .admonition-title,
+    .md-typeset .fail > summary,
+    .md-typeset .missing > .admonition-title,
+    .md-typeset .missing > summary {
+        background-color: rgba(255, 82, 82, 0.1);
+    }
+    
+    /* Danger/Error */
+    .md-typeset .danger > .admonition-title,
+    .md-typeset .danger > summary,
+    .md-typeset .error > .admonition-title,
+    .md-typeset .error > summary {
+        background-color: rgba(255, 23, 68, 0.1);
+    }
+    
+    /* Bug */
+    .md-typeset .bug > .admonition-title,
+    .md-typeset .bug > summary {
+        background-color: rgba(245, 0, 87, 0.1);
+    }
+    
+    /* Example */
+    .md-typeset .example > .admonition-title,
+    .md-typeset .example > summary {
+        background-color: rgba(124, 77, 255, 0.1);
+    }
+    
+    /* Quote/Cite */
+    .md-typeset .quote > .admonition-title,
+    .md-typeset .quote > summary,
+    .md-typeset .cite > .admonition-title,
+    .md-typeset .cite > summary {
+        background-color: rgba(158, 158, 158, 0.1);
+    }
+}
+
+/* Dark Mode Admonition Title Background */
+[data-md-color-scheme="slate"] .md-typeset .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset summary {
+    background-color: rgba(255, 255, 255, 0.05);
+}
