@@ -465,43 +465,11 @@
     object-fit: contain;
 }
 
-/* Search bar enhancements */
+/* Search positioning in header */
 .md-search {
-    flex-grow: 1;
-    max-width: 400px;
+    flex-grow: 0;
+    width: auto;
     margin: 0 1rem;
-}
-
-.md-search__form {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-[data-md-color-scheme="default"] .md-search__form {
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.md-search__form:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
-}
-
-[data-md-color-scheme="default"] .md-search__form:hover {
-    background: rgba(0, 0, 0, 0.08);
-    border-color: rgba(0, 0, 0, 0.15);
-}
-
-.md-search__form:focus-within {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: var(--md-primary-fg-color);
-    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.2);
-}
-
-[data-md-color-scheme="default"] .md-search__form:focus-within {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.3);
 }
 
 /* Header button group */
@@ -1056,6 +1024,29 @@ body {
     display: none !important;
 }
 
+/* Hide search icon button in header */
+.md-header__button.md-icon[for="__search"] {
+    display: none !important;
+}
+
+/* Keep the functional search box and hide non-functional duplicates */
+/* MkDocs usually puts the functional search as the last one */
+.md-header .md-search:not(:last-of-type) {
+    display: none !important;
+}
+
+/* Ensure desktop search is properly positioned and sized */
+.md-search {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Make search inner match parent width */
+.md-search__inner {
+    width: 100%;
+}
+
 /* Search Form */
 .md-search__form {
     border-radius: var(--border-radius-large);
@@ -1063,14 +1054,37 @@ body {
     transition: var(--transition-default);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    background-color: transparent;
-    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: none;
 }
 
-.md-search__form:hover,
+[data-md-color-scheme="default"] .md-search__form {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.md-search__form:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-md-color-scheme="default"] .md-search__form:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
 .md-search__form:focus-within {
     transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--md-primary-fg-color);
+    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.2);
+}
+
+[data-md-color-scheme="default"] .md-search__form:focus-within {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.3);
 }
 
 /* Search Input */
@@ -1194,6 +1208,40 @@ body {
 
 .md-search__scrollwrap::-webkit-scrollbar-track {
     background-color: transparent;
+}
+/* ================================================
+   Search Click Outside Handler
+   ================================================ */
+
+/* Add click outside handler using CSS and pseudo-element trick */
+body:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* When search is focused, create clickable overlay */
+.md-search__input:focus ~ body:after {
+    pointer-events: auto;
+    z-index: 1;
+}
+
+/* Alternative approach: Use blur event styling */
+.md-search__input:not(:focus) ~ .md-search__output {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.md-search__input:focus ~ .md-search__output {
+    opacity: 1;
+    visibility: visible;
 }
 /* ================================================
    Content Area Styles

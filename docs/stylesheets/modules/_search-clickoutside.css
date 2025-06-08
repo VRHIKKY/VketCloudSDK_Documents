@@ -1,0 +1,34 @@
+/* ================================================
+   Search Click Outside Handler
+   ================================================ */
+
+/* Add click outside handler using CSS and pseudo-element trick */
+body:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* When search is focused, create clickable overlay */
+.md-search__input:focus ~ body:after {
+    pointer-events: auto;
+    z-index: 1;
+}
+
+/* Alternative approach: Use blur event styling */
+.md-search__input:not(:focus) ~ .md-search__output {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.md-search__input:focus ~ .md-search__output {
+    opacity: 1;
+    visibility: visible;
+}

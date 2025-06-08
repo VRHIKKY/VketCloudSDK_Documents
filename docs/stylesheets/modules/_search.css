@@ -7,6 +7,29 @@
     display: none !important;
 }
 
+/* Hide search icon button in header */
+.md-header__button.md-icon[for="__search"] {
+    display: none !important;
+}
+
+/* Keep the functional search box and hide non-functional duplicates */
+/* MkDocs usually puts the functional search as the last one */
+.md-header .md-search:not(:last-of-type) {
+    display: none !important;
+}
+
+/* Ensure desktop search is properly positioned and sized */
+.md-search {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Make search inner match parent width */
+.md-search__inner {
+    width: 100%;
+}
+
 /* Search Form */
 .md-search__form {
     border-radius: var(--border-radius-large);
@@ -14,14 +37,37 @@
     transition: var(--transition-default);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    background-color: transparent;
-    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: none;
 }
 
-.md-search__form:hover,
+[data-md-color-scheme="default"] .md-search__form {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.md-search__form:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-md-color-scheme="default"] .md-search__form:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
 .md-search__form:focus-within {
     transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--md-primary-fg-color);
+    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.2);
+}
+
+[data-md-color-scheme="default"] .md-search__form:focus-within {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.3);
 }
 
 /* Search Input */

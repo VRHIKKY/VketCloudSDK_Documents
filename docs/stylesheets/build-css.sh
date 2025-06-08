@@ -31,6 +31,7 @@ modules=(
     "_theme-toggle.css"
     "_sidebar.css"
     "_search.css"
+    "_search-clickoutside.css"
     "_content.css"
     "_admonitions.css"
     "_footer.css"

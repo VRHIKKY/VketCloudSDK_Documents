@@ -13,6 +13,7 @@
 @import 'modules/_theme-toggle.css';
 @import 'modules/_sidebar.css';
 @import 'modules/_search.css';
+@import 'modules/_search-clickoutside.css';
 @import 'modules/_content.css';
 @import 'modules/_admonitions.css';
 @import 'modules/_footer.css';

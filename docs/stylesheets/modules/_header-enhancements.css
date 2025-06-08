@@ -26,43 +26,11 @@
     object-fit: contain;
 }
 
-/* Search bar enhancements */
+/* Search positioning in header */
 .md-search {
-    flex-grow: 1;
-    max-width: 400px;
+    flex-grow: 0;
+    width: auto;
     margin: 0 1rem;
-}
-
-.md-search__form {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-[data-md-color-scheme="default"] .md-search__form {
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.md-search__form:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
-}
-
-[data-md-color-scheme="default"] .md-search__form:hover {
-    background: rgba(0, 0, 0, 0.08);
-    border-color: rgba(0, 0, 0, 0.15);
-}
-
-.md-search__form:focus-within {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: var(--md-primary-fg-color);
-    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.2);
-}
-
-[data-md-color-scheme="default"] .md-search__form:focus-within {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 0 2px rgba(0, 82, 170, 0.3);
 }
 
 /* Header button group */
