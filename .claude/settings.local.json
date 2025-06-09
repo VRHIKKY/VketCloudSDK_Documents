@@ -7,7 +7,8 @@
       "Bash(chmod:*)",
       "Bash(cp:*)",
       "Bash(mkdir:*)",
-      "Bash(./build-css.sh:*)"
+      "Bash(./build-css.sh:*)",
+      "Bash(python:*)"
     ],
     "deny": []
   }

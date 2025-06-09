@@ -10,12 +10,12 @@ theme:
   - scheme: default
     primary: custom
     toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-7
         name: ダークモードに切り替えます。
   - scheme: slate
     primary: custom
     toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: ライトモードに切り替えます。
   features:
     - navigation.indexes

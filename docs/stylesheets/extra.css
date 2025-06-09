@@ -638,15 +638,33 @@ body:has(.md-header--hidden) .md-header,
    Theme Toggle Component with Sun/Moon Icons
    ================================================ */
 
-/* Override default theme toggle icons with custom sun/moon */
+/* Hide all default material icons in theme toggle buttons */
+.md-header__button[for="__palette_0"] .md-icon,
 .md-header__button[for="__palette_1"] .md-icon,
-.md-header__button[for="__palette_2"] .md-icon {
+.md-header__button.md-icon[for="__palette_0"],
+.md-header__button.md-icon[for="__palette_1"] {
+    display: none !important;
+}
+
+/* Ensure the label buttons are visible */
+.md-header__button[for="__palette_0"]:not(.md-icon),
+.md-header__button[for="__palette_1"]:not(.md-icon) {
+    display: flex !important;
+}
+
+/* Hide the first palette button in light mode, show second */
+[data-md-color-scheme="default"] .md-header__button[for="__palette_0"] {
+    display: none !important;
+}
+
+/* Hide the second palette button in dark mode, show first */
+[data-md-color-scheme="slate"] .md-header__button[for="__palette_1"] {
     display: none !important;
 }
 
 /* Custom Theme Toggle Button - Simplified */
-.md-header__button[for="__palette_1"],
-.md-header__button[for="__palette_2"] {
+.md-header__button[for="__palette_0"],
+.md-header__button[for="__palette_1"] {
     width: 40px !important;
     height: 40px !important;
     padding: 0;
@@ -661,96 +679,76 @@ body:has(.md-header--hidden) .md-header,
     overflow: hidden;
 }
 
-.md-header__button[for="__palette_1"]:hover,
-.md-header__button[for="__palette_2"]:hover {
+.md-header__button[for="__palette_0"]:hover,
+.md-header__button[for="__palette_1"]:hover {
     transform: scale(1.1);
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Sun Icon for Light Mode */
-.md-header__button[for="__palette_1"]::before {
+/* Sun Icon SVG - Shows in Dark Mode (button for palette 0 switches TO light) */
+.md-header__button[for="__palette_0"]::after {
     content: '';
     position: absolute;
     width: 20px;
     height: 20px;
-    background: #FFB300;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #FFB300,
-                0 0 20px #FFB30080,
-                0 0 30px #FFB30040;
-    transition: all 0.3s ease;
+    background-color: #FFFFFF;
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
 
-/* Sun Rays - Simplified without animation */
+/* Moon Icon SVG - Shows in Light Mode (button for palette 1 switches TO dark) */
 .md-header__button[for="__palette_1"]::after {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        radial-gradient(circle at center, transparent 40%, #FFB300 40%, #FFB300 45%, transparent 45%),
-        radial-gradient(circle at center, transparent 40%, #FFB300 40%, #FFB300 45%, transparent 45%);
-    background-size: 100% 10%, 10% 100%;
-    background-position: center center, center center;
-    background-repeat: no-repeat;
-    transform: rotate(45deg);
-    opacity: 0.8;
-}
-
-/* Moon Icon for Dark Mode */
-.md-header__button[for="__palette_2"]::before {
-    content: '';
-    position: absolute;
     width: 20px;
     height: 20px;
-    background: #E3E3E3;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #E3E3E3,
-                0 0 20px #E3E3E380,
-                inset -4px -2px 0 0 #C0C0C0;
-    transition: all 0.3s ease;
+    background-color: #333333;
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
 
-/* Stars around moon - Simplified */
-.md-header__button[for="__palette_2"]::after {
-    content: '✦ ✦ ✦';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8px;
-    color: #FFD700;
-    letter-spacing: 12px;
-    padding-left: 12px;
-    opacity: 0.6;
+/* Remove ::before pseudo-elements as we're using ::after for icons */
+.md-header__button[for="__palette_0"]::before,
+.md-header__button[for="__palette_1"]::before {
+    display: none;
 }
 
 /* Removed complex animations for simplicity */
 
 /* Active state animations */
-.md-header__button[for="__palette_1"]:active,
-.md-header__button[for="__palette_2"]:active {
+.md-header__button[for="__palette_0"]:active,
+.md-header__button[for="__palette_1"]:active {
     transform: scale(0.95);
 }
 
-/* Tooltip styling */
-.md-header__button[for="__palette_1"]:hover::before,
-.md-header__button[for="__palette_2"]:hover::before {
+/* Icon hover effect */
+.md-header__button[for="__palette_0"]:hover::after,
+.md-header__button[for="__palette_1"]:hover::after {
     transform: scale(1.1);
 }
 
 /* Mobile adjustments */
 @media screen and (max-width: 76.1875em) {
-    .md-header__button[for="__palette_1"],
-    .md-header__button[for="__palette_2"] {
+    .md-header__button[for="__palette_0"],
+    .md-header__button[for="__palette_1"] {
         width: 40px;
         height: 40px;
     }
     
-    .md-header__button[for="__palette_1"]::before,
-    .md-header__button[for="__palette_2"]::before {
+    .md-header__button[for="__palette_0"]::after,
+    .md-header__button[for="__palette_1"]::after {
         width: 18px;
         height: 18px;
     }
@@ -763,13 +761,13 @@ body {
 
 /* Enhanced glass effect for theme toggle */
 [data-md-color-scheme="default"] .md-header__button[for="__palette_1"] {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-[data-md-color-scheme="slate"] .md-header__button[for="__palette_2"] {
+[data-md-color-scheme="slate"] .md-header__button[for="__palette_0"] {
     background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Removed pulse animations for simplicity */
