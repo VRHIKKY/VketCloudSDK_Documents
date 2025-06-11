@@ -4,7 +4,7 @@ site_author: 'HIKKY'
 
 theme:
   favicon: images/Favicon.png
-  logo: images/VketCloudIcon.png
+  logo: images/VketCloudIcon_White.png
   name: material
   palette:
   - scheme: default
@@ -22,6 +22,7 @@ theme:
     - header.autohide
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
   footer:
     logo: images/HikkyLogo.png
@@ -73,6 +74,10 @@ plugins:
       lang: 
         - en
         - ja
+      separator: '[\s\-\.]+'
+      min_search_length: 3
+      prebuild_index: true
+      indexing: 'full'
       
   - mike:
       version_selector: true
