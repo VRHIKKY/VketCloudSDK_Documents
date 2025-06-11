@@ -1,3 +1,14 @@
+# Version 14.5.8
+
+## SDK (Editor Extension Tool for Creating Worlds in Unity)
+
+### Fixed Issues
+
+- Fixed an issue where textures applied to materials would be removed when initiating another build/upload while texture override was enabled and a build/upload was already in progress.
+- Improved UI to prevent the build/upload button from being pressed again while a build/upload is in progress.
+
+---
+
 # Version 14.5.7
 
 ## SDK (Editor Extension Tool for Creating Worlds in Unity)
