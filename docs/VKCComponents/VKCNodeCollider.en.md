@@ -3,7 +3,7 @@ This is a basic component for colliders that adds collision detection to nodes a
 A notable feature is that its properties change significantly based on the collider type setting described below.
 
 !!! note "About this guide"
-    This guide explains the basic usage and settings of the VKC Node Collider. For information about other collider components and practical examples, please refer to [How to Use Colliders/Tips](../../WorldMakingGuide/Collider.md).
+    This guide explains the basic usage and settings of the VKC Node Collider. For information about other collider components and practical examples, please refer to [How to Use Colliders/Tips](../WorldMakingGuide/Collider.en.md).
 
 ## Property List
 
