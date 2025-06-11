@@ -705,7 +705,6 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v15.x:
-        - v15.6: changelog/changelog-15.6.md
         - v15.5: changelog/changelog-15.5.md
         - v15.4: changelog/changelog-15.4.md
         - v15.3: changelog/changelog-15.3.md
