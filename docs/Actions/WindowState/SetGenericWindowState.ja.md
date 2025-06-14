@@ -9,7 +9,7 @@
 | Target | 状態を設定したいウィンドウ |
 | State | ウィンドウを設定したい状態 |
 
-ターゲットウィンドウは以下のいずれかの選択氏があります。
+ターゲットウィンドウは以下のいずれかの選択肢があります。
 
 ![Target](img/SetGenericWindowStateTarget.jpg)
 
