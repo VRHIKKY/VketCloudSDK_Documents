@@ -16,7 +16,7 @@ This page will introduce the concept of Property in Vket Cloud, and how to use V
 
 ![VKCAttributeProperty_2](./img/VKCAttributeProperty_2.jpg)
 
-Attach VKC Attribute Property to an object that will be an Item, such as [VKC Item Field](VKCItemField.md), [VKC Item Object](VKCItemObject.md), and [VKC Item Activity](VKCItemActivity.md).
+Attach VKC Attribute Property to an object that will be an Item, such as [VKC Item Field](../VKCComponents/VKCItemField.en.md), [VKC Item Object](../VKCComponents/VKCItemObject.en.md), and [VKC Item Activity](../VKCComponents/VKCItemActivity.en.md).
 
 ### 2. Define a Key and Value on VKC Attribute Property
 

@@ -1,5 +1,26 @@
 # SDK Manual Change Log - Ver 14.5
 
+## Updated June 11, 2025
+
+## June 11, 2025 - Added Pages
+
+- Release Notes
+    - [v15.6](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-15.6.html)
+        - Added new page for v15.6 release notes
+    - [v14.5.10](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-14.5.html#version-1458)
+        - Added v14.5.8 release notes
+
+---
+
+## May 23 2025 Update
+
+## May 23 2025 - Edited Pages
+
+- [GUITools - Overview and Setup](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/GUITools/Setup.html)
+     - Include Unity 2022.3.6f1 as a supported editor version for GUITools.
+    
+---
+
 ## April 25 2025 Update
 
 ## April 25 2025 - Edited Page
