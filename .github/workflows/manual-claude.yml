@@ -1,0 +1,49 @@
+name: Manual Claude Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      jira_number:
+        description: 'Jira ticket number (e.g., BC-123)'
+        required: true
+        type: string
+
+jobs:
+  manual-claude-task:
+    if: inputs.jira_number != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          
+      - name: Run Claude Code with MCP config
+        uses: anthropics/claude-code-base-action@beta
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JIRA_URL: https://xxx.atlassian.net
+          JIRA_USERNAME: xxx@gmail.com
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        with:
+          prompt: |
+            Jira番号 '${{ github.event.inputs.jira_number }}' のタスク情報を取得し、GitHub上でイシューを作成してください。
+            
+            手順：
+            1. MCPのJira機能を使ってタスク詳細を取得
+            2. 取得した情報をもとにGitHub Issueを作成
+            3. イシューのタイトルと内容に@claudeを追加
+            4. イシューの内容に下記を記載する：
+               - 要件定義ドキュメントを作成
+               - 設計書/テスト項目を作成
+               - TDD(テスト駆動開発）でコード実装
+               - Pull Requestを作成
+          mcp_config: ".mcp.json"
+          allowed_tools: "Bash,View,GlobTool,GrepTool,BatchTool,Edit,Write,[MCP Jira tools...]"
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
