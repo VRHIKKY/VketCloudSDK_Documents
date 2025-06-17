@@ -28,8 +28,8 @@ jobs:
         uses: anthropics/claude-code-base-action@beta
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          JIRA_URL: https://xxx.atlassian.net
-          JIRA_USERNAME: xxx@gmail.com
+          JIRA_URL: https://hikky.atlassian.net
+          JIRA_USERNAME: r.akai@vrhikky.com
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
         with:
           prompt: |
