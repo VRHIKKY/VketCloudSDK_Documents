@@ -4,5 +4,9 @@
       "Bash(find:*)"
     ],
     "deny": []
-  }
+  },
+  "enabledMcpjsonServers": [
+    "mcp-atlassian"
+  ],
+  "enableAllProjectMcpServers": true
 }
