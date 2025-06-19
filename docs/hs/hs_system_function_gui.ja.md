@@ -221,7 +221,7 @@ GUIを追加する、詳細は以下
 GUIを削除する
 
 ## hsAddGUIAction
-`void hsReleaseGUI(string LayerName, bool IsPortrait, string GUIName)`
+`void hsAddGUIAction(string LayerName, string GUIName, string Param)`
 GUIにGUIActionを追加する
 
 ## hsAddGUIToggle
