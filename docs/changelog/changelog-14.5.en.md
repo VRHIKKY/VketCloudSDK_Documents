@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## Updated June 20, 2025
+
+## June 20, 2025 - Edited Pages
+
+- HeliScript
+    - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_gui.html)
+            - Fixed `hsAddGUIAction` function signature
+
+---
+
 ## Updated June 11, 2025
 
 ## June 11, 2025 - Added Pages
