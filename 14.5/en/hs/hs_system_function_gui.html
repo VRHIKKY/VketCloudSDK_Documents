@@ -82,6 +82,11 @@
 
     gtag('config', 'G-R753QL60GW');
   </script>
+  <!-- PushFeedback styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushfeedback/dist/pushfeedback/pushfeedback.css">
+
+  <!-- PushFeedback script as ES6 module -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/pushfeedback/dist/pushfeedback/pushfeedback.esm.js"></script>
 
   </head>
   
@@ -12345,6 +12350,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+  
                   
 
 
@@ -12488,7 +12494,7 @@ Adds a GUI.</p>
 <p><code>void hsReleaseGUI(string LayerName, bool IsPortrait, string GUIName)</code>
 Deletes a GUI.</p>
 <h2 id="hsaddguiaction">hsAddGUIAction</h2>
-<p><code>void hsAddGUIAction(string LayerName, bool IsPortrait, string GUIName)</code>
+<p><code>void hsAddGUIAction(string LayerName, string GUIName, string Param)</code>
 Adds a GUIAction to a GUI.</p>
 <h2 id="hsaddguitoggle">hsAddGUIToggle</h2>
 <p><code>void hsAddGUIToggle(string LayerName, string GUIName, string ToggleName, bool state)</code>
@@ -12570,6 +12576,9 @@ Remove all modal windows and their child modeless windows, setting all associate
 
 
                 
+  <!-- Feedback button -->
+  <feedback-button project="jqk95zztz7" button-position="bottom-right" modal-position="bottom-right" button-style="dark">Feedback</feedback-button>
+
               </article>
             </div>
           
