@@ -18,7 +18,31 @@ JSの型と対応した整数値。
 
 ---
 
+## 【JsVal リテラル】
+
+HeliScriptのコード中に、JSのオブジェクトリテラル風の表記を利用して、JsValを初期化、生成することができます。
+
+```js
+JsVal val = new JsVal() {
+  "name": "vket-chan",
+  "id": 12345,
+  "message": "Welcome to Vket World!"
+};
+```
+
+new JsVal() の後に、{ }  で囲んだJSON形式の文字列を記述できます。
+
+---
+
 ## 【JsVal を生成する関数】
+
+### makeJsValFromJson()
+
+`JsVal makeJsValFromJson(string json);`
+
+引数として渡したJSON文字列を解析し、JsValのインスタンスを返す関数。
+
+JSON文字列の解析に失敗した場合、nullを返します。
 
 ### makeJsNull()
 
@@ -106,6 +130,8 @@ JSのプロパティ(名前と値が組になったもの)を表現するJsVal�
 
 配列の要素を返す。
 
+(実装の都合上、配列の要素と、オブジェクトのプロパティを同じ仕組みで管理しているため、配列の要素がJsPropとなっている。本来はJsValであるべき。この関数は、配列の要素を生成する際に、「キー名を持たないJsProp」を簡易的に生成するためのもの。)
+
 ### makeJsArrayElemFrom()
 
 `JsProp makeJsArrayElemFrom(JsVal newVal);`
@@ -129,6 +155,16 @@ JsVal型は、生成後に多様な型の値を設定することができる。
 空のJsValを生成する。
 
 生成された時点では、JS側のnullに相当する状態になっている。後から自由に中身の値と型を変更できる。
+
+### ToString()
+
+`public string ToString(string space = "");`
+
+JsValインスタンスの内容を文字列として取得する。
+
+引数 space に文字列を指定すると、その文字列でインデントを行う。引数 space のデフォルト値は空文字で、引数を省略して呼び出すことができる。その場合、インデントを一切行わない。
+
+例えば、jsval.ToString("  ") と空白文字2つを指定したり、jsval.ToString("\t")とタブ記号でインデントを行うようにも指定できる。
 
 ### Clear()
 
