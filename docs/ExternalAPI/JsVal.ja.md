@@ -130,8 +130,6 @@ JSのプロパティ(名前と値が組になったもの)を表現するJsVal�
 
 配列の要素を返す。
 
-(実装の都合上、配列の要素と、オブジェクトのプロパティを同じ仕組みで管理しているため、配列の要素がJsPropとなっている。本来はJsValであるべき。この関数は、配列の要素を生成する際に、「キー名を持たないJsProp」を簡易的に生成するためのもの。)
-
 ### makeJsArrayElemFrom()
 
 `JsProp makeJsArrayElemFrom(JsVal newVal);`

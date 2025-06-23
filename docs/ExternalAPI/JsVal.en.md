@@ -130,8 +130,6 @@ This function only defines the name/key on initialization, which its value is un
 
 Returns an array element.
 
-(Due to implementation, array elements and object properties are managed by the same mechanism, so array elements are JsProp. They should be JsVal properly. This function is for easily generating "JsProp without key name" when creating array elements.)
-
 ### makeJsArrayElemFrom()
 
 `JsProp makeJsArrayElemFrom(JsVal newVal);`
