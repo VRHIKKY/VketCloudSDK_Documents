@@ -147,6 +147,17 @@ Vket Cloudにてアバターを使用するには、1. [My Vketにてマイア�
 | フレームレート | 29.97 or 30 |
 | プロファイルレベル | 4.1, AAC 44.1kHz, yuv420 |
 
+## HeliScriptファイル
+
+HeliScriptファイル（.hsファイル）を使用する場合、以下の点にご注意ください。
+
+- **改行コード**: LF（Line Feed）のみを使用してください
+- CRLF（Carriage Return + Line Feed）の改行コードを使用すると、ビルド時にheliodor側で読み込みエラーが発生します
+
+!!! warning "改行コードについて"
+    エディタによってはデフォルトでCRLF改行コードが設定されている場合があります。<br>
+    HeliScriptファイルを編集する際は、使用するエディタの改行コード設定をLFに変更してください。
+
 ## VKC Item Text Planeのテキスト
 
 VKC Item Text Paneにおいて、以下の項目については入力時に注意が必要です。
