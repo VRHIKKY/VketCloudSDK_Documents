@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## Updated June 24, 2025
+
+## June 24, 2025 - Added Pages
+
+- Release Notes
+    - [v15.7](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-15.7.html)
+        - Added new page for v15.7 release notes
+        - Added WebXR bug fix (fixed head rotation doubling issue when using right stick)
+
+---
+
 ## Updated June 11, 2025
 
 ## June 11, 2025 - Added Pages
