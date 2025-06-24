@@ -1,13 +1,24 @@
 # SDK Manual Change Log - Ver 14.5
 
-## Updated June 24, 2025
+## Updated June 27, 2025
 
-## June 24, 2025 - Added Pages
+## June 27, 2025 - Added Pages
 
 - Release Notes
     - [v15.7](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-15.7.html)
         - Added new page for v15.7 release notes
         - Added WebXR bug fix (fixed head rotation doubling issue when using right stick)
+
+---
+
+## Updated June 20, 2025
+
+## June 20, 2025 - Edited Pages
+
+- HeliScript
+    - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_gui.html)
+            - Fixed `hsAddGUIAction` function signature
 
 ---
 

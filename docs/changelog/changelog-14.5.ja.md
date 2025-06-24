@@ -1,13 +1,24 @@
 # SDK Manual Change Log - Ver 14.5
 
-## 2025年6月24日更新
+## 2025年6月27日更新
 
-## 2025年6月24日 - 追加されたページ
+## 2025年6月27日 - 追加されたページ
 
 - リリースノート
     - [v15.7](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-15.7.html)
         - v15.7のリリースノートの新しいページを追加
         - WebXRの不具合修正を追加（右スティック回転時の頭部回転量修正）
+
+---
+
+## 2025年6月20日更新
+
+## 2025年6月20日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - `hsAddGUIAction`関数のシグネチャを修正
 
 ---
 
