@@ -10,6 +10,10 @@ VKC Node Cylinder ColliderはCapsuleColliderが付与されているオブジェ
     - 物理エンジンの衝突判定の実装の都合上、カプセルコライダーとシリンダーコライダー・シリンダーコライダーとシリンダーコライダーは衝突しません。<br>
     - シリンダーコライダーを使用する場合、Planeの様な薄いコライダーだと貫通してしまうことがあるので地面にボックスを使用する必要があります。 
 
+!!!note warning
+    カプセルコライダーはエリアコライダー用途にしか対応していませんので、
+    Mesh RendererとCapsule ColliderがアタッチされてるオブジェクトにVKC Node Cylinder Colliderをアタッチしてビルドランしてもコライダーは機能しません。
+
 ## 設定手順
 
 1. 本コンポーネントはUnityのMesh Renderer及びCapsule Colliderが付いているオブジェクトが対象です。<br>
