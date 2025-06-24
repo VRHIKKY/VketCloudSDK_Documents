@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## June 24 2025 Update
+
+## June 24 2025 - Edited Pages
+
+- World Making Guide
+    - [Unity Guidelines](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/UnityGuidelines.html)
+        - Added warning that HeliScript files (.hs) must use LF line endings only
+        - Noted that using CRLF causes build read errors in heliodor
+
+---
+
 ## Updated June 11, 2025
 
 ## June 11, 2025 - Added Pages

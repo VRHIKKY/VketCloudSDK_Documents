@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年6月24日更新
+
+## 2025年6月24日 - 編集されたページ
+
+- ワールド制作ガイド
+    - [Unity利用ガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/UnityGuidelines.html)
+        - HeliScriptファイル（.hs）の改行コードはLFのみを使用することの警告を追加
+        - CRLFを使用するとビルド時にheliodorでの読み込みエラーが発生することを明記
+
+---
+
 ## 2025年6月11日更新
 
 ## 2025年6月11日 - 追加されたページ
