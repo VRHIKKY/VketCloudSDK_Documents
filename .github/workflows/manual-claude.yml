@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       jira_number:
-        description: 'Jira ticket number (e.g., BC-123)'
+        description: 'Jira ticket number (e.g., LDOC-123)'
         required: true
         type: string
 
@@ -17,13 +17,12 @@ jobs:
       pull-requests: write
       issues: write
       id-token: write
-    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          
+
       - name: Run Claude Code with MCP config
         uses: anthropics/claude-code-base-action@beta
         env:
@@ -39,11 +38,13 @@ jobs:
             1. MCPのJira機能を使ってタスク詳細を取得
             2. 取得した情報をもとにGitHub Issueを作成
             3. イシューのタイトルと内容に@claudeを追加
-            4. イシューの内容に下記を記載する：
-               - 要件定義ドキュメントを作成
-               - 設計書/テスト項目を作成
-               - TDD(テスト駆動開発）でコード実装
-               - Pull Requestを作成
+            4. イシューの内容に下記を記載する
+	            - 要件定義ドキュメントを作成
+	            - 設計書を作成
+	            - TDDでコード実装
+	            - Pull Requestを作成
+            
+            注意：MCPツールの使用許可が求められた場合は、処理を終えてください。
           mcp_config: ".mcp.json"
-          allowed_tools: "Bash,View,GlobTool,GrepTool,BatchTool,Edit,Write,[MCP Jira tools...]"
+          allowed_tools: "Bash,View,GlobTool,GrepTool,BatchTool,Edit,Write,mcp__mcp-atlassian__jira_get_user_profile,mcp__mcp-atlassian__jira_get_issue,mcp__mcp-atlassian__jira_search,mcp__mcp-atlassian__jira_search_fields,mcp__mcp-atlassian__jira_get_project_issues,mcp__mcp-atlassian__jira_get_transitions,mcp__mcp-atlassian__jira_get_worklog,mcp__mcp-atlassian__jira_download_attachments,mcp__mcp-atlassian__jira_get_agile_boards,mcp__mcp-atlassian__jira_get_board_issues,mcp__mcp-atlassian__jira_get_sprints_from_board,mcp__mcp-atlassian__jira_get_sprint_issues,mcp__mcp-atlassian__jira_get_link_types,mcp__mcp-atlassian__jira_create_issue,mcp__mcp-atlassian__jira_batch_create_issues,mcp__mcp-atlassian__jira_batch_get_changelogs,mcp__mcp-atlassian__jira_update_issue,mcp__mcp-atlassian__jira_delete_issue,mcp__mcp-atlassian__jira_add_comment,mcp__mcp-atlassian__jira_add_worklog,mcp__mcp-atlassian__jira_link_to_epic,mcp__mcp-atlassian__jira_create_issue_link,mcp__mcp-atlassian__jira_remove_issue_link,mcp__mcp-atlassian__jira_transition_issue,mcp__mcp-atlassian__jira_create_sprint,mcp__mcp-atlassian__jira_update_sprint,mcp__mcp-atlassian__confluence_search,mcp__mcp-atlassian__confluence_get_page,mcp__mcp-atlassian__confluence_get_page_children,mcp__mcp-atlassian__confluence_get_comments,mcp__mcp-atlassian__confluence_get_labels,mcp__mcp-atlassian__confluence_add_label,mcp__mcp-atlassian__confluence_create_page,mcp__mcp-atlassian__confluence_update_page,mcp__mcp-atlassian__confluence_delete_page,mcp__mcp-atlassian__confluence_add_comment"
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
