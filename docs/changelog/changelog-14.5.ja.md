@@ -1,5 +1,17 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年6月24日更新
+
+## 2025年6月24日 - 編集されたページ
+
+- VKCコンポーネント
+    - VKC Node
+        - [VKC Node Cylinder Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCNodeCylinderCollider.html)
+            - カプセルコライダーはエリアコライダー用途のみ対応の注意書きを追加
+            - Mesh Renderer併用時の非機能について警告を追記
+
+---
+
 ## 2025年6月11日更新
 
 ## 2025年6月11日 - 追加されたページ

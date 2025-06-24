@@ -1,5 +1,17 @@
 # SDK Manual Change Log - Ver 14.5
 
+## Updated June 24, 2025
+
+## June 24, 2025 - Edited Pages
+
+- VKC Components
+    - VKC Node
+        - [VKC Node Cylinder Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/VKCComponents/VKCNodeCylinderCollider.html)
+            - Added warning that capsule colliders are only supported for area collider purposes
+            - Added warning about non-functionality when used with Mesh Renderer
+
+---
+
 ## Updated June 11, 2025
 
 ## June 11, 2025 - Added Pages
