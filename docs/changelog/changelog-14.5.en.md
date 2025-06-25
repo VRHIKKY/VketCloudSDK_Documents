@@ -1,5 +1,15 @@
 # SDK Manual Change Log - Ver 14.5
 
+## June 25, 2025 Update
+
+## June 25, 2025 - Edited Pages
+
+- External API
+    - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/BrokerAPI.html)
+        - Fixed SPATIUM_CODE value from "Default" to "default"
+
+---
+
 ## Updated June 11, 2025
 
 ## June 11, 2025 - Added Pages
