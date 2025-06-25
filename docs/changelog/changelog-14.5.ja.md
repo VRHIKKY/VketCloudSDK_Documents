@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.5
 
-## 2025年6月24日更新
+## 2025年6月27日更新
 
-## 2025年6月24日 - 編集されたページ
+## 2025年6月27日 - 編集されたページ
 
 - ワールド制作ガイド
     - [Unity利用ガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/UnityGuidelines.html)

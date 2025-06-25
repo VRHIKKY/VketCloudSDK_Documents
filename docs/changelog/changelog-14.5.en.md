@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.5
 
-## June 24 2025 Update
+## June 27 2025 Update
 
-## June 24 2025 - Edited Pages
+## June 27 2025 - Edited Pages
 
 - World Making Guide
     - [Unity Guidelines](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/UnityGuidelines.html)
