@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.5
 
-## Updated June 24, 2025
+## Updated June 27, 2025
 
-## June 24, 2025 - Edited Pages
+## June 27, 2025 - Edited Pages
 
 - VKC Components
     - VKC Node
