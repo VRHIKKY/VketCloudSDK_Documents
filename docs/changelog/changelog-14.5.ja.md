@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.5
 
-## 2025年6月25日更新
+## 2025年6月27日更新
 
-## 2025年6月25日 - 編集されたページ
+## 2025年6月27日 - 編集されたページ
 
 - 外部API連携
     - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/BrokerAPI.html)
