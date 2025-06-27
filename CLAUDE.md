@@ -47,7 +47,7 @@ Key directories:
 
 ## Git Workflow
 
-- Current branch: `feature/sdk-14.5/15.6-release-note`
+- Current branch: `claude/issue-719-20250624_030637`
 - Main branch for PRs: `master`
 - Version branches: `version/sdk-X.Y` format
 - External contributions welcome following the contribution policy in README.md
@@ -89,6 +89,9 @@ Key directories:
 2. Test locally before committing using the build scripts
 3. Verify navigation links work in both languages
 4. Check that images load correctly (paths are relative to the markdown file)
+5. Place images in section-specific `img/` subdirectories
+6. Follow existing naming conventions for files and directories
+7. Version-specific changes should target appropriate version branches
 
 ### Common Tasks
 - **Add new page**: Create both language versions, update navigation in mkdocs.yml
@@ -104,3 +107,9 @@ Key directories:
 - Place images in section-specific `img/` subdirectories
 - Follow existing naming conventions for files and directories
 - Version-specific changes should target appropriate version branches
+
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
