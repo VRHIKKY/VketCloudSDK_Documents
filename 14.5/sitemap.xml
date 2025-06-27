@@ -2199,6 +2199,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-15.6.html"/>
     </url>
     <url>
+        <loc>Nonereleasenote/releasenote-15.7.html</loc>
+        <lastmod>2025-06-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-15.7.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-15.7.html"/>
+    </url>
+    <url>
         <loc>Nonereleasenote/releasenote-3.2.html</loc>
         <lastmod>2025-06-27</lastmod>
         <changefreq>daily</changefreq>
@@ -4773,6 +4780,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-15.6.html"/>
         <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-15.6.html"/>
+    </url>
+    <url>
+        <loc>Noneen/releasenote/releasenote-15.7.html</loc>
+        <lastmod>2025-06-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/releasenote/releasenote-15.7.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonereleasenote/releasenote-15.7.html"/>
     </url>
     <url>
         <loc>Noneen/releasenote/releasenote-3.2.html</loc>
