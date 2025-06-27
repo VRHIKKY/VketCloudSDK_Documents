@@ -3,7 +3,6 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Repository Overview
-<<<<<<< Updated upstream
 
 This is the documentation repository for VketCloudSDK, a cloud-based virtual world SDK developed by HIKKY. The documentation is built using MkDocs with Material theme and supports both Japanese (primary) and English languages.
 
@@ -48,7 +47,7 @@ Key directories:
 
 ## Git Workflow
 
-- Current branch: `feature/sdk-14.5/15.6-release-note`
+- Current branch: `claude/issue-719-20250624_030637`
 - Main branch for PRs: `master`
 - Version branches: `version/sdk-X.Y` format
 - External contributions welcome following the contribution policy in README.md
@@ -85,75 +84,14 @@ Key directories:
 
 ## Development Guidelines
 
-- Always maintain both Japanese and English versions of documentation
-- Place images in section-specific `img/` subdirectories
-- Follow existing naming conventions for files and directories
-- Test local builds before submitting PRs
-- Version-specific changes should target appropriate version branches
-=======
-This is the official documentation repository for VketCloudSDK, a developer kit for creating virtual worlds using the Vket Cloud Engine. The documentation is bilingual (Japanese/English) and built with MkDocs.
-
-## Build Commands
-
-### Quick Start Development Server
-- **macOS**: `sh mac_mkdocs.sh`
-- **Windows**: `windows_mkdocs.bat`
-
-These scripts handle virtual environment setup, dependency installation, and start the development server at http://127.0.0.1:8000/
-
-### Manual Commands
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Start development server
-mkdocs serve
-
-# Build static site
-mkdocs build
-
-# Deploy with versioning (requires mike)
-mike deploy --push --update-aliases 14.5 latest
-```
-
-## High-Level Architecture
-
-### Documentation Structure
-The documentation follows a suffix-based multilingual pattern:
-- `docs/*.ja.md` - Japanese documentation (default language)
-- `docs/*.en.md` - English translations
-- Both language versions must be maintained in sync
-
-### Key Configuration Files
-- `mkdocs.yml` - Main configuration with:
-  - Navigation structure for both languages
-  - Plugin configurations (search, i18n, mike versioning)
-  - Theme customizations
-  - Markdown extensions
-
-### Content Organization
-1. **SDK Setup** (`AboutVketCloudSDK/`) - Installation and account setup
-2. **World Creation** (`FirstStep/`, `WorldMakingGuide/`) - Tutorials and guides
-3. **Component Reference** (`VKCComponents/`) - All VKC component documentation
-4. **HeliScript** (`hs/`) - Scripting language reference
-5. **SDK Tools** (`SDKTools/`) - Development utilities
-6. **Actions** (`Actions/`) - Action system documentation
-7. **Troubleshooting** - Common issues and solutions
-8. **Release Notes** - Version history and changelogs
-
-### Special Features
-- **Version Management**: Uses `mike` for documentation versioning
-- **Search**: Language-specific search indices with Japanese tokenization
-- **Navigation**: Separate navigation trees for each language defined in mkdocs.yml
-- **Code Highlighting**: Supports HeliScript syntax highlighting
-
-## Development Guidelines
-
 ### When Modifying Documentation
 1. Always update both `.ja.md` and `.en.md` files
 2. Test locally before committing using the build scripts
 3. Verify navigation links work in both languages
 4. Check that images load correctly (paths are relative to the markdown file)
+5. Place images in section-specific `img/` subdirectories
+6. Follow existing naming conventions for files and directories
+7. Version-specific changes should target appropriate version branches
 
 ### Common Tasks
 - **Add new page**: Create both language versions, update navigation in mkdocs.yml
@@ -166,7 +104,6 @@ The documentation follows a suffix-based multilingual pattern:
 - Internal cross-references use relative paths
 - Code blocks specify language for syntax highlighting
 - Admonitions (notes, warnings) follow Material for MkDocs syntax
->>>>>>> Stashed changes
 
 # important-instruction-reminders
 Do what has been asked; nothing more, nothing less.

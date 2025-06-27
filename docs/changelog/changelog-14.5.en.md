@@ -2,8 +2,12 @@
 
 ## June 27 2025 Update
 
-## June 27 2025 - Edited Page
+## June 27 2025 - Edited Pages
 
+- World Making Guide
+    - [Unity Guidelines](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/UnityGuidelines.html)
+        - Added warning that HeliScript files (.hs) must use LF line endings only
+        - Noted that using CRLF causes build read errors in heliodor
 - External API
     - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/JsVal.html)
         - Added JsVal Literal section

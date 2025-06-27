@@ -4,6 +4,10 @@
 
 ## 2025年6月27日 - 編集されたページ
 
+- ワールド制作ガイド
+    - [Unity利用ガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/UnityGuidelines.html)
+        - HeliScriptファイル（.hs）の改行コードはLFのみを使用することの警告を追加
+        - CRLFを使用するとビルド時にheliodorでの読み込みエラーが発生することを明記
 - 外部API連携
     - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/BrokerAPI.html)
         - SPATIUM_CODEのデフォルト値を"Default"から"default"に修正
