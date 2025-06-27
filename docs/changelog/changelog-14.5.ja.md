@@ -8,6 +8,25 @@
     - [Unity利用ガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/UnityGuidelines.html)
         - HeliScriptファイル（.hs）の改行コードはLFのみを使用することの警告を追加
         - CRLFを使用するとビルド時にheliodorでの読み込みエラーが発生することを明記
+- 外部API連携
+    - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/BrokerAPI.html)
+        - SPATIUM_CODEのデフォルト値を"Default"から"default"に修正
+    - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/JsVal.html)
+        - JsValリテラルセクションを追加
+        - makeJsValFromJson()関数を追加
+        - ToString()メソッドを追加
+        - makeJsArrayElem()の詳細説明を追加
+
+---
+
+## 2025年6月20日更新
+
+## 2025年6月20日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - `hsAddGUIAction`関数のシグネチャを修正
 
 ---
 
