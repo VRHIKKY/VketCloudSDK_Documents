@@ -7247,6 +7247,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#jsval-literal" class="md-nav__link">
+    <span class="md-ellipsis">
+      JsVal Literal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functions-generating-jsval" class="md-nav__link">
     <span class="md-ellipsis">
       Functions generating JsVal
@@ -7255,6 +7264,15 @@
   
     <nav class="md-nav" aria-label="Functions generating JsVal">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#makejsvalfromjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      makeJsValFromJson()
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#makejsnull" class="md-nav__link">
@@ -7401,6 +7419,15 @@
   <a href="#constructor" class="md-nav__link">
     <span class="md-ellipsis">
       Constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      ToString()
     </span>
   </a>
   
@@ -11947,6 +11974,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#jsval-literal" class="md-nav__link">
+    <span class="md-ellipsis">
+      JsVal Literal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functions-generating-jsval" class="md-nav__link">
     <span class="md-ellipsis">
       Functions generating JsVal
@@ -11955,6 +11991,15 @@
   
     <nav class="md-nav" aria-label="Functions generating JsVal">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#makejsvalfromjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      makeJsValFromJson()
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#makejsnull" class="md-nav__link">
@@ -12101,6 +12146,15 @@
   <a href="#constructor" class="md-nav__link">
     <span class="md-ellipsis">
       Constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      ToString()
     </span>
   </a>
   
@@ -12425,7 +12479,21 @@ This type is defined by the following values, functions, and classes.</p>
 </code></pre></div>
 <p>Constant values defined to correspond with JS types.</p>
 <hr />
+<h2 id="jsval-literal">JsVal Literal</h2>
+<p>You can use JavaScript object literal-like notation to initialize and create JsVal in HeliScript code.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">JsVal</span><span class="w"> </span><span class="nx">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">JsVal</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;vket-chan&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">12345</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Welcome to Vket World!&quot;</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>You can write JSON format string enclosed in { } after new JsVal().</p>
+<hr />
 <h2 id="functions-generating-jsval">Functions generating JsVal</h2>
+<h3 id="makejsvalfromjson">makeJsValFromJson()</h3>
+<p><code>JsVal makeJsValFromJson(string json);</code></p>
+<p>Parses the JSON string passed as an argument and returns a JsVal instance.</p>
+<p>Returns null if the JSON string parsing fails.</p>
 <h3 id="makejsnull">makeJsNull()</h3>
 <p><code>JsVal makeJsNull();</code></p>
 <p>Returns a JsVal instance expressing null.</p>
@@ -12481,6 +12549,11 @@ This type is defined by the following values, functions, and classes.</p>
 <p><code>public JsVal();</code></p>
 <p>Instantiates an empty JsVal.</p>
 <p>On instantiation, the variable is equivalent as null on JS. The type and value can be defined after its instantiation.</p>
+<h3 id="tostring">ToString()</h3>
+<p><code>public string ToString(string space = "");</code></p>
+<p>Gets the content of the JsVal instance as a string.</p>
+<p>If you specify a string for the space parameter, it will be used for indentation. The default value for space is an empty string, and you can call the method without this parameter. In that case, no indentation will be performed.</p>
+<p>For example, you can specify two spaces with jsval.ToString("  "), or use tab character for indentation with jsval.ToString("\t").</p>
 <h3 id="clear">Clear()</h3>
 <p><code>public void Clear();</code></p>
 <p>Deletes information on the JsVal instance and sets the type information to JS_NULL.</p>

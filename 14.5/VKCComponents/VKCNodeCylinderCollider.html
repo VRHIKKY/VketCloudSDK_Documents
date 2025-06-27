@@ -11525,6 +11525,11 @@
 <li>シリンダーコライダーを使用する場合、Planeの様な薄いコライダーだと貫通してしまうことがあるので地面にボックスを使用する必要があります。 </li>
 </ul>
 </div>
+<div class="admonition note warning">
+<p class="admonition-title">Note</p>
+<p>カプセルコライダーはエリアコライダー用途にしか対応していませんので、
+Mesh RendererとCapsule ColliderがアタッチされてるオブジェクトにVKC Node Cylinder Colliderをアタッチしてビルドランしてもコライダーは機能しません。</p>
+</div>
 <h2 id="_1">設定手順</h2>
 <ol>
 <li>

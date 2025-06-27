@@ -7249,12 +7249,30 @@
         <li class="md-nav__item">
   <a href="#jsval_1" class="md-nav__link">
     <span class="md-ellipsis">
+      【JsVal リテラル】
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jsval_2" class="md-nav__link">
+    <span class="md-ellipsis">
       【JsVal を生成する関数】
     </span>
   </a>
   
     <nav class="md-nav" aria-label="【JsVal を生成する関数】">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#makejsvalfromjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      makeJsValFromJson()
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#makejsnull" class="md-nav__link">
@@ -7388,7 +7406,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jsval_2" class="md-nav__link">
+  <a href="#jsval_3" class="md-nav__link">
     <span class="md-ellipsis">
       【JsVal クラス】
     </span>
@@ -7401,6 +7419,15 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       コンストラクタ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      ToString()
     </span>
   </a>
   
@@ -11949,12 +11976,30 @@
         <li class="md-nav__item">
   <a href="#jsval_1" class="md-nav__link">
     <span class="md-ellipsis">
+      【JsVal リテラル】
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jsval_2" class="md-nav__link">
+    <span class="md-ellipsis">
       【JsVal を生成する関数】
     </span>
   </a>
   
     <nav class="md-nav" aria-label="【JsVal を生成する関数】">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#makejsvalfromjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      makeJsValFromJson()
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#makejsnull" class="md-nav__link">
@@ -12088,7 +12133,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jsval_2" class="md-nav__link">
+  <a href="#jsval_3" class="md-nav__link">
     <span class="md-ellipsis">
       【JsVal クラス】
     </span>
@@ -12101,6 +12146,15 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       コンストラクタ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      ToString()
     </span>
   </a>
   
@@ -12425,7 +12479,21 @@
 </code></pre></div>
 <p>JSの型と対応した整数値。</p>
 <hr />
-<h2 id="jsval_1">【JsVal を生成する関数】</h2>
+<h2 id="jsval_1">【JsVal リテラル】</h2>
+<p>HeliScriptのコード中に、JSのオブジェクトリテラル風の表記を利用して、JsValを初期化、生成することができます。</p>
+<div class="highlight"><pre><span></span><code><span class="nx">JsVal</span><span class="w"> </span><span class="nx">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">JsVal</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;vket-chan&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">12345</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Welcome to Vket World!&quot;</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>new JsVal() の後に、{ }  で囲んだJSON形式の文字列を記述できます。</p>
+<hr />
+<h2 id="jsval_2">【JsVal を生成する関数】</h2>
+<h3 id="makejsvalfromjson">makeJsValFromJson()</h3>
+<p><code>JsVal makeJsValFromJson(string json);</code></p>
+<p>引数として渡したJSON文字列を解析し、JsValのインスタンスを返す関数。</p>
+<p>JSON文字列の解析に失敗した場合、nullを返します。</p>
 <h3 id="makejsnull">makeJsNull()</h3>
 <p><code>JsVal makeJsNull();</code></p>
 <p>null値を表現するJsValインスタンスを生成して返す。</p>
@@ -12473,7 +12541,7 @@
 <p><code>JsProp makeJsArrayElemFrom(JsVal newVal);</code></p>
 <p>配列の要素を返す。初期値をJsValとして指定可能。</p>
 <hr />
-<h2 id="jsval_2">【JsVal クラス】</h2>
+<h2 id="jsval_3">【JsVal クラス】</h2>
 <p>HeliScript で JavaScript の型を扱う仕組み。</p>
 <p>JsVal型は、JavaScript連携において、extern関数の戻り値と引数に指定できる。また、JavaScriptコールバックの戻り値と引数にも利用できる。</p>
 <p>JsVal型は、生成後に多様な型の値を設定することができる。また、JavaScriptオブジェクトのように、プロパティを動的に追加・削除可能。</p>
@@ -12481,6 +12549,11 @@
 <p><code>public JsVal();</code></p>
 <p>空のJsValを生成する。</p>
 <p>生成された時点では、JS側のnullに相当する状態になっている。後から自由に中身の値と型を変更できる。</p>
+<h3 id="tostring">ToString()</h3>
+<p><code>public string ToString(string space = "");</code></p>
+<p>JsValインスタンスの内容を文字列として取得する。</p>
+<p>引数 space に文字列を指定すると、その文字列でインデントを行う。引数 space のデフォルト値は空文字で、引数を省略して呼び出すことができる。その場合、インデントを一切行わない。</p>
+<p>例えば、jsval.ToString("  ") と空白文字2つを指定したり、jsval.ToString("\t")とタブ記号でインデントを行うようにも指定できる。</p>
 <h3 id="clear">Clear()</h3>
 <p><code>public void Clear();</code></p>
 <p>JsValインスタンスに設定された情報を消去し、型情報を JS_NULL に設定する。</p>
