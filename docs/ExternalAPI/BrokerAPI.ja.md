@@ -61,7 +61,7 @@ component BrokerAPI
     const string GET_SWITCH_NAME = "Button_Get";//Worldで押すボタンのgameObject名を入れる
     const string API_URL = "https://www.googleapis.com/youtube/v3/search";//アクセス許可に表示するURL兼疎通URL
     const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//youtube APIのAPIキーを入れる
-    const string SPATIUM_CODE = "Default";//特殊なことをしなければDefault
+    const string SPATIUM_CODE = "default";//特殊なことをしなければdefault
     const string SEARCH_WORD = "VketCloud";//検索するワードを入れる
     const int MAX_RESULTS = 10;//検索結果の数を入れる。1～50
     const string RESULT_ITEM_NAME = "Result";//取得結果を表示するTextPlaneの名前。SDK Ver12.3だとFontSizeを大きくすると文字化けしやすい

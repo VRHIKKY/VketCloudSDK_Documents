@@ -61,7 +61,7 @@ component BrokerAPI
     const string GET_SWITCH_NAME = "Button_Get";// Name of GameObject which will be clicked by the player in world
     const string API_URL = "https://www.googleapis.com/youtube/v3/search";//URL for API access and confirmation dialog
     const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//API key for the youtube API
-    const string SPATIUM_CODE = "Default";//this value should be Default unless explicitly changed by worldsettings
+    const string SPATIUM_CODE = "default";//this value should be default unless explicitly changed by worldsettings
     const string SEARCH_WORD = "VketCloud";//Word to be searched by API
     const int MAX_RESULTS = 10;//number of search results to be obtained
     const string RESULT_ITEM_NAME = "Result";//Name of TextPlane to show the obtained search results. May cause text corruption if FontSize value is enlarged on Ver12.3

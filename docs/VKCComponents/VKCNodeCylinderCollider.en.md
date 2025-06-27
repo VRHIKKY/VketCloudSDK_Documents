@@ -10,6 +10,10 @@ Normally in Unity there is no cylinder collider, and it is substituted by a caps
     Due to the implementation of collision detection in the physics engine, capsule colliders and cylinder colliders, and cylinder colliders and cylinder colliders do not collide.<br>
     When using a cylinder collider, thin colliders like Plane may penetrate, so you need to use a box for the ground.
 
+!!!note warning
+    Capsule colliders are only supported for area collider purposes.
+    Therefore, when VKC Node Cylinder Collider is attached to an object with Mesh Renderer and Capsule Collider, the collider will not function during build and run.
+
 ## How to Use
 
 1. This component is intended to use on an object with Unity Mesh Renderer / Capsule Collider components.<br>
