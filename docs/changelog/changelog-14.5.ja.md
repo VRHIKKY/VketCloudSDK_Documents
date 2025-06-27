@@ -2,6 +2,13 @@
 
 ## 2025年6月27日更新
 
+## 2025年6月27日 - 追加されたページ
+
+- リリースノート
+    - [v15.7](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-15.7.html)
+        - v15.7のリリースノートの新しいページを追加
+        - WebXRの不具合修正を追加（右スティック回転時の頭部回転量修正）
+
 ## 2025年6月27日 - 編集されたページ
 
 - VKCコンポーネント
