@@ -1,12 +1,28 @@
 # SDK Manual Change Log - Ver 14.5
 
-## Updated June 27, 2025
+## June 27 2025 Update
 
-## June 27, 2025 - Edited Pages
+## June 27 2025 - Edited Page
 
 - External API
+    - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/JsVal.html)
+        - Added JsVal Literal section
+        - Added makeJsValFromJson() function
+        - Added ToString() method
+        - Added detailed explanation for makeJsArrayElem()
     - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/BrokerAPI.html)
         - Fixed SPATIUM_CODE default value from "Default" to "default"
+
+---
+
+## Updated June 20, 2025
+
+## June 20, 2025 - Edited Pages
+
+- HeliScript
+    - Built-in Functions
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_gui.html)
+            - Fixed `hsAddGUIAction` function signature
 
 ---
 
