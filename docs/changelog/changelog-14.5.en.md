@@ -10,6 +10,8 @@
         - Added makeJsValFromJson() function
         - Added ToString() method
         - Added detailed explanation for makeJsArrayElem()
+    - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/BrokerAPI.html)
+        - Fixed SPATIUM_CODE default value from "Default" to "default"
 
 ---
 

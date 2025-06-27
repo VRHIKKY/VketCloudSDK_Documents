@@ -5,6 +5,8 @@
 ## 2025年6月27日 - 編集されたページ
 
 - 外部API連携
+    - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/BrokerAPI.html)
+        - SPATIUM_CODEのデフォルト値を"Default"から"default"に修正
     - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/JsVal.html)
         - JsValリテラルセクションを追加
         - makeJsValFromJson()関数を追加
