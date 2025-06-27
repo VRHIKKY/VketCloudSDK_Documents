@@ -1,6 +1,11 @@
 {
   "permissions": {
     "allow": [
+      "Bash(mkdocs serve:*)",
+      "Bash(mkdocs build:*)"
+    ],
+    "deny": []
+  }
       "Bash(find:*)",
       "Bash(grep:*)"
     ],

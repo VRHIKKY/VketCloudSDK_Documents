@@ -9,6 +9,26 @@
         - v15.7のリリースノートの新しいページを追加
         - WebXRの不具合修正を追加（右スティック回転時の頭部回転量修正）
 
+## 2025年6月27日 - 編集されたページ
+
+- VKCコンポーネント
+    - VKC Node
+        - [VKC Node Cylinder Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCNodeCylinderCollider.html)
+            - カプセルコライダーはエリアコライダー用途のみ対応の注意書きを追加
+            - Mesh Renderer併用時の非機能について警告を追記
+- ワールド制作ガイド
+    - [Unity利用ガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/UnityGuidelines.html)
+        - HeliScriptファイル（.hs）の改行コードはLFのみを使用することの警告を追加
+        - CRLFを使用するとビルド時にheliodorでの読み込みエラーが発生することを明記
+- 外部API連携
+    - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/BrokerAPI.html)
+        - SPATIUM_CODEのデフォルト値を"Default"から"default"に修正
+    - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/JsVal.html)
+        - JsValリテラルセクションを追加
+        - makeJsValFromJson()関数を追加
+        - ToString()メソッドを追加
+        - makeJsArrayElem()の詳細説明を追加
+
 ---
 
 ## 2025年6月20日更新

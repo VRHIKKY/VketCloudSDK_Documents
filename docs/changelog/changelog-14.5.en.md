@@ -9,6 +9,26 @@
         - Added new page for v15.7 release notes
         - Added WebXR bug fix (fixed head rotation doubling issue when using right stick)
 
+## June 27, 2025 - Edited Pages
+
+- VKC Components
+    - VKC Node
+        - [VKC Node Cylinder Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/VKCComponents/VKCNodeCylinderCollider.html)
+            - Added warning that capsule colliders are only supported for area collider purposes
+            - Added warning about non-functionality when used with Mesh Renderer
+- World Making Guide
+    - [Unity Guidelines](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/UnityGuidelines.html)
+        - Added warning that HeliScript files (.hs) must use LF line endings only
+        - Noted that using CRLF causes build read errors in heliodor
+- External API
+    - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/JsVal.html)
+        - Added JsVal Literal section
+        - Added makeJsValFromJson() function
+        - Added ToString() method
+        - Added detailed explanation for makeJsArrayElem()
+    - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/ExternalAPI/BrokerAPI.html)
+        - Fixed SPATIUM_CODE default value from "Default" to "default"
+
 ---
 
 ## Updated June 20, 2025

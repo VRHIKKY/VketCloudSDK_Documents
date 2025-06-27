@@ -142,6 +142,14 @@ When using video files, please follow the formats listed below.
 | Frame rate | 29.97 or 30 |
 | Profile level | 4.1, AAC 44.1kHz, yuv420 |
 
+## HeliScript Files
+
+When creating or editing HeliScript files (.hs files), please note the following:
+
+!!! warning "Line Endings"
+    HeliScript files (.hs files) must use only LF (Line Feed) line endings.<br>
+    Using CRLF (Carriage Return + Line Feed) line endings will cause read errors on the heliodor side during build.
+
 ## VKC Item Text Plane Text
 
 When inputting text into the VKC Item Text Plane, please be aware of the following:
