@@ -13,6 +13,17 @@
 
 ---
 
+## 2025年6月20日更新
+
+## 2025年6月20日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - `hsAddGUIAction`関数のシグネチャを修正
+
+---
+
 ## 2025年6月11日更新
 
 ## 2025年6月11日 - 追加されたページ

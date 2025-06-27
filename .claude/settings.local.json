@@ -1,8 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
-  }
+  },
+  "enabledMcpjsonServers": [
+    "mcp-atlassian"
+  ],
+  "enableAllProjectMcpServers": true
 }

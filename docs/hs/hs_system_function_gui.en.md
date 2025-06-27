@@ -224,7 +224,7 @@ Adds a GUI.
 Deletes a GUI.
 
 ## hsAddGUIAction
-`void hsAddGUIAction(string LayerName, bool IsPortrait, string GUIName)`
+`void hsAddGUIAction(string LayerName, string GUIName, string Param)`
 Adds a GUIAction to a GUI.
 
 ## hsAddGUIToggle
