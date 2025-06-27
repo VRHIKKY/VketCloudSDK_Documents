@@ -1,5 +1,18 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年6月27日更新
+
+## 2025年6月27日 - 編集されたページ
+
+- 外部API連携
+    - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/JsVal.html)
+        - JsValリテラルセクションを追加
+        - makeJsValFromJson()関数を追加
+        - ToString()メソッドを追加
+        - makeJsArrayElem()の詳細説明を追加
+
+---
+
 ## 2025年6月20日更新
 
 ## 2025年6月20日 - 編集されたページ
