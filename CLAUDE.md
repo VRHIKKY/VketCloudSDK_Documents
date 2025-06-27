@@ -104,6 +104,9 @@ Key directories:
 - Internal cross-references use relative paths
 - Code blocks specify language for syntax highlighting
 - Admonitions (notes, warnings) follow Material for MkDocs syntax
+- Place images in section-specific `img/` subdirectories
+- Follow existing naming conventions for files and directories
+- Version-specific changes should target appropriate version branches
 
 # important-instruction-reminders
 Do what has been asked; nothing more, nothing less.

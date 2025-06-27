@@ -1,9 +1,14 @@
 # SDK Manual Change Log - Ver 14.5
 
-## June 27 2025 Update
+## Updated June 27, 2025
 
-## June 27 2025 - Edited Pages
+## June 27, 2025 - Edited Pages
 
+- VKC Components
+    - VKC Node
+        - [VKC Node Cylinder Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/VKCComponents/VKCNodeCylinderCollider.html)
+            - Added warning that capsule colliders are only supported for area collider purposes
+            - Added warning about non-functionality when used with Mesh Renderer
 - World Making Guide
     - [Unity Guidelines](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/WorldMakingGuide/UnityGuidelines.html)
         - Added warning that HeliScript files (.hs) must use LF line endings only
