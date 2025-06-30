@@ -12,6 +12,13 @@
         "ghcr.io/sooperset/mcp-atlassian:latest"
       ],
       "env": {}
+    },
+    "deepwiki": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://mcp.deepwiki.com/sse"
+      ]
     }
   }
 }
