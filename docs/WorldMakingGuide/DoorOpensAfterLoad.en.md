@@ -9,22 +9,22 @@ This page presents an example of implementation in VketSpace.
 
 ![DoorOpensAfterLoad00](img/DoorOpensAfterLoad00.jpg)
 
-## Mounting Method
+## Implementation Method
 
-1. install a hit point at the spawn point to prevent entering the dynamic loading loading area
+1. When first entering the world, set up a collider to prevent entering the dynamic loading area.
 
 ![DoorOpensAfterLoad01](img/DoorOpensAfterLoad01.jpg)
 
-Place a hit judgment to block the entrance to the part to be loaded by dynamic loading. The hit detection is placed in a HEOField that is loaded from the beginning (= autoloading : true). Basically, it is included in the HEOField around the spawn point.
-
-![DoorOpensAfterLoad03](img/DoorOpensAfterLoad03.jpg)
-
-2. put an area collider in the dynamic loading HEOField that disables the roadblock hit decision & animates the opening of the door
+2. Place an area collider to block the entrance to the area to be dynamically loaded.
+The player's intrusion into the area collider will trigger the loading of the dynamic loading area.
 
 ![DoorOpensAfterLoad04](img/DoorOpensAfterLoad04.jpg)
-![DoorOpensAfterLoad06](img/DoorOpensAfterLoad06.jpg)
 
-Put HEOAreaCollider in the HEOField (= autoloading : false) that is loaded in dynamic loading, disable the collider that prevents entering the loading area set in 1 for the action when the area collider enters and the door opens animation to play.
+3. After the dynamic loading area has been loaded, add an area collider that disables the roadblock hit detection and plays an animation to open the door.
+
+Place a HEOAreaCollider in the HEOField (= autoloading : false) that is loaded dynamically. Set it so that when the area collider is entered, it will disable the collider set in step 1 that prevented entering the loading area, and play an animation to open the door.
+
+![DoorOpensAfterLoad06](img/DoorOpensAfterLoad06.jpg)
 
 ## Principle
 HEOAreaCollider is a stand-alone item, but the parent hit decision is managed by the HEOField to which each belongs.

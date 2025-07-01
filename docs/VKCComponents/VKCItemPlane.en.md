@@ -48,7 +48,7 @@ For details, please refer to the [specification limit](../WorldMakingGuide/Unity
 | Label | Function |
 | ---- | ---- |
 | Clickable | Toggles acceptance of click input from player |
-| Auto Loading | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](VKCItemField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
+| Auto Loading | Toggles auto loading enable/disable |
 | Item Render Priority | Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
 | Show Photo Mode | Toggles display/hide when in photo mode |
 | Overrides | On Entering the world, the `Material` and `Texture` set in the Overrides will be used instead of textures set in VKC Item Plane. |
