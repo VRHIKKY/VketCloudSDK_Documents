@@ -172,7 +172,7 @@ component VketChan
 
 - [VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md) * SDK Ver12.3.4以降
 
-!!! caution "Activityエクスポート時のVKC Node Video Triggerについて"
+!!! warning "Activityエクスポート時のVKC Node Video Triggerについて"
     SDK Ver12.3.4以降では[VKC Node Video Trigger](../VKCComponents/VKCNodeVideoTrigger.md)をアクティビティに含めてエクスポートすることができるようになりました。<br>
     ただしAutoplayには対応していないため、動画を再生する際は手動クリックあるいは[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)による再生を行う必要があります。
 

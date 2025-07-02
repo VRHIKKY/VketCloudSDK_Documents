@@ -24,11 +24,18 @@ Projectタブを開き、Assetsを右クリックしCreate → FolderでUIの画
 
 ![GUITools_HowToUse_05](img/GUITools_HowToUse_05.jpg)
 
+## Essential Objectsの追加（テンプレート）
+
+![GUITools_HowToUse_14](img/GUITools_HowToUse_14.jpg)
+
+上部メニューからGameObject > Add Essential objects for VketCloudGUIToolを選択し、Essential Objectを追加します。
+
+
 ## サンプルActivity Canvasの読み込み（テンプレート）
 
 ![GUITools_HowToUse_12](img/GUITools_HowToUse_12.jpg)
 
-Import Into Projectでインストールします。
+２つ目の方法として、Package ManagerからImport Into Projectでインストールします。
 
 ![GUITools_HowToUse_13](img/GUITools_HowToUse_13.jpg)
 

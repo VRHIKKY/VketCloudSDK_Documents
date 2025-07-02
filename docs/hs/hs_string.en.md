@@ -12,7 +12,7 @@ string internally stores string data as UTF-8 bytes. Use the Length() method to 
 
 HeliScript strings are mutable. You can rewrite the contents of the string by specifying the index with "[]" or by methods such as Append().
 
-!!! note caution
+!!! warning "caution"
     In the current version, if a string includes an apostrophe / single quote (' ' , U+0027), the process will stop due to error.<br>
     Therefore, please avoid using the quotation within strings.
 
@@ -23,6 +23,12 @@ HeliScript strings are mutable. You can rewrite the contents of the string by sp
 `public int ToInt()`
 
 Convert a string to an integer value. Returns 0 if the conversion fails.
+
+### ToFloat()
+
+`public float ToFloat()`
+
+Convert a string to a float value. Returns 0 if the conversion fails.
 
 ### Length()
 
@@ -71,6 +77,71 @@ Removes the last character of a string.
 `public void RemoveAt(int index)`
 
 Deletes one character from the position specified by the argument.
+
+### Split()
+
+`public list<string> Split()`
+
+Splits a string by "whitespace characters" and returns the result as a list of strings.
+
+The following characters are considered "whitespace characters":
+
+- Space (0x20, ' ')
+- Form feed (0x0c, '\f')
+- Line feed (0x0a, '\n')
+- Carriage return (0x0d, '\r')
+- Horizontal tab (0x09, '\t')
+- Vertical tab (0x0b, '\v')
+
+### Split(int)
+
+`public list<string> Split(int opt)`
+
+Splits a string by whitespace characters and returns the result as a list of strings.
+
+You can pass an option value as an argument to modify the behavior during splitting.
+
+### Split(string)
+
+`list<string> Split(string separator)`
+
+Splits a string by the specified separator and returns the result as a list of strings.
+
+### Split(string, int)
+
+`list<string> Split(string separator, int opt)`
+
+Splits a string by the specified separator and returns the result as a list of strings.
+
+You can pass an option value (opt) as an argument to modify the behavior during splitting.
+
+## Split Options
+
+### SplitOpt_None
+
+`const int SplitOpt_None = 0;`
+
+No special behavior is applied.
+
+### SplitOpt_RemoveEmpty
+
+`const int SplitOpt_RemoveEmpty = 1;`
+
+If the strings contain whitespace characters after splitting, they are discarded.
+
+### SplitOpt_Trim
+
+`const int SplitOpt_Trim = 2;`
+
+Trims existing whitespace characters on before and after the split strings.
+
+### SplitOpt_RemoveAll
+
+`const int SplitOpt_RemoveAll = SplitOpt_RemoveEmpty | SplitOpt_Trim;`
+
+A combination of the SplitOpt_RemoveEmpty and SplitOpt_Trim options.
+
+***
 
 ## special operators
 

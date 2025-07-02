@@ -5,7 +5,7 @@ Note that errors/alerts not on this list (e.g. build error caused by Unity, etc.
 
 |Error (⛔) / Alert (⚠)|Message Category|Message Context|Fix Suggestions|Related Links|
 |-----|-----|-----|-----|-----|
-|Error|Unity Option Alert|Your version of Unity is not supported by VketCloudSDK.|Please change the version to 2019.4.31f1.|[Download Archive](https://unity.com/releases/editor/archive#download-archive-2019){target=_blank} |
+|Error|Unity Option Alert|Your version of Unity is not supported by Vket Cloud SDK.|Please change the version to 2019.4.31f1.|[Download Archive](https://unity.com/releases/editor/archive#download-archive-2019){target=_blank} |
 |Alert|Unity Option Alert|Color Space is not set to Linear. The appearance after building may be significantly different.|Please set the Color Space to Linear.| [Unity Pre-prep](../AboutVketCloudSDK/OperatingEnvironment.md) |
 |Alert|Unity Option Alert|In the Tier settings of Player settings, the quality level of the standard shader is not set to Medium. The appearance after building may be significantly different.|Please set the quality of the standard shader to Medium.|[Graphics - Unity Documentation](https://docs.unity3d.com/ja/2019.4/Manual/class-GraphicsSettings.html){target=_blank}|
 |Error|Essential Objects Error|There is no object with [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md) in the scene.|Please create an object with [HEOWorldSetting](../VKCComponents/HEOWorldSetting.md).|[Essential objects](../FirstStep/WorldBasicComponents.md) |

@@ -6,7 +6,9 @@
 
 ### Unityのバージョンを確認する
 
-VketCloudSDKでのUnityの推奨バージョンは`Unity 2019.4.31f1`です。
+Vket Cloud SDKでのUnityの推奨バージョンは、SDKバージョンによって異なります。  
+[Vket Cloud SDKの動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/latest/AboutVketCloudSDK/OperatingEnvironment.html)のページをご参照ください。
+
 バージョンが間違っている場合は動作が保証されないため、推奨バージョンでのプロジェクトの再作成が必要です。
 
 ![GeneralChecklist_1](img/GeneralChecklist_1.jpg)
@@ -31,7 +33,7 @@ Tools->Open Release Folderを選択
 ![GeneralChecklist_3](img/GeneralChecklist_3.jpg)
 
 このフォルダーに古いビルドデータが残っている際に、ワールドの誤動作の原因になる場合があります。<br>
-VketCloudSDK --> Clear Cache を選択し、Releaseフォルダーの中身をリセットすると解消されます。
+Vket Cloud SDK --> Clear Cache を選択し、Releaseフォルダーの中身をリセットすると解消されます。
 
 ![GeneralChecklist_4](img/GeneralChecklist_4.jpg)
 
@@ -50,8 +52,8 @@ VketCloudSDK --> Clear Cache を選択し、Releaseフォルダーの中身を�
 
 4. 「キャッシュされた画像とファイル」にチェックし、[データを削除]をクリックする。
 
-!!! note caution
-    ※削除対象の期間を全期間にすると確実に全てのキャッシュが削除されますが、VketCloudSDK以外のウェブサイトのキャッシュも削除されるためご注意ください。<br>
+!!! warning "caution"
+    ※削除対象の期間を全期間にすると確実に全てのキャッシュが削除されますが、Vket Cloud SDK以外のウェブサイトのキャッシュも削除されるためご注意ください。<br>
     ※お使いのブラウザによってキャッシュクリアの手順が異なるため、適宜ブラウザ側のヘルプをご参照ください。
 
 ## Unity側とブラウザ側でログインができているかを確認する
@@ -59,11 +61,11 @@ VketCloudSDK --> Clear Cache を選択し、Releaseフォルダーの中身を�
 ワールドアップロードの際、ブラウザからVket Cloudのアカウントにログインしていない場合に不具合が発生する場合があります。<br>
 Vket Cloud公式サイトにてマイページにログインし、Unityから再度アップロードを行うと症状が解決する場合があります。
 
-VketCloudSDKでログインを行うには、VketIDの登録とは別としてVket Cloudでライセンスの新規登録を行う必要があります。<br>
+Vket Cloud SDKでログインを行うには、VketIDの登録とは別としてVket Cloudでライセンスの新規登録を行う必要があります。<br>
 下記のサイトでログインを行い、ライセンスの取得をお試しください。
 [https://cloud.vket.com/](https://cloud.vket.com/)
 
-ログイン済みの場合、VketCloudSDK --> Accountを選択するとログインしているユーザーとライセンスが表示されます。
+ログイン済みの場合、Vket Cloud SDK --> Accountを選択するとログインしているユーザーとライセンスが表示されます。
 
 ![GeneralChecklist_5](img/GeneralChecklist_5.jpg)
 
@@ -85,14 +87,14 @@ Unityやパソコンを再起動することで、改善されることがあり
 
 ## パスとファイル名に空白や日本語などの2バイト文字が含まれていないか確認する
 
-VketCloudSDKでは、Unityの読み込み参照先のファイルやフォルダに日本語などの全角の2バイト文字が含まれている場合にエラーが発生します。<br>
+Vket Cloud SDKでは、Unityの読み込み参照先のファイルやフォルダに日本語などの全角の2バイト文字が含まれている場合にエラーが発生します。<br>
 必ず読み込み先のファイルやフォルダは半角英数字で作成してください。
 
 ![GeneralChecklist_8](img/GeneralChecklist_8.jpg)
 
 Unityプロジェクト名とUnityプロジェクトが含まれているパス名も2バイト文字が入っているとエラーの原因になります。<br>
 名前への2バイト文字の使用は基本的に非推奨となっております。<br>
-※ Unityの初回設定時、VketcloudSDKへログインができない問題で２バイト文字が含まれている場合エラーになります。
+※ Unityの初回設定時、Vket Cloud SDKへログインができない問題で２バイト文字が含まれている場合エラーになります。
 
 ![GeneralChecklist_9](img/GeneralChecklist_9.jpg)
 
@@ -131,7 +133,7 @@ Hierarchyにある、問題があると思われるオブジェクトやスク�
 
 ![GeneralChecklist_11](img/GeneralChecklist_11.jpg)
 
-!!! note caution
+!!! warning "caution"
     SDKの中身を移動させる際は、念のためにバックアップを取ることを**強く**おすすめいたします。
 
 ## Unityエディターの再インストールを行う
@@ -145,17 +147,17 @@ Unityエディターを入れ直すことで、改善が見られる場合があ
 
 ## ワールド制作時のトラブル
 
-### Q. UnityにVketCloud導入後にVketCloudSDKからログインしようとすると白い画面が出てログインができない
+### Q. UnityにVketCloud導入後にVket Cloud SDKからログインしようとすると白い画面が出てログインができない
 
 - A. VketCloudのサイトで新規登録を行う
 
-VketCloudSDKでログインを行うには、VketIDの登録とは別としてVket Cloudでライセンスの新規登録を行う必要があります。<br>
+Vket Cloud SDKでログインを行うには、VketIDの登録とは別としてVket Cloudでライセンスの新規登録を行う必要があります。<br>
 下記のサイトでログインを行い、ライセンスの取得をお試しください。
 [https://cloud.vket.com/](https://cloud.vket.com/)
 
 - A. [パスとファイル名に空白や日本語などの2バイト文字が含まれていないか確認する](#2)
 
-VketCloudSDKでは、Unityの読み込み参照先のファイルやフォルダに日本語などの全角の2バイト文字が含まれている場合にエラーが発生します。<br>
+Vket Cloud SDKでは、Unityの読み込み参照先のファイルやフォルダに日本語などの全角の2バイト文字が含まれている場合にエラーが発生します。<br>
 必ず読み込み先のファイルやフォルダは半角英数字で作成してください。
 
 ### Q. 「ビルドと実行」をしてもワールド読み込みが進まない
@@ -212,7 +214,7 @@ RAM 8GB以上
 
 Google Pixelなら Pixel 5以降
 
-!!! note caution
+!!! warning "caution"
     ※上記のスペックを満たす全ての機種の動作を保証するものではありません。<br>
     ※お使いの端末の使用状況や通信環境などによって正しく挙動しない場合がございますので予めご了承ください。
 
@@ -222,13 +224,13 @@ Google Pixelなら Pixel 5以降
 Vket Cloudでマルチプレイを行う場合、ワールド入場時にブラウザにて「マイクを許可」を必ず有効にしてください。<br>
 ※マイク許可がされていない場合、VketCloudの仕様上マルチプレイはできません
 
-### Q. MyVketでアバターアップロードをしたがVketCloudSDKで簡易アバターになってしまう
+### Q. Vket Cloud 公式サイトでアバターアップロードをしたがVket Cloud SDKで簡易アバターになってしまう
 
-VketCloudSDKは、簡易アバターの設定が通常のワールド設定では5万ポリゴンに設定されております。<br>
+Vket Cloud SDKは、簡易アバターの設定が通常のワールド設定では5万ポリゴンに設定されております。<br>
 簡易アバター設定を行う場合はワールド側で設定を行うか、もしくは自分のアバターのポリゴン数を下げる必要があります。<br>
 ※ アバター自体のポリゴン数を下げるにはBlender等の外部ツールで行う必要があります。
 
-#### VketCloudSDKのポリゴン数設定方法
+#### Vket Cloud SDKのポリゴン数設定方法
 
 1. Hierarchyから[WorldSetting](../VKCComponents/HEOWorldSetting.md)オブジェクトを選択する
 
@@ -242,9 +244,9 @@ VketCloudSDKは、簡易アバターの設定が通常のワールド設定で�
 
 - Discordでサポートを受ける
 
-VketCloud/MyVketコミュニティDiscordに参加し、問題を「#質問・要望・不具合報告」フォーラムに投稿するか、あるいは「📨｜inquiry-ticket」にてプライベートチャンネルを作成します。
+Vket Cloud コミュニティDiscordに参加し、問題を「#質問・要望・不具合報告」フォーラムに投稿するか、あるいは「📨｜inquiry-ticket」にてプライベートチャンネルを作成します。
 
-[VketCloud/MyVketコミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ)
+[Vket Cloud コミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ)
 
 - メールで問い合わせる
 

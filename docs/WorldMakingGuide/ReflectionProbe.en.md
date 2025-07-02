@@ -1,6 +1,6 @@
 # Reflection Probe
 
-!!! note Info
+!!! info "Note"
      For basic functions of reflection probes, please see Unity's official documentation ([here](https://docs.unity3d.com/en/2018.4/Manual/class-ReflectionProbe.html){target=blank})
 
 In Vket Cloud, reflection probes are determined per object in the hierarchy, not per primitive.
@@ -15,7 +15,7 @@ This weight value is calculated based on the distance between the reflection pro
 
 ## How to setup Reflection Probes
 
-On VketCloudSDK later than Ver12.3, Reflection Probes located in the scene will be automatically detected / converted on build.
+On Vket Cloud SDK later than Ver12.3, Reflection Probes located in the scene will be automatically detected / converted on build.
 
 1. Create a GameObject in the scene with a Reflection Probe attached.
 
@@ -33,15 +33,15 @@ On VketCloudSDK later than Ver12.3, Reflection Probes located in the scene will 
 
     ![ReflectionProbe_Setup_3](img/ReflectionProbe_Setup_3.jpg)
 
-3. Build and Run the world via the VketCloudSDK menu, which should create texture files inside tex_reflection_probe folder located under data/Field/World.
+3. Build and Run the world via the Vket Cloud SDK menu, which should create texture files inside tex_reflection_probe folder located under data/Field/World.
 
-    To check texture files, select VketCloudSDK > Open Release Folder, and move to release/data/Field/World path.
+    To check texture files, select Vket Cloud SDK > Open Release Folder, and move to release/data/Field/World path.
 
     ![ReflectionProbe_Setup_4](img/ReflectionProbe_Setup_4.jpg)
 
     ![ReflectionProbe_Setup_5](img/ReflectionProbe_Setup_5.jpg)
 
-!!! caution "Precautions on exporting reflection probes"
+!!! warning "Precautions on exporting reflection probes"
 
      - When using Reflection Probe on larger objects (floors, walls, objects with huge faces), set the baking cubemap to a higher resolution (e.g. 2048). This is because the image quality drops significantly when reflecting on a large object.
 
@@ -67,7 +67,7 @@ In VketCloud, you can optionally use Box Projection of Unity's reflection probe.
 
 ## (Outdated) How to export reflection probes
 
-!!! caution "Deprecation of HEOReflectionProbe"
+!!! warning "Deprecation of HEOReflectionProbe"
     On Ver12.3, the HEOReflectionProbe component has been deprecated.<br>
     The instructions below are solely for archive purpose.
 

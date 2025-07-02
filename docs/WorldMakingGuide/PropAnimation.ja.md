@@ -2,7 +2,7 @@
 
 ![PropAnimation_Result_1](./img/PropAnimation_Result_1.gif)
 
-VketCloudSDKでは、[VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md)コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
+Vket Cloud SDKでは、[VKC Node Rotate Animation](../VKCComponents/VKCNodeRotateAnimation.md)コンポーネントあるいは.heoファイルと.hemを使用してワールド上にアニメーション付きのオブジェクトを置くことができます。
 動くオブジェクトがワールド上に設置されることで、見栄えが大きく向上します。
 
 各ステップで躓いた際は[オブジェクトをアニメーションさせる - できないときは](PropAnimation_TroubleShooting.md)を参照してください。
@@ -96,7 +96,7 @@ Legacyにチェックを入れます。
     ボーン付きのモデルにてアニメーションを再生したい場合は、モデルをVRMで出力し、モーションも合わせて出力する必要があります。<br>
     または、ボーンをすべて削除してSkinnedMeshRendererを使用していない状態とする必要があります。
 
-入力が完了したら、Inspectorビュー上でAnimationを持つオブジェクト（空オブジェクト）を選んだ状態で、画面上部VketCloudSDKタブの「Export Motion」を選択してください。<br>
+入力が完了したら、Inspectorビュー上でAnimationを持つオブジェクト（空オブジェクト）を選んだ状態で、画面上部Vket Cloud SDKタブの「Export Motion」を選択してください。<br>
 選択後、.hemの保存場所選択ウィンドウが起動するので、任意の場所に任意の名前で保存してください。
 
 ![PropAnimation_13](./img/PropAnimation_13.jpg)
@@ -118,7 +118,7 @@ Legacyにチェックを入れます。
 
 ![PropAnimation_15](./img/PropAnimation_15.jpg)
 
-上記でAnimationコンポーネントを入れたオブジェクト（空オブジェクト）を選択した状態でVketCloudSDKの`「Export Field」`を選択してください。
+上記でAnimationコンポーネントを入れたオブジェクト（空オブジェクト）を選択した状態でVket Cloud SDKの`「Export Field」`を選択してください。
 
 ![PropAnimation_16](./img/PropAnimation_16.jpg)
 
@@ -223,7 +223,7 @@ component SwitchAnimation
 
     public void Update()
     {
-        m_ParseTime += system.GetDeltaTime();
+        m_ParseTime += hsSystemGetDeltaTime();
 
         if (m_ParseTime >= 3.0f)
         {

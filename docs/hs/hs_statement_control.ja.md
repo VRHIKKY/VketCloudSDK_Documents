@@ -129,3 +129,67 @@ switch (id) {
         break;
 }
 ```
+
+??? warning "戻り値のある関数内では、switch文のスコープ外でreturnする必要があります"
+    ```
+    string GetStatus(int status){
+        switch (status)
+        {
+            case 0:
+                return "off";
+            default:
+                return "on";
+        }
+        return "on"; // default節があっても、この記述が必要です
+    }
+    ```
+
+??? warning "他クラスの定数は分岐条件として使用できません"
+    グローバルスコープもしくは同クラス内で定義された定数であれば使用可能です。
+    ```
+    const int GlobalConstant = 0;
+
+    class ClassConstant
+    {
+        public const int Value = 1;
+    }
+
+    class NewComponent
+    {
+        const int MyConstant = 2;
+
+        public NewComponent()
+        {
+            int id = 2;
+            ClassConstant OtherClassConstant = new ClassConstant();
+
+            switch (id)
+            {
+                case GlobalConstant: // OK
+                    break;
+                case OtherClassConstant.Value: //NG: コンパイルエラーになります
+                    break;
+                case MyConstant: // OK
+                    break;
+            }
+        }
+    }
+    ```
+
+## { } - ブロックによるスコープ
+メソッド内の*{ }*によって、スコープの定義が可能です。
+
+```
+public void example() {
+    int x = 10;
+    { 
+        int y = 20;
+    }
+
+    // -> "x:10"
+    hsSystemOutput("x: %d" % x);
+
+    // スコープ外のためエラー
+    hsSystemOutput("y: %d" % y); 
+}
+```

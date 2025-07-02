@@ -1,7 +1,7 @@
 
 # 組み込み関数 - システム
 
-!!! 情報 Info
+!!! info "情報"
     Vket Cloudの基盤システム(ブラウザやOS)へのアクセスを実現する関数です。
 
 ***
@@ -19,7 +19,7 @@
 `void hsSystemWriteLine(string text)`
 引数で指定した文字列をコンソールに出力し、最後に改行を出力する。
 
-!!! note caution
+!!! warning "caution"
     現バージョンにおいて、文字列にアポストロフィ / シングルクォート( ' ' , U+0027)を含めると動作が停止するエラーが確認されております。<br>
     恐れ入りますが、文字列では同記号の使用を避けるようお願い致します。
 
@@ -136,6 +136,11 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 `void hsWebOpen(string url)`
 
 urlを開く。
+
+### hsWebReload
+`void hsWebReload()`
+
+Webページをリロードします。
 
 ***
 

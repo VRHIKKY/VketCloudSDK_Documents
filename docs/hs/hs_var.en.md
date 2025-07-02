@@ -1,5 +1,5 @@
 
-# Built-in types
+# Basic Types
 
 ## Kinds of built-in types
 
@@ -18,7 +18,7 @@ A class type is provided as a type that has a structure and can be independently
 
 |type|content|
 |:--|:--|
-|[class](hs_class.md)|structured reference type (valid reference value, or *NULL*)|
+|[class](hs_class.md)|structured reference type (valid reference value, or *null*)|
 
 ## Manage references
 
@@ -26,7 +26,7 @@ Instances of class are treated as references.
 
 HeliScript uses reference counter to manage the life of references. It increments an internally recorded "reference counter" when an object is referenced from anywhere, and decrements the "reference counter" when it is unreferenced. Objects that are no longer referenced will have a reference counter of 0 and proceed to be automatically deleted.
 
-HeliScript provides *NULL* as a value that represents an "empty reference" that does not point to anything.
+HeliScript provides *null* as a value that represents an "empty reference" that does not point to anything.
 
 ## Get reference
 
@@ -34,23 +34,54 @@ If *ref* is added to the argument definition of a function, the argument will be
 
 As such, you can change the variable of the calling function by assigning the variable at the destination of the argument.
 
-```
-void RefFunc(ref int x, ref int y) {
-     x = 100;
-     y = 200;
-}
+??? quote "Code example of *ref*"
+     ```
+     void RefFunc(ref int x, ref int y) {
+          x = 100;
+          y = 200;
+     }
 
-void Test() {
-     int x = 0;
-     int y = 0;
-    
-     // pass arguments by ref
-     RefFunc(x, y);
-    
-     // -> "x=100, y=200"
-     hsSystemOutput("x=%d, y=%d\n" %x%y);
-}
-```
+     void Test() {
+          int x = 0;
+          int y = 0;
+     
+          // pass arguments by ref
+          RefFunc(x, y);
+     
+          // -> "x=100, y=200"
+          hsSystemOutput("x=%d, y=%d\n" %x%y);
+     }
+     ```
+
+Additionally, within a class method, this allows you to reference the current instance itself.
+
+??? quote "Code example of *this*"
+    ```
+    Printer printer = new Printer();
+    Person person = new Person();
+    person.Construct(20);
+
+    // -> "age: 20"
+    person.PrintAge(printer);
+
+    class Person{
+        public int Age;
+
+        public void Construct(int age){
+            Age = age;
+        }
+
+        public void PrintAge(Printer printer){
+            printer.PrintAge(this);
+        }
+    }
+
+    class Printer{
+        public void PrintAge(Person person){
+            hsSystemWriteLine("age: %d" % person.Age); 
+        }
+    }
+    ```
 
 ## "string" and 'character'
 
@@ -75,7 +106,27 @@ When you define a variable, if you do not initialize it, the following initial v
 |float|0.0f|
 |bool|*false*|
 |[string](hs_string.md)|empty string|
-|[class](hs_class.md)|*NULL*|
+|[class](hs_class.md)|*null*|
 
 The bool type is treated internally as a 32-bit integer value, with 1 assigned to *true* and 0 to *false*.
 If you assign an integer value to a bool type variable, 0 will be converted to *false* and everything else will be converted to *true*.
+
+## Instance methods defined on basic types
+
+### int.ToString()
+
+`public string ToString()`
+
+Converts integer-type variable values to string.
+
+### float.ToString()
+
+`public string ToString()`
+
+Converts float-type variable values to string.
+
+### bool.ToString()
+
+`public string ToString()`
+
+Converts bool-type variable values to string.

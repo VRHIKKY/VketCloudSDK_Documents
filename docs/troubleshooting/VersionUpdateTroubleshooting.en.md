@@ -1,12 +1,12 @@
 # Version Update Troubleshooting
 
-This page lists troubles and solution that may happen when [updating the VketCloudSDK](../AboutVketCloudSDK/SetupSDK_external.md#installing-a-specified-version-updating-an-existing-sdk).
+This page lists troubles and solution that may happen when [updating the Vket Cloud SDK](../AboutVketCloudSDK/SetupSDK_external.md#installing-a-specified-version-updating-an-existing-sdk).
 
 If a trouble not listed / cannot be solved by solutions on this page happens on version updating, feel free to ask on the [contact form](https://www.hikky.co.jp/contact?type=service&category=general){target=_blank} or the [Vket Cloud community Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}.
 
-## VketCloudSDK tab not showing on the top menu
+## Vket Cloud SDK tab not showing on the top menu
 
-After updating the VketCloudSDK, the VketCloudSDK tab may not be shown on the Unity editor's top menu as expected.
+After updating the Vket Cloud SDK, the Vket Cloud SDK tab may not be shown on the Unity editor's top menu as expected.
 
 ![VersionUpdateTroubleshooting_10](img/VersionUpdateTroubleshooting_10.jpg)
 
@@ -20,7 +20,7 @@ This can be solved by manually updating the required packages' version by the fo
 
     ![VersionUpdateTroubleshooting_12](img/VersionUpdateTroubleshooting_11.jpg)
 
-3. Check if the VketCloudSDK and related packages are on the correct versions in Manifest.json. 
+3. Check if the Vket Cloud SDK and related packages are on the correct versions in Manifest.json. 
     For example, package versions must be as below for SDK Ver12.3.0:
 
     ```
@@ -28,7 +28,7 @@ This can be solved by manually updating the required packages' version by the fo
     {
     "dependencies": {
     "com.hikky.editortutorialsystem": "1.0.1",
-    "com.hikky.vketcloudsdk": "12.3.0",
+    "com.hikky.VketCloudSDK": "12.3.0",
     "com.needle.deeplink": "1.2.1",
     // etc
 
@@ -68,7 +68,7 @@ The components listed below may potentially be shown as missing:
 - VKC Node LOD Level/HEOLODLevel
 - VKC Node UV Scroller/HEOUVScroller
 
-!!! note caution
+!!! warning "caution"
     When updating from Ver5.4 to Ver9.3, the HEOWorldSetting > Avatars > Avatar File settings may be missing, set the file by the procedure below on such occasion.
 
 If the HEOWorldSetting > Avatars > Avatar File settings is empty, or has no contents, it may lead to build errors or no avatars displayed on default.<br>
@@ -98,11 +98,11 @@ After updating an existing project to Ver9.3, the version information on the bot
 
 ![VersionUpdateTroubleshooting_2](./img/VersionUpdateTroubleshooting_2.jpg)
 
-This can be solved by clearing the cache by VketCloudSDK > Clear Cache.
+This can be solved by clearing the cache by Vket Cloud SDK > Clear Cache.
 
 ![VersionUpdateTroubleshooting_3](./img/VersionUpdateTroubleshooting_3.jpg)
 
-!!! note caution
+!!! warning "caution"
     HeliScript/gimmicks may not work due to browser cache after version switching.<br>
     If such issue happens, try clearing the browser cache.
 
@@ -129,3 +129,24 @@ If this issue appears, fix it by deleting the Library and Temp folder in the pro
 ![VersionUpdateTroubleshooting_7](img/VersionUpdateTroubleshooting_7.jpg)
 
 4\. Reopen the Unity project, and check if the error has been solved!
+
+## After a version upgrade, rolling back to a previous version causes Unity to fail to start
+
+!!! info
+    SDK Version : 9.3->12.3<br>
+    OS : Windows10<br>
+    Unity : 2019.4.31.f1<br>
+    Browser :Chrome
+
+After updating the SDK, when referencing a previous version or needing to make fixes on a previous version, we’ve observed that when reverting the SDK to an older version using GitHub's version control tool, Unity fails to start.
+
+The issue occurs when Unity freezes during the importing process (reaching "Max"), and it crashes without displaying any error messages.
+
+### How to Fix
+
+1\. Delete Library folder.
+
+![VersionUpdateTroubleshooting_13](img/VersionUpdateTroubleshooting_13.jpg)
+
+In such cases, deleting the Library folder and restarting Unity has allowed it to launch successfully.
+If the issue persists, try deleting both the Library folder and the Packages-lock.json file before restarting Unity, as this may resolve the problem.

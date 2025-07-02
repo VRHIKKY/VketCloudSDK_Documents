@@ -2,13 +2,13 @@
 
 The Broker API is an API feature for Vket Cloud, which is intended to register external APIs to an allowlist and verify the connection inside Vket Cloud worlds.
 
-!!! caution "API feature schedules"
+!!! warning "API feature schedules"
     On SDK Ver12.3.4, the Broker API is currently available only for GET requests.<br>
     Other features such as POST, PUT, and DELETE are scheduled to be enabled on future updates.
 
 ## How to Use
 
-!!! caution "External API feature availability"
+!!! warning "External API feature availability"
     The external API feature is currently under open test for Vket Cloud developer community members.<br>
     If you wish to try this feature, join the [Vket Cloud Community Discord](https://discord.com/invite/vsFDNTKdNZ){target=_blank} and obtain a "Developer Community" role in the [Roles channel](https://discord.com/channels/900943744575103017/1178589689393975317){target=_blank}.<br>
     In the developer community, instructions for allowlisting API and other new updates will be announced. Feel free to join us!
@@ -44,7 +44,7 @@ This script must be attached to the World object using [VKC Attribute Script](..
 
 ```c#
 delegate void fJsValCallback(JsVal); //Method for callback
-extern api.broker //declaration to call a Broker API method
+extern heliport.v3.api.broker //declaration to call a Broker API method
 {
     bool registerAgreement(string url, string spatiumCode, string worldCode, string guestUuid);
     bool connectExternalApi(async fJsValCallback, string method, string url, string spatiumCode, string worldCode, string guestUuid, JsVal data);
@@ -61,7 +61,7 @@ component BrokerAPI
     const string GET_SWITCH_NAME = "Button_Get";// Name of GameObject which will be clicked by the player in world
     const string API_URL = "https://www.googleapis.com/youtube/v3/search";//URL for API access and confirmation dialog
     const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//API key for the youtube API
-    const string SPATIUM_CODE = "Default";//this value should be Default unless explicitly changed by worldsettings
+    const string SPATIUM_CODE = "default";//this value should be default unless explicitly changed by worldsettings
     const string SEARCH_WORD = "VketCloud";//Word to be searched by API
     const int MAX_RESULTS = 10;//number of search results to be obtained
     const string RESULT_ITEM_NAME = "Result";//Name of TextPlane to show the obtained search results. May cause text corruption if FontSize value is enlarged on Ver12.3
@@ -79,7 +79,6 @@ component BrokerAPI
         switch (clickedNodeName)
         {
             case GET_SWITCH_NAME://Button for calling GET API
-                if(!hsCommonDialogIsOpened())
                 {
                     ComfirmApiAccess();
                 }
@@ -143,14 +142,14 @@ component BrokerAPI
         string guestUuid = "Uuid";
 
         //Register the allowlisted URL
-        bool result = api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
+        bool result = heliport.v3.api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
         BoolLogOutput("registerAgreement: ",result);// see the result of agreement procedure in log
 
         string method = "get";//HTTP request method. GET is used for this method.
         JsVal data = makeJsNull();//JsVal for 7th argument in connectExternalApi. Null value is allowed for GET
 
         //Connect to API. Returned data will be entered to the method designated in 1st argument
-        api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
+        heliport.v3.api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
     }
     string GetAPIUrl()
     {

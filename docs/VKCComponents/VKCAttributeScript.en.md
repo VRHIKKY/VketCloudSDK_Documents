@@ -1,5 +1,5 @@
 # VKC Attribute Script
-![HEOScript](img/HEOScript.jpg)
+![HEOScript](img/VKCAttributeScript.jpg)
 
 |  Label |  function  |
 | ----   | ---- |

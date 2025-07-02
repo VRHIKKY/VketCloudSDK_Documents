@@ -1,11 +1,12 @@
 # Item クラス
 
 Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
-[VKC Item Field](../VKCComponents/VKCItemField.md), [VKC Item Object](../VKCComponents/VKCItemObject.md), [VKC Item Plane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md)などがこれにあたります。
 
-Itemクラスは、ワールド内に配置された[VKC Item Field](../VKCComponents/VKCItemField.md)及びその子オブジェクトであるNodeなど、個々のアイテムをHeliScriptにて操作するためのものです。
+Itemは、VKC Item Field、VKC Item Objectなど、Vket Cloud SDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
 
-hsItemGet() などの関数を呼び出すことで、特定のアイテムを表すItemクラスのインスタンスを取得できます。
+Itemクラスは、上記のItemをHeliScriptにて操作するためのものです。
+
+hsItemGet() などの関数を呼び出すことで、Itemクラスのインスタンスを取得できます。
 
 Itemクラスは多くのメソッドを持ち、これらのメソッドを呼び出すことで、様々な操作を行うことが可能です。
 
@@ -30,13 +31,27 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-グローバル関数。指定した名前で VKC Item Field 以下のアイテムを取得し、Itemクラスのインスタンスとして返す。
+グローバル関数。指定した名前でItemを取得する。
 
 ### hsItemGetSelf
 
 `Item hsItemGetSelf()`
 
 グローバル関数。コンポーネントのコンストラクタや、Update(), OnClickNode() 等のメソッド内から呼び出すことで、コンポーネント自身が所属しているItemインスタンスを取得します。
+
+### hsItemCreateClone
+
+`Item hsItemCreateClone(Item Origin, string Name = "")`
+
+グローバル関数。指定したアイテムのクローンを同じ場所に作成します。クローン可能なアイテムタイプは`object`です。  
+Originにはオリジナルのアイテムオブジェクトを渡します。  
+Nameにはクローンアイテムに設定したいアイテム名を任意で渡します。指定が無い場合は自動的に名前が付けられます。
+
+### hsItemDestroyClone
+
+`void hsItemDestroyClone(Item item)`
+
+グローバル関数。指定したクローンアイテムを削除します。クローン以外のアイテムを削除することはできません。
 
 ***
 
@@ -50,17 +65,17 @@ Item myitem = hsItemGetSelf();
 
 hsItemGet() などで Item を取得する場合、同一の Item であっても別のインスタンスが返る場合があるため、同一性の確認には "===" 演算子ではなく Equals() を利用してください。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
-    - [VKC Item BackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetName
 
@@ -68,11 +83,33 @@ hsItemGet() などで Item を取得する場合、同一の Item であって�
 
 Item の名前を取得する。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
-    - [VKC Item BackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetParentItem
+
+`public Item GetParentItem()`
+
+Item 自身から見て、親に相当する Item を取得する。
+
+アクティビティはItem内にItemを持つ構造であるため、アクティビティ内Itemから GetParentItem() を呼び出すと、親のItemを取得できる。
+
+親Itemが存在しない場合、nullを返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -86,7 +123,7 @@ Item の名前を取得する。
 
 Item を指定した座標に移動させる。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
@@ -94,7 +131,7 @@ Item を指定した座標に移動させる。
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetPos
 
@@ -102,10 +139,12 @@ Item を指定した座標に移動させる。
 
 Item の座標を取得する。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+このItemがActivityの中にある場合、取得できる値はActivityからの相対座標になります。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item BackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -119,7 +158,14 @@ Item の座標を取得する。
 
 Item のワールド座標を取得する。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+このItemがどこにあるのか(Activityの外か中か)に関わらず、常にワールド空間における座標を返します。
+
+???+ warning "使用上の注意"
+    Activityの場合でワールド座標を取得したいときはこちらを使用してください。
+    
+    Activityではない場合は通常はGetPosを使用してください。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
@@ -129,7 +175,7 @@ Item のワールド座標を取得する。
 
 Itemの回転を設定します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
@@ -145,7 +191,7 @@ Itemの回転を設定します。
 
 Itemの回転をQuaternionとして取得します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
@@ -161,7 +207,7 @@ Itemの回転をQuaternionとして取得します。
 
 Itemのワールド回転をQuaternionとして取得します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
@@ -169,9 +215,10 @@ Itemのワールド回転をQuaternionとして取得します。
 
 `public Vector3 GetWorldRotate()`
 
-Itemのワールド回転をVector3として取得します。
+Itemのワールド回転をVector3（オイラー角）として取得します。<br>
+取得される各軸（x, y, z）の値は、-180度から180度の範囲で表されます。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
@@ -181,7 +228,7 @@ Itemのワールド回転をVector3として取得します。
 
 ItemのスケールをVector3として取得します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
@@ -193,8 +240,7 @@ ItemのスケールをVector3として取得します。
 
 ItemのスケールをVector3で設定します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
@@ -207,9 +253,9 @@ posで指定した座標に、time秒かけて Item を移動させる。
 
 CollisionDetectionがtrueの場合は、プレイヤーアバターと同等の衝突判定がおこなわれます。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
-    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsMoving
 
@@ -217,7 +263,7 @@ CollisionDetectionがtrueの場合は、プレイヤーアバターと同等の�
 
 Item が移動中の場合はtrueを返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
@@ -227,7 +273,7 @@ Item が移動中の場合はtrueを返す。
 
 サウンドやパーティクルの再生を開始する。再生処理の開始に成功すると true を返す。失敗した場合は false を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
@@ -238,7 +284,7 @@ Item が移動中の場合はtrueを返す。
 
 サウンドやパーティクルの再生を停止する。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
@@ -249,7 +295,7 @@ Item が移動中の場合はtrueを返す。
 
 オブジェクトのモーションやサウンドやパーティクルが再生中の場合は true を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
@@ -264,7 +310,7 @@ Item が移動中の場合はtrueを返す。
 
 オブジェクトのモーション再生を一時停止します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### Restart
@@ -273,7 +319,7 @@ Item が移動中の場合はtrueを返す。
 
 オブジェクトの一時停止したモーション再生を再開します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetPlayTime
@@ -283,7 +329,7 @@ Item が移動中の場合はtrueを返す。
 オブジェクトのモーション再生時間の位置を変更します。<br>
 単位はミリセカンドです。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### GetPlayTime
@@ -293,7 +339,7 @@ Item が移動中の場合はtrueを返す。
 オブジェクトのモーション再生時間の位置を取得します。<br>
 単位はミリセカンドです。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetShow
@@ -302,7 +348,7 @@ Item が移動中の場合はtrueを返す。
 
 true で Item を表示する。false で Item を非表示にする。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -317,7 +363,7 @@ true で Item を表示する。false で Item を非表示にする。
 
 Item が表示状態の場合は true を、そうでない場合は false を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -333,7 +379,7 @@ Item が表示状態の場合は true を、そうでない場合は false を�
 MotionName で指定したモーションに動作を切り替えます。<br>
 BlendTimeMSはブレンディングする時間をミリセカンド単位で指定します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### LoadMotion
@@ -342,7 +388,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 
 モーションをロードします。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### FacialEmoteFixed
@@ -359,7 +405,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 - FACIALEMOTETYPE_SORROW
 - FACIALEMOTETYPE_FUN
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### Load
@@ -368,7 +414,7 @@ BlendTimeMSはブレンディングする時間をミリセカンド単位で指
 
 Item のロードを開始する。ロード処理の開始に失敗した場合は false を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
@@ -386,7 +432,7 @@ Item のロードを開始する。ロード処理の開始に失敗した場合
 
 Item をアンロードする。アンロード処理に失敗した場合は false を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
@@ -404,11 +450,10 @@ Item をアンロードする。アンロード処理に失敗した場合は fa
 
 Item がロード中の場合は true を、そうでない場合は false を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
-    - [VKC Item AreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
-    - [VKC Item BackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -422,10 +467,9 @@ Item がロード中の場合は true を、そうでない場合は false を�
 
 Item のロードが完了していた場合は true を、そうでない場合は false を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
     - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
     - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
     - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -439,29 +483,32 @@ Item のロードが完了していた場合は true を、そうでない場合
 `public int GetNodeIndexByName(string nodeName)`
 
 名前でノードを検索し、該当するノードを識別するインデックスを返す。
+見つからない場合は、-1 を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### GetNodeNameByIndex
 
 `public string GetNodeNameByIndex(int nodeIndex)`
 
 インデックスでノードを指定し、そのノードの名前を返す。
+見つからない場合は、空文字列を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### GetNodePosByIndex
 
 `public Vector3 GetNodePosByIndex(int nodeIndex)`
 
 インデックスでノードを指定し、そのノードの座標を返す。
+見つからない場合は、Vector3.zeroを返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### SetShowNode
 
@@ -469,9 +516,9 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 名前でノードを指定し、そのノードを true で表示、false で非表示にする。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### IsShowNode
 
@@ -479,9 +526,9 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 名前でノードを指定し、そのノードが表示されている場合は true を、非表示の場合は false を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetRotateNode
 
@@ -489,8 +536,8 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 名前でノードを指定し、そのノードを回転させる。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### SetEnableCollider
 
@@ -498,9 +545,9 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 名前でコライダーを指定し、そのコライダーを true で有効、false で無効にする。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### IsEnableCollider
 
@@ -508,9 +555,9 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 名前でコライダーを指定し、そのコライダーが有効なら true を、無効なら false を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### SetClickableNode
 
@@ -518,8 +565,8 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 名前でクリック可能なノードを指定し、true でクリックを有効に、false でクリックを無効にする。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### IsClickableNode
 
@@ -527,8 +574,19 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 名前でノードを指定し、そのノードをクリック可能なら true を、そうでないなら false を返す。
 
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### SetUVScale
+
+`public bool SetUVScale(string materialName, float u, float v)`
+
+名前でマテリアルを指定し、uvスケールを変更する。変更に失敗すると false を返す。
+
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### SetUVOffset
 
@@ -539,9 +597,36 @@ Item のロードが完了していた場合は true を、そうでない場合
 !!! warning "UV座標原点について"
     通常のUnityプロジェクトではUVの原点(0,0)はUVの左下にありますが、HeliScriptでは**左上**を原点としていることにご注意ください。
 
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### SetMaterialColor
+
+`public bool SetMaterialColor(string materialName, float R, float G, float B, float A)`
+
+指定したマテリアルの色を変更します。
+
+オブジェクトがロードされていない場合や、未対応のオブジェクトタイプの場合はfalseが返ります。
+
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetAlpha
+
+`public bool SetAlpha(float Alpha)`
+
+アルファブレンディングをおこなうα値を設定します。値の範囲は0.0f～1.0fです。
+
+オブジェクトがロードされていない場合や、未対応のオブジェクトタイプの場合はfalseが返ります。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### PlayVideo
 
@@ -549,10 +634,10 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 再生するマテリアルを指定し、ビデオ再生を開始する。loop に true を指定するとループ再生を行う。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### StopVideo
 
@@ -560,10 +645,10 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 再生中のビデオを停止する。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### IsPlayVideo
 
@@ -571,10 +656,10 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 ビデオが再生中であれば true を返す。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### ClearTextPlane
 
@@ -582,8 +667,8 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 テキストを消去する。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### WriteTextPlane
 
@@ -591,28 +676,28 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 テキストを設定する。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetCamera
 
 `public bool SetCamera()`
 
 カメラタイプのアイテムをカメラとして設定する。<br>
-使い方については[VKCItemCamera](../VKCComponents/VKCItemCamera.md)を参照してください。
+使い方については[VKC Item Camera](../VKCComponents/VKCItemCamera.md)を参照してください。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
 
 ### ResetCamera
 
 `public void ResetCamera()`
 
 SetCameraで設定したものを解除する。<br>
-使い方については[VKCItemCamera](../VKCComponents/VKCItemCamera.md)を参照してください。
+使い方については[VKC Item Camera](../VKCComponents/VKCItemCamera.md)を参照してください。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
 
 ### ReplaceItem
 
@@ -620,17 +705,17 @@ SetCameraで設定したものを解除する。<br>
 
 指定したモデルデータでItemの内容を置き換えます。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### ReplaceTexture
 
@@ -638,11 +723,25 @@ SetCameraで設定したものを解除する。<br>
 
 MaterialNameで指定したマテリアルのテクスチャを、URLの内容で置き換えます。
 
+関連ページ: [ReplaceTextureでテクスチャの差し替えが正常に出来ない](https://vrhikky.github.io/VketCloudSDK_Documents/latest/WorldMakingGuide/ReplaceTexture.html)
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### ReplaceBackupTexture
+
+`public bool ReplaceBackupTexture(string MaterialName)`
+
+ReplaceTexture() で変更したマテリアルのテクスチャを、直前の内容に戻します。
+
+変更に成功するとtrueを返します。マテリアルが見つからないなどの理由で、変更に失敗するとfalseを返します。
+
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetPhysicsEnable
 
@@ -650,8 +749,8 @@ MaterialNameで指定したマテリアルのテクスチャを、URLの内容�
 
 NodeName で指定したノードに対し、trueで物理演算を有効化、falseで無効化します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### IsPhysicsFixed
 
@@ -659,8 +758,8 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 
 物理演算において、このItemが固定されている場合は true を返します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### GetPhysicsIDByNodeName
 
@@ -668,14 +767,36 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 
 ノード名を指定して、ItemのPhysicsIDを取得します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### SetProperty
 
 `public bool SetProperty(string Key, string Value)`
 
 プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
+
+プロパティの変更が行われると、コールバックメソッドの OnChangedProperty() が呼び出されます。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPropertyWithoutNotify
+
+`public bool SetPropertyWithoutNotify(string Key, string Value)`
+
+プロパティを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。
+
+SetProperty() と同等の機能を持つメソッドですが、SetPropertyWithoutNotify() でプロパティを変更した場合、コールバックメソッドの OnChangedProperty() が呼び出されません。
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
@@ -695,17 +816,17 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 
 プロパティを取得します。Keyが存在しない場合は空文字列が返ります。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### CallComponentMethod
 
@@ -719,17 +840,17 @@ ComponentNameでコンポーネント名を、MethodNameでメソッド名を指
 - 引数として string を 1つだけ持つこと。
 - 戻り値がvoidであること。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetOverridesProperty
 
@@ -737,17 +858,17 @@ ComponentNameでコンポーネント名を、MethodNameでメソッド名を指
 
 overridesを設定します。同じKeyが存在すれば上書きされ、なければ追加されます。"itemname"を使用していない場合はItemNameには空文字列を指定します。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetOverridesProperty
 
@@ -755,14 +876,72 @@ overridesを設定します。同じKeyが存在すれば上書きされ、な�
 
 overrides設定を取得します。
 
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetNumofPolygon
+
+`public int GetNumofPolygon()`
+
+ポリゴン数を取得します。
+
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SendMessage
+
+`public bool SendMessage(HSMessage message)`
+
+このItemにメッセージを送信します。送信したメッセージは、Itemに設定されているコンポーネントの OnReceiveMessage() メソッドに通知されます。
+
+メッセージの送信は同期的であり、つまり同一フレーム中で送信と受信までが行われます。メッセージを受信した側が送信元にメッセージを送り返し、それを受けた側が再度メッセージを送信し…と処理が続く場合でも、全て同一フレーム内で処理されます。
+
+送信したメッセージは対象Itemが持つすべてのコンポーネントに通知されますが、そのうち1つでも送信に成功した場合、つまりメッセージが1つでも OnReceiveMessage() コールバックメソッドに到達した場合、SendMessage() は戻り値として ture を返します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetVolume
+
+`public void SetVolume(float Volume)`
+
+音量を設定します
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### GetVolume
+
+`public float GetVolume()`
+
+SetVolume()で設定した音量を取得します
+初期値は0.2です
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### IsCollisionDetection
+
+`public bool IsCollisionDetection()`
+
+アイテム単位で衝突判定が有効かどうかを取得します。  
+trueの場合、レイとItemの当たり判定を行う関数 hsItemRaycast() の対象になります。

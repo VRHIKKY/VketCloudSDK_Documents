@@ -1,7 +1,7 @@
 
 # Vector3 class
 
-!!! Note Info
+!!! info "Note"
      A class that represents a 3D vector.
 
 ***

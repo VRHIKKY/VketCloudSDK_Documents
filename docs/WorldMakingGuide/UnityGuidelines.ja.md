@@ -16,11 +16,10 @@ Vket Cloudでは以下のフォーマットのテクスチャ画像が使用で�
 - ２の累乗サイズの正方形（2048x2048,1024x1024,512x512等）または2の累乗サイズの長方形
 - ビット深度は24bitまたは32bit
 - png換算で80MB以下
-- 拡張子は小文字(.png)にする。”.PNG”になっているとサーバーアップロードでエラーが出ることがあります。
 
 また、SDKでは画像の変換ツールとして[Export Compressed Texture](../SDKTools/ExportCompressedTexture.md)を用意しています。
 
-!!! caution "Sprite Rendererについて"
+!!! warning "Sprite Rendererについて"
     Vket CloudではUnityの[Sprite Renderer](https://docs.unity3d.com/ja/2019.4/Manual/class-SpriteRenderer.html){target=_blank}に対応しておりません。
 
 ## テクスチャ圧縮
@@ -38,20 +37,20 @@ Vket CloudではUnityのリフレクションプローブを使用すること�
 
 ![Rendering_2](../VKCComponents/img/HEOWorldSetting_Rendering_2.jpg)
 
-!!! caution "Realtime Lightについて"
+!!! warning "Realtime Lightについて"
     Vket CloudではRealtime Modeのライトに対応しておりません。必ずMixedまたはBakedに変更してご使用ください。
 
 ## ライトマップ
 
 Vket Cloudではライトマップを使用する際は以下のフォーマットに従う必要があります。
 
-- Other SettingsのLightMap Encodingが『Normal Quality』になっているか確認する
+- Other SettingsのLightMap Encodingが「Normal Quality」になっているか確認する
  *LightMap Encodingが間違っている場合、ライトマップが白飛びすることがあるので注意してください
 - リアルタイムのグローバルイルミネーションはサポートしていないので、ライトマップで表現してください(UnityとVket Cloudで見た目が違う場合、ほとんどはGI周りが原因だと思います)
-- Other Settings の Color Spaceが『Linear』になっているか確認する
+- Other Settings の Color Spaceが「Linear」になっているか確認する
 
-VketCloudSDKでは、上記の環境設定を推奨設定としております。<br>
-詳しい設定方法は[VketCloudSDKの動作環境](../AboutVketCloudSDK/OperatingEnvironment.md)を参照してください。
+Vket Cloud SDKでは、上記の環境設定を推奨設定としております。<br>
+詳しい設定方法は[Vket Cloud SDKの動作環境](../AboutVketCloudSDK/OperatingEnvironment.md)を参照してください。
 
 ![UnityGuidelines_1](./img/UnityGuidelines_1.jpg)
 
@@ -71,10 +70,14 @@ VketCloudSDKでは、上記の環境設定を推奨設定としております�
 - MToon
 - Unlit
 - UnlitWF（両面表示等のみ対応）
-- VketCloudSDKに含まれるVketChanDoubleSided系のシェーダー
+- Vket Cloud SDKに含まれるVketChanDoubleSided系のシェーダー
 
 !!! note
     Autodesk Interactiveのメタリックテクスチャは、テクスチャスロット数の都合上、使用できません。メタリックテクスチャとラフネステクスチャを組み合わせて使用する場合は、Standard Shaderを使用してください。
+
+!!! note "対応しているシェーダー項目について"
+    Vket Cloud SDKではシェーダーの設定項目において対応しているものとしていないものが存在します。<br>
+    詳細は[シェーダー対応項目一覧](ShaderAvailability.md)をご覧ください。
 
 ## コライダー
 
@@ -111,7 +114,7 @@ Vket Cloudにてアバターを使用するには、1. [My Vketにてマイア�
 
 2. [プリセットアバターを追加する](../WorldMakingGuide/PresetAvatar.md)
 
-!!! caution "DefaultのAvatarFileが編集できる現象について"
+!!! warning "DefaultのAvatarFileが編集できる現象について"
     特定の手順によって、デフォルトで設定されているAvatarFile(`Vketchan_v1.6_Mtoon_blendshape`)の設定が編集できる現象が確認されています。<br>
     デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
     この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。
@@ -126,7 +129,7 @@ Vket Cloudにてアバターを使用するには、1. [My Vketにてマイア�
 | サンプリングレート | 44100 Hz |
 | ビットレート | 160 kbps |
 
-!!! note caution
+!!! warning "caution"
     BGMは以下の点に注意が必要です。
 
     - 動画再生時には、動画の音声が優先されます。
@@ -143,3 +146,17 @@ Vket Cloudにてアバターを使用するには、1. [My Vketにてマイア�
 | AAC | 44.1kHz |
 | フレームレート | 29.97 or 30 |
 | プロファイルレベル | 4.1, AAC 44.1kHz, yuv420 |
+
+## HeliScriptファイル
+
+HeliScriptファイル（.hsファイル）を作成・編集する際は、以下の点にご注意ください。
+
+!!! warning "改行コードについて"
+    HeliScriptファイル（.hsファイル）の改行コードはLF（Line Feed）のみを使用してください。<br>
+    CRLF（Carriage Return + Line Feed）の改行コードを使用すると、ビルド時にheliodor側で読み込みエラーが発生します。
+
+## VKC Item Text Planeのテキスト
+
+VKC Item Text Paneにおいて、以下の項目については入力時に注意が必要です。
+
+正規表現の"\n"以外の文字列（例えば、タブ "\t"、改行 "\r"、バックスペース "\b"）を入力した場合、ビルドエラーが発生します。

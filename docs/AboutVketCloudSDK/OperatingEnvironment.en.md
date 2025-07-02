@@ -1,8 +1,11 @@
 # Operating Environment
 
-VketCloudSDK requires the following Unity editor version:
+Vket Cloud SDK requires the following Unity editor version:
 
-- **Unity 2019.4.31f1**
+- **Unity 2019.4.31f1** (SDK13.7.7 and earlier)
+- **Unity 2022.3.6f1** (SDK13.7.7 and later)
+
+* SDK13.7.7 supports both versions.
 
 If the above version of Unity is not installed, install by following the instructions below:
 
@@ -17,55 +20,19 @@ Please use one of the operating systems below when running Unity.
 - Windows 10, 64-bit
 - macOS 10.12+.
 
-Also, we recommend the below systems when entering your world built with VketCloudSDK.
+Also, we recommend the below systems when entering your world built with Vket Cloud SDK.
 
 - PC: A computer that supports web browsers such as Chrome / Firefox / Safari / Edge.
 - iOS: iPhone X or later, iPhone SE (2nd generation) or later
 - Android: Android 11 or later / RAM: 8GB or more / For Google Pixel series, Pixel 5 or later
+- IDE: When editing HeliScript, Visual Studio is not recommended due to the encoding issue. If you want to edit in an environment similar to Visual Studio, please use Visual Studio Code.
 
----
+!!! warning "Note"
+    When you open and save HeliScript created with Unity Vket Cloud SDK in Visual Studio, it may become ANSI, and you may not be able to build.<br>
+    The following description explains how to change the editor that opens from Unity to Visual Studio Code.
 
-!!! note warning
-    The below items will be automatically changed by the SDK, but sometimes the settings may be nullified.<br>
-    In that case, please follow the below steps to manually change the settings,
-
-    **Setting API compatibility level**
-
-    1. Click Project Settings... from Edit in the Unity menu bar  
-
-    2. When the Project Settings window appears, click Player from the list.  
-
-    3. Check the Configuration in the Project Settings and change the Api Compatibility Level to ".NET 4.x" from the pull-down menu.
-
-    ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
-
-    **Setting LightMap Encoding**
-
-    Likewise above, check the Configuration in the Project Settings and change the Lightmap Encoding to "Normal Quality" from the pull-down menu.
-
-    ![LightMapEncoding](img/LightMapEncoding.jpg)
-
-    **Setting Color Space**
-    From Edit >Project Settings, set the  Color Space as Linear.
-
-    ![linear](img/linear.jpg)
-
-    On Ver12.3 and later versions, the settings below are required as well:
-
-    **Setting Standard Shader Quality**
-
-    The physically based rendering on Vket Cloud uses the same algorithm (GGX) as Unity's Medium level, so you will need to make some changes in the settings.
-
-1. Open Edit/ProjectSettings/Graphics
-
-    ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_1.jpg)
-
-    ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_2.jpg)
-
-2. In the Tier Settings, uncheck "Use Defaults" on Low, Medium, and High
-
-    ![TierSettings.jpg](../heoexporter/he_image/TierSettings.jpg)
-
-3. In the Tier Settings, change the "Standard Shader Quality" on Low, Medium, and High, to "Medium"
-
-    ![StandardShaderQuality.jpg](../heoexporter/he_image/StandardShaderQuality.jpg)
+!!! note "How to Change the Unity Editor to Visual Studio Code"
+    Open the "Preferences" window from the Unity menu by selecting Edit > Preferences.<br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_01.jpg)<br>
+    In the "External Tools" tab, select "Visual Studio Code" from the "External Script Editor" dropdown menu.<br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_02.jpg)

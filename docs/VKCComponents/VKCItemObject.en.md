@@ -5,6 +5,53 @@
 
 VKC Item Object is used to instantiate a dynamic object, which is based on a pre-exported .heo file, or using a vrm, [hrm](../WorldOptimization/TextureCompression.md), or glb format model.
 
+???+ note "Available methods for this object type"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [GetWorldPos](../hs/hs_class_item.md#getworldpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [GetWorldQuaternion](../hs/hs_class_item.md#getworldquaternion)
+    - [GetWorldRotate](../hs/hs_class_item.md#getworldrotate)
+    - [GetScale](../hs/hs_class_item.md#getscale)
+    - [SetScale](../hs/hs_class_item.md#setscale)
+    - [MovePos](../hs/hs_class_item.md#movepos)
+    - [IsMoving](../hs/hs_class_item.md#ismoving)
+    - [Play](../hs/hs_class_item.md#play)
+    - [Stop](../hs/hs_class_item.md#stop)
+    - [IsPlay](../hs/hs_class_item.md#isplay)
+    - [Pause](../hs/hs_class_item.md#pause)
+    - [Restart](../hs/hs_class_item.md#restart)
+    - [SetPlayTime](../hs/hs_class_item.md#setplaytime)
+    - [GetPlayTime](../hs/hs_class_item.md#getplaytime)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [ChangeMotion](../hs/hs_class_item.md#changemotion)
+    - [LoadMotion](../hs/hs_class_item.md#loadmotion)
+    - [LoadMotion](../hs/hs_class_item.md#loadmotion)
+    - [FacialEmoteFixed](../hs/hs_class_item.md#facialemotefixed)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [GetNodeIndexByName](../hs/hs_class_item.md#getnodeindexbyname)
+    - [GetNodeNameByIndex](../hs/hs_class_item.md#getnodenamebyindex)
+    - [SetShowNode](../hs/hs_class_item.md#setshownode)
+    - [IsShowNode](../hs/hs_class_item.md#isshownode)
+    - [SetUVOffset](../hs/hs_class_item.md#setuvoffset)
+    - [PlayVideo](../hs/hs_class_item.md#playvideo)
+    - [StopVideo](../hs/hs_class_item.md#stopvideo)
+    - [IsPlayVideo](../hs/hs_class_item.md#isplayvideo)
+    - [ReplaceItem](../hs/hs_class_item.md#replacetexture)
+    - [ReplaceTexture](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## Settings
 
 ### Basic Settings
@@ -18,6 +65,25 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Circle Shadow | false |  Sets to draw a circle shadow.  |
 | Look at Camera | false |  Make the object face towards the camera at all times. |
 | Object Mode | None | Choose from None, Pose, and Motion. If you choose Pose or Motion, you will need to additionally specify an .hem file. |
+| Pickable | false | Enable the grab function. |
+
+### Pickable
+
+!!! warning "Not available in SDK 14.4.12"
+    This feature has been rolled back in SDK 14.4.12 and is therefore not available.
+    The issue has been fixed in SDK version 14.5.6 and later. Please use the latest version.
+
+![VKCItemObject_8](img/VKCItemObject_8.jpg)
+
+| Label | Initial Value | Function |
+| ---- | ---- | ---- |
+| Display Name (ja) | "" | Display name in Japanese. |
+| Display Name (en) | "" | Display name in English. |
+| Enable Collision Detection | false | Set whether to enable collision detection after picking. |
+| Bone Name | "hips" | Specify the bone name to grab. |
+| Offset Position | (0, 0, 0) | Specify the offset position from the bone position when picked. |
+| Offset Rotation | (0, 0, 0) | Specify the offset rotation from the bone rotation when picked. |
+| Offset Scale | (1, 1, 1) | Specify the offset scale from the bone scale when picked. |
 
 ### Advanced Options
 
@@ -36,12 +102,15 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Alpha Animation Target | false|Here's the English translation:
 Sets whether to make objects transparent when they obstruct the camera's view in order to maintain visibility. For more details, please refer to [VKCNodeAlphaAnimation](../VKCComponents/VKCNodeAlphaAnimation.md). |
 | Item Render Priority || Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+| Show Photo Mode | true | Specifies whether it is displayed in photo mode |
+| Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
+| Force Collider Disable | false | Forcibly disables the collider |
 | Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
 | End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
 
 ## Mode - Pose Settings
 
-![HEOObject_Pose](img/HEOObject_Pose.jpg)
+![HEOObject_Pose](img/VKCItemObject_3.jpg)
 
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
@@ -50,7 +119,7 @@ Sets whether to make objects transparent when they obstruct the camera's view in
 
 ## Mode - Motion Settings
 
-![HEOObject_Motion](img/HEOObject_Motion.jpg)
+![HEOObject_Motion](img/VKCItemObject_4.jpg)
 
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
@@ -65,17 +134,17 @@ Sets whether to make objects transparent when they obstruct the camera's view in
 
 When enabling the Scene Preview, the designated heo or vrm file will be shown on its instantiating position.
 
-![HEOObject_Preview](img/HEOObject_Preview.jpg)
+![HEOObject_Preview](img/VKCItemObject_5.jpg)
 
 If the "Object Mode" is set to `Pose` or `Motion`, the motion's hem file will be converted to Unity AnimationClip for preview.
 
-![HEOObject_Motion_Preview](img/HEOObject_Motion_Preview.jpg)
+![HEOObject_Motion_Preview](img/VKCItemObject_6.jpg)
 
 The slider appearing on enabling scene preview will modify the play position of the VKC Item Object's action.<br>
 This slider value is intended for motion previewing, and will not be reflected on the action after build.
 
-![HEOObject_Motion_Preview_Result](img/HEOObject_Motion_Preview_Result.jpg)
+![HEOObject_Motion_Preview_Result](img/VKCItemObject_7.jpg)
 
-!!! note caution
+!!! warning "caution"
     If an heo file from previous SDK versions is designated for preview, the model may not be displayed correctly.<br>
     If such issue happens, please recreate the heo file.

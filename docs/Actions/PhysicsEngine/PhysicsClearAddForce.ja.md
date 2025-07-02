@@ -18,7 +18,7 @@
 | ----   | ---- |
 | Target | アクションを適応する物理オブジェクトを指定してください。 |
 
-!!! Note Info
+!!! info "Note"
     物理エンジンが有効なオブジェクトに対してのみ有効です。
     物理エンジンの使い方については以下を参照ください。
     - [PhysicsEngine](../../WorldMakingGuide/PhysicsEngine.md)

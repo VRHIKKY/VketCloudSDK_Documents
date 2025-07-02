@@ -1,7 +1,7 @@
 # UnlitマテリアルのContributeGI設定を外す
 
 Vket CloudではUnlitシェーダーが適用されたオブジェクトをライトベイクすると、結果としてUnityシーン上での表示よりも暗くなってしまいます。<br>
-そこでVketCloudSDKでは便利ツールとして、対象オブジェクトに設定されているContribute GI (ライトマップの対象となるための設定)をまとめて外すツールを用意しています。
+そこでVket Cloud SDKでは便利ツールとして、対象オブジェクトに設定されているContribute GI (ライトマップの対象となるための設定)をまとめて外すツールを用意しています。
 
 ## 使い方
 
@@ -9,7 +9,7 @@ Vket CloudではUnlitシェーダーが適用されたオブジェクトをラ�
 
 ![DisableContributeGITool_1](img/DisableContributeGITool_1.jpg)
 
-VketCloudSDKタブを開き、Tools > Utility > Disable Contribute GI of Unlit Materialsを選択します。
+Vket Cloud SDKタブを開き、Tools > Utility > Disable Contribute GI of Unlit Materialsを選択します。
 
 ![DisableContributeGITool_2](img/DisableContributeGITool_2.jpg)
 

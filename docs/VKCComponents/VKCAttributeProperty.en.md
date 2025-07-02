@@ -123,100 +123,6 @@ Property can be used on HeliScript by using the 3 functions above.
 
 ---
 
-## Usage
-
-Here are some ways to use VKC Attribute Property:
-
-### 1. Pass-by-Value to an Activity
-
-!!! tip "Defining property values on Activity"
-    Unlike previous versions, defining property on Activities is recommended to be done by editing the Activity json file without using VKC Attribute Property component.<br>
-    For details, please see [VKC Activity Exporter: Setting Property in Activity](../SDKTools/VKCActivityExporter.md#setting-property-in-activity).
-
-### 2. Pass-by-Value to a Component
-
-When doing a pass-by-value among components, VKC Attribute Property can be used as below.<br>
-*The same process can be implemented by defining a value change method, and calling it using `hsCallComponentMethod()`.
-
-```c#
-// 2 components: exampleA and exampleB, an Item with property: Key:status, Value:alive is defined,
-// exampleB will function when the HP value in exampleA becomes lower than 0
-
-component exampleA{
-
-  int HP;
-  Item m_Item;
-
-  public exampleA{
-    HP = 20;
-    m_Item = hsItemGet("Monster");
-  }
-  
-  public void damage(){
-    HP--;
-    if(HP<=0){
-      m_Item.SetProperty("status","death");
-    }
-  }
-}
-
-component exampleB{
-
-  int status;
-
-  public exampleB{
-    status = 1;
-  }
-
-  public void OnChangedProperty(string Key, string Value){
-    if(Key == "status"){
-      switch(Value){
-        case: "alive"
-          hsSystemWriteLine("A Monster has appeared!");
-          status = 1;
-          break;
-        case: "poison"
-          hsSystemWriteLine("The monster is poisoned!");
-          status = 2;
-          break;
-        case: "death"
-          hsSystemWriteLine("The monster is defeated!");
-          status = -1;
-          break;
-      }
-    }
-  }
-}
-```
-
-### 3. Similar Usage as Unity's \[SerializeField\] Attribution
-
-As like "2. Pass-by-Value to a Component", parameter configuration on the Unity editor can be done by defining a variable property through VKC Attribute Property.
-
-However, Key and Value will always be a string value.
-
-```c#
-component exampleC{
-  int HP;
-  int damage;
-  string skill;
-  Item m_Item;
-  
-  public exampleC{
-    m_Item = hsItemGet("Monster");
-    HP = m_Item.GetProperty("HP").ToInt();
-    damage = m_Item.GetProperty("damage").ToInt();
-    skill = m_Item.GetProperty("skill");
-  }
-}
-
-//After defining the above, add a VKC Attribute Property component to a Monster object on Unity,
-//and define properties: HP:30、damage:3、skill:Serial Cut,
-//Each property will overwrite the HeliScript variable values
-```
-
----
-
 ## Notes
 
 ### 1. Check which Item is targeted for SetProperty / GetProperty
@@ -224,7 +130,7 @@ component exampleC{
 Each Item can have different properties defined.<br>
 If the Item name is wrong on reference, this may lead to unintended behaviors.
 
-!!! note warning
+!!! warning "Note"
     Update: On SDK version 12.x and later, SetProperty will add a new property if it does not exist.<br>
     On SDK Ver9.11, when trying to run SetProperty without a target property, unexpected behavior may occur without error notices.
 
@@ -233,3 +139,7 @@ If the Item name is wrong on reference, this may lead to unintended behaviors.
 As previously mentioned, Key and Value will always be a String. When connecting with non-String type variables, type cast is needed before running SetProperty or GetProperty.
 
 If SetProperty or GetProperty is done without type casting, null values will be used instead.
+
+## Related Articles
+
+[How to Use HEOProperty (Vket Cloud Property Function)](https://vrhikky.github.io/VketCloudSDK_Documents/14.2/WorldMakingGuide/VKCAttributeProperty.html)

@@ -5,7 +5,7 @@
 On SDK Ver13.4, scene preview on Unity has been added as an easier alternative for [Build & Run](../FirstStep/BuildAndRun.md) world check. <br>
 Using this feature, world creators can quickly check world & player actions without build.
 
-!!! caution "About β feature"
+!!! warning "About β feature"
     This feature is currently a beta feature, which includes functions currently not fully implemented.<br>
     These features are planned to be implemented in future SDK versions.
 

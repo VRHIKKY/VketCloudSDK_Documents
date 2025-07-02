@@ -23,6 +23,32 @@ Vket Cloudでは以下のフォーマットのテクスチャ画像が使用で�
 | Z-Bias | 0 | z値が高いと、ほかのオブジェクトよりも手前に表示されます |
 | Double Side | false | 両面表示するか否かを切り替えます |
 
+???+ note "このオブジェクトタイプを使用可能なItemクラス"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [GetScale](../hs/hs_class_item.md#getscale)
+    - [SetScale](../hs/hs_class_item.md#setscale)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [PlayVideo](../hs/hs_class_item.md#playvideo)
+    - [StopVideo](../hs/hs_class_item.md#stopvideo)
+    - [IsPlayVideo](../hs/hs_class_item.md#isplayvideo)
+    - [ReplaceItem](../hs/hs_class_item.md#replacetexture)
+    - [ReplaceTexture](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ### 高度な設定
 
 | 名称 | 機能 |
@@ -33,7 +59,7 @@ Vket Cloudでは以下のフォーマットのテクスチャ画像が使用で�
 | Show Photo Mode | 写真撮影モードの際、表示するかどうかを変更します |
 | Overrides |ワールド入場時に`Overrides`にて設定された`Material`及び`Texture`がVKC Item Planeにて設定したTextureに代わって使用されます |
 
-!!! note caution
+!!! warning "caution"
     Overrides項目は現在実装中の機能です。<br>
     本機能については今後のアップデートで使い方が更新される予定です。
 

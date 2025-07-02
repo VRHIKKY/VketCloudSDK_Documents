@@ -99,14 +99,14 @@ Noボタンのテキストを設定します。後述のhsCommonDialogOpenを呼
 
 OKボタンがクリックされたときのdelegate関数を設定します。delegateの型はvoid func(void)です。後述のhsCommonDialogOpenを呼び出す前に設定する必要があります。
 
-```
+```csharp
 hsCommonDialogSetOKButtonDelegate(OnDialogOK);
 
 public void OnDialogOK(void)
 {
- system.Output("OnDialogOK callback\n");
- 
- hsCommonDialogClose();
+	system.Output("OnDialogOK callback\n");
+	
+	hsCommonDialogClose();
 }
 ```
 
@@ -126,7 +126,8 @@ Noボタンがクリックされたときのdelegate関数を設定します。d
 
 `bool hsCommonDialogOpen()`
 
-汎用ダイアログを開きます。既に開かれている場合等のエラーがある場合はfalseが返ります。
+汎用ダイアログを開きます。既に開かれている場合等のエラーがある場合はfalseが返ります。<br>
+CanvasのHeliScriptで使用する場合は引数に`"canvas"`を追加して`hsCommonDialogOpen("canvas")`のように呼ぶ必要があります。Canvas以外の場合は引数は不要です。
 
 ### hsCommonDialogClose
 

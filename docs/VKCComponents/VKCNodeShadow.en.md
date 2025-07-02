@@ -12,7 +12,7 @@ Using this component, shadows syncronizing to avatar and object movement can be 
 
 ## How to Use
 
-1\. Change the Rendering setting in [HEOWorldSetting](HEOWorldSetting.md) from `Round`(round shadow) to `Normal Shadow Map`.
+1\. Change the Rendering setting in [VKCRenderingSettings](../VketCloudSettings/RenderingSettings.md) from `Round`(round shadow) to `Normal Shadow Map`.
 
 ![HEOShadow_2](./img/HEOShadow_2.jpg)
 
@@ -32,7 +32,7 @@ Shadows have a designated display distance, which fade outs / disappears when be
 
 ![HEOShadow_Result_1](./img/HEOShadow_Result_1.gif)
 
-!!! note caution
+!!! warning "caution"
         Only the objects with VKC Node Shadow attached will have their dynamic shadows drawn.<br>
         If `Normal Shadow Map` in [HEOWorldSetting](HEOWorldSetting.md) is enabled, objects without VKC Node Shadow will not have their shadow casted/ recieve other shadows.
 

@@ -23,6 +23,7 @@ RenderingSettingsでは、ワールドにおける描画設定を編集します
 | `Light Scattering` | false | ライトスキャッタリングのオンオフを切り替えます。 |
 | `IBL` | false | IBL（Image-Based Lighting）のオンオフを切り替えます。 |
 | `SSAO` | false | SSAO (screen-space ambient occlusion)のオンオフを切り替えます。 |
+| `Tone Map` | false | トーンマップのオンオフを切り替えます。 |
 | `VKC Item Render Priority Settings` | | ワールド内のオブジェクトの描画優先度を管理します。<br>数字の小さいアイテムから順番に描画され、数字が同じアイテムは同時に描画されます。 |
 
 ---
@@ -85,3 +86,22 @@ RenderingSettingsでは、ワールドにおける描画設定を編集します
 | `AO Ratio` | 3 | 0.25 ~ 5.0 | AOの強さ（濃度）を設定します。 |
 | `HSP` | true | | AOの黒色に背景の色を乗せるか設定します。これによって明るい部分が暗くなりすぎないようになります。<br> 基本的には`true`にしておくことを推奨します。 |
 | `Fake Bloom` | false | | ブラーのサンプルデータを疑似的なbloom表現のために使用するか否か設定します。<br> `Colbleed`値の設定に応じて強さが変化します。 |
+
+---
+
+## ToneMap
+
+!!! warning "安定版SDK14.4.12でご使用いただけません"
+    安定版SDK14.4.12で機能がロールバックのためご使用いただけません。
+    SDK14.2.1もしくは14.4.12より新しいバージョンがあれば、そちらをご使用ください。
+
+![RenderingSettings_6](./img/RenderingSettings_6.jpg)
+
+|  名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| `Peak Luminance` | 1 | モニタの最大輝度値を設定します。1.0が100nitです。 |
+| `Contrast` | 1 | コントラスト値を設定します。|
+| `Linear Start` | 0.22 | トーンカーブの線形部分の開始位置です。 |
+| `Linear Length` | 0.4 | トーンカーブの線形部分の長さです。 |
+| `Black Tightness` | 1.3 | 黒の締まり値です。値を上げると黒い部分がより黒くなり強調されます。 |
+| `Black Lower Limit` | 0 | 黒の下限値です。値を上げると黒い部分が明るくなります。 |

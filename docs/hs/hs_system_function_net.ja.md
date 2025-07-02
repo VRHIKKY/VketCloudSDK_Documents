@@ -1,7 +1,7 @@
 
 # 組み込み関数 - ネットワーク
 
-!!! 情報 Info
+!!! info "情報"
     ルームのプレイヤー全体に、任意のデータを送信します。
 
     プレイヤーにデータを送信する方法として、カスタムステートとカスタムデータの2種類があります。
@@ -14,13 +14,15 @@
 
 ***
 
-## hsNetSetCustomState
+## データ送信関数
+
+### hsNetSetCustomState
 
 `void hsNetSetCustomState(string type, string data)`
 
 あらかじめ type と data を設定しておくことによって、ルームに入場したユーザーに (type, data) を自動で通知する。
 
-## hsNetSendCustomData
+### hsNetSendCustomData
 
 `void hsNetSendCustomData(string type, string data)`
 
@@ -28,7 +30,8 @@
 
 ## データ受信コールバックメソッド
 
-送信されたデータは、コンポーネントに定義された `OnReceiveCustomState()` と `OnReceiveCustomData()` メソッドで取得できます。引数 id は送信したプレイヤーの識別子です。
+送信されたデータは、コンポーネントに定義された `OnReceiveCustomState()` と `OnReceiveCustomData()` メソッドで取得できます。引数 id は送信したプレイヤーの識別子です。  
+なお、送信したプレイヤーにはデータが届きませんのでご留意ください。
 
 ```
 component CustomDataReceiver

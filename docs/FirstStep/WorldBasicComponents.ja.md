@@ -1,6 +1,6 @@
 # ワールドの基本要素
 
-VketCloudSDKでビルドするには、最低限、以下のオブジェクトがシーンに配置されている必要があります。  
+Vket Cloud SDKでビルドするには、最低限、以下のオブジェクトがシーンに配置されている必要があります。  
 
 |  オブジェクト名  |  概要  |
 | ---- | ---- |
@@ -11,12 +11,12 @@ VketCloudSDKでビルドするには、最低限、以下のオブジェクト�
 
 これらの設定項目の詳細については[Vket Cloud Settings - 概要](../VketCloudSettings/Overview.md)を参照してください。
 
-!!! note tip
+!!! tip "note"
     これらのオブジェクトは、ヒエラルキーで右クリックし、Add essential Objects for VketCloudから呼び出すことができます。
 
     ![AddEssentialObjects](img/AddEssentialObjects.jpg)   
   
-!!! note question
+!!! question "Note"
     - 連続して初期のスポーンポイントに戻される　　
 
     という現象が起きている場合は、意図せずリスポーン判定されている可能性があります。DespawnHeightSettingsの高さ（y軸）やPlayerSettingsの位置を調整してみてください。    

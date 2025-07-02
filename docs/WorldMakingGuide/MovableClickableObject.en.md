@@ -1,6 +1,6 @@
 # Movable Clickable Object
 
-VKCItemObject is an Item, not a Node, so the click detection method GetNodeIndexByName described in [this manual](../hs/hs_overview.md){target=_blank} cannot be used. However, it is possible to achieve a movable object with click detection in VketCloud using a different approach. Follow the steps below:
+VKC Item Object is an Item, not a Node, so the click detection method GetNodeIndexByName described in [this manual](../hs/hs_overview.md){target=_blank} cannot be used. However, it is possible to achieve a movable object with click detection in VketCloud using a different approach. Follow the steps below:
 
 ## Setting Up the Floor
 
@@ -35,7 +35,7 @@ VKCItemObject is an Item, not a Node, so the click detection method GetNodeIndex
 ![text](img/movable_clickable_text.jpg)
 
 1. Create an empty GameObject named "Text".
-2. Add a VKCItemTextPlane to it.
+2. Add a VKC Item TextPlane to it.
 3. Since it is hard to see as is, set the Position to `0, 2, 0`.
 4. Set the text to `count: 0`.
 

@@ -1,4 +1,4 @@
-# RenderingSettings
+# VKC Rendering Settings
 
 ![RenderingSettings_1](./img/RenderingSettings_1.jpg)
 
@@ -23,6 +23,7 @@ RenderingSettings handles the rendering settings of the world.
 | `Light Scattering` | false | Enable/disable light scattering. |
 | `IBL` | false | Enable/disable IBL, or Image-Based Lighting. |
 | `SSAO` | false | Enable/disable SSAO (screen-space ambient occlusion).|
+| `Tone Map` | false | Enable/disable tone map. |
 | `Priority List` | | Set the render priority for world objects. <br> Items with smaller values will be drawn first, and items with the same value will be drawn at the same time. |
 
 ---
@@ -85,3 +86,22 @@ RenderingSettings handles the rendering settings of the world.
 | `AO Ratio` | 3 | 0.25 ~ 5.0 | Set the AO intensity (concentration). |
 | `HSP` | true | | If enabled, background color will be blended on the AO black. This will prevent lighter spots from being too dark.<br> Recommended to be set to `true`. |
 | `Fake Bloom` | false | | Designates whether to use the blur sample data for a pseudo-bloom effect. <br> Effect intensity is determined by `Colbleed` value. |
+
+---
+
+## ToneMap
+
+!!! warning "Not available in Stable SDK 14.4.12"
+    This feature has been rolled back in Stable SDK 14.4.12 and is therefore not available.
+    Please use SDK 14.2.1 or a version newer than 14.4.12 if available.
+
+![RenderingSettings_6](./img/RenderingSettings_6.jpg)
+
+| Label | Initial Value | function |
+| ---- | ---- | ---- |
+| `Peak Luminance` | 1 | The maximum brightness value of the monitor. 1.0 corresponds to 100 nits. |
+| `Contrast` | 1 | The contrast level.|
+| `Linear Start` | 0.22 | The starting position of the linear portion of the tone curve. |
+| `Linear Length` | 0.4 | The length of the linear portion of the tone curve. |
+| `Black Tightness` | 1.3 | The tightness value for dark areas. Increasing this value makes dark area deeper and more pronounced. |
+| `Black Lower Limit` | 0 | The lower limit for dark areas. Increasing this value lightens the dark area. |

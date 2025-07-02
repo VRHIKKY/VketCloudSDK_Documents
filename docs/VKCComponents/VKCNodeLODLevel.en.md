@@ -19,6 +19,6 @@ Options for LOD levels to export
 | ALL |
 | NONE |
 
-!!! note caution
+!!! warning "caution"
      - By default it is set to "ALL".
      - LOD switching is not attainable on Vket Cloud.

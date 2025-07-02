@@ -5,6 +5,24 @@
 VKC Item Activity is a component for setting activities.<br>
 The "Activity" in Vket Cloud is a feature for wrapping models and scripts as a single [Item](../hs/hs_overview.md#item), aimed for easy placement and implementation on worlds.
 
+???+ note "Available methods for this object type"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [ReplaceItem](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## Basic Settings
 
 | Label | Function |
@@ -13,7 +31,7 @@ The "Activity" in Vket Cloud is a feature for wrapping models and scripts as a s
 | .json | Designates the json file containing the activity information. |
 | Overrides | Edits the settings in each activity. |
 
-!!! caution "About Scene Preview"
+!!! warning "About Scene Preview"
     When enabling `Scene Preview`, a preview object of the activity will be created in Scene, which position / size / rotation can be altered.<br>
     However, the edits will be **reverted** on build, and Transform values of object with VKC Item Activity will be referred instead.
 
@@ -93,7 +111,7 @@ For details on how to get the activity data, refer to the manual which is referr
 
 ![VKCItemActivity_11](img/VKCItemActivity_11.jpg)
 
-4\. Move the unzipped analogclock folder to the Unity project with the VketCloudSDK installed. Folder position within the Assets is at your choice.
+4\. Move the unzipped analogclock folder to the Unity project with the Vket Cloud SDK installed. Folder position within the Assets is at your choice.
 
 ![VKCItemActivity_12](img/VKCItemActivity_12.jpg)
 

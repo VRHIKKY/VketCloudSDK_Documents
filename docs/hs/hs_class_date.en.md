@@ -1,32 +1,45 @@
+# Date Class
 
-# Dateクラス
+The Date class is for handling date and time on HeliScript.
 
-特定の日時を表現するクラスです。
+Date class internally holds the time passed from the UNIX epoch (January 1 1970 12:00:00 am).
 
-Dateクラスは、内部にUNIXエポック (1970年1月1日午前0時0分0秒) からの経過時間を保持しています。
+Date class is a variable class, which can be updated by calling SetYear(), AddHour(), and other functions to update the internal data after instantiation.
+To save the Date data before update, please consider copying by using Clone().
 
-Dateクラスは可変であり、インスタンス生成後に SetYear() や AddHour() などのメソッドを呼びだすことで、Dateの内部データを更新することが可能です。
-変更前のDateの状態を保持したい場合は、Clone() メソッドによるコピー生成を検討してください。
+If Date class is set with a value over a certain range, the data will be overlapped automatically. For example, if a Date class with the date "May 33 1990" was generated, it will be normalized to "June 2 1990".
 
-Dateクラスに、既定の範囲を超えた値を設定した場合、自動でオーバーラップが行われます。例えば、「1990年5月33日」を表現するDateクラスを生成すると、実際には「1990年6月2日」となるよう正規化が行われます。
+## Date and TimeSpan
 
-## Dateのユーティリティー関数
+Date class is for representing a specific date and time, while TimeSpan is used for representing a time interval.
+
+## Date utility functions
 
 ### hsCreateDate
+
 `Date hsCreateDate(int year, int month = 1, int day = 1, int hour = 0,  int minite = 0,  int second = 0, int millisecond = 0)`
 
-現在のローカルタイムゾーンで、指定した日時のDateインスタンスを生成する。
+Create a Date instance with the defined date in the current local time zone.
 
 ### hsCreateDateUTC
+
 `Date hsCreateDateUTC(int year, int month = 1, int day = 1, int hour = 0,  int minite = 0,  int second = 0, int millisecond = 0)`
 
-UTCにおける、指定した日時のDateインスタンスを生成する。
+Create a Date instance with the defined date in UTC.
+
+### hsParseDate
+`Date hsParseDate(string dateStr)`
+
+Parse the ISO 8601 formatted string and create a Date instance.<br>
+
+If the string parsing fails, it will return null.
 
 ***
 
-## 定数値
+## Constant Values
 
-週の曜日を表現する定数値です。
+The following constant values are for expressing the day of the week:
+
 ```
 const int DAYS_SUNDAY = 0;
 const int DAYS_MONDAY = 1;
@@ -39,209 +52,253 @@ const int DAYS_SATURDAY = 6;
 
 ***
 
-## コンストラクタ
+## Constructor
 
 ### Date
 `public Date()`
 
-ローカルタイムゾーンにおける、現在時刻を表現するクラスを生成します。
+Create a class with the current time in the local time zone.
 
-## メソッド
+## Methods
 
 ### ToString
 `string ToString()`
 
-このインスタンスが持つ日時情報を、ローカルタイムゾーンにおける ISO 8601形式の文字列に変換して返します。
+Returns the instance's date info based on the local time zone, by converting it to an ISO 8601 format string.
 
 ### ToUTCString
 `string ToUTCString()`
 
-このインスタンスが持つ日時情報を、UTCにおける ISO 8601形式の文字列に変換して返します。
+Returns the instance's date info based on UTC, by converting it to an ISO 8601 format string.
 
 ### Clone
 `Date Clone()`
 
-このインスタンスの持つ日時情報がコピーされた、新たなDateインスタンスを生成して返します。
+Returns a new Date instance with the current instance's date info copied.
 
 ### Equals
 `bool Equals(Date other)`
 
-このインスタンスと、引数otherが表す日時が同じである場合に true を返します。
+Returns true when the current instance and other has the same date.
 
 ### GetEpochSeconds
 `int GetEpochSeconds()`
 
-UNIXエポックからの経過秒数を返します。
+Returns the past seconds from the UNIX epoch.
 
-## メソッド (ローカルタイムゾーンに基づく日時取得)
+## Methods (Get value based on local time zone)
 
 ### GetYear
 `int GetYear()`
 
-ローカルタイムゾーンに基づく「年」を返します。
+Gets the year value based on the local time zone.
 
 ### GetMonth
 `int GetMonth()`
 
-ローカルタイムゾーンに基づく、1を起点とした「月」を返します。(範囲: 1から12)
+Gets the month value based on the local time zone, starting with 1. (Range: 1-12)
 
 ### GetDayOfYear
 `int GetDayOfYear()`
 
-ローカルタイムゾーンに基づく、1を起点とした年間積算日を返します。(範囲: 1から366)ｓ
+Gets the day of year based on the local time zone, starting with 1. (Range: 1-366)
 
 ### GetDayOfWeek
 `int GetDayOfWeek()`
 
-ローカルタイムゾーンに基づく、0を起点とした「曜日」を返します。(範囲: 0から6)
+Gets the day of week based on the local time zone, starting with 0. (Range: 0-6)
 
 ### GetDay
 `int GetDay()`
 
-ローカルタイムゾーンに基づく、1を起点とした月の日付を返します。(範囲: 1から31)
+Gets the day of month based on the local time zone, starting with 1. (Range: 1-31)
 
 ### GetHours
 `int GetHours()`
 
-ローカルタイムゾーンに基づく、0を起点とした「時間」を返します。(範囲: 0から23)
+Gets the hour based on the local time zone, starting with 0. (Range: 0-23)
 
 ### GetMinutes
-`int GetMinutes() `
+`int GetMinutes()`
 
-ローカルタイムゾーンに基づく、0を起点とした「分」を返します。(範囲: 0から59)
+Gets the minute based on the local time zone, starting with 0. (Range: 0-59)
 
 ### GetSeconds
 `int GetSeconds()`
 
-ローカルタイムゾーンに基づく、0を起点とした「秒」を返します。(範囲: 0から59)
+Gets the second based on the local time zone, starting with 0. (Range: 0-59)
 
 ### GetMilliseconds
 `int GetMilliseconds()`
 
-ローカルタイムゾーンに基づく、0を起点とした「ミリ秒」を返します。(範囲: 0から999)
+Gets the millisecond based on the local time zone, starting with 0. (Range: 0-999)
 
-
-## メソッド (UTCに基づく日時取得)
+## Methods (Get value based on UTC)
 
 ### GetUTCYear
 `int GetUTCYear()`
 
-UTCに基づく「年」を返します。
+Gets the year value based on UTC.
 
 ### GetUTCMonth
 `int GetUTCMonth()`
 
-UTCに基づく、1を起点とした「月」を返します。(範囲: 1から12)
+Gets the month value based on UTC, starting with 1. (Range: 1-12)
 
 ### GetUTCDayOfYear
 `int GetUTCDayOfYear()`
 
-UTCに基づく、1を起点とした年間積算日を返します。(範囲: 1から366)ｓ
+Gets the day of year based on UTC, starting with 1. (Range: 1-366)
 
 ### GetUTCDayOfWeek
 `int GetUTCDayOfWeek()`
 
-UTCに基づく、0を起点とした「曜日」を返します。(範囲: 0から6)
+Gets the day of week based on UTC, starting with 0. (Range: 0-6)
 
 ### GetUTCDay
 `int GetUTCDay()`
 
-UTCに基づく、1を起点とした月の日付を返します。(範囲: 1から31)
+Gets the day of month based on UTC, starting with 1. (Range: 1-31)
 
 ### GetUTCHours
 `int GetUTCHours()`
 
-UTCに基づく、0を起点とした「時間」を返します。(範囲: 0から23)
+Gets the hour based on UTC, starting with 0. (Range: 0-23)
 
 ### GetUTCMinutes
-`int GetUTCMinutes() `
+`int GetUTCMinutes()`
 
-UTCに基づく、0を起点とした「分」を返します。(範囲: 0から59)
+Gets the minute based on UTC, starting with 0. (Range: 0-59)
 
 ### GetUTCSeconds
 `int GetUTCSeconds()`
 
-UTCに基づく、0を起点とした「秒」を返します。(範囲: 0から59)
+Gets the second based on UTC, starting with 0. (Range: 0-59)
 
 ### GetUTCMilliseconds
 `int GetUTCMilliseconds()`
 
-UTCに基づく、0を起点とした「ミリ秒」を返します。(範囲: 0から999)
+Gets the millisecond based on UTC, starting with 0. (Range: 0-999)
 
-
-## メソッド (日時の設定)
+## Methods (Set Date values)
 
 ### SetYear
 `void SetYear(int value)`
 
-このインスタンスの「年」を、引数valueの値に更新します。
+Set the instance's year by the given value.
 
 ### SetMonth
 `void SetMonth(int value)`
 
-このインスタンスの「月」を、引数valueの値に更新します。
+Set the instance's month by the given value.
 
 ### SetDay
 `void SetDay(int value)`
 
-このインスタンスの「日」を、引数valueの値に更新します。
+Set the instance's day by the given value.
 
 ### SetHours
 `void SetHours(int value)`
 
-このインスタンスの「時間」を、引数valueの値に更新します。
+Set the instance's hour by the given value.
 
 ### SetMinutes
 `void SetMinutes(int value)`
 
-このインスタンスの「分」を、引数valueの値に更新します。
+Set the instance's minute by the given value.
 
 ### SetSeconds
 `void SetSeconds(int value)`
 
-このインスタンスの「秒」を、引数valueの値に更新します。
+Set the instance's second by the given value.
 
 ### SetMilliseconds
 `void SetMilliseconds(int value)`
 
-このインスタンスの「ミリ秒」を、引数valueの値に更新します。
+Set the instance's millisecond by the given value.
 
+## Methods (Adding/Subtracting Date values)
 
-## メソッド (日時の加算・減算)
-Dateインスタンスに対して、日時の加算を行うメソッドです。
-引数が負数の場合、減算が行われます。
+These methods are for adding date values to a Date instance.<br>
+If the given value is negative, subtraction will be done.
 
 ### AddYear
 `void AddYear(int value)`
 
-このインスタンスの「年」に、引数valueの値を加算します。
+Add the given value to the instance's year.
 
 ### AddMonth
 `void AddMonth(int value)`
 
-このインスタンスの「月」に、引数valueの値を加算します。
+Add the given value to the instance's month.
 
 ### AddDay
 `void AddDay(int value)`
 
-このインスタンスの「日」に、引数valueの値を加算します。
+Add the given value to the instance's day.
 
 ### AddHours
 `void AddHours(int value)`
 
-このインスタンスの「時間」に、引数valueの値を加算します。
+Add the given value to the instance's hour.
 
 ### AddMinutes
 `void AddMinutes(int value)`
 
-このインスタンスの「分」に、引数valueの値を加算します。
+Add the given value to the instance's minute.
 
 ### AddSeconds
 `void AddSeconds(int value)`
 
-このインスタンスの「秒」に、引数valueの値を加算します。
+Add the given value to the instance's second.
 
 ### AddMilliseconds
 `void AddMilliseconds(int value)`
 
-このインスタンスの「ミリ秒」に、引数valueの値を加算します。
+Add the given value to the instance's millisecond.
+
+## Methods (Operation)
+
+### Until
+`TimeSpan Until(Date date)`
+
+Gets the time interval from the date and time of this instance to the date and time of the argument `date` as a `TimeSpan`.
+This operation can be represented as `date - this` in arithmetic.
+
+### Since
+`TimeSpan Since(Date date)`
+
+Gets the time interval from the date and time of the argument `date` to the date and time of this instance as a `TimeSpan`.
+This operation can be represented as `this - date` in arithmetic.
+
+### Add
+`Date Add(TimeSpan span)`
+
+Adds the time interval of the argument `span` to the date and time of this instance and returns the result as a new `Date` instance.
+
+### Sub
+`Date Sub(TimeSpan span)`
+
+Subtracts the time interval of the argument `span` from the date and time of this instance and returns the result as a new `Date` instance.
+
+## Methods (Comparison)
+
+### Equals
+`bool Equals(Date other)`
+
+Returns `true` if the date and time represented by this instance and the argument `other` are the same.
+
+### IsAfter
+`bool IsAfter(Date date)`
+
+Compares this instance with the argument `Date` and returns `true` if this instance is later than the argument `Date`.
+
+### IsBefore
+`bool IsBefore(Date date)`
+
+Compares this instance with the argument `Date` and returns `true` if this instance is earlier than the argument `Date`.
+
+### Compare
+`int Compare(Date date)`
+
+Compares this instance with the argument `Date` and returns `0` if they are the same, `1` if this instance is later, and `-1` if this instance is earlier.

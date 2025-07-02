@@ -1,6 +1,6 @@
 # HEODespawnHeight
 
-!!! note warning
+!!! warning "Note"
     本コンポーネントはSDK Ver12.0にて廃止されました。<br>
     新機能として[Vket Cloud Settings](../VketCloudSettings/Overview.md)が追加されたため、そちらをお使いください。
 

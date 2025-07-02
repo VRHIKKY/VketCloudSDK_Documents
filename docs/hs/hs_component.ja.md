@@ -119,6 +119,29 @@ component AreaCollider
 }
 ```
 
+## コールバック - ItemCollider
+
+以下のようにOnItemEnterCollider, OnItemLeaveColliderメソッドを定義しておくと、このコンポーネントを持つItemが別のItem内ノードのコライダーに侵入・退出した時に呼び出されます。  
+現在対応している衝突形状はボックスコライダーのみです。  
+
+```
+component CollisionTest
+{
+    public void OnItemEnterCollider(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+        hsSystemOutput("[OnItemEnterCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+    public void OnItemLeaveCollider(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+        hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+}
+```
+
 ## コールバック - オブジェクト選択解除
 
 ### ノードの選択解除：OnUnselectNode
@@ -149,7 +172,7 @@ public void OnResize(int width, int height)
 
 ## コールバック - カスタムステート/カスタムデータ
 
-ルームの管理者から送信された任意のデータを受信するコールバックメソッドです。
+ルーム内の任意のプレイヤーから送信された任意のデータを受信するコールバックメソッドです。
 
 ```
 public void OnReceiveCustomState(string id, string type, string data)
@@ -173,6 +196,13 @@ component ButtonClickable
     }
 }
 ```
+
+## コールバック - GUIスライダー
+ `public void OnSliderRateChanged(string GUIName, float Rate)`
+
+GUI要素のスライダーの値を変更した際に呼び出されるコールバックメソッドです。
+
+引数 GUIName には操作が行われたスライダーの名前、引数 Rate には変更されたスライダーの値が 0 から 1 までの数値として渡されます。
 
 ## コールバック - 物理衝突判定
 
@@ -220,7 +250,7 @@ public void OnEnterViewCollider(string NodeName)
 public void OnLeaveViewCollider(string NodeName)
 ```
 
-HEOColliderで「InView」を指定したコライダーが視野内に入った場合または視野外に出た場合に呼び出されます。
+[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)で「In View」を指定したコライダーが視野内に入った場合または視野外に出た場合に呼び出されます。
 
 コンポーネントは同一のアイテムに設定する必要があります。
 
@@ -273,3 +303,20 @@ Itemのプロパティが更新されたときに呼び出されます。同一�
 ```
 public void OnChangedProperty(string Key, string Value)
 ```
+
+## コールバック - メッセージ
+
+```
+public void OnReceiveMessage(HSMessage message)
+```
+
+Itemがメッセージを受信した際に呼ばれます。引数 message に、受信したデータや送信者の情報が含まれています。
+
+## コールバック - エモートチェンジ
+
+```
+public void OnEmoteChanged(int EmoteIndex)
+```
+
+Playerのエモートが変更（再生）された際に呼ばれます。  
+EmoteIndex に、変更（再生）されたエモートのインデックス値が入ります。

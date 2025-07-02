@@ -1,14 +1,14 @@
 # Overview and Setup
 
-GUITools is a derivative tool outside of VketCloudSDK designed to edit and save the Activity Canvas GUI for VKC Item Activities in worlds created in Vket Cloud. The tools are primarily divided into GUI Importer and GUI Exporter, and the json files saved by the edits made in GUITools are referenced at the time of world loading. If a new UI is added, it needs to be defined by HeliScript. For more details, see [Advanced Implementation](AdvancedUse.md) and [Built-in Functions - GUI](../hs/hs_system_function_gui.md).
+GUITools is a derivative tool outside of Vket Cloud SDK designed to edit and save the Activity Canvas GUI for VKC Item Activities in worlds created in Vket Cloud. The tools are primarily divided into GUI Importer and GUI Exporter, and the json files saved by the edits made in GUITools are referenced at the time of world loading. If a new UI is added, it needs to be defined by HeliScript. For more details, see [Advanced Implementation](AdvancedUse.md) and [Built-in Functions - GUI](../hs/hs_system_function_gui.md).
 
 ## A. Preparation
 
-As preparation, set up the Unity project and install the VketCloudSDK according to the procedures in [How to Install VketCloudSDK](../AboutVketCloudSDK/SetupSDK_external.md).
+As preparation, set up the Unity project and install the Vket Cloud SDK according to the procedures in [How to Install Vket Cloud SDK](../AboutVketCloudSDK/SetupSDK_external.md).
 
-!!! caution "Points to Note When Setting Up the Environment"
+!!! warning "Points to Note When Setting Up the Environment"
 
-    - The editor version should be 2019.4.31f1
+    - The editor version should be 2019.4.31f1 or 2022.3.6f1
     - Use the 3D template
     - Ensure the project name does not include spaces, Hiragana, Katakana, Kanji, or any other double-byte characters
 

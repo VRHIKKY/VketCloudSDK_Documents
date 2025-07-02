@@ -1,10 +1,10 @@
-site_name: VketCloudSDK Manual
-site_description: 'VketCloudSDKのマニュアルです'
+site_name: Vket Cloud SDK Manual
+site_description: 'Vket Cloud SDKのマニュアルです'
 site_author: 'HIKKY'
 
 theme:
-  favicon: images/VketCloudIcon.png
-  logo: images/VketCloudIcon.png
+  favicon: images/Favicon.png
+  logo: images/VketCloudIcon_White.png
   name: material
   palette:
   - scheme: default
@@ -22,6 +22,8 @@ theme:
     - header.autohide
     - search.suggest
     - search.highlight
+    - search.share
+    - content.code.copy
   footer:
     logo: images/HikkyLogo.png
     copyright: ©HIKKY Co.,Ltd. All rights reserved.
@@ -45,10 +47,25 @@ extra:
   version:
     provider: mike
     default: latest
-  homepage: https://www.hikky.co.jp/vketcloud
+  homepage: https://cloud.vket.com/creator
   analytics: 
     provider: google
     property: G-R753QL60GW
+  consent:
+    title: Cookie同意/Cookie Consent
+    description: >- 
+      当サイトではあなたの訪問を認識し、ドキュメントの効果を測定するためにCookieを使用しています。同意していただくことで、より良いドキュメントの作成に協力していただけます。
+      <br> We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - reject
+      - manage
+    cookies:
+      analytics:
+        name: Google Analytics
     
 use_directory_urls: false
 
@@ -57,6 +74,11 @@ plugins:
       lang: 
         - en
         - ja
+      separator: '[\s\-\.]+'
+      min_search_length: 3
+      prebuild_index: true
+      indexing: 'full'
+      
   - mike:
       version_selector: true
       css_dir: css
@@ -77,8 +99,8 @@ plugins:
           nav_translations:
             # 概要
             Introduction: はじめに
-            # VketCloudSDKについて
-            About VketCloudSDK: VketCloudSDKについて
+            # Vket Cloud SDKについて
+            About Vket Cloud SDK: Vket Cloud SDKについて
             Setup Account: アカウント準備
             Operating Environment: 動作環境
             Setup SDK: SDKの導入方法
@@ -93,6 +115,9 @@ plugins:
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
             # ワールド制作ガイド
             World Making Guide: ワールド制作ガイド
+            Table of Contents: 目次
+            List of Articles: 記事一覧
+            Shader Availability : シェーダー対応項目一覧
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
             Exporter: .heoファイルについて
@@ -111,6 +136,30 @@ plugins:
             File Deployment Config: ワールドに任意のファイルを保持させる
             How to convert animation from Unity asset: Unityアセットのアニメーションを変換する
             Movable Clickable Object: クリック判定のある移動オブジェクト
+            JS Upload: JS入稿
+            Enabling JS Upload Feature: JS入稿機能の有効化
+            Restrict World Entry Time: ワールド入場時間を制限する
+            Get Current Weather Using Web API: Web APIを使用し現在の天気を取得する
+            JS Upload Tutorial Scene: JS入稿のチュートリアルシーン
+            Set Up Avatar From Asset Store: アセットストアからアバターをセットアップする
+            Door Opens After Load: ロードが完了したら開く扉
+            Guide To Clear Textures: テクスチャをぼやけさせない
+            How to Use VKC Item Background Texture: VKC Item Background Textureの使い方
+            Implementing text that follows the player: プレイヤーに追従するテキストの実装
+            Light Scattering: ライトスキャタリング
+            Playing Entrance Sound Effects Only Under Specific Conditions: 特定の条件下でのみ入場時効果音を鳴らす
+            Execute Activity Json Method: Activityのjsonのメソッドを実行する
+            How to Use HEOProperty (Vket Cloud Property Function) : HEOProperty(Vket Cloudのプロパティ機能)の使い方
+            How to Use VKC Node Shadow: VKC Node Shadowの使い方
+            Activity With Motion: モーション付きアクティビティ
+            How to check the Chrome Developer Tools console on iPhone alone: iPhone単体でChromeのデベロッパーツールのコンソールを確認する方法
+            Activity With Canvas UI: CanvasUI表示機能付きアクティビティクラスを作る
+            Binary Output Error: バイナリ出力に失敗
+            Texture Replacement Issues with ReplaceTexture: ReplaceTextureでテクスチャの差し替えが正常に出来ない
+            Creating Capsule Rectangle Images Using 9-Slice: カプセル長方形の画像を9sliceで作成する
+            Animation With ActivityCanvas: ActivityCanvasでアニメーション
+            Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas: Canvas外をクリック(タップ)したらダイアログを閉じる機能を実装する
+            Dynamically Changing Z-bias of Plane Items: PlaneアイテムのZbiasを動的に変更する
             # ActionNodeGraph: アクションノードグラフ
             # トラブルシューティング
             Trouble shooting: トラブルシューティング
@@ -118,6 +167,26 @@ plugins:
             SDK does not appear after install: SDKがインストール後に立ち上がらない
             Build Error / How to troubleshoot issues: ビルドエラー / ワールドが動かないときは
             Version Update Troubleshooting: バージョンアップ後によくあるトラブル
+            Multiplayer Troubleshooting: ワールド入室後にマルチプレイができない時の確認ポイント
+            Comment / Bug Reports Form : ご意見・バグ報告フォーム
+            Voice Attenuation Trouble: 音声減衰の不具合
+            # FAQ
+            FAQ : FAQ
+            Solution to Profile Image Error When Creating an Account on Old MyVket : 旧MyVketでアカウントを作成し、プロフィール画像起因のエラーが発生する場合の解決法
+            HEOAreaCollider Does Not Work When Overlapping with a MeshCollider : MeshColliderとHEOAreaColliderを持つコライダーが重なっていた場合、HEOAreaColliderが動作しない
+            Procedure for Porting Animation Shader Materials for VRChat to VketCloud : VRChat用のアニメーションシェーダー素材をVketCloudに移植する手順
+            Unable to Retrieve Item with hsItemGetOwnScene() Inside Delegate Function : デリゲート関数内でhsItemGetOwnScene()してもアイテムが取得出来ないことがある
+            Solution to Build Error when a Mesh Object without UV2 is attached to Mesh: UV2が用いられていないメッシュのオブジェクトがMeshにアタッチされている場合のビルドエラーの解決法
+            Solution for When Clicking on Sphere Collider Does Not Respond : SphereColliderをクリックしても反応しない場合の解決方法
+            About the Split Function : Split関数について
+            The .mp3 audio file in the activity is not output during the build : アクティビティに同封した.mp3音源ファイルがビルド時に出力されない
+            The screen goes completely black after loading is complete : ロードが完了すると画面が真っ暗になる
+            Special Specifications of the Date Type : Data型の特殊仕様
+            Loading Stack : ローディングが止まる
+            Not Reflected During Build : ビルド時に反映されない
+            Error Not Displayed : エラーが表示されない不具合への対処法
+            Resolving the Issue of Slow Initial Sound Effect Playback : 効果音の初回再生が遅い問題の解消
+            Add Motions After Lib13: Lib13移行のモーション追加
             # SDKTools
             Particle Editor : パーティクルエディター
             Particle Editor - Overview: パーティクルエディター：概要 
@@ -127,8 +196,9 @@ plugins:
             Debug Mode: デバッグモード
             Debug Console: デバッグコンソール
             Debug Messages: デバッグメッセージ一覧
-            VketCloudSDK Settings : VketCloudSDK設定
+            Vket Cloud SDK Settings : Vket Cloud SDK設定
             ScenePreview (β): シーンプレビュー (β)
+            VRM File Creator: VRMファイルクリエーター
             # GUITools 
             Overview & Setup: 概要とセットアップ
             How to Use: 基本実装
@@ -140,11 +210,15 @@ plugins:
             Editing Multiple VKCComponents: 複数のVKCコンポーネントの一括編集
             Disable Contribute GI of Unlit Materials: UnlitマテリアルのContributeGI設定を外す
             Build Options: ビルド時のオプション
+            Gizmos: ギズモ
+            Hierarchy Icons: ヒエラルキーアイコン
+            Improving Usability in VketCloud : VketCloudでのユーザビリティを向上させる
             # 軽量化
             World Optimization: ワールドの軽量化方法
             World Optimization - Overview: ワールドの軽量化方法：概要
             Occlusion Culling: オクルージョンカリング
             Optimization for Smartphones: スマートフォンのためのワールド軽量化
+            ASTC and ETC2: ASTCとETC2とは
             # VKCComponents
             VKC Components: VKCコンポーネント
             VKC/HEO Components Overview: VKC/HEOコンポーネント概要
@@ -198,6 +272,9 @@ plugins:
             Set Generic Window State: 汎用ウィンドウステータスを指定する
             Voice Chat: ボイスチャット
             Enter/Leave Voice Group: 音声グループに参加/退出
+            Tips/HeliScript Guide: Tips/HeliScriptガイド
+            Remove Default UI: 既存UIの消し方
+            Script Error Checking with Assertions: Assertionを使ったスクリプトエラーチェック
             Web: ウェブ
             Open Links in New Tab: 新しいタブでWEBページを開く
             Open Links in Current Tab: 現在のタブでWEBページを開く
@@ -206,8 +283,10 @@ plugins:
             Stop Video: ビデオ停止
             # HeliScript
             HeliScript - Overview: HeliScript概要
+            HeliScript - Casting: HeliScriptキャスト
+            HeliScript - Commenting: HeliScriptコメント
             Statements and flow control: 文法と制御構文
-            Declarations and definitions: 定義・宣言
+            Scopes and definitions: スコープ・定義
             Control Statement: 制御構文
             Reference (ref): 参照(ref)
             Constant Variable (const): 定数(const)
@@ -227,21 +306,30 @@ plugins:
             Item Class: Itemクラス
             Player Class: Playerクラス
             Date Class: Dateクラス
+            TimeSpan Class: TimeSpanクラス
+            HSMessage Class: HSMessageクラス
+            HSRaycastHIT Class: HSRaycastHITクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
             Network: ネットワーク
             NamePlate: ネームプレート
             GUI: GUI
+            Input: 入力
             HSGUIModel: HSGUIModel
             TextChat: テキストチャット
             Physics: 物理演算
             Camera: カメラ
             Common Dialog: 汎用ダイアログ
             Rendering: レンダリング
+            JavaScript: JavaScript
+            Cookie: Cookie
+            RayCast: レイキャスト
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
+            JsVal: JsVal
+            Handling Json in HeliScript: HeliScriptでJsonを扱う
             # チェンジログ / リリースノート
             Change Log: チェンジログ
             About Changelog: チェンジログについて
@@ -257,10 +345,11 @@ markdown_extensions:
     - codehilite
     - attr_list
     - pymdownx.details
+    - pymdownx.superfences
 
 nav:
 - Introduction: index.md
-- About VketCloudSDK:
+- About Vket Cloud SDK:
     - Setup Account : AboutVketCloudSDK/SetupAccount.md
     - Operating Environment : AboutVketCloudSDK/OperatingEnvironment.md
     - Setup SDK : AboutVketCloudSDK/SetupSDK_external.md
@@ -282,26 +371,58 @@ nav:
     - Avatar Settings: VketCloudSettings/AvatarSettings.md
     - MyAvatar Settings: VketCloudSettings/MyAvatarSettings.md
 - World Making Guide:
-    - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
-    - Setting up a Skybox : WorldMakingGuide/Skybox.md 
-    - How to use Colliders / Tips : WorldMakingGuide/Collider.md
-    - Physics Engine: WorldMakingGuide/PhysicsEngine.md
-    - Tips on using VKC Item Field: WorldMakingGuide/HEOFieldTips.md
-    - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
-    #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
-    - How to Animate Objects: WorldMakingGuide/PropAnimation.md
-    - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
-    - How to convert animation from Unity asset: WorldMakingGuide/ConvertAnimationFromUnityAsset.md
-    - Avatar File: WorldMakingGuide/AvatarFile.md
-    - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
-    - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
-    - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
+    - Table of Contents : WorldMakingGuide/WorldMakingGuide.md
+    - List of Articles :
+      - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
+      - Shader Availability : WorldMakingGuide/ShaderAvailability.md
+      - Setting up a Skybox : WorldMakingGuide/Skybox.md 
+      - How to use Colliders / Tips : WorldMakingGuide/Collider.md
+      - Physics Engine: WorldMakingGuide/PhysicsEngine.md
+      - Tips on using VKC Item Field: WorldMakingGuide/HEOFieldTips.md
+      - Reflection Probe : WorldMakingGuide/ReflectionProbe.md
+      #- ChatGPT: WorldMakingGuide/ChatGPT.md #整備中
+      - How to Animate Objects: WorldMakingGuide/PropAnimation.md
+      - How to Animate Objects - Troubleshooting: WorldMakingGuide/PropAnimation_TroubleShooting.md
+      - How to convert animation from Unity asset: WorldMakingGuide/ConvertAnimationFromUnityAsset.md
+      - Avatar File: WorldMakingGuide/AvatarFile.md
+      - Adding Preset Avatars : WorldMakingGuide/PresetAvatar.md
+      - File Deployment Config : WorldMakingGuide/FileDeploymentConfig.md
+      - Movable Clickable Object : WorldMakingGuide/MovableClickableObject.md
+      - JS Upload :
+        - Enabling JS Upload Feature: WorldMakingGuide/JsUpload.md
+        - Restrict World Entry Time: WorldMakingGuide/JsUpload_RestrictEntryTime.md
+        - Get Current Weather Using Web API: WorldMakingGuide/JsUpload_FetchCurrentWeather.md
+        - JS Upload Tutorial Scene: WorldMakingGuide/JsUpload_TutorialScene.md
+      - Set Up Avatar From Asset Store: WorldMakingGuide/ImportAssetStore.md
+      - Door Opens After Load: WorldMakingGuide/DoorOpensAfterLoad.md
+      - Guide To Clear Textures: WorldMakingGuide/GuideToClearTextures.md
+      - How to Use VKC Item Background Texture: WorldMakingGuide/BackgroundTexture.md
+      - Implementing text that follows the player: WorldMakingGuide/PlayerFollowText.md
+      - Light Scattering: WorldMakingGuide/LightScattering.md
+      - Playing Entrance Sound Effects Only Under Specific Conditions: WorldMakingGuide/SoundEffectEntrance.md
+      - Execute Activity Json Method: WorldMakingGuide/ExecuteActivityJsonMethod.md
+      - How to Use HEOProperty (Vket Cloud Property Function): WorldMakingGuide/VKCAttributeProperty.md
+      - How to Use VKC Node Shadow: WorldMakingGuide/HEOShadow.md
+      - Activity With Motion: WorldMakingGuide/ActivityWithMotion.md
+      - Activity With Canvas UI: WorldMakingGuide/ActivityWithCanvasUI.md
+      - Binary Output Error: WorldMakingGuide/BinaryOutputError.md
+      - How to check the Chrome Developer Tools console on iPhone alone : WorldMakingGuide/iPhoneConsole.md
+      - Texture Replacement Issues with ReplaceTexture : WorldMakingGuide/ReplaceTexture.md
+      - Improving Usability in VketCloud : WorldMakingGuide/VketCloudUsability.md
+      - Creating Capsule Rectangle Images Using 9-Slice : WorldMakingGuide/9slice.md
+      - Implementing a Feature to Close a Dialog When Click(Tap) Outside the Canvas : WorldMakingGuide/CloseCanvas.md
+      - Dynamically Changing Z-bias of Plane Items: WorldMakingGuide/Zbias.md
 - Trouble shooting:
     - SDK does not appear after install : troubleshooting/InstallingDeeplink.md
     - Trouble shooting - General Checklist: troubleshooting/GeneralChecklist.md
     - Build Error / How to troubleshoot issues: troubleshooting/BuildError.md
     - Version Update Troubleshooting: troubleshooting/VersionUpdateTroubleshooting.md
     - Unity settings for replicating actual look in Vket Cloud : heoexporter/he_align_unity_to_vketcloud.md
+    - Multiplayer Troubleshooting: troubleshooting/MultiplayerTroubleshooting.md
+    - Comment / Bug Reports Form : troubleshooting/Comment_Bug_Reports.md
+    - Voice Attenuation Trouble: troubleshooting/VoiceAttenuationTrouble.md
+- FAQ:
+    - FAQ Home: FAQ/FAQ_home.md
 - SDK Tools:
     - Debug Console: debugconsole/debugconsole.md
     - Debug Messages: debugconsole/debugmessage.md
@@ -314,72 +435,77 @@ nav:
       - Particle Editor - Properties : particleeditor/pe_about_properties.md
     - Export Compressed Texture : SDKTools/ExportCompressedTexture.md
     - VKC Activity Exporter : SDKTools/VKCActivityExporter.md
-    - VketCloudSDK Settings : SDKTools/VketCloudSDKSettings.md
+    - Vket Cloud SDK Settings : SDKTools/VketCloudSDKSettings.md
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
-    - GUITools: 
-      - Overview & Setup: GUITools/Setup.md
-      - How to Use: GUITools/HowToUse.md
-      - Advanced Use: GUITools/AdvancedUse.md
+    - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - ScenePreview (β): SDKTools/ScenePreview.md
+    - VRM File Creator: SDKTools/VRMFileCreator.md
+- GUITools: 
+    - Overview & Setup: GUITools/Setup.md
+    - How to Use: GUITools/HowToUse.md
+    - Advanced Use: GUITools/AdvancedUse.md
 - World Editing Tips:
   - Quick Menu for adding Vket Cloud objects: WorldEditingTips/QuickMenu.md
   - Using EditorOnly Tags: WorldEditingTips/EditorOnlyTag.md
   - Editing Multiple VKCComponents: WorldEditingTips/MultiSelect_HEOComponents.md
   - Disable Contribute GI of Unlit Materials: WorldEditingTips/DisableContributeGITool.md
   - Build Options: WorldEditingTips/BuildOptions.md
+  - Gizmos: WorldEditingTips/Gizmos.md
+  - Hierarchy Icons: WorldEditingTips/HierarchyIcons.md
 - World Optimization: 
   - World Optimization - Overview : WorldOptimization/WorldOptimization.md
   - Occlusion Culling : WorldOptimization/OcclusionCulling.md
   - Texture Compression : WorldOptimization/TextureCompression.md
   - Optimization for Smartphones: WorldOptimization/SmartphoneOptimization.md
+  - ASTC and ETC2: WorldOptimization/AstcAndEtc2.md
 - VKC Components:
   - VKC/HEO Components Overview: VKCComponents/VKCHEOCorrespondenceTable.md
-  - VKCSetting:
+  - VKC Setting:
     # Basic
-    - VKCSettingBase: VketCloudSettings/BasicSettings.md
-    - VKCSettingPlayer: VketCloudSettings/PlayerSettings.md
-    - VKCSettingDespawnHeight: VketCloudSettings/DespawnHeightSettings.md
+    - VKC Setting Base: VketCloudSettings/BasicSettings.md
+    - VKC Setting Player: VketCloudSettings/PlayerSettings.md
+    - VKC Setting Despawn Height: VketCloudSettings/DespawnHeightSettings.md
     # Advanced
-    - VKCSettingRendering: VketCloudSettings/RenderingSettings.md
-    - VKCSettingCamera: VketCloudSettings/CameraSettings.md
-    - VKCSettingAvatar: VketCloudSettings/AvatarSettings.md
-    - VKCSettingMyAvatar: VketCloudSettings/MyAvatarSettings.md
+    - VKC Setting Rendering: VketCloudSettings/RenderingSettings.md
+    - VKC Setting Camera: VketCloudSettings/CameraSettings.md
+    - VKC Setting Avatar: VketCloudSettings/AvatarSettings.md
+    - VKC Setting MyAvatar: VketCloudSettings/MyAvatarSettings.md
     # Optional
-    - VKCSettingNameplate: VKCComponents/VKCSettingNameplate.md
-    - VKCSettingSpawn: VKCComponents/VKCSettingSpawn.md
-  - VKCItem:
-    - VKCItemActivity: VKCComponents/VKCItemActivity.md
-    - VKCItemAreaCollider: VKCComponents/VKCItemAreaCollider.md
-    - VKCItemAudio: VKCComponents/VKCItemAudio.md
-    - VKCItemBackgroundTexture: VKCComponents/VKCItemBackgroundTexture.md
-    - VKCItemCamera: VKCComponents/VKCItemCamera.md
-    - VKCItemField: VKCComponents/VKCItemField.md
-    - VKCItemObject: VKCComponents/VKCItemObject.md
-    - VKCItemParticle: VKCComponents/VKCItemParticle.md
-    - VKCItemPlane: VKCComponents/VKCItemPlane.md
-    - VKCItemSpot: VKCComponents/VKCItemSpot.md
-    - VKCItemTextPlane: VKCComponents/VKCItemTextPlane.md
-  - VKCNode:
-    - VKCNodeAlphaAnimation: VKCComponents/VKCNodeAlphaAnimation.md
-    - VKCNodeBlendShapeTranslator: VKCComponents/VKCNodeBlendShapeTranslator.md
-    - VKCNodeCollider: VKCComponents/VKCNodeCollider.md
-    - VKCNodeCylinderCollider: VKCComponents/VKCNodeCylinderCollider.md
-    - VKCNodeLODLevel: VKCComponents/VKCNodeLODLevel.md
-    - VKCNodeMeshCollider: VKCComponents/VKCNodeMeshCollider.md
-    - VKCNodeMirror: VKCComponents/VKCNodeMirror.md
-    - VKCNodeReflectionProbeType: VKCComponents/VKCNodeReflectionProbeType.md
-    - VKCNodeRotateAnimation: VKCComponents/VKCNodeRotateAnimation.md
-    - VKCNodeShadow: VKCComponents/VKCNodeShadow.md
-    - VKCNodeUVScroller: VKCComponents/VKCNodeUVScroller.md
-    - VKCNodeVideoTrigger: VKCComponents/VKCNodeVideoTrigger.md
-  - VKCAttribute:
-    - VKCAttributeActionTrigger: VKCComponents/VKCAttributeActionTrigger.md
-    - VKCAttributeClickGuide: VKCComponents/VKCAttributeClickGuide.md
-    - VKCAttributeClickableUI: VKCComponents/VKCAttributeClickableUI.md
-    - VKCAttributeProperty: VKCComponents/VKCAttributeProperty.md
-    - VKCAttributeScript: VKCComponents/VKCAttributeScript.md
-    - VKCAttributeShowFlag: VKCComponents/VKCAttributeShowFlag.md
-  - VKCLegacy:
+    - VKC Setting Nameplate: VKCComponents/VKCSettingNameplate.md
+    - VKC Setting Spawn: VKCComponents/VKCSettingSpawn.md
+  - VKC Item:
+    - VKC Item Activity: VKCComponents/VKCItemActivity.md
+    - VKC Item AreaCollider: VKCComponents/VKCItemAreaCollider.md
+    - VKC Item Audio: VKCComponents/VKCItemAudio.md
+    - VKC Item BackgroundTexture: VKCComponents/VKCItemBackgroundTexture.md
+    - VKC Item Camera: VKCComponents/VKCItemCamera.md
+    - VKC Item Field: VKCComponents/VKCItemField.md
+    - VKC Item Object: VKCComponents/VKCItemObject.md
+    - VKC Item Particle: VKCComponents/VKCItemParticle.md
+    - VKC Item Plane: VKCComponents/VKCItemPlane.md
+    - VKC Item Spot: VKCComponents/VKCItemSpot.md
+    - VKC Item Text Plane: VKCComponents/VKCItemTextPlane.md
+  - VKC Node:
+    - VKC Node Alpha Animation: VKCComponents/VKCNodeAlphaAnimation.md
+    - VKC Node BlendShape Translator: VKCComponents/VKCNodeBlendShapeTranslator.md
+    - VKC Node Collider: VKCComponents/VKCNodeCollider.md
+    - VKC Node Cylinder Collider: VKCComponents/VKCNodeCylinderCollider.md
+    - VKC Node LOD Level: VKCComponents/VKCNodeLODLevel.md
+    - VKC Node Mesh Collider: VKCComponents/VKCNodeMeshCollider.md
+    - VKC Node Mirror: VKCComponents/VKCNodeMirror.md
+    - VKC Node Reflection Probe Type: VKCComponents/VKCNodeReflectionProbeType.md
+    - VKC Node Rotate Animation: VKCComponents/VKCNodeRotateAnimation.md
+    - VKC Node Shadow: VKCComponents/VKCNodeShadow.md
+    - VKC Node UV Scroller: VKCComponents/VKCNodeUVScroller.md
+    - VKC Node Video Trigger: VKCComponents/VKCNodeVideoTrigger.md
+  - VKC Attribute:
+    - VKC Attribute Action Trigger: VKCComponents/VKCAttributeActionTrigger.md
+    - VKC Attribute Click Guide: VKCComponents/VKCAttributeClickGuide.md
+    - VKC Attribute Clickable UI: VKCComponents/VKCAttributeClickableUI.md
+    - VKC Attribute Property: VKCComponents/VKCAttributeProperty.md
+    - VKC Attribute Script: VKCComponents/VKCAttributeScript.md
+    - VKC Attribute Show Flag: VKCComponents/VKCAttributeShowFlag.md
+  - VKC Legacy:
     - HEODespawnHeight: VKCComponents/HEODespawnHeight.md
     - HEOPlayer: VKCComponents/HEOPlayer.md
     - HEOWorldSetting: VKCComponents/HEOWorldSetting.md
@@ -442,6 +568,8 @@ nav:
       - Stop Video: Actions/Others/StopVideo.md
 - HeliScript:
     - HeliScript - Overview: hs/hs_overview.md
+    - HeliScript - Casting: hs/hs_casting.md
+    - HeliScript - Commenting: hs/hs_comment_out.md
     - Built-in Types:
         - Basic Types: hs/hs_var.md
         - String: hs/hs_string.md
@@ -457,8 +585,12 @@ nav:
         - Item Class: hs/hs_class_item.md
         - Player Class: hs/hs_class_player.md
         - Date Class: hs/hs_class_date.md
+        - TimeSpan Class: hs/hs_class_timespan.md
+        - HSMessage Class: hs/hs_class_hsmessage.md
+        - HSRaycastHIT Class: hs/hs_struct_hsraycasthit.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
+        - Input: hs/hs_system_function_input.md
         - Math: hs/hs_system_function_math.md
         - Network: hs/hs_system_function_net.md
         - NamePlate: hs/hs_system_function_nameplate.md
@@ -470,16 +602,41 @@ nav:
         - Camera: hs/hs_system_function_camera.md
         - Common Dialog: hs/hs_system_function_commondialog.md
         - Rendering: hs/hs_system_function_rendering.md
+        - JavaScript: hs/hs_system_function_js.md
+        - Cookie: hs/hs_system_function_cookie.md
+        - Raycast: hs/hs_system_function_raycast.md
     - Statements and flow control:
-        - Declarations and definitions: hs/hs_statement_def.md
+        - Scopes and definitions: hs/hs_scope_def.md
         - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
+    - Tips/HeliScript Guide:
+        - Remove Default UI: hs/RemoveDefaultUI.md
+        - Script Error Checking with Assertions: hs/hs_assertion_function.md
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md
+  - Handling Json in HeliScript: ExternalAPI/HeliScriptJsonParse.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v15.x:
+        - v15.7: releasenote/releasenote-15.7.md
+        - v15.6: releasenote/releasenote-15.6.md
+        - v15.5: releasenote/releasenote-15.5.md
+        - v15.4: releasenote/releasenote-15.4.md
+        - v15.3: releasenote/releasenote-15.3.md
+        - v15.2: releasenote/releasenote-15.2.md
+        - v15.1: releasenote/releasenote-15.1.md
+        - v15.0: releasenote/releasenote-15.0.md
+    - v14.x:
+        - v14.5: releasenote/releasenote-14.5.md
+        - v14.4: releasenote/releasenote-14.4.md
+        - v14.3: releasenote/releasenote-14.3.md
+        - v14.2: releasenote/releasenote-14.2.md
+        - v14.1: releasenote/releasenote-14.1.md
+        - v14.0: releasenote/releasenote-14.0.md
     - v13.x:
+        - v13.8: releasenote/releasenote-13.8.md
+        - v13.7: releasenote/releasenote-13.7.md
         - v13.6: releasenote/releasenote-13.6.md
         - v13.5: releasenote/releasenote-13.5.md
         - v13.4: releasenote/releasenote-13.4.md
@@ -548,8 +705,21 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v15.x:
+        - v15.5: changelog/changelog-15.5.md
+        - v15.4: changelog/changelog-15.4.md
+        - v15.3: changelog/changelog-15.3.md
+        - v15.2: changelog/changelog-15.2.md
+        - v15.1: changelog/changelog-15.1.md
+    - v14.x:
+        - v14.5: changelog/changelog-14.5.md
+        - v14.4: changelog/changelog-14.4.md
+        - v14.2: changelog/changelog-14.2.md
+        - v14.1: changelog/changelog-14.1.md
     - v13.x:
+        - v13.7: changelog/changelog-13.7.md
         - v13.4: changelog/changelog-13.4.md
+        - v13.1: changelog/changelog-13.1.md
     - v12.x:
         - v12.3: changelog/changelog-12.3.md
         - v12.1: changelog/changelog-12.1.md

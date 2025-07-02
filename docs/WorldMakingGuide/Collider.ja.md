@@ -1,52 +1,60 @@
 # コライダーの使い方 / Tips
 
-Vket Cloudでは、UnityのコライダーにVKCComponentを付与することで壁や床などの役割だけではなく、[オクルージョン](../WorldOptimization/OcclusionCulling.md)、[動的ローディング](../VKCComponents/VKCItemField.md)、[クリック / 入退場 / 視野判定](../VKCComponents/VKCNodeCollider.md#_1)、[物理演算](./PhysicsEngine.md)など様々な振る舞いをワールド上で行うことができます。<br>
+## コライダーでできること
+Vket Cloudでは、Unityの各種コライダーとVKCコンポーネントを組み合わせることで、以下のような機能や表現をつくることができます：
 
-## コライダーの付け方
+1. 基本的な環境構築: [壁や床などの作成](../VKCComponents/VKCNodeCollider.md#1-collider)
+2. 表示の最適化: [オクルージョン機能](../WorldOptimization/OcclusionCulling.md) により見えない部分の処理を省略
+3. 読み込みの効率化: [動的ローディング](../VKCComponents/VKCItemField.md) で必要な時だけコンテンツを読み込み
+4. インタラクション: [クリック、エリア出入り、視野内判定](../VKCComponents/VKCNodeCollider.md#_2) などの検知
+5. 物理演算: [落下や衝突などの動き](./PhysicsEngine.md)
 
-![VKCNodeCollider_1](../VKCComponents/img/HEOCollider_1.jpg)
+## コライダー用コンポーネント
 
-VketCloudSDKでは、Unityコライダーに対応するVKCComponentをそれぞれアタッチすることでワールド上で扱えるようになります。<br>
-コライダーの設定方法・各設定項目の詳細は各ページをご確認ください。
+Vket Cloud SDKには、以下のコライダー関連コンポーネントがあります：
 
-[VKC Node Collider](../VKCComponents/VKCNodeCollider.md) : コライダーにおける基本的なコンポーネントです。
+### 基本コンポーネント
 
-以下のコンポーネントは単体では使用せず、[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)と組み合わせて使用します。
+**[VKC Node Collider](../VKCComponents/VKCNodeCollider.md)**- コライダーを表現する基本的なコンポーネントです。UnityのBoxColliderと併用することで例えば壁や床など衝突可能なノードを作成できます。また、他のVKCコンポーネントとの組み合わせで使用することで、さまざまな表現が可能になります。
 
-[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md) : プレイヤーの入退場など、特定の範囲の内外でアクションを起こしたい場合に使用します。
+!!! note "Boxコライダーを扱う場合の注意点"
+    Boxコライダー付きのGameObjectはVKCNodeColliderがアタッチされていなくとも、自動的にコライダーが付与されます。
 
-[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md) : UnityのMesh ColliderをVket Cloudにて使用したい場合に付与します。
+### 基本コンポーネントと組み合わせて使うもの
+これらをインスペクタービュー上でアタッチすると、VKC Node Colliderも自動で追加されます。
 
-!!! bug "ワールドにMesh Renderer / Mesh Colliderのみ存在する際のプレイヤー浮遊について"
-    SDK Ver12.3において、ワールドにMesh Renderer, Mesh Collider, VKCNodeMeshCollider, [VKC Node Collider](../VKCComponents/VKCNodeCollider.md)が付いたオブジェクトのみ存在する際、ワールド入場時にプレイヤーが空中に浮遊する不具合が確認されています。<br>
-    本不具合は次回のSDKリリースにて修正される予定です。<br>
-    なお、本不具合はBox ColliderがアタッチされたCubeなどをワールドに最低１つ配置することで回避が可能です。
+**[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)**- プレイヤーの特定エリアに出入りをトリガーとしたアクションを設定できます。
 
-VKC Node Cylinder Collider : [物理演算](./PhysicsEngine.md)にてUnityのCylinder Colliderを物理演算させたい場合に使用します。<br>
-なお、Cylinderは物理演算以外には使えないためご注意ください。
+**[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)**- UnityのMesh Colliderと組み合わせて付与することで、メッシュ形状に合わせたコライダーを作成できます。
 
-## Action Trigger / HeliScriptでの物理演算・コライダーについて
+**[VKC Node Cylinder Collider](../VKCComponents/VKCNodeCylinderCollider.md)**- UnityのCapsuleColliderに物理演算を適用する際に使用します。詳細は[物理エンジン](./PhysicsEngine.md)を参照してください。
 
-VketCloudSDKにおいて、コライダーはクリックや[VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)を使用した入退場判定によってアクションを起こすことができます。
-詳しくは[Actionについて](../Actions/ActionsOverview.md)をご確認ください。
+## コライダーとActionの連携
 
-また、コライダーはその範囲内外にてHeliScriptのコールバック関数を呼び、様々なギミックの作成に役立てられます。<br>
-各関数の挙動は以下のページにて記述しております。
+コライダーはアクションと組み合わせることで、多彩なギミックを作成できます。<br>
+詳細は[アクションの項目](../Actions/ActionsOverview.md)を参照してください。
+
+## コライダーとスクリプトの連携
+HeliScriptのコールバック関数を活用することで、アクションだけでは実現できない複雑なギミックも作成可能です：
 
 - [コールバック - Area Collider](../hs/hs_component.md#-areacollider)
 - [コールバック - 物理衝突判定](../hs/hs_component.md#-_2)
 - [コールバック - 視野内コライダー](../hs/hs_component.md#-_3)
 
-## Tips: 階段にコライダーを設置する際の注意点
+## 実践のヒント
 
-ワールドに階段を設定する際、[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)あるいはBox Colliderを使用してコライダーを設定すると移動時にガタつきやすく、一段一段の高さによってはジャンプを要するため、プレイヤーにとってストレスとなりうる可能性があります。
+!!! tips "階段のコライダー設置テクニック"
+    階段にコライダーを設置する場合、[VKC Node Mesh Collider](../VKCComponents/VKCNodeMeshCollider.md)あるいはBox Colliderをそのまま使うと、移動時にガタつきが生じたり、段差によってはジャンプが必要になったりして、プレイヤーにストレスを与えることがあります。
+    ![ColliderTips_Stair_1](./img/ColliderTips_Stair_1.jpg)
+    ![ColliderTips_Stair_1_Result](./img/ColliderTips_Stair_1_Result.gif)
+    より良い解決策として、Box Colliderを斜めに配置して坂状にすることで、プレイヤーがスムーズに登れる階段を作成できます。
+    ![ColliderTips_Stair_2](./img/ColliderTips_Stair_2.jpg)
+    ![ColliderTips_Stair_2_Result](./img/ColliderTips_Stair_2_Result.gif)
 
-![ColliderTips_Stair_1](./img/ColliderTips_Stair_1.jpg)
 
-![ColliderTips_Stair_1_Result](./img/ColliderTips_Stair_1_Result.gif)
-
-そこで、Box Colliderを斜めに設置して坂状にすることで、滑らかにのぼりやすい階段が設置できます。
-
-![ColliderTips_Stair_2](./img/ColliderTips_Stair_2.jpg)
-
-![ColliderTips_Stair_2_Result](./img/ColliderTips_Stair_2_Result.gif)
+!!! note "プレイヤーとの衝突判定の仕組み"
+    プレイヤーは画像のオレンジ球に衝突判定を持ちます。<br>
+    また、下記の操作でオレンジ球が可視化されます。  
+    1. 予め[VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md)の[デバッグモード](../WorldEditingTips/DebugMode.md#f3)を有効にしておく。  
+    2. ビルド後、ゲーム中にF3キーを押す。
+    ![ColliderTips_player_1](./img/ColliderTips_player_1.jpg)

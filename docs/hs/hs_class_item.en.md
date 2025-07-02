@@ -1,11 +1,12 @@
 # Item class
 
 On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
-For example, objects defined as items are [VKCItemField](../VKCComponents/VKCItemField.md), [VKCItemObject](../VKCComponents/VKCItemObject.md), [VKCItemPlane](../VKCComponents/VKCItemPlane.md), [VKCItemActivity](../VKCComponents/VKCItemActivity.md), and other objects.
 
-The Item class is for handling such Items, and "Nodes" which are child objects of [VKCItemField](../VKCComponents/VKCItemField.md) on HeliScript.
+Items can be output to the scene by placing and configuring game objects with components added by Vket Cloud SDK, such as VKC Item Field and VKC Item Object.
 
-An Item class object is obtainable by specifying the item name with hsItemGet() or running hsItemGetSelf().
+The Item class is used to manipulate the above-mentioned Item in HeliScript.
+
+You can retrieve an instance of the Item class by calling functions such as hsItemGet().
 
 Item class has various methods to operate the obtained Item object.
 
@@ -30,13 +31,27 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-Global function. Obtains the Item located under [VKCItemField](../VKCComponents/VKCItemField.md) and returns it as an Item instance.
+Global Function. Gets an Item by the specified name.
 
 ### hsItemGetSelf
 
 `Item hsItemGetSelf()`
 
 Global function. Gets the Item object of where this component itself is attached, by calling this function in the component's constructor, or methods such as Update, OnClickNode, etc.
+
+### hsItemCreateClone
+
+`Item hsItemCreateClone(Item Origin, string Name = "")`
+
+Global function. Creates a clone of the specified item in the same location. The cloneable item type is `object`.  
+Pass the original item object to Origin.  
+Optionally pass the item name you want to set for the clone item to Name. If not specified, a name will be automatically assigned.
+
+### hsItemDestroyClone
+
+`void hsItemDestroyClone(Item item)`
+
+Global function. Deletes the specified clone item. Non-clone items cannot be deleted.
 
 ***
 
@@ -50,17 +65,17 @@ Judges whether this class is identical to the argument obj.
 
 When obtaining Item objects using hsItemGet(), etc., a different instance may be obtained despite being the same Item. For checking identity, use Equals() instead of "===" operator.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetName
 
@@ -68,17 +83,39 @@ When obtaining Item objects using hsItemGet(), etc., a different instance may be
 
 Get the name of the Item.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetParentItem
+
+`public Item GetParentItem()`
+
+Retrieves the parent Item relative to the Item itself.
+
+Since an activity has a structure where an Item contains other Items, calling GetParentItem() from an Item within an activity will retrieve the parent Item.
+
+If there is no parent Item, it returns null.
+
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetPos
 
@@ -86,15 +123,15 @@ Get the name of the Item.
 
 Move Item to the designated position.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetPos
 
@@ -102,16 +139,18 @@ Move Item to the designated position.
 
 Get the local position of Item.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+If this Item is inside a VKC Item Activity, the obtained value will be the coordinates relative to the VKC Item Activity.
+
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetWorldPos
 
@@ -119,9 +158,16 @@ Get the local position of Item.
 
 Get the world position of Item.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+Regardless of where this Item is located (inside or outside of a VKC Item Activity), it always returns the coordinates in world space.
+
+???+ warning Usage Caution
+    Use this method when you want to obtain world coordinates in the case of an Activity.
+
+    If it is not an Activity, use GetPos for most of the time.
+
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetQuaternion
 
@@ -129,15 +175,15 @@ Get the world position of Item.
 
 Set the quaternion rotation of Item.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetQuaternion
 
@@ -145,15 +191,15 @@ Set the quaternion rotation of Item.
 
 Get the local rotation of Item by quaternion.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item AreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetWorldQuaternion
 
@@ -161,19 +207,20 @@ Get the local rotation of Item by quaternion.
 
 Get the world rotation of Item by quaternion.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### GetWorldRotate
 
 `public Vector3 GetWorldRotate()`
 
-Get the world rotation of Item by Vector3.
+Get the world rotation of Item by Vector3 (Euler angles).<br>
+The values for each axis (x, y, z) are represented in a range from -180 degrees to 180 degrees.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### GetScale
 
@@ -181,11 +228,11 @@ Get the world rotation of Item by Vector3.
 
 Get the scale of Item by Vector3.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetScale
 
@@ -193,11 +240,10 @@ Get the scale of Item by Vector3.
 
 Set the scale of Item by Vector3.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### MovePos
 
@@ -207,9 +253,9 @@ Moves the Item over [time] seconds to the coordinates specified by pos.
 
 If CollisionDetection is set to true, collision detection will be enabled as like the player avatar.
 
-??? note "Available object types for this method"
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsMoving
 
@@ -217,9 +263,9 @@ If CollisionDetection is set to true, collision detection will be enabled as lik
 
 Returns true if the Item is moving.
 
-??? note "Available object types for this method"
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### Play
 
@@ -228,10 +274,10 @@ Returns true if the Item is moving.
 Start playing a sound or particle. Returns true if the playback process has started successfully.<br>
 Returns false on failure.
 
-??? note "Available object types for this method"
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+???+ note "Available object types for this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
 
 ### Stop
 
@@ -239,10 +285,10 @@ Returns false on failure.
 
 Stop the sound or particle that is playing.
 
-??? note "Available object types for this method"
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+???+ note "Available object types for this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
 
 ### IsPlay
 
@@ -250,14 +296,14 @@ Stop the sound or particle that is playing.
 
 Returns true if the sound or particle is playing.
 
-??? note "Available object types for this method"
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+???+ note "Available object types for this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     ??? warning "Different return values for IsPlay"
-        - [VKCItemAudio](../VKCComponents/VKCItemAudio.md): Returns true if the designated audio clip is playing
-        - [VKCItemObject](../VKCComponents/VKCItemObject.md): Returns true if designated hem in Motion list is playing, when object mode is Motion
-        - [VKCItemParticle](../VKCComponents/VKCItemParticle.md): Returns true if designated .hep particle is playing
+        - [VKC Item Audio](../VKCComponents/VKCItemAudio.md): Returns true if the designated audio clip is playing
+        - [VKC Item Object](../VKCComponents/VKCItemObject.md): Returns true if designated hem in Motion list is playing, when object mode is Motion
+        - [VKC Item Particle](../VKCComponents/VKCItemParticle.md): Returns true if designated .hep particle is playing
 
 ### Pause
 
@@ -265,7 +311,7 @@ Returns true if the sound or particle is playing.
 
 Pauses the object's playing motion.
 
-??? note "Available object types for this method"
+???+ note "Available object types for this method"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### Restart
@@ -274,7 +320,7 @@ Pauses the object's playing motion.
 
 Resumes the object's playing motion after pause.
 
-??? note "Available object types for this method"
+???+ note "Available object types for this method"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetPlayTime
@@ -284,7 +330,7 @@ Resumes the object's playing motion after pause.
 Sets the object's motion playing position by designated time.<br>
 The time is designated by millisecond.
 
-??? note "Available object types for this method"
+???+ note "Available object types for this method"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### GetPlayTime
@@ -294,7 +340,7 @@ The time is designated by millisecond.
 Gets the object's motion playing position by designated time.<br>
 The time is designated by millisecond.
 
-??? note "Available object types for this method"
+???+ note "Available object types for this method"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetShow
@@ -303,13 +349,13 @@ The time is designated by millisecond.
 
 Display Item with true. Hide the Item with false.
 
-??? note "Available object types for this method"
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsShow
 
@@ -317,13 +363,13 @@ Display Item with true. Hide the Item with false.
 
 Returns true if the Item is visible, false otherwise.
 
-??? note "Available object types for this method"
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### ChangeMotion
 
@@ -332,7 +378,7 @@ Returns true if the Item is visible, false otherwise.
 Change the motion according to the designated MotionName.<br>
 BlendTimeMS will designate the time to blend the motion by milliseconds.
 
-??? note "Available object types for this method"
+???+ note "Available object types for this method"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### LoadMotion
@@ -341,7 +387,7 @@ BlendTimeMS will designate the time to blend the motion by milliseconds.
 
 Loads the designated motion.
 
-??? note "Available object types for this method"
+???+ note "Available object types for this method"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### FacialEmoteFixed
@@ -358,7 +404,7 @@ The facial types below can be designated:
 - FACIALEMOTETYPE_SORROW
 - FACIALEMOTETYPE_FUN
 
-??? note "Available object types for this method"
+???+ note "Available object types for this method"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### Load
@@ -367,17 +413,17 @@ The facial types below can be designated:
 
 Start loading the Item. Returns false if the loading process fails to start.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### Unload
 
@@ -385,17 +431,17 @@ Start loading the Item. Returns false if the loading process fails to start.
 
 Unload the Item. Returns false if the unloading process fails.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsLoading
 
@@ -403,17 +449,16 @@ Unload the Item. Returns false if the unloading process fails.
 
 Returns true if the Item is loading, false otherwise.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### IsLoaded
 
@@ -421,46 +466,48 @@ Returns true if the Item is loading, false otherwise.
 
 Returns true if the Item has finished loading, false otherwise.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetNodeIndexByName
 
 `public int GetNodeIndexByName(string nodeName)`
 
-Finds a node by name and returns an index identifying that node.
+Finds a node by name and returns an index identifying that node. 
+If the node is not found, -1 will be returned.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### GetNodeNameByIndex
 
 `public string GetNodeNameByIndex(int nodeIndex)`
 
 Given a node by index, return the name of that node.
+If the node is not found, an empty string will be returned.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### GetNodePosByIndex
 
 `public Vector3 GetNodePosByIndex(int nodeIndex)`
 
 Specify a node by index and return the coordinates of that node.
+If the node is not found, Vector3.zero will be returned.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### SetShowNode
 
@@ -468,9 +515,9 @@ Specify a node by index and return the coordinates of that node.
 
 Specify a node by name, show it if flag is true and hide it if flag is false.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### IsShowNode
 
@@ -478,9 +525,9 @@ Specify a node by name, show it if flag is true and hide it if flag is false.
 
 Specify a node by name, returns true if the node is visible and false if it is hidden.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetRotateNode
 
@@ -488,8 +535,8 @@ Specify a node by name, returns true if the node is visible and false if it is h
 
 Specify a node by name and rotate that node.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### SetEnableCollider
 
@@ -497,9 +544,9 @@ Specify a node by name and rotate that node.
 
 Specify a collider by name, true to enable it, false to disable it.
 
-??? note "Available object types for this method"
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### IsEnableCollider
 
@@ -507,9 +554,9 @@ Specify a collider by name, true to enable it, false to disable it.
 
 Specify a collider by name, returns true if the collider is enabled, false otherwise.
 
-??? note "Available object types for this method"
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### SetClickableNode
 
@@ -517,8 +564,8 @@ Specify a collider by name, returns true if the collider is enabled, false other
 
 Specify a clickable node by name, enable clicks if flag is set to true and disable clicks if flag is set to false.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### IsClickableNode
 
@@ -526,8 +573,19 @@ Specify a clickable node by name, enable clicks if flag is set to true and disab
 
 Specify a node by name and returns true if the node is clickable, false otherwise.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### SetUVScale
+
+`public bool SetUVScale(string materialName, float u, float v)`
+
+Specify a material by name and change the uv scale of that material. Returns false if the change fails.
+
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### SetUVOffset
 
@@ -538,9 +596,36 @@ Specify a material by name and change the uv offset of that material **starting 
 !!! warning "Origin coordinate of UV"
     While Unity considers the bottom-left coordinate of the UV as the origin, note that HeliScript considers the **top-left** as the origin.
 
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### SetMaterialColor
+
+`public bool SetMaterialColor(string materialName, float R, float G, float B, float A)`
+
+Changes the color of the specified material.
+
+Returns false if the object is not loaded or if the object type is not supported.
+
 ??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetAlpha
+
+`public bool SetAlpha(float Alpha)`
+
+Sets the alpha value for alpha blending. The range of values is 0.0f to 1.0f.
+
+Returns false if the object is not loaded or if the object type is not supported.
+
+??? note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### PlayVideo
 
@@ -548,21 +633,21 @@ Specify a material by name and change the uv offset of that material **starting 
 
 Specifies the material to play and starts playing the video. Loop playback is performed if loop is set to true.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### StopVideo
 
 `public void StopVideo()`
 
-Stop the video that is playing.
+Stops the video that is playing.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### IsPlayVideo
 
@@ -570,48 +655,48 @@ Stop the video that is playing.
 
 Returns true if a video is playing.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### ClearTextPlane
 
 `public void ClearTextPlane()`
 
-Delete the text.
+Deletes the text.
 
-??? note "Available object types for this method"
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### WriteTextPlane
 
 `public void WriteTextPlane(string text)`
 
-Set the text.
+Sets the text.
 
-??? note "Available object types for this method"
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetCamera
 
 `public bool SetCamera()`
 
 Set the camera type Item as a camera.<br>
-Refer to [VKCItemCamera](../VKCComponents/VKCItemCamera.md) for usage.
+Refer to [VKC Item Camera](../VKCComponents/VKCItemCamera.md) for usage.
 
-??? note "Available object types for this method"
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+???+ note "Available object types for this method"
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
 
 ### ResetCamera
 
 `public void ResetCamera()`
 
 Detach camera set by SetCamera.<br>
-Refer to [VKCItemCamera](../VKCComponents/VKCItemCamera.md) for usage.
+Refer to [VKC Item Camera](../VKCComponents/VKCItemCamera.md) for usage.
 
-??? note "Available object types for this method"
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+???+ note "Available object types for this method"
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
 
 ### ReplaceItem
 
@@ -619,17 +704,17 @@ Refer to [VKCItemCamera](../VKCComponents/VKCItemCamera.md) for usage.
 
 Replace the Item by the designated model data.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### ReplaceTexture
 
@@ -637,11 +722,25 @@ Replace the Item by the designated model data.
 
 Replace the texture attached to the MaterialName's material by the designated URL content.
 
+Related Page: [Texture Replacement Issues with ReplaceTexture](https://vrhikky.github.io/VketCloudSDK_Documents/latest/en/WorldMakingGuide/ReplaceTexture.html)
+
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### ReplaceBackupTexture
+
+`public bool ReplaceBackupTexture(string MaterialName)`
+
+Restores the texture of the material changed by ReplaceTexture() to its previous state.
+
+Returns true if the change is successful. Returns false if the change fails, such as when the material is not found.
+
 ??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetPhysicsEnable
 
@@ -649,8 +748,8 @@ Replace the texture attached to the MaterialName's material by the designated UR
 
 Enable physics for Node designated by NodeName if Flag is true, disable if Flag is false.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### IsPhysicsFixed
 
@@ -658,8 +757,8 @@ Enable physics for Node designated by NodeName if Flag is true, disable if Flag 
 
 When physics is enabled, returns true if this Item is fixed.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### GetPhysicsIDByNodeName
 
@@ -669,8 +768,8 @@ Get the PhysicsId for the designated Node.
 
 When physics is enabled, returns true if this Item is fixed.
 
-??? note "Available object types for this method"
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
 ### SetProperty
 
@@ -678,7 +777,29 @@ When physics is enabled, returns true if this Item is fixed.
 
 Set property by Key and Value.
 
-??? note "Available object types for this method"
+When a property change occurs, the callback method `OnChangedProperty()` is invoked.
+
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPropertyWithoutNotify
+
+`public bool SetPropertyWithoutNotify(string Key, string Value)`
+
+Sets a property. If the same Key exists, it will be overwritten; otherwise, it will be added.
+
+This method has the same functionality as SetProperty(), but when you change a property with SetPropertyWithoutNotify(), the callback method OnChangedProperty() is not called.
+
+??? note "Object types that can call this method"
     - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
     - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
     - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
@@ -696,17 +817,17 @@ Set property by Key and Value.
 
 Get property by Key. If the Key does not exist, an empty string will return.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### CallComponentMethod
 
@@ -720,17 +841,17 @@ The callable methods must follow the limits below:
 * Has one and only String type as an argument 
 * Return value is void
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
 
 ### SetOverridesProperty
 
@@ -738,17 +859,17 @@ The callable methods must follow the limits below:
 
 Sets overrides property. If the same Key exists, its value will be overwritten, otherwise the Key and Value will be appended. If Key does not use "itemname", enter an empty string as an argument.
 
-??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
-    - [VKCItemField](../VKCComponents/VKCItemField.md)
-    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
 
 ### GetOverridesProperty
 
@@ -756,14 +877,72 @@ Sets overrides property. If the same Key exists, its value will be overwritten, 
 
 Get the overrides property.
 
+???+ note "Available object types for this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetNumofPolygon
+
+`public int GetNumofPolygon()`
+
+Gets the number of polygons.
+
 ??? note "Available object types for this method"
-    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
-    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
-    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
-    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
-    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
     - [VKCItemField](../VKCComponents/VKCItemField.md)
     - [VKCItemObject](../VKCComponents/VKCItemObject.md)
-    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
-    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
-    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SendMessage
+
+`public bool SendMessage(HSMessage message)`
+
+Sends a message to this Item. The sent message is notified to the OnReceiveMessage() method of the components set on the Item.
+
+Message sending is synchronous, meaning that sending and receiving occur within the same frame. Even if the receiver sends a message back to the sender, and the sender sends another message in response, all processing occurs within the same frame.
+
+The sent message is notified to all components of the target Item, but if even one component successfully receives the message, meaning if the message reaches at least one OnReceiveMessage() callback method, SendMessage() returns true.
+
+??? note "Object types that can call this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetVolume
+
+`public void SetVolume(float Volume)`
+
+Sets the volume.
+
+??? note "Object types that can call this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### GetVolume
+
+`public float GetVolume()`
+
+Gets the volume set by SetVolume().  
+The default value is 0.2.
+
+??? note "Object types that can call this method"
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+
+### IsCollisionDetection
+
+`public bool IsCollisionDetection()`
+
+Retrieves whether collision detection is enabled for individual items.  
+If true, the item will be subject to collision detection with a ray using the hsItemRaycast() function.

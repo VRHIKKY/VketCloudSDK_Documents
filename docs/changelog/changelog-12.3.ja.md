@@ -21,7 +21,8 @@
   - [ビルド時のオプション](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldEditingTips/BuildOptions.html)
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/TextureImportViewer.html)
-  - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/VketCloudSDKSettings.html)
+  - [Vket Cloud SDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/VketCloudSDKSettings.html)
+  - [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/SDKTools/AutoTextureCompressor.html)
 - HEOコンポーネント
   - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/HEOComponents/HEOProperty.html)
 - アクションについて
@@ -39,12 +40,12 @@
 
 ## 変更されたページ
 
-- VketCloudSDKについて
+- Vket Cloud SDKについて
   - [動作環境](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/OperatingEnvironment.html)
     - 必須設定としてStandard Shader品質の変更を追加
   - [アカウント準備](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupAccount.html)
     - Vket Cloudアカウント登録手順画像を追加
-  - [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
+  - [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
     - 必須設定としてStandard Shader品質の変更を追加
 - ワールド制作の基本
   - [ローカル環境でのビルドと実行](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/FirstStep/BuildAndRun.html)
@@ -153,7 +154,7 @@ Ver12.xにて追加されたHeliScriptへの変更を追記：
     - 厳密等価と厳密非等価演算子を追加
 - トラブルシューティング
   - [バージョンアップ後によくあるトラブル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/troubleshooting/VersionUpdateTroubleshooting.html)
-    - メニューにてVketCloudSDKタブが表示されない際の解決策を追加
+    - メニューにてVket Cloud SDKタブが表示されない際の解決策を追加
     - HEOWorldSettingなどの設定がVketCloudSettingsに反映されない / 空欄になる場合の解決策を追加  
   - [UnityとVketCloudの見た目を揃える](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/heoexporter/he_align_unity_to_vketcloud.html)
     - 細かな整形と修正を追加

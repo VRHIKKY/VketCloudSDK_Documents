@@ -1,5 +1,5 @@
 
-# Control structure
+# Control Statement
 
 Describes control constructs such as conditional branching and repetition.
 
@@ -46,7 +46,7 @@ while (true) {
 
 By writing `for (initialization; conditional expression; iterator) { }`, the following process will occur.
 
-1. Initialize and
+1. Initialize variable,
 2. If the result of evaluating the conditional expression is *true*, execute the processing within *{}*.
 3. After processing the iterator,
 4. Check the conditional expression again, and if it is *true*, return to 2. and repeat the process
@@ -59,6 +59,45 @@ for (i = 0; i < 100; ++i) {
      // repeat this process 100 times
      hsSystemOutput("%d\n" %i);
 }
+```
+
+## Exiting Loops (break, continue)
+
+Using *break* or *continue*, you can control execution of loop process.
+
+### break
+
+*break* allows you to exit the loop in the middle of its execution.
+
+```csharp
+
+int i = 0;
+// This loop will continue indefinitely since the condition is always true, unless explicitly exited with break.
+while (true) {
+    if (i >= 100) {
+        // Forcefully exit the loop with break.
+        break;
+    }
+    ++i;
+}
+
+```
+
+### continue
+
+*continue* allows you to skip the remaining loop process and move on to the next iteration.
+
+```csharp
+
+// This loop displays the value of i 100 times.
+for (int i = 0; i < 100; ++i) {
+    if (i == 5) {
+        // However, when i equals 5, continue skips the rest of the loop, so nothing is displayed.
+        continue;
+    }
+    hsSystemWriteLine("i=%d" % i);
+}
+
 ```
 
 ## switch - Concise description of many branch conditions
@@ -93,5 +132,69 @@ switch (id) {
      default:
          message = "restricted user";
          break;
+}
+```
+
+??? warning "In functions with a return value, you must return outside the scope of the switch statement"
+    ```
+    string GetStatus(int status){
+        switch (status)
+        {
+            case 0:
+                return "off";
+            default:
+                return "on";
+        }
+        return "on"; // This statement is required even if there is a default clause
+    }
+    ```
+
+??? warning "Constants from other classes cannot be used as branch conditions"
+    Constants defined in the global scope or within the same class can be used.
+    ```
+    const int GlobalConstant = 0;
+
+    class ClassConstant
+    {
+        public const int Value = 1;
+    }
+
+    class NewComponent
+    {
+        const int MyConstant = 2;
+
+        public NewComponent()
+        {
+            int id = 2;
+            ClassConstant OtherClassConstant = new ClassConstant();
+
+            switch (id)
+            {
+                case GlobalConstant: // OK
+                    break;
+                case OtherClassConstant.Value: //NG: Compilation error will occur
+                    break;
+                case MyConstant: // OK
+                    break;
+            }
+        }
+    }
+    ```
+
+## { } - Block-Based Scope
+Within a method, *{ }* can be used to define scope.
+
+```
+public void example() {
+    int x = 10;
+    { 
+        int y = 20;
+    }
+
+    // -> "x:10"
+    hsSystemOutput("x: %d" % x);
+
+    // Error because y is out of scope
+    hsSystemOutput("y: %d" % y); 
 }
 ```

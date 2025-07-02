@@ -17,6 +17,32 @@ For details, please refer to the [specification limit](../WorldMakingGuide/Unity
 | Z-bias | 0 | Higher z value will make the image show in front of other objects. |
 | Double Side | false | Enable/Disable display on double sides |
 
+???+ note "Available methods for this object type"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [GetScale](../hs/hs_class_item.md#getscale)
+    - [SetScale](../hs/hs_class_item.md#setscale)
+    - [SetShow](../hs/hs_class_item.md#setshow)
+    - [IsShow](../hs/hs_class_item.md#isshow)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [PlayVideo](../hs/hs_class_item.md#playvideo)
+    - [StopVideo](../hs/hs_class_item.md#stopvideo)
+    - [IsPlayVideo](../hs/hs_class_item.md#isplayvideo)
+    - [ReplaceItem](../hs/hs_class_item.md#replacetexture)
+    - [ReplaceTexture](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ### Advanced Settings
 
 | Label | Function |
@@ -27,7 +53,7 @@ For details, please refer to the [specification limit](../WorldMakingGuide/Unity
 | Show Photo Mode | Toggles display/hide when in photo mode |
 | Overrides | On Entering the world, the `Material` and `Texture` set in the Overrides will be used instead of textures set in VKC Item Plane. |
 
-!!! note caution
+!!! warning "caution"
     The Overrides property is currently under progress.<br>
     Further usage are to be added by future updates.
 

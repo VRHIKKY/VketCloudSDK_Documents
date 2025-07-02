@@ -25,22 +25,22 @@ VKC Node MirrorはQuadを使用して鏡のような挙動を再現するため�
 Create > 3D ObjectからQuadを作成します。<br>
 VKC Node Mirrorはノードに分類されるので、Quadは[VKC Item Field](VKCItemField.md)がアタッチされたオブジェクトの子オブジェクトである必要があります。
 
-2\. Textureを用意し、マテリアルの作成
+2\. Textureを用意
+
+![HEOMirror_14](img/HEOMirror_14.jpg)
 
 縦横サイズが2のべき乗のTextureを用意します。<br>
-今回は、1024×1024の画像を使用しています。正方形である必要はありません。
-
-Textureを用意したら、新しいマテリアルを作ります。
-
-![HEOMirror_5](img/HEOMirror_5.jpg)
-
-Shaderは画像を入れることが出来たらUnlit/Textureでなくても動作します。
+今回は、256×256の画像を使用しています。正方形である必要はありません。
 
 3\. 鏡にしたいQuadにVKC Node Mirrorをアタッチ
 
 ![HEOMirror_6](img/HEOMirror_6.jpg)
 
-QuadにVKC Node Mirrorをアタッチします。Enable Mirrorはチェックを入れたままにします。
+QuadにVKC Node Mirrorをアタッチします。Enableはチェックを入れたままにします。ScenePreviewのチェックは外します。
+
+4\. Textureをアタッチ
+
+![HEOMirror_15](img/HEOMirror_15.jpg)
 
 この状態でビルドすることで、該当のオブジェクトがMirrorになります。
 
@@ -83,6 +83,10 @@ VKC Node MirrorをアタッチしたオブジェクトはVKC Node Mirrorに映�
 
 ![HEOMirror_13](img/HEOMirror_13.jpg)
 
-!!! caution "Mirrorを設置した際の負荷について"
+!!! warning "Mirrorを設置した際の負荷について"
     スマートフォンにて鏡を多重に設置する・鏡の視界内で動画の再生を始めるなどを行うと、動作が不安定になる可能性があります。
     鏡の設置の際は負荷についてご留意ください。
+
+!!! warning "14.xの不具合"
+    鏡のQuadのMaterialにStandardやAutodesk Interactiveを設定し、0.0, 180.0, 0.0のRotationなどにすると鏡として機能しない不具合が確認されています。
+    修正を予定しておりますが発生した場合は対応としてはUnlit/Textureに変更をお願いいたします。

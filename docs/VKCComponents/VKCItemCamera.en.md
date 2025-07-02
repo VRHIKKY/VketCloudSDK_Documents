@@ -6,10 +6,40 @@ VKC Item Camera is used to switch camera controls for visual purposes.<br>
 Using this component, camera can be switched in occasions such as event cut scenes, special camera works, and more purposes.<br>
 Switching camera will be done by HeliScript as explained later.
 
-| Label | Default | Function |
+???+ note "Available methods for this object type"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [SetCamera](../hs/hs_class_item.md#setcamera)
+    - [ResetCamera](../hs/hs_class_item.md#resetcamera)
+    - [ReplaceItem](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
+## Settings
+
+| Label | Initial Value | Function |
 | ---- | ---- | ----|
-| Position | 0,0,0 | Stores the camera's global position |
-| Rotation | 0,0,0 | Stores the camera's global rotation |
+| Show | true | Enable this if you want the item to display by default |
+
+### Advanced
+
+| Label | Initial Value | Function |
+| ----   | ---- | ---- |
+| Auto Loading | true | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](VKCItemField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
+| Clickable | false | Toggles acceptance of click input from player |
+| Item Render Priority | 0 | Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
+| Show Photo Mode | true | Toggles display/hide item when in photo mode |
 
 ## Usage
 

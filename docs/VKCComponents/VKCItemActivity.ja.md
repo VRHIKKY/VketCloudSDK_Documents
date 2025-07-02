@@ -5,6 +5,24 @@
 VKC Item Activityはアクティビティを使用する際に設定するコンポーネントです。<br>
 アクティビティとはモデル・スクリプトをひとまとめの[Item](../hs/hs_overview.md#item)として統合し、ワールドへの配置と設定を便利にするための機能です。
 
+???+ note "このオブジェクトタイプを使用可能なItemクラス"
+    - [Equals](../hs/hs_class_item.md#equals)
+    - [GetName](../hs/hs_class_item.md#getname)
+    - [SetPos](../hs/hs_class_item.md#setpos)
+    - [GetPos](../hs/hs_class_item.md#getpos)
+    - [SetQuaternion](../hs/hs_class_item.md#setquaternion)
+    - [GetQuaternion](../hs/hs_class_item.md#getquaternion)
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
+    - [IsLoading](../hs/hs_class_item.md#isloading)
+    - [IsLoaded](../hs/hs_class_item.md#isloaded)
+    - [ReplaceItem](../hs/hs_class_item.md#replaceitem)
+    - [SetProperty](../hs/hs_class_item.md#setproperty)
+    - [GetProperty](../hs/hs_class_item.md#getproperty)
+    - [CallComponentMethod](../hs/hs_class_item.md#callcomponentmethod)
+    - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
+    - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
+
 ## 設定項目
 
 | 名称 | 機能 |
@@ -13,7 +31,7 @@ VKC Item Activityはアクティビティを使用する際に設定するコン
 | .json | アクティビティの情報をまとめたjsonファイルを指定します。|
 | Overrides | 各アクティビティに定義されている設定項目を編集します。 |
 
-!!! caution "Scene Previewについて"
+!!! warning "Scene Previewについて"
     `Scene Preview`を有効にすると、Scene内でアクティビティのプレビュー用オブジェクトが表示され、このオブジェクトの座標・大きさ・角度などを編集することができます。<br>
     この操作による変更はビルド時には**元に戻り**、VKC Item Activityが付いているオブジェクトのTransform値が参照されるためご注意ください。
 
@@ -93,7 +111,7 @@ Vket Cloudのアクティビティはアセットストアにて入手が可能�
 
 ![VKCItemActivity_11](img/VKCItemActivity_11.jpg)
 
-4\. 解凍したanalogclockフォルダーをVketCloudSDKがインストールされているUnityのProjectのアセット内任意のパスに配置してください。
+4\. 解凍したanalogclockフォルダーをVket Cloud SDKがインストールされているUnityのProjectのアセット内任意のパスに配置してください。
 
 ![VKCItemActivity_12](img/VKCItemActivity_12.jpg)
 

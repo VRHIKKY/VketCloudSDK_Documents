@@ -1,10 +1,17 @@
 # HeliScript - Overview
 
-Vket Cloud allows programming using the engine's own script called HeliScript. <br>
+Vket Cloud allows programming using the engine's own programing language called HeliScript. <br>
 Using HeliScript, you can implement more complex gimmicks and behaviors compared to using [Actions](../Actions/ActionsOverview.md).
 
 You can learn about the syntax of HeliScript by reading it in order starting from [Built-in types](./hs_var.md). <br>
 As an example, we will show a basic implementation of displaying "Hello World" on the console.
+
+## About IDE
+
+The recommended IDE is Visual Studio Code. Visual Studio Code is a lightweight and high-function editor that supports HeliScript syntax. <br>
+Download Visual Studio Code from [here](https://code.visualstudio.com/){target=_blank}.
+
+Visual Studio is not recommended as an IDE. When you open and save HeliScript created with Unity Vket Cloud SDK in Visual Studio, it may become ANSI, and you may not be able to build.
 
 ## Example of how to use HeliScript (displaying Hello World on the console)
 
@@ -68,7 +75,7 @@ After completing the code implementation and executing Build And Run, "Hello, Wo
 
 ![hs_overview_5](img/hs_overview_5.jpg)
 
-!!! caution "Troubleshooting Errors"
+!!! warning "Troubleshooting Errors"
     If an error occurs when running a HeliScript during world loading or by trigger, the error will be displayed on the debug log and browser console.<br>
     Please enable the [Debug Mode](../WorldEditingTips/DebugMode.md) to show the debug log.<br>
     As the debug log will be hidden during world loading, please see the [Browser Console](../troubleshooting/BuildError.md#checking-the-error-log) for checking the reason of loading error.
@@ -127,7 +134,7 @@ component example
 }
 ```
 
-!!! caution "Initializing Player objects"
+!!! warning "Initializing Player objects"
     On SDK Ver12.x and later versions, calling Player class functions within the constructor has been disabled. <br>
     In the example above, a bool variable in the Update function is used to obtain the Player instance outside the constructor.
 
@@ -145,7 +152,7 @@ An brief explanation of each concept is as follows.
 ## Player
 
 In Vket Cloud, Player refers to the avatar who operates in the world. <br>
-How the Player behaves is defined in [HEOPlayer](../VKCComponents/HEOPlayer.md).
+How the Player behaves is defined in [VKC Setting Player](../VketCloudSettings/PlayerSettings.md).
 
 For handling Player by HeliScript, please refer to [Player class](./hs_class_player.md).
 

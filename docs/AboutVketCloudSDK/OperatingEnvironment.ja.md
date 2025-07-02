@@ -1,8 +1,11 @@
-# VketCloudSDKの動作環境
+# Vket Cloud SDKの動作環境
 
-VketCloudSDKは、以下のUnity環境が必要です。
+Vket Cloud SDKは、以下のUnity環境が必要です。
 
-- **Unity 2019.4.31f1**
+- **Unity 2019.4.31f1** (SDK13.7.7以前)
+- **Unity 2022.3.6f1** (SDK13.7.7以降)
+
+* SDK13.7.7では両方のバージョンをサポートしています。
 
 該当のUnityをお持ちでない方は[こちら](https://unity.com/releases/editor/archive){target=_blank}より対応バージョンをダウンロードしてください。
 
@@ -11,55 +14,19 @@ VketCloudSDKは、以下のUnity環境が必要です。
 - Windows 10, 64-bit
 - macOS 10.12+.
 
-ならびに、VketCloudSDKでビルドしたワールドに入室する端末スペックは以下を推奨します。
+ならびに、Vket Cloud SDKでビルドしたワールドに入室する端末スペックは以下を推奨します。
 
 - PC: Chrome / Firefox / Safari / Edge等のWebブラウザが使用できるもの。
 - iOS: iPhone X以降、iPhone SE（第2世代）以降
 - Android: Android 11.0以降、RAM 8GB以上（Google Pixelなら Pixel 5以降）
+- IDE: HeliScriptを編集する際、下記の理由によりVisual Studioは非推奨です。Visual Studioと同様の環境で編集を行いたい場合はVisual Studio Codeをご使用ください。
 
----
+!!! warning "Note"
+    Visual Studioを使用してUnityプロジェクト内にVket Cloud SDKが作成したHeliScriptファイルを開き、編集を保存すると、エンコードがANSIに変換されてビルドが出来なくなってしまう場合があります。<br>
+    以下にUntiyから開くエディターをVisual Studio Codeに変更する方法を記載しますので、参考にしてください。
 
-!!! note warning
-    以下の項目は、SDKが自動で設定しますが、稀に設定が無効化されてしまう場合があります。
-    その場合、手動で設定しなおしてください。
-
-    **API Compatibility Level (API互換性レベル)の変更**
-
-    1. UnityのメニューバーのEditからProject Settings...をクリックしてください。  
-
-    2. Project Settingsウインドウが表示されたら、一覧からPlayerをクリックしてください。
-
-    3. Project設定中にあるConfigurationを確認し、API Compatibility Levelの項目をプルダウンメニューから「.NET 4.x」に変更してください。
-
-    ![ApiCompatibilityLevelSetting](img/ApiCompatibilityLevelSetting.jpg)
-
-    **LightMapEncodingの変更**
-
-    上記と同じくPC設定内のOther Settingsにある、Lightmap Encodingの項目をプルダウンメニューからNormal Qualityに変更してください。
-
-    ![LightMapEncoding](img/LightMapEncoding.jpg)
-
-    **Color Spaceの変更**
-    
-    Edit > Project SettingsよりColor SpaceをLinearに変更します。
-    ![linear](img/linear.jpg)
-
-    SDK Ver12.3以降は以下の設定も必須となりました：
-
-    **StandardShaderの設定の変更**
-
-    VketCloudの物理ベースレンダリングは、UnityのMediumレベルのものと同じアルゴリズム(GGX)を使用しているので、設定を揃える必要があります。
-
-    1. 「Edit/ProjectSettings/Graphics」を開く
-
-        ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_1.jpg)
-
-        ![OpenGraphics.jpg](../heoexporter/he_image/OpenGraphics_2.jpg)
-
-    2. 「Tier Settings」のLow、Medium、Highそれぞれの「Use Defaults」のチェックを外す
-
-        ![TierSettings.jpg](../heoexporter/he_image/TierSettings.jpg)
-
-    3. 「Tier Settings」のLow、Medium、Highそれぞれの「Standard Shader Quality」をすべて「Medium」に変更する
-
-        ![StandardShaderQuality.jpg](../heoexporter/he_image/StandardShaderQuality.jpg)
+!!! note "Unity指定エディターをVisual Studio Codeに変更する方法"
+    Unityのメニュー上でEdit>Preferenceから「Preference」ウィンドウを開きます。<br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_01.jpg)<br>
+    「External Tools」タブ内、「External Script Editor」から、「Visual Studio Code」を選択します。<br>
+    ![OperatingEnvironment](./img/OperatingEnvironment_02.jpg)

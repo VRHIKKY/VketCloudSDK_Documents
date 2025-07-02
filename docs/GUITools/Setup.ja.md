@@ -1,16 +1,16 @@
 # GUITools - 概要とセットアップ
 
-VketCloudSDK外の派生ツールとして、Vket Cloudにて制作したワールドにおける （VKC Item Activity用）Activity Canvas GUIを編集・保存を行うためのGUIToolsがあります。<br>
+Vket Cloud SDK外の派生ツールとして、Vket Cloudにて制作したワールドにおける （VKC Item Activity用）Activity Canvas GUIを編集・保存を行うためのGUIToolsがあります。<br>
 ツールとしては大きくGUI ImporterとGUI Exporterに分かれており、ワールド読み込み時にはGUIToolsにて行ったUIへの編集を保存したjsonファイルが参照されます。<br>
 新たにUIを追加した場合はHeliScriptによって操作を定義づける必要があります。詳しくは [応用実装](AdvancedUse.md) および [組み込み関数 - GUI](../hs/hs_system_function_gui.md) をご参照ください。
 
 ## A. 下準備
 
-下準備として、[VketCloudSDKの導入方法](../AboutVketCloudSDK/SetupSDK_external.md)における手順に沿ってUnityプロジェクトのセットアップとVketCloudSDKのインストールを行います。
+下準備として、[Vket Cloud SDKの導入方法](../AboutVketCloudSDK/SetupSDK_external.md)における手順に沿ってUnityプロジェクトのセットアップとVket Cloud SDKのインストールを行います。
 
-!!! caution "環境導入時の注意点"
+!!! warning "環境導入時の注意点"
 
-    - エディターバージョンは2019.4.31f1になっている
+    - エディターバージョンは2019.4.31f1もしくは2022.3.6f1になっている
 
     - 使用するテンプレートは3Dになっている
 

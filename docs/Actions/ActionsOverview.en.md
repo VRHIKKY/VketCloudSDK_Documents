@@ -1,15 +1,17 @@
-
 # About Actions
+
 ![ActionsListSample](img/ActionsListSample.jpg)
 
 Actions are a part of your gimmick.
 By using Actions, you can implement basic gimmicks like:
 
-- Open browser pages
-- Toggle On/Off objects and colliders
-- Play animations and audios ...etc.
+- [Open Links in New Tab](./Web/Openweb.md)
+- [Show/Hide Object](./Object/ShowHideObject.md)
+- [Enable/Disable Collider](./Node/EnableDisableCollider.md)
+- Play [Motion](./Motion/Motion.md)
+- [Play/Stop Item](./Item/PlayStopItem.md) such as Audio, Particle ...etc
 
-!!! Note Info
+!!! info "caution"
     Keep in mind these points when setting up your Actions:
 
     - Actions are executed in order from the top

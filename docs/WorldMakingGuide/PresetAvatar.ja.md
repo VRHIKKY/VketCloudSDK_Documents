@@ -2,7 +2,7 @@
 
 ![PresetAvatar_1](img/PresetAvatar_1.jpg)
 
-VketCloudSDKでは、ワールドに入ったユーザーが手持ちのアバター以外に使えるプリセットアバターを設定できます。<br>
+Vket Cloud SDKでは、ワールドに入ったユーザーが手持ちのアバター以外に使えるプリセットアバターを設定できます。<br>
 設定されたアバターは「設定画面」-->「マイページ」-->「アバター」-->「プリセットアバター」にて一覧表示され、ワールドの中でユーザーが自由に着脱することができます。
 
 なお、プリセットアバターを追加するにあたって、追加したいアバターをあらかじめ[vrm形式に変換](https://vrm.dev/vrm/how_to_make_vrm/index.html){target=_blank}する必要があります。<br>
@@ -17,7 +17,7 @@ VketCloudSDKでは、ワールドに入ったユーザーが手持ちのアバ�
 
 ### 2.1 HEOWorldSettingからAvatarFileを新規作成する
 
-VketCloudSDKではAvatarFileというファイルにアバター情報を設定し、ワールドのビルド時にプリセットアバターとして反映します。
+Vket Cloud SDKではAvatarFileというファイルにアバター情報を設定し、ワールドのビルド時にプリセットアバターとして反映します。
 
 ![PresetAvatar_2](./img/PresetAvatar_2.jpg)
 
@@ -26,7 +26,7 @@ VketCloudSDKではAvatarFileというファイルにアバター情報を設定�
 AvatarFileリスト右下の +/- を押すことで、プリセットアバターのリストに項目を追加/削除することができます。<br>
 リストから削除した場合でも、元のAvatarFileのデータが残ります。
 
-!!! caution "DefaultのAvatarFileが編集できる現象について"
+!!! warning "DefaultのAvatarFileが編集できる現象について"
     特定の手順によって、デフォルトで設定されているAvatarFile(`Vketchan_v1.6_Mtoon_blendshape`)の設定が編集できる現象が確認されています。<br>
     デフォルトのアバターを編集するとSDKが意図していない動作を起こす可能性があるため、プリセットアバターを追加する際は必ず新しいAvatarFileを追加してください。<br>
     この時デフォルトのアバターはパッケージによって保護されているため、Unity再起動時には設定がリセットされます。編集はお控えください。

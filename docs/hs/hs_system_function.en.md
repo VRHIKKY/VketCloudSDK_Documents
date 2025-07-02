@@ -1,7 +1,7 @@
 
 # Built-in functions - system
 
-!!! Note Info
+!!! info "Note"
     Functions that enable access to Vket Cloud's underlying system (browser and OS).
 
 ***
@@ -20,7 +20,7 @@ Outputs the string specified by the argument to the console.
 
 Outputs the string specified by the argument to the console, added with a return.
 
-!!! note caution
+!!! warning "caution"
     In the current version, if a string includes an apostrophe / single quote (' ' , U+0027), the process will stop due to error.<br>
     Therefore, please avoid using the quotation within strings.
 
@@ -137,6 +137,12 @@ Converts float value to string.
 `void hsWebOpen(string url)`
 
 Opens the url designated by string.
+
+### hsWebReload
+
+`void hsWebReload()`
+
+Reloads the web page.
 
 ***
 

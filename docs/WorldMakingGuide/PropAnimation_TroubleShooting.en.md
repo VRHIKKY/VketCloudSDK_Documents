@@ -112,7 +112,7 @@ Objects may not be displayed because the shader is unsupported. <br>
 Please try changing it to something like Standard and see if it appears.
 
 !!! note
-        After build, select VketCloudSDK > Tools > Open Release Folder, go to data > Scene, and search for the exported object name in the json file (scene json) to check the exported object information on the scene. <br>
+        After build, select Vket Cloud SDK > Tools > Open Release Folder, go to data > Scene, and search for the exported object name in the json file (scene json) to check the exported object information on the scene. <br>
         If there are no hits after searching, it is not displayed on the scene.
 
 ![PropAnimation_TroubleShooting_10](./img/PropAnimation_TroubleShooting_10.jpg)

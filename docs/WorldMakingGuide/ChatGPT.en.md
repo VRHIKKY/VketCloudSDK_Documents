@@ -1,4 +1,4 @@
-!!! note caution
+!!! warning "caution"
      ChatGPT feature is under development.
 
 VketCloud implements text input interaction with ChatGPT.

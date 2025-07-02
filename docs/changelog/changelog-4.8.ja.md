@@ -15,7 +15,7 @@
 
 - [はじめに](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/index.html)
     - [リリースノート](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/releasenote/releasenote-4.8.html)と[チェンジログ](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/changelog/changelog-4.8.html)についての案内を追加
-- [VketCloudSDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupSDK_external.html)
+- [Vket Cloud SDKの導入方法](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupSDK_external.html)
     - 必須パッケージが自動で入らない場合の案内、バージョン切り替えの方法を追記
 - [アバターの使用方法](https://vrhikky.github.io/VketCloudSDK_Documents/4.8/AboutVketCloudSDK/SetupAvatar.html)
     - アバターの使用方法を現行版に更新

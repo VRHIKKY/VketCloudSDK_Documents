@@ -1,10 +1,16 @@
 # HeliScript概要
 
-Vket Cloudでは、HeliScriptというエンジン独自のスクリプトを使用してプログラミングを行うことができます。<br>
+Vket Cloudでは、HeliScriptというエンジン独自のプログラミング言語を使用してプログラミングを行うことができます。<br>
 HeliScriptを使用すると、[アクション](../Actions/ActionsOverview.md)と比べてより複雑なギミック・挙動を実装できます。
 
 HeliScriptの文法については[基本系](./hs_var.md)から順番に読むことで習得できます。<br>
 また、ここでは以下にてHello Worldを出力する方法を通じて、基本的な実装の例を示します。
+
+## IDEについて
+推奨のIDEはVisual Studio Codeです。Visual Studio Codeは軽量で高機能なエディタであり、HeliScriptの文法に対応しています。<br>
+Visual Studio Codeのインストール方法は[こちら](https://code.visualstudio.com/){target=_blank}からダウンロードしてください。
+
+非推奨のIDEはVisual Studioです。Visual Studioを使用してUnityプロジェクト内にVket Cloud SDKが作成したHeliScriptファイルを開き、編集を保存すると、エンコードがANSIに変換されてビルドが出来なくなってしまう場合があります。
 
 ## HeliScriptの使い方の例 (Hello Worldをコンソールに出力する)
 
@@ -68,7 +74,7 @@ component HelloWorld
 
 ![hs_overview_5](img/hs_overview_5.jpg)
 
-!!! caution "エラーが起きた場合は"
+!!! warning "エラーが起きた場合は"
     HeliScriptがワールドロード中あるいは呼び出しによって実行された際にエラーが起きた場合はデバッグログとブラウザのコンソールに表示されます。<br>
     初期状態ではデバッグログは非表示になっているため、表示するには[デバッグモード](../WorldEditingTips/DebugMode.md)を有効にしてください。<br>
     なお、ワールドロード時にデバッグログは非表示になるため、ロードが停止した際は[ブラウザのコンソール](../troubleshooting/BuildError.md#_4)をご確認ください。
@@ -128,7 +134,7 @@ component example
 }
 ```
 
-!!! caution "Playerオブジェクトの初期化について"
+!!! warning "Playerオブジェクトの初期化について"
     SDK Ver12.x以降より、Playerクラスの関数はコンストラクタでの呼び出しができなくなりました。<br>
     インスタンスの取得を行いたい際は、例として上記のようにフラグとなるbool変数を用意してコンストラクタ以外の関数にて呼び出してください。
 
@@ -146,7 +152,7 @@ Vket Cloud独自の概念として、Player, Item, そしてNodeがあります�
 ## Player
 
 Vket Cloudにおいて、Playerはワールド内の操作主体である自身を指します。<br>
-Playerの振る舞い方は[HEOPlayer](../VKCComponents/HEOPlayer.md)で定義されます。
+Playerの振る舞い方は[VKC Setting Player](../VketCloudSettings/PlayerSettings.md)で定義されます。
 
 PlayerのHeliScriptでの取り扱いは[Playerクラス](./hs_class_player.md)をご参照ください。
 

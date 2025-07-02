@@ -130,6 +130,29 @@ component AreaCollider
 }
 ```
 
+## Callbacks - ItemCollider
+
+By defining the OnItemEnterCollider and OnItemLeaveCollider methods as shown below,they will be called when an Item with this component enters or exits the collider of another Item's internal node.  
+Currently, only box collider collision shapes are supported.  
+
+```
+component CollisionTest
+{
+    public void OnItemEnterCollider(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+        hsSystemOutput("[OnItemEnterCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+    public void OnItemLeaveCollider(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+        hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+}
+```
+
 ## Callback - Unselecting Objects
 
 ### OnUnselectNode
@@ -160,7 +183,7 @@ public void OnResize(int width, int height)
 
 ## Callback - Custom State/Custom Data
 
-A callback method that receives any data sent by the room's manager.
+This is a callback method that receives any data sent from any player in the room.
 
 ```
 component CustomDataReceiver
@@ -192,6 +215,14 @@ component ButtonClickable
      }
 }
 ```
+
+## Callback - GUI Slider
+
+`public void OnSliderRateChanged(string GUIName, float Rate)`
+
+This is a callback method that is invoked when the value of a slider in a GUI element is changed.
+
+The argument `GUIName` receives the name of the slider that was operated, and the argument `Rate` receives the changed slider value as a number between 0 and 1.
 
 ## Callback - physics collision detection
 
@@ -234,7 +265,7 @@ m_PhysicsIDCube;
 
 ## Callback - In-field collider detection
 
-Called when the collider with HEOCollider specified "InView" enters the field of view or goes out of the field of view.
+Called when the collider with [VKC Node Collider](../VKCComponents/VKCNodeCollider.md) specified "In View" enters the field of view or goes out of the field of view.
 
 Components must be set to the same item.
 
@@ -292,3 +323,20 @@ This callback is triggered when the item's property has been changed. if the Val
 ```
 public void OnChangedProperty(string Key, string Value)
 ```
+
+## Callback - Message
+
+```
+public void OnReceiveMessage(HSMessage message)
+```
+
+This will be called when the item receives a message. The argument message contains the received data and sender information.
+
+## Callback - Emote Change
+
+```
+public void OnEmoteChanged(int EmoteIndex)
+```
+
+This callback is invoked when a player's emote is changed (played).  
+`EmoteIndex` contains the index value of the emote that was changed (played).

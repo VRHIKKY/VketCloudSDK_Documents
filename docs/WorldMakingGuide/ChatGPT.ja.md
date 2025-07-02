@@ -1,4 +1,4 @@
-!!! note caution
+!!! warning "caution"
     ChatGPT機能は開発中です。
 
 VketCloudはChatGPTによるテキスト入力対話を実装しています。

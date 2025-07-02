@@ -1,60 +1,95 @@
 # VKC Node Collider
+This is a basic component for colliders that adds collision detection to nodes and can be used in combination with other collider components.  
+A notable feature is that its properties change significantly based on the collider type setting described below.
+
+!!! note "About this guide"
+    This guide explains the basic usage and settings of the VKC Node Collider. For information about other collider components and practical examples, please refer to [How to Use Colliders/Tips](../WorldMakingGuide/Collider.en.md).
+
+## Property List
 
 ![VKCNodeCollider_1](img/VKCNodeCollider_1.jpg)
 
-VKC Node Collider is a component to set what kind of collision detection a collider has on Vket Cloud.
+| Category | Label | Function |
+| ---- | ---- | ---- |
+| Collider | Collider Type | Specifies the type of collider. Details are described below. |
+| | Collider Target | Specifies the target. Details are described below. |
+| Physics | Use Physics | Enables physics calculations for the Box Collider. |
+| | Fixed | Allows you to fix the position of the Box Collider. |
+| | Enable Body | Allows you to choose whether to enable physics when the node is loaded. |
+| | Mass | Adjusts the mass parameter. |
+| | Restitution | Adjusts the restitution (bounciness) parameter. |
+| Extrusion | Allow Cross Over | Specifies whether to allow penetration into the collider. |
+| | Cross Over Rate | The ratio of penetration allowed. Values closer to 0.0 allow for greater penetration. |
+| | Extrusion Speed | Sets the speed at which objects are pushed out when they exceed the allowed penetration ratio. |  
+| | Grounding Detection | Sets ground detection. Ground detection determines whether the upper surface of a collider is ground, and if so, allows objects to stand on it. Details are described below. |
+
+!!! tip "Extrusion adjustment is now available"
+    In SDK 13.0 and later, the behavior of collision extrusion can now be adjusted.
+    For example, you can allow some penetration to pass through gaps (colliders) that would otherwise be impassable due to collision detection, or prevent small nodes from getting in the way when moving.
+
+### Details of Collider Types
+The collider type specified in the properties has the following characteristics:
+
+#### 1. **Collider**
+Adds collision detection to nodes, making it possible to detect contact with other nodes or avatars that also have collision detection.
+It also creates physical collisions, so this type is used for walls that prevent avatar movement and floors for walking.<br>
+<br>
+The avatar's collider collides with the wall's collider, preventing the avatar from moving forward.
+
+![VKCNodeCollider_2](img/VKCNodeCollider_2.gif)
+
+!!! warning "Please use in combination with the Box Collider component"
+    Collision detection will not be added when combined with Unity components other than Box Collider, such as Sphere Collider.
+
+!!! note "Avatars will pass through if set to any other type"
+    Nodes with types other than `Collider` can be moved through by avatars without stopping when touched.
+
+#### 2. **Clickable**
+Making it a clickable target enables detection of mouse cursor clicks.
+Use cases include interactions such as picking up items, opening doors, or displaying UI menus when clicked.
+
+![VKCNodeCollider_3](img/VKCNodeCollider_3.jpg)
+
+#### 3. **Area**
+When you attach the VKCItemAreaCollider component to a GameObject, this type of VKCNodeCollider is also automatically added.<br>
+For more details, please refer to [VKC Item Area Collider](./VKCItemAreaCollider.md).
+
+#### 4. **Occlusion**
+By adding this type of collider to nodes such as walls, rendering of nodes behind that node will be omitted.<br>
+For more details, please refer to [Occlusion Culling](../WorldOptimization/OcclusionCulling.md).
+
+#### 5. **Reflection Probe**
+
+!!! warning
+    Please avoid selecting this type manually. It is currently selectable in the inspector, but it is scheduled to be hidden in future SDK updates.
+
+#### 6. **In View**
+Fires when a node enters or exits the field of view.
+As a use case, for example, you can create enemy characters that don't approach you only when they are in your field of view.<br>
+<br>
+①The red cube has not yet entered the field of view, ②The red cube has entered the field of view, so it fires. ③It doesn't fire because the cube is still in the field of view. ④It fires because the red cube has completely left the field of view.
+
+![VKCNodeCollider_4](img/VKCNodeCollider_4.jpg)
+
+!!! warning "HeliScript must be used"
+    You need to use the HeliScript callback function for detection.
+    For more details, please refer to [Callbacks - Field of View Collider Detection](../hs/hs_component.md).
+
+### Details of Collider Targets
 
 | Label | Function |
 | ---- | ---- |
-| `Collider type` | Specifies the type of collider. |
-| `Collider target` | Specifies the target. |
-| `physics` | Enables physics engine for the Box Collider. |
-| `Fixed` | Fix the position of the Box Collider. |
-| `Enable body` | You can choose whether to enable physics when the object is loaded. |
-| `Mass` | Adjust the weight parameter. |
-| `Restitution` | Adjust the coefficient of restitution. |
-| `Allow Cross Over` | Specifies whether to allow penetration for the collider. |
-| `Cross Over Rate` | The ratio of how much penetration is allowed. The closer to 0.0, the larger the range of penetration. |
-| `Extrusion Speed` | Set the extrusion speed when the penetration ratio exceeds the allowable penetration ratio. |
-| `Grounding Detection` | Set the grounding process. Grounding detection is the process of determining whether the top of the collider is on the ground and the process of riding on it if it is on the ground. |
+| All | Collision targets are not restricted, collides with all colliders. |
+| Avatar Only | Collision targets are restricted to avatars only. Collides only with avatars, not with cameras, etc. |
+| Self Player Only | Collision targets are restricted to only the avatar controlled by yourself. Does not collide with avatars controlled by other players.  |
 
-!!! note "About Extrusion"
-    The function of VKC Node Collider added in SDK13.0 that allows you to adjust the behavior of the extrusion process of collision detection.
-    For example, you can allow a certain amount of penetration through a gap (collider) that cannot be passed through in the collision detection, or prevent small objects from interfering with movement.
+!!! warning "caution"
+    The collider target setting functions only when the collider type is set to `Collider`.
 
-## Collider type
-
-| Type | Function |
-| ---- | ---- |
-| `Collider` | Plays the role of a collider. |
-| `Clickable` | Allows players to click. |
-| `Area` | A collider that can be passed through. By combining with [VKC Item Area Collider](./VKCItemAreaCollider.md), you can set any action when the player get inside the area. |
-| `Occlusion` | Enable occlusion on contact. <br> For instructions, please refer to [Occlusion Culling](../WorldOptimization/OcclusionCulling.md).  |
-| `Reflection Probe` | Enable reflection probes on touch. |
-| `in View` | Handled when you want to judge whether or not the object entered the field of view |
-
-!!! note caution
-    If collider type is set to other than `Collider` (i.e. Clickable, Area, Occlusion, Reflection Probe, inView), the player will not collide with the collider.
-
-## Collider target
-
-| Target | Function |
-| ---- | ---- |
-| `All` | Does not restrict the collision detection. |
-| `Avatar Only` | Collision detection is enabled only for avatars. |
-| `Self Player Only` | Collision detection is enabled only for the player themselves. |
-
-## Grounding Detection
+### Details of Ground Detection
 
 | Label | Function |
 | ---- | ---- |
-| `Auto` | Automatically detects based on the collider size. Small sizes are disabled, and medium and large sizes are enabled. |
-| `Enable` | Grounding detection enabled |
-| `Disable` | Grounding detection disabled |
-
-## About collision / area range detection by collider
-
-The collision / area range detection by collider will be done by obtaining the player's lower body position as the orange circle shown below.<br>
-Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md#f3-display-collision) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
-
-![HEOCollider_2](img/HEOCollider_2.jpg)
+| Auto | Automatically determined by collider size. Disabled for small sizes, enabled for medium and large sizes. |
+| Enable | Ground detection enabled |
+| Disable | Ground detection disabled |

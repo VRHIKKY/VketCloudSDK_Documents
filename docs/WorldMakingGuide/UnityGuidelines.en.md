@@ -14,11 +14,9 @@ On Vket Cloud, textures fitting the format below can be used:
 - Power-of-two sized squares (2048x2048, 1024x1024, 512x512, etc.) or power-of-two sized rectangles
 - Bit depth is 24bit or 32bit
 - 80MB or less in png
-- Make the extension lowercase (.png). If it is ".PNG", an error may occur when uploading to the server.
-
 As a conversion tool, the SDK has [Export Compressed Texture](../SDKTools/ExportCompressedTexture.md) for use.
 
-!!! caution "Using Sprite Renderer"
+!!! warning "Using Sprite Renderer"
     On Vket Cloud, the Unity [Sprite Renderer](https://docs.unity3d.com/2019.4/Manual/class-SpriteRenderer.html){target=_blank} cannot be used.
 
 ## Texture Compression
@@ -36,7 +34,7 @@ To express light intensity, multiply the `Directional Light`'s color by using th
 
 ![Rendering_2](../VKCComponents/img/HEOWorldSetting_Rendering_2.jpg)
 
-!!! caution "Using Realtime Lights"
+!!! warning "Using Realtime Lights"
     Vket Cloud disallows use of Realtime Mode lights. Please switch to Mixed or Baked.
 
 ## Lightmap
@@ -46,7 +44,7 @@ To express light intensity, multiply the `Directional Light`'s color by using th
 - Real-time global illumination is not supported, so please use lightmaps. Most discrepancies between what looks in Unity window and Vket Cloud are caused by Global Illumination settings.
 - Check if Color Space in Other Settings is set to "Linear"
 
-The VketCloudSDK recommends to set the environment settings as above.<br>
+The Vket Cloud SDK recommends to set the environment settings as above.<br>
 For details, refer to [Operating Environment](../AboutVketCloudSDK/OperatingEnvironment.md).
 
 ![UnityGuidelines_1](./img/UnityGuidelines_1.jpg)
@@ -67,10 +65,14 @@ For details, refer to [Operating Environment](../AboutVketCloudSDK/OperatingEnvi
 - MToon
 - Unlit
 - UnlitWF (supports double-sided display only)
-- VketChanDoubleSided Shaders contained in the VketCloudSDK
+- VketChanDoubleSided Shaders contained in the Vket Cloud SDK
 
 !!! note
      Metallic textures from Autodesk Interactive cannot be used due to the number of texture slots. Use the Standard Shader when using a combination of metallic and roughness textures.
+
+!!! note "Shader Availability"
+    On Vket Cloud SDK, shaders are available with exceptions in each settings.<br>
+    For details, please see [Shader Availability](ShaderAvailability.md).
 
 ## Collider
 
@@ -107,7 +109,49 @@ For instructions on each setup and usage, refer to the pages below.
 
 2. [Adding Preset Avatars](../WorldMakingGuide/PresetAvatar.md)
 
-!!! caution "Issue enabling edit on Default AvatarFile"
+!!! warning "Issue enabling edit on Default AvatarFile"
     Following a certain procedure, the issue causing the default AvatarFile(`Vketchan_v1.6_Mtoon_blendshape`) to be editable may be triggered.<br>
     As editing the default avatar may cause unexpected performance, please create a new AvatarFile on adding a new preset avatar.<br>
     As the default avatar is protected by the package, the editing will be resetted on restarting the Unity editor. Therefore, please refrain from editing the default avatar.
+
+## Audio File Formats
+
+When using audio files, please follow the formats listed below.
+
+| Name | Details |
+| ---- | ---- |
+| File format | mp3 |
+| Sampling rate | 44100 Hz |
+| Bit rate | 160 kbps |
+
+!!! warning "caution"
+    There are a few important points to note regarding BGM:
+
+    - When playing videos, the audio from the video will take priority.
+    - BGM does not support distance attenuation.
+
+## Video File Formats
+
+When using video files, please follow the formats listed below.
+
+| Name | Details |
+| ---- | ---- |
+| File format | .mp4 |
+| Resolution | 1280x720 H.264 |
+| AAC | 44.1kHz |
+| Frame rate | 29.97 or 30 |
+| Profile level | 4.1, AAC 44.1kHz, yuv420 |
+
+## HeliScript Files
+
+When creating or editing HeliScript files (.hs files), please note the following:
+
+!!! warning "Line Endings"
+    HeliScript files (.hs files) must use only LF (Line Feed) line endings.<br>
+    Using CRLF (Carriage Return + Line Feed) line endings will cause read errors on the heliodor side during build.
+
+## VKC Item Text Plane Text
+
+When inputting text into the VKC Item Text Plane, please be aware of the following:
+
+If you input any characters other than the newline character "\n" (such as tab "\t", carriage return "\r", or backspace "\b") into the text, it will result in a build error.

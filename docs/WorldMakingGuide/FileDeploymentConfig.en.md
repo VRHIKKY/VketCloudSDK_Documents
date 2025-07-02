@@ -26,7 +26,7 @@ When committing `Upload to Remote Server`, the included files and folders will b
 
 ## How to Use
 
-1. On the Project window, open the right click menu and select Create > VketCloudSDK > File Deployment Config.
+1. On the Project window, open the right click menu and select Create > Vket Cloud SDK > File Deployment Config.
 
     ![FileDeploymentConfig](img/filedeploymentconfig_01.jpg)
 

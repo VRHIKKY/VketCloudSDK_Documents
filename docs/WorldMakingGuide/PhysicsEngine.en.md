@@ -4,7 +4,7 @@ In Vket Cloud, collision and physics can be simulated by using Unity colliders a
 
 ## How to Use Colliders
 
-!!! note info
+!!! info "Note"
     This article has moved to [How to Use Colliders / tips](./Collider.md).
 
 ## How to Use the Physics Engine
@@ -14,14 +14,16 @@ Unity colliders that can be used for physics simulation are "Box Collider", "Sph
 
 Furthermore, by attaching an additional "VKC Node Cylinder Collider" to a game object with a "Capsule Collider" as mentioned later, it can be used as a cylinder collider exclusively in the Vket Cloud physics engine.
 
-![PhysicsEngine](img/PhysicsEngine.jpg)
+![PhysicsEngine](img/PhysicsEngine_1.jpg)
 
 2\. Set the properties of the HEO Node Collider/Physics item.<br>
-While each property is explained below, basically enabling  `Use Physics Engine` on [HEOWorldSettings](../VKCComponents/HEOWorldSetting.md#_1) and enabling `UsePhysics` on each collider component will enable the gameobject to simulate their physics.
+While each property is explained below, basically enabling  `Use Physics Engine` on [BasicSettings](../VketCloudSettings/BasicSettings.md) and enabling `UsePhysics` on each collider component will enable the gameobject to simulate their physics.
+
+![PhysicsEngine](img/PhysicsEngine_2.jpg)
 
 ### Brief Overview of HEO Node Collider/Physics properties
 
-![PhysicsEngine](img/PhysicsEngineCollider.jpg)
+![PhysicsEngine](img/PhysicsEngine_3.jpg)
 
 | Label | Function |
 | ---- | ---- |
@@ -56,8 +58,8 @@ Also, for usage of physics and colliders on HeliScript, refer to the following p
 
 Normally in Unity there is no cylinder collider, and it is substituted by a capsule collider, but in VketCloud, as shown in the image below, by attaching an additional "VKC Node Cylinder Collider" to an object with a "Capsule Collider", you can use it as a cylinder collider exclusively in the VketCloud physics engine.
 
-![PhysicsEngine](img/PhysicsEngineCylinderCollider.jpg)
+![PhysicsEngine](img/PhysicsEngine_4.jpg)
 
-!!! Notes Info
+!!! info "Notes"
     - Due to the implementation of collision detection in the physics engine, capsule colliders and cylinder colliders, and cylinder colliders and cylinder colliders do not collide.
     - When using a cylinder collider, thin colliders like Plane may penetrate, so you need to use a box for the ground.

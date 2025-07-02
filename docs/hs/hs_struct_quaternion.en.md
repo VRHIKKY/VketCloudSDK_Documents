@@ -1,6 +1,6 @@
 # Quaternion class
 
-!!! Note Info
+!!! info "Note"
      A class that represents the four elements x, y, z, and w of a quaternion.
 
 ***
@@ -54,6 +54,25 @@ global function. Returns the quaternion rotated by rotateRadian around the z-axi
 `Quaternion makeQuaternionEuler(float x, float y, float z)`
 
 global function. Generates a quaternion from the triplet of Euler angles x, y, z.
+
+!!! warning "Matching Unity's Euler Angles with Visual Appearance"
+    In Unity, Euler angle rotations are performed in the order of Z-axis, X-axis, and Y-axis.<br>
+    Since this order differs from the Vket Cloud engine, please refer to the code below to match Unity's settings with the visual appearance.
+
+    ??? quote "Code Sample"
+        ```
+        Quaternion CreateQuaternionEuler(float x, float y, float z)
+        {
+            Quaternion XRot = makeQuaternionXRotation(hsMathDegToRad(x));
+            Quaternion YRot = makeQuaternionYRotation(hsMathDegToRad(y));
+            Quaternion ZRot = makeQuaternionZRotation(hsMathDegToRad(z));
+
+            Quaternion YXRot = makeQuaternionMul(YRot, XRot);
+            Quaternion YXZRot = makeQuaternionMul(YXRot, ZRot);
+
+            return YXZRot;
+        }
+        ```
 
 ### makeQuaternionFromTo
 
@@ -110,3 +129,33 @@ The w component of the quaternion.
 `public Matrix GetMatrix()`
 
 Returns the quaternion as a 4x4 matrix.
+
+### Set
+
+`public void Set(float x, float y, float z, float w)`
+
+Sets the quaternion with the four elements x, y, z, and w.
+
+### SetEuler
+
+`public void SetEuler(float x, float y, float z)`
+
+Sets the quaternion with the Euler angles (degrees) x, y, and z.
+
+### SetEulerVector3
+
+`public void SetEulerVector3(Vector3 angles)`
+
+Sets the quaternion with the Euler angles (degrees) x, y, and z as a Vector3.
+
+### GetEuler
+
+`public void GetEuler(ref float x, ref float y, ref float z)`
+
+Gets the Euler angles (degrees) from the quaternion as the arguments x, y, and z.
+
+### GetEulerVector3
+
+`public Vector3 GetEulerVector3()`
+
+Gets the Euler angles (degrees) from the quaternion as a Vector3.

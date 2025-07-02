@@ -2,13 +2,13 @@
 
 ブローカーAPIとは、Vket Cloudにおいて外部APIとの連携を行う際、該当のAPIをホワイトリストに登録した上で通信を行うためのAPIです。
 
-!!! caution "APIの実装予定について"
+!!! warning "APIの実装予定について"
     SDK Ver12.3.4現在、ブローカーAPIはGETにのみ対応しております。<br>
     今後のアップデートによってPOST, PUT, DELETEなどに対応する予定です。
 
 ## 使い方
 
-!!! caution "外部API連携機能の公開について"
+!!! warning "外部API連携機能の公開について"
     外部API連携機能は現在Vket Cloud開発者コミュニティにおいて公開テストとして開放されております。<br>
     当機能をお使いになりたい場合は[Vket CloudコミュニティDiscord](https://discord.com/invite/vsFDNTKdNZ){target=_blank}にご参加の上、[ロール取得チャンネル](https://discord.com/channels/900943744575103017/1178589689393975317){target=_blank}にて**開発コミュニティ**ロールをご取得ください。<br>
     開発者コミュニティにご参加いただくと、APIをホワイトリストに入れる手順のほか、最新の更新情報などが受け取れるようになります。ぜひご参加ください！
@@ -44,7 +44,7 @@ API名は識別のために任意の名前を付け、URLは使用したいAPI�
 
 ```c#
 delegate void fJsValCallback(JsVal);//コールバック用
-extern api.broker//ブローカーAPIの関数を呼び出すための宣言
+extern heliport.v3.api.broker//ブローカーAPIの関数を呼び出すための宣言
 {
     bool registerAgreement(string url, string spatiumCode, string worldCode, string guestUuid);
     bool connectExternalApi(async fJsValCallback, string method, string url, string spatiumCode, string worldCode, string guestUuid, JsVal data);
@@ -61,7 +61,7 @@ component BrokerAPI
     const string GET_SWITCH_NAME = "Button_Get";//Worldで押すボタンのgameObject名を入れる
     const string API_URL = "https://www.googleapis.com/youtube/v3/search";//アクセス許可に表示するURL兼疎通URL
     const string YOUTUBE_API_KEY = "XXXXXXXXXXXXXXX";//youtube APIのAPIキーを入れる
-    const string SPATIUM_CODE = "Default";//特殊なことをしなければDefault
+    const string SPATIUM_CODE = "default";//特殊なことをしなければdefault
     const string SEARCH_WORD = "VketCloud";//検索するワードを入れる
     const int MAX_RESULTS = 10;//検索結果の数を入れる。1～50
     const string RESULT_ITEM_NAME = "Result";//取得結果を表示するTextPlaneの名前。SDK Ver12.3だとFontSizeを大きくすると文字化けしやすい
@@ -143,14 +143,14 @@ component BrokerAPI
         string guestUuid = "Uuid";
 
         //許可を取ったURLを登録
-        bool result = api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
+        bool result = heliport.v3.api.broker.registerAgreement(url, SPATIUM_CODE, worldID, guestUuid);
         BoolLogOutput("registerAgreement: ",result);//agreementの結果をlogで確認
 
         string method = "get";//HTTPリクエストメソッド。今回はget
         JsVal data = makeJsNull();//connectExternalApiの第7引数用のJsVal。getの場合はnullでよい
 
         //APIに接続。第一引数に指定したメソッドにdataが入って呼ばれる
-        api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
+        heliport.v3.api.broker.connectExternalApi(GetCallback, method, url, SPATIUM_CODE, worldID, guestUuid, data);
     }
     string GetAPIUrl()
     {

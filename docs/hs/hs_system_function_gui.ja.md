@@ -1,6 +1,6 @@
 # 組み込み関数 - GUI
 
-!!! 情報 Info
+!!! info "情報"
     GUI要素を操作するユーティリティー関数。
 
 ***
@@ -12,6 +12,70 @@
 `bool hsCanvasSetLayerShow(string layerName, bool show)`
 
 名前で指定したレイヤーを、true で表示、false で非表示にする。
+
+### hsCanvasSuspendVisibleLayers
+`bool hsCanvasSuspendVisibleLayers()`
+
+現在表示されているすべてのレイヤーを一時的に非表示にします。hsCanvasResumeVisibleLayers()を呼び出すと表示状態を復帰します。<br>
+既にサスペンドしている場合はfalseが返ります。
+
+### hsCanvasResumeVisibleLayers
+`bool hsCanvasResumeVisibleLayers()`
+
+hsCanvasSuspendVisibleLayers()で非表示にしたレイヤーを復帰します。<br>
+サスペンドされていない場合はfalseが返ります。
+
+## hsAddLayer
+`void hsAddLayer(string LayerName, bool IsPortrait, bool IsShow, int Z)`
+Layerを追加します。
+
+## hsSetLayerName
+`void hsSetLayerName(string LayerName, bool IsPortrait, string Name)`
+Layerの名前を変更します。
+
+## hsSetLayerZ
+`void hsSetLayerZ(string LayerName, bool IsPortrait,int Z)`
+LayerのZ値を変更します。
+
+## hsSetLayerProjectName
+`void hsSetLayerProjectName(string LayerName, bool IsPortrait, string ProjectName)`
+LayerのProjectNameを変更します。
+
+## hsSetLayerComponentNameList
+`void hsSetLayerComponentNameList(string LayerName, bool IsPortrait, string ComponentNameList)`
+LayerのComponentNameListを変更します。
+
+## hsSetLayerSpreadMode
+`void hsSetLayerSpreadMode(string LayerName, bool IsPortrait, bool SpreadMode)`
+LayerのSpreadModeを変更します。
+
+## hsSetLayerMask
+`void hsSetLayerMask(string LayerName, bool IsPortrait, string URI, int PosX, int PosY, int SizeX, int SizeY, float PivoX, float PivoY, string Anchor, int Z, float ColorR, float ColorG, float ColorB, float ColorA, bool Show, bool Vertical, bool FreeSlide, int WheelTravel)`
+LayerのMaskを変更します。
+
+## hsSetLayerMaskShow
+`void hsSetLayerMaskShow(string LayerName, bool IsPortrait, bool IsShow)`
+LayerのMaskを表示します。*確認用です。
+
+## hsSetLayerSeekBarVertical
+`void hsSetLayerSeekBarVertical(string LayerName, bool IsPortrait, string Base, string Front, string On, string Off, int BarWidth, int OnSizeX, int OnSizeY, int OffSizeX, int OffSizeY)`
+Layerの縦のSeekBerを変更します。
+
+## hsSetLayerSeekBarHorizontal
+`void hsSetLayerSeekBarHorizontal(string LayerName, bool IsPortrait, string Base, string Front, string On, string Off, int BarWidth, int OnSizeX, int OnSizeY, int OffSizeX, int OffSizeY)`
+Layerの横のSeekBerを変更します。
+
+## hsSetLayerSeekBarRate
+`void hsSetLayerSeekBarRate(string LayerName, bool IsPortrait, float RateX, float RateY)`
+LayerのSeekBerのRateを変更します。
+
+## hsReleaseLayer
+`void hsReleaseLayer(string LayerName, bool IsPortrait)`
+Layerを削除します。
+
+## hsReserveReleaseLayer
+`void hsReserveReleaseLayer(string LayerName, bool IsPortrait)`
+Layerを削除する予定をします。
 
 ### hsCanvasSetGUIShow
 
@@ -36,6 +100,9 @@
 `bool hsCanvasSetGUIText(string LayerName, string GUIName, string Text)`
 
 指定したテキスト要素のテキストを設定する。
+
+!!! warning "テキスト内のカンマ「,」使用について"
+    現在テキスト内にてカンマ「,」を使用すると、テキストが表示されない不具合が発生することを確認しています。カンマ「,」の使用は避けてください。
 
 ### hsCanvasSetGUITextAlignment
 
@@ -63,21 +130,25 @@
 
 ### hsCanvasResetToggleDefault
 
-`bool hsCanvasResetToggleDefault(string name)`
+`bool hsCanvasResetToggleDefault(string toggleName)`
 
-名前で指定したGUI要素をデフォルトの状態にリセットする。
+名前で指定したトグルをデフォルトの状態にリセットする。
 
 ### hsCanvasToggleChange
 
-`bool hsCanvasToggleChange(string name)`
+`bool hsCanvasToggleChange(string toggleName)`
 
-名前で指定したGUI要素の状態を切り替える。
+名前で指定したトグルの状態を切り替える。
 
 ### hsCanvasWorldToScreenPos
 
 `bool hsCanvasWorldToScreenPos(Vector3 WorldPos, ref float ScreenX, ref float ScreenY)`
 
-ワールド座標をスクリーン座標に変換する。視野角外の場合はfalseが返る。
+ワールド座標をスクリーン座標に変換する。 
+
+変換後のスクリーン座標 (ScreenX, ScreenY) は 画面左上を基点 とした座標系で返す。
+
+視野角外の場合は false を返す。
 
 ### hsCanvasIsPortrait
 
@@ -141,6 +212,22 @@ GUIの角度を設定する。
 
 GUIの角度を取得する。
 
+## hsAddGUI
+`void hsAddGUI(string LayerName, bool IsPortrait, int Type, string GuiParam, string TypeParam)`
+GUIを追加する、詳細は以下
+
+## hsReleaseGUI
+`void hsReleaseGUI(string LayerName, bool IsPortrait, string GUIName)`
+GUIを削除する
+
+## hsAddGUIAction
+`void hsAddGUIAction(string LayerName, string GUIName, string Param)`
+GUIにGUIActionを追加する
+
+## hsAddGUIToggle
+`void hsAddGUIToggle(string LayerName, string GUIName, string ToggleName, bool state)`
+GUIにGUIToggleを追加する
+
 ### hsAddGUIImage
 
 `void hsAddGUIImage(string LayerName, bool IsPortrait, 
@@ -152,9 +239,10 @@ imageタイプのGUIを追加する。
 
 ### hsAddGUIButton
 
-`void hsAddGUIImage(string LayerName, bool IsPortrait, 
-    string GUIName, string Platform, string Language, string Portrait, bool Show, int Z, int PosX, int PosY, int SizeX, int SizeY, float PivotX, float PivotY, string Anchor, bool RaycastTarget, float Angle,
-    string URI, int UVAreaX, int UVAreaY, int UVAreaWidth, int UVAreaHeight, int L, int R, int T, int B)`
+`void hsAddGUIButton(string LayerName, bool IsPortrait, 
+string GUIName, string Platform, string Language, string Portrait, bool Show, int Z, int PosX, int PosY, int SizeX, int SizeY, float PivotX, float PivotY, string Anchor, bool RaycastTarget, float Angle,
+string FileName, string OnCursorFileName, string DownFileName, string ClickAreaFileName, int ClickAreaSizeX, int ClickAreaSizeY, float FlickCheckTime, float FlickLengthThreshold,
+int UVAreaX, int UVAreaY, int UVAreaWidth, int UVAreaHeight, int L, int R, int T, int B)`
 
 LayerNameで検索したLayerにIsPortraitで縦か横画面を判定して、
 buttonタイプのGUIを追加する。
@@ -169,3 +257,65 @@ buttonタイプのGUIを追加する。
 
 LayerNameで検索したLayerにIsPortraitで縦か横画面を判定して、
 textタイプのGUIを追加する。
+
+### hsGetTextAreaContentSize()
+
+`void hsGetTextAreaContentSize(string LayerName, string GUIName, ref int width, ref int height)`
+
+GUIのTextの本来のwidthとheigtを取得します。
+
+
+## ウィンドウシステム
+モーダル・モードレスウィンドウを作れるようにする（以降これらの機能をまとめてウィンドウシステムと呼ぶ）
+
+- ウィンドウシステムはレイヤ機能とは独立しており、レイヤを操作することで動作を実現する。
+- ウィンドウシステムはレイヤのZ値の再設定と表示状態の操作はするが、生成削除は行わない。
+- モーダルウィンドウに対し、モードレスウィンドウを子として追加できる
+  - モーダル状態ではそのウィンドウとその子のモードレスウィンドウのみ入力を受け取れる。
+- どのウィンドウもモーダルではない状態に対してもモードレスウィンドウを設定できる。
+- モーダルウィンドウをPushするときに、他のモーダルウィンドウを非表示にするオプションがある(Pop時に再表示される)
+- モーダルウィンドウをPopするときにそのレイヤと子のモードレスウィンドウに設定されたレイヤは非表示状態にされる
+- モーダルウィンドウのトップレベルの変化があった際に(新しいモーダルウィンドウのpush、もしくはトップレベルのモーダルウィンドウのPop)、新しくモーダル状態になったウィンドウはZ値が一番手前に修正される。
+
+```
+hsWindowModalPush(string layerName, bool hideOther);
+```
+指定レイヤをモーダルウィンドウとして最上位にPushする。そのレイヤは表示状態になり、モーダル状態になる。
+hideOther=trueで、モーダル状態中他のモーダルウィンドウと子モードレスウィンドウを非表示にする
+
+```
+hsWindowModalPop();
+```
+最上位のモーダルウィンドウをPopする。モーダル状態は一つ前のモーダルウィンドウに戻る。
+Popされたモーダルウィンドウに設定されていたレイヤは非表示になる。
+Popされたモーダルウィンドウの子モードレスウィンドウは全てRemoveされレイヤは非表示になる。hideOther=trueでpushしていた場合は一時的に非表示されていたウィンドウの表示状態が復帰する。
+
+```
+hsWindowModalPopUntil(string layerName);
+```
+指定レイヤまでモーダルウィンドウをPopする。
+
+```
+hsWindowModelessAdd(string layerName);
+```
+最上位のモーダルウィンドウの子モードレスウィンドウとして指定レイヤを追加する。表示状態は変更しない。
+
+```
+hsWindowModelessRemove(string layerName);
+```
+最上位のモーダルウィンドウの子モードレスウィンドウから指定レイヤを削除する。レイヤは非表示状態になる。
+
+```
+hsWindowModelessShowOnly(string layerName);
+```
+最上位のモーダルウィンドウの子モードレスウィンドウのうち指定レイヤだけ表示状態にし、残りは非表示状態にする。
+
+```
+hsWindowModelessShowAll(bool isShown);
+```
+最上位のモーダルウィンドウの子モードレスウィンドウ全てを表示もしくは非表示状態にする(isShownで表示状態を指定)。
+
+```
+hsWindowClear();
+```
+全てのモーダルウィンドウとその子モードレスウィンドウを削除し、設定したレイヤを非表示状態にする。

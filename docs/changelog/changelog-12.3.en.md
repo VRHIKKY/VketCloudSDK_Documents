@@ -21,7 +21,8 @@
   - [Build Options](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldEditingTips/BuildOptions.html)
 - SDKTools
   - [Texture Import Viewer](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/TextureImportViewer.html)
-  - [VketCloudSDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
+  - [Vket Cloud SDKSettings](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/VketCloudSDKSettings.html)
+　- [Auto Texture Compressor](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/SDKTools/AutoTextureCompressor.html)
 - HEO Components
   - [HEOProperty](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/HEOComponents/HEOProperty.html)
 - Actions
@@ -39,12 +40,12 @@
 
 ## Edited Pages
 
-- About VketCloudSDK
+- About Vket Cloud SDK
   - [Operating Environment](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/OperatingEnvironment.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
-  - [Set up your Account](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/SetupAccount.html) *English version WIP
+  - [Set up your Account](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/AboutVketCloudSDK/SetupAccount.html)
     - Added images of registering the Vket account
-  - [How to install VketCloudSDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
+  - [How to install Vket Cloud SDK](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/AboutVketCloudSDK/SetupSDK_external.html)
     - Added editing Standard Shader Quality as a required setup instruction on install
 - First Steps
   - [Build and Run](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/FirstStep/BuildAndRun.html)
@@ -64,7 +65,7 @@
   - [How to Animate Objects - Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/WorldMakingGuide/PropAnimation_TroubleShooting.html)
     - Revised solution for error caused when meshes without uv2 is handled by MeshRenderer
     - Added caution on allocating multiple animations when committing Export Motion
-  - [アバターファイル](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/AvatarFile.html)
+  - [AvatarFile](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/WorldMakingGuide/AvatarFile.html)
     - Revised the example of bones name
 - SDK Tools
   - [Debug Console](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/debugconsole/debugconsole.html)
@@ -146,7 +147,7 @@ Added information on HeliScript updates on Ver12.x: *English version WIP
     - Added strict equality and strict inequality operators
 - Trouble Shooting
   - [Version Update Troubleshooting](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/troubleshooting/VersionUpdateTroubleshooting.html)
-    - Added solution for VketCloudSDK tab not showing on top menu
+    - Added solution for Vket Cloud SDK tab not showing on top menu
     - Added solution for HEOWorldSetting settings not showing on VketCloudSettings / settings being empty
   - [Unity settings for replicating actual look in Vket Cloud](https://vrhikky.github.io/VketCloudSDK_Documents/12.3/en/heoexporter/he_align_unity_to_vketcloud.html)
     - Fixed minor format issues
