@@ -11664,6 +11664,16 @@
 <li><strong>Attribute 項目</strong>: Item/Node/Object等に、属性を与えるコンポーネント</li>
 <li><strong>Legacy 項目（非推奨）</strong>: 旧バージョンのコンポーネント</li>
 </ul>
+<pre class="mermaid"><code>classDiagram
+    シーン "1" *--&gt; "1" Setting
+    シーン "1" *--&gt; "0..N" Item
+    Item "1" *--&gt; "0..N" Node: type が Field または Object の場合
+    Item "1" o--&gt; "0..N" Attribute
+    Node "1" o--&gt; "0..N" Attribute
+
+    class Item {
+        type
+    }</code></pre>
 <h2 id="setting">Setting 項目</h2>
 <table>
 <thead>

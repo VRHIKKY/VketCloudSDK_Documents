@@ -11664,6 +11664,16 @@
 <li><strong>Attribute Component</strong>: Components that assign attributes to items, nodes, objects, etc.</li>
 <li><strong>Legacy Component (Deprecated)</strong>: Components from older versions.</li>
 </ul>
+<pre class="mermaid"><code>classDiagram
+    Scene "1" *--&gt; "1" Setting
+    Scene "1" *--&gt; "0..N" Item
+    Item "1" *--&gt; "0..N" Node: If type is Field or Object
+    Item "1" o--&gt; "0..N" Attribute
+    Node "1" o--&gt; "0..N" Attribute
+
+    class Item {
+        type
+    }</code></pre>
 <h2 id="setting-components">Setting Components</h2>
 <table>
 <thead>
