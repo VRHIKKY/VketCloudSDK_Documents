@@ -35,6 +35,12 @@ Vket Cloudがデバッグモードで動作している場合は true を返す�
 
 アプリがモバイルデバイスで実行されている場合は true を返す。
 
+### hsGetSDKVersion
+
+`string hsGetSDKVersion()`
+
+VketCloudSDKの現在のバージョン文字列を返す。
+
 ### hsSystemGetTime
 
 `int hsSystemGetTime()`
@@ -91,19 +97,75 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 
 ワールドIDを取得する。
 
+***
+
+## トースト通知
+
 ### hsSendToastNotice
 
-`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`
+`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`  
 
-画面右端から登場アニメーション付きでメッセージを通知します。
+画面右端から登場アニメーション付きでメッセージを通知します。  
+最大5件表示で、5件表示された状態でさらに通知を追加すると内部で保持し、  
+表示枠に空きが出来たら追加します。  
 
-最大5件表示で、5件表示された状態でさらに通知を追加すると内部で保持し、表示枠に空きが出来たら追加します。
+また、エラー通知以外はクリックをすると残り表示秒数に関係なく消すことが可能です。
 
-**引数:**
-- `noticeTypeID`: 通知タイプID
-- `message`: 表示するメッセージ
-- `viewTime`: 表示時間（秒）
-- `identifyKey`: 識別キー
+#### noticeTypeID (int)  
+通知するメッセージ種類のID。  IDとアイコンの対応は以下の通り。
+|ID|TYPE|
+|---|---|
+|00|INFO|
+|10|WARNING|
+|20|ERROR|
+|nn|INFO (規定外はすべてINFOにされます)|
+
+#### viewTime (float)  
+通知が画面で表示される時間を設定できます。  
+1 = 1秒で、登場/退場アニメーション時間はこの秒数に含まれません。（それぞれ0.5秒）  
+
+#### identifyKey (string)  
+ユーザーが任意で埋め込める識別キー。  
+
+トースト通知がクリックされた/時間超過で消えた時に発火されるLocalイベント`OnReceiveLocalData(string key, string data)`に識別タグとして使えます。  
+
+`string key`は固定で`"toast"`の文字列が入っています。  
+`string data`に発火した通知情報が文字列として入っています。  
+
+#### ● dataに格納されている情報  
+```json
+{
+  "noticeTypeID" : "通知種類のID",
+  "identifyKey" : "ユーザーが`identifyKey`で決めた識別用文字列",
+  "message": "通知で表示していたメッセージ",
+  "sendAction": "このデータが送信されたタイミング"
+}
+```
+#### ● sendActionの送信タイミング
+| sendAction | 値 |
+| --- | --- | 
+| OnClick | ユーザーがトーストをクリックした |
+| ViewTimeOver | viewTimeで設定した時間を超えた場合 |
+| OnForceQuit | トースト通知をクリックして消した場合(InfoとWarningのみ) |
+
+
+#### ● サンプルコード
+```cs
+// サンプル
+// localDataを受け取る窓口
+public void OnReceiveLocalData(string key, string data){
+    if(key != "toast") { return; }
+    string identifyKey = GetNoticeIdentifyKey(data);
+
+    hsSystemWriteLine("トースト通知 識別キー : %s" % identifyKey);
+}
+
+// localDataで届いたstring型のJson形式データから、識別キーを抜き出す
+private string GetNoticeIdentifyKey(string data){
+    JsVal toastData = makeJsValFromJson(data);
+    return toastData.GetProperty("identifyKey").GetStr();
+}
+```
 
 ***
 

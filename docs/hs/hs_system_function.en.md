@@ -36,6 +36,12 @@ Returns true if Vket Cloud is running in debug mode.
 
 Returns true if Vket Cloud is running in a mobile device.
 
+### hsGetSDKVersion
+
+`string hsGetSDKVersion()`
+
+Returns the current version string of VketCloudSDK.
+
 ### hsSystemGetTime
 
 `int hsSystemGetTime()`
@@ -92,19 +98,74 @@ Returns the offset of local timezone and UTC timezone by minutes.
 
 Returns the current world ID.
 
+***
+
+## Toast Notification
+
 ### hsSendToastNotice
 
-`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`
+`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`  
 
-Displays a notification message with slide-in animation from the right edge of the screen.
+Displays a notification message with slide-in animation from the right edge of the screen.  
+Maximum 5 notifications can be displayed simultaneously. When additional notifications are sent while 5 are already displayed, they are queued internally and will be shown when display slots become available.  
 
-Maximum 5 notifications can be displayed simultaneously. When additional notifications are sent while 5 are already displayed, they are queued internally and will be shown when display slots become available.
+Non-error notifications can be dismissed by clicking, regardless of remaining display time.
 
-**Arguments:**
-- `noticeTypeID`: Notification type ID
-- `message`: Message to display
-- `viewTime`: Display duration in seconds
-- `identifyKey`: Identification key
+#### noticeTypeID (int)  
+Notification message type ID. The correspondence between ID and icon is as follows:
+|ID|TYPE|
+|---|---|
+|00|INFO|
+|10|WARNING|
+|20|ERROR|
+|nn|INFO (all non-standard values default to INFO)|
+
+#### viewTime (float)  
+Sets the time the notification is displayed on screen.  
+1 = 1 second, entry/exit animation time is not included in this duration. (0.5 seconds each)  
+
+#### identifyKey (string)  
+Identification key that users can embed arbitrarily.  
+
+When a toast notification is clicked or dismissed after timeout, it triggers a Local event `OnReceiveLocalData(string key, string data)` that can use this as an identification tag.  
+
+`string key` is fixed as the string `"toast"`  
+`string data` contains the notification information as a string.  
+
+#### ● Information stored in data  
+```json
+{
+  "noticeTypeID" : "notification type ID",
+  "identifyKey" : "identification string set by user in `identifyKey`",
+  "message": "message displayed in notification",
+  "sendAction": "timing when this data was sent"
+}
+```
+#### ● sendAction timing
+| sendAction | Value |
+| --- | --- | 
+| OnClick | User clicked the toast |
+| ViewTimeOver | When the time set in viewTime is exceeded |
+| OnForceQuit | When toast notification is clicked and dismissed (Info and Warning only) |
+
+
+#### ● Sample Code
+```cs
+// Sample
+// Handler for receiving localData
+public void OnReceiveLocalData(string key, string data){
+    if(key != "toast") { return; }
+    string identifyKey = GetNoticeIdentifyKey(data);
+
+    hsSystemWriteLine("Toast notification identify key : %s" % identifyKey);
+}
+
+// Extract identification key from string JSON format data received via localData
+private string GetNoticeIdentifyKey(string data){
+    JsVal toastData = makeJsValFromJson(data);
+    return toastData.GetProperty("identifyKey").GetStr();
+}
+```
 
 ***
 
