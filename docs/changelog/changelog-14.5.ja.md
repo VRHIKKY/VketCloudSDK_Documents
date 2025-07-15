@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年7月15日更新
+
+## 2025年7月15日 - 追加されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [ローカルデータ](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_localdata.html)
+            - hsSendLocalData関数とOnReceiveLocalDataコールバックの説明を追加
+
+---
+
 ## 2025年6月11日更新
 
 ## 2025年6月11日 - 追加されたページ
