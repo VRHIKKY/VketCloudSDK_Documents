@@ -1,5 +1,18 @@
 # SDK Manual Change Log - Ver 14.5
 
+## Updated July 15, 2025
+
+## July 15, 2025 - Edited Pages
+
+- HeliScript
+    - Built-in Functions
+        - [System Functions](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function.html)
+            - Added hsSendToastNotice function
+            - Explained functionality for displaying slide-in notifications at the right edge of the screen
+            - Described simultaneous display of up to 5 notifications and queuing functionality
+
+---
+
 ## Updated July 4, 2025
 
 ## July 4 2025 - Edited Pages
