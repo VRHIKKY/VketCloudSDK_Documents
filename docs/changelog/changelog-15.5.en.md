@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 15.5
 
-## July 18 2025 Update
+## July 16 2025 Update
 
-## July 18 2025 - Edited Page
+## July 16 2025 - Edited Page
 
 - VKC Components
     - [VKC Item AreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemAreaCollider.html)
