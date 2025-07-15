@@ -18,7 +18,31 @@ Constant values defined to correspond with JS types.
 
 ---
 
+## JsVal Literal
+
+You can use JavaScript object literal-like notation to initialize and create JsVal in HeliScript code.
+
+```js
+JsVal val = new JsVal() {
+  "name": "vket-chan",
+  "id": 12345,
+  "message": "Welcome to Vket World!"
+};
+```
+
+You can write JSON format string enclosed in { } after new JsVal().
+
+---
+
 ## Functions generating JsVal
+
+### makeJsValFromJson()
+
+`JsVal makeJsValFromJson(string json);`
+
+Parses the JSON string passed as an argument and returns a JsVal instance.
+
+Returns null if the JSON string parsing fails.
 
 ### makeJsNull()
 
@@ -129,6 +153,16 @@ JsVal type can contain diverse type values after its initialization. The propert
 Instantiates an empty JsVal.
 
 On instantiation, the variable is equivalent as null on JS. The type and value can be defined after its instantiation.
+
+### ToString()
+
+`public string ToString(string space = "");`
+
+Gets the content of the JsVal instance as a string.
+
+If you specify a string for the space parameter, it will be used for indentation. The default value for space is an empty string, and you can call the method without this parameter. In that case, no indentation will be performed.
+
+For example, you can specify two spaces with jsval.ToString("  "), or use tab character for indentation with jsval.ToString("\t").
 
 ### Clear()
 
