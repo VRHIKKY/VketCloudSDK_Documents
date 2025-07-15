@@ -1,0 +1,189 @@
+name: Automated Claude Development Workflow
+
+on:
+  repository_dispatch:
+    types: [jira_task_created, jira_task_updated]
+  workflow_dispatch:
+    inputs:
+      jira_number:
+        description: 'Manual trigger - Jira ticket number (e.g., LDOC-123)'
+        required: true
+        type: string
+
+env:
+  JIRA_NUMBER: ${{ github.event.client_payload.jira_number || github.event.inputs.jira_number }}
+
+jobs:
+  # Phase 1: Issue Creation and Requirements Analysis
+  phase1-requirements:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    outputs:
+      issue_number: ${{ steps.create_issue.outputs.issue_number }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Phase 1 - Requirements Analysis
+        id: requirements
+        uses: anthropics/claude-code-base-action@beta
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JIRA_URL: https://hikky.atlassian.net
+          JIRA_USERNAME: r.akai@vrhikky.com
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        with:
+          prompt: |
+            【フェーズ1: 要件分析とGitHub Issue作成】
+            
+            Jira番号 '${{ env.JIRA_NUMBER }}' について以下を実行してください：
+            
+            1. MCPのJira機能を使ってタスク詳細を取得
+            2. 要件を分析し、技術的な実装方針を策定
+            3. GitHub Issueを作成（タイトルと内容に@claudeを追加）
+            4. Issueの内容に以下の実行計画を記載：
+               - A. 要件定義ドキュメントを作成 ✓
+               - B. 設計書を作成 (次フェーズ)
+               - C. TDDでコード実装 (次フェーズ)
+               - D. Pull Requestを作成 (次フェーズ)
+            5. issue.txtファイルに作成したIssue番号を出力
+            
+            注意：MCPツールの使用許可が求められた場合は、処理を終えてください。
+          mcp_config: ".mcp.json"
+          allowed_tools: "Bash,View,GlobTool,GrepTool,BatchTool,Edit,Write,mcp__mcp-atlassian__jira_get_user_profile,mcp__mcp-atlassian__jira_get_issue,mcp__mcp-atlassian__jira_search,mcp__mcp-atlassian__jira_search_fields,mcp__mcp-atlassian__jira_get_project_issues,mcp__mcp-atlassian__jira_get_transitions,mcp__mcp-atlassian__jira_get_worklog,mcp__mcp-atlassian__jira_download_attachments,mcp__mcp-atlassian__jira_get_agile_boards,mcp__mcp-atlassian__jira_get_board_issues,mcp__mcp-atlassian__jira_get_sprints_from_board,mcp__mcp-atlassian__jira_get_sprint_issues,mcp__mcp-atlassian__jira_get_link_types,mcp__mcp-atlassian__jira_create_issue,mcp__mcp-atlassian__jira_batch_create_issues,mcp__mcp-atlassian__jira_batch_get_changelogs,mcp__mcp-atlassian__jira_update_issue,mcp__mcp-atlassian__jira_delete_issue,mcp__mcp-atlassian__jira_add_comment,mcp__mcp-atlassian__jira_add_worklog,mcp__mcp-atlassian__jira_link_to_epic,mcp__mcp-atlassian__jira_create_issue_link,mcp__mcp-atlassian__jira_remove_issue_link,mcp__mcp-atlassian__jira_transition_issue,mcp__mcp-atlassian__jira_create_sprint,mcp__mcp-atlassian__jira_update_sprint,mcp__mcp-atlassian__confluence_search,mcp__mcp-atlassian__confluence_get_page,mcp__mcp-atlassian__confluence_get_page_children,mcp__mcp-atlassian__confluence_get_comments,mcp__mcp-atlassian__confluence_get_labels,mcp__mcp-atlassian__confluence_add_label,mcp__mcp-atlassian__confluence_create_page,mcp__mcp-atlassian__confluence_update_page,mcp__mcp-atlassian__confluence_delete_page,mcp__mcp-atlassian__confluence_add_comment"
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Extract Issue Number
+        id: create_issue
+        run: |
+          if [ -f "issue.txt" ]; then
+            echo "issue_number=$(cat issue.txt)" >> $GITHUB_OUTPUT
+          else
+            echo "issue_number=" >> $GITHUB_OUTPUT
+          fi
+
+  # Phase 2: Design and Implementation
+  phase2-implementation:
+    needs: phase1-requirements
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create feature branch
+        run: |
+          BRANCH_NAME="feature/jira-${{ env.JIRA_NUMBER }}-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b $BRANCH_NAME
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+      - name: Phase 2 - Design and Implementation
+        uses: anthropics/claude-code-base-action@beta
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JIRA_URL: https://hikky.atlassian.net
+          JIRA_USERNAME: r.akai@vrhikky.com
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          ISSUE_NUMBER: ${{ needs.phase1-requirements.outputs.issue_number }}
+        with:
+          prompt: |
+            【フェーズ2: 設計とTDD実装】
+            
+            Jira番号 '${{ env.JIRA_NUMBER }}' のタスクについて、以下を実行してください：
+            
+            1. 詳細設計書を作成（docs/design/配下に配置）
+            2. TDD (Test Driven Development) アプローチで実装
+               - まずテストケースを作成
+               - テストが失敗することを確認
+               - 最小限の実装でテストをパス
+               - リファクタリング
+            3. コードレビュー用のドキュメントを作成
+            4. 実装が完了したらGitHub Issue #${{ env.ISSUE_NUMBER }} を更新
+            5. 次フェーズ用にcommit.txtファイルに最新コミットハッシュを出力
+            
+            ブランチ名: ${{ env.BRANCH_NAME }}
+            実装は段階的にコミットし、各段階で意味のあるコミットメッセージを付けてください。
+          mcp_config: ".mcp.json"
+          allowed_tools: "Bash,View,GlobTool,GrepTool,BatchTool,Edit,Write,mcp__mcp-atlassian__jira_get_user_profile,mcp__mcp-atlassian__jira_get_issue,mcp__mcp-atlassian__jira_search,mcp__mcp-atlassian__jira_search_fields,mcp__mcp-atlassian__jira_get_project_issues,mcp__mcp-atlassian__jira_get_transitions,mcp__mcp-atlassian__jira_get_worklog,mcp__mcp-atlassian__jira_download_attachments,mcp__mcp-atlassian__jira_get_agile_boards,mcp__mcp-atlassian__jira_get_board_issues,mcp__mcp-atlassian__jira_get_sprints_from_board,mcp__mcp-atlassian__jira_get_sprint_issues,mcp__mcp-atlassian__jira_get_link_types,mcp__mcp-atlassian__jira_create_issue,mcp__mcp-atlassian__jira_batch_create_issues,mcp__mcp-atlassian__jira_batch_get_changelogs,mcp__mcp-atlassian__jira_update_issue,mcp__mcp-atlassian__jira_delete_issue,mcp__mcp-atlassian__jira_add_comment,mcp__mcp-atlassian__jira_add_worklog,mcp__mcp-atlassian__jira_link_to_epic,mcp__mcp-atlassian__jira_create_issue_link,mcp__mcp-atlassian__jira_remove_issue_link,mcp__mcp-atlassian__jira_transition_issue,mcp__mcp-atlassian__jira_create_sprint,mcp__mcp-atlassian__jira_update_sprint,mcp__mcp-atlassian__confluence_search,mcp__mcp-atlassian__confluence_get_page,mcp__mcp-atlassian__confluence_get_page_children,mcp__mcp-atlassian__confluence_get_comments,mcp__mcp-atlassian__confluence_get_labels,mcp__mcp-atlassian__confluence_add_label,mcp__mcp-atlassian__confluence_create_page,mcp__mcp-atlassian__confluence_update_page,mcp__mcp-atlassian__confluence_delete_page,mcp__mcp-atlassian__confluence_add_comment"
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Push feature branch
+        run: |
+          git push origin ${{ env.BRANCH_NAME }}
+
+  # Phase 3: Pull Request Creation and Review
+  phase3-pull-request:
+    needs: [phase1-requirements, phase2-implementation]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Phase 3 - Pull Request Creation
+        uses: anthropics/claude-code-base-action@beta
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JIRA_URL: https://hikky.atlassian.net
+          JIRA_USERNAME: r.akai@vrhikky.com
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          ISSUE_NUMBER: ${{ needs.phase1-requirements.outputs.issue_number }}
+        with:
+          prompt: |
+            【フェーズ3: Pull Request作成と完了】
+            
+            Jira番号 '${{ env.JIRA_NUMBER }}' のタスクについて、以下を実行してください：
+            
+            1. フィーチャーブランチからmainブランチへのPull Requestを作成
+            2. PRの説明に以下を含める：
+               - Jiraタスクへのリンク
+               - 実装内容の概要
+               - テスト結果
+               - レビューポイント
+               - 破壊的変更の有無
+            3. GitHub Issue #${{ env.ISSUE_NUMBER }} にPRリンクを追加
+            4. Jiraタスクにコメントを追加（実装完了の報告）
+            5. Jiraタスクのステータスを"Code Review"または適切なステータスに変更
+            6. pr.txtファイルにPR番号を出力
+            
+            注意：
+            - PRのマージは手動レビュー後に行う
+            - 自動テストが通ることを確認
+            - コードカバレッジを確認
+          mcp_config: ".mcp.json"
+          allowed_tools: "Bash,View,GlobTool,GrepTool,BatchTool,Edit,Write,mcp__mcp-atlassian__jira_get_user_profile,mcp__mcp-atlassian__jira_get_issue,mcp__mcp-atlassian__jira_search,mcp__mcp-atlassian__jira_search_fields,mcp__mcp-atlassian__jira_get_project_issues,mcp__mcp-atlassian__jira_get_transitions,mcp__mcp-atlassian__jira_get_worklog,mcp__mcp-atlassian__jira_download_attachments,mcp__mcp-atlassian__jira_get_agile_boards,mcp__mcp-atlassian__jira_get_board_issues,mcp__mcp-atlassian__jira_get_sprints_from_board,mcp__mcp-atlassian__jira_get_sprint_issues,mcp__mcp-atlassian__jira_get_link_types,mcp__mcp-atlassian__jira_create_issue,mcp__mcp-atlassian__jira_batch_create_issues,mcp__mcp-atlassian__jira_batch_get_changelogs,mcp__mcp-atlassian__jira_update_issue,mcp__mcp-atlassian__jira_delete_issue,mcp__mcp-atlassian__jira_add_comment,mcp__mcp-atlassian__jira_add_worklog,mcp__mcp-atlassian__jira_link_to_epic,mcp__mcp-atlassian__jira_create_issue_link,mcp__mcp-atlassian__jira_remove_issue_link,mcp__mcp-atlassian__jira_transition_issue,mcp__mcp-atlassian__jira_create_sprint,mcp__mcp-atlassian__jira_update_sprint,mcp__mcp-atlassian__confluence_search,mcp__mcp-atlassian__confluence_get_page,mcp__mcp-atlassian__confluence_get_page_children,mcp__mcp-atlassian__confluence_get_comments,mcp__mcp-atlassian__confluence_get_labels,mcp__mcp-atlassian__confluence_add_label,mcp__mcp-atlassian__confluence_create_page,mcp__mcp-atlassian__confluence_update_page,mcp__mcp-atlassian__confluence_delete_page,mcp__mcp-atlassian__confluence_add_comment"
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Workflow Summary
+        run: |
+          echo "## 🚀 自動化ワークフロー完了" >> $GITHUB_STEP_SUMMARY
+          echo "Jira番号: ${{ env.JIRA_NUMBER }}" >> $GITHUB_STEP_SUMMARY
+          if [ -f "issue.txt" ]; then
+            echo "GitHub Issue: #$(cat issue.txt)" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f "pr.txt" ]; then
+            echo "Pull Request: #$(cat pr.txt)" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 実行されたフェーズ" >> $GITHUB_STEP_SUMMARY
+          echo "✅ フェーズ1: 要件分析とIssue作成" >> $GITHUB_STEP_SUMMARY
+          echo "✅ フェーズ2: 設計とTDD実装" >> $GITHUB_STEP_SUMMARY
+          echo "✅ フェーズ3: Pull Request作成" >> $GITHUB_STEP_SUMMARY
