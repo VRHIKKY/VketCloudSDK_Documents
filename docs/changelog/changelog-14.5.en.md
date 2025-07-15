@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.5
 
-## Updated July 15, 2025
+## Updated July 18, 2025
 
-## July 15, 2025 - Added Page
+## July 18, 2025 - Added Page
 
 - HeliScript
     - Built-in Functions
