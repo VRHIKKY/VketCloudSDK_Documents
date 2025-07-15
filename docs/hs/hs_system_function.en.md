@@ -92,6 +92,20 @@ Returns the offset of local timezone and UTC timezone by minutes.
 
 Returns the current world ID.
 
+### hsSendToastNotice
+
+`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`
+
+Displays a notification message with slide-in animation from the right edge of the screen.
+
+Maximum 5 notifications can be displayed simultaneously. When additional notifications are sent while 5 are already displayed, they are queued internally and will be shown when display slots become available.
+
+**Arguments:**
+- `noticeTypeID`: Notification type ID
+- `message`: Message to display
+- `viewTime`: Display duration in seconds
+- `identifyKey`: Identification key
+
 ***
 
 ## Type Casts

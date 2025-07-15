@@ -91,6 +91,20 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 
 ワールドIDを取得する。
 
+### hsSendToastNotice
+
+`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`
+
+画面右端から登場アニメーション付きでメッセージを通知します。
+
+最大5件表示で、5件表示された状態でさらに通知を追加すると内部で保持し、表示枠に空きが出来たら追加します。
+
+**引数:**
+- `noticeTypeID`: 通知タイプID
+- `message`: 表示するメッセージ
+- `viewTime`: 表示時間（秒）
+- `identifyKey`: 識別キー
+
 ***
 
 ## 基本型の変換 (キャスト)
