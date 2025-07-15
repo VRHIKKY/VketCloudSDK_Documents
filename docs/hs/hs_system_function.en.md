@@ -132,7 +132,7 @@ When a toast notification is clicked or dismissed after timeout, it triggers a L
 `string key` is fixed as the string `"toast"`  
 `string data` contains the notification information as a string.  
 
-#### ● Information stored in data  
+#### Information stored in data  
 ```json
 {
   "noticeTypeID" : "notification type ID",
@@ -141,7 +141,7 @@ When a toast notification is clicked or dismissed after timeout, it triggers a L
   "sendAction": "timing when this data was sent"
 }
 ```
-#### ● sendAction timing
+#### sendAction timing
 | sendAction | Value |
 | --- | --- | 
 | OnClick | User clicked the toast |
@@ -149,7 +149,7 @@ When a toast notification is clicked or dismissed after timeout, it triggers a L
 | OnForceQuit | When toast notification is clicked and dismissed (Info and Warning only) |
 
 
-#### ● Sample Code
+#### Sample Code
 ```cs
 // Sample
 // Handler for receiving localData
