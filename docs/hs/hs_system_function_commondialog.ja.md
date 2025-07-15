@@ -136,3 +136,47 @@ CanvasのHeliScriptで使用する場合は引数に`"canvas"`を追加して`hs
 汎用ダイアログを閉じます。既に閉じられている場合等のエラーがある場合はfalseが返ります。
 
 ***
+
+## トースト通知
+
+### hsSendToastNotice
+
+`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`
+
+画面右端からアニメーション付きでトースト通知を表示します。
+
+**パラメータ**:
+- `noticeTypeID`: 通知タイプ（0=INFO, 10=WARNING, 20=ERROR）
+- `message`: 表示メッセージテキスト
+- `viewTime`: 表示時間（秒）。0.5秒のアニメーション時間は含まれません
+- `identifyKey`: コールバック用のユーザー定義識別キー
+
+**機能**:
+- 最大5個の同時通知をサポート。それを超えた場合は内部キューで管理
+- INFO・WARNING通知はクリックで手動削除可能（ERROR通知は自動削除のみ）
+- 通知との相互作用は `OnReceiveLocalData` イベントを通じてコールバック
+- コールバックデータはJSON形式で提供
+
+**使用例**:
+```csharp
+// 情報通知の表示
+hsSendToastNotice(0, "メッセージが送信されました", 3.0, "info_msg");
+
+// 警告通知の表示
+hsSendToastNotice(10, "接続が不安定です", 5.0, "warning_conn");
+
+// エラー通知の表示
+hsSendToastNotice(20, "処理に失敗しました", 4.0, "error_proc");
+```
+
+**コールバック例**:
+```csharp
+// OnReceiveLocalData でトースト通知のイベントを受信
+public void OnReceiveLocalData(string data)
+{
+    // JSON形式のコールバックデータを処理
+    // 例: {"type": "toast", "action": "clicked", "identifyKey": "info_msg"}
+}
+```
+
+***

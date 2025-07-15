@@ -137,3 +137,47 @@ When using in Canvas HeliScript, you need to add `"canvas"` as an argument and c
 Closes the common dialog. Returns `false` if an error occurs, such as if the dialog is already closed.
 
 ***
+
+## Toast Notifications
+
+### hsSendToastNotice
+
+`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`
+
+Displays animated toast notifications from the right side of the screen.
+
+**Parameters**:
+- `noticeTypeID`: Notification type (0=INFO, 10=WARNING, 20=ERROR)
+- `message`: Display message text
+- `viewTime`: Display duration in seconds (excluding 0.5s animation time)
+- `identifyKey`: User-defined identification key for callbacks
+
+**Features**:
+- Supports up to 5 simultaneous notifications with internal queuing beyond that limit
+- INFO and WARNING notifications can be dismissed by clicking (ERROR notifications auto-dismiss only)
+- User interactions are tracked through `OnReceiveLocalData` event callbacks
+- Callback data is provided in JSON format
+
+**Usage Examples**:
+```csharp
+// Display info notification
+hsSendToastNotice(0, "Message sent successfully", 3.0, "info_msg");
+
+// Display warning notification
+hsSendToastNotice(10, "Connection is unstable", 5.0, "warning_conn");
+
+// Display error notification
+hsSendToastNotice(20, "Process failed", 4.0, "error_proc");
+```
+
+**Callback Example**:
+```csharp
+// Receive toast notification events via OnReceiveLocalData
+public void OnReceiveLocalData(string data)
+{
+    // Process JSON callback data
+    // Example: {"type": "toast", "action": "clicked", "identifyKey": "info_msg"}
+}
+```
+
+***
