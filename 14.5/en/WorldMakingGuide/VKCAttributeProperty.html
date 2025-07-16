@@ -11864,7 +11864,7 @@ The defined Value can be read on HeliScript, or written by functions.</p>
 <p>The defined property can be used by HeliScript.</p>
 <p>For example, a GameObject Item will hold a property as below:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Key</span><span class="err">：</span><span class="n">Vket</span><span class="w">　</span><span class="n">Value</span><span class="err">：</span><span class="n">Cloud</span>
-<span class="n">Key</span><span class="err">：</span><span class="n">SDK</span><span class="w">　</span><span class="n">Value</span><span class="err">：</span><span class="m">12.1</span>
+<span class="n">Key</span><span class="err">：</span><span class="n">SDK</span><span class="w">　</span><span class="n">Value</span><span class="err">：</span><span class="mf">12.1</span>
 </code></pre></div>
 <h3 id="1-getproperty">1. GetProperty</h3>
 <p><code>Item.GetProperty(string Key)</code> will get a Property Value according to the Item's Key.</p>
@@ -11941,13 +11941,13 @@ For details, please see <a href="../SDKTools/VKCActivityExporter.html#setting-pr
 <span class="w">  </span><span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
 
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="n">exampleA</span><span class="p">{</span>
-<span class="w">    </span><span class="n">HP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">20</span><span class="p">;</span>
+<span class="w">    </span><span class="n">HP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 <span class="w">    </span><span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;Monster&quot;</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
 
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">damage</span><span class="p">(){</span>
 <span class="w">    </span><span class="n">HP</span><span class="o">--</span><span class="p">;</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">HP</span><span class="o">&lt;=</span><span class="m">0</span><span class="p">){</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">HP</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">){</span>
 <span class="w">      </span><span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;status&quot;</span><span class="p">,</span><span class="s">&quot;death&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
@@ -11958,7 +11958,7 @@ For details, please see <a href="../SDKTools/VKCActivityExporter.html#setting-pr
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">status</span><span class="p">;</span>
 
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="n">exampleB</span><span class="p">{</span>
-<span class="w">    </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="w">    </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <span class="w">  </span><span class="p">}</span>
 
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnChangedProperty</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">Key</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Value</span><span class="p">){</span>
@@ -11966,15 +11966,15 @@ For details, please see <a href="../SDKTools/VKCActivityExporter.html#setting-pr
 <span class="w">      </span><span class="k">switch</span><span class="p">(</span><span class="n">Value</span><span class="p">){</span>
 <span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;alive&quot;</span>
 <span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;A Monster has appeared!&quot;</span><span class="p">);</span>
-<span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <span class="w">          </span><span class="k">break</span><span class="p">;</span>
 <span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;poison&quot;</span>
 <span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;The monster is poisoned!&quot;</span><span class="p">);</span>
-<span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
+<span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
 <span class="w">          </span><span class="k">break</span><span class="p">;</span>
 <span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;death&quot;</span>
 <span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;The monster is defeated!&quot;</span><span class="p">);</span>
-<span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="m">1</span><span class="p">;</span>
+<span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
 <span class="w">          </span><span class="k">break</span><span class="p">;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
