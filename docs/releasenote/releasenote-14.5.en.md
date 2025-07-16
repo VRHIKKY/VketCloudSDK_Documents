@@ -1,3 +1,19 @@
+# Version 14.5.14
+
+## SDK (Editor Extension Tool for Creating Worlds in Unity)
+
+### New Features
+
+- Implemented upload progress display functionality.
+- The "Uploading" status and progress rate can be confirmed via dialog or progress bar.
+
+### Fixed Issues
+
+- Fixed an issue where the Activity JSON content would become corrupted when editing VKC Item Activity.
+  - Fixed the problem where Activity.json content would be modified even without changes when exiting VKC Item Activity edit mode (toggling On/Off or Apply)
+
+---
+
 # Version 14.5.10
 
 ## SDK (Editor Extension Tool for Creating Worlds in Unity)
