@@ -42,7 +42,7 @@ VKC Item Activityはアクティビティを使用する際に設定するコン
 | 名称 | 機能 |
 | ---- | ---- |
 | Clickable | クリック可能かどうかを変更します |
-| Auto Loading | 有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、[動的ローディング](VKCItemField.md)を使用するか、HeliScriptで[Load()](../hs/hs_class_item.md#load)を使用して読み込みます。|
+| Auto Loading | 自動ローディングの有効/無効を切り替えます|
 | Item Render Priority | Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
 | Show Photo Mode | 写真撮影モードの際、Activityを表示するかどうかを変更します |
 

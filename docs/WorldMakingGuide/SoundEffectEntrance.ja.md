@@ -23,7 +23,7 @@ A. ループ設定をfalseにする
 
 B. 効果音の自動再生をtrueにする
 
-C. 効果音の動的ローディング(AutoLoading)をfalseにする
+C. 効果音の自動ローディング(AutoLoading)をfalseにする
 
 ## ③コンストラクタで該当ItemをLoad()する
 

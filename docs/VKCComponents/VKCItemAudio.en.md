@@ -39,7 +39,7 @@ By accessing the in-game config, the player may set the volume of each audio typ
 
 | Label | Default | Function |
 | ---- | ---- | ---- |
-| Auto Loading | True | Toggles dynamic loading on/off. |
+| Auto Loading | True | Toggles auto loading enable/disable. |
 | Clickable | False | Makes the item clickable. |
 | Item Render Priority | 0 | Allows changing the rendering priority of the item in the world. |
 | Show Photo Mode | True | Specifies whether the item is displayed in photography mode. |
