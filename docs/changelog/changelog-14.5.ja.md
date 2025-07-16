@@ -1,5 +1,70 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年7月16日更新
+
+## 2025年7月16日 - 追加されたページ
+
+- リリースノート
+    - [v14.5.14](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-14.5.html#version-14514)
+        - v14.5.14のリリースノートを追加
+        - アップロードプログレス表示機能を追加
+        - VKC Item Activity JSON破損不具合の修正を追加
+
+---
+
+## 2025年7月4日更新
+
+## 2025年7月4日 - 変更されたページ
+
+- VKCコンポーネント
+  - [VKC/HEO コンポーネント 概要](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCHEOCorrespondenceTable.html)
+    - クラス図を追加
+    - Mermaid記法を使用してコンポーネントの関係性を図示
+
+---
+
+## 2025年6月27日更新
+
+## 2025年6月27日 - 追加されたページ
+
+- リリースノート
+    - [v15.7](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-15.7.html)
+        - v15.7のリリースノートの新しいページを追加
+        - WebXRの不具合修正を追加（右スティック回転時の頭部回転量修正）
+
+## 2025年6月27日 - 編集されたページ
+
+- VKCコンポーネント
+    - VKC Node
+        - [VKC Node Cylinder Collider](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/VKCComponents/VKCNodeCylinderCollider.html)
+            - カプセルコライダーはエリアコライダー用途のみ対応の注意書きを追加
+            - Mesh Renderer併用時の非機能について警告を追記
+- ワールド制作ガイド
+    - [Unity利用ガイドライン](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/UnityGuidelines.html)
+        - HeliScriptファイル（.hs）の改行コードはLFのみを使用することの警告を追加
+        - CRLFを使用するとビルド時にheliodorでの読み込みエラーが発生することを明記
+- 外部API連携
+    - [BrokerAPI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/BrokerAPI.html)
+        - SPATIUM_CODEのデフォルト値を"Default"から"default"に修正
+    - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/ExternalAPI/JsVal.html)
+        - JsValリテラルセクションを追加
+        - makeJsValFromJson()関数を追加
+        - ToString()メソッドを追加
+        - makeJsArrayElem()の詳細説明を追加
+
+---
+
+## 2025年6月20日更新
+
+## 2025年6月20日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [GUI](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_gui.html)
+            - `hsAddGUIAction`関数のシグネチャを修正
+
+---
+
 ## 2025年6月11日更新
 
 ## 2025年6月11日 - 追加されたページ
@@ -183,4 +248,3 @@
 - ワールド制作ガイド
     - [オブジェクトをアニメーションさせる](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/WorldMakingGuide/PropAnimation.html)
         - system.GetDeltaTime()からhsSystemGetDeltaTime()に変更
-
