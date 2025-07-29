@@ -15,7 +15,6 @@
 引数で指定した文字列をコンソールに出力する。
 
 ### hsSystemWriteLine
-
 `void hsSystemWriteLine(string text)`
 引数で指定した文字列をコンソールに出力し、最後に改行を出力する。
 
@@ -55,7 +54,7 @@ VketCloudSDKの現在のバージョン文字列を返す。
 
 ### hsGetDate
 
-`void hsGetDate(ref int year, ref int month, ref int day, ref int week, ref int hour, ref int minute, ref int second)`
+`void hsGetDate(ref int year, ref int month, ref int day, ref int week, ref int hour, ref int minite, ref int second)`
 
 現在のローカルの日時を取得します。
 
@@ -65,7 +64,7 @@ VketCloudSDKの現在のバージョン文字列を返す。
 
 ### hsGetDateLocal
 
-`void hsGetDateLocal(ref int year, ref int month, ref int day, ref int week, ref int hour, ref int minute, ref int second)`
+`void hsGetDateLocal(ref int year, ref int month, ref int day, ref int week, ref int hour, ref int minite, ref int second)`
 
 現在のローカルの日時を取得します。
 
@@ -73,7 +72,7 @@ VketCloudSDKの現在のバージョン文字列を返す。
 
 ### hsGetDateUTC
 
-`void hsGetDateUTC(ref int year, ref int month, ref int day, ref int week, ref int hour, ref int minute, ref int second)`
+`void hsGetDateUTC(ref int year, ref int month, ref int day, ref int week, ref int hour, ref int minite, ref int second)`
 
 現在の日時をUTCで取得します。
 
@@ -97,19 +96,91 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 
 ワールドIDを取得する。
 
+### hsGetWindowSize
+`void hsGetWindowSize(ref int width, ref int height)`
+
+ウィンドウのサイズをピクセル単位で取得します。
+
+***
+
+## 基本型の変換 (キャスト)
+
+### int(float)
+`int int(float)`
+
+浮動小数点数を整数値に変換します。
+
+### float(int)
+`float float(int)`
+
+整数値を浮動小数点数値に変換します。
+
+### bool(int)
+`bool bool(int)`
+
+整数値を真偽値に変換します。
+
+0 は true、それ以外の値は false に変換されます。
+
+### string(int)
+`string string(int)`
+
+整数値を文字列に変換します。
+
+### string(float)
+`string string(float)`
+
+浮動小数点数値を文字列に変換します。
+
+***
+
+
+## Web
+
+### hsWebOpen
+`void hsWebOpen(string url)`
+
+urlを開く。
+
+### hsWebReload
+`void hsWebReload()`
+
+Webページをリロードします。
+
+
+***
+
+## 言語
+
+### hsGetLang
+`string hsGetLang()`
+
+現在のシステムの言語を返します。(JavaScriptのnavigator.languageの値に相当する文字列を返します)
+
+### hsIsLangJA
+`bool hsIsLangJA()`
+
+現在のシステムの言語が日本語の場合にtrueを返します。
+
+### hsIsLangEN
+`bool hsIsLangEN()`
+
+現在のシステムの言語が英語の場合にtrueを返します。
+
 ***
 
 ## トースト通知
 
 ### hsSendToastNotice
-
-`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey)`  
+`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey = "", string optionData = "")`  
 
 画面右端から登場アニメーション付きでメッセージを通知します。  
-最大5件表示で、5件表示された状態でさらに通知を追加すると内部で保持し、  
-表示枠に空きが出来たら追加します。  
+最大表示件数は**5件**で、6件以上は内部で保持し表示枠に空きが出来たら表示されます。  
 
 また、エラー通知以外はクリックをすると残り表示秒数に関係なく消すことが可能です。
+
+トースト通知の状態が変化した場合にLocalイベント`OnReceiveLocalData(string key, string data)`が発火します。    
+`string key`は固定で`"toast"`の文字列、`string data`にトースト通知の情報がJsVal形式の文字列で入っています。    
 
 #### noticeTypeID (int)  
 通知するメッセージ種類のID。  IDとアイコンの対応は以下の通り。
@@ -120,122 +191,32 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 |20|ERROR|
 |nn|INFO (規定外はすべてINFOにされます)|
 
+#### message (string)  
+トースト通知に表示するメッセージ文章を入力できます。
+
 #### viewTime (float)  
 通知が画面で表示される時間を設定できます。  
 1 = 1秒で、登場/退場アニメーション時間はこの秒数に含まれません。（それぞれ0.5秒）  
 
 #### identifyKey (string)  
-ユーザーが任意で埋め込める識別キー。  
+ユーザーが任意に埋め込める識別キー。  
+`"gimmickNoticeA:Interact_01"`など。
 
-トースト通知がクリックされた/時間超過で消えた時に発火されるLocalイベント`OnReceiveLocalData(string key, string data)`に識別タグとして使えます。  
+#### optionData (string)  
+ユーザーが任意でトースト通知に埋め込めるデータ  
+
+トースト通知がクリックされた/時間超過で消えた時に発火されるLocalイベント`OnReceiveLocalData(string key, string data)`で受け取る事ができます。  
 
 `string key`は固定で`"toast"`の文字列が入っています。  
-`string data`に発火した通知情報が文字列として入っています。  
+`string data`にトースト通知の情報がJsVal形式の文字列で入っています。  
+※JsValはJsonデータをHeliScript内で取り扱う為のデータ形式。
 
-#### dataに格納されている情報  
+#### ● dataに格納されている情報  
 ```json
 {
   "noticeTypeID" : "通知種類のID",
   "identifyKey" : "ユーザーが`identifyKey`で決めた識別用文字列",
   "message": "通知で表示していたメッセージ",
-  "sendAction": "このデータが送信されたタイミング"
+  "sendAction": "このデータが送信されたタイミング",
+  "optionData": "ユーザーが`optionData`で入力したデータ"
 }
-```
-#### sendActionの送信タイミング
-| sendAction | 値 |
-| --- | --- | 
-| OnClick | ユーザーがトーストをクリックした |
-| ViewTimeOver | viewTimeで設定した時間を超えた場合 |
-| OnForceQuit | トースト通知をクリックして消した場合(InfoとWarningのみ) |
-
-
-#### サンプルコード
-```cs
-// サンプル
-// localDataを受け取る窓口
-public void OnReceiveLocalData(string key, string data){
-    if(key != "toast") { return; }
-    string identifyKey = GetNoticeIdentifyKey(data);
-
-    hsSystemWriteLine("トースト通知 識別キー : %s" % identifyKey);
-}
-
-// localDataで届いたstring型のJson形式データから、識別キーを抜き出す
-private string GetNoticeIdentifyKey(string data){
-    JsVal toastData = makeJsValFromJson(data);
-    return toastData.GetProperty("identifyKey").GetStr();
-}
-```
-
-***
-
-## 基本型の変換 (キャスト)
-
-### int(float)
-
-`int int(float)`
-
-浮動小数点数を整数値に変換します。
-
-### float(int)
-
-`float float(int)`
-
-整数値を浮動小数点数値に変換します。
-
-### bool(int)
-
-`bool bool(int)`
-
-整数値を真偽値に変換します。
-
-0 は true、それ以外の値は false に変換されます。
-
-### string(int)
-
-`string string(int)`
-
-整数値を文字列に変換します。
-
-### string(float)
-
-`string string(float)`
-
-浮動小数点数値を文字列に変換します。
-
-***
-
-## Web
-
-### hsWebOpen(string)
-
-`void hsWebOpen(string url)`
-
-urlを開く。
-
-### hsWebReload
-`void hsWebReload()`
-
-Webページをリロードします。
-
-***
-
-## 言語
-
-### hsGetLang()
-
-`string hsGetLang()`
-
-現在のシステムの言語を返します。(JavaScriptのnavigator.languageの値に相当する文字列を返します)
-
-### hsIsLangJA()
-
-`bool hsIsLangJA()`
-
-現在のシステムの言語が日本語の場合にtrueを返します。
-
-### hsIsLangEN()
-
-`bool hsIsLangEN()`
-
-現在のシステムの言語が英語の場合にtrueを返します。

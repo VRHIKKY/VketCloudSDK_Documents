@@ -1,5 +1,18 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年7月18日更新
+
+## 2025年7月18日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [システム関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function.html)
+            - hsSendToastNotice関数を追加
+            - 画面右端にスライドイン通知を表示する機能を説明
+            - 最大5件までの同時表示とキューイング機能を記述
+
+---
+
 ## 2025年7月16日更新
 
 ## 2025年7月16日 - 追加されたページ
@@ -9,19 +22,6 @@
         - v14.5.14のリリースノートを追加
         - アップロードプログレス表示機能を追加
         - VKC Item Activity JSON破損不具合の修正を追加
-
----
-
-## 2025年7月15日更新
-
-## 2025年7月15日 - 編集されたページ
-
-- HeliScript
-    - 組み込み関数
-        - [システム関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function.html)
-            - hsSendToastNotice関数を追加
-            - 画面右端にスライドイン通知を表示する機能を説明
-            - 最大5件までの同時表示とキューイング機能を記述
 
 ---
 
