@@ -1,5 +1,17 @@
 # SDK Manual Change Log - Ver 14.5
 
+## Updated July 16, 2025
+
+## July 16, 2025 - Added Pages
+
+- Release Notes
+    - [v14.5.14](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-14.5.html#version-14514)
+        - Added v14.5.14 release notes
+        - Added upload progress display functionality
+        - Added fix for VKC Item Activity JSON corruption issue
+
+---
+
 ## Updated July 15, 2025
 
 ## July 15, 2025 - Added Pages
