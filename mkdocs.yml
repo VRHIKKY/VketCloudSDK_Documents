@@ -325,6 +325,7 @@ plugins:
             JavaScript: JavaScript
             Cookie: Cookie
             RayCast: レイキャスト
+            Local Data: ローカルデータ
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -609,6 +610,7 @@ nav:
         - JavaScript: hs/hs_system_function_js.md
         - Cookie: hs/hs_system_function_cookie.md
         - Raycast: hs/hs_system_function_raycast.md
+        - Local Data: hs/hs_system_function_localdata.md
     - Statements and flow control:
         - Scopes and definitions: hs/hs_scope_def.md
         - Control Statement: hs/hs_statement_control.md

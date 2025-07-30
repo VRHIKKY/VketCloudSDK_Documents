@@ -2,6 +2,13 @@
 
 ## Updated July 18, 2025
 
+## July 18, 2025 - Added Page
+
+- HeliScript
+    - Built-in Functions
+        - [Local Data](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_localdata.html)
+            - Added documentation for hsSendLocalData function and OnReceiveLocalData callback
+
 ## July 18, 2025 - Edited Pages
 
 - HeliScript
