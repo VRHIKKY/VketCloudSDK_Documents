@@ -6537,6 +6537,8 @@
       
         
       
+        
+      
     
     
     
@@ -6892,6 +6894,27 @@
   
   <span class="md-ellipsis">
     Raycast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hs_system_function_localdata.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local Data
   </span>
   
 
@@ -7461,6 +7484,8 @@
       
         
       
+        
+      
     
     
     
@@ -7488,6 +7513,27 @@
             v15.x
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-15.8.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v15.8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -11726,10 +11772,10 @@ for (i = 0; i &lt; 100; ++i) {
 <p>Using <em>break</em> or <em>continue</em>, you can control execution of loop process.</p>
 <h3 id="break">break</h3>
 <p><em>break</em> allows you to exit the loop in the middle of its execution.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
 <span class="c1">// This loop will continue indefinitely since the condition is always true, unless explicitly exited with break.</span>
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="k">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// Forcefully exit the loop with break.</span>
 <span class="w">        </span><span class="k">break</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
@@ -11739,8 +11785,8 @@ for (i = 0; i &lt; 100; ++i) {
 <h3 id="continue">continue</h3>
 <p><em>continue</em> allows you to skip the remaining loop process and move on to the next iteration.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// This loop displays the value of i 100 times.</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">100</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// However, when i equals 5, continue skips the rest of the loop, so nothing is displayed.</span>
 <span class="w">        </span><span class="k">continue</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>

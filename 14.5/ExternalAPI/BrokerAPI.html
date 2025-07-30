@@ -6535,6 +6535,8 @@
       
         
       
+        
+      
     
     
     
@@ -6890,6 +6892,27 @@
   
   <span class="md-ellipsis">
     Raycast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hs/hs_system_function_localdata.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ローカルデータ
   </span>
   
 
@@ -7390,6 +7413,8 @@
       
         
       
+        
+      
     
     
     
@@ -7417,6 +7442,27 @@
             v15.x
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releasenote/releasenote-15.8.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v15.8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -11585,7 +11631,7 @@ API名は識別のために任意の名前を付け、URLは使用したいAPI�
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">YOUTUBE_API_KEY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;XXXXXXXXXXXXXXX&quot;</span><span class="p">;</span><span class="c1">//youtube APIのAPIキーを入れる</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SPATIUM_CODE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;default&quot;</span><span class="p">;</span><span class="c1">//特殊なことをしなければdefault</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SEARCH_WORD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;VketCloud&quot;</span><span class="p">;</span><span class="c1">//検索するワードを入れる</span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">MAX_RESULTS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="c1">//検索結果の数を入れる。1～50</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">MAX_RESULTS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="c1">//検索結果の数を入れる。1～50</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">RESULT_ITEM_NAME</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Result&quot;</span><span class="p">;</span><span class="c1">//取得結果を表示するTextPlaneの名前。SDK Ver12.3だとFontSizeを大きくすると文字化けしやすい</span>
 <span class="w">    </span><span class="c1">//----------------------------------------</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">BrokerAPI</span><span class="p">()</span>
@@ -11708,12 +11754,12 @@ API名は識別のために任意の名前を付け、URLは使用したいAPI�
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">IsDataValid</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="p">;</span><span class="c1">//dataが有効かどうかを判定</span>
 
 <span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;pageInfo&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;resultsPerPage&quot;</span><span class="p">).</span><span class="n">GetNum</span><span class="p">();</span><span class="c1">//結果の数を取得</span>
-<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="c1">//titleをoutputTextに格納</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="c1">//titleをoutputTextに格納</span>
 <span class="w">        </span><span class="p">{</span>
 <span class="w">            </span><span class="kt">string</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;data&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;items&quot;</span><span class="p">).</span><span class="n">At</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;snippet&quot;</span><span class="p">).</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;title&quot;</span><span class="p">).</span><span class="n">GetStr</span><span class="p">();</span>
 <span class="w">            </span><span class="c1">//hsSystemWriteLine(title);</span>
 <span class="w">            </span><span class="n">outputText</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">;</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">outputText</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">resultsPerPage</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="n">outputText</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">;</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="n">resultTextPlane</span><span class="p">.</span><span class="n">WriteTextPlane</span><span class="p">(</span><span class="n">outputText</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
