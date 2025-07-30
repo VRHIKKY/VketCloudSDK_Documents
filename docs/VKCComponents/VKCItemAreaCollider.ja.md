@@ -1,15 +1,12 @@
 # VKC Item Area Collider
 
+VKC Item Area Colliderは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br>
+コライダーにプレイヤーが進入したことをトリガーとして様々なアクションを設定可能です。<br>
+アクションについては[アクションの概要](../Actions/ActionsOverview.md)を参照してください。<br>
+
+## 設定項目
+
 ![VKC Item Area Collider](img/VKCItemAreaCollider_01.jpg)
-
-VKC Item Area Colliderは、オブジェクトに対してアクションを導入することができるコンポーネントです。<br/>
-コライダーにプレイヤーが進入した際にアクションを実行します。
-
-VKC Item Area Colliderをアタッチするオブジェクトには[VKC Node Collider](./VKCNodeCollider.md)とColliderがアタッチされている必要があります。<br>
-なお、VKC Item Area Colliderをオブジェクトにアタッチすると[VKC Node Collider](./VKCNodeCollider.md)とBox Colliderが自動で追加されます。<br>
-[VKC Node Collider](./VKCNodeCollider.md)のtypeはAreaに設定されている必要があります。
-
-![VKC Node Collider](img/VKCItemAreaCollider_02.jpg)
 
 `Actions on Enter`, `Actions on Leave`それぞれにおいてAdd(+ボタン)をクリックすることで任意のアクションを設定できます。<br>
 反対に、Delete(-ボタン)をクリックすることで最後尾のアクションを削除できます。
@@ -43,23 +40,35 @@ VKC Item Area Colliderをアタッチするオブジェクトには[VKC Node Col
     - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
     - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
 
-## 詳細設定
+### 高度な設定
 
 | 名称 | 初期値 |  説明  |
 | ---- | ---- | ---- |
 | Show | True | VKC Item Area Colliderでは動作しません。 |
 | Clickable | False | VKC Item Area Colliderでは動作しません。 |
-| Auto Loading | True | 動的ローディングの有効/無効を切り替えます。 |
+| Auto Loading | True | 自動ローディングの有効/無効を切り替えます。 |
 | Item Render Priority | 0 | ワールド内のItemの描画優先度を変更できます。 |
 | Show Photo Mode | True | VKC Item Area Colliderでは動作しません。 |
 
-## コライダーの衝突 / エリア範囲判定について
+## 使用上の注意
+VKC Item Area Colliderは、以下の点に特に注意が必要です。<br>
 
-ワールド内でのコライダーの衝突 / エリア範囲判定は、画像のオレンジ球の一番下の地点、プレイヤーの足元の原点位置にて判定されます。<br>
-また、以下のようなコリジョンの可視化は[VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md)から[デバッグモード](../WorldEditingTips/DebugMode.md#f3)を有効にした上でF3キーを押すと切り替えできます。
+### プレイヤーの足元よりも低い位置に配置する
+エリアコライダーとの衝突判定は「プレイヤーの足元」にあります。<br>
+もし衝突検知しない場合、地面からコライダーが浮いていないか確認してください。<br><br>
 
-![VKCItemAreaCollider_03](img/VKCItemAreaCollider_03.jpg)
+図の左側のコライダーは、地面から浮いているため衝突検知しません。右側のコライダーのように地面に接触するよう位置を下げる必要があります。<br>
 
-!!! warning "コライダーが動作しない場合"
-    コライダーが地面から少しでも浮いている場合、プレイヤーの足元(原点)にて判定される衝突が動作しません。<br>
-    もしコライダーが動作しない場合、地面からコライダーが浮いていないかを確認してください。
+![VKCItemAreaCollider_03](VKCItemAreaCollider_03.png)
+
+### VKC Item Fieldコンポーネントをもつオブジェクトの子として配置する
+VKC Item Area Colliderをアタッチしたオブジェクトは、VKC Item Fieldコンポーネントをアタッチした他のオブジェクトの配下に置く必要があります。<br>
+もし衝突検知しない場合、Unityのヒエラルキー上で親子関係を確認してください。<br>
+
+図のように、ItemFieldコンポーネントを持つ「World」オブジェクトの配下にオブジェクトを移動してください。
+
+![VKCItemAreaCollider_04](VKCItemAreaCollider_04.png)
+
+!!! note "VKC Item Fieldオブジェクトの階層下に置く理由"
+    VKC Item Fieldは、コライダーなどの形状を出力するために使用されます。
+    逆にArea Collider単体だと、コライダーの形状をビルド時に含めることができません。

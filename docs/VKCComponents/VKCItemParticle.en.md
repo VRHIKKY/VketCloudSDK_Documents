@@ -40,7 +40,7 @@ Please use [Particle Editor](../particleeditor/pe_about_particleeditor.md) to cr
 
 | Label | Initial Value | function |
 | ---- | ---- | ---- |
-| Auto Loading | true | Used for setting up [Dynamic Loading](VKCItemField.md). <br> The object will be loaded on the first load by default.  |
+| Auto Loading | true | Toggles auto loading enable/disable. |
 | Clickable | false | Toggle mouse interaction on object. |
 | Item Render Priority | 0 | Designates the Item's render priority. <br> For details, refer to [RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md) |
 | Show Photo Mode | true | Specifies whether it is displayed in photo mode |

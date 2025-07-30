@@ -58,7 +58,7 @@ For example, by Build & Running the world the text will be displayed as below:
 
 | Label | Initial Value | Function |
 | ----   | ---- | ---- |
-| Auto Loading | true | When enabled, this Item will be loaded automatically on world entrance.<br> As this Item must be explicitly loaded when `Auto Loading` is disabled, use [Dynamic Loading](VKCItemField.md) or use [Load()](../hs/hs_class_item.md#load) on HeliScript. |
+| Auto Loading | true | Toggles auto loading enable/disable |
 | Clickable | false | Toggles acceptance of click input from player |
 | Character Space | 0.0| Set the character space by pixel |
 | Line Space | 1.0 | Set the line space by pixel |
