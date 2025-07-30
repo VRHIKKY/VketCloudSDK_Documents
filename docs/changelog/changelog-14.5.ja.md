@@ -23,6 +23,20 @@
 
 ---
 
+## 2025年7月15日更新
+
+## 2025年7月15日 - 追加されたページ
+
+- リリースノート
+    - [v15.8](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-15.8.html)
+        - v15.8.0のリリースノートの新しいページを追加
+        - WebXR機能調整（カーソルのデザイン変更）
+        - WebXR不具合修正（通常のメニュー以外のUIクリック問題、ミラー/ノーマルシャドウマップ使用時の画面黒化問題の応急対応）
+        - UI不具合修正（メンバー一覧の人数乖離問題、ブロック機能使用時のグローバルテキストチャット表示問題）
+        - HeliScript関数追加（hsSendToastNotice関数、hsSendLocalData関数およびOnReceiveLocalDataコールバック）
+
+---
+
 ## 2025年7月4日更新
 
 ## 2025年7月4日 - 変更されたページ

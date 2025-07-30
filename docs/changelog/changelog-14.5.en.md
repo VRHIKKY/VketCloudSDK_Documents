@@ -23,6 +23,20 @@
 
 ---
 
+## Updated July 15, 2025
+
+## July 15, 2025 - Added Pages
+
+- Release Notes
+    - [v15.8](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-15.8.html)
+        - Added new page for v15.8.0 release notes
+        - WebXR feature adjustments (cursor design changes)
+        - WebXR bug fixes (UI click issues for non-menu elements, emergency fix for screen blackout when using mirrors/normal shadow maps)
+        - UI bug fixes (member list count discrepancy issue, global text chat display issue when blocking functionality is used)
+        - HeliScript function additions (hsSendToastNotice function, hsSendLocalData function and OnReceiveLocalData callback)
+
+---
+
 ## Updated July 4, 2025
 
 ## July 4 2025 - Edited Pages
