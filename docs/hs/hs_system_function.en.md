@@ -15,7 +15,6 @@
 Outputs the string specified by the argument to the console.
 
 ### hsSystemWriteLine
-
 `void hsSystemWriteLine(string text)`
 
 Outputs the string specified by the argument to the console, added with a return.
@@ -35,6 +34,12 @@ Returns true if Vket Cloud is running in debug mode.
 `bool hsIsMobile()`
 
 Returns true if Vket Cloud is running in a mobile device.
+
+### hsGetSDKVersion
+
+`string hsGetSDKVersion()`
+
+Returns the current version string of VketCloudSDK.
 
 ### hsSystemGetTime
 
@@ -92,24 +97,26 @@ Returns the offset of local timezone and UTC timezone by minutes.
 
 Returns the current world ID.
 
+### hsGetWindowSize
+`void hsGetWindowSize(ref int width, ref int height)`
+
+Gets the window size in pixels.
+
 ***
 
 ## Type Casts
 
 ### int(float)
-
 `int int(float)`
 
 Converts float value to integer.
 
 ### float(int)
-
 `float float(int)`
 
 Converts integer to float value.
 
 ### bool(int)
-
 `bool bool(int)`
 
 Converts integer to boolean value.
@@ -117,51 +124,100 @@ Converts integer to boolean value.
 0 will be converted to true, while other values will be converted to false.
 
 ### string(int)
-
 `string string(int)`
 
 Converts integer to string.
 
 ### string(float)
-
 `string string(float)`
 
 Converts float value to string.
 
 ***
 
+
 ## Web
 
-### hsWebOpen(string)
-
+### hsWebOpen
 `void hsWebOpen(string url)`
 
 Opens the url designated by string.
 
 ### hsWebReload
-
 `void hsWebReload()`
 
 Reloads the web page.
+
 
 ***
 
 ## Language
 
-### hsGetLang()
-
+### hsGetLang
 `string hsGetLang()`
 
-Returns the current system language. (Returns string value likewise navigator.language in Javascript. )
+Returns the current system language. (Returns string value likewise navigator.language in JavaScript. )
 
-### hsIsLangJA()
-
+### hsIsLangJA
 `bool hsIsLangJA()`
 
 Returns `true` if current system language is Japanese.
 
-### hsIsLangEN()
-
+### hsIsLangEN
 `bool hsIsLangEN()`
 
 Returns `true` if current system language is English.
+
+***
+
+## Toast Notification
+
+### hsSendToastNotice
+`void hsSendToastNotice(int noticeTypeID, string message, float viewTime, string identifyKey = "", string optionData = "")`  
+
+Displays a notification message with slide-in animation from the right edge of the screen.  
+Maximum **5** notifications can be displayed simultaneously. When additional notifications are sent while 5 are already displayed, they are queued internally and will be shown when display slots become available.  
+
+Non-error notifications can be dismissed by clicking, regardless of remaining display time.
+
+When a toast notification state changes, a Local event `OnReceiveLocalData(string key, string data)` is triggered.    
+`string key` is fixed as the string `"toast"`, `string data` contains the notification information in JsVal format string.    
+
+#### noticeTypeID (int)  
+Notification message type ID. The correspondence between ID and icon is as follows:
+|ID|TYPE|
+|---|---|
+|00|INFO|
+|10|WARNING|
+|20|ERROR|
+|nn|INFO (all non-standard values default to INFO)|
+
+#### message (string)  
+Message text to display in the toast notification.
+
+#### viewTime (float)  
+Sets the time the notification is displayed on screen.  
+1 = 1 second, entry/exit animation time is not included in this duration. (0.5 seconds each)  
+
+#### identifyKey (string)  
+Identification key that users can embed arbitrarily.  
+e.g. `"gimmickNoticeA:Interact_01"`
+
+#### optionData (string)  
+Data that users can embed arbitrarily in the toast notification  
+
+When a toast notification is clicked or dismissed after timeout, it can be received through the Local event `OnReceiveLocalData(string key, string data)`.  
+
+`string key` is fixed as the string `"toast"`.  
+`string data` contains the notification information in JsVal format string.  
+*JsVal is a data format for handling Json data in HeliScript.
+
+#### ● Information stored in data  
+```json
+{
+  "noticeTypeID" : "notification type ID",
+  "identifyKey" : "identification string set by user in `identifyKey`",
+  "message": "message displayed in notification",
+  "sendAction": "timing when this data was sent",
+  "optionData": "data input by user in `optionData`"
+}
