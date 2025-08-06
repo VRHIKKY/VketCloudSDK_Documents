@@ -1,5 +1,7 @@
 # Version 15.8.0
 
+## HeliodorLib (Engine used in browser-displayed worlds)
+
 ## WebXR
 ### Feature Adjustments
 - Changed cursor design

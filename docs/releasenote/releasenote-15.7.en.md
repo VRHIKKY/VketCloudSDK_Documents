@@ -1,5 +1,7 @@
 # Version 15.7.0
 
+## HeliodorLib (Engine used in browser-displayed worlds)
+
 ## WebXR
 ### Bug Fixes
 - Fixed an issue where moving forward with the left stick while the HMD is oriented sideways or backwards would not move in the direction the HMD is facing.
