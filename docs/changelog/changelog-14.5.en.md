@@ -1,5 +1,16 @@
 # SDK Manual Change Log - Ver 14.5
 
+## Updated August 6, 2025
+
+## August 6, 2025 - Added Pages
+
+- Release Notes
+    - [v15.9](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-15.9.html)
+        - Added new page for v15.9.0 release notes
+        - UI bug fix (Fixed an issue where the microphone would become blocked when transitioning to another world using the join function)
+
+---
+
 ## Updated July 18, 2025
 
 ## July 18, 2025 - Added Page
