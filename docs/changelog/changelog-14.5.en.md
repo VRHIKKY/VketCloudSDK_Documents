@@ -1,5 +1,36 @@
 # SDK Manual Change Log - Ver 14.5
 
+## Updated August 6, 2025
+
+## August 6, 2025 - Added Pages
+
+- Release Notes
+    - [v15.9](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-15.9.html)
+        - Added new page for v15.9.0 release notes
+        - UI bug fix (Fixed an issue where the microphone would become blocked when transitioning to another world using the join function)
+
+---
+
+## Updated July 18, 2025
+
+## July 18, 2025 - Added Page
+
+- HeliScript
+    - Built-in Functions
+        - [Local Data](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function_localdata.html)
+            - Added documentation for hsSendLocalData function and OnReceiveLocalData callback
+
+## July 18, 2025 - Edited Pages
+
+- HeliScript
+    - Built-in Functions
+        - [System Functions](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/hs/hs_system_function.html)
+            - Added hsSendToastNotice function
+            - Explained functionality for displaying slide-in notifications at the right edge of the screen
+            - Described simultaneous display of up to 5 notifications and queuing functionality
+
+---
+
 ## Updated July 16, 2025
 
 ## July 16, 2025 - Added Pages
@@ -9,6 +40,20 @@
         - Added v14.5.14 release notes
         - Added upload progress display functionality
         - Added fix for VKC Item Activity JSON corruption issue
+
+---
+
+## Updated July 15, 2025
+
+## July 15, 2025 - Added Pages
+
+- Release Notes
+    - [v15.8](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-15.8.html)
+        - Added new page for v15.8.0 release notes
+        - WebXR feature adjustments (cursor design changes)
+        - WebXR bug fixes (UI click issues for non-menu elements, emergency fix for screen blackout when using mirrors/normal shadow maps)
+        - UI bug fixes (member list count discrepancy issue, global text chat display issue when blocking functionality is used)
+        - HeliScript function additions (hsSendToastNotice function, hsSendLocalData function and OnReceiveLocalData callback)
 
 ---
 

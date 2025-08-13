@@ -1,5 +1,36 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年8月6日更新
+
+## 2025年8月6日 - 追加されたページ
+
+- リリースノート
+    - [v15.9](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-15.9.html)
+        - v15.9.0のリリースノートの新しいページを追加
+        - UI不具合修正（合流機能で他ワールドに遷移するとマイクがブロック状態になる不具合を修正）
+
+---
+
+## 2025年7月18日更新
+
+## 2025年7月18日 - 追加されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [ローカルデータ](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function_localdata.html)
+            - hsSendLocalData関数とOnReceiveLocalDataコールバックの説明を追加
+
+## 2025年7月18日 - 編集されたページ
+
+- HeliScript
+    - 組み込み関数
+        - [システム関数](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/hs/hs_system_function.html)
+            - hsSendToastNotice関数を追加
+            - 画面右端にスライドイン通知を表示する機能を説明
+            - 最大5件までの同時表示とキューイング機能を記述
+
+---
+
 ## 2025年7月16日更新
 
 ## 2025年7月16日 - 追加されたページ
@@ -9,6 +40,20 @@
         - v14.5.14のリリースノートを追加
         - アップロードプログレス表示機能を追加
         - VKC Item Activity JSON破損不具合の修正を追加
+
+---
+
+## 2025年7月15日更新
+
+## 2025年7月15日 - 追加されたページ
+
+- リリースノート
+    - [v15.8](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-15.8.html)
+        - v15.8.0のリリースノートの新しいページを追加
+        - WebXR機能調整（カーソルのデザイン変更）
+        - WebXR不具合修正（通常のメニュー以外のUIクリック問題、ミラー/ノーマルシャドウマップ使用時の画面黒化問題の応急対応）
+        - UI不具合修正（メンバー一覧の人数乖離問題、ブロック機能使用時のグローバルテキストチャット表示問題）
+        - HeliScript関数追加（hsSendToastNotice関数、hsSendLocalData関数およびOnReceiveLocalDataコールバック）
 
 ---
 
