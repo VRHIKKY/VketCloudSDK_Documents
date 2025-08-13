@@ -1,5 +1,7 @@
 # Version 15.6.0
 
+## HeliodorLib (Engine used in browser-displayed worlds)
+
 ## WebXR
 ### Feature Additions
 - Added WebXR support functionality available on Quest series devices from Quest 2 onwards.
