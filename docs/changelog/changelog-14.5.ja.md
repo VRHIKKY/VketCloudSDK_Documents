@@ -1,16 +1,5 @@
 # SDK Manual Change Log - Ver 14.5
 
-## 2025年8月6日更新
-
-## 2025年8月6日 - 追加されたページ
-
-- リリースノート
-    - [v15.9](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-15.9.html)
-        - v15.9.0のリリースノートの新しいページを追加
-        - UI不具合修正（合流機能で他ワールドに遷移するとマイクがブロック状態になる不具合を修正）
-
----
-
 ## 2025年7月18日更新
 
 ## 2025年7月18日 - 追加されたページ
