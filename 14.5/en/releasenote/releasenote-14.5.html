@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#version-14514" class="md-skip">
+        <a href="#version-14516" class="md-skip">
           Skip to content
         </a>
       
@@ -7366,6 +7366,8 @@
       
         
       
+        
+      
     
     
     
@@ -7393,6 +7395,27 @@
             v15.x
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="releasenote-15.9.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v15.9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -7703,15 +7726,6 @@
   
     <nav class="md-nav" aria-label="SDK (Editor Extension Tool for Creating Worlds in Unity)">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#new-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      New Features
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#fixed-issues" class="md-nav__link">
@@ -11593,15 +11607,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#new-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      New Features
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#fixed-issues" class="md-nav__link">
     <span class="md-ellipsis">
       Fixed Issues
@@ -11631,37 +11636,63 @@
                   
 
 
-<h1 id="version-14514">Version 14.5.14</h1>
+<h1 id="version-14516">Version 14.5.16</h1>
 <h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
+<h3 id="fixed-issues">Fixed Issues</h3>
+<ul>
+<li><strong>Fixed HEOExporter Material Sharing Function</strong></li>
+<li>Issue: Material sharing not working correctly, causing massive duplication of materials</li>
+<li>Before the fix, 580 identical materials were generated, causing abnormally large file sizes (approximately 23MB)</li>
+<li>
+<p>This fix achieves optimization of memory usage and significant reduction in file size</p>
+</li>
+<li>
+<p><strong>Fixed URLFrameActivity In-Scene Preview Display</strong></p>
+</li>
+<li>Issue: URLFrameActivity preview not displaying in the scene</li>
+<li>Fixed the issue where URLFrameActivity would not display even when in-scene visualization was enabled</li>
+<li>
+<p>This fix enables more accurate preview functionality during development, improving development efficiency</p>
+</li>
+<li>
+<p><strong>Fixed VKC Item Activity Rotation Display</strong></p>
+</li>
+<li>Issue: After changing the Rotation value of VKC Item Activity, the display would reset to 0 degrees when running Build &amp; Run or in-scene visualization</li>
+<li>Fixed the inconsistency where only the Unity Scene display would reset while the actual in-game display showed the correct rotation value</li>
+<li>This fix provides more accurate visual confirmation during development, improving the development experience</li>
+</ul>
+<hr />
+<h1 id="version-14514">Version 14.5.14</h1>
+<h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity_1">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
 <h3 id="new-features">New Features</h3>
 <ul>
 <li>Implemented upload progress display functionality.</li>
 <li>The "Uploading" status and progress rate can be confirmed via dialog or progress bar.</li>
 </ul>
-<h3 id="fixed-issues">Fixed Issues</h3>
+<h3 id="fixed-issues_1">Fixed Issues</h3>
 <ul>
 <li>Fixed an issue where the Activity JSON content would become corrupted when editing VKC Item Activity.</li>
 <li>Fixed the problem where Activity.json content would be modified even without changes when exiting VKC Item Activity edit mode (toggling On/Off or Apply)</li>
 </ul>
 <hr />
 <h1 id="version-14510">Version 14.5.10</h1>
-<h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity_1">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
-<h3 id="fixed-issues_1">Fixed Issues</h3>
+<h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity_2">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
+<h3 id="fixed-issues_2">Fixed Issues</h3>
 <ul>
 <li>Fixed an issue where textures applied to materials would be removed when initiating another build/upload while texture override was enabled and a build/upload was already in progress.</li>
 <li>Improved UI to prevent the build/upload button from being pressed again while a build/upload is in progress.</li>
 </ul>
 <hr />
 <h1 id="version-1457">Version 14.5.7</h1>
-<h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity_2">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
-<h3 id="fixed-issues_2">Fixed Issues</h3>
+<h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity_3">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
+<h3 id="fixed-issues_3">Fixed Issues</h3>
 <ul>
 <li>In HeliodorLib 15.3, fixed an issue where in-game content was not loaded properly during a local build (Build And Run).</li>
 </ul>
 <hr />
 <h1 id="version-1456">Version 14.5.6</h1>
-<h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity_3">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
-<h3 id="fixed-issues_3">Fixed Issues</h3>
+<h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity_4">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
+<h3 id="fixed-issues_4">Fixed Issues</h3>
 <p>The features that were rolled back in version 14.4.12 have been restored in version 14.5.6:</p>
 <ul>
 <li><strong>VKC Item Object:</strong> Pickable</li>

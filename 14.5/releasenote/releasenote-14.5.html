@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#version-14514" class="md-skip">
+        <a href="#version-14516" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -7366,6 +7366,8 @@
       
         
       
+        
+      
     
     
     
@@ -7393,6 +7395,27 @@
             v15.x
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="releasenote-15.9.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v15.9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -7706,15 +7729,6 @@
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      新機能
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       修正された不具合
     </span>
@@ -11595,15 +11609,6 @@
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      新機能
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
       修正された不具合
     </span>
   </a>
@@ -11631,37 +11636,63 @@
                   
 
 
-<h1 id="version-14514">Version 14.5.14</h1>
+<h1 id="version-14516">Version 14.5.16</h1>
 <h2 id="sdkunityeditor">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
-<h3 id="_1">新機能</h3>
+<h3 id="_1">修正された不具合</h3>
+<ul>
+<li><strong>HEOExporterのマテリアル共有機能の修正</strong></li>
+<li>問題: マテリアル共有が正しく動作せず、大量のマテリアルが重複生成される問題</li>
+<li>修正前は同一マテリアルが580個生成され、ファイルサイズが異常に大きくなる（約23MB）現象が発生</li>
+<li>
+<p>この修正により、メモリ使用量の最適化とファイルサイズの大幅な削減を実現</p>
+</li>
+<li>
+<p><strong>URLFrameActivityのシーン内プレビュー表示の修正</strong></p>
+</li>
+<li>問題: URLFrameActivityがシーン上にプレビューが表示されない問題</li>
+<li>シーン内可視化を有効にしてもURLFrameアクティビティが表示されない状態を修正</li>
+<li>
+<p>この修正により、開発時のプレビュー機能がより正確に動作し、開発効率が向上します</p>
+</li>
+<li>
+<p><strong>VKC Item Activityの回転表示の修正</strong></p>
+</li>
+<li>問題: VKC Item ActivityのRotation値を変更後、ビルドランまたはシーン内可視化を実行すると表示が0度にリセットされる問題</li>
+<li>Unity Scene上での表示のみがリセットされ、実際のゲーム内では正しい回転値で表示される不整合を修正</li>
+<li>この修正により、開発時の視覚的な確認がより正確になり、開発体験が向上します</li>
+</ul>
+<hr />
+<h1 id="version-14514">Version 14.5.14</h1>
+<h2 id="sdkunityeditor_1">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
+<h3 id="_2">新機能</h3>
 <ul>
 <li>アップロードのプログレス表示機能を実装しました。</li>
 <li>ダイアログまたはプログレスバーで「アップロード中」の状態と進捗率が確認できるようになりました。</li>
 </ul>
-<h3 id="_2">修正された不具合</h3>
+<h3 id="_3">修正された不具合</h3>
 <ul>
 <li>VKC Item Activityを編集するとActivityのJSONの中身が壊れる不具合を修正しました。</li>
 <li>VKC Item Activityの編集モードを離脱する（On/Offの切り替えまたはApply）際に、変更がなくてもActivity.jsonの内容が変更される問題</li>
 </ul>
 <hr />
 <h1 id="version-14510">Version 14.5.10</h1>
-<h2 id="sdkunityeditor_1">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
-<h3 id="_3">修正された不具合</h3>
+<h2 id="sdkunityeditor_2">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
+<h3 id="_4">修正された不具合</h3>
 <ul>
 <li>テクスチャオーバーライドが有効なビルド・アップロード処理中に再度ビルド・アップロードを実行すると、マテリアルに設定されたテクスチャが外れる不具合を修正しました。</li>
 <li>ビルド・アップロード処理中は再度ビルド・アップロードボタンを押下できないようにUIを改善しました。</li>
 </ul>
 <hr />
 <h1 id="version-1457">Version 14.5.7</h1>
-<h2 id="sdkunityeditor_2">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
-<h3 id="_4">修正された不具合</h3>
+<h2 id="sdkunityeditor_3">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
+<h3 id="_5">修正された不具合</h3>
 <ul>
 <li>HeliodorLibが15.3の時に、ローカルビルド(Build And Run)時に、インゲームが適切にロードされない不具合を修正しました。</li>
 </ul>
 <hr />
 <h1 id="version-1456">Version 14.5.6</h1>
-<h2 id="sdkunityeditor_3">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
-<h2 id="_5">修正された不具合</h2>
+<h2 id="sdkunityeditor_4">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
+<h2 id="_6">修正された不具合</h2>
 <p>以下14.4.12でロールバックされた機能が14.5.6で機能が復活いたしました<br></p>
 <ul>
 <li>VKC Item ObjectのPickable</li>
@@ -11671,11 +11702,11 @@
 <li>VKC Setting PlayerのDespawn Height(y)</li>
 <li>VKC Item FieldのForce Collider Disable</li>
 </ul>
-<h2 id="_6">パーティクルエディター</h2>
+<h2 id="_7">パーティクルエディター</h2>
 <p>プロパティの数値入力欄をクリックし、数値を入力しても、数値が正常に反映されない不具合が修正されました。<br>
 また、操作後はチェックボックスへの入力などが正常に行えなくなる不具合も修正されました。<br></p>
 <p>ただ、注意点として、SDK14.5.6時点でも、画面解像度が100%より上ですと、不具合が再発する可能性がありまますので、「ディスプレイ」の設定から画面解像度を100%に設定してください。</p>
-<h2 id="_7">その他の不具合（無限ロード）</h2>
+<h2 id="_8">その他の不具合（無限ロード）</h2>
 <p>SDK14.4.12を新規に導入した際、もしくは、Install WizardでSDK13.7.7→SDK14.4.12、SDK14.2.1→SDK14.4.12にアップデートした際に、ロードが終わらない場合がありました。<br></p>
 <p>こちらは、SDK13.7.7 -&gt; 14.5.6にアップデートする際は、無限ロード問題が修正されました。<br></p>
 <p>ただし、SDK14.2.1、14.4.12　-&gt; SDK14.5.6の場合は依然と、無限ロードは修正されておりません。<br></p>
