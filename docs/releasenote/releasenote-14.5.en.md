@@ -11,7 +11,7 @@
 
 - **Fixed Some Activity In-Scene Preview Display**
   - Issue: Some Activity preview not displaying in the scene
-  - Fixed the issue where URLFrameActivity would not display even when in-scene visualization was enabled
+  - Fixed the issue where some Activity would not display even when in-scene visualization was enabled
   - This fix enables more accurate preview functionality during development, improving development efficiency
 
 - **Fixed VKC Item Activity Rotation Display**
