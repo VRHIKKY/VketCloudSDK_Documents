@@ -1,13 +1,22 @@
 # SDK Manual Change Log - Ver 14.5
 
-## Updated August 6, 2025
+## Updated August 15, 2025
 
-## August 6, 2025 - Added Pages
+## August 15, 2025 - Added Pages
 
 - Release Notes
     - [v15.9](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-15.9.html)
         - Added new page for v15.9.0 release notes
         - UI bug fix (Fixed an issue where the microphone would become blocked when transitioning to another world using the join function)
+
+## August 15, 2025 - Edited Pages
+
+- Release Notes
+    - [v14.5.16](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-14.5.html#version-14516)
+        - Added v14.5.16 release notes
+        - Fixed URLFrameActivity in-scene preview display issue
+        - Fixed HEOExporter material duplication issue (reduced from 580 duplicates to proper count)
+        - Fixed VKC Item Activity rotation value reset issue
 
 ---
 

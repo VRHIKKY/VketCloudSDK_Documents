@@ -1,13 +1,22 @@
 # SDK Manual Change Log - Ver 14.5
 
-## 2025年8月6日更新
+## 2025年8月15日更新
 
-## 2025年8月6日 - 追加されたページ
+## 2025年8月15日 - 追加されたページ
 
 - リリースノート
     - [v15.9](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-15.9.html)
         - v15.9.0のリリースノートの新しいページを追加
         - UI不具合修正（合流機能で他ワールドに遷移するとマイクがブロック状態になる不具合を修正）
+
+## 2025年8月15日 - 編集されたページ
+
+- リリースノート
+    - [v14.5.16](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-14.5.html#version-14516)
+        - v14.5.16のリリースノートを追加
+        - URLFrameActivityのシーン内プレビュー表示不具合を修正
+        - HEOExporterのマテリアル重複生成問題を修正（580個→適正数に削減）
+        - VKC Item Activityの回転値リセット問題を修正
 
 ---
 
