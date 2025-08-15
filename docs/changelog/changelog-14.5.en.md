@@ -14,7 +14,7 @@
 - Release Notes
     - [v14.5.16](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/releasenote/releasenote-14.5.html#version-14516)
         - Added v14.5.16 release notes
-        - Fixed URLFrameActivity in-scene preview display issue
+        - Fixed some Activity in-scene preview display issue
         - Fixed HEOExporter material duplication issue (reduced from 580 duplicates to proper count)
         - Fixed VKC Item Activity rotation value reset issue
 

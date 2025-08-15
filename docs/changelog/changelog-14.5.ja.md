@@ -14,7 +14,7 @@
 - リリースノート
     - [v14.5.16](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/releasenote/releasenote-14.5.html#version-14516)
         - v14.5.16のリリースノートを追加
-        - URLFrameActivityのシーン内プレビュー表示不具合を修正
+        - 一部Activityのシーン内プレビュー表示不具合を修正
         - HEOExporterのマテリアル重複生成問題を修正（580個→適正数に削減）
         - VKC Item Activityの回転値リセット問題を修正
 
