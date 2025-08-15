@@ -1,3 +1,26 @@
+# Version 14.5.16
+
+## SDK (Editor Extension Tool for Creating Worlds in Unity)
+
+### Fixed Issues
+
+- **Fixed HEOExporter Material Sharing Function**
+  - Issue: Material sharing not working correctly, causing massive duplication of materials
+  - Before the fix, 580 identical materials were generated, causing abnormally large file sizes (approximately 23MB)
+  - This fix achieves optimization of memory usage and significant reduction in file size
+
+- **Fixed URLFrameActivity In-Scene Preview Display**
+  - Issue: URLFrameActivity preview not displaying in the scene
+  - Fixed the issue where URLFrameActivity would not display even when in-scene visualization was enabled
+  - This fix enables more accurate preview functionality during development, improving development efficiency
+
+- **Fixed VKC Item Activity Rotation Display**
+  - Issue: After changing the Rotation value of VKC Item Activity, the display would reset to 0 degrees when running Build & Run or in-scene visualization
+  - Fixed the inconsistency where only the Unity Scene display would reset while the actual in-game display showed the correct rotation value
+  - This fix provides more accurate visual confirmation during development, improving the development experience
+
+---
+
 # Version 14.5.14
 
 ## SDK (Editor Extension Tool for Creating Worlds in Unity)
