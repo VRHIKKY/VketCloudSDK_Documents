@@ -10,7 +10,8 @@ Using the particle editor, diverse particle effects can be created by editing th
     - SDK 13.7.7<br>
     - SDK 13.4.1<br>
     - SDK 12.3.4<br>
-    An updated SDK (version 14.5.X) including the fix to the mentioned issue is planned to be released in the near future. We will notify users as soon as the update is released.
+    Please install the latest SDK version (SDK 14.5.6 or later) which includes a fix for this issue.<br>
+    However, please note that even with SDK 14.5.6 or later, the issue may recur if the screen resolution is set above 100%. Please set the screen resolution to 100% from the "Display" settings.
 
 ## Transform
 
