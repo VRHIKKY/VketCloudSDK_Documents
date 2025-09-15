@@ -1,5 +1,21 @@
 {% extends "base.html" %}
 
+{% block outdated %}
+  {% if config.extra.version and config.extra.version != "latest" %}
+    {% if i18n_page_locale == "ja" %}
+      最新バージョンを表示していません。
+      <a href="{{ '../' ~ base_url }}">
+        <strong>最新バージョンはこちら</strong>
+      </a>
+    {% else %}
+      You're not viewing the latest version.
+      <a href="{{ '../' ~ base_url }}">
+        <strong>Click here to go to latest.</strong>
+      </a>
+    {% endif %}
+  {% endif %}
+{% endblock %}
+
 {% block extrahead %}
   {{ super() }}
   <meta name="google-site-verification" content="00M2sXmq2-lN8vSLlXsdetq0upC9-Zk9CyvkryyNgkw" />
