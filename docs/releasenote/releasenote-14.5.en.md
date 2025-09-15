@@ -9,9 +9,9 @@
   - Before the fix, 580 identical materials were generated, causing abnormally large file sizes (approximately 23MB)
   - This fix achieves optimization of memory usage and significant reduction in file size
 
-- **Fixed URLFrameActivity In-Scene Preview Display**
-  - Issue: URLFrameActivity preview not displaying in the scene
-  - Fixed the issue where URLFrameActivity would not display even when in-scene visualization was enabled
+- **Fixed Some Activity In-Scene Preview Display**
+  - Issue: Some Activity preview not displaying in the scene
+  - Fixed the issue where some Activity would not display even when in-scene visualization was enabled
   - This fix enables more accurate preview functionality during development, improving development efficiency
 
 - **Fixed VKC Item Activity Rotation Display**
