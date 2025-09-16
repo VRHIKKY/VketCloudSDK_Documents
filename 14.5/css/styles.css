@@ -8,3 +8,179 @@
 .md-footer__inner:not([hidden]) {
   display: block;
 }
+
+/* Tag Icons Styling */
+.tag-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 600;
+  margin: 0 4px;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Tag icon link styling */
+.tag-icon-link {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.tag-icon-link:hover {
+  text-decoration: none !important;
+}
+
+.tag-icon svg {
+  flex-shrink: 0;
+}
+
+/* Deprecated tag styling */
+.tag-deprecated {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+  border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+.tag-deprecated:hover {
+  background-color: rgba(220, 53, 69, 0.15);
+  border-color: rgba(220, 53, 69, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(220, 53, 69, 0.2);
+}
+
+/* Unrecommended tag styling */
+.tag-unrecommended {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ff9800;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.tag-unrecommended:hover {
+  background-color: rgba(255, 193, 7, 0.15);
+  border-color: rgba(255, 193, 7, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(255, 193, 7, 0.2);
+}
+
+/* Experimental tag styling */
+.tag-experimental {
+  background-color: rgba(156, 39, 176, 0.1);
+  color: #9c27b0;
+  border: 1px solid rgba(156, 39, 176, 0.3);
+}
+
+.tag-experimental:hover {
+  background-color: rgba(156, 39, 176, 0.15);
+  border-color: rgba(156, 39, 176, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(156, 39, 176, 0.2);
+}
+
+/* New tag styling */
+.tag-new {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.tag-new:hover {
+  background-color: rgba(76, 175, 80, 0.15);
+  border-color: rgba(76, 175, 80, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+}
+
+/* Beta tag styling */
+.tag-beta {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+  border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+.tag-beta:hover {
+  background-color: rgba(33, 150, 243, 0.15);
+  border-color: rgba(33, 150, 243, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}
+
+/* Dark mode adjustments for all tag icons */
+[data-md-color-scheme="slate"] .tag-deprecated {
+  background-color: rgba(220, 53, 69, 0.2);
+  color: #ff6b7a;
+  border-color: rgba(220, 53, 69, 0.4);
+}
+
+[data-md-color-scheme="slate"] .tag-deprecated:hover {
+  background-color: rgba(220, 53, 69, 0.3);
+  border-color: rgba(220, 53, 69, 0.6);
+}
+
+[data-md-color-scheme="slate"] .tag-unrecommended {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #ffb74d;
+  border-color: rgba(255, 193, 7, 0.4);
+}
+
+[data-md-color-scheme="slate"] .tag-unrecommended:hover {
+  background-color: rgba(255, 193, 7, 0.3);
+  border-color: rgba(255, 193, 7, 0.6);
+}
+
+[data-md-color-scheme="slate"] .tag-experimental {
+  background-color: rgba(186, 104, 200, 0.2);
+  color: #ba68c8;
+  border-color: rgba(186, 104, 200, 0.4);
+}
+
+[data-md-color-scheme="slate"] .tag-experimental:hover {
+  background-color: rgba(186, 104, 200, 0.3);
+  border-color: rgba(186, 104, 200, 0.6);
+}
+
+[data-md-color-scheme="slate"] .tag-new {
+  background-color: rgba(102, 187, 106, 0.2);
+  color: #66bb6a;
+  border-color: rgba(102, 187, 106, 0.4);
+}
+
+[data-md-color-scheme="slate"] .tag-new:hover {
+  background-color: rgba(102, 187, 106, 0.3);
+  border-color: rgba(102, 187, 106, 0.6);
+}
+
+[data-md-color-scheme="slate"] .tag-beta {
+  background-color: rgba(66, 165, 245, 0.2);
+  color: #42a5f5;
+  border-color: rgba(66, 165, 245, 0.4);
+}
+
+[data-md-color-scheme="slate"] .tag-beta:hover {
+  background-color: rgba(66, 165, 245, 0.3);
+  border-color: rgba(66, 165, 245, 0.6);
+}
+
+/* Tag text styling */
+.tag-text {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 44.9375em) {
+  .tag-icon {
+    font-size: 0.7em;
+    padding: 1px 4px;
+    margin: 0 2px;
+  }
+  
+  .tag-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+}
