@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 14.5
 
-## Updated September 10, 2025
+## Updated September 16, 2025
 
-## September 10, 2025 - Edited Pages
+## September 16, 2025 - Edited Pages
 
 - SDK Tools
     - Particle Editor
