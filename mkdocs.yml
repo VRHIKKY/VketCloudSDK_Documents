@@ -69,6 +69,9 @@ extra:
     
 use_directory_urls: false
 
+hooks:
+  - custom_theme/tag_icons.py
+
 plugins:
   - search:
       lang: 
@@ -99,6 +102,7 @@ plugins:
           nav_translations:
             # 概要
             Introduction: はじめに
+            Tag Conventions: タグ規約
             # Vket Cloud SDKについて
             About Vket Cloud SDK: Vket Cloud SDKについて
             Setup Account: アカウント準備
@@ -781,4 +785,5 @@ nav:
         - v3.4: changelog/changelog-3.4.md
         - v3.3: changelog/changelog-3.3.md
         - v3.2: changelog/changelog-3.2.md
+- Tag Conventions: TagConventions.md
 - License: common/License.md
