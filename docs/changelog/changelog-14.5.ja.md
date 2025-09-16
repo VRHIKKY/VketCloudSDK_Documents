@@ -1,5 +1,20 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年9月16日更新
+
+## 2025年9月16日 - 編集されたページ
+
+- SDK Tools
+    - パーティクルエディター
+        - [パーティクルエディター概要](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/particleeditor/pe_about_particleeditor.html)
+            - SDK 14.5.6以降であっても画面の拡大/縮小が100%以上に設定されている場合、不具合が再発する可能性があることを追記
+            - ディスプレイ設定で画面の拡大/縮小を100%に設定する対処法を追記
+        - [パーティクルエディター：プロパティ一覧](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/particleeditor/pe_about_properties.html)
+            - SDK 14.5.6以降であっても画面の拡大/縮小が100%以上に設定されている場合、不具合が再発する可能性があることを追記
+            - ディスプレイ設定で画面の拡大/縮小を100%に設定する対処法を追記
+
+---
+
 ## 2025年8月15日更新
 
 ## 2025年8月15日 - 追加されたページ
