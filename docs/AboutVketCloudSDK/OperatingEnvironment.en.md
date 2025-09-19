@@ -4,6 +4,7 @@ Vket Cloud SDK requires the following Unity editor version:
 
 - **Unity 2019.4.31f1** (SDK13.7.7 and earlier)
 - **Unity 2022.3.6f1** (SDK13.7.7 and later)
+- **Unity 6** (SDK16.0 and later)
 
 * SDK13.7.7 supports both versions.
 

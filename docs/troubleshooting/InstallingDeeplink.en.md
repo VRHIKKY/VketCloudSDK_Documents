@@ -4,7 +4,7 @@ If the Vket Cloud SDK does not boot after installing / show up on the tabs, ther
 In such cases, the issue may be solved by manually importing the Deeplink package.
 
 !!! warning "Note to macOS users"
-    If you are using a macOS environment having Safari, Unity 2019, and Unity 2022 installed, this may cause an issue disabling [login to Vket Cloud SDK](../AboutVketCloudSDK/LoginSDK.md). <br>
+    If you are using a macOS environment having Safari, Unity 2019, Unity 2022, or Unity 6 installed, this may cause an issue disabling [login to Vket Cloud SDK](../AboutVketCloudSDK/LoginSDK.md). <br>
     In such case, please uninstall Unity 2022 from the Unity Hub, restart the OS, and retry login.
 
 ## How to import the Deeplink package
