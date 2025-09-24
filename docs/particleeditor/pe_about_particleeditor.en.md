@@ -14,7 +14,7 @@ This tool offers exactly the same look as in actual Vket Cloud worlds, for the t
     - SDK 13.4.1<br>
     - SDK 12.3.4<br>
     Please install the latest SDK version (SDK 14.5.6 or later) which includes a fix for this issue.<br>
-    However, please note that even with SDK 14.5.6 or later, the issue may recur if the screen resolution is set above 100%. Please set the screen resolution to 100% from the "Display" settings.
+    However, please note that even with SDK 14.5.6 or later, the issue may recur if the display scaling is set above 100%. Please make sure to set the display scaling to 100% in the Windows "Display settings".
 
 ## Requirements
 
