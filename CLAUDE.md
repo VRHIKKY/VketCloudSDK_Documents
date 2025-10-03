@@ -47,10 +47,11 @@ Key directories:
 
 ## Git Workflow
 
-- Current branch: `claude/issue-719-20250624_030637`
 - Main branch for PRs: `master`
-- Version branches: `version/sdk-X.Y` format
+- Version branches: `version/sdk-X.Y` format (e.g., `version/sdk-14.5`)
 - External contributions welcome following the contribution policy in README.md
+- For version-specific documentation changes, target the appropriate version branch
+- Issue tracking and Claude Assistant integration via GitHub Actions
 
 ## Key Configuration
 
@@ -104,9 +105,21 @@ Key directories:
 - Internal cross-references use relative paths
 - Code blocks specify language for syntax highlighting
 - Admonitions (notes, warnings) follow Material for MkDocs syntax
-- Place images in section-specific `img/` subdirectories
-- Follow existing naming conventions for files and directories
-- Version-specific changes should target appropriate version branches
+- Image paths are relative to the markdown file location
+- No built-in linting or formatting tools - manual verification required
+
+### Testing & Validation
+Since there are no automated testing or linting tools:
+1. Always run `mkdocs serve` to preview changes locally
+2. Build with `mkdocs build` to check for errors
+3. Manually verify both language versions render correctly
+4. Check that all links and images work properly
+5. Test language switching functionality
+
+### GitHub Integration
+- Repository uses GitHub Actions for CI/CD
+- Claude Assistant bot responds to issues and PRs with `@claude` mention
+- Automated workflows in `.github/workflows/` directory
 
 # important-instruction-reminders
 Do what has been asked; nothing more, nothing less.
