@@ -9,6 +9,9 @@ Sets scroll animation on the UV of the object's material.
 |Wait Time |Pause time for each scroll |
 |Scroll Time|Playback time for one scroll |
 
+!!! caution "Caution"
+    When Scroll Time(s) is set to 0, it will stop and be displayed.
+
 ## Step UV List
 | Label | function |
 | ---- | ---- |
