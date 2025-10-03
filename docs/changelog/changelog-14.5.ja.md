@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.5
 
+## 2025年10月3日更新
+
+## 2025年10月3日 - 変更されたページ
+
+- VKCComponents
+    - [VKC Node UV Scroller](../VKCComponents/VKCNodeUVScroller.ja.md)
+        - Scroll Timeが0に設定された場合の動作について注意文を追加
+
 ## 2025年8月15日更新
 
 ## 2025年8月15日 - 追加されたページ
