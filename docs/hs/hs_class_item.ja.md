@@ -2,11 +2,11 @@
 
 Vket Cloud上でワールドを構成する際、Player以外の各要素はItemとして表現されます。<br>
 
-Itemは、VKC Item Field、VKC Item Objectなど、Vket Cloud SDKによって追加されたコンポーネントを持つゲームオブジェクトを配置・設定することでシーンに出力することが可能です。
+[VKC Item Field](../VKCComponents/VKCItemField.md), [VKC Item Object](../VKCComponents/VKCItemObject.md), [VKC Item Plane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md)などがこれにあたります。
 
-Itemクラスは、上記のItemをHeliScriptにて操作するためのものです。
+Itemクラスは、ワールド内に配置された[VKC Item Field](../VKCComponents/VKCItemField.md)及びその子オブジェクトであるNodeなど、個々のアイテムをHeliScriptにて操作するためのものです。
 
-hsItemGet() などの関数を呼び出すことで、Itemクラスのインスタンスを取得できます。
+hsItemGet() などの関数を呼び出すことで、特定のアイテムを表すItemクラスのインスタンスを取得できます。
 
 Itemクラスは多くのメソッドを持ち、これらのメソッドを呼び出すことで、様々な操作を行うことが可能です。
 
@@ -31,7 +31,7 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemGet(string itemName)`
 
-グローバル関数。指定した名前でItemを取得する。
+グローバル関数。指定した名前でVKC Item Field以下のアイテムを取得し、Itemクラスのインスタンスとして返す。
 
 ### hsItemGetSelf
 
@@ -43,8 +43,8 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemCreateClone(Item Origin, string Name = "")`
 
-グローバル関数。指定したアイテムのクローンを同じ場所に作成します。クローン可能なアイテムタイプは`object`です。  
-Originにはオリジナルのアイテムオブジェクトを渡します。  
+グローバル関数。指定したアイテムのクローンを同じ場所に作成します。クローン可能なアイテムタイプは`object`・`textplane`・`activity`です。
+Originにはオリジナルのアイテムオブジェクトを渡します。
 Nameにはクローンアイテムに設定したいアイテム名を任意で渡します。指定が無い場合は自動的に名前が付けられます。
 
 ### hsItemDestroyClone
@@ -52,6 +52,27 @@ Nameにはクローンアイテムに設定したいアイテム名を任意で�
 `void hsItemDestroyClone(Item item)`
 
 グローバル関数。指定したクローンアイテムを削除します。クローン以外のアイテムを削除することはできません。
+
+アイテムを削除した場合であっても、削除前に取得していたItemクラスのインスタンスと、そのItemが持つコンポーネントのインスタンスは存在し続けます。ただし、実際にはItemに対する全ての操作が無視されます。
+
+Itemインスタンスが削除済みかどうかを確認する場合は、IsAlive メソッドを利用してください。
+
+コンポーネントの場合は、削除されると "===" または "!==" 演算子による比較で、自動的に null として扱われます。なので「nullであれば削除されている」と判定できます。
+
+### hsItemCreateShallowClone
+
+`bool hsItemCreateShallowClone(Item Origin, HSShallowCloneParam param)`
+
+グローバル関数。`object`タイプのアイテムのみ対応。指定したアイテムの浅いクローン(以下 ShallowClone)を作成します。引数にはHSShallowCloneParamを渡します。
+ShallowCloneとはhsItemCreateCloneとは対称的にアイテム情報を一切コピーせずに、HSShallowCloneParamに設定した情報にそって、インスタンス描画だけを行う機能です。
+ShallowCloneは通常のクローンよりも高速に動作します。一方でアイテムとしてクローンしていないため、座標や回転などのアイテム情報の更新ができません。
+SDKでInstanceDrawを有効にする必要があります。
+
+### hsItemDestroyAllShallowClone
+
+`void hsItemDestroyAllShallowClone(Item Origin)`
+
+グローバル関数。指定したアイテムのShallowCloneを全て削除します。
 
 ***
 
@@ -75,7 +96,15 @@ hsItemGet() などで Item を取得する場合、同一の Item であって�
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
-    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### IsAlive
+
+`public bool IsAlive()`
+
+このインスタンスが生存している場合は true を返す。
+
+このインスタンスがクローンされたもので、すでに削除されている場合は false を返す。
 
 ### GetName
 
@@ -119,9 +148,11 @@ Item 自身から見て、親に相当する Item を取得する。
 
 ### SetPos
 
-`public void SetPos(Vector3 pos)`
+`public void SetPos(Vector3 Pos, bool CollisionDetection = false)`
 
 Item を指定した座標に移動させる。
+
+CollisionDetectionがtrueの場合は、プレイヤーアバターと同等の衝突判定が関数実行後に1フレーム分だけおこなわれます。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
@@ -157,13 +188,6 @@ Item の座標を取得する。
 `public Vector3 GetWorldPos()`
 
 Item のワールド座標を取得する。
-
-このItemがどこにあるのか(Activityの外か中か)に関わらず、常にワールド空間における座標を返します。
-
-???+ warning "使用上の注意"
-    Activityの場合でワールド座標を取得したいときはこちらを使用してください。
-    
-    Activityではない場合は通常はGetPosを使用してください。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -247,11 +271,13 @@ ItemのスケールをVector3で設定します。
 
 ### MovePos
 
-`public void MovePos(Vector3 pos, float time, bool CollisionDetection = false)`
+`public void MovePos(Vector3 pos, float time, bool CollisionDetection = false, bool Gravity = true)`
 
 posで指定した座標に、time秒かけて Item を移動させる。
 
 CollisionDetectionがtrueの場合は、プレイヤーアバターと同等の衝突判定がおこなわれます。
+
+Gravityがfalseの場合は、衝突判定の重力落下がおこなわれなくなります。
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -510,6 +536,72 @@ Item のロードが完了していた場合は true を、そうでない場合
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
+### GetNodeRotateByIndex
+
+`public Quaternion GetNodeRotateByIndex(int nodeIndex)`
+
+インデックスでノードを指定し、そのノードの回転（Quaternion）を返す。
+
+### GetNodeWorldPosByIndex
+
+`public Vector3 GetNodeWorldPosByIndex(int NodeIndex)`
+
+インデックスでノードを指定し、そのノードのワールド座標系の位置を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeWorldRotateByIndex
+
+`public Quaternion GetNodeWorldRotateByIndex(int NodeIndex)`
+
+インデックスでノードを指定し、そのノードのワールド座標系の回転（Quaternion）を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeWorldScaleByIndex
+
+`public Vector3 GetNodeWorldScaleByIndex(int NodeIndex)`
+
+インデックスでノードを指定し、そのノードのワールド座標系のサイズを返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeWorldPos
+
+`public Vector3 GetNodeWorldPos(string NodeName)`
+
+名前でノードを指定し、そのノードのワールド座標系の位置を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeWorldRotate
+
+`public Quaternion GetNodeWorldRotate(string NodeName)`
+
+名前でノードを指定し、そのノードのワールド座標系の回転（Quaternion）を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeWorldScale
+
+`public Vector3 GetNodeWorldScale(string NodeName)`
+
+名前でノードを指定し、そのノードのワールド座標系のサイズを返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
 ### SetShowNode
 
 `public bool SetShowNode(string nodeName, bool flag)`
@@ -526,6 +618,16 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 名前でノードを指定し、そのノードが表示されている場合は true を、非表示の場合は false を返す。
 
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+
+### SetPosNode
+
+`public bool SetPosNode(string NodeName, Vector3 Pos)`
+
+名前でノードを指定し、そのノードの位置を変更する。
+
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
@@ -538,6 +640,94 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetNodeLocalPos
+
+`public bool SetNodeLocalPos(string NodeName, Vector3 Pos)`
+
+名前でノードを指定し、ローカル座標系でそのノード位置を変更する。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetNodeLocalRotate
+
+`public bool SetNodeLocalRotate(string nodeName, Vector3 rotate)`
+
+名前でノードを指定し、ローカル座標系でそのノードを回転させる。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### SetNodeLocalScale
+
+`public bool SetNodeLocalScale(string NodeName, Vector3 Scale)`
+
+名前でノードを指定し、ローカル座標系でそのノードのサイズを変更する。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeLocalPosByIndex
+
+`public Vector3 GetNodeLocalPosByIndex(int NodeIndex)`
+
+インデックスでノードを指定し、そのノードのローカル座標系の位置を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeLocalRotateByIndex
+
+`public Quaternion GetNodeLocalRotateByIndex(int NodeIndex)`
+
+インデックスでノードを指定し、そのノードのローカル座標系の回転（Quaternion）を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeLocalScaleByIndex
+
+`public Vector3 GetNodeLocalScaleByIndex(int NodeIndex)`
+
+インデックスでノードを指定し、そのノードのローカル座標系のサイズを返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeLocalPos
+
+`public Vector3 GetNodeLocalPos(string NodeName)`
+
+名前でノードを指定し、そのノードのローカル座標系の位置を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeLocalRotate
+
+`public Quaternion GetNodeLocalRotate(string NodeName)`
+
+名前でノードを指定し、そのノードのローカル座標系の回転（Quaternion）を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetNodeLocalScale
+
+`public Vector3 GetNodeLocalScale(string NodeName)`
+
+名前でノードを指定し、そのノードのローカル座標系のサイズを返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
 ### SetEnableCollider
 
@@ -602,6 +792,31 @@ Item のロードが完了していた場合は true を、そうでない場合
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
     - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
+### GetUVScale
+
+`public bool GetUVScale(string materialName, ref float u, ref float v)`
+
+名前でマテリアルを指定し、uvスケールを取得する。変更に失敗すると false を返す。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### GetUVOffset
+
+`public bool GetUVOffset(string materialName, ref float u, ref float v)`
+
+名前でマテリアルを指定し、**原点を左上として**uv座標を取得する。変更に失敗すると false を返す。
+
+!!! warning "UV座標原点について"
+    通常のUnityプロジェクトではUVの原点(0,0)はUVの左下にありますが、HeliScriptでは**左上**を原点としていることにご注意ください。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
 ### SetMaterialColor
 
 `public bool SetMaterialColor(string materialName, float R, float G, float B, float A)`
@@ -610,7 +825,19 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 オブジェクトがロードされていない場合や、未対応のオブジェクトタイプの場合はfalseが返ります。
 
-??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetMaterialColor
+
+`public bool GetMaterialColor(string materialName, ref float R, ref float G, ref float B, ref float A)`
+
+指定したマテリアルの色を取得します。
+
+オブジェクトがロードされていない場合や、未対応のオブジェクトタイプの場合はfalseが返ります。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
     - [VKC Item Object](../VKCComponents/VKCItemObject.md)
 
@@ -632,7 +859,20 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 `public void PlayVideo(string materialName, string url, bool loop)`
 
-再生するマテリアルを指定し、ビデオ再生を開始する。loop に true を指定するとループ再生を行う。
+再生するマテリアルを指定し、ビデオ再生を開始する。loop に true を指定するとループ再生を行う。現在再生中の動画に対してもう一度PlayVideoを呼ぶと、動画が停止する。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### SwitchVideo
+
+`public void SwitchVideo(string materialName, string url, bool loop)`
+
+再生するマテリアルを指定し、ビデオ再生を開始する。loop に true を指定するとループ再生を行う。現在再生中の動画に対してもう一度PlayVideoを呼ぶと、動画が停止する。
+
+※ PlayVideoと同じことを行う関数です。関数名称と挙動を揃えるために追加
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
@@ -678,6 +918,24 @@ Item のロードが完了していた場合は true を、そうでない場合
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPlaneZBias
+
+`public void SetPlaneZBias(float ZBias)`
+
+VKC Item Plane の Z-Bias を設定する。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+
+### GetPlaneZBias
+
+`public float GetPlaneZBias()`
+
+VKC Item Plane の Z-Bias を取得する。
+
+???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
 
 ### SetCamera
 

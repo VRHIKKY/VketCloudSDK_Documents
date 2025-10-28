@@ -41,6 +41,14 @@ Vket Cloudエンジンが起動し、リソースのロードや初期化処理�
 public void OnLoaded()
 ```
 
+## コールバック - 遅延レイヤーのロード完了
+
+UI等のレイヤーは遅延ローディングしています。すべての遅延ロードレイヤーのロードが完了したときに一回だけOnDelayLayersLoaded()が呼び出されます。
+
+```
+public void OnDelayLayersLoaded()
+```
+
 ## コールバック - タブの表示・非表示
 
 ブラウザのタブがアクティブ・非アクティブ化した際にコールバックを受け取ることができます。
@@ -76,10 +84,15 @@ public void OnUnload()
 ```
 public bool OnClickNode(int NodeIndex)
 ```
+または
+```
+public bool OnClickNode(string NodeName)
+```
 
 何らかの処理をおこなった場合はtrueを返すことで、エンジン側のクリック移動などが無効化されます。
+int版ではノードのインデックス、string版ではノード名が引数に渡されます。
 
-互換性のために以下の戻り値の型がvoidのものも定義出来ますが、Sceneファイルのclickablenodesに定義されていない場合はクリック移動などが実行されます。
+互換性のために以下の戻り値の型がvoidのものも定義できますが、Sceneファイルのclickablenodesに定義されていない場合はクリック移動などが実行されます。
 
 ```
 public void OnClickNode(int NodeIndex)
@@ -91,6 +104,14 @@ public void OnClickNode(int NodeIndex)
 
 ```
 public void OnClickEmpty()
+```
+
+## コールバック - 無効空間長押し
+
+以下のようにOnLongPressedEmptyメソッドを定義しておくと、何もない空間を長押ししたときに呼び出されます。
+
+```
+public void OnLongPressedEmpty()
 ```
 
 ## コールバック - AreaCollider
@@ -139,6 +160,98 @@ component CollisionTest
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
         hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
+}
+```
+
+## コールバック - コライダー侵入
+
+以下のようにOnItemTriggerEnter, OnItemTriggerLeaveメソッドを定義しておくと、このコンポーネントを持つItemが別のItem内ノードのコライダーに侵入・退出した時に
+コールバックが呼び出されます。
+
+また、衝突するアイテム・衝突されるアイテムが以下の要件で実装されている必要があります
+
+* 衝突するアイテム
+    * アイテムタイプがObject
+* 衝突されるアイテム
+    * コライダー形状がボックス
+    * コライダータイプがColliderもしくはArea
+
+衝突する側にコライダーを持たせるかは任意ですが、現時点の仕様ではOnItemTriggerEnter, OnItemTriggerLeaveを呼び出す衝突判定には使われません。
+
+```
+component CollisionTest
+{
+    public void OnItemTriggerEnter(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+
+        hsSystemOutput("[OnItemTriggerEnter] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+
+    public void OnItemTriggerLeave(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+
+        hsSystemOutput("[OnItemTriggerLeave] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+}
+```
+
+## コールバック - コライダー衝突
+
+以下のようにOnItemCollisionEnter, OnItemCollisionLeaveメソッドを定義しておくと、このコンポーネントを持つItemがItem.MovePosで移動中に別のItem内ノードのコライダーに衝突・退出した時に
+コールバックが呼び出されます。
+
+また、衝突するアイテム・衝突されるアイテムが以下の要件で実装されている必要があります
+
+* 衝突するアイテム
+    * アイテムタイプがObject
+* 衝突されるアイテム
+    * コライダー形状がボックス
+    * コライダータイプがColliderもしくはArea
+
+衝突する側にコライダーを持たせるかは任意ですが、現時点の仕様ではOnItemCollisionEnter, OnItemCollisionLeaveを呼び出す衝突判定には使われません。
+
+```
+component CollisionTest
+{
+    public void OnItemCollisionEnter(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+
+        hsSystemOutput("[OnItemCollisionEnter] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+
+    public void OnItemCollisionLeave(int ItemInstanceID, int NodeIndex)
+    {
+        Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
+        string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
+
+        hsSystemOutput("[OnItemCollisionLeave] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
+    }
+}
+```
+
+## コールバック - アイテムクローン生成
+
+アイテムクローンが生成されたときに呼び出されます。
+
+```
+public void OnItemCreatedClone()
+{
+}
+```
+
+## コールバック - アイテムクローン破棄
+
+アイテムクローンが破棄されたときに呼び出されます。
+
+```
+public void OnItemDestroyedClone()
+{
 }
 ```
 
@@ -304,6 +417,12 @@ Itemのプロパティが更新されたときに呼び出されます。同一�
 public void OnChangedProperty(string Key, string Value)
 ```
 
+Itemのプロパティが削除されたときに呼び出されます。
+
+```
+public void OnRemovedProperty(string Key)
+```
+
 ## コールバック - メッセージ
 
 ```
@@ -320,3 +439,11 @@ public void OnEmoteChanged(int EmoteIndex)
 
 Playerのエモートが変更（再生）された際に呼ばれます。  
 EmoteIndex に、変更（再生）されたエモートのインデックス値が入ります。
+
+## コールバック - モーションチェンジ
+
+```
+public void OnMotionChanged(string MotionName)
+```
+
+Playerのモーションが変更（再生）された際に呼ばれます。MotionName に、変更（再生）されたモーション名が入ります。

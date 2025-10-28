@@ -78,6 +78,12 @@ Removes the last character of a string.
 
 Deletes one character from the position specified by the argument.
 
+### Replace(string, string)
+
+`public string Replace(string from, string to)`
+
+Replaces all occurrences of the substring from with the string to.
+
 ### Split()
 
 `public list<string> Split()`
