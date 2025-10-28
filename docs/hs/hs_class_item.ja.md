@@ -1192,7 +1192,7 @@ overrides設定を取得します。
 `public float GetVolume()`
 
 SetVolume()で設定した音量を取得します
-初期値は0.2です
+初期値は1.0です
 
 ??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
