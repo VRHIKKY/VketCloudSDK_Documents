@@ -1,8 +1,8 @@
 # SDKマニュアル変更履歴 - Ver 16.0
 
-## 2025年10月25日更新
+## 2025年10月29日更新
 
-## 2025年10月25日 - 追加されたページ
+## 2025年10月29日 - 追加されたページ
 
 - HeliScript
     - 組み込み型
@@ -24,7 +24,7 @@
         - [FPSカメラ](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_sample_fpscamera.html): FPS視点カメラの実装サンプルを追加しました。
         - [TPSカメラ](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_sample_tpscamera.html): TPS視点カメラの実装サンプルを追加しました。
 
-## 2025年10月25日 - 編集されたページ
+## 2025年10月29日 - 編集されたページ
 
 - HeliScript
   - 組み込み型
