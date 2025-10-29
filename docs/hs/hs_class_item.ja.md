@@ -1025,8 +1025,50 @@ NodeName で指定したノードに対し、trueで物理演算を有効化、f
 
 ノード名を指定して、ItemのPhysicsIDを取得します。
 
-???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
-    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+
+### SetPhysicsWorldPos
+
+`public bool SetPhysicsWorldPos(string NodeName, Vector3 Pos)`
+
+ノード名を指定して、Itemの物理演算のワールド座標系上の位置を変更します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+
+### SetPhysicsWorldRotation
+
+`public bool SetPhysicsWorldRotation(string NodeName, Vector3 EulerAngle)`
+
+ノード名を指定して、Itemの物理演算のワールド座標系上の回転を変更します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+
+### ClearPhysicsWorldForce
+
+`public bool ClearPhysicsWorldForce(string NodeName)`
+
+ノード名を指定して、Itemに加わっている物理演算の力をすべて0にします。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+
+### AddPhysicsWorldForce
+
+`public bool AddPhysicsWorldForce(string NodeName, Vector3 Force)`
+
+ノード名を指定して、Itemに物理演算における力を加えます。Forceの方向はワールド座標系で指定します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+
+### AddPhysicsWorldVelocity
+
+`public bool AddPhysicsWorldVelocity(string NodeName, Vector3 Velocity)`
+
+ノード名を指定して、Itemに物理演算における速度を加えます。Velocityの方向はワールド座標系で指定します。
 
 ### SetProperty
 
@@ -1073,6 +1115,47 @@ SetProperty() と同等の機能を持つメソッドですが、SetPropertyWith
 `public string GetProperty(string Key)`
 
 プロパティを取得します。Keyが存在しない場合は空文字列が返ります。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### RemoveProperty
+
+`public bool RemoveProperty(string Key)`
+
+プロパティを削除します。存在しないキーを指定すると何もせず戻ります。
+
+プロパティの削除が行われると、コールバックメソッドの OnRemovedProperty() が呼び出されます。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    - [VKCItemActivity](../VKCComponents/VKCItemActivity.md)
+    - [VKCItemAreaCollider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKCItemAudio](../VKCComponents/VKCItemAudio.md)
+    - [VKCItemBackgroundTexture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKCItemCamera](../VKCComponents/VKCItemCamera.md)
+    - [VKCItemField](../VKCComponents/VKCItemField.md)
+    - [VKCItemObject](../VKCComponents/VKCItemObject.md)
+    - [VKCItemParticle](../VKCComponents/VKCItemParticle.md)
+    - [VKCItemPlane](../VKCComponents/VKCItemPlane.md)
+    - [VKCItemTextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### RemovePropertyWithoutNotify
+
+`public bool RemovePropertyWithoutNotify(string Key)`
+
+プロパティを削除します。存在しないキーを指定すると何もせず戻ります。
+
+RemoveProperty() と同等の機能を持つメソッドですが、RemovePropertyWithoutNotify() でプロパティを削除した場合、コールバックメソッドの OnRemovedProperty() が呼び出されません。
+
 
 ???+ note "このメソッドを呼び出し可能なオブジェクトタイプ"
     - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
@@ -1203,3 +1286,191 @@ SetVolume()で設定した音量を取得します
 
 アイテム単位で衝突判定が有効かどうかを取得します。  
 trueの場合、レイとItemの当たり判定を行う関数 hsItemRaycast() の対象になります。
+
+
+### SetLightColor
+
+`public void SetLightColor(Vector3 Col)`
+
+ポイントライトのカラーを変更します
+
+### GetLightColor
+
+`public Vector3 GetLightColor()`
+
+ポイントライトのカラーを取得します。
+
+### SetLightRange
+
+`public void SetLightRange(float range)`
+
+ポイントライトの範囲を設定します。
+
+### GetLightRange
+
+`public float GetLightRange()`
+
+ポイントライトの範囲を取得します。
+
+### SetTextPlaneFontSize
+
+`public bool SetTextPlaneFontSize(int fontSize)`
+
+フォントサイズを設定します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneFontSize
+
+`public int GetTextPlaneFontSize()`
+
+フォントサイズを取得します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneTextureSize
+
+`public bool SetTextPlaneTextureSize(int X, int Y)`
+
+テクスチャサイズを設定します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneTextureSize
+
+`public void GetTextPlaneTextureSize( ref int refX, ref int refY)`
+テクスチャサイズを取得します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneAlignment
+
+`public bool SetTextPlaneAlignment(int HSAlign)`
+
+テキストの表示属性を設定します。
+※HSAlignについては、 hsCommonDialogSetTextAlignment() を参照して下さい。
+
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneAlignment
+
+`public int GetTextPlaneAlignment()`
+テキストの表示属性を取得します。
+※戻り値については、 hsCommonDialogSetTextAlignment() を参照して下さい。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneColor
+
+`public void SetTextPlaneColor(Vector3 Col)`
+
+テキストの色を設定します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneColor
+
+`public Vector3 GetTextPlaneColor()`
+テキストの色を取得します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneWrap
+
+`public bool SetTextPlaneWrap(bool Wrap)`
+
+文字列のオーバーラップを設定します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneWrap
+
+`public bool GetTextPlaneWrap()`
+文字列のオーバーラップを取得します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneCharacterSpace
+
+`public bool SetTextPlaneCharacterSpace(int Pixels )`
+
+文字間を設定します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneCharacterSpace
+
+`public int GetTextPlaneCharacterSpace()`
+文字間を取得します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneLineSpace
+
+`public bool SetTextPlaneLineSpace(int Pixels)`
+
+文字の行間を設定します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneLineSpace
+
+`public int GetTextPlaneLineSpace()`
+文字の行間を取得します。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetBonePos
+
+`public Vector3 GetBonePos( string BoneName )`
+アバターのボーンのローカル座標を返します。
+
+存在しないボーン名を指定した場合、Vector3(0,0,0) が返ります。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetBoneWorldPos
+
+`public Vector3 GetBoneWorldPos( string BoneName )`
+アバターのボーンのワールド座標を返します。
+
+存在しないボーン名を指定した場合、Vector3(0,0,0) が返ります。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetBoneRotate
+
+`public Quaternion GetBoneRotate( string BoneName )`
+アバターのボーンの Quaterion を返します。
+
+存在しないボーン名を指定した場合、Quaterion(0,0,0,0) が返ります。
+
+??? note "このメソッドを呼び出し可能なオブジェクトタイプ"
+    [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+## コールバック
+### コールバック - アイテムの長押し
+以下のようにOnLongPressedItemメソッドを定義しておくと、アイテムを長押ししたときに呼び出されます。
+引数には長押ししたノード名が渡されます。ノード名が取得できないときには空文字列が渡されます。
+
+```
+public void OnLongPressedItem()
+public void OnLongPressedItem(string NodeName)
+```

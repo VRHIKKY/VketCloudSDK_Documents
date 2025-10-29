@@ -53,4 +53,53 @@ Sets the camera to FPS mode when `Enable` is set to `true`, and to TPS mode when
 `bool hsCameraGetFPSMode()`
 
 Returns the current value of the camera's FPS mode.
+
+### hsCameraGetQuaternion
+
+`Quaternion hsCameraGetQuaternion()`
+
+Retrieves the camera's orientation as a Quaternion in world coordinates.
+
+### hsCameraGetRotateSpeed
+
+`float hsCameraGetRotateSpeed()`
+
+Retrieves the "Control Sensitivity" specified in MENU → Settings → Camera as a float value.
+
+### hsCameraGetXRotateReverse
+
+`bool hsCameraGetXRotateReverse()`
+
+Retrieves whether the "Vertical Control" specified in MENU → Settings → Camera is set to reverse as true.
+
+### hsCameraGetYRotateReverse
+
+`bool hsCameraGetYRotateReverse()`
+
+Retrieves whether the "Horizontal Control" specified in MENU → Settings → Camera is set to reverse as true.
+
+### hsCameraGetAdjustType
+
+`int hsCameraGetAdjustType()`
+
+Retrieves the "Third-Person View Position" specified in MENU → Settings → Camera as an int value.
+
+Center: 0, Left: 1, Right: 2.
+
+### hsCameraGetPitchAngleType
+
+`int hsCameraGetPitchAngleType()`
+
+Retrieves the "Eye Level" specified in MENU → Settings → Camera as an int value.
+
+Low: 0, Normal: 1, High: 2.
+
+### hsGetCameraName
+
+`string hsGetCameraName()`
+
+Retrieves the item name of the currently specified item camera.
+
+Returns an empty string if it's the main camera (not any item camera).
+
 ***

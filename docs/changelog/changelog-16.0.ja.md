@@ -53,6 +53,8 @@
         - 衝突判定操作：`SetCollisionDetection`
       - `TextPlane`関連の多数のメソッドを追加（フォントサイズ、テクスチャサイズ、配置、色、折り返し、文字間、行間設定など）
       - ボーン操作用のメソッド（`GetBonePos`、`GetBoneWorldPos`、`GetBoneRotate`）を追加しました。
+      - プロパティ削除メソッド（`RemoveProperty`、`RemovePropertyWithoutNotify`）を追加しました。
+      - 物理演算操作メソッド（`SetPhysicsWorldPos`、`SetPhysicsWorldRotation`、`ClearPhysicsWorldForce`、`AddPhysicsWorldForce`、`AddPhysicsWorldVelocity`）を追加しました。
       - コールバック関数`OnLongPressedItem`を追加しました。
   - 組み込み関数
     - [入力](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_system_function_input.html):
@@ -67,6 +69,13 @@
       - イベントリスナー機能を追加：`hsAddEventListener`、`hsRemoveEventListener`、`hsClearEventListener`、`hsDispatchEvent`
       - 空気抵抗操作機能を追加：`hsGetAirResistance`、`hsSetAirResistance`
       - 動画再生状態確認機能を追加：`hsVideoIsPlaying`
+      - Web関連機能を追加：`hsWebTransitionToPage`
+    - [カメラ](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_system_function_camera.html):
+      - カメラ設定取得機能を追加：`hsCameraGetRotateSpeed`、`hsCameraGetXRotateReverse`、`hsCameraGetYRotateReverse`
+      - カメラ視点設定取得機能を追加：`hsCameraGetAdjustType`、`hsCameraGetPitchAngleType`
+      - アイテムカメラ名取得機能を追加：`hsGetCameraName`
+    - [レイキャスト](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_system_function_raycast.html):
+      - `HSRaycastHIT`クラスに`NodeIndex`と`UV`プロパティを追加しました。
   - [コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_component.html): `OnDelayLayersLoaded`、`OnLongPressedEmpty`、`OnClickNode(string NodeName)`、`OnItemTriggerEnter`、`OnItemTriggerLeave`、`OnItemCollisionEnter`、`OnItemCollisionLeave`、`OnItemCreatedClone`、`OnItemDestroyedClone`、`OnRemovedProperty`、`OnMotionChanged`に関する説明を追記しました。
   - 文法と制御構文
     - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_statement_control.html): `switch`文やブロック構文に関する説明を追記・修正しました。

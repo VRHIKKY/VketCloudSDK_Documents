@@ -186,6 +186,11 @@ You can set arguments to pass to the event listener in the param argument.
 
 Opens the url designated by string.
 
+### hsWebTransitionToPage
+`void hsWebTransitionToPage(string url)`
+
+Performs page transition in the same tab.
+
 ### hsWebReload
 `void hsWebReload()`
 

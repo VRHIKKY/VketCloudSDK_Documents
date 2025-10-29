@@ -1134,3 +1134,133 @@ Gets line spacing for text.
 
 ??? note "Object types that can call this method"
     - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### RemoveProperty
+
+`public bool RemoveProperty(string Key)`
+
+Removes a property. If a non-existent key is specified, nothing happens and the method returns.
+
+When a property is removed, the callback method OnRemovedProperty() is called.
+
+??? note "Object types that can call this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### RemovePropertyWithoutNotify
+
+`public bool RemovePropertyWithoutNotify(string Key)`
+
+Removes a property. If a non-existent key is specified, nothing happens and the method returns.
+
+This method has the same functionality as RemoveProperty(), but when a property is removed with RemovePropertyWithoutNotify(), the callback method OnRemovedProperty() is not called.
+
+??? note "Object types that can call this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPhysicsWorldPos
+
+`public bool SetPhysicsWorldPos(string NodeName, Vector3 Pos)`
+
+Specifies a node name and changes the position of the Item in the world coordinate system for physics simulation.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### SetPhysicsWorldRotation
+
+`public bool SetPhysicsWorldRotation(string NodeName, Vector3 EulerAngle)`
+
+Specifies a node name and changes the rotation of the Item in the world coordinate system for physics simulation.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### ClearPhysicsWorldForce
+
+`public bool ClearPhysicsWorldForce(string NodeName)`
+
+Specifies a node name and sets all physics simulation forces applied to the Item to zero.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### AddPhysicsWorldForce
+
+`public bool AddPhysicsWorldForce(string NodeName, Vector3 Force)`
+
+Specifies a node name and applies a force to the Item in physics simulation. The Force direction is specified in world coordinate system.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### AddPhysicsWorldVelocity
+
+`public bool AddPhysicsWorldVelocity(string NodeName, Vector3 Velocity)`
+
+Specifies a node name and applies a velocity to the Item in physics simulation. The Velocity direction is specified in world coordinate system.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### GetBonePos
+
+`public Vector3 GetBonePos(string BoneName)`
+
+Returns the local coordinates of the avatar's bone.
+
+If a non-existent bone name is specified, Vector3(0,0,0) is returned.
+
+??? note "Object types that can call this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetBoneWorldPos
+
+`public Vector3 GetBoneWorldPos(string BoneName)`
+
+Returns the world coordinates of the avatar's bone.
+
+If a non-existent bone name is specified, Vector3(0,0,0) is returned.
+
+??? note "Object types that can call this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetBoneRotate
+
+`public Quaternion GetBoneRotate(string BoneName)`
+
+Returns the Quaternion of the avatar's bone.
+
+If a non-existent bone name is specified, Quaternion(0,0,0,0) is returned.
+
+??? note "Object types that can call this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+## Callbacks
+
+### Callback - Item Long Press
+
+If you define the OnLongPressedItem method as follows, it will be called when an item is long-pressed.
+The node name that was long-pressed is passed as an argument. If the node name cannot be retrieved, an empty string is passed.
+
+```
+public void OnLongPressedItem()
+public void OnLongPressedItem(string NodeName)
+```

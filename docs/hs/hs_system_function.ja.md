@@ -185,6 +185,11 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 
 urlを開く。
 
+### hsWebTransitionToPage
+`void hsWebTransitionToPage(string url)`
+
+同じタブでページ遷移を行います。
+
 ### hsWebReload
 `void hsWebReload()`
 

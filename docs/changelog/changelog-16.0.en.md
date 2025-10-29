@@ -53,6 +53,8 @@
         - Collision detection operations: `SetCollisionDetection`
       - Added multiple `TextPlane`-related methods (font size, texture size, alignment, color, wrapping, character spacing, line spacing settings, etc.).
       - Added bone manipulation methods (`GetBonePos`, `GetBoneWorldPos`, `GetBoneRotate`).
+      - Added property removal methods (`RemoveProperty`, `RemovePropertyWithoutNotify`).
+      - Added physics simulation manipulation methods (`SetPhysicsWorldPos`, `SetPhysicsWorldRotation`, `ClearPhysicsWorldForce`, `AddPhysicsWorldForce`, `AddPhysicsWorldVelocity`).
       - Added callback function `OnLongPressedItem`.
   - Built-in Functions
     - [Input](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_system_function_input.html):
@@ -67,6 +69,13 @@
       - Added event listener functionality: `hsAddEventListener`, `hsRemoveEventListener`, `hsClearEventListener`, `hsDispatchEvent`
       - Added air resistance manipulation functionality: `hsGetAirResistance`, `hsSetAirResistance`
       - Added video playback status check functionality: `hsVideoIsPlaying`
+      - Added web-related functionality: `hsWebTransitionToPage`
+    - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_system_function_camera.html):
+      - Added camera settings retrieval functionality: `hsCameraGetRotateSpeed`, `hsCameraGetXRotateReverse`, `hsCameraGetYRotateReverse`
+      - Added camera viewpoint settings retrieval functionality: `hsCameraGetAdjustType`, `hsCameraGetPitchAngleType`
+      - Added item camera name retrieval functionality: `hsGetCameraName`
+    - [Raycast](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_system_function_raycast.html):
+      - Added `NodeIndex` and `UV` properties to the `HSRaycastHIT` class.
   - [Callback Functions](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_component.html): Added documentation for `OnDelayLayersLoaded`, `OnLongPressedEmpty`, `OnClickNode(string NodeName)`, `OnItemTriggerEnter`, `OnItemTriggerLeave`, `OnItemCollisionEnter`, `OnItemCollisionLeave`, `OnItemCreatedClone`, `OnItemDestroyedClone`, `OnRemovedProperty`, and `OnMotionChanged`.
   - Statements and flow control
     - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_statement_control.html): Added and revised explanations for `switch` statements and block syntax.
