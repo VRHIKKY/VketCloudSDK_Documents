@@ -16,27 +16,7 @@
 - アクティビティ内のItemクローン時に、コンポーネントが生成されない問題を修正
 
 ### カスタムシェーダー
-
-#### 機能追加
-- カスタムシェーダーのコンパイラ実装
-- 生成されたシェーダーをHeliodorのレンダリングパイプラインに組み込み
-- マテリアルをインターフェースで抽象化
-- カスタムシェーダーをHeliodorに組み込み
-- Shader Fallbackの仕組みを追加
-- HeliScriptからUniformValueを更新
-- カスタムシェーダー考慮のHEOエクスポート
-- シェーダーをShaderLabに変換するSDK向けツール
-- HCSLComplierのMac版開発
-- inverse、transposeを追加
-- スキンメッシュアニメーション対応
-- IBLテクスチャの受け取り対応
-- インスタンス描画に対応
-- キューブマップのHEOエクスポート
-- ライブラリシステム
-- HCSLからShaderLabへの変換ツールでGLSLPROGRAMを使用するように対応
-- プリプロセッサ対応
-- CubeMapのパック化・低解像度テクスチャ生成
-- PBR関連機能に対応
+- 独自シェーダー言語のHeliodor Custom Shader Language(HCSL)に対応
 
 ### HeliScript
 
