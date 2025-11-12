@@ -1,4 +1,4 @@
-# SDK Manual Change Log - Ver 16.0
+# SDK Manual Change Log - Ver 16.2
 
 ## Updated November 12, 2025
 
