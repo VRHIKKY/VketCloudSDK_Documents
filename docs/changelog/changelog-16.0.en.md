@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 16.0
 
-## Updated October 29, 2025
+## Updated November 12, 2025
 
-## October 29, 2025 - Added Pages
+## November 12, 2025 - Added Pages
 
 - HeliScript
     - Built-in Types
@@ -24,7 +24,7 @@
         - [FPS Camera](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_sample_fpscamera.html): Added an implementation sample for an FPS camera.
         - [TPS Camera](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_sample_tpscamera.html): Added an implementation sample for a TPS camera.
 
-## October 29, 2025 - Edited Pages
+## November 12, 2025 - Edited Pages
 
 - HeliScript
   - Built-in Types
