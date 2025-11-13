@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 14.5
 
+## October 3, 2025 Update
+
+## October 3, 2025 - Modified Pages
+
+- VKCComponents
+    - [VKC Node UV Scroller](../VKCComponents/VKCNodeUVScroller.en.md)
+        - Added caution note about behavior when Scroll Time is set to 0
+
 ## Updated September 16, 2025
 
 ## September 16, 2025 - Edited Pages
@@ -12,8 +20,6 @@
         - [Particle Editor - Properties](https://vrhikky.github.io/VketCloudSDK_Documents/14.5/en/particleeditor/pe_about_properties.html)
             - Added note that issues may recur with screen resolution above 100% even on SDK 14.5.6 or later
             - Added workaround to set screen resolution to 100% in Display settings
-
----
 
 ## Updated August 15, 2025
 

@@ -79,3 +79,14 @@
   - [コールバック関数](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_component.html): `OnDelayLayersLoaded`、`OnLongPressedEmpty`、`OnClickNode(string NodeName)`、`OnItemTriggerEnter`、`OnItemTriggerLeave`、`OnItemCollisionEnter`、`OnItemCollisionLeave`、`OnItemCreatedClone`、`OnItemDestroyedClone`、`OnRemovedProperty`、`OnMotionChanged`に関する説明を追記しました。
   - 文法と制御構文
     - [制御構文](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/hs/hs_statement_control.html): `switch`文やブロック構文に関する説明を追記・修正しました。
+  - 動作環境
+    - [動作環境](../AboutVketCloudSDK/OperatingEnvironment.md)
+      - Unity6をサポート対象エディターに追加（SDK16.2以降）
+  - LoginSDK
+    - [LoginSDK](../AboutVketCloudSDK/LoginSDK.md)
+      - macOS環境におけるログイン注意事項にUnity 6を追加
+      - Safari使用時の複数Unityバージョン共存によるログイン問題の対象にUnity 6を含める
+  - トラブルシューティング
+    - [ディープリンクのインストール](../troubleshooting/InstallingDeeplink.md)
+      - macOS環境における注意事項にUnity 6を追加
+      - ログイン不具合の原因としてUnity6も明記

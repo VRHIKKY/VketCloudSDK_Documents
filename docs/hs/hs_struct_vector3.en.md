@@ -32,7 +32,7 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 
 ## Vector3 utility functions
 
-### makeVector3(float, float, float)
+### makeVector3(float, float, float) <!-- md:unrecommended -->
 
 `Vector3 makeVector3(float x, float y, float z)`
 
