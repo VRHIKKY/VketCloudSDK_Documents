@@ -11,6 +11,6 @@
     ![MenuAfterLogin](img/MenuAfterLogin.jpg)
 
 !!! warning "macOSをお使いの方へ"
-    macOSとSafariを使用している環境において、Unity 2019とUnity 2022が同じ環境にインストールされている場合、正常にログインできない事象が発生する場合がございます。<br>
-    上記に該当する場合、Unity Hubからご使用の Vket Cloud SDKに応じてUnity 2022もしくは2019をアンインストールの上、OSを再起動の上、再度ログインをお試しください。<br>
+    macOSとSafariを使用している環境において、Unity 2019、Unity 2022、Unity 6が同じ環境にインストールされている場合、正常にログインできない事象が発生する場合がございます。<br>
+    上記に該当する場合、Unity Hubからご使用の Vket Cloud SDKに応じてUnity 2022、2019、またはUnity 6をアンインストールの上、OSを再起動の上、再度ログインをお試しください。<br>
     なお、Apple Silicon版のUnityをご使用の場合はログインができなくなる不具合を確認しております。その場合、Intel版のUnityに切り替えてお試しください。

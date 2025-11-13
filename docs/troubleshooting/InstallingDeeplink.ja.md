@@ -4,7 +4,7 @@ Vket Cloud SDKをインストール後に再起動しても立ち上がらない
 手動でDeeplinkパッケージをインポートすることで解決する場合があります。
 
 !!! warning "macOSをお使いの方へ"
-    macOSとSafariを使用している環境において、Unity 2019とUnity 2022が同じ環境にインストールされている場合、[Vket Cloud SDKに正常にログインできない](../AboutVketCloudSDK/LoginSDK.md)事象が発生する場合がございます。  
+    macOSとSafariを使用している環境において、Unity 2019、Unity 2022、Unity 6が同じ環境にインストールされている場合、[Vket Cloud SDKに正常にログインできない](../AboutVketCloudSDK/LoginSDK.md)事象が発生する場合がございます。  
     その場合、Unity HubからUnity 2022をアンインストールの上、OSを再起動の上、再度ログインをお試しください。
 
 ## Deeplinkパッケージの導入方法
