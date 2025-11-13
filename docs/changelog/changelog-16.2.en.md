@@ -1,19 +1,92 @@
 # SDK Manual Change Log - Ver 16.2
 
-## November 12 2025 Update
+## Updated November 12, 2025
 
-## November 12 2025 - Updated Pages
+## November 12, 2025 - Added Pages
 
-- Operating Environment
-  - [Operating Environment](../AboutVketCloudSDK/OperatingEnvironment.md)
-    - Added Unity 6 to supported editors list (SDK16.2 and later)
+- HeliScript
+    - Built-in Types
+        - [Enum](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_enum.html): Added documentation for the enum type.
+        - [String](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_string.html): Added documentation for the string type.
+    - [Interface](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_interface.html): Added documentation for interfaces.
+    - Built-in Classes
+        - [Vector2 Class](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_struct_vector2.html): Added documentation for the Vector2 class.
+        - [Vector4 Class](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_struct_vector4.html): Added documentation for the Vector4 class.
+        - [GUIElement Class](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_class_guielement.html): Added documentation for the GUIElement class.
+        - [Layer Class](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_class_Layer.html): Added documentation for the Layer class.
+        - [LayerBundle Class](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_class_layerbundle.html): Added documentation for the LayerBundle class.
+        - [ShallowCloneParam Class](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_class_shallowcloneparam.html): Added documentation for the ShallowCloneParam class.
+    - JavaScript-interop
+        - [JsVal](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/JsVal.html): Added documentation for the JsVal class.
+    - Built-in Functions
+        - [Fade](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_system_function_fade.html): Added documentation for fade-related system functions.
+    - Samples
+        - [FPS Camera](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_sample_fpscamera.html): Added an implementation sample for an FPS camera.
+        - [TPS Camera](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_sample_tpscamera.html): Added an implementation sample for a TPS camera.
 
-- LoginSDK
-  - [LoginSDK](../AboutVketCloudSDK/LoginSDK.md)
-    - Added Unity 6 to macOS login precautions
-    - Included Unity 6 in multiple Unity versions coexistence login issues when using Safari
+## November 12, 2025 - Edited Pages
 
-- Troubleshooting
-  - [Installing Deeplink](../troubleshooting/InstallingDeeplink.md)
-    - Added Unity 6 to macOS environment precautions
-    - Specified Unity 6 as a cause of login issues
+- HeliScript
+  - Built-in Types
+    - [String](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_string.html): Added documentation for the `Replace` method.
+  - Built-in Classes
+    - [Item Class](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_class_item.html):
+      - Added documentation for methods to manipulate point lights.
+      - Added `SetPosNode`, which changes the position of a node specified by name.
+      - Added `GetNodeRotateByIndex`, which gets the rotation (Quaternion) of a node specified by index.
+      - Made `SetRotateNode` compatible with [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/VKCComponents/VKCItemObject.html).
+      - Updated `hsItemGet` description to specify that it retrieves items under VKC Item Field.
+      - Added `textplane` and `activity` as cloneable item types in `hsItemCreateClone`.
+      - Added detailed behavior description for item deletion in `hsItemDestroyClone`.
+      - Added new functions `hsItemCreateShallowClone` and `hsItemDestroyAllShallowClone`.
+      - Added `IsAlive` method to check instance survival status.
+      - Added `CollisionDetection` parameter to `SetPos` method.
+      - Added `Gravity` parameter to `MovePos` method.
+      - Added numerous new methods:
+        - World coordinate system node operations: `GetNodeWorldPos`, `GetNodeWorldRotate`, `GetNodeWorldScale`, `GetNodeWorldPosByIndex`, `GetNodeWorldRotateByIndex`, `GetNodeWorldScaleByIndex`
+        - Local coordinate system node operations: `GetNodeLocalPos`, `GetNodeLocalRotate`, `GetNodeLocalScale`, `GetNodeLocalPosByIndex`, `GetNodeLocalRotateByIndex`, `GetNodeLocalScaleByIndex`, `SetNodeLocalPos`, `SetNodeLocalRotate`, `SetNodeLocalScale`
+        - UV coordinate retrieval: `GetUVScale`, `GetUVOffset`
+        - Material color retrieval: `GetMaterialColor`
+        - Shader uniform operations: `SetShaderUniformFloat`, `GetShaderUniformFloat`, `SetShaderUniformVector4`, `GetShaderUniformVector4`
+        - Video operations: `SwitchVideo`
+        - Plane operations: `SetPlaneZBias`, `GetPlaneZBias`
+        - Collision detection operations: `SetCollisionDetection`
+      - Added multiple `TextPlane`-related methods (font size, texture size, alignment, color, wrapping, character spacing, line spacing settings, etc.).
+      - Added bone manipulation methods (`GetBonePos`, `GetBoneWorldPos`, `GetBoneRotate`).
+      - Added property removal methods (`RemoveProperty`, `RemovePropertyWithoutNotify`).
+      - Added physics simulation manipulation methods (`SetPhysicsWorldPos`, `SetPhysicsWorldRotation`, `ClearPhysicsWorldForce`, `AddPhysicsWorldForce`, `AddPhysicsWorldVelocity`).
+      - Added callback function `OnLongPressedItem`.
+  - Built-in Functions
+    - [Input](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_system_function_input.html):
+      - Added `HSTouch` class for retrieving touch information.
+      - Added mouse-related functions (`hsInputClickButton`, `hsInputGetMousePos`, `hsInputLButtonClickEmpty`).
+      - Added touch-related functions (`hsInputGetTouch`, `hsInputGetTouchCount`, `hsInputGetTouchIds`, `hsInputGetTouchById`).
+      - Added screen coordinate conversion functions (`hsInputScreenToWorldPos`, `hsInputIsInVirtualPadArea`).
+      - Added VR device support functions (`hsInputIsVRDeviceButtonDown`, `hsInputGetVRDevicePos`, `hsInputGetVRDeviceRotate`).
+      - Added VR device and button key code tables.
+      - Added multi-touch support and touch ID management functionality.
+    - [System](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_system_function.html):
+      - Added event listener functionality: `hsAddEventListener`, `hsRemoveEventListener`, `hsClearEventListener`, `hsDispatchEvent`
+      - Added air resistance manipulation functionality: `hsGetAirResistance`, `hsSetAirResistance`
+      - Added video playback status check functionality: `hsVideoIsPlaying`
+      - Added web-related functionality: `hsWebTransitionToPage`
+    - [Camera](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_system_function_camera.html):
+      - Added camera settings retrieval functionality: `hsCameraGetRotateSpeed`, `hsCameraGetXRotateReverse`, `hsCameraGetYRotateReverse`
+      - Added camera viewpoint settings retrieval functionality: `hsCameraGetAdjustType`, `hsCameraGetPitchAngleType`
+      - Added item camera name retrieval functionality: `hsGetCameraName`
+    - [Raycast](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_system_function_raycast.html):
+      - Added `NodeIndex` and `UV` properties to the `HSRaycastHIT` class.
+  - [Callback Functions](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_component.html): Added documentation for `OnDelayLayersLoaded`, `OnLongPressedEmpty`, `OnClickNode(string NodeName)`, `OnItemTriggerEnter`, `OnItemTriggerLeave`, `OnItemCollisionEnter`, `OnItemCollisionLeave`, `OnItemCreatedClone`, `OnItemDestroyedClone`, `OnRemovedProperty`, and `OnMotionChanged`.
+  - Statements and flow control
+    - [Control Statement](https://vrhikky.github.io/VketCloudSDK_Documents/16.0/en/hs/hs_statement_control.html): Added and revised explanations for `switch` statements and block syntax.
+  - Operating Environment
+    - [Operating Environment](../AboutVketCloudSDK/OperatingEnvironment.md)
+      - Added Unity 6 to supported editors list (SDK16.2 and later)
+  - LoginSDK
+    - [LoginSDK](../AboutVketCloudSDK/LoginSDK.md)
+      - Added Unity 6 to macOS login precautions
+      - Included Unity 6 in multiple Unity versions coexistence login issues when using Safari
+  - Troubleshooting
+    - [Installing Deeplink](../troubleshooting/InstallingDeeplink.md)
+      - Added Unity 6 to macOS environment precautions
+      - Specified Unity 6 as a cause of login issues

@@ -101,6 +101,18 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 
 ウィンドウのサイズをピクセル単位で取得します。
 
+### hsGetAirResistance
+
+`float hsGetAirResistance()`
+
+プレイヤーのジャンプもしくは落下時の空気抵抗を取得します。
+
+### hsSetAirResistance
+
+`void hsSetAirResistance(float AirResistance)`
+
+プレイヤーのジャンプもしくは落下時の空気抵抗を設定します。
+
 ***
 
 ## 基本型の変換 (キャスト)
@@ -134,6 +146,37 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 
 ***
 
+## イベントリスナー
+
+### hsAddEventListener()
+`void hsAddEventListener(string eventType, Func<void, string> listener)`
+
+特定のイベントに対するイベントリスナーを登録します。
+
+引数 eventType で指定したイベント種別に、引数 listener で指定した関数(またはメソッド)を登録すると、イベント通知時にその関数が呼び出されます。
+
+イベントリスナーとして、複数の関数を登録できます。同一の関数を2回以上登録した場合、その操作は無視されます。
+
+登録したイベントリスナー関数は、hsDispatchEvent() によって呼び出されます。
+
+### hsRemoveEventListener()
+`void hsRemoveEventListener(string eventType, Func<void, string> listener)`
+
+引数 eventType で指定したイベント種別から、引数 listener で指定した関数(またはメソッド)の登録を解除します。
+
+### hsClearEventListener()
+`void hsClearEventListener(string eventType)`
+
+引数 eventType で指定したイベント種別から、すべてのイベントリスナー関数の登録を解除します。
+
+### hsDispatchEvent()
+`void hsDispatchEvent(string eventType, string param)`
+
+引数 eventType で指定したイベント種別に登録されている、すべてのイベントリスナー関数を発火します。
+
+引数 param に、イベントリスナーへ渡す引数を設定できます。
+
+***
 
 ## Web
 
@@ -141,6 +184,11 @@ UNIXエポック (UTCにおける1970年1月1日午前0時0分0秒) からの経
 `void hsWebOpen(string url)`
 
 urlを開く。
+
+### hsWebTransitionToPage
+`void hsWebTransitionToPage(string url)`
+
+同じタブでページ遷移を行います。
 
 ### hsWebReload
 `void hsWebReload()`
@@ -220,3 +268,12 @@ Webページをリロードします。
   "sendAction": "このデータが送信されたタイミング",
   "optionData": "ユーザーが`optionData`で入力したデータ"
 }
+```
+
+## 動画
+
+### hsVideoIsPlaying
+
+`bool hsVideoIsPlaying()`
+
+シーン全体で何か動画が再生中であれば true を返す。

@@ -2,9 +2,9 @@
 
 On Vket Cloud, each non-Player objects on the world are defined as Items.<br>
 
-Items can be output to the scene by placing and configuring game objects with components added by Vket Cloud SDK, such as VKC Item Field and VKC Item Object.
+[VKC Item Field](../VKCComponents/VKCItemField.md), [VKC Item Object](../VKCComponents/VKCItemObject.md), [VKC Item Plane](../VKCComponents/VKCItemPlane.md), [VKC Item Activity](../VKCComponents/VKCItemActivity.md) are examples of these.
 
-The Item class is used to manipulate the above-mentioned Item in HeliScript.
+The Item class is used to manipulate individual items such as [VKC Item Field](../VKCComponents/VKCItemField.md) placed in the world and its child objects (Nodes) in HeliScript.
 
 You can retrieve an instance of the Item class by calling functions such as hsItemGet().
 
@@ -43,7 +43,7 @@ Global function. Gets the Item object of where this component itself is attached
 
 `Item hsItemCreateClone(Item Origin, string Name = "")`
 
-Global function. Creates a clone of the specified item in the same location. The cloneable item type is `object`.  
+Global function. Creates a clone of the specified item in the same location. The cloneable item types are `object`, `textplane`, and `activity`.  
 Pass the original item object to Origin.  
 Optionally pass the item name you want to set for the clone item to Name. If not specified, a name will be automatically assigned.
 
@@ -52,6 +52,27 @@ Optionally pass the item name you want to set for the clone item to Name. If not
 `void hsItemDestroyClone(Item item)`
 
 Global function. Deletes the specified clone item. Non-clone items cannot be deleted.
+
+Even when an item is deleted, the Item class instance obtained before deletion and the component instances held by that Item continue to exist. However, all operations on the Item are actually ignored.
+
+To check if an Item instance has been deleted, use the IsAlive method.
+
+For components, when deleted, they are automatically treated as null in comparisons using the "===" or "!==" operators. Therefore, you can determine "if it's null, it has been deleted."
+
+### hsItemCreateShallowClone
+
+`bool hsItemCreateShallowClone(Item Origin, HSShallowCloneParam param)`
+
+Global function. Only supports `object` type items. Creates a shallow clone (hereinafter ShallowClone) of the specified item. Pass [HSShallowCloneParam](../hs/hs_class_shallowcloneparam.md) as the argument.
+ShallowClone is a feature that, in contrast to hsItemCreateClone, does not copy any item information and only performs instance rendering according to the information set in HSShallowCloneParam.
+ShallowClone operates faster than regular clones. However, since it is not cloned as an item, item information such as coordinates and rotation cannot be updated.
+InstanceDraw must be enabled in the SDK.
+
+### hsItemDestroyAllShallowClone
+
+`void hsItemDestroyAllShallowClone(Item Origin)`
+
+Global function. Deletes all ShallowClones of the specified item.
 
 ***
 
@@ -509,6 +530,15 @@ If the node is not found, Vector3.zero will be returned.
 ???+ note "Available object types for this method"
     - [VKC Item Field](../VKCComponents/VKCItemField.md)
 
+### GetNodeRotateByIndex
+
+`public Quaternion GetNodeRotateByIndex(int nodeIndex)`
+
+Specify a node by index and return the rotation (Quaternion) of that node.
+
+???+ note "Available object types for this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
 ### SetShowNode
 
 `public bool SetShowNode(string nodeName, bool flag)`
@@ -935,7 +965,7 @@ Sets the volume.
 `public float GetVolume()`
 
 Gets the volume set by SetVolume().  
-The default value is 0.2.
+The default value is 1.0.
 
 ??? note "Object types that can call this method"
     - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
@@ -946,3 +976,291 @@ The default value is 0.2.
 
 Retrieves whether collision detection is enabled for individual items.  
 If true, the item will be subject to collision detection with a ray using the hsItemRaycast() function.
+
+### SetCollisionDetection
+
+`public void SetCollisionDetection(bool Flag)`
+
+Enables or disables collision detection for individual items.
+
+### SetLightColor
+
+`public void SetLightColor(Vector3 Col)`
+
+Changes the color of the point light.
+
+### GetLightColor
+
+`public Vector3 GetLightColor()`
+
+Gets the color of the point light.
+
+### SetLightRange
+
+`public void SetLightRange(float range)`
+
+Sets the range of the point light.
+
+### GetLightRange
+
+`public float GetLightRange()`
+
+Gets the range of the point light.
+
+### SetTextPlaneFontSize
+
+`public bool SetTextPlaneFontSize(int fontSize)`
+
+Sets the font size.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneFontSize
+
+`public int GetTextPlaneFontSize()`
+
+Gets the font size.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneTextureSize
+
+`public bool SetTextPlaneTextureSize(int X, int Y)`
+
+Sets the texture size.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneTextureSize
+
+`public void GetTextPlaneTextureSize( ref int refX, ref int refY)`
+
+Gets the texture size.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneAlignment
+
+`public bool SetTextPlaneAlignment(int HSAlign)`
+
+Sets the text display attributes.
+※For HSAlign, please refer to hsCommonDialogSetTextAlignment().
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneAlignment
+
+`public int GetTextPlaneAlignment()`
+
+Gets the text display attributes.
+※For return values, please refer to hsCommonDialogSetTextAlignment().
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneColor
+
+`public void SetTextPlaneColor(Vector3 Col)`
+
+Sets the text color.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneColor
+
+`public Vector3 GetTextPlaneColor()`
+
+Gets the text color.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneWrap
+
+`public bool SetTextPlaneWrap(bool Wrap)`
+
+Sets text wrapping.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneWrap
+
+`public bool GetTextPlaneWrap()`
+
+Gets text wrapping.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneCharacterSpace
+
+`public bool SetTextPlaneCharacterSpace(int Pixels )`
+
+Sets character spacing.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneCharacterSpace
+
+`public int GetTextPlaneCharacterSpace()`
+
+Gets character spacing.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetTextPlaneLineSpace
+
+`public bool SetTextPlaneLineSpace(int Pixels)`
+
+Sets line spacing for text.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### GetTextPlaneLineSpace
+
+`public int GetTextPlaneLineSpace()`
+
+Gets line spacing for text.
+
+??? note "Object types that can call this method"
+    - [VKC Item TextPlane](../VKCComponents/VKCItemTextPlane.md)
+
+### RemoveProperty
+
+`public bool RemoveProperty(string Key)`
+
+Removes a property. If a non-existent key is specified, nothing happens and the method returns.
+
+When a property is removed, the callback method OnRemovedProperty() is called.
+
+??? note "Object types that can call this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### RemovePropertyWithoutNotify
+
+`public bool RemovePropertyWithoutNotify(string Key)`
+
+Removes a property. If a non-existent key is specified, nothing happens and the method returns.
+
+This method has the same functionality as RemoveProperty(), but when a property is removed with RemovePropertyWithoutNotify(), the callback method OnRemovedProperty() is not called.
+
+??? note "Object types that can call this method"
+    - [VKC Item Activity](../VKCComponents/VKCItemActivity.md)
+    - [VKC Item Area Collider](../VKCComponents/VKCItemAreaCollider.md)
+    - [VKC Item Audio](../VKCComponents/VKCItemAudio.md)
+    - [VKC Item Background Texture](../VKCComponents/VKCItemBackgroundTexture.md)
+    - [VKC Item Camera](../VKCComponents/VKCItemCamera.md)
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+    - [VKC Item Particle](../VKCComponents/VKCItemParticle.md)
+    - [VKC Item Plane](../VKCComponents/VKCItemPlane.md)
+    - [VKC Item Text Plane](../VKCComponents/VKCItemTextPlane.md)
+
+### SetPhysicsWorldPos
+
+`public bool SetPhysicsWorldPos(string NodeName, Vector3 Pos)`
+
+Specifies a node name and changes the position of the Item in the world coordinate system for physics simulation.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### SetPhysicsWorldRotation
+
+`public bool SetPhysicsWorldRotation(string NodeName, Vector3 EulerAngle)`
+
+Specifies a node name and changes the rotation of the Item in the world coordinate system for physics simulation.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### ClearPhysicsWorldForce
+
+`public bool ClearPhysicsWorldForce(string NodeName)`
+
+Specifies a node name and sets all physics simulation forces applied to the Item to zero.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### AddPhysicsWorldForce
+
+`public bool AddPhysicsWorldForce(string NodeName, Vector3 Force)`
+
+Specifies a node name and applies a force to the Item in physics simulation. The Force direction is specified in world coordinate system.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### AddPhysicsWorldVelocity
+
+`public bool AddPhysicsWorldVelocity(string NodeName, Vector3 Velocity)`
+
+Specifies a node name and applies a velocity to the Item in physics simulation. The Velocity direction is specified in world coordinate system.
+
+??? note "Object types that can call this method"
+    - [VKC Item Field](../VKCComponents/VKCItemField.md)
+
+### GetBonePos
+
+`public Vector3 GetBonePos(string BoneName)`
+
+Returns the local coordinates of the avatar's bone.
+
+If a non-existent bone name is specified, Vector3(0,0,0) is returned.
+
+??? note "Object types that can call this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetBoneWorldPos
+
+`public Vector3 GetBoneWorldPos(string BoneName)`
+
+Returns the world coordinates of the avatar's bone.
+
+If a non-existent bone name is specified, Vector3(0,0,0) is returned.
+
+??? note "Object types that can call this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+### GetBoneRotate
+
+`public Quaternion GetBoneRotate(string BoneName)`
+
+Returns the Quaternion of the avatar's bone.
+
+If a non-existent bone name is specified, Quaternion(0,0,0,0) is returned.
+
+??? note "Object types that can call this method"
+    - [VKC Item Object](../VKCComponents/VKCItemObject.md)
+
+## Callbacks
+
+### Callback - Item Long Press
+
+If you define the OnLongPressedItem method as follows, it will be called when an item is long-pressed.
+The node name that was long-pressed is passed as an argument. If the node name cannot be retrieved, an empty string is passed.
+
+```
+public void OnLongPressedItem()
+public void OnLongPressedItem(string NodeName)
+```

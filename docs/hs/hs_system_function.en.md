@@ -102,6 +102,18 @@ Returns the current world ID.
 
 Gets the window size in pixels.
 
+### hsGetAirResistance
+
+`float hsGetAirResistance()`
+
+Gets the air resistance when the player jumps or falls.
+
+### hsSetAirResistance
+
+`void hsSetAirResistance(float AirResistance)`
+
+Sets the air resistance when the player jumps or falls.
+
 ***
 
 ## Type Casts
@@ -135,6 +147,37 @@ Converts float value to string.
 
 ***
 
+## Event Listener
+
+### hsAddEventListener()
+`void hsAddEventListener(string eventType, Func<void, string> listener)`
+
+Registers an event listener for a specific event.
+
+When you register a function (or method) specified by the listener argument to the event type specified by the eventType argument, that function will be called when the event is notified.
+
+You can register multiple functions as event listeners. If you register the same function two or more times, the operation is ignored.
+
+The registered event listener function is called by hsDispatchEvent().
+
+### hsRemoveEventListener()
+`void hsRemoveEventListener(string eventType, Func<void, string> listener)`
+
+Unregisters the function (or method) specified by the listener argument from the event type specified by the eventType argument.
+
+### hsClearEventListener()
+`void hsClearEventListener(string eventType)`
+
+Unregisters all event listener functions from the event type specified by the eventType argument.
+
+### hsDispatchEvent()
+`void hsDispatchEvent(string eventType, string param)`
+
+Fires all event listener functions registered to the event type specified by the eventType argument.
+
+You can set arguments to pass to the event listener in the param argument.
+
+***
 
 ## Web
 
@@ -142,6 +185,11 @@ Converts float value to string.
 `void hsWebOpen(string url)`
 
 Opens the url designated by string.
+
+### hsWebTransitionToPage
+`void hsWebTransitionToPage(string url)`
+
+Performs page transition in the same tab.
 
 ### hsWebReload
 `void hsWebReload()`
@@ -221,3 +269,12 @@ When a toast notification is clicked or dismissed after timeout, it can be recei
   "sendAction": "timing when this data was sent",
   "optionData": "data input by user in `optionData`"
 }
+```
+
+## Video
+
+### hsVideoIsPlaying
+
+`bool hsVideoIsPlaying()`
+
+Returns true if any video is playing in the entire scene.

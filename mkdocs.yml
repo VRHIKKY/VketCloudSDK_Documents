@@ -299,12 +299,16 @@ plugins:
             String: 文字列(String)
             List: 配列(List)
             Delegate: デリゲート(Delegate)
+            Enum: Enum
             Operator: 演算子
             Class: クラス
+            Interface: インターフェース
             Components / Callback functions: コンポーネント / コールバック関数
             Item Types and VKCComponents: Itemの種類 / VKCComponentとの対応一覧
             Built-in Classes And Functions: 組み込みクラス・関数
+            Vector2 Class: Vector2クラス
             Vector3 Class: Vector3クラス
+            Vector4 Class: Vector4クラス
             Quaternion Class: Quaternionクラス
             Matrix Class: Matrixクラス
             Item Class: Itemクラス
@@ -313,6 +317,10 @@ plugins:
             TimeSpan Class: TimeSpanクラス
             HSMessage Class: HSMessageクラス
             HSRaycastHIT Class: HSRaycastHITクラス
+            GUIElement Class: GUIElementクラス
+            Layer Class: Layerクラス
+            LayerBundle Class: LayerBundleクラス
+            ShallowCloneParam Class: ShallowCloneParamクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -326,10 +334,14 @@ plugins:
             Camera: カメラ
             Common Dialog: 汎用ダイアログ
             Rendering: レンダリング
+            Fade: フェード
             JavaScript: JavaScript
             Cookie: Cookie
             RayCast: レイキャスト
             Local Data: ローカルデータ
+            Samples: サンプル
+            FPS Camera: FPSカメラ
+            TPS Camera: TPSカメラ
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -584,11 +596,15 @@ nav:
         - String: hs/hs_string.md
         - List: hs/hs_list.md
         - Delegate: hs/hs_delegate.md
+        - Enum: hs/hs_enum.md
     - Class: hs/hs_class.md
+    - Interface: hs/hs_interface.md
     - Components / Callback functions: hs/hs_component.md
     - Item Types and VKCComponents: hs/hs_item_types_functions.md
     - Built-in Classes And Functions:
+        - Vector2 Class: hs/hs_struct_vector2.md
         - Vector3 Class: hs/hs_struct_vector3.md
+        - Vector4 Class: hs/hs_struct_vector4.md
         - Quaternion Class: hs/hs_struct_quaternion.md
         - Matrix Class: hs/hs_struct_matrix.md
         - Item Class: hs/hs_class_item.md
@@ -597,6 +613,10 @@ nav:
         - TimeSpan Class: hs/hs_class_timespan.md
         - HSMessage Class: hs/hs_class_hsmessage.md
         - HSRaycastHIT Class: hs/hs_struct_hsraycasthit.md
+        - GUIElement Class: hs/hs_class_guielement.md
+        - Layer Class: hs/hs_class_Layer.md
+        - LayerBundle Class: hs/hs_class_layerbundle.md
+        - ShallowCloneParam Class: hs/hs_class_shallowcloneparam.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Input: hs/hs_system_function_input.md
@@ -611,7 +631,10 @@ nav:
         - Camera: hs/hs_system_function_camera.md
         - Common Dialog: hs/hs_system_function_commondialog.md
         - Rendering: hs/hs_system_function_rendering.md
-        - JavaScript: hs/hs_system_function_js.md
+        - Fade: hs/hs_system_function_fade.md
+        - JavaScript:
+            - JsVal: hs/JsVal.md
+            - JavaScript連携: hs/hs_system_function_js.md
         - Cookie: hs/hs_system_function_cookie.md
         - Raycast: hs/hs_system_function_raycast.md
         - Local Data: hs/hs_system_function_localdata.md
@@ -619,6 +642,9 @@ nav:
         - Scopes and definitions: hs/hs_scope_def.md
         - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
+    - Samples:
+        - FPS Camera: hs/hs_sample_fpscamera.md
+        - TPS Camera: hs/hs_sample_tpscamera.md
     - Tips/HeliScript Guide:
         - Remove Default UI: hs/RemoveDefaultUI.md
         - Script Error Checking with Assertions: hs/hs_assertion_function.md
@@ -717,6 +743,8 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v16.x:
+        - v16.0: changelog/changelog-16.0.md
     - v15.x:
         - v15.5: changelog/changelog-15.5.md
         - v15.4: changelog/changelog-15.4.md
