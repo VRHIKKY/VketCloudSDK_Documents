@@ -5,4 +5,4 @@
 ### HeliScript
 
 - Core System
-    - Fixed an issue where comic viewer was not displayed
+    - Fixed an issue where Comic Viewer was not displayed
