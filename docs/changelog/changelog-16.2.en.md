@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 16.2
 
+## Updated December 1, 2025
+
+## December 1, 2025 - Added Pages
+
+- Release Notes
+    - [Version 16.3.0](../releasenote/releasenote-16.3.en.md): Added release notes for version 16.3.0.
+
 ## Updated November 12, 2025
 
 ## November 12, 2025 - Added Pages
