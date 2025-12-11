@@ -185,6 +185,7 @@ When a toast notification state changes, a Local event `OnReceiveLocalData(strin
 
 #### noticeTypeID (int)  
 Notification message type ID. The correspondence between ID and icon is as follows:
+
 |ID|TYPE|
 |---|---|
 |00|INFO|
