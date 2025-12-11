@@ -13266,13 +13266,33 @@ Maximum <strong>5</strong> notifications can be displayed simultaneously. When a
 <p>When a toast notification state changes, a Local event <code>OnReceiveLocalData(string key, string data)</code> is triggered.  <br />
 <code>string key</code> is fixed as the string <code>"toast"</code>, <code>string data</code> contains the notification information in JsVal format string.    </p>
 <h4 id="noticetypeid-int">noticeTypeID (int)</h4>
-<p>Notification message type ID. The correspondence between ID and icon is as follows:
-|ID|TYPE|
-|---|---|
-|00|INFO|
-|10|WARNING|
-|20|ERROR|
-|nn|INFO (all non-standard values default to INFO)|</p>
+<p>Notification message type ID. The correspondence between ID and icon is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>TYPE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00</td>
+<td>INFO</td>
+</tr>
+<tr>
+<td>10</td>
+<td>WARNING</td>
+</tr>
+<tr>
+<td>20</td>
+<td>ERROR</td>
+</tr>
+<tr>
+<td>nn</td>
+<td>INFO (all non-standard values default to INFO)</td>
+</tr>
+</tbody>
+</table>
 <h4 id="message-string">message (string)</h4>
 <p>Message text to display in the toast notification.</p>
 <h4 id="viewtime-float">viewTime (float)</h4>

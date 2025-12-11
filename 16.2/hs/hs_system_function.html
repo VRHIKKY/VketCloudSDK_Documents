@@ -13266,13 +13266,33 @@
 <p>トースト通知の状態が変化した場合にLocalイベント<code>OnReceiveLocalData(string key, string data)</code>が発火します。  <br />
 <code>string key</code>は固定で<code>"toast"</code>の文字列、<code>string data</code>にトースト通知の情報がJsVal形式の文字列で入っています。    </p>
 <h4 id="noticetypeid-int">noticeTypeID (int)</h4>
-<p>通知するメッセージ種類のID。  IDとアイコンの対応は以下の通り。
-|ID|TYPE|
-|---|---|
-|00|INFO|
-|10|WARNING|
-|20|ERROR|
-|nn|INFO (規定外はすべてINFOにされます)|</p>
+<p>通知するメッセージ種類のID。IDとアイコンの対応は以下の通り。</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>TYPE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00</td>
+<td>INFO</td>
+</tr>
+<tr>
+<td>10</td>
+<td>WARNING</td>
+</tr>
+<tr>
+<td>20</td>
+<td>ERROR</td>
+</tr>
+<tr>
+<td>nn</td>
+<td>INFO (規定外はすべてINFOにされます)</td>
+</tr>
+</tbody>
+</table>
 <h4 id="message-string">message (string)</h4>
 <p>トースト通知に表示するメッセージ文章を入力できます。</p>
 <h4 id="viewtime-float">viewTime (float)</h4>
