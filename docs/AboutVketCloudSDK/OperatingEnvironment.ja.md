@@ -6,7 +6,7 @@ Vket Cloud SDKは、以下のUnity環境が必要です。
 - **Unity 2022.3.6f1** (SDK13.7.7以降)
 - Unity 6 (SDK16.0以降 **※後日リリース予定**)
 
-* SDK13.7.7では両方のバージョンをサポートしています。
+* SDK13.7.7ではUnity 2019、2022両方のバージョンをサポートしています。
 
 該当のUnityをお持ちでない方は[こちら](https://unity.com/releases/editor/archive){target=_blank}より対応バージョンをダウンロードしてください。
 
