@@ -64,6 +64,12 @@ A global function. Returns a linear interpolated Vector3 result between `from` a
 
 Creates an instance of Vector3 with x, y, z elements set to 0.
 
+### Vector3(float, float, float)
+
+`public Vector3(float x, float y, float z)`
+
+Creates an instance of Vector3 with the specified x, y, z values.
+
 ## member variables
 
 ### float x
