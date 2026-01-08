@@ -106,6 +106,8 @@ VKC Item Objectは、動的なオブジェクトをシーンに生成するた�
 | Force Collider Disable | false | 強制的にコライダーを無効にします |
 | Begin Actions | | モーション再生時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
 | End Actions | | モーション終了時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
+| Shadow Only | false | 影のみ描画します(主にARの際に扱う) |
+| Occlusion Mask | false | オクルージョンマスクを有効化します |
 
 ## Mode - Pose設定項目
 
