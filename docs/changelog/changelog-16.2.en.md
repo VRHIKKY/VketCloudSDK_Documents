@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 16.2
 
+## Updated January 21, 2026
+
+## January 21, 2026 - Edited Pages
+
+- VketCloudSettings
+    - [RenderingSettings](../VketCloudSettings/RenderingSettings.en.md): Added `Ambient Color` parameter.
+
 ## Updated December 1, 2025
 
 ## December 1, 2025 - Added Pages
