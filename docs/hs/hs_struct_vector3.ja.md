@@ -64,6 +64,12 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 
 x, y, z 要素を0に設定して Vector3 のインスタンスを生成する。
 
+### Vector3(float, float, float)
+
+`public Vector3(float x, float y, float z)`
+
+指定されたx, y, z値でVector3のインスタンスを生成する。
+
 ## メンバ変数
 
 ### float x
