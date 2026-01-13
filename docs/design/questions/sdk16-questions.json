@@ -1,0 +1,62 @@
+{
+  "questionnaire": {
+    "version": "16.0",
+    "date": "2024-08-29",
+    "title": "SDK16 PR質問表対応",
+    "description": "リーバさんからのSDK16 PRに関する質問集",
+    "questions": [
+      {
+        "id": "Q001",
+        "category": "feature",
+        "priority": "high",
+        "question_ja": "SDK16の主要な新機能について詳しく説明してください",
+        "question_en": "Please explain the main new features of SDK16 in detail",
+        "tags": ["SDK16", "feature", "new", "overview"],
+        "status": "pending",
+        "answer_ja": "",
+        "answer_en": "",
+        "context": "SDK16の全体的な新機能の概要が必要",
+        "estimated_effort": "high"
+      },
+      {
+        "id": "Q002", 
+        "category": "compatibility",
+        "priority": "high",
+        "question_ja": "既存のプロジェクトをSDK16に移行する際の互換性の問題はありますか？",
+        "question_en": "Are there compatibility issues when migrating existing projects to SDK16?",
+        "tags": ["SDK16", "compatibility", "migration", "legacy"],
+        "status": "pending", 
+        "answer_ja": "",
+        "answer_en": "",
+        "context": "バージョン移行時の影響範囲の調査",
+        "estimated_effort": "medium"
+      },
+      {
+        "id": "Q003",
+        "category": "performance",
+        "priority": "medium", 
+        "question_ja": "SDK16でのパフォーマンスの改善点はどのようなものですか？",
+        "question_en": "What are the performance improvements in SDK16?",
+        "tags": ["SDK16", "performance", "optimization", "benchmarks"],
+        "status": "pending",
+        "answer_ja": "",
+        "answer_en": "",
+        "context": "パフォーマンス最適化の具体的な内容",
+        "estimated_effort": "medium"
+      },
+      {
+        "id": "Q004",
+        "category": "documentation",
+        "priority": "low",
+        "question_ja": "SDK16の新しいドキュメント構造について説明してください",
+        "question_en": "Please explain the new documentation structure of SDK16",
+        "tags": ["SDK16", "documentation", "structure", "organization"],
+        "status": "pending",
+        "answer_ja": "",
+        "answer_en": "",
+        "context": "ドキュメント整理の方針確認",
+        "estimated_effort": "low"
+      }
+    ]
+  }
+}
