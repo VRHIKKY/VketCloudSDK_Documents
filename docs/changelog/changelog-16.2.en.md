@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 16.2
 
+## Updated January 21, 2026
+
+## January 21, 2026 - Added Pages
+
+- First Steps
+    - [World Profiler](../FirstStep/WorldProfiler.en.md): Added description for World Profiler.
+
 ## Updated December 1, 2025
 
 ## December 1, 2025 - Added Pages
