@@ -1,7 +1,6 @@
 ---
 description: VketCloudSDKドキュメントのディレクトリ構造とファイルURLを自動同期
 allowed-tools: Read, Write, Glob, Grep
-thinking: ultra
 user-invocable: true
 ---
 
@@ -11,11 +10,17 @@ VketCloudSDK_Documentsリポジトリの最新状況から、ディレクトリ�
 
 ## 出力ファイル
 
+すべての出力ファイルはリポジトリルート直下の `toc/` ディレクトリに配置されます:
+
 | ファイル | 説明 |
 |----------|------|
 | `toc/directory-structure.md` | 日本語名形式のASCIIツリー + 統計テーブル |
 | `toc/file-url.md` | ローカルURI形式の目次 |
 | `toc/history.md` | 実行履歴（最新が上） |
+
+## 関連スキル
+
+- `sync-toc-context`: 要約とリンク一覧を `toc/context/` に生成する姉妹スキル
 
 ## 処理フロー
 
@@ -53,7 +58,7 @@ plugins:
 ### ステップ4: ディレクトリスキャン
 
 1. Glob で `docs/**/*.ja.md` を検索し、全ての日本語ドキュメントをリストアップ
-2. Glob で `docs/**/` を検索し、ディレクトリ構造を取得
+2. 取得したファイルパスからディレクトリ一覧を抽出（パスの親ディレクトリを重複排除）
 3. 各ディレクトリの .ja.md ファイル数を集計
 
 ### ステップ5: 差分検出
@@ -65,44 +70,13 @@ plugins:
 
 ### ステップ6: directory-structure.md生成
 
-以下の形式で `toc/directory-structure.md` を生成:
+`toc/directory-structure.md` を生成。nav_translationsを使用して日本語名でASCIIツリーを表示し、主要フォルダの統計テーブルを含める。
 
-```markdown
-# VketCloudSDK ドキュメント フォルダ構成
-
-## ディレクトリ構造
-
-nav_translationsを使用して日本語名でツリーを表示:
-
-```
-docs/
-├── はじめに/
-├── Vket Cloud SDKについて/
-│   └── img/
-├── ワールド制作の基本/
-├── ワールド制作ガイド/
-│   └── img/
-├── トラブルシューティング/
-...
-```
-
-## 主要フォルダの説明
-
-| 日本語名 | 英語名 | .ja.md数 |
-|----------|--------|----------|
-| Vket Cloud SDKについて | AboutVketCloudSDK | 5 |
-| ワールド制作ガイド | WorldMakingGuide | 41 |
-...
-
-## 総ファイル数
-
-- **.ja.md ファイル**: XXX個
-- **ディレクトリ数**: XX個
-```
+※出力形式の詳細は `examples.md` を参照
 
 ### ステップ7: file-url.md生成
 
-mkdocs.ymlのnav構造に基づいて `toc/file-url.md` を生成:
+mkdocs.ymlのnav構造に基づいて `toc/file-url.md` を生成。
 
 **変換ルール:**
 - ファイルパス: `index.md` → `docs/index.ja.md`
@@ -111,7 +85,6 @@ mkdocs.ymlのnav構造に基づいて `toc/file-url.md` を生成:
 - セクション: 子要素あり→リンクなし、子要素なし→リンクあり
 
 **除外対象セクション（出力しない）:**
-以下のセクションは file-url.md に含めない：
 - リリースノート (Release Note)
 - チェンジログ (Changelog)
 - タグ規約 (Tag Conventions)
@@ -119,17 +92,7 @@ mkdocs.ymlのnav構造に基づいて `toc/file-url.md` を生成:
 - トラブルシューティング (Troubleshooting)
 - FAQ
 
-**出力形式:**
-```markdown
-# Vket Cloud SDK ドキュメント 目次
-
-- [はじめに](docs/index.ja.md)
-- Vket Cloud SDKについて
-    - [アカウント準備](docs/AboutVketCloudSDK/SetupAccount.ja.md)
-    - [動作環境](docs/AboutVketCloudSDK/OperatingEnvironment.ja.md)
-    - [SDKの導入方法](docs/AboutVketCloudSDK/SetupSDK_external.ja.md)
-...
-```
+※出力形式の詳細は `examples.md` を参照
 
 ### ステップ8: 整合性チェック
 
@@ -148,26 +111,14 @@ mkdocs.ymlのnav構造に基づいて `toc/file-url.md` を生成:
 
 ### ステップ9: 履歴記録
 
-`toc/history.md` に実行記録を追加（最新が上）:
-
-```markdown
-# sync-toc 実行履歴
-
-## YYYY-MM-DD HH:MM:SS
-- **ディレクトリ数**: XX
-- **ファイル数**: XXX (.ja.md)
-- **差分**: +Xファイル, -Xファイル
-- **changelog参照**: SDK X.X (YYYY-MM-DD)
-- **整合性**: OK / 警告あり（詳細）
-- **更新ファイル**: directory-structure.md, file-url.md
-
-[既存の履歴...]
-```
+`toc/history.md` に実行記録を追加（最新が上）。
 
 **履歴の追加方法:**
 1. 既存のhistory.mdを読み込む（存在しない場合は新規作成）
 2. ヘッダー（`# sync-toc 実行履歴`）の直後に新しいエントリを挿入
 3. 既存のエントリはそのまま保持
+
+※出力形式の詳細は `examples.md` を参照
 
 ### ステップ10: SKILL.mdのアップデート提案
 
@@ -179,29 +130,21 @@ mkdocs.ymlのnav構造に基づいて `toc/file-url.md` を生成:
 - パフォーマンス改善の余地がある
 - エラーハンドリングの強化が必要
 
-## 完了報告
+## エラーハンドリング
 
-処理完了後、以下の形式で報告:
+各ステップでエラーが発生した場合の対応:
 
-```
-## sync-toc 完了
+| ステップ | エラー | 対応 |
+|----------|--------|------|
+| ステップ1 | history.mdが存在しない | 初回実行として扱い、処理を継続 |
+| ステップ3 | mkdocs.ymlが存在しない | エラーを報告し、処理を中止 |
+| ステップ3 | nav_translationsが見つからない | 警告を出し、英語名のまま処理を継続 |
+| ステップ3 | navセクションが解析できない | エラーを報告し、処理を中止 |
+| ステップ4 | .ja.mdファイルが0件 | 警告を報告し、処理を中止 |
+| ステップ6-7 | toc/ディレクトリが存在しない | ディレクトリを作成して処理を継続 |
 
-### 生成ファイル
-- toc/directory-structure.md
-- toc/file-url.md
-- toc/history.md
+## 完了報告・エラー報告
 
-### 統計
-- ディレクトリ数: XX
-- ファイル数: XXX (.ja.md)
-- 差分: +X, -X
+処理完了時またはエラー発生時は、所定の形式で報告する。
 
-### 整合性チェック
-- 結果: OK / 警告あり
-
-### 警告（あれば）
-- [警告内容をリスト表示]
-
-### SKILL.mdアップデート提案（あれば）
-- [ステップ10で検出した提案内容をリスト表示]
-```
+※報告形式の詳細は `examples.md` を参照
