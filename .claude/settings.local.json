@@ -2,17 +2,38 @@
   "permissions": {
     "allow": [
       "Bash(mkdocs serve:*)",
-      "Bash(mkdocs build:*)"
-    ],
-    "deny": []
-  }
+      "Bash(mkdocs build:*)",
       "Bash(find:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Skill",
+      "Bash(*:tree *)",
+      "Bash(*:git add *)",
+      "Bash(*:git commit *)",
+      "Bash(*:git status*)",
+      "Bash(*:git diff*)",
+      "Bash(*:git log*)",
+      "Bash(*:grep *)",
+      "Bash(*:cat *)",
+      "Bash(*:mkdir*)",
+      "Bash(*:find *)",
+      "Bash(*:ls *)",
+      "Bash(*:wc *)",
+      "Bash(*:date *)",
+      "Bash(*:sort *)",
+      "Bash(*:tail *)",
+      "Bash(*:head *)",
+      "Bash(*:comm *)",
+      "Bash(*:tr *)",
+      "Bash(*:for *)",
+      "Bash(*:cd *)",
+      "Read",
+      "Edit",
+      "Write"
     ],
     "deny": []
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "mcp-atlassian"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
