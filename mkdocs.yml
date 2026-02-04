@@ -506,6 +506,7 @@ nav:
     - VKC Item Object: VKCComponents/VKCItemObject.md
     - VKC Item Particle: VKCComponents/VKCItemParticle.md
     - VKC Item Plane: VKCComponents/VKCItemPlane.md
+    - VKC Item PointLight: VKCComponents/VKCItemPointLight.md
     - VKC Item Spot: VKCComponents/VKCItemSpot.md
     - VKC Item Text Plane: VKCComponents/VKCItemTextPlane.md
   - VKC Node:
