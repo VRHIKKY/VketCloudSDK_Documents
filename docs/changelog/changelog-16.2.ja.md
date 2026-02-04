@@ -1,13 +1,5 @@
 # SDKマニュアル変更履歴 - Ver 16.2
 
-## 2026年1月21日更新
-
-## 2026年1月21日 - 編集されたページ
-
-- VKCComponents
-    - [VKC Item Field](../VKCComponents/VKCItemField.ja.md): `Draco Quantization` (Draco圧縮), `Shadow Only`, `Occlusion Mask`を追加しました。
-    - [VKC Item Object](../VKCComponents/VKCItemObject.ja.md): `Shadow Only`, `Occlusion Mask`を追加しました。
-
 ## 2025年12月1日更新
 
 ## 2025年12月1日 - 追加されたページ

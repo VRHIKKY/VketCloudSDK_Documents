@@ -1,13 +1,5 @@
 # SDK Manual Change Log - Ver 16.2
 
-## Updated January 21, 2026
-
-## January 21, 2026 - Edited Pages
-
-- VKCComponents
-    - [VKC Item Field](../VKCComponents/VKCItemField.en.md): Added `Draco Quantization`, `Shadow Only`, and `Occlusion Mask`.
-    - [VKC Item Object](../VKCComponents/VKCItemObject.en.md): Added `Shadow Only` and `Occlusion Mask`.
-
 ## Updated December 1, 2025
 
 ## December 1, 2025 - Added Pages
