@@ -43,7 +43,7 @@ Item myitem = hsItemGetSelf();
 
 `Item hsItemCreateClone(Item Origin, string Name = "")`
 
-グローバル関数。指定したアイテムのクローンを同じ場所に作成します。クローン可能なアイテムタイプは`object`・`textplane`・`activity`です。
+グローバル関数。指定したアイテムのクローンを同じ場所に作成します。クローン可能なアイテムタイプは`object`・`textplane`・`activity`・`plane`・`particle`です。
 Originにはオリジナルのアイテムオブジェクトを渡します。
 Nameにはクローンアイテムに設定したいアイテム名を任意で渡します。指定が無い場合は自動的に名前が付けられます。
 
