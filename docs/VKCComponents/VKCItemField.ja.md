@@ -11,7 +11,8 @@ VKC Item Fieldの詳しい配置方法については[VKC Item Fieldの使い方
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Show | true | オブジェクトの表示状態を管理します |
-| Auto Loading | true | 自動ローディングの有効/無効を切り替えます |
+| Auto Loading | true | 動的ローディングの有効/無効を切り替えます |
+| Draco Quantization | Unspecified(未指定) | VKC ItemごとにDracoの圧縮レベルの設定を上書きできます。 |
 | Load Collider |  | 範囲に入った際に特定のオブジェクトをロードするコライダーを生成します |
 | UnLoad Collider |  | 範囲に入った際に特定のオブジェクトをアンロードするコライダーを生成します |
 
@@ -123,3 +124,23 @@ Auto Loading のチェックを外すことで、ワールド入場時の自動�
 
 ### 参考
 [ロードが完了したら開く扉](../WorldMakingGuide/DoorOpensAfterLoad.md)
+
+## 高度な設定
+
+![VKC Item Field](img/VKCItemField3.jpg)
+
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| Clickable | false | クリックできるようになります |
+| Alpha Animation Target | false | カメラを遮ったときに透過されます |
+| Item Render Priority |  0 | アイテムレンダー優先度を設定します |
+| Collision Detection | true | オブジェクトの衝突判定を検知するか切り替えます |
+| Show Photo Mode | true | 撮影モードで表示されるかどうかを指定します | 
+| Force Raycast Check Disable | false | Item単位でraycastの判定を強制的に無効にするかどうかを設定します |
+| Force Collider Disable | false | 強制的にコライダーを無効にします |
+| Shadow Only | false | 影のみ描画します(主にARの際に扱う) |
+| Occlusion Mask | false | オクルージョンマスクを有効化します |
+
+!!! warning "Force Collider Disableは安定版SDK14.4.12でご使用いただけません"
+    Force Collider Disableは安定版SDK14.4.12で機能がロールバックのためご使用いただけません。
+    SDK14.2.1もしくは14.4.12より新しいバージョンがあれば、そちらをご使用ください。

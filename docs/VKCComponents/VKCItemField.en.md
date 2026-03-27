@@ -10,7 +10,8 @@ For tips on how to place VKC Item Field, see [Tips on using VKC Item Field](../W
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
 | Show | true | Sets the display state of objects |
-| Auto Loading | true | Toggles auto loading enable/disable |
+| Auto Loading | true | Activates Dynamic Loading |
+| Draco Quantization | Unspecified | Overwrite Draco compression level settings for each VKC Item. |
 | Load Collider |  | Generates a collider that will load a designated object on enter |
 | UnLoad Collider |  | Generates a collider that will unload a designated object on enter |
 
@@ -76,6 +77,8 @@ For tips on how to place VKC Item Field, see [Tips on using VKC Item Field](../W
 | Show Photo Mode | true | Specifies whether it is displayed in photo mode |
 | Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
 | Force Collider Disable | false | Forcibly disables the collider |
+| Shadow Only | false | Draws only shadows (mainly used for AR) |
+| Occlusion Mask | false | Enables occlusion mask |
 
 !!! warning "Force Collider Disable is not available in the stable SDK 14.4.12"
     Force Collider Disable cannot be used in the stable SDK 14.4.12 because its functionality has been rolled back.

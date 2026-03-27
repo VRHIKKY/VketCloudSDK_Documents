@@ -9,7 +9,7 @@
 - ワールド制作ガイド
     - [カスタムシェーダー(HCSL)](../WorldMakingGuide/CustomShader.ja.md): カスタムシェーダー(HCSL)に関する説明を追加しました。
 
-## 2026年3月27日 - 更新されたページ
+## 2026年3月27日 - 編集されたページ
 
 - VketCloudSettings
     - [RenderingSettings](../VketCloudSettings/RenderingSettings.ja.md): `Ambient Color`パラメータを追加しました。
@@ -29,3 +29,5 @@
     - [VKC Item ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItem.html)
     - [VKC Item ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItem.html)
         - 「動的ローディング」と「自動ローディング」の概念を分けて、前者は「"AutoLoading":falseでゲーム中にLoad()実行」、後者を「"AutoLoading":true」としました。
+    - [VKC Item Field](../VKCComponents/VKCItemField.ja.md): `Draco Quantization` (Draco圧縮), `Shadow Only`, `Occlusion Mask`を追加しました。
+    - [VKC Item Object](../VKCComponents/VKCItemObject.ja.md): `Shadow Only`, `Occlusion Mask`を追加しました。

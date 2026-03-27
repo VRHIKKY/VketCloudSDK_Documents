@@ -106,7 +106,9 @@ Sets whether to make objects transparent when they obstruct the camera's view in
 | Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
 | Force Collider Disable | false | Forcibly disables the collider |
 | Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
-| End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
+| End Actions | | Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
+| Shadow Only | false | Draws only shadows (mainly used for AR) |
+| Occlusion Mask | false | Enables occlusion mask |
 
 ## Mode - Pose Settings
 

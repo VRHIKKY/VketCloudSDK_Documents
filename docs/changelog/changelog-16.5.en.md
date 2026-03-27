@@ -29,3 +29,5 @@
     - [VKC Item ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItem.html)
     - [VKC Item ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItem.html)
         - Fixed the separation of "dynamic loading" and "auto loading" concepts, where dynamic loading refers to executing Load() during gameplay with "AutoLoading": false, and auto loading refers to "AutoLoading": true
+    - [VKC Item Field](../VKCComponents/VKCItemField.en.md): Added `Draco Quantization`, `Shadow Only`, and `Occlusion Mask`.
+    - [VKC Item Object](../VKCComponents/VKCItemObject.en.md): Added `Shadow Only` and `Occlusion Mask`.
