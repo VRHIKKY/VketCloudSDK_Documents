@@ -114,6 +114,7 @@ plugins:
             First Steps: ワールド制作の基本
             Essential Objects: ワールドの基本要素
             Build And Run: ローカル環境でのビルドと実行
+            World Profiler: ワールドプロファイラー
             World Upload: ワールドアップロード
             # Vket Cloud Settings    
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
@@ -122,6 +123,7 @@ plugins:
             Table of Contents: 目次
             List of Articles: 記事一覧
             Shader Availability : シェーダー対応項目一覧
+            Custom Shader (HCSL) : カスタムシェーダー(HCSL)
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
             Exporter: .heoファイルについて
@@ -379,6 +381,7 @@ nav:
 - First Steps:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
+    - World Profiler : FirstStep/WorldProfiler.md
     - World Upload : FirstStep/WorldUpload.md
 - Vket Cloud Settings:
     - Vket Cloud Settings - Overview: VketCloudSettings/Overview.md
@@ -396,6 +399,7 @@ nav:
     - List of Articles :
       - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
       - Shader Availability : WorldMakingGuide/ShaderAvailability.md
+      - Custom Shader (HCSL) : WorldMakingGuide/CustomShader.md
       - Setting up a Skybox : WorldMakingGuide/Skybox.md 
       - How to use Colliders / Tips : WorldMakingGuide/Collider.md
       - Physics Engine: WorldMakingGuide/PhysicsEngine.md
@@ -749,6 +753,7 @@ nav:
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
     - v16.x:
+        - v16.5: changelog/changelog-16.5.md
         - v16.2: changelog/changelog-16.2.md
         - v16.0: changelog/changelog-16.0.md
     - v15.x:

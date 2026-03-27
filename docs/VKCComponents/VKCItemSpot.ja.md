@@ -14,7 +14,7 @@ VKC Item Spotはワールド入場時のプレイヤーの初期位置をURLク�
 
 | 名称 | 初期値 |  説明  |
 | ---- | ---- | ---- |
-| Auto Loading | True | 動的ローディングの有効/無効を切り替えます。 |
+| Auto Loading | True | 自動ローディングの有効/無効を切り替えます。 |
 | Clickable | False | VKC Item Spotでは動作しません。 |
 | Show Photo Mode | True | VKC Item Spotでは動作しません。 |
 | Item Render Priority | 0 | ワールド内のItemの描画優先度を変更できます。 |

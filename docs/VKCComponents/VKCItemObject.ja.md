@@ -92,7 +92,7 @@ VKC Item Objectは、動的なオブジェクトをシーンに生成するた�
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Clickable | false | オブジェクトがクリックされた際の判定を発生させるか否かを設定します。 |
-| Auto Loading | true | [動的ローディング](VKCItemField.md)にて使用します。<br> デフォルトはtrueで初回ローディング時に読み込まれます。 |
+| Auto Loading | true | 自動ローディングの有効/無効を切り替えます。 |
 | Light Scattering Target | true | [ライトスキャッタリング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、スキャッタリングの影響を受けるかを設定します。 |
 | Shadow Caster | false | [シャドウマッピング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、本オブジェクトの影を他のオブジェクトに投影するか設定します。 |
 | Shadow Receiver | false | [シャドウマッピング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、他オブジェクトの影を本オブジェクトへと投影するか設定します。 |
