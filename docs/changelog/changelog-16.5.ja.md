@@ -2,8 +2,10 @@
 
 ## 2026年3月27日更新
 
-## 2026年3月27日 - 更新されたページ
+## 2026年3月27日 - 編集されたページ
 
+- VketCloudSettings
+    - [RenderingSettings](../VketCloudSettings/RenderingSettings.ja.md): `Ambient Color`パラメータを追加しました。
 - VKCコンポーネント
     - [VKC Item AreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemAreaCollider.html)
     - [VKC Item Activity](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemActivity.html)

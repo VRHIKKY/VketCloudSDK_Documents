@@ -1,9 +1,11 @@
-# SDK Manual Changelog - Ver 16.5
+# SDK Manual Change Log - Ver 16.5
 
-## March 27, 2026 Update
+## Updated March 27, 2026
 
 ## March 27, 2026 - Updated Pages
 
+- VketCloudSettings
+    - [RenderingSettings](../VketCloudSettings/RenderingSettings.en.md): Added `Ambient Color` parameter.
 - VKC Components
     - [VKC Item AreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemAreaCollider.html)
     - [VKC Item Activity](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemActivity.html)
