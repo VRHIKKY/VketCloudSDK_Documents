@@ -12,20 +12,20 @@
 
 ## 実装方法
 
-1. スポーン地点に動的ローディング読み込みエリアに入れないようにするための当たり判定を設置する
+1. ワールド入室直後に、動的ローディング読み込みエリアに入れないようにするためのコライダーを設置します。
 
 ![DoorOpensAfterLoad01](img/DoorOpensAfterLoad01.jpg)
 
-動的ローディングで読み込まれる部分への入り口を塞ぐように、当たり判定を設置します。 この当たり判定は、初めから読み込まれる(= autoloading : true)HEOField内に入れます。 基本的にはスポーン地点周辺のHEOFieldに含みます。
-
-![DoorOpensAfterLoad03](img/DoorOpensAfterLoad03.jpg)
-
-2. 動的ローディング読み込みHEOFieldの中に通行止め当たり判定を無効 & 扉を開けるアニメーションを行うエリアコライダーを入れる
+2. 動的ローディングされるエリアへの入り口を塞ぐように、エリアコライダーを設置します。 
+エリアコライダーへプレイヤーが侵入したことをトリガーとして、動的ローディングエリアの読み込みを行います。
 
 ![DoorOpensAfterLoad04](img/DoorOpensAfterLoad04.jpg)
-![DoorOpensAfterLoad06](img/DoorOpensAfterLoad06.jpg)
+
+3. 動的ローディングエリアの読み込み完了後に、通行止め当たり判定を無効可し、 扉を開けるアニメーションを行うエリアコライダーを入れる
 
 動的ローディングで読み込まれるHEOField (= autoloading : false)にHEOAreaColliderを入れ、エリアコライダー侵入時のアクションに1で設定した読み込みエリアに入れないようにするコライダーを無効にし、ドアが開くアニメーションを再生するようにします。
+
+![DoorOpensAfterLoad06](img/DoorOpensAfterLoad06.jpg)
 
 ## 原理
 
