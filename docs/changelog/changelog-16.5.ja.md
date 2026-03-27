@@ -8,6 +8,8 @@
     - [ワールドプロファイラー](../FirstStep/WorldProfiler.ja.md): ワールドプロファイラーに関する説明を追加しました。
 - ワールド制作ガイド
     - [カスタムシェーダー(HCSL)](../WorldMakingGuide/CustomShader.ja.md): カスタムシェーダー(HCSL)に関する説明を追加しました。
+- VKCComponents
+    - [VKC Item PointLight](../VKCComponents/VKCItemPointLight.ja.md): VKC Item PointLightを追加しました。
 
 ## 2026年3月27日 - 編集されたページ
 
