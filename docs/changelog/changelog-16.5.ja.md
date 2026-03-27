@@ -6,6 +6,8 @@
 
 - ワールド制作の基本
     - [ワールドプロファイラー](../FirstStep/WorldProfiler.ja.md): ワールドプロファイラーに関する説明を追加しました。
+- ワールド制作ガイド
+    - [カスタムシェーダー(HCSL)](../WorldMakingGuide/CustomShader.ja.md): カスタムシェーダー(HCSL)に関する説明を追加しました。
 
 ## 2026年3月27日 - 更新されたページ
 

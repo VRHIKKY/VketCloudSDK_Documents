@@ -6,6 +6,8 @@
 
 - First Steps
     - [World Profiler](../FirstStep/WorldProfiler.en.md): Added description for World Profiler.
+- World Making Guide
+    - [Custom Shader (HCSL)](../WorldMakingGuide/CustomShader.en.md): Added documentation for Custom Shader (HCSL).
 
 ## March 27, 2026 - Updated Pages
 
