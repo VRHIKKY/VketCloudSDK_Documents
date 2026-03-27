@@ -92,7 +92,7 @@ VKC Item Object is used to instantiate a dynamic object, which is based on a pre
 | Label | Initial Value | Function |
 | ---- | ---- | ---- |
 | Clickable | false | Toggle mouse interaction on object. |
-| Auto Loading | true | Used for setting up [Dynamic Loading](VKCItemField.md). <br> The object will be loaded on the first load by default.  |
+| Auto Loading | true | Toggles auto loading enable/disable. |
 | Light Scattering Target | true | Sets whether the object is affected by scattering when [Light Scattering](../VketCloudSettings/RenderingSettings.md) is enabled. |
 | Shadow Caster | false | If [Shadow Mapping](../VketCloudSettings/RenderingSettings.md) is enabled, this sets the object's shadow to be casted on other shadow receivers. |
 | Shadow Receiver | false | If [Shadow Mapping](../VketCloudSettings/RenderingSettings.md) is enabled, this sets the object to receive shadows from other objects. |
@@ -106,7 +106,9 @@ Sets whether to make objects transparent when they obstruct the camera's view in
 | Force Raycast Check Disable | false | Sets whether to forcibly disable raycast detection per item |
 | Force Collider Disable | false | Forcibly disables the collider |
 | Begin Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation starts. |
-| End Actions || Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
+| End Actions | | Set an [Action](../Actions/ActionsOverview.md) to trigger when the motion animation ends. |
+| Shadow Only | false | Draws only shadows (mainly used for AR) |
+| Occlusion Mask | false | Enables occlusion mask |
 
 ## Mode - Pose Settings
 

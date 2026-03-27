@@ -36,7 +36,7 @@ VKC Item Cameraコンポーネントは演出目的等で通常のカメラか�
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ----|
-| Auto Loading | true | 有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、[動的ローディング](VKCItemField.md)を使用するか、HeliScriptで[Load()](../hs/hs_class_item.md#load)を使用して読み込みます。|
+| Auto Loading | true | 自動ローディングの有効/無効を切り替えます。|
 | Clickable | false | クリック可能かどうかを変更します |
 | Item Render Priority | 0 | Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
 | Show Photo Mode | true | 写真撮影モードの際、itemを表示するかどうかを変更します |

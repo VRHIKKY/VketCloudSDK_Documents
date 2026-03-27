@@ -43,7 +43,7 @@ Global function. Gets the Item object of where this component itself is attached
 
 `Item hsItemCreateClone(Item Origin, string Name = "")`
 
-Global function. Creates a clone of the specified item in the same location. The cloneable item types are `object`, `textplane`, and `activity`.  
+Global function. Creates a clone of the specified item in the same location. The cloneable item types are `object`, `textplane`, `activity` , `plane` and `particle`.  
 Pass the original item object to Origin.  
 Optionally pass the item name you want to set for the clone item to Name. If not specified, a name will be automatically assigned.
 
