@@ -2,7 +2,12 @@
 
 ## 2026年3月27日更新
 
-## 2026年3月27日 - 編集されたページ
+## 2026年3月27日 - 追加されたページ
+
+- ワールド制作の基本
+    - [ワールドプロファイラー](../FirstStep/WorldProfiler.ja.md): ワールドプロファイラーに関する説明を追加しました。
+
+## 2026年3月27日 - 更新されたページ
 
 - VketCloudSettings
     - [RenderingSettings](../VketCloudSettings/RenderingSettings.ja.md): `Ambient Color`パラメータを追加しました。
