@@ -11,7 +11,7 @@
 - VKCComponents
     - [VKC Item PointLight](../VKCComponents/VKCItemPointLight.en.md): Added VKC Item PointLight.
 
-## March 27, 2026 - Updated Pages
+## March 27, 2026 - Edited Pages
 
 - VketCloudSettings
     - [RenderingSettings](../VketCloudSettings/RenderingSettings.en.md): Added `Ambient Color` parameter.
@@ -33,3 +33,4 @@
         - Fixed the separation of "dynamic loading" and "auto loading" concepts, where dynamic loading refers to executing Load() during gameplay with "AutoLoading": false, and auto loading refers to "AutoLoading": true
     - [VKC Item Field](../VKCComponents/VKCItemField.en.md): Added `Draco Quantization`, `Shadow Only`, and `Occlusion Mask`.
     - [VKC Item Object](../VKCComponents/VKCItemObject.en.md): Added `Shadow Only` and `Occlusion Mask`.
+    - [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.en.md): Added a note that a VKC Node Collider is required for click detection.

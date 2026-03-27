@@ -33,3 +33,4 @@
         - 「動的ローディング」と「自動ローディング」の概念を分けて、前者は「"AutoLoading":falseでゲーム中にLoad()実行」、後者を「"AutoLoading":true」としました。
     - [VKC Item Field](../VKCComponents/VKCItemField.ja.md): `Draco Quantization` (Draco圧縮), `Shadow Only`, `Occlusion Mask`を追加しました。
     - [VKC Item Object](../VKCComponents/VKCItemObject.ja.md): `Shadow Only`, `Occlusion Mask`を追加しました。
+    - [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.ja.md): クリック検出の際にVKC Node Colliderが必要な旨を追記しました。
