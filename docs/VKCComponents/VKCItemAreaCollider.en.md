@@ -1,15 +1,12 @@
 # VKC Item Area Collider
 
-![VKC Item Area Collider](img/VKCItemAreaCollider_01.jpg)
-
 VKC Item Area Collider is a component for introducing actions to objects. <br>
-It executes the specified actions when a player enters the collider.
+It executes the specified actions when a player enters the collider.<br>
+For actions, see [Actions Overview](../Actions/ActionsOverview.md).<br>
 
-To attach VKC Item Area Collider, [VKC Node Collider](./VKCNodeCollider.md) and Collider must be attached to the object.<br>
-On attaching a VKC Item Area Collider component to an object, the [VKC Node Collider](./VKCNodeCollider.md) and Box Collider will be added.<br>
-The [VKC Node Collider](./VKCNodeCollider.md) type must be set to Area.
+## Configuration Settings
 
-![VKC Node Collider](img/VKCItemAreaCollider_02.jpg)
+![VKC Item Area Collider](img/VKCItemAreaCollider_01.jpg)
 
 In each of `Actions on Enter` and `Actions on Leave`, you can set any action by clicking Add(+). <br>
 You can remove the last action by clicking Delete(-).
@@ -43,7 +40,7 @@ For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide
     - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
     - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
 
-## Advanced Options
+### Advanced Options
 
 | Label | Default | Function |
 | ---- | ---- | ---- |
@@ -53,14 +50,25 @@ For colliders, see [Unity Production Guidelines - Colliders](../WorldMakingGuide
 | Item Render Priority | 0 | Allows changing the rendering priority of the item in the world. |
 | Show Photo Mode | True | This option does not work with the VKC Item Area Collider. |
 
-## About collision / area range detection by collider
+## Usage Notes
+There are several important considerations when using the VKC Item Area Collider:<br>
 
-The collision / area range detection by collider will be done by obtaining the player's origin point as the very bottom orange sphere of the image shown below.<br>
+### Place the collider lower than the player's feet
+The collision detection for area colliders is located at "the player's feet".<br>
+If collision detection is not working, check if the collider is floating above the ground.<br><br>
 
-Collision visualization can be toggled by enabling the [debug mode](../WorldEditingTips/DebugMode.md#f3-display-collision) on [VketCloudSettings / BasicSettings](../VketCloudSettings/BasicSettings.md) and pressing F3.
+In the figure, the collider on the left does not detect collisions because it is floating above the ground. The position needs to be lowered so that it contacts the ground like the collider on the right.<br>
 
-![VKCItemAreaCollider_03](img/VKCItemAreaCollider_03.jpg)
+![VKCItemAreaCollider_03](VKCItemAreaCollider_03.png)
 
-!!! warning "If the collider is not working"
-    If the collider is floating even slightly above the ground, collision detection at the player's feet (origin point) will not function.<br>
-    If the collider is not working, please check whether the collider is floating above the ground.
+### Place as a child of an object with VKC Item Field component
+Objects with the VKC Item Area Collider component must be placed under another object that has the VKC Item Field component.<br>
+If collision detection is not working, check the parent-child relationship in the Unity hierarchy.<br>
+
+As shown in the figure, move the object under the "World" object that has the ItemField component.
+
+![VKCItemAreaCollider_04](VKCItemAreaCollider_04.png)
+
+!!! note "Reason for placing under a VKC Item Field object"
+    VKC Item Field is used to output collider shapes and other forms.
+    Conversely, an Area Collider alone cannot include the collider shape in the build.

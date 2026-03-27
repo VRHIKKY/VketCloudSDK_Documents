@@ -58,7 +58,7 @@ VKC Item Text Planeは、ワールドのビルド時に本コンポーネント�
 
 | 名称 | 初期値 | 機能 |
 | ----   | ---- | ---- |
-| Auto Loading | true | 有効の場合、本Itemはワールド入場時に自動で読み込まれます。<br>無効の場合は自動で読み込まれないため、[動的ローディング](VKCItemField.md)を使用するか、HeliScriptで[Load()](../hs/hs_class_item.md#load)を使用して読み込みます。|
+| Auto Loading | true |  自動ローディングの有効/無効を切り替えます |
 | Clickable | false | クリック可能かどうかを変更します |
 | Character Space | 0.0| 文字の間隔をピクセル単位で指定します |
 | Line Space | 1.0 | 行間隔をピクセル単位で指定します |

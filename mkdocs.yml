@@ -114,6 +114,7 @@ plugins:
             First Steps: ワールド制作の基本
             Essential Objects: ワールドの基本要素
             Build And Run: ローカル環境でのビルドと実行
+            World Profiler: ワールドプロファイラー
             World Upload: ワールドアップロード
             # Vket Cloud Settings    
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
@@ -379,6 +380,7 @@ nav:
 - First Steps:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
+    - World Profiler : FirstStep/WorldProfiler.md
     - World Upload : FirstStep/WorldUpload.md
 - Vket Cloud Settings:
     - Vket Cloud Settings - Overview: VketCloudSettings/Overview.md
