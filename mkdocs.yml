@@ -123,6 +123,7 @@ plugins:
             Table of Contents: 目次
             List of Articles: 記事一覧
             Shader Availability : シェーダー対応項目一覧
+            Custom Shader (HCSL) : カスタムシェーダー(HCSL)
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
             Exporter: .heoファイルについて
@@ -398,6 +399,7 @@ nav:
     - List of Articles :
       - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
       - Shader Availability : WorldMakingGuide/ShaderAvailability.md
+      - Custom Shader (HCSL) : WorldMakingGuide/CustomShader.md
       - Setting up a Skybox : WorldMakingGuide/Skybox.md 
       - How to use Colliders / Tips : WorldMakingGuide/Collider.md
       - Physics Engine: WorldMakingGuide/PhysicsEngine.md
@@ -506,6 +508,7 @@ nav:
     - VKC Item Object: VKCComponents/VKCItemObject.md
     - VKC Item Particle: VKCComponents/VKCItemParticle.md
     - VKC Item Plane: VKCComponents/VKCItemPlane.md
+    - VKC Item PointLight: VKCComponents/VKCItemPointLight.md
     - VKC Item Spot: VKCComponents/VKCItemSpot.md
     - VKC Item Text Plane: VKCComponents/VKCItemTextPlane.md
   - VKC Node:
