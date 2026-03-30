@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="AboutReleasenote.html">
+      
+      
+        <link rel="next" href="releasenote-16.3.html">
       
       
       <link rel="icon" href="../images/Favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Version 16.5.0 - Vket Cloud SDK Manual</title>
+        <title>v16.5 - Vket Cloud SDK Manual</title>
       
     
     
@@ -142,7 +146,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Version 16.5.0
+              v16.5
             
           </span>
         </div>
@@ -7694,8 +7698,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -7728,11 +7734,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" checked>
         
           
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
@@ -7746,7 +7752,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             リリースノート
@@ -7778,8 +7784,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -7791,14 +7799,16 @@
       
         
       
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_2" checked>
         
           
           <label class="md-nav__link" for="__nav_16_2" id="__nav_16_2_label" tabindex="0">
@@ -7812,12 +7822,115 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_16_2">
             <span class="md-nav__icon md-icon"></span>
             v16.x
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    v16.5
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="releasenote-16.5.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    v16.5
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sdkunityeditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      SDK(Unityでワールドを作るためのEditor拡張ツール)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SDK(Unityでワールドを作るためのEditor拡張ツール)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      メイン機能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      新機能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      不具合修正
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
             
               
                 
@@ -12300,270 +12413,282 @@
 <h2 id="sdkunityeditor">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
 <h3 id="_1">メイン機能</h3>
 <ul>
-<li><strong>マイアセット/Activityインポート機能</strong></li>
 <li>
-<p>cloud.vket.comのマイアセットを一覧にして表示し、インポートできる機能を追加</p>
+<p><strong>マイアセット/Activityインポート機能</strong></p>
+<ul>
+<li>cloud.vket.comのマイアセットを一覧にして表示し、インポートできる機能を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>ワールドプロファイラー</strong></p>
-</li>
-<li>
-<p>ワールドのパフォーマンスを分析・可視化するプロファイラー機能を追加</p>
+<ul>
+<li>ワールドのパフォーマンスを分析・可視化するプロファイラー機能を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>Unity 6対応</strong></p>
-</li>
+<ul>
 <li>Unity 6環境での動作をサポート</li>
+</ul>
+</li>
 </ul>
 <h3 id="_2">新機能</h3>
 <ul>
-<li><strong>VKC World Setting &gt; Rendering Setting</strong></li>
 <li>
-<p>レンダリングJSONから値をインポートできる機能を追加</p>
+<p><strong>VKC World Setting &gt; Rendering Setting</strong></p>
+<ul>
+<li>レンダリングJSONから値をインポートできる機能を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC Item Object &gt; Instance Draw</strong></p>
-</li>
-<li>
-<p>Instance Draw項目を追加</p>
+<ul>
+<li>Instance Draw項目を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>Build Setting &gt; フォルダー削除機能</strong></p>
-</li>
-<li>
-<p>アップロードする際に、自動でフォルダーを削除する機能をオフにできる設定を追加（社内用）</p>
+<ul>
+<li>アップロードする際に、自動でフォルダーを削除する機能をオフにできる設定を追加（社内用）</li>
+</ul>
 </li>
 <li>
 <p><strong>CopyOperation &gt; ファイル圧縮</strong></p>
-</li>
-<li>
-<p>Activity内の各種ファイル（テクスチャ、HEO、VRM、HEP）を圧縮する仕様を追加</p>
+<ul>
+<li>Activity内の各種ファイル（テクスチャ、HEO、VRM、HEP）を圧縮する仕様を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>hsファイル改行コード統一</strong></p>
-</li>
-<li>
-<p>CRLFとLFが混在するhsファイルをビルドできるよう、LFに統一する処理を追加</p>
+<ul>
+<li>CRLFとLFが混在するhsファイルをビルドできるよう、LFに統一する処理を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>Upload UI Panel幅保存</strong></p>
-</li>
-<li>
-<p>アップロードUIの左Panel幅を保存できるように改善</p>
+<ul>
+<li>アップロードUIの左Panel幅を保存できるように改善</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC Item Camera &gt; ItemCamera</strong></p>
-</li>
-<li>
-<p>ItemCamera項目を追加</p>
+<ul>
+<li>ItemCamera項目を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>HeliScriptファイル作成ボタン</strong></p>
-</li>
-<li>
-<p>ラベルをわかりやすくするように更新</p>
+<ul>
+<li>ラベルをわかりやすくするように更新</li>
+</ul>
 </li>
 <li>
 <p><strong>DebugConsole &gt; エラーダイアログ</strong></p>
-</li>
-<li>
-<p>Activityが編集中のときのエラーダイアログをわかりやすく表記するように改善</p>
+<ul>
+<li>Activityが編集中のときのエラーダイアログをわかりやすく表記するように改善</li>
+</ul>
 </li>
 <li>
 <p><strong>HEOCamera &gt; autoscreensize</strong></p>
-</li>
-<li>
-<p>autoscreensizeパラメータを追加</p>
+<ul>
+<li>autoscreensizeパラメータを追加</li>
+</ul>
 </li>
 <li>
 <p><strong>BaseSetting &gt; ワールド名警告</strong></p>
-</li>
-<li>
-<p>ワールド名が長い場合の警告表示および自動的に長さ調整する機能を追加</p>
+<ul>
+<li>ワールド名が長い場合の警告表示および自動的に長さ調整する機能を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>DRACO圧縮/解凍機能</strong></p>
-</li>
-<li>
-<p>DRACO圧縮/解凍機能を追加</p>
+<ul>
+<li>DRACO圧縮/解凍機能を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>ReadHEOFile リファクタ</strong></p>
-</li>
-<li>
-<p>不要な依存を切って、dll化のスクリプトを作成</p>
+<ul>
+<li>不要な依存を切って、dll化のスクリプトを作成</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC Item Object &gt; collider</strong></p>
-</li>
-<li>
-<p>colliderパラメータを追加</p>
+<ul>
+<li>colliderパラメータを追加</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC系コンポーネント &gt; アクション非表示</strong></p>
-</li>
-<li>
-<p>複数ノード系アクションを非表示化</p>
+<ul>
+<li>複数ノード系アクションを非表示化</li>
+</ul>
 </li>
 <li>
 <p><strong>CameraSettings &gt; 各種パラメータ</strong></p>
-</li>
-<li>
-<p>xrotatereverse、yrotatereverse、defaulttpscamerapitchangletype、cameraspeedパラメータを追加</p>
+<ul>
+<li>xrotatereverse、yrotatereverse、defaulttpscamerapitchangletype、cameraspeedパラメータを追加</li>
+</ul>
 </li>
 <li>
 <p><strong>Texture Import Viewer &gt; 警告</strong></p>
-</li>
-<li>
-<p>要シーン保存の警告を追加</p>
+<ul>
+<li>要シーン保存の警告を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>HeliScriptテンプレート登録画面</strong></p>
-</li>
-<li>
-<p>テンプレートの登録画面を作成</p>
+<ul>
+<li>テンプレートの登録画面を作成</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC Video Node &gt; EventMap</strong></p>
-</li>
-<li>
-<p>EventMap自動生成インターフェースを実装</p>
+<ul>
+<li>EventMap自動生成インターフェースを実装</li>
+</ul>
 </li>
 <li>
 <p><strong>Heliodor検証時Ver切り替え</strong></p>
-</li>
-<li>
-<p>SDK開発者機能でHeliodor検証時にVerを切り替える拡張を追加</p>
+<ul>
+<li>SDK開発者機能でHeliodor検証時にVerを切り替える拡張を追加</li>
+</ul>
 </li>
 <li>
 <p><strong>Asset Name Validator &gt; 警告改善</strong></p>
-</li>
-<li>
-<p>複数ファイル名を変更する際、警告を一度だけ表示するようにする選択肢ボタンを追加</p>
+<ul>
+<li>複数ファイル名を変更する際、警告を一度だけ表示するようにする選択肢ボタンを追加</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC Item PointLight &gt; Show項目</strong></p>
-</li>
+<ul>
 <li>Show項目を追加</li>
+</ul>
+</li>
 </ul>
 <h3 id="_3">不具合修正</h3>
 <ul>
-<li><strong>VketCloudSetting &gt; PlayModeManager</strong></li>
 <li>
-<p>標準シーンを再生するとエラーが発生するバグを修正</p>
+<p><strong>VketCloudSetting &gt; PlayModeManager</strong></p>
+<ul>
+<li>標準シーンを再生するとエラーが発生するバグを修正</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC Helper &gt; Create VKC Object</strong></p>
-</li>
-<li>
-<p>メインスレッドがデッドロックされるバグを修正</p>
+<ul>
+<li>メインスレッドがデッドロックされるバグを修正</li>
+</ul>
 </li>
 <li>
 <p><strong>DebugConsole &gt; 多重ビルド</strong></p>
-</li>
-<li>
-<p>多重ビルドするとテクスチャがはがれるバグを修正</p>
+<ul>
+<li>多重ビルドするとテクスチャがはがれるバグを修正</li>
+</ul>
 </li>
 <li>
 <p><strong>Build&amp;Run &gt; hemファイル</strong></p>
-</li>
-<li>
-<p>Activity内にhemファイルをおくと、ビルドエラーになるバグを修正</p>
+<ul>
+<li>Activity内にhemファイルをおくと、ビルドエラーになるバグを修正</li>
+</ul>
 </li>
 <li>
 <p><strong>HEO Script &gt; 削除処理</strong></p>
-</li>
-<li>
-<p>設定側の削除でHEOScript側のスクリプトが残ってしまう問題を修正</p>
+<ul>
+<li>設定側の削除でHEOScript側のスクリプトが残ってしまう問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>FileDeploymentConfig</strong></p>
-</li>
-<li>
-<p>アセット選択で作成した場合チェックボックスが有効になっていないバグを修正</p>
+<ul>
+<li>アセット選択で作成した場合チェックボックスが有効になっていないバグを修正</li>
+</ul>
 </li>
 <li>
 <p><strong>WorldCameraSetting &gt; UI</strong></p>
-</li>
-<li>
-<p>ラベルのテキストがボタンより広いので、ボタンを横に広くする修正</p>
+<ul>
+<li>ラベルのテキストがボタンより広いので、ボタンを横に広くする修正</li>
+</ul>
 </li>
 <li>
 <p><strong>VketCloudSetting &gt; BasicInfo</strong></p>
-</li>
-<li>
-<p>HeliScriptにNullがあってもビルドできるように修正</p>
+<ul>
+<li>HeliScriptにNullがあってもビルドできるように修正</li>
+</ul>
 </li>
 <li>
 <p><strong>HeliodorLib暗号化png</strong></p>
-</li>
-<li>
-<p>独自で暗号化されたpngをImport SettingをOverrideして、エラーが出ないようにする修正（フェーズ2）</p>
+<ul>
+<li>独自で暗号化されたpngをImport SettingをOverrideして、エラーが出ないようにする修正（フェーズ2）</li>
+</ul>
 </li>
 <li>
 <p><strong>GameObjectGenerator</strong></p>
-</li>
-<li>
-<p>Asset Generator &gt; GameObject生成の修正</p>
+<ul>
+<li>Asset Generator &gt; GameObject生成の修正</li>
+</ul>
 </li>
 <li>
 <p><strong>VKCItemActivity &gt; ScenePreview</strong></p>
-</li>
-<li>
-<p>ScenePreviewをONにするとExceptionを吐く問題を修正</p>
+<ul>
+<li>ScenePreviewをONにするとExceptionを吐く問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>Translation Database</strong></p>
-</li>
-<li>
-<p>改行等のような文字が正しく表示されない問題を修正</p>
+<ul>
+<li>改行等のような文字が正しく表示されない問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>Hierarchy &gt; HierarchyHelper</strong></p>
-</li>
-<li>
-<p>MissingScriptがあるとエラーが出て該当オブジェクトが触れなくなる問題を修正</p>
+<ul>
+<li>MissingScriptがあるとエラーが出て該当オブジェクトが触れなくなる問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>VKCAttributeScript</strong></p>
-</li>
-<li>
-<p>SDK15.1.0でhsファイルを設定するとビルド時にエラーが発生する問題を修正</p>
+<ul>
+<li>SDK15.1.0でhsファイルを設定するとビルド時にエラーが発生する問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>VKCNodeRotateAnimation</strong></p>
-</li>
-<li>
-<p>シーン内可視化が動作しない問題を修正</p>
+<ul>
+<li>シーン内可視化が動作しない問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>シーンプレビュー &gt; チェックマーク</strong></p>
-</li>
-<li>
-<p>一度ONにするとOFFにできない問題を修正</p>
+<ul>
+<li>一度ONにするとOFFにできない問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>HEO &gt; ScenePreview</strong></p>
-</li>
-<li>
-<p>Shaderが正常に適用されない問題を修正</p>
+<ul>
+<li>Shaderが正常に適用されない問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>VKCVideoTrigger &gt; ラベル表示</strong></p>
-</li>
-<li>
-<p>ItemObject連携フラグのラベルが長すぎて見切れてしまう問題を修正</p>
+<ul>
+<li>ItemObject連携フラグのラベルが長すぎて見切れてしまう問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC Text Plane &gt; Rotation</strong></p>
-</li>
-<li>
-<p>Rotationした際、ビルドランまたはシーン内可視化を押下すると表示が0の値で再表示される問題を修正</p>
+<ul>
+<li>Rotationした際、ビルドランまたはシーン内可視化を押下すると表示が0の値で再表示される問題を修正</li>
+</ul>
 </li>
 <li>
 <p><strong>VKC Item Pointlight/Clone</strong></p>
-</li>
+<ul>
 <li>HeliScriptのComponentのシーンファイル書き込みを一部修正</li>
+</ul>
+</li>
 </ul>
 
 
