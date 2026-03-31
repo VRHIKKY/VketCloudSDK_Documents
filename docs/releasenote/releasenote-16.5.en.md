@@ -62,6 +62,7 @@
 
 - **CameraSettings > Various Parameters**
     - Added xrotatereverse, yrotatereverse, defaulttpscamerapitchangletype, and cameraspeed parameters
+      - *Note: This feature will become available after the upcoming HeliodorLib update.*
 
 - **Texture Import Viewer > Warning**
     - Added a warning for scene save requirement

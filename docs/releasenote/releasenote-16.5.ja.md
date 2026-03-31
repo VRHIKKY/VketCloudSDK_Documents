@@ -62,6 +62,7 @@
 
 - **CameraSettings > 各種パラメータ**
     - xrotatereverse、yrotatereverse、defaulttpscamerapitchangletype、cameraspeedパラメータを追加
+      - ※こちらの機能は近日のシステム(HeliodorLib)更新後に使用可能になります。
 
 - **Texture Import Viewer > 警告**
     - 要シーン保存の警告を追加
