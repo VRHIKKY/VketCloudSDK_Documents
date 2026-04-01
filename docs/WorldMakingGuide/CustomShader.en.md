@@ -8,15 +8,15 @@ HCSL (Heliodor Custom Shader Language) is a shader language unique to Heliodor.
 
 ### Shader Compilation
 
-1 Add a Plane to the scene.
+1. Add a Plane to the scene.
 
-  ![Create Plane](img/customshader01.png)
+   ![Create Plane](img/customshader01.png)
 
-2 Right-click in the Project View and create an HCSL file via **Create → HCSL File**, then name it `sample`.
+2. Right-click in the Project View and create an HCSL file via **Create → HCSL File**, then name it `sample`.
 
-  ![Create HCSL](img/customshader02.png)
+   ![Create HCSL](img/customshader02.png)
 
-3 Double-click the generated `sample` HCSL shader to open it in the editor, then paste the following sample shader in its entirety.
+3. Double-click the generated `sample` HCSL shader to open it in the editor, then paste the following sample shader in its entirety.
 
 ```
 #version 1
@@ -101,22 +101,22 @@ hcsl "sample"
 }
 ```
 
-4 Attach a **VKC Shader** component to the Plane.
+4. Attach a **VKC Shader** component to the Plane.
 
-  ![Attach VKC Shader](img/customshader03.png)
+   ![Attach VKC Shader](img/customshader03.png)
 
-5 Drag and drop the `sample.hcsl` file you just created into the **HCSL Core** field of the VKC Shader component.
+5. Drag and drop the `sample.hcsl` file you just created into the **HCSL Core** field of the VKC Shader component.
 
-  ![Add HCSL To VKC Shader](img/customshader04.png)
+   ![Add HCSL To VKC Shader](img/customshader04.png)
 
-6 Click the vertical three-dot menu in the upper-right corner of the VKC Shader component to open the menu, then click **Compile** at the bottom.
+6. Click the vertical three-dot menu in the upper-right corner of the VKC Shader component to open the menu, then click **Compile** at the bottom.
 
-  ![Add HCSL To VKC Shader](img/customshader05.png)
+   ![Add HCSL To VKC Shader](img/customshader05.png)
 
-7 A rippling red Plane effect will now appear.
+7. A rippling red Plane effect will now appear.
 
-  ![Check in Unity](img/customshader06.png)
+   ![Check in Unity](img/customshader06.png)
 
-8 Finally, perform a **Build and Run** as usual to confirm that the shader is applied correctly in VketCloud.
+8. Finally, perform a **Build and Run** as usual to confirm that the shader is applied correctly in VketCloud.
 
-  ![Check in VKC](img/customshader07.png)
+   ![Check in VKC](img/customshader07.png)
