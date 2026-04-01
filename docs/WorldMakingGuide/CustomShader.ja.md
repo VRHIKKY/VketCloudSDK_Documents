@@ -8,71 +8,116 @@ HCSL(Heliodor Custom Shader Language)というHeliodor独自のシェーダー�
 
 ### Shaderコンパイル
 
-1. プロジェクトビューを右クリックし、「Create → Shader → UnlitShader」でShaderLabを作成し名前を「sample」とつけます
+1 シーンにPlaneを追加します。
 
-    ![Create UnlitShader](img/customshader01.jpg)
+  ![Create Plane](img/customshader01.png)
 
-2. 生成されたsampleシェーダーを右クリックし、Materialボタンからマテリアルを作ります。同様に名前はsampleとします
+2 プロジェクトビューを右クリックし、「Create → HCSL File」でHCSLを作成し名前を「sample」とつけます
 
-    ![Create Material](img/customshader02.jpg)
+   ![Create HCSL](img/customshader02.png)
 
-3. 次にUnityシーン上に1つ適当なPlaneをHCSL_Testの子要素として追加し、WavePlaneの横あたりに配置します
+3 生成されたsample HCSLシェーダーをダブルクリックしエディタを開きます。そして以下のサンプルシェーダーをすべてコピーアンドペーストで貼り付けます
 
-    ![Add Plane](img/customshader03.jpg)
+```
+#version 1
 
-4. そして先ほどのsampleマテリアルをPlaneにアタッチします。また、メッシュコライダーは邪魔なので外しておきます
+hcsl "sample"
+{
+    pass Geometry_Opaque
+    {
 
-5. 次にWavePlane.hcslをCtrl + Dで複製し名前をsampleにリネームします
+      renderparam
+      {
+        bool hel_z_write = true;
+        int  hel_cull_mode = HEL_CULL_BACK;
+      }
 
-    ![Duplicate HCSL](img/customshader04.jpg)
+      attribute
+      {
+        vec3 _Position : VS_POSITION;
+        vec3 _Normal : VS_NORMAL;
+        vec2 _TexCoord0 : VS_UV;
+      }
 
-6. sample.hcslをダブルクリックして任意のエディタを開きます
+      output vertex
+      {
+        vec4 outPos : VS_OUT_POSITION;
+        vec3 WorldNormal;
+        vec3 WorldPos;
+        vec2 uv;
+      }
 
-    !!! note "注意"
-        Shift JISで開きます
+      uniform vertex
+      {
+        float _Seed = 1.0;
+        float _Size = 0.1;
+      }
 
-7. hcsl内のシェーダー名をsampleに変更し保存します
+      shader vertex
+      {
+        float g_Offset;
+        float wave(vec2 st)
+        {
+            return sin(st.x * 50.0 + HEL_TIME) * 1.5;
+        }
+        void main()
+        {
+          g_Offset = 10.0;
+          vec4 pos = vec4(_Position, 1.0);
+          pos.y += wave(_TexCoord0 * _Size + vec2(_Seed + g_Offset));
+          outPos = HEL_MATRIX_P * HEL_MATRIX_V * HEL_MATRIX_W * pos;
+          WorldNormal = (HEL_MATRIX_W * vec4(_Normal, 0.0)).xyz;
+          uv = _TexCoord0;
+        }
+      }
 
-    ![Edit HCSL](img/customshader05.jpg)
+      input fragment
+      {
+        vec3 WorldNormal;
+        vec2 uv;
+      }
 
-8. 次に、Planeに対してAddComponentよりHEOCustomShaderコンポーネントをアタッチします
+      output fragment
+      {
+        vec4 outColor : FS_COLOR;
+      }
 
-    ![Add Component](img/customshader06.jpg)
+      uniform fragment
+      {
+        vec4 _MainColor = vec4(1.0);
+        sampler2D _MainTex;
+        vec4 _MainTex_ST;
+      }
 
-9. そしてsampleマテリアルとsample.hcslをアタッチします
+      shader fragment
+      {
+        void main()
+        {
+          vec4 col = vec4(1.0, 0.0, 0.0, 1.0);
+          outColor = col;
+        }
+      }
+    }
+}
+```
 
-    ![Attach Files](img/customshader07.jpg)
+4 Planeに VKC Shaderコンポーネントをアタッチします
 
-10. HEOCustomShaderの3点ボタンを押下しその中のCompileボタンを探して押下します
+   ![Attach VKC Shader](img/customshader03.png)
 
-    ![Compile](img/customshader08.jpg)
+5 VKC ShaderコンポーネントのHCSL Coreフィールドに先ほど作成したsample.hcslをドロップします
 
-11. するとHCSLがShaderLabに変換されます。UnityコンソールにSuccess!!と出ていれば成功です
+   ![Add HCSL To VKC Shader](img/customshader04.png)
 
-    ![Success](img/customshader09.jpg)
+6 VKC Shaderコンポーネントの右上の縦三点リーダーを押してメニュー開き、その一番下にあるCompileを押します。
 
-### インゲームでHCSLを使用する
+   ![Add HCSL To VKC Shader](img/customshader05.png)
 
-1. HCSL_Testを選択しVketCloudSDK → Export FieldでHEOをエクスポートします
+7 すると波打つ赤いPlaneのエフェクトが完成します。
 
-    ![Export Field](img/customshader10.jpg)
+   ![Check in Unity](img/customshader06.png)
 
-2. HEOは「release/data/Field/HCSL_Test」にエクスポートします
 
-    ![Export Path](img/customshader11.jpg)
+8 後はいつも通りビルドアンドランによってVketCloudにShaderが反映されていることを確認します。
 
-3. 作成したsample.hcslを「release/data/Shaders」にコピーします
-
-    ![Copy HCSL](img/customshader12.jpg)
-
-4. `release\data\Scene\streamingvideo.json` を何かしらのテキストエディタで開きます
-
-    ![Open JSON](img/customshader13.jpg)
-
-5. するとshadersというフィールドがあるのでそこに先ほど追加したsample.hcslのパスを追加します `"Shaders/sample.hcsl"`
-
-    ![Edit JSON](img/customshader14.jpg)
-
-6. 最後に準備編でやった時と同じようにローカルホストを立ててインゲームに入室し、作成したシェーダーが反映されていれば完了です
-
-    ![In Game](img/customshader15.jpg)
+   ![Check in VKC](img/customshader07.png)
