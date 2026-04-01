@@ -1,77 +1,122 @@
 # HCSL (Heliodor Custom Shader Language)
 
 ## Overview
-Heliodor now supports custom shaders. HCSL (Heliodor Custom Shader Language) is Heliodor's proprietary shader language.
+Heliodor now supports custom shaders.
+HCSL (Heliodor Custom Shader Language) is a shader language unique to Heliodor.
 
 ## Implementation
 
 ### Shader Compilation
 
-1. Right-click in the Project view and create a ShaderLab by selecting "Create → Shader → UnlitShader", then name it "sample"
+1 Add a Plane to the scene.
 
-    ![Create UnlitShader](img/customshader01.jpg)
+  ![Create Plane](img/customshader01.png)
 
-2. Right-click the generated sample shader and create a material from the Material button. Name it "sample" as well
+2 Right-click in the Project View and create an HCSL file via **Create → HCSL File**, then name it `sample`.
 
-    ![Create Material](img/customshader02.jpg)
+  ![Create HCSL](img/customshader02.png)
 
-3. Add a Plane to the Unity scene as a child element of HCSL_Test and place it near WavePlane
+3 Double-click the generated `sample` HCSL shader to open it in the editor, then paste the following sample shader in its entirety.
 
-    ![Add Plane](img/customshader03.jpg)
+```
+#version 1
 
-4. Attach the sample material to the Plane. Also, remove the mesh collider as it is not needed
+hcsl "sample"
+{
+    pass Geometry_Opaque
+    {
 
-5. Duplicate WavePlane.hcsl with Ctrl + D and rename it to "sample"
+      renderparam
+      {
+        bool hel_z_write = true;
+        int  hel_cull_mode = HEL_CULL_BACK;
+      }
 
-    ![Duplicate HCSL](img/customshader04.jpg)
+      attribute
+      {
+        vec3 _Position : VS_POSITION;
+        vec3 _Normal : VS_NORMAL;
+        vec2 _TexCoord0 : VS_UV;
+      }
 
-6. Double-click sample.hcsl to open it in your preferred editor
+      output vertex
+      {
+        vec4 outPos : VS_OUT_POSITION;
+        vec3 WorldNormal;
+        vec3 WorldPos;
+        vec2 uv;
+      }
 
-    !!! note "Note"
-        Open with Shift JIS encoding
+      uniform vertex
+      {
+        float _Seed = 1.0;
+        float _Size = 0.1;
+      }
 
-7. Change the shader name in the hcsl file to "sample" and save
+      shader vertex
+      {
+        float g_Offset;
+        float wave(vec2 st)
+        {
+            return sin(st.x * 50.0 + HEL_TIME) * 1.5;
+        }
+        void main()
+        {
+          g_Offset = 10.0;
+          vec4 pos = vec4(_Position, 1.0);
+          pos.y += wave(_TexCoord0 * _Size + vec2(_Seed + g_Offset));
+          outPos = HEL_MATRIX_P * HEL_MATRIX_V * HEL_MATRIX_W * pos;
+          WorldNormal = (HEL_MATRIX_W * vec4(_Normal, 0.0)).xyz;
+          uv = _TexCoord0;
+        }
+      }
 
-    ![Edit HCSL](img/customshader05.jpg)
+      input fragment
+      {
+        vec3 WorldNormal;
+        vec2 uv;
+      }
 
-8. Add the HEOCustomShader component to the Plane via Add Component
+      output fragment
+      {
+        vec4 outColor : FS_COLOR;
+      }
 
-    ![Add Component](img/customshader06.jpg)
+      uniform fragment
+      {
+        vec4 _MainColor = vec4(1.0);
+        sampler2D _MainTex;
+        vec4 _MainTex_ST;
+      }
 
-9. Attach the sample material and sample.hcsl
+      shader fragment
+      {
+        void main()
+        {
+          vec4 col = vec4(1.0, 0.0, 0.0, 1.0);
+          outColor = col;
+        }
+      }
+    }
+}
+```
 
-    ![Attach Files](img/customshader07.jpg)
+4 Attach a **VKC Shader** component to the Plane.
 
-10. Click the three-dot button on HEOCustomShader and find and press the Compile button
+  ![Attach VKC Shader](img/customshader03.png)
 
-    ![Compile](img/customshader08.jpg)
+5 Drag and drop the `sample.hcsl` file you just created into the **HCSL Core** field of the VKC Shader component.
 
-11. The HCSL will be converted to ShaderLab. If "Success!!" appears in the Unity console, it was successful
+  ![Add HCSL To VKC Shader](img/customshader04.png)
 
-    ![Success](img/customshader09.jpg)
+6 Click the vertical three-dot menu in the upper-right corner of the VKC Shader component to open the menu, then click **Compile** at the bottom.
 
-### Using HCSL In-Game
+  ![Add HCSL To VKC Shader](img/customshader05.png)
 
-1. Select HCSL_Test and export HEO via VketCloudSDK → Export Field
+7 A rippling red Plane effect will now appear.
 
-    ![Export Field](img/customshader10.jpg)
+  ![Check in Unity](img/customshader06.png)
 
-2. Export the HEO to "release/data/Field/HCSL_Test"
+8 Finally, perform a **Build and Run** as usual to confirm that the shader is applied correctly in VketCloud.
 
-    ![Export Path](img/customshader11.jpg)
-
-3. Copy the created sample.hcsl to "release/data/Shaders"
-
-    ![Copy HCSL](img/customshader12.jpg)
-
-4. Open `release\data\Scene\streamingvideo.json` in a text editor
-
-    ![Open JSON](img/customshader13.jpg)
-
-5. Find the shaders field and add the path to the sample.hcsl you just added: `"Shaders/sample.hcsl"`
-
-    ![Edit JSON](img/customshader14.jpg)
-
-6. Finally, set up a local server as you did in the preparation phase, enter the game, and verify that the created shader is reflected
-
-    ![In Game](img/customshader15.jpg)
+  ![Check in VKC](img/customshader07.png)
