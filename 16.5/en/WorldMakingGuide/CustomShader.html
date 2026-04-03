@@ -1128,15 +1128,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#using-hcsl-in-game" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using HCSL In-Game
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -12379,15 +12370,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#using-hcsl-in-game" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using HCSL In-Game
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -12411,84 +12393,106 @@
 
 <h1 id="hcsl-heliodor-custom-shader-language">HCSL (Heliodor Custom Shader Language)</h1>
 <h2 id="overview">Overview</h2>
-<p>Heliodor now supports custom shaders. HCSL (Heliodor Custom Shader Language) is Heliodor's proprietary shader language.</p>
+<p>Heliodor now supports custom shaders.
+HCSL (Heliodor Custom Shader Language) is a shader language unique to Heliodor.</p>
 <h2 id="implementation">Implementation</h2>
 <h3 id="shader-compilation">Shader Compilation</h3>
-<ol>
-<li>
-<p>Right-click in the Project view and create a ShaderLab by selecting "Create → Shader → UnlitShader", then name it "sample"</p>
-<p><img alt="Create UnlitShader" src="../../WorldMakingGuide/img/customshader01.jpg" /></p>
-</li>
-<li>
-<p>Right-click the generated sample shader and create a material from the Material button. Name it "sample" as well</p>
-<p><img alt="Create Material" src="../../WorldMakingGuide/img/customshader02.jpg" /></p>
-</li>
-<li>
-<p>Add a Plane to the Unity scene as a child element of HCSL_Test and place it near WavePlane</p>
-<p><img alt="Add Plane" src="../../WorldMakingGuide/img/customshader03.jpg" /></p>
-</li>
-<li>
-<p>Attach the sample material to the Plane. Also, remove the mesh collider as it is not needed</p>
-</li>
-<li>
-<p>Duplicate WavePlane.hcsl with Ctrl + D and rename it to "sample"</p>
-<p><img alt="Duplicate HCSL" src="../../WorldMakingGuide/img/customshader04.jpg" /></p>
-</li>
-<li>
-<p>Double-click sample.hcsl to open it in your preferred editor</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Open with Shift JIS encoding</p>
-</div>
-</li>
-<li>
-<p>Change the shader name in the hcsl file to "sample" and save</p>
-<p><img alt="Edit HCSL" src="../../WorldMakingGuide/img/customshader05.jpg" /></p>
-</li>
-<li>
-<p>Add the HEOCustomShader component to the Plane via Add Component</p>
-<p><img alt="Add Component" src="../../WorldMakingGuide/img/customshader06.jpg" /></p>
-</li>
-<li>
-<p>Attach the sample material and sample.hcsl</p>
-<p><img alt="Attach Files" src="../../WorldMakingGuide/img/customshader07.jpg" /></p>
-</li>
-<li>
-<p>Click the three-dot button on HEOCustomShader and find and press the Compile button</p>
-<p><img alt="Compile" src="../../WorldMakingGuide/img/customshader08.jpg" /></p>
-</li>
-<li>
-<p>The HCSL will be converted to ShaderLab. If "Success!!" appears in the Unity console, it was successful</p>
-<p><img alt="Success" src="../../WorldMakingGuide/img/customshader09.jpg" /></p>
-</li>
-</ol>
-<h3 id="using-hcsl-in-game">Using HCSL In-Game</h3>
-<ol>
-<li>
-<p>Select HCSL_Test and export HEO via VketCloudSDK → Export Field</p>
-<p><img alt="Export Field" src="../../WorldMakingGuide/img/customshader10.jpg" /></p>
-</li>
-<li>
-<p>Export the HEO to "release/data/Field/HCSL_Test"</p>
-<p><img alt="Export Path" src="../../WorldMakingGuide/img/customshader11.jpg" /></p>
-</li>
-<li>
-<p>Copy the created sample.hcsl to "release/data/Shaders"</p>
-<p><img alt="Copy HCSL" src="../../WorldMakingGuide/img/customshader12.jpg" /></p>
-</li>
-<li>
-<p>Open <code>release\data\Scene\streamingvideo.json</code> in a text editor</p>
-<p><img alt="Open JSON" src="../../WorldMakingGuide/img/customshader13.jpg" /></p>
-</li>
-<li>
-<p>Find the shaders field and add the path to the sample.hcsl you just added: <code>"Shaders/sample.hcsl"</code></p>
-<p><img alt="Edit JSON" src="../../WorldMakingGuide/img/customshader14.jpg" /></p>
-</li>
-<li>
-<p>Finally, set up a local server as you did in the preparation phase, enter the game, and verify that the created shader is reflected</p>
-<p><img alt="In Game" src="../../WorldMakingGuide/img/customshader15.jpg" /></p>
-</li>
-</ol>
+<p>1 Add a Plane to the scene.</p>
+<p><img alt="Create Plane" src="../../WorldMakingGuide/img/customshader01.png" /></p>
+<p>2 Right-click in the Project View and create an HCSL file via <strong>Create → HCSL File</strong>, then name it <code>sample</code>.</p>
+<p><img alt="Create HCSL" src="../../WorldMakingGuide/img/customshader02.png" /></p>
+<p>3 Double-click the generated <code>sample</code> HCSL shader to open it in the editor, then paste the following sample shader in its entirety.</p>
+<div class="highlight"><pre><span></span><code>#version 1
+
+hcsl &quot;sample&quot;
+{
+    pass Geometry_Opaque
+    {
+
+      renderparam
+      {
+        bool hel_z_write = true;
+        int  hel_cull_mode = HEL_CULL_BACK;
+      }
+
+      attribute
+      {
+        vec3 _Position : VS_POSITION;
+        vec3 _Normal : VS_NORMAL;
+        vec2 _TexCoord0 : VS_UV;
+      }
+
+      output vertex
+      {
+        vec4 outPos : VS_OUT_POSITION;
+        vec3 WorldNormal;
+        vec3 WorldPos;
+        vec2 uv;
+      }
+
+      uniform vertex
+      {
+        float _Seed = 1.0;
+        float _Size = 0.1;
+      }
+
+      shader vertex
+      {
+        float g_Offset;
+        float wave(vec2 st)
+        {
+            return sin(st.x * 50.0 + HEL_TIME) * 1.5;
+        }
+        void main()
+        {
+          g_Offset = 10.0;
+          vec4 pos = vec4(_Position, 1.0);
+          pos.y += wave(_TexCoord0 * _Size + vec2(_Seed + g_Offset));
+          outPos = HEL_MATRIX_P * HEL_MATRIX_V * HEL_MATRIX_W * pos;
+          WorldNormal = (HEL_MATRIX_W * vec4(_Normal, 0.0)).xyz;
+          uv = _TexCoord0;
+        }
+      }
+
+      input fragment
+      {
+        vec3 WorldNormal;
+        vec2 uv;
+      }
+
+      output fragment
+      {
+        vec4 outColor : FS_COLOR;
+      }
+
+      uniform fragment
+      {
+        vec4 _MainColor = vec4(1.0);
+        sampler2D _MainTex;
+        vec4 _MainTex_ST;
+      }
+
+      shader fragment
+      {
+        void main()
+        {
+          vec4 col = vec4(1.0, 0.0, 0.0, 1.0);
+          outColor = col;
+        }
+      }
+    }
+}
+</code></pre></div>
+<p>4 Attach a <strong>VKC Shader</strong> component to the Plane.</p>
+<p><img alt="Attach VKC Shader" src="../../WorldMakingGuide/img/customshader03.png" /></p>
+<p>5 Drag and drop the <code>sample.hcsl</code> file you just created into the <strong>HCSL Core</strong> field of the VKC Shader component.</p>
+<p><img alt="Add HCSL To VKC Shader" src="../../WorldMakingGuide/img/customshader04.png" /></p>
+<p>6 Click the vertical three-dot menu in the upper-right corner of the VKC Shader component to open the menu, then click <strong>Compile</strong> at the bottom.</p>
+<p><img alt="Add HCSL To VKC Shader" src="../../WorldMakingGuide/img/customshader05.png" /></p>
+<p>7 A rippling red Plane effect will now appear.</p>
+<p><img alt="Check in Unity" src="../../WorldMakingGuide/img/customshader06.png" /></p>
+<p>8 Finally, perform a <strong>Build and Run</strong> as usual to confirm that the shader is applied correctly in VketCloud.</p>
+<p><img alt="Check in VKC" src="../../WorldMakingGuide/img/customshader07.png" /></p>
 
 
 

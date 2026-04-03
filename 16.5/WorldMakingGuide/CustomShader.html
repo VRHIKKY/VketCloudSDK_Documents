@@ -1128,15 +1128,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#hcsl" class="md-nav__link">
-    <span class="md-ellipsis">
-      インゲームでHCSLを使用する
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -12379,15 +12370,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#hcsl" class="md-nav__link">
-    <span class="md-ellipsis">
-      インゲームでHCSLを使用する
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -12415,81 +12397,102 @@
 HCSL(Heliodor Custom Shader Language)というHeliodor独自のシェーダー言語です。</p>
 <h2 id="_2">実装</h2>
 <h3 id="shader">Shaderコンパイル</h3>
-<ol>
-<li>
-<p>プロジェクトビューを右クリックし、「Create → Shader → UnlitShader」でShaderLabを作成し名前を「sample」とつけます</p>
-<p><img alt="Create UnlitShader" src="img/customshader01.jpg" /></p>
-</li>
-<li>
-<p>生成されたsampleシェーダーを右クリックし、Materialボタンからマテリアルを作ります。同様に名前はsampleとします</p>
-<p><img alt="Create Material" src="img/customshader02.jpg" /></p>
-</li>
-<li>
-<p>次にUnityシーン上に1つ適当なPlaneをHCSL_Testの子要素として追加し、WavePlaneの横あたりに配置します</p>
-<p><img alt="Add Plane" src="img/customshader03.jpg" /></p>
-</li>
-<li>
-<p>そして先ほどのsampleマテリアルをPlaneにアタッチします。また、メッシュコライダーは邪魔なので外しておきます</p>
-</li>
-<li>
-<p>次にWavePlane.hcslをCtrl + Dで複製し名前をsampleにリネームします</p>
-<p><img alt="Duplicate HCSL" src="img/customshader04.jpg" /></p>
-</li>
-<li>
-<p>sample.hcslをダブルクリックして任意のエディタを開きます</p>
-<div class="admonition note">
-<p class="admonition-title">注意</p>
-<p>Shift JISで開きます</p>
-</div>
-</li>
-<li>
-<p>hcsl内のシェーダー名をsampleに変更し保存します</p>
-<p><img alt="Edit HCSL" src="img/customshader05.jpg" /></p>
-</li>
-<li>
-<p>次に、Planeに対してAddComponentよりHEOCustomShaderコンポーネントをアタッチします</p>
-<p><img alt="Add Component" src="img/customshader06.jpg" /></p>
-</li>
-<li>
-<p>そしてsampleマテリアルとsample.hcslをアタッチします</p>
-<p><img alt="Attach Files" src="img/customshader07.jpg" /></p>
-</li>
-<li>
-<p>HEOCustomShaderの3点ボタンを押下しその中のCompileボタンを探して押下します</p>
-<p><img alt="Compile" src="img/customshader08.jpg" /></p>
-</li>
-<li>
-<p>するとHCSLがShaderLabに変換されます。UnityコンソールにSuccess!!と出ていれば成功です</p>
-<p><img alt="Success" src="img/customshader09.jpg" /></p>
-</li>
-</ol>
-<h3 id="hcsl">インゲームでHCSLを使用する</h3>
-<ol>
-<li>
-<p>HCSL_Testを選択しVketCloudSDK → Export FieldでHEOをエクスポートします</p>
-<p><img alt="Export Field" src="img/customshader10.jpg" /></p>
-</li>
-<li>
-<p>HEOは「release/data/Field/HCSL_Test」にエクスポートします</p>
-<p><img alt="Export Path" src="img/customshader11.jpg" /></p>
-</li>
-<li>
-<p>作成したsample.hcslを「release/data/Shaders」にコピーします</p>
-<p><img alt="Copy HCSL" src="img/customshader12.jpg" /></p>
-</li>
-<li>
-<p><code>release\data\Scene\streamingvideo.json</code> を何かしらのテキストエディタで開きます</p>
-<p><img alt="Open JSON" src="img/customshader13.jpg" /></p>
-</li>
-<li>
-<p>するとshadersというフィールドがあるのでそこに先ほど追加したsample.hcslのパスを追加します <code>"Shaders/sample.hcsl"</code></p>
-<p><img alt="Edit JSON" src="img/customshader14.jpg" /></p>
-</li>
-<li>
-<p>最後に準備編でやった時と同じようにローカルホストを立ててインゲームに入室し、作成したシェーダーが反映されていれば完了です</p>
-<p><img alt="In Game" src="img/customshader15.jpg" /></p>
-</li>
-</ol>
+<p>1 シーンにPlaneを追加します。</p>
+<p><img alt="Create Plane" src="img/customshader01.png" /></p>
+<p>2 プロジェクトビューを右クリックし、「Create → HCSL File」でHCSLを作成し名前を「sample」とつけます</p>
+<p><img alt="Create HCSL" src="img/customshader02.png" /></p>
+<p>3 生成されたsample HCSLシェーダーをダブルクリックしエディタを開きます。そして以下のサンプルシェーダーをすべてコピーアンドペーストで貼り付けます</p>
+<div class="highlight"><pre><span></span><code>#version 1
+
+hcsl &quot;sample&quot;
+{
+    pass Geometry_Opaque
+    {
+
+      renderparam
+      {
+        bool hel_z_write = true;
+        int  hel_cull_mode = HEL_CULL_BACK;
+      }
+
+      attribute
+      {
+        vec3 _Position : VS_POSITION;
+        vec3 _Normal : VS_NORMAL;
+        vec2 _TexCoord0 : VS_UV;
+      }
+
+      output vertex
+      {
+        vec4 outPos : VS_OUT_POSITION;
+        vec3 WorldNormal;
+        vec3 WorldPos;
+        vec2 uv;
+      }
+
+      uniform vertex
+      {
+        float _Seed = 1.0;
+        float _Size = 0.1;
+      }
+
+      shader vertex
+      {
+        float g_Offset;
+        float wave(vec2 st)
+        {
+            return sin(st.x * 50.0 + HEL_TIME) * 1.5;
+        }
+        void main()
+        {
+          g_Offset = 10.0;
+          vec4 pos = vec4(_Position, 1.0);
+          pos.y += wave(_TexCoord0 * _Size + vec2(_Seed + g_Offset));
+          outPos = HEL_MATRIX_P * HEL_MATRIX_V * HEL_MATRIX_W * pos;
+          WorldNormal = (HEL_MATRIX_W * vec4(_Normal, 0.0)).xyz;
+          uv = _TexCoord0;
+        }
+      }
+
+      input fragment
+      {
+        vec3 WorldNormal;
+        vec2 uv;
+      }
+
+      output fragment
+      {
+        vec4 outColor : FS_COLOR;
+      }
+
+      uniform fragment
+      {
+        vec4 _MainColor = vec4(1.0);
+        sampler2D _MainTex;
+        vec4 _MainTex_ST;
+      }
+
+      shader fragment
+      {
+        void main()
+        {
+          vec4 col = vec4(1.0, 0.0, 0.0, 1.0);
+          outColor = col;
+        }
+      }
+    }
+}
+</code></pre></div>
+<p>4 Planeに VKC Shaderコンポーネントをアタッチします</p>
+<p><img alt="Attach VKC Shader" src="img/customshader03.png" /></p>
+<p>5 VKC ShaderコンポーネントのHCSL Coreフィールドに先ほど作成したsample.hcslをドロップします</p>
+<p><img alt="Add HCSL To VKC Shader" src="img/customshader04.png" /></p>
+<p>6 VKC Shaderコンポーネントの右上の縦三点リーダーを押してメニュー開き、その一番下にあるCompileを押します。</p>
+<p><img alt="Add HCSL To VKC Shader" src="img/customshader05.png" /></p>
+<p>7 すると波打つ赤いPlaneのエフェクトが完成します。</p>
+<p><img alt="Check in Unity" src="img/customshader06.png" /></p>
+<p>8 後はいつも通りビルドアンドランによってVketCloudにShaderが反映されていることを確認します。</p>
+<p><img alt="Check in VKC" src="img/customshader07.png" /></p>
 
 
 
