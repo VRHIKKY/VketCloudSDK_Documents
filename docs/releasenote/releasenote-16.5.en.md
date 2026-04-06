@@ -1,4 +1,4 @@
-# Version 16.5.0
+# Version 16.5.0a
 
 ## SDK (Editor Extension Tool for Creating Worlds in Unity)
 
@@ -9,9 +9,6 @@
 
 - **World Profiler**
     - Added a profiler function to analyze and visualize world performance
-
-- **Unity 6 Support**
-    - Added support for the Unity 6 environment
 
 ### New Features
 
