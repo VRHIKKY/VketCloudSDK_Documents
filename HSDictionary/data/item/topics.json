@@ -1,0 +1,113 @@
+{
+  "topics": {
+    "quaternion": {
+      "id": "quaternion",
+      "icon": "school",
+      "relatedMethods": ["SetQuaternion", "GetQuaternion", "GetWorldQuaternion", "LookAt"],
+      "ja": {
+        "title": "Quaternionの基礎",
+        "summary": "3D回転を表現するQuaternionの基本的な使い方",
+        "content": "## Quaternionとは\n\nQuaternion（クォータニオン/四元数）は3D空間での回転を表現する数学的な方法です。\nオイラー角と比べて**ジンバルロック**が発生せず、滑らかな補間が可能です。\n\n## よく使うQuaternion生成関数\n\n```csharp\n// Y軸回転（水平方向に回転）\nQuaternion rot = makeQuaternionYRotation(90.0f);\n\n// X軸回転（前後に傾ける）\nQuaternion rot = makeQuaternionXRotation(45.0f);\n\n// Z軸回転（左右に傾ける）\nQuaternion rot = makeQuaternionZRotation(30.0f);\n\n// 任意軸回転\nVector3 axis = makeVector3(0.0f, 1.0f, 0.0f);\nQuaternion rot = makeQuaternionFromAxisAngle(axis, 90.0f);\n```\n\n## 回転の合成\n\n複数の回転を組み合わせる場合は**乗算**を使用します：\n\n```csharp\nQuaternion rotY = makeQuaternionYRotation(90.0f);\nQuaternion rotX = makeQuaternionXRotation(45.0f);\nQuaternion combined = rotY * rotX; // Y回転 → X回転の順で適用\n```\n\n## 注意点\n\n- 角度は**度数法**（0〜360）で指定します\n- 回転の順序で結果が変わります（非可換）\n- 単位Quaternion（回転なし）は `makeQuaternion()` で生成"
+      },
+      "en": {
+        "title": "Quaternion Basics",
+        "summary": "Basic usage of Quaternion for 3D rotation",
+        "content": "## What is Quaternion?\n\nQuaternion is a mathematical method for representing rotation in 3D space.\nUnlike Euler angles, it doesn't suffer from **gimbal lock** and allows smooth interpolation.\n\n## Common Quaternion Creation Functions\n\n```csharp\n// Y-axis rotation (horizontal rotation)\nQuaternion rot = makeQuaternionYRotation(90.0f);\n\n// X-axis rotation (tilt forward/backward)\nQuaternion rot = makeQuaternionXRotation(45.0f);\n\n// Z-axis rotation (tilt left/right)\nQuaternion rot = makeQuaternionZRotation(30.0f);\n\n// Arbitrary axis rotation\nVector3 axis = makeVector3(0.0f, 1.0f, 0.0f);\nQuaternion rot = makeQuaternionFromAxisAngle(axis, 90.0f);\n```\n\n## Combining Rotations\n\nUse **multiplication** to combine multiple rotations:\n\n```csharp\nQuaternion rotY = makeQuaternionYRotation(90.0f);\nQuaternion rotX = makeQuaternionXRotation(45.0f);\nQuaternion combined = rotY * rotX; // Apply Y rotation then X rotation\n```\n\n## Notes\n\n- Angles are specified in **degrees** (0-360)\n- Rotation order affects the result (non-commutative)\n- Unit Quaternion (no rotation) is created with `makeQuaternion()`"
+      }
+    },
+    "coordinate": {
+      "id": "coordinate",
+      "icon": "explore",
+      "relatedMethods": ["GetPos", "SetPos", "GetWorldPos", "GetNodeWorldPos", "SetNodeLocalPos", "SetNodeWorldPos"],
+      "ja": {
+        "title": "座標系の理解",
+        "summary": "ローカル座標とワールド座標の違いと使い分け",
+        "content": "## ローカル座標 vs ワールド座標\n\n### ローカル座標\n- **親オブジェクト基準**の相対座標\n- 親が移動・回転しても、ローカル座標の値は変わらない\n- `GetPos()` / `SetPos()` で操作\n\n### ワールド座標\n- **シーン全体**の絶対座標\n- 親の影響を受けた最終的な位置\n- `GetWorldPos()` で取得\n\n## 使い分けの例\n\n```csharp\n// Activity内のオブジェクトの絶対位置を知りたい\nVector3 worldPos = item.GetWorldPos();\n\n// 親からの相対位置を維持したまま操作\nVector3 localPos = item.GetPos();\nitem.SetPos(makeVector3(localPos.x + 1.0f, localPos.y, localPos.z), false);\n```\n\n## ノードのワールド座標\n\n子オブジェクト（ノード）のワールド座標を取得する場合：\n\n```csharp\nVector3 nodeWorldPos = item.GetNodeWorldPos(\"BoneName\");\n```"
+      },
+      "en": {
+        "title": "Understanding Coordinates",
+        "summary": "Differences between local and world coordinates",
+        "content": "## Local vs World Coordinates\n\n### Local Coordinates\n- Relative position **based on parent object**\n- Values don't change when parent moves/rotates\n- Use `GetPos()` / `SetPos()` to manipulate\n\n### World Coordinates\n- Absolute position in the **entire scene**\n- Final position including parent's influence\n- Use `GetWorldPos()` to retrieve\n\n## Usage Examples\n\n```csharp\n// Get absolute position of object in Activity\nVector3 worldPos = item.GetWorldPos();\n\n// Manipulate while maintaining relative position to parent\nVector3 localPos = item.GetPos();\nitem.SetPos(makeVector3(localPos.x + 1.0f, localPos.y, localPos.z), false);\n```\n\n## Node World Coordinates\n\nTo get world coordinates of child objects (nodes):\n\n```csharp\nVector3 nodeWorldPos = item.GetNodeWorldPos(\"BoneName\");\n```"
+      }
+    },
+    "lifecycle": {
+      "id": "lifecycle",
+      "icon": "sync",
+      "relatedMethods": ["Load", "Unload", "IsLoading", "IsLoaded", "ReplaceItem"],
+      "ja": {
+        "title": "Itemのライフサイクル",
+        "summary": "Load/Unloadの適切なタイミングと注意点",
+        "content": "## Load/Unloadの基本\n\n### Load()\n- Itemのモデル・テクスチャ・コンポーネントをメモリに読み込む\n- **非同期処理**のため、完了確認が必要\n\n### Unload()\n- メモリから完全に解放\n- 再使用するには再度 `Load()` が必要\n\n## 正しい使い方\n\n```csharp\n// ロード開始\nitem.Load();\n\n// ロード完了を待つ\nvoid Update() {\n    if (item.IsLoading()) {\n        // まだロード中...\n        return;\n    }\n    if (item.IsLoaded()) {\n        // ロード完了、使用可能\n        item.SetShow(true);\n    }\n}\n```\n\n## よくある間違い\n\n```csharp\n// NG: ロード完了前にアクセス\nitem.Load();\nitem.SetShow(true); // まだロードが完了していない可能性\n\n// OK: 完了を確認してからアクセス\nitem.Load();\n// Update等でIsLoaded()を確認後に操作\n```\n\n## メモリ管理のTips\n\n- 使用しないItemは `Unload()` でメモリ解放\n- 頻繁に使うItemはロード状態を維持\n- `SetShow(false)` は非表示にするだけでメモリは使用したまま"
+      },
+      "en": {
+        "title": "Item Lifecycle",
+        "summary": "Proper timing and notes for Load/Unload",
+        "content": "## Load/Unload Basics\n\n### Load()\n- Loads Item's model, texture, and components into memory\n- **Asynchronous process**, requires completion check\n\n### Unload()\n- Completely releases from memory\n- Requires `Load()` again to reuse\n\n## Correct Usage\n\n```csharp\n// Start loading\nitem.Load();\n\n// Wait for load completion\nvoid Update() {\n    if (item.IsLoading()) {\n        // Still loading...\n        return;\n    }\n    if (item.IsLoaded()) {\n        // Load complete, ready to use\n        item.SetShow(true);\n    }\n}\n```\n\n## Common Mistakes\n\n```csharp\n// NG: Accessing before load completes\nitem.Load();\nitem.SetShow(true); // Load may not be complete yet\n\n// OK: Check completion before accessing\nitem.Load();\n// Check IsLoaded() in Update before operating\n```\n\n## Memory Management Tips\n\n- Use `Unload()` to free memory for unused Items\n- Keep frequently used Items loaded\n- `SetShow(false)` only hides, still uses memory"
+      }
+    },
+    "motion": {
+      "id": "motion",
+      "icon": "animation",
+      "relatedMethods": ["Play", "Stop", "IsPlay", "Pause", "Restart", "ChangeMotion", "LoadMotion", "SetPlayTime", "GetPlayTime"],
+      "ja": {
+        "title": "モーション制御",
+        "summary": "モーションの再生・切り替え・ブレンドの方法",
+        "content": "## モーション再生の基本\n\n```csharp\n// モーション再生開始\nitem.Play();\n\n// 停止\nitem.Stop();\n\n// 一時停止・再開\nitem.Pause();\nitem.Restart();\n```\n\n## モーション切り替え\n\n```csharp\n// 即座に切り替え\nitem.ChangeMotion(\"walk\");\n\n// ブレンド付きで滑らかに切り替え（500ms）\nitem.ChangeMotion(\"run\", 500.0f);\n```\n\n## 外部モーションの読み込み\n\n```csharp\n// URLからモーションを読み込み\nitem.LoadMotion(\"customWalk\", \"https://example.com/walk.vmd\", true);\n\n// 読み込み後に使用\nitem.ChangeMotion(\"customWalk\");\n```\n\n## 再生位置の制御\n\n```csharp\n// 再生位置を取得（ミリ秒）\nfloat currentTime = item.GetPlayTime();\n\n// 再生位置を設定（1秒地点へジャンプ）\nitem.SetPlayTime(1000.0f);\n```"
+      },
+      "en": {
+        "title": "Motion Control",
+        "summary": "How to play, switch, and blend motions",
+        "content": "## Motion Playback Basics\n\n```csharp\n// Start motion playback\nitem.Play();\n\n// Stop\nitem.Stop();\n\n// Pause and resume\nitem.Pause();\nitem.Restart();\n```\n\n## Switching Motions\n\n```csharp\n// Switch immediately\nitem.ChangeMotion(\"walk\");\n\n// Smooth transition with blending (500ms)\nitem.ChangeMotion(\"run\", 500.0f);\n```\n\n## Loading External Motions\n\n```csharp\n// Load motion from URL\nitem.LoadMotion(\"customWalk\", \"https://example.com/walk.vmd\", true);\n\n// Use after loading\nitem.ChangeMotion(\"customWalk\");\n```\n\n## Playback Position Control\n\n```csharp\n// Get playback position (milliseconds)\nfloat currentTime = item.GetPlayTime();\n\n// Set playback position (jump to 1 second)\nitem.SetPlayTime(1000.0f);\n```"
+      }
+    },
+    "material": {
+      "id": "material",
+      "icon": "palette",
+      "relatedMethods": ["SetMaterialColor", "GetMaterialColor", "SetAlpha", "ReplaceTexture", "SetUVOffset", "SetUVScale"],
+      "ja": {
+        "title": "マテリアル操作",
+        "summary": "色・透明度・テクスチャの動的変更",
+        "content": "## 色の変更\n\n```csharp\n// マテリアルの色を赤に変更（RGBA: 0.0〜1.0）\nitem.SetMaterialColor(\"MaterialName\", 1.0f, 0.0f, 0.0f, 1.0f);\n\n// 現在の色を取得\nfloat r, g, b, a;\nitem.GetMaterialColor(\"MaterialName\", ref r, ref g, ref b, ref a);\n```\n\n## 透明度の変更\n\n```csharp\n// Item全体を半透明に\nitem.SetAlpha(0.5f);  // 0.0=透明、1.0=不透明\n```\n\n## テクスチャの差し替え\n\n```csharp\n// 外部画像でテクスチャを差し替え\nitem.ReplaceTexture(\"MaterialName\", \"https://example.com/texture.png\", true);\n```\n\n## UVアニメーション\n\n```csharp\n// UVをスクロール（テクスチャアニメーション）\nfloat offset = 0.0f;\nvoid Update() {\n    offset += 0.01f;\n    item.SetUVOffset(\"MaterialName\", offset, 0.0f);\n}\n\n// UVスケール（タイリング）\nitem.SetUVScale(\"MaterialName\", 2.0f, 2.0f);\n```"
+      },
+      "en": {
+        "title": "Material Operations",
+        "summary": "Dynamically changing color, transparency, and texture",
+        "content": "## Changing Color\n\n```csharp\n// Change material color to red (RGBA: 0.0-1.0)\nitem.SetMaterialColor(\"MaterialName\", 1.0f, 0.0f, 0.0f, 1.0f);\n\n// Get current color\nfloat r, g, b, a;\nitem.GetMaterialColor(\"MaterialName\", ref r, ref g, ref b, ref a);\n```\n\n## Changing Transparency\n\n```csharp\n// Make entire Item semi-transparent\nitem.SetAlpha(0.5f);  // 0.0=transparent, 1.0=opaque\n```\n\n## Replacing Texture\n\n```csharp\n// Replace texture with external image\nitem.ReplaceTexture(\"MaterialName\", \"https://example.com/texture.png\", true);\n```\n\n## UV Animation\n\n```csharp\n// Scroll UV (texture animation)\nfloat offset = 0.0f;\nvoid Update() {\n    offset += 0.01f;\n    item.SetUVOffset(\"MaterialName\", offset, 0.0f);\n}\n\n// UV scale (tiling)\nitem.SetUVScale(\"MaterialName\", 2.0f, 2.0f);\n```"
+      }
+    }
+  },
+  "methodToTopics": {
+    "SetQuaternion": ["quaternion"],
+    "GetQuaternion": ["quaternion"],
+    "GetWorldQuaternion": ["quaternion", "coordinate"],
+    "GetWorldRotate": ["quaternion", "coordinate"],
+    "LookAt": ["quaternion"],
+    "SetPos": ["coordinate"],
+    "GetPos": ["coordinate"],
+    "GetWorldPos": ["coordinate"],
+    "MovePos": ["coordinate"],
+    "GetNodeWorldPos": ["coordinate"],
+    "SetNodeLocalPos": ["coordinate"],
+    "SetNodeWorldPos": ["coordinate"],
+    "Load": ["lifecycle"],
+    "Unload": ["lifecycle"],
+    "IsLoading": ["lifecycle"],
+    "IsLoaded": ["lifecycle"],
+    "ReplaceItem": ["lifecycle"],
+    "Play": ["motion"],
+    "Stop": ["motion"],
+    "IsPlay": ["motion"],
+    "Pause": ["motion"],
+    "Restart": ["motion"],
+    "ChangeMotion": ["motion"],
+    "LoadMotion": ["motion"],
+    "SetPlayTime": ["motion"],
+    "GetPlayTime": ["motion"],
+    "SetMaterialColor": ["material"],
+    "GetMaterialColor": ["material"],
+    "SetAlpha": ["material"],
+    "ReplaceTexture": ["material"],
+    "SetUVOffset": ["material"],
+    "SetUVScale": ["material"]
+  }
+}
