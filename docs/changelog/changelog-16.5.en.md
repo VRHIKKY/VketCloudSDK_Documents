@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 16.5
 
-## Updated April 8, 2026
+## Updated April 10, 2026
 
-## April 8, 2026 - Added Pages
+## April 10, 2026 - Added Pages
 
 - HCSL Manual
     - Added [HCSL Reference](../hcsl/hcsl_overview.en.md) and all related documents.
