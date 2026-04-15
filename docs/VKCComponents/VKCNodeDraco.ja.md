@@ -60,12 +60,86 @@ Draco圧縮では、0-10の範囲で圧縮レベルを設定できます。
 3. 必要に応じて量子化パラメータを調整
 4. ビルド時にDraco圧縮が自動的に適用される
 
+![VKCNodeDraco_02](img/VKCNodeDraco_02.jpg)
+
+### 実践的な設定例
+
+#### シナリオ1: モバイル環境向け最適化
+```
+Compression Level: 7
+Position Quantization: 12
+Normal Quantization: 8
+UV Quantization: 10
+Color Quantization: 6
+Preserve Quality: false
+Enable GPU Decompression: true
+```
+- **効果**: ファイルサイズを最大80%削減
+- **用途**: スマートフォンでの快適な体験を重視する場合
+
+#### シナリオ2: 高品質デスクトップ向け
+```
+Compression Level: 4
+Position Quantization: 14
+Normal Quantization: 12
+UV Quantization: 14
+Color Quantization: 10
+Preserve Quality: true
+Enable GPU Decompression: true
+```
+- **効果**: ファイルサイズを50-60%削減、高品質を維持
+- **用途**: VRやハイエンドPC向けコンテンツ
+
+#### シナリオ3: バランス型（推奨設定）
+```
+Compression Level: 6
+Position Quantization: 13
+Normal Quantization: 10
+UV Quantization: 12
+Color Quantization: 8
+Preserve Quality: true
+Enable GPU Decompression: true
+```
+- **効果**: ファイルサイズを70%削減、適度な品質を維持
+- **用途**: 幅広いデバイスでの安定した動作を目指す場合
+
+### パフォーマンス比較例
+
+| モデル種類 | 元サイズ | Draco圧縮後 | 削減率 | ロード時間短縮 |
+| ---- | ---- | ---- | ---- | ---- |
+| シンプルなキューブ | 150KB | 45KB | 70% | 65% |
+| 詳細な建築物 | 2.5MB | 600KB | 76% | 73% |
+| キャラクターモデル | 800KB | 180KB | 77.5% | 75% |
+| 複雑な機械パーツ | 1.2MB | 320KB | 73% | 70% |
+
+### トラブルシューティング
+
+#### よくある問題と解決策
+
+**問題1: 圧縮後にモデルが歪んで見える**
+- **原因**: 量子化レベルが低すぎる
+- **解決策**: Position QuantizationとNormal Quantizationの値を増やす
+
+**問題2: ファイルサイズがあまり小さくならない**
+- **原因**: シンプルすぎるジオメトリ、または既に最適化されているモデル
+- **解決策**: 圧縮レベルを上げる、または他の最適化手法と併用
+
+**問題3: 古いデバイスで表示されない**
+- **原因**: Draco展開非対応のブラウザ・デバイス
+- **解決策**: フォールバック用の非圧縮モデルを用意
+
 ### パフォーマンス最適化のコツ
 - モバイル環境では圧縮レベル6-8を推奨
 - デスクトップ環境では品質重視で圧縮レベル3-5を推奨
 - 複雑なジオメトリほど圧縮効果が高い
 - テクスチャサイズも合わせて最適化することで相乗効果が得られる
+- 大量のモデルがある場合は、LOD（Level of Detail）システムとの併用を検討
 
 !!! note "ベストプラクティス"
     Draco圧縮は3Dモデルのジオメトリに対してのみ効果があります。
     テクスチャファイルの圧縮については[テクスチャ圧縮](../WorldOptimization/TextureCompression.ja.md)を参照してください。
+
+## 関連項目
+- [VKC Node LOD Level](./VKCNodeLODLevel.ja.md) - レベルオブディテール最適化
+- [ワールド最適化](../WorldOptimization/WorldOptimization.ja.md) - 総合的な最適化ガイド  
+- [テクスチャ圧縮](../WorldOptimization/TextureCompression.ja.md) - テクスチャファイルの最適化

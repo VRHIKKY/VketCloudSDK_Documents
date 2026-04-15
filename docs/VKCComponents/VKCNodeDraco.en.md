@@ -60,12 +60,86 @@ Each quantization parameter controls the precision of the corresponding data typ
 3. Adjust quantization parameters as needed
 4. Draco compression is automatically applied during build
 
+![VKCNodeDraco_02](img/VKCNodeDraco_02.jpg)
+
+### Practical Configuration Examples
+
+#### Scenario 1: Mobile Environment Optimization
+```
+Compression Level: 7
+Position Quantization: 12
+Normal Quantization: 8
+UV Quantization: 10
+Color Quantization: 6
+Preserve Quality: false
+Enable GPU Decompression: true
+```
+- **Effect**: Up to 80% file size reduction
+- **Use Case**: Prioritizing smooth experience on smartphones
+
+#### Scenario 2: High-Quality Desktop
+```
+Compression Level: 4
+Position Quantization: 14
+Normal Quantization: 12
+UV Quantization: 14
+Color Quantization: 10
+Preserve Quality: true
+Enable GPU Decompression: true
+```
+- **Effect**: 50-60% file size reduction while maintaining high quality
+- **Use Case**: VR or high-end PC content
+
+#### Scenario 3: Balanced (Recommended Settings)
+```
+Compression Level: 6
+Position Quantization: 13
+Normal Quantization: 10
+UV Quantization: 12
+Color Quantization: 8
+Preserve Quality: true
+Enable GPU Decompression: true
+```
+- **Effect**: 70% file size reduction with moderate quality preservation
+- **Use Case**: Stable operation across a wide range of devices
+
+### Performance Comparison Examples
+
+| Model Type | Original Size | After Draco | Reduction | Loading Time Saved |
+| ---- | ---- | ---- | ---- | ---- |
+| Simple Cube | 150KB | 45KB | 70% | 65% |
+| Detailed Building | 2.5MB | 600KB | 76% | 73% |
+| Character Model | 800KB | 180KB | 77.5% | 75% |
+| Complex Machinery | 1.2MB | 320KB | 73% | 70% |
+
+### Troubleshooting
+
+#### Common Issues and Solutions
+
+**Issue 1: Model appears distorted after compression**
+- **Cause**: Quantization levels set too low
+- **Solution**: Increase Position Quantization and Normal Quantization values
+
+**Issue 2: File size doesn't reduce significantly**
+- **Cause**: Too simple geometry or already optimized model
+- **Solution**: Increase compression level or combine with other optimization techniques
+
+**Issue 3: Model doesn't display on older devices**
+- **Cause**: Browser/device doesn't support Draco decompression
+- **Solution**: Provide fallback uncompressed models
+
 ### Performance Optimization Tips
 - Compression levels 6-8 are recommended for mobile environments
 - Compression levels 3-5 are recommended for desktop environments focusing on quality
 - More complex geometry achieves higher compression efficiency
 - Combining with texture size optimization creates synergistic effects
+- For scenes with many models, consider combining with LOD (Level of Detail) systems
 
 !!! note "Best Practices"
     Draco compression only affects 3D model geometry.
     For texture file compression, please refer to [Texture Compression](../WorldOptimization/TextureCompression.en.md).
+
+## Related Topics
+- [VKC Node LOD Level](./VKCNodeLODLevel.en.md) - Level of detail optimization
+- [World Optimization](../WorldOptimization/WorldOptimization.en.md) - Comprehensive optimization guide  
+- [Texture Compression](../WorldOptimization/TextureCompression.en.md) - Texture file optimization
