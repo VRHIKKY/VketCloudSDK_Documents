@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-04-15T04:27:36.404237",
+  "test_suites": {
+    "documentation": {
+      "success": true,
+      "output": "Starting Documentation Consistency Validation...\n\nTest UC-020: Documentation File Existence\n  \u2713 Found: Japanese HeliScript Item class documentation\n  \u2713 Found: English HeliScript Item class documentation\nPASS: All required documentation files exist\n\nTest UC-021: Function Signature Consistency\n  \u2713 hsItemCreateClone: Signatures match\n  \u2713 hsItemDestroyClone: Signatures match\nPASS: All function signatures are consistent\n\nTest UC-022: Parameter Description Consistency\n  \u2713 hsItemCreateClone.Origin: Parameter described in both languages\n  \u2713 hsItemCreateClone.Name: Parameter described in both languages\n  \u2713 hsItemDestroyClone.item: Parameter described in both languages\nPASS: All parameter descriptions are present\n\nTest UC-023: Return Value Description Consistency\nPASS: Return value descriptions check completed\n\nTest UC-024: Code Example Consistency\nWARNING: Code example consistency check not fully implemented\n\nTest UC-025: Cross-Reference Validation\nWARNING: Cross-reference validation not fully implemented\n\n============================================================\nDOCUMENTATION CONSISTENCY VALIDATION REPORT\n============================================================\nTotal Tests: 6\nPassed: 6\nFailed: 0\nSuccess Rate: 100.0%\n\nWARNINGS (2):\n  1. Code example consistency check needs implementation\n  2. Cross-reference validation check needs implementation\n\nTEST RESULTS DETAIL:\n  file_existence: PASS\n  function_signatures: PASS\n  parameter_descriptions: PASS\n  return_value_descriptions: PASS\n  example_code_consistency: PASS\n  cross_references: PASS\n\n=== ALL DOCUMENTATION TESTS PASSED ===\n",
+      "return_code": 0,
+      "tests_run": 6,
+      "tests_passed": 6,
+      "tests_failed": 0
+    },
+    "heliscript_unit": {
+      "success": false,
+      "tests_run": 24,
+      "tests_passed": 14,
+      "tests_failed": 10,
+      "test_files": {
+        "clone-creation-tests.hs": {
+          "success": false,
+          "tests_run": 6,
+          "tests_passed": 4,
+          "tests_failed": 2
+        },
+        "clone-destruction-tests.hs": {
+          "success": false,
+          "tests_run": 6,
+          "tests_passed": 3,
+          "tests_failed": 3
+        },
+        "clone-naming-tests.hs": {
+          "success": false,
+          "tests_run": 7,
+          "tests_passed": 5,
+          "tests_failed": 2
+        },
+        "clone-validation-tests.hs": {
+          "success": false,
+          "tests_run": 5,
+          "tests_passed": 2,
+          "tests_failed": 3
+        }
+      }
+    },
+    "integration": {
+      "success": false,
+      "tests_run": 16,
+      "tests_passed": 6,
+      "tests_failed": 10,
+      "test_files": {
+        "multi-clone-scenario-tests.hs": {
+          "success": false,
+          "tests_run": 6,
+          "tests_passed": 3,
+          "tests_failed": 3
+        },
+        "memory-management-tests.hs": {
+          "success": false,
+          "tests_run": 5,
+          "tests_passed": 2,
+          "tests_failed": 3
+        },
+        "performance-tests.hs": {
+          "success": false,
+          "tests_run": 5,
+          "tests_passed": 1,
+          "tests_failed": 4
+        }
+      }
+    }
+  },
+  "overall_summary": {
+    "total_tests": 46,
+    "passed_tests": 26,
+    "failed_tests": 20,
+    "success_rate": 56.52173913043478
+  }
+}
