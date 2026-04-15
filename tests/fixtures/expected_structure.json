@@ -1,0 +1,39 @@
+{
+  "release_note_structure": {
+    "required_sections": {
+      "ja": [
+        "リリースノート",
+        "概要",
+        "新機能",
+        "改善",
+        "バグ修正",
+        "既知の問題"
+      ],
+      "en": [
+        "Release Note",
+        "Overview", 
+        "New Features",
+        "Improvements",
+        "Bug Fixes",
+        "Known Issues"
+      ]
+    },
+    "version_pattern": "^\\d+\\.\\d+(?:\\.\\d+)?$",
+    "file_naming": {
+      "ja": "releasenote-{version}.ja.md",
+      "en": "releasenote-{version}.en.md"
+    },
+    "markdown_requirements": {
+      "starts_with_h1": true,
+      "max_heading_level": 3,
+      "requires_utf8_encoding": true,
+      "no_trailing_whitespace": true
+    }
+  },
+  "sdk_version": "16.5",
+  "test_metadata": {
+    "created_for_task": "LDOC-1170",
+    "tdd_phase": "red",
+    "description": "Expected structure for SDK 16.5 release notes QA testing"
+  }
+}
