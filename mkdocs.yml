@@ -476,6 +476,7 @@ nav:
     - VKC Setting Avatar: VketCloudSettings/AvatarSettings.md
     - VKC Setting MyAvatar: VketCloudSettings/MyAvatarSettings.md
     # Optional
+    - VKC Setting Camera: VKCComponents/VKCSettingCamera.md
     - VKC Setting Nameplate: VKCComponents/VKCSettingNameplate.md
     - VKC Setting Spawn: VKCComponents/VKCSettingSpawn.md
   - VKC Item:
