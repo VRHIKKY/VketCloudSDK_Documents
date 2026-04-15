@@ -624,6 +624,8 @@ nav:
   - Handling Json in HeliScript: ExternalAPI/HeliScriptJsonParse.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v16.x:
+        - v16.5.7: releasenote/releasenote-16.5.7.md
     - v15.x:
         - v15.9: releasenote/releasenote-15.9.md
         - v15.8: releasenote/releasenote-15.8.md
@@ -713,6 +715,8 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v16.x:
+        - v16.5.7: changelog/changelog-16.5.7.md
     - v15.x:
         - v15.5: changelog/changelog-15.5.md
         - v15.4: changelog/changelog-15.4.md
