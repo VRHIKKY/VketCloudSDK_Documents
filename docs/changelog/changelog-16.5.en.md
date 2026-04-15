@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 16.5
 
+## Updated April 15, 2026
+
+## April 15, 2026 - Added Pages
+
+- Release Notes
+    - [v16.6](../releasenote/releasenote-16.6.en.md)
+        - Added the release note for HeliodorLib Ver 16.6.0
+
 ## Updated April 10, 2026
 
 ## April 10, 2026 - Added Pages
