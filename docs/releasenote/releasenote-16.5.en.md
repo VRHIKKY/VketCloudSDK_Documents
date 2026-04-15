@@ -1,4 +1,4 @@
-# Version 16.5.0a
+# Version 16.5.0
 
 ## SDK (Editor Extension Tool for Creating Worlds in Unity)
 
