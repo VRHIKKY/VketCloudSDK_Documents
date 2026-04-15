@@ -709,6 +709,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v16.x:
+        - v16.6: releasenote/releasenote-16.6.md
         - v16.5: releasenote/releasenote-16.5.md
         - v16.3: releasenote/releasenote-16.3.md
         - v16.2: releasenote/releasenote-16.2.md
