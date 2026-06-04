@@ -695,7 +695,21 @@ function showPopup(methodName) {
 
   // 公式ドキュメントリンク
   if (data && data.docUrl) {
-    elements.popupDocLink.href = data.docUrl;
+    let htmlUrl = data.docUrl;
+    // 古い絶対パス指定がある場合は相対パスに変換
+    if (htmlUrl.startsWith('http')) {
+      const parts = htmlUrl.split('/latest/');
+      if (parts.length > 1) {
+        htmlUrl = parts[1];
+      }
+    }
+    
+    let baseDocUrl = '../../../';
+    if (currentLanguage === 'en') {
+      baseDocUrl = '../../../en/';
+    }
+    
+    elements.popupDocLink.href = baseDocUrl + htmlUrl;
     elements.popupDocLink.style.display = 'inline-flex';
   } else {
     elements.popupDocLink.style.display = 'none';

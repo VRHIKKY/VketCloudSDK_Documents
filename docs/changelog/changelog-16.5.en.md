@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 16.5
 
+## Updated June 5, 2026
+
+## June 5, 2026 - Added Pages
+
+- Others
+    - [HS Dictionary](../HSDictionaryPage.en.md): Released the HeliScript API Reference Dictionary (HS Dictionary).
+
 ## Updated March 27, 2026
 
 ## March 27, 2026 - Added Pages

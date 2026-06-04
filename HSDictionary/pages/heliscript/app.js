@@ -616,9 +616,17 @@ function showPopup(methodName) {
 
   // 公式ドキュメントリンク
   if (data.docUrl) {
-    // ドキュメントURLのベースを設定
-    const baseDocUrl = 'https://vrhikky.github.io/VketCloudSDK_Documents/latest/';
-    elements.popupDocLink.href = baseDocUrl + data.docUrl;
+    let htmlUrl = data.docUrl.replace('.md', '.html');
+    if (!htmlUrl.includes('/')) {
+        htmlUrl = 'hs/' + htmlUrl;
+    }
+    
+    let baseDocUrl = '../../../';
+    if (currentLanguage === 'en') {
+      baseDocUrl = '../../../en/';
+    }
+    
+    elements.popupDocLink.href = baseDocUrl + htmlUrl;
     elements.popupDocLink.style.display = 'inline-flex';
   } else {
     elements.popupDocLink.style.display = 'none';
