@@ -1,0 +1,3 @@
+# 概要
+
+HCSLとはHeliodor Custom Shader Languageの略称で、VketCloudを動かしているHeliodorエンジンで動作する独自のシェーダー言語です。

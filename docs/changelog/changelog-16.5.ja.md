@@ -7,6 +7,21 @@
 - その他
     - [HS Dictionary](../HSDictionaryPage.ja.md): HeliScript API リファレンス辞書 (HS Dictionary) を公開しました。
 
+## 2026年4月15日更新
+
+## 2026年4月15日 - 追加されたページ
+
+- リリースノート
+    - [v16.6](../releasenote/releasenote-16.6.ja.md)
+        - HeliodorLib Ver 16.6.0のリリースノートを追加
+
+## 2026年4月10日更新
+
+## 2026年4月10日 - 追加されたページ
+
+- HCSLマニュアル
+    - [HCSLリファレンス](../hcsl/hcsl_overview.ja.md)および配下のドキュメント一式を追加しました。
+
 ## 2026年3月27日更新
 
 ## 2026年3月27日 - 追加されたページ

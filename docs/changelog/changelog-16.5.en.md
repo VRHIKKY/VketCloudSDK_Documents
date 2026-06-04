@@ -7,6 +7,21 @@
 - Others
     - [HS Dictionary](../HSDictionaryPage.en.md): Released the HeliScript API Reference Dictionary (HS Dictionary).
 
+## Updated April 15, 2026
+
+## April 15, 2026 - Added Pages
+
+- Release Notes
+    - [v16.6](../releasenote/releasenote-16.6.en.md)
+        - Added the release note for HeliodorLib Ver 16.6.0
+
+## Updated April 10, 2026
+
+## April 10, 2026 - Added Pages
+
+- HCSL Manual
+    - Added [HCSL Reference](../hcsl/hcsl_overview.en.md) and all related documents.
+
 ## Updated March 27, 2026
 
 ## March 27, 2026 - Added Pages

@@ -344,6 +344,30 @@ plugins:
             Samples: サンプル
             FPS Camera: FPSカメラ
             TPS Camera: TPSカメラ
+            # Custom Shader (HCSL)
+            Custom Shader (HCSL): カスタムシェーダー (HCSL)
+            HCSL - Overview: HCSL概要
+            About HCSLLib: HCSLLibについて
+            Data Types: データ型
+            Semantics: セマンティクス
+            Preprocessor: プリプロセッサ
+            Texture: テクスチャ
+            Error Handling: エラーハンドリング
+            Blocks: ブロック
+            Block - Overview: ブロック概要
+            Attribute: Attribute
+            Hcsl: Hcsl
+            Input: Input
+            Output: Output
+            Pass: Pass
+            RenderParam: RenderParam
+            Shader: Shader
+            Uniform: Uniform
+            Variant: Variant
+            Functions: 関数
+            Main Function: Main関数
+            Variables: 変数
+            Built-in Variables: 組み込み変数
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -653,6 +677,31 @@ nav:
     - Tips/HeliScript Guide:
         - Remove Default UI: hs/RemoveDefaultUI.md
         - Script Error Checking with Assertions: hs/hs_assertion_function.md
+- Custom Shader (HCSL):
+    - HCSL - Overview: hcsl/hcsl_overview.md
+    - Basics:
+        - About HCSLLib: hcsl/hcsl_about_hcsllib.md
+        - Data Types: hcsl/hcsl_datatypes.md
+        - Semantics: hcsl/hcsl_semantics.md
+        - Preprocessor: hcsl/hcsl_preprocessor.md
+        - Texture: hcsl/hcsl_texture.md
+        - Error Handling: hcsl/hcsl_error_handling.md
+    - Blocks:
+        - Block - Overview: hcsl/hcsl_block_about.md
+        - Attribute: hcsl/hcsl_block_attribute.md
+        - Hcsl: hcsl/hcsl_block_hcsl.md
+        - Input: hcsl/hcsl_block_input.md
+        - Output: hcsl/hcsl_block_output.md
+        - Pass: hcsl/hcsl_block_pass.md
+        - RenderParam: hcsl/hcsl_block_renderparam.md
+        - Shader: hcsl/hcsl_block_shader.md
+        - Uniform: hcsl/hcsl_block_uniform.md
+        - Variant: hcsl/hcsl_block_variant.md
+    - Functions:
+        - Main Function: hcsl/hcsl_functions_main.md
+        - Built-in Functions: hcsl/hcsl_functions_builtin.md
+    - Variables:
+        - Built-in Variables: hcsl/hcsl_variables_builtin.md
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md
@@ -660,6 +709,7 @@ nav:
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
     - v16.x:
+        - v16.6: releasenote/releasenote-16.6.md
         - v16.5: releasenote/releasenote-16.5.md
         - v16.3: releasenote/releasenote-16.3.md
         - v16.2: releasenote/releasenote-16.2.md
