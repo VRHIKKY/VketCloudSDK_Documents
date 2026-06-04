@@ -1,3 +1,32 @@
+# Version 16.5.8
+
+## SDK (Editor Extension Tool for Creating Worlds in Unity)
+
+### Fixed Issues
+
+- **VKC Item Clone > Build**
+    - Fixed an issue where having an object with VKC Item Clone in the scene caused a Null Reference error during build, resulting in build failure
+
+- **VKC Item Object > Instance Draw**
+    - Fixed an issue where the Instance Draw option was displayed twice in the advanced settings
+
+- **VKC Node Collider > Auto Attach**
+    - Fixed an issue where VKC Node Collider was not automatically attached during build, which could cause nodes with VKC Attribute Action Trigger to stop responding to clicks
+
+- **HPKPacker.exe**
+    - Fixed an issue where HPKPacker.exe was not included in the external SDK package
+
+- **VKC Attribute Script > HeliScript File Name and Component Name**
+    - Fixed issues that occurred when the HeliScript file name and component name were different, such as HeliScript becoming none or an unintended component name being entered when adding a new component
+
+- **VKC Attribute Script > Scene JSON**
+    - Fixed an issue where the previous component name remained in the components field of the scene JSON after changing the component name
+
+- **VKC Item Point Light**
+    - Fixed an issue where the component contents were not displayed in the Inspector and builds failed
+
+---
+
 # Version 16.5.0
 
 ## SDK (Editor Extension Tool for Creating Worlds in Unity)

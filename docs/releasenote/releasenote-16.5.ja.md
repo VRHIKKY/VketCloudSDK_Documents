@@ -1,3 +1,32 @@
+# Version 16.5.8
+
+## SDK(Unityでワールドを作るためのEditor拡張ツール)
+
+### 修正された不具合
+
+- **VKC Item Clone > ビルド**
+    - VKC Item Cloneを持つオブジェクトがシーン上にある場合、ビルド時にNull Referenceが発生してビルドに失敗する問題を修正
+
+- **VKC Item Object > インスタンス描画**
+    - 詳細設定内でインスタンス描画の項目が重複して表示される問題を修正
+
+- **VKC Node Collider > 自動アタッチ**
+    - ビルド時にVKC Node Colliderが自動でアタッチされず、VKC Attribute Action Triggerを設定したノードをクリックしても反応しない場合がある問題を修正
+
+- **HPKPacker.exe**
+    - 社外版SDKにHPKPacker.exeが含まれていない問題を修正
+
+- **VKC Attribute Script > HeliScriptファイル名とコンポーネント名**
+    - HeliScriptファイル名とコンポーネント名が異なる場合、HeliScriptがnoneになる、または新規追加時に意図しないコンポーネント名が入力される問題を修正
+
+- **VKC Attribute Script > シーンJSON**
+    - コンポーネント名を変更しても、変更前の内容がシーンJSONのcomponentsフィールドに残る問題を修正
+
+- **VKC Item Point Light**
+    - Inspector上でコンポーネントの内容が表示されず、ビルドに失敗する問題を修正
+
+---
+
 # Version 16.5.0
 
 ## SDK(Unityでワールドを作るためのEditor拡張ツール)
