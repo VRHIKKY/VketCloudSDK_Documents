@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#version-1650" class="md-skip">
+        <a href="#version-1658" class="md-skip">
           Skip to content
         </a>
       
@@ -8607,27 +8607,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#main-features" class="md-nav__link">
+  <a href="#fixed-issues" class="md-nav__link">
     <span class="md-ellipsis">
-      Main Features
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#new-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      New Features
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bug-fixes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bug Fixes
+      Fixed Issues
     </span>
   </a>
   
@@ -13040,6 +13022,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HSDictionaryPage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HS Dictionary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -13077,27 +13079,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#main-features" class="md-nav__link">
+  <a href="#fixed-issues" class="md-nav__link">
     <span class="md-ellipsis">
-      Main Features
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#new-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      New Features
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bug-fixes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bug Fixes
+      Fixed Issues
     </span>
   </a>
   
@@ -13124,8 +13108,56 @@
                   
 
 
-<h1 id="version-1650">Version 16.5.0</h1>
+<h1 id="version-1658">Version 16.5.8</h1>
 <h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
+<h3 id="fixed-issues">Fixed Issues</h3>
+<ul>
+<li>
+<p><strong>VKC Item Clone &gt; Build</strong></p>
+<ul>
+<li>Fixed an issue where having an object with VKC Item Clone in the scene caused a Null Reference error during build, resulting in build failure</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Item Object &gt; Instance Draw</strong></p>
+<ul>
+<li>Fixed an issue where the Instance Draw option was displayed twice in the advanced settings</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Node Collider &gt; Auto Attach</strong></p>
+<ul>
+<li>Fixed an issue where VKC Node Collider was not automatically attached during build, which could cause nodes with VKC Attribute Action Trigger to stop responding to clicks</li>
+</ul>
+</li>
+<li>
+<p><strong>HPKPacker.exe</strong></p>
+<ul>
+<li>Fixed an issue where HPKPacker.exe was not included</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Attribute Script &gt; HeliScript File Name and Component Name</strong></p>
+<ul>
+<li>Fixed issues that occurred when the HeliScript file name and component name were different, such as HeliScript becoming none or an unintended component name being entered when adding a new component</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Attribute Script &gt; Scene JSON</strong></p>
+<ul>
+<li>Fixed an issue where the previous component name remained in the components field of the scene JSON after changing the component name</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Item Point Light</strong></p>
+<ul>
+<li>Fixed an issue where the component contents were not displayed in the Inspector and builds failed</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="version-1650">Version 16.5.0</h1>
+<h2 id="sdk-editor-extension-tool-for-creating-worlds-in-unity_1">SDK (Editor Extension Tool for Creating Worlds in Unity)</h2>
 <h3 id="main-features">Main Features</h3>
 <ul>
 <li>

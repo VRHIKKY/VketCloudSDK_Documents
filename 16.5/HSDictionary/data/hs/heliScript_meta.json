@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "name": "HeliScript Dictionary",
+    "version": "1.0.0",
+    "description": "HeliScript API Reference for Vket Cloud",
+    "descriptionJa": "Vket Cloud向けHeliScript APIリファレンス",
+    "language": "HeliScript",
+    "targetPlatform": "Vket Cloud",
+    "createdAt": "2026-02-03T11:00:00",
+    "updatedAt": "2026-02-04T00:00:00",
+    "authors": [
+      {
+        "knight": "Tristan",
+        "role": "Player class extraction",
+        "file": "heliScript_player.json"
+      },
+      {
+        "knight": "Gawain",
+        "role": "Component callback extraction",
+        "file": "heliScript_component.json"
+      },
+      {
+        "knight": "Bedivere",
+        "role": "Layer class extraction",
+        "file": "heliScript_layer.json"
+      },
+      {
+        "knight": "Lancelot",
+        "role": "Integration and quality assurance",
+        "file": "heliScript_methods.json"
+      }
+    ]
+  },
+  "statistics": {
+    "totalClasses": 3,
+    "classes": {
+      "Player": {
+        "utilityFunctions": 3,
+        "methods": 28,
+        "total": 31
+      },
+      "Component": {
+        "callbacks": 39,
+        "categories": 16,
+        "total": 39
+      },
+      "Layer": {
+        "utilityFunctions": 2,
+        "basicMethods": 7,
+        "guiMethods": 18,
+        "total": 27
+      }
+    },
+    "grandTotal": {
+      "methods": 97,
+      "categories": 25,
+      "guiTypes": 4
+    }
+  },
+  "files": {
+    "methods": {
+      "path": "heliScript_methods.json",
+      "description": "Consolidated method definitions for all classes",
+      "size": null
+    },
+    "categories": {
+      "path": "heliScript_categories.json",
+      "description": "Category organization and groupings",
+      "size": null
+    },
+    "meta": {
+      "path": "heliScript_meta.json",
+      "description": "Metadata and statistics",
+      "size": null
+    }
+  },
+  "qualityChecks": {
+    "jsonSyntax": {
+      "status": "passed",
+      "description": "All JSON files are syntactically valid"
+    },
+    "signatureFormat": {
+      "status": "passed",
+      "description": "Method signatures follow consistent format"
+    },
+    "categoryConsistency": {
+      "status": "passed",
+      "description": "Category references match method definitions"
+    },
+    "documentationUrls": {
+      "status": "passed",
+      "description": "All docUrl references are consistent"
+    },
+    "englishDescriptions": {
+      "status": "passed",
+      "description": "All methods have descEn field populated"
+    },
+    "duplicateCheck": {
+      "status": "passed",
+      "note": "GetName exists in both Player and Layer classes (expected - different classes)"
+    }
+  },
+  "sourceDocuments": [
+    {
+      "name": "hs_class_player.md",
+      "description": "Player class documentation"
+    },
+    {
+      "name": "hs_component.md",
+      "description": "Component callback documentation"
+    },
+    {
+      "name": "hs_class_Layer.md",
+      "description": "Layer class documentation"
+    }
+  ]
+}

@@ -1,0 +1,1403 @@
+{
+  "Equals": {
+    "sig": "bool Equals(Item obj)",
+    "desc": "2つのItemが同一か判定（==は型比較、Equalsは内部データまで比較）",
+    "descEn": "Check if two Items are identical (== compares types, Equals compares internal data)",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetName": {
+    "sig": "string GetName()",
+    "desc": "Itemの名前を文字列で取得",
+    "descEn": "Get the Item's name as a string",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetParentItem": {
+    "sig": "Item GetParentItem()",
+    "desc": "親階層のItemを取得（存在しない場合はnull）",
+    "descEn": "Get parent Item (returns null if none exists)",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetPos": {
+    "sig": "void SetPos(Vector3 Pos, bool CollisionDetection = false)",
+    "desc": "Itemを指定座標に即座に移動（ローカル座標）",
+    "descEn": "Move Item to specified local coordinates immediately",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "BackgroundTexture",
+      "Camera",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetPos": {
+    "sig": "Vector3 GetPos()",
+    "desc": "Itemのローカル座標を取得",
+    "descEn": "Get Item's local coordinates",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetWorldPos": {
+    "sig": "Vector3 GetWorldPos()",
+    "desc": "Itemのワールド座標を取得（Activity内のItemの絶対位置が必要な時に使用）",
+    "descEn": "Get Item's world coordinates (absolute position in Activity)",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetQuaternion": {
+    "sig": "bool SetQuaternion(Quaternion Rotate)",
+    "desc": "Itemの回転をQuaternionで設定",
+    "descEn": "Set Item's rotation using Quaternion",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetQuaternion": {
+    "sig": "Quaternion GetQuaternion()",
+    "desc": "Itemのローカル回転をQuaternionで取得",
+    "descEn": "Get Item's local rotation as Quaternion",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetWorldQuaternion": {
+    "sig": "Quaternion GetWorldQuaternion()",
+    "desc": "Itemのワールド回転をQuaternionで取得",
+    "descEn": "Get Item's world rotation as Quaternion",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetWorldRotate": {
+    "sig": "Vector3 GetWorldRotate()",
+    "desc": "Itemのワールド回転をオイラー角(Vector3)で取得",
+    "descEn": "Get Item's world rotation as Euler angles (Vector3)",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetScale": {
+    "sig": "Vector3 GetScale()",
+    "desc": "Itemのスケール値を取得",
+    "descEn": "Get Item's scale value",
+    "components": [
+      "Field",
+      "Object",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetScale": {
+    "sig": "void SetScale(Vector3 Scale)",
+    "desc": "Itemのスケール値を設定",
+    "descEn": "Set Item's scale value",
+    "components": [
+      "Object",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "MovePos": {
+    "sig": "void MovePos(Vector3 pos, float time, bool CollisionDetection = false, bool Gravity = true)",
+    "desc": "指定座標まで指定秒数かけて滑らかに移動",
+    "descEn": "Move smoothly to target position over specified time",
+    "components": [
+      "Object",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsMoving": {
+    "sig": "bool IsMoving()",
+    "desc": "MovePosによる移動中かどうかを判定",
+    "descEn": "Check if Item is currently moving via MovePos",
+    "components": [
+      "Object",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "Play": {
+    "sig": "bool Play()",
+    "desc": "モーション/サウンド/パーティクルの再生を開始",
+    "descEn": "Start playing motion/sound/particle",
+    "components": [
+      "Audio",
+      "Object",
+      "Particle"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "Stop": {
+    "sig": "void Stop()",
+    "desc": "モーション/サウンド/パーティクルの再生を停止",
+    "descEn": "Stop playing motion/sound/particle",
+    "components": [
+      "Audio",
+      "Object",
+      "Particle"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsPlay": {
+    "sig": "bool IsPlay()",
+    "desc": "モーション/サウンド/パーティクルが再生中か判定",
+    "descEn": "Check if motion/sound/particle is playing",
+    "components": [
+      "Audio",
+      "Object",
+      "Particle"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "Pause": {
+    "sig": "bool Pause()",
+    "desc": "モーション再生を一時停止",
+    "descEn": "Pause motion playback",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "Restart": {
+    "sig": "bool Restart()",
+    "desc": "一時停止したモーション再生を再開",
+    "descEn": "Resume paused motion playback",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetPlayTime": {
+    "sig": "bool SetPlayTime(float PlayTimeMS)",
+    "desc": "モーションの再生位置をミリ秒で指定",
+    "descEn": "Set motion playback position in milliseconds",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetPlayTime": {
+    "sig": "float GetPlayTime()",
+    "desc": "モーションの現在再生位置をミリ秒で取得",
+    "descEn": "Get current motion playback position in milliseconds",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetShow": {
+    "sig": "void SetShow(bool flag)",
+    "desc": "Itemの表示/非表示を切り替え",
+    "descEn": "Toggle Item visibility",
+    "components": [
+      "AreaCollider",
+      "Field",
+      "Object",
+      "Activity",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsShow": {
+    "sig": "bool IsShow()",
+    "desc": "Itemが表示中かどうかを判定",
+    "descEn": "Check if Item is currently visible",
+    "components": [
+      "AreaCollider",
+      "Field",
+      "Object",
+      "Activity",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "ChangeMotion": {
+    "sig": "bool ChangeMotion(string MotionName, float BlendTimeMS = 0.0f)",
+    "desc": "再生モーションを切り替え（ブレンド時間指定可）",
+    "descEn": "Switch to different motion (with optional blend time)",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "LoadMotion": {
+    "sig": "bool LoadMotion(string MotionName, string FileName, bool Loop)",
+    "desc": "外部モーションファイルを読み込んで登録",
+    "descEn": "Load external motion file and register it",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "FacialEmoteFixed": {
+    "sig": "bool FacialEmoteFixed(int FacialEmoteType)",
+    "desc": "アバターの表情を変更（NEUTRAL/JOY/ANGRY/SORROW/FUN）",
+    "descEn": "Change avatar facial expression (NEUTRAL/JOY/ANGRY/SORROW/FUN)",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "Load": {
+    "sig": "bool Load()",
+    "desc": "Itemのモデル/テクスチャ/コンポーネントをロードしてインスタンス化",
+    "descEn": "Load Item's model/texture/components into memory",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "Unload": {
+    "sig": "bool Unload()",
+    "desc": "Itemをアンロードしてメモリから解放",
+    "descEn": "Unload Item from memory",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsLoading": {
+    "sig": "bool IsLoading()",
+    "desc": "Itemがロード処理中かどうかを判定",
+    "descEn": "Check if Item is currently loading",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsLoaded": {
+    "sig": "bool IsLoaded()",
+    "desc": "Itemのロードが完了しているかを判定",
+    "descEn": "Check if Item has finished loading",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeIndexByName": {
+    "sig": "int GetNodeIndexByName(string nodeName)",
+    "desc": "子オブジェクト名からインデックス番号を取得",
+    "descEn": "Get child object index by name",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeNameByIndex": {
+    "sig": "string GetNodeNameByIndex(int NodeIndex)",
+    "desc": "インデックス番号から子オブジェクト名を取得",
+    "descEn": "Get child object name by index",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeWorldPos": {
+    "sig": "Vector3 GetNodeWorldPos(string NodeName)",
+    "desc": "子オブジェクトのワールド座標を取得",
+    "descEn": "Get child object's world position",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeWorldRotate": {
+    "sig": "Quaternion GetNodeWorldRotate(string NodeName)",
+    "desc": "子オブジェクトのワールド回転を取得",
+    "descEn": "Get child object's world rotation",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetNodeLocalPos": {
+    "sig": "bool SetNodeLocalPos(string NodeName, Vector3 Pos)",
+    "desc": "子オブジェクトのローカル座標を変更（親基準）",
+    "descEn": "Set child object's local position",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetNodeWorldPos": {
+    "sig": "bool SetNodeWorldPos(string NodeName, Vector3 Pos)",
+    "desc": "子オブジェクトのワールド座標を変更（絶対位置）",
+    "descEn": "Set child object's world position",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetShowNode": {
+    "sig": "bool SetShowNode(string nodeName, bool flag, bool CheckedChild = false)",
+    "desc": "子オブジェクトの表示/非表示を切り替え",
+    "descEn": "Toggle child object visibility",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsShowNode": {
+    "sig": "bool IsShowNode(string nodeName)",
+    "desc": "子オブジェクトが表示中か判定",
+    "descEn": "Check if child object is visible",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetEnableCollider": {
+    "sig": "bool SetEnableCollider(string nodeName, bool flag)",
+    "desc": "子オブジェクト単位でコライダーの有効/無効を切り替え",
+    "descEn": "Enable/disable collider per child object",
+    "components": [
+      "AreaCollider",
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsEnableCollider": {
+    "sig": "bool IsEnableCollider(string nodeName)",
+    "desc": "子オブジェクトのコライダーが有効か判定",
+    "descEn": "Check if child object's collider is enabled",
+    "components": [
+      "AreaCollider",
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetClickableNode": {
+    "sig": "bool SetClickableNode(string nodeName, bool flag)",
+    "desc": "子オブジェクトのクリック判定を有効/無効に切り替え",
+    "descEn": "Enable/disable click detection for child object",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsClickableNode": {
+    "sig": "bool IsClickableNode(string nodeName)",
+    "desc": "子オブジェクトがクリック可能か判定",
+    "descEn": "Check if child object is clickable",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetCollisionDetection": {
+    "sig": "void SetCollisionDetection(bool Flag)",
+    "desc": "Item全体の衝突判定を有効/無効に切り替え",
+    "descEn": "Enable/disable collision detection for entire Item",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsCollisionDetection": {
+    "sig": "bool IsCollisionDetection()",
+    "desc": "Item全体の衝突判定が有効か判定",
+    "descEn": "Check if Item's collision detection is enabled",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetUVScale": {
+    "sig": "bool SetUVScale(string materialName, float u, float v)",
+    "desc": "マテリアルのUVスケール（タイリング）を変更",
+    "descEn": "Change material's UV scale (tiling)",
+    "components": [
+      "Field",
+      "Object",
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetUVOffset": {
+    "sig": "bool SetUVOffset(string materialName, float u, float v)",
+    "desc": "マテリアルのUVオフセット（位置ずらし）を変更",
+    "descEn": "Change material's UV offset",
+    "components": [
+      "Field",
+      "Object",
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetMaterialColor": {
+    "sig": "bool SetMaterialColor(string materialName, float R, float G, float B, float A)",
+    "desc": "マテリアルの色をRGBA(0.0〜1.0)で変更",
+    "descEn": "Change material color using RGBA (0.0-1.0)",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetMaterialColor": {
+    "sig": "bool GetMaterialColor(string materialName, ref float R, ref float G, ref float B, ref float A)",
+    "desc": "マテリアルの現在色をRGBAで取得",
+    "descEn": "Get current material color as RGBA",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetAlpha": {
+    "sig": "bool SetAlpha(float Alpha)",
+    "desc": "Item全体の透明度を設定（0.0=透明、1.0=不透明）",
+    "descEn": "Set Item's overall transparency (0.0=transparent, 1.0=opaque)",
+    "components": [
+      "Field",
+      "Object",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "PlayVideo": {
+    "sig": "void PlayVideo(string materialName, string url, bool loop)",
+    "desc": "マテリアルにビデオを再生（再生中に呼ぶと停止するため注意）",
+    "descEn": "Play video on material (note: calling while playing will stop it)",
+    "components": [
+      "Field",
+      "Object",
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SwitchVideo": {
+    "sig": "void SwitchVideo(string materialName, string url, bool loop)",
+    "desc": "ビデオを切り替え再生（再生中でも安全に切替可能）",
+    "descEn": "Switch video safely (can be called while playing)",
+    "components": [
+      "Field",
+      "Object",
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "StopVideo": {
+    "sig": "void StopVideo()",
+    "desc": "ビデオ再生を停止",
+    "descEn": "Stop video playback",
+    "components": [
+      "Field",
+      "Object",
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsPlayVideo": {
+    "sig": "bool IsPlayVideo()",
+    "desc": "ビデオが再生中か判定",
+    "descEn": "Check if video is playing",
+    "components": [
+      "Field",
+      "Object",
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "ClearTextPlane": {
+    "sig": "void ClearTextPlane()",
+    "desc": "TextPlaneのテキストをクリア",
+    "descEn": "Clear TextPlane content",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "WriteTextPlane": {
+    "sig": "void WriteTextPlane(string text)",
+    "desc": "TextPlaneにテキストを表示",
+    "descEn": "Display text on TextPlane",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetTextPlaneFontSize": {
+    "sig": "bool SetTextPlaneFontSize(int fontSize)",
+    "desc": "TextPlaneのフォントサイズを設定",
+    "descEn": "Set TextPlane font size",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetTextPlaneColor": {
+    "sig": "void SetTextPlaneColor(Vector3 Col)",
+    "desc": "TextPlaneの文字色をRGBで設定",
+    "descEn": "Set TextPlane text color using RGB",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetCamera": {
+    "sig": "bool SetCamera()",
+    "desc": "このItemをメインカメラとして使用開始",
+    "descEn": "Start using this Item as main camera",
+    "components": [
+      "Camera"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "ResetCamera": {
+    "sig": "void ResetCamera()",
+    "desc": "SetCameraで設定したカメラを解除し元に戻す",
+    "descEn": "Reset camera set by SetCamera",
+    "components": [
+      "Camera"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "ReplaceItem": {
+    "sig": "bool ReplaceItem(string URL)",
+    "desc": "実行時にItemのモデルを動的に差し替え",
+    "descEn": "Dynamically replace Item's model at runtime",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "ReplaceTexture": {
+    "sig": "bool ReplaceTexture(string MaterialName, string FileName, bool Clamp = true, string TextureUniformName = '')",
+    "desc": "マテリアルのテクスチャを外部URLの画像に差し替え",
+    "descEn": "Replace material's texture with external URL image",
+    "components": [
+      "Field",
+      "Object",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetProperty": {
+    "sig": "bool SetProperty(string Key, string Value)",
+    "desc": "Itemにカスタムプロパティを設定（ローカル専用、他プレイヤーと非同期）",
+    "descEn": "Set custom property on Item (local only, not synced)",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetProperty": {
+    "sig": "string GetProperty(string Key)",
+    "desc": "Itemのカスタムプロパティを取得",
+    "descEn": "Get custom property from Item",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "RemoveProperty": {
+    "sig": "bool RemoveProperty(string Key)",
+    "desc": "Itemのカスタムプロパティを削除",
+    "descEn": "Remove custom property from Item",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "CallComponentMethod": {
+    "sig": "void CallComponentMethod(string ComponentName, string MethodName, string Params)",
+    "desc": "他Itemのコンポーネントメソッドを呼び出し（ギミック連携等）",
+    "descEn": "Call method on another Item's component",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetVolume": {
+    "sig": "void SetVolume(float Volume)",
+    "desc": "オーディオの音量を設定（0.0〜1.0）",
+    "descEn": "Set audio volume (0.0-1.0)",
+    "components": [
+      "Audio"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetVolume": {
+    "sig": "float GetVolume()",
+    "desc": "オーディオの現在音量を取得",
+    "descEn": "Get current audio volume",
+    "components": [
+      "Audio"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNumofPolygon": {
+    "sig": "int GetNumofPolygon()",
+    "desc": "Itemのポリゴン数を取得",
+    "descEn": "Get Item's polygon count",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "Forward": {
+    "sig": "Vector3 Forward()",
+    "desc": "Itemの正面方向ベクトルを取得",
+    "descEn": "Get Item's forward direction vector",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "LookAt": {
+    "sig": "bool LookAt(Vector3 target, Vector3 up)",
+    "desc": "Itemを指定座標の方向に向ける",
+    "descEn": "Make Item face toward specified position",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetLightColor": {
+    "sig": "void SetLightColor(Vector3 Col)",
+    "desc": "ポイントライトの色をRGBで変更",
+    "descEn": "Change point light color using RGB",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetLightColor": {
+    "sig": "Vector3 GetLightColor()",
+    "desc": "ポイントライトの現在色を取得",
+    "descEn": "Get point light's current color",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetLightRange": {
+    "sig": "void SetLightRange(float range)",
+    "desc": "ポイントライトの照射範囲を設定",
+    "descEn": "Set point light's range",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetLightRange": {
+    "sig": "float GetLightRange()",
+    "desc": "ポイントライトの照射範囲を取得",
+    "descEn": "Get point light's range",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsAlive": {
+    "sig": "bool IsAlive()",
+    "desc": "Itemインスタンスが有効かどうかを判定（複製後に破棄された場合はfalse）",
+    "descEn": "Check if Item instance is valid (returns false if cloned and destroyed)",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodePosByIndex": {
+    "sig": "Vector3 GetNodePosByIndex(int nodeIndex)",
+    "desc": "インデックス番号で指定したノードのローカル座標を取得",
+    "descEn": "Get node's local position by index",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeRotateByIndex": {
+    "sig": "Quaternion GetNodeRotateByIndex(int nodeIndex)",
+    "desc": "インデックス番号で指定したノードの回転をQuaternionで取得",
+    "descEn": "Get node's rotation as Quaternion by index",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeWorldPosByIndex": {
+    "sig": "Vector3 GetNodeWorldPosByIndex(int NodeIndex)",
+    "desc": "インデックス番号で指定したノードのワールド座標を取得",
+    "descEn": "Get node's world position by index",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeWorldRotateByIndex": {
+    "sig": "Quaternion GetNodeWorldRotateByIndex(int NodeIndex)",
+    "desc": "インデックス番号で指定したノードのワールド回転をQuaternionで取得",
+    "descEn": "Get node's world rotation as Quaternion by index",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeWorldScaleByIndex": {
+    "sig": "Vector3 GetNodeWorldScaleByIndex(int NodeIndex)",
+    "desc": "インデックス番号で指定したノードのワールドスケールを取得",
+    "descEn": "Get node's world scale by index",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeLocalPosByIndex": {
+    "sig": "Vector3 GetNodeLocalPosByIndex(int NodeIndex)",
+    "desc": "インデックス番号で指定したノードのローカル座標を取得",
+    "descEn": "Get node's local position by index",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeLocalRotateByIndex": {
+    "sig": "Quaternion GetNodeLocalRotateByIndex(int NodeIndex)",
+    "desc": "インデックス番号で指定したノードのローカル回転をQuaternionで取得",
+    "descEn": "Get node's local rotation as Quaternion by index",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeLocalScaleByIndex": {
+    "sig": "Vector3 GetNodeLocalScaleByIndex(int NodeIndex)",
+    "desc": "インデックス番号で指定したノードのローカルスケールを取得",
+    "descEn": "Get node's local scale by index",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeWorldScale": {
+    "sig": "Vector3 GetNodeWorldScale(string NodeName)",
+    "desc": "名前で指定したノードのワールドスケールを取得",
+    "descEn": "Get node's world scale by name",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeLocalPos": {
+    "sig": "Vector3 GetNodeLocalPos(string NodeName)",
+    "desc": "名前で指定したノードのローカル座標を取得",
+    "descEn": "Get node's local position by name",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeLocalRotate": {
+    "sig": "Quaternion GetNodeLocalRotate(string NodeName)",
+    "desc": "名前で指定したノードのローカル回転をQuaternionで取得",
+    "descEn": "Get node's local rotation as Quaternion by name",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetNodeLocalScale": {
+    "sig": "Vector3 GetNodeLocalScale(string NodeName)",
+    "desc": "名前で指定したノードのローカルスケールを取得",
+    "descEn": "Get node's local scale by name",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetPosNode": {
+    "sig": "bool SetPosNode(string NodeName, Vector3 Pos)",
+    "desc": "名前で指定したノードのワールド座標を設定",
+    "descEn": "Set node's world position by name",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetRotateNode": {
+    "sig": "bool SetRotateNode(string nodeName, Vector3 rotate)",
+    "desc": "名前で指定したノードのワールド回転をオイラー角で設定",
+    "descEn": "Set node's world rotation using Euler angles by name",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetNodeLocalRotate": {
+    "sig": "bool SetNodeLocalRotate(string nodeName, Vector3 rotate)",
+    "desc": "名前で指定したノードのローカル回転をオイラー角で設定",
+    "descEn": "Set node's local rotation using Euler angles by name",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetNodeLocalScale": {
+    "sig": "bool SetNodeLocalScale(string NodeName, Vector3 Scale)",
+    "desc": "名前で指定したノードのローカルスケールを設定",
+    "descEn": "Set node's local scale by name",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetUVScale": {
+    "sig": "bool GetUVScale(string materialName, ref float u, ref float v)",
+    "desc": "マテリアルのUVスケール値を取得",
+    "descEn": "Get material's UV scale values",
+    "components": [
+      "Field",
+      "Object",
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetUVOffset": {
+    "sig": "bool GetUVOffset(string materialName, ref float u, ref float v)",
+    "desc": "マテリアルのUVオフセット値を取得（原点は左上）",
+    "descEn": "Get material's UV offset values (top-left origin)",
+    "components": [
+      "Field",
+      "Object",
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "ReplaceBackupTexture": {
+    "sig": "bool ReplaceBackupTexture(string MaterialName)",
+    "desc": "ReplaceTextureで差し替えたテクスチャを元に戻す",
+    "descEn": "Restore material texture to pre-replacement state",
+    "components": [
+      "Field",
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetTextPlaneFontSize": {
+    "sig": "int GetTextPlaneFontSize()",
+    "desc": "TextPlaneの現在のフォントサイズを取得",
+    "descEn": "Get current TextPlane font size",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetTextPlaneTextureSize": {
+    "sig": "bool SetTextPlaneTextureSize(int X, int Y)",
+    "desc": "TextPlaneの描画テクスチャサイズを設定",
+    "descEn": "Set TextPlane's rendering texture dimensions",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetTextPlaneTextureSize": {
+    "sig": "void GetTextPlaneTextureSize(ref int refX, ref int refY)",
+    "desc": "TextPlaneの描画テクスチャサイズを取得",
+    "descEn": "Get TextPlane's rendering texture dimensions",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetTextPlaneAlignment": {
+    "sig": "bool SetTextPlaneAlignment(int HSAlign)",
+    "desc": "TextPlaneのテキスト配置を設定（hsCommonDialogSetTextAlignment()と同じ定数を使用）",
+    "descEn": "Set TextPlane text alignment (uses same constants as hsCommonDialogSetTextAlignment())",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetTextPlaneAlignment": {
+    "sig": "int GetTextPlaneAlignment()",
+    "desc": "TextPlaneの現在のテキスト配置設定を取得",
+    "descEn": "Get current TextPlane text alignment setting",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetTextPlaneColor": {
+    "sig": "Vector3 GetTextPlaneColor()",
+    "desc": "TextPlaneの現在の文字色を取得",
+    "descEn": "Get current TextPlane text color",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetTextPlaneWrap": {
+    "sig": "bool SetTextPlaneWrap(bool Wrap)",
+    "desc": "TextPlaneのテキスト折り返しを有効/無効に設定",
+    "descEn": "Enable/disable TextPlane text line wrapping",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetTextPlaneWrap": {
+    "sig": "bool GetTextPlaneWrap()",
+    "desc": "TextPlaneのテキスト折り返し設定を取得",
+    "descEn": "Get TextPlane text wrapping status",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetTextPlaneCharacterSpace": {
+    "sig": "bool SetTextPlaneCharacterSpace(int Pixels)",
+    "desc": "TextPlaneの文字間隔をピクセル単位で設定",
+    "descEn": "Set TextPlane character spacing in pixels",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetTextPlaneCharacterSpace": {
+    "sig": "int GetTextPlaneCharacterSpace()",
+    "desc": "TextPlaneの現在の文字間隔を取得",
+    "descEn": "Get current TextPlane character spacing",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetTextPlaneLineSpace": {
+    "sig": "bool SetTextPlaneLineSpace(int Pixels)",
+    "desc": "TextPlaneの行間隔をピクセル単位で設定",
+    "descEn": "Set TextPlane line spacing in pixels",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetTextPlaneLineSpace": {
+    "sig": "int GetTextPlaneLineSpace()",
+    "desc": "TextPlaneの現在の行間隔を取得",
+    "descEn": "Get current TextPlane line spacing",
+    "components": [
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetPlaneZBias": {
+    "sig": "void SetPlaneZBias(float ZBias)",
+    "desc": "Planeの深度バイアスを設定（重なり順序の調整）",
+    "descEn": "Set Plane's Z-Bias for depth rendering priority",
+    "components": [
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetPlaneZBias": {
+    "sig": "float GetPlaneZBias()",
+    "desc": "Planeの現在の深度バイアス値を取得",
+    "descEn": "Get current Plane Z-Bias value",
+    "components": [
+      "Plane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetPhysicsEnable": {
+    "sig": "bool SetPhysicsEnable(string NodeName, bool Flag)",
+    "desc": "指定ノードの物理演算シミュレーションを有効/無効に切り替え",
+    "descEn": "Enable/disable physics simulation for specified node",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "IsPhysicsFixed": {
+    "sig": "bool IsPhysicsFixed(string NodeName)",
+    "desc": "指定ノードが物理的に固定されているか判定",
+    "descEn": "Check if physics node is statically fixed",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetPhysicsIDByNodeName": {
+    "sig": "int GetPhysicsIDByNodeName(string NodeName)",
+    "desc": "ノード名から内部の物理演算IDを取得",
+    "descEn": "Get internal physics ID from node name",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetPhysicsWorldPos": {
+    "sig": "bool SetPhysicsWorldPos(string NodeName, Vector3 Pos)",
+    "desc": "物理演算ノードのワールド座標を設定",
+    "descEn": "Set physics node's world position",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetPhysicsWorldRotation": {
+    "sig": "bool SetPhysicsWorldRotation(string NodeName, Vector3 EulerAngle)",
+    "desc": "物理演算ノードのワールド回転をオイラー角で設定",
+    "descEn": "Set physics node's world rotation using Euler angles",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "ClearPhysicsWorldForce": {
+    "sig": "bool ClearPhysicsWorldForce(string NodeName)",
+    "desc": "物理演算ノードに蓄積された力をすべてクリア",
+    "descEn": "Clear all accumulated forces on physics node",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "AddPhysicsWorldForce": {
+    "sig": "bool AddPhysicsWorldForce(string NodeName, Vector3 Force)",
+    "desc": "物理演算ノードにワールド座標系で力を加える",
+    "descEn": "Apply directional force in world coordinates to physics node",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "AddPhysicsWorldVelocity": {
+    "sig": "bool AddPhysicsWorldVelocity(string NodeName, Vector3 Velocity)",
+    "desc": "物理演算ノードにワールド座標系で速度を加える",
+    "descEn": "Apply velocity vector in world coordinates to physics node",
+    "components": [
+      "Field"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetPropertyWithoutNotify": {
+    "sig": "bool SetPropertyWithoutNotify(string Key, string Value)",
+    "desc": "OnChangedPropertyコールバックを発生させずにプロパティを設定",
+    "descEn": "Set property without triggering OnChangedProperty callback",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "RemovePropertyWithoutNotify": {
+    "sig": "bool RemovePropertyWithoutNotify(string Key)",
+    "desc": "OnRemovedPropertyコールバックを発生させずにプロパティを削除",
+    "descEn": "Remove property without triggering OnRemovedProperty callback",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SetOverridesProperty": {
+    "sig": "bool SetOverridesProperty(string Key, string Value, string ItemName)",
+    "desc": "オーバーライドプロパティを設定（ItemNameが不要な場合は空文字を渡す）",
+    "descEn": "Set override property (pass empty string for ItemName if not using)",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetOverridesProperty": {
+    "sig": "bool GetOverridesProperty(string Key, ref string Value, ref string ItemName)",
+    "desc": "オーバーライドプロパティの設定を取得",
+    "descEn": "Get override property configuration",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetBonePos": {
+    "sig": "Vector3 GetBonePos(string BoneName)",
+    "desc": "ボーンのローカル座標を取得（存在しない場合はVector3(0,0,0)を返す）",
+    "descEn": "Get bone's local position (returns zero vector if invalid)",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetBoneWorldPos": {
+    "sig": "Vector3 GetBoneWorldPos(string BoneName)",
+    "desc": "ボーンのワールド座標を取得（存在しない場合はVector3(0,0,0)を返す）",
+    "descEn": "Get bone's world position (returns zero vector if invalid)",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "GetBoneRotate": {
+    "sig": "Quaternion GetBoneRotate(string BoneName)",
+    "desc": "ボーンの回転をQuaternionで取得（存在しない場合はゼロQuaternionを返す）",
+    "descEn": "Get bone's rotation as Quaternion (returns zero quaternion if invalid)",
+    "components": [
+      "Object"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  },
+  "SendMessage": {
+    "sig": "bool SendMessage(HSMessage message)",
+    "desc": "Itemの全コンポーネントにメッセージを送信（同一フレーム内で同期処理）",
+    "descEn": "Send message to all Item components (synchronous execution within single frame)",
+    "components": [
+      "Activity",
+      "AreaCollider",
+      "Audio",
+      "BackgroundTexture",
+      "Camera",
+      "Field",
+      "Object",
+      "Particle",
+      "Plane",
+      "TextPlane"
+    ],
+    "docUrl": "https://vrhikky.github.io/VketCloudSDK_Documents/latest/hs/hs_class_item.html"
+  }
+}

@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#version-1650" class="md-skip">
+        <a href="#version-1658" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -8609,25 +8609,7 @@
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      メイン機能
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      新機能
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      不具合修正
+      修正された不具合
     </span>
   </a>
   
@@ -13040,6 +13022,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HSDictionaryPage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HS Dictionary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -13079,25 +13081,7 @@
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      メイン機能
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      新機能
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      不具合修正
+      修正された不具合
     </span>
   </a>
   
@@ -13124,9 +13108,57 @@
                   
 
 
-<h1 id="version-1650">Version 16.5.0</h1>
+<h1 id="version-1658">Version 16.5.8</h1>
 <h2 id="sdkunityeditor">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
-<h3 id="_1">メイン機能</h3>
+<h3 id="_1">修正された不具合</h3>
+<ul>
+<li>
+<p><strong>VKC Item Clone &gt; ビルド</strong></p>
+<ul>
+<li>VKC Item Cloneを持つオブジェクトがシーン上にある場合、ビルド時にNull Referenceが発生してビルドに失敗する問題を修正</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Item Object &gt; インスタンス描画</strong></p>
+<ul>
+<li>詳細設定内でインスタンス描画の項目が重複して表示される問題を修正</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Node Collider &gt; 自動アタッチ</strong></p>
+<ul>
+<li>ビルド時にVKC Node Colliderが自動でアタッチされず、VKC Attribute Action Triggerを設定したノードをクリックしても反応しない場合がある問題を修正</li>
+</ul>
+</li>
+<li>
+<p><strong>HPKPacker.exe</strong></p>
+<ul>
+<li>HPKPacker.exeが含まれていない問題を修正</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Attribute Script &gt; HeliScriptファイル名とコンポーネント名</strong></p>
+<ul>
+<li>HeliScriptファイル名とコンポーネント名が異なる場合、HeliScriptがnoneになる、または新規追加時に意図しないコンポーネント名が入力される問題を修正</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Attribute Script &gt; シーンJSON</strong></p>
+<ul>
+<li>コンポーネント名を変更しても、変更前の内容がシーンJSONのcomponentsフィールドに残る問題を修正</li>
+</ul>
+</li>
+<li>
+<p><strong>VKC Item Point Light</strong></p>
+<ul>
+<li>Inspector上でコンポーネントの内容が表示されず、ビルドに失敗する問題を修正</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="version-1650">Version 16.5.0</h1>
+<h2 id="sdkunityeditor_1">SDK(Unityでワールドを作るためのEditor拡張ツール)</h2>
+<h3 id="_2">メイン機能</h3>
 <ul>
 <li>
 <p><strong>マイアセット/Activityインポート機能</strong></p>
@@ -13141,7 +13173,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="_2">新機能</h3>
+<h3 id="_3">新機能</h3>
 <ul>
 <li>
 <p><strong>VKC World Setting &gt; Rendering Setting</strong></p>
@@ -13277,7 +13309,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="_3">不具合修正</h3>
+<h3 id="_4">不具合修正</h3>
 <ul>
 <li>
 <p><strong>VketCloudSetting &gt; PlayModeManager</strong></p>

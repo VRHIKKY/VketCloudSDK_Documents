@@ -1,0 +1,236 @@
+{
+  "categories": {
+    "基本情報": [
+      "Equals",
+      "GetName",
+      "GetParentItem",
+      "GetNumofPolygon",
+      "IsAlive"
+    ],
+    "位置・移動": [
+      "SetPos",
+      "GetPos",
+      "GetWorldPos",
+      "MovePos",
+      "IsMoving"
+    ],
+    "回転・方向": [
+      "SetQuaternion",
+      "GetQuaternion",
+      "GetWorldQuaternion",
+      "GetWorldRotate",
+      "Forward",
+      "LookAt"
+    ],
+    "スケール": [
+      "GetScale",
+      "SetScale"
+    ],
+    "表示制御": [
+      "SetShow",
+      "IsShow",
+      "SetShowNode",
+      "IsShowNode"
+    ],
+    "ライフサイクル": [
+      "Load",
+      "Unload",
+      "IsLoading",
+      "IsLoaded",
+      "ReplaceItem"
+    ],
+    "再生制御": [
+      "Play",
+      "Stop",
+      "IsPlay",
+      "Pause",
+      "Restart",
+      "SetPlayTime",
+      "GetPlayTime"
+    ],
+    "モーション": [
+      "ChangeMotion",
+      "LoadMotion",
+      "FacialEmoteFixed"
+    ],
+    "ノード操作": [
+      "GetNodeIndexByName",
+      "GetNodeNameByIndex",
+      "GetNodeWorldPos",
+      "GetNodeWorldRotate",
+      "GetNodeWorldScale",
+      "GetNodeLocalPos",
+      "GetNodeLocalRotate",
+      "GetNodeLocalScale",
+      "SetNodeLocalPos",
+      "SetNodeWorldPos",
+      "SetNodeLocalRotate",
+      "SetNodeLocalScale",
+      "SetPosNode",
+      "SetRotateNode",
+      "GetNodePosByIndex",
+      "GetNodeRotateByIndex",
+      "GetNodeWorldPosByIndex",
+      "GetNodeWorldRotateByIndex",
+      "GetNodeWorldScaleByIndex",
+      "GetNodeLocalPosByIndex",
+      "GetNodeLocalRotateByIndex",
+      "GetNodeLocalScaleByIndex"
+    ],
+    "コライダー": [
+      "SetEnableCollider",
+      "IsEnableCollider",
+      "SetClickableNode",
+      "IsClickableNode",
+      "SetCollisionDetection",
+      "IsCollisionDetection"
+    ],
+    "物理演算": [
+      "SetPhysicsEnable",
+      "IsPhysicsFixed",
+      "GetPhysicsIDByNodeName",
+      "SetPhysicsWorldPos",
+      "SetPhysicsWorldRotation",
+      "ClearPhysicsWorldForce",
+      "AddPhysicsWorldForce",
+      "AddPhysicsWorldVelocity"
+    ],
+    "マテリアル": [
+      "SetUVScale",
+      "SetUVOffset",
+      "GetUVScale",
+      "GetUVOffset",
+      "SetMaterialColor",
+      "GetMaterialColor",
+      "SetAlpha",
+      "ReplaceTexture",
+      "ReplaceBackupTexture"
+    ],
+    "ビデオ": [
+      "PlayVideo",
+      "SwitchVideo",
+      "StopVideo",
+      "IsPlayVideo"
+    ],
+    "テキスト": [
+      "ClearTextPlane",
+      "WriteTextPlane",
+      "SetTextPlaneFontSize",
+      "GetTextPlaneFontSize",
+      "SetTextPlaneTextureSize",
+      "GetTextPlaneTextureSize",
+      "SetTextPlaneAlignment",
+      "GetTextPlaneAlignment",
+      "SetTextPlaneColor",
+      "GetTextPlaneColor",
+      "SetTextPlaneWrap",
+      "GetTextPlaneWrap",
+      "SetTextPlaneCharacterSpace",
+      "GetTextPlaneCharacterSpace",
+      "SetTextPlaneLineSpace",
+      "GetTextPlaneLineSpace"
+    ],
+    "プレーン": [
+      "SetPlaneZBias",
+      "GetPlaneZBias"
+    ],
+    "プロパティ": [
+      "SetProperty",
+      "GetProperty",
+      "RemoveProperty",
+      "SetPropertyWithoutNotify",
+      "RemovePropertyWithoutNotify",
+      "SetOverridesProperty",
+      "GetOverridesProperty",
+      "CallComponentMethod",
+      "SendMessage"
+    ],
+    "カメラ": [
+      "SetCamera",
+      "ResetCamera"
+    ],
+    "オーディオ": [
+      "SetVolume",
+      "GetVolume"
+    ],
+    "ライト": [
+      "SetLightColor",
+      "GetLightColor",
+      "SetLightRange",
+      "GetLightRange"
+    ],
+    "ボーン": [
+      "GetBonePos",
+      "GetBoneWorldPos",
+      "GetBoneRotate"
+    ]
+  },
+  "icons": {
+    "基本情報": "info",
+    "位置・移動": "open_with",
+    "回転・方向": "3d_rotation",
+    "スケール": "aspect_ratio",
+    "表示制御": "visibility",
+    "ライフサイクル": "autorenew",
+    "再生制御": "play_circle",
+    "モーション": "directions_run",
+    "ノード操作": "account_tree",
+    "コライダー": "touch_app",
+    "物理演算": "sports_soccer",
+    "マテリアル": "palette",
+    "ビデオ": "videocam",
+    "テキスト": "text_fields",
+    "プレーン": "layers",
+    "プロパティ": "settings",
+    "カメラ": "photo_camera",
+    "オーディオ": "volume_up",
+    "ライト": "lightbulb",
+    "ボーン": "accessibility"
+  },
+  "translations": {
+    "ja": {
+      "基本情報": "基本情報",
+      "位置・移動": "位置・移動",
+      "回転・方向": "回転・方向",
+      "スケール": "スケール",
+      "表示制御": "表示制御",
+      "ライフサイクル": "ライフサイクル",
+      "再生制御": "再生制御",
+      "モーション": "モーション",
+      "ノード操作": "ノード操作",
+      "コライダー": "コライダー",
+      "物理演算": "物理演算",
+      "マテリアル": "マテリアル",
+      "ビデオ": "ビデオ",
+      "テキスト": "テキスト",
+      "プレーン": "プレーン",
+      "プロパティ": "プロパティ",
+      "カメラ": "カメラ",
+      "オーディオ": "オーディオ",
+      "ライト": "ライト",
+      "ボーン": "ボーン"
+    },
+    "en": {
+      "基本情報": "Basic Info",
+      "位置・移動": "Position/Movement",
+      "回転・方向": "Rotation/Direction",
+      "スケール": "Scale",
+      "表示制御": "Visibility",
+      "ライフサイクル": "Lifecycle",
+      "再生制御": "Playback",
+      "モーション": "Motion",
+      "ノード操作": "Node Operations",
+      "コライダー": "Collider",
+      "物理演算": "Physics",
+      "マテリアル": "Material",
+      "ビデオ": "Video",
+      "テキスト": "Text",
+      "プレーン": "Plane",
+      "プロパティ": "Property",
+      "カメラ": "Camera",
+      "オーディオ": "Audio",
+      "ライト": "Light",
+      "ボーン": "Bone"
+    }
+  }
+}

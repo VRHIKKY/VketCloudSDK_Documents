@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSDictionary - HeliScript メソッドリファレンス</title>
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --accent-color: #6366f1;
+      --accent-hover: #4f46e5;
+      --border-color: #e2e8f0;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --accent-color: #818cf8;
+      --accent-hover: #6366f1;
+      --border-color: #334155;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .header {
+      margin-bottom: 3rem;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .header h1 .material-icons {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+    }
+
+    .header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    .pages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .page-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .page-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      border-color: var(--accent-color);
+    }
+
+    .page-card .icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .page-card .icon .material-icons {
+      font-size: 32px;
+      color: white;
+    }
+
+    .page-card h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .page-card p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .page-card .status {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      background: var(--accent-color);
+      color: white;
+    }
+
+    .page-card .status.coming-soon {
+      background: var(--text-secondary);
+    }
+
+    .admin-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: color 0.2s;
+    }
+
+    .admin-link:hover {
+      color: var(--accent-color);
+    }
+
+    .admin-link .material-icons {
+      font-size: 1rem;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .theme-toggle .material-icons {
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" id="theme-toggle" title="テーマ切替">
+    <span class="material-icons">dark_mode</span>
+  </button>
+
+  <div class="container">
+    <div class="header">
+      <h1>
+        <span class="material-icons">menu_book</span>
+        HSDictionary
+      </h1>
+      <p>HeliScript メソッドリファレンス</p>
+    </div>
+
+    <div class="pages">
+      <a href="pages/item/" class="page-card">
+        <div class="icon">
+          <span class="material-icons">widgets</span>
+        </div>
+        <h2>VKC Item</h2>
+        <p>VKC Itemクラスのメソッドを検索できます。移動、回転、表示制御など。</p>
+        <span class="status">利用可能</span>
+      </a>
+
+      <a href="pages/heliscript/" class="page-card">
+        <div class="icon">
+          <span class="material-icons">code</span>
+        </div>
+        <h2>HeliScript API</h2>
+        <p>HeliScript APIリファレンス。Player、Component、Layerクラスのメソッドを検索。</p>
+        <span class="status">利用可能</span>
+      </a>
+
+      <div class="page-card" style="opacity: 0.6; cursor: not-allowed;">
+        <div class="icon" style="background: var(--text-secondary);">
+          <span class="material-icons">public</span>
+        </div>
+        <h2>VKC World</h2>
+        <p>VKC Worldクラスのメソッドを検索できます。ワールド設定、環境制御など。</p>
+        <span class="status coming-soon">準備中</span>
+      </div>
+    </div>
+
+    <a href="admin/" class="admin-link">
+      <span class="material-icons">settings</span>
+      管理画面
+    </a>
+  </div>
+
+  <script>
+    // テーマ管理
+    const themeToggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('hsdictionary_theme');
+
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      updateThemeIcon(savedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('hsdictionary_theme', next);
+      updateThemeIcon(next);
+    });
+
+    function updateThemeIcon(theme) {
+      const icon = themeToggle.querySelector('.material-icons');
+      icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+    }
+  </script>
+</body>
+</html>
