@@ -2,8 +2,11 @@
 
 ## Updated June 5, 2026
 
-## June 5, 2026 - Added Pages
+## June 5, 2026 - Edited Pages
 
+- Release Notes
+    - [v16.5](../releasenote/releasenote-16.5.en.md)
+        - Added release notes for v16.5.8
 - Others
     - [HS Dictionary](../HSDictionaryPage.en.md): Released the HeliScript API Reference Dictionary (HS Dictionary).
 
