@@ -1,0 +1,630 @@
+{
+  "移動": [
+    "SetPos",
+    "GetPos",
+    "GetWorldPos",
+    "MovePos",
+    "IsMoving"
+  ],
+  "位置": [
+    "SetPos",
+    "GetPos",
+    "GetWorldPos",
+    "MovePos",
+    "SetNodeLocalPos",
+    "SetNodeWorldPos",
+    "GetNodeWorldPos",
+    "GetNodeLocalPos",
+    "SetPosNode",
+    "SetPhysicsWorldPos",
+    "GetBonePos",
+    "GetBoneWorldPos"
+  ],
+  "座標": [
+    "SetPos",
+    "GetPos",
+    "GetWorldPos",
+    "SetNodeLocalPos",
+    "SetNodeWorldPos",
+    "GetNodeWorldPos",
+    "GetNodeLocalPos",
+    "SetPosNode",
+    "SetPhysicsWorldPos",
+    "GetBonePos",
+    "GetBoneWorldPos"
+  ],
+  "動かす": [
+    "SetPos",
+    "MovePos"
+  ],
+  "ワールド": [
+    "GetWorldPos",
+    "GetWorldQuaternion",
+    "GetWorldRotate",
+    "GetNodeWorldPos",
+    "GetNodeWorldRotate",
+    "SetNodeWorldPos",
+    "GetNodeWorldScale",
+    "GetNodeWorldPosByIndex",
+    "GetNodeWorldRotateByIndex",
+    "GetNodeWorldScaleByIndex",
+    "SetPhysicsWorldPos",
+    "SetPhysicsWorldRotation",
+    "AddPhysicsWorldForce",
+    "AddPhysicsWorldVelocity",
+    "GetBoneWorldPos"
+  ],
+  "ローカル": [
+    "GetPos",
+    "GetQuaternion",
+    "SetNodeLocalPos",
+    "GetNodeLocalPos",
+    "GetNodeLocalRotate",
+    "GetNodeLocalScale",
+    "SetNodeLocalRotate",
+    "SetNodeLocalScale",
+    "GetNodeLocalPosByIndex",
+    "GetNodeLocalRotateByIndex",
+    "GetNodeLocalScaleByIndex",
+    "GetBonePos"
+  ],
+  "回転": [
+    "SetQuaternion",
+    "GetQuaternion",
+    "GetWorldQuaternion",
+    "GetWorldRotate",
+    "GetNodeWorldRotate",
+    "LookAt",
+    "GetNodeLocalRotate",
+    "SetNodeLocalRotate",
+    "SetRotateNode",
+    "GetNodeRotateByIndex",
+    "GetNodeWorldRotateByIndex",
+    "GetNodeLocalRotateByIndex",
+    "SetPhysicsWorldRotation",
+    "GetBoneRotate"
+  ],
+  "向き": [
+    "SetQuaternion",
+    "GetQuaternion",
+    "Forward",
+    "LookAt"
+  ],
+  "方向": [
+    "Forward",
+    "LookAt"
+  ],
+  "向く": [
+    "LookAt"
+  ],
+  "角度": [
+    "GetWorldRotate",
+    "SetPhysicsWorldRotation"
+  ],
+  "大きさ": [
+    "GetScale",
+    "SetScale",
+    "GetNodeWorldScale",
+    "GetNodeLocalScale",
+    "SetNodeLocalScale"
+  ],
+  "サイズ": [
+    "GetScale",
+    "SetScale",
+    "SetTextPlaneTextureSize",
+    "GetTextPlaneTextureSize"
+  ],
+  "スケール": [
+    "GetScale",
+    "SetScale",
+    "GetNodeWorldScale",
+    "GetNodeLocalScale",
+    "SetNodeLocalScale",
+    "GetNodeWorldScaleByIndex",
+    "GetNodeLocalScaleByIndex"
+  ],
+  "拡大": [
+    "SetScale",
+    "SetNodeLocalScale"
+  ],
+  "縮小": [
+    "SetScale",
+    "SetNodeLocalScale"
+  ],
+  "表示": [
+    "SetShow",
+    "IsShow",
+    "SetShowNode",
+    "IsShowNode"
+  ],
+  "非表示": [
+    "SetShow",
+    "SetShowNode"
+  ],
+  "見える": [
+    "SetShow",
+    "IsShow",
+    "SetShowNode",
+    "IsShowNode"
+  ],
+  "隠す": [
+    "SetShow",
+    "SetShowNode"
+  ],
+  "可視": [
+    "SetShow",
+    "IsShow"
+  ],
+  "再生": [
+    "Play",
+    "Stop",
+    "IsPlay",
+    "Pause",
+    "Restart",
+    "PlayVideo",
+    "SwitchVideo",
+    "StopVideo",
+    "IsPlayVideo"
+  ],
+  "停止": [
+    "Stop",
+    "Pause",
+    "StopVideo"
+  ],
+  "一時停止": [
+    "Pause"
+  ],
+  "音": [
+    "Play",
+    "Stop",
+    "IsPlay",
+    "SetVolume",
+    "GetVolume"
+  ],
+  "音楽": [
+    "Play",
+    "Stop",
+    "IsPlay",
+    "SetVolume",
+    "GetVolume"
+  ],
+  "サウンド": [
+    "Play",
+    "Stop",
+    "IsPlay",
+    "SetVolume",
+    "GetVolume"
+  ],
+  "音量": [
+    "SetVolume",
+    "GetVolume"
+  ],
+  "ボリューム": [
+    "SetVolume",
+    "GetVolume"
+  ],
+  "モーション": [
+    "ChangeMotion",
+    "LoadMotion",
+    "Play",
+    "Stop",
+    "IsPlay",
+    "Pause",
+    "Restart",
+    "SetPlayTime",
+    "GetPlayTime"
+  ],
+  "アニメーション": [
+    "ChangeMotion",
+    "LoadMotion",
+    "Play",
+    "Stop",
+    "Pause",
+    "Restart"
+  ],
+  "表情": [
+    "FacialEmoteFixed"
+  ],
+  "顔": [
+    "FacialEmoteFixed"
+  ],
+  "ロード": [
+    "Load",
+    "Unload",
+    "IsLoading",
+    "IsLoaded",
+    "LoadMotion"
+  ],
+  "読み込み": [
+    "Load",
+    "IsLoading",
+    "IsLoaded",
+    "LoadMotion"
+  ],
+  "解放": [
+    "Unload"
+  ],
+  "メモリ": [
+    "Unload"
+  ],
+  "衝突": [
+    "SetCollisionDetection",
+    "IsCollisionDetection",
+    "SetEnableCollider",
+    "IsEnableCollider"
+  ],
+  "当たり判定": [
+    "SetCollisionDetection",
+    "IsCollisionDetection",
+    "SetEnableCollider",
+    "IsEnableCollider"
+  ],
+  "コライダー": [
+    "SetEnableCollider",
+    "IsEnableCollider"
+  ],
+  "クリック": [
+    "SetClickableNode",
+    "IsClickableNode"
+  ],
+  "色": [
+    "SetMaterialColor",
+    "GetMaterialColor",
+    "SetTextPlaneColor",
+    "GetTextPlaneColor",
+    "SetLightColor",
+    "GetLightColor"
+  ],
+  "透明": [
+    "SetAlpha"
+  ],
+  "透明度": [
+    "SetAlpha"
+  ],
+  "マテリアル": [
+    "SetMaterialColor",
+    "GetMaterialColor",
+    "SetUVScale",
+    "SetUVOffset",
+    "GetUVScale",
+    "GetUVOffset",
+    "ReplaceBackupTexture"
+  ],
+  "テクスチャ": [
+    "ReplaceTexture",
+    "SetUVScale",
+    "SetUVOffset",
+    "GetUVScale",
+    "GetUVOffset",
+    "ReplaceBackupTexture",
+    "SetTextPlaneTextureSize",
+    "GetTextPlaneTextureSize"
+  ],
+  "UV": [
+    "SetUVScale",
+    "SetUVOffset",
+    "GetUVScale",
+    "GetUVOffset"
+  ],
+  "ビデオ": [
+    "PlayVideo",
+    "SwitchVideo",
+    "StopVideo",
+    "IsPlayVideo"
+  ],
+  "動画": [
+    "PlayVideo",
+    "SwitchVideo",
+    "StopVideo",
+    "IsPlayVideo"
+  ],
+  "映像": [
+    "PlayVideo",
+    "SwitchVideo",
+    "StopVideo",
+    "IsPlayVideo"
+  ],
+  "テキスト": [
+    "ClearTextPlane",
+    "WriteTextPlane",
+    "SetTextPlaneFontSize",
+    "GetTextPlaneFontSize",
+    "SetTextPlaneColor",
+    "GetTextPlaneColor",
+    "SetTextPlaneAlignment",
+    "GetTextPlaneAlignment",
+    "SetTextPlaneWrap",
+    "GetTextPlaneWrap",
+    "SetTextPlaneCharacterSpace",
+    "GetTextPlaneCharacterSpace",
+    "SetTextPlaneLineSpace",
+    "GetTextPlaneLineSpace"
+  ],
+  "文字": [
+    "ClearTextPlane",
+    "WriteTextPlane",
+    "SetTextPlaneFontSize",
+    "GetTextPlaneFontSize",
+    "SetTextPlaneColor",
+    "GetTextPlaneColor",
+    "SetTextPlaneCharacterSpace",
+    "GetTextPlaneCharacterSpace"
+  ],
+  "フォント": [
+    "SetTextPlaneFontSize",
+    "GetTextPlaneFontSize"
+  ],
+  "文字サイズ": [
+    "SetTextPlaneFontSize",
+    "GetTextPlaneFontSize"
+  ],
+  "文字間隔": [
+    "SetTextPlaneCharacterSpace",
+    "GetTextPlaneCharacterSpace"
+  ],
+  "行間": [
+    "SetTextPlaneLineSpace",
+    "GetTextPlaneLineSpace"
+  ],
+  "行間隔": [
+    "SetTextPlaneLineSpace",
+    "GetTextPlaneLineSpace"
+  ],
+  "配置": [
+    "SetTextPlaneAlignment",
+    "GetTextPlaneAlignment"
+  ],
+  "揃え": [
+    "SetTextPlaneAlignment",
+    "GetTextPlaneAlignment"
+  ],
+  "折り返し": [
+    "SetTextPlaneWrap",
+    "GetTextPlaneWrap"
+  ],
+  "改行": [
+    "SetTextPlaneWrap",
+    "GetTextPlaneWrap"
+  ],
+  "カメラ": [
+    "SetCamera",
+    "ResetCamera"
+  ],
+  "プロパティ": [
+    "SetProperty",
+    "GetProperty",
+    "RemoveProperty",
+    "SetPropertyWithoutNotify",
+    "RemovePropertyWithoutNotify",
+    "SetOverridesProperty",
+    "GetOverridesProperty"
+  ],
+  "設定": [
+    "SetProperty",
+    "SetPropertyWithoutNotify",
+    "SetOverridesProperty"
+  ],
+  "取得": [
+    "GetProperty",
+    "GetPos",
+    "GetWorldPos",
+    "GetQuaternion",
+    "GetScale",
+    "GetVolume",
+    "GetLightColor",
+    "GetLightRange",
+    "GetMaterialColor",
+    "GetPlayTime",
+    "GetOverridesProperty",
+    "GetTextPlaneFontSize",
+    "GetTextPlaneColor",
+    "GetBonePos",
+    "GetBoneWorldPos",
+    "GetBoneRotate"
+  ],
+  "ノード": [
+    "GetNodeIndexByName",
+    "GetNodeNameByIndex",
+    "GetNodeWorldPos",
+    "GetNodeWorldRotate",
+    "SetNodeLocalPos",
+    "SetNodeWorldPos",
+    "SetShowNode",
+    "IsShowNode",
+    "GetNodeLocalPos",
+    "GetNodeLocalRotate",
+    "GetNodeLocalScale",
+    "GetNodeWorldScale",
+    "SetNodeLocalRotate",
+    "SetNodeLocalScale",
+    "SetPosNode",
+    "SetRotateNode",
+    "GetNodePosByIndex",
+    "GetNodeRotateByIndex",
+    "GetNodeWorldPosByIndex",
+    "GetNodeWorldRotateByIndex",
+    "GetNodeWorldScaleByIndex",
+    "GetNodeLocalPosByIndex",
+    "GetNodeLocalRotateByIndex",
+    "GetNodeLocalScaleByIndex"
+  ],
+  "子オブジェクト": [
+    "GetNodeIndexByName",
+    "GetNodeNameByIndex",
+    "GetNodeWorldPos",
+    "GetNodeWorldRotate",
+    "SetNodeLocalPos",
+    "SetNodeWorldPos",
+    "SetShowNode",
+    "IsShowNode",
+    "GetNodeLocalPos",
+    "GetNodeLocalRotate",
+    "GetNodeLocalScale",
+    "GetNodeWorldScale",
+    "SetNodeLocalRotate",
+    "SetNodeLocalScale"
+  ],
+  "インデックス": [
+    "GetNodeIndexByName",
+    "GetNodeNameByIndex",
+    "GetNodePosByIndex",
+    "GetNodeRotateByIndex",
+    "GetNodeWorldPosByIndex",
+    "GetNodeWorldRotateByIndex",
+    "GetNodeWorldScaleByIndex",
+    "GetNodeLocalPosByIndex",
+    "GetNodeLocalRotateByIndex",
+    "GetNodeLocalScaleByIndex"
+  ],
+  "ライト": [
+    "SetLightColor",
+    "GetLightColor",
+    "SetLightRange",
+    "GetLightRange"
+  ],
+  "光": [
+    "SetLightColor",
+    "GetLightColor",
+    "SetLightRange",
+    "GetLightRange"
+  ],
+  "名前": [
+    "GetName",
+    "GetNodeIndexByName",
+    "GetNodeNameByIndex"
+  ],
+  "親": [
+    "GetParentItem"
+  ],
+  "ポリゴン": [
+    "GetNumofPolygon"
+  ],
+  "呼び出し": [
+    "CallComponentMethod",
+    "SendMessage"
+  ],
+  "連携": [
+    "CallComponentMethod",
+    "SendMessage"
+  ],
+  "差し替え": [
+    "ReplaceItem",
+    "ReplaceTexture",
+    "ReplaceBackupTexture"
+  ],
+  "モデル": [
+    "ReplaceItem"
+  ],
+  "比較": [
+    "Equals"
+  ],
+  "同じ": [
+    "Equals"
+  ],
+  "パーティクル": [
+    "Play",
+    "Stop",
+    "IsPlay"
+  ],
+  "物理": [
+    "SetPhysicsEnable",
+    "IsPhysicsFixed",
+    "GetPhysicsIDByNodeName",
+    "SetPhysicsWorldPos",
+    "SetPhysicsWorldRotation",
+    "ClearPhysicsWorldForce",
+    "AddPhysicsWorldForce",
+    "AddPhysicsWorldVelocity"
+  ],
+  "物理演算": [
+    "SetPhysicsEnable",
+    "IsPhysicsFixed",
+    "GetPhysicsIDByNodeName",
+    "SetPhysicsWorldPos",
+    "SetPhysicsWorldRotation",
+    "ClearPhysicsWorldForce",
+    "AddPhysicsWorldForce",
+    "AddPhysicsWorldVelocity"
+  ],
+  "力": [
+    "AddPhysicsWorldForce",
+    "ClearPhysicsWorldForce"
+  ],
+  "速度": [
+    "AddPhysicsWorldVelocity"
+  ],
+  "固定": [
+    "IsPhysicsFixed"
+  ],
+  "有効": [
+    "SetPhysicsEnable",
+    "IsAlive"
+  ],
+  "無効": [
+    "SetPhysicsEnable"
+  ],
+  "ボーン": [
+    "GetBonePos",
+    "GetBoneWorldPos",
+    "GetBoneRotate"
+  ],
+  "骨": [
+    "GetBonePos",
+    "GetBoneWorldPos",
+    "GetBoneRotate"
+  ],
+  "スケルトン": [
+    "GetBonePos",
+    "GetBoneWorldPos",
+    "GetBoneRotate"
+  ],
+  "アーマチュア": [
+    "GetBonePos",
+    "GetBoneWorldPos",
+    "GetBoneRotate"
+  ],
+  "深度": [
+    "SetPlaneZBias",
+    "GetPlaneZBias"
+  ],
+  "重なり": [
+    "SetPlaneZBias",
+    "GetPlaneZBias"
+  ],
+  "描画順": [
+    "SetPlaneZBias",
+    "GetPlaneZBias"
+  ],
+  "メッセージ": [
+    "SendMessage"
+  ],
+  "通知": [
+    "SetPropertyWithoutNotify",
+    "RemovePropertyWithoutNotify"
+  ],
+  "コールバック": [
+    "SetPropertyWithoutNotify",
+    "RemovePropertyWithoutNotify"
+  ],
+  "オーバーライド": [
+    "SetOverridesProperty",
+    "GetOverridesProperty"
+  ],
+  "上書き": [
+    "SetOverridesProperty",
+    "GetOverridesProperty"
+  ],
+  "存在": [
+    "IsAlive"
+  ],
+  "生存": [
+    "IsAlive"
+  ],
+  "破棄": [
+    "IsAlive",
+    "Unload"
+  ],
+  "復元": [
+    "ReplaceBackupTexture"
+  ]
+}

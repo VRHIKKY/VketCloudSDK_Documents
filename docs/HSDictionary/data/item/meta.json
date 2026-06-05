@@ -1,0 +1,719 @@
+{
+  "components": [
+    "Activity",
+    "AreaCollider",
+    "Audio",
+    "BackgroundTexture",
+    "Camera",
+    "Field",
+    "Object",
+    "Particle",
+    "Plane",
+    "TextPlane"
+  ],
+  "frequentMethods": [
+    "SetPos",
+    "GetPos",
+    "SetShow",
+    "IsShow",
+    "Play",
+    "Stop",
+    "SetScale",
+    "MovePos",
+    "ChangeMotion",
+    "SetMaterialColor",
+    "WriteTextPlane",
+    "SetVolume",
+    "Load",
+    "Unload"
+  ],
+  "warnings": {
+    "PlayVideo": {
+      "type": "warning",
+      "message": "再生中に呼ぶと停止してしまいます。SwitchVideoの使用を推奨します。",
+      "messageEn": "Calling while playing will stop it. Use SwitchVideo instead."
+    },
+    "SetProperty": {
+      "type": "info",
+      "message": "他プレイヤーとは同期されません（ローカル専用）",
+      "messageEn": "Not synced with other players (local only)"
+    },
+    "GetProperty": {
+      "type": "info",
+      "message": "存在しないKeyは空文字列を返します",
+      "messageEn": "Returns empty string for non-existent keys"
+    },
+    "Unload": {
+      "type": "warning",
+      "message": "メモリから完全に解放されます。再度使用するにはLoadが必要です。",
+      "messageEn": "Completely released from memory. Load() required for reuse."
+    },
+    "SetCollisionDetection": {
+      "type": "info",
+      "message": "Item全体の衝突判定です。ノード単位はSetEnableColliderを使用してください。",
+      "messageEn": "Collision for entire Item. Use SetEnableCollider for per-node control."
+    },
+    "SetEnableCollider": {
+      "type": "info",
+      "message": "子オブジェクト単位の衝突判定です。Item全体はSetCollisionDetectionを使用してください。",
+      "messageEn": "Per-child collision. Use SetCollisionDetection for entire Item."
+    },
+    "ClearTextPlane": {
+      "type": "tip",
+      "message": "WriteTextPlaneの前に呼ぶことで、テキストが重複表示されるのを防げます。",
+      "messageEn": "Call before WriteTextPlane to prevent duplicate text display."
+    },
+    "MovePos": {
+      "type": "tip",
+      "message": "IsMoving()で移動完了を確認できます。",
+      "messageEn": "Use IsMoving() to check movement completion."
+    },
+    "ChangeMotion": {
+      "type": "tip",
+      "message": "BlendTimeMSを指定すると滑らかにモーションが遷移します。",
+      "messageEn": "Specify BlendTimeMS for smooth motion transition."
+    },
+    "Equals": {
+      "type": "info",
+      "message": "==は型比較のみ。Equalsは内部データまで比較します。hsItemGet()で取得した同一Itemの別インスタンスも正しく判定できます。",
+      "messageEn": "== only compares types. Equals compares internal data. Correctly identifies same Item from different hsItemGet() calls."
+    },
+    "SetPropertyWithoutNotify": {
+      "type": "info",
+      "message": "OnChangedPropertyコールバックが発生しません。パフォーマンス最適化や無限ループ防止に使用します。",
+      "messageEn": "OnChangedProperty callback is not triggered. Use for performance optimization or preventing infinite loops."
+    },
+    "RemovePropertyWithoutNotify": {
+      "type": "info",
+      "message": "OnRemovedPropertyコールバックが発生しません。",
+      "messageEn": "OnRemovedProperty callback is not triggered."
+    },
+    "GetBonePos": {
+      "type": "info",
+      "message": "存在しないボーン名を指定した場合、Vector3(0,0,0)が返ります。",
+      "messageEn": "Returns Vector3(0,0,0) if bone name doesn't exist."
+    },
+    "GetBoneWorldPos": {
+      "type": "info",
+      "message": "存在しないボーン名を指定した場合、Vector3(0,0,0)が返ります。",
+      "messageEn": "Returns Vector3(0,0,0) if bone name doesn't exist."
+    },
+    "GetBoneRotate": {
+      "type": "info",
+      "message": "存在しないボーン名を指定した場合、ゼロQuaternionが返ります。",
+      "messageEn": "Returns zero Quaternion if bone name doesn't exist."
+    },
+    "SendMessage": {
+      "type": "info",
+      "message": "全てのコンポーネントに対して同一フレーム内で同期的に処理されます。",
+      "messageEn": "Processed synchronously within the same frame for all components."
+    },
+    "IsAlive": {
+      "type": "tip",
+      "message": "複製したItemが破棄されたかどうかを確認するのに便利です。",
+      "messageEn": "Useful for checking if a cloned Item has been destroyed."
+    },
+    "ReplaceBackupTexture": {
+      "type": "tip",
+      "message": "ReplaceTextureで差し替えたテクスチャを元に戻す際に使用します。",
+      "messageEn": "Use to restore textures replaced by ReplaceTexture."
+    },
+    "SetPhysicsEnable": {
+      "type": "warning",
+      "message": "物理演算を有効にすると、SetPos等による直接的な位置制御が無効になります。",
+      "messageEn": "When physics is enabled, direct position control via SetPos etc. is disabled."
+    },
+    "AddPhysicsWorldForce": {
+      "type": "tip",
+      "message": "力は毎フレーム蓄積されます。ClearPhysicsWorldForceでリセットできます。",
+      "messageEn": "Force accumulates every frame. Use ClearPhysicsWorldForce to reset."
+    }
+  },
+  "arguments": {
+    "SetPos": {
+      "Pos": {
+        "type": "Vector3",
+        "desc": "移動先のローカル座標",
+        "example": "makeVector3(10.0f, 0.0f, 5.0f)"
+      },
+      "CollisionDetection": {
+        "type": "bool",
+        "desc": "衝突判定を行うか（true=判定あり）",
+        "default": "false",
+        "example": "false"
+      }
+    },
+    "MovePos": {
+      "pos": {
+        "type": "Vector3",
+        "desc": "移動先の座標",
+        "example": "makeVector3(5.0f, 0.0f, 10.0f)"
+      },
+      "time": {
+        "type": "float",
+        "desc": "移動にかかる時間（秒）",
+        "example": "2.0f"
+      },
+      "CollisionDetection": {
+        "type": "bool",
+        "desc": "衝突判定を行うか",
+        "default": "false",
+        "example": "false"
+      },
+      "Gravity": {
+        "type": "bool",
+        "desc": "重力の影響を受けるか",
+        "default": "true",
+        "example": "true"
+      }
+    },
+    "SetQuaternion": {
+      "Rotate": {
+        "type": "Quaternion",
+        "desc": "設定する回転値",
+        "example": "makeQuaternionYRotation(90.0f)"
+      }
+    },
+    "SetScale": {
+      "Scale": {
+        "type": "Vector3",
+        "desc": "設定するスケール値（1,1,1が等倍）",
+        "example": "makeVector3(2.0f, 2.0f, 2.0f)"
+      }
+    },
+    "LookAt": {
+      "target": {
+        "type": "Vector3",
+        "desc": "向く先の座標",
+        "example": "makeVector3(10.0f, 0.0f, 10.0f)"
+      },
+      "up": {
+        "type": "Vector3",
+        "desc": "上方向ベクトル",
+        "example": "makeVector3(0.0f, 1.0f, 0.0f)"
+      }
+    },
+    "ChangeMotion": {
+      "MotionName": {
+        "type": "string",
+        "desc": "再生するモーション名",
+        "example": "\"walk\""
+      },
+      "BlendTimeMS": {
+        "type": "float",
+        "desc": "ブレンド時間（ミリ秒）",
+        "default": "0.0f",
+        "example": "500.0f"
+      }
+    },
+    "LoadMotion": {
+      "MotionName": {
+        "type": "string",
+        "desc": "登録するモーション名",
+        "example": "\"customMotion\""
+      },
+      "FileName": {
+        "type": "string",
+        "desc": "モーションファイルのパス/URL",
+        "example": "\"motions/walk.vmd\""
+      },
+      "Loop": {
+        "type": "bool",
+        "desc": "ループ再生するか",
+        "example": "true"
+      }
+    },
+    "SetShowNode": {
+      "nodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"NodeName\""
+      },
+      "flag": {
+        "type": "bool",
+        "desc": "表示するか（true=表示）",
+        "example": "true"
+      },
+      "CheckedChild": {
+        "type": "bool",
+        "desc": "子孫ノードも一括で変更するか",
+        "default": "false",
+        "example": "false"
+      }
+    },
+    "SetMaterialColor": {
+      "materialName": {
+        "type": "string",
+        "desc": "対象のマテリアル名",
+        "example": "\"MaterialName\""
+      },
+      "R": {
+        "type": "float",
+        "desc": "赤成分（0.0〜1.0）",
+        "example": "1.0f"
+      },
+      "G": {
+        "type": "float",
+        "desc": "緑成分（0.0〜1.0）",
+        "example": "0.0f"
+      },
+      "B": {
+        "type": "float",
+        "desc": "青成分（0.0〜1.0）",
+        "example": "0.0f"
+      },
+      "A": {
+        "type": "float",
+        "desc": "アルファ（透明度、0.0〜1.0）",
+        "example": "1.0f"
+      }
+    },
+    "SetAlpha": {
+      "Alpha": {
+        "type": "float",
+        "desc": "透明度（0.0=透明、1.0=不透明）",
+        "example": "0.5f"
+      }
+    },
+    "PlayVideo": {
+      "materialName": {
+        "type": "string",
+        "desc": "動画を再生するマテリアル名",
+        "example": "\"MaterialName\""
+      },
+      "url": {
+        "type": "string",
+        "desc": "動画のURL",
+        "example": "\"https://example.com/video.mp4\""
+      },
+      "loop": {
+        "type": "bool",
+        "desc": "ループ再生するか",
+        "example": "true"
+      }
+    },
+    "SwitchVideo": {
+      "materialName": {
+        "type": "string",
+        "desc": "動画を再生するマテリアル名",
+        "example": "\"MaterialName\""
+      },
+      "url": {
+        "type": "string",
+        "desc": "動画のURL",
+        "example": "\"https://example.com/video.mp4\""
+      },
+      "loop": {
+        "type": "bool",
+        "desc": "ループ再生するか",
+        "example": "true"
+      }
+    },
+    "SetProperty": {
+      "Key": {
+        "type": "string",
+        "desc": "プロパティのキー名",
+        "example": "\"score\""
+      },
+      "Value": {
+        "type": "string",
+        "desc": "プロパティの値",
+        "example": "\"100\""
+      }
+    },
+    "GetProperty": {
+      "Key": {
+        "type": "string",
+        "desc": "取得するプロパティのキー名",
+        "example": "\"score\""
+      }
+    },
+    "SetVolume": {
+      "Volume": {
+        "type": "float",
+        "desc": "音量（0.0〜1.0）",
+        "example": "0.5f"
+      }
+    },
+    "FacialEmoteFixed": {
+      "FacialEmoteType": {
+        "type": "int",
+        "desc": "表情タイプ定数",
+        "example": "FACIALEMOTETYPE_JOY",
+        "note": "NEUTRAL(通常), JOY(喜び), ANGRY(怒り), SORROW(悲しみ), FUN(楽しい)"
+      }
+    },
+    "ReplaceTexture": {
+      "MaterialName": {
+        "type": "string",
+        "desc": "対象のマテリアル名",
+        "example": "\"MaterialName\""
+      },
+      "FileName": {
+        "type": "string",
+        "desc": "テクスチャのURL",
+        "example": "\"https://example.com/texture.png\""
+      },
+      "Clamp": {
+        "type": "bool",
+        "desc": "テクスチャのクランプ設定",
+        "default": "true",
+        "example": "true"
+      },
+      "TextureUniformName": {
+        "type": "string",
+        "desc": "シェーダーのテクスチャユニフォーム名",
+        "default": "\"\"",
+        "example": "\"\""
+      }
+    },
+    "CallComponentMethod": {
+      "ComponentName": {
+        "type": "string",
+        "desc": "呼び出すコンポーネント名",
+        "example": "\"MyComponent\""
+      },
+      "MethodName": {
+        "type": "string",
+        "desc": "呼び出すメソッド名",
+        "example": "\"OnCustomEvent\""
+      },
+      "Params": {
+        "type": "string",
+        "desc": "渡すパラメータ",
+        "example": "\"param\""
+      }
+    },
+    "SetUVOffset": {
+      "materialName": {
+        "type": "string",
+        "desc": "対象のマテリアル名",
+        "example": "\"MaterialName\""
+      },
+      "u": {
+        "type": "float",
+        "desc": "U方向のオフセット",
+        "example": "0.5f"
+      },
+      "v": {
+        "type": "float",
+        "desc": "V方向のオフセット",
+        "example": "0.5f"
+      }
+    },
+    "SetUVScale": {
+      "materialName": {
+        "type": "string",
+        "desc": "対象のマテリアル名",
+        "example": "\"MaterialName\""
+      },
+      "u": {
+        "type": "float",
+        "desc": "U方向のスケール",
+        "example": "2.0f"
+      },
+      "v": {
+        "type": "float",
+        "desc": "V方向のスケール",
+        "example": "2.0f"
+      }
+    },
+    "SetEnableCollider": {
+      "nodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"ColliderName\""
+      },
+      "flag": {
+        "type": "bool",
+        "desc": "有効にするか（true=有効）",
+        "example": "true"
+      }
+    },
+    "SetPlayTime": {
+      "PlayTimeMS": {
+        "type": "float",
+        "desc": "再生位置（ミリ秒）",
+        "example": "1000.0f"
+      }
+    },
+    "SetLightColor": {
+      "Col": {
+        "type": "Vector3",
+        "desc": "ライトの色（RGB、各0.0〜1.0）",
+        "example": "makeVector3(1.0f, 0.5f, 0.0f)"
+      }
+    },
+    "SetLightRange": {
+      "range": {
+        "type": "float",
+        "desc": "照射範囲",
+        "example": "10.0f"
+      }
+    },
+    "ReplaceItem": {
+      "URL": {
+        "type": "string",
+        "desc": "差し替えるモデルのURL",
+        "example": "\"https://example.com/model.vrm\""
+      }
+    },
+    "SetTextPlaneColor": {
+      "Col": {
+        "type": "Vector3",
+        "desc": "文字色（RGB、各0.0〜1.0）",
+        "example": "makeVector3(1.0f, 1.0f, 1.0f)"
+      }
+    },
+    "SetTextPlaneFontSize": {
+      "fontSize": {
+        "type": "int",
+        "desc": "フォントサイズ",
+        "example": "24"
+      }
+    },
+    "SetPhysicsEnable": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"PhysicsNode\""
+      },
+      "Flag": {
+        "type": "bool",
+        "desc": "有効にするか（true=有効）",
+        "example": "true"
+      }
+    },
+    "SetPhysicsWorldPos": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"PhysicsNode\""
+      },
+      "Pos": {
+        "type": "Vector3",
+        "desc": "設定するワールド座標",
+        "example": "makeVector3(0.0f, 5.0f, 0.0f)"
+      }
+    },
+    "SetPhysicsWorldRotation": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"PhysicsNode\""
+      },
+      "EulerAngle": {
+        "type": "Vector3",
+        "desc": "設定するオイラー角",
+        "example": "makeVector3(0.0f, 90.0f, 0.0f)"
+      }
+    },
+    "AddPhysicsWorldForce": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"PhysicsNode\""
+      },
+      "Force": {
+        "type": "Vector3",
+        "desc": "加える力（ワールド座標系）",
+        "example": "makeVector3(0.0f, 100.0f, 0.0f)"
+      }
+    },
+    "AddPhysicsWorldVelocity": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"PhysicsNode\""
+      },
+      "Velocity": {
+        "type": "Vector3",
+        "desc": "加える速度（ワールド座標系）",
+        "example": "makeVector3(0.0f, 10.0f, 0.0f)"
+      }
+    },
+    "GetBonePos": {
+      "BoneName": {
+        "type": "string",
+        "desc": "対象のボーン名",
+        "example": "\"Head\""
+      }
+    },
+    "GetBoneWorldPos": {
+      "BoneName": {
+        "type": "string",
+        "desc": "対象のボーン名",
+        "example": "\"Head\""
+      }
+    },
+    "GetBoneRotate": {
+      "BoneName": {
+        "type": "string",
+        "desc": "対象のボーン名",
+        "example": "\"Head\""
+      }
+    },
+    "SetNodeLocalPos": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"NodeName\""
+      },
+      "Pos": {
+        "type": "Vector3",
+        "desc": "設定するローカル座標",
+        "example": "makeVector3(1.0f, 0.0f, 0.0f)"
+      }
+    },
+    "SetNodeWorldPos": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"NodeName\""
+      },
+      "Pos": {
+        "type": "Vector3",
+        "desc": "設定するワールド座標",
+        "example": "makeVector3(10.0f, 0.0f, 5.0f)"
+      }
+    },
+    "SetNodeLocalRotate": {
+      "nodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"NodeName\""
+      },
+      "rotate": {
+        "type": "Vector3",
+        "desc": "設定するオイラー角",
+        "example": "makeVector3(0.0f, 90.0f, 0.0f)"
+      }
+    },
+    "SetNodeLocalScale": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"NodeName\""
+      },
+      "Scale": {
+        "type": "Vector3",
+        "desc": "設定するスケール値",
+        "example": "makeVector3(2.0f, 2.0f, 2.0f)"
+      }
+    },
+    "SetPosNode": {
+      "NodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"NodeName\""
+      },
+      "Pos": {
+        "type": "Vector3",
+        "desc": "設定するワールド座標",
+        "example": "makeVector3(10.0f, 0.0f, 5.0f)"
+      }
+    },
+    "SetRotateNode": {
+      "nodeName": {
+        "type": "string",
+        "desc": "対象のノード名",
+        "example": "\"NodeName\""
+      },
+      "rotate": {
+        "type": "Vector3",
+        "desc": "設定するオイラー角（ワールド）",
+        "example": "makeVector3(0.0f, 90.0f, 0.0f)"
+      }
+    },
+    "SetTextPlaneTextureSize": {
+      "X": {
+        "type": "int",
+        "desc": "テクスチャの横幅（ピクセル）",
+        "example": "512"
+      },
+      "Y": {
+        "type": "int",
+        "desc": "テクスチャの縦幅（ピクセル）",
+        "example": "256"
+      }
+    },
+    "SetTextPlaneAlignment": {
+      "HSAlign": {
+        "type": "int",
+        "desc": "配置設定（hsCommonDialogSetTextAlignment()と同じ定数）",
+        "example": "HS_DIALOG_TEXT_ALIGN_CENTER"
+      }
+    },
+    "SetTextPlaneWrap": {
+      "Wrap": {
+        "type": "bool",
+        "desc": "折り返しを有効にするか",
+        "example": "true"
+      }
+    },
+    "SetTextPlaneCharacterSpace": {
+      "Pixels": {
+        "type": "int",
+        "desc": "文字間隔（ピクセル）",
+        "example": "2"
+      }
+    },
+    "SetTextPlaneLineSpace": {
+      "Pixels": {
+        "type": "int",
+        "desc": "行間隔（ピクセル）",
+        "example": "4"
+      }
+    },
+    "SetPlaneZBias": {
+      "ZBias": {
+        "type": "float",
+        "desc": "深度バイアス値（大きいほど手前に描画）",
+        "example": "0.1f"
+      }
+    },
+    "SetPropertyWithoutNotify": {
+      "Key": {
+        "type": "string",
+        "desc": "プロパティのキー名",
+        "example": "\"score\""
+      },
+      "Value": {
+        "type": "string",
+        "desc": "プロパティの値",
+        "example": "\"100\""
+      }
+    },
+    "SetOverridesProperty": {
+      "Key": {
+        "type": "string",
+        "desc": "プロパティのキー名",
+        "example": "\"overrideKey\""
+      },
+      "Value": {
+        "type": "string",
+        "desc": "プロパティの値",
+        "example": "\"overrideValue\""
+      },
+      "ItemName": {
+        "type": "string",
+        "desc": "対象のItem名（不要な場合は空文字）",
+        "example": "\"\""
+      }
+    },
+    "ReplaceBackupTexture": {
+      "MaterialName": {
+        "type": "string",
+        "desc": "対象のマテリアル名",
+        "example": "\"MaterialName\""
+      }
+    },
+    "SendMessage": {
+      "message": {
+        "type": "HSMessage",
+        "desc": "送信するメッセージオブジェクト",
+        "example": "hsCreateMessage(\"CustomMessage\")"
+      }
+    }
+  }
+}
