@@ -14,7 +14,7 @@
     - Fixed an issue where VKC Node Collider was not automatically attached during build, which could cause nodes with VKC Attribute Action Trigger to stop responding to clicks
 
 - **HPKPacker.exe**
-    - Fixed an issue where HPKPacker.exe was not included in the external SDK package
+    - Fixed an issue where HPKPacker.exe was not included
 
 - **VKC Attribute Script > HeliScript File Name and Component Name**
     - Fixed issues that occurred when the HeliScript file name and component name were different, such as HeliScript becoming none or an unintended component name being entered when adding a new component

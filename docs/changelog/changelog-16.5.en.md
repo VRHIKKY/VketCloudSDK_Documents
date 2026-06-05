@@ -1,8 +1,8 @@
 # SDK Manual Change Log - Ver 16.5
 
-## Updated June 4, 2026
+## Updated June 5, 2026
 
-## June 4, 2026 - Edited Pages
+## June 5, 2026 - Edited Pages
 
 - Release Notes
     - [v16.5](../releasenote/releasenote-16.5.en.md)

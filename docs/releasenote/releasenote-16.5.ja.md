@@ -14,7 +14,7 @@
     - ビルド時にVKC Node Colliderが自動でアタッチされず、VKC Attribute Action Triggerを設定したノードをクリックしても反応しない場合がある問題を修正
 
 - **HPKPacker.exe**
-    - 社外版SDKにHPKPacker.exeが含まれていない問題を修正
+    - HPKPacker.exeが含まれていない問題を修正
 
 - **VKC Attribute Script > HeliScriptファイル名とコンポーネント名**
     - HeliScriptファイル名とコンポーネント名が異なる場合、HeliScriptがnoneになる、または新規追加時に意図しないコンポーネント名が入力される問題を修正
