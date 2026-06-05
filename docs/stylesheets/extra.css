@@ -455,3 +455,26 @@
         height: 20px;
     }
 }
+
+/* "HS Dictionary" nav item button styling (Forced) */
+html body .md-nav .md-nav__item a.md-nav__link[href*="HSDictionaryPage"] {
+    background-color: #0073e6 !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    padding: 0.6rem 1rem !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    margin: 1rem 0 !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 6px rgba(0, 115, 230, 0.2) !important;
+    display: block !important;
+    letter-spacing: 0.5px !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+html body .md-nav .md-nav__item a.md-nav__link[href*="HSDictionaryPage"]:hover {
+    background-color: #005ce6 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 12px rgba(0, 115, 230, 0.3) !important;
+    color: #ffffff !important;
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VKC Item メソッドリファレンス</title>
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- スタイルシート -->
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- ヘッダー -->
+    <div class="header">
+      <div class="header-left">
+        <a href="../../" class="header-home" title="トップページへ">
+          <span class="material-icons">home</span>
+        </a>
+        <h1><span class="material-icons">menu_book</span> <span data-i18n="siteTitle">VKC Item メソッドリファレンス</span></h1>
+      </div>
+      <div class="header-right">
+        <!-- お気に入りトグル -->
+        <button class="favorites-toggle" id="favorites-toggle">
+          <span class="material-icons">bookmark</span>
+          <span data-i18n="favorites">お気に入り</span>
+          <span class="favorites-count" id="favorites-count">0</span>
+        </button>
+        <!-- マトリクス表示ボタン -->
+        <button class="matrix-toggle" id="matrix-toggle">
+          <span class="material-icons">grid_on</span>
+          <span data-i18n="matrix">対応表</span>
+        </button>
+        <!-- 言語切替トグル -->
+        <button class="lang-toggle" id="lang-toggle" title="日本語 / English">
+          <span class="material-icons">translate</span>
+          <span class="lang-label" id="lang-label">JP</span>
+        </button>
+        <!-- ダークモードトグル -->
+        <div class="theme-toggle" id="theme-toggle">
+          <span class="material-icons">light_mode</span>
+          <div class="theme-toggle-switch"></div>
+          <span class="material-icons">dark_mode</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ItemType タブフィルター -->
+    <div class="itemtype-tabs-container">
+      <div class="itemtype-tabs-header">
+        <span class="itemtype-label">
+          <span class="material-icons">widgets</span>
+          ItemType
+        </span>
+      </div>
+      <div class="itemtype-tabs" id="component-filters"></div>
+      <div class="itemtype-content">
+        <!-- カテゴリーフィルター -->
+        <div class="filter-section">
+          <div class="filter-label">
+            <span class="material-icons">category</span> <span data-i18n="functionType">関数の種類</span>
+          </div>
+          <div class="filter-row" id="category-filters"></div>
+          <!-- リセットボタン -->
+          <div class="filter-controls">
+            <button class="reset-btn" id="reset-filters">
+              <span class="material-icons">refresh</span>
+              <span data-i18n="reset">リセット</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 検索・ソート統合エリア -->
+    <div class="search-sort-area">
+      <div class="search-section">
+        <div class="search-input-container">
+          <span class="material-icons search-icon">search</span>
+          <input type="text" class="search-box" id="search" placeholder="検索..." data-i18n-placeholder="searchPlaceholder">
+        </div>
+        <div class="search-targets">
+          <span class="material-icons">info_outline</span>
+          <span data-i18n="searchHint">メソッド名・説明・日本語キーワード対応</span>
+        </div>
+      </div>
+      <div class="sort-section">
+        <select class="sort-select" id="sort-select">
+          <option value="name-asc" data-i18n="sortNameAsc">名前 A→Z</option>
+          <option value="name-desc" data-i18n="sortNameDesc">名前 Z→A</option>
+          <option value="category" data-i18n="sortCategory">カテゴリー順</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- フィルタ状態・件数表示 -->
+    <div class="results-header">
+      <div class="active-filters" id="active-filters"></div>
+      <div class="stats" id="stats"></div>
+    </div>
+
+    <!-- メソッドグリッド -->
+    <div class="method-grid" id="method-grid"></div>
+
+    <!-- 検索結果なし -->
+    <div class="no-results" id="no-results" style="display:none;">
+      <span class="material-icons">search_off</span>
+      <div data-i18n="noResults">条件に一致するメソッドがありません</div>
+    </div>
+
+    <!-- よく使うメソッド（ページ下部） -->
+    <div class="frequent-section" id="frequent-section">
+      <div class="frequent-header">
+        <span class="material-icons">trending_up</span>
+        <span data-i18n="frequentMethods">よく使うメソッド</span>
+      </div>
+      <div class="frequent-methods" id="frequent-methods"></div>
+    </div>
+
+    <!-- 閲覧履歴（ページ下部） -->
+    <div class="history-section" id="history-section" style="display:none;">
+      <div class="history-header">
+        <div class="history-title">
+          <span class="material-icons">history</span>
+          <span data-i18n="recentMethods">最近見たメソッド</span>
+        </div>
+        <button class="history-clear" id="history-clear">
+          <span class="material-icons">delete_outline</span>
+          <span data-i18n="clear">クリア</span>
+        </button>
+      </div>
+      <div class="history-methods" id="history-methods"></div>
+    </div>
+
+    <!-- 補足トピック -->
+    <div class="topics-section" id="topics-section">
+      <div class="topics-header">
+        <span class="material-icons">school</span>
+        <span data-i18n="topics">補足トピック</span>
+        <span class="topics-subtitle" data-i18n="topicsSubtitle">VKC開発で知っておくと便利な知識</span>
+      </div>
+      <div class="topics-chips" id="topics-chips"></div>
+    </div>
+  </div>
+
+  <!-- ツールチップ -->
+  <div class="tooltip" id="tooltip">
+    <div class="tooltip-title" id="tooltip-title"></div>
+    <div class="tooltip-code" id="tooltip-code"></div>
+    <div class="tooltip-hint">
+      <span class="material-icons">lightbulb</span> <span data-i18n="tooltipHint">クリックで詳細表示＆コピー</span>
+    </div>
+  </div>
+
+  <!-- ポップアップ -->
+  <div class="popup-overlay" id="popup-overlay">
+    <div class="popup" onclick="event.stopPropagation()">
+      <div class="popup-header">
+        <div class="popup-header-main">
+          <div class="popup-title-row">
+            <span class="popup-category-icon material-icons" id="popup-category-icon"></span>
+            <span class="popup-title" id="popup-title"></span>
+            <span class="popup-has-code" id="popup-has-code" style="display:none;">
+              <span class="material-icons">code</span>
+              <span data-i18n="hasSample">サンプルあり</span>
+            </span>
+          </div>
+          <div class="popup-sig" id="popup-sig"></div>
+        </div>
+        <div class="popup-header-actions">
+          <button class="popup-favorite-btn" id="popup-favorite" title="お気に入り">
+            <span class="material-icons">bookmark_border</span>
+          </button>
+          <a href="#" class="popup-doc-link" id="popup-doc-link" target="_blank" rel="noopener noreferrer" title="公式ドキュメント">
+            <span class="material-icons">open_in_new</span>
+          </a>
+          <button class="popup-close" id="popup-close">
+            <span class="material-icons">close</span>
+          </button>
+        </div>
+      </div>
+      <div class="popup-body">
+        <!-- 用途・説明 -->
+        <div class="popup-section popup-desc-section">
+          <div class="popup-purpose" id="popup-purpose"></div>
+          <div class="popup-detail" id="popup-detail"></div>
+          <!-- 警告・注意点 -->
+          <div class="popup-warning" id="popup-warning" style="display:none;"></div>
+        </div>
+        <!-- 引数詳細 -->
+        <div class="popup-section" id="popup-args-section" style="display:none;">
+          <div class="popup-section-title">
+            <span class="material-icons">tune</span>
+            <span data-i18n="arguments">引数</span>
+          </div>
+          <div class="popup-args" id="popup-args"></div>
+        </div>
+        <!-- サンプルコード -->
+        <div class="popup-section">
+          <div class="popup-section-title">
+            <span class="material-icons">code</span>
+            <span data-i18n="sampleCode">サンプルコード</span>
+            <button class="popup-code-copy" id="copy-code" title="コードをコピー">
+              <span class="material-icons">content_copy</span>
+            </button>
+          </div>
+          <div class="popup-code" id="popup-code"></div>
+        </div>
+        <!-- 関連メソッド -->
+        <div class="popup-section" id="popup-related-section" style="display:none;">
+          <div class="popup-section-title">
+            <span class="material-icons">link</span>
+            <span data-i18n="relatedMethods">関連メソッド</span>
+          </div>
+          <div class="popup-related" id="popup-related"></div>
+        </div>
+        <!-- 関連知識（トピック） -->
+        <div class="popup-section popup-knowledge-section" id="popup-knowledge-section" style="display:none;">
+          <div class="popup-section-title popup-knowledge-toggle" id="popup-knowledge-toggle">
+            <span class="material-icons">school</span>
+            <span data-i18n="relatedKnowledge">関連知識</span>
+            <span class="material-icons popup-knowledge-arrow">expand_more</span>
+          </div>
+          <div class="popup-knowledge-content" id="popup-knowledge-content"></div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <button class="popup-btn popup-btn-primary" id="share-url">
+          <span class="material-icons">link</span> <span data-i18n="copyUrl">URLをコピー</span>
+        </button>
+        <button class="popup-btn popup-btn-tertiary" id="copy-method">
+          <span class="material-icons">content_copy</span> <span data-i18n="copyMethod">関数名をコピー</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- マトリクス表示 -->
+  <div class="matrix-overlay" id="matrix-overlay">
+    <div class="matrix-container">
+      <div class="matrix-header">
+        <div class="matrix-title">
+          <span class="material-icons">grid_on</span>
+          <span data-i18n="matrixTitle">ItemType対応表</span>
+        </div>
+        <button class="matrix-close" id="matrix-close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="matrix-table-wrapper">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th data-i18n="methodColumn">メソッド</th>
+              <th>Activity</th>
+              <th>AreaCollider</th>
+              <th>Audio</th>
+              <th>BackgroundTexture</th>
+              <th>Camera</th>
+              <th>Field</th>
+              <th>Object</th>
+              <th>Particle</th>
+              <th>Plane</th>
+              <th>TextPlane</th>
+            </tr>
+          </thead>
+          <tbody id="matrix-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- トピックモーダル -->
+  <div class="topic-modal-overlay" id="topic-modal-overlay">
+    <div class="topic-modal" onclick="event.stopPropagation()">
+      <div class="topic-modal-header">
+        <div class="topic-modal-title">
+          <span class="material-icons" id="topic-modal-icon">school</span>
+          <span id="topic-modal-title-text"></span>
+        </div>
+        <button class="topic-modal-close" id="topic-modal-close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="topic-modal-body" id="topic-modal-body"></div>
+      <div class="topic-modal-footer">
+        <div class="topic-modal-related">
+          <span class="topic-related-label">
+            <span class="material-icons">link</span>
+            <span data-i18n="relatedMethodsColon">関連メソッド:</span>
+          </span>
+          <div class="topic-related-methods" id="topic-modal-methods"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- コピー成功通知 -->
+  <div class="copy-success" id="copy-success">
+    <span class="material-icons">check</span> <span data-i18n="copied">コピーしました！</span>
+  </div>
+
+  <!-- キーボードショートカットヘルプ -->
+  <div class="keyboard-help">
+    <div class="keyboard-help-item">
+      <kbd>Esc</kbd>
+      <span data-i18n="kbClose">閉じる</span>
+    </div>
+    <div class="keyboard-help-item">
+      <kbd>Ctrl</kbd>+<kbd>R</kbd>
+      <span data-i18n="kbReset">リセット</span>
+    </div>
+    <div class="keyboard-help-item">
+      <kbd>Ctrl</kbd>+<kbd>D</kbd>
+      <span data-i18n="kbDarkMode">ダークモード</span>
+    </div>
+    <div class="keyboard-help-item">
+      <kbd>Ctrl</kbd>+<kbd>M</kbd>
+      <span data-i18n="kbMatrix">対応表</span>
+    </div>
+  </div>
+
+  <!-- JavaScript: 共通コア → データローダー → アプリケーションロジック -->
+  <script src="../../shared/core.js"></script>
+  <script src="../../shared/data-loader.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

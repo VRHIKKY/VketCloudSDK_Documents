@@ -1,0 +1,277 @@
+{
+  "player": {
+    "className": "Player",
+    "categories": {
+      "utility": {
+        "name": "ユーティリティ関数",
+        "nameEn": "Utility Functions",
+        "icon": "build",
+        "methods": ["hsPlayerGet", "hsPlayerGetByID", "hsPlayerSetDrawableSelf"]
+      },
+      "basicInfo": {
+        "name": "基本情報",
+        "nameEn": "Basic Info",
+        "icon": "info",
+        "methods": ["GetID", "GetName", "GetPhysicsID", "GetHeadHeight", "GetCustomState"]
+      },
+      "position": {
+        "name": "位置・移動",
+        "nameEn": "Position/Movement",
+        "icon": "open_with",
+        "methods": ["SetPos", "GetPos", "SetRotate", "GetRotate", "SetJumpVelocity", "ResetVelocity"]
+      },
+      "moveSpeed": {
+        "name": "移動速度",
+        "nameEn": "Movement Speed",
+        "icon": "speed",
+        "methods": ["SetMoveSpeed", "GetMoveSpeed", "SetMoveSpeedupRatio", "GetMoveSpeedupRatio"]
+      },
+      "control": {
+        "name": "操作制御",
+        "nameEn": "Control",
+        "icon": "gamepad",
+        "methods": ["SetControlEnabled"]
+      },
+      "motion": {
+        "name": "モーション",
+        "nameEn": "Motion",
+        "icon": "directions_run",
+        "methods": ["Emote", "SetEmotion", "ChangeMotion", "SetNextMotion", "ChangeActivityMotion", "SetNextActivityMotion"]
+      },
+      "avatar": {
+        "name": "アバター",
+        "nameEn": "Avatar",
+        "icon": "person",
+        "methods": ["SetPresetAvatar", "GetPresetAvatar"]
+      },
+      "bone": {
+        "name": "ボーン",
+        "nameEn": "Bone",
+        "icon": "accessibility",
+        "methods": ["GetBonePos", "GetBoneWorldPos", "GetBoneRotate"]
+      },
+      "ui": {
+        "name": "UI",
+        "nameEn": "UI",
+        "icon": "chat",
+        "methods": ["ShowChatBalloon"]
+      }
+    }
+  },
+  "component": {
+    "className": "Component",
+    "categories": {
+      "lifecycle": {
+        "name": "ライフサイクル",
+        "nameEn": "Lifecycle",
+        "icon": "autorenew",
+        "description": "コンポーネントのライフサイクルに関連するコールバック",
+        "descriptionEn": "Callbacks related to component lifecycle",
+        "callbacks": ["Constructor", "OnLoaded", "OnDelayLayersLoaded", "Update"]
+      },
+      "browser": {
+        "name": "ブラウザ",
+        "nameEn": "Browser",
+        "icon": "web",
+        "description": "ブラウザタブやページの状態変化に関連するコールバック",
+        "descriptionEn": "Callbacks related to browser tab and page state changes",
+        "callbacks": ["OnWindowActivate", "OnBeforeUnload", "OnUnload"]
+      },
+      "click": {
+        "name": "クリック",
+        "nameEn": "Click",
+        "icon": "mouse",
+        "description": "クリック操作に関連するコールバック",
+        "descriptionEn": "Callbacks related to click operations",
+        "callbacks": ["OnClickNode", "OnClickEmpty", "OnLongPressedEmpty"]
+      },
+      "collision": {
+        "name": "コリジョン",
+        "nameEn": "Collision",
+        "icon": "blur_on",
+        "description": "エリアコライダーやアイテム衝突に関連するコールバック",
+        "descriptionEn": "Callbacks related to area colliders and item collisions",
+        "callbacks": ["OnEnterAreaCollider", "OnLeaveAreaCollider", "OnItemTriggerEnter", "OnItemTriggerLeave", "OnItemCollisionEnter", "OnItemCollisionLeave"]
+      },
+      "item": {
+        "name": "アイテム",
+        "nameEn": "Item",
+        "icon": "inventory_2",
+        "description": "アイテムのクローン生成・破棄に関連するコールバック",
+        "descriptionEn": "Callbacks related to item clone creation and destruction",
+        "callbacks": ["OnItemCreatedClone", "OnItemDestroyedClone"]
+      },
+      "selection": {
+        "name": "選択",
+        "nameEn": "Selection",
+        "icon": "select_all",
+        "description": "ノードやアバターの選択解除に関連するコールバック",
+        "descriptionEn": "Callbacks related to node and avatar deselection",
+        "callbacks": ["OnUnselectNode", "OnUnselectAvatar"]
+      },
+      "screen": {
+        "name": "スクリーン",
+        "nameEn": "Screen",
+        "icon": "aspect_ratio",
+        "description": "スクリーンサイズ変更に関連するコールバック",
+        "descriptionEn": "Callbacks related to screen size changes",
+        "callbacks": ["OnResize"]
+      },
+      "network": {
+        "name": "ネットワーク",
+        "nameEn": "Network",
+        "icon": "wifi",
+        "description": "カスタムデータの送受信に関連するコールバック",
+        "descriptionEn": "Callbacks related to custom data transmission and reception",
+        "callbacks": ["OnReceiveCustomState", "OnReceiveCustomData"]
+      },
+      "gui": {
+        "name": "GUI",
+        "nameEn": "GUI",
+        "icon": "dashboard",
+        "description": "GUIボタンやスライダーに関連するコールバック",
+        "descriptionEn": "Callbacks related to GUI buttons and sliders",
+        "callbacks": ["OnClickedButton", "OnSliderRateChanged"]
+      },
+      "physics": {
+        "name": "物理",
+        "nameEn": "Physics",
+        "icon": "science",
+        "description": "物理衝突判定に関連するコールバック",
+        "descriptionEn": "Callbacks related to physics collision detection",
+        "callbacks": ["OnPhysicsCollision"]
+      },
+      "view": {
+        "name": "視野",
+        "nameEn": "View",
+        "icon": "visibility",
+        "description": "視野内コライダー判定に関連するコールバック",
+        "descriptionEn": "Callbacks related to in-view collider detection",
+        "callbacks": ["OnEnterViewCollider", "OnLeaveViewCollider"]
+      },
+      "chat": {
+        "name": "チャット",
+        "nameEn": "Chat",
+        "icon": "chat_bubble",
+        "description": "テキストチャットに関連するコールバック",
+        "descriptionEn": "Callbacks related to text chat",
+        "callbacks": ["OnReceiveTextChat"]
+      },
+      "player": {
+        "name": "プレイヤー",
+        "nameEn": "Player",
+        "icon": "person",
+        "description": "プレイヤーやアバターに関連するコールバック",
+        "descriptionEn": "Callbacks related to players and avatars",
+        "callbacks": ["OnClickedAvatar", "OnEmoteChanged", "OnMotionChanged"]
+      },
+      "video": {
+        "name": "動画",
+        "nameEn": "Video",
+        "icon": "video_library",
+        "description": "動画再生に関連するコールバック",
+        "descriptionEn": "Callbacks related to video playback",
+        "callbacks": ["OnPlayVideo", "OnPauseVideo", "OnResumeVideo", "OnStopVideo"]
+      },
+      "property": {
+        "name": "プロパティ",
+        "nameEn": "Property",
+        "icon": "settings",
+        "description": "アイテムプロパティの変更に関連するコールバック",
+        "descriptionEn": "Callbacks related to item property changes",
+        "callbacks": ["OnChangedProperty", "OnRemovedProperty"]
+      },
+      "message": {
+        "name": "メッセージ",
+        "nameEn": "Message",
+        "icon": "mail",
+        "description": "メッセージ受信に関連するコールバック",
+        "descriptionEn": "Callbacks related to message reception",
+        "callbacks": ["OnReceiveMessage"]
+      }
+    }
+  },
+  "layer": {
+    "className": "Layer",
+    "categories": {
+      "utility": {
+        "name": "ユーティリティ関数",
+        "nameEn": "Utility Functions",
+        "icon": "build",
+        "description": "Layerインスタンスを取得するためのグローバル関数",
+        "descriptionEn": "Global functions for obtaining Layer instances",
+        "methods": ["hsLayerGetPortrait", "hsLayerGetLandscape"]
+      },
+      "basic": {
+        "name": "基本メソッド",
+        "nameEn": "Basic Methods",
+        "icon": "layers",
+        "description": "Layerの基本的な情報取得・操作メソッド",
+        "descriptionEn": "Basic methods for getting Layer information and operations",
+        "methods": ["ToString", "GetName", "GetGUIElement", "CallComponentMethod", "SetShow", "IsShow", "StartLayerAnimation"]
+      },
+      "guiCommon": {
+        "name": "GUI共通操作",
+        "nameEn": "GUI Common Operations",
+        "icon": "widgets",
+        "description": "複数のGUIタイプで使用可能な汎用操作メソッド",
+        "descriptionEn": "General operation methods available for multiple GUI types",
+        "supportedTypes": ["button", "image", "slider", "text"],
+        "methods": ["SetGUIShow", "SetGUIPos", "GetGUIPos", "SetGUISize", "GetGUISize", "SetGUIAngle", "GetGUIAngle", "StartGUIAnimation", "GetToggleState"]
+      },
+      "guiText": {
+        "name": "テキスト操作",
+        "nameEn": "Text Operations",
+        "icon": "text_fields",
+        "description": "テキストGUI要素専用の操作メソッド",
+        "descriptionEn": "Operation methods exclusive to text GUI elements",
+        "supportedTypes": ["text"],
+        "methods": ["CanvasSetGUIText", "CanvasSetGUITextAlignment", "CanvasSetGUITextOverflowWrap", "CanvasSetGUITextURLClickable"]
+      },
+      "guiImage": {
+        "name": "画像操作",
+        "nameEn": "Image Operations",
+        "icon": "image",
+        "description": "画像を設定可能なGUI要素の操作メソッド",
+        "descriptionEn": "Operation methods for GUI elements that can display images",
+        "supportedTypes": ["button", "image"],
+        "methods": ["CanvasSetGUIImage"]
+      },
+      "guiSlider": {
+        "name": "スライダー操作",
+        "nameEn": "Slider Operations",
+        "icon": "linear_scale",
+        "description": "スライダーGUI要素専用の操作メソッド",
+        "descriptionEn": "Operation methods exclusive to slider GUI elements",
+        "supportedTypes": ["slider"],
+        "methods": ["SetSliderRate", "SetSliderRateWithoutNotify", "GetSliderRate"]
+      }
+    },
+    "guiTypes": {
+      "button": {
+        "name": "ボタン",
+        "nameEn": "Button",
+        "icon": "smart_button",
+        "supportedMethods": ["SetGUIShow", "SetGUIPos", "GetGUIPos", "SetGUISize", "GetGUISize", "SetGUIAngle", "GetGUIAngle", "CanvasSetGUIImage", "StartGUIAnimation", "GetToggleState"]
+      },
+      "image": {
+        "name": "画像",
+        "nameEn": "Image",
+        "icon": "image",
+        "supportedMethods": ["SetGUIShow", "SetGUIPos", "GetGUIPos", "SetGUISize", "GetGUISize", "SetGUIAngle", "GetGUIAngle", "CanvasSetGUIImage", "StartGUIAnimation", "GetToggleState"]
+      },
+      "slider": {
+        "name": "スライダー",
+        "nameEn": "Slider",
+        "icon": "linear_scale",
+        "supportedMethods": ["SetGUIShow", "SetGUIPos", "GetGUIPos", "SetGUISize", "GetGUISize", "SetGUIAngle", "GetGUIAngle", "StartGUIAnimation", "GetToggleState", "SetSliderRate", "SetSliderRateWithoutNotify", "GetSliderRate"]
+      },
+      "text": {
+        "name": "テキスト",
+        "nameEn": "Text",
+        "icon": "text_fields",
+        "supportedMethods": ["SetGUIShow", "SetGUIPos", "GetGUIPos", "SetGUISize", "GetGUISize", "SetGUIAngle", "GetGUIAngle", "CanvasSetGUIText", "CanvasSetGUITextAlignment", "CanvasSetGUITextOverflowWrap", "CanvasSetGUITextURLClickable", "StartGUIAnimation", "GetToggleState"]
+      }
+    }
+  }
+}

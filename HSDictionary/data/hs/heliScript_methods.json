@@ -1,0 +1,852 @@
+{
+  "player": {
+    "className": "Player",
+    "classDescription": "プレイヤーを操作するためのクラス",
+    "classDescriptionEn": "Class for controlling players",
+    "docUrl": "hs_class_player.md",
+    "utilityFunctions": {
+      "hsPlayerGet": {
+        "sig": "Player hsPlayerGet()",
+        "desc": "自分自身のPlayerインスタンスを取得する",
+        "descEn": "Get your own Player instance",
+        "docUrl": "hs_class_player.md",
+        "type": "utility"
+      },
+      "hsPlayerGetByID": {
+        "sig": "Player hsPlayerGetByID(string PlayerID)",
+        "desc": "PlayerIDを指定して他のプレイヤーのPlayerインスタンスを取得する",
+        "descEn": "Get another player's Player instance by specifying PlayerID",
+        "docUrl": "hs_class_player.md",
+        "type": "utility"
+      },
+      "hsPlayerSetDrawableSelf": {
+        "sig": "void hsPlayerSetDrawableSelf(bool Flag)",
+        "desc": "自分自身を描画するかどうかを指定する",
+        "descEn": "Specify whether to draw yourself",
+        "docUrl": "hs_class_player.md",
+        "type": "utility"
+      }
+    },
+    "methods": {
+      "GetID": {
+        "sig": "string GetID()",
+        "desc": "プレイヤーを識別するIDを取得する",
+        "descEn": "Get player identification ID",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetControlEnabled": {
+        "sig": "bool SetControlEnabled(bool Enabled)",
+        "desc": "プレイヤーの操作許可を設定します。falseに設定すると、WASDキーによる移動、マウスドラッグによるカメラ回転などがおこなえなくなります",
+        "descEn": "Set player control permission. When set to false, WASD movement and mouse drag camera rotation are disabled",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetHeadHeight": {
+        "sig": "float GetHeadHeight()",
+        "desc": "アバターの身長を取得する",
+        "descEn": "Get avatar height",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetCustomState": {
+        "sig": "string GetCustomState(string CustomStateName)",
+        "desc": "カスタムステートを任意のタイミングで取得する",
+        "descEn": "Get custom state at any timing",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetPos": {
+        "sig": "void SetPos(Vector3 pos, bool CameraRotate = true)",
+        "desc": "座標を設定する。TPSモードかつCameraRotateがfalseの場合はカメラ回転はおこなわれません",
+        "descEn": "Set position. In TPS mode with CameraRotate=false, camera rotation is not performed",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetPos": {
+        "sig": "Vector3 GetPos()",
+        "desc": "座標を取得する",
+        "descEn": "Get position",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetRotate": {
+        "sig": "void SetRotate(float angle)",
+        "desc": "プレイヤーの向きを設定する",
+        "descEn": "Set player direction",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetRotate": {
+        "sig": "float GetRotate()",
+        "desc": "プレイヤーの向きを取得する",
+        "descEn": "Get player direction",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetJumpVelocity": {
+        "sig": "void SetJumpVelocity(float JumpVelocity)",
+        "desc": "プレイヤーのジャンプ時の初速度を設定します。デフォルト値はPlayer Settingsにて設定した数値が参照されます",
+        "descEn": "Set player's initial jump velocity. Default value is referenced from Player Settings",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetName": {
+        "sig": "string GetName()",
+        "desc": "プレイヤーの名前を取得する",
+        "descEn": "Get player name",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetPhysicsID": {
+        "sig": "int GetPhysicsID()",
+        "desc": "PhysicsIDを取得する",
+        "descEn": "Get PhysicsID",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "Emote": {
+        "sig": "bool Emote(int EmoteIndex)",
+        "desc": "エモートを再生する",
+        "descEn": "Play emote",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetEmotion": {
+        "sig": "bool SetEmotion(int Index, string FileName, bool Loop, string ActionList)",
+        "desc": "エモーションを読み込む。ActionListの文字列はSceneファイルに記述する\"actions\":{}の文字列を渡します",
+        "descEn": "Load emotion. ActionList string should be the \"actions\":{} string from Scene file",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "ChangeMotion": {
+        "sig": "bool ChangeMotion(string MotionName)",
+        "desc": "モーションを再生する",
+        "descEn": "Play motion",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetNextMotion": {
+        "sig": "bool SetNextMotion(string MotionName)",
+        "desc": "次に再生するモーションを設定する",
+        "descEn": "Set next motion to play",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "ChangeActivityMotion": {
+        "sig": "bool ChangeActivityMotion(string MotionName)",
+        "desc": "アクティビティファイルで定義されたモーションを再生する",
+        "descEn": "Play motion defined in activity file",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetNextActivityMotion": {
+        "sig": "bool SetNextActivityMotion(string MotionName)",
+        "desc": "次に再生するアクティビティファイルで定義されたモーションを設定する",
+        "descEn": "Set next motion defined in activity file to play",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "ShowChatBalloon": {
+        "sig": "bool ShowChatBalloon(string Text)",
+        "desc": "チャットバルーンに指定のテキストを表示します",
+        "descEn": "Display specified text in chat balloon",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetMoveSpeed": {
+        "sig": "bool SetMoveSpeed(float MoveSpeed)",
+        "desc": "移動速度を設定します。単位はm/sです",
+        "descEn": "Set movement speed. Unit is m/s",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetMoveSpeed": {
+        "sig": "float GetMoveSpeed()",
+        "desc": "移動速度を取得します。単位はm/sです",
+        "descEn": "Get movement speed. Unit is m/s",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetMoveSpeedupRatio": {
+        "sig": "bool SetMoveSpeedupRatio(float MoveSpeedupRatio)",
+        "desc": "高速移動の倍率を設定します",
+        "descEn": "Set speedup ratio for fast movement",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetMoveSpeedupRatio": {
+        "sig": "float GetMoveSpeedupRatio()",
+        "desc": "高速移動の倍率を取得します",
+        "descEn": "Get speedup ratio for fast movement",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "ResetVelocity": {
+        "sig": "void ResetVelocity()",
+        "desc": "プレイヤーの速度をリセットします",
+        "descEn": "Reset player velocity",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "SetPresetAvatar": {
+        "sig": "bool SetPresetAvatar(int AvatarIndex)",
+        "desc": "プリセットアバターに切り替えます。自分自身のPlayerオブジェクトにのみ有効です",
+        "descEn": "Switch to preset avatar. Only valid for your own Player object",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetPresetAvatar": {
+        "sig": "int GetPresetAvatar()",
+        "desc": "プリセットアバターのインデックスを取得します。マイアバターを使用していたり、Playerオブジェクトが無効な状態の場合は-1が返ります",
+        "descEn": "Get preset avatar index. Returns -1 when using My Avatar or if Player object is invalid",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetBonePos": {
+        "sig": "Vector3 GetBonePos(string BoneName)",
+        "desc": "プレイヤーのボーンのローカル座標を返します。存在しないボーン名を指定した場合、Vector3(0,0,0)が返ります",
+        "descEn": "Get player bone's local position. Returns Vector3(0,0,0) if bone name doesn't exist",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetBoneWorldPos": {
+        "sig": "Vector3 GetBoneWorldPos(string BoneName)",
+        "desc": "プレイヤーのボーンのワールド座標を返します。存在しないボーン名を指定した場合、Vector3(0,0,0)が返ります",
+        "descEn": "Get player bone's world position. Returns Vector3(0,0,0) if bone name doesn't exist",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      },
+      "GetBoneRotate": {
+        "sig": "Quaternion GetBoneRotate(string BoneName)",
+        "desc": "プレイヤーのボーンのQuaternionを返します。存在しないボーン名を指定した場合、Quaternion(0,0,0,0)が返ります",
+        "descEn": "Get player bone's Quaternion rotation. Returns Quaternion(0,0,0,0) if bone name doesn't exist",
+        "docUrl": "hs_class_player.md",
+        "type": "method"
+      }
+    }
+  },
+  "component": {
+    "className": "Component",
+    "classDescription": "コンポーネントのコールバック関数群",
+    "classDescriptionEn": "Component callback functions",
+    "docUrl": "hs_component.md",
+    "callbacks": {
+      "Constructor": {
+        "sig": "public ComponentName()",
+        "desc": "コンポーネントオブジェクト生成時に一度だけ呼び出されるコンストラクタ。コンポーネント名と同じ名前でpublicのメソッドを定義する",
+        "descEn": "Constructor called once when component object is created. Define a public method with the same name as the component",
+        "type": "callback",
+        "category": "lifecycle",
+        "docUrl": "hs_component.md"
+      },
+      "OnLoaded": {
+        "sig": "public void OnLoaded()",
+        "desc": "Vket Cloudエンジンが起動し、リソースのロードや初期化処理が完了した際に1回だけ呼び出される",
+        "descEn": "Called once when Vket Cloud engine starts and resource loading/initialization is complete",
+        "type": "callback",
+        "category": "lifecycle",
+        "docUrl": "hs_component.md"
+      },
+      "OnDelayLayersLoaded": {
+        "sig": "public void OnDelayLayersLoaded()",
+        "desc": "全ての遅延ロードレイヤーのロードが完了したときに一回だけ呼び出される。UI等のレイヤーは遅延ローディングしている",
+        "descEn": "Called once when all delay-loaded layers (such as UI layers) have completed loading",
+        "type": "callback",
+        "category": "lifecycle",
+        "docUrl": "hs_component.md"
+      },
+      "Update": {
+        "sig": "public void Update()",
+        "desc": "画面描画時に毎フレーム呼び出される",
+        "descEn": "Called every frame during screen rendering",
+        "type": "callback",
+        "category": "lifecycle",
+        "docUrl": "hs_component.md"
+      },
+      "OnWindowActivate": {
+        "sig": "public void OnWindowActivate(bool IsActivate)",
+        "desc": "ブラウザのタブがアクティブ・非アクティブ化した際に呼び出される。タブがアクティブ化するとIsActivateがtrue、非アクティブ化するとfalse",
+        "descEn": "Called when browser tab becomes active/inactive. IsActivate is true when tab is activated, false when deactivated",
+        "type": "callback",
+        "category": "browser",
+        "params": [
+          {"name": "IsActivate", "type": "bool", "desc": "タブのアクティブ状態"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnBeforeUnload": {
+        "sig": "public void OnBeforeUnload()",
+        "desc": "ブラウザのタブを閉じたり、別のURLへ遷移する際に、現在のページのアンロード開始を通知する。このタイミングではページの内容はまだ保持されている",
+        "descEn": "Called when page unload begins (tab close or URL navigation). Page content is still preserved at this point",
+        "type": "callback",
+        "category": "browser",
+        "docUrl": "hs_component.md"
+      },
+      "OnUnload": {
+        "sig": "public void OnUnload()",
+        "desc": "現在のページが完全にアンロードされる直前に通知される",
+        "descEn": "Called immediately before the current page is completely unloaded",
+        "type": "callback",
+        "category": "browser",
+        "docUrl": "hs_component.md"
+      },
+      "OnClickNode": {
+        "sig": ["public bool OnClickNode(int NodeIndex)", "public bool OnClickNode(string NodeName)", "public void OnClickNode(int NodeIndex)"],
+        "desc": "アイテムのノードがクリックされた時に呼び出される。trueを返すとエンジン側のクリック移動などが無効化される。int版ではノードのインデックス、string版ではノード名が引数に渡される",
+        "descEn": "Called when item node is clicked. Returning true disables engine-side click movement. int version receives node index, string version receives node name",
+        "type": "callback",
+        "category": "click",
+        "params": [
+          {"name": "NodeIndex", "type": "int", "desc": "クリックされたノードのインデックス"},
+          {"name": "NodeName", "type": "string", "desc": "クリックされたノードの名前（string版）"}
+        ],
+        "returns": {"type": "bool", "desc": "trueを返すとエンジン側のクリック移動を無効化"},
+        "docUrl": "hs_component.md"
+      },
+      "OnClickEmpty": {
+        "sig": "public void OnClickEmpty()",
+        "desc": "何もない空間をクリックしたときに呼び出される",
+        "descEn": "Called when empty space is clicked",
+        "type": "callback",
+        "category": "click",
+        "docUrl": "hs_component.md"
+      },
+      "OnLongPressedEmpty": {
+        "sig": "public void OnLongPressedEmpty()",
+        "desc": "何もない空間を長押ししたときに呼び出される",
+        "descEn": "Called when empty space is long-pressed",
+        "type": "callback",
+        "category": "click",
+        "docUrl": "hs_component.md"
+      },
+      "OnEnterAreaCollider": {
+        "sig": "public void OnEnterAreaCollider()",
+        "desc": "areacolliderタイプのアイテムに侵入したときに呼び出される",
+        "descEn": "Called when entering an areacollider type item",
+        "type": "callback",
+        "category": "collision",
+        "sample": "component AreaCollider\n{\n    Item    m_Item;\n\n    public CAreaCollider()\n    {\n        m_Item = hsItemGet(\"コンポーネント名\");\n    }\n\n    public void OnEnterAreaCollider()\n    {\n        hsSystemOutput(\"OnEnterAreaCollider \" + m_Item.GetName() + \"\\n\");\n    }\n}",
+        "docUrl": "hs_component.md"
+      },
+      "OnLeaveAreaCollider": {
+        "sig": "public void OnLeaveAreaCollider()",
+        "desc": "areacolliderタイプのアイテムから退出したときに呼び出される",
+        "descEn": "Called when leaving an areacollider type item",
+        "type": "callback",
+        "category": "collision",
+        "sample": "public void OnLeaveAreaCollider()\n{\n    hsSystemOutput(\"OnLeaveAreaCollider \" + m_Item.GetName() + \"\\n\");\n}",
+        "docUrl": "hs_component.md"
+      },
+      "OnItemTriggerEnter": {
+        "sig": "public void OnItemTriggerEnter(int ItemInstanceID, int NodeIndex)",
+        "desc": "このコンポーネントを持つItemが別のItem内ノードのコライダーに侵入した時に呼び出される。衝突するアイテムはObject型、衝突されるアイテムはボックス形状でColliderまたはAreaタイプが必要",
+        "descEn": "Called when this component's Item enters another Item's node collider. Colliding item must be Object type, collided item must have box collider with Collider or Area type",
+        "type": "callback",
+        "category": "collision",
+        "params": [
+          {"name": "ItemInstanceID", "type": "int", "desc": "衝突したアイテムのインスタンスID"},
+          {"name": "NodeIndex", "type": "int", "desc": "衝突したノードのインデックス"}
+        ],
+        "sample": "public void OnItemTriggerEnter(int ItemInstanceID, int NodeIndex)\n{\n    Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);\n    string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);\n    hsSystemOutput(\"[OnItemTriggerEnter] ItemName: %s, NodeName: %s\\n\" % CollidedItem.GetName() % NodeName);\n}",
+        "docUrl": "hs_component.md"
+      },
+      "OnItemTriggerLeave": {
+        "sig": "public void OnItemTriggerLeave(int ItemInstanceID, int NodeIndex)",
+        "desc": "このコンポーネントを持つItemが別のItem内ノードのコライダーから退出した時に呼び出される",
+        "descEn": "Called when this component's Item leaves another Item's node collider",
+        "type": "callback",
+        "category": "collision",
+        "params": [
+          {"name": "ItemInstanceID", "type": "int", "desc": "衝突したアイテムのインスタンスID"},
+          {"name": "NodeIndex", "type": "int", "desc": "衝突したノードのインデックス"}
+        ],
+        "sample": "public void OnItemTriggerLeave(int ItemInstanceID, int NodeIndex)\n{\n    Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);\n    string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);\n    hsSystemOutput(\"[OnItemTriggerLeave] ItemName: %s, NodeName: %s\\n\" % CollidedItem.GetName() % NodeName);\n}",
+        "docUrl": "hs_component.md"
+      },
+      "OnItemCollisionEnter": {
+        "sig": "public void OnItemCollisionEnter(int ItemInstanceID, int NodeIndex)",
+        "desc": "このコンポーネントを持つItemがItem.MovePosで移動中に別のItem内ノードのコライダーに衝突した時に呼び出される",
+        "descEn": "Called when this component's Item collides with another Item's node collider while moving with Item.MovePos",
+        "type": "callback",
+        "category": "collision",
+        "params": [
+          {"name": "ItemInstanceID", "type": "int", "desc": "衝突したアイテムのインスタンスID"},
+          {"name": "NodeIndex", "type": "int", "desc": "衝突したノードのインデックス"}
+        ],
+        "sample": "public void OnItemCollisionEnter(int ItemInstanceID, int NodeIndex)\n{\n    Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);\n    string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);\n    hsSystemOutput(\"[OnItemCollisionEnter] ItemName: %s, NodeName: %s\\n\" % CollidedItem.GetName() % NodeName);\n}",
+        "docUrl": "hs_component.md"
+      },
+      "OnItemCollisionLeave": {
+        "sig": "public void OnItemCollisionLeave(int ItemInstanceID, int NodeIndex)",
+        "desc": "このコンポーネントを持つItemがItem.MovePosで移動中に別のItem内ノードのコライダーから退出した時に呼び出される",
+        "descEn": "Called when this component's Item leaves another Item's node collider while moving with Item.MovePos",
+        "type": "callback",
+        "category": "collision",
+        "params": [
+          {"name": "ItemInstanceID", "type": "int", "desc": "衝突したアイテムのインスタンスID"},
+          {"name": "NodeIndex", "type": "int", "desc": "衝突したノードのインデックス"}
+        ],
+        "sample": "public void OnItemCollisionLeave(int ItemInstanceID, int NodeIndex)\n{\n    Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);\n    string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);\n    hsSystemOutput(\"[OnItemCollisionLeave] ItemName: %s, NodeName: %s\\n\" % CollidedItem.GetName() % NodeName);\n}",
+        "docUrl": "hs_component.md"
+      },
+      "OnItemCreatedClone": {
+        "sig": "public void OnItemCreatedClone()",
+        "desc": "アイテムクローンが生成されたときに呼び出される",
+        "descEn": "Called when item clone is created",
+        "type": "callback",
+        "category": "item",
+        "docUrl": "hs_component.md"
+      },
+      "OnItemDestroyedClone": {
+        "sig": "public void OnItemDestroyedClone()",
+        "desc": "アイテムクローンが破棄されたときに呼び出される",
+        "descEn": "Called when item clone is destroyed",
+        "type": "callback",
+        "category": "item",
+        "docUrl": "hs_component.md"
+      },
+      "OnUnselectNode": {
+        "sig": "public void OnUnselectNode(int NodeIndex)",
+        "desc": "直前にアイテムのノードをクリックした状態で、その後にアバターをクリックすると、ノードの選択が解除されたと判断され、選択解除されたノードのインデックスを引数として呼び出される",
+        "descEn": "Called when a node is unselected (after clicking an item node and then clicking an avatar). Receives the unselected node's index",
+        "type": "callback",
+        "category": "selection",
+        "params": [
+          {"name": "NodeIndex", "type": "int", "desc": "選択解除されたノードのインデックス"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnUnselectAvatar": {
+        "sig": "public void OnUnselectAvatar(string Name)",
+        "desc": "直前にアバターをクリックした状態で、その後にアイテムのノードをクリックすると、アバターの選択が解除されたと判断され、選択解除されたアバターの名前を引数として呼び出される",
+        "descEn": "Called when an avatar is unselected (after clicking an avatar and then clicking an item node). Receives the unselected avatar's name",
+        "type": "callback",
+        "category": "selection",
+        "params": [
+          {"name": "Name", "type": "string", "desc": "選択解除されたアバターの名前"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnResize": {
+        "sig": ["public void OnResize(int width, int height)", "public void OnResize()"],
+        "desc": "スクリーンサイズが変更された際に呼び出される。引数を指定した場合は変更後のスクリーンの縦横サイズが渡される",
+        "descEn": "Called when screen size changes. If parameters specified, receives new screen dimensions",
+        "type": "callback",
+        "category": "screen",
+        "params": [
+          {"name": "width", "type": "int", "desc": "変更後のスクリーン幅"},
+          {"name": "height", "type": "int", "desc": "変更後のスクリーン高さ"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnReceiveCustomState": {
+        "sig": "public void OnReceiveCustomState(string id, string type, string data)",
+        "desc": "ルームの管理者から送信された任意のデータを受信するコールバック",
+        "descEn": "Callback for receiving arbitrary data sent by room administrator",
+        "type": "callback",
+        "category": "network",
+        "params": [
+          {"name": "id", "type": "string", "desc": "データID"},
+          {"name": "type", "type": "string", "desc": "データタイプ"},
+          {"name": "data", "type": "string", "desc": "受信データ"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnReceiveCustomData": {
+        "sig": "public void OnReceiveCustomData(string id, string type, string data)",
+        "desc": "ルームの管理者から送信された任意のデータを受信するコールバック",
+        "descEn": "Callback for receiving arbitrary data sent by room administrator",
+        "type": "callback",
+        "category": "network",
+        "params": [
+          {"name": "id", "type": "string", "desc": "データID"},
+          {"name": "type", "type": "string", "desc": "データタイプ"},
+          {"name": "data", "type": "string", "desc": "受信データ"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnClickedButton": {
+        "sig": "public void OnClickedButton(string layerName, string buttonName)",
+        "desc": "GUIのボタンがタップされたときに呼び出される",
+        "descEn": "Called when a GUI button is tapped",
+        "type": "callback",
+        "category": "gui",
+        "params": [
+          {"name": "layerName", "type": "string", "desc": "ボタンが属するレイヤー名"},
+          {"name": "buttonName", "type": "string", "desc": "タップされたボタンの名前"}
+        ],
+        "sample": "component ButtonClickable\n{\n    public void OnClickedButton(string layerName, string buttonname)\n    {\n        if (layerName == \"MenuUI\") {\n            hsSystemOutput(\"Button Clicked! :\" + buttonname + \"\\n\");\n        }\n    }\n}",
+        "docUrl": "hs_component.md"
+      },
+      "OnSliderRateChanged": {
+        "sig": "public void OnSliderRateChanged(string GUIName, float Rate)",
+        "desc": "GUI要素のスライダーの値を変更した際に呼び出される。Rateには変更されたスライダーの値が0から1までの数値として渡される",
+        "descEn": "Called when GUI slider value changes. Rate contains the slider value as a number from 0 to 1",
+        "type": "callback",
+        "category": "gui",
+        "params": [
+          {"name": "GUIName", "type": "string", "desc": "操作が行われたスライダーの名前"},
+          {"name": "Rate", "type": "float", "desc": "スライダーの値（0〜1）"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnPhysicsCollision": {
+        "sig": "public void OnPhysicsCollision(int ID0, int ID1)",
+        "desc": "物理処理を設定しているオブジェクト同士が衝突したときに呼び出される。IDはPhysicsIDで、ItemクラスのGetPhysicsIDByNodeNameやPlayerクラスのGetPhysicsIDから取得可能。衝突直後は同じIDの組み合わせで何度もコールバックが呼ばれる場合がある",
+        "descEn": "Called when physics-enabled objects collide. ID is PhysicsID obtainable from Item.GetPhysicsIDByNodeName or Player.GetPhysicsID. May be called multiple times with same ID combination immediately after collision",
+        "type": "callback",
+        "category": "physics",
+        "params": [
+          {"name": "ID0", "type": "int", "desc": "衝突オブジェクトのPhysicsID"},
+          {"name": "ID1", "type": "int", "desc": "衝突オブジェクトのPhysicsID"}
+        ],
+        "sample": "component Test {\n    Item    m_Field;\n    int     m_PhysicsIDFloor,\n            m_PhysicsIDCube;\n\n    public Test()\n    {\n        m_Field = new Item();\n        m_Field._SetItemFromStructPageNumber(system.GetStructPageNumber());\n        m_PhysicsIDFloor = m_Field.GetPhysicsIDByNodeName(\"Floor\");\n        m_PhysicsIDCube = m_Field.GetPhysicsIDByNodeName(\"Cube\");\n    }\n\n    public void OnPhysicsCollision(int ID0, int ID1)\n    {\n        if ((ID0 == m_PhysicsIDFloor && ID1 == m_PhysicsIDCube) ||\n            (ID1 == m_PhysicsIDFloor && ID0 == m_PhysicsIDCube))\n        {\n            // FloorとCubeが衝突した\n        }\n    }\n}",
+        "docUrl": "hs_component.md"
+      },
+      "OnEnterViewCollider": {
+        "sig": "public void OnEnterViewCollider(string NodeName)",
+        "desc": "HEOColliderで「InView」を指定したコライダーが視野内に入った場合に呼び出される。コンポーネントは同一のアイテムに設定する必要がある",
+        "descEn": "Called when collider with HEOCollider 'InView' setting enters the view. Component must be on the same item",
+        "type": "callback",
+        "category": "view",
+        "params": [
+          {"name": "NodeName", "type": "string", "desc": "視野内に入ったノードの名前"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnLeaveViewCollider": {
+        "sig": "public void OnLeaveViewCollider(string NodeName)",
+        "desc": "HEOColliderで「InView」を指定したコライダーが視野外に出た場合に呼び出される。コンポーネントは同一のアイテムに設定する必要がある",
+        "descEn": "Called when collider with HEOCollider 'InView' setting exits the view. Component must be on the same item",
+        "type": "callback",
+        "category": "view",
+        "params": [
+          {"name": "NodeName", "type": "string", "desc": "視野外に出たノードの名前"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnReceiveTextChat": {
+        "sig": "public void OnReceiveTextChat(string ID, string PlayerName, string Text)",
+        "desc": "ユーザーがテキストチャットを送信した場合に呼び出される",
+        "descEn": "Called when a user sends a text chat",
+        "type": "callback",
+        "category": "chat",
+        "params": [
+          {"name": "ID", "type": "string", "desc": "送信者のID"},
+          {"name": "PlayerName", "type": "string", "desc": "送信者のプレイヤー名"},
+          {"name": "Text", "type": "string", "desc": "チャットのテキスト内容"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnClickedAvatar": {
+        "sig": "public void OnClickedAvatar(string PlayerID)",
+        "desc": "他のプレイヤーのアバターがクリックされた時に呼び出される",
+        "descEn": "Called when another player's avatar is clicked",
+        "type": "callback",
+        "category": "player",
+        "params": [
+          {"name": "PlayerID", "type": "string", "desc": "クリックされたプレイヤーのID"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnPlayVideo": {
+        "sig": "public void OnPlayVideo()",
+        "desc": "動画の再生開始時に呼び出される",
+        "descEn": "Called when video playback starts",
+        "type": "callback",
+        "category": "video",
+        "docUrl": "hs_component.md"
+      },
+      "OnPauseVideo": {
+        "sig": "public void OnPauseVideo()",
+        "desc": "動画の一時停止の際に呼び出される",
+        "descEn": "Called when video is paused",
+        "type": "callback",
+        "category": "video",
+        "docUrl": "hs_component.md"
+      },
+      "OnResumeVideo": {
+        "sig": "public void OnResumeVideo()",
+        "desc": "動画の再生を再開した時に呼び出される",
+        "descEn": "Called when video playback resumes",
+        "type": "callback",
+        "category": "video",
+        "docUrl": "hs_component.md"
+      },
+      "OnStopVideo": {
+        "sig": "public void OnStopVideo()",
+        "desc": "動画の再生を停止した時に呼び出される",
+        "descEn": "Called when video playback stops",
+        "type": "callback",
+        "category": "video",
+        "docUrl": "hs_component.md"
+      },
+      "OnChangedProperty": {
+        "sig": "public void OnChangedProperty(string Key, string Value)",
+        "desc": "Itemのプロパティが更新されたときに呼び出される。同一のValueの場合は呼び出されない",
+        "descEn": "Called when Item property is updated. Not called if Value is the same",
+        "type": "callback",
+        "category": "property",
+        "params": [
+          {"name": "Key", "type": "string", "desc": "プロパティのキー"},
+          {"name": "Value", "type": "string", "desc": "プロパティの新しい値"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnRemovedProperty": {
+        "sig": "public void OnRemovedProperty(string Key)",
+        "desc": "Itemのプロパティが削除されたときに呼び出される",
+        "descEn": "Called when Item property is removed",
+        "type": "callback",
+        "category": "property",
+        "params": [
+          {"name": "Key", "type": "string", "desc": "削除されたプロパティのキー"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnReceiveMessage": {
+        "sig": "public void OnReceiveMessage(HSMessage message)",
+        "desc": "Itemがメッセージを受信した際に呼ばれる。引数messageに受信したデータや送信者の情報が含まれる",
+        "descEn": "Called when Item receives a message. The message argument contains received data and sender information",
+        "type": "callback",
+        "category": "message",
+        "params": [
+          {"name": "message", "type": "HSMessage", "desc": "受信したメッセージオブジェクト"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnEmoteChanged": {
+        "sig": "public void OnEmoteChanged(int EmoteIndex)",
+        "desc": "Playerのエモートが変更（再生）された際に呼ばれる。EmoteIndexに変更されたエモートのインデックス値が入る",
+        "descEn": "Called when Player emote changes (plays). EmoteIndex contains the changed emote's index value",
+        "type": "callback",
+        "category": "player",
+        "params": [
+          {"name": "EmoteIndex", "type": "int", "desc": "変更されたエモートのインデックス"}
+        ],
+        "docUrl": "hs_component.md"
+      },
+      "OnMotionChanged": {
+        "sig": "public void OnMotionChanged(string MotionName)",
+        "desc": "Playerのモーションが変更（再生）された際に呼ばれる。MotionNameに変更されたモーション名が入る",
+        "descEn": "Called when Player motion changes (plays). MotionName contains the changed motion name",
+        "type": "callback",
+        "category": "player",
+        "params": [
+          {"name": "MotionName", "type": "string", "desc": "変更されたモーションの名前"}
+        ],
+        "docUrl": "hs_component.md"
+      }
+    }
+  },
+  "layer": {
+    "className": "Layer",
+    "classDescription": "Canvas要素のLayerを操作するためのクラス。縦画面・横画面のどちらかのレイヤーを取得し操作可能",
+    "classDescriptionEn": "A class for manipulating Canvas element Layers. Can get and operate on either portrait or landscape layers",
+    "docUrl": "hs_class_Layer.md",
+    "utilityFunctions": {
+      "hsLayerGetPortrait": {
+        "sig": "Layer hsLayerGetPortrait(string LayerName)",
+        "desc": "引数 LayerName で指定した縦方向のLayerを取得する関数。Layerが存在しない場合、nullを返す",
+        "descEn": "Gets the portrait (vertical) Layer specified by LayerName. Returns null if the Layer does not exist",
+        "docUrl": "hs_class_Layer.md",
+        "type": "utility"
+      },
+      "hsLayerGetLandscape": {
+        "sig": "Layer hsLayerGetLandscape(string LayerName)",
+        "desc": "引数 LayerName で指定した横方向のLayerを取得する関数。Layerが存在しない場合、nullを返す",
+        "descEn": "Gets the landscape (horizontal) Layer specified by LayerName. Returns null if the Layer does not exist",
+        "docUrl": "hs_class_Layer.md",
+        "type": "utility"
+      }
+    },
+    "methods": {
+      "ToString": {
+        "sig": "string ToString()",
+        "desc": "このインスタンスが持つ情報を文字列に変換して返す",
+        "descEn": "Converts the instance information to string and returns it",
+        "docUrl": "hs_class_Layer.md",
+        "type": "method"
+      },
+      "GetName": {
+        "sig": "string GetName()",
+        "desc": "Layerの名前を返す",
+        "descEn": "Returns the Layer name",
+        "docUrl": "hs_class_Layer.md",
+        "type": "method"
+      },
+      "GetGUIElement": {
+        "sig": "GUIElement GetGUIElement(string GUIName)",
+        "desc": "GUINameでGUI要素を検索し、GUIElementのインスタンスとして返す",
+        "descEn": "Searches for a GUI element by GUIName and returns it as a GUIElement instance",
+        "docUrl": "hs_class_Layer.md",
+        "type": "method"
+      },
+      "CallComponentMethod": {
+        "sig": "bool CallComponentMethod(string ComponentName, string MethodName, string Params)",
+        "desc": "Layerに設定されているコンポーネントのメソッドを呼び出す。呼び出せるメソッドはstringを1つだけ引数に持ちvoid戻り値のみ",
+        "descEn": "Calls a method on a component attached to the Layer. Only methods with a single string parameter and void return type can be called",
+        "docUrl": "hs_class_Layer.md",
+        "type": "method"
+      },
+      "SetShow": {
+        "sig": "void SetShow(bool Show)",
+        "desc": "Layerの表示状態を変更する",
+        "descEn": "Changes the visibility state of the Layer",
+        "docUrl": "hs_class_Layer.md",
+        "type": "method"
+      },
+      "IsShow": {
+        "sig": "bool IsShow()",
+        "desc": "Layerが表示状態であればtrueを返す",
+        "descEn": "Returns true if the Layer is visible",
+        "docUrl": "hs_class_Layer.md",
+        "type": "method"
+      },
+      "StartLayerAnimation": {
+        "sig": "void StartLayerAnimation(string Type, float Value)",
+        "desc": "引数 Type で指定したアニメーションを、引数 Value で指定した時間(ミリ秒)で再生する",
+        "descEn": "Plays the animation specified by Type for the duration specified by Value (in milliseconds)",
+        "docUrl": "hs_class_Layer.md",
+        "type": "method"
+      },
+      "SetGUIShow": {
+        "sig": "bool SetGUIShow(string GUIName, bool Show)",
+        "desc": "引数 GUIName で指定したGUI要素の表示状態を変更する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Changes the visibility state of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "SetGUIPos": {
+        "sig": "bool SetGUIPos(string GUIName, float X, float Y)",
+        "desc": "引数 GUIName で指定したGUI要素の位置を設定する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets the position of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "GetGUIPos": {
+        "sig": "bool GetGUIPos(string GUIName, ref float X, ref float Y)",
+        "desc": "引数 GUIName で指定したGUI要素の位置を取得する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Gets the position of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "SetGUISize": {
+        "sig": "bool SetGUISize(string GUIName, float X, float Y)",
+        "desc": "引数 GUIName で指定したGUI要素のサイズを設定する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets the size of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "GetGUISize": {
+        "sig": "bool GetGUISize(string GUIName, ref float X, ref float Y)",
+        "desc": "引数 GUIName で指定したGUI要素のサイズを取得する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Gets the size of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "SetGUIAngle": {
+        "sig": "bool SetGUIAngle(string GUIName, float Angle)",
+        "desc": "引数 GUIName で指定したGUI要素の回転角度を設定する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets the rotation angle of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "GetGUIAngle": {
+        "sig": "bool GetGUIAngle(string GUIName, ref float Angle)",
+        "desc": "引数 GUIName で指定したGUI要素の回転角度を取得する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Gets the rotation angle of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "CanvasSetGUIText": {
+        "sig": "bool CanvasSetGUIText(string GUIName, string Text)",
+        "desc": "引数 GUIName で指定したGUI要素のテキストを設定する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets the text of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["text"]
+      },
+      "CanvasSetGUITextAlignment": {
+        "sig": "bool CanvasSetGUITextAlignment(string GUIName, int Alignment)",
+        "desc": "引数 GUIName で指定したテキストのアライメントを設定する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets the text alignment of the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["text"]
+      },
+      "CanvasSetGUITextOverflowWrap": {
+        "sig": "bool CanvasSetGUITextOverflowWrap(string GUIName, bool OverflowWrap)",
+        "desc": "引数 GUIName で指定したテキストの折り返しを有効化・無効化する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Enables or disables text wrapping for the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["text"]
+      },
+      "CanvasSetGUITextURLClickable": {
+        "sig": "bool CanvasSetGUITextURLClickable(string GUIName, bool URLClickable)",
+        "desc": "引数 GUIName で指定したテキストをクリックできるかどうかを設定する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets whether the text in the GUI element specified by GUIName is clickable. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["text"]
+      },
+      "CanvasSetGUIImage": {
+        "sig": "bool CanvasSetGUIImage(string GUIName, string Path)",
+        "desc": "引数 GUIName で指定したGUI要素に、引数 Path で指定したURLの画像を設定する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets the image from the URL specified by Path to the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image"]
+      },
+      "StartGUIAnimation": {
+        "sig": "void StartGUIAnimation(string GUIName, string Type, float Value)",
+        "desc": "引数 GUIName で指定したGUI要素に対し、引数 Type で指定したアニメーションを、引数 Value で指定した時間(ミリ秒)で再生する",
+        "descEn": "Plays the animation specified by Type on the GUI element specified by GUIName for the duration specified by Value (in milliseconds)",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "GetToggleState": {
+        "sig": "bool GetToggleState(string GUIName, string ToggleName)",
+        "desc": "引数 GUIName で指定したGUI要素に対し、引数 ToggleName のトグル状態を取得する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Gets the toggle state specified by ToggleName for the GUI element specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["button", "image", "slider", "text"]
+      },
+      "SetSliderRate": {
+        "sig": "bool SetSliderRate(string GUIName, float Value)",
+        "desc": "引数 GUIName で指定したスライダーに、引数 Value の値(0-1)を設定する。OnSliderRateChangedコールバックが呼ばれる。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets the value (0-1) to the slider specified by GUIName. Triggers the OnSliderRateChanged callback. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["slider"]
+      },
+      "SetSliderRateWithoutNotify": {
+        "sig": "bool SetSliderRateWithoutNotify(string GUIName, float Rate)",
+        "desc": "引数 GUIName で指定したスライダーに値を設定する。OnSliderRateChangedコールバックは呼ばれない。GUI要素が見つからない場合falseを返す",
+        "descEn": "Sets the value to the slider specified by GUIName without triggering the OnSliderRateChanged callback. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["slider"]
+      },
+      "GetSliderRate": {
+        "sig": "bool GetSliderRate(string GUIName, ref float Rate)",
+        "desc": "引数 GUIName で指定したスライダーの値を取得する。GUI要素が見つからない場合falseを返す",
+        "descEn": "Gets the value of the slider specified by GUIName. Returns false if the GUI element is not found",
+        "docUrl": "hs_class_Layer.md",
+        "type": "guiMethod",
+        "supportedTypes": ["slider"]
+      }
+    }
+  }
+}

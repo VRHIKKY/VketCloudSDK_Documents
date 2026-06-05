@@ -1,12 +1,17 @@
 # SDKマニュアル変更履歴 - Ver 16.5
 
-## 2026年6月4日更新
+## 2026年6月5日更新
 
 ## 2026年6月5日 - 編集されたページ
 
 - リリースノート
     - [v16.5](../releasenote/releasenote-16.5.ja.md)
         - v16.5.8のリリースノートを追加
+
+## 2026年6月5日 - 追加されたページ
+
+- その他
+    - [HS Dictionary](../HSDictionaryPage.ja.md): HeliScript API リファレンス辞書 (HS Dictionary) を公開しました。
 
 ## 2026年4月15日更新
 
