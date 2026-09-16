@@ -13701,17 +13701,17 @@ int版ではノードのインデックス、string版ではノード名が引�
 
     public CAreaCollider()
     {
-        m_Item = hsItemGet(&quot;コンポーネント名&quot;);
+        m_Item = hsItemGet("コンポーネント名");
     }
 
     public void OnEnterAreaCollider()
     {
-        hsSystemOutput(&quot;OnEnterAreaCollider &quot; + m_Item.GetName() + &quot;\n&quot;);
+        hsSystemOutput("OnEnterAreaCollider " + m_Item.GetName() + "\n");
     }
 
     public void OnLeaveAreaCollider()
     {
-        hsSystemOutput(&quot;OnLeaveAreaCollider &quot; + m_Item.GetName() + &quot;\n&quot;);
+        hsSystemOutput("OnLeaveAreaCollider " + m_Item.GetName() + "\n");
     }
 }
 </code></pre></div>
@@ -13724,13 +13724,13 @@ int版ではノードのインデックス、string版ではノード名が引�
     {
         Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
-        hsSystemOutput(&quot;[OnItemEnterCollider] ItemName: %s, NodeName: %s\n&quot; % CollidedItem.GetName() % NodeName);
+        hsSystemOutput("[OnItemEnterCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
     public void OnItemLeaveCollider(int ItemInstanceID, int NodeIndex)
     {
         Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
-        hsSystemOutput(&quot;[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n&quot; % CollidedItem.GetName() % NodeName);
+        hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
 }
 </code></pre></div>
@@ -13757,7 +13757,7 @@ int版ではノードのインデックス、string版ではノード名が引�
         Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
 
-        hsSystemOutput(&quot;[OnItemTriggerEnter] ItemName: %s, NodeName: %s\n&quot; % CollidedItem.GetName() % NodeName);
+        hsSystemOutput("[OnItemTriggerEnter] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
 
     public void OnItemTriggerLeave(int ItemInstanceID, int NodeIndex)
@@ -13765,7 +13765,7 @@ int版ではノードのインデックス、string版ではノード名が引�
         Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
 
-        hsSystemOutput(&quot;[OnItemTriggerLeave] ItemName: %s, NodeName: %s\n&quot; % CollidedItem.GetName() % NodeName);
+        hsSystemOutput("[OnItemTriggerLeave] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
 }
 </code></pre></div>
@@ -13792,7 +13792,7 @@ int版ではノードのインデックス、string版ではノード名が引�
         Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
 
-        hsSystemOutput(&quot;[OnItemCollisionEnter] ItemName: %s, NodeName: %s\n&quot; % CollidedItem.GetName() % NodeName);
+        hsSystemOutput("[OnItemCollisionEnter] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
 
     public void OnItemCollisionLeave(int ItemInstanceID, int NodeIndex)
@@ -13800,7 +13800,7 @@ int版ではノードのインデックス、string版ではノード名が引�
         Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
 
-        hsSystemOutput(&quot;[OnItemCollisionLeave] ItemName: %s, NodeName: %s\n&quot; % CollidedItem.GetName() % NodeName);
+        hsSystemOutput("[OnItemCollisionLeave] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
 }
 </code></pre></div>
@@ -13843,8 +13843,8 @@ public void OnReceiveCustomData(string id, string type, string data)
 {
     public void OnClickedButton(string layerName, string buttonname)
     {
-        if (layerName == &quot;MenuUI&quot;) {
-            hsSystemOutput(&quot;Button Clicked! :&quot; + buttonname + &quot;\n&quot;);
+        if (layerName == "MenuUI") {
+            hsSystemOutput("Button Clicked! :" + buttonname + "\n");
         }
     }
 }
@@ -13870,8 +13870,8 @@ public void OnReceiveCustomData(string id, string type, string data)
         m_Field = new Item();
         m_Field._SetItemFromStructPageNumber(system.GetStructPageNumber());
 
-        m_PhysicsIDFloor = m_Field.GetPhysicsIDByNodeName(&quot;Floor&quot;);
-        m_PhysicsIDCube = m_Field.GetPhysicsIDByNodeName(&quot;Cube&quot;);
+        m_PhysicsIDFloor = m_Field.GetPhysicsIDByNodeName("Floor");
+        m_PhysicsIDCube = m_Field.GetPhysicsIDByNodeName("Cube");
     }
 
     public void OnPhysicsCollision(int ID0, int ID1)

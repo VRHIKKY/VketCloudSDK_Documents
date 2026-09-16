@@ -13132,7 +13132,7 @@ Browser: Google Chrome<br></p>
     // Do nothing if not in debug mode
     if (!hsSystemIsDebugMode()) return;
     if (condition) return;
-    hsSystemWriteLine(&quot;Error: %s&quot; % errorMessage);
+    hsSystemWriteLine("Error: %s" % errorMessage);
 }
 </code></pre></div>
 <div class="admonition warning">
@@ -13155,9 +13155,9 @@ Even when an error is found, the program will continue running. This is because 
 <li><code>errorMessage</code>: Message to display if the condition is not met</li>
 </ul>
 <p>For example, to verify that a player's position is within a specific range:</p>
-<div class="highlight"><pre><span></span><code>// Check if player&#39;s x-coordinate is within range 0-100
+<div class="highlight"><pre><span></span><code>// Check if player's x-coordinate is within range 0-100
 float posX = GetPlayerPosX();
-chsSystemAssert(posX &gt;= 0 &amp;&amp; posX &lt;= 100, &quot;Player is outside valid range!&quot;);
+chsSystemAssert(posX &gt;= 0 &amp;&amp; posX &lt;= 100, "Player is outside valid range!");
 </code></pre></div>
 
 

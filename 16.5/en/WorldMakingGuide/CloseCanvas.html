@@ -13185,39 +13185,39 @@ For more details, please refer to <a href="https://vrhikky.github.io/VketCloudSD
 <h2 id="steps">Steps</h2>
 <h3 id="1-add-a-transparent-button-for-tap-detection-to-the-relevant-layer">1. Add a Transparent Button for Tap Detection to the Relevant Layer</h3>
 <div class="highlight"><pre><span></span><code>{
-  &quot;Name&quot;: &quot;popup_button_close_bg&quot;,
-  &quot;Type&quot;: &quot;button&quot;,
-  &quot;Platform&quot;: &quot;&quot;,
-  &quot;Language&quot;: &quot;&quot;,
-  &quot;Portrait&quot;: &quot;&quot;,
-  &quot;ParamButton&quot;: {
-    &quot;FileName&quot;: &quot;&quot;,
-    &quot;OnCursorFileName&quot;: &quot;&quot;,
-    &quot;DownFileName&quot;: &quot;&quot;
+  "Name": "popup_button_close_bg",
+  "Type": "button",
+  "Platform": "",
+  "Language": "",
+  "Portrait": "",
+  "ParamButton": {
+    "FileName": "",
+    "OnCursorFileName": "",
+    "DownFileName": ""
   },
-  &quot;GUIAction&quot;: [
+  "GUIAction": [
     {
-      &quot;SetShowLayer&quot;: {
-        &quot;Name&quot;: &quot;GameWindow&quot;,
-        &quot;Show&quot;: false
+      "SetShowLayer": {
+        "Name": "GameWindow",
+        "Show": false
       }
     }
   ],
-  &quot;Show&quot;: true,
-  &quot;Pos&quot;: [
+  "Show": true,
+  "Pos": [
     0,
     0
   ],
-  &quot;Size&quot;: [
+  "Size": [
     6000,
     6000
   ],
-  &quot;Z&quot;: 0,
-  &quot;Pivot&quot;: [
+  "Z": 0,
+  "Pivot": [
     0.5,
     0.5
   ],
-  &quot;Anchor&quot;: &quot;CM&quot;
+  "Anchor": "CM"
 },
 </code></pre></div>
 <p>Add a large transparent button to the JSON file of the Canvas that constitutes the dialog.<br />
@@ -13241,36 +13241,36 @@ Background image. Use it by placing it in the gui folder within the Activity cla
 a transparent button for detection blocking should be set to 376 * 282 for optimal results.</p>
 <p>You can specify the clickable area size using ClickAreaSize, as shown below.</p>
 <div class="highlight"><pre><span></span><code>{
-          &quot;Name&quot;: &quot;dialog_bg&quot;,
-          &quot;Type&quot;: &quot;button&quot;,
-          &quot;Platform&quot;: &quot;&quot;,
-          &quot;Language&quot;: &quot;&quot;,
-          &quot;Portrait&quot;: &quot;&quot;,
-          &quot;ParamButton&quot;: {
-            &quot;FileName&quot;: &quot;.\gui\common_dialog_bg.png&quot;,
-            &quot;OnCursorFileName&quot;: &quot;.\gui\common_dialog_bg.png&quot;,
-            &quot;DownFileName&quot;: &quot;.\gui\common_dialog_bg.png&quot;
+          "Name": "dialog_bg",
+          "Type": "button",
+          "Platform": "",
+          "Language": "",
+          "Portrait": "",
+          "ParamButton": {
+            "FileName": ".\gui\common_dialog_bg.png",
+            "OnCursorFileName": ".\gui\common_dialog_bg.png",
+            "DownFileName": ".\gui\common_dialog_bg.png"
           },
-          &quot;GUIAction&quot;: [],
-          &quot;Show&quot;: true,
-          &quot;Pos&quot;: [
+          "GUIAction": [],
+          "Show": true,
+          "Pos": [
             0,
             0
           ],
-          &quot;Size&quot;: [
+          "Size": [
             550,
             400
           ],
-          &quot;ClickAreaSize&quot; : [
+          "ClickAreaSize" : [
             376,
             282
           ]
-          &quot;Z&quot;: 1,
-          &quot;Pivot&quot;: [
+          "Z": 1,
+          "Pivot": [
             0.5,
             0.5
           ],
-          &quot;Anchor&quot;: &quot;CM&quot;
+          "Anchor": "CM"
         },
 </code></pre></div>
 <p>Since this button does nothing, leave the action empty.</p>

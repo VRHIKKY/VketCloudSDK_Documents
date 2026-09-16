@@ -13143,10 +13143,10 @@ function hel_action_bridge(name, text)
 {
     // nameで処理を切り分ける
     switch (name) {
-    case &quot;LogOutput&quot;
+    case "LogOutput"
         console.log(text);
         break;
-    case &quot;LoadImage&quot;
+    case "LoadImage"
         LoadImage(text);
         break;
         // .....
@@ -13166,7 +13166,7 @@ component Test {
 }
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>// JavaScriptから上記のコンポーネントメソッドを呼び出す
-hel_script_CallComponentMethod(&quot;FieldItem&quot;, &quot;Test&quot;, &quot;DoFromJS&quot;, &quot;TestParam&quot;);
+hel_script_CallComponentMethod("FieldItem", "Test", "DoFromJS", "TestParam");
 </code></pre></div>
 
 

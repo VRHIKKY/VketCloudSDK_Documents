@@ -13148,44 +13148,44 @@ NextStateはEndにします。こちらも「アニメーション機能の弱�
 <details><summary>背景 アニメーション記載</summary>
 
 <div class="highlight"><pre><span></span><code>          {
-            &quot;Name&quot;: &quot;gameclear_back_close_button&quot;,
-            &quot;Type&quot;: &quot;button&quot;,
-            &quot;Platform&quot;: &quot;&quot;,
-            &quot;Language&quot;: &quot;&quot;,
-            &quot;Show&quot;: true,
-            &quot;Pos&quot;:[ 0, 0],
-            &quot;Size&quot;:[ 4000, 4000],
-            &quot;Z&quot;: -1,
-            &quot;Alpha&quot;: 1.0,
-            &quot;InputActive&quot;: true,
-            &quot;Pivot&quot;:[ 0.5, 0.5],
-            &quot;Anchor&quot;:&quot;CM&quot;,
-            &quot;ParamButton&quot;: {
-              &quot;FileName&quot;: &quot;./gui/popup_background.png&quot;,
-              &quot;LTRB&quot;: [8,8,8,8]
+            "Name": "gameclear_back_close_button",
+            "Type": "button",
+            "Platform": "",
+            "Language": "",
+            "Show": true,
+            "Pos":[ 0, 0],
+            "Size":[ 4000, 4000],
+            "Z": -1,
+            "Alpha": 1.0,
+            "InputActive": true,
+            "Pivot":[ 0.5, 0.5],
+            "Anchor":"CM",
+            "ParamButton": {
+              "FileName": "./gui/popup_background.png",
+              "LTRB": [8,8,8,8]
             },
-            &quot;Animation&quot;:
+            "Animation":
             {
-              &quot;State&quot; : 
+              "State" : 
               {
-                &quot;Begin&quot;:
+                "Begin":
                 {
-                  &quot;Pos&quot;: [ 0, 0 ],
-                  &quot;Rotate&quot;: 0.0,
-                  &quot;Alpha&quot;: 0.0,
-                  &quot;InputActive&quot;: false,  
-                  &quot;NextState&quot;: &quot;End&quot;
+                  "Pos": [ 0, 0 ],
+                  "Rotate": 0.0,
+                  "Alpha": 0.0,
+                  "InputActive": false,  
+                  "NextState": "End"
                 },
-                &quot;End&quot;:
+                "End":
                 {
-                  &quot;Pos&quot;: [ 0, 0 ],
-                  &quot;Rotate&quot;: 0.0,
-                  &quot;InputActive&quot;: true,
-                  &quot;NextState&quot;: &quot;End&quot; 
+                  "Pos": [ 0, 0 ],
+                  "Rotate": 0.0,
+                  "InputActive": true,
+                  "NextState": "End" 
                 }
               }
             },
-            &quot;GUIAction&quot; :[]
+            "GUIAction" :[]
           },
 </code></pre></div>
 
@@ -13193,42 +13193,42 @@ NextStateはEndにします。こちらも「アニメーション機能の弱�
 
 <details><summary>ダイアログ アニメーション記載</summary>
 <div class="highlight"><pre><span></span><code>          {
-            &quot;Name&quot;: &quot;gameclear_image_button&quot;,
-            &quot;Type&quot;: &quot;button&quot;,
-            &quot;Platform&quot;: &quot;&quot;,
-            &quot;Language&quot;: &quot;_en&quot;,
-            &quot;Show&quot;: true,
-            &quot;Pos&quot;:[ 0, 0],
-            &quot;Size&quot;:[ 800, 600],
-            &quot;Alpha&quot;: 1.0,
-            &quot;InputActive&quot;: true, 
-            &quot;Z&quot;: 2,
+            "Name": "gameclear_image_button",
+            "Type": "button",
+            "Platform": "",
+            "Language": "_en",
+            "Show": true,
+            "Pos":[ 0, 0],
+            "Size":[ 800, 600],
+            "Alpha": 1.0,
+            "InputActive": true, 
+            "Z": 2,
 
-            &quot;Pivot&quot;:[ 0.5, 0.5],
-            &quot;Anchor&quot;:&quot;CM&quot;,
-            &quot;ParamButton&quot;: {
-              &quot;FileName&quot;: &quot;./gui/stageclear.png&quot;,
-              &quot;OnCursorFileName&quot;: &quot;./gui/stageclear.png&quot;,
-              &quot;DownFileName&quot;: &quot;./gui/stageclear.png&quot;
+            "Pivot":[ 0.5, 0.5],
+            "Anchor":"CM",
+            "ParamButton": {
+              "FileName": "./gui/stageclear.png",
+              "OnCursorFileName": "./gui/stageclear.png",
+              "DownFileName": "./gui/stageclear.png"
             },
-            &quot;Animation&quot;:
+            "Animation":
             {
-              &quot;State&quot; : 
+              "State" : 
               {
-                &quot;Begin&quot;:
+                "Begin":
                 {
-                  &quot;Alpha&quot;: 0.0,
-                  &quot;InputActive&quot;: false,  
-                  &quot;NextState&quot;: &quot;End&quot;
+                  "Alpha": 0.0,
+                  "InputActive": false,  
+                  "NextState": "End"
                 },
-                &quot;End&quot;:
+                "End":
                 {
-                  &quot;InputActive&quot;: true,
-                  &quot;NextState&quot;: &quot;End&quot; 
+                  "InputActive": true,
+                  "NextState": "End" 
                 }
               }
             },
-            &quot;GUIAction&quot; :[]
+            "GUIAction" :[]
           }
 </code></pre></div>
 
@@ -13254,14 +13254,14 @@ bool _isAnimating, _dialogAnimating;
 LayerBundle _animationLayer;
 
 //レイヤー名をゲットする関数(親アイテム名を取得)とレイヤー名
-string GetLayerName(string layerName) { return &quot;%s/%s&quot; % _parentItem.GetName() % layerName; } 
-const string _LayerName = &quot;LayerName&quot;;
+string GetLayerName(string layerName) { return "%s/%s" % _parentItem.GetName() % layerName; } 
+const string _LayerName = "LayerName";
 
 // GUI名称定数、ステート名称定数
-const string _AnimationBackgroundGUI = &quot;gameclear_background&quot;;
-const string _AnimationDialogGUI = &quot;gammeclear_gialog&quot;;
-const string _AnimationStateBegin = &quot;Begin&quot;;
-const string _AnimationStateEnd = &quot;End&quot;;
+const string _AnimationBackgroundGUI = "gameclear_background";
+const string _AnimationDialogGUI = "gammeclear_gialog";
+const string _AnimationStateBegin = "Begin";
+const string _AnimationStateEnd = "End";
 
 // アニメーション時間定数(背景アニメーション時間 + ダイアログアニメーション時間 = 総時間)
 const float _BackgroundAnimationTime = 1;

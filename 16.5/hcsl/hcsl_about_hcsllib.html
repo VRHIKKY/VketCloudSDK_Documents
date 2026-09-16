@@ -13183,7 +13183,7 @@
 </ul>
 <div class="highlight"><pre><span></span><code>#version 1
 
-hcsllib &quot;ライブラリ名&quot;
+hcsllib "ライブラリ名"
 {
     // shaderブロックと同様に関数を実装する
 }
@@ -13230,7 +13230,7 @@ hcsllib &quot;ライブラリ名&quot;
 #version 1
 
 // ライブラリの名前
-hcsllib &quot;TestLib&quot;
+hcsllib "TestLib"
 {
     float helRand(vec2 st)
     {
@@ -13274,11 +13274,11 @@ hcsllib &quot;TestLib&quot;
     {
         // helRand関数を使用するためのインクルード
         // 別ファイルのTestLibにhelRandが定義されている
-        #include &quot;TestLib&quot;
+        #include "TestLib"
 
         // helCalcUVTransform関数を使用するためのインクルード
         // HCSLCore/Textureは組み込みライブラリ
-        #include &quot;HCSLCore/Texture&quot;
+        #include "HCSLCore/Texture"
 
         void main()
         {

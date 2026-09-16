@@ -13080,10 +13080,10 @@
 
 <h1 id="tps">TPSカメラ</h1>
 <p>Sceneファイルに下記設定を追加
-<div class="highlight"><pre><span></span><code>    &quot;items&quot;: [
+<div class="highlight"><pre><span></span><code>    "items": [
         {
-            &quot;name&quot;: &quot;Camera&quot;,
-            &quot;type&quot;: &quot;camera&quot;
+            "name": "Camera",
+            "type": "camera"
         }
     ]
 </code></pre></div></p>
@@ -13118,7 +13118,7 @@ component TestPlayerTPSCamera
 
         // カメラ用
         // シーンファイルにnameが「Camera」のcameraタイプアイテムがある前提で取得する
-        m_Camera = hsGetItem(&quot;Camera&quot;);
+        m_Camera = hsGetItem("Camera");
         if(m_Camera !== null) 
         {
             // カメラとして設定

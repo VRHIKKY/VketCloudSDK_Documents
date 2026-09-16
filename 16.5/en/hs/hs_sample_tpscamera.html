@@ -13080,10 +13080,10 @@
 
 <h1 id="tps-camera-sample">TPS Camera Sample</h1>
 <p>Add the following settings to the Scene file:</p>
-<div class="highlight"><pre><span></span><code>    &quot;items&quot;: [
+<div class="highlight"><pre><span></span><code>    "items": [
         {
-            &quot;name&quot;: &quot;Camera&quot;,
-            &quot;type&quot;: &quot;camera&quot;
+            "name": "Camera",
+            "type": "camera"
         }
     ]
 </code></pre></div>
@@ -13110,15 +13110,15 @@ component TestPlayerTPSCamera
     int m_PreMousePosY;
     HS2DI m_CurrentMousePos;
     bool m_IsMouseLLock;        // Lock to disable mouse drag
-    bool m_PreMouseLDown;       // Previous frame&#39;s mouse left click state
+    bool m_PreMouseLDown;       // Previous frame's mouse left click state
 
     public TestPlayerTPSCamera()
     {
         m_Player = hsPlayerGet();
 
         // For camera
-        // Get assuming there is a camera type item with name &quot;Camera&quot; in the scene file
-        m_Camera = hsGetItem(&quot;Camera&quot;);
+        // Get assuming there is a camera type item with name "Camera" in the scene file
+        m_Camera = hsGetItem("Camera");
         if(m_Camera !== null) 
         {
             // Set as camera
@@ -13196,7 +13196,7 @@ component TestPlayerTPSCamera
             m_Camera.SetQuaternion(CameraRotate);
         }
 
-        // Record previous frame&#39;s mouse state
+        // Record previous frame's mouse state
         m_PreMouseLDown = IsNowDown;
         m_PreMousePosX = CurrentMousePosX;
         m_PreMousePosY = CurrentMousePosY;

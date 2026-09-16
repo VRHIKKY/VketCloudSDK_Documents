@@ -13367,7 +13367,7 @@ StopItemはパーティクルやサウンドを止めるのに使うことがで
 
     public SwitchAnimation() //コンストラクタ
     {
-        m_RotationCube = hsItemGet(&quot;CubeRotation_HEO&quot;); //VKC Item Objectをアタッチしているオブジェクト名を入れる
+        m_RotationCube = hsItemGet("CubeRotation_HEO"); //VKC Item Objectをアタッチしているオブジェクト名を入れる
     }
 
     public void Update()
@@ -13378,12 +13378,12 @@ StopItemはパーティクルやサウンドを止めるのに使うことがで
         {
             if (isMotionChangeTriggered)
             {
-                m_RotationCube.ChangeMotion(&quot;0&quot;);
+                m_RotationCube.ChangeMotion("0");
                 isMotionChangeTriggered = false;
             }
             else
             {
-                m_RotationCube.ChangeMotion(&quot;1&quot;);
+                m_RotationCube.ChangeMotion("1");
                 isMotionChangeTriggered = true;
             }
             m_ParseTime = 0.0f;

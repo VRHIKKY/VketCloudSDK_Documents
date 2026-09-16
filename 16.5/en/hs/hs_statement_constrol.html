@@ -13099,7 +13099,7 @@ if (x == y) {
 <div class="highlight"><pre><span></span><code>int x = 0;
 while (x &lt; 100) {
     // Repeatedly execute this process while x is less than 100
-    hsSystemWriteLine(&quot;x=%d&quot; % x);
+    hsSystemWriteLine("x=%d" % x);
     ++x;
 }
 </code></pre></div>
@@ -13116,7 +13116,7 @@ while (x &lt; 100) {
 // At the end of each loop, the iterator ++i is executed.
 for (int i = 0; i &lt; 100; ++i) {
     // Repeat this process while i is less than 100.
-    hsSystemWriteLine(&quot;i=%d&quot; % i);
+    hsSystemWriteLine("i=%d" % i);
 }
 </code></pre></div>
 <h2 id="breaking-out-of-loops-break-continue">Breaking Out of Loops (break, continue)</h2>
@@ -13141,7 +13141,7 @@ for (int i = 0; i &lt; 100; ++i) {
         // However, only when i = 5, continue cuts off the process, so nothing is displayed.
         continue;
     }
-    hsSystemWriteLine(&quot;i=%d&quot; % i);
+    hsSystemWriteLine("i=%d" % i);
 }
 </code></pre></div>
 <h2 id="switch-concisely-describe-multiple-branch-conditions">switch - Concisely Describe Multiple Branch Conditions</h2>
@@ -13162,13 +13162,13 @@ string message;
 
 switch (id) {
     case -1:
-        message = &quot;dummy account&quot;;
+        message = "dummy account";
         break;
     case 0:
-        message = &quot;root user&quot;;
+        message = "root user";
         break;
     default:
-        message = &quot;restricted user&quot;;
+        message = "restricted user";
         break;
 }
 </code></pre></div>

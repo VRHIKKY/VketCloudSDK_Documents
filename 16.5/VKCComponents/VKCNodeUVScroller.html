@@ -13274,14 +13274,14 @@ HeliScriptの実装方法については、<a href="../hs/hs_overview.html">Heli
 
     public vketquad()
     {
-        m_Item = hsItemGet(&quot;World&quot;);
+        m_Item = hsItemGet("World");
         m_Player = hsPlayerGet();
         player_pos = new Vector3();
     }
     public void Update()
     {
         player_pos = m_Player.GetPos();
-        m_Item.SetUVOffset(&quot;matQuad&quot;,(player_pos.x+2.5f)/10,(2.5f-player_pos.z)/10);
+        m_Item.SetUVOffset("matQuad",(player_pos.x+2.5f)/10,(2.5f-player_pos.z)/10);
     }
 }
 </code></pre></div>

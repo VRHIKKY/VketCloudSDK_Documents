@@ -13143,10 +13143,10 @@ If a JavaScript function <code>hel_action_bridge(name, text)</code> is defined, 
 <span class="kd">function</span><span class="w"> </span><span class="nx">hel_action_bridge</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// Handle actions based on the name</span>
 <span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;LogOutput&quot;</span><span class="o">:</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s2">"LogOutput"</span><span class="o">:</span>
 <span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
 <span class="w">            </span><span class="k">break</span><span class="p">;</span>
-<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;LoadImage&quot;</span><span class="o">:</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s2">"LoadImage"</span><span class="o">:</span>
 <span class="w">            </span><span class="nx">LoadImage</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
 <span class="w">            </span><span class="k">break</span><span class="p">;</span>
 <span class="w">        </span><span class="c1">// Additional cases...</span>
@@ -13167,7 +13167,7 @@ If a JavaScript function <code>hel_action_bridge(name, text)</code> is defined, 
 <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="c1">// Invoking the above component method from JavaScript</span>
-<span class="nx">hel_script_CallComponentMethod</span><span class="p">(</span><span class="s2">&quot;FieldItem&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Test&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DoFromJS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;TestParam&quot;</span><span class="p">);</span>
+<span class="nx">hel_script_CallComponentMethod</span><span class="p">(</span><span class="s2">"FieldItem"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Test"</span><span class="p">,</span><span class="w"> </span><span class="s2">"DoFromJS"</span><span class="p">,</span><span class="w"> </span><span class="s2">"TestParam"</span><span class="p">);</span>
 </code></pre></div>
 
 

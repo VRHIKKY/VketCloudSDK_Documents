@@ -13668,23 +13668,23 @@ Therefore, please avoid using the quotation within strings.</p>
 <h2 id="special-operators">special operators</h2>
 <h3 id="operator">[ ] operator</h3>
 <p>Gets the character at the specified position in the string as an int value. Assignment to the specified position is also possible.</p>
-<div class="highlight"><pre><span></span><code>string text = &quot;Hello!&quot;;
+<div class="highlight"><pre><span></span><code>string text = "Hello!";
 
-// get &#39;H&#39;
+// get 'H'
 int part = text[0];
 
-// Rewrite &quot;Hello!&quot; to &quot;Hello?&quot;
-text[text.Length() - 1] = &#39;?&#39;;
+// Rewrite "Hello!" to "Hello?"
+text[text.Length() - 1] = '?';
 </code></pre></div>
 <h3 id="operator_1">+ operator</h3>
 <p>Concatenate strings to produce a new string.</p>
-<div class="highlight"><pre><span></span><code>string text = &quot;Vket&quot;;
+<div class="highlight"><pre><span></span><code>string text = "Vket";
 
-// create &quot;VketCloud&quot;
-string vketcloud = text + &quot;Cloud&quot;;
+// create "VketCloud"
+string vketcloud = text + "Cloud";
 
 // replace the string itself with the += operator
-text += &quot;Cloud&quot;;
+text += "Cloud";
 </code></pre></div>
 <h3 id="operator_2">% operator</h3>
 <p>Generates a new string by applying various types of values given as arguments to a template string that follows a certain format.</p>
@@ -13692,7 +13692,7 @@ text += &quot;Cloud&quot;;
 <div class="highlight"><pre><span></span><code>int n;
 string s;
 
-s = &quot;%d&quot; %n;
+s = "%d" %n;
 </code></pre></div>
 <p>Place format specifier character starting from "%" inside the string to apply the arguments of % operators in its order.</p>
 <ul>
@@ -13705,14 +13705,14 @@ s = &quot;%d&quot; %n;
 </ul>
 <div class="highlight"><pre><span></span><code>// 1 + 1 = 2
 int answer = 2;
-hsSystemOutput(&quot;1 + 1 = %d\n&quot; % answer);
+hsSystemOutput("1 + 1 = %d\n" % answer);
 
 // VketCloud hello world!
-string hello  = &quot;hello world!&quot;;
-hsSystemOutput(&quot;VketCloud %s\n&quot; % hello);
+string hello  = "hello world!";
+hsSystemOutput("VketCloud %s\n" % hello);
 
-// &quot;int value = myArray[99];&quot;
-hsSystemOutput(&quot;int %s = %s[%d];\n&quot; % &quot;value&quot; % &quot;myArray&quot; % 99);
+// "int value = myArray[99];"
+hsSystemOutput("int %s = %s[%d];\n" % "value" % "myArray" % 99);
 </code></pre></div>
 
 

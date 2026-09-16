@@ -13351,7 +13351,7 @@ As an example, you can create a HeliScript that repeats animation playback every
 
     public SwitchAnimation() //constructor
     {
-        m_RotationCube = hsItemGet(&quot;CubeRotation_HEO&quot;); //Enter the object name to which VKC Item Object is attached
+        m_RotationCube = hsItemGet("CubeRotation_HEO"); //Enter the object name to which VKC Item Object is attached
     }
 
     public void Update()
@@ -13362,12 +13362,12 @@ As an example, you can create a HeliScript that repeats animation playback every
         {
             if (isMotionChangeTriggered)
             {
-                m_RotationCube.ChangeMotion(&quot;0&quot;);
+                m_RotationCube.ChangeMotion("0");
                 isMotionChangeTriggered = false;
             }
             else
             {
-                m_RotationCube.ChangeMotion(&quot;1&quot;);
+                m_RotationCube.ChangeMotion("1");
                 isMotionChangeTriggered = true;
             }
             m_ParseTime = 0.0f;

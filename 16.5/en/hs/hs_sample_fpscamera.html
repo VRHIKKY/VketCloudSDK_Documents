@@ -13080,10 +13080,10 @@
 
 <h1 id="fps-camera-sample">FPS Camera Sample</h1>
 <p>Add the following settings to the Scene file:</p>
-<div class="highlight"><pre><span></span><code>    &quot;items&quot;: [
+<div class="highlight"><pre><span></span><code>    "items": [
         {
-            &quot;name&quot;: &quot;Camera&quot;,
-            &quot;type&quot;: &quot;camera&quot;
+            "name": "Camera",
+            "type": "camera"
         }
     ]
 </code></pre></div>
@@ -13116,8 +13116,8 @@ component TestPlayerFPSCamera
         hsPlayerSetDrawableSelf(false);
 
         // For camera
-        // Get assuming there is a camera type item with name &quot;Camera&quot; in the scene file
-        m_Camera = hsGetItem(&quot;Camera&quot;);
+        // Get assuming there is a camera type item with name "Camera" in the scene file
+        m_Camera = hsGetItem("Camera");
         if(m_Camera !== null) 
         {
             // Set as camera
@@ -13185,7 +13185,7 @@ component TestPlayerFPSCamera
             }
         }
 
-        // Record previous frame&#39;s mouse state
+        // Record previous frame's mouse state
         m_PreMouseLDown = IsNowDown;
         m_PreMousePosX = CurrentMousePosX;
         m_PreMousePosY = CurrentMousePosY;

@@ -13232,7 +13232,7 @@ int globalInt = 100;
 void GlobalFunc() {
 
     // Variable in local scope
-    string name = &quot;&quot;;
+    string name = "";
 }
 // Class in global scope
 class MyClass {
@@ -13304,7 +13304,7 @@ Variables can be declared in class scope, but cannot be initialized here.
     return x + y;
 }
 string CreateName(string firstName, string lastName) {
-    string name = firstName + &quot; &quot; + lastName;
+    string name = firstName + " " + lastName;
     return name;
 }
 void LogOutput(string log) {
@@ -13337,7 +13337,7 @@ void main() {
     MyAvatar avatar = new MyAvatar();
 
     // name can be accessed because it has public attached
-    avatar.name = &quot;my name&quot;;
+    avatar.name = "my name";
 
     int age;
 

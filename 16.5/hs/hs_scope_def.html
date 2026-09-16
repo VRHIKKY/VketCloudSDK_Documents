@@ -13232,7 +13232,7 @@ int globalInt = 100;
 void GlobalFunc() {
 
     // ローカルスコープの変数
-    string name = &quot;&quot;;
+    string name = "";
 }
 
 // グローバルスコープのクラス
@@ -13306,7 +13306,7 @@ const int immutable = 999;
 }
 
 string CreateName(string firstName, string lastName) {
-    string name = firstName + &quot; &quot; + lastName;
+    string name = firstName + " " + lastName;
     return name;
 }
 
@@ -13342,7 +13342,7 @@ void main() {
     MyAvatar avatar = new MyAvatar();
 
     // nameにpublicが付与されているのでアクセス可能
-    avatar.name = &quot;my name&quot;;
+    avatar.name = "my name";
 
     int age;
 

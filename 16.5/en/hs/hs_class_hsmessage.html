@@ -13551,9 +13551,9 @@
 <p>HSMessage can store data represented by int, float, bool, and string. Additionally, it allows you to set information about the sender, enabling bidirectional message communication.</p>
 <p>HSMessage provides many methods that return the instance itself as a return value, allowing you to chain methods together as shown in the example below:</p>
 <div class="highlight"><pre><span></span><code>// Create a message.
-HSMessage message = hsCreateSelfMessage(&quot;EnemyData&quot;).AddInt(&quot;damage&quot;, 120).AddBool(&quot;visible&quot;, false);
+HSMessage message = hsCreateSelfMessage("EnemyData").AddInt("damage", 120).AddBool("visible", false);
 // Send the message to the target Item.
-Item receiver = hsItemGet(&quot;enemyobj&quot;);
+Item receiver = hsItemGet("enemyobj");
 receiver.SendMessage(message);
 </code></pre></div>
 <h2 id="sending-messages">Sending Messages</h2>

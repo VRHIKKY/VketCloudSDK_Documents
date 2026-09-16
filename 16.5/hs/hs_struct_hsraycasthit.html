@@ -13212,14 +13212,14 @@
 <h2 id="_2">使用例</h2>
 <div class="highlight"><pre><span></span><code>HSRaycastHIT hit  = hsItemRaycast( Origin, Direction, length );
 if( hit !== null ) {
-    hsSystemOutput(&quot;*** hit.Name[%s]\n&quot; % hit.Item.GetName() );
-    hsSystemOutput(&quot;*** hit.Distance[%.2f]\n&quot; % hit.Distance );
-    hsSystemOutput(&quot;*** hit.Pos.x[%.2f]\n&quot; % hit.Pos.x );
-    hsSystemOutput(&quot;*** hit.Pos.y[%.2f]\n&quot; % hit.Pos.y );
-    hsSystemOutput(&quot;*** hit.Pos.z[%.2f]\n&quot; % hit.Pos.z );
-    hsSystemOutput(&quot;*** hit.Normal.x[%.2f]\n&quot; % hit.Normal.x );
-    hsSystemOutput(&quot;*** hit.Normal.y[%.2f]\n&quot; % hit.Normal.y );
-    hsSystemOutput(&quot;*** hit.Normal.z[%.2f]\n&quot; % hit.Normal.z );
+    hsSystemOutput("*** hit.Name[%s]\n" % hit.Item.GetName() );
+    hsSystemOutput("*** hit.Distance[%.2f]\n" % hit.Distance );
+    hsSystemOutput("*** hit.Pos.x[%.2f]\n" % hit.Pos.x );
+    hsSystemOutput("*** hit.Pos.y[%.2f]\n" % hit.Pos.y );
+    hsSystemOutput("*** hit.Pos.z[%.2f]\n" % hit.Pos.z );
+    hsSystemOutput("*** hit.Normal.x[%.2f]\n" % hit.Normal.x );
+    hsSystemOutput("*** hit.Normal.y[%.2f]\n" % hit.Normal.y );
+    hsSystemOutput("*** hit.Normal.z[%.2f]\n" % hit.Normal.z );
 }
 </code></pre></div>
 <p>hsRaycastItem() の戻り値として使う。対象がなければ hit に null が入る。</p>

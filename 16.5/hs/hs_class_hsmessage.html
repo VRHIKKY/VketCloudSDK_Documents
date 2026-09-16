@@ -13552,9 +13552,9 @@ HSMessage を生成し、任意のItemに対して送信することができま
 <p>HSMessageにはint, float, bool, stringで表現されるデータを保存できます。同時に送信者の情報も設定可能であり、これを利用してメッセージの送受信(往復)も可能になっています。</p>
 <p>なお、HSMessageには自身のインスタンスを戻り値として返すメソッドが多くあるので、以下の例のようにメソッドを繋げて処理を継続することができます。</p>
 <div class="highlight"><pre><span></span><code>// メッセージを作成する。
-HSMessage message = hsCreateSelfMessage(&quot;EnemyData&quot;).AddInt(&quot;damage&quot;, 120).AddBool(&quot;visible&quot;, false);
+HSMessage message = hsCreateSelfMessage("EnemyData").AddInt("damage", 120).AddBool("visible", false);
 // 送信対象のItemへメッセージを送信する
-Item receiver = hsItemGet(&quot;enemyobj&quot;);
+Item receiver = hsItemGet("enemyobj");
 receiver.SendMessage(message);
 </code></pre></div>
 <h2 id="_1">メッセージの送信</h2>

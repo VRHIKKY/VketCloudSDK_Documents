@@ -13133,7 +13133,7 @@ Unity : 2022.3.6f1<br>
     // デバッグモードでない場合は何もしない
     if (!hsSystemIsDebugMode()) return;
     if (condition) return;
-    hsSystemWriteLine(&quot;Error: %s&quot; % errorMessage);
+    hsSystemWriteLine("Error: %s" % errorMessage);
 }
 </code></pre></div>
 <div class="admonition warning">
@@ -13159,7 +13159,7 @@ Unity : 2022.3.6f1<br>
 <p>例えば、プレイヤーの位置が特定の範囲内にあることを確認したい場合：</p>
 <div class="highlight"><pre><span></span><code>// プレイヤーのx座標が0〜100の範囲内かチェック
 float posX = GetPlayerPosX();
-chsSystemAssert(posX &gt;= 0 &amp;&amp; posX &lt;= 100, &quot;プレイヤーが有効範囲外です！&quot;);
+chsSystemAssert(posX &gt;= 0 &amp;&amp; posX &lt;= 100, "プレイヤーが有効範囲外です！");
 </code></pre></div>
 
 

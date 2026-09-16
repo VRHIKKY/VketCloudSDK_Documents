@@ -13318,8 +13318,8 @@ void Test() {
     // 引数をrefで渡す
     RefFunc(x, y);
 
-    // -&gt; &quot;x=100, y=200&quot;
-    hsSystemOutput(&quot;x=%d, y=%d\n&quot; % x % y);
+    // -&gt; "x=100, y=200"
+    hsSystemOutput("x=%d, y=%d\n" % x % y);
 }
 </code></pre></div>
 </details>
@@ -13330,7 +13330,7 @@ void Test() {
 Person person = new Person();
 person.Construct(20);
 
-// -&gt; &quot;age: 20&quot;
+// -&gt; "age: 20"
 person.PrintAge(printer);
 
 class Person{
@@ -13347,7 +13347,7 @@ class Person{
 
 class Printer{
     public void PrintAge(Person person){
-        hsSystemWriteLine(&quot;age: %d&quot; % person.Age); 
+        hsSystemWriteLine("age: %d" % person.Age); 
     }
 }
 </code></pre></div>
@@ -13356,9 +13356,9 @@ class Printer{
 <p>ダブルクォーテーション 「""」で囲まれた文字列を、HeliScriptは文字列オブジェクトとして認識します。</p>
 <p>シングルクォーテーション 「''」 で1つの文字を囲むと、それは文字型になります。文字型は、内部的に32bitの整数値として表現されます。</p>
 <div class="highlight"><pre><span></span><code>// 文字列型のオブジェクト
-string str = &quot;VketCloud&quot;;
+string str = "VketCloud";
 // 文字型 (実際には整数値)
-int chr = &#39;V&#39;;
+int chr = 'V';
 </code></pre></div>
 <h2 id="_6">未初期化の変数の自動初期化</h2>
 <p>変数を定義した際に、初期化を行わなかった場合、型によって以下の初期値が自動で設定されます。</p>

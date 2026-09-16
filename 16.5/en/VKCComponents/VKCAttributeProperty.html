@@ -13346,41 +13346,41 @@ The defined Value can be read on HeliScript, or written by functions.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Sample Code (partial)</span>
 
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
-<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"GameObject"</span><span class="p">);</span>
 
 <span class="kt">string</span><span class="w"> </span><span class="n">Value</span><span class="p">;</span>
-<span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">);</span>
-<span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">// output will be &quot;Cloud&quot;</span>
+<span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">);</span>
+<span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"%s"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">// output will be "Cloud"</span>
 </code></pre></div>
 <h3 id="2-setproperty">2. SetProperty</h3>
 <p><code>Item.SetProperty(string Key)</code> will set a Property Value according to the Item's Key.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Sample Code (partial)</span>
 
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
-<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"GameObject"</span><span class="p">);</span>
 
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">,</span><span class="s">&quot;Chan&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">,</span><span class="s">"Chan"</span><span class="p">);</span>
 
 <span class="kt">string</span><span class="w"> </span><span class="n">Value</span><span class="p">;</span>
-<span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">);</span>
-<span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">// output will be &quot;Chan&quot;</span>
+<span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">);</span>
+<span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"%s"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">// output will be "Chan"</span>
 </code></pre></div>
 <h3 id="3-onchangedproperty">3. OnChangedProperty</h3>
 <p><code>OnChangedProperty(string Key, string Value)</code> is a callback triggered when a property is changed.<br>
 This will not be triggered if an exact same Value is entered to a Key on SetProperty, and change did not occur as a result.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Sample Code (partial)</span>
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
-<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"GameObject"</span><span class="p">);</span>
 
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;SDK&quot;</span><span class="p">,</span><span class="s">&quot;12.1&quot;</span><span class="p">);</span>
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">,</span><span class="s">&quot;Chan&quot;</span><span class="p">);</span>
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;SDK&quot;</span><span class="p">,</span><span class="s">&quot;12.2&quot;</span><span class="p">);</span>
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">,</span><span class="s">&quot;Chan&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"SDK"</span><span class="p">,</span><span class="s">"12.1"</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">,</span><span class="s">"Chan"</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"SDK"</span><span class="p">,</span><span class="s">"12.2"</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">,</span><span class="s">"Chan"</span><span class="p">);</span>
 
 <span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnChangedProperty</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">Key</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Value</span><span class="p">){</span>
-<span class="w">  </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;Changed %s, %s&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Key</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span>
-<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">Key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Vket&quot;</span><span class="p">){</span>
-<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;Vket Changed&quot;</span><span class="p">);</span><span class="w">  </span>
+<span class="w">  </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"Changed %s, %s"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Key</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">Key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">"Vket"</span><span class="p">){</span>
+<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"Vket Changed"</span><span class="p">);</span><span class="w">  </span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 

@@ -13235,7 +13235,7 @@ if (x == y) {
 <div class="highlight"><pre><span></span><code>int x = 0;
 while (x &lt; 100) {
     // x が 100より小さい間は、この処理を繰り返し実行する
-    hsSystemWriteLine(&quot;x=%d&quot; % x);
+    hsSystemWriteLine("x=%d" % x);
     ++x;
 }
 
@@ -13263,7 +13263,7 @@ while (true) {
 // ループの末尾で、反復子である ++i が毎回実行される。
 for (int i = 0; i &lt; 100; ++i) {
     // i が 100 より小さい間、この処理を繰り返す。
-    hsSystemWriteLine(&quot;i=%d&quot; % i);
+    hsSystemWriteLine("i=%d" % i);
 }
 </code></pre></div></p>
 <h2 id="break-continue">ループからの脱出 (break, continue)</h2>
@@ -13288,7 +13288,7 @@ for (int i = 0; i &lt; 100; ++i) {
         // ただし i = 5 の場合にだけ、continueで処理を切り上げるため、何も表示されない。
         continue;
     }
-    hsSystemWriteLine(&quot;i=%d&quot; % i);
+    hsSystemWriteLine("i=%d" % i);
 }
 </code></pre></div></p>
 <h2 id="switch-">switch - 多数の分岐条件を簡潔に記述</h2>
@@ -13309,13 +13309,13 @@ string message;
 
 switch (id) {
     case -1:
-        message = &quot;dummy account&quot;;
+        message = "dummy account";
         break;
     case 0:
-        message = &quot;root user&quot;;
+        message = "root user";
         break;
     default:
-        message = &quot;restricted user&quot;;
+        message = "restricted user";
         break;
 }
 </code></pre></div>
@@ -13325,11 +13325,11 @@ switch (id) {
     switch (status)
     {
         case 0:
-            return &quot;off&quot;;
+            return "off";
         default:
-            return &quot;on&quot;;
+            return "on";
     }
-    return &quot;on&quot;; // default節があっても、この記述が必要です
+    return "on"; // default節があっても、この記述が必要です
 }
 </code></pre></div>
 </details>
@@ -13373,11 +13373,11 @@ class NewComponent
         int y = 20;
     }
 
-    // -&gt; &quot;x:10&quot;
-    hsSystemOutput(&quot;x: %d&quot; % x);
+    // -&gt; "x:10"
+    hsSystemOutput("x: %d" % x);
 
     // スコープ外のためエラー
-    hsSystemOutput(&quot;y: %d&quot; % y); 
+    hsSystemOutput("y: %d" % y); 
 }
 </code></pre></div>
 

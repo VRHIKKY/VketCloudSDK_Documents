@@ -13246,24 +13246,24 @@
 <h3 id="step-1-prepare-the-js-file">Step 1: Prepare the JS File</h3>
 <p>Integrate the following <code>weather_api.js</code> into your world. This script fetches weather information for a specified city.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Web API to retrieve latitude and longitude from a location name</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">GEOCODE_BASE_URL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://nominatim.openstreetmap.org/search&quot;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">GEOCODE_BASE_URL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"https://nominatim.openstreetmap.org/search"</span><span class="p">;</span>
 
 <span class="c1">// Web API for weather forecast</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">WEATHER_BASE_URL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://api.open-meteo.com/v1/forecast&quot;</span><span class="p">;</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">QUERY_PARAMS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;current_weather=true&quot;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">WEATHER_BASE_URL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"https://api.open-meteo.com/v1/forecast"</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">QUERY_PARAMS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"current_weather=true"</span><span class="p">;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">fetchWeatherByCity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">(</span><span class="nx">city</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// Fetch latitude and longitude</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">GEOCODE_URL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">GEOCODE_BASE_URL</span><span class="si">}</span><span class="sb">?q=</span><span class="si">${</span><span class="nx">city</span><span class="si">}</span><span class="sb">&amp;format=json&amp;limit=1`</span><span class="p">;</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">geoResponse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">GEOCODE_URL</span><span class="p">);</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">geoResponse</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Failed to fetch geolocation&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">geoResponse</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"Failed to fetch geolocation"</span><span class="p">,</span><span class="w"> </span><span class="nx">geoResponse</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">geoData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">geoResponse</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">geoData</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Location not found&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"Location not found"</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -13271,11 +13271,11 @@
 
 <span class="w">    </span><span class="c1">// Fetch weather using obtained latitude and longitude</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">WEATHER_API_URL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">WEATHER_BASE_URL</span><span class="si">}</span><span class="sb">?latitude=</span><span class="si">${</span><span class="nx">lat</span><span class="si">}</span><span class="sb">&amp;longitude=</span><span class="si">${</span><span class="nx">lon</span><span class="si">}</span><span class="sb">&amp;</span><span class="si">${</span><span class="nx">QUERY_PARAMS</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Weather API URL:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">WEATHER_API_URL</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Weather API URL:"</span><span class="p">,</span><span class="w"> </span><span class="nx">WEATHER_API_URL</span><span class="p">);</span>
 
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">weatherResponse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">WEATHER_API_URL</span><span class="p">);</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">weatherResponse</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Failed to fetch weather&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">weatherResponse</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"Failed to fetch weather"</span><span class="p">,</span><span class="w"> </span><span class="nx">weatherResponse</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -13309,12 +13309,12 @@
 <span class="p">{</span>
 <span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">FetchWeather</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">customJS</span><span class="p">.</span><span class="n">fetchWeatherByCity</span><span class="p">(</span><span class="n">CacheWeather</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Tokyo&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">customJS</span><span class="p">.</span><span class="n">fetchWeatherByCity</span><span class="p">(</span><span class="n">CacheWeather</span><span class="p">,</span><span class="w"> </span><span class="s">"Tokyo"</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">CacheWeather</span><span class="p">(</span><span class="n">JsVal</span><span class="w"> </span><span class="n">val</span><span class="p">)</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">val</span><span class="p">.</span><span class="n">HasProperty</span><span class="p">(</span><span class="s">&quot;current_weather&quot;</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">val</span><span class="p">.</span><span class="n">HasProperty</span><span class="p">(</span><span class="s">"current_weather"</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
 <span class="w">        </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="n">val</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
 <span class="w">        </span><span class="c1">// Other processing</span>
 <span class="w">    </span><span class="p">}</span>

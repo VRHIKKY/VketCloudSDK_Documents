@@ -13202,9 +13202,9 @@ interface Shape {
 class Circle : Shape {
   // Since we implemented the Shape interface, we need to implement the Draw() method defined in Shape.
   public void Draw() {
-    hsSystemWriteLine(&quot; *   *&quot;);
-    hsSystemWriteLine(&quot;*     *&quot;);
-    hsSystemWriteLine(&quot; *   *&quot;);
+    hsSystemWriteLine(" *   *");
+    hsSystemWriteLine("*     *");
+    hsSystemWriteLine(" *   *");
   }
 }
 </code></pre></div>
@@ -13264,19 +13264,19 @@ interface Shape {
 class Circle : Shape {
   // Since we implemented the Shape interface, we need to implement the Draw() method defined in Shape
   public void Draw() {
-    hsSystemWriteLine(&quot; *   *&quot;);
-    hsSystemWriteLine(&quot;*     *&quot;);
-    hsSystemWriteLine(&quot; *   *&quot;);
+    hsSystemWriteLine(" *   *");
+    hsSystemWriteLine("*     *");
+    hsSystemWriteLine(" *   *");
   }
 }
 
 // Rectangle class implements the Shape interface
 class Rectangle : Shape {
   public void Draw() {
-    hsSystemWriteLine(&quot;*******&quot;);
-    hsSystemWriteLine(&quot;*******&quot;);
-    hsSystemWriteLine(&quot;*******&quot;);
-    hsSystemWriteLine(&quot;*******&quot;);
+    hsSystemWriteLine("*******");
+    hsSystemWriteLine("*******");
+    hsSystemWriteLine("*******");
+    hsSystemWriteLine("*******");
   }
 }
 
@@ -13289,12 +13289,12 @@ component Comp {
 
     // Assign Circle to Shape
     shape = new Circle();
-    hsSystemWriteLine(&quot;[Draw Circle]&quot;);
+    hsSystemWriteLine("[Draw Circle]");
     shape.Draw();
 
     // Assign Rectangle to Shape
     shape = new Rectangle();
-    hsSystemWriteLine(&quot;[Draw Rectangle]&quot;);
+    hsSystemWriteLine("[Draw Rectangle]");
     shape.Draw();
   }
 }

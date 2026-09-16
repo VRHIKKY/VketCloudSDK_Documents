@@ -13260,7 +13260,7 @@ while (true) {
 <div class="highlight"><pre><span></span><code>int i;
 for (i = 0; i &lt; 100; ++i) {
      // repeat this process 100 times
-     hsSystemOutput(&quot;%d\n&quot; %i);
+     hsSystemOutput("%d\n" %i);
 }
 </code></pre></div>
 <h2 id="exiting-loops-break-continue">Exiting Loops (break, continue)</h2>
@@ -13285,7 +13285,7 @@ for (i = 0; i &lt; 100; ++i) {
 <span class="w">        </span><span class="c1">// However, when i equals 5, continue skips the rest of the loop, so nothing is displayed.</span>
 <span class="w">        </span><span class="k">continue</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;i=%d&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"i=%d"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="switch-concise-description-of-many-branch-conditions">switch - Concise description of many branch conditions</h2>
@@ -13306,13 +13306,13 @@ string message;
 
 switch (id) {
      case -1:
-         message = &quot;dummy account&quot;;
+         message = "dummy account";
          break;
      case 0:
-         message = &quot;root user&quot;;
+         message = "root user";
          break;
      default:
-         message = &quot;restricted user&quot;;
+         message = "restricted user";
          break;
 }
 </code></pre></div>
@@ -13322,11 +13322,11 @@ switch (id) {
     switch (status)
     {
         case 0:
-            return &quot;off&quot;;
+            return "off";
         default:
-            return &quot;on&quot;;
+            return "on";
     }
-    return &quot;on&quot;; // This statement is required even if there is a default clause
+    return "on"; // This statement is required even if there is a default clause
 }
 </code></pre></div>
 </details>
@@ -13370,11 +13370,11 @@ class NewComponent
         int y = 20;
     }
 
-    // -&gt; &quot;x:10&quot;
-    hsSystemOutput(&quot;x: %d&quot; % x);
+    // -&gt; "x:10"
+    hsSystemOutput("x: %d" % x);
 
     // Error because y is out of scope
-    hsSystemOutput(&quot;y: %d&quot; % y); 
+    hsSystemOutput("y: %d" % y); 
 }
 </code></pre></div>
 

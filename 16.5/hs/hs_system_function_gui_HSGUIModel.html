@@ -14487,10 +14487,10 @@
 <h2 id="hsguimodel-types">HSGUIModel - Types</h2>
 <div class="highlight"><pre><span></span><code><span class="n">HSGUIModel</span><span class="p">()</span><span class="w"> </span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">m_Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_Type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_Platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_Language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_Show</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_Pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_Size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
@@ -14500,7 +14500,7 @@
 <span class="w">  </span><span class="n">m_RaycastTarget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_Pivot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2D</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_Pivot</span><span class="p">.</span><span class="n">SetXY</span><span class="p">(</span><span class="mf">0.5f</span><span class="p">,</span><span class="mf">0.5f</span><span class="p">);</span>
-<span class="w">  </span><span class="n">m_Anchor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CM&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Anchor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"CM"</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_ParamText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSTextModel</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_ParamImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSImageModel</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_ParamButton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSButtonModel</span><span class="p">();</span>
@@ -14654,12 +14654,12 @@
 <div class="highlight"><pre><span></span><code><span class="n">HSTextModel</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">  </span><span class="n">m_FontSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_FontFamily</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_FontFamily</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_Color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSColor</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_URLColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSColor</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_URLColor</span><span class="p">.</span><span class="n">SetRGB</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="mf">0.0f</span><span class="p">,</span><span class="mf">1.0f</span><span class="p">);</span>
-<span class="w">  </span><span class="n">m_Text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_Alignment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;LT&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Alignment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"LT"</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_CharaSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_LineSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_OverflowWrap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
@@ -14703,7 +14703,7 @@
 <h2 id="hsimagemodel-types">HSImageModel - Types</h2>
 <div class="highlight"><pre><span></span><code><span class="n">HSImageModel</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">m_Uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_Uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_UVArea</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRect</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_LTRB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRectLTRB</span><span class="p">();</span>
 <span class="p">}</span>
@@ -14723,9 +14723,9 @@
 <h2 id="hsbuttonmodel-types">HSButtonModel - Types</h2>
 <div class="highlight"><pre><span></span><code><span class="n">HSButtonModel</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">  </span><span class="n">m_FileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_OnCursorFileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="n">m_DownFileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_FileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_OnCursorFileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_DownFileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">""</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_ClickAreaSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HS2DI</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_UVArea</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRect</span><span class="p">();</span>
 <span class="w">  </span><span class="n">m_LTRB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HSRectLTRB</span><span class="p">();</span>

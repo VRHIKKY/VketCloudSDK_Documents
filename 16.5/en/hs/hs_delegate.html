@@ -13445,7 +13445,7 @@ A delegate type variable can store a reference to a function and also call a sto
 <h2 id="declaring-a-delegate">Declaring a Delegate</h2>
 <p>To use a delegate, you need to declare a delegate type by specifying the function's signature (return type and parameter types).</p>
 <p>A delegate type is declared in the following format:</p>
-<div class="highlight"><pre><span></span><code>delegate &quot;ReturnType&quot; &quot;DelegateTypeName&quot;(&quot;Parameter1&quot;, &quot;Parameter2&quot;, ...);
+<div class="highlight"><pre><span></span><code>delegate "ReturnType" "DelegateTypeName"("Parameter1", "Parameter2", ...);
 </code></pre></div>
 <p>Here is an example of declaring a specific delegate type.
  In this example, a <code>PerformAction</code> type is defined with a return type of <code>int</code>, the first parameter type is <code>string</code>, and the second parameter type is <code>bool</code>.</p>
@@ -13495,7 +13495,7 @@ class SampleClass{
 <span class="n">action</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">TestFunc</span><span class="p">;</span>
 
 <span class="c1">// Invoke the registered function (TestFunc)</span>
-<span class="n">action</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
+<span class="n">action</span><span class="p">(</span><span class="s">"id"</span><span class="p">,</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
 </code></pre></div>
 <h2 id="registering-functions">Registering Functions</h2>
 <ul>
@@ -13507,7 +13507,7 @@ class SampleClass{
 <span class="w">    </span><span class="c1">// ...</span>
 <span class="p">}</span>
 
-<span class="c1">// Prefix the function name with &quot;&amp;&quot;</span>
+<span class="c1">// Prefix the function name with "&amp;"</span>
 <span class="n">PerformAction</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">TestFunc</span><span class="p">;</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="c1">// Define a class method</span>

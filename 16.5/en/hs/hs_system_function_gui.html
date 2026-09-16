@@ -14027,15 +14027,15 @@ Schedules a layer for deletion.</p>
 <p>HelScript Example:
 <div class="highlight"><pre><span></span><code>HSGUIModel model;
 model = new HSGUIModel();
-model.SetName(&quot;test_button&quot;);
+model.SetName("test_button");
 model.SetShow(true);
-model.SetType(&quot;button&quot;);
+model.SetType("button");
 HS2DI size;
 size = new HS2DI();
 size.SetXY(100,100);
 model.SetSize(size);
-model.GetButtonModel().SetFileName(&quot;test_button.png&quot;);
-hsCanvasAddGUI(&quot;HUD&quot;,false,model);
+model.GetButtonModel().SetFileName("test_button.png");
+hsCanvasAddGUI("HUD",false,model);
 </code></pre></div></p>
 <p>For details about HSGUIModel class, see <a href="hs_system_function_gui_HSGUIModel.html">HSGUIModel - Summary</a>.</p>
 <hr />

@@ -13324,7 +13324,7 @@ A code example is shown below as an implementation of HelloWorld.hs.</p>
 <span class="w">     </span><span class="k">public</span><span class="w"> </span><span class="nf">HelloWorld</span><span class="p">()</span>
 <span class="w">     </span><span class="p">{</span>
 <span class="w">     </span><span class="c1">//Output to debug log</span>
-<span class="w">     </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
+<span class="w">     </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">);</span>
 <span class="w">     </span><span class="p">}</span>
 
 <span class="w">     </span><span class="c1">//Update function: executed every frame</span>
@@ -13363,12 +13363,12 @@ For example, a script that outputs a message when the exampleObject under <a hre
 <span class="w">     </span><span class="k">public</span><span class="w"> </span><span class="nf">example</span><span class="p">()</span>
 <span class="w">     </span><span class="p">{</span>
 <span class="w">         </span><span class="c1">//Refer to Items: Specify items whose name ends by .heo. This instance, enter the object having HEOField</span>
-<span class="w">         </span><span class="n">ex_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">);</span>
+<span class="w">         </span><span class="n">ex_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"World"</span><span class="p">);</span>
 
 <span class="w">         </span><span class="n">ex_isPlayerInit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
 <span class="w">         </span><span class="c1">//Since Item type is HEOfield, the nodes of the objects under can be obtained</span>
-<span class="w">         </span><span class="n">ex_ItemNodeIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ex_Item</span><span class="p">.</span><span class="n">GetNodeIndexByName</span><span class="p">(</span><span class="s">&quot;exampleObject&quot;</span><span class="p">);</span>
+<span class="w">         </span><span class="n">ex_ItemNodeIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ex_Item</span><span class="p">.</span><span class="n">GetNodeIndexByName</span><span class="p">(</span><span class="s">"exampleObject"</span><span class="p">);</span>
 <span class="w">     </span><span class="p">}</span>
 
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span>
@@ -13386,7 +13386,7 @@ For example, a script that outputs a message when the exampleObject under <a hre
 <span class="w">         </span><span class="c1">//When the click target matches the node obtained previously:</span>
 <span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">NodeIndex</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ex_ItemNodeIndex</span><span class="p">){</span>
 <span class="w">        </span><span class="c1">//Display message on debug console</span>
-<span class="w">         </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;exObj Clicked.&quot;</span><span class="p">);</span>
+<span class="w">         </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"exObj Clicked."</span><span class="p">);</span>
 <span class="w">         </span><span class="p">}</span>
 <span class="w">     </span><span class="p">}</span>
 <span class="p">}</span>

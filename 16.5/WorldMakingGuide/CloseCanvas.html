@@ -13186,39 +13186,39 @@ Vket Cloud : エントランスにて確認できるダイアログの例</p>
 <h2 id="_2">手順</h2>
 <h3 id="1">①該当レイヤーにタップ判定用の透明なボタンを追加</h3>
 <div class="highlight"><pre><span></span><code>{
-  &quot;Name&quot;: &quot;popup_button_close_bg&quot;,
-  &quot;Type&quot;: &quot;button&quot;,
-  &quot;Platform&quot;: &quot;&quot;,
-  &quot;Language&quot;: &quot;&quot;,
-  &quot;Portrait&quot;: &quot;&quot;,
-  &quot;ParamButton&quot;: {
-    &quot;FileName&quot;: &quot;&quot;,
-    &quot;OnCursorFileName&quot;: &quot;&quot;,
-    &quot;DownFileName&quot;: &quot;&quot;
+  "Name": "popup_button_close_bg",
+  "Type": "button",
+  "Platform": "",
+  "Language": "",
+  "Portrait": "",
+  "ParamButton": {
+    "FileName": "",
+    "OnCursorFileName": "",
+    "DownFileName": ""
   },
-  &quot;GUIAction&quot;: [
+  "GUIAction": [
     {
-      &quot;SetShowLayer&quot;: {
-        &quot;Name&quot;: &quot;GameWindow&quot;,
-        &quot;Show&quot;: false
+      "SetShowLayer": {
+        "Name": "GameWindow",
+        "Show": false
       }
     }
   ],
-  &quot;Show&quot;: true,
-  &quot;Pos&quot;: [
+  "Show": true,
+  "Pos": [
     0,
     0
   ],
-  &quot;Size&quot;: [
+  "Size": [
     6000,
     6000
   ],
-  &quot;Z&quot;: 0,
-  &quot;Pivot&quot;: [
+  "Z": 0,
+  "Pivot": [
     0.5,
     0.5
   ],
-  &quot;Anchor&quot;: &quot;CM&quot;
+  "Anchor": "CM"
 },
 </code></pre></div>
 <p>ダイアログを構成しているCanvasのJsonファイルに、透明な大きなボタンを追加します。<br />
@@ -13242,36 +13242,36 @@ Vket Cloud : エントランスにて確認できるダイアログの例</p>
 判定阻害用の透明なbuttonは376 * 282に設定するとちょうど良くなります。</p>
 <p>ClickAreaSizeにてクリック範囲の大きさを指定できるため、このように設定します。</p>
 <div class="highlight"><pre><span></span><code>{
-          &quot;Name&quot;: &quot;dialog_bg&quot;,
-          &quot;Type&quot;: &quot;button&quot;,
-          &quot;Platform&quot;: &quot;&quot;,
-          &quot;Language&quot;: &quot;&quot;,
-          &quot;Portrait&quot;: &quot;&quot;,
-          &quot;ParamButton&quot;: {
-            &quot;FileName&quot;: &quot;.\gui\common_dialog_bg.png&quot;,
-            &quot;OnCursorFileName&quot;: &quot;.\gui\common_dialog_bg.png&quot;,
-            &quot;DownFileName&quot;: &quot;.\gui\common_dialog_bg.png&quot;
+          "Name": "dialog_bg",
+          "Type": "button",
+          "Platform": "",
+          "Language": "",
+          "Portrait": "",
+          "ParamButton": {
+            "FileName": ".\gui\common_dialog_bg.png",
+            "OnCursorFileName": ".\gui\common_dialog_bg.png",
+            "DownFileName": ".\gui\common_dialog_bg.png"
           },
-          &quot;GUIAction&quot;: [],
-          &quot;Show&quot;: true,
-          &quot;Pos&quot;: [
+          "GUIAction": [],
+          "Show": true,
+          "Pos": [
             0,
             0
           ],
-          &quot;Size&quot;: [
+          "Size": [
             550,
             400
           ],
-          &quot;ClickAreaSize&quot; : [
+          "ClickAreaSize" : [
             376,
             282
           ]
-          &quot;Z&quot;: 1,
-          &quot;Pivot&quot;: [
+          "Z": 1,
+          "Pivot": [
             0.5,
             0.5
           ],
-          &quot;Anchor&quot;: &quot;CM&quot;
+          "Anchor": "CM"
         },
 </code></pre></div>
 <p>何もしないボタンなので、アクションは空にします。</p>

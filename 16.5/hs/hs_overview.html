@@ -13324,7 +13324,7 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">HelloWorld</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">//デバッグログに出力</span>
-<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="c1">//アップデート関数：毎フレーム実行されます</span>
@@ -13362,12 +13362,12 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">example</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">//Itemを認識　Item名は.heoになっている物を指定する　今回はVKC Item Field指定</span>
-<span class="w">        </span><span class="n">ex_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ex_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"World"</span><span class="p">);</span>
 
 <span class="w">        </span><span class="n">ex_isPlayerInit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 
 <span class="w">        </span><span class="c1">//ItemがVKC Item Fieldなので、その傘下にあるオブジェクトのノードを取得可能</span>
-<span class="w">        </span><span class="n">ex_ItemNodeIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ex_Item</span><span class="p">.</span><span class="n">GetNodeIndexByName</span><span class="p">(</span><span class="s">&quot;exampleObject&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ex_ItemNodeIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ex_Item</span><span class="p">.</span><span class="n">GetNodeIndexByName</span><span class="p">(</span><span class="s">"exampleObject"</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span>
@@ -13386,7 +13386,7 @@ HelloWorld.hsの実装として以下に例を示します。</p>
 <span class="w">        </span><span class="c1">//クリック対象と上で取得したノードが一致したとき</span>
 <span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">NodeIndex</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ex_ItemNodeIndex</span><span class="p">){</span>
 <span class="w">            </span><span class="c1">//メッセージを表示</span>
-<span class="w">            </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;exObj Clicked.&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"exObj Clicked."</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>

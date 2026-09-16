@@ -13413,24 +13413,24 @@
 <div class="highlight"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
 
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
-<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"GameObject"</span><span class="p">);</span>
 
 <span class="kt">string</span><span class="w"> </span><span class="n">Value</span><span class="p">;</span>
-<span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">);</span>
-<span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">//「Cloud」と出力される</span>
+<span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">);</span>
+<span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"%s"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">//「Cloud」と出力される</span>
 </code></pre></div>
 <h3 id="2-setproperty">2. SetProperty</h3>
 <p><code>Item.SetProperty(string Key)</code>では、アイテムが持つプロパティのKeyに対応するValueを変更します。</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
 
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
-<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"GameObject"</span><span class="p">);</span>
 
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">,</span><span class="s">&quot;Chan&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">,</span><span class="s">"Chan"</span><span class="p">);</span>
 
 <span class="kt">string</span><span class="w"> </span><span class="n">Value</span><span class="p">;</span>
-<span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">);</span>
-<span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">//「Chan」と出力される</span>
+<span class="n">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">);</span>
+<span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"%s"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span><span class="w"> </span><span class="c1">//「Chan」と出力される</span>
 </code></pre></div>
 <h3 id="3-onchangedproperty">3. OnChangedProperty</h3>
 <p><code>OnChangedProperty(string Key, string Value)</code>は、プロパティの変更が発生した際に実行されるコールバックです。<br>
@@ -13438,17 +13438,17 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <div class="highlight"><pre><span></span><code><span class="c1">// サンプルコード(コンポーネント構造無視)</span>
 
 <span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
-<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;GameObject&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"GameObject"</span><span class="p">);</span>
 
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;SDK&quot;</span><span class="p">,</span><span class="s">&quot;12.1&quot;</span><span class="p">);</span>
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">,</span><span class="s">&quot;Chan&quot;</span><span class="p">);</span>
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;SDK&quot;</span><span class="p">,</span><span class="s">&quot;12.2&quot;</span><span class="p">);</span>
-<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;Vket&quot;</span><span class="p">,</span><span class="s">&quot;Chan&quot;</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"SDK"</span><span class="p">,</span><span class="s">"12.1"</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">,</span><span class="s">"Chan"</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"SDK"</span><span class="p">,</span><span class="s">"12.2"</span><span class="p">);</span>
+<span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"Vket"</span><span class="p">,</span><span class="s">"Chan"</span><span class="p">);</span>
 
 <span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnChangedProperty</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">Key</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Value</span><span class="p">){</span>
-<span class="w">  </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;Changed %s, %s&quot;</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Key</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span>
-<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">Key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Vket&quot;</span><span class="p">){</span>
-<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;Vket Changed&quot;</span><span class="p">);</span><span class="w">  </span>
+<span class="w">  </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"Changed %s, %s"</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Key</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">Value</span><span class="p">);</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">Key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">"Vket"</span><span class="p">){</span>
+<span class="w">    </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"Vket Changed"</span><span class="p">);</span><span class="w">  </span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 
@@ -13486,13 +13486,13 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="n">exampleA</span><span class="p">{</span>
 <span class="w">    </span><span class="n">HP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
-<span class="w">    </span><span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;Monster&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"Monster"</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
 
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">damage</span><span class="p">(){</span>
 <span class="w">    </span><span class="n">HP</span><span class="o">--</span><span class="p">;</span>
 <span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">HP</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">){</span>
-<span class="w">      </span><span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">&quot;status&quot;</span><span class="p">,</span><span class="s">&quot;death&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="n">m_Item</span><span class="p">.</span><span class="n">SetProperty</span><span class="p">(</span><span class="s">"status"</span><span class="p">,</span><span class="s">"death"</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
@@ -13506,18 +13506,18 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <span class="w">  </span><span class="p">}</span>
 
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnChangedProperty</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">Key</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Value</span><span class="p">){</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;status&quot;</span><span class="p">){</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">"status"</span><span class="p">){</span>
 <span class="w">      </span><span class="k">switch</span><span class="p">(</span><span class="n">Value</span><span class="p">){</span>
-<span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;alive&quot;</span>
-<span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;モンスターが　あらわれた！&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">"alive"</span>
+<span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"モンスターが　あらわれた！"</span><span class="p">);</span>
 <span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <span class="w">          </span><span class="k">break</span><span class="p">;</span>
-<span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;poison&quot;</span>
-<span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;モンスターが　どくを　あびた！&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">"poison"</span>
+<span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"モンスターが　どくを　あびた！"</span><span class="p">);</span>
 <span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
 <span class="w">          </span><span class="k">break</span><span class="p">;</span>
-<span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;death&quot;</span>
-<span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">&quot;モンスターを　やっつけた！&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">case</span><span class="p">:</span><span class="w"> </span><span class="s">"death"</span>
+<span class="w">          </span><span class="n">hsSystemWriteLine</span><span class="p">(</span><span class="s">"モンスターを　やっつけた！"</span><span class="p">);</span>
 <span class="w">          </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
 <span class="w">          </span><span class="k">break</span><span class="p">;</span>
 <span class="w">      </span><span class="p">}</span>
@@ -13535,10 +13535,10 @@ SetPropertyで特定のキーに対し同一の値が入力され変更が発生
 <span class="w">  </span><span class="n">Item</span><span class="w"> </span><span class="n">m_Item</span><span class="p">;</span>
 
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="n">exampleC</span><span class="p">{</span>
-<span class="w">    </span><span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">&quot;Monster&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">HP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;HP&quot;</span><span class="p">).</span><span class="n">ToInt</span><span class="p">();</span>
-<span class="w">    </span><span class="n">damage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;damage&quot;</span><span class="p">).</span><span class="n">ToInt</span><span class="p">();</span>
-<span class="w">    </span><span class="n">skill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">&quot;skill&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">m_Item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hsItemGet</span><span class="p">(</span><span class="s">"Monster"</span><span class="p">);</span>
+<span class="w">    </span><span class="n">HP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">"HP"</span><span class="p">).</span><span class="n">ToInt</span><span class="p">();</span>
+<span class="w">    </span><span class="n">damage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">"damage"</span><span class="p">).</span><span class="n">ToInt</span><span class="p">();</span>
+<span class="w">    </span><span class="n">skill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_Item</span><span class="p">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s">"skill"</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 

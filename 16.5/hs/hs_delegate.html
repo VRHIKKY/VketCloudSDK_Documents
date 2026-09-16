@@ -13445,7 +13445,7 @@
 <h2 id="_2">デリゲートを宣言する</h2>
 <p>デリゲートを利用するには、関数のシグネチャ(戻り値や引数の型情報)を指定して、デリゲート型を宣言する必要があります。</p>
 <p>以下の形式で、デリゲート型の宣言を行います。</p>
-<div class="highlight"><pre><span></span><code>delegate &quot;戻り値&quot; &quot;デリゲート型名&quot;(&quot;引数1&quot;, &quot;引数2&quot;, ...);
+<div class="highlight"><pre><span></span><code>delegate "戻り値" "デリゲート型名"("引数1", "引数2", ...);
 </code></pre></div>
 <p>具体的なデリゲート型の宣言の例です。
 ここでは、「戻り値の型が int で、第1引数の型が string、第2引数の型が bool」である、PerformAction型を定義しています。</p>
@@ -13495,7 +13495,7 @@ PerformAction action;
 action += &amp;TestFunc;
 
 // 登録した関数(TestFunc)を呼び出し
-action(&quot;id&quot;, true);
+action("id", true);
 </code></pre></div>
 <h2 id="_4">関数の登録について</h2>
 <ul>
@@ -13507,7 +13507,7 @@ int TestFunc(string text, bool flag) {
     // ...
 }
 
-// 関数名の前に &quot;&amp;&quot; が必要
+// 関数名の前に "&amp;" が必要
 PerformAction action = &amp;TestFunc;
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>// クラスメソッドを定義

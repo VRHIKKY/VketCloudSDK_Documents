@@ -13571,17 +13571,17 @@
 
      public CAreaCollider()
      {
-         m_Item = hsItemGet(&quot;component name&quot;);
+         m_Item = hsItemGet("component name");
      }
 
      public void OnEnterAreaCollider()
      {
-         hsSystemOutput(&quot;OnEnterAreaCollider&quot; + m_Item.GetName() + &quot;\n&quot;);
+         hsSystemOutput("OnEnterAreaCollider" + m_Item.GetName() + "\n");
      }
 
      public void OnLeaveAreaCollider()
      {
-         hsSystemOutput(&quot;OnLeaveAreaCollider&quot; + m_Item.GetName() + &quot;\n&quot;);
+         hsSystemOutput("OnLeaveAreaCollider" + m_Item.GetName() + "\n");
      }
 }
 </code></pre></div>
@@ -13594,13 +13594,13 @@ Currently, only box collider collision shapes are supported.  </p>
     {
         Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
-        hsSystemOutput(&quot;[OnItemEnterCollider] ItemName: %s, NodeName: %s\n&quot; % CollidedItem.GetName() % NodeName);
+        hsSystemOutput("[OnItemEnterCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
     public void OnItemLeaveCollider(int ItemInstanceID, int NodeIndex)
     {
         Item CollidedItem = hsItemGetByInstanceID(ItemInstanceID);
         string NodeName = CollidedItem.GetNodeNameByIndex(NodeIndex);
-        hsSystemOutput(&quot;[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n&quot; % CollidedItem.GetName() % NodeName);
+        hsSystemOutput("[OnItemLeaveCollider] ItemName: %s, NodeName: %s\n" % CollidedItem.GetName() % NodeName);
     }
 }
 </code></pre></div>
@@ -13639,8 +13639,8 @@ By clicking on an avatar beforehand, and clicking an Item's Node after, this wil
 {
      public void OnClickedButton(string layerName, string buttonname)
      {
-         if (layerName == &quot;MenuUI&quot;) {
-             hsSystemOutput(&quot;Button Clicked! :&quot; + buttonname + &quot;\n&quot;);
+         if (layerName == "MenuUI") {
+             hsSystemOutput("Button Clicked! :" + buttonname + "\n");
          }
      }
 }
@@ -13666,8 +13666,8 @@ m_PhysicsIDCube;
         m_Field = new Item();
         m_Field._SetItemFromStructPageNumber(system.GetStructPageNumber());
 
-        m_PhysicsIDFloor = m_Field.GetPhysicsIDByNodeName(&quot;Floor&quot;);
-        m_PhysicsIDCube = m_Field.GetPhysicsIDByNodeName(&quot;Cube&quot;);
+        m_PhysicsIDFloor = m_Field.GetPhysicsIDByNodeName("Floor");
+        m_PhysicsIDCube = m_Field.GetPhysicsIDByNodeName("Cube");
     }
 
     public void OnPhysicsCollision(int ID0, int ID1)
