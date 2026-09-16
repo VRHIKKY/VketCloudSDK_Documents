@@ -1,3 +1,22 @@
+# Version 16.5.9
+
+## SDK (Editor Extension Tool for Creating Worlds in Unity)
+
+### New Features
+
+- **Default Avatars > BloomStyle / UrbanStyle**
+    - Added "BloomStyle" and "UrbanStyle" to the default avatars
+    - Added new VRM/HRM (png, astc, etc2) files and Japanese/English thumbnail images
+    - Registered them in the initial avatar list so they can be selected as the initial avatar in the world settings
+    - Changed the first avatar shown in the list from Vket-chan to UrbanStyle
+
+### Tool Improvements
+
+- **HEOTexComp** (`HEOTexComp.py` / `HEOTexComp` / `HEOTexComp.exe`)
+    - Fixed an issue where the outdated HEOTexComp corrupted files when running texture compression with the latest HEO version
+
+---
+
 # Version 16.5.8
 
 ## SDK (Editor Extension Tool for Creating Worlds in Unity)

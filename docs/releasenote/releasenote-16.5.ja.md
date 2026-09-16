@@ -1,3 +1,22 @@
+# Version 16.5.9
+
+## SDK(Unityでワールドを作るためのEditor拡張ツール)
+
+### 新機能
+
+- **デフォルトアバター > BloomStyle / UrbanStyle**
+    - デフォルトアバターに「BloomStyle」「UrbanStyle」を追加
+    - 新規VRM/HRM(png・astc・etc2)ファイルと日本語・英語サムネイル画像を追加
+    - 初期アバター一覧に登録し、ワールド設定の初期アバターとして選択可能に
+    - 一番最初に表示されるアバターをVketちゃんからUrbanStyleに変更
+
+### ツール改善
+
+- **HEOTexComp**（`HEOTexComp.py` / `HEOTexComp` / `HEOTexComp.exe`）
+    - HEOTexCompが古く、テクスチャ圧縮を実行したときに最新のHEOバージョンだとファイルが壊れる問題を修正
+
+---
+
 # Version 16.5.8
 
 ## SDK(Unityでワールドを作るためのEditor拡張ツール)
