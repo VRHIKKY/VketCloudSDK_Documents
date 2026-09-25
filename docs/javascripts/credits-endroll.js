@@ -8,9 +8,18 @@
   // スクロール速度 (px/秒)
   var SPEED = 70;
 
+  // 3D シーンのモジュールは、このスクリプトと同じフォルダに置く
+  var SCENE_URL = document.currentScript
+    ? new URL("credits-endroll-scene.js", document.currentScript.src).href
+    : null;
+  // 画面の端に近い文字ほど奥に傾ける角度 (度)
+  var DRUM_ANGLE = 38;
+
   var progress = 0;
   var overlay = null;
   var animation = null;
+  var stopScene = null;
+  var drumFrame = 0;
 
   function isTyping(target) {
     if (!target) return false;
@@ -124,7 +133,58 @@
       animation.onfinish = function () {
         overlay && overlay.classList.add("is-finished");
       };
+
+      startDrum(roll, overlay);
+      stopScene = startScene(overlay, getProgress);
     });
+  }
+
+  // スクロールの進み具合 (0〜1)
+  function getProgress() {
+    if (!animation) return 0;
+    var timing = animation.effect.getComputedTiming();
+    if (timing.progress === null) return animation.playState === "finished" ? 1 : 0;
+    return timing.progress;
+  }
+
+  // 文字を画面上の位置に応じて奥へ傾け、ドラムが回るように見せる
+  function startDrum(roll, host) {
+    var items = roll.querySelectorAll(
+      ".vkc-credits__kicker, .vkc-credits__title, .vkc-credits__team, " +
+      ".vkc-credits__role, .vkc-credits__names li, .vkc-credits__logo"
+    );
+    function frame() {
+      var half = host.clientHeight / 2;
+      for (var i = 0; i < items.length; i++) {
+        var rect = items[i].getBoundingClientRect();
+        var n = Math.max(-1.2, Math.min(1.2, (rect.top + rect.height / 2 - half) / half));
+        items[i].style.transform =
+          "perspective(900px) rotateX(" + (-n * DRUM_ANGLE).toFixed(2) + "deg) " +
+          "translateZ(" + (-Math.abs(n) * 140).toFixed(1) + "px)";
+      }
+      drumFrame = requestAnimationFrame(frame);
+    }
+    frame();
+  }
+
+  // Three.js の背景シーンを読み込む。失敗しても黒背景のまま再生を続ける
+  function startScene(host, getProgressFn) {
+    var stopped = false;
+    var dispose = null;
+    if (SCENE_URL) {
+      import(SCENE_URL)
+        .then(function (module) { return module.createScene(host, getProgressFn); })
+        .then(function (cleanup) {
+          if (stopped) cleanup(); else dispose = cleanup;
+        })
+        .catch(function (error) {
+          console.warn("[credits] 3D scene is unavailable:", error);
+        });
+    }
+    return function () {
+      stopped = true;
+      if (dispose) dispose();
+    };
   }
 
   function close() {
@@ -134,6 +194,12 @@
     if (animation) {
       animation.cancel();
       animation = null;
+    }
+    cancelAnimationFrame(drumFrame);
+    if (stopScene) {
+      // フェードアウトが終わってから 3D シーンを破棄する
+      setTimeout(stopScene, 400);
+      stopScene = null;
     }
     closing.classList.remove("is-visible");
     document.documentElement.classList.remove("vkc-endroll-open");
