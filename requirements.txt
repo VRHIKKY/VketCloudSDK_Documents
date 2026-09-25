@@ -3,3 +3,4 @@ mkdocs-material==9.5.18
 mike
 mkdocs-static-i18n==1.2.2
 pymdown-extensions
+mkdocs-copy-to-llm==0.2.10
