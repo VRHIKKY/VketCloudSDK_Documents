@@ -1,13 +1,9 @@
 // クレジットページのエンドロール演出
-// どのページでもコナミコマンド (↑↑↓↓←→←→BA) を入力すると再生されます。
+// どのページでも「chameleon」とキー入力すると再生されます。
 (function () {
   "use strict";
 
-  var KONAMI = [
-    "arrowup", "arrowup", "arrowdown", "arrowdown",
-    "arrowleft", "arrowright", "arrowleft", "arrowright",
-    "b", "a"
-  ];
+  var COMMAND = "chameleon".split("");
   var HASH = "#endroll";
   // スクロール速度 (px/秒)
   var SPEED = 70;
@@ -44,14 +40,17 @@
     if (isTyping(event.target)) return;
 
     var key = (event.key || "").toLowerCase();
-    if (key === KONAMI[progress]) {
+    if (key === COMMAND[progress]) {
       progress++;
-      if (progress === KONAMI.length) {
+      if (progress === COMMAND.length) {
         progress = 0;
+        // 最後の "n" はテーマの「次のページ」ショートカットと重なるので止める
+        event.preventDefault();
+        event.stopImmediatePropagation();
         trigger();
       }
     } else {
-      progress = key === KONAMI[0] ? 1 : 0;
+      progress = key === COMMAND[0] ? 1 : 0;
     }
   }
 
@@ -82,7 +81,8 @@
     closeButton.addEventListener("click", close);
 
     var track = document.createElement("div");
-    track.className = "vkc-endroll__track";
+    // ページ本文と同じスタイルを当てるため md-typeset を付ける
+    track.className = "vkc-endroll__track md-typeset";
     var roll = source.cloneNode(true);
     roll.classList.add("vkc-credits--roll");
     track.appendChild(roll);
@@ -143,7 +143,8 @@
     }
   }
 
-  document.addEventListener("keydown", onKeydown);
+  // テーマのショートカットより先に受け取るため、window のキャプチャで登録する
+  window.addEventListener("keydown", onKeydown, true);
 
   document.addEventListener("DOMContentLoaded", function () {
     var button = document.querySelector("[data-vkc-endroll-play]");

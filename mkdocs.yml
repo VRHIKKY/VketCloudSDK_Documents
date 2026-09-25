@@ -74,7 +74,7 @@ extra:
     
 use_directory_urls: false
 
-# クレジットページはナビに載せず、フッターとコナミコマンドからのみ開く
+# クレジットページはナビに載せず、フッターと隠しコマンド (chameleon) からのみ開く
 not_in_nav: |
   /credits.*.md
 
