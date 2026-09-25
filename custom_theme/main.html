@@ -42,6 +42,8 @@
           <div class="md-copyright">
             {{ config.theme.footer.copyright }}
           </div>
+          {% set credits_path = 'en/credits.html' if i18n_page_locale == 'en' else 'credits.html' %}
+          <a class="md-footer-credits" id="footer-credits-link" href="{{ credits_path | url }}">Credits</a>
         </div>
         <div class="md-footer-nav__section md-footer-social">
           <div class="md-footer-social__links">

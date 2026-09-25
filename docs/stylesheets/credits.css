@@ -1,0 +1,246 @@
+/* クレジットページとエンドロール演出 */
+
+.vkc-credits {
+    --vkc-credits-bg: #05070d;
+    --vkc-credits-fg: #f2f4f8;
+    --vkc-credits-muted: #8e9bb3;
+    --vkc-credits-accent: #6fa8ff;
+
+    margin: 1.5rem 0;
+    padding: 3rem 1rem;
+    border-radius: 0.6rem;
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(0, 82, 170, 0.35), transparent 70%),
+        var(--vkc-credits-bg);
+    color: var(--vkc-credits-fg);
+    text-align: center;
+}
+
+.md-typeset .vkc-credits p,
+.md-typeset .vkc-credits ul {
+    margin: 0;
+}
+
+.vkc-credits__opening {
+    margin-bottom: 3.5rem;
+}
+
+.md-typeset .vkc-credits__kicker {
+    color: var(--vkc-credits-muted);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.md-typeset .vkc-credits__title {
+    margin-top: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.vkc-credits__group + .vkc-credits__group {
+    margin-top: 3rem;
+}
+
+.md-typeset .vkc-credits .vkc-credits__team {
+    margin: 0 0 1.2rem;
+    color: var(--vkc-credits-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+}
+
+.md-typeset .vkc-credits .vkc-credits__role {
+    margin: 1.4rem 0 0.5rem;
+    color: var(--vkc-credits-muted);
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+.md-typeset .vkc-credits .vkc-credits__names {
+    padding: 0;
+    list-style: none;
+}
+
+.md-typeset .vkc-credits .vkc-credits__names li {
+    margin: 0.35rem 0;
+    font-size: 0.95rem;
+}
+
+.md-typeset .vkc-credits a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+    text-underline-offset: 0.2em;
+}
+
+.md-typeset .vkc-credits a:hover {
+    color: var(--vkc-credits-accent);
+}
+
+.vkc-credits__finale {
+    margin-top: 4.5rem;
+}
+
+.md-typeset .vkc-credits__logo {
+    width: 9rem;
+    max-width: 60%;
+}
+
+.md-typeset .vkc-credits__thanks {
+    margin-top: 1.2rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+}
+
+.md-typeset .vkc-credits__copyright {
+    margin-top: 0.4rem;
+    color: var(--vkc-credits-muted);
+    font-size: 0.6rem;
+}
+
+.md-typeset .vkc-credits__play-wrap {
+    text-align: center;
+}
+
+/* ---- エンドロール (全画面) ---- */
+
+.vkc-endroll-open,
+.vkc-endroll-open body {
+    overflow: hidden;
+}
+
+.vkc-endroll {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    overflow: hidden;
+    background: #000;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.vkc-endroll.is-visible {
+    opacity: 1;
+}
+
+/* 上下の端をフェードさせる */
+.vkc-endroll::before,
+.vkc-endroll::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 18vh;
+    pointer-events: none;
+}
+
+.vkc-endroll::before {
+    top: 0;
+    background: linear-gradient(#000, transparent);
+}
+
+.vkc-endroll::after {
+    bottom: 0;
+    background: linear-gradient(transparent, #000);
+}
+
+.vkc-endroll__track {
+    will-change: transform;
+    transform: translateY(100vh);
+}
+
+.vkc-endroll .vkc-credits--roll {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-radius: 0;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.vkc-endroll .vkc-credits--roll .vkc-credits__opening {
+    margin-bottom: 40vh;
+}
+
+.vkc-endroll .vkc-credits--roll .vkc-credits__title {
+    font-size: 2.2rem;
+}
+
+.vkc-endroll .vkc-credits--roll .vkc-credits__group + .vkc-credits__group {
+    margin-top: 25vh;
+}
+
+.vkc-endroll .vkc-credits--roll .vkc-credits__names li {
+    margin: 0.6rem 0;
+    font-size: 1.15rem;
+}
+
+.vkc-endroll .vkc-credits--roll .vkc-credits__finale {
+    margin-top: 45vh;
+}
+
+.vkc-endroll .vkc-credits--roll .vkc-credits__logo {
+    width: 12rem;
+}
+
+.vkc-endroll .vkc-credits__thanks,
+.vkc-endroll .vkc-credits__copyright {
+    opacity: 0;
+    transition: opacity 1.2s ease 0.3s;
+}
+
+.vkc-endroll.is-finished .vkc-credits__thanks,
+.vkc-endroll.is-finished .vkc-credits__copyright,
+.vkc-endroll.is-static .vkc-credits__thanks,
+.vkc-endroll.is-static .vkc-credits__copyright {
+    opacity: 1;
+}
+
+/* 動きを減らす設定のときはスクロールせず、そのまま読めるようにする */
+.vkc-endroll.is-static {
+    overflow-y: auto;
+}
+
+.vkc-endroll.is-static .vkc-endroll__track {
+    transform: none;
+    padding: 12vh 0;
+}
+
+.vkc-endroll__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.3rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    font: inherit;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.vkc-endroll__close:hover,
+.vkc-endroll__close:focus-visible {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* フッターのクレジットリンク */
+.md-footer-credits {
+    display: inline-block;
+    margin-top: 0.2rem;
+    color: var(--md-footer-fg-color--lighter);
+    font-size: 0.64rem;
+}
+
+.md-footer-credits:hover {
+    color: var(--md-footer-fg-color);
+}
