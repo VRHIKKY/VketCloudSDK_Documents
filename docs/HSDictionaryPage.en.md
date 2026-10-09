@@ -18,3 +18,9 @@ HeliScript method reference dictionary. Search and browse methods for VKC Item a
     allowfullscreen>
   </iframe>
 </div>
+
+!!! info "Related articles"
+    For an overview of SDK features, see the Quick Reference Dictionary articles on note (in Japanese).
+
+    - [VketCloudSDK Quick Reference Dictionary - Components -](https://magazine.vket.com/n/n3376085683b0){target=_blank} (Japanese)
+    - [VketCloudSDK Quick Reference Dictionary - Basic Menu -](https://magazine.vket.com/n/n4b070560a689){target=_blank} (Japanese)
