@@ -41,9 +41,11 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/credits.css
 
 extra_javascript:
   - javascripts/copy-to-llm-vketcloud.js
+  - javascripts/credits-endroll.js
   
 extra:
   generator: false
@@ -71,6 +73,10 @@ extra:
         name: Google Analytics
     
 use_directory_urls: false
+
+# クレジットページはナビに載せず、フッターと隠しコマンド (chameleon) からのみ開く
+not_in_nav: |
+  /credits.*.md
 
 hooks:
   - custom_theme/tag_icons.py
