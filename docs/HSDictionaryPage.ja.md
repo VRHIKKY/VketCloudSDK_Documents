@@ -18,3 +18,9 @@ HeliScript メソッドリファレンス辞書です。VKC ItemやHeliScript AP
     allowfullscreen>
   </iframe>
 </div>
+
+!!! info "関連記事"
+    HeliScript のメソッドを調べるときは、機能の全体像をまとめた「早引き辞典」noteもあわせてご覧ください。
+
+    - [VketCloudSDK機能の早引き辞典 -コンポーネント編-](https://magazine.vket.com/n/n3376085683b0){target=_blank}
+    - [VketCloudSDK機能の早引き辞典 -基本メニュー編-](https://magazine.vket.com/n/n4b070560a689){target=_blank}
