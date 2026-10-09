@@ -12,14 +12,11 @@ Vket Cloud SDKは、以下のUnity環境が必要です。
 
 また、上記Unityバージョンを動作させるPC環境は以下を推奨します。
 
-- Windows 10, 64-bit
-- macOS 10.12+.
+- Windows 11, 64-bit
+- macOS 15.7+.
 
-ならびに、Vket Cloud SDKでビルドしたワールドに入室する端末スペックは以下を推奨します。
+ならびに、Vket Cloud SDKでビルドしたワールドに入室する端末スペックは、[Vket Cloudワールドの遊び方](https://cloud.vket.com/howtoplay){target=_blank}の推奨環境をご確認ください。
 
-- PC: Chrome / Firefox / Safari / Edge等のWebブラウザが使用できるもの。
-- iOS: iPhone X以降、iPhone SE（第2世代）以降
-- Android: Android 11.0以降、RAM 8GB以上（Google Pixelなら Pixel 5以降）
 - IDE: HeliScriptを編集する際、下記の理由によりVisual Studioは非推奨です。Visual Studioと同様の環境で編集を行いたい場合はVisual Studio Codeをご使用ください。
 
 !!! warning "Note"
