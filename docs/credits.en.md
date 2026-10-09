@@ -12,7 +12,7 @@ The Vket Cloud SDK Manual is made by the following members.
     <h2 class="vkc-credits__team">Documentation Team</h2>
     <ul class="vkc-credits__names">
       <li>NegiTrotsky</li>
-      <li>Akiram</li>
+      <li>akiRAM</li>
     </ul>
   </section>
 
