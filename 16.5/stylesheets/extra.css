@@ -478,3 +478,11 @@ html body .md-nav .md-nav__item a.md-nav__link[href*="HSDictionaryPage"]:hover {
     box-shadow: 0 6px 12px rgba(0, 115, 230, 0.3) !important;
     color: #ffffff !important;
 }
+
+/* Copy to LLM: plugin の --white が未定義のため、ホバー時の文字色を明示する */
+.copy-to-llm-split-container .copy-to-llm-left:hover,
+.copy-to-llm-split-container .copy-to-llm-right:hover,
+.copy-to-llm-split-container .copy-to-llm-right.active,
+.copy-to-llm-split-container .copy-to-llm-dropdown-item:active {
+    color: #ffffff;
+}
