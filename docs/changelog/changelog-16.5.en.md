@@ -1,5 +1,14 @@
 # SDK Manual Change Log - Ver 16.5
 
+## Updated October 9, 2026
+
+## October 9, 2026 - Edited Pages
+
+- Others
+    - [HS Dictionary](../HSDictionaryPage.en.md)
+        - Added links to the Quick Reference Dictionary notes as related articles
+
+
 ## Updated September 16, 2026
 
 ## September 16, 2026 - Edited Pages
