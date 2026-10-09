@@ -4,6 +4,10 @@
 
 ## 2026年10月9日 - 編集されたページ
 
+- 動作環境
+    - [動作環境](../AboutVketCloudSDK/OperatingEnvironment.ja.md)
+        - 推奨PC環境をWindows 11、macOS 15.7以降に更新
+        - ワールドに入室する端末スペックの記載を、[Vket Cloudワールドの遊び方](https://cloud.vket.com/howtoplay){target=_blank}の推奨環境を確認する案内に変更
 - その他
     - [HS Dictionary](../HSDictionaryPage.ja.md)
         - 関連記事として、早引き辞典noteへのリンクを追加

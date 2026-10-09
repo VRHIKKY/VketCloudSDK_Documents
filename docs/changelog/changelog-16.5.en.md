@@ -4,6 +4,10 @@
 
 ## October 9, 2026 - Edited Pages
 
+- Operating Environment
+    - [Operating Environment](../AboutVketCloudSDK/OperatingEnvironment.en.md)
+        - Updated the recommended PC environment to Windows 11 and macOS 15.7 or later
+        - Replaced the device specs for entering worlds with a pointer to the recommended environment in [How to Play Vket Cloud Worlds](https://cloud.vket.com/en/howtoplay){target=_blank}
 - Others
     - [HS Dictionary](../HSDictionaryPage.en.md)
         - Added links to the Quick Reference Dictionary notes as related articles
