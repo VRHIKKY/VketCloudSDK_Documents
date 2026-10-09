@@ -1,2 +1,4 @@
 /site
 .venv/
+/docs/assets/copy-to-llm/
+__pycache__/

@@ -41,6 +41,9 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/copy-to-llm-vketcloud.js
   
 extra:
   generator: false
@@ -71,8 +74,18 @@ use_directory_urls: false
 
 hooks:
   - custom_theme/tag_icons.py
+  - custom_theme/dedupe_copy_to_llm_assets.py
 
 plugins:
+  # ページ本文を Markdown としてコピーしたり、LLM に渡したりする操作を追加します。
+  # SDK 16.5 の公開ソースを指定します。ページごとのソースパスは互換フックで補います。
+  - copy-to-llm:
+      repo_url: https://raw.githubusercontent.com/VRHIKKY/VketCloudSDK_Documents/version/sdk-16.5/docs
+      button_bg_color: var(--md-default-bg-color)
+      button_text_color: var(--md-default-fg-color)
+      button_hover_color: var(--md-primary-fg-color)
+      toast_bg_color: var(--md-primary-fg-color)
+      toast_text_color: "#ffffff"
   - search:
       lang: 
         - en

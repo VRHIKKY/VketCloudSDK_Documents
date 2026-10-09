@@ -1,5 +1,12 @@
 # SDK Manual Change Log - Ver 16.5
 
+## Updated October 9, 2026
+
+## October 9, 2026 - Edited Pages
+
+- Others
+    - Added a "Copy to LLM" button to each page. You can copy the page content as Markdown or pass it to an LLM.
+
 ## Updated September 16, 2026
 
 ## September 16, 2026 - Edited Pages
