@@ -7,7 +7,7 @@
 - Others
     - [HS Dictionary](../HSDictionaryPage.en.md)
         - Added links to the Quick Reference Dictionary notes as related articles
-
+    - Added a "Copy to LLM" button to each page. You can copy the page content as Markdown or pass it to an LLM.
 
 ## Updated September 16, 2026
 
