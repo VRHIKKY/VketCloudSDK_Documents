@@ -198,6 +198,7 @@ plugins:
             Debug Messages: デバッグメッセージ一覧
             Vket Cloud SDK Settings : Vket Cloud SDK設定
             ScenePreview (β): シーンプレビュー (β)
+            Import Scene: シーンのインポート
             VRM File Creator: VRMファイルクリエーター
             # GUITools 
             Overview & Setup: 概要とセットアップ
@@ -444,6 +445,7 @@ nav:
     - Texture Import Viewer: SDKTools/TextureImportViewer.md
     - Auto Texture Compressor: SDKTools/AutoTextureCompressor.md
     - ScenePreview (β): SDKTools/ScenePreview.md
+    - Import Scene: SDKTools/ImportScene.md
     - VRM File Creator: SDKTools/VRMFileCreator.md
 - GUITools: 
     - Overview & Setup: GUITools/Setup.md
