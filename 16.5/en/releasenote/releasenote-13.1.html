@@ -2208,6 +2208,8 @@
       
         
       
+        
+      
     
     
     
@@ -2572,6 +2574,27 @@
   
   <span class="md-ellipsis">
     ScenePreview (β)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SDKTools/ImportScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import Scene
   </span>
   
 
@@ -13201,69 +13224,69 @@
 <li><strong>Alignment of My Avatar Name:</strong> Changed the alignment of the My Avatar name to left-justified.</li>
 <li>**</li>
 </ul>
-<p>Display of Emote Icons on Vertical Screens:<strong> Fixed the issue where the 'Otagei' and 'Beer' emote icons were not displayed when the screen was set to vertical.
-- </strong>Visibility of hud_config During Target Focus:<strong> Made hud_config visible even during target focus.
-- </strong>Target Focus Cancellation on Button Press:<strong> Implemented target focus cancellation when pressing buttons in the side menu.
-- </strong>Cancellation of Target Focus After Kick/Ban/Block:<strong> Ensured that target focus is cancelled after performing a kick, ban, or block.
-- </strong>Target Focus Cancellation on Warp:<strong> Target focus is now cancelled when warping to the start point.
-- </strong>Focus Cancellation When Player Exits:<strong> If CSkywayPlayer cannot be retrieved because the player has exited, focus is cancelled.
-- </strong>Persistent View Change Button During Target Focus on Vertical Screens:<strong> Fixed the issue where the view change button did not disappear during target focus on vertical screens.
-- </strong>Camera Orientation Toward World Origin on Dummy Avatar (Instance) Focus:<strong> Adjusted the camera to prevent it from orienting toward the world's origin when focusing on a dummy avatar (instance).
-- </strong>Player_GetPos in HeliScript:<strong> Ensured that Player_GetPos correctly retrieves coordinates even for instances that have been distance cut.
-- </strong>Omission of Focus Cancellation on Arbitrary Click:<strong> Implemented the omission of focus cancellation when clicking at arbitrary locations.
-- </strong>Addition/Omission of Unfocus Button:<strong> Added an unfocus button at the top right and omitted the previous button.
-- </strong>Emote List Text Adjustment:<strong> Modified the emote list to allow for two lines of emote names.
-- </strong>[script] Item.PlayVideoSyncTime() BaseTime Issue:<strong> Fixed a problem where the BaseTime passed to Item.PlayVideoSyncTime() turned into an abnormal value on the JS side.
-- </strong>Friend Invitation Button Persistence:<strong> When opening the friend invitation tab from the menu and entering photography mode by tapping the camera button, the friend invitation button remained on the screen.
-- </strong>Misalignment of Profile Icon on Vertical Screen:<strong> Adjusted the profile icon on vertical screens to correct a slight misalignment to the right.
-- </strong>Omission of Button Click Color Change:<strong> Fixed the issue where the color change on button click was omitted.
-- </strong>Touch Interaction with Buttons:<strong> Made adjustments so that touching outside a button and then moving the finger inside and lifting does not trigger the button.
-- </strong>Correction of Notification ID Specification During Guest Login:<strong> Fixed an incorrect setting of the notification reception ID during guest login.
-- </strong>Partial Display of Login Window After Camera and Operation Tab Switch:<strong> Fixed an issue where only part of the login window was displayed when switching tabs after operating the camera and avatar in the menu.
-- </strong>Disappearance of Emote Button After Opening Menu Window:<strong> Fixed the issue where the emote button disappeared after starting camera mode with the menu window open.
-- </strong>Text Remaining in Chat Preview After Enabling Photography Mode:<strong> Fixed the issue where text remained in the chat preview after enabling photography mode.
-- </strong>Change of embed.html to share.html:<strong> Changed the link copy button for embedding to accommodate the new share.html.
-- </strong>UI Overlap in World Details:<strong> Adjusted the Z-value to fix UI overlap when opening world details.
-- </strong>Inconsistency in World Details and Loading Screen:<strong> Fixed an issue where the loading screen mentioned "Debug World" but it was not listed in the world details, by adjusting the Z-value of the world details text.
-- </strong>User Scroll Issue in Voice Chat:<strong> Fixed an issue where the user scroll in voice chat did not move after scrolling once.
-- </strong>Opening Friend Invitation Similarly to Other Menu Contents:<strong> Made adjustments to open the friend invitation window in the same manner as other menu contents, and replaced the Twitter icon with an X icon.
-- </strong>Notification Modal Opening on Name Change in Profile:<strong> Fixed a bug where a notification modal opened when changing the name in the profile.
-- </strong>Notification Modal Opening After Pressing Enter Room Button During Guest Login:<strong> Adjusted so that a notification modal opens after pressing the enter room button during guest login.
-- </strong>Word Filtering in Profile Updates:<strong> If the updated username or self-introduction contained prohibited words, the text was reverted to the previous wording.
-- </strong>Inconsistency in Nameplate Size Across Devices:<strong> Fixed an issue where the number of characters that changed the nameplate size varied between devices, affecting the number of characters displayed.
-- </strong>Renaming of ReflectionProveDetectType:<strong> Renamed ReflectionProveDetectType to ReflectionProbeDetectType.
-- </strong>Default Value for Node-Level Transparency Animation in HEO:<strong> Set the default value for node-level transparency animation to false also in C++ internals.
-- </strong>Emote List Pagination Issue:<strong> Fixed an issue where closing and reopening the emote list while paginated displayed a mixture of content from the first and second pages.
-- </strong>Language Inconsistency in Browser:<strong> Fixed a bug where the option "Leave posts in space" remained in Japanese even when the browser was set to display in English.
-- </strong>Camera Mode Instruction and Arrow Display Order Issue</p>
-<p>:<strong> Corrected the display order issue between the camera mode instructions and arrows.
-- </strong>Scrollbar Display Misalignment in Chat Column:<strong> Fixed the misalignment of the scrollbar display in the chat column.
-- </strong>Text Clipping in Username Input:<strong> Fixed an issue where the 10th character was cut off when entering a username in full-width characters only.
-- </strong>Right Alignment of Vertical Screen Menu:<strong> Changed the vertical screen menu to right alignment.
-- </strong>Separation of Photography from Vertical Screen Menu List:<strong> Moved photography outside the vertical screen menu list.
-- </strong>Addition of English Images to Text Chat Button:<strong> Added English version images to the text chat button.
-- </strong>Change of Vertical Screen Photography Button to English:<strong> Changed the vertical screen photography button to switch to English.
-- </strong>Highlighting of Friend Invitation Button on Click:<strong> Changed the friend invitation button to highlight when clicked.
-- </strong>Size Adjustment of Toast Messages on Vertical Screen:<strong> Enlarged the size of toast messages on the vertical screen and changed the colors of the mouse movement target and avatar profile verification target.
-- </strong>Reloading Issue After Wearing My Avatar:<strong> Fixed a build error that occurred when trying to read data/common after reloading following the wearing of My Avatar due to ModelFileName containing AvatarType.
-- </strong>UI Overlap in Camera Mode Preview Frame:<strong> Lowered the Z-value to fix the issue where the UI for operation instructions overlapped the preview frame displayed after taking a photo in camera mode.
-- </strong>Player Class Operation Restriction During Notification Modal:<strong> Made adjustments in the HeliScript's player class to set operations as impossible when the notification modal is open.
-- </strong>Movement and Jump Issue During Notification Modal:<strong> Fixed the issue where movement and jumping were possible even when the notification modal was open.
-- </strong>Toast Display Time Set to 5 Seconds:<strong> Changed the display time of common toasts to 5 seconds.
-- </strong>Variation in Emote Icon Visibility Across Devices:<strong> Fixed the issue where the appearance of emote icons varied between devices.
-- </strong>Adjustment of Action Palette and Emote List on Vertical Screen:<strong> Made adjustments to ensure the action palette and emote list did not overlap the virtual stick and chat preview area on vertical screens.
-- </strong>Button Color Change on Click in HUD:<strong> Added button color change on click in the HUD.
-- </strong>UI Implementation Without Image Setting in In-Game Notification Modal:<strong> Implemented a UI in the in-game notification modal without setting an image.
-- </strong>Non-functioning SSAO:<strong> Fixed an issue where SSAO stopped functioning.
-- </strong>Size Issue of User Icons in Community Vertical Screen:<strong> Corrected the oversized user icons in the community vertical screen.
-- </strong>Button Persistence Issue After Starting Camera from Community Display:<strong> Fixed an issue where buttons for invitations and joining remained after starting the camera from the community display.
-- </strong>Forced Stopping of Click Movement During Forced Player Location Change:<strong> Ensured that click movement processing always stops during forced player location changes, such as "Return to Start Point."
-- </strong>Link Issue in System Message When Invited on Vertical Screen:<strong> Fixed the issue where the 'Join' in the system message displayed when invited was not a link.
-- </strong>Immediate Update Issue After Following/Unfollowing Other Users:<strong> Fixed the issue where changes did not update immediately after following or unfollowing other users.
-- </strong>Non-functioning Two-Finger Touch Restriction During Virtual Pad Input:<strong> Ensured that the two-finger touch restriction does not function during virtual pad input.
-- </strong>Language Inconsistency in Browser Display:<strong> Added English text to correct the issue where the option "Do not show this message again" remained in Japanese even when the browser was set to English.
-- </strong>Voice Chat Channel List Display Issue:<strong> Fixed an issue where the 6th channel in the voice chat channel list was not displayed.
-- </strong>Adjustment of SpaceList Display Count:** Adjusted the display count in SpaceList.</p>
+<p>Display of Emote Icons on Vertical Screens:** Fixed the issue where the 'Otagei' and 'Beer' emote icons were not displayed when the screen was set to vertical.
+- <strong>Visibility of hud_config During Target Focus:</strong> Made hud_config visible even during target focus.
+- <strong>Target Focus Cancellation on Button Press:</strong> Implemented target focus cancellation when pressing buttons in the side menu.
+- <strong>Cancellation of Target Focus After Kick/Ban/Block:</strong> Ensured that target focus is cancelled after performing a kick, ban, or block.
+- <strong>Target Focus Cancellation on Warp:</strong> Target focus is now cancelled when warping to the start point.
+- <strong>Focus Cancellation When Player Exits:</strong> If CSkywayPlayer cannot be retrieved because the player has exited, focus is cancelled.
+- <strong>Persistent View Change Button During Target Focus on Vertical Screens:</strong> Fixed the issue where the view change button did not disappear during target focus on vertical screens.
+- <strong>Camera Orientation Toward World Origin on Dummy Avatar (Instance) Focus:</strong> Adjusted the camera to prevent it from orienting toward the world's origin when focusing on a dummy avatar (instance).
+- <strong>Player_GetPos in HeliScript:</strong> Ensured that Player_GetPos correctly retrieves coordinates even for instances that have been distance cut.
+- <strong>Omission of Focus Cancellation on Arbitrary Click:</strong> Implemented the omission of focus cancellation when clicking at arbitrary locations.
+- <strong>Addition/Omission of Unfocus Button:</strong> Added an unfocus button at the top right and omitted the previous button.
+- <strong>Emote List Text Adjustment:</strong> Modified the emote list to allow for two lines of emote names.
+- <strong>[script] Item.PlayVideoSyncTime() BaseTime Issue:</strong> Fixed a problem where the BaseTime passed to Item.PlayVideoSyncTime() turned into an abnormal value on the JS side.
+- <strong>Friend Invitation Button Persistence:</strong> When opening the friend invitation tab from the menu and entering photography mode by tapping the camera button, the friend invitation button remained on the screen.
+- <strong>Misalignment of Profile Icon on Vertical Screen:</strong> Adjusted the profile icon on vertical screens to correct a slight misalignment to the right.
+- <strong>Omission of Button Click Color Change:</strong> Fixed the issue where the color change on button click was omitted.
+- <strong>Touch Interaction with Buttons:</strong> Made adjustments so that touching outside a button and then moving the finger inside and lifting does not trigger the button.
+- <strong>Correction of Notification ID Specification During Guest Login:</strong> Fixed an incorrect setting of the notification reception ID during guest login.
+- <strong>Partial Display of Login Window After Camera and Operation Tab Switch:</strong> Fixed an issue where only part of the login window was displayed when switching tabs after operating the camera and avatar in the menu.
+- <strong>Disappearance of Emote Button After Opening Menu Window:</strong> Fixed the issue where the emote button disappeared after starting camera mode with the menu window open.
+- <strong>Text Remaining in Chat Preview After Enabling Photography Mode:</strong> Fixed the issue where text remained in the chat preview after enabling photography mode.
+- <strong>Change of embed.html to share.html:</strong> Changed the link copy button for embedding to accommodate the new share.html.
+- <strong>UI Overlap in World Details:</strong> Adjusted the Z-value to fix UI overlap when opening world details.
+- <strong>Inconsistency in World Details and Loading Screen:</strong> Fixed an issue where the loading screen mentioned "Debug World" but it was not listed in the world details, by adjusting the Z-value of the world details text.
+- <strong>User Scroll Issue in Voice Chat:</strong> Fixed an issue where the user scroll in voice chat did not move after scrolling once.
+- <strong>Opening Friend Invitation Similarly to Other Menu Contents:</strong> Made adjustments to open the friend invitation window in the same manner as other menu contents, and replaced the Twitter icon with an X icon.
+- <strong>Notification Modal Opening on Name Change in Profile:</strong> Fixed a bug where a notification modal opened when changing the name in the profile.
+- <strong>Notification Modal Opening After Pressing Enter Room Button During Guest Login:</strong> Adjusted so that a notification modal opens after pressing the enter room button during guest login.
+- <strong>Word Filtering in Profile Updates:</strong> If the updated username or self-introduction contained prohibited words, the text was reverted to the previous wording.
+- <strong>Inconsistency in Nameplate Size Across Devices:</strong> Fixed an issue where the number of characters that changed the nameplate size varied between devices, affecting the number of characters displayed.
+- <strong>Renaming of ReflectionProveDetectType:</strong> Renamed ReflectionProveDetectType to ReflectionProbeDetectType.
+- <strong>Default Value for Node-Level Transparency Animation in HEO:</strong> Set the default value for node-level transparency animation to false also in C++ internals.
+- <strong>Emote List Pagination Issue:</strong> Fixed an issue where closing and reopening the emote list while paginated displayed a mixture of content from the first and second pages.
+- <strong>Language Inconsistency in Browser:</strong> Fixed a bug where the option "Leave posts in space" remained in Japanese even when the browser was set to display in English.
+- **Camera Mode Instruction and Arrow Display Order Issue</p>
+<p>:** Corrected the display order issue between the camera mode instructions and arrows.
+- <strong>Scrollbar Display Misalignment in Chat Column:</strong> Fixed the misalignment of the scrollbar display in the chat column.
+- <strong>Text Clipping in Username Input:</strong> Fixed an issue where the 10th character was cut off when entering a username in full-width characters only.
+- <strong>Right Alignment of Vertical Screen Menu:</strong> Changed the vertical screen menu to right alignment.
+- <strong>Separation of Photography from Vertical Screen Menu List:</strong> Moved photography outside the vertical screen menu list.
+- <strong>Addition of English Images to Text Chat Button:</strong> Added English version images to the text chat button.
+- <strong>Change of Vertical Screen Photography Button to English:</strong> Changed the vertical screen photography button to switch to English.
+- <strong>Highlighting of Friend Invitation Button on Click:</strong> Changed the friend invitation button to highlight when clicked.
+- <strong>Size Adjustment of Toast Messages on Vertical Screen:</strong> Enlarged the size of toast messages on the vertical screen and changed the colors of the mouse movement target and avatar profile verification target.
+- <strong>Reloading Issue After Wearing My Avatar:</strong> Fixed a build error that occurred when trying to read data/common after reloading following the wearing of My Avatar due to ModelFileName containing AvatarType.
+- <strong>UI Overlap in Camera Mode Preview Frame:</strong> Lowered the Z-value to fix the issue where the UI for operation instructions overlapped the preview frame displayed after taking a photo in camera mode.
+- <strong>Player Class Operation Restriction During Notification Modal:</strong> Made adjustments in the HeliScript's player class to set operations as impossible when the notification modal is open.
+- <strong>Movement and Jump Issue During Notification Modal:</strong> Fixed the issue where movement and jumping were possible even when the notification modal was open.
+- <strong>Toast Display Time Set to 5 Seconds:</strong> Changed the display time of common toasts to 5 seconds.
+- <strong>Variation in Emote Icon Visibility Across Devices:</strong> Fixed the issue where the appearance of emote icons varied between devices.
+- <strong>Adjustment of Action Palette and Emote List on Vertical Screen:</strong> Made adjustments to ensure the action palette and emote list did not overlap the virtual stick and chat preview area on vertical screens.
+- <strong>Button Color Change on Click in HUD:</strong> Added button color change on click in the HUD.
+- <strong>UI Implementation Without Image Setting in In-Game Notification Modal:</strong> Implemented a UI in the in-game notification modal without setting an image.
+- <strong>Non-functioning SSAO:</strong> Fixed an issue where SSAO stopped functioning.
+- <strong>Size Issue of User Icons in Community Vertical Screen:</strong> Corrected the oversized user icons in the community vertical screen.
+- <strong>Button Persistence Issue After Starting Camera from Community Display:</strong> Fixed an issue where buttons for invitations and joining remained after starting the camera from the community display.
+- <strong>Forced Stopping of Click Movement During Forced Player Location Change:</strong> Ensured that click movement processing always stops during forced player location changes, such as "Return to Start Point."
+- <strong>Link Issue in System Message When Invited on Vertical Screen:</strong> Fixed the issue where the 'Join' in the system message displayed when invited was not a link.
+- <strong>Immediate Update Issue After Following/Unfollowing Other Users:</strong> Fixed the issue where changes did not update immediately after following or unfollowing other users.
+- <strong>Non-functioning Two-Finger Touch Restriction During Virtual Pad Input:</strong> Ensured that the two-finger touch restriction does not function during virtual pad input.
+- <strong>Language Inconsistency in Browser Display:</strong> Added English text to correct the issue where the option "Do not show this message again" remained in Japanese even when the browser was set to English.
+- <strong>Voice Chat Channel List Display Issue:</strong> Fixed an issue where the 6th channel in the voice chat channel list was not displayed.
+- <strong>Adjustment of SpaceList Display Count:</strong> Adjusted the display count in SpaceList.</p>
 <h3 id="heliscript">HeliScript</h3>
 <ul>
 <li><strong>ResetVelocity Function in Player Class:</strong> Implemented a function to reset velocity in the player class.</li>

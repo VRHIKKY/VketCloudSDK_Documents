@@ -2210,6 +2210,8 @@
       
         
       
+        
+      
     
     
     
@@ -2623,6 +2625,27 @@
   
   <span class="md-ellipsis">
     ScenePreview (β)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ImportScene.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import Scene
   </span>
   
 
@@ -13092,7 +13115,7 @@
 <p>For details of texture specifications, refer to <a href="../WorldMakingGuide/UnityGuidelines.html">Specification Limits of Vket Cloud</a>.</p>
 <p>By running this tool, the image will be reformatted to png format, and the image's <a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">Non-PowerOf2</a>  property will be automatically set to other than none.</p>
 <p>If the <a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a> is set under 2048, the image size will be reformatted as well. This can be used for <a href="../WorldOptimization/TextureCompression.html">Texture Compression</a> and shortening load time.</p>
-<p>The generated image will be output to the original image's directory as ”<Original Texture's Name>_comp.png”.
+<p>The generated image will be output to the original image's directory as ”&lt;Original Texture's Name&gt;_comp.png”.
 Also, if the later mentioned option is enabled, the original image referenced in Scene materials can be replaced to the generated image.</p>
 <h2 id="how-to-use">How to Use</h2>
 <p>As preparation, if the generated image should be compressed, set the original image's <a href="https://docs.unity3d.com/ja/2019.4/Manual/class-TextureImporter.html" target="_blank">MaxSize</a> under 2048.</p>
@@ -13103,7 +13126,7 @@ Also, if the later mentioned option is enabled, the original image referenced in
 <p><img alt="ExportCompressedTexture_3" src="img/ExportCompressedTexture_3.jpg" /></p>
 <p>As the dialog above will show on generating the texture, selecting "Yes" will search all materials referencing the original material, and replace it to the generated texture.</p>
 <p><img alt="ExportCompressedTexture_4" src="../../SDKTools/img/ExportCompressedTexture_4.jpg" /></p>
-<p>The generated image will be output to the original image's directory as ”<Original Texture's Name>_comp.png”.</p>
+<p>The generated image will be output to the original image's directory as ”&lt;Original Texture's Name&gt;_comp.png”.</p>
 <p><img alt="ExportCompressedTexture_5" src="../../SDKTools/img/ExportCompressedTexture_5.jpg" /></p>
 
 
