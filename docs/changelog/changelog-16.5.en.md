@@ -1,5 +1,13 @@
 # SDK Manual Change Log - Ver 16.5
 
+## Updated November 13, 2026
+
+## November 13, 2026 - Added Pages
+
+- SDK Tools
+    - [Import Scene](../SDKTools/ImportScene.en.md)
+        - Created a page for Import Scene
+
 ## Updated October 9, 2026
 
 ## October 9, 2026 - Edited Pages
