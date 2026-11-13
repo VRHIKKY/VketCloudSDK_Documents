@@ -14,8 +14,10 @@ The target of the raycast is an Item with collision detection enabled (Item.IsCo
 class HSRaycastHIT
 {
     public  Item    Item;       // Item object that the ray hit
+    public  int     NodeIndex;  // Index of the Node that the ray hit
     public  float   Distance;   // Distance from Pos where the ray hit
     public  Vector3 Pos;        // Position where the ray hit
     public  Vector3 Normal;     // Normal of the face the ray hit
+    public  Vector2 UV;         // UV coordinates at the position where the ray hit ※ UV is returned only for mesh colliders
 }
 ```

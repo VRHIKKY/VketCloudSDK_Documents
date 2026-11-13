@@ -32,13 +32,13 @@ Vector3 vec2 = makeVector3(0.0f, 1.0f, 2.0f);
 
 ## Vector3のユーティリティー関数
 
-### makeVector3
+### makeVector3 <!-- md:unrecommended -->
 
 `Vector3 makeVector3(float x, float y, float z)`
 
 グローバル関数。指定した x, y, z 成分で初期化されたVector3を返す。
 
-### makeVector3Dot
+### makeVector3Dot 
 
 `float makeVector3Dot(Vector3 vec1, Vector3 vec2)`
 

@@ -1,0 +1,525 @@
+{
+  "SetPos": [
+    "GetPos",
+    "GetWorldPos",
+    "MovePos",
+    "IsMoving"
+  ],
+  "GetPos": [
+    "SetPos",
+    "GetWorldPos",
+    "MovePos",
+    "GetNodeLocalPos"
+  ],
+  "GetWorldPos": [
+    "GetPos",
+    "SetPos",
+    "GetNodeWorldPos",
+    "GetBoneWorldPos"
+  ],
+  "MovePos": [
+    "SetPos",
+    "GetPos",
+    "IsMoving"
+  ],
+  "IsMoving": [
+    "MovePos",
+    "SetPos"
+  ],
+  "SetQuaternion": [
+    "GetQuaternion",
+    "GetWorldQuaternion",
+    "LookAt",
+    "SetNodeLocalRotate"
+  ],
+  "GetQuaternion": [
+    "SetQuaternion",
+    "GetWorldQuaternion",
+    "GetWorldRotate",
+    "GetNodeLocalRotate"
+  ],
+  "GetWorldQuaternion": [
+    "GetQuaternion",
+    "GetWorldRotate",
+    "GetNodeWorldRotate"
+  ],
+  "GetWorldRotate": [
+    "GetQuaternion",
+    "GetWorldQuaternion",
+    "GetNodeWorldRotate"
+  ],
+  "Forward": [
+    "LookAt",
+    "SetQuaternion"
+  ],
+  "LookAt": [
+    "Forward",
+    "SetQuaternion"
+  ],
+  "GetScale": [
+    "SetScale",
+    "GetNodeLocalScale",
+    "GetNodeWorldScale"
+  ],
+  "SetScale": [
+    "GetScale",
+    "SetNodeLocalScale"
+  ],
+  "SetShow": [
+    "IsShow",
+    "SetShowNode"
+  ],
+  "IsShow": [
+    "SetShow",
+    "IsShowNode"
+  ],
+  "SetShowNode": [
+    "IsShowNode",
+    "SetShow"
+  ],
+  "IsShowNode": [
+    "SetShowNode",
+    "IsShow"
+  ],
+  "Play": [
+    "Stop",
+    "IsPlay",
+    "Pause",
+    "Restart"
+  ],
+  "Stop": [
+    "Play",
+    "IsPlay"
+  ],
+  "IsPlay": [
+    "Play",
+    "Stop",
+    "Pause"
+  ],
+  "Pause": [
+    "Play",
+    "Restart",
+    "IsPlay"
+  ],
+  "Restart": [
+    "Pause",
+    "Play"
+  ],
+  "SetPlayTime": [
+    "GetPlayTime",
+    "Play"
+  ],
+  "GetPlayTime": [
+    "SetPlayTime",
+    "IsPlay"
+  ],
+  "ChangeMotion": [
+    "LoadMotion",
+    "Play",
+    "Stop"
+  ],
+  "LoadMotion": [
+    "ChangeMotion",
+    "Play"
+  ],
+  "FacialEmoteFixed": [
+    "ChangeMotion"
+  ],
+  "Load": [
+    "Unload",
+    "IsLoading",
+    "IsLoaded"
+  ],
+  "Unload": [
+    "Load",
+    "IsLoaded"
+  ],
+  "IsLoading": [
+    "Load",
+    "IsLoaded"
+  ],
+  "IsLoaded": [
+    "Load",
+    "IsLoading",
+    "Unload"
+  ],
+  "SetEnableCollider": [
+    "IsEnableCollider",
+    "SetCollisionDetection"
+  ],
+  "IsEnableCollider": [
+    "SetEnableCollider"
+  ],
+  "SetCollisionDetection": [
+    "IsCollisionDetection",
+    "SetEnableCollider"
+  ],
+  "IsCollisionDetection": [
+    "SetCollisionDetection"
+  ],
+  "SetClickableNode": [
+    "IsClickableNode"
+  ],
+  "IsClickableNode": [
+    "SetClickableNode"
+  ],
+  "SetMaterialColor": [
+    "GetMaterialColor",
+    "SetAlpha"
+  ],
+  "GetMaterialColor": [
+    "SetMaterialColor"
+  ],
+  "SetAlpha": [
+    "SetMaterialColor"
+  ],
+  "SetUVScale": [
+    "SetUVOffset",
+    "GetUVScale"
+  ],
+  "SetUVOffset": [
+    "SetUVScale",
+    "GetUVOffset"
+  ],
+  "GetUVScale": [
+    "SetUVScale",
+    "GetUVOffset"
+  ],
+  "GetUVOffset": [
+    "SetUVOffset",
+    "GetUVScale"
+  ],
+  "ReplaceTexture": [
+    "SetMaterialColor",
+    "SetUVOffset",
+    "ReplaceBackupTexture"
+  ],
+  "ReplaceBackupTexture": [
+    "ReplaceTexture"
+  ],
+  "PlayVideo": [
+    "SwitchVideo",
+    "StopVideo",
+    "IsPlayVideo"
+  ],
+  "SwitchVideo": [
+    "PlayVideo",
+    "StopVideo",
+    "IsPlayVideo"
+  ],
+  "StopVideo": [
+    "PlayVideo",
+    "SwitchVideo",
+    "IsPlayVideo"
+  ],
+  "IsPlayVideo": [
+    "PlayVideo",
+    "StopVideo"
+  ],
+  "ClearTextPlane": [
+    "WriteTextPlane"
+  ],
+  "WriteTextPlane": [
+    "ClearTextPlane",
+    "SetTextPlaneFontSize",
+    "SetTextPlaneColor"
+  ],
+  "SetTextPlaneFontSize": [
+    "WriteTextPlane",
+    "SetTextPlaneColor",
+    "GetTextPlaneFontSize"
+  ],
+  "GetTextPlaneFontSize": [
+    "SetTextPlaneFontSize"
+  ],
+  "SetTextPlaneTextureSize": [
+    "GetTextPlaneTextureSize",
+    "WriteTextPlane"
+  ],
+  "GetTextPlaneTextureSize": [
+    "SetTextPlaneTextureSize"
+  ],
+  "SetTextPlaneAlignment": [
+    "GetTextPlaneAlignment",
+    "WriteTextPlane"
+  ],
+  "GetTextPlaneAlignment": [
+    "SetTextPlaneAlignment"
+  ],
+  "SetTextPlaneColor": [
+    "WriteTextPlane",
+    "SetTextPlaneFontSize",
+    "GetTextPlaneColor"
+  ],
+  "GetTextPlaneColor": [
+    "SetTextPlaneColor"
+  ],
+  "SetTextPlaneWrap": [
+    "GetTextPlaneWrap",
+    "WriteTextPlane"
+  ],
+  "GetTextPlaneWrap": [
+    "SetTextPlaneWrap"
+  ],
+  "SetTextPlaneCharacterSpace": [
+    "GetTextPlaneCharacterSpace",
+    "SetTextPlaneLineSpace"
+  ],
+  "GetTextPlaneCharacterSpace": [
+    "SetTextPlaneCharacterSpace"
+  ],
+  "SetTextPlaneLineSpace": [
+    "GetTextPlaneLineSpace",
+    "SetTextPlaneCharacterSpace"
+  ],
+  "GetTextPlaneLineSpace": [
+    "SetTextPlaneLineSpace"
+  ],
+  "SetPlaneZBias": [
+    "GetPlaneZBias"
+  ],
+  "GetPlaneZBias": [
+    "SetPlaneZBias"
+  ],
+  "SetCamera": [
+    "ResetCamera"
+  ],
+  "ResetCamera": [
+    "SetCamera"
+  ],
+  "SetProperty": [
+    "GetProperty",
+    "RemoveProperty",
+    "SetPropertyWithoutNotify"
+  ],
+  "GetProperty": [
+    "SetProperty",
+    "RemoveProperty",
+    "GetOverridesProperty"
+  ],
+  "RemoveProperty": [
+    "SetProperty",
+    "GetProperty",
+    "RemovePropertyWithoutNotify"
+  ],
+  "SetPropertyWithoutNotify": [
+    "SetProperty",
+    "RemovePropertyWithoutNotify"
+  ],
+  "RemovePropertyWithoutNotify": [
+    "RemoveProperty",
+    "SetPropertyWithoutNotify"
+  ],
+  "SetOverridesProperty": [
+    "GetOverridesProperty",
+    "SetProperty"
+  ],
+  "GetOverridesProperty": [
+    "SetOverridesProperty",
+    "GetProperty"
+  ],
+  "CallComponentMethod": [
+    "SetProperty",
+    "GetProperty",
+    "SendMessage"
+  ],
+  "SendMessage": [
+    "CallComponentMethod"
+  ],
+  "SetVolume": [
+    "GetVolume",
+    "Play",
+    "Stop"
+  ],
+  "GetVolume": [
+    "SetVolume"
+  ],
+  "GetNodeIndexByName": [
+    "GetNodeNameByIndex"
+  ],
+  "GetNodeNameByIndex": [
+    "GetNodeIndexByName"
+  ],
+  "GetNodeWorldPos": [
+    "SetNodeWorldPos",
+    "SetNodeLocalPos",
+    "GetWorldPos",
+    "GetNodeWorldPosByIndex",
+    "GetNodeLocalPos"
+  ],
+  "GetNodeWorldRotate": [
+    "GetWorldRotate",
+    "GetWorldQuaternion",
+    "GetNodeWorldRotateByIndex",
+    "GetNodeLocalRotate"
+  ],
+  "GetNodeWorldScale": [
+    "GetNodeLocalScale",
+    "GetNodeWorldScaleByIndex",
+    "GetScale"
+  ],
+  "GetNodeLocalPos": [
+    "SetNodeLocalPos",
+    "GetNodeWorldPos",
+    "GetNodeLocalPosByIndex",
+    "GetPos"
+  ],
+  "GetNodeLocalRotate": [
+    "SetNodeLocalRotate",
+    "GetNodeWorldRotate",
+    "GetNodeLocalRotateByIndex",
+    "GetQuaternion"
+  ],
+  "GetNodeLocalScale": [
+    "SetNodeLocalScale",
+    "GetNodeWorldScale",
+    "GetNodeLocalScaleByIndex",
+    "GetScale"
+  ],
+  "SetNodeLocalPos": [
+    "SetNodeWorldPos",
+    "GetNodeWorldPos",
+    "GetNodeLocalPos"
+  ],
+  "SetNodeWorldPos": [
+    "SetNodeLocalPos",
+    "GetNodeWorldPos"
+  ],
+  "SetNodeLocalRotate": [
+    "SetRotateNode",
+    "GetNodeLocalRotate"
+  ],
+  "SetNodeLocalScale": [
+    "GetNodeLocalScale",
+    "SetScale"
+  ],
+  "SetPosNode": [
+    "SetNodeWorldPos",
+    "GetNodeWorldPos"
+  ],
+  "SetRotateNode": [
+    "SetNodeLocalRotate",
+    "GetNodeWorldRotate"
+  ],
+  "GetNodePosByIndex": [
+    "GetNodeLocalPosByIndex",
+    "GetNodeWorldPosByIndex",
+    "GetNodeIndexByName"
+  ],
+  "GetNodeRotateByIndex": [
+    "GetNodeLocalRotateByIndex",
+    "GetNodeWorldRotateByIndex",
+    "GetNodeIndexByName"
+  ],
+  "GetNodeWorldPosByIndex": [
+    "GetNodeWorldPos",
+    "GetNodeLocalPosByIndex",
+    "GetNodeIndexByName"
+  ],
+  "GetNodeWorldRotateByIndex": [
+    "GetNodeWorldRotate",
+    "GetNodeLocalRotateByIndex",
+    "GetNodeIndexByName"
+  ],
+  "GetNodeWorldScaleByIndex": [
+    "GetNodeWorldScale",
+    "GetNodeLocalScaleByIndex",
+    "GetNodeIndexByName"
+  ],
+  "GetNodeLocalPosByIndex": [
+    "GetNodeLocalPos",
+    "GetNodeWorldPosByIndex",
+    "GetNodeIndexByName"
+  ],
+  "GetNodeLocalRotateByIndex": [
+    "GetNodeLocalRotate",
+    "GetNodeWorldRotateByIndex",
+    "GetNodeIndexByName"
+  ],
+  "GetNodeLocalScaleByIndex": [
+    "GetNodeLocalScale",
+    "GetNodeWorldScaleByIndex",
+    "GetNodeIndexByName"
+  ],
+  "SetLightColor": [
+    "GetLightColor",
+    "SetLightRange"
+  ],
+  "GetLightColor": [
+    "SetLightColor"
+  ],
+  "SetLightRange": [
+    "GetLightRange",
+    "SetLightColor"
+  ],
+  "GetLightRange": [
+    "SetLightRange"
+  ],
+  "Equals": [
+    "GetName"
+  ],
+  "GetName": [
+    "Equals",
+    "GetParentItem"
+  ],
+  "GetParentItem": [
+    "GetName"
+  ],
+  "GetNumofPolygon": [],
+  "ReplaceItem": [
+    "Load",
+    "Unload"
+  ],
+  "IsAlive": [
+    "Load",
+    "Unload",
+    "IsLoaded"
+  ],
+  "SetPhysicsEnable": [
+    "IsPhysicsFixed",
+    "GetPhysicsIDByNodeName"
+  ],
+  "IsPhysicsFixed": [
+    "SetPhysicsEnable",
+    "GetPhysicsIDByNodeName"
+  ],
+  "GetPhysicsIDByNodeName": [
+    "SetPhysicsEnable",
+    "IsPhysicsFixed"
+  ],
+  "SetPhysicsWorldPos": [
+    "SetPhysicsWorldRotation",
+    "ClearPhysicsWorldForce"
+  ],
+  "SetPhysicsWorldRotation": [
+    "SetPhysicsWorldPos",
+    "ClearPhysicsWorldForce"
+  ],
+  "ClearPhysicsWorldForce": [
+    "AddPhysicsWorldForce",
+    "AddPhysicsWorldVelocity"
+  ],
+  "AddPhysicsWorldForce": [
+    "ClearPhysicsWorldForce",
+    "AddPhysicsWorldVelocity"
+  ],
+  "AddPhysicsWorldVelocity": [
+    "AddPhysicsWorldForce",
+    "ClearPhysicsWorldForce"
+  ],
+  "GetBonePos": [
+    "GetBoneWorldPos",
+    "GetBoneRotate",
+    "GetNodeLocalPos"
+  ],
+  "GetBoneWorldPos": [
+    "GetBonePos",
+    "GetBoneRotate",
+    "GetNodeWorldPos"
+  ],
+  "GetBoneRotate": [
+    "GetBonePos",
+    "GetBoneWorldPos",
+    "GetNodeLocalRotate"
+  ]
+}

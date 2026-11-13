@@ -78,6 +78,12 @@ HeliScriptの string は変更可能です。"[]" のインデックス指定に
 
 引数で指定した位置の文字を、1文字削除します。
 
+### Replace(string, string)
+
+`public string Replace(string from, string to)`
+
+文字列中の部分文字列fromをすべて文字列toに置換します。
+
 ### Split()
 
 `public list<string> Split()`

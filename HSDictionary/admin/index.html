@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VKC メソッドリファレンス - 管理画面</title>
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- 管理画面スタイル -->
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <!-- ヘッダー -->
+    <header class="admin-header">
+      <div class="header-left">
+        <span class="material-icons">settings</span>
+        <h1>VKC メソッドリファレンス 管理画面</h1>
+      </div>
+      <div class="header-right">
+        <a href="../" class="view-site-btn">
+          <span class="material-icons">visibility</span>
+          トップへ
+        </a>
+        <button class="save-all-btn" id="save-all-btn" disabled>
+          <span class="material-icons">save</span>
+          すべて保存
+        </button>
+      </div>
+    </header>
+
+    <div class="admin-body">
+      <!-- サイドバー -->
+      <nav class="admin-sidebar">
+        <div class="nav-item active" data-section="itemtypes">
+          <span class="material-icons">widgets</span>
+          <span class="nav-label">ItemType</span>
+        </div>
+        <div class="nav-item" data-section="categories">
+          <span class="material-icons">category</span>
+          <span class="nav-label">カテゴリー</span>
+        </div>
+        <div class="nav-item" data-section="methods">
+          <span class="material-icons">code</span>
+          <span class="nav-label">メソッド</span>
+        </div>
+        <div class="nav-item" data-section="topics">
+          <span class="material-icons">school</span>
+          <span class="nav-label">トピック</span>
+        </div>
+      </nav>
+
+      <!-- メインコンテンツ -->
+      <main class="admin-main">
+        <!-- ローディング表示 -->
+        <div class="loading" id="loading">
+          <span class="material-icons spin">sync</span>
+          <p>データを読み込み中...</p>
+        </div>
+
+        <!-- ItemType管理セクション -->
+        <section class="admin-section" id="section-itemtypes" style="display:none;">
+          <div class="section-header">
+            <h2><span class="material-icons">widgets</span> ItemType管理</h2>
+            <button class="add-btn" id="add-itemtype">
+              <span class="material-icons">add</span>
+              ItemType追加
+            </button>
+          </div>
+          <div class="section-content">
+            <div class="list-container" id="itemtype-list"></div>
+          </div>
+        </section>
+
+        <!-- カテゴリー管理セクション -->
+        <section class="admin-section" id="section-categories" style="display:none;">
+          <div class="section-header">
+            <h2><span class="material-icons">category</span> カテゴリー管理</h2>
+            <button class="add-btn" id="add-category">
+              <span class="material-icons">add</span>
+              カテゴリー追加
+            </button>
+          </div>
+          <div class="section-content">
+            <div class="list-container" id="category-list"></div>
+          </div>
+        </section>
+
+        <!-- メソッド管理セクション -->
+        <section class="admin-section" id="section-methods" style="display:none;">
+          <div class="section-header">
+            <h2><span class="material-icons">code</span> メソッド管理</h2>
+            <div class="section-actions">
+              <div class="custom-dropdown" id="method-category-filter">
+                <button class="dropdown-trigger" type="button">
+                  <span class="material-icons dropdown-icon">filter_list</span>
+                  <span class="dropdown-label">すべてのカテゴリー</span>
+                  <span class="material-icons dropdown-arrow">expand_more</span>
+                </button>
+                <div class="dropdown-menu">
+                  <div class="dropdown-item selected" data-value="">すべてのカテゴリー</div>
+                </div>
+              </div>
+              <div class="search-box-container">
+                <span class="material-icons">search</span>
+                <input type="text" class="search-input" id="method-search" placeholder="メソッド名で検索...">
+              </div>
+              <button class="add-btn" id="add-method">
+                <span class="material-icons">add</span>
+                メソッド追加
+              </button>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="list-container" id="method-list"></div>
+          </div>
+        </section>
+
+        <!-- トピック管理セクション -->
+        <section class="admin-section" id="section-topics" style="display:none;">
+          <div class="section-header">
+            <h2><span class="material-icons">school</span> トピック管理</h2>
+            <button class="add-btn" id="add-topic">
+              <span class="material-icons">add</span>
+              トピック追加
+            </button>
+          </div>
+          <div class="section-content">
+            <div class="list-container" id="topic-list"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- ステータスバー -->
+    <footer class="admin-footer">
+      <div class="status-left">
+        <span class="status-indicator" id="status-indicator"></span>
+        <span class="status-text" id="status-text">準備完了</span>
+      </div>
+      <div class="status-right">
+        <span class="change-count" id="change-count">変更なし</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 編集モーダル（共通） -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="edit-modal">
+      <div class="modal-header">
+        <h3 id="modal-title">編集</h3>
+        <button class="modal-close" id="modal-close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- 動的に生成 -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-cancel">キャンセル</button>
+        <button class="btn btn-primary" id="modal-save">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- アイコンピッカーモーダル -->
+  <div class="modal-overlay" id="icon-picker-overlay">
+    <div class="modal icon-picker-modal">
+      <div class="modal-header">
+        <h3>アイコンを選択</h3>
+        <button class="modal-close" id="icon-picker-close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="icon-search-container">
+          <span class="material-icons">search</span>
+          <input type="text" class="icon-search" id="icon-search" placeholder="アイコンを検索...">
+        </div>
+        <div class="icon-grid" id="icon-grid"></div>
+        <div class="icon-manual">
+          <label>または手入力:</label>
+          <input type="text" class="icon-manual-input" id="icon-manual-input" placeholder="アイコン名を入力">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="icon-picker-cancel">キャンセル</button>
+        <button class="btn btn-primary" id="icon-picker-select">選択</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 削除確認モーダル -->
+  <div class="modal-overlay" id="delete-confirm-overlay">
+    <div class="modal delete-confirm-modal">
+      <div class="modal-header">
+        <h3>削除確認</h3>
+        <button class="modal-close" id="delete-confirm-close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="delete-confirm-message">この項目を削除してもよろしいですか？</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="delete-confirm-cancel">キャンセル</button>
+        <button class="btn btn-danger" id="delete-confirm-ok">削除</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 通知トースト -->
+  <div class="toast" id="toast">
+    <span class="material-icons toast-icon" id="toast-icon">check_circle</span>
+    <span class="toast-message" id="toast-message"></span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,15 +1,18 @@
 # VKC Item Field
 
-![VKC Item Field](img/VKCItemField1.jpg)
-
 VKC Item Fieldがアタッチされたオブジェクトは、BuildAndRun時に.heoとしてパックされます。.heoファイルに含めたいオブジェクトは、必ずVKC Item Field以下に配置してください。
 
 VKC Item Fieldの詳しい配置方法については[VKC Item Fieldの使い方](../WorldMakingGuide/HEOFieldTips.md)を参照ください。
+
+## 設定項目
+
+![VKC Item Field](img/VKCItemField1.jpg)
 
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Show | true | オブジェクトの表示状態を管理します |
 | Auto Loading | true | 動的ローディングの有効/無効を切り替えます |
+| Draco Quantization | Unspecified(未指定) | VKC ItemごとにDracoの圧縮レベルの設定を上書きできます。 |
 | Load Collider |  | 範囲に入った際に特定のオブジェクトをロードするコライダーを生成します |
 | UnLoad Collider |  | 範囲に入った際に特定のオブジェクトをアンロードするコライダーを生成します |
 
@@ -62,27 +65,60 @@ VKC Item Fieldの詳しい配置方法については[VKC Item Fieldの使い方
     - [SetOverridesProperty](../hs/hs_class_item.md#setoverridesproperty)
     - [GetOverridesProperty](../hs/hs_class_item.md#getoverridesproperty)
 
----
+### 高度な設定
 
-## 動的ローディング設定方法
+![VKC Item Field](img/VKCItemField3.jpg)
 
-VketCloudでは、ワールドに入った後に特定のエリアへ侵入した時にオブジェクトをロードさせることができます。これを、「動的ローディング」と呼びます。設定方法は、以下のとおりです。
+| 名称 | 初期値 | 機能 |
+| ---- | ---- | ---- |
+| Clickable | false | クリックできるようになります |
+| Alpha Animation Target | false | カメラを遮ったときに透過されます |
+| Item Render Priority |  0 | アイテムレンダー優先度を設定します |
+| Collision Detection | true | オブジェクトの衝突判定を検知するか切り替えます |
+| Show Photo Mode | true | 撮影モードで表示されるかどうかを指定します | 
+| Force Raycast Check Disable | false | Item単位でraycastの判定を強制的に無効にするかどうかを設定します |
+| Force Collider Disable | false | 強制的にコライダーを無効にします |
 
-### ロード発火側
+!!! warning "Force Collider Disableは安定版SDK14.4.12でご使用いただけません"
+    Force Collider Disableは安定版SDK14.4.12で機能がロールバックのためご使用いただけません。
+    SDK14.2.1もしくは14.4.12より新しいバージョンがあれば、そちらをご使用ください。
 
-1. ロードされるオブジェクトが持つVKC Item Fieldコンポーネントの「動的ローディング」のチェックを外す。
-2. ロードコライダーの項目を開き、「ロードコライダー生成」を押してロードに使うエリアコライダーを生成する。
-3. 生成されたロード用のコライダーを最初から読み込まれるVKC Item Fieldの子オブジェクトにし、位置や範囲を調整する。
+## 動的ローディングの設定方法
+
+Auto Loading のチェックを外すことで、ワールド入場時の自動ローディングが無効になります。<br>
+これら自動ローディングを無効にしたオブジェクトでも、任意のタイミングで動的ローディングが可能です。<br>
+下記ではVKC Item Area Colliderコンポーネントを使用した設定方法を紹介します。<br>
+
+### エリアコライダーに侵入したときにロードする
+
+1. 動的ローディングしたいオブジェクトにVKC Item Fieldコンポーネントをアタッチして、「自動ローディング」のチェックを外す。
+2. さらに、その下にある項目「ロードコライダー」を開き、「ロードコライダー生成」ボタンを押します。
+3. 「LoadArea_GameObject_0」という名前のオブジェクトがヒエラルキーのトップ階層に生成されていることを確認します。このオブジェクトはVKC Item Area Colliderコンポーネントがアタッチされています。
+4. VKC Item Fieldをもつオブジェクトを新しく作成し、作成したオブジェクトの階層下に「LoadArea_GameObject_0」を移動します。
+5. 「LoadArea_GameObject_0」のBox Colliderのエリアが検知範囲となるため、位置やサイズを調整します。
+
+!!! info "「LoadArea_GameObject_0」を他のオブジェクトの階層下に移動する理由"
+    VketCloudではコライダーなどの形状を出力するために、VKC Item Fieldを使用しています。
+    そのため、Area Colliderタイプのアイテム単体だと、コライダーの形状をビルドできません。
 
 ![VKC Item Field](img/VKCItemField2.jpg)
 
-### アンロード発火側
+### エリアコライダーに侵入したときにアンロードする
 
 1. アンロードコライダーの項目を開き、「アンロードコライダー生成」を押してロードに使うエリアコライダーを生成する。
-2. 生成されたアンロード用のコライダーをVKC Item Fieldの子オブジェクトにし、位置や範囲を調整する。
+2. 「UnLoadArea_GameObject_0」という名前のオブジェクトがヒエラルキーのトップ階層に生成されていることを確認します。このオブジェクトはVKC Item Area Colliderコンポーネントを持っています。
+3. VKC Item Area Colliderは、別のVKC Item Fieldの子オブジェクトにする必要があるため、VKC Item Fieldをもつオブジェクトを新しく作成します。このオブジェクトは自動ローディングを有効のままにしておく必要があります。
+4. 新しく作成したオブジェクトの階層下に、「UnLoadArea_GameObject_0」を移動します。
+5. トリガーとなるエリアの位置やサイズを調整するため、「UnLoadArea_GameObject_0」のBox Colliderを調整します。
 
 !!! warning "caution"
     設定されたコライダーは、各項目の右側にあるXボタンを押すことでリストから消すことができますが、オブジェクトは残ったままになるので、そちらは手動で削除が必要になります。
+
+!!! info "HeliScriptによる動的ローディング"
+    HeliScriptを使用することで、VKC Item Area Colliderを使用せずに動的ローディングが可能です。
+    詳細はLoad/Unloadの項目を参照してください。
+    - [Load](../hs/hs_class_item.md#load)
+    - [Unload](../hs/hs_class_item.md#unload)
 
 ---
 
@@ -102,6 +138,8 @@ VketCloudでは、ワールドに入った後に特定のエリアへ侵入し�
 | Show Photo Mode | true | 撮影モードで表示されるかどうかを指定します | 
 | Force Raycast Check Disable | false | Item単位でraycastの判定を強制的に無効にするかどうかを設定します |
 | Force Collider Disable | false | 強制的にコライダーを無効にします |
+| Shadow Only | false | 影のみ描画します(主にARの際に扱う) |
+| Occlusion Mask | false | オクルージョンマスクを有効化します |
 
 !!! warning "Force Collider Disableは安定版SDK14.4.12でご使用いただけません"
     Force Collider Disableは安定版SDK14.4.12で機能がロールバックのためご使用いただけません。

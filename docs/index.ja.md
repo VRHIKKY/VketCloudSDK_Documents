@@ -19,6 +19,13 @@ SDKを利用するには、`各種アカウントへの登録`と`指定バー�
 
 とりあえずワールドに入ってみたい・どんなものが作れるか知りたい方は[Vket Cloud公式サイトのワールド一覧](https://cloud.vket.com/search/worlds){target=_blank}をチェックしましょう！
 
+## Vket Cloud関連note記事のご紹介
+
+また、noteにてVket Cloud SDKに関する各種記事を執筆しています。  
+Vket Cloudの基本操作からワールド制作の際のTips、トラブルシューティングなど、さまざまな情報を掲載していますので、ぜひご活用ください。
+
+- **[Vket Cloud｜Vketマガジン by HIKKY](https://magazine.vket.com/m/m166a0a5e6a37){target=_blank}**
+
 !!! info "SDKバージョンについて"
     現在のVket Cloud SDKの最新版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/latest/index.html)ご参照ください。<br>
     また、一定期間のサポートが盛り込まれた安定版のマニュアルは[ここから](https://vrhikky.github.io/VketCloudSDK_Documents/stable/index.html)ご参照ください。

@@ -4,8 +4,9 @@ Vket Cloud SDK requires the following Unity editor version:
 
 - **Unity 2019.4.31f1** (SDK13.7.7 and earlier)
 - **Unity 2022.3.6f1** (SDK13.7.7 and later)
+- **Unity 2022.3.22f1** (SDK16.5.6 and later)
 
-* SDK13.7.7 supports both versions.
+* SDK13.7.7 supports both Unity 2019 and 2022 versions.
 
 If the above version of Unity is not installed, install by following the instructions below:
 
@@ -17,14 +18,11 @@ If the above version of Unity is not installed, install by following the instruc
 
 Please use one of the operating systems below when running Unity.
 
-- Windows 10, 64-bit
-- macOS 10.12+.
+- Windows 11, 64-bit
+- macOS 15.7+.
 
-Also, we recommend the below systems when entering your world built with Vket Cloud SDK.
+Also, for the recommended device specs for entering worlds built with Vket Cloud SDK, please check the recommended environment in [How to Play Vket Cloud Worlds](https://cloud.vket.com/en/howtoplay){target=_blank}.
 
-- PC: A computer that supports web browsers such as Chrome / Firefox / Safari / Edge.
-- iOS: iPhone X or later, iPhone SE (2nd generation) or later
-- Android: Android 11 or later / RAM: 8GB or more / For Google Pixel series, Pixel 5 or later
 - IDE: When editing HeliScript, Visual Studio is not recommended due to the encoding issue. If you want to edit in an environment similar to Visual Studio, please use Visual Studio Code.
 
 !!! warning "Note"

@@ -92,7 +92,7 @@ VKC Item Objectは、動的なオブジェクトをシーンに生成するた�
 | 名称 | 初期値 | 機能 |
 | ---- | ---- | ---- |
 | Clickable | false | オブジェクトがクリックされた際の判定を発生させるか否かを設定します。 |
-| Auto Loading | true | [動的ローディング](VKCItemField.md)にて使用します。<br> デフォルトはtrueで初回ローディング時に読み込まれます。 |
+| Auto Loading | true | 自動ローディングの有効/無効を切り替えます。 |
 | Light Scattering Target | true | [ライトスキャッタリング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、スキャッタリングの影響を受けるかを設定します。 |
 | Shadow Caster | false | [シャドウマッピング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、本オブジェクトの影を他のオブジェクトに投影するか設定します。 |
 | Shadow Receiver | false | [シャドウマッピング](../VketCloudSettings/RenderingSettings.md)が有効になっている際に、他オブジェクトの影を本オブジェクトへと投影するか設定します。 |
@@ -101,11 +101,13 @@ VKC Item Objectは、動的なオブジェクトをシーンに生成するた�
 | Opaque Alpha Blend | false | Trueのとき、アルファブレンド描画を強制的に不透明描画パスで行います。 | 
 | Alpha Animation Target | false| カメラがオブジェクトによって遮られた際、視界確保のために透過するかを設定します。詳細は[VKCNodeAlphaAnimation](../VKCComponents/VKCNodeAlphaAnimation.md)をご参照ください。 |
 | Item Render Priority || Itemの描画順序を決定します。<br>詳細は[RenderingSettings / Priority List](../VketCloudSettings/RenderingSettings.md)をご参照ください。 |
-| Show Photo Mode | false | 撮影モード中にそのitemを表示するかどうかを設定します |
+| Show Photo Mode | true | 撮影モード中にそのitemを表示するかどうかを設定します |
 | Force Raycast Check Disable | false | Item単位でraycastの判定を強制的に無効にするかどうかを設定します |
 | Force Collider Disable | false | 強制的にコライダーを無効にします |
 | Begin Actions | | モーション再生時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
 | End Actions | | モーション終了時にトリガーする[アクション](../Actions/ActionsOverview.md)を設定できます。 |
+| Shadow Only | false | 影のみ描画します(主にARの際に扱う) |
+| Occlusion Mask | false | オクルージョンマスクを有効化します |
 
 ## Mode - Pose設定項目
 

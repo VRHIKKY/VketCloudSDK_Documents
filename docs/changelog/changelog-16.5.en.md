@@ -1,0 +1,88 @@
+# SDK Manual Change Log - Ver 16.5
+
+## Updated October 9, 2026
+
+## October 9, 2026 - Edited Pages
+
+- Operating Environment
+    - [Operating Environment](../AboutVketCloudSDK/OperatingEnvironment.en.md)
+        - Updated the recommended PC environment to Windows 11 and macOS 15.7 or later
+        - Replaced the device specs for entering worlds with a pointer to the recommended environment in [How to Play Vket Cloud Worlds](https://cloud.vket.com/en/howtoplay){target=_blank}
+- Others
+    - [HS Dictionary](../HSDictionaryPage.en.md)
+        - Added links to the Quick Reference Dictionary notes as related articles
+    - Added a "Copy to LLM" button to each page. You can copy the page content as Markdown or pass it to an LLM.
+
+## Updated September 16, 2026
+
+## September 16, 2026 - Edited Pages
+
+- Release Notes
+    - [v16.5](../releasenote/releasenote-16.5.en.md)
+        - Added release notes for v16.5.9
+
+## Updated June 5, 2026
+
+## June 5, 2026 - Edited Pages
+
+- Release Notes
+    - [v16.5](../releasenote/releasenote-16.5.en.md)
+        - Added release notes for v16.5.8
+- Others
+    - [HS Dictionary](../HSDictionaryPage.en.md): Released the HeliScript API Reference Dictionary (HS Dictionary).
+
+## Updated April 15, 2026
+
+## April 15, 2026 - Added Pages
+
+- Release Notes
+    - [v16.6](../releasenote/releasenote-16.6.en.md)
+        - Added the release note for HeliodorLib Ver 16.6.0
+
+## Updated April 10, 2026
+
+## April 10, 2026 - Added Pages
+
+- HCSL Manual
+    - Added [HCSL Reference](../hcsl/hcsl_overview.en.md) and all related documents.
+
+## Updated March 27, 2026
+
+## March 27, 2026 - Added Pages
+
+- Release Notes
+    - [v16.5](../releasenote/releasenote-16.5.en.md)
+        - Added new page for v16.5.0 release notes
+        - Main features: My Assets / Activity Import, World Profiler, Unity 6 Support
+        - 22 new features: Various VKC component additions and improvements
+        - 21 bug fixes: Various bug fixes
+- First Steps
+    - [World Profiler](../FirstStep/WorldProfiler.en.md): Added description for World Profiler.
+- World Making Guide
+    - [Custom Shader (HCSL)](../WorldMakingGuide/CustomShader.en.md): Added documentation for Custom Shader (HCSL).
+- VKCComponents
+    - [VKC Item PointLight](../VKCComponents/VKCItemPointLight.en.md): Added VKC Item PointLight.
+
+## March 27, 2026 - Edited Pages
+
+- VketCloudSettings
+    - [RenderingSettings](../VketCloudSettings/RenderingSettings.en.md): Added `Ambient Color` parameter.
+- VKC Components
+    - [VKC Item AreaCollider](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemAreaCollider.html)
+    - [VKC Item Activity](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemActivity.html)
+    - [VKC Item Audio](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemAudio.html)
+    - [VKC Item BackgroundTexture](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemBackgroundTexture.html)
+    - [VKC Item Camera](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemCamera.html)
+    - [VKC Item Field](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemField.html)
+    - [VKC Item Object](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemObject.html)
+    - [VKC Item Particle](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemParticle.html)
+    - [VKC Item Plane](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemPlane.html)
+    - [VKC Item Spot](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemSpot.html)
+    - [VKC Item TextPlane](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItemTextPlane.html)
+    - [VKC Item ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItem.html)
+    - [VKC Item ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItem.html)
+    - [VKC Item ](https://vrhikky.github.io/VketCloudSDK_Documents/latest/VKCComponents/VKCItem.html)
+        - Fixed the separation of "dynamic loading" and "auto loading" concepts, where dynamic loading refers to executing Load() during gameplay with "AutoLoading": false, and auto loading refers to "AutoLoading": true
+    - [VKC Item Field](../VKCComponents/VKCItemField.en.md): Added `Draco Quantization`, `Shadow Only`, and `Occlusion Mask`.
+    - [VKC Item Object](../VKCComponents/VKCItemObject.en.md): Added `Shadow Only` and `Occlusion Mask`.
+    - [VKC Attribute Action Trigger](../VKCComponents/VKCAttributeActionTrigger.en.md): Added a note that a VKC Node Collider is required for click detection.

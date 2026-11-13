@@ -9,6 +9,9 @@
 | Wait Time |スクロール1回毎の停止時間 |
 | Scroll Time |スクロール1回の再生時間 |
 
+!!! caution "注意"
+    スクロール時間(秒)が0に設定されている場合には停止して表示される。
+
 ## Step UV List
 | Label | function |
 | ---- | ---- | 

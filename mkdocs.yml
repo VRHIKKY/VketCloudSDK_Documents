@@ -41,6 +41,11 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/credits.css
+
+extra_javascript:
+  - javascripts/copy-to-llm-vketcloud.js
+  - javascripts/credits-endroll.js
   
 extra:
   generator: false
@@ -69,7 +74,24 @@ extra:
     
 use_directory_urls: false
 
+# クレジットページはナビに載せず、フッターと隠しコマンド (chameleon) からのみ開く
+not_in_nav: |
+  /credits.*.md
+
+hooks:
+  - custom_theme/tag_icons.py
+  - custom_theme/dedupe_copy_to_llm_assets.py
+
 plugins:
+  # ページ本文を Markdown としてコピーしたり、LLM に渡したりする操作を追加します。
+  # SDK 16.5 の公開ソースを指定します。ページごとのソースパスは互換フックで補います。
+  - copy-to-llm:
+      repo_url: https://raw.githubusercontent.com/VRHIKKY/VketCloudSDK_Documents/version/sdk-16.5/docs
+      button_bg_color: var(--md-default-bg-color)
+      button_text_color: var(--md-default-fg-color)
+      button_hover_color: var(--md-primary-fg-color)
+      toast_bg_color: var(--md-primary-fg-color)
+      toast_text_color: "#ffffff"
   - search:
       lang: 
         - en
@@ -99,6 +121,7 @@ plugins:
           nav_translations:
             # 概要
             Introduction: はじめに
+            Tag Conventions: タグ規約
             # Vket Cloud SDKについて
             About Vket Cloud SDK: Vket Cloud SDKについて
             Setup Account: アカウント準備
@@ -110,6 +133,7 @@ plugins:
             First Steps: ワールド制作の基本
             Essential Objects: ワールドの基本要素
             Build And Run: ローカル環境でのビルドと実行
+            World Profiler: ワールドプロファイラー
             World Upload: ワールドアップロード
             # Vket Cloud Settings    
             Vket Cloud Settings - Overview: Vket Cloud Settings - 概要
@@ -118,6 +142,7 @@ plugins:
             Table of Contents: 目次
             List of Articles: 記事一覧
             Shader Availability : シェーダー対応項目一覧
+            Custom Shader (HCSL) : カスタムシェーダー(HCSL)
             Avatar File: アバターファイル
             Specifications Limits : VketCloudの仕様制限
             Exporter: .heoファイルについて
@@ -296,12 +321,16 @@ plugins:
             String: 文字列(String)
             List: 配列(List)
             Delegate: デリゲート(Delegate)
+            Enum: Enum
             Operator: 演算子
             Class: クラス
+            Interface: インターフェース
             Components / Callback functions: コンポーネント / コールバック関数
             Item Types and VKCComponents: Itemの種類 / VKCComponentとの対応一覧
             Built-in Classes And Functions: 組み込みクラス・関数
+            Vector2 Class: Vector2クラス
             Vector3 Class: Vector3クラス
+            Vector4 Class: Vector4クラス
             Quaternion Class: Quaternionクラス
             Matrix Class: Matrixクラス
             Item Class: Itemクラス
@@ -310,6 +339,10 @@ plugins:
             TimeSpan Class: TimeSpanクラス
             HSMessage Class: HSMessageクラス
             HSRaycastHIT Class: HSRaycastHITクラス
+            GUIElement Class: GUIElementクラス
+            Layer Class: Layerクラス
+            LayerBundle Class: LayerBundleクラス
+            ShallowCloneParam Class: ShallowCloneParamクラス
             Built-in Functions: 組み込み関数
             System: システム
             Math: 数学
@@ -323,10 +356,38 @@ plugins:
             Camera: カメラ
             Common Dialog: 汎用ダイアログ
             Rendering: レンダリング
+            Fade: フェード
             JavaScript: JavaScript
             Cookie: Cookie
             RayCast: レイキャスト
             Local Data: ローカルデータ
+            Samples: サンプル
+            FPS Camera: FPSカメラ
+            TPS Camera: TPSカメラ
+            # Custom Shader (HCSL)
+            Custom Shader (HCSL): カスタムシェーダー (HCSL)
+            HCSL - Overview: HCSL概要
+            About HCSLLib: HCSLLibについて
+            Data Types: データ型
+            Semantics: セマンティクス
+            Preprocessor: プリプロセッサ
+            Texture: テクスチャ
+            Error Handling: エラーハンドリング
+            Blocks: ブロック
+            Block - Overview: ブロック概要
+            Attribute: Attribute
+            Hcsl: Hcsl
+            Input: Input
+            Output: Output
+            Pass: Pass
+            RenderParam: RenderParam
+            Shader: Shader
+            Uniform: Uniform
+            Variant: Variant
+            Functions: 関数
+            Main Function: Main関数
+            Variables: 変数
+            Built-in Variables: 組み込み変数
             # External API
             External API: 外部API連携
             Broker API: ブローカーAPIについて
@@ -364,6 +425,7 @@ nav:
 - First Steps:
     - Essential Objects : FirstStep/WorldBasicComponents.md
     - Build And Run : FirstStep/BuildAndRun.md
+    - World Profiler : FirstStep/WorldProfiler.md
     - World Upload : FirstStep/WorldUpload.md
 - Vket Cloud Settings:
     - Vket Cloud Settings - Overview: VketCloudSettings/Overview.md
@@ -381,6 +443,7 @@ nav:
     - List of Articles :
       - Specifications Limits : WorldMakingGuide/UnityGuidelines.md
       - Shader Availability : WorldMakingGuide/ShaderAvailability.md
+      - Custom Shader (HCSL) : WorldMakingGuide/CustomShader.md
       - Setting up a Skybox : WorldMakingGuide/Skybox.md 
       - How to use Colliders / Tips : WorldMakingGuide/Collider.md
       - Physics Engine: WorldMakingGuide/PhysicsEngine.md
@@ -490,6 +553,7 @@ nav:
     - VKC Item Object: VKCComponents/VKCItemObject.md
     - VKC Item Particle: VKCComponents/VKCItemParticle.md
     - VKC Item Plane: VKCComponents/VKCItemPlane.md
+    - VKC Item PointLight: VKCComponents/VKCItemPointLight.md
     - VKC Item Spot: VKCComponents/VKCItemSpot.md
     - VKC Item Text Plane: VKCComponents/VKCItemTextPlane.md
   - VKC Node:
@@ -582,11 +646,15 @@ nav:
         - String: hs/hs_string.md
         - List: hs/hs_list.md
         - Delegate: hs/hs_delegate.md
+        - Enum: hs/hs_enum.md
     - Class: hs/hs_class.md
+    - Interface: hs/hs_interface.md
     - Components / Callback functions: hs/hs_component.md
     - Item Types and VKCComponents: hs/hs_item_types_functions.md
     - Built-in Classes And Functions:
+        - Vector2 Class: hs/hs_struct_vector2.md
         - Vector3 Class: hs/hs_struct_vector3.md
+        - Vector4 Class: hs/hs_struct_vector4.md
         - Quaternion Class: hs/hs_struct_quaternion.md
         - Matrix Class: hs/hs_struct_matrix.md
         - Item Class: hs/hs_class_item.md
@@ -595,6 +663,10 @@ nav:
         - TimeSpan Class: hs/hs_class_timespan.md
         - HSMessage Class: hs/hs_class_hsmessage.md
         - HSRaycastHIT Class: hs/hs_struct_hsraycasthit.md
+        - GUIElement Class: hs/hs_class_guielement.md
+        - Layer Class: hs/hs_class_Layer.md
+        - LayerBundle Class: hs/hs_class_layerbundle.md
+        - ShallowCloneParam Class: hs/hs_class_shallowcloneparam.md
     - Built-in Functions:
         - System: hs/hs_system_function.md
         - Input: hs/hs_system_function_input.md
@@ -609,7 +681,10 @@ nav:
         - Camera: hs/hs_system_function_camera.md
         - Common Dialog: hs/hs_system_function_commondialog.md
         - Rendering: hs/hs_system_function_rendering.md
-        - JavaScript: hs/hs_system_function_js.md
+        - Fade: hs/hs_system_function_fade.md
+        - JavaScript:
+            - JsVal: hs/JsVal.md
+            - JavaScript連携: hs/hs_system_function_js.md
         - Cookie: hs/hs_system_function_cookie.md
         - Raycast: hs/hs_system_function_raycast.md
         - Local Data: hs/hs_system_function_localdata.md
@@ -617,15 +692,50 @@ nav:
         - Scopes and definitions: hs/hs_scope_def.md
         - Control Statement: hs/hs_statement_control.md
         - Operator: hs/hs_operator.md
+    - Samples:
+        - FPS Camera: hs/hs_sample_fpscamera.md
+        - TPS Camera: hs/hs_sample_tpscamera.md
     - Tips/HeliScript Guide:
         - Remove Default UI: hs/RemoveDefaultUI.md
         - Script Error Checking with Assertions: hs/hs_assertion_function.md
+- Custom Shader (HCSL):
+    - HCSL - Overview: hcsl/hcsl_overview.md
+    - Basics:
+        - About HCSLLib: hcsl/hcsl_about_hcsllib.md
+        - Data Types: hcsl/hcsl_datatypes.md
+        - Semantics: hcsl/hcsl_semantics.md
+        - Preprocessor: hcsl/hcsl_preprocessor.md
+        - Texture: hcsl/hcsl_texture.md
+        - Error Handling: hcsl/hcsl_error_handling.md
+    - Blocks:
+        - Block - Overview: hcsl/hcsl_block_about.md
+        - Attribute: hcsl/hcsl_block_attribute.md
+        - Hcsl: hcsl/hcsl_block_hcsl.md
+        - Input: hcsl/hcsl_block_input.md
+        - Output: hcsl/hcsl_block_output.md
+        - Pass: hcsl/hcsl_block_pass.md
+        - RenderParam: hcsl/hcsl_block_renderparam.md
+        - Shader: hcsl/hcsl_block_shader.md
+        - Uniform: hcsl/hcsl_block_uniform.md
+        - Variant: hcsl/hcsl_block_variant.md
+    - Functions:
+        - Main Function: hcsl/hcsl_functions_main.md
+        - Built-in Functions: hcsl/hcsl_functions_builtin.md
+    - Variables:
+        - Built-in Variables: hcsl/hcsl_variables_builtin.md
 - External API:
   - Broker API: ExternalAPI/BrokerAPI.md
   - JsVal: ExternalAPI/JsVal.md
   - Handling Json in HeliScript: ExternalAPI/HeliScriptJsonParse.md
 - Release Note:
     - About Release Note: releasenote/AboutReleasenote.md
+    - v16.x:
+        - v16.6: releasenote/releasenote-16.6.md
+        - v16.5: releasenote/releasenote-16.5.md
+        - v16.3: releasenote/releasenote-16.3.md
+        - v16.2: releasenote/releasenote-16.2.md
+        - v16.1: releasenote/releasenote-16.1.md
+        - v16.0: releasenote/releasenote-16.0.md
     - v15.x:
         - v15.9: releasenote/releasenote-15.9.md
         - v15.8: releasenote/releasenote-15.8.md
@@ -715,6 +825,10 @@ nav:
         - v3.2: releasenote/releasenote-3.2.md
 - Change Log:
     - About Changelog: changelog/AboutChangelog.md
+    - v16.x:
+        - v16.5: changelog/changelog-16.5.md
+        - v16.2: changelog/changelog-16.2.md
+        - v16.0: changelog/changelog-16.0.md
     - v15.x:
         - v15.5: changelog/changelog-15.5.md
         - v15.4: changelog/changelog-15.4.md
@@ -783,4 +897,6 @@ nav:
         - v3.4: changelog/changelog-3.4.md
         - v3.3: changelog/changelog-3.3.md
         - v3.2: changelog/changelog-3.2.md
+- Tag Conventions: TagConventions.md
 - License: common/License.md
+- HS Dictionary: HSDictionaryPage.md

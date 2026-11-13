@@ -60,4 +60,47 @@ TPSカメラのＹ方向のオフセットを指定します。単位はメー�
 `bool hsCameraGetFPSMode()`
 
 現在のカメラのFPSモードの値を返します。
+
+### hsCameraGetRotateSpeed
+
+`float hsCameraGetRotateSpeed()`
+
+MENU　→　設定　→　カメラで指定された「操作感度」をfloatとして取得します。
+
+### hsCameraGetXRotateReverse
+
+`bool hsCameraGetXRotateReverse()`
+
+MENU　→　設定　→　カメラで指定された「上下操作」をリバースがtrueとして取得します。
+
+### hsCameraGetYRotateReverse
+
+`bool hsCameraGetYRotateReverse()`
+
+MENU　→　設定　→　カメラで指定された「左右操作」をリバースがtrueとして取得します。
+
+### hsCameraGetAdjustType
+
+`int hsCameraGetAdjustType()`
+
+MENU　→　設定　→　カメラで指定された「三人称視点位置」をintとして取得します。
+
+中央：０、左寄り：１、右寄り：２です。
+
+### hsCameraGetPitchAngleType
+
+`int hsCameraGetPitchAngleType()`
+
+MENU　→　設定　→　カメラで指定された「アイレベル」をintとして取得します。
+
+低い：０、普通：１、高い：２です。
+
+### hsGetCameraName
+
+`string hsGetCameraName()`
+
+現在指定されているアイテムカメラのアイテム名を取得します。
+
+メインカメラである場合（どのアイテムカメラでもない場合）空文字を返します。
+
 ***

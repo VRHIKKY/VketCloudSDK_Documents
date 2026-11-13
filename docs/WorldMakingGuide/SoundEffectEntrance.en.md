@@ -22,7 +22,7 @@ A. Set loop to false
 
 B. Set auto-play of the sound effect to true
 
-C. Set dynamic loading (AutoLoading) of the sound effect to false
+C. Set AutoLoading of the sound effect to false
 
 ## ③ Load the corresponding Item in the constructor
 

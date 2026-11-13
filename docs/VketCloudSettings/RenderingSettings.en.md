@@ -11,6 +11,7 @@ RenderingSettings handles the rendering settings of the world.
 | `Directional Light` | blank | Set a Directional Light placed in the scene as the directional light for this world. |
 | `Light Intensity` | 1 | Set the world light's intensity. |
 | `Lightmap Intensity` | 1 | Set the light map's intensity. |
+| `Ambient Color` | 1,1,1,1 | Set the ambient color. |
 | `Fade In Time` | 2 | Set the white fade-in length on world enter in seconds.|
 | `Shadow Type`| Round | Set the Shadow Type. `round` is a round shadow, and `normalshadowmap` is a normal shadow map. <br>`normalshadowmap` is used with [VKC Node Shadow](../VKCComponents/VKCNodeShadow.md).|
 | `Shadow Bias` | 0.001 | Set the bias value on drawing shadows.|

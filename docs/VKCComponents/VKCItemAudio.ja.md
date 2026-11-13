@@ -39,7 +39,7 @@
 
 | 名称 | 初期値 |  説明  |
 | ---- | ---- | ---- |
-| Auto Loading | True | 動的ローディングの有効/無効を切り替えます。 |
+| Auto Loading | True | 自動ローディングの有効/無効を切り替えます。 |
 | Clickable | False | クリックできるようになります。 |
 | Item Render Priority | 0 | ワールド内のItemの描画優先度を変更できます。 |
 | Show Photo Mode | True | 撮影モードで再生されるかどうかを指定します。 |

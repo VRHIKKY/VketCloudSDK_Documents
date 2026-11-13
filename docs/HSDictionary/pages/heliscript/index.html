@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeliScript API リファレンス</title>
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- スタイルシート -->
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- ヘッダー -->
+    <div class="header">
+      <div class="header-left">
+        <a href="../../" class="header-home" title="トップページへ">
+          <span class="material-icons">home</span>
+        </a>
+        <h1><span class="material-icons">code</span> <span data-i18n="siteTitle">HeliScript API リファレンス</span></h1>
+      </div>
+      <div class="header-right">
+        <!-- お気に入りトグル -->
+        <button class="favorites-toggle" id="favorites-toggle">
+          <span class="material-icons">bookmark</span>
+          <span data-i18n="favorites">お気に入り</span>
+          <span class="favorites-count" id="favorites-count">0</span>
+        </button>
+        <!-- 言語切替トグル -->
+        <button class="lang-toggle" id="lang-toggle" title="日本語 / English">
+          <span class="material-icons">translate</span>
+          <span class="lang-label" id="lang-label">JP</span>
+        </button>
+        <!-- ダークモードトグル -->
+        <div class="theme-toggle" id="theme-toggle">
+          <span class="material-icons">light_mode</span>
+          <div class="theme-toggle-switch"></div>
+          <span class="material-icons">dark_mode</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- クラスタブフィルター (Player / Component / Layer) -->
+    <div class="itemtype-tabs-container">
+      <div class="itemtype-tabs-header">
+        <span class="itemtype-label">
+          <span class="material-icons">category</span>
+          Class
+        </span>
+      </div>
+      <div class="itemtype-tabs" id="class-filters"></div>
+      <div class="itemtype-content">
+        <!-- カテゴリーフィルター -->
+        <div class="filter-section">
+          <div class="filter-label">
+            <span class="material-icons">folder</span> <span data-i18n="functionType">カテゴリー</span>
+          </div>
+          <div class="filter-row" id="category-filters"></div>
+          <!-- リセットボタン -->
+          <div class="filter-controls">
+            <button class="reset-btn" id="reset-filters">
+              <span class="material-icons">refresh</span>
+              <span data-i18n="reset">リセット</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 検索・ソート統合エリア -->
+    <div class="search-sort-area">
+      <div class="search-section">
+        <div class="search-input-container">
+          <span class="material-icons search-icon">search</span>
+          <input type="text" class="search-box" id="search" placeholder="検索..." data-i18n-placeholder="searchPlaceholder">
+        </div>
+        <div class="search-targets">
+          <span class="material-icons">info_outline</span>
+          <span data-i18n="searchHint">メソッド名・説明で検索可能</span>
+        </div>
+      </div>
+      <div class="sort-section">
+        <select class="sort-select" id="sort-select">
+          <option value="name-asc" data-i18n="sortNameAsc">名前 A→Z</option>
+          <option value="name-desc" data-i18n="sortNameDesc">名前 Z→A</option>
+          <option value="category" data-i18n="sortCategory">カテゴリー順</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- フィルタ状態・件数表示 -->
+    <div class="results-header">
+      <div class="active-filters" id="active-filters"></div>
+      <div class="stats" id="stats"></div>
+    </div>
+
+    <!-- メソッドグリッド -->
+    <div class="method-grid" id="method-grid"></div>
+
+    <!-- 検索結果なし -->
+    <div class="no-results" id="no-results" style="display:none;">
+      <span class="material-icons">search_off</span>
+      <div data-i18n="noResults">条件に一致するメソッドがありません</div>
+    </div>
+
+    <!-- 閲覧履歴（ページ下部） -->
+    <div class="history-section" id="history-section" style="display:none;">
+      <div class="history-header">
+        <div class="history-title">
+          <span class="material-icons">history</span>
+          <span data-i18n="recentMethods">最近見たメソッド</span>
+        </div>
+        <button class="history-clear" id="history-clear">
+          <span class="material-icons">delete_outline</span>
+          <span data-i18n="clear">クリア</span>
+        </button>
+      </div>
+      <div class="history-methods" id="history-methods"></div>
+    </div>
+  </div>
+
+  <!-- ツールチップ -->
+  <div class="tooltip" id="tooltip">
+    <div class="tooltip-title" id="tooltip-title"></div>
+    <div class="tooltip-code" id="tooltip-code"></div>
+    <div class="tooltip-hint">
+      <span class="material-icons">lightbulb</span> <span data-i18n="tooltipHint">クリックで詳細表示</span>
+    </div>
+  </div>
+
+  <!-- ポップアップ -->
+  <div class="popup-overlay" id="popup-overlay">
+    <div class="popup" onclick="event.stopPropagation()">
+      <div class="popup-header">
+        <div class="popup-header-main">
+          <div class="popup-title-row">
+            <span class="popup-category-icon material-icons" id="popup-category-icon"></span>
+            <span class="popup-title" id="popup-title"></span>
+            <span class="popup-has-code" id="popup-has-code" style="display:none;">
+              <span class="material-icons">code</span>
+              <span data-i18n="hasSample">サンプルあり</span>
+            </span>
+          </div>
+          <div class="popup-sig" id="popup-sig"></div>
+        </div>
+        <div class="popup-header-actions">
+          <button class="popup-favorite-btn" id="popup-favorite" title="お気に入り">
+            <span class="material-icons">bookmark_border</span>
+          </button>
+          <a href="#" class="popup-doc-link" id="popup-doc-link" target="_blank" rel="noopener noreferrer" title="公式ドキュメント">
+            <span class="material-icons">open_in_new</span>
+          </a>
+          <button class="popup-close" id="popup-close">
+            <span class="material-icons">close</span>
+          </button>
+        </div>
+      </div>
+      <div class="popup-body">
+        <!-- 用途・説明 -->
+        <div class="popup-section popup-desc-section">
+          <div class="popup-purpose" id="popup-purpose"></div>
+          <div class="popup-detail" id="popup-detail"></div>
+        </div>
+        <!-- 引数詳細 -->
+        <div class="popup-section" id="popup-args-section" style="display:none;">
+          <div class="popup-section-title">
+            <span class="material-icons">tune</span>
+            <span data-i18n="arguments">引数</span>
+          </div>
+          <div class="popup-args" id="popup-args"></div>
+        </div>
+        <!-- サンプルコード -->
+        <div class="popup-section" id="popup-code-section">
+          <div class="popup-section-title">
+            <span class="material-icons">code</span>
+            <span data-i18n="sampleCode">サンプルコード</span>
+            <button class="popup-code-copy" id="copy-code" title="コードをコピー">
+              <span class="material-icons">content_copy</span>
+            </button>
+          </div>
+          <div class="popup-code" id="popup-code"></div>
+        </div>
+        <!-- 関連メソッド -->
+        <div class="popup-section" id="popup-related-section" style="display:none;">
+          <div class="popup-section-title">
+            <span class="material-icons">link</span>
+            <span data-i18n="relatedMethods">関連メソッド</span>
+          </div>
+          <div class="popup-related" id="popup-related"></div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <button class="popup-btn popup-btn-primary" id="share-url">
+          <span class="material-icons">link</span> <span data-i18n="copyUrl">URLをコピー</span>
+        </button>
+        <button class="popup-btn popup-btn-tertiary" id="copy-method">
+          <span class="material-icons">content_copy</span> <span data-i18n="copyMethod">関数名をコピー</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- コピー成功通知 -->
+  <div class="copy-success" id="copy-success">
+    <span class="material-icons">check</span> <span data-i18n="copied">コピーしました！</span>
+  </div>
+
+  <!-- キーボードショートカットヘルプ -->
+  <div class="keyboard-help">
+    <div class="keyboard-help-item">
+      <kbd>Esc</kbd>
+      <span data-i18n="kbClose">閉じる</span>
+    </div>
+    <div class="keyboard-help-item">
+      <kbd>Ctrl</kbd>+<kbd>R</kbd>
+      <span data-i18n="kbReset">リセット</span>
+    </div>
+    <div class="keyboard-help-item">
+      <kbd>Ctrl</kbd>+<kbd>D</kbd>
+      <span data-i18n="kbDarkMode">ダークモード</span>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../../shared/core.js"></script>
+  <script src="data-loader.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

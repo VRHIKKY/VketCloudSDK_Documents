@@ -11,6 +11,7 @@ RenderingSettingsでは、ワールドにおける描画設定を編集します
 | `Directional Light` | none(空欄) | シーンに設置されたディレクショナルライトをワールドライトとして指定します。 |
 | `Light Intensity` | 1 | ワールドライトの強度を設定します。 |
 | `Lightmap Intensity` | 1 | ライトマップの強度を設定します。 |
+| `Ambient Color` | 1,1,1,1 | 環境の色を設定します。 |
 | `Fade In Time` | 2 |　ワールド入場時のホワイトフェードインの時間を秒単位で指定します。|
 | `Shadow Type`| Round |　影の描画方法を指定します。`round`は 丸影、`normalshadowmap`は通常のシャドウマップです。<br>`normalshadowmap`は[VKC Node Shadow](../VKCComponents/VKCNodeShadow.md)と組み合わせて使用します。|
 | `Shadow Bias` | 0.001 |　影描画のバイアス値を設定します。|
